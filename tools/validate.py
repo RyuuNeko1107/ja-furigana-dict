@@ -8,6 +8,12 @@ furigana-dict 配下の TOML ファイルを検証する。
 - 必須セクション / フィールド欠落
 - jukugo / unihan の cross-file 重複
 
+ファイル配置:
+- 単一ファイル形式 (core/jukugo.toml, rules/counters.toml, rules/context.toml)
+- 細分化形式      (core/jukugo/*.toml, rules/counters/*.toml, rules/context/*.toml)
+  ─ いずれにも対応する。両方ある場合は単一ファイル形式を優先する
+   (エンジン側 load_rules_dir と挙動を揃えるため)。
+
 CI から呼び出し想定: `python3 tools/validate.py`
 exit code 0 = OK, 1 = 検証エラーあり
 
@@ -271,34 +277,59 @@ def check_cross_file_duplicates(
         )
 
 
+# ─── 単一ファイル / 細分化サブディレクトリ どちらにも対応 ─────────────────
+def discover(base_dir: Path, name: str) -> list[Path]:
+    """`base_dir/name.toml` 単一ファイル → 無ければ `base_dir/name/*.toml` を返す。
+
+    どちらも存在しない場合は空リスト。両方ある場合は単一ファイルを優先
+    (エンジン側 load_rules_dir / Dict::from_toml_dir と同じ挙動)。
+    """
+    single = base_dir / f"{name}.toml"
+    if single.is_file():
+        return [single]
+    subdir = base_dir / name
+    if subdir.is_dir():
+        return sorted(p for p in subdir.iterdir() if p.is_file() and p.suffix == '.toml')
+    return []
+
+
 # ─── main ──────────────────────────────────────────────────────────────────
 def main() -> int:
     root = Path(__file__).resolve().parent.parent  # tools/.. = repo root
     errors = Errors()
+    core = root / 'core'
+    rules = root / 'rules'
 
     jukugo: dict = {}
     unihan: dict = {}
 
-    targets = [
-        # path, validator
-        (root / 'core' / 'jukugo.toml',           lambda p: jukugo.update(validate_lookup(p, errors))),
-        (root / 'core' / 'unihan.toml',           lambda p: unihan.update(validate_lookup(p, errors))),
-        (root / 'core' / 'compat.toml',           lambda p: validate_compat(p, errors)),
-        (root / 'rules' / 'numeric_phrases.toml', lambda p: validate_simple_entries(p, errors)),
-        (root / 'rules' / 'symbols.toml',         lambda p: validate_simple_entries(p, errors)),
-        (root / 'rules' / 'latin.toml',           lambda p: validate_simple_entries(p, errors)),
-        (root / 'rules' / 'units.toml',           lambda p: validate_units(p, errors)),
-        (root / 'rules' / 'scales.toml',          lambda p: validate_scales(p, errors)),
-        (root / 'rules' / 'days.toml',            lambda p: validate_days(p, errors)),
-        (root / 'rules' / 'counters.toml',        lambda p: validate_counters(p, errors)),
-        (root / 'rules' / 'context.toml',         lambda p: validate_context(p, errors)),
+    def load_jukugo(p: Path) -> None:
+        jukugo.update(validate_lookup(p, errors))
+
+    def load_unihan(p: Path) -> None:
+        unihan.update(validate_lookup(p, errors))
+
+    # 各 (paths, validator) ペア。paths は単一ファイル or 細分化サブディレクトリ配下。
+    targets: list[tuple[list[Path], callable]] = [
+        (discover(core, 'jukugo'),           load_jukugo),
+        (discover(core, 'unihan'),           load_unihan),
+        ([core / 'compat.toml'],             lambda p: validate_compat(p, errors)),
+        ([rules / 'numeric_phrases.toml'],   lambda p: validate_simple_entries(p, errors)),
+        ([rules / 'symbols.toml'],           lambda p: validate_simple_entries(p, errors)),
+        ([rules / 'latin.toml'],             lambda p: validate_simple_entries(p, errors)),
+        ([rules / 'units.toml'],             lambda p: validate_units(p, errors)),
+        ([rules / 'scales.toml'],            lambda p: validate_scales(p, errors)),
+        ([rules / 'days.toml'],              lambda p: validate_days(p, errors)),
+        (discover(rules, 'counters'),        lambda p: validate_counters(p, errors)),
+        (discover(rules, 'context'),         lambda p: validate_context(p, errors)),
     ]
 
     found = 0
-    for path, validator in targets:
-        if path.exists():
-            validator(path)
-            found += 1
+    for paths, validator in targets:
+        for path in paths:
+            if path.exists():
+                validator(path)
+                found += 1
 
     check_cross_file_duplicates(jukugo, unihan, errors)
 

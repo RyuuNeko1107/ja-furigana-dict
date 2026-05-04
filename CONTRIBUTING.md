@@ -6,7 +6,10 @@ Rust 知識・Git クローン不要。
 ## クイックパス: GitHub Web UI で 1 件追加
 
 1. 該当ファイルを開く:
-   - 一般語・固有名詞 → [`core/jukugo.toml`](core/jukugo.toml)
+   - 一般語 → [`core/jukugo/general.toml`](core/jukugo/general.toml)
+   - 固有名詞 (会社・作品名等) → [`core/jukugo/proper_nouns.toml`](core/jukugo/proper_nouns.toml)
+   - 地名 → [`core/jukugo/place_names.toml`](core/jukugo/place_names.toml)
+   - 人名 → [`core/jukugo/personal_names.toml`](core/jukugo/personal_names.toml)
    - 単漢字フォールバック → [`core/unihan.toml`](core/unihan.toml)
    - 異体字 → [`core/compat.toml`](core/compat.toml)
 2. 右上の鉛筆アイコン (Edit) をクリック
@@ -49,19 +52,50 @@ gh pr create
 
 ## ファイル別ガイド
 
-### `core/jukugo.toml` — 一般熟語 + 固有名詞
+### `core/jukugo/` — 一般熟語 + 固有名詞 (4 ファイルに細分化)
 
-メインの PR 受付先。誰でも気軽に追加 OK。
+カテゴリ別に分かれているので適切なファイルに追加する:
 
-例:
+| ファイル | 用途 | 例 |
+|---|---|---|
+| `general.toml`        | 一般熟語・四字熟語等 | 灰桜 / 黎明 / 曙光 / 所謂 |
+| `proper_nouns.toml`   | 会社名・作品名・ブランド名等 | (拡充予定) |
+| `place_names.toml`    | 国名・都道府県名・市区町村名・駅名・著名スポット | 湯島天神 |
+| `personal_names.toml` | 姓・名・著名人のフルネーム | 金田一 |
+
+追加例 (`core/jukugo/general.toml`):
 ```toml
 [entries]
 "灰桜" = "ハイザクラ"
 "黎明" = "レイメイ"
 "曙光" = "ショコウ"
-"金田一" = "キンダイチ"   # 人名
-"湯島天神" = "ユシマテンジン" # 固有名詞
 ```
+
+判断に迷う場合は `general.toml` でも構わない (review で振り分け可能)。
+
+### `rules/counters/` — 助数詞ルール (7 ファイルに細分化)
+
+| ファイル | 範囲 |
+|---|---|
+| `simple.toml`     | 単純サフィックス助数詞 (`[simple]`) |
+| `time.toml`       | 月 / 日 / 時 / 分 / 分半 / 週間 / 回 |
+| `people.toml`     | 人 |
+| `objects.toml`    | 本 / 匹 / 杯 / 個 / 歳 / 冊 |
+| `places.toml`     | 階 / ヶ所 / 箇所 / か所 |
+| `percent.toml`    | % / ％ |
+| `recursive.toml`  | 目 (再帰モード) |
+
+新しい助数詞は **既存カテゴリの該当ファイル** に足すか、当てはまらなければ
+カテゴリを増やしてもよい (PR で議論)。エンジン側はサブディレクトリ内の `*.toml`
+全てを自動マージするので、ファイル名は何でも構わない。
+
+### `rules/context/` — 文脈依存読み (3 ファイルに細分化)
+
+| ファイル | 範囲 |
+|---|---|
+| `numbers.toml`  | 数字を含む慣用語句 (一日 / 一人 / 一月 / 一杯 等) |
+| `homonyms.toml` | 同形異音語 (上手 / 下手 / 人気 / 大人気 / 十分) |
+| `special.toml`  | 単純な読み固定 (大人 / 仲人 / 今日 / 何日 / 日本 等) |
 
 ### `core/unihan.toml` — 単漢字フォールバック
 
@@ -108,11 +142,14 @@ PR を出すと GitHub Actions で:
 
 ```sh
 python3 tools/validate.py
-# → [OK] 11 ファイル検査済 (jukugo X / unihan Y entries)
+# → [OK] N ファイル検査済 (jukugo X / unihan Y entries)
 # 失敗時は [FAIL] と詳細が出る
 ```
 
 Python 3.11+ が必要 (`tomllib` 使用)。
+
+`jukugo/` `counters/` `context/` のサブディレクトリは展開して全 `*.toml` が
+順に検査される。重複 key 等のエラーは該当ファイル名 + 行情報付きで出る。
 
 ## Release / 配布
 

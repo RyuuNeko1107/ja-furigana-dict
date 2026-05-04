@@ -1,14 +1,13 @@
-# 一般熟語 + 固有名詞 辞書
+# 一般熟語・四字熟語等
+#
+# 一般語彙のみ。固有名詞は proper_nouns.toml、地名は place_names.toml、
+# 人名は personal_names.toml に分けて配置する。
 #
 # - key (表層): ダブルクォート必須
 # - value (読み): 全角カタカナ
 # - 50 音順 を推奨 (PR diff が読みやすい)
-#
-# 詳細は CONTRIBUTING.md を参照。
 
 [entries]
-
-# 初期 seed (例示用、実運用では本番 ryuuneko.com から export 予定)
 "灰桜" = "ハイザクラ"
 "黎明" = "レイメイ"
 "曙光" = "ショコウ"

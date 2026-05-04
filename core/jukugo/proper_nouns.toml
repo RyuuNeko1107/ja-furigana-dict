@@ -1,0 +1,9 @@
+# 固有名詞 (会社名・作品名・ブランド名等)
+#
+# 地名 (place_names.toml) / 人名 (personal_names.toml) 以外の固有名詞をここに。
+#
+# - key (表層): ダブルクォート必須
+# - value (読み): 全角カタカナ
+# - 50 音順 を推奨 (PR diff が読みやすい)
+
+[entries]
