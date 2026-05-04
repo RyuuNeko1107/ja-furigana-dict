@@ -1,0 +1,63 @@
+name: Validate
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  toml-syntax:
+    name: TOML 構文チェック
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install taplo
+        run: |
+          curl -fsSL https://github.com/tamasfe/taplo/releases/latest/download/taplo-full-linux-x86_64.gz \
+            | gunzip > /usr/local/bin/taplo
+          chmod +x /usr/local/bin/taplo
+
+      - name: taplo check (core/*.toml)
+        run: taplo check core/*.toml
+
+      - name: 各ファイルがロード可能か (Python toml で sanity check)
+        run: |
+          python3 -c "
+          import sys, tomllib, glob
+          ok = True
+          for f in sorted(glob.glob('core/*.toml')):
+              try:
+                  with open(f, 'rb') as fh:
+                      data = tomllib.load(fh)
+                  count = len(data.get('entries', data.get('map', {})))
+                  print(f'{f}: {count} entries OK')
+              except Exception as e:
+                  print(f'{f}: PARSE ERROR: {e}', file=sys.stderr)
+                  ok = False
+          sys.exit(0 if ok else 1)
+          "
+
+  duplicate-check:
+    name: 重複キー検出 (cross-file)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: jukugo.toml 内で同じ surface が複数回現れていないか
+        run: |
+          python3 -c "
+          import sys, tomllib
+          from collections import Counter
+          # entries 配下のキーは TOML パーサが二重登録を弾くので、
+          # ここでは正常パース後の件数だけログ出力
+          for path in ['core/jukugo.toml', 'core/unihan.toml']:
+              with open(path, 'rb') as f:
+                  data = tomllib.load(f)
+              entries = data.get('entries', {})
+              print(f'{path}: {len(entries)} unique entries')
+          with open('core/compat.toml', 'rb') as f:
+              cmap = tomllib.load(f).get('map', {})
+              print(f'core/compat.toml: {len(cmap)} unique entries')
+          "

@@ -1,0 +1,54 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release tag (e.g. v0.1.0)'
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    name: Package + Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 解決された tag
+        id: tag
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            TAG="${{ github.event.inputs.tag }}"
+          else
+            TAG="${GITHUB_REF#refs/tags/}"
+          fi
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+          echo "Resolved tag: $TAG"
+
+      - name: tar.gz パッケージング
+        run: |
+          TAG="${{ steps.tag.outputs.tag }}"
+          ARCHIVE="furigana-dict-${TAG}.tar.gz"
+          tar -czf "$ARCHIVE" core/
+          ls -lh "$ARCHIVE"
+          echo "ARCHIVE=$ARCHIVE" >> "$GITHUB_ENV"
+
+      - name: sha256 計算
+        run: |
+          sha256sum "$ARCHIVE" > "${ARCHIVE}.sha256"
+          cat "${ARCHIVE}.sha256"
+
+      - name: GitHub Release に upload
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            ${{ env.ARCHIVE }}
+            ${{ env.ARCHIVE }}.sha256
+          tag_name: ${{ steps.tag.outputs.tag }}
+          generate_release_notes: true
