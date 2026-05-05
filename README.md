@@ -2,9 +2,9 @@
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-> Japanese word dictionary for the [furigana](https://github.com/RyuuNeko1107/furigana) library — open, community-maintained.
+> Japanese word dictionary for the [furigana](https://github.com/RyuuNeko1107/ja-furigana) library — open, community-maintained.
 
-[`furigana`](https://github.com/RyuuNeko1107/furigana) (フリガナ API + ライブラリ) で利用される
+[`furigana`](https://github.com/RyuuNeko1107/ja-furigana) (フリガナ API + ライブラリ) で利用される
 **語彙辞書** をホストする独立リポジトリ。読みの追加・修正は **TOML を編集して PR** だけで完結する。
 
 > **Status**: v0.1.x (alpha) — 本番 ryuuneko.com の seed 投入済み (unihan 43,749 / jukugo 605 / compat 436)。

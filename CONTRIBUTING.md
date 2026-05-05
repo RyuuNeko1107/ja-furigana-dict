@@ -22,7 +22,7 @@ Rust 知識・Git クローン不要。
 ## ローカル編集 (複数件・差分大きめ)
 
 ```sh
-git clone https://github.com/RyuuNeko1107/furigana-dict
+git clone https://github.com/RyuuNeko1107/ja-furigana-dict
 cd furigana-dict
 # core/*.toml を編集
 git checkout -b add-readings
