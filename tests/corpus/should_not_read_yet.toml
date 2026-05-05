@@ -1,0 +1,91 @@
+# 「今はまだ読めないけど、辞書 PR で改善できる」リスト
+#
+# ここの語が読めるようになったら PR を出してこのファイルから消し、
+# should_read.toml に移動する、という運用を想定。
+# Contributors の達成感の源泉。
+
+# ---------------------------------------------------------------------------
+# 固有名詞 / 地名: jukugo/proper_nouns.toml or place_names.toml に追加すれば直る
+# ---------------------------------------------------------------------------
+
+[[case]]
+input = "御徒町"
+mode = "hiragana"
+expected_failure_reason = "「おかちまち」が期待。Lindera default では「ごとちょう」「おとしちょう」等に流れがち。辞書追加で固定可能"
+
+[[case]]
+input = "国府津"
+mode = "hiragana"
+expected_failure_reason = "JR 東海道線「こうづ」。Lindera default では「こくふつ」「こくふづ」になりやすい"
+
+[[case]]
+input = "東雲"
+mode = "hiragana"
+expected_failure_reason = "東京の地名「しののめ」。Lindera default では「とううん」になりがち"
+
+# ---------------------------------------------------------------------------
+# 慣用 / 熟字訓: jukugo/general.toml に追加すれば直る
+# ---------------------------------------------------------------------------
+
+[[case]]
+input = "二十歳"
+mode = "hiragana"
+expected_failure_reason = "「はたち」が期待。Lindera では「にじゅっさい」になる。compat / general 追加で固定"
+
+[[case]]
+input = "海老"
+mode = "hiragana"
+expected_failure_reason = "「えび」が期待。default では「うみろう」「かいろう」"
+
+[[case]]
+input = "葡萄"
+mode = "hiragana"
+expected_failure_reason = "「ぶどう」が期待。Lindera default が unstable"
+
+[[case]]
+input = "百合"
+mode = "hiragana"
+expected_failure_reason = "「ゆり」が期待。default は「ひゃくごう」"
+
+# ---------------------------------------------------------------------------
+# 異体字 / 旧字体: compat.toml に正規化マッピング追加すれば直る
+# ---------------------------------------------------------------------------
+
+[[case]]
+input = "髙橋"
+mode = "hiragana"
+expected_failure_reason = "「たかはし」が期待 (髙→高 の異体字)。compat に髙の同等読み追加で対応"
+
+[[case]]
+input = "渡邊"
+mode = "hiragana"
+expected_failure_reason = "「わたなべ」が期待 (邊→辺の異体字)"
+
+# ---------------------------------------------------------------------------
+# 文脈で読みが変わる語: rules/context/*.toml で扱う
+# ---------------------------------------------------------------------------
+
+[[case]]
+input = "一日中泳いだ"
+mode = "hiragana"
+expected = "いちにちじゅうおよいだ"
+expected_failure_reason = "現状は「ついたち」になりがち。文脈ルール (中 / 〜中 が後続するなら いちにち) で改善"
+
+[[case]]
+input = "一日は元日"
+mode = "hiragana"
+expected_failure_reason = "「ついたち」が期待 (1 日 = 月の 1 日目)。文脈ルールで「は元日」が後続なら ついたち"
+
+# ---------------------------------------------------------------------------
+# 複合動詞 / 複合語
+# ---------------------------------------------------------------------------
+
+[[case]]
+input = "立ち振る舞い"
+mode = "hiragana"
+expected_failure_reason = "「たちふるまい」が期待。compound 解析が default では分解されすぎる"
+
+[[case]]
+input = "差し出口"
+mode = "hiragana"
+expected_failure_reason = "「さしでぐち」が期待。連濁を含む複合語"
