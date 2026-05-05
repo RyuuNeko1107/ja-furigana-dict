@@ -7,7 +7,8 @@
 [`furigana`](https://github.com/RyuuNeko1107/furigana) (フリガナ API + ライブラリ) で利用される
 **語彙辞書** をホストする独立リポジトリ。読みの追加・修正は **TOML を編集して PR** だけで完結する。
 
-> ⚠️ **Status**: Pre-alpha — 初期 seed 投入中。空に近い状態です。
+> **Status**: v0.1.x (alpha) — 本番 ryuuneko.com の seed 投入済み (unihan 43,749 / jukugo 605 / compat 436)。
+> 人名・固有名詞は手動 PR での振り分け待ち。
 
 ---
 
@@ -22,28 +23,33 @@
 ```
 core/
 ├── jukugo/                    ← 熟語・固有名詞 (PR が主に飛んでくる場所)
-│   ├── general.toml           一般熟語・四字熟語
+│   ├── general.toml           二字 / 三字の一般熟語
+│   ├── four_char.toml         四字熟語 (4 字 + 全部 CJK 漢字)
 │   ├── proper_nouns.toml      会社名・作品名・ブランド名
 │   ├── place_names.toml       地名 (国・都道府県・駅 等)
 │   └── personal_names.toml    人名 (姓・名・著名人)
-├── unihan.toml                ← 単漢字フォールバック
-└── compat.toml                ← 異体字 → 標準字 (上乗せ)
+├── unihan.toml                ← 単漢字フォールバック (43k+ 字)
+└── compat.toml                ← 異体字 → 標準字
 
 rules/
-├── counters/                  ← 助数詞ルール (7 ファイル)
-│   ├── simple.toml            ・time.toml ・people.toml
-│   ├── objects.toml           ・places.toml ・percent.toml ・recursive.toml
-├── context/                   ← 文脈依存読み (3 ファイル)
+├── counters/                  ← 助数詞ルール
+│   ├── simple.toml             ・time.toml      ・people.toml
+│   ├── objects.toml            ・places.toml    ・percent.toml ・recursive.toml
+├── context/                   ← 文脈依存読み
 │   ├── numbers.toml           数字を含む慣用語句
 │   ├── homonyms.toml          同形異音語 (上手 / 下手 / 十分 等)
 │   └── special.toml           その他読み固定 (今日 / 何日 / 仲人 等)
 ├── days.toml                  1〜31 日の特殊読み
 ├── scales.toml                大数 (万 / 億 / 兆 / 京…)
-├── units.toml                 SI 単位
+├── units.toml                 SI 単位 (case-insensitive: km/KM/Km どれも hit)
 ├── symbols.toml               記号
 ├── latin.toml                 ラテン文字
-└── numeric_phrases.toml       例外語句 (二十歳→ハタチ 等)
+└── numeric_phrases.toml       数字を含む例外語句 (二十歳→ハタチ 等)
 ```
+
+> 配布側 (`furigana dict pull` で展開後) は `data/` 1 階層に flat に並ぶ。
+> repo 内の `core/` `rules/` の階層分けは PR レビュー上の分類のためで、エンジン側は
+> ファイル名と中身の構造で自動振り分けする。
 
 ## TOML 形式
 
@@ -66,12 +72,13 @@ rules/
 ## 利用側 (`furigana` から)
 
 ```sh
-$ furigana dict pull               # 最新 release を取得
-$ furigana dict pull --version v0.1.0   # ピン留め
+$ furigana dict pull               # 最新 release を取得 + ローカルに展開
+$ furigana dict pull --version v0.1.1   # ピン留め
 ```
 
-`~/.local/share/furigana/dict/core/` に展開され、`furigana serve` / `furigana lookup` が
-自動的にロードする。
+default では `<furigana.exe と同じフォルダ>/data/` に展開される (portable 配置)。
+`furigana serve` / `furigana lookup` / `furigana repl` が自動的にロード。
+REPL の中からは `:pull` (or `pull`) でも同じ操作ができる。
 
 ## ライセンス
 
