@@ -16,8 +16,8 @@ body:
   - type: input
     id: reading
     attributes:
-      label: 読み (全角カタカナ)
-      placeholder: "ハイザクラ"
+      label: 読み (ひらがな または 全角カタカナ)
+      placeholder: "ハイザクラ / はいざくら"
     validations:
       required: true
   - type: textarea

@@ -4,7 +4,7 @@ furigana-dict 配下の TOML ファイルを検証する。
 
 検出する問題:
 - TOML 構文エラー
-- 読み (value) が全角カタカナ以外を含む
+- 読み (value) が ひらがな / 全角カタカナ / ー / ・ 以外を含む
 - 必須セクション / フィールド欠落
 - jukugo / unihan の cross-file 重複
 
@@ -27,8 +27,11 @@ import sys
 import tomllib
 from pathlib import Path
 
-# 全角カタカナ + 長音 (ー) + 中点 (・) のみ許可
-KATAKANA_RE = re.compile(r'^[゠-ヿー・]+$')
+# ひらがな + 全角カタカナ + 長音 (ー) + 中点 (・) を許可
+# 訓読みはひらがな、音読みはカタカナで書くのが慣習なので、両方受け入れる。
+# エンジン側 (`furigana::kana::kata_to_hira`) で出力時に正規化されるため、
+# 内部表現上はどちらで書いても等価。
+KANA_RE = re.compile(r'^[ぁ-ゖァ-ヿー・]+$')
 
 
 class Errors(list):
@@ -39,9 +42,9 @@ class Errors(list):
         self.append(msg)
 
 
-def is_katakana(s: str) -> bool:
-    """`s` が全角カタカナ (+ ー / ・) のみで構成されているか"""
-    return bool(s) and bool(KATAKANA_RE.fullmatch(s))
+def is_kana(s: str) -> bool:
+    """`s` が ひらがな または 全角カタカナ (+ ー / ・) のみで構成されているか"""
+    return bool(s) and bool(KANA_RE.fullmatch(s))
 
 
 def load_toml(path: Path, errors: Errors):
@@ -70,8 +73,8 @@ def validate_lookup(path: Path, errors: Errors) -> dict:
         if not isinstance(reading, str):
             errors.add_for(path, f"'{surface}': value が string ではない")
             continue
-        if not is_katakana(reading):
-            errors.add_for(path, f"'{surface}' → '{reading}' (全角カタカナのみで書いてください)")
+        if not is_kana(reading):
+            errors.add_for(path, f"'{surface}' → '{reading}' (ひらがな または 全角カタカナで書いてください)")
     return entries
 
 
@@ -109,8 +112,8 @@ def validate_simple_entries(path: Path, errors: Errors) -> None:
         if not isinstance(value, str):
             errors.add_for(path, f"'{key}': value が string ではない")
             continue
-        if not is_katakana(value):
-            errors.add_for(path, f"'{key}' → '{value}' (全角カタカナのみで書いてください)")
+        if not is_kana(value):
+            errors.add_for(path, f"'{key}' → '{value}' (ひらがな または 全角カタカナで書いてください)")
 
 
 # ─── rules/units.toml ──────────────────────────────────────────────────────
@@ -128,9 +131,9 @@ def validate_units(path: Path, errors: Errors) -> None:
             errors.add_for(path, f"'{symbol}': inline table ({{ kana = ... }}) ではない")
             continue
         kana = info.get('kana')
-        if not isinstance(kana, str) or not is_katakana(kana):
+        if not isinstance(kana, str) or not is_kana(kana):
             errors.add_for(
-                path, f"'{symbol}'.kana = '{kana}' (全角カタカナのみで書いてください)"
+                path, f"'{symbol}'.kana = '{kana}' (ひらがな または 全角カタカナで書いてください)"
             )
 
 
@@ -152,9 +155,9 @@ def validate_scales(path: Path, errors: Errors) -> None:
         kana = e.get('kana')
         if not isinstance(kanji, str) or not kanji:
             errors.add_for(path, f"entry[{i}]: kanji 欠落")
-        if not isinstance(kana, str) or not is_katakana(kana):
+        if not isinstance(kana, str) or not is_kana(kana):
             errors.add_for(
-                path, f"entry[{i}]: '{kanji}' → kana = '{kana}' (全角カタカナのみで書いてください)"
+                path, f"entry[{i}]: '{kanji}' → kana = '{kana}' (ひらがな または 全角カタカナで書いてください)"
             )
 
 
@@ -171,8 +174,8 @@ def validate_days(path: Path, errors: Errors) -> None:
         n = int(key)
         if not (1 <= n <= 31):
             errors.add_for(path, f"key '{key}' は 1〜31 の範囲外")
-        if not isinstance(value, str) or not is_katakana(value):
-            errors.add_for(path, f"'{key}' → '{value}' (全角カタカナのみで書いてください)")
+        if not isinstance(value, str) or not is_kana(value):
+            errors.add_for(path, f"'{key}' → '{value}' (ひらがな または 全角カタカナで書いてください)")
 
 
 # ─── rules/counters.toml ───────────────────────────────────────────────────
@@ -187,9 +190,9 @@ def validate_counters(path: Path, errors: Errors) -> None:
         errors.add_for(path, "[simple] が table ではない")
     else:
         for c, suffix in simple.items():
-            if not isinstance(suffix, str) or not is_katakana(suffix):
+            if not isinstance(suffix, str) or not is_kana(suffix):
                 errors.add_for(
-                    path, f"simple.'{c}' = '{suffix}' (全角カタカナのみで書いてください)"
+                    path, f"simple.'{c}' = '{suffix}' (ひらがな または 全角カタカナで書いてください)"
                 )
 
     counters = data.get('counter', {})
@@ -202,31 +205,31 @@ def validate_counters(path: Path, errors: Errors) -> None:
             errors.add_for(path, f"counter.'{c}' が table ではない")
             continue
         d = rule.get('default')
-        if d is not None and (not isinstance(d, str) or not is_katakana(d)):
+        if d is not None and (not isinstance(d, str) or not is_kana(d)):
             errors.add_for(
-                path, f"counter.'{c}'.default = '{d}' (全角カタカナのみで書いてください)"
+                path, f"counter.'{c}'.default = '{d}' (ひらがな または 全角カタカナで書いてください)"
             )
         # rules / replacements / specials の suffix も軽く確認
         for r in rule.get('rules', []):
             if isinstance(r, dict):
                 s = r.get('suffix')
-                if s is not None and (not isinstance(s, str) or not is_katakana(s)):
+                if s is not None and (not isinstance(s, str) or not is_kana(s)):
                     errors.add_for(
-                        path, f"counter.'{c}'.rules: suffix = '{s}' (全角カタカナのみ)"
+                        path, f"counter.'{c}'.rules: suffix = '{s}' (ひらがな または 全角カタカナ)"
                     )
         for r in rule.get('replacements', []):
             if isinstance(r, dict):
                 t = r.get('to')
-                if t is not None and (not isinstance(t, str) or not is_katakana(t)):
+                if t is not None and (not isinstance(t, str) or not is_kana(t)):
                     errors.add_for(
-                        path, f"counter.'{c}'.replacements: to = '{t}' (全角カタカナのみ)"
+                        path, f"counter.'{c}'.replacements: to = '{t}' (ひらがな または 全角カタカナ)"
                     )
         specials = rule.get('specials', {})
         if isinstance(specials, dict):
             for k, v in specials.items():
-                if not isinstance(v, str) or not is_katakana(v):
+                if not isinstance(v, str) or not is_kana(v):
                     errors.add_for(
-                        path, f"counter.'{c}'.specials.'{k}' = '{v}' (全角カタカナのみ)"
+                        path, f"counter.'{c}'.specials.'{k}' = '{v}' (ひらがな または 全角カタカナ)"
                     )
 
 
@@ -249,20 +252,20 @@ def validate_context(path: Path, errors: Errors) -> None:
             errors.add_for(path, f"rule[{i}]: surface 欠落")
             surface = '<unknown>'
         default = r.get('default')
-        if default is not None and (not isinstance(default, str) or not is_katakana(default)):
+        if default is not None and (not isinstance(default, str) or not is_kana(default)):
             errors.add_for(
-                path, f"rule[{i}] '{surface}': default = '{default}' (全角カタカナのみ)"
+                path, f"rule[{i}] '{surface}': default = '{default}' (ひらがな または 全角カタカナ)"
             )
         for j, m in enumerate(r.get('match', [])):
             if not isinstance(m, dict):
                 continue
             reading = m.get('reading')
             if reading is not None and (
-                not isinstance(reading, str) or not is_katakana(reading)
+                not isinstance(reading, str) or not is_kana(reading)
             ):
                 errors.add_for(
                     path,
-                    f"rule[{i}] '{surface}'.match[{j}]: reading = '{reading}' (全角カタカナのみ)",
+                    f"rule[{i}] '{surface}'.match[{j}]: reading = '{reading}' (ひらがな または 全角カタカナ)",
                 )
 
 
