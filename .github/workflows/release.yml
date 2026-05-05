@@ -35,7 +35,9 @@ jobs:
         run: |
           TAG="${{ steps.tag.outputs.tag }}"
           ARCHIVE="furigana-dict-${TAG}.tar.gz"
-          tar -czf "$ARCHIVE" core/
+          # core/ (語彙辞書) と rules/ (助数詞・文脈・スケール等のエンジンルール) の両方を含める。
+          # rules/ がないと本体 furigana は助数詞・文脈ルールが空のまま起動する。
+          tar -czf "$ARCHIVE" core/ rules/
           ls -lh "$ARCHIVE"
           echo "ARCHIVE=$ARCHIVE" >> "$GITHUB_ENV"
 
