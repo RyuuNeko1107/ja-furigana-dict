@@ -14,3 +14,9 @@ Thumbs.db
 
 # Local config / dev
 .env
+
+# Python
+__pycache__/
+
+# Maintainer-only seed export from production (intermediate, not committed)
+/tools/seed/
