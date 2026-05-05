@@ -5,7 +5,15 @@ body:
   - type: markdown
     attributes:
       value: |
-        PR を直接出せる方は [`core/jukugo.toml`](../../tree/master/core/jukugo.toml) を直接編集して PR を投げてください (このフォームより速いです)。
+        **PR を直接出せる方は、該当ファイルを直接編集して PR を投げる方が速いです** (このフォームより)。
+        - 一般熟語: [`core/jukugo/general.toml`](../../blob/master/core/jukugo/general.toml)
+        - 固有名詞: [`core/jukugo/proper_nouns.toml`](../../blob/master/core/jukugo/proper_nouns.toml)
+        - 地名: [`core/jukugo/place_names.toml`](../../blob/master/core/jukugo/place_names.toml)
+        - 人名: [`core/jukugo/personal_names.toml`](../../blob/master/core/jukugo/personal_names.toml)
+        - 単漢字: [`core/unihan.toml`](../../blob/master/core/unihan.toml)
+        - 異体字: [`core/compat.toml`](../../blob/master/core/compat.toml)
+
+        詳細は [CONTRIBUTING.md](../../blob/master/CONTRIBUTING.md) を参照。
   - type: input
     id: surface
     attributes:
@@ -30,10 +38,23 @@ body:
   - type: dropdown
     id: file
     attributes:
-      label: 追加先ファイル
+      label: 追加先ファイル (判断に迷えば general.toml で OK、レビューで振り分けます)
       options:
-        - core/jukugo.toml (一般熟語・固有名詞)
-        - core/unihan.toml (単漢字)
-        - core/compat.toml (異体字)
+        - core/jukugo/general.toml (二字 / 三字の一般熟語)
+        - core/jukugo/four_char.toml (四字熟語: 4 字 + 全部 CJK 漢字)
+        - core/jukugo/proper_nouns.toml (会社名 / 作品名 / ブランド名)
+        - core/jukugo/place_names.toml (地名: 国 / 都道府県 / 駅 / スポット)
+        - core/jukugo/personal_names.toml (人名: 姓 / 名 / 著名人)
+        - core/unihan.toml (単漢字フォールバック)
+        - core/compat.toml (異体字 → 標準字)
+        - rules/numeric_phrases.toml (数字を含む例外語句: 二十歳→ハタチ等)
+        - わからない / 該当なし
     validations:
       required: true
+  - type: textarea
+    id: test
+    attributes:
+      label: テスト文 (任意)
+      placeholder: |
+        その語を含む短い例文があると、レビュアーが「このテキストでこの読みになる」を確認しやすいです。
+        例: 「灰桜の散る道を歩いた」

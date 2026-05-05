@@ -1,20 +1,25 @@
-name: バグ報告
+name: バグ報告 / 既存エントリの誤読
 description: 既存エントリの読みが間違っている / フォーマット問題等
 labels: ["bug"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        修正 PR を直接出せるならそちらが速いです (該当ファイルを GitHub Web UI で編集 → Commit changes → PR)。
+        詳細は [CONTRIBUTING.md](../../blob/master/CONTRIBUTING.md) を参照。
   - type: textarea
     id: description
     attributes:
       label: 何が起きてる?
       placeholder: |
-        例: core/jukugo.toml の「灰桜」が「ハイザクラ」になっているが
-        正しくは「ハイザクラ」ではなく「ハイサクラ」(濁点なし) では?
+        例: core/jukugo/general.toml の「灰桜」が「ハイザクラ」になっているが
+        正しくは「ハイサクラ」(濁点なし) では?
     validations:
       required: true
   - type: input
     id: surface
     attributes:
-      label: 該当 surface
+      label: 該当 surface (表記)
       placeholder: "灰桜"
   - type: input
     id: current
@@ -26,6 +31,22 @@ body:
     attributes:
       label: 提案する読み
       placeholder: "ハイサクラ"
+  - type: dropdown
+    id: file
+    attributes:
+      label: 該当ファイル
+      options:
+        - core/jukugo/general.toml (二字 / 三字の一般熟語)
+        - core/jukugo/four_char.toml (四字熟語)
+        - core/jukugo/proper_nouns.toml (会社名 / 作品名 / ブランド名)
+        - core/jukugo/place_names.toml (地名)
+        - core/jukugo/personal_names.toml (人名)
+        - core/unihan.toml (単漢字)
+        - core/compat.toml (異体字)
+        - rules/counters/*.toml (助数詞)
+        - rules/context/*.toml (文脈ルール)
+        - rules/days.toml / scales.toml / units.toml / symbols.toml / latin.toml / numeric_phrases.toml
+        - わからない / 該当なし
   - type: textarea
     id: reference
     attributes:

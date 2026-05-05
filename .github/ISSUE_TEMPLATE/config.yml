@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discussions (使い方や辞書方針の相談)
+    url: https://github.com/RyuuNeko1107/ja-furigana-dict/discussions
+    about: 「これってどう書けばいい？」「カテゴリどっち？」など、バグ報告や読み追加でないものは Discussions へ
+  - name: 🦀 エンジン本体 (Rust) の不具合
+    url: https://github.com/RyuuNeko1107/ja-furigana/issues/new/choose
+    about: フリガナ engine の挙動の問題は ja-furigana リポジトリに
+  - name: 📝 PR を直接出す
+    url: https://github.com/RyuuNeko1107/ja-furigana-dict/blob/master/CONTRIBUTING.md
+    about: 大半は GitHub Web UI で TOML を 1 行追加 → Commit → PR で完結します (Rust 不要)
