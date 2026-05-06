@@ -16,6 +16,24 @@
 - [`out_of_scope.toml`](./out_of_scope.toml) — **仕様上諦める**: 高度な文脈推論や
   古文・方言など、機械学習なしのこのエンジンの範囲外。期待しない。
 
+## ja-furigana 側 `tools/check_samples.txt` との関係
+
+検証ループ (誤読の探索 → 修正) のワークフロー:
+
+```
+[ja-furigana/tools/check_samples.txt]   ← 探索の場 (1 回限りで使い捨て可)
+       ↓ 試す
+   誤読を発見 → lib / dict を修正
+       ↓ 全部 OK になった例文
+[ja-furigana-dict/tests/corpus/should_read.toml]   ← アーカイブ + 回帰防止
+       ↓
+   CI (`tools/run_corpus.py` ベース) で常時検証 → regression したら fail
+```
+
+つまり `should_read.toml` は **過去に直した誤読の永久保存場所**。CI で守ることで
+「lib / dict を改修したらまたあの誤読が復活した」を防ぐ。`check_samples.txt` の方は
+次のラウンド (新しい例文を作って試す) ごとに上書きしてよい。
+
 ## 形式
 
 各ファイルは以下の TOML 形式:
