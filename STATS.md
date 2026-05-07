@@ -13,10 +13,10 @@ git に commit されている master HEAD の状態を基準にする。
 | カテゴリ | エントリ数 | サイズ |
 |---|---:|---:|
 | **単漢字** (`core/unihan.toml`、本番 dump) | **43,749** | **796 KB** |
-| **熟語** (`core/jukugo/*`、手動 PR メンテ) | **3,309** | **133 KB** |
+| **熟語** (`core/jukugo/*`、手動 PR メンテ) | **3,807** | **153 KB** |
 | **異体字** (`core/compat.toml`) | **436** | **6.3 KB** |
 | **エンジンルール** (`rules/`) | **249** | **25 KB** |
-| **合計** | **47,743** | **960 KB** |
+| **合計** | **48,241** | **980 KB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 配布物 (`furigana-dict-vX.Y.Z.tar.gz`) は gzip 圧縮後 ~226 KB (`v0.1.2` 時点)。
@@ -33,29 +33,29 @@ git に commit されている master HEAD の状態を基準にする。
 | `core/jukugo/general.toml` | 739 | 20 KB | 二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む) |
 | `core/jukugo/personal_names.toml` | 214 | 9.5 KB | 人名 (戦国 / 平安 / 江戸 / 明治大正 / 古典作家、現代私人除く) |
 | `core/jukugo/place_names.toml` | 163 | 5.5 KB | 地名 (47 都道府県 / 主要都市 / 駅 / 寺社仏閣 / 観光地) |
+| `core/jukugo/abstracts.toml` | 152 | 5.3 KB | 美意識 / 古典文学 / 仏教 / 儒教 / 思想 |
+| `core/jukugo/emotions.toml` | 150 | 5.0 KB | 感情 / 心理状態 / 性格 / 心情 |
+| `core/jukugo/politics.toml` | 149 | 5.1 KB | 政治 / 行政 / 立法 / 司法 / 国際関係 |
 | `core/jukugo/literature.toml` | 148 | 10 KB | 古典文学 / 作品名 / 文学用語 / 詩歌 / 評論 |
 | `core/jukugo/specialized.toml` | 145 | 5.4 KB | 専門用語 (医学 / 軍事 / 法学 / 経済 / IT / 工学) |
-| `core/jukugo/foods.toml` | 142 | 4.6 KB | 食べ物 / 料理 / 和菓子 / 郷土料理 / 食材 / 調味料 |
+| `core/jukugo/sports.toml` | 144 | 9.1 KB | 近代スポーツ / 球技 / 陸上 / 水泳 / 体操 / 大会 |
+| `core/jukugo/architecture.toml` | 143 | 8.7 KB | 建築 / 建造物 / 寺社建築 / 城郭 / 庭園 |
+| `core/jukugo/foods.toml` | 141 | 4.8 KB | 食べ物 / 料理 / 和菓子 / 郷土料理 / 食材 / 調味料 |
 | `core/jukugo/four_char.toml` | 141 | 6.3 KB | 四字熟語 (4 字 + 全 CJK 漢字) |
+| `core/jukugo/vehicles.toml` | 137 | 5.1 KB | 乗り物 / 交通手段 / 船舶 / 航空 / 鉄道 |
 | `core/jukugo/weather.toml` | 137 | 4.8 KB | 気象 / 天候 / 季語的気象 / 二十四節気 / 海洋気象 |
-| `core/jukugo/animals.toml` | 131 | 3.9 KB | 動植物 / 魚介 / 鳥 / 昆虫 / 茸 / 海藻の難読 |
+| `core/jukugo/science.toml` | 136 | 5.2 KB | 自然科学 (天文 / 物理 / 化学 / 生物 / 地学) |
 | `core/jukugo/colors.toml` | 130 | 4.5 KB | 色名 / 染色 / 模様 / 古典色 / 鉱物色 |
+| `core/jukugo/animals.toml` | 129 | 4.0 KB | 動植物 / 魚介 / 鳥 / 昆虫 / 茸 / 海藻の難読 |
+| `core/jukugo/idioms.toml` | 122 | 6.8 KB | 慣用句 / ことわざ / 故事成語 (フレーズ単位) |
 | `core/jukugo/proper_nouns.toml` | 116 | 6.2 KB | 固有名詞 (大学 / 中央官庁 / 元号 / 歴史的事象、PR 募集中) |
 | `core/jukugo/music.toml` | 107 | 6.3 KB | 音楽ジャンル / 楽典 / 楽器 / 演奏 / 音楽用語 |
-| `core/jukugo/arts.toml` | 95 | 5.6 KB | 古典芸能 / 武道 / 茶華香 / 工芸 |
 | `core/jukugo/body_parts.toml` | 95 | 3.2 KB | 体の部位 / 内臓 / 骨格 / 筋肉 / 神経 |
-| `core/jukugo/religions.toml` | 91 | 3.5 KB | 神道 / 仏教 / キリスト教 / イスラム / 儀礼 |
-| `core/jukugo/abstracts.toml` | 86 | 3.2 KB | 美意識 / 古典文学 / 仏教 / 儒教 / 思想 |
-| `core/jukugo/clothes.toml` | 86 | 2.7 KB | 衣服 / 装束 / アクセサリー / 履物 |
-| `core/jukugo/architecture.toml` | 84 | 5.3 KB | 建築 / 建造物 / 寺社建築 / 城郭 / 庭園 |
-| `core/jukugo/idioms.toml` | 79 | 4.9 KB | 慣用句 / ことわざ / 故事成語 (フレーズ単位) |
-| `core/jukugo/emotions.toml` | 78 | 2.8 KB | 感情 / 心理状態 / 性格 / 心情 |
-| `core/jukugo/sports.toml` | 77 | 5.4 KB | 近代スポーツ / 球技 / 陸上 / 水泳 / 体操 / 大会 |
-| `core/jukugo/science.toml` | 76 | 3.0 KB | 自然科学 (天文 / 物理 / 化学 / 生物 / 地学) |
-| `core/jukugo/vehicles.toml` | 76 | 2.9 KB | 乗り物 / 交通手段 / 船舶 / 航空 / 鉄道 |
-| `core/jukugo/politics.toml` | 73 | 2.7 KB | 政治 / 行政 / 立法 / 司法 / 国際関係 |
+| `core/jukugo/arts.toml` | 94 | 5.8 KB | 古典芸能 / 武道 / 茶華香 / 工芸 |
+| `core/jukugo/religions.toml` | 90 | 3.6 KB | 神道 / 仏教 / キリスト教 / イスラム / 儀礼 |
+| `core/jukugo/clothes.toml` | 85 | 2.8 KB | 衣服 / 装束 / アクセサリー / 履物 |
 | `core/compat.toml` | 436 | 6.3 KB | 異体字 → 標準字 (髙→高 等) |
-| **小計** | **47,494** | **935 KB** | (jukugo 内訳: 24 ファイル / **3,309 件** / 133 KB) |
+| **小計** | **47,992** | **956 KB** | (jukugo 内訳: 24 ファイル / **3,807 件** / 153 KB) |
 <!-- AUTO-GENERATED:CORE:END -->
 
 ### `rules/` — エンジンルール
