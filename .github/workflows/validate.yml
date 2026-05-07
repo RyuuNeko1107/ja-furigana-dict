@@ -47,3 +47,24 @@ jobs:
 
       - name: 検証実行
         run: python3 tools/validate.py
+
+  python-security:
+    name: Python セキュリティ静的解析 (bandit)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+
+      - name: Install bandit
+        run: pip install bandit
+
+      - name: bandit scan (tools/)
+        # tools/ 配下の Python script を任意コード実行系 API
+        # (exec / eval / pickle / yaml.load / os.system / subprocess shell=True 等)
+        # で scan、 medium 以上の severity が出たら CI fail。
+        # 既存 script は subprocess.run(argv list, shell=False) のみで clean。
+        # -ii = MEDIUM 以上を fail 対象に、 -ll = LOW 以上 confidence を表示。
+        run: bandit -r tools/ -ii -ll

@@ -48,11 +48,36 @@ jobs:
           sha256sum "$ARCHIVE" > "${ARCHIVE}.sha256"
           cat "${ARCHIVE}.sha256"
 
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+
+      - name: 前回 tag との差分 markdown 生成 (diff_release.py)
+        # checkout は default で fetch-depth=1 のため、 tag 履歴を全部取り直す
+        # (`git describe --tags HEAD^` が動くように)。
+        # 直前 tag がない (= 最初の release) 場合は diff スキップ。
+        run: |
+          git fetch --tags --force --depth=200 || true
+          TAG="${{ steps.tag.outputs.tag }}"
+          PREV=$(git describe --tags --abbrev=0 "${TAG}^" 2>/dev/null || echo "")
+          DIFF_FILE="furigana-dict-${TAG}-DIFF.md"
+          if [ -n "$PREV" ]; then
+            echo "前回 tag: $PREV → 今回 tag: $TAG"
+            python3 tools/diff_release.py "$PREV" "$TAG" > "$DIFF_FILE"
+            head -30 "$DIFF_FILE"
+          else
+            echo "# 初回 release ($TAG)" > "$DIFF_FILE"
+            echo "" >> "$DIFF_FILE"
+            echo "(前回 tag が無いので差分なし)" >> "$DIFF_FILE"
+          fi
+          echo "DIFF_FILE=$DIFF_FILE" >> "$GITHUB_ENV"
+
       - name: GitHub Release に upload
         uses: softprops/action-gh-release@v3
         with:
           files: |
             ${{ env.ARCHIVE }}
             ${{ env.ARCHIVE }}.sha256
+            ${{ env.DIFF_FILE }}
           tag_name: ${{ steps.tag.outputs.tag }}
           generate_release_notes: true
