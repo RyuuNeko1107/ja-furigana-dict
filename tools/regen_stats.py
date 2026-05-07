@@ -39,7 +39,6 @@ STATS_MD = ROOT / "STATS.md"
 # ファイル用 (rules は構造が複雑、unihan は機械生成 dump)。
 # 通常の jukugo / works ファイルは [meta] description で書く。
 DESCRIPTIONS_FALLBACK: dict[str, str] = {
-    "core/unihan.toml": "単漢字フォールバック (初期 seed + override 14 件)",
     "core/single_overrides.toml": "単漢字 default reading override (issue #15 限定解、 Lindera reading より優先)",
     "core/compat.toml": "異体字 → 標準字 (髙→高 等)",
     "rules/days.toml": "1〜31 日の特殊読み (1→ツイタチ 等)",
@@ -154,11 +153,8 @@ def gather_core() -> list[tuple[str, int, int]]:
     以降の loader と挙動を揃える)。
     """
     rows: list[tuple[str, int, int]] = []
-    p = ROOT / "core/unihan.toml"
-    if p.exists():
-        rows.append(("core/unihan.toml", count_entries(p), effective_bytes(p)))
 
-    def collect(subdir: str) -> list[tuple[str, int, int]]:
+    def collect(subdir: str, sort_by_count: bool = True) -> list[tuple[str, int, int]]:
         base = ROOT / "core" / subdir
         if not base.is_dir():
             return []
@@ -166,9 +162,22 @@ def gather_core() -> list[tuple[str, int, int]]:
         for p in sorted(base.glob("**/*.toml")):
             rel = p.relative_to(ROOT).as_posix()
             out.append((rel, count_entries(p), effective_bytes(p)))
-        out.sort(key=lambda r: -r[1])
+        if sort_by_count:
+            out.sort(key=lambda r: -r[1])
         return out
 
+    # unihan/ は water level 順で表示したいので sort_by_count=False
+    # (joyo → jinmeiyou → jis_basic → jis_supplement → extension)
+    unihan_order = {
+        "core/unihan/joyo.toml": 0,
+        "core/unihan/jinmeiyou.toml": 1,
+        "core/unihan/jis_basic.toml": 2,
+        "core/unihan/jis_supplement.toml": 3,
+        "core/unihan/extension.toml": 4,
+    }
+    unihan_rows = collect("unihan", sort_by_count=False)
+    unihan_rows.sort(key=lambda r: unihan_order.get(r[0], 999))
+    rows.extend(unihan_rows)
     rows.extend(collect("jukugo"))
     rows.extend(collect("works"))
     rows.extend(collect("loanwords"))
@@ -212,7 +221,7 @@ def gen_summary(core_rows: list, rules_rows: list) -> str:
         sub = [r for r in core_rows if r[0] == prefix or r[0].startswith(prefix)]
         return sum(r[1] for r in sub), sum(r[2] for r in sub)
 
-    unihan_count, unihan_size = slice_("core/unihan.toml")
+    unihan_count, unihan_size = slice_("core/unihan/")
     jukugo_count, jukugo_size = slice_("core/jukugo/")
     works_count, works_size = slice_("core/works/")
     loanwords_count, loanwords_size = slice_("core/loanwords/")
@@ -232,7 +241,7 @@ def gen_summary(core_rows: list, rules_rows: list) -> str:
     lines = [
         "| カテゴリ | エントリ数 | サイズ |",
         "|---|---:|---:|",
-        f"| **単漢字** (`core/unihan.toml`、seed) | **{unihan_count:,}** | **{fmt_size(unihan_size)}** |",
+        f"| **単漢字** (`core/unihan/*`、 水準別 5 ファイル) | **{unihan_count:,}** | **{fmt_size(unihan_size)}** |",
         f"| **熟語** (`core/jukugo/*`、手動 PR メンテ) | **{jukugo_count:,}** | **{fmt_size(jukugo_size)}** |",
     ]
     if works_count > 0:
@@ -270,9 +279,14 @@ def gen_core(core_rows: list) -> str:
         lines.append(f"| {link_rel(rel)} | {count:,} | {fmt_size(size)} | {desc} |")
     total_count = sum(r[1] for r in core_rows)
     total_size = sum(r[2] for r in core_rows)
+    unihan_rows = [r for r in core_rows if r[0].startswith("core/unihan/")]
     jukugo_rows = [r for r in core_rows if r[0].startswith("core/jukugo/")]
     works_rows = [r for r in core_rows if r[0].startswith("core/works/")]
     breakdown_parts = []
+    if unihan_rows:
+        n = sum(r[1] for r in unihan_rows)
+        s = fmt_size(sum(r[2] for r in unihan_rows))
+        breakdown_parts.append(f"unihan: {len(unihan_rows)} ファイル / **{n:,} 件** / {s}")
     if jukugo_rows:
         n = sum(r[1] for r in jukugo_rows)
         s = fmt_size(sum(r[2] for r in jukugo_rows))
