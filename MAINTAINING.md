@@ -57,27 +57,56 @@ python3 tools/classify_jukugo.py --apply
 # 4. validate
 python3 tools/validate.py
 
-# 5. commit + release
+# 5. commit (release は daily-release.yml が翌 JST 03:00 に自動)
 git add core/
 git commit -m "data: upstream から seed 再投入 (unihan X / jukugo Y / compat Z)"
 git push origin master
-echo "v0.1.X" > VERSION && git add VERSION && git commit -m "chore: bump"
-git tag -a v0.1.X && git push origin v0.1.X
+# 即時 release が必要なら手動で:
+#   TODAY=$(date +%Y.%m.%d)
+#   git tag -a "v$TODAY" -m "v$TODAY"
+#   git push origin "v$TODAY"
 ```
 
-## CI
+> root の `VERSION` ファイルは v0.1.x 時代の名残で、CalVer 移行後は使用しない。
+> 将来の cleanup で削除予定。
+
+## CI / Workflow 一覧
 
 ### Validate (`validate.yml`)
-- PR で `tools/validate.py` (taplo + scheme + kana 検証 + cross-file 重複検出) が走る。
-- 失敗時は PR コメントに詳細が出るのでそれに従って修正。
+- push / PR で `tools/validate.py` (taplo + scheme + kana 検証 + cross-file 重複検出) が走る
+- 失敗時は CI ログに詳細が出るのでそれに従って修正
 
 ### Release (`release.yml`)
-- `v*` tag push で `furigana-dict-vX.Y.Z.tar.gz` + `.sha256` を GitHub Releases に upload。
-- 中身は `core/` + `rules/` の 2 階層 (利用側 CLI で `data/` 1 階層に flatten 展開)。
+- `v*` tag push で `furigana-dict-<tag>.tar.gz` + `.sha256` を GitHub Releases に upload
+- 中身は `core/` + `rules/` の 2 階層 (利用側 CLI で `data/` 1 階層に flatten 展開)
+- tag 文字列は CalVer / semver 問わず受け付け、URL に流すだけ
+
+### Daily auto-release (`daily-release.yml`)
+- JST 03:00 に cron 起動
+- 前回 tag 以降 core/ または rules/ に変更があれば、CalVer (`vYYYY.MM.DD`) tag を auto-commit
+- bot の `[skip stats]` commit は差分判定から除外 (STATS.md 更新だけでは release しない)
+- 同日複数 release は `vYYYY.MM.DD.1` / `.2` … で衝突回避
+
+### Regen STATS.md (`regen-stats.yml`)
+- master push (core/**/*.toml, rules/**/*.toml, tools/regen_stats.py 変更時) trigger
+- `tools/regen_stats.py` が走り、STATS.md の auto-generated 区間 (マーカー間) を更新
+- diff があれば `chore: regen STATS.md [skip stats]` で auto-commit
+- contributor は手元で実行不要
+
+### Auto-merge label (`auto-merge-label.yml`)
+- `pull_request_target` で起動
+- 変更ファイルがすべて `core/` / `rules/` 配下、行追加 ≤ 200 の PR に
+  `auto-mergeable` label を付ける (条件外なら label を外す)
+
+### Auto-merge after 48h (`auto-merge.yml`)
+- 6 時間ごとに cron 起動
+- `auto-mergeable` label 付き、最終更新 48h 以上経過、CI all green、merge 可能 (CLEAN)
+  な PR を squash merge + branch delete
+- 48h grace は spam / 悪意ある PR の preempt 反応時間
 
 ### Dependabot (`.github/dependabot.yml`)
-- GitHub Actions のみ (Cargo / npm 依存無し)。
-- 週次の actions 更新 PR が来るので CI 緑なら merge。
+- GitHub Actions のみ (Cargo / npm 依存無し)
+- 週次の actions 更新 PR が来るので CI 緑なら auto-merge label が付いて 48h 後に merge
 
 ## PR のレビュー方針
 

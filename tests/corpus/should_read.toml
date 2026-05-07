@@ -1,8 +1,8 @@
 # 「読めるはず」の期待値スナップショット
 #
 # 辞書 + ルールが揃っていれば必ず正解になる入力。これが壊れたら何かを失った。
-# 現状の ja-furigana-dict (alpha.1 同梱 seed: unihan 43k / jukugo 605 / compat 436)
-# 相当を前提にしている。
+# 安定化した検証 case を verify_batch.txt から promote する場所で、
+# CI (tools/run_corpus.py) で常時回帰検証する。
 
 # ---------------------------------------------------------------------------
 # 一般熟語: jukugo/general.toml で hit するもの

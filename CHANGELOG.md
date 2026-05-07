@@ -8,14 +8,16 @@
 
 ## バージョン体系
 
-`v0.1.0` 〜 `v0.1.3` までは semver、`v0.1.3` 以降は **CalVer (`vYYYY.MM.DD`)** に
-切り替え。理由:
+`v0.1.0` 〜 `v0.1.3` までが semver、**v0.1.3 を最後に CalVer (`vYYYY.MM.DD`) に
+切り替え**。次回以降の release は CalVer 形式 (daily-release.yml が JST 03:00 に
+自動 tag)。CalVer 採用理由:
 - 辞書はデータ累積が本質で breaking 概念が薄い
 - daily auto-release との直感的対応 (今日の release = 今日の date)
 - tag 名から「いつの辞書か」が即わかる
 
 同日に複数 release が打たれた場合は `vYYYY.MM.DD.1` / `.2` … の suffix を付ける。
-過去の semver tag (`v0.1.0` 〜 `v0.1.3`) はそのまま historical として残す。
+過去の semver tag (`v0.1.0` 〜 `v0.1.3`) はそのまま historical として残し、
+`furigana dict pull --version v0.1.3` のような pin は引き続き動作する。
 
 ## [Unreleased]
 
@@ -23,8 +25,9 @@
 
 ## [0.1.3] - 2026-05-07
 
-語彙辞書の継続拡充 (jukugo 1,832 → 4,351、約 +138%、24 ファイル分類維持) +
+語彙辞書の継続拡充 (jukugo 1,832 → 4,351 程度、約 +138%、24 ファイル分類維持) +
 作品単位辞書ディレクトリ `core/works/` 新設 + STATS.md 自動生成基盤の整備。
+(release tag 後の master では更に少額追加が積まれるため、最新値は STATS.md 参照)
 ja-furigana 0.1.0-alpha.6 (loader 全階層再帰対応) とペアの release。
 
 ### Added (語彙辞書 +2,591 件 / works 72 件)
@@ -87,7 +90,7 @@ agent 拡充中に jukugo に紛れ込んだ単漢字 entry 22 件 (袴 / 袷 / 
   - `personal_names.toml`: 0 → 71 (戦国 / 平安 / 古典作家 + 異体字姓)
   - `place_names.toml`: 5 → 109 (47 都道府県 + 主要都市 + 駅 + 寺社仏閣 + 観光地)
   - `proper_nouns.toml`: 0 → 67 (大学 / 中央官庁 / 元号 / 歴史的事象)
-- `core/unihan.toml` の override に「魚=サカナ」「魚=サカナ」を追加（旧 unihan の
+- `core/unihan.toml` の override に「魚=サカナ」を追加（旧 unihan の
   「なまうお」を上書き）。
 - `tests/corpus/` を新設 (`should_read.toml` / `should_not_read_yet.toml` /
   `out_of_scope.toml`)。`tools/run_corpus.py` で回帰テスト可能。
@@ -182,7 +185,8 @@ ja-furigana 0.1.0-alpha.3 で resolve_reading が
 
 ## [一覧]
 
-[Unreleased]: https://github.com/RyuuNeko1107/ja-furigana-dict/compare/v0.1.2...HEAD
+[Unreleased]: https://github.com/RyuuNeko1107/ja-furigana-dict/compare/v0.1.3...HEAD
+[0.1.3]: https://github.com/RyuuNeko1107/ja-furigana-dict/releases/tag/v0.1.3
 [0.1.2]: https://github.com/RyuuNeko1107/ja-furigana-dict/releases/tag/v0.1.2
 [0.1.1]: https://github.com/RyuuNeko1107/ja-furigana-dict/releases/tag/v0.1.1
 [0.1.0]: https://github.com/RyuuNeko1107/ja-furigana-dict/releases/tag/v0.1.0
