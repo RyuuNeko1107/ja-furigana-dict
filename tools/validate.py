@@ -78,6 +78,32 @@ def validate_lookup(path: Path, errors: Errors) -> dict:
     return entries
 
 
+# ─── core/single_overrides.toml ───────────────────────────────────────────
+# 単漢字 surface (≥1 文字) の default reading override 専用ファイル。
+def validate_single_overrides(path: Path, errors: Errors) -> dict:
+    """[entries] section: 単漢字 surface (1 字) → カタカナ読み"""
+    data = load_toml(path, errors)
+    if data is None:
+        return {}
+    entries = data.get('entries')
+    if not isinstance(entries, dict):
+        errors.add_for(path, "[entries] section が無い、または table ではない")
+        return {}
+    for surface, reading in entries.items():
+        if not isinstance(reading, str):
+            errors.add_for(path, f"single_overrides '{surface}': value が string ではない")
+            continue
+        if len(surface) == 0 or len(list(surface)) != 1:
+            # NOTE: chars().count() を len() で代用 (Python str は文字数 = len)
+            char_count = sum(1 for _ in surface)
+            if char_count != 1:
+                errors.add_for(path, f"single_overrides '{surface}': surface は **必ず 1 字** (現在 {char_count} 字)、 ≥2 字 surface は jukugo に置く")
+                continue
+        if not is_kana(reading):
+            errors.add_for(path, f"single_overrides '{surface}' → '{reading}' (ひらがな または 全角カタカナで書いてください)")
+    return entries
+
+
 # ─── core/loanwords/*.toml ────────────────────────────────────────────────
 # ASCII / 全角英字 始まりの surface 専用 (IT 用語等)。 reading はカタカナ。
 LOANWORD_SURFACE_RE = re.compile(r'^[A-Za-zＡ-Ｚａ-ｚ][A-Za-z0-9Ａ-Ｚａ-ｚ０-９+#._\-＋＃．＿－]*$')
@@ -399,6 +425,7 @@ def main() -> int:
         (discover(core, 'jukugo', recursive=True), load_jukugo),
         (discover_works(core),                     load_jukugo),
         (discover(core, 'loanwords', recursive=True), lambda p: validate_loanwords(p, errors)),
+        ([core / 'single_overrides.toml'],   lambda p: validate_single_overrides(p, errors)),
         (discover(core, 'unihan'),                 load_unihan),
         ([core / 'compat.toml'],             lambda p: validate_compat(p, errors)),
         ([rules / 'numeric_phrases.toml'],   lambda p: validate_simple_entries(p, errors)),

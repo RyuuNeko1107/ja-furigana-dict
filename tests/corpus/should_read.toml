@@ -834,3 +834,19 @@ input = "土を耕す"
 mode = "hiragana"
 expected = "つちをたがやす"
 note = "土 (issue #15): unihan「土=つち」 が Lindera「ド」 に override される問題、 phrase 化で固定"
+
+# ---------------------------------------------------------------------------
+# 単漢字 override (core/single_overrides.toml) — Step 3.5 で評価
+# ---------------------------------------------------------------------------
+
+[[case]]
+input = "畑の土"
+mode = "hiragana"
+expected = "はたけのつち"
+note = "土 single_overrides: 1 字 surface「土」 が「ド」 ではなく「ツチ」 で確定 (Step 3.5)"
+
+[[case]]
+input = "土が固い"
+mode = "hiragana"
+expected = "つちがかたい"
+note = "土 single_overrides: 単独 surface でも override が hit"

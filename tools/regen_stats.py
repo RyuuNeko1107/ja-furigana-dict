@@ -40,6 +40,7 @@ STATS_MD = ROOT / "STATS.md"
 # 通常の jukugo / works ファイルは [meta] description で書く。
 DESCRIPTIONS_FALLBACK: dict[str, str] = {
     "core/unihan.toml": "単漢字フォールバック (初期 seed + override 14 件)",
+    "core/single_overrides.toml": "単漢字 default reading override (issue #15 限定解、 Lindera reading より優先)",
     "core/compat.toml": "異体字 → 標準字 (髙→高 等)",
     "rules/days.toml": "1〜31 日の特殊読み (1→ツイタチ 等)",
     "rules/scales.toml": "万 / 億 / 兆 / 京 等の大数スケール",
@@ -147,6 +148,9 @@ def gather_core() -> list[tuple[str, int, int]]:
     rows.extend(collect("jukugo"))
     rows.extend(collect("works"))
     rows.extend(collect("loanwords"))
+    p = ROOT / "core/single_overrides.toml"
+    if p.exists():
+        rows.append(("core/single_overrides.toml", count_entries(p), p.stat().st_size))
     p = ROOT / "core/compat.toml"
     if p.exists():
         rows.append(("core/compat.toml", count_entries(p), p.stat().st_size))
@@ -188,14 +192,17 @@ def gen_summary(core_rows: list, rules_rows: list) -> str:
     jukugo_count, jukugo_size = slice_("core/jukugo/")
     works_count, works_size = slice_("core/works/")
     loanwords_count, loanwords_size = slice_("core/loanwords/")
+    single_ov_count, single_ov_size = slice_("core/single_overrides.toml")
     compat_count, compat_size = slice_("core/compat.toml")
     rules_count = sum(r[1] for r in rules_rows)
     rules_size = sum(r[2] for r in rules_rows)
     total_count = (
-        unihan_count + jukugo_count + works_count + loanwords_count + compat_count + rules_count
+        unihan_count + jukugo_count + works_count + loanwords_count
+        + single_ov_count + compat_count + rules_count
     )
     total_size = (
-        unihan_size + jukugo_size + works_size + loanwords_size + compat_size + rules_size
+        unihan_size + jukugo_size + works_size + loanwords_size
+        + single_ov_size + compat_size + rules_size
     )
 
     lines = [
@@ -211,6 +218,10 @@ def gen_summary(core_rows: list, rules_rows: list) -> str:
     if loanwords_count > 0:
         lines.append(
             f"| **外来語** (`core/loanwords/*`、IT 用語等の英字 surface) | **{loanwords_count:,}** | **{fmt_size(loanwords_size)}** |"
+        )
+    if single_ov_count > 0:
+        lines.append(
+            f"| **単漢字 override** (`core/single_overrides.toml`、 issue #15 限定解) | **{single_ov_count:,}** | **{fmt_size(single_ov_size)}** |"
         )
     lines.extend([
         f"| **異体字** (`core/compat.toml`) | **{compat_count:,}** | **{fmt_size(compat_size)}** |",
