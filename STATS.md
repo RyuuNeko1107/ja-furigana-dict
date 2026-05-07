@@ -42,16 +42,16 @@ git に commit されている master HEAD の状態を基準にする。
 | `core/jukugo/religions.toml` | 165 | 6.4 KB | 神道 / 仏教 / キリスト教 / イスラム / 儀礼 |
 | `core/jukugo/place_names.toml` | 164 | 5.6 KB | 地名 (47 都道府県 / 主要都市 / 駅 / 寺社仏閣 / 観光地) |
 | `core/jukugo/body_parts.toml` | 163 | 5.5 KB | 体の部位 / 内臓 / 骨格 / 筋肉 / 神経 |
-| `core/jukugo/idioms.toml` | 160 | 8.8 KB | 慣用句 / ことわざ / 故事成語 (フレーズ単位) |
 | `core/jukugo/abstracts.toml` | 153 | 5.2 KB | 美意識 / 古典文学 / 仏教 / 儒教 / 思想 |
+| `core/jukugo/four_char.toml` | 153 | 6.9 KB | 四字熟語 (4 字 + 全 CJK 漢字) |
 | `core/jukugo/architecture.toml` | 151 | 8.9 KB | 建築 / 建造物 / 寺社建築 / 城郭 / 庭園 |
 | `core/jukugo/emotions.toml` | 150 | 5.0 KB | 感情 / 心理状態 / 性格 / 心情 |
 | `core/jukugo/specialized.toml` | 150 | 5.8 KB | 専門用語 (医学 / 軍事 / 法学 / 経済 / IT / 工学) |
 | `core/jukugo/politics.toml` | 149 | 5.1 KB | 政治 / 行政 / 立法 / 司法 / 国際関係 |
+| `core/jukugo/idioms.toml` | 148 | 8.4 KB | 慣用句 / ことわざ / 故事成語 (フレーズ単位) |
 | `core/jukugo/literature.toml` | 148 | 10 KB | 古典文学 / 作品名 / 文学用語 / 詩歌 / 評論 |
 | `core/jukugo/foods.toml` | 145 | 4.8 KB | 食べ物 / 料理 / 和菓子 / 郷土料理 / 食材 / 調味料 |
 | `core/jukugo/sports.toml` | 145 | 9.4 KB | 近代スポーツ / 球技 / 陸上 / 水泳 / 体操 / 大会 |
-| `core/jukugo/four_char.toml` | 141 | 6.3 KB | 四字熟語 (4 字 + 全 CJK 漢字) |
 | `core/jukugo/vehicles.toml` | 137 | 4.9 KB | 乗り物 / 交通手段 / 船舶 / 航空 / 鉄道 |
 | `core/works/game/touhou.toml` | 72 | 4.5 KB | 東方Project (上海アリス幻樂団): キャラクター名 / 場所 / 用語 (公式読みベース) |
 | `core/compat.toml` | 436 | 6.3 KB | 異体字 → 標準字 (髙→高 等) |
