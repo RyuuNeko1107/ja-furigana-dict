@@ -21,8 +21,7 @@ on:
       - 'rules/**/*.toml'
       - 'tools/regen_stats.py'
       - 'tools/list_dups.py'
-      - 'tools/dedup_unihan_compat.py'
-      - 'tools/dedup_jukugo_compat.py'
+      - 'tools/dedup_compat.py'
 
 permissions:
   contents: write
@@ -43,11 +42,8 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: dedup compat 異体字 entries (unihan)
-        run: python3 tools/dedup_unihan_compat.py
-
-      - name: dedup compat 異体字 entries (jukugo + works)
-        run: python3 tools/dedup_jukugo_compat.py
+      - name: dedup compat 異体字 entries (unihan + jukugo + works)
+        run: python3 tools/dedup_compat.py
 
       - name: STATS.md 再生成
         run: python3 tools/regen_stats.py
