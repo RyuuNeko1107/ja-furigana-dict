@@ -157,3 +157,47 @@ reading = "カタガタ"
 next_eq = "に"
 next_next_starts_with_any = ["おかれ"]
 reading = "カタガタ"
+
+# ─── 表: 「表に出る/立つ/向く」 はオモテ、「表を作成」 などはヒョウ (default) ─
+# Lindera 単独 token の default が ヒョウ (data table) になる傾向のため、
+# 物理的「表 (おもて)」用法を context rule で拾う。
+[[rule]]
+surface = "表"
+default = "ヒョウ"
+
+# 「表に出る」「表に立つ」「表に向かう」 — 方向を示す用法
+[[rule.match]]
+next_eq = "に"
+next_next_starts_with_any = ["出", "立", "向"]
+reading = "オモテ"
+
+# 「表から」(出入口・方向) → オモテ
+[[rule.match]]
+next_eq = "から"
+reading = "オモテ"
+
+# 「表向き」「表通り」「表沙汰」「表舞台」「表口」「表面」(物理的表側)
+[[rule.match]]
+next_starts_with_any = ["向き", "通り", "沙汰", "舞台", "口", "玄関", "参道", "門"]
+reading = "オモテ"
+
+# ─── 翡翠: 鉱物 (ヒスイ default) と 鳥 (カワセミ) で読み分け ─────────────
+# general.toml が default ヒスイ を提供 (アクセサリー / 色名で頻度高)。
+# 鳥 (カワセミ) 用法は水辺・池・枝など自然描写の文脈に限定的なので
+# context rule で拾う。 animals.toml の 「翡翠 = カワセミ」 は cross-file
+# 重複を避けるため削除済み。
+[[rule]]
+surface = "翡翠"
+default = "ヒスイ"
+
+# 「翡翠 + が + 水辺/池/木/枝/羽」 — 鳥の動作・生息描写
+[[rule.match]]
+next_eq = "が"
+next_next_starts_with_any = ["水辺", "池", "木", "枝", "羽", "飛", "舞", "鳴", "止ま"]
+reading = "カワセミ"
+
+# 「翡翠 + の + 羽/姿/巣/鳴き声」
+[[rule.match]]
+next_eq = "の"
+next_next_starts_with_any = ["羽", "姿", "巣", "鳴", "雛"]
+reading = "カワセミ"
