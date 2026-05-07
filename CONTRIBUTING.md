@@ -148,6 +148,35 @@ loader が全階層再帰でスキャンするため、`core/works/<medium>/<tit
 
 詳細サブポリシーは [`core/works/README.md`](core/works/README.md) を参照。
 
+### `core/loanwords/` — 外来語 (IT 用語等の英字 surface)
+
+ASCII / 全角英字始まりの surface に対するカタカナ ヨミを置く専用ディレクトリ。
+ja-furigana 側 chunks 階層 4.7 で **完全一致 lookup** (case-fold + 全角→半角) で参照される。
+将来的にカテゴリ細分化を許容するサブディレクトリ構造 (例: `core/loanwords/it.toml`、
+`core/loanwords/company.toml` など) で配置。
+
+**形式**:
+```toml
+[meta]
+description = "IT 用語 / プログラミング言語 / OSS / クラウドサービス / 技術企業 (ASCII surface)"
+
+[entries]
+"Anthropic" = "アンソロピック"
+"Kubernetes" = "クバネティス"
+"PostgreSQL" = "ポストグレスキューエル"
+```
+
+**重要な制約 (jukugo と異なる)**:
+- surface は **ASCII / 全角英字始まり** + 英数字 + 記号 (`+ # . - _`) のみ
+- `validate.py::LOANWORD_SURFACE_RE` で形式チェック (CI で fail)
+- reading は カタカナ表記 (lib 側で出力時にひらがな化されないので、 そのままカタカナで残る)
+- substring 切断ゼロ なので「Post」 entry を作っても「PostgreSQL」 chunk には部分 hit しない
+- canonical form (大文字始まり) で書く ーー 入力側のブレ (大小 / 全角) は lib 側で正規化される
+
+**NG**:
+- 「.NET」 「@types/node」 のような **記号始まり** surface (regex に match しない、 alias で「DotNET」 等を別 entry に)
+- 短すぎる ASCII (例: 「IT」 「OS」) は誤マッチを起こしやすいので慎重に検討
+
 ### `rules/counters/` — 助数詞ルール (7 ファイルに細分化)
 
 | ファイル | 範囲 |

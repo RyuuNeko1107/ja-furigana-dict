@@ -73,7 +73,14 @@ git push origin master
 ## CI / Workflow 一覧
 
 ### Validate (`validate.yml`)
-- push / PR で `tools/validate.py` (taplo + scheme + kana 検証 + cross-file 重複検出) が走る
+- push / PR で `tools/validate.py` が走り、 以下を検証:
+  - TOML 構文 + `[entries]` / `[map]` セクション必須
+  - reading が ひらがな or 全角カタカナ + 長音 + 中点 のみ
+  - jukugo (`core/jukugo/**`) と unihan (`core/unihan.toml`) の cross-file 重複検出 → ERROR
+  - **jukugo 同士の divergent reading** (例: `abstracts.toml` の イチレント vs
+    `four_char.toml` の イチレンタ) → ERROR で CI fail
+  - **loanwords (`core/loanwords/**`)** の surface が `[A-Za-zＡ-Ｚａ-ｚ]` 始まり
+    + 英数字記号 (`+ # . - _`) のみ、 reading が カタカナ
 - 失敗時は CI ログに詳細が出るのでそれに従って修正
 
 ### Release (`release.yml`)
@@ -87,10 +94,11 @@ git push origin master
 - bot の `[skip stats]` commit は差分判定から除外 (STATS.md 更新だけでは release しない)
 - 同日複数 release は `vYYYY.MM.DD.1` / `.2` … で衝突回避
 
-### Regen STATS.md (`regen-stats.yml`)
-- master push (core/**/*.toml, rules/**/*.toml, tools/regen_stats.py 変更時) trigger
+### Regen STATS.md / STATS_DUPS.md (`regen-stats.yml`)
+- master push (core/**/*.toml, rules/**/*.toml, tools/regen_stats.py, tools/list_dups.py 変更時) trigger
 - `tools/regen_stats.py` が走り、STATS.md の auto-generated 区間 (マーカー間) を更新
-- diff があれば `chore: regen STATS.md [skip stats]` で auto-commit
+- `tools/list_dups.py` が走り、STATS_DUPS.md (cross-file 重複レポート: 同 reading + divergent reading の 2 セクション markdown table) を更新
+- diff があれば `chore: regen STATS.md / STATS_DUPS.md [skip stats]` で auto-commit
 - contributor は手元で実行不要
 
 ### Auto-merge label (`auto-merge-label.yml`)
