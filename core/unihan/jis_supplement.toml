@@ -1,8 +1,9 @@
 # JIS 補助 (CJK Extension A + Compatibility Ideographs、 概ね JIS X 0213 第3+第4水準カバー)
 #
-# このファイルは tools/classify_unihan.py で自動分類された。
-# 個別 entry の手動編集は OK (PR で reading 修正等)、 ただし新規追加は
-# 該当 codepoint range のファイルへ。
+# このファイルは tools/classify_unihan.py で水準別自動分類された後、
+# tools/fill_missing_unihan.py で seed list の欠落分が KANJIDIC reading で補完され、
+# tools/dedup_unihan_compat.py で compat 経由 dead entries が除去された。
+# 個別 entry の手動編集は OK (PR で reading 修正等)。
 
 [meta]
 description = "JIS 補助 (CJK Extension A + Compatibility Ideographs、 概ね JIS X 0213 第3+第4水準カバー)"
@@ -4825,7 +4826,6 @@ description = "JIS 補助 (CJK Extension A + Compatibility Ideographs、 概ね 
 "䶴" = "スイ"
 "﨎" = "ソウ"
 "﨏" = "さこ"
-"﨑" = "さき"
 "﨓" = "たぶ"
 "﨔" = "けやき"
 "﨟" = "ロウ"

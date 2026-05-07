@@ -80,15 +80,24 @@ def write_bucket(path: Path, fname: str, entries: dict[str, str]) -> None:
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
-def fill(target_file: str, seed_chars: set[str], kanji_data: dict) -> tuple[int, int, list[str]]:
+def fill(
+    target_file: str,
+    seed_chars: set[str],
+    kanji_data: dict,
+    compat_keys: set[str],
+) -> tuple[int, int, list[str]]:
     """target_file に seed_chars の欠落分を kanji_data から補完する。
-    戻り値: (元 entries 数, 追加 entries 数, reading 取得失敗 char list)。"""
+    戻り値: (元 entries 数, 追加 entries 数, reading 取得失敗 char list)。
+
+    compat_keys (異体字 → 標準字 の異体字側) は **lib から呼ばれない dead 経路**
+    なので missing 対象から除外する (例: 「巢」 は compat で「巣」 に正規化される
+    ので unihan に「巢」 を持つ必要なし、 「巣」 さえあれば良い)。"""
     path = ROOT / "core/unihan" / target_file
     with open(path, "rb") as f:
         data = tomllib.load(f)
     entries: dict[str, str] = dict(data.get("entries", {}))
     initial = len(entries)
-    missing = seed_chars - set(entries.keys())
+    missing = seed_chars - set(entries.keys()) - compat_keys
     failed: list[str] = []
     added = 0
     for c in sorted(missing):
@@ -118,10 +127,15 @@ def main() -> None:
     with open(SEED_DIR / "kanji.json", encoding="utf-8") as f:
         kanji_data = json.load(f)
 
+    # compat の異体字 key (標準字に正規化される側) は lib から呼ばれないので、
+    # fill 対象から除外する。
+    with open(ROOT / "core/compat.toml", "rb") as f:
+        compat_keys = set(tomllib.load(f).get("map", {}).keys())
     print(f"KANJIDIC entries: {len(kanji_data):,}")
+    print(f"compat keys (除外): {len(compat_keys):,}")
 
     for target, seed in (("joyo.toml", joyo_seed), ("jinmeiyou.toml", jin_seed_only)):
-        initial, added, failed = fill(target, seed, kanji_data)
+        initial, added, failed = fill(target, seed, kanji_data, compat_keys)
         print(f"{target}: {initial:,} → {initial + added:,} (+{added})")
         if failed:
             failed_str = "".join(failed)
