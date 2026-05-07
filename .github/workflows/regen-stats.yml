@@ -1,8 +1,14 @@
-name: Regen STATS.md / STATS_DUPS.md
+name: Dedup compat + Regen STATS.md / STATS_DUPS.md
 
-# 辞書 (core/) / ルール (rules/) / regen_stats.py / list_dups.py のいずれかが
-# master に push されたら、 STATS.md と STATS_DUPS.md を再生成して
-# diff があれば auto-commit する。
+# 辞書 (core/) / ルール (rules/) / 該当 tools/*.py のいずれかが master に push
+# されたら、 順に:
+#
+#   1. compat 異体字 entries の dedup (unihan + jukugo + works)
+#   2. STATS.md / STATS_DUPS.md の再生成
+#
+# を走らせて diff があれば一括 auto-commit する。 dedup は冪等で、 dead 経路の
+# entries が無ければ no-op。 contributor が PR で誤って異体字 surface を追加
+# しても、 CI が自動で標準形に置換 / 削除する。
 #
 # bot 自身の commit は `[skip stats]` を含むので再 trigger されない。
 # 既存 commit に手で `[skip stats]` を入れたい場合 (release commit 等) もスキップされる。
@@ -15,13 +21,15 @@ on:
       - 'rules/**/*.toml'
       - 'tools/regen_stats.py'
       - 'tools/list_dups.py'
+      - 'tools/dedup_unihan_compat.py'
+      - 'tools/dedup_jukugo_compat.py'
 
 permissions:
   contents: write
 
 jobs:
   regen:
-    name: STATS.md / STATS_DUPS.md 自動再生成
+    name: dedup compat + STATS.md / STATS_DUPS.md 自動再生成
     if: "!contains(github.event.head_commit.message, '[skip stats]')"
     runs-on: ubuntu-latest
     steps:
@@ -35,6 +43,12 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: dedup compat 異体字 entries (unihan)
+        run: python3 tools/dedup_unihan_compat.py
+
+      - name: dedup compat 異体字 entries (jukugo + works)
+        run: python3 tools/dedup_jukugo_compat.py
+
       - name: STATS.md 再生成
         run: python3 tools/regen_stats.py
 
@@ -43,13 +57,13 @@ jobs:
 
       - name: diff があれば commit + push
         run: |
-          if git diff --quiet -- STATS.md STATS_DUPS.md; then
-            echo "STATS.md / STATS_DUPS.md are up-to-date, nothing to commit"
+          if git diff --quiet; then
+            echo "辞書 + STATS.md / STATS_DUPS.md ともに drift なし、 commit 不要"
             exit 0
           fi
-          echo "STATS.md / STATS_DUPS.md have drift, committing..."
+          echo "drift detected, committing..."
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add STATS.md STATS_DUPS.md
-          git commit -m "chore: regen STATS.md / STATS_DUPS.md [skip stats]"
+          git add -A
+          git commit -m "chore: dedup compat + regen STATS [skip stats]"
           git push

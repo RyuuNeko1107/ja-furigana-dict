@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
 core/jukugo/*.toml と core/works/**/*.toml から、 surface 内に compat 異体字
-key を含む entry を削除する (一度限りの cleanup)。
+key を含む entry を削除する。 **冪等 / CI 自動実行**
+(.github/workflows/regen-stats.yml で master push 時)。
 
 ja-furigana lib の処理順:
   1. 異体字正規化 (kana::normalize_text — compat 適用)
@@ -12,13 +13,15 @@ ja-furigana lib の処理順:
 dead。 「高橋」 entry が同じ reading で居るか確認:
 - 居る (collision なし): 旧 entry 削除のみ
 - 居ない: 標準形に rename (旧削除 + 新追加、 元の file の末尾に append)
-- 居る が reading 違う (collision): 削除 skip + 警告 (manual review)
+- 居る が reading 違う (collision): 削除 skip + 警告 (manual review、 stderr)
 
-走らせ方:
+contributor が PR で誤って異体字 surface を追加しても、 master push 時に CI が
+自動で本 script を走らせて 標準形へ rewrite する。 手動実行は通常不要。
+
+走らせ方 (手動):
     python tools/dedup_jukugo_compat.py
 
-冪等性: 既に重複なしなら no-op。 rename された entry の reading source は元の
-異体字 entry の reading をそのまま使う (= 移植)。
+冪等性: 既に重複なしなら no-op (file 書き戻し自体スキップ)。
 """
 from __future__ import annotations
 

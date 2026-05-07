@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 core/unihan/*.toml から、 core/compat.toml の異体字 key と重複する entry を
-削除する (一度限りの cleanup)。
+削除する。 **冪等 / CI 自動実行** (.github/workflows/regen-stats.yml で master push 時)。
 
 ja-furigana lib の処理順は:
 
@@ -12,13 +12,13 @@ ja-furigana lib の処理順は:
 つまり「髙」 が入力に来ても Step 1 で「高」 に置換され、 unihan は「高」 だけ
 を見る。 unihan に「髙」 entry が残っていても **lib からは到達不可** (dead code)。
 
-ja-furigana-dict v1 系では元 ryuuneko.com seed が compat と unihan の重複を
-保持していたため、 411 entries が dead state で残っていた。 本 script で削除。
+contributor が PR で誤って異体字 surface を追加しても、 master push 時に CI が
+自動で本 script を走らせて drop する。 手動実行は通常不要 (検証や local 確認時のみ)。
 
-走らせ方:
+走らせ方 (手動):
     python tools/dedup_unihan_compat.py
 
-冪等性: 既に重複なしなら no-op。
+冪等性: 既に重複なしなら no-op (file 書き戻し自体スキップ)。
 """
 from __future__ import annotations
 
