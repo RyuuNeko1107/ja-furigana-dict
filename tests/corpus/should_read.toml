@@ -602,3 +602,121 @@ input = "書院造りの間"
 mode = "hiragana"
 expected = "しょいんづくりのま"
 note = "「○○の間」: context rule は prev_prev を見れないため architecture.toml で phrase 化 (奥の間 / 茶の間 / 次の間 / 客の間 / 書院造の間 と同パターン)"
+
+# ---------------------------------------------------------------------------
+# 歌舞伎・能楽演目 (R16) — Lindera は演目名を一般語に分解しがち
+# ---------------------------------------------------------------------------
+
+[[case]]
+input = "勧進帳の弁慶"
+mode = "hiragana"
+expected = "かんじんちょうのべんけい"
+note = "勧進帳: 歌舞伎十八番、 arts.toml jukugo"
+
+[[case]]
+input = "助六由縁江戸桜"
+mode = "hiragana"
+expected = "すけろくゆかりのえどざくら"
+note = "助六由縁江戸桜: 演目名 phrase 全体を arts.toml に固定"
+
+[[case]]
+input = "鏡獅子の毛振り"
+mode = "hiragana"
+expected = "かがみじしのけぶり"
+note = "鏡獅子 / 毛振り: 連濁 (フリ→ブリ) を含む歌舞伎用語、 arts.toml"
+
+[[case]]
+input = "京鹿子娘道成寺"
+mode = "hiragana"
+expected = "きょうかのこむすめどうじょうじ"
+note = "京鹿子娘道成寺: 演目 phrase、 「京鹿子」 がカガ誤読されないよう固定"
+
+[[case]]
+input = "仮名手本忠臣蔵"
+mode = "hiragana"
+expected = "かなでほんちゅうしんぐら"
+note = "仮名手本忠臣蔵: 「仮名」 がカメイ誤読されないよう仮名手本ごと固定"
+
+[[case]]
+input = "菅原伝授手習鑑"
+mode = "hiragana"
+expected = "すがわらでんじゅてならいかがみ"
+note = "菅原伝授手習鑑: 演目 phrase 全体を固定 (手習鑑 = テナライカガミ)"
+
+# ---------------------------------------------------------------------------
+# 神道・記紀神話 (R16) — Lindera が固有名詞を一般漢字に分解
+# ---------------------------------------------------------------------------
+
+[[case]]
+input = "天照大神を祀る"
+mode = "hiragana"
+expected = "あまてらすおおみかみをまつる"
+note = "天照大神: 「テンアキラオオガミ」 誤読を回避、 religions.toml"
+
+[[case]]
+input = "須佐之男命の伝承"
+mode = "hiragana"
+expected = "すさのおのみことのでんしょう"
+note = "須佐之男命: 「スサノオトコイノチ」 誤読を回避、 religions.toml"
+
+[[case]]
+input = "大国主神話"
+mode = "hiragana"
+expected = "おおくにぬししんわ"
+note = "大国主: 「ダイコクシュ」 誤読を回避、 religions.toml"
+
+[[case]]
+input = "八咫烏の導き"
+mode = "hiragana"
+expected = "やたがらすのみちびき"
+note = "八咫烏: 「ハチ咫カラス」 (咫 が unihan 不在) 誤読を回避"
+
+[[case]]
+input = "高天原の伝説"
+mode = "hiragana"
+expected = "たかまがはらのでんせつ"
+note = "高天原: 神話固有名詞、 religions.toml"
+
+[[case]]
+input = "神武天皇の即位"
+mode = "hiragana"
+expected = "じんむてんのうのそくい"
+note = "神武天皇: 記紀神話の初代天皇名"
+
+# ---------------------------------------------------------------------------
+# 専門・固有名詞 (R16: 将棋 / 海産 / 道具 / 当て字 phrase)
+# ---------------------------------------------------------------------------
+
+[[case]]
+input = "角行を交換"
+mode = "hiragana"
+expected = "かくぎょうをこうかん"
+note = "角行: 将棋駒、 「カッコウ」 (鳥) 誤読を回避、 sports.toml"
+
+[[case]]
+input = "帆立の貝柱"
+mode = "hiragana"
+expected = "ほたてのかいばしら"
+note = "帆立: 「ホリツ」 誤読を回避、 animals.toml"
+
+[[case]]
+input = "蒸籠で蒸す"
+mode = "hiragana"
+expected = "せいろでむす"
+note = "蒸籠: 「ムスカゴ」 誤読を回避、 foods.toml"
+
+[[case]]
+input = "葛切りを食べる"
+mode = "hiragana"
+expected = "くずきりをたべる"
+note = "葛切り: 送り仮名 「り」 付きの別 entry を foods.toml に追加 (R15 の書院造 / 書院造り と同パターン)"
+
+# ---------------------------------------------------------------------------
+# unihan #15 回避 phrase (R16): 畔 = アゼ context を phrase 化
+# ---------------------------------------------------------------------------
+
+[[case]]
+input = "畔道を歩く"
+mode = "hiragana"
+expected = "あぜみちをあるく"
+note = "畔道: 単漢字 「畔」 unihan が Lindera に override される (issue #15) 回避で phrase 固定 (アゼ vs ホトリ heteronym)"
