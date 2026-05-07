@@ -1,0 +1,75 @@
+name: Daily auto-release
+
+# 1 日 1 回 (JST 03:00 / UTC 18:00) 起動。
+# 前回 tag 以降に core/ または rules/ への変更が 1 件以上あれば、
+# patch version を 1 つ bump して tag を打つ → 既存 release.yml が
+# tag push を catch して tar.gz + sha256 を GitHub Release に upload する。
+#
+# auto-commit (`chore: regen STATS.md [skip stats]`) は中身 (辞書 entry) の
+# 変更ではないので、差分判定からは除外する。
+
+on:
+  schedule:
+    - cron: '0 18 * * *'    # UTC 18:00 = JST 03:00
+  workflow_dispatch:        # 手動トリガー (動作確認 / 強制 release)
+
+permissions:
+  contents: write
+
+jobs:
+  maybe-release:
+    name: 差分があれば patch bump で tag を打つ
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 前回 tag を解決
+        id: last
+        run: |
+          LAST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "v0.0.0")
+          echo "tag=$LAST_TAG" >> "$GITHUB_OUTPUT"
+          echo "Last tag: $LAST_TAG"
+
+      - name: core/ rules/ の変更を確認 (auto-commit は除外)
+        id: diff
+        run: |
+          LAST_TAG="${{ steps.last.outputs.tag }}"
+          # core/ / rules/ への変更コミットを抽出、bot の auto-commit は除外
+          CHANGES=$(git log "$LAST_TAG..HEAD" --pretty='%H %s' -- core/ rules/ \
+            | grep -v '\[skip stats\]' \
+            | grep -v 'chore: regen STATS.md' \
+            || true)
+          if [ -z "$CHANGES" ]; then
+            echo "No content changes in core/ or rules/ since $LAST_TAG"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Changes since $LAST_TAG:"
+            echo "$CHANGES"
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: 次の patch version を計算
+        if: steps.diff.outputs.skip != 'true'
+        id: next
+        run: |
+          LAST_TAG="${{ steps.last.outputs.tag }}"
+          MAJOR=$(echo "$LAST_TAG" | sed 's/^v//' | cut -d. -f1)
+          MINOR=$(echo "$LAST_TAG" | sed 's/^v//' | cut -d. -f2)
+          PATCH=$(echo "$LAST_TAG" | sed 's/^v//' | cut -d. -f3)
+          NEXT="v${MAJOR}.${MINOR}.$((PATCH + 1))"
+          echo "tag=$NEXT" >> "$GITHUB_OUTPUT"
+          echo "Next tag: $NEXT"
+
+      - name: tag を打って push
+        if: steps.diff.outputs.skip != 'true'
+        run: |
+          NEXT="${{ steps.next.outputs.tag }}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # 既存の release.yml workflow が tag push を catch して
+          # tar.gz + sha256 を GitHub Release に upload する。
+          git tag -a "$NEXT" -m "$NEXT (daily auto-release)"
+          git push origin "$NEXT"
