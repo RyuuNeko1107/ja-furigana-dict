@@ -140,3 +140,20 @@ reading = "サムケ"
 [[rule.match]]
 prev_ends_with_any = ["背筋", "悪寒"]
 reading = "サムケ"
+
+# ─── 方々: 場所 (ホウボウ) と人々の敬称 (カタガタ) で読み分け ─────────
+# 「方々で噂」「方々を巡る」→ ホウボウ、「方々におかれましては」→ カタガタ
+[[rule]]
+surface = "方々"
+default = "ホウボウ"
+
+# 敬称: prev に 御/皆様/関係者 等
+[[rule.match]]
+prev_ends_with_any = ["御", "皆様", "関係者", "出席者", "ご来場の", "参加者"]
+reading = "カタガタ"
+
+# 敬称: next が「におかれ」「が」「は」+ 敬語動詞
+[[rule.match]]
+next_eq = "に"
+next_next_starts_with_any = ["おかれ"]
+reading = "カタガタ"
