@@ -113,8 +113,11 @@ def dedup_jukugo_works(compat: dict[str, str]) -> tuple[int, int, int]:
     """jukugo/*.toml + works/**/*.toml から異体字を含む surface を整理。
     戻り値: (削除数, 標準形 rename 追加数, collision 数)。"""
     all_files = sorted(
-        glob.glob(str(ROOT / "core/jukugo/*.toml")) +
-        glob.glob(str(ROOT / "core/works/**/*.toml"), recursive=True)
+        f for f in (
+            glob.glob(str(ROOT / "core/jukugo/**/*.toml"), recursive=True) +
+            glob.glob(str(ROOT / "core/works/**/*.toml"), recursive=True)
+        )
+        if Path(f).name != "_genre.toml"
     )
 
     # global lookup (rename 時の collision 検出用)

@@ -32,8 +32,16 @@ def gather() -> dict[str, list[tuple[str, str]]]:
     """jukugo / works 配下の (relpath, reading) を surface ごとに集める。"""
     seen: dict[str, list[tuple[str, str]]] = defaultdict(list)
     targets: list[Path] = []
-    targets.extend(sorted((ROOT / 'core' / 'jukugo').glob('*.toml')))
-    targets.extend(sorted((ROOT / 'core' / 'works').glob('**/*.toml')))
+    # jukugo / works とも genre dir 階層 (core/jukugo/<genre>/*.toml) があるので再帰。
+    # _genre.toml は STATS.md sub-section description メタなので skip。
+    targets.extend(
+        p for p in sorted((ROOT / 'core' / 'jukugo').glob('**/*.toml'))
+        if p.name != '_genre.toml'
+    )
+    targets.extend(
+        p for p in sorted((ROOT / 'core' / 'works').glob('**/*.toml'))
+        if p.name != '_genre.toml'
+    )
     for f in targets:
         with open(f, 'rb') as fp:
             data = tomllib.load(fp)

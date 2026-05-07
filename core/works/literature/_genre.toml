@@ -1,0 +1,4 @@
+[genre]
+name = "文学"
+description = "文学作品の固有名詞 (登場人物 / 巻名 / 場所、 古典定本ベース)"
+order = 2

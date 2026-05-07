@@ -160,6 +160,10 @@ def gather_core() -> list[tuple[str, int, int]]:
             return []
         out = []
         for p in sorted(base.glob("**/*.toml")):
+            # _genre.toml は STATS.md の sub-section description 用メタ、
+            # 辞書 entries を持たないので集計対象外。
+            if p.name == "_genre.toml":
+                continue
             rel = p.relative_to(ROOT).as_posix()
             out.append((rel, count_entries(p), effective_bytes(p)))
         if sort_by_count:
@@ -296,11 +300,109 @@ def _gen_subsection(
     return "\n".join(lines) + "\n"
 
 
+def load_genre_meta(dir_path: Path) -> dict | None:
+    """dir 内の `_genre.toml` の `[genre]` table を返す。 無ければ None。"""
+    f = dir_path / "_genre.toml"
+    if not f.is_file():
+        return None
+    try:
+        with open(f, "rb") as fp:
+            data = tomllib.load(fp)
+    except (OSError, tomllib.TOMLDecodeError):
+        return None
+    g = data.get("genre")
+    return g if isinstance(g, dict) else None
+
+
+def _gen_grouped_section(
+    title: str,
+    note: str,
+    base_subdir: str,
+    rows: list[tuple[str, int, int]],
+) -> str:
+    """jukugo / works のような genre dir 階層を持つカテゴリの sub-section。
+
+    各 rows を `core/<base_subdir>/<genre>/<file>.toml` の `<genre>` で group 化、
+    `_genre.toml` の `[genre]` メタから heading と description を引いて
+    h4 sub-sub-section として出力。 各 group 内の table は count desc。
+    `<genre>` = "" (= subdir 直下に flat 置き) の rows は最後にまとめる。
+    """
+    base = ROOT / "core" / base_subdir
+    lines = [f"### {title}", "", note, ""]
+    if not rows:
+        lines.append("(空)")
+        return "\n".join(lines) + "\n"
+
+    # group by genre dir 名
+    groups: dict[str, list[tuple[str, int, int]]] = {}
+    for rel, count, size in rows:
+        # rel = "core/<subdir>/<genre>/<file>.toml" or "core/<subdir>/<file>.toml"
+        parts = rel.split("/")
+        if len(parts) >= 4:
+            genre_key = parts[2]
+        else:
+            genre_key = ""  # flat 直下
+        groups.setdefault(genre_key, []).append((rel, count, size))
+
+    # genre meta を読んで order でソート
+    ordered: list[tuple[int, str, dict | None, list]] = []
+    for key, files in groups.items():
+        if key:
+            meta = load_genre_meta(base / key)
+            order = meta.get("order", 999) if meta else 999
+        else:
+            meta = None
+            order = 9999
+        ordered.append((order, key, meta, files))
+    ordered.sort(key=lambda t: (t[0], t[1]))
+
+    overall_n = sum(r[1] for r in rows)
+    overall_s = fmt_size(sum(r[2] for r in rows))
+    lines.append(f"**合計**: {overall_n:,} 件 / {overall_s} (genre {len(ordered)} 区分)")
+    lines.append("")
+
+    for _, key, meta, files in ordered:
+        files = sorted(files, key=lambda r: -r[1])
+        if meta and meta.get("name"):
+            heading = meta["name"]
+            desc = meta.get("description", "")
+        elif key:
+            heading = key
+            desc = ""
+        else:
+            heading = "(直下)"
+            desc = ""
+        lines.append(f"#### {heading}")
+        lines.append("")
+        if desc:
+            lines.append(desc)
+            lines.append("")
+        if key:
+            lines.append(f"`core/{base_subdir}/{key}/` — {len(files)} ファイル")
+        else:
+            lines.append(f"`core/{base_subdir}/` 直下 — {len(files)} ファイル")
+        lines.append("")
+        lines.append("| ファイル | エントリ数 | サイズ | 用途 |")
+        lines.append("|---|---:|---:|---|")
+        for rel, count, size in files:
+            d = lookup_description(rel)
+            lines.append(f"| {link_rel(rel)} | {count:,} | {fmt_size(size)} | {d} |")
+        if len(files) > 1:
+            n = sum(r[1] for r in files)
+            s = fmt_size(sum(r[2] for r in files))
+            lines.append(f"| **小計** ({len(files)} ファイル) | **{n:,}** | **{s}** | |")
+        lines.append("")
+
+    return "\n".join(lines) + "\n"
+
+
 def gen_core(core_rows: list) -> str:
     """core 内訳をカテゴリ別 sub-section に分割して出力。
 
     sub-section heading は GitHub auto-anchor に乗せやすいシンプルな日本語のみ
     (`### 単漢字` 等)。 summary 表の link は `#単漢字` 等の同名 anchor を指す。
+    熟語 / 作品造語 はさらに genre dir 単位で h4 sub-sub-section に分割
+    (`_genre.toml` の `[genre]` メタを heading + description として参照)。
     """
     unihan_rows = [r for r in core_rows if r[0].startswith("core/unihan/")]
     jukugo_rows = [r for r in core_rows if r[0].startswith("core/jukugo/")]
@@ -315,15 +417,17 @@ def gen_core(core_rows: list) -> str:
         "`core/unihan/*` — 水準別 5 ファイル。 lib の resolve_reading 6 段階で最終 fallback (Step 6) として参照される。 default reading review は使用頻度の高い `joyo.toml` を中心に。",
         unihan_rows,
     ))
-    sections.append(_gen_subsection(
+    sections.append(_gen_grouped_section(
         "熟語",
-        "`core/jukugo/*` — 手動 PR メンテのカテゴリ別 jukugo (≥ 2 字 surface)。 lib の Step 3 (jukugo lookup) で Lindera より優先採用。",
+        "`core/jukugo/<genre>/*` — 手動 PR メンテのジャンル別 jukugo (≥ 2 字 surface)。 lib の Step 3 (jukugo lookup) で Lindera より優先採用。 各 genre dir の `_genre.toml` がカテゴリ description を持つ。",
+        "jukugo",
         jukugo_rows,
     ))
     if works_rows:
-        sections.append(_gen_subsection(
+        sections.append(_gen_grouped_section(
             "作品造語",
-            "`core/works/*` — 作品単位 1 ファイル。 公式読みのみ採録、 出典コメント必須、 二次創作読み禁止のサブポリシー。",
+            "`core/works/<medium>/*` — 媒体 (game / literature 等) ごとに 1 作品 1 ファイル。 公式読みのみ採録、 出典コメント必須、 二次創作読み禁止のサブポリシー。",
+            "works",
             works_rows,
         ))
     if loanwords_rows:
