@@ -97,7 +97,7 @@ REPL の中からは `:pull` (or `pull`) でも同じ操作ができる。
 
 最も多いケース (読みを 1 件追加):
 
-1. カテゴリに合うファイル (例: 一般語なら [`core/jukugo/general.toml`](core/jukugo/general.toml)) を GitHub の Web UI で編集
+1. カテゴリに合うファイル (例: 一般語なら [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml)、 動物なら [`core/jukugo/nature/animals.toml`](core/jukugo/nature/animals.toml)) を GitHub の Web UI で編集
 2. 「Commit changes」→「Create pull request」
 3. CI (TOML 構文チェック + カタカナ検証) が通れば maintainer が merge
 
