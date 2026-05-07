@@ -97,26 +97,23 @@ surface = "者"
 default = "シャ"
 
 # 市場: 文脈で シジョウ / イチバ
-# 名詞 (default) は シジョウ (株式市場・金融市場)、固有名詞地名 + 市場 は jukugo 側で個別対応
+# default は イチバ (everyday: 市場で野菜を買う)。
+# 株式市場 / 金融市場 / 為替市場 / 国際市場 / 国内市場 は jukugo/general.toml に
+# 4 字 compound として登録済 (longest match で merge され context rule に到達しない)。
+# ここは backup — jukugo 未登録の compound に対する safety net。
 [[rule]]
 surface = "市場"
-default = "シジョウ"
+default = "イチバ"
 
-# prev が「市」で終わる固有名詞 (朝市 / 魚市 / 青果市 等) のとき → イチバ
+# 経済・金融文脈 (prev が経済領域の語) → シジョウ
 [[rule.match]]
-prev_eq = "の"
-prev_ends_with_any = ["市"]
-reading = "イチバ"
+prev_ends_with_any = ["証券", "債券", "労働", "海外", "輸出", "輸入", "新興"]
+reading = "シジョウ"
 
-# 「卸売市場」「中央卸売市場」「公設市場」のような連結 → イチバ
-# (「中央卸売市場」全体は jukugo place_names に登録済、ここは generic 経路の保険)
+# 経済・金融文脈 (next が経済用語) → シジョウ
 [[rule.match]]
-prev_eq = "卸売"
-reading = "イチバ"
-
-[[rule.match]]
-prev_eq = "公設"
-reading = "イチバ"
+next_starts_with_any = ["原理", "経済", "規模", "動向", "占有"]
+reading = "シジョウ"
 
 # ─── 今日 / 明日 / 昨日 / 今年 / 去年 / 来年 / 今月 ───────────────────
 [[rule]]

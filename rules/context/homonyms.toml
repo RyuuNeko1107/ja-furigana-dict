@@ -120,3 +120,23 @@ reading = "オトナゲ"
 next_eq = "の"
 next_next_starts_with_any = ["な", "無"]
 reading = "オトナゲ"
+
+# ─── 寒気: 体感 (寒気がする) は サムケ、気象 (寒気団 / 寒気が南下) は カンキ ─
+# weather.toml に default カンキ あり、ここで ある特定文脈のみ サムケ に上書き。
+[[rule]]
+surface = "寒気"
+default = "カンキ"
+
+[[rule.match]]
+next_eq = "が"
+next_next_starts_with_any = ["する", "し"]
+reading = "サムケ"
+
+[[rule.match]]
+next_eq = "を"
+next_next_starts_with_any = ["覚", "感", "催"]
+reading = "サムケ"
+
+[[rule.match]]
+prev_ends_with_any = ["背筋", "悪寒"]
+reading = "サムケ"
