@@ -19,7 +19,9 @@ STATS.md 内の 3 つのマーカー区間を埋め直す:
     [entries]
     ...
 
-CI では再生成後 `git diff --exit-code STATS.md` で stale 検知に使う。
+CI (`.github/workflows/regen-stats.yml`) は master push 時にこのスクリプトを走らせ、
+diff があれば `chore: regen STATS.md [skip stats]` として auto-commit する。
+contributor は手元で実行不要 (任意で実行は可、CI と同じ挙動)。
 
 要 Python 3.11+ (tomllib)。
 """

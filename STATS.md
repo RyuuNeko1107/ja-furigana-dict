@@ -3,8 +3,9 @@
 辞書ボリュームのスナップショット。配布時の中身を一覧で把握する用。
 git に commit されている master HEAD の状態を基準にする。
 
-> サマリ・件数表は `tools/regen_stats.py` で自動再生成される。
-> 用途列の編集はスクリプト内 `DESCRIPTIONS` を直接いじる。
+> サマリ・件数表は `.github/workflows/regen-stats.yml` で **GitHub 側で自動再生成 + auto-commit**。
+> contributor は TOML を編集して push (or PR merge) するだけで OK。
+> 用途列は各ファイル冒頭の `[meta] description = "..."` から自動取得。
 > ナラティブ部分 (利用側メモリ寄与 / カバレッジの偏り) は手動メンテ。
 
 ## サマリ
@@ -103,16 +104,20 @@ PR 大歓迎。
 
 ## 更新方法
 
-サマリと件数表は **自動生成** なので、TOML を編集したあとは:
+**何もしなくて OK**。TOML を編集して master に push (or PR merge) すれば、
+`.github/workflows/regen-stats.yml` が自動で `tools/regen_stats.py` を走らせて
+diff があれば `chore: regen STATS.md [skip stats]` で auto-commit する。
 
-```sh
-python3 tools/regen_stats.py
-git diff STATS.md
-git add STATS.md
+新規ファイルを追加した場合は、ファイル冒頭に以下を入れるだけ:
+
+```toml
+[meta]
+description = "<このファイルの 1 行説明>"
+
+[entries]
+...
 ```
 
-新規ファイルを追加した場合は `tools/regen_stats.py` 内の `DESCRIPTIONS` 辞書に
-`"core/jukugo/<new>.toml": "用途説明"` を追加してから再生成すること。
+`tools/regen_stats.py` がこの `[meta].description` を STATS.md の用途列に取り込む。
 
-CI (`.github/workflows/validate.yml`) は再生成して `git diff --exit-code STATS.md`
-が non-zero ならジョブを fail させる (drift 検知)。
+ローカルで手動再生成したい場合は `python3 tools/regen_stats.py` で生成可能 (CI と同じ挙動)。
