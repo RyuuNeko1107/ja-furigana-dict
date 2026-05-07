@@ -34,11 +34,25 @@ gh pr create
 
 ### 必須
 
+- ファイル冒頭に `[meta] description = "..."` を書く (1 行説明、`tools/regen_stats.py` が STATS.md の用途列に取り込む)
+- 各エントリは `[entries]` テーブル配下に書く
 - key (表層) と value (読み) は **ダブルクォート** で囲む: `"灰桜" = "ハイザクラ"`
 - value は **ひらがな または 全角カタカナ** (半角カナ・ローマ字は不可)
   - 慣習的に **訓読み = ひらがな / 音読み = カタカナ** で書き分ける (例: `"桜" = "さくら"` / `"音" = "オン"`)
   - エンジン側で出力時に正規化されるため、どちらで書いても挙動は同じ
 - 1 ファイル内で同じ key を二重登録しない (TOML パーサがエラーを吐く)
+- **単漢字 (1 文字 surface) は jukugo / works に絶対追加しない** — `core/unihan.toml` 専用領域、混入すると validate.py が cross-file 重複として CI を fail させる
+
+最小例:
+
+```toml
+[meta]
+description = "二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む)"
+
+[entries]
+"灰桜" = "ハイザクラ"
+"黎明" = "レイメイ"
+```
 
 ### 推奨
 
@@ -46,11 +60,13 @@ gh pr create
 - 大量追加するときは:
   - 同じ PR に **同じ分野 (人名 / 地名 / 一般語)** をまとめる
   - 1 PR あたり ~50 件程度を目安に分割すると review が楽
+- 編集後は `python tools/regen_stats.py` を実行して `STATS.md` を再生成 (CI に `stats-drift` ジョブがあり、忘れると fail)
 
 ### NG
 
 - 商標・固有名詞のうち **公的に認知されていない読み** (誤読をデフォルト化しない)
 - 文脈で読みが変わる語の片方だけを `core/jukugo/*` の default にする (それは [`rules/context/`](rules/context) 配下の文脈ルールで扱う領域)
+- 単漢字 1 文字の surface (上記参照、unihan 専用)
 
 ## ファイルが大きくなりすぎたら
 
@@ -82,9 +98,13 @@ PR で大きく追加するときは:
 
 ## ファイル別ガイド
 
-### `core/jukugo/` — 一般熟語 + 固有名詞 + 自然 / 文化系 (13 ファイルに細分化)
+### `core/jukugo/` — 一般熟語 + 固有名詞 + 文化系 (24 ファイルに細分化)
 
-カテゴリ別に分かれているので適切なファイルに追加する:
+カテゴリ別に 24 ファイルに分かれているので適切なファイルに追加する。
+**最新の件数 / 用途一覧は [STATS.md](STATS.md)** (各 TOML の `[meta] description` から自動生成、
+カテゴリの粒度を知りたい時はそれを参照)。
+
+代表カテゴリ (例):
 
 | ファイル | 用途 | 例 |
 |---|---|---|
@@ -93,17 +113,20 @@ PR で大きく追加するときは:
 | `proper_nouns.toml`   | 大学・中央官庁・元号・歴史的事象 | 早稲田大学 / 文部科学省 / 令和 |
 | `place_names.toml`    | 国・都道府県・駅・寺社仏閣・観光地 | 北海道 / 京都駅 / 東大寺 / 富士山 |
 | `personal_names.toml` | 姓・名・著名人 (古典・歴史中心、現代私人は避ける) | 紫式部 / 夏目漱石 / 渡邊 |
-| `animals.toml`        | 動植物 / 魚介の難読 | 蝙蝠 / 椿 / 鰯 / 牡蠣 |
-| `foods.toml`          | 食べ物 / 料理の難読 | 餃子 / 焼売 / 大福 / 抹茶 |
-| `specialized.toml`    | 専門用語 (医学 / 軍事 / 法学 / 学術) | 蕁麻疹 / 駆逐艦 / 量子力学 |
-| `body_parts.toml`     | 体の部位 / 内臓 / 医学呼称 | 鳩尾 / 踝 / 喉仏 / 肝臓 |
-| `weather.toml`        | 気象 / 天候 (熟字訓多し) | 五月雨 / 時雨 / 紅葉前線 |
-| `colors.toml`         | 色名 / 染色 / 模様 | 茜色 / 浅葱 / 鶯色 / 友禅 |
-| `arts.toml`           | 楽器 / 古典芸能 / 武道 / 茶華香 | 三味線 / 歌舞伎 / 文楽 / 茶碗 |
-| `abstracts.toml`      | 美意識 / 古典文学 / 仏教 / 思想 | 風雅 / 幽玄 / 涅槃 / 仁義 |
+| `animals.toml` / `foods.toml` / `weather.toml` / `colors.toml` | 自然・物質系の難読 | 蝙蝠 / 餃子 / 時雨 / 茜色 |
+| `specialized.toml`    | 専門用語 (医学 / 軍事 / 法学 / 経済 / IT) | 蕁麻疹 / 駆逐艦 / 量子力学 |
+| `body_parts.toml`     | 体の部位 / 内臓 / 骨格 / 筋肉 / 神経 | 鳩尾 / 副腎 / 三角筋 |
+| `arts.toml` / `music.toml` | 古典芸能 / 武道 / 茶華香 / 工芸 / 楽典 | 三味線 / 歌舞伎 / 撥弦楽器 |
+| `architecture.toml` / `vehicles.toml` / `clothes.toml` | 建築 / 乗物 / 衣服 | 天守 / 連絡船 / 狩衣 |
+| `literature.toml` / `abstracts.toml` / `idioms.toml` | 古典文学 / 美意識 / 慣用句 | 太平記 / 物の哀れ / 蛇足 |
+| `science.toml`        | 自然科学 (天文 / 物理 / 化学 / 生物 / 地学) | 突然変異 / 円周率 / 鍾乳洞 |
+| `emotions.toml` / `religions.toml` / `politics.toml` / `sports.toml` | 心理 / 宗教 / 政治 / 近代スポーツ | 戦慄 / 修験道 / 公示 / 競歩 |
 
 追加例 (`core/jukugo/general.toml`):
 ```toml
+[meta]
+description = "二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む)"
+
 [entries]
 "灰桜" = "ハイザクラ"
 "黎明" = "レイメイ"
@@ -111,6 +134,19 @@ PR で大きく追加するときは:
 ```
 
 判断に迷う場合は `general.toml` でも構わない (review で振り分け可能)。
+
+### `core/works/` — 作品単位の固有名詞・造語 (0.1.0-alpha.6+)
+
+特定の作品 (アニメ / ゲーム / 漫画 等) の固有名詞・造語を **1 作品 = 1 ファイル** で集める専用ディレクトリ。
+ja-furigana 0.1.0-alpha.6 以降の loader が全階層再帰でスキャンするため、
+`core/works/<medium>/<title>.toml` の構造で配置する (例: `core/works/game/touhou.toml`)。
+
+**追加要件 (jukugo より厳しい)**:
+- **公式読みのみ採録** (二次創作読み・ファン推測は不可)
+- ファイル先頭に **出典 URL** を comment で必須記載
+- 商標的にグレーなコラボ商品名 / 二次商標は入れない
+
+詳細サブポリシーは [`core/works/README.md`](core/works/README.md) を参照。
 
 ### `rules/counters/` — 助数詞ルール (7 ファイルに細分化)
 
