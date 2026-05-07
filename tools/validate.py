@@ -280,6 +280,39 @@ def check_cross_file_duplicates(
         )
 
 
+def _normalize_kata(s: str) -> str:
+    """ひらがな → 全角カタカナ正規化 (jukugo merge と同じ等価判定)。"""
+    return ''.join(chr(ord(c) + 0x60) if 'ぁ' <= c <= 'ゖ' else c for c in s)
+
+
+def check_jukugo_divergent_reading(
+    per_file_jukugo: dict, errors: Errors
+) -> None:
+    """jukugo 同士で同 surface だが異なる reading の cross-file 重複を ERROR にする。
+
+    `Dict::from_toml_dir` は後勝ち merge なので、 異 reading 重複が放置されると
+    file 名 alphabetical で末尾のファイルが prevail し、 動作が予測不能になる
+    (例: abstracts.toml の 一蓮托生=イチレントクショウ vs four_char.toml の
+    一蓮托生=イチレンタクショウ が放置されると four_char 側が後勝ちで反映される)。
+    同一 reading の重複は実害がないので silent (tools/list_dups.py で別途 list 化)。
+    """
+    seen: dict[str, list[tuple[str, str]]] = {}
+    for filename, entries in per_file_jukugo.items():
+        for surface, reading in entries.items():
+            if not isinstance(reading, str):
+                continue
+            seen.setdefault(surface, []).append((filename, reading))
+    for surface, lst in sorted(seen.items()):
+        if len(lst) <= 1:
+            continue
+        normalized = {_normalize_kata(r) for _, r in lst}
+        if len(normalized) > 1:
+            details = ', '.join(f"{f}={r!r}" for f, r in lst)
+            errors.add(
+                f"cross-file divergent reading: '{surface}' の読みがファイル間でズレている: {details}"
+            )
+
+
 # ─── 単一ファイル / 細分化サブディレクトリ どちらにも対応 ─────────────────
 def discover(base_dir: Path, name: str, *, recursive: bool = False) -> list[Path]:
     """`base_dir/name.toml` 単一ファイル → 無ければ `base_dir/name/*.toml` を返す。
@@ -322,9 +355,13 @@ def main() -> int:
 
     jukugo: dict = {}
     unihan: dict = {}
+    # check_jukugo_divergent_reading 用に per-file の entries を保持
+    per_file_jukugo: dict[str, dict] = {}
 
     def load_jukugo(p: Path) -> None:
-        jukugo.update(validate_lookup(p, errors))
+        entries = validate_lookup(p, errors)
+        jukugo.update(entries)
+        per_file_jukugo[p.name] = entries
 
     def load_unihan(p: Path) -> None:
         unihan.update(validate_lookup(p, errors))
@@ -355,6 +392,7 @@ def main() -> int:
                 found += 1
 
     check_cross_file_duplicates(jukugo, unihan, errors)
+    check_jukugo_divergent_reading(per_file_jukugo, errors)
 
     if errors:
         print(f"[FAIL] {len(errors)} 件の検証エラー", file=sys.stderr)

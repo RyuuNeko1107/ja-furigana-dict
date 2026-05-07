@@ -1,7 +1,8 @@
-name: Regen STATS.md
+name: Regen STATS.md / STATS_DUPS.md
 
-# 辞書 (core/) / ルール (rules/) / regen_stats.py のいずれかが master に push されたら、
-# STATS.md を再生成して diff があれば auto-commit する。
+# 辞書 (core/) / ルール (rules/) / regen_stats.py / list_dups.py のいずれかが
+# master に push されたら、 STATS.md と STATS_DUPS.md を再生成して
+# diff があれば auto-commit する。
 #
 # bot 自身の commit は `[skip stats]` を含むので再 trigger されない。
 # 既存 commit に手で `[skip stats]` を入れたい場合 (release commit 等) もスキップされる。
@@ -13,13 +14,14 @@ on:
       - 'core/**/*.toml'
       - 'rules/**/*.toml'
       - 'tools/regen_stats.py'
+      - 'tools/list_dups.py'
 
 permissions:
   contents: write
 
 jobs:
   regen:
-    name: STATS.md 自動再生成
+    name: STATS.md / STATS_DUPS.md 自動再生成
     if: "!contains(github.event.head_commit.message, '[skip stats]')"
     runs-on: ubuntu-latest
     steps:
@@ -33,18 +35,21 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: 再生成
+      - name: STATS.md 再生成
         run: python3 tools/regen_stats.py
+
+      - name: STATS_DUPS.md 再生成 (cross-file 重複レポート)
+        run: python3 tools/list_dups.py
 
       - name: diff があれば commit + push
         run: |
-          if git diff --quiet -- STATS.md; then
-            echo "STATS.md is up-to-date, nothing to commit"
+          if git diff --quiet -- STATS.md STATS_DUPS.md; then
+            echo "STATS.md / STATS_DUPS.md are up-to-date, nothing to commit"
             exit 0
           fi
-          echo "STATS.md has drift, committing..."
+          echo "STATS.md / STATS_DUPS.md have drift, committing..."
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add STATS.md
-          git commit -m "chore: regen STATS.md [skip stats]"
+          git add STATS.md STATS_DUPS.md
+          git commit -m "chore: regen STATS.md / STATS_DUPS.md [skip stats]"
           git push
