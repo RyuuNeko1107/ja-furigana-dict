@@ -7,9 +7,17 @@ STATS.md 内の 3 つのマーカー区間を埋め直す:
 - AUTO-GENERATED:CORE    : core/*.toml ファイル別 table
 - AUTO-GENERATED:RULES   : rules/*.toml ファイル別 table
 
-用途列は下記 DESCRIPTIONS に記載 (件数 / サイズは自動算出)。
-新規 TOML を追加したら DESCRIPTIONS にエントリを足すこと
-(無い場合は placeholder が表示される)。
+用途列は **各 TOML ファイル先頭の `[meta] description = "..."`** から自動取得する。
+ファイルに [meta] が無い場合は legacy fallback の DESCRIPTIONS dict を引く
+(rules/*.toml や core/unihan.toml 等、構造が違って [meta] 入れにくいもの用)。
+
+新規 TOML を追加したら、ファイル冒頭に以下を入れるだけで OK:
+
+    [meta]
+    description = "<カテゴリの 1 行説明>"
+
+    [entries]
+    ...
 
 CI では再生成後 `git diff --exit-code STATS.md` で stale 検知に使う。
 
@@ -24,35 +32,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 STATS_MD = ROOT / "STATS.md"
 
-# 用途説明 (件数 / サイズは自動算出するのでここでは書かない)
-DESCRIPTIONS: dict[str, str] = {
+# Legacy fallback: ファイルに [meta] description が無い時に使う用途説明。
+# 主に rules/*.toml や core/unihan.toml 等、[meta] テーブルを足しにくい
+# ファイル用 (rules は構造が複雑、unihan は機械生成 dump)。
+# 通常の jukugo / works ファイルは [meta] description で書く。
+DESCRIPTIONS_FALLBACK: dict[str, str] = {
     "core/unihan.toml": "単漢字フォールバック (本番 ryuuneko.com 由来 + override 14 件)",
     "core/compat.toml": "異体字 → 標準字 (髙→高 等)",
-    "core/jukugo/general.toml": "二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む)",
-    "core/jukugo/four_char.toml": "四字熟語 (4 字 + 全 CJK 漢字)",
-    "core/jukugo/place_names.toml": "地名 (47 都道府県 / 主要都市 / 駅 / 寺社仏閣 / 観光地)",
-    "core/jukugo/personal_names.toml": "人名 (戦国 / 平安 / 江戸 / 明治大正 / 古典作家、現代私人除く)",
-    "core/jukugo/proper_nouns.toml": "固有名詞 (大学 / 中央官庁 / 元号 / 歴史的事象、PR 募集中)",
-    "core/jukugo/animals.toml": "動植物 / 魚介 / 鳥 / 昆虫 / 茸 / 海藻の難読",
-    "core/jukugo/foods.toml": "食べ物 / 料理 / 和菓子 / 郷土料理 / 食材 / 調味料",
-    "core/jukugo/specialized.toml": "専門用語 (医学 / 軍事 / 法学 / 経済 / IT / 工学)",
-    "core/jukugo/body_parts.toml": "体の部位 / 内臓 / 骨格 / 筋肉 / 神経",
-    "core/jukugo/weather.toml": "気象 / 天候 / 季語的気象 / 二十四節気 / 海洋気象",
-    "core/jukugo/colors.toml": "色名 / 染色 / 模様 / 古典色 / 鉱物色",
-    "core/jukugo/arts.toml": "古典芸能 / 武道 / 茶華香 / 工芸",
-    "core/jukugo/abstracts.toml": "美意識 / 古典文学 / 仏教 / 儒教 / 思想",
-    "core/jukugo/vehicles.toml": "乗り物 / 交通手段 / 船舶 / 航空 / 鉄道",
-    "core/jukugo/clothes.toml": "衣服 / 装束 / アクセサリー / 履物",
-    "core/jukugo/architecture.toml": "建築 / 建造物 / 寺社建築 / 城郭 / 庭園",
-    "core/jukugo/literature.toml": "古典文学 / 作品名 / 文学用語 / 詩歌 / 評論",
-    "core/jukugo/science.toml": "自然科学 (天文 / 物理 / 化学 / 生物 / 地学)",
-    "core/jukugo/emotions.toml": "感情 / 心理状態 / 性格 / 心情",
-    "core/jukugo/idioms.toml": "慣用句 / ことわざ / 故事成語 (フレーズ単位)",
-    "core/jukugo/politics.toml": "政治 / 行政 / 立法 / 司法 / 国際関係",
-    "core/jukugo/religions.toml": "神道 / 仏教 / キリスト教 / イスラム / 儀礼",
-    "core/jukugo/music.toml": "音楽ジャンル / 楽典 / 楽器 / 演奏 / 音楽用語",
-    "core/jukugo/sports.toml": "近代スポーツ / 球技 / 陸上 / 水泳 / 体操 / 大会",
-    "core/works/game/touhou.toml": "東方Project (上海アリス幻樂団): キャラクター名 / 場所 / 用語 (公式読みベース)",
     "rules/days.toml": "1〜31 日の特殊読み (1→ツイタチ 等)",
     "rules/scales.toml": "万 / 億 / 兆 / 京 等の大数スケール",
     "rules/units.toml": "SI 単位 (km / kg / mL …、case-insensitive)",
@@ -63,6 +49,38 @@ DESCRIPTIONS: dict[str, str] = {
     "rules/counters/*.toml": "助数詞ルール (本 / 匹 / 個 / 年 / 月 / 日 …、連濁 / 促音化 / kana 末尾置換)",
     "rules/context/*.toml": "文脈依存読み (一日→ツイタチ/イチニチ 等)",
 }
+
+
+def read_description(path: Path) -> str | None:
+    """ファイルの `[meta] description = "..."` を返す。無ければ None。"""
+    try:
+        with open(path, "rb") as f:
+            data = tomllib.load(f)
+    except (OSError, tomllib.TOMLDecodeError):
+        return None
+    meta = data.get("meta")
+    if isinstance(meta, dict):
+        desc = meta.get("description")
+        if isinstance(desc, str) and desc:
+            return desc
+    return None
+
+
+def lookup_description(rel: str) -> str:
+    """relpath に対する用途説明を解決する。
+
+    優先順位: ファイル内 [meta].description → DESCRIPTIONS_FALLBACK → placeholder。
+    rules/counters/*.toml のような集約パターンは fallback dict のみ参照。
+    """
+    if not rel.endswith("*.toml"):
+        path = ROOT / rel
+        if path.is_file():
+            desc = read_description(path)
+            if desc is not None:
+                return desc
+    if rel in DESCRIPTIONS_FALLBACK:
+        return DESCRIPTIONS_FALLBACK[rel]
+    return "(用途未設定 — ファイル冒頭に `[meta] description = \"...\"` を追加)"
 
 
 def count_entries(path: Path) -> int:
@@ -190,7 +208,7 @@ def gen_summary(core_rows: list, rules_rows: list) -> str:
 def gen_core(core_rows: list) -> str:
     lines = ["| ファイル | エントリ数 | サイズ | 用途 |", "|---|---:|---:|---|"]
     for rel, count, size in core_rows:
-        desc = DESCRIPTIONS.get(rel, "(用途未設定 — `tools/regen_stats.py` DESCRIPTIONS に追加)")
+        desc = lookup_description(rel)
         lines.append(f"| `{rel}` | {count:,} | {fmt_size(size)} | {desc} |")
     total_count = sum(r[1] for r in core_rows)
     total_size = sum(r[2] for r in core_rows)
@@ -217,7 +235,7 @@ def gen_rules(rules_rows: list) -> str:
     lines = ["| ファイル | エントリ数 | サイズ | 内容 |", "|---|---:|---:|---|"]
     for row in rules_rows:
         rel, count, size = row[0], row[1], row[2]
-        desc = DESCRIPTIONS.get(rel, "(用途未設定)")
+        desc = lookup_description(rel)
         if len(row) > 3:
             display = f"`{rel}` ({row[3]} ファイル)"
         else:
