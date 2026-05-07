@@ -201,3 +201,27 @@ reading = "カワセミ"
 next_eq = "の"
 next_next_starts_with_any = ["羽", "姿", "巣", "鳴", "雛"]
 reading = "カワセミ"
+
+# ─── 間: 「期間/時間/年間」 など 状語 (カン) と 「奥の間/書院造の間」 など 部屋 (マ) ──
+# unihan default = カン (二字熟語多数)。
+# 「○○の間」 で部屋を指す用法 (床の間 / 居間 / 茶の間 等は jukugo に既存) のうち、
+# Lindera が単独 token 「間」 を返す phrase 末用法を context rule で マ に切り替える。
+[[rule]]
+surface = "間"
+default = "カン"
+
+# 「<部屋型修飾> + の + 間」 — 前置 「の」 + 部屋系 prev が来た場合
+[[rule.match]]
+next_eq = "の"
+prev_ends_with_any = ["奥", "書院造", "書院造り", "数寄屋", "茶", "板", "客", "応接", "座敷", "板の", "板敷きの"]
+reading = "マ"
+
+# 末尾用法: 「奥の+間」「広い+間」「板敷きの+間」 — prev が「の」「い」+ 部屋系 surface
+[[rule.match]]
+prev_ends_with_any = ["奥の", "板の", "茶の", "次の", "二の", "客の"]
+reading = "マ"
+
+# 形容詞的 prev: 「広い間」「狭い間」「明るい間」 (空間 マ)
+[[rule.match]]
+prev_ends_with_any = ["広い", "狭い", "明るい", "暗い"]
+reading = "マ"
