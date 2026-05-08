@@ -2,6 +2,10 @@
 #
 # 例: 「個目」は 「個」を解決した後に 「メ」を末尾連結 → 一個目=イッコメ
 
+
+[meta]
+role = "counters"
+
 [counter."目"]
 mode = "recursive"
 suffix = "メ"

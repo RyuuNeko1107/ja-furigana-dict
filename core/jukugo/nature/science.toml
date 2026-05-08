@@ -8,6 +8,7 @@
 # - 50 音順 を推奨
 
 [meta]
+role = "jukugo"
 description = "自然科学 (天文 / 物理 / 化学 / 生物 / 地学)"
 
 [entries]

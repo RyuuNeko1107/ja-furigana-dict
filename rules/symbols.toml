@@ -1,4 +1,8 @@
 # 記号読み
+
+[meta]
+role = "symbols"
+
 [entries]
 "+" = "プラス"
 "-" = "マイナス"

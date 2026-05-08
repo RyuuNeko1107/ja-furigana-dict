@@ -4,6 +4,10 @@
 # 連濁・促音化等のルールがあるものは objects.toml / time.toml 等の
 # 別カテゴリ別ファイルに置く。
 
+
+[meta]
+role = "counters"
+
 [simple]
 "円" = "エン"
 "点" = "テン"

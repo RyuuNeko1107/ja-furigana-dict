@@ -25,10 +25,10 @@ git に commit されている master HEAD の状態を基準にする。
 | [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **4,692** | **-** | **148 KB** |
 | [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **113** | **-** | **3.7 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **160** | **-** | **5.0 KB** |
-| [**単漢字 override**](#単漢字-override) (`core/single_overrides.toml`、 issue #15 限定解) | **1** | **-** | **110 B** |
+| [**単漢字 override**](#単漢字-override) (`core/single_overrides.toml`、 issue #15 限定解) | **1** | **-** | **136 B** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **435** | **-** | **6.0 KB** |
-| [**エンジンルール**](#エンジンルール) (`rules/`) | **256** | **6** | **14 KB** |
-| **合計** | **49,141** | **6** | **968 KB** |
+| [**エンジンルール**](#エンジンルール) (`rules/`) | **263** | **6** | **15 KB** |
+| **合計** | **49,148** | **6** | **969 KB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -65,7 +65,7 @@ git に commit されている master HEAD の状態を基準にする。
 |---|---:|---:|---:|---|
 | [`core/jukugo/nature/weather.toml`](core/jukugo/nature/weather.toml) | 189 | - | 5.3 KB | 気象 / 天候 / 季語的気象 / 二十四節気 / 海洋気象 |
 | [`core/jukugo/nature/science.toml`](core/jukugo/nature/science.toml) | 184 | - | 5.3 KB | 自然科学 (天文 / 物理 / 化学 / 生物 / 地学) |
-| [`core/jukugo/nature/animals.toml`](core/jukugo/nature/animals.toml) | 183 | - | 4.8 KB | 動植物 / 魚介 / 鳥 / 昆虫 / 茸 / 海藻の難読 |
+| [`core/jukugo/nature/animals.toml`](core/jukugo/nature/animals.toml) | 183 | - | 4.9 KB | 動植物 / 魚介 / 鳥 / 昆虫 / 茸 / 海藻の難読 |
 | [`core/jukugo/nature/place_names.toml`](core/jukugo/nature/place_names.toml) | 164 | - | 5.2 KB | 地名 (47 都道府県 / 主要都市 / 駅 / 寺社仏閣 / 観光地) |
 | [`core/jukugo/nature/body_parts.toml`](core/jukugo/nature/body_parts.toml) | 163 | - | 5.0 KB | 体の部位 / 内臓 / 骨格 / 筋肉 / 神経 |
 | [`core/jukugo/nature/foods.toml`](core/jukugo/nature/foods.toml) | 145 | - | 4.2 KB | 食べ物 / 料理 / 和菓子 / 郷土料理 / 食材 / 調味料 |
@@ -80,9 +80,9 @@ git に commit されている master HEAD の状態を基準にする。
 | ファイル | エントリ数 | テスト | サイズ | 用途 |
 |---|---:|---:|---:|---|
 | [`core/jukugo/humanities/arts.toml`](core/jukugo/humanities/arts.toml) | 184 | - | 5.4 KB | 古典芸能 / 武道 / 茶華香 / 工芸 |
-| [`core/jukugo/humanities/music.toml`](core/jukugo/humanities/music.toml) | 177 | - | 5.4 KB | 音楽ジャンル / 楽典 / 楽器 / 演奏 / 音楽用語 |
+| [`core/jukugo/humanities/music.toml`](core/jukugo/humanities/music.toml) | 177 | - | 5.5 KB | 音楽ジャンル / 楽典 / 楽器 / 演奏 / 音楽用語 |
 | [`core/jukugo/humanities/literature.toml`](core/jukugo/humanities/literature.toml) | 176 | - | 5.9 KB | 古典文学 / 作品名 / 文学用語 / 詩歌 / 評論 |
-| [`core/jukugo/humanities/religions.toml`](core/jukugo/humanities/religions.toml) | 165 | - | 4.9 KB | 神道 / 仏教 / キリスト教 / イスラム / 儀礼 |
+| [`core/jukugo/humanities/religions.toml`](core/jukugo/humanities/religions.toml) | 165 | - | 5.0 KB | 神道 / 仏教 / キリスト教 / イスラム / 儀礼 |
 | [`core/jukugo/humanities/emotions.toml`](core/jukugo/humanities/emotions.toml) | 149 | - | 3.9 KB | 感情 / 心理状態 / 性格 / 心情 |
 | [`core/jukugo/humanities/idioms.toml`](core/jukugo/humanities/idioms.toml) | 148 | - | 7.6 KB | 慣用句 / ことわざ / 故事成語 (フレーズ単位) |
 | [`core/jukugo/humanities/abstracts.toml`](core/jukugo/humanities/abstracts.toml) | 135 | - | 3.5 KB | 美意識 / 古典文学 / 仏教 / 儒教 / 思想 |
@@ -125,7 +125,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/jukugo/objects/colors.toml`](core/jukugo/objects/colors.toml) | 201 | - | 6.0 KB | 色名 / 染色 / 模様 / 古典色 / 鉱物色 |
 | [`core/jukugo/objects/vehicles.toml`](core/jukugo/objects/vehicles.toml) | 174 | - | 5.7 KB | 乗り物 / 交通手段 / 船舶 / 航空 / 鉄道 |
 | [`core/jukugo/objects/clothes.toml`](core/jukugo/objects/clothes.toml) | 167 | - | 4.5 KB | 衣服 / 装束 / アクセサリー / 履物 |
-| [`core/jukugo/objects/architecture.toml`](core/jukugo/objects/architecture.toml) | 147 | - | 4.1 KB | 建築 / 建造物 / 寺社建築 / 城郭 / 庭園 |
+| [`core/jukugo/objects/architecture.toml`](core/jukugo/objects/architecture.toml) | 147 | - | 4.2 KB | 建築 / 建造物 / 寺社建築 / 城郭 / 庭園 |
 | [`core/jukugo/objects/railway.toml`](core/jukugo/objects/railway.toml) | 73 | - | 2.4 KB | 鉄道専門用語 (線路 / 駅 / 運行 / 車両) |
 | **小計** (5 ファイル) | **762** | **-** | **23 KB** | |
 
@@ -156,7 +156,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 | ファイル | エントリ数 | テスト | サイズ | 用途 |
 |---|---:|---:|---:|---|
-| [`core/works/game/touhou.toml`](core/works/game/touhou.toml) | 71 | - | 2.4 KB | 東方Project (上海アリス幻樂団): キャラクター名 / 場所 / 用語 (公式読みベース) |
+| [`core/works/game/touhou.toml`](core/works/game/touhou.toml) | 71 | - | 2.5 KB | 東方Project (上海アリス幻樂団): キャラクター名 / 場所 / 用語 (公式読みベース) |
 
 #### 文学
 
@@ -183,7 +183,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 | ファイル | エントリ数 | テスト | サイズ | 用途 |
 |---|---:|---:|---:|---|
-| [`core/single_overrides.toml`](core/single_overrides.toml) | 1 | - | 110 B | 単漢字 default reading override (issue #15 の限定解) |
+| [`core/single_overrides.toml`](core/single_overrides.toml) | 1 | - | 136 B | 単漢字 default reading override (issue #15 の限定解) |
 
 ### 異体字
 
@@ -202,15 +202,15 @@ git に commit されている master HEAD の状態を基準にする。
 | ファイル | エントリ数 | テスト | サイズ | 内容 |
 |---|---:|---:|---:|---|
 | [`rules/days.toml`](rules/days.toml) | 31 | - | 844 B | 1〜31 日の特殊読み (1→ツイタチ 等) |
-| [`rules/scales.toml`](rules/scales.toml) | 19 | - | 848 B | 万 / 億 / 兆 / 京 等の大数スケール |
-| [`rules/units.toml`](rules/units.toml) | 17 | - | 631 B | SI 単位 (km / kg / mL …、case-insensitive) |
-| [`rules/symbols.toml`](rules/symbols.toml) | 10 | - | 223 B | 記号読み (+ / − / % / ‰ …) |
-| [`rules/latin.toml`](rules/latin.toml) | 26 | - | 436 B | ラテン文字読み (A→エー …) |
-| [`rules/numeric_phrases.toml`](rules/numeric_phrases.toml) | 23 | - | 701 B | 数字を含む例外語句 (二十歳→ハタチ 等) |
-| [`rules/postprocess.toml`](rules/postprocess.toml) | 2 | - | 160 B | 後処理 regex 置換 (Step 7、mode 別) |
-| [`rules/counters/*.toml`](rules/counters/) (7 ファイル) | 76 | 6 | 3.9 KB | 助数詞ルール (本 / 匹 / 個 / 年 / 月 / 日 …、連濁 / 促音化 / kana 末尾置換) |
-| [`rules/context/*.toml`](rules/context/) (3 ファイル) | 52 | - | 6.6 KB | 文脈依存読み (一日→ツイタチ/イチニチ 等) |
-| **小計** | **256** | **6** | **14 KB** | |
+| [`rules/scales.toml`](rules/scales.toml) | 19 | - | 871 B | 万 / 億 / 兆 / 京 等の大数スケール |
+| [`rules/units.toml`](rules/units.toml) | 17 | - | 653 B | SI 単位 (km / kg / mL …、case-insensitive) |
+| [`rules/symbols.toml`](rules/symbols.toml) | 10 | - | 247 B | 記号読み (+ / − / % / ‰ …) |
+| [`rules/latin.toml`](rules/latin.toml) | 26 | - | 458 B | ラテン文字読み (A→エー …) |
+| [`rules/numeric_phrases.toml`](rules/numeric_phrases.toml) | 23 | - | 733 B | 数字を含む例外語句 (二十歳→ハタチ 等) |
+| [`rules/postprocess.toml`](rules/postprocess.toml) | 2 | - | 188 B | 後処理 regex 置換 (Step 7、mode 別) |
+| [`rules/counters/*.toml`](rules/counters/) (7 ファイル) | 83 | 6 | 4.1 KB | 助数詞ルール (本 / 匹 / 個 / 年 / 月 / 日 …、連濁 / 促音化 / kana 末尾置換) |
+| [`rules/context/*.toml`](rules/context/) (3 ファイル) | 52 | - | 6.7 KB | 文脈依存読み (一日→ツイタチ/イチニチ 等) |
+| **小計** | **263** | **6** | **15 KB** | |
 <!-- AUTO-GENERATED:RULES:END -->
 
 (rules はエントリ数より「ルールパターン数」の方が意味的に正しいが、ここでは

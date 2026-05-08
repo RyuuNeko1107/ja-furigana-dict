@@ -11,6 +11,7 @@
 # - 50 音順 を推奨
 
 [meta]
+role = "jukugo"
 description = "経済金融 (商品 / 市場 / 会計 / 税務 / 保険)"
 
 [entries]

@@ -1,5 +1,9 @@
 # パーセンテージ (% / ％)
 
+
+[meta]
+role = "counters"
+
 [counter."%"]
 default = "パーセント"
 

@@ -8,6 +8,7 @@
 # - 50 音順 を推奨 (PR diff が読みやすい)
 
 [meta]
+role = "jukugo"
 description = "四字熟語 (4 字 + 全 CJK 漢字)"
 
 [entries]

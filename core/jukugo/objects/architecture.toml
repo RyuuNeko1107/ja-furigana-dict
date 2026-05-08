@@ -7,6 +7,7 @@
 # - 50 音順 を推奨
 
 [meta]
+role = "jukugo"
 description = "建築 / 建造物 / 寺社建築 / 城郭 / 庭園"
 
 [entries]

@@ -6,6 +6,7 @@
 # 個別 entry の手動編集は OK (PR で reading 修正等)。
 
 [meta]
+role = "unihan"
 description = "JIS 補助 (CJK Extension A + Compatibility Ideographs、 概ね JIS X 0213 第3+第4水準カバー)"
 
 [entries]

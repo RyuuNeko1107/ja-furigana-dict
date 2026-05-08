@@ -14,6 +14,7 @@
 # alphabet 順に並べる (ASCII 順、 案件追加時 PR diff が読みやすい)。
 
 [meta]
+role = "loanwords"
 description = "IT 用語 / プログラミング言語 / OSS / クラウドサービス / 技術企業 (ASCII surface)"
 
 [entries]

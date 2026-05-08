@@ -2,6 +2,10 @@
 #
 # 1=ヒトリ, 2=フタリ の特殊読みを持つ。
 
+
+[meta]
+role = "counters"
+
 [counter."人"]
 default = "ニン"
 specials = { "1" = "ヒトリ", "2" = "フタリ" }

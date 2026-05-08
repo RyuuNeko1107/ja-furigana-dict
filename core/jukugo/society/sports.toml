@@ -9,6 +9,7 @@
 # - 50 音順 を推奨
 
 [meta]
+role = "jukugo"
 description = "近代スポーツ / 球技 / 陸上 / 水泳 / 体操 / 大会"
 
 [entries]

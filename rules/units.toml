@@ -1,6 +1,10 @@
 # SI / 一般単位
 # `ci = true` で case-insensitive lookup (大文字小文字を区別しない)
 
+
+[meta]
+role = "units"
+
 [entries]
 "km" = { kana = "キロメートル" }
 "cm" = { kana = "センチメートル" }

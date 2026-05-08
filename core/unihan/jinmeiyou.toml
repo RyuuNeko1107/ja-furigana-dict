@@ -5,6 +5,7 @@
 # 個別 entry の手動編集は OK (PR で reading 修正等)。
 
 [meta]
+role = "unihan"
 description = "人名用漢字 (法務省、 子の名に使用可、 常用と重複する 128 字を除外した残り 855 字)"
 
 [entries]

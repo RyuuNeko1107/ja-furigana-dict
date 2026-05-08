@@ -1,6 +1,10 @@
 # ラテン文字 (アルファベット) 1 文字読み
 # 大文字キーで保存。lookup は case-insensitive。
 
+
+[meta]
+role = "latin"
+
 [entries]
 "A" = "エー"
 "B" = "ビー"

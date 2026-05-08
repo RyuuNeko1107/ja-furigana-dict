@@ -4,6 +4,10 @@
 # 本体 furigana から `furigana dict pull` で取得し、`compat` データとして
 # 起動時にロードされる。
 
+
+[meta]
+role = "compat"
+
 [map]
 "丗" = "三十"
 "乘" = "乗"

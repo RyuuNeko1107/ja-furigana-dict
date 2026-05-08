@@ -23,6 +23,10 @@
 # euphonic_counter_read の助数詞ルートでは sokuonize_last が動くが、
 # si_unit (「%」) ルートでは promotion なしなので最後にここで補う。
 
+
+[meta]
+role = "postprocess"
+
 [[rule]]
 pattern = "ジュウパー"
 replacement = "ジュッパー"

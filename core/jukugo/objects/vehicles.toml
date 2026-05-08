@@ -7,6 +7,7 @@
 # - 50 音順 を推奨
 
 [meta]
+role = "jukugo"
 description = "乗り物 / 交通手段 / 船舶 / 航空 / 鉄道"
 
 [entries]
