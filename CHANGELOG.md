@@ -18,9 +18,11 @@ CalVer 採用理由:
 
 > **migration note**: 初期は `v0.1.0` 〜 `v0.1.3` の semver で release していたが、
 > 2026-05-07 に CalVer へ移行する際に古い semver tag / Release は削除した。
-> 当時の差分情報は CHANGELOG body の `[0.1.0]` 〜 `[0.1.3]` section に残してある
-> (URL link は失効)。 古い semver pin (`furigana dict pull --version v0.1.3` 等) は
-> 404 になるので最新 CalVer に切替えること。
+> CalVer 期 (`v2026.05.07` 以降) の release-diff は [`docs/release-diffs/`](docs/release-diffs/)
+> に auto-gen される。 それより前 (semver 期) は **「初期 (initial)」 として一括扱い**
+> し、 個別の release-diff は持たない (差分情報の概要は本 CHANGELOG body の
+> `[0.1.0]` 〜 `[0.1.3]` section に残してあり、 URL link は失効)。 古い semver pin
+> (`furigana dict pull --version v0.1.3` 等) は 404 になるので最新 CalVer に切替えること。
 
 ## [Unreleased]
 
