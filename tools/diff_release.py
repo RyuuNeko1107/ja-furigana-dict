@@ -267,18 +267,23 @@ def gen_snapshot_section(now_label: str, now_files: list[str], now_tag: str) -> 
 
     # ── (5) 全体合計 (重複含む / ユニーク) ──
     grand_total = sum(it[1] for items in cats.values() for it in items)
-    # ユニーク count: 全 file の (surface, reading) tuple を de-dup
+    # ユニーク count: iter_top_level_keys で count_top_level_items と同 scope の
+    # (key1, key2) tuple を de-dup。 grand_total - unique_count = 純粋な cross-file 重複。
     unique_pairs: set[tuple[str, str]] = set()
     for p in now_files:
         c = git_show(now_tag, p) or ""
-        for s, r in parse_entries(c).items():
-            unique_pairs.add((s, r))
+        for kp in iter_top_level_keys(c):
+            unique_pairs.add(kp)
+    duplicates = grand_total - len(unique_pairs)
     out.append("### 全体合計")
     out.append("")
-    out.append(
-        f"**{len(now_files)} ファイル / {grand_total:,} entries (重複含む) "
-        f"/ {len(unique_pairs):,} unique (surface, reading)**"
-    )
+    if duplicates > 0:
+        out.append(
+            f"**{len(now_files)} ファイル / {grand_total:,} entries (重複含む) "
+            f"/ {len(unique_pairs):,} unique / cross-file 重複 {duplicates:,} 件**"
+        )
+    else:
+        out.append(f"**{len(now_files)} ファイル / {grand_total:,} entries (重複なし)**")
     out.append("")
 
     return out
@@ -442,40 +447,74 @@ def parse_entries(content: str) -> dict[str, str]:
     return flat
 
 
-def count_top_level_items(content: str) -> int:
-    """TOML の **top-level エントリ数** を返す (snapshot / 新規 / 削除 file 表示用)。
+def iter_top_level_keys(content: str):
+    """TOML の各 top-level item に対して **重複検査用の key tuple** を yield する。
 
-    parse_entries は (key→reading) を返すので rule-shape file (counters / context /
-    postprocess) では空になり、 表示上 「0 entries」 となってしまう問題を回避。 STATS.md
-    の「エントリ数」 column と同じ count を返す:
+    snapshot / 集計 / unique 計算で「同じ scope」 で count するための共通 iterator。
+    rule-shape file も含めて全 file 共通の (k1, k2) tuple を返すので、
+    `len(list(iter_top_level_keys(c)))` が count_top_level_items と一致し、
+    `set(iter_top_level_keys(c))` を file 跨ぎで union すれば unique count 取得可。
 
-    - `[entries]` / `[map]` dict → key 数
-    - `[[entry]]` / `[[rule]]` array → 要素数
-    - flat top-level (旧 days.toml) → string value 数
-    - 上記いずれも該当しない (counters の `[counter."X"]` 等) → top-level dict
-      子要素数 (= counter 名の数、 [meta] は除外)
+    対応 layout (返す tuple の意味):
+    - `[entries]` / `[map]`: (surface, reading_str) — string value はそのまま
+      / inline-table value (units.toml の {kana=...}) は kana / reading を取り出す
+    - `[[entry]]` (scales.toml): (kanji, kana)
+    - `[[rule]]` (postprocess / context): (surface or pattern, default or replacement)
+    - flat top-level (旧 days.toml): (surface, reading)
+    - rule-shape (counters の `[counter."本"]`): (top_table_name, sub_key)
+      例: ("counter", "本") ("counter", "匹")
     """
     try:
         data = tomllib.loads(content)
     except tomllib.TOMLDecodeError:
-        return 0
+        return
 
     for key in ("entries", "map"):
         v = data.get(key)
         if isinstance(v, dict):
-            return len(v)
-    for key in ("entry", "rule"):
-        v = data.get(key)
-        if isinstance(v, list):
-            return len(v)
-    flat = sum(1 for v in data.values() if isinstance(v, str))
-    if flat > 0:
-        return flat
-    # [counter."本"] / [counter."匹"] のような rule-shape file の fallback
-    return sum(
-        len(v) for k, v in data.items()
-        if isinstance(v, dict) and k != "meta"
-    )
+            for k, val in v.items():
+                if isinstance(val, str):
+                    yield (k, val)
+                elif isinstance(val, dict):
+                    kana = val.get("kana") or val.get("reading") or ""
+                    yield (k, kana if isinstance(kana, str) else "")
+            return
+    arr = data.get("entry")
+    if isinstance(arr, list):
+        for item in arr:
+            if isinstance(item, dict):
+                k = item.get("kanji") or item.get("surface") or ""
+                vv = item.get("kana") or item.get("reading") or ""
+                if isinstance(k, str) and isinstance(vv, str):
+                    yield (k, vv)
+        return
+    arr = data.get("rule")
+    if isinstance(arr, list):
+        for item in arr:
+            if isinstance(item, dict):
+                k = item.get("surface") or item.get("pattern") or ""
+                vv = item.get("default") or item.get("replacement") or ""
+                yield (
+                    k if isinstance(k, str) else "",
+                    vv if isinstance(vv, str) else "",
+                )
+        return
+    flat = {k: v for k, v in data.items() if isinstance(v, str)}
+    if flat:
+        for k, v in flat.items():
+            yield (k, v)
+        return
+    # rule-shape (counters): top-level table 名 + sub key を tuple として返す
+    for top, v in data.items():
+        if top == "meta" or not isinstance(v, dict):
+            continue
+        for sub in v:
+            yield (top, sub)
+
+
+def count_top_level_items(content: str) -> int:
+    """TOML の top-level item 数を返す (STATS.md の「エントリ数」 と一致)。"""
+    return sum(1 for _ in iter_top_level_keys(content))
 
 
 def parse_meta_description(content: str) -> str | None:
@@ -735,16 +774,16 @@ def main() -> None:
         prev_c = git_show(prev_tag, path) or ""
         total_removed += count_top_level_items(prev_c)
 
-    # ── unique 集計 (重複 surface/reading は de-dup) ──
-    # 同 release 内で同じ (surface, reading) が複数 file にまたがって追加 / 削除
-    # された場合、 raw count では複数回数えるが、 unique count は 1 件として扱う。
-    # 「合計」 は de-dup した値、 per-file 表示は raw count のまま (重複は視覚的に見える)。
+    # ── unique 集計 (重複 key は de-dup) ──
+    # iter_top_level_keys は count_top_level_items と同 scope なので、 raw 合計と
+    # unique 合計が同じ統計対象 (entries / counter rules / context rules / etc 全部)
+    # で揃う。 raw 合計と unique 合計の差分 = 純粋な cross-file 重複。
     def _collect_pairs(paths: list[str], tag: str) -> set[tuple[str, str]]:
         pairs: set[tuple[str, str]] = set()
         for path in paths:
             c = git_show(tag, path) or ""
-            for s, r in parse_entries(c).items():
-                pairs.add((s, r))
+            for kp in iter_top_level_keys(c):
+                pairs.add(kp)
         return pairs
 
     prev_all = _collect_pairs(common + removed_files_raw, prev_tag)
