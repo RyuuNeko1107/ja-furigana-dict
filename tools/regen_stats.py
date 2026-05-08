@@ -8,6 +8,9 @@ STATS.md 内の 4 つのマーカー区間を埋め直す:
 - AUTO-GENERATED:RULES   : rules/*.toml ファイル別 table
 - AUTO-GENERATED:QA      : QA カバレッジ (corpus + inline test、 サイズは出さない)
 
+加えて CONTRIBUTING.md 内の 1 つのマーカー区間も同 source で埋め直す:
+- AUTO-GENERATED:PLACEMENT : 「追加したいもの → 配置 file」 quickpath table
+
 用途列は **各 TOML ファイル先頭の `[meta] description = "..."`** から自動取得する。
 ファイルに [meta] が無い場合は legacy fallback の DESCRIPTIONS dict を引く
 (rules/*.toml や core/unihan.toml 等、構造が違って [meta] 入れにくいもの用)。
@@ -34,6 +37,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 STATS_MD = ROOT / "STATS.md"
+CONTRIBUTING_MD = ROOT / "CONTRIBUTING.md"
 
 # 全 dict / rule TOML は冒頭に `[meta] description = "..."` を持つことを前提。
 # 念のため各 file が本当に description を持ってるか確認するための無き fallback も用意
@@ -760,6 +764,130 @@ def gen_qa(
     return "\n".join(lines) + "\n"
 
 
+def gen_placement(
+    core_rows: list[tuple[str, int, int, int]],
+    rules_rows: list[tuple[str, int, int, int, int]],
+) -> str:
+    """CONTRIBUTING.md の「追加したいもの → 配置 file」 quickpath table。
+
+    現在の dir 構成 / file 数 / genre 名 から動的に生成する (構造変化に追随)。
+    用途別に行を作って、 各 file 数や genre 名を実数で埋める。
+    """
+
+    # ── core 側 ──
+    jukugo_genres = sorted({
+        rel.split("/")[2] for rel, *_ in core_rows
+        if rel.startswith("core/jukugo/") and len(rel.split("/")) >= 4
+    })
+    # unihan は水準順 (joyo → jinmeiyou → jis_basic → jis_supplement → extension) で表示
+    # 利用頻度の高い順なので、 alphabetical sort で並べ替えると意味が変わる
+    unihan_level_order = {
+        "joyo": 0, "jinmeiyou": 1, "jis_basic": 2,
+        "jis_supplement": 3, "extension": 4,
+    }
+    unihan_levels = sorted(
+        [
+            rel.split("/")[-1].removesuffix(".toml")
+            for rel, *_ in core_rows
+            if rel.startswith("core/unihan/")
+        ],
+        key=lambda lv: unihan_level_order.get(lv, 999),
+    )
+    works_media = sorted({
+        rel.split("/")[2] for rel, *_ in core_rows
+        if rel.startswith("core/works/") and len(rel.split("/")) >= 4
+    })
+    loanwords_files = sorted([
+        rel.split("/")[-1].removesuffix(".toml")
+        for rel, *_ in core_rows
+        if rel.startswith("core/loanwords/")
+    ])
+    has_inbox = any(rel == "core/_inbox.toml" for rel, *_ in core_rows)
+    has_single_overrides = any(
+        rel == "core/single_overrides.toml" for rel, *_ in core_rows
+    )
+
+    # ── rules 側 ──
+    counters_files = sorted([
+        rel.split("/")[-1].removesuffix(".toml")
+        for rel, *_ in rules_rows
+        if "/counters/" in rel
+    ])
+    context_files = sorted([
+        rel.split("/")[-1].removesuffix(".toml")
+        for rel, *_ in rules_rows
+        if "/context/" in rel
+    ])
+
+    lines = [
+        "| 追加したいもの | 配置 | 補足 |",
+        "|---|---|---|",
+    ]
+
+    if jukugo_genres:
+        lines.append(
+            f"| **熟語** (≥ 2 字 surface) | [`core/jukugo/<genre>/<file>.toml`](core/jukugo/) | "
+            f"genre {len(jukugo_genres)} 区分 ({' / '.join(jukugo_genres)})、 "
+            f"内訳は [STATS.md](STATS.md#熟語) |"
+        )
+    if has_inbox:
+        lines.append(
+            "| **熟語 (genre 判断付かない)** | [`core/_inbox.toml`](core/_inbox.toml) | "
+            "一時 inbox、 maintainer が後で振り分け |"
+        )
+    if unihan_levels:
+        lines.append(
+            f"| **単漢字** (1 字 surface) | [`core/unihan/<水準>.toml`](core/unihan/) | "
+            f"{len(unihan_levels)} 水準 ({' / '.join(unihan_levels)}) |"
+        )
+    if has_single_overrides:
+        lines.append(
+            "| **単漢字 default override** | [`core/single_overrides.toml`](core/single_overrides.toml) | "
+            "[issue #15](https://github.com/RyuuNeko1107/ja-furigana/issues/15) の限定解 (1 字 surface 限定) |"
+        )
+    lines.append(
+        "| **異体字 → 標準字** | [`core/compat.toml`](core/compat.toml) | "
+        "lib Step 1 で入力テキストを正規化 |"
+    )
+    if loanwords_files:
+        lines.append(
+            f"| **外来語** (英字始まり surface) | [`core/loanwords/<file>.toml`](core/loanwords/) | "
+            f"{len(loanwords_files)} file ({' / '.join(loanwords_files)})、 完全一致 lookup |"
+        )
+    if works_media:
+        lines.append(
+            f"| **作品造語** (作品単位 1 ファイル) | [`core/works/<medium>/<title>.toml`](core/works/) | "
+            f"medium {len(works_media)} 区分 ({' / '.join(works_media)})、 "
+            f"サブポリシー: [`core/works/README.md`](core/works/README.md) |"
+        )
+    if counters_files:
+        lines.append(
+            f"| **助数詞ルール** | [`rules/numbers/counters/<file>.toml`](rules/numbers/counters/) | "
+            f"{len(counters_files)} file ({' / '.join(counters_files)})、 連濁 / 促音化 / kana 末尾置換 |"
+        )
+    lines.append(
+        "| **数字慣用語句** | [`rules/numbers/numeric_phrases.toml`](rules/numbers/numeric_phrases.toml) | "
+        "二十歳→ハタチ 等、 助数詞ルールより先に確定 |"
+    )
+    if context_files:
+        lines.append(
+            f"| **文脈依存読み** | [`rules/context/<file>.toml`](rules/context/) | "
+            f"{len(context_files)} file ({' / '.join(context_files)})、 同形異音語の動的読み分け |"
+        )
+    lines.append(
+        "| **後処理 regex** | [`rules/text/postprocess.toml`](rules/text/postprocess.toml) | "
+        "mode 別 (hiragana / ruby / tts / romaji) の出力直前 regex 置換 |"
+    )
+    lines.append(
+        "| **記号 / ラテン文字 / SI 単位 / 大数** | "
+        "[`rules/text/{symbols,latin,units}.toml`](rules/text/) / "
+        "[`rules/numbers/scales.toml`](rules/numbers/scales.toml) | "
+        "単純 surface→reading mapping |"
+    )
+
+    return "\n".join(lines) + "\n"
+
+
 def replace_marker(text: str, marker: str, content: str) -> str:
     pattern = re.compile(
         rf"(<!-- AUTO-GENERATED:{marker}:BEGIN -->\n)(.*?)(<!-- AUTO-GENERATED:{marker}:END -->)",
@@ -775,12 +903,22 @@ def main() -> None:
     rules_rows = gather_rules()
     inline_tests = gather_inline_tests()
     corpus_buckets = gather_corpus()
+
+    # ── STATS.md ──
     text = STATS_MD.read_text(encoding="utf-8")
     text = replace_marker(text, "SUMMARY", gen_summary(core_rows, rules_rows))
     text = replace_marker(text, "CORE", gen_core(core_rows))
     text = replace_marker(text, "RULES", gen_rules(rules_rows))
     text = replace_marker(text, "QA", gen_qa(corpus_buckets, inline_tests))
     STATS_MD.write_text(text, encoding="utf-8")
+
+    # ── CONTRIBUTING.md (placement quickpath) ──
+    contrib_text = CONTRIBUTING_MD.read_text(encoding="utf-8")
+    contrib_text = replace_marker(
+        contrib_text, "PLACEMENT", gen_placement(core_rows, rules_rows)
+    )
+    CONTRIBUTING_MD.write_text(contrib_text, encoding="utf-8")
+
     core_count = sum(r[1] for r in core_rows)
     rules_count = sum(r[1] for r in rules_rows)
     inline_cases = sum(c for _, _, c in inline_tests)
@@ -788,7 +926,7 @@ def main() -> None:
         c for files in corpus_buckets.values() for _, c in files
     )
     print(
-        f"regenerated STATS.md (core={core_count:,} / rules={rules_count:,} / "
+        f"regenerated STATS.md + CONTRIBUTING.md (core={core_count:,} / rules={rules_count:,} / "
         f"corpus={corpus_cases} / inline_tests={inline_cases})"
     )
 

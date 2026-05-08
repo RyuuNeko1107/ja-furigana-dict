@@ -9,17 +9,26 @@ Rust 知識・Git クローン不要。
 
 ## クイックパス: GitHub Web UI で 1 件追加
 
-1. 該当ファイルを開く:
-   - **熟語 (≥ 2 字 surface)** → [`core/jukugo/<genre>/<file>.toml`](core/jukugo/)
-   - **熟語だけど genre 判断付かない** → [`core/_inbox.toml`](core/_inbox.toml) (一時 inbox、 後で振り分け)
-   - **単漢字 (1 字 surface)** → [`core/unihan/<水準>.toml`](core/unihan/)
-   - **異体字 → 標準字** → [`core/compat.toml`](core/compat.toml)
-   - **単漢字 default override** → [`core/single_overrides.toml`](core/single_overrides.toml)
-     ([issue #15](https://github.com/RyuuNeko1107/ja-furigana/issues/15) の限定解)
-   - **外来語 (英字始まり surface)** → [`core/loanwords/`](core/loanwords/)
-   - **作品造語 (作品単位 1 ファイル)** → [`core/works/<medium>/<title>.toml`](core/works/)
+1. 該当ファイルを開く (用途別の配置):
 
-   どの genre / 水準にどの file があるかの最新一覧は [STATS.md](STATS.md) を参照
+<!-- AUTO-GENERATED:PLACEMENT:BEGIN -->
+| 追加したいもの | 配置 | 補足 |
+|---|---|---|
+| **熟語** (≥ 2 字 surface) | [`core/jukugo/<genre>/<file>.toml`](core/jukugo/) | genre 6 区分 (basic / humanities / nature / objects / proper / society)、 内訳は [STATS.md](STATS.md#熟語) |
+| **熟語 (genre 判断付かない)** | [`core/_inbox.toml`](core/_inbox.toml) | 一時 inbox、 maintainer が後で振り分け |
+| **単漢字** (1 字 surface) | [`core/unihan/<水準>.toml`](core/unihan/) | 5 水準 (joyo / jinmeiyou / jis_basic / jis_supplement / extension) |
+| **単漢字 default override** | [`core/single_overrides.toml`](core/single_overrides.toml) | [issue #15](https://github.com/RyuuNeko1107/ja-furigana/issues/15) の限定解 (1 字 surface 限定) |
+| **異体字 → 標準字** | [`core/compat.toml`](core/compat.toml) | lib Step 1 で入力テキストを正規化 |
+| **外来語** (英字始まり surface) | [`core/loanwords/<file>.toml`](core/loanwords/) | 1 file (it)、 完全一致 lookup |
+| **作品造語** (作品単位 1 ファイル) | [`core/works/<medium>/<title>.toml`](core/works/) | medium 2 区分 (game / literature)、 サブポリシー: [`core/works/README.md`](core/works/README.md) |
+| **助数詞ルール** | [`rules/numbers/counters/<file>.toml`](rules/numbers/counters/) | 7 file (objects / people / percent / places / recursive / simple / time)、 連濁 / 促音化 / kana 末尾置換 |
+| **数字慣用語句** | [`rules/numbers/numeric_phrases.toml`](rules/numbers/numeric_phrases.toml) | 二十歳→ハタチ 等、 助数詞ルールより先に確定 |
+| **文脈依存読み** | [`rules/context/<file>.toml`](rules/context/) | 3 file (homonyms / numbers / special)、 同形異音語の動的読み分け |
+| **後処理 regex** | [`rules/text/postprocess.toml`](rules/text/postprocess.toml) | mode 別 (hiragana / ruby / tts / romaji) の出力直前 regex 置換 |
+| **記号 / ラテン文字 / SI 単位 / 大数** | [`rules/text/{symbols,latin,units}.toml`](rules/text/) / [`rules/numbers/scales.toml`](rules/numbers/scales.toml) | 単純 surface→reading mapping |
+<!-- AUTO-GENERATED:PLACEMENT:END -->
+
+   どの genre / 水準にどの file があるかの最新件数は [STATS.md](STATS.md) を参照
    (master push 後 CI で auto-regen)。
 
 2. 右上の鉛筆アイコン (Edit) をクリック
