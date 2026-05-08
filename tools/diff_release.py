@@ -579,9 +579,47 @@ def main() -> None:
     prev_files = set(git_ls_files(prev_tag))
     now_files = set(git_ls_files(now_tag))
 
-    new_files = sorted(now_files - prev_files)
-    removed_files = sorted(prev_files - now_files)
+    new_files_raw = sorted(now_files - prev_files)
+    removed_files_raw = sorted(prev_files - now_files)
     common = sorted(prev_files & now_files)
+
+    # ── rename 検出 (semantic 比較、 [meta] 除く) ──
+    # pure rename (= entries / rules の中身に変化なし、 path だけ移動) は 新規 / 削除
+    # から外して 「rename」 section に表示。 集計 (total_added / total_removed) からも
+    # 除外する。 [meta] block (role / description) や comment / block marker (`===`) の
+    # 形式変更は semantic に変化していないとみなす — 実際の data (entries / counter
+    # rules / context rules 等) が一致すれば rename として扱う。
+    renames: list[tuple[str, str]] = []  # (old_path, new_path)
+    matched_old: set[str] = set()
+    matched_new: set[str] = set()
+
+    def _semantic_data(content: str):
+        if not content:
+            return None
+        try:
+            data = tomllib.loads(content)
+        except tomllib.TOMLDecodeError:
+            return None
+        # [meta] は metadata (role / description) なので semantic data から除外
+        return {k: v for k, v in data.items() if k != "meta"}
+
+    if removed_files_raw and new_files_raw:
+        prev_sigs = {p: _semantic_data(git_show(prev_tag, p) or "") for p in removed_files_raw}
+        now_sigs = {p: _semantic_data(git_show(now_tag, p) or "") for p in new_files_raw}
+        for old in removed_files_raw:
+            old_sig = prev_sigs[old]
+            if old_sig is None:
+                continue
+            for new in new_files_raw:
+                if new in matched_new:
+                    continue
+                if now_sigs[new] == old_sig:
+                    renames.append((old, new))
+                    matched_old.add(old)
+                    matched_new.add(new)
+                    break
+    new_files = [p for p in new_files_raw if p not in matched_new]
+    removed_files = [p for p in removed_files_raw if p not in matched_old]
 
     # 詳細 + 全体集計
     total_added = 0
@@ -640,7 +678,26 @@ def main() -> None:
     out.append(f"| 読み変更 | **~{total_changed:,}** |")
     out.append(f"| 新規 file | **{len(new_files)}** |")
     out.append(f"| 削除 file | **{len(removed_files)}** |")
+    if renames:
+        out.append(f"| rename (内容変化なし) | **{len(renames)}** |")
     out.append("")
+
+    # ── rename (table) ──
+    if renames:
+        out.append("## rename (内容変化なし、 path 移動のみ)")
+        out.append("")
+        out.append(
+            "prev tag 時点の content と now tag 時点の content が完全一致する file を "
+            "rename pair として検出。 集計の 追加 / 削除 entries には含めない。"
+        )
+        out.append("")
+        out.append("| 旧 path | 新 path | entries |")
+        out.append("|---|---|---:|")
+        for old, new in renames:
+            now_c = git_show(now_tag, new) or ""
+            n = count_top_level_items(now_c)
+            out.append(f"| `{old}` | `{new}` | {n:,} |")
+        out.append("")
 
     # ── 新規 file (table) ──
     if new_files:
