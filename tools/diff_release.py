@@ -33,9 +33,12 @@ from __future__ import annotations
 import subprocess  # nosec B404 — fixed argv list, shell=False で安全
 import sys
 import tomllib
+from pathlib import Path
 
 # 1 file の追加 / 削除 / 読み変更 リストの上限 (越えたら省略)
 TRUNCATE_LIMIT = 20
+
+REPO_ROOT = Path(__file__).resolve().parent.parent
 
 
 def git_show(tag: str, path: str) -> str | None:
@@ -147,6 +150,52 @@ def parse_meta_description(content: str) -> str | None:
         if isinstance(desc, str) and desc:
             return desc
     return None
+
+
+def description_with_fallback(content: str, rel_path: str) -> str:
+    """tag 時点の content から description、 無ければ working tree (= 現状) から fallback。
+
+    `[meta] description` は metadata で意味的に重要ではない (file の機能を変えない)
+    ので、 古い tag 時点では未設定だった file でも、 reader が「これは何 file か」 を
+    分かるよう **後付けされた description** を fallback として表示する。
+
+    優先順位:
+    1. tag 時点の content の `[meta] description`
+    2. working tree (= 現状の HEAD) の **同 path** の `[meta] description`
+    3. working tree の **同 basename** の `[meta] description` (rename 移行対応、
+       例: `rules/counters/objects.toml` → `rules/numbers/counters/objects.toml`)
+    4. `_(用途未設定)_`
+    """
+    desc = parse_meta_description(content)
+    if desc:
+        return desc
+    # 同 path
+    p = REPO_ROOT / rel_path
+    if p.is_file():
+        try:
+            current = p.read_text(encoding="utf-8")
+        except OSError:
+            current = ""
+        desc = parse_meta_description(current)
+        if desc:
+            return desc
+    # 同 basename (rename 検知): core/ + rules/ 配下を再帰探索
+    basename = rel_path.rsplit("/", 1)[-1]
+    if basename and not basename.endswith(".test.toml") and basename != "_genre.toml":
+        for root in (REPO_ROOT / "core", REPO_ROOT / "rules"):
+            if not root.is_dir():
+                continue
+            for cand in root.rglob(basename):
+                if not cand.is_file():
+                    continue
+                try:
+                    current = cand.read_text(encoding="utf-8")
+                except OSError:
+                    continue
+                desc = parse_meta_description(current)
+                if desc:
+                    return f"{desc} _(rename: 現在は `{cand.relative_to(REPO_ROOT).as_posix()}`)_"
+    return "_(用途未設定)_"
 
 
 def diff_file(prev_content: str, now_content: str) -> tuple[list[str], list[str], list[tuple[str, str, str]]]:
@@ -269,7 +318,7 @@ def main() -> None:
         for p in new_files:
             now_c = git_show(now_tag, p) or ""
             n = len(parse_entries(now_c))
-            desc = parse_meta_description(now_c) or "_(用途未設定)_"
+            desc = description_with_fallback(now_c, p)
             out.append(f"| `{p}` | {n:,} | {desc} |")
         out.append("")
 
@@ -282,7 +331,9 @@ def main() -> None:
         for p in removed_files:
             prev_c = git_show(prev_tag, p) or ""
             n = len(parse_entries(prev_c))
-            desc = parse_meta_description(prev_c) or "_(用途未設定)_"
+            # 削除済 file は同 path の working tree には存在しないが、 同 basename の
+            # 移転先がある可能性があるので fallback で探す (rename 移行対応)
+            desc = description_with_fallback(prev_c, p)
             out.append(f"| `{p}` | {n:,} | {desc} |")
         out.append("")
 
@@ -293,13 +344,18 @@ def main() -> None:
         for path, added, removed, changed, prev_e, now_e in file_diffs:
             out.append(f"### `{path}`")
             out.append("")
-            # file の用途説明 (now tag 側を優先、 無ければ prev tag 側) を heading 直下に
+            # file の用途説明 (now tag 側を優先、 無ければ working tree fallback) を
+            # heading 直下に表示
             now_c_for_desc = git_show(now_tag, path) or ""
             desc = parse_meta_description(now_c_for_desc)
             if not desc:
-                prev_c_for_desc = git_show(prev_tag, path) or ""
-                desc = parse_meta_description(prev_c_for_desc)
-            if desc:
+                # tag 時点で未設定 → working tree (現状) を fallback
+                desc = description_with_fallback(now_c_for_desc, path)
+                if desc == "_(用途未設定)_":
+                    # 最後に prev tag 側も試す
+                    prev_c_for_desc = git_show(prev_tag, path) or ""
+                    desc = parse_meta_description(prev_c_for_desc) or ""
+            if desc and desc != "_(用途未設定)_":
                 out.append(f"_{desc}_")
                 out.append("")
             if added:
@@ -332,7 +388,7 @@ def main() -> None:
     for p in sorted(now_files):
         now_c = git_show(now_tag, p) or ""
         n = len(parse_entries(now_c))
-        desc = parse_meta_description(now_c) or "_(用途未設定)_"
+        desc = description_with_fallback(now_c, p)
         out.append(f"| `{p}` | {n:,} | {desc} |")
         snapshot_total += n
     out.append(f"| **合計** ({len(now_files)} ファイル) | **{snapshot_total:,}** | |")
