@@ -41,7 +41,13 @@ jobs:
           # inline test) は ja-furigana lib が読まないため release tar から除外して
           # 配布サイズを削る。 lib loader 側でも file 名 match で skip するので双方
           # 防御 (release tar に紛れ込んでも runtime memory には載らない)。
-          tar -czf "$ARCHIVE" --exclude='_genre.toml' --exclude='*.test.toml' core/ rules/
+          # README.md (例: core/works/README.md) は contributor 向け doc、 lib
+          # runtime は読まないので release tar から除外。
+          tar -czf "$ARCHIVE" \
+            --exclude='_genre.toml' \
+            --exclude='*.test.toml' \
+            --exclude='README.md' \
+            core/ rules/
           ls -lh "$ARCHIVE"
           echo "ARCHIVE=$ARCHIVE" >> "$GITHUB_ENV"
 

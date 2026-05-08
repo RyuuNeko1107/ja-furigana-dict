@@ -99,6 +99,26 @@ def parse_entries(content: str) -> dict[str, str]:
     return flat
 
 
+def parse_meta_description(content: str) -> str | None:
+    """TOML 文字列から `[meta] description` を取り出す。 無ければ None。
+
+    各 dict / rule TOML の冒頭に `[meta] description = "..."` を declare して
+    file の用途を 1 行説明する慣行 (STATS.md 用途列も同じ source)。 release diff
+    で「新規 / 削除 file は何なのか」 を contributor が判断できるよう、 file 名
+    の横に description を併記する。
+    """
+    try:
+        data = tomllib.loads(content)
+    except tomllib.TOMLDecodeError:
+        return None
+    meta = data.get("meta")
+    if isinstance(meta, dict):
+        desc = meta.get("description")
+        if isinstance(desc, str) and desc:
+            return desc
+    return None
+
+
 def diff_file(prev_content: str, now_content: str) -> tuple[list[str], list[str], list[tuple[str, str, str]]]:
     """1 file 分の (added, removed, changed[(key, prev_v, now_v)]) を返す。"""
     prev = parse_entries(prev_content)
@@ -188,7 +208,9 @@ def main() -> None:
         for p in new_files:
             now_c = git_show(now_tag, p) or ""
             n = len(parse_entries(now_c))
-            out.append(f"- `{p}` ({n:,} entries)")
+            desc = parse_meta_description(now_c)
+            desc_str = f" — {desc}" if desc else ""
+            out.append(f"- `{p}` ({n:,} entries){desc_str}")
         out.append("")
 
     if removed_files:
@@ -197,7 +219,9 @@ def main() -> None:
         for p in removed_files:
             prev_c = git_show(prev_tag, p) or ""
             n = len(parse_entries(prev_c))
-            out.append(f"- `{p}` ({n:,} entries)")
+            desc = parse_meta_description(prev_c)
+            desc_str = f" — {desc}" if desc else ""
+            out.append(f"- `{p}` ({n:,} entries){desc_str}")
         out.append("")
 
     if file_diffs:
@@ -206,6 +230,15 @@ def main() -> None:
         for path, added, removed, changed, prev_e, now_e in file_diffs:
             out.append(f"### `{path}`")
             out.append("")
+            # file の用途説明 (now tag 側を優先、 無ければ prev tag 側) を heading 直下に
+            now_c_for_desc = git_show(now_tag, path) or ""
+            desc = parse_meta_description(now_c_for_desc)
+            if not desc:
+                prev_c_for_desc = git_show(prev_tag, path) or ""
+                desc = parse_meta_description(prev_c_for_desc)
+            if desc:
+                out.append(f"_{desc}_")
+                out.append("")
             if added:
                 out.append(f"**追加 ({len(added)} 件)**:")
                 out.append(fmt_entry_list(added, now_e))
