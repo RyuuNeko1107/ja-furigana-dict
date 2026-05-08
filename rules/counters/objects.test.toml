@@ -4,16 +4,38 @@
 # lib loader は file 名 match で skip + release tar からも exclude、
 # runtime memory には載らない。
 #
-# **書き方ルール (merge 競合対策)**:
-# - 1 case 1 行 (TOML inline-table、 末尾追記で衝突最小化)
-# - 削除しない、 追加のみ (append-only) — 既存 case を消す PR は CI で fail
+# **書き方ルール**:
+# - 1 case あたり `[[test]]` ブロック + `input` / `expected` の 2 行
+#   (3 行 1 case の縦書き、 末尾追記で merge 競合は手動 resolve しやすい)
+# - **append-only**: 既存 case を **削除しない**、 追加のみ。
+#   reading が変わったら新 case を追加して古いものは残す
+#   (= 過去通せたものは通し続ける、 corpus と同じ regression lock)
 # - 順序は問わない (TOML array なので並べ替えは不要)
+# - 関連グループに `# ─── タイトル ──` のコメントで小見出し可
 
-test = [
-  { input = "1本", expected = "いっぽん" },
-  { input = "3本", expected = "さんぼん" },
-  { input = "5本", expected = "ごほん" },
-  { input = "1匹", expected = "いっぴき" },
-  { input = "3匹", expected = "さんびき" },
-  { input = "1冊", expected = "いっさつ" },
-]
+# ─── 本 ────────────────────────────────────────────
+[[test]]
+input = "1本"
+expected = "いっぽん"
+
+[[test]]
+input = "3本"
+expected = "さんぼん"
+
+[[test]]
+input = "5本"
+expected = "ごほん"
+
+# ─── 匹 ────────────────────────────────────────────
+[[test]]
+input = "1匹"
+expected = "いっぴき"
+
+[[test]]
+input = "3匹"
+expected = "さんびき"
+
+# ─── 冊 ────────────────────────────────────────────
+[[test]]
+input = "1冊"
+expected = "いっさつ"
