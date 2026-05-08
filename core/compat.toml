@@ -7,6 +7,7 @@
 
 [meta]
 role = "compat"
+description = "異体字 → 標準字の正規化マップ (髙→高 等、 lib Step 1 で入力テキストを正規化)"
 
 [map]
 "丗" = "三十"

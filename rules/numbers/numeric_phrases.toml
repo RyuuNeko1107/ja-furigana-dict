@@ -3,6 +3,7 @@
 
 [meta]
 role = "numeric_phrases"
+description = "数字を含む例外語句 (二十歳→ハタチ / 明後日→アサッテ 等、 助数詞ルールより先に確定)"
 
 [entries]
 "二十歳" = "ハタチ"

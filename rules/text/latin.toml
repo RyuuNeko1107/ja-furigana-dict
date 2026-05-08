@@ -4,6 +4,7 @@
 
 [meta]
 role = "latin"
+description = "ラテン文字 1 文字読み (A→エー / B→ビー …、 大文字 key で保存、 lookup は case-insensitive)"
 
 [entries]
 "A" = "エー"

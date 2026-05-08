@@ -432,6 +432,7 @@ def main() -> int:
     targets: list[tuple[list[Path], callable]] = [
         (discover(core, 'jukugo', recursive=True), load_jukugo),
         (discover_works(core),                     load_jukugo),
+        ([core / '_inbox.toml'],                   load_jukugo),
         (discover(core, 'loanwords', recursive=True), lambda p: validate_loanwords(p, errors)),
         ([core / 'single_overrides.toml'],   lambda p: validate_single_overrides(p, errors)),
         (discover(core, 'unihan'),                 load_unihan),

@@ -9,24 +9,22 @@ usage:
 
 両 tag 時点のファイル内容を `git show <tag>:<path>` で取得 → tomllib で
 parse → entries (= surface→reading) を比較。 集計対象は core/ + rules/ 配下
-の `[entries]` / `[map]` を持つ TOML。 `_genre.toml` は対象外。
+の `[entries]` / `[map]` を持つ TOML。 `_genre.toml` / `*.test.toml` は対象外。
 
-出力 (stdout、 markdown):
+出力 (stdout、 markdown、 すべて table 形式):
 
     # ja-furigana-dict release diff: <prev> → <now>
 
     ## 集計
-    - 追加 entries: ...
-    - 削除 entries: ...
-    - 読み変更: ...
-    - 新規 file: ...
-    - 削除 file: ...
+    | 項目 | 値 |
+    | 追加 entries | +N |
+    | ...
 
-    ## 詳細 (file 別)
-    ### `core/jukugo/general.toml`
-    - 追加 (N): "灰桜" = "ハイザクラ" / ...
-    - 削除 (M): ...
-    - 読み変更 (K): "一蓮托生" イチレント → イチレンタ
+    ## 新規 file / 削除 file (table)
+
+    ## 詳細 (file 別、 追加 / 削除 / 読み変更 を table で)
+
+    ## リリース時点スナップショット (now tag 時点の全 file + entries 数)
 
 `subprocess.run` は argv list + shell=False で shell injection 経路無し。
 """
@@ -35,7 +33,9 @@ from __future__ import annotations
 import subprocess  # nosec B404 — fixed argv list, shell=False で安全
 import sys
 import tomllib
-from pathlib import Path
+
+# 1 file の追加 / 削除 / 読み変更 リストの上限 (越えたら省略)
+TRUNCATE_LIMIT = 20
 
 
 def git_show(tag: str, path: str) -> str | None:
@@ -56,7 +56,11 @@ def git_show(tag: str, path: str) -> str | None:
 
 
 def git_ls_files(tag: str) -> list[str]:
-    """tag 時点で tracked な core/ + rules/ 配下の *.toml file 一覧を返す。"""
+    """tag 時点で tracked な core/ + rules/ 配下の *.toml file 一覧を返す。
+
+    `_genre.toml` (STATS sub-section description) と `*.test.toml` (CI 専用 inline test)
+    は集計対象外なので除外。
+    """
     result = subprocess.run(  # nosec B603 — fixed argv, no shell
         ["git", "ls-tree", "-r", "--name-only", tag],
         capture_output=True,
@@ -69,6 +73,7 @@ def git_ls_files(tag: str) -> list[str]:
         if (p.startswith("core/") or p.startswith("rules/"))
         and p.endswith(".toml")
         and not p.endswith("_genre.toml")
+        and not p.endswith(".test.toml")
     ]
 
 
@@ -76,25 +81,50 @@ def parse_entries(content: str) -> dict[str, str]:
     """TOML 文字列から entries (key→string value) を取り出す。
 
     対応 layout:
-    - [entries] dict
-    - [map] dict (compat.toml)
-    - top-level flat (days.toml: '1' = 'ツイタチ' ...)
-    [[rule]] / [[entry]] のような array 形式は本 diff では扱わない (件数 small)。
+    - `[entries]` / `[map]` dict (jukugo / unihan / compat / numeric_phrases / etc.)
+    - `[entries]` 内の inline-table value (units.toml: `"km" = { kana = "..." }`)
+    - `[[entry]]` array (scales.toml: `[[entry]] kanji=X kana=Y`)
+    - top-level flat (旧 days.toml: `'1' = 'ツイタチ'` …)
+
+    `[[rule]]` (postprocess / context) や `[counter."X"]` (counters) のような
+    rule-shape の構造は word-level diff では扱わない (rule 数や個別 pattern は STATS.md
+    の「ルール数」 column を見る方が自然)。
     """
     try:
         data = tomllib.loads(content)
     except tomllib.TOMLDecodeError:
         return {}
 
+    # [entries] / [map] dict
     for key in ("entries", "map"):
         v = data.get(key)
         if isinstance(v, dict):
-            return {
-                k: vv for k, vv in v.items()
-                if isinstance(vv, str)
-            }
+            result: dict[str, str] = {}
+            for k, vv in v.items():
+                if isinstance(vv, str):
+                    result[k] = vv
+                elif isinstance(vv, dict):
+                    # inline-table value (units 等の `{kana = "..."}` 形式)
+                    kana = vv.get("kana") or vv.get("reading")
+                    if isinstance(kana, str):
+                        result[k] = kana
+            if result:
+                return result
 
-    # flat top-level
+    # [[entry]] array (scales.toml の `kanji = X / kana = Y` 形式)
+    arr = data.get("entry")
+    if isinstance(arr, list):
+        result = {}
+        for item in arr:
+            if isinstance(item, dict):
+                k = item.get("kanji") or item.get("surface")
+                v = item.get("kana") or item.get("reading")
+                if isinstance(k, str) and isinstance(v, str):
+                    result[k] = v
+        if result:
+            return result
+
+    # flat top-level (旧 days.toml の compat 経路)
     flat = {k: v for k, v in data.items() if isinstance(v, str)}
     return flat
 
@@ -133,11 +163,35 @@ def diff_file(prev_content: str, now_content: str) -> tuple[list[str], list[str]
     return added, removed, changed
 
 
-def fmt_entry_list(entries: list[str], full: dict[str, str]) -> str:
-    """`"key" = "value"` 形式の list を改行区切りで返す。"""
-    return "\n".join(f'  - `"{k}" = "{full.get(k, "")}"`' for k in entries[:20]) + (
-        f"\n  - … 他 {len(entries) - 20} 件" if len(entries) > 20 else ""
-    )
+def md_escape(s: str) -> str:
+    """markdown table cell で `|` を壊さないよう escape。"""
+    return s.replace("|", "\\|")
+
+
+def fmt_two_col_entries(entries: list[str], full: dict[str, str]) -> list[str]:
+    """`| 表記 | 読み |` の table rows を返す (header 含む)。 上限 TRUNCATE_LIMIT。"""
+    rows = ["| 表記 | 読み |", "|---|---|"]
+    for k in entries[:TRUNCATE_LIMIT]:
+        rows.append(f"| `{md_escape(k)}` | `{md_escape(full.get(k, ''))}` |")
+    if len(entries) > TRUNCATE_LIMIT:
+        rows.append(
+            f"| _(他 {len(entries) - TRUNCATE_LIMIT} 件、 commit log 参照)_ | |"
+        )
+    return rows
+
+
+def fmt_changed_entries(changed: list[tuple[str, str, str]]) -> list[str]:
+    """`| 表記 | 旧 | 新 |` の table rows を返す (header 含む)。"""
+    rows = ["| 表記 | 旧 | 新 |", "|---|---|---|"]
+    for k, pv, nv in changed[:TRUNCATE_LIMIT]:
+        rows.append(
+            f"| `{md_escape(k)}` | `{md_escape(pv)}` | `{md_escape(nv)}` |"
+        )
+    if len(changed) > TRUNCATE_LIMIT:
+        rows.append(
+            f"| _(他 {len(changed) - TRUNCATE_LIMIT} 件、 commit log 参照)_ | | |"
+        )
+    return rows
 
 
 def main() -> None:
@@ -193,39 +247,48 @@ def main() -> None:
     out: list[str] = []
     out.append(f"# ja-furigana-dict release diff: `{prev_tag}` → `{now_tag}`")
     out.append("")
+
+    # ── 集計 (table) ──
     out.append("## 集計")
     out.append("")
-    out.append(f"- **追加 entries**: +{total_added:,}")
-    out.append(f"- **削除 entries**: -{total_removed:,}")
-    out.append(f"- **読み変更**: ~{total_changed:,}")
-    out.append(f"- **新規 file**: {len(new_files)}")
-    out.append(f"- **削除 file**: {len(removed_files)}")
+    out.append("| 項目 | 値 |")
+    out.append("|---|---:|")
+    out.append(f"| 追加 entries | **+{total_added:,}** |")
+    out.append(f"| 削除 entries | **-{total_removed:,}** |")
+    out.append(f"| 読み変更 | **~{total_changed:,}** |")
+    out.append(f"| 新規 file | **{len(new_files)}** |")
+    out.append(f"| 削除 file | **{len(removed_files)}** |")
     out.append("")
 
+    # ── 新規 file (table) ──
     if new_files:
-        out.append("### 新規 file")
+        out.append("## 新規 file")
         out.append("")
+        out.append("| ファイル | entries | 用途 |")
+        out.append("|---|---:|---|")
         for p in new_files:
             now_c = git_show(now_tag, p) or ""
             n = len(parse_entries(now_c))
-            desc = parse_meta_description(now_c)
-            desc_str = f" — {desc}" if desc else ""
-            out.append(f"- `{p}` ({n:,} entries){desc_str}")
+            desc = parse_meta_description(now_c) or "_(用途未設定)_"
+            out.append(f"| `{p}` | {n:,} | {desc} |")
         out.append("")
 
+    # ── 削除 file (table) ──
     if removed_files:
-        out.append("### 削除 file")
+        out.append("## 削除 file")
         out.append("")
+        out.append("| ファイル | entries | 用途 |")
+        out.append("|---|---:|---|")
         for p in removed_files:
             prev_c = git_show(prev_tag, p) or ""
             n = len(parse_entries(prev_c))
-            desc = parse_meta_description(prev_c)
-            desc_str = f" — {desc}" if desc else ""
-            out.append(f"- `{p}` ({n:,} entries){desc_str}")
+            desc = parse_meta_description(prev_c) or "_(用途未設定)_"
+            out.append(f"| `{p}` | {n:,} | {desc} |")
         out.append("")
 
+    # ── 詳細 (file 別、 各 1 file 内も table で) ──
     if file_diffs:
-        out.append("## 詳細 (file 別、 上位 20 件まで)")
+        out.append(f"## 詳細 (file 別、 各セクション上位 {TRUNCATE_LIMIT} 件まで)")
         out.append("")
         for path, added, removed, changed, prev_e, now_e in file_diffs:
             out.append(f"### `{path}`")
@@ -240,20 +303,40 @@ def main() -> None:
                 out.append(f"_{desc}_")
                 out.append("")
             if added:
-                out.append(f"**追加 ({len(added)} 件)**:")
-                out.append(fmt_entry_list(added, now_e))
+                out.append(f"**追加 ({len(added):,} 件)**:")
+                out.append("")
+                out.extend(fmt_two_col_entries(added, now_e))
                 out.append("")
             if removed:
-                out.append(f"**削除 ({len(removed)} 件)**:")
-                out.append(fmt_entry_list(removed, prev_e))
+                out.append(f"**削除 ({len(removed):,} 件)**:")
+                out.append("")
+                out.extend(fmt_two_col_entries(removed, prev_e))
                 out.append("")
             if changed:
-                out.append(f"**読み変更 ({len(changed)} 件)**:")
-                for k, pv, nv in changed[:20]:
-                    out.append(f'  - `"{k}"`: `{pv}` → `{nv}`')
-                if len(changed) > 20:
-                    out.append(f"  - … 他 {len(changed) - 20} 件")
+                out.append(f"**読み変更 ({len(changed):,} 件)**:")
                 out.append("")
+                out.extend(fmt_changed_entries(changed))
+                out.append("")
+
+    # ── リリース時点スナップショット (now tag 時点の全 file + entries 数) ──
+    out.append(f"## リリース時点スナップショット (`{now_tag}`)")
+    out.append("")
+    out.append(
+        "release tag 時点での dict / rule file 一覧 + entries 数。 古い release との"
+        "比較は GitHub Releases や `git diff <prev> <now> -- core/ rules/` で。"
+    )
+    out.append("")
+    out.append("| ファイル | entries | 用途 |")
+    out.append("|---|---:|---|")
+    snapshot_total = 0
+    for p in sorted(now_files):
+        now_c = git_show(now_tag, p) or ""
+        n = len(parse_entries(now_c))
+        desc = parse_meta_description(now_c) or "_(用途未設定)_"
+        out.append(f"| `{p}` | {n:,} | {desc} |")
+        snapshot_total += n
+    out.append(f"| **合計** ({len(now_files)} ファイル) | **{snapshot_total:,}** | |")
+    out.append("")
 
     if not file_diffs and not new_files and not removed_files:
         out.append("(差分なし)")

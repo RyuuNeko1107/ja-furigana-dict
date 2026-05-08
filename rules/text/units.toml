@@ -4,6 +4,7 @@
 
 [meta]
 role = "units"
+description = "SI 単位 + 通貨 + % (km / kg / mL / 円 / % 等、 数値 + 単位を 1 chunk で読む。 lookup は case-insensitive)"
 
 [entries]
 "km" = { kana = "キロメートル" }

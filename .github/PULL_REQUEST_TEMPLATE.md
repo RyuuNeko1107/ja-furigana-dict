@@ -16,19 +16,21 @@
 
 ## チェックリスト
 
-- [ ] 適切なファイルに追加した (`core/jukugo/{general,four_char,proper_nouns,place_names,personal_names}.toml` / `core/unihan.toml` / `core/compat.toml` 等)
+- [ ] 適切なファイルに追加した (`core/jukugo/<genre>/*.toml` / `core/unihan/<水準>.toml` / `core/compat.toml` / `core/loanwords/` / `core/works/` / 判断付かなければ [`core/_inbox.toml`](../core/_inbox.toml) でも OK)
 - [ ] 読みは **ひらがな または 全角カタカナ** で書いた (慣習: 訓=ひら / 音=カタ)
 - [ ] key と value の両方を `"..."` で囲んだ
 - [ ] ファイル内で同じ key を二重登録していない
-- [ ] (大量追加の場合) 同じ分野でまとめた、~50 件程度に分割した
+- [ ] (大量追加の場合) 同じ分野でまとめた、 ~50 件程度に分割した
+- [ ] (新エントリが期待通り読まれるか不安なら) [`tests/corpus/should_read.toml`](../tests/corpus/should_read.toml) または同名 dir に **input/expected を 1 件以上追加** (回帰防止 / 新カバレッジ)
 - [ ] (任意) ローカルで `python3 tools/validate.py` を回して `[OK]` を確認した
 
 ## 補足
 
-- ⚠️ **誤読をデフォルト化しない**: 商標 / 固有名詞のうち公的に認知されていない読みは追加しない方針です
-- ⚠️ **文脈で読みが変わる語**: `core/jukugo/*` ではなく `rules/context/*.toml` で扱います
-- 判断に迷ったら `general.toml` に置いてレビューで振り分けても OK
-- 詳細は [CONTRIBUTING.md](../CONTRIBUTING.md) を参照
+- ⚠️ **誤読をデフォルト化しない**: 商標 / 固有名詞のうち公的に認知されていない読みは追加しない方針
+- ⚠️ **文脈で読みが変わる語**: `core/jukugo/*` ではなく `rules/context/*.toml` で扱う
+- ⚠️ **古典的読みは現代読みが無い場合のみ** (TTS = 現代口頭用途を想定)
+- 判断に迷ったら `core/_inbox.toml` に置いてレビューで振り分けても OK
+- 詳細は [CONTRIBUTING.md](../CONTRIBUTING.md) / [docs/SCHEMA.md](../docs/SCHEMA.md) を参照
 
 ---
 *Validate CI が緑になれば maintainer がレビューします。ありがとうございます 🍀*

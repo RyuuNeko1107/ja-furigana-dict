@@ -19,6 +19,7 @@ on:
     paths:
       - 'core/**/*.toml'
       - 'rules/**/*.toml'
+      - 'tests/corpus/**/*.toml'
       - 'tools/regen_stats.py'
       - 'tools/list_dups.py'
       - 'tools/dedup_compat.py'

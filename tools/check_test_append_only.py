@@ -2,7 +2,7 @@
 """
 PR で `*.test.toml` の inline test case が **削除されていない** ことを検証する。
 
-CONTRIBUTING.md の append-only ポリシーを構造的に強制 (= 削除した PR は CI fail):
+docs/INLINE_TESTS.md の append-only ポリシーを構造的に強制 (= 削除した PR は CI fail):
 - inline test は corpus と同じ regression lock として機能する
 - 既存 case を削除すると過去通せていた変換が再度壊れたとき検出できなくなる
 - reading が変わった場合は新 case を追加して、 古いものは残す方針

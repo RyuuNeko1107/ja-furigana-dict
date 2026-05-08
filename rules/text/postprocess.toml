@@ -26,6 +26,7 @@
 
 [meta]
 role = "postprocess"
+description = "出力後処理 regex (Step 7、 mode 別: hiragana / ruby / tts / romaji の出力直前に適用)"
 
 [[rule]]
 pattern = "ジュウパー"

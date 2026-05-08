@@ -3,14 +3,22 @@
 """
 ja-furigana の corpus 回帰テスト runner。
 
-`tests/corpus/should_read.toml` の各 case を、ローカルの `furigana` バイナリで実行して
-expected と一致するか検証する。失敗があれば exit 1 で抜ける (CI gate 前提)。
+corpus 内の各 case を、 ローカルの `furigana` バイナリで実行して
+expected と一致するか検証する。 失敗があれば exit 1 で抜ける (CI gate 前提)。
+
+引数 `corpus` は **file または directory** のどちらでも OK:
+
+- file 指定 (例: `tests/corpus/should_read.toml`) → その file 単体を実行
+- dir 指定 (例: `tests/corpus/should_read/`) → 配下の `*.toml` を再帰的に全部実行
+- 同名 file + 同名 dir が両方ある場合 (例: `should_read.toml` + `should_read/` 共存) →
+  file 引数で渡しても dir 配下も自動的に併合される (gradual な分割移行を支援)
 
 Usage:
-    python3 tools/run_corpus.py                       # should_read.toml を実行 (default)
-    python3 tools/run_corpus.py tests/corpus/should_read.toml
+    python3 tools/run_corpus.py                                     # default は should_read.toml
+    python3 tools/run_corpus.py tests/corpus/should_read.toml       # 単一 file
+    python3 tools/run_corpus.py tests/corpus/should_read/           # dir 再帰
     python3 tools/run_corpus.py --binary /path/to/furigana
-    python3 tools/run_corpus.py --data-dir /var/lib/furigana    # 辞書を mount
+    python3 tools/run_corpus.py --data-dir /var/lib/furigana        # 辞書を mount
 
 ja-furigana CLI が PATH にある必要があります (`cargo install ja-furigana-cli` または
 `furigana dict pull` 後の binary)。
@@ -67,6 +75,32 @@ def run_lookup(binary: str, text: str, mode: str, data_dir: str | None) -> str:
     return result.stdout.rstrip("\n")
 
 
+def collect_corpus_files(corpus_arg: Path) -> list[Path]:
+    """corpus 引数を file / dir / 両者併合 として解決し、 toml file の list を返す。
+
+    - file 指定: `[corpus_arg]` 単体。 同名 dir (`<stem>/`) が同階層にあれば併合
+    - dir 指定: 再帰 `*.toml` 全部
+    - file も dir も無い: SystemExit
+    """
+    files: list[Path] = []
+    if corpus_arg.is_file():
+        files.append(corpus_arg)
+        # 同名 dir (例: should_read.toml + should_read/) が共存する場合は併合する
+        sibling_dir = corpus_arg.with_suffix("")
+        if sibling_dir.is_dir():
+            files.extend(sorted(sibling_dir.rglob("*.toml")))
+    elif corpus_arg.is_dir():
+        files.extend(sorted(corpus_arg.rglob("*.toml")))
+    else:
+        # file が無くても dir があれば dir として扱う (例: `should_read.toml` 廃止後)
+        sibling_dir = corpus_arg.with_suffix("")
+        if sibling_dir.is_dir():
+            files.extend(sorted(sibling_dir.rglob("*.toml")))
+        else:
+            sys.exit(f"[FAIL] corpus file/dir not found: {corpus_arg}")
+    return files
+
+
 def run_corpus(
     corpus_path: Path,
     binary: str,
@@ -74,46 +108,59 @@ def run_corpus(
     *,
     verbose: bool,
 ) -> tuple[int, int, list[str]]:
-    """corpus toml を読み出して全 case を実行、(passed, total, failures) を返す."""
-    if not corpus_path.is_file():
-        sys.exit(f"[FAIL] corpus file not found: {corpus_path}")
+    """corpus toml を読み出して全 case を実行、(passed, total, failures) を返す。
 
-    with corpus_path.open("rb") as f:
-        data = tomllib.load(f)
+    `corpus_path` は file または dir。 dir の場合は配下 `*.toml` を再帰的に全部実行する。
+    """
+    files = collect_corpus_files(corpus_path)
+    if not files:
+        sys.exit(f"[FAIL] no toml files found under: {corpus_path}")
 
-    cases = data.get("case", [])
-    if not cases:
-        print(f"[WARN] {corpus_path} に case がありません")
-        return 0, 0, []
+    if verbose or len(files) > 1:
+        print(f"[info] corpus files ({len(files)}):")
+        for f in files:
+            print(f"  - {f}")
+        print()
 
     failures: list[str] = []
     passed = 0
-    for i, case in enumerate(cases, 1):
-        text = case.get("input", "")
-        mode = case.get("mode", "tts")
-        expected = case.get("expected")
-        note = case.get("note", "")
-
-        if expected is None:
-            # should_not_read_yet / out_of_scope では expected_failure_reason を持つ
-            # ことになっているので、そちらは ここでは検証対象外として skip。
+    case_index = 0
+    for f in files:
+        with f.open("rb") as fp:
+            data = tomllib.load(fp)
+        cases = data.get("case", [])
+        if not cases:
+            if verbose:
+                print(f"[WARN] {f} に case がありません")
             continue
 
-        actual = run_lookup(binary, text, mode, data_dir)
-        if actual == expected:
-            passed += 1
-            if verbose:
-                print(f"  [OK]   {i:>3}. {text!r} ({mode}) → {actual!r}")
-        else:
-            msg = (
-                f"  [FAIL] {i:>3}. {text!r} ({mode})\n"
-                f"           expected: {expected!r}\n"
-                f"           actual:   {actual!r}"
-            )
-            if note:
-                msg += f"\n           note:     {note}"
-            failures.append(msg)
-            print(msg)
+        for case in cases:
+            case_index += 1
+            text = case.get("input", "")
+            mode = case.get("mode", "tts")
+            expected = case.get("expected")
+            note = case.get("note", "")
+
+            if expected is None:
+                # should_not_read_yet / out_of_scope では expected_failure_reason を持つ
+                # ことになっているので、 そちらは ここでは検証対象外として skip。
+                continue
+
+            actual = run_lookup(binary, text, mode, data_dir)
+            if actual == expected:
+                passed += 1
+                if verbose:
+                    print(f"  [OK]   {case_index:>3}. {text!r} ({mode}) → {actual!r}")
+            else:
+                msg = (
+                    f"  [FAIL] {case_index:>3}. {text!r} ({mode}) [{f.name}]\n"
+                    f"           expected: {expected!r}\n"
+                    f"           actual:   {actual!r}"
+                )
+                if note:
+                    msg += f"\n           note:     {note}"
+                failures.append(msg)
+                print(msg)
 
     total = passed + len(failures)
     return passed, total, failures
@@ -128,7 +175,10 @@ def main() -> int:
         nargs="?",
         type=Path,
         default=DEFAULT_CORPUS,
-        help=f"対象 corpus toml (default: {DEFAULT_CORPUS.relative_to(REPO_ROOT)})",
+        help=(
+            f"対象 corpus toml file または dir (default: "
+            f"{DEFAULT_CORPUS.relative_to(REPO_ROOT)}、 同名 dir があれば併合)"
+        ),
     )
     parser.add_argument(
         "--binary",

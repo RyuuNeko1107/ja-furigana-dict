@@ -2,10 +2,11 @@
 """
 STATS.md の自動生成セクションを再生成する。
 
-STATS.md 内の 3 つのマーカー区間を埋め直す:
+STATS.md 内の 4 つのマーカー区間を埋め直す:
 - AUTO-GENERATED:SUMMARY : サマリ table (core / rules / 合計)
 - AUTO-GENERATED:CORE    : core/*.toml ファイル別 table
 - AUTO-GENERATED:RULES   : rules/*.toml ファイル別 table
+- AUTO-GENERATED:QA      : QA カバレッジ (corpus + inline test、 サイズは出さない)
 
 用途列は **各 TOML ファイル先頭の `[meta] description = "..."`** から自動取得する。
 ファイルに [meta] が無い場合は legacy fallback の DESCRIPTIONS dict を引く
@@ -34,22 +35,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 STATS_MD = ROOT / "STATS.md"
 
-# Legacy fallback: ファイルに [meta] description が無い時に使う用途説明。
-# 主に rules/*.toml や core/unihan.toml 等、[meta] テーブルを足しにくい
-# ファイル用 (rules は構造が複雑、unihan は機械生成 dump)。
-# 通常の jukugo / works ファイルは [meta] description で書く。
-DESCRIPTIONS_FALLBACK: dict[str, str] = {
-    "core/single_overrides.toml": "単漢字 default reading override (issue #15 限定解、 Lindera reading より優先)",
-    "core/compat.toml": "異体字 → 標準字 (髙→高 等)",
-    "rules/numbers/days.toml": "1〜31 日の特殊読み (1→ツイタチ 等)",
-    "rules/numbers/scales.toml": "万 / 億 / 兆 / 京 等の大数スケール",
-    "rules/numbers/numeric_phrases.toml": "数字を含む例外語句 (二十歳→ハタチ 等)",
-    "rules/text/units.toml": "SI 単位 (km / kg / mL …、case-insensitive)",
-    "rules/text/symbols.toml": "記号読み (+ / − / % / ‰ …)",
-    "rules/text/latin.toml": "ラテン文字読み (A→エー …)",
-    "rules/text/postprocess.toml": "後処理 regex 置換 (Step 7、mode 別)",
-    # counters / context は file 内の [meta] description で個別表示される
-}
+# 全 dict / rule TOML は冒頭に `[meta] description = "..."` を持つことを前提。
+# 念のため各 file が本当に description を持ってるか確認するための無き fallback も用意
+# (counters / context は file 内 description あり、 単漢字 unihan は別経路で取得)。
+DESCRIPTIONS_FALLBACK: dict[str, str] = {}
 
 
 def read_description(path: Path) -> str | None:
@@ -114,6 +103,55 @@ def count_entries(path: Path) -> int:
     return sum(len(v) for k, v in data.items() if isinstance(v, dict) and k != "meta")
 
 
+def count_rule_patterns(path: Path) -> int:
+    """rules file の **実 rule pattern 数** を返す (深掘り count)。
+
+    `count_entries` は top-level エントリ (counter 名 / [[rule]] surface) を返すが、
+    counters の `[[counter."X".rules]]` や context の `[[rule.match]]` のような内部
+    配列要素は含めない。 こちらは内部までフラットに数えた合計を返す:
+
+    - counters (`{counter."X" = {default, rules=[...]}}` 構造): counter 数 + 全 rules 合計
+      (各 counter の default が 1 pattern + 各 rules 配列要素が 1 pattern)
+    - context (`[[rule]]` array): rule 数 + 全 [[rule.match]] 合計
+      (各 rule の surface が 1 pattern + 各 match が 1 branch)
+    - 上記以外 (entries / map / 単純 [[rule]]): count_entries と同じ
+    """
+    try:
+        with open(path, "rb") as f:
+            data = tomllib.load(f)
+    except (OSError, tomllib.TOMLDecodeError):
+        return 0
+
+    # counter 構造 (objects.toml / time.toml / 等)
+    if isinstance(data.get("counter"), dict):
+        counters = data["counter"]
+        total = 0
+        for _, c in counters.items():
+            if not isinstance(c, dict):
+                continue
+            total += 1  # default 自体を 1 pattern として数える
+            rules = c.get("rules")
+            if isinstance(rules, list):
+                total += len(rules)
+        return total
+
+    # context 構造 ([[rule]] array で各 rule に [[rule.match]] が複数)
+    if isinstance(data.get("rule"), list):
+        rules = data["rule"]
+        # context で「surface + match の総数」= len(rules) + sum(match)
+        # postprocess 等の単純 [[rule]] では match を持たないので len(rules) のみ
+        total = len(rules)
+        for r in rules:
+            if isinstance(r, dict):
+                m = r.get("match")
+                if isinstance(m, list):
+                    total += len(m)
+        return total
+
+    # それ以外は count_entries と同じ挙動 (entries / map / フラット)
+    return count_entries(path)
+
+
 def count_inline_tests(path: Path) -> int:
     """`<base>.toml` に対する隣接 `<base>.test.toml` の `[[test]]` 件数を返す。
 
@@ -131,11 +169,6 @@ def count_inline_tests(path: Path) -> int:
         return 0
     cases = data.get("test")
     return len(cases) if isinstance(cases, list) else 0
-
-
-def fmt_test(n: int) -> str:
-    """test 件数の表示。 0 なら `-`、 そうでなければ整数。"""
-    return "-" if n == 0 else str(n)
 
 
 def fmt_size(n_bytes: int) -> str:
@@ -214,6 +247,11 @@ def gather_core() -> list[tuple[str, int, int]]:
     rows.extend(collect("jukugo"))
     rows.extend(collect("works"))
     rows.extend(collect("loanwords"))
+    p = ROOT / "core/_inbox.toml"
+    if p.exists():
+        rows.append(
+            ("core/_inbox.toml", count_entries(p), count_inline_tests(p), effective_bytes(p))
+        )
     p = ROOT / "core/single_overrides.toml"
     if p.exists():
         rows.append(
@@ -227,14 +265,18 @@ def gather_core() -> list[tuple[str, int, int]]:
     return rows
 
 
-def gather_rules() -> list[tuple[str, int, int, int]]:
-    """rules 配下の全 *.toml を再帰 walk で集めて (rel, count, test, size) を返す。
+def gather_rules() -> list[tuple[str, int, int, int, int]]:
+    """rules 配下の全 *.toml を再帰 walk で集めて (rel, count, patterns, test, size) を返す。
 
     新階層化 (rules/<genre>/<file>.toml or rules/<genre>/<sub>/<file>.toml) に
     対応。 _genre.toml と *.test.toml は集計対象外。 表示は gen_rules で
     genre dir 別 sub-section 化。
+
+    `count` は top-level エントリ数 (counter 名 / [[rule]] surface 数 / [entries] key 数)、
+    `patterns` は rule の深掘り count (counters の sub-rules、 context の match 含めた合計)。
+    counters / context 以外では patterns == count。
     """
-    rows: list[tuple[str, int, int, int]] = []
+    rows: list[tuple[str, int, int, int, int]] = []
     base = ROOT / "rules"
     if not base.is_dir():
         return rows
@@ -242,7 +284,13 @@ def gather_rules() -> list[tuple[str, int, int, int]]:
         if p.name == "_genre.toml" or p.name.endswith(".test.toml"):
             continue
         rel = p.relative_to(ROOT).as_posix()
-        rows.append((rel, count_entries(p), count_inline_tests(p), effective_bytes(p)))
+        rows.append((
+            rel,
+            count_entries(p),
+            count_rule_patterns(p),
+            count_inline_tests(p),
+            effective_bytes(p),
+        ))
     return rows
 
 
@@ -259,43 +307,47 @@ def gen_summary(core_rows: list, rules_rows: list) -> str:
             sum(r[3] for r in sub),
         )
 
-    unihan_c, unihan_t, unihan_s = slice_("core/unihan/")
-    jukugo_c, jukugo_t, jukugo_s = slice_("core/jukugo/")
-    works_c, works_t, works_s = slice_("core/works/")
-    loanwords_c, loanwords_t, loanwords_s = slice_("core/loanwords/")
-    single_ov_c, single_ov_t, single_ov_s = slice_("core/single_overrides.toml")
-    compat_c, compat_t, compat_s = slice_("core/compat.toml")
+    unihan_c, _unihan_t, unihan_s = slice_("core/unihan/")
+    jukugo_c, _jukugo_t, jukugo_s = slice_("core/jukugo/")
+    works_c, _works_t, works_s = slice_("core/works/")
+    loanwords_c, _loanwords_t, loanwords_s = slice_("core/loanwords/")
+    inbox_c, _inbox_t, inbox_s = slice_("core/_inbox.toml")
+    single_ov_c, _single_ov_t, single_ov_s = slice_("core/single_overrides.toml")
+    compat_c, _compat_t, compat_s = slice_("core/compat.toml")
     rules_c = sum(r[1] for r in rules_rows)
-    rules_t = sum(r[2] for r in rules_rows)
-    rules_s = sum(r[3] for r in rules_rows)
-    total_c = unihan_c + jukugo_c + works_c + loanwords_c + single_ov_c + compat_c + rules_c
-    total_t = unihan_t + jukugo_t + works_t + loanwords_t + single_ov_t + compat_t + rules_t
-    total_s = unihan_s + jukugo_s + works_s + loanwords_s + single_ov_s + compat_s + rules_s
+    rules_s = sum(r[4] for r in rules_rows)
+    total_c = unihan_c + jukugo_c + works_c + loanwords_c + inbox_c + single_ov_c + compat_c + rules_c
+    total_s = unihan_s + jukugo_s + works_s + loanwords_s + inbox_s + single_ov_s + compat_s + rules_s
 
     # 内訳の sub-section heading に anchor link でジャンプ可能にする。
     # GitHub の auto-anchor は heading の slugify 結果。
+    # テスト件数は別 section (## テストカバレッジ) に集約するため、 ここの table には含めない。
     lines = [
-        "| カテゴリ | エントリ数 | テスト | サイズ |",
-        "|---|---:|---:|---:|",
-        f"| [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **{unihan_c:,}** | **{fmt_test(unihan_t)}** | **{fmt_size(unihan_s)}** |",
-        f"| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **{jukugo_c:,}** | **{fmt_test(jukugo_t)}** | **{fmt_size(jukugo_s)}** |",
+        "| カテゴリ | エントリ数 | サイズ |",
+        "|---|---:|---:|",
+        f"| [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **{unihan_c:,}** | **{fmt_size(unihan_s)}** |",
+        f"| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **{jukugo_c:,}** | **{fmt_size(jukugo_s)}** |",
     ]
     if works_c > 0:
         lines.append(
-            f"| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **{works_c:,}** | **{fmt_test(works_t)}** | **{fmt_size(works_s)}** |"
+            f"| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **{works_c:,}** | **{fmt_size(works_s)}** |"
         )
     if loanwords_c > 0:
         lines.append(
-            f"| [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **{loanwords_c:,}** | **{fmt_test(loanwords_t)}** | **{fmt_size(loanwords_s)}** |"
+            f"| [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **{loanwords_c:,}** | **{fmt_size(loanwords_s)}** |"
         )
+    # inbox は普段空 (=0) でも存在を可視化したいので無条件で表示
+    lines.append(
+        f"| [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **{inbox_c:,}** | **{fmt_size(inbox_s)}** |"
+    )
     if single_ov_c > 0:
         lines.append(
-            f"| [**単漢字 override**](#単漢字-override) (`core/single_overrides.toml`、 issue #15 限定解) | **{single_ov_c:,}** | **{fmt_test(single_ov_t)}** | **{fmt_size(single_ov_s)}** |"
+            f"| [**単漢字 override**](#単漢字-override) (`core/single_overrides.toml`、 issue #15 限定解) | **{single_ov_c:,}** | **{fmt_size(single_ov_s)}** |"
         )
     lines.extend([
-        f"| [**異体字**](#異体字) (`core/compat.toml`) | **{compat_c:,}** | **{fmt_test(compat_t)}** | **{fmt_size(compat_s)}** |",
-        f"| [**エンジンルール**](#エンジンルール) (`rules/`) | **{rules_c:,}** | **{fmt_test(rules_t)}** | **{fmt_size(rules_s)}** |",
-        f"| **合計** | **{total_c:,}** | **{fmt_test(total_t)}** | **{fmt_size(total_s)}** |",
+        f"| [**異体字**](#異体字) (`core/compat.toml`) | **{compat_c:,}** | **{fmt_size(compat_s)}** |",
+        f"| [**エンジンルール**](#エンジンルール) (`rules/`) | **{rules_c:,}** | **{fmt_size(rules_s)}** |",
+        f"| **合計** | **{total_c:,}** | **{fmt_size(total_s)}** |",
     ])
     return "\n".join(lines) + "\n"
 
@@ -311,26 +363,29 @@ def link_rel(rel: str) -> str:
 def _gen_subsection(
     title: str,
     note: str,
-    rows: list[tuple[str, int, int]],
+    rows: list[tuple[str, int, int, int]],
 ) -> str:
-    """1 カテゴリ分の sub-section (heading + 説明 + table) を返す。"""
+    """1 カテゴリ分の sub-section (heading + 説明 + table) を返す。
+
+    test 件数は別 section (## テストカバレッジ) に集約するため、 ここの table
+    には含めない (rows tuple の tcount field は読み捨てる)。
+    """
     lines = [f"### {title}", "", note, ""]
     if not rows:
         lines.append("(空)")
         return "\n".join(lines) + "\n"
-    lines.append("| ファイル | エントリ数 | テスト | サイズ | 用途 |")
-    lines.append("|---|---:|---:|---:|---|")
-    for rel, count, tcount, size in rows:
+    lines.append("| ファイル | エントリ数 | サイズ | 用途 |")
+    lines.append("|---|---:|---:|---|")
+    for rel, count, _tcount, size in rows:
         desc = lookup_description(rel)
         lines.append(
-            f"| {link_rel(rel)} | {count:,} | {fmt_test(tcount)} | {fmt_size(size)} | {desc} |"
+            f"| {link_rel(rel)} | {count:,} | {fmt_size(size)} | {desc} |"
         )
     if len(rows) > 1:
         n = sum(r[1] for r in rows)
-        t = sum(r[2] for r in rows)
         s = sum(r[3] for r in rows)
         lines.append(
-            f"| **小計** ({len(rows)} ファイル) | **{n:,}** | **{fmt_test(t)}** | **{fmt_size(s)}** | |"
+            f"| **小計** ({len(rows)} ファイル) | **{n:,}** | **{fmt_size(s)}** | |"
         )
     return "\n".join(lines) + "\n"
 
@@ -392,10 +447,9 @@ def _gen_grouped_section(
     ordered.sort(key=lambda t: (t[0], t[1]))
 
     overall_n = sum(r[1] for r in rows)
-    overall_t = sum(r[2] for r in rows)
     overall_s = sum(r[3] for r in rows)
     lines.append(
-        f"**合計**: {overall_n:,} 件 / テスト {fmt_test(overall_t)} / {fmt_size(overall_s)} (genre {len(ordered)} 区分)"
+        f"**合計**: {overall_n:,} 件 / {fmt_size(overall_s)} (genre {len(ordered)} 区分)"
     )
     lines.append("")
 
@@ -420,19 +474,18 @@ def _gen_grouped_section(
         else:
             lines.append(f"`core/{base_subdir}/` 直下 — {len(files)} ファイル")
         lines.append("")
-        lines.append("| ファイル | エントリ数 | テスト | サイズ | 用途 |")
-        lines.append("|---|---:|---:|---:|---|")
-        for rel, count, tcount, size in files:
+        lines.append("| ファイル | エントリ数 | サイズ | 用途 |")
+        lines.append("|---|---:|---:|---|")
+        for rel, count, _tcount, size in files:
             d = lookup_description(rel)
             lines.append(
-                f"| {link_rel(rel)} | {count:,} | {fmt_test(tcount)} | {fmt_size(size)} | {d} |"
+                f"| {link_rel(rel)} | {count:,} | {fmt_size(size)} | {d} |"
             )
         if len(files) > 1:
             n = sum(r[1] for r in files)
-            t = sum(r[2] for r in files)
             s = sum(r[3] for r in files)
             lines.append(
-                f"| **小計** ({len(files)} ファイル) | **{n:,}** | **{fmt_test(t)}** | **{fmt_size(s)}** | |"
+                f"| **小計** ({len(files)} ファイル) | **{n:,}** | **{fmt_size(s)}** | |"
             )
         lines.append("")
 
@@ -451,6 +504,7 @@ def gen_core(core_rows: list) -> str:
     jukugo_rows = [r for r in core_rows if r[0].startswith("core/jukugo/")]
     works_rows = [r for r in core_rows if r[0].startswith("core/works/")]
     loanwords_rows = [r for r in core_rows if r[0].startswith("core/loanwords/")]
+    inbox_rows = [r for r in core_rows if r[0] == "core/_inbox.toml"]
     single_rows = [r for r in core_rows if r[0] == "core/single_overrides.toml"]
     compat_rows = [r for r in core_rows if r[0] == "core/compat.toml"]
 
@@ -479,6 +533,11 @@ def gen_core(core_rows: list) -> str:
             "`core/loanwords/*` — ASCII surface (英字始まり) を完全一致 lookup する別管理辞書。 case-fold + 全角→半角 正規化。",
             loanwords_rows,
         ))
+    sections.append(_gen_subsection(
+        "分類前 inbox",
+        "`core/_inbox.toml` — 「読みは追加したいが genre dir の振り分け判断付かない」 用の一時置き場。 lib 側は `[meta] role = \"jukugo\"` で jukugo として load される (≥2 字 surface 限定)。 maintainer の整理タイミングで適切な `core/jukugo/<genre>/<file>.toml` に移動する。",
+        inbox_rows,
+    ))
     if single_rows:
         sections.append(_gen_subsection(
             "単漢字 override",
@@ -494,7 +553,7 @@ def gen_core(core_rows: list) -> str:
     return "\n".join(sections)
 
 
-def gen_rules(rules_rows: list[tuple[str, int, int, int]]) -> str:
+def gen_rules(rules_rows: list[tuple[str, int, int, int, int]]) -> str:
     """rules 内訳を genre dir (`rules/<genre>/...`) 単位で sub-section 化。
 
     各 file の rel = `rules/<genre>/<sub?>/<file>.toml`。 第 2 segment (genre)
@@ -502,17 +561,21 @@ def gen_rules(rules_rows: list[tuple[str, int, int, int]]) -> str:
     引く (jukugo / works と同じ仕組み)。 genre dir 内に subdir (例 counters)
     がある場合は file 一覧にそのまま並べる (path 先頭の `rules/<genre>/` は
     link_rel が省略せずに表示)。
+
+    各 file 行は **エントリ数** (top-level) と **ルール数** (深掘り pattern count) の
+    両方を出す。 counters / context 以外は同値。
     """
     if not rules_rows:
         return "(空)\n"
 
     # group by 第 2 segment (= genre dir 名)
-    groups: dict[str, list[tuple[str, int, int, int]]] = {}
-    for rel, count, tcount, size in rules_rows:
+    groups: dict[str, list[tuple[str, int, int, int, int]]] = {}
+    for row in rules_rows:
+        rel = row[0]
         parts = rel.split("/")
         # rel = "rules/<genre>/..." → parts[1] が genre
         genre_key = parts[1] if len(parts) >= 3 else ""
-        groups.setdefault(genre_key, []).append((rel, count, tcount, size))
+        groups.setdefault(genre_key, []).append(row)
 
     # genre meta を読んで order でソート
     ordered: list[tuple[int, str, dict | None, list]] = []
@@ -527,15 +590,15 @@ def gen_rules(rules_rows: list[tuple[str, int, int, int]]) -> str:
     ordered.sort(key=lambda t: (t[0], t[1]))
 
     overall_n = sum(r[1] for r in rules_rows)
-    overall_t = sum(r[2] for r in rules_rows)
-    overall_s = sum(r[3] for r in rules_rows)
+    overall_p = sum(r[2] for r in rules_rows)
+    overall_s = sum(r[4] for r in rules_rows)
     lines = [
-        f"**合計**: {overall_n:,} 件 / テスト {fmt_test(overall_t)} / {fmt_size(overall_s)} (genre {len(ordered)} 区分)",
+        f"**合計**: {overall_n:,} エントリ / {overall_p:,} ルール / {fmt_size(overall_s)} (genre {len(ordered)} 区分)",
         "",
     ]
 
     for _, key, meta, files in ordered:
-        files = sorted(files, key=lambda r: -r[1])
+        files = sorted(files, key=lambda r: -r[2])
         if meta and meta.get("name"):
             heading = meta["name"]
             desc = meta.get("description", "")
@@ -555,22 +618,145 @@ def gen_rules(rules_rows: list[tuple[str, int, int, int]]) -> str:
         else:
             lines.append(f"`rules/` 直下 — {len(files)} ファイル")
         lines.append("")
-        lines.append("| ファイル | エントリ数 | テスト | サイズ | 用途 |")
+        lines.append("| ファイル | エントリ数 | ルール数 | サイズ | 用途 |")
         lines.append("|---|---:|---:|---:|---|")
-        for rel, count, tcount, size in files:
+        for rel, count, patterns, _tcount, size in files:
             d = lookup_description(rel)
             lines.append(
-                f"| {link_rel(rel)} | {count:,} | {fmt_test(tcount)} | {fmt_size(size)} | {d} |"
+                f"| {link_rel(rel)} | {count:,} | {patterns:,} | {fmt_size(size)} | {d} |"
             )
         if len(files) > 1:
             n = sum(r[1] for r in files)
-            t = sum(r[2] for r in files)
-            s = sum(r[3] for r in files)
+            p = sum(r[2] for r in files)
+            s = sum(r[4] for r in files)
             lines.append(
-                f"| **小計** ({len(files)} ファイル) | **{n:,}** | **{fmt_test(t)}** | **{fmt_size(s)}** | |"
+                f"| **小計** ({len(files)} ファイル) | **{n:,}** | **{p:,}** | **{fmt_size(s)}** | |"
             )
         lines.append("")
 
+    return "\n".join(lines) + "\n"
+
+
+def gather_inline_tests() -> list[tuple[str, str, int]]:
+    """全 *.test.toml を再帰 walk して (rel, parent_rel, case_count) を返す。
+
+    parent_rel は隣接する本体 file (例: `objects.test.toml` → `objects.toml`) の
+    relpath。 親 file が存在しない孤立 test file は parent_rel = "" (防御的)。
+    test 系 file は release tar から exclude されるためサイズは集計しない。
+    """
+    rows: list[tuple[str, str, int]] = []
+    for base in (ROOT / "core", ROOT / "rules"):
+        if not base.is_dir():
+            continue
+        for p in sorted(base.rglob("*.test.toml")):
+            rel = p.relative_to(ROOT).as_posix()
+            try:
+                with open(p, "rb") as f:
+                    data = tomllib.load(f)
+            except (OSError, tomllib.TOMLDecodeError):
+                cases = []
+            else:
+                raw = data.get("test")
+                cases = raw if isinstance(raw, list) else []
+            parent = p.with_suffix("").with_suffix(".toml")
+            parent_rel = (
+                parent.relative_to(ROOT).as_posix() if parent.is_file() else ""
+            )
+            rows.append((rel, parent_rel, len(cases)))
+    return rows
+
+
+def gather_corpus() -> dict[str, list[tuple[str, int]]]:
+    """corpus toml の case 数を bucket 別 (should_read / should_not_read_yet / out_of_scope)
+    に集計して返す。 値は (rel, case_count) の list。
+
+    bucket 判定: file 名 (or 親 dir 名) に bucket 名を含むかで分類。
+    `tests/corpus/should_read.toml` も `tests/corpus/should_read/<topic>.toml` も同じ
+    "should_read" bucket。 release tar から exclude されるためサイズは集計しない。
+    """
+    buckets = {"should_read": [], "should_not_read_yet": [], "out_of_scope": []}
+    base = ROOT / "tests" / "corpus"
+    if not base.is_dir():
+        return buckets
+    for p in sorted(base.rglob("*.toml")):
+        rel = p.relative_to(ROOT).as_posix()
+        # bucket 判定: rel に bucket 名 (file or dir 名として) を含むか
+        bucket = None
+        for name in buckets:
+            if f"/{name}.toml" in f"/{rel}" or f"/{name}/" in f"/{rel}":
+                bucket = name
+                break
+        if bucket is None:
+            continue
+        try:
+            with open(p, "rb") as f:
+                data = tomllib.load(f)
+        except (OSError, tomllib.TOMLDecodeError):
+            cases = []
+        else:
+            raw = data.get("case")
+            cases = raw if isinstance(raw, list) else []
+        # expected があるものだけ実行対象 case として数える (should_not_read_yet /
+        # out_of_scope は expected_failure_reason のみで expected を持たない)
+        actionable = sum(1 for c in cases if isinstance(c, dict) and "expected" in c)
+        buckets[bucket].append((rel, actionable))
+    return buckets
+
+
+def gen_qa(
+    corpus_buckets: dict[str, list[tuple[str, int]]],
+    inline_tests: list[tuple[str, str, int]],
+) -> str:
+    """QA カバレッジ section (corpus + inline test 統合)。 サイズ列は出さない。
+
+    test 系 file は release tar から exclude / lib runtime memory にも乗らないため、
+    case 数のみが意味のある metric。
+    """
+    lines: list[str] = []
+
+    # ── corpus (回帰) ──
+    total_should_read = sum(c for _, c in corpus_buckets["should_read"])
+    total_pending = sum(c for _, c in corpus_buckets["should_not_read_yet"])
+    total_oos = sum(c for _, c in corpus_buckets["out_of_scope"])
+
+    lines.append("### Corpus (回帰)")
+    lines.append("")
+    lines.append(
+        f"**合計**: should_read {total_should_read} ケース / "
+        f"should_not_read_yet {total_pending} ケース / "
+        f"out_of_scope {total_oos} ケース"
+    )
+    lines.append("")
+    lines.append("| バケット | ファイル | ケース数 |")
+    lines.append("|---|---|---:|")
+    for bucket_name in ("should_read", "should_not_read_yet", "out_of_scope"):
+        files = corpus_buckets[bucket_name]
+        if not files:
+            lines.append(f"| `{bucket_name}` | _(無し)_ | 0 |")
+            continue
+        for i, (rel, count) in enumerate(files):
+            label = f"`{bucket_name}`" if i == 0 else ""
+            lines.append(f"| {label} | {link_rel(rel)} | {count} |")
+    lines.append("")
+
+    # ── inline test ──
+    lines.append("### Inline test (`*.test.toml`)")
+    lines.append("")
+    if not inline_tests:
+        lines.append("_inline test はまだ 1 件も書かれていない。_")
+        lines.append("詳細は [`docs/INLINE_TESTS.md`](docs/INLINE_TESTS.md) を参照。")
+        return "\n".join(lines) + "\n"
+
+    total_inline = sum(c for _, _, c in inline_tests)
+    lines.append(
+        f"**合計**: {len(inline_tests)} ファイル / {total_inline} ケース"
+    )
+    lines.append("")
+    lines.append("| テストファイル | 対象本体 | ケース数 |")
+    lines.append("|---|---|---:|")
+    for rel, parent, count in inline_tests:
+        parent_link = link_rel(parent) if parent else "(孤立)"
+        lines.append(f"| {link_rel(rel)} | {parent_link} | {count} |")
     return "\n".join(lines) + "\n"
 
 
@@ -587,14 +773,24 @@ def replace_marker(text: str, marker: str, content: str) -> str:
 def main() -> None:
     core_rows = gather_core()
     rules_rows = gather_rules()
+    inline_tests = gather_inline_tests()
+    corpus_buckets = gather_corpus()
     text = STATS_MD.read_text(encoding="utf-8")
     text = replace_marker(text, "SUMMARY", gen_summary(core_rows, rules_rows))
     text = replace_marker(text, "CORE", gen_core(core_rows))
     text = replace_marker(text, "RULES", gen_rules(rules_rows))
+    text = replace_marker(text, "QA", gen_qa(corpus_buckets, inline_tests))
     STATS_MD.write_text(text, encoding="utf-8")
     core_count = sum(r[1] for r in core_rows)
     rules_count = sum(r[1] for r in rules_rows)
-    print(f"regenerated STATS.md (core={core_count:,} / rules={rules_count:,})")
+    inline_cases = sum(c for _, _, c in inline_tests)
+    corpus_cases = sum(
+        c for files in corpus_buckets.values() for _, c in files
+    )
+    print(
+        f"regenerated STATS.md (core={core_count:,} / rules={rules_count:,} / "
+        f"corpus={corpus_cases} / inline_tests={inline_cases})"
+    )
 
 
 if __name__ == "__main__":

@@ -8,16 +8,19 @@
 
 ## バージョン体系
 
-`v0.1.0` 〜 `v0.1.3` までが semver、**v0.1.3 を最後に CalVer (`vYYYY.MM.DD`) に
-切り替え**。次回以降の release は CalVer 形式 (daily-release.yml が JST 03:00 に
-自動 tag)。CalVer 採用理由:
+**CalVer (`vYYYY.MM.DD`)** を採用。 daily-release.yml が JST 03:00 に自動 tag。
+CalVer 採用理由:
 - 辞書はデータ累積が本質で breaking 概念が薄い
 - daily auto-release との直感的対応 (今日の release = 今日の date)
 - tag 名から「いつの辞書か」が即わかる
 
 同日に複数 release が打たれた場合は `vYYYY.MM.DD.1` / `.2` … の suffix を付ける。
-過去の semver tag (`v0.1.0` 〜 `v0.1.3`) はそのまま historical として残し、
-`furigana dict pull --version v0.1.3` のような pin は引き続き動作する。
+
+> **migration note**: 初期は `v0.1.0` 〜 `v0.1.3` の semver で release していたが、
+> 2026-05-07 に CalVer へ移行する際に古い semver tag / Release は削除した。
+> 当時の差分情報は CHANGELOG body の `[0.1.0]` 〜 `[0.1.3]` section に残してある
+> (URL link は失効)。 古い semver pin (`furigana dict pull --version v0.1.3` 等) は
+> 404 になるので最新 CalVer に切替えること。
 
 ## [Unreleased]
 
@@ -253,8 +256,9 @@ ja-furigana 0.1.0-alpha.3 で resolve_reading が
 
 ## [一覧]
 
-[Unreleased]: https://github.com/RyuuNeko1107/ja-furigana-dict/compare/v0.1.3...HEAD
-[0.1.3]: https://github.com/RyuuNeko1107/ja-furigana-dict/releases/tag/v0.1.3
-[0.1.2]: https://github.com/RyuuNeko1107/ja-furigana-dict/releases/tag/v0.1.2
-[0.1.1]: https://github.com/RyuuNeko1107/ja-furigana-dict/releases/tag/v0.1.1
-[0.1.0]: https://github.com/RyuuNeko1107/ja-furigana-dict/releases/tag/v0.1.0
+[Unreleased]: https://github.com/RyuuNeko1107/ja-furigana-dict/compare/v2026.05.09...HEAD
+[2026.05.09]: https://github.com/RyuuNeko1107/ja-furigana-dict/releases/tag/v2026.05.09
+[2026.05.07]: https://github.com/RyuuNeko1107/ja-furigana-dict/releases/tag/v2026.05.07
+
+<!-- 旧 v0.1.0 〜 v0.1.3 の semver tag / Release は CalVer 移行時 (2026-05-07) に削除。
+     CHANGELOG body の [0.1.x] section は historical として残置 (URL link は失効)。 -->

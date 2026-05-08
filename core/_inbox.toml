@@ -1,0 +1,15 @@
+[meta]
+role = "jukugo"
+description = "分類前の一時 inbox (≥2 字 surface、 内容が貯まったら適切な genre dir に振り分ける)"
+
+# 使い方:
+# - 「読みは追加したいが、 どの genre dir (basic / nature / society / 等) に
+#   入れるべきか判断付かない」 ときに 1 行追加してここに置く。
+# - PR レビュー or maintainer の整理タイミングで適切な
+#   `core/jukugo/<genre>/<file>.toml` に移動する。
+# - 単漢字 (1 字 surface) は **入れない** (validate.py が cross-file 重複として fail させる、
+#   `core/unihan/<水準>.toml` 専用領域)。
+# - 外来語 (英字始まり surface) も **入れない** (`core/loanwords/` 専用領域、
+#   role が違うため lib が jukugo として誤って load する)。
+
+[entries]

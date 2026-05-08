@@ -9,12 +9,30 @@
 ## ファイル
 
 - [`should_read.toml`](./should_read.toml) — **読めるはず**: 辞書 / ルールが正しく
-  動けば必ず正しい読みが返る期待値。これが壊れたら何かを失った。
+  動けば必ず正しい読みが返る期待値。 これが壊れたら何かを失った。
 - [`should_not_read_yet.toml`](./should_not_read_yet.toml) — **今はまだ読めない**:
-  辞書追加 PR で改善できるもの。「ここに書かれた語が読めるようになった!」が
+  辞書追加 PR で改善できるもの。 「ここに書かれた語が読めるようになった!」 が
   contributors の達成感。
 - [`out_of_scope.toml`](./out_of_scope.toml) — **仕様上諦める**: 高度な文脈推論や
-  古文・方言など、機械学習なしのこのエンジンの範囲外。期待しない。
+  古文・方言など、 機械学習なしのこのエンジンの範囲外。 期待しない。
+
+### サイズが大きくなったら分割
+
+各 toml が大きくなって PR レビューしづらくなったら、 同名 dir に分割できる:
+
+```
+tests/corpus/
+├── should_read.toml              # 既存 (そのまま残せる)
+└── should_read/                  # 新設可、 配下を再帰 load
+    ├── numbers.toml              # 数値 / 助数詞 ケース
+    ├── people.toml               # 人名関連ケース
+    └── classics.toml             # 古典作品関連ケース
+```
+
+`tools/run_corpus.py` は `should_read.toml` 単独でも `should_read/` dir でも動作。
+両方共存する場合は **両方併合** する (gradual な分割移行を支援)。 file 名は何でも構わない。
+
+`should_not_read_yet.toml` / `out_of_scope.toml` も同じ pattern で分割可能。
 
 ## ja-furigana 側 `tools/check_samples.txt` との関係
 

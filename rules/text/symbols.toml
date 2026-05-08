@@ -2,6 +2,7 @@
 
 [meta]
 role = "symbols"
+description = "記号 1 文字読み (+ / − / % / ‰ / 〜 / ・ / ※ 等、 chunks/split() の symbols 階層で個別 hit)"
 
 [entries]
 "+" = "プラス"
