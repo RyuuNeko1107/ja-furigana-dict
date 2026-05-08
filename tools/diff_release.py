@@ -35,9 +35,6 @@ import sys
 import tomllib
 from pathlib import Path
 
-# 1 file の追加 / 削除 / 読み変更 リストの上限 (越えたら省略)
-TRUNCATE_LIMIT = 20
-
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
 
@@ -530,27 +527,19 @@ def md_escape(s: str) -> str:
 
 
 def fmt_two_col_entries(entries: list[str], full: dict[str, str]) -> list[str]:
-    """`| 表記 | 読み |` の table rows を返す (header 含む)。 上限 TRUNCATE_LIMIT。"""
+    """`| 表記 | 読み |` の table rows を返す (header 含む)。 全件出力 (truncate なし)。"""
     rows = ["| 表記 | 読み |", "|---|---|"]
-    for k in entries[:TRUNCATE_LIMIT]:
+    for k in entries:
         rows.append(f"| `{md_escape(k)}` | `{md_escape(full.get(k, ''))}` |")
-    if len(entries) > TRUNCATE_LIMIT:
-        rows.append(
-            f"| _(他 {len(entries) - TRUNCATE_LIMIT} 件、 commit log 参照)_ | |"
-        )
     return rows
 
 
 def fmt_changed_entries(changed: list[tuple[str, str, str]]) -> list[str]:
-    """`| 表記 | 旧 | 新 |` の table rows を返す (header 含む)。"""
+    """`| 表記 | 旧 | 新 |` の table rows を返す (header 含む)。 全件出力 (truncate なし)。"""
     rows = ["| 表記 | 旧 | 新 |", "|---|---|---|"]
-    for k, pv, nv in changed[:TRUNCATE_LIMIT]:
+    for k, pv, nv in changed:
         rows.append(
             f"| `{md_escape(k)}` | `{md_escape(pv)}` | `{md_escape(nv)}` |"
-        )
-    if len(changed) > TRUNCATE_LIMIT:
-        rows.append(
-            f"| _(他 {len(changed) - TRUNCATE_LIMIT} 件、 commit log 参照)_ | | |"
         )
     return rows
 
@@ -683,7 +672,7 @@ def main() -> None:
 
     # ── 詳細 (file 別、 各 1 file 内も table で) ──
     if file_diffs:
-        out.append(f"## 詳細 (file 別、 各セクション上位 {TRUNCATE_LIMIT} 件まで)")
+        out.append("## 詳細 (file 別、 追加 / 削除 / 読み変更 を全件)")
         out.append("")
         for path, added, removed, changed, prev_e, now_e in file_diffs:
             out.append(f"### `{path}`")
