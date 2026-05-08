@@ -1,0 +1,4 @@
+[genre]
+name = "テキスト系"
+description = "単位 / 記号 / ラテン文字 / 後処理 regex — 文字単位の読み解決と最終整形"
+order = 2

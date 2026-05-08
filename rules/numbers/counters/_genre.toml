@@ -1,0 +1,4 @@
+[genre]
+name = "助数詞"
+description = "本 / 匹 / 個 / 年 / 月 / 日 + 連濁・促音化・kana 末尾置換ルール"
+order = 1

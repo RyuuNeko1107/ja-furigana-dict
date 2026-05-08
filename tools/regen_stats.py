@@ -41,15 +41,14 @@ STATS_MD = ROOT / "STATS.md"
 DESCRIPTIONS_FALLBACK: dict[str, str] = {
     "core/single_overrides.toml": "単漢字 default reading override (issue #15 限定解、 Lindera reading より優先)",
     "core/compat.toml": "異体字 → 標準字 (髙→高 等)",
-    "rules/days.toml": "1〜31 日の特殊読み (1→ツイタチ 等)",
-    "rules/scales.toml": "万 / 億 / 兆 / 京 等の大数スケール",
-    "rules/units.toml": "SI 単位 (km / kg / mL …、case-insensitive)",
-    "rules/symbols.toml": "記号読み (+ / − / % / ‰ …)",
-    "rules/latin.toml": "ラテン文字読み (A→エー …)",
-    "rules/numeric_phrases.toml": "数字を含む例外語句 (二十歳→ハタチ 等)",
-    "rules/postprocess.toml": "後処理 regex 置換 (Step 7、mode 別)",
-    "rules/counters/*.toml": "助数詞ルール (本 / 匹 / 個 / 年 / 月 / 日 …、連濁 / 促音化 / kana 末尾置換)",
-    "rules/context/*.toml": "文脈依存読み (一日→ツイタチ/イチニチ 等)",
+    "rules/numbers/days.toml": "1〜31 日の特殊読み (1→ツイタチ 等)",
+    "rules/numbers/scales.toml": "万 / 億 / 兆 / 京 等の大数スケール",
+    "rules/numbers/numeric_phrases.toml": "数字を含む例外語句 (二十歳→ハタチ 等)",
+    "rules/text/units.toml": "SI 単位 (km / kg / mL …、case-insensitive)",
+    "rules/text/symbols.toml": "記号読み (+ / − / % / ‰ …)",
+    "rules/text/latin.toml": "ラテン文字読み (A→エー …)",
+    "rules/text/postprocess.toml": "後処理 regex 置換 (Step 7、mode 別)",
+    # counters / context は file 内の [meta] description で個別表示される
 }
 
 
@@ -71,8 +70,8 @@ def read_description(path: Path) -> str | None:
 def lookup_description(rel: str) -> str:
     """relpath に対する用途説明を解決する。
 
-    優先順位: ファイル内 [meta].description → DESCRIPTIONS_FALLBACK → placeholder。
-    rules/counters/*.toml のような集約パターンは fallback dict のみ参照。
+    優先順位: ファイル内 [meta].description → DESCRIPTIONS_FALLBACK
+    → genre dir substring fallback → placeholder。
     """
     if not rel.endswith("*.toml"):
         path = ROOT / rel
@@ -82,6 +81,12 @@ def lookup_description(rel: str) -> str:
                 return desc
     if rel in DESCRIPTIONS_FALLBACK:
         return DESCRIPTIONS_FALLBACK[rel]
+    # genre dir substring fallback (counters / context は file 内 description
+    # を持たない設計、 サブカテゴリは file 名で識別)
+    if "/counters/" in rel:
+        return "助数詞ルール (本 / 匹 / 個 / 年 / 月 / 日 …、 連濁 / 促音化 / kana 末尾置換)"
+    if "/context/" in rel:
+        return "文脈依存読み (一日→ツイタチ/イチニチ 等の同形異音語)"
     return "(用途未設定 — ファイル冒頭に `[meta] description = \"...\"` を追加)"
 
 
@@ -222,31 +227,22 @@ def gather_core() -> list[tuple[str, int, int]]:
     return rows
 
 
-def gather_rules() -> list[tuple]:
-    """rules 配下の (rel, count, test_count, size) または (label, count, test, size, file_count)。"""
-    rows: list[tuple] = []
-    flat_order = (
-        "days.toml", "scales.toml", "units.toml", "symbols.toml",
-        "latin.toml", "numeric_phrases.toml", "postprocess.toml",
-    )
-    for fname in flat_order:
-        p = ROOT / "rules" / fname
-        if p.exists():
-            rows.append(
-                (f"rules/{fname}", count_entries(p), count_inline_tests(p), effective_bytes(p))
-            )
-    for subdir, label in (("counters", "rules/counters/*.toml"),
-                          ("context", "rules/context/*.toml")):
-        files = sorted(
-            p for p in (ROOT / "rules" / subdir).glob("*.toml")
-            if not p.name.endswith(".test.toml") and p.name != "_genre.toml"
-        )
-        if not files:
+def gather_rules() -> list[tuple[str, int, int, int]]:
+    """rules 配下の全 *.toml を再帰 walk で集めて (rel, count, test, size) を返す。
+
+    新階層化 (rules/<genre>/<file>.toml or rules/<genre>/<sub>/<file>.toml) に
+    対応。 _genre.toml と *.test.toml は集計対象外。 表示は gen_rules で
+    genre dir 別 sub-section 化。
+    """
+    rows: list[tuple[str, int, int, int]] = []
+    base = ROOT / "rules"
+    if not base.is_dir():
+        return rows
+    for p in sorted(base.rglob("*.toml")):
+        if p.name == "_genre.toml" or p.name.endswith(".test.toml"):
             continue
-        total_count = sum(count_entries(p) for p in files)
-        total_test = sum(count_inline_tests(p) for p in files)
-        total_size = sum(effective_bytes(p) for p in files)
-        rows.append((label, total_count, total_test, total_size, len(files)))
+        rel = p.relative_to(ROOT).as_posix()
+        rows.append((rel, count_entries(p), count_inline_tests(p), effective_bytes(p)))
     return rows
 
 
@@ -498,28 +494,83 @@ def gen_core(core_rows: list) -> str:
     return "\n".join(sections)
 
 
-def gen_rules(rules_rows: list) -> str:
-    lines = [
-        "| ファイル | エントリ数 | テスト | サイズ | 内容 |",
-        "|---|---:|---:|---:|---|",
-    ]
-    for row in rules_rows:
-        rel, count, tcount, size = row[0], row[1], row[2], row[3]
-        desc = lookup_description(rel)
-        # row[4] が file_count (集約 subdir のみ)
-        if len(row) > 4:
-            display = f"{link_rel(rel)} ({row[4]} ファイル)"
+def gen_rules(rules_rows: list[tuple[str, int, int, int]]) -> str:
+    """rules 内訳を genre dir (`rules/<genre>/...`) 単位で sub-section 化。
+
+    各 file の rel = `rules/<genre>/<sub?>/<file>.toml`。 第 2 segment (genre)
+    で group 化、 各 genre dir 直下の `_genre.toml` から heading + description を
+    引く (jukugo / works と同じ仕組み)。 genre dir 内に subdir (例 counters)
+    がある場合は file 一覧にそのまま並べる (path 先頭の `rules/<genre>/` は
+    link_rel が省略せずに表示)。
+    """
+    if not rules_rows:
+        return "(空)\n"
+
+    # group by 第 2 segment (= genre dir 名)
+    groups: dict[str, list[tuple[str, int, int, int]]] = {}
+    for rel, count, tcount, size in rules_rows:
+        parts = rel.split("/")
+        # rel = "rules/<genre>/..." → parts[1] が genre
+        genre_key = parts[1] if len(parts) >= 3 else ""
+        groups.setdefault(genre_key, []).append((rel, count, tcount, size))
+
+    # genre meta を読んで order でソート
+    ordered: list[tuple[int, str, dict | None, list]] = []
+    for key, files in groups.items():
+        if key:
+            meta = load_genre_meta(ROOT / "rules" / key)
+            order = meta.get("order", 999) if meta else 999
         else:
-            display = link_rel(rel)
-        lines.append(
-            f"| {display} | {count:,} | {fmt_test(tcount)} | {fmt_size(size)} | {desc} |"
-        )
-    total_count = sum(r[1] for r in rules_rows)
-    total_test = sum(r[2] for r in rules_rows)
-    total_size = sum(r[3] for r in rules_rows)
-    lines.append(
-        f"| **小計** | **{total_count:,}** | **{fmt_test(total_test)}** | **{fmt_size(total_size)}** | |"
-    )
+            meta = None
+            order = 9999
+        ordered.append((order, key, meta, files))
+    ordered.sort(key=lambda t: (t[0], t[1]))
+
+    overall_n = sum(r[1] for r in rules_rows)
+    overall_t = sum(r[2] for r in rules_rows)
+    overall_s = sum(r[3] for r in rules_rows)
+    lines = [
+        f"**合計**: {overall_n:,} 件 / テスト {fmt_test(overall_t)} / {fmt_size(overall_s)} (genre {len(ordered)} 区分)",
+        "",
+    ]
+
+    for _, key, meta, files in ordered:
+        files = sorted(files, key=lambda r: -r[1])
+        if meta and meta.get("name"):
+            heading = meta["name"]
+            desc = meta.get("description", "")
+        elif key:
+            heading = key
+            desc = ""
+        else:
+            heading = "(直下)"
+            desc = ""
+        lines.append(f"#### {heading}")
+        lines.append("")
+        if desc:
+            lines.append(desc)
+            lines.append("")
+        if key:
+            lines.append(f"`rules/{key}/` — {len(files)} ファイル")
+        else:
+            lines.append(f"`rules/` 直下 — {len(files)} ファイル")
+        lines.append("")
+        lines.append("| ファイル | エントリ数 | テスト | サイズ | 用途 |")
+        lines.append("|---|---:|---:|---:|---|")
+        for rel, count, tcount, size in files:
+            d = lookup_description(rel)
+            lines.append(
+                f"| {link_rel(rel)} | {count:,} | {fmt_test(tcount)} | {fmt_size(size)} | {d} |"
+            )
+        if len(files) > 1:
+            n = sum(r[1] for r in files)
+            t = sum(r[2] for r in files)
+            s = sum(r[3] for r in files)
+            lines.append(
+                f"| **小計** ({len(files)} ファイル) | **{n:,}** | **{fmt_test(t)}** | **{fmt_size(s)}** | |"
+            )
+        lines.append("")
+
     return "\n".join(lines) + "\n"
 
 

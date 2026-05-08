@@ -1,0 +1,4 @@
+[genre]
+name = "数値系"
+description = "日付 / 大数 / 助数詞 / 数値慣用句 — 数値表現の読み解決"
+order = 1

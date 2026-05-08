@@ -1,0 +1,4 @@
+[genre]
+name = "文脈ルール"
+description = "同形異音語 / 数字+助数詞文脈分岐 / 単純 default 固定 — 前後 token を見て読み分け"
+order = 3
