@@ -39,3 +39,16 @@ expected = "さんびき"
 [[test]]
 input = "1冊"
 expected = "いっさつ"
+
+# ─── 1 例文 → 複数 target (新 schema 例) ───────────────────
+[[test]]
+input = "3本の傘と5匹の猫"
+expected = "さんぼんのかさとごひきのねこ"
+
+[[test.targets]]
+surface = "3本"
+reading = "さんぼん"
+
+[[test.targets]]
+surface = "5匹"
+reading = "ごひき"

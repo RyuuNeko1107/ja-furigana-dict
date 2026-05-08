@@ -61,7 +61,7 @@ tests/corpus/
 input = "灰桜の散る道"
 mode = "ruby"   # ruby / hiragana / tts / romaji のいずれか
 expected = "{灰桜|はいざくら}の{散る|ちる}{道|みち}"
-note = "桜の品種名、辞書 hit"
+note = "桜の品種名、 辞書 hit"
 
 [[case]]
 input = "灰桜の散る道"
@@ -70,7 +70,61 @@ expected = "はいざくらのちるみち"
 ```
 
 `should_not_read_yet.toml` / `out_of_scope.toml` では `expected` の代わりに
-`expected_failure_reason` を書きます (どう間違うか、なぜ正解にならないか)。
+`expected_failure_reason` を書きます (どう間違うか、 なぜ正解にならないか)。
+
+### 推奨: 1 例文 → 複数 target ([[case.targets]])
+
+新しく case を追加する時は、 1 つの例文の中で **複数の対象語句を同時に検証** する形を
+推奨。 expected の full match assertion に加えて、 `[[case.targets]]` で個別の
+(対象語句, 想定読み) ペアを列挙すると、 「どの surface の何を test しているか」 が明示
+されて regression 時の原因特定が早い。
+
+```toml
+[[case]]
+input = "灰桜の散る道"
+mode = "tts"
+expected = "ハイザクラのちるみち"   # full output assertion (従来通り)
+note = "桜の品種名 + 自然語、 1 例文で 3 target を同時 lock"
+
+[[case.targets]]
+surface = "灰桜"
+reading = "ハイザクラ"
+
+[[case.targets]]
+surface = "散る"
+reading = "ちる"
+
+[[case.targets]]
+surface = "道"
+reading = "みち"
+```
+
+runner (`tools/run_corpus.py`) は:
+
+1. **full match**: `expected` と engine の output を完全比較 (従来 assertion)
+2. **target match**: 各 `[[case.targets]]` の `reading` が output 中に含まれるか
+   substring check (1 例文内の各 surface が期待通り読まれているかの個別 lock)
+
+両方 pass で初めて case 通過。 失敗時は full / target どちらが原因かを別表示する。
+
+**従来形式 (`targets` 無し) も backward compat で動作する** ので、 既存 case の
+migration は急がなくて OK。 新規追加・ 修正時に新形式に揃えていく方針。
+
+### ruby mode を併用すると視覚的にも target が見える
+
+`mode = "ruby"` の expected は `{kanji|reading}` 構文で各 surface に対する reading が
+inline に並ぶため、 `[[case.targets]]` を併記しなくても reader が目視で対応関係を確認
+できる:
+
+```toml
+[[case]]
+input = "灰桜の散る道"
+mode = "ruby"
+expected = "{灰桜|はいざくら}の{散る|ちる}{道|みち}"   # `{}` block 自体が target marker
+```
+
+target 検証の厳密さを上げたい時 (例: 助数詞 / 文脈ルールが正しく hit したか) は
+`tts` / `hiragana` mode + `[[case.targets]]` を併用すると良い。
 
 ### `hiragana` mode の expected 表記ルール
 

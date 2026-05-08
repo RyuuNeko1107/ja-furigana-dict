@@ -140,25 +140,52 @@ def run_corpus(
             mode = case.get("mode", "tts")
             expected = case.get("expected")
             note = case.get("note", "")
+            # 新 schema (alpha.10+): [[case.targets]] で 1 例文内の N 個の対象語句を
+            # (surface, reading) ペアで列挙。 expected の full match assertion とは別に
+            # 各 target について「surface に対する reading が output 中に含まれるか」
+            # の追加 assertion を行う。 backward compat: targets 無ければ skip。
+            targets = case.get("targets") or []
 
-            if expected is None:
+            if expected is None and not targets:
                 # should_not_read_yet / out_of_scope では expected_failure_reason を持つ
                 # ことになっているので、 そちらは ここでは検証対象外として skip。
                 continue
 
             actual = run_lookup(binary, text, mode, data_dir)
-            if actual == expected:
+
+            # ── (1) full match (expected) ──
+            full_match_ok = expected is None or actual == expected
+
+            # ── (2) per-target match (substring) ──
+            target_failures: list[str] = []
+            for t in targets:
+                if not isinstance(t, dict):
+                    continue
+                surf = t.get("surface")
+                rdg = t.get("reading")
+                if not (isinstance(surf, str) and isinstance(rdg, str)):
+                    continue
+                if rdg not in actual:
+                    target_failures.append(
+                        f"             - 対象 `{surf}` の reading `{rdg}` が output に含まれない"
+                    )
+
+            if full_match_ok and not target_failures:
                 passed += 1
                 if verbose:
-                    print(f"  [OK]   {case_index:>3}. {text!r} ({mode}) → {actual!r}")
+                    tgt_note = f" + {len(targets)} target" if targets else ""
+                    print(f"  [OK]   {case_index:>3}. {text!r} ({mode}){tgt_note} → {actual!r}")
             else:
-                msg = (
-                    f"  [FAIL] {case_index:>3}. {text!r} ({mode}) [{f.name}]\n"
-                    f"           expected: {expected!r}\n"
-                    f"           actual:   {actual!r}"
-                )
+                msg_parts = [f"  [FAIL] {case_index:>3}. {text!r} ({mode}) [{f.name}]"]
+                if not full_match_ok:
+                    msg_parts.append(f"           expected: {expected!r}")
+                    msg_parts.append(f"           actual:   {actual!r}")
+                if target_failures:
+                    msg_parts.append("           target 検証失敗:")
+                    msg_parts.extend(target_failures)
                 if note:
-                    msg += f"\n           note:     {note}"
+                    msg_parts.append(f"           note:     {note}")
+                msg = "\n".join(msg_parts)
                 failures.append(msg)
                 print(msg)
 

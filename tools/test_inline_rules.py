@@ -44,26 +44,28 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 
 
-def collect_inline_tests() -> list[tuple[Path, str, str]]:
+def collect_inline_tests() -> list[tuple[Path, str, str, list[tuple[str, str]]]]:
     """`*.test.toml` ファイルから `[[test]]` を集める。
 
-    戻り値: (file_path, input, expected) のリスト。
+    戻り値: (file_path, input, expected, targets) のリスト。
+    targets は (surface, reading) のペア list (新 schema [[test.targets]]、
+    旧 case には無いので空 list)。
 
     test は **隣接した `<name>.test.toml`** に書く方針 (lib runtime memory にも
     release tar にも乗らないため、 release.yml が `--exclude='*.test.toml'`
     で除外、 lib loader も name match で skip)。 ペアで rule + test が並ぶので
     contributor 体験は「1 dir 内で隣接」 を維持する。
     """
-    tests: list[tuple[Path, str, str]] = []
-    targets: list[Path] = []
+    tests: list[tuple[Path, str, str, list[tuple[str, str]]]] = []
+    test_files: list[Path] = []
     for sub in ("core", "rules"):
         base = ROOT / sub
         if not base.is_dir():
             continue
         for p in sorted(base.rglob("*.test.toml")):
-            targets.append(p)
+            test_files.append(p)
 
-    for path in targets:
+    for path in test_files:
         try:
             with open(path, "rb") as f:
                 data = tomllib.load(f)
@@ -77,8 +79,18 @@ def collect_inline_tests() -> list[tuple[Path, str, str]]:
                 continue
             inp = case.get("input")
             exp = case.get("expected")
-            if isinstance(inp, str) and isinstance(exp, str):
-                tests.append((path, inp, exp))
+            if not (isinstance(inp, str) and isinstance(exp, str)):
+                continue
+            # alpha.10+ 新 schema: [[test.targets]] で対象語句を (surface, reading) で列挙
+            target_pairs: list[tuple[str, str]] = []
+            for t in case.get("targets") or []:
+                if not isinstance(t, dict):
+                    continue
+                s = t.get("surface")
+                r = t.get("reading")
+                if isinstance(s, str) and isinstance(r, str):
+                    target_pairs.append((s, r))
+            tests.append((path, inp, exp, target_pairs))
     return tests
 
 
@@ -118,14 +130,28 @@ def main() -> None:
     print(f"[info] inline test {len(tests)} 件を実行")
     fails = 0
     by_file: dict[Path, list[str]] = {}
-    for path, inp, exp in tests:
+    for path, inp, exp, targets in tests:
         actual = run_lookup(args.binary, inp, args.mode, args.data_dir)
-        if actual == exp:
+
+        full_match_ok = actual == exp
+        target_failures = [
+            f"      - 対象 `{s}` の reading `{r}` が output に含まれない"
+            for s, r in targets
+            if r not in actual
+        ]
+
+        if full_match_ok and not target_failures:
             continue
+
         fails += 1
-        by_file.setdefault(path, []).append(
-            f"  input={inp!r}\n    expected: {exp}\n    actual:   {actual}"
-        )
+        msg_lines = [f"  input={inp!r}"]
+        if not full_match_ok:
+            msg_lines.append(f"    expected: {exp}")
+            msg_lines.append(f"    actual:   {actual}")
+        if target_failures:
+            msg_lines.append("    target 検証失敗:")
+            msg_lines.extend(target_failures)
+        by_file.setdefault(path, []).append("\n".join(msg_lines))
 
     if fails == 0:
         print(f"[OK] 全 {len(tests)} 件 pass")

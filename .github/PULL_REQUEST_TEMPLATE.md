@@ -21,7 +21,7 @@
 - [ ] key と value の両方を `"..."` で囲んだ
 - [ ] ファイル内で同じ key を二重登録していない
 - [ ] (大量追加の場合) 同じ分野でまとめた、 ~50 件程度に分割した
-- [ ] (新エントリが期待通り読まれるか不安なら) [`tests/corpus/should_read.toml`](../tests/corpus/should_read.toml) または同名 dir に **input/expected を 1 件以上追加** (回帰防止 / 新カバレッジ)
+- [ ] (新エントリが期待通り読まれるか不安なら) [`tests/corpus/should_read.toml`](../tests/corpus/should_read.toml) または同名 dir に **input/expected を 1 件以上追加** (回帰防止 / 新カバレッジ)。 推奨は **1 例文に [[case.targets]] で複数 (surface, reading) を列挙** する形式 (詳細: [`tests/corpus/README.md`](../tests/corpus/README.md))
 - [ ] (任意) ローカルで `python3 tools/validate.py` を回して `[OK]` を確認した
 
 ## 補足

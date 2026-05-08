@@ -36,6 +36,33 @@ input = "1匹"
 expected = "いっぴき"
 ```
 
+### 推奨: 1 例文 → 複数 target ([[test.targets]])
+
+corpus と同じく、 **1 例文の中で複数の対象語句を同時に検証** する形式が推奨:
+
+```toml
+[[test]]
+input = "3本の傘と5匹の猫"
+expected = "さんぼんのかさとごひきのねこ"
+note = "助数詞 2 種 (本 / 匹) を 1 例文で同時 lock"
+
+[[test.targets]]
+surface = "3本"
+reading = "さんぼん"
+
+[[test.targets]]
+surface = "5匹"
+reading = "ごひき"
+```
+
+runner (`tools/test_inline_rules.py`) は full match (`expected` と完全一致) と
+target match (各 `surface` の `reading` が output 中に含まれるか substring check) の
+両方を pass で初めて test 通過。 失敗時は full / target どちらが原因かを別表示する。
+
+**従来形式 (`targets` 無し) も backward compat で動作する** ので、 既存 test の
+migration は急がなくて OK。 新規追加時に新形式で書くと、 「この file が何を lock
+しているか」 が宣言的に分かりやすくなる。
+
 ## ルール (重要)
 
 - **`[[test]]` block 形式** (1 case 3 行、 縦書きで読みやすい)。 inline-table
