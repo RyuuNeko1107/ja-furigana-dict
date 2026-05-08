@@ -284,6 +284,49 @@ def gen_snapshot_section(now_label: str, now_files: list[str], now_tag: str) -> 
     return out
 
 
+def gather_duplicates_at_tag(
+    tag: str, now_files: list[str]
+) -> tuple[list[tuple[str, str, list[str]]], list[tuple[str, list[tuple[str, str]]]]]:
+    """tag 時点で同 surface が複数 file にまたがる cross-file 重複を検出する。
+
+    対象: jukugo / works / loanwords / inbox 系 (entries dict を持つもの)。
+    `core/unihan/`、 `core/compat.toml`、 `core/single_overrides.toml`、 rules 系は
+    意図的な構造 (水準別分割 / 異体字 map / 単漢字 override / rule) なので除外。
+
+    Returns:
+      (same_reading, divergent_reading) のタプル:
+      - same_reading: list of (surface, reading, [file, ...]) — 同 surface + 同 reading
+      - divergent_reading: list of (surface, [(file, reading), ...]) — 同 surface 異 reading
+    """
+    # surface → [(file, reading), ...]
+    index: dict[str, list[tuple[str, str]]] = {}
+    for p in now_files:
+        if (
+            p.startswith("core/unihan/")
+            or p == "core/compat.toml"
+            or p == "core/single_overrides.toml"
+            or p.startswith("rules/")
+        ):
+            continue
+        c = git_show(tag, p) or ""
+        for s, r in parse_entries(c).items():
+            index.setdefault(s, []).append((p, r))
+
+    same: list[tuple[str, str, list[str]]] = []
+    divergent: list[tuple[str, list[tuple[str, str]]]] = []
+    for surface, entries in index.items():
+        if len(entries) < 2:
+            continue
+        readings = {r for _, r in entries}
+        if len(readings) == 1:
+            same.append((surface, next(iter(readings)), [f for f, _ in entries]))
+        else:
+            divergent.append((surface, entries))
+    same.sort(key=lambda t: t[0])
+    divergent.sort(key=lambda t: t[0])
+    return same, divergent
+
+
 def gather_qa_at_tag(tag: str) -> dict:
     """tag 時点の corpus / inline test 件数を集計して返す。
 
@@ -854,9 +897,63 @@ def main() -> None:
     # ── リリース時点スナップショット (STATS.md と同じカテゴリ階層で) ──
     out.extend(gen_snapshot_section(now_label, sorted(now_files), now_tag))
 
+    # ── cross-file 重複検出 (same reading / divergent reading) ──
+    same_dups, divergent_dups = gather_duplicates_at_tag(now_tag, sorted(now_files))
+    out.append("## cross-file 重複検出")
+    out.append("")
+    out.append(
+        "tag 時点で **同じ surface が複数 file にまたがって登録** されているもの。 "
+        "対象: jukugo / works / loanwords / inbox (`core/unihan/` / `core/compat.toml` / "
+        "`core/single_overrides.toml` / `rules/` は意図的構造のため除外)。 "
+        "STATS_DUPS.md と同じ source の release tag 時点 snapshot。"
+    )
+    out.append("")
+    out.append(f"### 同じ読みの重複 ({len(same_dups):,} 件)")
+    out.append("")
+    if same_dups:
+        out.append(
+            "_意味的影響なし (genre 振り分けの判断材料、 重複してても lib 動作は変わらない)。_"
+        )
+        out.append("")
+        out.append("| surface | reading | 重複 file |")
+        out.append("|---|---|---|")
+        for surface, reading, files in same_dups:
+            files_str = ", ".join(f"`{f}`" for f in files)
+            out.append(f"| `{surface}` | `{reading}` | {files_str} |")
+    else:
+        out.append("_(無し)_")
+    out.append("")
+    out.append(f"### 読みが異なる重複 — divergent ({len(divergent_dups):,} 件)")
+    out.append("")
+    if divergent_dups:
+        out.append(
+            "**⚠️ validate.py が CI fail させる対象** (どちらが正しいか曖昧、 "
+            "merge 後の lookup で後勝ちになって辞書間で読みが揺れる)。 release 時点で "
+            "残っている場合は要修正。"
+        )
+        out.append("")
+        out.append("| surface | reading 1 | file 1 | reading 2 | file 2 | (3 件以上は省略) |")
+        out.append("|---|---|---|---|---|---|")
+        for surface, entries in divergent_dups:
+            cells = []
+            for f, r in entries[:2]:
+                cells.append(f"`{r}`")
+                cells.append(f"`{f}`")
+            while len(cells) < 4:
+                cells.append("")
+            extra = (
+                f"+{len(entries) - 2} 件" if len(entries) > 2 else ""
+            )
+            out.append(
+                f"| `{surface}` | {cells[0]} | {cells[1]} | {cells[2]} | {cells[3]} | {extra} |"
+            )
+    else:
+        out.append("_(無し — クリーン)_")
+    out.append("")
+
     # ── QA カバレッジ (release tag 時点の corpus + inline test 件数) ──
     qa = gather_qa_at_tag(now_tag)
-    out.append("### QA カバレッジ")
+    out.append("## QA カバレッジ")
     out.append("")
     out.append(
         "release tag 時点での test カバレッジ snapshot。 release tar から "
