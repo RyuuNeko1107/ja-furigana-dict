@@ -1,0 +1,349 @@
+# 東方Project キャラクター名 / 場所 / 用語の回帰テスト
+#
+# core/works/game/touhou.toml の登録 entries が想定通り読まれるかの lock。
+# 特に **非自明な読み** (公式読みが一般読みと違うケース) を中心に網羅:
+#
+# - 紅 = ホン (一般 ベニ / クレナイ ではなく Chinese-style)
+# - 八意 = ヤゴコロ (一般読みなし、 古典固有)
+# - 龍 = メグム (飯綱丸龍 character-specific)
+# - 橙 = チェン (八雲橙 character-specific)
+# - 「○○の××」 のような の particle 入り読み (藤原妹紅 / 物部布都 / 蘇我屠自古 / 等)
+# - 雷鼓 = ライコ (堀川雷鼓)、 駒草 = コマクサ (駒草山如) 等の character-specific
+#
+# 詳細は core/works/game/touhou.toml の出典 list 参照。
+#
+# 形式: 推奨は 1 例文 → 複数 target を [[case.targets]] で列挙する形 (1 例文で
+# 多 lock、 失敗時に「どの target が外れたか」 個別に表示される)。
+
+# ─── 主人公 (基本) ──────────────────────────────────────────────────────
+
+[[case]]
+input = "博麗霊夢"
+mode = "hiragana"
+expected = "はくれいれいむ"
+note = "TH 主人公 1。 博麗 = ハクレイ、 霊夢 = レイム"
+
+[[case.targets]]
+surface = "博麗"
+reading = "はくれい"
+
+[[case.targets]]
+surface = "霊夢"
+reading = "れいむ"
+
+
+[[case]]
+input = "霧雨魔理沙"
+mode = "hiragana"
+expected = "きりさめまりさ"
+note = "TH 主人公 2。 霧雨 = キリサメ"
+
+[[case.targets]]
+surface = "魔理沙"
+reading = "まりさ"
+
+
+# ─── 紅魔館組 (TH06、 紅 = ホン character-specific) ─────────────────────
+
+[[case]]
+input = "紅美鈴"
+mode = "hiragana"
+expected = "ほんめいりん"
+note = "Hong Meiling、 紅 = ホン (一般 ベニ / クレナイ ではない、 Chinese-style 読み)"
+
+[[case.targets]]
+surface = "紅美鈴"
+reading = "ほんめいりん"
+
+[[case.targets]]
+surface = "美鈴"
+reading = "めいりん"
+
+
+[[case]]
+input = "十六夜咲夜"
+mode = "hiragana"
+expected = "いざよいさくや"
+note = "十六夜 = イザヨイ (旧暦 16 日の夜)"
+
+[[case.targets]]
+surface = "咲夜"
+reading = "さくや"
+
+
+# ─── 妖々夢組 (TH07) ────────────────────────────────────────────────────
+
+[[case]]
+input = "西行寺幽々子"
+mode = "hiragana"
+expected = "さいぎょうじゆゆこ"
+note = "西行寺 = サイギョウジ (4 字 family)、 幽々子 = ユユコ"
+
+[[case.targets]]
+surface = "西行寺"
+reading = "さいぎょうじ"
+
+[[case.targets]]
+surface = "幽々子"
+reading = "ゆゆこ"
+
+
+[[case]]
+input = "魂魄妖夢"
+mode = "hiragana"
+expected = "こんぱくようむ"
+note = "魂魄 = コンパク、 妖夢 = ヨウム"
+
+
+[[case]]
+input = "八雲紫"
+mode = "hiragana"
+expected = "やくもゆかり"
+note = "八雲 = ヤクモ、 紫 = ユカリ (一般 ムラサキ ではない、 character-specific)"
+
+[[case.targets]]
+surface = "八雲"
+reading = "やくも"
+
+
+[[case]]
+input = "八雲藍"
+mode = "hiragana"
+expected = "やくもらん"
+note = "藍 = ラン (一般 アイ ではない、 character-specific)"
+
+
+[[case]]
+input = "八雲橙"
+mode = "hiragana"
+expected = "やくもちぇん"
+note = "橙 = チェン (一般 ダイダイ ではない、 中国系名 Chen の音写)"
+
+
+# ─── 永夜抄組 (TH08) ────────────────────────────────────────────────────
+
+[[case]]
+input = "蓬莱山輝夜"
+mode = "hiragana"
+expected = "ほうらいさんかぐや"
+note = "蓬莱山 = ホウライサン、 輝夜 = カグヤ (竹取物語からの引用)"
+
+[[case.targets]]
+surface = "輝夜"
+reading = "かぐや"
+
+
+[[case]]
+input = "八意永琳"
+mode = "hiragana"
+expected = "やごころえいりん"
+note = "八意 = ヤゴコロ (古典固有読み、 一般読みなし)、 永琳 = エイリン"
+
+[[case.targets]]
+surface = "八意"
+reading = "やごころ"
+
+[[case.targets]]
+surface = "永琳"
+reading = "えいりん"
+
+
+[[case]]
+input = "藤原妹紅"
+mode = "hiragana"
+expected = "ふじわらのもこう"
+note = "藤原妹紅 (フジワラノモコウ)、 「の」 が フルネーム reading に入る古典系"
+
+[[case.targets]]
+surface = "妹紅"
+reading = "もこう"
+
+
+# ─── 神霊廟組 (TH13、 「の」 入り古代日本系) ───────────────────────────
+
+[[case]]
+input = "豊聡耳神子"
+mode = "hiragana"
+expected = "とよさとみみのみこ"
+note = "豊聡耳 = トヨサトミミ、 「の」 入り、 神子 = ミコ"
+
+[[case.targets]]
+surface = "豊聡耳"
+reading = "とよさとみみ"
+
+
+[[case]]
+input = "物部布都"
+mode = "hiragana"
+expected = "もののべのふと"
+note = "物部 = モノノベ、 「の」 入り、 布都 = フト"
+
+[[case.targets]]
+surface = "物部"
+reading = "もののべ"
+
+[[case.targets]]
+surface = "布都"
+reading = "ふと"
+
+
+[[case]]
+input = "蘇我屠自古"
+mode = "hiragana"
+expected = "そがのとじこ"
+note = "蘇我 = ソガ、 「の」 入り、 屠自古 = トジコ"
+
+[[case.targets]]
+surface = "蘇我"
+reading = "そが"
+
+
+# ─── 香霖堂 (派生作品) ──────────────────────────────────────────────────
+
+[[case]]
+input = "森近霖之助"
+mode = "hiragana"
+expected = "もりちかりんのすけ"
+note = "東方香霖堂 主人公"
+
+[[case.targets]]
+surface = "森近"
+reading = "もりちか"
+
+[[case.targets]]
+surface = "霖之助"
+reading = "りんのすけ"
+
+
+# ─── 求聞史紀 ──────────────────────────────────────────────────────────
+
+[[case]]
+input = "稗田阿求"
+mode = "hiragana"
+expected = "ひえだのあきゅう"
+note = "稗田 = ヒエダ、 「の」 入り、 阿求 = アキュウ"
+
+[[case.targets]]
+surface = "稗田"
+reading = "ひえだ"
+
+[[case.targets]]
+surface = "阿求"
+reading = "あきゅう"
+
+
+# ─── 儚月抄 (綿月姉妹) ─────────────────────────────────────────────────
+
+[[case]]
+input = "綿月豊姫"
+mode = "hiragana"
+expected = "わたつきのとよひめ"
+note = "綿月 = ワタツキ、 「の」 入り、 豊姫 = トヨヒメ"
+
+[[case.targets]]
+surface = "綿月"
+reading = "わたつき"
+
+
+# ─── 虹龍洞 (TH19、 char-specific 読み多数) ──────────────────────────────
+
+[[case]]
+input = "飯綱丸龍"
+mode = "hiragana"
+expected = "いいずなまるめぐむ"
+note = "龍 = メグム (一般 リュウ / リョウ ではない、 飯綱丸龍 character-specific)"
+
+[[case.targets]]
+surface = "飯綱丸"
+reading = "いいずなまる"
+
+
+[[case]]
+input = "天弓千亦"
+mode = "hiragana"
+expected = "てんきゅうちまた"
+note = "天弓 = テンキュウ、 千亦 = チマタ"
+
+[[case.targets]]
+surface = "天弓"
+reading = "てんきゅう"
+
+[[case.targets]]
+surface = "千亦"
+reading = "ちまた"
+
+
+# ─── 場所 ──────────────────────────────────────────────────────────────
+
+[[case]]
+input = "幻想郷"
+mode = "hiragana"
+expected = "げんそうきょう"
+note = "東方 setting の主舞台。 単独"
+
+
+[[case]]
+input = "永遠亭"
+mode = "hiragana"
+expected = "えいえんてい"
+note = "永夜抄 setting"
+
+
+[[case]]
+input = "白玉楼"
+mode = "hiragana"
+expected = "はくぎょくろう"
+note = "妖々夢 setting"
+
+
+[[case]]
+input = "命蓮寺"
+mode = "hiragana"
+expected = "みょうれんじ"
+note = "星蓮船 setting"
+
+
+# ─── 作品タイトル ──────────────────────────────────────────────────────
+
+[[case]]
+input = "萃夢想"
+mode = "hiragana"
+expected = "すいむそう"
+note = "TH7.5、 格闘 game"
+
+
+[[case]]
+input = "緋想天"
+mode = "hiragana"
+expected = "ひそうてん"
+note = "TH10.5、 格闘 game"
+
+
+[[case]]
+input = "求聞史紀"
+mode = "hiragana"
+expected = "ぐもんしき"
+note = "東方求聞史紀 (公式書籍)"
+
+
+# ─── 用語 ──────────────────────────────────────────────────────────────
+
+[[case]]
+input = "弾幕"
+mode = "hiragana"
+expected = "だんまく"
+note = "東方 jargon (一般読みは ダンマク と同じだが定義として lock)"
+
+
+[[case]]
+input = "陰陽玉"
+mode = "hiragana"
+expected = "おんみょうぎょく"
+note = "霊夢のお守り。 オンミョウ (一般語) + ギョク"
+
+
+[[case]]
+input = "蓬莱の薬"
+mode = "hiragana"
+expected = "ほうらいのくすり"
+note = "永夜抄 keyword"
