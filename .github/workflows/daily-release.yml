@@ -21,8 +21,9 @@ name: Daily auto-release
 #
 # tag 形式: vYYYY.MM.DD (例: v2026.05.08)、同日 2 回目以降は v2026.05.08.1 / .2 …
 #
-# auto-commit (`chore: regen STATS.md [skip stats]`) は中身 (辞書 entry) の
-# 変更ではないので、差分判定からは除外する。
+# auto-commit (`chore: dedup compat + regen STATS [skip stats]`) は中身 (辞書 entry)
+# の変更ではないので、 差分判定からは除外する。 `[skip stats]` tag の grep だけで
+# fallback 上は十分だが、 念のため commit message prefix もマッチさせる。
 
 on:
   # schedule:
@@ -60,7 +61,7 @@ jobs:
           fi
           CHANGES=$(git log "$RANGE" --pretty='%H %s' -- core/ rules/ \
             | grep -v '\[skip stats\]' \
-            | grep -v 'chore: regen STATS.md' \
+            | grep -v 'chore: dedup compat + regen STATS' \
             || true)
           if [ -z "$CHANGES" ]; then
             echo "No content changes in core/ or rules/ since $LAST_TAG"

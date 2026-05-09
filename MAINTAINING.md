@@ -49,7 +49,8 @@ ssh debian "docker exec kuroneko-postgres psql -U zunda -d kuroneko_cms \
 
 # 2. import script を回す
 python3 tools/import_from_production.py
-# → core/unihan.toml / core/jukugo/general.toml / core/compat.toml が更新される
+# → core/unihan/<水準>.toml (水準別) / core/jukugo/<genre>/<file>.toml /
+#   core/compat.toml が更新される
 
 # 3. 振り分け再実行 (単漢字 → unihan、四字熟語 → four_char、地名 → place_names)
 python3 tools/classify_jukugo.py --apply
@@ -67,26 +68,37 @@ git push origin master
 #   git push origin "v$TODAY"
 ```
 
-> root の `VERSION` ファイルは v0.1.x 時代の名残で、CalVer 移行後は使用しない。
-> 将来の cleanup で削除予定。
 
 ## CI / Workflow 一覧
 
 ### Validate (`validate.yml`)
-- push / PR で `tools/validate.py` が走り、 以下を検証:
-  - TOML 構文 + `[entries]` / `[map]` セクション必須
-  - reading が ひらがな or 全角カタカナ + 長音 + 中点 のみ
-  - jukugo (`core/jukugo/**`) と unihan (`core/unihan.toml`) の cross-file 重複検出 → ERROR
-  - **jukugo 同士の divergent reading** (例: `abstracts.toml` の イチレント vs
-    `four_char.toml` の イチレンタ) → ERROR で CI fail
-  - **loanwords (`core/loanwords/**`)** の surface が `[A-Za-zＡ-Ｚａ-ｚ]` 始まり
-    + 英数字記号 (`+ # . - _`) のみ、 reading が カタカナ
-- 失敗時は CI ログに詳細が出るのでそれに従って修正
+
+push / PR / workflow_dispatch で 4 つの並列 job が走り、 master の **required status
+checks** として branch protection から監視されている:
+
+1. **TOML 構文チェック (taplo)** — 全 `*.toml` のパース可能性
+2. **スキーマ + カタカナ検証 (validate.py)**:
+   - 各ファイルの構造 (`[entries]` / `[map]` / `[[entry]]` / `[[rule]]` 等) 必須
+   - reading が ひらがな or 全角カタカナ + 長音 + 中点 のみ
+   - jukugo (`core/jukugo/**`) と unihan (`core/unihan/**`) の cross-file 重複検出 → ERROR
+   - **jukugo 同士の divergent reading** (例: `abstracts.toml` の イチレント vs
+     `four_char.toml` の イチレンタ) → ERROR で CI fail
+   - **loanwords (`core/loanwords/**`)** の surface が `[A-Za-zＡ-Ｚａ-ｚ]` 始まり
+     + 英数字記号 (`+ # . - _`) のみ、 reading が カタカナ
+3. **Python セキュリティ静的解析 (bandit)** — `tools/` 配下の Python スクリプトに対する
+   セキュリティ lint
+4. **Inline test append-only 検査** — `*.test.toml` の `[[test]]` case が PR base に
+   対して削除 / 変更されてないか (`tools/check_test_append_only.py`、 `# DISABLED:`
+   tag による意図的削除は許容)
+
+失敗時は CI ログに詳細が出るのでそれに従って修正。 4 個全部 pass しないと master へ
+の push / PR merge が branch protection で reject される。
 
 ### Release (`release.yml`)
 - `v*` tag push で `furigana-dict-<tag>.tar.gz` + `.sha256` を GitHub Releases に upload
 - 中身は `core/` + `rules/` の 2 階層 (利用側 CLI で `data/` 1 階層に flatten 展開)
-- tag 文字列は CalVer / semver 問わず受け付け、URL に流すだけ
+- 想定 tag 形式は **CalVer (`vYYYY.MM.DD`)**、 同日 N 回目は `.1` / `.2` … suffix
+  (旧 v0.1.x semver tag は CalVer 移行時に削除済み)
 
 ### Daily auto-release (`daily-release.yml`)
 - JST 03:00 に cron 起動
@@ -94,12 +106,34 @@ git push origin master
 - bot の `[skip stats]` commit は差分判定から除外 (STATS.md 更新だけでは release しない)
 - 同日複数 release は `vYYYY.MM.DD.1` / `.2` … で衝突回避
 
-### Regen STATS.md / STATS_DUPS.md (`regen-stats.yml`)
-- master push (core/**/*.toml, rules/**/*.toml, tools/regen_stats.py, tools/list_dups.py 変更時) trigger
-- `tools/regen_stats.py` が走り、STATS.md の auto-generated 区間 (マーカー間) を更新
-- `tools/list_dups.py` が走り、STATS_DUPS.md (cross-file 重複レポート: 同 reading + divergent reading の 2 セクション markdown table) を更新
-- diff があれば `chore: regen STATS.md / STATS_DUPS.md [skip stats]` で auto-commit
+### Dedup compat + Regen STATS.md / STATS_DUPS.md (`regen-stats.yml`)
+- master push trigger (path filter: `core/**/*.toml` / `rules/**/*.toml` /
+  `tests/corpus/**/*.toml` / `tools/{regen_stats,list_dups,dedup_compat}.py`)
+- 順に 3 ステップを実行:
+  1. `tools/dedup_compat.py` — compat 異体字 entries の dedup (unihan + jukugo + works)、
+     冪等で dead 経路の entries が無ければ no-op。 contributor が PR で誤って異体字
+     surface を追加しても CI が自動で標準形に置換 / 削除
+  2. `tools/regen_stats.py` — STATS.md / CONTRIBUTING.md の auto-generated 区間
+     (マーカー間) を更新
+  3. `tools/list_dups.py` — STATS_DUPS.md (cross-file 重複レポート: 同 reading +
+     divergent reading の 2 セクション markdown table) を更新
+- diff があれば `chore: dedup compat + regen STATS [skip stats]` で auto-commit
+- bot 自身の commit は `[skip stats]` で再 trigger を防ぐ (regen-stats.yml も
+  validate.yml も skip filter 持つ)
 - contributor は手元で実行不要
+
+**branch protection bypass**: master の required status checks (4 個) は
+`GITHUB_TOKEN` (= github-actions[bot]) の push を reject するため、 admin user の
+OAuth token / PAT を **`STATS_PUSH_TOKEN` repo secret** に登録して使用。
+secret 未設定時は `GITHUB_TOKEN` fallback で push が失敗する (warning)、 contributor
+が手元で `python tools/dedup_compat.py && python tools/regen_stats.py && python
+tools/list_dups.py` を実行して `[skip stats]` 付き commit で push する形で代替可能。
+
+token 更新が必要な時:
+
+```sh
+gh auth token | gh secret set STATS_PUSH_TOKEN --repo RyuuNeko1107/ja-furigana-dict
+```
 
 ### Auto-merge label (`auto-merge-label.yml`)
 - `pull_request_target` で起動
