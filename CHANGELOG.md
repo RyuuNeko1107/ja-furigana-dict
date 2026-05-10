@@ -26,93 +26,66 @@ CalVer 採用理由:
 
 ## [Unreleased]
 
-### Changed (BREAKING、 alpha.11 dict 完全再編成 第 1〜4 段、 ★A1b / ★A2)
+### Changed (BREAKING、 alpha.11 dict 完全再編成、 ★A1b / ★A2)
 
 ja-furigana lib alpha.10〜alpha.11 と coordinated に dict format を新 schema に
-全面移行:
+全面移行 (= 1 回限り machine 変換 script で実施、 適用後削除済 = 詳細は git
+history 参照):
 
-#### 1. schema_version 必須化 (★A1b、 alpha.10 coordinated)
-
-- **`tools/migrate_v2.py` 新規**: 全 dict / rule TOML 54 file の `[meta]` block 先頭
-  に `schema_version = "2"` を追加する 1 回限り machine 変換 script
-- **`tools/validate.py` 拡張**: `validate_schema_version` 関数追加で CI gate
-
-#### 2. rules/context → entry inline match 機械変換 (★A2、 alpha.11)
-
-- **`tools/migrate_v2_context.py` 新規**: rules/context/*.toml の `[[rule]]` /
-  `[[rule.match]]` を新 format `[entries."x"]` / `[[entries."x".match]]` 形式に
-  機械変換、 staging 出力 + TODO report 生成
-- **`tools/merge_migrated_context.py` 新規**: staging を実 core/ file に surgical
-  merge (= 簡単 entry 行を削除 + detailed sub-table を末尾 append)
+- **`[meta] schema_version = "2"` 必須化** (★A1b、 alpha.10 coordinated): 全 dict
+  / rule TOML 54 file に bulk 適用、 `tools/validate.py` で CI gate 化
+- **`rules/context/` → entry inline match 機械変換** (★A2、 alpha.11): 51 surface
+  を `core/jukugo/*.toml` / `core/unihan/joyo.toml` の `[entries."x"]` +
+  `[[entries."x".match]]` に統合 (= 31 既存 entry を Detailed 化 + 21 missing
+  surface を `general.toml` に catch-all 追加、 5 件 POS-only match は drop)
+- **`core/single_overrides.toml` → `core/kanji/overrides.toml`** (★A2、 alpha.11):
+  `[[kanji]]` block format に format 変換 (= 「土」=「ツチ」 1 件)
 - **field rename**: `prev_ends` → `prev_ends_any` / `next2_starts` →
   `next2_starts_any` / `prev_ends_with_month` → `prev_month` / `next_starts_with*`
   → `next_starts*` / `pos_eq` → **drop** (= Lindera 撤廃路線、 literal 列挙で代用)
-- **31 既存 entry を Detailed 化** (general.toml 16 / arts.toml 1 / weather.toml 1
-  / joyo.toml 12) + **21 missing surface を新規追加** (= general.toml に catch-all
-  配置)、 5 件 POS-only match block は drop (= entry default reading で fallback、
-  実用上 redundant)
+- **`validate.py` 拡張**: detailed entry / `[[kanji]]` block / bracket syntax
+  check 対応 (= forward compat for 0.2.0 intonation)
+- **doc**: `docs/SCHEMA.md` 全面 update (= schema_version / detailed entry /
+  matcher vocabulary 12 軸 / bracket notation) + `CONTRIBUTING.md` 更新 +
+  `docs/RECIPES.md` 新規 (= 「やりたいこと → こう書く」 cookbook)
 
-#### 3. 旧 single_overrides → 新 [[kanji]] block 機械変換 (★A2、 alpha.11)
+### Removed (旧 format + dead code 削除、 ★A2 alpha.11)
 
-- **`tools/migrate_kanji_format.py` 新規**: `core/single_overrides.toml` の `[entries]`
-  を `core/kanji/overrides.toml` の `[[kanji]]` block format に変換
-  (= 「土」=「ツチ」 1 件)
-- 旧 `single_overrides.toml` は **保持** (= alpha.11 期間中は Strict engine 後方互換、
-  0.1.0-rc1 で Smart default 切替後に削除可)
+機械変換完了に伴い、 **旧 format file を削除** (= alpha 期間中 lib publish 無し
+方針で互換維持不要):
 
-#### 4. validate.py + doc 拡張
+- `core/single_overrides.toml` (= `core/kanji/overrides.toml` に migrate 済)
+- `rules/context/{homonyms,numbers,special,_genre}.toml` + dir
+  (= entry inline match に migrate 済)
+- `rules/text/latin.toml` (= alpha.7 loanwords 投入後 dead code、 lib 側でも
+  `LatinData` struct 削除 coordinated)
+- `tools/migrations/` (= 1 回限り migration script は適用後削除、 git history
+  追跡可)
 
-- **`validate.py`**: detailed entry / `[[kanji]]` block / bracket syntax check
-  対応 (= forward compat for 0.2.0 intonation)
-- **`docs/SCHEMA.md` 全面 update**: schema_version / detailed entry / matcher
-  vocabulary (12 軸) / bracket notation / migration name mapping を反映
-- **`CONTRIBUTING.md` 更新**: detailed entry の書き方 + bracket notation 入門
-
-### Removed (旧 format 削除、 ★A2 alpha.11)
-
-機械変換 (= entry inline match + `[[kanji]]` block への 100% migration) 完了に伴い、
-**旧 format file を削除** (= alpha 期間中 lib publish 無し、 互換維持必要なし方針):
-
-- `core/single_overrides.toml` 削除 (= `core/kanji/overrides.toml` に migrate 済)
-- `rules/context/{homonyms,numbers,special,_genre}.toml` + dir 削除
-  (= core/jukugo/ + core/unihan/joyo.toml の entry inline match に migrate 済)
-
-**lib regression note**: 上記削除により lib (alpha.9 以下) Strict engine の以下が
-一時的に効かなくなる:
-- `crate::reading::pipeline::resolve_reading` の Step 4.5 (single_overrides)
-- 同 Step 1 (context rule、 = `crate::rules::context::ContextRule` 経由)
-
-ただし migrate された surface の **default reading** は jukugo / unihan map に
-入っているので、 「文脈分岐しない場合の reading」 は維持される。 文脈分岐
-(= 上手 → カミテ / 下手 → ヘタ など特定文脈での切替) のみ regress。
-
-lib Smart engine の `DictBridgeProvider` が `MatchCondition` 評価で文脈分岐を
-復元する logic (= alpha.12+ work) が完了するまで、 文脈分岐は機能しない。 alpha
-期間中の internal use では実用上問題なし、 0.1.0 stable 時には Smart engine 完成。
-
-`tools/validate.py` / `tools/regen_stats.py` も削除 file 参照を削除。
+**lib regression note**: 旧 file 削除により lib alpha.9 以下 Strict engine の
+Step 4.5 (single_overrides) + Step 1 (context rule) が一時的に効かなくなる。
+ただし default reading は jukugo / unihan に残るので 「文脈分岐しない reading」
+は維持、 文脈分岐 (= 上手 → カミテ 等) のみ regress。 lib Smart engine の
+`DictBridgeProvider` で文脈評価 logic 完成 (= alpha.12+ 予定) で復元。
 
 ### scope 外 (= 別 phase、 人手 PR series)
 
-以下は dict-side mechanical 機械変換完了後の継続作業 (multi-week 規模、 LLM 1 session で
-完結しない):
+mechanical 機械変換完了後の継続作業 (multi-week 規模、 漸進):
 
-- 5 件 POS-only rule の literal 列挙化 (= 上手 / 下手 / 十分、 default reading で
-  実用的に動くため必須ではない、 必要なら個別 PR で literal 列挙追加)
-- 21 件 missing surface の sub-dir 再 triage (= 現在 general.toml catch-all 配置、
-  適切 sub-dir への移動は judgment)
-- 重複 / 古い / 出典なし entry の purge (= source attribution data 不在、 慎重要)
+- 5 件 POS-only rule の literal 列挙化 (= 上手 / 下手 / 十分、 default reading
+  で実用上動くため非緊急)
+- 21 件 missing surface の sub-dir 再 triage (= 現状 general.toml catch-all)
+- 重複 / 古い / 出典なし entry の purge (= source attribution data 不在で慎重要)
 - `core/jukugo/` 24 カテゴリ再分類 (= 5024 entries の review、 multi-week)
-- `core/works/` / `core/loanwords/` 整理確認
+- `core/works/` / `core/loanwords/` 整理確認 (= 現状清潔)
 
 ### 互換性
 
 - 旧 lib (alpha.9 以下) + 本 release dict: schema_version field は silent ignore
-  されるため **前方互換維持**。 detailed entry の inline table value も string でない
-  ので silent skip され、 default reading だけが旧 simple form として load される
-  ことはなく、 旧 lib では context 分岐 reading が利かないが起動はする。
+  されるため **基本的に動く**、 ただし文脈分岐 reading は旧 lib では効かない
+  (= entry inline match を旧 lib が読まない、 default reading のみ採用)
 - 新 lib (alpha.10〜) + 本 release dict: 必須 pair。 旧 release (v2026.05.09 以前)
-  との組み合わせは Validation error で起動不能。
+  との組み合わせは Validation error で起動不能
 
 ### Added (外来語 / 検証ループ R12-R19 / cross-file 重複自動化)
 

@@ -23,7 +23,7 @@ Rust 知識・Git クローン不要。
 | **助数詞ルール** | [`rules/numbers/counters/<file>.toml`](rules/numbers/counters/) | 7 file (objects / people / percent / places / recursive / simple / time)、 連濁 / 促音化 / kana 末尾置換 |
 | **数字慣用語句** | [`rules/numbers/numeric_phrases.toml`](rules/numbers/numeric_phrases.toml) | 二十歳→ハタチ 等、 助数詞ルールより先に確定 |
 | **後処理 regex** | [`rules/text/postprocess.toml`](rules/text/postprocess.toml) | mode 別 (hiragana / ruby / tts / romaji) の出力直前 regex 置換 |
-| **記号 / ラテン文字 / SI 単位 / 大数** | [`rules/text/{symbols,latin,units}.toml`](rules/text/) / [`rules/numbers/scales.toml`](rules/numbers/scales.toml) | 単純 surface→reading mapping |
+| **記号 / SI 単位 / 大数** | [`rules/text/{symbols,units}.toml`](rules/text/) / [`rules/numbers/scales.toml`](rules/numbers/scales.toml) | 単純 surface→reading mapping |
 <!-- AUTO-GENERATED:PLACEMENT:END -->
 
    どの genre / 水準にどの file があるかの最新件数は [STATS.md](STATS.md) を参照

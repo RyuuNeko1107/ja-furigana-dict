@@ -30,14 +30,16 @@ tests/
     └── should_read.toml  — 回帰テスト (~50+ case、 alpha.10 で 108+ に拡充予定)
 
 tools/
-├── validate.py      — TOML 構文 + 読み形式 + cross-file 重複検出 (CI gate)
-├── run_corpus.py    — corpus regression runner
-├── test_inline_rules.py  — *.test.toml inline test 実行
-├── regen_stats.py   — STATS.md 自動生成
-├── list_dups.py     — cross-file 重複検出
-├── dedup_compat.py  — 異体字 mapping 経由 dead code 削除
-├── add_role_tags.py — 全 TOML に [meta] role bulk 追加 (1 回限り migration 用)
-└── migrate_v2.py — `[meta] schema_version = "2"` bulk 追加 (★A1b、 alpha.10、 1 回限り)
+├── validate.py               — TOML 構文 + 読み形式 + cross-file 重複検出 (CI gate)
+├── run_corpus.py             — corpus regression runner
+├── test_inline_rules.py      — *.test.toml inline test 実行
+├── regen_stats.py            — STATS.md 自動生成
+├── list_dups.py              — cross-file 重複検出
+├── dedup_compat.py           — 異体字 mapping 経由 dead code 削除
+├── diff_release.py           — release 間 diff レポート生成
+├── import_from_production.py — upstream DB から seed 再投入
+├── check_test_append_only.py — *.test.toml の append-only CI 強制
+└── seed/                     — import_from_production.py 用 source data
 ```
 
 ## 既存 [meta] role 値
@@ -51,21 +53,18 @@ loader が role 駆動 dispatch する tag。 各 TOML 冒頭に `[meta] role = 
 ## alpha.10〜alpha.11 期 dict 側 mechanical 完了 (★A1b / ★A2)
 
 - ✅ **schema_version 必須化** (★A1b、 alpha.10 coordinated): 全 dict / rule TOML
-  54 file に `[meta] schema_version = "2"` を bulk 適用
-  (`tools/migrate_v2.py --apply`)、 `validate.py` で gate 化
-- ✅ **rules/context → entry inline match 機械変換** (★A2、 alpha.11):
-  `tools/migrate_v2_context.py` (= staging 生成) + `tools/merge_migrated_context.py`
-  (= 実 core/ に surgical merge) で 31 既存 entry を Detailed 化 + 21 missing
-  surface を catch-all 配置 (general.toml)、 5 件 POS-only match は drop (= default
-  reading で fallback、 redundant)
+  54 file に `[meta] schema_version = "2"` を bulk 適用、 `validate.py` で gate 化
+- ✅ **rules/context → entry inline match 機械変換** (★A2、 alpha.11): 31 既存
+  entry を Detailed 化 + 21 missing surface を catch-all 配置 (general.toml)、
+  5 件 POS-only match は drop (= default reading で fallback、 redundant)
 - ✅ **single_overrides → [[kanji]] block 機械変換** (★A2、 alpha.11):
-  `tools/migrate_kanji_format.py` で `core/kanji/overrides.toml` 生成、 旧
-  `single_overrides.toml` は **削除済** (= compat 不要方針、 alpha 期間 lib release
-  無し前提)
+  `core/kanji/overrides.toml` 生成、 旧 `single_overrides.toml` は **削除済**
 - ✅ **旧 format 削除** (★A2、 alpha.11): `core/single_overrides.toml` +
-  `rules/context/{homonyms,numbers,special,_genre}.toml` + dir を git rm。 lib
-  Strict engine の文脈分岐は alpha 期間中 一時的に regress、 Smart engine の
-  `DictBridgeProvider` 完成 (alpha.12+) で復元
+  `rules/context/{homonyms,numbers,special,_genre}.toml` + dir + `rules/text/latin.toml`
+  を git rm。 lib Strict engine の文脈分岐は alpha 期間中 一時的に regress、
+  Smart engine の `DictBridgeProvider` 完成 (alpha.12+) で復元
+- ✅ **1 回限り migration script は適用後に削除**: `tools/migrations/` も削除済
+  (= git history で参照可能、 source は git log 追跡)
 - ✅ **validate.py 拡張**: detailed entry / `[[kanji]]` block / bracket syntax
   check 対応
 - ✅ **docs/SCHEMA.md / CONTRIBUTING.md update**: 新 format / matcher / bracket

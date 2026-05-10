@@ -87,7 +87,7 @@ def count_entries(path: Path) -> int:
     """TOML の top-level エントリ数を返す。
 
     対応する形式:
-    - [entries] / [map] dict   (jukugo, unihan, compat, units, latin, symbols, numeric_phrases)
+    - [entries] / [map] dict   (jukugo, unihan, compat, units, symbols, numeric_phrases)
     - [[entry]] / [[rule]] / [[kanji]] array of tables (scales, postprocess, context/*, counters/*, kanji/*)
     - 直接 top-level に key=value が並ぶフラット形式 (days.toml: '1' = 'ツイタチ' ...)
 
@@ -358,7 +358,7 @@ def gen_summary(core_rows: list, rules_rows: list) -> str:
         )
     if kanji_c > 0:
         lines.append(
-            f"| [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 ★A2 alpha.11 single_overrides の後継) | **{kanji_c:,}** | **{fmt_size(kanji_s)}** |"
+            f"| [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **{kanji_c:,}** | **{fmt_size(kanji_s)}** |"
         )
     lines.extend([
         f"| [**異体字**](#異体字) (`core/compat.toml`) | **{compat_c:,}** | **{fmt_size(compat_s)}** |",
@@ -564,7 +564,7 @@ def gen_core(core_rows: list) -> str:
     if kanji_rows:
         sections.append(_gen_subsection(
             "単漢字 [[kanji]] format",
-            "`core/kanji/*` — `[[kanji]]` block 形式で書く 1 字 surface entry (★A2 alpha.11、 旧 single_overrides の後継)。 各 block は `char` (1 字必須) + `default` reading + 文脈分岐 `[[kanji.match]]` 配列。 alpha.11 期間中は `single_overrides.toml` と duplicate 共存、 0.1.0-rc1 で Smart engine default 切替後に旧 file 削除予定。",
+            "`core/kanji/*` — 1 字 surface に対する `[[kanji]]` block 形式 entry。 各 block は `char` (1 字必須) + `default` reading + optional `[[kanji.match]]` 配列 (= 文脈分岐 reading、 matcher vocabulary は entry inline match と同一)。 alpha.7 era の `core/single_overrides.toml` の後継、 alpha.11 で format 確定。",
             kanji_rows,
         ))
     sections.append(_gen_subsection(
@@ -898,8 +898,8 @@ def gen_placement(
         "mode 別 (hiragana / ruby / tts / romaji) の出力直前 regex 置換 |"
     )
     lines.append(
-        "| **記号 / ラテン文字 / SI 単位 / 大数** | "
-        "[`rules/text/{symbols,latin,units}.toml`](rules/text/) / "
+        "| **記号 / SI 単位 / 大数** | "
+        "[`rules/text/{symbols,units}.toml`](rules/text/) / "
         "[`rules/numbers/scales.toml`](rules/numbers/scales.toml) | "
         "単純 surface→reading mapping |"
     )

@@ -28,7 +28,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **312** | **10 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **160** | **5.0 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
-| [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 ★A2 alpha.11 single_overrides の後継) | **1** | **202 B** |
+| [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **1** | **151 B** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **435** | **6.1 KB** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **178** | **9.3 KB** |
 | **合計** | **49,283** | **977 KB** |
@@ -190,11 +190,11 @@ git に commit されている master HEAD の状態を基準にする。
 
 ### 単漢字 [[kanji]] format
 
-`core/kanji/*` — `[[kanji]]` block 形式で書く 1 字 surface entry (★A2 alpha.11、 旧 single_overrides の後継)。 各 block は `char` (1 字必須) + `default` reading + 文脈分岐 `[[kanji.match]]` 配列。 alpha.11 期間中は `single_overrides.toml` と duplicate 共存、 0.1.0-rc1 で Smart engine default 切替後に旧 file 削除予定。
+`core/kanji/*` — 1 字 surface に対する `[[kanji]]` block 形式 entry。 各 block は `char` (1 字必須) + `default` reading + optional `[[kanji.match]]` 配列 (= 文脈分岐 reading、 matcher vocabulary は entry inline match と同一)。 alpha.7 era の `core/single_overrides.toml` の後継、 alpha.11 で format 確定。
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/kanji/overrides.toml`](core/kanji/overrides.toml) | 1 | 202 B | 単漢字 default override + 文脈分岐 reading (★A2 alpha.11、 旧 single_overrides の後継) |
+| [`core/kanji/overrides.toml`](core/kanji/overrides.toml) | 1 | 151 B | 単漢字 default override + 文脈分岐 reading |
 
 ### 異体字
 
