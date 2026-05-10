@@ -8,6 +8,7 @@
 # - 50 音順 を推奨
 
 [meta]
+schema_version = "2"
 role = "jukugo"
 description = "感情 / 心理状態 / 性格 / 心情"
 

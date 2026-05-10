@@ -8,6 +8,7 @@
 # - 50 音順 を推奨
 
 [meta]
+schema_version = "2"
 role = "jukugo"
 description = "慣用句 / ことわざ / 故事成語 (フレーズ単位)"
 

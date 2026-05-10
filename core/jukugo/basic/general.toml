@@ -8,6 +8,7 @@
 # - 50 音順 を推奨 (PR diff が読みやすい)
 
 [meta]
+schema_version = "2"
 role = "jukugo"
 description = "二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む)"
 

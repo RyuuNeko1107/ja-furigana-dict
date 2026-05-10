@@ -6,6 +6,7 @@
 
 
 [meta]
+schema_version = "2"
 role = "counters"
 description = "単純サフィックス助数詞 (円 / 点 / 度 / 名 / 話 等、 数値カナ + value 連結のみ)"
 

@@ -9,6 +9,7 @@
 # - 50 音順 を推奨
 
 [meta]
+schema_version = "2"
 role = "jukugo"
 description = "神道 / 仏教 / キリスト教 / イスラム / 儀礼"
 

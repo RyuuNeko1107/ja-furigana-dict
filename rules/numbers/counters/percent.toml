@@ -1,6 +1,7 @@
 # パーセンテージ (% / ％)
 
 [meta]
+schema_version = "2"
 role = "counters"
 description = "パーセンテージ (% / ％、 1/6/8/0 で促音化 + パーセント)"
 

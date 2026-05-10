@@ -6,6 +6,7 @@
 # 個別 entry の手動編集は OK (PR で reading 修正等)。
 
 [meta]
+schema_version = "2"
 role = "unihan"
 description = "拡張漢字 (CJK Extension B 以降、 表外字 / 中国専用字 / 異体字、 機械的扱い、 ほぼ lib lookup されない)"
 

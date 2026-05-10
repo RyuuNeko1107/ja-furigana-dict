@@ -1,6 +1,7 @@
 # 物を数える助数詞 (本 / 匹 / 杯 / 個 / 歳 / 冊)
 
 [meta]
+schema_version = "2"
 role = "counters"
 description = "物を数える助数詞 (本 / 匹 / 杯 / 個 / 歳 / 冊、 連濁 / 促音化)"
 

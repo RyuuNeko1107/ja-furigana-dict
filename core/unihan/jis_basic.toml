@@ -6,6 +6,7 @@
 # 個別 entry の手動編集は OK (PR で reading 修正等)。
 
 [meta]
+schema_version = "2"
 role = "unihan"
 description = "JIS 基本 (CJK Basic Block U+4E00-U+9FFF のうち常用 / 人名用以外、 概ね JIS X 0208 第1+第2水準カバー)"
 

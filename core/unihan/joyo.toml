@@ -5,6 +5,7 @@
 # 個別 entry の手動編集は OK (PR で reading 修正等)。
 
 [meta]
+schema_version = "2"
 role = "unihan"
 description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告示) — 利用頻度高、 default reading review 対象"
 

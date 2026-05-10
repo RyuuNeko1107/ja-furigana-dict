@@ -8,6 +8,7 @@
 # - 50 音順 を推奨
 
 [meta]
+schema_version = "2"
 role = "jukugo"
 description = "古典文学 / 作品名 / 文学用語 / 詩歌 / 評論"
 

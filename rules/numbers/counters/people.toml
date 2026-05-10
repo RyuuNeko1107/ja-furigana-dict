@@ -4,6 +4,7 @@
 
 
 [meta]
+schema_version = "2"
 role = "counters"
 description = "人を数える助数詞 (人、 1=ヒトリ / 2=フタリ の特殊読み)"
 

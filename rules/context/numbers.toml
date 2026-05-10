@@ -4,6 +4,7 @@
 # 数字 + 助数詞風の連体修飾語が文脈で読み分かれるパターン。
 
 [meta]
+schema_version = "2"
 role = "context"
 description = "数字を含む慣用語句の文脈ルール (一日→ツイタチ / 一月→イチガツ 等)"
 

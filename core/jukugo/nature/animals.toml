@@ -8,6 +8,7 @@
 # - 50 音順 を推奨
 
 [meta]
+schema_version = "2"
 role = "jukugo"
 description = "動植物 / 魚介 / 鳥 / 昆虫 / 茸 / 海藻の難読"
 

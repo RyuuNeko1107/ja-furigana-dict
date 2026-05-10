@@ -3,6 +3,7 @@
 
 
 [meta]
+schema_version = "2"
 role = "scales"
 description = "大数スケール (万 / 億 / 兆 / 京 / 垓 / 不可思議 / 無量大数 等、 大→小順、 N+漢字単位 連結用)"
 

@@ -14,6 +14,7 @@
 # 関連 issue: <https://github.com/RyuuNeko1107/ja-furigana/issues/15>
 
 [meta]
+schema_version = "2"
 role = "single_overrides"
 description = "単漢字 default reading override (issue #15 の限定解)"
 
