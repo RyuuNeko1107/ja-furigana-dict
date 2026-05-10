@@ -26,6 +26,24 @@ CalVer 採用理由:
 
 ## [Unreleased]
 
+### Changed (BREAKING、 schema_version 必須化、 ★A1b)
+
+ja-furigana lib alpha.10 (★A1b) で `[meta] schema_version = "2"` field が必須化
+されたのに合わせて、 全 dict / rule TOML 54 file に bulk 機械適用 (`tools/migrate_v2.py`)。
+
+- **`tools/migrate_v2.py` 新規**: `core/**/*.toml` + `rules/**/*.toml` の `[meta]`
+  block 先頭に `schema_version = "2"` を追加する 1 回限り migration script。
+  冪等性: 既設は no-op、 異なる値は error。 `_genre.toml` / `*.test.toml` /
+  `tests/corpus/` 配下は対象外。
+- **`tools/validate.py` 拡張**: `validate_schema_version` 関数追加、 全 dict / rule
+  TOML が `schema_version = "2"` を持つことを CI で gate (= 不在 / 別値で fail)。
+- **54 file に schema_version stamp** (= migrate_v2.py --apply 結果): 各 file の
+  `[meta]` block 先頭に 1 行追加、 entry / role / description 等は不変。
+
+互換性: 旧 lib (alpha.9 以下) は schema_version field を silent ignore するので
+**前方互換維持** (= 旧 lib + 本 release dict OK)。 新 lib (alpha.10〜) は本 release
+以降の dict が必須 (= 新 lib + 旧 release dict 起動不能)。
+
 ### Added (外来語 / 検証ループ R12-R19 / cross-file 重複自動化)
 
 - **`core/loanwords/` ディレクトリ新設** — IT 用語等の英字 surface 専用カテゴリ
