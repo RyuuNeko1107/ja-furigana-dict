@@ -1,0 +1,154 @@
+# 機械変換: rules/context/numbers.toml → entry inline match
+#
+# 各 [entries."X"] block を **既存 core/jukugo/ の対応 surface entry に
+# merge** するか、 surface 不在なら新規 entry として配置する。
+# 本 file は staging area、 lib は load しない (= role 不明)。
+
+[meta]
+schema_version = "2"
+role = "migrated_context"  # 仮 role、 実 merge 時に削除
+description = "rules/context migration の staging output (review 用、 lib loader 対象外)"
+
+# TODO: 既存 entry: core/jukugo/basic/general.toml に merge 要
+[entries."一日"]
+reading = "イチニチ"
+
+[[entries."一日".match]]
+reading = "ツイタチ"
+prev_month = true
+
+[[entries."一日".match]]
+reading = "イチニチ"
+next_starts_any = [
+  "中",
+  "間",
+  "分",
+  "以上",
+  "以下",
+  "程",
+  "ほど",
+  "かけて",
+]
+
+[[entries."一日".match]]
+reading = "イチニチ"
+prev_ends_any = [
+  "毎",
+  "約",
+  "丸",
+  "まる",
+]
+
+# TODO: core/ に entry 不在、 適切な core/jukugo/<sub-dir>/<file>.toml に配置要
+[entries."一人"]
+reading = "ヒトリ"
+
+# TODO: core/ に entry 不在、 適切な core/jukugo/<sub-dir>/<file>.toml に配置要
+[entries."二人"]
+reading = "フタリ"
+
+# TODO: default 不在 + POS-only も無し、 第 1 match の reading='イチガツ' を暫定 default に。 人手で確認要
+# TODO: core/ に entry 不在、 適切な core/jukugo/<sub-dir>/<file>.toml に配置要
+[entries."一月"]
+reading = "イチガツ"
+
+[[entries."一月".match]]
+reading = "イチガツ"
+next_starts_any = [
+  "日",
+  "から",
+  "まで",
+  "に",
+  "の",
+  "は",
+  "も",
+  "、",
+  "。",
+]
+
+[[entries."一月".match]]
+reading = "イチガツ"
+next_digit = true
+
+[[entries."一月".match]]
+reading = "ヒトツキ"
+next_starts_any = [
+  "中",
+  "間",
+  "分",
+  "以上",
+  "以下",
+  "程",
+  "ほど",
+  "かけて",
+  "かかる",
+  "かかった",
+  "かかれば",
+]
+
+# TODO: default 不在 + POS-only も無し、 第 1 match の reading='ニガツ' を暫定 default に。 人手で確認要
+# TODO: core/ に entry 不在、 適切な core/jukugo/<sub-dir>/<file>.toml に配置要
+[entries."二月"]
+reading = "ニガツ"
+
+[[entries."二月".match]]
+reading = "ニガツ"
+next_starts_any = [
+  "日",
+  "から",
+  "まで",
+  "に",
+  "の",
+  "は",
+  "も",
+  "、",
+  "。",
+]
+
+[[entries."二月".match]]
+reading = "ニガツ"
+next_digit = true
+
+[[entries."二月".match]]
+reading = "フタツキ"
+next_starts_any = [
+  "中",
+  "間",
+  "分",
+  "以上",
+  "以下",
+  "程",
+  "ほど",
+  "かけて",
+  "かかる",
+  "かかった",
+  "かかれば",
+]
+
+# TODO: core/ に entry 不在、 適切な core/jukugo/<sub-dir>/<file>.toml に配置要
+[entries."一時"]
+reading = "イチジ"
+
+# TODO: core/ に entry 不在、 適切な core/jukugo/<sub-dir>/<file>.toml に配置要
+[entries."一番"]
+reading = "イチバン"
+
+# TODO: core/ に entry 不在、 適切な core/jukugo/<sub-dir>/<file>.toml に配置要
+[entries."一体"]
+reading = "イッタイ"
+
+# TODO: core/ に entry 不在、 適切な core/jukugo/<sub-dir>/<file>.toml に配置要
+[entries."一杯"]
+reading = "イッパイ"
+
+# TODO: core/ に entry 不在、 適切な core/jukugo/<sub-dir>/<file>.toml に配置要
+[entries."一生"]
+reading = "イッショウ"
+
+# TODO: core/ に entry 不在、 適切な core/jukugo/<sub-dir>/<file>.toml に配置要
+[entries."一緒"]
+reading = "イッショ"
+
+# TODO: core/ に entry 不在、 適切な core/jukugo/<sub-dir>/<file>.toml に配置要
+[entries."一人前"]
+reading = "イチニンマエ"
