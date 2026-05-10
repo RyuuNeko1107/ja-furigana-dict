@@ -68,19 +68,42 @@ ja-furigana lib alpha.10〜alpha.11 と coordinated に dict format を新 schem
   vocabulary (12 軸) / bracket notation / migration name mapping を反映
 - **`CONTRIBUTING.md` 更新**: detailed entry の書き方 + bracket notation 入門
 
+### Removed (旧 format 削除、 ★A2 alpha.11)
+
+機械変換 (= entry inline match + `[[kanji]]` block への 100% migration) 完了に伴い、
+**旧 format file を削除** (= alpha 期間中 lib publish 無し、 互換維持必要なし方針):
+
+- `core/single_overrides.toml` 削除 (= `core/kanji/overrides.toml` に migrate 済)
+- `rules/context/{homonyms,numbers,special,_genre}.toml` + dir 削除
+  (= core/jukugo/ + core/unihan/joyo.toml の entry inline match に migrate 済)
+
+**lib regression note**: 上記削除により lib (alpha.9 以下) Strict engine の以下が
+一時的に効かなくなる:
+- `crate::reading::pipeline::resolve_reading` の Step 4.5 (single_overrides)
+- 同 Step 1 (context rule、 = `crate::rules::context::ContextRule` 経由)
+
+ただし migrate された surface の **default reading** は jukugo / unihan map に
+入っているので、 「文脈分岐しない場合の reading」 は維持される。 文脈分岐
+(= 上手 → カミテ / 下手 → ヘタ など特定文脈での切替) のみ regress。
+
+lib Smart engine の `DictBridgeProvider` が `MatchCondition` 評価で文脈分岐を
+復元する logic (= alpha.12+ work) が完了するまで、 文脈分岐は機能しない。 alpha
+期間中の internal use では実用上問題なし、 0.1.0 stable 時には Smart engine 完成。
+
+`tools/validate.py` / `tools/regen_stats.py` も削除 file 参照を削除。
+
 ### scope 外 (= 別 phase、 人手 PR series)
 
-以下は alpha.11 期 dict-side mechanical 機械変換完了後の継続作業:
+以下は dict-side mechanical 機械変換完了後の継続作業 (multi-week 規模、 LLM 1 session で
+完結しない):
 
-- 5 件 POS-only rule の literal 列挙化 (= 上手 / 下手 / 十分 / 一月 / 二月、 ただし
-  default reading で実用的に動くため必須ではない)
+- 5 件 POS-only rule の literal 列挙化 (= 上手 / 下手 / 十分、 default reading で
+  実用的に動くため必須ではない、 必要なら個別 PR で literal 列挙追加)
 - 21 件 missing surface の sub-dir 再 triage (= 現在 general.toml catch-all 配置、
   適切 sub-dir への移動は judgment)
 - 重複 / 古い / 出典なし entry の purge (= source attribution data 不在、 慎重要)
 - `core/jukugo/` 24 カテゴリ再分類 (= 5024 entries の review、 multi-week)
 - `core/works/` / `core/loanwords/` 整理確認
-- `rules/context/` 削除 (= lib Smart engine の `DictBridgeProvider` で
-  `[[entries."x".match]]` 評価 logic 完成後)
 
 ### 互換性
 

@@ -261,6 +261,8 @@ def gather_core() -> list[tuple[str, int, int]]:
         rows.append(
             ("core/_inbox.toml", count_entries(p), count_inline_tests(p), effective_bytes(p))
         )
+    # ★A2 alpha.11: core/single_overrides.toml は削除済 (= core/kanji/ に migration)、
+    # ファイルが残っていれば旧 alpha 期 dict 互換のため取り込む (= 通常は不在)
     p = ROOT / "core/single_overrides.toml"
     if p.exists():
         rows.append(

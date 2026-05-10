@@ -60,7 +60,12 @@ loader が role 駆動 dispatch する tag。 各 TOML 冒頭に `[meta] role = 
   reading で fallback、 redundant)
 - ✅ **single_overrides → [[kanji]] block 機械変換** (★A2、 alpha.11):
   `tools/migrate_kanji_format.py` で `core/kanji/overrides.toml` 生成、 旧
-  `single_overrides.toml` は Strict engine 後方互換のため保持
+  `single_overrides.toml` は **削除済** (= compat 不要方針、 alpha 期間 lib release
+  無し前提)
+- ✅ **旧 format 削除** (★A2、 alpha.11): `core/single_overrides.toml` +
+  `rules/context/{homonyms,numbers,special,_genre}.toml` + dir を git rm。 lib
+  Strict engine の文脈分岐は alpha 期間中 一時的に regress、 Smart engine の
+  `DictBridgeProvider` 完成 (alpha.12+) で復元
 - ✅ **validate.py 拡張**: detailed entry / `[[kanji]]` block / bracket syntax
   check 対応
 - ✅ **docs/SCHEMA.md / CONTRIBUTING.md update**: 新 format / matcher / bracket

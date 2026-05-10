@@ -28,11 +28,10 @@ git に commit されている master HEAD の状態を基準にする。
 | [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **312** | **10 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **160** | **5.0 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
-| [**単漢字 override**](#単漢字-override) (`core/single_overrides.toml`、 issue #15 限定解) | **1** | **157 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 ★A2 alpha.11 single_overrides の後継) | **1** | **202 B** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **435** | **6.1 KB** |
-| [**エンジンルール**](#エンジンルール) (`rules/`) | **256** | **17 KB** |
-| **合計** | **49,362** | **984 KB** |
+| [**エンジンルール**](#エンジンルール) (`rules/`) | **204** | **9.9 KB** |
+| **合計** | **49,309** | **978 KB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -189,14 +188,6 @@ git に commit されている master HEAD の状態を基準にする。
 |---|---:|---:|---|
 | [`core/_inbox.toml`](core/_inbox.toml) | 0 | 180 B | 分類前の一時 inbox (≥2 字 surface、 内容が貯まったら適切な genre dir に振り分ける) |
 
-### 単漢字 override
-
-`core/single_overrides.toml` — 1 字 surface に対する明示的 default 上書き ([issue #15](https://github.com/RyuuNeko1107/ja-furigana/issues/15) の限定解、 lib Step 4 で Lindera reading より優先)。
-
-| ファイル | エントリ数 | サイズ | 用途 |
-|---|---:|---:|---|
-| [`core/single_overrides.toml`](core/single_overrides.toml) | 1 | 157 B | 単漢字 default reading override (issue #15 の限定解) |
-
 ### 単漢字 [[kanji]] format
 
 `core/kanji/*` — `[[kanji]]` block 形式で書く 1 字 surface entry (★A2 alpha.11、 旧 single_overrides の後継)。 各 block は `char` (1 字必須) + `default` reading + 文脈分岐 `[[kanji.match]]` 配列。 alpha.11 期間中は `single_overrides.toml` と duplicate 共存、 0.1.0-rc1 で Smart engine default 切替後に旧 file 削除予定。
@@ -219,7 +210,7 @@ git に commit されている master HEAD の状態を基準にする。
 `rules/` — エンジン挙動 (助数詞 / 文脈 / 後処理 等) を制御するルール群。 lib コードに embed されるのではなく、 ここで宣言的に外部化されている。
 
 <!-- AUTO-GENERATED:RULES:BEGIN -->
-**合計**: 256 エントリ / 322 ルール / 17 KB (genre 3 区分)
+**合計**: 204 エントリ / 224 ルール / 9.9 KB (genre 2 区分)
 
 #### 数値系
 
@@ -254,19 +245,6 @@ git に commit されている master HEAD の状態を基準にする。
 | [`rules/text/symbols.toml`](rules/text/symbols.toml) | 10 | 10 | 398 B | 記号 1 文字読み (+ / − / % / ‰ / 〜 / ・ / ※ 等、 chunks/split() の symbols 階層で個別 hit) |
 | [`rules/text/postprocess.toml`](rules/text/postprocess.toml) | 2 | 2 | 325 B | 出力後処理 regex (Step 7、 mode 別: hiragana / ruby / tts / romaji の出力直前に適用) |
 | **小計** (4 ファイル) | **55** | **55** | **2.1 KB** | |
-
-#### 文脈ルール
-
-同形異音語 / 数字+助数詞文脈分岐 / 単純 default 固定 — 前後 token を見て読み分け
-
-`rules/context/` — 3 ファイル
-
-| ファイル | エントリ数 | ルール数 | サイズ | 用途 |
-|---|---:|---:|---:|---|
-| [`rules/context/homonyms.toml`](rules/context/homonyms.toml) | 11 | 43 | 3.2 KB | 同形異音語 (上手 / 下手 / 人気 / 十分 等、 品詞 + 後続トークンで読み分け) |
-| [`rules/context/special.toml`](rules/context/special.toml) | 29 | 34 | 2.0 KB | 単純な読み固定化 (大人 / 何日 / 何人 等、 形態素解析が外しがちな語を default 固定) |
-| [`rules/context/numbers.toml`](rules/context/numbers.toml) | 12 | 21 | 1.6 KB | 数字を含む慣用語句の文脈ルール (一日→ツイタチ / 一月→イチガツ 等) |
-| **小計** (3 ファイル) | **52** | **98** | **6.8 KB** | |
 
 <!-- AUTO-GENERATED:RULES:END -->
 

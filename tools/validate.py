@@ -629,12 +629,15 @@ def main() -> int:
     def load_kanji(p: Path) -> None:
         unihan.update(validate_kanji_blocks(p, errors))
 
+    # ★A2 alpha.11: 旧 format file (= core/single_overrides.toml + rules/context/)
+    # は削除済 (= entry inline match + [[kanji]] block format に migration 完了)、
+    # validate.py の target からも除外。 validate_single_overrides() / validate_context()
+    # 関数自体は将来 reference 用に残置するが、 main() の target list には載せない。
     targets: list[tuple[list[Path], callable]] = [
         (discover(core, 'jukugo', recursive=True), load_jukugo),
         (discover_works(core),                     load_jukugo),
         ([core / '_inbox.toml'],                   load_jukugo),
         (discover(core, 'loanwords', recursive=True), lambda p: validate_loanwords(p, errors)),
-        ([core / 'single_overrides.toml'],   lambda p: validate_single_overrides(p, errors)),
         (discover(core, 'unihan'),                 load_unihan),
         (discover(core, 'kanji', recursive=True),  load_kanji),
         ([core / 'compat.toml'],             lambda p: validate_compat(p, errors)),
@@ -645,7 +648,6 @@ def main() -> int:
         ([rules / 'scales.toml'],            lambda p: validate_scales(p, errors)),
         ([rules / 'days.toml'],              lambda p: validate_days(p, errors)),
         (discover(rules, 'counters'),        lambda p: validate_counters(p, errors)),
-        (discover(rules, 'context'),         lambda p: validate_context(p, errors)),
     ]
 
     found = 0
