@@ -88,15 +88,18 @@ def count_entries(path: Path) -> int:
 
     対応する形式:
     - [entries] / [map] dict   (jukugo, unihan, compat, units, latin, symbols, numeric_phrases)
-    - [[entry]] / [[rule]] array of tables  (scales, postprocess, context/*, counters/*)
+    - [[entry]] / [[rule]] / [[kanji]] array of tables (scales, postprocess, context/*, counters/*, kanji/*)
     - 直接 top-level に key=value が並ぶフラット形式 (days.toml: '1' = 'ツイタチ' ...)
+
+    新 format ★A2 対応 (alpha.11): `[entries]` の値は string (Simple) でも
+    table (Detailed) でも両方カウント、 `[[kanji]]` array は list 長で件数扱い。
     """
     with open(path, "rb") as f:
         data = tomllib.load(f)
     for key in ("entries", "map"):
         if isinstance(data.get(key), dict):
             return len(data[key])
-    for key in ("entry", "rule"):
+    for key in ("entry", "rule", "kanji"):
         if isinstance(data.get(key), list):
             return len(data[key])
     # フラット (days.toml 等)
@@ -251,6 +254,8 @@ def gather_core() -> list[tuple[str, int, int]]:
     rows.extend(collect("jukugo"))
     rows.extend(collect("works"))
     rows.extend(collect("loanwords"))
+    # ★A2 alpha.11: core/kanji/ ([[kanji]] block format、 旧 single_overrides の後継)
+    rows.extend(collect("kanji"))
     p = ROOT / "core/_inbox.toml"
     if p.exists():
         rows.append(
@@ -315,13 +320,14 @@ def gen_summary(core_rows: list, rules_rows: list) -> str:
     jukugo_c, _jukugo_t, jukugo_s = slice_("core/jukugo/")
     works_c, _works_t, works_s = slice_("core/works/")
     loanwords_c, _loanwords_t, loanwords_s = slice_("core/loanwords/")
+    kanji_c, _kanji_t, kanji_s = slice_("core/kanji/")
     inbox_c, _inbox_t, inbox_s = slice_("core/_inbox.toml")
     single_ov_c, _single_ov_t, single_ov_s = slice_("core/single_overrides.toml")
     compat_c, _compat_t, compat_s = slice_("core/compat.toml")
     rules_c = sum(r[1] for r in rules_rows)
     rules_s = sum(r[4] for r in rules_rows)
-    total_c = unihan_c + jukugo_c + works_c + loanwords_c + inbox_c + single_ov_c + compat_c + rules_c
-    total_s = unihan_s + jukugo_s + works_s + loanwords_s + inbox_s + single_ov_s + compat_s + rules_s
+    total_c = unihan_c + jukugo_c + works_c + loanwords_c + kanji_c + inbox_c + single_ov_c + compat_c + rules_c
+    total_s = unihan_s + jukugo_s + works_s + loanwords_s + kanji_s + inbox_s + single_ov_s + compat_s + rules_s
 
     # 内訳の sub-section heading に anchor link でジャンプ可能にする。
     # GitHub の auto-anchor は heading の slugify 結果。
@@ -347,6 +353,10 @@ def gen_summary(core_rows: list, rules_rows: list) -> str:
     if single_ov_c > 0:
         lines.append(
             f"| [**単漢字 override**](#単漢字-override) (`core/single_overrides.toml`、 issue #15 限定解) | **{single_ov_c:,}** | **{fmt_size(single_ov_s)}** |"
+        )
+    if kanji_c > 0:
+        lines.append(
+            f"| [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 ★A2 alpha.11 single_overrides の後継) | **{kanji_c:,}** | **{fmt_size(kanji_s)}** |"
         )
     lines.extend([
         f"| [**異体字**](#異体字) (`core/compat.toml`) | **{compat_c:,}** | **{fmt_size(compat_s)}** |",
@@ -508,6 +518,7 @@ def gen_core(core_rows: list) -> str:
     jukugo_rows = [r for r in core_rows if r[0].startswith("core/jukugo/")]
     works_rows = [r for r in core_rows if r[0].startswith("core/works/")]
     loanwords_rows = [r for r in core_rows if r[0].startswith("core/loanwords/")]
+    kanji_rows = [r for r in core_rows if r[0].startswith("core/kanji/")]
     inbox_rows = [r for r in core_rows if r[0] == "core/_inbox.toml"]
     single_rows = [r for r in core_rows if r[0] == "core/single_overrides.toml"]
     compat_rows = [r for r in core_rows if r[0] == "core/compat.toml"]
@@ -547,6 +558,12 @@ def gen_core(core_rows: list) -> str:
             "単漢字 override",
             "`core/single_overrides.toml` — 1 字 surface に対する明示的 default 上書き ([issue #15](https://github.com/RyuuNeko1107/ja-furigana/issues/15) の限定解、 lib Step 4 で Lindera reading より優先)。",
             single_rows,
+        ))
+    if kanji_rows:
+        sections.append(_gen_subsection(
+            "単漢字 [[kanji]] format",
+            "`core/kanji/*` — `[[kanji]]` block 形式で書く 1 字 surface entry (★A2 alpha.11、 旧 single_overrides の後継)。 各 block は `char` (1 字必須) + `default` reading + 文脈分岐 `[[kanji.match]]` 配列。 alpha.11 期間中は `single_overrides.toml` と duplicate 共存、 0.1.0-rc1 で Smart engine default 切替後に旧 file 削除予定。",
+            kanji_rows,
         ))
     sections.append(_gen_subsection(
         "異体字",

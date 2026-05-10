@@ -90,21 +90,45 @@ def write_unihan_bucket(path: Path, fname: str, entries: dict[str, str]) -> None
 
 def dedup_unihan(compat_keys: set[str]) -> int:
     """unihan/*.toml から compat key と一致する 1 char surface を削除。
-    戻り値: 削除総数。"""
+    戻り値: 削除総数。
+
+    ★A2 alpha.11: detailed entry (= dict value with `[[match]]` block) は
+    そもそも 「文脈分岐 reading 持ち」 で、 compat 経由の単純 1 字置換とは
+    別軸の意味論なので、 削除対象から **skip** する (= write 経路にも入らないので
+    `write_unihan_bucket` の string-only assumption も safe)。
+    """
     total_removed = 0
     for fname in META_DESCRIPTIONS_UNIHAN:
         path = UNIHAN_DIR / fname
         if not path.exists():
             continue
         data = tomllib.loads(path.read_text(encoding="utf-8"))
-        entries: dict[str, str] = dict(data.get("entries", {}))
-        before = len(entries)
-        removed = [k for k in entries if k in compat_keys]
+        raw_entries: dict = dict(data.get("entries", {}))
+        # Simple entry (= string value) のみ対象、 Detailed entry は skip
+        simple_entries: dict[str, str] = {
+            k: v for k, v in raw_entries.items() if isinstance(v, str)
+        }
+        detailed_count = len(raw_entries) - len(simple_entries)
+        before = len(simple_entries)
+        removed = [k for k in simple_entries if k in compat_keys]
         for k in removed:
-            del entries[k]
+            del simple_entries[k]
         if removed:
-            write_unihan_bucket(path, fname, entries)
-        print(f"unihan/{fname}: {before:,} → {len(entries):,} (-{len(removed)})")
+            # Detailed entry を含む file は in-place edit、 write_unihan_bucket は使わない
+            if detailed_count > 0:
+                content = path.read_text(encoding="utf-8")
+                for k in removed:
+                    # `"X" = "..."` 行のみ削除 (正確な escape 不要、 surface は通常 1 字)
+                    pattern = rf'^[ \t]*"{re.escape(k)}"[ \t]*=[ \t]*"[^"]*"[ \t]*\r?\n'
+                    content = re.sub(pattern, "", content, count=1, flags=re.M)
+                path.write_text(content, encoding="utf-8", newline="\n")
+            else:
+                # Simple-only file は従来通り full rewrite
+                write_unihan_bucket(path, fname, simple_entries)
+        msg = f"unihan/{fname}: {before:,} → {len(simple_entries):,} (-{len(removed)})"
+        if detailed_count > 0:
+            msg += f" [+{detailed_count} detailed entries 保持]"
+        print(msg)
         total_removed += len(removed)
     return total_removed
 

@@ -44,8 +44,13 @@ def gather() -> dict[str, list[tuple[str, str]]]:
             data = tomllib.load(fp)
         rel = f.relative_to(ROOT).as_posix()
         for k, v in data.get('entries', {}).items():
+            # ★A2 alpha.11: Simple (string) と Detailed (dict with `reading` field) の両対応
             if isinstance(v, str):
                 seen[k].append((rel, v))
+            elif isinstance(v, dict):
+                reading = v.get('reading')
+                if isinstance(reading, str):
+                    seen[k].append((rel, reading))
     return seen
 
 
