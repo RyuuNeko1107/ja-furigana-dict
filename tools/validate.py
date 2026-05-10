@@ -33,6 +33,10 @@ from pathlib import Path
 # 内部表現上はどちらで書いても等価。
 KANA_RE = re.compile(r'^[ぁ-ゖァ-ヿー・]+$')
 
+# lib alpha.10 (★A1b) で必須化された dict schema version。
+# 各 dict / rule TOML の `[meta] schema_version = "2"` が必須、 違反は CI fail。
+SUPPORTED_SCHEMA_VERSION = "2"
+
 
 class Errors(list):
     def add_for(self, file: Path, msg: str) -> None:
@@ -390,6 +394,34 @@ def discover(base_dir: Path, name: str, *, recursive: bool = False) -> list[Path
     )
 
 
+def validate_schema_version(path: Path, errors: Errors) -> None:
+    """`[meta] schema_version = "2"` が宣言されているかを check (★A1b、 alpha.10〜)。
+
+    lib alpha.10 以降は schema_version "2" のみ accept、 不在 / 別値はエラー。
+    `_genre.toml` / `*.test.toml` / `tests/corpus/` 配下は対象外 (= 呼び出し側の
+    discover が既に弾いている前提)、 本関数は呼ばれた file 全部を check する。
+    """
+    data = load_toml(path, errors)
+    if data is None:
+        return  # parse error は load_toml 側で記録済み
+    meta = data.get("meta")
+    if not isinstance(meta, dict):
+        errors.add_for(path, "[meta] block が無い (= alpha.10〜 必須、 ★A1b)")
+        return
+    sv = meta.get("schema_version")
+    if sv is None:
+        errors.add_for(
+            path,
+            f'[meta] schema_version = "{SUPPORTED_SCHEMA_VERSION}" が必須 (alpha.10〜、 ★A1b)',
+        )
+        return
+    if sv != SUPPORTED_SCHEMA_VERSION:
+        errors.add_for(
+            path,
+            f'[meta] schema_version = {sv!r} は未対応 (期待: "{SUPPORTED_SCHEMA_VERSION}")',
+        )
+
+
 def discover_works(core_dir: Path) -> list[Path]:
     """`core/works/**/*.toml` を全階層再帰でスキャン。
 
@@ -453,6 +485,15 @@ def main() -> int:
             if path.exists():
                 validator(path)
                 found += 1
+
+    # ★A1b: 全 dict / rule TOML が `[meta] schema_version = "2"` を持つことを check。
+    # 既に走った各 validator の結果と独立した別 pass、 全 targets の path を再 walk。
+    schema_checked = 0
+    for paths, _validator in targets:
+        for path in paths:
+            if path.exists():
+                validate_schema_version(path, errors)
+                schema_checked += 1
 
     check_cross_file_duplicates(jukugo, unihan, errors)
     check_jukugo_divergent_reading(per_file_jukugo, errors)
