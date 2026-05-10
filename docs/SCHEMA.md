@@ -3,7 +3,9 @@
 `ja-furigana-dict` の各 TOML ファイルの詳細スキーマ。
 
 > 戻る: [CONTRIBUTING.md](../CONTRIBUTING.md) (クイックパス)
-> 関連: [INLINE_TESTS.md](./INLINE_TESTS.md) (`*.test.toml` の規約)
+> 関連: [RECIPES.md](./RECIPES.md) (= 「やりたい→こう書く」 cookbook) /
+> [DESIGN_NOTES.md](./DESIGN_NOTES.md) (= 設計判断の why) /
+> [INLINE_TESTS.md](./INLINE_TESTS.md) (`*.test.toml` の規約)
 
 カテゴリ別のファイル一覧 / 件数 / サイズは [STATS.md](../STATS.md) で auto-gen される。
 本書は **TOML スキーマと書き方の reference**。
