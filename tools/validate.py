@@ -27,11 +27,14 @@ import sys
 import tomllib
 from pathlib import Path
 
-# ひらがな + 全角カタカナ + 長音 (ー) + 中点 (・) を許可
+# ひらがな + 全角カタカナ + 長音 (ー) + 中点 (・) を許可。
+# 加えて intonation bracket marker (`[` `]` `/`) も許容 (= 0.1.0 forward compat、
+# lib alpha.10 〜 0.1.0 stable で reading から strip して使う、 0.2.0 で activate)。
+#
 # 訓読みはひらがな、音読みはカタカナで書くのが慣習なので、両方受け入れる。
 # エンジン側 (`furigana::kana::kata_to_hira`) で出力時に正規化されるため、
 # 内部表現上はどちらで書いても等価。
-KANA_RE = re.compile(r'^[ぁ-ゖァ-ヿー・]+$')
+KANA_RE = re.compile(r'^[ぁ-ゖァ-ヿー・\[\]/]+$')
 
 # lib alpha.10 (★A1b) で必須化された dict schema version。
 # 各 dict / rule TOML の `[meta] schema_version = "2"` が必須、 違反は CI fail。
@@ -47,8 +50,53 @@ class Errors(list):
 
 
 def is_kana(s: str) -> bool:
-    """`s` が ひらがな または 全角カタカナ (+ ー / ・) のみで構成されているか"""
+    """`s` が ひらがな または 全角カタカナ (+ ー / ・ / intonation bracket [ ] /) のみで構成されているか"""
     return bool(s) and bool(KANA_RE.fullmatch(s))
+
+
+def validate_bracket_syntax(reading: str) -> list[str]:
+    """intonation bracket notation (`[` `]` `/`) の構文検証 (0.2.0 forward compat)。
+
+    constraint:
+    - phrase 区切り `/` で分割した各 phrase 内で `[` は最大 1 個、 `]` は最大 1 個
+    - 同 phrase 内で `[` と `]` 両方ある場合は `[` が `]` より前 (= 開始 → 終了)
+    - 空 phrase 禁止 (連続 `//` / 先頭・末尾 `/`)
+
+    error message の list を返す (= 空 list なら OK)。
+    """
+    errors: list[str] = []
+    if '//' in reading:
+        errors.append("空 phrase (連続 '//')")
+    if reading.startswith('/'):
+        errors.append("先頭 '/' (= 空 leading phrase)")
+    if reading.endswith('/'):
+        errors.append("末尾 '/' (= 空 trailing phrase)")
+    for i, phrase in enumerate(reading.split('/')):
+        if not phrase:
+            continue
+        n_open = phrase.count('[')
+        n_close = phrase.count(']')
+        if n_open > 1:
+            errors.append(f"phrase[{i}] '{phrase}': '[' が {n_open} 個 (最大 1)")
+        if n_close > 1:
+            errors.append(f"phrase[{i}] '{phrase}': ']' が {n_close} 個 (最大 1)")
+        if n_open == 1 and n_close == 1:
+            i_open = phrase.index('[')
+            i_close = phrase.index(']')
+            if i_close < i_open:
+                errors.append(f"phrase[{i}] '{phrase}': ']' が '[' より前 (= 順序不正)")
+    return errors
+
+
+def check_reading(path: Path, errors: Errors, label: str, reading: str) -> None:
+    """reading の kana check + bracket 構文 check を統合的に呼ぶヘルパ。
+
+    label は error message の prefix (例: `"'X'"` / `"single_override 'X'"`)。"""
+    if not is_kana(reading):
+        errors.add_for(path, f"{label} → '{reading}' (ひらがな または 全角カタカナで書いてください)")
+        return
+    for be in validate_bracket_syntax(reading):
+        errors.add_for(path, f"{label} bracket 構文: {be}")
 
 
 def load_toml(path: Path, errors: Errors):
@@ -65,7 +113,18 @@ def load_toml(path: Path, errors: Errors):
 
 # ─── core/jukugo.toml, core/unihan.toml ────────────────────────────────────
 def validate_lookup(path: Path, errors: Errors) -> dict:
-    """[entries] section: surface (str) → カタカナ読み (str)"""
+    """[entries] section: surface → reading の検証。
+
+    新 format (★A2、 alpha.11) で entry 値は以下 3 形式が併存:
+
+    1. **Simple** (= 旧 format) — string 値: `"X" = "ヨミ"`
+    2. **inline Detailed** — inline table: `"X" = { reading = "ヨミ", match = [...] }`
+    3. **expanded Detailed** — sub-table: `[entries."X"]` + `reading = "..."` + `[[entries."X".match]]`
+
+    本関数は default reading だけ flat な dict として返し (= cross-file
+    duplicate check 用)、 reading は検証する。 match block 内の reading は
+    `validate_match_blocks` で別途検証 (= 後から呼ぶ)。
+    """
     data = load_toml(path, errors)
     if data is None:
         return {}
@@ -73,13 +132,52 @@ def validate_lookup(path: Path, errors: Errors) -> dict:
     if not isinstance(entries, dict):
         errors.add_for(path, "[entries] section が無い、または table ではない")
         return {}
-    for surface, reading in entries.items():
-        if not isinstance(reading, str):
-            errors.add_for(path, f"'{surface}': value が string ではない")
+    flat: dict[str, str] = {}
+    for surface, value in entries.items():
+        # Simple form: string value
+        if isinstance(value, str):
+            reading = value
+            check_reading(path, errors, f"'{surface}'", reading)
+            flat[surface] = reading
             continue
-        if not is_kana(reading):
-            errors.add_for(path, f"'{surface}' → '{reading}' (ひらがな または 全角カタカナで書いてください)")
-    return entries
+        # Detailed form: dict value with required `reading` field
+        if isinstance(value, dict):
+            reading = value.get('reading')
+            if not isinstance(reading, str):
+                errors.add_for(
+                    path,
+                    f"'{surface}': detailed entry に reading field 不在 (= 必須、 string)",
+                )
+                continue
+            check_reading(path, errors, f"'{surface}'", reading)
+            # match block 配列 (optional) を検証
+            matches = value.get('match', [])
+            if matches and not isinstance(matches, list):
+                errors.add_for(
+                    path,
+                    f"'{surface}': match field は array of table (現在 {type(matches).__name__})",
+                )
+                matches = []
+            for i, m in enumerate(matches):
+                if not isinstance(m, dict):
+                    errors.add_for(
+                        path,
+                        f"'{surface}': match[{i}] が table ではない",
+                    )
+                    continue
+                m_reading = m.get('reading')
+                if not isinstance(m_reading, str):
+                    errors.add_for(
+                        path,
+                        f"'{surface}': match[{i}] に reading field 不在 (= 必須、 string)",
+                    )
+                    continue
+                check_reading(path, errors, f"'{surface}' match[{i}]", m_reading)
+            flat[surface] = reading
+            continue
+        # その他 (= bool / array / etc) は型不一致として error
+        errors.add_for(path, f"'{surface}': value が string でも detailed entry でもない (型: {type(value).__name__})")
+    return flat
 
 
 # ─── core/single_overrides.toml ───────────────────────────────────────────
