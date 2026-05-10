@@ -492,6 +492,71 @@ def discover(base_dir: Path, name: str, *, recursive: bool = False) -> list[Path
     )
 
 
+def validate_kanji_blocks(path: Path, errors: Errors) -> dict[str, str]:
+    """`[[kanji]]` array of tables の検証 (★A2、 alpha.11、 `core/kanji/`)。
+
+    各 block は `char` (1 字 surface 必須) + `default` reading + optional
+    `[[kanji.match]]` 配列 (= entry inline match と同 vocabulary)。
+
+    返り値: `{ char: default_reading }` (= cross-file 重複 check 用 flat dict)。
+    """
+    data = load_toml(path, errors)
+    if data is None:
+        return {}
+    blocks = data.get("kanji")
+    if blocks is None:
+        # [[kanji]] が無くても OK (= 純 [entries] 形式 file の場合)
+        return {}
+    if not isinstance(blocks, list):
+        errors.add_for(path, "[[kanji]] は array of tables (現在 不正型)")
+        return {}
+    flat: dict[str, str] = {}
+    for i, b in enumerate(blocks):
+        if not isinstance(b, dict):
+            errors.add_for(path, f"[[kanji]][{i}] が table ではない")
+            continue
+        char = b.get("char")
+        if not isinstance(char, str) or len(char) != 1:
+            errors.add_for(
+                path,
+                f"[[kanji]][{i}]: char field が 1 字 string ではない (現在 {char!r})",
+            )
+            continue
+        default = b.get("default")
+        if not isinstance(default, str):
+            errors.add_for(
+                path,
+                f"[[kanji]][{i}] (char={char!r}): default field が string ではない",
+            )
+            continue
+        check_reading(path, errors, f"[[kanji]] char={char!r}", default)
+        # match 配列 (optional) を検証
+        matches = b.get("match", [])
+        if matches and not isinstance(matches, list):
+            errors.add_for(
+                path,
+                f"[[kanji]][{i}] (char={char!r}): match field は array of table (現在 {type(matches).__name__})",
+            )
+            matches = []
+        for j, m in enumerate(matches):
+            if not isinstance(m, dict):
+                errors.add_for(
+                    path,
+                    f"[[kanji]][{i}] (char={char!r}): match[{j}] が table ではない",
+                )
+                continue
+            m_reading = m.get("reading")
+            if not isinstance(m_reading, str):
+                errors.add_for(
+                    path,
+                    f"[[kanji]][{i}] (char={char!r}): match[{j}] に reading 不在",
+                )
+                continue
+            check_reading(path, errors, f"[[kanji]] char={char!r} match[{j}]", m_reading)
+        flat[char] = default
+    return flat
+
+
 def validate_schema_version(path: Path, errors: Errors) -> None:
     """`[meta] schema_version = "2"` が宣言されているかを check (★A1b、 alpha.10〜)。
 
@@ -559,6 +624,11 @@ def main() -> int:
     # 各 (paths, validator) ペア。paths は単一ファイル or 細分化サブディレクトリ配下。
     # jukugo / works はどちらも ≥2 字 surface の固定読み辞書として load_jukugo に流す
     # (works は作品単位 1 ファイル、ja-furigana 0.1.0-alpha.6 以降の loader 全階層対応)。
+    # ★A2 alpha.11: `core/kanji/` の [[kanji]] block (= 旧 single_overrides の後継)
+    # を unihan map にマージ (= cross-file 重複 check の対象)
+    def load_kanji(p: Path) -> None:
+        unihan.update(validate_kanji_blocks(p, errors))
+
     targets: list[tuple[list[Path], callable]] = [
         (discover(core, 'jukugo', recursive=True), load_jukugo),
         (discover_works(core),                     load_jukugo),
@@ -566,6 +636,7 @@ def main() -> int:
         (discover(core, 'loanwords', recursive=True), lambda p: validate_loanwords(p, errors)),
         ([core / 'single_overrides.toml'],   lambda p: validate_single_overrides(p, errors)),
         (discover(core, 'unihan'),                 load_unihan),
+        (discover(core, 'kanji', recursive=True),  load_kanji),
         ([core / 'compat.toml'],             lambda p: validate_compat(p, errors)),
         ([rules / 'numeric_phrases.toml'],   lambda p: validate_simple_entries(p, errors)),
         ([rules / 'symbols.toml'],           lambda p: validate_simple_entries(p, errors)),

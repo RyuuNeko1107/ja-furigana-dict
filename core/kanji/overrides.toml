@@ -1,0 +1,22 @@
+# 単漢字 default reading override (旧 single_overrides.toml の後継、 ★A2 alpha.11)
+#
+# `[[kanji]]` block 形式で書く: 各 block は `char` (1 字 surface 必須) と
+# `default` reading、 文脈分岐が要る場合は `[[kanji.match]]` block 配列を持つ
+# (matcher vocabulary は entry inline match と完全同一)。
+#
+# ## migration note
+#
+# `core/single_overrides.toml` から機械変換 (★A2 alpha.11、 `tools/migrate_kanji_format.py`)。
+# alpha.11 期間中は **両 file が duplicate 共存** (= Strict engine は旧 file、 Smart
+# engine は新 file)、 0.1.0-rc1 で Smart default 切替後に旧 file 削除可能。
+#
+# 関連 issue: <https://github.com/RyuuNeko1107/ja-furigana/issues/15>
+
+[meta]
+schema_version = "2"
+role = "kanji"
+description = "単漢字 default override + 文脈分岐 reading (★A2 alpha.11、 旧 single_overrides の後継)"
+
+[[kanji]]
+char = "土"
+default = "ツチ"
