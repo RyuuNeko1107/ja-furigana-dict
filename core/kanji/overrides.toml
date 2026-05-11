@@ -391,3 +391,122 @@ reading = "ク"
 [[kanji.match]]
 next_starts_any = ["な", "よ", "い"]
 reading = "コ"
+
+# ─── 動詞 / 形容詞 1 字 (★alpha.19) ─────────────────────────────────────────
+#
+# 設計: default = 熟語で最頻出の on-yomi、 次の文字 (= 送り仮名先頭) で kun-yomi
+# stem に分岐。 「美しい」 → 美 (ウツクシ) + しい、 「食べる」 → 食 (タベ) + べる、 等。
+# 通常は Lindera が活用全体を 1 token で返して band 50 で勝つので [[kanji]] block
+# は safety net、 declarative に書くことで trace 性 + contributor PR 余地確保。
+
+[[kanji]]
+char = "美"
+default = "ビ"  # 美術 / 美人 / 美容 / 美少女 等
+
+[[kanji.match]]
+next_starts = "し"  # 美しい / 美しかった / 美しさ
+reading = "ウツクシ"
+
+[[kanji]]
+char = "食"
+default = "ショク"  # 食事 / 食物 / 食堂 / 夕食 等
+
+[[kanji.match]]
+next_starts = "べ"  # 食べる / 食べた / 食べない / 食べます
+reading = "タベ"
+
+[[kanji.match]]
+next_starts_any = ["う", "わ", "っ"]  # 食う / 食わない / 食って (口語)
+reading = "ク"
+
+[[kanji]]
+char = "飲"
+default = "イン"  # 飲料 / 飲食
+
+[[kanji.match]]
+next_starts_any = ["み", "む", "ん", "め", "ま"]  # 飲み / 飲む / 飲んだ / 飲める / 飲まない
+reading = "ノ"
+
+[[kanji]]
+char = "走"
+default = "ソウ"  # 走行 / 競走 / 暴走
+
+[[kanji.match]]
+next_starts_any = ["り", "る", "っ", "ら", "れ"]  # 走り / 走る / 走った / 走らない / 走れば
+reading = "ハシ"
+
+[[kanji]]
+char = "高"
+default = "コウ"  # 高校 / 高速 / 最高 / 高度
+
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "さ", "ま"]  # 高い / 高く / 高かった / 高さ / 高まる
+reading = "タカ"
+
+[[kanji]]
+char = "楽"
+default = "ラク"  # 楽園 / 安楽 (= 音楽=オンガク は jukugo entry で band 1000)
+
+[[kanji.match]]
+next_starts = "し"  # 楽しい / 楽しかった / 楽しむ
+reading = "タノシ"
+
+[[kanji]]
+char = "苦"
+default = "ク"  # 苦労 / 苦痛 / 苦悩
+
+[[kanji.match]]
+next_starts = "し"  # 苦しい / 苦しんだ / 苦しさ
+reading = "クルシ"
+
+[[kanji]]
+char = "早"
+default = "ソウ"  # 早朝 / 早期 / 早急
+
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "ま"]  # 早い / 早く / 早かった / 早まる
+reading = "ハヤ"
+
+[[kanji]]
+char = "古"
+default = "コ"  # 古代 / 古典 / 中古
+
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "び"]  # 古い / 古く / 古かった / 古びる
+reading = "フル"
+
+[[kanji]]
+char = "低"
+default = "テイ"  # 低音 / 低気圧 / 低下
+
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "ま"]  # 低い / 低く / 低かった / 低まる
+reading = "ヒク"
+
+[[kanji]]
+char = "忙"
+default = "ボウ"  # 多忙 / 繁忙
+
+[[kanji.match]]
+next_starts = "し"  # 忙しい / 忙しかった
+reading = "イソガシ"
+
+[[kanji]]
+char = "読"
+default = "ドク"  # 読書 / 読者 / 音読
+
+[[kanji.match]]
+next_starts_any = ["み", "む", "ん", "め", "ま"]  # 読み / 読む / 読んだ / 読める
+reading = "ヨ"
+
+[[kanji]]
+char = "遅"
+default = "チ"  # 遅刻 / 遅延
+
+[[kanji.match]]
+next_starts_any = ["い", "く", "か"]  # 遅い / 遅く / 遅かった
+reading = "オソ"
+
+[[kanji.match]]
+next_starts = "れ"  # 遅れる / 遅れた
+reading = "オク"
