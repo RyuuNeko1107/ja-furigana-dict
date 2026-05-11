@@ -1,0 +1,324 @@
+# 自然文の回帰 corpus (★alpha.17 で新設、 形態素辞書比較用)
+#
+# 既存 should_read.toml が **熟語 / 固有名詞中心** なのに対し、 本 file は
+# **文章 / 動詞活用 / 助詞 / 口語** 等を含む 「実際の入力に近い」 case を集める。
+#
+# 用途:
+# - 形態素辞書 (IPADIC / UniDic) の比較で得意領域 / 苦手領域を観察
+# - Lindera fallback (band 50) の精度を測る (= dict 未登録部分のカバレッジ)
+# - 口語 / SNS / 会話文への対応度を測る
+#
+# 期待 reading は **表記読み** (= ガッコウ ではなく ガッコウ、 助詞「は」 は は のまま)。
+# UniDic 発音形 (= ガッコー、 「は」 → ワ) を採用したい場合は本 corpus を改修要。
+
+# === 動詞 + okurigana ====================================================
+
+[[case]]
+input = "食べる"
+mode = "hiragana"
+expected = "たべる"
+note = "標準動詞"
+
+[[case]]
+input = "食べた"
+mode = "hiragana"
+expected = "たべた"
+note = "過去形"
+
+[[case]]
+input = "食べました"
+mode = "hiragana"
+expected = "たべました"
+note = "丁寧過去"
+
+[[case]]
+input = "走り出した"
+mode = "hiragana"
+expected = "はしりだした"
+note = "複合動詞"
+
+[[case]]
+input = "読み終わる"
+mode = "hiragana"
+expected = "よみおわる"
+note = "複合動詞"
+
+[[case]]
+input = "考えている"
+mode = "hiragana"
+expected = "かんがえている"
+note = "進行形"
+
+[[case]]
+input = "行かない"
+mode = "hiragana"
+expected = "いかない"
+note = "否定形"
+
+[[case]]
+input = "来た"
+mode = "hiragana"
+expected = "きた"
+note = "カ変動詞 (来る) の活用"
+
+[[case]]
+input = "した"
+mode = "hiragana"
+expected = "した"
+note = "サ変動詞 (する) の活用、 既に kana surface"
+
+# === 形容詞 ================================================================
+
+[[case]]
+input = "大きい"
+mode = "hiragana"
+expected = "おおきい"
+note = "イ形容詞"
+
+[[case]]
+input = "美しい花"
+mode = "hiragana"
+expected = "うつくしいはな"
+note = "イ形容詞 + 名詞"
+
+[[case]]
+input = "楽しかった"
+mode = "hiragana"
+expected = "たのしかった"
+note = "イ形容詞過去形"
+
+[[case]]
+input = "静かな夜"
+mode = "hiragana"
+expected = "しずかなよる"
+note = "ナ形容詞"
+
+[[case]]
+input = "便利だ"
+mode = "hiragana"
+expected = "べんりだ"
+note = "ナ形容詞"
+
+# === 助詞混在 =============================================================
+
+[[case]]
+input = "猫が好き"
+mode = "hiragana"
+expected = "ねこがすき"
+note = "助詞 が、 標準助詞"
+
+[[case]]
+input = "本を読む"
+mode = "hiragana"
+expected = "ほんをよむ"
+note = "助詞 を、 動詞"
+
+[[case]]
+input = "私は学生です"
+mode = "hiragana"
+expected = "わたしはがくせいです"
+note = "助詞 は、 「は」 は ハ のまま (= 表記読み)、 UniDic 発音 ワ ではない"
+
+[[case]]
+input = "明日学校へ行く"
+mode = "hiragana"
+expected = "あしたがっこうへいく"
+note = "助詞 へ、 「へ」 は ヘ のまま"
+
+[[case]]
+input = "犬と遊ぶ"
+mode = "hiragana"
+expected = "いぬとあそぶ"
+note = "助詞 と"
+
+[[case]]
+input = "東京の駅"
+mode = "hiragana"
+expected = "とうきょうのえき"
+note = "助詞 の、 固有名詞"
+
+# === 自然文 (記事 / Web text 想定) ========================================
+
+[[case]]
+input = "今日は晴れです"
+mode = "hiragana"
+expected = "きょうははれです"
+note = "今日=キョウ jukugo、 助詞 は"
+
+[[case]]
+input = "明日は雨が降る"
+mode = "hiragana"
+expected = "あすはあめがふる"
+note = "明日=アス、 動詞 降る"
+
+[[case]]
+input = "猫が魚を食べた"
+mode = "hiragana"
+expected = "ねこがさかなをたべた"
+note = "助詞混在 + 動詞過去"
+
+[[case]]
+input = "新しい技術が登場した"
+mode = "hiragana"
+expected = "あたらしいぎじゅつがとうじょうした"
+note = "形容詞 + 名詞 + 助詞 + サ変動詞"
+
+[[case]]
+input = "東京駅で待ち合わせをした"
+mode = "hiragana"
+expected = "とうきょうえきでまちあわせをした"
+note = "固有名詞 + 助詞 で + 複合動詞"
+
+[[case]]
+input = "明日会議があります"
+mode = "hiragana"
+expected = "あすかいぎがあります"
+note = "明日 + 会議 jukugo + 助詞 + 動詞"
+
+[[case]]
+input = "毎日コーヒーを飲む"
+mode = "hiragana"
+expected = "まいにちコーヒーをのむ"
+note = "毎日 jukugo + カタカナ surface + 助詞 + 動詞"
+
+[[case]]
+input = "週末は休みです"
+mode = "hiragana"
+expected = "しゅうまつはやすみです"
+note = "週末 jukugo + 助詞 + 形容名詞"
+
+[[case]]
+input = "彼は学校の先生だ"
+mode = "hiragana"
+expected = "かれはがっこうのせんせいだ"
+note = "彼=カレ + 助詞 + 学校 + の + 先生 jukugo"
+
+[[case]]
+input = "私の本が机の上にある"
+mode = "hiragana"
+expected = "わたしのほんがつくえのうえにある"
+note = "助詞重ね + 上 = うえ (kun)"
+
+# === 数字 / 助数詞 =======================================================
+
+[[case]]
+input = "3冊の本を読んだ"
+mode = "hiragana"
+expected = "さんさつのほんをよんだ"
+note = "数値 + counter (冊) + 動詞"
+
+[[case]]
+input = "2時間勉強した"
+mode = "hiragana"
+expected = "にじかんべんきょうした"
+note = "時間 counter + サ変動詞"
+
+[[case]]
+input = "5人で出かけた"
+mode = "hiragana"
+expected = "ごにんででかけた"
+note = "人 counter + 複合動詞"
+
+# === 口語 / SNS 寄り =====================================================
+
+[[case]]
+input = "やっぱり美味しい"
+mode = "hiragana"
+expected = "やっぱりおいしい"
+note = "口語副詞 + イ形容詞"
+
+[[case]]
+input = "すごく楽しかった"
+mode = "hiragana"
+expected = "すごくたのしかった"
+note = "口語副詞"
+
+[[case]]
+input = "ちょっと待って"
+mode = "hiragana"
+expected = "ちょっとまって"
+note = "口語動詞活用 (待って)"
+
+[[case]]
+input = "そうだね"
+mode = "hiragana"
+expected = "そうだね"
+note = "全 kana surface"
+
+[[case]]
+input = "なんでもない"
+mode = "hiragana"
+expected = "なんでもない"
+note = "全 kana"
+
+# === 連体修飾 / 助動詞 ===================================================
+
+[[case]]
+input = "綺麗な景色だ"
+mode = "hiragana"
+expected = "きれいなけしきだ"
+note = "ナ形容詞 + 名詞"
+
+[[case]]
+input = "高い山が見える"
+mode = "hiragana"
+expected = "たかいやまがみえる"
+note = "イ形容詞 + 山 (kun) + 助詞 + 動詞"
+
+[[case]]
+input = "大きな声で笑う"
+mode = "hiragana"
+expected = "おおきなこえでわらう"
+note = "連体修飾 大きな + 声 + 助詞 + 動詞"
+
+# === 慣用表現 ===========================================================
+
+[[case]]
+input = "こんにちは"
+mode = "hiragana"
+expected = "こんにちは"
+note = "全 hiragana surface、 UniDic は は→ワ で間違える"
+
+[[case]]
+input = "おはようございます"
+mode = "hiragana"
+expected = "おはようございます"
+note = "全 hiragana"
+
+[[case]]
+input = "ありがとうございました"
+mode = "hiragana"
+expected = "ありがとうございました"
+note = "全 hiragana"
+
+[[case]]
+input = "すみません"
+mode = "hiragana"
+expected = "すみません"
+note = "全 hiragana"
+
+# === 漢字混在の難読語 ====================================================
+
+[[case]]
+input = "雰囲気が良い"
+mode = "hiragana"
+expected = "ふんいきがよい"
+note = "雰囲気 jukugo (alpha 期で よく落とす case)"
+
+[[case]]
+input = "代替案を出す"
+mode = "hiragana"
+expected = "だいたいあんをだす"
+note = "代替 jukugo、 代替案 jukugo (= ダイタイアン)"
+
+[[case]]
+input = "発表会で歌う"
+mode = "hiragana"
+expected = "はっぴょうかいでうたう"
+note = "発表会 jukugo (= ハッピョウカイ)、 連濁"
+
+[[case]]
+input = "技術者が集まる"
+mode = "hiragana"
+expected = "ぎじゅつしゃがあつまる"
+note = "技術者 jukugo (= ギジュツシャ)"
