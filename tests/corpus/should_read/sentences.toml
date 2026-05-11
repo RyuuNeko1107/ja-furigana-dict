@@ -8,8 +8,15 @@
 # - Lindera fallback (band 50) の精度を測る (= dict 未登録部分のカバレッジ)
 # - 口語 / SNS / 会話文への対応度を測る
 #
-# 期待 reading は **表記読み** (= ガッコウ ではなく ガッコウ、 助詞「は」 は は のまま)。
-# UniDic 発音形 (= ガッコー、 「は」 → ワ) を採用したい場合は本 corpus を改修要。
+# 期待 reading は **読み上げ向け (= 発音)**:
+# - 漢字 → 表記読み (ガッコウ、 ジョウズ、 等)
+# - 助詞 は → わ (= 「私は学生」 → 「わたしわがくせい」)
+# - 助詞 へ → え (= 「学校へ」 → 「がっこうえ」)
+# - 助詞 を → お (= 「本を読む」 → 「ほんおよむ」)
+# - 長音 (= UniDic 発音形 「ガッコー」 等) は normalize で 表記読み 「ガッコウ」 に変換済
+#
+# 「ルビ振り (ruby mode)」 では surface 維持なので、 「私は学生」 → 「{私|わたし}は{学生|がくせい}」
+# のように 「は」 は そのまま保持される (= 別 corpus / test で確認)。
 
 # === 動詞 + okurigana ====================================================
 
@@ -110,20 +117,20 @@ note = "助詞 が、 標準助詞"
 [[case]]
 input = "本を読む"
 mode = "hiragana"
-expected = "ほんをよむ"
-note = "助詞 を、 動詞"
+expected = "ほんおよむ"
+note = "助詞 を → お (= 読み上げ向け、 UniDic 経路で自動的に発音形 オ に展開)"
 
 [[case]]
 input = "私は学生です"
 mode = "hiragana"
-expected = "わたしはがくせいです"
-note = "助詞 は、 「は」 は ハ のまま (= 表記読み)、 UniDic 発音 ワ ではない"
+expected = "わたしわがくせいです"
+note = "助詞 は → わ (= 読み上げ向け、 UniDic 経路で自動的に発音形 ワ に展開、 IPADIC では「は」 のまま fail する)"
 
 [[case]]
 input = "明日学校へ行く"
 mode = "hiragana"
-expected = "あしたがっこうへいく"
-note = "助詞 へ、 「へ」 は ヘ のまま"
+expected = "あしたがっこうえいく"
+note = "助詞 へ → え (= 読み上げ向け、 UniDic 経路、 IPADIC では「へ」 のまま fail)"
 
 [[case]]
 input = "犬と遊ぶ"
@@ -142,19 +149,19 @@ note = "助詞 の、 固有名詞"
 [[case]]
 input = "今日は晴れです"
 mode = "hiragana"
-expected = "きょうははれです"
-note = "今日=キョウ jukugo、 助詞 は"
+expected = "きょうわはれです"
+note = "今日=キョウ jukugo + 助詞 は → わ (読み上げ向け)"
 
 [[case]]
 input = "明日は雨が降る"
 mode = "hiragana"
-expected = "あすはあめがふる"
-note = "明日=アス、 動詞 降る"
+expected = "あすわあめがふる"
+note = "明日=アス + 助詞 は → わ"
 
 [[case]]
 input = "猫が魚を食べた"
 mode = "hiragana"
-expected = "ねこがさかなをたべた"
+expected = "ねこがさかなおたべた"
 note = "助詞混在 + 動詞過去"
 
 [[case]]
@@ -166,7 +173,7 @@ note = "形容詞 + 名詞 + 助詞 + サ変動詞"
 [[case]]
 input = "東京駅で待ち合わせをした"
 mode = "hiragana"
-expected = "とうきょうえきでまちあわせをした"
+expected = "とうきょうえきでまちあわせおした"
 note = "固有名詞 + 助詞 で + 複合動詞"
 
 [[case]]
@@ -178,20 +185,20 @@ note = "明日 + 会議 jukugo + 助詞 + 動詞"
 [[case]]
 input = "毎日コーヒーを飲む"
 mode = "hiragana"
-expected = "まいにちコーヒーをのむ"
+expected = "まいにちコーヒーおのむ"
 note = "毎日 jukugo + カタカナ surface + 助詞 + 動詞"
 
 [[case]]
 input = "週末は休みです"
 mode = "hiragana"
-expected = "しゅうまつはやすみです"
-note = "週末 jukugo + 助詞 + 形容名詞"
+expected = "しゅうまつわやすみです"
+note = "週末 jukugo + 助詞 は → わ"
 
 [[case]]
 input = "彼は学校の先生だ"
 mode = "hiragana"
-expected = "かれはがっこうのせんせいだ"
-note = "彼=カレ + 助詞 + 学校 + の + 先生 jukugo"
+expected = "かれわがっこうのせんせいだ"
+note = "彼=カレ + 助詞 は → わ + 学校 + の + 先生 jukugo"
 
 [[case]]
 input = "私の本が机の上にある"
@@ -204,7 +211,7 @@ note = "助詞重ね + 上 = うえ (kun)"
 [[case]]
 input = "3冊の本を読んだ"
 mode = "hiragana"
-expected = "さんさつのほんをよんだ"
+expected = "さんさつのほんおよんだ"
 note = "数値 + counter (冊) + 動詞"
 
 [[case]]
@@ -276,8 +283,8 @@ note = "連体修飾 大きな + 声 + 助詞 + 動詞"
 [[case]]
 input = "こんにちは"
 mode = "hiragana"
-expected = "こんにちは"
-note = "全 hiragana surface、 UniDic は は→ワ で間違える"
+expected = "こんにちわ"
+note = "あいさつ、 末尾の は は particle 由来で 「わ」 と読む (= 読み上げ向け)、 UniDic 経路で正解"
 
 [[case]]
 input = "おはようございます"
@@ -308,7 +315,7 @@ note = "雰囲気 jukugo (alpha 期で よく落とす case)"
 [[case]]
 input = "代替案を出す"
 mode = "hiragana"
-expected = "だいたいあんをだす"
+expected = "だいたいあんおだす"
 note = "代替 jukugo、 代替案 jukugo (= ダイタイアン)"
 
 [[case]]
