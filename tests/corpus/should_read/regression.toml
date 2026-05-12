@@ -1009,3 +1009,30 @@ expected = "イカけん"
 input = "研ぐ"
 mode = "hiragana"
 expected = "とぐ"
+
+# ─── round 26: 体/系 default ────────────────────────────────────────────────
+
+[[case]]
+input = "実験体"
+mode = "hiragana"
+expected = "じっけんたい"
+
+[[case]]
+input = "個体"
+mode = "hiragana"
+expected = "こたい"
+
+[[case]]
+input = "体が"
+mode = "hiragana"
+expected = "からだが"
+
+[[case]]
+input = "丼系"
+mode = "hiragana"
+expected = "どんぶりけい"
+
+[[case]]
+input = "太陽系"
+mode = "hiragana"
+expected = "たいようけい"
