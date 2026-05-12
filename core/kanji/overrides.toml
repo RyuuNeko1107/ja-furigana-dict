@@ -85,6 +85,12 @@ reading = "まえ"
 next_eq = "々"
 reading = "まえ"
 
+# 「前 + 動詞 (= 言/見/聞/思/etc)」 = 「以前 〜 した」 用法、 default ゼン だと
+# 「前言ってた → ゼンイッテタ」 になるが本来 「マエイッテタ」、 round 31 で fix
+[[kanji.match]]
+next_eq_any = ["言", "見", "聞", "思", "話", "書", "読", "持", "来", "行", "歩"]
+reading = "まえ"
+
 [[kanji]]
 char = "後"
 default = "ゴ"
@@ -351,6 +357,11 @@ reading = "あし"
 next_eq = "々"
 reading = "あし"
 
+# 「足書く / 足音 / 足跡」 等 漢字後続も訓読み 「アシ」 が自然 (★round 36)
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "あし"
+
 [[kanji]]
 char = "車"
 default = "シャ"
@@ -400,10 +411,10 @@ reading = "いま"
 char = "来"
 default = "ライ"  # 来年/来週/来月/未来/将来 等の compound 用
 
-# 「来た / 来て / 来ます / 来ちゃった / 来やすい」 = キ + 送りがな
-# (★round 22 「ち」、 ★round 24 「や」 追加)
+# 「来た / 来て / 来ます / 来ちゃった / 来やすい / 来そう」 = キ + 送りがな
+# (★round 22 「ち」、 ★round 24 「や」、 ★round 32 「そ」 追加)
 [[kanji.match]]
-next_starts_any = ["た", "て", "ま", "ち", "や"]
+next_starts_any = ["た", "て", "ま", "ち", "や", "そ"]
 reading = "キ"
 
 [[kanji.match]]
@@ -603,9 +614,10 @@ reading = "カ"
 
 [[kanji]]
 char = "変"
-default = "ヘン"
+default = "ヘン"  # 変な / 変だ / 変身 / 変化 / 変装 等は 「ヘン」、 round 33 で 「な / だ」
+                  # を default に fallback、 動詞活用のみ 「カ」 に
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_starts_any = ["え", "わ"]  # 「変える / 変わる / 変わった / 変わらない」 = カ + 送りがな
 reading = "カ"
 
 [[kanji]]
@@ -613,6 +625,10 @@ char = "寝"
 default = "シン"
 [[kanji.match]]
 next_char_type = "ひらがな"
+reading = "ネ"
+# 「寝落ち / 寝顔 / 寝坊」 等 漢字後続も訓読み 「ネ」 が自然 (★round 36)
+[[kanji.match]]
+next_char_type = "漢字"
 reading = "ネ"
 
 # ─── 多義動詞 (★alpha.21 round 2、 行/入/落/出 を next_starts で精密分岐) ─────
@@ -1043,6 +1059,11 @@ default = "タイ"
 [[kanji.match]]
 next_char_type = "ひらがな"
 reading = "からだ"
+# 「体壊し / 体調 / 体力」 のうち jukugo は band 1000 で勝つので、 ここの次=漢字
+# fallback は 「体+動詞 (= 壊/作/変)」 系で 「カラダ」 を選ぶ (★round 36)
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "からだ"
 
 # 「系」: 接尾辞 「ケイ」 (= 「丼系 / 太陽系 / 体系 / 神経系 / 男系」) が圧倒的。
 # 「かける」 は誤読、 unihan default は誤。
@@ -1160,4 +1181,161 @@ default = "わらい"
 [[kanji.match]]
 next_char_type = "ひらがな"
 reading = "わら"
+
+
+# 「君」 接尾辞用法 (= 「太郎君 / マリオ君 / ねこ君」) は 「クン」、 default は名詞
+# 「キミ」 (= 「君が代 / 君は」)。 直前 漢字 / カタカナ で接尾辞判定、 直前 ひらがな
+# は 「あの君」 等 default 「キミ」 で問題ない。
+[[kanji]]
+char = "君"
+default = "キミ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "クン"
+
+[[kanji.match]]
+prev_char_type = "カタカナ"
+reading = "クン"
+
+# 「ねこ君 / みく君」 等 ひらがな名前 + 君、 現代用法でほぼ 「クン」。
+# 「あの君 / この君」 は文語的、 現代チャット corpus ではまず出現しない
+[[kanji.match]]
+prev_char_type = "ひらがな"
+reading = "クン"
+
+
+# 「客」 unihan default 「マロウド」 (= 訓読み古語) では現代用法に不適、 「キャク」
+# (= 「来客 / 客席 / 観客」) が default、 round 32 で override
+[[kanji]]
+char = "客"
+default = "キャク"
+
+
+# 「方」 unihan default 「カタ」 (= 「あの方」 = 人物指示 / 「方位」)、 ただし
+# 「方が」 (= 比較構文 「〜の方がいい」) は 「ホウ」、 round 32 で 「次=が」 → ホウ
+[[kanji]]
+char = "方"
+default = "カタ"
+
+# next_eq だと next_logical_token がひらがな連続 (= 「がいい」 等) を返すため
+# 1 char match できない、 next_starts = first-char match を使う (★round 34)
+[[kanji.match]]
+next_starts_any = ["が", "は", "に", "を", "も"]
+reading = "ホウ"
+
+
+# 「日」 unihan default 「ニチ」 (= 「7 日 / 一日中」)、 ただし 「日 + も/は/が/に」
+# (= 「日 = ひ」 名詞) では 「ヒ」、 round 32 で 文脈分岐
+[[kanji]]
+char = "日"
+default = "ニチ"
+
+# next_eq_any は ひらがな連続全体と比較、 next_starts_any は先頭 1 char と比較
+# (★round 34 で 「日もある」 等の文中文脈に match させるため next_starts_any 化)
+[[kanji.match]]
+next_starts_any = ["も", "は", "が", "に", "の", "を"]
+reading = "ヒ"
+
+
+# 「剣」 unihan default 「ツルギ」 (= 訓読み古語) では現代用法に不適、 「ケン」
+# (= 「剣道 / 剣士 / 大剣 / 双剣 / 抜剣」) が default、 round 33 で override。
+# 「剣の試練」 等ゲーム文脈の 「ツルギ」 は jukugo 個別登録で band 1000
+[[kanji]]
+char = "剣"
+default = "ケン"
+
+
+# 「斬」 unihan default 「きる」 (= ひらがな動詞語幹) では 「斬撃 / 斬殺」 等の音読み
+# 「ザン」 が default、 round 33 で override。 動詞用法は jukugo 個別登録 (= 「斬る /
+# 斬り / 斬って / 斬った」 で band 1000)
+[[kanji]]
+char = "斬"
+default = "ザン"
+
+[[kanji.match]]
+next_starts_any = ["る", "り", "っ", "ら"]
+reading = "キ"
+
+
+# 「速」 unihan default 「はやい」 (= 形容詞語幹 ひらがな) では 「速度 / 速攻 / 高速」
+# 等の音読み 「ソク」 が default、 round 33 で override。 形容詞活用は next ひらがな
+# で 「ハヤ」 stem に分岐 (= 「速い / 速さ / 速く / 速かった」)
+[[kanji]]
+char = "速"
+default = "ソク"
+
+[[kanji.match]]
+next_char_type = "ひらがな"
+reading = "ハヤ"
+
+
+# ★round 36、 unihan/joyo の動詞訓読み default 偏向 sweep:
+# 「割」 unihan default 「わる」 (= 動詞語幹) → 名詞 / 接尾辞 「ワリ」 が圧倒的、 default
+# 「ワリ」、 動詞活用は next ひらがな → ワ
+[[kanji]]
+char = "割"
+default = "ワリ"
+
+[[kanji.match]]
+next_starts_any = ["る", "っ", "ら", "ろ", "れ"]
+reading = "ワ"
+
+
+# 「内」 unihan default 「うち」 (= 訓読み) → ゲーム/IT 文脈で 「ナイ」 (= 「ブレワイ内 /
+# 体内 / 国内 / 屋内」) が default、 「うち」 は jukugo / 動詞活用で文脈分岐
+[[kanji]]
+char = "内"
+default = "ナイ"
+
+[[kanji.match]]
+prev_char_type = "カタカナ"  # 「ブレワイ内 / システム内 / マップ内」 等
+reading = "ナイ"
+
+[[kanji.match]]
+next_char_type = "ひらがな"  # 「内なる / 内に」 等の名詞用法
+reading = "うち"
+
+
+# 「台」 unihan default 「うてな」 (= 訓読み古語) → 現代用法 「ダイ」 (= 「作業台 / 台所
+# / 台風 / 食卓 / 1 台」) が default
+[[kanji]]
+char = "台"
+default = "ダイ"
+
+
+# 「服」 unihan default 「したがう」 (= 古典動詞) → 現代用法 「フク」 (= 「服装 / 制服 /
+# 私服 / 1 服」) が default
+[[kanji]]
+char = "服"
+default = "フク"
+
+
+# 「第」 unihan default 「ただ」 (= 訓読み古語) → 現代用法 「ダイ」 (= 「第一 / 第二 /
+# 第三 / 第N」 接頭辞) が default
+[[kanji]]
+char = "第"
+default = "ダイ"
+
+
+# 「蒸」 unihan default 「むす」 (= 動詞語幹) → jukugo 用 「ジョウ」 (= 「蒸気 / 蒸発 /
+# 蒸留」) が default、 動詞活用は next ひらがな → ムシ stem (= 「蒸す / 蒸し / 蒸そう」)
+[[kanji]]
+char = "蒸"
+default = "ジョウ"
+
+[[kanji.match]]
+next_char_type = "ひらがな"
+reading = "ムシ"
+
+
+# 「煽」 unihan default 「あおり」 (= 名詞形 1 字) → default を 「アオリ」 (= 名詞 「煽り」)、
+# 動詞活用は next ひらがな → アオ stem (= 「煽る / 煽り / 煽って / 煽った」)
+[[kanji]]
+char = "煽"
+default = "アオリ"
+
+[[kanji.match]]
+next_starts_any = ["る", "っ", "ら", "ろ", "れ"]
+reading = "アオ"
 

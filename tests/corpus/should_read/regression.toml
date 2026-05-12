@@ -1179,3 +1179,124 @@ expected = "いる"
 input = "直線"
 mode = "hiragana"
 expected = "ちょくせん"
+
+# === round 31: 卑怯者 / 君 / 前+動詞 ===
+
+[[case]]
+input = "卑怯者"
+mode = "hiragana"
+expected = "ひきょうもの"
+
+[[case]]
+input = "ねこ君"
+mode = "hiragana"
+expected = "ねこくん"
+
+[[case]]
+input = "太郎君"
+mode = "hiragana"
+expected = "たろうくん"
+
+[[case]]
+input = "君が代"
+mode = "hiragana"
+expected = "きみがよ"
+
+[[case]]
+input = "前言ってた"
+mode = "hiragana"
+expected = "まえいってた"
+
+[[case]]
+input = "前見たやつ"
+mode = "hiragana"
+expected = "まえみたやつ"
+
+# === round 32: 入/来/客/2人/2桁/方/日 ===
+
+[[case]]
+input = "俺入れん?"
+mode = "hiragana"
+expected = "おれいれん?"
+
+[[case]]
+input = "入れて"
+mode = "hiragana"
+expected = "いれて"
+
+[[case]]
+input = "来そう"
+mode = "hiragana"
+expected = "きそう"
+
+[[case]]
+input = "客の数"
+mode = "hiragana"
+expected = "きゃくのかず"
+
+[[case]]
+input = "2人で行く"
+mode = "hiragana"
+expected = "ふたりでいく"
+
+[[case]]
+input = "2桁キル"
+mode = "hiragana"
+expected = "ふたけたキル"
+
+[[case]]
+input = "こっちの方がいい"
+mode = "hiragana"
+expected = "こっちのほうがいい"
+
+[[case]]
+input = "そんな日もある"
+mode = "hiragana"
+expected = "そんなひもある"
+
+# === round 33: 致命誤読 fix (変 / 方+に / 速い / 大剣 / 実写 / 斬り) ===
+
+[[case]]
+input = "変なの"
+mode = "hiragana"
+expected = "へんなの"
+
+[[case]]
+input = "変だな"
+mode = "hiragana"
+expected = "へんだな"
+
+[[case]]
+input = "変える"
+mode = "hiragana"
+expected = "かえる"
+
+[[case]]
+input = "方にいこ"
+mode = "hiragana"
+expected = "ほうにいこ"
+
+[[case]]
+input = "速さが高い"
+mode = "hiragana"
+expected = "はやさがたかい"
+
+[[case]]
+input = "速い"
+mode = "hiragana"
+expected = "はやい"
+
+[[case]]
+input = "大剣ぶん回し"
+mode = "hiragana"
+expected = "だいけんぶんまわし"
+
+[[case]]
+input = "実写化"
+mode = "hiragana"
+expected = "じっしゃか"
+
+[[case]]
+input = "横振り斬り"
+mode = "hiragana"
+expected = "よこふりきり"
