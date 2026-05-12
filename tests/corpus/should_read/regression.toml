@@ -1084,7 +1084,9 @@ expected = "こんど"
 [[case]]
 input = "マニュ勢"
 mode = "hiragana"
-expected = "マニュせい"
+# round 47 で 「勢」 prev カタカナ → ゼイ 連濁ルール追加 (= 「○○勢」 接尾辞)、
+# expected を 「マニュぜい」 に更新
+expected = "マニュぜい"
 
 [[case]]
 input = "大勢"
