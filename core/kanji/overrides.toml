@@ -593,6 +593,61 @@ default = "シン"
 next_char_type = "ひらがな"
 reading = "ネ"
 
+# ─── 多義動詞 (★alpha.21 round 2、 行/入/落/出 を next_starts で精密分岐) ─────
+#
+# 1 字 [[kanji]] block で 2 つの訓読みを切り替える設計。 ひらがな送りがなの先頭文字
+# (next_starts / next_starts_any) で 「どの活用語幹を使うか」 を declarative に書ける。
+# default は熟語用音読み (= dict band 1000 で個別熟語 entry が勝つので、 dict 未登録の
+# 漢字連続 case の fallback としてのみ使われる)。
+
+[[kanji]]
+char = "行"
+default = "ギョウ"
+# 「行く / 行か / 行け / 行こう / 行って」 = イ + 送りがな
+[[kanji.match]]
+next_starts_any = ["く", "か", "け", "こ", "っ"]
+reading = "イ"
+# 「行う / 行わ / 行え / 行おう / 行い」 = オコナ + 送りがな
+[[kanji.match]]
+next_starts_any = ["う", "わ", "え", "お", "い"]
+reading = "オコナ"
+
+[[kanji]]
+char = "入"
+default = "ニュウ"
+# 「入って / 入る / 入り / 入ろう / 入らない」 = ハイ + 送りがな
+[[kanji.match]]
+next_starts_any = ["っ", "る", "り", "ろ", "ら"]
+reading = "ハイ"
+# 「入れる / 入れた / 入れて」 = イ + 送りがな
+[[kanji.match]]
+next_starts = "れ"
+reading = "イ"
+
+[[kanji]]
+char = "落"
+default = "ラク"
+# 「落ちる / 落ちた / 落ちて / 落ちます」 = オチ + 送りがな
+[[kanji.match]]
+next_starts = "ち"
+reading = "オチ"
+# 「落とす / 落とした / 落として」 = オト + 送りがな
+[[kanji.match]]
+next_starts = "と"
+reading = "オト"
+
+[[kanji]]
+char = "出"
+default = "シュツ"
+# 「出る / 出て / 出ない / 出よう / 出ろ」 = デ + 送りがな
+[[kanji.match]]
+next_starts_any = ["る", "て", "な", "よ", "ろ"]
+reading = "デ"
+# 「出す / 出した / 出して / 出さない / 出せ / 出そう」 = ダ + 送りがな
+[[kanji.match]]
+next_starts_any = ["す", "し", "さ", "せ", "そ"]
+reading = "ダ"
+
 # ─── 笑 (★alpha.21、 単独 「笑」 が「わらう」 動詞形で出る違和感を修正) ──────
 #
 # わんコメ実コメで 「笑」 単独 (= 文末 「コメ笑」 のような (笑) 代用) が
