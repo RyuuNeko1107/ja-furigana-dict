@@ -810,3 +810,20 @@ expected = "えほん"
 input = "絵画"
 mode = "hiragana"
 expected = "かいが"
+
+# ─── round 19: 曲 next_starts 厳格化 + 体 助数詞 ─────────────────────────────
+
+[[case]]
+input = "あの曲は"
+mode = "hiragana"
+expected = "あのきょくは"
+
+[[case]]
+input = "曲げる"
+mode = "hiragana"
+expected = "まげる"
+
+[[case]]
+input = "3体"
+mode = "hiragana"
+expected = "さんたい"
