@@ -768,3 +768,45 @@ expected = "でた"
 input = "出ます"
 mode = "hiragana"
 expected = "でます"
+
+# ─── round 18: 運/劇/絵 default 修正 ────────────────────────────────────────
+
+[[case]]
+input = "運じゃない"
+mode = "hiragana"
+expected = "うんじゃない"
+
+[[case]]
+input = "幸運"
+mode = "hiragana"
+expected = "こううん"
+
+[[case]]
+input = "運ぶ"
+mode = "hiragana"
+expected = "はこぶ"
+
+[[case]]
+input = "茶番劇"
+mode = "hiragana"
+expected = "ちゃばんげき"
+
+[[case]]
+input = "演劇"
+mode = "hiragana"
+expected = "えんげき"
+
+[[case]]
+input = "絵下手"
+mode = "hiragana"
+expected = "えへた"
+
+[[case]]
+input = "絵本"
+mode = "hiragana"
+expected = "えほん"
+
+[[case]]
+input = "絵画"
+mode = "hiragana"
+expected = "かいが"
