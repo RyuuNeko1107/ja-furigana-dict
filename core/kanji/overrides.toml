@@ -510,3 +510,23 @@ reading = "オソ"
 [[kanji.match]]
 next_starts = "れ"  # 遅れる / 遅れた
 reading = "オク"
+
+# ─── 笑 (★alpha.21、 単独 「笑」 が「わらう」 動詞形で出る違和感を修正) ──────
+#
+# わんコメ実コメで 「笑」 単独 (= 文末 「コメ笑」 のような (笑) 代用) が
+# 「わらう」 と動詞形で読まれる現象を、 名詞形 default + ひらがな後続で動詞語幹に
+# 切り替える設計で対応:
+# - default = 「わらい」 (= 名詞形、 「コメ笑」 → 「コメわらい」、 文末 silent 化は
+#   caller / TTS postprocess で実施想定)
+# - ひらがな後続 → 「わら」 (= 動詞語幹、 「笑+う/える/った/わない」 等の活用に対応)
+#
+# 熟語 (= 笑顔 / 微笑 / 苦笑 等) は dict band 1000 が勝つので、 ここの [[kanji]] block
+# は band 100 fallback として作用、 熟語 path を破壊しない。
+[[kanji]]
+char = "笑"
+default = "わらい"
+
+[[kanji.match]]
+next_char_type = "ひらがな"
+reading = "わら"
+
