@@ -388,103 +388,103 @@ note = "雅 + 装い + 茶会 + 参加"
 [[case]]
 input = "気温が25度を超える夏日"
 mode = "hiragana"
-expected = "きおんが25どをこえるなつび"
+expected = "きおんがにじゅうごどをこえるなつび"
 note = "気温 + 数字+度 + 夏日"
 
 [[case]]
 input = "標高3000メートルの山に登る"
 mode = "hiragana"
-expected = "ひょうこう3000メートルのやまにのぼる"
+expected = "ひょうこうさんぜんメートルのやまにのぼる"
 note = "標高 + 数字+単位 + 山 + 登る"
 
 [[case]]
 input = "1時間で10キロを歩く"
 mode = "hiragana"
-expected = "1じかんで10キロをあるく"
+expected = "いちじかんでじゅうキロをあるく"
 note = "時間 counter + キロ + 歩く"
 
 [[case]]
 input = "5月5日は子供の日"
 mode = "hiragana"
-expected = "5がつ5にちはこどものひ"
+expected = "ごがついつかはこどものひ"
 note = "日付 (= 月/日 counter)"
 
 [[case]]
 input = "12時30分にお昼ご飯を食べる"
 mode = "hiragana"
-expected = "12じ30ふんにおひるごはんをたべる"
+expected = "じゅうにじさんじゅっぷんにおひるごはんをたべる"
 note = "時刻 + お昼ご飯"
 
 [[case]]
 input = "今年で30歳になる"
 mode = "hiragana"
-expected = "ことしで30さいになる"
+expected = "ことしでさんじゅっさいになる"
 note = "今年 + 数字+歳"
 
 [[case]]
 input = "100円ショップで便利な物を買う"
 mode = "hiragana"
-expected = "100えんショップでべんりなものをかう"
+expected = "ひゃくえんショップでべんりなものをかう"
 note = "100円 + ショップ + 便利"
 
 [[case]]
 input = "売上が前年比15%増加した"
 mode = "hiragana"
-expected = "うりあげがぜんねんひ15%ぞうかした"
+expected = "うりあげがぜんねんひじゅうごぱーせんとぞうかした"
 note = "売上 + 前年比 + %"
 
 [[case]]
 input = "10年前から続けている習慣"
 mode = "hiragana"
-expected = "10ねんまえからつづけているしゅうかん"
+expected = "じゅうねんまえからつづけているしゅうかん"
 note = "10年前 + 続ける + 習慣"
 
 [[case]]
 input = "西暦2024年は閏年だった"
 mode = "hiragana"
-expected = "せいれき2024ねんはうるうどしだった"
+expected = "せいれきにせんにじゅうよんねんはうるうどしだった"
 note = "西暦 + 年 + 閏年"
 
 [[case]]
 input = "1日3回食後に薬を飲む"
 mode = "hiragana"
-expected = "1にち3かいしょくごにくすりをのむ"
+expected = "いちにちさんかいしょくごにくすりをのむ"
 note = "日 + 回 counter + 食後 + 薬 + 飲む"
 
 [[case]]
 input = "学校までは徒歩で20分かかる"
 mode = "hiragana"
-expected = "がっこうまではとほで20ふんかかる"
+expected = "がっこうまではとほでにじゅっぷんかかる"
 note = "学校 + 徒歩 + 数字+分"
 
 [[case]]
 input = "3つの選択肢から1つ選ぶ"
 mode = "hiragana"
-expected = "3つのせんたくしから1つえらぶ"
+expected = "さんつのせんたくしからいちつえらぶ"
 note = "数字+つ + 選択肢 + 選ぶ"
 
 [[case]]
 input = "毎月10日が給料日です"
 mode = "hiragana"
-expected = "まいつき10にちがきゅうりょうびです"
+expected = "まいつきじゅうにちがきゅうりょうびです"
 note = "毎月 + 日 + 給料日"
 
 [[case]]
 input = "気圧が1013ヘクトパスカルに下がった"
 mode = "hiragana"
-expected = "きあつが1013ヘクトパスカルにさがった"
+expected = "きあつがせんじゅうさんヘクトパスカルにさがった"
 note = "気圧 + 数字+単位 + 下がる"
 
 [[case]]
 input = "電池残量が10%を切った"
 mode = "hiragana"
-expected = "でんちざんりょうが10%をきった"
+expected = "でんちざんりょうがじゅっぱーせんとをきった"
 note = "電池 + 残量 + % + 切る"
 
 [[case]]
 input = "8月15日は終戦記念日"
 mode = "hiragana"
-expected = "8がつ15にちはしゅうせんきねんび"
+expected = "はちがつじゅうごにちはしゅうせんきねんび"
 note = "日付 + 終戦記念日 jukugo"
 
 [[case]]
@@ -496,7 +496,7 @@ note = "年末年始 + 実家 + 帰省"
 [[case]]
 input = "3時のおやつを食べる"
 mode = "hiragana"
-expected = "3じのおやつをたべる"
+expected = "さんじのおやつをたべる"
 note = "時刻 + おやつ + 食べる"
 
 [[case]]
