@@ -928,3 +928,35 @@ expected = "むしば"
 input = "配信中"
 mode = "hiragana"
 expected = "はいしんちゅう"
+
+# ─── round 23: 生/類 default + 知らぬ間/居間 jukugo ──────────────────────────
+
+[[case]]
+input = "生の魚"
+mode = "hiragana"
+expected = "なまのさかな"
+
+[[case]]
+input = "生きる"
+mode = "hiragana"
+expected = "いきる"
+
+[[case]]
+input = "魚介類"
+mode = "hiragana"
+expected = "ぎょかいるい"
+
+[[case]]
+input = "種類"
+mode = "hiragana"
+expected = "しゅるい"
+
+[[case]]
+input = "知らぬ間"
+mode = "hiragana"
+expected = "しらぬま"
+
+[[case]]
+input = "居間"
+mode = "hiragana"
+expected = "いま"
