@@ -95,6 +95,13 @@ reading = "まえ"
 char = "後"
 default = "ゴ"
 
+# ★round 47、 「○○後 + に / の / で」 名詞用法 = prev カタカナ で ゴ
+# (= 「スライド後に / リスポーン後の」 等)、 next ひらがな match より優先するため
+# 物理順序を先頭に
+[[kanji.match]]
+prev_char_type = "カタカナ"
+reading = "ゴ"
+
 [[kanji.match]]
 next_char_type = "ひらがな"
 reading = "あと"
@@ -478,7 +485,7 @@ char = "高"
 default = "コウ"  # 高校 / 高速 / 最高 / 高度
 
 [[kanji.match]]
-next_starts_any = ["い", "く", "か", "さ", "ま"]  # 高い / 高く / 高かった / 高さ / 高まる
+next_starts_any = ["い", "く", "か", "さ", "ま", "す"]  # 高い / 高く / 高かった / 高さ / 高まる / 高すぎ
 reading = "タカ"
 
 [[kanji]]
@@ -502,7 +509,7 @@ char = "早"
 default = "ソウ"  # 早朝 / 早期 / 早急
 
 [[kanji.match]]
-next_starts_any = ["い", "く", "か", "ま"]  # 早い / 早く / 早かった / 早まる
+next_starts_any = ["い", "く", "か", "ま", "す"]  # 早い / 早く / 早かった / 早まる / 早すぎ
 reading = "ハヤ"
 
 [[kanji]]
@@ -1100,6 +1107,15 @@ char = "勢"
 default = "セイ"
 # ★round 44、 next ひらがな → イキオ ルールは 「復帰勢でも → フッキイキオデモ」 等
 # 接尾辞 case で誤読、 「勢い / 勢いよく」 は jukugo 個別で対応 (= general.toml)
+# ★round 47、 「○○勢」 接尾辞は連濁で ゼイ (= 「復帰勢 → フッキゼイ / スティック勢
+# → スティックゼイ / マニュ勢 → マニュゼイ」、 配信用語の高頻度パターン)
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ゼイ"
+
+[[kanji.match]]
+prev_char_type = "カタカナ"
+reading = "ゼイ"
 
 # 「重」: 音読み 「ジュウ」 (= 「重要 / 体重 / 二重 / 厳重」) が圧倒的、 形容詞
 # 「重い (おもい)」 は ひらがな後続で 「おも」 語幹。
@@ -1199,6 +1215,12 @@ reading = "わら"
 char = "君"
 default = "キミ"
 
+# 「君 + 助詞」 → キミ (= 「君は / 君が / 君も / 君を / 君に / 君と / 君や」 = 二人称代名詞)
+# round 47、 prev ひらがな で クン に倒すルールを 「next 助詞」 軸に細分化
+[[kanji.match]]
+next_starts_any = ["も", "は", "が", "を", "に", "と", "や"]
+reading = "キミ"
+
 [[kanji.match]]
 prev_char_type = "漢字"
 reading = "クン"
@@ -1207,8 +1229,8 @@ reading = "クン"
 prev_char_type = "カタカナ"
 reading = "クン"
 
-# 「ねこ君 / みく君」 等 ひらがな名前 + 君、 現代用法でほぼ 「クン」。
-# 「あの君 / この君」 は文語的、 現代チャット corpus ではまず出現しない
+# 「ねこ君 / みく君」 等 ひらがな名前 + 君 + (述語 / 終端) → クン
+# 「君 + 助詞」 case は上の next_starts_any block で先に キミ が候補化される
 [[kanji.match]]
 prev_char_type = "ひらがな"
 reading = "クン"
@@ -1469,6 +1491,12 @@ default = "コ"
 next_starts_any = ["さ"]  # 「小さい / 小さな」 形容詞
 reading = "チイ"
 
+# ★round 47、 「小 + カタカナ」 (= 「小ネタ / 小ボス / 小ジワ」 等) → 「ショウ」
+# 「小 + 漢字」 は jukugo dict 1000 でほぼ覆われる、 default コ では当たらない case
+[[kanji.match]]
+next_char_type = "カタカナ"
+reading = "ショウ"
+
 
 # 「弱」 unihan default 「よわい」 → 接尾辞 「ジャク」 (= 「N 弱 / 弱点 / 弱体化」)、
 # 形容詞活用 next ひらがな → ヨワ stem (= 「弱い / 弱さ / 弱く」)
@@ -1541,4 +1569,60 @@ reading = "トツ"
 [[kanji]]
 char = "市"
 default = "シ"
+
+# ★round 47: VV engine 一致率 push (= 主力評価指標、 配信 corpus 観測)
+# 「炎」: default 音読み エン (= 「肺炎 / 中耳炎 / 関節炎 / 骨髄炎」 病名接尾辞優先)、
+# 「○○の炎」 = 訓読み ホノオ は prev ひらがな で抜ける。 next ひらがな match を
+# 入れると 「骨髄炎を」 = next 「を」 で誤発火するので 入れない
+[[kanji]]
+char = "炎"
+default = "エン"
+
+[[kanji.match]]
+prev_char_type = "ひらがな"
+reading = "ホノオ"
+
+# 「年」: spoken で 「年 + 助詞」 = 「ネン」 (= 「3年前」) 数字 + 年、 「あの年 / 何年」
+# = 「トシ」 (= prev ひらがな)。 現代 corpus で 「年」 単独 default は ネン が多い
+# (= 「年内 / 年金 / 年末」 等 jukugo dict 1000、 「年 + 助詞」 は ネン)
+[[kanji]]
+char = "年"
+default = "ネン"
+
+[[kanji.match]]
+prev_char_type = "ひらがな"
+reading = "トシ"
+
+# 「版」: spoken の 「○○版」 (= 「初版 / 限定版 / 統合版 / Switch版」) で 「ハン」、
+# 訓読み 「いた」 (= 板) は IPADIC unihan 経由で混入するが意味は 「板」、 完全に切り離す
+[[kanji]]
+char = "版"
+default = "ハン"
+
+# 「天」: 現代 spoken で 「テン」 (= 「天才 / 天国 / 天気 / 天に召される」)、 「アメ /
+# アマ」 は古語 / 雅語 (= 「天の川 / 天降る」)、 単独はほぼ無く jukugo dict 1000 で
+# 「天才 / 天国」 等は覆われる。 default テン に統一
+[[kanji]]
+char = "天"
+default = "テン"
+
+# 「何」: default ナニ (= 「何が / 何を / 何でも」 単独問い)、
+# next_starts_any (= 指示語連語 「何それ / 何これ / 何あれ / 何どれ」) → ナン
+# 「何 + 漢字」 は動詞語幹 (= 「何言って / 何作って」) で false-positive するため
+# next 漢字軸ルールは入れず、 助数詞前 「何匹 / 何時間 / 何月 / 何年 / 何枚 / 何人 /
+# 何回 / 何個 / 何台」 等は jukugo 個別列挙 (= 既存 + round 47)
+[[kanji]]
+char = "何"
+default = "ナニ"
+
+[[kanji.match]]
+next_starts_any = ["そ", "こ", "あ", "ど"]
+reading = "ナン"
+
+# 「銃」: spoken default ジュウ (= 「銃で / 銃を / 銃の」)、 訓読み 「ツツ」 は古語、
+# 単独 「銃」 でも spoken は 「ジュウ」 圧倒的 (= 「銃声 / 銃口 / 銃身」 等 jukugo に
+# 加え単独でも ジュウ 優先)
+[[kanji]]
+char = "銃"
+default = "ジュウ"
 
