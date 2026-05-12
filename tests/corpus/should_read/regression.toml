@@ -674,3 +674,45 @@ expected = "めいきょく"
 input = "曲がる"
 mode = "hiragana"
 expected = "まがる"
+
+# ─── round 16: 短/用/班/非 default 修正 ──────────────────────────────────────
+
+[[case]]
+input = "短期"
+mode = "hiragana"
+expected = "たんき"
+
+[[case]]
+input = "短い"
+mode = "hiragana"
+expected = "みじかい"
+
+[[case]]
+input = "喋る用"
+mode = "hiragana"
+expected = "しゃべるよう"
+
+[[case]]
+input = "用途"
+mode = "hiragana"
+expected = "ようと"
+
+[[case]]
+input = "拠点処理班"
+mode = "hiragana"
+expected = "きょてんしょりはん"
+
+[[case]]
+input = "班長"
+mode = "hiragana"
+expected = "はんちょう"
+
+[[case]]
+input = "非表示"
+mode = "hiragana"
+expected = "ひひょうじ"
+
+[[case]]
+input = "非常"
+mode = "hiragana"
+expected = "ひじょう"
