@@ -575,3 +575,60 @@ expected = "いってた"
 input = "星見に行ってた"
 mode = "hiragana"
 expected = "ほしみにいってた"
+
+# ─── round 14: 僕/性/熱/更 default + 何枚/原神/破壊神 jukugo ────────────────
+
+[[case]]
+input = "僕は見てるよ"
+mode = "hiragana"
+expected = "ぼくはみてるよ"
+
+[[case]]
+input = "可能性ある"
+mode = "hiragana"
+expected = "かのうせいある"
+
+[[case]]
+input = "重要性"
+mode = "hiragana"
+expected = "じゅうようせい"
+
+[[case]]
+input = "熱は治った"
+mode = "hiragana"
+expected = "ねつはなおった"
+
+[[case]]
+input = "熱い"
+mode = "hiragana"
+expected = "あつい"
+
+[[case]]
+input = "変更"
+mode = "hiragana"
+expected = "へんこう"
+
+[[case]]
+input = "更新"
+mode = "hiragana"
+expected = "こうしん"
+
+[[case]]
+input = "更に"
+mode = "hiragana"
+expected = "さらに"
+
+[[case]]
+input = "何枚"
+mode = "hiragana"
+expected = "なんまい"
+
+[[case]]
+input = "破壊神"
+mode = "hiragana"
+expected = "はかいしん"
+
+[[case]]
+input = "原神"
+mode = "hiragana"
+expected = "げんしん"
