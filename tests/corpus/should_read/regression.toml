@@ -876,3 +876,55 @@ expected = "なんで"
 input = "何だこの話は"
 mode = "hiragana"
 expected = "なんだこのはなしは"
+
+# ─── round 22: 来「ち」 + 外/帯/多/歯 + 配信中 jukugo ────────────────────────
+
+[[case]]
+input = "来ちゃった"
+mode = "hiragana"
+expected = "きちゃった"
+
+[[case]]
+input = "戦力外"
+mode = "hiragana"
+expected = "せんりょくがい"
+
+[[case]]
+input = "以外"
+mode = "hiragana"
+expected = "いがい"
+
+[[case]]
+input = "外に出る"
+mode = "hiragana"
+expected = "そとにでる"
+
+[[case]]
+input = "携帯"
+mode = "hiragana"
+expected = "けいたい"
+
+[[case]]
+input = "帯びる"
+mode = "hiragana"
+expected = "おびる"
+
+[[case]]
+input = "多すぎる"
+mode = "hiragana"
+expected = "おおすぎる"
+
+[[case]]
+input = "多分"
+mode = "hiragana"
+expected = "たぶん"
+
+[[case]]
+input = "虫歯"
+mode = "hiragana"
+expected = "むしば"
+
+[[case]]
+input = "配信中"
+mode = "hiragana"
+expected = "はいしんちゅう"

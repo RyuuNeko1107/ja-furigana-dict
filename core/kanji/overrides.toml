@@ -386,12 +386,9 @@ reading = "いま"
 char = "来"
 default = "ライ"  # 来年/来週/来月/未来/将来 等の compound 用
 
+# 「来た / 来て / 来ます / 来ちゃった」 = キ + 送りがな (★round 22 「ち」 追加)
 [[kanji.match]]
-next_starts_any = ["た", "て"]
-reading = "キ"
-
-[[kanji.match]]
-next_starts = "ま"
+next_starts_any = ["た", "て", "ま", "ち"]
 reading = "キ"
 
 [[kanji.match]]
@@ -942,6 +939,42 @@ default = "ジョ"
 [[kanji.match]]
 next_char_type = "ひらがな"
 reading = "たす"
+
+# 「外」: 音読み 「ガイ」 (= 「以外 / 海外 / 戦力外 / 案外 / 例外」) が圧倒的。
+# 名詞 「外 (そと)」 (= 「外で / 外に / 外側」) は ひらがな後続。
+[[kanji]]
+char = "外"
+default = "ガイ"
+[[kanji.match]]
+next_char_type = "ひらがな"
+reading = "そと"
+
+# 「帯」: 名詞 「帯 (おび) / 音読み (タイ)」 多義。 単独 / 助詞前 (= 「帯地 / 帯の」)
+# は 「おび」、 熟語 (= 「携帯 / 包帯 / 一帯 / A 帯」) は 「タイ」。 「帯びる (おびる)」
+# 動詞は ひらがな後続。 prev / next で context 判定が複雑なので default は最頻出の
+# 「タイ」、 「帯びる」 のみ next ひらがな で 「おび」 切替。
+[[kanji]]
+char = "帯"
+default = "タイ"
+[[kanji.match]]
+next_char_type = "ひらがな"
+reading = "おび"
+
+# 「多」: 形容詞 「多い (おおい)」 = ひらがな後続で 「おお」 語幹 (= 「多い / 多く /
+# 多すぎる / 多かった」)。 音読み 「タ」 (= 「多数 / 多分 / 多忙」) は熟語、 dict
+# 1000 で覆われる前提。 default は接頭辞用法を考慮して 「タ」。
+[[kanji]]
+char = "多"
+default = "タ"
+[[kanji.match]]
+next_char_type = "ひらがな"
+reading = "おお"
+
+# 「歯」: 名詞 「歯 (は)」 (= 「歯が / 歯を / 歯ブラシ / 虫歯」) が圧倒的。
+# 「よわい」 (= 「齢」 異字) は古語、 dict 1000 で必要なら個別。
+[[kanji]]
+char = "歯"
+default = "は"
 
 # ─── 笑 (★alpha.21、 単独 「笑」 が「わらう」 動詞形で出る違和感を修正) ──────
 #
