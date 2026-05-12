@@ -20,3 +20,6 @@ __pycache__/
 
 # Maintainer-only seed export from production (intermediate, not committed)
 /tools/seed/
+
+# 内部 corpus 比較結果 (= 公開しない)
+compare_extended_*.txt

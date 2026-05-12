@@ -51,11 +51,34 @@ rules/
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | クイックパス + 1 行追加の流れ + TOML 形式の最低限ルール |
 | [`docs/SCHEMA.md`](docs/SCHEMA.md) | 各 file の詳細 TOML schema (counters / context / postprocess 等の構文) |
 | [`docs/INLINE_TESTS.md`](docs/INLINE_TESTS.md) | `*.test.toml` の append-only 仕様 |
+| [`docs/EVALUATION.md`](docs/EVALUATION.md) | 客観性能評価 (VOICEVOX engine 一致率 / 定期更新) |
 | [`MAINTAINING.md`](MAINTAINING.md) | release / CI / upstream seed 再投入手順 |
 | [`STATS.md`](STATS.md) | 件数 / カテゴリ別内訳 / サイズ (auto-gen) |
 | [`SECURITY.md`](SECURITY.md) | 脆弱性報告窓口 (engine 側に集約) |
 | [`core/works/README.md`](core/works/README.md) | 作品単位辞書のサブポリシー |
 | [`tests/corpus/README.md`](tests/corpus/README.md) | 回帰テスト用 corpus の運用 |
+
+## AI ツールの活用について
+
+開発側 (= maintainer) は **辞書 entry の追加・修正に AI (LLM) ツールを主力で活用**
+しています。 具体的には:
+
+- **読み候補の列挙・提案** (= 漢字 / 熟語に対して AI に読み候補を出させる)
+- **例文の作成** (= `tests/corpus/*.toml` / `*.test.toml` の `input` フィールド)
+- **副作用の洗い出し / 設計判断** (= 「この変更で何が壊れるか」 を AI 込みで検討)
+- **コメント / doc の整形・推敲**
+
+ただし **maintainer が必ず確認** することを前提運用にしています:
+
+- **読み (= reading フィールド) は必ず辞書 / 公的資料で出典確認** (= 国語辞典 /
+  漢和辞典 / 公式 site)、 AI 単独の出力は採用しない
+- **`tools/validate.py` で TOML schema gate**
+- **`tools/run_corpus.py` で regression test gate** (= 既存 case が壊れたら fail)
+- **VOICEVOX engine 一致率で副作用検証** ([docs/EVALUATION.md](docs/EVALUATION.md))
+
+外部 contributor の PR でも AI 利用は自由ですが、 同じく **出典確認 + regression
+test 追加** をお願いしています (= AI が hallucination で生成した誤読を素通しさせない
+ため、 validate + corpus regression + maintainer review の 3 段 gate で押さえます)。
 
 ## 利用側 (`furigana` から)
 

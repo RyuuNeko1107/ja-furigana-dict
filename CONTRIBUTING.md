@@ -169,3 +169,37 @@ CI 詳細 (`validate.yml` / `release.yml` / `daily-release.yml` 等) は
 
 人名・固有名詞の追加 PR は出典を必須にしないが、判断付かない時は merge を保留して
 PR 上で議論するのが無難。
+
+## AI ツールの活用
+
+開発側 (= maintainer) は **辞書 entry の追加・修正に AI (LLM) ツールを主力で活用**
+しています。 contributor の PR でも AI 利用は自由です。 主な活用ポイント:
+
+- **読み候補の列挙・提案**: ある漢字 / 熟語の読み候補を AI に列挙させる
+- **例文の作成**: `tests/corpus/*.toml` や `*.test.toml` の `input` フィールド
+  (= 検証用の短文)
+- **副作用の洗い出し**: 「この default 変更で何の case が壊れるか」 を AI 込みで
+  事前検討
+- **コメント / doc 整形**: TOML 内の `#` コメントや markdown 文章の整形・推敲
+
+ただし **「AI 出力を素通しさせない」 確認作業は絶対** が前提運用です:
+
+- **読み (= `reading` フィールド) は必ず辞書 / 公的資料で出典確認**: AI の
+  hallucination 由来の誤読を dict に混入させないため、 reading 値は AI 単独の出力
+  を採用せず、 **国語辞典 / 漢和辞典 / 公式 site の表記で裏取り**
+- **`tools/validate.py` で TOML schema gate** (= ローカルで `[OK]` 確認)
+- **`tools/run_corpus.py` で regression test gate** (= 既存 case が壊れたら fail)
+- **大量 batch 追加は分ける**: AI 生成 entry を一気に大量 PR すると review 負荷が
+  scale しないので、 同分野 ~50 件程度に分割する
+- **新規 entry には regression test を 1 件以上追加**: AI 生成だからこそ、 期待動作を
+  [`tests/corpus/should_read.toml`](tests/corpus/should_read.toml) で固定する
+
+辞書の品質保証は **validate + corpus regression + maintainer review** の 3 段 gate
+で押さえる設計です。 AI は工程を速くする道具で、 **最終確認責任は contributor +
+maintainer にあります**。
+
+## 性能評価
+
+dict 改善の客観指標 (VOICEVOX engine 一致率) は [`docs/EVALUATION.md`](docs/EVALUATION.md)
+で公開しています。 baseline は定期更新され、 release 単位で「実際に良くなったか」
+を回帰テストとは別軸で確認できます。
