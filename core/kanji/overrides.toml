@@ -176,6 +176,13 @@ reading = "かぜ"
 char = "人"
 default = "ジン"
 
+# 漢数字 + 人 = ニン。 「一人 = ヒトリ」 「二人 = フタリ」 は counter people.toml の
+# specials で対応するためここは 3〜10 のみ。 prev_char_type だと「個人/友人/恋人」 や
+# 「人型/人前」 等に誤発火するため漢数字 literal 限定。
+[[kanji.match]]
+prev_ends_any = ["三", "四", "五", "六", "七", "八", "九", "十"]
+reading = "ニン"
+
 [[kanji.match]]
 next_char_type = "ひらがな"
 reading = "ひと"
@@ -556,10 +563,9 @@ reading = "オソ"
 next_starts = "れ"  # 遅れる / 遅れた
 reading = "オク"
 
-# ─── 動詞 / 形容詞 1 系統絞り (★alpha.21、 実データ mining top 10 base-kanji) ──
+# ─── 動詞 / 形容詞 1 系統絞り ──────────────────────────────────────────────
 #
-# わんコメ実コメ 89k 件の dict_gap_mine 結果から、 頻度上位の動詞 / 形容詞活用語幹を
-# `[[kanji]]` block で declarative にカバー。 共通設計:
+# 頻度上位の動詞 / 形容詞活用語幹を `[[kanji]]` block で declarative にカバー。 共通設計:
 # - default = 音読み (= 熟語 fallback)、 「使用」 「言語」 等の jukugo dict 1000 が
 #   勝つので default は熟語の中で残りやすい音読みを選ぶ
 # - next_char_type = ひらがな → 訓読み語幹 (= 動詞活用 「使う/使えた/使わない/使って」
@@ -643,7 +649,7 @@ reading = "ネ"
 next_char_type = "漢字"
 reading = "ネ"
 
-# ─── 多義動詞 (★alpha.21 round 2、 行/入/落/出 を next_starts で精密分岐) ─────
+# ─── 多義動詞 (行/入/落/出 を next_starts で精密分岐) ────────────────────────
 #
 # 1 字 [[kanji]] block で 2 つの訓読みを切り替える設計。 ひらがな送りがなの先頭文字
 # (next_starts / next_starts_any) で 「どの活用語幹を使うか」 を declarative に書ける。
@@ -699,7 +705,7 @@ reading = "デ"
 next_starts_any = ["す", "し", "さ", "せ", "そ"]
 reading = "ダ"
 
-# ─── default 修正 (★alpha.21 round 4、 mining 違和感解消) ──────────────────────
+# ─── default 修正 ────────────────────────────────────────────────────────────
 
 # 「的」: 接尾辞用法 (= 「全体的に / 基本的」) が圧倒的多数、 default を 「テキ」 に。
 # 単独 「的」 = まと は dict / context match で個別 jukugo 化 (= 「弓的」 等)。
@@ -712,7 +718,7 @@ default = "テキ"
 char = "次"
 default = "つぎ"
 
-# ─── 単漢字 default 修正 (★alpha.21 round 5、 extended.toml fail 由来) ─────────
+# ─── 単漢字 default 修正 ────────────────────────────────────────────────────
 
 # 「手」: 単独 「て」 (= 「手が震える / 猫の手 / 手を貸す」) が圧倒的多数。
 # 「シュ」 音読みは熟語 dict 1000 で覆う (= 「歌手 / 選手 / 助手」)。
@@ -741,7 +747,7 @@ default = "ため"
 
 # 「居」: 動詞 「居る / 居ない / 居て / 居た」 = イ + 送りがな。 default は 「居住 /
 # 同居」 等の音読み 「キョ」 (= 熟語 dict 1000 で勝つ)。 ひらがな後続で動詞語幹に。
-# unihan default 「いる」 だと 「居ない」 → 「いるない」 と誤読された (★alpha.21 round 8)。
+# default を訓読み 「いる」 にすると 「居ない」 → 「いるない」 と誤読される。
 [[kanji]]
 char = "居"
 default = "キョ"
@@ -768,8 +774,8 @@ default = "イヤ"
 next_starts_any = ["い", "う", "わ", "え", "お"]
 reading = "キラ"
 
-# 「対」: 標準音読み 「タイ」 (= 「対戦 / 対象 / 対応 / 対立」、 配信文脈 「対あり =
-# 対戦ありがとう」 も 「タイアリ」)。 「ツイ」 は 「一対 (ひとつい)」 等の限定用法。
+# 「対」: 標準音読み 「タイ」 (= 「対戦 / 対象 / 対応 / 対立 / 対あり」)。
+# 「ツイ」 は 「一対 (ひとつい)」 等の限定用法。
 [[kanji]]
 char = "対"
 default = "タイ"
@@ -1105,10 +1111,10 @@ default = "ボウ"
 [[kanji]]
 char = "勢"
 default = "セイ"
-# ★round 44、 next ひらがな → イキオ ルールは 「復帰勢でも → フッキイキオデモ」 等
-# 接尾辞 case で誤読、 「勢い / 勢いよく」 は jukugo 個別で対応 (= general.toml)
-# ★round 47、 「○○勢」 接尾辞は連濁で ゼイ (= 「復帰勢 → フッキゼイ / スティック勢
-# → スティックゼイ / マニュ勢 → マニュゼイ」、 配信用語の高頻度パターン)
+# next ひらがな → イキオ ルールは 「復帰勢でも → フッキイキオデモ」 等接尾辞 case で
+# 誤読するため不採用、 「勢い / 勢いよく」 は jukugo 個別で対応 (= general.toml)。
+# 「○○勢」 接尾辞は連濁で ゼイ (= 「復帰勢 → フッキゼイ / スティック勢 → スティックゼイ /
+# マニュ勢 → マニュゼイ」)
 [[kanji.match]]
 prev_char_type = "漢字"
 reading = "ゼイ"
@@ -1188,11 +1194,10 @@ reading = "い"
 char = "線"
 default = "セン"
 
-# ─── 笑 (★alpha.21、 単独 「笑」 が「わらう」 動詞形で出る違和感を修正) ──────
+# ─── 笑 ───────────────────────────────────────────────────────────────────
 #
-# わんコメ実コメで 「笑」 単独 (= 文末 「コメ笑」 のような (笑) 代用) が
-# 「わらう」 と動詞形で読まれる現象を、 名詞形 default + ひらがな後続で動詞語幹に
-# 切り替える設計で対応:
+# 単独 「笑」 (= 文末 「コメ笑」 のような (笑) 代用) が 「わらう」 と動詞形で読まれる
+# 現象を、 名詞形 default + ひらがな後続で動詞語幹に切り替える設計で対応:
 # - default = 「わらい」 (= 名詞形、 「コメ笑」 → 「コメわらい」、 文末 silent 化は
 #   caller / TTS postprocess で実施想定)
 # - ひらがな後続 → 「わら」 (= 動詞語幹、 「笑+う/える/った/わない」 等の活用に対応)
@@ -1553,8 +1558,8 @@ char = "即"
 default = "ソク"
 
 
-# ★round 41、 「凸」 unihan default 「でこ」 → ゲーム配信文脈 「トツ」 (= 「凸る /
-# 凸って / 凸待ち」 突撃用法) + jukugo 「凹凸 = オウトツ」 は band 1000 で勝つ
+# 「凸」 unihan default 「でこ」 → 突撃用法の 「トツ」 を default に (= 「凸る /
+# 凸って / 凸待ち」)。 jukugo 「凹凸 = オウトツ」 は band 1000 で勝つ
 [[kanji]]
 char = "凸"
 default = "トツ"
@@ -1564,13 +1569,12 @@ next_starts_any = ["る", "っ", "り", "ら", "れ"]  # 「凸る / 凸って /
 reading = "トツ"
 
 
-# ★round 45、 「市」 unihan default 「いち」 → 「シ」 (= 「N市 / 市町村 / 市役所 /
-# 市場」)、 「市場」 = 「イチバ」 等は jukugo band 1000 で勝つ
+# 「市」 unihan default 「いち」 → 「シ」 (= 「N市 / 市町村 / 市役所 / 市場」)。
+# 「市場」 = 「イチバ」 等は jukugo band 1000 で勝つ
 [[kanji]]
 char = "市"
 default = "シ"
 
-# ★round 47: VV engine 一致率 push (= 主力評価指標、 配信 corpus 観測)
 # 「炎」: default 音読み エン (= 「肺炎 / 中耳炎 / 関節炎 / 骨髄炎」 病名接尾辞優先)、
 # 「○○の炎」 = 訓読み ホノオ は prev ひらがな で抜ける。 next ひらがな match を
 # 入れると 「骨髄炎を」 = next 「を」 で誤発火するので 入れない
@@ -1625,4 +1629,122 @@ reading = "ナン"
 [[kanji]]
 char = "銃"
 default = "ジュウ"
+
+# 漢数字 5/7/9/10 の default を音読みに統一 (= 助数詞 / 数値表現の現代 spoken 主流)。
+# 和語数詞用法 (= 「五日 / 七日 / 九日 / 十日」 = イツカ / ナノカ / ココノカ / トオカ) は
+# jukugo basic で band 100 登録済、 ここの default 変更で覆われる。
+
+[[kanji]]
+char = "五"
+default = "ゴ"
+
+[[kanji]]
+char = "七"
+default = "シチ"
+
+[[kanji]]
+char = "九"
+default = "キュウ"
+
+[[kanji]]
+char = "十"
+default = "ジュウ"
+
+# 「者」: default 音読み 「シャ」 (= 「医者 / 学者 / 患者 / 編者」 等)。 動詞連体形 + 者
+# (= 「戦う者 / 行く者 / 知る者」 形式名詞用法) は prev token 末尾が動詞語尾のとき 「モノ」。
+# 「強者 / 若者」 等 漢字 + 者 = モノ は jukugo に band 100 で個別登録。
+[[kanji]]
+char = "者"
+default = "シャ"
+
+[[kanji.match]]
+prev_ends_any = ["う", "る", "く", "ぐ", "つ", "す", "ぬ", "ぶ", "む", "ふ"]
+reading = "モノ"
+
+# 「偽」: default 接頭辞 「ニセ」 (= 「偽物 / 偽札 / 偽情報」)。 動詞 「偽る」 は ら 行
+# 後続で 「イツワ」 stem に分岐。 音読み 「ギ」 (= 「真偽 / 偽造 / 偽装」) は jukugo で覆う。
+[[kanji]]
+char = "偽"
+default = "ニセ"
+
+[[kanji.match]]
+next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ"]
+reading = "イツワ"
+
+# 「雑」: default 接頭辞 「ザツ」 (= 「雑談 / 雑食 / 雑用 / 雑コラ」)。
+# 動詞用法 (= 「雑える」) は希少、 現代では 「混ぜる」 字。 jukugo 経由 「雑魚 = ザコ /
+# 雑炊 = ゾウスイ」 等は band 100 で覆われる。
+[[kanji]]
+char = "雑"
+default = "ザツ"
+
+# 「超」: default 接頭辞 「チョウ」 (= 「超絶 / 超人 / 超強い / 超能力」)。
+# 動詞 「超える / 超す」 は え / す / さ / し / せ / そ 後続で 「コ」 stem。
+[[kanji]]
+char = "超"
+default = "チョウ"
+
+[[kanji.match]]
+next_starts_any = ["え", "す", "さ", "し", "せ", "そ"]
+reading = "コ"
+
+# 「弁」: default 接尾辞 / 接頭辞 「ベン」 (= 「関西弁 / 方言 / 弁当 / 弁護士 / 雄弁」)。
+# 動詞 「弁える (わきまえる)」 は え 後続で 「ワキマ」 stem。
+[[kanji]]
+char = "弁"
+default = "ベン"
+
+[[kanji.match]]
+next_starts = "え"
+reading = "ワキマ"
+
+# 「奨」: default 「ショウ」 (= 「奨学金 / 推奨 / 奨励」)。 動詞 「奨める」 は next め で
+# 「ススメ」 stem (= 通常 「勧める」 字、 「奨める」 は稀)。
+[[kanji]]
+char = "奨"
+default = "ショウ"
+
+[[kanji.match]]
+next_starts = "め"
+reading = "ススメ"
+
+# 「恭」: default 「キョウ」 (= 「恭敬 / 恭順」)。 形容詞 「恭しい」 は next し で
+# 「ウヤウヤ」 stem。
+[[kanji]]
+char = "恭"
+default = "キョウ"
+
+[[kanji.match]]
+next_starts = "し"
+reading = "ウヤウヤ"
+
+# 「慮」: default 「リョ」 (= 「考慮 / 配慮 / 遠慮 / 思慮」)。 動詞 「慮る」 は next る で
+# 「オモンパカ」 stem。
+[[kanji]]
+char = "慮"
+default = "リョ"
+
+[[kanji.match]]
+next_starts = "る"
+reading = "オモンパカ"
+
+# 「承」: default 「ショウ」 (= 「承認 / 継承 / 了承 / 伝承」)。 動詞 「承る」 は next る で
+# 「ウケタマワ」 stem。
+[[kanji]]
+char = "承"
+default = "ショウ"
+
+[[kanji.match]]
+next_starts = "る"
+reading = "ウケタマワ"
+
+# 「辱」: default 「ジョク」 (= 「屈辱 / 恥辱 / 凌辱」)。 動詞 「辱める」 は next め で
+# 「ハズカシ」 stem。
+[[kanji]]
+char = "辱"
+default = "ジョク"
+
+[[kanji.match]]
+next_starts = "め"
+reading = "ハズカシ"
 

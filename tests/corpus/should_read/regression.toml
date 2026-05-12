@@ -1302,3 +1302,308 @@ expected = "じっしゃか"
 input = "横振り斬り"
 mode = "hiragana"
 expected = "よこふりきり"
+
+# ─── 漢数字 + 人 = ニン ([[kanji]] block prev_ends_any 漢数字 limit) ─────────
+
+[[case]]
+input = "三人"
+mode = "hiragana"
+expected = "さんにん"
+
+[[case]]
+input = "四人"
+mode = "hiragana"
+expected = "よにん"
+
+[[case]]
+input = "五人"
+mode = "hiragana"
+expected = "ごにん"
+
+[[case]]
+input = "六人"
+mode = "hiragana"
+expected = "ろくにん"
+
+[[case]]
+input = "七人"
+mode = "hiragana"
+expected = "しちにん"
+
+[[case]]
+input = "八人"
+mode = "hiragana"
+expected = "はちにん"
+
+[[case]]
+input = "九人"
+mode = "hiragana"
+expected = "きゅうにん"
+
+[[case]]
+input = "十人"
+mode = "hiragana"
+expected = "じゅうにん"
+
+# 文中 (= 前後にひらがな / カタカナ) でも切り替わるか
+[[case]]
+input = "弓三人になってた"
+mode = "hiragana"
+expected = "ゆみさんにんになってた"
+
+[[case]]
+input = "家族五人で行く"
+mode = "hiragana"
+expected = "かぞくごにんでいく"
+
+# 副作用検証: 「個人 / 友人」 は default ジン 維持
+[[case]]
+input = "個人"
+mode = "hiragana"
+expected = "こじん"
+
+[[case]]
+input = "友人"
+mode = "hiragana"
+expected = "ゆうじん"
+
+# ─── 踊り字「々」 連濁 (= lib kana::voice_first_kana ひらがな対応 fix) ────────
+
+[[case]]
+input = "人々"
+mode = "hiragana"
+expected = "ひとびと"
+
+[[case]]
+input = "神々"
+mode = "hiragana"
+expected = "かみがみ"
+
+[[case]]
+input = "国々"
+mode = "hiragana"
+expected = "くにぐに"
+
+[[case]]
+input = "時々"
+mode = "hiragana"
+expected = "ときどき"
+
+# ─── 「者」 [[kanji]] block (動詞語尾後 → モノ) ────────────────────────────
+
+[[case]]
+input = "戦う者"
+mode = "hiragana"
+expected = "たたかうもの"
+
+[[case]]
+input = "知る者"
+mode = "hiragana"
+expected = "しるもの"
+
+[[case]]
+input = "走る者"
+mode = "hiragana"
+expected = "はしるもの"
+
+# 副作用検証: 音読み熟語は default シャ/ジャ 維持
+[[case]]
+input = "医者"
+mode = "hiragana"
+expected = "いしゃ"
+
+[[case]]
+input = "患者"
+mode = "hiragana"
+expected = "かんじゃ"
+
+[[case]]
+input = "目撃者"
+mode = "hiragana"
+expected = "もくげきしゃ"
+
+# ─── 「偽」 [[kanji]] block (default ニセ + ら行後 イツワ) ──────────────────
+
+[[case]]
+input = "偽ゲマ"
+mode = "hiragana"
+expected = "にせゲマ"
+
+[[case]]
+input = "偽物"
+mode = "hiragana"
+expected = "にせもの"
+
+[[case]]
+input = "偽る"
+mode = "hiragana"
+expected = "いつわる"
+
+[[case]]
+input = "真偽"
+mode = "hiragana"
+expected = "しんぎ"
+
+# ─── 「雑 / 超 / 弁」 [[kanji]] block (動詞訓読み default → 音読み接頭/接尾辞) ──
+
+[[case]]
+input = "雑コラ"
+mode = "hiragana"
+expected = "ざつコラ"
+
+[[case]]
+input = "雑談"
+mode = "hiragana"
+expected = "ざつだん"
+
+[[case]]
+input = "雑魚"
+mode = "hiragana"
+expected = "ざこ"
+
+[[case]]
+input = "超強い"
+mode = "hiragana"
+expected = "ちょうつよい"
+
+[[case]]
+input = "超絶"
+mode = "hiragana"
+expected = "ちょうぜつ"
+
+[[case]]
+input = "超える"
+mode = "hiragana"
+expected = "こえる"
+
+[[case]]
+input = "関西弁"
+mode = "hiragana"
+expected = "かんさいべん"
+
+[[case]]
+input = "弁当"
+mode = "hiragana"
+expected = "べんとう"
+
+[[case]]
+input = "弁える"
+mode = "hiragana"
+expected = "わきまえる"
+
+# ─── 単漢字 default 見直し 第 1 弾: 奨 / 恭 / 慮 / 承 / 辱 ─────────────────────
+# unihan/joyo の動詞活用形 default (= 「うやうやしい / おもんぱかる / うけたまわる / はずかしめる」、
+# および誤入力「すすめるすすむ」) を [[kanji]] block で音読み default + next 後続 stem に整理
+
+[[case]]
+input = "奨学金"
+mode = "hiragana"
+expected = "しょうがくきん"
+
+[[case]]
+input = "推奨"
+mode = "hiragana"
+expected = "すいしょう"
+
+[[case]]
+input = "恭敬"
+mode = "hiragana"
+expected = "きょうけい"
+
+[[case]]
+input = "恭しい"
+mode = "hiragana"
+expected = "うやうやしい"
+
+[[case]]
+input = "考慮"
+mode = "hiragana"
+expected = "こうりょ"
+
+[[case]]
+input = "遠慮"
+mode = "hiragana"
+expected = "えんりょ"
+
+[[case]]
+input = "承認"
+mode = "hiragana"
+expected = "しょうにん"
+
+[[case]]
+input = "継承"
+mode = "hiragana"
+expected = "けいしょう"
+
+[[case]]
+input = "承る"
+mode = "hiragana"
+expected = "うけたまわる"
+
+[[case]]
+input = "屈辱"
+mode = "hiragana"
+expected = "くつじょく"
+
+[[case]]
+input = "辱める"
+mode = "hiragana"
+expected = "はずかしめる"
+
+# ─── 「N つ」 和語数詞 counter rule (specials 1〜9) ──────────────────────────
+
+[[case]]
+input = "1つ"
+mode = "hiragana"
+expected = "ひとつ"
+
+[[case]]
+input = "2つ"
+mode = "hiragana"
+expected = "ふたつ"
+
+[[case]]
+input = "3つ"
+mode = "hiragana"
+expected = "みっつ"
+
+[[case]]
+input = "4つ"
+mode = "hiragana"
+expected = "よっつ"
+
+[[case]]
+input = "5つ"
+mode = "hiragana"
+expected = "いつつ"
+
+[[case]]
+input = "6つ"
+mode = "hiragana"
+expected = "むっつ"
+
+[[case]]
+input = "7つ"
+mode = "hiragana"
+expected = "ななつ"
+
+[[case]]
+input = "8つ"
+mode = "hiragana"
+expected = "やっつ"
+
+[[case]]
+input = "9つ"
+mode = "hiragana"
+expected = "ここのつ"
+
+# 文中での発火
+[[case]]
+input = "モニター3つだよ"
+mode = "hiragana"
+expected = "モニターみっつだよ"
+
+[[case]]
+input = "特技の3つあるん"
+mode = "hiragana"
+expected = "とくぎのみっつあるん"

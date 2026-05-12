@@ -139,5 +139,13 @@ last_digit = [3]
 suffix = "ボ"
 # === end: 歩 ===
 
+# === begin: つ === (和語数詞 1〜9 specials)
+# 「N つ」 は 1〜9 が和語数詞 (ヒトツ / フタツ / ミッツ / ヨッツ / イツツ / ムッツ /
+# ナナツ / ヤッツ / ココノツ)。 default 「ツ」 は 10 以上の safety fallback。
+[counter."つ"]
+default = "ツ"
+specials = { "1" = "ヒトツ", "2" = "フタツ", "3" = "ミッツ", "4" = "ヨッツ", "5" = "イツツ", "6" = "ムッツ", "7" = "ナナツ", "8" = "ヤッツ", "9" = "ココノツ" }
+# === end: つ ===
+
 # inline test は隣接の `objects.test.toml` に分離 (CI 専用、 release tar 除外、
 # runtime memory には載らない)。 contributor は `<name>.test.toml` ペアで追記する。
