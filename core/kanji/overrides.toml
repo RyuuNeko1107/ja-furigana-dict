@@ -511,6 +511,88 @@ reading = "オソ"
 next_starts = "れ"  # 遅れる / 遅れた
 reading = "オク"
 
+# ─── 動詞 / 形容詞 1 系統絞り (★alpha.21、 実データ mining top 10 base-kanji) ──
+#
+# わんコメ実コメ 89k 件の dict_gap_mine 結果から、 頻度上位の動詞 / 形容詞活用語幹を
+# `[[kanji]]` block で declarative にカバー。 共通設計:
+# - default = 音読み (= 熟語 fallback)、 「使用」 「言語」 等の jukugo dict 1000 が
+#   勝つので default は熟語の中で残りやすい音読みを選ぶ
+# - next_char_type = ひらがな → 訓読み語幹 (= 動詞活用 「使う/使えた/使わない/使って」
+#   を 「使(つか)」+「う/え/わ/って」 のように分解)
+#
+# 多義動詞 (行/入/落/出/何/主/分 等) は 1 系統に絞ると誤読リスク高、 別途 next_starts
+# 精密化で後追い予定。 ここは「片方の読みが圧倒的多数」 な surface のみ。
+
+[[kanji]]
+char = "使"
+default = "ツカイ"
+[[kanji.match]]
+next_char_type = "ひらがな"
+reading = "ツカ"
+
+[[kanji]]
+char = "言"
+default = "ゲン"
+[[kanji.match]]
+next_char_type = "ひらがな"
+reading = "イ"
+
+[[kanji]]
+char = "見"
+default = "ケン"
+[[kanji.match]]
+next_char_type = "ひらがな"
+reading = "ミ"
+
+[[kanji]]
+char = "思"
+default = "シ"
+[[kanji.match]]
+next_char_type = "ひらがな"
+reading = "オモ"
+
+[[kanji]]
+char = "終"
+default = "シュウ"
+[[kanji.match]]
+next_char_type = "ひらがな"
+reading = "オワ"
+
+[[kanji]]
+char = "強"
+default = "キョウ"
+[[kanji.match]]
+next_char_type = "ひらがな"
+reading = "ツヨ"
+
+[[kanji]]
+char = "持"
+default = "ジ"
+[[kanji.match]]
+next_char_type = "ひらがな"
+reading = "モ"
+
+[[kanji]]
+char = "勝"
+default = "ショウ"
+[[kanji.match]]
+next_char_type = "ひらがな"
+reading = "カ"
+
+[[kanji]]
+char = "変"
+default = "ヘン"
+[[kanji.match]]
+next_char_type = "ひらがな"
+reading = "カ"
+
+[[kanji]]
+char = "寝"
+default = "シン"
+[[kanji.match]]
+next_char_type = "ひらがな"
+reading = "ネ"
+
 # ─── 笑 (★alpha.21、 単独 「笑」 が「わらう」 動詞形で出る違和感を修正) ──────
 #
 # わんコメ実コメで 「笑」 単独 (= 文末 「コメ笑」 のような (笑) 代用) が
