@@ -401,6 +401,11 @@ reading = "いま"
 next_eq = "々"
 reading = "いま"
 
+# 「今8音量 / 今2時 / 今15分」 等の 「今 + 数字」 副詞用法も 「いま」 ★round 40
+[[kanji.match]]
+next_char_type = "英数"
+reading = "いま"
+
 # 来 — ka 変動詞、 活用ごとに母音変化 (キ / ク / コ)。 Lindera は 「来た」 を
 # 「来 + た」 2 tokens で返すので、 来 1 字 surface に対する文脈分岐が必要。
 # next 1 文字目で読みを決定:
@@ -1056,6 +1061,11 @@ reading = "と"
 [[kanji]]
 char = "体"
 default = "タイ"
+# ★round 46、 prev 漢字 = 接尾辞 case (= 「実験体 / 抗体 / 単体 / 死体」) は 「タイ」 維持
+# (= prev 漢字 match を最優先で書く、 next ひらがな / 漢字 ルールより 先頭)
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "タイ"
 [[kanji.match]]
 next_char_type = "ひらがな"
 reading = "からだ"
@@ -1088,9 +1098,8 @@ default = "ボウ"
 [[kanji]]
 char = "勢"
 default = "セイ"
-[[kanji.match]]
-next_char_type = "ひらがな"
-reading = "いきお"
+# ★round 44、 next ひらがな → イキオ ルールは 「復帰勢でも → フッキイキオデモ」 等
+# 接尾辞 case で誤読、 「勢い / 勢いよく」 は jukugo 個別で対応 (= general.toml)
 
 # 「重」: 音読み 「ジュウ」 (= 「重要 / 体重 / 二重 / 厳重」) が圧倒的、 形容詞
 # 「重い (おもい)」 は ひらがな後続で 「おも」 語幹。
@@ -1338,4 +1347,198 @@ default = "アオリ"
 [[kanji.match]]
 next_starts_any = ["る", "っ", "ら", "ろ", "れ"]
 reading = "アオ"
+
+
+# ★round 37、 unihan/joyo の動詞訓読み default 偏向 sweep その 2:
+
+# 「側」 unihan default 「かわ」 → 接尾辞 「ガワ」 (= 「右側 / 左側 / こっち側」) が圧倒的
+[[kanji]]
+char = "側"
+default = "ガワ"
+
+
+# 「別」 unihan default 「わかれる」 → 「ベツ」 (= 「別の / 別人 / 区別 / 性別」)、 動詞活用は
+# next ひらがな → ワカ
+[[kanji]]
+char = "別"
+default = "ベツ"
+
+[[kanji.match]]
+next_starts_any = ["れ", "か"]  # 「別れる / 別かれて」 動詞活用
+reading = "ワカ"
+
+
+# 「化」 unihan default 「ばける」 → 「カ」 接尾辞 (= 「変化 / 化学 / 暇人化 / 自動化」)、
+# 動詞活用は next ひらがな → バ
+[[kanji]]
+char = "化"
+default = "カ"
+
+[[kanji.match]]
+next_starts_any = ["け", "か"]  # 「化ける / 化かす」
+reading = "バ"
+
+
+# 「眼」 unihan default 「まなこ」 → 「ガン」 (= 「眼科 / 開眼 / 義眼 / 魔眼」)。 「眼差し」
+# 等 jukugo は band 1000 で勝つ
+[[kanji]]
+char = "眼"
+default = "ガン"
+
+
+# 「説」 unihan default 「とく」 → 「セツ」 (= 「説明 / 仮説 / 説得 / 解説」)。 「説く」 は
+# jukugo 個別か next ひらがな → ト
+[[kanji]]
+char = "説"
+default = "セツ"
+
+[[kanji.match]]
+next_starts_any = ["く", "き", "い", "か"]  # 「説く / 説きます / 説いて / 説かない」
+reading = "ト"
+
+
+# 「逆」 unihan default 「さか」 → 「ギャク」 (= 「逆転 / 逆らう / 逆効果 / 反逆」)。 動詞 +
+# 名詞 「サカ」 (= 「逆さま / 逆らう」) は next ひらがな で分岐
+[[kanji]]
+char = "逆"
+default = "ギャク"
+
+[[kanji.match]]
+next_starts_any = ["さ", "ら"]  # 「逆さま / 逆らう」
+reading = "サカ"
+
+
+# ★round 38、 unihan/joyo の動詞訓読み default 偏向 sweep その 3:
+
+# 「型」 unihan default 「かた」 → 接尾辞用法 「ガタ」 (= 「歩行型 / 量産型 / 参加型 /
+# 鍛冶型 / N 型」) が圧倒的、 prev 漢字 で 連濁 「ガタ」 (= 「2 字以上 漢字 + 型」 pattern)、
+# default 「カタ」 で 単独 / 文末用法 (= 「型がいい」 等)
+[[kanji]]
+char = "型"
+default = "カタ"
+
+[[kanji.match]]
+prev_char_type = "漢字"  # 「N 漢字 + 型」 = ガタ 連濁
+reading = "ガタ"
+
+
+# 「確」 unihan default 「たしか」 → 「カク」 (= 「確認 / 正確 / 確実 / N 確」 接尾辞)、
+# 副詞 / 形容動詞 「タシカ」 は next ひらがな (= 「確かに / 確かな」)
+[[kanji]]
+char = "確"
+default = "カク"
+
+[[kanji.match]]
+next_starts_any = ["か"]  # 「確か / 確かに / 確かな」
+reading = "タシ"
+
+
+# 「長」 unihan default 「チョウ」 → 「チョウ」 維持 (= 「課長 / 部長 / 校長 / 隊長」 接尾辞)、
+# 形容詞活用は next ひらがな → ナガ stem (= 「長い / 長さ / 長く」)
+[[kanji]]
+char = "長"
+default = "チョウ"
+
+[[kanji.match]]
+next_char_type = "ひらがな"
+reading = "ナガ"
+
+
+# ★round 39、 unihan/joyo の動詞訓読み default 偏向 sweep その 4:
+
+# 「員」 unihan default 「かず」 → 接尾辞 「イン」 (= 「会員 / 部員 / 駅員 / 議員」)
+[[kanji]]
+char = "員"
+default = "イン"
+
+
+# 「圧」 unihan default 「おさえる」 → 「アツ」 (= 「圧力 / 気圧 / 圧迫 / 高血圧」)。
+# 動詞 「圧す / 圧する」 は jukugo 個別か稀
+[[kanji]]
+char = "圧"
+default = "アツ"
+
+
+# 「小」 unihan default 「ショウ」 → 接尾辞 / 接頭辞 「コ」 (= 「小ネタ / 小銭 / 小指 /
+# 小型」) が圧倒的。 jukugo 「小学校 = ショウガッコウ」 等は band 1000 で勝つ
+[[kanji]]
+char = "小"
+default = "コ"
+
+[[kanji.match]]
+next_starts_any = ["さ"]  # 「小さい / 小さな」 形容詞
+reading = "チイ"
+
+
+# 「弱」 unihan default 「よわい」 → 接尾辞 「ジャク」 (= 「N 弱 / 弱点 / 弱体化」)、
+# 形容詞活用 next ひらがな → ヨワ stem (= 「弱い / 弱さ / 弱く」)
+[[kanji]]
+char = "弱"
+default = "ジャク"
+
+[[kanji.match]]
+next_char_type = "ひらがな"
+reading = "ヨワ"
+
+
+# 「辛」 unihan default 「からい」 → 「シン」 (= 「辛口 / 辛抱 / 辛気 / 辛辣」)。
+# 形容詞活用 next ひらがな → カラ stem (= 「辛い / 辛さ」)、 ただし 「辛ラーメン」
+# 等の固有名詞は jukugo で band 1000 が拾うはず
+[[kanji]]
+char = "辛"
+default = "シン"
+
+[[kanji.match]]
+next_char_type = "ひらがな"
+reading = "カラ"
+
+
+# 「達」 unihan default 「とおる」 → 接尾辞 「タチ」 (= 「友達 / 私達 / 子供達 / 君達」)、
+# jukugo 「達成 / 到達 / 配達」 = 「タツ」 は band 1000 で勝つ
+[[kanji]]
+char = "達"
+default = "タチ"
+
+
+# ★round 40、 unihan/joyo の動詞訓読み default 偏向 sweep その 5:
+
+# 「毒」 unihan default 「そこなう」 → 「ドク」 (= 「毒キノコ / 毒植物 / 解毒 / 中毒」)
+[[kanji]]
+char = "毒"
+default = "ドク"
+
+
+# 「急」 unihan default 「いそぐ」 → 「キュウ」 (= 「急に / 急行 / 急用 / 緊急」)、
+# 動詞活用は next ひらがな → イソ (= 「急ぐ / 急ぎ」)
+[[kanji]]
+char = "急"
+default = "キュウ"
+
+[[kanji.match]]
+next_starts_any = ["ぐ", "ぎ", "い", "が"]  # 「急ぐ / 急ぎ / 急いで / 急がない」
+reading = "イソ"
+
+
+# 「即」 unihan default 「すなわち」 → 「ソク」 (= 「即時 / 即答 / 即興 / 即爆」)
+[[kanji]]
+char = "即"
+default = "ソク"
+
+
+# ★round 41、 「凸」 unihan default 「でこ」 → ゲーム配信文脈 「トツ」 (= 「凸る /
+# 凸って / 凸待ち」 突撃用法) + jukugo 「凹凸 = オウトツ」 は band 1000 で勝つ
+[[kanji]]
+char = "凸"
+default = "トツ"
+
+[[kanji.match]]
+next_starts_any = ["る", "っ", "り", "ら", "れ"]  # 「凸る / 凸って / 凸り」 動詞
+reading = "トツ"
+
+
+# ★round 45、 「市」 unihan default 「いち」 → 「シ」 (= 「N市 / 市町村 / 市役所 /
+# 市場」)、 「市場」 = 「イチバ」 等は jukugo band 1000 で勝つ
+[[kanji]]
+char = "市"
+default = "シ"
 
