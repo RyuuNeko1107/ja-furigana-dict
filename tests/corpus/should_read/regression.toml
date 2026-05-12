@@ -982,3 +982,30 @@ expected = "はばつ"
 input = "来やすい"
 mode = "hiragana"
 expected = "きやすい"
+
+# ─── round 25: 王/研 default ────────────────────────────────────────────────
+
+[[case]]
+input = "新人王"
+mode = "hiragana"
+expected = "しんじんおう"
+
+[[case]]
+input = "国王"
+mode = "hiragana"
+expected = "こくおう"
+
+[[case]]
+input = "研究"
+mode = "hiragana"
+expected = "けんきゅう"
+
+[[case]]
+input = "イカ研"
+mode = "hiragana"
+expected = "イカけん"
+
+[[case]]
+input = "研ぐ"
+mode = "hiragana"
+expected = "とぐ"
