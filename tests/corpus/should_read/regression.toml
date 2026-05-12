@@ -632,3 +632,45 @@ expected = "はかいしん"
 input = "原神"
 mode = "hiragana"
 expected = "げんしん"
+
+# ─── round 15: 均/器/曲 default 修正 + 百均 jukugo ────────────────────────
+
+[[case]]
+input = "百均"
+mode = "hiragana"
+expected = "ひゃっきん"
+
+[[case]]
+input = "平均"
+mode = "hiragana"
+expected = "へいきん"
+
+[[case]]
+input = "充電器"
+mode = "hiragana"
+expected = "じゅうでんき"
+
+[[case]]
+input = "食器"
+mode = "hiragana"
+expected = "しょっき"
+
+[[case]]
+input = "硝子の器"
+mode = "hiragana"
+expected = "がらすのうつわ"
+
+[[case]]
+input = "楽曲"
+mode = "hiragana"
+expected = "がっきょく"
+
+[[case]]
+input = "名曲"
+mode = "hiragana"
+expected = "めいきょく"
+
+[[case]]
+input = "曲がる"
+mode = "hiragana"
+expected = "まがる"
