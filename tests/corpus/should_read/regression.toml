@@ -476,3 +476,50 @@ expected = "わらう"
 input = "笑顔"
 mode = "hiragana"
 expected = "えがお"
+
+# ─── round 12: 後+数字 / 会 / 話 / 次会 ────────────────────────────────────
+
+[[case]]
+input = "後3試合"
+mode = "hiragana"
+expected = "あとさんしあい"
+
+[[case]]
+input = "後の話"
+mode = "hiragana"
+expected = "あとのはなし"
+
+[[case]]
+input = "直後"
+mode = "hiragana"
+expected = "ちょくご"
+
+[[case]]
+input = "2次会"
+mode = "hiragana"
+expected = "にじかい"
+
+[[case]]
+input = "会議"
+mode = "hiragana"
+expected = "かいぎ"
+
+[[case]]
+input = "会う"
+mode = "hiragana"
+expected = "あう"
+
+[[case]]
+input = "会った"
+mode = "hiragana"
+expected = "あった"
+
+[[case]]
+input = "話す"
+mode = "hiragana"
+expected = "はなす"
+
+[[case]]
+input = "話して"
+mode = "hiragana"
+expected = "はなして"

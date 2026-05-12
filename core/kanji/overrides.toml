@@ -86,6 +86,11 @@ default = "ゴ"
 next_char_type = "ひらがな"
 reading = "あと"
 
+# 「後 3 試合 / 後 100 円」 等の副詞用法 = 数字後続で 「あと」
+[[kanji.match]]
+next_char_type = "英数"
+reading = "あと"
+
 [[kanji.match]]
 prev_char_type = "ひらがな"
 reading = "あと"
@@ -734,6 +739,24 @@ default = "ゼン"
 [[kanji]]
 char = "目"
 default = "め"
+
+# 「会」: 音読み 「カイ」 (= 「会議 / 大会 / 機会 / 次会」 等の熟語) が圧倒的。
+# 動詞 「会う / 会わない」 はひらがな後続で 「あ」 (= 「会う」 = 「あう」 = 「あ」+「う」)。
+[[kanji]]
+char = "会"
+default = "カイ"
+[[kanji.match]]
+next_char_type = "ひらがな"
+reading = "あ"
+
+# 「話」: 名詞 「話 (はなし)」 と動詞 「話す」 で語幹分岐。 default は名詞形 「はなし」、
+# 動詞活用 (= 「話す / 話して / 話さない」) は す/し/さ/せ/そ 後続で語幹 「はな」。
+[[kanji]]
+char = "話"
+default = "はなし"
+[[kanji.match]]
+next_starts_any = ["す", "し", "さ", "せ", "そ"]
+reading = "はな"
 
 # ─── 笑 (★alpha.21、 単独 「笑」 が「わらう」 動詞形で出る違和感を修正) ──────
 #
