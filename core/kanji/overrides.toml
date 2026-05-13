@@ -1840,3 +1840,171 @@ default = "ひど"
 next_starts_any = ["い", "く", "か", "さ"]
 reading = "ひど"
 
+
+# ─── 第 4 弾 sweep: top 40 単漢字 default を音読みに統一 ──────────────────
+#
+# unihan default が動詞活用完全形 (= 「くわだてる / まぬかれる / なぐさめる」 等) や
+# 誤入力 (= 「ごとくする / はりねずみ」) になっていた 40 字を、 接頭辞 / 接尾辞 /
+# 熟語で頻出の音読みに統一。 動詞活用は Lindera 1 token (= 「企てる / 免れる / 慰める」)
+# が band 50 で来るため reading 自体は保たれる、 熟語は jukugo dict 1000 で覆う。
+
+[[kanji]]
+char = "企"
+default = "キ"
+
+[[kanji]]
+char = "免"
+default = "メン"
+
+[[kanji]]
+char = "勘"
+default = "カン"
+
+[[kanji]]
+char = "慰"
+default = "イ"
+
+[[kanji]]
+char = "憧"
+default = "ドウ"
+
+[[kanji]]
+char = "戒"
+default = "カイ"
+
+[[kanji]]
+char = "戯"
+default = "ギ"
+
+[[kanji]]
+char = "携"
+default = "ケイ"
+
+[[kanji]]
+char = "志"
+default = "シ"
+
+[[kanji]]
+char = "快"
+default = "カイ"
+
+[[kanji]]
+char = "妨"
+default = "ボウ"
+
+[[kanji]]
+char = "如"
+default = "ジョ"
+
+[[kanji]]
+char = "彙"
+default = "イ"
+
+[[kanji]]
+char = "喧"
+default = "ケン"
+
+[[kanji]]
+char = "嘩"
+default = "カ"
+
+[[kanji]]
+char = "噌"
+default = "ソウ"
+
+[[kanji]]
+char = "倹"
+default = "ケン"
+
+[[kanji]]
+char = "典"
+default = "テン"
+
+[[kanji]]
+char = "准"
+default = "ジュン"
+
+[[kanji]]
+char = "剰"
+default = "ジョウ"
+
+[[kanji]]
+char = "劫"
+default = "コウ"
+
+[[kanji]]
+char = "勅"
+default = "チョク"
+
+[[kanji]]
+char = "唆"
+default = "サ"
+
+[[kanji]]
+char = "堆"
+default = "タイ"
+
+[[kanji]]
+char = "奉"
+default = "ホウ"
+
+[[kanji]]
+char = "娃"
+default = "アイ"
+
+[[kanji]]
+char = "寧"
+default = "ネイ"
+
+[[kanji]]
+char = "尉"
+default = "イ"
+
+[[kanji]]
+char = "希"
+default = "キ"
+
+[[kanji]]
+char = "庶"
+default = "ショ"
+
+[[kanji]]
+char = "弄"
+default = "ロウ"
+
+[[kanji]]
+char = "恣"
+default = "シ"
+
+[[kanji]]
+char = "恩"
+default = "オン"
+
+[[kanji]]
+char = "悉"
+default = "シツ"
+
+[[kanji]]
+char = "慈"
+default = "ジ"
+
+[[kanji]]
+char = "憤"
+default = "フン"
+
+[[kanji]]
+char = "抄"
+default = "ショウ"
+
+[[kanji]]
+char = "拠"
+default = "キョ"
+
+[[kanji]]
+char = "掌"
+default = "ショウ"
+
+[[kanji]]
+char = "排"
+default = "ハイ"
+
