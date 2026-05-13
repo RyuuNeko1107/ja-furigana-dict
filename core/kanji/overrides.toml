@@ -4641,3 +4641,243 @@ default = "ゼン"
 char = "潜"
 default = "セン"
 
+
+# ─── 第 15 弾 sweep: joyo length 3 動詞訓読み 60 字 ──
+# 誤入力含む (= 疾/発/県 unihan default が別字読み)
+
+[[kanji]]
+char = "揺"
+default = "ヨウ"
+
+[[kanji]]
+char = "搬"
+default = "ハン"
+
+[[kanji]]
+char = "搾"
+default = "サク"
+
+[[kanji]]
+char = "摯"
+default = "シ"
+
+[[kanji]]
+char = "擁"
+default = "ヨウ"
+
+[[kanji]]
+char = "攻"
+default = "コウ"
+
+[[kanji]]
+char = "放"
+default = "ホウ"
+
+[[kanji]]
+char = "救"
+default = "キュウ"
+
+[[kanji]]
+char = "斉"
+default = "セイ"
+
+[[kanji]]
+char = "濁"
+default = "ダク"
+
+[[kanji]]
+char = "濯"
+default = "タク"
+
+[[kanji]]
+char = "焦"
+default = "ショウ"
+
+[[kanji]]
+char = "煙"
+default = "エン"
+
+[[kanji]]
+char = "熟"
+default = "ジュク"
+
+[[kanji]]
+char = "燃"
+default = "ネン"
+
+[[kanji]]
+char = "燥"
+default = "ソウ"
+
+[[kanji]]
+char = "爆"
+default = "バク"
+
+[[kanji]]
+char = "犯"
+default = "ハン"
+
+[[kanji]]
+char = "狂"
+default = "キョウ"
+
+[[kanji]]
+char = "狙"
+default = "ソ"
+
+[[kanji]]
+char = "申"
+default = "シン"
+
+[[kanji]]
+char = "画"
+default = "ガ"
+
+[[kanji]]
+char = "留"
+default = "リュウ"
+
+[[kanji]]
+char = "畳"
+default = "ジョウ"
+
+[[kanji]]
+char = "疾"
+default = "シツ"
+
+[[kanji]]
+char = "痩"
+default = "ソウ"
+
+[[kanji]]
+char = "療"
+default = "リョウ"
+
+[[kanji]]
+char = "癒"
+default = "ユ"
+
+[[kanji]]
+char = "発"
+default = "ハツ"
+
+[[kanji]]
+char = "登"
+default = "トウ"
+
+[[kanji]]
+char = "盗"
+default = "トウ"
+
+[[kanji]]
+char = "県"
+default = "ケン"
+
+[[kanji]]
+char = "眠"
+default = "ミン"
+
+[[kanji]]
+char = "睦"
+default = "ボク"
+
+[[kanji]]
+char = "矯"
+default = "キョウ"
+
+[[kanji]]
+char = "砕"
+default = "サイ"
+
+[[kanji]]
+char = "破"
+default = "ハ"
+
+[[kanji]]
+char = "磨"
+default = "マ"
+
+[[kanji]]
+char = "示"
+default = "ジ"
+
+[[kanji]]
+char = "祈"
+default = "キ"
+
+[[kanji]]
+char = "祝"
+default = "シュク"
+
+[[kanji]]
+char = "祭"
+default = "サイ"
+
+[[kanji]]
+char = "禅"
+default = "ゼン"
+
+[[kanji]]
+char = "秘"
+default = "ヒ"
+
+[[kanji]]
+char = "称"
+default = "ショウ"
+
+[[kanji]]
+char = "移"
+default = "イ"
+
+[[kanji]]
+char = "稼"
+default = "カ"
+
+[[kanji]]
+char = "窃"
+default = "セツ"
+
+[[kanji]]
+char = "競"
+default = "キョウ"
+
+[[kanji]]
+char = "符"
+default = "フ"
+
+[[kanji]]
+char = "築"
+default = "チク"
+
+[[kanji]]
+char = "簡"
+default = "カン"
+
+[[kanji]]
+char = "粘"
+default = "ネン"
+
+[[kanji]]
+char = "紡"
+default = "ボウ"
+
+[[kanji]]
+char = "結"
+default = "ケツ"
+
+[[kanji]]
+char = "絞"
+default = "コウ"
+
+[[kanji]]
+char = "絡"
+default = "ラク"
+
+[[kanji]]
+char = "給"
+default = "キュウ"
+
+[[kanji]]
+char = "統"
+default = "トウ"
+
