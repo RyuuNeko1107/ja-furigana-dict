@@ -4078,3 +4078,115 @@ reading = "クロイロ"
 
 [entries."灰色"]
 reading = "ハイイロ"
+
+# ─── 反 系 (batch 38) ────────────────────────────
+[entries."反映"]
+reading = "ハンエイ"
+
+[entries."反転"]
+reading = "ハンテン"
+
+[entries."反逆"]
+reading = "ハンギャク"
+
+[entries."反乱"]
+reading = "ハンラン"
+
+# ─── 周 系 ────────────────────────────
+[entries."周波"]
+reading = "シュウハ"
+
+[entries."周回"]
+reading = "シュウカイ"
+
+[entries."周到"]
+reading = "シュウトウ"
+
+[entries."周知"]
+reading = "シュウチ"
+
+# ─── 末 系 ────────────────────────────
+[entries."末端"]
+reading = "マッタン"
+
+# ─── 確 系 ────────────────────────────
+[entries."確保"]
+reading = "カクホ"
+
+[entries."確約"]
+reading = "カクヤク"
+
+# ─── 意 系 ────────────────────────────
+[entries."意欲"]
+reading = "イヨク"
+
+[entries."意向"]
+reading = "イコウ"
+
+[entries."意気"]
+reading = "イキ"
+
+# ─── 感 系 ────────────────────────────
+[entries."感染"]
+reading = "カンセン"
+
+[entries."感覚"]
+reading = "カンカク"
+
+[entries."感性"]
+reading = "カンセイ"
+
+[entries."感受"]
+reading = "カンジュ"
+
+# ─── 動 系 ────────────────────────────
+[entries."動力"]
+reading = "ドウリョク"
+
+[entries."動詞"]
+reading = "ドウシ"
+
+# ─── 行 系 ────────────────────────────
+[entries."行使"]
+reading = "コウシ"
+
+# ─── 開 系 ────────────────────────────
+[entries."開拓"]
+reading = "カイタク"
+
+[entries."開戦"]
+reading = "カイセン"
+
+# ─── 創 系 ────────────────────────────
+[entries."創作"]
+reading = "ソウサク"
+
+# ─── 廃 系 ────────────────────────────
+[entries."廃絶"]
+reading = "ハイゼツ"
+
+[entries."廃線"]
+reading = "ハイセン"
+
+[entries."廃液"]
+reading = "ハイエキ"
+
+# ─── 専 系 ────────────────────────────
+[entries."専属"]
+reading = "センゾク"
+
+[entries."専有"]
+reading = "センユウ"
+
+[entries."専任"]
+reading = "センニン"
+
+[entries."専務"]
+reading = "センム"
+
+# ─── 主 系 ────────────────────────────
+[entries."主婦"]
+reading = "シュフ"
+
+[entries."主流"]
+reading = "シュリュウ"
