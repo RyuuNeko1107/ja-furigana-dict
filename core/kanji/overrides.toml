@@ -3912,3 +3912,246 @@ default = "ゴ"
 char = "享"
 default = "キョウ"
 
+
+# ─── 第 12 弾 sweep: joyo length 3 動詞訓読み 60 字 ──
+
+[[kanji]]
+char = "丁"
+default = "テイ"
+
+[[kanji]]
+char = "両"
+default = "リョウ"
+
+[[kanji]]
+char = "乾"
+default = "カン"
+
+[[kanji]]
+char = "了"
+default = "リョウ"
+
+[[kanji]]
+char = "倍"
+default = "バイ"
+
+[[kanji]]
+char = "傲"
+default = "ゴウ"
+
+[[kanji]]
+char = "判"
+default = "ハン"
+
+[[kanji]]
+char = "占"
+default = "セン"
+
+[[kanji]]
+char = "参"
+default = "サン"
+
+[[kanji]]
+char = "及"
+default = "キュウ"
+
+[[kanji]]
+char = "受"
+default = "ジュ"
+
+[[kanji]]
+char = "叫"
+default = "キョウ"
+
+[[kanji]]
+char = "叱"
+default = "シツ"
+
+[[kanji]]
+char = "号"
+default = "ゴウ"
+
+[[kanji]]
+char = "吟"
+default = "ギン"
+
+[[kanji]]
+char = "含"
+default = "ガン"
+
+[[kanji]]
+char = "呈"
+default = "テイ"
+
+[[kanji]]
+char = "告"
+default = "コク"
+
+[[kanji]]
+char = "哺"
+default = "ホ"
+
+[[kanji]]
+char = "啓"
+default = "ケイ"
+
+[[kanji]]
+char = "喝"
+default = "カツ"
+
+[[kanji]]
+char = "喩"
+default = "ユ"
+
+[[kanji]]
+char = "嘆"
+default = "タン"
+
+[[kanji]]
+char = "嘱"
+default = "ショク"
+
+[[kanji]]
+char = "嚇"
+default = "カク"
+
+[[kanji]]
+char = "回"
+default = "カイ"
+
+[[kanji]]
+char = "困"
+default = "コン"
+
+[[kanji]]
+char = "囲"
+default = "イ"
+
+[[kanji]]
+char = "図"
+default = "ズ"
+
+[[kanji]]
+char = "垂"
+default = "スイ"
+
+[[kanji]]
+char = "埋"
+default = "マイ"
+
+[[kanji]]
+char = "堪"
+default = "カン"
+
+[[kanji]]
+char = "塞"
+default = "ソク"
+
+[[kanji]]
+char = "填"
+default = "テン"
+
+[[kanji]]
+char = "墜"
+default = "ツイ"
+
+[[kanji]]
+char = "墾"
+default = "コン"
+
+[[kanji]]
+char = "壊"
+default = "カイ"
+
+[[kanji]]
+char = "壱"
+default = "イチ"
+
+[[kanji]]
+char = "央"
+default = "オウ"
+
+[[kanji]]
+char = "契"
+default = "ケイ"
+
+[[kanji]]
+char = "奔"
+default = "ホン"
+
+[[kanji]]
+char = "奪"
+default = "ダツ"
+
+[[kanji]]
+char = "奮"
+default = "フン"
+
+[[kanji]]
+char = "好"
+default = "コウ"
+
+[[kanji]]
+char = "妊"
+default = "ニン"
+
+[[kanji]]
+char = "妬"
+default = "ト"
+
+[[kanji]]
+char = "威"
+default = "イ"
+
+[[kanji]]
+char = "娠"
+default = "シン"
+
+[[kanji]]
+char = "嫉"
+default = "シツ"
+
+[[kanji]]
+char = "守"
+default = "シュ"
+
+[[kanji]]
+char = "容"
+default = "ヨウ"
+
+[[kanji]]
+char = "将"
+default = "ショウ"
+
+[[kanji]]
+char = "尽"
+default = "ジン"
+
+[[kanji]]
+char = "屈"
+default = "クツ"
+
+[[kanji]]
+char = "展"
+default = "テン"
+
+[[kanji]]
+char = "巡"
+default = "ジュン"
+
+[[kanji]]
+char = "帰"
+default = "キ"
+
+[[kanji]]
+char = "幕"
+default = "マク"
+
+[[kanji]]
+char = "座"
+default = "ザ"
+
+[[kanji]]
+char = "延"
+default = "エン"
+
