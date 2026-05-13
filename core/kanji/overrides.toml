@@ -4881,3 +4881,243 @@ default = "キュウ"
 char = "統"
 default = "トウ"
 
+
+# ─── 第 16 弾 sweep: joyo length 3 動詞訓読み 59 字 ──
+# 「芸 = うえる」 「融 = とおる」 「該 = かねる」 等は誤入力、 正解音読みに修正。
+
+[[kanji]]
+char = "絶"
+default = "ゼツ"
+
+[[kanji]]
+char = "続"
+default = "ゾク"
+
+[[kanji]]
+char = "締"
+default = "テイ"
+
+[[kanji]]
+char = "縛"
+default = "バク"
+
+[[kanji]]
+char = "縮"
+default = "シュク"
+
+[[kanji]]
+char = "署"
+default = "ショ"
+
+[[kanji]]
+char = "群"
+default = "グン"
+
+[[kanji]]
+char = "習"
+default = "シュウ"
+
+[[kanji]]
+char = "老"
+default = "ロウ"
+
+[[kanji]]
+char = "耐"
+default = "タイ"
+
+[[kanji]]
+char = "肥"
+default = "ヒ"
+
+[[kanji]]
+char = "育"
+default = "イク"
+
+[[kanji]]
+char = "胎"
+default = "タイ"
+
+[[kanji]]
+char = "腐"
+default = "フ"
+
+[[kanji]]
+char = "臨"
+default = "リン"
+
+[[kanji]]
+char = "至"
+default = "シ"
+
+[[kanji]]
+char = "致"
+default = "チ"
+
+[[kanji]]
+char = "興"
+default = "キョウ"
+
+[[kanji]]
+char = "航"
+default = "コウ"
+
+[[kanji]]
+char = "般"
+default = "ハン"
+
+[[kanji]]
+char = "芸"
+default = "ゲイ"
+
+[[kanji]]
+char = "萎"
+default = "イ"
+
+[[kanji]]
+char = "蓋"
+default = "ガイ"
+
+[[kanji]]
+char = "薫"
+default = "クン"
+
+[[kanji]]
+char = "蛮"
+default = "バン"
+
+[[kanji]]
+char = "融"
+default = "ユウ"
+
+[[kanji]]
+char = "褒"
+default = "ホウ"
+
+[[kanji]]
+char = "襲"
+default = "シュウ"
+
+[[kanji]]
+char = "覆"
+default = "フク"
+
+[[kanji]]
+char = "規"
+default = "キ"
+
+[[kanji]]
+char = "触"
+default = "ショク"
+
+[[kanji]]
+char = "訂"
+default = "テイ"
+
+[[kanji]]
+char = "計"
+default = "ケイ"
+
+[[kanji]]
+char = "記"
+default = "キ"
+
+[[kanji]]
+char = "許"
+default = "キョ"
+
+[[kanji]]
+char = "評"
+default = "ヒョウ"
+
+[[kanji]]
+char = "詰"
+default = "キツ"
+
+[[kanji]]
+char = "該"
+default = "ガイ"
+
+[[kanji]]
+char = "誇"
+default = "コ"
+
+[[kanji]]
+char = "誌"
+default = "シ"
+
+[[kanji]]
+char = "誓"
+default = "セイ"
+
+[[kanji]]
+char = "誘"
+default = "ユウ"
+
+[[kanji]]
+char = "語"
+default = "ゴ"
+
+[[kanji]]
+char = "談"
+default = "ダン"
+
+[[kanji]]
+char = "諧"
+default = "カイ"
+
+[[kanji]]
+char = "諭"
+default = "ユ"
+
+[[kanji]]
+char = "諮"
+default = "シ"
+
+[[kanji]]
+char = "謀"
+default = "ボウ"
+
+[[kanji]]
+char = "謁"
+default = "エツ"
+
+[[kanji]]
+char = "謄"
+default = "トウ"
+
+[[kanji]]
+char = "議"
+default = "ギ"
+
+[[kanji]]
+char = "譲"
+default = "ジョウ"
+
+[[kanji]]
+char = "護"
+default = "ゴ"
+
+[[kanji]]
+char = "負"
+default = "フ"
+
+[[kanji]]
+char = "貢"
+default = "コウ"
+
+[[kanji]]
+char = "責"
+default = "セキ"
+
+[[kanji]]
+char = "賀"
+default = "ガ"
+
+[[kanji]]
+char = "賃"
+default = "チン"
+
+[[kanji]]
+char = "賞"
+default = "ショウ"
+
