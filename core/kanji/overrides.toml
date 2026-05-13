@@ -1823,3 +1823,20 @@ default = "ケイ"
 next_starts_any = ["が", "を", "に", "の", "は", "も"]
 reading = "カタチ"
 
+# 「値」: default 接尾辞 「チ」 (= 「数値 / 経験値 / 価値 / 平均値 / シード値 / 偏差値」)、
+# 「値段 / 値する / 値打ち」 等の訓読み 「ね / あたい」 は jukugo dict 1000 で覆う。
+[[kanji]]
+char = "値"
+default = "チ"
+
+# 「酷」: default 「ひどい」 (= 「酷い目 / 酷くなる / 酷すぎる」 一般用法)、 訓読み 「むごい」
+# は古風で配信文脈には不適、 unihan default 「きびしい」 は完全な誤分類。 音読み 「コク」
+# (= 「過酷 / 残酷 / 酷使」) は jukugo で覆う。
+[[kanji]]
+char = "酷"
+default = "ひど"
+
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "さ"]
+reading = "ひど"
+

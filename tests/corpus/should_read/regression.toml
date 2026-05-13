@@ -1548,6 +1548,43 @@ input = "形が"
 mode = "hiragana"
 expected = "かたちが"
 
+# ─── round 52: 値 / 酷 / 二回 ────────────────────────────────────────────────
+
+[[case]]
+input = "数値"
+mode = "hiragana"
+expected = "すうち"
+
+[[case]]
+input = "経験値"
+mode = "hiragana"
+expected = "けいけんち"
+
+[[case]]
+input = "シード値"
+mode = "hiragana"
+expected = "シードち"
+
+[[case]]
+input = "値段"
+mode = "hiragana"
+expected = "ねだん"
+
+[[case]]
+input = "酷い"
+mode = "hiragana"
+expected = "ひどい"
+
+[[case]]
+input = "酷くなる"
+mode = "hiragana"
+expected = "ひどくなる"
+
+[[case]]
+input = "二回戦"
+mode = "hiragana"
+expected = "にかいせん"
+
 # ─── 単漢字 default 見直し 第 1 弾: 奨 / 恭 / 慮 / 承 / 辱 ─────────────────────
 # unihan/joyo の動詞活用形 default (= 「うやうやしい / おもんぱかる / うけたまわる / はずかしめる」、
 # および誤入力「すすめるすすむ」) を [[kanji]] block で音読み default + next 後続 stem に整理
