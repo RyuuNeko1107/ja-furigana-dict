@@ -118,6 +118,23 @@ VOICEVOX 単体は dict 改善側で動かせない外部 baseline (= 同 corpus
      (= ja_norm == truth_norm / vv_norm == truth_norm)、 AI の役割は truth 生成と
      誤読 pattern 分析のみ。 -->
 
+### 計測 protocol (= 累積測定)
+
+固定 asset (= 1 度生成したら以後変更しない):
+- sample (N=1000、 fresh seed 12345)
+- truth_full (= 全 1000 件 ground truth)
+- VV 出力 (= 外部 baseline、 engine version 固定で invariant)
+
+各 dict 改善 batch 後の作業:
+1. ja-furigana を sample に対して再実行 → 新 ja 出力
+2. 新 ja を truth と機械比較 → 新 ja 正答率
+3. **履歴 table に行を append** (= 過去 row は上書きしない)
+4. VV 正答率は不変なので参考表示
+
+これで各 batch の効果を時系列で追跡、 over-fit / 規格外動作も発見しやすい。
+
+### 履歴 table
+
 sample N=1000、 fresh seed 12345 (= 過去未使用)。 ASCII 英字を含む文 (= ja 0.1.0 が
 loanword 統合未対応のため不利な評価項目) は分母から除外、 SKIP も分母除外。
 全 1000 件に truth を設定し、 ja / vv 各々を truth と機械比較 (= 「両者一致 = 両者正解」
