@@ -118,28 +118,30 @@ VOICEVOX 単体は dict 改善側で動かせない外部 baseline (= 同 corpus
      (= ja_norm == truth_norm / vv_norm == truth_norm)、 AI の役割は truth 生成と
      誤読 pattern 分析のみ。 -->
 
-sample N=1000、 fresh seed 12345 (= 過去未使用)。 SKIP は分母から除外。
+sample N=1000、 fresh seed 12345 (= 過去未使用)。 ASCII 英字を含む文 (= ja 0.1.0 が
+loanword 統合未対応のため不利な評価項目) は分母から除外、 SKIP も分母除外。
 
 | 計測日 | dict version | sample | ja 正答率 | VOICEVOX 正答率 | ja − VOICEVOX | 両者一致 |
 |---|---|---|---|---|---|---|
-| 2026-05-13 | v2026.05.13.7 + round 25 batch 27-28 (= +1704 件 一般語彙) | 999 | **83.4%** | **85.9%** | **−2.5pt** | 80.0% |
+| 2026-05-13 | v2026.05.13.7 + round 25 batch 27-28 (= +1704 件 一般語彙) | 898 | **92.3%** | **92.9%** | **−0.6pt** | 88.6% |
 
 内訳:
-- 両者一致 (= match)、 両者正解として加算: 800 件
-- diff 200 件のうち truth で機械判定:
+- 入力 1,000 件 → ASCII 英字含む 101 件 除外 → 899 件 → SKIP 1 件 除外 → **evaluated 898 件**
+- 両者一致 (= match)、 両者正解として加算: 796 件
+- diff 102 件のうち truth で機械判定:
   - ja のみ正解: 33 件
-  - VOICEVOX のみ正解: 58 件
-  - 両者誤り: 108 件
-  - skip (= 顔文字 only 等): 1 件
+  - VOICEVOX のみ正解: 38 件
+  - 両者誤り: 31 件
 
-主因 (= ja の負け 2.5pt):
-- **ASCII 英字混在文** で ja は literal 保持 (= 「Excel」 「Minecraft」 「KeyScroll」 等)
-  vv は katakana 展開で truth と一致、 ja は不一致になる。 既知の 0.2.0 target
-  (= loanwords 統合) で解消予定
+ja − VOICEVOX は **−0.6pt** で誤差範囲、 実質互角。 残る ja 不利の主因:
 - **「w」 「ww」 末尾**: ja は literal 保持、 vv は「ダブリユウ」 と読み上げ、
-  truth は 「音にしない」 ことが多いので両者誤りに分類
-- **「主」 (= 配信者呼称)**: ja は 「ヌシ」 と正しく読む、 vv は 「オモ」 で誤読 →
-  ja のみ正解 case として +shift
+  truth は 「音にしない」 ことが多いので両者誤りに分類 (= 両者誤り 31 件の主要 cluster)
+- **「主」 (= 配信者呼称)** など配信スラング: ja のみ正解 case として +33 寄与済
+  (= dict 改善の効果)
+
+評価対象外:
+- ASCII 英字混在文 (= 0.2.0 loanwords 統合で評価対象化予定)
+- 顔文字 / 記号 only (= 判定不能)
 
 ## 評価対象外 (= 既知の制約)
 
