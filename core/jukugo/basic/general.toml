@@ -4033,3 +4033,48 @@ reading = "ジョウリク"
 
 [entries."視察"]
 reading = "シサツ"
+
+# ─── 「色」 系 jukugo (batch 37) ────────────────────────────
+# 「色」 default は kun 「いろ」、 漢字+色 でも kun のまま動く色名+色 (= 赤色/青色/茶色 等) と、
+# 漢字+色 で on 「ショク」 になる on+色 (= 特色/暗色 等) があるため、 後者を jukugo で個別登録。
+# 色名+色 のうち kun の固定が必要なものも同時に登録 (= 黒/黄/茶/灰)。
+
+[entries."暗色"]
+reading = "アンショク"
+
+[entries."単色"]
+reading = "タンショク"
+
+[entries."三原色"]
+reading = "サンゲンショク"
+
+[entries."多色"]
+reading = "タショク"
+
+[entries."同色"]
+reading = "ドウショク"
+
+[entries."着色"]
+reading = "チャクショク"
+
+[entries."異色"]
+reading = "イショク"
+
+[entries."物色"]
+reading = "ブッショク"
+
+[entries."色素"]
+reading = "シキソ"
+
+# kun + kun (= 色名+色 を jukugo で固定、 default 「いろ」 経由でも動くが安全のため明示)
+[entries."茶色"]
+reading = "チャイロ"
+
+[entries."黄色"]
+reading = "キイロ"
+
+[entries."黒色"]
+reading = "クロイロ"
+
+[entries."灰色"]
+reading = "ハイイロ"
