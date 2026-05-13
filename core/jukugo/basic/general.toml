@@ -4454,3 +4454,129 @@ reading = "ミンゾク"
 
 [entries."民間人"]
 reading = "ミンカンジン"
+
+# ─── 新 系 (batch 41) ────────────────────────────
+[entries."新規"]
+reading = "シンキ"
+
+[entries."新人"]
+reading = "シンジン"
+
+[entries."新型"]
+reading = "シンガタ"
+
+[entries."新作"]
+reading = "シンサク"
+
+[entries."新書"]
+reading = "シンショ"
+
+[entries."新車"]
+reading = "シンシャ"
+
+[entries."新築"]
+reading = "シンチク"
+
+[entries."新緑"]
+reading = "シンリョク"
+
+[entries."新婚"]
+reading = "シンコン"
+
+# ─── 古 系 ────────────────────────────
+[entries."古代"]
+reading = "コダイ"
+
+[entries."古典"]
+reading = "コテン"
+
+[entries."古書"]
+reading = "コショ"
+
+[entries."古都"]
+reading = "コト"
+
+[entries."古傷"]
+reading = "フルキズ"
+
+# ─── 最 系 ────────────────────────────
+[entries."最大"]
+reading = "サイダイ"
+
+[entries."最小"]
+reading = "サイショウ"
+
+[entries."最新"]
+reading = "サイシン"
+
+[entries."最古"]
+reading = "サイコ"
+
+# ─── 初 / 終 ────────────────────────────
+[entries."初日"]
+reading = "ショニチ"
+
+[entries."初回"]
+reading = "ショカイ"
+
+[entries."終戦"]
+reading = "シュウセン"
+
+[entries."終始"]
+reading = "シュウシ"
+
+# ─── 完 / 不完 ────────────────────────────
+[entries."不完全"]
+reading = "フカンゼン"
+
+# ─── 全 系 ────────────────────────────
+[entries."全国"]
+reading = "ゼンコク"
+
+[entries."全力"]
+reading = "ゼンリョク"
+
+[entries."全身"]
+reading = "ゼンシン"
+
+[entries."全面"]
+reading = "ゼンメン"
+
+[entries."全般"]
+reading = "ゼンパン"
+
+# ─── 国 系 ────────────────────────────
+[entries."国土"]
+reading = "コクド"
+
+[entries."国旗"]
+reading = "コッキ"
+
+[entries."国産"]
+reading = "コクサン"
+
+[entries."国立"]
+reading = "コクリツ"
+
+# ─── 家 / 庭 ────────────────────────────
+[entries."家庭"]
+reading = "カテイ"
+
+[entries."家屋"]
+reading = "カオク"
+
+[entries."家事"]
+reading = "カジ"
+
+[entries."家計"]
+reading = "カケイ"
+
+[entries."家賃"]
+reading = "ヤチン"
+
+# ─── 行政 ────────────────────────────
+[entries."知事"]
+reading = "チジ"
+
+[entries."都会"]
+reading = "トカイ"
