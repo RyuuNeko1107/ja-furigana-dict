@@ -5674,3 +5674,21 @@ reading = "カン"
 [[kanji.match]]
 prev_char_type = "カタカナ"
 reading = "カン"
+
+# 「種」: default 「たね」 (= 「種を / 種が / 種の」 名詞主流)、 接尾辞 「シュ」 は
+# prev 漢字 / カタカナ / 英数 (= 「種類 / 一種 / ブキ種 / N 種」) で切替。
+[[kanji]]
+char = "種"
+default = "たね"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "シュ"
+
+[[kanji.match]]
+prev_char_type = "カタカナ"
+reading = "シュ"
+
+[[kanji.match]]
+prev_char_type = "英数"
+reading = "シュ"
