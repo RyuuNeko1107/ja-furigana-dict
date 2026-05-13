@@ -20,15 +20,21 @@ description = "単漢字 default override + 文脈分岐 reading"
 char = "土"
 default = "ツチ"
 
-# ─── default = on-yomi + 送り仮名 / 助詞 で kun-yomi (★alpha.14) ───────────────
+# ─── default = on-yomi + 文脈 で kun-yomi 切替 (★alpha.14) ────────────────────
 #
 # 設計: 単独 standalone なら kun-yomi、 熟語文脈 (= 直後が漢字) なら on-yomi。
-# Smart engine matcher で 直後 / 直前 が ひらがな または 「々」 なら kun-yomi に切替。
 #
 # - default = 熟語で最頻出の on-yomi (= 漢字連続 chunk 内 fallback で安全)
-# - next_char_type = "ひらがな" → kun-yomi (= 直後が助詞 / 送り仮名)
-# - prev_char_type = "ひらがな" → kun-yomi (= 入力末尾 / 助詞 直後)
+# - next_starts_any = [...] → kun-yomi (= 各漢字の活用形 / 助詞 / コピュラ を literal 列挙)
+# - prev_ends_any = [...] → kun-yomi (= 助詞 / 形容詞活用 / 動詞活用 の語尾を literal 列挙)
 # - next_eq = "々" → kun-yomi (= 踊り字反復、 「山々=やまやま」 等)
+#
+# ★方針: `next_char_type = "ひらがな"` / `prev_char_type = "ひらがな"` は **使わない**
+#   (= 雑指定として禁止、 漢字ごとに literal okurigana / 助詞 を明示列挙)。
+#   ただし以下は例外として残置可能:
+#   - `prev_char_type = "漢字"` (= 接尾辞 case、 「漢字+力 = リョク」 等の組み合わせ無限大対応)
+#   - `next_char_type = "カタカナ"` (= 「下ネタ = シモネタ」 等の特定 pattern)
+#   - `next_char_type = "英数"` / `prev_char_type = "英数"` (= 数字接続の特定 pattern)
 
 [[kanji]]
 char = "上"
@@ -748,6 +754,8 @@ default = "て"
 
 # 「力」: 単独 「ちから」 + 接尾辞 「リョク」 (= 「免疫力 / 集中力 / 体力」)。
 # 接尾辞用法が圧倒的、 単独は 「ちから」 名詞。 漢字後続 = 熟語末尾 → リョク。
+# prev_char_type = "漢字" は接尾辞 case の例外として許容 (= 「漢字+力」 の組み合わせを
+# 全て jukugo 登録するのは現実的ではないため、 prefix が 漢字 なら リョク に倒す)
 [[kanji]]
 char = "力"
 default = "ちから"
