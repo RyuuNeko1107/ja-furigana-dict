@@ -3651,3 +3651,126 @@ reading = "サイキ"
 # ─── 販売 ────────────────────────────
 [entries."発売"]
 reading = "ハツバイ"
+
+# ─── 法律 / 規則 (batch 34) ────────────────────────────
+[entries."条項"]
+reading = "ジョウコウ"
+
+[entries."制限"]
+reading = "セイゲン"
+
+[entries."禁止"]
+reading = "キンシ"
+
+[entries."免許"]
+reading = "メンキョ"
+
+# ─── 建築 / 施工 ────────────────────────────
+[entries."施工"]
+reading = "セコウ"
+
+# ─── 警察 / 警戒 ────────────────────────────
+[entries."警戒"]
+reading = "ケイカイ"
+
+# ─── 計算 / 数値 ────────────────────────────
+[entries."計測"]
+reading = "ケイソク"
+
+[entries."合計"]
+reading = "ゴウケイ"
+
+[entries."比例"]
+reading = "ヒレイ"
+
+# ─── 物流 / 貿易 ────────────────────────────
+[entries."貿易"]
+reading = "ボウエキ"
+
+[entries."搬入"]
+reading = "ハンニュウ"
+
+[entries."搬出"]
+reading = "ハンシュツ"
+
+[entries."積載"]
+reading = "セキサイ"
+
+# ─── 環境 ────────────────────────────
+[entries."排水"]
+reading = "ハイスイ"
+
+# ─── 生態 / 生物 ────────────────────────────
+[entries."生命"]
+reading = "セイメイ"
+
+[entries."絶滅"]
+reading = "ゼツメツ"
+
+[entries."保護"]
+reading = "ホゴ"
+
+# ─── 比喩 / 表現 ────────────────────────────
+[entries."比喩"]
+reading = "ヒユ"
+
+# ─── 報酬 / 賞罰 ────────────────────────────
+[entries."報酬"]
+reading = "ホウシュウ"
+
+[entries."賞金"]
+reading = "ショウキン"
+
+[entries."罰金"]
+reading = "バッキン"
+
+[entries."罰則"]
+reading = "バッソク"
+
+[entries."賞罰"]
+reading = "ショウバツ"
+
+[entries."採点"]
+reading = "サイテン"
+
+# ─── 訓練 ────────────────────────────
+[entries."特訓"]
+reading = "トックン"
+
+# ─── 化学 / 物理 ────────────────────────────
+[entries."原子"]
+reading = "ゲンシ"
+
+# ─── 金融 / 通貨 / 取引 ────────────────────────────
+[entries."銅線"]
+reading = "ドウセン"
+
+[entries."銅貨"]
+reading = "ドウカ"
+
+[entries."銀貨"]
+reading = "ギンカ"
+
+[entries."硬貨"]
+reading = "コウカ"
+
+[entries."出金"]
+reading = "シュッキン"
+
+[entries."発注"]
+reading = "ハッチュウ"
+
+[entries."受注"]
+reading = "ジュチュウ"
+
+[entries."出品"]
+reading = "シュッピン"
+
+[entries."落札"]
+reading = "ラクサツ"
+
+[entries."入札"]
+reading = "ニュウサツ"
+
+[entries."競売"]
+reading = "キョウバイ"
