@@ -34,14 +34,18 @@ default = "ツチ"
 char = "上"
 default = "ジョウ"
 
+# 「上は / 上が / 上を / 上に / 上の / 上で / 上と / 上も / 上や / 上へ / 上から / 上まで / 上より」
+# = 名詞用法 + 助詞接続 → ウエ
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
 reading = "うえ"
 
+# 「○の上 / ○が上 / ○は上 / ○を上 / ○に上 / ○で上 / ○と上」 = 助詞 直後 → ウエ
 [[kanji.match]]
-prev_char_type = "ひらがな"
+prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
 reading = "うえ"
 
+# 踊り字「上々」 = ウエウエ
 [[kanji.match]]
 next_eq = "々"
 reading = "うえ"
@@ -50,21 +54,23 @@ reading = "うえ"
 char = "下"
 default = "カ"
 
+# 「下は / 下が / 下を / 下に / 下の / 下で / 下と / 下も / 下や / 下へ / 下から / 下まで / 下より」
+# = 名詞用法 + 助詞接続 → シタ
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
 reading = "した"
 
-# 「下ネタ / 下半身 / 下半期 / 下校」 等の 「しも」 用法 (= カタカナ後続)
-# 「下ネタ」 = 「しもネタ」 期待、 「下半期」 = jukugo dict 1000 で 「カハンキ」 既覆い
-# なら、 「下 + カタカナ」 だけでも 「しも」 採用で多くの case をカバー
+# 「下ネタ」 = シモネタ (= カタカナ語と複合する 「下」 は 「しも」 用法が多い)
 [[kanji.match]]
-next_char_type = "カタカナ"
+next_starts_any = ["ネ"]
 reading = "しも"
 
+# 「○の下 / ○が下」 = 助詞 直後 → シタ
 [[kanji.match]]
-prev_char_type = "ひらがな"
+prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
 reading = "した"
 
+# 踊り字「下々」 = シタジタ
 [[kanji.match]]
 next_eq = "々"
 reading = "した"
@@ -73,20 +79,24 @@ reading = "した"
 char = "前"
 default = "ゼン"
 
+# 「前は / 前が / 前を / 前に / 前の / 前で / 前と / 前も / 前や / 前へ / 前から / 前まで / 前より」
+# = 名詞用法 + 助詞接続 → マエ
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
 reading = "まえ"
 
+# 「○の前 / ○が前」 = 助詞 直後 → マエ
 [[kanji.match]]
-prev_char_type = "ひらがな"
+prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
 reading = "まえ"
 
+# 踊り字 「前々」 = マエマエ
 [[kanji.match]]
 next_eq = "々"
 reading = "まえ"
 
 # 「前 + 動詞 (= 言/見/聞/思/etc)」 = 「以前 〜 した」 用法、 default ゼン だと
-# 「前言ってた → ゼンイッテタ」 になるが本来 「マエイッテタ」、 round 31 で fix
+# 「前言ってた → ゼンイッテタ」 になるが本来 「マエイッテタ」 (★round 31)
 [[kanji.match]]
 next_eq_any = ["言", "見", "聞", "思", "話", "書", "読", "持", "来", "行", "歩"]
 reading = "まえ"
@@ -103,7 +113,7 @@ prev_char_type = "カタカナ"
 reading = "ゴ"
 
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
 reading = "あと"
 
 # 「後 3 試合 / 後 100 円」 等の副詞用法 = 数字後続で 「あと」
@@ -117,7 +127,7 @@ next_starts_any = ["、", "。", ",", "."]
 reading = "あと"
 
 [[kanji.match]]
-prev_char_type = "ひらがな"
+prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
 reading = "あと"
 
 [[kanji.match]]
@@ -129,11 +139,11 @@ char = "米"
 default = "ベイ"
 
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
 reading = "こめ"
 
 [[kanji.match]]
-prev_char_type = "ひらがな"
+prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
 reading = "こめ"
 
 [[kanji.match]]
@@ -145,11 +155,11 @@ char = "国"
 default = "コク"
 
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
 reading = "くに"
 
 [[kanji.match]]
-prev_char_type = "ひらがな"
+prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
 reading = "くに"
 
 [[kanji.match]]
@@ -161,11 +171,11 @@ char = "風"
 default = "フウ"
 
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
 reading = "かぜ"
 
 [[kanji.match]]
-prev_char_type = "ひらがな"
+prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
 reading = "かぜ"
 
 [[kanji.match]]
@@ -184,11 +194,11 @@ prev_ends_any = ["三", "四", "五", "六", "七", "八", "九", "十"]
 reading = "ニン"
 
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
 reading = "ひと"
 
 [[kanji.match]]
-prev_char_type = "ひらがな"
+prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
 reading = "ひと"
 
 [[kanji.match]]
@@ -200,11 +210,11 @@ char = "心"
 default = "シン"
 
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
 reading = "こころ"
 
 [[kanji.match]]
-prev_char_type = "ひらがな"
+prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
 reading = "こころ"
 
 [[kanji.match]]
@@ -216,11 +226,11 @@ char = "物"
 default = "ブツ"
 
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
 reading = "もの"
 
 [[kanji.match]]
-prev_char_type = "ひらがな"
+prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
 reading = "もの"
 
 [[kanji.match]]
@@ -232,11 +242,11 @@ char = "山"
 default = "サン"
 
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
 reading = "やま"
 
 [[kanji.match]]
-prev_char_type = "ひらがな"
+prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
 reading = "やま"
 
 [[kanji.match]]
@@ -248,11 +258,11 @@ char = "川"
 default = "セン"
 
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
 reading = "かわ"
 
 [[kanji.match]]
-prev_char_type = "ひらがな"
+prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
 reading = "かわ"
 
 [[kanji.match]]
@@ -264,11 +274,11 @@ char = "水"
 default = "スイ"
 
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
 reading = "みず"
 
 [[kanji.match]]
-prev_char_type = "ひらがな"
+prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
 reading = "みず"
 
 [[kanji.match]]
@@ -280,11 +290,11 @@ char = "火"
 default = "カ"
 
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
 reading = "ひ"
 
 [[kanji.match]]
-prev_char_type = "ひらがな"
+prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
 reading = "ひ"
 
 [[kanji.match]]
@@ -296,11 +306,11 @@ char = "金"
 default = "キン"
 
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
 reading = "かね"
 
 [[kanji.match]]
-prev_char_type = "ひらがな"
+prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
 reading = "かね"
 
 [[kanji.match]]
@@ -311,14 +321,18 @@ reading = "かね"
 char = "月"
 default = "ゲツ"
 
+# 「月は / 月が / 月を / 月に / 月の / 月で / 月と / 月も / 月や / 月へ /
+# 月から / 月まで / 月より / 月だ / 月です」 = 名詞用法 + 助詞 + コピュラ → ツキ
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ", "だ"]
 reading = "つき"
 
+# 「○の月 / ○が月」 助詞 + 「○い月」「○る月」「○た月」「○て月」 形容詞/動詞活用 → ツキ
 [[kanji.match]]
-prev_char_type = "ひらがな"
+prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も", "い", "る", "た", "て"]
 reading = "つき"
 
+# 踊り字 「月々」 = ツキツキ
 [[kanji.match]]
 next_eq = "々"
 reading = "つき"
@@ -328,11 +342,11 @@ char = "耳"
 default = "ジ"
 
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
 reading = "みみ"
 
 [[kanji.match]]
-prev_char_type = "ひらがな"
+prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
 reading = "みみ"
 
 [[kanji.match]]
@@ -344,11 +358,11 @@ char = "口"
 default = "コウ"
 
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
 reading = "くち"
 
 [[kanji.match]]
-prev_char_type = "ひらがな"
+prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
 reading = "くち"
 
 [[kanji.match]]
@@ -360,11 +374,11 @@ char = "足"
 default = "ソク"
 
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
 reading = "あし"
 
 [[kanji.match]]
-prev_char_type = "ひらがな"
+prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
 reading = "あし"
 
 [[kanji.match]]
@@ -381,11 +395,11 @@ char = "車"
 default = "シャ"
 
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
 reading = "くるま"
 
 [[kanji.match]]
-prev_char_type = "ひらがな"
+prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
 reading = "くるま"
 
 [[kanji.match]]
@@ -397,11 +411,11 @@ char = "今"
 default = "コン"
 
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
 reading = "いま"
 
 [[kanji.match]]
-prev_char_type = "ひらがな"
+prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
 reading = "いま"
 
 # 「今思った / 今食べる / 今行く」 = 漢字後続でも副詞 「いま」、 熟語 (= 「今度 /
@@ -578,56 +592,56 @@ reading = "オク"
 char = "使"
 default = "ツカイ"
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_char_type = "ひらがな"  # TODO: manual migrate (verb or unclassified)
 reading = "ツカ"
 
 [[kanji]]
 char = "言"
 default = "ゲン"
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_char_type = "ひらがな"  # TODO: manual migrate (verb or unclassified)
 reading = "イ"
 
 [[kanji]]
 char = "見"
 default = "ケン"
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_char_type = "ひらがな"  # TODO: manual migrate (verb or unclassified)
 reading = "ミ"
 
 [[kanji]]
 char = "思"
 default = "シ"
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_char_type = "ひらがな"  # TODO: manual migrate (verb or unclassified)
 reading = "オモ"
 
 [[kanji]]
 char = "終"
 default = "シュウ"
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_char_type = "ひらがな"  # TODO: manual migrate (verb or unclassified)
 reading = "オワ"
 
 [[kanji]]
 char = "強"
 default = "キョウ"
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_char_type = "ひらがな"  # TODO: manual migrate (verb or unclassified)
 reading = "ツヨ"
 
 [[kanji]]
 char = "持"
 default = "ジ"
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_char_type = "ひらがな"  # TODO: manual migrate (verb or unclassified)
 reading = "モ"
 
 [[kanji]]
 char = "勝"
 default = "ショウ"
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_char_type = "ひらがな"  # TODO: manual migrate (verb or unclassified)
 reading = "カ"
 
 [[kanji]]
@@ -642,7 +656,7 @@ reading = "カ"
 char = "寝"
 default = "シン"
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_char_type = "ひらがな"  # TODO: manual migrate (verb or unclassified)
 reading = "ネ"
 # 「寝落ち / 寝顔 / 寝坊」 等 漢字後続も訓読み 「ネ」 が自然 (★round 36)
 [[kanji.match]]
@@ -752,7 +766,7 @@ default = "ため"
 char = "居"
 default = "キョ"
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_char_type = "ひらがな"  # TODO: manual migrate (verb or unclassified)
 reading = "イ"
 
 # 「悪」: 形容詞 「悪い / 悪く / 悪かった」 + 接頭辞 「悪すぎる」 = 「わる」 語幹。
@@ -761,7 +775,7 @@ reading = "イ"
 char = "悪"
 default = "アク"
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_char_type = "ひらがな"  # TODO: manual migrate (verb or unclassified)
 reading = "ワル"
 
 # 「嫌」: 多義 — 形容動詞 「いや」 (= 「嫌で / 嫌だ / 嫌な」) + 動詞 / 形容詞 「きら」
@@ -798,7 +812,7 @@ default = "め"
 char = "会"
 default = "カイ"
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_char_type = "ひらがな"  # TODO: manual migrate (verb or unclassified)
 reading = "あ"
 
 # 「話」: 名詞 「話 (はなし)」 と動詞 「話す」 で語幹分岐。 default は名詞形 「はなし」、
@@ -833,7 +847,7 @@ default = "に"
 char = "戦"
 default = "セン"
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_char_type = "ひらがな"  # TODO: manual migrate (verb or unclassified)
 reading = "タタカ"
 
 # 「僕」: 一人称 「ぼく」 圧倒的、 「しもべ」 (= 古語 / 文語) はレア。 unihan default
@@ -863,7 +877,7 @@ reading = "あつ"
 char = "更"
 default = "コウ"
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_char_type = "ひらがな"  # TODO: manual migrate (verb or unclassified)
 reading = "さら"
 
 # 「均」: 「平均 / 均等 / 百均 / 均一」 等の音読み 「キン」 が圧倒的。 動詞 「均す
@@ -901,7 +915,7 @@ reading = "ま"
 char = "短"
 default = "タン"
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_char_type = "ひらがな"  # TODO: manual migrate (verb or unclassified)
 reading = "みじか"
 
 # 「用」: 「ヨウ」 (= 「使用 / 用途 / 用件 / 喋る用 / 利用」) が圧倒的。 動詞
@@ -934,7 +948,7 @@ default = "テキ"
 char = "久"
 default = "キュウ"
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_char_type = "ひらがな"  # TODO: manual migrate (verb or unclassified)
 reading = "ひさ"
 
 # 「銀」: 「ギン」 (= 「銀メダル / 白銀 / 銀行 / 銀河 / 銀製」) が圧倒的。
@@ -986,7 +1000,7 @@ default = "エン"
 char = "助"
 default = "ジョ"
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_char_type = "ひらがな"  # TODO: manual migrate (verb or unclassified)
 reading = "たす"
 
 # 「外」: 音読み 「ガイ」 (= 「以外 / 海外 / 戦力外 / 案外 / 例外」) が圧倒的。
@@ -995,7 +1009,7 @@ reading = "たす"
 char = "外"
 default = "ガイ"
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_char_type = "ひらがな"  # TODO: manual migrate (verb or unclassified)
 reading = "そと"
 
 # 「帯」: 名詞 「帯 (おび) / 音読み (タイ)」 多義。 単独 / 助詞前 (= 「帯地 / 帯の」)
@@ -1006,7 +1020,7 @@ reading = "そと"
 char = "帯"
 default = "タイ"
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_char_type = "ひらがな"  # TODO: manual migrate (verb or unclassified)
 reading = "おび"
 
 # 「多」: 形容詞 「多い (おおい)」 = ひらがな後続で 「おお」 語幹 (= 「多い / 多く /
@@ -1016,7 +1030,7 @@ reading = "おび"
 char = "多"
 default = "タ"
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_char_type = "ひらがな"  # TODO: manual migrate (verb or unclassified)
 reading = "おお"
 
 # 「歯」: 名詞 「歯 (は)」 (= 「歯が / 歯を / 歯ブラシ / 虫歯」) が圧倒的。
@@ -1080,7 +1094,7 @@ default = "タイ"
 prev_char_type = "漢字"
 reading = "タイ"
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_char_type = "ひらがな"  # TODO: manual migrate (verb or unclassified)
 reading = "からだ"
 # 「体壊し / 体調 / 体力」 のうち jukugo は band 1000 で勝つので、 ここの次=漢字
 # fallback は 「体+動詞 (= 壊/作/変)」 系で 「カラダ」 を選ぶ (★round 36)
@@ -1129,7 +1143,7 @@ reading = "ゼイ"
 char = "重"
 default = "ジュウ"
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_char_type = "ひらがな"  # TODO: manual migrate (verb or unclassified)
 reading = "おも"
 
 # 「広」: 形容詞 「広い (ひろい)」 = ひらがな後続で 「ひろ」 語幹 (= 「広い / 広く /
@@ -1139,7 +1153,7 @@ reading = "おも"
 char = "広"
 default = "コウ"
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_char_type = "ひらがな"  # TODO: manual migrate (verb or unclassified)
 reading = "ひろ"
 
 # 「隣」: 名詞 「隣 (となり)」 (= 「隣で / 隣の / 隣家」) が圧倒的。 動詞 「隣る
@@ -1193,7 +1207,7 @@ default = "サイ"
 char = "射"
 default = "シャ"
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_char_type = "ひらがな"  # TODO: manual migrate (verb or unclassified)
 reading = "い"
 
 # 「線」: 音読み 「セン」 (= 「線路 / 直線 / 射線 / 路線 / 戦線」) が圧倒的。
@@ -1217,7 +1231,7 @@ char = "笑"
 default = "わらい"
 
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_char_type = "ひらがな"  # TODO: manual migrate (verb or unclassified)
 reading = "わら"
 
 
@@ -1245,7 +1259,7 @@ reading = "クン"
 # 「ねこ君 / みく君」 等 ひらがな名前 + 君 + (述語 / 終端) → クン
 # 「君 + 助詞」 case は上の next_starts_any block で先に キミ が候補化される
 [[kanji.match]]
-prev_char_type = "ひらがな"
+prev_char_type = "ひらがな"  # TODO: manual migrate (verb or unclassified)
 reading = "クン"
 
 
@@ -1316,7 +1330,7 @@ char = "速"
 default = "ソク"
 
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_char_type = "ひらがな"  # TODO: manual migrate (verb or unclassified)
 reading = "ハヤ"
 
 
@@ -1375,7 +1389,7 @@ char = "蒸"
 default = "ジョウ"
 
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_char_type = "ひらがな"  # TODO: manual migrate (verb or unclassified)
 reading = "ムシ"
 
 
@@ -1481,7 +1495,7 @@ char = "長"
 default = "チョウ"
 
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_char_type = "ひらがな"  # TODO: manual migrate (verb or unclassified)
 reading = "ナガ"
 
 
@@ -1524,7 +1538,7 @@ char = "弱"
 default = "ジャク"
 
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_char_type = "ひらがな"  # TODO: manual migrate (verb or unclassified)
 reading = "ヨワ"
 
 
@@ -1536,7 +1550,7 @@ char = "辛"
 default = "シン"
 
 [[kanji.match]]
-next_char_type = "ひらがな"
+next_char_type = "ひらがな"  # TODO: manual migrate (verb or unclassified)
 reading = "カラ"
 
 
@@ -1597,7 +1611,7 @@ char = "炎"
 default = "エン"
 
 [[kanji.match]]
-prev_char_type = "ひらがな"
+prev_char_type = "ひらがな"  # TODO: manual migrate (verb or unclassified)
 reading = "ホノオ"
 
 # 「年」: spoken で 「年 + 助詞」 = 「ネン」 (= 「3年前」) 数字 + 年、 「あの年 / 何年」
@@ -1608,7 +1622,7 @@ char = "年"
 default = "ネン"
 
 [[kanji.match]]
-prev_char_type = "ひらがな"
+prev_char_type = "ひらがな"  # TODO: manual migrate (verb or unclassified)
 reading = "トシ"
 
 # 「版」: spoken の 「○○版」 (= 「初版 / 限定版 / 統合版 / Switch版」) で 「ハン」、
@@ -5561,6 +5575,16 @@ default = "ソ"
 [[kanji]]
 char = "痛"
 default = "ツウ"
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "む", "ん", "そ", "み", "ま"]  # 痛い / 痛く / 痛かった / 痛む / 痛んだ / 痛そう / 痛み / 痛まない
+reading = "イタ"
+
+[[kanji]]
+char = "観"
+default = "カン"
+[[kanji.match]]
+next_starts_any = ["る", "た", "て", "ま", "よ", "ら", "れ"]  # 観る / 観た / 観て / 観ます / 観よう / 観られる / 観れば
+reading = "ミ"
 
 [[kanji]]
 char = "盟"
