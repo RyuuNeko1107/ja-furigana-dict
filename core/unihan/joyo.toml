@@ -598,12 +598,12 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "廊" = "ロウ"
 # 延 は core/kanji/overrides.toml の [[kanji]] block に移行
 "廷" = "テイ"
-"建" = "たてる"
+# 建 は core/kanji/overrides.toml の [[kanji]] block に移行
 # "弁" は core/kanji/overrides.toml の [[kanji]] block に移行
 # 弄 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 弊 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 式 は core/kanji/overrides.toml の [[kanji]] block に移行
-"弐" = "ふたつ"
+# 弐 は core/kanji/overrides.toml の [[kanji]] block に移行
 "弓" = "ゆみ"
 # 弔 は core/kanji/overrides.toml の [[kanji]] block に移行
 "引" = "ひく"
@@ -614,7 +614,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 「弱」 は overrides.toml の [[kanji]] block に移行 (★round 39)
 "張" = "はる"
 # "弾" は core/kanji/overrides.toml の [[kanji]] block に移行
-"当" = "あたる"
+# 当 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 彙 は core/kanji/overrides.toml の [[kanji]] block に移行
 # "形" は core/kanji/overrides.toml の [[kanji]] block に移行
 # 彩 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -633,47 +633,47 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 従 は core/kanji/overrides.toml の [[kanji]] block に移行
 "得" = "える"
 "御" = "おん"
-"復" = "かえす"
+# 復 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 循 は core/kanji/overrides.toml の [[kanji]] block に移行
 "微" = "かすか"
 "徳" = "トク"
 "徴" = "しるし"
-"徹" = "とおす"
+# 徹 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 必 は core/kanji/overrides.toml の [[kanji]] block に移行
 "忌" = "いむ"
-"忍" = "しのぶ"
+# 忍 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 志 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 忘 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 応 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 忠 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 快 は core/kanji/overrides.toml の [[kanji]] block に移行
-"念" = "おもう"
-"怒" = "いかる"
+# 念 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 怒 は core/kanji/overrides.toml の [[kanji]] block に移行
 "怖" = "こわい"
 # 怠 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 「急」 は overrides.toml の [[kanji]] block に移行 (★round 40)
-"怨" = "うらむ"
+# 怨 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 怪 は core/kanji/overrides.toml の [[kanji]] block に移行
 "恋" = "こう"
 # 恐 は core/kanji/overrides.toml の [[kanji]] block に移行
 "恒" = "つね"
 # 恣 は core/kanji/overrides.toml の [[kanji]] block に移行
-"恥" = "はじる"
-"恨" = "うらむ"
+# 恥 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 恨 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 恩 は core/kanji/overrides.toml の [[kanji]] block に移行
 # "恭" は core/kanji/overrides.toml の [[kanji]] block に移行
 "息" = "いき"
-"恵" = "めぐむ"
-"悔" = "くいる"
-"悟" = "さとる"
+# 恵 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 悔 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 悟 は core/kanji/overrides.toml の [[kanji]] block に移行
 "悠" = "とおい"
 # 患 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 悦 は core/kanji/overrides.toml の [[kanji]] block に移行
-"悩" = "なやむ"
+# 悩 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 悲 は core/kanji/overrides.toml の [[kanji]] block に移行
-"悼" = "いたむ"
+# 悼 は core/kanji/overrides.toml の [[kanji]] block に移行
 "情" = "なさけ"
-"惑" = "まどう"
+# 惑 は core/kanji/overrides.toml の [[kanji]] block に移行
 "惜" = "おしい"
 # 惧 は core/kanji/overrides.toml の [[kanji]] block に移行
 "惨" = "みじめ"
@@ -689,41 +689,41 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "態" = "さま"
 # 慌 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 慎 は core/kanji/overrides.toml の [[kanji]] block に移行
-"慕" = "したう"
+# 慕 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 慢 は core/kanji/overrides.toml の [[kanji]] block に移行
-"慣" = "なれる"
-"慨" = "なげく"
+# 慣 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 慨 は core/kanji/overrides.toml の [[kanji]] block に移行
 # "慮" は core/kanji/overrides.toml の [[kanji]] block に移行
 # 慰 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 慶 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 憂 は core/kanji/overrides.toml の [[kanji]] block に移行
-"憎" = "にくむ"
+# 憎 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 憤 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 憧 は core/kanji/overrides.toml の [[kanji]] block に移行
 "憩" = "いこい"
-"憬" = "さとる"
+# 憬 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 憲 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 憶 は core/kanji/overrides.toml の [[kanji]] block に移行
 "憾" = "うらみ"
 # 懇 は core/kanji/overrides.toml の [[kanji]] block に移行
 "懐" = "ふところ"
-"懲" = "こりる"
-"懸" = "かける"
+# 懲 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 懸 は core/kanji/overrides.toml の [[kanji]] block に移行
 "成" = "なる"
 "我" = "われ"
 # 戒 は core/kanji/overrides.toml の [[kanji]] block に移行
-"戚" = "いたむ"
+# 戚 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 戯 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 戴 は core/kanji/overrides.toml の [[kanji]] block に移行
 "戸" = "と"
-"戻" = "もどす"
+# 戻 は core/kanji/overrides.toml の [[kanji]] block に移行
 "房" = "ふさ"
 "所" = "ところ"
 "扇" = "おうぎ"
 "扉" = "とびら"
 # 才 は core/kanji/overrides.toml の [[kanji]] block に移行
 "打" = "うつ"
-"払" = "はらう"
+# 払 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 扱 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 扶 は core/kanji/overrides.toml の [[kanji]] block に移行
 "批" = "うつ"
@@ -732,69 +732,69 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 抄 は core/kanji/overrides.toml の [[kanji]] block に移行
 "把" = "たば"
 # 抑 は core/kanji/overrides.toml の [[kanji]] block に移行
-"投" = "なげる"
-"抗" = "あげる"
+# 投 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 抗 は core/kanji/overrides.toml の [[kanji]] block に移行
 "折" = "おる"
 "抜" = "ぬく"
-"択" = "えらぶ"
-"披" = "ひらく"
+# 択 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 披 は core/kanji/overrides.toml の [[kanji]] block に移行
 "抱" = "だく"
-"抵" = "あたる"
-"抹" = "なする"
+# 抵 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 抹 は core/kanji/overrides.toml の [[kanji]] block に移行
 "押" = "おす"
 "抽" = "ぬく"
-"担" = "かつぐ"
-"拉" = "くだく"
+# 担 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 拉 は core/kanji/overrides.toml の [[kanji]] block に移行
 "拍" = "ウ"
-"拐" = "かたる"
-"拒" = "こばむ"
-"拓" = "ひらく"
+# 拐 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 拒 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 拓 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 拘 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 拙 は core/kanji/overrides.toml の [[kanji]] block に移行
-"招" = "まねく"
-"拝" = "おがむ"
+# 招 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 拝 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 拠 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 拡 は core/kanji/overrides.toml の [[kanji]] block に移行
-"括" = "くくる"
-"拭" = "ぬぐう"
+# 括 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 拭 は core/kanji/overrides.toml の [[kanji]] block に移行
 "拳" = "こぶし"
-"拶" = "せまる"
+# 拶 は core/kanji/overrides.toml の [[kanji]] block に移行
 "拷" = "うつ"
-"拾" = "ひろう"
+# 拾 は core/kanji/overrides.toml の [[kanji]] block に移行
 "指" = "ゆび"
-"挑" = "いどむ"
-"挙" = "あげる"
-"挟" = "はさむ"
+# 挑 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 挙 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 挟 は core/kanji/overrides.toml の [[kanji]] block に移行
 "挨" = "アイ"
-"挫" = "くじく"
+# 挫 は core/kanji/overrides.toml の [[kanji]] block に移行
 "振" = "ふる"
 "挿" = "さす"
 # 捉 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 捕 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 捗 は core/kanji/overrides.toml の [[kanji]] block に移行
-"捜" = "さがす"
-"捨" = "すてる"
-"据" = "すえる"
-"捻" = "ひねる"
+# 捜 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 捨 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 据 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 捻 は core/kanji/overrides.toml の [[kanji]] block に移行
 "掃" = "はく"
 # 授 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 掌 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 排 は core/kanji/overrides.toml の [[kanji]] block に移行
 "掘" = "ほる"
-"掛" = "かける"
+# 掛 は core/kanji/overrides.toml の [[kanji]] block に移行
 "採" = "とる"
-"探" = "さぐる"
+# 探 は core/kanji/overrides.toml の [[kanji]] block に移行
 "接" = "つぐ"
 # 控 は core/kanji/overrides.toml の [[kanji]] block に移行
 "推" = "おす"
 "措" = "おく"
 # 掲 は core/kanji/overrides.toml の [[kanji]] block に移行
-"描" = "えがく"
-"提" = "さげる"
-"揚" = "あげる"
-"換" = "かえる"
-"握" = "にぎる"
-"揮" = "ふるう"
+# 描 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 提 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 揚 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 換 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 握 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 揮 は core/kanji/overrides.toml の [[kanji]] block に移行
 "援" = "たすけ"
 "揺" = "ゆれる"
 # 損 は core/kanji/overrides.toml の [[kanji]] block に移行
