@@ -113,20 +113,12 @@ VOICEVOX 単体は dict 改善側で動かせない外部 baseline (= 同 corpus
 <!-- 新しい計測結果を上に append。 fixed point の数値を残すことで dict 改善の
      progression が時系列で見える。
 
-     【計測 methodology の世代】
-     - Gen1 (= 〜2026-05-13): ja_norm == vv_norm を 「両者正解」 と仮定 + diff を
-       Agent 判定で ja-correct / vv-correct / both / neither に分類。
-       両者一致 比率と Agent 抽出 ratio を組み合わせて ja/VV 絶対値を推定していた。
-     - Gen2 (= 2026-05-13〜): corpus に独立 truth を設定 → ja / vv 各々を truth と
-       機械比較。 AI の役割を truth 生成と誤読 pattern 分析に限定、 「どちらが正解」
-       の判定は AI ではなく ja_norm == truth_norm / vv_norm == truth_norm で機械算出。
-       Gen1 で発生した Agent バイアス (= binary choice mode で両者誤り 0 件等) を排除。 -->
+     計測 methodology: corpus sample に独立 truth (= 原文だけ見て生成) を設定し、
+     ja / vv 各々を truth と機械比較。 「どちらが正解か」 の判定は完全 mechanical
+     (= ja_norm == truth_norm / vv_norm == truth_norm)、 AI の役割は truth 生成と
+     誤読 pattern 分析のみ。 -->
 
-### Gen2 (= 独立 truth ベース、 機械算出)
-
-sample N=1000、 fresh seed 12345 (= 過去未使用)。 truth はコーパス sample に対して
-独立に設定 (= AI が原文だけ見て自然な読みを生成、 ja/vv の出力には依存しない)、
-それに対して ja_norm / vv_norm を機械比較。 SKIP は分母から除外。
+sample N=1000、 fresh seed 12345 (= 過去未使用)。 SKIP は分母から除外。
 
 | 計測日 | dict version | sample | ja 正答率 | VOICEVOX 正答率 | ja − VOICEVOX | 両者一致 |
 |---|---|---|---|---|---|---|
@@ -148,25 +140,6 @@ sample N=1000、 fresh seed 12345 (= 過去未使用)。 truth はコーパス s
   truth は 「音にしない」 ことが多いので両者誤りに分類
 - **「主」 (= 配信者呼称)**: ja は 「ヌシ」 と正しく読む、 vv は 「オモ」 で誤読 →
   ja のみ正解 case として +shift
-
-### Gen1 (= 両者一致 + Agent diff 判定、 参考値)
-
-過去 methodology による測定値。 ja/VV 絶対値は Agent バイアスを含むため参考扱い、
-両者一致率 (= 機械算出) のみ高信頼。
-
-| 計測日 | dict version | sample (有効) | ja 正答率† | VOICEVOX 正答率† | ja − VOICEVOX† | 両者一致 |
-|---|---|---|---|---|---|---|
-| 2026-05-13 (R25 後 fresh) | v2026.05.13.7 (= round 25 batch 1-26、 +1621 件 一般語彙) — fresh seed 55555 | 9,192 / 10,000 | _(未算定)_ | _(同 baseline ≈ 95%)_ | _(未算定)_ | **87.0%** |
-| 2026-05-13 (R25 後 33333) | 同上 — seed 33333 | 9,205 / 10,000 | _(未算定)_ | _(同 baseline ≈ 95%)_ | _(未算定)_ | **86.4%** |
-| 2026-05-13 (R25 後 verify) | 同上 — verify seed 99999 | 9,154 / 10,000 | _(未算定)_ | _(同 baseline ≈ 95%)_ | _(未算定)_ | **87.3%** |
-| 2026-05-13 (R25 後 train) | 同上 — train seed 20260513 | 9,179 / 10,000 | 97.9% 想定 | 95.0% 同 baseline | +2.9pt 想定 | **87.1%** |
-| 2026-05-13 (verify) | v2026.05.12 + round 19-23 — verify seed 99999 | 9,191 / 10,000 | _(未算定)_ | _(同 baseline ≈ 95%)_ | _(未算定)_ | 83.9% |
-| 2026-05-13 (3rd) | v2026.05.12 + round 48-52 + 単漢字見直し 第 1-18 弾 + round 19-20 | 9,179 / 10,000 | 97.5% | 95.0% | +2.5pt | 84.1% |
-| 2026-05-13 (2nd) | v2026.05.12 + round 48-52 + 単漢字見直し 第 1-18 弾 | 9,179 / 10,000 | 97.6% | 96.9% | +0.7pt | 84.0% |
-| 2026-05-13 (1st) | v2026.05.12 + round 48-51 + 単漢字見直し 第 1-2 弾 | 9,177 / 10,000 | 92.3% | 96.0% | -3.7pt | 82.9% |
-
-† ja/VV 絶対値は Agent 判定由来、 sample n=200 で精度 ±2pt 程度。 Gen2 移行後に
-methodology を統一する予定。
 
 ## 評価対象外 (= 既知の制約)
 
