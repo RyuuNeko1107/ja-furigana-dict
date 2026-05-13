@@ -1748,3 +1748,78 @@ default = "ジョク"
 next_starts = "め"
 reading = "ハズカシ"
 
+# 「主」: default 「ぬし」 (= 配信文脈で 「主」 単独は主催者意)、 副詞 / 形容動詞用法
+# 「主に / 主な」 は next 「に / な」 で 「オモ」、 音読み 「シュ」 は jukugo dict 1000
+# (= 「主婦 / 主人 / 君主」) で覆われる前提。
+[[kanji]]
+char = "主"
+default = "ぬし"
+
+[[kanji.match]]
+next_starts_any = ["に", "な"]
+reading = "オモ"
+
+# 「中」: default 「ナカ」 (= 「中央 / 中身 / 街の中」)、 接尾辞 「N 中」 (= 「作業中 /
+# 勉強中 / 配信中」 等の 「進行中」 意) は prev 漢字 / カタカナ で 「チュウ」。
+# 音読み 「チュウ」 を持つ jukugo (= 「中学 / 中国 / 中華 / 集中」) は dict 1000 で勝つ。
+[[kanji]]
+char = "中"
+default = "ナカ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "チュウ"
+
+[[kanji.match]]
+prev_char_type = "カタカナ"
+reading = "チュウ"
+
+# 「件」: default 「ケン」 (= 「件数 / N 件 / 案件 / 用件 / 一件」)、 訓読み 「くだり」 は
+# 古語 / 文章語で希少。
+[[kanji]]
+char = "件"
+default = "ケン"
+
+# 「弾」: default 「ダン」 (= 「弾丸 / 爆弾 / N 発の弾 / 弾性」 接尾辞 / 名詞)、 動詞
+# 「弾く」 は next 「く / い / か / け」 で 「ひ」 stem。 「弾む」 は next 「む / ん / ま」
+# で 「はず」 stem (= 「弾んだ」 「弾まない」)。 「弾 = タマ」 は jukugo 個別。
+[[kanji]]
+char = "弾"
+default = "ダン"
+
+[[kanji.match]]
+next_starts_any = ["く", "い", "か", "け", "こ"]
+reading = "ひ"
+
+[[kanji.match]]
+next_starts_any = ["む", "ん", "ま"]
+reading = "はず"
+
+# 「量」: default 「リョウ」 (= 「分量 / 大量 / 容量 / 重量 / 質量」)、 動詞 「量る」 は
+# next 「る / っ / ら / り」 で 「ハカ」 stem。
+[[kanji]]
+char = "量"
+default = "リョウ"
+
+[[kanji.match]]
+next_starts_any = ["る", "っ", "ら", "り"]
+reading = "ハカ"
+
+# 「床」: default 「ゆか」 (= 「床がきれい / 床に座る / 床暖房」 一般用法)、
+# 「床屋 / 床の間 / 寝床」 等の 「とこ」 用法は jukugo 個別登録に逃がす。
+[[kanji]]
+char = "床"
+default = "ゆか"
+
+# 「形」: default 「ケイ」 (= 「変形 / 図形 / 形成 / 三角形 / N 型」)、 名詞 「形」 単独
+# / 助詞前 (= 「形が / 形を / 形の」) は 「カタチ」、 動詞 「形作る」 は 「カタ」。
+# 文脈で多義、 prev / next で精密分岐は複雑なので default は熟語接尾辞優先 ケイ、
+# 名詞用法は次ひらがな助詞で カタチ に切替。
+[[kanji]]
+char = "形"
+default = "ケイ"
+
+[[kanji.match]]
+next_starts_any = ["が", "を", "に", "の", "は", "も"]
+reading = "カタチ"
+

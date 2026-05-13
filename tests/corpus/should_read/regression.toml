@@ -1491,6 +1491,63 @@ input = "弁える"
 mode = "hiragana"
 expected = "わきまえる"
 
+# ─── 単漢字 default 修正 第 2 弾: 主 / 中 / 件 / 弾 / 量 / 床 / 形 ──────────────
+
+[[case]]
+input = "主に"
+mode = "hiragana"
+expected = "おもに"
+
+[[case]]
+input = "主婦"
+mode = "hiragana"
+expected = "しゅふ"
+
+[[case]]
+input = "作業中"
+mode = "hiragana"
+expected = "さぎょうちゅう"
+
+[[case]]
+input = "案件"
+mode = "hiragana"
+expected = "あんけん"
+
+[[case]]
+input = "弾丸"
+mode = "hiragana"
+expected = "だんがん"
+
+[[case]]
+input = "弾く"
+mode = "hiragana"
+expected = "ひく"
+
+[[case]]
+input = "大量"
+mode = "hiragana"
+expected = "たいりょう"
+
+[[case]]
+input = "量る"
+mode = "hiragana"
+expected = "はかる"
+
+[[case]]
+input = "床屋"
+mode = "hiragana"
+expected = "とこや"
+
+[[case]]
+input = "三角形"
+mode = "hiragana"
+expected = "さんかくけい"
+
+[[case]]
+input = "形が"
+mode = "hiragana"
+expected = "かたちが"
+
 # ─── 単漢字 default 見直し 第 1 弾: 奨 / 恭 / 慮 / 承 / 辱 ─────────────────────
 # unihan/joyo の動詞活用形 default (= 「うやうやしい / おもんぱかる / うけたまわる / はずかしめる」、
 # および誤入力「すすめるすすむ」) を [[kanji]] block で音読み default + next 後続 stem に整理
