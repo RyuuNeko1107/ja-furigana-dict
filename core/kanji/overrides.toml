@@ -5380,3 +5380,243 @@ default = "トウ"
 char = "黙"
 default = "モク"
 
+
+# ─── 第 18 弾 sweep: joyo length 3 形容詞 (= い終わり) 59 字 ──
+# 「域 / 境 / 界 / 封 = さかい」 「盟 = ちかい」 「題 = ひたい」 等は誤入力。 形容詞活用は Lindera 1 token で reading 維持
+
+[[kanji]]
+char = "偉"
+default = "イ"
+
+[[kanji]]
+char = "偶"
+default = "グウ"
+
+[[kanji]]
+char = "冥"
+default = "メイ"
+
+[[kanji]]
+char = "凄"
+default = "セイ"
+
+[[kanji]]
+char = "凶"
+default = "キョウ"
+
+[[kanji]]
+char = "剛"
+default = "ゴウ"
+
+[[kanji]]
+char = "博"
+default = "ハク"
+
+[[kanji]]
+char = "厚"
+default = "コウ"
+
+[[kanji]]
+char = "呪"
+default = "ジュ"
+
+[[kanji]]
+char = "団"
+default = "ダン"
+
+[[kanji]]
+char = "域"
+default = "イキ"
+
+[[kanji]]
+char = "堅"
+default = "ケン"
+
+[[kanji]]
+char = "境"
+default = "キョウ"
+
+[[kanji]]
+char = "太"
+default = "タイ"
+
+[[kanji]]
+char = "妥"
+default = "ダ"
+
+[[kanji]]
+char = "安"
+default = "アン"
+
+[[kanji]]
+char = "寒"
+default = "カン"
+
+[[kanji]]
+char = "封"
+default = "フウ"
+
+[[kanji]]
+char = "康"
+default = "コウ"
+
+[[kanji]]
+char = "怖"
+default = "フ"
+
+[[kanji]]
+char = "悠"
+default = "ユウ"
+
+[[kanji]]
+char = "惜"
+default = "セキ"
+
+[[kanji]]
+char = "想"
+default = "ソウ"
+
+[[kanji]]
+char = "憩"
+default = "ケイ"
+
+[[kanji]]
+char = "敏"
+default = "ビン"
+
+[[kanji]]
+char = "旧"
+default = "キュウ"
+
+[[kanji]]
+char = "昧"
+default = "マイ"
+
+[[kanji]]
+char = "暑"
+default = "ショ"
+
+[[kanji]]
+char = "暗"
+default = "アン"
+
+[[kanji]]
+char = "曖"
+default = "アイ"
+
+[[kanji]]
+char = "永"
+default = "エイ"
+
+[[kanji]]
+char = "浄"
+default = "ジョウ"
+
+[[kanji]]
+char = "浅"
+default = "セン"
+
+[[kanji]]
+char = "淡"
+default = "タン"
+
+[[kanji]]
+char = "深"
+default = "シン"
+
+[[kanji]]
+char = "清"
+default = "セイ"
+
+[[kanji]]
+char = "狭"
+default = "キョウ"
+
+[[kanji]]
+char = "甘"
+default = "カン"
+
+[[kanji]]
+char = "界"
+default = "カイ"
+
+[[kanji]]
+char = "疎"
+default = "ソ"
+
+[[kanji]]
+char = "痛"
+default = "ツウ"
+
+[[kanji]]
+char = "盟"
+default = "メイ"
+
+[[kanji]]
+char = "盤"
+default = "バン"
+
+[[kanji]]
+char = "盲"
+default = "モウ"
+
+[[kanji]]
+char = "硬"
+default = "コウ"
+
+[[kanji]]
+char = "篤"
+default = "トク"
+
+[[kanji]]
+char = "粗"
+default = "ソ"
+
+[[kanji]]
+char = "細"
+default = "サイ"
+
+[[kanji]]
+char = "緩"
+default = "カン"
+
+[[kanji]]
+char = "臭"
+default = "シュウ"
+
+[[kanji]]
+char = "若"
+default = "ジャク"
+
+[[kanji]]
+char = "荒"
+default = "コウ"
+
+[[kanji]]
+char = "蔽"
+default = "ヘイ"
+
+[[kanji]]
+char = "薄"
+default = "ハク"
+
+[[kanji]]
+char = "衆"
+default = "シュウ"
+
+[[kanji]]
+char = "謡"
+default = "ヨウ"
+
+[[kanji]]
+char = "軽"
+default = "ケイ"
+
+[[kanji]]
+char = "辣"
+default = "ラツ"
+
+[[kanji]]
+char = "迅"
+default = "ジン"
+
