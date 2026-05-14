@@ -536,6 +536,53 @@ mark { background: #fff8c5; color: inherit; padding: 0 1px; }
   background: #fff8c5; color: var(--yellow); border-color: #f0d050;
 }
 .chip.rf.active { background: var(--yellow); color: white; border-color: var(--yellow); }
+
+/* sweep progress tracker */
+.card.sw-done { border-left-color: var(--green) !important; background: #f0fdf4; }
+.card.sw-hold { border-left-color: var(--yellow) !important; background: #fff8c5; }
+.card.sw-skip { border-left-color: var(--muted) !important; background: var(--soft); opacity: .65; }
+.sw-btns { display: inline-flex; gap: .2em; margin-left: .6em; vertical-align: middle; }
+.sw-btn {
+  padding: .15em .55em; font-size: .78em; border: 1px solid var(--line);
+  border-radius: 4px; background: var(--bg); cursor: pointer;
+  font-family: inherit; line-height: 1.3;
+}
+.sw-btn:hover { background: var(--soft); }
+.sw-btn.active[data-sw="done"] { background: var(--green); color: white; border-color: var(--green); }
+.sw-btn.active[data-sw="hold"] { background: var(--yellow); color: white; border-color: var(--yellow); }
+.sw-btn.active[data-sw="skip"] { background: var(--muted); color: white; border-color: var(--muted); }
+
+.chip.sf.active[data-sfilter="done"] { background: var(--green); color: white; border-color: var(--green); }
+.chip.sf.active[data-sfilter="hold"] { background: var(--yellow); color: white; border-color: var(--yellow); }
+.chip.sf.active[data-sfilter="skip"] { background: var(--muted); color: white; border-color: var(--muted); }
+.chip.sf.active[data-sfilter="todo"] { background: var(--accent); color: white; border-color: var(--accent); }
+
+.progress-bar {
+  height: 8px; background: var(--line); border-radius: 4px;
+  margin: .4em 0; overflow: hidden; display: flex;
+}
+.progress-bar .fill { height: 100%; transition: width .2s; }
+.progress-bar .fill.done { background: var(--green); }
+.progress-bar .fill.hold { background: var(--yellow); }
+.progress-bar .fill.skip { background: var(--muted); }
+.progress-text {
+  font-size: .82em; color: var(--muted);
+  display: flex; gap: .8em; align-items: center; flex-wrap: wrap;
+}
+.progress-text .legend { display: inline-flex; align-items: center; gap: .25em; }
+.progress-text .swatch { display: inline-block; width: .8em; height: .8em; border-radius: 2px; }
+.progress-text .swatch.done { background: var(--green); }
+.progress-text .swatch.hold { background: var(--yellow); }
+.progress-text .swatch.skip { background: var(--muted); }
+
+.sw-toolbar {
+  display: flex; gap: .5em; margin-left: auto; font-size: .82em; align-items: center;
+}
+.sw-toolbar button {
+  padding: .25em .6em; font-size: .82em; border: 1px solid var(--line);
+  background: var(--bg); border-radius: 4px; cursor: pointer; font-family: inherit;
+}
+.sw-toolbar button:hover { background: var(--soft); }
 </style>
 </head>
 <body>
@@ -587,6 +634,23 @@ mark { background: #fff8c5; color: inherit; padding: 0 1px; }
     </select>
     <span id="stat"></span>
   </div>
+  <div class="filters" data-for="entry" style="margin-top:.3em">
+    <span style="font-size:.82em; color:var(--muted); margin-right:.3em">sweep:</span>
+    <span class="chip sf active" data-sfilter="all">すべて</span>
+    <span class="chip sf" data-sfilter="todo">未着手</span>
+    <span class="chip sf" data-sfilter="done">✅ 済</span>
+    <span class="chip sf" data-sfilter="hold">⏸ 保留</span>
+    <span class="chip sf" data-sfilter="skip">✖ skip</span>
+    <span class="sw-toolbar">
+      <button id="sw-export" title="進捗を JSON で書き出し (clipboard に copy)">📤 export</button>
+      <button id="sw-import" title="JSON を貼り付けて進捗を復元">📥 import</button>
+      <button id="sw-clear" title="現在の filter にマッチする全 entry の sweep 状態を未着手に戻す">🗑 clear</button>
+    </span>
+  </div>
+  <div id="progress-row" style="margin:.4em 0; display:none">
+    <div class="progress-bar" id="progress-bar"></div>
+    <div class="progress-text" id="progress-text"></div>
+  </div>
   <div class="filters" data-for="kanji" style="display:none">
     <span class="chip kf active" data-kfilter="all">すべて</span>
     <span class="chip kf" data-kfilter="block">[[kanji]] block 有り</span>
@@ -630,6 +694,38 @@ let entryPage = 1, kanjiPage = 1;
 let redundancyFilter = false;
 let comboFilter = false;
 let urlSyncEnabled = true;  // 初期 readUrl() 中の writeUrl 抑止
+
+// sweep progress tracker
+const SWEEP_KEY = 'dict_browser_sweep_v1';
+let sweepState = new Map();
+let sweepFilter = 'all';  // 'all' | 'todo' | 'done' | 'hold' | 'skip'
+
+function entryKey(e) { return e.f + '::' + e.s; }
+
+function loadSweep() {
+  try {
+    const raw = localStorage.getItem(SWEEP_KEY);
+    if (!raw) return;
+    const obj = JSON.parse(raw);
+    for (const [k, v] of Object.entries(obj)) sweepState.set(k, v);
+  } catch (e) { console.warn('sweep load failed:', e); }
+}
+function saveSweep() {
+  try {
+    const obj = {};
+    for (const [k, v] of sweepState) obj[k] = v;
+    localStorage.setItem(SWEEP_KEY, JSON.stringify(obj));
+  } catch (e) { console.warn('sweep save failed:', e); }
+}
+function renderSweepBtns(key, status) {
+  const mk = (s, label, title) =>
+    '<button class="sw-btn' + (status === s ? ' active' : '') + '" data-sw="' + s + '" data-sw-key="' + escapeHtmlAttr(key) + '" title="' + title + '">' + label + '</button>';
+  return '<span class="sw-btns">' +
+    mk('done', '✅', '済') +
+    mk('hold', '⏸', '保留') +
+    mk('skip', '✖', 'skip') +
+    '</span>';
+}
 
 function editLink(file) {
   if (!file) return '';
@@ -690,6 +786,12 @@ function matches(entry, filters, dir) {
   if (!activeTypes.has(entry.t)) return false;
   if (redundancyFilter && !entry.red) return false;
   if (comboFilter && !entry.combo) return false;
+  if (sweepFilter !== 'all') {
+    const st = sweepState.get(entryKey(entry));
+    const todoMatch = (!st && sweepFilter === 'todo');
+    const statusMatch = (st === sweepFilter);
+    if (!todoMatch && !statusMatch) return false;
+  }
   if (dir && dirOf(entry.f) !== dir) return false;
   for (const f of filters) {
     const sL = (entry.s || '').toLowerCase();
@@ -804,12 +906,16 @@ function renderBreakdown(surface, entry) {
 
 function renderCard(entry, surfaceTerms, readingTerms) {
   const parts = [];
-  parts.push('<div class="card t-' + entry.t + '">');
+  const key = entryKey(entry);
+  const swStatus = sweepState.get(key);
+  const swCls = swStatus ? ' sw-' + swStatus : '';
+  parts.push('<div class="card t-' + entry.t + swCls + '">');
   parts.push('<div class="row1">');
   parts.push('<span class="surface">' + renderSurfaceWithClicks(entry.s, surfaceTerms) + '</span>');
   parts.push('<span class="reading">' + highlight(entry.r, readingTerms) + '</span>');
   parts.push('<span class="badge t-' + entry.t + '">' + TYPE_LABEL[entry.t] + '</span>');
   if (entry.role) parts.push('<span class="badge">role=' + escapeHtml(entry.role) + '</span>');
+  parts.push(renderSweepBtns(key, swStatus));
   parts.push('</div>');
   parts.push('<div class="path">' + escapeHtml(entry.f) + editLink(entry.f) + '</div>');
   if (entry.combo) {
@@ -871,6 +977,9 @@ function renderEntryView() {
   if (entryPage > totalPages) entryPage = totalPages;
   const start = (entryPage - 1) * PER_PAGE;
   const shown = matched.slice(start, start + PER_PAGE);
+
+  // progress bar (filtered set 内の sweep 状況)
+  updateProgressBar(matched);
 
   statEl.textContent = total === 0
     ? '0 hits'
@@ -1021,6 +1130,37 @@ function renderKanjiView() {
   renderPaginationUI(kanjiPage, totalPages, (p) => { kanjiPage = p; render(); window.scrollTo({top: 0, behavior: 'smooth'}); });
 }
 
+// === progress bar (filtered set 内の sweep 進捗) ===
+
+const progressRow = document.getElementById('progress-row');
+const progressBar = document.getElementById('progress-bar');
+const progressText = document.getElementById('progress-text');
+
+function updateProgressBar(matched) {
+  if (!matched.length) { progressRow.style.display = 'none'; return; }
+  let done = 0, hold = 0, skip = 0;
+  for (const e of matched) {
+    const s = sweepState.get(entryKey(e));
+    if (s === 'done') done++;
+    else if (s === 'hold') hold++;
+    else if (s === 'skip') skip++;
+  }
+  const total = matched.length;
+  const todo = total - done - hold - skip;
+  if (done + hold + skip === 0) { progressRow.style.display = 'none'; return; }
+  progressRow.style.display = '';
+  const pct = (n) => total ? (n / total * 100) : 0;
+  progressBar.innerHTML =
+    '<div class="fill done" style="width:' + pct(done) + '%"></div>' +
+    '<div class="fill hold" style="width:' + pct(hold) + '%"></div>' +
+    '<div class="fill skip" style="width:' + pct(skip) + '%"></div>';
+  progressText.innerHTML =
+    '<span class="legend"><span class="swatch done"></span>済 ' + done + '</span>' +
+    '<span class="legend"><span class="swatch hold"></span>保留 ' + hold + '</span>' +
+    '<span class="legend"><span class="swatch skip"></span>skip ' + skip + '</span>' +
+    '<span>未着手 ' + todo + ' / ' + total + ' (' + Math.round(pct(done)) + '% 完了)</span>';
+}
+
 // === pagination UI ===
 
 const paginationEl = document.getElementById('pagination');
@@ -1167,6 +1307,8 @@ function setView(view, opts) {
   });
   resultsEl.style.display = (view === 'entry') ? '' : 'none';
   kresultsEl.style.display = (view === 'kanji') ? '' : 'none';
+  // progress bar は entries view 限定
+  if (view === 'kanji') progressRow.style.display = 'none';
   if (!opts.keepPage) {
     if (view === 'entry') entryPage = 1; else kanjiPage = 1;
   }
@@ -1255,8 +1397,22 @@ document.getElementById('dashboard').addEventListener('click', ev => {
   }
 });
 
-// entries view: kanji char click → reverse lookup
+// entries view: sw button click (toggle) > kanji char click (reverse lookup)
 resultsEl.addEventListener('click', ev => {
+  // sw button (toggle sweep status)
+  const swBtn = ev.target.closest('[data-sw][data-sw-key]');
+  if (swBtn) {
+    ev.stopPropagation();
+    const key = swBtn.dataset.swKey;
+    const newStatus = swBtn.dataset.sw;
+    const cur = sweepState.get(key);
+    if (cur === newStatus) sweepState.delete(key);
+    else sweepState.set(key, newStatus);
+    saveSweep();
+    render();
+    return;
+  }
+  // kanji char click (reverse lookup)
   const target = ev.target.closest('[data-kc]');
   if (!target) return;
   const ch = target.dataset.kc;
@@ -1265,6 +1421,61 @@ resultsEl.addEventListener('click', ev => {
   modeSel.value = 'auto';
   entryPage = 1;
   window.scrollTo({ top: 0, behavior: 'smooth' });
+  render();
+});
+
+// sweep filter chip
+document.querySelectorAll('.chip.sf').forEach(chip => {
+  chip.addEventListener('click', () => {
+    document.querySelectorAll('.chip.sf').forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+    sweepFilter = chip.dataset.sfilter;
+    entryPage = 1;
+    render();
+  });
+});
+
+// sweep toolbar
+document.getElementById('sw-export').addEventListener('click', async () => {
+  const obj = {};
+  for (const [k, v] of sweepState) obj[k] = v;
+  const json = JSON.stringify(obj, null, 2);
+  try {
+    await navigator.clipboard.writeText(json);
+    alert('進捗 JSON を clipboard に copy しました (' + sweepState.size + ' entries)');
+  } catch (e) {
+    // fallback: open in new window
+    const w = window.open('', '_blank');
+    w.document.body.innerText = json;
+  }
+});
+document.getElementById('sw-import').addEventListener('click', () => {
+  const json = prompt('進捗 JSON を貼り付け:');
+  if (!json) return;
+  try {
+    const obj = JSON.parse(json);
+    for (const [k, v] of Object.entries(obj)) {
+      if (['done', 'hold', 'skip'].includes(v)) sweepState.set(k, v);
+    }
+    saveSweep();
+    render();
+    alert('進捗復元完了 (現在 ' + sweepState.size + ' entries マーク済)');
+  } catch (e) { alert('JSON parse failed: ' + e.message); }
+});
+document.getElementById('sw-clear').addEventListener('click', () => {
+  // 現在 filter にマッチする entry の sweep 状態だけクリア
+  const q = qInput.value;
+  const filters = parseQuery(q, modeSel.value);
+  const dir = dirFilter.value;
+  let cleared = 0;
+  for (const e of DATA) {
+    if (!matches(e, filters, dir)) continue;
+    const k = entryKey(e);
+    if (sweepState.has(k)) { sweepState.delete(k); cleared++; }
+  }
+  if (cleared === 0) { alert('クリア対象なし'); return; }
+  if (!confirm(cleared + ' entry の sweep 状態をクリアしますか?')) return;
+  saveSweep();
   render();
 });
 
@@ -1282,6 +1493,7 @@ kresultsEl.addEventListener('click', ev => {
 });
 
 // === init ===
+loadSweep();
 renderDashboard();
 readUrl();
 render();
