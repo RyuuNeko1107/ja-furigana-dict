@@ -634,7 +634,7 @@ mark { background: #fff8c5; color: inherit; padding: 0 1px; }
     </select>
     <span id="stat"></span>
   </div>
-  <div class="filters" data-for="entry" style="margin-top:.3em">
+  <div class="filters" style="margin-top:.3em">
     <span style="font-size:.82em; color:var(--muted); margin-right:.3em">sweep:</span>
     <span class="chip sf active" data-sfilter="all">すべて</span>
     <span class="chip sf" data-sfilter="todo">未着手</span>
@@ -701,6 +701,7 @@ let sweepState = new Map();
 let sweepFilter = 'all';  // 'all' | 'todo' | 'done' | 'hold' | 'skip'
 
 function entryKey(e) { return e.f + '::' + e.s; }
+function kanjiKey(ch) { return 'kanji::' + ch; }
 
 function loadSweep() {
   try {
@@ -1054,10 +1055,14 @@ function renderKanjiCard(ch) {
     );
   }
 
-  const cls = warns.length ? 'kanji-card has-warn' : 'kanji-card';
+  const key = kanjiKey(ch);
+  const swStatus = sweepState.get(key);
+  const swCls = swStatus ? ' sw-' + swStatus : '';
+  const cls = (warns.length ? 'kanji-card has-warn' : 'kanji-card') + swCls;
   return '<div class="' + cls + '">' +
     '<div class="big-char" data-kc="' + escapeHtml(ch) + '" title="' + escapeHtml(ch) + ' を含む全 entry を逆引き">' + escapeHtml(ch) + '</div>' +
     '<div class="kinfo">' +
+    '<div style="margin-bottom:.3em">' + renderSweepBtns(key, swStatus) + '</div>' +
     warns.map(w => '<div><span class="warn">' + escapeHtml(w) + '</span></div>').join('') +
     sections.join('') +
     '</div>' +
@@ -1110,7 +1115,19 @@ function renderKanjiView() {
     }
   });
 
+  // sweep filter (= kanji 1 字単位で 済/保留/skip/未着手)
+  if (sweepFilter !== 'all') {
+    chars = chars.filter(ch => {
+      const st = sweepState.get(kanjiKey(ch));
+      if (sweepFilter === 'todo') return !st;
+      return st === sweepFilter;
+    });
+  }
+
   chars.sort();
+
+  // progress bar (kanji view 用)
+  updateProgressBarKanji(chars);
 
   const total = chars.length;
   const totalPages = Math.max(1, Math.ceil(total / PER_PAGE));
@@ -1136,18 +1153,9 @@ const progressRow = document.getElementById('progress-row');
 const progressBar = document.getElementById('progress-bar');
 const progressText = document.getElementById('progress-text');
 
-function updateProgressBar(matched) {
-  if (!matched.length) { progressRow.style.display = 'none'; return; }
-  let done = 0, hold = 0, skip = 0;
-  for (const e of matched) {
-    const s = sweepState.get(entryKey(e));
-    if (s === 'done') done++;
-    else if (s === 'hold') hold++;
-    else if (s === 'skip') skip++;
-  }
-  const total = matched.length;
+function renderProgressBarFromCounts(done, hold, skip, total) {
   const todo = total - done - hold - skip;
-  if (done + hold + skip === 0) { progressRow.style.display = 'none'; return; }
+  if (!total || done + hold + skip === 0) { progressRow.style.display = 'none'; return; }
   progressRow.style.display = '';
   const pct = (n) => total ? (n / total * 100) : 0;
   progressBar.innerHTML =
@@ -1159,6 +1167,28 @@ function updateProgressBar(matched) {
     '<span class="legend"><span class="swatch hold"></span>保留 ' + hold + '</span>' +
     '<span class="legend"><span class="swatch skip"></span>skip ' + skip + '</span>' +
     '<span>未着手 ' + todo + ' / ' + total + ' (' + Math.round(pct(done)) + '% 完了)</span>';
+}
+
+function updateProgressBar(matched) {
+  let done = 0, hold = 0, skip = 0;
+  for (const e of matched) {
+    const s = sweepState.get(entryKey(e));
+    if (s === 'done') done++;
+    else if (s === 'hold') hold++;
+    else if (s === 'skip') skip++;
+  }
+  renderProgressBarFromCounts(done, hold, skip, matched.length);
+}
+
+function updateProgressBarKanji(chars) {
+  let done = 0, hold = 0, skip = 0;
+  for (const ch of chars) {
+    const s = sweepState.get(kanjiKey(ch));
+    if (s === 'done') done++;
+    else if (s === 'hold') hold++;
+    else if (s === 'skip') skip++;
+  }
+  renderProgressBarFromCounts(done, hold, skip, chars.length);
 }
 
 // === pagination UI ===
@@ -1307,8 +1337,6 @@ function setView(view, opts) {
   });
   resultsEl.style.display = (view === 'entry') ? '' : 'none';
   kresultsEl.style.display = (view === 'kanji') ? '' : 'none';
-  // progress bar は entries view 限定
-  if (view === 'kanji') progressRow.style.display = 'none';
   if (!opts.keepPage) {
     if (view === 'entry') entryPage = 1; else kanjiPage = 1;
   }
@@ -1424,13 +1452,13 @@ resultsEl.addEventListener('click', ev => {
   render();
 });
 
-// sweep filter chip
+// sweep filter chip (entries / kanji 両 view 共通)
 document.querySelectorAll('.chip.sf').forEach(chip => {
   chip.addEventListener('click', () => {
     document.querySelectorAll('.chip.sf').forEach(c => c.classList.remove('active'));
     chip.classList.add('active');
     sweepFilter = chip.dataset.sfilter;
-    entryPage = 1;
+    entryPage = 1; kanjiPage = 1;
     render();
   });
 });
@@ -1463,24 +1491,66 @@ document.getElementById('sw-import').addEventListener('click', () => {
   } catch (e) { alert('JSON parse failed: ' + e.message); }
 });
 document.getElementById('sw-clear').addEventListener('click', () => {
-  // 現在 filter にマッチする entry の sweep 状態だけクリア
-  const q = qInput.value;
-  const filters = parseQuery(q, modeSel.value);
-  const dir = dirFilter.value;
+  // 現 view + 現 filter にマッチする sweep 状態だけクリア
   let cleared = 0;
-  for (const e of DATA) {
-    if (!matches(e, filters, dir)) continue;
-    const k = entryKey(e);
-    if (sweepState.has(k)) { sweepState.delete(k); cleared++; }
+  if (currentView === 'kanji') {
+    // kanji 側 (= kanjiKey)
+    const activeKf = document.querySelector('.chip.kf.active');
+    const kfilter = activeKf ? activeKf.dataset.kfilter : 'all';
+    const ufile = ufileFilter.value;
+    const q = qInput.value.trim().toLowerCase();
+    const m = q.match(/^(?:contains|exact|starts|reading|file):(.+)$/);
+    const needle = m ? m[1] : q;
+    for (const ch of Object.keys(KANJI_IDX)) {
+      if (needle && !ch.includes(needle)) continue;
+      if (ufile && !KANJI_IDX[ch].some(r => r.src === 'u' && r.f.includes(ufile))) continue;
+      const idx = KANJI_IDX[ch];
+      const hasBlock = idx.some(r => r.src === 'k');
+      const hasUnihan = idx.some(r => r.src === 'u');
+      let pass = true;
+      if (kfilter === 'block') pass = hasBlock;
+      else if (kfilter === 'dup') pass = hasBlock && hasUnihan;
+      else if (kfilter === 'hira') {
+        pass = idx.some(r => r.m && r.m.some(mm =>
+          Object.keys(mm).some(k => k.endsWith('_char_type') && mm[k] === 'ひらがな')));
+      } else if (kfilter === 'bare') {
+        pass = hasBlock && idx.filter(r => r.src === 'k').every(r => !r.m);
+      }
+      if (!pass) continue;
+      const k = kanjiKey(ch);
+      if (sweepState.has(k)) { sweepState.delete(k); cleared++; }
+    }
+  } else {
+    const filters = parseQuery(qInput.value, modeSel.value);
+    const dir = dirFilter.value;
+    for (const e of DATA) {
+      if (!matches(e, filters, dir)) continue;
+      const k = entryKey(e);
+      if (sweepState.has(k)) { sweepState.delete(k); cleared++; }
+    }
   }
   if (cleared === 0) { alert('クリア対象なし'); return; }
-  if (!confirm(cleared + ' entry の sweep 状態をクリアしますか?')) return;
+  if (!confirm(cleared + ' 件の sweep 状態をクリアしますか?')) return;
   saveSweep();
   render();
 });
 
-// kanji view: big-char click → entries view + contains:<ch>
+// kanji view: sw button click (toggle) > big-char click (reverse lookup)
 kresultsEl.addEventListener('click', ev => {
+  // sw button (kanji sweep)
+  const swBtn = ev.target.closest('[data-sw][data-sw-key]');
+  if (swBtn) {
+    ev.stopPropagation();
+    const key = swBtn.dataset.swKey;
+    const newStatus = swBtn.dataset.sw;
+    const cur = sweepState.get(key);
+    if (cur === newStatus) sweepState.delete(key);
+    else sweepState.set(key, newStatus);
+    saveSweep();
+    render();
+    return;
+  }
+  // big-char click → entries view + contains:<ch>
   const target = ev.target.closest('[data-kc]');
   if (!target) return;
   const ch = target.dataset.kc;
