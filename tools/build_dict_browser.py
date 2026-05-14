@@ -25,8 +25,28 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
 
-def collect(dict_dir: Path):
-    """全 TOML を走査して entry list + kanji index を返す。"""
+def _is_kanji(c: str) -> bool:
+    cp = ord(c)
+    return (
+        0x4E00 <= cp <= 0x9FFF or   # CJK Unified
+        0x3400 <= cp <= 0x4DBF or   # Extension A
+        0xF900 <= cp <= 0xFAFF or   # Compatibility
+        0x20000 <= cp <= 0x2A6DF or # Extension B
+        0x2A700 <= cp <= 0x2EBEF or # Extensions C..F
+        0x2F00 <= cp <= 0x2FDF      # Kangxi Radicals
+    )
+
+
+def _kata_to_hira(s: str) -> str:
+    return ''.join(chr(ord(c) - 0x60) if 'ァ' <= c <= 'ヶ' else c for c in s)
+
+
+def collect(dict_dir: Path, rules_dir: Path | None = None):
+    """全 TOML を走査して entry list + kanji index を返す。
+
+    core/: 通常の entry (t='e') / [[kanji]] block (t='k') / compat map (t='c')
+    rules/: rule entry (t='r')、 [entries] / [counter.X] / [[rule]] (postprocess) を抽出
+    """
     entries = []
     kanji_idx = {}
     files_seen = []
@@ -106,6 +126,169 @@ def collect(dict_dir: Path):
                         "t": "c", "s": src, "r": dst,
                         "f": rel, "role": role,
                     })
+
+    # rules/ 配下も walk (= counters / numbers / text / postprocess を audit 対象に)
+    if rules_dir and rules_dir.is_dir():
+        for toml_path in sorted(rules_dir.rglob("*.toml")):
+            if toml_path.name.endswith(".test.toml"):
+                continue
+            rel = toml_path.relative_to(rules_dir.parent).as_posix()
+            files_seen.append(rel)
+            try:
+                with open(toml_path, "rb") as f:
+                    data = tomllib.load(f)
+            except Exception as exc:
+                print(f"WARN: parse failed: {rel}: {exc}", file=sys.stderr)
+                continue
+
+            meta = data.get("meta", {})
+            role = meta.get("role", "")
+
+            # [entries] form (= symbols / units / days / kansuji 等)
+            ent_table = data.get("entries", {})
+            if isinstance(ent_table, dict):
+                for surface, val in ent_table.items():
+                    if isinstance(val, str):
+                        entries.append({
+                            "t": "r", "s": surface, "r": val,
+                            "f": rel, "role": role,
+                        })
+
+            # [counter."X"] tables (= 助数詞: default + specials + rules)
+            counter_table = data.get("counter")
+            if isinstance(counter_table, dict):
+                for ctr_name, ctr_data in counter_table.items():
+                    if not isinstance(ctr_data, dict):
+                        continue
+                    rec = {
+                        "t": "r", "s": ctr_name,
+                        "r": ctr_data.get("default", ""),
+                        "f": rel, "role": role,
+                    }
+                    blocks = []
+                    specials = ctr_data.get("specials") or {}
+                    for digit, sp in specials.items():
+                        blocks.append({"digit": digit, "reading": sp})
+                    sub_rules = ctr_data.get("rules") or []
+                    for sr in sub_rules:
+                        if isinstance(sr, dict):
+                            blocks.append(sr)
+                    if blocks:
+                        rec["m"] = blocks
+                    entries.append(rec)
+
+            # [[rule]] (= postprocess regex pairs)
+            rule_array = data.get("rule")
+            if isinstance(rule_array, list):
+                for r in rule_array:
+                    if not isinstance(r, dict):
+                        continue
+                    rec = {
+                        "t": "r",
+                        "s": r.get("pattern", ""),
+                        "r": r.get("replacement", ""),
+                        "f": rel, "role": role,
+                    }
+                    extra = {k: v for k, v in r.items() if k not in ("pattern", "replacement")}
+                    if extra:
+                        rec["m"] = [extra]
+                    entries.append(rec)
+
+    # post-process 1: precompute redundancy flag (= 構成漢字 default 連結と一致)
+    for e in entries:
+        if e.get("t") != "e":
+            continue
+        if e.get("m"):
+            continue
+        s = e.get("s", "")
+        r = e.get("r", "")
+        if not s or not r:
+            continue
+        kchars = [c for c in s if _is_kanji(c)]
+        if len(kchars) < 2:
+            continue
+        concat = ""
+        all_have = True
+        for ch in kchars:
+            idx_list = kanji_idx.get(ch)
+            if not idx_list:
+                all_have = False
+                break
+            primary = next((x for x in idx_list if x["src"] == "k"), None) or idx_list[0]
+            concat += primary.get("r") or ""
+        if not all_have:
+            continue
+        if _kata_to_hira(r) == _kata_to_hira(concat):
+            e["red"] = True
+
+    # post-process 2: precompute combo flag (= 既存 entry の連結で再現可能)
+    # surface_index = 単純 entry (t='e', no match) + [[kanji]] block (1 字 default)
+    # match-block 持ちは文脈依存なので combo 計算から除外
+    surface_index = {}
+    for e in entries:
+        if e.get("t") not in ("e", "k"):
+            continue
+        if e.get("m"):
+            continue
+        s = e.get("s", "")
+        r = e.get("r", "")
+        if not s or not r:
+            continue
+        # 既存登録があれば短い key を優先 (普通 1 つだが念のため)
+        if s not in surface_index:
+            surface_index[s] = r
+
+    def find_combo_split(surface, reading_kata):
+        """surface を 2 個以上の既存 entry に分割し、 reading 連結が一致するなら split を返す。"""
+        n = len(surface)
+        if n < 2 or n > 12:
+            return None
+        target = _kata_to_hira(reading_kata)
+        if not target:
+            return None
+        # 単純 DFS + backtrack (entry の reading 長で target prefix 一致を厳密 check)
+        result = [None]
+        def dfs(i, rp, segs):
+            if result[0] is not None:
+                return
+            if i == n:
+                if rp == len(target) and len(segs) >= 2:
+                    result[0] = segs[:]
+                return
+            # avoid using full surface as a single seg (= entry 自身を 1 piece で使う)
+            for j in range(i + 1, n + 1):
+                if i == 0 and j == n:
+                    continue
+                seg = surface[i:j]
+                if seg not in surface_index:
+                    continue
+                seg_read = _kata_to_hira(surface_index[seg])
+                seg_len = len(seg_read)
+                if not seg_read:
+                    continue
+                if target[rp:rp + seg_len] != seg_read:
+                    continue
+                segs.append(seg)
+                dfs(j, rp + seg_len, segs)
+                segs.pop()
+        dfs(0, 0, [])
+        return result[0]
+
+    for e in entries:
+        if e.get("t") != "e":
+            continue
+        if e.get("m"):
+            continue
+        if e.get("red"):
+            # redundancy (default-concat) 既に flag 立ってる場合、 combo は重複情報なのでスキップ
+            continue
+        s = e.get("s", "")
+        r = e.get("r", "")
+        if not s or not r or len(s) < 2:
+            continue
+        splits = find_combo_split(s, r)
+        if splits:
+            e["combo"] = splits
 
     return entries, kanji_idx, files_seen
 
@@ -294,6 +477,65 @@ mark { background: #fff8c5; color: inherit; padding: 0 1px; }
   background: #fff8c5; color: var(--yellow); border-radius: 6px;
   margin: .15em .25em .25em 0;
 }
+
+/* type 'r' (rule) */
+.card.t-r { border-left: 4px solid #6e7781; }
+.badge.t-r { background: #eaeef2; color: #57606a; border-color: transparent; }
+.chip.t-r.active { background: #6e7781; border-color: #6e7781; }
+
+/* dashboard */
+.dashboard {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: .5em; margin: .3em 0 .7em;
+}
+.stat-card {
+  background: var(--soft); padding: .5em .8em;
+  border-radius: 6px; text-align: center;
+  border: 1px solid var(--line); cursor: pointer;
+  transition: background .1s, border-color .1s;
+}
+.stat-card:hover { background: var(--soft-blue); border-color: var(--accent); }
+.stat-card .stat-num { font-size: 1.3em; font-weight: 600; color: var(--accent); line-height: 1.2; }
+.stat-card .stat-label { font-size: .73em; color: var(--muted); }
+.stat-card.warn { background: #fff8c5; border-color: #f0d050; }
+.stat-card.warn .stat-num { color: var(--yellow); }
+.stat-card.warn:hover { background: #fff3b0; }
+
+/* edit link */
+.edit-link {
+  font-size: .72em; color: var(--muted); margin-left: .5em;
+  text-decoration: none; padding: .05em .45em; border-radius: 4px;
+  border: 1px solid transparent; white-space: nowrap;
+}
+.edit-link:hover {
+  background: var(--soft-blue); border-color: var(--accent);
+  color: var(--accent); text-decoration: none;
+}
+
+/* pagination */
+.pagination {
+  display: flex; align-items: center; justify-content: center; gap: .5em;
+  margin: 1em 0 .5em; padding: .8em 0;
+  border-top: 1px solid var(--line);
+}
+.pagination button {
+  padding: .35em .8em; border: 1px solid var(--line); border-radius: 4px;
+  background: var(--bg); color: var(--fg); cursor: pointer; font-family: inherit;
+  font-size: .9em;
+}
+.pagination button:disabled { color: var(--muted); cursor: not-allowed; background: var(--soft); }
+.pagination button:not(:disabled):hover { background: var(--soft-blue); border-color: var(--accent); }
+.pagination .page-info { font-size: .85em; color: var(--muted); padding: 0 .5em; }
+.pagination .page-input {
+  width: 4em; padding: .35em .5em; text-align: center;
+  border: 1px solid var(--line); border-radius: 4px; font-family: inherit;
+}
+
+/* redundancy filter chip */
+.chip.rf {
+  background: #fff8c5; color: var(--yellow); border-color: #f0d050;
+}
+.chip.rf.active { background: var(--yellow); color: white; border-color: var(--yellow); }
 </style>
 </head>
 <body>
@@ -303,6 +545,7 @@ mark { background: #fff8c5; color: inherit; padding: 0 1px; }
     <span class="repo-link">repo: <a href="https://github.com/RyuuNeko1107/ja-furigana-dict">github.com/RyuuNeko1107/ja-furigana-dict</a></span>
   </div>
   <h1>furigana-dict 検索 <span class="count">__COUNT__ entries / __FILES__ files / __KANJI_COUNT__ kanji</span></h1>
+  <div class="dashboard" id="dashboard"></div>
   <div class="view-tabs">
     <button class="vtab active" data-view="entry">📘 entries view</button>
     <button class="vtab" data-view="kanji">🈳 単漢字 view (audit 用)</button>
@@ -336,6 +579,9 @@ mark { background: #fff8c5; color: inherit; padding: 0 1px; }
     <span class="chip t-e active" data-type="e">📘 entry (<span id="cnt-e">0</span>)</span>
     <span class="chip t-k active" data-type="k">🈳 [[kanji]] (<span id="cnt-k">0</span>)</span>
     <span class="chip t-c active" data-type="c">🔄 compat (<span id="cnt-c">0</span>)</span>
+    <span class="chip t-r active" data-type="r">📐 rule (<span id="cnt-r">0</span>)</span>
+    <span class="chip rf" id="rf-chip" data-rfilter="red" title="default 連結と一致 (= 構成漢字 default だけで reading が再現できる冗長 entry) のみ表示">⚠ default 連結のみ</span>
+    <span class="chip rf" id="cf-chip" data-rfilter="combo" title="既存 entry の連結で再現可能 (= 2 個以上の登録済 surface の組み合わせで reading 一致) のみ表示">📦 既存組み合わせのみ</span>
     <select id="dir-filter">
       <option value="">全 dir</option>
     </select>
@@ -362,6 +608,7 @@ mark { background: #fff8c5; color: inherit; padding: 0 1px; }
 <main>
   <div id="results"></div>
   <div id="kresults" style="display:none"></div>
+  <div id="pagination" class="pagination" style="display:none"></div>
 </main>
 
 <script id="data" type="application/json">__DATA__</script>
@@ -377,20 +624,40 @@ function kataToHira(s) {
   return (s || '').replace(/[\\u30A1-\\u30F6]/g, c => String.fromCharCode(c.charCodeAt(0) - 0x60));
 }
 
+const GH_EDIT_BASE = 'https://github.com/RyuuNeko1107/ja-furigana-dict/edit/master/';
+const PER_PAGE = 200;
+let entryPage = 1, kanjiPage = 1;
+let redundancyFilter = false;
+let comboFilter = false;
+let urlSyncEnabled = true;  // 初期 readUrl() 中の writeUrl 抑止
+
+function editLink(file) {
+  if (!file) return '';
+  return '<a class="edit-link" href="' + GH_EDIT_BASE + escapeHtmlAttr(file) +
+         '" target="_blank" rel="noopener" title="GitHub で編集">✏️ edit</a>';
+}
+
+function escapeHtmlAttr(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
 const dirOf = f => {
   const parts = f.split('/');
   return parts.length >= 3 ? parts[1] : '';
 };
 
-const typeCounts = { e: 0, k: 0, c: 0 };
+const typeCounts = { e: 0, k: 0, c: 0, r: 0 };
 const dirsSet = new Set();
+let redundantCount = 0;
 for (const e of DATA) {
   typeCounts[e.t] = (typeCounts[e.t] || 0) + 1;
   dirsSet.add(dirOf(e.f));
+  if (e.red) redundantCount++;
 }
 document.getElementById('cnt-e').textContent = typeCounts.e || 0;
 document.getElementById('cnt-k').textContent = typeCounts.k || 0;
 document.getElementById('cnt-c').textContent = typeCounts.c || 0;
+document.getElementById('cnt-r').textContent = typeCounts.r || 0;
 
 const dirFilter = document.getElementById('dir-filter');
 [...dirsSet].sort().forEach(d => {
@@ -400,15 +667,7 @@ const dirFilter = document.getElementById('dir-filter');
   dirFilter.appendChild(opt);
 });
 
-const activeTypes = new Set(['e', 'k', 'c']);
-document.querySelectorAll('.chip[data-type]').forEach(chip => {
-  chip.addEventListener('click', () => {
-    const t = chip.dataset.type;
-    if (activeTypes.has(t)) { activeTypes.delete(t); chip.classList.remove('active'); }
-    else { activeTypes.add(t); chip.classList.add('active'); }
-    render();
-  });
-});
+const activeTypes = new Set(['e', 'k', 'c', 'r']);
 
 function parseQuery(q, mode) {
   q = q.trim();
@@ -429,6 +688,8 @@ function parseQuery(q, mode) {
 
 function matches(entry, filters, dir) {
   if (!activeTypes.has(entry.t)) return false;
+  if (redundancyFilter && !entry.red) return false;
+  if (comboFilter && !entry.combo) return false;
   if (dir && dirOf(entry.f) !== dir) return false;
   for (const f of filters) {
     const sL = (entry.s || '').toLowerCase();
@@ -474,7 +735,7 @@ function renderMatch(m) {
   return '<div class="match">' + conds.join(' &amp; ') + '<span class="arr">→</span><span class="res">' + escapeHtml(reading) + '</span></div>';
 }
 
-const TYPE_LABEL = { e: 'entry', k: '[[kanji]]', c: 'compat' };
+const TYPE_LABEL = { e: 'entry', k: '[[kanji]]', c: 'compat', r: 'rule' };
 
 function renderSurfaceWithClicks(s, terms) {
   const out = [];
@@ -550,7 +811,14 @@ function renderCard(entry, surfaceTerms, readingTerms) {
   parts.push('<span class="badge t-' + entry.t + '">' + TYPE_LABEL[entry.t] + '</span>');
   if (entry.role) parts.push('<span class="badge">role=' + escapeHtml(entry.role) + '</span>');
   parts.push('</div>');
-  parts.push('<div class="path">' + escapeHtml(entry.f) + '</div>');
+  parts.push('<div class="path">' + escapeHtml(entry.f) + editLink(entry.f) + '</div>');
+  if (entry.combo) {
+    parts.push('<div class="match-section">');
+    parts.push('<div class="match-title">📦 既存組み合わせで再現可:</div>');
+    const segs = entry.combo.map(s => '<code>' + escapeHtml(s) + '</code>').join(' + ');
+    parts.push('<div class="match">' + segs + '<span class="arr">→</span><span class="res">' + escapeHtml(entry.r) + '</span></div>');
+    parts.push('</div>');
+  }
   if (entry.m && entry.m.length) {
     parts.push('<div class="match-section">');
     parts.push('<div class="match-title">match blocks (' + entry.m.length + '):</div>');
@@ -598,21 +866,26 @@ function renderEntryView() {
 
   matched.sort((a, b) => (a.s.length - b.s.length) || a.s.localeCompare(b.s, 'ja'));
 
-  const shown = matched.slice(0, RESULT_CAP);
-  statEl.textContent = matched.length === 0
-    ? '0 hits'
-    : (matched.length > RESULT_CAP ? shown.length + ' / ' + matched.length + ' hits (上位のみ)' : matched.length + ' hits');
+  const total = matched.length;
+  const totalPages = Math.max(1, Math.ceil(total / PER_PAGE));
+  if (entryPage > totalPages) entryPage = totalPages;
+  const start = (entryPage - 1) * PER_PAGE;
+  const shown = matched.slice(start, start + PER_PAGE);
 
-  if (matched.length === 0) {
-    resultsEl.innerHTML = '<div class="empty">' + (q ? '該当 entry なし' : '検索語を入力してね') + '</div>';
+  statEl.textContent = total === 0
+    ? '0 hits'
+    : (total + ' hits' + (totalPages > 1 ? ' (page ' + entryPage + '/' + totalPages + ')' : ''));
+
+  if (total === 0) {
+    resultsEl.innerHTML = '<div class="empty">' + (q || redundancyFilter || comboFilter ? '該当 entry なし' : '検索語を入力するか filter を選んで') + '</div>';
+    renderPaginationUI(0, 0, () => {});
     return;
   }
   resultsEl.innerHTML = shown.map(e => renderCard(e, surfaceTerms, readingTerms)).join('');
+  renderPaginationUI(entryPage, totalPages, (p) => { entryPage = p; render(); window.scrollTo({top: 0, behavior: 'smooth'}); });
 }
 
 // === kanji view ===
-
-const KANJI_CAP = 300;
 
 function getKanjiWarnings(idx) {
   // idx is array of {src, r, f, m?}
@@ -656,6 +929,7 @@ function renderKanjiCard(ch) {
       '<span class="src-tag">[[kanji]]</span>' +
       '<span class="kreading">' + escapeHtml(rec.r) + '</span>' +
       '<span class="kpath">' + escapeHtml(rec.f) + '</span>' +
+      editLink(rec.f) +
       body +
       '</div>'
     );
@@ -666,6 +940,7 @@ function renderKanjiCard(ch) {
       '<span class="src-tag unihan">unihan</span>' +
       '<span class="kreading">' + escapeHtml(rec.r) + '</span>' +
       '<span class="kpath">' + escapeHtml(rec.f) + '</span>' +
+      editLink(rec.f) +
       '</div>'
     );
   }
@@ -728,20 +1003,163 @@ function renderKanjiView() {
 
   chars.sort();
 
-  const shown = chars.slice(0, KANJI_CAP);
-  kstatEl.textContent = chars.length === 0 ? '0 kanji' :
-    (chars.length > KANJI_CAP ? shown.length + ' / ' + chars.length + ' kanji (上位のみ)' : chars.length + ' kanji');
+  const total = chars.length;
+  const totalPages = Math.max(1, Math.ceil(total / PER_PAGE));
+  if (kanjiPage > totalPages) kanjiPage = totalPages;
+  const start = (kanjiPage - 1) * PER_PAGE;
+  const shown = chars.slice(start, start + PER_PAGE);
 
-  if (chars.length === 0) {
+  kstatEl.textContent = total === 0 ? '0 kanji' :
+    (total + ' kanji' + (totalPages > 1 ? ' (page ' + kanjiPage + '/' + totalPages + ')' : ''));
+
+  if (total === 0) {
     kresultsEl.innerHTML = '<div class="empty">該当 kanji なし</div>';
+    renderPaginationUI(0, 0, () => {});
     return;
   }
   kresultsEl.innerHTML = shown.map(ch => renderKanjiCard(ch)).join('');
+  renderPaginationUI(kanjiPage, totalPages, (p) => { kanjiPage = p; render(); window.scrollTo({top: 0, behavior: 'smooth'}); });
+}
+
+// === pagination UI ===
+
+const paginationEl = document.getElementById('pagination');
+
+function renderPaginationUI(current, totalPages, onChange) {
+  if (totalPages <= 1) { paginationEl.style.display = 'none'; paginationEl.innerHTML = ''; return; }
+  paginationEl.style.display = '';
+  const prevDis = current <= 1;
+  const nextDis = current >= totalPages;
+  paginationEl.innerHTML =
+    '<button id="pg-first" ' + (prevDis ? 'disabled' : '') + ' title="先頭ページ">«</button>' +
+    '<button id="pg-prev" ' + (prevDis ? 'disabled' : '') + ' title="前ページ">‹ prev</button>' +
+    '<span class="page-info">' +
+      'page <input class="page-input" id="pg-input" type="number" min="1" max="' + totalPages + '" value="' + current + '"> / ' + totalPages +
+    '</span>' +
+    '<button id="pg-next" ' + (nextDis ? 'disabled' : '') + ' title="次ページ">next ›</button>' +
+    '<button id="pg-last" ' + (nextDis ? 'disabled' : '') + ' title="最終ページ">»</button>';
+  document.getElementById('pg-first').onclick = () => onChange(1);
+  document.getElementById('pg-prev').onclick  = () => onChange(Math.max(1, current - 1));
+  document.getElementById('pg-next').onclick  = () => onChange(Math.min(totalPages, current + 1));
+  document.getElementById('pg-last').onclick  = () => onChange(totalPages);
+  document.getElementById('pg-input').onchange = (ev) => {
+    let p = parseInt(ev.target.value, 10);
+    if (isNaN(p)) return;
+    p = Math.max(1, Math.min(totalPages, p));
+    onChange(p);
+  };
+}
+
+// === dashboard (header 上部の audit カウンター) ===
+
+const STATS = (function() {
+  let red = 0, combo = 0, dup = 0, hira = 0, bare = 0;
+  for (const e of DATA) {
+    if (e.red) red++;
+    if (e.combo) combo++;
+  }
+  for (const ch of Object.keys(KANJI_IDX)) {
+    const idx = KANJI_IDX[ch];
+    const hasBlock = idx.some(r => r.src === 'k');
+    const hasUnihan = idx.some(r => r.src === 'u');
+    if (hasBlock && hasUnihan) dup++;
+    let hasHira = false;
+    for (const rec of idx) {
+      if (!rec.m) continue;
+      for (const m of rec.m) {
+        for (const k of Object.keys(m)) {
+          if (k.endsWith('_char_type') && m[k] === 'ひらがな') { hasHira = true; break; }
+        }
+        if (hasHira) break;
+      }
+      if (hasHira) break;
+    }
+    if (hasHira) hira++;
+    if (hasBlock && idx.filter(r => r.src === 'k').every(r => !r.m)) bare++;
+  }
+  return { red, combo, dup, hira, bare };
+})();
+
+function renderDashboard() {
+  const dash = document.getElementById('dashboard');
+  const fmt = n => n.toLocaleString();
+  dash.innerHTML =
+    '<div class="stat-card warn" data-jump="red" title="default 連結と一致 (= 構成漢字 default だけで再現できる冗長 entry) の絞込"><div class="stat-num">' + fmt(STATS.red) + '</div><div class="stat-label">⚠ default 連結と一致</div></div>' +
+    '<div class="stat-card warn" data-jump="combo" title="既存 entry の連結で再現可能 entry の絞込"><div class="stat-num">' + fmt(STATS.combo) + '</div><div class="stat-label">📦 既存組み合わせ</div></div>' +
+    '<div class="stat-card warn" data-jump="dup" title="[[kanji]] block と unihan に両方ある重複 kanji"><div class="stat-num">' + fmt(STATS.dup) + '</div><div class="stat-label">⚠ [[kanji]]×unihan 重複</div></div>' +
+    '<div class="stat-card warn" data-jump="hira" title="*_char_type=ひらがな 雑指定の kanji"><div class="stat-num">' + fmt(STATS.hira) + '</div><div class="stat-label">⚠ char_type=ひらがな</div></div>' +
+    '<div class="stat-card" data-jump="bare" title="match 無し default のみの kanji"><div class="stat-num">' + fmt(STATS.bare) + '</div><div class="stat-label">[[kanji]] default のみ</div></div>';
+}
+
+// === URL state ===
+
+function readUrl() {
+  urlSyncEnabled = false;
+  try {
+    const p = new URL(location.href).searchParams;
+    if (p.has('q')) qInput.value = p.get('q');
+    if (p.has('mode')) modeSel.value = p.get('mode');
+    if (p.has('dir')) dirFilter.value = p.get('dir');
+    if (p.has('ufile')) ufileFilter.value = p.get('ufile');
+    if (p.has('view')) {
+      currentView = p.get('view') === 'kanji' ? 'kanji' : 'entry';
+      document.querySelectorAll('.vtab').forEach(t => t.classList.toggle('active', t.dataset.view === currentView));
+      document.querySelectorAll('.filters[data-for]').forEach(f => f.style.display = (f.dataset.for === currentView) ? '' : 'none');
+      resultsEl.style.display = (currentView === 'entry') ? '' : 'none';
+      kresultsEl.style.display = (currentView === 'kanji') ? '' : 'none';
+    }
+    if (p.has('kfilter')) {
+      const kf = p.get('kfilter');
+      document.querySelectorAll('.chip.kf').forEach(c => c.classList.toggle('active', c.dataset.kfilter === kf));
+    }
+    if (p.has('rf')) {
+      redundancyFilter = (p.get('rf') === '1');
+      document.getElementById('rf-chip').classList.toggle('active', redundancyFilter);
+    }
+    if (p.has('cf')) {
+      comboFilter = (p.get('cf') === '1');
+      document.getElementById('cf-chip').classList.toggle('active', comboFilter);
+    }
+    if (p.has('types')) {
+      const ts = new Set(p.get('types').split(','));
+      activeTypes.clear();
+      for (const t of ts) activeTypes.add(t);
+      document.querySelectorAll('.chip[data-type]').forEach(c => c.classList.toggle('active', activeTypes.has(c.dataset.type)));
+    }
+    if (p.has('p')) {
+      const pg = parseInt(p.get('p'), 10);
+      if (!isNaN(pg) && pg >= 1) {
+        if (currentView === 'kanji') kanjiPage = pg; else entryPage = pg;
+      }
+    }
+  } finally {
+    urlSyncEnabled = true;
+  }
+}
+
+function writeUrl() {
+  if (!urlSyncEnabled) return;
+  const params = new URLSearchParams();
+  if (qInput.value) params.set('q', qInput.value);
+  if (currentView !== 'entry') params.set('view', currentView);
+  if (modeSel.value !== 'auto') params.set('mode', modeSel.value);
+  if (dirFilter.value) params.set('dir', dirFilter.value);
+  if (ufileFilter.value) params.set('ufile', ufileFilter.value);
+  const activeKf = document.querySelector('.chip.kf.active');
+  if (activeKf && activeKf.dataset.kfilter !== 'all') params.set('kfilter', activeKf.dataset.kfilter);
+  if (redundancyFilter) params.set('rf', '1');
+  if (comboFilter) params.set('cf', '1');
+  if (activeTypes.size < 4) params.set('types', [...activeTypes].join(','));
+  const page = currentView === 'kanji' ? kanjiPage : entryPage;
+  if (page > 1) params.set('p', String(page));
+  const q = params.toString();
+  history.replaceState(null, '', q ? location.pathname + '?' + q : location.pathname);
 }
 
 // === view tab switching ===
 
-function setView(view) {
+function setView(view, opts) {
+  opts = opts || {};
   currentView = view;
   document.querySelectorAll('.vtab').forEach(t => t.classList.toggle('active', t.dataset.view === view));
   document.querySelectorAll('.filters[data-for]').forEach(f => {
@@ -749,30 +1167,95 @@ function setView(view) {
   });
   resultsEl.style.display = (view === 'entry') ? '' : 'none';
   kresultsEl.style.display = (view === 'kanji') ? '' : 'none';
+  if (!opts.keepPage) {
+    if (view === 'entry') entryPage = 1; else kanjiPage = 1;
+  }
   render();
 }
 
-document.querySelectorAll('.vtab').forEach(t => {
-  t.addEventListener('click', () => setView(t.dataset.view));
-});
+// override render to write URL after each render
+const originalRender = render;
+render = function() {
+  if (currentView === 'kanji') renderKanjiView();
+  else renderEntryView();
+  writeUrl();
+};
 
-// kanji filter chip click (1 つだけ active)
-document.querySelectorAll('.chip.kf').forEach(chip => {
+// === handlers ===
+
+// type chip handler with page reset
+document.querySelectorAll('.chip[data-type]').forEach(chip => {
   chip.addEventListener('click', () => {
-    document.querySelectorAll('.chip.kf').forEach(c => c.classList.remove('active'));
-    chip.classList.add('active');
+    const t = chip.dataset.type;
+    if (activeTypes.has(t)) { activeTypes.delete(t); chip.classList.remove('active'); }
+    else { activeTypes.add(t); chip.classList.add('active'); }
+    entryPage = 1;
     render();
   });
 });
 
-ufileFilter.addEventListener('change', render);
+// redundancy chip
+document.getElementById('rf-chip').addEventListener('click', () => {
+  redundancyFilter = !redundancyFilter;
+  document.getElementById('rf-chip').classList.toggle('active', redundancyFilter);
+  entryPage = 1;
+  render();
+});
 
-// === wire events ===
+// combo chip
+document.getElementById('cf-chip').addEventListener('click', () => {
+  comboFilter = !comboFilter;
+  document.getElementById('cf-chip').classList.toggle('active', comboFilter);
+  entryPage = 1;
+  render();
+});
 
-qInput.addEventListener('input', scheduleRender);
-modeSel.addEventListener('change', render);
-dirFilter.addEventListener('change', render);
+// vtab click
+document.querySelectorAll('.vtab').forEach(t => {
+  t.addEventListener('click', () => setView(t.dataset.view));
+});
 
+// kanji filter chip
+document.querySelectorAll('.chip.kf').forEach(chip => {
+  chip.addEventListener('click', () => {
+    document.querySelectorAll('.chip.kf').forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+    kanjiPage = 1;
+    render();
+  });
+});
+
+ufileFilter.addEventListener('change', () => { kanjiPage = 1; render(); });
+qInput.addEventListener('input', () => { entryPage = 1; kanjiPage = 1; scheduleRender(); });
+modeSel.addEventListener('change', () => { entryPage = 1; render(); });
+dirFilter.addEventListener('change', () => { entryPage = 1; render(); });
+
+// dashboard click → jump to corresponding filter
+document.getElementById('dashboard').addEventListener('click', ev => {
+  const card = ev.target.closest('[data-jump]');
+  if (!card) return;
+  const jump = card.dataset.jump;
+  // reset other filters
+  redundancyFilter = false; comboFilter = false;
+  document.getElementById('rf-chip').classList.remove('active');
+  document.getElementById('cf-chip').classList.remove('active');
+  document.querySelectorAll('.chip.kf').forEach(c => c.classList.toggle('active', c.dataset.kfilter === 'all'));
+  if (jump === 'red') {
+    redundancyFilter = true;
+    document.getElementById('rf-chip').classList.add('active');
+    setView('entry');
+  } else if (jump === 'combo') {
+    comboFilter = true;
+    document.getElementById('cf-chip').classList.add('active');
+    setView('entry');
+  } else {
+    // kanji filters
+    document.querySelectorAll('.chip.kf').forEach(c => c.classList.toggle('active', c.dataset.kfilter === jump));
+    setView('kanji');
+  }
+});
+
+// entries view: kanji char click → reverse lookup
 resultsEl.addEventListener('click', ev => {
   const target = ev.target.closest('[data-kc]');
   if (!target) return;
@@ -780,11 +1263,12 @@ resultsEl.addEventListener('click', ev => {
   if (!ch) return;
   qInput.value = 'contains:' + ch;
   modeSel.value = 'auto';
+  entryPage = 1;
   window.scrollTo({ top: 0, behavior: 'smooth' });
   render();
 });
 
-// kanji view: big-char click → switch to entries view + contains:<ch>
+// kanji view: big-char click → entries view + contains:<ch>
 kresultsEl.addEventListener('click', ev => {
   const target = ev.target.closest('[data-kc]');
   if (!target) return;
@@ -792,10 +1276,14 @@ kresultsEl.addEventListener('click', ev => {
   if (!ch) return;
   qInput.value = 'contains:' + ch;
   modeSel.value = 'auto';
+  entryPage = 1;
   setView('entry');
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
+// === init ===
+renderDashboard();
+readUrl();
 render();
 </script>
 </body>
@@ -807,6 +1295,8 @@ def main():
     parser = argparse.ArgumentParser(description="Build dict_browser.html for GitHub Pages")
     parser.add_argument("--dict-dir", type=Path, default=REPO_ROOT / "core",
                         help="Path to dict core/ dir (default: <repo>/core)")
+    parser.add_argument("--rules-dir", type=Path, default=REPO_ROOT / "rules",
+                        help="Path to rules/ dir (default: <repo>/rules)")
     parser.add_argument("--out", type=Path, default=REPO_ROOT / "build" / "dict_browser.html",
                         help="Output HTML path (default: <repo>/build/dict_browser.html)")
     args = parser.parse_args()
@@ -815,7 +1305,8 @@ def main():
         print(f"ERROR: --dict-dir not found: {args.dict_dir}", file=sys.stderr)
         return 1
 
-    entries, kanji_idx, files = collect(args.dict_dir)
+    rules_dir = args.rules_dir if args.rules_dir.is_dir() else None
+    entries, kanji_idx, files = collect(args.dict_dir, rules_dir)
     print(f"Collected {len(entries)} entries from {len(files)} files")
     print(f"Kanji index: {len(kanji_idx)} unique chars")
 
