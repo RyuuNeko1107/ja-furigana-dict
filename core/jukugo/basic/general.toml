@@ -4049,3 +4049,9333 @@ reading = "スッパサ"
 [entries."旨さ"]
 reading = "ウマサ"
 
+
+# ─── mega batch (= 一般熟語 bulk add) ─────────────────────────
+
+[entries."漢方"]
+reading = "カンポウ"
+
+[entries."漢方薬"]
+reading = "カンポウヤク"
+
+[entries."針灸"]
+reading = "シンキュウ"
+
+[entries."鍼灸"]
+reading = "シンキュウ"
+
+[entries."鍼治療"]
+reading = "ハリチリョウ"
+
+[entries."灸治療"]
+reading = "キュウチリョウ"
+
+[entries."按摩"]
+reading = "アンマ"
+
+[entries."指圧"]
+reading = "シアツ"
+
+[entries."整体"]
+reading = "セイタイ"
+
+[entries."接骨"]
+reading = "セッコツ"
+
+[entries."接骨院"]
+reading = "セッコツイン"
+
+[entries."整骨"]
+reading = "セイコツ"
+
+[entries."整骨院"]
+reading = "セイコツイン"
+
+[entries."整形外科"]
+reading = "セイケイゲカ"
+
+[entries."形成外科"]
+reading = "ケイセイゲカ"
+
+[entries."耳鼻咽喉科"]
+reading = "ジビインコウカ"
+
+[entries."精神科"]
+reading = "セイシンカ"
+
+[entries."心療内科"]
+reading = "シンリョウナイカ"
+
+[entries."循環器科"]
+reading = "ジュンカンキカ"
+
+[entries."神経科"]
+reading = "シンケイカ"
+
+[entries."神経内科"]
+reading = "シンケイナイカ"
+
+[entries."外来"]
+reading = "ガイライ"
+
+[entries."入院患者"]
+reading = "ニュウインカンジャ"
+
+[entries."通院記録"]
+reading = "ツウインキロク"
+
+[entries."診療科"]
+reading = "シンリョウカ"
+
+[entries."看護学"]
+reading = "カンゴガク"
+
+[entries."看護学校"]
+reading = "カンゴガッコウ"
+
+[entries."医学部"]
+reading = "イガクブ"
+
+[entries."医学生"]
+reading = "イガクセイ"
+
+[entries."研修医"]
+reading = "ケンシュウイ"
+
+[entries."研修期間"]
+reading = "ケンシュウキカン"
+
+[entries."研修制度"]
+reading = "ケンシュウセイド"
+
+[entries."研修生"]
+reading = "ケンシュウセイ"
+
+[entries."卒業生"]
+reading = "ソツギョウセイ"
+
+[entries."新卒"]
+reading = "シンソツ"
+
+[entries."中途採用"]
+reading = "チュウトサイヨウ"
+
+[entries."中途半端"]
+reading = "チュウトハンパ"
+
+[entries."新卒採用"]
+reading = "シンソツサイヨウ"
+
+[entries."就職活動"]
+reading = "シュウショクカツドウ"
+
+[entries."転職活動"]
+reading = "テンショクカツドウ"
+
+[entries."活動量"]
+reading = "カツドウリョウ"
+
+[entries."活動時間"]
+reading = "カツドウジカン"
+
+[entries."活動費"]
+reading = "カツドウヒ"
+
+[entries."寄付"]
+reading = "キフ"
+
+[entries."寄付金"]
+reading = "キフキン"
+
+[entries."募金"]
+reading = "ボキン"
+
+[entries."募金箱"]
+reading = "ボキンバコ"
+
+[entries."募集"]
+reading = "ボシュウ"
+
+[entries."募集要項"]
+reading = "ボシュウヨウコウ"
+
+[entries."要項"]
+reading = "ヨウコウ"
+
+[entries."要綱"]
+reading = "ヨウコウ"
+
+[entries."要件定義"]
+reading = "ヨウケンテイギ"
+
+[entries."定義"]
+reading = "テイギ"
+
+[entries."定義域"]
+reading = "テイギイキ"
+
+[entries."定義語"]
+reading = "テイギゴ"
+
+[entries."語学"]
+reading = "ゴガク"
+
+[entries."語源"]
+reading = "ゴゲン"
+
+[entries."語幹"]
+reading = "ゴカン"
+
+[entries."語尾"]
+reading = "ゴビ"
+
+[entries."語順"]
+reading = "ゴジュン"
+
+[entries."語法"]
+reading = "ゴホウ"
+
+[entries."語感"]
+reading = "ゴカン"
+
+[entries."語句"]
+reading = "ゴク"
+
+[entries."熟語"]
+reading = "ジュクゴ"
+
+[entries."四字熟語"]
+reading = "ヨジジュクゴ"
+
+[entries."慣用句"]
+reading = "カンヨウク"
+
+[entries."名言"]
+reading = "メイゲン"
+
+[entries."格言"]
+reading = "カクゲン"
+
+[entries."箴言"]
+reading = "シンゲン"
+
+[entries."警句"]
+reading = "ケイク"
+
+[entries."警鐘乱打"]
+reading = "ケイショウランダ"
+
+[entries."警笛"]
+reading = "ケイテキ"
+
+[entries."警笛音"]
+reading = "ケイテキオン"
+
+[entries."警報機"]
+reading = "ケイホウキ"
+
+[entries."警報音"]
+reading = "ケイホウオン"
+
+[entries."警報器"]
+reading = "ケイホウキ"
+
+[entries."警察犬"]
+reading = "ケイサツケン"
+
+[entries."公用車"]
+reading = "コウヨウシャ"
+
+[entries."公用語"]
+reading = "コウヨウゴ"
+
+[entries."公務員試験"]
+reading = "コウムインシケン"
+
+[entries."公務員法"]
+reading = "コウムインホウ"
+
+[entries."公務員制度"]
+reading = "コウムインセイド"
+
+[entries."公務員採用"]
+reading = "コウムインサイヨウ"
+
+[entries."公務員給料"]
+reading = "コウムインキュウリョウ"
+
+[entries."給料明細"]
+reading = "キュウリョウメイサイ"
+
+[entries."明細書"]
+reading = "メイサイショ"
+
+[entries."明細"]
+reading = "メイサイ"
+
+[entries."詳細情報"]
+reading = "ショウサイジョウホウ"
+
+[entries."情報量"]
+reading = "ジョウホウリョウ"
+
+[entries."情報源"]
+reading = "ジョウホウゲン"
+
+[entries."情報誌"]
+reading = "ジョウホウシ"
+
+[entries."情報処理"]
+reading = "ジョウホウショリ"
+
+[entries."情報科"]
+reading = "ジョウホウカ"
+
+[entries."情報科学"]
+reading = "ジョウホウカガク"
+
+[entries."科学的"]
+reading = "カガクテキ"
+
+[entries."科学技術"]
+reading = "カガクギジュツ"
+
+[entries."技術力"]
+reading = "ギジュツリョク"
+
+[entries."技術書"]
+reading = "ギジュツショ"
+
+[entries."技術職"]
+reading = "ギジュツショク"
+
+[entries."技術部"]
+reading = "ギジュツブ"
+
+[entries."技術系"]
+reading = "ギジュツケイ"
+
+[entries."技術系企業"]
+reading = "ギジュツケイキギョウ"
+
+[entries."企業"]
+reading = "キギョウ"
+
+[entries."企業家"]
+reading = "キギョウカ"
+
+[entries."企業向"]
+reading = "キギョウムケ"
+
+[entries."企業内"]
+reading = "キギョウナイ"
+
+[entries."企業外"]
+reading = "キギョウガイ"
+
+[entries."企業価値"]
+reading = "キギョウカチ"
+
+[entries."企業文化"]
+reading = "キギョウブンカ"
+
+[entries."企業理念"]
+reading = "キギョウリネン"
+
+[entries."理念"]
+reading = "リネン"
+
+[entries."理念的"]
+reading = "リネンテキ"
+
+[entries."信条"]
+reading = "シンジョウ"
+
+[entries."信条的"]
+reading = "シンジョウテキ"
+
+[entries."信用性"]
+reading = "シンヨウセイ"
+
+[entries."信頼度"]
+reading = "シンライド"
+
+[entries."信用度"]
+reading = "シンヨウド"
+
+[entries."重要度"]
+reading = "ジュウヨウド"
+
+[entries."重要視"]
+reading = "ジュウヨウシ"
+
+[entries."重要事項"]
+reading = "ジュウヨウジコウ"
+
+[entries."項目"]
+reading = "コウモク"
+
+[entries."項目別"]
+reading = "コウモクベツ"
+
+[entries."別項"]
+reading = "ベッコウ"
+
+[entries."別表"]
+reading = "ベッピョウ"
+
+[entries."別添"]
+reading = "ベッテン"
+
+[entries."別紙"]
+reading = "ベッシ"
+
+[entries."別棟"]
+reading = "ベットウ"
+
+[entries."別冊"]
+reading = "ベッサツ"
+
+[entries."別売"]
+reading = "ベツウリ"
+
+[entries."別途"]
+reading = "ベット"
+
+[entries."別人"]
+reading = "ベツジン"
+
+[entries."別個"]
+reading = "ベッコ"
+
+[entries."個別対応"]
+reading = "コベツタイオウ"
+
+[entries."個別相談"]
+reading = "コベツソウダン"
+
+[entries."相談室"]
+reading = "ソウダンシツ"
+
+[entries."相談員"]
+reading = "ソウダンイン"
+
+[entries."相談料"]
+reading = "ソウダンリョウ"
+
+[entries."相談会"]
+reading = "ソウダンカイ"
+
+[entries."相談相手"]
+reading = "ソウダンアイテ"
+
+[entries."相手方"]
+reading = "アイテガタ"
+
+[entries."当方"]
+reading = "トウホウ"
+
+[entries."先方"]
+reading = "センポウ"
+
+[entries."他方"]
+reading = "タホウ"
+
+[entries."両方"]
+reading = "リョウホウ"
+
+[entries."双方"]
+reading = "ソウホウ"
+
+[entries."双子"]
+reading = "フタゴ"
+
+[entries."三つ子"]
+reading = "ミツゴ"
+
+[entries."四つ子"]
+reading = "ヨツゴ"
+
+[entries."双方向"]
+reading = "ソウホウコウ"
+
+[entries."一方向"]
+reading = "イチホウコウ"
+
+[entries."方向性"]
+reading = "ホウコウセイ"
+
+[entries."方向音痴"]
+reading = "ホウコウオンチ"
+
+[entries."音痴"]
+reading = "オンチ"
+
+[entries."味音痴"]
+reading = "アジオンチ"
+
+[entries."方位"]
+reading = "ホウイ"
+
+[entries."方位磁石"]
+reading = "ホウイジシャク"
+
+[entries."磁石"]
+reading = "ジシャク"
+
+[entries."磁針"]
+reading = "ジシン"
+
+[entries."磁力"]
+reading = "ジリョク"
+
+[entries."磁界"]
+reading = "ジカイ"
+
+[entries."磁場"]
+reading = "ジバ"
+
+[entries."電磁石"]
+reading = "デンジシャク"
+
+[entries."電磁"]
+reading = "デンジ"
+
+[entries."電磁気"]
+reading = "デンジキ"
+
+[entries."電磁気学"]
+reading = "デンジキガク"
+
+[entries."動力学"]
+reading = "ドウリキガク"
+
+[entries."熱力学"]
+reading = "ネツリキガク"
+
+[entries."量子"]
+reading = "リョウシ"
+
+[entries."量子論"]
+reading = "リョウシロン"
+
+[entries."原子論"]
+reading = "ゲンシロン"
+
+[entries."分子論"]
+reading = "ブンシロン"
+
+[entries."分子式"]
+reading = "ブンシシキ"
+
+[entries."構造式"]
+reading = "コウゾウシキ"
+
+[entries."反応式"]
+reading = "ハンノウシキ"
+
+[entries."方程式"]
+reading = "ホウテイシキ"
+
+[entries."連立方程式"]
+reading = "レンリツホウテイシキ"
+
+[entries."連立内閣"]
+reading = "レンリツナイカク"
+
+[entries."内閣総理大臣"]
+reading = "ナイカクソウリダイジン"
+
+[entries."総理大臣"]
+reading = "ソウリダイジン"
+
+[entries."総理"]
+reading = "ソウリ"
+
+[entries."副総理"]
+reading = "フクソウリ"
+
+[entries."副大統領"]
+reading = "フクダイトウリョウ"
+
+[entries."副社長"]
+reading = "フクシャチョウ"
+
+[entries."副会長"]
+reading = "フクカイチョウ"
+
+[entries."副部長"]
+reading = "フクブチョウ"
+
+[entries."副委員長"]
+reading = "フクイインチョウ"
+
+[entries."副議長"]
+reading = "フクギチョウ"
+
+[entries."議長国"]
+reading = "ギチョウコク"
+
+[entries."議題提出"]
+reading = "ギダイテイシュツ"
+
+[entries."提出物"]
+reading = "テイシュツブツ"
+
+[entries."提出期限"]
+reading = "テイシュツキゲン"
+
+[entries."期限切"]
+reading = "キゲンギレ"
+
+[entries."期間限定"]
+reading = "キカンゲンテイ"
+
+[entries."限定品"]
+reading = "ゲンテイヒン"
+
+[entries."限定版"]
+reading = "ゲンテイバン"
+
+[entries."限定的"]
+reading = "ゲンテイテキ"
+
+[entries."限度額"]
+reading = "ゲンドガク"
+
+[entries."無限"]
+reading = "ムゲン"
+
+[entries."有限"]
+reading = "ユウゲン"
+
+[entries."無限大"]
+reading = "ムゲンダイ"
+
+[entries."有限会社"]
+reading = "ユウゲンガイシャ"
+
+[entries."株式会社"]
+reading = "カブシキガイシャ"
+
+[entries."株価"]
+reading = "カブカ"
+
+[entries."証券会社"]
+reading = "ショウケンガイシャ"
+
+[entries."証券取引所"]
+reading = "ショウケントリヒキジョ"
+
+[entries."取引先"]
+reading = "トリヒキサキ"
+
+[entries."取引相手"]
+reading = "トリヒキアイテ"
+
+[entries."取引金額"]
+reading = "トリヒキキンガク"
+
+[entries."金額面"]
+reading = "キンガクメン"
+
+[entries."額面"]
+reading = "ガクメン"
+
+[entries."表記法"]
+reading = "ヒョウキホウ"
+
+[entries."記述法"]
+reading = "キジュツホウ"
+
+[entries."記法"]
+reading = "キホウ"
+
+[entries."書法"]
+reading = "ショホウ"
+
+[entries."道法"]
+reading = "ドウホウ"
+
+[entries."法則"]
+reading = "ホウソク"
+
+[entries."法則性"]
+reading = "ホウソクセイ"
+
+[entries."規則性"]
+reading = "キソクセイ"
+
+[entries."不規則"]
+reading = "フキソク"
+
+[entries."規則的"]
+reading = "キソクテキ"
+
+[entries."不規則的"]
+reading = "フキソクテキ"
+
+[entries."無秩序"]
+reading = "ムチツジョ"
+
+[entries."秩序"]
+reading = "チツジョ"
+
+[entries."秩序立"]
+reading = "チツジョダ"
+
+[entries."順序立"]
+reading = "ジュンジョダ"
+
+[entries."組立式"]
+reading = "クミタテシキ"
+
+[entries."分解式"]
+reading = "ブンカイシキ"
+
+[entries."組合員"]
+reading = "クミアイイン"
+
+[entries."組合長"]
+reading = "クミアイチョウ"
+
+[entries."組合費"]
+reading = "クミアイヒ"
+
+[entries."組合員証"]
+reading = "クミアイインショウ"
+
+[entries."会員証"]
+reading = "カイインショウ"
+
+[entries."身分証"]
+reading = "ミブンショウ"
+
+[entries."学生証"]
+reading = "ガクセイショウ"
+
+[entries."社員証"]
+reading = "シャインショウ"
+
+[entries."資格証"]
+reading = "シカクショウ"
+
+[entries."証明書"]
+reading = "ショウメイショ"
+
+[entries."証明"]
+reading = "ショウメイ"
+
+[entries."証拠書類"]
+reading = "ショウコショルイ"
+
+[entries."書類選考"]
+reading = "ショルイセンコウ"
+
+[entries."選考会"]
+reading = "センコウカイ"
+
+[entries."選考委員"]
+reading = "センコウイイン"
+
+[entries."選考基準"]
+reading = "センコウキジュン"
+
+[entries."基準値"]
+reading = "キジュンチ"
+
+[entries."標準偏差"]
+reading = "ヒョウジュンヘンサ"
+
+[entries."標準時"]
+reading = "ヒョウジュンジ"
+
+[entries."日本標準時"]
+reading = "ニホンヒョウジュンジ"
+
+[entries."時差"]
+reading = "ジサ"
+
+[entries."時差ぼけ"]
+reading = "ジサボケ"
+
+[entries."時差出勤"]
+reading = "ジサシュッキン"
+
+[entries."出勤簿"]
+reading = "シュッキンボ"
+
+[entries."出勤時間"]
+reading = "シュッキンジカン"
+
+[entries."出勤日"]
+reading = "シュッキンビ"
+
+[entries."退勤時間"]
+reading = "タイキンジカン"
+
+[entries."退勤後"]
+reading = "タイキンゴ"
+
+[entries."休日出勤"]
+reading = "キュウジツシュッキン"
+
+[entries."休日"]
+reading = "キュウジツ"
+
+[entries."休日料金"]
+reading = "キュウジツリョウキン"
+
+[entries."休日割増"]
+reading = "キュウジツワリマシ"
+
+[entries."割増"]
+reading = "ワリマシ"
+
+[entries."割引券"]
+reading = "ワリビキケン"
+
+[entries."割引率"]
+reading = "ワリビキリツ"
+
+[entries."割引価格"]
+reading = "ワリビキカカク"
+
+[entries."特別価格"]
+reading = "トクベツカカク"
+
+[entries."特別料金"]
+reading = "トクベツリョウキン"
+
+[entries."特別号"]
+reading = "トクベツゴウ"
+
+[entries."特集記事"]
+reading = "トクシュウキジ"
+
+[entries."特集号"]
+reading = "トクシュウゴウ"
+
+[entries."特集"]
+reading = "トクシュウ"
+
+[entries."特技"]
+reading = "トクギ"
+
+[entries."特訓"]
+reading = "トックン"
+
+[entries."特待"]
+reading = "トクタイ"
+
+[entries."特待生"]
+reading = "トクタイセイ"
+
+[entries."特待生制度"]
+reading = "トクタイセイセイド"
+
+[entries."特約店"]
+reading = "トクヤクテン"
+
+[entries."特約"]
+reading = "トクヤク"
+
+[entries."特長"]
+reading = "トクチョウ"
+
+[entries."特異"]
+reading = "トクイ"
+
+[entries."特異点"]
+reading = "トクイテン"
+
+[entries."特定"]
+reading = "トクテイ"
+
+[entries."特定地域"]
+reading = "トクテイチイキ"
+
+[entries."地域別"]
+reading = "チイキベツ"
+
+[entries."地域差"]
+reading = "チイキサ"
+
+[entries."地方"]
+reading = "チホウ"
+
+[entries."地方都市"]
+reading = "チホウトシ"
+
+[entries."地方分権"]
+reading = "チホウブンケン"
+
+[entries."分権"]
+reading = "ブンケン"
+
+[entries."中央集権"]
+reading = "チュウオウシュウケン"
+
+[entries."集権"]
+reading = "シュウケン"
+
+[entries."中央政府"]
+reading = "チュウオウセイフ"
+
+[entries."中央銀行"]
+reading = "チュウオウギンコウ"
+
+[entries."日銀"]
+reading = "ニチギン"
+
+[entries."銀行口座"]
+reading = "ギンコウコウザ"
+
+[entries."口座番号"]
+reading = "コウザバンゴウ"
+
+[entries."口座振替"]
+reading = "コウザフリカエ"
+
+[entries."振込先"]
+reading = "フリコミサキ"
+
+[entries."振込手数料"]
+reading = "フリコミテスウリョウ"
+
+[entries."手数料"]
+reading = "テスウリョウ"
+
+[entries."手当"]
+reading = "テアテ"
+
+[entries."手当金"]
+reading = "テアテキン"
+
+[entries."家族手当"]
+reading = "カゾクテアテ"
+
+[entries."扶養手当"]
+reading = "フヨウテアテ"
+
+[entries."扶養"]
+reading = "フヨウ"
+
+[entries."扶養者"]
+reading = "フヨウシャ"
+
+[entries."被扶養者"]
+reading = "ヒフヨウシャ"
+
+[entries."被扶養"]
+reading = "ヒフヨウ"
+
+[entries."被災"]
+reading = "ヒサイ"
+
+[entries."被災者"]
+reading = "ヒサイシャ"
+
+[entries."被災地"]
+reading = "ヒサイチ"
+
+[entries."被害額"]
+reading = "ヒガイガク"
+
+[entries."被害者数"]
+reading = "ヒガイシャスウ"
+
+[entries."死者数"]
+reading = "シシャスウ"
+
+[entries."負傷者"]
+reading = "フショウシャ"
+
+[entries."負傷"]
+reading = "フショウ"
+
+[entries."重傷"]
+reading = "ジュウショウ"
+
+[entries."軽傷"]
+reading = "ケイショウ"
+
+[entries."重傷者"]
+reading = "ジュウショウシャ"
+
+[entries."軽傷者"]
+reading = "ケイショウシャ"
+
+[entries."死者"]
+reading = "シシャ"
+
+[entries."遺族"]
+reading = "イゾク"
+
+[entries."遺族年金"]
+reading = "イゾクネンキン"
+
+[entries."年金制度"]
+reading = "ネンキンセイド"
+
+[entries."公的年金"]
+reading = "コウテキネンキン"
+
+[entries."国民年金"]
+reading = "コクミンネンキン"
+
+[entries."厚生年金"]
+reading = "コウセイネンキン"
+
+[entries."共済年金"]
+reading = "キョウサイネンキン"
+
+[entries."共済組合"]
+reading = "キョウサイクミアイ"
+
+[entries."労働組合"]
+reading = "ロウドウクミアイ"
+
+[entries."労組"]
+reading = "ロウソ"
+
+[entries."労働問題"]
+reading = "ロウドウモンダイ"
+
+[entries."問題視"]
+reading = "モンダイシ"
+
+[entries."問題点"]
+reading = "モンダイテン"
+
+[entries."問題集"]
+reading = "モンダイシュウ"
+
+[entries."問題提起"]
+reading = "モンダイテイキ"
+
+[entries."提供者"]
+reading = "テイキョウシャ"
+
+[entries."提供先"]
+reading = "テイキョウサキ"
+
+[entries."取得"]
+reading = "シュトク"
+
+[entries."取得後"]
+reading = "シュトクゴ"
+
+[entries."取得方法"]
+reading = "シュトクホウホウ"
+
+[entries."方法論"]
+reading = "ホウホウロン"
+
+[entries."論理性"]
+reading = "ロンリセイ"
+
+[entries."論理的思考"]
+reading = "ロンリテキシコウ"
+
+[entries."思考力"]
+reading = "シコウリョク"
+
+[entries."思考停止"]
+reading = "シコウテイシ"
+
+[entries."停止信号"]
+reading = "テイシシンゴウ"
+
+[entries."信号無視"]
+reading = "シンゴウムシ"
+
+[entries."無視"]
+reading = "ムシ"
+
+[entries."完全無視"]
+reading = "カンゼンムシ"
+
+[entries."完全燃焼"]
+reading = "カンゼンネンショウ"
+
+[entries."燃焼"]
+reading = "ネンショウ"
+
+[entries."不完全燃焼"]
+reading = "フカンゼンネンショウ"
+
+[entries."燃料"]
+reading = "ネンリョウ"
+
+[entries."燃料費"]
+reading = "ネンリョウヒ"
+
+[entries."燃料電池"]
+reading = "ネンリョウデンチ"
+
+[entries."電池切"]
+reading = "デンチギレ"
+
+[entries."電池残量"]
+reading = "デンチザンリョウ"
+
+[entries."残額"]
+reading = "ザンガク"
+
+[entries."残業代"]
+reading = "ザンギョウダイ"
+
+[entries."残業時間"]
+reading = "ザンギョウジカン"
+
+[entries."残業手当"]
+reading = "ザンギョウテアテ"
+
+[entries."残業料金"]
+reading = "ザンギョウリョウキン"
+
+[entries."残業禁止"]
+reading = "ザンギョウキンシ"
+
+[entries."深夜残業"]
+reading = "シンヤザンギョウ"
+
+[entries."休日勤務"]
+reading = "キュウジツキンム"
+
+[entries."勤務先"]
+reading = "キンムサキ"
+
+[entries."勤務地"]
+reading = "キンムチ"
+
+[entries."勤務時間"]
+reading = "キンムジカン"
+
+[entries."勤続"]
+reading = "キンゾク"
+
+[entries."勤続年数"]
+reading = "キンゾクネンスウ"
+
+[entries."年数"]
+reading = "ネンスウ"
+
+[entries."日数"]
+reading = "ニッスウ"
+
+[entries."月数"]
+reading = "ゲッスウ"
+
+[entries."週数"]
+reading = "シュウスウ"
+
+[entries."有給休暇"]
+reading = "ユウキュウキュウカ"
+
+[entries."有給"]
+reading = "ユウキュウ"
+
+[entries."無給"]
+reading = "ムキュウ"
+
+[entries."無償"]
+reading = "ムショウ"
+
+[entries."有償"]
+reading = "ユウショウ"
+
+[entries."代償"]
+reading = "ダイショウ"
+
+[entries."損害賠償"]
+reading = "ソンガイバイショウ"
+
+[entries."賠償金"]
+reading = "バイショウキン"
+
+[entries."慰謝"]
+reading = "イシャ"
+
+[entries."慰問"]
+reading = "イモン"
+
+[entries."慰問品"]
+reading = "イモンヒン"
+
+[entries."慰労"]
+reading = "イロウ"
+
+[entries."慰労会"]
+reading = "イロウカイ"
+
+[entries."労う"]
+reading = "ネギラウ"
+
+[entries."労力"]
+reading = "ロウリョク"
+
+[entries."労使"]
+reading = "ロウシ"
+
+[entries."労使協定"]
+reading = "ロウシキョウテイ"
+
+[entries."協定書"]
+reading = "キョウテイショ"
+
+[entries."協定価格"]
+reading = "キョウテイカカク"
+
+[entries."協定締結"]
+reading = "キョウテイテイケツ"
+
+[entries."締結式"]
+reading = "テイケツシキ"
+
+[entries."契約締結"]
+reading = "ケイヤクテイケツ"
+
+[entries."契約解除"]
+reading = "ケイヤクカイジョ"
+
+[entries."解除"]
+reading = "カイジョ"
+
+[entries."解除料"]
+reading = "カイジョリョウ"
+
+[entries."解約"]
+reading = "カイヤク"
+
+[entries."解約金"]
+reading = "カイヤクキン"
+
+[entries."解約手数料"]
+reading = "カイヤクテスウリョウ"
+
+[entries."中途解約"]
+reading = "チュウトカイヤク"
+
+[entries."中途解除"]
+reading = "チュウトカイジョ"
+
+[entries."中途入社"]
+reading = "チュウトニュウシャ"
+
+[entries."中途採用者"]
+reading = "チュウトサイヨウシャ"
+
+[entries."内定"]
+reading = "ナイテイ"
+
+[entries."内定者"]
+reading = "ナイテイシャ"
+
+[entries."内定取"]
+reading = "ナイテイトリ"
+
+[entries."取消"]
+reading = "トリケシ"
+
+[entries."取消線"]
+reading = "トリケシセン"
+
+[entries."取下"]
+reading = "トリサゲ"
+
+[entries."取扱"]
+reading = "トリアツカイ"
+
+[entries."取扱説明書"]
+reading = "トリアツカイセツメイショ"
+
+[entries."取扱注意"]
+reading = "トリアツカイチュウイ"
+
+[entries."取扱店"]
+reading = "トリアツカイテン"
+
+[entries."取扱者"]
+reading = "トリアツカイシャ"
+
+[entries."取扱中"]
+reading = "トリアツカイチュウ"
+
+[entries."扱方"]
+reading = "アツカイカタ"
+
+[entries."扱者"]
+reading = "アツカイシャ"
+
+[entries."利用法"]
+reading = "リヨウホウ"
+
+[entries."利用方法"]
+reading = "リヨウホウホウ"
+
+[entries."使用法"]
+reading = "シヨウホウ"
+
+[entries."使用説明書"]
+reading = "シヨウセツメイショ"
+
+[entries."取扱書"]
+reading = "トリアツカイショ"
+
+[entries."説明書"]
+reading = "セツメイショ"
+
+[entries."説明会"]
+reading = "セツメイカイ"
+
+[entries."説明文"]
+reading = "セツメイブン"
+
+[entries."説明責任"]
+reading = "セツメイセキニン"
+
+[entries."責任者"]
+reading = "セキニンシャ"
+
+[entries."責任感"]
+reading = "セキニンカン"
+
+[entries."連帯責任"]
+reading = "レンタイセキニン"
+
+[entries."連帯感"]
+reading = "レンタイカン"
+
+[entries."連帯保証人"]
+reading = "レンタイホショウニン"
+
+[entries."保証期間"]
+reading = "ホショウキカン"
+
+[entries."保証書"]
+reading = "ホショウショ"
+
+[entries."無保証"]
+reading = "ムホショウ"
+
+[entries."保証金"]
+reading = "ホショウキン"
+
+[entries."身元保証"]
+reading = "ミモトホショウ"
+
+[entries."身元"]
+reading = "ミモト"
+
+[entries."身元保証人"]
+reading = "ミモトホショウニン"
+
+[entries."身分証明書"]
+reading = "ミブンショウメイショ"
+
+[entries."証明写真"]
+reading = "ショウメイシャシン"
+
+[entries."免許証"]
+reading = "メンキョショウ"
+
+[entries."免許状"]
+reading = "メンキョジョウ"
+
+[entries."教員免許"]
+reading = "キョウインメンキョ"
+
+[entries."教員"]
+reading = "キョウイン"
+
+[entries."教員採用試験"]
+reading = "キョウインサイヨウシケン"
+
+[entries."教員養成"]
+reading = "キョウインヨウセイ"
+
+[entries."養成所"]
+reading = "ヨウセイジョ"
+
+[entries."養成校"]
+reading = "ヨウセイコウ"
+
+[entries."養護"]
+reading = "ヨウゴ"
+
+[entries."養護学校"]
+reading = "ヨウゴガッコウ"
+
+[entries."養護教諭"]
+reading = "ヨウゴキョウユ"
+
+[entries."教諭"]
+reading = "キョウユ"
+
+[entries."准教授"]
+reading = "ジュンキョウジュ"
+
+[entries."助教"]
+reading = "ジョキョウ"
+
+[entries."助教授"]
+reading = "ジョキョウジュ"
+
+[entries."非常勤講師"]
+reading = "ヒジョウキンコウシ"
+
+[entries."非常勤"]
+reading = "ヒジョウキン"
+
+[entries."常勤"]
+reading = "ジョウキン"
+
+[entries."専任講師"]
+reading = "センニンコウシ"
+
+[entries."非常時"]
+reading = "ヒジョウジ"
+
+[entries."非常識"]
+reading = "ヒジョウシキ"
+
+[entries."常識"]
+reading = "ジョウシキ"
+
+[entries."非常勤職員"]
+reading = "ヒジョウキンショクイン"
+
+[entries."正職員"]
+reading = "セイショクイン"
+
+[entries."正規職員"]
+reading = "セイキショクイン"
+
+[entries."正規"]
+reading = "セイキ"
+
+[entries."正規軍"]
+reading = "セイキグン"
+
+[entries."非正規"]
+reading = "ヒセイキ"
+
+[entries."非正規雇用"]
+reading = "ヒセイキコヨウ"
+
+[entries."雇用"]
+reading = "コヨウ"
+
+[entries."雇用主"]
+reading = "コヨウヌシ"
+
+[entries."雇用形態"]
+reading = "コヨウケイタイ"
+
+[entries."雇用契約"]
+reading = "コヨウケイヤク"
+
+[entries."雇用条件"]
+reading = "コヨウジョウケン"
+
+[entries."労働条件"]
+reading = "ロウドウジョウケン"
+
+[entries."労働環境"]
+reading = "ロウドウカンキョウ"
+
+[entries."労働基準"]
+reading = "ロウドウキジュン"
+
+[entries."労働基準法"]
+reading = "ロウドウキジュンホウ"
+
+[entries."基準法"]
+reading = "キジュンホウ"
+
+[entries."労働法"]
+reading = "ロウドウホウ"
+
+[entries."労働市場"]
+reading = "ロウドウシジョウ"
+
+[entries."労働力人口"]
+reading = "ロウドウリョクジンコウ"
+
+[entries."人口減少"]
+reading = "ジンコウゲンショウ"
+
+[entries."人口増加"]
+reading = "ジンコウゾウカ"
+
+[entries."減少傾向"]
+reading = "ゲンショウケイコウ"
+
+[entries."増加傾向"]
+reading = "ゾウカケイコウ"
+
+[entries."傾向値"]
+reading = "ケイコウチ"
+
+[entries."傾向性"]
+reading = "ケイコウセイ"
+
+[entries."傾斜"]
+reading = "ケイシャ"
+
+[entries."急傾斜"]
+reading = "キュウケイシャ"
+
+[entries."緩傾斜"]
+reading = "カンケイシャ"
+
+[entries."緩衝"]
+reading = "カンショウ"
+
+[entries."緩衝材"]
+reading = "カンショウザイ"
+
+[entries."緩和"]
+reading = "カンワ"
+
+[entries."緩和策"]
+reading = "カンワサク"
+
+[entries."規制緩和"]
+reading = "キセイカンワ"
+
+[entries."規制強化"]
+reading = "キセイキョウカ"
+
+[entries."強化"]
+reading = "キョウカ"
+
+[entries."強化策"]
+reading = "キョウカサク"
+
+[entries."弱体化"]
+reading = "ジャクタイカ"
+
+[entries."弱体"]
+reading = "ジャクタイ"
+
+[entries."体力勝負"]
+reading = "タイリョクショウブ"
+
+[entries."勝因"]
+reading = "ショウイン"
+
+[entries."敗因"]
+reading = "ハイイン"
+
+[entries."敗者"]
+reading = "ハイシャ"
+
+[entries."勝者"]
+reading = "ショウシャ"
+
+[entries."勝率"]
+reading = "ショウリツ"
+
+[entries."敗率"]
+reading = "ハイリツ"
+
+[entries."出塁率"]
+reading = "シュツルイリツ"
+
+[entries."本塁"]
+reading = "ホンルイ"
+
+[entries."塁打"]
+reading = "ルイダ"
+
+[entries."内野"]
+reading = "ナイヤ"
+
+[entries."外野"]
+reading = "ガイヤ"
+
+[entries."中堅"]
+reading = "チュウケン"
+
+[entries."中堅企業"]
+reading = "チュウケンキギョウ"
+
+[entries."大企業"]
+reading = "ダイキギョウ"
+
+[entries."小企業"]
+reading = "ショウキギョウ"
+
+[entries."中小企業"]
+reading = "チュウショウキギョウ"
+
+[entries."中小"]
+reading = "チュウショウ"
+
+[entries."規模拡大"]
+reading = "キボカクダイ"
+
+[entries."拡大版"]
+reading = "カクダイバン"
+
+[entries."拡大鏡"]
+reading = "カクダイキョウ"
+
+[entries."鏡面"]
+reading = "キョウメン"
+
+[entries."人物像"]
+reading = "ジンブツゾウ"
+
+[entries."肖像権"]
+reading = "ショウゾウケン"
+
+[entries."版権"]
+reading = "ハンケン"
+
+[entries."出版社"]
+reading = "シュッパンシャ"
+
+[entries."出版業"]
+reading = "シュッパンギョウ"
+
+[entries."出版業界"]
+reading = "シュッパンギョウカイ"
+
+[entries."業界"]
+reading = "ギョウカイ"
+
+[entries."業界紙"]
+reading = "ギョウカイシ"
+
+[entries."業界人"]
+reading = "ギョウカイジン"
+
+[entries."業界団体"]
+reading = "ギョウカイダンタイ"
+
+[entries."業界全体"]
+reading = "ギョウカイゼンタイ"
+
+[entries."全体像"]
+reading = "ゼンタイゾウ"
+
+[entries."全体図"]
+reading = "ゼンタイズ"
+
+[entries."全般的"]
+reading = "ゼンパンテキ"
+
+[entries."全般"]
+reading = "ゼンパン"
+
+[entries."全般化"]
+reading = "ゼンパンカ"
+
+[entries."一般化"]
+reading = "イッパンカ"
+
+[entries."一般人"]
+reading = "イッパンジン"
+
+[entries."一般市民"]
+reading = "イッパンシミン"
+
+[entries."一般論"]
+reading = "イッパンロン"
+
+[entries."一般教養"]
+reading = "イッパンキョウヨウ"
+
+[entries."教養学部"]
+reading = "キョウヨウガクブ"
+
+[entries."学部"]
+reading = "ガクブ"
+
+[entries."学部生"]
+reading = "ガクブセイ"
+
+[entries."学部長"]
+reading = "ガクブチョウ"
+
+[entries."研究科"]
+reading = "ケンキュウカ"
+
+[entries."研究室"]
+reading = "ケンキュウシツ"
+
+[entries."研究所"]
+reading = "ケンキュウジョ"
+
+[entries."研究機関"]
+reading = "ケンキュウキカン"
+
+[entries."研究費"]
+reading = "ケンキュウヒ"
+
+[entries."研究員"]
+reading = "ケンキュウイン"
+
+[entries."研究員制度"]
+reading = "ケンキュウインセイド"
+
+[entries."制度設計"]
+reading = "セイドセッケイ"
+
+[entries."設計図"]
+reading = "セッケイズ"
+
+[entries."設計者"]
+reading = "セッケイシャ"
+
+[entries."設計士"]
+reading = "セッケイシ"
+
+[entries."建築士"]
+reading = "ケンチクシ"
+
+[entries."一級建築士"]
+reading = "イッキュウケンチクシ"
+
+[entries."二級建築士"]
+reading = "ニキュウケンチクシ"
+
+[entries."資格"]
+reading = "シカク"
+
+[entries."資格試験"]
+reading = "シカクシケン"
+
+[entries."資格者"]
+reading = "シカクシャ"
+
+[entries."有資格者"]
+reading = "ユウシカクシャ"
+
+[entries."無資格"]
+reading = "ムシカク"
+
+[entries."公認会計士"]
+reading = "コウニンカイケイシ"
+
+[entries."税理士"]
+reading = "ゼイリシ"
+
+[entries."弁理士"]
+reading = "ベンリシ"
+
+[entries."弁護士法"]
+reading = "ベンゴシホウ"
+
+[entries."弁護士事務所"]
+reading = "ベンゴシジムショ"
+
+[entries."事務所"]
+reading = "ジムショ"
+
+[entries."事務員"]
+reading = "ジムイン"
+
+[entries."事務職"]
+reading = "ジムショク"
+
+[entries."事務作業"]
+reading = "ジムサギョウ"
+
+[entries."作業員"]
+reading = "サギョウイン"
+
+[entries."作業時間"]
+reading = "サギョウジカン"
+
+[entries."作業手順"]
+reading = "サギョウテジュン"
+
+[entries."作業靴"]
+reading = "サギョウグツ"
+
+[entries."作業帽"]
+reading = "サギョウボウ"
+
+[entries."作業場"]
+reading = "サギョウバ"
+
+[entries."工房"]
+reading = "コウボウ"
+
+[entries."工芸品"]
+reading = "コウゲイヒン"
+
+[entries."工芸家"]
+reading = "コウゲイカ"
+
+[entries."工芸大学"]
+reading = "コウゲイダイガク"
+
+[entries."美術大学"]
+reading = "ビジュツダイガク"
+
+[entries."芸術大学"]
+reading = "ゲイジュツダイガク"
+
+[entries."芸術祭"]
+reading = "ゲイジュツサイ"
+
+[entries."芸術品"]
+reading = "ゲイジュツヒン"
+
+[entries."美術品"]
+reading = "ビジュツヒン"
+
+[entries."博物"]
+reading = "ハクブツ"
+
+[entries."博物学"]
+reading = "ハクブツガク"
+
+[entries."動物学"]
+reading = "ドウブツガク"
+
+[entries."植物学"]
+reading = "ショクブツガク"
+
+[entries."微生物"]
+reading = "ビセイブツ"
+
+[entries."生物学"]
+reading = "セイブツガク"
+
+[entries."生物学者"]
+reading = "セイブツガクシャ"
+
+[entries."学者"]
+reading = "ガクシャ"
+
+[entries."発明品"]
+reading = "ハツメイヒン"
+
+[entries."特許"]
+reading = "トッキョ"
+
+[entries."特許権"]
+reading = "トッキョケン"
+
+[entries."特許出願"]
+reading = "トッキョシュツガン"
+
+[entries."出願者"]
+reading = "シュツガンシャ"
+
+[entries."出願書類"]
+reading = "シュツガンショルイ"
+
+[entries."書類審査"]
+reading = "ショルイシンサ"
+
+[entries."審査"]
+reading = "シンサ"
+
+[entries."審査員"]
+reading = "シンサイン"
+
+[entries."審査基準"]
+reading = "シンサキジュン"
+
+[entries."最終審査"]
+reading = "サイシュウシンサ"
+
+[entries."最終選考"]
+reading = "サイシュウセンコウ"
+
+[entries."最終確認"]
+reading = "サイシュウカクニン"
+
+[entries."確認作業"]
+reading = "カクニンサギョウ"
+
+[entries."確認事項"]
+reading = "カクニンジコウ"
+
+[entries."確認書"]
+reading = "カクニンショ"
+
+[entries."受領"]
+reading = "ジュリョウ"
+
+[entries."受領書"]
+reading = "ジュリョウショ"
+
+[entries."受領印"]
+reading = "ジュリョウイン"
+
+[entries."押印"]
+reading = "オウイン"
+
+[entries."押印欄"]
+reading = "オウインラン"
+
+[entries."署名欄"]
+reading = "ショメイラン"
+
+[entries."記入欄"]
+reading = "キニュウラン"
+
+[entries."氏名欄"]
+reading = "シメイラン"
+
+[entries."住所欄"]
+reading = "ジュウショラン"
+
+[entries."連絡先"]
+reading = "レンラクサキ"
+
+[entries."連絡網"]
+reading = "レンラクモウ"
+
+[entries."連絡帳"]
+reading = "レンラクチョウ"
+
+[entries."連絡係"]
+reading = "レンラクガカリ"
+
+[entries."担当部署"]
+reading = "タントウブショ"
+
+[entries."部署"]
+reading = "ブショ"
+
+[entries."部署内"]
+reading = "ブショナイ"
+
+[entries."部署間"]
+reading = "ブショカン"
+
+[entries."部門"]
+reading = "ブモン"
+
+[entries."部門別"]
+reading = "ブモンベツ"
+
+[entries."営業部"]
+reading = "エイギョウブ"
+
+[entries."営業所"]
+reading = "エイギョウショ"
+
+[entries."営業時間"]
+reading = "エイギョウジカン"
+
+[entries."営業日"]
+reading = "エイギョウビ"
+
+[entries."休業日"]
+reading = "キュウギョウビ"
+
+[entries."休業"]
+reading = "キュウギョウ"
+
+[entries."創業者"]
+reading = "ソウギョウシャ"
+
+[entries."創業日"]
+reading = "ソウギョウビ"
+
+[entries."創立者"]
+reading = "ソウリツシャ"
+
+[entries."創立記念日"]
+reading = "ソウリツキネンビ"
+
+[entries."創立記念"]
+reading = "ソウリツキネン"
+
+[entries."記念"]
+reading = "キネン"
+
+[entries."記念品"]
+reading = "キネンヒン"
+
+[entries."記念写真"]
+reading = "キネンシャシン"
+
+[entries."記念碑"]
+reading = "キネンヒ"
+
+[entries."墓地"]
+reading = "ボチ"
+
+[entries."墓石"]
+reading = "ボセキ"
+
+[entries."回忌"]
+reading = "カイキ"
+
+[entries."十三回忌"]
+reading = "ジュウサンカイキ"
+
+[entries."三十三回忌"]
+reading = "サンジュウサンカイキ"
+
+[entries."仏前"]
+reading = "ブツゼン"
+
+[entries."霊前"]
+reading = "レイゼン"
+
+[entries."香典"]
+reading = "コウデン"
+
+[entries."香典袋"]
+reading = "コウデンブクロ"
+
+[entries."熨斗袋"]
+reading = "ノシブクロ"
+
+[entries."熨斗"]
+reading = "ノシ"
+
+[entries."弔意"]
+reading = "チョウイ"
+
+[entries."弔慰金"]
+reading = "チョウイキン"
+
+[entries."弔電"]
+reading = "チョウデン"
+
+[entries."祝電"]
+reading = "シュクデン"
+
+[entries."弔辞"]
+reading = "チョウジ"
+
+[entries."弔問"]
+reading = "チョウモン"
+
+[entries."告別式"]
+reading = "コクベツシキ"
+
+[entries."葬儀社"]
+reading = "ソウギシャ"
+
+[entries."葬儀場"]
+reading = "ソウギジョウ"
+
+[entries."火葬"]
+reading = "カソウ"
+
+[entries."火葬場"]
+reading = "カソウバ"
+
+[entries."土葬"]
+reading = "ドソウ"
+
+[entries."水葬"]
+reading = "スイソウ"
+
+[entries."鳥葬"]
+reading = "チョウソウ"
+
+[entries."埋葬"]
+reading = "マイソウ"
+
+[entries."納骨"]
+reading = "ノウコツ"
+
+[entries."納骨堂"]
+reading = "ノウコツドウ"
+
+[entries."分骨"]
+reading = "ブンコツ"
+
+[entries."遺骨"]
+reading = "イコツ"
+
+[entries."遺品"]
+reading = "イヒン"
+
+[entries."遺書"]
+reading = "イショ"
+
+[entries."遺言"]
+reading = "ユイゴン"
+
+[entries."遺言状"]
+reading = "ユイゴンジョウ"
+
+[entries."遺言書"]
+reading = "ユイゴンショ"
+
+[entries."公正証書"]
+reading = "コウセイショウショ"
+
+[entries."公証役場"]
+reading = "コウショウヤクバ"
+
+[entries."役場"]
+reading = "ヤクバ"
+
+[entries."村役場"]
+reading = "ムラヤクバ"
+
+[entries."町役場"]
+reading = "マチヤクバ"
+
+[entries."役所"]
+reading = "ヤクショ"
+
+[entries."市役所"]
+reading = "シヤクショ"
+
+[entries."区役所"]
+reading = "クヤクショ"
+
+[entries."都庁"]
+reading = "トチョウ"
+
+[entries."都立"]
+reading = "トリツ"
+
+[entries."都営"]
+reading = "トエイ"
+
+[entries."都内"]
+reading = "トナイ"
+
+[entries."都外"]
+reading = "トガイ"
+
+[entries."都道府県"]
+reading = "トドウフケン"
+
+[entries."道府県"]
+reading = "ドウフケン"
+
+[entries."府県"]
+reading = "フケン"
+
+[entries."県市"]
+reading = "ケンシ"
+
+[entries."県知事"]
+reading = "ケンチジ"
+
+[entries."知事選"]
+reading = "チジセン"
+
+[entries."知事選挙"]
+reading = "チジセンキョ"
+
+[entries."選挙運動"]
+reading = "センキョウンドウ"
+
+[entries."選挙運動員"]
+reading = "センキョウンドウイン"
+
+[entries."選挙公報"]
+reading = "センキョコウホウ"
+
+[entries."選挙活動"]
+reading = "センキョカツドウ"
+
+[entries."選挙区"]
+reading = "センキョク"
+
+[entries."小選挙区"]
+reading = "ショウセンキョク"
+
+[entries."比例代表制"]
+reading = "ヒレイダイヒョウセイ"
+
+[entries."代表者"]
+reading = "ダイヒョウシャ"
+
+[entries."代表団"]
+reading = "ダイヒョウダン"
+
+[entries."代理人"]
+reading = "ダイリニン"
+
+[entries."代理店"]
+reading = "ダイリテン"
+
+[entries."販売店"]
+reading = "ハンバイテン"
+
+[entries."販売代理店"]
+reading = "ハンバイダイリテン"
+
+[entries."販売員"]
+reading = "ハンバイイン"
+
+[entries."販売員教育"]
+reading = "ハンバイインキョウイク"
+
+[entries."販売額"]
+reading = "ハンバイガク"
+
+[entries."販売価格"]
+reading = "ハンバイカカク"
+
+[entries."販売数"]
+reading = "ハンバイスウ"
+
+[entries."販売量"]
+reading = "ハンバイリョウ"
+
+[entries."出荷量"]
+reading = "シュッカリョウ"
+
+[entries."出荷数"]
+reading = "シュッカスウ"
+
+[entries."出荷時"]
+reading = "シュッカジ"
+
+[entries."出荷先"]
+reading = "シュッカサキ"
+
+[entries."発送先"]
+reading = "ハッソウサキ"
+
+[entries."発送日"]
+reading = "ハッソウビ"
+
+[entries."配送先"]
+reading = "ハイソウサキ"
+
+[entries."配送日"]
+reading = "ハイソウビ"
+
+[entries."配達先"]
+reading = "ハイタツサキ"
+
+[entries."配達日"]
+reading = "ハイタツビ"
+
+[entries."配達員"]
+reading = "ハイタツイン"
+
+[entries."担当エリア"]
+reading = "タントウエリア"
+
+[entries."担当区域"]
+reading = "タントウクイキ"
+
+[entries."区域内"]
+reading = "クイキナイ"
+
+[entries."区域外"]
+reading = "クイキガイ"
+
+[entries."地区別"]
+reading = "チクベツ"
+
+[entries."管轄区域"]
+reading = "カンカツクイキ"
+
+[entries."管轄外"]
+reading = "カンカツガイ"
+
+[entries."管轄権"]
+reading = "カンカツケン"
+
+[entries."人権侵害"]
+reading = "ジンケンシンガイ"
+
+[entries."侵害"]
+reading = "シンガイ"
+
+[entries."被侵害"]
+reading = "ヒシンガイ"
+
+[entries."侵入"]
+reading = "シンニュウ"
+
+[entries."侵入者"]
+reading = "シンニュウシャ"
+
+[entries."侵入禁止"]
+reading = "シンニュウキンシ"
+
+[entries."立入禁止"]
+reading = "タチイリキンシ"
+
+[entries."進入禁止"]
+reading = "シンニュウキンシ"
+
+[entries."進入路"]
+reading = "シンニュウロ"
+
+[entries."進入路標"]
+reading = "シンニュウロヒョウ"
+
+[entries."標示"]
+reading = "ヒョウジ"
+
+[entries."標示板"]
+reading = "ヒョウジバン"
+
+[entries."標示器"]
+reading = "ヒョウジキ"
+
+[entries."案内板"]
+reading = "アンナイバン"
+
+[entries."受付窓口"]
+reading = "ウケツケマドグチ"
+
+[entries."窓口業務"]
+reading = "マドグチギョウム"
+
+[entries."業務内容"]
+reading = "ギョウムナイヨウ"
+
+[entries."内容物"]
+reading = "ナイヨウブツ"
+
+[entries."内容量"]
+reading = "ナイヨウリョウ"
+
+[entries."容器"]
+reading = "ヨウキ"
+
+[entries."密閉容器"]
+reading = "ミッペイヨウキ"
+
+[entries."密閉"]
+reading = "ミッペイ"
+
+[entries."密封"]
+reading = "ミップウ"
+
+[entries."封印"]
+reading = "フウイン"
+
+[entries."開封"]
+reading = "カイフウ"
+
+[entries."未開封"]
+reading = "ミカイフウ"
+
+[entries."封書"]
+reading = "フウショ"
+
+[entries."封筒"]
+reading = "フウトウ"
+
+[entries."封蝋"]
+reading = "フウロウ"
+
+[entries."書留"]
+reading = "カキトメ"
+
+[entries."郵便物"]
+reading = "ユウビンブツ"
+
+[entries."小包"]
+reading = "コヅツミ"
+
+[entries."宅配"]
+reading = "タクハイ"
+
+[entries."宅配便"]
+reading = "タクハイビン"
+
+[entries."宅急便"]
+reading = "タッキュウビン"
+
+[entries."速達便"]
+reading = "ソクタツビン"
+
+[entries."普通郵便"]
+reading = "フツウユウビン"
+
+[entries."書留郵便"]
+reading = "カキトメユウビン"
+
+[entries."配達証明"]
+reading = "ハイタツショウメイ"
+
+[entries."内容証明"]
+reading = "ナイヨウショウメイ"
+
+[entries."内容証明郵便"]
+reading = "ナイヨウショウメイユウビン"
+
+[entries."証明郵便"]
+reading = "ショウメイユウビン"
+
+[entries."通常郵便"]
+reading = "ツウジョウユウビン"
+
+[entries."通常時"]
+reading = "ツウジョウジ"
+
+[entries."平常時"]
+reading = "ヘイジョウジ"
+
+[entries."平常心"]
+reading = "ヘイジョウシン"
+
+[entries."平常運転"]
+reading = "ヘイジョウウンテン"
+
+[entries."鉄道員"]
+reading = "テツドウイン"
+
+[entries."道路網"]
+reading = "ドウロモウ"
+
+[entries."加速度"]
+reading = "カソクド"
+
+[entries."速度計"]
+reading = "ソクドケイ"
+
+[entries."速度制限"]
+reading = "ソクドセイゲン"
+
+[entries."制限速度"]
+reading = "セイゲンソクド"
+
+[entries."制限時間"]
+reading = "セイゲンジカン"
+
+[entries."時間制限"]
+reading = "ジカンセイゲン"
+
+[entries."時間配分"]
+reading = "ジカンハイブン"
+
+[entries."配分"]
+reading = "ハイブン"
+
+[entries."分配"]
+reading = "ブンパイ"
+
+[entries."分配金"]
+reading = "ブンパイキン"
+
+[entries."分割"]
+reading = "ブンカツ"
+
+[entries."分割払"]
+reading = "ブンカツバライ"
+
+[entries."一括払"]
+reading = "イッカツバライ"
+
+[entries."括弧"]
+reading = "カッコ"
+
+[entries."丸括弧"]
+reading = "マルカッコ"
+
+[entries."角括弧"]
+reading = "カクカッコ"
+
+[entries."中括弧"]
+reading = "チュウカッコ"
+
+[entries."波括弧"]
+reading = "ナミカッコ"
+
+[entries."記号化"]
+reading = "キゴウカ"
+
+[entries."符号"]
+reading = "フゴウ"
+
+[entries."符号化"]
+reading = "フゴウカ"
+
+[entries."暗号"]
+reading = "アンゴウ"
+
+[entries."復号化"]
+reading = "フクゴウカ"
+
+[entries."解読"]
+reading = "カイドク"
+
+[entries."解読不能"]
+reading = "カイドクフノウ"
+
+[entries."不能"]
+reading = "フノウ"
+
+[entries."不可能性"]
+reading = "フカノウセイ"
+
+[entries."可能限"]
+reading = "カノウギリ"
+
+[entries."可能範囲"]
+reading = "カノウハンイ"
+
+[entries."範囲外"]
+reading = "ハンイガイ"
+
+[entries."範囲内"]
+reading = "ハンイナイ"
+
+[entries."適用範囲"]
+reading = "テキヨウハンイ"
+
+[entries."適用外"]
+reading = "テキヨウガイ"
+
+[entries."適用除外"]
+reading = "テキヨウジョガイ"
+
+[entries."除外"]
+reading = "ジョガイ"
+
+[entries."除外規定"]
+reading = "ジョガイキテイ"
+
+[entries."規定外"]
+reading = "キテイガイ"
+
+[entries."規定内"]
+reading = "キテイナイ"
+
+[entries."規定値"]
+reading = "キテイチ"
+
+[entries."規格外"]
+reading = "キカクガイ"
+
+[entries."規格内"]
+reading = "キカクナイ"
+
+[entries."規格品"]
+reading = "キカクヒン"
+
+[entries."標準品"]
+reading = "ヒョウジュンヒン"
+
+[entries."標準型"]
+reading = "ヒョウジュンガタ"
+
+[entries."標準仕様"]
+reading = "ヒョウジュンシヨウ"
+
+[entries."仕様書"]
+reading = "シヨウショ"
+
+[entries."仕様変更"]
+reading = "シヨウヘンコウ"
+
+[entries."変更点"]
+reading = "ヘンコウテン"
+
+[entries."変更前"]
+reading = "ヘンコウマエ"
+
+[entries."変更後"]
+reading = "ヘンコウゴ"
+
+[entries."事前"]
+reading = "ジゼン"
+
+[entries."事後"]
+reading = "ジゴ"
+
+[entries."事前準備"]
+reading = "ジゼンジュンビ"
+
+[entries."事後対応"]
+reading = "ジゴタイオウ"
+
+[entries."準備期間"]
+reading = "ジュンビキカン"
+
+[entries."予備"]
+reading = "ヨビ"
+
+[entries."予備校"]
+reading = "ヨビコウ"
+
+[entries."予備校生"]
+reading = "ヨビコウセイ"
+
+[entries."予備知識"]
+reading = "ヨビチシキ"
+
+[entries."知識人"]
+reading = "チシキジン"
+
+[entries."知識量"]
+reading = "チシキリョウ"
+
+[entries."知識欲"]
+reading = "チシキヨク"
+
+[entries."知能指数"]
+reading = "チノウシスウ"
+
+[entries."指数"]
+reading = "シスウ"
+
+[entries."指数関数"]
+reading = "シスウカンスウ"
+
+[entries."関数電卓"]
+reading = "カンスウデンタク"
+
+[entries."電卓"]
+reading = "デンタク"
+
+[entries."電子辞書"]
+reading = "デンシジショ"
+
+[entries."辞書"]
+reading = "ジショ"
+
+[entries."辞書編集"]
+reading = "ジショヘンシュウ"
+
+[entries."辞書配信"]
+reading = "ジショハイシン"
+
+[entries."配信日"]
+reading = "ハイシンビ"
+
+[entries."配信先"]
+reading = "ハイシンサキ"
+
+[entries."配信内容"]
+reading = "ハイシンナイヨウ"
+
+[entries."内容説明"]
+reading = "ナイヨウセツメイ"
+
+[entries."説明書き"]
+reading = "セツメイガキ"
+
+[entries."注意書き"]
+reading = "チュウイガキ"
+
+[entries."注意事項"]
+reading = "チュウイジコウ"
+
+[entries."注意点"]
+reading = "チュウイテン"
+
+[entries."注意報"]
+reading = "チュウイホウ"
+
+[entries."警報発令"]
+reading = "ケイホウハツレイ"
+
+[entries."発令"]
+reading = "ハツレイ"
+
+[entries."発令日"]
+reading = "ハツレイビ"
+
+[entries."発令時"]
+reading = "ハツレイジ"
+
+[entries."緊急発令"]
+reading = "キンキュウハツレイ"
+
+[entries."緊急速報"]
+reading = "キンキュウソクホウ"
+
+[entries."緊急地震速報"]
+reading = "キンキュウジシンソクホウ"
+
+[entries."地震速報"]
+reading = "ジシンソクホウ"
+
+[entries."気象警報"]
+reading = "キショウケイホウ"
+
+[entries."洪水警報"]
+reading = "コウズイケイホウ"
+
+[entries."氾濫"]
+reading = "ハンラン"
+
+[entries."氾濫原"]
+reading = "ハンランゲン"
+
+[entries."原因不明"]
+reading = "ゲンインフメイ"
+
+[entries."原因究明"]
+reading = "ゲンインキュウメイ"
+
+[entries."究明"]
+reading = "キュウメイ"
+
+[entries."究極"]
+reading = "キュウキョク"
+
+[entries."究極的"]
+reading = "キュウキョクテキ"
+
+[entries."極端"]
+reading = "キョクタン"
+
+[entries."極端化"]
+reading = "キョクタンカ"
+
+[entries."極端的"]
+reading = "キョクタンテキ"
+
+[entries."極限"]
+reading = "キョクゲン"
+
+[entries."極限値"]
+reading = "キョクゲンチ"
+
+[entries."極大"]
+reading = "キョクダイ"
+
+[entries."極小"]
+reading = "キョクショウ"
+
+[entries."極大値"]
+reading = "キョクダイチ"
+
+[entries."極小値"]
+reading = "キョクショウチ"
+
+[entries."最大値"]
+reading = "サイダイチ"
+
+[entries."最小値"]
+reading = "サイショウチ"
+
+[entries."平均値"]
+reading = "ヘイキンチ"
+
+[entries."平均寿命"]
+reading = "ヘイキンジュミョウ"
+
+[entries."寿命"]
+reading = "ジュミョウ"
+
+[entries."寿命延長"]
+reading = "ジュミョウエンチョウ"
+
+[entries."延長"]
+reading = "エンチョウ"
+
+[entries."延長線"]
+reading = "エンチョウセン"
+
+[entries."延長コード"]
+reading = "エンチョウコード"
+
+[entries."短縮"]
+reading = "タンシュク"
+
+[entries."時間短縮"]
+reading = "ジカンタンシュク"
+
+[entries."短縮形"]
+reading = "タンシュクケイ"
+
+[entries."省略"]
+reading = "ショウリャク"
+
+[entries."省略形"]
+reading = "ショウリャクケイ"
+
+[entries."省略可能"]
+reading = "ショウリャクカノウ"
+
+[entries."省略不可"]
+reading = "ショウリャクフカ"
+
+[entries."省力化"]
+reading = "ショウリョクカ"
+
+[entries."省人化"]
+reading = "ショウジンカ"
+
+[entries."省エネ"]
+reading = "ショウエネ"
+
+[entries."省エネルギー"]
+reading = "ショウエネルギー"
+
+[entries."低消費"]
+reading = "テイショウヒ"
+
+[entries."低消費電力"]
+reading = "テイショウヒデンリョク"
+
+[entries."高消費"]
+reading = "コウショウヒ"
+
+[entries."高消費電力"]
+reading = "コウショウヒデンリョク"
+
+[entries."電力消費"]
+reading = "デンリョクショウヒ"
+
+[entries."電力消費量"]
+reading = "デンリョクショウヒリョウ"
+
+[entries."消費量"]
+reading = "ショウヒリョウ"
+
+[entries."消費電力"]
+reading = "ショウヒデンリョク"
+
+[entries."電気代節約"]
+reading = "デンキダイセツヤク"
+
+[entries."節約"]
+reading = "セツヤク"
+
+[entries."節約術"]
+reading = "セツヤクジュツ"
+
+[entries."節制"]
+reading = "セッセイ"
+
+[entries."節度"]
+reading = "セツド"
+
+[entries."春分日"]
+reading = "シュンブンビ"
+
+[entries."秋分日"]
+reading = "シュウブンビ"
+
+[entries."祝日"]
+reading = "シュクジツ"
+
+[entries."祝賀"]
+reading = "シュクガ"
+
+[entries."祝辞"]
+reading = "シュクジ"
+
+[entries."祝福"]
+reading = "シュクフク"
+
+[entries."祝祭日"]
+reading = "シュクサイジツ"
+
+[entries."祭日"]
+reading = "サイジツ"
+
+[entries."祭典"]
+reading = "サイテン"
+
+[entries."神事"]
+reading = "シンジ"
+
+[entries."御朱印帳"]
+reading = "ゴシュインチョウ"
+
+[entries."朱印"]
+reading = "シュイン"
+
+[entries."御札"]
+reading = "オフダ"
+
+[entries."神籤"]
+reading = "クジ"
+
+[entries."籤引"]
+reading = "クジビキ"
+
+[entries."籤運"]
+reading = "クジウン"
+
+[entries."強運"]
+reading = "キョウウン"
+
+[entries."不運"]
+reading = "フウン"
+
+[entries."幸運"]
+reading = "コウウン"
+
+[entries."悲運"]
+reading = "ヒウン"
+
+[entries."運命的"]
+reading = "ウンメイテキ"
+
+[entries."運勢"]
+reading = "ウンセイ"
+
+[entries."運気"]
+reading = "ウンキ"
+
+[entries."運営費"]
+reading = "ウンエイヒ"
+
+[entries."運営者"]
+reading = "ウンエイシャ"
+
+[entries."運営方針"]
+reading = "ウンエイホウシン"
+
+[entries."方針"]
+reading = "ホウシン"
+
+[entries."方針転換"]
+reading = "ホウシンテンカン"
+
+[entries."転換"]
+reading = "テンカン"
+
+[entries."転換期"]
+reading = "テンカンキ"
+
+[entries."転換点"]
+reading = "テンカンテン"
+
+[entries."転換社債"]
+reading = "テンカンシャサイ"
+
+[entries."公債"]
+reading = "コウサイ"
+
+[entries."地方債"]
+reading = "チホウサイ"
+
+[entries."債務者"]
+reading = "サイムシャ"
+
+[entries."債権者"]
+reading = "サイケンシャ"
+
+[entries."債務不履行"]
+reading = "サイムフリコウ"
+
+[entries."不履行"]
+reading = "フリコウ"
+
+[entries."履行"]
+reading = "リコウ"
+
+[entries."不履行責任"]
+reading = "フリコウセキニン"
+
+[entries."履行責任"]
+reading = "リコウセキニン"
+
+[entries."事業者"]
+reading = "ジギョウシャ"
+
+[entries."事業計画"]
+reading = "ジギョウケイカク"
+
+[entries."事業承継"]
+reading = "ジギョウショウケイ"
+
+[entries."承継"]
+reading = "ショウケイ"
+
+[entries."継承"]
+reading = "ケイショウ"
+
+[entries."継続性"]
+reading = "ケイゾクセイ"
+
+[entries."継続的"]
+reading = "ケイゾクテキ"
+
+[entries."継承者"]
+reading = "ケイショウシャ"
+
+[entries."後継者"]
+reading = "コウケイシャ"
+
+[entries."後継"]
+reading = "コウケイ"
+
+[entries."継承式"]
+reading = "ケイショウシキ"
+
+[entries."継承順位"]
+reading = "ケイショウジュンイ"
+
+[entries."皇位継承"]
+reading = "コウイケイショウ"
+
+[entries."皇位"]
+reading = "コウイ"
+
+[entries."皇室"]
+reading = "コウシツ"
+
+[entries."皇族"]
+reading = "コウゾク"
+
+[entries."天皇"]
+reading = "テンノウ"
+
+[entries."天皇陛下"]
+reading = "テンノウヘイカ"
+
+[entries."陛下"]
+reading = "ヘイカ"
+
+[entries."殿下"]
+reading = "デンカ"
+
+[entries."皇太子"]
+reading = "コウタイシ"
+
+[entries."皇太子殿下"]
+reading = "コウタイシデンカ"
+
+[entries."皇后"]
+reading = "コウゴウ"
+
+[entries."皇太后"]
+reading = "コウタイゴウ"
+
+[entries."親王"]
+reading = "シンノウ"
+
+[entries."王位"]
+reading = "オウイ"
+
+[entries."王位継承"]
+reading = "オウイケイショウ"
+
+[entries."王族"]
+reading = "オウゾク"
+
+[entries."王宮"]
+reading = "オウキュウ"
+
+[entries."皇居"]
+reading = "コウキョ"
+
+[entries."御所"]
+reading = "ゴショ"
+
+[entries."御殿"]
+reading = "ゴテン"
+
+[entries."殿様"]
+reading = "トノサマ"
+
+[entries."領主"]
+reading = "リョウシュ"
+
+[entries."領地"]
+reading = "リョウチ"
+
+[entries."領民"]
+reading = "リョウミン"
+
+[entries."領内"]
+reading = "リョウナイ"
+
+[entries."領外"]
+reading = "リョウガイ"
+
+[entries."領分"]
+reading = "リョウブン"
+
+[entries."公使館"]
+reading = "コウシカン"
+
+[entries."首席公使"]
+reading = "シュセキコウシ"
+
+[entries."首席"]
+reading = "シュセキ"
+
+[entries."首脳"]
+reading = "シュノウ"
+
+[entries."首脳会談"]
+reading = "シュノウカイダン"
+
+[entries."座談"]
+reading = "ザダン"
+
+[entries."座談会"]
+reading = "ザダンカイ"
+
+[entries."談話"]
+reading = "ダンワ"
+
+[entries."談合"]
+reading = "ダンゴウ"
+
+[entries."談判"]
+reading = "ダンパン"
+
+[entries."談判決裂"]
+reading = "ダンパンケツレツ"
+
+[entries."決裂"]
+reading = "ケツレツ"
+
+[entries."妥結"]
+reading = "ダケツ"
+
+[entries."和解金"]
+reading = "ワカイキン"
+
+[entries."損害"]
+reading = "ソンガイ"
+
+[entries."医療保険"]
+reading = "イリョウホケン"
+
+[entries."社会保険"]
+reading = "シャカイホケン"
+
+[entries."国民健康保険"]
+reading = "コクミンケンコウホケン"
+
+[entries."国民健康保険料"]
+reading = "コクミンケンコウホケンリョウ"
+
+[entries."健康保険"]
+reading = "ケンコウホケン"
+
+[entries."健康保険証"]
+reading = "ケンコウホケンショウ"
+
+[entries."保険証"]
+reading = "ホケンショウ"
+
+[entries."保険適用"]
+reading = "ホケンテキヨウ"
+
+[entries."適用対象"]
+reading = "テキヨウタイショウ"
+
+[entries."対象者"]
+reading = "タイショウシャ"
+
+[entries."対象外"]
+reading = "タイショウガイ"
+
+[entries."対象地域"]
+reading = "タイショウチイキ"
+
+[entries."対象範囲"]
+reading = "タイショウハンイ"
+
+[entries."非対象"]
+reading = "ヒタイショウ"
+
+[entries."比較対象"]
+reading = "ヒカクタイショウ"
+
+[entries."比較表"]
+reading = "ヒカクヒョウ"
+
+[entries."比較値"]
+reading = "ヒカクチ"
+
+[entries."比較研究"]
+reading = "ヒカクケンキュウ"
+
+[entries."研究対象"]
+reading = "ケンキュウタイショウ"
+
+[entries."研究目的"]
+reading = "ケンキュウモクテキ"
+
+[entries."目的別"]
+reading = "モクテキベツ"
+
+[entries."目的地"]
+reading = "モクテキチ"
+
+[entries."目的物"]
+reading = "モクテキブツ"
+
+[entries."意識調査"]
+reading = "イシキチョウサ"
+
+[entries."調査員"]
+reading = "チョウサイン"
+
+[entries."調査結果"]
+reading = "チョウサケッカ"
+
+[entries."調査報告書"]
+reading = "チョウサホウコクショ"
+
+[entries."調査対象"]
+reading = "チョウサタイショウ"
+
+[entries."調査範囲"]
+reading = "チョウサハンイ"
+
+[entries."調査地域"]
+reading = "チョウサチイキ"
+
+[entries."実地調査"]
+reading = "ジッチチョウサ"
+
+[entries."実地"]
+reading = "ジッチ"
+
+[entries."実地試験"]
+reading = "ジッチシケン"
+
+[entries."実技試験"]
+reading = "ジツギシケン"
+
+[entries."筆記試験"]
+reading = "ヒッキシケン"
+
+[entries."筆記"]
+reading = "ヒッキ"
+
+[entries."筆記用具"]
+reading = "ヒッキヨウグ"
+
+[entries."道具箱"]
+reading = "ドウグバコ"
+
+[entries."工具箱"]
+reading = "コウグバコ"
+
+[entries."玩具"]
+reading = "ガング"
+
+[entries."家具"]
+reading = "カグ"
+
+[entries."家具屋"]
+reading = "カグヤ"
+
+[entries."家電"]
+reading = "カデン"
+
+[entries."家電量販店"]
+reading = "カデンリョウハンテン"
+
+[entries."量販店"]
+reading = "リョウハンテン"
+
+[entries."量販"]
+reading = "リョウハン"
+
+[entries."量産"]
+reading = "リョウサン"
+
+[entries."量産型"]
+reading = "リョウサンガタ"
+
+[entries."試作"]
+reading = "シサク"
+
+[entries."試作品"]
+reading = "シサクヒン"
+
+[entries."錯誤"]
+reading = "サクゴ"
+
+[entries."錯覚"]
+reading = "サッカク"
+
+[entries."錯綜"]
+reading = "サクソウ"
+
+[entries."複雑系"]
+reading = "フクザツケイ"
+
+[entries."複雑化"]
+reading = "フクザツカ"
+
+[entries."明快"]
+reading = "メイカイ"
+
+[entries."快適性"]
+reading = "カイテキセイ"
+
+[entries."快感"]
+reading = "カイカン"
+
+[entries."不快感"]
+reading = "フカイカン"
+
+[entries."不快指数"]
+reading = "フカイシスウ"
+
+[entries."快諾"]
+reading = "カイダク"
+
+[entries."快諾返信"]
+reading = "カイダクヘンシン"
+
+[entries."返信用"]
+reading = "ヘンシンヨウ"
+
+[entries."返信用封筒"]
+reading = "ヘンシンヨウフウトウ"
+
+[entries."返却日"]
+reading = "ヘンキャクビ"
+
+[entries."返却期限"]
+reading = "ヘンキャクキゲン"
+
+[entries."返却ボックス"]
+reading = "ヘンキャクボックス"
+
+[entries."ボックス席"]
+reading = "ボックスセキ"
+
+[entries."自由競争"]
+reading = "ジユウキョウソウ"
+
+[entries."公正取引"]
+reading = "コウセイトリヒキ"
+
+[entries."取引委員会"]
+reading = "トリヒキイインカイ"
+
+[entries."公平感"]
+reading = "コウヘイカン"
+
+[entries."不公平"]
+reading = "フコウヘイ"
+
+[entries."不平"]
+reading = "フヘイ"
+
+[entries."不平不満"]
+reading = "フヘイフマン"
+
+[entries."不満足"]
+reading = "フマンゾク"
+
+[entries."満足度"]
+reading = "マンゾクド"
+
+[entries."満足度調査"]
+reading = "マンゾクドチョウサ"
+
+[entries."顧客満足"]
+reading = "コキャクマンゾク"
+
+[entries."顧客満足度"]
+reading = "コキャクマンゾクド"
+
+[entries."顧客対応"]
+reading = "コキャクタイオウ"
+
+[entries."顧客サポート"]
+reading = "コキャクサポート"
+
+[entries."サポート"]
+reading = "サポート"
+
+[entries."サポートセンター"]
+reading = "サポートセンター"
+
+[entries."コールセンター"]
+reading = "コールセンター"
+
+[entries."カスタマーサポート"]
+reading = "カスタマーサポート"
+
+[entries."カスタマー"]
+reading = "カスタマー"
+
+[entries."ユーザー"]
+reading = "ユーザー"
+
+[entries."ユーザー登録"]
+reading = "ユーザートウロク"
+
+[entries."登録"]
+reading = "トウロク"
+
+[entries."登録制"]
+reading = "トウロクセイ"
+
+[entries."登録料"]
+reading = "トウロクリョウ"
+
+[entries."登録者"]
+reading = "トウロクシャ"
+
+[entries."会員登録"]
+reading = "カイイントウロク"
+
+[entries."新規会員"]
+reading = "シンキカイイン"
+
+[entries."新規登録"]
+reading = "シンキトウロク"
+
+[entries."新規開店"]
+reading = "シンキカイテン"
+
+[entries."新店"]
+reading = "シンテン"
+
+[entries."本店"]
+reading = "ホンテン"
+
+[entries."支店"]
+reading = "シテン"
+
+[entries."支店長"]
+reading = "シテンチョウ"
+
+[entries."出張所"]
+reading = "シュッチョウショ"
+
+[entries."出張中"]
+reading = "シュッチョウチュウ"
+
+[entries."出張先"]
+reading = "シュッチョウサキ"
+
+[entries."出張費"]
+reading = "シュッチョウヒ"
+
+[entries."出張日"]
+reading = "シュッチョウビ"
+
+[entries."出張手当"]
+reading = "シュッチョウテアテ"
+
+[entries."日当"]
+reading = "ニットウ"
+
+[entries."宿泊費"]
+reading = "シュクハクヒ"
+
+[entries."宿泊所"]
+reading = "シュクハクジョ"
+
+[entries."宿泊先"]
+reading = "シュクハクサキ"
+
+[entries."宿泊施設"]
+reading = "シュクハクシセツ"
+
+[entries."宿泊予約"]
+reading = "シュクハクヨヤク"
+
+[entries."予約済"]
+reading = "ヨヤクズミ"
+
+[entries."予約済み"]
+reading = "ヨヤクズミ"
+
+[entries."予約番号"]
+reading = "ヨヤクバンゴウ"
+
+[entries."予約状況"]
+reading = "ヨヤクジョウキョウ"
+
+[entries."予約待"]
+reading = "ヨヤクマチ"
+
+[entries."予約困難"]
+reading = "ヨヤクコンナン"
+
+[entries."困難度"]
+reading = "コンナンド"
+
+[entries."解決策"]
+reading = "カイケツサク"
+
+[entries."未解決"]
+reading = "ミカイケツ"
+
+[entries."未解決事件"]
+reading = "ミカイケツジケン"
+
+[entries."事件性"]
+reading = "ジケンセイ"
+
+[entries."事件簿"]
+reading = "ジケンボ"
+
+[entries."日記帳"]
+reading = "ニッキチョウ"
+
+[entries."日付"]
+reading = "ヒヅケ"
+
+[entries."日付印"]
+reading = "ヒヅケイン"
+
+[entries."発行日"]
+reading = "ハッコウビ"
+
+[entries."発行元"]
+reading = "ハッコウモト"
+
+[entries."発行所"]
+reading = "ハッコウショ"
+
+[entries."発行部数"]
+reading = "ハッコウブスウ"
+
+[entries."部数"]
+reading = "ブスウ"
+
+[entries."枚数"]
+reading = "マイスウ"
+
+[entries."本数"]
+reading = "ホンスウ"
+
+[entries."台数"]
+reading = "ダイスウ"
+
+[entries."冊数"]
+reading = "サッスウ"
+
+[entries."回数券"]
+reading = "カイスウケン"
+
+[entries."切符売場"]
+reading = "キップウリバ"
+
+[entries."特急券"]
+reading = "トッキュウケン"
+
+[entries."急行券"]
+reading = "キュウコウケン"
+
+[entries."指定券"]
+reading = "シテイケン"
+
+[entries."自由席券"]
+reading = "ジユウセキケン"
+
+[entries."往復券"]
+reading = "オウフクケン"
+
+[entries."片道券"]
+reading = "カタミチケン"
+
+[entries."往復"]
+reading = "オウフク"
+
+[entries."復路"]
+reading = "フクロ"
+
+[entries."往路"]
+reading = "オウロ"
+
+[entries."路線変更"]
+reading = "ロセンヘンコウ"
+
+[entries."路線図表"]
+reading = "ロセンズヒョウ"
+
+[entries."表記揺"]
+reading = "ヒョウキユレ"
+
+[entries."揺れ"]
+reading = "ユレ"
+
+[entries."揺動"]
+reading = "ヨウドウ"
+
+[entries."震度計"]
+reading = "シンドケイ"
+
+[entries."余震"]
+reading = "ヨシン"
+
+[entries."本震"]
+reading = "ホンシン"
+
+[entries."予震"]
+reading = "ヨシン"
+
+[entries."津波警報"]
+reading = "ツナミケイホウ"
+
+[entries."津波注意報"]
+reading = "ツナミチュウイホウ"
+
+[entries."注意報発令"]
+reading = "チュウイホウハツレイ"
+
+[entries."警報解除"]
+reading = "ケイホウカイジョ"
+
+[entries."注意報解除"]
+reading = "チュウイホウカイジョ"
+
+[entries."避難所"]
+reading = "ヒナンジョ"
+
+[entries."避難場所"]
+reading = "ヒナンバショ"
+
+[entries."避難経路"]
+reading = "ヒナンケイロ"
+
+[entries."通学経路"]
+reading = "ツウガクケイロ"
+
+[entries."通勤経路"]
+reading = "ツウキンケイロ"
+
+[entries."近道"]
+reading = "チカミチ"
+
+[entries."遠回"]
+reading = "トオマワリ"
+
+[entries."回り道"]
+reading = "マワリミチ"
+
+[entries."裏道"]
+reading = "ウラミチ"
+
+[entries."脇道"]
+reading = "ワキミチ"
+
+[entries."枝道"]
+reading = "エダミチ"
+
+[entries."枝分"]
+reading = "エダワカレ"
+
+[entries."分岐"]
+reading = "ブンキ"
+
+[entries."分岐点"]
+reading = "ブンキテン"
+
+[entries."合流点"]
+reading = "ゴウリュウテン"
+
+[entries."分かれ目"]
+reading = "ワカレメ"
+
+[entries."変わり目"]
+reading = "カワリメ"
+
+[entries."切れ目"]
+reading = "キレメ"
+
+[entries."区切"]
+reading = "クギリ"
+
+[entries."区切り"]
+reading = "クギリ"
+
+[entries."区切り線"]
+reading = "クギリセン"
+
+[entries."仕切り"]
+reading = "シキリ"
+
+[entries."仕切り線"]
+reading = "シキリセン"
+
+[entries."仕切り役"]
+reading = "シキリヤク"
+
+[entries."段取"]
+reading = "ダンドリ"
+
+[entries."段取り"]
+reading = "ダンドリ"
+
+[entries."段落"]
+reading = "ダンラク"
+
+[entries."段組"]
+reading = "ダングミ"
+
+[entries."段差"]
+reading = "ダンサ"
+
+[entries."段ボール箱"]
+reading = "ダンボールバコ"
+
+[entries."箱詰"]
+reading = "ハコヅメ"
+
+[entries."箱入"]
+reading = "ハコイリ"
+
+[entries."詰め物"]
+reading = "ツメモノ"
+
+[entries."詰め込"]
+reading = "ツメコミ"
+
+[entries."詰め放題"]
+reading = "ツメホウダイ"
+
+[entries."食べ放題"]
+reading = "タベホウダイ"
+
+[entries."飲み放題"]
+reading = "ノミホウダイ"
+
+[entries."読み放題"]
+reading = "ヨミホウダイ"
+
+[entries."見放題"]
+reading = "ミホウダイ"
+
+[entries."聴き放題"]
+reading = "キキホウダイ"
+
+[entries."歌い放題"]
+reading = "ウタイホウダイ"
+
+[entries."時間制"]
+reading = "ジカンセイ"
+
+[entries."時間給制"]
+reading = "ジカンキュウセイ"
+
+[entries."固定給制"]
+reading = "コテイキュウセイ"
+
+[entries."完全固定"]
+reading = "カンゼンコテイ"
+
+[entries."固定"]
+reading = "コテイ"
+
+[entries."固定費"]
+reading = "コテイヒ"
+
+[entries."変動費"]
+reading = "ヘンドウヒ"
+
+[entries."変動"]
+reading = "ヘンドウ"
+
+[entries."変動制"]
+reading = "ヘンドウセイ"
+
+[entries."為替変動"]
+reading = "カワセヘンドウ"
+
+[entries."為替相場"]
+reading = "カワセソウバ"
+
+[entries."相場"]
+reading = "ソウバ"
+
+[entries."相場師"]
+reading = "ソウバシ"
+
+[entries."投機"]
+reading = "トウキ"
+
+[entries."投機家"]
+reading = "トウキカ"
+
+[entries."投資先"]
+reading = "トウシサキ"
+
+[entries."投資額"]
+reading = "トウシガク"
+
+[entries."投資金"]
+reading = "トウシキン"
+
+[entries."信託会社"]
+reading = "シンタクガイシャ"
+
+[entries."銀行員"]
+reading = "ギンコウイン"
+
+[entries."銀行残高"]
+reading = "ギンコウザンダカ"
+
+[entries."残高照会"]
+reading = "ザンダカショウカイ"
+
+[entries."照会"]
+reading = "ショウカイ"
+
+[entries."照会先"]
+reading = "ショウカイサキ"
+
+[entries."照合"]
+reading = "ショウゴウ"
+
+[entries."照明"]
+reading = "ショウメイ"
+
+[entries."照明係"]
+reading = "ショウメイガカリ"
+
+[entries."舞台照明"]
+reading = "ブタイショウメイ"
+
+[entries."舞台監督"]
+reading = "ブタイカントク"
+
+[entries."監督業"]
+reading = "カントクギョウ"
+
+[entries."映画監督"]
+reading = "エイガカントク"
+
+[entries."映画館"]
+reading = "エイガカン"
+
+[entries."映画俳優"]
+reading = "エイガハイユウ"
+
+[entries."俳優"]
+reading = "ハイユウ"
+
+[entries."名優"]
+reading = "メイユウ"
+
+[entries."俳優業"]
+reading = "ハイユウギョウ"
+
+[entries."女優"]
+reading = "ジョユウ"
+
+[entries."名女優"]
+reading = "メイジョユウ"
+
+[entries."新人賞"]
+reading = "シンジンショウ"
+
+[entries."新人女優"]
+reading = "シンジンジョユウ"
+
+[entries."人気俳優"]
+reading = "ニンキハイユウ"
+
+[entries."人気投票"]
+reading = "ニンキトウヒョウ"
+
+[entries."人気度"]
+reading = "ニンキド"
+
+[entries."人気者"]
+reading = "ニンキモノ"
+
+[entries."人気度合"]
+reading = "ニンキドアイ"
+
+[entries."度合"]
+reading = "ドアイ"
+
+[entries."程度差"]
+reading = "テイドサ"
+
+[entries."程度問題"]
+reading = "テイドモンダイ"
+
+[entries."問題行動"]
+reading = "モンダイコウドウ"
+
+[entries."行動原理"]
+reading = "コウドウゲンリ"
+
+[entries."原理"]
+reading = "ゲンリ"
+
+[entries."原理主義"]
+reading = "ゲンリシュギ"
+
+[entries."主義者"]
+reading = "シュギシャ"
+
+[entries."共産主義者"]
+reading = "キョウサンシュギシャ"
+
+[entries."社会主義者"]
+reading = "シャカイシュギシャ"
+
+[entries."資本主義"]
+reading = "シホンシュギ"
+
+[entries."自由主義者"]
+reading = "ジユウシュギシャ"
+
+[entries."民主主義者"]
+reading = "ミンシュシュギシャ"
+
+[entries."新興"]
+reading = "シンコウ"
+
+[entries."宗教団体"]
+reading = "シュウキョウダンタイ"
+
+[entries."派閥争"]
+reading = "ハバツアラソイ"
+
+[entries."派閥抗争"]
+reading = "ハバツコウソウ"
+
+[entries."抗争"]
+reading = "コウソウ"
+
+[entries."抗争劇"]
+reading = "コウソウゲキ"
+
+[entries."内戦状態"]
+reading = "ナイセンジョウタイ"
+
+[entries."内紛"]
+reading = "ナイフン"
+
+[entries."紛争"]
+reading = "フンソウ"
+
+[entries."紛争地"]
+reading = "フンソウチ"
+
+[entries."紛争地域"]
+reading = "フンソウチイキ"
+
+[entries."紛争解決"]
+reading = "フンソウカイケツ"
+
+[entries."紛失"]
+reading = "フンシツ"
+
+[entries."紛失届"]
+reading = "フンシツトドケ"
+
+[entries."拾得物"]
+reading = "シュウトクブツ"
+
+[entries."拾得"]
+reading = "シュウトク"
+
+[entries."拾得物届"]
+reading = "シュウトクブツトドケ"
+
+[entries."警察届"]
+reading = "ケイサツトドケ"
+
+[entries."警察官"]
+reading = "ケイサツカン"
+
+[entries."婦警"]
+reading = "フケイ"
+
+[entries."派出所"]
+reading = "ハシュツジョ"
+
+[entries."派遣社員"]
+reading = "ハケンシャイン"
+
+[entries."派遣会社"]
+reading = "ハケンガイシャ"
+
+[entries."派遣業"]
+reading = "ハケンギョウ"
+
+[entries."社員食堂"]
+reading = "シャインショクドウ"
+
+[entries."社員割引"]
+reading = "シャインワリビキ"
+
+[entries."社員旅行"]
+reading = "シャインリョコウ"
+
+[entries."旅行会社"]
+reading = "リョコウガイシャ"
+
+[entries."旅行代理店"]
+reading = "リョコウダイリテン"
+
+[entries."ツアー"]
+reading = "ツアー"
+
+[entries."ツアー客"]
+reading = "ツアーキャク"
+
+[entries."観光客"]
+reading = "カンコウキャク"
+
+[entries."観光地"]
+reading = "カンコウチ"
+
+[entries."観光名所"]
+reading = "カンコウメイショ"
+
+[entries."観光バス"]
+reading = "カンコウバス"
+
+[entries."観光船"]
+reading = "カンコウセン"
+
+[entries."旅館業"]
+reading = "リョカンギョウ"
+
+[entries."ホテル業"]
+reading = "ホテルギョウ"
+
+[entries."ホテル"]
+reading = "ホテル"
+
+[entries."旅館経営"]
+reading = "リョカンケイエイ"
+
+[entries."経営学"]
+reading = "ケイエイガク"
+
+[entries."経営者団体"]
+reading = "ケイエイシャダンタイ"
+
+[entries."経営方針"]
+reading = "ケイエイホウシン"
+
+[entries."経営戦略"]
+reading = "ケイエイセンリャク"
+
+[entries."戦略的"]
+reading = "センリャクテキ"
+
+[entries."戦略会議"]
+reading = "センリャクカイギ"
+
+[entries."戦術的"]
+reading = "センジュツテキ"
+
+[entries."作戦会議"]
+reading = "サクセンカイギ"
+
+[entries."作戦本部"]
+reading = "サクセンホンブ"
+
+[entries."本部長"]
+reading = "ホンブチョウ"
+
+[entries."副本部長"]
+reading = "フクホンブチョウ"
+
+[entries."本部員"]
+reading = "ホンブイン"
+
+[entries."本部組織"]
+reading = "ホンブソシキ"
+
+[entries."組織図"]
+reading = "ソシキズ"
+
+[entries."組織構造"]
+reading = "ソシキコウゾウ"
+
+[entries."組織改編"]
+reading = "ソシキカイヘン"
+
+[entries."改編"]
+reading = "カイヘン"
+
+[entries."改革派"]
+reading = "カイカクハ"
+
+[entries."保守派"]
+reading = "ホシュハ"
+
+[entries."革新派"]
+reading = "カクシンハ"
+
+[entries."中道派"]
+reading = "チュウドウハ"
+
+[entries."中道"]
+reading = "チュウドウ"
+
+[entries."極左"]
+reading = "キョクサ"
+
+[entries."極右"]
+reading = "キョクウ"
+
+[entries."左派"]
+reading = "サハ"
+
+[entries."右派"]
+reading = "ウハ"
+
+[entries."中立国"]
+reading = "チュウリツコク"
+
+[entries."中立地帯"]
+reading = "チュウリツチタイ"
+
+[entries."地帯"]
+reading = "チタイ"
+
+[entries."危険地帯"]
+reading = "キケンチタイ"
+
+[entries."安全地帯"]
+reading = "アンゼンチタイ"
+
+[entries."安全保障"]
+reading = "アンゼンホショウ"
+
+[entries."保障"]
+reading = "ホショウ"
+
+[entries."社会保障"]
+reading = "シャカイホショウ"
+
+[entries."最低保障"]
+reading = "サイテイホショウ"
+
+[entries."最低限"]
+reading = "サイテイゲン"
+
+[entries."最低限度"]
+reading = "サイテイゲンド"
+
+[entries."最大限"]
+reading = "サイダイゲン"
+
+[entries."最大限度"]
+reading = "サイダイゲンド"
+
+[entries."最大限の"]
+reading = "サイダイゲンノ"
+
+[entries."最低保証"]
+reading = "サイテイホショウ"
+
+[entries."最低賃金"]
+reading = "サイテイチンギン"
+
+[entries."賃金交渉"]
+reading = "チンギンコウショウ"
+
+[entries."交渉力"]
+reading = "コウショウリョク"
+
+[entries."交渉相手"]
+reading = "コウショウアイテ"
+
+[entries."交渉決裂"]
+reading = "コウショウケツレツ"
+
+[entries."妥協"]
+reading = "ダキョウ"
+
+[entries."妥協点"]
+reading = "ダキョウテン"
+
+[entries."合意点"]
+reading = "ゴウイテン"
+
+[entries."合意"]
+reading = "ゴウイ"
+
+[entries."合意形成"]
+reading = "ゴウイケイセイ"
+
+[entries."形成過程"]
+reading = "ケイセイカテイ"
+
+[entries."過程表"]
+reading = "カテイヒョウ"
+
+[entries."工程表"]
+reading = "コウテイヒョウ"
+
+[entries."進捗"]
+reading = "シンチョク"
+
+[entries."進捗状況"]
+reading = "シンチョクジョウキョウ"
+
+[entries."進捗率"]
+reading = "シンチョクリツ"
+
+[entries."進捗管理"]
+reading = "シンチョクカンリ"
+
+[entries."管理職員"]
+reading = "カンリショクイン"
+
+[entries."管理職"]
+reading = "カンリショク"
+
+[entries."管理部"]
+reading = "カンリブ"
+
+[entries."管理者権限"]
+reading = "カンリシャケンゲン"
+
+[entries."管理者"]
+reading = "カンリシャ"
+
+[entries."管理規則"]
+reading = "カンリキソク"
+
+[entries."管理規約"]
+reading = "カンリキヤク"
+
+[entries."規約改定"]
+reading = "キヤクカイテイ"
+
+[entries."改定"]
+reading = "カイテイ"
+
+[entries."改訂"]
+reading = "カイテイ"
+
+[entries."改訂版"]
+reading = "カイテイバン"
+
+[entries."新版"]
+reading = "シンバン"
+
+[entries."旧版"]
+reading = "キュウバン"
+
+[entries."新刊"]
+reading = "シンカン"
+
+[entries."旧刊"]
+reading = "キュウカン"
+
+[entries."近刊"]
+reading = "キンカン"
+
+[entries."既刊"]
+reading = "キカン"
+
+[entries."未刊"]
+reading = "ミカン"
+
+[entries."全集"]
+reading = "ゼンシュウ"
+
+[entries."選集"]
+reading = "センシュウ"
+
+[entries."傑作"]
+reading = "ケッサク"
+
+[entries."傑作選"]
+reading = "ケッサクセン"
+
+[entries."名作選"]
+reading = "メイサクセン"
+
+[entries."代表作"]
+reading = "ダイヒョウサク"
+
+[entries."処女作"]
+reading = "ショジョサク"
+
+[entries."遺作"]
+reading = "イサク"
+
+[entries."旧作"]
+reading = "キュウサク"
+
+[entries."新作"]
+reading = "シンサク"
+
+[entries."労作"]
+reading = "ロウサク"
+
+[entries."快作"]
+reading = "カイサク"
+
+[entries."凡作"]
+reading = "ボンサク"
+
+[entries."駄作"]
+reading = "ダサク"
+
+[entries."失敗作"]
+reading = "シッパイサク"
+
+[entries."成功作"]
+reading = "セイコウサク"
+
+[entries."成功者"]
+reading = "セイコウシャ"
+
+[entries."失敗者"]
+reading = "シッパイシャ"
+
+[entries."失敗例"]
+reading = "シッパイレイ"
+
+[entries."成功例"]
+reading = "セイコウレイ"
+
+[entries."事例研究"]
+reading = "ジレイケンキュウ"
+
+[entries."症例報告"]
+reading = "ショウレイホウコク"
+
+[entries."症状報告"]
+reading = "ショウジョウホウコク"
+
+[entries."報告者"]
+reading = "ホウコクシャ"
+
+[entries."報告先"]
+reading = "ホウコクサキ"
+
+[entries."報告期限"]
+reading = "ホウコクキゲン"
+
+[entries."期限内"]
+reading = "キゲンナイ"
+
+[entries."期限外"]
+reading = "キゲンガイ"
+
+[entries."納期"]
+reading = "ノウキ"
+
+[entries."納期遵守"]
+reading = "ノウキジュンシュ"
+
+[entries."遵守義務"]
+reading = "ジュンシュギム"
+
+[entries."義務化"]
+reading = "ギムカ"
+
+[entries."義務教育"]
+reading = "ギムキョウイク"
+
+[entries."義務教育期間"]
+reading = "ギムキョウイクキカン"
+
+[entries."教育期間"]
+reading = "キョウイクキカン"
+
+[entries."教育機関"]
+reading = "キョウイクキカン"
+
+[entries."中央機関"]
+reading = "チュウオウキカン"
+
+[entries."公的機関"]
+reading = "コウテキキカン"
+
+[entries."私的機関"]
+reading = "シテキキカン"
+
+[entries."私立校"]
+reading = "シリツコウ"
+
+[entries."公立校"]
+reading = "コウリツコウ"
+
+[entries."国立校"]
+reading = "コクリツコウ"
+
+[entries."県立校"]
+reading = "ケンリツコウ"
+
+[entries."市立校"]
+reading = "シリツコウ"
+
+[entries."学校長"]
+reading = "ガッコウチョウ"
+
+[entries."校長"]
+reading = "コウチョウ"
+
+[entries."副校長"]
+reading = "フクコウチョウ"
+
+[entries."教頭"]
+reading = "キョウトウ"
+
+[entries."学年主任"]
+reading = "ガクネンシュニン"
+
+[entries."学級委員"]
+reading = "ガッキュウイイン"
+
+[entries."学級委員長"]
+reading = "ガッキュウイインチョウ"
+
+[entries."役員会"]
+reading = "ヤクインカイ"
+
+[entries."理事"]
+reading = "リジ"
+
+[entries."理事長"]
+reading = "リジチョウ"
+
+[entries."理事会"]
+reading = "リジカイ"
+
+[entries."評議員"]
+reading = "ヒョウギイン"
+
+[entries."評議員会"]
+reading = "ヒョウギインカイ"
+
+[entries."評議会"]
+reading = "ヒョウギカイ"
+
+[entries."監査役"]
+reading = "カンサヤク"
+
+[entries."取締役"]
+reading = "トリシマリヤク"
+
+[entries."取締役会"]
+reading = "トリシマリヤクカイ"
+
+[entries."代表取締役"]
+reading = "ダイヒョウトリシマリヤク"
+
+[entries."社外取締役"]
+reading = "シャガイトリシマリヤク"
+
+[entries."社内取締役"]
+reading = "シャナイトリシマリヤク"
+
+[entries."社内"]
+reading = "シャナイ"
+
+[entries."社外"]
+reading = "シャガイ"
+
+[entries."社内外"]
+reading = "シャナイガイ"
+
+[entries."社用車"]
+reading = "シャヨウシャ"
+
+[entries."社用"]
+reading = "シャヨウ"
+
+[entries."公用"]
+reading = "コウヨウ"
+
+[entries."私用"]
+reading = "シヨウ"
+
+[entries."共用"]
+reading = "キョウヨウ"
+
+[entries."専用"]
+reading = "センヨウ"
+
+[entries."専用車"]
+reading = "センヨウシャ"
+
+[entries."専用線"]
+reading = "センヨウセン"
+
+[entries."専用回線"]
+reading = "センヨウカイセン"
+
+[entries."回線速度"]
+reading = "カイセンソクド"
+
+[entries."通信速度"]
+reading = "ツウシンソクド"
+
+[entries."処理速度"]
+reading = "ショリソクド"
+
+[entries."速度差"]
+reading = "ソクドサ"
+
+[entries."時間差"]
+reading = "ジカンサ"
+
+[entries."温度差"]
+reading = "オンドサ"
+
+[entries."湿度差"]
+reading = "シツドサ"
+
+[entries."圧力差"]
+reading = "アツリョクサ"
+
+[entries."気圧差"]
+reading = "キアツサ"
+
+[entries."血糖値"]
+reading = "ケットウチ"
+
+[entries."血糖"]
+reading = "ケットウ"
+
+[entries."糖尿"]
+reading = "トウニョウ"
+
+[entries."低血圧"]
+reading = "テイケツアツ"
+
+[entries."高血糖"]
+reading = "コウケットウ"
+
+[entries."低血糖"]
+reading = "テイケットウ"
+
+[entries."血液検査"]
+reading = "ケツエキケンサ"
+
+[entries."尿検査"]
+reading = "ニョウケンサ"
+
+[entries."便検査"]
+reading = "ベンケンサ"
+
+[entries."便秘"]
+reading = "ベンピ"
+
+[entries."下痢"]
+reading = "ゲリ"
+
+[entries."胃痛"]
+reading = "イツウ"
+
+[entries."背痛"]
+reading = "セツウ"
+
+[entries."肩痛"]
+reading = "カタツウ"
+
+[entries."腰痛"]
+reading = "ヨウツウ"
+
+[entries."頭痛持"]
+reading = "ズツウモチ"
+
+[entries."痛み止"]
+reading = "イタミドメ"
+
+[entries."痛感"]
+reading = "ツウカン"
+
+[entries."痛烈"]
+reading = "ツウレツ"
+
+[entries."痛烈批判"]
+reading = "ツウレツヒハン"
+
+[entries."批准書"]
+reading = "ヒジュンショ"
+
+[entries."条約批准"]
+reading = "ジョウヤクヒジュン"
+
+[entries."条約締結"]
+reading = "ジョウヤクテイケツ"
+
+[entries."条文"]
+reading = "ジョウブン"
+
+[entries."条項別"]
+reading = "ジョウコウベツ"
+
+[entries."本文"]
+reading = "ホンブン"
+
+[entries."本則"]
+reading = "ホンソク"
+
+[entries."附則"]
+reading = "フソク"
+
+[entries."附属"]
+reading = "フゾク"
+
+[entries."付属"]
+reading = "フゾク"
+
+[entries."付属品"]
+reading = "フゾクヒン"
+
+[entries."別売品"]
+reading = "ベツバイヒン"
+
+[entries."別売り"]
+reading = "ベツウリ"
+
+[entries."販売中"]
+reading = "ハンバイチュウ"
+
+[entries."発売中"]
+reading = "ハツバイチュウ"
+
+[entries."発売前"]
+reading = "ハツバイマエ"
+
+[entries."発売後"]
+reading = "ハツバイゴ"
+
+[entries."発売記念"]
+reading = "ハツバイキネン"
+
+[entries."記念キャンペーン"]
+reading = "キネンキャンペーン"
+
+[entries."キャンペーン"]
+reading = "キャンペーン"
+
+[entries."特別キャンペーン"]
+reading = "トクベツキャンペーン"
+
+[entries."販売キャンペーン"]
+reading = "ハンバイキャンペーン"
+
+[entries."販売促進"]
+reading = "ハンバイソクシン"
+
+[entries."促進"]
+reading = "ソクシン"
+
+[entries."促進剤"]
+reading = "ソクシンザイ"
+
+[entries."抑制剤"]
+reading = "ヨクセイザイ"
+
+[entries."抑止"]
+reading = "ヨクシ"
+
+[entries."抑止力"]
+reading = "ヨクシリョク"
+
+[entries."抑止効果"]
+reading = "ヨクシコウカ"
+
+[entries."抑制効果"]
+reading = "ヨクセイコウカ"
+
+[entries."効果音"]
+reading = "コウカオン"
+
+[entries."効果測定"]
+reading = "コウカソクテイ"
+
+[entries."測定方法"]
+reading = "ソクテイホウホウ"
+
+[entries."測定機"]
+reading = "ソクテイキ"
+
+[entries."計測機"]
+reading = "ケイソクキ"
+
+[entries."計測器具"]
+reading = "ケイソクキグ"
+
+[entries."器具"]
+reading = "キグ"
+
+[entries."器具洗浄"]
+reading = "キグセンジョウ"
+
+[entries."洗浄"]
+reading = "センジョウ"
+
+[entries."洗浄剤"]
+reading = "センジョウザイ"
+
+[entries."消毒液"]
+reading = "ショウドクエキ"
+
+[entries."消毒剤"]
+reading = "ショウドクザイ"
+
+[entries."消毒薬"]
+reading = "ショウドクヤク"
+
+[entries."殺菌剤"]
+reading = "サッキンザイ"
+
+[entries."殺菌薬"]
+reading = "サッキンヤク"
+
+[entries."抗菌剤"]
+reading = "コウキンザイ"
+
+[entries."除菌"]
+reading = "ジョキン"
+
+[entries."除菌剤"]
+reading = "ジョキンザイ"
+
+[entries."除菌液"]
+reading = "ジョキンエキ"
+
+[entries."液体"]
+reading = "エキタイ"
+
+[entries."気体"]
+reading = "キタイ"
+
+[entries."固体"]
+reading = "コタイ"
+
+[entries."三態"]
+reading = "サンタイ"
+
+[entries."状態変化"]
+reading = "ジョウタイヘンカ"
+
+[entries."化学反応"]
+reading = "カガクハンノウ"
+
+[entries."反応炉"]
+reading = "ハンノウロ"
+
+[entries."原子炉"]
+reading = "ゲンシロ"
+
+[entries."原子力発電所"]
+reading = "ゲンシリョクハツデンショ"
+
+[entries."原発"]
+reading = "ゲンパツ"
+
+[entries."火力発電所"]
+reading = "カリョクハツデンショ"
+
+[entries."水力発電所"]
+reading = "スイリョクハツデンショ"
+
+[entries."風力発電所"]
+reading = "フウリョクハツデンショ"
+
+[entries."太陽光発電所"]
+reading = "タイヨウコウハツデンショ"
+
+[entries."太陽電池"]
+reading = "タイヨウデンチ"
+
+[entries."太陽光"]
+reading = "タイヨウコウ"
+
+[entries."日射"]
+reading = "ニッシャ"
+
+[entries."日射量"]
+reading = "ニッシャリョウ"
+
+[entries."日照"]
+reading = "ニッショウ"
+
+[entries."日照時間"]
+reading = "ニッショウジカン"
+
+[entries."干ばつ"]
+reading = "カンバツ"
+
+[entries."旱魃"]
+reading = "カンバツ"
+
+[entries."飢饉"]
+reading = "キキン"
+
+[entries."飢餓"]
+reading = "キガ"
+
+[entries."飢え"]
+reading = "ウエ"
+
+[entries."餓死"]
+reading = "ガシ"
+
+[entries."凍死"]
+reading = "トウシ"
+
+[entries."病死"]
+reading = "ビョウシ"
+
+[entries."事故死"]
+reading = "ジコシ"
+
+[entries."変死"]
+reading = "ヘンシ"
+
+[entries."急死"]
+reading = "キュウシ"
+
+[entries."即死"]
+reading = "ソクシ"
+
+[entries."脳死"]
+reading = "ノウシ"
+
+[entries."心臓死"]
+reading = "シンゾウシ"
+
+[entries."安楽死"]
+reading = "アンラクシ"
+
+[entries."尊厳死"]
+reading = "ソンゲンシ"
+
+[entries."人間の尊厳"]
+reading = "ニンゲンノソンゲン"
+
+[entries."基本的人権"]
+reading = "キホンテキジンケン"
+
+[entries."基本的"]
+reading = "キホンテキ"
+
+[entries."基本給"]
+reading = "キホンキュウ"
+
+[entries."基本料金"]
+reading = "キホンリョウキン"
+
+[entries."基本料"]
+reading = "キホンリョウ"
+
+[entries."基本姿勢"]
+reading = "キホンシセイ"
+
+[entries."姿勢"]
+reading = "シセイ"
+
+[entries."姿勢制御"]
+reading = "シセイセイギョ"
+
+[entries."制御室"]
+reading = "セイギョシツ"
+
+[entries."制御盤"]
+reading = "セイギョバン"
+
+[entries."盤面"]
+reading = "バンメン"
+
+[entries."円盤"]
+reading = "エンバン"
+
+[entries."やり投"]
+reading = "ヤリナゲ"
+
+[entries."矢印"]
+reading = "ヤジルシ"
+
+[entries."矢印付"]
+reading = "ヤジルシツキ"
+
+[entries."標識付"]
+reading = "ヒョウシキツキ"
+
+[entries."案内付"]
+reading = "アンナイツキ"
+
+[entries."解説付"]
+reading = "カイセツツキ"
+
+[entries."解説書"]
+reading = "カイセツショ"
+
+[entries."解説者"]
+reading = "カイセツシャ"
+
+[entries."実況"]
+reading = "ジッキョウ"
+
+[entries."実況中継"]
+reading = "ジッキョウチュウケイ"
+
+[entries."中継放送"]
+reading = "チュウケイホウソウ"
+
+[entries."放送局"]
+reading = "ホウソウキョク"
+
+[entries."放送大学"]
+reading = "ホウソウダイガク"
+
+[entries."放送日"]
+reading = "ホウソウビ"
+
+[entries."放送時間"]
+reading = "ホウソウジカン"
+
+[entries."放送料"]
+reading = "ホウソウリョウ"
+
+[entries."受信料"]
+reading = "ジュシンリョウ"
+
+[entries."受信機"]
+reading = "ジュシンキ"
+
+[entries."送信機"]
+reading = "ソウシンキ"
+
+[entries."通信機器"]
+reading = "ツウシンキキ"
+
+[entries."電気機器"]
+reading = "デンキキキ"
+
+[entries."家電製品"]
+reading = "カデンセイヒン"
+
+[entries."製品名"]
+reading = "セイヒンメイ"
+
+[entries."製品名称"]
+reading = "セイヒンメイショウ"
+
+[entries."名称変更"]
+reading = "メイショウヘンコウ"
+
+[entries."名前変更"]
+reading = "ナマエヘンコウ"
+
+[entries."変更通知"]
+reading = "ヘンコウツウチ"
+
+[entries."通知書"]
+reading = "ツウチショ"
+
+[entries."通知文"]
+reading = "ツウチブン"
+
+[entries."通知メール"]
+reading = "ツウチメール"
+
+[entries."メール"]
+reading = "メール"
+
+[entries."電子メール"]
+reading = "デンシメール"
+
+[entries."電子書籍"]
+reading = "デンシショセキ"
+
+[entries."書籍化"]
+reading = "ショセキカ"
+
+[entries."映像化"]
+reading = "エイゾウカ"
+
+[entries."映像作品"]
+reading = "エイゾウサクヒン"
+
+[entries."作品集"]
+reading = "サクヒンシュウ"
+
+[entries."作品名"]
+reading = "サクヒンメイ"
+
+[entries."作品紹介"]
+reading = "サクヒンショウカイ"
+
+[entries."紹介状"]
+reading = "ショウカイジョウ"
+
+[entries."紹介文"]
+reading = "ショウカイブン"
+
+[entries."紹介者"]
+reading = "ショウカイシャ"
+
+[entries."推薦"]
+reading = "スイセン"
+
+[entries."推薦状"]
+reading = "スイセンジョウ"
+
+[entries."推薦文"]
+reading = "スイセンブン"
+
+[entries."推薦者"]
+reading = "スイセンシャ"
+
+[entries."推薦書"]
+reading = "スイセンショ"
+
+[entries."推薦入試"]
+reading = "スイセンニュウシ"
+
+[entries."入試問題"]
+reading = "ニュウシモンダイ"
+
+[entries."入試対策"]
+reading = "ニュウシタイサク"
+
+[entries."受験生"]
+reading = "ジュケンセイ"
+
+[entries."受験者"]
+reading = "ジュケンシャ"
+
+[entries."受験対策"]
+reading = "ジュケンタイサク"
+
+[entries."受験生応援"]
+reading = "ジュケンセイオウエン"
+
+[entries."応援団"]
+reading = "オウエンダン"
+
+[entries."応援歌"]
+reading = "オウエンカ"
+
+[entries."応援団長"]
+reading = "オウエンダンチョウ"
+
+[entries."団長"]
+reading = "ダンチョウ"
+
+[entries."副団長"]
+reading = "フクダンチョウ"
+
+[entries."団員"]
+reading = "ダンイン"
+
+[entries."副団員"]
+reading = "フクダンイン"
+
+[entries."新団員"]
+reading = "シンダンイン"
+
+[entries."旧団員"]
+reading = "キュウダンイン"
+
+[entries."退団"]
+reading = "タイダン"
+
+[entries."入団"]
+reading = "ニュウダン"
+
+[entries."入団者"]
+reading = "ニュウダンシャ"
+
+[entries."退団者"]
+reading = "タイダンシャ"
+
+[entries."所属"]
+reading = "ショゾク"
+
+[entries."所属チーム"]
+reading = "ショゾクチーム"
+
+[entries."所属事務所"]
+reading = "ショゾクジムショ"
+
+[entries."事務所員"]
+reading = "ジムショイン"
+
+[entries."所員"]
+reading = "ショイン"
+
+[entries."研究所員"]
+reading = "ケンキュウジョイン"
+
+[entries."研修所員"]
+reading = "ケンシュウジョイン"
+
+[entries."研修所"]
+reading = "ケンシュウジョ"
+
+[entries."養成所員"]
+reading = "ヨウセイジョイン"
+
+[entries."保育所"]
+reading = "ホイクジョ"
+
+[entries."保育所員"]
+reading = "ホイクジョイン"
+
+[entries."保育士"]
+reading = "ホイクシ"
+
+[entries."保育者"]
+reading = "ホイクシャ"
+
+[entries."保育園児"]
+reading = "ホイクエンジ"
+
+[entries."幼稚園"]
+reading = "ヨウチエン"
+
+[entries."幼稚園児"]
+reading = "ヨウチエンジ"
+
+[entries."幼児教育"]
+reading = "ヨウジキョウイク"
+
+[entries."幼児"]
+reading = "ヨウジ"
+
+[entries."小児"]
+reading = "ショウニ"
+
+[entries."新生児"]
+reading = "シンセイジ"
+
+[entries."乳児"]
+reading = "ニュウジ"
+
+[entries."児童書"]
+reading = "ジドウショ"
+
+[entries."児童文学"]
+reading = "ジドウブンガク"
+
+[entries."児童相談"]
+reading = "ジドウソウダン"
+
+[entries."児童虐待"]
+reading = "ジドウギャクタイ"
+
+[entries."虐待"]
+reading = "ギャクタイ"
+
+[entries."虐待防止"]
+reading = "ギャクタイボウシ"
+
+[entries."防止策"]
+reading = "ボウシサク"
+
+[entries."防止対策"]
+reading = "ボウシタイサク"
+
+[entries."対策案"]
+reading = "タイサクアン"
+
+[entries."案内図"]
+reading = "アンナイズ"
+
+[entries."地図帳付"]
+reading = "チズチョウツキ"
+
+[entries."路線図付"]
+reading = "ロセンズツキ"
+
+[entries."注釈付"]
+reading = "チュウシャクツキ"
+
+[entries."脚注"]
+reading = "キャクチュウ"
+
+[entries."脚注書"]
+reading = "キャクチュウショ"
+
+[entries."本注"]
+reading = "ホンチュウ"
+
+[entries."脚部"]
+reading = "キャクブ"
+
+[entries."脚力"]
+reading = "キャクリョク"
+
+[entries."脚立"]
+reading = "キャタツ"
+
+[entries."脚色"]
+reading = "キャクショク"
+
+[entries."脚本家"]
+reading = "キャクホンカ"
+
+[entries."脚本"]
+reading = "キャクホン"
+
+[entries."原作者"]
+reading = "ゲンサクシャ"
+
+[entries."原作"]
+reading = "ゲンサク"
+
+[entries."原案"]
+reading = "ゲンアン"
+
+[entries."原画"]
+reading = "ゲンガ"
+
+[entries."原寸"]
+reading = "ゲンスン"
+
+[entries."原寸大"]
+reading = "ゲンスンダイ"
+
+[entries."等身大"]
+reading = "トウシンダイ"
+
+[entries."全身像"]
+reading = "ゼンシンゾウ"
+
+[entries."半身像"]
+reading = "ハンシンゾウ"
+
+[entries."胸像"]
+reading = "キョウゾウ"
+
+[entries."銅像"]
+reading = "ドウゾウ"
+
+[entries."石像"]
+reading = "セキゾウ"
+
+[entries."木像"]
+reading = "モクゾウ"
+
+[entries."神像"]
+reading = "シンゾウ"
+
+[entries."彫像"]
+reading = "チョウゾウ"
+
+[entries."群像"]
+reading = "グンゾウ"
+
+[entries."群像劇"]
+reading = "グンゾウゲキ"
+
+[entries."舞台劇"]
+reading = "ブタイゲキ"
+
+[entries."舞台俳優"]
+reading = "ブタイハイユウ"
+
+[entries."舞台美術"]
+reading = "ブタイビジュツ"
+
+[entries."美術部"]
+reading = "ビジュツブ"
+
+[entries."美術館長"]
+reading = "ビジュツカンチョウ"
+
+[entries."館長"]
+reading = "カンチョウ"
+
+[entries."副館長"]
+reading = "フクカンチョウ"
+
+[entries."館員"]
+reading = "カンイン"
+
+[entries."館内"]
+reading = "カンナイ"
+
+[entries."館外"]
+reading = "カンガイ"
+
+[entries."館内放送"]
+reading = "カンナイホウソウ"
+
+[entries."館内案内"]
+reading = "カンナイアンナイ"
+
+[entries."案内係"]
+reading = "アンナイガカリ"
+
+[entries."受付業務"]
+reading = "ウケツケギョウム"
+
+[entries."業務時間"]
+reading = "ギョウムジカン"
+
+[entries."業務日"]
+reading = "ギョウムビ"
+
+[entries."業務終了"]
+reading = "ギョウムシュウリョウ"
+
+[entries."業務開始"]
+reading = "ギョウムカイシ"
+
+[entries."業務報告"]
+reading = "ギョウムホウコク"
+
+[entries."業務日誌"]
+reading = "ギョウムニッシ"
+
+[entries."日誌"]
+reading = "ニッシ"
+
+[entries."週報"]
+reading = "シュウホウ"
+
+[entries."月報"]
+reading = "ゲッポウ"
+
+[entries."年報"]
+reading = "ネンポウ"
+
+[entries."日報送信"]
+reading = "ニッポウソウシン"
+
+[entries."日報受信"]
+reading = "ニッポウジュシン"
+
+[entries."日報作成"]
+reading = "ニッポウサクセイ"
+
+[entries."作成者"]
+reading = "サクセイシャ"
+
+[entries."作成日"]
+reading = "サクセイビ"
+
+[entries."作成日時"]
+reading = "サクセイニチジ"
+
+[entries."日時"]
+reading = "ニチジ"
+
+[entries."発車時刻"]
+reading = "ハッシャジコク"
+
+[entries."到着時刻"]
+reading = "トウチャクジコク"
+
+[entries."発時"]
+reading = "ハツジ"
+
+[entries."着時"]
+reading = "チャクジ"
+
+[entries."発信時"]
+reading = "ハッシンジ"
+
+[entries."受信時"]
+reading = "ジュシンジ"
+
+[entries."到着駅"]
+reading = "トウチャクエキ"
+
+[entries."出発駅"]
+reading = "シュッパツエキ"
+
+[entries."始発列車"]
+reading = "シハツレッシャ"
+
+[entries."終発"]
+reading = "シュウハツ"
+
+[entries."快速列車"]
+reading = "カイソクレッシャ"
+
+[entries."新幹線駅"]
+reading = "シンカンセンエキ"
+
+[entries."駅名"]
+reading = "エキメイ"
+
+[entries."駅内"]
+reading = "エキナイ"
+
+[entries."ホーム"]
+reading = "ホーム"
+
+[entries."プラットホーム"]
+reading = "プラットホーム"
+
+[entries."発着所"]
+reading = "ハッチャクジョ"
+
+[entries."バス停"]
+reading = "バステイ"
+
+[entries."バス停留所"]
+reading = "バステイリュウジョ"
+
+[entries."停留所"]
+reading = "テイリュウジョ"
+
+[entries."タクシー乗"]
+reading = "タクシーノリ"
+
+[entries."タクシー乗場"]
+reading = "タクシーノリバ"
+
+[entries."乗場"]
+reading = "ノリバ"
+
+[entries."乗車口"]
+reading = "ジョウシャグチ"
+
+[entries."降車口"]
+reading = "コウシャグチ"
+
+[entries."非常口"]
+reading = "ヒジョウグチ"
+
+[entries."非常階段"]
+reading = "ヒジョウカイダン"
+
+[entries."非常用"]
+reading = "ヒジョウヨウ"
+
+[entries."非常用品"]
+reading = "ヒジョウヨウヒン"
+
+[entries."非常食"]
+reading = "ヒジョウショク"
+
+[entries."非常持出袋"]
+reading = "ヒジョウモチダシブクロ"
+
+[entries."持出袋"]
+reading = "モチダシブクロ"
+
+[entries."防災袋"]
+reading = "ボウサイブクロ"
+
+[entries."防災"]
+reading = "ボウサイ"
+
+[entries."防災用品"]
+reading = "ボウサイヨウヒン"
+
+[entries."防災訓練"]
+reading = "ボウサイクンレン"
+
+[entries."訓練生"]
+reading = "クンレンセイ"
+
+[entries."新人訓練"]
+reading = "シンジンクンレン"
+
+[entries."業務訓練"]
+reading = "ギョウムクンレン"
+
+[entries."研修内容"]
+reading = "ケンシュウナイヨウ"
+
+[entries."研修先"]
+reading = "ケンシュウサキ"
+
+[entries."インターン"]
+reading = "インターン"
+
+[entries."インターンシップ"]
+reading = "インターンシップ"
+
+[entries."就職"]
+reading = "シュウショク"
+
+[entries."就活"]
+reading = "シュウカツ"
+
+[entries."就活生"]
+reading = "シュウカツセイ"
+
+[entries."新入社員"]
+reading = "シンニュウシャイン"
+
+[entries."半端"]
+reading = "ハンパ"
+
+[entries."半端者"]
+reading = "ハンパモノ"
+
+[entries."中途半端者"]
+reading = "チュウトハンパモノ"
+
+[entries."完璧主義"]
+reading = "カンペキシュギ"
+
+[entries."完璧主義者"]
+reading = "カンペキシュギシャ"
+
+[entries."理想主義"]
+reading = "リソウシュギ"
+
+[entries."理想主義者"]
+reading = "リソウシュギシャ"
+
+[entries."現実主義"]
+reading = "ゲンジツシュギ"
+
+[entries."現実主義者"]
+reading = "ゲンジツシュギシャ"
+
+[entries."保守主義"]
+reading = "ホシュシュギ"
+
+[entries."保守主義者"]
+reading = "ホシュシュギシャ"
+
+[entries."革新主義"]
+reading = "カクシンシュギ"
+
+[entries."革新主義者"]
+reading = "カクシンシュギシャ"
+
+[entries."新主義"]
+reading = "シンシュギ"
+
+[entries."旧主義"]
+reading = "キュウシュギ"
+
+[entries."旧体制"]
+reading = "キュウタイセイ"
+
+[entries."新体制"]
+reading = "シンタイセイ"
+
+[entries."体制下"]
+reading = "タイセイカ"
+
+[entries."体制内"]
+reading = "タイセイナイ"
+
+[entries."体制外"]
+reading = "タイセイガイ"
+
+[entries."体制側"]
+reading = "タイセイガワ"
+
+[entries."反体制"]
+reading = "ハンタイセイ"
+
+[entries."反体制派"]
+reading = "ハンタイセイハ"
+
+[entries."反体制運動"]
+reading = "ハンタイセイウンドウ"
+
+[entries."運動会"]
+reading = "ウンドウカイ"
+
+[entries."運動部"]
+reading = "ウンドウブ"
+
+[entries."神経戦"]
+reading = "シンケイセン"
+
+[entries."神経痛"]
+reading = "シンケイツウ"
+
+[entries."頭痛激"]
+reading = "ズツウゲキ"
+
+[entries."偏頭痛"]
+reading = "ヘンズツウ"
+
+[entries."片頭痛"]
+reading = "ヘンズツウ"
+
+[entries."歯痛"]
+reading = "シツウ"
+
+[entries."歯痛止"]
+reading = "シツウドメ"
+
+[entries."歯医者"]
+reading = "ハイシャ"
+
+[entries."歯科医"]
+reading = "シカイ"
+
+[entries."歯医者通"]
+reading = "ハイシャガヨイ"
+
+[entries."通行人"]
+reading = "ツウコウニン"
+
+[entries."通行料"]
+reading = "ツウコウリョウ"
+
+[entries."通行止"]
+reading = "ツウコウドメ"
+
+[entries."通行禁止"]
+reading = "ツウコウキンシ"
+
+[entries."歩行者"]
+reading = "ホコウシャ"
+
+[entries."歩行者天国"]
+reading = "ホコウシャテンゴク"
+
+[entries."天国"]
+reading = "テンゴク"
+
+[entries."地獄"]
+reading = "ジゴク"
+
+[entries."極楽浄土"]
+reading = "ゴクラクジョウド"
+
+[entries."天台宗"]
+reading = "テンダイシュウ"
+
+[entries."真宗"]
+reading = "シンシュウ"
+
+[entries."仏教"]
+reading = "ブッキョウ"
+
+[entries."仏教徒"]
+reading = "ブッキョウト"
+
+[entries."仏教界"]
+reading = "ブッキョウカイ"
+
+[entries."キリスト教"]
+reading = "キリストキョウ"
+
+[entries."イスラム教"]
+reading = "イスラムキョウ"
+
+[entries."ヒンドゥー教"]
+reading = "ヒンドゥーキョウ"
+
+[entries."ユダヤ教"]
+reading = "ユダヤキョウ"
+
+[entries."道教"]
+reading = "ドウキョウ"
+
+[entries."儒教"]
+reading = "ジュキョウ"
+
+[entries."教団"]
+reading = "キョウダン"
+
+[entries."神殿"]
+reading = "シンデン"
+
+[entries."寺院"]
+reading = "ジイン"
+
+[entries."寺社"]
+reading = "ジシャ"
+
+[entries."神社仏閣"]
+reading = "ジンジャブッカク"
+
+[entries."仏閣"]
+reading = "ブッカク"
+
+[entries."尼僧"]
+reading = "ニソウ"
+
+[entries."祭壇"]
+reading = "サイダン"
+
+[entries."祭司"]
+reading = "サイシ"
+
+[entries."法王"]
+reading = "ホウオウ"
+
+[entries."宗主国"]
+reading = "シュウシュコク"
+
+[entries."属国"]
+reading = "ゾッコク"
+
+[entries."植民地"]
+reading = "ショクミンチ"
+
+[entries."植民"]
+reading = "ショクミン"
+
+[entries."植民地時代"]
+reading = "ショクミンチジダイ"
+
+[entries."時代背景"]
+reading = "ジダイハイケイ"
+
+[entries."背景色"]
+reading = "ハイケイショク"
+
+[entries."前景"]
+reading = "ゼンケイ"
+
+[entries."近景"]
+reading = "キンケイ"
+
+[entries."遠景"]
+reading = "エンケイ"
+
+[entries."全景"]
+reading = "ゼンケイ"
+
+[entries."俯瞰"]
+reading = "フカン"
+
+[entries."俯瞰図"]
+reading = "フカンズ"
+
+[entries."俯瞰撮影"]
+reading = "フカンサツエイ"
+
+[entries."撮影会"]
+reading = "サツエイカイ"
+
+[entries."撮影機"]
+reading = "サツエイキ"
+
+[entries."撮影者"]
+reading = "サツエイシャ"
+
+[entries."撮影地"]
+reading = "サツエイチ"
+
+[entries."撮影現場"]
+reading = "サツエイゲンバ"
+
+[entries."現場監督"]
+reading = "ゲンバカントク"
+
+[entries."現場作業"]
+reading = "ゲンバサギョウ"
+
+[entries."現場検証"]
+reading = "ゲンバケンショウ"
+
+[entries."検証作業"]
+reading = "ケンショウサギョウ"
+
+[entries."実証"]
+reading = "ジッショウ"
+
+[entries."実証実験"]
+reading = "ジッショウジッケン"
+
+[entries."実験室"]
+reading = "ジッケンシツ"
+
+[entries."実験結果"]
+reading = "ジッケンケッカ"
+
+[entries."実験報告"]
+reading = "ジッケンホウコク"
+
+[entries."実験対象"]
+reading = "ジッケンタイショウ"
+
+[entries."実験動物"]
+reading = "ジッケンドウブツ"
+
+[entries."実験用具"]
+reading = "ジッケンヨウグ"
+
+[entries."実験計画"]
+reading = "ジッケンケイカク"
+
+[entries."計画書"]
+reading = "ケイカクショ"
+
+[entries."計画案"]
+reading = "ケイカクアン"
+
+[entries."計画案件"]
+reading = "ケイカクアンケン"
+
+[entries."案件管理"]
+reading = "アンケンカンリ"
+
+[entries."案件名"]
+reading = "アンケンメイ"
+
+[entries."案件番号"]
+reading = "アンケンバンゴウ"
+
+[entries."案内番号"]
+reading = "アンナイバンゴウ"
+
+[entries."受付番号"]
+reading = "ウケツケバンゴウ"
+
+[entries."注文番号"]
+reading = "チュウモンバンゴウ"
+
+[entries."注文書"]
+reading = "チュウモンショ"
+
+[entries."注文票"]
+reading = "チュウモンヒョウ"
+
+[entries."注文確認"]
+reading = "チュウモンカクニン"
+
+[entries."注文受付"]
+reading = "チュウモンウケツケ"
+
+[entries."注文殺到"]
+reading = "チュウモンサットウ"
+
+[entries."殺到"]
+reading = "サットウ"
+
+[entries."殺人"]
+reading = "サツジン"
+
+[entries."殺人犯"]
+reading = "サツジンハン"
+
+[entries."殺人未遂"]
+reading = "サツジンミスイ"
+
+[entries."未遂"]
+reading = "ミスイ"
+
+[entries."既遂"]
+reading = "キスイ"
+
+[entries."完遂者"]
+reading = "カンスイシャ"
+
+[entries."遂行"]
+reading = "スイコウ"
+
+[entries."遂行責任"]
+reading = "スイコウセキニン"
+
+[entries."責任分担"]
+reading = "セキニンブンタン"
+
+[entries."分担"]
+reading = "ブンタン"
+
+[entries."分担金"]
+reading = "ブンタンキン"
+
+[entries."協同"]
+reading = "キョウドウ"
+
+[entries."協同組合"]
+reading = "キョウドウクミアイ"
+
+[entries."協同作業"]
+reading = "キョウドウサギョウ"
+
+[entries."共同作業"]
+reading = "キョウドウサギョウ"
+
+[entries."合同"]
+reading = "ゴウドウ"
+
+[entries."合同会議"]
+reading = "ゴウドウカイギ"
+
+[entries."合同訓練"]
+reading = "ゴウドウクンレン"
+
+[entries."合同演習"]
+reading = "ゴウドウエンシュウ"
+
+[entries."演習場"]
+reading = "エンシュウジョウ"
+
+[entries."訓練場"]
+reading = "クンレンジョウ"
+
+[entries."練習場"]
+reading = "レンシュウジョウ"
+
+[entries."練習試合"]
+reading = "レンシュウジアイ"
+
+[entries."試合中継"]
+reading = "ジアイチュウケイ"
+
+[entries."試合観戦"]
+reading = "ジアイカンセン"
+
+[entries."観戦記"]
+reading = "カンセンキ"
+
+[entries."観戦記録"]
+reading = "カンセンキロク"
+
+[entries."記録更新"]
+reading = "キロクコウシン"
+
+[entries."更新日"]
+reading = "コウシンビ"
+
+[entries."更新料"]
+reading = "コウシンリョウ"
+
+[entries."更新時"]
+reading = "コウシンジ"
+
+[entries."更新中"]
+reading = "コウシンチュウ"
+
+[entries."継続更新"]
+reading = "ケイゾクコウシン"
+
+[entries."継続契約"]
+reading = "ケイゾクケイヤク"
+
+[entries."契約期間"]
+reading = "ケイヤクキカン"
+
+[entries."契約更新"]
+reading = "ケイヤクコウシン"
+
+[entries."契約満了"]
+reading = "ケイヤクマンリョウ"
+
+[entries."満了"]
+reading = "マンリョウ"
+
+[entries."任期満了"]
+reading = "ニンキマンリョウ"
+
+[entries."任期切"]
+reading = "ニンキギレ"
+
+[entries."任務完了"]
+reading = "ニンムカンリョウ"
+
+[entries."任務遂行"]
+reading = "ニンムスイコウ"
+
+[entries."任務分担"]
+reading = "ニンムブンタン"
+
+[entries."分担作業"]
+reading = "ブンタンサギョウ"
+
+[entries."共同分担"]
+reading = "キョウドウブンタン"
+
+[entries."分担金額"]
+reading = "ブンタンキンガク"
+
+[entries."拠出"]
+reading = "キョシュツ"
+
+[entries."拠出金"]
+reading = "キョシュツキン"
+
+[entries."拠出者"]
+reading = "キョシュツシャ"
+
+[entries."拠点"]
+reading = "キョテン"
+
+[entries."拠点都市"]
+reading = "キョテントシ"
+
+[entries."都市部"]
+reading = "トシブ"
+
+[entries."都市計画"]
+reading = "トシケイカク"
+
+[entries."都市開発"]
+reading = "トシカイハツ"
+
+[entries."開発計画"]
+reading = "カイハツケイカク"
+
+[entries."開発者"]
+reading = "カイハツシャ"
+
+[entries."開発費"]
+reading = "カイハツヒ"
+
+[entries."開発期間"]
+reading = "カイハツキカン"
+
+[entries."開発工程"]
+reading = "カイハツコウテイ"
+
+[entries."工程管理"]
+reading = "コウテイカンリ"
+
+[entries."工程図"]
+reading = "コウテイズ"
+
+[entries."製造工程"]
+reading = "セイゾウコウテイ"
+
+[entries."生産工程"]
+reading = "セイサンコウテイ"
+
+[entries."生産量"]
+reading = "セイサンリョウ"
+
+[entries."生産者"]
+reading = "セイサンシャ"
+
+[entries."生産地"]
+reading = "セイサンチ"
+
+[entries."生産地別"]
+reading = "セイサンチベツ"
+
+[entries."産地直送"]
+reading = "サンチチョクソウ"
+
+[entries."直送"]
+reading = "チョクソウ"
+
+[entries."直送便"]
+reading = "チョクソウビン"
+
+[entries."配送便"]
+reading = "ハイソウビン"
+
+[entries."配達便"]
+reading = "ハイタツビン"
+
+[entries."陸送"]
+reading = "リクソウ"
+
+[entries."海運"]
+reading = "カイウン"
+
+[entries."空輸"]
+reading = "クウユ"
+
+[entries."輸送手段"]
+reading = "ユソウシュダン"
+
+[entries."輸送費"]
+reading = "ユソウヒ"
+
+[entries."輸送機関"]
+reading = "ユソウキカン"
+
+[entries."交通機関"]
+reading = "コウツウキカン"
+
+[entries."交通網"]
+reading = "コウツウモウ"
+
+[entries."交通事故"]
+reading = "コウツウジコ"
+
+[entries."交通違反"]
+reading = "コウツウイハン"
+
+[entries."違反点数"]
+reading = "イハンテンスウ"
+
+[entries."違反者"]
+reading = "イハンシャ"
+
+[entries."無違反"]
+reading = "ムイハン"
+
+[entries."違法駐車"]
+reading = "イホウチュウシャ"
+
+[entries."路上駐車"]
+reading = "ロジョウチュウシャ"
+
+[entries."駐輪場"]
+reading = "チュウリンジョウ"
+
+[entries."駐輪"]
+reading = "チュウリン"
+
+[entries."駐輪禁止"]
+reading = "チュウリンキンシ"
+
+[entries."駐車禁止"]
+reading = "チュウシャキンシ"
+
+[entries."歩行者専用"]
+reading = "ホコウシャセンヨウ"
+
+[entries."専用道路"]
+reading = "センヨウドウロ"
+
+[entries."専用車線"]
+reading = "センヨウシャセン"
+
+[entries."車線"]
+reading = "シャセン"
+
+[entries."追越車線"]
+reading = "オイコシシャセン"
+
+[entries."走行車線"]
+reading = "ソウコウシャセン"
+
+[entries."左車線"]
+reading = "ヒダリシャセン"
+
+[entries."右車線"]
+reading = "ミギシャセン"
+
+[entries."中央車線"]
+reading = "チュウオウシャセン"
+
+[entries."中央分離帯"]
+reading = "チュウオウブンリタイ"
+
+[entries."分離帯"]
+reading = "ブンリタイ"
+
+[entries."分離"]
+reading = "ブンリ"
+
+[entries."分離独立"]
+reading = "ブンリドクリツ"
+
+[entries."独立記念日"]
+reading = "ドクリツキネンビ"
+
+[entries."記念館"]
+reading = "キネンカン"
+
+[entries."郷土資料館"]
+reading = "キョウドシリョウカン"
+
+[entries."郷土"]
+reading = "キョウド"
+
+[entries."故郷"]
+reading = "コキョウ"
+
+[entries."出身地"]
+reading = "シュッシンチ"
+
+[entries."出身校"]
+reading = "シュッシンコウ"
+
+[entries."出身者"]
+reading = "シュッシンシャ"
+
+[entries."出身者会"]
+reading = "シュッシンシャカイ"
+
+[entries."同郷人"]
+reading = "ドウキョウジン"
+
+[entries."同窓"]
+reading = "ドウソウ"
+
+[entries."同窓会"]
+reading = "ドウソウカイ"
+
+[entries."同期生"]
+reading = "ドウキセイ"
+
+[entries."同級"]
+reading = "ドウキュウ"
+
+[entries."同級生"]
+reading = "ドウキュウセイ"
+
+[entries."親友"]
+reading = "シンユウ"
+
+[entries."親類"]
+reading = "シンルイ"
+
+[entries."近親"]
+reading = "キンシン"
+
+[entries."近親者"]
+reading = "キンシンシャ"
+
+[entries."親族関係"]
+reading = "シンゾクカンケイ"
+
+[entries."親子関係"]
+reading = "オヤコカンケイ"
+
+[entries."夫婦関係"]
+reading = "フウフカンケイ"
+
+[entries."兄弟関係"]
+reading = "キョウダイカンケイ"
+
+[entries."従兄弟"]
+reading = "イトコ"
+
+[entries."従姉妹"]
+reading = "イトコ"
+
+[entries."祖父"]
+reading = "ソフ"
+
+[entries."祖母"]
+reading = "ソボ"
+
+[entries."祖父母"]
+reading = "ソフボ"
+
+[entries."曾祖父"]
+reading = "ソウソフ"
+
+[entries."曾祖母"]
+reading = "ソウソボ"
+
+[entries."曽祖父"]
+reading = "ソウソフ"
+
+[entries."曽祖母"]
+reading = "ソウソボ"
+
+[entries."高祖父"]
+reading = "コウソフ"
+
+[entries."高祖母"]
+reading = "コウソボ"
+
+[entries."父方"]
+reading = "チチカタ"
+
+[entries."母方"]
+reading = "ハハカタ"
+
+[entries."父方祖父"]
+reading = "チチカタソフ"
+
+[entries."母方祖父"]
+reading = "ハハカタソフ"
+
+[entries."父親"]
+reading = "チチオヤ"
+
+[entries."母親"]
+reading = "ハハオヤ"
+
+[entries."両親"]
+reading = "リョウシン"
+
+[entries."ご両親"]
+reading = "ゴリョウシン"
+
+[entries."お父さん"]
+reading = "オトウサン"
+
+[entries."お母さん"]
+reading = "オカアサン"
+
+[entries."お兄さん"]
+reading = "オニイサン"
+
+[entries."お姉さん"]
+reading = "オネエサン"
+
+[entries."お祖父さん"]
+reading = "オジイサン"
+
+[entries."お祖母さん"]
+reading = "オバアサン"
+
+[entries."おじさん"]
+reading = "オジサン"
+
+[entries."おばさん"]
+reading = "オバサン"
+
+[entries."甥っ子"]
+reading = "オイッコ"
+
+[entries."姪っ子"]
+reading = "メイッコ"
+
+[entries."近所"]
+reading = "キンジョ"
+
+[entries."近所付合"]
+reading = "キンジョヅキアイ"
+
+[entries."近隣住民"]
+reading = "キンリンジュウミン"
+
+[entries."住民票"]
+reading = "ジュウミンヒョウ"
+
+[entries."住民台帳"]
+reading = "ジュウミンダイチョウ"
+
+[entries."台帳"]
+reading = "ダイチョウ"
+
+[entries."帳簿管理"]
+reading = "チョウボカンリ"
+
+[entries."家計簿"]
+reading = "カケイボ"
+
+[entries."小遣帳"]
+reading = "コヅカイチョウ"
+
+[entries."お小遣"]
+reading = "オコヅカイ"
+
+[entries."小遣"]
+reading = "コヅカイ"
+
+[entries."お小遣帳"]
+reading = "オコヅカイチョウ"
+
+[entries."給与明細"]
+reading = "キュウヨメイサイ"
+
+[entries."源泉"]
+reading = "ゲンセン"
+
+[entries."徴収"]
+reading = "チョウシュウ"
+
+[entries."徴収票"]
+reading = "チョウシュウヒョウ"
+
+[entries."源泉徴収票"]
+reading = "ゲンセンチョウシュウヒョウ"
+
+[entries."年末調整"]
+reading = "ネンマツチョウセイ"
+
+[entries."調整"]
+reading = "チョウセイ"
+
+[entries."調整役"]
+reading = "チョウセイヤク"
+
+[entries."調整中"]
+reading = "チョウセイチュウ"
+
+[entries."調整時間"]
+reading = "チョウセイジカン"
+
+[entries."時間調整"]
+reading = "ジカンチョウセイ"
+
+[entries."日程調整"]
+reading = "ニッテイチョウセイ"
+
+[entries."日程"]
+reading = "ニッテイ"
+
+[entries."日程変更"]
+reading = "ニッテイヘンコウ"
+
+[entries."予定変更"]
+reading = "ヨテイヘンコウ"
+
+[entries."予定通"]
+reading = "ヨテイドオリ"
+
+[entries."予定外"]
+reading = "ヨテイガイ"
+
+[entries."予定内"]
+reading = "ヨテイナイ"
+
+[entries."予定日"]
+reading = "ヨテイビ"
+
+[entries."予定時刻"]
+reading = "ヨテイジコク"
+
+[entries."予定時間"]
+reading = "ヨテイジカン"
+
+[entries."時間通"]
+reading = "ジカンドオリ"
+
+[entries."通常通"]
+reading = "ツウジョウドオリ"
+
+[entries."平常通"]
+reading = "ヘイジョウドオリ"
+
+[entries."平常運行"]
+reading = "ヘイジョウウンコウ"
+
+[entries."運行情報"]
+reading = "ウンコウジョウホウ"
+
+[entries."運行状況"]
+reading = "ウンコウジョウキョウ"
+
+[entries."運行表"]
+reading = "ウンコウヒョウ"
+
+[entries."運行管理"]
+reading = "ウンコウカンリ"
+
+[entries."運行ダイヤ"]
+reading = "ウンコウダイヤ"
+
+[entries."ダイヤ"]
+reading = "ダイヤ"
+
+[entries."ダイヤ改正"]
+reading = "ダイヤカイセイ"
+
+[entries."時刻改正"]
+reading = "ジコクカイセイ"
+
+[entries."時刻表改正"]
+reading = "ジコクヒョウカイセイ"
+
+[entries."新ダイヤ"]
+reading = "シンダイヤ"
+
+[entries."旧ダイヤ"]
+reading = "キュウダイヤ"
+
+[entries."臨時ダイヤ"]
+reading = "リンジダイヤ"
+
+[entries."臨時"]
+reading = "リンジ"
+
+[entries."臨時便"]
+reading = "リンジビン"
+
+[entries."臨時休業"]
+reading = "リンジキュウギョウ"
+
+[entries."定休日"]
+reading = "テイキュウビ"
+
+[entries."定休"]
+reading = "テイキュウ"
+
+[entries."無休"]
+reading = "ムキュウ"
+
+[entries."年中無休"]
+reading = "ネンジュウムキュウ"
+
+[entries."年中"]
+reading = "ネンジュウ"
+
+[entries."一年中"]
+reading = "イチネンジュウ"
+
+[entries."夕刻"]
+reading = "ユウコク"
+
+[entries."明方"]
+reading = "アケガタ"
+
+[entries."明け方"]
+reading = "アケガタ"
+
+[entries."昼間"]
+reading = "ヒルマ"
+
+[entries."真昼間"]
+reading = "マヒルマ"
+
+[entries."午前中"]
+reading = "ゴゼンチュウ"
+
+[entries."午後中"]
+reading = "ゴゴチュウ"
+
+[entries."夜分"]
+reading = "ヤブン"
+
+[entries."夜半過"]
+reading = "ヤハンスギ"
+
+[entries."深夜帯"]
+reading = "シンヤタイ"
+
+[entries."時間帯"]
+reading = "ジカンタイ"
+
+[entries."午後帯"]
+reading = "ゴゴタイ"
+
+[entries."午前帯"]
+reading = "ゴゼンタイ"
+
+[entries."夕方帯"]
+reading = "ユウガタタイ"
+
+[entries."朝方帯"]
+reading = "アサガタタイ"
+
+[entries."昼間帯"]
+reading = "ヒルマタイ"
+
+[entries."夜間帯"]
+reading = "ヤカンタイ"
+
+[entries."夜間"]
+reading = "ヤカン"
+
+[entries."昼夜逆転"]
+reading = "チュウヤギャクテン"
+
+[entries."逆転勝"]
+reading = "ギャクテンガチ"
+
+[entries."逆転勝利"]
+reading = "ギャクテンショウリ"
+
+[entries."逆転負"]
+reading = "ギャクテンマケ"
+
+[entries."逆転敗"]
+reading = "ギャクテンハイ"
+
+[entries."逆境"]
+reading = "ギャッキョウ"
+
+[entries."順境"]
+reading = "ジュンキョウ"
+
+[entries."窮地"]
+reading = "キュウチ"
+
+[entries."窮屈"]
+reading = "キュウクツ"
+
+[entries."極窮"]
+reading = "キョクキュウ"
+
+[entries."極貧"]
+reading = "ゴクヒン"
+
+[entries."富裕"]
+reading = "フユウ"
+
+[entries."富裕層"]
+reading = "フユウソウ"
+
+[entries."貧困"]
+reading = "ヒンコン"
+
+[entries."貧困層"]
+reading = "ヒンコンソウ"
+
+[entries."中流"]
+reading = "チュウリュウ"
+
+[entries."中流層"]
+reading = "チュウリュウソウ"
+
+[entries."中産"]
+reading = "チュウサン"
+
+[entries."中産階級"]
+reading = "チュウサンカイキュウ"
+
+[entries."上流階級"]
+reading = "ジョウリュウカイキュウ"
+
+[entries."下流階級"]
+reading = "カリュウカイキュウ"
+
+[entries."労働者階級"]
+reading = "ロウドウシャカイキュウ"
+
+[entries."資本家階級"]
+reading = "シホンカカイキュウ"
+
+[entries."社会階層"]
+reading = "シャカイカイソウ"
+
+[entries."階層"]
+reading = "カイソウ"
+
+[entries."階層別"]
+reading = "カイソウベツ"
+
+[entries."階層構造"]
+reading = "カイソウコウゾウ"
+
+[entries."構造改革"]
+reading = "コウゾウカイカク"
+
+[entries."構造変化"]
+reading = "コウゾウヘンカ"
+
+[entries."変化球"]
+reading = "ヘンカキュウ"
+
+[entries."変化形"]
+reading = "ヘンカケイ"
+
+[entries."変化率"]
+reading = "ヘンカリツ"
+
+[entries."変化量"]
+reading = "ヘンカリョウ"
+
+[entries."変化点"]
+reading = "ヘンカテン"
+
+[entries."変化球投手"]
+reading = "ヘンカキュウトウシュ"
+
+[entries."打者"]
+reading = "ダシャ"
+
+[entries."打数"]
+reading = "ダスウ"
+
+[entries."打撃力"]
+reading = "ダゲキリョク"
+
+[entries."打撃中"]
+reading = "ダゲキチュウ"
+
+[entries."攻撃中"]
+reading = "コウゲキチュウ"
+
+[entries."防御中"]
+reading = "ボウギョチュウ"
+
+[entries."守備中"]
+reading = "シュビチュウ"
+
+[entries."攻撃側"]
+reading = "コウゲキガワ"
+
+[entries."守備側"]
+reading = "シュビガワ"
+
+[entries."内野手"]
+reading = "ナイヤシュ"
+
+[entries."外野手"]
+reading = "ガイヤシュ"
+
+[entries."野手"]
+reading = "ヤシュ"
+
+[entries."投手陣"]
+reading = "トウシュジン"
+
+[entries."打者陣"]
+reading = "ダシャジン"
+
+[entries."本塁打数"]
+reading = "ホンルイダスウ"
+
+[entries."打点"]
+reading = "ダテン"
+
+[entries."失策"]
+reading = "シッサク"
+
+[entries."失策数"]
+reading = "シッサクスウ"
+
+[entries."盗塁数"]
+reading = "トウルイスウ"
+
+[entries."死球"]
+reading = "シキュウ"
+
+[entries."三振"]
+reading = "サンシン"
+
+[entries."三振数"]
+reading = "サンシンスウ"
+
+[entries."出塁数"]
+reading = "シュツルイスウ"
+
+[entries."失点"]
+reading = "シッテン"
+
+[entries."得点"]
+reading = "トクテン"
+
+[entries."失点数"]
+reading = "シッテンスウ"
+
+[entries."得点数"]
+reading = "トクテンスウ"
+
+[entries."試合数"]
+reading = "シアイスウ"
+
+[entries."試合内容"]
+reading = "シアイナイヨウ"
+
+[entries."試合結果"]
+reading = "シアイケッカ"
+
+[entries."試合経過"]
+reading = "シアイケイカ"
+
+[entries."経過時間"]
+reading = "ケイカジカン"
+
+[entries."経過観察"]
+reading = "ケイカカンサツ"
+
+[entries."観察日記"]
+reading = "カンサツニッキ"
+
+[entries."観察記録"]
+reading = "カンサツキロク"
+
+[entries."観察対象"]
+reading = "カンサツタイショウ"
+
+[entries."観察者"]
+reading = "カンサツシャ"
+
+[entries."観察員"]
+reading = "カンサツイン"
+
+[entries."監視員"]
+reading = "カンシイン"
+
+[entries."監視体制"]
+reading = "カンシタイセイ"
+
+[entries."体制強化"]
+reading = "タイセイキョウカ"
+
+[entries."体制再編"]
+reading = "タイセイサイヘン"
+
+[entries."再編"]
+reading = "サイヘン"
+
+[entries."再編成"]
+reading = "サイヘンセイ"
+
+[entries."再構築"]
+reading = "サイコウチク"
+
+[entries."再構成"]
+reading = "サイコウセイ"
+
+[entries."再生産"]
+reading = "サイセイサン"
+
+[entries."再使用"]
+reading = "サイシヨウ"
+
+[entries."再開発"]
+reading = "サイカイハツ"
+
+[entries."再投資"]
+reading = "サイトウシ"
+
+[entries."再就職"]
+reading = "サイシュウショク"
+
+[entries."再雇用"]
+reading = "サイコヨウ"
+
+[entries."再起用"]
+reading = "サイキヨウ"
+
+[entries."再婚"]
+reading = "サイコン"
+
+[entries."離婚率"]
+reading = "リコンリツ"
+
+[entries."結婚率"]
+reading = "ケッコンリツ"
+
+[entries."婚姻"]
+reading = "コンイン"
+
+[entries."婚約者"]
+reading = "コンヤクシャ"
+
+[entries."新婚旅行"]
+reading = "シンコンリョコウ"
+
+[entries."新婚"]
+reading = "シンコン"
+
+[entries."結婚記念日"]
+reading = "ケッコンキネンビ"
+
+[entries."お誕生日"]
+reading = "オタンジョウビ"
+
+[entries."誕生"]
+reading = "タンジョウ"
+
+[entries."誕生会"]
+reading = "タンジョウカイ"
+
+[entries."誕生月"]
+reading = "タンジョウヅキ"
+
+[entries."誕生年"]
+reading = "タンジョウネン"
+
+[entries."生年月日"]
+reading = "セイネンガッピ"
+
+[entries."生年"]
+reading = "セイネン"
+
+[entries."生月日"]
+reading = "セイゲッピ"
+
+[entries."生月"]
+reading = "セイゲツ"
+
+[entries."生日"]
+reading = "セイジツ"
+
+[entries."没年"]
+reading = "ボツネン"
+
+[entries."没年月日"]
+reading = "ボツネンガッピ"
+
+[entries."没年齢"]
+reading = "ボツネンレイ"
+
+[entries."享年"]
+reading = "キョウネン"
+
+[entries."没後"]
+reading = "ボツゴ"
+
+[entries."死後"]
+reading = "シゴ"
+
+[entries."生前"]
+reading = "セイゼン"
+
+[entries."生前贈与"]
+reading = "セイゼンゾウヨ"
+
+[entries."贈与"]
+reading = "ゾウヨ"
+
+[entries."相続"]
+reading = "ソウゾク"
+
+[entries."相続人"]
+reading = "ソウゾクニン"
+
+[entries."法定相続"]
+reading = "ホウテイソウゾク"
+
+[entries."遺産"]
+reading = "イサン"
+
+[entries."遺産相続"]
+reading = "イサンソウゾク"
+
+[entries."財産"]
+reading = "ザイサン"
+
+[entries."財産分与"]
+reading = "ザイサンブンヨ"
+
+[entries."分与"]
+reading = "ブンヨ"
+
+[entries."分与額"]
+reading = "ブンヨガク"
+
+[entries."養育費"]
+reading = "ヨウイクヒ"
+
+[entries."養育"]
+reading = "ヨウイク"
+
+[entries."育児"]
+reading = "イクジ"
+
+[entries."育児休暇"]
+reading = "イクジキュウカ"
+
+[entries."育休"]
+reading = "イクキュウ"
+
+[entries."産休"]
+reading = "サンキュウ"
+
+[entries."産前産後"]
+reading = "サンゼンサンゴ"
+
+[entries."産後"]
+reading = "サンゴ"
+
+[entries."産前"]
+reading = "サンゼン"
+
+[entries."出産"]
+reading = "シュッサン"
+
+[entries."出産費用"]
+reading = "シュッサンヒヨウ"
+
+[entries."出産祝"]
+reading = "シュッサンイワイ"
+
+[entries."内祝"]
+reading = "ウチイワイ"
+
+[entries."お祝"]
+reading = "オイワイ"
+
+[entries."祝い"]
+reading = "イワイ"
+
+[entries."お祝い"]
+reading = "オイワイ"
+
+[entries."御祝"]
+reading = "オイワイ"
+
+[entries."入学祝"]
+reading = "ニュウガクイワイ"
+
+[entries."卒業祝"]
+reading = "ソツギョウイワイ"
+
+[entries."就職祝"]
+reading = "シュウショクイワイ"
+
+[entries."結婚祝"]
+reading = "ケッコンイワイ"
+
+[entries."新築祝"]
+reading = "シンチクイワイ"
+
+[entries."快気祝"]
+reading = "カイキイワイ"
+
+[entries."快気"]
+reading = "カイキ"
+
+[entries."病気平癒"]
+reading = "ビョウキヘイユ"
+
+[entries."平癒"]
+reading = "ヘイユ"
+
+[entries."治癒"]
+reading = "チユ"
+
+[entries."全治"]
+reading = "ゼンチ"
+
+[entries."全治三ヶ月"]
+reading = "ゼンチサンカゲツ"
+
+[entries."全治期間"]
+reading = "ゼンチキカン"
+
+[entries."治療期間"]
+reading = "チリョウキカン"
+
+[entries."通院期間"]
+reading = "ツウインキカン"
+
+[entries."入院期間"]
+reading = "ニュウインキカン"
+
+[entries."入院費用"]
+reading = "ニュウインヒヨウ"
+
+[entries."退院費用"]
+reading = "タイインヒヨウ"
+
+[entries."医療費"]
+reading = "イリョウヒ"
+
+[entries."医療費控除"]
+reading = "イリョウヒコウジョ"
+
+[entries."所得控除"]
+reading = "ショトクコウジョ"
+
+[entries."基礎控除"]
+reading = "キソコウジョ"
+
+[entries."配偶者控除"]
+reading = "ハイグウシャコウジョ"
+
+[entries."扶養控除"]
+reading = "フヨウコウジョ"
+
+[entries."扶養家族"]
+reading = "フヨウカゾク"
+
+[entries."家族構成"]
+reading = "カゾクコウセイ"
+
+[entries."家族写真"]
+reading = "カゾクシャシン"
+
+[entries."家族旅行"]
+reading = "カゾクリョコウ"
+
+[entries."家族会議"]
+reading = "カゾクカイギ"
+
+[entries."家族関係"]
+reading = "カゾクカンケイ"
+
+[entries."家族会"]
+reading = "カゾクカイ"
+
+[entries."家庭内"]
+reading = "カテイナイ"
+
+[entries."家庭外"]
+reading = "カテイガイ"
+
+[entries."家庭環境"]
+reading = "カテイカンキョウ"
+
+[entries."家庭事情"]
+reading = "カテイジジョウ"
+
+[entries."事情聴取"]
+reading = "ジジョウチョウシュ"
+
+[entries."聴取"]
+reading = "チョウシュ"
+
+[entries."取調"]
+reading = "トリシラベ"
+
+[entries."取り調べ"]
+reading = "トリシラベ"
+
+[entries."事情調査"]
+reading = "ジジョウチョウサ"
+
+[entries."警察事情"]
+reading = "ケイサツジジョウ"
+
+[entries."裏事情"]
+reading = "ウラジジョウ"
+
+[entries."表事情"]
+reading = "オモテジジョウ"
+
+[entries."事情通"]
+reading = "ジジョウツウ"
+
+[entries."業界通"]
+reading = "ギョウカイツウ"
+
+[entries."内部通"]
+reading = "ナイブツウ"
+
+[entries."内通者"]
+reading = "ナイツウシャ"
+
+[entries."内通"]
+reading = "ナイツウ"
+
+[entries."密告"]
+reading = "ミッコク"
+
+[entries."密告者"]
+reading = "ミッコクシャ"
+
+[entries."密室"]
+reading = "ミッシツ"
+
+[entries."密会"]
+reading = "ミッカイ"
+
+[entries."密談"]
+reading = "ミツダン"
+
+[entries."密約"]
+reading = "ミツヤク"
+
+[entries."密漁"]
+reading = "ミツリョウ"
+
+[entries."密航"]
+reading = "ミッコウ"
+
+[entries."密入国"]
+reading = "ミツニュウコク"
+
+[entries."密輸"]
+reading = "ミツユ"
+
+[entries."密輸品"]
+reading = "ミツユヒン"
+
+[entries."輸入品"]
+reading = "ユニュウヒン"
+
+[entries."輸出品"]
+reading = "ユシュツヒン"
+
+[entries."国産品"]
+reading = "コクサンヒン"
+
+[entries."舶来品"]
+reading = "ハクライヒン"
+
+[entries."外来品"]
+reading = "ガイライヒン"
+
+[entries."国内品"]
+reading = "コクナイヒン"
+
+[entries."高級品"]
+reading = "コウキュウヒン"
+
+[entries."高級"]
+reading = "コウキュウ"
+
+[entries."高級感"]
+reading = "コウキュウカン"
+
+[entries."低級"]
+reading = "テイキュウ"
+
+[entries."普及品"]
+reading = "フキュウヒン"
+
+[entries."普及率"]
+reading = "フキュウリツ"
+
+[entries."普及版"]
+reading = "フキュウバン"
+
+[entries."普及型"]
+reading = "フキュウガタ"
+
+[entries."標準版"]
+reading = "ヒョウジュンバン"
+
+[entries."特別版"]
+reading = "トクベツバン"
+
+[entries."記念版"]
+reading = "キネンバン"
+
+[entries."復刻版"]
+reading = "フッコクバン"
+
+[entries."復刻盤"]
+reading = "フッコクバン"
+
+[entries."廉価版"]
+reading = "レンカバン"
+
+[entries."廉価"]
+reading = "レンカ"
+
+[entries."高価"]
+reading = "コウカ"
+
+[entries."安価"]
+reading = "アンカ"
+
+[entries."適価"]
+reading = "テキカ"
+
+[entries."売価"]
+reading = "バイカ"
+
+[entries."仕入価"]
+reading = "シイレカ"
+
+[entries."仕入先"]
+reading = "シイレサキ"
+
+[entries."仕入価格"]
+reading = "シイレカカク"
+
+[entries."販売員研修"]
+reading = "ハンバイインケンシュウ"
+
+[entries."研修施設"]
+reading = "ケンシュウシセツ"
+
+[entries."施設利用"]
+reading = "シセツリヨウ"
+
+[entries."施設長"]
+reading = "シセツチョウ"
+
+[entries."副施設長"]
+reading = "フクシセツチョウ"
+
+[entries."施設内"]
+reading = "シセツナイ"
+
+[entries."施設外"]
+reading = "シセツガイ"
+
+[entries."公共施設"]
+reading = "コウキョウシセツ"
+
+[entries."公的施設"]
+reading = "コウテキシセツ"
+
+[entries."私的施設"]
+reading = "シテキシセツ"
+
+[entries."共有施設"]
+reading = "キョウユウシセツ"
+
+[entries."共同施設"]
+reading = "キョウドウシセツ"
+
+[entries."共同利用"]
+reading = "キョウドウリヨウ"
+
+[entries."共同所有"]
+reading = "キョウドウショユウ"
+
+[entries."共有財産"]
+reading = "キョウユウザイサン"
+
+[entries."共有名義"]
+reading = "キョウユウメイギ"
+
+[entries."名義"]
+reading = "メイギ"
+
+[entries."名義人"]
+reading = "メイギニン"
+
+[entries."名義変更"]
+reading = "メイギヘンコウ"
+
+[entries."変更手続"]
+reading = "ヘンコウテツヅキ"
+
+[entries."手続"]
+reading = "テツヅキ"
+
+[entries."手続き"]
+reading = "テツヅキ"
+
+[entries."手順書"]
+reading = "テジュンショ"
+
+[entries."手引"]
+reading = "テビキ"
+
+[entries."手引書"]
+reading = "テビキショ"
+
+[entries."案内書"]
+reading = "アンナイショ"
+
+[entries."説明文書"]
+reading = "セツメイブンショ"
+
+[entries."文書管理"]
+reading = "ブンショカンリ"
+
+[entries."文書化"]
+reading = "ブンショカ"
+
+[entries."書類整理"]
+reading = "ショルイセイリ"
+
+[entries."書類提出"]
+reading = "ショルイテイシュツ"
+
+[entries."提出書類"]
+reading = "テイシュツショルイ"
+
+[entries."必要書類"]
+reading = "ヒツヨウショルイ"
+
+[entries."追加書類"]
+reading = "ツイカショルイ"
+
+[entries."追加"]
+reading = "ツイカ"
+
+[entries."追加料金"]
+reading = "ツイカリョウキン"
+
+[entries."追加注文"]
+reading = "ツイカチュウモン"
+
+[entries."追加発注"]
+reading = "ツイカハッチュウ"
+
+[entries."発注書"]
+reading = "ハッチュウショ"
+
+[entries."発注先"]
+reading = "ハッチュウサキ"
+
+[entries."発注者"]
+reading = "ハッチュウシャ"
+
+[entries."受注者"]
+reading = "ジュチュウシャ"
+
+[entries."受注先"]
+reading = "ジュチュウサキ"
+
+[entries."受注書"]
+reading = "ジュチュウショ"
+
+[entries."受注数"]
+reading = "ジュチュウスウ"
+
+[entries."受注額"]
+reading = "ジュチュウガク"
+
+[entries."受注高"]
+reading = "ジュチュウダカ"
+
+[entries."受注実績"]
+reading = "ジュチュウジッセキ"
+
+[entries."実績値"]
+reading = "ジッセキチ"
+
+[entries."業績悪化"]
+reading = "ギョウセキアッカ"
+
+[entries."業績改善"]
+reading = "ギョウセキカイゼン"
+
+[entries."改善策"]
+reading = "カイゼンサク"
+
+[entries."改善案"]
+reading = "カイゼンアン"
+
+[entries."改善活動"]
+reading = "カイゼンカツドウ"
+
+[entries."活動報告"]
+reading = "カツドウホウコク"
+
+[entries."活動内容"]
+reading = "カツドウナイヨウ"
+
+[entries."活動範囲"]
+reading = "カツドウハンイ"
+
+[entries."活動領域"]
+reading = "カツドウリョウイキ"
+
+[entries."専門分野"]
+reading = "センモンブンヤ"
+
+[entries."担当分野"]
+reading = "タントウブンヤ"
+
+[entries."研究分野"]
+reading = "ケンキュウブンヤ"
+
+[entries."活動分野"]
+reading = "カツドウブンヤ"
+
+[entries."学問分野"]
+reading = "ガクモンブンヤ"
+
+[entries."学問領域"]
+reading = "ガクモンリョウイキ"
+
+[entries."学際"]
+reading = "ガクサイ"
+
+[entries."学際的"]
+reading = "ガクサイテキ"
+
+[entries."学際領域"]
+reading = "ガクサイリョウイキ"
+
+[entries."学際研究"]
+reading = "ガクサイケンキュウ"
+
+[entries."専門書"]
+reading = "センモンショ"
+
+[entries."専門誌"]
+reading = "センモンシ"
+
+[entries."専門用語"]
+reading = "センモンヨウゴ"
+
+[entries."用語集"]
+reading = "ヨウゴシュウ"
+
+[entries."用語解説"]
+reading = "ヨウゴカイセツ"
+
+[entries."専門知識"]
+reading = "センモンチシキ"
+
+[entries."専門技術"]
+reading = "センモンギジュツ"
+
+[entries."専門資格"]
+reading = "センモンシカク"
+
+[entries."資格取得"]
+reading = "シカクシュトク"
+
+[entries."取得期間"]
+reading = "シュトクキカン"
+
+[entries."取得難易度"]
+reading = "シュトクナンイド"
+
+[entries."難易度"]
+reading = "ナンイド"
+
+[entries."易度"]
+reading = "イド"
+
+[entries."難度"]
+reading = "ナンド"
+
+[entries."高難度"]
+reading = "コウナンド"
+
+[entries."中難度"]
+reading = "チュウナンド"
+
+[entries."低難度"]
+reading = "テイナンド"
+
+[entries."難解"]
+reading = "ナンカイ"
+
+[entries."難読"]
+reading = "ナンドク"
+
+[entries."難読漢字"]
+reading = "ナンドクカンジ"
+
+[entries."読み方"]
+reading = "ヨミカタ"
+
+[entries."書き方"]
+reading = "カキカタ"
+
+[entries."話し方"]
+reading = "ハナシカタ"
+
+[entries."聞き方"]
+reading = "キキカタ"
+
+[entries."歩き方"]
+reading = "アルキカタ"
+
+[entries."食べ方"]
+reading = "タベカタ"
+
+[entries."飲み方"]
+reading = "ノミカタ"
+
+[entries."着方"]
+reading = "キカタ"
+
+[entries."脱ぎ方"]
+reading = "ヌギカタ"
+
+[entries."履き方"]
+reading = "ハキカタ"
+
+[entries."やり方"]
+reading = "ヤリカタ"
+
+[entries."作り方"]
+reading = "ツクリカタ"
+
+[entries."直し方"]
+reading = "ナオシカタ"
+
+[entries."使い方"]
+reading = "ツカイカタ"
+
+[entries."使用方法"]
+reading = "シヨウホウホウ"
+
+[entries."活用方法"]
+reading = "カツヨウホウホウ"
+
+[entries."応用方法"]
+reading = "オウヨウホウホウ"
+
+[entries."適用方法"]
+reading = "テキヨウホウホウ"
+
+[entries."適用条件"]
+reading = "テキヨウジョウケン"
+
+[entries."条件"]
+reading = "ジョウケン"
+
+[entries."条件付"]
+reading = "ジョウケンツキ"
+
+[entries."条件分岐"]
+reading = "ジョウケンブンキ"
+
+[entries."分岐条件"]
+reading = "ブンキジョウケン"
+
+[entries."合致"]
+reading = "ガッチ"
+
+[entries."一致"]
+reading = "イッチ"
+
+[entries."不一致"]
+reading = "フイッチ"
+
+[entries."完全一致"]
+reading = "カンゼンイッチ"
+
+[entries."部分一致"]
+reading = "ブブンイッチ"
+
+[entries."前方一致"]
+reading = "ゼンポウイッチ"
+
+[entries."後方一致"]
+reading = "コウホウイッチ"
+
+[entries."正規表現"]
+reading = "セイキヒョウゲン"
+
+[entries."表現方法"]
+reading = "ヒョウゲンホウホウ"
+
+[entries."表現力"]
+reading = "ヒョウゲンリョク"
+
+[entries."表現者"]
+reading = "ヒョウゲンシャ"
+
+[entries."表現の自由"]
+reading = "ヒョウゲンノジユウ"
+
+[entries."言論の自由"]
+reading = "ゲンロンノジユウ"
+
+[entries."報道の自由"]
+reading = "ホウドウノジユウ"
+
+[entries."報道機関"]
+reading = "ホウドウキカン"
+
+[entries."報道番組"]
+reading = "ホウドウバングミ"
+
+[entries."報道写真"]
+reading = "ホウドウシャシン"
+
+[entries."報道写真家"]
+reading = "ホウドウシャシンカ"
+
+[entries."写真家"]
+reading = "シャシンカ"
+
+[entries."カメラマン"]
+reading = "カメラマン"
+
+[entries."撮影機材"]
+reading = "サツエイキザイ"
+
+[entries."撮影機器"]
+reading = "サツエイキキ"
+
+[entries."撮影機材費"]
+reading = "サツエイキザイヒ"
+
+[entries."撮影費用"]
+reading = "サツエイヒヨウ"
+
+[entries."費用"]
+reading = "ヒヨウ"
+
+[entries."費用対効果"]
+reading = "ヒヨウタイコウカ"
+
+[entries."費用負担"]
+reading = "ヒヨウフタン"
+
+[entries."負担"]
+reading = "フタン"
+
+[entries."負担額"]
+reading = "フタンガク"
+
+[entries."負担金"]
+reading = "フタンキン"
+
+[entries."共同負担"]
+reading = "キョウドウフタン"
+
+[entries."全額負担"]
+reading = "ゼンガクフタン"
+
+[entries."一部負担"]
+reading = "イチブフタン"
+
+[entries."全額"]
+reading = "ゼンガク"
+
+[entries."半額"]
+reading = "ハンガク"
+
+[entries."全額返金"]
+reading = "ゼンガクヘンキン"
+
+[entries."返金額"]
+reading = "ヘンキンガク"
+
+[entries."返金保証"]
+reading = "ヘンキンホショウ"
+
+[entries."返金期限"]
+reading = "ヘンキンキゲン"
+
+[entries."返金不可"]
+reading = "ヘンキンフカ"
+
+[entries."返品不可"]
+reading = "ヘンピンフカ"
+
+[entries."交換不可"]
+reading = "コウカンフカ"
+
+[entries."不良品"]
+reading = "フリョウヒン"
+
+[entries."良品"]
+reading = "リョウヒン"
+
+[entries."優良企業"]
+reading = "ユウリョウキギョウ"
+
+[entries."優良物件"]
+reading = "ユウリョウブッケン"
+
+[entries."物件"]
+reading = "ブッケン"
+
+[entries."物件情報"]
+reading = "ブッケンジョウホウ"
+
+[entries."不動産物件"]
+reading = "フドウサンブッケン"
+
+[entries."不動産"]
+reading = "フドウサン"
+
+[entries."不動産業"]
+reading = "フドウサンギョウ"
+
+[entries."不動産業者"]
+reading = "フドウサンギョウシャ"
+
+[entries."動産"]
+reading = "ドウサン"
+
+[entries."財産権"]
+reading = "ザイサンケン"
+
+[entries."使用権"]
+reading = "シヨウケン"
+
+[entries."利用権"]
+reading = "リヨウケン"
+
+[entries."出版権"]
+reading = "シュッパンケン"
+
+[entries."意匠権"]
+reading = "イショウケン"
+
+[entries."意匠"]
+reading = "イショウ"
+
+[entries."商標権"]
+reading = "ショウヒョウケン"
+
+[entries."商標登録"]
+reading = "ショウヒョウトウロク"
+
+[entries."登録商標"]
+reading = "トウロクショウヒョウ"
+
+[entries."登録番号"]
+reading = "トウロクバンゴウ"
+
+[entries."会員番号"]
+reading = "カイインバンゴウ"
+
+[entries."社員番号"]
+reading = "シャインバンゴウ"
+
+[entries."学籍番号"]
+reading = "ガクセキバンゴウ"
+
+[entries."受験番号"]
+reading = "ジュケンバンゴウ"
+
+[entries."番号順"]
+reading = "バンゴウジュン"
+
+[entries."五十音順"]
+reading = "ゴジュウオンジュン"
+
+[entries."あいうえお順"]
+reading = "アイウエオジュン"
+
+[entries."名前順"]
+reading = "ナマエジュン"
+
+[entries."苗字順"]
+reading = "ミョウジジュン"
+
+[entries."姓名順"]
+reading = "セイメイジュン"
+
+[entries."氏名"]
+reading = "シメイ"
+
+[entries."姓名"]
+reading = "セイメイ"
+
+[entries."苗字"]
+reading = "ミョウジ"
+
+[entries."名字"]
+reading = "ミョウジ"
+
+[entries."本名"]
+reading = "ホンミョウ"
+
+[entries."旧姓"]
+reading = "キュウセイ"
+
+[entries."結婚前姓"]
+reading = "ケッコンマエセイ"
+
+[entries."旧姓使用"]
+reading = "キュウセイシヨウ"
+
+[entries."旧姓表記"]
+reading = "キュウセイヒョウキ"
+
+[entries."氏名表記"]
+reading = "シメイヒョウキ"
+
+[entries."姓名表記"]
+reading = "セイメイヒョウキ"
+
+[entries."本名表記"]
+reading = "ホンミョウヒョウキ"
+
+[entries."匿名表記"]
+reading = "トクメイヒョウキ"
+
+[entries."匿名希望"]
+reading = "トクメイキボウ"
+
+[entries."希望者"]
+reading = "キボウシャ"
+
+[entries."希望条件"]
+reading = "キボウジョウケン"
+
+[entries."希望価格"]
+reading = "キボウカカク"
+
+[entries."希望小売価格"]
+reading = "キボウコウリカカク"
+
+[entries."小売価格"]
+reading = "コウリカカク"
+
+[entries."小売業"]
+reading = "コウリギョウ"
+
+[entries."卸売業"]
+reading = "オロシウリギョウ"
+
+[entries."卸売価格"]
+reading = "オロシウリカカク"
+
+[entries."製造原価"]
+reading = "セイゾウゲンカ"
+
+[entries."原価率"]
+reading = "ゲンカリツ"
+
+[entries."売価率"]
+reading = "バイカリツ"
+
+[entries."利益率"]
+reading = "リエキリツ"
+
+[entries."利益額"]
+reading = "リエキガク"
+
+[entries."売上額"]
+reading = "ウリアゲガク"
+
+[entries."売上高"]
+reading = "ウリアゲダカ"
+
+[entries."売上高比"]
+reading = "ウリアゲダカヒ"
+
+[entries."比較分析"]
+reading = "ヒカクブンセキ"
+
+[entries."分析結果"]
+reading = "ブンセキケッカ"
+
+[entries."結果報告"]
+reading = "ケッカホウコク"
+
+[entries."報告会"]
+reading = "ホウコクカイ"
+
+[entries."報告書類"]
+reading = "ホウコクショルイ"
+
+[entries."書類提出期限"]
+reading = "ショルイテイシュツキゲン"
+
+[entries."期限超過"]
+reading = "キゲンチョウカ"
+
+[entries."超過"]
+reading = "チョウカ"
+
+[entries."超過分"]
+reading = "チョウカブン"
+
+[entries."超過勤務"]
+reading = "チョウカキンム"
+
+[entries."超過勤務手当"]
+reading = "チョウカキンムテアテ"
+
+[entries."時間外勤務"]
+reading = "ジカンガイキンム"
+
+[entries."深夜勤務"]
+reading = "シンヤキンム"
+
+[entries."夜間勤務"]
+reading = "ヤカンキンム"
+
+[entries."交代制"]
+reading = "コウタイセイ"
+
+[entries."シフト制"]
+reading = "シフトセイ"
+
+[entries."シフト"]
+reading = "シフト"
+
+[entries."シフト勤務"]
+reading = "シフトキンム"
+
+[entries."シフト交代"]
+reading = "シフトコウタイ"
+
+[entries."シフト変更"]
+reading = "シフトヘンコウ"
+
+[entries."変更届"]
+reading = "ヘンコウトドケ"
+
+[entries."届出"]
+reading = "トドケデ"
+
+[entries."申請書"]
+reading = "シンセイショ"
+
+[entries."申請者"]
+reading = "シンセイシャ"
+
+[entries."申請日"]
+reading = "シンセイビ"
+
+[entries."申請期間"]
+reading = "シンセイキカン"
+
+[entries."申請方法"]
+reading = "シンセイホウホウ"
+
+[entries."申請受付"]
+reading = "シンセイウケツケ"
+
+[entries."窓口対応"]
+reading = "マドグチタイオウ"
+
+[entries."業務委託"]
+reading = "ギョウムイタク"
+
+[entries."委託契約"]
+reading = "イタクケイヤク"
+
+[entries."委託業務"]
+reading = "イタクギョウム"
+
+[entries."業務範囲"]
+reading = "ギョウムハンイ"
+
+[entries."業務分担"]
+reading = "ギョウムブンタン"
+
+[entries."業務改善"]
+reading = "ギョウムカイゼン"
+
+[entries."業務改革"]
+reading = "ギョウムカイカク"
+
+[entries."改革案"]
+reading = "カイカクアン"
+
+[entries."革新"]
+reading = "カクシン"
+
+[entries."革新性"]
+reading = "カクシンセイ"
+
+[entries."保守性"]
+reading = "ホシュセイ"
+
+[entries."保守的"]
+reading = "ホシュテキ"
+
+[entries."革新的"]
+reading = "カクシンテキ"
+
+[entries."進歩的"]
+reading = "シンポテキ"
+
+[entries."進歩"]
+reading = "シンポ"
+
+[entries."進歩派"]
+reading = "シンポハ"
+
+[entries."発展性"]
+reading = "ハッテンセイ"
+
+[entries."発展途上国"]
+reading = "ハッテントジョウコク"
+
+[entries."途上国"]
+reading = "トジョウコク"
+
+[entries."先進国"]
+reading = "センシンコク"
+
+[entries."新興国"]
+reading = "シンコウコク"
+
+[entries."新興市場"]
+reading = "シンコウシジョウ"
+
+[entries."新興企業"]
+reading = "シンコウキギョウ"
+
+[entries."ベンチャー"]
+reading = "ベンチャー"
+
+[entries."ベンチャー企業"]
+reading = "ベンチャーキギョウ"
+
+[entries."スタートアップ"]
+reading = "スタートアップ"
+
+[entries."創業期"]
+reading = "ソウギョウキ"
+
+[entries."創業時"]
+reading = "ソウギョウジ"
+
+[entries."創業精神"]
+reading = "ソウギョウセイシン"
+
+[entries."精神論"]
+reading = "セイシンロン"
+
+[entries."精神力"]
+reading = "セイシンリョク"
+
+[entries."精神面"]
+reading = "セイシンメン"
+
+[entries."精神状態"]
+reading = "セイシンジョウタイ"
+
+[entries."精神疾患"]
+reading = "セイシンシッカン"
+
+[entries."疾病"]
+reading = "シッペイ"
+
+[entries."疾病予防"]
+reading = "シッペイヨボウ"
+
+[entries."予防医学"]
+reading = "ヨボウイガク"
+
+[entries."医療技術"]
+reading = "イリョウギジュツ"
+
+[entries."医療現場"]
+reading = "イリョウゲンバ"
+
+[entries."医療事故"]
+reading = "イリョウジコ"
+
+[entries."医療ミス"]
+reading = "イリョウミス"
+
+[entries."医療体制"]
+reading = "イリョウタイセイ"
+
+[entries."医療提供"]
+reading = "イリョウテイキョウ"
+
+[entries."提供体制"]
+reading = "テイキョウタイセイ"
+
+[entries."体制整備"]
+reading = "タイセイセイビ"
+
+[entries."整備不良"]
+reading = "セイビフリョウ"
+
+[entries."整備士"]
+reading = "セイビシ"
+
+[entries."整備工場"]
+reading = "セイビコウジョウ"
+
+[entries."工場長"]
+reading = "コウジョウチョウ"
+
+[entries."工場見学"]
+reading = "コウジョウケンガク"
+
+[entries."見学者"]
+reading = "ケンガクシャ"
+
+[entries."見学会"]
+reading = "ケンガクカイ"
+
+[entries."見学コース"]
+reading = "ケンガクコース"
+
+[entries."体験コース"]
+reading = "タイケンコース"
+
+[entries."体験談"]
+reading = "タイケンダン"
+
+[entries."体験記"]
+reading = "タイケンキ"
+
+[entries."体験者"]
+reading = "タイケンシャ"
+
+[entries."体験入学"]
+reading = "タイケンニュウガク"
+
+[entries."体験入社"]
+reading = "タイケンニュウシャ"
+
+[entries."インターン制度"]
+reading = "インターンセイド"
+
+[entries."制度設計者"]
+reading = "セイドセッケイシャ"
+
+[entries."設計思想"]
+reading = "セッケイシソウ"
+
+[entries."思想家"]
+reading = "シソウカ"
+
+[entries."思想史"]
+reading = "シソウシ"
+
+[entries."歴史"]
+reading = "レキシ"
+
+[entries."歴史的"]
+reading = "レキシテキ"
+
+[entries."歴史学"]
+reading = "レキシガク"
+
+[entries."歴史学者"]
+reading = "レキシガクシャ"
+
+[entries."古代史"]
+reading = "コダイシ"
+
+[entries."近代史"]
+reading = "キンダイシ"
+
+[entries."現代史"]
+reading = "ゲンダイシ"
+
+[entries."中世史"]
+reading = "チュウセイシ"
+
+[entries."近世史"]
+reading = "キンセイシ"
+
+[entries."世界史"]
+reading = "セカイシ"
+
+[entries."東洋史"]
+reading = "トウヨウシ"
+
+[entries."西洋史"]
+reading = "セイヨウシ"
+
+[entries."アジア史"]
+reading = "アジアシ"
+
+[entries."ヨーロッパ史"]
+reading = "ヨーロッパシ"
+
+[entries."アメリカ史"]
+reading = "アメリカシ"
+
+[entries."古代"]
+reading = "コダイ"
+
+[entries."中世"]
+reading = "チュウセイ"
+
+[entries."近世"]
+reading = "キンセイ"
+
+[entries."近代"]
+reading = "キンダイ"
+
+[entries."現代"]
+reading = "ゲンダイ"
+
+[entries."過去"]
+reading = "カコ"
+
+[entries."未来予測"]
+reading = "ミライヨソク"
+
+[entries."予測値"]
+reading = "ヨソクチ"
+
+[entries."予想値"]
+reading = "ヨソウチ"
+
+[entries."推測値"]
+reading = "スイソクチ"
+
+[entries."推論"]
+reading = "スイロン"
+
+[entries."論証"]
+reading = "ロンショウ"
+
+[entries."立証"]
+reading = "リッショウ"
+
+[entries."立証責任"]
+reading = "リッショウセキニン"
+
+[entries."証明責任"]
+reading = "ショウメイセキニン"
+
+[entries."立証義務"]
+reading = "リッショウギム"
+
+[entries."証明義務"]
+reading = "ショウメイギム"
+
+[entries."立証可能"]
+reading = "リッショウカノウ"
+
+[entries."証明可能"]
+reading = "ショウメイカノウ"
+
+[entries."反証可能"]
+reading = "ハンショウカノウ"
+
+[entries."反証不可能"]
+reading = "ハンショウフカノウ"
+
+[entries."科学的方法"]
+reading = "カガクテキホウホウ"
+
+[entries."科学的根拠"]
+reading = "カガクテキコンキョ"
+
+[entries."根拠"]
+reading = "コンキョ"
+
+[entries."根拠地"]
+reading = "コンキョチ"
+
+[entries."本拠地"]
+reading = "ホンキョチ"
+
+[entries."本拠"]
+reading = "ホンキョ"
+
+[entries."中心都市"]
+reading = "チュウシントシ"
+
+[entries."首都"]
+reading = "シュト"
+
+[entries."首都圏"]
+reading = "シュトケン"
+
+[entries."首都機能"]
+reading = "シュトキノウ"
+
+[entries."都市機能"]
+reading = "トシキノウ"
+
+[entries."機能性"]
+reading = "キノウセイ"
+
+[entries."機能美"]
+reading = "キノウビ"
+
+[entries."機能不全"]
+reading = "キノウフゼン"
+
+[entries."機能停止"]
+reading = "キノウテイシ"
+
+[entries."停止状態"]
+reading = "テイシジョウタイ"
+
+[entries."信号機故障"]
+reading = "シンゴウキコショウ"
+
+[entries."故障"]
+reading = "コショウ"
+
+[entries."故障中"]
+reading = "コショウチュウ"
+
+[entries."故障原因"]
+reading = "コショウゲンイン"
+
+[entries."故障診断"]
+reading = "コショウシンダン"
+
+[entries."診断書"]
+reading = "シンダンショ"
+
+[entries."診断結果"]
+reading = "シンダンケッカ"
+
+[entries."医師診断"]
+reading = "イシシンダン"
+
+[entries."医師免許"]
+reading = "イシメンキョ"
+
+[entries."医師資格"]
+reading = "イシシカク"
+
+[entries."資格認定"]
+reading = "シカクニンテイ"
+
+[entries."認定"]
+reading = "ニンテイ"
+
+[entries."認定証"]
+reading = "ニンテイショウ"
+
+[entries."認定基準"]
+reading = "ニンテイキジュン"
+
+[entries."認定機関"]
+reading = "ニンテイキカン"
+
+[entries."認定試験"]
+reading = "ニンテイシケン"
+
+[entries."認定講習"]
+reading = "ニンテイコウシュウ"
+
+[entries."講習会"]
+reading = "コウシュウカイ"
+
+[entries."講習料"]
+reading = "コウシュウリョウ"
+
+[entries."講習日"]
+reading = "コウシュウビ"
+
+[entries."講習内容"]
+reading = "コウシュウナイヨウ"
+
+[entries."受講料"]
+reading = "ジュコウリョウ"
+
+[entries."受講登録"]
+reading = "ジュコウトウロク"
+
+[entries."登録費"]
+reading = "トウロクヒ"
+
+[entries."入会金"]
+reading = "ニュウカイキン"
+
+[entries."退会届"]
+reading = "タイカイトドケ"
+
+[entries."退会金"]
+reading = "タイカイキン"
+
+[entries."入会手続"]
+reading = "ニュウカイテツヅキ"
+
+[entries."入会金返却"]
+reading = "ニュウカイキンヘンキャク"
+
+[entries."返却金"]
+reading = "ヘンキャクキン"
+
+[entries."返金処理"]
+reading = "ヘンキンショリ"
+
+[entries."処理時間"]
+reading = "ショリジカン"
+
+[entries."処理能力"]
+reading = "ショリノウリョク"
+
+[entries."処理量"]
+reading = "ショリリョウ"
+
+[entries."処理件数"]
+reading = "ショリケンスウ"
+
+[entries."案件数"]
+reading = "アンケンスウ"
+
+[entries."申請件数"]
+reading = "シンセイケンスウ"
+
+[entries."申込件数"]
+reading = "モウシコミケンスウ"
+
+[entries."申込数"]
+reading = "モウシコミスウ"
+
+[entries."申込"]
+reading = "モウシコミ"
+
+[entries."申込者"]
+reading = "モウシコミシャ"
+
+[entries."申込書"]
+reading = "モウシコミショ"
+
+[entries."申込書類"]
+reading = "モウシコミショルイ"
+
+[entries."書類記入"]
+reading = "ショルイキニュウ"
+
+[entries."記入方法"]
+reading = "キニュウホウホウ"
+
+[entries."記入例"]
+reading = "キニュウレイ"
+
+[entries."記名押印"]
+reading = "キメイオウイン"
+
+[entries."押印者"]
+reading = "オウインシャ"
+
+[entries."押印日"]
+reading = "オウインビ"
+
+[entries."署名日"]
+reading = "ショメイビ"
+
+[entries."署名者"]
+reading = "ショメイシャ"
+
+[entries."署名捺印"]
+reading = "ショメイナツイン"
+
+[entries."捺印"]
+reading = "ナツイン"
+
+[entries."捺印欄"]
+reading = "ナツインラン"
+
+[entries."捺印者"]
+reading = "ナツインシャ"
+
+[entries."本人確認"]
+reading = "ホンニンカクニン"
+
+[entries."御本人"]
+reading = "ゴホンニン"
+
+[entries."当人"]
+reading = "トウニン"
+
+[entries."当事者"]
+reading = "トウジシャ"
+
+[entries."当事者意識"]
+reading = "トウジシャイシキ"
+
+[entries."意識改革"]
+reading = "イシキカイカク"
+
+[entries."改革者"]
+reading = "カイカクシャ"
+
+[entries."改革派閥"]
+reading = "カイカクハバツ"
+
+[entries."派閥力学"]
+reading = "ハバツリキガク"
+
+[entries."力学的"]
+reading = "リキガクテキ"
+
+[entries."動力学的"]
+reading = "ドウリキガクテキ"
+
+[entries."熱力学的"]
+reading = "ネツリキガクテキ"
+
+[entries."量子的"]
+reading = "リョウシテキ"
+
+[entries."量子力学的"]
+reading = "リョウシリキガクテキ"
+
+[entries."電磁気的"]
+reading = "デンジキテキ"
+
+[entries."古典的"]
+reading = "コテンテキ"
+
+[entries."古典力学"]
+reading = "コテンリキガク"
+
+[entries."古典派"]
+reading = "コテンハ"
+
+[entries."浪漫派"]
+reading = "ロウマンハ"
+
+[entries."浪漫"]
+reading = "ロウマン"
+
+[entries."理想郷"]
+reading = "リソウキョウ"
+
+[entries."桃源郷"]
+reading = "トウゲンキョウ"
+
+[entries."理想形"]
+reading = "リソウケイ"
+
+[entries."理想像"]
+reading = "リソウゾウ"
+
+[entries."理想像実現"]
+reading = "リソウゾウジツゲン"
+
+[entries."実現可能"]
+reading = "ジツゲンカノウ"
+
+[entries."実現不可能"]
+reading = "ジツゲンフカノウ"
+
+[entries."実装方法"]
+reading = "ジッソウホウホウ"
+
+[entries."実装内容"]
+reading = "ジッソウナイヨウ"
+
+[entries."内容確認"]
+reading = "ナイヨウカクニン"
+
+[entries."内容変更"]
+reading = "ナイヨウヘンコウ"
+
+[entries."変更内容"]
+reading = "ヘンコウナイヨウ"
+
+[entries."変更履歴"]
+reading = "ヘンコウリレキ"
+
+[entries."履歴"]
+reading = "リレキ"
+
+[entries."履歴書"]
+reading = "リレキショ"
+
+[entries."履歴管理"]
+reading = "リレキカンリ"
+
+[entries."履修登録"]
+reading = "リシュウトウロク"
+
+[entries."登録手続"]
+reading = "トウロクテツヅキ"
+
+[entries."手続簡略化"]
+reading = "テツヅキカンリャクカ"
+
+[entries."簡略化"]
+reading = "カンリャクカ"
+
+[entries."簡略化版"]
+reading = "カンリャクカバン"
+
+[entries."簡素化"]
+reading = "カンソカ"
+
+[entries."複雑性"]
+reading = "フクザツセイ"
+
+[entries."単純系"]
+reading = "タンジュンケイ"
+
+[entries."単純性"]
+reading = "タンジュンセイ"
+
+[entries."単純化版"]
+reading = "タンジュンカバン"
+
+[entries."単純化作業"]
+reading = "タンジュンカサギョウ"
+
+[entries."作業効率"]
+reading = "サギョウコウリツ"
+
+[entries."作業時間短縮"]
+reading = "サギョウジカンタンシュク"
+
+[entries."効率化"]
+reading = "コウリツカ"
+
+[entries."効率性"]
+reading = "コウリツセイ"
+
+[entries."効率重視"]
+reading = "コウリツジュウシ"
+
+[entries."重視"]
+reading = "ジュウシ"
+
+[entries."軽視"]
+reading = "ケイシ"
+
+[entries."軽視傾向"]
+reading = "ケイシケイコウ"
+
+[entries."傾向分析"]
+reading = "ケイコウブンセキ"
+
+[entries."分析手法"]
+reading = "ブンセキシュホウ"
+
+[entries."手法論"]
+reading = "シュホウロン"
+
+[entries."方法論的"]
+reading = "ホウホウロンテキ"
+
+[entries."論理的構成"]
+reading = "ロンリテキコウセイ"
+
+[entries."論理構造"]
+reading = "ロンリコウゾウ"
+
+[entries."構造化"]
+reading = "コウゾウカ"
+
+[entries."構造的"]
+reading = "コウゾウテキ"
+
+[entries."体系化"]
+reading = "タイケイカ"
+
+[entries."体系的"]
+reading = "タイケイテキ"
+
+[entries."体系立"]
+reading = "タイケイダ"
+
+[entries."組織立"]
+reading = "ソシキダ"
+
+[entries."組織的"]
+reading = "ソシキテキ"
+
+[entries."非組織的"]
+reading = "ヒソシキテキ"
+
+[entries."無組織"]
+reading = "ムソシキ"
+
+[entries."非構造化"]
+reading = "ヒコウゾウカ"
+
+[entries."半構造化"]
+reading = "ハンコウゾウカ"
+
+[entries."構造化文書"]
+reading = "コウゾウカブンショ"
+
+[entries."構造化データ"]
+reading = "コウゾウカデータ"
+
+[entries."半構造化データ"]
+reading = "ハンコウゾウカデータ"
+
+[entries."非構造化データ"]
+reading = "ヒコウゾウカデータ"
+
+[entries."データ"]
+reading = "データ"
+
+[entries."データ化"]
+reading = "データカ"
+
+[entries."データ管理"]
+reading = "データカンリ"
+
+[entries."データ分析"]
+reading = "データブンセキ"
+
+[entries."データ収集"]
+reading = "データシュウシュウ"
+
+[entries."収集"]
+reading = "シュウシュウ"
+
+[entries."収集物"]
+reading = "シュウシュウブツ"
+
+[entries."資料収集"]
+reading = "シリョウシュウシュウ"
+
+[entries."情報収集"]
+reading = "ジョウホウシュウシュウ"
+
+[entries."資料整理"]
+reading = "シリョウセイリ"
+
+[entries."整理"]
+reading = "セイリ"
+
+[entries."整理整頓"]
+reading = "セイリセイトン"
+
+[entries."整頓"]
+reading = "セイトン"
+
+[entries."整列"]
+reading = "セイレツ"
+
+[entries."整列順"]
+reading = "セイレツジュン"
+
+[entries."順序付"]
+reading = "ジュンジョヅケ"
+
+[entries."列順"]
+reading = "レツジュン"
+
+[entries."列車順"]
+reading = "レッシャジュン"
+
+[entries."行列式"]
+reading = "ギョウレツシキ"
+
+[entries."微分方程式"]
+reading = "ビブンホウテイシキ"
+
+[entries."偏微分方程式"]
+reading = "ヘンビブンホウテイシキ"
+
+[entries."偏微分"]
+reading = "ヘンビブン"
+
+[entries."微分法"]
+reading = "ビブンホウ"
+
+[entries."積分法"]
+reading = "セキブンホウ"
+
+[entries."微積分"]
+reading = "ビセキブン"
+
+[entries."微積分学"]
+reading = "ビセキブンガク"
+
+[entries."線形代数"]
+reading = "センケイダイスウ"
+
+[entries."代数"]
+reading = "ダイスウ"
+
+[entries."代数学"]
+reading = "ダイスウガク"
+
+[entries."幾何"]
+reading = "キカ"
+
+[entries."幾何学"]
+reading = "キカガク"
+
+[entries."解析学"]
+reading = "カイセキガク"
+
+[entries."解析方法"]
+reading = "カイセキホウホウ"
+
+[entries."解析結果"]
+reading = "カイセキケッカ"
+
+[entries."解析対象"]
+reading = "カイセキタイショウ"
+
+[entries."解析データ"]
+reading = "カイセキデータ"
+
+[entries."データ解析"]
+reading = "データカイセキ"
+
+[entries."データ処理"]
+reading = "データショリ"
+
+[entries."データ管理者"]
+reading = "データカンリシャ"
+
+[entries."データベース"]
+reading = "データベース"
+
+[entries."データベース管理"]
+reading = "データベースカンリ"
+
+[entries."データベース化"]
+reading = "データベースカ"
+
+[entries."ファイル"]
+reading = "ファイル"
+
+[entries."ファイル管理"]
+reading = "ファイルカンリ"
+
+[entries."ファイル名"]
+reading = "ファイルメイ"
+
+[entries."ファイル形式"]
+reading = "ファイルケイシキ"
+
+[entries."形式知"]
+reading = "ケイシキチ"
+
+[entries."暗黙知"]
+reading = "アンモクチ"
+
+[entries."暗黙"]
+reading = "アンモク"
+
+[entries."暗黙了解"]
+reading = "アンモクリョウカイ"
+
+[entries."暗黙の了解"]
+reading = "アンモクノリョウカイ"
+
+[entries."了解"]
+reading = "リョウカイ"
+
+[entries."承諾書"]
+reading = "ショウダクショ"
+
+[entries."承認者"]
+reading = "ショウニンシャ"
+
+[entries."承認待"]
+reading = "ショウニンマチ"
+
+[entries."承認済"]
+reading = "ショウニンズミ"
+
+[entries."未承認"]
+reading = "ミショウニン"
+
+[entries."非承認"]
+reading = "ヒショウニン"
+
+[entries."承認権"]
+reading = "ショウニンケン"
+
+[entries."決裁"]
+reading = "ケッサイ"
+
+[entries."決裁者"]
+reading = "ケッサイシャ"
+
+[entries."決裁権"]
+reading = "ケッサイケン"
+
+[entries."決裁書"]
+reading = "ケッサイショ"
+
+[entries."決裁文書"]
+reading = "ケッサイブンショ"
+
+[entries."文書化作業"]
+reading = "ブンショカサギョウ"
+
+[entries."作業手順書"]
+reading = "サギョウテジュンショ"
+
+[entries."手順書類"]
+reading = "テジュンショルイ"
+
+[entries."書類提出先"]
+reading = "ショルイテイシュツサキ"
+
+[entries."提出先"]
+reading = "テイシュツサキ"
+
+[entries."申請先"]
+reading = "シンセイサキ"
+
+[entries."発注先住所"]
+reading = "ハッチュウサキジュウショ"
+
+[entries."住所変更"]
+reading = "ジュウショヘンコウ"
+
+[entries."変更申請"]
+reading = "ヘンコウシンセイ"
+
+[entries."申請却下"]
+reading = "シンセイキャッカ"
+
+[entries."却下"]
+reading = "キャッカ"
+
+[entries."却下処分"]
+reading = "キャッカショブン"
+
+[entries."処分対象"]
+reading = "ショブンタイショウ"
+
+[entries."処分内容"]
+reading = "ショブンナイヨウ"
+
+[entries."処分理由"]
+reading = "ショブンリユウ"
+
+[entries."理由書"]
+reading = "リユウショ"
+
+[entries."理由付"]
+reading = "リユウヅケ"
+
+[entries."理由付け"]
+reading = "リユウヅケ"
+
+[entries."正当化"]
+reading = "セイトウカ"
+
+[entries."正当性"]
+reading = "セイトウセイ"
+
+[entries."適切性"]
+reading = "テキセツセイ"
+
+[entries."適性"]
+reading = "テキセイ"
+
+[entries."適性検査"]
+reading = "テキセイケンサ"
+
+[entries."検査結果"]
+reading = "ケンサケッカ"
+
+[entries."検査内容"]
+reading = "ケンサナイヨウ"
+
+[entries."検査項目"]
+reading = "ケンサコウモク"
+
+[entries."検査基準"]
+reading = "ケンサキジュン"
+
+[entries."合格基準"]
+reading = "ゴウカクキジュン"
+
+[entries."合格"]
+reading = "ゴウカク"
+
+[entries."合格率"]
+reading = "ゴウカクリツ"
+
+[entries."合格者数"]
+reading = "ゴウカクシャスウ"
+
+[entries."不合格"]
+reading = "フゴウカク"
+
+[entries."不合格者"]
+reading = "フゴウカクシャ"
+
+[entries."不合格率"]
+reading = "フゴウカクリツ"
+
+[entries."合格通知"]
+reading = "ゴウカクツウチ"
+
+[entries."合格発表"]
+reading = "ゴウカクハッピョウ"
+
+[entries."合格発表日"]
+reading = "ゴウカクハッピョウビ"
+
+[entries."発表時間"]
+reading = "ハッピョウジカン"
+
+[entries."発表内容"]
+reading = "ハッピョウナイヨウ"
+
+[entries."発表者"]
+reading = "ハッピョウシャ"
+
+[entries."発表順"]
+reading = "ハッピョウジュン"
+
+[entries."発表順序"]
+reading = "ハッピョウジュンジョ"
+
+[entries."順序入替"]
+reading = "ジュンジョイレカエ"
+
+[entries."入替"]
+reading = "イレカエ"
+
+[entries."入替制"]
+reading = "イレカエセイ"
+
+[entries."交換"]
+reading = "コウカン"
+
+[entries."交換会"]
+reading = "コウカンカイ"
+
+[entries."交換留学"]
+reading = "コウカンリュウガク"
+
+[entries."留学先"]
+reading = "リュウガクサキ"
+
+[entries."留学費用"]
+reading = "リュウガクヒヨウ"
+
+[entries."留学準備"]
+reading = "リュウガクジュンビ"
+
+[entries."準備会"]
+reading = "ジュンビカイ"
+
+[entries."準備会議"]
+reading = "ジュンビカイギ"
+
+[entries."会議室"]
+reading = "カイギシツ"
+
+[entries."会議録"]
+reading = "カイギロク"
+
+[entries."議事録"]
+reading = "ギジロク"
+
+[entries."会議内容"]
+reading = "カイギナイヨウ"
+
+[entries."会議目的"]
+reading = "カイギモクテキ"
+
+[entries."会議出席"]
+reading = "カイギシュッセキ"
+
+[entries."出席率"]
+reading = "シュッセキリツ"
+
+[entries."欠席率"]
+reading = "ケッセキリツ"
+
+[entries."出席日"]
+reading = "シュッセキビ"
+
+[entries."欠席日"]
+reading = "ケッセキビ"
+
+[entries."出席日数"]
+reading = "シュッセキニッスウ"
+
+[entries."欠席日数"]
+reading = "ケッセキニッスウ"
+
+[entries."日数計算"]
+reading = "ニッスウケイサン"
+
+[entries."回数制限"]
+reading = "カイスウセイゲン"
+
+[entries."回数"]
+reading = "カイスウ"
+
+[entries."時間外労働"]
+reading = "ジカンガイロウドウ"
+
+[entries."時間外手当"]
+reading = "ジカンガイテアテ"
+
+[entries."深夜手当"]
+reading = "シンヤテアテ"
+
+[entries."夜勤手当"]
+reading = "ヤキンテアテ"
+
+[entries."休日手当"]
+reading = "キュウジツテアテ"
+
+[entries."住宅手当"]
+reading = "ジュウタクテアテ"
+
+[entries."通勤手当"]
+reading = "ツウキンテアテ"
+
+[entries."役職手当"]
+reading = "ヤクショクテアテ"
+
+[entries."資格手当"]
+reading = "シカクテアテ"
+
+[entries."精勤手当"]
+reading = "セイキンテアテ"
+
+[entries."精勤"]
+reading = "セイキン"
+
+[entries."皆勤"]
+reading = "カイキン"
+
+[entries."皆勤賞"]
+reading = "カイキンショウ"
+
+[entries."特別賞"]
+reading = "トクベツショウ"
+
+[entries."最優秀賞"]
+reading = "サイユウシュウショウ"
+
+[entries."優秀賞"]
+reading = "ユウシュウショウ"
+
+[entries."最優秀"]
+reading = "サイユウシュウ"
+
+[entries."入賞者"]
+reading = "ニュウショウシャ"
+
+[entries."入賞作品"]
+reading = "ニュウショウサクヒン"
+
+[entries."入選作品"]
+reading = "ニュウセンサクヒン"
+
+[entries."落選作品"]
+reading = "ラクセンサクヒン"
+
+[entries."当選作品"]
+reading = "トウセンサクヒン"
+
+[entries."当選者数"]
+reading = "トウセンシャスウ"
+
+[entries."当選番号"]
+reading = "トウセンバンゴウ"
+
+[entries."抽選"]
+reading = "チュウセン"
+
+[entries."抽選会"]
+reading = "チュウセンカイ"
+
+[entries."抽選券"]
+reading = "チュウセンケン"
+
+[entries."抽選方法"]
+reading = "チュウセンホウホウ"
+
+[entries."抽選結果"]
+reading = "チュウセンケッカ"
+
+[entries."落選者数"]
+reading = "ラクセンシャスウ"
+
+[entries."入賞者発表"]
+reading = "ニュウショウシャハッピョウ"
+
+[entries."発表式"]
+reading = "ハッピョウシキ"
+
+[entries."表彰式典"]
+reading = "ヒョウショウシキテン"
+
+[entries."式典"]
+reading = "シキテン"
+
+[entries."入学式"]
+reading = "ニュウガクシキ"
+
+[entries."始業式"]
+reading = "シギョウシキ"
+
+[entries."終業式"]
+reading = "シュウギョウシキ"
+
+[entries."開会"]
+reading = "カイカイ"
+
+[entries."閉会"]
+reading = "ヘイカイ"
+
+[entries."閉幕戦"]
+reading = "ヘイマクセン"
+
+[entries."最終戦"]
+reading = "サイシュウセン"
+
+[entries."最終回"]
+reading = "サイシュウカイ"
+
+[entries."最終話"]
+reading = "サイシュウワ"
+
+[entries."第一話"]
+reading = "ダイイチワ"
+
+[entries."第一回"]
+reading = "ダイイッカイ"
+
+[entries."初回"]
+reading = "ショカイ"
+
+[entries."連続性"]
+reading = "レンゾクセイ"
+
+[entries."不連続"]
+reading = "フレンゾク"
+
+[entries."跳び箱"]
+reading = "トビバコ"
+
+[entries."跳箱"]
+reading = "トビバコ"
+
+[entries."跳ねる"]
+reading = "ハネル"
+
+[entries."跳ぶ"]
+reading = "トブ"
+
+[entries."飛ぶ"]
+reading = "トブ"
+
+[entries."泳ぐ"]
+reading = "オヨグ"
+
+[entries."走る"]
+reading = "ハシル"
+
+[entries."歩く"]
+reading = "アルク"
+
+[entries."読む"]
+reading = "ヨム"
+
+[entries."書く"]
+reading = "カク"
+
+[entries."話す"]
+reading = "ハナス"
+
+[entries."聞く"]
+reading = "キク"
+
+[entries."食べる"]
+reading = "タベル"
+
+[entries."飲む"]
+reading = "ノム"
+
+[entries."寝る"]
+reading = "ネル"
+
+[entries."起きる"]
+reading = "オキル"
+
+[entries."笑う"]
+reading = "ワラウ"
+
+[entries."泣く"]
+reading = "ナク"
+
+[entries."怒る"]
+reading = "オコル"
+
+[entries."喜ぶ"]
+reading = "ヨロコブ"
+
+[entries."驚く"]
+reading = "オドロク"
+
+[entries."悲しむ"]
+reading = "カナシム"
+
+[entries."楽しむ"]
+reading = "タノシム"
+
+[entries."苦しむ"]
+reading = "クルシム"
+
+[entries."愛する"]
+reading = "アイスル"
+
+[entries."憎む"]
+reading = "ニクム"
+
+[entries."信じる"]
+reading = "シンジル"
+
+[entries."疑う"]
+reading = "ウタガウ"
+
+[entries."許す"]
+reading = "ユルス"
+
+[entries."拒む"]
+reading = "コバム"
+
+[entries."受ける"]
+reading = "ウケル"
+
+[entries."与える"]
+reading = "アタエル"
+
+[entries."作る"]
+reading = "ツクル"
+
+[entries."壊す"]
+reading = "コワス"
+
+[entries."直す"]
+reading = "ナオス"
+
+[entries."治る"]
+reading = "ナオル"
+
+[entries."治す"]
+reading = "ナオス"
+
+[entries."育てる"]
+reading = "ソダテル"
+
+[entries."育つ"]
+reading = "ソダツ"
+
+[entries."覚える"]
+reading = "オボエル"
+
+[entries."忘れる"]
+reading = "ワスレル"
+
+[entries."思う"]
+reading = "オモウ"
+
+[entries."考える"]
+reading = "カンガエル"
+
+[entries."分かる"]
+reading = "ワカル"
+
+[entries."知る"]
+reading = "シル"
+
+[entries."理解する"]
+reading = "リカイスル"
+
+[entries."学ぶ"]
+reading = "マナブ"
+
+[entries."教える"]
+reading = "オシエル"
+
+[entries."習う"]
+reading = "ナラウ"
+
+[entries."見る"]
+reading = "ミル"
+
+[entries."触る"]
+reading = "サワル"
+
+[entries."嗅ぐ"]
+reading = "カグ"
+
+[entries."味わう"]
+reading = "アジワウ"
+
+[entries."感じる"]
+reading = "カンジル"
+
