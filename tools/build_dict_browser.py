@@ -239,6 +239,61 @@ mark { background: #fff8c5; color: inherit; padding: 0 1px; }
 #help code { background: var(--bg); padding: 1px 5px; border-radius: 3px; font-size: .9em; }
 #help ul { margin: .3em 0; padding-left: 1.4em; }
 .repo-link { font-size: .8em; }
+
+/* view tabs */
+.view-tabs { display: flex; gap: .4em; margin: .3em 0 .7em; }
+.vtab {
+  padding: .4em 1em; border: 1px solid var(--line); border-radius: 6px;
+  cursor: pointer; background: var(--bg); color: var(--muted);
+  font-size: .9em; font-family: inherit;
+}
+.vtab.active { background: var(--accent); color: white; border-color: var(--accent); }
+.vtab:hover:not(.active) { background: var(--soft); }
+
+.chip.kf.active { background: var(--accent); color: white; border-color: var(--accent); }
+.chip.kf.warn-chip.active { background: var(--yellow); border-color: var(--yellow); color: white; }
+#ufile-filter { font-size: .85em; padding: .25em .5em; }
+
+/* kanji card */
+.kanji-card {
+  display: grid; grid-template-columns: 4.5em 1fr; gap: 1em;
+  padding: .8em 1em; margin: .5em 0;
+  border: 1px solid var(--line); border-radius: 8px;
+  background: var(--bg);
+}
+.kanji-card.has-warn { border-left: 4px solid var(--yellow); }
+.kanji-card .big-char {
+  font-size: 2.8em; font-weight: 600; text-align: center;
+  cursor: pointer; line-height: 1;
+  align-self: start; border-radius: 8px; padding: .15em 0;
+  transition: background .1s;
+}
+.kanji-card .big-char:hover { background: var(--soft-blue); }
+.kanji-card .kinfo { min-width: 0; }
+.kanji-card .ksec { padding: .35em 0; border-top: 1px dashed var(--line); }
+.kanji-card .ksec:first-child { border-top: none; padding-top: 0; }
+.kanji-card .ksec.usec { color: var(--muted); }
+.kanji-card .src-tag {
+  display: inline-block; padding: 0 .5em; font-size: .7em;
+  border-radius: 10px; background: #fbefff; color: var(--purple);
+  font-family: Consolas, monospace; margin-right: .4em;
+}
+.kanji-card .src-tag.unihan { background: var(--soft); color: var(--muted); }
+.kanji-card .kreading {
+  color: var(--green); font-family: "Yu Gothic UI", sans-serif;
+  font-size: 1.05em; font-weight: 600;
+}
+.kanji-card .kpath {
+  font-family: Consolas, monospace; font-size: .75em;
+  color: #8b949e; margin-left: .5em;
+}
+.kanji-card .kmatch { margin-top: .35em; }
+.kanji-card .kbare { font-size: .8em; color: var(--muted); margin-top: .2em; font-style: italic; }
+.kanji-card .warn {
+  display: inline-block; padding: .2em .65em; font-size: .8em;
+  background: #fff8c5; color: var(--yellow); border-radius: 6px;
+  margin: .15em .25em .25em 0;
+}
 </style>
 </head>
 <body>
@@ -248,6 +303,10 @@ mark { background: #fff8c5; color: inherit; padding: 0 1px; }
     <span class="repo-link">repo: <a href="https://github.com/RyuuNeko1107/ja-furigana-dict">github.com/RyuuNeko1107/ja-furigana-dict</a></span>
   </div>
   <h1>furigana-dict 検索 <span class="count">__COUNT__ entries / __FILES__ files / __KANJI_COUNT__ kanji</span></h1>
+  <div class="view-tabs">
+    <button class="vtab active" data-view="entry">📘 entries view</button>
+    <button class="vtab" data-view="kanji">🈳 単漢字 view (audit 用)</button>
+  </div>
   <div class="controls">
     <input id="q" type="search" placeholder="検索 (例: 「魔理沙」「contains:魔」「reading:マリサ」「file:works」)" autofocus>
     <select id="mode">
@@ -270,9 +329,10 @@ mark { background: #fff8c5; color: inherit; padding: 0 1px; }
       <li>複数 token は空白で AND (例: <code>contains:魔 file:works</code>)</li>
       <li>type chip / dir filter で結果を絞り込める</li>
       <li>surface の漢字 / 構成漢字 chip を click → reverse lookup (= その漢字を含む全 entry)</li>
+      <li><strong>🈳 単漢字 view</strong>: 全 [[kanji]] block + unihan を 1 字 surface 軸で audit、 警告 chip で sweep 対象を絞る</li>
     </ul>
   </div>
-  <div class="filters">
+  <div class="filters" data-for="entry">
     <span class="chip t-e active" data-type="e">📘 entry (<span id="cnt-e">0</span>)</span>
     <span class="chip t-k active" data-type="k">🈳 [[kanji]] (<span id="cnt-k">0</span>)</span>
     <span class="chip t-c active" data-type="c">🔄 compat (<span id="cnt-c">0</span>)</span>
@@ -281,10 +341,27 @@ mark { background: #fff8c5; color: inherit; padding: 0 1px; }
     </select>
     <span id="stat"></span>
   </div>
+  <div class="filters" data-for="kanji" style="display:none">
+    <span class="chip kf active" data-kfilter="all">すべて</span>
+    <span class="chip kf" data-kfilter="block">[[kanji]] block 有り</span>
+    <span class="chip kf warn-chip" data-kfilter="dup">⚠ unihan と重複</span>
+    <span class="chip kf warn-chip" data-kfilter="hira">⚠ char_type=ひらがな</span>
+    <span class="chip kf" data-kfilter="bare">match 無し default のみ</span>
+    <select id="ufile-filter">
+      <option value="">全 unihan 水準</option>
+      <option value="joyo">joyo (常用)</option>
+      <option value="jinmeiyou">jinmeiyou (人名用)</option>
+      <option value="jis_basic">JIS 第一水準</option>
+      <option value="jis_supplement">JIS 第二水準</option>
+      <option value="extension">extension (Ext B+)</option>
+    </select>
+    <span id="kstat"></span>
+  </div>
 </header>
 
 <main>
   <div id="results"></div>
+  <div id="kresults" style="display:none"></div>
 </main>
 
 <script id="data" type="application/json">__DATA__</script>
@@ -488,8 +565,12 @@ function renderCard(entry, surfaceTerms, readingTerms) {
 const qInput = document.getElementById('q');
 const modeSel = document.getElementById('mode');
 const resultsEl = document.getElementById('results');
+const kresultsEl = document.getElementById('kresults');
 const statEl = document.getElementById('stat');
+const kstatEl = document.getElementById('kstat');
+const ufileFilter = document.getElementById('ufile-filter');
 
+let currentView = 'entry';
 let renderTimer = null;
 function scheduleRender() {
   clearTimeout(renderTimer);
@@ -497,6 +578,11 @@ function scheduleRender() {
 }
 
 function render() {
+  if (currentView === 'kanji') renderKanjiView();
+  else renderEntryView();
+}
+
+function renderEntryView() {
   const q = qInput.value;
   const mode = modeSel.value;
   const dir = dirFilter.value;
@@ -524,6 +610,165 @@ function render() {
   resultsEl.innerHTML = shown.map(e => renderCard(e, surfaceTerms, readingTerms)).join('');
 }
 
+// === kanji view ===
+
+const KANJI_CAP = 300;
+
+function getKanjiWarnings(idx) {
+  // idx is array of {src, r, f, m?}
+  const warns = [];
+  const hasBlock = idx.some(r => r.src === 'k');
+  const hasUnihan = idx.some(r => r.src === 'u');
+  if (hasBlock && hasUnihan) {
+    warns.push('⚠ [[kanji]] と unihan 両方に存在 — unihan 側削除推奨');
+  }
+  const hiraKeys = new Set();
+  for (const rec of idx) {
+    if (!rec.m) continue;
+    for (const m of rec.m) {
+      for (const k of Object.keys(m)) {
+        if (k.endsWith('_char_type') && m[k] === 'ひらがな') hiraKeys.add(k);
+      }
+    }
+  }
+  if (hiraKeys.size) {
+    warns.push('⚠ ' + [...hiraKeys].join(', ') + ' = "ひらがな" 雑指定 (literal 列挙推奨)');
+  }
+  return warns;
+}
+
+function renderKanjiCard(ch) {
+  const idx = KANJI_IDX[ch];
+  const blockRecs = idx.filter(r => r.src === 'k');
+  const unihanRecs = idx.filter(r => r.src === 'u');
+  const warns = getKanjiWarnings(idx);
+
+  const sections = [];
+  for (const rec of blockRecs) {
+    let body = '';
+    if (rec.m && rec.m.length) {
+      body = '<div class="kmatch">' + rec.m.map(m => renderMatch(m)).join('') + '</div>';
+    } else {
+      body = '<div class="kbare">(match 無し、 default のみ)</div>';
+    }
+    sections.push(
+      '<div class="ksec">' +
+      '<span class="src-tag">[[kanji]]</span>' +
+      '<span class="kreading">' + escapeHtml(rec.r) + '</span>' +
+      '<span class="kpath">' + escapeHtml(rec.f) + '</span>' +
+      body +
+      '</div>'
+    );
+  }
+  for (const rec of unihanRecs) {
+    sections.push(
+      '<div class="ksec usec">' +
+      '<span class="src-tag unihan">unihan</span>' +
+      '<span class="kreading">' + escapeHtml(rec.r) + '</span>' +
+      '<span class="kpath">' + escapeHtml(rec.f) + '</span>' +
+      '</div>'
+    );
+  }
+
+  const cls = warns.length ? 'kanji-card has-warn' : 'kanji-card';
+  return '<div class="' + cls + '">' +
+    '<div class="big-char" data-kc="' + escapeHtml(ch) + '" title="' + escapeHtml(ch) + ' を含む全 entry を逆引き">' + escapeHtml(ch) + '</div>' +
+    '<div class="kinfo">' +
+    warns.map(w => '<div><span class="warn">' + escapeHtml(w) + '</span></div>').join('') +
+    sections.join('') +
+    '</div>' +
+    '</div>';
+}
+
+function renderKanjiView() {
+  const q = qInput.value.trim().toLowerCase();
+  const activeKf = document.querySelector('.chip.kf.active');
+  const kfilter = activeKf ? activeKf.dataset.kfilter : 'all';
+  const ufile = ufileFilter.value;
+
+  let chars = Object.keys(KANJI_IDX);
+
+  // free text query: substring on char itself (1 字なので contains:X だけ意味あるが、 prefix 命令も認める)
+  if (q) {
+    // strip any "key:" prefix that the user may have left, use the bare value as substring
+    const m = q.match(/^(?:contains|exact|starts|reading|file):(.+)$/);
+    const needle = (m ? m[1] : q);
+    chars = chars.filter(ch => ch.includes(needle));
+  }
+
+  if (ufile) {
+    chars = chars.filter(ch =>
+      KANJI_IDX[ch].some(r => r.src === 'u' && r.f.includes(ufile))
+    );
+  }
+
+  chars = chars.filter(ch => {
+    const idx = KANJI_IDX[ch];
+    const hasBlock = idx.some(r => r.src === 'k');
+    const hasUnihan = idx.some(r => r.src === 'u');
+    switch (kfilter) {
+      case 'all': return true;
+      case 'block': return hasBlock;
+      case 'dup': return hasBlock && hasUnihan;
+      case 'hira': {
+        for (const rec of idx) {
+          if (!rec.m) continue;
+          for (const m of rec.m) {
+            for (const k of Object.keys(m)) {
+              if (k.endsWith('_char_type') && m[k] === 'ひらがな') return true;
+            }
+          }
+        }
+        return false;
+      }
+      case 'bare': return hasBlock && idx.filter(r => r.src === 'k').every(r => !r.m);
+      default: return true;
+    }
+  });
+
+  chars.sort();
+
+  const shown = chars.slice(0, KANJI_CAP);
+  kstatEl.textContent = chars.length === 0 ? '0 kanji' :
+    (chars.length > KANJI_CAP ? shown.length + ' / ' + chars.length + ' kanji (上位のみ)' : chars.length + ' kanji');
+
+  if (chars.length === 0) {
+    kresultsEl.innerHTML = '<div class="empty">該当 kanji なし</div>';
+    return;
+  }
+  kresultsEl.innerHTML = shown.map(ch => renderKanjiCard(ch)).join('');
+}
+
+// === view tab switching ===
+
+function setView(view) {
+  currentView = view;
+  document.querySelectorAll('.vtab').forEach(t => t.classList.toggle('active', t.dataset.view === view));
+  document.querySelectorAll('.filters[data-for]').forEach(f => {
+    f.style.display = (f.dataset.for === view) ? '' : 'none';
+  });
+  resultsEl.style.display = (view === 'entry') ? '' : 'none';
+  kresultsEl.style.display = (view === 'kanji') ? '' : 'none';
+  render();
+}
+
+document.querySelectorAll('.vtab').forEach(t => {
+  t.addEventListener('click', () => setView(t.dataset.view));
+});
+
+// kanji filter chip click (1 つだけ active)
+document.querySelectorAll('.chip.kf').forEach(chip => {
+  chip.addEventListener('click', () => {
+    document.querySelectorAll('.chip.kf').forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+    render();
+  });
+});
+
+ufileFilter.addEventListener('change', render);
+
+// === wire events ===
+
 qInput.addEventListener('input', scheduleRender);
 modeSel.addEventListener('change', render);
 dirFilter.addEventListener('change', render);
@@ -537,6 +782,18 @@ resultsEl.addEventListener('click', ev => {
   modeSel.value = 'auto';
   window.scrollTo({ top: 0, behavior: 'smooth' });
   render();
+});
+
+// kanji view: big-char click → switch to entries view + contains:<ch>
+kresultsEl.addEventListener('click', ev => {
+  const target = ev.target.closest('[data-kc]');
+  if (!target) return;
+  const ch = target.dataset.kc;
+  if (!ch) return;
+  qInput.value = 'contains:' + ch;
+  modeSel.value = 'auto';
+  setView('entry');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
 render();
