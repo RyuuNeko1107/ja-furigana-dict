@@ -1,0 +1,82 @@
+name: Build & deploy Pages (dict_browser)
+
+# 辞書 entry / [[kanji]] block / compat map のいずれかが master に push されたら
+# tools/build_dict_browser.py で dict_browser.html を生成、 pages/index.html と
+# 合わせて GitHub Pages にデプロイする。
+#
+# 公開 URL: https://ryuuneko1107.github.io/ja-furigana-dict/
+#   - / (= pages/index.html)        landing
+#   - /dict_browser.html            全 entry 検索 UI
+#
+# trigger 設計:
+# - core/**/*.toml: 辞書本体の変更
+# - tools/build_dict_browser.py: script 自体の変更
+# - pages/**: landing 等の変更
+# - .github/workflows/build-pages.yml: workflow 自体の変更
+# regen-stats.yml の auto-commit `[skip stats]` でも path filter で trigger される
+# (= STATS.md 更新のみの commit は再 trigger されない、 core/ が変わったときだけ走る)
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'core/**/*.toml'
+      - 'tools/build_dict_browser.py'
+      - 'pages/**'
+      - '.github/workflows/build-pages.yml'
+  workflow_dispatch:
+
+# GitHub Pages へ deploy するための permission
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 同時に複数 deploy を走らせない (= 後発が優先)
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build _site
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+
+      - name: build dict_browser.html
+        # _site/ 直下に dict_browser.html を生成
+        run: |
+          mkdir -p _site
+          python3 tools/build_dict_browser.py --out _site/dict_browser.html
+
+      - name: landing index.html を copy
+        run: cp pages/index.html _site/index.html
+
+      - name: 出力サイズ確認
+        run: |
+          echo "=== _site/ contents ==="
+          ls -lh _site/
+          echo "=== total size ==="
+          du -sh _site/
+
+      - name: upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

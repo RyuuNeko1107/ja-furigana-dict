@@ -12,6 +12,10 @@ Thumbs.db
 *.tar.gz
 *.zip
 
+# tools/build_dict_browser.py の local 実行成果物 (CI で再生成、 commit しない)
+/build/
+/_site/
+
 # Local config / dev
 .env
 
