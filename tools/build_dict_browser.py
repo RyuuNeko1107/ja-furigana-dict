@@ -468,6 +468,10 @@ mark { background: var(--soft-yellow); color: inherit; padding: 0 1px; }
 .repo-link { font-size: .8em; }
 
 /* view tabs */
+.view-tabs-toggle { font-size: .82em; color: var(--muted); margin: .2em 0 .3em; }
+.view-tabs-toggle summary { cursor: pointer; padding: .2em .5em; border-radius: 4px; background: var(--soft); display: inline-block; }
+.view-tabs-toggle summary:hover { background: var(--soft-blue); color: var(--accent); }
+.view-tabs-toggle .view-tabs { margin-top: .4em; }
 .view-tabs { display: flex; gap: .4em; margin: .3em 0 .7em; }
 .vtab {
   padding: .4em 1em; border: 1px solid var(--line); border-radius: 6px;
@@ -777,10 +781,13 @@ mark { background: var(--soft-yellow); color: inherit; padding: 0 1px; }
   </div>
   <h1>furigana-dict 検索 <span class="count">__COUNT__ entries / __FILES__ files / __KANJI_COUNT__ kanji</span></h1>
   <div class="dashboard" id="dashboard"></div>
-  <div class="view-tabs">
-    <button class="vtab active" data-view="entry">📘 検索 (entries + 構成 lookup)</button>
-    <button class="vtab" data-view="kanji">🈳 単漢字 audit (sweep 進捗管理)</button>
-  </div>
+  <details class="view-tabs-toggle">
+    <summary>🈳 単漢字 audit (= sweep 進捗管理 / kfilter / dashboard) を開く</summary>
+    <div class="view-tabs">
+      <button class="vtab active" data-view="entry">📘 検索に戻る (entries + 構成 lookup)</button>
+      <button class="vtab" data-view="kanji">🈳 単漢字 audit を全表示</button>
+    </div>
+  </details>
   <div class="controls">
     <input id="q" type="search" placeholder="検索 / 構成 lookup (例: 「平和」「難しい」「contains:魔」「reading:マリサ」)" autofocus>
     <select id="mode">
@@ -1775,46 +1782,20 @@ function renderCharAudit() {
   if (!charAuditEl) return;
   const text = ccBareInput(qInput.value);
   if (!text) { charAuditEl.innerHTML = ''; return; }
-  const chars = Array.from(text);
-  const results = chars.map((ch, i) => ccLookupChar(ch, i > 0 ? chars[i-1] : null, i < chars.length-1 ? chars[i+1] : null));
-  const charsHtml = '<div class="compose-char-list" style="margin-top:1em">' +
-    '<div class="match-title" style="font-size:.85em; color:var(--muted); margin-bottom:.4em">📋 入力に含まれる char の構成 (= [[kanji]] block / unihan / match 適用):</div>' +
-    results.map((r, i) => {
-      const prevCh = i > 0 ? chars[i-1] : null;
-      const nextCh = i < chars.length-1 ? chars[i+1] : null;
-      let cls = 'compose-char', tag = '', body = '';
-      if (r.src === 'block') {
-        cls += ' cc-block';
-        tag = '<span class="cc-tag">[[kanji]]</span>';
-        body = '<span class="cc-default">default = ' + escapeHtml(r.defaultR) + '</span>';
-        if (r.applied) {
-          body += '<span class="cc-applied">適用: <span class="cc-cond">' + escapeHtml(ccCondStr(r.applied, {short:true})) + '</span> → ' + escapeHtml(r.applied.reading) + '</span>';
-        }
-        if (r.matches.length) {
-          body += '<div class="cc-matches">match (' + r.matches.length + '): ' +
-            r.matches.map(m => {
-              const isApplied = m === r.applied;
-              return '<span class="cc-mc' + (isApplied ? ' is-applied' : '') + '">' + escapeHtml(ccCondStr(m, {short:true})) + ' → ' + escapeHtml(m.reading) + '</span>';
-            }).join('') +
-            '</div>';
-        }
-      } else if (r.src === 'unihan') {
-        cls += ' cc-unihan';
-        tag = '<span class="cc-tag">unihan</span>';
-        body = '<span class="cc-default">default = ' + escapeHtml(r.defaultR) + '</span>';
-      } else {
-        cls += ' cc-none';
-        tag = '<span class="cc-tag">' + (ccCharType(r.ch) || '?') + '</span>';
-        body = '<span class="cc-default">そのまま: ' + escapeHtml(r.ch) + '</span>';
-      }
-      const ctx = '<span class="cc-pos">prev=' + (prevCh ? '"' + escapeHtml(prevCh) + '" (' + ccCharType(prevCh) + ')' : 'なし') + ' / next=' + (nextCh ? '"' + escapeHtml(nextCh) + '" (' + ccCharType(nextCh) + ')' : 'なし') + '</span>';
-      return '<div class="' + cls + '">' +
-        '<div class="cc-ch">' + escapeHtml(r.ch) + '</div>' +
-        '<div class="cc-info">' + tag + body + '<br>' + ctx + '</div>' +
-        '</div>';
-    }).join('') +
-    '</div>';
-  charAuditEl.innerHTML = charsHtml;
+  // 入力に含まれる漢字 char を unique 化、 単漢字 view と同じ kanji card で詳細表示
+  // (= sweep button + warn + match list 等を見られるので tab 切替不要)
+  const seen = new Set();
+  const kanjiChars = [];
+  for (const ch of Array.from(text)) {
+    if (KANJI_IDX[ch] && !seen.has(ch)) { seen.add(ch); kanjiChars.push(ch); }
+  }
+  if (kanjiChars.length === 0) {
+    charAuditEl.innerHTML = '';
+    return;
+  }
+  charAuditEl.innerHTML =
+    '<div class="match-title" style="font-size:.88em; color:var(--muted); margin: 1em 0 .4em">🈳 入力に含まれる漢字 audit (' + kanjiChars.length + ' 字、 sweep ボタン + warn + match 詳細):</div>' +
+    kanjiChars.map(ch => renderKanjiCard(ch)).join('');
 }
 
 // === handlers ===
