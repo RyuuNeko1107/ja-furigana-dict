@@ -2151,6 +2151,132 @@ default = "ドウ"
 next_starts_any = ["じ"]
 reading = "オナ"
 
+# === 動詞分岐 8 字 (= default 音読み + 動詞 okurigana matcher で訓読み) ===
+
+# 「解」: default = カイ (= 解決 / 理解 / 解説 / 解放 / 解雇 / 解析 等)。
+# 動詞 「解く = トク」 / 「解ける = トケル」 (= 「解く / 解ける / 解いた /
+# 解かない / 解けば」) は next が 「く/っ/か/き/け/こ/い」 のとき reading
+# = ト で okurigana 連結。
+[[kanji]]
+char = "解"
+default = "カイ"
+
+[[kanji.match]]
+next_starts_any = ["く", "っ", "か", "き", "け", "こ", "い"]
+reading = "ト"
+
+# 「推」: default = スイ (= 推進 / 推測 / 推薦 / 推察 / 類推 等)。 動詞
+# 「推す = オス」 (= 「推す / 推さない / 推して / 推せ / 推そう」) は next
+# が 「す/さ/し/せ/そ」 のとき reading = オ で okurigana 連結。
+[[kanji]]
+char = "推"
+default = "スイ"
+
+[[kanji.match]]
+next_starts_any = ["す", "さ", "し", "せ", "そ"]
+reading = "オ"
+
+# 「取」: default = シュ (= 取得 / 取材 / 採取 / 摂取 / 詐取 等)。 動詞
+# 「取る = トル」 (= 「取る / 取った / 取らない / 取って / 取り / 取れ /
+# 取ろう」) は next が 「る/っ/ら/り/れ/ろ」 のとき reading = ト。
+[[kanji]]
+char = "取"
+default = "シュ"
+
+[[kanji.match]]
+next_starts_any = ["る", "っ", "ら", "り", "れ", "ろ"]
+reading = "ト"
+
+# 「済」: default = サイ (= 済度 / 経済 / 弁済 / 既済 / 救済 等)。 動詞
+# 「済む = スム」 / 「済ます = スマス」 (= 「済む / 済まない / 済み / 済め
+# / 済ます / 済まし / 済んだ」) は next が 「む/ま/み/め/も/ん」 のとき
+# reading = ス で okurigana 連結。
+[[kanji]]
+char = "済"
+default = "サイ"
+
+[[kanji.match]]
+next_starts_any = ["む", "ま", "み", "め", "も", "ん"]
+reading = "ス"
+
+# 「知」: default = チ (= 知識 / 認知 / 通知 / 告知 / 知能 等)。 動詞
+# 「知る = シル」 (= 「知る / 知った / 知らない / 知って / 知り / 知れ /
+# 知ろう」) は next が 「る/っ/ら/り/れ/ろ」 のとき reading = シ。
+[[kanji]]
+char = "知"
+default = "チ"
+
+[[kanji.match]]
+next_starts_any = ["る", "っ", "ら", "り", "れ", "ろ"]
+reading = "シ"
+
+# 「切」: default = セツ (= 切実 / 切迫 / 親切 / 大切 / 適切 等)。 動詞
+# 「切る = キル」 / 「切れる = キレル」 (= 「切る / 切った / 切らない / 切れる
+# / 切れ / 切り / 切ろう」) は next が 「る/っ/ら/り/れ/ろ」 のとき reading
+# = キ。
+[[kanji]]
+char = "切"
+default = "セツ"
+
+[[kanji.match]]
+next_starts_any = ["る", "っ", "ら", "り", "れ", "ろ"]
+reading = "キ"
+
+# 「有」: default = ユウ (= 有名 / 有効 / 所有 / 国有 / 共有 等)。 動詞
+# 「有る = アル」 (= 「有る / 有った / 有らない / 有り / 有れ」) は next
+# が 「る/っ/ら/り/れ/ろ」 のとき reading = ア。
+[[kanji]]
+char = "有"
+default = "ユウ"
+
+[[kanji.match]]
+next_starts_any = ["る", "っ", "ら", "り", "れ", "ろ"]
+reading = "ア"
+
+# 「売」: default = バイ (= 売買 / 販売 / 競売 / 商売 / 専売 等)。 動詞
+# 「売る = ウル」 / 「売れる = ウレル」 (= 「売る / 売った / 売らない /
+# 売れる / 売れ / 売り / 売ろう」) は next が 「る/っ/ら/り/れ/ろ」 のとき
+# reading = ウ。
+[[kanji]]
+char = "売"
+default = "バイ"
+
+[[kanji.match]]
+next_starts_any = ["る", "っ", "ら", "り", "れ", "ろ"]
+reading = "ウ"
+
+# === 純 migration 5 字 (= reading 変更なし、 unihan default を [[kanji]]
+#     block に集約) ===
+
+# 「鳥」: default = とり。 チョウ系 jukugo (鳥獣 / 一石二鳥 等) は band 100
+# で吸収。
+[[kanji]]
+char = "鳥"
+default = "とり"
+
+# 「衣」: default = ころも。 イ/エ系 jukugo (衣服 / 衣裳 / 衣替え / 浴衣
+# 等) は band 100 で吸収。
+[[kanji]]
+char = "衣"
+default = "ころも"
+
+# 「雲」: default = くも。 ウン系 jukugo (雲海 / 暗雲 等) は band 100 で吸収。
+[[kanji]]
+char = "雲"
+default = "くも"
+
+# 「馬」: default = うま。 バ系 jukugo (馬車 / 馬力 / 競馬 / 騎馬 等) は
+# band 100 で吸収。
+[[kanji]]
+char = "馬"
+default = "うま"
+
+# 「石」: default = いし。 セキ/コク/シャク系 jukugo (石灰 / 化石 / 鉱石
+# / 石高 等) は band 100 で吸収。
+[[kanji]]
+char = "石"
+default = "いし"
+
 # 「者」: default 音読み 「シャ」 (= 「医者 / 学者 / 患者 / 編者」 等)。 動詞連体形 + 者
 # (= 「戦う者 / 行く者 / 知る者」 形式名詞用法) は prev token 末尾が動詞語尾のとき 「モノ」。
 # 「強者 / 若者」 等 漢字 + 者 = モノ は jukugo に band 100 で個別登録。
