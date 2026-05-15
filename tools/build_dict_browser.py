@@ -627,6 +627,63 @@ mark { background: var(--soft-yellow); color: inherit; padding: 0 1px; }
   background: var(--bg); color: var(--fg); border-radius: 4px; cursor: pointer; font-family: inherit;
 }
 .sw-toolbar button:hover { background: var(--soft); }
+
+/* compose lookup view */
+#compose-input {
+  width: 100%; padding: .55em .8em; font-size: 1em;
+  border: 1px solid var(--line); border-radius: 6px;
+  background: var(--bg); color: var(--fg); font-family: inherit;
+  margin-bottom: .8em;
+}
+#compose-input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--soft-blue); }
+.compose-result-summary {
+  font-size: 1.4em; font-weight: 600; padding: .8em 1em;
+  background: var(--soft); border: 1px solid var(--line); border-radius: 8px;
+  margin-bottom: .8em; word-break: break-all;
+}
+.compose-result-summary .cr-surface { color: var(--fg); }
+.compose-result-summary .cr-arrow { color: var(--muted); margin: 0 .5em; }
+.compose-result-summary .cr-reading { color: var(--green); font-family: "Yu Gothic UI", sans-serif; }
+.compose-result-summary .cr-empty { color: var(--muted); font-size: .7em; font-weight: 400; }
+.compose-jukugo-hits {
+  margin-bottom: .8em; padding: .6em 1em;
+  background: var(--soft-yellow); border: 1px solid var(--warn-border); border-radius: 6px;
+  font-size: .9em;
+}
+.compose-jukugo-hits .cjh-title { font-weight: 600; color: var(--yellow); margin-bottom: .3em; }
+.compose-jukugo-hits .cjh-row { padding: .15em 0; }
+.compose-jukugo-hits .cjh-surface { font-weight: 600; }
+.compose-jukugo-hits .cjh-reading { color: var(--green); margin-left: .5em; font-family: "Yu Gothic UI", sans-serif; }
+.compose-jukugo-hits .cjh-path { font-family: Consolas, monospace; font-size: .78em; color: var(--gray-faint); margin-left: .5em; }
+.compose-char-list { display: flex; flex-direction: column; gap: .4em; }
+.compose-char {
+  border: 1px solid var(--line); border-radius: 6px;
+  padding: .5em .8em; background: var(--bg);
+  display: grid; grid-template-columns: 3em 1fr; gap: .8em; align-items: start;
+}
+.compose-char.cc-block { border-left: 3px solid var(--purple); }
+.compose-char.cc-unihan { border-left: 3px solid var(--gray-faint); }
+.compose-char.cc-none { border-left: 3px solid var(--line); opacity: .65; }
+.compose-char .cc-ch { font-size: 1.8em; font-weight: 600; text-align: center; line-height: 1; align-self: center; }
+.compose-char .cc-info { min-width: 0; }
+.compose-char .cc-tag { display: inline-block; font-size: .7em; padding: .1em .55em; border-radius: 10px; margin-right: .4em; font-family: Consolas, monospace; }
+.compose-char.cc-block .cc-tag { background: var(--soft-purple); color: var(--purple); }
+.compose-char.cc-unihan .cc-tag { background: var(--soft); color: var(--muted); }
+.compose-char.cc-none .cc-tag { background: var(--soft); color: var(--muted); }
+.compose-char .cc-default { color: var(--green); font-family: "Yu Gothic UI", sans-serif; font-weight: 600; }
+.compose-char .cc-applied {
+  display: inline-block; margin-left: .5em; padding: .1em .5em;
+  background: var(--soft-yellow); color: var(--yellow);
+  border-radius: 4px; font-size: .82em;
+}
+.compose-char .cc-applied .cc-cond { font-family: Consolas, monospace; }
+.compose-char .cc-matches { margin-top: .3em; font-size: .85em; color: var(--muted); }
+.compose-char .cc-matches .cc-mc {
+  display: inline-block; margin: .15em .25em .15em 0; padding: .1em .5em;
+  background: var(--soft); border-radius: 4px; font-family: Consolas, monospace; font-size: .85em;
+}
+.compose-char .cc-matches .cc-mc.is-applied { background: var(--soft-yellow); color: var(--yellow); }
+.compose-char .cc-pos { font-size: .75em; color: var(--gray-faint); margin-left: .3em; }
 </style>
 <script>
 // FOUC 回避: localStorage から saved theme を即座に html[data-theme] に反映、
@@ -651,6 +708,7 @@ mark { background: var(--soft-yellow); color: inherit; padding: 0 1px; }
   <div class="view-tabs">
     <button class="vtab active" data-view="entry">📘 entries view</button>
     <button class="vtab" data-view="kanji">🈳 単漢字 view (audit 用)</button>
+    <button class="vtab" data-view="compose">🧪 構成 lookup</button>
   </div>
   <div class="controls">
     <input id="q" type="search" placeholder="検索 (例: 「魔理沙」「contains:魔」「reading:マリサ」「file:works」)" autofocus>
@@ -727,6 +785,10 @@ mark { background: var(--soft-yellow); color: inherit; padding: 0 1px; }
 <main>
   <div id="results"></div>
   <div id="kresults" style="display:none"></div>
+  <div id="cresults" style="display:none">
+    <input id="compose-input" type="text" placeholder="任意の単語 / 文を入力 (例: 「平和」「経過」「立てる」「明日花」 等) → 単漢字構成 + jukugo 検索">
+    <div id="compose-output"></div>
+  </div>
   <div id="pagination" class="pagination" style="display:none"></div>
 </main>
 
@@ -1327,11 +1389,13 @@ function readUrl() {
     if (p.has('dir')) dirFilter.value = p.get('dir');
     if (p.has('ufile')) ufileFilter.value = p.get('ufile');
     if (p.has('view')) {
-      currentView = p.get('view') === 'kanji' ? 'kanji' : 'entry';
+      const vp = p.get('view');
+      currentView = (vp === 'kanji' || vp === 'compose') ? vp : 'entry';
       document.querySelectorAll('.vtab').forEach(t => t.classList.toggle('active', t.dataset.view === currentView));
       document.querySelectorAll('.filters[data-for]').forEach(f => f.style.display = (f.dataset.for === currentView) ? '' : 'none');
       resultsEl.style.display = (currentView === 'entry') ? '' : 'none';
       kresultsEl.style.display = (currentView === 'kanji') ? '' : 'none';
+      // cresultsEl は init 時点でまだ無いので setView が後で wire up
     }
     if (p.has('kfilter')) {
       const kf = p.get('kfilter');
@@ -1383,6 +1447,10 @@ function writeUrl() {
 
 // === view tab switching ===
 
+const cresultsEl = document.getElementById('cresults');
+const composeInput = document.getElementById('compose-input');
+const composeOutput = document.getElementById('compose-output');
+
 function setView(view, opts) {
   opts = opts || {};
   currentView = view;
@@ -1392,8 +1460,12 @@ function setView(view, opts) {
   });
   resultsEl.style.display = (view === 'entry') ? '' : 'none';
   kresultsEl.style.display = (view === 'kanji') ? '' : 'none';
+  cresultsEl.style.display = (view === 'compose') ? '' : 'none';
+  // compose view では既存 search controls + dashboard を非表示
+  document.querySelector('.controls').style.display = (view === 'compose') ? 'none' : '';
+  document.getElementById('pagination').style.display = (view === 'compose') ? 'none' : '';
   if (!opts.keepPage) {
-    if (view === 'entry') entryPage = 1; else kanjiPage = 1;
+    if (view === 'entry') entryPage = 1; else if (view === 'kanji') kanjiPage = 1;
   }
   render();
 }
@@ -1401,10 +1473,175 @@ function setView(view, opts) {
 // override render to write URL after each render
 const originalRender = render;
 render = function() {
-  if (currentView === 'kanji') renderKanjiView();
+  if (currentView === 'compose') renderComposeView();
+  else if (currentView === 'kanji') renderKanjiView();
   else renderEntryView();
   writeUrl();
 };
+
+// === compose lookup ===
+
+function ccCharType(ch) {
+  if (!ch) return null;
+  if (/\\p{Script=Han}/u.test(ch)) return '漢字';
+  if (/[\\u3040-\\u309F]/.test(ch)) return 'ひらがな';
+  if (/[\\u30A0-\\u30FF]/.test(ch)) return 'カタカナ';
+  if (/[0-9０-９a-zA-Zａ-ｚＡ-Ｚ]/.test(ch)) return '英数';
+  return '記号';
+}
+
+function ccMatchApplies(m, prevCh, nextCh) {
+  for (const k of Object.keys(m)) {
+    if (k === 'reading') continue;
+    const v = m[k];
+    if (k === 'prev_eq') { if (prevCh !== v) return false; }
+    else if (k === 'next_eq') { if (nextCh !== v) return false; }
+    else if (k === 'prev_eq_any') { if (!Array.isArray(v) || !v.includes(prevCh)) return false; }
+    else if (k === 'next_eq_any') { if (!Array.isArray(v) || !v.includes(nextCh)) return false; }
+    else if (k === 'prev_char_type') { if (ccCharType(prevCh) !== v) return false; }
+    else if (k === 'next_char_type') { if (ccCharType(nextCh) !== v) return false; }
+    else if (k === 'next_starts_any') { if (!Array.isArray(v) || !nextCh || !v.some(s => nextCh === s[0])) return false; }
+    else if (k === 'prev_ends_any') { if (!Array.isArray(v) || !prevCh || !v.some(s => prevCh === s[s.length-1])) return false; }
+    else return false;
+  }
+  return true;
+}
+
+function ccLookupChar(ch, prevCh, nextCh) {
+  const idx = KANJI_IDX[ch];
+  if (!idx) return { ch, src: 'none', reading: ch, defaultR: null, applied: null, matches: [], file: null };
+  const blockRec = idx.find(r => r.src === 'k');
+  const unihanRec = idx.find(r => r.src === 'u');
+  if (blockRec) {
+    let appliedMatch = null;
+    if (blockRec.m) {
+      for (const m of blockRec.m) {
+        if (ccMatchApplies(m, prevCh, nextCh)) { appliedMatch = m; break; }
+      }
+    }
+    return {
+      ch, src: 'block', file: blockRec.f,
+      defaultR: blockRec.r,
+      reading: appliedMatch ? appliedMatch.reading : blockRec.r,
+      applied: appliedMatch, matches: blockRec.m || []
+    };
+  }
+  if (unihanRec) {
+    return { ch, src: 'unihan', file: unihanRec.f, defaultR: unihanRec.r, reading: unihanRec.r, applied: null, matches: [] };
+  }
+  return { ch, src: 'none', reading: ch, defaultR: null, applied: null, matches: [], file: null };
+}
+
+// surface index for jukugo lookup (entry type のみ、 1 surface に複数 file あり得る)
+const DATA_BY_SURFACE = new Map();
+for (const e of DATA) {
+  if (e.t === 'e') {
+    if (!DATA_BY_SURFACE.has(e.s)) DATA_BY_SURFACE.set(e.s, []);
+    DATA_BY_SURFACE.get(e.s).push(e);
+  }
+}
+
+function ccLookupJukugo(text) {
+  const hits = [];
+  const chars = Array.from(text);
+  for (let i = 0; i < chars.length; i++) {
+    for (let j = i + 2; j <= chars.length; j++) {
+      const sub = chars.slice(i, j).join('');
+      const entries = DATA_BY_SURFACE.get(sub);
+      if (entries) for (const e of entries) hits.push({ sub, e, start: i, end: j });
+    }
+  }
+  // 長い hit を優先 sort
+  hits.sort((a, b) => (b.end - b.start) - (a.end - a.start) || a.start - b.start);
+  return hits;
+}
+
+function ccCondStr(m, opts) {
+  opts = opts || {};
+  const out = [];
+  for (const k of Object.keys(m)) {
+    if (k === 'reading') continue;
+    const v = m[k];
+    const vStr = Array.isArray(v) ? (opts.short ? '[' + v.length + ']' : '[' + v.map(x => '"' + x + '"').join(', ') + ']') : '"' + v + '"';
+    out.push(k + ' = ' + vStr);
+  }
+  return out.join(opts.short ? ' ' : ' & ');
+}
+
+function renderComposeView() {
+  if (!composeOutput) return;
+  const text = composeInput.value;
+  if (!text) {
+    composeOutput.innerHTML = '<div class="empty">任意の単語 / 文を入力すると、 各漢字の [[kanji]] block / unihan / jukugo を組み合わせた reading 推定を表示します</div>';
+    return;
+  }
+  const chars = Array.from(text);
+  const results = chars.map((ch, i) => ccLookupChar(ch, i > 0 ? chars[i-1] : null, i < chars.length-1 ? chars[i+1] : null));
+  const composed = results.map(r => r.reading).join('');
+  const jukugo = ccLookupJukugo(text);
+
+  const summaryHtml = '<div class="compose-result-summary">' +
+    '<span class="cr-surface">' + escapeHtml(text) + '</span>' +
+    '<span class="cr-arrow">→</span>' +
+    '<span class="cr-reading">' + escapeHtml(composed) + '</span>' +
+    (jukugo.length ? '' : ' <span class="cr-empty">(default + match 連結のみ、 jukugo entry hit なし)</span>') +
+    '</div>';
+
+  let jukugoHtml = '';
+  if (jukugo.length) {
+    jukugoHtml = '<div class="compose-jukugo-hits">' +
+      '<div class="cjh-title">⚡ jukugo entry hit (' + jukugo.length + '): lib では band 100 で吸収、 default 連結より優先</div>' +
+      jukugo.map(h =>
+        '<div class="cjh-row">' +
+        '[' + h.start + '..' + h.end + '] <span class="cjh-surface">' + escapeHtml(h.sub) + '</span>' +
+        '<span class="cjh-reading">→ ' + escapeHtml(h.e.r) + '</span>' +
+        '<span class="cjh-path">' + escapeHtml(h.e.f) + '</span>' +
+        '</div>'
+      ).join('') +
+      '</div>';
+  }
+
+  const charsHtml = '<div class="compose-char-list">' +
+    results.map((r, i) => {
+      const prevCh = i > 0 ? chars[i-1] : null;
+      const nextCh = i < chars.length-1 ? chars[i+1] : null;
+      let cls = 'compose-char', tag = '', body = '';
+      if (r.src === 'block') {
+        cls += ' cc-block';
+        tag = '<span class="cc-tag">[[kanji]]</span>';
+        body = '<span class="cc-default">default = ' + escapeHtml(r.defaultR) + '</span>';
+        if (r.applied) {
+          body += '<span class="cc-applied">適用: <span class="cc-cond">' + escapeHtml(ccCondStr(r.applied, {short:true})) + '</span> → ' + escapeHtml(r.applied.reading) + '</span>';
+        }
+        if (r.matches.length) {
+          body += '<div class="cc-matches">match (' + r.matches.length + '): ' +
+            r.matches.map(m => {
+              const isApplied = m === r.applied;
+              return '<span class="cc-mc' + (isApplied ? ' is-applied' : '') + '">' + escapeHtml(ccCondStr(m, {short:true})) + ' → ' + escapeHtml(m.reading) + '</span>';
+            }).join('') +
+            '</div>';
+        }
+      } else if (r.src === 'unihan') {
+        cls += ' cc-unihan';
+        tag = '<span class="cc-tag">unihan</span>';
+        body = '<span class="cc-default">default = ' + escapeHtml(r.defaultR) + '</span>';
+      } else {
+        cls += ' cc-none';
+        tag = '<span class="cc-tag">' + (ccCharType(r.ch) || '?') + '</span>';
+        body = '<span class="cc-default">そのまま: ' + escapeHtml(r.ch) + '</span>';
+      }
+      const ctx = '<span class="cc-pos">prev=' + (prevCh ? '"' + escapeHtml(prevCh) + '" (' + ccCharType(prevCh) + ')' : 'なし') + ' / next=' + (nextCh ? '"' + escapeHtml(nextCh) + '" (' + ccCharType(nextCh) + ')' : 'なし') + '</span>';
+      return '<div class="' + cls + '">' +
+        '<div class="cc-ch">' + escapeHtml(r.ch) + '</div>' +
+        '<div class="cc-info">' + tag + body + '<br>' + ctx + '</div>' +
+        '</div>';
+    }).join('') +
+    '</div>';
+
+  composeOutput.innerHTML = summaryHtml + jukugoHtml + charsHtml;
+}
+
+if (composeInput) composeInput.addEventListener('input', () => { if (currentView === 'compose') renderComposeView(); });
 
 // === handlers ===
 
