@@ -1543,8 +1543,8 @@ function ccLookupJukugo(text) {
       if (entries) for (const e of entries) hits.push({ sub, e, start: i, end: j });
     }
   }
-  // 長い hit を優先 sort
-  hits.sort((a, b) => (b.end - b.start) - (a.end - a.start) || a.start - b.start);
+  // 入力中の出現順 (start 昇順) を優先、 同位置は長い hit を先に
+  hits.sort((a, b) => a.start - b.start || (b.end - b.start) - (a.end - a.start));
   return hits;
 }
 
