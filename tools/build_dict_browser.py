@@ -661,6 +661,30 @@ mark { background: var(--soft-yellow); color: inherit; padding: 0 1px; }
 .compose-jukugo-hits .cjh-row.cjh-skip .cjh-mark { background: var(--soft); color: var(--muted); }
 .compose-result-summary .cr-default-only { font-size: .82em; color: var(--muted); margin-top: .35em; font-weight: 400; }
 .compose-result-summary .cr-reading-alt { color: var(--muted); font-family: "Yu Gothic UI", sans-serif; text-decoration: line-through; text-decoration-color: var(--gray-faint); }
+.compose-steps {
+  margin-bottom: .8em; padding: .6em 1em;
+  background: var(--soft); border: 1px solid var(--line); border-radius: 6px;
+  font-size: .88em;
+}
+.compose-steps .cs-title { font-weight: 600; color: var(--accent); margin-bottom: .35em; font-size: .92em; }
+.compose-steps .cs-step { padding: .15em 0; word-break: break-all; line-height: 1.55; }
+.compose-steps .cs-num { color: var(--muted); font-family: Consolas, monospace; margin-right: .2em; }
+.compose-steps .cs-kind {
+  display: inline-block; padding: .05em .45em; border-radius: 3px;
+  font-family: Consolas, monospace; font-size: .82em; margin: 0 .15em;
+}
+.compose-steps .cs-kind.cs-jukugo { background: var(--soft-yellow); color: var(--yellow); }
+.compose-steps .cs-kind.cs-kblock { background: var(--soft-purple); color: var(--purple); }
+.compose-steps .cs-kind.cs-unihan { background: var(--soft); color: var(--muted); border: 1px solid var(--line); }
+.compose-steps .cs-kind.cs-literal { background: var(--soft); color: var(--muted); }
+.compose-steps .cs-text { font-weight: 600; }
+.compose-steps .cs-arrow { color: var(--muted); margin: 0 .35em; }
+.compose-steps .cs-reading { color: var(--green); font-family: "Yu Gothic UI", sans-serif; font-weight: 600; }
+.compose-steps .cs-extra { color: var(--muted); font-size: .82em; }
+.compose-steps .cs-extra code { background: var(--soft); padding: 0 .25em; border-radius: 2px; font-family: Consolas, monospace; }
+.compose-steps .cs-file { color: var(--gray-faint); font-family: Consolas, monospace; font-size: .78em; margin-left: .35em; }
+.compose-skipped { background: var(--bg); }
+.compose-skipped .cjh-title { color: var(--muted); font-weight: 400; }
 .compose-char-list { display: flex; flex-direction: column; gap: .4em; }
 .compose-char {
   border: 1px solid var(--line); border-radius: 6px;
@@ -1619,36 +1643,47 @@ function ccBareInput(q) {
   return q.trim();
 }
 
-// jukugo を greedy に重ならず適用 (= 長さ降順で選び、 残 char は default + match)
+// LR (= longest left-most match) で jukugo を適用 (= lib Strict engine の挙動に近い)。
+// 各 position で最長 jukugo を選び、 hit したら end まで jump、 無ければ単漢字 default + match。
 function ccComposeWithJukugo(text) {
   const chars = Array.from(text);
   const charResults = chars.map((ch, i) => ccLookupChar(ch, i > 0 ? chars[i-1] : null, i < chars.length-1 ? chars[i+1] : null));
   const allJukugo = ccLookupJukugo(text);
-  const taken = new Array(chars.length).fill(false);
-  const applied = [];
-  const skipped = [];
-  // 長い順 (長さ降順 → start 昇順) で greedy 選択
-  const sortedByLen = [...allJukugo].sort((a, b) => (b.end - b.start) - (a.end - a.start) || a.start - b.start);
-  for (const j of sortedByLen) {
-    let canTake = true;
-    for (let i = j.start; i < j.end; i++) if (taken[i]) { canTake = false; break; }
-    if (canTake) { for (let i = j.start; i < j.end; i++) taken[i] = true; applied.push(j); }
-    else skipped.push(j);
+  // index: position ごとに start する jukugo を 最長順に sort
+  const byStart = new Map();
+  for (const j of allJukugo) {
+    if (!byStart.has(j.start)) byStart.set(j.start, []);
+    byStart.get(j.start).push(j);
   }
-  applied.sort((a, b) => a.start - b.start);
-  // build reading
-  let out = '', i = 0, ai = 0;
+  for (const arr of byStart.values()) arr.sort((a, b) => (b.end - b.start) - (a.end - a.start));
+
+  const applied = [];
+  const steps = [];
+  let out = '', i = 0;
   while (i < chars.length) {
-    if (ai < applied.length && applied[ai].start === i) {
-      out += applied[ai].e.r;
-      i = applied[ai].end;
-      ai++;
+    const cands = byStart.get(i);
+    if (cands && cands.length) {
+      const j = cands[0]; // 最長
+      out += j.e.r;
+      applied.push(j);
+      steps.push({ kind: 'jukugo', start: i, end: j.end, text: j.sub, reading: j.e.r, file: j.e.f });
+      i = j.end;
     } else {
-      out += charResults[i].reading;
+      const r = charResults[i];
+      out += r.reading;
+      const cond = r.applied ? ccCondStr(r.applied, {short:true}) : null;
+      steps.push({
+        kind: r.src === 'block' ? 'kblock' : (r.src === 'unihan' ? 'unihan' : 'literal'),
+        start: i, end: i + 1, text: r.ch, reading: r.reading,
+        defaultR: r.defaultR, applied: r.applied, cond, file: r.file
+      });
       i++;
     }
   }
-  return { reading: out, applied, skipped, charResults };
+  // skipped = LR で採用されなかった jukugo (= 内側 / 重複)
+  const appliedSet = new Set(applied);
+  const skipped = allJukugo.filter(j => !appliedSet.has(j));
+  return { reading: out, applied, skipped, charResults, steps };
 }
 
 function renderComposeSummary() {
@@ -1658,23 +1693,51 @@ function renderComposeSummary() {
   const composed = ccComposeWithJukugo(text);
   const allJukugo = [...composed.applied, ...composed.skipped].sort((a, b) => a.start - b.start || (b.end - b.start) - (a.end - a.start));
   const appliedSet = new Set(composed.applied);
-  let jukugoHtml = '';
-  if (allJukugo.length) {
-    jukugoHtml = '<div class="compose-jukugo-hits">' +
-      '<div class="cjh-title">⚡ jukugo entry hit (' + allJukugo.length + ', 適用 ' + composed.applied.length + ' / skip ' + composed.skipped.length + '): lib では band 100 で吸収、 default 連結より優先</div>' +
-      allJukugo.map(h => {
-        const isApplied = appliedSet.has(h);
-        const mark = isApplied ? '✓ 適用' : '☓ 重複で skip';
-        const cls = isApplied ? 'cjh-row' : 'cjh-row cjh-skip';
-        return '<div class="' + cls + '">' +
-          '<span class="cjh-mark">' + mark + '</span>' +
-          ' [' + h.start + '..' + h.end + '] <span class="cjh-surface">' + escapeHtml(h.sub) + '</span>' +
-          '<span class="cjh-reading">→ ' + escapeHtml(h.e.r) + '</span>' +
-          '<span class="cjh-path">' + escapeHtml(h.e.f) + '</span>' +
-          '</div>';
-      }).join('') +
+
+  // 適用 step list (= LR 適用順序、 lib Strict engine の挙動に近い)
+  const stepsHtml = '<div class="compose-steps">' +
+    '<div class="cs-title">🪜 適用順序 (= LR: 左から最長 jukugo → 単漢字 [[kanji]] block / unihan、 lib 挙動に近い):</div>' +
+    composed.steps.map((s, idx) => {
+      let kindLabel, kindCls;
+      if (s.kind === 'jukugo') { kindLabel = 'jukugo'; kindCls = 'cs-jukugo'; }
+      else if (s.kind === 'kblock') { kindLabel = '[[kanji]]'; kindCls = 'cs-kblock'; }
+      else if (s.kind === 'unihan') { kindLabel = 'unihan'; kindCls = 'cs-unihan'; }
+      else { kindLabel = ccCharType(s.text) || 'literal'; kindCls = 'cs-literal'; }
+      let extra = '';
+      if (s.kind === 'kblock' && s.applied) {
+        extra = ' <span class="cs-extra">(default=' + escapeHtml(s.defaultR) + ', match: <code>' + escapeHtml(s.cond) + '</code>)</span>';
+      } else if (s.kind === 'kblock') {
+        extra = ' <span class="cs-extra">(default のみ)</span>';
+      }
+      const fileTail = s.file ? ' <span class="cs-file">' + escapeHtml(s.file) + '</span>' : '';
+      return '<div class="cs-step">' +
+        '<span class="cs-num">' + (idx + 1) + '.</span>' +
+        ' [' + s.start + '..' + s.end + '] ' +
+        '<span class="cs-kind ' + kindCls + '">' + kindLabel + '</span>' +
+        ' <span class="cs-text">' + escapeHtml(s.text) + '</span>' +
+        '<span class="cs-arrow">→</span>' +
+        '<span class="cs-reading">' + escapeHtml(s.reading) + '</span>' +
+        extra + fileTail +
+        '</div>';
+    }).join('') +
+    '</div>';
+
+  // skipped jukugo (= LR で採用されなかった内側 / 重複 jukugo)
+  let skippedHtml = '';
+  if (composed.skipped.length) {
+    skippedHtml = '<div class="compose-jukugo-hits compose-skipped">' +
+      '<div class="cjh-title">☓ 採用されなかった jukugo (' + composed.skipped.length + '): LR (左から最長) で別 jukugo に被覆 or skip された候補</div>' +
+      composed.skipped.sort((a,b)=>a.start-b.start||(b.end-b.start)-(a.end-a.start)).map(h =>
+        '<div class="cjh-row cjh-skip">' +
+        '<span class="cjh-mark">☓ 不採用</span>' +
+        ' [' + h.start + '..' + h.end + '] <span class="cjh-surface">' + escapeHtml(h.sub) + '</span>' +
+        '<span class="cjh-reading">→ ' + escapeHtml(h.e.r) + '</span>' +
+        '<span class="cjh-path">' + escapeHtml(h.e.f) + '</span>' +
+        '</div>'
+      ).join('') +
       '</div>';
   }
+
   // 比較表示: default 連結のみ vs jukugo 適用後
   const defaultOnly = composed.charResults.map(r => r.reading).join('');
   const reading = composed.reading;
@@ -1684,9 +1747,9 @@ function renderComposeSummary() {
     '<span class="cr-surface">' + escapeHtml(text) + '</span>' +
     '<span class="cr-arrow">→</span>' +
     '<span class="cr-reading">' + escapeHtml(reading) + '</span>' +
-    (isSame ? ' <span class="cr-empty">(jukugo 適用なし、 default + match 連結のみ)</span>' : ' <span class="cr-empty">(jukugo ' + composed.applied.length + ' 件適用後)</span>') +
+    (isSame ? ' <span class="cr-empty">(jukugo 適用なし、 default + match 連結のみ)</span>' : ' <span class="cr-empty">(LR 適用: jukugo ' + composed.applied.length + ' 件)</span>') +
     (isSame ? '' : '<div class="cr-default-only">default + match 連結のみ: <span class="cr-reading-alt">' + escapeHtml(defaultOnly) + '</span></div>') +
-    '</div>' + jukugoHtml;
+    '</div>' + stepsHtml + skippedHtml;
 }
 
 function renderCharAudit() {
