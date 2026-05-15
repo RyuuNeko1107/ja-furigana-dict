@@ -249,7 +249,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 卓 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 協 は core/kanji/overrides.toml の [[kanji]] block に移行
 "南" = "みなみ"
-"単" = "ひとえ"
+# 単 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 博 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 占 は core/kanji/overrides.toml の [[kanji]] block に移行
 "印" = "しるし"
@@ -286,7 +286,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 号 は core/kanji/overrides.toml の [[kanji]] block に移行
 "司" = "つかさ"
 # 各 は core/kanji/overrides.toml の [[kanji]] block に移行
-"合" = "あう"
+# 合 は core/kanji/overrides.toml の [[kanji]] block に移行
 "吉" = "よい"
 "同" = "おなじ"
 "名" = "メイ"
@@ -709,7 +709,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "懐" = "ふところ"
 # 懲 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 懸 は core/kanji/overrides.toml の [[kanji]] block に移行
-"成" = "なる"
+# 成 は core/kanji/overrides.toml の [[kanji]] block に移行
 "我" = "われ"
 # 戒 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 戚 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1135,7 +1135,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 無 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 焦 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 然 は core/kanji/overrides.toml の [[kanji]] block に移行
-"焼" = "やく"
+# 焼 は core/kanji/overrides.toml の [[kanji]] block に移行
 "煎" = "いる"
 # 煙 は core/kanji/overrides.toml の [[kanji]] block に移行
 "照" = "てる"
@@ -1256,7 +1256,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 眠 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 眺 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 「眼」 は overrides.toml の [[kanji]] block に移行 (★round 37)
-"着" = "きる"
+# 着 は core/kanji/overrides.toml の [[kanji]] block に移行
 "睡" = "ねむり"
 # 督 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 睦 は core/kanji/overrides.toml の [[kanji]] block に移行
