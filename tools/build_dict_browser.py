@@ -1481,13 +1481,8 @@ function readUrl() {
     if (p.has('mode')) modeSel.value = p.get('mode');
     if (p.has('dir')) dirFilter.value = p.get('dir');
     if (p.has('ufile')) ufileFilter.value = p.get('ufile');
-    if (p.has('view')) {
-      currentView = p.get('view') === 'kanji' ? 'kanji' : 'entry';
-      document.querySelectorAll('.vtab').forEach(t => t.classList.toggle('active', t.dataset.view === currentView));
-      document.querySelectorAll('.filters[data-for]').forEach(f => f.style.display = (f.dataset.for === currentView) ? '' : 'none');
-      resultsEl.style.display = (currentView === 'entry') ? '' : 'none';
-      kresultsEl.style.display = (currentView === 'kanji') ? '' : 'none';
-    }
+    // view param は意図的に無視 = 開くたびに default = entry view (検索 + 構成 lookup)
+    // 単漢字 audit (sweep 進捗管理用) は明示クリックで切替
     if (p.has('kfilter')) {
       const kf = p.get('kfilter');
       document.querySelectorAll('.chip.kf').forEach(c => c.classList.toggle('active', c.dataset.kfilter === kf));
@@ -1521,7 +1516,7 @@ function writeUrl() {
   if (!urlSyncEnabled) return;
   const params = new URLSearchParams();
   if (qInput.value) params.set('q', qInput.value);
-  if (currentView !== 'entry') params.set('view', currentView);
+  // view 状態は URL に書かない (= 開くたびに default = entry view)
   if (modeSel.value !== 'auto') params.set('mode', modeSel.value);
   if (dirFilter.value) params.set('dir', dirFilter.value);
   if (ufileFilter.value) params.set('ufile', ufileFilter.value);
