@@ -288,7 +288,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 各 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 合 は core/kanji/overrides.toml の [[kanji]] block に移行
 "吉" = "よい"
-"同" = "おなじ"
+# 同 は core/kanji/overrides.toml の [[kanji]] block に移行
 "名" = "メイ"
 "后" = "あと"
 "吏" = "つかさ"
@@ -1058,7 +1058,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "浪" = "なみ"
 "浮" = "うく"
 # 浴 は core/kanji/overrides.toml の [[kanji]] block に移行
-"海" = "うみ"
+# 海 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 浸 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 消 は core/kanji/overrides.toml の [[kanji]] block に移行
 "涙" = "なみだ"
@@ -1231,7 +1231,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "癖" = "くせ"
 # 発 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 登 は core/kanji/overrides.toml の [[kanji]] block に移行
-"白" = "しろ"
+# 白 は core/kanji/overrides.toml の [[kanji]] block に移行
 "百" = "ヒャク"
 "皆" = "みな"
 "皇" = "すめら"
@@ -1516,7 +1516,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 般 は core/kanji/overrides.toml の [[kanji]] block に移行
 "舶" = "おおぶね"
 "舷" = "ふなばた"
-"船" = "ふね"
+# 船 は core/kanji/overrides.toml の [[kanji]] block に移行
 "艇" = "ふね"
 "艦" = "いくさぶね"
 "良" = "よい"
@@ -1536,8 +1536,8 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "茂" = "しげる"
 "茎" = "くき"
 "茨" = "いばら"
-"茶" = "ちゃ"
-"草" = "くさ"
+# 茶 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 草 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 荒 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 荘 は core/kanji/overrides.toml の [[kanji]] block に移行
 "荷" = "に"
@@ -1921,8 +1921,8 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # "雑" は core/kanji/overrides.toml の [[kanji]] block に移行
 # 離 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 難 は core/kanji/overrides.toml の [[kanji]] block に移行
-"雨" = "あめ"
-"雪" = "ゆき"
+# 雨 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 雪 は core/kanji/overrides.toml の [[kanji]] block に移行
 "雰" = "フン"
 "雲" = "くも"
 "零" = "あまり"

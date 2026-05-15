@@ -2091,6 +2091,66 @@ reading = "キ"
 next_starts_any = ["く", "っ", "か", "き", "け", "こ", "い"]
 reading = "ツ"
 
+# === 純 migration 7 字 (= reading 変更なし、 unihan default を [[kanji]] block
+#     に集約。 音読み jukugo は band 100 で吸収される pattern) ===
+
+# 「海」: default = うみ (= 旧 unihan entry と等価)。 カイ系 jukugo (海洋 /
+# 海岸 / 海軍 / 航海 等) は band 100 で吸収。
+[[kanji]]
+char = "海"
+default = "うみ"
+
+# 「船」: default = ふね。 セン系 jukugo (船舶 / 汽船 / 造船 / 漁船 等) は
+# band 100 で吸収。
+[[kanji]]
+char = "船"
+default = "ふね"
+
+# 「雨」: default = あめ。 ウ系 jukugo (雨天 / 梅雨=ツユ / 雨季 等) は band
+# 100 で吸収。
+[[kanji]]
+char = "雨"
+default = "あめ"
+
+# 「雪」: default = ゆき。 セツ系 jukugo (雪原 / 積雪 / 初雪 / 大雪 等) は
+# band 100 で吸収。
+[[kanji]]
+char = "雪"
+default = "ゆき"
+
+# 「草」: default = くさ。 ソウ系 jukugo (草原 / 七草 / 雑草 / 海草 / 海藻
+# 等) は band 100 で吸収。
+[[kanji]]
+char = "草"
+default = "くさ"
+
+# 「白」: default = しろ。 ハク/ビャク系 jukugo (白人 / 白米 / 白衣 / 紅白
+# / 告白 / 関白 等) は band 100 で吸収。 「白い = シロイ」 形容詞は default
+# しろ + 「い/く」 で okurigana 連結 (= シロい、 シロく)。
+[[kanji]]
+char = "白"
+default = "しろ"
+
+# 「茶」: default = ちゃ。 サ系 jukugo (茶道 / 茶話 / 喫茶 等) も jukugo
+# 個別登録 = band 100 で吸収。
+[[kanji]]
+char = "茶"
+default = "ちゃ"
+
+# === 動詞 / 形容動詞 分岐系 ===
+
+# 「同」: unihan default 「おなじ」 → ドウ 系多数 (= 同様 / 同時 / 共同 /
+# 同情 / 同盟 / 同期 等)。 形容動詞 「同じ = オナジ」 (= 同じ / 同じく) は
+# next が 「じ」 のとき reading = オナ で okurigana 連結。 default = ドウ
+# に倒し、 動詞 / 形容動詞 「同じ」 は matcher で救う。
+[[kanji]]
+char = "同"
+default = "ドウ"
+
+[[kanji.match]]
+next_starts_any = ["じ"]
+reading = "オナ"
+
 # 「者」: default 音読み 「シャ」 (= 「医者 / 学者 / 患者 / 編者」 等)。 動詞連体形 + 者
 # (= 「戦う者 / 行く者 / 知る者」 形式名詞用法) は prev token 末尾が動詞語尾のとき 「モノ」。
 # 「強者 / 若者」 等 漢字 + 者 = モノ は jukugo に band 100 で個別登録。
