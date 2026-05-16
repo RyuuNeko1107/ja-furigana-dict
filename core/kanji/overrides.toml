@@ -2324,6 +2324,65 @@ default = "うま"
 char = "石"
 default = "いし"
 
+# === batch 9 字 (= 訓読み default が誤 or 不適切、 音読み圧倒的多数派) ===
+
+# 「模」: unihan default 「かた」 (= 「型」 別字、 unihan 誤) → モ/ボ系 13 件
+# (= 模型 / 模様 / 模倣 / 模索 / 規模 等)。 default = モ に倒す純化。
+[[kanji]]
+char = "模"
+default = "モ"
+
+# 「副」: unihan default 「そう」 (= 「添」 別字、 unihan 誤) → フク系 8 件
+# (= 副業 / 副収入 / 副大統領 / 副作用 等)。 default = フク に倒す純化。
+[[kanji]]
+char = "副"
+default = "フク"
+
+# 「特」: unihan default 「ことに」 (= 古語的副詞) → トク/トッ系 13 件 (=
+# 特別 / 特定 / 特集 / 特急 / 独特 等)。 default = トク に倒す純化。
+[[kanji]]
+char = "特"
+default = "トク"
+
+# 「科」: unihan default 「しな」 (= 「品」 別字、 unihan 誤) → カ系 7 件
+# (= 科学 / 科目 / 学科 / 教科 / 理科 等)。 default = カ に倒す純化。
+[[kanji]]
+char = "科"
+default = "カ"
+
+# 「由」: unihan default 「よし」 (= 古語的) → ユ/ユウ/ヨウ系 15 件 (= 由来
+# / 自由 / 理由 / 経由 / 由緒 等)。 default = ユ に倒す純化 (= 「自由 =
+# ジユウ」 等の ユウ 系は jukugo 個別登録 = band 100 で吸収)。
+[[kanji]]
+char = "由"
+default = "ユ"
+
+# 「礼」: unihan default 「いや」 (= 「嫌」 別字、 unihan 誤) → レイ/ライ系
+# 16 件 (= 礼儀 / 敬礼 / 失礼 / 儀礼 / 礼拝 等)。 default = レイ に倒す純化。
+[[kanji]]
+char = "礼"
+default = "レイ"
+
+# 「脈」: unihan default 「すじ」 (= 「筋」 別字、 unihan 誤) → ミャク系 7
+# 件 (= 静脈 / 動脈 / 血脈 / 山脈 / 文脈 等)。 default = ミャク に倒す純化。
+[[kanji]]
+char = "脈"
+default = "ミャク"
+
+# 「技」: unihan default 「わざ」 → ギ系 18 件 (= 技術 / 技能 / 競技 / 特技
+# / 技巧 / 演技 等)。 ワザ系 jukugo は 「立技 = タチワザ」 等で個別登録済。
+# default = ギ に倒す純化。
+[[kanji]]
+char = "技"
+default = "ギ"
+
+# 「管」: unihan default 「くだ」 → カン系 14 件 (= 管理 / 管轄 / 配管 /
+# 血管 / 管楽器 / 鉄管 等)。 クダ系 1 件 (= 手練手管=テレンテクダ) は
+# jukugo 個別登録 = band 100 で吸収。 default = カン に倒す純化。
+[[kanji]]
+char = "管"
+default = "カン"
+
 # === 純 migration 7 字 (= reading 変更なし、 unihan default を [[kanji]]
 #     block に集約) ===
 
