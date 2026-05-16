@@ -7778,3 +7778,83 @@ default = "ゴウ"
 [[kanji]]
 char = "財"
 default = "ザイ"
+
+# 「飛」 default 「ヒ」 (= 飛行/飛躍/飛行機/雄飛/飛沫/飛車)。
+# 動詞 「飛ぶ」 は okurigana 列挙で 「と」 へ切替
+[[kanji]]
+char = "飛"
+default = "ヒ"
+
+# 「飛ぶ/飛ばない/飛んだ/飛んで/飛べば/飛ぼう/飛び○○」 = 動詞 → と
+[[kanji.match]]
+next_starts_any = ["ぶ", "ば", "び", "ん", "べ", "ぼ"]
+reading = "と"
+
+# 「飼」 default 「シ」 (= 飼育/飼料/飼養)。
+# 動詞 「飼う」 は okurigana 列挙で 「か」 へ切替
+[[kanji]]
+char = "飼"
+default = "シ"
+
+# 「飼う/飼わない/飼った/飼って/飼えば/飼おう/飼い○○」 = 動詞 → か
+[[kanji.match]]
+next_starts_any = ["う", "わ", "い", "っ", "え", "お"]
+reading = "か"
+
+# 「鳴」 default 「メイ」 (= 悲鳴/共鳴/雷鳴/絶鳴/鳴動)。
+# 動詞 「鳴く」 「鳴る」 は okurigana 列挙で 「な」 へ切替
+[[kanji]]
+char = "鳴"
+default = "メイ"
+
+# 「鳴く/鳴る/鳴いた/鳴って/鳴れば/鳴き○○」 = 動詞 → な (= 自動詞 2 種共通)
+[[kanji.match]]
+next_starts_any = ["く", "か", "き", "っ", "け", "こ", "る", "ら", "り", "れ", "ろ"]
+reading = "な"
+
+# 「騎」 default 「キ」 (= 騎兵/騎馬/騎手/騎乗/一騎打ち/騎士)。
+# unihan default 「のる」 は古語動詞、 現代では熟語 dominant (「乗」 が動詞 dominant)
+[[kanji]]
+char = "騎"
+default = "キ"
+
+# 「陸」 default 「リク」 (= 陸地/大陸/上陸/着陸/離陸/陸軍/陸上/水陸)。
+# unihan default 「おか」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "陸"
+default = "リク"
+
+# 「隊」 default 「タイ」 (= 隊員/軍隊/部隊/中隊/連隊/隊長/楽隊/特攻隊)。
+# unihan default 「くみ」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "隊"
+default = "タイ"
+
+# 「領」 default 「リョウ」 (= 領土/領域/領主/大統領/首領/領海/領空/横領/占領)。
+# unihan default 「うなじ」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "領"
+default = "リョウ"
+
+# 「額」 default 「ガク」 (= 金額/差額/総額/全額/額面/月額/年額/同額)。
+# unihan default 「ひたい」 は単独名詞のみ、 jukugo 「お額」 等は個別
+[[kanji]]
+char = "額"
+default = "ガク"
+
+# 「題」 default 「ダイ」 (= 問題/題名/出題/課題/演題/主題/標題/題目)。
+# unihan default 「ひたい」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "題"
+default = "ダイ"
+
+# 「静」 default 「セイ」 (= 静寂/静止/冷静/閑静/静脈/平静/動静/静電気)。
+# 形容動詞 「静か」 = しずか は next_eq で切替
+[[kanji]]
+char = "静"
+default = "セイ"
+
+# 「静か」 = しずか (形容動詞)
+[[kanji.match]]
+next_eq = "か"
+reading = "しず"

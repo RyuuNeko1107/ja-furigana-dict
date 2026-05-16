@@ -1900,12 +1900,12 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 陳 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 陵 は core/kanji/overrides.toml の [[kanji]] block に移行
 "陶" = "すえ"
-"陸" = "おか"
+# 陸 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 険 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 陽 は core/kanji/overrides.toml の [[kanji]] block に移行
 "隅" = "すみ"
 "隆" = "たかい"
-"隊" = "くみ"
+# 隊 は core/kanji/overrides.toml の [[kanji]] block に移行
 "階" = "カイ"
 # 随 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 隔 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1935,7 +1935,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "霧" = "きり"
 "露" = "つゆ"
 "青" = "あお"
-"静" = "しず"
+# 静 は core/kanji/overrides.toml の [[kanji]] block に移行
 "面" = "メン"
 "革" = "かわ"
 "靴" = "くつ"
@@ -1952,22 +1952,22 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 頑 は core/kanji/overrides.toml の [[kanji]] block に移行
 "頒" = "しく"
 "頓" = "とみに"
-"領" = "うなじ"
+# 領 は core/kanji/overrides.toml の [[kanji]] block に移行
 "頬" = "ホホ"
 # 頭 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 頻 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 頼 は core/kanji/overrides.toml の [[kanji]] block に移行
-"題" = "ひたい"
-"額" = "ひたい"
+# 題 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 額 は core/kanji/overrides.toml の [[kanji]] block に移行
 "顎" = "あご"
 "顔" = "かお"
 # 顕 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 願 は core/kanji/overrides.toml の [[kanji]] block に移行
 "顧" = "かえりみる"
-"飛" = "とぶ"
+# 飛 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 飢 は core/kanji/overrides.toml の [[kanji]] block に移行
 "飯" = "めし"
-"飼" = "かう"
+# 飼 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 飽 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 飾 は core/kanji/overrides.toml の [[kanji]] block に移行
 "餅" = "もち"
@@ -1983,7 +1983,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 駆 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 駐 は core/kanji/overrides.toml の [[kanji]] block に移行
 "駒" = "こま"
-"騎" = "のる"
+# 騎 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 騒 は core/kanji/overrides.toml の [[kanji]] block に移行
 "験" = "あかし"
 # 騰 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -2001,7 +2001,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 鮮 は core/kanji/overrides.toml の [[kanji]] block に移行
 "鯨" = "くじら"
 # 鳥 は core/kanji/overrides.toml の [[kanji]] block に移行
-"鳴" = "なく"
+# 鳴 は core/kanji/overrides.toml の [[kanji]] block に移行
 "鶏" = "にわとり"
 "鶴" = "つる"
 "鹿" = "しか"
