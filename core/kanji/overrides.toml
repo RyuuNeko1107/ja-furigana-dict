@@ -7598,3 +7598,93 @@ default = "ホン"
 [[kanji.match]]
 next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ", "す", "さ", "し", "せ", "そ"]
 reading = "ひるがえ"
+
+# 「裂」 default 「レツ」 (= 分裂/破裂/亀裂/決裂/支離滅裂/炸裂/裂傷)。
+# 動詞 「裂く/裂ける」 は okurigana 列挙で 「さ」 へ切替
+[[kanji]]
+char = "裂"
+default = "レツ"
+
+# 「裂く/裂ける/裂かない/裂いた/裂いて/裂けば/裂こう」 = 動詞 → さ
+[[kanji.match]]
+next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
+reading = "さ"
+
+# 「視」 default 「シ」 (= 視覚/視線/監視/凝視/重視/無視/問題視/可視/不可視/直視)。
+# 動詞 「視る」 は okurigana 列挙で 「み」 へ切替
+[[kanji]]
+char = "視"
+default = "シ"
+
+# 「視る/視ない/視た/視て/視れば/視ろ」 = 動詞 → み
+[[kanji.match]]
+next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ"]
+reading = "み"
+
+# 「討」 default 「トウ」 (= 討論/検討/討議/追討/掃討/征討/敵討)。
+# 動詞 「討つ」 は okurigana 列挙で 「う」 へ切替
+[[kanji]]
+char = "討"
+default = "トウ"
+
+# 「討つ/討たない/討った/討って/討てば/討とう/討ち○○」 = 動詞 → う
+[[kanji.match]]
+next_starts_any = ["つ", "た", "ち", "っ", "て", "と"]
+reading = "う"
+
+# 「試」 default 「シ」 (= 試験/試合/試案/試行/試食/試料/追試/再試/入試)。
+# 動詞 「試す」 は okurigana 列挙で 「ため」、 「試みる」 は 「こころ」 へ切替
+[[kanji]]
+char = "試"
+default = "シ"
+
+# 「試す/試さない/試した/試して/試せば/試そう」 = 動詞 → ため
+[[kanji.match]]
+next_starts_any = ["す", "さ", "し", "せ", "そ"]
+reading = "ため"
+
+# 「試みる/試みた/試み (= 名詞)」 = 動詞 → こころ
+[[kanji.match]]
+next_starts_any = ["み"]
+reading = "こころ"
+
+# 「訴」 default 「ソ」 (= 訴訟/告訴/起訴/直訴/控訴/勝訴/敗訴/上訴/提訴)。
+# 動詞 「訴える」 は okurigana 列挙で 「うった」 (= 3 mora 訓読み) へ切替
+[[kanji]]
+char = "訴"
+default = "ソ"
+
+# 「訴える/訴えない/訴えた/訴えて/訴えれば/訴えよう」 = 動詞 → うった
+[[kanji.match]]
+next_starts_any = ["え", "わ", "い", "っ", "う"]
+reading = "うった"
+
+# 「臓」 default 「ゾウ」 (= 内臓/心臓/肝臓/腎臓/膵臓/脾臓/臓器/五臓)。
+# unihan default 「はらわた」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "臓"
+default = "ゾウ"
+
+# 「臣」 default 「シン」 (= 家臣/大臣/臣下/重臣/忠臣/外務大臣/総理大臣/臣民)。
+# unihan default 「おみ」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "臣"
+default = "シン"
+
+# 「衛」 default 「エイ」 (= 衛生/衛星/防衛/護衛/自衛/守衛/衛兵)。
+# unihan default 「まもり」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "衛"
+default = "エイ"
+
+# 「華」 default 「カ」 (= 華麗/中華/豪華/栄華/華族/昇華/精華/繁華街)。
+# unihan default 「はな」 は古語、 現代では熟語 dominant (「花」 が訓 dominant)
+[[kanji]]
+char = "華"
+default = "カ"
+
+# 「英」 default 「エイ」 (= 英語/英訳/英断/英雄/英才/俊英/英会話/英文)。
+# unihan default 「はな」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "英"
+default = "エイ"
