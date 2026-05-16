@@ -7333,3 +7333,93 @@ reading = "すで"
 [[kanji]]
 char = "旺"
 default = "オウ"
+
+# 「死」 default 「シ」 (= 死亡/必死/急死/即死/死体/死刑/死神/死活/瀕死)。
+# 動詞 「死ぬ」 は okurigana 列挙で 「し」 へ切替
+[[kanji]]
+char = "死"
+default = "シ"
+
+# 「死ぬ/死なない/死んだ/死んで/死ねば/死のう」 = 動詞 → し
+[[kanji.match]]
+next_starts_any = ["ぬ", "な", "に", "ん", "ね", "の"]
+reading = "し"
+
+# 「沿」 default 「エン」 (= 沿岸/沿線/沿革/沿道)。
+# 動詞 「沿う」 は okurigana 列挙で 「そ」 へ切替
+[[kanji]]
+char = "沿"
+default = "エン"
+
+# 「沿う/沿わない/沿った/沿って/沿えば/沿おう/沿い○○」 = 動詞 → そ
+[[kanji.match]]
+next_starts_any = ["う", "わ", "い", "っ", "え", "お"]
+reading = "そ"
+
+# 「泣」 default 「キュウ」 (= 号泣/感泣/啼泣/泣訴)。
+# 動詞 「泣く」 は okurigana 列挙で 「な」 へ切替
+[[kanji]]
+char = "泣"
+default = "キュウ"
+
+# 「泣く/泣かない/泣いた/泣いて/泣けば/泣こう/泣き○○」 = 動詞 → な
+[[kanji.match]]
+next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
+reading = "な"
+
+# 「浮」 default 「フ」 (= 浮力/浮沈/浮上/浮揚/浮島/浮世絵)。
+# 動詞 「浮く/浮かぶ/浮かべる」 は okurigana 列挙で 「う」 へ切替
+[[kanji]]
+char = "浮"
+default = "フ"
+
+# 「浮く/浮かぶ/浮かべる/浮かない/浮いた/浮いて/浮けば/浮こう」 = 動詞 → う
+[[kanji.match]]
+next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
+reading = "う"
+
+# 「減」 default 「ゲン」 (= 減少/削減/軽減/減速/減税/加減/激減/減量/逓減)。
+# 動詞 「減る/減らす」 は okurigana 列挙で 「へ」 へ切替
+[[kanji]]
+char = "減"
+default = "ゲン"
+
+# 「減る/減らない/減った/減って/減れば/減ろう/減らす/減り○○」 = 動詞 → へ
+[[kanji.match]]
+next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ"]
+reading = "へ"
+
+# 「標」 default 「ヒョウ」 (= 標準/標的/目標/座標/標高/商標/標題/標識)。
+# unihan default 「こずえ」 は古語名詞、 現代では熟語 dominant
+[[kanji]]
+char = "標"
+default = "ヒョウ"
+
+# 「殊」 default 「シュ」 (= 特殊/殊勝/特殊性)。
+# 副詞 「殊に」 = ことに は next_eq で切替
+[[kanji]]
+char = "殊"
+default = "シュ"
+
+# 「殊に」 = ことに (副詞用法)
+[[kanji.match]]
+next_eq = "に"
+reading = "こと"
+
+# 「毎」 default 「マイ」 (= 毎日/毎週/毎年/毎月/毎回/毎度/毎朝/毎晩)。
+# unihan default 「ごと」 は古語連体助詞、 現代では熟語 dominant
+[[kanji]]
+char = "毎"
+default = "マイ"
+
+# 「民」 default 「ミン」 (= 国民/市民/住民/民族/民間/農民/移民/民主/民衆)。
+# unihan default 「たみ」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "民"
+default = "ミン"
+
+# 「涯」 default 「ガイ」 (= 生涯/天涯/境涯)。
+# unihan default 「きし」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "涯"
+default = "ガイ"
