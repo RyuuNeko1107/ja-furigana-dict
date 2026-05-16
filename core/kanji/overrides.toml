@@ -7858,3 +7858,88 @@ default = "セイ"
 [[kanji.match]]
 next_eq = "か"
 reading = "しず"
+
+# 「越」 default 「エツ」 (= 越境/超越/卓越/越冬/優越/僭越/越権)。
+# 動詞 「越す/越える」 は okurigana 列挙で 「こ」 へ切替
+[[kanji]]
+char = "越"
+default = "エツ"
+
+# 「越す/越さない/越した/越える/越えない/越えた」 = 動詞 → こ (= 自/他動詞 共通)
+[[kanji.match]]
+next_starts_any = ["す", "さ", "し", "せ", "そ", "え", "わ", "い"]
+reading = "こ"
+
+# 「蹴」 default 「シュウ」 (= 一蹴/蹴球)。
+# 動詞 「蹴る」 は okurigana 列挙で 「け」 へ切替
+[[kanji]]
+char = "蹴"
+default = "シュウ"
+
+# 「蹴る/蹴らない/蹴った/蹴って/蹴れば/蹴ろう/蹴り○○」 = 動詞 → け
+[[kanji.match]]
+next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ"]
+reading = "け"
+
+# 「透」 default 「トウ」 (= 透過/透明/浸透/透視/透徹)。
+# 動詞 「透く/透ける/透かす」 は okurigana 列挙で 「す」 へ切替
+[[kanji]]
+char = "透"
+default = "トウ"
+
+# 「透く/透ける/透かす/透いた/透けば」 = 動詞 → す
+[[kanji.match]]
+next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
+reading = "す"
+
+# 「顧」 default 「コ」 (= 顧客/回顧/顧問/愛顧/一顧/後顧)。
+# 動詞 「顧みる」 は okurigana 列挙で 「かえり」 へ切替 (= 3 mora 訓読み)
+[[kanji]]
+char = "顧"
+default = "コ"
+
+# 「顧みる」 = かえりみる (動詞)
+[[kanji.match]]
+next_starts_any = ["み"]
+reading = "かえり"
+
+# 「遭」 default 「ソウ」 (= 遭難/遭遇)。
+# 動詞 「遭う」 は okurigana 列挙で 「あ」 へ切替
+[[kanji]]
+char = "遭"
+default = "ソウ"
+
+# 「遭う/遭わない/遭った/遭って/遭えば/遭おう」 = 動詞 → あ
+[[kanji.match]]
+next_starts_any = ["う", "わ", "い", "っ", "え", "お"]
+reading = "あ"
+
+# 「邦」 default 「ホウ」 (= 邦人/邦楽/邦画/連邦/異邦/友邦)。
+# unihan default 「くに」 は古語、 現代では熟語 dominant (「国」 が訓 dominant)
+[[kanji]]
+char = "邦"
+default = "ホウ"
+
+# 「邸」 default 「テイ」 (= 邸宅/官邸/私邸/別邸/邸内)。
+# unihan default 「やしき」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "邸"
+default = "テイ"
+
+# 「郡」 default 「グン」 (= 郡部/郡内/群馬郡)。
+# unihan default 「こおり」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "郡"
+default = "グン"
+
+# 「隆」 default 「リュウ」 (= 隆起/隆盛/興隆/盛隆/隆々)。
+# unihan default 「たかい」 は古語形容詞、 現代では熟語 dominant
+[[kanji]]
+char = "隆"
+default = "リュウ"
+
+# 「鋼」 default 「コウ」 (= 鋼鉄/製鋼/鋼板/鉄鋼/鋼材)。
+# unihan default 「はがね」 は名詞単独のみ、 現代では熟語 dominant
+[[kanji]]
+char = "鋼"
+default = "コウ"
