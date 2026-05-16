@@ -721,19 +721,29 @@ mark { background: var(--soft-yellow); color: inherit; padding: 0 1px; }
 
 /* === スマホ / 狭幅対応 (= max-width 720px) === */
 @media (max-width: 720px) {
-  header { padding: .55em .7em; }
+  /* sticky 解除: 大きい header が画面占めて結果が見えない問題対策、
+     スクロールで header は流す */
+  header { position: static; padding: .55em .7em; }
   h1 { font-size: 1.05em; }
   h1 .count { font-size: .68em; display: block; margin-left: 0; margin-top: .1em; }
   .nav { font-size: .78em; flex-wrap: wrap; gap: .4em; }
+  /* dashboard (= 全字 sweep audit 用) は mobile では非表示、 単漢字 audit
+     tab を開いた時のみ手動展開 */
+  #dashboard, .view-tabs-toggle { display: none; }
+  /* mobile では既存 filter chip 群を 折り畳み details で隠す (= 検索結果に
+     集中、 必要なら展開) */
+  .filters { display: none; }
+  .filters.shown { display: flex; }
   .view-tabs { flex-wrap: wrap; gap: .25em; }
   .vtab { padding: .35em .6em; font-size: .82em; }
   #q { font-size: 16px; padding: .5em .65em; } /* 16px で iOS の auto-zoom 抑止 */
   select { font-size: 16px; padding: .5em .65em; }
   .controls { gap: .4em; }
   .help-toggle, .theme-toggle { font-size: .82em; padding: .3em .55em; }
-  .filters { gap: .3em; }
   .chip { padding: .3em .65em; font-size: .82em; } /* タップサイズ確保 */
   #stat { width: 100%; margin-left: 0; margin-top: .25em; }
+  #help { display: none; }
+  #help.shown { display: block; }
   main { padding: .6em .7em 4em; }
   .card { padding: .55em .7em; margin: .35em 0; }
   .surface { font-size: 1.1em; }
