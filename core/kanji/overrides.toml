@@ -7238,3 +7238,98 @@ default = "ビ"
 [[kanji]]
 char = "態"
 default = "タイ"
+
+# 「撃」 default 「ゲキ」 (= 撃退/反撃/攻撃/迎撃/射撃/突撃/打撃/襲撃)。
+# 動詞 「撃つ」 は okurigana 列挙で 「う」 へ切替
+[[kanji]]
+char = "撃"
+default = "ゲキ"
+
+# 「撃つ/撃たない/撃った/撃って/撃てば/撃とう/撃ち○○」 = 動詞 → う
+[[kanji.match]]
+next_starts_any = ["つ", "た", "ち", "っ", "て", "と"]
+reading = "う"
+
+# 「撮」 default 「サツ」 (= 撮影/盗撮/特撮)。
+# 動詞 「撮る」 は okurigana 列挙で 「と」 へ切替
+[[kanji]]
+char = "撮"
+default = "サツ"
+
+# 「撮る/撮らない/撮った/撮って/撮れば/撮ろう/撮り○○」 = 動詞 → と
+[[kanji.match]]
+next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ"]
+reading = "と"
+
+# 「散」 default 「サン」 (= 散歩/解散/散乱/散文/拡散/退散/分散/発散/閑散)。
+# 動詞 「散る/散らす/散らかる」 は okurigana 列挙で 「ち」 へ切替
+[[kanji]]
+char = "散"
+default = "サン"
+
+# 「散る/散らない/散った/散って/散れば/散ろう/散らす/散らかる」 = 動詞 → ち
+[[kanji.match]]
+next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ"]
+reading = "ち"
+
+# 「断」 default 「ダン」 (= 判断/決断/油断/中断/横断/英断/独断/診断/専断)。
+# 動詞 「断つ/断る」 は okurigana 列挙で 「た」 / 「ことわ」 (= jukugo 個別)
+[[kanji]]
+char = "断"
+default = "ダン"
+
+# 「断つ/断たない/断った/断って/断てば/断とう/断ち○○」 = 動詞 → た
+[[kanji.match]]
+next_starts_any = ["つ", "た", "ち", "っ", "て", "と"]
+reading = "た"
+
+# 「改」 default 「カイ」 (= 改革/改善/改名/改造/改正/改修/改良/改訂/改装)。
+# 動詞 「改める/改まる」 は okurigana 列挙で 「あらた」 へ切替
+[[kanji]]
+char = "改"
+default = "カイ"
+
+# 「改める/改まる/改めて」 = 動詞 → あらた
+[[kanji.match]]
+next_starts_any = ["ま", "み", "む", "め", "も"]
+reading = "あらた"
+
+# 「援」 default 「エン」 (= 援助/応援/支援/救援/声援/後援/応援団)。
+# unihan default 「たすけ」 は古語名詞、 現代では熟語 dominant
+[[kanji]]
+char = "援"
+default = "エン"
+
+# 「未」 default 「ミ」 (= 未来/未満/未定/未解/未然/未明/未知/未済/未婚)。
+# 副詞 「未だ」 = いまだ は next_eq で切替
+[[kanji]]
+char = "未"
+default = "ミ"
+
+# 「未だ」 = いまだ (副詞用法)
+[[kanji.match]]
+next_eq = "だ"
+reading = "いま"
+
+# 「末」 default 「マツ」 (= 末期/結末/週末/年末/月末/末路/末日/巻末/期末)。
+# 訓 「すえ」 (= 末っ子/末娘/行く末) は jukugo 個別
+[[kanji]]
+char = "末"
+default = "マツ"
+
+# 「既」 default 「キ」 (= 既存/既知/既出/既婚/既往/既成/既得)。
+# 副詞 「既に」 = すでに は next_eq で切替
+[[kanji]]
+char = "既"
+default = "キ"
+
+# 「既に」 = すでに (副詞用法)
+[[kanji.match]]
+next_eq = "に"
+reading = "すで"
+
+# 「旺」 default 「オウ」 (= 旺盛/興旺)。
+# unihan default 「さかん」 は古語形容動詞、 現代では熟語 dominant
+[[kanji]]
+char = "旺"
+default = "オウ"
