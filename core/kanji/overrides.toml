@@ -6738,3 +6738,21 @@ default = "キ"
 [[kanji]]
 char = "蔵"
 default = "ゾウ"
+
+# 「雛」 default 「ひな」 (= 雛祭/雛形/雛人形/雛壇/雛菊/雛鳥)。
+# on-yomi 「スウ」 は 「育雛=イクスウ」 等の専門用語のみで希少
+[[kanji]]
+char = "雛"
+default = "ひな"
+
+# 「鷹」 default 「たか」 (= 鷹狩/白鷹/雀鷹/鷹見)。
+# on-yomi 「オウ/ヨウ」 case = 「鷹揚=オウヨウ」、 連濁 「鷹匠=タカジョウ」 は jukugo 個別
+[[kanji]]
+char = "鷹"
+default = "たか"
+
+# 「鳩」 default 「はと」 (= 鳩時計/土鳩/伝書鳩/鳩派/鳩胸)。
+# on-yomi 「キュウ」 case = 「鳩首/鳩舎/鳩合」 は jukugo 個別
+[[kanji]]
+char = "鳩"
+default = "はと"
