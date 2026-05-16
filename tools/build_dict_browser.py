@@ -1777,14 +1777,15 @@ function renderComposeSummary() {
   // 比較表示: default 連結のみ vs jukugo 適用後
   const defaultOnly = composed.charResults.map(r => r.reading).join('');
   const reading = composed.reading;
-  const isSame = defaultOnly === reading;
+  const noJukugoApplied = composed.applied.length === 0;
+  const readingDiffer = defaultOnly !== reading;
   composeSummaryEl.innerHTML =
     '<div class="compose-result-summary">' +
     '<span class="cr-surface">' + escapeHtml(text) + '</span>' +
     '<span class="cr-arrow">→</span>' +
     '<span class="cr-reading">' + escapeHtml(reading) + '</span>' +
-    (isSame ? ' <span class="cr-empty">(jukugo 適用なし、 default + match 連結のみ)</span>' : ' <span class="cr-empty">(LR 適用: jukugo ' + composed.applied.length + ' 件)</span>') +
-    (isSame ? '' : '<div class="cr-default-only">default + match 連結のみ: <span class="cr-reading-alt">' + escapeHtml(defaultOnly) + '</span></div>') +
+    (noJukugoApplied ? ' <span class="cr-empty">(jukugo 適用なし、 default + match 連結のみ)</span>' : ' <span class="cr-empty">(LR 適用: jukugo ' + composed.applied.length + ' 件)</span>') +
+    (readingDiffer ? '<div class="cr-default-only">default + match 連結のみ: <span class="cr-reading-alt">' + escapeHtml(defaultOnly) + '</span></div>' : '') +
     '</div>' + stepsHtml + skippedHtml;
 }
 
