@@ -319,13 +319,13 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 唆 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 唇 は core/kanji/overrides.toml の [[kanji]] block に移行
 "唐" = "から"
-"唯" = "これ"
+# 唯 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 唱 は core/kanji/overrides.toml の [[kanji]] block に移行
 "唾" = "つば"
 # 商 は core/kanji/overrides.toml の [[kanji]] block に移行
-"問" = "とう"
+# 問 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 啓 は core/kanji/overrides.toml の [[kanji]] block に移行
-"善" = "よい"
+# 善 は core/kanji/overrides.toml の [[kanji]] block に移行
 "喉" = "のど"
 "喚" = "よぶ"
 # 喜 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -339,7 +339,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 嘆 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 嘱 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 嘲 は core/kanji/overrides.toml の [[kanji]] block に移行
-"噴" = "ふく"
+# 噴 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 嚇 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 囚 は core/kanji/overrides.toml の [[kanji]] block に移行
 # "四" は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -353,7 +353,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "圏" = "ケン"
 # 土 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 「圧」 は overrides.toml の [[kanji]] block に移行 (★round 39)
-"在" = "ある"
+# 在 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 地 は core/kanji/overrides.toml の [[kanji]] block に移行
 "坂" = "さか"
 "坊" = "へや"
@@ -365,7 +365,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 埋 は core/kanji/overrides.toml の [[kanji]] block に移行
 "城" = "しろ"
 # 域 は core/kanji/overrides.toml の [[kanji]] block に移行
-"執" = "とる"
+# 執 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 培 は core/kanji/overrides.toml の [[kanji]] block に移行
 "基" = "もと"
 "埼" = "さき"
@@ -383,7 +383,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "塊" = "かたまり"
 "塑" = "でく"
 "塔" = "トウ"
-"塗" = "ぬる"
+# 塗 は core/kanji/overrides.toml の [[kanji]] block に移行
 "塚" = "つか"
 # 塞 は core/kanji/overrides.toml の [[kanji]] block に移行
 "塩" = "しお"
@@ -433,7 +433,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "妄" = "みだり"
 # 妊 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 妖 は core/kanji/overrides.toml の [[kanji]] block に移行
-"妙" = "たえ"
+# 妙 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 妥 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 妨 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 妬 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -465,8 +465,8 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 字 は core/kanji/overrides.toml の [[kanji]] block に移行
 "存" = "ある"
 "孝" = "コウ"
-"季" = "すえ"
-"孤" = "ひとり"
+# 季 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 孤 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 学 は core/kanji/overrides.toml の [[kanji]] block に移行 (★round 49)
 "孫" = "まご"
 "宅" = "いえ"

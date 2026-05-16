@@ -6973,3 +6973,88 @@ default = "ショウ"
 [[kanji.match]]
 next_starts_any = ["す", "さ", "し", "せ", "そ"]
 reading = "め"
+
+# 「問」 default 「モン」 (= 問題/質問/疑問/学問/設問/問答/拷問)。
+# 動詞 「問う/問い」 は okurigana 列挙で 「と」 へ切替
+[[kanji]]
+char = "問"
+default = "モン"
+
+# 「問う/問わない/問って/問えば/問おう/問い○○」 = 動詞 → と
+[[kanji.match]]
+next_starts_any = ["う", "わ", "い", "っ", "え", "お"]
+reading = "と"
+
+# 「噴」 default 「フン」 (= 噴火/噴水/噴出/噴射/噴気/噴飯)。
+# 動詞 「噴く」 は okurigana 列挙で 「ふ」 へ切替
+[[kanji]]
+char = "噴"
+default = "フン"
+
+# 「噴く/噴かない/噴いた/噴いて/噴けば/噴こう」 = 動詞 → ふ
+[[kanji.match]]
+next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
+reading = "ふ"
+
+# 「在」 default 「ザイ」 (= 在庫/在宅/現在/存在/滞在/不在/所在/健在/在籍)。
+# 動詞 「在る」 は okurigana 列挙で 「あ」 へ切替
+[[kanji]]
+char = "在"
+default = "ザイ"
+
+# 「在る/在らない/在った/在って/在れば/在ろう/在り○○」 = 動詞 → あ
+[[kanji.match]]
+next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ"]
+reading = "あ"
+
+# 「執」 default 「シツ」 (= 執行/執筆/執着/固執/執念/我執/執務)。
+# 動詞 「執る/執り行う」 は okurigana 列挙で 「と」 へ切替
+[[kanji]]
+char = "執"
+default = "シツ"
+
+# 「執る/執らない/執った/執って/執れば/執ろう/執り○○」 = 動詞 → と
+[[kanji.match]]
+next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ"]
+reading = "と"
+
+# 「塗」 default 「ト」 (= 塗装/塗布/塗料/塗膜/塗炭/塗工)。
+# 動詞 「塗る」 は okurigana 列挙で 「ぬ」 へ切替
+[[kanji]]
+char = "塗"
+default = "ト"
+
+# 「塗る/塗らない/塗った/塗って/塗れば/塗ろう/塗り○○」 = 動詞 → ぬ
+[[kanji.match]]
+next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ"]
+reading = "ぬ"
+
+# 「唯」 default 「ユイ」 (= 唯一/唯物/唯心/唯美主義)。
+# unihan default 「これ」 は古語指示詞、 現代では用例なし
+[[kanji]]
+char = "唯"
+default = "ユイ"
+
+# 「善」 default 「ゼン」 (= 善悪/改善/最善/善行/善意/慈善/偽善/善人/独善)。
+# unihan default 「よい」 は古語形容詞、 現代日本語は 「良い」 を使う
+[[kanji]]
+char = "善"
+default = "ゼン"
+
+# 「妙」 default 「ミョウ」 (= 妙技/絶妙/微妙/奇妙/妙味/巧妙/妙手/妙案/妙齢)。
+# unihan default 「たえ」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "妙"
+default = "ミョウ"
+
+# 「季」 default 「キ」 (= 季節/四季/夏季/秋季/冬季/春季/季語/季刊)。
+# unihan default 「すえ」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "季"
+default = "キ"
+
+# 「孤」 default 「コ」 (= 孤独/孤立/孤児/孤独死/孤高/孤軍/孤島)。
+# unihan default 「ひとり」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "孤"
+default = "コ"
