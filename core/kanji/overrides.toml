@@ -7423,3 +7423,88 @@ default = "ミン"
 [[kanji]]
 char = "涯"
 default = "ガイ"
+
+# 「病」 default 「ビョウ」 (= 病気/病院/疾病/看病/急病/重病/万病/仮病/病弱)。
+# 動詞 「病む」 は okurigana 列挙で 「や」 へ切替
+[[kanji]]
+char = "病"
+default = "ビョウ"
+
+# 「病む/病まない/病んだ/病めば/病もう」 = 動詞 → や
+[[kanji.match]]
+next_starts_any = ["む", "ま", "み", "ん", "め", "も"]
+reading = "や"
+
+# 「盛」 default 「セイ」 (= 繁盛/隆盛/盛大/旺盛/全盛/盛況/盛衰)。
+# 動詞 「盛る」 は okurigana 列挙で 「も」 へ切替
+[[kanji]]
+char = "盛"
+default = "セイ"
+
+# 「盛る/盛らない/盛った/盛って/盛れば/盛ろう/盛り○○」 = 動詞 → も
+[[kanji.match]]
+next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ"]
+reading = "も"
+
+# 「現」 default 「ゲン」 (= 現在/現象/表現/出現/実現/再現/現代/現実)。
+# 動詞 「現れる/現す」 は okurigana 列挙で 「あらわ」 へ切替
+[[kanji]]
+char = "現"
+default = "ゲン"
+
+# 「現れる/現す/現した/現して/現せば」 = 動詞 → あらわ
+[[kanji.match]]
+next_starts_any = ["れ", "す", "さ", "し", "せ", "そ", "わ"]
+reading = "あらわ"
+
+# 「照」 default 「ショウ」 (= 照明/参照/対照/日照/照会/照射/照度/照準)。
+# 動詞 「照る/照らす/照れる」 は okurigana 列挙で 「て」 へ切替
+[[kanji]]
+char = "照"
+default = "ショウ"
+
+# 「照る/照らす/照れる/照った/照って/照れば/照ろう」 = 動詞 → て
+[[kanji.match]]
+next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ"]
+reading = "て"
+
+# 「看」 default 「カン」 (= 看護/看板/看守/看病/看過/看護師)。
+# 動詞 「看る/看做す」 は okurigana 列挙で 「み」 へ切替
+[[kanji]]
+char = "看"
+default = "カン"
+
+# 「看る/看做す/看られる」 = 動詞 → み
+[[kanji.match]]
+next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ", "な"]
+reading = "み"
+
+# 「独」 default 「ドク」 (= 独立/独自/独学/独房/独占/独白/独歩/独走/孤独/単独)。
+# unihan default 「ひとり」 は単独副詞用法、 「独り○○」 は jukugo 個別
+[[kanji]]
+char = "独"
+default = "ドク"
+
+# 「玄」 default 「ゲン」 (= 玄関/玄米/幽玄/玄妙)。
+# unihan default 「くろ」 は古語、 「玄人」 = クロウト は jukugo 個別 (= 既登録)
+[[kanji]]
+char = "玄"
+default = "ゲン"
+
+# 「環」 default 「カン」 (= 環境/環状/循環/環礁/一環/環視)。
+# unihan default 「たまき」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "環"
+default = "カン"
+
+# 「福」 default 「フク」 (= 幸福/福祉/祝福/福音/福利/福袋/裕福/至福)。
+# unihan default 「さいわい」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "福"
+default = "フク"
+
+# 「祖」 default 「ソ」 (= 祖父/祖母/先祖/教祖/祖国/元祖/開祖/始祖)。
+# unihan default 「はじめ」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "祖"
+default = "ソ"
