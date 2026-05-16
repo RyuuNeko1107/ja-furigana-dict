@@ -8168,3 +8168,63 @@ default = "チク"
 [[kanji]]
 char = "遇"
 default = "グウ"
+
+# 「酬」 default 「シュウ」 (= 報酬/応酬/酬報)。
+# unihan default 「むくい」 は古語、 「報」 が訓 dominant
+[[kanji]]
+char = "酬"
+default = "シュウ"
+
+# 「采」 default 「サイ」 (= 采配/喝采/采女)。
+# unihan default 「とる」 は古語動詞、 「採/取」 が動詞 dominant
+[[kanji]]
+char = "采"
+default = "サイ"
+
+# 「鑑」 default 「カン」 (= 鑑賞/年鑑/印鑑/鑑定/鑑識/鑑査/図鑑)。
+# unihan default 「かがみ」 は古語、 「鏡」 が訓 dominant
+[[kanji]]
+char = "鑑"
+default = "カン"
+
+# 「附」 default 「フ」 (= 附属/寄附/附則/附録/附帯/附箋)。
+# unihan default 「つく」 は古語動詞、 「付/着」 が動詞 dominant
+[[kanji]]
+char = "附"
+default = "フ"
+
+# 「韓」 default 「カン」 (= 韓国/日韓/北韓/在韓)。
+# unihan default 「いげた」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "韓"
+default = "カン"
+
+# 「韻」 default 「イン」 (= 韻律/押韻/音韻/余韻/脚韻/頭韻)。
+# unihan default 「ひびき」 は古語、 現代では熟語 dominant (「響」 が訓 dominant)
+[[kanji]]
+char = "韻"
+default = "イン"
+
+# 「項」 default 「コウ」 (= 項目/事項/要項/同項/前項/後項)。
+# unihan default 「うなじ」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "項"
+default = "コウ"
+
+# 「頒」 default 「ハン」 (= 頒布/頒価)。
+# unihan default 「しく」 は古語動詞、 現代では熟語 dominant
+[[kanji]]
+char = "頒"
+default = "ハン"
+
+# 「頓」 default 「トン」 (= 頓挫/整頓/頓服/頓知/頓首/無頓着)。
+# unihan default 「とみに」 は古語副詞、 現代では熟語 dominant
+[[kanji]]
+char = "頓"
+default = "トン"
+
+# 「骸」 default 「ガイ」 (= 死骸/形骸/残骸/骸骨)。
+# unihan default 「むくろ」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "骸"
+default = "ガイ"

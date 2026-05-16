@@ -1831,14 +1831,14 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "酔" = "よう"
 "酢" = "サク"
 # 酪 は core/kanji/overrides.toml の [[kanji]] block に移行
-"酬" = "むくい"
+# 酬 は core/kanji/overrides.toml の [[kanji]] block に移行
 "酵" = "コウ"
 # "酷" は core/kanji/overrides.toml の [[kanji]] block に移行
 # 酸 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 醒 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 醜 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 醸 は core/kanji/overrides.toml の [[kanji]] block に移行
-"采" = "とる"
+# 采 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 釈 は core/kanji/overrides.toml の [[kanji]] block に移行
 "里" = "さと"
 "野" = "の"
@@ -1872,7 +1872,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 鎮 は core/kanji/overrides.toml の [[kanji]] block に移行
 "鏡" = "かがみ"
 "鐘" = "かね"
-"鑑" = "かがみ"
+# 鑑 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 長 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 門 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 閉 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1887,7 +1887,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "阪" = "さか"
 # 防 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 阻 は core/kanji/overrides.toml の [[kanji]] block に移行
-"附" = "つく"
+# 附 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 降 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 限 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 陛 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1939,19 +1939,19 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "面" = "メン"
 "革" = "かわ"
 "靴" = "くつ"
-"韓" = "いげた"
+# 韓 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 音 は core/kanji/overrides.toml の [[kanji]] block に移行
-"韻" = "ひびき"
+# 韻 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 響 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 頂 は core/kanji/overrides.toml の [[kanji]] block に移行
 "頃" = "ころ"
-"項" = "うなじ"
+# 項 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 順 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 須 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 預 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 頑 は core/kanji/overrides.toml の [[kanji]] block に移行
-"頒" = "しく"
-"頓" = "とみに"
+# 頒 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 頓 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 領 は core/kanji/overrides.toml の [[kanji]] block に移行
 "頬" = "ホホ"
 # 頭 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1989,7 +1989,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 騰 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 驚 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 骨 は core/kanji/overrides.toml の [[kanji]] block に移行
-"骸" = "むくろ"
+# 骸 は core/kanji/overrides.toml の [[kanji]] block に移行
 "髄" = "ズイ"
 "髪" = "かみ"
 "鬱" = "ウツ"
