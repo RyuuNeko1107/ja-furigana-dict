@@ -7058,3 +7058,88 @@ default = "キ"
 [[kanji]]
 char = "孤"
 default = "コ"
+
+# 「富」 default 「フ」 (= 富裕/豊富/貧富/富豪/富国強兵/巨富)。
+# 動詞 「富む」 は okurigana 列挙で 「と」 へ切替
+[[kanji]]
+char = "富"
+default = "フ"
+
+# 「富む/富まない/富んだ/富んで/富めば/富もう/富み○○」 = 動詞 → と
+[[kanji.match]]
+next_starts_any = ["む", "ま", "み", "ん", "め", "も"]
+reading = "と"
+
+# 「寄」 default 「キ」 (= 寄付/寄稿/寄宿/寄与/寄贈/寄附/寄生/最寄)。
+# 動詞 「寄る/寄せる」 は okurigana 列挙で 「よ」 へ切替
+[[kanji]]
+char = "寄"
+default = "キ"
+
+# 「寄る/寄らない/寄った/寄って/寄れば/寄ろう/寄り○○/寄せる」 = 動詞 → よ
+[[kanji.match]]
+next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ", "せ"]
+reading = "よ"
+
+# 「巻」 default 「カン」 (= 巻末/巻数/上巻/下巻/第一巻/万巻)。
+# 動詞 「巻く」 は okurigana 列挙で 「ま」 へ切替
+[[kanji]]
+char = "巻"
+default = "カン"
+
+# 「巻く/巻かない/巻いた/巻いて/巻けば/巻こう/巻き○○」 = 動詞 → ま
+[[kanji.match]]
+next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
+reading = "ま"
+
+# 「就」 default 「シュウ」 (= 就職/就任/就学/就労/就寝/去就)。
+# 動詞 「就く/就ける」 は okurigana 列挙で 「つ」 へ切替
+[[kanji]]
+char = "就"
+default = "シュウ"
+
+# 「就く/就かない/就いた/就いて/就けば/就こう/就ける」 = 動詞 → つ
+[[kanji.match]]
+next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
+reading = "つ"
+
+# 「引」 default 「イン」 (= 引退/引力/吸引/索引/引用/牽引/誘引)。
+# 動詞 「引く」 は okurigana 列挙で 「ひ」 へ切替
+[[kanji]]
+char = "引"
+default = "イン"
+
+# 「引く/引かない/引いた/引いて/引けば/引こう/引き○○」 = 動詞 → ひ
+[[kanji.match]]
+next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
+reading = "ひ"
+
+# 「宜」 default 「ギ」 (= 便宜/適宜/時宜)。
+# unihan default 「むべ」 は古語感嘆詞、 現代用例なし
+[[kanji]]
+char = "宜"
+default = "ギ"
+
+# 「宰」 default 「サイ」 (= 主宰/宰相/宰領)。
+# unihan default 「つかさ」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "宰"
+default = "サイ"
+
+# 「密」 default 「ミツ」 (= 密度/密接/秘密/緻密/精密/濃密/密告/親密)。
+# unihan default 「しげし」 は古語、 現代用例なし
+[[kanji]]
+char = "密"
+default = "ミツ"
+
+# 「帝」 default 「テイ」 (= 帝国/皇帝/帝政/女帝/帝王/帝都)。
+# unihan default 「みかど」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "帝"
+default = "テイ"
+
+# 「帥」 default 「スイ」 (= 元帥/総帥/統帥/将帥)。
+# unihan default 「かしら」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "帥"
+default = "スイ"
