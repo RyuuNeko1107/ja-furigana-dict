@@ -2277,6 +2277,60 @@ default = "うま"
 char = "石"
 default = "いし"
 
+# === 純 migration 7 字 (= reading 変更なし、 unihan default を [[kanji]]
+#     block に集約) ===
+
+# 「元」: default = もと。 ゲン/ガン系 jukugo (元気 / 元素 / 元年 / 紀元 /
+# 元金 / 復元 / 元服 等) は band 100 で吸収。
+[[kanji]]
+char = "元"
+default = "もと"
+
+# 「骨」: default = ほね。 コツ/コッ系 jukugo (骨格 / 骨折 / 鎖骨 / 換骨
+# 奪胎 等) は band 100 で吸収。
+[[kanji]]
+char = "骨"
+default = "ほね"
+
+# 「頭」: default = あたま。 トウ/ズ系 jukugo (頭痛 / 念頭 / 巻頭 / 頭脳
+# / 平身低頭 等) は band 100 で吸収。
+[[kanji]]
+char = "頭"
+default = "あたま"
+
+# 「夜」: default = よる。 ヤ系 jukugo (夜間 / 夜光 / 深夜 / 徹夜 / 一夜
+# / 七夜 等) は band 100 で吸収。
+[[kanji]]
+char = "夜"
+default = "よる"
+
+# 「節」: default = ふし。 セツ系 jukugo (節句 / 節分 / 関節 / 季節 / 節約
+# 等) は band 100 で吸収。
+[[kanji]]
+char = "節"
+default = "ふし"
+
+# 「筋」: default = すじ。 キン系 jukugo (筋肉 / 筋力 / 鉄筋 / 腹筋 等) は
+# band 100 で吸収。
+[[kanji]]
+char = "筋"
+default = "すじ"
+
+# 「様」: default = さま。 ヨウ系 jukugo (様子 / 様式 / 同様 / 模様 / 仕様
+# 等) は band 100 で吸収。 「様々 = サマザマ」 等の連濁 jukugo も band 100。
+[[kanji]]
+char = "様"
+default = "さま"
+
+# === default 倒し 1 字 ===
+
+# 「須」: unihan default 「ひげ」 → ヒゲ系 jukugo 0 件 (= 「鬚」 別字使用、
+# unihan default が誤って ひげ に設定されている)。 ス系 jukugo (= 必須 /
+# 急須 / 須恵器 等) で実用上ほぼ全て音読み。 default = ス に倒す純化。
+[[kanji]]
+char = "須"
+default = "ス"
+
 # 「者」: default 音読み 「シャ」 (= 「医者 / 学者 / 患者 / 編者」 等)。 動詞連体形 + 者
 # (= 「戦う者 / 行く者 / 知る者」 形式名詞用法) は prev token 末尾が動詞語尾のとき 「モノ」。
 # 「強者 / 若者」 等 漢字 + 者 = モノ は jukugo に band 100 で個別登録。
