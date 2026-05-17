@@ -9694,3 +9694,87 @@ default = "シ"
 [[kanji.match]]
 next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
 reading = "ま"
+
+# 「揃」 default 「ソウ」 (= 揃一/揃斉)。
+# 動詞 「揃う/揃える」 は okurigana 列挙で 「そろ」 へ切替
+[[kanji]]
+char = "揃"
+default = "ソウ"
+
+[[kanji.match]]
+next_starts_any = ["う", "わ", "い", "っ", "え", "お"]
+reading = "そろ"
+
+# 「撫」 default 「ブ」 (= 撫育/愛撫/慰撫)。
+# 動詞 「撫でる」 は okurigana 「で」 で 「な」 へ切替 (= 「撫子 = ナデシコ」 は jukugo 個別)
+[[kanji]]
+char = "撫"
+default = "ブ"
+
+[[kanji.match]]
+next_starts_any = ["で"]
+reading = "な"
+
+# 「摺」 default 「ショウ」 (= 摺り絵/木版摺)。
+# 動詞 「摺る」 は okurigana 列挙で 「す」 へ切替 (= 「擦」 と同源)
+[[kanji]]
+char = "摺"
+default = "ショウ"
+
+[[kanji.match]]
+next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ"]
+reading = "す"
+
+# 「駈」 default 「ク」 (= 駈使、 「駆」 異体字)。
+# 動詞 「駈ける」 は okurigana 列挙で 「か」 へ切替
+[[kanji]]
+char = "駈"
+default = "ク"
+
+[[kanji.match]]
+next_starts_any = ["け", "か", "き", "く", "こ"]
+reading = "か"
+
+# 「酔」 default 「スイ」 (= 麻酔/陶酔/泥酔/酔狂/心酔)。
+# 動詞 「酔う」 は okurigana 列挙で 「よ」 へ切替
+[[kanji]]
+char = "酔"
+default = "スイ"
+
+[[kanji.match]]
+next_starts_any = ["う", "わ", "い", "っ", "え", "お"]
+reading = "よ"
+
+# 「畜」 default 「チク」 (= 家畜/牧畜/畜産/畜舎)。
+# 動詞 「畜える」 は okurigana 列挙で 「たくわ」 へ切替 (= 「貯」 と同源)
+[[kanji]]
+char = "畜"
+default = "チク"
+
+[[kanji.match]]
+next_starts_any = ["え", "わ", "い", "っ", "う"]
+reading = "たくわ"
+
+# 「監」 default 「カン」 (= 監督/監視/監査/監修/監禁)。
+# unihan default 「みる」 は古語動詞、 「見/視」 が動詞 dominant
+[[kanji]]
+char = "監"
+default = "カン"
+
+# 「玩」 default 「ガン」 (= 玩具/愛玩/玩弄)。
+# unihan default 「もてあそぶ」 は古語動詞、 現代では熟語 dominant
+[[kanji]]
+char = "玩"
+default = "ガン"
+
+# 「瘍」 default 「ヨウ」 (= 腫瘍/潰瘍)。
+# unihan default 「かさ」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "瘍"
+default = "ヨウ"
+
+# 「皇」 default 「コウ」 (= 皇帝/天皇/皇族/教皇/皇室)。
+# unihan default 「すめら」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "皇"
+default = "コウ"
