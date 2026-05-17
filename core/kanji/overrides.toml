@@ -8793,3 +8793,73 @@ default = "モウ"
 [[kanji.match]]
 next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ"]
 reading = "こうむ"
+
+# 「詢」 default 「ジュン」 (= 詢問/咨詢)。
+# unihan default 「はかる」 は古語動詞、 現代では熟語 dominant
+[[kanji]]
+char = "詢"
+default = "ジュン"
+
+# 「諏」 default 「ス」 (= 諏訪/諏問/諏議)。
+# unihan default 「はかる」 は古語動詞、 「諏訪」 等の地名 dominant
+[[kanji]]
+char = "諏"
+default = "ス"
+
+# 「謂」 default 「イ」 (= 所謂/可謂)。
+# 「謂れ」 = いわれ + 動詞 「謂う」 = いう は 2 way 切替
+[[kanji]]
+char = "謂"
+default = "イ"
+
+# 「謂れ/謂れの○○」 = 名詞 → いわ (= 「謂れ」 = いわれ)
+[[kanji.match]]
+next_starts_any = ["れ"]
+reading = "いわ"
+
+# 「謂う/謂わない/謂った/謂って/謂えば」 = 動詞 → い (= 「言う」 と同源)
+[[kanji.match]]
+next_starts_any = ["う", "わ", "い", "っ", "え", "お"]
+reading = "い"
+
+# 「螺」 default 「ラ」 (= 螺旋/法螺/巻螺/田螺)。
+# unihan default 「にし」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "螺"
+default = "ラ"
+
+# 「裡」 default 「リ」 (= 胸裡/脳裡/秘密裡/暗黙裡)。
+# unihan default 「うら」 は古語、 「裏」 が訓 dominant
+[[kanji]]
+char = "裡"
+default = "リ"
+
+# 「釉」 default 「ユウ」 (= 釉薬/陶釉/施釉)。
+# unihan default 「うわぐすり」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "釉"
+default = "ユウ"
+
+# 「鋒」 default 「ホウ」 (= 機鋒/兵鋒/先鋒/筆鋒/舌鋒)。
+# unihan default 「ほこ」 は古語、 「矛」 が訓 dominant
+[[kanji]]
+char = "鋒"
+default = "ホウ"
+
+# 「鞭」 default 「ベン」 (= 鞭打/鞭撻/教鞭/先鞭)。
+# unihan default 「むち」 は単独名詞、 「鞭打つ」 = jukugo 個別
+[[kanji]]
+char = "鞭"
+default = "ベン"
+
+# 「饗」 default 「キョウ」 (= 饗宴/饗応/酒饗/晩饗)。
+# unihan default 「あえ」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "饗"
+default = "キョウ"
+
+# 「黎」 default 「レイ」 (= 黎明/黎民/孫黎)。
+# unihan default 「くろい」 は古語形容詞、 「黒」 が訓 dominant
+[[kanji]]
+char = "黎"
+default = "レイ"
