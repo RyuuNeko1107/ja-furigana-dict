@@ -8493,3 +8493,108 @@ default = "キ"
 [[kanji.match]]
 next_starts_any = ["し"]
 reading = "うれ"
+
+# 「歎」 default 「タン」 (= 歎息/感歎/嘆歎/悲歎)。
+# 動詞 「歎く」 = なげく は okurigana で 「なげ」 へ切替 (= 「嘆」 異体字)
+[[kanji]]
+char = "歎"
+default = "タン"
+
+# 「歎く/歎かない/歎いた/歎いて/歎けば/歎こう」 = 動詞 → なげ
+[[kanji.match]]
+next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
+reading = "なげ"
+
+# 「汲」 default 「キュウ」 (= 汲水/汲取)。
+# 動詞 「汲む」 は okurigana 列挙で 「く」 へ切替
+[[kanji]]
+char = "汲"
+default = "キュウ"
+
+# 「汲む/汲まない/汲んだ/汲めば/汲もう/汲み○○」 = 動詞 → く
+[[kanji.match]]
+next_starts_any = ["む", "ま", "み", "ん", "め", "も"]
+reading = "く"
+
+# 「牽」 default 「ケン」 (= 牽引/牽制/牽強付会)。
+# 動詞 「牽く」 は okurigana 列挙で 「ひ」 へ切替 (= 「引」 と同源)
+[[kanji]]
+char = "牽"
+default = "ケン"
+
+# 「牽く/牽かない/牽いた/牽いて/牽けば/牽こう」 = 動詞 → ひ
+[[kanji.match]]
+next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
+reading = "ひ"
+
+# 「漕」 default 「ソウ」 (= 漕艇/競漕/廻漕)。
+# 動詞 「漕ぐ」 は okurigana 列挙で 「こ」 へ切替
+[[kanji]]
+char = "漕"
+default = "ソウ"
+
+# 「漕ぐ/漕がない/漕いだ/漕いで/漕げば/漕ごう/漕ぎ○○」 = 動詞 → こ
+[[kanji.match]]
+next_starts_any = ["ぐ", "が", "ぎ", "い", "げ", "ご"]
+reading = "こ"
+
+# 「焚」 default 「フン」 (= 焚書/焚火/焚口)。
+# 動詞 「焚く」 は okurigana 列挙で 「た」 へ切替
+[[kanji]]
+char = "焚"
+default = "フン"
+
+# 「焚く/焚かない/焚いた/焚いて/焚けば/焚こう/焚き○○」 = 動詞 → た
+[[kanji.match]]
+next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
+reading = "た"
+
+# 「煉」 default 「レン」 (= 煉瓦/煉乳/煉獄/精煉)。
+# 動詞 「煉る」 は okurigana 列挙で 「ね」 へ切替 (= 「練」 異体字)
+[[kanji]]
+char = "煉"
+default = "レン"
+
+# 「煉る/煉らない/煉った/煉って/煉れば/煉ろう」 = 動詞 → ね
+[[kanji.match]]
+next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ"]
+reading = "ね"
+
+# 「琢」 default 「タク」 (= 琢磨/切磋琢磨)。
+# 動詞 「琢く」 は okurigana 列挙で 「みが」 へ切替
+[[kanji]]
+char = "琢"
+default = "タク"
+
+# 「琢く/琢かない/琢いた/琢いて/琢けば/琢こう」 = 動詞 → みが
+[[kanji.match]]
+next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
+reading = "みが"
+
+# 「殆」 default 「タイ」 (= 危殆)。
+# 副詞 「殆ど」 = ほとんど は next_eq で切替
+[[kanji]]
+char = "殆"
+default = "タイ"
+
+# 「殆ど」 = ほとんど (副詞)
+[[kanji.match]]
+next_eq = "ど"
+reading = "ほとん"
+
+# 「浩」 default 「コウ」 (= 浩然/浩瀚/浩大)。
+# 形容詞 「浩い」 = ひろい は okurigana 列挙で 「ひろ」 へ切替 (= 人名「浩」 = ヒロ も dominant)
+[[kanji]]
+char = "浩"
+default = "コウ"
+
+# 「浩い/浩く/浩かった」 = 形容詞 → ひろ
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "け", "さ"]
+reading = "ひろ"
+
+# 「淳」 default 「ジュン」 (= 淳朴/清淳/淳和)。
+# unihan default 「あつい」 は古語形容詞、 現代日本語では人名「淳一郎 = ジュンイチロウ」 等 dominant
+[[kanji]]
+char = "淳"
+default = "ジュン"
