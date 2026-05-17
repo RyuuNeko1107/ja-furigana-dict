@@ -8598,3 +8598,108 @@ reading = "ひろ"
 [[kanji]]
 char = "淳"
 default = "ジュン"
+
+# 「臥」 default 「ガ」 (= 臥薪/伏臥/横臥/臥竜)。
+# 動詞 「臥す」 は okurigana 列挙で 「ふ」 へ切替
+[[kanji]]
+char = "臥"
+default = "ガ"
+
+# 「臥す/臥さない/臥した/臥して/臥せば」 = 動詞 → ふ
+[[kanji.match]]
+next_starts_any = ["す", "さ", "し", "せ", "そ"]
+reading = "ふ"
+
+# 「訊」 default 「ジン」 (= 訊問/誰何訊問)。
+# 動詞 「訊く」 「訊ねる」 は okurigana 列挙で 「き」 / 「たず」 へ切替
+[[kanji]]
+char = "訊"
+default = "ジン"
+
+# 「訊く/訊いた/訊いて/訊けば」 = 動詞 → き (= 「聞く」 同義)
+[[kanji.match]]
+next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
+reading = "き"
+
+# 「訊ねる/訊ねた/訊ねて/訊ねれば」 = 動詞 → たず (= 「尋ねる」 同義)
+[[kanji.match]]
+next_starts_any = ["ね"]
+reading = "たず"
+
+# 「蘇」 default 「ソ」 (= 蘇生/蘇州/蘇枋/お蘇)。
+# 動詞 「蘇る」 は okurigana 列挙で 「よみがえ」 へ切替 (= 5 mora 訓読み)
+[[kanji]]
+char = "蘇"
+default = "ソ"
+
+# 「蘇る/蘇らない/蘇った/蘇って/蘇れば」 = 動詞 → よみがえ
+[[kanji.match]]
+next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ"]
+reading = "よみがえ"
+
+# 「萌」 default 「ホウ」 (= 萌芽/萌動)。
+# 動詞 「萌える」 は okurigana 列挙で 「も」 へ切替 (= 「萌え」 dominant)
+[[kanji]]
+char = "萌"
+default = "ホウ"
+
+# 「萌える/萌えた/萌えて/萌えれば/萌え (= 名詞)」 = 動詞 → も
+[[kanji.match]]
+next_starts_any = ["え", "わ", "い", "っ", "う"]
+reading = "も"
+
+# 「賑」 default 「シン」 (= 賑恤)。
+# 動詞 「賑わう」 + 形容動詞 「賑やか」 は jukugo 個別、 動詞活用 → にぎ
+[[kanji]]
+char = "賑"
+default = "シン"
+
+# 「賑わう/賑わって/賑わい」 = 動詞 → にぎ (= 「賑やか」 は jukugo)
+[[kanji.match]]
+next_starts_any = ["わ", "う", "い", "っ", "え", "お"]
+reading = "にぎ"
+
+# 「逞」 default 「テイ」 (= 不逞)。
+# 形容詞 「逞しい」 は okurigana 「し」 始まりで切替
+[[kanji]]
+char = "逞"
+default = "テイ"
+
+# 「逞しい/逞しく/逞しかった」 = 形容詞 → たくま
+[[kanji.match]]
+next_starts_any = ["し"]
+reading = "たくま"
+
+# 「遥」 default 「ヨウ」 (= 遥拝/遥遠)。
+# 形容動詞 「遥か」 = はるか は next_eq で切替
+[[kanji]]
+char = "遥"
+default = "ヨウ"
+
+# 「遥か」 = はるか (副詞 / 形容動詞)
+[[kanji.match]]
+next_eq = "か"
+reading = "はる"
+
+# 「莫」 default 「バク」 (= 莫大/索莫/沙莫)。
+# unihan default 「くれ」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "莫"
+default = "バク"
+
+# 「醬」 default 「ショウ」 (= 醬油/魚醬/肉醬)。
+# unihan default 「ひしお」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "醬"
+default = "ショウ"
+
+# 「馳」 default 「チ」 (= 馳走/馳駆/相馳)。
+# 動詞 「馳せる」 は okurigana 「せ」 で 「は」 へ切替
+[[kanji]]
+char = "馳"
+default = "チ"
+
+# 「馳せる/馳せた/馳せて/馳せれば」 = 動詞 → は
+[[kanji.match]]
+next_starts_any = ["せ"]
+reading = "は"
