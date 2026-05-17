@@ -9083,3 +9083,83 @@ default = "ジョ"
 [[kanji]]
 char = "恢"
 default = "カイ"
+
+# 「徠」 default 「ライ」 (= 往徠)。
+# unihan default 「きたる」 は古語動詞、 「来」 と被る
+[[kanji]]
+char = "徠"
+default = "ライ"
+
+# 「恰」 default 「カッ」 (= 恰好/恰幅/恰似)。
+# 副詞 「恰も」 = あたかも は next_eq で切替
+[[kanji]]
+char = "恰"
+default = "カッ"
+
+# 「恰も」 = あたかも (副詞)
+[[kanji.match]]
+next_eq = "も"
+reading = "あたか"
+
+# 「惇」 default 「トン」 (= 惇直)。
+# unihan default 「あつい」 は古語形容詞、 「敦」 と被る
+[[kanji]]
+char = "惇"
+default = "トン"
+
+# 「惟」 default 「イ」 (= 思惟/惟一/伏惟)。
+# unihan default 「おもう」 は古語動詞、 「思」 が動詞 dominant
+[[kanji]]
+char = "惟"
+default = "イ"
+
+# 「惹」 default 「ジャク」 (= 惹起/惹句/惹付)。
+# 動詞 「惹く」 は okurigana 列挙で 「ひ」 へ切替 (= 「引」 と同源)
+[[kanji]]
+char = "惹"
+default = "ジャク"
+
+# 「惹く/惹かない/惹いた/惹いて/惹けば/惹こう」 = 動詞 → ひ
+[[kanji.match]]
+next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
+reading = "ひ"
+
+# 「慧」 default 「ケイ」 (= 智慧/賢慧/慧眼/慧敏)。
+# unihan default 「さとい」 は古語形容詞、 現代では熟語 dominant
+[[kanji]]
+char = "慧"
+default = "ケイ"
+
+# 「憐」 default 「レン」 (= 憐憫/可憐/愛憐/哀憐/憐情)。
+# unihan default 「あわれみ」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "憐"
+default = "レン"
+
+# 「托」 default 「タク」 (= 托鉢/委托/船托/茶托)。
+# unihan default 「たのむ」 は古語動詞、 「頼」 と被る
+[[kanji]]
+char = "托"
+default = "タク"
+
+# 「捲」 default 「ケン」 (= 捲土重来/席捲)。
+# 動詞 「捲く」 は okurigana 列挙で 「ま」 へ切替 (= 「巻」 と同源)
+[[kanji]]
+char = "捲"
+default = "ケン"
+
+# 「捲く/捲かない/捲いた/捲いて/捲けば/捲こう」 = 動詞 → ま
+[[kanji.match]]
+next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
+reading = "ま"
+
+# 「捷」 default 「ショウ」 (= 敏捷/捷利/捷径/捷報)。
+# 形容詞 「捷い」 は okurigana 列挙で 「はや」 へ切替 (= 「速」 と同源)
+[[kanji]]
+char = "捷"
+default = "ショウ"
+
+# 「捷い/捷く/捷かった」 = 形容詞 → はや
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "け", "さ"]
+reading = "はや"
