@@ -9163,3 +9163,434 @@ default = "ショウ"
 [[kanji.match]]
 next_starts_any = ["い", "く", "か", "け", "さ"]
 reading = "はや"
+
+# 「摑」 default 「カク」 (= 「掴」 異体字)。
+# 動詞 「摑む」 は okurigana 列挙で 「つか」 へ切替
+[[kanji]]
+char = "摑"
+default = "カク"
+
+[[kanji.match]]
+next_starts_any = ["む", "ま", "み", "ん", "め", "も"]
+reading = "つか"
+
+# 「播」 default 「ハ」 (= 播種/伝播/播磨)。
+# 動詞 「播く」 は okurigana 列挙で 「ま」 へ切替 (= 「蒔」 と同源)
+[[kanji]]
+char = "播"
+default = "ハ"
+
+[[kanji.match]]
+next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
+reading = "ま"
+
+# 「擢」 default 「テキ」 (= 抜擢)。
+# unihan default 「ぬきんでる」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "擢"
+default = "テキ"
+
+# 「敦」 default 「トン」 (= 敦煌/敦盛)。
+# 形容詞 「敦い」 = あつい は okurigana 列挙で 「あつ」 へ切替
+[[kanji]]
+char = "敦"
+default = "トン"
+
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "け", "さ"]
+reading = "あつ"
+
+# 「斐」 default 「ヒ」 (= 斐然/甲斐)。
+[[kanji]]
+char = "斐"
+default = "ヒ"
+
+# 「斡」 default 「アツ」 (= 斡旋)。
+[[kanji]]
+char = "斡"
+default = "アツ"
+
+# 「斯」 default 「シ」 (= 斯界/斯学)。
+[[kanji]]
+char = "斯"
+default = "シ"
+
+# 「於」 default 「オ」 (= 於江戸/於てや/於是)。
+[[kanji]]
+char = "於"
+default = "オ"
+
+# 「昂」 default 「コウ」 (= 昂揚/激昂/意気軒昂)。
+# 動詞 「昂る」 = たかぶる は okurigana 列挙で 「たか」 へ切替
+[[kanji]]
+char = "昂"
+default = "コウ"
+
+[[kanji.match]]
+next_starts_any = ["ぶ", "ば", "び", "べ", "ぼ"]
+reading = "たか"
+
+# 「昌」 default 「ショウ」 (= 繁昌/隆昌/昌平)。
+[[kanji]]
+char = "昌"
+default = "ショウ"
+
+# 「昏」 default 「コン」 (= 昏睡/黄昏/昏迷/昏倒)。
+# 形容詞 「昏い」 = くらい は okurigana 列挙で 「くら」 へ切替
+[[kanji]]
+char = "昏"
+default = "コン"
+
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "け", "さ"]
+reading = "くら"
+
+# 「晋」 default 「シン」 (= 西晋/晋進/晋書)。
+[[kanji]]
+char = "晋"
+default = "シン"
+
+# 「晦」 default 「カイ」 (= 晦日/明暗晦冥/隠晦)。
+# 形容詞 「晦い」 + 動詞 「晦ます」 は okurigana 列挙で 「くら」 へ切替
+[[kanji]]
+char = "晦"
+default = "カイ"
+
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "け", "さ", "ま", "み", "め"]
+reading = "くら"
+
+# 「晨」 default 「シン」 (= 晨曦/早晨/晨星)。
+[[kanji]]
+char = "晨"
+default = "シン"
+
+# 「曳」 default 「エイ」 (= 曳航/曳船/牽曳)。
+# 動詞 「曳く」 は okurigana 列挙で 「ひ」 へ切替 (= 「引」 と同源)
+[[kanji]]
+char = "曳"
+default = "エイ"
+
+[[kanji.match]]
+next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
+reading = "ひ"
+
+# 「棲」 default 「セイ」 (= 棲息/同棲/水棲)。
+# 動詞 「棲む」 は okurigana 列挙で 「す」 へ切替 (= 「住」 と同源)
+[[kanji]]
+char = "棲"
+default = "セイ"
+
+[[kanji.match]]
+next_starts_any = ["む", "ま", "み", "ん", "め", "も"]
+reading = "す"
+
+# 「楚」 default 「ソ」 (= 楚国/苦楚/楚々/清楚)。
+[[kanji]]
+char = "楚"
+default = "ソ"
+
+# 「檀」 default 「ダン」 (= 檀家/檀那/白檀/紫檀)。
+[[kanji]]
+char = "檀"
+default = "ダン"
+
+# 「毅」 default 「キ」 (= 剛毅/毅然)。
+[[kanji]]
+char = "毅"
+default = "キ"
+
+# 「渥」 default 「アク」 (= 渥然/渥美)。
+[[kanji]]
+char = "渥"
+default = "アク"
+
+# 「湛」 default 「タン」 (= 湛然/湛湛)。
+# 動詞 「湛える」 = たたえる は okurigana 列挙で 「たた」 へ切替
+[[kanji]]
+char = "湛"
+default = "タン"
+
+[[kanji.match]]
+next_starts_any = ["え", "わ", "い", "っ", "う"]
+reading = "たた"
+
+# 「溜」 default 「リュウ」 (= 停溜/水溜/蒸溜)。
+# 動詞 「溜める/溜まる」 は okurigana 列挙で 「た」 へ切替
+[[kanji]]
+char = "溜"
+default = "リュウ"
+
+[[kanji.match]]
+next_starts_any = ["め", "ま", "む", "み", "も"]
+reading = "た"
+
+# 「漱」 default 「ソウ」 (= 漱石/含漱/盥漱)。
+[[kanji]]
+char = "漱"
+default = "ソウ"
+
+# 「瀕」 default 「ヒン」 (= 瀕死/海瀕/瀕海)。
+[[kanji]]
+char = "瀕"
+default = "ヒン"
+
+# 「灸」 default 「キュウ」 (= 灸治/針灸/温灸)。
+[[kanji]]
+char = "灸"
+default = "キュウ"
+
+# 「灼」 default 「シャク」 (= 灼熱/焼灼/灼々)。
+# 動詞 「灼く」 は okurigana 列挙で 「や」 へ切替
+[[kanji]]
+char = "灼"
+default = "シャク"
+
+[[kanji.match]]
+next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
+reading = "や"
+
+# 「焰」 default 「エン」 (= 火焰/気焰/火焰瓶)。
+[[kanji]]
+char = "焰"
+default = "エン"
+
+# 「熙」 default 「キ」 (= 熙々/光熙/康熙)。
+[[kanji]]
+char = "熙"
+default = "キ"
+
+# 「爾」 default 「ジ」 (= 爾来/爾後/莞爾)。
+[[kanji]]
+char = "爾"
+default = "ジ"
+
+# 「牒」 default 「チョウ」 (= 通牒/牒文/符牒)。
+[[kanji]]
+char = "牒"
+default = "チョウ"
+
+# 「珊」 default 「サン」 (= 珊瑚/珊珊/闌珊)。
+[[kanji]]
+char = "珊"
+default = "サン"
+
+# 「瑞」 default 「ズイ」 (= 瑞兆/吉瑞/祥瑞/瑞氣)。
+[[kanji]]
+char = "瑞"
+default = "ズイ"
+
+# 「瑳」 default 「サ」 (= 切磋琢磨/磋瑳)。
+[[kanji]]
+char = "瑳"
+default = "サ"
+
+# 「瑶」 default 「ヨウ」 (= 瑶池/瑶台/環瑶)。
+[[kanji]]
+char = "瑶"
+default = "ヨウ"
+
+# 「瓢」 default 「ヒョウ」 (= 瓢箪/瓢虫/瓢然)。
+[[kanji]]
+char = "瓢"
+default = "ヒョウ"
+
+# 「畢」 default 「ヒツ」 (= 畢生/畢竟/畢業)。
+[[kanji]]
+char = "畢"
+default = "ヒツ"
+
+# 「疏」 default 「ソ」 (= 疏通/疏開/上疏/疏密)。
+[[kanji]]
+char = "疏"
+default = "ソ"
+
+# 「皓」 default 「コウ」 (= 皓白/皓歯/明皓)。
+[[kanji]]
+char = "皓"
+default = "コウ"
+
+# 「祇」 default 「ギ」 (= 祇園/天祇/神祇)。
+[[kanji]]
+char = "祇"
+default = "ギ"
+
+# 「禱」 default 「トウ」 (= 祈禱/默禱/禱告)。
+# 動詞 「禱る」 = いのる は okurigana 列挙で 「いの」 へ切替
+[[kanji]]
+char = "禱"
+default = "トウ"
+
+[[kanji.match]]
+next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ"]
+reading = "いの"
+
+# 「稜」 default 「リョウ」 (= 稜威/三稜/稜線)。
+[[kanji]]
+char = "稜"
+default = "リョウ"
+
+# 「稟」 default 「リン」 (= 稟議/稟告/天稟)。
+[[kanji]]
+char = "稟"
+default = "リン"
+
+# 「穿」 default 「セン」 (= 穿孔/穿鑿)。
+# 動詞 「穿つ」 = うがつ は okurigana 列挙で 「うが」 へ切替
+[[kanji]]
+char = "穿"
+default = "セン"
+
+[[kanji.match]]
+next_starts_any = ["つ", "た", "ち", "っ", "て", "と"]
+reading = "うが"
+
+# 「窄」 default 「サク」 (= 狭窄)。
+[[kanji]]
+char = "窄"
+default = "サク"
+
+# 「竣」 default 「シュン」 (= 竣工/竣成)。
+[[kanji]]
+char = "竣"
+default = "シュン"
+
+# 「竪」 default 「ジュ」 (= 竪琴/竪坑/竪穴)。
+[[kanji]]
+char = "竪"
+default = "ジュ"
+
+# 「箔」 default 「ハク」 (= 金箔/銀箔/箔押)。
+[[kanji]]
+char = "箔"
+default = "ハク"
+
+# 「簞」 default 「タン」 (= 簞笥/簞食壺漿)。
+[[kanji]]
+char = "簞"
+default = "タン"
+
+# 「絃」 default 「ゲン」 (= 絃楽器/管絃/三絃)。
+[[kanji]]
+char = "絃"
+default = "ゲン"
+
+# 「綜」 default 「ソウ」 (= 綜合/錯綜/綜糸)。
+# 動詞 「綜べる」 は okurigana 列挙で 「す」 へ切替
+[[kanji]]
+char = "綜"
+default = "ソウ"
+
+[[kanji.match]]
+next_starts_any = ["べ", "ば", "ぶ", "び", "ぼ"]
+reading = "す"
+
+# 「綸」 default 「リン」 (= 綸言/経綸/法綸)。
+[[kanji]]
+char = "綸"
+default = "リン"
+
+# 「緋」 default 「ヒ」 (= 緋色/緋鯉/朱緋)。
+[[kanji]]
+char = "緋"
+default = "ヒ"
+
+# 「繫」 default 「ケイ」 (= 連繫)。
+# 動詞 「繫ぐ」 は okurigana 列挙で 「つな」 へ切替 (= 「繋」 異体字)
+[[kanji]]
+char = "繫"
+default = "ケイ"
+
+[[kanji.match]]
+next_starts_any = ["ぐ", "が", "ぎ", "い", "げ", "ご"]
+reading = "つな"
+
+# 「纏」 default 「テン」 (= 纏綿/纏足)。
+# 動詞 「纏う/纏める」 は okurigana 列挙で 「まと」 へ切替
+[[kanji]]
+char = "纏"
+default = "テン"
+
+[[kanji.match]]
+next_starts_any = ["う", "わ", "い", "っ", "え", "お", "め", "ま", "み", "む", "も"]
+reading = "まと"
+
+# 「翔」 default 「ショウ」 (= 飛翔/翔翔)。
+# 動詞 「翔ける」 は okurigana 列挙で 「か」 へ切替
+[[kanji]]
+char = "翔"
+default = "ショウ"
+
+[[kanji.match]]
+next_starts_any = ["け", "か", "き", "く", "こ"]
+reading = "か"
+
+# 「耶」 default 「ヤ」 (= 耶蘇/有耶無耶/邪耶)。
+[[kanji]]
+char = "耶"
+default = "ヤ"
+
+# 「耽」 default 「タン」 (= 耽溺/耽美/耽読)。
+# 動詞 「耽る」 = ふける は okurigana 列挙で 「ふけ」 へ切替
+[[kanji]]
+char = "耽"
+default = "タン"
+
+[[kanji.match]]
+next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ"]
+reading = "ふけ"
+
+# 「胡」 default 「コ」 (= 胡瓜/胡椒/胡蝶/胡乱)。
+[[kanji]]
+char = "胡"
+default = "コ"
+
+# 「胤」 default 「イン」 (= 子胤/血胤/落胤)。
+[[kanji]]
+char = "胤"
+default = "イン"
+
+# 「膏」 default 「コウ」 (= 膏薬/軟膏/膏血)。
+[[kanji]]
+char = "膏"
+default = "コウ"
+
+# 「芥」 default 「カイ」 (= 芥子/塵芥/芥塵)。
+[[kanji]]
+char = "芥"
+default = "カイ"
+
+# 「蒐」 default 「シュウ」 (= 蒐集/蒐字)。
+[[kanji]]
+char = "蒐"
+default = "シュウ"
+
+# 「董」 default 「トウ」 (= 董卓/古董/骨董)。
+[[kanji]]
+char = "董"
+default = "トウ"
+
+# 「襖」 default 「オウ」 (= 襖障子/襖)、 「襖」 = フスマ は jukugo 個別。
+[[kanji]]
+char = "襖"
+default = "オウ"
+
+# 「誼」 default 「ギ」 (= 情誼/友誼/誼)。
+[[kanji]]
+char = "誼"
+default = "ギ"
+
+# 「遼」 default 「リョウ」 (= 遼遠/遼東/遼河)。
+# 形容詞 「遼か」 = はるか は next_eq で切替 (= 「遥」 と同源)
+[[kanji]]
+char = "遼"
+default = "リョウ"
+
+[[kanji.match]]
+next_eq = "か"
+reading = "はる"
+
+# 「頌」 default 「ショウ」 (= 頌徳/頌栄/頌歌/讃頌)。
+[[kanji]]
+char = "頌"
+default = "ショウ"
