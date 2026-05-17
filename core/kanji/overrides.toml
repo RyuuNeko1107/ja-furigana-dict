@@ -8388,3 +8388,108 @@ default = "キョウ"
 [[kanji]]
 char = "也"
 default = "ヤ"
+
+# 「庇」 default 「ヒ」 (= 庇護/庇蔭)。
+# 動詞 「庇う」 は okurigana 列挙で 「かば」 へ切替
+[[kanji]]
+char = "庇"
+default = "ヒ"
+
+# 「庇う/庇わない/庇った/庇って/庇えば/庇おう」 = 動詞 → かば
+[[kanji.match]]
+next_starts_any = ["う", "わ", "い", "っ", "え", "お"]
+reading = "かば"
+
+# 「廻」 default 「カイ」 (= 廻覧/輪廻/転廻/巡廻)。
+# 動詞 「廻る/廻す」 は okurigana 列挙で 「まわ」 へ切替
+[[kanji]]
+char = "廻"
+default = "カイ"
+
+# 「廻る/廻らない/廻った/廻って/廻れば/廻ろう/廻す/廻り○○」 = 動詞 → まわ
+[[kanji.match]]
+next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ", "す", "さ", "し", "せ", "そ"]
+reading = "まわ"
+
+# 「挽」 default 「バン」 (= 挽歌/挽回/挽肉)。
+# 動詞 「挽く」 は okurigana 列挙で 「ひ」 へ切替
+[[kanji]]
+char = "挽"
+default = "バン"
+
+# 「挽く/挽かない/挽いた/挽いて/挽けば/挽こう」 = 動詞 → ひ
+[[kanji.match]]
+next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
+reading = "ひ"
+
+# 「撞」 default 「ドウ」 (= 撞着/撞球/自家撞着)。
+# 動詞 「撞く」 は okurigana 列挙で 「つ」 へ切替
+[[kanji]]
+char = "撞"
+default = "ドウ"
+
+# 「撞く/撞かない/撞いた/撞いて/撞けば/撞こう」 = 動詞 → つ
+[[kanji.match]]
+next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
+reading = "つ"
+
+# 「撰」 default 「サン」 (= 編撰/撰書/撰述)。
+# 動詞 「撰ぶ」 は okurigana 列挙で 「えら」 へ切替
+[[kanji]]
+char = "撰"
+default = "サン"
+
+# 「撰ぶ/撰ばない/撰んだ/撰べば/撰ぼう」 = 動詞 → えら
+[[kanji.match]]
+next_starts_any = ["ぶ", "ば", "び", "ん", "べ", "ぼ"]
+reading = "えら"
+
+# 「曝」 default 「バク」 (= 曝露/被曝/曝書)。
+# 動詞 「曝す」 は okurigana 列挙で 「さら」 へ切替
+[[kanji]]
+char = "曝"
+default = "バク"
+
+# 「曝す/曝さない/曝した/曝して/曝せば/曝そう」 = 動詞 → さら
+[[kanji.match]]
+next_starts_any = ["す", "さ", "し", "せ", "そ"]
+reading = "さら"
+
+# 「弛」 default 「シ」 (= 弛緩/弛張)。
+# 動詞 「弛む」 は okurigana 列挙で 「たる」 へ切替 (= 「弛む = たるむ」)
+[[kanji]]
+char = "弛"
+default = "シ"
+
+# 「弛む/弛まない/弛んだ/弛めば」 = 動詞 → たる
+[[kanji.match]]
+next_starts_any = ["む", "ま", "み", "ん", "め", "も"]
+reading = "たる"
+
+# 「撒」 default 「サン」 (= 撒水/撒布/撒餌)。
+# 動詞 「撒く」 は okurigana 列挙で 「ま」 へ切替
+[[kanji]]
+char = "撒"
+default = "サン"
+
+# 「撒く/撒かない/撒いた/撒いて/撒けば/撒こう」 = 動詞 → ま
+[[kanji.match]]
+next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
+reading = "ま"
+
+# 「暢」 default 「チョウ」 (= 流暢/暢達/暢気)。
+# unihan default 「のびる」 は古語動詞、 「延/伸」 が動詞 dominant
+[[kanji]]
+char = "暢"
+default = "チョウ"
+
+# 「嬉」 default 「キ」 (= 嬉戯/嬉笑)。
+# 形容詞 「嬉しい」 = うれしい は okurigana 「し」 始まりで切替
+[[kanji]]
+char = "嬉"
+default = "キ"
+
+# 「嬉しい/嬉しく/嬉しかった」 = 形容詞 → うれ
+[[kanji.match]]
+next_starts_any = ["し"]
+reading = "うれ"
