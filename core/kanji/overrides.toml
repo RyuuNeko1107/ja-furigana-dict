@@ -9594,3 +9594,103 @@ reading = "はる"
 [[kanji]]
 char = "頌"
 default = "ショウ"
+
+# 「伐」 default 「バツ」 (= 伐採/討伐/征伐/伐木/間伐)。
+# 動詞 「伐つ」 は okurigana 列挙で 「う」 へ切替 (= 「打」 と同源)
+[[kanji]]
+char = "伐"
+default = "バツ"
+
+[[kanji.match]]
+next_starts_any = ["つ", "た", "ち", "っ", "て", "と"]
+reading = "う"
+
+# 「押」 default 「オウ」 (= 押収/押韻/押印/押捺)。
+# 動詞 「押す」 は okurigana 列挙で 「お」 へ切替
+[[kanji]]
+char = "押"
+default = "オウ"
+
+[[kanji.match]]
+next_starts_any = ["す", "さ", "し", "せ", "そ", "っ"]
+reading = "お"
+
+# 「摘」 default 「テキ」 (= 摘発/指摘/摘出/摘要/摘記)。
+# 動詞 「摘む」 は okurigana 列挙で 「つ」 へ切替
+[[kanji]]
+char = "摘"
+default = "テキ"
+
+[[kanji.match]]
+next_starts_any = ["む", "ま", "み", "ん", "め", "も"]
+reading = "つ"
+
+# 「漏」 default 「ロウ」 (= 漏水/漏電/脱漏/遺漏)。
+# 動詞 「漏る/漏れる/漏らす」 は okurigana 列挙で 「も」 へ切替
+[[kanji]]
+char = "漏"
+default = "ロウ"
+
+[[kanji.match]]
+next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ"]
+reading = "も"
+
+# 「炊」 default 「スイ」 (= 炊飯/自炊/炊事/雑炊)。
+# 動詞 「炊く」 は okurigana 列挙で 「た」 へ切替
+[[kanji]]
+char = "炊"
+default = "スイ"
+
+[[kanji.match]]
+next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
+reading = "た"
+
+# 「聞」 default 「ブン」 (= 新聞/見聞/聴聞/伝聞/風聞/前代未聞)。
+# 動詞 「聞く」 は okurigana 列挙で 「き」 へ切替
+[[kanji]]
+char = "聞"
+default = "ブン"
+
+[[kanji.match]]
+next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
+reading = "き"
+
+# 「聴」 default 「チョウ」 (= 聴覚/視聴/盗聴/傍聴/拝聴)。
+# 動詞 「聴く」 は okurigana 列挙で 「き」 へ切替
+[[kanji]]
+char = "聴"
+default = "チョウ"
+
+[[kanji.match]]
+next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
+reading = "き"
+
+# 「脱」 default 「ダツ」 (= 脱出/離脱/脱衣/脱却/虚脱/脱税/脱皮)。
+# 動詞 「脱ぐ/脱げる」 は okurigana 列挙で 「ぬ」 へ切替
+[[kanji]]
+char = "脱"
+default = "ダツ"
+
+[[kanji.match]]
+next_starts_any = ["ぐ", "が", "ぎ", "い", "げ", "ご"]
+reading = "ぬ"
+
+# 「衝」 default 「ショウ」 (= 衝撃/衝突/衝動/折衝/緩衝/要衝)。
+# 動詞 「衝く」 は okurigana 列挙で 「つ」 へ切替 (= 「突」 と同源)
+[[kanji]]
+char = "衝"
+default = "ショウ"
+
+[[kanji.match]]
+next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
+reading = "つ"
+
+# 「蒔」 default 「シ」 (= 蒔絵/播蒔)。
+# 動詞 「蒔く」 は okurigana 列挙で 「ま」 へ切替 (= 「播」 と同源)
+[[kanji]]
+char = "蒔"
+default = "シ"
+
+[[kanji.match]]
+next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
+reading = "ま"

@@ -71,7 +71,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 企 は core/kanji/overrides.toml の [[kanji]] block に移行
 "伎" = "わざ"
 # 伏 は core/kanji/overrides.toml の [[kanji]] block に移行
-"伐" = "うつ"
+# 伐 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 休 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 伝 は core/kanji/overrides.toml の [[kanji]] block に移行
 "伯" = "おさ"
@@ -741,7 +741,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "抱" = "だく"
 # 抵 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 抹 は core/kanji/overrides.toml の [[kanji]] block に移行
-"押" = "おす"
+# 押 は core/kanji/overrides.toml の [[kanji]] block に移行
 "抽" = "ぬく"
 # 担 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 拉 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -803,7 +803,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 携 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 搾 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 摂 は core/kanji/overrides.toml の [[kanji]] block に移行
-"摘" = "つむ"
+# 摘 は core/kanji/overrides.toml の [[kanji]] block に移行
 "摩" = "する"
 # 摯 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 撃 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1103,7 +1103,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 漁 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 漂 は core/kanji/overrides.toml の [[kanji]] block に移行
 "漆" = "うるし"
-"漏" = "もる"
+# 漏 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 演 は core/kanji/overrides.toml の [[kanji]] block に移行
 "漠" = "バク"
 "漢" = "から"
@@ -1127,7 +1127,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "灰" = "はい"
 # 災 は core/kanji/overrides.toml の [[kanji]] block に移行
 "炉" = "いろり"
-"炊" = "たく"
+# 炊 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 「炎」 = round 47 で kanji/overrides.toml [[kanji]] block (default = エン、 prev/next ひらがな → ホノオ) に移行
 "炭" = "すみ"
 "点" = "テン"
@@ -1453,8 +1453,8 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 耕 は core/kanji/overrides.toml の [[kanji]] block に移行
 "耗" = "へる"
 "聖" = "ひじり"
-"聞" = "きく"
-"聴" = "きく"
+# 聞 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 聴 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 職 は core/kanji/overrides.toml の [[kanji]] block に移行 (★round 50)
 "肉" = "しし"
 "肌" = "はだ"
@@ -1482,7 +1482,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 脈 は core/kanji/overrides.toml の [[kanji]] block に移行
 "脊" = "セキ"
 "脚" = "あし"
-"脱" = "ぬぐ"
+# 脱 は core/kanji/overrides.toml の [[kanji]] block に移行
 "脳" = "ノウ"
 "腎" = "ジン"
 # 腐 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1586,7 +1586,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # "術" は core/kanji/overrides.toml の [[kanji]] block に移行
 "街" = "まち"
 # 衛 は core/kanji/overrides.toml の [[kanji]] block に移行
-"衝" = "つく"
+# 衝 は core/kanji/overrides.toml の [[kanji]] block に移行
 "衡" = "はかり"
 # 衣 は core/kanji/overrides.toml の [[kanji]] block に移行
 "衰" = "おとろえる"
