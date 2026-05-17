@@ -8863,3 +8863,83 @@ default = "キョウ"
 [[kanji]]
 char = "黎"
 default = "レイ"
+
+# 「丞」 default 「ジョウ」 (= 丞相)。
+# unihan default 「すくう」 は古語動詞、 「救」 が動詞 dominant
+[[kanji]]
+char = "丞"
+default = "ジョウ"
+
+# 「些」 default 「サ」 (= 些細/些少)。
+# 副詞 「些か」 = いささか は next_eq で切替
+[[kanji]]
+char = "些"
+default = "サ"
+
+# 「些か」 = いささか (副詞 / 形容動詞)
+[[kanji.match]]
+next_eq = "か"
+reading = "いささ"
+
+# 「俄」 default 「ガ」 (= 俄然)。
+# 形容動詞 「俄か」 = にわか は next_eq で切替
+[[kanji]]
+char = "俄"
+default = "ガ"
+
+# 「俄か」 = にわか (形容動詞)
+[[kanji.match]]
+next_eq = "か"
+reading = "にわ"
+
+# 「喬」 default 「キョウ」 (= 喬木/喬遷)。
+# unihan default 「たかい」 は古語形容詞、 「高」 が訓 dominant
+[[kanji]]
+char = "喬"
+default = "キョウ"
+
+# 「坐」 default 「ザ」 (= 正坐/連坐/坐視/対坐、 「座」 異体字)。
+# 動詞 「坐る」 は okurigana 列挙で 「すわ」 へ切替
+[[kanji]]
+char = "坐"
+default = "ザ"
+
+# 「坐る/坐らない/坐った/坐って/坐れば」 = 動詞 → すわ
+[[kanji.match]]
+next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ"]
+reading = "すわ"
+
+# 「叡」 default 「エイ」 (= 叡智/英叡/叡聞)。
+# unihan default 「さとい」 は古語形容詞、 現代では熟語 dominant
+[[kanji]]
+char = "叡"
+default = "エイ"
+
+# 「勁」 default 「ケイ」 (= 勁草/勁烈/精勁)。
+# unihan default 「つよい」 は古語形容詞、 「強」 が訓 dominant
+[[kanji]]
+char = "勁"
+default = "ケイ"
+
+# 「匡」 default 「キョウ」 (= 匡正/匡救/匡輔)。
+# 動詞 「匡す」 = ただす は okurigana 列挙で 「ただ」 へ切替 (= 「正す」 と同源)
+[[kanji]]
+char = "匡"
+default = "キョウ"
+
+# 「匡す/匡さない/匡した/匡して/匡せば」 = 動詞 → ただ
+[[kanji.match]]
+next_starts_any = ["す", "さ", "し", "せ", "そ"]
+reading = "ただ"
+
+# 「坦」 default 「タン」 (= 平坦/坦々/坦然/坦懐)。
+# unihan default 「たいら」 は古語、 「平」 が訓 dominant
+[[kanji]]
+char = "坦"
+default = "タン"
+
+# 「尭」 default 「ギョウ」 (= 尭舜)。
+# unihan default 「たかい」 は古語形容詞、 「高」 が訓 dominant (= 人名「尭」 = タカシ は jukugo)
+[[kanji]]
+char = "尭"
+default = "ギョウ"
