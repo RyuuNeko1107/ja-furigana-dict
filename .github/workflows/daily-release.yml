@@ -33,7 +33,10 @@ jobs:
       - uses: actions/checkout@v6
         with:
           fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
+          # PAT 経由で tag push する (= GITHUB_TOKEN だと recursive workflow 制限で
+          # release.yml が起動しない GitHub Actions の標準挙動を回避)。
+          # RELEASE_PAT が未設定の repo では GITHUB_TOKEN に fallback (= 旧挙動)。
+          token: ${{ secrets.RELEASE_PAT || secrets.GITHUB_TOKEN }}
 
       - name: 前回 tag を解決
         id: last

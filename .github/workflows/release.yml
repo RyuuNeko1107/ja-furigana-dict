@@ -19,6 +19,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          # PAT で checkout (= docs/release-diffs/ archive commit を master に push する際、
+          # branch protection を bypass できる PAT 所有者で push する必要があるため)。
+          # RELEASE_PAT が未設定の repo では GITHUB_TOKEN に fallback (= archive commit step は失敗するが
+          # tar.gz upload + draft 作成までは成功する)。
+          token: ${{ secrets.RELEASE_PAT || secrets.GITHUB_TOKEN }}
 
       - name: 解決された tag
         id: tag
@@ -143,7 +150,7 @@ jobs:
         # publish 後は asset 編集不可 (immutable) になる。 publish 順を最後に
         # することで、 失敗時は draft が残って retry 可能 (asset 整合性確保)。
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.RELEASE_PAT || secrets.GITHUB_TOKEN }}
         run: |
           TAG="${{ steps.tag.outputs.tag }}"
           gh release edit "$TAG" --repo "${{ github.repository }}" \
