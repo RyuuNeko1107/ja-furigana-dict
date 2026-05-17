@@ -997,7 +997,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "段" = "ダン"
 # 殺 は core/kanji/overrides.toml の [[kanji]] block に移行
 "殻" = "から"
-"殿" = "との"
+# 殿 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 毀 は core/kanji/overrides.toml の [[kanji]] block に移行
 "母" = "はは"
 # 毎 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1016,7 +1016,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "汗" = "あせ"
 # 汚 は core/kanji/overrides.toml の [[kanji]] block に移行
 "江" = "コウ"
-"池" = "いけ"
+# 池 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 汰 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 決 は core/kanji/overrides.toml の [[kanji]] block に移行
 "汽" = "キ"
@@ -1733,7 +1733,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 起 は core/kanji/overrides.toml の [[kanji]] block に移行
 # "超" は core/kanji/overrides.toml の [[kanji]] block に移行
 # 越 は core/kanji/overrides.toml の [[kanji]] block に移行
-"趣" = "おもむき"
+# 趣 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 距 は core/kanji/overrides.toml の [[kanji]] block に移行
 "跡" = "あと"
 # 路 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1747,7 +1747,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "身" = "シン"
 "軌" = "わだち"
 # 軍 は core/kanji/overrides.toml の [[kanji]] block に移行 (★round 49)
-"軒" = "のき"
+# 軒 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 軟 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 転 は core/kanji/overrides.toml の [[kanji]] block に移行
 "軸" = "じく"
@@ -1799,7 +1799,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 道 は core/kanji/overrides.toml の [[kanji]] block に移行 (★round 49)
 # 「達」 は overrides.toml の [[kanji]] block に移行 (★round 39)
 # 違 は core/kanji/overrides.toml の [[kanji]] block に移行
-"遜" = "へりくだる"
+# 遜 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 遠 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 遡 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 遣 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1820,10 +1820,10 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "郎" = "ロウ"
 # 郡 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 部 は core/kanji/overrides.toml の [[kanji]] block に移行
-"郭" = "くるわ"
+# 郭 は core/kanji/overrides.toml の [[kanji]] block に移行
 "郵" = "ユウ"
-"郷" = "さきに"
-"都" = "みやこ"
+# 郷 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 都 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 酌 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 配 は core/kanji/overrides.toml の [[kanji]] block に移行
 "酎" = "チュウ"
@@ -1926,7 +1926,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "雰" = "フン"
 # 雲 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 零 は core/kanji/overrides.toml の [[kanji]] block に移行
-"雷" = "かみなり"
+# 雷 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 電 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 需 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 震 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -2008,7 +2008,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "麓" = "ふもと"
 # 麗 は core/kanji/overrides.toml の [[kanji]] block に移行
 "麦" = "むぎ"
-"麺" = "むぎこ"
+# 麺 は core/kanji/overrides.toml の [[kanji]] block に移行
 "麻" = "あさ"
 "黄" = "コウ"
 "黒" = "くろ"

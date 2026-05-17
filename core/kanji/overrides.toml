@@ -8228,3 +8228,88 @@ default = "トン"
 [[kanji]]
 char = "骸"
 default = "ガイ"
+
+# 「趣」 default 「シュ」 (= 趣味/趣旨/趣向/興趣/雅趣/情趣)。
+# 単独 + 助詞接続 → 「おもむき」 (= 名詞用法)
+[[kanji]]
+char = "趣"
+default = "シュ"
+
+# 「趣は/趣が/趣を/趣に/趣の/趣で/趣と」 = 単独 + 助詞接続 → おもむき
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ"]
+reading = "おもむき"
+
+# 「○の趣/○な趣」 = 助詞 直後 → おもむき
+[[kanji.match]]
+prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も", "な"]
+reading = "おもむき"
+
+# 「都」 default 「ト」 (= 都市/都会/京都/首都/都内/都立/都民/帝都)。
+# 単独 + 助詞接続 → 「みやこ」 (= 名詞用法)
+[[kanji]]
+char = "都"
+default = "ト"
+
+# 「都は/都が/都を/都に/都の/都で/都と」 = 単独 + 助詞接続 → みやこ
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ"]
+reading = "みやこ"
+
+# 「雷」 default 「ライ」 (= 雷雨/雷鳴/落雷/避雷針/雷光/地雷)。
+# 単独 + 助詞接続 → 「かみなり」 (= 名詞用法)
+[[kanji]]
+char = "雷"
+default = "ライ"
+
+# 「雷は/雷が/雷を/雷に/雷の/雷で/雷と」 = 単独 + 助詞接続 → かみなり
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ"]
+reading = "かみなり"
+
+# 「池」 default 「チ」 (= 電池/貯水池/温水池/防火池/池中)。
+# 単独 + 助詞接続 → 「いけ」 (= 名詞用法)
+[[kanji]]
+char = "池"
+default = "チ"
+
+# 「池は/池が/池を/池に/池の/池で/池と」 = 単独 + 助詞接続 → いけ
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ"]
+reading = "いけ"
+
+# 「軒」 default 「ケン」 (= 軒数/数軒/三軒/一軒家)。
+# 訓 「のき」 (= 軒先/軒並み) は jukugo 個別
+[[kanji]]
+char = "軒"
+default = "ケン"
+
+# 「殿」 default 「デン」 (= 殿堂/宮殿/神殿/御殿/楼殿/大殿)。
+# 訓 「との」 (= 殿様/殿御) は jukugo 個別
+[[kanji]]
+char = "殿"
+default = "デン"
+
+# 「郭」 default 「カク」 (= 輪郭/城郭/外郭/郭公/胸郭)。
+# unihan default 「くるわ」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "郭"
+default = "カク"
+
+# 「郷」 default 「キョウ」 (= 郷里/郷土/故郷/帰郷/異郷/同郷/水郷)。
+# unihan default 「さきに」 は古語副詞、 現代では熟語 dominant
+[[kanji]]
+char = "郷"
+default = "キョウ"
+
+# 「遜」 default 「ソン」 (= 謙遜/不遜)。
+# unihan default 「へりくだる」 は動詞、 「謙」 が動詞 dominant
+[[kanji]]
+char = "遜"
+default = "ソン"
+
+# 「麺」 default 「メン」 (= 麺類/製麺/麺棒/中華麺)。
+# unihan default 「むぎこ」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "麺"
+default = "メン"
