@@ -8313,3 +8313,78 @@ default = "ソン"
 [[kanji]]
 char = "麺"
 default = "メン"
+
+# 「凌」 default 「リョウ」 (= 凌駕/凌辱/凌雲/凌虐)。
+# 動詞 「凌ぐ」 は okurigana 列挙で 「しの」 へ切替
+[[kanji]]
+char = "凌"
+default = "リョウ"
+
+# 「凌ぐ/凌がない/凌いだ/凌いで/凌げば/凌ごう/凌ぎ○○」 = 動詞 → しの
+[[kanji.match]]
+next_starts_any = ["ぐ", "が", "ぎ", "い", "げ", "ご"]
+reading = "しの"
+
+# 「倦」 default 「ケン」 (= 倦怠/倦厭/疲倦)。
+# 動詞 「倦む」 は okurigana 列挙で 「う」 へ切替
+[[kanji]]
+char = "倦"
+default = "ケン"
+
+# 「倦む/倦まない/倦んだ/倦めば/倦もう」 = 動詞 → う
+[[kanji.match]]
+next_starts_any = ["む", "ま", "み", "ん", "め", "も"]
+reading = "う"
+
+# 「劉」 default 「リュウ」 (= 劉備/劉邦/劉海/劉氏)。
+# unihan default 「ころす」 は古語動詞、 現代日本語では人名 (= 中国人名) dominant
+[[kanji]]
+char = "劉"
+default = "リュウ"
+
+# 「嘗」 default 「ショウ」 (= 嘗胆/臥薪嘗胆/未嘗有)。
+# 副詞 「嘗て」 = かつて は next_eq で切替
+[[kanji]]
+char = "嘗"
+default = "ショウ"
+
+# 「嘗て」 = かつて (副詞)
+[[kanji.match]]
+next_eq = "て"
+reading = "かつ"
+
+# 「函」 default 「カン」 (= 函数/投函/書函)。
+# unihan default 「はこ」 は古語、 現代では熟語 dominant (= 「箱」 が訓 dominant、 「函館」 = jukugo)
+[[kanji]]
+char = "函"
+default = "カン"
+
+# 「嘉」 default 「カ」 (= 嘉永/嘉慶/嘉言/嘉納)。
+# unihan default 「よい」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "嘉"
+default = "カ"
+
+# 「厨」 default 「チュウ」 (= 厨房/厨子/御厨)。
+# unihan default 「くりや」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "厨"
+default = "チュウ"
+
+# 「倭」 default 「ワ」 (= 倭人/倭国/倭寇/邪馬倭国)。
+# unihan default 「やまと」 は単独人名/古語名用法、 現代では熟語 dominant
+[[kanji]]
+char = "倭"
+default = "ワ"
+
+# 「卿」 default 「キョウ」 (= 公卿/卿相/枢機卿)。
+# unihan default 「きみ」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "卿"
+default = "キョウ"
+
+# 「也」 default 「ヤ」 (= 人名末尾頻出: 直也/健也/拓也/達也)。
+# unihan default 「なり」 は古典文末 (= 「○○也」)、 現代用例は人名末尾 dominant
+[[kanji]]
+char = "也"
+default = "ヤ"
