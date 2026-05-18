@@ -11333,3 +11333,79 @@ default = "ジツ"
 [[kanji.match]]
 next_starts_any = ["が", "を", "に", "の", "で", "と", "も"]
 reading = "み"
+
+# 「庸」 default 「ヨウ」 (= 中庸/凡庸/登庸/雇庸)。
+# unihan default 「つね」 は古語、 「常」 が訓 dominant
+[[kanji]]
+char = "庸"
+default = "ヨウ"
+
+# 「廉」 default 「レン」 (= 廉価/低廉/清廉/破廉恥/廉直)。
+# unihan default 「かど」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "廉"
+default = "レン"
+
+# 「張」 default 「チョウ」 (= 主張/拡張/緊張/出張/開張/誇張)。
+# 動詞 「張る」 は okurigana 列挙で 「は」 へ切替
+[[kanji]]
+char = "張"
+default = "チョウ"
+
+[[kanji.match]]
+next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ"]
+reading = "は"
+
+# 「彫」 default 「チョウ」 (= 彫刻/彫像/木彫/浮彫)。
+# 動詞 「彫る」 は okurigana 列挙で 「ほ」 へ切替
+[[kanji]]
+char = "彫"
+default = "チョウ"
+
+[[kanji.match]]
+next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ"]
+reading = "ほ"
+
+# 「役」 default 「ヤク」 (= 役割/役者/役職/役所/兵役/重役/苦役)。
+# unihan default 「つとめ」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "役"
+default = "ヤク"
+
+# 「往」 default 「オウ」 (= 往復/往来/往年/既往/退往/已往)。
+# unihan default 「いく」 は古語、 「行」 が動詞 dominant
+[[kanji]]
+char = "往"
+default = "オウ"
+
+# 「征」 default 「セイ」 (= 征服/出征/遠征/征討/長征)。
+# unihan default 「うつ」 は古語動詞、 「打/伐」 が動詞 dominant
+[[kanji]]
+char = "征"
+default = "セイ"
+
+# 「径」 default 「ケイ」 (= 直径/半径/口径/小径/径路)。
+# unihan default 「こみち」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "径"
+default = "ケイ"
+
+# 「影」 default 「エイ」 (= 影響/陰影/撮影/投影/幻影/映影)。
+# 単独 + 助詞接続 → 「かげ」 (= 「影が/影の」 等)
+[[kanji]]
+char = "影"
+default = "エイ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "かげ"
+
+# 「弟」 default 「テイ」 (= 弟子/師弟/従兄弟/門弟)。
+# 単独 + 助詞接続 → 「おとうと」 (= 「弟が/弟の」 等)
+[[kanji]]
+char = "弟"
+default = "テイ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "おとうと"

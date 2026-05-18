@@ -592,9 +592,9 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "庭" = "にわ"
 # 庶 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 康 は core/kanji/overrides.toml の [[kanji]] block に移行
-"庸" = "つね"
+# 庸 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 廃 は core/kanji/overrides.toml の [[kanji]] block に移行
-"廉" = "かど"
+# 廉 は core/kanji/overrides.toml の [[kanji]] block に移行
 "廊" = "ロウ"
 # 延 は core/kanji/overrides.toml の [[kanji]] block に移行
 "廷" = "テイ"
@@ -607,25 +607,25 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "弓" = "ゆみ"
 # 弔 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 引 は core/kanji/overrides.toml の [[kanji]] block に移行
-"弟" = "おとうと"
+# 弟 は core/kanji/overrides.toml の [[kanji]] block に移行
 "弥" = "や"
 "弦" = "つる"
 "弧" = "コ"
 # 「弱」 は overrides.toml の [[kanji]] block に移行 (★round 39)
-"張" = "はる"
+# 張 は core/kanji/overrides.toml の [[kanji]] block に移行
 # "弾" は core/kanji/overrides.toml の [[kanji]] block に移行
 # 当 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 彙 は core/kanji/overrides.toml の [[kanji]] block に移行
 # "形" は core/kanji/overrides.toml の [[kanji]] block に移行
 # 彩 は core/kanji/overrides.toml の [[kanji]] block に移行
-"彫" = "ほる"
+# 彫 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 彰 は core/kanji/overrides.toml の [[kanji]] block に移行
-"影" = "かげ"
-"役" = "つとめ"
+# 影 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 役 は core/kanji/overrides.toml の [[kanji]] block に移行
 "彼" = "かれ"
-"往" = "いく"
-"征" = "うつ"
-"径" = "こみち"
+# 往 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 征 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 径 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 待 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 律 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 徐 は core/kanji/overrides.toml の [[kanji]] block に移行
