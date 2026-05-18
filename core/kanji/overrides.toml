@@ -11666,3 +11666,83 @@ default = "トウ"
 [[kanji]]
 char = "把"
 default = "ハ"
+
+# 「忌」 default 「キ」 (= 禁忌/忌中/忌避/忌引)。
+# 動詞 「忌む」 は okurigana 列挙で 「い」 へ切替
+[[kanji]]
+char = "忌"
+default = "キ"
+
+[[kanji.match]]
+next_starts_any = ["む", "ま", "み", "ん", "め", "も"]
+reading = "い"
+
+# 「惨」 default 「サン」 (= 悲惨/惨事/惨敗/惨状/惨劇)。
+# 形容動詞 「惨め」 = みじめ は next_eq で切替
+[[kanji]]
+char = "惨"
+default = "サン"
+
+[[kanji.match]]
+next_eq = "め"
+reading = "みじ"
+
+# 「愚」 default 「グ」 (= 愚者/愚問/愚痴/愚直/愚作/凡愚)。
+# 形容動詞 「愚か」 = おろか は next_eq で切替
+[[kanji]]
+char = "愚"
+default = "グ"
+
+[[kanji.match]]
+next_eq = "か"
+reading = "おろ"
+
+# 「憾」 default 「カン」 (= 遺憾/憾事)。
+# unihan default 「うらみ」 は古語、 「恨」 が訓 dominant
+[[kanji]]
+char = "憾"
+default = "カン"
+
+# 「扇」 default 「セン」 (= 扇子/扇風機/扇動/扇形/扇情)。
+# 動詞 「扇ぐ」 は okurigana 列挙で 「あお」 へ切替
+[[kanji]]
+char = "扇"
+default = "セン"
+
+[[kanji.match]]
+next_starts_any = ["ぐ", "が", "ぎ", "い", "げ", "ご"]
+reading = "あお"
+
+# 「拍」 default 「ハク」 (= 拍手/拍車/脈拍/三拍子/鼓拍)。
+# unihan default 「ウ」 は誤、 現代では熟語 dominant
+[[kanji]]
+char = "拍"
+default = "ハク"
+
+# 「撲」 default 「ボク」 (= 撲滅/打撲/相撲/反撲)。
+# unihan default 「うつ」 は古語動詞、 「打/伐」 が動詞 dominant
+[[kanji]]
+char = "撲"
+default = "ボク"
+
+# 「摩」 default 「マ」 (= 摩擦/按摩/達摩/摩天楼/摩耗)。
+# unihan default 「する」 は古語動詞、 「擦」 が動詞 dominant
+[[kanji]]
+char = "摩"
+default = "マ"
+
+# 「擬」 default 「ギ」 (= 模擬/擬似/擬人/擬声語/擬態)。
+# unihan default 「なぞらえる」 は古語動詞、 現代では熟語 dominant
+[[kanji]]
+char = "擬"
+default = "ギ"
+
+# 「敢」 default 「カン」 (= 敢闘/勇敢/果敢)。
+# 副詞 「敢えて」 = あえて は okurigana 「え」 で 「あ」 へ切替
+[[kanji]]
+char = "敢"
+default = "カン"
+
+[[kanji.match]]
+next_starts_any = ["え"]
+reading = "あ"

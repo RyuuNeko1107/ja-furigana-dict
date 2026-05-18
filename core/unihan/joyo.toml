@@ -640,7 +640,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 徴 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 徹 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 必 は core/kanji/overrides.toml の [[kanji]] block に移行
-"忌" = "いむ"
+# 忌 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 忍 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 志 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 忘 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -676,13 +676,13 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 惑 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 惜 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 惧 は core/kanji/overrides.toml の [[kanji]] block に移行
-"惨" = "みじめ"
+# 惨 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 惰 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 想 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 愁 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 愉 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 意 は core/kanji/overrides.toml の [[kanji]] block に移行
-"愚" = "おろか"
+# 愚 は core/kanji/overrides.toml の [[kanji]] block に移行
 "感" = "カン"
 # 慄 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 慈 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -704,7 +704,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 憬 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 憲 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 憶 は core/kanji/overrides.toml の [[kanji]] block に移行
-"憾" = "うらみ"
+# 憾 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 懇 は core/kanji/overrides.toml の [[kanji]] block に移行
 "懐" = "ふところ"
 # 懲 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -719,7 +719,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 戻 は core/kanji/overrides.toml の [[kanji]] block に移行
 "房" = "ふさ"
 # 所 は core/kanji/overrides.toml の [[kanji]] block に移行 (= default ところ + prev 漢字 → ショ)
-"扇" = "おうぎ"
+# 扇 は core/kanji/overrides.toml の [[kanji]] block に移行
 "扉" = "とびら"
 # 才 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 打 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -745,7 +745,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "抽" = "ぬく"
 # 担 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 拉 は core/kanji/overrides.toml の [[kanji]] block に移行
-"拍" = "ウ"
+# 拍 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 拐 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 拒 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 拓 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -804,16 +804,16 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 搾 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 摂 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 摘 は core/kanji/overrides.toml の [[kanji]] block に移行
-"摩" = "する"
+# 摩 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 摯 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 撃 は core/kanji/overrides.toml の [[kanji]] block に移行
 "撤" = "テツ"
 # 撮 は core/kanji/overrides.toml の [[kanji]] block に移行
-"撲" = "うつ"
+# 撲 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 擁 は core/kanji/overrides.toml の [[kanji]] block に移行
 "操" = "みさお"
 "擦" = "する"
-"擬" = "なぞらえる"
+# 擬 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 支 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 改 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 攻 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -824,7 +824,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 救 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 敗 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 教 は core/kanji/overrides.toml の [[kanji]] block に移行
-"敢" = "あえて"
+# 敢 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 散 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 敬 は core/kanji/overrides.toml の [[kanji]] block に移行
 "整" = "ととのえる"
