@@ -941,10 +941,10 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "桁" = "けた"
 "桃" = "もも"
 # 案 は core/kanji/overrides.toml の [[kanji]] block に移行
-"桑" = "くわ"
-"桜" = "さくら"
+# 桑 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 桜 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 桟 は core/kanji/overrides.toml の [[kanji]] block に移行
-"梅" = "うめ"
+# 梅 は core/kanji/overrides.toml の [[kanji]] block に移行
 "梗" = "コウ"
 "梨" = "なし"
 # 械 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1030,7 +1030,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 沸 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 油 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 治 は core/kanji/overrides.toml の [[kanji]] block に移行
-"沼" = "ぬま"
+# 沼 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 沿 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 況 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 泉 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1866,7 +1866,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 録 は core/kanji/overrides.toml の [[kanji]] block に移行
 "鍋" = "なべ"
 # 鍛 は core/kanji/overrides.toml の [[kanji]] block に移行
-"鍵" = "かぎ"
+# 鍵 は core/kanji/overrides.toml の [[kanji]] block に移行
 "鎌" = "かま"
 # 鎖 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 鎮 は core/kanji/overrides.toml の [[kanji]] block に移行
