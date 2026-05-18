@@ -13279,3 +13279,33 @@ reading = "たず"
 [[kanji]]
 char = "惚"
 default = "ほ"
+
+# 「刃」 default 「は」 (= 「刃が立つ/刃を研ぐ/両刃/もろ刃」、 訓読み主流)。
+# unihan 「ジン」 は「自刃/白刃」 等の jukugo 限定 → default 訂正、 jukugo 経由で対応。
+[[kanji]]
+char = "刃"
+default = "は"
+
+# 「牲」 default 「セイ」 (= 犠牲、 ほぼ「犠牲」 のみ実用)。
+# unihan 「いけにえ」 は jukugo に通じる古語訓、 現代日本語では音読み → default 訂正。
+[[kanji]]
+char = "牲"
+default = "セイ"
+
+# 「頬」 default 「ほお」 (= 頬/頬骨/頬張る/頬紅、 現代発音)。
+# unihan 「ホホ」 は古い表記、 現代日本語では「ほお」 圧倒的 → default 訂正。
+[[kanji]]
+char = "頬"
+default = "ほお"
+
+# 「壕」 default 「ゴウ」 (= 塹壕/防空壕/濠壕、 音読み圧倒的)。
+# unihan 「ほり」 は「堀」 の訓で「壕」 単独訓読み用法はほぼなし → default 訂正。
+[[kanji]]
+char = "壕"
+default = "ゴウ"
+
+# 「杷」 default 「ハ」 (= 枇杷 (ビワ) ほぼ唯一の実用)。
+# unihan 「つか」 は「柄」 の訓で「杷」 単独訓読み用法はない → default 訂正。
+[[kanji]]
+char = "杷"
+default = "ハ"

@@ -183,7 +183,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 「凸」 は overrides.toml の [[kanji]] block に移行 (★round 41)
 # 凹 は core/kanji/overrides.toml の [[kanji]] block に移行
 "刀" = "かたな"
-"刃" = "ジン"
+# 刃 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 分 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 切 は core/kanji/overrides.toml の [[kanji]] block に移行
 "刈" = "かる"
@@ -1155,7 +1155,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "牙" = "きば"
 "牛" = "うし"
 "牧" = "まき"
-"牲" = "いけにえ"
+# 牲 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 特 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 犠 は core/kanji/overrides.toml の [[kanji]] block に移行
 "犬" = "いぬ"
@@ -1953,7 +1953,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 頒 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 頓 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 領 は core/kanji/overrides.toml の [[kanji]] block に移行
-"頬" = "ホホ"
+# 頬 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 頭 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 頻 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 頼 は core/kanji/overrides.toml の [[kanji]] block に移行
