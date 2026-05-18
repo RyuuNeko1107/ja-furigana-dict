@@ -9925,3 +9925,63 @@ default = "ヒ"
 [[kanji]]
 char = "礁"
 default = "ショウ"
+
+# 「祉」 default 「シ」 (= 福祉)。
+# unihan default 「さいわい」 は古語、 「幸」 が訓 dominant
+[[kanji]]
+char = "祉"
+default = "シ"
+
+# 「祥」 default 「ショウ」 (= 吉祥/不祥事/発祥/吉祥天/瑞祥)。
+# unihan default 「さいわい」 は古語、 「幸」 が訓 dominant
+[[kanji]]
+char = "祥"
+default = "ショウ"
+
+# 「禍」 default 「カ」 (= 災禍/惨禍/輪禍/禍根/戦禍/筆禍)。
+# unihan default 「わざわい」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "禍"
+default = "カ"
+
+# 「稚」 default 「チ」 (= 幼稚/稚児/稚拙/稚魚)。
+# unihan default 「いとけない」 は古語形容詞、 現代では熟語 dominant
+[[kanji]]
+char = "稚"
+default = "チ"
+
+# 「稽」 default 「ケイ」 (= 稽古/滑稽/荒唐無稽/反稽)。
+# unihan default 「かんがえる」 は古語動詞、 「考」 が動詞 dominant
+[[kanji]]
+char = "稽"
+default = "ケイ"
+
+# 「稿」 default 「コウ」 (= 原稿/草稿/投稿/寄稿/起稿/拙稿)。
+# unihan default 「わら」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "稿"
+default = "コウ"
+
+# 「穀」 default 「コク」 (= 穀物/穀類/雑穀/五穀/穀倉/米穀)。
+# unihan default 「たなつもの」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "穀"
+default = "コク"
+
+# 「穫」 default 「カク」 (= 収穫/秋穫)。
+# unihan default 「かる」 は古語動詞、 「刈」 が動詞 dominant
+[[kanji]]
+char = "穫"
+default = "カク"
+
+# 「窟」 default 「クツ」 (= 洞窟/巣窟/魔窟/石窟)。
+# unihan default 「いわや」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "窟"
+default = "クツ"
+
+# 「粋」 default 「スイ」 (= 純粋/抜粋/粋人/不粋/精粋)。
+# unihan default 「いき」 は名詞単独、 「粋」 = いき 用例も多いが熟語 dominant
+[[kanji]]
+char = "粋"
+default = "スイ"
