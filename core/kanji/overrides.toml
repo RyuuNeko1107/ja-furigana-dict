@@ -9985,3 +9985,67 @@ default = "クツ"
 [[kanji]]
 char = "粋"
 default = "スイ"
+
+# 「竜」 default 「リュウ」 (= 竜宮/恐竜/水竜/竜神/竜骨)。
+# unihan default 「たつ」 は単独/干支「辰」 と同源、 「竜」 = タツ 用例もあるが熟語 dominant
+[[kanji]]
+char = "竜"
+default = "リュウ"
+
+# 「箋」 default 「セン」 (= 処方箋/便箋/付箋/箋註)。
+# unihan default 「ふだ」 は古語、 「札」 が訓 dominant
+[[kanji]]
+char = "箋"
+default = "セン"
+
+# 「算」 default 「サン」 (= 算数/予算/計算/暗算/概算/逆算/通算)。
+# unihan default 「かず」 は古語、 「数」 が訓 dominant
+[[kanji]]
+char = "算"
+default = "サン"
+
+# 「糖」 default 「トウ」 (= 糖分/砂糖/糖尿/血糖/精糖/果糖)。
+# unihan default 「あめ」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "糖"
+default = "トウ"
+
+# 「糧」 default 「リョウ」 (= 食糧/兵糧/糧食/糧道)。
+# unihan default 「かて」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "糧"
+default = "リョウ"
+
+# 「級」 default 「キュウ」 (= 学級/階級/上級/初級/中級/級友/同級)。
+# unihan default 「しな」 は古語、 「品」 が訓 dominant
+[[kanji]]
+char = "級"
+default = "キュウ"
+
+# 「索」 default 「サク」 (= 索引/思索/捜索/検索/模索/詮索)。
+# unihan default 「なわ」 は古語、 「縄」 が訓 dominant
+[[kanji]]
+char = "索"
+default = "サク"
+
+# 「紳」 default 「シン」 (= 紳士/紳商/縉紳)。
+# unihan default 「おおおび」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "紳"
+default = "シン"
+
+# 「維」 default 「イ」 (= 維持/維新/繊維/思維)。
+# unihan default 「これ」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "維"
+default = "イ"
+
+# 「綻」 default 「タン」 (= 破綻/綻露)。
+# 動詞 「綻びる」 = ほころびる は okurigana 「び」 で 「ほころ」 へ切替
+[[kanji]]
+char = "綻"
+default = "タン"
+
+[[kanji.match]]
+next_starts_any = ["び", "ば", "ぶ", "べ", "ぼ"]
+reading = "ほころ"
