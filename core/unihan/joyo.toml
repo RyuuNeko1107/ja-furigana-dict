@@ -376,7 +376,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 堕 は core/kanji/overrides.toml の [[kanji]] block に移行
 "堤" = "つつみ"
 # 堪 は core/kanji/overrides.toml の [[kanji]] block に移行
-"報" = "ホウ"
+# 報 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 場 は core/kanji/overrides.toml の [[kanji]] block に移行 (★round 49)
 "塀" = "ヘイ"
 # 塁 は core/kanji/overrides.toml の [[kanji]] block に移行

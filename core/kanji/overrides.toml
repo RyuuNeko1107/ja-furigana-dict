@@ -12650,3 +12650,14 @@ default = "におい"
 [[kanji.match]]
 next_starts_any = ["う", "わ", "っ", "お"]
 reading = "にお"
+
+# 「報」 default 「ホウ」 (= 報告/予報/速報/情報/応報/警報/月報)。
+# 動詞 「報いる」 (= recompense) → okurigana 「い」 で 「むく」 へ切替。
+# 動詞 「報じる」 は default 「ホウ」 のまま (= next が「じ」 で match なし)。
+[[kanji]]
+char = "報"
+default = "ホウ"
+
+[[kanji.match]]
+next_starts_any = ["い"]
+reading = "むく"
