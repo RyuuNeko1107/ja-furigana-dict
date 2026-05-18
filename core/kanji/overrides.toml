@@ -12634,3 +12634,9 @@ reading = "こと"
 [[kanji]]
 char = "井"
 default = "い"
+
+# 「俸」 default 「ホウ」 (= 俸給/年俸/減俸/月俸/本俸/俸禄)。
+# unihan の「ふち」 は古語訓読み、 現代日本語では音読み圧倒的多数 → default 訂正。
+[[kanji]]
+char = "俸"
+default = "ホウ"
