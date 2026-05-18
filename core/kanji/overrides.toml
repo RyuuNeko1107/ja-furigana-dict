@@ -12018,3 +12018,75 @@ default = "コ"
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
 reading = "と"
+
+# 「朱」 default 「シュ」 (= 朱印/朱色/朱書/朱筆/朱印船/朱肉)。
+# unihan default 「あか」 は古語、 「赤」 が訓 dominant
+[[kanji]]
+char = "朱"
+default = "シュ"
+
+# 「析」 default 「セキ」 (= 分析/解析/透析/析出)。
+# unihan default 「さく」 は古語動詞、 「裂/割」 が動詞 dominant
+[[kanji]]
+char = "析"
+default = "セキ"
+
+# 「枚」 default 「マイ」 (= 一枚/十枚/枚挙/枚数)。
+# unihan default 「びら」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "枚"
+default = "マイ"
+
+# 「枢」 default 「スウ」 (= 中枢/枢機卿/枢密院/枢要)。
+# unihan default 「かなめ」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "枢"
+default = "スウ"
+
+# 「条」 default 「ジョウ」 (= 条件/条約/箇条/条例/条理/条文/信条)。
+# unihan default 「えだ」 は古語、 「枝」 が訓 dominant
+[[kanji]]
+char = "条"
+default = "ジョウ"
+
+# 「朕」 default 「チン」 (= 君主一人称、 古典/天皇用語)。
+# unihan default 「われ」 は「我」 と被る
+[[kanji]]
+char = "朕"
+default = "チン"
+
+# 「斜」 default 「シャ」 (= 斜面/斜陽/傾斜/斜線/斜角)。
+# 形容動詞 「斜め」 = ななめ は next_eq で切替
+[[kanji]]
+char = "斜"
+default = "シャ"
+
+[[kanji.match]]
+next_eq = "め"
+reading = "なな"
+
+# 「斤」 default 「キン」 (= 斤量/百斤/三斤)。
+# unihan default 「おの」 は古語、 「斧」 と被る
+[[kanji]]
+char = "斤"
+default = "キン"
+
+# 「板」 default 「バン」 (= 鉄板/黒板/掲示板/看板/合板/平板)。
+# 単独 + 助詞接続 → 「いた」 (= 「板が/板の」 等)
+[[kanji]]
+char = "板"
+default = "バン"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "いた"
+
+# 「柱」 default 「チュウ」 (= 柱状/支柱/電柱/円柱/帆柱/角柱)。
+# 単独 + 助詞接続 → 「はしら」 (= 「柱が/柱の」 等)
+[[kanji]]
+char = "柱"
+default = "チュウ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "はしら"
