@@ -11133,3 +11133,103 @@ default = "ダイ"
 [[kanji.match]]
 next_starts_any = ["き", "く"]
 reading = "おお"
+
+# 「姿」 default 「シ」 (= 姿勢/英姿/雄姿/容姿)。
+# 単独 + 助詞接続 → 「すがた」 (= 「姿が/姿の」 等)
+[[kanji]]
+char = "姿"
+default = "シ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "すがた"
+
+# 「干」 default 「カン」 (= 干渉/干潮/欄干/若干/干害/干満)。
+# 動詞 「干す/干る/干上がる」 は okurigana 列挙で 「ほ」 へ切替
+[[kanji]]
+char = "干"
+default = "カン"
+
+[[kanji.match]]
+next_starts_any = ["す", "さ", "し", "せ", "そ", "る", "ら", "り"]
+reading = "ほ"
+
+# 「幸」 default 「コウ」 (= 幸福/幸運/不幸/多幸/薄幸)。
+# 単独 + 助詞接続 → 「さいわい」 (= 「幸が/幸の」 等)
+[[kanji]]
+char = "幸"
+default = "コウ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "さいわい"
+
+# 「幹」 default 「カン」 (= 幹部/根幹/主幹/新幹線/語幹/基幹/幹事)。
+# 単独 + 助詞接続 → 「みき」 (= 「幹が/幹の」 等)
+[[kanji]]
+char = "幹"
+default = "カン"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "みき"
+
+# 「幻」 default 「ゲン」 (= 幻覚/幻想/幻影/夢幻/変幻)。
+# 単独 + 助詞接続 → 「まぼろし」 (= 「幻が/幻の」 等)
+[[kanji]]
+char = "幻"
+default = "ゲン"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "まぼろし"
+
+# 「幾」 default 「キ」 (= 幾何/幾分/幾多)。
+# 副詞 「幾つ/幾ら/幾度」 は okurigana で 「いく」 へ切替
+[[kanji]]
+char = "幾"
+default = "キ"
+
+[[kanji.match]]
+next_starts_any = ["つ", "ら", "ど", "は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "いく"
+
+# 「底」 default 「テイ」 (= 底辺/海底/根底/到底/徹底/船底)。
+# 単独 + 助詞接続 → 「そこ」 (= 「底が/底の」 等)
+[[kanji]]
+char = "底"
+default = "テイ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "そこ"
+
+# 「常」 default 「ジョウ」 (= 日常/通常/平常/正常/常識/常時/常温)。
+# 副詞 「常に」 + 単独 + 助詞接続 → 「つね」
+[[kanji]]
+char = "常"
+default = "ジョウ"
+
+[[kanji.match]]
+next_starts_any = ["に", "は", "が", "を", "の", "で", "と", "も"]
+reading = "つね"
+
+# 「幅」 default 「フク」 (= 幅員/振幅/全幅/横幅/値幅)。
+# 単独 + 助詞接続 → 「はば」 (= 「幅が/幅の」 等)
+[[kanji]]
+char = "幅"
+default = "フク"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "はば"
+
+# 「夏」 default 「カ」 (= 夏季/初夏/冷夏/盛夏/晩夏)。
+# 単独 + 助詞接続 → 「なつ」 (= 「夏が/夏の」 等)
+[[kanji]]
+char = "夏"
+default = "カ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "なつ"
