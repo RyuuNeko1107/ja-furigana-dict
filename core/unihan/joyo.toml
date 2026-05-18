@@ -163,15 +163,15 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 典 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 兼 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 「内」 は overrides.toml の [[kanji]] block に移行 (★round 36)
-"冊" = "ふみ"
+# 冊 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 再 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 冒 は core/kanji/overrides.toml の [[kanji]] block に移行
 "冗" = "ジョウ"
 # 写 は core/kanji/overrides.toml の [[kanji]] block に移行
-"冠" = "かんむり"
+# 冠 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 冥 は core/kanji/overrides.toml の [[kanji]] block に移行
 "冬" = "ふゆ"
-"冶" = "いる"
+# 冶 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 冷 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 凄 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 准 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -196,21 +196,21 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 利 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 到 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 制 は core/kanji/overrides.toml の [[kanji]] block に移行
-"刷" = "する"
+# 刷 は core/kanji/overrides.toml の [[kanji]] block に移行
 "券" = "ケン"
 "刹" = "セツ"
 # 刺 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 刻 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 則 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 削 は core/kanji/overrides.toml の [[kanji]] block に移行
-"剖" = "さく"
+# 剖 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 剛 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 剤 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 剥 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 副 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 剰 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 「割」 は overrides.toml の [[kanji]] block に移行 (★round 36)
-"創" = "きず"
+# 創 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 功 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 加 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 劣 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -243,7 +243,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # "十" は core/kanji/overrides.toml の [[kanji]] block に移行 (★round 48)
 "千" = "セン"
 "升" = "ます"
-"午" = "ヒル"
+# 午 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 卑 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 卒 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 卓 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -274,11 +274,11 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "叔" = "おじ"
 # 取 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 受 は core/kanji/overrides.toml の [[kanji]] block に移行
-"叙" = "ついず"
+# 叙 は core/kanji/overrides.toml の [[kanji]] block に移行
 "句" = "ク"
 # 叫 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 召 は core/kanji/overrides.toml の [[kanji]] block に移行
-"可" = "べし"
+# 可 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 「台」 は overrides.toml の [[kanji]] block に移行 (★round 36)
 # 叱 は core/kanji/overrides.toml の [[kanji]] block に移行
 "史" = "シ"
@@ -287,7 +287,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "司" = "つかさ"
 # 各 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 合 は core/kanji/overrides.toml の [[kanji]] block に移行
-"吉" = "よい"
+# 吉 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 同 は core/kanji/overrides.toml の [[kanji]] block に移行
 "名" = "メイ"
 "后" = "あと"

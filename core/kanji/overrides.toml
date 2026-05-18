@@ -10433,3 +10433,67 @@ default = "ハク"
 [[kanji]]
 char = "侶"
 default = "リョ"
+
+# 「冊」 default 「サツ」 (= 冊子/別冊/分冊/書冊/小冊/短冊)。
+# unihan default 「ふみ」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "冊"
+default = "サツ"
+
+# 「冠」 default 「カン」 (= 冠水/王冠/栄冠/冠詞/冠婚葬祭/弱冠)。
+# unihan default 「かんむり」 は名詞単独、 熟語 dominant
+[[kanji]]
+char = "冠"
+default = "カン"
+
+# 「冶」 default 「ヤ」 (= 冶金/陶冶)。
+# unihan default 「いる」 は古語動詞、 現代では熟語 dominant
+[[kanji]]
+char = "冶"
+default = "ヤ"
+
+# 「刷」 default 「サツ」 (= 印刷/刷新/縮刷/特刷/重刷)。
+# 動詞 「刷る」 は okurigana 列挙で 「す」 へ切替
+[[kanji]]
+char = "刷"
+default = "サツ"
+
+[[kanji.match]]
+next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ"]
+reading = "す"
+
+# 「創」 default 「ソウ」 (= 創造/独創/創立/創作/創意/感創/銃創)。
+# unihan default 「きず」 は古語、 「傷」 が訓 dominant
+[[kanji]]
+char = "創"
+default = "ソウ"
+
+# 「剖」 default 「ボウ」 (= 解剖)。
+# unihan default 「さく」 は古語動詞、 「裂/割」 が動詞 dominant
+[[kanji]]
+char = "剖"
+default = "ボウ"
+
+# 「午」 default 「ゴ」 (= 午前/午後/正午/子午/午餐)。
+# unihan default 「ヒル」 は古語、 「昼」 が訓 dominant
+[[kanji]]
+char = "午"
+default = "ゴ"
+
+# 「叙」 default 「ジョ」 (= 叙述/叙事詩/叙情/叙勲/自叙伝)。
+# unihan default 「ついず」 は古語動詞、 現代では熟語 dominant
+[[kanji]]
+char = "叙"
+default = "ジョ"
+
+# 「可」 default 「カ」 (= 可能/許可/可決/不可/裁可/可愛/認可)。
+# unihan default 「べし」 は古語助動詞、 現代用例なし
+[[kanji]]
+char = "可"
+default = "カ"
+
+# 「吉」 default 「キチ」 (= 吉日/吉凶/不吉/大吉)。
+# 訓 「よし」 (= 「吉野/吉田」 人名/地名) は jukugo 個別
+[[kanji]]
+char = "吉"
+default = "キチ"
