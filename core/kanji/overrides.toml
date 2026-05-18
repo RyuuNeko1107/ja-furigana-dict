@@ -13251,3 +13251,31 @@ default = "の"
 [[kanji]]
 char = "濡"
 default = "ぬ"
+
+# 「卸」 default 「おろ」 (= 動詞「卸す」 全活用 + 「卸売/卸値/卸し」 名詞)。
+# unihan 「おろす」 (終止形) は okurigana「す/さ/し/せ/そ」 と二重連結する → default 訂正。
+[[kanji]]
+char = "卸"
+default = "おろ"
+
+# 「訪」 default 「ホウ」 (= 訪問/来訪/歴訪/探訪/巡訪、 音読み主流)。
+# 動詞「訪れる」 → okurigana 「れ」 で「おとず」、
+# 動詞「訪ねる」 → okurigana 「ね」 で「たず」 へ切替 (= 2 種の一段動詞)。
+# unihan 「おとずれる」 (終止形) は okurigana と二重連結する → default 訂正。
+[[kanji]]
+char = "訪"
+default = "ホウ"
+
+[[kanji.match]]
+next_starts_any = ["れ"]
+reading = "おとず"
+
+[[kanji.match]]
+next_starts_any = ["ね"]
+reading = "たず"
+
+# 「惚」 default 「ほ」 (= 動詞「惚れる/惚ける」 全活用 + 「ぼけ/とぼけ」 派生)。
+# unihan 「ほれる」 (終止形) は okurigana「れ/け」 と二重連結する → default 訂正。
+[[kanji]]
+char = "惚"
+default = "ほ"

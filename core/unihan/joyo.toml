@@ -257,7 +257,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 「即」 は overrides.toml の [[kanji]] block に移行 (★round 40)
 # 却 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 卵 は core/kanji/overrides.toml の [[kanji]] block に移行
-"卸" = "おろす"
+# 卸 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 厄 は core/kanji/overrides.toml の [[kanji]] block に移行
 "厘" = "リン"
 # 厚 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1628,7 +1628,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 託 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 記 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 訟 は core/kanji/overrides.toml の [[kanji]] block に移行
-"訪" = "おとずれる"
+# 訪 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 設 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 許 は core/kanji/overrides.toml の [[kanji]] block に移行
 "訳" = "わけ"
