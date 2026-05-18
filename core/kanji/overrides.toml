@@ -12994,3 +12994,69 @@ default = "ト"
 [[kanji]]
 char = "冨"
 default = "とみ"
+
+# 「奄」 default 「エン」 (= 奄美/奄然/奄忽/奄息)。
+# unihan 「おおう」 は動詞古語、 現代日本語では音読み主流 → default 訂正。
+[[kanji]]
+char = "奄"
+default = "エン"
+
+# 「嵩」 default 「かさ」 (= 「嵩が増す/水嵩/嵩高」 名詞/接尾辞 主流)。
+# 動詞「嵩む」 → okurigana 「む/ま/み/ん/め/も」 で同じ「かさ」 で正解。
+# unihan 「かさむ」 は動詞終止形で okurigana と二重連結する → default 訂正。
+[[kanji]]
+char = "嵩"
+default = "かさ"
+
+# 「已」 default 「イ」 (= 已然形/不已/已往)。
+# unihan 「すでに」 は古語副詞訓、 現代日本語では「既に」 で書く → default 訂正。
+[[kanji]]
+char = "已"
+default = "イ"
+
+# 「彪」 default 「ヒョウ」 (= 彪炳/虎彪)。
+# unihan 「あや」 は「綾」 の訓で「彪」 単独訓読み用法はない → default 訂正。
+# 名前読み「あや/たけ」 等は jukugo file で対応。
+[[kanji]]
+char = "彪"
+default = "ヒョウ"
+
+# 「惺」 default 「セイ」 (= 惺惺/惺然、 仏教用語)。
+# unihan 「さとる」 は古語訓、 現代日本語ではほぼ使わない → default 訂正。
+[[kanji]]
+char = "惺"
+default = "セイ"
+
+# 「戟」 default 「ゲキ」 (= 刺戟/剣戟/戟矢)。
+# unihan 「ほこ」 は「矛」 の訓で「戟」 単独訓読み用法はない → default 訂正。
+[[kanji]]
+char = "戟"
+default = "ゲキ"
+
+# 「捺」 default 「ナツ」 (= 捺印/押捺、 ほぼ「捺印」 のみ実用)。
+# unihan 「おす」 は「押」 の訓で「捺」 単独訓読み用法はない → default 訂正。
+[[kanji]]
+char = "捺"
+default = "ナツ"
+
+# 「掬」 default 「キク」 (= 掬水/一掬)。
+# 動詞「掬う」 → okurigana 「う/わ/っ/お/い/え」 で「すく」 へ切替 (= 五段動詞)。
+[[kanji]]
+char = "掬"
+default = "キク"
+
+[[kanji.match]]
+next_starts_any = ["う", "わ", "っ", "お", "い", "え"]
+reading = "すく"
+
+# 「晏」 default 「アン」 (= 晏然/晏息、 漢籍由来)。
+# unihan 「おそい」 は古語訓、 現代日本語ではほぼ使わない → default 訂正。
+[[kanji]]
+char = "晏"
+default = "アン"
+
+# 「晚」 default 「バン」 (= 「晩」 異体字、 晩餐/晩鐘/早晩 等)。
+# unihan 「くれ」 は「暮」 の訓で「晚」 単独訓読み用法はない → default 訂正。
+[[kanji]]
+char = "晚"
+default = "バン"
