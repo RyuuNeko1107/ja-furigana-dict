@@ -1129,7 +1129,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "炉" = "いろり"
 # 炊 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 「炎」 = round 47 で kanji/overrides.toml [[kanji]] block (default = エン、 prev/next ひらがな → ホノオ) に移行
-"炭" = "すみ"
+# 炭 は core/kanji/overrides.toml の [[kanji]] block に移行
 "点" = "テン"
 # 烈 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 無 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1163,22 +1163,22 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 状 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 狂 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 狙 は core/kanji/overrides.toml の [[kanji]] block に移行
-"狩" = "かる"
+# 狩 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 独 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 狭 は core/kanji/overrides.toml の [[kanji]] block に移行
-"猛" = "たけし"
-"猟" = "かる"
+# 猛 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 猟 は core/kanji/overrides.toml の [[kanji]] block に移行
 "猫" = "ねこ"
 "献" = "たてまつる"
 "猶" = "なお"
 "猿" = "さる"
-"獄" = "ひとや"
+# 獄 は core/kanji/overrides.toml の [[kanji]] block に移行
 "獣" = "けもの"
-"獲" = "える"
+# 獲 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 玄 は core/kanji/overrides.toml の [[kanji]] block に移行
 "玉" = "たま"
 # 玩 は core/kanji/overrides.toml の [[kanji]] block に移行
-"珍" = "めずらしい"
+# 珍 は core/kanji/overrides.toml の [[kanji]] block に移行
 "珠" = "たま"
 # 現 は core/kanji/overrides.toml の [[kanji]] block に移行
 "球" = "たま"
@@ -1186,17 +1186,17 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "琴" = "こと"
 "瑠" = "ル"
 "璃" = "リ"
-"璧" = "たま"
+# 璧 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 環 は core/kanji/overrides.toml の [[kanji]] block に移行
 "璽" = "しるし"
 "瓦" = "かわら"
-"瓶" = "かめ"
+# 瓶 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 甘 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 甚 は core/kanji/overrides.toml の [[kanji]] block に移行
 "産" = "サン"
 "田" = "デン"
 # 由 は core/kanji/overrides.toml の [[kanji]] block に移行
-"甲" = "きのえ"
+# 甲 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 申 は core/kanji/overrides.toml の [[kanji]] block に移行
 "男" = "おとこ"
 # 町 は core/kanji/overrides.toml の [[kanji]] block に移行 (★round 49)

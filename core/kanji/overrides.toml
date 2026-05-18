@@ -9778,3 +9778,75 @@ default = "ヨウ"
 [[kanji]]
 char = "皇"
 default = "コウ"
+
+# 「炭」 default 「タン」 (= 炭素/石炭/木炭/炭酸/練炭/活性炭/炭水化物)。
+# unihan default 「すみ」 は名詞単独、 「炭火/炭焼き」 は jukugo 個別
+[[kanji]]
+char = "炭"
+default = "タン"
+
+# 「狩」 default 「シュ」 (= 狩猟/猟狩)。
+# 動詞 「狩る」 + 名詞 「狩り」 は okurigana 列挙で 「か」 へ切替
+[[kanji]]
+char = "狩"
+default = "シュ"
+
+[[kanji.match]]
+next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ"]
+reading = "か"
+
+# 「猛」 default 「モウ」 (= 猛烈/獰猛/勇猛/猛獣/猛威/猛攻)。
+# unihan default 「たけし」 は古語/人名、 現代では熟語 dominant
+[[kanji]]
+char = "猛"
+default = "モウ"
+
+# 「猟」 default 「リョウ」 (= 狩猟/密猟/猟師/銃猟/禁猟)。
+# unihan default 「かる」 は古語動詞、 「狩」 が動詞 dominant
+[[kanji]]
+char = "猟"
+default = "リョウ"
+
+# 「獄」 default 「ゴク」 (= 監獄/地獄/獄中/獄死/煉獄/獄舎)。
+# unihan default 「ひとや」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "獄"
+default = "ゴク"
+
+# 「獲」 default 「カク」 (= 獲得/捕獲/漁獲/濫獲)。
+# 動詞 「獲る」 は okurigana 列挙で 「え」 へ切替 (= 「得る」 と同源、 下一段活用)
+[[kanji]]
+char = "獲"
+default = "カク"
+
+[[kanji.match]]
+next_starts_any = ["る", "た", "て", "ら", "り", "れ", "ろ", "な", "よ"]
+reading = "え"
+
+# 「珍」 default 「チン」 (= 珍味/珍奇/珍重/珍客/珍品)。
+# 形容詞 「珍しい」 = めずらしい は okurigana 「し」 始まりで切替
+[[kanji]]
+char = "珍"
+default = "チン"
+
+[[kanji.match]]
+next_starts_any = ["し"]
+reading = "めずら"
+
+# 「璧」 default 「ヘキ」 (= 完璧/双璧/連璧/珠璧)。
+# unihan default 「たま」 は古語、 「玉」 が訓 dominant
+[[kanji]]
+char = "璧"
+default = "ヘキ"
+
+# 「瓶」 default 「ビン」 (= 花瓶/瓶詰/水瓶/酒瓶/鉄瓶)。
+# unihan default 「かめ」 は古語/容器名、 現代では熟語 dominant
+[[kanji]]
+char = "瓶"
+default = "ビン"
+
+# 「甲」 default 「コウ」 (= 甲冑/甲乙/甲板/装甲/甲虫/手の甲/亀の甲)。
+# unihan default 「きのえ」 は干支限定 (= 「甲乙丙丁」 jukugo 個別)
+[[kanji]]
+char = "甲"
+default = "コウ"
