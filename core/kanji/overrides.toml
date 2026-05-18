@@ -11914,3 +11914,107 @@ default = "レキ"
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
 reading = "こよみ"
+
+# 「春」 default 「シュン」 (= 春期/春分/青春/晩春/早春/春雨/春闘)。
+# 単独 + 助詞接続 → 「はる」 (= 「春が/春の」 等)
+[[kanji]]
+char = "春"
+default = "シュン"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "はる"
+
+# 「星」 default 「セイ」 (= 星座/惑星/恒星/明星/木星/火星/衛星)。
+# 単独 + 助詞接続 → 「ほし」 (= 「星が/星の」 等)
+[[kanji]]
+char = "星"
+default = "セイ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "ほし"
+
+# 「時」 default 「ジ」 (= 時間/時代/同時/時計/時期/瞬時/常時/時刻)。
+# 単独 + 助詞接続 → 「とき」、 踊り字 「時々」 = ときどき
+[[kanji]]
+char = "時"
+default = "ジ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "とき"
+
+[[kanji.match]]
+next_eq = "々"
+reading = "とき"
+
+# 「朝」 default 「チョウ」 (= 朝食/早朝/王朝/朝廷/朝刊/朝霧)。
+# 単独 + 助詞接続 → 「あさ」 (= 「朝が/朝の」 等)
+[[kanji]]
+char = "朝"
+default = "チョウ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "あさ"
+
+# 「景」 default 「ケイ」 (= 景観/景色/夜景/絶景/景気/光景/全景/風景)。
+# unihan default 「ひかり」 は古語、 「光」 が訓 dominant
+[[kanji]]
+char = "景"
+default = "ケイ"
+
+# 「曽」 default 「ソ」 (= 未曾有/曽祖父/曽我)。
+# 副詞 「曽て」 = かつて は next_eq で切替
+[[kanji]]
+char = "曽"
+default = "ソ"
+
+[[kanji.match]]
+next_eq = "て"
+reading = "かつ"
+
+# 「旅」 default 「リョ」 (= 旅行/旅館/旅情/旅愁/長旅/客旅)。
+# 単独 + 助詞接続 → 「たび」 (= 「旅が/旅の」、 「○の旅」 等)
+[[kanji]]
+char = "旅"
+default = "リョ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "たび"
+
+[[kanji.match]]
+prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も", "む"]
+reading = "たび"
+
+# 「昼」 default 「チュウ」 (= 昼食/白昼/真昼/昼夜)。
+# 単独 + 助詞接続 → 「ひる」 (= 「昼が/昼の」 等)
+[[kanji]]
+char = "昼"
+default = "チュウ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "ひる"
+
+# 「暇」 default 「カ」 (= 休暇/余暇/閑暇/寸暇)。
+# 単独 + 助詞接続 → 「ひま」 (= 「暇が/暇の」 等)
+[[kanji]]
+char = "暇"
+default = "カ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "ひま"
+
+# 「戸」 default 「コ」 (= 戸籍/扉戸/門戸/各戸/戸別)。
+# 単独 + 助詞接続 → 「と」 (= 「戸が/戸の」 等)
+[[kanji]]
+char = "戸"
+default = "コ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "と"

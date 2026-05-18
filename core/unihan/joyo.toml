@@ -715,7 +715,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 戚 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 戯 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 戴 は core/kanji/overrides.toml の [[kanji]] block に移行
-"戸" = "と"
+# 戸 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 戻 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 房 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 所 は core/kanji/overrides.toml の [[kanji]] block に移行 (= default ところ + prev 漢字 → ショ)
@@ -841,7 +841,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 断 は core/kanji/overrides.toml の [[kanji]] block に移行
 "新" = "シン"
 # 施 は core/kanji/overrides.toml の [[kanji]] block に移行
-"旅" = "たび"
+# 旅 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 旋 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 族 は core/kanji/overrides.toml の [[kanji]] block に移行
 "旗" = "はた"
@@ -856,22 +856,22 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "明" = "あかり"
 # 易 は core/kanji/overrides.toml の [[kanji]] block に移行
 "昔" = "むかし"
-"星" = "ほし"
+# 星 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 映 は core/kanji/overrides.toml の [[kanji]] block に移行
-"春" = "はる"
+# 春 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 昧 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 昨 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 昭 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 是 は core/kanji/overrides.toml の [[kanji]] block に移行
-"昼" = "ひる"
-"時" = "とき"
+# 昼 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 時 は core/kanji/overrides.toml の [[kanji]] block に移行
 "晩" = "バン"
 # 普 は core/kanji/overrides.toml の [[kanji]] block に移行
-"景" = "ひかり"
+# 景 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 晴 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 晶 は core/kanji/overrides.toml の [[kanji]] block に移行
 "暁" = "あかつき"
-"暇" = "ひま"
+# 暇 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 暑 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 暖 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 暗 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -884,7 +884,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 曜 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 書 は core/kanji/overrides.toml の [[kanji]] block に移行 (= default ショ + 動詞活用 → カ)
 # 曹 は core/kanji/overrides.toml の [[kanji]] block に移行
-"曽" = "かつて"
+# 曽 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 替 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 最 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 有 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -892,7 +892,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "朕" = "われ"
 # 朗 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 望 は core/kanji/overrides.toml の [[kanji]] block に移行
-"朝" = "あさ"
+# 朝 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 期 は core/kanji/overrides.toml の [[kanji]] block に移行 (★round 49)
 "木" = "キ"
 # 未 は core/kanji/overrides.toml の [[kanji]] block に移行
