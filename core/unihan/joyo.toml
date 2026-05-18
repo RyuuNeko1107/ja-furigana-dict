@@ -231,7 +231,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 勧 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 勲 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 勾 は core/kanji/overrides.toml の [[kanji]] block に移行
-"匂" = "におい"
+# 匂 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 包 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 「化」 は overrides.toml の [[kanji]] block に移行 (★round 37)
 "北" = "きた"

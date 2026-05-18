@@ -12640,3 +12640,13 @@ default = "い"
 [[kanji]]
 char = "俸"
 default = "ホウ"
+
+# 「匂」 default 「におい」 (= 名詞 「匂い/匂いがする」 + 単独使用)。
+# 動詞 「匂う/匂わない/匂って/匂わせる/匂おう」 → 「う/わ/っ/お」 で 「にお」 へ切替。
+[[kanji]]
+char = "匂"
+default = "におい"
+
+[[kanji.match]]
+next_starts_any = ["う", "わ", "っ", "お"]
+reading = "にお"
