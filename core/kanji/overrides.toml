@@ -13420,3 +13420,32 @@ default = "エキ"
 [[kanji.match]]
 next_eq = "々"
 reading = "ます"
+
+# 「緒」 default 「ショ」 (= 情緒/緒戦/端緒/由緒/緒言)。
+# 助詞接続 → 「お」 (= 「緒が切れる/玉の緒/思いの緒」 等の単独訓)。
+# 「鼻緒」 等の jukugo は jukugo file で対応。
+[[kanji]]
+char = "緒"
+default = "ショ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "お"
+
+# 「縁」 default 「エン」 (= 良縁/因縁/縁起/縁談/血縁/機縁/姻縁/縁日/縁側)。
+# 助詞接続 → 「ふち」 (= 「縁が崩れる/縁の下/額の縁」 等の単独訓)。
+# 「縁取り/縁石」 等の特殊 jukugo は jukugo file で対応。
+[[kanji]]
+char = "縁"
+default = "エン"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "ふち"
+
+# 「栖」 default 「す」 (= 訓「栖/す」 単独 + 動詞「栖む」 (= 住む異体) 全活用)。
+# unihan 「すむ」 (終止形) は okurigana「む/ま/み/ん/め/も」 と二重連結する → default 訂正。
+# 「鳥栖 (トス)」 等の名前読みは jukugo file で対応。
+[[kanji]]
+char = "栖"
+default = "す"

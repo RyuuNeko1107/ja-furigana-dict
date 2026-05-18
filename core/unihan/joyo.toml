@@ -1408,14 +1408,14 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 緊 は core/kanji/overrides.toml の [[kanji]] block に移行
 "総" = "ソウ"
 "緑" = "みどり"
-"緒" = "ショ"
+# 緒 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 締 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 編 は core/kanji/overrides.toml の [[kanji]] block に移行 (★round 50)
 # 緩 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 緯 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 練 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 緻 は core/kanji/overrides.toml の [[kanji]] block に移行
-"縁" = "ふち"
+# 縁 は core/kanji/overrides.toml の [[kanji]] block に移行
 "縄" = "なわ"
 # 縛 は core/kanji/overrides.toml の [[kanji]] block に移行
 "縦" = "たて"
