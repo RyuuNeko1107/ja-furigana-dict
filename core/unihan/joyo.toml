@@ -839,7 +839,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 斤 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 斥 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 断 は core/kanji/overrides.toml の [[kanji]] block に移行
-"新" = "シン"
+# 新 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 施 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 旅 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 旋 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -894,26 +894,26 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 望 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 朝 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 期 は core/kanji/overrides.toml の [[kanji]] block に移行 (★round 49)
-"木" = "キ"
+# 木 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 未 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 末 は core/kanji/overrides.toml の [[kanji]] block に移行
 "札" = "サツ"
 # 朱 は core/kanji/overrides.toml の [[kanji]] block に移行
-"朴" = "ほお"
+# 朴 は core/kanji/overrides.toml の [[kanji]] block に移行
 "机" = "つくえ"
 # 朽 は core/kanji/overrides.toml の [[kanji]] block に移行
 "杉" = "すぎ"
 "材" = "ザイ"
 # 村 は core/kanji/overrides.toml の [[kanji]] block に移行 (★round 49)
-"束" = "たば"
+# 束 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 条 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 杯 は core/kanji/overrides.toml の [[kanji]] block に移行
-"東" = "ひがし"
+# 東 は core/kanji/overrides.toml の [[kanji]] block に移行
 "松" = "まつ"
 # 板 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 析 は core/kanji/overrides.toml の [[kanji]] block に移行
 "枕" = "まくら"
-"林" = "はやし"
+# 林 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 枚 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 果 は core/kanji/overrides.toml の [[kanji]] block に移行
 "枝" = "えだ"
@@ -934,7 +934,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "栓" = "セン"
 "校" = "コウ"
 "株" = "かぶ"
-"核" = "さね"
+# 核 は core/kanji/overrides.toml の [[kanji]] block に移行
 "根" = "コン"
 "格" = "カク"
 # 栽 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -943,13 +943,13 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 案 は core/kanji/overrides.toml の [[kanji]] block に移行
 "桑" = "くわ"
 "桜" = "さくら"
-"桟" = "かけはし"
+# 桟 は core/kanji/overrides.toml の [[kanji]] block に移行
 "梅" = "うめ"
 "梗" = "コウ"
 "梨" = "なし"
-"械" = "かせ"
+# 械 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 棄 は core/kanji/overrides.toml の [[kanji]] block に移行
-"棋" = "ご"
+# 棋 は core/kanji/overrides.toml の [[kanji]] block に移行
 "棒" = "ボウ"
 "棚" = "たな"
 "棟" = "むね"

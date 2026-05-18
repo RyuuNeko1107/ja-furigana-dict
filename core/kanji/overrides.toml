@@ -12090,3 +12090,89 @@ default = "チュウ"
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
 reading = "はしら"
+
+# 「核」 default 「カク」 (= 核心/核兵器/核家族/原子核/中核/核分裂)。
+# unihan default 「さね」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "核"
+default = "カク"
+
+# 「桟」 default 「サン」 (= 桟橋/桟敷/桟道)。
+# unihan default 「かけはし」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "桟"
+default = "サン"
+
+# 「械」 default 「カイ」 (= 機械/器械/砲械)。
+# unihan default 「かせ」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "械"
+default = "カイ"
+
+# 「棋」 default 「キ」 (= 棋士/将棋/棋盤/棋戦/詰将棋)。
+# unihan default 「ご」 は古語、 「碁」 が訓 dominant
+[[kanji]]
+char = "棋"
+default = "キ"
+
+# 「朴」 default 「ボク」 (= 朴訥/朴念仁/素朴/淳朴)。
+# unihan default 「ほお」 は古語、 「頬」 と被る
+[[kanji]]
+char = "朴"
+default = "ボク"
+
+# 「林」 default 「リン」 (= 林業/森林/密林/雑木林/林道/松林)。
+# 単独 + 助詞接続 → 「はやし」 (= 「林が/林の」 等)
+[[kanji]]
+char = "林"
+default = "リン"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "はやし"
+
+# 「東」 default 「トウ」 (= 東京/関東/東西/極東/東洋/東部/中東)。
+# 単独 + 助詞接続 → 「ひがし」 (= 「東が/東の」 等)
+[[kanji]]
+char = "東"
+default = "トウ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "ひがし"
+
+# 「束」 default 「ソク」 (= 束縛/結束/約束/花束/十束/拘束)。
+# 単独 + 助詞接続 → 「たば」 (= 「束が/束の」 等)
+[[kanji]]
+char = "束"
+default = "ソク"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "たば"
+
+# 「木」 default 「モク」 (= 木造/木材/木曜/材木/巨木/草木)。
+# 単独 + 助詞接続 → 「き」 (= 「木が/木の」 等)
+[[kanji]]
+char = "木"
+default = "モク"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "き"
+
+# 「新」 default 「シン」 (= 新聞/新人/新年/最新/革新/更新/新鮮)。
+# 形容詞 「新しい」 = あたらしい / 形容動詞 「新た」 = あらた で切替
+[[kanji]]
+char = "新"
+default = "シン"
+
+# 「新しい/新しく」 = 形容詞 → あたら
+[[kanji.match]]
+next_starts_any = ["し"]
+reading = "あたら"
+
+# 「新た/新たに」 = 形容動詞 → あらた
+[[kanji.match]]
+next_starts_any = ["た"]
+reading = "あらた"
