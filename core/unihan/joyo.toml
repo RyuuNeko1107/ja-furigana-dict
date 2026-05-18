@@ -42,11 +42,11 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 了 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 予 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 争 は core/kanji/overrides.toml の [[kanji]] block に移行
-"事" = "こと"
+# 事 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 二 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 互 は core/kanji/overrides.toml の [[kanji]] block に移行
 # "五" は core/kanji/overrides.toml の [[kanji]] block に移行 (★round 48)
-"井" = "セイ"
+# 井 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 亜 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 亡 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 交 は core/kanji/overrides.toml の [[kanji]] block に移行
