@@ -13534,3 +13534,144 @@ default = "とも"
 [[kanji.match]]
 next_char_type = "漢字"
 reading = "ホウ"
+
+# 「倉」 default 「くら」 (= 「倉/米倉/酒倉/船倉」 単独訓)。
+# prev 漢字 → 「ソウ」 (= 穀倉/胸倉/堆倉 等 jukugo 不在熟語)。
+[[kanji]]
+char = "倉"
+default = "くら"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ソウ"
+
+# 「笛」 default 「ふえ」 (= 「笛が鳴る/口笛/縦笛/横笛」 単独訓)。
+# prev 漢字 → 「テキ」 (= 警笛/汽笛/号笛 等 jukugo 不在熟語)。
+[[kanji]]
+char = "笛"
+default = "ふえ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "テキ"
+
+# 「筆」 default 「ふで」 (= 「筆/筆箱/絵筆/万年筆」 訓)。
+# prev 漢字 → 「ヒツ」 (= 鉛筆/毛筆/筆談/筆順/直筆/代筆 等)。
+[[kanji]]
+char = "筆"
+default = "ふで"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ヒツ"
+
+# 「筒」 default 「つつ」 (= 「筒/竹筒」 単独訓)。
+# prev 漢字 → 「トウ」 (= 水筒/封筒/円筒/茶筒 等)。
+[[kanji]]
+char = "筒"
+default = "つつ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "トウ"
+
+# 「紅」 default 「べに」 (= 「紅/口紅/紅色」 単独訓)。
+# prev 漢字 → 「コウ」 (= 真紅/深紅/紅一点 等の音読み jukugo)。
+# 「紅葉/紅葉狩り」 等の特殊読みは jukugo file で対応。
+[[kanji]]
+char = "紅"
+default = "べに"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "コウ"
+
+# 「鉛」 default 「なまり」 (= 「鉛色/鉛の弾/重い鉛」 訓)。
+# prev 漢字 → 「エン」 (= 鉛筆/亜鉛/鉛中毒 等)。
+[[kanji]]
+char = "鉛"
+default = "なまり"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "エン"
+
+# 「鎖」 default 「くさり」 (= 「鎖/鎖を巻く」 訓)。
+# prev 漢字 → 「サ」 (= 閉鎖/連鎖/鎖国/封鎖/鎖骨 等)。
+[[kanji]]
+char = "鎖"
+default = "くさり"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "サ"
+
+# 「鏡」 default 「かがみ」 (= 「鏡/三面鏡」 訓)。
+# prev 漢字 → 「キョウ」 (= 望遠鏡/顕微鏡/老眼鏡/鏡台/手鏡 等)。
+[[kanji]]
+char = "鏡"
+default = "かがみ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "キョウ"
+
+# 「鐘」 default 「かね」 (= 「鐘の音/釣鐘」 単独訓)。
+# prev 漢字 → 「ショウ」 (= 警鐘/晩鐘/鐘楼/半鐘 等)。
+[[kanji]]
+char = "鐘"
+default = "かね"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ショウ"
+
+# 「鈴」 default 「すず」 (= 「鈴の音/鈴鳴り」 単独訓)。
+# prev 漢字 → 「リン」 (= 鈴蘭/予鈴/呼鈴 等)。
+[[kanji]]
+char = "鈴"
+default = "すず"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "リン"
+
+# 「鯨」 default 「くじら」 (= 「鯨/鯨油」 単独訓)。
+# prev 漢字 → 「ゲイ」 (= 捕鯨/鯨飲馬食 等)。
+[[kanji]]
+char = "鯨"
+default = "くじら"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ゲイ"
+
+# 「鶏」 default 「にわとり」 (= 「鶏/鶏小屋」 単独訓)。
+# prev 漢字 → 「ケイ」 (= 養鶏/鶏卵/闘鶏/軍鶏 等)。
+[[kanji]]
+char = "鶏"
+default = "にわとり"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ケイ"
+
+# 「麦」 default 「むぎ」 (= 「麦畑/小麦/大麦」 訓)。
+# prev 漢字 → 「バク」 (= 麦芽/麦酒/麦秋/精麦/燕麦 等)。
+[[kanji]]
+char = "麦"
+default = "むぎ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "バク"
+
+# 「露」 default 「つゆ」 (= 「朝露/露の玉/草露」 単独訓)。
+# prev 漢字 → 「ロ」 (= 結露/露出/披露/暴露/露呈/吐露/雨露 等)。
+[[kanji]]
+char = "露"
+default = "つゆ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ロ"
