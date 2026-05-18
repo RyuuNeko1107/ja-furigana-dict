@@ -1931,14 +1931,14 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 需 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 震 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 霊 は core/kanji/overrides.toml の [[kanji]] block に移行
-"霜" = "しも"
-"霧" = "きり"
+# 霜 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 霧 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 露 は core/kanji/overrides.toml の [[kanji]] block に移行
-"青" = "あお"
+# 青 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 静 は core/kanji/overrides.toml の [[kanji]] block に移行
 "面" = "メン"
-"革" = "かわ"
-"靴" = "くつ"
+# 革 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 靴 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 韓 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 音 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 韻 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1960,13 +1960,13 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 題 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 額 は core/kanji/overrides.toml の [[kanji]] block に移行
 "顎" = "あご"
-"顔" = "かお"
+# 顔 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 顕 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 願 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 顧 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 飛 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 飢 は core/kanji/overrides.toml の [[kanji]] block に移行
-"飯" = "めし"
+# 飯 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 飼 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 飽 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 飾 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1993,8 +1993,8 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "髄" = "ズイ"
 # 髪 は core/kanji/overrides.toml の [[kanji]] block に移行
 "鬱" = "ウツ"
-"鬼" = "おに"
-"魂" = "たましい"
+# 鬼 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 魂 は core/kanji/overrides.toml の [[kanji]] block に移行
 "魅" = "ミ"
 "魔" = "マ"
 "魚" = "さかな"
@@ -2013,7 +2013,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 黄 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 黒 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 黙 は core/kanji/overrides.toml の [[kanji]] block に移行
-"鼓" = "つづみ"
+# 鼓 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 鼻 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 齢 は core/kanji/overrides.toml の [[kanji]] block に移行
 

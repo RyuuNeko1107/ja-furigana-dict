@@ -14036,3 +14036,104 @@ default = "かみ"
 [[kanji.match]]
 prev_char_type = "漢字"
 reading = "ハツ"
+
+# 「顔」 default 「かお」 (= 「顔/顔色/笑顔」 訓)。
+# prev 漢字 → 「ガン」 (= 童顔/紅顔/温顔/厚顔 等)。
+[[kanji]]
+char = "顔"
+default = "かお"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ガン"
+
+# 「鬼」 default 「おに」 (= 「鬼/赤鬼/鬼ごっこ」 単独訓)。
+# prev 漢字 → 「キ」 (= 鬼神/鬼門/餓鬼/吸血鬼 等)。
+[[kanji]]
+char = "鬼"
+default = "おに"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "キ"
+
+# 「魂」 default 「たましい」 (= 「魂/言霊」 訓)。
+# prev 漢字 → 「コン」 (= 魂胆/魂魄/精魂/霊魂/商魂 等)。
+[[kanji]]
+char = "魂"
+default = "たましい"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "コン"
+
+# 「霜」 default 「しも」 (= 「霜/朝霜/霜柱」 単独訓)。
+# prev 漢字 → 「ソウ」 (= 晩霜/秋霜/星霜 等)。
+[[kanji]]
+char = "霜"
+default = "しも"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ソウ"
+
+# 「霧」 default 「きり」 (= 「霧/朝霧/霧雨」 単独訓)。
+# prev 漢字 → 「ム」 (= 濃霧/煙霧/雲霧 等)。
+[[kanji]]
+char = "霧"
+default = "きり"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ム"
+
+# 「鼓」 default 「つづみ」 (= 「鼓/手鼓」 単独訓)。
+# prev 漢字 → 「コ」 (= 鼓動/鼓舞/旗鼓/腹鼓 等)。
+# 「太鼓 (タイコ)」 は jukugo file で対応。
+[[kanji]]
+char = "鼓"
+default = "つづみ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "コ"
+
+# 「飯」 default 「めし」 (= 「ご飯/朝飯/夕飯」 訓)。
+# prev 漢字 → 「ハン」 (= 赤飯/炊飯/残飯 等)。
+[[kanji]]
+char = "飯"
+default = "めし"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ハン"
+
+# 「革」 default 「かわ」 (= 「革/革靴/牛革」 訓)。
+# prev 漢字 → 「カク」 (= 革命/改革/沿革/変革/革新 等)。
+[[kanji]]
+char = "革"
+default = "かわ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "カク"
+
+# 「靴」 default 「くつ」 (= 「靴/革靴/靴下」 訓)。
+# prev 漢字 → 「カ」 (= 軍靴/雨靴/長靴 等)。
+[[kanji]]
+char = "靴"
+default = "くつ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "カ"
+
+# 「青」 default 「あお」 (= 「青/青空/真っ青」 訓)。
+# prev 漢字 → 「セイ」 (= 青年/青春/青銅/青信号/青磁 等)。
+[[kanji]]
+char = "青"
+default = "あお"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "セイ"
