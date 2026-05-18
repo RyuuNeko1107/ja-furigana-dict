@@ -11746,3 +11746,83 @@ default = "カン"
 [[kanji.match]]
 next_starts_any = ["え"]
 reading = "あ"
+
+# 「恒」 default 「コウ」 (= 恒星/恒久/恒例/恒温/恒常)。
+# unihan default 「つね」 は古語、 「常」 が訓 dominant
+[[kanji]]
+char = "恒"
+default = "コウ"
+
+# 「我」 default 「ガ」 (= 我慢/自我/我儘/無我/我流/我執)。
+# 単独 + 助詞接続 → 「われ」 (= 「我が/我の」 等)、 踊り字 「我々」 = ワレワレ
+[[kanji]]
+char = "我"
+default = "ガ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "われ"
+
+[[kanji.match]]
+next_eq = "々"
+reading = "われ"
+
+# 「房」 default 「ボウ」 (= 房総/工房/独房/暖房/官房/書房/監房/僧房)。
+# unihan default 「ふさ」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "房"
+default = "ボウ"
+
+# 「批」 default 「ヒ」 (= 批判/批評/批准/批駁)。
+# unihan default 「うつ」 は古語動詞、 「打/伐」 が動詞 dominant
+[[kanji]]
+char = "批"
+default = "ヒ"
+
+# 「抽」 default 「チュウ」 (= 抽象/抽選/抽出/抽斗)。
+# unihan default 「ぬく」 は古語動詞、 「抜」 が動詞 dominant
+[[kanji]]
+char = "抽"
+default = "チュウ"
+
+# 「拳」 default 「ケン」 (= 拳銃/拳法/握拳/拳骨/鉄拳)。
+# unihan default 「こぶし」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "拳"
+default = "ケン"
+
+# 「操」 default 「ソウ」 (= 操作/体操/節操/操行/情操)。
+# 動詞 「操る」 = あやつる は okurigana 列挙で 「あやつ」 へ切替
+[[kanji]]
+char = "操"
+default = "ソウ"
+
+[[kanji.match]]
+next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ"]
+reading = "あやつ"
+
+# 「擦」 default 「サツ」 (= 摩擦/擦過/摩擦熱/擦過傷)。
+# 動詞 「擦る/擦れる」 は okurigana 列挙で 「す」 へ切替
+[[kanji]]
+char = "擦"
+default = "サツ"
+
+[[kanji.match]]
+next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ"]
+reading = "す"
+
+# 「故」 default 「コ」 (= 故意/故障/事故/故郷/故人/故事/縁故)。
+# unihan default 「ゆえ」 は古語、 「故に」 等は jukugo
+[[kanji]]
+char = "故"
+default = "コ"
+
+# 「整」 default 「セイ」 (= 整理/整頓/調整/整列/整数/整然)。
+# 動詞 「整える/整う」 は okurigana 列挙で 「ととの」 へ切替
+[[kanji]]
+char = "整"
+default = "セイ"
+
+[[kanji.match]]
+next_starts_any = ["え", "わ", "い", "っ", "う", "お"]
+reading = "ととの"
