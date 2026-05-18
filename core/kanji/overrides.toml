@@ -9850,3 +9850,78 @@ default = "ビン"
 [[kanji]]
 char = "甲"
 default = "コウ"
+
+# 「異」 default 「イ」 (= 異常/異物/差異/異性/異論/異質/特異)。
+# 動詞 「異なる/異にする」 は okurigana 「な」「に」 で 「こと」 へ切替
+[[kanji]]
+char = "異"
+default = "イ"
+
+[[kanji.match]]
+next_starts_any = ["な", "に"]
+reading = "こと"
+
+# 「畿」 default 「キ」 (= 畿内/近畿/帝畿)。
+# unihan default 「みやこ」 は古語、 「都」 が訓 dominant
+[[kanji]]
+char = "畿"
+default = "キ"
+
+# 「疫」 default 「エキ」 (= 疫病/防疫/免疫/検疫/疫学/悪疫)。
+# unihan default 「えやみ」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "疫"
+default = "エキ"
+
+# 「痘」 default 「トウ」 (= 水痘/天然痘/種痘/痘瘡)。
+# unihan default 「もがさ」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "痘"
+default = "トウ"
+
+# 「痴」 default 「チ」 (= 痴漢/愚痴/音痴/痴呆/白痴/痴情)。
+# unihan default 「おろか」 は古語、 「愚」 が訓 dominant
+[[kanji]]
+char = "痴"
+default = "チ"
+
+# 「盆」 default 「ボン」 (= お盆/盆栽/盆地/盂蘭盆/旧盆/盆景)。
+# unihan default 「はち」 は古語/容器、 現代では熟語 dominant
+[[kanji]]
+char = "盆"
+default = "ボン"
+
+# 「省」 default 「ショウ」 (= 省略/省エネ/文部省/外務省/省庁)。
+# 動詞 「省みる」 = かえりみる + 「省く」 = はぶく は okurigana で切替。
+# 熟語 「反省/内省/帰省」 = セイ は jukugo 個別 (= 既存)。
+[[kanji]]
+char = "省"
+default = "ショウ"
+
+# 「省みる/省みた/省みれば」 = 動詞 → かえり
+[[kanji.match]]
+next_starts_any = ["み"]
+reading = "かえり"
+
+# 「省く/省かない/省いた/省いて/省けば/省こう」 = 動詞 → はぶ
+[[kanji.match]]
+next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
+reading = "はぶ"
+
+# 「睡」 default 「スイ」 (= 睡眠/熟睡/午睡/快睡/昏睡/居睡)。
+# unihan default 「ねむり」 は名詞、 「眠」 が訓 dominant
+[[kanji]]
+char = "睡"
+default = "スイ"
+
+# 「碑」 default 「ヒ」 (= 碑文/石碑/記念碑/墓碑/句碑)。
+# unihan default 「いしぶみ」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "碑"
+default = "ヒ"
+
+# 「礁」 default 「ショウ」 (= 珊瑚礁/環礁/暗礁/岩礁/離礁/触礁)。
+# unihan default 「かくれいわ」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "礁"
+default = "ショウ"
