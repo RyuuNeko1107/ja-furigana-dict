@@ -12692,3 +12692,28 @@ default = "つ"
 [[kanji]]
 char = "爵"
 default = "シャク"
+
+# 「犠」 default 「ギ」 (= 犠牲/犠打/犠飛、 音読みのみ)。
+# unihan 「いけにえ」 は「牲」 の訓読みで、 「犠」 単独訓読み用法はない → default 訂正。
+[[kanji]]
+char = "犠"
+default = "ギ"
+
+# 「献」 default 「ケン」 (= 献身/献金/献血/貢献/文献/奉献/献辞/献本)。
+# unihan 「たてまつる」 は動詞古語、 現代日本語では「献ずる/献じる」 形で音読み。
+# 「献立 (コンダテ)/一献 (イッコン)」 等の例外読みは jukugo file で対応。
+[[kanji]]
+char = "献"
+default = "ケン"
+
+# 「璽」 default 「ジ」 (= 御璽/玉璽/国璽、 天皇の印章)。
+# unihan 「しるし」 は古語訓読み、 現代日本語では音読み主流 → default 訂正。
+[[kanji]]
+char = "璽"
+default = "ジ"
+
+# 「畝」 default 「うね」 (= 畝/畑の畝/畝織/畝間、 訓読み圧倒的)。
+# unihan 「ボウ」 は古い面積単位の中国語起源、 現代日本語ではほぼ使わない → default 訂正。
+[[kanji]]
+char = "畝"
+default = "うね"

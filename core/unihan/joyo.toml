@@ -1157,7 +1157,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "牧" = "まき"
 "牲" = "いけにえ"
 # 特 は core/kanji/overrides.toml の [[kanji]] block に移行
-"犠" = "いけにえ"
+# 犠 は core/kanji/overrides.toml の [[kanji]] block に移行
 "犬" = "いぬ"
 # 犯 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 状 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1169,7 +1169,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 猛 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 猟 は core/kanji/overrides.toml の [[kanji]] block に移行
 "猫" = "ねこ"
-"献" = "たてまつる"
+# 献 は core/kanji/overrides.toml の [[kanji]] block に移行
 "猶" = "なお"
 "猿" = "さる"
 # 獄 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1188,7 +1188,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "璃" = "リ"
 # 璧 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 環 は core/kanji/overrides.toml の [[kanji]] block に移行
-"璽" = "しるし"
+# 璽 は core/kanji/overrides.toml の [[kanji]] block に移行
 "瓦" = "かわら"
 # 瓶 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 甘 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1207,7 +1207,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "畔" = "あぜ"
 # 留 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 畜 は core/kanji/overrides.toml の [[kanji]] block に移行
-"畝" = "ボウ"
+# 畝 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 略 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 異 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 畳 は core/kanji/overrides.toml の [[kanji]] block に移行
