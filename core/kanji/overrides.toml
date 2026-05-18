@@ -13449,3 +13449,28 @@ reading = "ふち"
 [[kanji]]
 char = "栖"
 default = "す"
+
+# 「雌」 default 「シ」 (= 雌雄/雌伏/雌花/雌蕊、 jukugo 用音読み)。
+# 助詞接続 → 「めす」 (= 「雌が/雌の」 等の単独訓)。
+# 「雌牛/雌猫」 等の jukugo は jukugo file で対応。
+[[kanji]]
+char = "雌"
+default = "シ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "めす"
+
+# 「牧」 default 「ボク」 (= 牧畜/遊牧/牧草/牧歌/牧師/牧羊、 音読み主流)。
+# 「牧場 (まきば)」 等の特殊訓 jukugo は jukugo file で対応。
+# unihan 「まき」 は名前読み一例、 一般「ボク」 主流 → default 訂正。
+[[kanji]]
+char = "牧"
+default = "ボク"
+
+# 「粉」 default 「こ」 (= 「粉雪/小麦粉/片栗粉/粉薬」、 訓読み主流)。
+# 「粉末/粉砕/花粉/粉乳/粉飾」 等の音読み jukugo は jukugo file で対応。
+# unihan 「フン」 は jukugo 用、 単独訓「こ/こな」 が一般 → default 訂正。
+[[kanji]]
+char = "粉"
+default = "こ"

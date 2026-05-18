@@ -1154,7 +1154,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 「版」 = round 47 で kanji/overrides.toml [[kanji]] block (default = ハン) に移行
 "牙" = "きば"
 "牛" = "うし"
-"牧" = "まき"
+# 牧 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 牲 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 特 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 犠 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1360,7 +1360,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "簿" = "ボ"
 # 籍 は core/kanji/overrides.toml の [[kanji]] block に移行
 "籠" = "かご"
-"粉" = "フン"
+# 粉 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 粋 は core/kanji/overrides.toml の [[kanji]] block に移行
 "粒" = "つぶ"
 # 粗 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1917,7 +1917,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "雄" = "ユウ"
 # 集 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 雇 は core/kanji/overrides.toml の [[kanji]] block に移行
-"雌" = "め"
+# 雌 は core/kanji/overrides.toml の [[kanji]] block に移行
 # "雑" は core/kanji/overrides.toml の [[kanji]] block に移行
 # 離 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 難 は core/kanji/overrides.toml の [[kanji]] block に移行
