@@ -12419,3 +12419,65 @@ default = "カク"
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
 reading = "から"
+
+# 「滞」 default 「タイ」 (= 滞在/停滞/沈滞/渋滞/遅滞)。
+# 動詞 「滞る」 = とどこおる は okurigana 列挙で 「とどこお」 へ切替 (= 5 mora reading)
+[[kanji]]
+char = "滞"
+default = "タイ"
+
+[[kanji.match]]
+next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ"]
+reading = "とどこお"
+
+# 「準」 default 「ジュン」 (= 準備/標準/基準/水準/準拠)。
+# unihan default 「かた」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "準"
+default = "ジュン"
+
+# 「源」 default 「ゲン」 (= 源泉/起源/資源/根源/電源/震源/語源)。
+# 単独 + 助詞接続 → 「みなもと」 (= 「源が/源の」 等)
+[[kanji]]
+char = "源"
+default = "ゲン"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "みなもと"
+
+# 「湯」 default 「トウ」 (= 銭湯/熱湯/茶湯/湯気/湯飲み/温湯/洗湯)。
+# 単独 + 助詞接続 → 「ゆ」 (= 「湯が/湯の」 等)
+[[kanji]]
+char = "湯"
+default = "トウ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "ゆ"
+
+# 「漆」 default 「シツ」 (= 漆器/乾漆/膠漆)。
+# 単独 + 助詞接続 → 「うるし」 (= 「漆が/漆の」 等)
+[[kanji]]
+char = "漆"
+default = "シツ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "うるし"
+
+# 「泉」 default 「セン」 (= 源泉/温泉/冷泉/鉱泉/泉源)。
+# 単独 + 助詞接続 → 「いずみ」 (= 「泉が/泉の」 等)
+[[kanji]]
+char = "泉"
+default = "セン"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "いずみ"
+
+# 「敷」 default 「し」 (= 動詞語幹、 「敷く/敷ける/敷かれる」)。
+# 名詞 「敷地/座敷/屋敷/敷物/敷布」 は jukugo 個別 (= 連用形 名詞化 「しき」 で勝つ)
+[[kanji]]
+char = "敷"
+default = "し"
