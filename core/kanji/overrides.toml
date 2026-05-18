@@ -10497,3 +10497,67 @@ default = "カ"
 [[kanji]]
 char = "吉"
 default = "キチ"
+
+# 「后」 default 「ゴウ」 (= 皇后/太后/皇太后/帝后)。
+# unihan default 「あと」 は古語 (= 「後」 と被る)
+[[kanji]]
+char = "后"
+default = "ゴウ"
+
+# 「吏」 default 「リ」 (= 官吏/吏員/俗吏/能吏/酷吏)。
+# unihan default 「つかさ」 は古語、 「司」 と被る
+[[kanji]]
+char = "吏"
+default = "リ"
+
+# 「否」 default 「ヒ」 (= 否定/拒否/賛否/可否/正否/合否/諾否)。
+# unihan default 「いな」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "否"
+default = "ヒ"
+
+# 「周」 default 「シュウ」 (= 周囲/周辺/円周/周年/周到/一周/外周/満周)。
+# unihan default 「まわり」 は名詞単独、 熟語 dominant
+[[kanji]]
+char = "周"
+default = "シュウ"
+
+# 「哀」 default 「アイ」 (= 哀愁/哀悼/悲哀/喜怒哀楽/哀切/悲哀)。
+# unihan default 「あわれ」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "哀"
+default = "アイ"
+
+# 「唐」 default 「トウ」 (= 唐突/唐草/唐辛子/遣唐使/唐人/唐風)。
+# 「唐」 = から (国名/姓) は jukugo 個別
+[[kanji]]
+char = "唐"
+default = "トウ"
+
+# 「喚」 default 「カン」 (= 召喚/喚問/喚起/叫喚)。
+# 動詞 「喚く」 = わめく は okurigana 列挙で 「わめ」 へ切替
+[[kanji]]
+char = "喚"
+default = "カン"
+
+[[kanji.match]]
+next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
+reading = "わめ"
+
+# 「嗣」 default 「シ」 (= 嗣子/後嗣/世嗣/嫡嗣)。
+# unihan default 「つぐ」 は古語動詞、 「継」 が動詞 dominant
+[[kanji]]
+char = "嗣"
+default = "シ"
+
+# 「因」 default 「イン」 (= 原因/要因/起因/因縁/因果/敗因/勝因/主因)。
+# unihan default 「よる」 は古語動詞、 「依」 が動詞 dominant
+[[kanji]]
+char = "因"
+default = "イン"
+
+# 「坑」 default 「コウ」 (= 坑道/廃坑/炭坑/坑夫/竪坑/落とし坑)。
+# unihan default 「あな」 は古語、 「穴」 が訓 dominant
+[[kanji]]
+char = "坑"
+default = "コウ"

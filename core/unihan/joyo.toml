@@ -290,12 +290,12 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 吉 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 同 は core/kanji/overrides.toml の [[kanji]] block に移行
 "名" = "メイ"
-"后" = "あと"
-"吏" = "つかさ"
+# 后 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 吏 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 吐 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 向 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 吟 は core/kanji/overrides.toml の [[kanji]] block に移行
-"否" = "いな"
+# 否 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 含 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 吸 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 吹 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -303,14 +303,14 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 呈 は core/kanji/overrides.toml の [[kanji]] block に移行
 "呉" = "くれ"
 # 告 は core/kanji/overrides.toml の [[kanji]] block に移行
-"周" = "まわり"
+# 周 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 呪 は core/kanji/overrides.toml の [[kanji]] block に移行
 "味" = "あじ"
 # 呼 は core/kanji/overrides.toml の [[kanji]] block に移行
 "命" = "いのち"
 "咲" = "さく"
 "咽" = "のど"
-"哀" = "あわれ"
+# 哀 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 品 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 「員」 は overrides.toml の [[kanji]] block に移行 (★round 39)
 # 哲 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -318,7 +318,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "唄" = "うた"
 # 唆 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 唇 は core/kanji/overrides.toml の [[kanji]] block に移行
-"唐" = "から"
+# 唐 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 唯 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 唱 は core/kanji/overrides.toml の [[kanji]] block に移行
 "唾" = "つば"
@@ -327,7 +327,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 啓 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 善 は core/kanji/overrides.toml の [[kanji]] block に移行
 "喉" = "のど"
-"喚" = "よぶ"
+# 喚 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 喜 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 喝 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 喩 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -335,7 +335,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 喫 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 営 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 嗅 は core/kanji/overrides.toml の [[kanji]] block に移行
-"嗣" = "つぐ"
+# 嗣 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 嘆 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 嘱 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 嘲 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -344,7 +344,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 囚 は core/kanji/overrides.toml の [[kanji]] block に移行
 # "四" は core/kanji/overrides.toml の [[kanji]] block に移行
 # 回 は core/kanji/overrides.toml の [[kanji]] block に移行
-"因" = "よる"
+# 因 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 団 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 困 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 囲 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -357,7 +357,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 地 は core/kanji/overrides.toml の [[kanji]] block に移行
 "坂" = "さか"
 "坊" = "へや"
-"坑" = "あな"
+# 坑 は core/kanji/overrides.toml の [[kanji]] block に移行
 "坪" = "つぼ"
 # 垂 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 「型」 は overrides.toml の [[kanji]] block に移行 (★round 38)
