@@ -13936,3 +13936,103 @@ default = "うら"
 [[kanji.match]]
 prev_char_type = "漢字"
 reading = "リ"
+
+# 「親」 default 「おや」 (= 「親/親父/親しい」 単独訓)。
+# prev 漢字 → 「シン」 (= 親切/両親/肉親/近親/父親 等)。
+[[kanji]]
+char = "親"
+default = "おや"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "シン"
+
+# 「訳」 default 「わけ」 (= 「訳/言い訳/訳柄」 単独訓)。
+# prev 漢字 → 「ヤク」 (= 翻訳/通訳/和訳/英訳/誤訳/抄訳 等)。
+[[kanji]]
+char = "訳"
+default = "わけ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ヤク"
+
+# 「赤」 default 「あか」 (= 「赤/真っ赤/赤ちゃん」 単独訓)。
+# prev 漢字 → 「セキ」 (= 赤色/赤面/赤十字/赤血球/赤道/赤化 等)。
+[[kanji]]
+char = "赤"
+default = "あか"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "セキ"
+
+# 「跡」 default 「あと」 (= 「足跡/跡形」 単独訓)。
+# prev 漢字 → 「セキ」 (= 痕跡/史跡/古跡/筆跡/遺跡/形跡 等)。
+[[kanji]]
+char = "跡"
+default = "あと"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "セキ"
+
+# 「針」 default 「はり」 (= 「針/針金/針箱」 単独訓)。
+# prev 漢字 → 「シン」 (= 針路/方針/磁針/秒針 等)。
+[[kanji]]
+char = "針"
+default = "はり"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "シン"
+
+# 「西」 default 「にし」 (= 「西/西日/西側」 単独訓)。
+# prev 漢字 → 「セイ」 (= 西部/北西/南西/西暦/西洋/関西 等)。
+[[kanji]]
+char = "西"
+default = "にし"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "セイ"
+
+# 「麻」 default 「あさ」 (= 「麻/麻布」 単独訓)。
+# prev 漢字 → 「マ」 (= 麻薬/麻酔/亜麻/大麻/麻雀 等)。
+[[kanji]]
+char = "麻"
+default = "あさ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "マ"
+
+# 「黒」 default 「くろ」 (= 「黒/真っ黒/黒板」 単独訓 / jukugo「黒板」 は jukugo file)。
+# prev 漢字 → 「コク」 (= 漆黒/暗黒/腹黒/黒人 等)。
+[[kanji]]
+char = "黒"
+default = "くろ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "コク"
+
+# 「鼻」 default 「はな」 (= 「鼻/鼻血/鼻歌」 単独訓)。
+# prev 漢字 → 「ビ」 (= 鼻孔/鼻祖/耳鼻/隆鼻 等)。
+[[kanji]]
+char = "鼻"
+default = "はな"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ビ"
+
+# 「髪」 default 「かみ」 (= 「髪/髪型/髪飾り」 単独訓)。
+# prev 漢字 → 「ハツ」 (= 散髪/毛髪/白髪/金髪/茶髪 等)。
+[[kanji]]
+char = "髪"
+default = "かみ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ハツ"
