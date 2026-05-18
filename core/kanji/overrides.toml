@@ -12915,3 +12915,17 @@ reading = "あきら"
 [[kanji]]
 char = "軌"
 default = "キ"
+
+# 「酢」 default 「す」 (= 「お酢/酢の物/酢豚」、 訓読み圧倒的)。
+# unihan 「サク」 は化学用語 (酢酸) 限定、 一般文章では訓「す」 主流 → default 訂正。
+# 「酢酸/酢飯/黒酢/米酢」 等は jukugo file で対応。
+[[kanji]]
+char = "酢"
+default = "す"
+
+# 「黄」 default 「き」 (= 「黄色/黄ばむ/黄身」、 訓読み主流)。
+# unihan 「コウ」 は jukugo (黄道/黄褐色) 限定、 一般使用は訓「き」 → default 訂正。
+# 「黄金/卵黄/黄銅/黄砂/硫黄」 等の音読みは jukugo file で対応。
+[[kanji]]
+char = "黄"
+default = "き"
