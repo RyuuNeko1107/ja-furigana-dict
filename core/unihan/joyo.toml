@@ -662,7 +662,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 恨 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 恩 は core/kanji/overrides.toml の [[kanji]] block に移行
 # "恭" は core/kanji/overrides.toml の [[kanji]] block に移行
-"息" = "いき"
+# 息 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 恵 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 悔 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 悟 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -706,7 +706,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 憶 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 憾 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 懇 は core/kanji/overrides.toml の [[kanji]] block に移行
-"懐" = "ふところ"
+# 懐 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 懲 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 懸 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 成 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -761,7 +761,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 拶 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 拷 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 拾 は core/kanji/overrides.toml の [[kanji]] block に移行
-"指" = "ゆび"
+# 指 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 挑 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 挙 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 挟 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -831,13 +831,13 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "敷" = "しく"
 "文" = "ブン"
 # 斉 は core/kanji/overrides.toml の [[kanji]] block に移行
-"斎" = "とき"
+# 斎 は core/kanji/overrides.toml の [[kanji]] block に移行
 "斑" = "まだら"
 # 斗 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 料 は core/kanji/overrides.toml の [[kanji]] block に移行
 "斜" = "ななめ"
 "斤" = "おの"
-"斥" = "さす"
+# 斥 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 断 は core/kanji/overrides.toml の [[kanji]] block に移行
 "新" = "シン"
 # 施 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -846,12 +846,12 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 族 は core/kanji/overrides.toml の [[kanji]] block に移行
 "旗" = "はた"
 # 既 は core/kanji/overrides.toml の [[kanji]] block に移行
-"旦" = "あした"
+# 旦 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 旧 は core/kanji/overrides.toml の [[kanji]] block に移行
-"旨" = "むね"
+# 旨 は core/kanji/overrides.toml の [[kanji]] block に移行
 "旬" = "ジュン"
 # 旺 は core/kanji/overrides.toml の [[kanji]] block に移行
-"昆" = "あに"
+# 昆 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 昇 は core/kanji/overrides.toml の [[kanji]] block に移行
 "明" = "あかり"
 # 易 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -862,7 +862,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 昧 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 昨 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 昭 は core/kanji/overrides.toml の [[kanji]] block に移行
-"是" = "ここ"
+# 是 は core/kanji/overrides.toml の [[kanji]] block に移行
 "昼" = "ひる"
 "時" = "とき"
 "晩" = "バン"
@@ -875,7 +875,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 暑 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 暖 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 暗 は core/kanji/overrides.toml の [[kanji]] block に移行
-"暦" = "こよみ"
+# 暦 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 暫 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 暮 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 暴 は core/kanji/overrides.toml の [[kanji]] block に移行

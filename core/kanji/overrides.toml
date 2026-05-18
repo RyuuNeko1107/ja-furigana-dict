@@ -11826,3 +11826,91 @@ default = "セイ"
 [[kanji.match]]
 next_starts_any = ["え", "わ", "い", "っ", "う", "お"]
 reading = "ととの"
+
+# 「息」 default 「ソク」 (= 息子/息災/休息/利息/嘆息/消息/安息/絶息)。
+# 単独 + 助詞接続 → 「いき」 (= 「息が/息の」 等)
+[[kanji]]
+char = "息"
+default = "ソク"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "いき"
+
+# 「懐」 default 「カイ」 (= 懐古/懐疑/感懐/本懐/胸懐/懐中/抱懐)。
+# 動詞 「懐く/懐かしい」 → 「なつ」、 単独 + 助詞 → 「ふところ」
+[[kanji]]
+char = "懐"
+default = "カイ"
+
+[[kanji.match]]
+next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
+reading = "なつ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "ふところ"
+
+# 「指」 default 「シ」 (= 指示/指導/指数/指摘/指針/指紋/屈指)。
+# 動詞 「指す」 → 「さ」、 単独 + 助詞 → 「ゆび」
+[[kanji]]
+char = "指"
+default = "シ"
+
+[[kanji.match]]
+next_starts_any = ["す", "さ", "し", "せ", "そ"]
+reading = "さ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "ゆび"
+
+# 「斎」 default 「サイ」 (= 書斎/精進斎/潔斎/斎場/斎戒)。
+# unihan default 「とき」 は古語、 「時」 が訓 dominant
+[[kanji]]
+char = "斎"
+default = "サイ"
+
+# 「斥」 default 「セキ」 (= 排斥/斥候/斥力)。
+# unihan default 「さす」 は古語動詞、 「刺/指」 が動詞 dominant
+[[kanji]]
+char = "斥"
+default = "セキ"
+
+# 「昆」 default 「コン」 (= 昆虫/昆布/後昆)。
+# unihan default 「あに」 は古語、 「兄」 が訓 dominant
+[[kanji]]
+char = "昆"
+default = "コン"
+
+# 「是」 default 「ゼ」 (= 是非/国是/是正/是々非々)。
+# unihan default 「ここ」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "是"
+default = "ゼ"
+
+# 「旨」 default 「シ」 (= 主旨/趣旨/論旨/要旨/別旨/宗旨)。
+# 単独 + 助詞接続 → 「むね」 (= 「旨が/旨の」 等)
+[[kanji]]
+char = "旨"
+default = "シ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "むね"
+
+# 「旦」 default 「タン」 (= 元旦/旦夕/月旦)、 「旦那」 = ダンナ は jukugo。
+# unihan default 「あした」 は古語、 「朝」 が訓 dominant
+[[kanji]]
+char = "旦"
+default = "タン"
+
+# 「暦」 default 「レキ」 (= 西暦/旧暦/陰暦/月暦/暦法/還暦)。
+# 単独 + 助詞接続 → 「こよみ」 (= 「暦が/暦の」 等)
+[[kanji]]
+char = "暦"
+default = "レキ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "こよみ"
