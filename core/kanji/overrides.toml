@@ -13474,3 +13474,63 @@ default = "ボク"
 [[kanji]]
 char = "粉"
 default = "こ"
+
+# 「仲」 default 「なか」 (= 「仲が良い/仲間/仲直り」 単独使用)。
+# 漢字連続 → 「チュウ」 (= 仲介/伯仲/仲裁/仲秋/仲春 等 jukugo)。
+[[kanji]]
+char = "仲"
+default = "なか"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "チュウ"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "チュウ"
+
+# 「兄」 default 「あに」 (= 「兄が/兄の/兄を」 単独使用 + 「兄貴」)。
+# 漢字連続 → 「ケイ」 (= 長兄/義兄/家兄/実兄/次兄 等 jukugo)。
+# 「兄弟/兄妹」 等 jukugo は jukugo file で対応。
+[[kanji]]
+char = "兄"
+default = "あに"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ケイ"
+
+# 「先」 default 「さき」 (= 「先が/先っぽ/先程/真っ先」 単独訓)。
+# 漢字連続 → 「セン」 (= 優先/先決/先発/先導/先制/先進 等 jukugo)。
+# 「先生/先輩」 等 jukugo は jukugo file で対応。
+[[kanji]]
+char = "先"
+default = "さき"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "セン"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "セン"
+
+# 「谷」 default 「たに」 (= 「谷が/谷の底/谷川」 単独訓)。
+# 漢字連続 → 「コク」 (= 峡谷/渓谷/空谷/深谷 等 jukugo)。
+[[kanji]]
+char = "谷"
+default = "たに"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "コク"
+
+# 「朋」 default 「とも」 (= 名前用「朋」 + 「朋友」 訓読み)。
+# 漢字連続 → 「ホウ」 (= 朋輩/朋党 等 jukugo)。
+[[kanji]]
+char = "朋"
+default = "とも"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "ホウ"

@@ -65,7 +65,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "以" = "イ"
 # 仮 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 仰 は core/kanji/overrides.toml の [[kanji]] block に移行
-"仲" = "なか"
+# 仲 は core/kanji/overrides.toml の [[kanji]] block に移行
 # "件" は core/kanji/overrides.toml の [[kanji]] block に移行
 # 任 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 企 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -145,10 +145,10 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 償 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 優 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 元 は core/kanji/overrides.toml の [[kanji]] block に移行
-"兄" = "あに"
+# 兄 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 充 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 兆 は core/kanji/overrides.toml の [[kanji]] block に移行
-"先" = "さき"
+# 先 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 光 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 克 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 免 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1685,7 +1685,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 議 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 譲 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 護 は core/kanji/overrides.toml の [[kanji]] block に移行
-"谷" = "たに"
+# 谷 は core/kanji/overrides.toml の [[kanji]] block に移行
 "豆" = "まめ"
 # 豊 は core/kanji/overrides.toml の [[kanji]] block に移行
 "豚" = "ぶた"
