@@ -10859,3 +10859,97 @@ default = "ユウ"
 [[kanji]]
 char = "序"
 default = "ジョ"
+
+# 「坊」 default 「ボウ」 (= 坊主/赤ん坊/僧坊/坊間/朝寝坊)。
+# unihan default 「へや」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "坊"
+default = "ボウ"
+
+# 「奥」 default 「オウ」 (= 深奥/奥義/秘奥/堂奥/奥地)。
+# 単独 + 助詞接続 → 「おく」 (= 「奥が/奥の」 等)
+[[kanji]]
+char = "奥"
+default = "オウ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "おく"
+
+[[kanji.match]]
+prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
+reading = "おく"
+
+# 「宝」 default 「ホウ」 (= 宝石/家宝/国宝/財宝/秘宝/宝物殿)。
+# 単独 + 助詞接続 → 「たから」 (= 「宝が/宝の」 等)
+[[kanji]]
+char = "宝"
+default = "ホウ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "たから"
+
+# 「宮」 default 「キュウ」 (= 宮殿/王宮/宮中/迷宮/離宮/中宮)。
+# 単独 + 助詞接続 → 「みや」 (= 「宮が/宮の」 等)
+[[kanji]]
+char = "宮"
+default = "キュウ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "みや"
+
+# 「宴」 default 「エン」 (= 宴会/酒宴/招宴/晩宴/賀宴)。
+# unihan default 「うたげ」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "宴"
+default = "エン"
+
+# 「宿」 default 「シュク」 (= 宿題/宿泊/宿命/合宿/民宿/旅宿/星宿)。
+# 単独 + 助詞接続 → 「やど」 (= 「宿が/宿に」 等)
+[[kanji]]
+char = "宿"
+default = "シュク"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "やど"
+
+# 「味」 default 「ミ」 (= 味方/趣味/興味/意味/味覚/三味線/正味)。
+# 単独 + 助詞接続 + 動詞 「味わう」 → 「あじ」
+[[kanji]]
+char = "味"
+default = "ミ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "わ"]
+reading = "あじ"
+
+[[kanji.match]]
+prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
+reading = "あじ"
+
+# 「嫁」 default 「カ」 (= 転嫁/降嫁/再嫁)。
+# 動詞 「嫁ぐ」 → 「とつ」、 単独 + 助詞 → 「よめ」
+[[kanji]]
+char = "嫁"
+default = "カ"
+
+[[kanji.match]]
+next_starts_any = ["ぐ", "ぎ", "い", "げ", "ご"]
+reading = "とつ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "よめ"
+
+# 「寂」 default 「ジャク」 (= 静寂/閑寂/寂寥/孤寂)。
+# 形容詞 「寂しい」 + 動詞 「寂れる/寂び」 は okurigana 列挙で 「さび」 へ切替
+[[kanji]]
+char = "寂"
+default = "ジャク"
+
+[[kanji.match]]
+next_starts_any = ["し", "れ", "び"]
+reading = "さび"
