@@ -558,7 +558,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 巾 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 「市」 は overrides.toml の [[kanji]] block に移行 (★round 45)
 # 布 は core/kanji/overrides.toml の [[kanji]] block に移行
-"帆" = "ハン"
+# 帆 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 希 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 帝 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 帥 は core/kanji/overrides.toml の [[kanji]] block に移行

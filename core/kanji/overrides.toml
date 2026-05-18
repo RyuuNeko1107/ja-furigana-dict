@@ -12661,3 +12661,10 @@ default = "ホウ"
 [[kanji.match]]
 next_starts_any = ["い"]
 reading = "むく"
+
+# 「帆」 default 「ほ」 (= 「帆を上げる/帆が立つ/白い帆」 等の訓読み単独使用)。
+# 音読み 「ハン」 (= 帆船) は jukugo file で対応 (= band 100 優先)。
+# 「帆立/帆桁/帆柱」 等の 「ホ」 訓 jukugo も jukugo file で別途登録済。
+[[kanji]]
+char = "帆"
+default = "ほ"
