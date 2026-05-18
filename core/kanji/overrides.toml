@@ -10197,3 +10197,75 @@ default = "ウ"
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
 reading = "は"
+
+# 「腫」 default 「シュ」 (= 腫瘍/水腫/腫脹/浮腫)。
+# 動詞 「腫れる」 は okurigana 「れ」 で 「は」 へ切替
+[[kanji]]
+char = "腫"
+default = "シュ"
+
+[[kanji.match]]
+next_starts_any = ["れ"]
+reading = "は"
+
+# 「腸」 default 「チョウ」 (= 大腸/小腸/盲腸/胃腸/十二指腸/腸炎)。
+# unihan default 「はらわた」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "腸"
+default = "チョウ"
+
+# 「臆」 default 「オク」 (= 臆病/臆面/臆測/臆断)。
+# unihan default 「むね」 は古語、 「胸」 が訓 dominant
+[[kanji]]
+char = "臆"
+default = "オク"
+
+# 「舎」 default 「シャ」 (= 校舎/官舎/宿舎/寮舎/兵舎/会舎)。
+# unihan default 「いえ」 は古語、 「家」 が訓 dominant (「田舎 = イナカ」 は jukugo)
+[[kanji]]
+char = "舎"
+default = "シャ"
+
+# 「舗」 default 「ホ」 (= 店舗/舗道/老舗/本舗)。
+# 動詞 「舗く」 は okurigana 列挙で 「し」 へ切替 (= 「敷」 と同源)
+[[kanji]]
+char = "舗"
+default = "ホ"
+
+[[kanji.match]]
+next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
+reading = "し"
+
+# 「舞」 default 「ブ」 (= 舞台/舞踊/演舞/歌舞伎/見舞/舞曲/乱舞)。
+# 動詞 「舞う」 は okurigana 列挙で 「ま」 へ切替
+[[kanji]]
+char = "舞"
+default = "ブ"
+
+[[kanji.match]]
+next_starts_any = ["う", "わ", "い", "っ", "え", "お"]
+reading = "ま"
+
+# 「舶」 default 「ハク」 (= 船舶/舶来/舶載)。
+# unihan default 「おおぶね」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "舶"
+default = "ハク"
+
+# 「舷」 default 「ゲン」 (= 左舷/右舷/舷側/舷窓)。
+# unihan default 「ふなばた」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "舷"
+default = "ゲン"
+
+# 「艇」 default 「テイ」 (= 艇庫/競艇/船艇/艦艇/上陸艇)。
+# unihan default 「ふね」 は古語、 「船」 が訓 dominant
+[[kanji]]
+char = "艇"
+default = "テイ"
+
+# 「艦」 default 「カン」 (= 軍艦/艦隊/戦艦/旗艦/艦長)。
+# unihan default 「いくさぶね」 は古語、 現代では熟語 dominant
+[[kanji]]
+char = "艦"
+default = "カン"
