@@ -321,12 +321,12 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 唐 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 唯 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 唱 は core/kanji/overrides.toml の [[kanji]] block に移行
-"唾" = "つば"
+# 唾 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 商 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 問 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 啓 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 善 は core/kanji/overrides.toml の [[kanji]] block に移行
-"喉" = "のど"
+# 喉 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 喚 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 喜 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 喝 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -519,7 +519,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 就 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 尺 は core/kanji/overrides.toml の [[kanji]] block に移行
 "尻" = "しり"
-"尼" = "あま"
+# 尼 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 尽 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 尾 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 尿 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -543,7 +543,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 島 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 崇 は core/kanji/overrides.toml の [[kanji]] block に移行
 "崎" = "さき"
-"崖" = "がけ"
+# 崖 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 崩 は core/kanji/overrides.toml の [[kanji]] block に移行
 "嵐" = "あらし"
 "州" = "シュウ"
@@ -832,7 +832,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "文" = "ブン"
 # 斉 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 斎 は core/kanji/overrides.toml の [[kanji]] block に移行
-"斑" = "まだら"
+# 斑 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 斗 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 料 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 斜 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -844,7 +844,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 旅 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 旋 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 族 は core/kanji/overrides.toml の [[kanji]] block に移行
-"旗" = "はた"
+# 旗 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 既 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 旦 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 旧 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -916,7 +916,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 林 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 枚 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 果 は core/kanji/overrides.toml の [[kanji]] block に移行
-"枝" = "えだ"
+# 枝 は core/kanji/overrides.toml の [[kanji]] block に移行
 "枠" = "わく"
 # 枢 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 枯 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -972,7 +972,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 権 は core/kanji/overrides.toml の [[kanji]] block に移行
 "横" = "よこ"
 # 樹 は core/kanji/overrides.toml の [[kanji]] block に移行
-"橋" = "はし"
+# 橋 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 機 は core/kanji/overrides.toml の [[kanji]] block に移行 (★round 50)
 # 欄 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 欠 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1010,10 +1010,10 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 氷 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 永 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 氾 は core/kanji/overrides.toml の [[kanji]] block に移行
-"汁" = "しる"
+# 汁 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 求 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 汎 は core/kanji/overrides.toml の [[kanji]] block に移行
-"汗" = "あせ"
+# 汗 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 汚 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 江 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 池 は core/kanji/overrides.toml の [[kanji]] block に移行

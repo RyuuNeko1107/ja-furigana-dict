@@ -14473,6 +14473,96 @@ default = "かげ"
 prev_char_type = "漢字"
 reading = "イン"
 
+# 「橋」 default 「はし」 + prev 漢字 → 「キョウ」 (= 陸橋/橋脚/橋梁/橋頭堡/吊橋)
+[[kanji]]
+char = "橋"
+default = "はし"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "キョウ"
+
+# 「汁」 default 「しる」 + prev 漢字 → 「ジュウ」 (= 果汁/汁液/苦汁/胆汁/肉汁)
+[[kanji]]
+char = "汁"
+default = "しる"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ジュウ"
+
+# 「汗」 default 「あせ」 + prev 漢字 → 「カン」 (= 発汗/血汗/汗顔/盗汗)
+[[kanji]]
+char = "汗"
+default = "あせ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "カン"
+
+# 「唾」 default 「つば」 + prev 漢字 → 「ダ」 (= 唾液/眉唾/咳唾/唾棄)
+[[kanji]]
+char = "唾"
+default = "つば"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ダ"
+
+# 「喉」 default 「のど」 + prev 漢字 → 「コウ」 (= 咽喉/喉舌/扼喉)
+[[kanji]]
+char = "喉"
+default = "のど"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "コウ"
+
+# 「斑」 default 「まだら」 + prev 漢字 → 「ハン」 (= 斑点/斑紋/紫斑/虎斑)
+[[kanji]]
+char = "斑"
+default = "まだら"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ハン"
+
+# 「旗」 default 「はた」 + prev 漢字 → 「キ」 (= 国旗/校旗/軍旗/反旗/弔旗)
+[[kanji]]
+char = "旗"
+default = "はた"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "キ"
+
+# 「崖」 default 「がけ」 + prev 漢字 → 「ガイ」 (= 断崖/絶崖/懸崖)
+[[kanji]]
+char = "崖"
+default = "がけ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ガイ"
+
+# 「尼」 default 「あま」 + prev 漢字 → 「ニ」 (= 尼僧/比丘尼/老尼)
+[[kanji]]
+char = "尼"
+default = "あま"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ニ"
+
+# 「枝」 default 「えだ」 + prev 漢字 → 「シ」 (= 枝葉/枝条/枝幹/連枝)
+[[kanji]]
+char = "枝"
+default = "えだ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "シ"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"
