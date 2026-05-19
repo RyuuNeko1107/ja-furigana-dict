@@ -17030,6 +17030,156 @@ default = "のり"
 char = "紐"
 default = "ひも"
 
+# 「紘」 default 「コウ」 (= 八紘一宇/名前用、 音読み)
+[[kanji]]
+char = "紘"
+default = "コウ"
+
+# 「紬」 default 「つむぎ」 (= 「紬/結城紬/真綿紬」 訓主体)
+[[kanji]]
+char = "紬"
+default = "つむぎ"
+
+# 「絆」 default 「きずな」 (= 「絆/絆創膏」 訓主体)
+[[kanji]]
+char = "絆"
+default = "きずな"
+
+# 「絢」 default 「あや」 (= 「絢/絢爛」 訓主体 + 名前)
+[[kanji]]
+char = "絢"
+default = "あや"
+
+# 「綺」 default 「あや」 (= 「綺/綺羅/綺麗」 訓主体 + 名前)
+[[kanji]]
+char = "綺"
+default = "あや"
+
+# 「綾」 default 「あや」 (= 「綾/綾錦/綾子」 訓 + 名前)
+[[kanji]]
+char = "綾"
+default = "あや"
+
+# 「縞」 default 「しま」 (= 「縞/縞馬/縞模様」 訓主体)
+[[kanji]]
+char = "縞"
+default = "しま"
+
+# 「肋」 default 「あばら」 (= 「肋/肋骨/鶏肋」 訓 + jukugo)
+[[kanji]]
+char = "肋"
+default = "あばら"
+
+# 「肴」 default 「さかな」 (= 「肴/酒肴/魚肴」 訓主体)
+[[kanji]]
+char = "肴"
+default = "さかな"
+
+# 「腔」 default 「コウ」 (= 口腔/腹腔/満腔、 音読み)
+[[kanji]]
+char = "腔"
+default = "コウ"
+
+# 「舜」 default 「シュン」 (= 「舜」 古代中国王 + 名前、 音読み)
+[[kanji]]
+char = "舜"
+default = "シュン"
+
+# 「舵」 default 「かじ」 (= 「舵/舵取り/操舵」 訓主体)
+[[kanji]]
+char = "舵"
+default = "かじ"
+
+# 「芦」 default 「あし」 (= 「芦/芦原/芦屋」 訓主体 + 名前)
+[[kanji]]
+char = "芦"
+default = "あし"
+
+# 「芭」 default 「バ」 (= 芭蕉のみ実用)
+[[kanji]]
+char = "芭"
+default = "バ"
+
+# 「芹」 default 「せり」 (= 「芹/水芹」 訓のみ)
+[[kanji]]
+char = "芹"
+default = "せり"
+
+# 「苑」 default 「その」 (= 「苑/御苑/学苑」 訓 + 名前)
+[[kanji]]
+char = "苑"
+default = "その"
+
+# 「苔」 default 「こけ」 (= 「苔/青苔/苔玉」 訓主体)
+[[kanji]]
+char = "苔"
+default = "こけ"
+
+# 「苺」 default 「いちご」 (= 「苺/野苺/雪苺」 訓主体)
+[[kanji]]
+char = "苺"
+default = "いちご"
+
+# 「茄」 default 「なす」 (= 「茄子/茄」 訓主体)
+[[kanji]]
+char = "茄"
+default = "なす"
+
+# 「茅」 default 「かや」 (= 「茅/茅葺/茅原」 訓主体 + 名前)
+[[kanji]]
+char = "茅"
+default = "かや"
+
+# 「茉」 default 「マツ」 (= 茉莉花のみ実用、 音読み)
+[[kanji]]
+char = "茉"
+default = "マツ"
+
+# 「茜」 default 「あかね」 (= 「茜/茜色」 訓主体 + 名前)
+[[kanji]]
+char = "茜"
+default = "あかね"
+
+# 「荻」 default 「おぎ」 (= 「荻/荻原/荻窪」 訓主体 + 名前)
+[[kanji]]
+char = "荻"
+default = "おぎ"
+
+# 「莉」 default 「リ」 (= 「茉莉花」 + 名前用、 音読み)
+[[kanji]]
+char = "莉"
+default = "リ"
+
+# 「莞」 default 「カン」 (= 莞爾、 音読み + 名前)
+[[kanji]]
+char = "莞"
+default = "カン"
+
+# 「菅」 default 「すげ」 (= 「菅/菅原/菅笠」 訓 + 名前)
+[[kanji]]
+char = "菅"
+default = "すげ"
+
+# 「菖」 default 「ショウ」 (= 菖蒲のみ実用)
+[[kanji]]
+char = "菖"
+default = "ショウ"
+
+# 「菩」 default 「ボ」 (= 菩薩/菩提樹/菩提、 音読み)
+[[kanji]]
+char = "菩"
+default = "ボ"
+
+# 「菫」 default 「すみれ」 (= 「菫/菫色」 訓主体)
+[[kanji]]
+char = "菫"
+default = "すみれ"
+
+# 「菱」 default 「ひし」 (= 「菱/菱形/三菱」 訓主体 + 名前)
+[[kanji]]
+char = "菱"
+default = "ひし"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"
