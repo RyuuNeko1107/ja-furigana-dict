@@ -15938,6 +15938,131 @@ default = "ウツ"
 char = "魅"
 default = "ミ"
 
+# 「魔」 default 「マ」 (= 魔法/魔王/邪魔/魔物/魔界、 音読み)
+[[kanji]]
+char = "魔"
+default = "マ"
+
+# 「鶴」 default 「つる」 (= 「鶴/丹頂鶴/折鶴/千羽鶴」 訓のみ)
+[[kanji]]
+char = "鶴"
+default = "つる"
+
+# 「鹿」 default 「しか」 (= 「鹿/鹿児島/鹿狩り/牡鹿」 訓 + jukugo)
+[[kanji]]
+char = "鹿"
+default = "しか"
+
+# 「麓」 default 「ふもと」 (= 「麓/山麓」 訓 + jukugo)
+[[kanji]]
+char = "麓"
+default = "ふもと"
+
+# 「乙」 default 「オツ」 (= 甲乙/乙女/乙な、 音読み主体)
+[[kanji]]
+char = "乙"
+default = "オツ"
+
+# 「但」 default 「ただし」 (= 接続詞「但し」、 訓のみ)
+[[kanji]]
+char = "但"
+default = "ただし"
+
+# 「俳」 default 「ハイ」 (= 俳句/俳優/俳画/俳壇、 音読み)
+[[kanji]]
+char = "俳"
+default = "ハイ"
+
+# 「叔」 default 「おじ」 (= 「叔父/叔母」 訓 + jukugo)
+[[kanji]]
+char = "叔"
+default = "おじ"
+
+# 「唄」 default 「うた」 (= 「小唄/長唄/島唄」 訓 + jukugo)
+[[kanji]]
+char = "唄"
+default = "うた"
+
+# 「峠」 default 「とうげ」 (= 「峠/箱根峠/碓氷峠」 訓のみ、 国字)
+[[kanji]]
+char = "峠"
+default = "とうげ"
+
+# 「材」 default 「ザイ」 (= 材料/木材/人材/教材/取材、 音読み)
+[[kanji]]
+char = "材"
+default = "ザイ"
+
+# 「柵」 default 「サク」 (= 鉄柵/木柵/防柵/柵越し、 音読み)
+[[kanji]]
+char = "柵"
+default = "サク"
+
+# 「査」 default 「サ」 (= 調査/検査/捜査/審査/監査、 音読み)
+[[kanji]]
+char = "査"
+default = "サ"
+
+# 「栓」 default 「セン」 (= 栓/血栓/消火栓/止血栓、 音読み)
+[[kanji]]
+char = "栓"
+default = "セン"
+
+# 「校」 default 「コウ」 (= 学校/校長/母校/転校/分校、 音読み)
+[[kanji]]
+char = "校"
+default = "コウ"
+
+# 「格」 default 「カク」 (= 格式/規格/合格/性格/価格/資格、 音読み)
+[[kanji]]
+char = "格"
+default = "カク"
+
+# 「梗」 default 「コウ」 (= 梗概/脳梗塞/桔梗、 音読み)
+[[kanji]]
+char = "梗"
+default = "コウ"
+
+# 「泌」 default 「ヒツ」 (= 分泌/泌尿器、 音読み)
+[[kanji]]
+char = "泌"
+default = "ヒツ"
+
+# 「点」 default 「テン」 (= 点数/満点/欠点/視点/採点、 音読み)
+[[kanji]]
+char = "点"
+default = "テン"
+
+# 「総」 default 「ソウ」 (= 総合/総理/総数/総会/総括、 音読み)
+[[kanji]]
+char = "総"
+default = "ソウ"
+
+# 「縦」 default 「たて」 (= 「縦/縦書き/縦笛/縦割り」 訓主体、 「縦横/縦断」 jukugo 経由)
+[[kanji]]
+char = "縦"
+default = "たて"
+
+# 「股」 default 「また」 (= 「股/二股/股関節/股下」 訓主体)
+[[kanji]]
+char = "股"
+default = "また"
+
+# 「肩」 default 「かた」 (= 「肩/肩書き/肩車/肩透かし」 訓主体)
+[[kanji]]
+char = "肩"
+default = "かた"
+
+# 「胸」 default 「むね」 (= 「胸/胸騒ぎ/胸襟/胸像」 訓主体)
+[[kanji]]
+char = "胸"
+default = "むね"
+
+# 「証」 default 「ショウ」 (= 証明/証拠/保証/認証/学生証、 音読み)
+[[kanji]]
+char = "証"
+default = "ショウ"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"
