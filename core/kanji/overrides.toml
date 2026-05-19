@@ -16310,6 +16310,101 @@ default = "ともえ"
 char = "巷"
 default = "ちまた"
 
+# 「巽」 default 「たつみ」 (= 干支南東/名前用、 訓のみ)
+[[kanji]]
+char = "巽"
+default = "たつみ"
+
+# 「帖」 default 「チョウ」 (= 手帖/紙帖/床帖/字帖、 音読み)
+[[kanji]]
+char = "帖"
+default = "チョウ"
+
+# 「幌」 default 「ほろ」 (= 「幌/車幌/札幌」 訓 + 地名)
+[[kanji]]
+char = "幌"
+default = "ほろ"
+
+# 「幡」 default 「はた」 (= 「幡/八幡」 訓主体 + 地名)
+[[kanji]]
+char = "幡"
+default = "はた"
+
+# 「庄」 default 「ショウ」 (= 庄屋/庄司/名所、 音読み + 名前)
+[[kanji]]
+char = "庄"
+default = "ショウ"
+
+# 「庚」 default 「かのえ」 (= 干支「庚」、 訓主体)
+[[kanji]]
+char = "庚"
+default = "かのえ"
+
+# 「庵」 default 「いおり」 (= 「庵/草庵/結庵/庵主」 訓主体)
+[[kanji]]
+char = "庵"
+default = "いおり"
+
+# 「廟」 default 「ビョウ」 (= 廟所/宗廟/霊廟/東廟、 音読み)
+[[kanji]]
+char = "廟"
+default = "ビョウ"
+
+# 「彦」 default 「ひこ」 (= 名前用「彦/誰々彦」、 訓のみ実用)
+[[kanji]]
+char = "彦"
+default = "ひこ"
+
+# 「彬」 default 「ヒン」 (= 彬彬、 漢籍まれ + 名前用)
+[[kanji]]
+char = "彬"
+default = "ヒン"
+
+# 「悌」 default 「テイ」 (= 孝悌/友悌、 漢籍 + 名前)
+[[kanji]]
+char = "悌"
+default = "テイ"
+
+# 「惣」 default 「ソウ」 (= 惣菜/惣領/惣代、 音読み + 名前)
+[[kanji]]
+char = "惣"
+default = "ソウ"
+
+# 「挺」 default 「テイ」 (= 挺身/空挺/一挺、 音読み)
+[[kanji]]
+char = "挺"
+default = "テイ"
+
+# 「斧」 default 「おの」 (= 「斧/斧鉞」 訓のみ実用)
+[[kanji]]
+char = "斧"
+default = "おの"
+
+# 「旭」 default 「あさひ」 (= 「旭/旭日/旭川」 訓 + 地名 + 名前)
+[[kanji]]
+char = "旭"
+default = "あさひ"
+
+# 「昊」 default 「コウ」 (= 蒼昊/昊天、 漢籍まれ + 名前)
+[[kanji]]
+char = "昊"
+default = "コウ"
+
+# 「昴」 default 「すばる」 (= 「昴/すばる」 訓のみ実用)
+[[kanji]]
+char = "昴"
+default = "すばる"
+
+# 「晟」 default 「セイ」 (= 名前用、 漢籍まれ)
+[[kanji]]
+char = "晟"
+default = "セイ"
+
+# 「智」 default 「チ」 (= 智恵/智者/英智/智略、 音読み + 名前)
+[[kanji]]
+char = "智"
+default = "チ"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"
