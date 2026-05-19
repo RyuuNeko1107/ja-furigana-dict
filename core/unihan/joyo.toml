@@ -1181,7 +1181,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 珍 は core/kanji/overrides.toml の [[kanji]] block に移行
 "珠" = "たま"
 # 現 は core/kanji/overrides.toml の [[kanji]] block に移行
-"球" = "たま"
+# 球 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 理 は core/kanji/overrides.toml の [[kanji]] block に移行
 "琴" = "こと"
 "瑠" = "ル"
@@ -1246,7 +1246,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 盤 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 盲 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 直 は core/kanji/overrides.toml の [[kanji]] block に移行
-"相" = "あい"
+# 相 は core/kanji/overrides.toml の [[kanji]] block に移行
 "盾" = "たて"
 # 省 は core/kanji/overrides.toml の [[kanji]] block に移行
 "眉" = "まゆ"
@@ -1281,7 +1281,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "磁" = "ジ"
 # 磨 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 礁 は core/kanji/overrides.toml の [[kanji]] block に移行
-"礎" = "いしずえ"
+# 礎 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 示 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 礼 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 社 は core/kanji/overrides.toml の [[kanji]] block に移行 (★round 50)
@@ -1307,7 +1307,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "秩" = "チツ"
 # 称 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 移 は core/kanji/overrides.toml の [[kanji]] block に移行
-"程" = "ほど"
+# 程 は core/kanji/overrides.toml の [[kanji]] block に移行
 "税" = "ゼイ"
 # 稚 は core/kanji/overrides.toml の [[kanji]] block に移行
 # "種" は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1841,7 +1841,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 采 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 釈 は core/kanji/overrides.toml の [[kanji]] block に移行
 "里" = "さと"
-"野" = "の"
+# 野 は core/kanji/overrides.toml の [[kanji]] block に移行
 # "量" は core/kanji/overrides.toml の [[kanji]] block に移行
 "釜" = "かま"
 # 針 は core/kanji/overrides.toml の [[kanji]] block に移行
