@@ -1397,14 +1397,14 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 給 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 統 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 絶 は core/kanji/overrides.toml の [[kanji]] block に移行
-"絹" = "きぬ"
+# 絹 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 継 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 続 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 維 は core/kanji/overrides.toml の [[kanji]] block に移行
-"綱" = "つな"
-"網" = "あみ"
+# 綱 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 網 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 綻 は core/kanji/overrides.toml の [[kanji]] block に移行
-"綿" = "わた"
+# 綿 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 緊 は core/kanji/overrides.toml の [[kanji]] block に移行
 "総" = "ソウ"
 # 緑 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1655,7 +1655,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 誕 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 誘 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 語 は core/kanji/overrides.toml の [[kanji]] block に移行
-"誠" = "まこと"
+# 誠 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 誤 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 「説」 は overrides.toml の [[kanji]] block に移行 (★round 37)
 "誰" = "だれ"
@@ -1909,7 +1909,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "階" = "カイ"
 # 随 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 隔 は core/kanji/overrides.toml の [[kanji]] block に移行
-"隙" = "すき"
+# 隙 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 障 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 隠 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 隷 は core/kanji/overrides.toml の [[kanji]] block に移行

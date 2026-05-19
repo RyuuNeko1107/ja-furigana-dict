@@ -14739,6 +14739,61 @@ default = "ゆう"
 prev_char_type = "漢字"
 reading = "セキ"
 
+# 「絹」 default 「きぬ」 + prev 漢字 → 「ケン」 (= 絹糸/絹布/純絹/人絹/天絹)
+[[kanji]]
+char = "絹"
+default = "きぬ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ケン"
+
+# 「綱」 default 「つな」 + prev 漢字 → 「コウ」 (= 綱領/綱紀/綱要/横綱/大綱)
+[[kanji]]
+char = "綱"
+default = "つな"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "コウ"
+
+# 「網」 default 「あみ」 + prev 漢字 → 「モウ」 (= 網羅/網目/金網/通信網/人脈網/法網)
+[[kanji]]
+char = "網"
+default = "あみ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "モウ"
+
+# 「綿」 default 「わた」 + prev 漢字 → 「メン」 (= 綿密/綿毛/綿布/海綿/連綿/木綿は jukugo)
+[[kanji]]
+char = "綿"
+default = "わた"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "メン"
+
+# 「誠」 default 「まこと」 + prev 漢字 → 「セイ」 (= 忠誠/至誠/赤誠/真誠)
+# 「誠実」 等は jukugo file で対応。
+[[kanji]]
+char = "誠"
+default = "まこと"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "セイ"
+
+# 「隙」 default 「すき」 + prev 漢字 → 「ゲキ」 (= 間隙/空隙/隙地)
+[[kanji]]
+char = "隙"
+default = "すき"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ゲキ"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"
