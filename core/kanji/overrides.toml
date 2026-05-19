@@ -15013,6 +15013,31 @@ default = "ジュク"
 char = "壇"
 default = "ダン"
 
+# 「姻」 default 「イン」 (= ほぼ「婚姻」 のみ実用、 音読みのみ)
+[[kanji]]
+char = "姻"
+default = "イン"
+
+# 「婚」 default 「コン」 (= 結婚/婚姻/離婚/婚約/未婚、 音読み)
+[[kanji]]
+char = "婚"
+default = "コン"
+
+# 「孝」 default 「コウ」 (= 孝行/親孝行/不孝/忠孝、 音読み主体)
+[[kanji]]
+char = "孝"
+default = "コウ"
+
+# 「官」 default 「カン」 (= 官庁/警官/外交官/長官/裁判官、 音読み主流)
+[[kanji]]
+char = "官"
+default = "カン"
+
+# 「宙」 default 「チュウ」 (= 宇宙/宙返り/中宙/宙吊り、 音読み主流)
+[[kanji]]
+char = "宙"
+default = "チュウ"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"
