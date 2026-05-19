@@ -15563,6 +15563,31 @@ default = "はい"
 char = "胃"
 default = "イ"
 
+# 「脂」 default 「あぶら」 (= 「脂/脂肪/油脂/牛脂」 訓 + jukugo)
+[[kanji]]
+char = "脂"
+default = "あぶら"
+
+# 「脇」 default 「わき」 (= 「脇/脇腹/脇道/脇役」 訓主体)
+[[kanji]]
+char = "脇"
+default = "わき"
+
+# 「脊」 default 「セキ」 (= 脊椎/脊柱/脊髄、 音読みのみ)
+[[kanji]]
+char = "脊"
+default = "セキ"
+
+# 「脳」 default 「ノウ」 (= 脳/頭脳/脳裏/首脳/脳波/小脳、 音読み)
+[[kanji]]
+char = "脳"
+default = "ノウ"
+
+# 「腎」 default 「ジン」 (= 腎臓/腎炎/腎不全/副腎、 音読み)
+[[kanji]]
+char = "腎"
+default = "ジン"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"

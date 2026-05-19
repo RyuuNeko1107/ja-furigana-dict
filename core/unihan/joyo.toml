@@ -1476,15 +1476,15 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 胞 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 胴 は core/kanji/overrides.toml の [[kanji]] block に移行
 "胸" = "むね"
-"脂" = "あぶら"
+# 脂 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 脅 は core/kanji/overrides.toml の [[kanji]] block に移行
-"脇" = "わき"
+# 脇 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 脈 は core/kanji/overrides.toml の [[kanji]] block に移行
-"脊" = "セキ"
+# 脊 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 脚 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 脱 は core/kanji/overrides.toml の [[kanji]] block に移行
-"脳" = "ノウ"
-"腎" = "ジン"
+# 脳 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 腎 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 腐 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 腕 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 腫 は core/kanji/overrides.toml の [[kanji]] block に移行
