@@ -15863,6 +15863,31 @@ default = "さか"
 char = "陣"
 default = "ジン"
 
+# 「隅」 default 「すみ」 (= 「隅/片隅/四隅/隅々」 訓主体)
+[[kanji]]
+char = "隅"
+default = "すみ"
+
+# 「階」 default 「カイ」 (= 階段/階級/二階/段階/位階、 音読み)
+[[kanji]]
+char = "階"
+default = "カイ"
+
+# 「雄」 default 「ユウ」 (= 英雄/雄大/雌雄/雄飛/両雄、 音読み主体)
+[[kanji]]
+char = "雄"
+default = "ユウ"
+
+# 「雰」 default 「フン」 (= 雰囲気のみ実用)
+[[kanji]]
+char = "雰"
+default = "フン"
+
+# 「面」 default 「メン」 (= 表面/方面/正面/平面/面接、 音読み)
+[[kanji]]
+char = "面"
+default = "メン"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"
