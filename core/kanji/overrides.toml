@@ -14721,6 +14721,24 @@ default = "ます"
 prev_char_type = "漢字"
 reading = "ショウ"
 
+# 「堤」 default 「つつみ」 + prev 漢字 → 「テイ」 (= 堤防/防波堤/突堤)
+[[kanji]]
+char = "堤"
+default = "つつみ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "テイ"
+
+# 「夕」 default 「ゆう」 + prev 漢字 → 「セキ」 (= 朝夕/一夕/旦夕/七夕は jukugo)
+[[kanji]]
+char = "夕"
+default = "ゆう"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "セキ"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"
