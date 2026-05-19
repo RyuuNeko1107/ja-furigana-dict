@@ -15213,6 +15213,31 @@ default = "わく"
 char = "柄"
 default = "がら"
 
+# 「柳」 default 「やなぎ」 (= 「柳/しだれ柳/柳腰」 訓主体、 「川柳」 jukugo)
+[[kanji]]
+char = "柳"
+default = "やなぎ"
+
+# 「柿」 default 「かき」 (= 「柿/渋柿/熟柿」 訓のみ実用)
+[[kanji]]
+char = "柿"
+default = "かき"
+
+# 「栃」 default 「とち」 (= 「栃/栃木」 訓 + jukugo「栃木」 完備)
+[[kanji]]
+char = "栃"
+default = "とち"
+
+# 「株」 default 「かぶ」 (= 「株/株主/新株」 訓 + jukugo「株式/株価」 完備)
+[[kanji]]
+char = "株"
+default = "かぶ"
+
+# 「桁」 default 「けた」 (= 「橋桁/桁数/桁外れ」 訓のみ、 国字)
+[[kanji]]
+char = "桁"
+default = "けた"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"

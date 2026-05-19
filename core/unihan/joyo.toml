@@ -925,20 +925,20 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 染 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 柔 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 柱 は core/kanji/overrides.toml の [[kanji]] block に移行
-"柳" = "やなぎ"
+# 柳 は core/kanji/overrides.toml の [[kanji]] block に移行
 "柵" = "サク"
 "査" = "サ"
-"柿" = "かき"
-"栃" = "とち"
+# 柿 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 栃 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 栄 は core/kanji/overrides.toml の [[kanji]] block に移行
 "栓" = "セン"
 "校" = "コウ"
-"株" = "かぶ"
+# 株 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 核 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 根 は core/kanji/overrides.toml の [[kanji]] block に移行
 "格" = "カク"
 # 栽 は core/kanji/overrides.toml の [[kanji]] block に移行
-"桁" = "けた"
+# 桁 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 桃 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 案 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 桑 は core/kanji/overrides.toml の [[kanji]] block に移行
