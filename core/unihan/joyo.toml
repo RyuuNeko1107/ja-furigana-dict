@@ -1563,17 +1563,17 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 薫 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 薬 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 藍 は core/kanji/overrides.toml の [[kanji]] block に移行
-"藤" = "ふじ"
+# 藤 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 藩 は core/kanji/overrides.toml の [[kanji]] block に移行
-"藻" = "ソウ"
+# 藻 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 虎 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 虐 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 虚 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 虜 は core/kanji/overrides.toml の [[kanji]] block に移行
-"虞" = "おそれ"
+# 虞 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 虫 は core/kanji/overrides.toml の [[kanji]] block に移行
-"虹" = "にじ"
-"蚊" = "カ"
+# 虹 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 蚊 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 蚕 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 蛇 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 蛍 は core/kanji/overrides.toml の [[kanji]] block に移行

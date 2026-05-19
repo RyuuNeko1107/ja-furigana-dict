@@ -15663,6 +15663,31 @@ default = "カ"
 char = "菜"
 default = "サイ"
 
+# 「藤」 default 「ふじ」 (= 「藤/藤色/藤原/藤本」 訓主体)
+[[kanji]]
+char = "藤"
+default = "ふじ"
+
+# 「藻」 default 「ソウ」 (= 海藻/水藻/緑藻/紅藻、 音読み)
+[[kanji]]
+char = "藻"
+default = "ソウ"
+
+# 「虞」 default 「おそれ」 (= 「虞 (法律用語)/不虞」 訓のみ実用)
+[[kanji]]
+char = "虞"
+default = "おそれ"
+
+# 「虹」 default 「にじ」 (= 「虹/虹色」 訓のみ実用)
+[[kanji]]
+char = "虹"
+default = "にじ"
+
+# 「蚊」 default 「カ」 (= 蚊/防蚊、 音「カ」 = 訓「か」 同 pronunciation)
+[[kanji]]
+char = "蚊"
+default = "カ"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"
