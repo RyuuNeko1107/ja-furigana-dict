@@ -2307,10 +2307,18 @@ default = "とり"
 char = "衣"
 default = "ころも"
 
-# 「雲」: default = くも。 ウン系 jukugo (雲海 / 暗雲 等) は band 100 で吸収。
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "イ"
+
+# 「雲」: default = くも + prev 漢字 → ウン (暗雲 / 風雲 / 紫雲 等)。
 [[kanji]]
 char = "雲"
 default = "くも"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ウン"
 
 # 「馬」: default = うま。 バ系 jukugo (馬車 / 馬力 / 競馬 / 騎馬 等) は
 # band 100 で吸収。
@@ -14793,6 +14801,16 @@ default = "すき"
 [[kanji.match]]
 prev_char_type = "漢字"
 reading = "ゲキ"
+
+# 「稲」 default 「いね」 + prev 漢字 → 「トウ」 (= 早稲 jukugo 連濁注、 稲熱病、 稲麻)
+# 「水稲/陸稲」 等は jukugo file で対応。
+[[kanji]]
+char = "稲"
+default = "いね"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "トウ"
 
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
