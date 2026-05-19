@@ -14863,6 +14863,31 @@ default = "コウ"
 char = "俗"
 default = "ゾク"
 
+# 「俺」 default 「おれ」 (= 一人称代名詞、 訓のみ。 他読みなし)
+[[kanji]]
+char = "俺"
+default = "おれ"
+
+# 「個」 default 「コ」 (= 個人/個性/個別/個体/個展、 音読み圧倒的)
+[[kanji]]
+char = "個"
+default = "コ"
+
+# 「債」 default 「サイ」 (= 公債/負債/債券/債務/債権、 音読みのみ実用)
+[[kanji]]
+char = "債"
+default = "サイ"
+
+# 「僅」 default 「わずか」 (= 形容動詞「僅か」、 副詞用法あり)
+[[kanji]]
+char = "僅"
+default = "わずか"
+
+# 「僚」 default 「リョウ」 (= 同僚/官僚/閣僚/僚機/僚船、 音読み主流)
+[[kanji]]
+char = "僚"
+default = "リョウ"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"

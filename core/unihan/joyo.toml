@@ -106,9 +106,9 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "俳" = "ハイ"
 # 俵 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 俸 は core/kanji/overrides.toml の [[kanji]] block に移行
-"俺" = "おれ"
+# 俺 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 倉 は core/kanji/overrides.toml の [[kanji]] block に移行
-"個" = "コ"
+# 個 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 倍 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 倒 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 候 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -131,13 +131,13 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 備 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 催 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 傲 は core/kanji/overrides.toml の [[kanji]] block に移行
-"債" = "サイ"
+# 債 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 傷 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 傾 は core/kanji/overrides.toml の [[kanji]] block に移行
-"僅" = "わずか"
+# 僅 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 働 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 像 は core/kanji/overrides.toml の [[kanji]] block に移行
-"僚" = "リョウ"
+# 僚 は core/kanji/overrides.toml の [[kanji]] block に移行
 "僧" = "ソウ"
 # 儀 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 億 は core/kanji/overrides.toml の [[kanji]] block に移行
