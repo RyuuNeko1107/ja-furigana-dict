@@ -14391,6 +14391,88 @@ default = "たて"
 prev_char_type = "漢字"
 reading = "ジュン"
 
+# 「穴」 default 「あな」 + prev 漢字 → 「ケツ」 (= 洞穴/穴居/巣穴/竪穴)
+[[kanji]]
+char = "穴"
+default = "あな"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ケツ"
+
+# 「牙」 default 「きば」 + prev 漢字 → 「ガ」 (= 象牙/歯牙/毒牙/犬牙)
+[[kanji]]
+char = "牙"
+default = "きば"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ガ"
+
+# 「猿」 default 「さる」 + prev 漢字 → 「エン」 (= 類人猿/犬猿/野猿)
+[[kanji]]
+char = "猿"
+default = "さる"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "エン"
+
+# 「獣」 default 「けもの」 + prev 漢字 → 「ジュウ」 (= 獣医/猛獣/野獣/怪獣/百獣)
+[[kanji]]
+char = "獣"
+default = "けもの"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ジュウ"
+
+# 「珠」 default 「たま」 + prev 漢字 → 「シュ」 (= 真珠/宝珠/明珠/連珠)
+[[kanji]]
+char = "珠"
+default = "たま"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "シュ"
+
+# 「泥」 default 「どろ」 + prev 漢字 → 「デイ」 (= 雲泥/泥酔/泥炭/含泥)
+[[kanji]]
+char = "泥"
+default = "どろ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "デイ"
+
+# 「渦」 default 「うず」 + prev 漢字 → 「カ」 (= 渦中/旋渦/戦渦)
+[[kanji]]
+char = "渦"
+default = "うず"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "カ"
+
+# 「荷」 default 「に」 + prev 漢字 → 「カ」 (= 入荷/重荷/手荷/初荷/集荷)
+# 「出荷」 は jukugo file で対応。
+[[kanji]]
+char = "荷"
+default = "に"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "カ"
+
+# 「陰」 default 「かげ」 + prev 漢字 → 「イン」 (= 陰謀/陰険/光陰/夕陰/緑陰)
+[[kanji]]
+char = "陰"
+default = "かげ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "イン"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"

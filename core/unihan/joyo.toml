@@ -1040,7 +1040,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 泡 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 波 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 泣 は core/kanji/overrides.toml の [[kanji]] block に移行
-"泥" = "どろ"
+# 泥 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 注 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 泰 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 泳 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1079,7 +1079,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 渓 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 減 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 渡 は core/kanji/overrides.toml の [[kanji]] block に移行
-"渦" = "うず"
+# 渦 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 温 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 測 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 港 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1152,7 +1152,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 爽 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 片 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 「版」 = round 47 で kanji/overrides.toml [[kanji]] block (default = ハン) に移行
-"牙" = "きば"
+# 牙 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 牛 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 牧 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 牲 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1171,15 +1171,15 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "猫" = "ねこ"
 # 献 は core/kanji/overrides.toml の [[kanji]] block に移行
 "猶" = "なお"
-"猿" = "さる"
+# 猿 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 獄 は core/kanji/overrides.toml の [[kanji]] block に移行
-"獣" = "けもの"
+# 獣 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 獲 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 玄 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 玉 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 玩 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 珍 は core/kanji/overrides.toml の [[kanji]] block に移行
-"珠" = "たま"
+# 珠 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 現 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 球 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 理 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1320,7 +1320,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 積 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 穏 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 穫 は core/kanji/overrides.toml の [[kanji]] block に移行
-"穴" = "あな"
+# 穴 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 究 は core/kanji/overrides.toml の [[kanji]] block に移行
 "空" = "そら"
 # 突 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1540,7 +1540,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 草 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 荒 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 荘 は core/kanji/overrides.toml の [[kanji]] block に移行
-"荷" = "に"
+# 荷 は core/kanji/overrides.toml の [[kanji]] block に移行
 "菊" = "きく"
 # 菌 は core/kanji/overrides.toml の [[kanji]] block に移行
 "菓" = "カ"
@@ -1896,7 +1896,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 除 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 陥 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 陪 は core/kanji/overrides.toml の [[kanji]] block に移行
-"陰" = "かげ"
+# 陰 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 陳 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 陵 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 陶 は core/kanji/overrides.toml の [[kanji]] block に移行
