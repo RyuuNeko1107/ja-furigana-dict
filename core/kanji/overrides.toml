@@ -16063,6 +16063,58 @@ default = "むね"
 char = "証"
 default = "ショウ"
 
+# === jinmeiyou (人名用) 移行開始 ===
+
+# 「丑」 default 「うし」 (= 干支「丑」、 訓のみ実用)
+[[kanji]]
+char = "丑"
+default = "うし"
+
+# 「之」 default 「の」 (= 古語助詞「之」/名前「之介/之輔」、 訓のみ)
+[[kanji]]
+char = "之"
+default = "の"
+
+# 「亘」 default 「わたり」 (= 名前用「亘/亘理」、 訓のみ)
+[[kanji]]
+char = "亘"
+default = "わたり"
+
+# 「亙」 default 「わたり」 (= 「亘」 異体字、 訓のみ)
+[[kanji]]
+char = "亙"
+default = "わたり"
+
+# 「亦」 default 「また」 (= 副詞「亦」 = 「又」 同義、 訓のみ)
+[[kanji]]
+char = "亦"
+default = "また"
+
+# 「亨」 default 「とおる」 (= 名前用「亨/長谷川亨」、 訓のみ)
+[[kanji]]
+char = "亨"
+default = "とおる"
+
+# 「仔」 default 「こ」 (= 「仔牛/仔豚/仔犬/仔猫」 訓 + jukugo「仔細」 シ まれ)
+[[kanji]]
+char = "仔"
+default = "こ"
+
+# 「伶」 default 「レイ」 (= 伶人/伶官/伶優、 音読み)
+[[kanji]]
+char = "伶"
+default = "レイ"
+
+# 「佃」 default 「つくだ」 (= 「佃煮/佃島」 訓 + jukugo)
+[[kanji]]
+char = "佃"
+default = "つくだ"
+
+# 「俣」 default 「また」 (= 名前用「松俣/十俣」、 訓のみ)
+[[kanji]]
+char = "俣"
+default = "また"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"

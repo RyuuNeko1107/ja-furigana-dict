@@ -10,33 +10,33 @@ role = "unihan"
 description = "人名用漢字 (法務省、 子の名に使用可、 常用と重複する 128 字を除外した残り 855 字)"
 
 [entries]
-"丑" = "うし"
+# 丑 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 丞 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 乃 は core/kanji/overrides.toml の [[kanji]] block に移行
-"之" = "の"
+# 之 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 乎 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 也 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 云 は core/kanji/overrides.toml の [[kanji]] block に移行
-"亘" = "わたり"
-"亙" = "わたり"
+# 亘 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 亙 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 些 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 亥 は core/kanji/overrides.toml の [[kanji]] block に移行
-"亦" = "また"
-"亨" = "とおる"
+# 亦 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 亨 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 亮 は core/kanji/overrides.toml の [[kanji]] block に移行
-"仔" = "こ"
+# 仔 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 伊 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 伍 は core/kanji/overrides.toml の [[kanji]] block に移行
-"伶" = "レイ"
+# 伶 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 伽 は core/kanji/overrides.toml の [[kanji]] block に移行
-"佃" = "つくだ"
+# 佃 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 佑 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 侃 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 侑 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 俄 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 俐 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 俠 は core/kanji/overrides.toml の [[kanji]] block に移行
-"俣" = "また"
+# 俣 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 俱 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 倖 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 倦 は core/kanji/overrides.toml の [[kanji]] block に移行
