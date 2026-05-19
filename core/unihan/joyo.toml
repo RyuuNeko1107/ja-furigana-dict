@@ -355,21 +355,21 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 「圧」 は overrides.toml の [[kanji]] block に移行 (★round 39)
 # 在 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 地 は core/kanji/overrides.toml の [[kanji]] block に移行
-"坂" = "さか"
+# 坂 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 坊 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 坑 は core/kanji/overrides.toml の [[kanji]] block に移行
-"坪" = "つぼ"
+# 坪 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 垂 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 「型」 は overrides.toml の [[kanji]] block に移行 (★round 38)
-"垣" = "かき"
+# 垣 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 埋 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 城 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 域 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 執 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 培 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 基 は core/kanji/overrides.toml の [[kanji]] block に移行
-"埼" = "さき"
-"堀" = "ほり"
+# 埼 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 堀 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 堂 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 堅 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 堆 は core/kanji/overrides.toml の [[kanji]] block に移行

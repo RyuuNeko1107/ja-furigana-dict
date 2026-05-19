@@ -14963,6 +14963,31 @@ default = "ソウ"
 char = "圏"
 default = "ケン"
 
+# 「坂」 default 「さか」 (= 「坂/下り坂/上り坂」 訓主体、 「坂東/坂田」 名前)
+[[kanji]]
+char = "坂"
+default = "さか"
+
+# 「坪」 default 「つぼ」 (= 「坪庭/一坪/坪当たり」 単位/訓主体)
+[[kanji]]
+char = "坪"
+default = "つぼ"
+
+# 「垣」 default 「かき」 (= 「石垣/垣根/玉垣/人垣」 訓主体)
+[[kanji]]
+char = "垣"
+default = "かき"
+
+# 「埼」 default 「さき」 (= 「埼玉」 jukugo 完備、 訓「さき」 単独使用)
+[[kanji]]
+char = "埼"
+default = "さき"
+
+# 「堀」 default 「ほり」 (= 「内堀/外堀/堀」 訓主体、 「堀切/堀田」 名前)
+[[kanji]]
+char = "堀"
+default = "ほり"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"
