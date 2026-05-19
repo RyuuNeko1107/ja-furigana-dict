@@ -604,13 +604,13 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 弊 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 式 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 弐 は core/kanji/overrides.toml の [[kanji]] block に移行
-"弓" = "ゆみ"
+# 弓 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 弔 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 引 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 弟 は core/kanji/overrides.toml の [[kanji]] block に移行
-"弥" = "や"
+# 弥 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 弦 は core/kanji/overrides.toml の [[kanji]] block に移行
-"弧" = "コ"
+# 弧 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 「弱」 は overrides.toml の [[kanji]] block に移行 (★round 39)
 # 張 は core/kanji/overrides.toml の [[kanji]] block に移行
 # "弾" は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -622,7 +622,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 彰 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 影 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 役 は core/kanji/overrides.toml の [[kanji]] block に移行
-"彼" = "かれ"
+# 彼 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 往 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 征 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 径 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -636,7 +636,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 復 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 循 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 微 は core/kanji/overrides.toml の [[kanji]] block に移行
-"徳" = "トク"
+# 徳 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 徴 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 徹 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 必 は core/kanji/overrides.toml の [[kanji]] block に移行

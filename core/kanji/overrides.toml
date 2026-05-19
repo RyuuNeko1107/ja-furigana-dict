@@ -15113,6 +15113,31 @@ default = "ロウ"
 char = "廷"
 default = "テイ"
 
+# 「弓」 default 「ゆみ」 (= 「弓/弓矢/弓道」 訓主体。 ※ 過去 revert 経緯あり「弓三人」 問題、 default 維持)
+[[kanji]]
+char = "弓"
+default = "ゆみ"
+
+# 「弥」 default 「や」 (= 名前用「弥/弥生」 訓主体、 「弥栄」 まれ)
+[[kanji]]
+char = "弥"
+default = "や"
+
+# 「弧」 default 「コ」 (= 円弧/括弧/弧線/弧度、 音読み)
+[[kanji]]
+char = "弧"
+default = "コ"
+
+# 「彼」 default 「かれ」 (= 「彼/彼女/彼ら/彼此」 訓主体)
+[[kanji]]
+char = "彼"
+default = "かれ"
+
+# 「徳」 default 「トク」 (= 道徳/美徳/不徳/徳川/徳望、 音読み)
+[[kanji]]
+char = "徳"
+default = "トク"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"
