@@ -1219,7 +1219,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 疾 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 病 は core/kanji/overrides.toml の [[kanji]] block に移行
 "症" = "ショウ"
-"痕" = "あと"
+# 痕 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 痘 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 痛 は core/kanji/overrides.toml の [[kanji]] block に移行
 "痢" = "リ"
@@ -1235,7 +1235,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "百" = "ヒャク"
 "皆" = "みな"
 # 皇 は core/kanji/overrides.toml の [[kanji]] block に移行
-"皮" = "かわ"
+# 皮 は core/kanji/overrides.toml の [[kanji]] block に移行
 "皿" = "さら"
 # 盆 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 益 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1247,7 +1247,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 盲 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 直 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 相 は core/kanji/overrides.toml の [[kanji]] block に移行
-"盾" = "たて"
+# 盾 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 省 は core/kanji/overrides.toml の [[kanji]] block に移行
 "眉" = "まゆ"
 # 看 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1263,7 +1263,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 瞬 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 瞭 は core/kanji/overrides.toml の [[kanji]] block に移行
 "瞳" = "ひとみ"
-"矛" = "ほこ"
+# 矛 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 矢 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 知 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 矯 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1334,7 +1334,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 竜 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 章 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 童 は core/kanji/overrides.toml の [[kanji]] block に移行
-"端" = "はし"
+# 端 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 競 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 竹 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 笛 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1359,10 +1359,10 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 簡 は core/kanji/overrides.toml の [[kanji]] block に移行
 "簿" = "ボ"
 # 籍 は core/kanji/overrides.toml の [[kanji]] block に移行
-"籠" = "かご"
+# 籠 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 粉 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 粋 は core/kanji/overrides.toml の [[kanji]] block に移行
-"粒" = "つぶ"
+# 粒 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 粗 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 粘 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 粛 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1416,7 +1416,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 練 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 緻 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 縁 は core/kanji/overrides.toml の [[kanji]] block に移行
-"縄" = "なわ"
+# 縄 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 縛 は core/kanji/overrides.toml の [[kanji]] block に移行
 "縦" = "たて"
 # 縫 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1584,7 +1584,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 血 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 衆 は core/kanji/overrides.toml の [[kanji]] block に移行
 # "術" は core/kanji/overrides.toml の [[kanji]] block に移行
-"街" = "まち"
+# 街 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 衛 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 衝 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 衡 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1688,7 +1688,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 谷 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 豆 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 豊 は core/kanji/overrides.toml の [[kanji]] block に移行
-"豚" = "ぶた"
+# 豚 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 象 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 豪 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 貌 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1975,7 +1975,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 "餌" = "え"
 # 餓 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 館 は core/kanji/overrides.toml の [[kanji]] block に移行 (★round 49)
-"首" = "くび"
+# 首 は core/kanji/overrides.toml の [[kanji]] block に移行
 "香" = "コウ"
 # 馬 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 駄 は core/kanji/overrides.toml の [[kanji]] block に移行

@@ -14292,6 +14292,105 @@ default = "ほど"
 prev_char_type = "漢字"
 reading = "テイ"
 
+# 「端」 default 「はし」 + prev 漢字 → 「タン」 (= 端午/極端/末端/先端/異端)
+[[kanji]]
+char = "端"
+default = "はし"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "タン"
+
+# 「粒」 default 「つぶ」 + prev 漢字 → 「リュウ」 (= 粒子/顆粒/微粒/麦粒/砂粒)
+[[kanji]]
+char = "粒"
+default = "つぶ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "リュウ"
+
+# 「籠」 default 「かご」 + prev 漢字 → 「ロウ」 (= 籠球/灯籠/印籠/参籠)
+[[kanji]]
+char = "籠"
+default = "かご"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ロウ"
+
+# 「街」 default 「まち」 + prev 漢字 → 「ガイ」 (= 街頭/商店街/市街/街道/繁華街)
+[[kanji]]
+char = "街"
+default = "まち"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ガイ"
+
+# 「首」 default 「くび」 + prev 漢字 → 「シュ」 (= 首相/首脳/部首/船首/機首/元首)
+[[kanji]]
+char = "首"
+default = "くび"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "シュ"
+
+# 「豚」 default 「ぶた」 + prev 漢字 → 「トン」 (= 養豚/豚肉/豚舎/種豚)
+[[kanji]]
+char = "豚"
+default = "ぶた"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "トン"
+
+# 「縄」 default 「なわ」 + prev 漢字 → 「ジョウ」 (= 縄文/帆縄/結縄/捕縄)
+[[kanji]]
+char = "縄"
+default = "なわ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ジョウ"
+
+# 「痕」 default 「あと」 + prev 漢字 → 「コン」 (= 痕跡/血痕/弾痕/傷痕/爪痕)
+[[kanji]]
+char = "痕"
+default = "あと"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "コン"
+
+# 「皮」 default 「かわ」 + prev 漢字 → 「ヒ」 (= 皮膚/外皮/果皮/獣皮/樹皮/真皮)
+[[kanji]]
+char = "皮"
+default = "かわ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ヒ"
+
+# 「矛」 default 「ほこ」 + prev 漢字 → 「ム」 (= 矛盾/戈矛)
+[[kanji]]
+char = "矛"
+default = "ほこ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ム"
+
+# 「盾」 default 「たて」 + prev 漢字 → 「ジュン」 (= 矛盾/後盾)
+[[kanji]]
+char = "盾"
+default = "たて"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ジュン"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"
