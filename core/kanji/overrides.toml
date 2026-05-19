@@ -16505,6 +16505,106 @@ default = "ひのき"
 char = "桶"
 default = "おけ"
 
+# 「梓」 default 「あずさ」 (= 「梓/梓弓」 訓 + 名前)
+[[kanji]]
+char = "梓"
+default = "あずさ"
+
+# 「梛」 default 「なぎ」 (= 「梛/梛木」 訓のみ)
+[[kanji]]
+char = "梛"
+default = "なぎ"
+
+# 「梢」 default 「こずえ」 (= 「梢/木の梢」 訓のみ)
+[[kanji]]
+char = "梢"
+default = "こずえ"
+
+# 「梯」 default 「はしご」 (= 「梯/梯子/梯団」 訓 + jukugo)
+[[kanji]]
+char = "梯"
+default = "はしご"
+
+# 「梶」 default 「かじ」 (= 「梶/梶棒/梶原」 訓 + 名前)
+[[kanji]]
+char = "梶"
+default = "かじ"
+
+# 「椋」 default 「むく」 (= 「椋鳥/椋木」 訓 + 名前)
+[[kanji]]
+char = "椋"
+default = "むく"
+
+# 「椛」 default 「かば」 (= 「椛」 訓のみ、 国字)
+[[kanji]]
+char = "椛"
+default = "かば"
+
+# 「椰」 default 「やし」 (= 「椰子」 訓主体)
+[[kanji]]
+char = "椰"
+default = "やし"
+
+# 「椿」 default 「つばき」 (= 「椿/寒椿/藪椿」 訓主体)
+[[kanji]]
+char = "椿"
+default = "つばき"
+
+# 「楊」 default 「やなぎ」 (= 「楊/楊柳/楊枝」 訓主体)
+[[kanji]]
+char = "楊"
+default = "やなぎ"
+
+# 「楓」 default 「かえで」 (= 「楓/紅葉楓」 訓主体)
+[[kanji]]
+char = "楓"
+default = "かえで"
+
+# 「楕」 default 「ダ」 (= 楕円のみ実用、 音読み)
+[[kanji]]
+char = "楕"
+default = "ダ"
+
+# 「楢」 default 「なら」 (= 「楢/楢山/小楢」 訓のみ)
+[[kanji]]
+char = "楢"
+default = "なら"
+
+# 「楯」 default 「たて」 (= 「楯/楯突く」 訓主体、 「盾」 同字異形)
+[[kanji]]
+char = "楯"
+default = "たて"
+
+# 「榊」 default 「さかき」 (= 「榊/榊原」 訓 + 名前、 国字)
+[[kanji]]
+char = "榊"
+default = "さかき"
+
+# 「榎」 default 「えのき」 (= 「榎/榎本」 訓 + 名前)
+[[kanji]]
+char = "榎"
+default = "えのき"
+
+# 「槌」 default 「つち」 (= 「槌/木槌/鉄槌/相槌」 訓主体)
+[[kanji]]
+char = "槌"
+default = "つち"
+
+# 「槍」 default 「やり」 (= 「槍/槍投げ/槍術」 訓主体)
+[[kanji]]
+char = "槍"
+default = "やり"
+
+# 「槙」 default 「まき」 (= 「槙/真槙」 訓主体 + 名前)
+[[kanji]]
+char = "槙"
+default = "まき"
+
+# 「槻」 default 「つき」 (= 「槻/槻木」 訓主体 + 名前)
+[[kanji]]
+char = "槻"
+default = "つき"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"
