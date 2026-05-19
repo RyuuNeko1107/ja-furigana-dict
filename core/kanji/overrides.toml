@@ -15788,6 +15788,31 @@ default = "ジャ"
 char = "郊"
 default = "コウ"
 
+# 「郎」 default 「ロウ」 (= 太郎/次郎/新郎/野郎/郎党、 音読み + 名前)
+[[kanji]]
+char = "郎"
+default = "ロウ"
+
+# 「郵」 default 「ユウ」 (= 郵便/郵送/郵政/郵券、 音読み)
+[[kanji]]
+char = "郵"
+default = "ユウ"
+
+# 「酎」 default 「チュウ」 (= 焼酎/酎杯、 音読み)
+[[kanji]]
+char = "酎"
+default = "チュウ"
+
+# 「酵」 default 「コウ」 (= 酵素/酵母/醗酵/発酵、 音読み)
+[[kanji]]
+char = "酵"
+default = "コウ"
+
+# 「釜」 default 「かま」 (= 「釜/釜飯/茶釜/電気釜」 訓主体)
+[[kanji]]
+char = "釜"
+default = "かま"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"

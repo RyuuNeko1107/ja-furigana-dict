@@ -1817,22 +1817,22 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 邪 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 邸 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 郊 は core/kanji/overrides.toml の [[kanji]] block に移行
-"郎" = "ロウ"
+# 郎 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 郡 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 部 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 郭 は core/kanji/overrides.toml の [[kanji]] block に移行
-"郵" = "ユウ"
+# 郵 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 郷 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 都 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 酌 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 配 は core/kanji/overrides.toml の [[kanji]] block に移行
-"酎" = "チュウ"
+# 酎 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 酒 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 酔 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 酢 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 酪 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 酬 は core/kanji/overrides.toml の [[kanji]] block に移行
-"酵" = "コウ"
+# 酵 は core/kanji/overrides.toml の [[kanji]] block に移行
 # "酷" は core/kanji/overrides.toml の [[kanji]] block に移行
 # 酸 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 醒 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1843,7 +1843,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 里 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 野 は core/kanji/overrides.toml の [[kanji]] block に移行
 # "量" は core/kanji/overrides.toml の [[kanji]] block に移行
-"釜" = "かま"
+# 釜 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 針 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 釣 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 鈍 は core/kanji/overrides.toml の [[kanji]] block に移行
