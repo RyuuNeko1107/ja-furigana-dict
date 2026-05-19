@@ -15738,6 +15738,31 @@ default = "だれ"
 char = "謎"
 default = "なぞ"
 
+# 「講」 default 「コウ」 (= 講義/講演/講師/受講/講座、 音読み)
+[[kanji]]
+char = "講"
+default = "コウ"
+
+# 「譜」 default 「フ」 (= 楽譜/系譜/年譜/譜面/家譜、 音読み)
+[[kanji]]
+char = "譜"
+default = "フ"
+
+# 「貝」 default 「かい」 (= 「貝/貝塚/巻貝/巻貝/二枚貝」 訓主体)
+[[kanji]]
+char = "貝"
+default = "かい"
+
+# 「踪」 default 「ソウ」 (= ほぼ「失踪/踪跡」 のみ、 音読み)
+[[kanji]]
+char = "踪"
+default = "ソウ"
+
+# 「軸」 default 「じく」 (= 「軸/車軸/地軸/主軸/軸足」 訓主体)
+[[kanji]]
+char = "軸"
+default = "じく"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"

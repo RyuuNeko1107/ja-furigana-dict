@@ -1675,12 +1675,12 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 謄 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 謎 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 謙 は core/kanji/overrides.toml の [[kanji]] block に移行
-"講" = "コウ"
+# 講 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 謝 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 謡 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 謹 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 識 は core/kanji/overrides.toml の [[kanji]] block に移行
-"譜" = "フ"
+# 譜 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 警 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 議 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 譲 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1692,7 +1692,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 象 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 豪 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 貌 は core/kanji/overrides.toml の [[kanji]] block に移行
-"貝" = "かい"
+# 貝 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 貞 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 負 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 財 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1741,7 +1741,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 践 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 踊 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 踏 は core/kanji/overrides.toml の [[kanji]] block に移行
-"踪" = "ソウ"
+# 踪 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 蹴 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 躍 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 身 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1750,7 +1750,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 軒 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 軟 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 転 は core/kanji/overrides.toml の [[kanji]] block に移行
-"軸" = "じく"
+# 軸 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 軽 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 較 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 載 は core/kanji/overrides.toml の [[kanji]] block に移行
