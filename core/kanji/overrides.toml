@@ -14888,6 +14888,31 @@ default = "わずか"
 char = "僚"
 default = "リョウ"
 
+# 「僧」 default 「ソウ」 (= 高僧/僧侶/禅僧/尼僧/小僧、 音読み圧倒的)
+[[kanji]]
+char = "僧"
+default = "ソウ"
+
+# 「儒」 default 「ジュ」 (= 儒学/儒教/儒者/儒家、 ほぼ音読みのみ)
+[[kanji]]
+char = "儒"
+default = "ジュ"
+
+# 「八」 default 「ハチ」 (= 数詞、 jukugo「八月/八日/八方」 完備、 訓「やつ」 okurigana)
+[[kanji]]
+char = "八"
+default = "ハチ"
+
+# 「六」 default 「ロク」 (= 数詞、 jukugo「六月/六日/六甲」 完備、 訓「むつ」 okurigana)
+[[kanji]]
+char = "六"
+default = "ロク"
+
+# 「冗」 default 「ジョウ」 (= 冗談/冗長/冗費/冗員、 ほぼ音読みのみ)
+[[kanji]]
+char = "冗"
+default = "ジョウ"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"

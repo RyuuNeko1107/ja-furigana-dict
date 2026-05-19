@@ -138,10 +138,10 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 働 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 像 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 僚 は core/kanji/overrides.toml の [[kanji]] block に移行
-"僧" = "ソウ"
+# 僧 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 儀 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 億 は core/kanji/overrides.toml の [[kanji]] block に移行
-"儒" = "ジュ"
+# 儒 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 償 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 優 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 元 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -154,9 +154,9 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 免 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 児 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 党 は core/kanji/overrides.toml の [[kanji]] block に移行
-"八" = "ハチ"
+# 八 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 公 は core/kanji/overrides.toml の [[kanji]] block に移行
-"六" = "ロク"
+# 六 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 共 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 兵 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 具 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -166,7 +166,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 冊 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 再 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 冒 は core/kanji/overrides.toml の [[kanji]] block に移行
-"冗" = "ジョウ"
+# 冗 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 写 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 冠 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 冥 は core/kanji/overrides.toml の [[kanji]] block に移行
