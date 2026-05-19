@@ -15238,6 +15238,31 @@ default = "かぶ"
 char = "桁"
 default = "けた"
 
+# 「梨」 default 「なし」 (= 「梨/梨園/二十世紀梨」 訓主体)
+[[kanji]]
+char = "梨"
+default = "なし"
+
+# 「棒」 default 「ボウ」 (= 棍棒/泥棒/相棒/鉄棒/麺棒、 音読み)
+[[kanji]]
+char = "棒"
+default = "ボウ"
+
+# 「棚」 default 「たな」 (= 「棚/棚田/書棚/網棚/神棚」 訓主体)
+[[kanji]]
+char = "棚"
+default = "たな"
+
+# 「椅」 default 「イ」 (= ほぼ「椅子」 のみ実用)
+[[kanji]]
+char = "椅"
+default = "イ"
+
+# 「検」 default 「ケン」 (= 検査/検出/検討/検事/点検、 音読み)
+[[kanji]]
+char = "検"
+default = "ケン"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"

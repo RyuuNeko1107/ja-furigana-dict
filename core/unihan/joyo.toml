@@ -946,19 +946,19 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 桟 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 梅 は core/kanji/overrides.toml の [[kanji]] block に移行
 "梗" = "コウ"
-"梨" = "なし"
+# 梨 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 械 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 棄 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 棋 は core/kanji/overrides.toml の [[kanji]] block に移行
-"棒" = "ボウ"
-"棚" = "たな"
+# 棒 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 棚 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 棟 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 森 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 棺 は core/kanji/overrides.toml の [[kanji]] block に移行
-"椅" = "イ"
+# 椅 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 植 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 椎 は core/kanji/overrides.toml の [[kanji]] block に移行
-"検" = "ケン"
+# 検 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 業 は core/kanji/overrides.toml の [[kanji]] block に移行 (★round 49)
 # 極 は core/kanji/overrides.toml の [[kanji]] block に移行
 "楷" = "カイ"
