@@ -14988,6 +14988,31 @@ default = "さき"
 char = "堀"
 default = "ほり"
 
+# 「塀」 default 「ヘイ」 (= 板塀/土塀/塀越し、 音読み主体)
+[[kanji]]
+char = "塀"
+default = "ヘイ"
+
+# 「塔」 default 「トウ」 (= 五重塔/管制塔/尖塔/鉄塔、 音読み主体)
+[[kanji]]
+char = "塔"
+default = "トウ"
+
+# 「塚」 default 「つか」 (= 「貝塚/塚」 訓主体、 「塚原/塚本」 名前)
+[[kanji]]
+char = "塚"
+default = "つか"
+
+# 「塾」 default 「ジュク」 (= 学習塾/塾生/塾頭/私塾、 音読みのみ)
+[[kanji]]
+char = "塾"
+default = "ジュク"
+
+# 「壇」 default 「ダン」 (= 仏壇/演壇/花壇/文壇/教壇、 音読みのみ)
+[[kanji]]
+char = "壇"
+default = "ダン"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"

@@ -378,17 +378,17 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 堪 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 報 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 場 は core/kanji/overrides.toml の [[kanji]] block に移行 (★round 49)
-"塀" = "ヘイ"
+# 塀 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 塁 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 塊 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 塑 は core/kanji/overrides.toml の [[kanji]] block に移行
-"塔" = "トウ"
+# 塔 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 塗 は core/kanji/overrides.toml の [[kanji]] block に移行
-"塚" = "つか"
+# 塚 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 塞 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 塩 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 填 は core/kanji/overrides.toml の [[kanji]] block に移行
-"塾" = "ジュク"
+# 塾 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 境 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 墓 は core/kanji/overrides.toml の [[kanji]] block に移行
 # "増" は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -397,7 +397,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 墳 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 墾 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 壁 は core/kanji/overrides.toml の [[kanji]] block に移行
-"壇" = "ダン"
+# 壇 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 壊 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 壌 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 士 は core/kanji/overrides.toml の [[kanji]] block に移行
