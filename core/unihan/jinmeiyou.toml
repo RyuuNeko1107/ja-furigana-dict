@@ -486,59 +486,59 @@ description = "人名用漢字 (法務省、 子の名に使用可、 常用と�
 # 菩 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 菫 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 菱 は core/kanji/overrides.toml の [[kanji]] block に移行
-"萄" = "ドウ"
-"萊" = "ライ"
+# 萄 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 萊 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 萌 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 萠 は core/kanji/overrides.toml の [[kanji]] block に移行
-"萩" = "はぎ"
-"萱" = "かや"
-"葡" = "ブ"
+# 萩 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 萱 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 葡 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 董 は core/kanji/overrides.toml の [[kanji]] block に移行
-"葦" = "あし"
-"葵" = "あおい"
+# 葦 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 葵 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 葺 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 蒐 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 蒔 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 蒙 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 蒲 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 蒼 は core/kanji/overrides.toml の [[kanji]] block に移行
-"蓉" = "ヨウ"
-"蓑" = "みの"
-"蓬" = "よもぎ"
-"蓮" = "はす"
-"蔓" = "つる"
-"蔣" = "ショウ"
-"蔦" = "つた"
-"蔭" = "かげ"
+# 蓉 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 蓑 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 蓬 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 蓮 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 蔓 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 蔣 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 蔦 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 蔭 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 蕃 は core/kanji/overrides.toml の [[kanji]] block に移行
-"蕉" = "ショウ"
-"蕎" = "キョウ"
-"蕗" = "ふき"
-"蕨" = "わらび"
-"蕪" = "かぶら"
-"蕾" = "つぼみ"
-"薗" = "エン"
-"薙" = "なぎ"
-"薩" = "サツ"
-"藁" = "わら"
+# 蕉 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 蕎 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 蕗 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 蕨 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 蕪 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 蕾 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 薗 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 薙 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 薩 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 藁 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 蘇 は core/kanji/overrides.toml の [[kanji]] block に移行
-"蘭" = "らん"
-"蝦" = "えび"
-"蝶" = "ちょう"
+# 蘭 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 蝦 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 蝶 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 螺 は core/kanji/overrides.toml の [[kanji]] block に移行
-"蟬" = "せみ"
-"蟹" = "かに"
-"蠟" = "ロウ"
-"衿" = "えり"
-"袈" = "ケ"
-"袴" = "はかま"
-"裟" = "サ"
+# 蟬 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 蟹 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 蠟 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 衿 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 袈 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 袴 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 裟 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 裡 は core/kanji/overrides.toml の [[kanji]] block に移行
-"裳" = "ショウ"
+# 裳 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 襖 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 訊 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 訣 は core/kanji/overrides.toml の [[kanji]] block に移行
-"註" = "チュウ"
+# 註 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 詢 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 詫 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 誼 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -548,24 +548,24 @@ description = "人名用漢字 (法務省、 子の名に使用可、 常用と�
 # 諺 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 謂 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 讃 は core/kanji/overrides.toml の [[kanji]] block に移行
-"豹" = "ひょう"
+# 豹 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 貰 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 賑 は core/kanji/overrides.toml の [[kanji]] block に移行
-"赳" = "キュウ"
+# 赳 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 跨 は core/kanji/overrides.toml の [[kanji]] block に移行
-"蹄" = "ひづめ"
+# 蹄 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 蹟 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 輔 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 輯 は core/kanji/overrides.toml の [[kanji]] block に移行
-"輿" = "こし"
+# 輿 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 轟 は core/kanji/overrides.toml の [[kanji]] block に移行
-"辰" = "たつ"
-"辻" = "つじ"
+# 辰 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 辻 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 辿 は core/kanji/overrides.toml の [[kanji]] block に移行
-"迂" = "ウ"
-"迄" = "まで"
-"迦" = "カ"
-"迪" = "みち"
+# 迂 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 迄 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 迦 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 迪 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 逗 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 這 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 逞 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -573,79 +573,79 @@ description = "人名用漢字 (法務省、 子の名に使用可、 常用と�
 # 遁 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 遥 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 遼 は core/kanji/overrides.toml の [[kanji]] block に移行
-"邑" = "むら"
-"郁" = "イク"
-"鄭" = "テイ"
-"酉" = "とり"
-"醇" = "ジュン"
-"醍" = "ダイ"
-"醐" = "ゴ"
+# 邑 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 郁 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 鄭 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 酉 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 醇 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 醍 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 醐 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 醬 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 釉 は core/kanji/overrides.toml の [[kanji]] block に移行
-"釘" = "くぎ"
-"釧" = "くしろ"
+# 釘 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 釧 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 鋒 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 鋸 は core/kanji/overrides.toml の [[kanji]] block に移行
-"錆" = "さび"
-"錐" = "きり"
-"錫" = "すず"
-"鍬" = "くわ"
-"鎧" = "よろい"
+# 錆 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 錐 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 錫 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 鍬 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 鎧 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 閃 は core/kanji/overrides.toml の [[kanji]] block に移行
-"閏" = "うるう"
+# 閏 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 閤 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 阿 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 陀 は core/kanji/overrides.toml の [[kanji]] block に移行
-"隈" = "くま"
+# 隈 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 隼 は core/kanji/overrides.toml の [[kanji]] block に移行
-"雀" = "すずめ"
-"雁" = "かり"
+# 雀 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 雁 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 雛 は core/kanji/overrides.toml の [[kanji]] block に移行
-"雫" = "しずく"
-"霞" = "かすみ"
-"靖" = "やす"
-"鞄" = "かばん"
-"鞍" = "くら"
-"鞘" = "さや"
-"鞠" = "まり"
+# 雫 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 霞 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 靖 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 鞄 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 鞍 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 鞘 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 鞠 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 鞭 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 頁 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 頌 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 頗 は core/kanji/overrides.toml の [[kanji]] block に移行
-"頰" = "ほお"
+# 頰 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 顛 は core/kanji/overrides.toml の [[kanji]] block に移行
-"颯" = "サツ"
+# 颯 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 饗 は core/kanji/overrides.toml の [[kanji]] block に移行
-"馨" = "かおり"
+# 馨 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 馳 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 馴 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 駈 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 駕 は core/kanji/overrides.toml の [[kanji]] block に移行
-"駿" = "シュン"
-"驍" = "たけし"
+# 駿 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 驍 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 魁 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 魯 は core/kanji/overrides.toml の [[kanji]] block に移行
-"鮎" = "あゆ"
-"鯉" = "こい"
-"鯛" = "たい"
-"鰯" = "いわし"
-"鱒" = "ます"
-"鱗" = "うろこ"
+# 鮎 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 鯉 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 鯛 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 鰯 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 鱒 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 鱗 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 鳩 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 鳳 は core/kanji/overrides.toml の [[kanji]] block に移行
-"鳶" = "とび"
-"鴨" = "かも"
+# 鳶 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 鴨 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 鴻 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 鵜 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 鵬 は core/kanji/overrides.toml の [[kanji]] block に移行
-"鷗" = "かもめ"
-"鷲" = "わし"
+# 鷗 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 鷲 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 鷹 は core/kanji/overrides.toml の [[kanji]] block に移行
-"鷺" = "さぎ"
-"麒" = "キ"
-"麟" = "リン"
-"麿" = "まろ"
+# 鷺 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 麒 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 麟 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 麿 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 黎 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 黛 は core/kanji/overrides.toml の [[kanji]] block に移行
-"鼎" = "かなえ"
+# 鼎 は core/kanji/overrides.toml の [[kanji]] block に移行
 # "龍" は core/kanji/overrides.toml の [[kanji]] block に移行

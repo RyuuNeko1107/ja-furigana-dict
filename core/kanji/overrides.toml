@@ -17180,6 +17180,468 @@ default = "すみれ"
 char = "菱"
 default = "ひし"
 
+# === jinmeiyou 残り 92 字 final batch (= 名前/植物/動物中心、 default 訓 or 音 維持) ===
+
+[[kanji]]
+char = "萄"
+default = "ドウ"
+# 葡萄のみ
+
+[[kanji]]
+char = "萊"
+default = "ライ"
+# 蓬萊のみ
+
+[[kanji]]
+char = "萩"
+default = "はぎ"
+# 萩 訓 + 名前
+
+[[kanji]]
+char = "萱"
+default = "かや"
+# 萱 訓 + 名前
+
+[[kanji]]
+char = "葡"
+default = "ブ"
+# 葡萄のみ
+
+[[kanji]]
+char = "葦"
+default = "あし"
+# 葦 訓 + 名前
+
+[[kanji]]
+char = "葵"
+default = "あおい"
+# 葵 訓 + 名前
+
+[[kanji]]
+char = "蓉"
+default = "ヨウ"
+# 芙蓉のみ
+
+[[kanji]]
+char = "蓑"
+default = "みの"
+# 蓑 訓のみ
+
+[[kanji]]
+char = "蓬"
+default = "よもぎ"
+# 蓬 訓主体
+
+[[kanji]]
+char = "蓮"
+default = "はす"
+# 蓮 訓 + 名前
+
+[[kanji]]
+char = "蔓"
+default = "つる"
+# 蔓 訓主体
+
+[[kanji]]
+char = "蔣"
+default = "ショウ"
+# 蔣 中国姓
+
+[[kanji]]
+char = "蔦"
+default = "つた"
+# 蔦 訓主体
+
+[[kanji]]
+char = "蔭"
+default = "かげ"
+# 蔭 訓 + 「お蔭」
+
+[[kanji]]
+char = "蕉"
+default = "ショウ"
+# 芭蕉/蕉風
+
+[[kanji]]
+char = "蕎"
+default = "キョウ"
+# 蕎麦のみ
+
+[[kanji]]
+char = "蕗"
+default = "ふき"
+# 蕗 訓主体
+
+[[kanji]]
+char = "蕨"
+default = "わらび"
+# 蕨 訓のみ
+
+[[kanji]]
+char = "蕪"
+default = "かぶら"
+# 蕪 訓 + 「荒蕪」
+
+[[kanji]]
+char = "蕾"
+default = "つぼみ"
+# 蕾 訓のみ
+
+[[kanji]]
+char = "薗"
+default = "エン"
+# 「園」 異体字 + 名前
+
+[[kanji]]
+char = "薙"
+default = "なぎ"
+# 薙刀 + 動詞「薙ぐ」
+
+[[kanji]]
+char = "薩"
+default = "サツ"
+# 薩摩/菩薩
+
+[[kanji]]
+char = "藁"
+default = "わら"
+# 藁 訓主体
+
+[[kanji]]
+char = "蘭"
+default = "らん"
+# 蘭 訓 + 「和蘭」
+
+[[kanji]]
+char = "蝦"
+default = "えび"
+# 蝦 訓 + 「蝦夷」
+
+[[kanji]]
+char = "蝶"
+default = "ちょう"
+# 蝶 訓 + 「蝶々」
+
+[[kanji]]
+char = "蟬"
+default = "せみ"
+# 蟬 訓のみ
+
+[[kanji]]
+char = "蟹"
+default = "かに"
+# 蟹 訓主体
+
+[[kanji]]
+char = "蠟"
+default = "ロウ"
+# 蜜蠟/蠟燭
+
+[[kanji]]
+char = "衿"
+default = "えり"
+# 「襟」 異体字
+
+[[kanji]]
+char = "袈"
+default = "ケ"
+# 袈裟のみ
+
+[[kanji]]
+char = "袴"
+default = "はかま"
+# 袴 訓 + 「紋付袴」
+
+[[kanji]]
+char = "裟"
+default = "サ"
+# 袈裟のみ
+
+[[kanji]]
+char = "裳"
+default = "ショウ"
+# 衣裳
+
+[[kanji]]
+char = "註"
+default = "チュウ"
+# 註釈/註解
+
+[[kanji]]
+char = "豹"
+default = "ひょう"
+# 豹 訓・音同音
+
+[[kanji]]
+char = "赳"
+default = "キュウ"
+# 赳赳のみ + 名前
+
+[[kanji]]
+char = "蹄"
+default = "ひづめ"
+# 蹄 訓主体
+
+[[kanji]]
+char = "輿"
+default = "こし"
+# 輿 訓 + 「神輿」
+
+[[kanji]]
+char = "辰"
+default = "たつ"
+# 干支「辰」
+
+[[kanji]]
+char = "辻"
+default = "つじ"
+# 辻 訓 + 名前
+
+[[kanji]]
+char = "迂"
+default = "ウ"
+# 迂回/迂闊
+
+[[kanji]]
+char = "迄"
+default = "まで"
+# 迄 助詞のみ
+
+[[kanji]]
+char = "迦"
+default = "カ"
+# 釈迦/迦葉
+
+[[kanji]]
+char = "迪"
+default = "みち"
+# 迪 名前用
+
+[[kanji]]
+char = "邑"
+default = "むら"
+# 邑 古語訓のみ
+
+[[kanji]]
+char = "郁"
+default = "イク"
+# 馥郁/名前
+
+[[kanji]]
+char = "鄭"
+default = "テイ"
+# 鄭重/鄭氏
+
+[[kanji]]
+char = "酉"
+default = "とり"
+# 干支「酉」
+
+[[kanji]]
+char = "醇"
+default = "ジュン"
+# 醇厚/芳醇
+
+[[kanji]]
+char = "醍"
+default = "ダイ"
+# 醍醐のみ
+
+[[kanji]]
+char = "醐"
+default = "ゴ"
+# 醍醐のみ
+
+[[kanji]]
+char = "釘"
+default = "くぎ"
+# 釘 訓主体
+
+[[kanji]]
+char = "釧"
+default = "くしろ"
+# 釧 訓 + 釧路
+
+[[kanji]]
+char = "錆"
+default = "さび"
+# 錆 訓・音同音
+
+[[kanji]]
+char = "錐"
+default = "きり"
+# 錐 訓 + 「円錐」
+
+[[kanji]]
+char = "錫"
+default = "すず"
+# 錫 訓 + 「錫杖」
+
+[[kanji]]
+char = "鍬"
+default = "くわ"
+# 鍬 訓のみ
+
+[[kanji]]
+char = "鎧"
+default = "よろい"
+# 鎧 訓主体
+
+[[kanji]]
+char = "閏"
+default = "うるう"
+# 閏年/閏月
+
+[[kanji]]
+char = "隈"
+default = "くま"
+# 隈 訓 + 名前
+
+[[kanji]]
+char = "雀"
+default = "すずめ"
+# 雀 訓主体
+
+[[kanji]]
+char = "雁"
+default = "かり"
+# 雁 訓主体
+
+[[kanji]]
+char = "雫"
+default = "しずく"
+# 雫 訓のみ、 国字
+
+[[kanji]]
+char = "霞"
+default = "かすみ"
+# 霞 訓 + 名前
+
+[[kanji]]
+char = "靖"
+default = "やす"
+# 靖 名前 + 「靖国」
+
+[[kanji]]
+char = "鞄"
+default = "かばん"
+# 鞄 訓のみ実用
+
+[[kanji]]
+char = "鞍"
+default = "くら"
+# 鞍 訓 + 「鞍馬」
+
+[[kanji]]
+char = "鞘"
+default = "さや"
+# 鞘 訓主体
+
+[[kanji]]
+char = "鞠"
+default = "まり"
+# 鞠 訓 + 「蹴鞠」
+
+[[kanji]]
+char = "頰"
+default = "ほお"
+# 「頬」 異体字
+
+[[kanji]]
+char = "颯"
+default = "サツ"
+# 颯爽/名前
+
+[[kanji]]
+char = "馨"
+default = "かおり"
+# 馨 訓 + 名前
+
+[[kanji]]
+char = "駿"
+default = "シュン"
+# 駿馬/駿才/名前
+
+[[kanji]]
+char = "驍"
+default = "たけし"
+# 驍 名前用
+
+[[kanji]]
+char = "鮎"
+default = "あゆ"
+# 鮎 訓主体
+
+[[kanji]]
+char = "鯉"
+default = "こい"
+# 鯉 訓主体
+
+[[kanji]]
+char = "鯛"
+default = "たい"
+# 鯛 訓主体
+
+[[kanji]]
+char = "鰯"
+default = "いわし"
+# 鰯 訓のみ、 国字
+
+[[kanji]]
+char = "鱒"
+default = "ます"
+# 鱒 訓のみ
+
+[[kanji]]
+char = "鱗"
+default = "うろこ"
+# 鱗 訓主体
+
+[[kanji]]
+char = "鳶"
+default = "とび"
+# 鳶 訓主体 + 名前
+
+[[kanji]]
+char = "鴨"
+default = "かも"
+# 鴨 訓主体 + 名前
+
+[[kanji]]
+char = "鷗"
+default = "かもめ"
+# 鷗 訓主体
+
+[[kanji]]
+char = "鷲"
+default = "わし"
+# 鷲 訓主体
+
+[[kanji]]
+char = "鷺"
+default = "さぎ"
+# 鷺 訓主体
+
+[[kanji]]
+char = "麒"
+default = "キ"
+# 麒麟のみ
+
+[[kanji]]
+char = "麟"
+default = "リン"
+# 麒麟のみ
+
+[[kanji]]
+char = "麿"
+default = "まろ"
+# 麿 名前用、 国字
+
+[[kanji]]
+char = "鼎"
+default = "かなえ"
+# 鼎 訓 + 「鼎談」
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"
