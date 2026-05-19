@@ -14812,6 +14812,32 @@ default = "いね"
 prev_char_type = "漢字"
 reading = "トウ"
 
+# 「三」 default 「サン」 (= 数詞、 jukugo「三日/三月/三角/三国」 等で完備。
+# 訓「みっ」 は okurigana「つ」 + jukugo で対応、 連体「三人/三回」 はサン)
+[[kanji]]
+char = "三"
+default = "サン"
+
+# 「且」 default 「かつ」 (= 接続副詞「且つ」、 単独訓のみ)
+[[kanji]]
+char = "且"
+default = "かつ"
+
+# 「串」 default 「くし」 (= 「串/串焼き/串団子/串刺し」 訓主体、 音「セン」 はほぼ使わず)
+[[kanji]]
+char = "串"
+default = "くし"
+
+# 「亀」 default 「かめ」 (= 訓主体、 「亀甲 (キッコウ)」 等まれ jukugo)
+[[kanji]]
+char = "亀"
+default = "かめ"
+
+# 「仁」 default 「ジン」 (= 仁義/仁術/仁者/仁政 等の音読み主流、 訓「ひと」 まれ)
+[[kanji]]
+char = "仁"
+default = "ジン"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"

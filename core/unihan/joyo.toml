@@ -15,17 +15,17 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # "七" は core/kanji/overrides.toml の [[kanji]] block に移行 (★round 48)
 # "万" は core/kanji/overrides.toml の [[kanji]] block に移行
 # 丈 は core/kanji/overrides.toml の [[kanji]] block に移行
-"三" = "サン"
+# 三 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 不 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 与 は core/kanji/overrides.toml の [[kanji]] block に移行
-"且" = "かつ"
+# 且 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 世 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 丘 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 丙 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 両 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 並 は core/kanji/overrides.toml の [[kanji]] block に移行
 # "中" は core/kanji/overrides.toml の [[kanji]] block に移行
-"串" = "くし"
+# 串 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 丸 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 丹 は core/kanji/overrides.toml の [[kanji]] block に移行
 # "主" は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -38,7 +38,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 乱 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 乳 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 乾 は core/kanji/overrides.toml の [[kanji]] block に移行
-"亀" = "かめ"
+# 亀 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 了 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 予 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 争 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -53,7 +53,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 享 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 京 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 亭 は core/kanji/overrides.toml の [[kanji]] block に移行
-"仁" = "ジン"
+# 仁 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 介 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 仏 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 仕 は core/kanji/overrides.toml の [[kanji]] block に移行
