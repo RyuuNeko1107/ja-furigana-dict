@@ -16605,6 +16605,106 @@ default = "まき"
 char = "槻"
 default = "つき"
 
+# 「樟」 default 「くす」 (= 「樟/樟脳/樟葉」 訓主体)
+[[kanji]]
+char = "樟"
+default = "くす"
+
+# 「樫」 default 「かし」 (= 「樫/樫木」 訓のみ、 国字)
+[[kanji]]
+char = "樫"
+default = "かし"
+
+# 「樺」 default 「かば」 (= 「樺/白樺/樺色」 訓主体)
+[[kanji]]
+char = "樺"
+default = "かば"
+
+# 「樽」 default 「たる」 (= 「樽/酒樽/小樽」 訓 + 地名)
+[[kanji]]
+char = "樽"
+default = "たる"
+
+# 「檎」 default 「キン」 (= 「林檎」 のみ実用)
+[[kanji]]
+char = "檎"
+default = "キン"
+
+# 「櫓」 default 「やぐら」 (= 「櫓/物見櫓/船櫓」 訓主体)
+[[kanji]]
+char = "櫓"
+default = "やぐら"
+
+# 「櫛」 default 「くし」 (= 「櫛/櫛比/竪櫛」 訓主体)
+[[kanji]]
+char = "櫛"
+default = "くし"
+
+# 「此」 default 「これ」 (= 古語「此れ/此処/彼此」 訓のみ)
+[[kanji]]
+char = "此"
+default = "これ"
+
+# 「毬」 default 「いが」 (= 「毬栗 (イガグリ)」 + 「毬 (まり)」 訓主体)
+[[kanji]]
+char = "毬"
+default = "いが"
+
+# 「汀」 default 「なぎさ」 (= 「汀/汀線/汀渚」 訓のみ)
+[[kanji]]
+char = "汀"
+default = "なぎさ"
+
+# 「汐」 default 「しお」 (= 「汐/汐風/汐見」 訓主体 + 名前)
+[[kanji]]
+char = "汐"
+default = "しお"
+
+# 「汝」 default 「なんじ」 (= 「汝/汝何処」 古語訓のみ)
+[[kanji]]
+char = "汝"
+default = "なんじ"
+
+# 「沌」 default 「トン」 (= 混沌のみ実用)
+[[kanji]]
+char = "沌"
+default = "トン"
+
+# 「沓」 default 「くつ」 (= 「沓/沓掛/上沓」 訓のみ)
+[[kanji]]
+char = "沓"
+default = "くつ"
+
+# 「沫」 default 「あわ」 (= 「沫/泡沫/水沫」 訓 + jukugo)
+[[kanji]]
+char = "沫"
+default = "あわ"
+
+# 「洛」 default 「ラク」 (= 洛中/上洛/京洛、 音読み)
+[[kanji]]
+char = "洛"
+default = "ラク"
+
+# 「洲」 default 「シュウ」 (= 中洲/三角洲、 音読み + 訓「す」)
+[[kanji]]
+char = "洲"
+default = "シュウ"
+
+# 「洸」 default 「コウ」 (= 名前用、 漢籍まれ)
+[[kanji]]
+char = "洸"
+default = "コウ"
+
+# 「浬」 default 「かいり」 (= 海里 / nautical mile、 訓のみ)
+[[kanji]]
+char = "浬"
+default = "かいり"
+
+# 「淀」 default 「よど」 (= 「淀/淀川/淀み」 訓主体 + 名前)
+[[kanji]]
+char = "淀"
+default = "よど"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"
