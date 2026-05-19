@@ -16115,6 +16115,61 @@ default = "つくだ"
 char = "俣"
 default = "また"
 
+# 「兎」 default 「うさぎ」 (= 「兎/野兎/兎肉」 訓のみ実用)
+[[kanji]]
+char = "兎"
+default = "うさぎ"
+
+# 「兜」 default 「かぶと」 (= 「兜/兜虫」 訓のみ)
+[[kanji]]
+char = "兜"
+default = "かぶと"
+
+# 「其」 default 「それ」 (= 「其れ/其方/其の」 古語連体詞、 訓のみ)
+[[kanji]]
+char = "其"
+default = "それ"
+
+# 「冴」 default 「さえ」 (= 「冴え/冴える」 訓主体 + 名前)
+[[kanji]]
+char = "冴"
+default = "さえ"
+
+# 「凛」 default 「リン」 (= 凛々しい/名前用、 音読み)
+[[kanji]]
+char = "凛"
+default = "リン"
+
+# 「凜」 default 「リン」 (= 「凛」 異体字、 音読み)
+[[kanji]]
+char = "凜"
+default = "リン"
+
+# 「凧」 default 「たこ」 (= 「凧/凧揚げ/連凧」 訓のみ、 国字)
+[[kanji]]
+char = "凧"
+default = "たこ"
+
+# 「凪」 default 「なぎ」 (= 「凪/朝凪/夕凪」 訓のみ、 国字)
+[[kanji]]
+char = "凪"
+default = "なぎ"
+
+# 「厩」 default 「うまや」 (= 「厩舎/馬厩」 訓 + jukugo)
+[[kanji]]
+char = "厩"
+default = "うまや"
+
+# 「叉」 default 「また」 (= 「叉/交叉/夜叉/音叉」 訓 + jukugo)
+[[kanji]]
+char = "叉"
+default = "また"
+
+# 「只」 default 「ただ」 (= 「只/只今/只者」 訓のみ)
+[[kanji]]
+char = "只"
+default = "ただ"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"
