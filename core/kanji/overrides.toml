@@ -15088,6 +15088,31 @@ default = "あらし"
 char = "州"
 default = "シュウ"
 
+# 「帽」 default 「ボウ」 (= 帽子/制帽/学生帽/麦藁帽、 音読み主体)
+[[kanji]]
+char = "帽"
+default = "ボウ"
+
+# 「庁」 default 「チョウ」 (= 庁舎/官庁/警視庁/省庁、 音読み)
+[[kanji]]
+char = "庁"
+default = "チョウ"
+
+# 「度」 default 「ド」 (= 一度/温度/態度/速度/角度、 音読み)
+[[kanji]]
+char = "度"
+default = "ド"
+
+# 「廊」 default 「ロウ」 (= 廊下/回廊/画廊/歩廊、 音読み)
+[[kanji]]
+char = "廊"
+default = "ロウ"
+
+# 「廷」 default 「テイ」 (= 法廷/朝廷/出廷/退廷、 音読み)
+[[kanji]]
+char = "廷"
+default = "テイ"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"

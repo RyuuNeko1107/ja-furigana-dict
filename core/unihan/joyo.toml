@@ -567,7 +567,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 帰 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 帳 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 常 は core/kanji/overrides.toml の [[kanji]] block に移行
-"帽" = "ボウ"
+# 帽 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 幅 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 幕 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 幣 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -580,13 +580,13 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 幼 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 幽 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 幾 は core/kanji/overrides.toml の [[kanji]] block に移行
-"庁" = "チョウ"
+# 庁 は core/kanji/overrides.toml の [[kanji]] block に移行
 # "床" は core/kanji/overrides.toml の [[kanji]] block に移行
 # 序 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 底 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 店 は core/kanji/overrides.toml の [[kanji]] block に移行 (★round 49)
 # 府 は core/kanji/overrides.toml の [[kanji]] block に移行 (★round 49)
-"度" = "ド"
+# 度 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 座 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 庫 は core/kanji/overrides.toml の [[kanji]] block に移行 (★round 50)
 # 庭 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -595,9 +595,9 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 庸 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 廃 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 廉 は core/kanji/overrides.toml の [[kanji]] block に移行
-"廊" = "ロウ"
+# 廊 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 延 は core/kanji/overrides.toml の [[kanji]] block に移行
-"廷" = "テイ"
+# 廷 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 建 は core/kanji/overrides.toml の [[kanji]] block に移行
 # "弁" は core/kanji/overrides.toml の [[kanji]] block に移行
 # 弄 は core/kanji/overrides.toml の [[kanji]] block に移行
