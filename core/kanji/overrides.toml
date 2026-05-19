@@ -15838,6 +15838,31 @@ default = "にしき"
 char = "鍋"
 default = "なべ"
 
+# 「鎌」 default 「かま」 (= 「鎌/鎌倉/鎌田/草刈り鎌」 訓主体 + 名前)
+[[kanji]]
+char = "鎌"
+default = "かま"
+
+# 「閥」 default 「バツ」 (= 派閥/学閥/財閥/門閥、 音読みのみ)
+[[kanji]]
+char = "閥"
+default = "バツ"
+
+# 「阜」 default 「おか」 (= 「岐阜」 jukugo + 訓「おか」、 ほぼ「岐阜」 のみ実用)
+[[kanji]]
+char = "阜"
+default = "おか"
+
+# 「阪」 default 「さか」 (= 「大阪/阪神/阪急/京阪」 jukugo + 訓)
+[[kanji]]
+char = "阪"
+default = "さか"
+
+# 「陣」 default 「ジン」 (= 陣形/陣営/出陣/敵陣/円陣、 音読み)
+[[kanji]]
+char = "陣"
+default = "ジン"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"

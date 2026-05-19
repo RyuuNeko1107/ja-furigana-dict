@@ -1867,7 +1867,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 鍋 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 鍛 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 鍵 は core/kanji/overrides.toml の [[kanji]] block に移行
-"鎌" = "かま"
+# 鎌 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 鎖 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 鎮 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 鏡 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1880,11 +1880,11 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 閑 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 関 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 閣 は core/kanji/overrides.toml の [[kanji]] block に移行
-"閥" = "バツ"
+# 閥 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 閲 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 闘 は core/kanji/overrides.toml の [[kanji]] block に移行
-"阜" = "おか"
-"阪" = "さか"
+# 阜 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 阪 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 防 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 阻 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 附 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1892,7 +1892,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 限 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 陛 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 院 は core/kanji/overrides.toml の [[kanji]] block に移行 (★round 49)
-"陣" = "ジン"
+# 陣 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 除 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 陥 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 陪 は core/kanji/overrides.toml の [[kanji]] block に移行
