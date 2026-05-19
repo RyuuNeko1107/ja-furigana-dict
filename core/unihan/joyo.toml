@@ -849,13 +849,13 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 旦 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 旧 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 旨 は core/kanji/overrides.toml の [[kanji]] block に移行
-"旬" = "ジュン"
+# 旬 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 旺 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 昆 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 昇 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 明 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 易 は core/kanji/overrides.toml の [[kanji]] block に移行
-"昔" = "むかし"
+# 昔 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 星 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 映 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 春 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -865,12 +865,12 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 是 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 昼 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 時 は core/kanji/overrides.toml の [[kanji]] block に移行
-"晩" = "バン"
+# 晩 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 普 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 景 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 晴 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 晶 は core/kanji/overrides.toml の [[kanji]] block に移行
-"暁" = "あかつき"
+# 暁 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 暇 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 暑 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 暖 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -897,7 +897,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 木 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 未 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 末 は core/kanji/overrides.toml の [[kanji]] block に移行
-"札" = "サツ"
+# 札 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 朱 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 朴 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 机 は core/kanji/overrides.toml の [[kanji]] block に移行

@@ -15163,6 +15163,31 @@ default = "テツ"
 char = "文"
 default = "ブン"
 
+# 「旬」 default 「ジュン」 (= 上旬/初旬/旬刊/中旬、 音読み主体)
+[[kanji]]
+char = "旬"
+default = "ジュン"
+
+# 「昔」 default 「むかし」 (= 「昔/昔話/大昔」 訓主体、 「昔日」 まれ)
+[[kanji]]
+char = "昔"
+default = "むかし"
+
+# 「晩」 default 「バン」 (= 朝晩/晩餐/晩鐘/晩年/今晩、 音読み)
+[[kanji]]
+char = "晩"
+default = "バン"
+
+# 「暁」 default 「あかつき」 (= 「暁/暁の星」 訓主体、 「通暁」 まれ)
+[[kanji]]
+char = "暁"
+default = "あかつき"
+
+# 「札」 default 「サツ」 (= 紙札/札束/表札 等の音読み、 訓「ふだ」 は名札/門札等 jukugo)
+[[kanji]]
+char = "札"
+default = "サツ"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"
