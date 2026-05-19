@@ -15613,6 +15613,31 @@ default = "ひざ"
 char = "膳"
 default = "ゼン"
 
+# 「臼」 default 「うす」 (= 「臼/茶臼/石臼/碓臼」 訓主体)
+[[kanji]]
+char = "臼"
+default = "うす"
+
+# 「艶」 default 「つや」 (= 「艶/色艶/艶やか」 訓主体、 「妖艶/凄艶」 まれ音)
+[[kanji]]
+char = "艶"
+default = "つや"
+
+# 「芋」 default 「いも」 (= 「芋/里芋/長芋/山芋/芋虫」 訓主体)
+[[kanji]]
+char = "芋"
+default = "いも"
+
+# 「芝」 default 「しば」 (= 「芝/芝生/芝居/芝犬」 訓主体)
+[[kanji]]
+char = "芝"
+default = "しば"
+
+# 「芯」 default 「シン」 (= 芯/灯心/真芯、 音読み)
+[[kanji]]
+char = "芯"
+default = "シン"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"
