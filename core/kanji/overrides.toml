@@ -15038,6 +15038,31 @@ default = "カン"
 char = "宙"
 default = "チュウ"
 
+# 「宛」 default 「あて」 (= 宛先/宛名/宛がう、 訓主体)
+[[kanji]]
+char = "宛"
+default = "あて"
+
+# 「宵」 default 「よい」 (= 宵闇/宵越し/今宵、 訓主体)
+[[kanji]]
+char = "宵"
+default = "よい"
+
+# 「審」 default 「シン」 (= 審判/不審/審査/陪審/再審、 音読み)
+[[kanji]]
+char = "審"
+default = "シン"
+
+# 「寸」 default 「スン」 (= 一寸/寸法/原寸/採寸、 音読み)
+[[kanji]]
+char = "寸"
+default = "スン"
+
+# 「尻」 default 「しり」 (= 「尻/尻尾/帳尻/目尻」 訓主体)
+[[kanji]]
+char = "尻"
+default = "しり"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"
