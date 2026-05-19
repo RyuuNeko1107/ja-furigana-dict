@@ -15138,6 +15138,31 @@ default = "かれ"
 char = "徳"
 default = "トク"
 
+# 「感」 default 「カン」 (= 感情/感謝/予感/共感/同感、 音読み圧倒的)
+[[kanji]]
+char = "感"
+default = "カン"
+
+# 「扉」 default 「とびら」 (= 「扉/門扉/開扉」 訓主体、 「鉄扉」 まれ)
+[[kanji]]
+char = "扉"
+default = "とびら"
+
+# 「挨」 default 「アイ」 (= ほぼ「挨拶」 のみ実用)
+[[kanji]]
+char = "挨"
+default = "アイ"
+
+# 「撤」 default 「テツ」 (= 撤回/撤退/撤去/撤廃、 音読み)
+[[kanji]]
+char = "撤"
+default = "テツ"
+
+# 「文」 default 「ブン」 (= 文化/文章/文学/作文、 音読み圧倒的、 訓「ふみ」 まれ)
+[[kanji]]
+char = "文"
+default = "ブン"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"
