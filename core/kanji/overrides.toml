@@ -16170,6 +16170,71 @@ default = "また"
 char = "只"
 default = "ただ"
 
+# 「吾」 default 「われ」 (= 「吾/吾輩/吾妻」 訓 + jukugo)
+[[kanji]]
+char = "吾"
+default = "われ"
+
+# 「哉」 default 「かな」 (= 詠嘆助詞「哉」/名前用、 訓のみ)
+[[kanji]]
+char = "哉"
+default = "かな"
+
+# 「哩」 default 「ボク」 (= 「マイル」 当字、 実用ほぼなし、 unihan 既存読み維持)
+[[kanji]]
+char = "哩"
+default = "ボク"
+
+# 「噂」 default 「うわさ」 (= 「噂/噂話/世間の噂」 訓のみ実用)
+[[kanji]]
+char = "噂"
+default = "うわさ"
+
+# 「埜」 default 「の」 (= 「野」 異体字、 名前)
+[[kanji]]
+char = "埜"
+default = "の"
+
+# 「埴」 default 「はに」 (= 「埴/埴輪/赤埴」 訓 + jukugo)
+[[kanji]]
+char = "埴"
+default = "はに"
+
+# 「堰」 default 「せき」 (= 「堰/堰堤」 訓主体)
+[[kanji]]
+char = "堰"
+default = "せき"
+
+# 「堺」 default 「さかい」 (= 「堺/堺市」 訓 + jukugo)
+[[kanji]]
+char = "堺"
+default = "さかい"
+
+# 「塙」 default 「はなわ」 (= 名前用「塙」、 訓のみ)
+[[kanji]]
+char = "塙"
+default = "はなわ"
+
+# 「奎」 default 「ケイ」 (= 奎星/奎宿、 漢籍まれ + 名前)
+[[kanji]]
+char = "奎"
+default = "ケイ"
+
+# 「套」 default 「トウ」 (= 外套/常套句、 音読み)
+[[kanji]]
+char = "套"
+default = "トウ"
+
+# 「姥」 default 「うば」 (= 「姥/乳母/老姥」 訓主体)
+[[kanji]]
+char = "姥"
+default = "うば"
+
+# 「姪」 default 「めい」 (= 「姪/姪孫」 訓 + jukugo)
+[[kanji]]
+char = "姪"
+default = "めい"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"
