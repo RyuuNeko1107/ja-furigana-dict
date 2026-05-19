@@ -15538,6 +15538,31 @@ default = "まゆ"
 char = "罰"
 default = "バツ"
 
+# 「翌」 default 「ヨク」 (= 翌日/翌朝/翌年/翌週/翌月、 音読み)
+[[kanji]]
+char = "翌"
+default = "ヨク"
+
+# 「肌」 default 「はだ」 (= 「肌/素肌/肌色/肌寒い」 訓のみ実用、 国字)
+[[kanji]]
+char = "肌"
+default = "はだ"
+
+# 「肘」 default 「ひじ」 (= 「肘/肘掛け/肘鉄」 訓のみ)
+[[kanji]]
+char = "肘"
+default = "ひじ"
+
+# 「肺」 default 「はい」 (= 「肺/肺活量/肺炎」 訓「はい」 = 音「ハイ」 同 pronunciation)
+[[kanji]]
+char = "肺"
+default = "はい"
+
+# 「胃」 default 「イ」 (= 胃腸/胃酸/胃袋/胃癌、 音読みのみ)
+[[kanji]]
+char = "胃"
+default = "イ"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"

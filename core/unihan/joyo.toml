@@ -1443,7 +1443,7 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 義 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 羽 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 翁 は core/kanji/overrides.toml の [[kanji]] block に移行
-"翌" = "ヨク"
+# 翌 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 習 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 翻 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 翼 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1457,9 +1457,9 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 聴 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 職 は core/kanji/overrides.toml の [[kanji]] block に移行 (★round 50)
 # 肉 は core/kanji/overrides.toml の [[kanji]] block に移行
-"肌" = "はだ"
+# 肌 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 肖 は core/kanji/overrides.toml の [[kanji]] block に移行
-"肘" = "ひじ"
+# 肘 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 肝 は core/kanji/overrides.toml の [[kanji]] block に移行
 "股" = "また"
 # 肢 は core/kanji/overrides.toml の [[kanji]] block に移行
@@ -1468,8 +1468,8 @@ description = "常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告�
 # 肪 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 肯 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 育 は core/kanji/overrides.toml の [[kanji]] block に移行
-"肺" = "はい"
-"胃" = "イ"
+# 肺 は core/kanji/overrides.toml の [[kanji]] block に移行
+# 胃 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 胆 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 背 は core/kanji/overrides.toml の [[kanji]] block に移行
 # 胎 は core/kanji/overrides.toml の [[kanji]] block に移行
