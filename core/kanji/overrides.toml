@@ -15713,6 +15713,31 @@ default = "すそ"
 char = "褐"
 default = "カツ"
 
+# 「襟」 default 「えり」 (= 「襟/襟元/襟巻/胸襟」 訓主体)
+[[kanji]]
+char = "襟"
+default = "えり"
+
+# 「詮」 default 「セン」 (= 詮索/所詮/詮無し、 音読み)
+[[kanji]]
+char = "詮"
+default = "セン"
+
+# 「誉」 default 「ほまれ」 (= 「誉れ/名誉/栄誉」 訓 + jukugo)
+[[kanji]]
+char = "誉"
+default = "ほまれ"
+
+# 「誰」 default 「だれ」 (= 「誰/誰々/誰彼」 訓のみ実用)
+[[kanji]]
+char = "誰"
+default = "だれ"
+
+# 「謎」 default 「なぞ」 (= 「謎/謎々/謎解き/七不思議の謎」 訓のみ)
+[[kanji]]
+char = "謎"
+default = "なぞ"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"
