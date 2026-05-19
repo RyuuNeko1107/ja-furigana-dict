@@ -16405,6 +16405,106 @@ default = "セイ"
 char = "智"
 default = "チ"
 
+# 「李」 default 「すもも」 (= 「李/李園」 訓主体 + 名前)
+[[kanji]]
+char = "李"
+default = "すもも"
+
+# 「杏」 default 「あんず」 (= 「杏/杏仁/銀杏」 訓主体)
+[[kanji]]
+char = "杏"
+default = "あんず"
+
+# 「杖」 default 「つえ」 (= 「杖/錫杖/松葉杖」 訓主体)
+[[kanji]]
+char = "杖"
+default = "つえ"
+
+# 「杜」 default 「もり」 (= 「杜/杜氏」 訓 + 名前)
+[[kanji]]
+char = "杜"
+default = "もり"
+
+# 「杭」 default 「くい」 (= 「杭/杭打ち」 訓のみ)
+[[kanji]]
+char = "杭"
+default = "くい"
+
+# 「杵」 default 「きね」 (= 「杵/杵柄」 訓のみ)
+[[kanji]]
+char = "杵"
+default = "きね"
+
+# 「枇」 default 「ビ」 (= 「枇杷」 のみ実用、 音読み)
+[[kanji]]
+char = "枇"
+default = "ビ"
+
+# 「柏」 default 「かしわ」 (= 「柏/柏餅/柏崎」 訓 + 名前)
+[[kanji]]
+char = "柏"
+default = "かしわ"
+
+# 「柑」 default 「みかん」 (= 蜜柑/柑橘類、 訓主体)
+[[kanji]]
+char = "柑"
+default = "みかん"
+
+# 「柘」 default 「つげ」 (= 「柘植/柘」 訓主体)
+[[kanji]]
+char = "柘"
+default = "つげ"
+
+# 「柚」 default 「ゆず」 (= 「柚/柚子」 訓主体)
+[[kanji]]
+char = "柚"
+default = "ゆず"
+
+# 「柴」 default 「しば」 (= 「柴/柴犬/柴田」 訓主体 + 名前)
+[[kanji]]
+char = "柴"
+default = "しば"
+
+# 「柾」 default 「まさ」 (= 名前用「柾/柾木」、 訓のみ、 国字)
+[[kanji]]
+char = "柾"
+default = "まさ"
+
+# 「栗」 default 「くり」 (= 「栗/栗鼠/栗毛/丹波栗」 訓主体)
+[[kanji]]
+char = "栗"
+default = "くり"
+
+# 「栞」 default 「しおり」 (= 「栞」 訓のみ実用、 国字)
+[[kanji]]
+char = "栞"
+default = "しおり"
+
+# 「桂」 default 「かつら」 (= 「桂/桂林」 訓主体 + 名前)
+[[kanji]]
+char = "桂"
+default = "かつら"
+
+# 「桐」 default 「きり」 (= 「桐/白桐/桐箱」 訓主体 + 名前)
+[[kanji]]
+char = "桐"
+default = "きり"
+
+# 「桔」 default 「キツ」 (= 桔梗のみ実用)
+[[kanji]]
+char = "桔"
+default = "キツ"
+
+# 「桧」 default 「ひのき」 (= 「桧/桧造り」 訓主体)
+[[kanji]]
+char = "桧"
+default = "ひのき"
+
+# 「桶」 default 「おけ」 (= 「桶/水桶/手桶」 訓のみ)
+[[kanji]]
+char = "桶"
+default = "おけ"
+
 # 「冬」 default 「ふゆ」 + prev 漢字 → 「トウ」 (= 越冬/初冬/厳冬)
 [[kanji]]
 char = "冬"
