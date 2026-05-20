@@ -8,7 +8,7 @@
 
 (なし — divergent reading 0 件、 健全)
 
-## 同一 reading (5 件)
+## 同一 reading (7 件)
 
 実害なし (jukugo merge で同値が上書きされても reading 不変)。 整理目安として list 化。
 長期的にどちらか 1 ファイルに寄せたいケースを発見する用。
@@ -20,3 +20,5 @@
 | 石川 | イシカワ | `core/jukugo/nature/place_names.toml`, `core/jukugo/proper/personal_names.toml` |
 | 素人 | シロウト | `core/jukugo/basic/general.toml`, `core/jukugo/humanities/arts.toml` |
 | 質素 | シッソ | `core/jukugo/basic/general.toml`, `core/jukugo/humanities/abstracts.toml` |
+| 雨乞い | アマゴイ | `core/jukugo/basic/general.toml`, `core/jukugo/nature/weather.toml` |
+| 雨垂れ | アマダレ | `core/jukugo/basic/general.toml`, `core/jukugo/nature/weather.toml` |
