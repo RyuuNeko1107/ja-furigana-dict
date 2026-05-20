@@ -207,6 +207,12 @@ reading = "ひと"
 prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
 reading = "ひと"
 
+# 動詞活用語尾 + 人 = ひと (= 「寝る人/見る人/食べる人/走った人/働かない人/強い人」 等。
+# 配信実発話 corpus (stream-comments) で頻出 = ★round 51)
+[[kanji.match]]
+prev_ends_any = ["る", "た", "い", "ない", "って"]
+reading = "ひと"
+
 [[kanji.match]]
 next_eq = "々"
 reading = "ひと"
@@ -1327,6 +1333,12 @@ reading = "ホウ"
 # 名詞 + 「の方」 (= 「あの方 / その方」) は default カタ 維持で副作用回避。
 [[kanji.match]]
 prev_ends_any = ["い", "な"]
+reading = "ホウ"
+
+# 動詞活用語尾 + 方 = ホウ (= 「寝る方/見る方/食べる方」 配信慣用 = 「○○な人」 婉曲表現。
+# stream-comments corpus で「寝る方おやすみなさい」 5+ 件確認 = ★round 51)
+[[kanji.match]]
+prev_ends_any = ["る", "た", "って"]
 reading = "ホウ"
 
 
