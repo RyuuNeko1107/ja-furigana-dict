@@ -15272,6 +15272,11 @@ default = "チョウ"
 char = "度"
 default = "ド"
 
+# 「度々」 踊り字 = タビタビ (= 副詞)
+[[kanji.match]]
+next_eq = "々"
+reading = "たび"
+
 # 「廊」 default 「ロウ」 (= 廊下/回廊/画廊/歩廊、 音読み)
 [[kanji]]
 char = "廊"
