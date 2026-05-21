@@ -409,7 +409,7 @@ next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や"
 reading = "あし"
 
 [[kanji.match]]
-prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
+prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も", "り"]
 reading = "あし"
 
 [[kanji.match]]
