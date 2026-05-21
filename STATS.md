@@ -241,7 +241,7 @@ git に commit されている master HEAD の状態を基準にする。
 | ファイル | エントリ数 | ルール数 | サイズ | 用途 |
 |---|---:|---:|---:|---|
 | [`rules/text/units.toml`](rules/text/units.toml) | 17 | 17 | 813 B | SI 単位 + 通貨 + % (km / kg / mL / 円 / % 等、 数値 + 単位を 1 chunk で読む。 lookup は case-insensitive) |
-| [`rules/text/symbols.toml`](rules/text/symbols.toml) | 10 | 10 | 398 B | 記号 1 文字読み (+ / − / % / ‰ / 〜 / ・ / ※ 等、 chunks/split() の symbols 階層で個別 hit) |
+| [`rules/text/symbols.toml`](rules/text/symbols.toml) | 10 | 10 | 386 B | 記号 1 文字読み (+ / − / % / ‰ / 〜 / ・ / ※ 等、 chunks/split() の symbols 階層で個別 hit) |
 | [`rules/text/postprocess.toml`](rules/text/postprocess.toml) | 2 | 2 | 325 B | 出力後処理 regex (Step 7、 mode 別: hiragana / ruby / tts / romaji の出力直前に適用) |
 | **小計** (3 ファイル) | **29** | **29** | **1.5 KB** | |
 
