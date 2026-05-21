@@ -5902,6 +5902,16 @@ default = "イ"
 char = "蓋"
 default = "ガイ"
 
+# 「蓋は / 蓋が / 蓋を / 蓋に / 蓋の / 蓋で / 蓋と / 蓋も」 = 名詞用法、 訓「ふた」
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や"]
+reading = "ふた"
+
+# 「蓋付き / 蓋開け / 蓋する」 等 動詞・接尾辞 prev = 訓「ふた」
+[[kanji.match]]
+next_starts_any = ["つ", "あ", "す"]
+reading = "ふた"
+
 [[kanji]]
 char = "薫"
 default = "クン"
