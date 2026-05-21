@@ -7962,6 +7962,11 @@ default = "リョウ"
 char = "額"
 default = "ガク"
 
+# 「額は / 額が / 額を / 額に / 額の / 額で / 額と / 額も」 = 体の部位、 訓「ひたい」
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "ひたい"
+
 # 「題」 default 「ダイ」 (= 問題/題名/出題/課題/演題/主題/標題/題目)。
 # unihan default 「ひたい」 は古語、 現代では熟語 dominant
 [[kanji]]
