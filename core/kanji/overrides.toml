@@ -2504,6 +2504,11 @@ default = "あたま"
 char = "夜"
 default = "よる"
 
+# 「一夜 / 二夜 / 何夜 / 徹夜 / 夜分」 等 漢字 prev = 音「ヤ」
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ヤ"
+
 # 「節」: default = ふし。 セツ系 jukugo (節句 / 節分 / 関節 / 季節 / 節約
 # 等) は band 100 で吸収。
 [[kanji]]
