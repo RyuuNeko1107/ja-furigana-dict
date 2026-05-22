@@ -13413,6 +13413,11 @@ default = "ホウ"
 char = "葺"
 default = "ふ"
 
+# 「銅葺 / 茅葺 / 杮葺 / 板葺 / 桧葺」 等 漢字 prev = 連濁「ぶき」
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ぶき"
+
 # 「蒲」 default 「ホ」 (= 蒲団/蒲公英/菖蒲/蒲冠者)。
 # unihan 「かま」 は「釜/鎌」 と混同、 訓「がま」 (植物) や「かば」 (蒲焼) は jukugo file で対応 → default 訂正。
 [[kanji]]
