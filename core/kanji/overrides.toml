@@ -5706,6 +5706,11 @@ default = "リュウ"
 char = "畳"
 default = "ジョウ"
 
+# 「畳は / 畳が / 畳を / 畳に / 畳の / 畳で / 畳と / 畳も」 = 名詞用法、 訓「たたみ」
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や"]
+reading = "たたみ"
+
 [[kanji]]
 char = "疾"
 default = "シツ"
