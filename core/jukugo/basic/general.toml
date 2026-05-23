@@ -7294,5 +7294,12 @@ reading = "コラムキジ"
 [entries."日刊紙"]
 reading = "ニッカンシ"
 
+# 配信 seed 12345-54321 round: VV spoken 形に揃える generic enrichment
+"肉厚" = "ニクアツ"
+"一桁" = "ヒトケタ"
+"地雷原" = "ジライハラ"
+"入荷先" = "ニュウカサキ"
+"チラ見" = "チラミ"
+
 # regression fix: 「使い方」 = ツカイカタ (mega3 で 「使い」 を入れたため
 # 「使い方」 が 「ツカイ+ホウ」 になる回帰、 jukugo 個別登録で fix)
