@@ -2576,6 +2576,11 @@ default = "いえ"
 prev_char_type = "漢字"
 reading = "カ"
 
+# 「すき家 / なか家」 等 ひらがな prev = 接尾辞「ヤ」 (= 飲食店名)
+[[kanji.match]]
+prev_ends_any = ["き", "か"]
+reading = "ヤ"
+
 # 「所」: default 「ところ」 (= 「所が / 所に」 単独名詞)、 「漢字+所」 (= 事業所 / 役所 /
 # 裁判所 / 事務所 / 居所) は接尾辞 「ショ」
 [[kanji]]
