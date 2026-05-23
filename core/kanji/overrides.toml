@@ -5222,6 +5222,12 @@ default = "セキ"
 char = "戻"
 default = "レイ"
 
+# 動詞活用 + ひらがな後続で訓「もど」
+# 「戻る/戻った/戻らない/戻り/戻れる/戻して/戻そう」 catch
+[[kanji.match]]
+next_starts_any = ["る", "っ", "ら", "り", "れ", "そ", "す", "し"]
+reading = "もど"
+
 [[kanji]]
 char = "払"
 default = "フツ"
@@ -5756,6 +5762,12 @@ default = "ケン"
 [[kanji]]
 char = "眠"
 default = "ミン"
+
+# 動詞・形容詞活用 + ひらがな後続で訓「ねむ」
+# 「眠る/眠い/眠った/眠らない/眠り/眠れる/眠そう/眠すぎる」 catch
+[[kanji.match]]
+next_starts_any = ["る", "い", "た", "ら", "り", "れ", "っ", "そ", "す"]
+reading = "ねむ"
 
 [[kanji]]
 char = "睦"
