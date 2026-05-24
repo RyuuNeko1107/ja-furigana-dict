@@ -271,6 +271,9 @@ description = "古典芸能 / 武道 / 茶華香 / 工芸"
 "手習鑑" = "テナライカガミ"
 "菅原伝授手習鑑" = "スガワラデンジュテナライカガミ"
 
+# 拡充: 茶道用具
+"炭斗" = "スミトリ"  # 「炭」 default タン → スミ + 「斗」 default ト → トリ
+
 # === Detailed entries (★A2 alpha.11 migration、 inline match block 持ち) ===
 
 [entries."素人"]
