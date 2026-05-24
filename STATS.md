@@ -24,14 +24,14 @@ git に commit されている master HEAD の状態を基準にする。
 | カテゴリ | エントリ数 | サイズ |
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,688** | **739 KB** |
-| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **8,612** | **290 KB** |
+| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **8,623** | **290 KB** |
 | [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **311** | **10 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **168** | **5.2 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,767** | **187 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **435** | **6.1 KB** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **228** | **13 KB** |
-| **合計** | **53,209** | **1.22 MB** |
+| **合計** | **53,220** | **1.22 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -56,7 +56,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/jukugo/<genre>/*` — 手動 PR メンテのジャンル別 jukugo (≥ 2 字 surface)。 lib の Step 3 (jukugo lookup) で Lindera より優先採用。 各 genre dir の `_genre.toml` がカテゴリ description を持つ。
 
-**合計**: 8,612 件 / 290 KB (genre 6 区分)
+**合計**: 8,623 件 / 290 KB (genre 6 区分)
 
 #### 自然・生命
 
@@ -69,10 +69,10 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/jukugo/nature/animals.toml`](core/jukugo/nature/animals.toml) | 201 | 5.3 KB | 動植物 / 魚介 / 鳥 / 昆虫 / 茸 / 海藻の難読 |
 | [`core/jukugo/nature/place_names.toml`](core/jukugo/nature/place_names.toml) | 199 | 6.3 KB | 地名 (47 都道府県 / 主要都市 / 駅 / 寺社仏閣 / 観光地) |
 | [`core/jukugo/nature/weather.toml`](core/jukugo/nature/weather.toml) | 192 | 5.7 KB | 気象 / 天候 / 季語的気象 / 二十四節気 / 海洋気象 |
+| [`core/jukugo/nature/foods.toml`](core/jukugo/nature/foods.toml) | 191 | 5.6 KB | 食べ物 / 料理 / 和菓子 / 郷土料理 / 食材 / 調味料 |
 | [`core/jukugo/nature/science.toml`](core/jukugo/nature/science.toml) | 190 | 5.6 KB | 自然科学 (天文 / 物理 / 化学 / 生物 / 地学) |
-| [`core/jukugo/nature/foods.toml`](core/jukugo/nature/foods.toml) | 185 | 5.4 KB | 食べ物 / 料理 / 和菓子 / 郷土料理 / 食材 / 調味料 |
 | [`core/jukugo/nature/body_parts.toml`](core/jukugo/nature/body_parts.toml) | 172 | 5.2 KB | 体の部位 / 内臓 / 骨格 / 筋肉 / 神経 |
-| **小計** (6 ファイル) | **1,139** | **34 KB** | |
+| **小計** (6 ファイル) | **1,145** | **34 KB** | |
 
 #### 人文・芸術
 
@@ -82,14 +82,14 @@ git に commit されている master HEAD の状態を基準にする。
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/jukugo/humanities/arts.toml`](core/jukugo/humanities/arts.toml) | 196 | 5.7 KB | 古典芸能 / 武道 / 茶華香 / 工芸 |
+| [`core/jukugo/humanities/arts.toml`](core/jukugo/humanities/arts.toml) | 197 | 5.8 KB | 古典芸能 / 武道 / 茶華香 / 工芸 |
+| [`core/jukugo/humanities/music.toml`](core/jukugo/humanities/music.toml) | 181 | 5.7 KB | 音楽ジャンル / 楽典 / 楽器 / 演奏 / 音楽用語 |
 | [`core/jukugo/humanities/religions.toml`](core/jukugo/humanities/religions.toml) | 181 | 5.6 KB | 神道 / 仏教 / キリスト教 / イスラム / 儀礼 |
 | [`core/jukugo/humanities/literature.toml`](core/jukugo/humanities/literature.toml) | 180 | 6.1 KB | 古典文学 / 作品名 / 文学用語 / 詩歌 / 評論 |
-| [`core/jukugo/humanities/music.toml`](core/jukugo/humanities/music.toml) | 177 | 5.5 KB | 音楽ジャンル / 楽典 / 楽器 / 演奏 / 音楽用語 |
 | [`core/jukugo/humanities/idioms.toml`](core/jukugo/humanities/idioms.toml) | 150 | 7.8 KB | 慣用句 / ことわざ / 故事成語 (フレーズ単位) |
 | [`core/jukugo/humanities/emotions.toml`](core/jukugo/humanities/emotions.toml) | 149 | 4.0 KB | 感情 / 心理状態 / 性格 / 心情 |
 | [`core/jukugo/humanities/abstracts.toml`](core/jukugo/humanities/abstracts.toml) | 137 | 3.8 KB | 美意識 / 古典文学 / 仏教 / 儒教 / 思想 |
-| **小計** (7 ファイル) | **1,170** | **38 KB** | |
+| **小計** (7 ファイル) | **1,175** | **39 KB** | |
 
 #### 社会・制度
 
