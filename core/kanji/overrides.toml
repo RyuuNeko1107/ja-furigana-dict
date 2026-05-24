@@ -439,32 +439,8 @@ reading = "くるま"
 
 [[kanji]]
 char = "今"
-default = "コン"
-
-# 「今こそ / 今さっき / 今すぐ / 今ちょっと」 等 副詞「-こそ/-さっき」 catch
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ", "こ", "さ", "す", "ち"]
-reading = "いま"
-
-[[kanji.match]]
-prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
-reading = "いま"
-
-# 「今思った / 今食べる / 今行く」 = 漢字後続でも副詞 「いま」、 熟語 (= 「今度 /
-# 今晩 / 今月 / 今年」) は dict 1000 jukugo で覆われる前提。 [[kanji]] block 「今」
-# は band 100 fallback。
-[[kanji.match]]
-next_char_type = "漢字"
-reading = "いま"
-
-[[kanji.match]]
-next_eq = "々"
-reading = "いま"
-
-# 「今8音量 / 今2時 / 今15分」 等の 「今 + 数字」 副詞用法も 「いま」 ★round 40
-[[kanji.match]]
-next_char_type = "英数"
-reading = "いま"
+# コン は jukugo (今回/今度/今月/今年/今晩/今後 等) が band 1000 で覆うため default いま
+default = "いま"
 
 # 来 — ka 変動詞、 活用ごとに母音変化 (キ / ク / コ)。 Lindera は 「来た」 を
 # 「来 + た」 2 tokens で返すので、 来 1 字 surface に対する文脈分岐が必要。
@@ -641,7 +617,7 @@ char = "見"
 default = "ケン"
 # 見る / 見た / 見て / 見ます / 見よう / 見られる / 見せる / 見つけ / 見ながら / 見ない
 [[kanji.match]]
-next_starts_any = ["る", "た", "て", "ま", "よ", "ら", "せ", "つ", "な"]
+next_starts_any = ["る", "た", "て", "ま", "よ", "ら", "せ", "つ", "な", "ず", "し"]
 reading = "ミ"
 
 # 「見に来た / 見はる / 見つける / 見の話」 等 助詞・「は」 連用 = 連用形「ミ」
