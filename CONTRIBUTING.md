@@ -18,7 +18,7 @@ Rust 知識・Git クローン不要。
 | **熟語 (genre 判断付かない)** | [`core/_inbox.toml`](core/_inbox.toml) | 一時 inbox、 maintainer が後で振り分け |
 | **単漢字** (1 字 surface) | [`core/unihan/<水準>.toml`](core/unihan/) | 5 水準 (joyo / jinmeiyou / jis_basic / jis_supplement / extension) |
 | **異体字 → 標準字** | [`core/compat.toml`](core/compat.toml) | lib Step 1 で入力テキストを正規化 |
-| **外来語** (英字始まり surface) | [`core/loanwords/<file>.toml`](core/loanwords/) | 1 file (it)、 完全一致 lookup |
+| **外来語** (英字始まり surface) | [`core/loanwords/<file>.toml`](core/loanwords/) | 2 file (general / it)、 完全一致 lookup |
 | **作品造語** (作品単位 1 ファイル) | [`core/works/<medium>/<title>.toml`](core/works/) | medium 2 区分 (game / literature)、 サブポリシー: [`core/works/README.md`](core/works/README.md) |
 | **助数詞ルール** | [`rules/numbers/counters/<file>.toml`](rules/numbers/counters/) | 7 file (objects / people / percent / places / recursive / simple / time)、 連濁 / 促音化 / kana 末尾置換 |
 | **数字慣用語句** | [`rules/numbers/numeric_phrases.toml`](rules/numbers/numeric_phrases.toml) | 二十歳→ハタチ 等、 助数詞ルールより先に確定 |
