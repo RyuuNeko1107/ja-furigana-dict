@@ -8,32 +8,16 @@
 
 (なし — divergent reading 0 件、 健全)
 
-## 同一 reading (22 件)
+## 同一 reading (6 件)
 
 実害なし (jukugo merge で同値が上書きされても reading 不変)。 整理目安として list 化。
 長期的にどちらか 1 ファイルに寄せたいケースを発見する用。
 
 | surface | reading | files |
 |---|---|---|
-| 中華丼 | チュウカドン | `core/jukugo/basic/general.toml`, `core/jukugo/nature/foods.toml` |
-| 元素 | ゲンソ | `core/jukugo/basic/general.toml`, `core/jukugo/nature/science.toml` |
 | 単衣 | ヒトエ | `core/jukugo/basic/general.toml`, `core/jukugo/objects/clothes.toml` |
 | 唐揚げ | カラアゲ | `core/jukugo/basic/general.toml`, `core/jukugo/nature/foods.toml` |
-| 山風 | ヤマカゼ | `core/jukugo/basic/general.toml`, `core/jukugo/nature/weather.toml` |
 | 巫女 | ミコ | `core/jukugo/basic/general.toml`, `core/jukugo/humanities/religions.toml` |
-| 水素 | スイソ | `core/jukugo/basic/general.toml`, `core/jukugo/nature/science.toml` |
-| 海老天 | エビテン | `core/jukugo/basic/general.toml`, `core/jukugo/nature/foods.toml` |
 | 海風 | ウミカゼ | `core/jukugo/basic/general.toml`, `core/jukugo/nature/weather.toml` |
-| 石川 | イシカワ | `core/jukugo/nature/place_names.toml`, `core/jukugo/proper/personal_names.toml` |
-| 硫黄 | イオウ | `core/jukugo/basic/general.toml`, `core/jukugo/nature/science.toml` |
 | 神輿 | ミコシ | `core/jukugo/basic/general.toml`, `core/jukugo/objects/vehicles.toml` |
-| 素人 | シロウト | `core/jukugo/basic/general.toml`, `core/jukugo/humanities/arts.toml` |
-| 膝上 | ヒザウエ | `core/jukugo/basic/general.toml`, `core/jukugo/nature/body_parts.toml` |
-| 膝下 | ヒザシタ | `core/jukugo/basic/general.toml`, `core/jukugo/nature/body_parts.toml` |
-| 親子丼 | オヤコドン | `core/jukugo/basic/general.toml`, `core/jukugo/nature/foods.toml` |
-| 豚丼 | ブタドン | `core/jukugo/basic/general.toml`, `core/jukugo/nature/foods.toml` |
-| 質素 | シッソ | `core/jukugo/basic/general.toml`, `core/jukugo/humanities/abstracts.toml` |
-| 雨乞い | アマゴイ | `core/jukugo/basic/general.toml`, `core/jukugo/nature/weather.toml` |
-| 雨垂れ | アマダレ | `core/jukugo/basic/general.toml`, `core/jukugo/nature/weather.toml` |
-| 鯛焼き | タイヤキ | `core/jukugo/basic/general.toml`, `core/jukugo/nature/foods.toml` |
 | 鰻丼 | ウナドン | `core/jukugo/basic/general.toml`, `core/jukugo/nature/foods.toml` |
