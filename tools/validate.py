@@ -49,54 +49,78 @@ class Errors(list):
         self.append(msg)
 
 
+class Warnings(list):
+    def add_for(self, file: Path, msg: str) -> None:
+        self.append(f"{file.name}: {msg}")
+
+    def add(self, msg: str) -> None:
+        self.append(msg)
+
+
 def is_kana(s: str) -> bool:
     """`s` が ひらがな または 全角カタカナ (+ ー / ・ / intonation bracket [ ] /) のみで構成されているか"""
     return bool(s) and bool(KANA_RE.fullmatch(s))
 
 
-def validate_bracket_syntax(reading: str) -> list[str]:
-    """intonation bracket notation (`[` `]` `/`) の構文検証 (0.2.0 forward compat)。
+def validate_bracket_syntax(reading: str) -> tuple[list[str], list[str]]:
+    """intonation bracket notation の構文検証 (ADR-0003 準拠)。
 
-    constraint:
-    - phrase 区切り `/` で分割した各 phrase 内で `[` は最大 1 個、 `]` は最大 1 個
-    - 同 phrase 内で `[` と `]` 両方ある場合は `[` が `]` より前 (= 開始 → 終了)
-    - 空 phrase 禁止 (連続 `//` / 先頭・末尾 `/`)
+    bracket 記法は `[` (アクセント句開始) と `]` (核位置) の 2 記号のみ使用。
+    `/` は deprecated (0.2.0 で意味を持たない)。
 
-    error message の list を返す (= 空 list なら OK)。
+    returns: (errors, warnings)
+    - errors: 構文として不正 (CI fail)
+    - warnings: 動作はするが修正推奨 (CI pass、 stderr 表示)
     """
     errors: list[str] = []
-    if '//' in reading:
-        errors.append("空 phrase (連続 '//')")
-    if reading.startswith('/'):
-        errors.append("先頭 '/' (= 空 leading phrase)")
-    if reading.endswith('/'):
-        errors.append("末尾 '/' (= 空 trailing phrase)")
-    for i, phrase in enumerate(reading.split('/')):
-        if not phrase:
+    warnings: list[str] = []
+
+    if '/' in reading:
+        warnings.append("'/' は deprecated (ADR-0003)、 削除してください")
+
+    stripped = reading.replace('/', '')
+
+    n_open = stripped.count('[')
+    n_close = stripped.count(']')
+
+    if n_close > 0 and n_open == 0:
+        warnings.append("']' のみで '[' がない — 先頭に '[' が暗黙追加されます、 明示的に '[' を書いてください")
+
+    segments = re.split(r'\[', stripped)
+    phrase_idx = 0
+    for seg in segments:
+        if not seg:
             continue
-        n_open = phrase.count('[')
-        n_close = phrase.count(']')
-        if n_open > 1:
-            errors.append(f"phrase[{i}] '{phrase}': '[' が {n_open} 個 (最大 1)")
-        if n_close > 1:
-            errors.append(f"phrase[{i}] '{phrase}': ']' が {n_close} 個 (最大 1)")
-        if n_open == 1 and n_close == 1:
-            i_open = phrase.index('[')
-            i_close = phrase.index(']')
-            if i_close < i_open:
-                errors.append(f"phrase[{i}] '{phrase}': ']' が '[' より前 (= 順序不正)")
-    return errors
+        c = seg.count(']')
+        if c > 1:
+            errors.append(f"phrase[{phrase_idx}]: ']' が {c} 個 (最大 1)")
+        phrase_idx += 1
+
+    if n_open > 0 and n_close > 0:
+        for seg in stripped.split('['):
+            if not seg:
+                continue
+            if ']' in seg:
+                pos_close = seg.index(']')
+                if pos_close == 0:
+                    errors.append("'[' の直後に ']' (= 空アクセント句)")
+
+    return errors, warnings
 
 
-def check_reading(path: Path, errors: Errors, label: str, reading: str) -> None:
+def check_reading(path: Path, errors: Errors, label: str, reading: str, warnings: Warnings | None = None) -> None:
     """reading の kana check + bracket 構文 check を統合的に呼ぶヘルパ。
 
     label は error message の prefix (例: `"'X'"` / `"single_override 'X'"`)。"""
     if not is_kana(reading):
         errors.add_for(path, f"{label} → '{reading}' (ひらがな または 全角カタカナで書いてください)")
         return
-    for be in validate_bracket_syntax(reading):
+    bracket_errors, bracket_warnings = validate_bracket_syntax(reading)
+    for be in bracket_errors:
         errors.add_for(path, f"{label} bracket 構文: {be}")
+    if warnings is not None:
+        for bw in bracket_warnings:
+            warnings.add_for(path, f"{label} bracket: {bw}")
 
 
 def load_toml(path: Path, errors: Errors):
@@ -112,7 +136,7 @@ def load_toml(path: Path, errors: Errors):
 
 
 # ─── core/jukugo.toml, core/unihan.toml ────────────────────────────────────
-def validate_lookup(path: Path, errors: Errors) -> dict:
+def validate_lookup(path: Path, errors: Errors, warnings: Warnings | None = None) -> dict:
     """[entries] section: surface → reading の検証。
 
     新 format (★A2、 alpha.11) で entry 値は以下 3 形式が併存:
@@ -137,7 +161,7 @@ def validate_lookup(path: Path, errors: Errors) -> dict:
         # Simple form: string value
         if isinstance(value, str):
             reading = value
-            check_reading(path, errors, f"'{surface}'", reading)
+            check_reading(path, errors, f"'{surface}'", reading, warnings)
             flat[surface] = reading
             continue
         # Detailed form: dict value with required `reading` field
@@ -149,7 +173,7 @@ def validate_lookup(path: Path, errors: Errors) -> dict:
                     f"'{surface}': detailed entry に reading field 不在 (= 必須、 string)",
                 )
                 continue
-            check_reading(path, errors, f"'{surface}'", reading)
+            check_reading(path, errors, f"'{surface}'", reading, warnings)
             # match block 配列 (optional) を検証
             matches = value.get('match', [])
             if matches and not isinstance(matches, list):
@@ -172,7 +196,7 @@ def validate_lookup(path: Path, errors: Errors) -> dict:
                         f"'{surface}': match[{i}] に reading field 不在 (= 必須、 string)",
                     )
                     continue
-                check_reading(path, errors, f"'{surface}' match[{i}]", m_reading)
+                check_reading(path, errors, f"'{surface}' match[{i}]", m_reading, warnings)
             flat[surface] = reading
             continue
         # その他 (= bool / array / etc) は型不一致として error
@@ -492,7 +516,7 @@ def discover(base_dir: Path, name: str, *, recursive: bool = False) -> list[Path
     )
 
 
-def validate_kanji_blocks(path: Path, errors: Errors) -> dict[str, str]:
+def validate_kanji_blocks(path: Path, errors: Errors, warnings: Warnings | None = None) -> dict[str, str]:
     """`[[kanji]]` array of tables の検証 (★A2、 alpha.11、 `core/kanji/`)。
 
     各 block は `char` (1 字 surface 必須) + `default` reading + optional
@@ -529,7 +553,7 @@ def validate_kanji_blocks(path: Path, errors: Errors) -> dict[str, str]:
                 f"[[kanji]][{i}] (char={char!r}): default field が string ではない",
             )
             continue
-        check_reading(path, errors, f"[[kanji]] char={char!r}", default)
+        check_reading(path, errors, f"[[kanji]] char={char!r}", default, warnings)
         # match 配列 (optional) を検証
         matches = b.get("match", [])
         if matches and not isinstance(matches, list):
@@ -552,7 +576,7 @@ def validate_kanji_blocks(path: Path, errors: Errors) -> dict[str, str]:
                     f"[[kanji]][{i}] (char={char!r}): match[{j}] に reading 不在",
                 )
                 continue
-            check_reading(path, errors, f"[[kanji]] char={char!r} match[{j}]", m_reading)
+            check_reading(path, errors, f"[[kanji]] char={char!r} match[{j}]", m_reading, warnings)
         flat[char] = default
     return flat
 
@@ -605,6 +629,7 @@ def discover_works(core_dir: Path) -> list[Path]:
 def main() -> int:
     root = Path(__file__).resolve().parent.parent  # tools/.. = repo root
     errors = Errors()
+    warnings = Warnings()
     core = root / 'core'
     rules = root / 'rules'
 
@@ -614,12 +639,12 @@ def main() -> int:
     per_file_jukugo: dict[str, dict] = {}
 
     def load_jukugo(p: Path) -> None:
-        entries = validate_lookup(p, errors)
+        entries = validate_lookup(p, errors, warnings)
         jukugo.update(entries)
         per_file_jukugo[p.name] = entries
 
     def load_unihan(p: Path) -> None:
-        unihan.update(validate_lookup(p, errors))
+        unihan.update(validate_lookup(p, errors, warnings))
 
     # 各 (paths, validator) ペア。paths は単一ファイル or 細分化サブディレクトリ配下。
     # jukugo / works はどちらも ≥2 字 surface の固定読み辞書として load_jukugo に流す
@@ -627,7 +652,7 @@ def main() -> int:
     # ★A2 alpha.11: `core/kanji/` の [[kanji]] block (= 旧 single_overrides の後継)
     # を unihan map にマージ (= cross-file 重複 check の対象)
     def load_kanji(p: Path) -> None:
-        unihan.update(validate_kanji_blocks(p, errors))
+        unihan.update(validate_kanji_blocks(p, errors, warnings))
 
     # ★A2 alpha.11: 旧 format file (= core/single_overrides.toml + rules/context/)
     # は削除済 (= entry inline match + [[kanji]] block format に migration 完了)、
@@ -667,6 +692,11 @@ def main() -> int:
 
     check_cross_file_duplicates(jukugo, unihan, errors)
     check_jukugo_divergent_reading(per_file_jukugo, errors)
+
+    if warnings:
+        print(f"[WARN] {len(warnings)} 件の bracket 警告", file=sys.stderr)
+        for w in warnings:
+            print(f"  ⚠ {w}", file=sys.stderr)
 
     if errors:
         print(f"[FAIL] {len(errors)} 件の検証エラー", file=sys.stderr)
