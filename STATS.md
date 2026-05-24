@@ -24,14 +24,14 @@ git に commit されている master HEAD の状態を基準にする。
 | カテゴリ | エントリ数 | サイズ |
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,688** | **739 KB** |
-| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **8,683** | **295 KB** |
+| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **8,688** | **295 KB** |
 | [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **311** | **10 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **168** | **5.2 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,767** | **187 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **435** | **6.1 KB** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **228** | **13 KB** |
-| **合計** | **53,280** | **1.23 MB** |
+| **合計** | **53,285** | **1.23 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -56,7 +56,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/jukugo/<genre>/*` — 手動 PR メンテのジャンル別 jukugo (≥ 2 字 surface)。 lib の Step 3 (jukugo lookup) で Lindera より優先採用。 各 genre dir の `_genre.toml` がカテゴリ description を持つ。
 
-**合計**: 8,683 件 / 295 KB (genre 6 区分)
+**合計**: 8,688 件 / 295 KB (genre 6 区分)
 
 #### 自然・生命
 
@@ -99,11 +99,11 @@ git に commit されている master HEAD の状態を基準にする。
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/jukugo/society/specialized.toml`](core/jukugo/society/specialized.toml) | 189 | 7.0 KB | 専門用語 (医学 / 軍事 / 法学 / 経済 / IT / 工学) |
+| [`core/jukugo/society/specialized.toml`](core/jukugo/society/specialized.toml) | 194 | 7.3 KB | 専門用語 (医学 / 軍事 / 法学 / 経済 / IT / 工学) |
 | [`core/jukugo/society/sports.toml`](core/jukugo/society/sports.toml) | 156 | 5.2 KB | 近代スポーツ / 球技 / 陸上 / 水泳 / 体操 / 大会 |
 | [`core/jukugo/society/politics.toml`](core/jukugo/society/politics.toml) | 154 | 4.5 KB | 政治 / 行政 / 立法 / 司法 / 国際関係 |
 | [`core/jukugo/society/finance.toml`](core/jukugo/society/finance.toml) | 104 | 4.1 KB | 経済金融 (商品 / 市場 / 会計 / 税務 / 保険) |
-| **小計** (4 ファイル) | **603** | **21 KB** | |
+| **小計** (4 ファイル) | **608** | **21 KB** | |
 
 #### 固有名詞
 
