@@ -8,7 +8,7 @@
 
 (なし — divergent reading 0 件、 健全)
 
-## 同一 reading (23 件)
+## 同一 reading (35 件)
 
 実害なし (jukugo merge で同値が上書きされても reading 不変)。 整理目安として list 化。
 長期的にどちらか 1 ファイルに寄せたいケースを発見する用。
@@ -17,23 +17,35 @@
 |---|---|---|
 | 中華丼 | チュウカドン | `core/jukugo/basic/general.toml`, `core/jukugo/nature/foods.toml` |
 | 元素 | ゲンソ | `core/jukugo/basic/general.toml`, `core/jukugo/nature/science.toml` |
+| 刑事 | ケイジ | `core/jukugo/basic/general.toml`, `core/jukugo/society/specialized.toml` |
 | 単衣 | ヒトエ | `core/jukugo/basic/general.toml`, `core/jukugo/objects/clothes.toml` |
+| 司法 | シホウ | `core/jukugo/society/politics.toml`, `core/jukugo/society/specialized.toml` |
 | 唐揚げ | カラアゲ | `core/jukugo/basic/general.toml`, `core/jukugo/nature/foods.toml` |
 | 山風 | ヤマカゼ | `core/jukugo/basic/general.toml`, `core/jukugo/nature/weather.toml` |
 | 巫女 | ミコ | `core/jukugo/basic/general.toml`, `core/jukugo/humanities/religions.toml` |
+| 弓矢 | ユミヤ | `core/jukugo/humanities/arts.toml`, `core/jukugo/society/specialized.toml` |
+| 損益 | ソンエキ | `core/jukugo/basic/general.toml`, `core/jukugo/society/specialized.toml` |
+| 整数 | セイスウ | `core/jukugo/basic/general.toml`, `core/jukugo/society/specialized.toml` |
 | 水素 | スイソ | `core/jukugo/basic/general.toml`, `core/jukugo/nature/science.toml` |
+| 決算 | ケッサン | `core/jukugo/basic/general.toml`, `core/jukugo/society/specialized.toml` |
 | 海老天 | エビテン | `core/jukugo/basic/general.toml`, `core/jukugo/nature/foods.toml` |
 | 海風 | ウミカゼ | `core/jukugo/basic/general.toml`, `core/jukugo/nature/weather.toml` |
 | 石川 | イシカワ | `core/jukugo/nature/place_names.toml`, `core/jukugo/proper/personal_names.toml` |
 | 硫黄 | イオウ | `core/jukugo/basic/general.toml`, `core/jukugo/nature/science.toml` |
 | 神輿 | ミコシ | `core/jukugo/basic/general.toml`, `core/jukugo/objects/vehicles.toml` |
 | 窒素 | チッソ | `core/jukugo/basic/general.toml`, `core/jukugo/nature/science.toml` |
+| 立法 | リッポウ | `core/jukugo/society/politics.toml`, `core/jukugo/society/specialized.toml` |
 | 素人 | シロウト | `core/jukugo/basic/general.toml`, `core/jukugo/humanities/arts.toml` |
 | 膝上 | ヒザウエ | `core/jukugo/basic/general.toml`, `core/jukugo/nature/body_parts.toml` |
 | 膝下 | ヒザシタ | `core/jukugo/basic/general.toml`, `core/jukugo/nature/body_parts.toml` |
+| 薙刀 | ナギナタ | `core/jukugo/humanities/arts.toml`, `core/jukugo/society/specialized.toml` |
+| 行政 | ギョウセイ | `core/jukugo/society/politics.toml`, `core/jukugo/society/specialized.toml` |
 | 親子丼 | オヤコドン | `core/jukugo/basic/general.toml`, `core/jukugo/nature/foods.toml` |
 | 豚丼 | ブタドン | `core/jukugo/basic/general.toml`, `core/jukugo/nature/foods.toml` |
 | 質素 | シッソ | `core/jukugo/basic/general.toml`, `core/jukugo/humanities/abstracts.toml` |
+| 配列 | ハイレツ | `core/jukugo/basic/general.toml`, `core/jukugo/society/specialized.toml` |
+| 配当金 | ハイトウキン | `core/jukugo/society/finance.toml`, `core/jukugo/society/specialized.toml` |
+| 関数 | カンスウ | `core/jukugo/basic/general.toml`, `core/jukugo/society/specialized.toml` |
 | 雨乞い | アマゴイ | `core/jukugo/basic/general.toml`, `core/jukugo/nature/weather.toml` |
 | 雨垂れ | アマダレ | `core/jukugo/basic/general.toml`, `core/jukugo/nature/weather.toml` |
 | 鯛焼き | タイヤキ | `core/jukugo/basic/general.toml`, `core/jukugo/nature/foods.toml` |
