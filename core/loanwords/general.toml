@@ -597,3 +597,86 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 "like" = "ライク"
 "comment" = "コメント"
 "reply" = "リプライ"
+
+# ── ローマ字日本文化 ──
+"karate" = "カラテ"
+"judo" = "ジュード"
+"sumo" = "スモ"
+"kimono" = "キモノ"
+"geisha" = "ゲイシャ"
+"samurai" = "サムライ"
+"ninja" = "ニンジャ"
+"manga" = "マンガ"
+"anime" = "アニメ"
+"senpai" = "センパイ"
+"kawaii" = "カワイイ"
+"otaku" = "オタク"
+"tsunami" = "ツナミ"
+
+# ── 製品 / ブランド ──
+"iPad" = "アイパッド"
+"MacBook" = "マックブック"
+"Galaxy" = "ギャラクシー"
+"Xbox" = "エックスボックス"
+"PlayStation" = "プレイステーション"
+"Nintendo" = "ニンテンドー"
+"Sony" = "ソニー"
+"Samsung" = "サムスン"
+"Toyota" = "トヨタ"
+"Honda" = "ホンダ"
+"Nissan" = "ニッサン"
+
+# ── 音楽ジャンル ──
+"rock" = "ロック"
+"pop" = "ポップ"
+"jazz" = "ジャズ"
+"classic" = "クラシック"
+"blues" = "ブルース"
+"metal" = "メタル"
+"punk" = "パンク"
+"disco" = "ディスコ"
+"rap" = "ラップ"
+"opera" = "オペラ"
+
+# ── ファッション ──
+"street" = "ストリート"
+"casual" = "カジュアル"
+"formal" = "フォーマル"
+"elegant" = "エレガント"
+"vintage" = "ヴィンテージ"
+"modern" = "モダン"
+"stylish" = "スタイリッシュ"
+"trendy" = "トレンディ"
+
+# ── 飲料 ──
+"cola" = "コーラ"
+"soda" = "ソーダ"
+"latte" = "ラテ"
+"mocha" = "モカ"
+"espresso" = "エスプレッソ"
+"cocktail" = "カクテル"
+
+# ── 趣味補強 ──
+"fishing" = "フィッシング"
+"camping" = "キャンピング"
+"hiking" = "ハイキング"
+"jogging" = "ジョギング"
+
+# ── ファイル拡張子 ──
+"mp3" = "エムピースリー"
+"mp4" = "エムピーフォー"
+"jpg" = "ジェイペグ"
+"png" = "ピング"
+"gif" = "ジフ"
+"pdf" = "ピーディーエフ"
+"zip" = "ジップ"
+"exe" = "エグゼ"
+
+# ── 動詞補強 ──
+"buy" = "バイ"
+"sell" = "セル"
+"make" = "メイク"
+"break" = "ブレイク"
+"open" = "オープン"
+"close" = "クローズ"
+"lock" = "ロック"
