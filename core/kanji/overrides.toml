@@ -2501,7 +2501,7 @@ default = "さま"
 # 「できる様に / 見る様な / -した様で / -ない様」 等 動詞・形容詞活用 prev = 「ヨウ」 (= ような/ように/ようだ)
 # (= 「神様 / 王様」 等 漢字 prev は default さま 維持)
 [[kanji.match]]
-prev_ends_any = ["る", "た", "い", "ない", "って", "う"]
+prev_ends_any = ["る", "た", "い", "ない", "って", "う", "の"]
 reading = "ヨウ"
 
 # === default 倒し 1 字 ===
@@ -10758,16 +10758,8 @@ default = "イン"
 # 単独 + 助詞接続 → 「たまご」 (= 「卵が/卵を/卵の」 等)
 [[kanji]]
 char = "卵"
-default = "ラン"
-
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や"]
-reading = "たまご"
-
-# 「普通の卵 / その卵 / 〜の卵」 等 助詞 prev で訓「たまご」 (= 単独使用名詞)
-[[kanji.match]]
-prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
-reading = "たまご"
+# ラン は jukugo (卵巣/産卵/卵子 等) が覆うため default たまご
+default = "たまご"
 
 # 「反」 default 「ハン」 (= 反対/反応/反映/反撃/反抗/反復/反省/反射/反逆)。
 # 動詞 「反る」 は okurigana 列挙で 「そ」 へ切替
@@ -11493,11 +11485,8 @@ default = "ひめ"
 # 単独 + 助詞接続 → 「やつ」 (= 「奴が/奴は」 等)
 [[kanji]]
 char = "奴"
-default = "ド"
-
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
-reading = "やつ"
+# ド は jukugo (奴隷/売国奴 等) が覆うため default やつ
+default = "やつ"
 
 # 「実」 default 「ジツ」 (= 事実/真実/果実/口実/実例/実家/実は (= 副詞))。
 # 単独 + 助詞接続 → 「み」 (= 「実が成る/実を結ぶ」 等、 「は」 は除く)
@@ -11739,11 +11728,14 @@ default = "ドウ"
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
 reading = "ほら"
 
-# 「港」 default 「コウ」 (= 港湾/空港/出港/帰港/良港/海港)。
-# 単独 + 助詞接続 → 「みなと」 (= 「港が/港の」 等)
 [[kanji]]
 char = "港"
 default = "コウ"
+
+# ○○港 (名古屋港/横浜港 等) suffix = コウ、 next_starts みなと match より優先
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "コウ"
 
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
