@@ -1413,14 +1413,16 @@ reading = "ワ"
 char = "内"
 default = "ナイ"
 
+# ○○内 suffix (空港内/車内/社内 等) = ナイ、 うち match より優先
 [[kanji.match]]
-prev_char_type = "カタカナ"  # 「ブレワイ内 / システム内 / マップ内」 等
+prev_char_type = "漢字"
 reading = "ナイ"
 
 [[kanji.match]]
-# 「内に / 内で / 内の / 内は / 内が / 内を / 内へ」 等の助詞接続 (= 名詞用法)。
-# next_char_type = "ひらがな" は雑指定として禁止のため助詞 13 個を literal 列挙。
-# 「内なる」 (= 連体形助動詞) は default ナイナル に落ちる corner case として許容。
+prev_char_type = "カタカナ"
+reading = "ナイ"
+
+[[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
 reading = "うち"
 
@@ -8459,7 +8461,8 @@ default = "ケン"
 # 訓 「との」 (= 殿様/殿御) は jukugo 個別
 [[kanji]]
 char = "殿"
-default = "デン"
+# デン は jukugo (宮殿/殿堂 等) が覆うため default ドノ (敬称)
+default = "ドノ"
 
 # 「郭」 default 「カク」 (= 輪郭/城郭/外郭/郭公/胸郭)。
 # unihan default 「くるわ」 は古語、 現代では熟語 dominant
@@ -11171,11 +11174,8 @@ default = "ゆめ"
 # 単独 + 助詞接続 → 「おんな」 (= 「女が/女の」 等)、 「女」 = ジョ 熟語 dominant
 [[kanji]]
 char = "女"
-default = "ジョ"
-
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
-reading = "おんな"
+# ジョ は jukugo (女性/女子/女優/少女 等) が覆うため default おんな
+default = "おんな"
 
 # 「婆」 default 「バ」 (= 老婆/産婆/鬼婆)。
 # 単独 + 助詞接続 → 「ばば」 (= 「お婆さん」 等は jukugo)
@@ -12740,11 +12740,8 @@ reading = "い"
 # 動詞 「煮る」 は okurigana 列挙で 「に」 へ切替
 [[kanji]]
 char = "煮"
-default = "シャ"
-
-[[kanji.match]]
-next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ"]
-reading = "に"
+# シャ は jukugo (煮沸 等) が覆うため default に (煮物/筑前煮/角煮)
+default = "に"
 
 # 「潮」 default 「チョウ」 (= 潮汐/満潮/干潮/赤潮/潮流/風潮)。
 # 単独 + 助詞接続 → 「しお」 (= 「潮が/潮の」 等)
