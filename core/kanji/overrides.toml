@@ -4414,7 +4414,7 @@ default = "シン"
 
 [[kanji]]
 char = "橘"
-default = "キツ"
+default = "タチバナ"
 
 [[kanji]]
 char = "橙"
@@ -10172,7 +10172,7 @@ default = "クツ"
 # unihan default 「いき」 は名詞単独、 「粋」 = いき 用例も多いが熟語 dominant
 [[kanji]]
 char = "粋"
-default = "スイ"
+default = "イキ"
 
 # 「竜」 default 「リュウ」 (= 竜宮/恐竜/水竜/竜神/竜骨)。
 # unihan default 「たつ」 は単独/干支「辰」 と同源、 「竜」 = タツ 用例もあるが熟語 dominant
@@ -17578,7 +17578,7 @@ default = "わらび"
 
 [[kanji]]
 char = "蕪"
-default = "かぶら"
+default = "カブ"
 # 蕪 訓 + 「荒蕪」
 
 [[kanji]]
