@@ -4794,3 +4794,14 @@ reading = "ニッカンシ"
 
 # regression fix: 「使い方」 = ツカイカタ (mega3 で 「使い」 を入れたため
 # 「使い方」 が 「ツカイ+ホウ」 になる回帰、 jukugo 個別登録で fix)
+
+# VV 比較 (N:\stream-comments 106K corpus) 由来
+"頭身" = "トウシン"
+"埋蔵金" = "マイゾウキン"
+
+[entries."流行"]
+reading = "リュウコウ"
+
+[[entries."流行".match]]
+next_starts_any = ["っ", "る", "り", "ら"]
+reading = "ハヤ"
