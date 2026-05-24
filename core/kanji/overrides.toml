@@ -111,11 +111,12 @@ reading = "まえ"
 char = "後"
 default = "ゴ"
 
-# ★round 47、 「○○後 + に / の / で」 名詞用法 = prev カタカナ で ゴ
-# (= 「スライド後に / リスポーン後の」 等)、 next ひらがな match より優先するため
-# 物理順序を先頭に
 [[kanji.match]]
 prev_char_type = "カタカナ"
+reading = "ゴ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
 reading = "ゴ"
 
 [[kanji.match]]
@@ -180,6 +181,11 @@ reading = "くに"
 [[kanji]]
 char = "風"
 default = "フウ"
+
+# ○○風 (中国風/和風/洋風 等) suffix = フウ、 next_starts かぜ match より優先
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "フウ"
 
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
@@ -260,26 +266,10 @@ reading = "もの"
 next_eq = "々"
 reading = "もの"
 
+# サン は jukugo (山脈/火山/登山/山岳 等) が覆うため default やま
 [[kanji]]
 char = "山"
-default = "サン"
-
-# 「山メガネ」 等 next カタカナ = 訓「やま」 (= 訓 + loanword pattern、 配信者名)
-[[kanji.match]]
-next_char_type = "カタカナ"
-reading = "やま"
-
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
-reading = "やま"
-
-[[kanji.match]]
-prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
-reading = "やま"
-
-[[kanji.match]]
-next_eq = "々"
-reading = "やま"
+default = "やま"
 
 [[kanji]]
 char = "川"
@@ -10909,19 +10899,10 @@ reading = "もと"
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
 reading = "もと"
 
-# 「声」 default 「セイ」 (= 声明/音声/発声/和声/声紋/笑声/歓声)。
-# 単独 + 助詞接続 → 「こえ」 (= 「声が/声の」 等)
+# セイ は jukugo (声明/音声/発声/歓声 等) が覆うため default こえ
 [[kanji]]
 char = "声"
-default = "セイ"
-
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
-reading = "こえ"
-
-[[kanji.match]]
-prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
-reading = "こえ"
+default = "こえ"
 
 # 「右」 default 「ウ」 (= 右翼/右折/左右/右側/右手/座右)。
 # 単独 + 助詞接続 → 「みぎ」 (= 「右が/右の」 等)
@@ -11503,20 +11484,10 @@ default = "フ"
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
 reading = "おっと"
 
-# 「姫」 default 「キ」 (= 姫君/王姫/美姫)、 「姫」 = ひめ も dominant な人名/物語。
-# 単独 + 助詞接続 → 「ひめ」 (= 「姫が/姫の」 等)
+# キ は jukugo (姫路 等) が覆うため default ひめ
 [[kanji]]
 char = "姫"
-default = "キ"
-
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
-reading = "ひめ"
-
-# 「白姫 / 紅姫 / 黒姫 / 紫姫 / N姫」 等 漢字 prev = 訓「ひめ」
-[[kanji.match]]
-prev_char_type = "漢字"
-reading = "ひめ"
+default = "ひめ"
 
 # 「奴」 default 「ド」 (= 奴隷/守銭奴/匈奴/売国奴)。
 # 単独 + 助詞接続 → 「やつ」 (= 「奴が/奴は」 等)
