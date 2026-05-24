@@ -24,14 +24,14 @@ git に commit されている master HEAD の状態を基準にする。
 | カテゴリ | エントリ数 | サイズ |
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,688** | **739 KB** |
-| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **8,565** | **288 KB** |
+| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **8,579** | **288 KB** |
 | [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **311** | **10 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **168** | **5.2 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,767** | **187 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **435** | **6.1 KB** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **228** | **13 KB** |
-| **合計** | **53,162** | **1.22 MB** |
+| **合計** | **53,176** | **1.22 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -56,7 +56,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/jukugo/<genre>/*` — 手動 PR メンテのジャンル別 jukugo (≥ 2 字 surface)。 lib の Step 3 (jukugo lookup) で Lindera より優先採用。 各 genre dir の `_genre.toml` がカテゴリ description を持つ。
 
-**合計**: 8,565 件 / 288 KB (genre 6 区分)
+**合計**: 8,579 件 / 288 KB (genre 6 区分)
 
 #### 自然・生命
 
@@ -67,12 +67,12 @@ git に commit されている master HEAD の状態を基準にする。
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
 | [`core/jukugo/nature/animals.toml`](core/jukugo/nature/animals.toml) | 199 | 5.3 KB | 動植物 / 魚介 / 鳥 / 昆虫 / 茸 / 海藻の難読 |
-| [`core/jukugo/nature/place_names.toml`](core/jukugo/nature/place_names.toml) | 196 | 6.2 KB | 地名 (47 都道府県 / 主要都市 / 駅 / 寺社仏閣 / 観光地) |
+| [`core/jukugo/nature/place_names.toml`](core/jukugo/nature/place_names.toml) | 199 | 6.3 KB | 地名 (47 都道府県 / 主要都市 / 駅 / 寺社仏閣 / 観光地) |
 | [`core/jukugo/nature/science.toml`](core/jukugo/nature/science.toml) | 190 | 5.6 KB | 自然科学 (天文 / 物理 / 化学 / 生物 / 地学) |
 | [`core/jukugo/nature/weather.toml`](core/jukugo/nature/weather.toml) | 189 | 5.7 KB | 気象 / 天候 / 季語的気象 / 二十四節気 / 海洋気象 |
 | [`core/jukugo/nature/foods.toml`](core/jukugo/nature/foods.toml) | 185 | 5.4 KB | 食べ物 / 料理 / 和菓子 / 郷土料理 / 食材 / 調味料 |
 | [`core/jukugo/nature/body_parts.toml`](core/jukugo/nature/body_parts.toml) | 172 | 5.2 KB | 体の部位 / 内臓 / 骨格 / 筋肉 / 神経 |
-| **小計** (6 ファイル) | **1,131** | **33 KB** | |
+| **小計** (6 ファイル) | **1,134** | **33 KB** | |
 
 #### 人文・芸術
 
@@ -86,10 +86,10 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/jukugo/humanities/literature.toml`](core/jukugo/humanities/literature.toml) | 180 | 6.1 KB | 古典文学 / 作品名 / 文学用語 / 詩歌 / 評論 |
 | [`core/jukugo/humanities/music.toml`](core/jukugo/humanities/music.toml) | 177 | 5.5 KB | 音楽ジャンル / 楽典 / 楽器 / 演奏 / 音楽用語 |
 | [`core/jukugo/humanities/religions.toml`](core/jukugo/humanities/religions.toml) | 170 | 5.1 KB | 神道 / 仏教 / キリスト教 / イスラム / 儀礼 |
+| [`core/jukugo/humanities/idioms.toml`](core/jukugo/humanities/idioms.toml) | 150 | 7.8 KB | 慣用句 / ことわざ / 故事成語 (フレーズ単位) |
 | [`core/jukugo/humanities/emotions.toml`](core/jukugo/humanities/emotions.toml) | 149 | 4.0 KB | 感情 / 心理状態 / 性格 / 心情 |
-| [`core/jukugo/humanities/idioms.toml`](core/jukugo/humanities/idioms.toml) | 148 | 7.6 KB | 慣用句 / ことわざ / 故事成語 (フレーズ単位) |
 | [`core/jukugo/humanities/abstracts.toml`](core/jukugo/humanities/abstracts.toml) | 135 | 3.6 KB | 美意識 / 古典文学 / 仏教 / 儒教 / 思想 |
-| **小計** (7 ファイル) | **1,155** | **38 KB** | |
+| **小計** (7 ファイル) | **1,157** | **38 KB** | |
 
 #### 社会・制度
 
@@ -113,9 +113,9 @@ git に commit されている master HEAD の状態を基準にする。
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/jukugo/proper/personal_names.toml`](core/jukugo/proper/personal_names.toml) | 253 | 9.6 KB | 人名 (戦国 / 平安 / 江戸 / 明治大正 / 古典作家、現代私人除く) |
+| [`core/jukugo/proper/personal_names.toml`](core/jukugo/proper/personal_names.toml) | 260 | 9.8 KB | 人名 (戦国 / 平安 / 江戸 / 明治大正 / 古典作家、現代私人除く) |
 | [`core/jukugo/proper/proper_nouns.toml`](core/jukugo/proper/proper_nouns.toml) | 188 | 8.2 KB | 固有名詞 (大学 / 中央官庁 / 元号 / 歴史的事象、PR 募集中) |
-| **小計** (2 ファイル) | **441** | **18 KB** | |
+| **小計** (2 ファイル) | **448** | **18 KB** | |
 
 #### 物体・工芸
 
@@ -128,9 +128,9 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/jukugo/objects/colors.toml`](core/jukugo/objects/colors.toml) | 202 | 6.0 KB | 色名 / 染色 / 模様 / 古典色 / 鉱物色 |
 | [`core/jukugo/objects/vehicles.toml`](core/jukugo/objects/vehicles.toml) | 174 | 5.7 KB | 乗り物 / 交通手段 / 船舶 / 航空 / 鉄道 |
 | [`core/jukugo/objects/clothes.toml`](core/jukugo/objects/clothes.toml) | 167 | 4.6 KB | 衣服 / 装束 / アクセサリー / 履物 |
-| [`core/jukugo/objects/architecture.toml`](core/jukugo/objects/architecture.toml) | 146 | 4.2 KB | 建築 / 建造物 / 寺社建築 / 城郭 / 庭園 |
+| [`core/jukugo/objects/architecture.toml`](core/jukugo/objects/architecture.toml) | 148 | 4.3 KB | 建築 / 建造物 / 寺社建築 / 城郭 / 庭園 |
 | [`core/jukugo/objects/railway.toml`](core/jukugo/objects/railway.toml) | 74 | 2.5 KB | 鉄道専門用語 (線路 / 駅 / 運行 / 車両) |
-| **小計** (5 ファイル) | **763** | **23 KB** | |
+| **小計** (5 ファイル) | **765** | **23 KB** | |
 
 #### 基本・構造
 
