@@ -8,7 +8,7 @@
 
 (なし — divergent reading 0 件、 健全)
 
-## 同一 reading (21 件)
+## 同一 reading (23 件)
 
 実害なし (jukugo merge で同値が上書きされても reading 不変)。 整理目安として list 化。
 長期的にどちらか 1 ファイルに寄せたいケースを発見する用。
@@ -25,7 +25,9 @@
 | 海老天 | エビテン | `core/jukugo/basic/general.toml`, `core/jukugo/nature/foods.toml` |
 | 海風 | ウミカゼ | `core/jukugo/basic/general.toml`, `core/jukugo/nature/weather.toml` |
 | 石川 | イシカワ | `core/jukugo/nature/place_names.toml`, `core/jukugo/proper/personal_names.toml` |
+| 硫黄 | イオウ | `core/jukugo/basic/general.toml`, `core/jukugo/nature/science.toml` |
 | 神輿 | ミコシ | `core/jukugo/basic/general.toml`, `core/jukugo/objects/vehicles.toml` |
+| 窒素 | チッソ | `core/jukugo/basic/general.toml`, `core/jukugo/nature/science.toml` |
 | 素人 | シロウト | `core/jukugo/basic/general.toml`, `core/jukugo/humanities/arts.toml` |
 | 膝上 | ヒザウエ | `core/jukugo/basic/general.toml`, `core/jukugo/nature/body_parts.toml` |
 | 膝下 | ヒザシタ | `core/jukugo/basic/general.toml`, `core/jukugo/nature/body_parts.toml` |
