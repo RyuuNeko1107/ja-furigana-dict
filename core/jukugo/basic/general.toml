@@ -5135,6 +5135,10 @@ reading = "ハヤ"
 [entries."紅葉"]
 reading = "コウヨウ"
 
+[[entries."紅葉".match]]
+reading = "モミジ"
+next_starts_any = ["狩", "おろし", "饅頭", "まんじゅう"]
+
 [[entries."紅葉".alt]]
 reading = "モミジ"
 sense = "maple-leaf"
@@ -5150,6 +5154,15 @@ weight = 25
 
 [entries."心中"]
 reading = "シンジュウ"
+
+[[entries."心中".match]]
+reading = "シンチュウ"
+next_eq = "を"
+next2_starts_any = ["察", "思", "推"]
+
+[[entries."心中".match]]
+reading = "シンチュウ"
+next_starts_any = ["お察し", "穏やか", "複雑"]
 
 [[entries."心中".alt]]
 reading = "シンチュウ"
@@ -5273,6 +5286,14 @@ weight = 25
 [entries."分別"]
 reading = "ブンベツ"
 
+[[entries."分別".match]]
+reading = "フンベツ"
+next_eq_any = ["がある", "がない", "がつく", "がつかない"]
+
+[[entries."分別".match]]
+reading = "フンベツ"
+next_starts_any = ["盛り", "くさ"]
+
 [[entries."分別".alt]]
 reading = "フンベツ"
 sense = "good-sense"
@@ -5317,6 +5338,19 @@ weight = 10
 
 [entries."目下"]
 reading = "メシタ"
+
+[[entries."目下".match]]
+reading = "モッカ"
+next_starts_any = ["のところ"]
+
+[[entries."目下".match]]
+reading = "モッカ"
+next_eq = "の"
+next2_starts_any = ["課題", "問題", "状況", "最大", "目標", "関心"]
+
+[[entries."目下".match]]
+reading = "モッカ"
+next_starts_any = ["進行", "検討", "調査", "捜査", "対応"]
 
 [[entries."目下".alt]]
 reading = "モッカ"
@@ -5407,6 +5441,15 @@ weight = 15
 
 [entries."人事"]
 reading = "ジンジ"
+
+[[entries."人事".match]]
+reading = "ヒトゴト"
+next_eq_any = ["だと", "とは"]
+next2_starts_any = ["思"]
+
+[[entries."人事".match]]
+reading = "ヒトゴト"
+next_eq_any = ["じゃない", "ではない", "ではなく"]
 
 [[entries."人事".alt]]
 reading = "ヒトゴト"
@@ -5513,6 +5556,21 @@ weight = 10
 
 [entries."大勢"]
 reading = "オオゼイ"
+
+[[entries."大勢".match]]
+reading = "タイセイ"
+next_eq = "に"
+next2_starts_any = ["影響", "従"]
+
+[[entries."大勢".match]]
+reading = "タイセイ"
+next_eq = "が"
+next2_starts_any = ["決"]
+
+[[entries."大勢".match]]
+reading = "タイセイ"
+next_eq = "を"
+next2_starts_any = ["占"]
 
 [[entries."大勢".alt]]
 reading = "タイセイ"
