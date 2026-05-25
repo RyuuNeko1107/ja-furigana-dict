@@ -24,14 +24,14 @@ git に commit されている master HEAD の状態を基準にする。
 | カテゴリ | エントリ数 | サイズ |
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,684** | **739 KB** |
-| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **2,681** | **128 KB** |
+| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **2,799** | **150 KB** |
 | [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **311** | **10 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **719** | **19 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,767** | **174 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **435** | **6.1 KB** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **228** | **13 KB** |
-| **合計** | **47,825** | **1.06 MB** |
+| **合計** | **47,943** | **1.09 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -56,7 +56,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/jukugo/<genre>/*` — 手動 PR メンテのジャンル別 jukugo (≥ 2 字 surface)。 lib の Step 3 (jukugo lookup) で Lindera より優先採用。 各 genre dir の `_genre.toml` がカテゴリ description を持つ。
 
-**合計**: 2,681 件 / 128 KB (genre 6 区分)
+**合計**: 2,799 件 / 150 KB (genre 6 区分)
 
 #### 自然・生命
 
@@ -66,13 +66,13 @@ git に commit されている master HEAD の状態を基準にする。
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/jukugo/nature/foods.toml`](core/jukugo/nature/foods.toml) | 88 | 2.9 KB | 食べ物 / 料理 / 和菓子 / 郷土料理 / 食材 / 調味料 |
+| [`core/jukugo/nature/foods.toml`](core/jukugo/nature/foods.toml) | 71 | 3.0 KB | 食べ物 / 料理 / 和菓子 / 郷土料理 / 食材 / 調味料 |
 | [`core/jukugo/nature/animals.toml`](core/jukugo/nature/animals.toml) | 62 | 1.8 KB | 動植物 / 魚介 / 鳥 / 昆虫 / 茸 / 海藻の難読 |
 | [`core/jukugo/nature/body_parts.toml`](core/jukugo/nature/body_parts.toml) | 61 | 2.1 KB | 体の部位 / 内臓 / 骨格 / 筋肉 / 神経 |
 | [`core/jukugo/nature/place_names.toml`](core/jukugo/nature/place_names.toml) | 38 | 1.4 KB | 地名 (47 都道府県 / 主要都市 / 駅 / 寺社仏閣 / 観光地) |
-| [`core/jukugo/nature/weather.toml`](core/jukugo/nature/weather.toml) | 37 | 1.5 KB | 気象 / 天候 / 季語的気象 / 二十四節気 / 海洋気象 |
+| [`core/jukugo/nature/weather.toml`](core/jukugo/nature/weather.toml) | 36 | 1.4 KB | 気象 / 天候 / 季語的気象 / 二十四節気 / 海洋気象 |
 | [`core/jukugo/nature/science.toml`](core/jukugo/nature/science.toml) | 10 | 472 B | 自然科学 (天文 / 物理 / 化学 / 生物 / 地学) |
-| **小計** (6 ファイル) | **296** | **10 KB** | |
+| **小計** (6 ファイル) | **278** | **10 KB** | |
 
 #### 人文・芸術
 
@@ -82,14 +82,14 @@ git に commit されている master HEAD の状態を基準にする。
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/jukugo/humanities/arts.toml`](core/jukugo/humanities/arts.toml) | 60 | 2.1 KB | 古典芸能 / 武道 / 茶華香 / 工芸 |
+| [`core/jukugo/humanities/arts.toml`](core/jukugo/humanities/arts.toml) | 58 | 2.1 KB | 古典芸能 / 武道 / 茶華香 / 工芸 |
 | [`core/jukugo/humanities/literature.toml`](core/jukugo/humanities/literature.toml) | 49 | 2.2 KB | 古典文学 / 作品名 / 文学用語 / 詩歌 / 評論 |
 | [`core/jukugo/humanities/religions.toml`](core/jukugo/humanities/religions.toml) | 46 | 1.8 KB | 神道 / 仏教 / キリスト教 / イスラム / 儀礼 |
 | [`core/jukugo/humanities/idioms.toml`](core/jukugo/humanities/idioms.toml) | 42 | 2.7 KB | 慣用句 / ことわざ / 故事成語 (フレーズ単位) |
 | [`core/jukugo/humanities/music.toml`](core/jukugo/humanities/music.toml) | 19 | 873 B | 音楽ジャンル / 楽典 / 楽器 / 演奏 / 音楽用語 |
 | [`core/jukugo/humanities/abstracts.toml`](core/jukugo/humanities/abstracts.toml) | 17 | 665 B | 美意識 / 古典文学 / 仏教 / 儒教 / 思想 |
 | [`core/jukugo/humanities/emotions.toml`](core/jukugo/humanities/emotions.toml) | 6 | 293 B | 感情 / 心理状態 / 性格 / 心情 |
-| **小計** (7 ファイル) | **239** | **11 KB** | |
+| **小計** (7 ファイル) | **237** | **11 KB** | |
 
 #### 社会・制度
 
@@ -126,11 +126,11 @@ git に commit されている master HEAD の状態を基準にする。
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
 | [`core/jukugo/objects/colors.toml`](core/jukugo/objects/colors.toml) | 62 | 1.9 KB | 色名 / 染色 / 模様 / 古典色 / 鉱物色 |
-| [`core/jukugo/objects/clothes.toml`](core/jukugo/objects/clothes.toml) | 58 | 1.8 KB | 衣服 / 装束 / アクセサリー / 履物 |
+| [`core/jukugo/objects/clothes.toml`](core/jukugo/objects/clothes.toml) | 57 | 1.7 KB | 衣服 / 装束 / アクセサリー / 履物 |
 | [`core/jukugo/objects/architecture.toml`](core/jukugo/objects/architecture.toml) | 34 | 1.3 KB | 建築 / 建造物 / 寺社建築 / 城郭 / 庭園 |
-| [`core/jukugo/objects/vehicles.toml`](core/jukugo/objects/vehicles.toml) | 23 | 909 B | 乗り物 / 交通手段 / 船舶 / 航空 / 鉄道 |
+| [`core/jukugo/objects/vehicles.toml`](core/jukugo/objects/vehicles.toml) | 22 | 886 B | 乗り物 / 交通手段 / 船舶 / 航空 / 鉄道 |
 | [`core/jukugo/objects/railway.toml`](core/jukugo/objects/railway.toml) | 6 | 341 B | 鉄道専門用語 (線路 / 駅 / 運行 / 車両) |
-| **小計** (5 ファイル) | **183** | **6.2 KB** | |
+| **小計** (5 ファイル) | **181** | **6.1 KB** | |
 
 #### 基本・構造
 
@@ -140,9 +140,9 @@ git に commit されている master HEAD の状態を基準にする。
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml) | 1,756 | 90 KB | 二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む) |
+| [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml) | 1,896 | 112 KB | 二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む) |
 | [`core/jukugo/basic/four_char.toml`](core/jukugo/basic/four_char.toml) | 13 | 653 B | 四字熟語 (4 字 + 全 CJK 漢字) |
-| **小計** (2 ファイル) | **1,769** | **91 KB** | |
+| **小計** (2 ファイル) | **1,909** | **113 KB** | |
 
 
 ### 作品造語
