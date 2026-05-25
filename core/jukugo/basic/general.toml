@@ -5318,6 +5318,10 @@ weight = 30
 [entries."身体"]
 reading = "カラダ"
 
+[[entries."身体".match]]
+reading = "シンタイ"
+next_starts_any = ["検査", "的", "障害", "能力", "測定", "活動", "機能", "拘束", "接触"]
+
 [[entries."身体".alt]]
 reading = "シンタイ"
 sense = "body-formal"
@@ -5359,6 +5363,14 @@ weight = 40
 
 [entries."何時"]
 reading = "ナンジ"
+
+[[entries."何時".match]]
+reading = "イツ"
+next_starts_any = ["でも", "もの", "になったら", "になれば", "までも", "からか"]
+
+[[entries."何時".match]]
+reading = "ナンジ"
+next_starts_any = ["頃", "ごろ", "半"]
 
 [[entries."何時".alt]]
 reading = "イツ"
@@ -5807,6 +5819,10 @@ weight = 30
 
 [entries."飛沫"]
 reading = "シブキ"
+
+[[entries."飛沫".match]]
+reading = "ヒマツ"
+next_starts_any = ["感染", "防止", "対策", "拡散", "飛散"]
 
 [[entries."飛沫".alt]]
 reading = "ヒマツ"
