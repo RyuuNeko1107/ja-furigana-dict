@@ -1788,3 +1788,15 @@ expected = "ひとびと"
 input = "大剣"
 mode = "hiragana"
 expected = "だいけん"
+
+# 煙 default flip + 出来 jukugo (session 2026-05-25 continued)
+
+[[case]]
+input = "煙が出てる"
+mode = "hiragana"
+expected = "けむりがでてる"
+
+[[case]]
+input = "黒煙"
+mode = "hiragana"
+expected = "こくえん"

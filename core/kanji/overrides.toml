@@ -5290,7 +5290,11 @@ default = "ショウ"
 
 [[kanji]]
 char = "煙"
-default = "エン"
+default = "けむり"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "エン"
 
 [[kanji]]
 char = "熟"
