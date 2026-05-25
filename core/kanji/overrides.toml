@@ -284,11 +284,7 @@ reading = "コ"
 
 [[kanji]]
 char = "美"
-default = "ビ"  # 美術 / 美人 / 美容 / 美少女 等
-
-[[kanji.match]]
-next_starts = "し"  # 美しい / 美しかった / 美しさ
-reading = "ウツクシ"
+default = "ウツクシ"  # 美術 / 美人 / 美容 / 美少女 等
 
 [[kanji]]
 char = "食"
@@ -304,83 +300,48 @@ reading = "ク"
 
 [[kanji]]
 char = "飲"
-default = "イン"  # 飲料 / 飲食
-
-[[kanji.match]]
-next_starts_any = ["み", "む", "ん", "め", "ま"]  # 飲み / 飲む / 飲んだ / 飲める / 飲まない
-reading = "ノ"
+default = "ノ"  # 飲料 / 飲食
 
 [[kanji]]
 char = "走"
-default = "ソウ"  # 走行 / 競走 / 暴走
-
-[[kanji.match]]
-next_starts_any = ["り", "る", "っ", "ら", "れ"]  # 走り / 走る / 走った / 走らない / 走れば
-reading = "ハシ"
+default = "ハシ"  # 走行 / 競走 / 暴走
 
 [[kanji]]
 char = "高"
-default = "コウ"  # 高校 / 高速 / 最高 / 高度
-
-[[kanji.match]]
-next_starts_any = ["い", "く", "か", "さ", "ま", "す"]  # 高い / 高く / 高かった / 高さ / 高まる / 高すぎ
-reading = "タカ"
+default = "タカ"  # 高校 / 高速 / 最高 / 高度
 
 [[kanji]]
 char = "楽"
-default = "ラク"  # 楽園 / 安楽 (= 音楽=オンガク は jukugo entry で band 1000)
-
-[[kanji.match]]
-next_starts = "し"  # 楽しい / 楽しかった / 楽しむ
-reading = "タノシ"
+default = "タノシ"  # 楽園 / 安楽 (= 音楽=オンガク は jukugo entry で band 1000)
 
 [[kanji]]
 char = "苦"
-default = "ク"  # 苦労 / 苦痛 / 苦悩
-
-[[kanji.match]]
-next_starts = "し"  # 苦しい / 苦しんだ / 苦しさ
-reading = "クルシ"
+default = "クルシ"  # 苦労 / 苦痛 / 苦悩
 
 [[kanji]]
 char = "早"
-default = "ソウ"  # 早朝 / 早期 / 早急
-
-[[kanji.match]]
-next_starts_any = ["い", "く", "か", "ま", "す"]  # 早い / 早く / 早かった / 早まる / 早すぎ
-reading = "ハヤ"
+default = "ハヤ"  # 早朝 / 早期 / 早急
 
 [[kanji]]
 char = "古"
-default = "コ"  # 古代 / 古典 / 中古
+default = "フル"
 
+# 古○ prefix (古代/古典/中古/古龍 等) = コ
 [[kanji.match]]
-next_starts_any = ["い", "く", "か", "び"]  # 古い / 古く / 古かった / 古びる
-reading = "フル"
+next_char_type = "漢字"
+reading = "コ"
 
 [[kanji]]
 char = "低"
-default = "テイ"  # 低音 / 低気圧 / 低下
-
-[[kanji.match]]
-next_starts_any = ["い", "く", "か", "ま"]  # 低い / 低く / 低かった / 低まる
-reading = "ヒク"
+default = "ヒク"  # 低音 / 低気圧 / 低下
 
 [[kanji]]
 char = "忙"
-default = "ボウ"  # 多忙 / 繁忙
-
-[[kanji.match]]
-next_starts = "し"  # 忙しい / 忙しかった
-reading = "イソガシ"
+default = "イソガシ"  # 多忙 / 繁忙
 
 [[kanji]]
 char = "読"
-default = "ドク"  # 読書 / 読者 / 音読
-
-[[kanji.match]]
-next_starts_any = ["み", "む", "ん", "め", "ま"]  # 読み / 読む / 読んだ / 読める
-reading = "ヨ"
+default = "ヨ"  # 読書 / 読者 / 音読
 
 [[kanji]]
 char = "遅"
@@ -415,12 +376,7 @@ reading = "ツカ"
 
 [[kanji]]
 char = "言"
-default = "ゲン"
-# 言う / 言わない / 言い / 言える / 言って / 言った / 言おう
-[[kanji.match]]
-next_starts_any = ["う", "わ", "い", "え", "っ", "お"]
-reading = "イ"
-
+default = "イ"
 [[kanji]]
 char = "見"
 default = "ケン"
@@ -442,12 +398,7 @@ reading = "ミ"
 
 [[kanji]]
 char = "思"
-default = "シ"
-# 思う / 思わない / 思い / 思える / 思って / 思った / 思おう / 思ってる
-[[kanji.match]]
-next_starts_any = ["う", "わ", "い", "え", "っ", "お"]
-reading = "オモ"
-
+default = "オモ"
 [[kanji]]
 char = "経"
 default = "ケイ"
@@ -465,36 +416,16 @@ reading = "ヘ"
 
 [[kanji]]
 char = "終"
-default = "シュウ"
-# 終わる / 終わらない / 終わり / 終わった / 終わって
-[[kanji.match]]
-next_starts_any = ["わ", "ら", "り", "る", "っ"]
-reading = "オワ"
-
+default = "オワ"
 [[kanji]]
 char = "強"
-default = "キョウ"
-# 強い / 強く / 強かった / 強さ / 強まる / 強すぎる
-[[kanji.match]]
-next_starts_any = ["い", "く", "か", "さ", "ま", "す"]
-reading = "ツヨ"
-
+default = "ツヨ"
 [[kanji]]
 char = "持"
-default = "ジ"
-# 持つ / 持たない / 持ち / 持って / 持った / 持てる
-[[kanji.match]]
-next_starts_any = ["つ", "た", "ち", "っ", "て"]
-reading = "モ"
-
+default = "モ"
 [[kanji]]
 char = "勝"
-default = "ショウ"
-# 勝つ / 勝たない / 勝ち / 勝って / 勝った / 勝てる
-[[kanji.match]]
-next_starts_any = ["つ", "た", "ち", "っ", "て"]
-reading = "カ"
-
+default = "カ"
 [[kanji]]
 char = "変"
 default = "ヘン"  # 変な / 変だ / 変身 / 変化 / 変装 等は 「ヘン」、 round 33 で 「な / だ」
@@ -505,20 +436,7 @@ reading = "カ"
 
 [[kanji]]
 char = "寝"
-default = "シン"
-# 寝る / 寝た / 寝て / 寝ます / 寝よう / 寝られる / 寝ない / 寝ぼけ / 寝れない (= 可能)
-[[kanji.match]]
-next_starts_any = ["る", "た", "て", "ま", "よ", "ら", "な", "ぼ", "れ"]
-reading = "ネ"
-# 「寝顔」「寝坊」「寝落ち」「寝技」「寝巻」「寝返り」 等の 寝 + 漢字 は jukugo dict 側で定義
-
-# ─── 多義動詞 (行/入/落/出 を next_starts で精密分岐) ────────────────────────
-#
-# 1 字 [[kanji]] block で 2 つの訓読みを切り替える設計。 ひらがな送りがなの先頭文字
-# (next_starts / next_starts_any) で 「どの活用語幹を使うか」 を declarative に書ける。
-# default は熟語用音読み (= dict band 1000 で個別熟語 entry が勝つので、 dict 未登録の
-# 漢字連続 case の fallback としてのみ使われる)。
-
+default = "ネ"
 [[kanji]]
 char = "行"
 default = "ギョウ"
@@ -616,25 +534,10 @@ default = "ため"
 # default を訓読み 「いる」 にすると 「居ない」 → 「いるない」 と誤読される。
 [[kanji]]
 char = "居"
-default = "キョ"
-# 居る / 居た / 居て / 居ます / 居ない (= 「いる」 default 化は 「居ない」 → 「いるない」 誤読のため避け)
-[[kanji.match]]
-next_starts_any = ["る", "た", "て", "ま", "な"]
-reading = "イ"
-
-# 「悪」: 形容詞 「悪い / 悪く / 悪かった」 + 接頭辞 「悪すぎる」 = 「わる」 語幹。
-# 音読み 「アク」 (= 「悪魔 / 悪人 / 善悪」) は dict 1000 で勝つ前提で default 化。
+default = "イ"
 [[kanji]]
 char = "悪"
-default = "アク"
-# 悪い / 悪く / 悪かった / 悪さ / 悪すぎる
-[[kanji.match]]
-next_starts_any = ["い", "く", "か", "さ", "す"]
-reading = "ワル"
-
-# 「嫌」: 多義 — 形容動詞 「いや」 (= 「嫌で / 嫌だ / 嫌な」) + 動詞 / 形容詞 「きら」
-# (= 「嫌い / 嫌う / 嫌わない」)。 形容動詞用法が文末 / 助詞前に多いので default は イヤ、
-# 「い / う / わ / え / お」 後続で動詞活用語幹 キラ。
+default = "ワル"
 [[kanji]]
 char = "嫌"
 default = "イヤ"
@@ -700,14 +603,12 @@ default = "に"
 # 「争奪戦 → そうだついくさ」 になる。
 [[kanji]]
 char = "戦"
-default = "セン"
-# 戦う / 戦わない / 戦い / 戦える / 戦って / 戦った / 戦おう
-[[kanji.match]]
-next_starts_any = ["う", "わ", "い", "え", "っ", "お"]
-reading = "タタカ"
+default = "タタカ"
 
-# 「僕」: 一人称 「ぼく」 圧倒的、 「しもべ」 (= 古語 / 文語) はレア。 unihan default
-# 「しもべ」 だと 「僕は / 僕の / 僕も」 全部 「しもべ」 で違和感。
+# ○○戦 suffix = セン
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "セン"
 [[kanji]]
 char = "僕"
 default = "ぼく"
@@ -731,14 +632,7 @@ reading = "あつ"
 # (さらに)」 は ひらがな後続。
 [[kanji]]
 char = "更"
-default = "コウ"
-# 更に / 更な (= 副詞 / 形容動詞 「サラ」)
-[[kanji.match]]
-next_starts_any = ["に", "な"]
-reading = "さら"
-
-# 「均」: 「平均 / 均等 / 百均 / 均一」 等の音読み 「キン」 が圧倒的。 動詞 「均す
-# (ならす) / 整える (ととのえる)」 は希少。
+default = "さら"
 [[kanji]]
 char = "均"
 default = "キン"
