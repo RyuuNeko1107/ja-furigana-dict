@@ -81,31 +81,10 @@ reading = "した"
 next_eq = "々"
 reading = "した"
 
+# ゼン は jukugo (前半/前回/午前/以前/前進 等) が覆うため default まえ
 [[kanji]]
 char = "前"
-default = "ゼン"
-
-# 「前は / 前が / 前を / 前に / 前の / 前で / 前と / 前も / 前や / 前へ / 前から / 前まで / 前より」
-# = 名詞用法 + 助詞接続 → マエ
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
-reading = "まえ"
-
-# 「○の前 / ○が前」 = 助詞 直後 → マエ
-[[kanji.match]]
-prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
-reading = "まえ"
-
-# 踊り字 「前々」 = マエマエ
-[[kanji.match]]
-next_eq = "々"
-reading = "まえ"
-
-# 「前 + 動詞 (= 言/見/聞/思/etc)」 = 「以前 〜 した」 用法、 default ゼン だと
-# 「前言ってた → ゼンイッテタ」 になるが本来 「マエイッテタ」 (★round 31)
-[[kanji.match]]
-next_eq_any = ["言", "見", "聞", "思", "話", "書", "読", "持", "来", "行", "歩"]
-reading = "まえ"
+default = "まえ"
 
 [[kanji]]
 char = "後"
@@ -146,37 +125,20 @@ reading = "あと"
 next_eq = "々"
 reading = "あと"
 
+# ベイ は jukugo (米国/精米/北米 等) が覆うため default こめ
 [[kanji]]
 char = "米"
-default = "ベイ"
+default = "こめ"
 
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
-reading = "こめ"
-
-[[kanji.match]]
-prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
-reading = "こめ"
-
-[[kanji.match]]
-next_eq = "々"
-reading = "こめ"
-
+# コク は jukugo (国家/外国/国民/中国 等) が覆うため default くに
 [[kanji]]
 char = "国"
-default = "コク"
+default = "くに"
 
+# ○○国 suffix (日本国 等) = コク
 [[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
-reading = "くに"
-
-[[kanji.match]]
-prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
-reading = "くに"
-
-[[kanji.match]]
-next_eq = "々"
-reading = "くに"
+prev_char_type = "漢字"
+reading = "コク"
 
 [[kanji]]
 char = "風"
@@ -271,56 +233,20 @@ reading = "もの"
 char = "山"
 default = "やま"
 
+# セン は jukugo (河川 等) が覆うため default かわ
 [[kanji]]
 char = "川"
-default = "セン"
+default = "かわ"
 
-# 「川ならいい / 川なし」 形容動詞「な」 / 仮定「なら」 prev case も訓「かわ」
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ", "な"]
-reading = "かわ"
-
-[[kanji.match]]
-prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
-reading = "かわ"
-
-[[kanji.match]]
-next_eq = "々"
-reading = "かわ"
-
+# スイ は jukugo (水道/水分/洪水 等) が覆うため default みず
 [[kanji]]
 char = "水"
-default = "スイ"
+default = "みず"
 
-# 「水なので」 形容動詞「な」 prev case も訓「みず」
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ", "な"]
-reading = "みず"
-
-# 「飲み水 / 打ち水 / -み水」 等 動詞連用形 prev = 訓「みず」
-[[kanji.match]]
-prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も", "み", "ち"]
-reading = "みず"
-
-[[kanji.match]]
-next_eq = "々"
-reading = "みず"
-
+# カ は jukugo (火事/火山/花火/火災 等) が覆うため default ひ
 [[kanji]]
 char = "火"
-default = "カ"
-
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
-reading = "ひ"
-
-[[kanji.match]]
-prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
-reading = "ひ"
-
-[[kanji.match]]
-next_eq = "々"
-reading = "ひ"
+default = "ひ"
 
 [[kanji]]
 char = "金"
@@ -406,19 +332,12 @@ reading = "あし"
 
 [[kanji]]
 char = "車"
-default = "シャ"
+default = "くるま"
 
+# ○○車 suffix (機関車/自転車/救急車 等) = シャ
 [[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
-reading = "くるま"
-
-[[kanji.match]]
-prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
-reading = "くるま"
-
-[[kanji.match]]
-next_eq = "々"
-reading = "くるま"
+prev_char_type = "漢字"
+reading = "シャ"
 
 [[kanji]]
 char = "今"
