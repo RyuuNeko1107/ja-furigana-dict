@@ -1701,3 +1701,90 @@ expected = "モニターみっつだよ"
 input = "特技の3つあるん"
 mode = "hiragana"
 expected = "とくぎのみっつあるん"
+
+# default 訓切替 regression guard (session 2026-05-25)
+
+[[case]]
+input = "風車"
+mode = "hiragana"
+expected = "ふうしゃ"
+
+[[case]]
+input = "年月"
+mode = "hiragana"
+expected = "ねんげつ"
+
+[[case]]
+input = "預金通帳"
+mode = "hiragana"
+expected = "よきんつうちょう"
+
+[[case]]
+input = "埋蔵金"
+mode = "hiragana"
+expected = "まいぞうきん"
+
+[[case]]
+input = "犯罪"
+mode = "hiragana"
+expected = "はんざい"
+
+[[case]]
+input = "人狼"
+mode = "hiragana"
+expected = "じんろう"
+
+[[case]]
+input = "本歌"
+mode = "hiragana"
+expected = "ほんか"
+
+[[case]]
+input = "陸前"
+mode = "hiragana"
+expected = "りくぜん"
+
+[[case]]
+input = "金星"
+mode = "hiragana"
+expected = "きんせい"
+
+[[case]]
+input = "黄水晶"
+mode = "hiragana"
+expected = "きすいしょう"
+
+[[case]]
+input = "氷上"
+mode = "hiragana"
+expected = "ひょうじょう"
+
+[[case]]
+input = "就職先"
+mode = "hiragana"
+expected = "しゅうしょくさき"
+
+[[case]]
+input = "減算"
+mode = "hiragana"
+expected = "げんさん"
+
+[[case]]
+input = "10年前"
+mode = "hiragana"
+expected = "じゅうねんまえ"
+
+[[case]]
+input = "内視鏡"
+mode = "hiragana"
+expected = "ないしきょう"
+
+[[case]]
+input = "人々"
+mode = "hiragana"
+expected = "ひとびと"
+
+[[case]]
+input = "大剣"
+mode = "hiragana"
+expected = "だいけん"

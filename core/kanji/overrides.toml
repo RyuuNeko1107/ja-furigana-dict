@@ -86,6 +86,7 @@ reading = "した"
 char = "前"
 default = "まえ"
 
+
 [[kanji]]
 char = "後"
 default = "あと"
@@ -205,6 +206,10 @@ default = "かわ"
 char = "水"
 default = "みず"
 
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "スイ"
+
 # カ は jukugo (火事/火山/花火/火災 等) が覆うため default ひ
 [[kanji]]
 char = "火"
@@ -214,6 +219,10 @@ default = "ひ"
 char = "金"
 default = "かね"
 
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "キン"
+
 # ○○金 suffix (奨学金/罰金/賃金 等) = キン
 [[kanji.match]]
 prev_char_type = "漢字"
@@ -222,6 +231,10 @@ reading = "キン"
 [[kanji]]
 char = "月"
 default = "つき"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ゲツ"
 
 # 「月は / 月が / 月を / 月に / 月の / 月で / 月と / 月も / 月や / 月へ /
 # 月から / 月まで / 月より / 月だ / 月です」 = 名詞用法 + 助詞 + コピュラ → ツキ
@@ -6890,6 +6903,10 @@ reading = "ま"
 char = "就"
 default = "つ"
 
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "シュウ"
+
 # 「就く/就かない/就いた/就いて/就けば/就こう/就ける」 = 動詞 → つ
 [[kanji.match]]
 next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
@@ -7180,6 +7197,10 @@ reading = "う"
 [[kanji]]
 char = "減"
 default = "へ"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "ゲン"
 
 # 「減る/減らない/減った/減って/減れば/減ろう/減らす/減り○○」 = 動詞 → へ
 [[kanji.match]]
@@ -7587,6 +7608,10 @@ default = "ザイ"
 char = "飛"
 default = "と"
 
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "ヒ"
+
 # 「飛ぶ/飛ばない/飛んだ/飛んで/飛べば/飛ぼう/飛び○○」 = 動詞 → と
 [[kanji.match]]
 next_starts_any = ["ぶ", "ば", "び", "ん", "べ", "ぼ"]
@@ -7671,6 +7696,10 @@ reading = "しず"
 [[kanji]]
 char = "越"
 default = "こ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "エツ"
 
 # 「越す/越さない/越した/越える/越えない/越えた」 = 動詞 → こ (= 自/他動詞 共通)
 [[kanji.match]]
@@ -9999,6 +10028,10 @@ char = "罪"
 default = "つみ"
 
 [[kanji.match]]
+prev_char_type = "漢字"
+reading = "ザイ"
+
+[[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ"]
 reading = "つみ"
 
@@ -10826,6 +10859,10 @@ default = "ひだり"
 [[kanji]]
 char = "布"
 default = "ぬの"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "フ"
 
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
@@ -11677,6 +11714,10 @@ char = "星"
 default = "ほし"
 
 [[kanji.match]]
+prev_char_type = "漢字"
+reading = "セイ"
+
+[[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
 reading = "ほし"
 
@@ -11995,6 +12036,10 @@ default = "カン"
 char = "歌"
 default = "うた"
 
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "カ"
+
 # 「武」 default 「ブ」 (= 武士/武術/武力/武装/武器/武勇/文武)。
 # unihan default 「たけし」 は古語/人名、 現代では熟語 dominant
 [[kanji]]
@@ -12046,6 +12091,10 @@ reading = "うじ"
 [[kanji]]
 char = "氷"
 default = "こおり"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "ヒョウ"
 
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
