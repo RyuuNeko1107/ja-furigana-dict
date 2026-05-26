@@ -813,7 +813,7 @@ reading = "おび"
 # 1000 で覆われる前提。 default は接頭辞用法を考慮して 「タ」。
 [[kanji]]
 char = "多"
-default = "おお"
+default = "タ"
 # 多い / 多く / 多かった / 多さ / 多すぎる
 [[kanji.match]]
 next_starts_any = ["い", "く", "か", "さ", "す"]
@@ -918,7 +918,7 @@ reading = "ゼイ"
 # 「重い (おもい)」 は ひらがな後続で 「おも」 語幹。
 [[kanji]]
 char = "重"
-default = "おも"
+default = "ジュウ"
 # 重い / 重く / 重かった / 重さ / 重すぎる / 重み / 重ねる / 重なる
 [[kanji.match]]
 next_starts_any = ["い", "く", "か", "さ", "す", "み", "ね", "な", "そ"]
@@ -929,7 +929,7 @@ reading = "おも"
 # dict 1000 で覆う。
 [[kanji]]
 char = "広"
-default = "ひろ"
+default = "コウ"
 # 広い / 広く / 広かった / 広さ / 広すぎる / 広まる / 広がる / 広げる / 広める
 [[kanji.match]]
 next_starts_any = ["い", "く", "か", "さ", "す", "ま", "が", "げ", "め"]
@@ -6956,7 +6956,7 @@ reading = "つ"
 # 動詞 「引く」 は okurigana 列挙で 「ひ」 へ切替
 [[kanji]]
 char = "引"
-default = "ひ"
+default = "イン"
 
 # 「引く/引かない/引いた/引いて/引けば/引こう/引き○○」 = 動詞 → ひ
 [[kanji.match]]
@@ -7008,7 +7008,7 @@ reading = "え"
 # 動詞 「待つ」 は okurigana 列挙で 「ま」 へ切替
 [[kanji]]
 char = "待"
-default = "ま"
+default = "タイ"
 
 # 「待つ/待たない/待った/待って/待てば/待とう/待ち○○」 = 動詞 → ま
 [[kanji.match]]
@@ -7019,7 +7019,7 @@ reading = "ま"
 # 動詞 「打つ」 は okurigana 列挙で 「う」 へ切替
 [[kanji]]
 char = "打"
-default = "う"
+default = "ダ"
 
 # 「打つ/打たない/打った/打って/打てば/打とう/打ち○○」 = 動詞 → う
 [[kanji.match]]
@@ -7567,7 +7567,7 @@ reading = "お"
 # 動詞 「買う」 は okurigana 列挙で 「か」 へ切替
 [[kanji]]
 char = "買"
-default = "か"
+default = "バイ"
 
 # 「買う/買わない/買った/買って/買えば/買おう/買い○○」 = 動詞 → か
 [[kanji.match]]
@@ -7911,7 +7911,7 @@ default = "こ"
 # 形容詞 「近い」 は okurigana 列挙で 「ちか」 へ切替 (= 「近づく」 含む)
 [[kanji]]
 char = "近"
-default = "ちか"
+default = "キン"
 
 # 「近い/近く/近かった/近ければ/近さ/近づく/近づき/近ずかない (= colloquial)」 = 形容詞 + 派生 → ちか
 [[kanji.match]]
@@ -7922,7 +7922,7 @@ reading = "ちか"
 # 形容詞 「遠い」 は okurigana 列挙で 「とお」 へ切替 (= 「遠ざかる」 含む)
 [[kanji]]
 char = "遠"
-default = "とお"
+default = "エン"
 
 # 「遠い/遠く/遠かった/遠ければ/遠さ/遠ざかる」 = 形容詞 + 派生 → とお
 [[kanji.match]]
@@ -10167,7 +10167,7 @@ default = "カン"
 # 形容詞 「良い」 は okurigana 列挙で 「よ」 へ切替
 [[kanji]]
 char = "良"
-default = "よ"
+default = "リョウ"
 
 [[kanji.match]]
 next_starts_any = ["い", "く", "か", "け", "さ", "し"]
