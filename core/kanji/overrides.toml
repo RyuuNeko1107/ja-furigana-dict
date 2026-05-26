@@ -649,7 +649,11 @@ default = "みやび"
 # 「為」: 「為に / 為だ / 為になる」 で名詞 「ため」、 default 「おさめる」 は誤読が大半。
 [[kanji]]
 char = "為"
-default = "ため"
+default = "イ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "ため"
 
 # 「居」: 動詞 「居る / 居ない / 居て / 居た」 = イ + 送りがな。 default は 「居住 /
 # 同居」 等の音読み 「キョ」 (= 熟語 dict 1000 で勝つ)。 ひらがな後続で動詞語幹に。
@@ -735,7 +739,11 @@ reading = "たと"
 # unihan default 「にる」 だと 「似てる」 → 「にるてる」 になる。
 [[kanji]]
 char = "似"
-default = "に"
+default = "ジ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "に"
 
 # 「戦」: 音読み 「セン」 (= 「戦争 / 作戦 / 争奪戦 / 大戦」) が圧倒的。 動詞
 # 「戦う / 戦った」 = タタカ 語幹は ひらがな後続。 unihan default 「いくさ」 だと
@@ -775,7 +783,11 @@ reading = "あつ"
 # (さらに)」 は ひらがな後続。
 [[kanji]]
 char = "更"
-default = "さら"
+default = "コウ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "さら"
 [[kanji]]
 char = "均"
 default = "キン"
@@ -882,7 +894,11 @@ default = "ゲキ"
 # 音読み 「カイ」 は 「絵画」 の 1 字目用法のみ、 dict 1000 で覆う。
 [[kanji]]
 char = "絵"
-default = "え"
+default = "カイ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "え"
 
 # 「園」: 音読み 「エン」 (= 「動物園 / 公園 / 遊園地 / 学園」) が圧倒的。
 # 「その」 (= 「果樹園」 の和訓 / 古語) は希少、 dict 1000 で必要なら個別登録。
@@ -947,7 +963,11 @@ reading = "おお"
 # 「よわい」 (= 「齢」 異字) は古語、 dict 1000 で必要なら個別。
 [[kanji]]
 char = "歯"
-default = "は"
+default = "シ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "は"
 
 # 「生」: 名詞 「生 (なま)」 (= 「生の / 生地 / 生もの / 生卵」) が単独 / 助詞前で
 # 圧倒的。 動詞 「生きる / 生まれる / 生える」 = ひらがな後続で 「い」 語幹。
@@ -1668,7 +1688,11 @@ reading = "いろ"
 # 変更を伴わない純 migration (= joyo.toml 旧 entry と等価)。
 [[kanji]]
 char = "子"
-default = "こ"
+default = "シ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "こ"
 
 # 「地」: unihan default 「つち」 → ツチ 系 jukugo 0 件、 チ 系 22 件 (= 地域
 # / 地区 / 地殻 / 地下鉄 / 草地 / 湿地 / 産地 / 局地 / 見地 / 境地 / 中継地
@@ -2301,8 +2325,11 @@ default = "ミャク"
 # default = ギ に倒す純化。
 [[kanji]]
 char = "技"
-# ギ は jukugo (技術/技能/競技 等) が覆うため default わざ
-default = "わざ"
+default = "ギ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "わざ"
 
 # 「管」: unihan default 「くだ」 → カン系 14 件 (= 管理 / 管轄 / 配管 /
 # 血管 / 管楽器 / 鉄管 等)。 クダ系 1 件 (= 手練手管=テレンテクダ) は
@@ -2318,7 +2345,11 @@ default = "カン"
 # 元金 / 復元 / 元服 等) は band 100 で吸収。
 [[kanji]]
 char = "元"
-default = "もと"
+default = "ゲン"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "もと"
 
 # 「骨」: default = ほね。 コツ/コッ系 jukugo (骨格 / 骨折 / 鎖骨 / 換骨
 # 奪胎 等) は band 100 で吸収。
@@ -2355,7 +2386,11 @@ reading = "ヤ"
 # 等) は band 100 で吸収。
 [[kanji]]
 char = "節"
-default = "ふし"
+default = "セツ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "ふし"
 
 # 「筋」: default = すじ。 キン系 jukugo (筋肉 / 筋力 / 鉄筋 / 腹筋 等) は
 # band 100 で吸収。
@@ -2613,7 +2648,11 @@ default = "チ"
 # (= 「過酷 / 残酷 / 酷使」) は jukugo で覆う。
 [[kanji]]
 char = "酷"
-default = "ひど"
+default = "コク"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "ひど"
 
 [[kanji]]
 char = "企"
@@ -6466,8 +6505,11 @@ default = "シュウ"
 
 [[kanji]]
 char = "若"
-# ジャク は jukugo (若干/老若 等) が覆うため default わか
-default = "わか"
+default = "ジャク"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "わか"
 
 [[kanji]]
 char = "荒"
@@ -10287,8 +10329,11 @@ reading = "つみ"
 # 単独 + 助詞接続 → 「は」 (= 「羽」 = は 名詞用法)
 [[kanji]]
 char = "羽"
-# ウ は jukugo (羽毛 等) が覆うため default はね
-default = "はね"
+default = "ウ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "はね"
 
 # 「腫」 default 「シュ」 (= 腫瘍/水腫/腫脹/浮腫)。
 # 動詞 「腫れる」 は okurigana 「れ」 で 「は」 へ切替
@@ -11112,7 +11157,11 @@ default = "エン"
 # 熟語ほぼなし (= 複合動詞語幹として使われる)
 [[kanji]]
 char = "届"
-default = "とど"
+default = "カイ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "とど"
 
 # 「属」 default 「ゾク」 (= 属性/従属/付属/専属/帰属/金属/部属)。
 # unihan default 「つく」 は古語動詞、 「付/着」 が動詞 dominant
