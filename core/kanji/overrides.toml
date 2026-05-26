@@ -125,7 +125,11 @@ reading = "あと"
 # ベイ は jukugo (米国/精米/北米 等) が覆うため default こめ
 [[kanji]]
 char = "米"
-default = "こめ"
+default = "ベイ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "こめ"
 
 # コク は jukugo (国家/外国/国民/中国 等) が覆うため default くに
 [[kanji]]
@@ -206,12 +210,20 @@ reading = "もの"
 
 [[kanji]]
 char = "山"
-default = "やま"
+default = "サン"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "やま"
 
 # セン は jukugo (河川 等) が覆うため default かわ
 [[kanji]]
 char = "川"
-default = "かわ"
+default = "セン"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "かわ"
 
 # スイ は jukugo (水道/水分/洪水 等) が覆うため default みず
 [[kanji]]
@@ -225,7 +237,11 @@ reading = "スイ"
 # カ は jukugo (火事/火山/花火/火災 等) が覆うため default ひ
 [[kanji]]
 char = "火"
-default = "ひ"
+default = "カ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "ひ"
 
 [[kanji]]
 char = "金"
@@ -252,7 +268,11 @@ reading = "ゲツ"
 # 月から / 月まで / 月より / 月だ / 月です」 = 名詞用法 + 助詞 + コピュラ → ツキ
 [[kanji]]
 char = "耳"
-default = "みみ"
+default = "ジ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "みみ"
 
 [[kanji]]
 char = "口"
@@ -1807,7 +1827,11 @@ default = "ショウ"
 # が安全と判断。
 [[kanji]]
 char = "神"
-default = "かみ"
+default = "シン"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "かみ"
 
 # 「音」: unihan default 「おと」 → 純 migration (= reading 変更なし)。 オン/
 # イン 系 41 件 (= 音楽 / 録音 / 発音 / 音圧 / 異口同音 等)・ ネ 系 (=
@@ -1965,38 +1989,62 @@ reading = "ツ"
 # 海岸 / 海軍 / 航海 等) は band 100 で吸収。
 [[kanji]]
 char = "海"
-default = "うみ"
+default = "カイ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "うみ"
 
 # 「船」: default = ふね。 セン系 jukugo (船舶 / 汽船 / 造船 / 漁船 等) は
 # band 100 で吸収。
 [[kanji]]
 char = "船"
-default = "ふね"
+default = "セン"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "ふね"
 
 # 「雨」: default = あめ。 ウ系 jukugo (雨天 / 梅雨=ツユ / 雨季 等) は band
 # 100 で吸収。
 [[kanji]]
 char = "雨"
-default = "あめ"
+default = "ウ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "あめ"
 
 # 「雪」: default = ゆき。 セツ系 jukugo (雪原 / 積雪 / 初雪 / 大雪 等) は
 # band 100 で吸収。
 [[kanji]]
 char = "雪"
-default = "ゆき"
+default = "セツ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "ゆき"
 
 # 「草」: default = くさ。 ソウ系 jukugo (草原 / 七草 / 雑草 / 海草 / 海藻
 # 等) は band 100 で吸収。
 [[kanji]]
 char = "草"
-default = "くさ"
+default = "ソウ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "くさ"
 
 # 「白」: default = しろ。 ハク/ビャク系 jukugo (白人 / 白米 / 白衣 / 紅白
 # / 告白 / 関白 等) は band 100 で吸収。 「白い = シロイ」 形容詞は default
 # しろ + 「い/く」 で okurigana 連結 (= シロい、 シロく)。
 [[kanji]]
 char = "白"
-default = "しろ"
+default = "ハク"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "しろ"
 
 # 「茶」: default = ちゃ。 サ系 jukugo (茶道 / 茶話 / 喫茶 等) も jukugo
 # 個別登録 = band 100 で吸収。
@@ -2142,7 +2190,11 @@ reading = "ウ"
 # で吸収。
 [[kanji]]
 char = "鳥"
-default = "とり"
+default = "チョウ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "とり"
 
 # 「衣」: default = ころも。 イ/エ系 jukugo (衣服 / 衣裳 / 衣替え / 浴衣
 # 等) は band 100 で吸収。
@@ -2167,13 +2219,21 @@ reading = "ウン"
 # band 100 で吸収。
 [[kanji]]
 char = "馬"
-default = "うま"
+default = "バ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "うま"
 
 # 「石」: default = いし。 セキ/コク/シャク系 jukugo (石灰 / 化石 / 鉱石
 # / 石高 等) は band 100 で吸収。
 [[kanji]]
 char = "石"
-default = "いし"
+default = "セキ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "いし"
 
 # === batch 9 字 (= 訓読み default が誤 or 不適切、 音読み圧倒的多数派) ===
 
@@ -10604,7 +10664,11 @@ default = "シ"
 # 単独 + 助詞接続 → 「いのち」 (= 「命が/命を/命の」 等)
 [[kanji]]
 char = "命"
-default = "いのち"
+default = "メイ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "いのち"
 
 [[kanji]]
 char = "咽"
@@ -10703,7 +10767,11 @@ default = "こえ"
 # 単独 + 助詞接続 → 「みぎ」 (= 「右が/右の」 等)
 [[kanji]]
 char = "右"
-default = "みぎ"
+default = "ウ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "みぎ"
 
 [[kanji]]
 char = "姓"
@@ -10887,8 +10955,11 @@ reading = "やど"
 # 単独 + 助詞接続 + 動詞 「味わう」 → 「あじ」
 [[kanji]]
 char = "味"
-# ミ は jukugo (味覚/意味/趣味 等) が覆うため default あじ
-default = "あじ"
+default = "ミ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "あじ"
 
 # 「嫁」 default 「カ」 (= 転嫁/降嫁/再嫁)。
 # 動詞 「嫁ぐ」 → 「とつ」、 単独 + 助詞 → 「よめ」
@@ -10959,14 +11030,21 @@ default = "セン"
 # ム は jukugo (悪夢/夢中/夢想 等) が覆うため default ゆめ
 [[kanji]]
 char = "夢"
-default = "ゆめ"
+default = "ム"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "ゆめ"
 
 # 「女」 default 「ジョ」 (= 女性/少女/天女/女史/魔女/才女/女子)。
 # 単独 + 助詞接続 → 「おんな」 (= 「女が/女の」 等)、 「女」 = ジョ 熟語 dominant
 [[kanji]]
 char = "女"
-# ジョ は jukugo (女性/女子/女優/少女 等) が覆うため default おんな
-default = "おんな"
+default = "ジョ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "おんな"
 
 # 「婆」 default 「バ」 (= 老婆/産婆/鬼婆)。
 # 単独 + 助詞接続 → 「ばば」 (= 「お婆さん」 等は jukugo)
@@ -11010,7 +11088,11 @@ default = "ゾク"
 # 単独 + 助詞接続 → 「ひだり」 (= 「左が/左の」 等)
 [[kanji]]
 char = "左"
-default = "ひだり"
+default = "サ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "ひだり"
 
 [[kanji]]
 char = "布"
@@ -11863,7 +11945,11 @@ reading = "こよみ"
 # 単独 + 助詞接続 → 「はる」 (= 「春が/春の」 等)
 [[kanji]]
 char = "春"
-default = "はる"
+default = "シュン"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "はる"
 
 [[kanji]]
 char = "星"
