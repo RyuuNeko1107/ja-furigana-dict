@@ -298,7 +298,11 @@ reading = "コ"
 
 [[kanji]]
 char = "美"
-default = "ウツクシ"  # 美術 / 美人 / 美容 / 美少女 等
+default = "ビ"
+
+[[kanji.match]]
+next_starts_any = ["し"]
+reading = "うつく"  # 美術 / 美人 / 美容 / 美少女 等
 
 [[kanji]]
 char = "食"
@@ -314,27 +318,51 @@ reading = "ク"
 
 [[kanji]]
 char = "飲"
-default = "ノ"  # 飲料 / 飲食
+default = "イン"
+
+[[kanji.match]]
+next_starts_any = ["む", "ま", "み", "ん", "め", "も"]
+reading = "の"  # 飲料 / 飲食
 
 [[kanji]]
 char = "走"
-default = "ハシ"  # 走行 / 競走 / 暴走
+default = "ソウ"
+
+[[kanji.match]]
+next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ"]
+reading = "はし"  # 走行 / 競走 / 暴走
 
 [[kanji]]
 char = "高"
-default = "タカ"  # 高校 / 高速 / 最高 / 高度
+default = "コウ"
+
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "さ", "め", "ま"]
+reading = "たか"  # 高校 / 高速 / 最高 / 高度
 
 [[kanji]]
 char = "楽"
-default = "タノシ"  # 楽園 / 安楽 (= 音楽=オンガク は jukugo entry で band 1000)
+default = "ラク"
+
+[[kanji.match]]
+next_starts_any = ["し"]
+reading = "たの"  # 楽園 / 安楽 (= 音楽=オンガク は jukugo entry で band 1000)
 
 [[kanji]]
 char = "苦"
-default = "クルシ"  # 苦労 / 苦痛 / 苦悩
+default = "ク"
+
+[[kanji.match]]
+next_starts_any = ["し", "る", "ら", "り", "っ", "れ", "ろ"]
+reading = "くる"  # 苦労 / 苦痛 / 苦悩
 
 [[kanji]]
 char = "早"
-default = "ハヤ"  # 早朝 / 早期 / 早急
+default = "ソウ"
+
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "さ", "め", "ま"]
+reading = "はや"  # 早朝 / 早期 / 早急
 
 [[kanji]]
 char = "古"
@@ -347,15 +375,27 @@ reading = "コ"
 
 [[kanji]]
 char = "低"
-default = "ヒク"  # 低音 / 低気圧 / 低下
+default = "テイ"
+
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "さ"]
+reading = "ひく"  # 低音 / 低気圧 / 低下
 
 [[kanji]]
 char = "忙"
-default = "イソガシ"  # 多忙 / 繁忙
+default = "ボウ"
+
+[[kanji.match]]
+next_starts_any = ["し"]
+reading = "いそが"  # 多忙 / 繁忙
 
 [[kanji]]
 char = "読"
-default = "ヨ"  # 読書 / 読者 / 音読
+default = "ドク"
+
+[[kanji.match]]
+next_starts_any = ["む", "ま", "み", "ん", "め", "も"]
+reading = "よ"  # 読書 / 読者 / 音読
 
 [[kanji]]
 char = "遅"
@@ -412,7 +452,11 @@ reading = "ミ"
 
 [[kanji]]
 char = "思"
-default = "オモ"
+default = "シ"
+
+[[kanji.match]]
+next_starts_any = ["う", "わ", "い", "っ", "え", "お"]
+reading = "おも"
 [[kanji]]
 char = "経"
 default = "ケイ"
@@ -430,16 +474,32 @@ reading = "ヘ"
 
 [[kanji]]
 char = "終"
-default = "オワ"
+default = "シュウ"
+
+[[kanji.match]]
+next_starts_any = ["わ"]
+reading = "お"
 [[kanji]]
 char = "強"
-default = "ツヨ"
+default = "キョウ"
+
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "さ", "め", "ま"]
+reading = "つよ"
 [[kanji]]
 char = "持"
-default = "モ"
+default = "ジ"
+
+[[kanji.match]]
+next_starts_any = ["つ", "た", "ち", "っ", "て", "と"]
+reading = "も"
 [[kanji]]
 char = "勝"
-default = "カ"
+default = "ショウ"
+
+[[kanji.match]]
+next_starts_any = ["つ", "た", "ち", "っ", "て", "と"]
+reading = "か"
 [[kanji]]
 char = "変"
 default = "ヘン"  # 変な / 変だ / 変身 / 変化 / 変装 等は 「ヘン」、 round 33 で 「な / だ」
@@ -450,7 +510,11 @@ reading = "カ"
 
 [[kanji]]
 char = "寝"
-default = "ネ"
+default = "シン"
+
+[[kanji.match]]
+next_starts_any = ["る", "ら", "れ", "ろ", "て", "た", "よ"]
+reading = "ね"
 [[kanji]]
 char = "行"
 default = "ギョウ"
@@ -548,10 +612,18 @@ default = "ため"
 # default を訓読み 「いる」 にすると 「居ない」 → 「いるない」 と誤読される。
 [[kanji]]
 char = "居"
-default = "イ"
+default = "キョ"
+
+[[kanji.match]]
+next_starts_any = ["る", "ら", "れ", "ろ", "て", "た", "よ"]
+reading = "い"
 [[kanji]]
 char = "悪"
-default = "ワル"
+default = "アク"
+
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "さ"]
+reading = "わる"
 [[kanji]]
 char = "嫌"
 default = "イヤ"
@@ -1278,7 +1350,11 @@ reading = "タシ"
 # 形容詞活用は next ひらがな → ナガ stem (= 「長い / 長さ / 長く」)
 [[kanji]]
 char = "長"
-default = "ナガ"
+default = "チョウ"
+
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "さ"]
+reading = "なが"
 
 # 長い / 長く / 長かった / 長さ / 長すぎる
 [[kanji]]
