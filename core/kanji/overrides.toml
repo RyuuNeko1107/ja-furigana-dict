@@ -554,7 +554,7 @@ char = "寝"
 default = "シン"
 
 [[kanji.match]]
-next_starts_any = ["る", "ら", "れ", "ろ", "て", "た", "よ"]
+next_starts_any = ["る", "ら", "れ", "ろ", "て", "た", "よ", "な", "ま", "か", "こ"]
 reading = "ね"
 [[kanji]]
 char = "行"
@@ -668,7 +668,7 @@ char = "居"
 default = "キョ"
 
 [[kanji.match]]
-next_starts_any = ["る", "ら", "れ", "ろ", "て", "た", "よ"]
+next_starts_any = ["る", "ら", "れ", "ろ", "て", "た", "よ", "な", "ま"]
 reading = "い"
 [[kanji]]
 char = "悪"
@@ -11113,14 +11113,13 @@ reading = "てら"
 char = "専"
 default = "セン"
 
-# ム は jukugo (悪夢/夢中/夢想 等) が覆うため default ゆめ
 [[kanji]]
 char = "夢"
-default = "ム"
+default = "ゆめ"
 
 [[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
-reading = "ゆめ"
+prev_char_type = "漢字"
+reading = "ム"
 
 # 「女」 default 「ジョ」 (= 女性/少女/天女/女史/魔女/才女/女子)。
 # 単独 + 助詞接続 → 「おんな」 (= 「女が/女の」 等)、 「女」 = ジョ 熟語 dominant
