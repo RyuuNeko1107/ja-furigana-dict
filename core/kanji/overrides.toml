@@ -194,11 +194,11 @@ reading = "ひと"
 
 [[kanji]]
 char = "心"
-default = "シン"
+default = "こころ"
 
 [[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
-reading = "こころ"
+prev_char_type = "漢字"
+reading = "シン"
 
 [[kanji]]
 char = "物"
@@ -394,11 +394,11 @@ reading = "くる"  # 苦労 / 苦痛 / 苦悩
 
 [[kanji]]
 char = "早"
-default = "ソウ"
+default = "はや"
 
 [[kanji.match]]
-next_starts_any = ["い", "く", "か", "さ", "め", "ま"]
-reading = "はや"  # 早朝 / 早期 / 早急
+prev_char_type = "漢字"
+reading = "ソウ"
 
 [[kanji]]
 char = "古"
@@ -617,11 +617,11 @@ default = "テキ"
 # 「次」: 「つぎ」 が圧倒的、 「つぐ」 動詞 「次ぐ」 は希少。 default を 「つぎ」 に。
 [[kanji]]
 char = "次"
-default = "ジ"
+default = "つぎ"
 
 [[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
-reading = "つぎ"
+prev_char_type = "漢字"
+reading = "ジ"
 
 # ─── 単漢字 default 修正 ────────────────────────────────────────────────────
 
@@ -10853,11 +10853,11 @@ reading = "こえ"
 # 単独 + 助詞接続 → 「みぎ」 (= 「右が/右の」 等)
 [[kanji]]
 char = "右"
-default = "ウ"
+default = "みぎ"
 
 [[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
-reading = "みぎ"
+prev_char_type = "漢字"
+reading = "ウ"
 
 [[kanji]]
 char = "姓"
@@ -11178,11 +11178,11 @@ default = "ゾク"
 # 単独 + 助詞接続 → 「ひだり」 (= 「左が/左の」 等)
 [[kanji]]
 char = "左"
-default = "サ"
+default = "ひだり"
 
 [[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
-reading = "ひだり"
+prev_char_type = "漢字"
+reading = "サ"
 
 [[kanji]]
 char = "布"
@@ -11367,12 +11367,11 @@ reading = "なつ"
 # 単独 + 助詞接続 → 「かべ」 (= 「壁が/壁の」 等)
 [[kanji]]
 char = "壁"
-default = "ヘキ"
+default = "かべ"
 
-# 「壁ない / 壁な」 形容詞「ない」 / 形容動詞「-な」 prev case も訓「かべ」
 [[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "な"]
-reading = "かべ"
+prev_char_type = "漢字"
+reading = "ヘキ"
 
 # 「妻」 default 「サイ」 (= 夫妻/愛妻/糟糠之妻/妻帯)。
 # 単独 + 助詞接続 → 「つま」 (= 「妻が/妻の」 等)
@@ -12069,11 +12068,11 @@ reading = "とき"
 
 [[kanji]]
 char = "朝"
-default = "チョウ"
+default = "あさ"
 
 [[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
-reading = "あさ"
+prev_char_type = "漢字"
+reading = "チョウ"
 
 # jukugo にない朝+漢字 (朝霧 etc) は未登録時にアサ連結になるが許容
 # 「-の朝 / -が朝」 = 「今日朝 / -の朝」 単独訓「あさ」 (= jukugo 朝食/朝刊 等は band 100)
