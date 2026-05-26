@@ -89,7 +89,7 @@ default = "まえ"
 
 [[kanji]]
 char = "後"
-default = "あと"
+default = "ゴ"
 
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
@@ -135,7 +135,7 @@ reading = "コク"
 
 [[kanji]]
 char = "風"
-default = "かぜ"
+default = "フウ"
 
 # ○○風 (中国風/和風/洋風 等) suffix = フウ、 next_starts かぜ match より優先
 [[kanji.match]]
@@ -683,7 +683,7 @@ reading = "ま"
 # 形容詞 「短い (みじかい)」 は ひらがな後続。
 [[kanji]]
 char = "短"
-default = "みじか"
+default = "タン"
 # 短い / 短く / 短かった / 短さ / 短すぎる
 [[kanji.match]]
 next_starts_any = ["い", "く", "か", "さ", "す"]
@@ -717,7 +717,7 @@ default = "テキ"
 # 「久々 = ひさびさ」 は jukugo で別途。
 [[kanji]]
 char = "久"
-default = "ひさ"
+default = "キュウ"
 # 久しい / 久しく / 久しぶり
 [[kanji.match]]
 next_starts_any = ["し", "ぶ"]
@@ -770,7 +770,7 @@ default = "エン"
 # 動詞 「助ける (たすける)」 は ひらがな後続。
 [[kanji]]
 char = "助"
-default = "たす"
+default = "ジョ"
 # 助ける / 助けない / 助けた / 助けて / 助かる / 助かった
 [[kanji.match]]
 next_starts_any = ["け", "か"]
@@ -797,7 +797,7 @@ reading = "そと"
 # 「タイ」、 「帯びる」 のみ next ひらがな で 「おび」 切替。
 [[kanji]]
 char = "帯"
-default = "おび"
+default = "タイ"
 # 帯びる / 帯びた / 帯びて (= 動詞 オビ)
 [[kanji.match]]
 next_starts_any = ["び"]
@@ -2360,7 +2360,7 @@ default = "ケン"
 # で 「はず」 stem (= 「弾んだ」 「弾まない」)。 「弾 = タマ」 は jukugo 個別。
 [[kanji]]
 char = "弾"
-default = "ひ"
+default = "ダン"
 
 [[kanji.match]]
 next_starts_any = ["く", "い", "か", "け", "こ"]
@@ -4277,7 +4277,7 @@ default = "カイ"
 
 [[kanji]]
 char = "仏"
-default = "ほとけ"
+default = "ブツ"
 
 # 「仏は / 仏が / 仏を / 仏に / 仏の / 仏で / 仏と / 仏も」 = 名詞用法、 訓「ほとけ」
 [[kanji.match]]
@@ -4856,7 +4856,7 @@ default = "セキ"
 
 [[kanji]]
 char = "戻"
-default = "もど"
+default = "レイ"
 
 # 動詞活用 + ひらがな後続で訓「もど」
 # 「戻る/戻った/戻らない/戻り/戻れる/戻して/戻そう」 catch
@@ -5084,7 +5084,7 @@ default = "ショク"
 
 [[kanji]]
 char = "樹"
-default = "き"
+default = "ジュ"
 
 # 「樹は / 樹が / 樹を / 樹に / 樹の / 樹で 等」 単独訓「き」 (= jukugo 樹木/樹立 等は band 100)
 [[kanji.match]]
@@ -5101,7 +5101,7 @@ default = "オウ"
 
 [[kanji]]
 char = "止"
-default = "と"
+default = "シ"
 
 # 「止まる/止める/止まり/止めて/止めない/止めよう」 = 動詞訓「と」
 [[kanji.match]]
@@ -5182,7 +5182,7 @@ default = "ヨク"
 
 [[kanji]]
 char = "浸"
-default = "し"
+default = "シン"
 
 # 「浸み込む / 浸み出る / 浸まない / 浸めば」 = 動詞訓「し」
 [[kanji.match]]
@@ -5358,7 +5358,7 @@ default = "リュウ"
 
 [[kanji]]
 char = "畳"
-default = "たたみ"
+default = "ジョウ"
 
 # 「畳は / 畳が / 畳を / 畳に / 畳の / 畳で / 畳と / 畳も」 = 名詞用法、 訓「たたみ」
 [[kanji.match]]
@@ -5407,7 +5407,7 @@ default = "ケン"
 
 [[kanji]]
 char = "眠"
-default = "ねむ"
+default = "ミン"
 
 # 動詞・形容詞活用 + ひらがな後続で訓「ねむ」
 # 「眠る/眠い/眠った/眠らない/眠り/眠れる/眠そう/眠すぎる」 catch
@@ -5612,7 +5612,7 @@ default = "イ"
 
 [[kanji]]
 char = "蓋"
-default = "ふた"
+default = "ガイ"
 
 # 「蓋は / 蓋が / 蓋を / 蓋に / 蓋の / 蓋で / 蓋と / 蓋も」 = 名詞用法、 訓「ふた」
 [[kanji.match]]
@@ -6606,7 +6606,7 @@ default = "はと"
 # 動詞 「乗る/乗せる/乗り換え」 は okurigana 列挙で 「の」 へ切替
 [[kanji]]
 char = "乗"
-default = "の"
+default = "ジョウ"
 
 # 「乗る/乗らない/乗った/乗って/乗れば/乗ろう/乗り○○ (= 連用形名詞化)」 = 自動詞 → の
 [[kanji.match]]
@@ -6645,7 +6645,7 @@ default = "ア"
 # 動詞 「住む/住まう/住み込む」 は okurigana 列挙で 「す」 へ切替
 [[kanji]]
 char = "住"
-default = "す"
+default = "ジュウ"
 
 # 「住む/住まない/住みません/住んで/住めば/住もう/住み○○」 = 動詞 → す
 [[kanji.match]]
@@ -6656,7 +6656,7 @@ reading = "す"
 # 動詞 「依る/依って」 は okurigana 列挙で 「よ」 へ切替
 [[kanji]]
 char = "依"
-default = "よ"
+default = "イ"
 
 # 「依る/依らない/依って/依れば/依ろう」 = 動詞 → よ
 [[kanji.match]]
@@ -6697,7 +6697,7 @@ default = "ジ"
 # 単独 + 助詞接続は 「とも」 へ切替 (= 共に/共と/共の)
 [[kanji]]
 char = "共"
-default = "とも"
+default = "キョウ"
 
 # 「共に/共と/共の/共は/共が/共を/共で」 = 単独 + 助詞接続 → とも
 [[kanji.match]]
@@ -6713,7 +6713,7 @@ reading = "とも"
 # 動詞 「凝る/凝らす」 は okurigana 列挙で 「こ」 へ切替
 [[kanji]]
 char = "凝"
-default = "こ"
+default = "ギョウ"
 
 # 「凝る/凝らない/凝った/凝って/凝れば/凝ろう/凝らす/凝り○○」 = 動詞 → こ
 [[kanji.match]]
@@ -6724,7 +6724,7 @@ reading = "こ"
 # 動詞 「刺す/刺さる」 は okurigana 列挙で 「さ」 へ切替
 [[kanji]]
 char = "刺"
-default = "さ"
+default = "シ"
 
 # 「刺す/刺さない/刺した/刺して/刺せば/刺そう/刺さる/刺し○○」 = 動詞 → さ
 [[kanji.match]]
@@ -6735,7 +6735,7 @@ reading = "さ"
 # 動詞 「効く/効かす」 は okurigana 列挙で 「き」 へ切替
 [[kanji]]
 char = "効"
-default = "き"
+default = "コウ"
 
 # 「効く/効かない/効いた/効いて/効けば/効こう」 = 動詞 → き
 [[kanji.match]]
@@ -6746,7 +6746,7 @@ reading = "き"
 # 動詞 「去る」 は okurigana 列挙で 「さ」 へ切替
 [[kanji]]
 char = "去"
-default = "さ"
+default = "キョ"
 
 # 「去る/去らない/去った/去って/去れば/去ろう/去り○○」 = 動詞 → さ
 [[kanji.match]]
@@ -6757,7 +6757,7 @@ reading = "さ"
 # 動詞 「吐く」 は okurigana 列挙で 「は」 へ切替
 [[kanji]]
 char = "吐"
-default = "は"
+default = "ト"
 
 # 「吐く/吐かない/吐いた/吐いて/吐けば/吐こう」 = 動詞 → は
 [[kanji.match]]
@@ -6790,7 +6790,7 @@ reading = "す"
 # 動詞 「吹く」 は okurigana 列挙で 「ふ」 へ切替 (= 吹雪/吹聴 等は jukugo 個別)
 [[kanji]]
 char = "吹"
-default = "ふ"
+default = "スイ"
 
 # 「吹く/吹かない/吹いた/吹いて/吹けば/吹こう/吹き○○」 = 動詞 → ふ
 [[kanji.match]]
@@ -6812,7 +6812,7 @@ reading = "よ"
 # 動詞 「召す」 は okurigana 列挙で 「め」 へ切替 (= 召し上がる/お召し物)
 [[kanji]]
 char = "召"
-default = "め"
+default = "ショウ"
 
 # 「召す/召さない/召した/召して/召せば/召そう/召し○○」 = 動詞 → め
 [[kanji.match]]
@@ -6834,7 +6834,7 @@ reading = "と"
 # 動詞 「噴く」 は okurigana 列挙で 「ふ」 へ切替
 [[kanji]]
 char = "噴"
-default = "ふ"
+default = "フン"
 
 # 「噴く/噴かない/噴いた/噴いて/噴けば/噴こう」 = 動詞 → ふ
 [[kanji.match]]
@@ -6845,7 +6845,7 @@ reading = "ふ"
 # 動詞 「在る」 は okurigana 列挙で 「あ」 へ切替
 [[kanji]]
 char = "在"
-default = "あ"
+default = "ザイ"
 
 # 「在る/在らない/在った/在って/在れば/在ろう/在り○○」 = 動詞 → あ
 [[kanji.match]]
@@ -6856,7 +6856,7 @@ reading = "あ"
 # 動詞 「執る/執り行う」 は okurigana 列挙で 「と」 へ切替
 [[kanji]]
 char = "執"
-default = "と"
+default = "シツ"
 
 # 「執る/執らない/執った/執って/執れば/執ろう/執り○○」 = 動詞 → と
 [[kanji.match]]
@@ -6867,7 +6867,7 @@ reading = "と"
 # 動詞 「塗る」 は okurigana 列挙で 「ぬ」 へ切替
 [[kanji]]
 char = "塗"
-default = "ぬ"
+default = "ト"
 
 # 「塗る/塗らない/塗った/塗って/塗れば/塗ろう/塗り○○」 = 動詞 → ぬ
 [[kanji.match]]
@@ -6908,7 +6908,7 @@ default = "コ"
 # 動詞 「富む」 は okurigana 列挙で 「と」 へ切替
 [[kanji]]
 char = "富"
-default = "と"
+default = "フ"
 
 # 「富む/富まない/富んだ/富んで/富めば/富もう/富み○○」 = 動詞 → と
 [[kanji.match]]
@@ -6919,7 +6919,7 @@ reading = "と"
 # 動詞 「寄る/寄せる」 は okurigana 列挙で 「よ」 へ切替
 [[kanji]]
 char = "寄"
-default = "よ"
+default = "キ"
 
 # 「寄る/寄らない/寄った/寄って/寄れば/寄ろう/寄り○○/寄せる」 = 動詞 → よ
 [[kanji.match]]
@@ -6930,7 +6930,7 @@ reading = "よ"
 # 動詞 「巻く」 は okurigana 列挙で 「ま」 へ切替
 [[kanji]]
 char = "巻"
-default = "ま"
+default = "カン"
 
 # 「巻く/巻かない/巻いた/巻いて/巻けば/巻こう/巻き○○」 = 動詞 → ま
 [[kanji.match]]
@@ -6997,7 +6997,7 @@ default = "スイ"
 # 動詞 「得る」 は okurigana 列挙で 「え」 へ切替 (= 下一段活用)
 [[kanji]]
 char = "得"
-default = "え"
+default = "トク"
 
 # 「得る/得ない/得た/得て/得れば/得よう/得ろ」 = 動詞 → え
 [[kanji.match]]
@@ -7158,7 +7158,7 @@ default = "エン"
 # 副詞 「未だ」 = いまだ は next_eq で切替
 [[kanji]]
 char = "未"
-default = "いま"
+default = "ミ"
 
 # 「未だ」 = いまだ (副詞用法)
 [[kanji.match]]
@@ -7175,7 +7175,7 @@ default = "マツ"
 # 副詞 「既に」 = すでに は next_eq で切替
 [[kanji]]
 char = "既"
-default = "すで"
+default = "キ"
 
 # 「既に」 = すでに (副詞用法)
 [[kanji.match]]
@@ -7192,7 +7192,7 @@ default = "オウ"
 # 動詞 「死ぬ」 は okurigana 列挙で 「し」 へ切替
 [[kanji]]
 char = "死"
-default = "し"
+default = "シ"
 
 # 「死ぬ/死なない/死んだ/死んで/死ねば/死のう」 = 動詞 → し
 [[kanji.match]]
@@ -7203,7 +7203,7 @@ reading = "し"
 # 動詞 「沿う」 は okurigana 列挙で 「そ」 へ切替
 [[kanji]]
 char = "沿"
-default = "そ"
+default = "エン"
 
 # 「沿う/沿わない/沿った/沿って/沿えば/沿おう/沿い○○」 = 動詞 → そ
 [[kanji.match]]
@@ -7214,7 +7214,7 @@ reading = "そ"
 # 動詞 「泣く」 は okurigana 列挙で 「な」 へ切替
 [[kanji]]
 char = "泣"
-default = "な"
+default = "キュウ"
 
 # 「泣く/泣かない/泣いた/泣いて/泣けば/泣こう/泣き○○」 = 動詞 → な
 [[kanji.match]]
@@ -7257,7 +7257,7 @@ default = "ヒョウ"
 # 副詞 「殊に」 = ことに は next_eq で切替
 [[kanji]]
 char = "殊"
-default = "こと"
+default = "シュ"
 
 # 「殊に」 = ことに (副詞用法)
 [[kanji.match]]
@@ -7578,7 +7578,7 @@ reading = "か"
 # 動詞 「貸す」 は okurigana 列挙で 「か」 へ切替
 [[kanji]]
 char = "貸"
-default = "か"
+default = "タイ"
 
 # 「貸す/貸さない/貸した/貸して/貸せば/貸そう/貸し○○」 = 動詞 → か
 [[kanji.match]]
@@ -7589,7 +7589,7 @@ reading = "か"
 # 動詞 「踏む」 は okurigana 列挙で 「ふ」 へ切替
 [[kanji]]
 char = "踏"
-default = "ふ"
+default = "トウ"
 
 # 「踏む/踏まない/踏んだ/踏めば/踏もう/踏み○○」 = 動詞 → ふ
 [[kanji.match]]
@@ -7750,7 +7750,7 @@ reading = "こ"
 # 動詞 「蹴る」 は okurigana 列挙で 「け」 へ切替
 [[kanji]]
 char = "蹴"
-default = "け"
+default = "シュウ"
 
 # 「蹴る/蹴らない/蹴った/蹴って/蹴れば/蹴ろう/蹴り○○」 = 動詞 → け
 [[kanji.match]]
@@ -7766,7 +7766,7 @@ reading = "げ"
 # 動詞 「透く/透ける/透かす」 は okurigana 列挙で 「す」 へ切替
 [[kanji]]
 char = "透"
-default = "す"
+default = "トウ"
 
 # 「透く/透ける/透かす/透いた/透けば」 = 動詞 → す
 [[kanji.match]]
@@ -7777,7 +7777,7 @@ reading = "す"
 # 動詞 「顧みる」 は okurigana 列挙で 「かえり」 へ切替 (= 3 mora 訓読み)
 [[kanji]]
 char = "顧"
-default = "かえり"
+default = "コ"
 
 # 「顧みる」 = かえりみる (動詞)
 [[kanji.match]]
@@ -7883,7 +7883,7 @@ default = "レイ"
 # 形容詞 「麗しい」 = うるわしい は okurigana 「し」 始まりで切替
 [[kanji]]
 char = "麗"
-default = "うるわ"
+default = "レイ"
 
 # 「麗しい/麗しく/麗しかった」 = 形容詞 → うるわ
 [[kanji.match]]
@@ -7933,7 +7933,7 @@ reading = "とお"
 # 動詞 「遡る」 は okurigana 列挙で 「さかのぼ」 へ切替 (= 5 mora 訓読み)
 [[kanji]]
 char = "遡"
-default = "さかのぼ"
+default = "ソ"
 
 # 「遡る/遡らない/遡った/遡って/遡れば/遡ろう」 = 動詞 → さかのぼ
 [[kanji.match]]
@@ -7974,7 +7974,7 @@ default = "レイ"
 # 動詞 「逝く」 は okurigana 列挙で 「ゆ」 へ切替
 [[kanji]]
 char = "逝"
-default = "ゆ"
+default = "セイ"
 
 # 「逝く/逝かない/逝った/逝って/逝けば/逝こう」 = 動詞 → ゆ
 [[kanji.match]]
@@ -7985,7 +7985,7 @@ reading = "ゆ"
 # 動詞 「酌む」 は okurigana 列挙で 「く」 へ切替
 [[kanji]]
 char = "酌"
-default = "く"
+default = "シャク"
 
 # 「酌む/酌まない/酌んだ/酌めば/酌もう/酌み交わす」 = 動詞 → く
 [[kanji.match]]
@@ -7996,7 +7996,7 @@ reading = "く"
 # 形容詞 「鈍い」 + 動詞 「鈍る」 は okurigana 列挙で 「にぶ」 へ切替
 [[kanji]]
 char = "鈍"
-default = "にぶ"
+default = "ドン"
 
 # 「鈍い/鈍く/鈍さ/鈍る/鈍らない/鈍った」 = 形容詞 + 動詞 → にぶ
 [[kanji.match]]
@@ -8031,7 +8031,7 @@ default = "カツ"
 # 副詞 「辺り」 = あたり は next_eq で切替
 [[kanji]]
 char = "辺"
-default = "あた"
+default = "ヘン"
 
 # 「辺り」 = あたり (副詞 / 名詞用法)
 [[kanji.match]]
@@ -8114,7 +8114,7 @@ default = "ガイ"
 # 単独 + 助詞接続 → 「おもむき」 (= 名詞用法)
 [[kanji]]
 char = "趣"
-default = "おもむき"
+default = "シュ"
 
 # 「趣は/趣が/趣を/趣に/趣の/趣で/趣と」 = 単独 + 助詞接続 → おもむき
 [[kanji.match]]
@@ -8130,7 +8130,7 @@ reading = "おもむき"
 # 単独 + 助詞接続 → 「みやこ」 (= 名詞用法)
 [[kanji]]
 char = "都"
-default = "みやこ"
+default = "ト"
 
 # 「都は/都が/都を/都に/都の/都で/都と」 = 単独 + 助詞接続 → みやこ
 [[kanji.match]]
@@ -8141,7 +8141,7 @@ reading = "みやこ"
 # 単独 + 助詞接続 → 「かみなり」 (= 名詞用法)
 [[kanji]]
 char = "雷"
-default = "かみなり"
+default = "ライ"
 
 # 「雷は/雷が/雷を/雷に/雷の/雷で/雷と」 = 単独 + 助詞接続 → かみなり
 [[kanji.match]]
@@ -8152,7 +8152,7 @@ reading = "かみなり"
 # 単独 + 助詞接続 → 「いけ」 (= 名詞用法)
 [[kanji]]
 char = "池"
-default = "いけ"
+default = "チ"
 
 # 「池は/池が/池を/池に/池の/池で/池と」 = 単独 + 助詞接続 → いけ
 [[kanji.match]]
@@ -8200,7 +8200,7 @@ default = "メン"
 # 動詞 「凌ぐ」 は okurigana 列挙で 「しの」 へ切替
 [[kanji]]
 char = "凌"
-default = "しの"
+default = "リョウ"
 
 # 「凌ぐ/凌がない/凌いだ/凌いで/凌げば/凌ごう/凌ぎ○○」 = 動詞 → しの
 [[kanji.match]]
@@ -8211,7 +8211,7 @@ reading = "しの"
 # 動詞 「倦む」 は okurigana 列挙で 「う」 へ切替
 [[kanji]]
 char = "倦"
-default = "う"
+default = "ケン"
 
 # 「倦む/倦まない/倦んだ/倦めば/倦もう」 = 動詞 → う
 [[kanji.match]]
@@ -8228,7 +8228,7 @@ default = "リュウ"
 # 副詞 「嘗て」 = かつて は next_eq で切替
 [[kanji]]
 char = "嘗"
-default = "かつ"
+default = "ショウ"
 
 # 「嘗て」 = かつて (副詞)
 [[kanji.match]]
@@ -8275,7 +8275,7 @@ default = "ヤ"
 # 動詞 「庇う」 は okurigana 列挙で 「かば」 へ切替
 [[kanji]]
 char = "庇"
-default = "かば"
+default = "ヒ"
 
 # 「庇う/庇わない/庇った/庇って/庇えば/庇おう」 = 動詞 → かば
 [[kanji.match]]
@@ -8286,7 +8286,7 @@ reading = "かば"
 # 動詞 「廻る/廻す」 は okurigana 列挙で 「まわ」 へ切替
 [[kanji]]
 char = "廻"
-default = "まわ"
+default = "カイ"
 
 # 「廻る/廻らない/廻った/廻って/廻れば/廻ろう/廻す/廻り○○」 = 動詞 → まわ
 [[kanji.match]]
@@ -8297,7 +8297,7 @@ reading = "まわ"
 # 動詞 「挽く」 は okurigana 列挙で 「ひ」 へ切替
 [[kanji]]
 char = "挽"
-default = "ひ"
+default = "バン"
 
 # 「挽く/挽かない/挽いた/挽いて/挽けば/挽こう」 = 動詞 → ひ
 [[kanji.match]]
@@ -8308,7 +8308,7 @@ reading = "ひ"
 # 動詞 「撞く」 は okurigana 列挙で 「つ」 へ切替
 [[kanji]]
 char = "撞"
-default = "つ"
+default = "ドウ"
 
 # 「撞く/撞かない/撞いた/撞いて/撞けば/撞こう」 = 動詞 → つ
 [[kanji.match]]
@@ -8319,7 +8319,7 @@ reading = "つ"
 # 動詞 「撰ぶ」 は okurigana 列挙で 「えら」 へ切替
 [[kanji]]
 char = "撰"
-default = "えら"
+default = "セン"
 
 # 「撰ぶ/撰ばない/撰んだ/撰べば/撰ぼう」 = 動詞 → えら
 [[kanji.match]]
@@ -8330,7 +8330,7 @@ reading = "えら"
 # 動詞 「曝す」 は okurigana 列挙で 「さら」 へ切替
 [[kanji]]
 char = "曝"
-default = "さら"
+default = "バク"
 
 # 「曝す/曝さない/曝した/曝して/曝せば/曝そう」 = 動詞 → さら
 [[kanji.match]]
@@ -8341,7 +8341,7 @@ reading = "さら"
 # 動詞 「弛む」 は okurigana 列挙で 「たる」 へ切替 (= 「弛む = たるむ」)
 [[kanji]]
 char = "弛"
-default = "たる"
+default = "シ"
 
 # 「弛む/弛まない/弛んだ/弛めば」 = 動詞 → たる
 [[kanji.match]]
@@ -8352,7 +8352,7 @@ reading = "たる"
 # 動詞 「撒く」 は okurigana 列挙で 「ま」 へ切替
 [[kanji]]
 char = "撒"
-default = "ま"
+default = "サン"
 
 # 「撒く/撒かない/撒いた/撒いて/撒けば/撒こう」 = 動詞 → ま
 [[kanji.match]]
@@ -8369,7 +8369,7 @@ default = "チョウ"
 # 形容詞 「嬉しい」 = うれしい は okurigana 「し」 始まりで切替
 [[kanji]]
 char = "嬉"
-default = "うれ"
+default = "キ"
 
 # 「嬉しい/嬉しく/嬉しかった」 = 形容詞 → うれ
 [[kanji.match]]
@@ -8380,7 +8380,7 @@ reading = "うれ"
 # 動詞 「歎く」 = なげく は okurigana で 「なげ」 へ切替 (= 「嘆」 異体字)
 [[kanji]]
 char = "歎"
-default = "なげ"
+default = "タン"
 
 # 「歎く/歎かない/歎いた/歎いて/歎けば/歎こう」 = 動詞 → なげ
 [[kanji.match]]
@@ -8391,7 +8391,7 @@ reading = "なげ"
 # 動詞 「汲む」 は okurigana 列挙で 「く」 へ切替
 [[kanji]]
 char = "汲"
-default = "く"
+default = "キュウ"
 
 # 「汲む/汲まない/汲んだ/汲めば/汲もう/汲み○○」 = 動詞 → く
 [[kanji.match]]
@@ -8402,7 +8402,7 @@ reading = "く"
 # 動詞 「牽く」 は okurigana 列挙で 「ひ」 へ切替 (= 「引」 と同源)
 [[kanji]]
 char = "牽"
-default = "ひ"
+default = "ケン"
 
 # 「牽く/牽かない/牽いた/牽いて/牽けば/牽こう」 = 動詞 → ひ
 [[kanji.match]]
@@ -8413,7 +8413,7 @@ reading = "ひ"
 # 動詞 「漕ぐ」 は okurigana 列挙で 「こ」 へ切替
 [[kanji]]
 char = "漕"
-default = "こ"
+default = "ソウ"
 
 # 「漕ぐ/漕がない/漕いだ/漕いで/漕げば/漕ごう/漕ぎ○○」 = 動詞 → こ
 [[kanji.match]]
@@ -8424,7 +8424,7 @@ reading = "こ"
 # 動詞 「焚く」 は okurigana 列挙で 「た」 へ切替
 [[kanji]]
 char = "焚"
-default = "た"
+default = "フン"
 
 # 「焚く/焚かない/焚いた/焚いて/焚けば/焚こう/焚き○○」 = 動詞 → た
 [[kanji.match]]
@@ -8435,7 +8435,7 @@ reading = "た"
 # 動詞 「煉る」 は okurigana 列挙で 「ね」 へ切替 (= 「練」 異体字)
 [[kanji]]
 char = "煉"
-default = "ね"
+default = "レン"
 
 # 「煉る/煉らない/煉った/煉って/煉れば/煉ろう」 = 動詞 → ね
 [[kanji.match]]
@@ -8446,7 +8446,7 @@ reading = "ね"
 # 動詞 「琢く」 は okurigana 列挙で 「みが」 へ切替
 [[kanji]]
 char = "琢"
-default = "みが"
+default = "タク"
 
 # 「琢く/琢かない/琢いた/琢いて/琢けば/琢こう」 = 動詞 → みが
 [[kanji.match]]
@@ -8457,7 +8457,7 @@ reading = "みが"
 # 副詞 「殆ど」 = ほとんど は next_eq で切替
 [[kanji]]
 char = "殆"
-default = "ほとん"
+default = "タイ"
 
 # 「殆ど」 = ほとんど (副詞)
 [[kanji.match]]
@@ -8468,7 +8468,7 @@ reading = "ほとん"
 # 形容詞 「浩い」 = ひろい は okurigana 列挙で 「ひろ」 へ切替 (= 人名「浩」 = ヒロ も dominant)
 [[kanji]]
 char = "浩"
-default = "ひろ"
+default = "コウ"
 
 # 「浩い/浩く/浩かった」 = 形容詞 → ひろ
 [[kanji.match]]
@@ -8485,7 +8485,7 @@ default = "ジュン"
 # 動詞 「臥す」 は okurigana 列挙で 「ふ」 へ切替
 [[kanji]]
 char = "臥"
-default = "ふ"
+default = "ガ"
 
 # 「臥す/臥さない/臥した/臥して/臥せば」 = 動詞 → ふ
 [[kanji.match]]
@@ -8496,7 +8496,7 @@ reading = "ふ"
 # 動詞 「訊く」 「訊ねる」 は okurigana 列挙で 「き」 / 「たず」 へ切替
 [[kanji]]
 char = "訊"
-default = "き"
+default = "ジン"
 
 # 「訊く/訊いた/訊いて/訊けば」 = 動詞 → き (= 「聞く」 同義)
 [[kanji.match]]
@@ -8512,7 +8512,7 @@ reading = "たず"
 # 動詞 「蘇る」 は okurigana 列挙で 「よみがえ」 へ切替 (= 5 mora 訓読み)
 [[kanji]]
 char = "蘇"
-default = "よみがえ"
+default = "ソ"
 
 # 「蘇る/蘇らない/蘇った/蘇って/蘇れば」 = 動詞 → よみがえ
 [[kanji.match]]
@@ -8523,7 +8523,7 @@ reading = "よみがえ"
 # 動詞 「萌える」 は okurigana 列挙で 「も」 へ切替 (= 「萌え」 dominant)
 [[kanji]]
 char = "萌"
-default = "も"
+default = "ホウ"
 
 # 「萌える/萌えた/萌えて/萌えれば/萌え (= 名詞)」 = 動詞 → も
 [[kanji.match]]
@@ -8534,7 +8534,7 @@ reading = "も"
 # 動詞 「賑わう」 + 形容動詞 「賑やか」 は jukugo 個別、 動詞活用 → にぎ
 [[kanji]]
 char = "賑"
-default = "にぎ"
+default = "シン"
 
 # 「賑わう/賑わって/賑わい」 = 動詞 → にぎ (= 「賑やか」 は jukugo)
 [[kanji.match]]
@@ -8545,7 +8545,7 @@ reading = "にぎ"
 # 形容詞 「逞しい」 は okurigana 「し」 始まりで切替
 [[kanji]]
 char = "逞"
-default = "たくま"
+default = "テイ"
 
 # 「逞しい/逞しく/逞しかった」 = 形容詞 → たくま
 [[kanji.match]]
@@ -8556,7 +8556,7 @@ reading = "たくま"
 # 形容動詞 「遥か」 = はるか は next_eq で切替
 [[kanji]]
 char = "遥"
-default = "はる"
+default = "ヨウ"
 
 # 「遥か」 = はるか (副詞 / 形容動詞)
 [[kanji.match]]
@@ -8579,7 +8579,7 @@ default = "ショウ"
 # 動詞 「馳せる」 は okurigana 「せ」 で 「は」 へ切替
 [[kanji]]
 char = "馳"
-default = "は"
+default = "チ"
 
 # 「馳せる/馳せた/馳せて/馳せれば」 = 動詞 → は
 [[kanji.match]]
@@ -8590,7 +8590,7 @@ reading = "は"
 # 動詞 「訣れる」 は okurigana 「れ」 で 「わか」 へ切替 (= 「別」 と同源)
 [[kanji]]
 char = "訣"
-default = "わか"
+default = "ケツ"
 
 # 「訣れる/訣れない/訣れた/訣れて」 = 動詞 → わか
 [[kanji.match]]
@@ -8601,7 +8601,7 @@ reading = "わか"
 # 動詞 「詫びる」 + 名詞 「詫び」 は okurigana 「び」 で 「わ」 へ切替
 [[kanji]]
 char = "詫"
-default = "わ"
+default = "タク"
 
 # 「詫びる/詫びた/詫びて/詫び (= 名詞)」 = 動詞 + 名詞 → わ
 [[kanji.match]]
@@ -8618,7 +8618,7 @@ default = "リョウ"
 # 動詞 「蕃る」 は okurigana 列挙で 「しげ」 へ切替 (= 「茂」 と同源)
 [[kanji]]
 char = "蕃"
-default = "しげ"
+default = "バン"
 
 # 「蕃る/蕃らない/蕃った/蕃って」 = 動詞 → しげ
 [[kanji.match]]
@@ -8629,7 +8629,7 @@ reading = "しげ"
 # 動詞 「讃える」 は okurigana 列挙で 「たた」 へ切替
 [[kanji]]
 char = "讃"
-default = "たた"
+default = "サン"
 
 # 「讃える/讃えた/讃えて/讃えれば」 = 動詞 → たた
 [[kanji.match]]
@@ -8640,7 +8640,7 @@ reading = "たた"
 # 動詞 「馴れる」 は okurigana 「れ」 で 「な」 へ切替
 [[kanji]]
 char = "馴"
-default = "な"
+default = "ジュン"
 
 # 「馴れる/馴れた/馴れて」 = 動詞 → な
 [[kanji.match]]
@@ -8669,7 +8669,7 @@ default = "ロ"
 # 動詞 「蒙る」 は okurigana 列挙で 「こうむ」 へ切替 (= 3 mora 訓読み)
 [[kanji]]
 char = "蒙"
-default = "こうむ"
+default = "モウ"
 
 # 「蒙る/蒙らない/蒙った/蒙って」 = 動詞 → こうむ
 [[kanji.match]]
@@ -8692,7 +8692,7 @@ default = "ス"
 # 「謂れ」 = いわれ + 動詞 「謂う」 = いう は 2 way 切替
 [[kanji]]
 char = "謂"
-default = "いわ"
+default = "イ"
 
 # 「謂れ/謂れの○○」 = 名詞 → いわ (= 「謂れ」 = いわれ)
 [[kanji.match]]
@@ -8756,7 +8756,7 @@ default = "ジョウ"
 # 副詞 「些か」 = いささか は next_eq で切替
 [[kanji]]
 char = "些"
-default = "いささ"
+default = "サ"
 
 # 「些か」 = いささか (副詞 / 形容動詞)
 [[kanji.match]]
@@ -8767,7 +8767,7 @@ reading = "いささ"
 # 形容動詞 「俄か」 = にわか は next_eq で切替
 [[kanji]]
 char = "俄"
-default = "にわ"
+default = "ガ"
 
 # 「俄か」 = にわか (形容動詞)
 [[kanji.match]]
@@ -8784,7 +8784,7 @@ default = "キョウ"
 # 動詞 「坐る」 は okurigana 列挙で 「すわ」 へ切替
 [[kanji]]
 char = "坐"
-default = "すわ"
+default = "ザ"
 
 # 「坐る/坐らない/坐った/坐って/坐れば」 = 動詞 → すわ
 [[kanji.match]]
@@ -8807,7 +8807,7 @@ default = "ケイ"
 # 動詞 「匡す」 = ただす は okurigana 列挙で 「ただ」 へ切替 (= 「正す」 と同源)
 [[kanji]]
 char = "匡"
-default = "ただ"
+default = "キョウ"
 
 # 「匡す/匡さない/匡した/匡して/匡せば」 = 動詞 → ただ
 [[kanji.match]]
@@ -8836,7 +8836,7 @@ default = "コ"
 # 動詞 「云う」 = いう は okurigana 列挙で 「い」 へ切替 (= 「言」 と同源)
 [[kanji]]
 char = "云"
-default = "い"
+default = "ウン"
 
 # 「云う/云わない/云った/云って/云えば/云おう」 = 動詞 → い
 [[kanji.match]]
@@ -8913,7 +8913,7 @@ default = "モウ"
 # 形容詞 「宏い」 = ひろい は okurigana で 「ひろ」 へ切替 (= 人名「宏」 dominant)
 [[kanji]]
 char = "宏"
-default = "ひろ"
+default = "コウ"
 
 # 「宏い/宏く/宏かった」 = 形容詞 → ひろ
 [[kanji.match]]
@@ -8924,7 +8924,7 @@ reading = "ひろ"
 # 動詞 「尖る/尖がる」 は okurigana 列挙で 「とが」 へ切替
 [[kanji]]
 char = "尖"
-default = "とが"
+default = "セン"
 
 # 「尖る/尖らない/尖った/尖って/尖れば/尖がる」 = 動詞 → とが
 [[kanji.match]]
@@ -8947,7 +8947,7 @@ default = "キ"
 # 副詞 「忽ち」 = たちまち は next_eq で切替
 [[kanji]]
 char = "忽"
-default = "たちま"
+default = "コツ"
 
 # 「忽ち」 = たちまち (副詞)
 [[kanji.match]]
@@ -8976,7 +8976,7 @@ default = "ライ"
 # 副詞 「恰も」 = あたかも は next_eq で切替
 [[kanji]]
 char = "恰"
-default = "あたか"
+default = "コウ"
 
 # 「恰も」 = あたかも (副詞)
 [[kanji.match]]
@@ -8999,7 +8999,7 @@ default = "イ"
 # 動詞 「惹く」 は okurigana 列挙で 「ひ」 へ切替 (= 「引」 と同源)
 [[kanji]]
 char = "惹"
-default = "ひ"
+default = "ジャク"
 
 # 「惹く/惹かない/惹いた/惹いて/惹けば/惹こう」 = 動詞 → ひ
 [[kanji.match]]
@@ -9028,7 +9028,7 @@ default = "タク"
 # 動詞 「捲く」 は okurigana 列挙で 「ま」 へ切替 (= 「巻」 と同源)
 [[kanji]]
 char = "捲"
-default = "ま"
+default = "ケン"
 
 # 「捲く/捲かない/捲いた/捲いて/捲けば/捲こう」 = 動詞 → ま
 [[kanji.match]]
@@ -9039,7 +9039,7 @@ reading = "ま"
 # 形容詞 「捷い」 は okurigana 列挙で 「はや」 へ切替 (= 「速」 と同源)
 [[kanji]]
 char = "捷"
-default = "はや"
+default = "ショウ"
 
 # 「捷い/捷く/捷かった」 = 形容詞 → はや
 [[kanji.match]]
@@ -9050,7 +9050,7 @@ reading = "はや"
 # 動詞 「摑む」 は okurigana 列挙で 「つか」 へ切替
 [[kanji]]
 char = "摑"
-default = "つか"
+default = "カク"
 
 [[kanji.match]]
 next_starts_any = ["む", "ま", "み", "ん", "め", "も"]
@@ -9060,7 +9060,7 @@ reading = "つか"
 # 動詞 「播く」 は okurigana 列挙で 「ま」 へ切替 (= 「蒔」 と同源)
 [[kanji]]
 char = "播"
-default = "ま"
+default = "ハ"
 
 [[kanji.match]]
 next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
@@ -9076,7 +9076,7 @@ default = "テキ"
 # 形容詞 「敦い」 = あつい は okurigana 列挙で 「あつ」 へ切替
 [[kanji]]
 char = "敦"
-default = "あつ"
+default = "トン"
 
 [[kanji.match]]
 next_starts_any = ["い", "く", "か", "け", "さ"]
@@ -9106,7 +9106,7 @@ default = "オ"
 # 動詞 「昂る」 = たかぶる は okurigana 列挙で 「たか」 へ切替
 [[kanji]]
 char = "昂"
-default = "たか"
+default = "コウ"
 
 [[kanji.match]]
 next_starts_any = ["ぶ", "ば", "び", "べ", "ぼ"]
@@ -9121,7 +9121,7 @@ default = "ショウ"
 # 形容詞 「昏い」 = くらい は okurigana 列挙で 「くら」 へ切替
 [[kanji]]
 char = "昏"
-default = "くら"
+default = "コン"
 
 [[kanji.match]]
 next_starts_any = ["い", "く", "か", "け", "さ"]
@@ -9136,7 +9136,7 @@ default = "シン"
 # 形容詞 「晦い」 + 動詞 「晦ます」 は okurigana 列挙で 「くら」 へ切替
 [[kanji]]
 char = "晦"
-default = "くら"
+default = "カイ"
 
 [[kanji.match]]
 next_starts_any = ["い", "く", "か", "け", "さ", "ま", "み", "め"]
@@ -9151,7 +9151,7 @@ default = "シン"
 # 動詞 「曳く」 は okurigana 列挙で 「ひ」 へ切替 (= 「引」 と同源)
 [[kanji]]
 char = "曳"
-default = "ひ"
+default = "エイ"
 
 [[kanji.match]]
 next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
@@ -9161,7 +9161,7 @@ reading = "ひ"
 # 動詞 「棲む」 は okurigana 列挙で 「す」 へ切替 (= 「住」 と同源)
 [[kanji]]
 char = "棲"
-default = "す"
+default = "セイ"
 
 [[kanji.match]]
 next_starts_any = ["む", "ま", "み", "ん", "め", "も"]
@@ -9191,7 +9191,7 @@ default = "アク"
 # 動詞 「湛える」 = たたえる は okurigana 列挙で 「たた」 へ切替
 [[kanji]]
 char = "湛"
-default = "たた"
+default = "タン"
 
 [[kanji.match]]
 next_starts_any = ["え", "わ", "い", "っ", "う"]
@@ -9201,7 +9201,7 @@ reading = "たた"
 # 動詞 「溜める/溜まる」 は okurigana 列挙で 「た」 へ切替
 [[kanji]]
 char = "溜"
-default = "た"
+default = "リュウ"
 
 [[kanji.match]]
 next_starts_any = ["め", "ま", "む", "み", "も"]
@@ -9226,7 +9226,7 @@ default = "キュウ"
 # 動詞 「灼く」 は okurigana 列挙で 「や」 へ切替
 [[kanji]]
 char = "灼"
-default = "や"
+default = "シャク"
 
 [[kanji.match]]
 next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
@@ -9301,7 +9301,7 @@ default = "ギ"
 # 動詞 「禱る」 = いのる は okurigana 列挙で 「いの」 へ切替
 [[kanji]]
 char = "禱"
-default = "いの"
+default = "トウ"
 
 [[kanji.match]]
 next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ"]
@@ -9321,7 +9321,7 @@ default = "リン"
 # 動詞 「穿つ」 = うがつ は okurigana 列挙で 「うが」 へ切替
 [[kanji]]
 char = "穿"
-default = "うが"
+default = "セン"
 
 [[kanji.match]]
 next_starts_any = ["つ", "た", "ち", "っ", "て", "と"]
@@ -9361,7 +9361,7 @@ default = "ゲン"
 # 動詞 「綜べる」 は okurigana 列挙で 「す」 へ切替
 [[kanji]]
 char = "綜"
-default = "す"
+default = "ソウ"
 
 [[kanji.match]]
 next_starts_any = ["べ", "ば", "ぶ", "び", "ぼ"]
@@ -9381,7 +9381,7 @@ default = "ヒ"
 # 動詞 「繫ぐ」 は okurigana 列挙で 「つな」 へ切替 (= 「繋」 異体字)
 [[kanji]]
 char = "繫"
-default = "つな"
+default = "ケイ"
 
 [[kanji.match]]
 next_starts_any = ["ぐ", "が", "ぎ", "い", "げ", "ご"]
@@ -9391,7 +9391,7 @@ reading = "つな"
 # 動詞 「纏う/纏める」 は okurigana 列挙で 「まと」 へ切替
 [[kanji]]
 char = "纏"
-default = "まと"
+default = "テン"
 
 [[kanji.match]]
 next_starts_any = ["う", "わ", "い", "っ", "え", "お", "め", "ま", "み", "む", "も"]
@@ -9401,7 +9401,7 @@ reading = "まと"
 # 動詞 「翔ける」 は okurigana 列挙で 「か」 へ切替
 [[kanji]]
 char = "翔"
-default = "か"
+default = "ショウ"
 
 [[kanji.match]]
 next_starts_any = ["け", "か", "き", "く", "こ"]
@@ -9416,7 +9416,7 @@ default = "ヤ"
 # 動詞 「耽る」 = ふける は okurigana 列挙で 「ふけ」 へ切替
 [[kanji]]
 char = "耽"
-default = "ふけ"
+default = "タン"
 
 [[kanji.match]]
 next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ"]
@@ -9466,7 +9466,7 @@ default = "ギ"
 # 形容詞 「遼か」 = はるか は next_eq で切替 (= 「遥」 と同源)
 [[kanji]]
 char = "遼"
-default = "はる"
+default = "リョウ"
 
 [[kanji.match]]
 next_eq = "か"
@@ -9481,7 +9481,7 @@ default = "ショウ"
 # 動詞 「伐つ」 は okurigana 列挙で 「う」 へ切替 (= 「打」 と同源)
 [[kanji]]
 char = "伐"
-default = "う"
+default = "バツ"
 
 [[kanji.match]]
 next_starts_any = ["つ", "た", "ち", "っ", "て", "と"]
@@ -9491,7 +9491,7 @@ reading = "う"
 # 動詞 「押す」 は okurigana 列挙で 「お」 へ切替
 [[kanji]]
 char = "押"
-default = "お"
+default = "オウ"
 
 [[kanji.match]]
 next_starts_any = ["す", "さ", "し", "せ", "そ", "っ"]
@@ -9501,7 +9501,7 @@ reading = "お"
 # 動詞 「摘む」 は okurigana 列挙で 「つ」 へ切替
 [[kanji]]
 char = "摘"
-default = "つ"
+default = "テキ"
 
 [[kanji.match]]
 next_starts_any = ["む", "ま", "み", "ん", "め", "も"]
@@ -9511,7 +9511,7 @@ reading = "つ"
 # 動詞 「漏る/漏れる/漏らす」 は okurigana 列挙で 「も」 へ切替
 [[kanji]]
 char = "漏"
-default = "も"
+default = "ロウ"
 
 [[kanji.match]]
 next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ"]
@@ -9521,7 +9521,7 @@ reading = "も"
 # 動詞 「炊く」 は okurigana 列挙で 「た」 へ切替
 [[kanji]]
 char = "炊"
-default = "た"
+default = "スイ"
 
 [[kanji.match]]
 next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
@@ -9531,7 +9531,7 @@ reading = "た"
 # 動詞 「聞く」 は okurigana 列挙で 「き」 へ切替
 [[kanji]]
 char = "聞"
-default = "き"
+default = "ブン"
 
 [[kanji.match]]
 next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
@@ -9591,7 +9591,7 @@ reading = "そろ"
 # 動詞 「撫でる」 は okurigana 「で」 で 「な」 へ切替 (= 「撫子 = ナデシコ」 は jukugo 個別)
 [[kanji]]
 char = "撫"
-default = "な"
+default = "ブ"
 
 [[kanji.match]]
 next_starts_any = ["で"]
@@ -9611,7 +9611,7 @@ reading = "す"
 # 動詞 「駈ける」 は okurigana 列挙で 「か」 へ切替
 [[kanji]]
 char = "駈"
-default = "か"
+default = "ク"
 
 [[kanji.match]]
 next_starts_any = ["け", "か", "き", "く", "こ"]
@@ -9665,7 +9665,7 @@ default = "コウ"
 # unihan default 「すみ」 は名詞単独、 「炭火/炭焼き」 は jukugo 個別
 [[kanji]]
 char = "炭"
-default = "すみ"
+default = "タン"
 
 # 「炭は / 炭が / 炭を / 炭に / 炭の / 炭で / 炭と / 炭も」 = 名詞用法、 訓「すみ」
 [[kanji.match]]
@@ -9676,7 +9676,7 @@ reading = "すみ"
 # 動詞 「狩る」 + 名詞 「狩り」 は okurigana 列挙で 「か」 へ切替
 [[kanji]]
 char = "狩"
-default = "か"
+default = "シュ"
 
 [[kanji.match]]
 next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ"]
@@ -9704,7 +9704,7 @@ default = "ゴク"
 # 動詞 「獲る」 は okurigana 列挙で 「え」 へ切替 (= 「得る」 と同源、 下一段活用)
 [[kanji]]
 char = "獲"
-default = "え"
+default = "カク"
 
 [[kanji.match]]
 next_starts_any = ["る", "た", "て", "ら", "り", "れ", "ろ", "な", "よ"]
@@ -9714,7 +9714,7 @@ reading = "え"
 # 形容詞 「珍しい」 = めずらしい は okurigana 「し」 始まりで切替
 [[kanji]]
 char = "珍"
-default = "めずら"
+default = "チン"
 
 [[kanji.match]]
 next_starts_any = ["し"]
@@ -11025,7 +11025,7 @@ reading = "まぼろし"
 # 副詞 「幾つ/幾ら/幾度」 は okurigana で 「いく」 へ切替
 [[kanji]]
 char = "幾"
-default = "いく"
+default = "キ"
 
 [[kanji.match]]
 next_starts_any = ["つ", "ら", "ど", "は", "が", "を", "に", "の", "で", "と", "も"]
@@ -11335,7 +11335,7 @@ default = "ケイ"
 # 動詞 「湧く」 は okurigana 列挙で 「わ」 へ切替
 [[kanji]]
 char = "湧"
-default = "わ"
+default = "ユウ"
 
 [[kanji.match]]
 next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
@@ -11988,7 +11988,7 @@ reading = "あらた"
 # 動詞 「明ける/明く/明かす」 → 「あ」、 形容詞 「明るい」 → 「あか」、 「明らか」 は jukugo 個別
 [[kanji]]
 char = "明"
-default = "あ"
+default = "メイ"
 
 # 「明ける/明く/明かす」 = 動詞 → あ
 [[kanji.match]]
@@ -12046,7 +12046,7 @@ reading = "もり"
 # 単独 + 助詞接続 → 「はば」 (= 「幅」 と同義、 「巾が/巾の」 等)
 [[kanji]]
 char = "巾"
-default = "はば"
+default = "キン"
 
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
@@ -12168,7 +12168,7 @@ default = "なみ"
 
 [[kanji]]
 char = "泡"
-default = "あわ"
+default = "ホウ"
 
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
@@ -12251,7 +12251,7 @@ reading = "ゆ"
 # 単独 + 助詞接続 → 「うるし」 (= 「漆が/漆の」 等)
 [[kanji]]
 char = "漆"
-default = "うるし"
+default = "シツ"
 
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
@@ -12728,7 +12728,7 @@ default = "カン"
 # 動詞「偲ぶ」 → okurigana 「ぶ/ば/び/ん/べ/ぼ」 で「しの」 へ切替 (= 五段動詞)。
 [[kanji]]
 char = "偲"
-default = "しの"
+default = "シ"
 
 [[kanji.match]]
 next_starts_any = ["ぶ", "ば", "び", "ん", "べ", "ぼ"]
@@ -12825,7 +12825,7 @@ default = "ナツ"
 # 動詞「掬う」 → okurigana 「う/わ/っ/お/い/え」 で「すく」 へ切替 (= 五段動詞)。
 [[kanji]]
 char = "掬"
-default = "すく"
+default = "キク"
 
 [[kanji.match]]
 next_starts_any = ["う", "わ", "っ", "お", "い", "え"]
@@ -12913,7 +12913,7 @@ default = "ショウ"
 # 動詞「綴る/綴じる」 → okurigana 「る/ら/り/っ/れ/ろ/じ」 で「つづ」 へ切替。
 [[kanji]]
 char = "綴"
-default = "つづ"
+default = "テイ"
 
 [[kanji.match]]
 next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ", "じ"]
@@ -13159,7 +13159,7 @@ default = "あ"
 # 助詞接続 → 「よ」 (= 「世が世なら/世の中/世を渡る」 等の単独訓)。
 [[kanji]]
 char = "世"
-default = "よ"
+default = "セイ"
 
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
