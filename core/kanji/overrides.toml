@@ -84,7 +84,11 @@ reading = "した"
 # ゼン は jukugo (前半/前回/午前/以前/前進 等) が覆うため default まえ
 [[kanji]]
 char = "前"
-default = "まえ"
+default = "ゼン"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "まえ"
 
 
 [[kanji]]
@@ -186,11 +190,19 @@ reading = "ひと"
 
 [[kanji]]
 char = "心"
-default = "こころ"
+default = "シン"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "こころ"
 
 [[kanji]]
 char = "物"
-default = "もの"
+default = "ブツ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "もの"
 
 [[kanji]]
 char = "山"
@@ -244,7 +256,11 @@ default = "みみ"
 
 [[kanji]]
 char = "口"
-default = "くち"
+default = "コウ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "くち"
 
 [[kanji]]
 char = "足"
@@ -576,7 +592,11 @@ default = "テキ"
 # 「次」: 「つぎ」 が圧倒的、 「つぐ」 動詞 「次ぐ」 は希少。 default を 「つぎ」 に。
 [[kanji]]
 char = "次"
-default = "つぎ"
+default = "ジ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "つぎ"
 
 # ─── 単漢字 default 修正 ────────────────────────────────────────────────────
 
@@ -584,7 +604,11 @@ default = "つぎ"
 # 「シュ」 音読みは熟語 dict 1000 で覆う (= 「歌手 / 選手 / 助手」)。
 [[kanji]]
 char = "手"
-default = "て"
+default = "シュ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "て"
 
 # 「力」: 単独 「ちから」 + 接尾辞 「リョク」 (= 「免疫力 / 集中力 / 体力」)。
 # 接尾辞用法が圧倒的、 単独は 「ちから」 名詞。 漢字後続 = 熟語末尾 → リョク。
@@ -647,7 +671,11 @@ default = "ゼン"
 # 注目」 等の 「モク」 は dict 1000 jukugo で覆う前提。
 [[kanji]]
 char = "目"
-default = "め"
+default = "モク"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "め"
 
 # 「会」: 音読み 「カイ」 (= 「会議 / 大会 / 機会 / 次会」 等の熟語) が圧倒的。
 # 動詞 「会う / 会わない」 はひらがな後続で 「あ」 (= 「会う」 = 「あう」 = 「あ」+「う」)。
@@ -1596,7 +1624,11 @@ reading = "タ"
 # 未登録 jukugo は別 commit で補完予定。
 [[kanji]]
 char = "色"
-default = "いろ"
+default = "ショク"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "いろ"
 
 # 「子」: unihan default 「こ」 → 訓読み こ で 「子供 / 子方 / 子守歌」 等の
 # 先頭 case を吸収。 後置の シ 系 (= 様子=ヨウス / 槓子=コウコ / 玉子焼=
@@ -1784,7 +1816,11 @@ default = "かみ"
 # default オン 倒しは文末 case で fail、 純 migration が安全と判断。
 [[kanji]]
 char = "音"
-default = "おと"
+default = "オン"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "おと"
 
 # 「関」: unihan default 「せき」 → カン 系 24 件 (= 関係 / 関心 / 関連 /
 # 機関 / 関与 / 相関 等) で音読み圧倒的多数。 セキ 系 1 件 (= 関ヶ原 等)
@@ -2218,7 +2254,11 @@ default = "ほね"
 # / 平身低頭 等) は band 100 で吸収。
 [[kanji]]
 char = "頭"
-default = "あたま"
+default = "トウ"
+
+[[kanji.match]]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
+reading = "あたま"
 
 # 「夜」: default = よる。 ヤ系 jukugo (夜間 / 夜光 / 深夜 / 徹夜 / 一夜
 # / 七夜 等) は band 100 で吸収。
