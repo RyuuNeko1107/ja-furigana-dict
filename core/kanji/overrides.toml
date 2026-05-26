@@ -1867,11 +1867,11 @@ default = "ショウ"
 # が安全と判断。
 [[kanji]]
 char = "神"
-default = "シン"
+default = "かみ"
 
 [[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
-reading = "かみ"
+prev_char_type = "漢字"
+reading = "シン"
 
 # 「音」: unihan default 「おと」 → 純 migration (= reading 変更なし)。 オン/
 # イン 系 41 件 (= 音楽 / 録音 / 発音 / 音圧 / 異口同音 等)・ ネ 系 (=
@@ -2263,11 +2263,11 @@ reading = "ウン"
 # band 100 で吸収。
 [[kanji]]
 char = "馬"
-default = "バ"
+default = "うま"
 
 [[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
-reading = "うま"
+prev_char_type = "漢字"
+reading = "バ"
 
 # 「石」: default = いし。 セキ/コク/シャク系 jukugo (石灰 / 化石 / 鉱石
 # / 石高 等) は band 100 で吸収。
@@ -2329,11 +2329,11 @@ default = "ミャク"
 # default = ギ に倒す純化。
 [[kanji]]
 char = "技"
-default = "ギ"
+default = "わざ"
 
 [[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
-reading = "わざ"
+prev_char_type = "漢字"
+reading = "ギ"
 
 # 「管」: unihan default 「くだ」 → カン系 14 件 (= 管理 / 管轄 / 配管 /
 # 血管 / 管楽器 / 鉄管 等)。 クダ系 1 件 (= 手練手管=テレンテクダ) は
@@ -10939,10 +10939,13 @@ char = "峡"
 default = "キョウ"
 
 # 「巧」 default 「コウ」 (= 巧妙/技巧/精巧/巧者/老巧)。
-# unihan default 「たくみ」 は名詞単独、 熟語 dominant
 [[kanji]]
 char = "巧"
 default = "コウ"
+
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "さ", "み"]
+reading = "うま"
 
 # 「己」 default 「コ」 (= 自己/利己/克己/知己/敵己)。
 # unihan default 「おのれ」 は古語、 現代では熟語 dominant
