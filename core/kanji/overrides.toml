@@ -276,11 +276,11 @@ reading = "みみ"
 
 [[kanji]]
 char = "口"
-default = "コウ"
+default = "くち"
 
 [[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
-reading = "くち"
+prev_char_type = "漢字"
+reading = "コウ"
 
 [[kanji]]
 char = "足"
@@ -629,11 +629,11 @@ reading = "ジ"
 # 「シュ」 音読みは熟語 dict 1000 で覆う (= 「歌手 / 選手 / 助手」)。
 [[kanji]]
 char = "手"
-default = "シュ"
+default = "て"
 
 [[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
-reading = "て"
+prev_char_type = "漢字"
+reading = "シュ"
 
 # 「力」: 単独 「ちから」 + 接尾辞 「リョク」 (= 「免疫力 / 集中力 / 体力」)。
 # 接尾辞用法が圧倒的、 単独は 「ちから」 名詞。 漢字後続 = 熟語末尾 → リョク。
@@ -700,11 +700,11 @@ default = "ゼン"
 # 注目」 等の 「モク」 は dict 1000 jukugo で覆う前提。
 [[kanji]]
 char = "目"
-default = "モク"
+default = "め"
 
 [[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
-reading = "め"
+prev_char_type = "漢字"
+reading = "モク"
 
 # 「会」: 音読み 「カイ」 (= 「会議 / 大会 / 機会 / 次会」 等の熟語) が圧倒的。
 # 動詞 「会う / 会わない」 はひらがな後続で 「あ」 (= 「会う」 = 「あう」 = 「あ」+「う」)。
@@ -968,11 +968,11 @@ reading = "おお"
 # 「よわい」 (= 「齢」 異字) は古語、 dict 1000 で必要なら個別。
 [[kanji]]
 char = "歯"
-default = "シ"
+default = "は"
 
 [[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
-reading = "は"
+prev_char_type = "漢字"
+reading = "シ"
 
 # 「生」: 名詞 「生 (なま)」 (= 「生の / 生地 / 生もの / 生卵」) が単独 / 助詞前で
 # 圧倒的。 動詞 「生きる / 生まれる / 生える」 = ひらがな後続で 「い」 語幹。
@@ -1681,11 +1681,11 @@ reading = "タ"
 # 未登録 jukugo は別 commit で補完予定。
 [[kanji]]
 char = "色"
-default = "ショク"
+default = "いろ"
 
 [[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
-reading = "いろ"
+prev_char_type = "漢字"
+reading = "ショク"
 
 # 「子」: unihan default 「こ」 → 訓読み こ で 「子供 / 子方 / 子守歌」 等の
 # 先頭 case を吸収。 後置の シ 系 (= 様子=ヨウス / 槓子=コウコ / 玉子焼=
@@ -1881,11 +1881,11 @@ reading = "かみ"
 # default オン 倒しは文末 case で fail、 純 migration が安全と判断。
 [[kanji]]
 char = "音"
-default = "オン"
+default = "おと"
 
 [[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
-reading = "おと"
+prev_char_type = "漢字"
+reading = "オン"
 
 # 「関」: unihan default 「せき」 → カン 系 24 件 (= 関係 / 関心 / 関連 /
 # 機関 / 関与 / 相関 等) で音読み圧倒的多数。 セキ 系 1 件 (= 関ヶ原 等)
@@ -2370,11 +2370,11 @@ reading = "ほね"
 # / 平身低頭 等) は band 100 で吸収。
 [[kanji]]
 char = "頭"
-default = "トウ"
+default = "あたま"
 
 [[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
-reading = "あたま"
+prev_char_type = "漢字"
+reading = "トウ"
 
 # 「夜」: default = よる。 ヤ系 jukugo (夜間 / 夜光 / 深夜 / 徹夜 / 一夜
 # / 七夜 等) は band 100 で吸収。
@@ -10843,11 +10843,11 @@ reading = "もと"
 # セイ は jukugo (声明/音声/発声/歓声 等) が覆うため default こえ
 [[kanji]]
 char = "声"
-default = "セイ"
+default = "こえ"
 
 [[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
-reading = "こえ"
+prev_char_type = "漢字"
+reading = "セイ"
 
 # 「右」 default 「ウ」 (= 右翼/右折/左右/右側/右手/座右)。
 # 単独 + 助詞接続 → 「みぎ」 (= 「右が/右の」 等)
@@ -11041,11 +11041,11 @@ reading = "やど"
 # 単独 + 助詞接続 + 動詞 「味わう」 → 「あじ」
 [[kanji]]
 char = "味"
-default = "ミ"
+default = "あじ"
 
 [[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
-reading = "あじ"
+prev_char_type = "漢字"
+reading = "ミ"
 
 # 「嫁」 default 「カ」 (= 転嫁/降嫁/再嫁)。
 # 動詞 「嫁ぐ」 → 「とつ」、 単独 + 助詞 → 「よめ」
