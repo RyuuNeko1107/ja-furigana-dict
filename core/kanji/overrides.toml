@@ -4668,6 +4668,14 @@ default = "フン"
 char = "好"
 default = "コウ"
 
+[[kanji.match]]
+next_starts_any = ["き"]
+reading = "す"
+
+[[kanji.match]]
+next_starts_any = ["む", "ま", "み", "ん", "め", "も"]
+reading = "この"
+
 [[kanji]]
 char = "妊"
 default = "ニン"
@@ -9585,7 +9593,7 @@ reading = "か"
 # 動詞 「酔う」 は okurigana 列挙で 「よ」 へ切替
 [[kanji]]
 char = "酔"
-default = "よ"
+default = "スイ"
 
 [[kanji.match]]
 next_starts_any = ["う", "わ", "い", "っ", "え", "お"]
@@ -9595,7 +9603,7 @@ reading = "よ"
 # 動詞 「畜える」 は okurigana 列挙で 「たくわ」 へ切替 (= 「貯」 と同源)
 [[kanji]]
 char = "畜"
-default = "たくわ"
+default = "チク"
 
 [[kanji.match]]
 next_starts_any = ["え", "わ", "い", "っ", "う"]
@@ -17536,3 +17544,15 @@ default = "や"
 [[kanji.match]]
 prev_char_type = "漢字"
 reading = "シ"
+
+[[kanji]]
+char = "痔"
+default = "ジ"
+
+[[kanji]]
+char = "魏"
+default = "ギ"
+
+[[kanji]]
+char = "欝"
+default = "ウツ"
