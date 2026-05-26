@@ -1690,14 +1690,13 @@ reading = "ショク"
 # 「子」: unihan default 「こ」 → 訓読み こ で 「子供 / 子方 / 子守歌」 等の
 # 先頭 case を吸収。 後置の シ 系 (= 様子=ヨウス / 槓子=コウコ / 玉子焼=
 # タマゴヤキ / 硝子=ガラス) は jukugo 個別登録 = band 100 で吸収。 reading
-# 変更を伴わない純 migration (= joyo.toml 旧 entry と等価)。
 [[kanji]]
 char = "子"
-default = "シ"
+default = "こ"
 
 [[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
-reading = "こ"
+prev_char_type = "漢字"
+reading = "シ"
 
 # 「地」: unihan default 「つち」 → ツチ 系 jukugo 0 件、 チ 系 22 件 (= 地域
 # / 地区 / 地殻 / 地下鉄 / 草地 / 湿地 / 産地 / 局地 / 見地 / 境地 / 中継地
@@ -12726,14 +12725,13 @@ prev_char_type = "カタカナ"
 reading = "どん"
 
 # 「事」 default 「ジ」 (= 事件/事実/事故/事業/仕事/家事/工事/事務/食事/返事 等大量)。
-# 単独 + 助詞接続 → 「こと」 (= 「事が起こる/事の真相/事を起こす」 等)
 [[kanji]]
 char = "事"
-default = "ジ"
+default = "こと"
 
 [[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
-reading = "こと"
+prev_char_type = "漢字"
+reading = "ジ"
 
 [[kanji]]
 char = "井"
