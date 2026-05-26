@@ -2070,11 +2070,11 @@ reading = "ゆき"
 # 等) は band 100 で吸収。
 [[kanji]]
 char = "草"
-default = "ソウ"
+default = "くさ"
 
 [[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
-reading = "くさ"
+prev_char_type = "漢字"
+reading = "ソウ"
 
 # 「白」: default = しろ。 ハク/ビャク系 jukugo (白人 / 白米 / 白衣 / 紅白
 # / 告白 / 関白 等) は band 100 で吸収。 「白い = シロイ」 形容詞は default
@@ -6457,7 +6457,7 @@ default = "ソ"
 char = "痛"
 default = "ツウ"
 [[kanji.match]]
-next_starts_any = ["い", "く", "か", "む", "ん", "そ", "み", "ま", "さ"]  # 痛い / 痛く / 痛かった / 痛む / 痛んだ / 痛そう / 痛み / 痛まない / 痛さ
+next_starts_any = ["い", "く", "か", "む", "ん", "そ", "み", "ま", "さ", "す"]
 reading = "イタ"
 
 [[kanji]]
