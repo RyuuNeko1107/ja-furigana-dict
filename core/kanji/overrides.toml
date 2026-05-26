@@ -1638,6 +1638,10 @@ default = "ゲン"
 char = "無"
 default = "ム"
 
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "し", "さ"]
+reading = "な"
+
 # 「宗」: unihan default 「むね」 → シュウ/ソウ 系 25 件 (= 宗教 / 宗旨 /
 # 宗匠 / 宗家 / 真言宗 / 宗主国 等)。 ムネ 系 4 件 (= 伊達政宗 / 徳川吉宗
 # / 立花宗茂 / 陸奥宗光) は戦国〜幕末の人名で jukugo 個別登録済 = band
@@ -3375,6 +3379,10 @@ default = "ラン"
 char = "欲"
 default = "ヨク"
 
+[[kanji.match]]
+next_starts_any = ["し"]
+reading = "ほ"
+
 [[kanji]]
 char = "欺"
 default = "ギ"
@@ -3502,6 +3510,10 @@ default = "セン"
 [[kanji]]
 char = "被"
 default = "ヒ"
+
+[[kanji.match]]
+next_starts_any = ["る", "り", "ら", "れ", "ろ", "っ", "せ"]
+reading = "かぶ"
 
 [[kanji]]
 char = "著"
@@ -5235,7 +5247,7 @@ default = "エン"
 
 [[kanji]]
 char = "漬"
-default = "シ"
+default = "つ"
 
 [[kanji]]
 char = "漸"
@@ -5368,6 +5380,14 @@ default = "リョウ"
 [[kanji]]
 char = "癒"
 default = "ユ"
+
+[[kanji.match]]
+next_starts_any = ["す", "し", "さ", "せ", "そ"]
+reading = "いや"
+
+[[kanji.match]]
+next_starts_any = ["え", "や"]
+reading = "い"
 
 [[kanji]]
 char = "発"
@@ -5817,6 +5837,14 @@ default = "トウ"
 [[kanji]]
 char = "通"
 default = "ツウ"
+
+[[kanji.match]]
+next_starts_any = ["り", "る", "す", "し", "さ", "せ", "そ", "っ"]
+reading = "とお"
+
+[[kanji.match]]
+next_starts_any = ["う", "わ", "い", "え", "お"]
+reading = "かよ"
 
 [[kanji]]
 char = "造"
@@ -10171,7 +10199,7 @@ default = "キン"
 # 動詞 「蓄える」 = たくわえる は okurigana 列挙で 「たくわ」 へ切替
 [[kanji]]
 char = "蓄"
-default = "たくわ"
+default = "チク"
 
 [[kanji.match]]
 next_starts_any = ["え", "わ", "い", "っ", "う"]
