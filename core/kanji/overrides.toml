@@ -466,7 +466,12 @@ reading = "ツカ"
 
 [[kanji]]
 char = "言"
-default = "イ"
+default = "ゲン"
+
+[[kanji.match]]
+next_starts_any = ["う", "わ", "い", "っ", "え", "お"]
+reading = "い"
+
 [[kanji]]
 char = "見"
 default = "ケン"
