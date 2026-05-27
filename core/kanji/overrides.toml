@@ -604,7 +604,7 @@ default = "シュツ"
 # (★round 16 「た」 「ま」 追加 = round 2 漏れ、 「出た → でた」 「出ます → でます」 fix)
 # (★round 7 「ね」 追加 = 「出ねぇ」 colloquial of 「出ない」)
 [[kanji.match]]
-next_starts_any = ["る", "て", "な", "よ", "ろ", "た", "ま", "ね"]
+next_starts_any = ["る", "て", "な", "よ", "ろ", "た", "ま", "ね", "ら"]
 reading = "デ"
 # 「出す / 出した / 出して / 出さない / 出せ / 出そう」 = ダ + 送りがな
 [[kanji.match]]
@@ -12074,7 +12074,7 @@ prev_char_type = "漢字"
 reading = "セイ"
 
 [[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "さ"]
 reading = "ほし"
 
 # 「時」 default 「ジ」 (= 時間/時代/同時/時計/時期/瞬時/常時/時刻)。
