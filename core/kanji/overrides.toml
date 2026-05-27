@@ -2357,6 +2357,10 @@ char = "元"
 default = "もと"
 
 [[kanji.match]]
+next_char_type = "カタカナ"
+reading = "もと"
+
+[[kanji.match]]
 prev_char_type = "漢字"
 reading = "ゲン"
 
