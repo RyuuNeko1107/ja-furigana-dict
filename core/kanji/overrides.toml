@@ -2786,6 +2786,10 @@ default = "イ"
 char = "希"
 default = "キ"
 
+[[kanji.match]]
+next_eq = "に"
+reading = "まれ"
+
 [[kanji]]
 char = "庶"
 default = "ショ"
