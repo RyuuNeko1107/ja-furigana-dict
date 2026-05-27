@@ -419,8 +419,8 @@ char = "低"
 default = "テイ"
 
 [[kanji.match]]
-next_starts_any = ["い", "く", "か", "さ"]
-reading = "ひく"  # 低音 / 低気圧 / 低下
+next_starts_any = ["い", "く", "か", "さ", "そ"]
+reading = "ひく"
 
 [[kanji]]
 char = "忙"
@@ -964,9 +964,9 @@ reading = "おび"
 [[kanji]]
 char = "多"
 default = "タ"
-# 多い / 多く / 多かった / 多さ / 多すぎる
+# 多い / 多く / 多かった / 多さ / 多すぎる / 多過ぎ
 [[kanji.match]]
-next_starts_any = ["い", "く", "か", "さ", "す"]
+next_starts_any = ["い", "く", "か", "さ", "す", "過"]
 reading = "おお"
 
 # 「歯」: 名詞 「歯 (は)」 (= 「歯が / 歯を / 歯ブラシ / 虫歯」) が圧倒的。
@@ -4621,6 +4621,10 @@ default = "チョウ"
 char = "光"
 default = "コウ"
 
+[[kanji.match]]
+next_starts_any = ["の", "が", "を", "に", "は", "も", "で", "と", "り", "る", "っ", "ら"]
+reading = "ひかり"
+
 [[kanji]]
 char = "党"
 default = "トウ"
@@ -6301,6 +6305,10 @@ default = "イ"
 [[kanji]]
 char = "偶"
 default = "グウ"
+
+[[kanji.match]]
+next_eq = "に"
+reading = "たま"
 
 [[kanji]]
 char = "冥"
@@ -16016,6 +16024,10 @@ default = "メン"
 [[kanji]]
 char = "頃"
 default = "ころ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ごろ"
 
 # 「顎」 default 「あご」 (= 「顎/上顎/下顎/顎関節」 訓主体)
 [[kanji]]
