@@ -1,0 +1,10 @@
+[meta]
+schema_version = "2"
+role = "jukugo"
+description = "VV stream-comments comparison round (seed=20260526)"
+
+[entries]
+"等身大" = "トウシンダイ"
+"欠品" = "ケッピン"
+"猫耳" = "ネコミミ"
+"時間帯" = "ジカンタイ"

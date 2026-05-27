@@ -34,3 +34,7 @@ description = "四字熟語 (4 字 + 全 CJK 漢字)"
 
 # --- round 25 batch 21 (= 一般的な四字熟語 + 慣用 4 字、 既存 entries との dup 除去後) ---
 "百鬼夜行" = "ヒャッキヤギョウ"
+
+# --- VV stream-comments round (seed=20260526) ---
+"冬虫夏草" = "トウチュウカソウ"
+"夜露死苦" = "ヨロシク"

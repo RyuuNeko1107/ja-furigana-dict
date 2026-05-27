@@ -82,9 +82,14 @@ next_eq = "々"
 reading = "した"
 
 # ゼン は jukugo (前半/前回/午前/以前/前進 等) が覆うため default まえ
+# 年前/月前/日前/週前 は時間表現で マエ (= default) を維持
 [[kanji]]
 char = "前"
 default = "まえ"
+
+[[kanji.match]]
+prev_ends_any = ["年", "月", "日", "週"]
+reading = "まえ"
 
 [[kanji.match]]
 prev_char_type = "漢字"
@@ -525,7 +530,7 @@ char = "強"
 default = "キョウ"
 
 [[kanji.match]]
-next_starts_any = ["い", "く", "か", "さ", "め", "ま"]
+next_starts_any = ["い", "く", "か", "さ", "す", "め", "ま"]
 reading = "つよ"
 [[kanji]]
 char = "持"
@@ -675,7 +680,7 @@ char = "悪"
 default = "アク"
 
 [[kanji.match]]
-next_starts_any = ["い", "く", "か", "さ"]
+next_starts_any = ["い", "く", "か", "さ", "す"]
 reading = "わる"
 [[kanji]]
 char = "嫌"
