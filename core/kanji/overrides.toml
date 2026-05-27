@@ -1546,7 +1546,10 @@ default = "シ"
 char = "炎"
 default = "エン"
 
-# 「○○の炎 / 燃える炎」 (= 助詞接続 + 形容詞/動詞活用 の名詞用法) → ホノオ
+[[kanji.match]]
+next_starts_any = ["の", "が", "を", "に", "は", "も", "で", "と"]
+reading = "ホノオ"
+
 [[kanji.match]]
 prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も", "い", "る", "た", "て"]
 reading = "ホノオ"
@@ -10440,7 +10443,7 @@ char = "良"
 default = "リョウ"
 
 [[kanji.match]]
-next_starts_any = ["い", "く", "か", "け", "さ", "し"]
+next_starts_any = ["い", "く", "か", "け", "さ", "し", "す"]
 reading = "よ"
 
 # 「芳」 default 「ホウ」 (= 芳香/芳醇/芳名/芳賀/芳紀/遺芳)。
@@ -14095,6 +14098,10 @@ reading = "ヤク"
 [[kanji]]
 char = "赤"
 default = "あか"
+
+[[kanji.match]]
+next_char_type = "カタカナ"
+reading = "あか"
 
 [[kanji.match]]
 prev_char_type = "漢字"
