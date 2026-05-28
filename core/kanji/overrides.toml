@@ -12010,7 +12010,7 @@ prev_eq = "本"
 reading = "ゆび"
 
 [[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "っ"]
 reading = "ゆび"
 
 # 「斎」 default 「サイ」 (= 書斎/精進斎/潔斎/斎場/斎戒)。
