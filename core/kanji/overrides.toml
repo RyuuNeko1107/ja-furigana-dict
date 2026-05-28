@@ -378,8 +378,8 @@ char = "高"
 default = "コウ"
 
 [[kanji.match]]
-next_starts_any = ["い", "く", "か", "さ", "め", "ま"]
-reading = "たか"  # 高校 / 高速 / 最高 / 高度
+next_starts_any = ["い", "く", "か", "さ", "す", "め", "ま"]
+reading = "たか"
 
 [[kanji]]
 char = "楽"
@@ -559,7 +559,7 @@ char = "寝"
 default = "シン"
 
 [[kanji.match]]
-next_starts_any = ["る", "ら", "れ", "ろ", "て", "た", "よ", "な", "ま", "か", "こ"]
+next_starts_any = ["る", "ら", "れ", "ろ", "て", "た", "よ", "な", "ま", "か", "こ", "に"]
 reading = "ね"
 [[kanji]]
 char = "行"
@@ -6460,6 +6460,10 @@ default = "タン"
 char = "深"
 default = "シン"
 
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "さ", "す", "め", "ま"]
+reading = "ふか"
+
 [[kanji]]
 char = "清"
 default = "セイ"
@@ -11299,7 +11303,7 @@ char = "姿"
 default = "シ"
 
 [[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "へ"]
 reading = "すがた"
 
 # 「干」 default 「カン」 (= 干渉/干潮/欄干/若干/干害/干満)。
@@ -12379,7 +12383,7 @@ char = "森"
 default = "シン"
 
 [[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "さ"]
 reading = "もり"
 
 # 「巾」 default 「キン」 (= 巾着/布巾/頭巾)。
