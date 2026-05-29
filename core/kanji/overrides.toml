@@ -256,6 +256,10 @@ default = "かね"
 next_char_type = "漢字"
 reading = "キン"
 
+[[kanji.match]]
+next_char_type = "カタカナ"
+reading = "キン"
+
 # ○○金 suffix (奨学金/罰金/賃金 等) = キン
 [[kanji.match]]
 prev_char_type = "漢字"
@@ -5251,6 +5255,10 @@ default = "タン"
 char = "描"
 default = "ビョウ"
 
+[[kanji.match]]
+next_starts_any = ["く", "こ", "い", "か", "き", "け"]
+reading = "えが"
+
 [[kanji]]
 char = "提"
 default = "テイ"
@@ -5618,6 +5626,10 @@ default = "ソ"
 [[kanji]]
 char = "申"
 default = "シン"
+
+[[kanji.match]]
+next_starts_any = ["し", "さ", "す", "せ", "そ"]
+reading = "もう"
 
 [[kanji]]
 char = "画"
