@@ -7504,16 +7504,22 @@ default = "エン"
 next_starts_any = ["う", "わ", "い", "っ", "え", "お"]
 reading = "そ"
 
-# 「泣」 default 「キュウ」 (= 号泣/感泣/啼泣/泣訴)。
-# 動詞 「泣く」 は okurigana 列挙で 「な」 へ切替
+# 「泣」 default 「なき」 (= 単独/ネット用法「(泣)」「○○だ泣」 = 泣き顔表現、
+# 本番 signal で標準形)。 笑→わらい / 草→くさ と同型。
+# 漢字+泣 の jukugo (= 号泣/感泣/啼泣) は prev_char_type=漢字 で「キュウ」へ。
 [[kanji]]
 char = "泣"
-default = "キュウ"
+default = "なき"
 
 # 「泣く/泣かない/泣いた/泣いて/泣けば/泣こう/泣き○○」 = 動詞 → な
 [[kanji.match]]
 next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
 reading = "な"
+
+# 「号泣/感泣/啼泣」 等 漢字直後の 泣 は音読み キュウ
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "キュウ"
 
 # 「浮」 default 「フ」 (= 浮力/浮沈/浮上/浮揚/浮島/浮世絵)。
 # 動詞 「浮く/浮かぶ/浮かべる」 は okurigana 列挙で 「う」 へ切替

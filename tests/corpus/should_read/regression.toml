@@ -477,6 +477,24 @@ input = "笑顔"
 mode = "hiragana"
 expected = "えがお"
 
+# ─── 泣 default flip (= 2026-05-30 round 2、 笑/草 と同型) ──────────────────
+
+[[case]]
+input = "泣"
+mode = "hiragana"
+expected = "なき"
+note = "ネット用法「(泣)」「○○だ泣」 = 泣き。 本番で キュウ 誤読を確認"
+
+[[case]]
+input = "泣く"
+mode = "hiragana"
+expected = "なく"
+
+[[case]]
+input = "号泣"
+mode = "hiragana"
+expected = "ごうきゅう"
+
 # ─── round 12: 後+数字 / 会 / 話 / 次会 ────────────────────────────────────
 
 [[case]]
