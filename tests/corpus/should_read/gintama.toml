@@ -1,0 +1,18 @@
+# 銀魂 キャラクター名 / 用語の回帰テスト
+#
+# core/works/anime/gintama.toml の登録 entries が想定通り読まれるかの lock。
+# 非自明な読み (公式読みが分割 default 読みと違うケース) を中心に網羅:
+#
+# - 定春 = サダハル (default 分割だと 定=テイ + 春=シュン になる。本番で誤読確認)
+#
+# 詳細は core/works/anime/gintama.toml の出典 list 参照。
+
+[[case]]
+input = "定春"
+mode = "hiragana"
+expected = "さだはる"
+note = "坂田銀時の飼い犬。 default 分割だと「ていしゅん」になる"
+
+[[case.targets]]
+surface = "定春"
+reading = "さだはる"
