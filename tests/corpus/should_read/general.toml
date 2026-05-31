@@ -432,3 +432,59 @@ input = "bot"
 mode = "hiragana"
 expected = "ボット"
 note = "case-fold lookup (BOT/Bot も同一)、 production alphabet_chunk 由来"
+
+
+# ─── 末尾再帰助数詞 「目」 (lib counter fix、 算用数字) ───
+# 以前は 「2個目→ニコモク」 等、 目 が単漢字 fallback で モク と誤読されていた。
+
+[[case]]
+input = "2個目"
+mode = "hiragana"
+expected = "にこめ"
+note = "個 (base) + 目 (recursive メ)、 旧: にこもく"
+
+[[case]]
+input = "5人目"
+mode = "hiragana"
+expected = "ごにんめ"
+note = "人 special (5→ゴニン) + メ、 旧: ごひとめ"
+
+[[case]]
+input = "3回目"
+mode = "hiragana"
+expected = "さんかいめ"
+note = "回 default + メ"
+
+[[case]]
+input = "4枚目"
+mode = "hiragana"
+expected = "よんまいめ"
+note = "枚 (simple) + 目"
+
+# ─── 爺 (本番 signal: 爺ちゃん が じじちゃん と誤読されていた) ───
+
+[[case]]
+input = "爺ちゃん"
+mode = "hiragana"
+expected = "じいちゃん"
+note = "爺 default = じい (爺さん=じいさん と揃える、 旧: じじちゃん)"
+
+[[case]]
+input = "お爺ちゃん"
+mode = "hiragana"
+expected = "おじいちゃん"
+note = "爺 default = じい"
+
+# ─── CV / 八尺様 (配信 corpus 由来) ───
+
+[[case]]
+input = "CV"
+mode = "hiragana"
+expected = "シーブイ"
+note = "Character Voice / cast 表記、 MV/PV/VC と同型の略語"
+
+[[case]]
+input = "八尺様"
+mode = "hiragana"
+expected = "はっしゃくさま"
+note = "八尺 (= ハッシャク) + 様 default 連結、 旧: はちしゃくさま"
