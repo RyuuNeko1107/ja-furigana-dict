@@ -488,3 +488,25 @@ input = "八尺様"
 mode = "hiragana"
 expected = "はっしゃくさま"
 note = "八尺 (= ハッシャク) + 様 default 連結、 旧: はちしゃくさま"
+
+
+# ─── 末尾再帰助数詞 「目」 (漢数字版、 lib kanji counter fix) ───
+# 漢数字 + 助数詞 + 目 のみ対象 (bare 漢数字+助数詞 「一個」 等は Lindera 委譲)。
+
+[[case]]
+input = "一個目"
+mode = "hiragana"
+expected = "いっこめ"
+note = "漢数字 + 個 + 目、 旧: いっこもく"
+
+[[case]]
+input = "二回目"
+mode = "hiragana"
+expected = "にかいめ"
+note = "漢数字 + 回 + 目、 旧: にかいもく"
+
+[[case]]
+input = "三人目"
+mode = "hiragana"
+expected = "さんにんめ"
+note = "漢数字 + 人 + 目"
