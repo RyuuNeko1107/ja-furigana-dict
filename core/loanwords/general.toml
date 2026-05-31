@@ -20,6 +20,8 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 "ASAP" = "エーサップ"
 
 # ── B ──
+"BGM" = "ビージーエム"
+"BL" = "ビーエル"
 "BTW" = "ビーティーダブリュー"
 
 # ── C ──
@@ -88,6 +90,7 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 "RAM" = "ラム"
 "ROM" = "ロム"
 "RPG" = "アールピージー"
+"RTA" = "アールティーエー"
 
 # ── S ──
 "SDK" = "エスディーケー"
@@ -107,6 +110,7 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 "VTuber" = "ブイチューバー"
 
 # ── lowercase 英単語 ──
+"bot" = "ボット"
 "hello" = "ハロー"
 "nice" = "ナイス"
 "please" = "プリーズ"

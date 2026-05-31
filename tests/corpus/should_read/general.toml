@@ -404,3 +404,31 @@ note = "新大阪 / 博多 + 助数詞 4時間。 「4時間」 は kanji 含む
 [[case.targets]]
 surface = "新大阪"
 reading = "しんおおさか"
+
+
+# ─── ASCII 略語 (配信 / production signal 由来、 loanwords/general.toml) ───
+# loanword は hiragana mode でもカタカナ維持 (ASCII 由来語)。
+
+[[case]]
+input = "RTA"
+mode = "hiragana"
+expected = "アールティーエー"
+note = "Real Time Attack、 配信 corpus 頻出 (= RPG/FPS と同型の略語)"
+
+[[case]]
+input = "BGM"
+mode = "hiragana"
+expected = "ビージーエム"
+note = "配信頻出の一般語、 production alphabet_miss 由来"
+
+[[case]]
+input = "BL"
+mode = "hiragana"
+expected = "ビーエル"
+note = "Boys Love、 production signal 由来"
+
+[[case]]
+input = "bot"
+mode = "hiragana"
+expected = "ボット"
+note = "case-fold lookup (BOT/Bot も同一)、 production alphabet_chunk 由来"
