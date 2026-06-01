@@ -510,3 +510,12 @@ input = "三人目"
 mode = "hiragana"
 expected = "さんにんめ"
 note = "漢数字 + 人 + 目"
+
+
+# ─── 完治 (治 default=ジ で 完治→かんじ と誤読していた) ───
+
+[[case]]
+input = "完治"
+mode = "hiragana"
+expected = "かんち"
+note = "治 はチ読み (退治=たいじ 等のジと語ごとに異なる)、 完治=かんち。 旧: かんじ"
