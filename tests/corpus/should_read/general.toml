@@ -597,3 +597,24 @@ input = "近すぎる"
 mode = "hiragana"
 expected = "ちかすぎる"
 note = "近 block に そ/す"
+
+
+# ─── i形容詞 「け」(ければ) 系統補完 (audit 第2弾) ───
+
+[[case]]
+input = "強ければ"
+mode = "hiragana"
+expected = "つよければ"
+note = "強 block に け"
+
+[[case]]
+input = "悪ければ"
+mode = "hiragana"
+expected = "わるければ"
+note = "悪 block に け"
+
+[[case]]
+input = "無ければ"
+mode = "hiragana"
+expected = "なければ"
+note = "無 block に け (なければならない 等)"
