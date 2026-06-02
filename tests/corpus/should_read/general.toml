@@ -570,3 +570,30 @@ input = "高そう"
 mode = "hiragana"
 expected = "たかそう"
 note = "高 block に そ 追加、 旧: こうそう"
+
+
+# ─── i形容詞 [[kanji]] block の送り仮名 そ/す 系統補完 (audit、実運用 corpus 由来) ───
+
+[[case]]
+input = "悪そう"
+mode = "hiragana"
+expected = "わるそう"
+note = "悪 block に そ"
+
+[[case]]
+input = "長すぎる"
+mode = "hiragana"
+expected = "ながすぎる"
+note = "長 block に そ/す"
+
+[[case]]
+input = "遅そう"
+mode = "hiragana"
+expected = "おそそう"
+note = "遅 block に そ/す"
+
+[[case]]
+input = "近すぎる"
+mode = "hiragana"
+expected = "ちかすぎる"
+note = "近 block に そ/す"
