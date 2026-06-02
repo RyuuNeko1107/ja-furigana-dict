@@ -639,3 +639,24 @@ input = "弱み"
 mode = "hiragana"
 expected = "よわみ"
 note = "弱 block に み"
+
+
+# ─── VV比較で発見した誤読 (涙=るい→なみだ / 牢=かたい→ろう) ───
+
+[[case]]
+input = "目にも涙"
+mode = "hiragana"
+expected = "めにもなみだ"
+note = "涙 default を なみだ に (旧: るい)。涙腺/感涙 は ルイ 維持"
+
+[[case]]
+input = "涙腺"
+mode = "hiragana"
+expected = "るいせん"
+note = "漢語は ルイ"
+
+[[case]]
+input = "牢に入れられない"
+mode = "hiragana"
+expected = "ろうにいれられない"
+note = "牢 を ロウ に (旧 unihan: かたい)"
