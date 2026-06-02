@@ -381,8 +381,9 @@ reading = "はし"  # 走行 / 競走 / 暴走
 char = "高"
 default = "コウ"
 
+# 「そ」=様態「高そう」(たかそう)。 高層/高速 等は層/速が漢字なので非該当
 [[kanji.match]]
-next_starts_any = ["い", "く", "か", "さ", "す", "め", "ま"]
+next_starts_any = ["い", "く", "か", "さ", "す", "め", "ま", "そ"]
 reading = "たか"
 
 [[kanji]]
@@ -6410,8 +6411,9 @@ default = "コウ"
 [[kanji]]
 char = "怖"
 default = "フ"
+# 「す」=「怖すぎる」(こわすぎる)。 恐怖等の フ は 怖+漢字 なので非該当
 [[kanji.match]]
-next_starts_any = ["い", "く", "か", "そ", "が", "さ"]
+next_starts_any = ["い", "く", "か", "そ", "が", "さ", "す"]
 reading = "コワ"
 
 [[kanji]]

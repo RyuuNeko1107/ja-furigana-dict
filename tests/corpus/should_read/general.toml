@@ -555,3 +555,18 @@ input = "GTA"
 mode = "hiragana"
 expected = "ジーティーエー"
 note = "Grand Theft Auto"
+
+
+# ─── i形容詞 [[kanji]] block の送り仮名漏れ (そ/す)、実運用 corpus 由来 ───
+
+[[case]]
+input = "怖すぎる"
+mode = "hiragana"
+expected = "こわすぎる"
+note = "怖 block に す 追加、 旧: ふすぎる"
+
+[[case]]
+input = "高そう"
+mode = "hiragana"
+expected = "たかそう"
+note = "高 block に そ 追加、 旧: こうそう"
