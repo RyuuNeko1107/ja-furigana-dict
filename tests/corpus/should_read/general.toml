@@ -519,3 +519,18 @@ input = "完治"
 mode = "hiragana"
 expected = "かんち"
 note = "治 はチ読み (退治=たいじ 等のジと語ごとに異なる)、 完治=かんち。 旧: かんじ"
+
+
+# ─── 完治 サ変動詞形 (Lindera が 完|治し|た と分割し 治し=ナオシ になる) ───
+
+[[case]]
+input = "完治した"
+mode = "hiragana"
+expected = "かんちした"
+note = "完治し=カンチシ で動詞活用を catch、 旧: かんなおした"
+
+[[case]]
+input = "完治する"
+mode = "hiragana"
+expected = "かんちする"
+note = "完治する=カンチスル"
