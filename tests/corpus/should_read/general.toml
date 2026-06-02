@@ -618,3 +618,24 @@ input = "無ければ"
 mode = "hiragana"
 expected = "なければ"
 note = "無 block に け (なければならない 等)"
+
+
+# ─── i形容詞 が(がる)/み(み名詞) curated 補完 (audit 第3弾) ───
+
+[[case]]
+input = "痛がる"
+mode = "hiragana"
+expected = "いたがる"
+note = "痛 block に が"
+
+[[case]]
+input = "強み"
+mode = "hiragana"
+expected = "つよみ"
+note = "強 block に み (み名詞)"
+
+[[case]]
+input = "弱み"
+mode = "hiragana"
+expected = "よわみ"
+note = "弱 block に み"
