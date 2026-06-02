@@ -534,3 +534,24 @@ input = "完治する"
 mode = "hiragana"
 expected = "かんちする"
 note = "完治する=カンチスル"
+
+
+# ─── 強 様態/がる + ASCII 略語 (実運用 corpus 由来) ───
+
+[[case]]
+input = "強そう"
+mode = "hiragana"
+expected = "つよそう"
+note = "強 + そう (様態)、 旧: きょうそう"
+
+[[case]]
+input = "HP"
+mode = "hiragana"
+expected = "エイチピー"
+note = "hit points、 ゲーム頻出"
+
+[[case]]
+input = "GTA"
+mode = "hiragana"
+expected = "ジーティーエー"
+note = "Grand Theft Auto"
