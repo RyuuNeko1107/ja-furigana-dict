@@ -1901,3 +1901,9 @@ input = "義姉"
 mode = "hiragana"
 expected = "ぎし"
 note = "漢字 prev は default シ に委譲 (カタカナ名のみ ねえ)"
+
+# 二十歳 = ハタチ 熟字訓 (default だと にじゅうさい 誤読)。
+[[case]]
+input = "二十歳"
+mode = "hiragana"
+expected = "はたち"
