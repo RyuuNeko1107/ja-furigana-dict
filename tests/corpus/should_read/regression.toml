@@ -448,12 +448,14 @@ input = "注目"
 mode = "hiragana"
 expected = "ちゅうもく"
 
-# ─── 〜 padding (= round 5 / scoring fix) ──────────────────────────────────
+# ─── 〜 非数値文脈は読まない (= lib 0.1.2 fix) ──────────────────────────────
+# 「へ〜うま」 のような kana / 強調用途の 〜 は range ではないので 「から」 を発話しない。
+# 数字隣接 (= 「2〜3回」) のときだけ 「から」 を採用 (下のケースで担保)。
 
 [[case]]
 input = "へ〜うま"
 mode = "hiragana"
-expected = "へ から うま"
+expected = "へうま"
 
 [[case]]
 input = "2〜3回"
@@ -1818,3 +1820,67 @@ expected = "けむりがでてる"
 input = "黒煙"
 mode = "hiragana"
 expected = "こくえん"
+
+# 麻雀牌 jukugo (本番 signal 2026-06-06、 raw_context で全件「麻雀」直後を確認)。
+# unihan default 「牌 = ふだ」 で 「マージャンふだ」 と誤読していたのを修正。
+
+[[case]]
+input = "麻雀牌"
+mode = "hiragana"
+expected = "まーじゃんぱい"
+
+# 本番 signal 2026-06-06 batch (raw_context 再構成で誤読確認)。
+# 訓+音 mix / 漢数字 助数詞 euphonic 欠落 / 作品名。
+
+[[case]]
+input = "生声"
+mode = "hiragana"
+expected = "なまごえ"
+
+[[case]]
+input = "獣耳"
+mode = "hiragana"
+expected = "けものみみ"
+
+[[case]]
+input = "錦秋"
+mode = "hiragana"
+expected = "きんしゅう"
+
+[[case]]
+input = "一歩手前"
+mode = "hiragana"
+expected = "いっぽてまえ"
+
+[[case]]
+input = "三歩"
+mode = "hiragana"
+expected = "さんぽ"
+
+[[case]]
+input = "吉良吉影"
+mode = "hiragana"
+expected = "きらよしかげ"
+
+# stream-comments mining 2026-06-06 batch 2 (実コメント高頻度の誤読)。
+
+[[case]]
+input = "髪色"
+mode = "hiragana"
+expected = "かみいろ"
+
+[[case]]
+input = "スイカ一択"
+mode = "hiragana"
+expected = "スイカいったく"
+note = "スイカ (漢字なし) はカタカナ維持、 一択 = いったく (jukugo)"
+
+[[case]]
+input = "解せぬ"
+mode = "hiragana"
+expected = "げせぬ"
+
+[[case]]
+input = "刃牙"
+mode = "hiragana"
+expected = "ばき"
