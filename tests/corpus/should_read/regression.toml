@@ -1884,3 +1884,20 @@ expected = "げせぬ"
 input = "刃牙"
 mode = "hiragana"
 expected = "ばき"
+
+# カタカナ名 + 姉 = 敬称「ねえ」 (本番で「ルイし」誤読)。助詞付きでも優先。
+[[case]]
+input = "ルイ姉"
+mode = "hiragana"
+expected = "ルイねえ"
+
+[[case]]
+input = "ルイ姉が"
+mode = "hiragana"
+expected = "ルイねえが"
+
+[[case]]
+input = "義姉"
+mode = "hiragana"
+expected = "ぎし"
+note = "漢字 prev は default シ に委譲 (カタカナ名のみ ねえ)"

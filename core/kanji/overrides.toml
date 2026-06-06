@@ -11459,6 +11459,13 @@ default = "いもうと"
 char = "姉"
 default = "シ"
 
+# カタカナ名 + 姉 = 敬称「ねえ」 (= 「ルイ姉/ノエル姉/マリン姉」 → 〜ねえ)。
+# ひらがな prev は助詞 (の姉/が姉) と区別できないため対象外。 漢字 prev (義姉=ギシ
+# 等) は default シ に委譲。 助詞接続より優先するため先頭に配置。
+[[kanji.match]]
+prev_char_type = "カタカナ"
+reading = "ねえ"
+
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
 reading = "あね"
