@@ -700,7 +700,7 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 "lock" = "ロック"
 
 # ── acronym 補強 (★本番 signal 2026-06: alphabet_miss で passthrough していた) ──
+# GM は曖昧 (ゲームマスター / Good Morning / General Manager) のため固定読みを当てない
 "ABC" = "エービーシー"
 "TRPG" = "ティーアールピージー"
 "MVP" = "エムブイピー"
-"GM" = "ジーエム"
