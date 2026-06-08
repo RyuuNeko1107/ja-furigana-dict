@@ -1868,6 +1868,23 @@ input = "降伏する"
 mode = "hiragana"
 expected = "こうふくする"
 
+# 訓 default 化 横断 sweep (2026-06: 音読みカナ default + 助詞 whitelist→訓 の
+# アンチパターンを抽出、bare/未列挙で音読み誤読していた 7 字を訓 default 化)。
+[[case]]
+input = "奥が深い"
+mode = "hiragana"
+expected = "おくがふかい"
+
+[[case]]
+input = "我ながら"
+mode = "hiragana"
+expected = "われながら"
+
+[[case]]
+input = "光回線"
+mode = "hiragana"
+expected = "ひかりかいせん"
+
 # VV 比較 round3 (2026-06)
 [[case]]
 input = "油まみれ"

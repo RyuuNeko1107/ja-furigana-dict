@@ -4553,12 +4553,9 @@ default = "カイ"
 
 [[kanji]]
 char = "仏"
-default = "ブツ"
+default = "ほとけ"
 
 # 「仏は / 仏が / 仏を / 仏に / 仏の / 仏で / 仏と / 仏も」 = 名詞用法、 訓「ほとけ」
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
-reading = "ほとけ"
 
 [[kanji]]
 char = "付"
@@ -4643,11 +4640,8 @@ default = "チョウ"
 
 [[kanji]]
 char = "光"
-default = "コウ"
+default = "ひかり"
 
-[[kanji.match]]
-next_starts_any = ["の", "が", "を", "に", "は", "も", "で", "と", "り", "る", "っ", "ら"]
-reading = "ひかり"
 
 [[kanji]]
 char = "党"
@@ -8420,12 +8414,9 @@ default = "ガイ"
 # 単独 + 助詞接続 → 「おもむき」 (= 名詞用法)
 [[kanji]]
 char = "趣"
-default = "シュ"
+default = "おもむき"
 
 # 「趣は/趣が/趣を/趣に/趣の/趣で/趣と」 = 単独 + 助詞接続 → おもむき
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ"]
-reading = "おもむき"
 
 # 「○の趣/○な趣」 = 助詞 直後 → おもむき
 [[kanji.match]]
@@ -10572,11 +10563,8 @@ reading = "こ"
 # 単独 + 助詞接続 → 「ちち」 (= 名詞用法)、 「乳房/乳首」 等は jukugo 個別
 [[kanji]]
 char = "乳"
-default = "ニュウ"
+default = "ちち"
 
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ"]
-reading = "ちち"
 
 [[kanji.match]]
 prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
@@ -11049,11 +11037,8 @@ default = "ボウ"
 # 単独 + 助詞接続 → 「おく」 (= 「奥が/奥の」 等)
 [[kanji]]
 char = "奥"
-default = "オウ"
+default = "おく"
 
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
-reading = "おく"
 
 [[kanji.match]]
 prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
@@ -11948,11 +11933,8 @@ default = "コウ"
 # 単独 + 助詞接続 → 「われ」 (= 「我が/我の」 等)、 踊り字 「我々」 = ワレワレ
 [[kanji]]
 char = "我"
-default = "ガ"
+default = "われ"
 
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
-reading = "われ"
 
 [[kanji.match]]
 next_eq = "々"
@@ -12260,11 +12242,8 @@ default = "キン"
 # 単独 + 助詞接続 → 「いた」 (= 「板が/板の」 等)
 [[kanji]]
 char = "板"
-default = "バン"
+default = "いた"
 
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
-reading = "いた"
 
 # 「板チョコ」 等 next カタカナ = 訓「いた」 (= 訓 + loanword pattern)
 [[kanji.match]]
