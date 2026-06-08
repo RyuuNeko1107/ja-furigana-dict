@@ -1907,3 +1907,24 @@ note = "漢字 prev は default シ に委譲 (カタカナ名のみ ねえ)"
 input = "二十歳"
 mode = "hiragana"
 expected = "はたち"
+
+# 寝 動詞活用 (★本番 signal 2026-06: 寝ち/寝そ/寝ず/寝落ちる が default シン 誤読だった)
+[[case]]
+input = "寝ちまった"
+mode = "hiragana"
+expected = "ねちまった"
+
+[[case]]
+input = "寝そう"
+mode = "hiragana"
+expected = "ねそう"
+
+[[case]]
+input = "寝ずに"
+mode = "hiragana"
+expected = "ねずに"
+
+[[case]]
+input = "寝落ちる"
+mode = "hiragana"
+expected = "ねおちる"
