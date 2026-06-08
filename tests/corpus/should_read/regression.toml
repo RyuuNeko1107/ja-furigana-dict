@@ -1868,6 +1868,14 @@ input = "降伏する"
 mode = "hiragana"
 expected = "こうふくする"
 
+# 畳 counter (2026-06: 部屋の広さ。simple.toml に 畳=ジョウ 追加)。
+# NOTE: 漢数字「六畳」は lib chunker が 畳 を counter 認識せず ろくたたみ になる
+# (lib 側 push back 案件)。arabic「6畳」は simple 表で正しく ろくじょう。
+[[case]]
+input = "6畳"
+mode = "hiragana"
+expected = "ろくじょう"
+
 # 訓 default 化 横断 sweep (2026-06: 音読みカナ default + 助詞 whitelist→訓 の
 # アンチパターンを抽出、bare/未列挙で音読み誤読していた 7 字を訓 default 化)。
 [[case]]
