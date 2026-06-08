@@ -698,3 +698,9 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 "open" = "オープン"
 "close" = "クローズ"
 "lock" = "ロック"
+
+# ── acronym 補強 (★本番 signal 2026-06: alphabet_miss で passthrough していた) ──
+"ABC" = "エービーシー"
+"TRPG" = "ティーアールピージー"
+"MVP" = "エムブイピー"
+"GM" = "ジーエム"
