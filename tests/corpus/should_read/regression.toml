@@ -1868,6 +1868,29 @@ input = "降伏する"
 mode = "hiragana"
 expected = "こうふくする"
 
+# 訓 default 化 横断 sweep 第2弾 (2026-06: VV round4 で 暇→か 等を再発見、
+# コメント挟み block も抽出して bare=訓 が明白な 19 字を訓 default 化)。
+[[case]]
+input = "暇しない"
+mode = "hiragana"
+expected = "ひましない"
+
+[[case]]
+input = "墓に行く"
+mode = "hiragana"
+expected = "はかにいく"
+
+[[case]]
+input = "島だ"
+mode = "hiragana"
+expected = "しまだ"
+
+# 見 causative (見させる) の okurigana「さ」漏れを補完。
+[[case]]
+input = "見させられて"
+mode = "hiragana"
+expected = "みさせられて"
+
 # 畳 counter (2026-06: 部屋の広さ。simple.toml に 畳=ジョウ 追加)。
 # NOTE: 漢数字「六畳」は lib chunker が 畳 を counter 認識せず ろくたたみ になる
 # (lib 側 push back 案件)。arabic「6畳」は simple 表で正しく ろくじょう。
