@@ -1841,6 +1841,12 @@ input = "麻雀牌です"
 mode = "hiragana"
 expected = "まーじゃんぱいです"
 
+# 体幹 jukugo (VV 比較 2026-06: 体 default からだ で からだかん 誤読)。
+[[case]]
+input = "体幹強い"
+mode = "hiragana"
+expected = "たいかんつよい"
+
 # 本番 signal 2026-06-06 batch (raw_context 再構成で誤読確認)。
 # 訓+音 mix / 漢数字 助数詞 euphonic 欠落 / 作品名。
 
