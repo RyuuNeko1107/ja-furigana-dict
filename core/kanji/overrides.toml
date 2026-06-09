@@ -11514,6 +11514,11 @@ default = "エイ"
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
 reading = "かげ"
 
+# 記号境界の単独 (= 「影!」「影。」) も単独扱い → かげ
+[[kanji.match]]
+next_char_type = "記号"
+reading = "かげ"
+
 # 「弟」 default 「テイ」 (= 弟子/師弟/従兄弟/門弟)。
 # 単独 + 助詞接続 → 「おとうと」 (= 「弟が/弟の」 等)
 [[kanji]]
@@ -12395,6 +12400,11 @@ reading = "ヒョウ"
 
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
+reading = "こおり"
+
+# 記号境界の単独 (= 「氷」「氷。」) も単独扱い → こおり
+[[kanji.match]]
+next_char_type = "記号"
 reading = "こおり"
 
 # 「沸」 default 「フツ」 (= 沸騰/煮沸/沸点)。

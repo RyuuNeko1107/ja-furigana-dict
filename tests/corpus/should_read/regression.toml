@@ -2147,3 +2147,19 @@ expected = "きざ"
 input = "吹替"
 mode = "hiragana"
 expected = "ふきかえ"
+
+# ─── 本番 VV 比較 round2 (2026-06-09): 最終日 + 影/氷 記号境界 ────────────────
+[[case]]
+input = "最終日"
+mode = "hiragana"
+expected = "さいしゅうび"
+
+[[case]]
+input = "影!"
+mode = "hiragana"
+expected = "かげ!"
+
+[[case]]
+input = "「氷」"
+mode = "hiragana"
+expected = "「こおり」"
