@@ -1868,6 +1868,22 @@ input = "降伏する"
 mode = "hiragana"
 expected = "こうふくする"
 
+# 〜人=ジン 文中誤読 抑止 + 恥 訓化 (VV round5 2026-06)。
+[[case]]
+input = "外国人が多い"
+mode = "hiragana"
+expected = "がいこくじんがおおい"
+
+[[case]]
+input = "現代人は忙しい"
+mode = "hiragana"
+expected = "げんだいじんはいそがしい"
+
+[[case]]
+input = "恥すぎる"
+mode = "hiragana"
+expected = "はじすぎる"
+
 # 訓 default 化 横断 sweep 第2弾 (2026-06: VV round4 で 暇→か 等を再発見、
 # コメント挟み block も抽出して bare=訓 が明白な 19 字を訓 default 化)。
 [[case]]
