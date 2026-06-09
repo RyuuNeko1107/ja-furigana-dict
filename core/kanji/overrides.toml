@@ -88,7 +88,7 @@ char = "前"
 default = "まえ"
 
 [[kanji.match]]
-prev_ends_any = ["年", "月", "日", "週"]
+prev_ends_any = ["年", "月", "日", "週", "分", "時", "秒"]
 reading = "まえ"
 
 [[kanji.match]]

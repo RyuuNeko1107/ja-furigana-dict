@@ -2163,3 +2163,19 @@ expected = "かげ!"
 input = "「氷」"
 mode = "hiragana"
 expected = "「こおり」"
+
+# ─── 本番 VV 比較 round3 (2026-06-10): 遠方/体験日 + 分前 ────────────────────
+[[case]]
+input = "遠方"
+mode = "hiragana"
+expected = "えんぽう"
+
+[[case]]
+input = "体験日"
+mode = "hiragana"
+expected = "たいけんび"
+
+[[case]]
+input = "1分前"
+mode = "hiragana"
+expected = "いっぷんまえ"
