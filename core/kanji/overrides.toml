@@ -6406,11 +6406,9 @@ default = "コウ"
 
 [[kanji]]
 char = "怖"
-default = "フ"
-# 「す」=「怖すぎる」(こわすぎる)。 恐怖等の フ は 怖+漢字 なので非該当
-[[kanji.match]]
-next_starts_any = ["い", "く", "か", "そ", "が", "さ", "す", "け"]
-reading = "コワ"
+default = "こわ"
+# 怖い/怖く/怖がる/怖すぎ 全て訓「こわ」。恐怖/畏怖 等の音「フ」は jukugo override。
+# (★production bare 記録 2026-06: bare 怖 が default フ で「ふ」誤読)
 
 [[kanji]]
 char = "悠"

@@ -1868,6 +1868,12 @@ input = "降伏する"
 mode = "hiragana"
 expected = "こうふくする"
 
+# 怖 (i形容詞) bare 訓化 (production bare 記録 2026-06: bare 怖→ふ 誤読)。
+[[case]]
+input = "怖すぎる"
+mode = "hiragana"
+expected = "こわすぎる"
+
 # 曖昧字 個別精査 訓 default 化 (2026-06: raw_context 実証拠 + blast radius 確認で
 # bare=訓 が支配的な 24 字を flip。泉は温泉卵 衝突で除外)。
 [[case]]
