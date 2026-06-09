@@ -1868,6 +1868,17 @@ input = "降伏する"
 mode = "hiragana"
 expected = "こうふくする"
 
+# 〜前=まえ / 飲み会 (archive VV n=1000 2026-06)。
+[[case]]
+input = "夕方前には終わる"
+mode = "hiragana"
+expected = "ゆうがたまえにはおわる"
+
+[[case]]
+input = "飲み会に行く"
+mode = "hiragana"
+expected = "のみかいにいく"
+
 # 怖 (i形容詞) bare 訓化 (production bare 記録 2026-06: bare 怖→ふ 誤読)。
 [[case]]
 input = "怖すぎる"
