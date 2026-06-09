@@ -1868,6 +1868,29 @@ input = "降伏する"
 mode = "hiragana"
 expected = "こうふくする"
 
+# 出 の okurigana「ち」補完 (archive VV n=2500 2026-06: 出ちゃう→しゅつ 誤読)。
+[[case]]
+input = "出ちゃった"
+mode = "hiragana"
+expected = "でちゃった"
+
+# 人 default ジン→ひと (kanji_dense VV 2026-06: bare 人 / 人+漢字動詞 が じん 誤読)。
+# 〜人=ジン/ニン の compound は jukugo で維持。
+[[case]]
+input = "人増えた"
+mode = "hiragana"
+expected = "ひとふえた"
+
+[[case]]
+input = "人多いな"
+mode = "hiragana"
+expected = "ひとおおいな"
+
+[[case]]
+input = "力技で草"
+mode = "hiragana"
+expected = "ちからわざでくさ"
+
 # 〜前=まえ / 飲み会 (archive VV n=1000 2026-06)。
 [[case]]
 input = "夕方前には終わる"

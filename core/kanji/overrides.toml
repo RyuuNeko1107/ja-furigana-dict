@@ -169,7 +169,7 @@ reading = "かぜ"
 
 [[kanji]]
 char = "人"
-default = "ジン"
+default = "ひと"
 
 
 # 漢数字 + 人 = ニン。 「一人 = ヒトリ」 「二人 = フタリ」 は counter people.toml の
@@ -613,7 +613,7 @@ default = "シュツ"
 # (★round 16 「た」 「ま」 追加 = round 2 漏れ、 「出た → でた」 「出ます → でます」 fix)
 # (★round 7 「ね」 追加 = 「出ねぇ」 colloquial of 「出ない」)
 [[kanji.match]]
-next_starts_any = ["る", "て", "な", "よ", "ろ", "た", "ま", "ね", "ら", "や"]
+next_starts_any = ["る", "て", "な", "よ", "ろ", "た", "ま", "ね", "ら", "や", "ち"]
 reading = "デ"
 # 「出す / 出した / 出して / 出さない / 出せ / 出そう」 = ダ + 送りがな
 [[kanji.match]]
