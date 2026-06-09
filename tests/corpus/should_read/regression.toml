@@ -2179,3 +2179,29 @@ expected = "たいけんび"
 input = "1分前"
 mode = "hiragana"
 expected = "いっぷんまえ"
+
+# ─── 本番 VV 比較 round4 (2026-06-10): 人系熟語 + 御堂筋/猫砂 + 氷や ────────────
+[[case]]
+input = "魔人"
+mode = "hiragana"
+expected = "まじん"
+
+[[case]]
+input = "小作人"
+mode = "hiragana"
+expected = "こさくにん"
+
+[[case]]
+input = "御堂筋"
+mode = "hiragana"
+expected = "みどうすじ"
+
+[[case]]
+input = "猫砂"
+mode = "hiragana"
+expected = "ねこすな"
+
+[[case]]
+input = "氷やない"
+mode = "hiragana"
+expected = "こおりやない"
