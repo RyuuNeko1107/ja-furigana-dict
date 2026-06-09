@@ -8445,12 +8445,8 @@ default = "かみなり"
 # 単独 + 助詞接続 → 「いけ」 (= 名詞用法)
 [[kanji]]
 char = "池"
-default = "チ"
+default = "いけ"
 
-# 「池は/池が/池を/池に/池の/池で/池と」 = 単独 + 助詞接続 → いけ
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ"]
-reading = "いけ"
 
 # 「軒」 default 「ケン」 (= 軒数/数軒/三軒/一軒家)。
 # 訓 「のき」 (= 軒先/軒並み) は jukugo 個別
@@ -10580,11 +10576,8 @@ reading = "な"
 # 単独 + 助詞接続 → 「ほか」 (= 「他の/他に/他は」 等)
 [[kanji]]
 char = "他"
-default = "タ"
+default = "ほか"
 
-[[kanji.match]]
-next_starts_any = ["に", "の", "は", "が", "を", "で", "と", "も", "や", "へ"]
-reading = "ほか"
 
 # 「令」 default 「レイ」 (= 命令/法令/号令/省令/勅令/口令/律令)。
 # unihan default 「おさ」 は古語、 現代では熟語 dominant
@@ -10795,11 +10788,8 @@ default = "イン"
 # 単独 + 助詞接続 → 「とも」 (= 「友が/友と」 等)、 「友達」 は jukugo
 [[kanji]]
 char = "友"
-default = "ユウ"
+default = "とも"
 
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や"]
-reading = "とも"
 
 # 「双」 default 「ソウ」 (= 双方/双子/無双/双生児/双璧/二人三脚)。
 # unihan default 「ふた」 は古語、 「二」 が訓 dominant
@@ -11044,11 +11034,8 @@ reading = "おく"
 # 単独 + 助詞接続 → 「たから」 (= 「宝が/宝の」 等)
 [[kanji]]
 char = "宝"
-default = "ホウ"
+default = "たから"
 
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
-reading = "たから"
 
 # 「宮」 default 「キュウ」 (= 宮殿/王宮/宮中/迷宮/離宮/中宮)。
 # 単独 + 助詞接続 → 「みや」 (= 「宮が/宮の」 等)
@@ -11070,11 +11057,8 @@ default = "エン"
 # 単独 + 助詞接続 → 「やど」 (= 「宿が/宿に」 等)
 [[kanji]]
 char = "宿"
-default = "シュク"
+default = "やど"
 
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
-reading = "やど"
 
 # 「味」 default 「ミ」 (= 味方/趣味/興味/意味/味覚/三味線/正味)。
 # 単独 + 助詞接続 + 動詞 「味わう」 → 「あじ」
@@ -11186,11 +11170,8 @@ default = "じい"
 # 単独 + 助詞接続 → 「むこ」 (= 「婿が/婿の」 等)
 [[kanji]]
 char = "婿"
-default = "セイ"
+default = "むこ"
 
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
-reading = "むこ"
 
 # 「媛」 default 「エン」 (= 才媛/淑媛/賢媛、 「愛媛」 = エヒメ は jukugo)。
 # unihan default 「ひめ」 は古語、 「姫」 が訓 dominant
@@ -11259,11 +11240,8 @@ reading = "お"
 # 単独 + 助詞接続 → 「す」 (= 「巣が/巣の」 等)
 [[kanji]]
 char = "巣"
-default = "ソウ"
+default = "す"
 
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
-reading = "す"
 
 # 「席」 default 「セキ」 (= 席次/出席/欠席/着席/座席/議席)。
 # unihan default 「せき」 (ひらがな) → カタカナ統一
@@ -11334,11 +11312,8 @@ reading = "さいわい"
 # 単独 + 助詞接続 → 「みき」 (= 「幹が/幹の」 等)
 [[kanji]]
 char = "幹"
-default = "カン"
+default = "みき"
 
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
-reading = "みき"
 
 # 「幻」 default 「ゲン」 (= 幻覚/幻想/幻影/夢幻/変幻)。
 # 単独 + 助詞接続 → 「まぼろし」 (= 「幻が/幻の」 等)
@@ -11440,11 +11415,8 @@ default = "むすめ"
 # 単独 + 助詞接続 → 「まご」 (= 「孫が/孫の」 等)
 [[kanji]]
 char = "孫"
-default = "ソン"
+default = "まご"
 
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
-reading = "まご"
 
 # 「夫」 default 「フ」 (= 夫婦/夫人/工夫/農夫/水夫/丈夫)。
 # 単独 + 助詞接続 → 「おっと」 (= 「夫が/夫の」 等)
@@ -11576,11 +11548,8 @@ default = "きし"
 # 単独 + 助詞接続 → 「みね」 (= 「峰が/峰の」 等)
 [[kanji]]
 char = "峰"
-default = "ホウ"
+default = "みね"
 
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
-reading = "みね"
 
 # 「岳」 default 「ガク」 (= 山岳/岳父/八ヶ岳/連岳)。
 # 単独 + 助詞接続 → 「たけ」 (= 「岳が/岳の」 等)
@@ -12034,11 +12003,8 @@ default = "タン"
 # 単独 + 助詞接続 → 「こよみ」 (= 「暦が/暦の」 等)
 [[kanji]]
 char = "暦"
-default = "レキ"
+default = "こよみ"
 
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
-reading = "こよみ"
 
 # 「春」 default 「シュン」 (= 春期/春分/青春/晩春/早春/春雨/春闘)。
 # 単独 + 助詞接続 → 「はる」 (= 「春が/春の」 等)
@@ -12233,11 +12199,8 @@ default = "ボク"
 # 単独 + 助詞接続 → 「はやし」 (= 「林が/林の」 等)
 [[kanji]]
 char = "林"
-default = "リン"
+default = "はやし"
 
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
-reading = "はやし"
 
 # 「東」 default 「トウ」 (= 東京/関東/東西/極東/東洋/東部/中東)。
 # 単独 + 助詞接続 → 「ひがし」 (= 「東が/東の」 等)
@@ -12340,11 +12303,8 @@ reading = "むね"
 # 単独 + 助詞接続 → 「もり」 (= 「森が/森の」 等)
 [[kanji]]
 char = "森"
-default = "シン"
+default = "もり"
 
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "さ"]
-reading = "もり"
 
 # 「巾」 default 「キン」 (= 巾着/布巾/頭巾)。
 # 単独 + 助詞接続 → 「はば」 (= 「幅」 と同義、 「巾が/巾の」 等)
@@ -12360,11 +12320,8 @@ reading = "はば"
 # 単独 + 助詞接続 → 「ね」 (= 「根が/根の」 等)
 [[kanji]]
 char = "根"
-default = "コン"
+default = "ね"
 
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
-reading = "ね"
 
 # 「横」 は [[kanji]] block 化 skip (= corpus regression: 「横振り斬り」 = よこふりきり
 # 期待で 漢字直後 default オウ では 「おうふり」 になり誤読、 unihan = よこ keep)
@@ -12408,21 +12365,15 @@ reading = "サイ"
 
 [[kanji]]
 char = "母"
-default = "ボ"
+default = "はは"
 
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
-reading = "はは"
 
 # 「毛」 default 「モウ」 (= 毛布/毛皮/羊毛/不毛/眉毛/抜毛)。
 # 単独 + 助詞接続 → 「け」 (= 「毛が/毛の」 等)
 [[kanji]]
 char = "毛"
-default = "モウ"
+default = "け"
 
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
-reading = "け"
 
 # 「氏」 default 「シ」 (= 氏名/氏族/源氏/平氏/某氏/同氏)。
 # 単独 + 助詞接続 → 「うじ」 (= 「氏が/氏の」 等)
@@ -12478,11 +12429,8 @@ reading = "ハ"
 
 [[kanji]]
 char = "泡"
-default = "ホウ"
+default = "あわ"
 
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
-reading = "あわ"
 
 # 「渋」 default 「ジュウ」 (= 渋滞/苦渋/難渋/渋面)。
 # 単独 + 助詞接続 → 「しぶ」 (= 「渋が/渋の」 等)
@@ -12515,11 +12463,8 @@ reading = "さわ"
 # 単独 + 助詞接続 → 「から」 (= 「殻が/殻の」 等)
 [[kanji]]
 char = "殻"
-default = "カク"
+default = "から"
 
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
-reading = "から"
 
 # 「滞」 default 「タイ」 (= 滞在/停滞/沈滞/渋滞/遅滞)。
 # 動詞 「滞る」 = とどこおる は okurigana 列挙で 「とどこお」 へ切替 (= 5 mora reading)
@@ -12551,21 +12496,15 @@ reading = "みなもと"
 # 単独 + 助詞接続 → 「ゆ」 (= 「湯が/湯の」 等)
 [[kanji]]
 char = "湯"
-default = "トウ"
+default = "ゆ"
 
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
-reading = "ゆ"
 
 # 「漆」 default 「シツ」 (= 漆器/乾漆/膠漆)。
 # 単独 + 助詞接続 → 「うるし」 (= 「漆が/漆の」 等)
 [[kanji]]
 char = "漆"
-default = "シツ"
+default = "うるし"
 
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
-reading = "うるし"
 
 # 「泉」 default 「セン」 (= 源泉/温泉/冷泉/鉱泉/泉源)。
 # 単独 + 助詞接続 → 「いずみ」 (= 「泉が/泉の」 等)
@@ -12576,6 +12515,7 @@ default = "セン"
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
 reading = "いずみ"
+
 
 # 「敷」 default 「し」 (= 動詞語幹、 「敷く/敷ける/敷かれる」)。
 # 名詞 「敷地/座敷/屋敷/敷物/敷布」 は jukugo 個別 (= 連用形 名詞化 「しき」 で勝つ)
@@ -12661,11 +12601,8 @@ default = "に"
 # 単独 + 助詞接続 → 「しお」 (= 「潮が/潮の」 等)
 [[kanji]]
 char = "潮"
-default = "チョウ"
+default = "しお"
 
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
-reading = "しお"
 
 # 「丈」 default 「ジョウ」 (= 丈夫/気丈/方丈/丈尺)。
 # 「丈高い/丈比べ」 → 「たけ」 (= 訓読み + okurigana 文脈)
@@ -12681,11 +12618,8 @@ reading = "たけ"
 # 助詞接続 → 「おか」 (= 「丘が/丘の上」 等の単独使用)
 [[kanji]]
 char = "丘"
-default = "キュウ"
+default = "おか"
 
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "へ", "や"]
-reading = "おか"
 
 # 「丙」 default 「ヘイ」 (= 丙種/甲乙丙丁)。
 # 訓 「ひのえ」 は干支 jukugo (= 「丙午」 等) で対応
@@ -13494,11 +13428,8 @@ reading = "メイ"
 # 助詞接続 → 「ち」 (= 「血が出る/血の池/血まみれ/血だらけ」 等の単独訓)。
 [[kanji]]
 char = "血"
-default = "ケツ"
+default = "ち"
 
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
-reading = "ち"
 
 # 「身」 default 「シン」 (= 身体/全身/身分/出身/身辺/心身/身柄/身上)。
 # 助詞接続 → 「み」 (= 「身が引き締まる/身の上/身を引く」 等の単独訓)。
@@ -13556,11 +13487,8 @@ default = "す"
 # 「雌牛/雌猫」 等の jukugo は jukugo file で対応。
 [[kanji]]
 char = "雌"
-default = "シ"
+default = "めす"
 
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
-reading = "めす"
 
 # 「牧」 default 「ボク」 (= 牧畜/遊牧/牧草/牧歌/牧師/牧羊、 音読み主流)。
 # 「牧場 (まきば)」 等の特殊訓 jukugo は jukugo file で対応。

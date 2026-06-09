@@ -1868,6 +1868,23 @@ input = "降伏する"
 mode = "hiragana"
 expected = "こうふくする"
 
+# 曖昧字 個別精査 訓 default 化 (2026-06: raw_context 実証拠 + blast radius 確認で
+# bare=訓 が支配的な 24 字を flip。泉は温泉卵 衝突で除外)。
+[[case]]
+input = "血が出た"
+mode = "hiragana"
+expected = "ちがでた"
+
+[[case]]
+input = "娘が孫から"
+mode = "hiragana"
+expected = "むすめがまごから"
+
+[[case]]
+input = "他は何"
+mode = "hiragana"
+expected = "ほかはなに"
+
 # 歴史アーカイブ corpus VV (2026-06: long-tail 90k から)。
 [[case]]
 input = "暑すぎる"
