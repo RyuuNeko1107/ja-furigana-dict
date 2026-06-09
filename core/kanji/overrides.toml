@@ -13358,7 +13358,12 @@ default = "さ"
 # unihan 「くむ」 (終止形) は okurigana「む/ま/み/ん/め/も」 と二重連結する → default 訂正。
 [[kanji]]
 char = "組"
-default = "く"
+default = "くみ"
+# 動詞「組む/組んで/組める/組まない/組もう」= く。連用「組み立て」と noun「組/赤組/組が」
+# は default くみ。(★kanji_dense VV 2026-06: noun 組 が動詞語幹 く に誤読していた)
+[[kanji.match]]
+next_starts_any = ["む", "ん", "め", "ま", "も"]
+reading = "く"
 
 # 「繰」 default 「く」 (= 動詞「繰る/繰り出す/繰り返す」 全活用)。
 # unihan 「くる」 (終止形) は okurigana「る/ら/り/っ/れ/ろ」 と二重連結する → default 訂正。

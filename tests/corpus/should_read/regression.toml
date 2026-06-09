@@ -1891,6 +1891,17 @@ input = "力技で草"
 mode = "hiragana"
 expected = "ちからわざでくさ"
 
+# 組 default く→くみ (kanji_dense VV 2026-06: noun 組 が動詞語幹 く 誤読)。
+[[case]]
+input = "組が強い"
+mode = "hiragana"
+expected = "くみがつよい"
+
+[[case]]
+input = "チーム組む"
+mode = "hiragana"
+expected = "チームくむ"
+
 # 〜前=まえ / 飲み会 (archive VV n=1000 2026-06)。
 [[case]]
 input = "夕方前には終わる"
