@@ -1868,6 +1868,17 @@ input = "降伏する"
 mode = "hiragana"
 expected = "こうふくする"
 
+# 歴史アーカイブ corpus VV (2026-06: long-tail 90k から)。
+[[case]]
+input = "暑すぎる"
+mode = "hiragana"
+expected = "あつすぎる"
+
+[[case]]
+input = "寝すぎる"
+mode = "hiragana"
+expected = "ねすぎる"
+
 # 〜人=ジン 文中誤読 抑止 + 恥 訓化 (VV round5 2026-06)。
 [[case]]
 input = "外国人が多い"
