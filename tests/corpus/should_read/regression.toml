@@ -2126,3 +2126,24 @@ expected = "ねずに"
 input = "寝落ちる"
 mode = "hiragana"
 expected = "ねおちる"
+
+# ─── 本番 VV 比較 (2026-06-09): 何+助数詞 + 特殊読み jukugo ─────────────────
+[[case]]
+input = "何体"
+mode = "hiragana"
+expected = "なんたい"
+
+[[case]]
+input = "何段"
+mode = "hiragana"
+expected = "なんだん"
+
+[[case]]
+input = "気障"
+mode = "hiragana"
+expected = "きざ"
+
+[[case]]
+input = "吹替"
+mode = "hiragana"
+expected = "ふきかえ"
