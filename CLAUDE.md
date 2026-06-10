@@ -192,7 +192,7 @@ python tools/list_dups.py
 
 ## 注意点
 
-- **daily-release.yml schedule 停止中** (commit `e1e8d0b`、 2026-05-09 から)、 stable cut 後に再開判断
+- **daily-release.yml schedule 稼働中** (★RESUMED 2026-05-12、 lib v0.1.0 stable cut 後)、 毎日 JST 03:00 に core/rules 差分があれば CalVer tag 自動付与 (最新 `v2026.06.07`)
 - **release pace は Hybrid**: lib coordinated は SemVer (`v0.1.0` 等)、 daily-release / 修正は CalVer (`v2026.07.01` 等)
 - **Immutable Releases 設定 OFF** (alpha.7 経緯)、 stable cut 時に ON 推奨
 - **CI auto-merge**: dependabot PR + 特定 label PR が auto-merge 対象
