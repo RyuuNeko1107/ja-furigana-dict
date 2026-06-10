@@ -24,14 +24,14 @@ git に commit されている master HEAD の状態を基準にする。
 | カテゴリ | エントリ数 | サイズ |
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,680** | **739 KB** |
-| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **3,046** | **161 KB** |
-| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **317** | **11 KB** |
+| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **3,059** | **163 KB** |
+| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **322** | **12 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **743** | **20 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,771** | **176 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **435** | **6.1 KB** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **229** | **13 KB** |
-| **合計** | **48,221** | **1.10 MB** |
+| **合計** | **48,239** | **1.10 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -56,7 +56,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/jukugo/<genre>/*` — 手動 PR メンテのジャンル別 jukugo (≥ 2 字 surface)。 lib の Step 3 (jukugo lookup) で Lindera より優先採用。 各 genre dir の `_genre.toml` がカテゴリ description を持つ。
 
-**合計**: 3,046 件 / 161 KB (genre 6 区分)
+**合計**: 3,059 件 / 163 KB (genre 6 区分)
 
 #### 自然・生命
 
@@ -113,9 +113,9 @@ git に commit されている master HEAD の状態を基準にする。
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/jukugo/proper/personal_names.toml`](core/jukugo/proper/personal_names.toml) | 61 | 3.0 KB | 人名 (戦国 / 平安 / 江戸 / 明治大正 / 古典作家、現代私人除く) |
-| [`core/jukugo/proper/proper_nouns.toml`](core/jukugo/proper/proper_nouns.toml) | 29 | 1.4 KB | 固有名詞 (大学 / 中央官庁 / 元号 / 歴史的事象、PR 募集中) |
-| **小計** (2 ファイル) | **90** | **4.4 KB** | |
+| [`core/jukugo/proper/personal_names.toml`](core/jukugo/proper/personal_names.toml) | 65 | 3.5 KB | 人名 (戦国 / 平安 / 江戸 / 明治大正 / 古典作家、現代私人除く) |
+| [`core/jukugo/proper/proper_nouns.toml`](core/jukugo/proper/proper_nouns.toml) | 30 | 1.5 KB | 固有名詞 (大学 / 中央官庁 / 元号 / 歴史的事象、PR 募集中) |
+| **小計** (2 ファイル) | **95** | **4.9 KB** | |
 
 #### 物体・工芸
 
@@ -140,17 +140,17 @@ git に commit されている master HEAD の状態を基準にする。
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml) | 2,092 | 122 KB | 二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む) |
+| [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml) | 2,100 | 122 KB | 二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む) |
 | [`core/jukugo/basic/stream_round_20260526.toml`](core/jukugo/basic/stream_round_20260526.toml) | 39 | 1.3 KB | VV stream-comments comparison round (seed=20260526) |
 | [`core/jukugo/basic/four_char.toml`](core/jukugo/basic/four_char.toml) | 15 | 729 B | 四字熟語 (4 字 + 全 CJK 漢字) |
-| **小計** (3 ファイル) | **2,146** | **124 KB** | |
+| **小計** (3 ファイル) | **2,154** | **124 KB** | |
 
 
 ### 作品造語
 
 `core/works/<medium>/*` — 媒体 (game / literature 等) ごとに 1 作品 1 ファイル。 原則は公式読み (一般通称として定着していれば採録可)、 出典コメント必須、 古典読みは現代読み無い場合のみ。
 
-**合計**: 317 件 / 11 KB (genre 3 区分)
+**合計**: 322 件 / 12 KB (genre 3 区分)
 
 #### ゲーム
 
@@ -180,11 +180,11 @@ git に commit されている master HEAD の状態を基準にする。
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/works/anime/bleach.toml`](core/works/anime/bleach.toml) | 3 | 356 B | BLEACH (久保帯人) キャラ名・用語 |
+| [`core/works/anime/bleach.toml`](core/works/anime/bleach.toml) | 8 | 807 B | BLEACH (久保帯人) キャラ名・用語 |
 | [`core/works/anime/baki.toml`](core/works/anime/baki.toml) | 1 | 236 B | 刃牙シリーズ (板垣恵介): キャラクター名 / 用語 (公式読みベース) |
 | [`core/works/anime/gintama.toml`](core/works/anime/gintama.toml) | 1 | 263 B | 銀魂 (空知英秋): キャラクター名 / 用語 (公式読みベース) |
 | [`core/works/anime/jojo.toml`](core/works/anime/jojo.toml) | 1 | 287 B | ジョジョの奇妙な冒険 (荒木飛呂彦): キャラクター名 / 用語 (公式読みベース) |
-| **小計** (4 ファイル) | **6** | **1.1 KB** | |
+| **小計** (4 ファイル) | **11** | **1.6 KB** | |
 
 
 ### 外来語
