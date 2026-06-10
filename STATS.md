@@ -24,14 +24,14 @@ git に commit されている master HEAD の状態を基準にする。
 | カテゴリ | エントリ数 | サイズ |
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,680** | **739 KB** |
-| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **3,017** | **159 KB** |
+| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **3,024** | **159 KB** |
 | [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **314** | **11 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **743** | **20 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,771** | **176 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **435** | **6.1 KB** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **229** | **13 KB** |
-| **合計** | **48,189** | **1.10 MB** |
+| **合計** | **48,196** | **1.10 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -56,7 +56,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/jukugo/<genre>/*` — 手動 PR メンテのジャンル別 jukugo (≥ 2 字 surface)。 lib の Step 3 (jukugo lookup) で Lindera より優先採用。 各 genre dir の `_genre.toml` がカテゴリ description を持つ。
 
-**合計**: 3,017 件 / 159 KB (genre 6 区分)
+**合計**: 3,024 件 / 159 KB (genre 6 区分)
 
 #### 自然・生命
 
@@ -69,10 +69,10 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/jukugo/nature/foods.toml`](core/jukugo/nature/foods.toml) | 71 | 3.2 KB | 食べ物 / 料理 / 和菓子 / 郷土料理 / 食材 / 調味料 |
 | [`core/jukugo/nature/animals.toml`](core/jukugo/nature/animals.toml) | 62 | 1.8 KB | 動植物 / 魚介 / 鳥 / 昆虫 / 茸 / 海藻の難読 |
 | [`core/jukugo/nature/body_parts.toml`](core/jukugo/nature/body_parts.toml) | 61 | 2.1 KB | 体の部位 / 内臓 / 骨格 / 筋肉 / 神経 |
-| [`core/jukugo/nature/place_names.toml`](core/jukugo/nature/place_names.toml) | 39 | 1.4 KB | 地名 (47 都道府県 / 主要都市 / 駅 / 寺社仏閣 / 観光地) |
+| [`core/jukugo/nature/place_names.toml`](core/jukugo/nature/place_names.toml) | 40 | 1.5 KB | 地名 (47 都道府県 / 主要都市 / 駅 / 寺社仏閣 / 観光地) |
 | [`core/jukugo/nature/weather.toml`](core/jukugo/nature/weather.toml) | 36 | 1.4 KB | 気象 / 天候 / 季語的気象 / 二十四節気 / 海洋気象 |
 | [`core/jukugo/nature/science.toml`](core/jukugo/nature/science.toml) | 10 | 472 B | 自然科学 (天文 / 物理 / 化学 / 生物 / 地学) |
-| **小計** (6 ファイル) | **279** | **10 KB** | |
+| **小計** (6 ファイル) | **280** | **10 KB** | |
 
 #### 人文・芸術
 
@@ -140,10 +140,10 @@ git に commit されている master HEAD の状態を基準にする。
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml) | 2,071 | 120 KB | 二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む) |
+| [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml) | 2,077 | 120 KB | 二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む) |
 | [`core/jukugo/basic/stream_round_20260526.toml`](core/jukugo/basic/stream_round_20260526.toml) | 39 | 1.3 KB | VV stream-comments comparison round (seed=20260526) |
 | [`core/jukugo/basic/four_char.toml`](core/jukugo/basic/four_char.toml) | 15 | 729 B | 四字熟語 (4 字 + 全 CJK 漢字) |
-| **小計** (3 ファイル) | **2,125** | **122 KB** | |
+| **小計** (3 ファイル) | **2,131** | **122 KB** | |
 
 
 ### 作品造語
