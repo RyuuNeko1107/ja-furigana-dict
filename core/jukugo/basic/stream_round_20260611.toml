@@ -1,0 +1,21 @@
+# VV stream-comments comparison round (seed=20260611)
+#
+# 本番 furigana-api 隣接の stream-comments corpus (155万 occurrence) から
+# 漢字トークン頻度集計 → batch-read で抽出した誤読 generic 語彙。
+#
+# - key (表層): ダブルクォート必須
+# - value (読み): ひらがな または 全角カタカナ (慣習: 訓=ひら / 音=カタ)
+
+[meta]
+schema_version = "2"
+role = "jukugo"
+description = "VV stream-comments comparison round (seed=20260611)"
+
+[entries]
+"甘々" = "あまあま"          # 甘々ボイス 等 (本番で「カンガン」誤読)
+"体術" = "タイジュツ"        # 本番で「からだじゅつ」誤読
+"養蜂箱" = "ヨウホウバコ"    # 連濁 (本番で「ようほうはこ」)
+"絵面" = "えづら"            # 本番で「えめん」誤読
+"手汗" = "てあせ"            # 本番で「てかん」誤読
+"龍角散" = "リュウカクサン"  # 製品名 (本番で「りゅうかどさん」誤読)
+"村正" = "むらまさ"          # 刀工/名刀 (朧村正 等で「むらせい」誤読)

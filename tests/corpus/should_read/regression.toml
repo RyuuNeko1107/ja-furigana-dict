@@ -2222,3 +2222,72 @@ expected = "ともにゆこう"
 input = "征く"
 mode = "hiragana"
 expected = "ゆく"
+
+# 2026-06-11 corpus round 2: generic 語彙 + 固有名詞
+[[case]]
+input = "甘々ボイス"
+mode = "hiragana"
+expected = "あまあまボイス"
+
+[[case]]
+input = "体術"
+mode = "hiragana"
+expected = "たいじゅつ"
+
+[[case]]
+input = "養蜂箱"
+mode = "hiragana"
+expected = "ようほうばこ"
+
+[[case]]
+input = "絵面がやばい"
+mode = "hiragana"
+expected = "えづらがやばい"
+
+[[case]]
+input = "手汗"
+mode = "hiragana"
+expected = "てあせ"
+
+[[case]]
+input = "龍角散"
+mode = "hiragana"
+expected = "りゅうかくさん"
+
+[[case]]
+input = "朧村正"
+mode = "hiragana"
+expected = "おぼろむらまさ"
+
+# FF7 固有名詞
+[[case]]
+input = "神羅課長"
+mode = "hiragana"
+expected = "しんらかちょう"
+
+[[case]]
+input = "宝条"
+mode = "hiragana"
+expected = "ほうじょう"
+
+# VTuber 名 (ホロライブ、公式読み)
+[[case]]
+input = "兎田ぺこら"
+mode = "hiragana"
+expected = "うさだぺこら"
+
+[[case]]
+input = "星街すいせい"
+mode = "hiragana"
+expected = "ほしまちすいせい"
+
+[[case]]
+input = "宝鐘マリン"
+mode = "hiragana"
+expected = "ほうしょうマリン"
+
+# 百鬼夜行 は 百鬼=なきり を入れていないので壊れない (regression guard)
+[[case]]
+input = "百鬼夜行"
+mode = "hiragana"
+expected = "ひゃっきやぎょう"
