@@ -2531,3 +2531,19 @@ expected = "いそう"
 input = "自動投入"
 mode = "hiragana"
 expected = "じどうとうにゅう"
+
+# 2026-06-11: 匹 の prev=漢字→ヒツ 過剰削除 (五匹/数匹=ひき、匹敵=ひってき 維持)
+[[case]]
+input = "五匹の猫"
+mode = "hiragana"
+expected = "ごひきのねこ"
+
+[[case]]
+input = "数匹"
+mode = "hiragana"
+expected = "すうひき"
+
+[[case]]
+input = "匹敵"
+mode = "hiragana"
+expected = "ひってき"
