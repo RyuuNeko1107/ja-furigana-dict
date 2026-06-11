@@ -13,8 +13,10 @@
 #
 # ## どのとき発火するか
 #
-# lib の chunks/ で NumericPhraseMatcher が **最初に** 走る、 regex 形式で
-# 長 surface 優先 match。 hit すれば surface 全体を 1 chunk として reading 確定。
+# lib の Smart engine で NumberCandidateProvider (band 950) が candidate として
+# emit する (= 数字+助数詞の動的合成と同 band、 同位置では surface が長い方が
+# Viterbi path で勝つ)。 dict 完全一致 (core/ の entry、 band 1000) があれば
+# そちらが優先 = 個別 override 可能。
 #
 # ## 追加するなら
 #
@@ -26,9 +28,8 @@
 #
 # ## 注意点
 #
-# - **長い surface を優先** (= 「一人前 イチニンマエ」 を 「一人 ヒトリ」 より長く
-#   登録すれば 「一人前」 全体が先に match)
-# - lib の NumericPhraseMatcher が regex で評価、 長さ降順 sort 済
+# - **長い surface の登録で部分 surface に勝つ** (= 「一人前 イチニンマエ」 と
+#   「一人 ヒトリ」 が両方候補に出て、 Viterbi が長い方を採択する)
 
 
 [meta]
