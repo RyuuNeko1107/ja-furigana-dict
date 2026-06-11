@@ -2317,3 +2317,9 @@ expected = "ひがんじま"
 input = "綺々羅々ヴィヴィ"
 mode = "hiragana"
 expected = "ききららヴィヴィ"
+
+# 青島: Lindera の「チンタオ」(青島ビール) を日本語読み あおしま で上書き
+[[case]]
+input = "青島"
+mode = "hiragana"
+expected = "あおしま"
