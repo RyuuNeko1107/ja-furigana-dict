@@ -134,6 +134,9 @@ description = "古典芸能 / 武道 / 茶華香 / 工芸"
 # 拡充: 茶道用具
 "炭斗" = "スミトリ"  # 「炭」 default タン → スミ + 「斗」 default ト → トリ
 
+# 拡充 v10 (2026-06-12、 batch-read で誤読確認済)
+"襖絵" = "フスマエ"  # 「絵」 default かい → え (襖 自体は default で正読)
+
 # === Detailed entries (★A2 alpha.11 migration、 inline match block 持ち) ===
 
 [entries."素人"]
