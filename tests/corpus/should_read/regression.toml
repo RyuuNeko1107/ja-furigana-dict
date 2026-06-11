@@ -2488,3 +2488,25 @@ expected = "ほのおだ"
 input = "口内炎"
 mode = "hiragana"
 expected = "こうないえん"
+
+# 2026-06-11 低頻度VV: 新 default=シン flip (新キャラ/新PC=あたら 誤読の系統修正)
+[[case]]
+input = "新キャラ"
+mode = "hiragana"
+expected = "しんキャラ"
+
+[[case]]
+input = "新システム"
+mode = "hiragana"
+expected = "しんシステム"
+
+# 形容詞/形容動詞は維持 (回帰 guard)
+[[case]]
+input = "新しい家"
+mode = "hiragana"
+expected = "あたらしいいえ"
+
+[[case]]
+input = "新たな"
+mode = "hiragana"
+expected = "あらたな"

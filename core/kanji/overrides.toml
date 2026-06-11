@@ -12258,9 +12258,9 @@ reading = "モク"
 
 [[kanji]]
 char = "新"
-default = "あたら"
+default = "シン"
 
-# 新○ prefix (新発見/新聞 等)
+# 新○ prefix (新発見/新聞 等) — default と同じだが意図明示
 [[kanji.match]]
 next_char_type = "漢字"
 reading = "シン"
