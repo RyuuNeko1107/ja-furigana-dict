@@ -2657,3 +2657,35 @@ expected = "あんぜん"
 input = "甘味"
 mode = "hiragana"
 expected = "あまみ"
+
+# 2026-06-11: 形容詞すぎる/そう/さ gap を 15 字に展開 (軽/浅/薄/狭/緩/固/細/太/荒/寒/賢/偉/鋭/醜/幼)
+[[case]]
+input = "軽すぎる"
+mode = "hiragana"
+expected = "かるすぎる"
+
+[[case]]
+input = "固そう"
+mode = "hiragana"
+expected = "かたそう"
+
+[[case]]
+input = "鋭すぎる"
+mode = "hiragana"
+expected = "するどすぎる"
+
+# 多kun衝突 guard (細かい=こまかい / 狭める=せばめる / 固まる=かたまる)
+[[case]]
+input = "細かい"
+mode = "hiragana"
+expected = "こまかい"
+
+[[case]]
+input = "狭める"
+mode = "hiragana"
+expected = "せばめる"
+
+[[case]]
+input = "細胞"
+mode = "hiragana"
+expected = "さいぼう"

@@ -3050,6 +3050,11 @@ default = "シュウ"
 [[kanji]]
 char = "固"
 default = "コ"
+# 形容詞 kun (かた): 固い/固すぎ/固そう/固さ 等が音読み default に落ちる (2026-06-11)
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "す", "そ", "さ", "め", "ま"]
+reading = "かた"
+
 
 [[kanji]]
 char = "培"
@@ -3351,6 +3356,11 @@ default = "ショウ"
 [[kanji]]
 char = "幼"
 default = "ヨウ"
+# 形容詞 kun (おさな): 幼い/幼すぎ/幼そう/幼さ 等が音読み default に落ちる (2026-06-11)
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "す", "そ", "さ"]
+reading = "おさな"
+
 
 [[kanji]]
 char = "懇"
@@ -3997,6 +4007,11 @@ default = "バイ"
 [[kanji]]
 char = "賢"
 default = "ケン"
+# 形容詞 kun (かしこ): 賢い/賢すぎ/賢そう/賢さ 等が音読み default に落ちる (2026-06-11)
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "す", "そ", "さ"]
+reading = "かしこ"
+
 
 [[kanji]]
 char = "購"
@@ -4073,6 +4088,11 @@ default = "ラク"
 [[kanji]]
 char = "醜"
 default = "シュウ"
+# 形容詞 kun (みにく): 醜い/醜すぎ/醜そう/醜さ 等が音読み default に落ちる (2026-06-11)
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "す", "そ", "さ"]
+reading = "みにく"
+
 
 [[kanji]]
 char = "鉱"
@@ -4085,6 +4105,11 @@ default = "ドウ"
 [[kanji]]
 char = "鋭"
 default = "エイ"
+# 形容詞 kun (するど): 鋭い/鋭すぎ/鋭そう/鋭さ 等が音読み default に落ちる (2026-06-11)
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "す", "そ", "さ"]
+reading = "するど"
+
 
 [[kanji]]
 char = "鍛"
@@ -6333,6 +6358,11 @@ default = "モク"
 [[kanji]]
 char = "偉"
 default = "イ"
+# 形容詞 kun (えら): 偉い/偉すぎ/偉そう/偉さ 等が音読み default に落ちる (2026-06-11)
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "す", "そ", "さ"]
+reading = "えら"
+
 
 [[kanji]]
 char = "偶"
@@ -6353,7 +6383,7 @@ default = "セイ"
 # 凄さ/凄っ/凄そう = すご (凄い/凄く/凄み は Lindera で取れるが名詞化さ・強調っ が漏れる)。
 # 凄惨/凄絶=セイ は漢字後続で除外、凄まじい=すさ は「ま」不採用で除外 (2026-06-11、VV diff 由来)
 [[kanji.match]]
-next_starts_any = ["さ", "っ", "そ"]
+next_starts_any = ["さ", "っ", "そ", "す"]
 reading = "すご"
 
 [[kanji]]
@@ -6395,6 +6425,11 @@ default = "キョウ"
 [[kanji]]
 char = "太"
 default = "タイ"
+# 形容詞 kun (ふと): 太い/太すぎ/太そう/太さ 等が音読み default に落ちる (2026-06-11)
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "す", "そ", "さ", "め", "っ"]
+reading = "ふと"
+
 
 [[kanji]]
 char = "妥"
@@ -6413,6 +6448,11 @@ reading = "やす"
 [[kanji]]
 char = "寒"
 default = "カン"
+# 形容詞 kun (さむ): 寒い/寒すぎ/寒そう/寒さ 等が音読み default に落ちる (2026-06-11)
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "す", "そ", "さ", "け"]
+reading = "さむ"
+
 
 [[kanji]]
 char = "封"
@@ -6479,6 +6519,11 @@ default = "ジョウ"
 [[kanji]]
 char = "浅"
 default = "セン"
+# 形容詞 kun (あさ): 浅い/浅すぎ/浅そう/浅さ 等が音読み default に落ちる (2026-06-11)
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "す", "そ", "さ", "め"]
+reading = "あさ"
+
 
 [[kanji]]
 char = "淡"
@@ -6499,6 +6544,11 @@ default = "セイ"
 [[kanji]]
 char = "狭"
 default = "キョウ"
+# 形容詞 kun (せま): 狭い/狭すぎ/狭そう/狭さ 等が音読み default に落ちる (2026-06-11)
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "す", "そ", "さ"]
+reading = "せま"
+
 
 [[kanji]]
 char = "甘"
@@ -6564,10 +6614,20 @@ default = "ソ"
 [[kanji]]
 char = "細"
 default = "サイ"
+# 形容詞 kun (ほそ): 細い/細すぎ/細そう/細さ 等が音読み default に落ちる (2026-06-11)
+[[kanji.match]]
+next_starts_any = ["い", "く", "す", "そ", "さ", "め"]
+reading = "ほそ"
+
 
 [[kanji]]
 char = "緩"
 default = "カン"
+# 形容詞 kun (ゆる): 緩い/緩すぎ/緩そう/緩さ 等が音読み default に落ちる (2026-06-11)
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "す", "そ", "さ", "め", "や"]
+reading = "ゆる"
+
 
 [[kanji]]
 char = "臭"
@@ -6584,6 +6644,11 @@ reading = "ジャク"
 [[kanji]]
 char = "荒"
 default = "コウ"
+# 形容詞 kun (あら): 荒い/荒すぎ/荒そう/荒さ 等が音読み default に落ちる (2026-06-11)
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "す", "そ", "さ", "っ"]
+reading = "あら"
+
 
 [[kanji]]
 char = "蔽"
@@ -6592,6 +6657,11 @@ default = "ヘイ"
 [[kanji]]
 char = "薄"
 default = "ハク"
+# 形容詞 kun (うす): 薄い/薄すぎ/薄そう/薄さ 等が音読み default に落ちる (2026-06-11)
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "す", "そ", "さ", "め", "れ"]
+reading = "うす"
+
 
 [[kanji]]
 char = "衆"
@@ -6604,6 +6674,11 @@ default = "ヨウ"
 [[kanji]]
 char = "軽"
 default = "ケイ"
+# 形容詞 kun (かる): 軽い/軽すぎ/軽そう/軽さ 等が音読み default に落ちる (2026-06-11)
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "す", "そ", "さ", "め"]
+reading = "かる"
+
 
 [[kanji]]
 char = "辣"
