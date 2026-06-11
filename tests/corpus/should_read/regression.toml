@@ -2205,3 +2205,20 @@ expected = "ねこすな"
 input = "氷やない"
 mode = "hiragana"
 expected = "こおりやない"
+
+# 2026-06-11 corpus fix: 檻 (おり、= cage)
+[[case]]
+input = "檻の中"
+mode = "hiragana"
+expected = "おりのなか"
+
+# 2026-06-11 corpus fix: 征く (ゆく) 活用形
+[[case]]
+input = "共に征こう"
+mode = "hiragana"
+expected = "ともにゆこう"
+
+[[case]]
+input = "征く"
+mode = "hiragana"
+expected = "ゆく"
