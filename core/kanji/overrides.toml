@@ -6404,6 +6404,12 @@ default = "ダ"
 char = "安"
 default = "アン"
 
+# 安い/安く/安め は Lindera で正だが 安すぎ/安そう/安さ/安らか 等が default アン に落ちる
+# (2026-06-11 VV由来)。kun 送り仮名は やす。安全/安心/安定 等 next=漢字 は アン 維持
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "す", "そ", "さ", "め", "ら"]
+reading = "やす"
+
 [[kanji]]
 char = "寒"
 default = "カン"
@@ -6497,6 +6503,12 @@ default = "キョウ"
 [[kanji]]
 char = "甘"
 default = "カン"
+
+# 甘い/甘く/甘み/甘さ は Lindera で正だが 甘すぎ/甘そう/甘め/甘える 等が default カン に
+# 落ちる (2026-06-11 VV由来)。kun 送り仮名は あま。甘味/甘受 等 next=漢字 は カン 維持
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "す", "そ", "さ", "み", "め", "え", "ん"]
+reading = "あま"
 
 [[kanji]]
 char = "界"

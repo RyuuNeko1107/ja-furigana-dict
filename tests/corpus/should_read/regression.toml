@@ -2636,3 +2636,24 @@ expected = "いっさい"
 input = "二十歳"
 mode = "hiragana"
 expected = "はたち"
+
+# 2026-06-11 fresh VV: 甘/安 の adjective okurigana gap (すぎ/そう/さ/め)
+[[case]]
+input = "甘すぎる"
+mode = "hiragana"
+expected = "あますぎる"
+
+[[case]]
+input = "安すぎる"
+mode = "hiragana"
+expected = "やすすぎる"
+
+[[case]]
+input = "安全"
+mode = "hiragana"
+expected = "あんぜん"
+
+[[case]]
+input = "甘味"
+mode = "hiragana"
+expected = "あまみ"
