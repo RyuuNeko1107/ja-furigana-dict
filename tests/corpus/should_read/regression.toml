@@ -2547,3 +2547,45 @@ expected = "すうひき"
 input = "匹敵"
 mode = "hiragana"
 expected = "ひってき"
+
+# 2026-06-11: 漢数字+助数詞 (kanji_numeral opt-in) — 匹/杯/羽/軒/発/着
+[[case]]
+input = "五匹の猫と三羽の鳥"
+mode = "hiragana"
+expected = "ごひきのねことさんばのとり"
+
+[[case]]
+input = "六匹"
+mode = "hiragana"
+expected = "ろっぴき"
+
+[[case]]
+input = "三杯"
+mode = "hiragana"
+expected = "さんばい"
+
+[[case]]
+input = "五羽"
+mode = "hiragana"
+expected = "ごわ"
+
+[[case]]
+input = "一発"
+mode = "hiragana"
+expected = "いっぱつ"
+
+[[case]]
+input = "三軒"
+mode = "hiragana"
+expected = "さんげん"
+
+# 非counter文脈は不変 (回帰 guard)
+[[case]]
+input = "出発"
+mode = "hiragana"
+expected = "しゅっぱつ"
+
+[[case]]
+input = "一日中"
+mode = "hiragana"
+expected = "いちにちじゅう"

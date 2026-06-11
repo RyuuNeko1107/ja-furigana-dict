@@ -68,6 +68,7 @@ suffix = "ボン"
 # === begin: 匹 ===
 [counter."匹"]
 default = "ヒキ"
+kanji_numeral = true  # 五匹/六匹/十匹 → ごひき/ろっぴき/じゅっぴき (漢数字 bare 対応)
 
 [[counter."匹".rules]]
 last_digit = [1, 6, 8, 0]
@@ -82,6 +83,7 @@ suffix = "ビキ"
 # === begin: 杯 ===
 [counter."杯"]
 default = "ハイ"
+kanji_numeral = true  # 三杯/六杯 → さんばい/ろっぱい (漢数字 bare 対応)
 
 [[counter."杯".rules]]
 last_digit = [1, 6, 8, 0]
@@ -211,6 +213,7 @@ sokuonize = true
 # simple.toml の「軒 = ケン」 を override (= rule 優先で動的合成)
 [counter."軒"]
 default = "ケン"
+kanji_numeral = true  # 三軒/六軒 → さんげん/ろっけん (漢数字 bare 対応)
 
 [[counter."軒".rules]]
 last_digit = [1, 6, 8, 0]
@@ -225,6 +228,7 @@ suffix = "ゲン"
 # === begin: 着 === (衣類/到着順、 1/6/8/10 で促音化、 ★round 51)
 [counter."着"]
 default = "チャク"
+kanji_numeral = true  # 一着/六着 → いっちゃく/ろくちゃく (漢数字 bare 対応)
 
 [[counter."着".rules]]
 last_digit = [1, 6, 8, 0]
@@ -246,6 +250,7 @@ sokuonize = true
 # simple.toml の「発 = ハツ」 を override (= rule 優先で動的合成)
 [counter."発"]
 default = "ハツ"
+kanji_numeral = true  # 三発/六発 → さんぱつ/ろっぱつ (漢数字 bare 対応)
 
 [[counter."発".rules]]
 last_digit = [1, 6, 8, 0]
@@ -261,6 +266,7 @@ suffix = "パツ"
 # 1=イチワ (連濁/促音なし)、 3=サンバ、 6=ロッパ、 8=ハッパ、 10=ジュッパ
 [counter."羽"]
 default = "ワ"
+kanji_numeral = true  # 三羽/五羽/六羽 → さんば/ごわ/ろっぱ (漢数字 bare 対応、 旧 五羽→ごう 誤読を解消)
 
 [[counter."羽".rules]]
 last_digit = [6, 8, 0]
