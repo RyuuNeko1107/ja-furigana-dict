@@ -2477,3 +2477,14 @@ expected = "おきょう"
 input = "埃"
 mode = "hiragana"
 expected = "ほこり"
+
+# 2026-06-11: 炎だ=ほのおだ (影と同型、particle list に だ/や 補完)
+[[case]]
+input = "炎だ"
+mode = "hiragana"
+expected = "ほのおだ"
+
+[[case]]
+input = "口内炎"
+mode = "hiragana"
+expected = "こうないえん"

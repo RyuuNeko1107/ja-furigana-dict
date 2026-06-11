@@ -1554,7 +1554,7 @@ char = "炎"
 default = "エン"
 
 [[kanji.match]]
-next_starts_any = ["の", "が", "を", "に", "は", "も", "で", "と"]
+next_starts_any = ["の", "が", "を", "に", "は", "も", "で", "と", "だ", "や"]
 reading = "ホノオ"
 
 [[kanji.match]]
