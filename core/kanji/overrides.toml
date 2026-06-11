@@ -776,6 +776,12 @@ default = "タタカ"
 [[kanji.match]]
 prev_char_type = "漢字"
 reading = "セン"
+
+# カタカナ + 戦 も suffix セン (= ボス戦 / ラスボス戦 / リーグ戦。 戦う(動詞)は
+# 常にひらがな後続なので衝突しない)
+[[kanji.match]]
+prev_char_type = "カタカナ"
+reading = "セン"
 [[kanji]]
 char = "僕"
 default = "ぼく"
