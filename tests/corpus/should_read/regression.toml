@@ -2615,3 +2615,24 @@ expected = "ろくしゅ"
 input = "六句"
 mode = "hiragana"
 expected = "ろっく"
+
+# 2026-06-11: 局/戦/通/件/食/首/編/篇/歳 も kanji_numeral opt-in (一X 促音)
+[[case]]
+input = "一戦"
+mode = "hiragana"
+expected = "いっせん"
+
+[[case]]
+input = "一件"
+mode = "hiragana"
+expected = "いっけん"
+
+[[case]]
+input = "一歳"
+mode = "hiragana"
+expected = "いっさい"
+
+[[case]]
+input = "二十歳"
+mode = "hiragana"
+expected = "はたち"

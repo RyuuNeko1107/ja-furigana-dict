@@ -108,6 +108,7 @@ sokuonize = true
 # === begin: 歳 ===
 [counter."歳"]
 default = "サイ"
+kanji_numeral = true  # 一歳/八歳 → いっさい/はっさい (漢数字 bare 対応)
 
 [[counter."歳".rules]]
 last_digit = [1, 8, 0]
@@ -185,6 +186,7 @@ sokuonize = true
 # === begin: 局 === (将棋/テレビ局、 1/6/8/10 で促音化)
 [counter."局"]
 default = "キョク"
+kanji_numeral = true  # 一局/六局 → いっきょく/ろっきょく (漢数字 bare 対応)
 
 [[counter."局".rules]]
 last_digit = [1, 6, 8, 0]
@@ -206,6 +208,7 @@ sokuonize = true
 # === begin: 首 === (詩歌、 1/6/8/10 で促音化)
 [counter."首"]
 default = "シュ"
+kanji_numeral = true  # 一首/六首 → いっしゅ/ろくしゅ (漢数字 bare 対応)
 
 [[counter."首".rules]]
 last_digit = [1, 6, 8, 0]
@@ -243,6 +246,7 @@ sokuonize = true
 # === begin: 通 === (手紙/書類、 1/6/8/10 で促音化、 ★round 51)
 [counter."通"]
 default = "ツウ"
+kanji_numeral = true  # 一通/六通 → いっつう/ろくつう (漢数字 bare 対応)
 
 [[counter."通".rules]]
 last_digit = [1, 6, 8, 0]
@@ -315,6 +319,7 @@ sokuonize = true
 # === begin: 編 === (書物の編、 1/6/8/10 で促音化)
 [counter."編"]
 default = "ヘン"
+kanji_numeral = true  # 一編/六編 → いっぺん/ろっぺん (漢数字 bare 対応)
 
 [[counter."編".rules]]
 last_digit = [1, 6, 8, 0]
@@ -329,6 +334,7 @@ suffix = "ペン"
 # === begin: 篇 === (詩篇、 「編」 異体字、 1/6/8/10 で促音化)
 [counter."篇"]
 default = "ヘン"
+kanji_numeral = true  # 一篇 → いっぺん (漢数字 bare 対応)
 
 [[counter."篇".rules]]
 last_digit = [1, 6, 8, 0]
@@ -343,6 +349,7 @@ suffix = "ペン"
 # === begin: 件 === (件数、 1/6/8/10 で促音化、 simple.toml の「件 = ケン」 を override)
 [counter."件"]
 default = "ケン"
+kanji_numeral = true  # 一件/六件 → いっけん/ろっけん (漢数字 bare 対応)
 
 [[counter."件".rules]]
 last_digit = [1, 6, 8, 0]
@@ -357,6 +364,7 @@ sokuonize = true
 # === begin: 食 === (食事、 1/6/8/10 で促音化)
 [counter."食"]
 default = "ショク"
+kanji_numeral = true  # 一食/六食 → いっしょく/ろくしょく (漢数字 bare 対応)
 
 [[counter."食".rules]]
 last_digit = [1, 6, 8, 0]
@@ -367,6 +375,7 @@ sokuonize = true
 # === begin: 戦 === (試合、 1/6/8/10 で促音化、 「1 戦 = イッセン」)
 [counter."戦"]
 default = "セン"
+kanji_numeral = true  # 一戦/六戦 → いっせん/ろっせん (漢数字 bare 対応)
 
 [[counter."戦".rules]]
 last_digit = [1, 6, 8, 0]
