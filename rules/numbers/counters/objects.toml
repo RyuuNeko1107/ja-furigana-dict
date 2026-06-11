@@ -149,22 +149,24 @@ default = "ツ"
 specials = { "1" = "ヒトツ", "2" = "フタツ", "3" = "ミッツ", "4" = "ヨッツ", "5" = "イツツ", "6" = "ムッツ", "7" = "ナナツ", "8" = "ヤッツ", "9" = "ココノツ" }
 # === end: つ ===
 
-# === begin: 隻 === (船等、 1/6/8/10 で促音化、 ★round 51)
+# === begin: 隻 === (船等、 1/8/10 で促音化。 六隻=ろくせき は促音化しない)
 [counter."隻"]
 default = "セキ"
+kanji_numeral = true  # 一隻/八隻 → いっせき/はっせき (漢数字 bare 対応)
 
 [[counter."隻".rules]]
-last_digit = [1, 6, 8, 0]
+last_digit = [1, 8, 0]
 suffix = "セキ"
 sokuonize = true
 # === end: 隻 ===
 
-# === begin: 頭 === (大型動物、 1/6/8/10 で促音化)
+# === begin: 頭 === (大型動物、 1/8/10 で促音化。 六頭=ろくとう は促音化しない)
 [counter."頭"]
 default = "トウ"
+kanji_numeral = true  # 一頭/八頭/十頭 → いっとう/はっとう/じゅっとう (漢数字 bare 対応)
 
 [[counter."頭".rules]]
-last_digit = [1, 6, 8, 0]
+last_digit = [1, 8, 0]
 suffix = "トウ"
 sokuonize = true
 # === end: 頭 ===
@@ -172,6 +174,7 @@ sokuonize = true
 # === begin: 句 === (俳句、 1/6/8/10 で促音化)
 [counter."句"]
 default = "ク"
+kanji_numeral = true  # 一句/六句 → いっく/ろっく (漢数字 bare 対応)
 
 [[counter."句".rules]]
 last_digit = [1, 6, 8, 0]
@@ -189,12 +192,13 @@ suffix = "キョク"
 sokuonize = true
 # === end: 局 ===
 
-# === begin: 種 === (種類、 1/6/8/10 で促音化)
+# === begin: 種 === (種類、 1/8/10 で促音化。 六種=ろくしゅ は促音化しない)
 [counter."種"]
 default = "シュ"
+kanji_numeral = true  # 一種/八種 → いっしゅ/はっしゅ (漢数字 bare 対応)
 
 [[counter."種".rules]]
-last_digit = [1, 6, 8, 0]
+last_digit = [1, 8, 0]
 suffix = "シュ"
 sokuonize = true
 # === end: 種 ===

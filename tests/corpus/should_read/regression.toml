@@ -2589,3 +2589,29 @@ expected = "しゅっぱつ"
 input = "一日中"
 mode = "hiragana"
 expected = "いちにちじゅう"
+
+# 2026-06-11: 頭/隻/種/句 opt-in (六は促音化しない、1/8/10 のみ。句は六句=ろっく)
+[[case]]
+input = "三頭"
+mode = "hiragana"
+expected = "さんとう"
+
+[[case]]
+input = "六頭"
+mode = "hiragana"
+expected = "ろくとう"
+
+[[case]]
+input = "八頭"
+mode = "hiragana"
+expected = "はっとう"
+
+[[case]]
+input = "六種"
+mode = "hiragana"
+expected = "ろくしゅ"
+
+[[case]]
+input = "六句"
+mode = "hiragana"
+expected = "ろっく"
