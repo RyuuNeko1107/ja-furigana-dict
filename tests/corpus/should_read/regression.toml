@@ -2323,3 +2323,30 @@ expected = "ききららヴィヴィ"
 input = "青島"
 mode = "hiragana"
 expected = "あおしま"
+
+# 2026-06-11 VV比較 round: 闇/名 の kanji rule 修正
+[[case]]
+input = "基本闇やからな"
+mode = "hiragana"
+expected = "きほんやみやからな"
+
+[[case]]
+input = "組織名"
+mode = "hiragana"
+expected = "そしきめい"
+
+[[case]]
+input = "会社名"
+mode = "hiragana"
+expected = "かいしゃめい"
+
+# 名 suffix rule の例外保護 (回帰 guard)
+[[case]]
+input = "仮名"
+mode = "hiragana"
+expected = "かな"
+
+[[case]]
+input = "暗闇"
+mode = "hiragana"
+expected = "くらやみ"

@@ -1113,10 +1113,8 @@ reading = "リン"
 [[kanji]]
 char = "闇"
 default = "やみ"
-
-[[kanji.match]]
-prev_char_type = "漢字"
-reading = "アン"
+# 闇 のアン音読みは現代語でほぼ皆無 (暗闇/夕闇/宵闇=やみ は Lindera 単位で正読み)。
+# 旧 prev_char_type=漢字→アン は「基本闇=きほんあん」等の誤読源だったので削除 (2026-06-11、VV diff 由来)。
 
 # 「愛」: 音読み 「アイ」 (= 「愛は / 愛する / 愛犬 / 純愛 / 親愛」) が圧倒的。
 # 動詞 「愛しむ (おしむ)」 は古語、 通常 「惜しむ」 字。
@@ -13440,6 +13438,12 @@ default = "な"
 # 名○ prefix (名勝負/名作/名曲 等) = メイ
 [[kanji.match]]
 next_char_type = "漢字"
+reading = "メイ"
+
+# ○名 suffix (組織名/会社名/番組名 等) = メイ。名前/あだ名/仮名 等は Lindera 単位で影響なし
+# (2026-06-11、VV diff 由来: 組織名=そしきな → そしきめい)
+[[kanji.match]]
+prev_char_type = "漢字"
 reading = "メイ"
 
 # 「血」 default 「ケツ」 (= 血液/出血/献血/止血/輸血/貧血/血管/採血/血圧)。
