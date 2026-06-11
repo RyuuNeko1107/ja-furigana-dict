@@ -91,9 +91,9 @@ default = "まえ"
 prev_ends_any = ["年", "月", "日", "週", "分", "時", "秒"]
 reading = "まえ"
 
-[[kanji.match]]
-prev_char_type = "漢字"
-reading = "ゼン"
+# 旧 prev_char_type=漢字→ゼン は削除検証中 (2026-06-11)。
+# ○前 suffix は まえ が生産的 (開始前/終了前/使用前/本番前/食事前)、ゼン 熟語
+# (直前/事前/午前/戦前/生前/食前/空前) は Lindera 単位で取れるか実測する。
 
 
 [[kanji]]

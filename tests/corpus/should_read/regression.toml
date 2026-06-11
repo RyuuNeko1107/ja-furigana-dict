@@ -2414,3 +2414,30 @@ expected = "すこしおそめ"
 input = "遅刻"
 mode = "hiragana"
 expected = "ちこく"
+
+# 2026-06-11 VV比較 round5: 前 suffix=まえ (1時間前/開始前=ぜん 誤読の系統修正)
+[[case]]
+input = "1時間前"
+mode = "hiragana"
+expected = "いちじかんまえ"
+
+[[case]]
+input = "100年以上前"
+mode = "hiragana"
+expected = "ひゃくねんいじょうまえ"
+
+[[case]]
+input = "開始前"
+mode = "hiragana"
+expected = "かいしまえ"
+
+# ゼン熟語・目前 は維持 (回帰 guard)
+[[case]]
+input = "午前"
+mode = "hiragana"
+expected = "ごぜん"
+
+[[case]]
+input = "撃破目前"
+mode = "hiragana"
+expected = "げきはもくぜん"
