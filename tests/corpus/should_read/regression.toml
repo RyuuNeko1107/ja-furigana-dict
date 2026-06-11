@@ -2312,3 +2312,8 @@ expected = "たけゆたかをしんじろ"
 input = "彼岸島"
 mode = "hiragana"
 expected = "ひがんじま"
+
+[[case]]
+input = "綺々羅々ヴィヴィ"
+mode = "hiragana"
+expected = "ききららヴィヴィ"
