@@ -2403,3 +2403,14 @@ expected = "えいきょう"
 input = "同一人物"
 mode = "hiragana"
 expected = "どういつじんぶつ"
+
+# 2026-06-11 VV比較 round4: 遅め (遅さ含む okurigana 補完)
+[[case]]
+input = "少し遅め"
+mode = "hiragana"
+expected = "すこしおそめ"
+
+[[case]]
+input = "遅刻"
+mode = "hiragana"
+expected = "ちこく"
