@@ -1,0 +1,238 @@
+# 2026-06-12 dict 改善セッション (916k 本番コーパス misread 検出 + 領域拡充) の回帰 lock。
+#
+# 机上の領域スキャン飽和後、 N:\stream-comments\data の 916k 行コーパスを
+# detect_misread.py で全スキャンし、 低頻度帯から人気IP/VTuber キャラ名の孤立誤読 +
+# 連濁/セグメント誤読を採録した分の退行防止。
+# 詳細は各 core/works/*, core/jukugo/basic/general.toml の v11-v14 ブロック参照。
+
+# ─── 連濁 / セグメント誤読 (general) ───────────────────────────────
+[[case]]
+input = "中ボス"
+mode = "hiragana"
+expected = "ちゅうぼす"
+note = "default なかボス。 ゲーム中ボス"
+
+[[case]]
+input = "上振れ"
+mode = "hiragana"
+expected = "うわぶれ"
+note = "default うえふれ。 ガチャ用語、 振れ=ぶれ 連濁"
+
+[[case]]
+input = "下振れ"
+mode = "hiragana"
+expected = "したぶれ"
+
+[[case]]
+input = "手押し車"
+mode = "hiragana"
+expected = "ておしぐるま"
+note = "車=ぐるま 連濁"
+
+[[case]]
+input = "雑魚狩り"
+mode = "hiragana"
+expected = "ざこがり"
+note = "○○狩り = がり 連濁"
+
+[[case]]
+input = "花畑"
+mode = "hiragana"
+expected = "はなばたけ"
+note = "default はなはた。 畑=ばたけ 連濁"
+
+[[case]]
+input = "茶畑"
+mode = "hiragana"
+expected = "ちゃばたけ"
+
+[[case]]
+input = "安全靴"
+mode = "hiragana"
+expected = "あんぜんぐつ"
+note = "靴=ぐつ 連濁 (製靴=せいか への collateral 回避で exact)"
+
+[[case]]
+input = "運動靴"
+mode = "hiragana"
+expected = "うんどうぐつ"
+
+[[case]]
+input = "視野角"
+mode = "hiragana"
+expected = "しやかく"
+note = "default しやかど。 FOV"
+
+[[case]]
+input = "云々"
+mode = "hiragana"
+expected = "うんぬん"
+
+[[case]]
+input = "隘路"
+mode = "hiragana"
+expected = "あいろ"
+
+[[case]]
+input = "弘法"
+mode = "hiragana"
+expected = "こうぼう"
+note = "default ぐほう。 弘法大師/弘法にも筆の誤り"
+
+[[case]]
+input = "京野菜"
+mode = "hiragana"
+expected = "きょうやさい"
+
+[[case]]
+input = "過ぎる"
+mode = "hiragana"
+expected = "すぎる"
+note = "Lindera が辞書形 過ぎる を よぎる に誤分節"
+
+[[case]]
+input = "披露目"
+mode = "hiragana"
+expected = "ひろめ"
+note = "default ひろうもく。 お披露目"
+
+# ─── 戦 [[kanji]] block: カタカナ + 戦 = セン ─────────────────────
+[[case]]
+input = "対ボス戦"
+mode = "hiragana"
+expected = "たいボスせん"
+note = "prev_char_type=カタカナ → セン (戦う 動詞は別)"
+
+# ─── 人気作品 キャラ名 (公式読み) ─────────────────────────────────
+[[case]]
+input = "空条承太郎"
+mode = "hiragana"
+expected = "くうじょうじょうたろう"
+note = "JoJo 第3部。 default そらじょうしょうたろう"
+
+[[case]]
+input = "五条悟"
+mode = "hiragana"
+expected = "ごじょうさとる"
+note = "呪術廻戦。 default ごじょうご"
+
+[[case]]
+input = "両面宿儺"
+mode = "hiragana"
+expected = "りょうめんすくな"
+note = "default りょうめんやどおにやらい"
+
+[[case]]
+input = "鬼太郎"
+mode = "hiragana"
+expected = "きたろう"
+note = "default おにたろう"
+
+[[case]]
+input = "化物語"
+mode = "hiragana"
+expected = "ばけものがたり"
+note = "default かものがたり"
+
+[[case]]
+input = "大蛇丸"
+mode = "hiragana"
+expected = "おろちまる"
+note = "NARUTO。 default おろちがん"
+
+[[case]]
+input = "阿散井恋次"
+mode = "hiragana"
+expected = "あばらいれんじ"
+note = "BLEACH。 default あさんいこいじ"
+
+[[case]]
+input = "灰原哀"
+mode = "hiragana"
+expected = "はいばらあい"
+note = "名探偵コナン。 default はいげんあい"
+
+[[case]]
+input = "孫悟飯"
+mode = "hiragana"
+expected = "そんごはん"
+note = "DB。 孫=そん (default まご)"
+
+[[case]]
+input = "坂田銀時"
+mode = "hiragana"
+expected = "さかたぎんとき"
+note = "銀魂。 default さかたぎんじ"
+
+[[case]]
+input = "影山飛雄"
+mode = "hiragana"
+expected = "かげやまとびお"
+note = "ハイキュー。 default かげやまひゆう"
+
+[[case]]
+input = "花垣武道"
+mode = "hiragana"
+expected = "はながきたけみち"
+note = "東リベ。 default はながきぶどう"
+
+# ─── VTuber 名 ─────────────────────────────────────────────────
+[[case]]
+input = "月ノ美兎"
+mode = "hiragana"
+expected = "つきのみと"
+note = "にじさんじ。 default つきノびうさぎ"
+
+[[case]]
+input = "紫咲シオン"
+mode = "hiragana"
+expected = "しさきシオン"
+note = "ホロライブ。 紫咲=しさき (default むらさきさ)"
+
+# ─── collateral guard (誤読修正が別文脈を壊していないか) ──────────
+[[case]]
+input = "戦う"
+mode = "hiragana"
+expected = "たたかう"
+note = "戦 のカタカナ rule が動詞 戦う を壊さない"
+
+[[case]]
+input = "製靴"
+mode = "hiragana"
+expected = "せいか"
+note = "靴 exact 登録が 製靴=せいか を壊さない"
+
+[[case]]
+input = "茶柱"
+mode = "hiragana"
+expected = "ちゃばしら"
+note = "茶畑 exact が 茶柱 を壊さない"
+
+[[case]]
+input = "お花畑"
+mode = "hiragana"
+expected = "おはなばたけ"
+
+[[case]]
+input = "弘法大師"
+mode = "hiragana"
+expected = "こうぼうだいし"
+note = "弘法 exact が 弘法大師 を壊さない"
+
+[[case]]
+input = "通り過ぎる"
+mode = "hiragana"
+expected = "とおりすぎる"
+note = "過ぎる exact が複合動詞を壊さない"
+
+[[case]]
+input = "孫悟空"
+mode = "hiragana"
+expected = "そんごくう"
+note = "孫悟飯 追加が 孫悟空 を壊さない"
+
+[[case]]
+input = "藍染め"
+mode = "hiragana"
+expected = "あいぞめ"
+note = "藍染惣右介 (full name) 採録が 藍染め=あいぞめ を壊さない"
