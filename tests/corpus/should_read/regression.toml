@@ -2291,3 +2291,24 @@ expected = "ほうしょうマリン"
 input = "百鬼夜行"
 mode = "hiragana"
 expected = "ひゃっきやぎょう"
+
+# 2026-06-11 corpus round 3: token頻度スキャン 700位以降
+[[case]]
+input = "痛車"
+mode = "hiragana"
+expected = "いたしゃ"
+
+[[case]]
+input = "陰獣"
+mode = "hiragana"
+expected = "いんじゅう"
+
+[[case]]
+input = "武豊を信じろ"
+mode = "hiragana"
+expected = "たけゆたかをしんじろ"
+
+[[case]]
+input = "彼岸島"
+mode = "hiragana"
+expected = "ひがんじま"
