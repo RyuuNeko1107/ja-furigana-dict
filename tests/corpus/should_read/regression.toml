@@ -2377,3 +2377,29 @@ expected = "そせん"
 input = "近場"
 mode = "hiragana"
 expected = "ちかば"
+
+# 2026-06-11 VV比較 round3: 凄さ/影だ/同一 の okurigana・particle・jukugo 補修
+[[case]]
+input = "凄さ"
+mode = "hiragana"
+expected = "すごさ"
+
+[[case]]
+input = "凄まじい"
+mode = "hiragana"
+expected = "すさまじい"
+
+[[case]]
+input = "影だ"
+mode = "hiragana"
+expected = "かげだ"
+
+[[case]]
+input = "影響"
+mode = "hiragana"
+expected = "えいきょう"
+
+[[case]]
+input = "同一人物"
+mode = "hiragana"
+expected = "どういつじんぶつ"
