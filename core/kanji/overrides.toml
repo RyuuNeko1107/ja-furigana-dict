@@ -1275,7 +1275,7 @@ char = "斬"
 default = "ザン"
 
 [[kanji.match]]
-next_starts_any = ["る", "り", "っ", "ら"]
+next_starts_any = ["る", "り", "っ", "ら", "れ", "ろ"]
 reading = "キ"
 
 # 「速」 unihan default 「はやい」 (= 形容詞語幹 ひらがな) では 「速度 / 速攻 / 高速」
@@ -15989,10 +15989,19 @@ default = "あご"
 char = "餅"
 default = "もち"
 
-# 「餌」 default 「え」 (= 「餌/餌食/餌付け」 訓 + jukugo)
+# 「餌」 default 「え」 (= 餌食/餌付け 等 jukugo)。単独 + 助詞接続 → 「えさ」
 [[kanji]]
 char = "餌"
 default = "え"
+
+# 餌が/餌を/餌だ/餌の/亭主の餌 等 単独名詞 → えさ (餌食=えじき/餌付け=えづけ は default え 維持)
+[[kanji.match]]
+next_starts_any = ["が", "を", "は", "に", "の", "で", "と", "も", "だ", "や"]
+reading = "えさ"
+
+[[kanji.match]]
+next_char_type = "記号"
+reading = "えさ"
 
 # 「香」 default 「コウ」 (= 香水/線香/香料/抹香/香気、 音読み)
 [[kanji]]
