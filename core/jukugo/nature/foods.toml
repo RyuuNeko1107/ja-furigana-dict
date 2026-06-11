@@ -151,3 +151,7 @@ weight = 45
 
 # 拡充 (= VV n=500 mining 由来)
 "ピリ辛" = "ピリカラ"    # 「辛」 default シン → カラ (spoken)
+
+# 拡充 v13 (2026-06-12、 Wikipedia コーパス ground-truth 照合由来、 batch-read で誤読確認済)
+"京野菜" = "キョウヤサイ"  # default きょうのさい (京+野菜 が誤分割)
+"葉野菜" = "ハヤサイ"      # 「葉」 default よう → は (葉物野菜)
