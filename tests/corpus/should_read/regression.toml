@@ -2510,3 +2510,24 @@ expected = "あたらしいいえ"
 input = "新たな"
 mode = "hiragana"
 expected = "あらたな"
+
+# 2026-06-11 低頻度VV: 見始め/居そう okurigana + 投入=とうにゅう (arts.toml ナゲイレ 削除)
+[[case]]
+input = "見始める"
+mode = "hiragana"
+expected = "みはじめる"
+
+[[case]]
+input = "見学"
+mode = "hiragana"
+expected = "けんがく"
+
+[[case]]
+input = "居そう"
+mode = "hiragana"
+expected = "いそう"
+
+[[case]]
+input = "自動投入"
+mode = "hiragana"
+expected = "じどうとうにゅう"
