@@ -5,29 +5,32 @@ ja-furigana lib 用の TOML 辞書 + 校正ルール data repo。
 - **GitHub**: <https://github.com/RyuuNeko1107/ja-furigana-dict>
 - **License**: CC BY-SA 4.0 (data) + Apache-2.0 (tools/scripts)
 - **release 形式**: GitHub Releases tar.gz、 lib 側 `furigana dict pull` で取得
-- **現 release**: `v2026.05.09` (CalVer)
+- **release pace**: daily-release (CalVer 自動 tag) + lib coordinated SemVer の Hybrid
 
 ## 構成
 
 ```
 core/                — 単語辞書 (entry data、 役割別 sub-dir)
-├── jukugo/          — 熟語 (24 カテゴリ、 32 file)
-├── unihan/          — 単漢字 fallback (5 file)
-├── works/           — 作品固有名詞 (game / literature)
-├── loanwords/       — 外来語 (1 file)
-├── single_overrides.toml  — 1 字 surface override (Issue #15)
+├── jukugo/          — 熟語 (24 カテゴリ)
+├── unihan/          — 単漢字 fallback
+├── kanji/           — [[kanji]] block (default + 文脈 match、 旧 single_overrides 統合先)
+├── works/           — 作品固有名詞 (game / literature / anime)
+├── loanwords/       — 外来語
 └── compat.toml      — 異体字 → 標準字 mapping
 
 rules/               — 校正ルール (data + 動的合成)
-├── counters/        — 助数詞 (時間系 / 物体系 等、 13 file)
-├── context/         — 文脈依存読み (4 file、 alpha.10 で entry inline に migration 予定)
-├── numbers/         — 数字読み / スケール / 単位
-├── text/            — 記号 / ラテン文字 / 後処理
-└── *.toml           — days / scales / units / symbols / latin / numeric_phrases / postprocess
+├── numbers/         — days / scales / numeric_phrases + counters/ (助数詞)
+└── text/            — symbols / units / postprocess
+
+(旧 core/single_overrides.toml / rules/context/ は alpha.11 で削除済 —
+ [[kanji]] block / entry inline match に migration)
 
 tests/
 └── corpus/
-    └── should_read.toml  — 回帰テスト (~50+ case、 alpha.10 で 108+ に拡充予定)
+    ├── should_read.toml      — 回帰テスト本体
+    └── should_read/*.toml    — 分野別 (extended / general / regression / sentences /
+                                touhou / gintama)。 計 802 expected case、 lib 側
+                                furigana-corpus-check で一括測定 (~4 秒)
 
 tools/
 ├── validate.py               — TOML 構文 + 読み形式 + cross-file 重複検出 (CI gate)
@@ -172,6 +175,9 @@ reading = "テッキョウ"   # match 候補も bracket 付きで書ける
 python tools/validate.py
 
 # corpus regression test (= should_read.toml + should_read/ 配下)
+# ローカルでは lib 側 furigana-corpus-check 推奨 (802 case ≈ 4 秒、 run_corpus.py は ~15 分):
+#   cd ..\furigana; cargo run --release --bin furigana-corpus-check -- `
+#       --rules-dir ..\furigana-dict\rules --core-dict-dir ..\furigana-dict\core ..\furigana-dict\tests\corpus
 python tools/run_corpus.py
 
 # inline rule tests (= *.test.toml)
