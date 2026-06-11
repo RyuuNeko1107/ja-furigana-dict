@@ -2350,3 +2350,30 @@ expected = "かな"
 input = "暗闇"
 mode = "hiragana"
 expected = "くらやみ"
+
+# 2026-06-11 VV比較 round2: 先 suffix=さき (連絡先/取引先=せん 誤読の系統修正)
+[[case]]
+input = "連絡先"
+mode = "hiragana"
+expected = "れんらくさき"
+
+[[case]]
+input = "取引先"
+mode = "hiragana"
+expected = "とりひきさき"
+
+# 先 prefix/セン熟語は維持 (回帰 guard)
+[[case]]
+input = "優先順位"
+mode = "hiragana"
+expected = "ゆうせんじゅんい"
+
+[[case]]
+input = "祖先"
+mode = "hiragana"
+expected = "そせん"
+
+[[case]]
+input = "近場"
+mode = "hiragana"
+expected = "ちかば"

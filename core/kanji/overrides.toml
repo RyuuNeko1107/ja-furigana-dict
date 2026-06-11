@@ -13558,10 +13558,10 @@ reading = "ケイ"
 char = "先"
 default = "さき"
 
-[[kanji.match]]
-prev_char_type = "漢字"
-reading = "セン"
-
+# 旧 prev_char_type=漢字→セン は削除 (2026-06-11、VV diff 由来)。
+# ○先 suffix は さき が生産的多数 (連絡先/取引先/逃亡先/旅先/宛先/送り先/就職先…)。
+# セン になる漢字+先 (優先/祖先/率先) は Lindera 単位で正読み、ルール不要。
+# prefix 先○ (先生/先週/先端/先発) は次の next_char_type=漢字→セン で維持。
 [[kanji.match]]
 next_char_type = "漢字"
 reading = "セン"
