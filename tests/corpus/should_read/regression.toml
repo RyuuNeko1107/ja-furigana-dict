@@ -2441,3 +2441,39 @@ expected = "ごぜん"
 input = "撃破目前"
 mode = "hiragana"
 expected = "げきはもくぜん"
+
+# 2026-06-11 VV比較 round6: 版 suffix=バン / 者 の-context=もの / 姉様 / 嫁 / お経 / 埃
+[[case]]
+input = "劇場版"
+mode = "hiragana"
+expected = "げきじょうばん"
+
+[[case]]
+input = "出版"
+mode = "hiragana"
+expected = "しゅっぱん"
+
+[[case]]
+input = "謎の者"
+mode = "hiragana"
+expected = "なぞのもの"
+
+[[case]]
+input = "配信者"
+mode = "hiragana"
+expected = "はいしんしゃ"
+
+[[case]]
+input = "お姉様"
+mode = "hiragana"
+expected = "おねえさま"
+
+[[case]]
+input = "お経"
+mode = "hiragana"
+expected = "おきょう"
+
+[[case]]
+input = "埃"
+mode = "hiragana"
+expected = "ほこり"
