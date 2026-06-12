@@ -1,0 +1,22 @@
+# VV stream-comments comparison round (seed=20260612)
+#
+# 実データ由来の stream-comments / VV comparison から拾った generic 語彙。
+# VOICEVOX 側の誤読も混ざるため、ja-furigana 側が明確に外していて
+# 副作用が小さい surface だけを exact entry で固定する。
+
+[meta]
+schema_version = "2"
+role = "jukugo"
+description = "VV stream-comments comparison round (seed=20260612)"
+
+[entries]
+"愛して" = "アイシテ"          # 愛してんで 等。 愛しい=いとしい との衝突を避けて exact
+"愛してんで" = "アイシテンデ"  # 後続「んで」境界で 愛し|てんで に割れるのを防ぐ
+"筆使い" = "フデヅカイ"        # 元筆使い 等。 本番で「ひつづかい」
+"じい様" = "ジイサマ"          # 本番で「じいよう」
+"目玉組" = "メダマグミ"        # ゲーム配信の組 suffix。 本番で「めだまくみ」
+"前線組" = "ゼンセングミ"      # 同上。 本番で「ぜんせんくみ」
+"二重丸" = "ニジュウマル"      # 本番で「にじゅうがん」
+"筋肉男" = "キンニクオトコ"    # 本番で「きんにくだん」
+"風神拳" = "フウジンケン"      # 最速風神拳 等。 本番で「ふうしんけん」
+"最速風神拳" = "サイソクフウジンケン"
