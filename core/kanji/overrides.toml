@@ -15777,6 +15777,16 @@ default = "カ"
 char = "箱"
 default = "はこ"
 
+# 名詞+箱 suffix は連濁「ばこ」(貯金箱/救急箱/ゴミ箱、係=がかり/組=ぐみ と同型、
+# 2026-06-12 連濁 round)。ひらがな prev (おもちゃ箱) は jukugo entry 側で対応
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ばこ"
+
+[[kanji.match]]
+prev_char_type = "カタカナ"
+reading = "ばこ"
+
 # 「箸」 default 「はし」 (= 「箸/塗箸/箸置」 訓のみ実用)
 [[kanji]]
 char = "箸"
@@ -17975,9 +17985,12 @@ reading = "シュウ"
 char = "玉"
 default = "たま"
 
+# 名詞+玉 suffix は連濁「だま」が productive (飴玉/善玉/替え玉/10円玉/毛玉)。
+# 音「ギョク」は宝石系の閉集合 → jukugo 側 (宝玉/紅玉)、連濁なしの たま も
+# jukugo 側 (白玉/勾玉) で対応 (2026-06-12 連濁 round、旧 match は prev 漢字 → ギョク)
 [[kanji.match]]
 prev_char_type = "漢字"
-reading = "ギョク"
+reading = "だま"
 
 # 「男」 default 「おとこ」 + prev 漢字 → 「ダン」 (= 長男/次男/美男/善男善女)
 [[kanji]]

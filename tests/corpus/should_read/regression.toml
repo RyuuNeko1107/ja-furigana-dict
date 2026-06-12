@@ -2878,3 +2878,64 @@ expected = "チャレンジくみすうがじょうげんなのかな"
 input = "何人目かの挑戦者"
 mode = "hiragana"
 expected = "なんにんめかのちょうせんしゃ"
+
+# 2026-06-12: 箱/玉 連濁 round ([[kanji]] 箱=ばこ match + 玉 prev漢字 ギョク→だま 反転)
+[[case]]
+input = "ぺこらの貯金箱"
+mode = "hiragana"
+expected = "ぺこらのちょきんばこ"
+
+[[case]]
+input = "おもちゃ箱ひっくり返した"
+mode = "hiragana"
+expected = "おもちゃばこひっくりかえした"
+
+[[case]]
+input = "蜂箱増やせるぞ"
+mode = "hiragana"
+expected = "はちばこふやせるぞ"
+
+[[case]]
+input = "500円玉大量にいる"
+mode = "hiragana"
+expected = "ごひゃくえんだまたいりょうにいる"
+
+[[case]]
+input = "目玉焼きと飴玉"
+mode = "hiragana"
+expected = "めだまやきとあめだま"
+
+[[case]]
+input = "無駄玉撃たなきゃ大丈夫よ"
+mode = "hiragana"
+expected = "むだだまうたなきゃだいじょうぶよ"
+
+[[case]]
+input = "白玉と勾玉"
+mode = "hiragana"
+expected = "しらたまとまがたま"
+
+[[case]]
+input = "ログボでもらえる崩玉"
+mode = "hiragana"
+expected = "ログボでもらえるほうぎょく"
+
+[[case]]
+input = "味玉を追加で注文する"
+mode = "hiragana"
+expected = "あじたまをついかでちゅうもんする"
+
+[[case]]
+input = "スイカ一玉400円だぞ"
+mode = "hiragana"
+expected = "スイカひとたまよんひゃくえんだぞ"
+
+[[case]]
+input = "パチスロ出玉大会"
+mode = "hiragana"
+expected = "パチスロでだまたいかい"
+
+[[case]]
+input = "空箱置いとくくらい?"
+mode = "hiragana"
+expected = "からばこおいとくくらい?"
