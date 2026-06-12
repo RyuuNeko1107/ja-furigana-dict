@@ -3195,6 +3195,11 @@ default = "シツ"
 char = "奏"
 default = "ソウ"
 
+# 「奏ちゃん」 等 人名 suffix = 名前「かなで」 (音乃瀬奏 等)。 奏でる は Lindera 正読
+[[kanji.match]]
+next_starts_any = ["ちゃん", "くん", "さん", "様"]
+reading = "かなで"
+
 [[kanji]]
 char = "始"
 default = "シ"
@@ -4621,6 +4626,10 @@ default = "シン"
 [[kanji]]
 char = "位"
 default = "イ"
+
+[[kanji.match]]
+prev_eq = "の"
+reading = "くらい"
 
 [[kanji]]
 char = "余"
@@ -10532,6 +10541,11 @@ reading = "ま"
 # 「喜びの舞 / 別れの舞 / 春の舞」 等 助詞 prev = 名詞用法「マイ」
 [[kanji.match]]
 prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も"]
+reading = "マイ"
+
+# 「舞さん/舞ちゃん」 等 人名 suffix = 名前「まい」
+[[kanji.match]]
+next_starts_any = ["さん", "ちゃん", "くん", "様"]
 reading = "マイ"
 
 # 「舶」 default 「ハク」 (= 船舶/舶来/舶載)。
@@ -17345,6 +17359,11 @@ default = "カン"
 [[kanji]]
 char = "菅"
 default = "すげ"
+
+# 「菅さん」 = 姓 (政治家等) の「すが」。 菅笠/小菅/菅原 は default すげ・jukugo のまま
+[[kanji.match]]
+next_starts_any = ["さん"]
+reading = "すが"
 
 # 「菖」 default 「ショウ」 (= 菖蒲のみ実用)
 [[kanji]]

@@ -5488,6 +5488,19 @@ reading = "メオト"
 sense = "married-couple-traditional"
 weight = 20
 
+# メオト 読みが固定の複合語 (= 茶碗は連濁するため match rule でなく exact entry)
+[entries."夫婦喧嘩"]
+reading = "フウフゲンカ"
+
+[entries."夫婦漫才"]
+reading = "メオトマンザイ"
+
+[entries."夫婦茶碗"]
+reading = "メオトヂャワン"
+
+[entries."夫婦善哉"]
+reading = "メオトゼンザイ"
+
 [entries."本気"]
 reading = "ホンキ"
 

@@ -1,0 +1,137 @@
+# 人名 suffix round (2026-06-12)
+#
+# 916k corpus の「漢字+さん/ちゃん/くん/様」パターン実測 (誤読 ≈300 weighted) から
+# dict で即効対応できた分の regression。 lib 側 post-pass 設計は
+# workspace の .scratch/name-reading-postpass/PRD.md 参照。
+#
+# fix:
+# - 菅/舞/奏 [[kanji]] block に人名 suffix match (next_starts_any さん/ちゃん/くん/様)
+# - 谷郷/菅田将暉 を personal_names に追加
+# - 白上さん/戌神様 は token 衝突 (上さん/神様 が path を割る) の workaround entry
+# - 夫婦喧嘩 (連濁) + 夫婦漫才/茶碗/善哉 (メオト 複合語)
+
+[meta]
+schema_version = "2"
+role = "corpus"
+description = "人名 suffix round (2026-06-12): 菅/舞/奏 suffix match + 谷郷/菅田 + 白上さん/戌神様 + 夫婦複合"
+
+# ─── 人名 suffix fix ───────────────────────────────────────────
+
+[[case]]
+input = "寝起きの菅さんだった"
+mode = "hiragana"
+expected = "ねおきのすがさんだった"
+
+[[case]]
+input = "舞さんすごい"
+mode = "hiragana"
+expected = "まいさんすごい"
+
+[[case]]
+input = "舞ちゃんかわいい"
+mode = "hiragana"
+expected = "まいちゃんかわいい"
+
+[[case]]
+input = "奏ちゃんきた"
+mode = "hiragana"
+expected = "かなでちゃんきた"
+
+[[case]]
+input = "谷郷さんありがとう"
+mode = "hiragana"
+expected = "たにごうさんありがとう"
+
+[[case]]
+input = "菅田将暉"
+mode = "hiragana"
+expected = "すだまさき"
+
+[[case]]
+input = "白上さんきた"
+mode = "hiragana"
+expected = "しらかみさんきた"
+
+[[case]]
+input = "戌神様まじ天使"
+mode = "hiragana"
+expected = "いぬがみさままじてんし"
+
+# ─── 夫婦 複合語 ───────────────────────────────────────────────
+
+[[case]]
+input = "夫婦漫才おもろ"
+mode = "hiragana"
+expected = "めおとまんざいおもろ"
+
+[[case]]
+input = "夫婦茶碗"
+mode = "hiragana"
+expected = "めおとぢゃわん"
+
+[[case]]
+input = "夫婦善哉"
+mode = "hiragana"
+expected = "めおとぜんざい"
+
+[[case]]
+input = "夫婦喧嘩やめてね"
+mode = "hiragana"
+expected = "ふうふげんかやめてね"
+
+# ─── guard (= 今回 fix の副作用が出やすい既存正読を固定) ─────────
+
+[[case]]
+input = "菅笠"
+mode = "hiragana"
+expected = "すげがさ"
+
+[[case]]
+input = "菅原道真"
+mode = "hiragana"
+expected = "すがわらのみちざね"
+
+[[case]]
+input = "舞台裏"
+mode = "hiragana"
+expected = "ぶたいうら"
+
+[[case]]
+input = "舞ってる"
+mode = "hiragana"
+expected = "まってる"
+
+[[case]]
+input = "喜びの舞"
+mode = "hiragana"
+expected = "よろこびのまい"
+
+[[case]]
+input = "奏でる"
+mode = "hiragana"
+expected = "かなでる"
+
+[[case]]
+input = "演奏会"
+mode = "hiragana"
+expected = "えんそうかい"
+
+[[case]]
+input = "戌神ころね"
+mode = "hiragana"
+expected = "いぬがみころね"
+
+[[case]]
+input = "ドズル社さん"
+mode = "hiragana"
+expected = "ドズルしゃさん"
+
+[[case]]
+input = "お疲れ様"
+mode = "hiragana"
+expected = "おつかれさま"
+
+[[case]]
+input = "夫婦の会話だよ"
+mode = "hiragana"
+expected = "ふうふのかいわだよ"
