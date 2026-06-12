@@ -1,0 +1,24 @@
+# 2026-06-13 dict 改善セッション (916k 本番コーパス VV 比較) の回帰 lock。
+#
+# N:\stream-comments\data の 916k 行から fresh batch-read + VOICEVOX 比較
+# (compare_with_voicevox.py, seed=161803) を回し、 ja-furigana が明確に外していて
+# 副作用が小さい generic 語を採録した分の退行防止。
+# 詳細は core/jukugo/basic/stream_round_20260613.toml 参照。
+
+[[case]]
+input = "数々の挑戦"
+mode = "hiragana"
+expected = "かずかずのちょうせん"
+note = "default すうずう。 数=スウ default 連結ずれ"
+
+[[case]]
+input = "即寝した"
+mode = "hiragana"
+expected = "そくねした"
+note = "default そくしん。 寝=シン default (訓 ね は送り仮名 match のみ)"
+
+[[case]]
+input = "猟友会の方々"
+mode = "hiragana"
+expected = "りょうゆうかいのほうぼう"
+note = "default りょうともかい。 友=とも default"

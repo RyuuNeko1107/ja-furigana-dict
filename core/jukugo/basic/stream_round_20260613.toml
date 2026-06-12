@@ -1,0 +1,15 @@
+# VV stream-comments comparison round (seed=161803)
+#
+# 実データ由来の stream-comments / VV comparison から拾った generic 語彙。
+# VOICEVOX 側の誤読も混ざるため、ja-furigana 側が明確に外していて
+# 副作用が小さい surface だけを exact entry で固定する。
+
+[meta]
+schema_version = "2"
+role = "jukugo"
+description = "VV stream-comments comparison round (seed=161803)"
+
+[entries]
+"数々" = "カズカズ"          # 本番で「すうずう」。数=スウ default の連結ずれ
+"即寝" = "ソクネ"            # 本番で「そくしん」。寝=シン default (訓 ね は送り仮名 match のみ)
+"猟友会" = "リョウユウカイ"    # 本番で「りょうともかい」。友=とも default
