@@ -145,13 +145,20 @@ reading = "ナマ"
 
 ## matcher vocabulary (品詞 不採用)
 
-| 軸 | prev 側 | next 側 | 値型 |
-|---|---|---|---|
-| literal 一致 | `prev_eq` | `next_eq` | string |
-| literal いずれか | `prev_eq_any` | `next_eq_any` | string array |
-| 文字種 | `prev_char_type` | `next_char_type` | "漢字" / "ひらがな" / "カタカナ" / "英数" / "記号" |
+| 軸 | prev 側 | next 側 | next2 (idx+2) | 値型 |
+|---|---|---|---|---|
+| literal 一致 | `prev_eq` | `next_eq` | — | string |
+| literal いずれか | `prev_eq_any` | `next_eq_any` | — | string array |
+| literal 末尾一致 | `prev_ends_any` | — | — | string array |
+| literal 先頭一致 | — | `next_starts` | — | string |
+| literal 先頭いずれか | — | `next_starts_any` | `next2_starts_any` | string array |
+| 文字種 | `prev_char_type` | `next_char_type` | — | "漢字" / "ひらがな" / "カタカナ" / "英数" / "記号" |
+| 述語 | `prev_month` | `next_digit` | — | bool |
 
 **`prev_pos` / `next_pos` (Lindera 品詞) は採用しない** (Lindera 撤廃路線)。
+正は lib `scoring/format.rs` の `MatchCondition` (= `tools/validate.py` の
+`MATCH_CONDITION_KEYS` と 3 点同期。 key の typo は validate が error にする —
+lib は未知 field を黙って無視し、 条件が空の match は常時発火に化けるため)。
 
 ## bracket notation (= 0.1.0 から書ける、 lib は strip / 無視、 0.2.0 で活用)
 

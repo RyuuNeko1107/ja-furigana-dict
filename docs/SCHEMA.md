@@ -107,6 +107,16 @@ reading = "シタテ"
 **Lindera 品詞 matcher (`pos`) は不採用** (Lindera 撤廃路線)、 「名詞の後 / 動詞の後」
 のような汎用条件は `prev_eq_any = ["階段", "段", "梯子"]` 等の literal 列挙で代用。
 
+### entry の並び順と TOML 構造の注意
+
+`[entries."X"]` (detailed entry) より **後** に bare simple entry
+(`"福岡" = "フクオカ"`) を書くと、 TOML 仕様上それは直近 table (= X 本体 or その
+match/alt block) の field になり root entry にならない。 lib は非 ASCII string key を
+top-level entry として救済する (**hoist**、 explicit entry 優先) ため動作はするが、
+tomllib 準拠 tool からは見えず validate も検査できないため、 **`tools/validate.py` は
+この構造を error にする**。 simple entry は必ず file 先頭の `[entries]` zone
+(= 最初の detailed section より前) に書くこと。
+
 ### intonation bracket notation (forward compat、 0.2.0 で activate)
 
 reading 内に `[` / `]` / `/` の bracket marker を **0.1.0 から書ける** (= forward
@@ -168,6 +178,15 @@ last_digit = [3]
 suffix = "ボン"
 # === end: 本 ===
 ```
+
+### counter の `kanji_numeral` flag (lib 0.1.9+)
+
+`[counter."X"]` table に `kanji_numeral = true` を書くと、 **漢数字 + 助数詞の
+bare 形** (「五匹」 「六畳」) も counter 化される (default は false = 「5匹」 等の
+算用数字と 「一個目」 等の recursive 形のみ)。 「一日中」 の 「一日」 のような
+非 counter 用法と衝突しない助数詞だけ opt-in すること。 音便 (連濁 / 促音) は
+lib 側 euphony が自動適用する。 flat 形式 (`simple.toml` の `"X" = "ヨミ"`) では
+書けないため、 opt-in する場合は `objects.toml` 等の table 形式へ移す。
 
 **適用先**:
 - `rules/numbers/counters/{objects,places,percent,time}.toml` — 各 counter (`本` / `匹` 等)

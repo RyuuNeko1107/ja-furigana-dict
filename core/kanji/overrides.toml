@@ -4444,9 +4444,10 @@ default = "おおかみ"
 prev_char_type = "漢字"
 reading = "ロウ"
 
+# 「盃」 default 「さかずき」 (= bare 訓 支配的。 音「ハイ」 は 乾杯=杯 側 / 数詞+盃 は counter)
 [[kanji]]
 char = "盃"
-default = "ハイ"
+default = "さかずき"
 
 [[kanji]]
 char = "矩"
@@ -5684,14 +5685,11 @@ default = "ガ"
 char = "留"
 default = "リュウ"
 
+# 「畳」 default 「たたみ」 (= bare 訓 支配的。 六畳 等の助数詞は counter rule、
+# 畳語/重畳 等の音「ジョウ」 は Lindera whole-token / jukugo が担う)
 [[kanji]]
 char = "畳"
-default = "ジョウ"
-
-# 「畳は / 畳が / 畳を / 畳に / 畳の / 畳で / 畳と / 畳も」 = 名詞用法、 訓「たたみ」
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や"]
-reading = "たたみ"
+default = "たたみ"
 
 [[kanji]]
 char = "疾"
@@ -9853,10 +9851,10 @@ default = "シュウ"
 char = "董"
 default = "トウ"
 
-# 「襖」 default 「オウ」 (= 襖障子/襖)、 「襖」 = フスマ は jukugo 個別。
+# 「襖」 default 「ふすま」 (= bare 訓 支配的。 襖障子 等の音は whole-token 側)
 [[kanji]]
 char = "襖"
-default = "オウ"
+default = "ふすま"
 
 # 「誼」 default 「ギ」 (= 情誼/友誼/誼)。
 [[kanji]]
@@ -11218,15 +11216,11 @@ char = "墓"
 default = "はか"
 
 
-# 「墨」 default 「ボク」 (= 墨絵/水墨画/筆墨/墨守/白墨)。
-# 単独 + 助詞接続 → 「すみ」 (= 「墨が/墨の」 等)
+# 「墨」 default 「すみ」 (= bare 訓 支配的。 水墨画/墨守/白墨 等の音「ボク」 は
+# Lindera whole-token / jukugo が担う)
 [[kanji]]
 char = "墨"
-default = "ボク"
-
-[[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
-reading = "すみ"
+default = "すみ"
 
 # 「寮」 default 「リョウ」 (= 寮歌/学生寮/寮母/独身寮/寮内)。
 # unihan default 「つかさ」 は古語、 「司」 と被る
@@ -17200,10 +17194,10 @@ default = "ヘン"
 char = "篠"
 default = "しの"
 
-# 「簾」 default 「レン」 (= 御簾/簾中、 音読み)
+# 「簾」 default 「すだれ」 (= bare 訓 支配的。 暖簾/御簾 は whole-token / jukugo 側)
 [[kanji]]
 char = "簾"
-default = "レン"
+default = "すだれ"
 
 # 「籾」 default 「もみ」 (= 「籾/籾殻」 訓のみ、 国字)
 [[kanji]]

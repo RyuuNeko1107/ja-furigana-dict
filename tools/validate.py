@@ -108,6 +108,63 @@ def validate_bracket_syntax(reading: str) -> tuple[list[str], list[str]]:
     return errors, warnings
 
 
+# matcher condition keys (= lib `scoring/format.rs` の MatchCondition と同期させること)。
+#
+# lib 側は serde が未知 field を黙って無視し、 全条件が空の match block は
+# 「無条件 always-match」 になるため、 condition key の typo (例: next_start_any)
+# は **常時発火する match に化ける**。 lib では検出できないので、 ここが唯一の gate。
+MATCH_CONDITION_KEYS = {
+    'prev_eq', 'prev_eq_any', 'next_eq', 'next_eq_any',
+    'prev_ends_any', 'next_starts', 'next_starts_any', 'next2_starts_any',
+    'prev_char_type', 'next_char_type',
+    'prev_month', 'next_digit',
+}
+MATCH_BLOCK_KEYS = MATCH_CONDITION_KEYS | {'reading'}
+ALT_BLOCK_KEYS = MATCH_CONDITION_KEYS | {'reading', 'sense', 'weight'}
+# detailed entry table 直下に置ける field。 これ以外の bare key が居る場合、
+# 「[entries."X"] section の後に root 向け entry を書いてしまい X の迷子 field に
+# なっている」 TOML 構造ミス (lib serde は黙って捨てる = entry が辞書に存在しない)
+DETAILED_ENTRY_KEYS = {'reading', 'match', 'alt'}
+
+
+def check_block_keys(path: Path, errors: Errors, label: str, block: dict, allowed: set) -> None:
+    """match / alt block の field 名を whitelist 検査する。
+
+    未知 key は lib serde が黙って無視するため、 typo は error として落とす。"""
+    unknown = sorted(set(block.keys()) - allowed)
+    if unknown:
+        errors.add_for(
+            path,
+            f"{label}: 未知の field {unknown} (matcher vocabulary に無い key は lib が"
+            f"黙って無視し、 条件が空の match は常時発火に化けます。 typo を確認)",
+        )
+
+
+def validate_alt_blocks(path: Path, errors: Errors, label: str, alts, warnings: Warnings | None = None) -> None:
+    """`[[entries."X".alt]]` / `[[kanji.alt]]` (ADR-0004) の検証。
+
+    reading (必須、 kana) + sense (optional string) + weight (optional 0–100 int)
+    + matcher conditions。"""
+    if not alts:
+        return
+    if not isinstance(alts, list):
+        errors.add_for(path, f"{label}: alt field は array of table (現在 {type(alts).__name__})")
+        return
+    for i, a in enumerate(alts):
+        if not isinstance(a, dict):
+            errors.add_for(path, f"{label}: alt[{i}] が table ではない")
+            continue
+        a_reading = a.get('reading')
+        if not isinstance(a_reading, str):
+            errors.add_for(path, f"{label}: alt[{i}] に reading field 不在 (= 必須、 string)")
+            continue
+        check_reading(path, errors, f"{label} alt[{i}]", a_reading, warnings)
+        weight = a.get('weight')
+        if weight is not None and (not isinstance(weight, int) or isinstance(weight, bool) or not 0 <= weight <= 100):
+            errors.add_for(path, f"{label}: alt[{i}] weight は 0–100 の整数 (現在 {weight!r})")
+        check_block_keys(path, errors, f"{label} alt[{i}]", a, ALT_BLOCK_KEYS)
+
+
 def check_reading(path: Path, errors: Errors, label: str, reading: str, warnings: Warnings | None = None) -> None:
     """reading の kana check + bracket 構文 check を統合的に呼ぶヘルパ。
 
@@ -197,6 +254,17 @@ def validate_lookup(path: Path, errors: Errors, warnings: Warnings | None = None
                     )
                     continue
                 check_reading(path, errors, f"'{surface}' match[{i}]", m_reading, warnings)
+                check_block_keys(path, errors, f"'{surface}' match[{i}]", m, MATCH_BLOCK_KEYS)
+            validate_alt_blocks(path, errors, f"'{surface}'", value.get('alt'), warnings)
+            stray = sorted(set(value.keys()) - DETAILED_ENTRY_KEYS)
+            if stray:
+                errors.add_for(
+                    path,
+                    f"'{surface}': detailed entry 直下に迷子 field {stray[:8]}"
+                    f"{' ...' if len(stray) > 8 else ''} (計 {len(stray)} 件)。 "
+                    f"[entries.\"{surface}\"] section の後に root 向け bare entry を"
+                    f"書いていませんか (lib は黙って捨てます)",
+                )
             flat[surface] = reading
             continue
         # その他 (= bool / array / etc) は型不一致として error
@@ -577,6 +645,8 @@ def validate_kanji_blocks(path: Path, errors: Errors, warnings: Warnings | None 
                 )
                 continue
             check_reading(path, errors, f"[[kanji]] char={char!r} match[{j}]", m_reading, warnings)
+            check_block_keys(path, errors, f"[[kanji]] char={char!r} match[{j}]", m, MATCH_BLOCK_KEYS)
+        validate_alt_blocks(path, errors, f"[[kanji]] char={char!r}", b.get("alt"), warnings)
         flat[char] = default
     return flat
 

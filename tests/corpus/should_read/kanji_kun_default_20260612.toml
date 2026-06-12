@@ -1,0 +1,107 @@
+# 訓 default flip round (2026-06-12)
+#
+# 経緯: general.toml の detailed section 後に追記された bare entry 群は TOML 仕様上
+# 直近 table の迷子 field になるが、 lib の hoist 救済で実際は機能していた。
+# validate.py の構造検査強化 (DETAILED_ENTRY_KEYS) に伴い root [entries] へ正規化した際、
+# 1 字 entry (墨/畳/盃/簾/襖 = 訓 override) は [[kanji]] block default flip に置換した。
+# 本 file はその挙動を固定する (= 916k corpus A/B diff ゼロを確認済)。
+#
+# 畳 は counter rule (kanji_numeral opt-in) も同時に整備 (六畳=ろくじょう)。
+
+[meta]
+schema_version = "2"
+role = "corpus"
+description = "訓 default flip (墨/畳/盃/簾/襖) + 畳 counter + 声高 の regression"
+
+# ─── bare = 訓 ───────────────────────────────────────────────
+
+[[case]]
+input = "いかがわしい墨"
+mode = "hiragana"
+expected = "いかがわしいすみ"
+
+[[case]]
+input = "いか墨"
+mode = "hiragana"
+expected = "いかすみ"
+
+[[case]]
+input = "畳"
+mode = "hiragana"
+expected = "たたみ"
+
+[[case]]
+input = "盃"
+mode = "hiragana"
+expected = "さかずき"
+
+[[case]]
+input = "簾"
+mode = "hiragana"
+expected = "すだれ"
+
+[[case]]
+input = "襖"
+mode = "hiragana"
+expected = "ふすま"
+
+# ─── 音 compound guard (= flip の副作用が出ないこと) ─────────────
+
+[[case]]
+input = "水墨画"
+mode = "hiragana"
+expected = "すいぼくが"
+
+[[case]]
+input = "墨守"
+mode = "hiragana"
+expected = "ぼくしゅ"
+
+[[case]]
+input = "白墨"
+mode = "hiragana"
+expected = "はくぼく"
+
+[[case]]
+input = "石畳"
+mode = "hiragana"
+expected = "いしだたみ"
+
+[[case]]
+input = "畳んで"
+mode = "hiragana"
+expected = "たたんで"
+
+[[case]]
+input = "畳み掛ける"
+mode = "hiragana"
+expected = "たたみかける"
+
+[[case]]
+input = "暖簾"
+mode = "hiragana"
+expected = "のれん"
+
+# ─── 畳 counter (kanji_numeral opt-in) ──────────────────────────
+
+[[case]]
+input = "六畳"
+mode = "hiragana"
+expected = "ろくじょう"
+
+[[case]]
+input = "4畳半"
+mode = "hiragana"
+expected = "よんじょうはん"
+
+[[case]]
+input = "千畳敷"
+mode = "hiragana"
+expected = "せんじょうじき"
+
+# ─── 声高 (= stream_round の こわだか が勝つこと) ─────────────────
+
+[[case]]
+input = "声高に"
+mode = "hiragana"
+expected = "こわだかに"

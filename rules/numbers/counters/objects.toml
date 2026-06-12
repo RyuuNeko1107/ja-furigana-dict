@@ -385,3 +385,9 @@ sokuonize = true
 
 # inline test は隣接の `objects.test.toml` に分離 (CI 専用、 release tar 除外、
 # runtime memory には載らない)。 contributor は `<name>.test.toml` ペアで追記する。
+
+# === begin: 畳 ===
+[counter."畳"]
+default = "ジョウ"
+kanji_numeral = true  # 六畳/八畳 → ろくじょう/はちじょう (元 simple.toml、 漢数字 bare 対応で移動)
+# === end: 畳 ===
