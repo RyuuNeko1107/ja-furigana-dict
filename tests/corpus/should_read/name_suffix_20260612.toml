@@ -135,3 +135,20 @@ expected = "おつかれさま"
 input = "夫婦の会話だよ"
 mode = "hiragana"
 expected = "ふうふのかいわだよ"
+
+# ─── 水田 (= default 田んぼ / suffix 文脈のみ姓、 2026-06-12 追補) ─────
+
+[[case]]
+input = "お米は水田じゃないと"
+mode = "hiragana"
+expected = "おこめはすいでんじゃないと"
+
+[[case]]
+input = "水田さん"
+mode = "hiragana"
+expected = "みずたさん"
+
+[[case]]
+input = "水田わさび"
+mode = "hiragana"
+expected = "みずたわさび"
