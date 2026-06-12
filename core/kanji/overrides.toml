@@ -6783,6 +6783,11 @@ prev_ends_any = [
   "暗い",
 ]
 
+# 「○畳 + 間」 (= 八畳間 / 六畳間 の部屋) → マ
+[[kanji.match]]
+reading = "マ"
+prev_ends_any = ["畳"]
+
 # 「○○の間 + 助詞」 → アイダ (= ギャルの間では / 仲間の間 / 友達の間 等、 round 36)
 [[kanji.match]]
 reading = "アイダ"

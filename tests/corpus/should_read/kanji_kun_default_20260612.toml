@@ -99,6 +99,16 @@ input = "千畳敷"
 mode = "hiragana"
 expected = "せんじょうじき"
 
+[[case]]
+input = "八畳間"
+mode = "hiragana"
+expected = "はちじょうま"
+
+[[case]]
+input = "時間"
+mode = "hiragana"
+expected = "じかん"
+
 # ─── 声高 (= stream_round の こわだか が勝つこと) ─────────────────
 
 [[case]]
