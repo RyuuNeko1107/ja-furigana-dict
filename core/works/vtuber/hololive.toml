@@ -47,9 +47,6 @@ description = "ホロライブプロダクション (カバー): タレント名
 "癒月" = "ゆづき"      # 癒月ちょこ (default ゆげつ)
 "水宮" = "みずみや"    # 水宮枢 (default みずきゅう)
 
-# 人名+suffix の token 衝突 workaround (= lib post-pass 設計までの暫定、
-# workspace の .scratch/name-reading-postpass/PRD.md 参照)。
-# 「白上さん」 は 「上さん (かみさん)」、 「戌神様」 は 「神様」 が path を
-# 割って姓 entry が負ける (bare 白上 / 戌神ころね は正読)
-"白上さん" = "しらかみさん"  # 白上フブキ
-"戌神様" = "いぬがみさま"    # 戌神ころね
+# (旧) 白上さん/戌神様 の suffix workaround entry は lib 0.1.10 の
+# NameBoundaryPass (人名+敬称 token 衝突補正) が引き受けたため削除済。
+# 「白上さん」 は IPADIC 姓、 「戌神様」 は上記 戌神 entry が結合照会の source
