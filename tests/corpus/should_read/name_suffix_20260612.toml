@@ -199,3 +199,41 @@ expected = "たけとよちょう"
 input = "武豊を信じろ"
 mode = "hiragana"
 expected = "たけゆたかをしんじろ"
+
+# ─── 東 (= default トウ 維持 + 姓/方角 match、 2026-06-12 追補。
+#      default 訓 flip は 東地/東仙/テレ東 等の音複合 regression で却下) ─────
+
+[[case]]
+input = "東さん"
+mode = "hiragana"
+expected = "ひがしさん"
+
+[[case]]
+input = "東地さん"
+mode = "hiragana"
+expected = "とうちさん"
+
+[[case]]
+input = "そっち東"
+mode = "hiragana"
+expected = "そっちひがし"
+
+[[case]]
+input = "テレ東"
+mode = "hiragana"
+expected = "テレとう"
+
+[[case]]
+input = "東軍"
+mode = "hiragana"
+expected = "とうぐん"
+
+[[case]]
+input = "東野さん"
+mode = "hiragana"
+expected = "ひがしのさん"
+
+[[case]]
+input = "東の空"
+mode = "hiragana"
+expected = "ひがしのそら"
