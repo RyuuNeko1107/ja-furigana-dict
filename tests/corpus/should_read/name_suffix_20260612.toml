@@ -152,3 +152,50 @@ expected = "みずたさん"
 input = "水田わさび"
 mode = "hiragana"
 expected = "みずたわさび"
+
+# ─── 人名 entry の一般語衝突 audit (2026-06-12 追補) ─────────────
+
+[[case]]
+input = "御手洗に行く"
+mode = "hiragana"
+expected = "おてあらいにいく"
+
+[[case]]
+input = "御手洗団子"
+mode = "hiragana"
+expected = "みたらしだんご"
+
+[[case]]
+input = "御手洗さん"
+mode = "hiragana"
+expected = "みたらいさん"
+
+[[case]]
+input = "四月一日から新年度"
+mode = "hiragana"
+expected = "しがつついたちからしんねんど"
+
+[[case]]
+input = "四月一日さん"
+mode = "hiragana"
+expected = "わたぬきさん"
+
+[[case]]
+input = "孫子の代まで"
+mode = "hiragana"
+expected = "まごこのだいまで"
+
+[[case]]
+input = "孫子の兵法"
+mode = "hiragana"
+expected = "そんしのへいほう"
+
+[[case]]
+input = "武豊町"
+mode = "hiragana"
+expected = "たけとよちょう"
+
+[[case]]
+input = "武豊を信じろ"
+mode = "hiragana"
+expected = "たけゆたかをしんじろ"
