@@ -1,0 +1,140 @@
+# match_hits condition weighting round (2026-06-12)
+#
+# lib 0.1.11 の match_hits tie-break ([[match]] / [[kanji.match]] の hit condition 数を
+# Score::match_hits に重み付き累積) で改善した読みの固定 + 連動 dict sweep
+# (複数人/村社会/期生 等の entry 追加、 頭身/以外 の等化 match) の regression。
+# 916k corpus A/B diff (217 行) の実測由来。 経緯は workspace の
+# .scratch/match-hits-condition-weighting/ 参照。
+#
+# 注意: 「今日中/5日間/正体現した」 等の改善 case は lib 0.1.11+ (match_hits 累積)
+# が前提。 lib 0.1.10 以前 + 本 dict では fail する (CI は validate のみなので影響なし)。
+
+[meta]
+schema_version = "2"
+role = "corpus"
+description = "match_hits tie-break round (2026-06-12): broad match 改善固定 + 連動 sweep entry"
+
+# ─── lib match_hits tie-break による改善の固定 ─────────────────
+
+[[case]]
+input = "今日中に売らないと"
+mode = "hiragana"
+expected = "きょうちゅうにうらないと"
+
+[[case]]
+input = "本日中にファームへ"
+mode = "hiragana"
+expected = "ほんじつちゅうにファームへ"
+
+[[case]]
+input = "稼ぐネタは当日中に使い切らないと"
+mode = "hiragana"
+expected = "かせぐネタはとうじつちゅうにつかいきらないと"
+
+[[case]]
+input = "楽しい5日間だった"
+mode = "hiragana"
+expected = "たのしいいつかかんだった"
+
+[[case]]
+input = "濃い4日間だった"
+mode = "hiragana"
+expected = "こいよっかかんだった"
+
+[[case]]
+input = "その人7日間逮捕"
+mode = "hiragana"
+expected = "そのひとなのかかんたいほ"
+
+[[case]]
+input = "正体現したね"
+mode = "hiragana"
+expected = "しょうたいあらわしたね"
+
+[[case]]
+input = "この漂着物も船から来てるのか"
+mode = "hiragana"
+expected = "このひょうちゃくぶつもふねからきてるのか"
+
+[[case]]
+input = "コイン投入口クリックできたぞ"
+mode = "hiragana"
+expected = "コインとうにゅうこうクリックできたぞ"
+
+[[case]]
+input = "個人間で賭け事すればまくれる"
+mode = "hiragana"
+expected = "こじんかんでかけごとすればまくれる"
+
+[[case]]
+input = "何回戦ってもカード出ないからね"
+mode = "hiragana"
+expected = "なんかいせんってもカードでないからね"
+
+[[case]]
+input = "アルケミストの制作物見直し"
+mode = "hiragana"
+expected = "アルケミストのせいさくぶつみなおし"
+
+# ─── 連動 dict sweep entry の regression ───────────────────────
+
+[[case]]
+input = "ノーマルが複数人でもうまいんじゃないか"
+mode = "hiragana"
+expected = "ノーマルがふくすうにんでもうまいんじゃないか"
+
+[[case]]
+input = "村社会じゃし"
+mode = "hiragana"
+expected = "むらしゃかいじゃし"
+
+[[case]]
+input = "一手間あるのか"
+mode = "hiragana"
+expected = "ひとてまあるのか"
+
+[[case]]
+input = "さすが0期生やね"
+mode = "hiragana"
+expected = "さすがぜろきせいやね"
+
+[[case]]
+input = "チャモロ最後尾でいいかも"
+mode = "hiragana"
+expected = "チャモロさいこうびでいいかも"
+
+[[case]]
+input = "ホンマ何度目だ"
+mode = "hiragana"
+expected = "ホンマなんどめだ"
+
+[[case]]
+input = "年代物すぎる"
+mode = "hiragana"
+expected = "ねんだいものすぎる"
+
+[[case]]
+input = "オリジナルってあの3頭身の昔の?"
+mode = "hiragana"
+expected = "オリジナルってあのさんとうしんのむかしの?"
+
+[[case]]
+input = "種植える所以外は耕さなくていいよ"
+mode = "hiragana"
+expected = "たねうえるところいがいはたがやさなくていいよ"
+
+[[case]]
+input = "京都郊外の山岳地帯"
+mode = "hiragana"
+expected = "きょうとこうがいのさんがくちたい"
+
+[[case]]
+input = "桃鈴家の絆はある?"
+mode = "hiragana"
+expected = "ももすずけのきずなはある?"
+
+# 百人力 entry の固定 (算用数字形 「100人力」 は 100|人|力 split のままで許容)
+[[case]]
+input = "味方につけたら百人力じゃない?"
+mode = "hiragana"
+expected = "みかたにつけたらひゃくにんりきじゃない?"
