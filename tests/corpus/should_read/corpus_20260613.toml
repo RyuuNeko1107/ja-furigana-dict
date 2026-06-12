@@ -22,3 +22,22 @@ input = "猟友会の方々"
 mode = "hiragana"
 expected = "りょうゆうかいのほうぼう"
 note = "default りょうともかい。 友=とも default"
+
+# ─── 「何X目」 系 (何=なん + 助数詞 + 目=メ) ───
+[[case]]
+input = "何年目だっけ"
+mode = "hiragana"
+expected = "なんねんめだっけ"
+note = "default なんねんもく。 lib counter が「何」を数詞と見ず目=もく化"
+
+[[case]]
+input = "何回目の正直"
+mode = "hiragana"
+expected = "なんかいめのしょうじき"
+note = "default なんかいもく"
+
+[[case]]
+input = "何手目"
+mode = "hiragana"
+expected = "なんてめ"
+note = "default なにしゅもく。 手=て (将棋)"
