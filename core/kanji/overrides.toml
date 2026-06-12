@@ -4654,8 +4654,21 @@ char = "便"
 default = "ベン"
 
 [[kanji]]
+# 「係」: suffix 用法 (○○係 = かかり/がかり) が productive に支配的なので訓 default。
+# 音「ケイ」 は閉じた jukugo 集合 (関係/係数/係留/係争/連係 = general.toml に entry 化、
+# 関係者/無関係 等は 関係 entry の連結で自動)。 係員/係長 は IPADIC compound (band 150)
+# が カカリ で拾う。 動詞 「係わる/係る」 は Lindera token のまま (= かかわる/かかる)。
+# (2026-06-12 係 flip round、 訓 default flip 系列 = 夏/油/息 等と同パターン)
 char = "係"
-default = "ケイ"
+default = "かかり"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "がかり"
+
+[[kanji.match]]
+prev_char_type = "カタカナ"
+reading = "がかり"
 
 [[kanji]]
 char = "保"

@@ -2689,3 +2689,131 @@ expected = "せばめる"
 input = "細胞"
 mode = "hiragana"
 expected = "さいぼう"
+
+# 2026-06-12: VV comparison 2026-06-09 由来の低リスク generic 語彙
+[[case]]
+input = "盗撮してる笑"
+mode = "hiragana"
+expected = "とうさつしてるわらい"
+
+[[case]]
+input = "出来そう?"
+mode = "hiragana"
+expected = "できそう?"
+
+[[case]]
+input = "一桁目の計算だけで答え分かる"
+mode = "hiragana"
+expected = "ひとけためのけいさんだけでこたえわかる"
+
+[[case]]
+input = "上の位から計算しよう"
+mode = "hiragana"
+expected = "うえのくらいからけいさんしよう"
+
+[[case]]
+input = "顔良ッ!"
+mode = "hiragana"
+expected = "かおよっ!"
+
+# 2026-06-12: 実データ stream-comments / VV comparison 由来 batch
+[[case]]
+input = "みこち愛してんで"
+mode = "hiragana"
+expected = "みこちあいしてんで"
+
+[[case]]
+input = "アサリ入れる係就任しました"
+mode = "hiragana"
+expected = "アサリいれるかかりしゅうにんしました"
+
+[[case]]
+input = "じゃあ私は応援係で"
+mode = "hiragana"
+expected = "じゃあわたしはおうえんがかりで"
+
+[[case]]
+input = "元筆使いです"
+mode = "hiragana"
+expected = "もとふでづかいです"
+
+[[case]]
+input = "じい様の様子"
+mode = "hiragana"
+expected = "じいさまのようす"
+
+[[case]]
+input = "目玉組は昔"
+mode = "hiragana"
+expected = "めだまぐみはむかし"
+
+[[case]]
+input = "前線組怖い"
+mode = "hiragana"
+expected = "ぜんせんぐみこわい"
+
+[[case]]
+input = "二重丸です"
+mode = "hiragana"
+expected = "にじゅうまるです"
+
+[[case]]
+input = "筋肉男はやられてもいい"
+mode = "hiragana"
+expected = "きんにくおとこはやられてもいい"
+
+[[case]]
+input = "最速風神拳誰やねん"
+mode = "hiragana"
+expected = "さいそくふうじんけんだれやねん"
+
+# 2026-06-12: 係 default flip (ケイ → かかり、 がかり match + けい jukugo 閉集合)
+[[case]]
+input = "会計係は誰がやる?"
+mode = "hiragana"
+expected = "かいけいがかりはだれがやる?"
+
+[[case]]
+input = "入れる係と応援係に分かれよう"
+mode = "hiragana"
+expected = "いれるかかりとおうえんがかりにわかれよう"
+
+[[case]]
+input = "ツッコミ係がいない"
+mode = "hiragana"
+expected = "ツッコミがかりがいない"
+
+[[case]]
+input = "受付係に聞いてください"
+mode = "hiragana"
+expected = "うけつけがかりにきいてください"
+
+[[case]]
+input = "係の人を呼んでくる"
+mode = "hiragana"
+expected = "かかりのひとをよんでくる"
+
+[[case]]
+input = "係長に報告した"
+mode = "hiragana"
+expected = "かかりちょうにほうこくした"
+
+[[case]]
+input = "そんなの関係ないでしょ"
+mode = "hiragana"
+expected = "そんなのかんけいないでしょ"
+
+[[case]]
+input = "人間関係が一番難しい"
+mode = "hiragana"
+expected = "にんげんかんけいがいちばんむずかしい"
+
+[[case]]
+input = "係数を掛けて計算する"
+mode = "hiragana"
+expected = "けいすうをかけてけいさんする"
+
+[[case]]
+input = "命に係わる問題だ"
+mode = "hiragana"
+expected = "いのちにかかわるもんだいだ"
