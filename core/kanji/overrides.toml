@@ -13569,11 +13569,27 @@ default = "さ"
 [[kanji]]
 char = "組"
 default = "くみ"
-# 動詞「組む/組んで/組める/組まない/組もう」= く。連用「組み立て」と noun「組/赤組/組が」
+# 動詞「組む/組んで/組める/組まない/組もう」= く。連用「組み立て」と noun「組/組が」
 # は default くみ。(★kanji_dense VV 2026-06: noun 組 が動詞語幹 く に誤読していた)
 [[kanji.match]]
 next_starts_any = ["む", "ん", "め", "ま", "も"]
 reading = "く"
+
+# 漢数字+組 = counter「くみ」(三年二組/一組/二組)。下の 連濁 ぐみ match より先に置く
+[[kanji.match]]
+prev_ends_any = ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "何", "数"]
+reading = "くみ"
+
+# 名詞+組 suffix は連濁「ぐみ」(雪組/鬼組/目玉組/前線組/ニワトリ組、係=がかり と同型)。
+# 音「ソ」系 (組織/組合/労組/改組) は jukugo / Lindera compound (1 edge) が
+# edge_count で勝つため影響なし (2026-06-12 組 連濁 round)
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ぐみ"
+
+[[kanji.match]]
+prev_char_type = "カタカナ"
+reading = "ぐみ"
 
 # 「繰」 default 「く」 (= 動詞「繰る/繰り出す/繰り返す」 全活用)。
 # unihan 「くる」 (終止形) は okurigana「る/ら/り/っ/れ/ろ」 と二重連結する → default 訂正。

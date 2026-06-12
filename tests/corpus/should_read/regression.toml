@@ -2817,3 +2817,64 @@ expected = "けいすうをかけてけいさんする"
 input = "命に係わる問題だ"
 mode = "hiragana"
 expected = "いのちにかかわるもんだいだ"
+
+# 2026-06-12: 組 連濁 round ([[kanji]] 組 に ぐみ match + 漢数字 counter 保護)
+[[case]]
+input = "現地組すげえな"
+mode = "hiragana"
+expected = "げんちぐみすげえな"
+
+[[case]]
+input = "はーい二人組つくってー"
+mode = "hiragana"
+expected = "はーいふたりぐみつくってー"
+
+[[case]]
+input = "ニワトリ組とカボチャ組に分けよう"
+mode = "hiragana"
+expected = "ニワトリぐみとカボチャぐみにわけよう"
+
+[[case]]
+input = "新撰組の隊士"
+mode = "hiragana"
+expected = "しんせんぐみのたいし"
+
+[[case]]
+input = "三年二組の教室"
+mode = "hiragana"
+expected = "さんねんにくみのきょうしつ"
+
+[[case]]
+input = "二組に分かれて練習しよう"
+mode = "hiragana"
+expected = "にくみにわかれてれんしゅうしよう"
+
+[[case]]
+input = "組んでやろうぜ"
+mode = "hiragana"
+expected = "くんでやろうぜ"
+
+[[case]]
+input = "組織を立て直す"
+mode = "hiragana"
+expected = "そしきをたてなおす"
+
+[[case]]
+input = "労働組合に入った"
+mode = "hiragana"
+expected = "ろうどうくみあいにはいった"
+
+[[case]]
+input = "星組のトップスター"
+mode = "hiragana"
+expected = "ほしぐみのトップスター"
+
+[[case]]
+input = "チャレンジ組数が上限なのかな"
+mode = "hiragana"
+expected = "チャレンジくみすうがじょうげんなのかな"
+
+[[case]]
+input = "何人目かの挑戦者"
+mode = "hiragana"
+expected = "なんにんめかのちょうせんしゃ"
