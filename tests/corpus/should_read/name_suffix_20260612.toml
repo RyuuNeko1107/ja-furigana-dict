@@ -237,3 +237,71 @@ expected = "ひがしのさん"
 input = "東の空"
 mode = "hiragana"
 expected = "ひがしのそら"
+
+# ─── bare 末尾 / prev 文脈の訓切替 7 字 (2026-06-12 pattern sweep) ─────
+# 「default 音 + 助詞 match 訓」型 52 字を機械抽出 → 頻度実測で上位 7 字を fix
+
+[[case]]
+input = "双子の姉"
+mode = "hiragana"
+expected = "ふたごのあね"
+
+[[case]]
+input = "PON姉"
+mode = "hiragana"
+expected = "PONねえ"
+
+[[case]]
+input = "義姉"
+mode = "hiragana"
+expected = "ぎし"
+
+[[case]]
+input = "日本の星"
+mode = "hiragana"
+expected = "にほんのほし"
+
+[[case]]
+input = "火星"
+mode = "hiragana"
+expected = "かせい"
+
+[[case]]
+input = "俺の嫁"
+mode = "hiragana"
+expected = "おれのよめ"
+
+[[case]]
+input = "僕は影"
+mode = "hiragana"
+expected = "ぼくはかげ"
+
+[[case]]
+input = "影響"
+mode = "hiragana"
+expected = "えいきょう"
+
+[[case]]
+input = "電子レンジ(仮)"
+mode = "hiragana"
+expected = "でんしレンジ(かり)"
+
+[[case]]
+input = "仮面"
+mode = "hiragana"
+expected = "かめん"
+
+[[case]]
+input = "フェニ尾"
+mode = "hiragana"
+expected = "フェニお"
+
+[[case]]
+input = "その指"
+mode = "hiragana"
+expected = "そのゆび"
+
+[[case]]
+input = "指示"
+mode = "hiragana"
+expected = "しじ"
