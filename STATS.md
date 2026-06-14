@@ -29,8 +29,8 @@ git に commit されている master HEAD の状態を基準にする。
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **743** | **20 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,771** | **180 KB** |
-| [**異体字**](#異体字) (`core/compat.toml`) | **435** | **6.1 KB** |
-| [**エンジンルール**](#エンジンルール) (`rules/`) | **226** | **15 KB** |
+| [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
+| [**エンジンルール**](#エンジンルール) (`rules/`) | **661** | **21 KB** |
 | **合計** | **48,791** | **1.13 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
@@ -244,9 +244,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 
 `core/compat.toml` — 異体字 → 標準字の正規化マッピング (例: 髙→高)。 reading lookup 前の前処理として lib が参照。
 
-| ファイル | エントリ数 | サイズ | 用途 |
-|---|---:|---:|---|
-| [`core/compat.toml`](core/compat.toml) | 435 | 6.1 KB | 異体字 → 標準字の正規化マップ (髙→高 等、 lib Step 1 で入力テキストを正規化) |
+(空)
 <!-- AUTO-GENERATED:CORE:END -->
 
 ### エンジンルール
@@ -254,7 +252,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 `rules/` — エンジン挙動 (助数詞 / 文脈 / 後処理 等) を制御するルール群。 lib コードに embed されるのではなく、 ここで宣言的に外部化されている。
 
 <!-- AUTO-GENERATED:RULES:BEGIN -->
-**合計**: 226 エントリ / 272 ルール / 15 KB (genre 2 区分)
+**合計**: 661 エントリ / 707 ルール / 21 KB (genre 3 区分)
 
 #### 数値系
 
@@ -288,6 +286,14 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 | [`rules/text/symbols.toml`](rules/text/symbols.toml) | 10 | 10 | 386 B | 記号 1 文字読み (+ / − / % / ‰ / 〜 / ・ / ※ 等、 chunks/split() の symbols 階層で個別 hit) |
 | [`rules/text/postprocess.toml`](rules/text/postprocess.toml) | 2 | 2 | 325 B | 出力後処理 regex (Step 7、 mode 別: hiragana / ruby / tts / romaji の出力直前に適用) |
 | **小計** (3 ファイル) | **29** | **29** | **1.5 KB** | |
+
+#### (直下)
+
+`rules/` 直下 — 1 ファイル
+
+| ファイル | エントリ数 | ルール数 | サイズ | 用途 |
+|---|---:|---:|---:|---|
+| [`rules/compat.toml`](rules/compat.toml) | 435 | 435 | 6.1 KB | 異体字 → 標準字の正規化マップ (髙→高 等、 lib Step 1 で入力テキストを正規化) |
 
 <!-- AUTO-GENERATED:RULES:END -->
 
