@@ -15,12 +15,14 @@ core/                — 単語辞書 (entry data、 役割別 sub-dir)
 ├── unihan/          — 単漢字 fallback
 ├── kanji/           — [[kanji]] block (default + 文脈 match、 旧 single_overrides 統合先)
 ├── works/           — 作品固有名詞 (game / literature / anime)
-├── loanwords/       — 外来語
-└── compat.toml      — 異体字 → 標準字 mapping
+└── loanwords/       — 外来語
 
 rules/               — 校正ルール (data + 動的合成)
 ├── numbers/         — days / scales / numeric_phrases + counters/ (助数詞)
-└── text/            — symbols / units / postprocess
+├── text/            — symbols / units / postprocess
+└── compat.toml      — 異体字 → 標準字 mapping (= lib の入力正規化ルール。
+                       lib は rules_dir を走査して role="compat" を読むため core/ ではなく
+                       rules/ に置く。 wrapper が rules/core を別 mount しても効く)
 
 (旧 core/single_overrides.toml / rules/context/ は alpha.11 で削除済 —
  [[kanji]] block / entry inline match に migration)

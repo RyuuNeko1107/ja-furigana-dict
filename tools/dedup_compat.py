@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 core/unihan/*.toml + core/jukugo/*.toml + core/works/**/*.toml から、
-core/compat.toml の異体字 mapping 経由で dead 経路になる entry を整理する。
+rules/compat.toml の異体字 mapping 経由で dead 経路になる entry を整理する。
 **冪等 / CI 自動実行** (.github/workflows/regen-stats.yml で master push 時)。
 
 ja-furigana lib の処理順:
@@ -43,7 +43,7 @@ import tomllib
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-COMPAT_TOML = ROOT / "core/compat.toml"
+COMPAT_TOML = ROOT / "rules/compat.toml"
 UNIHAN_DIR = ROOT / "core/unihan"
 
 # unihan/ の各 file は header + [meta] + [entries] の決まった構造で書かれているので、

@@ -324,7 +324,7 @@ def validate_loanwords(path: Path, errors: Errors) -> dict:
     return entries
 
 
-# ─── core/compat.toml ──────────────────────────────────────────────────────
+# ─── rules/compat.toml ─────────────────────────────────────────────────────
 def validate_compat(path: Path, errors: Errors) -> None:
     """[map] section: variant → canonical (どちらも漢字 1〜数文字想定)"""
     data = load_toml(path, errors)
@@ -735,7 +735,7 @@ def main() -> int:
         (discover(core, 'loanwords', recursive=True), lambda p: validate_loanwords(p, errors)),
         (discover(core, 'unihan'),                 load_unihan),
         (discover(core, 'kanji', recursive=True),  load_kanji),
-        ([core / 'compat.toml'],             lambda p: validate_compat(p, errors)),
+        ([rules / 'compat.toml'],            lambda p: validate_compat(p, errors)),
         ([rules / 'numeric_phrases.toml'],   lambda p: validate_simple_entries(p, errors)),
         ([rules / 'symbols.toml'],           lambda p: validate_simple_entries(p, errors)),
         ([rules / 'units.toml'],             lambda p: validate_units(p, errors)),
