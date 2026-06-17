@@ -1,0 +1,55 @@
+# 2026-06-17 自作例文 probe 由来。何 + 助数詞 の連濁/促音 (jukugo 列挙の gap 補填)。
+# 何本→なにほん 等が漏れていた。何は数詞でなく次が漢字だと動詞語幹誤判定するため
+# counter rule 不可 = jukugo 列挙が正攻法 (overrides.toml 何 ブロックのコメント参照)。
+
+[[case]]
+input = "何本ある"
+mode = "hiragana"
+expected = "なんぼんある"
+note = "旧 なにほん"
+
+[[case]]
+input = "何杯飲んだ"
+mode = "hiragana"
+expected = "なんばいのんだ"
+
+[[case]]
+input = "何ヶ月かかる"
+mode = "hiragana"
+expected = "なんかげつかかる"
+
+[[case]]
+input = "何巻まで読んだ"
+mode = "hiragana"
+expected = "なんかんまでよんだ"
+
+[[case]]
+input = "何話まで見た"
+mode = "hiragana"
+expected = "なんわまでみた"
+
+[[case]]
+input = "何軒回る"
+mode = "hiragana"
+expected = "なんげんまわる"
+
+[[case]]
+input = "何発撃った"
+mode = "hiragana"
+expected = "なんぱつうった"
+
+[[case]]
+input = "何丁目ですか"
+mode = "hiragana"
+expected = "なんちょうめですか"
+
+# ─── 指示語/単独問いは ナニ/ナン 維持 (非干渉ガード) ───
+[[case]]
+input = "何それ"
+mode = "hiragana"
+expected = "なんそれ"
+
+[[case]]
+input = "何を見てる"
+mode = "hiragana"
+expected = "なにをみてる"

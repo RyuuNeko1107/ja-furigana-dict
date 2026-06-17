@@ -1,0 +1,124 @@
+# 2026-06-17 VV比較 (本番 sqlite 1.26M, seed=20260617, n=2500) 由来の dict 改善 回帰 lock。
+# 詳細: data/_analysis/scripts/compare_with_voicevox.py の DIFF を個別 triage。
+
+# ─── 放 = はなす (Lindera override + kanji.match) ───
+[[case]]
+input = "ぶっ放す"
+mode = "hiragana"
+expected = "ぶっはなす"
+note = "旧 ぶっほかす (Lindera 放す=ほかす)。本番 signal"
+
+[[case]]
+input = "放つ"
+mode = "hiragana"
+expected = "はなつ"
+
+[[case]]
+input = "突き放す"
+mode = "hiragana"
+expected = "つきはなす"
+
+[[case]]
+input = "放送"
+mode = "hiragana"
+expected = "ほうそう"
+note = "放 default ホウ は複合で維持"
+
+# ─── 寝 = ね (複合形容詞) ───
+[[case]]
+input = "寝辛い"
+mode = "hiragana"
+expected = "ねつらい"
+note = "旧 しんつらい (寝=シン default、次が漢字 辛 で match 漏れ)。寝=ね が要点、辛い連濁(づ)は未対応で許容"
+
+[[case]]
+input = "寝苦しい"
+mode = "hiragana"
+expected = "ねぐるしい"
+
+[[case]]
+input = "寝室"
+mode = "hiragana"
+expected = "しんしつ"
+note = "寝 シン は jukugo で維持"
+
+# ─── 象 default flip ショウ→ゾウ ───
+[[case]]
+input = "象"
+mode = "hiragana"
+expected = "ぞう"
+note = "旧 しょう。動物 ゾウ が dominant"
+
+[[case]]
+input = "対象"
+mode = "hiragana"
+expected = "たいしょう"
+note = "〜象 漢語複合は prev=漢字 で ショウ 維持"
+
+[[case]]
+input = "現象"
+mode = "hiragana"
+expected = "げんしょう"
+
+[[case]]
+input = "象徴"
+mode = "hiragana"
+expected = "しょうちょう"
+note = "象-先頭 ショウ複合は jukugo で維持"
+
+[[case]]
+input = "象牙"
+mode = "hiragana"
+expected = "ぞうげ"
+note = "象-先頭 ゾウ複合は default"
+
+# ─── ヶ月 系 promote (simple→counter、 1/6/8/10 促音化) ───
+[[case]]
+input = "1ヶ月"
+mode = "hiragana"
+expected = "いっかげつ"
+note = "旧 いちかげつ (simple.toml で促音化なし)"
+
+[[case]]
+input = "六ヶ月"
+mode = "hiragana"
+expected = "ろっかげつ"
+
+[[case]]
+input = "3ヶ月"
+mode = "hiragana"
+expected = "さんかげつ"
+
+[[case]]
+input = "1ヶ月半"
+mode = "hiragana"
+expected = "いっかげつはん"
+
+# ─── 影 default flip エイ→かげ (round2 seed=31415926) ───
+[[case]]
+input = "影"
+mode = "hiragana"
+expected = "かげ"
+note = "旧 えい。単独 影 は かげ dominant。旧は助詞 whitelist で『影じゃ』等が漏れていた"
+
+[[case]]
+input = "影武者"
+mode = "hiragana"
+expected = "かげむしゃ"
+
+[[case]]
+input = "影響"
+mode = "hiragana"
+expected = "えいきょう"
+note = "影-先頭 エイ複合は jukugo で維持"
+
+[[case]]
+input = "撮影"
+mode = "hiragana"
+expected = "さつえい"
+note = "〜影 エイ複合は prev=漢字 で維持"
+
+[[case]]
+input = "遺影"
+mode = "hiragana"
+expected = "いえい"

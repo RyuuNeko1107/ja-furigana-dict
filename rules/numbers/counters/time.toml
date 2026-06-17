@@ -84,6 +84,11 @@ to = "ク"
 # === begin: 分 ===
 [counter."分"]
 default = "フン"
+# 意図的に kanji_numeral = false (漢数字 bare は OFF)。理由: counter synthesis は
+# band 950 で jukugo (band 100) より強いため、有効化すると「十分=ジュウブン (充分)」
+# 「五分=ゴブ」「三分の一=サンブンノイチ」が じゅっぷん/ごふん/さんぷん に化ける。
+# bare 漢数字 + 分 の minutes/fraction/proportion 判別は文脈ルールが必要 (別タスク)。
+kanji_numeral = false
 
 [[counter."分".rules]]
 last_digit = [1, 3, 4, 6, 8, 0]
@@ -94,6 +99,7 @@ sokuonize = true
 # === begin: 分半 ===
 [counter."分半"]
 default = "フンハン"
+kanji_numeral = false  # 分 と同様に意図的 OFF (上記 分 ブロック参照)
 
 [[counter."分半".rules]]
 last_digit = [1, 3, 4, 6, 8, 0]
@@ -104,6 +110,7 @@ sokuonize = true
 # === begin: 週間 ===
 [counter."週間"]
 default = "シュウカン"
+kanji_numeral = true  # 一週間/八週間/十週間 → いっしゅうかん/はっしゅうかん/じゅっしゅうかん (漢数字 bare 対応)
 
 [[counter."週間".rules]]
 last_digit = [1, 8, 0]
@@ -114,12 +121,81 @@ sokuonize = true
 # === begin: 回 ===
 [counter."回"]
 default = "カイ"
+kanji_numeral = true  # 六回/八回/十回 → ろっかい/はっかい/じゅっかい (漢数字 bare 対応)
 
 [[counter."回".rules]]
 last_digit = [1, 6, 8, 0]
 suffix = "カイ"
 sokuonize = true
 # === end: 回 ===
+
+# === begin: ヶ月 系 === (1/6/8/10 で促音化。 一ヶ月=いっかげつ、 六ヶ月=ろっかげつ)
+# 旧: simple.toml に「ヶ月=カゲツ」で置かれ 1ヶ月→イチカゲツ と促音化していなかった
+# (★VV比較 2026-06-17)。promote して euphonic counter 化。表記ゆれ全variant + 半。
+[counter."ヶ月"]
+default = "カゲツ"
+kanji_numeral = true
+[[counter."ヶ月".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カゲツ"
+sokuonize = true
+
+[counter."ケ月"]
+default = "カゲツ"
+kanji_numeral = true
+[[counter."ケ月".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カゲツ"
+sokuonize = true
+
+[counter."か月"]
+default = "カゲツ"
+kanji_numeral = true
+[[counter."か月".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カゲツ"
+sokuonize = true
+
+[counter."箇月"]
+default = "カゲツ"
+kanji_numeral = true
+[[counter."箇月".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カゲツ"
+sokuonize = true
+
+[counter."ヶ月半"]
+default = "カゲツハン"
+kanji_numeral = true
+[[counter."ヶ月半".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カゲツハン"
+sokuonize = true
+
+[counter."ケ月半"]
+default = "カゲツハン"
+kanji_numeral = true
+[[counter."ケ月半".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カゲツハン"
+sokuonize = true
+
+[counter."か月半"]
+default = "カゲツハン"
+kanji_numeral = true
+[[counter."か月半".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カゲツハン"
+sokuonize = true
+
+[counter."箇月半"]
+default = "カゲツハン"
+kanji_numeral = true
+[[counter."箇月半".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カゲツハン"
+sokuonize = true
+# === end: ヶ月 系 ===
 
 # === begin: 年度 ===
 # 「8年度」「令和8年度」のような表現を ハチネンド と読ませる

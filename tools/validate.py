@@ -478,6 +478,30 @@ def validate_counters(path: Path, errors: Errors) -> None:
                         path, f"counter.'{c}'.specials.'{k}' = '{v}' (ひらがな または 全角カタカナ)"
                     )
 
+        # 連濁/促音化 (euphonic) ルールを持つ助数詞は kanji_numeral の明示を必須化する。
+        # 理由: lib の try_counter_kanji は bare 漢数字 + 助数詞 (「六本」) を
+        # `kanji_numeral = true` の助数詞でしか採用しない。euphonic rule があるのに
+        # フラグ未指定だと、アラビア数字 (「6本→ロッポン」) は正しく動くのに漢数字
+        # (「六本→ロクホン」) だけ silent に default 連結へ落ちる。両経路の乖離は
+        # テストでも実用でも気づきにくいため、author に true/false の判断を強制する。
+        # OFF が正しい助数詞 (「分」= 十分/五分/三分の一 の衝突) は明示的に false を書く。
+        euphonic = any(
+            isinstance(r, dict)
+            and (
+                r.get('sokuonize') is True
+                or any(n in (6, 8, 0) for n in (r.get('last_digit') or []))
+            )
+            for r in rule.get('rules', [])
+        )
+        if euphonic and 'kanji_numeral' not in rule:
+            errors.add_for(
+                path,
+                f"counter.'{c}': 連濁/促音化ルールがあるのに kanji_numeral が未指定。"
+                f"漢数字 bare (「六{c}」等) を有効にするなら true、"
+                f"意図的に無効化するなら false を明示してください "
+                f"(漢数字経路だけ silent に誤読する事故防止)",
+            )
+
 
 # ─── rules/context.toml ────────────────────────────────────────────────────
 def validate_context(path: Path, errors: Errors) -> None:
@@ -736,12 +760,20 @@ def main() -> int:
         (discover(core, 'unihan'),                 load_unihan),
         (discover(core, 'kanji', recursive=True),  load_kanji),
         ([rules / 'compat.toml'],            lambda p: validate_compat(p, errors)),
-        ([rules / 'numeric_phrases.toml'],   lambda p: validate_simple_entries(p, errors)),
-        ([rules / 'symbols.toml'],           lambda p: validate_simple_entries(p, errors)),
-        ([rules / 'units.toml'],             lambda p: validate_units(p, errors)),
-        ([rules / 'scales.toml'],            lambda p: validate_scales(p, errors)),
-        ([rules / 'days.toml'],              lambda p: validate_days(p, errors)),
-        (discover(rules, 'counters'),        lambda p: validate_counters(p, errors)),
+        # ★ counters の実ファイルは rules/numbers/counters/ 配下。旧 `discover(rules,
+        #   'counters')` (= rules/counters/ を探す) は dict ディレクトリ再編成で dead に
+        #   なっており validate_counters が一度も走っていなかった (= kanji_numeral lint 等が
+        #   不発)。実パスへ修正。
+        (discover(rules / 'numbers', 'counters'),  lambda p: validate_counters(p, errors)),
+        # ★TODO(dead-routing): 以下 5 validator も同じ再編成で dead-routed のまま:
+        #   numeric_phrases → rules/numbers/numeric_phrases.toml
+        #   symbols         → rules/text/symbols.toml
+        #   units           → rules/text/units.toml
+        #   scales          → rules/numbers/scales.toml
+        #   days            → rules/numbers/days.toml
+        #   実パスへ繋ぐと validator 側の format drift (days = entries 構造、symbols = 空読み
+        #   許容) が露出するため、validator の現行 format 追従と合わせて別タスクで対応する。
+        #   schema_version pass は全 file を walk するので最低限の検証は効いている。
     ]
 
     found = 0

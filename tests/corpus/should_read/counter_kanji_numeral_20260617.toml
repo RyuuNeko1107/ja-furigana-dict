@@ -1,0 +1,84 @@
+# 2026-06-17 助数詞 kanji_numeral 一括有効化の回帰 lock。
+#
+# bare 漢数字 + 助数詞 (「六本」「八階」等) が、euphonic ルールを持つのに
+# rules/numbers/counters/ 側で kanji_numeral フラグ未指定だった助数詞で促音便/連濁を
+# 落としていた (六本→ろくほん)。アラビア数字経路 (6本→ろっぽん) は正常だったため
+# silent regression 化していた。本/個/冊/歩/週/派/節/階/ヶ所/箇所/か所/週間/回 に
+# kanji_numeral = true を付与して解消。validate.py に euphonic-but-no-flag lint も追加。
+#
+# 「分」「分半」「%」「％」は意図的に kanji_numeral = false (= 衝突回避: 十分=じゅうぶん
+# / 五分=ごぶ / 三分の一=さんぶんのいち を温存)。
+
+# ─── 促音便 (1/6/8/10) が漢数字でも効く ───
+[[case]]
+input = "六本"
+mode = "hiragana"
+expected = "ろっぽん"
+note = "本: 旧 ろくほん (kanji_numeral 未指定で counter 不発)"
+
+[[case]]
+input = "八本"
+mode = "hiragana"
+expected = "はっぽん"
+
+[[case]]
+input = "十本"
+mode = "hiragana"
+expected = "じゅっぽん"
+
+[[case]]
+input = "六個"
+mode = "hiragana"
+expected = "ろっこ"
+
+[[case]]
+input = "八階"
+mode = "hiragana"
+expected = "はっかい"
+note = "階: 旧 はちかい"
+
+[[case]]
+input = "六回"
+mode = "hiragana"
+expected = "ろっかい"
+
+[[case]]
+input = "八冊"
+mode = "hiragana"
+expected = "はっさつ"
+
+[[case]]
+input = "一週間"
+mode = "hiragana"
+expected = "いっしゅうかん"
+
+[[case]]
+input = "六箇所"
+mode = "hiragana"
+expected = "ろっかしょ"
+
+# ─── 誤爆ガード: jukugo / 非数詞先頭は変わらない ───
+[[case]]
+input = "六本木"
+mode = "hiragana"
+expected = "ろっぽんぎ"
+note = "place jukugo (band 100) が counter synthesis (band 950) より優先される確認"
+
+[[case]]
+input = "段階"
+mode = "hiragana"
+expected = "だんかい"
+note = "段 は数詞でないので 階 counter 化しない"
+
+# ─── 「分」は意図的 OFF (文脈衝突回避を温存) ───
+[[case]]
+input = "十分"
+mode = "hiragana"
+expected = "じゅうぶん"
+note = "分 kanji_numeral=false。じゅっぷん化しない (充分の読みを温存)"
+
+[[case]]
+input = "三分の一"
+mode = "hiragana"
+expected = "さんぶんのいち"
+note = "分 OFF。さんぷん化しない"

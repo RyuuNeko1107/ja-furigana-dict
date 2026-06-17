@@ -571,6 +571,11 @@ default = "シン"
 [[kanji.match]]
 next_starts_any = ["る", "ら", "れ", "ろ", "て", "た", "よ", "な", "ま", "か", "こ", "に", "ち", "そ", "ず", "す"]
 reading = "ね"
+# 複合形容詞 (寝辛い=ねづらい、 寝苦しい=ねぐるしい) は次が漢字なので別 match。
+# (★本番 signal 2026-06: 寝辛い が default シン に落ちていた)
+[[kanji.match]]
+next_starts_any = ["辛", "苦"]
+reading = "ね"
 [[kanji]]
 char = "行"
 default = "ギョウ"
@@ -1885,7 +1890,14 @@ default = "ヒン"
 # 純化。
 [[kanji]]
 char = "象"
-default = "ショウ"
+default = "ゾウ"
+
+# 単独「象」(= 象は / 象が / 文末) は動物 ゾウ が dominant (★VV比較 2026-06-17)。
+# 〜象 の漢語複合 (現象/対象/印象/気象/抽象/事象) は prev=漢字 で ショウ。
+# 象徴/象眼 等の象-先頭 ショウ複合は jukugo (band 100) で個別吸収。象牙=ぞうげ は default。
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ショウ"
 
 # 「神」: unihan default 「かみ」 → 純 migration (= reading 変更なし)。 シン/
 # ジン 系 48 件 (= 神社 / 神話 / 神道 / 精神 / 神経 / 失神 / 神秘 / 原神
@@ -5625,6 +5637,13 @@ default = "コウ"
 [[kanji]]
 char = "放"
 default = "ホウ"
+
+# 「放す/放さ/放し/放せ/放そ/放つ」 = ハナ + 送りがな (放す=はなす、 放つ=はなつ)。
+# 旧: Lindera fallback の「放す=ほかす」が通っていた (★本番 signal 2026-06: ぶっ放す)。
+# 放る (ほうる)・放って (ほうって) は default ホウ で吸収するため っ/る/ろ は match しない。
+[[kanji.match]]
+next_starts_any = ["す", "さ", "し", "せ", "そ", "つ"]
+reading = "ハナ"
 
 [[kanji]]
 char = "救"
@@ -11678,24 +11697,16 @@ char = "径"
 default = "ケイ"
 
 # 「影」 default 「エイ」 (= 影響/陰影/撮影/投影/幻影/映影)。
-# 単独 + 助詞接続 → 「かげ」 (= 「影が/影の」 等)
+# 単独「影」(影/影じゃ/影が/面影) は かげ が dominant。default flip エイ→かげ。
+# 〜影 の漢語複合 (影響=jukugo、撮影/投影/陰影/幻影/遺影) は prev=漢字 で エイ。
+# (★VV比較 2026-06-17: 旧 default エイ + 助詞 whitelist で「影じゃ」等が漏れていた)
 [[kanji]]
 char = "影"
-default = "エイ"
+default = "かげ"
 
 [[kanji.match]]
-next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "だ", "や"]
-reading = "かげ"
-
-# 記号境界の単独 (= 「影!」「影。」) も単独扱い → かげ
-[[kanji.match]]
-next_char_type = "記号"
-reading = "かげ"
-
-# 「僕は影 / 赤き影」 等、 助詞/連体 prev の bare 末尾 → かげ
-[[kanji.match]]
-prev_ends_any = ["は", "の", "が", "き", "も"]
-reading = "かげ"
+prev_char_type = "漢字"
+reading = "エイ"
 
 # 「弟」 default 「テイ」 (= 弟子/師弟/従兄弟/門弟)。
 # 単独 + 助詞接続 → 「おとうと」 (= 「弟が/弟の」 等)

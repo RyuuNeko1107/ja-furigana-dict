@@ -8,6 +8,7 @@ description = "パーセンテージ (% / ％、 1/6/8/0 で促音化 + パー�
 # === begin: % ===
 [counter."%"]
 default = "パーセント"
+kanji_numeral = false  # 漢数字 + % (「五%」) は実用ほぼ無いため意図的 OFF
 
 [[counter."%".rules]]
 last_digit = [1, 6, 8, 0]
@@ -18,6 +19,7 @@ sokuonize = true
 # === begin: ％ ===
 [counter."％"]
 default = "パーセント"
+kanji_numeral = false  # 漢数字 + ％ は実用ほぼ無いため意図的 OFF
 
 [[counter."％".rules]]
 last_digit = [1, 6, 8, 0]
