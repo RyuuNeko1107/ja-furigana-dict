@@ -6915,6 +6915,16 @@ default = "カン"
 char = "業"
 default = "ギョウ"
 
+# standalone 「業(が/を/の)」 = ゴウ (仏教の業、 業が深い/業を背負う/業の深さ)。
+# 業務/事業/作業 等は 2 字 token で 業 が standalone でないため非干渉
+[[kanji.match]]
+prev_eq = "の"
+reading = "ゴウ"
+
+[[kanji.match]]
+next_starts_any = ["が", "を"]
+reading = "ゴウ"
+
 # 「論」 default 「ロン」 (= 議論/理論/論文/結論/反論/世論)。
 # joyo unihan の 「あげつらう」 は動詞古語
 [[kanji]]
@@ -7647,6 +7657,12 @@ reading = "いま"
 [[kanji]]
 char = "末"
 default = "マツ"
+
+# 「〜の末(に/は)」 = すえ (= 交渉の末/苦労の末)。 prev=の の standalone 末 のみ。
+# 期末/年末/週末 等は 2 字 token で 末 が standalone でないため非干渉
+[[kanji.match]]
+prev_eq = "の"
+reading = "すえ"
 
 # 「既」 default 「キ」 (= 既存/既知/既出/既婚/既往/既成/既得)。
 # 副詞 「既に」 = すでに は next_eq で切替

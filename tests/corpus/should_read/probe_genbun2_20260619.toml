@@ -1,0 +1,62 @@
+# 2026-06-19 自作例文 (gen_probe) round 2 由来の dict 改善 回帰 lock。
+# 文語/四字熟語/単漢字 homograph の の-文脈割れ。詳細: cands3_20260619.txt の DIFF triage。
+
+# ─── 虎視眈々 = コシタンタン (々 畳字形) ───
+[[case]]
+input = "虎視眈々と狙う"
+mode = "hiragana"
+expected = "こしたんたんとねらう"
+note = "旧 とらしにらむにらむ (眈々 の 々 で眈=にらむ破損、眈眈 形は正)"
+
+# ─── 末 = すえ (「〜の末」 文脈、 prev=の) ───
+[[case]]
+input = "交渉の末に妥結"
+mode = "hiragana"
+expected = "こうしょうのすえにだけつ"
+note = "旧 まつ。 prev=の の standalone 末 → すえ"
+
+[[case]]
+input = "苦労の末に決断"
+mode = "hiragana"
+expected = "くろうのすえにけつだん"
+
+# 回帰ガード: 末期/末路 は 2 字 token で 末 standalone でないため マツ 維持
+[[case]]
+input = "病の末期"
+mode = "hiragana"
+expected = "びょうのまっき"
+
+[[case]]
+input = "事業の末路"
+mode = "hiragana"
+expected = "じぎょうのまつろ"
+
+# ─── 業 = ゴウ (仏教の業、 standalone 業+助詞) ───
+[[case]]
+input = "人間の業の深さ"
+mode = "hiragana"
+expected = "にんげんのごうのふかさ"
+note = "旧 ぎょう。 prev=の の standalone 業 → ゴウ"
+
+[[case]]
+input = "業が深い"
+mode = "hiragana"
+expected = "ごうがふかい"
+
+# 回帰ガード: 事業/作業 は ギョウ 維持
+[[case]]
+input = "事業の拡大"
+mode = "hiragana"
+expected = "じぎょうのかくだい"
+
+# ─── 悪戯 = いたずら (「悪戯か」 で あくぎ 化け防止) ───
+[[case]]
+input = "運命の悪戯か"
+mode = "hiragana"
+expected = "うんめいのいたずらか"
+note = "旧 あくぎ。 終助詞 か で再分割→band1000 jukugo 固定"
+
+[[case]]
+input = "悪戯な笑み"
+mode = "hiragana"
+expected = "いたずらなえみ"
