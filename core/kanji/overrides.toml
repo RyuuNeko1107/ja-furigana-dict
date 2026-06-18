@@ -4370,9 +4370,15 @@ default = "サク"
 char = "柊"
 default = "シュウ"
 
+# 「梁」 default ハリ (= 建物のはり、 単独用法の主。 「屋根の梁/梁が落ちる/柱と梁」)。
+# prev 漢字 → リョウ (= 棟梁/橋梁 等の音読み熟語)。 梁山泊 は Lindera 2-char token吸収
 [[kanji]]
 char = "梁"
-default = "リョウ"
+default = "ハリ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "リョウ"
 
 [[kanji]]
 char = "梧"
@@ -14601,10 +14607,17 @@ default = "つぶ"
 prev_char_type = "漢字"
 reading = "リュウ"
 
-# 「籠」 default 「かご」 + prev 漢字 → 「ロウ」 (= 籠球/灯籠/印籠/参籠)
+# 「籠」 default 「かご」。 動詞「籠もる (= こもる)」 は送り仮名「も」 続きで コ。
+# prev 漢字 → 「ロウ」 (= 灯籠/印籠/参籠)。 ※鳥籠/虫籠/籠城 は prev 漢字 heuristic
+# が誤爆 (とりろう/かごじょう) するため jukugo basic で個別救済 (トリカゴ/ロウジョウ)
 [[kanji]]
 char = "籠"
 default = "かご"
+
+# 「籠もる/籠もって/籠もった/籠もり」 = こもる (動詞)。 prev 漢字 match より優先
+[[kanji.match]]
+next_starts_any = ["も"]
+reading = "コ"
 
 [[kanji.match]]
 prev_char_type = "漢字"

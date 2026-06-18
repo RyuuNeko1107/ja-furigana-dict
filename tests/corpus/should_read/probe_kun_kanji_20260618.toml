@@ -1,0 +1,73 @@
+# 2026-06-18 自作例文 probe round 2 (送り仮名動詞 / 単漢字訓 / 難読)。
+#
+# - 籠: 動詞 籠もる=こもる (next も→コ)。 鳥籠=とりかご / 籠城=ろうじょう は
+#       prev_char_type=漢字→ロウ heuristic 誤爆を jukugo で救済。 灯籠=とうろう は維持
+# - 梁: default リョウ→ハリ に反転 (= 建物のはり が単独主用法)。 prev 漢字→リョウ で
+#       棟梁/橋梁 を救済、 梁山泊 は Lindera token
+# - 仄暗い=ほのぐらい (IPADIC が 仄→「かたむく」 と誤読)
+
+# ─── 籠 ───
+[[case]]
+input = "部屋に籠もる"
+mode = "hiragana"
+expected = "へやにこもる"
+note = "旧 かごもる"
+
+[[case]]
+input = "殻に籠もった"
+mode = "hiragana"
+expected = "からにこもった"
+
+[[case]]
+input = "鳥籠を買う"
+mode = "hiragana"
+expected = "とりかごをかう"
+note = "旧 とりろう"
+
+[[case]]
+input = "籠城する"
+mode = "hiragana"
+expected = "ろうじょうする"
+note = "旧 かごじょう"
+
+[[case]]
+input = "灯籠を飾る"
+mode = "hiragana"
+expected = "とうろうをかざる"
+note = "prev漢字→ロウ 維持ガード"
+
+# ─── 梁 ───
+[[case]]
+input = "屋根の梁"
+mode = "hiragana"
+expected = "やねのはり"
+note = "旧 りょう"
+
+[[case]]
+input = "梁が落ちる"
+mode = "hiragana"
+expected = "はりがおちる"
+
+[[case]]
+input = "棟梁を務める"
+mode = "hiragana"
+expected = "とうりょうをつとめる"
+note = "prev漢字→リョウ ガード"
+
+[[case]]
+input = "橋梁工事"
+mode = "hiragana"
+expected = "きょうりょうこうじ"
+
+[[case]]
+input = "梁山泊"
+mode = "hiragana"
+expected = "りょうざんぱく"
+note = "Lindera token ガード"
+
+# ─── 仄暗い ───
+[[case]]
+input = "仄暗い"
+mode = "hiragana"
+expected = "ほのぐらい"
+note = "旧 かたむくくらい"

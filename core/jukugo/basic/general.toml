@@ -6259,6 +6259,21 @@ weight = 8
 [entries."追従笑い"]
 reading = "ツイショウワライ"
 
+# 籠 の prev_char_type=漢字→ロウ heuristic 誤爆救済 (= 鳥籠/虫籠 は訓+訓 で カゴ)
+[entries."鳥籠"]
+reading = "トリカゴ"
+
+[entries."虫籠"]
+reading = "ムシカゴ"
+
+# 籠城 は籠が先頭で default カゴ に化ける (= かごじょう) → ロウジョウ
+[entries."籠城"]
+reading = "ロウジョウ"
+
+# 仄暗い = ほのぐらい (= 仄 が IPADIC で「かたむく」 と誤読される)
+[entries."仄暗い"]
+reading = "ホノグライ"
+
 # --- batch 7 ---
 
 [entries."四日"]
