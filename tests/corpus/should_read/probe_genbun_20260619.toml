@@ -1,0 +1,53 @@
+# 2026-06-19 自作例文 (gen_probe) + VV 比較 由来の dict 改善 回帰 lock。
+# 詳細: data/_analysis/scripts/cands{,2}_20260619.txt の DIFF を個別 triage。
+# 祭事/宗教/地名 vein は ja 大半成熟、 実バグは本ファイルの 8 件のみ。
+
+# ─── 祭囃子 = まつりばやし (祭 訓 + 連濁) ───
+[[case]]
+input = "祭囃子が聞こえる"
+mode = "hiragana"
+expected = "まつりばやしがきこえる"
+note = "旧 さいはやし (祭=サイ 音読み + 連濁抜け)"
+
+# ─── 乱高下 = らんこうげ (下 呉音 ゲ) ───
+[[case]]
+input = "為替が乱高下する"
+mode = "hiragana"
+expected = "かわせがらんこうげする"
+note = "旧 らんこうか"
+
+# ─── 中小企業 = ちゅうしょう (「の」 文脈で 中→ナカ 割れ防止) ───
+[[case]]
+input = "東大阪の中小企業"
+mode = "hiragana"
+expected = "ひがしおおさかのちゅうしょうきぎょう"
+note = "旧 なかしょう。 単独は正だが prev=の で 中 kanji block が default ナカ に割る → band1000 jukugo で固定"
+
+[[case]]
+input = "地域の中小企業"
+mode = "hiragana"
+expected = "ちいきのちゅうしょうきぎょう"
+
+# ─── 斑鳩 = いかるが (奈良の地名、 が 脱落防止) ───
+[[case]]
+input = "斑鳩の里"
+mode = "hiragana"
+expected = "いかるがのさと"
+note = "旧 いかる。 斑鳩町 は正だが単体で が 脱落"
+
+[[case]]
+input = "斑鳩の法隆寺"
+mode = "hiragana"
+expected = "いかるがのほうりゅうじ"
+
+# ─── 〜筋 = すじ (大阪の通り名、 御堂筋と同型) ───
+[[case]]
+input = "天神橋筋商店街"
+mode = "hiragana"
+expected = "てんじんばしすじしょうてんがい"
+note = "旧 てんじんばしきん。 通り名の 筋 は すじ"
+
+[[case]]
+input = "四つ橋筋を歩く"
+mode = "hiragana"
+expected = "よつばしすじをあるく"
