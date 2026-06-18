@@ -4072,9 +4072,16 @@ default = "カク"
 char = "輝"
 default = "キ"
 
+# 「輩」 default ハイ (= 先輩/後輩/年輩/輩出/若輩)。
+# 「〜の輩 / 悪い輩 / 不届きな輩」 = 連中の意で やから (助詞 の or 形容詞活用語尾の後)。
+# 先輩/輩出 等は prev が 漢字 (Lindera token) で default ハイ のまま
 [[kanji]]
 char = "輩"
 default = "ハイ"
+
+[[kanji.match]]
+prev_ends_any = ["の", "い", "な", "う"]
+reading = "やから"
 
 [[kanji]]
 char = "迎"

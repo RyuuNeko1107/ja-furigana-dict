@@ -1,0 +1,44 @@
+# 2026-06-18 自作例文 probe round 16 (四字熟語 + 輩)。
+# 四字熟語は ja 大半正読 (一期一会/温故知新/言語道断/傍若無人/七転八倒/喜怒哀楽/
+# 朝三暮四/臥薪嘗胆/捲土重来=けんどちょうらい)。実バグは 輩。
+#
+# - 輩: default ハイ (先輩/後輩/輩出) + 「〜の輩 / 悪い輩 / 不届きな輩」 = やから
+#       (助詞 の or 形容詞活用語尾 い/な/う の後)。
+
+[[case]]
+input = "悪の輩"
+mode = "hiragana"
+expected = "あくのやから"
+note = "旧 はい"
+
+[[case]]
+input = "不届きな輩"
+mode = "hiragana"
+expected = "ふとどきなやから"
+
+[[case]]
+input = "悪い輩"
+mode = "hiragana"
+expected = "わるいやから"
+
+[[case]]
+input = "先輩に挨拶"
+mode = "hiragana"
+expected = "せんぱいにあいさつ"
+note = "ハイ ガード"
+
+[[case]]
+input = "輩出する"
+mode = "hiragana"
+expected = "はいしゅつする"
+
+# ─── 四字熟語ガード ───
+[[case]]
+input = "傍若無人な態度"
+mode = "hiragana"
+expected = "ぼうじゃくぶじんなたいど"
+
+[[case]]
+input = "喜怒哀楽が激しい"
+mode = "hiragana"
+expected = "きどあいらくがはげしい"
