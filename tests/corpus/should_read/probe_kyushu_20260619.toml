@@ -1,0 +1,28 @@
+# 2026-06-19 九州 難読駅 第11弾。
+# 周船寺=すせんじ/陣原=じんのはる/三河内=みかわち/早岐=はいき/杵築=きつき/
+# 都城=みやこのじょう/指宿=いぶすき 等は ja 正読。
+# homograph 見送り: 笹原=ささはら(姓)、出水=しゅっすい(一般語)、八代=はちだい(多義)。
+
+[[case]]
+input = "諫早"
+mode = "hiragana"
+expected = "いさはや"
+note = "長崎 (全壊 いさめそう)"
+
+[[case]]
+input = "門司港"
+mode = "hiragana"
+expected = "もじこう"
+note = "門司港レトロ、港=こう (旧 もじみなと)"
+
+[[case]]
+input = "浦上"
+mode = "hiragana"
+expected = "うらかみ"
+note = "長崎/浦上天主堂、連濁誤 うらがみ"
+
+[[case]]
+input = "日向市"
+mode = "hiragana"
+expected = "ひゅうがし"
+note = "市付きで disambiguate (bare 日向=ひなた 不干渉)"
