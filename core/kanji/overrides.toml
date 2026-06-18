@@ -4703,6 +4703,12 @@ default = "シン"
 char = "便"
 default = "ベン"
 
+# 「〜の便」 = びん (帰りの便/次の便/午後の便 = 交通/配送サービス)。
+# 便利/不便/検便/小便 等の ベン 熟語は 2 字 token で 便 standalone でないため非干渉
+[[kanji.match]]
+prev_eq = "の"
+reading = "びん"
+
 [[kanji]]
 # 「係」: suffix 用法 (○○係 = かかり/がかり) が productive に支配的なので訓 default。
 # 音「ケイ」 は閉じた jukugo 集合 (関係/係数/係留/係争/連係 = general.toml に entry 化、
