@@ -6218,6 +6218,23 @@ reading = "ニソクホコウ"
 [entries."四足歩行"]
 reading = "ヨンソクホコウ"
 
+# 「X色 = Xいろ」 で 色=いろ になる訓色名のうち Lindera 未収録で しょく に化ける分。
+# (山吹色/茜色/瑠璃色 等は Lindera token で既に いろ。 原色/景色/白色 は しょく/けしき で別)
+[entries."桜色"]
+reading = "サクライロ"
+
+[entries."虹色"]
+reading = "ニジイロ"
+
+[entries."萌黄色"]
+reading = "モエギイロ"
+
+[entries."柑子色"]
+reading = "コウジイロ"
+
+[entries."黄土色"]
+reading = "オウドイロ"
+
 [entries."食物"]
 reading = "ショクモツ"
 
