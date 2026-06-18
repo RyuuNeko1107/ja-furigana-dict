@@ -519,6 +519,9 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 "upgrade" = "アップグレード"
 "download" = "ダウンロード"
 "upload" = "アップロード"
+"emoji" = "エモジ"
+"shuffle" = "シャッフル"
+"boomerang" = "ブーメラン"
 
 # ── 配信補強 ──
 "follower" = "フォロワー"
@@ -611,9 +614,11 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 "UX" = "ユーエックス"
 "VFX" = "ブイエフエックス"
 "SFX" = "エスエフエックス"
+"TTS" = "ティーティーエス"
 
 # ── 挨拶 ──
 "hi" = "ハイ"
+"hey" = "ヘイ"
 "bye" = "バイ"
 "goodbye" = "グッバイ"
 "welcome" = "ウェルカム"

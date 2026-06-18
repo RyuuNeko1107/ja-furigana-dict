@@ -1,0 +1,28 @@
+# 2026-06-19 本番 signal_log (alphabet_miss 上位) 由来の回帰 lock。
+# 実データ: ssh debian の /admin/signal_stats?kind=alphabet_miss。
+# ABC/TRPG/IRC は既収録 (履歴 miss)、真のギャップ5件を補充。
+
+[[case]]
+input = "heyみんな"
+mode = "hiragana"
+expected = "ヘイみんな"
+
+[[case]]
+input = "shuffleする"
+mode = "hiragana"
+expected = "シャッフルする"
+
+[[case]]
+input = "emojiを使う"
+mode = "hiragana"
+expected = "エモジをつかう"
+
+[[case]]
+input = "Boomerangで撮る"
+mode = "hiragana"
+expected = "ブーメランでとる"
+
+[[case]]
+input = "TTSで読み上げ"
+mode = "hiragana"
+expected = "ティーティーエスでよみあげ"
