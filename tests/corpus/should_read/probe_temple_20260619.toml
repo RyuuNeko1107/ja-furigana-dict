@@ -1,0 +1,51 @@
+# 2026-06-19 寺社・観光地名 probe 由来の回帰 lock。
+# 大半の寺社は ja 正読 (浅草寺/善光寺/清水寺/金閣寺/東大寺/法隆寺/伏見稲荷/出雲大社/
+# 明治神宮/厳島神社/唐招提寺/平等院 全正)。寺=じ/てら, 山=さん/ざん の suffix 化けのみ補充。
+
+[[case]]
+input = "毛越寺"
+mode = "hiragana"
+expected = "もうつうじ"
+note = "越=つう (旧 もうつじ)"
+
+[[case]]
+input = "三十三間堂"
+mode = "hiragana"
+expected = "さんじゅうさんげんどう"
+note = "間=げん (旧 さんかんどう)"
+
+[[case]]
+input = "神護寺"
+mode = "hiragana"
+expected = "じんごじ"
+note = "旧 かんごてら"
+
+[[case]]
+input = "龍安寺"
+mode = "hiragana"
+expected = "りょうあんじ"
+note = "龍=りょう (旧 りゅうあんじ)"
+
+[[case]]
+input = "天龍寺"
+mode = "hiragana"
+expected = "てんりゅうじ"
+note = "寺=じ (旧 てんりゅうてら)"
+
+[[case]]
+input = "鞍馬寺"
+mode = "hiragana"
+expected = "くらまでら"
+note = "鞍馬=くらま (旧 あんばてら)"
+
+[[case]]
+input = "恐山"
+mode = "hiragana"
+expected = "おそれざん"
+note = "山=ざん (旧 おそれやま)"
+
+[[case]]
+input = "羽黒山"
+mode = "hiragana"
+expected = "はぐろさん"
+note = "出羽三山、山=さん (旧 はぐろやま)"
