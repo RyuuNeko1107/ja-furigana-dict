@@ -1,0 +1,43 @@
+# 2026-06-19 連濁 複合語 第2弾 由来の回帰 lock。
+# 橋=ばし/川=がわ/鳥=どり/傘=がさ/菓子=がし の連濁、兄弟語漏れを補充。
+
+[[case]]
+input = "丸太橋を渡る"
+mode = "hiragana"
+expected = "まるたばしをわたる"
+note = "旧 まるたきょう (石橋/吊り橋/桟橋は正)"
+
+[[case]]
+input = "どぶ川"
+mode = "hiragana"
+expected = "どぶがわ"
+note = "旧 どぶかわ"
+
+[[case]]
+input = "水鳥が泳ぐ"
+mode = "hiragana"
+expected = "みずどりがおよぐ"
+note = "旧 みずとり (渡り鳥/小鳥/親鳥は正)"
+
+[[case]]
+input = "唐傘お化け"
+mode = "hiragana"
+expected = "からかさおばけ"
+note = "旧 とうさん (破損)"
+
+[[case]]
+input = "綿菓子を食べる"
+mode = "hiragana"
+expected = "わたがしをたべる"
+note = "旧 わたかし"
+
+# 回帰ガード: 兄弟語は維持
+[[case]]
+input = "石橋を叩いて渡る"
+mode = "hiragana"
+expected = "いしばしをたたいてわたる"
+
+[[case]]
+input = "渡り鳥の群れ"
+mode = "hiragana"
+expected = "わたりどりのむれ"
