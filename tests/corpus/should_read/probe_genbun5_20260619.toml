@@ -1,0 +1,47 @@
+# 2026-06-19 自作例文 round 5 由来の dict 改善 回帰 lock。
+# 漁=リョウ熟語 + 黒子 homograph (next2 disambiguation)。詳細: cands6_20260619.txt。
+# ★この vein (子/音/汁 重箱湯桶) は ja 大半成熟、実バグは5件のみ。
+
+# ─── 漁 = リョウ (休漁/禁漁、大漁/不漁と同型) ───
+[[case]]
+input = "時化で休漁"
+mode = "hiragana"
+expected = "しけできゅうりょう"
+note = "旧 きゅうぎょ"
+
+[[case]]
+input = "禁漁区域"
+mode = "hiragana"
+expected = "きんりょうくいき"
+note = "旧 きんぎょ"
+
+# ─── 漁火 = いさりび (熟字訓) ───
+[[case]]
+input = "漁火が見える"
+mode = "hiragana"
+expected = "いさりびがみえる"
+note = "旧 ぎょか"
+
+# ─── 黒子 = クロコ (「黒子に徹する」 裏方、 next2=徹 で ほくろ と区別) ───
+[[case]]
+input = "黒子に徹する"
+mode = "hiragana"
+expected = "くろこにてっする"
+note = "旧 ほくろ。 next2_starts_any=[徹] で stagehand 判別"
+
+# 回帰ガード: 顔の黒子 = ほくろ 維持
+[[case]]
+input = "顔の黒子"
+mode = "hiragana"
+expected = "かおのほくろ"
+
+# 回帰ガード: 漁師/漁業/大漁 維持
+[[case]]
+input = "漁師町の朝"
+mode = "hiragana"
+expected = "りょうしまちのあさ"
+
+[[case]]
+input = "漁業組合"
+mode = "hiragana"
+expected = "ぎょぎょうくみあい"
