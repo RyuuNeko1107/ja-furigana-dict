@@ -1,0 +1,21 @@
+# 2026-06-19 植物・花名 probe 由来の回帰 lock。
+# 当て字/熟字訓 (紫陽花/向日葵/山茶花/蒲公英/鬼灯/百日紅/躑躅/杜若/銀杏/欅…) は ja 成熟。
+# 単漢字 homograph (椎=しい/つい, 薄=すすき/うすい/はく) は標準で曖昧のため見送り。
+# 実バグは 柊 のみ (default シュウ→ひいらぎ、榊と同型の国字訓)。
+
+[[case]]
+input = "柊"
+mode = "hiragana"
+expected = "ひいらぎ"
+note = "default シュウ→ひいらぎ"
+
+[[case]]
+input = "柊の木"
+mode = "hiragana"
+expected = "ひいらぎのき"
+
+[[case]]
+input = "柊鰯"
+mode = "hiragana"
+expected = "ひいらぎいわし"
+note = "節分の柊鰯"

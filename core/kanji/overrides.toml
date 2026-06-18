@@ -4398,9 +4398,10 @@ default = "ショ"
 char = "朔"
 default = "サク"
 
+# 「柊」 default 「ひいらぎ」 (= 柊の木/柊さん。 音読み シュウ は標準語で出現せず、榊と同型)
 [[kanji]]
 char = "柊"
-default = "シュウ"
+default = "ひいらぎ"
 
 # 「梁」 default ハリ (= 建物のはり、 単独用法の主。 「屋根の梁/梁が落ちる/柱と梁」)。
 # prev 漢字 → リョウ (= 棟梁/橋梁 等の音読み熟語)。 梁山泊 は Lindera 2-char token吸収
