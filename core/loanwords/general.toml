@@ -266,6 +266,15 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 "happy" = "ハッピー"
 "sad" = "サッド"
 "funny" = "ファニー"
+"rich" = "リッチ"
+"poor" = "プア"
+"young" = "ヤング"
+"old" = "オールド"
+"new" = "ニュー"
+"fresh" = "フレッシュ"
+"sweet" = "スイート"
+"bitter" = "ビター"
+"spicy" = "スパイシー"
 
 # ── 国名 ──
 "USA" = "ユーエスエー"
@@ -429,6 +438,7 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 "body" = "ボディ"
 "heart" = "ハート"
 "brain" = "ブレイン"
+"finger" = "フィンガー"
 
 # ── 家族 ──
 "father" = "ファーザー"
@@ -455,6 +465,9 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 "chef" = "シェフ"
 "driver" = "ドライバー"
 "pilot" = "パイロット"
+"cook" = "クック"
+"dancer" = "ダンサー"
+"writer" = "ライター"
 
 # ── 場所 ──
 "home" = "ホーム"
@@ -560,6 +573,11 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 "jacket" = "ジャケット"
 "suit" = "スーツ"
 "jeans" = "ジーンズ"
+"glove" = "グローブ"
+"gloves" = "グローブズ"
+"cap" = "キャップ"
+"skirt" = "スカート"
+"sweater" = "セーター"
 
 # ── 趣味 ──
 "reading" = "リーディング"
@@ -611,6 +629,10 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 "speak" = "スピーク"
 "write" = "ライト"
 "read" = "リード"
+"hate" = "ヘイト"
+"cry" = "クライ"
+"smile" = "スマイル"
+"angry" = "アングリー"
 
 # ── 国名細目 ──
 "France" = "フランス"
