@@ -6180,6 +6180,10 @@ reading = "イチズ"
 prev_eq = "の"
 reading = "イット"
 
+# 就中 = ナカンズク (= とりわけ、 文語)。 IPADIC は シュウチュウ と音読み
+[entries."就中"]
+reading = "ナカンズク"
+
 [[entries."一途".alt]]
 reading = "イット"
 sense = "one-way"

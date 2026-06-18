@@ -3078,9 +3078,15 @@ reading = "かた"
 char = "培"
 default = "バイ"
 
+# 「唇」 default シン (= 口唇/読唇/唇音 等の音読み熟語、 Lindera token)。
+# 助詞続きの standalone (唇を尖らせる/唇が荒れる/上唇が) は くちびる
 [[kanji]]
 char = "唇"
 default = "シン"
+
+[[kanji.match]]
+next_starts_any = ["を", "が", "の", "に", "は", "も", "や", "と", "で"]
+reading = "くちびる"
 
 [[kanji]]
 char = "乏"
@@ -13965,6 +13971,11 @@ reading = "バク"
 [[kanji]]
 char = "露"
 default = "つゆ"
+
+# 「露わ (= あらわ)」 = 露 が あら、 送り仮名「わ」 続き。 prev 漢字 match より優先
+[[kanji.match]]
+next_starts_any = ["わ"]
+reading = "あら"
 
 [[kanji.match]]
 prev_char_type = "漢字"
