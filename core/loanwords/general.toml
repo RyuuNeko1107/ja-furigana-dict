@@ -302,6 +302,19 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 "beer" = "ビア"
 "whisky" = "ウイスキー"
 
+# ── 果物 (2026-06-19、 apple/orange は既出) ──
+"berry" = "ベリー"
+"strawberry" = "ストロベリー"
+"banana" = "バナナ"
+"grape" = "グレープ"
+"melon" = "メロン"
+"peach" = "ピーチ"
+"lemon" = "レモン"
+"cherry" = "チェリー"
+"mango" = "マンゴー"
+"kiwi" = "キウイ"
+"pineapple" = "パイナップル"
+
 # ── スポーツ ──
 "soccer" = "サッカー"
 "baseball" = "ベースボール"
@@ -376,6 +389,11 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 "fox" = "フォックス"
 "monkey" = "モンキー"
 "snake" = "スネーク"
+"elephant" = "エレファント"
+"panda" = "パンダ"
+"penguin" = "ペンギン"
+"frog" = "フロッグ"
+"duck" = "ダック"
 
 # ── 自然 ──
 "mountain" = "マウンテン"
@@ -450,6 +468,9 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 "store" = "ストア"
 "office" = "オフィス"
 "beach" = "ビーチ"
+"house" = "ハウス"
+"city" = "シティ"
+"town" = "タウン"
 
 # ── 時間 ──
 "morning" = "モーニング"
@@ -465,6 +486,7 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 "hour" = "アワー"
 "minute" = "ミニッツ"
 "second" = "セカンド"
+"time" = "タイム"
 
 # ── IT 補強 (一般 web 名詞) ──
 "app" = "アプリ"
@@ -509,6 +531,12 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 "mirror" = "ミラー"
 "lamp" = "ランプ"
 "box" = "ボックス"
+"bed" = "ベッド"
+"cup" = "カップ"
+"plate" = "プレート"
+"spoon" = "スプーン"
+"fork" = "フォーク"
+"knife" = "ナイフ"
 
 # ── 移動 ──
 "bus" = "バス"
