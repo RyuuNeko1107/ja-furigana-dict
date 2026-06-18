@@ -1,0 +1,72 @@
+# 2026-06-19 アルファベット/英単語 round 由来の dict 改善 回帰 lock。
+# 配信/ゲーミング loanword + letter読み略語の passthrough ギャップを埋めた。
+# loanwords/general.toml に追加 (exact-match、case-fold で小文字入力もマッチ)。
+
+# ─── ゲーミング loanword ───
+[[case]]
+input = "buff効果"
+mode = "hiragana"
+expected = "バフこうか"
+note = "旧 buff (passthrough)"
+
+[[case]]
+input = "debuffを解除"
+mode = "hiragana"
+expected = "デバフをかいじょ"
+
+[[case]]
+input = "respawn地点"
+mode = "hiragana"
+expected = "リスポーンちてん"
+
+[[case]]
+input = "pingが高い"
+mode = "hiragana"
+expected = "ピングがたかい"
+
+[[case]]
+input = "lagがひどい"
+mode = "hiragana"
+expected = "ラグがひどい"
+
+[[case]]
+input = "clutchを決める"
+mode = "hiragana"
+expected = "クラッチをきめる"
+
+[[case]]
+input = "aimが良い"
+mode = "hiragana"
+expected = "エイムがよい"
+
+[[case]]
+input = "今日のgoal"
+mode = "hiragana"
+expected = "きょうのゴール"
+
+[[case]]
+input = "ナイスfight"
+mode = "hiragana"
+expected = "ナイスファイト"
+
+# ─── letter読み略語 (HP/MP/SNS と同型) ───
+[[case]]
+input = "DPSが高い"
+mode = "hiragana"
+expected = "ディーピーエスがたかい"
+
+[[case]]
+input = "配信はOBSで"
+mode = "hiragana"
+expected = "はいしんはオービーエスで"
+
+[[case]]
+input = "PKされた"
+mode = "hiragana"
+expected = "ピーケーされた"
+
+# 回帰ガード: 既存 PIN=ピン は維持 (Ping=ピング と別)
+[[case]]
+input = "PINコードを入力"
+mode = "hiragana"
+expected = "ピンコードをにゅうりょく"
