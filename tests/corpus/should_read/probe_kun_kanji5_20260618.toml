@@ -1,0 +1,54 @@
+# 2026-06-18 自作例文 probe round 10 (単漢字訓 standalone)。
+# 物体/自然系単漢字は大半 ja 正読 (畝/網/渦/苗/茎/蕾/鞘/弓/矢/刃/縄/栓/蓋 等)。
+# 実バグは 田/鞭 の 2 字 (= default 音読みだが standalone は訓名詞)。
+#
+# - 田: default デン (水田/油田/田園) + 助詞続き standalone → た (田を耕す/田が広がる)。
+#       人名 山田/田中、音熟語 水田/塩田/炭田 は Lindera token で維持。
+# - 鞭: default ベン (鞭撻/教鞭/先鞭) + 助詞続き standalone → むち (鞭を振るう)。
+
+# ─── 田 ───
+[[case]]
+input = "田を耕す"
+mode = "hiragana"
+expected = "たをたがやす"
+note = "旧 でん"
+
+[[case]]
+input = "田が広がる"
+mode = "hiragana"
+expected = "たがひろがる"
+
+[[case]]
+input = "水田が広がる"
+mode = "hiragana"
+expected = "すいでんがひろがる"
+note = "デン 音熟語ガード"
+
+[[case]]
+input = "山田さん"
+mode = "hiragana"
+expected = "やまださん"
+note = "人名ガード"
+
+[[case]]
+input = "田園風景"
+mode = "hiragana"
+expected = "でんえんふうけい"
+
+# ─── 鞭 ───
+[[case]]
+input = "鞭を振るう"
+mode = "hiragana"
+expected = "むちをふるう"
+note = "旧 べん"
+
+[[case]]
+input = "教鞭をとる"
+mode = "hiragana"
+expected = "きょうべんをとる"
+note = "ベン 音熟語ガード"
+
+[[case]]
+input = "鞭撻を頂く"
+mode = "hiragana"
+expected = "べんたつをいただく"

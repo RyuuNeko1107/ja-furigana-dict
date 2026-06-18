@@ -9201,11 +9201,16 @@ default = "ユウ"
 char = "鋒"
 default = "ホウ"
 
-# 「鞭」 default 「ベン」 (= 鞭打/鞭撻/教鞭/先鞭)。
-# unihan default 「むち」 は単独名詞、 「鞭打つ」 = jukugo 個別
+# 「鞭」 default 「ベン」 (= 鞭撻/教鞭/先鞭)。
+# 単独名詞「鞭 (= むち)」 は助詞続きで むち (= 「鞭を振るう/鞭で打つ」)。
+# 鞭撻/教鞭 等の音熟語は次が漢字で default ベン のまま
 [[kanji]]
 char = "鞭"
 default = "ベン"
+
+[[kanji.match]]
+next_starts_any = ["を", "が", "の", "に", "は", "も", "で", "と", "へ"]
+reading = "むち"
 
 # 「饗」 default 「キョウ」 (= 饗宴/饗応/酒饗/晩饗)。
 # unihan default 「あえ」 は古語、 現代では熟語 dominant
@@ -15717,10 +15722,16 @@ default = "かわら"
 char = "産"
 default = "サン"
 
-# 「田」 default 「デン」 (= 水田/田園/油田、 音読み。 名前/地名「田中/田畑」 jukugo 経由)
+# 「田」 default 「デン」 (= 水田/田園/油田、 音読み。 名前/地名「田中/田畑」 jukugo 経由)。
+# 単独「田 (= たんぼ)」 は助詞続きで た (= 「田を耕す/田が広がる/田に植える」)。
+# 水田/油田/塩田 等の音熟語、 山田/田中 等の人名は Lindera 2-char token で吸収され非干渉
 [[kanji]]
 char = "田"
 default = "デン"
+
+[[kanji.match]]
+next_starts_any = ["を", "が", "に", "の", "は", "も", "で", "と", "へ"]
+reading = "た"
 
 # 「畑」 default 「はたけ」 (= 「畑/畑作/田畑/麦畑」 訓のみ、 国字)
 [[kanji]]
