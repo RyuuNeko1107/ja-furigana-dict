@@ -1,0 +1,44 @@
+# 2026-06-19 単漢字 nature noun 例文 由来の回帰 lock。
+# 自然系単漢字 (陰/谷/峰/底/闇/霧/影/炎/煙/泡/波/渦/潮/隅/角/淵/裏/奥/苔/獣/露/痕/蜜/巣)
+# は ja 完全成熟 (露=つゆ/角=かど は VV が誤)。実バグは 泉 のみ (風と同型)。
+
+# ─── 泉 = いずみ (形容詞/連体 + 泉 文末、 prev_ends_any 追加) ───
+[[case]]
+input = "古い泉"
+mode = "hiragana"
+expected = "ふるいいずみ"
+note = "旧 せん (next 助詞無し文末)"
+
+[[case]]
+input = "清らかな泉"
+mode = "hiragana"
+expected = "きよらかないずみ"
+
+[[case]]
+input = "湧き出る泉"
+mode = "hiragana"
+expected = "わきでるいずみ"
+note = "prev=る (動詞連体形)"
+
+# 回帰ガード: 泉 compound = セン
+[[case]]
+input = "温泉に入る"
+mode = "hiragana"
+expected = "おんせんにはいる"
+
+[[case]]
+input = "源泉かけ流し"
+mode = "hiragana"
+expected = "げんせんかけながし"
+
+# 成熟確認: nature 単漢字は文脈で正読
+[[case]]
+input = "木の陰に隠れる"
+mode = "hiragana"
+expected = "きのかげにかくれる"
+
+[[case]]
+input = "道の角を曲がる"
+mode = "hiragana"
+expected = "みちのかどをまがる"
+note = "かく ではない"
