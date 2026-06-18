@@ -8749,6 +8749,12 @@ default = "ヒ"
 next_starts_any = ["う", "わ", "い", "っ", "え", "お"]
 reading = "かば"
 
+# 「庇の下/庇が長い/庇を貸す」 = 名詞 ひさし (= 軒)。 助詞続きで切替
+# (庇護/庇蔭 は prev/next 漢字で default ヒ のまま)
+[[kanji.match]]
+next_starts_any = ["の", "が", "を", "に", "は", "も", "と", "で"]
+reading = "ひさし"
+
 # 「廻」 default 「カイ」 (= 廻覧/輪廻/転廻/巡廻)。
 # 動詞 「廻る/廻す」 は okurigana 列挙で 「まわ」 へ切替
 [[kanji]]
