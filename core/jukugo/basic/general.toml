@@ -6175,6 +6175,11 @@ weight = 35
 [entries."一途"]
 reading = "イチズ"
 
+# 「凋落/悪化/衰退 の一途 (をたどる)」 = イット (= 一筋の道)。 一途な/一途に = イチズ
+[[entries."一途".match]]
+prev_eq = "の"
+reading = "イット"
+
 [[entries."一途".alt]]
 reading = "イット"
 sense = "one-way"
