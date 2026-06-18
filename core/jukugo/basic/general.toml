@@ -6337,6 +6337,10 @@ reading = "ロウジョウ"
 [entries."仄暗い"]
 reading = "ホノグライ"
 
+# 仄々 = ほのぼの (同上、 仄 が「かたむく」 化け)
+[entries."仄々"]
+reading = "ホノボノ"
+
 # --- batch 7 ---
 
 [entries."四日"]

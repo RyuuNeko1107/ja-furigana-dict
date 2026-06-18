@@ -5705,9 +5705,14 @@ default = "ジュク"
 char = "燃"
 default = "ネン"
 
+# 「燥」 default ソウ (= 乾燥/焦燥)。 動詞「燥ぐ=はしゃぐ」 は送り仮名 ぐ/い/が/げ で はしゃ
 [[kanji]]
 char = "燥"
 default = "ソウ"
+
+[[kanji.match]]
+next_starts_any = ["ぐ", "い", "が", "げ"]
+reading = "はしゃ"
 
 [[kanji]]
 char = "爆"

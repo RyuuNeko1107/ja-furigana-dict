@@ -1,0 +1,41 @@
+# 2026-06-18 自作例文 probe round 13 (口語/当て字 + 仄/燥)。
+#
+# - 仄々=ほのぼの (仄 が IPADIC で「かたむく」 化け、 round2 の 仄暗い と同根)。
+# - 燥ぐ=はしゃぐ ([[kanji]] 燥 に next 送り仮名→はしゃ、 乾燥/焦燥 は ソウ 維持)。
+#
+# 几帳面=きちょうめん / 弄り=いじり / 律儀 / 我儘 等は ja 元から正読。
+# 吃逆 (しゃっくり) は稀な書字で保留。
+
+[[case]]
+input = "仄々とする"
+mode = "hiragana"
+expected = "ほのぼのとする"
+note = "旧 かたむくがたむく"
+
+[[case]]
+input = "燥いでいる"
+mode = "hiragana"
+expected = "はしゃいでいる"
+note = "旧 そういで"
+
+[[case]]
+input = "燥ぐ子供"
+mode = "hiragana"
+expected = "はしゃぐこども"
+
+[[case]]
+input = "乾燥する"
+mode = "hiragana"
+expected = "かんそうする"
+note = "ソウ ガード"
+
+[[case]]
+input = "焦燥感"
+mode = "hiragana"
+expected = "しょうそうかん"
+note = "ソウ ガード"
+
+[[case]]
+input = "仄暗い"
+mode = "hiragana"
+expected = "ほのぐらい"
