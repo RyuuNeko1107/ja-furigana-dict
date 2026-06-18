@@ -1,0 +1,42 @@
+# 2026-06-19 連濁 複合語 第3弾 由来の回帰 lock。
+# 木/水/草/茶/塩/豆/虫/魚/口/骨 系は ja 大半正、酒の漏れ2件のみ補充。
+# 雨水=あまみず/うすい は真の homograph (節気/排水 うすい) で見送り。
+
+[[case]]
+input = "濁り酒を飲む"
+mode = "hiragana"
+expected = "にごりざけをのむ"
+note = "旧 にごりさけ (甘酒/地酒/冷や酒/燗酒は正)"
+
+[[case]]
+input = "安酒であおる"
+mode = "hiragana"
+expected = "やすざけであおる"
+note = "旧 あんしゅ (訓+訓 連濁)"
+
+# 回帰ガード: 音読み酒は維持
+[[case]]
+input = "梅酒を漬ける"
+mode = "hiragana"
+expected = "うめしゅをつける"
+
+[[case]]
+input = "甘酒を飲む"
+mode = "hiragana"
+expected = "あまざけをのむ"
+
+# 成熟確認: 木/口/骨系は正読
+[[case]]
+input = "苗木を植える"
+mode = "hiragana"
+expected = "なえぎをうえる"
+
+[[case]]
+input = "蛇口をひねる"
+mode = "hiragana"
+expected = "じゃぐちをひねる"
+
+[[case]]
+input = "背骨が曲がる"
+mode = "hiragana"
+expected = "せぼねがまがる"
