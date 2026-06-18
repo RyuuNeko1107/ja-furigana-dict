@@ -6180,14 +6180,35 @@ reading = "イチズ"
 prev_eq = "の"
 reading = "イット"
 
-# 就中 = ナカンズク (= とりわけ、 文語)。 IPADIC は シュウチュウ と音読み
-[entries."就中"]
-reading = "ナカンズク"
-
 [[entries."一途".alt]]
 reading = "イット"
 sense = "one-way"
 weight = 15
+
+# ─── 当て字 副詞 / 接続詞 (= IPADIC が音読み or 化ける) ───
+# 就中 = ナカンズク (= とりわけ、 文語)
+[entries."就中"]
+reading = "ナカンズク"
+
+# 愈々 = イヨイヨ (愈 単独が full読み「いよいよ」 で 々 が二重化 → イヨイヨイヨイヨ)
+[entries."愈々"]
+reading = "イヨイヨ"
+
+# 尚且つ = ナオカツ (尚 default ショウ で しょうかつ に化ける)
+[entries."尚且つ"]
+reading = "ナオカツ"
+
+# 尚更 = ナオサラ (同上)
+[entries."尚更"]
+reading = "ナオサラ"
+
+# 彼方此方 = アチコチ (= かなたこれかた と破損)
+[entries."彼方此方"]
+reading = "アチコチ"
+
+# 直向き = ヒタムキ (直 default ちょく で ちょくむき に化ける)
+[entries."直向き"]
+reading = "ヒタムキ"
 
 [entries."食物"]
 reading = "ショクモツ"
