@@ -1,0 +1,45 @@
+# 2026-06-19 沖縄 難読地名 第16弾。北谷=ちゃたん/読谷=よみたん/今帰仁=なきじん/
+# 南風原=はえばる/嘉手納=かでな/古宇利=こうり/宜野湾=ぎのわん は ja 正読。
+# 本部=ほんぶ(一般語)は homograph で見送り。
+
+[[case]]
+input = "東風平"
+mode = "hiragana"
+expected = "こちんだ"
+note = "八重瀬町 (全壊 こちひら)"
+
+[[case]]
+input = "喜屋武"
+mode = "hiragana"
+expected = "きゃん"
+note = "喜屋武岬、拗音 (旧 きやん)"
+
+[[case]]
+input = "浦添"
+mode = "hiragana"
+expected = "うらそえ"
+note = "連濁誤 うらぞえ"
+
+[[case]]
+input = "喜友名"
+mode = "hiragana"
+expected = "きゆな"
+note = "宜野湾市 (旧 きゅうな)"
+
+[[case]]
+input = "八重瀬"
+mode = "hiragana"
+expected = "やえせ"
+note = "八重=やえ (全壊 はちじゅうせ)"
+
+[[case]]
+input = "慶良間"
+mode = "hiragana"
+expected = "けらま"
+note = "慶良間諸島 (全壊 けいりょうかん)"
+
+[[case]]
+input = "首里"
+mode = "hiragana"
+expected = "しゅり"
+note = "首里城、首=しゅ (旧 くびり)"
