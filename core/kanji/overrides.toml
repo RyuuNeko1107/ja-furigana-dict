@@ -3362,9 +3362,15 @@ default = "ケン"
 char = "危"
 default = "キ"
 
+# 「厳」 default ゲン (= 厳格/威厳/厳重)。 厳か=おごそか は Lindera token。
+# 「厳めしい (= いかめしい)」 は送り仮名「め」 続きで いか
 [[kanji]]
 char = "厳"
 default = "ゲン"
+
+[[kanji.match]]
+next_starts_any = ["め"]
+reading = "いか"
 
 [[kanji]]
 char = "哲"
@@ -12165,9 +12171,10 @@ reading = "さ"
 prev_eq = "本"
 reading = "ゆび"
 
-# 「その指 / この指」 等、 の+指 の bare 末尾 → ゆび
+# 「その指 / この指 / 細い指 / 長い指 / 嫋やかな指」 等、 助詞 or 形容詞活用語尾
+# (の/い/な) の後に 指 が bare 末尾で来る case → ゆび (= 文末で next 助詞 match が効かない)
 [[kanji.match]]
-prev_ends_any = ["の"]
+prev_ends_any = ["の", "い", "な"]
 reading = "ゆび"
 
 [[kanji.match]]
