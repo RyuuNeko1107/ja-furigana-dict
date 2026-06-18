@@ -1,0 +1,49 @@
+# 2026-06-18 自作例文 probe round 14 (日付/時刻 熟字訓 + 〜時 連濁)。
+#
+# - 皐月晴れ=さつきばれ (五月晴れ は既に正読だが皐月表記は連濁抜け)。
+# - 名詞+時 (= 時刻でなく「〜のとき」) は どき 連濁: 昼時=ひるどき (時刻 counter じ に化け)、
+#   日暮れ時/夕暮れ時=どき (とき 連濁抜け)。潮時/引け時 は Lindera で正読、
+#   動詞+時 (寝る時=とき) は連濁しないので維持。
+#
+# 一昨年=おととし / 二十歳=はたち / 神無月=かんなづき / 卯月=うづき /
+# 朝餉=あさげ / 五月雨=さみだれ は ja 元から正読。
+
+[[case]]
+input = "皐月晴れ"
+mode = "hiragana"
+expected = "さつきばれ"
+note = "旧 さつきはれ"
+
+[[case]]
+input = "昼時に混む"
+mode = "hiragana"
+expected = "ひるどきにこむ"
+note = "旧 ひるじ"
+
+[[case]]
+input = "日暮れ時"
+mode = "hiragana"
+expected = "ひぐれどき"
+note = "旧 ひぐれとき"
+
+[[case]]
+input = "夕暮れ時"
+mode = "hiragana"
+expected = "ゆうぐれどき"
+
+# ─── ガード ───
+[[case]]
+input = "寝る時"
+mode = "hiragana"
+expected = "ねるとき"
+note = "動詞+時 は とき 維持"
+
+[[case]]
+input = "潮時"
+mode = "hiragana"
+expected = "しおどき"
+
+[[case]]
+input = "五月晴れ"
+mode = "hiragana"
+expected = "さつきばれ"

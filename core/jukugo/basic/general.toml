@@ -6243,6 +6243,21 @@ reading = "カンブツ"
 [entries."依代"]
 reading = "ヨリシロ"
 
+# 皐月晴れ = サツキバレ (五月晴れ は既に正読だが皐月表記は連濁が抜けて さつきはれ)
+[entries."皐月晴れ"]
+reading = "サツキバレ"
+
+# 名詞+時 (= 時刻でなく「〜のとき」) は どき 連濁。 潮時/引け時 は Lindera で正読だが
+# 昼時 (= 時刻 counter じ に化け)・日暮れ時/夕暮れ時 (= とき 連濁抜け) を jukugo で救済
+[entries."昼時"]
+reading = "ヒルドキ"
+
+[entries."日暮れ時"]
+reading = "ヒグレドキ"
+
+[entries."夕暮れ時"]
+reading = "ユウグレドキ"
+
 [entries."食物"]
 reading = "ショクモツ"
 
