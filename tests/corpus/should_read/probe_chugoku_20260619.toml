@@ -1,0 +1,21 @@
+# 2026-06-19 中国・四国 難読地名 probe 由来の回帰 lock。
+# 安来=やすぎ/智頭=ちず/大歩危=おおぼけ/餘部=あまるべ/讃岐=さぬき 等は ja 正読。
+# 三次=さんじ(技術語)/観音寺=かんのんじ(一般寺)/須崎(両義) は homograph で見送り。
+
+[[case]]
+input = "廿日市"
+mode = "hiragana"
+expected = "はつかいち"
+note = "市=いち (四日市と同型、旧 はつかし)"
+
+[[case]]
+input = "美作"
+mode = "hiragana"
+expected = "みまさか"
+note = "旧国名、作=さか (旧 みさく)"
+
+[[case]]
+input = "大洲"
+mode = "hiragana"
+expected = "おおず"
+note = "愛媛、洲=ず 連濁 (旧 おおす)"
