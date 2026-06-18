@@ -16,6 +16,7 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 [entries]
 
 # ── A ──
+"AFK" = "エーエフケー"
 "Aim" = "エイム"
 "AR" = "エーアール"
 "ASAP" = "エーサップ"
@@ -25,6 +26,7 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 "BGM" = "ビージーエム"
 "Buff" = "バフ"
 "BL" = "ビーエル"
+"BRB" = "ビーアールビー"
 "BTW" = "ビーティーダブリュー"
 
 # ── C ──
@@ -48,6 +50,7 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 # ── E ──
 "ED" = "イーディー"
 "EU" = "イーユー"
+"EZ" = "イージー"
 
 # ── F ──
 "FAQ" = "エフエーキュー"
@@ -125,8 +128,12 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 
 # ── V ──
 "VC" = "ブイシー"
+"VOD" = "ブイオーディー"
 "VR" = "ブイアール"
 "VTuber" = "ブイチューバー"
+
+# ── W ──
+"WP" = "ダブリューピー"
 
 # ── lowercase 英単語 ──
 "bot" = "ボット"
@@ -192,6 +199,56 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 "viewer" = "ビューワー"
 "stream" = "ストリーム"
 "archive" = "アーカイブ"
+
+# ── ゲーミング / eスポーツ / 配信スラング (2026-06-19 自作例文) ──
+"nerf" = "ナーフ"
+"tier" = "ティア"
+"combo" = "コンボ"
+"cooldown" = "クールダウン"
+"stun" = "スタン"
+"dodge" = "ドッジ"
+"parry" = "パリィ"
+"kill" = "キル"
+"death" = "デス"
+"assist" = "アシスト"
+"rank" = "ランク"
+"queue" = "キュー"
+"lobby" = "ロビー"
+"match" = "マッチ"
+"score" = "スコア"
+"retry" = "リトライ"
+"checkpoint" = "チェックポイント"
+"spawn" = "スポーン"
+"mob" = "モブ"
+"raid" = "レイド"
+"drop" = "ドロップ"
+"craft" = "クラフト"
+"gear" = "ギア"
+"counter" = "カウンター"
+"block" = "ブロック"
+"tank" = "タンク"
+"support" = "サポート"
+"carry" = "キャリー"
+"feed" = "フィード"
+"gank" = "ギャンク"
+"push" = "プッシュ"
+"farm" = "ファーム"
+"lane" = "レーン"
+"ward" = "ワード"
+"flash" = "フラッシュ"
+"subscribe" = "サブスクライブ"
+"follow" = "フォロー"
+"donate" = "ドネート"
+"emote" = "エモート"
+"ban" = "バン"
+"noob" = "ヌーブ"
+"pro" = "プロ"
+"smurf" = "スマーフ"
+"tryhard" = "トライハード"
+"broken" = "ブロークン"
+"insane" = "インセイン"
+"choke" = "チョーク"
+"throw" = "スロー"
 
 # ── メディア ──
 "news" = "ニュース"
