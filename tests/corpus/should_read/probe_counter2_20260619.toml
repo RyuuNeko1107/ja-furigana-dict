@@ -1,0 +1,74 @@
+# 2026-06-19 助数詞 系統チェック 由来の回帰 lock。
+# simple.toml の 16 助数詞が kanji_numeral 無し + promotion 無しで
+# 「一話=いちはなし/一曲=いちきょく」 に化けていた。objects.toml へ移動。
+
+# ─── base reading 修正 (漢数字 bare 不発で default 化けてた) ───
+[[case]]
+input = "アニメの第一話"
+mode = "hiragana"
+expected = "アニメのだいいちわ"
+note = "旧 だいいちはなし (話=ワ counter)"
+
+[[case]]
+input = "一日六便の運行"
+mode = "hiragana"
+expected = "いちにちろくびんのうんこう"
+note = "数字+便=びん (便=ビン counter)。 非数値 最終便=べん は別 issue"
+
+# ─── 促音 (k系 1/6/8/10) ───
+[[case]]
+input = "六缶パック"
+mode = "hiragana"
+expected = "ろっかんパック"
+note = "旧 ろくかん"
+
+[[case]]
+input = "一曲歌う"
+mode = "hiragana"
+expected = "いっきょくうたう"
+note = "旧 いちきょく"
+
+[[case]]
+input = "戦闘機六機"
+mode = "hiragana"
+expected = "せんとうきろっき"
+
+# ─── 促音 (s/t系 1/8/10) ───
+[[case]]
+input = "三勝一敗"
+mode = "hiragana"
+expected = "さんしょういっぱい"
+note = "勝=1促音いっしょう、敗=1促音半濁いっぱい"
+
+[[case]]
+input = "豆腐一丁"
+mode = "hiragana"
+expected = "とうふいっちょう"
+
+[[case]]
+input = "六丁目"
+mode = "hiragana"
+expected = "ろくちょうめ"
+note = "旧 丁=てい 化け"
+
+# ─── 半濁 (p系) ───
+[[case]]
+input = "一品料理を頼む"
+mode = "hiragana"
+expected = "いっぴんりょうりをたのむ"
+
+# 回帰ガード: counter でない 話/便/砲/色 等
+[[case]]
+input = "昔話を聞く"
+mode = "hiragana"
+expected = "むかしばなしをきく"
+
+[[case]]
+input = "便利な道具"
+mode = "hiragana"
+expected = "べんりなどうぐ"
+
+[[case]]
+input = "鉄砲を撃つ"
+mode = "hiragana"
+expected = "てっぽうをうつ"

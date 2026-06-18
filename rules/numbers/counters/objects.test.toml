@@ -70,3 +70,28 @@ expected = "いっぴょう"
 [[test]]
 input = "三票"
 expected = "さんびょう"
+
+# ─── simple→objects 移動 counter promotion (2026-06-19) ───
+[[test]]
+input = "一話"
+expected = "いちわ"
+
+[[test]]
+input = "一曲"
+expected = "いっきょく"
+
+[[test]]
+input = "六機"
+expected = "ろっき"
+
+[[test]]
+input = "一品"
+expected = "いっぴん"
+
+[[test]]
+input = "六丁"
+expected = "ろくちょう"
+
+[[test]]
+input = "三砲"
+expected = "さんぼう"

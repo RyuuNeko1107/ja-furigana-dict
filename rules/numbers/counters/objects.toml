@@ -561,3 +561,164 @@ sokuonize = true
 last_digit = [3]
 suffix = "ビョウ"
 # === end: 票 ===
+
+# ───────────────────────────────────────────────────────────────
+# simple.toml から移動 (2026-06-19): 漢数字 bare + 促音/連濁 promotion 対応。
+# simple.toml は kanji_numeral 無し + promotion 無しのため「一話=いちはなし/一曲=いちきょく」
+# 等に化けていた。objects.toml の counter rule で漢数字 gate + 促音化を付与。
+# ───────────────────────────────────────────────────────────────
+
+# 話 (アニメ/物語の話数): 一話=いちわ/六話=ろくわ (漢数字 bare 対応、促音なし)
+[counter."話"]
+default = "ワ"
+kanji_numeral = true
+# === end: 話 ===
+
+# 便 (フライト/配送の便): 一便=いちびん/六便=ろくびん (漢数字 bare 対応、促音なし)
+[counter."便"]
+default = "ビン"
+kanji_numeral = true
+# === end: 便 ===
+
+# 缶 (飲料缶): 一缶=いっかん/六缶=ろっかん/八缶=はっかん (k系 1/6/8/10 促音)
+[counter."缶"]
+default = "カン"
+kanji_numeral = true
+[[counter."缶".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カン"
+sokuonize = true
+# === end: 缶 ===
+
+# 校 (学校/校正): 一校=いっこう/六校=ろっこう/八校=はっこう
+[counter."校"]
+default = "コウ"
+kanji_numeral = true
+[[counter."校".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "コウ"
+sokuonize = true
+# === end: 校 ===
+
+# 機 (航空機): 一機=いっき/六機=ろっき/八機=はっき
+[counter."機"]
+default = "キ"
+kanji_numeral = true
+[[counter."機".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "キ"
+sokuonize = true
+# === end: 機 ===
+
+# 曲 (楽曲): 一曲=いっきょく/六曲=ろっきょく/八曲=はっきょく
+[counter."曲"]
+default = "キョク"
+kanji_numeral = true
+[[counter."曲".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "キョク"
+sokuonize = true
+# === end: 曲 ===
+
+# 期 (期/期生): 一期=いっき/六期=ろっき/八期=はっき (一期一会は別 jukugo)
+[counter."期"]
+default = "キ"
+kanji_numeral = true
+[[counter."期".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "キ"
+sokuonize = true
+# === end: 期 ===
+
+# 社 (会社): 一社=いっしゃ/八社=はっしゃ (s系 1/8/10、6=ろくしゃ)
+[counter."社"]
+default = "シャ"
+kanji_numeral = true
+[[counter."社".rules]]
+last_digit = [1, 8, 0]
+suffix = "シャ"
+sokuonize = true
+# === end: 社 ===
+
+# 勝 (勝数): 一勝=いっしょう/八勝=はっしょう (6=ろくしょう)
+[counter."勝"]
+default = "ショウ"
+kanji_numeral = true
+[[counter."勝".rules]]
+last_digit = [1, 8, 0]
+suffix = "ショウ"
+sokuonize = true
+# === end: 勝 ===
+
+# 周 (周回): 一周=いっしゅう/八周=はっしゅう (6=ろくしゅう)
+[counter."周"]
+default = "シュウ"
+kanji_numeral = true
+[[counter."周".rules]]
+last_digit = [1, 8, 0]
+suffix = "シュウ"
+sokuonize = true
+# === end: 周 ===
+
+# 丁 (豆腐/拳銃/丁): 一丁=いっちょう/八丁=はっちょう (6=ろくちょう、旧 ろくてい 誤)
+[counter."丁"]
+default = "チョウ"
+kanji_numeral = true
+[[counter."丁".rules]]
+last_digit = [1, 8, 0]
+suffix = "チョウ"
+sokuonize = true
+# === end: 丁 ===
+
+# 滴 (しずく): 一滴=いってき/八滴=はってき (6=ろくてき)
+[counter."滴"]
+default = "テキ"
+kanji_numeral = true
+[[counter."滴".rules]]
+last_digit = [1, 8, 0]
+suffix = "テキ"
+sokuonize = true
+# === end: 滴 ===
+
+# 色 (いろ数): 一色=いっしょく/八色=はっしょく (6=ろくしょく)
+[counter."色"]
+default = "ショク"
+kanji_numeral = true
+[[counter."色".rules]]
+last_digit = [1, 8, 0]
+suffix = "ショク"
+sokuonize = true
+# === end: 色 ===
+
+# 品 (料理/商品): 一品=いっぴん/六品=ろっぴん/八品=はっぴん (p系 半濁ピン 1/6/8/10)
+[counter."品"]
+default = "ヒン"
+kanji_numeral = true
+[[counter."品".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "ピン"
+sokuonize = true
+# === end: 品 ===
+
+# 敗 (敗数): 一敗=いっぱい/六敗=ろっぱい/八敗=はっぱい (p系 半濁パイ)
+[counter."敗"]
+default = "ハイ"
+kanji_numeral = true
+[[counter."敗".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "パイ"
+sokuonize = true
+# === end: 敗 ===
+
+# 砲 (大砲): 一砲=いっぽう/六砲=ろっぽう/八砲=はっぽう、三砲=さんぼう (p系 半濁ポウ + 3連濁ボウ)
+[counter."砲"]
+default = "ホウ"
+kanji_numeral = true
+[[counter."砲".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "ポウ"
+sokuonize = true
+[[counter."砲".rules]]
+last_digit = [3]
+suffix = "ボウ"
+# === end: 砲 ===
