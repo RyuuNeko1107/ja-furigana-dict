@@ -72,3 +72,27 @@ expected = "べんりなどうぐ"
 input = "鉄砲を撃つ"
 mode = "hiragana"
 expected = "てっぽうをうつ"
+
+# ─── 第2弾: 袋/段目/曲目 (漢数字 bare 不発の追加分) ───
+[[case]]
+input = "お菓子を三袋"
+mode = "hiragana"
+expected = "おかしをさんぶくろ"
+note = "旧 さんたい (袋=タイ 化け)、3 連濁ぶくろ"
+
+[[case]]
+input = "下から三段目"
+mode = "hiragana"
+expected = "したからさんだんめ"
+note = "旧 さんだんもく (目=もく 化け)"
+
+[[case]]
+input = "一曲目を演奏"
+mode = "hiragana"
+expected = "いっきょくめをえんそう"
+note = "旧 いちきょくもく、促音いっ"
+
+[[case]]
+input = "手袋をはめる"
+mode = "hiragana"
+expected = "てぶくろをはめる"

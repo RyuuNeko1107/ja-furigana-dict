@@ -722,3 +722,28 @@ sokuonize = true
 last_digit = [3]
 suffix = "ボウ"
 # === end: 砲 ===
+
+# 段目 (棚/階段の段): 一段目=いちだんめ/六段目=ろくだんめ (漢数字 bare 対応、促音なし。旧 だんもく 化け)
+[counter."段目"]
+default = "ダンメ"
+kanji_numeral = true
+# === end: 段目 ===
+
+# 曲目 (演奏順): 一曲目=いっきょくめ/六曲目=ろっきょくめ/八曲目=はっきょくめ (k系促音、旧 きょくもく 化け)
+[counter."曲目"]
+default = "キョクメ"
+kanji_numeral = true
+[[counter."曲目".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "キョクメ"
+sokuonize = true
+# === end: 曲目 ===
+
+# 袋 (ふくろ): 一袋=いちふくろ/三袋=さんぶくろ/六袋=ろくふくろ (漢数字 bare 対応、3 連濁。旧 袋=タイ 化け)
+[counter."袋"]
+default = "フクロ"
+kanji_numeral = true
+[[counter."袋".rules]]
+last_digit = [3]
+suffix = "ブクロ"
+# === end: 袋 ===
