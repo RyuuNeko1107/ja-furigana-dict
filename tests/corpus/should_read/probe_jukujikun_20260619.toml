@@ -1,0 +1,42 @@
+# 2026-06-19 熟字訓 例文 由来の回帰 lock。
+# 熟字訓は ja 圧倒的に正読 (海月=くらげ/心太=ところてん/蟷螂=かまきり/吾亦紅=われもこう/
+# 善知鳥=うとう/不如帰=ほととぎす/啄木鳥=きつつき 等 VV を凌駕)。実バグは 棘 default のみ。
+
+# ─── 棘 = とげ (unihan いばら→とげ。とげが支配的) ───
+[[case]]
+input = "棘が刺さる"
+mode = "hiragana"
+expected = "とげがささる"
+note = "旧 いばら"
+
+[[case]]
+input = "薔薇の棘"
+mode = "hiragana"
+expected = "ばらのとげ"
+
+[[case]]
+input = "棘のある言葉"
+mode = "hiragana"
+expected = "とげのあることば"
+
+# 回帰ガード: 棘=キョク compound / 茨=いばら 別字
+[[case]]
+input = "棘皮動物"
+mode = "hiragana"
+expected = "きょくひどうぶつ"
+
+[[case]]
+input = "茨の道を行く"
+mode = "hiragana"
+expected = "いばらのみちをいく"
+
+# 成熟確認: 熟字訓
+[[case]]
+input = "海月が浮かぶ"
+mode = "hiragana"
+expected = "くらげがうかぶ"
+
+[[case]]
+input = "土竜を捕まえる"
+mode = "hiragana"
+expected = "もぐらをつかまえる"
