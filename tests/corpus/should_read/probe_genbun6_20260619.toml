@@ -1,0 +1,46 @@
+# 2026-06-19 自作例文 round 6 由来の dict 改善 回帰 lock。
+# 難読動詞 (full-reading 二重化 / default 誤)。詳細: cands7_20260619.txt。
+# ★難読動詞 vein は ja 大半正読 (蹲る/俯く/誑かす/罵る/呻く/喘ぐ/捗る/迸る 等)、実バグは4字のみ。
+
+# ─── 慄く = おののく (戦慄/慄然 は リツ 維持) ───
+[[case]]
+input = "恐怖に慄く"
+mode = "hiragana"
+expected = "きょうふにおののく"
+note = "旧 りつく"
+
+[[case]]
+input = "戦慄が走る"
+mode = "hiragana"
+expected = "せんりつがはしる"
+
+# ─── 顫える = ふるえる (unihan 顫=ふるえる→ふる、二重化解消) ───
+[[case]]
+input = "顫える指"
+mode = "hiragana"
+expected = "ふるえるゆび"
+note = "旧 ふるえるえる (full-reading 二重化)"
+
+# ─── 捥ぐ = もぐ (unihan 捥=ワン→も) ───
+[[case]]
+input = "捥ぎ取る"
+mode = "hiragana"
+expected = "もぎとる"
+note = "旧 わんぎとる"
+
+[[case]]
+input = "林檎を捥ぐ"
+mode = "hiragana"
+expected = "りんごをもぐ"
+
+# ─── 抉じ開ける = こじあける (抉る=えぐる は維持) ───
+[[case]]
+input = "扉を抉じ開ける"
+mode = "hiragana"
+expected = "とびらをこじあける"
+note = "旧 えぐるじあける"
+
+[[case]]
+input = "傷口を抉る"
+mode = "hiragana"
+expected = "きずぐちをえぐる"

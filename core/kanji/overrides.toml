@@ -3332,6 +3332,11 @@ default = "シュウ"
 char = "慄"
 default = "リツ"
 
+# 動詞「慄く」=おののく (戦慄/慄然 は リツ 維持)
+[[kanji.match]]
+next_starts_any = ["く", "い", "か", "け", "こ"]
+reading = "おのの"
+
 [[kanji]]
 char = "慌"
 default = "コウ"
@@ -12222,10 +12227,10 @@ reading = "さ"
 prev_eq = "本"
 reading = "ゆび"
 
-# 「その指 / この指 / 細い指 / 長い指 / 嫋やかな指」 等、 助詞 or 形容詞活用語尾
-# (の/い/な) の後に 指 が bare 末尾で来る case → ゆび (= 文末で next 助詞 match が効かない)
+# 「その指 / この指 / 細い指 / 長い指 / 嫋やかな指 / 顫える指 / 曲げた指」 等、 助詞 or
+# 活用語尾 (の/い/な/る/た) の後に 指 が bare 末尾で来る case → ゆび (= 文末で next 助詞 match が効かない)
 [[kanji.match]]
-prev_ends_any = ["の", "い", "な"]
+prev_ends_any = ["の", "い", "な", "る", "た"]
 reading = "ゆび"
 
 [[kanji.match]]
