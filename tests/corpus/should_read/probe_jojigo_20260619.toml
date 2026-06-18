@@ -1,0 +1,44 @@
+# 2026-06-19 畳語々/地名/homograph 例文 probe 由来の回帰 lock。
+# 連濁複合語 vein は成熟確認 (47/49)、畳語々 literary tail も密度低下 (35/37) だが
+# 常用語 (日々/代々木/易々) と頻出地名/四字熟語に実バグが残存。
+
+# ─── 旋風 = センプウ (旧 ツムジカゼ。○○旋風/旋風を巻き起こす が dominant) ───
+[[case]]
+input = "旋風を巻き起こす"
+mode = "hiragana"
+expected = "せんぷうをまきおこす"
+note = "旧 つむじかぜ"
+
+# ─── 日々 = ヒビ (旧 にちにち。「な日々」文脈は正だが bare で化け) ───
+[[case]]
+input = "日々"
+mode = "hiragana"
+expected = "ひび"
+note = "旧 にちにち (standalone)"
+
+# ─── 易々 = ヤスヤス (旧 えきえき。益々 と同型の々 dead-match) ───
+[[case]]
+input = "易々と"
+mode = "hiragana"
+expected = "やすやすと"
+note = "旧 えきえきと"
+
+# ─── 明々白々 = メイメイハクハク (旧 はくばく 連濁誤) ───
+[[case]]
+input = "明々白々"
+mode = "hiragana"
+expected = "めいめいはくはく"
+note = "旧 めいめいはくばく"
+
+# ─── 代々木 = ヨヨギ (旧 だいだいもく。代々木公園/上原) ───
+[[case]]
+input = "代々木公園"
+mode = "hiragana"
+expected = "よよぎこうえん"
+note = "旧 だいだいもく"
+
+[[case]]
+input = "代々木上原"
+mode = "hiragana"
+expected = "よよぎうえはら"
+note = "上原 が うえげん に破損"
