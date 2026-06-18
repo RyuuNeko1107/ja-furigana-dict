@@ -398,3 +398,41 @@ sokuonize = true
 default = "ジョウ"
 kanji_numeral = true  # 六畳/八畳 → ろくじょう/はちじょう (元 simple.toml、 漢数字 bare 対応で移動)
 # === end: 畳 ===
+
+# === begin: 艘 === (船、 1/8/10 で促音化。 六艘=ろくそう は促音化しない、 ★2026-06-18)
+# 元 simple.toml の「艘 = ソウ」 を移動 (= 漢数字 三艘=さんふね 誤読を kanji_numeral で解消)
+[counter."艘"]
+default = "ソウ"
+kanji_numeral = true  # 一艘/八艘 → いっそう/はっそう、 三艘=さんそう (漢数字 bare 対応)
+
+[[counter."艘".rules]]
+last_digit = [1, 8, 0]
+suffix = "ソウ"
+sokuonize = true
+# === end: 艘 ===
+
+# === begin: 斤 === (食パン等、 1/6/8/10 で促音化。 ★2026-06-18)
+[counter."斤"]
+default = "キン"
+kanji_numeral = true  # 一斤/六斤/八斤 → いっきん/ろっきん/はっきん (漢数字 bare 対応)
+
+[[counter."斤".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "キン"
+sokuonize = true
+# === end: 斤 ===
+
+# === begin: 俵 === (米俵等、 1/6/8/10 で促音化 + ピョウ、 3 で連濁ビョウ。 ★2026-06-18)
+[counter."俵"]
+default = "ヒョウ"
+kanji_numeral = true  # 一俵/六俵 → いっぴょう/ろっぴょう、 三俵=さんびょう (漢数字 bare 対応)
+
+[[counter."俵".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "ピョウ"
+sokuonize = true
+
+[[counter."俵".rules]]
+last_digit = [3]
+suffix = "ビョウ"
+# === end: 俵 ===

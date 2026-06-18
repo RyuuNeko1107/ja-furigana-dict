@@ -6210,6 +6210,14 @@ reading = "アチコチ"
 [entries."直向き"]
 reading = "ヒタムキ"
 
+# 足 は counter 化すると「一足=ひとあし / 二足=にそく」 が衝突するため counter 不採用。
+# 固定熟語の 二足歩行/四足歩行 のみ jukugo で ニソク/ヨンソク
+[entries."二足歩行"]
+reading = "ニソクホコウ"
+
+[entries."四足歩行"]
+reading = "ヨンソクホコウ"
+
 [entries."食物"]
 reading = "ショクモツ"
 
