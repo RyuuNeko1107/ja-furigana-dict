@@ -1,0 +1,47 @@
+# 2026-06-19 難読駅名 probe 第6弾 (西鉄/名鉄/仙台/広島)。
+# ja は大半の難読駅を正読 (雑餉隈=ざっしょのくま/白木原=しらきばる/都府楼前/勾当台公園/
+# 八乙女/五稜郭/名谷/皆実町 等)。kanji default 化け + 九州の原=ばる の漏れのみ補充。
+# homograph (前原=まえはら姓/横川/筑紫=つくし) は default 委ねで見送り。
+
+[[case]]
+input = "春日原"
+mode = "hiragana"
+expected = "かすがばる"
+note = "原=ばる (旧 かすがげん)"
+
+[[case]]
+input = "聚楽園"
+mode = "hiragana"
+expected = "じゅらくえん"
+note = "聚=じゅ (旧 しゅうらくえん)"
+
+[[case]]
+input = "太田川"
+mode = "hiragana"
+expected = "おおたがわ"
+note = "川=せん に化け (旧 おおたせん)"
+
+[[case]]
+input = "台原"
+mode = "hiragana"
+expected = "だいのはら"
+note = "の脱落 (旧 だいはら)"
+
+[[case]]
+input = "紙屋町"
+mode = "hiragana"
+expected = "かみやちょう"
+note = "町=ちょう (旧 かみやまち)"
+
+[[case]]
+input = "江波"
+mode = "hiragana"
+expected = "えば"
+note = "連濁 (旧 えは)"
+
+# 正読維持の確認 (九州 原=ばる は大半正)
+[[case]]
+input = "白木原"
+mode = "hiragana"
+expected = "しらきばる"
+note = "原=ばる、ja 正読 (春日原と兄弟)"
