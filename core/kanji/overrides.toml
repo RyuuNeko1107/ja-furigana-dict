@@ -11291,6 +11291,12 @@ reading = "みや"
 char = "宴"
 default = "エン"
 
+# 「〜の宴」 = うたげ (= 酒池肉林の宴/夜の宴)。 prev=の の standalone 宴 のみ。
+# next 助詞 rule は 晩宴/華宴/茶宴 を split して誤爆するため不採用 (宴-initial 慣用句は jukugo)
+[[kanji.match]]
+prev_eq = "の"
+reading = "うたげ"
+
 # 「宿」 default 「シュク」 (= 宿題/宿泊/宿命/合宿/民宿/旅宿/星宿)。
 # 単独 + 助詞接続 → 「やど」 (= 「宿が/宿に」 等)
 [[kanji]]

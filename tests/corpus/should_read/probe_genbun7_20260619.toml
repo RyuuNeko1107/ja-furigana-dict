@@ -1,0 +1,37 @@
+# 2026-06-19 自作例文 round 7 由来の dict 改善 回帰 lock。
+# 宴 homograph (の宴=うたげ)。詳細: cands8_20260619.txt。
+# ★配信慣用句・四字熟語22個は ja 全正 (油断大敵/朝令暮改/換骨奪胎/画竜点睛/呉越同舟…)、実バグは宴のみ。
+
+# ─── 宴 = うたげ (「〜の宴」 + 宴-initial 慣用句) ───
+[[case]]
+input = "酒池肉林の宴"
+mode = "hiragana"
+expected = "しゅちにくりんのうたげ"
+note = "旧 えん。 prev=の の standalone 宴 → うたげ"
+
+[[case]]
+input = "夜の宴"
+mode = "hiragana"
+expected = "よるのうたげ"
+
+[[case]]
+input = "宴もたけなわ"
+mode = "hiragana"
+expected = "うたげもたけなわ"
+note = "宴-initial、 prev=の 不発につき jukugo 固定"
+
+# 回帰ガード: 宴 compound = エン 維持 (next 助詞 rule は晩宴等を割るため不採用)
+[[case]]
+input = "晩宴に招く"
+mode = "hiragana"
+expected = "ばんえんにまねく"
+
+[[case]]
+input = "宴会場"
+mode = "hiragana"
+expected = "えんかいじょう"
+
+[[case]]
+input = "披露宴に出席"
+mode = "hiragana"
+expected = "ひろうえんにしゅっせき"
