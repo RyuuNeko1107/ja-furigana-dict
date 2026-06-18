@@ -6235,6 +6235,14 @@ reading = "コウジイロ"
 [entries."黄土色"]
 reading = "オウドイロ"
 
+# 乾物 = カンブツ (= 干した食品。 IPADIC が ヒモノ と誤マッピング、 干物=ひもの とは別語)
+[entries."乾物"]
+reading = "カンブツ"
+
+# 依代 = ヨリシロ (= 神霊が宿る物、 神道用語)。 IPADIC は 依=イ + 代=ダイ で いだい
+[entries."依代"]
+reading = "ヨリシロ"
+
 [entries."食物"]
 reading = "ショクモツ"
 

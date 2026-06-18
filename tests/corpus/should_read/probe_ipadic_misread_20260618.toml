@@ -1,0 +1,42 @@
+# 2026-06-18 自作例文 probe round 12 (IPADIC 誤マッピング / 接尾辞)。
+#
+# - 乾物=カンブツ (IPADIC が ヒモノ と誤読。 干物=ひもの とは別語)。
+# - 依代=ヨリシロ (IPADIC は 依イ+代ダイ で いだい)。
+#
+# 人気がない=ひとけ / 十八番=おはこ / 出来立て=できたて / 続柄=つづきがら /
+# 貼付=ちょうふ は ja 元から正読。名代 (なだい/みょうだい)・月代 (さかやき)・
+# 寒気 (さむけ/かんき) は文脈曖昧 or 超ニッチで保留。
+
+[[case]]
+input = "乾物屋"
+mode = "hiragana"
+expected = "かんぶつや"
+note = "旧 ひものや"
+
+[[case]]
+input = "乾物を買う"
+mode = "hiragana"
+expected = "かんぶつをかう"
+
+[[case]]
+input = "干物を焼く"
+mode = "hiragana"
+expected = "ひものをやく"
+note = "干物=ひもの は別語、維持"
+
+[[case]]
+input = "依代になる"
+mode = "hiragana"
+expected = "よりしろになる"
+note = "旧 いだい"
+
+# ─── ja 元から正読 (ガード) ───
+[[case]]
+input = "人気がない場所"
+mode = "hiragana"
+expected = "ひとけがないばしょ"
+
+[[case]]
+input = "十八番を披露"
+mode = "hiragana"
+expected = "おはこをひろう"
