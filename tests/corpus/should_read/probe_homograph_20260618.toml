@@ -1,0 +1,57 @@
+# 2026-06-18 自作例文 probe 由来。homograph default 修正 3 件 + 非干渉ガード。
+#
+# - 形相: IPADIC default ケイソウ (= 哲学のエイドス、 稀) → 一般語 ギョウソウ に
+# - 匠:   [[kanji]] default ショウ のまま、 助詞続き standalone (匠の技) を タクミ に
+#         (巨匠/師匠/名匠/意匠 は Lindera 2-char token で吸収、 単漢字 match 非発火)
+# - 追従笑い: ツイショウワライ (= へつらい笑い)。 「追従する」 等は ツイジュウ 維持
+
+# ─── 修正本体 ───
+[[case]]
+input = "形相が変わる"
+mode = "hiragana"
+expected = "ぎょうそうがかわる"
+note = "旧 けいそう"
+
+[[case]]
+input = "匠の技"
+mode = "hiragana"
+expected = "たくみのわざ"
+note = "旧 しょう"
+
+[[case]]
+input = "匠の味"
+mode = "hiragana"
+expected = "たくみのあじ"
+
+[[case]]
+input = "追従笑い"
+mode = "hiragana"
+expected = "ついしょうわらい"
+note = "旧 ついじゅう"
+
+# ─── 非干渉ガード ───
+[[case]]
+input = "巨匠の作品"
+mode = "hiragana"
+expected = "きょしょうのさくひん"
+
+[[case]]
+input = "師匠の教え"
+mode = "hiragana"
+expected = "ししょうのおしえ"
+
+[[case]]
+input = "意匠登録"
+mode = "hiragana"
+expected = "いしょうとうろく"
+
+[[case]]
+input = "鷹匠"
+mode = "hiragana"
+expected = "たかじょう"
+
+[[case]]
+input = "追従する機能"
+mode = "hiragana"
+expected = "ついじゅうするきのう"
+note = "追従 単独は ツイジュウ 維持"

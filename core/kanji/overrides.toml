@@ -4819,6 +4819,12 @@ default = "ホウ"
 [[kanji]]
 char = "匠"
 default = "ショウ"
+# 「匠」 単独 (= 職人) は タクミ。 助詞が続く standalone noun 用法を catch
+# (= 「匠の技 / 匠の味 / 匠と呼ばれる」)。 巨匠/師匠/名匠/意匠 等の音読み熟語は
+# Lindera が 2-char token で吸収するため この単漢字 match は発火しない
+[[kanji.match]]
+next_starts_any = ["の", "と", "を", "は", "が", "に", "だ", "や"]
+reading = "タクミ"
 
 [[kanji]]
 char = "医"

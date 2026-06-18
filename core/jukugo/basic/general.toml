@@ -5594,6 +5594,12 @@ weight = 10
 [entries."二日"]
 reading = "フツカ"
 
+# 多桁数字の末尾 (= 「十二日 / 百二日」) は和語日付読みではなく 数字読み + ニチ
+# (= 「ジュウニニチ / ヒャクニニチ」)。 prev が place 文字なら ニニチ
+[[entries."二日".match]]
+prev_ends_any = ["十", "百", "千", "万"]
+reading = "ニニチ"
+
 [[entries."二日".alt]]
 reading = "ニニチ"
 sense = "two-days"
@@ -5706,6 +5712,11 @@ weight = 15
 [entries."七日"]
 reading = "ナノカ"
 
+# 多桁数字末尾 (= 「十七日 / 百七日」) は シチニチ
+[[entries."七日".match]]
+prev_ends_any = ["十", "百", "千", "万"]
+reading = "シチニチ"
+
 [[entries."七日".alt]]
 reading = "シチニチ"
 sense = "seven-days"
@@ -5714,6 +5725,11 @@ weight = 25
 [entries."三日"]
 reading = "ミッカ"
 
+# 多桁数字末尾 (= 「十三日 / 百三日」) は サンニチ
+[[entries."三日".match]]
+prev_ends_any = ["十", "百", "千", "万"]
+reading = "サンニチ"
+
 [[entries."三日".alt]]
 reading = "サンニチ"
 sense = "three-days"
@@ -5721,6 +5737,12 @@ weight = 20
 
 [entries."十日"]
 reading = "トオカ"
+
+# 多桁数字末尾 (= 「百十日 / 二百十日」) は ジュウニチ (= 暦の「二百十日」も
+# 一般 TTS では ニヒャクジュウニチ で読まれるため こちらに揃える)
+[[entries."十日".match]]
+prev_ends_any = ["百", "千", "万"]
+reading = "ジュウニチ"
 
 [[entries."十日".alt]]
 reading = "ジュウニチ"
@@ -5955,6 +5977,11 @@ weight = 10
 
 [entries."二十日"]
 reading = "ハツカ"
+
+# 「百二十日 / 三百二十日」 等 百以上 prefix は ニジュウニチ (ハツカ は単独 20 のみ)
+[[entries."二十日".match]]
+prev_ends_any = ["百", "千", "万"]
+reading = "ニジュウニチ"
 
 [[entries."二十日".alt]]
 reading = "ニジュウニチ"
@@ -6217,10 +6244,32 @@ reading = "セジ"
 sense = "worldly-affairs-literary"
 weight = 5
 
+# 形相 = ギョウソウ (= 顔つき・ありさま、 一般語) が default。 ケイソウ は
+# アリストテレス哲学の「形相 (=エイドス)」 専門語で稀。 IPADIC は default ケイソウ
+[entries."形相"]
+reading = "ギョウソウ"
+
+[[entries."形相".alt]]
+reading = "ケイソウ"
+sense = "philosophy-form"
+weight = 8
+
+# 追従 = ツイジュウ (= つき従う) が一般、 「追従笑い (= へつらい笑い)」 では
+# ツイショウ。 四字熟語「阿諛追従 = アユツイショウ」 と同系
+[entries."追従笑い"]
+reading = "ツイショウワライ"
+
 # --- batch 7 ---
 
 [entries."四日"]
 reading = "ヨッカ"
+
+# 「百四日 / 千四日」 等 百以上 prefix は ヨンニチ。 「十四日 / 二十四日」 の
+# ジュウヨッカ / ニジュウヨッカ は和語読みが定着しているので 十 prefix では維持
+# (= prev に 「十」 を含めない)
+[[entries."四日".match]]
+prev_ends_any = ["百", "千", "万"]
+reading = "ヨンニチ"
 
 [[entries."四日".alt]]
 reading = "ヨンニチ"
@@ -6230,6 +6279,11 @@ weight = 20
 [entries."五日"]
 reading = "イツカ"
 
+# 多桁数字末尾 (= 「十五日 / 百五日 / 三百六十五日」) は ゴニチ
+[[entries."五日".match]]
+prev_ends_any = ["十", "百", "千", "万"]
+reading = "ゴニチ"
+
 [[entries."五日".alt]]
 reading = "ゴニチ"
 sense = "five-days"
@@ -6237,6 +6291,11 @@ weight = 15
 
 [entries."六日"]
 reading = "ムイカ"
+
+# 多桁数字末尾 (= 「十六日 / 二百六日」) は ロクニチ
+[[entries."六日".match]]
+prev_ends_any = ["十", "百", "千", "万"]
+reading = "ロクニチ"
 
 [[entries."六日".alt]]
 reading = "ロクニチ"
@@ -6246,6 +6305,11 @@ weight = 15
 [entries."八日"]
 reading = "ヨウカ"
 
+# 多桁数字末尾 (= 「十八日 / 五十八日」) は ハチニチ
+[[entries."八日".match]]
+prev_ends_any = ["十", "百", "千", "万"]
+reading = "ハチニチ"
+
 [[entries."八日".alt]]
 reading = "ハチニチ"
 sense = "eight-days"
@@ -6253,6 +6317,11 @@ weight = 15
 
 [entries."九日"]
 reading = "ココノカ"
+
+# 多桁数字末尾 (= 「十九日 / 九十九日」) は クニチ
+[[entries."九日".match]]
+prev_ends_any = ["十", "百", "千", "万"]
+reading = "クニチ"
 
 [[entries."九日".alt]]
 reading = "クニチ"
