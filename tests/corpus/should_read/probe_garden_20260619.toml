@@ -1,0 +1,51 @@
+# 2026-06-19 庭園・観光施設・宿場町 第12弾。
+# 兼六園/後楽園/通天閣/道頓堀/白川郷/合掌造り/倉敷美観地区 等は ja 正読。
+# 鶴舞公園=つるま/つるまい 両義は見送り。〜宿=じゅく は宿場町固有。
+
+[[case]]
+input = "偕楽園"
+mode = "hiragana"
+expected = "かいらくえん"
+note = "偕=かい (旧 ともにらくえん)"
+
+[[case]]
+input = "渡月橋"
+mode = "hiragana"
+expected = "とげつきょう"
+note = "嵐山 (旧 とつきはし)"
+
+[[case]]
+input = "海遊館"
+mode = "hiragana"
+expected = "かいゆうかん"
+note = "海=かい (旧 うみゆうかん)"
+
+[[case]]
+input = "函館山"
+mode = "hiragana"
+expected = "はこだてやま"
+note = "山=やま (旧 はこだてさん)"
+
+[[case]]
+input = "妻籠宿"
+mode = "hiragana"
+expected = "つまごじゅく"
+note = "妻籠=つまご、宿=じゅく (全壊 つまろうやど)"
+
+[[case]]
+input = "馬籠宿"
+mode = "hiragana"
+expected = "まごめじゅく"
+note = "宿=じゅく (旧 まごめやど)"
+
+[[case]]
+input = "奈良井宿"
+mode = "hiragana"
+expected = "ならいじゅく"
+note = "宿=じゅく"
+
+[[case]]
+input = "大内宿"
+mode = "hiragana"
+expected = "おおうちじゅく"
+note = "宿=じゅく"
