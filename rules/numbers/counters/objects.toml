@@ -436,3 +436,102 @@ sokuonize = true
 last_digit = [3]
 suffix = "ビョウ"
 # === end: 俵 ===
+
+# === begin: 桁 === (数の桁、 1/2 は和語 ヒトケタ/フタケタ、 6/8/10 で促音化。 ★2026-06-18)
+[counter."桁"]
+default = "ケタ"
+kanji_numeral = true  # 三桁/六桁 → さんけた/ろっけた (漢数字 bare 対応)
+specials = { "1" = "ヒトケタ", "2" = "フタケタ" }
+
+[[counter."桁".rules]]
+last_digit = [6, 8, 0]
+suffix = "ケタ"
+sokuonize = true
+# === end: 桁 ===
+
+# === begin: 客 === (茶碗等の組、 1/6/8/10 で促音化。 ★2026-06-18)
+[counter."客"]
+default = "キャク"
+kanji_numeral = true  # 一客/六客 → いっきゃく/ろっきゃく (漢数字 bare 対応)
+
+[[counter."客".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "キャク"
+sokuonize = true
+# === end: 客 ===
+
+# === begin: 脚 === (椅子/三脚、 1/6/8/10 で促音化。 ★2026-06-18)
+[counter."脚"]
+default = "キャク"
+kanji_numeral = true  # 一脚/六脚 → いっきゃく/ろっきゃく (漢数字 bare 対応)
+
+[[counter."脚".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "キャク"
+sokuonize = true
+# === end: 脚 ===
+
+# === begin: 棟 === (建物、 1/8/10 で促音化。 六棟=ろくとう は促音化しない。 ★2026-06-18)
+[counter."棟"]
+default = "トウ"
+kanji_numeral = true  # 一棟/八棟 → いっとう/はっとう、 三棟=さんとう (漢数字 bare 対応)
+
+[[counter."棟".rules]]
+last_digit = [1, 8, 0]
+suffix = "トウ"
+sokuonize = true
+# === end: 棟 ===
+
+# === begin: 帖 === (海苔/畳/紙、 ジョウ。 促音化なし。 ★2026-06-18)
+[counter."帖"]
+default = "ジョウ"
+kanji_numeral = true  # 一帖/三帖 → いちじょう/さんじょう (漢数字 bare 対応、 旧 ちょう)
+# === end: 帖 ===
+
+# === begin: 反 === (布/田畑、 タン。 1/8/10 で促音化。 ★2026-06-18)
+[counter."反"]
+default = "タン"
+kanji_numeral = true  # 一反/八反 → いったん/はったん、 三反=さんたん (漢数字 bare 対応、 旧 はん)
+
+[[counter."反".rules]]
+last_digit = [1, 8, 0]
+suffix = "タン"
+sokuonize = true
+# === end: 反 ===
+
+# === begin: 貫 === (寿司/重さ、 1/6/8/10 で促音化。 ★2026-06-18)
+[counter."貫"]
+default = "カン"
+kanji_numeral = true  # 一貫/六貫 → いっかん/ろっかん、 三貫=さんかん (漢数字 bare 対応)
+
+[[counter."貫".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カン"
+sokuonize = true
+# === end: 貫 ===
+
+# === begin: 片 === (かけら、 1/6/8/10 で促音化 + ペン、 3 で ペン。 ★2026-06-18)
+[counter."片"]
+default = "ヘン"
+kanji_numeral = true  # 一片/六片 → いっぺん/ろっぺん、 三片=さんぺん (漢数字 bare 対応)
+
+[[counter."片".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "ペン"
+sokuonize = true
+
+[[counter."片".rules]]
+last_digit = [3]
+suffix = "ペン"
+# === end: 片 ===
+
+# === begin: 斗 === (容量、 1/8/10 で促音化。 一斗缶=いっとかん。 ★2026-06-18)
+[counter."斗"]
+default = "ト"
+kanji_numeral = true  # 一斗/八斗 → いっと/はっと (漢数字 bare 対応)
+
+[[counter."斗".rules]]
+last_digit = [1, 8, 0]
+suffix = "ト"
+sokuonize = true
+# === end: 斗 ===
