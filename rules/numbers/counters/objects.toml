@@ -535,3 +535,29 @@ last_digit = [1, 8, 0]
 suffix = "ト"
 sokuonize = true
 # === end: 斗 ===
+
+# 巻 (書籍/巻物): 一巻=いっかん/六巻=ろっかん/八巻=はっかん/十巻=じゅっかん (旧 simple.toml で促音欠落)
+[counter."巻"]
+default = "カン"
+kanji_numeral = true
+
+[[counter."巻".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カン"
+sokuonize = true
+# === end: 巻 ===
+
+# 票 (投票): 一票=いっぴょう/六票=ろっぴょう/八票=はっぴょう/十票=じゅっぴょう、 三票=さんびょう (俵と同型、旧 simple.toml で欠落)
+[counter."票"]
+default = "ヒョウ"
+kanji_numeral = true
+
+[[counter."票".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "ピョウ"
+sokuonize = true
+
+[[counter."票".rules]]
+last_digit = [3]
+suffix = "ビョウ"
+# === end: 票 ===

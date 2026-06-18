@@ -52,3 +52,21 @@ reading = "さんぼん"
 [[test.targets]]
 surface = "5匹"
 reading = "ごひき"
+
+# ─── 巻 (書籍): 1/6/8/10 促音 (2026-06-19) ───
+[[test]]
+input = "六巻"
+expected = "ろっかん"
+
+[[test]]
+input = "一巻"
+expected = "いっかん"
+
+# ─── 票 (投票): 1/6/8/10 促音+半濁、3 連濁 (2026-06-19) ───
+[[test]]
+input = "一票"
+expected = "いっぴょう"
+
+[[test]]
+input = "三票"
+expected = "さんびょう"
