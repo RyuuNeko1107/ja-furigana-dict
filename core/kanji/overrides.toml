@@ -4236,7 +4236,7 @@ default = "リ"
 
 [[kanji]]
 char = "頂"
-default = "チョウ"
+default = "イタダキ"  # 山の頂=いただき (頂上/頂点/山頂/絶頂は jukugo で ちょう、頂く=いただくは別、2026-06-20 flip)
 
 [[kanji]]
 char = "順"
