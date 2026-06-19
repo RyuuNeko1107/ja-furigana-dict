@@ -1,0 +1,38 @@
+# 2026-06-19 ナルト/ブリーチ/DB 残りキャラ probe。山中=やまなか/さんちゅう・神龍=しんりゅう/
+# シェンロン homograph は default 委ね。
+
+[[case]]
+input = "油女シノ"
+mode = "hiragana"
+expected = "あぶらめしの"
+note = "ナルト 油女=あぶらめ"
+
+[[case]]
+input = "千手柱間"
+mode = "hiragana"
+expected = "せんじゅはしらま"
+note = "初代火影"
+
+[[case]]
+input = "涅マユリ"
+mode = "hiragana"
+expected = "くらつちまゆり"
+note = "ブリーチ 涅=くらつち (default そめる)"
+
+[[case]]
+input = "雛森桃"
+mode = "hiragana"
+expected = "ひなもりもも"
+note = "ブリーチ 桃=もも"
+
+[[case]]
+input = "牛魔王"
+mode = "hiragana"
+expected = "ぎゅうまおう"
+note = "DB (default うしまおう)"
+
+[[case]]
+input = "魔貫光殺砲"
+mode = "hiragana"
+expected = "まかんこうさっぽう"
+note = "DB ピッコロの技"
