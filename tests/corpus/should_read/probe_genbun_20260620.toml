@@ -506,3 +506,34 @@ input = "神威岬"
 mode = "hiragana"
 expected = "かもいみさき"
 note = "神威 ガード (地名 かもい)"
+
+# ─── ゲームキャラ/熟語 誤登録・未登録: 砂狼/藤丸立香/巌窟王/散兵/紅蓮華 ───
+[[case]]
+input = "砂狼シロコ"
+mode = "hiragana"
+expected = "すなおおかみシロコ"
+note = "ブルアカ Sunaookami (旧 サロウ 誤登録)"
+
+[[case]]
+input = "藤丸立香"
+mode = "hiragana"
+expected = "ふじまるりつか"
+note = "FGO 立香=りつか (旧 たつか)"
+
+[[case]]
+input = "巌窟王"
+mode = "hiragana"
+expected = "がんくつおう"
+note = "旧 いわおくつおう"
+
+[[case]]
+input = "散兵"
+mode = "hiragana"
+expected = "さんぺい"
+note = "兵=ぺい (旧 さんへい)"
+
+[[case]]
+input = "紅蓮華"
+mode = "hiragana"
+expected = "ぐれんげ"
+note = "華=げ 連濁 (旧 ぐれんか)"

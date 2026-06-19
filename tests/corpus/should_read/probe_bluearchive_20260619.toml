@@ -16,8 +16,8 @@ note = "阿慈谷ヒフミ (default あじこく)"
 [[case]]
 input = "砂狼"
 mode = "hiragana"
-expected = "さろう"
-note = "砂狼シロコ (default すなろう)"
+expected = "すなおおかみ"
+note = "砂狼シロコ = Sunaookami (旧 さろう は誤登録、2026-06-20 訂正)"
 
 [[case]]
 input = "聖園"
