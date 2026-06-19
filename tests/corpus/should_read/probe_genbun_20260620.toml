@@ -153,3 +153,10 @@ input = "近所付き合いが面倒"
 mode = "hiragana"
 expected = "きんじょづきあいがめんどう"
 note = "連濁 づきあい (旧 つきあい)"
+
+# ─── 人徳=じんとく (人=にん 化け) ───
+[[case]]
+input = "彼の人徳"
+mode = "hiragana"
+expected = "かれのじんとく"
+note = "旧 にんとく"
