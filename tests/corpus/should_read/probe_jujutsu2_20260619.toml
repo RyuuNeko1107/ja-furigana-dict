@@ -1,0 +1,25 @@
+# 2026-06-19 呪術廻戦 probe。狗巻棘/釘崎/脹相/漏瑚/秤金次/禅院真希 等は正読。真人=まさと homograph 見送り。
+
+[[case]]
+input = "鹿紫雲一"
+mode = "hiragana"
+expected = "かしもはじめ"
+note = "鹿紫雲=かしも (default しかしうん)"
+
+[[case]]
+input = "加茂憲紀"
+mode = "hiragana"
+expected = "かものりとし"
+note = "憲紀=のりとし (default けんき)"
+
+[[case]]
+input = "乙骨"
+mode = "hiragana"
+expected = "おっこつ"
+note = "乙骨憂太 (default おつこつ)"
+
+[[case]]
+input = "夏油"
+mode = "hiragana"
+expected = "げとう"
+note = "夏油傑 (default なつあぶら)"
