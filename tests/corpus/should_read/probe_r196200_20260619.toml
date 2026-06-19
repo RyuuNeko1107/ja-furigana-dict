@@ -1,0 +1,31 @@
+# 2026-06-19 R196-200 ぶいすぽ/にじ/ホロ/アズレン/戦国武将4 probe まとめ。R200到達。
+
+[[case]]
+input = "小雀"
+mode = "hiragana"
+expected = "こすずめ"
+note = "ぶいすぽ 小雀とと (default こがら)"
+
+[[case]]
+input = "水無世燐央"
+mode = "hiragana"
+expected = "みなせれお"
+note = "ホロスターズ 水無世=みなせ"
+
+[[case]]
+input = "緋八"
+mode = "hiragana"
+expected = "ひばち"
+note = "八=ばち 連濁 (default ひはち)"
+
+[[case]]
+input = "龍驤"
+mode = "hiragana"
+expected = "りゅうじょう"
+note = "空母 驤=じょう (default あがる)"
+
+[[case]]
+input = "塙団右衛門"
+mode = "hiragana"
+expected = "ばんだんえもん"
+note = "塙=ばん (塙保己一=はなわ と別)"
