@@ -1,0 +1,31 @@
+# 2026-06-19 にじさんじ round3 probe。西園=にしぞの/家長=かちょう homograph で full のみ。
+
+[[case]]
+input = "遠北千南"
+mode = "hiragana"
+expected = "とおきたちな"
+note = "遠北=とおきた (default えんほく)"
+
+[[case]]
+input = "宇志海いちご"
+mode = "hiragana"
+expected = "うしみいちご"
+note = "宇志海=うしみ (default うしかい)"
+
+[[case]]
+input = "海妹四葉"
+mode = "hiragana"
+expected = "うみせよつは"
+note = "海妹=うみせ (default うみいもうと)"
+
+[[case]]
+input = "早瀬走"
+mode = "hiragana"
+expected = "はやせかける"
+note = "走=かける (default そう)"
+
+[[case]]
+input = "舞元啓介"
+mode = "hiragana"
+expected = "まいもとけいすけ"
+note = "舞元=まいもと (default ぶげん)"
