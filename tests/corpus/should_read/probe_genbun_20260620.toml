@@ -22,9 +22,29 @@ mode = "hiragana"
 expected = "きょきょじつじつのかけひき"
 note = "旧 きょぎょじつじつ"
 
-# ─── 岩陰 = イワカゲ (陰=イン 音読み化け。木陰/物陰 は正) ───
+# ─── 岩陰/草陰 = カゲ (陰=イン 音読み化け。木陰/物陰/日陰 は正) ───
 [[case]]
 input = "岩陰に潜む"
 mode = "hiragana"
 expected = "いわかげにひそむ"
 note = "旧 いわいん"
+
+[[case]]
+input = "草陰に隠れる"
+mode = "hiragana"
+expected = "くさかげにかくれる"
+note = "旧 くさいん"
+
+# ─── 高尾山 = タカオサン (山=さん suffix。default たかおやま) ───
+[[case]]
+input = "高尾山に登る"
+mode = "hiragana"
+expected = "たかおさんにのぼる"
+note = "旧 たかおやま"
+
+# ─── 金色堂 = コンジキドウ (中尊寺。金色=こんじき/堂=どう) ───
+[[case]]
+input = "中尊寺金色堂"
+mode = "hiragana"
+expected = "ちゅうそんじこんじきどう"
+note = "旧 きんいろどう"
