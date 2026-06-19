@@ -1,0 +1,20 @@
+# 2026-06-19 名古屋圏 駅名 第27弾。平針=ひらばり/一社=いっしゃ/上社=かみやしろ 等は正。
+# 茶所=ちゃどころ/車道=しゃどう(一般語) homograph 見送り。
+
+[[case]]
+input = "久屋大通"
+mode = "hiragana"
+expected = "ひさやおおどおり"
+note = "大通=おおどおり (default だいつう)"
+
+[[case]]
+input = "富吉"
+mode = "hiragana"
+expected = "とみよし"
+note = "近鉄、吉=よし (default とみきち)"
+
+[[case]]
+input = "佐古木"
+mode = "hiragana"
+expected = "さこぎ"
+note = "近鉄、木=ぎ (default さこもく)"
