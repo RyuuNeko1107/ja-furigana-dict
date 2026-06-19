@@ -72,3 +72,6 @@ description = "ホロライブプロダクション (カバー): タレント名
 # 916k corpus で 20+ 出現 (lib match_hits tie-break 導入で 家=カ match に割れた分の補正)。
 # NameBoundaryPass は 敬称 (さん/様/氏 等) のみ対象で 「家」 は扱わないため entry で対応
 "桃鈴家" = "ももすずけ"
+# 2026-06-19 probe 補充 (癒月=ゆづき は既登録で正、百鬼=ひゃっき homograph)
+"潤羽" = "ウルハ"                # 潤羽るしあ (default じゅんう)
+"潤羽るしあ" = "ウルハルシア"
