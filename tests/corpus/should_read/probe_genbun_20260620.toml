@@ -668,3 +668,22 @@ input = "犯罪者"
 mode = "hiragana"
 expected = "はんざいしゃ"
 note = "罪 ガード (2字token ざい)"
+
+# ─── 病/社 も形容詞後で訓 (prev=い/な 拡張) ───
+[[case]]
+input = "重い病"
+mode = "hiragana"
+expected = "おもいやまい"
+note = "病 prev=い→やまい (旧 びょう)"
+
+[[case]]
+input = "古い社"
+mode = "hiragana"
+expected = "ふるいやしろ"
+note = "社 prev=い→やしろ (会社=しゃ は維持)"
+
+[[case]]
+input = "神社"
+mode = "hiragana"
+expected = "じんじゃ"
+note = "社 ガード (2字token じゃ)"
