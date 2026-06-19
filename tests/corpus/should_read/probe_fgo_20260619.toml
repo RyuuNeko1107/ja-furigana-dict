@@ -1,0 +1,43 @@
+# 2026-06-19 FGO/伝承の英霊名 probe。茨木童子/酒呑童子/宮本武蔵/真田幸村/桃太郎 等は正読。
+
+[[case]]
+input = "牛若丸"
+mode = "hiragana"
+expected = "うしわかまる"
+note = "源義経幼名 (全壊 うしじゃくがん)"
+
+[[case]]
+input = "渡辺綱"
+mode = "hiragana"
+expected = "わたなべのつな"
+note = "頼光四天王 綱=つな (default こう)"
+
+[[case]]
+input = "玉藻前"
+mode = "hiragana"
+expected = "たまものまえ"
+note = "九尾の狐 (default たまもまえ)"
+
+[[case]]
+input = "鞍馬天狗"
+mode = "hiragana"
+expected = "くらまてんぐ"
+note = "鞍馬=くらま (bare 鞍馬=あんば体操 homograph)"
+
+[[case]]
+input = "衛宮"
+mode = "hiragana"
+expected = "えみや"
+note = "Fate (default えいきゅう)"
+
+[[case]]
+input = "言峰綺礼"
+mode = "hiragana"
+expected = "ことみねきれい"
+note = "Fate (default げんみねあやれい)"
+
+[[case]]
+input = "間桐桜"
+mode = "hiragana"
+expected = "まとうさくら"
+note = "Fate 間桐=まとう"

@@ -1,0 +1,17 @@
+# Fate シリーズ / 型月 (TYPE-MOON) のキャラクター名
+#
+# 出典: 『Fate/stay night』ほか TYPE-MOON 作品 (空の境界含む) 公式。
+# 遠坂凛/間桐慎二/セイバー 等 IPADIC 正読・カタカナは非登録、難読のみ補充。
+# 英霊の史実名 (千子村正/坂田金時等) は personal_names.toml 側。
+
+[meta]
+schema_version = "2"
+role = "works"
+description = "Fate / 型月 (TYPE-MOON): キャラクター名"
+
+[entries]
+
+"衛宮" = "エミヤ"              # 衛宮士郎/切嗣。default えいきゅう
+"言峰綺礼" = "コトミネキレイ"  # default げんみねあやれい
+"間桐桜" = "マトウサクラ"      # 間桐=まとう (default あいだきり)
+"浅上藤乃" = "アサガミフジノ"  # 空の境界。浅上=あさがみ (default せんうえ)
