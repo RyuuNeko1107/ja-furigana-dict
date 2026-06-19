@@ -1,43 +1,32 @@
-# 2026-06-19 力士四股名 probe。大鵬/貴乃花/曙/武蔵丸/小錦 等は正読。
+# 2026-06-19 力士四股名 第2弾 probe。照ノ富士/玉鷲/宇良/魁聖 等は正読。
+# 明生=あきお/豊山=とよやま/東龍=とうりゅう は homograph 見送り。
 
 [[case]]
-input = "男女ノ川"
+input = "翔猿"
 mode = "hiragana"
-expected = "みなのがわ"
-note = "超難読 (default だんじょノかわ)"
+expected = "とびざる"
+note = "default しょうえん"
 
 [[case]]
-input = "稀勢の里"
+input = "豊昇龍"
 mode = "hiragana"
-expected = "きせのさと"
-note = "稀勢=きせ (default まれぜい)"
+expected = "ほうしょうりゅう"
+note = "横綱"
 
 [[case]]
-input = "日馬富士"
+input = "琴ノ若"
 mode = "hiragana"
-expected = "はるまふじ"
-note = "日馬=はるま (default くさま)"
+expected = "ことのわか"
+note = "ノ=の"
 
 [[case]]
-input = "白鵬"
+input = "逸ノ城"
 mode = "hiragana"
-expected = "はくほう"
-note = "鵬=ほう (default しろほう)"
+expected = "いちのじょう"
+note = "ノ=の/城=じょう"
 
 [[case]]
-input = "御嶽海"
+input = "佐田の海"
 mode = "hiragana"
-expected = "みたけうみ"
-note = "御嶽=みたけ/海=うみ (default みたけかい)"
-
-[[case]]
-input = "阿炎"
-mode = "hiragana"
-expected = "あび"
-note = "難読四股名 (default あえん)"
-
-[[case]]
-input = "琴桜"
-mode = "hiragana"
-expected = "ことざくら"
-note = "琴櫻、櫻→桜 compat (default ことおう)"
+expected = "さだのうみ"
+note = "佐田=さだ (default さた)"
