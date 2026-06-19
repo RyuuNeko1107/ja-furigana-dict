@@ -48,3 +48,23 @@ input = "中尊寺金色堂"
 mode = "hiragana"
 expected = "ちゅうそんじこんじきどう"
 note = "旧 きんいろどう"
+
+# ─── 雨樋 = アマドイ (雨=あま/樋=どい。旧 あめひ。樋 default ひ の漏れ) ───
+[[case]]
+input = "雨樋を掃除する"
+mode = "hiragana"
+expected = "あまどいをそうじする"
+note = "旧 あめひ"
+
+# ─── 小雪/大雪 = コユキ/オオユキ (日常語 dominant、節気 しょうせつ/たいせつ は minority) ───
+[[case]]
+input = "小雪が舞う"
+mode = "hiragana"
+expected = "こゆきがまう"
+note = "旧 しょうせつ (節気)"
+
+[[case]]
+input = "大雪が降った"
+mode = "hiragana"
+expected = "おおゆきがふった"
+note = "旧 たいせつ (節気)"
