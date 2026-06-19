@@ -1,0 +1,37 @@
+# 2026-06-19 日本神話の神名 probe。天照大神/須佐之男/大国主 等は既正。少彦名は religions.toml。
+
+[[case]]
+input = "瓊瓊杵尊"
+mode = "hiragana"
+expected = "ににぎのみこと"
+note = "default たまたまきねそん"
+
+[[case]]
+input = "鵜葺草葺不合"
+mode = "hiragana"
+expected = "うがやふきあえず"
+note = "神武の父"
+
+[[case]]
+input = "木花咲耶姫"
+mode = "hiragana"
+expected = "このはなさくやひめ"
+note = ""
+
+[[case]]
+input = "建御雷"
+mode = "hiragana"
+expected = "たけみかづち"
+note = ""
+
+[[case]]
+input = "天之御中主"
+mode = "hiragana"
+expected = "あめのみなかぬし"
+note = ""
+
+[[case]]
+input = "豊受大神"
+mode = "hiragana"
+expected = "とようけのおおかみ"
+note = "default ほうじゅだいじん"
