@@ -167,3 +167,22 @@ input = "喉元過ぎれば"
 mode = "hiragana"
 expected = "のどもとすぎれば"
 note = "旧 のどもとよぎれば"
+
+# ─── 猫の額=ひたい (idiom、額=がく 化け)/人の世=よ (世=せい 化け、の+世) ───
+[[case]]
+input = "猫の額ほどの庭"
+mode = "hiragana"
+expected = "ねこのひたいほどのにわ"
+note = "旧 ねこのがく"
+
+[[case]]
+input = "人の世"
+mode = "hiragana"
+expected = "ひとのよ"
+note = "旧 ひとのせい (世 prev=の)"
+
+[[case]]
+input = "中世の城"
+mode = "hiragana"
+expected = "ちゅうせいのしろ"
+note = "世 ガード (2字token せい 維持)"
