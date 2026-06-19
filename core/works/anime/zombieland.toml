@@ -1,0 +1,10 @@
+# ゾンビランドサガ (MAPPA) のキャラクター名
+
+[meta]
+schema_version = "2"
+role = "works"
+description = "ゾンビランドサガ: キャラクター名"
+
+[entries]
+
+"源さくら" = "ミナモトサクラ"  # 源=みなもと (default げん)
