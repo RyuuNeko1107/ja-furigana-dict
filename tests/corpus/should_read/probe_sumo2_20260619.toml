@@ -1,0 +1,43 @@
+# 2026-06-19 力士四股名 probe。大鵬/貴乃花/曙/武蔵丸/小錦 等は正読。
+
+[[case]]
+input = "男女ノ川"
+mode = "hiragana"
+expected = "みなのがわ"
+note = "超難読 (default だんじょノかわ)"
+
+[[case]]
+input = "稀勢の里"
+mode = "hiragana"
+expected = "きせのさと"
+note = "稀勢=きせ (default まれぜい)"
+
+[[case]]
+input = "日馬富士"
+mode = "hiragana"
+expected = "はるまふじ"
+note = "日馬=はるま (default くさま)"
+
+[[case]]
+input = "白鵬"
+mode = "hiragana"
+expected = "はくほう"
+note = "鵬=ほう (default しろほう)"
+
+[[case]]
+input = "御嶽海"
+mode = "hiragana"
+expected = "みたけうみ"
+note = "御嶽=みたけ/海=うみ (default みたけかい)"
+
+[[case]]
+input = "阿炎"
+mode = "hiragana"
+expected = "あび"
+note = "難読四股名 (default あえん)"
+
+[[case]]
+input = "琴桜"
+mode = "hiragana"
+expected = "ことざくら"
+note = "琴櫻、櫻→桜 compat (default ことおう)"
