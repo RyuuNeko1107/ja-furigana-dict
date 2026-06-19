@@ -1,0 +1,25 @@
+# 2026-06-20 R256 例文 probe。畳語々/四字は大半成熟。々連濁化け等3件。
+
+[[case]]
+input = "喧々諤々の議論が続く"
+mode = "hiragana"
+expected = "けんけんがくがくのぎろんがつづく"
+note = "喧々=けんけん (default けんげん)"
+
+[[case]]
+input = "彼女は艶々の肌をしている"
+mode = "hiragana"
+expected = "かのじょはつやつやのはだをしている"
+note = "艶々=つやつや (々連濁化け)"
+
+[[case]]
+input = "時々刻々と状況が変わる"
+mode = "hiragana"
+expected = "ときどきこくこくとじょうきょうがかわる"
+note = "時々刻々=ときどきこくこく(既存、じじも valid)"
+
+[[case]]
+input = "彼は虎視眈々と狙っている"
+mode = "hiragana"
+expected = "かれはこしたんたんとねらっている"
+note = "成熟確認"
