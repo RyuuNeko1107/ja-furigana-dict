@@ -1,0 +1,20 @@
+# 2026-06-19 文豪 probe。二葉亭四迷/室生犀星/梶井基次郎/夢野久作/直木三十五/小泉八雲 等は
+# ja 正読 (39/40 成熟)。横光利一のみ補充。
+
+[[case]]
+input = "横光利一"
+mode = "hiragana"
+expected = "よこみつりいち"
+note = "利一=りいち (default としかず)"
+
+[[case]]
+input = "二葉亭四迷"
+mode = "hiragana"
+expected = "ふたばていしめい"
+note = "成熟確認"
+
+[[case]]
+input = "室生犀星"
+mode = "hiragana"
+expected = "むろうさいせい"
+note = "成熟確認"
