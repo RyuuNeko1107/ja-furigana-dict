@@ -1,0 +1,13 @@
+# SEKIRO: SHADOWS DIE TWICE (フロム・ソフトウェア) のキャラクター名・用語
+#
+# 出典: 『SEKIRO』日本語版。葦名=あしな は実在の戦国大名 (蘆名/葦名氏) 由来。
+# 弦一郎/一心 等 IPADIC 正読は非登録、難読のみ補充。
+
+[meta]
+schema_version = "2"
+role = "works"
+description = "SEKIRO (フロム・ソフトウェア): キャラクター名 / 用語"
+
+[entries]
+
+"葦名" = "アシナ"              # 葦名一心/葦名弦一郎/葦名城。default あしめい

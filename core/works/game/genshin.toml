@@ -1,0 +1,30 @@
+# 原神 (Genshin Impact / HoYoverse) のキャラクター名
+#
+# 出典: 『原神』日本語版 公式キャラクター名・CV 表記。
+# 採録方針 (works 共通): 公式読み確定のみ、単漢字不可、全 surface ≥2 文字。
+#   神里綾華/胡桃(フータオ)等 IPADIC 正読・カタカナ公式表記は冗長登録しない。
+#   嘉明=かめい は よしあき(加藤嘉明)と homograph のため見送り。
+
+[meta]
+schema_version = "2"
+role = "works"
+description = "原神 (HoYoverse): キャラクター名 (公式日本語読みベース)"
+
+[entries]
+
+"鍾離" = "ショウリ"            # Zhongli。default あつめるり
+"神里綾人" = "カミサトアヤト"  # 「綾人」 あやひと→あやと
+"楓原万葉" = "カエデハラカズハ"  # Kaedehara Kazuha。default かえでげんまは
+"雷電将軍" = "ライデンショウグン"  # 正読だが将軍=しょうぐん 固定
+"八重神子" = "ヤエミコ"        # default はちじゅうみこ
+"荒滝一斗" = "アラタキイット"  # 「荒瀧」 こうたき→あらたき。瀧→滝 compat 正規化で key=荒滝一斗
+"凝光" = "ギョウコウ"          # Ningguang。default ぎょうひかり
+"行秋" = "ユクアキ"            # Xingqiu。default ぎょうしゅう
+"重雲" = "チョウウン"          # Chongyun。default じゅううん
+"久岐忍" = "クキシノブ"        # Kuki Shinobu。default きゅうきにん
+"申鶴" = "シンカク"            # Shenhe。default しんつる
+"珊瑚宮心海" = "サンゴノミヤココロミ"  # Sangonomiya Kokomi。default さんごきゅうしんかい
+"鹿野院平蔵" = "カノインヘイゾウ"  # Shikanoin Heizou。「平蔵」ひらぞう→へいぞう
+"雲菫" = "ウンキン"            # Yun Jin。default くもすみれ
+"夜蘭" = "イェラン"            # Yelan。default よるらん
+"香菱" = "シャンリン"          # Xiangling。default こうひし

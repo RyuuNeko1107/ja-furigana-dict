@@ -1,0 +1,14 @@
+# 崩壊:スターレイル (Honkai: Star Rail / HoYoverse) のキャラクター名
+#
+# 出典: 『崩壊:スターレイル』日本語版 公式キャラクター名表記。
+# 採録方針 (works 共通): 公式読み確定のみ。丹恒=たんこう/停雲=ていうん 等は
+#   IPADIC 正読のため非登録、難読のみ補充。
+
+[meta]
+schema_version = "2"
+role = "works"
+description = "崩壊:スターレイル (HoYoverse): キャラクター名 (公式日本語読みベース)"
+
+[entries]
+
+"鏡流" = "キョウリュウ"        # Jingliu。default かがみりゅう

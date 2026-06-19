@@ -1,0 +1,56 @@
+# 2026-06-19 ゲームキャラ名 probe (原神/崩壊スターレイル/SEKIRO)。公式日本語読み。
+# 神里綾華/丹恒/停雲/弦一郎 等は IPADIC 正読。嘉明=よしあき(武将)homograph 見送り。
+
+[[case]]
+input = "鍾離"
+mode = "hiragana"
+expected = "しょうり"
+note = "原神 Zhongli (旧 あつめるり)"
+
+[[case]]
+input = "楓原万葉"
+mode = "hiragana"
+expected = "かえではらかずは"
+note = "原神 (全壊 かえでげんまは)"
+
+[[case]]
+input = "八重神子"
+mode = "hiragana"
+expected = "やえみこ"
+note = "原神 (旧 はちじゅうみこ)"
+
+[[case]]
+input = "荒瀧一斗"
+mode = "hiragana"
+expected = "あらたきいっと"
+note = "原神。瀧→滝 compat 正規化で key=荒滝一斗"
+
+[[case]]
+input = "珊瑚宮心海"
+mode = "hiragana"
+expected = "さんごのみやこころみ"
+note = "原神 Kokomi"
+
+[[case]]
+input = "鹿野院平蔵"
+mode = "hiragana"
+expected = "かのいんへいぞう"
+note = "原神 Heizou"
+
+[[case]]
+input = "香菱"
+mode = "hiragana"
+expected = "しゃんりん"
+note = "原神 Xiangling (旧 こうひし)"
+
+[[case]]
+input = "鏡流"
+mode = "hiragana"
+expected = "きょうりゅう"
+note = "スターレイル Jingliu (旧 かがみりゅう)"
+
+[[case]]
+input = "葦名"
+mode = "hiragana"
+expected = "あしな"
+note = "SEKIRO/戦国大名 (旧 あしめい)"
