@@ -468,3 +468,22 @@ input = "波音リツ"
 mode = "hiragana"
 expected = "なみねりつ"
 note = "キャラ名 full surface 維持"
+
+# ─── bare キャラ名/未登録 default 合成 破損: 音街/夏色/那由他 ───
+[[case]]
+input = "音街ウナ"
+mode = "hiragana"
+expected = "おとまちうな"
+note = "旧 おとがい"
+
+[[case]]
+input = "夏色まつり"
+mode = "hiragana"
+expected = "なついろまつり"
+note = "色=しょく 化け (旧 なつしょく)"
+
+[[case]]
+input = "那由他"
+mode = "hiragana"
+expected = "なゆた"
+note = "旧 なゆほか"
