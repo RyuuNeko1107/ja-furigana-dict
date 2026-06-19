@@ -2,10 +2,10 @@
 # あの方=かた/寒気=さむけ/人気=ひとけ/名は体=たい/漁=りょう は semantic homograph で default委ね。
 
 [[case]]
-input = "怖気づいて逃げ出した"
+input = "怖気が走る"
 mode = "hiragana"
-expected = "おじけづいてにげだした"
-note = "怖気=おじけ (default こわき)"
+expected = "おじけがはしる"
+note = "怖気=おじけ (default こわき。怖気づくは気づく誤分割で別)"
 
 [[case]]
 input = "彼は強面だが優しい"
