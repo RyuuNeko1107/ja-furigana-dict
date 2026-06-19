@@ -1,0 +1,25 @@
+# 2026-06-19 仏教用語・仏尊 probe。毘沙門天/不動明王/涅槃/曼荼羅 等は正読 (33/38成熟)。
+
+[[case]]
+input = "阿頼耶識"
+mode = "hiragana"
+expected = "あらやしき"
+note = "頼=ら (default あらいや)"
+
+[[case]]
+input = "准胝観音"
+mode = "hiragana"
+expected = "じゅんていかんのん"
+note = "准胝=じゅんてい"
+
+[[case]]
+input = "荼枳尼天"
+mode = "hiragana"
+expected = "だきにてん"
+note = "荼枳尼=だきに"
+
+[[case]]
+input = "吉祥天"
+mode = "hiragana"
+expected = "きっしょうてん"
+note = "吉祥=きっしょう (default きちじょう)"
