@@ -25,13 +25,13 @@ git に commit されている master HEAD の状態を基準にする。
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,680** | **739 KB** |
 | [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **4,435** | **233 KB** |
-| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,314** | **99 KB** |
+| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,315** | **99 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **861** | **23 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,771** | **182 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **672** | **29 KB** |
-| **合計** | **50,733** | **1.27 MB** |
+| **合計** | **50,734** | **1.27 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -163,7 +163,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/works/<medium>/*` — 媒体 (game / literature 等) ごとに 1 作品 1 ファイル。 原則は公式読み (一般通称として定着していれば採録可)、 出典コメント必須、 古典読みは現代読み無い場合のみ。
 
-**合計**: 1,314 件 / 99 KB (genre 4 区分)
+**合計**: 1,315 件 / 99 KB (genre 4 区分)
 
 #### ゲーム
 
@@ -180,8 +180,8 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/game/hypmic.toml`](core/works/game/hypmic.toml) | 24 | 1.8 KB | ヒプノシスマイク (キングレコード): キャラクター名 |
 | [`core/works/game/genshin.toml`](core/works/game/genshin.toml) | 21 | 1.8 KB | 原神 (HoYoverse): キャラクター名 (公式日本語読みベース) |
 | [`core/works/game/ensemble_stars.toml`](core/works/game/ensemble_stars.toml) | 19 | 1.5 KB | あんさんぶるスターズ! (Happy Elements): キャラクター名 |
+| [`core/works/game/lovelive.toml`](core/works/game/lovelive.toml) | 18 | 1.4 KB | ラブライブ! (サンライズ): キャラクター名 |
 | [`core/works/game/persona.toml`](core/works/game/persona.toml) | 18 | 1.5 KB | ペルソナ (アトラス): キャラクター名 |
-| [`core/works/game/lovelive.toml`](core/works/game/lovelive.toml) | 17 | 1.4 KB | ラブライブ! (サンライズ): キャラクター名 |
 | [`core/works/game/danganronpa.toml`](core/works/game/danganronpa.toml) | 16 | 1.2 KB | ダンガンロンパ: キャラクター名 |
 | [`core/works/game/fate.toml`](core/works/game/fate.toml) | 12 | 1.0 KB | Fate / 型月 (TYPE-MOON): キャラクター名 |
 | [`core/works/game/honkai_starrail.toml`](core/works/game/honkai_starrail.toml) | 12 | 930 B | 崩壊:スターレイル (HoYoverse): キャラクター名 (公式日本語読みベース) |
@@ -200,7 +200,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/game/ff7.toml`](core/works/game/ff7.toml) | 2 | 352 B | ファイナルファンタジーVII (スクウェア・エニックス): 固有名詞 (公式読みベース) |
 | [`core/works/game/megaten.toml`](core/works/game/megaten.toml) | 2 | 341 B | 女神転生 (アトラス): キャラクター名 / 用語 |
 | [`core/works/game/sekiro.toml`](core/works/game/sekiro.toml) | 1 | 241 B | SEKIRO (フロム・ソフトウェア): キャラクター名 / 用語 |
-| **小計** (27 ファイル) | **617** | **38 KB** | |
+| **小計** (27 ファイル) | **618** | **38 KB** | |
 
 #### 文学
 
