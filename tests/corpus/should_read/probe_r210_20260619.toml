@@ -1,0 +1,13 @@
+# 2026-06-19 R210 進撃の巨人 用語 probe。調査兵団/立体機動/始祖/超大型 等は正読。
+
+[[case]]
+input = "女型の巨人"
+mode = "hiragana"
+expected = "めがたのきょじん"
+note = "女型=めがた (default おんながた)"
+
+[[case]]
+input = "戦鎚の巨人"
+mode = "hiragana"
+expected = "せんついのきょじん"
+note = "戦鎚=せんつい (default たたかつち)"
