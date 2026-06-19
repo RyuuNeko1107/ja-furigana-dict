@@ -568,3 +568,9 @@ input = "落とし所を探る"
 mode = "hiragana"
 expected = "おとしどころをさぐる"
 note = "所=どころ 連濁 (旧 ところ)"
+
+[[case]]
+input = "住み処"
+mode = "hiragana"
+expected = "すみか"
+note = "処=か (旧 すみしょ)"
