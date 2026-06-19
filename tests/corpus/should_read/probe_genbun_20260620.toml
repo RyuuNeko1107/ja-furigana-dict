@@ -537,3 +537,28 @@ input = "紅蓮華"
 mode = "hiragana"
 expected = "ぐれんげ"
 note = "華=げ 連濁 (旧 ぐれんか)"
+
+# ─── 富=とみ(名詞)/我を通す=が/世間の柵=しがらみ (web裏取り) ───
+[[case]]
+input = "巨万の富を築く"
+mode = "hiragana"
+expected = "きょまんのとみをきずく"
+note = "富 名詞=とみ (旧 ふ)"
+
+[[case]]
+input = "富裕層"
+mode = "hiragana"
+expected = "ふゆうそう"
+note = "富 ガード (2字token ふ 維持)"
+
+[[case]]
+input = "我を通す"
+mode = "hiragana"
+expected = "がをとおす"
+note = "idiom 我=が (web確認 jitenon、我に返る=われ 維持)"
+
+[[case]]
+input = "世間の柵"
+mode = "hiragana"
+expected = "せけんのしがらみ"
+note = "柵=しがらみ (web確認、物理 柵=さく は維持)"

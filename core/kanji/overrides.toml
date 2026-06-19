@@ -7469,6 +7469,15 @@ default = "コ"
 char = "富"
 default = "フ"
 
+# 名詞「富」= とみ (富を築く/巨万の富/富と名声。富裕/豊富/富豪/貧富 は2字tokenで非干渉)
+[[kanji.match]]
+next_starts_any = ["を", "が", "は", "と", "に", "の"]
+reading = "とみ"
+
+[[kanji.match]]
+prev_ends_any = ["の", "な", "る"]
+reading = "とみ"
+
 # 「富む/富まない/富んだ/富んで/富めば/富もう/富み○○」 = 動詞 → と
 [[kanji.match]]
 next_starts_any = ["む", "ま", "み", "ん", "め", "も"]
