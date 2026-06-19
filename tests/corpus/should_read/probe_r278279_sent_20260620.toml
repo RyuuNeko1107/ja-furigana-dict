@@ -3,7 +3,7 @@
 [[case]]
 input = "スープを温める"
 mode = "hiragana"
-expected = "すーぷをあたためる"
+expected = "スープをあたためる"
 note = "温める=あたためる (default ぬくめる)"
 
 [[case]]
