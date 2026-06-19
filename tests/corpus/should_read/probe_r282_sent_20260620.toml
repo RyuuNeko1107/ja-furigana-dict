@@ -1,0 +1,26 @@
+# 2026-06-20 R282 例文 probe。自他動詞は文脈で全成熟。荒げる=あらげる。
+# 的を絞る=まと は 科学的に=てき と衝突(prev=ののみ安全)で見送り。
+
+[[case]]
+input = "彼は声を荒げる"
+mode = "hiragana"
+expected = "かれはこえをあらげる"
+note = "荒げる=あらげる (default こうげる)"
+
+[[case]]
+input = "科学的に分析する"
+mode = "hiragana"
+expected = "かがくてきにぶんせきする"
+note = "〜的に=てき (的 suffix、prev=の以外は てき)"
+
+[[case]]
+input = "彼は罪を贖う"
+mode = "hiragana"
+expected = "かれはつみをあがなう"
+note = "贖う=あがなう 成熟確認"
+
+[[case]]
+input = "彼は神を崇める"
+mode = "hiragana"
+expected = "かれはかみをあがめる"
+note = "崇める=あがめる 成熟確認"
