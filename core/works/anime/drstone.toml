@@ -1,0 +1,15 @@
+# Dr.STONE (稲垣理一郎 / Boichi / 集英社) のキャラクター名
+#
+# 出典: 『Dr.STONE』(集英社 週刊少年ジャンプ) / アニメ。石神千空 は既正のため非登録。
+
+[meta]
+schema_version = "2"
+role = "works"
+description = "Dr.STONE (稲垣理一郎/Boichi): キャラクター名"
+
+[entries]
+
+"七海龍水" = "ナナミリュウスイ"  # 七海=ななみ (default ななうみ)
+"小川杠" = "オガワユズリハ"      # 杠=ゆずりは (default ちぎ)
+"氷月" = "ヒョウヅキ"            # default ひょうげつ
+"獅子王司" = "シシオウツカサ"    # 司=つかさ (default し)

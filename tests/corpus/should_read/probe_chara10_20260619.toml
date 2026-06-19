@@ -1,0 +1,44 @@
+# 2026-06-19 東京喰種/Dr.STONE/暗殺教室 キャラ名 probe。石神千空/市川京太郎 等は既正。
+# 茅野=ちの(市)/司=し/百夜 homograph は見送り。
+
+[[case]]
+input = "金木研"
+mode = "hiragana"
+expected = "かねきけん"
+note = "東京喰種 金木=かねき (default かなぎ)"
+
+[[case]]
+input = "霧嶋董香"
+mode = "hiragana"
+expected = "きりしまとうか"
+note = "董香=とうか"
+
+[[case]]
+input = "喰種"
+mode = "hiragana"
+expected = "グール"
+note = "作品中心用語 (default くしゅ)"
+
+[[case]]
+input = "七海龍水"
+mode = "hiragana"
+expected = "ななみりゅうすい"
+note = "Dr.STONE 七海=ななみ"
+
+[[case]]
+input = "獅子王司"
+mode = "hiragana"
+expected = "ししおうつかさ"
+note = "Dr.STONE 司=つかさ"
+
+[[case]]
+input = "潮田渚"
+mode = "hiragana"
+expected = "しおたなぎさ"
+note = "暗殺教室 潮田=しおた"
+
+[[case]]
+input = "烏間惟臣"
+mode = "hiragana"
+expected = "からすまただおみ"
+note = "暗殺教室 烏間=からすま"
