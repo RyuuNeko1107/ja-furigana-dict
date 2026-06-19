@@ -68,3 +68,17 @@ input = "大雪が降った"
 mode = "hiragana"
 expected = "おおゆきがふった"
 note = "旧 たいせつ (節気)"
+
+# ─── 雨水 = アマミズ (日常語 dominant、節気/土木 うすい は minority。R20 deferral を flip) ───
+[[case]]
+input = "雨水が溜まる"
+mode = "hiragana"
+expected = "あまみずがたまる"
+note = "旧 うすい (節気)"
+
+# ─── 小枝 = コエダ (枝=シ 音読み化け こし。枯れ枝=かれえだ は正) ───
+[[case]]
+input = "小枝を拾う"
+mode = "hiragana"
+expected = "こえだをひろう"
+note = "旧 こし"
