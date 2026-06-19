@@ -127,3 +127,16 @@ input = "井土ヶ谷で降りる"
 mode = "hiragana"
 expected = "いどがやでおりる"
 note = "ヶ残留 (旧 いどヶこく)"
+
+# ─── 強張る=こわばる (IPADIC きょうは 固定、活用形 明示entry化) ───
+[[case]]
+input = "体を強張らせる"
+mode = "hiragana"
+expected = "からだをこわばらせる"
+note = "旧 きょうはらせる"
+
+[[case]]
+input = "顔が強張った"
+mode = "hiragana"
+expected = "かおがこわばった"
+note = "強張る=こわばる"
