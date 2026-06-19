@@ -8,7 +8,7 @@
 
 (なし — divergent reading 0 件、 健全)
 
-## 同一 reading (13 件)
+## 同一 reading (14 件)
 
 実害なし (jukugo merge で同値が上書きされても reading 不変)。 整理目安として list 化。
 長期的にどちらか 1 ファイルに寄せたいケースを発見する用。
@@ -26,5 +26,6 @@
 | 東風平 | コチンダ | `core/jukugo/nature/place_names.toml`, `core/jukugo/proper/surnames.toml` |
 | 栗花落 | ツユリ | `core/jukugo/proper/surnames.toml`, `core/works/anime/kimetsu.toml` |
 | 海風 | ウミカゼ | `core/jukugo/basic/general.toml`, `core/jukugo/nature/weather.toml` |
+| 百目鬼 | ドウメキ | `core/jukugo/proper/surnames.toml`, `core/works/anime/xxxholic.toml` |
 | 酢漿草 | カタバミ | `core/jukugo/nature/animals.toml`, `core/jukugo/nature/plants.toml` |
 | 鰻丼 | ウナドン | `core/jukugo/basic/general.toml`, `core/jukugo/nature/foods.toml` |
