@@ -1,0 +1,31 @@
+# 2026-06-19 NARUTO probe。写輪眼/大蛇丸/自来也/螺旋丸/火影/木ノ葉 等は正読。
+
+[[case]]
+input = "須佐能乎"
+mode = "hiragana"
+expected = "すさのお"
+note = "能乎=のお (default すさのうこ)"
+
+[[case]]
+input = "干柿鬼鮫"
+mode = "hiragana"
+expected = "ほしがききさめ"
+note = "干柿=ほしがき"
+
+[[case]]
+input = "扉間"
+mode = "hiragana"
+expected = "とびらま"
+note = "千手扉間 (default とびらかん)"
+
+[[case]]
+input = "香燐"
+mode = "hiragana"
+expected = "かりん"
+note = "燐=りん (default こうおにび)"
+
+[[case]]
+input = "砂隠れ"
+mode = "hiragana"
+expected = "すながくれ"
+note = "隠れ=がくれ 連濁 (default すなかくれ)"
