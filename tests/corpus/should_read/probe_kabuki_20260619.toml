@@ -1,0 +1,32 @@
+# 2026-06-19 歌舞伎・落語 演目 probe。連獅子/勧進帳/菅原伝授手習鑑/鰍沢/厩火事 等は正読。
+# 女形=おんながた valid、暫=1字 見送り。
+
+[[case]]
+input = "寿限無"
+mode = "hiragana"
+expected = "じゅげむ"
+note = "落語 (default じゅげんむ)"
+
+[[case]]
+input = "文七元結"
+mode = "hiragana"
+expected = "ぶんしちもっとい"
+note = "元結=もっとい (default もとゆい)"
+
+[[case]]
+input = "火焔太鼓"
+mode = "hiragana"
+expected = "かえんだいこ"
+note = "太鼓=だいこ 連濁 (default たいこ)"
+
+[[case]]
+input = "黄金餅"
+mode = "hiragana"
+expected = "こがねもち"
+note = "落語、黄金=こがね (default おうごん)"
+
+[[case]]
+input = "三人吉三"
+mode = "hiragana"
+expected = "さんにんきちさ"
+note = "吉三=きちさ (default きちぞう)"
