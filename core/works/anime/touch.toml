@@ -1,0 +1,11 @@
+# あだち充作品 (タッチ 等 / 小学館) のキャラクター名
+# 英雄=ひでお は えいゆう と homograph のため非登録。
+
+[meta]
+schema_version = "2"
+role = "works"
+description = "あだち充作品: キャラクター名"
+
+[entries]
+
+"浅倉南" = "アサクラミナミ"  # 南=みなみ (default なん)

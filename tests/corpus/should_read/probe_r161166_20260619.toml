@@ -1,0 +1,37 @@
+# 2026-06-19 R161-166 らんま/うる星(成熟)/キャプ翼/聖闘士星矢/北斗/あだち probe まとめ。
+
+[[case]]
+input = "早乙女乱馬"
+mode = "hiragana"
+expected = "さおとめらんま"
+note = "乱馬=らんま (default らんば)"
+
+[[case]]
+input = "九能帯刀"
+mode = "hiragana"
+expected = "くのうたてわき"
+note = "帯刀=たてわき"
+
+[[case]]
+input = "日向小次郎"
+mode = "hiragana"
+expected = "ひゅうがこじろう"
+note = "日向=ひゅうが (bare 日向=ひなた homograph)"
+
+[[case]]
+input = "松山光"
+mode = "hiragana"
+expected = "まつやまひかる"
+note = "光=ひかる (default ひかり)"
+
+[[case]]
+input = "南斗聖拳"
+mode = "hiragana"
+expected = "なんとせいけん"
+note = "南斗=なんと (default みなみと)"
+
+[[case]]
+input = "浅倉南"
+mode = "hiragana"
+expected = "あさくらみなみ"
+note = "南=みなみ (default なん)"

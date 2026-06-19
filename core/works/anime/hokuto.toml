@@ -1,0 +1,12 @@
+# 北斗の拳 (武論尊・原哲夫 / 集英社) の用語
+
+[meta]
+schema_version = "2"
+role = "works"
+description = "北斗の拳: 用語"
+
+[entries]
+
+"南斗" = "ナント"          # 南斗聖拳 (default みなみと)
+"南斗聖拳" = "ナントセイケン"
+"元斗皇拳" = "ゲントコウケン"  # 元斗=げんと (default もとと)
