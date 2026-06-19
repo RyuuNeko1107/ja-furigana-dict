@@ -1,0 +1,25 @@
+# 2026-06-20 R280-281 例文 probe。常用/難読動詞は文脈で全成熟。嵌まる=はまる(自動詞)修正。
+
+[[case]]
+input = "罠に嵌まる"
+mode = "hiragana"
+expected = "わなにはまる"
+note = "嵌まる=はまる (default あなまる、嵌める=はめるは既正)"
+
+[[case]]
+input = "落とし穴に嵌まった"
+mode = "hiragana"
+expected = "おとしあなにはまった"
+note = "嵌まった=はまった"
+
+[[case]]
+input = "彼は耳を欹てる"
+mode = "hiragana"
+expected = "かれはみみをそばだてる"
+note = "欹てる=そばだてる 成熟確認"
+
+[[case]]
+input = "彼は手を拱く"
+mode = "hiragana"
+expected = "かれはてをこまねく"
+note = "拱く=こまねく 成熟確認"
