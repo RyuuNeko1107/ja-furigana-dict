@@ -1,0 +1,38 @@
+# 2026-06-19 呪術/鬼滅 残りキャラ mop-up probe (R100)。猗窩座/童磨/累/魘夢 等は既正。
+# 真人=まひと/まさと は homograph で ML 領域 (非登録)。
+
+[[case]]
+input = "禅院甚爾"
+mode = "hiragana"
+expected = "ぜんいんとうじ"
+note = "甚爾=とうじ (default じんじ)"
+
+[[case]]
+input = "羂索"
+mode = "hiragana"
+expected = "けんじゃく"
+note = "default けんさく"
+
+[[case]]
+input = "鱗滝左近次"
+mode = "hiragana"
+expected = "うろこだきさこんじ"
+note = "鱗滝=うろこだき 連濁 (default うろこたき)"
+
+[[case]]
+input = "桑島慈悟郎"
+mode = "hiragana"
+expected = "くわじまじごろう"
+note = "桑島=くわじま 連濁"
+
+[[case]]
+input = "煉獄槇寿郎"
+mode = "hiragana"
+expected = "れんごくまきじゅろう"
+note = "槇寿郎=まきじゅろう (default まきとしお)"
+
+[[case]]
+input = "錆兎"
+mode = "hiragana"
+expected = "さびと"
+note = "兎=と (default さびうさぎ)"
