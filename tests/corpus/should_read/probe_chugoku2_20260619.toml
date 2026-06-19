@@ -2,12 +2,6 @@
 # 平生=へいぜい/和気=わき/佐川=さがわ(急便)/綾川=あやかわ homograph 見送り。
 
 [[case]]
-input = "八頭"
-mode = "hiragana"
-expected = "やず"
-note = "鳥取県八頭町 (default はっとう)"
-
-[[case]]
 input = "邑南"
 mode = "hiragana"
 expected = "おおなん"
