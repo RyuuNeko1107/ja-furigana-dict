@@ -1,0 +1,37 @@
+# 2026-06-19 R171-174 逆転裁判/龍が如く/ダンガンロンパ/ときメモ probe まとめ。
+
+[[case]]
+input = "成歩堂龍一"
+mode = "hiragana"
+expected = "なるほどうりゅういち"
+note = "成歩堂=なるほどう (default せいほどう)"
+
+[[case]]
+input = "王泥喜法介"
+mode = "hiragana"
+expected = "おどろきほうすけ"
+note = "王泥喜=おどろき"
+
+[[case]]
+input = "春日一番"
+mode = "hiragana"
+expected = "かすがいちばん"
+note = "龍が如く 春日=かすが (default しゅんじつ)"
+
+[[case]]
+input = "霧切響子"
+mode = "hiragana"
+expected = "きりぎりきょうこ"
+note = "ダンガンロンパ 霧切=きりぎり"
+
+[[case]]
+input = "終里赤音"
+mode = "hiragana"
+expected = "おわりあかね"
+note = "終里=おわり/赤音=あかね"
+
+[[case]]
+input = "紐緒結奈"
+mode = "hiragana"
+expected = "ひもおゆいな"
+note = "ときメモ 紐緒=ひもお"
