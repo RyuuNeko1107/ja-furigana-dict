@@ -687,3 +687,22 @@ input = "神社"
 mode = "hiragana"
 expected = "じんじゃ"
 note = "社 ガード (2字token じゃ)"
+
+# ─── 恐竜/古生物: 首長竜/翼竜/角竜/三葉虫 ───
+[[case]]
+input = "首長竜"
+mode = "hiragana"
+expected = "くびながりゅう"
+note = "首長=くびなが (首長選挙=しゅちょう は維持)"
+
+[[case]]
+input = "角竜"
+mode = "hiragana"
+expected = "つのりゅう"
+note = "web確認 (旧 かどりゅう)"
+
+[[case]]
+input = "三葉虫"
+mode = "hiragana"
+expected = "さんようちゅう"
+note = "旧 さんはむし"
