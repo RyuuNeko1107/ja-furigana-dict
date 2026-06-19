@@ -1,0 +1,26 @@
+# 2026-06-19 近畿 難読市町村 第24弾。能勢/宍粟=しそう/佐用/久御山/笠置/和束/伊根/栗東/
+# 安曇川=あどがわ/四條畷 等は正読。養父=ようふ(継父) homograph 見送り。
+
+[[case]]
+input = "朝来"
+mode = "hiragana"
+expected = "あさご"
+note = "兵庫県朝来市 (default ちょうらい)"
+
+[[case]]
+input = "愛荘"
+mode = "hiragana"
+expected = "あいしょう"
+note = "滋賀県、荘=しょう (default あいそう)"
+
+[[case]]
+input = "東近江"
+mode = "hiragana"
+expected = "ひがしおうみ"
+note = "東=ひがし (default とうおうみ)"
+
+[[case]]
+input = "甲良"
+mode = "hiragana"
+expected = "こうら"
+note = "滋賀県甲良町、良=ら (default こうりょう)"
