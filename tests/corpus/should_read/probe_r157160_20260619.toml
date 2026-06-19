@@ -1,0 +1,31 @@
+# 2026-06-19 R157-160 四字熟語/名城/山岳/三国 probe まとめ。高順=ガオシュン(薬屋)優先で三国側見送り。
+
+[[case]]
+input = "旁若無人"
+mode = "hiragana"
+expected = "ぼうじゃくぶじん"
+note = "旁若=ぼうじゃく (default かたがた)"
+
+[[case]]
+input = "月山富田城"
+mode = "hiragana"
+expected = "がっさんとだじょう"
+note = "富田=とだ (default とみた)"
+
+[[case]]
+input = "燕岳"
+mode = "hiragana"
+expected = "つばくろだけ"
+note = "難読 (default つばめがく)"
+
+[[case]]
+input = "甲斐駒ヶ岳"
+mode = "hiragana"
+expected = "かいこまがたけ"
+note = "ヶ岳=がたけ"
+
+[[case]]
+input = "呂蒙"
+mode = "hiragana"
+expected = "りょもう"
+note = "呂=りょ (default ろ)"
