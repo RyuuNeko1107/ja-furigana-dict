@@ -26,12 +26,12 @@ git に commit されている master HEAD の状態を基準にする。
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,680** | **739 KB** |
 | [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **4,591** | **243 KB** |
 | [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,401** | **107 KB** |
-| [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **966** | **26 KB** |
+| [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **971** | **26 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,771** | **184 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **676** | **30 KB** |
-| **合計** | **51,085** | **1.30 MB** |
+| **合計** | **51,090** | **1.30 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -319,8 +319,8 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
 | [`core/loanwords/general.toml`](core/loanwords/general.toml) | 758 | 19 KB | 一般英語 / メディア / ゲーミング / SNS 略語 (ASCII surface) |
-| [`core/loanwords/it.toml`](core/loanwords/it.toml) | 208 | 6.5 KB | IT 用語 / プログラミング言語 / OSS / クラウドサービス / 技術企業 (ASCII surface) |
-| **小計** (2 ファイル) | **966** | **26 KB** | |
+| [`core/loanwords/it.toml`](core/loanwords/it.toml) | 213 | 6.7 KB | IT 用語 / プログラミング言語 / OSS / クラウドサービス / 技術企業 (ASCII surface) |
+| **小計** (2 ファイル) | **971** | **26 KB** | |
 
 ### 分類前 inbox
 
