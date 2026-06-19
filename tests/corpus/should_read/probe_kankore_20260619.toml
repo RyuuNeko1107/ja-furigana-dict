@@ -1,0 +1,25 @@
+# 2026-06-19 艦これ艦娘 probe。金剛/榛名/霧島/愛宕/熊野/扶桑 等は正読。神通/最上/川内 homograph 見送り。
+
+[[case]]
+input = "蒼龍"
+mode = "hiragana"
+expected = "そうりゅう"
+note = "蒼=そう (default あおりゅう)"
+
+[[case]]
+input = "瑞鶴"
+mode = "hiragana"
+expected = "ずいかく"
+note = "鶴=かく (default ずいつる)"
+
+[[case]]
+input = "島風"
+mode = "hiragana"
+expected = "しまかぜ"
+note = "風=かぜ (default しまふう)"
+
+[[case]]
+input = "鳥海"
+mode = "hiragana"
+expected = "ちょうかい"
+note = "鳥海山と同 (default とりうみ)"
