@@ -1,0 +1,38 @@
+# 2026-06-19 名探偵コナン キャラ名 probe。服部平次/工藤新一/灰原哀/阿笠博士 等は既正。
+# 目暮=めぐれ (メグレ警視のパロディ、既存 目暮警部=メグレ に合わせる)。
+
+[[case]]
+input = "目暮十三"
+mode = "hiragana"
+expected = "めぐれじゅうぞう"
+note = "目暮=めぐれ (default めぼ)"
+
+[[case]]
+input = "降谷零"
+mode = "hiragana"
+expected = "ふるやれい"
+note = "降谷=ふるや (default こうこく)"
+
+[[case]]
+input = "沖矢昴"
+mode = "hiragana"
+expected = "おきやすばる"
+note = "沖矢=おきや (default おきし)"
+
+[[case]]
+input = "赤井秀一"
+mode = "hiragana"
+expected = "あかいしゅういち"
+note = "秀一=しゅういち (default ひでかず)"
+
+[[case]]
+input = "諸伏高明"
+mode = "hiragana"
+expected = "もろふしたかあき"
+note = "高明=たかあき (default こうめい)"
+
+[[case]]
+input = "高木渉"
+mode = "hiragana"
+expected = "たかぎわたる"
+note = "渉=わたる (default しょう)"
