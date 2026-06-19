@@ -1,0 +1,31 @@
+# 2026-06-19 三国志 武将 第2弾 probe。司馬懿/鄧艾/姜維/陸遜/太史慈 等は正読。法正=のりまさ homograph 見送り。
+
+[[case]]
+input = "賈詡"
+mode = "hiragana"
+expected = "かく"
+note = "賈=か/詡=く"
+
+[[case]]
+input = "荀彧"
+mode = "hiragana"
+expected = "じゅんいく"
+note = "彧=いく"
+
+[[case]]
+input = "龐徳"
+mode = "hiragana"
+expected = "ほうとく"
+note = "龐=ほう"
+
+[[case]]
+input = "諸葛恪"
+mode = "hiragana"
+expected = "しょかつかく"
+note = "恪=かく"
+
+[[case]]
+input = "関平"
+mode = "hiragana"
+expected = "かんぺい"
+note = "平=ぺい 連濁"
