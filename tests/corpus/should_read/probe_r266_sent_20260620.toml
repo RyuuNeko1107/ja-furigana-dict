@@ -1,0 +1,25 @@
+# 2026-06-20 R266 rare語 例文 probe。天邪鬼/強か/心太/呂律/反吐/身形 等は成熟。
+
+[[case]]
+input = "彼は数多の困難を乗り越えた"
+mode = "hiragana"
+expected = "かれはあまたのこんなんをのりこえた"
+note = "数多=あまた (default すうた)"
+
+[[case]]
+input = "数多く存在する"
+mode = "hiragana"
+expected = "かずおおくそんざいする"
+note = "数多く=かずおおく (数多=あまた 追加後も別)"
+
+[[case]]
+input = "彼は性に合う仕事を見つけた"
+mode = "hiragana"
+expected = "かれはしょうにあうしごとをみつけた"
+note = "性に合う=しょう (default せい)"
+
+[[case]]
+input = "彼は呂律が回らない"
+mode = "hiragana"
+expected = "かれはろれつがまわらない"
+note = "呂律=ろれつ 成熟確認"
