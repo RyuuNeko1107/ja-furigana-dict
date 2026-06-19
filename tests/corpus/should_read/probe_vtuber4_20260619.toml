@@ -1,0 +1,31 @@
+# 2026-06-19 VTuber事務所 (ぶいすぽ/ななしいんく/あおぎり) probe。漣=れん/さざなみ homograph 見送り。
+
+[[case]]
+input = "音霊魂子"
+mode = "hiragana"
+expected = "おとだまたまこ"
+note = "あおぎり 音霊=おとだま (default おとれい)"
+
+[[case]]
+input = "山黒音玄"
+mode = "hiragana"
+expected = "やまぐろねくろ"
+note = "あおぎり 山黒=やまぐろ/音玄=ねくろ"
+
+[[case]]
+input = "杏戸"
+mode = "hiragana"
+expected = "きょうど"
+note = "ななしいんく 杏戸ゆげ (default あんずこ)"
+
+[[case]]
+input = "兎咲"
+mode = "hiragana"
+expected = "とさき"
+note = "ぶいすぽ 兎咲ミミ (default うさぎさ)"
+
+[[case]]
+input = "春雨麗女"
+mode = "hiragana"
+expected = "はるさめうるは"
+note = "あおぎり 麗女=うるは (default れいじょ)"
