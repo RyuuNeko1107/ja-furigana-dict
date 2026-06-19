@@ -1,0 +1,37 @@
+# 2026-06-19 R219-223 シャニマス/ミリオン/ラブライブ/シンデレラ probe まとめ。
+
+[[case]]
+input = "西城樹里"
+mode = "hiragana"
+expected = "さいじょうじゅり"
+note = "樹里=じゅり (default いつき)"
+
+[[case]]
+input = "天空橋朋花"
+mode = "hiragana"
+expected = "あまつそらはしともか"
+note = "ミリオン 天空橋=あまつそらはし"
+
+[[case]]
+input = "園田海未"
+mode = "hiragana"
+expected = "そのだうみ"
+note = "μ's 海未=うみ (default かいみ)"
+
+[[case]]
+input = "国木田花丸"
+mode = "hiragana"
+expected = "くにきだはなまる"
+note = "Aqours 花丸=はなまる"
+
+[[case]]
+input = "三船栞子"
+mode = "hiragana"
+expected = "みふねしおりこ"
+note = "虹 栞子=しおりこ"
+
+[[case]]
+input = "龍崎薫"
+mode = "hiragana"
+expected = "りゅうざきかおる"
+note = "シンデレラ 龍崎=りゅうざき"
