@@ -1,0 +1,14 @@
+# xxxHOLiC (CLAMP / 講談社) のキャラクター名
+
+[meta]
+schema_version = "2"
+role = "works"
+description = "xxxHOLiC (CLAMP): キャラクター名"
+
+[entries]
+
+"百目鬼" = "ドウメキ"          # 百目鬼静 (default ひゃくめき)
+"百目鬼静" = "ドウメキシズカ"  # 静=しずか
+"九軒" = "クノギ"              # 九軒ひまわり (default きゅうけん)
+"壱原" = "イチハラ"            # 壱原侑子 (default いちげん)
+"壱原侑子" = "イチハラユウコ"
