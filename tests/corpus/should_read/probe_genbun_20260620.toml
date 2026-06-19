@@ -386,3 +386,22 @@ input = "恩を仇で返す"
 mode = "hiragana"
 expected = "おんをあだでかえす"
 note = "仇=あだ ガード"
+
+# ─── idiom: 苦汁=くじゅう/轍を踏む=てつ (にがり/車の轍=わだち は維持) ───
+[[case]]
+input = "苦汁を嘗める"
+mode = "hiragana"
+expected = "くじゅうをなめる"
+note = "苦汁=くじゅう (旧 にがり)"
+
+[[case]]
+input = "同じ轍を踏む"
+mode = "hiragana"
+expected = "おなじてつをふむ"
+note = "idiom 轍=てつ"
+
+[[case]]
+input = "車の轍"
+mode = "hiragana"
+expected = "くるまのわだち"
+note = "轍=わだち ガード (literal rut)"
