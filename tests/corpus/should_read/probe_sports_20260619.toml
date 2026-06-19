@@ -1,0 +1,37 @@
+# 2026-06-19 黒バス/ハイキュー残り probe。
+
+[[case]]
+input = "木吉鉄平"
+mode = "hiragana"
+expected = "きよしてっぺい"
+note = "黒バス 木吉=きよし (default ききち)"
+
+[[case]]
+input = "花宮真"
+mode = "hiragana"
+expected = "はなみやまこと"
+note = "黒バス 花宮=はなみや"
+
+[[case]]
+input = "根武谷永吉"
+mode = "hiragana"
+expected = "ねぶやえいきち"
+note = "黒バス 根武谷=ねぶや"
+
+[[case]]
+input = "縁下力"
+mode = "hiragana"
+expected = "えんのしたちから"
+note = "ハイキュー 縁下=えんのした"
+
+[[case]]
+input = "国見英"
+mode = "hiragana"
+expected = "くにみあきら"
+note = "ハイキュー 英=あきら (default えい)"
+
+[[case]]
+input = "東峰旭"
+mode = "hiragana"
+expected = "あずまねあさひ"
+note = "ハイキュー 東峰=あずまね (default とうほう)"
