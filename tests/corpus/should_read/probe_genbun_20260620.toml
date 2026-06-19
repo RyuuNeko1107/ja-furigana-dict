@@ -405,3 +405,28 @@ input = "車の轍"
 mode = "hiragana"
 expected = "くるまのわだち"
 note = "轍=わだち ガード (literal rut)"
+
+# ─── 文脈 homograph jukugo: 一見客/職人気質/仲間内/身の上話 ───
+[[case]]
+input = "一見客お断り"
+mode = "hiragana"
+expected = "いちげんきゃくおことわり"
+note = "一見=いちげん (一見して=いっけん は維持)"
+
+[[case]]
+input = "職人気質の親方"
+mode = "hiragana"
+expected = "しょくにんかたぎのおやかた"
+note = "気質=かたぎ"
+
+[[case]]
+input = "仲間内の話"
+mode = "hiragana"
+expected = "なかまうちのはなし"
+note = "内=うち"
+
+[[case]]
+input = "身の上話を聞く"
+mode = "hiragana"
+expected = "みのうえばなしをきく"
+note = "話=ばなし 連濁"
