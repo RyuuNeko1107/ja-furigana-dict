@@ -1,0 +1,32 @@
+# 2026-06-19 ホロライブ talent 名 probe。白上=しらかみ/猫又=ねこまた/沙花叉=さかまた/
+# 大空=おおぞら 等は登録済/正読。homograph 姓 (百鬼/大神/白銀/雪花) はフルネームで disambiguate。
+
+[[case]]
+input = "虎金妃"
+mode = "hiragana"
+expected = "こがねい"
+note = "虎金妃笹丸 (旧 とらきんひ)"
+
+[[case]]
+input = "響咲"
+mode = "hiragana"
+expected = "ひびきさき"
+note = "響咲リオナ (旧 きょうさ)"
+
+[[case]]
+input = "百鬼あやめ"
+mode = "hiragana"
+expected = "なきりあやめ"
+note = "bare 百鬼 は 百鬼夜行 と衝突回避"
+
+[[case]]
+input = "大神ミオ"
+mode = "hiragana"
+expected = "おおかみみお"
+note = "大神=おおかみ (bare は おおがみ homograph)"
+
+[[case]]
+input = "百鬼夜行"
+mode = "hiragana"
+expected = "ひゃっきやぎょう"
+note = "百鬼あやめ 追加後も jukugo 維持の確認"
