@@ -12182,7 +12182,7 @@ default = "チュウ"
 # unihan default 「こぶし」 は古語、 現代では熟語 dominant
 [[kanji]]
 char = "拳"
-default = "ケン"
+default = "コブシ"  # 拳を握る=こぶし (拳銃/拳法/太極拳/鉄拳 は jukugo で けん、2026-06-20 flip)
 
 # 「操」 default 「ソウ」 (= 操作/体操/節操/操行/情操)。
 # 動詞 「操る」 = あやつる は okurigana 列挙で 「あやつ」 へ切替
