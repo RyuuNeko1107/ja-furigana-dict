@@ -680,6 +680,36 @@ suffix = "チョウ"
 sokuonize = true
 # === end: 挺 ===
 
+# 升 (sh系、体積): 一升=いっしょう/六升=ろくしょう/八升=はっしょう (1/8/10 促音)
+[counter."升"]
+default = "ショウ"
+kanji_numeral = true
+[[counter."升".rules]]
+last_digit = [1, 8, 0]
+suffix = "ショウ"
+sokuonize = true
+# === end: 升 ===
+
+# 尺 (sh系、長さ): 一尺=いっしゃく/六尺=ろくしゃく/八尺=はっしゃく (1/8/10 促音)
+[counter."尺"]
+default = "シャク"
+kanji_numeral = true
+[[counter."尺".rules]]
+last_digit = [1, 8, 0]
+suffix = "シャク"
+sokuonize = true
+# === end: 尺 ===
+
+# 画 (k系、画数): 一画=いっかく/六画=ろっかく/八画=はっかく (1/6/8/10 促音)
+[counter."画"]
+default = "カク"
+kanji_numeral = true
+[[counter."画".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カク"
+sokuonize = true
+# === end: 画 ===
+
 # 滴 (しずく): 一滴=いってき/八滴=はってき (6=ろくてき)
 [counter."滴"]
 default = "テキ"

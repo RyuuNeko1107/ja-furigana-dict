@@ -605,3 +605,28 @@ input = "拳銃二挺"
 mode = "hiragana"
 expected = "けんじゅうにちょう"
 note = "挺 counter=ちょう (旧 てい)"
+
+# ─── counter promotion: 升/尺/画 ───
+[[case]]
+input = "一升瓶"
+mode = "hiragana"
+expected = "いっしょうびん"
+note = "升 counter (旧 いちしょう)"
+
+[[case]]
+input = "八尺"
+mode = "hiragana"
+expected = "はっしゃく"
+note = "尺 counter"
+
+[[case]]
+input = "六画"
+mode = "hiragana"
+expected = "ろっかく"
+note = "画 counter=かく (旧 ろくが、映画=えいが は維持)"
+
+[[case]]
+input = "映画"
+mode = "hiragana"
+expected = "えいが"
+note = "画 ガード (非counter が)"
