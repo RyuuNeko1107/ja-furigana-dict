@@ -1,0 +1,20 @@
+# 2026-06-19 北海道 難読市町村 round2。蘭越/寿都/留辺蘂=るべしべ/標茶=しべちゃ/別海/羅臼 等は正。
+# 豊富=ほうふ(豊富な) homograph 見送り。
+
+[[case]]
+input = "真狩"
+mode = "hiragana"
+expected = "まっかり"
+note = "北海道真狩村 (default まつかり)"
+
+[[case]]
+input = "美深"
+mode = "hiragana"
+expected = "びふか"
+note = "北海道美深町 (default ぶふか)"
+
+[[case]]
+input = "雄武"
+mode = "hiragana"
+expected = "おうむ"
+note = "北海道雄武町 (default おむ)"
