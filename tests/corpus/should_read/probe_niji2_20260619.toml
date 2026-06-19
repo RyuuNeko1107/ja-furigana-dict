@@ -1,0 +1,31 @@
+# 2026-06-19 にじさんじ ライバー名 第2弾 probe。
+
+[[case]]
+input = "竜胆尊"
+mode = "hiragana"
+expected = "りんどうみこと"
+note = "竜胆=りんどう/尊=みこと (default そん)"
+
+[[case]]
+input = "桜凛月"
+mode = "hiragana"
+expected = "さくりつき"
+note = "default さくらりんげつ"
+
+[[case]]
+input = "栞葉るり"
+mode = "hiragana"
+expected = "しおりはるり"
+note = "栞葉=しおりは"
+
+[[case]]
+input = "語部紡"
+mode = "hiragana"
+expected = "かたりべつむぎ"
+note = "語部=かたりべ/紡=つむぎ"
+
+[[case]]
+input = "御伽原江良"
+mode = "hiragana"
+expected = "おとぎばらえら"
+note = "御伽原=おとぎばら/江良=えら"
