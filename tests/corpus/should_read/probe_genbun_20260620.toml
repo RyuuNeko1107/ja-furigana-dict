@@ -140,3 +140,16 @@ input = "顔が強張った"
 mode = "hiragana"
 expected = "かおがこわばった"
 note = "強張る=こわばる"
+
+# ─── 煮魚=にざかな (魚=ぎょ 化け、焼き魚は正)/近所付き合い=づきあい 連濁 ───
+[[case]]
+input = "煮魚の定食"
+mode = "hiragana"
+expected = "にざかなのていしょく"
+note = "旧 にぎょ"
+
+[[case]]
+input = "近所付き合いが面倒"
+mode = "hiragana"
+expected = "きんじょづきあいがめんどう"
+note = "連濁 づきあい (旧 つきあい)"
