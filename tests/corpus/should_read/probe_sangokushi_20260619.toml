@@ -1,0 +1,44 @@
+# 2026-06-19 三国志武将 probe。諸葛亮/曹操/劉備/関羽/趙雲/呂布/姜維/陸遜 等は正読。
+# 法正=ほうせい は のりまさ(和名) と homograph で見送り。
+
+[[case]]
+input = "夏侯惇"
+mode = "hiragana"
+expected = "かこうとん"
+note = "夏侯=かこう (default なつこう)"
+
+[[case]]
+input = "張飛"
+mode = "hiragana"
+expected = "ちょうひ"
+note = "飛=ひ (default ちょうと)"
+
+[[case]]
+input = "許褚"
+mode = "hiragana"
+expected = "きょちょ"
+note = "褚=ちょ (default きょおおい)"
+
+[[case]]
+input = "龐統"
+mode = "hiragana"
+expected = "ほうとう"
+note = "龐=ほう (default みだれる)"
+
+[[case]]
+input = "貂蝉"
+mode = "hiragana"
+expected = "ちょうせん"
+note = "三国志の美女 (default てんせみ)"
+
+[[case]]
+input = "華佗"
+mode = "hiragana"
+expected = "かだ"
+note = "名医 (default かほか)"
+
+[[case]]
+input = "孫権"
+mode = "hiragana"
+expected = "そんけん"
+note = "孫=そん (default まごけん)"
