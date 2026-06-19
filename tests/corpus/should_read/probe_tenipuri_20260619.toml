@@ -1,0 +1,37 @@
+# 2026-06-19 テニスの王子様 キャラ名 probe。越前/手塚国光 等は既正。乾=かん(乾杯)homograph で full のみ。
+
+[[case]]
+input = "忍足侑士"
+mode = "hiragana"
+expected = "おしたりゆうし"
+note = "忍足=おしたり (default にんあし)"
+
+[[case]]
+input = "跡部景吾"
+mode = "hiragana"
+expected = "あとべけいご"
+note = "景吾=けいご"
+
+[[case]]
+input = "幸村精市"
+mode = "hiragana"
+expected = "ゆきむらせいいち"
+note = "幸村=ゆきむら"
+
+[[case]]
+input = "切原赤也"
+mode = "hiragana"
+expected = "きりはらあかや"
+note = "赤也=あかや (default せきや)"
+
+[[case]]
+input = "白石蔵ノ介"
+mode = "hiragana"
+expected = "しらいしくらのすけ"
+note = "蔵ノ介=くらのすけ"
+
+[[case]]
+input = "乾貞治"
+mode = "hiragana"
+expected = "いぬいさだはる"
+note = "乾=いぬい (bare 乾=かん homograph)"
