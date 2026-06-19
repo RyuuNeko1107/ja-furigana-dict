@@ -655,3 +655,16 @@ input = "和布蕪"
 mode = "hiragana"
 expected = "めかぶ"
 note = "熟字訓 (旧 わかめかぶ)"
+
+# ─── 罪=つみ 形容詞後 (風/泉型、prev=い/な 追加) ───
+[[case]]
+input = "重い罪を背負う"
+mode = "hiragana"
+expected = "おもいつみをせおう"
+note = "罪 prev=い→つみ (旧 ざい)"
+
+[[case]]
+input = "犯罪者"
+mode = "hiragana"
+expected = "はんざいしゃ"
+note = "罪 ガード (2字token ざい)"
