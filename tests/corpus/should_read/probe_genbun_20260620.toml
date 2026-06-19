@@ -355,3 +355,34 @@ input = "真理の探究"
 mode = "hiragana"
 expected = "しんりのたんきゅう"
 note = "理 ガード (真理=2字token り 維持)"
+
+# ─── の+単漢字 抽象名詞2: 操=みさお/誼=よしみ/関=せき + 親の仇=かたき ───
+[[case]]
+input = "女の操"
+mode = "hiragana"
+expected = "おんなのみさお"
+note = "操 prev=の→みさお (旧 そう)"
+
+[[case]]
+input = "旧来の誼"
+mode = "hiragana"
+expected = "きゅうらいのよしみ"
+note = "誼 prev=の→よしみ (旧 ぎ)"
+
+[[case]]
+input = "天下の関"
+mode = "hiragana"
+expected = "てんかのせき"
+note = "関 prev=の→せき (旧 かん)"
+
+[[case]]
+input = "親の仇"
+mode = "hiragana"
+expected = "おやのかたき"
+note = "jukugo (恩を仇で返す=あだ は維持)"
+
+[[case]]
+input = "恩を仇で返す"
+mode = "hiragana"
+expected = "おんをあだでかえす"
+note = "仇=あだ ガード"
