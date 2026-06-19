@@ -1,0 +1,26 @@
+# 2026-06-20 R259-260 例文 probe。同訓異字(納/修/収/治=おさめる)・伝統器物は文脈で全成熟。
+# 囲炉裏端=いろりばた(端=ばた連濁)のみ。
+
+[[case]]
+input = "彼は囲炉裏端で暖を取る"
+mode = "hiragana"
+expected = "かれはいろりばたでだんをとる"
+note = "端=ばた 連濁 (default いろりたん)"
+
+[[case]]
+input = "彼は学問を修めた"
+mode = "hiragana"
+expected = "かれはがくもんをおさめた"
+note = "同訓異字 成熟確認"
+
+[[case]]
+input = "古い長押に埃が積もる"
+mode = "hiragana"
+expected = "ふるいなげしにほこりがつもる"
+note = "長押=なげし 成熟確認"
+
+[[case]]
+input = "神社の注連縄を新調する"
+mode = "hiragana"
+expected = "じんじゃのしめなわをしんちょうする"
+note = "注連縄=しめなわ 成熟確認"
