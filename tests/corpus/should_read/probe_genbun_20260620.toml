@@ -430,3 +430,28 @@ input = "身の上話を聞く"
 mode = "hiragana"
 expected = "みのうえばなしをきく"
 note = "話=ばなし 連濁"
+
+# ─── 博士号=はくし/品=しな/高見の見物=たかみ (現代語読み) ───
+[[case]]
+input = "博士号を取る"
+mode = "hiragana"
+expected = "はくしごうをとる"
+note = "学位は はくし (博士=はかせ 維持)"
+
+[[case]]
+input = "贈り物の品"
+mode = "hiragana"
+expected = "おくりもののしな"
+note = "品 prev=の→しな (旧 ひん)"
+
+[[case]]
+input = "上品な人"
+mode = "hiragana"
+expected = "じょうひんなひと"
+note = "品 ガード (上品=ひん 維持)"
+
+[[case]]
+input = "高見の見物"
+mode = "hiragana"
+expected = "たかみのけんぶつ"
+note = "idiom (旧 こうけん)"
