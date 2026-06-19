@@ -1,0 +1,25 @@
+# 2026-06-19 ワンピース ワノ国編 probe。光月/錦えもん/狂死郎/鬼ヶ島 等は正読。
+
+[[case]]
+input = "黒炭オロチ"
+mode = "hiragana"
+expected = "くろずみオロチ"
+note = "黒炭=くろずみ (default こくたん)"
+
+[[case]]
+input = "牛鬼丸"
+mode = "hiragana"
+expected = "ぎゅうきまる"
+note = "牛鬼=ぎゅうき (default うしおに)"
+
+[[case]]
+input = "飛び六胞"
+mode = "hiragana"
+expected = "とびろっぽう"
+note = "六胞=ろっぽう (default ろくほう)"
+
+[[case]]
+input = "桃の助"
+mode = "hiragana"
+expected = "もものすけ"
+note = "助=すけ (default じょ)"
