@@ -273,3 +273,28 @@ input = "領主の館"
 mode = "hiragana"
 expected = "りょうしゅのやかた"
 note = "館 prev=の→やかた (旧 かん)"
+
+# ─── の+単漢字 第4弾: 冠=かんむり/鞭=むち + 鋼/前車の轍 idiom ───
+[[case]]
+input = "勝利の冠"
+mode = "hiragana"
+expected = "しょうりのかんむり"
+note = "冠 prev=の→かんむり (旧 かん)"
+
+[[case]]
+input = "愛の鞭"
+mode = "hiragana"
+expected = "あいのむち"
+note = "鞭 prev=の→むち (旧 べん)"
+
+[[case]]
+input = "鋼の錬金術師"
+mode = "hiragana"
+expected = "はがねのれんきんじゅつし"
+note = "鋼=はがね (IPADIC こう token 固定→jukugo)"
+
+[[case]]
+input = "前車の轍を踏む"
+mode = "hiragana"
+expected = "ぜんしゃのてつをふむ"
+note = "idiom 轍=てつ (車の轍=わだち は維持)"

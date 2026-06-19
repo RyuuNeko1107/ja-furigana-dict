@@ -9302,6 +9302,11 @@ default = "ベン"
 next_starts_any = ["を", "が", "の", "に", "は", "も", "で", "と", "へ"]
 reading = "むち"
 
+# 文末「の鞭」= むち (愛の鞭/馬の鞭。next助詞ruleは 鞭+助詞 のみで の+鞭 未カバー)
+[[kanji.match]]
+prev_eq = "の"
+reading = "むち"
+
 # 「饗」 default 「キョウ」 (= 饗宴/饗応/酒饗/晩饗)。
 # unihan default 「あえ」 は古語、 現代では熟語 dominant
 [[kanji]]
@@ -10918,6 +10923,11 @@ default = "サツ"
 [[kanji]]
 char = "冠"
 default = "カン"
+
+# 文末「の冠」= かんむり (栄光の冠/勝利の冠。王冠/栄冠/冠婚 は2字tokenで非干渉)
+[[kanji.match]]
+prev_eq = "の"
+reading = "かんむり"
 
 # 「冶」 default 「ヤ」 (= 冶金/陶冶)。
 # unihan default 「いる」 は古語動詞、 現代では熟語 dominant
