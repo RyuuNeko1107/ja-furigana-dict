@@ -114,3 +114,16 @@ input = "星明かりを頼る"
 mode = "hiragana"
 expected = "ほしあかりをたよる"
 note = "旧 せいあかり"
+
+# ─── 芦花公園=ろか/井土ヶ谷=ヶ残留+谷こく ───
+[[case]]
+input = "芦花公園を歩く"
+mode = "hiragana"
+expected = "ろかこうえんをあるく"
+note = "旧 あしか"
+
+[[case]]
+input = "井土ヶ谷で降りる"
+mode = "hiragana"
+expected = "いどがやでおりる"
+note = "ヶ残留 (旧 いどヶこく)"
