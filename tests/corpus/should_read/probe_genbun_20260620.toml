@@ -82,3 +82,35 @@ input = "小枝を拾う"
 mode = "hiragana"
 expected = "こえだをひろう"
 note = "旧 こし"
+
+# ─── 駅名 ヶ残留/二子=ふたこ/本町=ちょう ───
+[[case]]
+input = "新百合ヶ丘に行く"
+mode = "hiragana"
+expected = "しんゆりがおかにいく"
+note = "ヶ残留 (旧 しんゆりヶおか)"
+
+[[case]]
+input = "二子新地を通る"
+mode = "hiragana"
+expected = "ふたこしんちをとおる"
+note = "二子=ふたこ (旧 にし)"
+
+[[case]]
+input = "日吉本町を歩く"
+mode = "hiragana"
+expected = "ひよしほんちょうをあるく"
+note = "本町=ちょう (旧 ほんまち)"
+
+# ─── 獣道=けものみち/星明かり=ほしあかり (道=どう/星=せい 化け) ───
+[[case]]
+input = "獣道を辿る"
+mode = "hiragana"
+expected = "けものみちをたどる"
+note = "旧 けものどう"
+
+[[case]]
+input = "星明かりを頼る"
+mode = "hiragana"
+expected = "ほしあかりをたよる"
+note = "旧 せいあかり"
