@@ -4434,7 +4434,12 @@ default = "キ"
 
 [[kanji]]
 char = "曙"
-default = "ショ"
+default = "あけぼの"
+
+# 曙光=しょこう のみ ショ (曙 単独/人名/地名は あけぼの 圧倒的)
+[[kanji.match]]
+next_eq = "光"
+reading = "ショ"
 
 [[kanji]]
 char = "朔"

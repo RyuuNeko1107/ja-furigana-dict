@@ -630,3 +630,28 @@ input = "映画"
 mode = "hiragana"
 expected = "えいが"
 note = "画 ガード (非counter が)"
+
+# ─── 曙=あけぼの flip/艶めかしい=なまめ/旋毛=つむじ/和布蕪=めかぶ ───
+[[case]]
+input = "曙の空"
+mode = "hiragana"
+expected = "あけぼののそら"
+note = "曙=あけぼの (曙光=しょこう は維持)"
+
+[[case]]
+input = "曙光"
+mode = "hiragana"
+expected = "しょこう"
+note = "曙 ガード (next=光→しょ)"
+
+[[case]]
+input = "艶めかしい仕草"
+mode = "hiragana"
+expected = "なまめかしいしぐさ"
+note = "艶=なま (艶やか=つや は維持)"
+
+[[case]]
+input = "和布蕪"
+mode = "hiragana"
+expected = "めかぶ"
+note = "熟字訓 (旧 わかめかぶ)"
