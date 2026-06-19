@@ -160,3 +160,10 @@ input = "彼の人徳"
 mode = "hiragana"
 expected = "かれのじんとく"
 note = "旧 にんとく"
+
+# ─── 喉元過ぎれば=すぎ (喉元+過ぎれば で IPADIC よぎ token 分割) ───
+[[case]]
+input = "喉元過ぎれば"
+mode = "hiragana"
+expected = "のどもとすぎれば"
+note = "旧 のどもとよぎれば"
