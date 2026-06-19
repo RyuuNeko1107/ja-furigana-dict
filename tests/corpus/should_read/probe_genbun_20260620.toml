@@ -248,3 +248,28 @@ input = "国内線の予約"
 mode = "hiragana"
 expected = "こくないせんのよやく"
 note = "内 ガード (2字token ない 維持)"
+
+# ─── の+単漢字 第3弾: 志=こころざし/鑑=かがみ/素=もと/館=やかた ───
+[[case]]
+input = "不退転の志"
+mode = "hiragana"
+expected = "ふたいてんのこころざし"
+note = "志 prev=の→こころざし (旧 し)"
+
+[[case]]
+input = "武士の鑑"
+mode = "hiragana"
+expected = "ぶしのかがみ"
+note = "鑑 prev=の→かがみ (旧 かん)"
+
+[[case]]
+input = "出汁の素"
+mode = "hiragana"
+expected = "だしのもと"
+note = "素 prev=の→もと (旧 そ)"
+
+[[case]]
+input = "領主の館"
+mode = "hiragana"
+expected = "りょうしゅのやかた"
+note = "館 prev=の→やかた (旧 かん)"

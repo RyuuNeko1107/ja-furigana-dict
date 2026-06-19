@@ -2758,6 +2758,11 @@ default = "ケイ"
 char = "志"
 default = "シ"
 
+# 文末「の志」= こころざし (不退転の志/高い志。意志/志望/有志 は2字tokenで非干渉)
+[[kanji.match]]
+prev_eq = "の"
+reading = "こころざし"
+
 [[kanji]]
 char = "快"
 default = "カイ"
@@ -6946,6 +6951,11 @@ default = "キョク"
 char = "館"
 default = "カン"
 
+# 文末「の館」= やかた (お化けの館/領主の館。図書館/映画館/旅館/水族館 は2字tokenで非干渉)
+[[kanji.match]]
+prev_eq = "の"
+reading = "やかた"
+
 # 「業」 default 「ギョウ」 (= 業務/事業/工業/製造業/作業/営業)。
 # 「ゴウ」 (= 業火/罪業) は jukugo 個別、 「わざ」 は古語/慣用
 [[kanji]]
@@ -8620,6 +8630,11 @@ default = "サイ"
 [[kanji]]
 char = "鑑"
 default = "カン"
+
+# 文末「の鑑」= かがみ (武士の鑑/母親の鑑=模範。鑑賞/鑑定/印鑑/図鑑 は2字tokenで非干渉)
+[[kanji.match]]
+prev_eq = "の"
+reading = "かがみ"
 
 # 「附」 default 「フ」 (= 附属/寄附/附則/附録/附帯/附箋)。
 # unihan default 「つく」 は古語動詞、 「付/着」 が動詞 dominant
@@ -13123,6 +13138,11 @@ default = "モン"
 [[kanji]]
 char = "素"
 default = "ソ"
+
+# 文末「の素」= もと (出汁の素/カレーの素/不和の素=源。素材/要素/酸素/素人 は2字tokenで非干渉)
+[[kanji.match]]
+prev_eq = "の"
+reading = "もと"
 
 # 「缶」 default 「カン」 (= 缶詰/空き缶/缶詰め/一斗缶、 音読み圧倒的)。
 # unihan 「ほとぎ」 は古語 (= 鼓の一種)、 現代日本語では使わない → default 訂正。
