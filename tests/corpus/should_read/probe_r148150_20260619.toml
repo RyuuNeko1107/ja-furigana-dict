@@ -1,0 +1,37 @@
+# 2026-06-19 R148-150 化物語/コードギアス/ジョジョ8部 probe まとめ。
+
+[[case]]
+input = "阿良々木暦"
+mode = "hiragana"
+expected = "あららぎこよみ"
+note = "化物語 阿良々木=あららぎ"
+
+[[case]]
+input = "斧乃木余接"
+mode = "hiragana"
+expected = "おののきよつぎ"
+note = "余接=よつぎ (default よせつ cotangent)"
+
+[[case]]
+input = "千石撫子"
+mode = "hiragana"
+expected = "せんごくなでこ"
+note = "撫子=なでこ (default なでしこ)"
+
+[[case]]
+input = "枢木"
+mode = "hiragana"
+expected = "くるるぎ"
+note = "コードギアス 枢木スザク (default すうもく)"
+
+[[case]]
+input = "皇神楽耶"
+mode = "hiragana"
+expected = "すめらぎかぐや"
+note = "皇=すめらぎ"
+
+[[case]]
+input = "東方憲助"
+mode = "hiragana"
+expected = "ひがしかたけんすけ"
+note = "ジョジョ8部 (東方=とうほう homograph で full のみ)"
