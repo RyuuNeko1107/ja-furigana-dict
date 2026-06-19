@@ -25,13 +25,13 @@ git に commit されている master HEAD の状態を基準にする。
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,680** | **739 KB** |
 | [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **4,247** | **220 KB** |
-| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **850** | **61 KB** |
+| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **851** | **61 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **861** | **23 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,771** | **182 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **672** | **29 KB** |
-| **合計** | **50,081** | **1.22 MB** |
+| **合計** | **50,082** | **1.22 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -160,7 +160,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/works/<medium>/*` — 媒体 (game / literature 等) ごとに 1 作品 1 ファイル。 原則は公式読み (一般通称として定着していれば採録可)、 出典コメント必須、 古典読みは現代読み無い場合のみ。
 
-**合計**: 850 件 / 61 KB (genre 4 区分)
+**合計**: 851 件 / 61 KB (genre 4 区分)
 
 #### ゲーム
 
@@ -220,8 +220,8 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/anime/kusuriya.toml`](core/works/anime/kusuriya.toml) | 7 | 597 B | 薬屋のひとりごと (日向夏): キャラクター名 (公式読みベース) |
 | [`core/works/anime/naruto.toml`](core/works/anime/naruto.toml) | 7 | 720 B | NARUTO (岸本斉史): キャラクター名 (公式読みベース) |
 | [`core/works/anime/tokyoghoul.toml`](core/works/anime/tokyoghoul.toml) | 7 | 742 B | 東京喰種 (石田スイ): キャラクター名 / 用語 |
+| [`core/works/anime/ghibli.toml`](core/works/anime/ghibli.toml) | 6 | 623 B | スタジオジブリ: キャラクター名 / 用語 / 作品名 |
 | [`core/works/anime/dragonball.toml`](core/works/anime/dragonball.toml) | 5 | 536 B | ドラゴンボール (鳥山明): キャラクター名 (公式読みベース) |
-| [`core/works/anime/ghibli.toml`](core/works/anime/ghibli.toml) | 5 | 600 B | スタジオジブリ: キャラクター名 / 用語 / 作品名 |
 | [`core/works/anime/rurouni.toml`](core/works/anime/rurouni.toml) | 5 | 545 B | るろうに剣心 (和月伸宏): キャラクター名 |
 | [`core/works/anime/drstone.toml`](core/works/anime/drstone.toml) | 4 | 432 B | Dr.STONE (稲垣理一郎/Boichi): キャラクター名 |
 | [`core/works/anime/tokyo_revengers.toml`](core/works/anime/tokyo_revengers.toml) | 4 | 492 B | 東京卍リベンジャーズ (和久井健): キャラクター名 (公式読みベース) |
@@ -243,7 +243,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/anime/monogatari.toml`](core/works/anime/monogatari.toml) | 1 | 270 B | 〈物語〉シリーズ (西尾維新): 作品名 (公式読みベース) |
 | [`core/works/anime/sailormoon.toml`](core/works/anime/sailormoon.toml) | 1 | 256 B | 美少女戦士セーラームーン (武内直子): キャラクター名 |
 | [`core/works/anime/undeadunluck.toml`](core/works/anime/undeadunluck.toml) | 1 | 203 B | アンデッドアンラック (戸塚慶文): キャラクター名 |
-| **小計** (38 ファイル) | **331** | **32 KB** | |
+| **小計** (38 ファイル) | **332** | **32 KB** | |
 
 #### VTuber
 
