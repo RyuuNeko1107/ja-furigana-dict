@@ -25,13 +25,13 @@ git に commit されている master HEAD の状態を基準にする。
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,680** | **739 KB** |
 | [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **4,232** | **219 KB** |
-| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **696** | **49 KB** |
+| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **697** | **49 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **861** | **23 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,771** | **182 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **672** | **29 KB** |
-| **合計** | **49,912** | **1.21 MB** |
+| **合計** | **49,913** | **1.21 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -160,7 +160,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/works/<medium>/*` — 媒体 (game / literature 等) ごとに 1 作品 1 ファイル。 原則は公式読み (一般通称として定着していれば採録可)、 出典コメント必須、 古典読みは現代読み無い場合のみ。
 
-**合計**: 696 件 / 49 KB (genre 4 区分)
+**合計**: 697 件 / 49 KB (genre 4 区分)
 
 #### ゲーム
 
@@ -203,7 +203,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/works/anime/kimetsu.toml`](core/works/anime/kimetsu.toml) | 34 | 3.1 KB | 鬼滅の刃 (吾峠呼世晴): キャラクター名 / 用語 (公式読みベース) |
+| [`core/works/anime/kimetsu.toml`](core/works/anime/kimetsu.toml) | 35 | 3.1 KB | 鬼滅の刃 (吾峠呼世晴): キャラクター名 / 用語 (公式読みベース) |
 | [`core/works/anime/jujutsu.toml`](core/works/anime/jujutsu.toml) | 28 | 2.4 KB | 呪術廻戦 (芥見下々): キャラクター名 / 用語 (公式読みベース) |
 | [`core/works/anime/jojo.toml`](core/works/anime/jojo.toml) | 23 | 2.4 KB | ジョジョの奇妙な冒険 (荒木飛呂彦): キャラクター名 / 用語 (公式読みベース) |
 | [`core/works/anime/bleach.toml`](core/works/anime/bleach.toml) | 19 | 1.8 KB | BLEACH (久保帯人) キャラ名・用語 |
@@ -239,7 +239,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/anime/monogatari.toml`](core/works/anime/monogatari.toml) | 1 | 270 B | 〈物語〉シリーズ (西尾維新): 作品名 (公式読みベース) |
 | [`core/works/anime/sailormoon.toml`](core/works/anime/sailormoon.toml) | 1 | 256 B | 美少女戦士セーラームーン (武内直子): キャラクター名 |
 | [`core/works/anime/undeadunluck.toml`](core/works/anime/undeadunluck.toml) | 1 | 203 B | アンデッドアンラック (戸塚慶文): キャラクター名 |
-| **小計** (36 ファイル) | **230** | **24 KB** | |
+| **小計** (36 ファイル) | **231** | **24 KB** | |
 
 #### VTuber
 
