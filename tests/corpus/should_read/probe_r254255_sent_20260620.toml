@@ -1,0 +1,25 @@
+# 2026-06-20 R254-255 例文 probe。数詞慣用句/連濁/送り仮名は文脈で大半成熟。文脈依存3件。
+
+[[case]]
+input = "一日の長がある"
+mode = "hiragana"
+expected = "いちじつのちょうがある"
+note = "一日の長=いちじつ (idiom、default いちにち)"
+
+[[case]]
+input = "彼女は仲睦まじい夫婦だ"
+mode = "hiragana"
+expected = "かのじょはなかむつまじいふうふだ"
+note = "仲睦まじい=なか (default ちゅう)"
+
+[[case]]
+input = "彼は気触れを起こした"
+mode = "hiragana"
+expected = "かれはかぶれをおこした"
+note = "気触れ=かぶれ (default きふれ)"
+
+[[case]]
+input = "彼女は十重二十重に取り囲まれた"
+mode = "hiragana"
+expected = "かのじょはとえはたえにとりかこまれた"
+note = "十重二十重=とえはたえ 成熟確認"
