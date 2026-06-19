@@ -487,3 +487,22 @@ input = "那由他"
 mode = "hiragana"
 expected = "なゆた"
 note = "旧 なゆほか"
+
+# ─── キャラ名 誤登録/未登録: 紫咲=むらさき/神威がくぽ=かむい ───
+[[case]]
+input = "紫咲シオン"
+mode = "hiragana"
+expected = "むらさきシオン"
+note = "Murasaki Shion (旧 しさき 誤登録)"
+
+[[case]]
+input = "神威がくぽ"
+mode = "hiragana"
+expected = "かむいがくぽ"
+note = "Kamui (神威岬=かもい は維持)"
+
+[[case]]
+input = "神威岬"
+mode = "hiragana"
+expected = "かもいみさき"
+note = "神威 ガード (地名 かもい)"

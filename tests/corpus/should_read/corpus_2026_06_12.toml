@@ -186,8 +186,8 @@ note = "にじさんじ。 default つきノびうさぎ"
 [[case]]
 input = "紫咲シオン"
 mode = "hiragana"
-expected = "しさきシオン"
-note = "ホロライブ。 紫咲=しさき (default むらさきさ)"
+expected = "むらさきシオン"
+note = "ホロライブ Murasaki Shion。紫咲=むらさき (旧 しさき は誤登録、2026-06-20 訂正)"
 
 # ─── collateral guard (誤読修正が別文脈を壊していないか) ──────────
 [[case]]
