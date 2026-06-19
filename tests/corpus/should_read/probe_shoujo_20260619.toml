@@ -1,0 +1,31 @@
+# 2026-06-19 少女漫画/姓 probe。月影千草/速水真澄/姫川亜弓/花本/真山(姓)は正読。
+
+[[case]]
+input = "道明寺司"
+mode = "hiragana"
+expected = "どうみょうじつかさ"
+note = "司=つかさ (default し)"
+
+[[case]]
+input = "野田恵"
+mode = "hiragana"
+expected = "のだめぐみ"
+note = "のだめ。恵=めぐみ (default けい)"
+
+[[case]]
+input = "鮎川"
+mode = "hiragana"
+expected = "あゆかわ"
+note = "鮎=あゆ (default あいかわ)"
+
+[[case]]
+input = "立花"
+mode = "hiragana"
+expected = "たちばな"
+note = "姓優勢 (生け花のりっかは niche)"
+
+[[case]]
+input = "緑間"
+mode = "hiragana"
+expected = "みどりま"
+note = "黒バス (default みどりかん)"
