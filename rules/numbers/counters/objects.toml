@@ -670,6 +670,16 @@ suffix = "チョウ"
 sokuonize = true
 # === end: 丁 ===
 
+# 挺/梃 (銃/三味線/鍬): 一挺=いっちょう/六挺=ろくちょう (丁と同型、旧 てい 誤)
+[counter."挺"]
+default = "チョウ"
+kanji_numeral = true
+[[counter."挺".rules]]
+last_digit = [1, 8, 0]
+suffix = "チョウ"
+sokuonize = true
+# === end: 挺 ===
+
 # 滴 (しずく): 一滴=いってき/八滴=はってき (6=ろくてき)
 [counter."滴"]
 default = "テキ"

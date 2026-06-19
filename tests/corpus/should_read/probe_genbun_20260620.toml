@@ -586,3 +586,22 @@ input = "天香具山"
 mode = "hiragana"
 expected = "あまのかぐやま"
 note = "大和三山 (旧 てんこうぐさん)"
+
+# ─── 市場=しじょう business compound / 挺 counter=ちょう ───
+[[case]]
+input = "市場調査"
+mode = "hiragana"
+expected = "しじょうちょうさ"
+note = "市場=しじょう (魚市場=いちば は維持)"
+
+[[case]]
+input = "魚市場"
+mode = "hiragana"
+expected = "うおいちば"
+note = "市場 ガード (物理 いちば)"
+
+[[case]]
+input = "拳銃二挺"
+mode = "hiragana"
+expected = "けんじゅうにちょう"
+note = "挺 counter=ちょう (旧 てい)"
