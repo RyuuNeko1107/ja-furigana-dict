@@ -1,0 +1,13 @@
+# 2026-06-19 VV比較で検出。発売日=はつばいび 連濁 (default はつばいにち/はつばいひ で揺れ)。
+
+[[case]]
+input = "発売日"
+mode = "hiragana"
+expected = "はつばいび"
+note = "日=び 連濁"
+
+[[case]]
+input = "新しいゲームの発売日"
+mode = "hiragana"
+expected = "あたらしいゲームのはつばいび"
+note = "文中でも連濁保持"
