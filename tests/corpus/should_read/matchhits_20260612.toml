@@ -19,7 +19,7 @@ description = "match_hits tie-break round (2026-06-12): broad match 改善固定
 [[case]]
 input = "今日中に売らないと"
 mode = "hiragana"
-expected = "きょうちゅうにうらないと"
+expected = "きょうじゅうにうらないと"
 
 [[case]]
 input = "本日中にファームへ"

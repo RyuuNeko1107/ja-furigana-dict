@@ -1,0 +1,32 @@
+# 2026-06-20 R250-251 例文 probe。中=じゅう(期間内)を例文で systematic 発見。
+# 慣用句(一筋縄/二の足/手塩)や homograph(人気=ひとけ/にんき, 生物=なまもの/せいぶつ)は文脈で正読/default委ね。
+
+[[case]]
+input = "今日中に終わらせる"
+mode = "hiragana"
+expected = "きょうじゅうにおわらせる"
+note = "今日中=きょうじゅう (default きょうちゅう)"
+
+[[case]]
+input = "一晩中起きていた"
+mode = "hiragana"
+expected = "ひとばんじゅうおきていた"
+note = "一晩中=ひとばんじゅう"
+
+[[case]]
+input = "今月中に提出する"
+mode = "hiragana"
+expected = "こんげつじゅうにていしゅつする"
+note = "今月中=こんげつじゅう"
+
+[[case]]
+input = "人気のない夜道は不安だ"
+mode = "hiragana"
+expected = "ひとけのないよみちはふあんだ"
+note = "人気=ひとけ (文脈で正読、成熟確認)"
+
+[[case]]
+input = "彼は一筋縄ではいかない"
+mode = "hiragana"
+expected = "かれはひとすじなわではいかない"
+note = "成熟確認"
