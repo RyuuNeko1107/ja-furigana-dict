@@ -25,13 +25,13 @@ git に commit されている master HEAD の状態を基準にする。
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,680** | **739 KB** |
 | [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **3,858** | **201 KB** |
-| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **456** | **26 KB** |
+| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **462** | **26 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **861** | **23 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,771** | **182 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **672** | **29 KB** |
-| **合計** | **49,298** | **1.17 MB** |
+| **合計** | **49,304** | **1.17 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -153,7 +153,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/works/<medium>/*` — 媒体 (game / literature 等) ごとに 1 作品 1 ファイル。 原則は公式読み (一般通称として定着していれば採録可)、 出典コメント必須、 古典読みは現代読み無い場合のみ。
 
-**合計**: 456 件 / 26 KB (genre 4 区分)
+**合計**: 462 件 / 26 KB (genre 4 区分)
 
 #### ゲーム
 
@@ -164,11 +164,11 @@ git に commit されている master HEAD の状態を基準にする。
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
 | [`core/works/game/touhou.toml`](core/works/game/touhou.toml) | 269 | 8.8 KB | 東方Project (上海アリス幻樂団): キャラクター名 / 場所 / 用語 (公式読みベース) |
-| [`core/works/game/genshin.toml`](core/works/game/genshin.toml) | 16 | 1.5 KB | 原神 (HoYoverse): キャラクター名 (公式日本語読みベース) |
+| [`core/works/game/genshin.toml`](core/works/game/genshin.toml) | 19 | 1.7 KB | 原神 (HoYoverse): キャラクター名 (公式日本語読みベース) |
+| [`core/works/game/honkai_starrail.toml`](core/works/game/honkai_starrail.toml) | 4 | 444 B | 崩壊:スターレイル (HoYoverse): キャラクター名 (公式日本語読みベース) |
 | [`core/works/game/ff7.toml`](core/works/game/ff7.toml) | 2 | 352 B | ファイナルファンタジーVII (スクウェア・エニックス): 固有名詞 (公式読みベース) |
-| [`core/works/game/honkai_starrail.toml`](core/works/game/honkai_starrail.toml) | 1 | 241 B | 崩壊:スターレイル (HoYoverse): キャラクター名 (公式日本語読みベース) |
 | [`core/works/game/sekiro.toml`](core/works/game/sekiro.toml) | 1 | 241 B | SEKIRO (フロム・ソフトウェア): キャラクター名 / 用語 |
-| **小計** (5 ファイル) | **289** | **11 KB** | |
+| **小計** (5 ファイル) | **295** | **11 KB** | |
 
 #### 文学
 
