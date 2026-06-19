@@ -1,0 +1,26 @@
+# 2026-06-20 R252-253 例文 probe。〜気=け/熟字訓は文脈で大半正読。文脈依存ミス2件。
+# あの方=かた/寒気=さむけ/人気=ひとけ/名は体=たい/漁=りょう は semantic homograph で default委ね。
+
+[[case]]
+input = "怖気づいて逃げ出した"
+mode = "hiragana"
+expected = "おじけづいてにげだした"
+note = "怖気=おじけ (default こわき)"
+
+[[case]]
+input = "彼は強面だが優しい"
+mode = "hiragana"
+expected = "かれはこわもてだがやさしい"
+note = "強面=こわもて (default こわおもて)"
+
+[[case]]
+input = "湯気が立ち上る"
+mode = "hiragana"
+expected = "ゆげがたちのぼる"
+note = "〜気=け 成熟確認"
+
+[[case]]
+input = "彼は重箱の隅をつつく"
+mode = "hiragana"
+expected = "かれはじゅうばこのすみをつつく"
+note = "重箱=じゅうばこ 成熟確認"
