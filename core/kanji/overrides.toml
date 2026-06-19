@@ -13230,6 +13230,11 @@ default = "ヨウ"
 next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ"]
 reading = "い"
 
+# 文末「の要」= かなめ (組織の要/守りの要/扇の要。必要/重要 は2字tokenで非干渉)
+[[kanji.match]]
+prev_eq = "の"
+reading = "かなめ"
+
 # 「託」 default 「タク」 (= 託児/委託/付託/寄託/結託/信託/負託/嘱託、 動詞「託す」 もタク)。
 # unihan 「かこつける」 は古語動詞、 現代日本語ではほぼ使わない → default 訂正。
 [[kanji]]
@@ -16523,6 +16528,11 @@ default = "むね"
 [[kanji]]
 char = "証"
 default = "ショウ"
+
+# 文末「の証」= あかし (努力の証/愛の証。証明/証拠 は2字tokenで非干渉)
+[[kanji.match]]
+prev_eq = "の"
+reading = "あかし"
 
 # === jinmeiyou (人名用) 移行開始 ===
 

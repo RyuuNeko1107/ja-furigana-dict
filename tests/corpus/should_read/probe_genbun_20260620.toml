@@ -186,3 +186,28 @@ input = "中世の城"
 mode = "hiragana"
 expected = "ちゅうせいのしろ"
 note = "世 ガード (2字token せい 維持)"
+
+# ─── の+単漢字 文末訓 (next助詞ruleはあるがprev=の未カバーだった字) ───
+[[case]]
+input = "努力の証"
+mode = "hiragana"
+expected = "どりょくのあかし"
+note = "証 prev=の→あかし (旧 しょう)"
+
+[[case]]
+input = "組織の要"
+mode = "hiragana"
+expected = "そしきのかなめ"
+note = "要 prev=の→かなめ (旧 よう)"
+
+[[case]]
+input = "夜の帳が下りる"
+mode = "hiragana"
+expected = "よるのとばりがおりる"
+note = "帳=とばり (旧 ちょう)"
+
+[[case]]
+input = "証明書を出す"
+mode = "hiragana"
+expected = "しょうめいしょをだす"
+note = "証 ガード (2字token しょう 維持)"
