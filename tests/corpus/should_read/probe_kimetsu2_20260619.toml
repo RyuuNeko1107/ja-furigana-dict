@@ -1,0 +1,43 @@
+# 2026-06-19 鬼滅の鬼/用語 probe。鬼舞辻無惨/時透無一郎/栗花落 等は既正。
+
+[[case]]
+input = "猗窩座"
+mode = "hiragana"
+expected = "あかざ"
+note = "上弦の参 (ja 正読確認)"
+
+[[case]]
+input = "黒死牟"
+mode = "hiragana"
+expected = "こくしぼう"
+note = "上弦の壱 (default くろし)"
+
+[[case]]
+input = "妓夫太郎"
+mode = "hiragana"
+expected = "ぎゅうたろう"
+note = "上弦の陸 (default ぎふたろう)"
+
+[[case]]
+input = "魘夢"
+mode = "hiragana"
+expected = "えんむ"
+note = "下弦の壱 (default うなされる)"
+
+[[case]]
+input = "継国縁壱"
+mode = "hiragana"
+expected = "つぎくによりいち"
+note = "継国=つぎくに/縁壱=よりいち"
+
+[[case]]
+input = "鬼殺隊"
+mode = "hiragana"
+expected = "きさつたい"
+note = "鬼=き (default おにさつ)"
+
+[[case]]
+input = "赫刀"
+mode = "hiragana"
+expected = "しゃくとう"
+note = "赫=しゃく (default かがやく)"
