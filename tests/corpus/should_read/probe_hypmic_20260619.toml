@@ -1,0 +1,38 @@
+# 2026-06-19 ヒプマイ キャラ probe。山田一郎/二郎/三郎 等は正読。
+# bare 乱数=らんすう/天国=てんごく/空却 は homograph でフルネームのみ。
+
+[[case]]
+input = "碧棺左馬刻"
+mode = "hiragana"
+expected = "あおひつぎさまとき"
+note = "碧棺=あおひつぎ/左馬刻=さまとき"
+
+[[case]]
+input = "伊弉冉一二三"
+mode = "hiragana"
+expected = "いざなみひふみ"
+note = "伊弉冉=いざなみ/一二三=ひふみ"
+
+[[case]]
+input = "波羅夷空却"
+mode = "hiragana"
+expected = "はらいくうこう"
+note = "波羅夷=はらい/空却=くうこう"
+
+[[case]]
+input = "四十物十四"
+mode = "hiragana"
+expected = "あいものじゅうし"
+note = "四十物=あいもの/十四=じゅうし"
+
+[[case]]
+input = "天国獄"
+mode = "hiragana"
+expected = "あまぐにひとし"
+note = "天国=あまぐに/獄=ひとし (bare 天国=てんごく)"
+
+[[case]]
+input = "白膠木簓"
+mode = "hiragana"
+expected = "ぬるでささら"
+note = "白膠木=ぬるで/簓=ささら"
