@@ -16,8 +16,8 @@ note = "董香=とうか"
 [[case]]
 input = "喰種"
 mode = "hiragana"
-expected = "グール"
-note = "作品中心用語 (default くしゅ)"
+expected = "ぐーる"
+note = "作品中心用語、値グール→hiragana (default くしゅ)"
 
 [[case]]
 input = "七海龍水"
