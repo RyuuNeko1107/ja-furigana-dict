@@ -562,3 +562,9 @@ input = "世間の柵"
 mode = "hiragana"
 expected = "せけんのしがらみ"
 note = "柵=しがらみ (web確認、物理 柵=さく は維持)"
+
+[[case]]
+input = "落とし所を探る"
+mode = "hiragana"
+expected = "おとしどころをさぐる"
+note = "所=どころ 連濁 (旧 ところ)"
