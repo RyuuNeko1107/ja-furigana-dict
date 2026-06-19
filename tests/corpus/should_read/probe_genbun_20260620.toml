@@ -211,3 +211,40 @@ input = "証明書を出す"
 mode = "hiragana"
 expected = "しょうめいしょをだす"
 note = "証 ガード (2字token しょう 維持)"
+
+# ─── の+単漢字 第2弾: 内=うち/輪=わ/病=やまい/華=はな/畔=ほとり ───
+[[case]]
+input = "心の内を明かす"
+mode = "hiragana"
+expected = "こころのうちをあかす"
+note = "内 prev=の→うち (旧 ない)"
+
+[[case]]
+input = "運命の輪"
+mode = "hiragana"
+expected = "うんめいのわ"
+note = "輪 prev=の→わ (旧 りん)"
+
+[[case]]
+input = "不治の病"
+mode = "hiragana"
+expected = "ふじのやまい"
+note = "病 prev=の→やまい (旧 びょう)"
+
+[[case]]
+input = "江戸の華"
+mode = "hiragana"
+expected = "えどのはな"
+note = "華 prev=の→はな (旧 か)"
+
+[[case]]
+input = "川の畔を歩く"
+mode = "hiragana"
+expected = "かわのほとりをあるく"
+note = "畔 prev=の→ほとり (旧 あぜ)"
+
+[[case]]
+input = "国内線の予約"
+mode = "hiragana"
+expected = "こくないせんのよやく"
+note = "内 ガード (2字token ない 維持)"

@@ -1328,6 +1328,11 @@ reading = "ワ"
 char = "内"
 default = "ナイ"
 
+# 文末「の内」= うち (心の内/胸の内/手の内。国内/室内/以内 は2字tokenで非干渉)
+[[kanji.match]]
+prev_eq = "の"
+reading = "うち"
+
 # 内○ prefix / ○○内 suffix = ナイ
 [[kanji.match]]
 prev_char_type = "漢字"
@@ -7819,6 +7824,11 @@ default = "ガイ"
 char = "病"
 default = "ビョウ"
 
+# 文末「の病」= やまい (不治の病/死の病/心の病。病気/急病/疾病 は2字tokenで非干渉)
+[[kanji.match]]
+prev_eq = "の"
+reading = "やまい"
+
 # 「病む/病まない/病んだ/病めば/病もう」 = 動詞 → や
 [[kanji.match]]
 next_starts_any = ["む", "ま", "み", "ん", "め", "も"]
@@ -8076,6 +8086,11 @@ default = "エイ"
 [[kanji]]
 char = "華"
 default = "カ"
+
+# 文末「の華」= はな (江戸の華/人生の華/都会の華。豪華/中華/華麗 は2字tokenで非干渉)
+[[kanji.match]]
+prev_eq = "の"
+reading = "はな"
 
 # 「英」 default 「エイ」 (= 英語/英訳/英断/英雄/英才/俊英/英会話/英文)。
 # unihan default 「はな」 は古語、 現代では熟語 dominant
@@ -15841,6 +15856,11 @@ default = "はたけ"
 char = "畔"
 default = "あぜ"
 
+# 文末「の畔」= ほとり (川の畔/池の畔/湖の畔。水辺 dominant、田の畔=あぜ は稀で 畦 表記が普通)
+[[kanji.match]]
+prev_eq = "の"
+reading = "ほとり"
+
 # 「症」 default 「ショウ」 (= 症状/感染症/重症/軽症/不定愁訴症、 音読み)
 [[kanji]]
 char = "症"
@@ -16220,6 +16240,11 @@ default = "じく"
 [[kanji]]
 char = "輪"
 default = "リン"
+
+# 文末「の輪」= わ (花の輪/友情の輪/運命の輪。車輪/二輪/競輪 は2字tokenで非干渉)
+[[kanji.match]]
+prev_eq = "の"
+reading = "わ"
 
 # 「農」 default 「ノウ」 (= 農業/農村/農産/酪農/帰農、 音読み)
 [[kanji]]
