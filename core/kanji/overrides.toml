@@ -3298,6 +3298,11 @@ default = "チョウ"
 char = "彩"
 default = "サイ"
 
+# 文末「の彩」= いろどり (人生の彩/秋の彩。色彩/多彩/彩色 は2字tokenで非干渉)
+[[kanji.match]]
+prev_eq = "の"
+reading = "いろどり"
+
 [[kanji]]
 char = "従"
 default = "ジュウ"
@@ -3700,6 +3705,11 @@ default = "エイ"
 char = "極"
 default = "キョク"
 
+# 文末「の極」= きわみ (贅沢の極/痛恨の極。北極/極限/積極 は2字tokenで非干渉)
+[[kanji.match]]
+prev_eq = "の"
+reading = "きわみ"
+
 [[kanji]]
 char = "楼"
 default = "ロウ"
@@ -3771,6 +3781,11 @@ default = "ショウ"
 [[kanji]]
 char = "理"
 default = "リ"
+
+# 文末「の理」= ことわり (自然の理/世の理。無理/料理/真理/論理 は2字tokenで非干渉。R272 の flip回避は default 据置で、narrow な prev=の のみ)
+[[kanji.match]]
+prev_eq = "の"
+reading = "ことわり"
 
 [[kanji]]
 char = "略"
@@ -11663,6 +11678,11 @@ default = "ジョウ"
 
 [[kanji.match]]
 next_starts_any = ["に", "は", "が", "を", "の", "で", "と", "も"]
+reading = "つね"
+
+# 文末「の常」= つね (世の常/勝負の常。next助詞ruleは 常+助詞 のみで の+常 未カバー)
+[[kanji.match]]
+prev_eq = "の"
 reading = "つね"
 
 # 「幅」 default 「フク」 (= 幅員/振幅/全幅/横幅/値幅)。

@@ -311,3 +311,47 @@ input = "電灯を消す"
 mode = "hiragana"
 expected = "でんとうをけす"
 note = "灯 ガード (2字token とう 維持)"
+
+# ─── の+単漢字 抽象名詞: 理=ことわり/極=きわみ/常=つね/彩=いろどり ───
+[[case]]
+input = "自然の理"
+mode = "hiragana"
+expected = "しぜんのことわり"
+note = "理 prev=の→ことわり (旧 り)"
+
+[[case]]
+input = "贅沢の極"
+mode = "hiragana"
+expected = "ぜいたくのきわみ"
+note = "極 prev=の→きわみ (旧 きょく)"
+
+[[case]]
+input = "世の常"
+mode = "hiragana"
+expected = "よのつね"
+note = "常 prev=の→つね"
+
+[[case]]
+input = "人生の彩"
+mode = "hiragana"
+expected = "じんせいのいろどり"
+note = "彩 prev=の→いろどり (旧 さい)"
+
+# ─── 神の業/匠の業=わざ (業 deliberate ごう を jukugo 上書き、人間の業=ごう は維持) ───
+[[case]]
+input = "神の業"
+mode = "hiragana"
+expected = "かみのわざ"
+note = "jukugo (人間の業=ごう は維持)"
+
+[[case]]
+input = "人間の業"
+mode = "hiragana"
+expected = "にんげんのごう"
+note = "業 deliberate prev=の→ごう (仏教の業) 維持"
+
+[[case]]
+input = "真理の探究"
+mode = "hiragana"
+expected = "しんりのたんきゅう"
+note = "理 ガード (真理=2字token り 維持)"
