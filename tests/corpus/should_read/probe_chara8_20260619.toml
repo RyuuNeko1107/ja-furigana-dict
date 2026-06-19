@@ -4,8 +4,8 @@
 [[case]]
 input = "油女シノ"
 mode = "hiragana"
-expected = "あぶらめしの"
-note = "ナルト 油女=あぶらめ"
+expected = "あぶらめシノ"
+note = "ナルト 油女=あぶらめ (シノ は passthrough katakana)"
 
 [[case]]
 input = "千手柱間"
