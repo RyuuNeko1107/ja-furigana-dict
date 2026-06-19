@@ -1,0 +1,37 @@
+# 2026-06-19 遊戯王/ペルソナ キャラ名 probe。武藤遊戯/桐条美鶴/真田明彦/両津勘吉 等は正読。
+
+[[case]]
+input = "海馬瀬人"
+mode = "hiragana"
+expected = "かいばせと"
+note = "遊戯王 瀬人=せと (default せひと)"
+
+[[case]]
+input = "真崎杏子"
+mode = "hiragana"
+expected = "まさきあんず"
+note = "遊戯王 杏子=あんず"
+
+[[case]]
+input = "雨宮蓮"
+mode = "hiragana"
+expected = "あまみやれん"
+note = "P5 蓮=れん (default はす)"
+
+[[case]]
+input = "鳴上悠"
+mode = "hiragana"
+expected = "なるかみゆう"
+note = "P4 鳴上=なるかみ (default めいうえ)"
+
+[[case]]
+input = "高巻杏"
+mode = "hiragana"
+expected = "たかまきあん"
+note = "P5 (default こうかんあんず)"
+
+[[case]]
+input = "新島真"
+mode = "hiragana"
+expected = "にいじままこと"
+note = "P5 真=まこと"
