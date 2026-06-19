@@ -1,0 +1,21 @@
+# 2026-06-19 平安・古典の人物 probe。在原業平/紀貫之/安倍晴明/菅原道真/源義経 等は
+# 登録済/正読。源頼光=よりみつ/らいこう・藤原定家=ていか・天智天皇=てんじ/てんち は
+# 複数正読のため default 委ね。
+
+[[case]]
+input = "巴御前"
+mode = "hiragana"
+expected = "ともえごぜん"
+note = "御前=ごぜん (default おまえ)"
+
+[[case]]
+input = "山上憶良"
+mode = "hiragana"
+expected = "やまのうえのおくら"
+note = "万葉歌人 (default やまのえ)"
+
+[[case]]
+input = "役小角"
+mode = "hiragana"
+expected = "えんのおづの"
+note = "修験道開祖 (default やくおがく)"
