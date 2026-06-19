@@ -1,0 +1,37 @@
+# 2026-06-19 最近のジャンプ系キャラ名 probe。真人=まひと/まさと は homograph で別途(ML領域)。
+
+[[case]]
+input = "画眉丸"
+mode = "hiragana"
+expected = "がびまる"
+note = "地獄楽 (default がまゆがん)"
+
+[[case]]
+input = "日下部篤也"
+mode = "hiragana"
+expected = "くさかべあつや"
+note = "呪術 篤也=あつや (default とくや)"
+
+[[case]]
+input = "来栖華"
+mode = "hiragana"
+expected = "くるすはな"
+note = "呪術 華=はな (default くるすか)"
+
+[[case]]
+input = "死滅回游"
+mode = "hiragana"
+expected = "しめつかいゆう"
+note = "呪術 回游=かいゆう (default かいあそび)"
+
+[[case]]
+input = "漏瑚"
+mode = "hiragana"
+expected = "じょうご"
+note = "呪術 呪霊 (default ろうこ)"
+
+[[case]]
+input = "安野雲"
+mode = "hiragana"
+expected = "あんのくも"
+note = "アンデラ (default やすのうん)"
