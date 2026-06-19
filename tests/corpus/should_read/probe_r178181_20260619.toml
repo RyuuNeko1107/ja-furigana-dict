@@ -1,0 +1,31 @@
+# 2026-06-19 R178-181 鎌倉室町/平安/ルパン美味しんぼ/和風 probe まとめ。
+
+[[case]]
+input = "比企能員"
+mode = "hiragana"
+expected = "ひきよしかず"
+note = "能員=よしかず (default のういん)"
+
+[[case]]
+input = "熊谷直実"
+mode = "hiragana"
+expected = "くまがいなおざね"
+note = "熊谷=くまがい/直実=なおざね"
+
+[[case]]
+input = "海原雄山"
+mode = "hiragana"
+expected = "かいばらゆうざん"
+note = "美味しんぼ 海原=かいばら (default うなばら)"
+
+[[case]]
+input = "荒岩一味"
+mode = "hiragana"
+expected = "あらいわかずみ"
+note = "クッキングパパ 一味=かずみ"
+
+[[case]]
+input = "伊弉諾"
+mode = "hiragana"
+expected = "いざなぎ"
+note = "男神 (default いさかんだく)"
