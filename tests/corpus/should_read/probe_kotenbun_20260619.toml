@@ -1,0 +1,26 @@
+# 2026-06-19 古典文学 probe。清少納言/在原業平/柿本人麻呂/凡河内躬恒 等 歌人は ja 成熟。
+# 六条御息所=みやすどころ/みやすんどころ variant で見送り。
+
+[[case]]
+input = "匂宮"
+mode = "hiragana"
+expected = "におうのみや"
+note = "源氏物語 (default においきゅう)"
+
+[[case]]
+input = "頭中将"
+mode = "hiragana"
+expected = "とうのちゅうじょう"
+note = "頭=とう (default あたま)"
+
+[[case]]
+input = "惟光"
+mode = "hiragana"
+expected = "これみつ"
+note = "源氏物語の家臣 (default いひかり)"
+
+[[case]]
+input = "蝉丸"
+mode = "hiragana"
+expected = "せみまる"
+note = "百人一首 (default せみがん)"
