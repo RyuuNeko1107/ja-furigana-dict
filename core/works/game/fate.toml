@@ -22,3 +22,5 @@ description = "Fate / 型月 (TYPE-MOON): キャラクター名"
 "虞美人" = "グビジン"            # 虞=ぐ (default おそれ)
 "妲己" = "ダッキ"                # default だつこ
 "宝具" = "ホウグ"                # FGO用語。宝=ほう (default たから)
+"玄奘三蔵" = "ゲンジョウサンゾウ"  # 玄奘=げんじょう (default げんしょう)
+"咲耶" = "サクヤ"          # (default さや)

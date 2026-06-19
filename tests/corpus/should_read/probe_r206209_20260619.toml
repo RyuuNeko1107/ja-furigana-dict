@@ -1,0 +1,31 @@
+# 2026-06-19 R206-209 スターレイル/FGO/原神/三國無双 probe まとめ。
+
+[[case]]
+input = "彦卿"
+mode = "hiragana"
+expected = "げんけい"
+note = "スターレイル (default ひこきょう)"
+
+[[case]]
+input = "霍霍"
+mode = "hiragana"
+expected = "かくかく"
+note = "スターレイル Huohuo (default にわか)"
+
+[[case]]
+input = "玄奘三蔵"
+mode = "hiragana"
+expected = "げんじょうさんぞう"
+note = "玄奘=げんじょう (default げんしょう)"
+
+[[case]]
+input = "七七"
+mode = "hiragana"
+expected = "なな"
+note = "原神 Qiqi (default しちしち)"
+
+[[case]]
+input = "夏侯覇"
+mode = "hiragana"
+expected = "かこうは"
+note = "夏侯=かこう (default なつこう)"

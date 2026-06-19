@@ -17,3 +17,10 @@ description = "崩壊:スターレイル (HoYoverse): キャラクター名 (公
 "飛霄" = "ヒショウ"            # Feixiao。default ひそら
 "青雀" = "セイジャク"          # Qingque。default あおすずめ
 "三月七" = "サンガツナノカ"    # March 7th。default さんがつしち
+# 2026-06-19 probe 補充 (姫子=ひめこ homograph で見送り)
+"彦卿" = "ゲンケイ"        # (default ひこきょう)
+"寒鴉" = "カンア"          # 鴉=あ (default からす)
+"桂乃芬" = "ケイノフン"
+"雪衣" = "セツイ"          # (default ゆきい)
+"霍霍" = "カクカク"        # (default にわか)
+"椒丘" = "ショウキュウ"    # (default はじかみおか)
