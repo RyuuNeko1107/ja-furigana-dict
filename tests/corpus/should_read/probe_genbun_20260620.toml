@@ -455,3 +455,16 @@ input = "高見の見物"
 mode = "hiragana"
 expected = "たかみのけんぶつ"
 note = "idiom (旧 こうけん)"
+
+# ─── 波音=なみおと (一般語、波音リツ=ナミネ は full name 分離) ───
+[[case]]
+input = "波音が聞こえる"
+mode = "hiragana"
+expected = "なみおとがきこえる"
+note = "一般語 (旧 なみね = vocaloid衝突)"
+
+[[case]]
+input = "波音リツ"
+mode = "hiragana"
+expected = "なみねりつ"
+note = "キャラ名 full surface 維持"
