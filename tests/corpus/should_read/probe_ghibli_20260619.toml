@@ -4,7 +4,7 @@
 input = "王蟲"
 mode = "hiragana"
 expected = "おうむ"
-note = "ナウシカ、蟲=む (default おうちゅう)"
+note = "ナウシカ。蟲→虫 compat で key=王虫 (王蟲 入力も hit)"
 
 [[case]]
 input = "祟り神"
