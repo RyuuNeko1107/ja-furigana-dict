@@ -1,0 +1,32 @@
+# 2026-06-19 戦国武将 フルネーム probe。直江兼続/島左近/長宗我部元親/宇喜多秀家/
+# 浅井長政=あざい/黒田官兵衛 等は登録済/正読。特殊読み6件を personal_names に補充。
+
+[[case]]
+input = "最上義光"
+mode = "hiragana"
+expected = "もがみよしあき"
+note = "義光=よしあき (default よしみつ)"
+
+[[case]]
+input = "三好長慶"
+mode = "hiragana"
+expected = "みよしながよし"
+note = "長慶=ながよし (default ちょうけい)"
+
+[[case]]
+input = "山県昌景"
+mode = "hiragana"
+expected = "やまがたまさかげ"
+note = "昌景=まさかげ (default しょうけい)"
+
+[[case]]
+input = "立花宗茂"
+mode = "hiragana"
+expected = "たちばなむねしげ"
+note = "bare 立花=リッカ と区別、フルネームで武将"
+
+[[case]]
+input = "池田恒興"
+mode = "hiragana"
+expected = "いけだつねおき"
+note = "恒興=つねおき (default こうきょう)"
