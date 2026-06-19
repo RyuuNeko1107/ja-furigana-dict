@@ -1,0 +1,20 @@
+# 2026-06-19 江戸の文化人 probe。十返舎一九/東洲斎写楽/伊能忠敬/間宮林蔵/緒方洪庵/渡辺崋山/
+# 塙保己一=はなわほきいち 等は ja 正読 (39/40 成熟)。狩野永徳のみ補充。
+
+[[case]]
+input = "狩野永徳"
+mode = "hiragana"
+expected = "かのうえいとく"
+note = "絵師、狩野=かのう (bare 狩野=かの は別)"
+
+[[case]]
+input = "十返舎一九"
+mode = "hiragana"
+expected = "じっぺんしゃいっく"
+note = "成熟確認"
+
+[[case]]
+input = "塙保己一"
+mode = "hiragana"
+expected = "はなわほきいち"
+note = "成熟確認"
