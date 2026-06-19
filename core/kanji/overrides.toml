@@ -15820,6 +15820,11 @@ default = "かた"
 char = "灯"
 default = "トウ"
 
+# 文末「の灯」= ともしび (心の灯/希望の灯。電灯/街灯/灯台 は2字token、灯り=あかり は送り仮名で非干渉)
+[[kanji.match]]
+prev_eq = "の"
+reading = "ともしび"
+
 # 「熊」 default 「くま」 (= 「熊/熊本/熊野/白熊」 訓 + jukugo)
 [[kanji]]
 char = "熊"

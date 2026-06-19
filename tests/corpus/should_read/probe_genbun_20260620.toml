@@ -298,3 +298,16 @@ input = "前車の轍を踏む"
 mode = "hiragana"
 expected = "ぜんしゃのてつをふむ"
 note = "idiom 轍=てつ (車の轍=わだち は維持)"
+
+# ─── の+単漢字 第5弾: 灯=ともしび ───
+[[case]]
+input = "心の灯"
+mode = "hiragana"
+expected = "こころのともしび"
+note = "灯 prev=の→ともしび (旧 とう)"
+
+[[case]]
+input = "電灯を消す"
+mode = "hiragana"
+expected = "でんとうをけす"
+note = "灯 ガード (2字token とう 維持)"
