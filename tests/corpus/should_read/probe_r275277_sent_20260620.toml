@@ -1,0 +1,19 @@
+# 2026-06-20 R275-277 例文 probe。訓読み名詞/連濁/漢語は文脈で大半成熟。
+
+[[case]]
+input = "彼は粋な計らいをする"
+mode = "hiragana"
+expected = "かれはいきなはからいをする"
+note = "計らい=はからい (default けいらい)"
+
+[[case]]
+input = "彼は造詣が深い"
+mode = "hiragana"
+expected = "かれはぞうけいがふかい"
+note = "造詣=ぞうけい 成熟確認"
+
+[[case]]
+input = "彼は斟酌せずに言う"
+mode = "hiragana"
+expected = "かれはしんしゃくせずにいう"
+note = "斟酌=しんしゃく 成熟確認"
