@@ -1,0 +1,43 @@
+# 2026-06-19 京都の寺社 第20弾。南禅寺/詩仙堂/真如堂/醍醐寺/随心院 等は ja 正読。
+
+[[case]]
+input = "廬山寺"
+mode = "hiragana"
+expected = "ろざんじ"
+note = "default いえやまでら"
+
+[[case]]
+input = "常寂光寺"
+mode = "hiragana"
+expected = "じょうじゃっこうじ"
+note = "寂=じゃっ"
+
+[[case]]
+input = "愛宕念仏寺"
+mode = "hiragana"
+expected = "おたぎねんぶつじ"
+note = "愛宕=おたぎ (default おだき)"
+
+[[case]]
+input = "直指庵"
+mode = "hiragana"
+expected = "じきしあん"
+note = "庵=あん (default ちょくしいおり)"
+
+[[case]]
+input = "野宮神社"
+mode = "hiragana"
+expected = "ののみやじんじゃ"
+note = "嵐山 (default のみや)"
+
+[[case]]
+input = "六波羅蜜寺"
+mode = "hiragana"
+expected = "ろくはらみつじ"
+note = "default ろっぱらみつてら"
+
+[[case]]
+input = "勧修寺"
+mode = "hiragana"
+expected = "かじゅうじ"
+note = "門跡寺院 (default かんしゅうじ)"
