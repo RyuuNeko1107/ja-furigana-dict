@@ -25,13 +25,13 @@ git に commit されている master HEAD の状態を基準にする。
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,680** | **739 KB** |
 | [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **4,441** | **233 KB** |
-| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,376** | **104 KB** |
+| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,377** | **104 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **861** | **23 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,771** | **182 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **672** | **29 KB** |
-| **合計** | **50,801** | **1.28 MB** |
+| **合計** | **50,802** | **1.28 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -163,7 +163,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/works/<medium>/*` — 媒体 (game / literature 等) ごとに 1 作品 1 ファイル。 原則は公式読み (一般通称として定着していれば採録可)、 出典コメント必須、 古典読みは現代読み無い場合のみ。
 
-**合計**: 1,376 件 / 104 KB (genre 4 区分)
+**合計**: 1,377 件 / 104 KB (genre 4 区分)
 
 #### ゲーム
 
@@ -241,10 +241,10 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/anime/yuyuhakusho.toml`](core/works/anime/yuyuhakusho.toml) | 10 | 820 B | 幽☆遊☆白書 (冨樫義博): キャラクター名 |
 | [`core/works/anime/garupan.toml`](core/works/anime/garupan.toml) | 8 | 656 B | ガルパン: キャラクター名 |
 | [`core/works/anime/gochiusa.toml`](core/works/anime/gochiusa.toml) | 8 | 648 B | ごちうさ: キャラクター名 |
+| [`core/works/anime/kyoani.toml`](core/works/anime/kyoani.toml) | 8 | 751 B | 京アニ作品: キャラクター名 |
 | [`core/works/anime/baseball_manga.toml`](core/works/anime/baseball_manga.toml) | 7 | 709 B | 野球漫画: キャラクター名 |
 | [`core/works/anime/captsubasa.toml`](core/works/anime/captsubasa.toml) | 7 | 684 B | キャプテン翼: キャラクター名 |
 | [`core/works/anime/kusuriya.toml`](core/works/anime/kusuriya.toml) | 7 | 597 B | 薬屋のひとりごと (日向夏): キャラクター名 (公式読みベース) |
-| [`core/works/anime/kyoani.toml`](core/works/anime/kyoani.toml) | 7 | 693 B | 京アニ作品: キャラクター名 |
 | [`core/works/anime/ranma.toml`](core/works/anime/ranma.toml) | 7 | 677 B | らんま1/2: キャラクター名 |
 | [`core/works/anime/shoujo.toml`](core/works/anime/shoujo.toml) | 7 | 688 B | 少女漫画: キャラクター名 |
 | [`core/works/anime/soma.toml`](core/works/anime/soma.toml) | 7 | 595 B | 食戟のソーマ: キャラクター名 |
@@ -292,7 +292,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/anime/touch.toml`](core/works/anime/touch.toml) | 1 | 183 B | あだち充作品: キャラクター名 |
 | [`core/works/anime/undeadunluck.toml`](core/works/anime/undeadunluck.toml) | 1 | 203 B | アンデッドアンラック (戸塚慶文): キャラクター名 |
 | [`core/works/anime/zombieland.toml`](core/works/anime/zombieland.toml) | 1 | 195 B | ゾンビランドサガ: キャラクター名 |
-| **小計** (72 ファイル) | **595** | **55 KB** | |
+| **小計** (72 ファイル) | **596** | **55 KB** | |
 
 #### VTuber
 
