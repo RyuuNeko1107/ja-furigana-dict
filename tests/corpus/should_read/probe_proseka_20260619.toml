@@ -1,0 +1,31 @@
+# 2026-06-19 プロセカ/バンドリ/D4DJ probe。神代=じんだい/かみよ homograph で full のみ。
+
+[[case]]
+input = "暁山瑞希"
+mode = "hiragana"
+expected = "あけやまみずき"
+note = "暁山=あけやま (default あかつきさん)"
+
+[[case]]
+input = "宵崎奏"
+mode = "hiragana"
+expected = "よいさきかなで"
+note = "奏=かなで"
+
+[[case]]
+input = "白金燐子"
+mode = "hiragana"
+expected = "しろがねりんこ"
+note = "白金=しろがね (default はっきん)"
+
+[[case]]
+input = "氷川紗夜"
+mode = "hiragana"
+expected = "ひかわさよ"
+note = "紗夜=さよ"
+
+[[case]]
+input = "燦鳥ノム"
+mode = "hiragana"
+expected = "さんとりのむ"
+note = "燦鳥=さんとり (default さんちょう)"

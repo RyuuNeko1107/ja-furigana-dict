@@ -1,0 +1,17 @@
+# BanG Dream! (ブシロード/Craft Egg) のキャラクター名
+#
+# 出典: 『BanG Dream!』公式。戸山香澄/花園たえ 等 IPADIC 正読は非登録。
+# 白金=しろがね は はっきん/プラチナ と homograph のためフルネームで。
+
+[meta]
+schema_version = "2"
+role = "works"
+description = "BanG Dream! : キャラクター名"
+
+[entries]
+
+"山吹沙綾" = "ヤマブキサヤ"    # 沙綾=さや (default さあや)
+"市ヶ谷有咲" = "イチガヤアリサ"  # 有咲=ありさ (default ゆうさ)
+"美竹蘭" = "ミタケラン"        # 美竹=みたけ (default びちく)
+"氷川紗夜" = "ヒカワサヨ"      # 紗夜=さよ (default しゃや)
+"白金燐子" = "シロガネリンコ"  # 白金=しろがね/燐子=りんこ (default はっきん)
