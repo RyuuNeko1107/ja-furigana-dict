@@ -1,0 +1,31 @@
+# 2026-06-19 R201-205 まどマギ/食戟ソーマ/シティハンター/原神/ブルアカ probe まとめ。
+
+[[case]]
+input = "鹿目まどか"
+mode = "hiragana"
+expected = "かなめまどか"
+note = "鹿目=かなめ (default かのめ)"
+
+[[case]]
+input = "薙切えりな"
+mode = "hiragana"
+expected = "なぎきりえりな"
+note = "薙切=なぎきり (default なぎせつ)"
+
+[[case]]
+input = "新戸緋沙子"
+mode = "hiragana"
+expected = "あらとひさこ"
+note = "新戸=あらと/緋沙子=ひさこ"
+
+[[case]]
+input = "冴羽獠"
+mode = "hiragana"
+expected = "さえばりょう"
+note = "冴羽=さえば/獠=りょう"
+
+[[case]]
+input = "槙村香"
+mode = "hiragana"
+expected = "まきむらかおり"
+note = "香=かおり (槇村の正規化)"
