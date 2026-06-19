@@ -1,0 +1,37 @@
+# 2026-06-20 R232-235 ごちうさ/けいおん/まちカド・きんモザ/きらら surname probe まとめ。
+
+[[case]]
+input = "保登心愛"
+mode = "hiragana"
+expected = "ほとここあ"
+note = "保登=ほと/心愛=ここあ"
+
+[[case]]
+input = "天々座理世"
+mode = "hiragana"
+expected = "てんてんざりぜ"
+note = "天々座=てんてんざ/理世=りぜ"
+
+[[case]]
+input = "琴吹紬"
+mode = "hiragana"
+expected = "ことぶきつむぎ"
+note = "けいおん 琴吹=ことぶき"
+
+[[case]]
+input = "各務原なでしこ"
+mode = "hiragana"
+expected = "かがみはらなでしこ"
+note = "ゆるキャン (各務原市=かかみがはら と別)"
+
+[[case]]
+input = "大宮忍"
+mode = "hiragana"
+expected = "おおみやしのぶ"
+note = "きんモザ 忍=しのぶ"
+
+[[case]]
+input = "新垣"
+mode = "hiragana"
+expected = "あらがき"
+note = "default しんがき"
