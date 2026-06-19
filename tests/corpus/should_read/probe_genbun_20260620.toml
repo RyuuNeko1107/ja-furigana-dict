@@ -574,3 +574,15 @@ input = "住み処"
 mode = "hiragana"
 expected = "すみか"
 note = "処=か (旧 すみしょ)"
+
+[[case]]
+input = "抑々"
+mode = "hiragana"
+expected = "そもそも"
+note = "default よくよく 破損"
+
+[[case]]
+input = "天香具山"
+mode = "hiragana"
+expected = "あまのかぐやま"
+note = "大和三山 (旧 てんこうぐさん)"
