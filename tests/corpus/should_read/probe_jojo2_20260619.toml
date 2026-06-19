@@ -1,0 +1,38 @@
+# 2026-06-19 ジョジョ/黒バス キャラ probe。東方仗助/岸辺露伴/空条承太郎 等は既正。
+# 康一/由花子(generic given name)・黒子=くろこ/ほくろ homograph は見送り。
+
+[[case]]
+input = "虹村形兆"
+mode = "hiragana"
+expected = "にじむらけいちょう"
+note = "形兆=けいちょう (default かたちょう)"
+
+[[case]]
+input = "億泰"
+mode = "hiragana"
+expected = "おくやす"
+note = "虹村億泰 (default おくたい)"
+
+[[case]]
+input = "噴上裕也"
+mode = "hiragana"
+expected = "ふんがみゆうや"
+note = "噴上=ふんがみ"
+
+[[case]]
+input = "緑間真太郎"
+mode = "hiragana"
+expected = "みどりましんたろう"
+note = "黒バス 緑間=みどりま"
+
+[[case]]
+input = "火神大我"
+mode = "hiragana"
+expected = "かがみたいが"
+note = "黒バス 火神=かがみ"
+
+[[case]]
+input = "日向順平"
+mode = "hiragana"
+expected = "ひゅうがじゅんぺい"
+note = "黒バス 日向=ひゅうが"
