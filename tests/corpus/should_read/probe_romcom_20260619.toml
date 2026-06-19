@@ -1,0 +1,26 @@
+# 2026-06-19 ラブコメ(かぐや様/五等分) probe。藤原千花/石上優/西片 等は正読。
+# bare 大仏=だいぶつ/白銀=はくぎん/五月/一花 は homograph/generic でフルネームのみ。
+
+[[case]]
+input = "白銀御行"
+mode = "hiragana"
+expected = "しろがねみゆき"
+note = "白銀=しろがね/御行=みゆき"
+
+[[case]]
+input = "大仏こばち"
+mode = "hiragana"
+expected = "おさらぎこばち"
+note = "大仏=おさらぎ (bare 大仏=だいぶつ homograph)"
+
+[[case]]
+input = "中野三玖"
+mode = "hiragana"
+expected = "なかのみく"
+note = "三玖=みく (default さんきゅう)"
+
+[[case]]
+input = "中野五月"
+mode = "hiragana"
+expected = "なかのいつき"
+note = "五月=いつき (default ごがつ)"
