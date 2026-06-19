@@ -1,0 +1,43 @@
+# 2026-06-19 刀剣乱舞 刀剣名 probe (大量補充)。村正/正宗 等は既正。
+
+[[case]]
+input = "加州清光"
+mode = "hiragana"
+expected = "かしゅうきよみつ"
+note = "清光=きよみつ (default せいこう)"
+
+[[case]]
+input = "大倶利伽羅"
+mode = "hiragana"
+expected = "おおくりから"
+note = "default だいくり"
+
+[[case]]
+input = "鯰尾藤四郎"
+mode = "hiragana"
+expected = "なまずおとうしろう"
+note = "鯰尾=なまずお"
+
+[[case]]
+input = "山姥切国広"
+mode = "hiragana"
+expected = "やまんばぎりくにひろ"
+note = "山姥切=やまんばぎり"
+
+[[case]]
+input = "へし切長谷部"
+mode = "hiragana"
+expected = "へしきりはせべ"
+note = "へし切=へしきり"
+
+[[case]]
+input = "蜻蛉切"
+mode = "hiragana"
+expected = "とんぼぎり"
+note = "蜻蛉=とんぼ/切=ぎり"
+
+[[case]]
+input = "一期一振"
+mode = "hiragana"
+expected = "いちごひとふり"
+note = "default いっきいちしん"
