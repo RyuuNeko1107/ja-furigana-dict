@@ -1,0 +1,37 @@
+# 2026-06-19 幕末・明治の人物 probe。木戸孝允/岩倉具視/陸奥宗光/西郷隆盛/勝海舟 等は登録済/正読。
+
+[[case]]
+input = "榎本武揚"
+mode = "hiragana"
+expected = "えのもとたけあき"
+note = "武揚=たけあき (default ぶよう)"
+
+[[case]]
+input = "斎藤一"
+mode = "hiragana"
+expected = "さいとうはじめ"
+note = "新選組 一=はじめ (default いち)"
+
+[[case]]
+input = "近藤勇"
+mode = "hiragana"
+expected = "こんどういさみ"
+note = "勇=いさみ (default ゆう)"
+
+[[case]]
+input = "沖田総司"
+mode = "hiragana"
+expected = "おきたそうじ"
+note = "総司=そうじ (default そうし)"
+
+[[case]]
+input = "大村益次郎"
+mode = "hiragana"
+expected = "おおむらますじろう"
+note = "益次郎=ますじろう (default えきじろう)"
+
+[[case]]
+input = "新島襄"
+mode = "hiragana"
+expected = "にいじまじょう"
+note = "襄=じょう (default はらう)"
