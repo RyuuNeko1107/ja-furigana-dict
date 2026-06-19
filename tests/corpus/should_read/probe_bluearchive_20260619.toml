@@ -1,0 +1,38 @@
+# 2026-06-19 ブルーアーカイブ キャラ名 probe。小鳥遊=たかなし/銀鏡=しろみ/才羽/各務/
+# 空崎/十六夜=いざよい 等は既正。連河/歌住/室笠 は読み未確定で保留。
+
+[[case]]
+input = "陸八魔"
+mode = "hiragana"
+expected = "りくはま"
+note = "陸八魔アル (default りくはちま)"
+
+[[case]]
+input = "阿慈谷"
+mode = "hiragana"
+expected = "あじたに"
+note = "阿慈谷ヒフミ (default あじこく)"
+
+[[case]]
+input = "砂狼"
+mode = "hiragana"
+expected = "さろう"
+note = "砂狼シロコ (default すなろう)"
+
+[[case]]
+input = "聖園"
+mode = "hiragana"
+expected = "みその"
+note = "聖園ミカ (default せいえん)"
+
+[[case]]
+input = "生塩"
+mode = "hiragana"
+expected = "うしお"
+note = "生塩ノア (default なまえん)"
+
+[[case]]
+input = "百合園"
+mode = "hiragana"
+expected = "ゆりぞの"
+note = "百合園セイア (default ゆりえん)"
