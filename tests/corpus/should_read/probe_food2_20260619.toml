@@ -1,0 +1,32 @@
+# 2026-06-19 郷土料理・和菓子 probe。筑前煮/辛子明太子/善哉/最中 等は正読。
+# 鶏飯=けいはん/とりめし homograph 見送り。
+
+[[case]]
+input = "鮒寿司"
+mode = "hiragana"
+expected = "ふなずし"
+note = "滋賀、寿司=ずし 連濁"
+
+[[case]]
+input = "柿の葉寿司"
+mode = "hiragana"
+expected = "かきのはずし"
+note = "奈良、寿司=ずし"
+
+[[case]]
+input = "三平汁"
+mode = "hiragana"
+expected = "さんぺいじる"
+note = "北海道、汁=じる (default じゅう)"
+
+[[case]]
+input = "五家宝"
+mode = "hiragana"
+expected = "ごかぼう"
+note = "埼玉の和菓子、宝=ぼう (default ごかほう)"
+
+[[case]]
+input = "朴葉味噌"
+mode = "hiragana"
+expected = "ほおばみそ"
+note = "飛騨、朴葉=ほおば (default ぼくよう)"
