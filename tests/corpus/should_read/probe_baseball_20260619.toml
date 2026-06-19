@@ -1,0 +1,25 @@
+# 2026-06-19 野球漫画 probe。沢村栄純/御幸/茂野吾郎 等は正読。
+
+[[case]]
+input = "降谷暁"
+mode = "hiragana"
+expected = "ふるやさとる"
+note = "ダイヤのA。暁=さとる (default あかつき)"
+
+[[case]]
+input = "三橋廉"
+mode = "hiragana"
+expected = "みはしれん"
+note = "おお振り。三橋=みはし (default みつはし)"
+
+[[case]]
+input = "佐藤寿也"
+mode = "hiragana"
+expected = "さとうひさや"
+note = "MAJOR。寿也=ひさや (default じゅや)"
+
+[[case]]
+input = "泉孝介"
+mode = "hiragana"
+expected = "いずみこうすけ"
+note = "おお振り。泉=いずみ (default せん)"
