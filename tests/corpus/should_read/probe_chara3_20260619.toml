@@ -1,0 +1,45 @@
+# 2026-06-19 アニメキャラ名③ (ぼざろ/推しの子/呪術/チェンソー)。
+# 後藤ひとり/喜多郁代/有馬かな/乙骨憂太/夏油傑 等は登録済/正読。
+# 沢渡=さわたり/さわわたり・我妻=わがつま(我が妻) は homograph で見送り。
+
+[[case]]
+input = "伊地知虹夏"
+mode = "hiragana"
+expected = "いじちにじか"
+note = "ぼざろ (虹夏=にじか)"
+
+[[case]]
+input = "星野愛久愛海"
+mode = "hiragana"
+expected = "ほしのあくあ"
+note = "推しの子 アクア"
+
+[[case]]
+input = "星野瑠美衣"
+mode = "hiragana"
+expected = "ほしのるびい"
+note = "推しの子 ルビー"
+
+[[case]]
+input = "家入硝子"
+mode = "hiragana"
+expected = "いえいりしょうこ"
+note = "呪術 (default いえにゅうがらす)"
+
+[[case]]
+input = "夜蛾"
+mode = "hiragana"
+expected = "やが"
+note = "呪術 夜蛾正道 (default よるが)"
+
+[[case]]
+input = "楽巌寺"
+mode = "hiragana"
+expected = "らくがんじ"
+note = "呪術 (default らくいわおてら)"
+
+[[case]]
+input = "禅院直毘人"
+mode = "hiragana"
+expected = "ぜんいんなおびと"
+note = "呪術、禪→禅 compat key (default ちょくびひと)"
