@@ -1,0 +1,37 @@
+# 2026-06-19 R145-147 推しの子/チェンソー/幽白/ぬらりひょん probe まとめ。
+
+[[case]]
+input = "愛久愛海"
+mode = "hiragana"
+expected = "あくあ"
+note = "推しの子 当て字"
+
+[[case]]
+input = "仙水忍"
+mode = "hiragana"
+expected = "せんすいしのぶ"
+note = "幽白 忍=しのぶ"
+
+[[case]]
+input = "蔵馬"
+mode = "hiragana"
+expected = "くらま"
+note = "幽白 (default ぞうば)"
+
+[[case]]
+input = "奴良陸生"
+mode = "hiragana"
+expected = "ぬらりくお"
+note = "ぬらりひょん 当て字"
+
+[[case]]
+input = "羽衣狐"
+mode = "hiragana"
+expected = "はごろもぎつね"
+note = "狐=ぎつね 連濁"
+
+[[case]]
+input = "牛鬼"
+mode = "hiragana"
+expected = "ぎゅうき"
+note = "妖怪 (default うしき)"
