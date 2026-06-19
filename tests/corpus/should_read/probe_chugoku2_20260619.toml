@@ -1,0 +1,32 @@
+# 2026-06-19 中国・四国 難読町村 第22弾。雲南/飯南/伯耆/上関/神山 等は正読。
+# 平生=へいぜい/和気=わき/佐川=さがわ(急便)/綾川=あやかわ homograph 見送り。
+
+[[case]]
+input = "八頭"
+mode = "hiragana"
+expected = "やず"
+note = "鳥取県八頭町 (default はっとう)"
+
+[[case]]
+input = "邑南"
+mode = "hiragana"
+expected = "おおなん"
+note = "島根県、邑=おお (default むら)"
+
+[[case]]
+input = "鬼北"
+mode = "hiragana"
+expected = "きほく"
+note = "愛媛県 (default おにほく)"
+
+[[case]]
+input = "知夫"
+mode = "hiragana"
+expected = "ちぶ"
+note = "島根県知夫村 (default ともお)"
+
+[[case]]
+input = "大豊"
+mode = "hiragana"
+expected = "おおとよ"
+note = "高知県大豊町 (default たいほう)"
