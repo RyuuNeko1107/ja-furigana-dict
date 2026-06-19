@@ -4,14 +4,14 @@
 [[case]]
 input = "鏡音リン"
 mode = "hiragana"
-expected = "かがみねりん"
-note = "鏡音=かがみね (default かがみおん)"
+expected = "かがみねリン"
+note = "鏡音=かがみね、リンはpassthrough katakana (default かがみおん)"
 
 [[case]]
 input = "巡音ルカ"
 mode = "hiragana"
-expected = "めぐりねるか"
-note = "巡音=めぐりね (default じゅんおん)"
+expected = "めぐりねルカ"
+note = "巡音=めぐりね、ルカはpassthrough"
 
 [[case]]
 input = "紲星"
