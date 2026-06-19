@@ -28,8 +28,8 @@ note = "P5。正義=まさよし (default せいぎ)"
 [[case]]
 input = "葛葉ライドウ"
 mode = "hiragana"
-expected = "くずのはライドウ"
-note = "葛葉=くずのは (にじ葛葉=くずは と別)"
+expected = "くずのはらいどう"
+note = "full surface 登録のため hiragana 全変換 (にじ葛葉=くずは と別)"
 
 [[case]]
 input = "仲魔"
