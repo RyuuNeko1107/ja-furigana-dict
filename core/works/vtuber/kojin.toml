@@ -1,0 +1,15 @@
+# 個人勢/.LIVE 等 VTuber のタレント名
+
+[meta]
+schema_version = "2"
+role = "works"
+description = "個人勢VTuber: タレント名"
+
+[entries]
+
+"天開司" = "テンカイツカサ"  # 司=つかさ (default し)
+"萌実" = "モエミ"            # .LIVE (default ほうじつ)
+"猫宮" = "ネコミヤ"          # 猫宮ひなた (default ねこきゅう)
+"牛巻" = "ウシマキ"          # 牛巻りこ (default うしかん)
+"兎鞠" = "ウマリ"            # 兎鞠まり (default うさぎまり)
+"夢咲楓" = "ユメサキカエデ"  # 夢咲=ゆめさき
