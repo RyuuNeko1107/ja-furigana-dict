@@ -1,0 +1,43 @@
+# 2026-06-19 R151-156 総理/神社/戦国茶人/落語/中華食/植物 probe まとめ。
+
+[[case]]
+input = "犬養毅"
+mode = "hiragana"
+expected = "いぬかいつよし"
+note = "総理。毅=つよし"
+
+[[case]]
+input = "浜口雄幸"
+mode = "hiragana"
+expected = "はまぐちおさち"
+note = "総理。雄幸=おさち (濱口の正規化)"
+
+[[case]]
+input = "出雲大社"
+mode = "hiragana"
+expected = "いずもおおやしろ"
+note = "公式読み (default いずもたいしゃ)"
+
+[[case]]
+input = "狩野山楽"
+mode = "hiragana"
+expected = "かのうさんらく"
+note = "絵師。狩野=かのう"
+
+[[case]]
+input = "牡丹灯籠"
+mode = "hiragana"
+expected = "ぼたんどうろう"
+note = "落語。灯籠=どうろう 連濁"
+
+[[case]]
+input = "搾菜"
+mode = "hiragana"
+expected = "ざーさい"
+note = "default さくさい"
+
+[[case]]
+input = "浜木綿"
+mode = "hiragana"
+expected = "はまゆう"
+note = "default はまもめん"
