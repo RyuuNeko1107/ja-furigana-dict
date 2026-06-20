@@ -712,3 +712,16 @@ input = "芽が出ず"
 mode = "hiragana"
 expected = "めがでず"
 note = "出ず=でず (出 next=ず→デ 追加、旧 しゅつ)"
+
+# ─── 隣接トリガー (R122、prev=漢字→ON メタパターン5例目) ───
+[[case]]
+input = "体育館裏"
+mode = "hiragana"
+expected = "たいいくかんうら"
+note = "裏 suffix=うら (prev=漢字→リ撤去、校舎裏/建物裏も救済)"
+
+[[case]]
+input = "脳裏"
+mode = "hiragana"
+expected = "のうり"
+note = "裏 prev rule撤去に伴い jukugo化 (ガード)"
