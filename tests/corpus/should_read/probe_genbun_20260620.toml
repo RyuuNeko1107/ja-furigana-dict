@@ -966,3 +966,28 @@ input = "来月七夕"
 mode = "hiragana"
 expected = "らいげつたなばた"
 note = "七夕 jukugo (旧 しちせき)"
+
+# ─── 単漢字flip 餌/姉/漁/会 + 見すぎ/者 (本番VV 多seed) ───
+[[case]]
+input = "餌をあげる"
+mode = "hiragana"
+expected = "えさをあげる"
+note = "餌 default えさ"
+
+[[case]]
+input = "見すぎた"
+mode = "hiragana"
+expected = "みすぎた"
+note = "見=み (見学=けん は token)"
+
+[[case]]
+input = "必要な者"
+mode = "hiragana"
+expected = "ひつようなもの"
+note = "者=もの (勇者=しゃ は token)"
+
+[[case]]
+input = "漁に出る"
+mode = "hiragana"
+expected = "りょうにでる"
+note = "漁 default りょう (漁業=ぎょ は token)"
