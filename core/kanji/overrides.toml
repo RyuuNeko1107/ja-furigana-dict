@@ -12352,8 +12352,9 @@ reading = "ふところ"
 # 動詞 「指す」 → 「さ」、 単独 + 助詞 → 「ゆび」
 [[kanji]]
 char = "指"
-default = "シ"
+default = "ゆび"
 
+# 指す/指し示す = さ (動詞)。指示/指定/指摘/指数 は2字tokenで非干渉
 [[kanji.match]]
 next_starts_any = ["す", "さ", "し", "せ", "そ"]
 reading = "さ"

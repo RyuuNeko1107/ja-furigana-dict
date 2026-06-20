@@ -20,8 +20,8 @@ note = "default そくしん。 寝=シン default (訓 ね は送り仮名 matc
 [[case]]
 input = "猟友会の方々"
 mode = "hiragana"
-expected = "りょうゆうかいのほうぼう"
-note = "default りょうともかい。 友=とも default"
+expected = "りょうゆうかいのかたがた"
+note = "猟友会=りょうゆうかい (友=とも default)。の方々=かたがた (2026-06-20 web確認で訂正)"
 
 # ─── 「何X目」 系 (何=なん + 助数詞 + 目=メ) ───
 [[case]]

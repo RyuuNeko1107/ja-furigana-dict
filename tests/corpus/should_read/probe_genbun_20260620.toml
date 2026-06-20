@@ -737,3 +737,51 @@ input = "長妻さん"
 mode = "hiragana"
 expected = "ながつまさん"
 note = "政治家姓 (旧 ちょうつま)"
+
+[[case]]
+input = "技能実習生"
+mode = "hiragana"
+expected = "ぎのうじっしゅうせい"
+note = "生=せい (旧 なま leak)"
+
+[[case]]
+input = "呪われてない"
+mode = "hiragana"
+expected = "のろわれてない"
+note = "呪う=のろう 現代 (まじなう archaic、呪文=じゅ維持)"
+
+[[case]]
+input = "生歌"
+mode = "hiragana"
+expected = "なまうた"
+note = "歌=うた (旧 なまか)"
+
+[[case]]
+input = "前屈み"
+mode = "hiragana"
+expected = "まえかがみ"
+note = "屈み=かがみ (旧 こごみ)"
+
+[[case]]
+input = "指を思い出して"
+mode = "hiragana"
+expected = "ゆびをおもいだして"
+note = "指 default ゆび flip (指示=しじ は2字token維持)"
+
+[[case]]
+input = "指示通り"
+mode = "hiragana"
+expected = "しじどおり"
+note = "指 ガード (2字token し)"
+
+[[case]]
+input = "陽の目を見る"
+mode = "hiragana"
+expected = "ひのめをみる"
+note = "idiom 陽=ひ"
+
+[[case]]
+input = "関係者の方々"
+mode = "hiragana"
+expected = "かんけいしゃのかたがた"
+note = "の方々=かたがた 人敬称 (web確認、方々に=ほうぼう 維持)"
