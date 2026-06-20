@@ -423,3 +423,16 @@ input = "出世払い"
 mode = "hiragana"
 expected = "しゅっせばらい"
 note = "払い=ばらい連濁 (旧 はらい)"
+
+# ─── seed753159 (大半VVノイズ/ja正/homograph) ───
+[[case]]
+input = "犬笛"
+mode = "hiragana"
+expected = "いぬぶえ"
+note = "笛=ぶえ連濁 (旧 いぬてき)"
+
+[[case]]
+input = "せつなさん初めましてだ"
+mode = "hiragana"
+expected = "せつなさんはじめましてだ"
+note = "名前+さん後で 初め=そめ 再分割化け→entry lock"
