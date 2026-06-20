@@ -75,3 +75,70 @@ input = "数学"
 mode = "hiragana"
 expected = "すうがく"
 note = "学=ガク ガード"
+
+# ─── seed161616 ───
+
+# 仲 = なか default、ちゅう sino-compound は jukugo (next/prev=漢字→チュウ 撤去)
+[[case]]
+input = "仲悪い蛾"
+mode = "hiragana"
+expected = "なかわるいが"
+note = "旧 ちゅうわるい (仲|悪い 分割で next=漢字→チュウ 誤射)"
+
+[[case]]
+input = "仲買"
+mode = "hiragana"
+expected = "なかがい"
+note = "native 複合 仲=なか ガード"
+
+[[case]]
+input = "仲裁"
+mode = "hiragana"
+expected = "ちゅうさい"
+note = "sino-compound jukugo ガード"
+
+# 何倍 = なんばい (何+助数詞)
+[[case]]
+input = "何倍"
+mode = "hiragana"
+expected = "なんばい"
+note = "旧 なにばい"
+
+# 皆 = みな suffix (prev=漢字→カイ 撤去)
+[[case]]
+input = "生物皆増えた"
+mode = "hiragana"
+expected = "せいぶつみなふえた"
+note = "旧 せいぶつかい"
+
+[[case]]
+input = "皆既日食"
+mode = "hiragana"
+expected = "かいきにっしょく"
+note = "皆 語頭=カイ ガード"
+
+# 周年 counter sokuonize (arabic 1/8)
+[[case]]
+input = "8周年"
+mode = "hiragana"
+expected = "はっしゅうねん"
+note = "旧 はちしゅうねん (周年 promotion 促音欠落)"
+
+[[case]]
+input = "1周年"
+mode = "hiragana"
+expected = "いっしゅうねん"
+
+# いろは坂 = ざか 連濁 (日光)
+[[case]]
+input = "いろは坂"
+mode = "hiragana"
+expected = "いろはざか"
+note = "旧 いろはさか"
+
+# 一点物 = いってんもの
+[[case]]
+input = "一点物"
+mode = "hiragana"
+expected = "いってんもの"
+note = "旧 いちてんぶつ"

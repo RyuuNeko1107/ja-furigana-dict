@@ -660,6 +660,17 @@ suffix = "シュウ"
 sokuonize = true
 # === end: 周 ===
 
+# 周年 (記念): 一周年=いっしゅうねん/八周年=はっしゅうねん/十周年=じっしゅうねん
+# (周 と同型、旧 simple.toml で促音欠落 はちしゅうねん。本番VV 2026-06-20)
+[counter."周年"]
+default = "シュウネン"
+kanji_numeral = true
+[[counter."周年".rules]]
+last_digit = [1, 8, 0]
+suffix = "シュウネン"
+sokuonize = true
+# === end: 周年 ===
+
 # 丁 (豆腐/拳銃/丁): 一丁=いっちょう/八丁=はっちょう (6=ろくちょう、旧 ろくてい 誤)
 [counter."丁"]
 default = "チョウ"
