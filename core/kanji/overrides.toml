@@ -7143,6 +7143,11 @@ default = "ミチ"
 prev_char_type = "漢字"
 reading = "ドウ"
 
+# カタカナ + 道 = ドウ (ファイター道/ゲーマー道/サムライ道 = 「○○道」武士道型)
+[[kanji.match]]
+prev_char_type = "カタカナ"
+reading = "ドウ"
+
 # 「店」 default 「ミセ」、 漢字直前なら 「テン」 (= 書店/喫茶店/支店/開店/商店)
 [[kanji]]
 char = "店"

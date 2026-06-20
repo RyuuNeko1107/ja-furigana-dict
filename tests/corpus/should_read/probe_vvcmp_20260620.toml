@@ -461,3 +461,16 @@ input = "身バレ"
 mode = "hiragana"
 expected = "みばれ"
 note = "身=み slang (旧 しんバレ)"
+
+# ─── seed602413 (飽和域=大半VVノイズ/ja正/niche名) ───
+[[case]]
+input = "ファイター道"
+mode = "hiragana"
+expected = "ファイターどう"
+note = "カタカナ+道=ドウ (○○道、旧 みち)"
+
+[[case]]
+input = "夜道"
+mode = "hiragana"
+expected = "よみち"
+note = "道=みち kun ガード"
