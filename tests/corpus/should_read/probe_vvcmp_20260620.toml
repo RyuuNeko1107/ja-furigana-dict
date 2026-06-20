@@ -654,3 +654,16 @@ input = "田舎暮らし"
 mode = "hiragana"
 expected = "いなかぐらし"
 note = "暮らし=ぐらし連濁 (旧 くらし)"
+
+# ─── 自作長文 batch7 (R117) ───
+[[case]]
+input = "のが常だ"
+mode = "hiragana"
+expected = "のがつねだ"
+note = "常+だ=つね (旧 じょう、正常だ=2字tokenガード別)"
+
+[[case]]
+input = "叩き出す"
+mode = "hiragana"
+expected = "たたきだす"
+note = "叩き=たたき (旧 はたき)"
