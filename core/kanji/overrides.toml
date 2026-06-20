@@ -7072,6 +7072,11 @@ default = "バ"
 prev_char_type = "漢字"
 reading = "ジョウ"
 
+# カタカナ語+場 = ジョウ (ゴルフ場/サッカー場/キャンプ場。置き場=ば は送り仮名で非該当)
+[[kanji.match]]
+prev_char_type = "カタカナ"
+reading = "ジョウ"
+
 # 「軍」 default 「グン」 (= 軍隊/軍人/陸軍/海軍/空軍/将軍/援軍)。
 # joyo unihan の 「いくさ」 は 「戦」 と混同した古語、 現代日本語は グン
 [[kanji]]
