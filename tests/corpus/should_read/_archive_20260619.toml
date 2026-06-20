@@ -213,8 +213,8 @@ note = "ハイキュー 木兎=ぼくと"
 [[case]]
 input = "宮侑"
 mode = "hiragana"
-expected = "みやあたむ"
-note = "ハイキュー 侑=あたむ"
+expected = "みやあつむ"
+note = "ハイキュー 侑=あつむ (旧 あたむ は誤読を誤lockしていた、2026-06-21是正)"
 
 [[case]]
 input = "五色工"
