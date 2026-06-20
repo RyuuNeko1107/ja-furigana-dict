@@ -512,3 +512,22 @@ input = "一足早い"
 mode = "hiragana"
 expected = "ひとあしはやい"
 note = "一足=ひとあし (旧 いっそく)"
+
+# ─── seed374829 ───
+[[case]]
+input = "マッサージ器"
+mode = "hiragana"
+expected = "マッサージき"
+note = "カタカナ+器=キ (旧 うつわ)"
+
+[[case]]
+input = "他職"
+mode = "hiragana"
+expected = "たしょく"
+note = "他+漢字=タ (旧 ほかしょく)"
+
+[[case]]
+input = "他のゲーム"
+mode = "hiragana"
+expected = "ほかのゲーム"
+note = "他の=ほか ガード"
