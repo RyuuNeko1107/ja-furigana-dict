@@ -4780,6 +4780,11 @@ default = "ベン"
 prev_eq = "の"
 reading = "びん"
 
+# カタカナ+便 = びん (クール便/メール便/ゆうパック便。宅配便=token)
+[[kanji.match]]
+prev_char_type = "カタカナ"
+reading = "びん"
+
 [[kanji]]
 # 「係」: suffix 用法 (○○係 = かかり/がかり) が productive に支配的なので訓 default。
 # 音「ケイ」 は閉じた jukugo 集合 (関係/係数/係留/係争/連係 = general.toml に entry 化、
@@ -13986,6 +13991,11 @@ default = "な"
 # 名○ prefix (名勝負/名作/名曲 等) = メイ
 [[kanji.match]]
 next_char_type = "漢字"
+reading = "メイ"
+
+# 名+カタカナ = メイ (名シーン/名セリフ/名プレイ/名ゲーム。名前=な は token)
+[[kanji.match]]
+next_char_type = "カタカナ"
 reading = "メイ"
 
 # ○名 suffix (組織名/会社名/番組名 等) = メイ。名前/あだ名/仮名 等は Lindera 単位で影響なし
