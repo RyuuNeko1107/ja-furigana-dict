@@ -860,3 +860,34 @@ input = "どん兵衛"
 mode = "hiragana"
 expected = "どんべえ"
 note = "兵衛=べえ (旧 どんひょうえ)"
+
+# ─── 本番VV大規模: 拳/場/街 suffix・付喪神・一通り ───
+[[case]]
+input = "波動拳"
+mode = "hiragana"
+expected = "はどうけん"
+note = "漢字+拳=けん 技名 (握り拳=こぶし は維持)"
+
+[[case]]
+input = "ゴルフ場"
+mode = "hiragana"
+expected = "ゴルフじょう"
+note = "カタカナ+場=じょう"
+
+[[case]]
+input = "オフィス街"
+mode = "hiragana"
+expected = "オフィスがい"
+note = "カタカナ+街=がい"
+
+[[case]]
+input = "付喪神"
+mode = "hiragana"
+expected = "つくもがみ"
+note = "民俗 (旧 ふそうしん)"
+
+[[case]]
+input = "一通り"
+mode = "hiragana"
+expected = "ひととおり"
+note = "旧 いちとおり"

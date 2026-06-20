@@ -14892,6 +14892,11 @@ default = "まち"
 prev_char_type = "漢字"
 reading = "ガイ"
 
+# カタカナ語+街 = ガイ (ネオン街/オフィス街。○○の街=まち は別)
+[[kanji.match]]
+prev_char_type = "カタカナ"
+reading = "ガイ"
+
 # 「首」 default 「くび」 + prev 漢字 → 「シュ」 (= 首相/首脳/部首/船首/機首/元首)
 [[kanji]]
 char = "首"
