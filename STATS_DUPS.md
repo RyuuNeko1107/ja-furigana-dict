@@ -8,7 +8,7 @@
 
 (なし — divergent reading 0 件、 健全)
 
-## 同一 reading (17 件)
+## 同一 reading (20 件)
 
 実害なし (jukugo merge で同値が上書きされても reading 不変)。 整理目安として list 化。
 長期的にどちらか 1 ファイルに寄せたいケースを発見する用。
@@ -25,10 +25,13 @@
 | 四十物 | アイモノ | `core/jukugo/proper/surnames.toml`, `core/works/game/hypmic.toml` |
 | 巫女 | ミコ | `core/jukugo/basic/general.toml`, `core/jukugo/humanities/religions.toml` |
 | 建御雷 | タケミカヅチ | `core/jukugo/humanities/religions.toml`, `core/jukugo/humanities/shinwa.toml` |
+| 戦い方 | タタカイカタ | `core/jukugo/basic/general.toml`, `core/jukugo/basic/stream_round_20260526.toml` |
 | 木花咲耶姫 | コノハナサクヤヒメ | `core/jukugo/humanities/religions.toml`, `core/jukugo/humanities/shinwa.toml` |
 | 東風平 | コチンダ | `core/jukugo/nature/place_names.toml`, `core/jukugo/proper/surnames.toml` |
 | 栗花落 | ツユリ | `core/jukugo/proper/surnames.toml`, `core/works/anime/kimetsu.toml` |
 | 海風 | ウミカゼ | `core/jukugo/basic/general.toml`, `core/jukugo/nature/weather.toml` |
+| 生き方 | イキカタ | `core/jukugo/basic/general.toml`, `core/jukugo/basic/stream_round_20260526.toml` |
 | 百目鬼 | ドウメキ | `core/jukugo/proper/surnames.toml`, `core/works/anime/xxxholic.toml` |
 | 酢漿草 | カタバミ | `core/jukugo/nature/animals.toml`, `core/jukugo/nature/plants.toml` |
+| 食べ方 | タベカタ | `core/jukugo/basic/general.toml`, `core/jukugo/basic/stream_round_20260526.toml` |
 | 鰻丼 | ウナドン | `core/jukugo/basic/general.toml`, `core/jukugo/nature/foods.toml` |
