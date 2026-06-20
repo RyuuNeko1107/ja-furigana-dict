@@ -392,3 +392,34 @@ input = "補強"
 mode = "hiragana"
 expected = "ほきょう"
 note = "強=キョウ ガード"
+
+# ─── seed864209 ───
+[[case]]
+input = "古の魔法"
+mode = "hiragana"
+expected = "いにしえのまほう"
+note = "旧 ふるの (古 next=の→いにしえ)"
+
+[[case]]
+input = "中古の車"
+mode = "hiragana"
+expected = "ちゅうこのくるま"
+note = "中古=jukugo ガード"
+
+[[case]]
+input = "危ねぇ"
+mode = "hiragana"
+expected = "あぶねえ"
+note = "危ない slang 小書きぇ (旧 きねぇ)"
+
+[[case]]
+input = "重ね方を"
+mode = "hiragana"
+expected = "かさねかたを"
+note = "連用形+方=カタ (旧 かさねほう)"
+
+[[case]]
+input = "出世払い"
+mode = "hiragana"
+expected = "しゅっせばらい"
+note = "払い=ばらい連濁 (旧 はらい)"

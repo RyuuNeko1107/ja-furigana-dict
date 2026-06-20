@@ -434,6 +434,12 @@ default = "フル"
 next_char_type = "漢字"
 reading = "コ"
 
+# 「古の」 (= いにしえの、 文語/ゲーム慣用「古の技/古の魔法」) = いにしえ。
+# 中古の/稽古の/最古の は jukugo token なので非干渉、古びた=ふる は next=び で非該当
+[[kanji.match]]
+next_starts_any = ["の"]
+reading = "いにしえ"
+
 [[kanji]]
 char = "低"
 default = "テイ"
