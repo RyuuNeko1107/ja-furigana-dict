@@ -1578,8 +1578,14 @@ default = "シ"
 # 入れると 「骨髄炎を」 = next 「を」 で誤発火するので 入れない
 [[kanji]]
 char = "炎"
-default = "エン"
+default = "ホノオ"
 
+# 漢字直後の 炎 = エン (口内炎/胃炎/肺炎/中耳炎 等 医療 suffix。鬼の炎 等は の挟みで非該当)
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "エン"
+
+# 炎上/炎症/炎天/火炎/気炎 は2字tokenで エン (単独 炎=ほのお が dominant)
 [[kanji.match]]
 next_starts_any = ["の", "が", "を", "に", "は", "も", "で", "と", "だ", "や"]
 reading = "ホノオ"

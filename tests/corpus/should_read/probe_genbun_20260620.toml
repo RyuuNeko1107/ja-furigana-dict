@@ -785,3 +785,28 @@ input = "関係者の方々"
 mode = "hiragana"
 expected = "かんけいしゃのかたがた"
 note = "の方々=かたがた 人敬称 (web確認、方々に=ほうぼう 維持)"
+
+# ─── 本番VV seed99: 炎 flip/対角/脱法/総取り ───
+[[case]]
+input = "聖なる炎"
+mode = "hiragana"
+expected = "せいなるほのお"
+note = "炎 default ほのお flip"
+
+[[case]]
+input = "口内炎"
+mode = "hiragana"
+expected = "こうないえん"
+note = "炎 ガード (漢字後=えん 医療suffix)"
+
+[[case]]
+input = "対角"
+mode = "hiragana"
+expected = "たいかく"
+note = "角=かく (旧 たいかど)"
+
+[[case]]
+input = "脱法行為"
+mode = "hiragana"
+expected = "だっぽうこうい"
+note = "だっぽう 促音半濁 (旧 だつほう)"
