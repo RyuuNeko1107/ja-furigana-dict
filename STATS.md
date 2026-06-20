@@ -24,14 +24,14 @@ git に commit されている master HEAD の状態を基準にする。
 | カテゴリ | エントリ数 | サイズ |
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,680** | **739 KB** |
-| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **5,038** | **268 KB** |
-| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,426** | **105 KB** |
+| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **5,040** | **268 KB** |
+| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,430** | **106 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **973** | **26 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,771** | **187 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **678** | **30 KB** |
-| **合計** | **51,566** | **1.32 MB** |
+| **合計** | **51,572** | **1.32 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -56,7 +56,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/jukugo/<genre>/*` — 手動 PR メンテのジャンル別 jukugo (≥ 2 字 surface)。 lib の Step 3 (jukugo lookup) で Lindera より優先採用。 各 genre dir の `_genre.toml` がカテゴリ description を持つ。
 
-**合計**: 5,038 件 / 268 KB (genre 6 区分)
+**合計**: 5,040 件 / 268 KB (genre 6 区分)
 
 #### 自然・生命
 
@@ -150,20 +150,20 @@ git に commit されている master HEAD の状態を基準にする。
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml) | 3,161 | 168 KB | 二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む) |
+| [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml) | 3,163 | 168 KB | 二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む) |
 | [`core/jukugo/basic/stream_round_20260526.toml`](core/jukugo/basic/stream_round_20260526.toml) | 39 | 1.3 KB | VV stream-comments comparison round (seed=20260526) |
 | [`core/jukugo/basic/four_char.toml`](core/jukugo/basic/four_char.toml) | 33 | 2.1 KB | 四字熟語 (4 字 + 全 CJK 漢字) |
 | [`core/jukugo/basic/stream_round_20260611.toml`](core/jukugo/basic/stream_round_20260611.toml) | 32 | 2.9 KB | VV stream-comments comparison round (seed=20260611) |
 | [`core/jukugo/basic/stream_round_20260613.toml`](core/jukugo/basic/stream_round_20260613.toml) | 14 | 805 B | VV stream-comments comparison round (seed=161803) |
 | [`core/jukugo/basic/stream_round_20260612.toml`](core/jukugo/basic/stream_round_20260612.toml) | 10 | 1008 B | VV stream-comments comparison round (seed=20260612) |
-| **小計** (6 ファイル) | **3,289** | **176 KB** | |
+| **小計** (6 ファイル) | **3,291** | **176 KB** | |
 
 
 ### 作品造語
 
 `core/works/<medium>/*` — 媒体 (game / literature 等) ごとに 1 作品 1 ファイル。 原則は公式読み (一般通称として定着していれば採録可)、 出典コメント必須、 古典読みは現代読み無い場合のみ。
 
-**合計**: 1,426 件 / 105 KB (genre 4 区分)
+**合計**: 1,430 件 / 106 KB (genre 4 区分)
 
 #### ゲーム
 
@@ -219,10 +219,10 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/anime/_minor.toml`](core/works/anime/_minor.toml) | 59 | 5.0 KB | アニメ/漫画 小規模作品 統合 (1作品1-3語、2026-06-21 consolidate) |
 | [`core/works/anime/kimetsu.toml`](core/works/anime/kimetsu.toml) | 45 | 3.9 KB | 鬼滅の刃 (吾峠呼世晴): キャラクター名 / 用語 (公式読みベース) |
 | [`core/works/anime/jujutsu.toml`](core/works/anime/jujutsu.toml) | 36 | 3.0 KB | 呪術廻戦 (芥見下々): キャラクター名 / 用語 (公式読みベース) |
+| [`core/works/anime/conan.toml`](core/works/anime/conan.toml) | 29 | 2.4 KB | 名探偵コナン (青山剛昌): キャラクター名 (公式読みベース) |
 | [`core/works/anime/haikyu.toml`](core/works/anime/haikyu.toml) | 28 | 2.4 KB | ハイキュー!! (古舘春一): キャラクター名 (公式読みベース) |
 | [`core/works/anime/heroaca.toml`](core/works/anime/heroaca.toml) | 28 | 2.5 KB | 僕のヒーローアカデミア (堀越耕平): キャラクター名 (公式読みベース) |
 | [`core/works/anime/bleach.toml`](core/works/anime/bleach.toml) | 27 | 2.4 KB | BLEACH (久保帯人) キャラ名・用語 |
-| [`core/works/anime/conan.toml`](core/works/anime/conan.toml) | 25 | 2.0 KB | 名探偵コナン (青山剛昌): キャラクター名 (公式読みベース) |
 | [`core/works/anime/jojo.toml`](core/works/anime/jojo.toml) | 25 | 2.5 KB | ジョジョの奇妙な冒険 (荒木飛呂彦): キャラクター名 / 用語 (公式読みベース) |
 | [`core/works/anime/tenipuri.toml`](core/works/anime/tenipuri.toml) | 22 | 1.7 KB | テニスの王子様 (許斐剛): キャラクター名 |
 | [`core/works/anime/naruto.toml`](core/works/anime/naruto.toml) | 21 | 1.5 KB | NARUTO (岸本斉史): キャラクター名 (公式読みベース) |
@@ -266,7 +266,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/anime/inuyasha.toml`](core/works/anime/inuyasha.toml) | 4 | 405 B | 犬夜叉 (高橋留美子): キャラクター名 |
 | [`core/works/anime/nurarihyon.toml`](core/works/anime/nurarihyon.toml) | 4 | 417 B | ぬらりひょんの孫: キャラクター名 |
 | [`core/works/anime/seinen.toml`](core/works/anime/seinen.toml) | 4 | 496 B | 青年漫画: キャラクター名 |
-| **小計** (50 ファイル) | **627** | **55 KB** | |
+| **小計** (50 ファイル) | **631** | **55 KB** | |
 
 #### VTuber
 
