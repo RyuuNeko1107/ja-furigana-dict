@@ -645,7 +645,7 @@ default = "シュツ"
 # (★round 16 「た」 「ま」 追加 = round 2 漏れ、 「出た → でた」 「出ます → でます」 fix)
 # (★round 7 「ね」 追加 = 「出ねぇ」 colloquial of 「出ない」)
 [[kanji.match]]
-next_starts_any = ["る", "て", "な", "よ", "ろ", "た", "ま", "ね", "ら", "や", "ち", "づ"]
+next_starts_any = ["る", "て", "な", "よ", "ろ", "た", "ま", "ね", "ら", "や", "ち", "づ", "ず"]
 reading = "デ"
 # 「出す / 出した / 出して / 出さない / 出せ / 出そう」 = ダ + 送りがな
 [[kanji.match]]
@@ -11471,11 +11471,15 @@ default = "コウ"
 next_starts_any = ["い", "く", "か", "さ", "み", "そ", "す", "け", "過"]
 reading = "うま"
 
-# 「己」 default 「コ」 (= 自己/利己/克己/知己/敵己)。
-# unihan default 「おのれ」 は古語、 現代では熟語 dominant
+# 「己」 default おのれ (= 己の/己を/己が = 自分自身、現代 standalone dominant)。
+# 知己/克己/利己/自己 等 prev 漢字 → コ (2026-06-21 自作長文で flip)。
 [[kanji]]
 char = "己"
-default = "コ"
+default = "おのれ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "コ"
 
 # 「師」 default 「シ」 (= 師匠/師範/教師/医師/講師/牧師/技師)。
 # unihan default 「おさ」 は古語、 現代では熟語 dominant

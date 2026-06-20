@@ -693,3 +693,22 @@ input = "床に臥せる"
 mode = "hiragana"
 expected = "とこにふせる"
 note = "床=とこ idiom (床=ゆか floor がdefault)"
+
+# ─── 自作長文 batch12 (R121) ───
+[[case]]
+input = "己の愚かさ"
+mode = "hiragana"
+expected = "おのれのおろかさ"
+note = "己=おのれ flip (旧 こ、知己/克己=コガード別)"
+
+[[case]]
+input = "自己"
+mode = "hiragana"
+expected = "じこ"
+note = "己 prev=漢字→コ ガード"
+
+[[case]]
+input = "芽が出ず"
+mode = "hiragana"
+expected = "めがでず"
+note = "出ず=でず (出 next=ず→デ 追加、旧 しゅつ)"
