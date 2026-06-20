@@ -725,3 +725,28 @@ input = "脳裏"
 mode = "hiragana"
 expected = "のうり"
 note = "裏 prev rule撤去に伴い jukugo化 (ガード)"
+
+# ─── 料理domain batch15 (R124) ───
+[[case]]
+input = "一口大に切る"
+mode = "hiragana"
+expected = "ひとくちだいにきる"
+note = "〜大=だい size suffix (旧 おお)"
+
+[[case]]
+input = "一つまみの塩"
+mode = "hiragana"
+expected = "ひとつまみのしお"
+note = "一+native counter=ひと (旧 いち)"
+
+[[case]]
+input = "絞り汁"
+mode = "hiragana"
+expected = "しぼりじる"
+note = "〜汁=じる連濁 (味噌汁=しる例外ガード別)"
+
+[[case]]
+input = "味噌汁"
+mode = "hiragana"
+expected = "みそしる"
+note = "汁=しる 例外ガード"
