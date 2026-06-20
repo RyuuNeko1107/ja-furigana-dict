@@ -588,3 +588,16 @@ input = "熱中"
 mode = "hiragana"
 expected = "ねっちゅう"
 note = "熱=ネツ ガード"
+
+# ─── 畳語 batch3 (R110) ───
+[[case]]
+input = "次々と"
+mode = "hiragana"
+expected = "つぎつぎと"
+note = "次々=つぎつぎ (旧 つぎづぎ 連濁誤、頻出)"
+
+[[case]]
+input = "並々ならぬ"
+mode = "hiragana"
+expected = "なみなみならぬ"
+note = "並々=なみなみ (旧 へいべい)"
