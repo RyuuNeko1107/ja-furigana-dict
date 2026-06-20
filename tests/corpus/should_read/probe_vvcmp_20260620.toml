@@ -647,3 +647,10 @@ input = "一丸となって"
 mode = "hiragana"
 expected = "いちがんとなって"
 note = "一丸=ガン ガード"
+
+# ─── 自作長文 batch3 (R115) ───
+[[case]]
+input = "田舎暮らし"
+mode = "hiragana"
+expected = "いなかぐらし"
+note = "暮らし=ぐらし連濁 (旧 くらし)"
