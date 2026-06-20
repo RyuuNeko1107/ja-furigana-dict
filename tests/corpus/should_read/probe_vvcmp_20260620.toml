@@ -474,3 +474,16 @@ input = "夜道"
 mode = "hiragana"
 expected = "よみち"
 note = "道=みち kun ガード"
+
+# ─── seed717248 ───
+[[case]]
+input = "無限大"
+mode = "hiragana"
+expected = "むげんだい"
+note = "大=だい (旧 むげんおお)"
+
+[[case]]
+input = "早い者勝ちか"
+mode = "hiragana"
+expected = "はやいものがちか"
+note = "者勝ち=ものがち連濁 (か で再分割化け→entry lock)"
