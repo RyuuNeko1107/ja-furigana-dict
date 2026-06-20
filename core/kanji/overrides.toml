@@ -150,6 +150,12 @@ reading = "コク"
 char = "風"
 default = "フウ"
 
+# prev 漢字 = フウ (中華風/和風/洋風/中国風 等 style suffix、 next=の/が で かぜ 化を防ぐ)。
+# 訓カゼ jukugo (北風/夜風/海風/山風) は band 1000 で override されるため非干渉。
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "フウ"
+
 # ○○風 (中国風/和風/洋風 等) suffix = フウ、 next_starts かぜ match より優先
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
@@ -1524,6 +1530,11 @@ reading = "ショウ"
 [[kanji]]
 char = "弱"
 default = "ジャク"
+
+# 数字 + 弱 = ジャク (5弱/10弱、震度/時間の「弱」suffix)。next=か で よわ 化を防ぐ
+[[kanji.match]]
+prev_char_type = "英数"
+reading = "ジャク"
 
 # 弱い / 弱く / 弱かった / 弱さ / 弱すぎる / 弱まる
 [[kanji.match]]

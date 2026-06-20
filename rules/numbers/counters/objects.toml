@@ -682,6 +682,17 @@ suffix = "タイ"
 sokuonize = true
 # === end: 体 ===
 
+# 点 (得点/点数): 一点=いってん/八点=はってん/十点=じってん (3点=さんてん)
+# 旧 simple.toml で促音欠落 いちてん。本番VV 2026-06-20
+[counter."点"]
+default = "テン"
+kanji_numeral = true
+[[counter."点".rules]]
+last_digit = [1, 8, 0]
+suffix = "テン"
+sokuonize = true
+# === end: 点 ===
+
 # 丁 (豆腐/拳銃/丁): 一丁=いっちょう/八丁=はっちょう (6=ろくちょう、旧 ろくてい 誤)
 [counter."丁"]
 default = "チョウ"

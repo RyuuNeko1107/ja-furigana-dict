@@ -270,3 +270,51 @@ input = "仕掛け人"
 mode = "hiragana"
 expected = "しかけにん"
 note = "人=にん (旧 しかけひと)"
+
+# ─── seed919191 ───
+
+# 風 = フウ (中華風/和風 style suffix、prev=漢字→フウ で の/が の かぜ化防止)
+[[case]]
+input = "中華風の家だ"
+mode = "hiragana"
+expected = "ちゅうかふうのいえだ"
+note = "旧 ちゅうかかぜ (風 next=の→かぜ 誤射)"
+
+[[case]]
+input = "強い風が吹く"
+mode = "hiragana"
+expected = "つよいかぜがふく"
+note = "形容詞+風=かぜ ガード"
+
+# 弱 = ジャク (数字+弱 suffix、prev=英数→ジャク で next=か の よわ化防止)
+[[case]]
+input = "震度5弱か"
+mode = "hiragana"
+expected = "しんどごじゃくか"
+note = "旧 ごよわか (弱 next=か→ヨワ 誤射)"
+
+[[case]]
+input = "弱い"
+mode = "hiragana"
+expected = "よわい"
+note = "形容詞 弱=よわ ガード"
+
+# 点 counter sokuonize
+[[case]]
+input = "もう1点"
+mode = "hiragana"
+expected = "もういってん"
+note = "旧 いちてん (点 promotion 促音)"
+
+# jukugo
+[[case]]
+input = "物々交換"
+mode = "hiragana"
+expected = "ぶつぶつこうかん"
+note = "旧 ものもの (畳語々展開誤)"
+
+[[case]]
+input = "部屋中"
+mode = "hiragana"
+expected = "へやじゅう"
+note = "中=じゅう (旧 へやちゅう)"
