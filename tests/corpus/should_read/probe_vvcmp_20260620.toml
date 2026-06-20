@@ -538,3 +538,34 @@ input = "ひょうたん島"
 mode = "hiragana"
 expected = "ひょうたんじま"
 note = "島=じま連濁 (旧 しま)"
+
+# ─── 畳語(々) systematic probe (R108、memが「まだ残あり」と記録した高密度vein) ───
+[[case]]
+input = "淡々と"
+mode = "hiragana"
+expected = "たんたんと"
+note = "畳語 連濁誤 (旧 たんだん)"
+
+[[case]]
+input = "綿々と"
+mode = "hiragana"
+expected = "めんめんと"
+note = "畳語 音訓誤 (旧 わたわた)"
+
+[[case]]
+input = "白々しい"
+mode = "hiragana"
+expected = "しらじらしい"
+note = "白々=しらじら (旧 しろじろ)"
+
+[[case]]
+input = "喧々"
+mode = "hiragana"
+expected = "けんけん"
+note = "畳語 連濁誤 (旧 けんげん)"
+
+[[case]]
+input = "丁々発止"
+mode = "hiragana"
+expected = "ちょうちょうはっし"
+note = "丁々=ちょうちょう (旧 ていでい)"
