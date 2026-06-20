@@ -601,3 +601,16 @@ input = "並々ならぬ"
 mode = "hiragana"
 expected = "なみなみならぬ"
 note = "並々=なみなみ (旧 へいべい)"
+
+# ─── 畳語 batch4 (R111、literary tail) ───
+[[case]]
+input = "多々ある"
+mode = "hiragana"
+expected = "たたある"
+note = "多々=たた (旧 ただ 連濁誤、頻出)"
+
+[[case]]
+input = "屡々"
+mode = "hiragana"
+expected = "しばしば"
+note = "旧 しばしばじばしば (二重化け)"
