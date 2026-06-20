@@ -10705,7 +10705,7 @@ reading = "おど"
 # 単独 + 助詞接続 → 「つみ」 (= 名詞用法)
 [[kanji]]
 char = "罪"
-default = "ザイ"
+default = "つみ"  # 単独 罪=つみ (罪を犯す/重い罪)。犯罪/謝罪/有罪/罪悪 は2字tokenで ザイ。2026-06-20 flip
 
 [[kanji.match]]
 prev_char_type = "漢字"
