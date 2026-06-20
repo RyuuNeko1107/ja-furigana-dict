@@ -142,3 +142,42 @@ input = "一点物"
 mode = "hiragana"
 expected = "いってんもの"
 note = "旧 いちてんぶつ"
+
+# ─── seed242424 ───
+
+# 叩 verb = たた (volitional/imperative/desiderative の はた 化け是正)
+[[case]]
+input = "叩こうぜ"
+mode = "hiragana"
+expected = "たたこうぜ"
+note = "旧 はたこう (IPADIC 不整合、叩く/叩いて=たた)"
+
+[[case]]
+input = "叩け"
+mode = "hiragana"
+expected = "たたけ"
+note = "旧 はたけ"
+
+[[case]]
+input = "叩く"
+mode = "hiragana"
+expected = "たたく"
+note = "既正 ガード"
+
+# 体 counter sokuonize (1/8/10)
+[[case]]
+input = "1体で5000円"
+mode = "hiragana"
+expected = "いったいでごせんえん"
+note = "旧 いちたい (体 promotion 促音欠落)"
+
+[[case]]
+input = "8体"
+mode = "hiragana"
+expected = "はったい"
+
+[[case]]
+input = "3体"
+mode = "hiragana"
+expected = "さんたい"
+note = "3 は非促音 ガード"

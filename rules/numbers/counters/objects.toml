@@ -671,6 +671,17 @@ suffix = "シュウネン"
 sokuonize = true
 # === end: 周年 ===
 
+# 体 (キャラ/フィギュア/像): 一体=いったい/八体=はったい/十体=じったい (3体=さんたい)
+# 旧 simple.toml で促音欠落 いちたい。本番VV 2026-06-20
+[counter."体"]
+default = "タイ"
+kanji_numeral = true
+[[counter."体".rules]]
+last_digit = [1, 8, 0]
+suffix = "タイ"
+sokuonize = true
+# === end: 体 ===
+
 # 丁 (豆腐/拳銃/丁): 一丁=いっちょう/八丁=はっちょう (6=ろくちょう、旧 ろくてい 誤)
 [counter."丁"]
 default = "チョウ"
