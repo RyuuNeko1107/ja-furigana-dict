@@ -1,0 +1,77 @@
+# 2026-06-20 本番VV比較 (snapshot 1.41M, seed=909090, n=7000) 由来の dict 改善 回帰 lock。
+# data/_analysis/scripts/compare_with_voicevox.py の DIFF を漢字含み count順で triage。
+
+# ─── 顔 = がお 連濁 (jukugo 追加、笑顔/泣き顔と同列) ───
+[[case]]
+input = "焦り顔"
+mode = "hiragana"
+expected = "あせりがお"
+note = "旧 あせりかお。本番VV count1769 最大ヒット"
+
+[[case]]
+input = "困り顔"
+mode = "hiragana"
+expected = "こまりがお"
+note = "旧 こまりかお"
+
+[[case]]
+input = "知らん顔"
+mode = "hiragana"
+expected = "しらんかお"
+note = "非連濁ガード (顔=かお)"
+
+# ─── 仲 = なか suffix (prev=漢字→チュウ 撤去、伯仲 jukugo 化) ───
+[[case]]
+input = "姉妹仲が悪い"
+mode = "hiragana"
+expected = "しまいなかがわるい"
+note = "旧 しまいちゅう。relationship suffix 仲=なか"
+
+[[case]]
+input = "夫婦仲"
+mode = "hiragana"
+expected = "ふうふなか"
+
+[[case]]
+input = "伯仲"
+mode = "hiragana"
+expected = "はくちゅう"
+note = "prev rule 撤去に伴い jukugo 化 (ガード)"
+
+[[case]]
+input = "仲介"
+mode = "hiragana"
+expected = "ちゅうかい"
+note = "仲 語頭 next=漢字→チュウ ガード"
+
+# ─── 方 = カタ (連用形+方、next も/が の ホウ rule 誤射回避、jukugo) ───
+[[case]]
+input = "勝ち方も大事"
+mode = "hiragana"
+expected = "かちかたもだいじ"
+note = "旧 かちほう (next も→ホウ 誤射)"
+
+[[case]]
+input = "割れ方が違う"
+mode = "hiragana"
+expected = "われかたがちがう"
+note = "旧 われほう (next が→ホウ 誤射)"
+
+[[case]]
+input = "強い方がいい"
+mode = "hiragana"
+expected = "つよいほうがいい"
+note = "形容詞+方=ホウ ガード"
+
+# ─── 学 = まな (連用形 学び の tokenization edge 救済) ───
+[[case]]
+input = "学びのぺこら"
+mode = "hiragana"
+expected = "まなびのぺこら"
+note = "旧 がくび (の+ひらがな名前で IPADIC が 学=ガク+び 化け)"
+
+[[case]]
+input = "数学"
+mode = "hiragana"
+expected = "すうがく"
+note = "学=ガク ガード"

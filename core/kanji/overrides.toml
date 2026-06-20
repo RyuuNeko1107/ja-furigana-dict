@@ -7097,9 +7097,15 @@ char = "期"
 default = "キ"
 
 # 「学」 default 「ガク」 (= 数学/科学/物理学/学問/医学/文学)
+# next=び は 学び (学ぶ 連用形) のみ → まな (学びのぺこら 等で IPADIC が
+# 学=ガク+び に化ける tokenization edge を救済、本番VV 2026-06-20)
 [[kanji]]
 char = "学"
 default = "ガク"
+
+[[kanji.match]]
+next_starts_any = ["び"]
+reading = "まな"
 
 # 「道」 default 「ミチ」、 漢字直前なら 「ドウ」 (= 柔道/書道/北海道/剣道/茶道)
 [[kanji]]
@@ -14119,14 +14125,12 @@ char = "粉"
 default = "こ"
 
 # 「仲」 default 「なか」 (= 「仲が良い/仲間/仲直り」 単独使用)。
-# 漢字連続 → 「チュウ」 (= 仲介/伯仲/仲裁/仲秋/仲春 等 jukugo)。
+# next 漢字 → 「チュウ」 (= 仲介/仲裁/仲秋/仲春 等 仲 が語頭の jukugo)。
+# ※ prev 漢字→チュウ は撤去 (2026-06-20): 姉妹仲/夫婦仲/兄弟仲 = なか suffix を
+#   壊していた (本番VV)。prev 漢字→チュウ の実需は 伯仲 のみ → jukugo 化。
 [[kanji]]
 char = "仲"
 default = "なか"
-
-[[kanji.match]]
-prev_char_type = "漢字"
-reading = "チュウ"
 
 [[kanji.match]]
 next_char_type = "漢字"
