@@ -7894,6 +7894,15 @@ reading = "こと"
 char = "毎"
 default = "マイ"
 
+# 接尾「〜毎」 = ごと (チャプター毎/1日毎/回毎。毎日/毎回 は 毎 が語頭=prev無し→マイ)
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ごと"
+
+[[kanji.match]]
+prev_char_type = "カタカナ"
+reading = "ごと"
+
 # 「民」 default 「ミン」 (= 国民/市民/住民/民族/民間/農民/移民/民主/民衆)。
 # unihan default 「たみ」 は古語、 現代では熟語 dominant
 [[kanji]]
@@ -8108,9 +8117,9 @@ default = "シ"
 next_char_type = "漢字"
 reading = "シ"
 
-# 「視る/視ない/視た/視て/視れば/視ろ」 = 動詞 → み
+# 「視る/視ない/視た/視て/視れば/視ろ/視える/視よう」 = 動詞 → み
 [[kanji.match]]
-next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ"]
+next_starts_any = ["る", "ら", "り", "っ", "れ", "ろ", "え", "た", "て", "よ"]
 reading = "み"
 
 # 「討」 default 「トウ」 (= 討論/検討/討議/追討/掃討/征討/敵討)。
