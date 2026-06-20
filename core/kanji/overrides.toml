@@ -5934,7 +5934,12 @@ default = "シュク"
 
 [[kanji]]
 char = "祭"
-default = "サイ"
+default = "まつり"  # 単独 祭=まつり (祭だ/夏の祭)。文化祭/学園祭/前夜祭 は2字token サイ。2026-06-20 flip
+
+# 漢字直後の 祭 = サイ (文化祭/学園祭/感謝祭/前夜祭 等は token だが念のため)
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "サイ"
 
 [[kanji]]
 char = "禅"
