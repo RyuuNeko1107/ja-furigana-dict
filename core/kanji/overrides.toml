@@ -10624,7 +10624,12 @@ default = "セン"
 # unihan default 「おきな」 は古語、 現代では熟語 dominant
 [[kanji]]
 char = "翁"
-default = "オウ"
+default = "おきな"
+
+# 塞翁が馬/老翁/村翁 等 漢字連結は オウ (単独 翁=おきな が dominant)
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "オウ"
 
 # 「考」 default 「コウ」 (= 考慮/考察/参考/思考/再考/熟考/備考)。
 # 動詞 「考える」 は okurigana 列挙で 「かんが」 へ切替 (= 4 mora 訓読み)
