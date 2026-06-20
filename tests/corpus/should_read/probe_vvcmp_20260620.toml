@@ -627,3 +627,10 @@ input = "円らな瞳"
 mode = "hiragana"
 expected = "つぶらなひとみ"
 note = "円ら=つぶら (旧 えんら)"
+
+# ─── 難読動詞 probe (R113、ja成熟・諍うのみ) ───
+[[case]]
+input = "諍って"
+mode = "hiragana"
+expected = "いさかって"
+note = "諍う=いさかう (旧 あらそうう、争う=あらそう ガード別)"
