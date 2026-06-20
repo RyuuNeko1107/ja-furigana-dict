@@ -5695,7 +5695,12 @@ default = "テキ"
 
 [[kanji]]
 char = "漁"
-default = "ギョ"
+default = "リョウ"  # 単独 漁=りょう (漁に出る/大漁)。漁業/漁港/漁船/漁協 は2字tokenで ギョ。2026-06-20 flip
+
+# 漢字直後の 漁 = ギョ (漁業/漁港/漁村 等は token だが念のため)
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ギョ"
 
 [[kanji]]
 char = "演"
