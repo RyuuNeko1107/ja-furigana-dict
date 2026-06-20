@@ -25,13 +25,13 @@ git に commit されている master HEAD の状態を基準にする。
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,680** | **739 KB** |
 | [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **5,035** | **268 KB** |
-| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,401** | **107 KB** |
+| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,401** | **103 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **973** | **26 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,771** | **187 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **678** | **30 KB** |
-| **合計** | **51,538** | **1.33 MB** |
+| **合計** | **51,538** | **1.32 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -163,13 +163,13 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/works/<medium>/*` — 媒体 (game / literature 等) ごとに 1 作品 1 ファイル。 原則は公式読み (一般通称として定着していれば採録可)、 出典コメント必須、 古典読みは現代読み無い場合のみ。
 
-**合計**: 1,401 件 / 107 KB (genre 4 区分)
+**合計**: 1,401 件 / 103 KB (genre 4 区分)
 
 #### ゲーム
 
 ゲーム作品の固有名詞 (キャラクター / 場所 / 用語、 公式読みベース)
 
-`core/works/game/` — 27 ファイル
+`core/works/game/` — 23 ファイル
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
@@ -186,6 +186,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/game/vocaloid.toml`](core/works/game/vocaloid.toml) | 16 | 1.4 KB | ボーカロイド/合成音声: キャラクター名 (公式読み) |
 | [`core/works/game/fate.toml`](core/works/game/fate.toml) | 13 | 1.1 KB | Fate / 型月 (TYPE-MOON): キャラクター名 |
 | [`core/works/game/honkai_starrail.toml`](core/works/game/honkai_starrail.toml) | 12 | 930 B | 崩壊:スターレイル (HoYoverse): キャラクター名 (公式日本語読みベース) |
+| [`core/works/game/_minor.toml`](core/works/game/_minor.toml) | 11 | 1.1 KB | ゲーム 小規模作品 統合 (1作品1-3語、2026-06-21 consolidate) |
 | [`core/works/game/project_sekai.toml`](core/works/game/project_sekai.toml) | 11 | 962 B | プロジェクトセカイ: キャラクター名 |
 | [`core/works/game/bluearchive.toml`](core/works/game/bluearchive.toml) | 10 | 911 B | ブルーアーカイブ (Nexon/Yostar): キャラクター名 (公式読みベース) |
 | [`core/works/game/kankore.toml`](core/works/game/kankore.toml) | 9 | 749 B | 艦これ: 艦娘名 (旧海軍艦名) |
@@ -195,12 +196,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/game/a3.toml`](core/works/game/a3.toml) | 4 | 396 B | A3! : キャラクター名 |
 | [`core/works/game/ryu_ga_gotoku.toml`](core/works/game/ryu_ga_gotoku.toml) | 4 | 405 B | 龍が如く: キャラクター名 |
 | [`core/works/game/utapri.toml`](core/works/game/utapri.toml) | 4 | 492 B | うたの☆プリンスさまっ♪ : キャラクター名 |
-| [`core/works/game/d4dj.toml`](core/works/game/d4dj.toml) | 3 | 343 B | D4DJ : キャラクター名 |
-| [`core/works/game/yugioh.toml`](core/works/game/yugioh.toml) | 3 | 376 B | 遊☆戯☆王 (高橋和希): キャラクター名 |
-| [`core/works/game/ff7.toml`](core/works/game/ff7.toml) | 2 | 352 B | ファイナルファンタジーVII (スクウェア・エニックス): 固有名詞 (公式読みベース) |
-| [`core/works/game/megaten.toml`](core/works/game/megaten.toml) | 2 | 341 B | 女神転生 (アトラス): キャラクター名 / 用語 |
-| [`core/works/game/sekiro.toml`](core/works/game/sekiro.toml) | 1 | 241 B | SEKIRO (フロム・ソフトウェア): キャラクター名 / 用語 |
-| **小計** (27 ファイル) | **642** | **40 KB** | |
+| **小計** (23 ファイル) | **642** | **39 KB** | |
 
 #### 文学
 
@@ -216,11 +212,12 @@ git に commit されている master HEAD の状態を基準にする。
 
 アニメ / 漫画作品の固有名詞 (キャラクター / 場所 / 用語、 公式読みベース)
 
-`core/works/anime/` — 73 ファイル
+`core/works/anime/` — 50 ファイル
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
 | [`core/works/anime/kimetsu.toml`](core/works/anime/kimetsu.toml) | 45 | 3.9 KB | 鬼滅の刃 (吾峠呼世晴): キャラクター名 / 用語 (公式読みベース) |
+| [`core/works/anime/_minor.toml`](core/works/anime/_minor.toml) | 44 | 3.7 KB | アニメ/漫画 小規模作品 統合 (1作品1-3語、2026-06-21 consolidate) |
 | [`core/works/anime/jujutsu.toml`](core/works/anime/jujutsu.toml) | 34 | 2.8 KB | 呪術廻戦 (芥見下々): キャラクター名 / 用語 (公式読みベース) |
 | [`core/works/anime/haikyu.toml`](core/works/anime/haikyu.toml) | 28 | 2.4 KB | ハイキュー!! (古舘春一): キャラクター名 (公式読みベース) |
 | [`core/works/anime/heroaca.toml`](core/works/anime/heroaca.toml) | 28 | 2.5 KB | 僕のヒーローアカデミア (堀越耕平): キャラクター名 (公式読みベース) |
@@ -269,31 +266,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/anime/inuyasha.toml`](core/works/anime/inuyasha.toml) | 4 | 405 B | 犬夜叉 (高橋留美子): キャラクター名 |
 | [`core/works/anime/nurarihyon.toml`](core/works/anime/nurarihyon.toml) | 4 | 417 B | ぬらりひょんの孫: キャラクター名 |
 | [`core/works/anime/seinen.toml`](core/works/anime/seinen.toml) | 4 | 496 B | 青年漫画: キャラクター名 |
-| [`core/works/anime/aikatsu.toml`](core/works/anime/aikatsu.toml) | 3 | 334 B | アイカツ!: キャラクター名 |
-| [`core/works/anime/dororo.toml`](core/works/anime/dororo.toml) | 3 | 361 B | どろろ (手塚治虫): キャラクター名 |
-| [`core/works/anime/hokuto.toml`](core/works/anime/hokuto.toml) | 3 | 282 B | 北斗の拳: 用語 |
-| [`core/works/anime/madoka.toml`](core/works/anime/madoka.toml) | 3 | 324 B | まどか☆マギカ: キャラクター名 |
-| [`core/works/anime/oregairu.toml`](core/works/anime/oregairu.toml) | 3 | 345 B | 俺ガイル: キャラクター名 |
-| [`core/works/anime/oshinoko.toml`](core/works/anime/oshinoko.toml) | 3 | 447 B | 【推しの子】 (赤坂アカ/横槍メンゴ): キャラクター名 |
-| [`core/works/anime/sailormoon.toml`](core/works/anime/sailormoon.toml) | 3 | 400 B | 美少女戦士セーラームーン (武内直子): キャラクター名 |
-| [`core/works/anime/ansatsu.toml`](core/works/anime/ansatsu.toml) | 2 | 315 B | 暗殺教室 (松井優征): キャラクター名 |
-| [`core/works/anime/aoashi.toml`](core/works/anime/aoashi.toml) | 2 | 269 B | アオアシ (小林有吾): キャラクター名 |
-| [`core/works/anime/jigokuraku.toml`](core/works/anime/jigokuraku.toml) | 2 | 298 B | 地獄楽 (賀来ゆうじ): キャラクター名 |
-| [`core/works/anime/kaguya.toml`](core/works/anime/kaguya.toml) | 2 | 362 B | かぐや様は告らせたい (赤坂アカ): キャラクター名 |
-| [`core/works/anime/saint_seiya.toml`](core/works/anime/saint_seiya.toml) | 2 | 237 B | 聖闘士星矢: キャラクター名 |
-| [`core/works/anime/shingeki.toml`](core/works/anime/shingeki.toml) | 2 | 259 B | 進撃の巨人: 用語 |
-| [`core/works/anime/aoexorcist.toml`](core/works/anime/aoexorcist.toml) | 1 | 196 B | 青の祓魔師 (加藤和恵): キャラクター名 |
-| [`core/works/anime/baki.toml`](core/works/anime/baki.toml) | 1 | 236 B | 刃牙シリーズ (板垣恵介): キャラクター名 / 用語 (公式読みベース) |
-| [`core/works/anime/bocchi.toml`](core/works/anime/bocchi.toml) | 1 | 221 B | ぼっち・ざ・ろっく! (はまじあき): キャラクター名 |
-| [`core/works/anime/dandadan.toml`](core/works/anime/dandadan.toml) | 1 | 198 B | ダンダダン (龍幸伸): キャラクター名 |
-| [`core/works/anime/deathnote.toml`](core/works/anime/deathnote.toml) | 1 | 258 B | DEATH NOTE (大場つぐみ/小畑健): キャラクター名 (公式読みベース) |
-| [`core/works/anime/gegege_kitaro.toml`](core/works/anime/gegege_kitaro.toml) | 1 | 237 B | ゲゲゲの鬼太郎 (水木しげる): キャラクター名 (公式読みベース) |
-| [`core/works/anime/higanjima.toml`](core/works/anime/higanjima.toml) | 1 | 244 B | 彼岸島 (松本光司): タイトル / 用語 (公式読みベース) |
-| [`core/works/anime/kaiju8.toml`](core/works/anime/kaiju8.toml) | 1 | 181 B | 怪獣8号 (松本直也): キャラクター名 |
-| [`core/works/anime/touch.toml`](core/works/anime/touch.toml) | 1 | 183 B | あだち充作品: キャラクター名 |
-| [`core/works/anime/undeadunluck.toml`](core/works/anime/undeadunluck.toml) | 1 | 203 B | アンデッドアンラック (戸塚慶文): キャラクター名 |
-| [`core/works/anime/zombieland.toml`](core/works/anime/zombieland.toml) | 1 | 195 B | ゾンビランドサガ: キャラクター名 |
-| **小計** (73 ファイル) | **605** | **56 KB** | |
+| **小計** (50 ファイル) | **605** | **53 KB** | |
 
 #### VTuber
 
