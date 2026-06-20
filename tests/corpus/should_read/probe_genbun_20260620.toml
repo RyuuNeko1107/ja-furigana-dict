@@ -891,3 +891,28 @@ input = "一通り"
 mode = "hiragana"
 expected = "ひととおり"
 note = "旧 いちとおり"
+
+# ─── 会 default flip (本番VV seed80085) ───
+[[case]]
+input = "野鳥の会"
+mode = "hiragana"
+expected = "やちょうのかい"
+note = "会 default かい flip (旧 あ)"
+
+[[case]]
+input = "また会おう"
+mode = "hiragana"
+expected = "またあおう"
+note = "会 ガード (会う動詞=あ)"
+
+[[case]]
+input = "会社員"
+mode = "hiragana"
+expected = "かいしゃいん"
+note = "会 ガード (2字token かい)"
+
+[[case]]
+input = "半導体市場"
+mode = "hiragana"
+expected = "はんどうたいしじょう"
+note = "市場=しじょう business"
