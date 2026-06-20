@@ -25,13 +25,13 @@ git に commit されている master HEAD の状態を基準にする。
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,680** | **739 KB** |
 | [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **5,040** | **268 KB** |
-| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,489** | **111 KB** |
+| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,494** | **112 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **973** | **26 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,771** | **187 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **678** | **30 KB** |
-| **合計** | **51,631** | **1.33 MB** |
+| **合計** | **51,636** | **1.33 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -163,7 +163,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/works/<medium>/*` — 媒体 (game / literature 等) ごとに 1 作品 1 ファイル。 原則は公式読み (一般通称として定着していれば採録可)、 出典コメント必須、 古典読みは現代読み無い場合のみ。
 
-**合計**: 1,489 件 / 111 KB (genre 4 区分)
+**合計**: 1,494 件 / 112 KB (genre 4 区分)
 
 #### ゲーム
 
@@ -216,7 +216,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/works/anime/_minor.toml`](core/works/anime/_minor.toml) | 67 | 5.7 KB | アニメ/漫画 小規模作品 統合 (1作品1-3語、2026-06-21 consolidate) |
+| [`core/works/anime/_minor.toml`](core/works/anime/_minor.toml) | 68 | 5.8 KB | アニメ/漫画 小規模作品 統合 (1作品1-3語、2026-06-21 consolidate) |
 | [`core/works/anime/kimetsu.toml`](core/works/anime/kimetsu.toml) | 45 | 3.9 KB | 鬼滅の刃 (吾峠呼世晴): キャラクター名 / 用語 (公式読みベース) |
 | [`core/works/anime/conan.toml`](core/works/anime/conan.toml) | 44 | 3.7 KB | 名探偵コナン (青山剛昌): キャラクター名 (公式読みベース) |
 | [`core/works/anime/jujutsu.toml`](core/works/anime/jujutsu.toml) | 36 | 3.0 KB | 呪術廻戦 (芥見下々): キャラクター名 / 用語 (公式読みベース) |
@@ -224,8 +224,8 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/anime/bleach.toml`](core/works/anime/bleach.toml) | 30 | 2.7 KB | BLEACH (久保帯人) キャラ名・用語 |
 | [`core/works/anime/haikyu.toml`](core/works/anime/haikyu.toml) | 29 | 2.5 KB | ハイキュー!! (古舘春一): キャラクター名 (公式読みベース) |
 | [`core/works/anime/jojo.toml`](core/works/anime/jojo.toml) | 25 | 2.5 KB | ジョジョの奇妙な冒険 (荒木飛呂彦): キャラクター名 / 用語 (公式読みベース) |
+| [`core/works/anime/naruto.toml`](core/works/anime/naruto.toml) | 23 | 1.7 KB | NARUTO (岸本斉史): キャラクター名 (公式読みベース) |
 | [`core/works/anime/tenipuri.toml`](core/works/anime/tenipuri.toml) | 22 | 1.7 KB | テニスの王子様 (許斐剛): キャラクター名 |
-| [`core/works/anime/naruto.toml`](core/works/anime/naruto.toml) | 21 | 1.5 KB | NARUTO (岸本斉史): キャラクター名 (公式読みベース) |
 | [`core/works/anime/gintama.toml`](core/works/anime/gintama.toml) | 18 | 1.6 KB | 銀魂 (空知英秋): キャラクター名 / 用語 (公式読みベース) |
 | [`core/works/anime/onepiece.toml`](core/works/anime/onepiece.toml) | 18 | 1.5 KB | ONE PIECE (尾田栄一郎): キャラクター名 / 用語 |
 | [`core/works/anime/tokyo_revengers.toml`](core/works/anime/tokyo_revengers.toml) | 18 | 1.5 KB | 東京卍リベンジャーズ (和久井健): キャラクター名 (公式読みベース) |
@@ -237,6 +237,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/anime/houshin.toml`](core/works/anime/houshin.toml) | 11 | 825 B | 封神演義: キャラクター名 / 用語 |
 | [`core/works/anime/precure.toml`](core/works/anime/precure.toml) | 10 | 869 B | プリキュア: キャラクター名 |
 | [`core/works/anime/toaru.toml`](core/works/anime/toaru.toml) | 9 | 1003 B | とある魔術の禁書目録 / 超電磁砲 (鎌池和馬): キャラクター名 |
+| [`core/works/anime/tokyoghoul.toml`](core/works/anime/tokyoghoul.toml) | 9 | 927 B | 東京喰種 (石田スイ): キャラクター名 / 用語 |
 | [`core/works/anime/garupan.toml`](core/works/anime/garupan.toml) | 8 | 656 B | ガルパン: キャラクター名 |
 | [`core/works/anime/gochiusa.toml`](core/works/anime/gochiusa.toml) | 8 | 648 B | ごちうさ: キャラクター名 |
 | [`core/works/anime/kyoani.toml`](core/works/anime/kyoani.toml) | 8 | 751 B | 京アニ作品: キャラクター名 |
@@ -249,7 +250,6 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/anime/shoujo.toml`](core/works/anime/shoujo.toml) | 7 | 688 B | 少女漫画: キャラクター名 |
 | [`core/works/anime/soma.toml`](core/works/anime/soma.toml) | 7 | 595 B | 食戟のソーマ: キャラクター名 |
 | [`core/works/anime/tokusatsu.toml`](core/works/anime/tokusatsu.toml) | 7 | 695 B | 仮面ライダー: キャラクター名 |
-| [`core/works/anime/tokyoghoul.toml`](core/works/anime/tokyoghoul.toml) | 7 | 742 B | 東京喰種 (石田スイ): キャラクター名 / 用語 |
 | [`core/works/anime/kirara.toml`](core/works/anime/kirara.toml) | 6 | 676 B | きらら系アニメ: キャラクター名 |
 | [`core/works/anime/kokumin_anime.toml`](core/works/anime/kokumin_anime.toml) | 6 | 577 B | 国民的アニメ: キャラクター名 |
 | [`core/works/anime/saki.toml`](core/works/anime/saki.toml) | 6 | 503 B | 咲-Saki-: キャラクター名 |
@@ -268,7 +268,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/anime/inuyasha.toml`](core/works/anime/inuyasha.toml) | 4 | 405 B | 犬夜叉 (高橋留美子): キャラクター名 |
 | [`core/works/anime/nurarihyon.toml`](core/works/anime/nurarihyon.toml) | 4 | 417 B | ぬらりひょんの孫: キャラクター名 |
 | [`core/works/anime/seinen.toml`](core/works/anime/seinen.toml) | 4 | 496 B | 青年漫画: キャラクター名 |
-| **小計** (52 ファイル) | **689** | **61 KB** | |
+| **小計** (52 ファイル) | **694** | **61 KB** | |
 
 #### VTuber
 
