@@ -6750,6 +6750,15 @@ reading = "せま"
 char = "甘"
 default = "カン"
 
+# 接尾「X甘」 = あま (激甘/チョロ甘/ドＳ甘 slang。甘味/甘受 は 甘 が語頭=prev無し→カン)
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "あま"
+
+[[kanji.match]]
+prev_char_type = "カタカナ"
+reading = "あま"
+
 # 甘い/甘く/甘み/甘さ は Lindera で正だが 甘すぎ/甘そう/甘め/甘える 等が default カン に
 # 落ちる (2026-06-11 VV由来)。kun 送り仮名は あま。甘味/甘受 等 next=漢字 は カン 維持
 [[kanji.match]]
