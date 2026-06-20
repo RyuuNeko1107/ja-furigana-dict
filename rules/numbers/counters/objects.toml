@@ -769,6 +769,26 @@ default = "ダンメ"
 kanji_numeral = true
 # === end: 段目 ===
 
+# 作目 (映画/ゲーム): 一作目=いっさくめ/三作目=さんさくめ (目=め、旧 さくもく 化け)
+[counter."作目"]
+default = "サクメ"
+kanji_numeral = true
+[[counter."作目".rules]]
+last_digit = [1, 8, 0]
+suffix = "サクメ"
+sokuonize = true
+# === end: 作目 ===
+
+# 箱 (p系、 gacha/物): 一箱=いっぱこ/六箱=ろっぱこ/八箱=はっぱこ (1/6/8/10 半濁パコ)
+[counter."箱"]
+default = "ハコ"
+kanji_numeral = true
+[[counter."箱".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "パコ"
+sokuonize = true
+# === end: 箱 ===
+
 # 曲目 (演奏順): 一曲目=いっきょくめ/六曲目=ろっきょくめ/八曲目=はっきょくめ (k系促音、旧 きょくもく 化け)
 [counter."曲目"]
 default = "キョクメ"
