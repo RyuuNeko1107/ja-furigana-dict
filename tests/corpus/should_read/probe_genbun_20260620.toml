@@ -941,3 +941,28 @@ input = "何物"
 mode = "hiragana"
 expected = "なにもの"
 note = "物=もの (旧 なにぶつ)"
+
+# ─── 単漢字flip 罪/弾、七夕 (本番VV seed987654/13579) ───
+[[case]]
+input = "罪を犯す"
+mode = "hiragana"
+expected = "つみをおかす"
+note = "罪 default つみ flip (犯罪=ざい は token)"
+
+[[case]]
+input = "弾切れ"
+mode = "hiragana"
+expected = "たまぎれ"
+note = "弾 default たま flip (第二弾=だん は prev漢字)"
+
+[[case]]
+input = "第二弾"
+mode = "hiragana"
+expected = "だいにだん"
+note = "弾 ガード (漢字後=だん 序数)"
+
+[[case]]
+input = "来月七夕"
+mode = "hiragana"
+expected = "らいげつたなばた"
+note = "七夕 jukugo (旧 しちせき)"
