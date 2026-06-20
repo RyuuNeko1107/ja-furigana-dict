@@ -200,3 +200,37 @@ input = "赤飯"
 mode = "hiragana"
 expected = "せきはん"
 note = "飯=はん ガード"
+
+# ─── seed565656 ───
+
+# 巻 = まき (〜の巻 章題)
+[[case]]
+input = "転職の巻"
+mode = "hiragana"
+expected = "てんしょくのまき"
+note = "旧 のかん (巻 prev=の→まき)"
+
+[[case]]
+input = "上巻"
+mode = "hiragana"
+expected = "じょうかん"
+note = "巻 prev=漢字→カン ガード"
+
+# 形 = がた (カタカナ/native + 形)
+[[case]]
+input = "ハート形"
+mode = "hiragana"
+expected = "ハートがた"
+note = "旧 ハートかたち (カタカナ+形→ガタ)"
+
+[[case]]
+input = "星形"
+mode = "hiragana"
+expected = "ほしがた"
+note = "旧 ほしけい (native+形 jukugo)"
+
+[[case]]
+input = "三角形"
+mode = "hiragana"
+expected = "さんかくけい"
+note = "sino+形→ケイ ガード"

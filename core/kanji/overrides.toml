@@ -2737,6 +2737,11 @@ default = "カタチ"  # 単独 形=かたち (いい形/球の形)。三角形/
 prev_char_type = "漢字"
 reading = "ケイ"
 
+# カタカナ + 形 = ガタ (ハート形/ドーナツ形/ピラミッド形。native 卵形/星形 は jukugo)
+[[kanji.match]]
+prev_char_type = "カタカナ"
+reading = "ガタ"
+
 # 「値」: default 接尾辞 「チ」 (= 「数値 / 経験値 / 価値 / 平均値 / シード値 / 偏差値」)、
 # 「値段 / 値する / 値打ち」 等の訓読み 「ね / あたい」 は jukugo dict 1000 で覆う。
 [[kanji]]
@@ -7592,6 +7597,11 @@ default = "カン"
 [[kanji.match]]
 next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
 reading = "ま"
+
+# 「〜の巻」 (= 章/エピソード題、ドラえもん の巻) = まき。上巻/下巻=かん は prev 漢字で非干渉
+[[kanji.match]]
+prev_eq = "の"
+reading = "まき"
 
 # 「就」 default 「シュウ」 (= 就職/就任/就学/就労/就寝/去就)。
 # 動詞 「就く/就ける」 は okurigana 列挙で 「つ」 へ切替
