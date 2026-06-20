@@ -487,3 +487,28 @@ input = "早い者勝ちか"
 mode = "hiragana"
 expected = "はやいものがちか"
 note = "者勝ち=ものがち連濁 (か で再分割化け→entry lock)"
+
+# ─── seed935172 ───
+[[case]]
+input = "真ん中右"
+mode = "hiragana"
+expected = "まんなかみぎ"
+note = "右 suffix=みぎ (prev=漢字→ウ 撤去、画面右/一番右も救済)"
+
+[[case]]
+input = "座右の銘"
+mode = "hiragana"
+expected = "ざゆうのめい"
+note = "右 prev rule 撤去に伴い jukugo 化 (ガード)"
+
+[[case]]
+input = "右折"
+mode = "hiragana"
+expected = "うせつ"
+note = "右 語頭=ウ ガード"
+
+[[case]]
+input = "一足早い"
+mode = "hiragana"
+expected = "ひとあしはやい"
+note = "一足=ひとあし (旧 いっそく)"

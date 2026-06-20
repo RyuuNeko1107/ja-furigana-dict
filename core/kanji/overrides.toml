@@ -11370,10 +11370,8 @@ reading = "セイ"
 [[kanji]]
 char = "右"
 default = "みぎ"
-
-[[kanji.match]]
-prev_char_type = "漢字"
-reading = "ウ"
+# prev 漢字→ウ は撤去 (2026-06-20 本番VV): 画面右/一番右/真ん中右 = みぎ suffix を
+# 壊していた。ウ の実需は 左右/座右 のみ → jukugo 化。右折/右側 等は 右 語頭で非干渉。
 
 [[kanji]]
 char = "姓"
