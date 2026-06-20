@@ -680,3 +680,16 @@ input = "中旬"
 mode = "hiragana"
 expected = "ちゅうじゅん"
 note = "旬 prev=漢字→ジュン ガード"
+
+# ─── 自作長文 batch11 (R120) ───
+[[case]]
+input = "人目も憚らず"
+mode = "hiragana"
+expected = "ひとめもはばからず"
+note = "憚らず=はばから (旧 はばかりらず)"
+
+[[case]]
+input = "床に臥せる"
+mode = "hiragana"
+expected = "とこにふせる"
+note = "床=とこ idiom (床=ゆか floor がdefault)"
