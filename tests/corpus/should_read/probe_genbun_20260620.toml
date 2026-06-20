@@ -835,3 +835,28 @@ input = "傀儡政権"
 mode = "hiragana"
 expected = "かいらいせいけん"
 note = "傀儡=かいらい 現代 (傀儡師=くぐつし は維持)"
+
+# ─── 本番VV seed555: 氷flip/喪に服す/どん兵衛 ───
+[[case]]
+input = "氷を入れる"
+mode = "hiragana"
+expected = "こおりをいれる"
+note = "氷 default こおり flip"
+
+[[case]]
+input = "氷河期"
+mode = "hiragana"
+expected = "ひょうがき"
+note = "氷 ガード (漢字連結=ひょう)"
+
+[[case]]
+input = "喪に服す"
+mode = "hiragana"
+expected = "もにふくす"
+note = "喪=も (旧 そう)"
+
+[[case]]
+input = "どん兵衛"
+mode = "hiragana"
+expected = "どんべえ"
+note = "兵衛=べえ (旧 どんひょうえ)"

@@ -12827,8 +12827,9 @@ reading = "うじ"
 # 単独 + 助詞接続 → 「こおり」 (= 「氷が/氷の」 等)
 [[kanji]]
 char = "氷"
-default = "ヒョウ"
+default = "こおり"
 
+# 氷河/氷山/氷点/氷結/製氷 等 漢字連結は ヒョウ (単独 氷=こおり が dominant)
 [[kanji.match]]
 next_char_type = "漢字"
 reading = "ヒョウ"
