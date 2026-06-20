@@ -916,3 +916,28 @@ input = "半導体市場"
 mode = "hiragana"
 expected = "はんどうたいしじょう"
 note = "市場=しじょう business"
+
+# ─── 本番VV seed65536: 餌flip/何物/〜方=かた ───
+[[case]]
+input = "餌をあげる"
+mode = "hiragana"
+expected = "えさをあげる"
+note = "餌 default えさ flip"
+
+[[case]]
+input = "笑い方が変"
+mode = "hiragana"
+expected = "わらいかたがへん"
+note = "動詞+方=かた (旧 ほう)"
+
+[[case]]
+input = "強い方が勝つ"
+mode = "hiragana"
+expected = "つよいほうがかつ"
+note = "方 ガード (形容詞+方=ほう 比較)"
+
+[[case]]
+input = "何物"
+mode = "hiragana"
+expected = "なにもの"
+note = "物=もの (旧 なにぶつ)"

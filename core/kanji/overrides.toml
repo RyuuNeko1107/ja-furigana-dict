@@ -16506,12 +16506,7 @@ default = "もち"
 # 「餌」 default 「え」 (= 餌食/餌付け 等 jukugo)。単独 + 助詞接続 → 「えさ」
 [[kanji]]
 char = "餌"
-default = "え"
-
-# 餌が/餌を/餌だ/餌の/亭主の餌 等 単独名詞 → えさ (餌食=えじき/餌付け=えづけ は default え 維持)
-[[kanji.match]]
-next_starts_any = ["が", "を", "は", "に", "の", "で", "と", "も", "だ", "や"]
-reading = "えさ"
+default = "えさ"  # 単独名詞 餌=えさ (餌食=えじき/餌付け=えづけ は2字tokenで非干渉。2026-06-20 flip)
 
 [[kanji.match]]
 next_char_type = "記号"
