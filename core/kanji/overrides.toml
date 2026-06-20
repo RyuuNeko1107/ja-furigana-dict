@@ -705,7 +705,7 @@ char = "悪"
 default = "アク"
 
 [[kanji.match]]
-next_starts_any = ["い", "く", "か", "さ", "す", "そ", "け"]
+next_starts_any = ["い", "く", "か", "さ", "す", "そ", "け", "め"]
 reading = "わる"
 [[kanji]]
 char = "嫌"
@@ -2410,10 +2410,8 @@ default = "ミャク"
 [[kanji]]
 char = "技"
 default = "わざ"
-
-[[kanji.match]]
-prev_char_type = "漢字"
-reading = "ギ"
+# prev漢字→ギ は撤去 (2026-06-20): 技術/競技/演技/特技 は2字tokenで自動 ぎ、
+# rule は「便利技/快適技」等 接尾「〜技」(=わざ) を ぎ化け させる害のみだった
 
 # 「管」: unihan default 「くだ」 → カン系 14 件 (= 管理 / 管轄 / 配管 /
 # 血管 / 管楽器 / 鉄管 等)。 クダ系 1 件 (= 手練手管=テレンテクダ) は
