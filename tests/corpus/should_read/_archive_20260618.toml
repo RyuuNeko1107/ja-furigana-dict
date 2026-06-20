@@ -1,0 +1,1216 @@
+# === 統合 probe アーカイブ 20260618 (元 21 ファイル、2026-06-21 consolidate) ===
+
+# ─── (元: probe_ateji2_20260618.toml) ───
+# 2026-06-18 自作例文 probe round 13 (口語/当て字 + 仄/燥)。
+#
+# - 仄々=ほのぼの (仄 が IPADIC で「かたむく」 化け、 round2 の 仄暗い と同根)。
+# - 燥ぐ=はしゃぐ ([[kanji]] 燥 に next 送り仮名→はしゃ、 乾燥/焦燥 は ソウ 維持)。
+#
+# 几帳面=きちょうめん / 弄り=いじり / 律儀 / 我儘 等は ja 元から正読。
+# 吃逆 (しゃっくり) は稀な書字で保留。
+
+[[case]]
+input = "仄々とする"
+mode = "hiragana"
+expected = "ほのぼのとする"
+note = "旧 かたむくがたむく"
+
+[[case]]
+input = "燥いでいる"
+mode = "hiragana"
+expected = "はしゃいでいる"
+note = "旧 そういで"
+
+[[case]]
+input = "燥ぐ子供"
+mode = "hiragana"
+expected = "はしゃぐこども"
+
+[[case]]
+input = "乾燥する"
+mode = "hiragana"
+expected = "かんそうする"
+note = "ソウ ガード"
+
+[[case]]
+input = "焦燥感"
+mode = "hiragana"
+expected = "しょうそうかん"
+note = "ソウ ガード"
+
+[[case]]
+input = "仄暗い"
+mode = "hiragana"
+expected = "ほのぐらい"
+
+# ─── (元: probe_ateji_adverb_20260618.toml) ───
+# 2026-06-18 自作例文 probe round 6 (当て字 副詞 / 接続詞)。
+# IPADIC が音読み or repetition で化けるものを jukugo で救済。
+#
+# - 愈々=イヨイヨ (愈 単独が full読み いよいよ で 々 が二重化していた)
+# - 尚且つ=ナオカツ / 尚更=ナオサラ (尚 default ショウ → しょうかつ)
+# - 彼方此方=アチコチ (= かなたこれかた と破損)
+# - 直向き=ヒタムキ (直 default ちょく → ちょくむき)
+# - 就中=ナカンズク (round4 で追加済、構造整理ついでに再掲)
+
+[[case]]
+input = "愈々始まる"
+mode = "hiragana"
+expected = "いよいよはじまる"
+note = "旧 いよいよいよいよ"
+
+[[case]]
+input = "尚且つ安い"
+mode = "hiragana"
+expected = "なおかつやすい"
+note = "旧 しょうかつ"
+
+[[case]]
+input = "尚更だ"
+mode = "hiragana"
+expected = "なおさらだ"
+
+[[case]]
+input = "彼方此方探す"
+mode = "hiragana"
+expected = "あちこちさがす"
+note = "旧 かなたこれかた"
+
+[[case]]
+input = "直向きな努力"
+mode = "hiragana"
+expected = "ひたむきなどりょく"
+note = "旧 ちょくむき"
+
+# ─── 既存挙動ガード (仮令/所為/案の定 は ja が元から正読) ───
+[[case]]
+input = "仮令失敗しても"
+mode = "hiragana"
+expected = "たとえしっぱいしても"
+
+[[case]]
+input = "所為で負けた"
+mode = "hiragana"
+expected = "せいでまけた"
+
+[[case]]
+input = "案の定だった"
+mode = "hiragana"
+expected = "あんのじょうだった"
+
+# ─── (元: probe_colors_20260618.toml) ───
+# 2026-06-18 自作例文 probe round 11 (訓色名 + 色=いろ)。
+# 「X色」 で 色=いろ になる訓色名のうち Lindera 未収録で しょく に化けていた分を jukugo 化。
+# 山吹色/茜色/瑠璃色/紫色 等は Lindera token で既に いろ。 原色/景色/白色 は しょく/けしき。
+# 複合動詞 (取り扱う/立ち振る舞い) や 気障=きざ は ja 元から正読。
+
+[[case]]
+input = "桜色の花びら"
+mode = "hiragana"
+expected = "さくらいろのはなびら"
+note = "旧 さくらしょく"
+
+[[case]]
+input = "虹色に輝く"
+mode = "hiragana"
+expected = "にじいろにかがやく"
+note = "旧 にじしょく"
+
+[[case]]
+input = "萌黄色の服"
+mode = "hiragana"
+expected = "もえぎいろのふく"
+note = "旧 もえぎしょく"
+
+[[case]]
+input = "黄土色の壁"
+mode = "hiragana"
+expected = "おうどいろのかべ"
+note = "旧 おうどしょく"
+
+[[case]]
+input = "柑子色"
+mode = "hiragana"
+expected = "こうじいろ"
+
+# ─── しょく/けしき 維持ガード ───
+[[case]]
+input = "原色を使う"
+mode = "hiragana"
+expected = "げんしょくをつかう"
+
+[[case]]
+input = "景色が良い"
+mode = "hiragana"
+expected = "けしきがよい"
+
+[[case]]
+input = "白色矮星"
+mode = "hiragana"
+expected = "はくしょくわいせい"
+
+[[case]]
+input = "山吹色"
+mode = "hiragana"
+expected = "やまぶきいろ"
+
+# ─── (元: probe_counter_suffix_20260618.toml) ───
+# 2026-06-18 自作例文 probe round 20 (序数/分 系)。
+#
+# - 一番目=いちばんめ (二番目以降は counter で ばんめ だが 一番目 だけ
+#   一番(Lindera いちばん)+目もく に化けていた)。
+# - 八分目=はちぶんめ (腹八分目。分 を時刻 はっぷん と誤読していた)。
+#
+# 分 の多義は既知の難問: time.toml [counter."分"] は意図的 kanji_numeral=false
+# (充分/五分/三分の一 の競合回避、別タスク)。本 round は固定熟語のみ救済。
+# 五分五分=ごぶ / 七分袖=しちぶ / 百分の一=ひゃくぶん / 五分刈り=ごぶ は ja 正読。
+
+[[case]]
+input = "一番目に並ぶ"
+mode = "hiragana"
+expected = "いちばんめにならぶ"
+note = "旧 いちばんもく"
+
+[[case]]
+input = "二番目の人"
+mode = "hiragana"
+expected = "にばんめのひと"
+
+[[case]]
+input = "腹八分目"
+mode = "hiragana"
+expected = "はらはちぶんめ"
+note = "旧 はらはっぷんめ"
+
+[[case]]
+input = "八分目まで"
+mode = "hiragana"
+expected = "はちぶんめまで"
+
+# ─── ja 正読ガード ───
+[[case]]
+input = "五分五分の勝負"
+mode = "hiragana"
+expected = "ごぶごぶのしょうぶ"
+
+[[case]]
+input = "七分袖のシャツ"
+mode = "hiragana"
+expected = "しちぶそでのシャツ"
+
+[[case]]
+input = "百分の一"
+mode = "hiragana"
+expected = "ひゃくぶんのいち"
+
+# ─── (元: probe_counters2_20260618.toml) ───
+# 2026-06-18 自作例文 probe round 9 (数字+助数詞 counter 第2弾)。
+# 漢数字 bare で促音/連濁/読みが抜けていた助数詞を objects.toml に追加 (kanji_numeral)。
+# 束/張/棹/石 は 訓/音 が文脈で衝突する (一束=ひとたば/いっそく 等) ため不採用。
+# 尾 (いちび) は既に正読。
+
+# ─── 桁 (1/2 和語、6/8/10 促音) ───
+[[case]]
+input = "六桁"
+mode = "hiragana"
+expected = "ろっけた"
+note = "旧 ろくけた"
+
+[[case]]
+input = "一桁"
+mode = "hiragana"
+expected = "ひとけた"
+note = "和語維持ガード"
+
+# ─── 客 / 脚 (1/6/8/10 促音) ───
+[[case]]
+input = "六客"
+mode = "hiragana"
+expected = "ろっきゃく"
+note = "旧 ろくきゃく"
+
+[[case]]
+input = "一脚の椅子"
+mode = "hiragana"
+expected = "いっきゃくのいす"
+note = "旧 いちきゃく"
+
+[[case]]
+input = "三脚"
+mode = "hiragana"
+expected = "さんきゃく"
+
+# ─── 棟 (1/8/10 促音) ───
+[[case]]
+input = "一棟"
+mode = "hiragana"
+expected = "いっとう"
+note = "旧 いちとう"
+
+[[case]]
+input = "六棟"
+mode = "hiragana"
+expected = "ろくとう"
+
+# ─── 帖 (ジョウ) ───
+[[case]]
+input = "三帖の部屋"
+mode = "hiragana"
+expected = "さんじょうのへや"
+note = "旧 さんちょう"
+
+# ─── 反 (タン、1/8/10 促音) ───
+[[case]]
+input = "三反の土地"
+mode = "hiragana"
+expected = "さんたんのとち"
+note = "旧 さんはん (田=た/でん は別件で本 case では避ける)"
+
+[[case]]
+input = "違反する"
+mode = "hiragana"
+expected = "いはんする"
+note = "数字でないので counter 非発火ガード"
+
+# ─── 貫 (1/6/8/10 促音) ───
+[[case]]
+input = "六貫"
+mode = "hiragana"
+expected = "ろっかん"
+note = "旧 ろくかん"
+
+[[case]]
+input = "一貫した姿勢"
+mode = "hiragana"
+expected = "いっかんしたしせい"
+note = "一貫性も いっかん で同じ"
+
+# ─── 片 (1/6/8/10 促音+ペン、3 ペン) ───
+[[case]]
+input = "三片"
+mode = "hiragana"
+expected = "さんぺん"
+note = "旧 さんへん"
+
+[[case]]
+input = "六片"
+mode = "hiragana"
+expected = "ろっぺん"
+
+# ─── 斗 (1/8/10 促音) ───
+[[case]]
+input = "一斗缶"
+mode = "hiragana"
+expected = "いっとかん"
+note = "旧 いちとかん"
+
+# ─── (元: probe_counters_20260618.toml) ───
+# 2026-06-18 自作例文 probe round 8 (数字+助数詞 counter)。
+# counter regex は dict (simple.keys + counter keys) から動的構築、kanji_numeral
+# フラグが漢数字 bare regex を gate する (patterns.rs build_counter_regexes)。
+#
+# - 艘: simple.toml→objects.toml へ移動 (kanji_numeral opt-in)。三艘=さんふね を解消。
+#       1/8/10 促音 (いっそう/はっそう)、六艘=ろくそう。
+# - 斤: 新規 counter。1/6/8/10 促音 (いっきん/ろっきん/はっきん)。
+# - 俵: 新規 counter。1/6/8/10 促音+半濁 (いっぴょう/ろっぴょう)、3 連濁 (さんびょう)。
+# - 足: counter 化は「一足=ひとあし / 二足=にそく」 衝突で不採用。二足歩行/四足歩行 のみ jukugo。
+
+# ─── 艘 ───
+[[case]]
+input = "一艘の船"
+mode = "hiragana"
+expected = "いっそうのふね"
+note = "旧 いちふね"
+
+[[case]]
+input = "三艘並ぶ"
+mode = "hiragana"
+expected = "さんそうならぶ"
+
+[[case]]
+input = "六艘"
+mode = "hiragana"
+expected = "ろくそう"
+
+# ─── 斤 ───
+[[case]]
+input = "一斤のパン"
+mode = "hiragana"
+expected = "いっきんのパン"
+note = "旧 いちきん"
+
+[[case]]
+input = "六斤"
+mode = "hiragana"
+expected = "ろっきん"
+
+# ─── 俵 ───
+[[case]]
+input = "一俵の米"
+mode = "hiragana"
+expected = "いっぴょうのこめ"
+note = "旧 いちひょう"
+
+[[case]]
+input = "三俵"
+mode = "hiragana"
+expected = "さんびょう"
+
+[[case]]
+input = "六俵"
+mode = "hiragana"
+expected = "ろっぴょう"
+
+[[case]]
+input = "土俵入り"
+mode = "hiragana"
+expected = "どひょういり"
+note = "土 は数字でないので counter 非発火ガード"
+
+# ─── 足 (jukugo 固定、counter 不採用) ───
+[[case]]
+input = "二足歩行"
+mode = "hiragana"
+expected = "にそくほこう"
+note = "旧 にあし"
+
+[[case]]
+input = "一足先に"
+mode = "hiragana"
+expected = "ひとあしさきに"
+note = "足 を counter 化しないので ひとあし 維持"
+
+# ─── (元: probe_homograph2_20260618.toml) ───
+# 2026-06-18 自作例文 probe round 3 (prev=の 文脈 homograph)。
+#
+# - 葉: default ヨウ。 文末で「の葉」 (公孫樹の葉/桜の葉) が default ヨウ に化けるため
+#       prev_eq="の"→は を追加 (既存の next 助詞→は と併せ end-of-string を網羅)。
+#       葉緑素/紅葉/落葉 等の音読み熟語は維持。
+# - 一途: default イチズ (一途な/一途に)。 「〜の一途 (をたどる)」 は prev_eq="の"→イット。
+
+# ─── 葉 (prev=の → は) ───
+[[case]]
+input = "公孫樹の葉"
+mode = "hiragana"
+expected = "いちょうのは"
+note = "旧 …のよう"
+
+[[case]]
+input = "葉が緑だ"
+mode = "hiragana"
+expected = "はがみどりだ"
+
+[[case]]
+input = "葉緑素"
+mode = "hiragana"
+expected = "ようりょくそ"
+note = "音読み熟語ガード"
+
+[[case]]
+input = "落葉を掃く"
+mode = "hiragana"
+expected = "らくようをはく"
+
+# ─── 一途 (prev=の → イット) ───
+[[case]]
+input = "凋落の一途"
+mode = "hiragana"
+expected = "ちょうらくのいっと"
+note = "旧 いちず"
+
+[[case]]
+input = "悪化の一途をたどる"
+mode = "hiragana"
+expected = "あっかのいっとをたどる"
+
+[[case]]
+input = "一途な思い"
+mode = "hiragana"
+expected = "いちずなおもい"
+note = "イチズ 維持ガード"
+
+[[case]]
+input = "一途に信じる"
+mode = "hiragana"
+expected = "いちずにしんじる"
+
+# ─── (元: probe_homograph_20260618.toml) ───
+# 2026-06-18 自作例文 probe 由来。homograph default 修正 3 件 + 非干渉ガード。
+#
+# - 形相: IPADIC default ケイソウ (= 哲学のエイドス、 稀) → 一般語 ギョウソウ に
+# - 匠:   [[kanji]] default ショウ のまま、 助詞続き standalone (匠の技) を タクミ に
+#         (巨匠/師匠/名匠/意匠 は Lindera 2-char token で吸収、 単漢字 match 非発火)
+# - 追従笑い: ツイショウワライ (= へつらい笑い)。 「追従する」 等は ツイジュウ 維持
+
+# ─── 修正本体 ───
+[[case]]
+input = "形相が変わる"
+mode = "hiragana"
+expected = "ぎょうそうがかわる"
+note = "旧 けいそう"
+
+[[case]]
+input = "匠の技"
+mode = "hiragana"
+expected = "たくみのわざ"
+note = "旧 しょう"
+
+[[case]]
+input = "匠の味"
+mode = "hiragana"
+expected = "たくみのあじ"
+
+[[case]]
+input = "追従笑い"
+mode = "hiragana"
+expected = "ついしょうわらい"
+note = "旧 ついじゅう"
+
+# ─── 非干渉ガード ───
+[[case]]
+input = "巨匠の作品"
+mode = "hiragana"
+expected = "きょしょうのさくひん"
+
+[[case]]
+input = "師匠の教え"
+mode = "hiragana"
+expected = "ししょうのおしえ"
+
+[[case]]
+input = "意匠登録"
+mode = "hiragana"
+expected = "いしょうとうろく"
+
+[[case]]
+input = "鷹匠"
+mode = "hiragana"
+expected = "たかじょう"
+
+[[case]]
+input = "追従する機能"
+mode = "hiragana"
+expected = "ついじゅうするきのう"
+note = "追従 単独は ツイジュウ 維持"
+
+# ─── (元: probe_ipadic_misread_20260618.toml) ───
+# 2026-06-18 自作例文 probe round 12 (IPADIC 誤マッピング / 接尾辞)。
+#
+# - 乾物=カンブツ (IPADIC が ヒモノ と誤読。 干物=ひもの とは別語)。
+# - 依代=ヨリシロ (IPADIC は 依イ+代ダイ で いだい)。
+#
+# 人気がない=ひとけ / 十八番=おはこ / 出来立て=できたて / 続柄=つづきがら /
+# 貼付=ちょうふ は ja 元から正読。名代 (なだい/みょうだい)・月代 (さかやき)・
+# 寒気 (さむけ/かんき) は文脈曖昧 or 超ニッチで保留。
+
+[[case]]
+input = "乾物屋"
+mode = "hiragana"
+expected = "かんぶつや"
+note = "旧 ひものや"
+
+[[case]]
+input = "乾物を買う"
+mode = "hiragana"
+expected = "かんぶつをかう"
+
+[[case]]
+input = "干物を焼く"
+mode = "hiragana"
+expected = "ひものをやく"
+note = "干物=ひもの は別語、維持"
+
+[[case]]
+input = "依代になる"
+mode = "hiragana"
+expected = "よりしろになる"
+note = "旧 いだい"
+
+# ─── ja 元から正読 (ガード) ───
+[[case]]
+input = "人気がない場所"
+mode = "hiragana"
+expected = "ひとけがないばしょ"
+
+[[case]]
+input = "十八番を披露"
+mode = "hiragana"
+expected = "おはこをひろう"
+
+# ─── (元: probe_jitsu_mi_20260618.toml) ───
+# 2026-06-18 自作例文 probe round 17 (実=み/じつ の prev/next 整理)。
+# 既存 next_starts_any に「の」 が入っていて 実の所→みのところ (誤) になり、
+# 逆に 桑の実 (実 が文末) は拾えず じつ に化けていた。
+# → next から「の」 除外 + prev_eq="の"→み 追加で両方修正。
+#
+# 動植物/食材名 (鰯/鯖/鰤/烏賊/牡蠣/椎茸/舞茸/占地=しめじ/生姜/山葵/辣韮) は ja 正読。
+
+# ─── の の後の 実 = み (果実) ───
+[[case]]
+input = "山椒の実"
+mode = "hiragana"
+expected = "さんしょうのみ"
+note = "旧 さんしょうのじつ"
+
+[[case]]
+input = "桑の実"
+mode = "hiragana"
+expected = "くわのみ"
+
+[[case]]
+input = "栗の実"
+mode = "hiragana"
+expected = "くりのみ"
+
+# ─── 実+助詞 = み ───
+[[case]]
+input = "実が成る"
+mode = "hiragana"
+expected = "みがなる"
+
+# ─── 実の親/実の所 = じつ (next の 除外で修正) ───
+[[case]]
+input = "実の所"
+mode = "hiragana"
+expected = "じつのところ"
+note = "旧 みのところ"
+
+[[case]]
+input = "実の親"
+mode = "hiragana"
+expected = "じつのおや"
+
+# ─── じつ 維持ガード ───
+[[case]]
+input = "実力を出す"
+mode = "hiragana"
+expected = "じつりょくをだす"
+
+[[case]]
+input = "実は違う"
+mode = "hiragana"
+expected = "じつはちがう"
+
+# ─── (元: probe_jukujikun_time_20260618.toml) ───
+# 2026-06-18 自作例文 probe round 14 (日付/時刻 熟字訓 + 〜時 連濁)。
+#
+# - 皐月晴れ=さつきばれ (五月晴れ は既に正読だが皐月表記は連濁抜け)。
+# - 名詞+時 (= 時刻でなく「〜のとき」) は どき 連濁: 昼時=ひるどき (時刻 counter じ に化け)、
+#   日暮れ時/夕暮れ時=どき (とき 連濁抜け)。潮時/引け時 は Lindera で正読、
+#   動詞+時 (寝る時=とき) は連濁しないので維持。
+#
+# 一昨年=おととし / 二十歳=はたち / 神無月=かんなづき / 卯月=うづき /
+# 朝餉=あさげ / 五月雨=さみだれ は ja 元から正読。
+
+[[case]]
+input = "皐月晴れ"
+mode = "hiragana"
+expected = "さつきばれ"
+note = "旧 さつきはれ"
+
+[[case]]
+input = "昼時に混む"
+mode = "hiragana"
+expected = "ひるどきにこむ"
+note = "旧 ひるじ"
+
+[[case]]
+input = "日暮れ時"
+mode = "hiragana"
+expected = "ひぐれどき"
+note = "旧 ひぐれとき"
+
+[[case]]
+input = "夕暮れ時"
+mode = "hiragana"
+expected = "ゆうぐれどき"
+
+# ─── ガード ───
+[[case]]
+input = "寝る時"
+mode = "hiragana"
+expected = "ねるとき"
+note = "動詞+時 は とき 維持"
+
+[[case]]
+input = "潮時"
+mode = "hiragana"
+expected = "しおどき"
+
+[[case]]
+input = "五月晴れ"
+mode = "hiragana"
+expected = "さつきばれ"
+
+# ─── (元: probe_kun_kanji2_20260618.toml) ───
+# 2026-06-18 自作例文 probe round 4 (単漢字訓 standalone / 送り仮名 / 文語)。
+#
+# - 唇: default シン (口唇/読唇/唇音) + 助詞続き standalone → くちびる
+# - 露: default つゆ + prev漢字→ロ は既存。 送り仮名「わ」 続き「露わ=あらわ」 を
+#       next_starts_any=["わ"]→あら で追加 (露 が あら、 +わ で あらわ)
+# - 就中 = なかんずく (文語、 IPADIC は シュウチュウ)
+
+# ─── 唇 ───
+[[case]]
+input = "唇を尖らせる"
+mode = "hiragana"
+expected = "くちびるをとがらせる"
+note = "旧 しん"
+
+[[case]]
+input = "唇が荒れる"
+mode = "hiragana"
+expected = "くちびるがあれる"
+
+[[case]]
+input = "口唇ヘルペス"
+mode = "hiragana"
+expected = "こうしんヘルペス"
+note = "音読み熟語ガード"
+
+[[case]]
+input = "読唇術"
+mode = "hiragana"
+expected = "どくしんじゅつ"
+
+# ─── 露わ ───
+[[case]]
+input = "怒りを露わにする"
+mode = "hiragana"
+expected = "いかりをあらわにする"
+note = "旧 つゆわ"
+
+[[case]]
+input = "露わな感情"
+mode = "hiragana"
+expected = "あらわなかんじょう"
+
+[[case]]
+input = "朝露が光る"
+mode = "hiragana"
+expected = "あさつゆがひかる"
+note = "つゆ ガード"
+
+[[case]]
+input = "暴露される"
+mode = "hiragana"
+expected = "ばくろされる"
+note = "ロ ガード"
+
+# ─── 就中 ───
+[[case]]
+input = "就中これが良い"
+mode = "hiragana"
+expected = "なかんずくこれがよい"
+note = "旧 しゅうちゅう"
+
+# ─── (元: probe_kun_kanji3_20260618.toml) ───
+# 2026-06-18 自作例文 probe round 5 (単漢字訓 文末 / 送り仮名)。
+#
+# - 指: default シ + 既存 match (指す→さ / 本指→ゆび / の+指→ゆび / 助詞→ゆび)。
+#       「細い指/長い指/嫋やかな指」 (= 形容詞活用語尾 い/な の後で 指 が文末) が
+#       default シ に化けるため prev_ends_any を ["の","い","な"] に拡張。
+# - 厳: default ゲン。 「厳めしい=いかめしい」 を next_starts_any=["め"]→いか で追加
+#       (厳か=おごそか は Lindera token、 厳格/威厳/厳しい は維持)。
+
+# ─── 指 (形容詞+指 文末) ───
+[[case]]
+input = "細い指"
+mode = "hiragana"
+expected = "ほそいゆび"
+note = "旧 ほそいし"
+
+[[case]]
+input = "長い指"
+mode = "hiragana"
+expected = "ながいゆび"
+
+[[case]]
+input = "指示を出す"
+mode = "hiragana"
+expected = "しじをだす"
+note = "シ 音熟語ガード"
+
+[[case]]
+input = "親指を立てる"
+mode = "hiragana"
+expected = "おやゆびをたてる"
+
+# ─── 厳めしい ───
+[[case]]
+input = "厳めしい門構え"
+mode = "hiragana"
+expected = "いかめしいもんがまえ"
+note = "旧 げんめしい"
+
+[[case]]
+input = "厳かな式典"
+mode = "hiragana"
+expected = "おごそかなしきてん"
+note = "おごそか ガード"
+
+[[case]]
+input = "厳格な父"
+mode = "hiragana"
+expected = "げんかくなちち"
+note = "ゲン ガード"
+
+# ─── (元: probe_kun_kanji4_20260618.toml) ───
+# 2026-06-18 自作例文 probe round 7 (単漢字訓 standalone)。
+# 連声 (観音/反応/天皇/因縁/順応/帰依/出納/建立) と 物体系難読 (柵/鋸/鎬/鉋/罠/砦/楔)
+# は ja が既に全て正読を確認 (= この vein は成熟)。本 round の実バグは 庇 のみ。
+#
+# - 庇: default ヒ (庇護/庇蔭) + 動詞 庇う→かば は既存。 名詞「庇の下/庇が長い」 =
+#       ひさし を next_starts_any 助詞→ひさし で追加。
+
+[[case]]
+input = "庇の下で雨宿り"
+mode = "hiragana"
+expected = "ひさしのしたであまやどり"
+note = "旧 ひのした"
+
+[[case]]
+input = "庇が長い"
+mode = "hiragana"
+expected = "ひさしがながい"
+
+[[case]]
+input = "庇護する"
+mode = "hiragana"
+expected = "ひごする"
+note = "ヒ ガード"
+
+[[case]]
+input = "上司を庇う"
+mode = "hiragana"
+expected = "じょうしをかばう"
+note = "動詞 かば ガード"
+
+# ─── ja が元から正読 (回帰ガード) ───
+[[case]]
+input = "柵を越える"
+mode = "hiragana"
+expected = "さくをこえる"
+
+[[case]]
+input = "鎬を削る"
+mode = "hiragana"
+expected = "しのぎをけずる"
+
+[[case]]
+input = "鋸で切る"
+mode = "hiragana"
+expected = "のこぎりできる"
+
+# ─── (元: probe_kun_kanji5_20260618.toml) ───
+# 2026-06-18 自作例文 probe round 10 (単漢字訓 standalone)。
+# 物体/自然系単漢字は大半 ja 正読 (畝/網/渦/苗/茎/蕾/鞘/弓/矢/刃/縄/栓/蓋 等)。
+# 実バグは 田/鞭 の 2 字 (= default 音読みだが standalone は訓名詞)。
+#
+# - 田: default デン (水田/油田/田園) + 助詞続き standalone → た (田を耕す/田が広がる)。
+#       人名 山田/田中、音熟語 水田/塩田/炭田 は Lindera token で維持。
+# - 鞭: default ベン (鞭撻/教鞭/先鞭) + 助詞続き standalone → むち (鞭を振るう)。
+
+# ─── 田 ───
+[[case]]
+input = "田を耕す"
+mode = "hiragana"
+expected = "たをたがやす"
+note = "旧 でん"
+
+[[case]]
+input = "田が広がる"
+mode = "hiragana"
+expected = "たがひろがる"
+
+[[case]]
+input = "水田が広がる"
+mode = "hiragana"
+expected = "すいでんがひろがる"
+note = "デン 音熟語ガード"
+
+[[case]]
+input = "山田さん"
+mode = "hiragana"
+expected = "やまださん"
+note = "人名ガード"
+
+[[case]]
+input = "田園風景"
+mode = "hiragana"
+expected = "でんえんふうけい"
+
+# ─── 鞭 ───
+[[case]]
+input = "鞭を振るう"
+mode = "hiragana"
+expected = "むちをふるう"
+note = "旧 べん"
+
+[[case]]
+input = "教鞭をとる"
+mode = "hiragana"
+expected = "きょうべんをとる"
+note = "ベン 音熟語ガード"
+
+[[case]]
+input = "鞭撻を頂く"
+mode = "hiragana"
+expected = "べんたつをいただく"
+
+# ─── (元: probe_kun_kanji_20260618.toml) ───
+# 2026-06-18 自作例文 probe round 2 (送り仮名動詞 / 単漢字訓 / 難読)。
+#
+# - 籠: 動詞 籠もる=こもる (next も→コ)。 鳥籠=とりかご / 籠城=ろうじょう は
+#       prev_char_type=漢字→ロウ heuristic 誤爆を jukugo で救済。 灯籠=とうろう は維持
+# - 梁: default リョウ→ハリ に反転 (= 建物のはり が単独主用法)。 prev 漢字→リョウ で
+#       棟梁/橋梁 を救済、 梁山泊 は Lindera token
+# - 仄暗い=ほのぐらい (IPADIC が 仄→「かたむく」 と誤読)
+
+# ─── 籠 ───
+[[case]]
+input = "部屋に籠もる"
+mode = "hiragana"
+expected = "へやにこもる"
+note = "旧 かごもる"
+
+[[case]]
+input = "殻に籠もった"
+mode = "hiragana"
+expected = "からにこもった"
+
+[[case]]
+input = "鳥籠を買う"
+mode = "hiragana"
+expected = "とりかごをかう"
+note = "旧 とりろう"
+
+[[case]]
+input = "籠城する"
+mode = "hiragana"
+expected = "ろうじょうする"
+note = "旧 かごじょう"
+
+[[case]]
+input = "灯籠を飾る"
+mode = "hiragana"
+expected = "とうろうをかざる"
+note = "prev漢字→ロウ 維持ガード"
+
+# ─── 梁 ───
+[[case]]
+input = "屋根の梁"
+mode = "hiragana"
+expected = "やねのはり"
+note = "旧 りょう"
+
+[[case]]
+input = "梁が落ちる"
+mode = "hiragana"
+expected = "はりがおちる"
+
+[[case]]
+input = "棟梁を務める"
+mode = "hiragana"
+expected = "とうりょうをつとめる"
+note = "prev漢字→リョウ ガード"
+
+[[case]]
+input = "橋梁工事"
+mode = "hiragana"
+expected = "きょうりょうこうじ"
+
+[[case]]
+input = "梁山泊"
+mode = "hiragana"
+expected = "りょうざんぱく"
+note = "Lindera token ガード"
+
+# ─── 仄暗い ───
+[[case]]
+input = "仄暗い"
+mode = "hiragana"
+expected = "ほのぐらい"
+note = "旧 かたむくくらい"
+
+# ─── (元: probe_multidigit_days_20260618.toml) ───
+# 2026-06-18 自作例文 probe 由来。多桁数字末尾の「N日」が和語日付読み (イツカ /
+# ムイカ / ナノカ / ヨウカ / ココノカ / トオカ / ハツカ) に化けるバグ修正。
+#
+# 「五日 = イツカ」 等は単独日付 (= 暦の 5 日 / 5 日間) のみ。 「三百六十五日 = 365 日」
+# のような多桁 counter では 数字読み + ニチ (= ゴニチ) が正。 各 date-jukugo entry に
+# prev_ends_any = ["十","百","千","万"] guard を追加 (= 直前 number token の末尾が
+# place 文字なら音読み)。 prev_eq でなく prev_ends_any なのは数値 parser が「三百六十」
+# を 1 token 化するため (= 末尾一致で「二百」「三百六十」を拾う)。
+#
+# 四日 / 二十日 / 十日 は「百以上」 prefix のみ音読み化:
+#   - 十四日 = ジュウヨッカ / 二十四日 = ニジュウヨッカ は和語が定着 → 十 prefix では維持
+#   - 二百十日 (暦) も一般 TTS では ニヒャクジュウニチ で読まれるため こちらに揃える
+
+# ─── 多桁 counter = 音読み + ニチ ───
+[[case]]
+input = "三百六十五日"
+mode = "hiragana"
+expected = "さんびゃくろくじゅうごにち"
+note = "旧 …いつか"
+
+[[case]]
+input = "二百六日"
+mode = "hiragana"
+expected = "にひゃくろくにち"
+note = "旧 …むいか"
+
+[[case]]
+input = "三十七日"
+mode = "hiragana"
+expected = "さんじゅうしちにち"
+note = "旧 …なのか"
+
+[[case]]
+input = "五十八日"
+mode = "hiragana"
+expected = "ごじゅうはちにち"
+note = "旧 …ようか"
+
+[[case]]
+input = "九十九日"
+mode = "hiragana"
+expected = "きゅうじゅうくにち"
+note = "旧 …ここのか"
+
+[[case]]
+input = "十五日"
+mode = "hiragana"
+expected = "じゅうごにち"
+
+[[case]]
+input = "百五日"
+mode = "hiragana"
+expected = "ひゃくごにち"
+
+[[case]]
+input = "十三日"
+mode = "hiragana"
+expected = "じゅうさんにち"
+
+[[case]]
+input = "百二日"
+mode = "hiragana"
+expected = "ひゃくににち"
+
+[[case]]
+input = "百四日"
+mode = "hiragana"
+expected = "ひゃくよんにち"
+note = "百以上 prefix の四日は ヨンニチ"
+
+[[case]]
+input = "百二十日"
+mode = "hiragana"
+expected = "ひゃくにじゅうにち"
+note = "ハツカ にしない"
+
+[[case]]
+input = "二百十日"
+mode = "hiragana"
+expected = "にひゃくじゅうにち"
+note = "暦 にひゃくとおか ではなく一般 TTS 読み"
+
+[[case]]
+input = "百十日"
+mode = "hiragana"
+expected = "ひゃくじゅうにち"
+
+# ─── 単独日付 / 十 prefix の和語読みは維持 (非干渉ガード) ───
+[[case]]
+input = "五日"
+mode = "hiragana"
+expected = "いつか"
+
+[[case]]
+input = "二十日"
+mode = "hiragana"
+expected = "はつか"
+
+[[case]]
+input = "四日"
+mode = "hiragana"
+expected = "よっか"
+
+[[case]]
+input = "十日"
+mode = "hiragana"
+expected = "とおか"
+
+[[case]]
+input = "十四日"
+mode = "hiragana"
+expected = "じゅうよっか"
+note = "十 prefix の四日は ヨッカ 維持"
+
+[[case]]
+input = "二十四日"
+mode = "hiragana"
+expected = "にじゅうよっか"
+
+[[case]]
+input = "六月五日"
+mode = "hiragana"
+expected = "ろくがついつか"
+note = "日付文脈の五日は イツカ 維持"
+
+# ─── (元: probe_mythology_20260618.toml) ───
+# 2026-06-18 自作例文 probe round 15 (神話/宗教語彙、 ゲーム/アニメ頻出)。
+# 連濁複合 (裏口/泣き声/親心/折り紙/旅人/小川/夜空/力技/神業) と宗教語の大半は
+# ja 既に正読。実バグは記紀神話系 2 語。
+#
+# - 禍津神=まがつかみ (IPADIC は かつしん)。
+# - 幽世=かくりよ (現世=うつしよ の対。IPADIC は ゆうよ)。
+
+[[case]]
+input = "禍津神"
+mode = "hiragana"
+expected = "まがつかみ"
+note = "旧 かつしん"
+
+[[case]]
+input = "幽世と現世"
+mode = "hiragana"
+expected = "かくりよとげんせ"
+note = "幽世 旧 ゆうよ"
+
+# ─── ja 元から正読 (ガード) ───
+[[case]]
+input = "禍々しい気配"
+mode = "hiragana"
+expected = "まがまがしいけはい"
+
+[[case]]
+input = "御札を貼る"
+mode = "hiragana"
+expected = "おふだをはる"
+
+[[case]]
+input = "輪廻転生"
+mode = "hiragana"
+expected = "りんねてんしょう"
+
+# ─── (元: probe_natural_text_20260618.toml) ───
+# 2026-06-18 自作例文 probe round 18 (自然文 validation + 七竈)。
+#
+# 配信コメント風の自然文は ja 全て正読を確認 (上手すぎる=うま / 上手だね=じょうず の
+# 文脈分け、神がかって=かみ も正)。やや珍しい 2 字熟語も大半正読 (早苗/案山子/東雲/
+# 海原/微温湯/天邪鬼/百日紅/合歓/凌霄花/木通/御神籤=おみくじ)。実バグは 七竈 のみ。
+#
+# - 七竈=ななかまど (樹木名・姓。IPADIC は しちかまど)。
+
+[[case]]
+input = "七竈の紅葉"
+mode = "hiragana"
+expected = "ななかまどのこうよう"
+note = "旧 しちかまど"
+
+[[case]]
+input = "七人の侍"
+mode = "hiragana"
+expected = "しちにんのさむらい"
+note = "数詞 七 は維持"
+
+# ─── 自然文の文脈分け (ガード) ───
+[[case]]
+input = "流石に上手すぎる"
+mode = "hiragana"
+expected = "さすがにうますぎる"
+
+[[case]]
+input = "相変わらず上手だね"
+mode = "hiragana"
+expected = "あいかわらずじょうずだね"
+
+[[case]]
+input = "今のプレー神がかってた"
+mode = "hiragana"
+expected = "いまのプレーかみがかってた"
+
+# ─── (元: probe_yamai_yaji_20260618.toml) ───
+# 2026-06-18 自作例文 probe round 19 (弥 系 + 古語は低価値と確認)。
+#
+# - 弥が上=いやがうえ (「弥が上にも盛り上がる」 実況頻出。IPADIC は やがうえ)。
+# - 弥次馬=やじうま (野次馬 の異表記。IPADIC は やじば)。
+#
+# 古語/文語 (忝く/頓に=とみに/況んや=いわんや/宜なるかな=むべ/惟うに) は配信用途で
+# 低価値につき保留。弥生=やよい/弥栄=やさか/野次馬=やじうま は ja 正読。
+
+[[case]]
+input = "弥が上にも盛り上がる"
+mode = "hiragana"
+expected = "いやがうえにももりあがる"
+note = "旧 やがうえ"
+
+[[case]]
+input = "弥次馬根性"
+mode = "hiragana"
+expected = "やじうまこんじょう"
+note = "旧 やじば"
+
+# ─── ガード ───
+[[case]]
+input = "野次馬が集まる"
+mode = "hiragana"
+expected = "やじうまがあつまる"
+
+[[case]]
+input = "弥生時代"
+mode = "hiragana"
+expected = "やよいじだい"
+
+[[case]]
+input = "弥栄を祈る"
+mode = "hiragana"
+expected = "やさかをいのる"
+
+# ─── (元: probe_yojijukugo_20260618.toml) ───
+# 2026-06-18 自作例文 probe round 16 (四字熟語 + 輩)。
+# 四字熟語は ja 大半正読 (一期一会/温故知新/言語道断/傍若無人/七転八倒/喜怒哀楽/
+# 朝三暮四/臥薪嘗胆/捲土重来=けんどちょうらい)。実バグは 輩。
+#
+# - 輩: default ハイ (先輩/後輩/輩出) + 「〜の輩 / 悪い輩 / 不届きな輩」 = やから
+#       (助詞 の or 形容詞活用語尾 い/な/う の後)。
+
+[[case]]
+input = "悪の輩"
+mode = "hiragana"
+expected = "あくのやから"
+note = "旧 はい"
+
+[[case]]
+input = "不届きな輩"
+mode = "hiragana"
+expected = "ふとどきなやから"
+
+[[case]]
+input = "悪い輩"
+mode = "hiragana"
+expected = "わるいやから"
+
+[[case]]
+input = "先輩に挨拶"
+mode = "hiragana"
+expected = "せんぱいにあいさつ"
+note = "ハイ ガード"
+
+[[case]]
+input = "輩出する"
+mode = "hiragana"
+expected = "はいしゅつする"
+
+# ─── 四字熟語ガード ───
+[[case]]
+input = "傍若無人な態度"
+mode = "hiragana"
+expected = "ぼうじゃくぶじんなたいど"
+
+[[case]]
+input = "喜怒哀楽が激しい"
+mode = "hiragana"
+expected = "きどあいらくがはげしい"

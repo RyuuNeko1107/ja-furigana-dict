@@ -1,0 +1,119 @@
+# === 統合 probe アーカイブ 20260617 (元 2 ファイル、2026-06-21 consolidate) ===
+
+# ─── (元: probe_nan_counter_20260617.toml) ───
+# 2026-06-17 自作例文 probe 由来。何 + 助数詞 の連濁/促音 (jukugo 列挙の gap 補填)。
+# 何本→なにほん 等が漏れていた。何は数詞でなく次が漢字だと動詞語幹誤判定するため
+# counter rule 不可 = jukugo 列挙が正攻法 (overrides.toml 何 ブロックのコメント参照)。
+
+[[case]]
+input = "何本ある"
+mode = "hiragana"
+expected = "なんぼんある"
+note = "旧 なにほん"
+
+[[case]]
+input = "何杯飲んだ"
+mode = "hiragana"
+expected = "なんばいのんだ"
+
+[[case]]
+input = "何ヶ月かかる"
+mode = "hiragana"
+expected = "なんかげつかかる"
+
+[[case]]
+input = "何巻まで読んだ"
+mode = "hiragana"
+expected = "なんかんまでよんだ"
+
+[[case]]
+input = "何話まで見た"
+mode = "hiragana"
+expected = "なんわまでみた"
+
+[[case]]
+input = "何軒回る"
+mode = "hiragana"
+expected = "なんげんまわる"
+
+[[case]]
+input = "何発撃った"
+mode = "hiragana"
+expected = "なんぱつうった"
+
+[[case]]
+input = "何丁目ですか"
+mode = "hiragana"
+expected = "なんちょうめですか"
+
+# ─── 指示語/単独問いは ナニ/ナン 維持 (非干渉ガード) ───
+[[case]]
+input = "何それ"
+mode = "hiragana"
+expected = "なんそれ"
+
+[[case]]
+input = "何を見てる"
+mode = "hiragana"
+expected = "なにをみてる"
+
+# ─── (元: probe_numbers_20260617.toml) ───
+# 2026-06-17 自作例文 probe 由来。漢数字の百/千 連濁・促音化 (bare/unit 経路)。
+# lib の bare 漢数字経路は number_to_katakana を通らず個別連結で 三百→さんひゃく と誤読
+# していた (アラビア 300→さんびゃく は正読)。連濁 5 数を entry 化して救済。
+# やお/やち idiom は Lindera の長 token が勝つので非干渉。
+# 既知の残: 三千円/八千円 は unit「千円」候補と競合して さんせんえん 止まり (lib 課題)。
+
+[[case]]
+input = "三百"
+mode = "hiragana"
+expected = "さんびゃく"
+note = "旧 さんひゃく"
+
+[[case]]
+input = "六百"
+mode = "hiragana"
+expected = "ろっぴゃく"
+
+[[case]]
+input = "八百"
+mode = "hiragana"
+expected = "はっぴゃく"
+
+[[case]]
+input = "三千"
+mode = "hiragana"
+expected = "さんぜん"
+note = "旧 さんせん"
+
+[[case]]
+input = "八千"
+mode = "hiragana"
+expected = "はっせん"
+
+[[case]]
+input = "三百円"
+mode = "hiragana"
+expected = "さんびゃくえん"
+
+[[case]]
+input = "八百八町"
+mode = "hiragana"
+expected = "はっぴゃくはちまち"
+
+# ─── idiom 非干渉ガード ───
+[[case]]
+input = "八百屋"
+mode = "hiragana"
+expected = "やおや"
+note = "八百 entry を足しても Lindera 長token で維持"
+
+[[case]]
+input = "八百万"
+mode = "hiragana"
+expected = "やおよろず"
+
+[[case]]
+input = "八千代"
+mode = "hiragana"
+expected = "やちよ"

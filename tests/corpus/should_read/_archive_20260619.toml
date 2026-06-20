@@ -1,0 +1,6221 @@
+# === 統合 probe アーカイブ 20260619 (元 157 ファイル、2026-06-21 consolidate) ===
+
+# ─── (元: probe_bakumatsu_20260619.toml) ───
+# 2026-06-19 幕末 probe。沖田総司/桂小五郎/久坂玄瑞/河井継之助 等は正読 (35/40 成熟)。
+
+[[case]]
+input = "武田観柳斎"
+mode = "hiragana"
+expected = "たけだかんりゅうさい"
+note = "観柳斎=かんりゅうさい"
+
+[[case]]
+input = "山崎烝"
+mode = "hiragana"
+expected = "やまざきすすむ"
+note = "烝=すすむ"
+
+[[case]]
+input = "佐久間象山"
+mode = "hiragana"
+expected = "さくましょうざん"
+note = "象山=しょうざん (default ぞうさん)"
+
+[[case]]
+input = "来島又兵衛"
+mode = "hiragana"
+expected = "きじままたべえ"
+note = "来島=きじま (来島海峡=くるしま と別)"
+
+# ─── (元: probe_baseball_20260619.toml) ───
+# 2026-06-19 野球漫画 probe。沢村栄純/御幸/茂野吾郎 等は正読。
+
+[[case]]
+input = "降谷暁"
+mode = "hiragana"
+expected = "ふるやさとる"
+note = "ダイヤのA。暁=さとる (default あかつき)"
+
+[[case]]
+input = "三橋廉"
+mode = "hiragana"
+expected = "みはしれん"
+note = "おお振り。三橋=みはし (default みつはし)"
+
+[[case]]
+input = "佐藤寿也"
+mode = "hiragana"
+expected = "さとうひさや"
+note = "MAJOR。寿也=ひさや (default じゅや)"
+
+[[case]]
+input = "泉孝介"
+mode = "hiragana"
+expected = "いずみこうすけ"
+note = "おお振り。泉=いずみ (default せん)"
+
+# ─── (元: probe_bin_20260619.toml) ───
+# 2026-06-19 便 suffix homograph 例文 由来の回帰 lock。
+# 便=びん (交通/配送サービス) vs べん (便利/排泄)。
+# 非数値 suffix の びん 化けを jukugo + prev=の で補正。
+
+# ─── 便 = びん (交通/配送 suffix) ───
+[[case]]
+input = "最終便に乗る"
+mode = "hiragana"
+expected = "さいしゅうびんにのる"
+note = "旧 さいしゅうべん"
+
+[[case]]
+input = "国際便で送る"
+mode = "hiragana"
+expected = "こくさいびんでおくる"
+
+[[case]]
+input = "定期便の運航"
+mode = "hiragana"
+expected = "ていきびんのうんこう"
+
+[[case]]
+input = "夜行便のバス"
+mode = "hiragana"
+expected = "やこうびんのバス"
+
+[[case]]
+input = "次の便を待つ"
+mode = "hiragana"
+expected = "つぎのびんをまつ"
+note = "prev=の → びん"
+
+# 回帰ガード: 便 = べん (便利/排泄/方便)
+[[case]]
+input = "便利な店"
+mode = "hiragana"
+expected = "べんりなみせ"
+
+[[case]]
+input = "小便と大便"
+mode = "hiragana"
+expected = "しょうべんとだいべん"
+
+[[case]]
+input = "方便を使う"
+mode = "hiragana"
+expected = "ほうべんをつかう"
+
+# 回帰ガード: 便 = びん の既存正読
+[[case]]
+input = "宅配便が届く"
+mode = "hiragana"
+expected = "たくはいびんがとどく"
+
+# ─── (元: probe_bleach2_20260619.toml) ───
+# 2026-06-19 BLEACH残り キャラ probe。黒崎一護/朽木白哉/卯ノ花烈/砕蜂 等は既正。
+# 藍染=あいぞめ(藍染め) homograph で bare 不採録 (藍染惣右介 full は正)。
+
+[[case]]
+input = "四楓院夜一"
+mode = "hiragana"
+expected = "しほういんよるいち"
+note = "四楓院=しほういん"
+
+[[case]]
+input = "浮竹十四郎"
+mode = "hiragana"
+expected = "うきたけじゅうしろう"
+note = "十四郎=じゅうしろう"
+
+[[case]]
+input = "茶渡泰虎"
+mode = "hiragana"
+expected = "さどやすとら"
+note = "茶渡=さど (default ちゃと)"
+
+[[case]]
+input = "東仙要"
+mode = "hiragana"
+expected = "とうせんかなめ"
+note = "要=かなめ (default よう)"
+
+[[case]]
+input = "阿散井"
+mode = "hiragana"
+expected = "あばらい"
+note = "阿散井恋次 (default あさんい)"
+
+# ─── (元: probe_bluearchive_20260619.toml) ───
+# 2026-06-19 ブルーアーカイブ キャラ名 probe。小鳥遊=たかなし/銀鏡=しろみ/才羽/各務/
+# 空崎/十六夜=いざよい 等は既正。連河/歌住/室笠 は読み未確定で保留。
+
+[[case]]
+input = "陸八魔"
+mode = "hiragana"
+expected = "りくはま"
+note = "陸八魔アル (default りくはちま)"
+
+[[case]]
+input = "阿慈谷"
+mode = "hiragana"
+expected = "あじたに"
+note = "阿慈谷ヒフミ (default あじこく)"
+
+[[case]]
+input = "砂狼"
+mode = "hiragana"
+expected = "すなおおかみ"
+note = "砂狼シロコ = Sunaookami (旧 さろう は誤登録、2026-06-20 訂正)"
+
+[[case]]
+input = "聖園"
+mode = "hiragana"
+expected = "みその"
+note = "聖園ミカ (default せいえん)"
+
+[[case]]
+input = "生塩"
+mode = "hiragana"
+expected = "うしお"
+note = "生塩ノア (default なまえん)"
+
+[[case]]
+input = "百合園"
+mode = "hiragana"
+expected = "ゆりぞの"
+note = "百合園セイア (default ゆりえん)"
+
+# ─── (元: probe_bluelock_20260619.toml) ───
+# 2026-06-19 ブルーロック/ハイキュー/アオアシ キャラ名 probe。日向翔陽/影山飛雄/及川徹 等は既正。
+
+[[case]]
+input = "蜂楽廻"
+mode = "hiragana"
+expected = "ばちらめぐる"
+note = "ブルーロック 蜂楽=ばちら"
+
+[[case]]
+input = "馬狼照英"
+mode = "hiragana"
+expected = "ばろうしょうえい"
+note = "ブルーロック 馬狼=ばろう"
+
+[[case]]
+input = "御影玲王"
+mode = "hiragana"
+expected = "みかげれお"
+note = "ブルーロック 玲王=れお"
+
+[[case]]
+input = "木兎光太郎"
+mode = "hiragana"
+expected = "ぼくとこうたろう"
+note = "ハイキュー 木兎=ぼくと"
+
+[[case]]
+input = "宮侑"
+mode = "hiragana"
+expected = "みやあたむ"
+note = "ハイキュー 侑=あたむ"
+
+[[case]]
+input = "五色工"
+mode = "hiragana"
+expected = "ごしきつとむ"
+note = "ハイキュー"
+
+[[case]]
+input = "青井葦人"
+mode = "hiragana"
+expected = "あおいあしと"
+note = "アオアシ 葦人=あしと"
+
+# ─── (元: probe_bukkyo_20260619.toml) ───
+# 2026-06-19 仏教用語・仏尊 probe。毘沙門天/不動明王/涅槃/曼荼羅 等は正読 (33/38成熟)。
+
+[[case]]
+input = "阿頼耶識"
+mode = "hiragana"
+expected = "あらやしき"
+note = "頼=ら (default あらいや)"
+
+[[case]]
+input = "准胝観音"
+mode = "hiragana"
+expected = "じゅんていかんのん"
+note = "准胝=じゅんてい"
+
+[[case]]
+input = "荼枳尼天"
+mode = "hiragana"
+expected = "だきにてん"
+note = "荼枳尼=だきに"
+
+[[case]]
+input = "吉祥天"
+mode = "hiragana"
+expected = "きっしょうてん"
+note = "吉祥=きっしょう (default きちじょう)"
+
+# ─── (元: probe_bungo_20260619.toml) ───
+# 2026-06-19 文豪 probe。二葉亭四迷/室生犀星/梶井基次郎/夢野久作/直木三十五/小泉八雲 等は
+# ja 正読 (39/40 成熟)。横光利一のみ補充。
+
+[[case]]
+input = "横光利一"
+mode = "hiragana"
+expected = "よこみつりいち"
+note = "利一=りいち (default としかず)"
+
+[[case]]
+input = "二葉亭四迷"
+mode = "hiragana"
+expected = "ふたばていしめい"
+note = "成熟確認"
+
+[[case]]
+input = "室生犀星"
+mode = "hiragana"
+expected = "むろうさいせい"
+note = "成熟確認"
+
+# ─── (元: probe_chara10_20260619.toml) ───
+# 2026-06-19 東京喰種/Dr.STONE/暗殺教室 キャラ名 probe。石神千空/市川京太郎 等は既正。
+# 茅野=ちの(市)/司=し/百夜 homograph は見送り。
+
+[[case]]
+input = "金木研"
+mode = "hiragana"
+expected = "かねきけん"
+note = "東京喰種 金木=かねき (default かなぎ)"
+
+[[case]]
+input = "霧嶋董香"
+mode = "hiragana"
+expected = "きりしまとうか"
+note = "董香=とうか"
+
+[[case]]
+input = "喰種"
+mode = "hiragana"
+expected = "ぐーる"
+note = "作品中心用語、値グール→hiragana (default くしゅ)"
+
+[[case]]
+input = "七海龍水"
+mode = "hiragana"
+expected = "ななみりゅうすい"
+note = "Dr.STONE 七海=ななみ"
+
+[[case]]
+input = "獅子王司"
+mode = "hiragana"
+expected = "ししおうつかさ"
+note = "Dr.STONE 司=つかさ"
+
+[[case]]
+input = "潮田渚"
+mode = "hiragana"
+expected = "しおたなぎさ"
+note = "暗殺教室 潮田=しおた"
+
+[[case]]
+input = "烏間惟臣"
+mode = "hiragana"
+expected = "からすまただおみ"
+note = "暗殺教室 烏間=からすま"
+
+# ─── (元: probe_chara11_20260619.toml) ───
+# 2026-06-19 呪術/鬼滅 残りキャラ mop-up probe (R100)。猗窩座/童磨/累/魘夢 等は既正。
+# 真人=まひと/まさと は homograph で ML 領域 (非登録)。
+
+[[case]]
+input = "禅院甚爾"
+mode = "hiragana"
+expected = "ぜんいんとうじ"
+note = "甚爾=とうじ (default じんじ)"
+
+[[case]]
+input = "羂索"
+mode = "hiragana"
+expected = "けんじゃく"
+note = "default けんさく"
+
+[[case]]
+input = "鱗滝左近次"
+mode = "hiragana"
+expected = "うろこだきさこんじ"
+note = "鱗滝=うろこだき 連濁 (default うろこたき)"
+
+[[case]]
+input = "桑島慈悟郎"
+mode = "hiragana"
+expected = "くわじまじごろう"
+note = "桑島=くわじま 連濁"
+
+[[case]]
+input = "煉獄槇寿郎"
+mode = "hiragana"
+expected = "れんごくまきじゅろう"
+note = "槇寿郎=まきじゅろう (default まきとしお)"
+
+[[case]]
+input = "錆兎"
+mode = "hiragana"
+expected = "さびと"
+note = "兎=と (default さびうさぎ)"
+
+# ─── (元: probe_chara2_20260619.toml) ───
+# 2026-06-19 アニメキャラ名② probe (ハイキュー/東リベ/ブリーチ/ナルト)。公式読み。
+# 日向翔陽/影山飛雄/黒尾鉄朗/東方仗助/服部平次/灰原哀/両津勘吉 等は登録済で正。
+
+[[case]]
+input = "孤爪研磨"
+mode = "hiragana"
+expected = "こづめけんま"
+note = "ハイキュー、孤爪=こづめ連濁 (旧 こつめ)"
+
+[[case]]
+input = "西谷夕"
+mode = "hiragana"
+expected = "にしのやゆう"
+note = "ハイキュー (全壊 にしたにせき)"
+
+[[case]]
+input = "三ツ谷隆"
+mode = "hiragana"
+expected = "みつやたかし"
+note = "東リベ (全壊 みつだにりゅう)"
+
+[[case]]
+input = "卯ノ花"
+mode = "hiragana"
+expected = "うのはな"
+note = "ブリーチ卯ノ花烈、ノ残留回避"
+
+[[case]]
+input = "砕蜂"
+mode = "hiragana"
+expected = "そいふぉん"
+note = "ブリーチ (旧 さいほう)"
+
+[[case]]
+input = "我愛羅"
+mode = "hiragana"
+expected = "があら"
+note = "ナルト (旧 われあいら)"
+
+# ─── (元: probe_chara3_20260619.toml) ───
+# 2026-06-19 アニメキャラ名③ (ぼざろ/推しの子/呪術/チェンソー)。
+# 後藤ひとり/喜多郁代/有馬かな/乙骨憂太/夏油傑 等は登録済/正読。
+# 沢渡=さわたり/さわわたり・我妻=わがつま(我が妻) は homograph で見送り。
+
+[[case]]
+input = "伊地知虹夏"
+mode = "hiragana"
+expected = "いじちにじか"
+note = "ぼざろ (虹夏=にじか)"
+
+[[case]]
+input = "星野愛久愛海"
+mode = "hiragana"
+expected = "ほしのあくあ"
+note = "推しの子 アクア"
+
+[[case]]
+input = "星野瑠美衣"
+mode = "hiragana"
+expected = "ほしのるびい"
+note = "推しの子 ルビー"
+
+[[case]]
+input = "家入硝子"
+mode = "hiragana"
+expected = "いえいりしょうこ"
+note = "呪術 (default いえにゅうがらす)"
+
+[[case]]
+input = "夜蛾"
+mode = "hiragana"
+expected = "やが"
+note = "呪術 夜蛾正道 (default よるが)"
+
+[[case]]
+input = "楽巌寺"
+mode = "hiragana"
+expected = "らくがんじ"
+note = "呪術 (default らくいわおてら)"
+
+[[case]]
+input = "禅院直毘人"
+mode = "hiragana"
+expected = "ぜんいんなおびと"
+note = "呪術、禪→禅 compat key (default ちょくびひと)"
+
+# ─── (元: probe_chara4_20260619.toml) ───
+# 2026-06-19 名作アニメキャラ名 (幽白/るろ剣/犬夜叉/セーラームーン/エヴァ)。
+# 緋村剣心/蔵馬/弥勒/桔梗/土方十四郎(=とうしろう銀魂) 等は登録済/正読。
+# 日暮=ひぐれ(夕暮れ)/神威=しんい は homograph で見送り。
+
+[[case]]
+input = "浦飯幽助"
+mode = "hiragana"
+expected = "うらめしゆうすけ"
+note = "幽白 (default うらはんゆうじょ)"
+
+[[case]]
+input = "志々雄真実"
+mode = "hiragana"
+expected = "ししおまこと"
+note = "るろ剣 (々破損)"
+
+[[case]]
+input = "四乃森蒼紫"
+mode = "hiragana"
+expected = "しのもりあおし"
+note = "るろ剣"
+
+[[case]]
+input = "神谷薫"
+mode = "hiragana"
+expected = "かみやかおる"
+note = "るろ剣 (薫=かおる)"
+
+[[case]]
+input = "殺生丸"
+mode = "hiragana"
+expected = "せっしょうまる"
+note = "犬夜叉 (丸=まる)"
+
+[[case]]
+input = "地場衛"
+mode = "hiragana"
+expected = "ちばまもる"
+note = "セーラームーン"
+
+[[case]]
+input = "綾波"
+mode = "hiragana"
+expected = "あやなみ"
+note = "エヴァ 綾波レイ (波=なみ)"
+
+[[case]]
+input = "真希波"
+mode = "hiragana"
+expected = "まきなみ"
+note = "エヴァ 真希波マリ"
+
+# ─── (元: probe_chara5_20260619.toml) ───
+# 2026-06-19 薬屋/スターレイル キャラ名 probe。壬氏=じんし/楼蘭 は登録済/正読。
+# 姫子/御空/水蓮/椒丘/桂乃芬/寒鴉 は homograph/読み未確定で見送り。
+
+[[case]]
+input = "猫猫"
+mode = "hiragana"
+expected = "まおまお"
+note = "薬屋 (default ねこねこ)"
+
+[[case]]
+input = "高順"
+mode = "hiragana"
+expected = "がおしゅん"
+note = "薬屋 (default こうじゅん)"
+
+[[case]]
+input = "里樹"
+mode = "hiragana"
+expected = "りーしゅ"
+note = "薬屋 里樹妃 (default さとじゅ)"
+
+[[case]]
+input = "翠苓"
+mode = "hiragana"
+expected = "すいれい"
+note = "薬屋 (default すいみみなぐさ)"
+
+[[case]]
+input = "青雀"
+mode = "hiragana"
+expected = "せいじゃく"
+note = "スターレイル (default あおすずめ)"
+
+[[case]]
+input = "三月七"
+mode = "hiragana"
+expected = "さんがつなのか"
+note = "スターレイル March 7th (default さんがつしち)"
+
+# ─── (元: probe_chara6_20260619.toml) ───
+# 2026-06-19 遊戯王/ペルソナ キャラ名 probe。武藤遊戯/桐条美鶴/真田明彦/両津勘吉 等は正読。
+
+[[case]]
+input = "海馬瀬人"
+mode = "hiragana"
+expected = "かいばせと"
+note = "遊戯王 瀬人=せと (default せひと)"
+
+[[case]]
+input = "真崎杏子"
+mode = "hiragana"
+expected = "まさきあんず"
+note = "遊戯王 杏子=あんず"
+
+[[case]]
+input = "雨宮蓮"
+mode = "hiragana"
+expected = "あまみやれん"
+note = "P5 蓮=れん (default はす)"
+
+[[case]]
+input = "鳴上悠"
+mode = "hiragana"
+expected = "なるかみゆう"
+note = "P4 鳴上=なるかみ (default めいうえ)"
+
+[[case]]
+input = "高巻杏"
+mode = "hiragana"
+expected = "たかまきあん"
+note = "P5 (default こうかんあんず)"
+
+[[case]]
+input = "新島真"
+mode = "hiragana"
+expected = "にいじままこと"
+note = "P5 真=まこと"
+
+# ─── (元: probe_chara7_20260619.toml) ───
+# 2026-06-19 最近のアニメ/刀剣乱舞 キャラ名 probe。日比野カフカ/四ノ宮キコル/鳴海弦/
+# 円相=えんそう は正読。祓魔師=エクソシスト は作品 ruby のため非採録。
+
+[[case]]
+input = "亜白"
+mode = "hiragana"
+expected = "あしろ"
+note = "怪獣8号 亜白ミナ (default あはく)"
+
+[[case]]
+input = "神々廻"
+mode = "hiragana"
+expected = "ししば"
+note = "難読姓 (default かみがみかい)"
+
+[[case]]
+input = "綾瀬桃"
+mode = "hiragana"
+expected = "あやせもも"
+note = "ダンダダン (default あやせとう)"
+
+[[case]]
+input = "奥村燐"
+mode = "hiragana"
+expected = "おくむらりん"
+note = "青の祓魔師 燐=りん (default おにび)"
+
+[[case]]
+input = "燭台切光忠"
+mode = "hiragana"
+expected = "しょくだいきりみつただ"
+note = "刀剣乱舞 (default せっこうちゅう)"
+
+[[case]]
+input = "三日月宗近"
+mode = "hiragana"
+expected = "みかづきむねちか"
+note = "刀剣乱舞 宗近=むねちか"
+
+[[case]]
+input = "鶴丸国永"
+mode = "hiragana"
+expected = "つるまるくになが"
+note = "刀剣乱舞 国永=くになが"
+
+[[case]]
+input = "南雲"
+mode = "hiragana"
+expected = "なぐも"
+note = "姓 (default なんぐも)"
+
+# ─── (元: probe_chara8_20260619.toml) ───
+# 2026-06-19 ナルト/ブリーチ/DB 残りキャラ probe。山中=やまなか/さんちゅう・神龍=しんりゅう/
+# シェンロン homograph は default 委ね。
+
+[[case]]
+input = "油女シノ"
+mode = "hiragana"
+expected = "あぶらめシノ"
+note = "ナルト 油女=あぶらめ (シノ は passthrough katakana)"
+
+[[case]]
+input = "千手柱間"
+mode = "hiragana"
+expected = "せんじゅはしらま"
+note = "初代火影"
+
+[[case]]
+input = "涅マユリ"
+mode = "hiragana"
+expected = "くらつちまゆり"
+note = "ブリーチ 涅=くらつち (default そめる)"
+
+[[case]]
+input = "雛森桃"
+mode = "hiragana"
+expected = "ひなもりもも"
+note = "ブリーチ 桃=もも"
+
+[[case]]
+input = "牛魔王"
+mode = "hiragana"
+expected = "ぎゅうまおう"
+note = "DB (default うしまおう)"
+
+[[case]]
+input = "魔貫光殺砲"
+mode = "hiragana"
+expected = "まかんこうさっぽう"
+note = "DB ピッコロの技"
+
+# ─── (元: probe_chara9_20260619.toml) ───
+# 2026-06-19 最近のジャンプ系キャラ名 probe。真人=まひと/まさと は homograph で別途(ML領域)。
+
+[[case]]
+input = "画眉丸"
+mode = "hiragana"
+expected = "がびまる"
+note = "地獄楽 (default がまゆがん)"
+
+[[case]]
+input = "日下部篤也"
+mode = "hiragana"
+expected = "くさかべあつや"
+note = "呪術 篤也=あつや (default とくや)"
+
+[[case]]
+input = "来栖華"
+mode = "hiragana"
+expected = "くるすはな"
+note = "呪術 華=はな (default くるすか)"
+
+[[case]]
+input = "死滅回游"
+mode = "hiragana"
+expected = "しめつかいゆう"
+note = "呪術 回游=かいゆう (default かいあそび)"
+
+[[case]]
+input = "漏瑚"
+mode = "hiragana"
+expected = "じょうご"
+note = "呪術 呪霊 (default ろうこ)"
+
+[[case]]
+input = "安野雲"
+mode = "hiragana"
+expected = "あんのくも"
+note = "アンデラ (default やすのうん)"
+
+# ─── (元: probe_chara_20260619.toml) ───
+# 2026-06-19 アニメ/漫画キャラ名 probe (鬼滅/呪術/ヒロアカ/DEATH NOTE)。
+# 公式読み固定。既存 (竈門炭治郎/我妻善逸/虎杖悠仁/五条悟 等) は登録済で正。
+
+[[case]]
+input = "不死川実弥"
+mode = "hiragana"
+expected = "しなずがわさねみ"
+note = "鬼滅 (旧 ふしせんじつや)"
+
+[[case]]
+input = "甘露寺蜜璃"
+mode = "hiragana"
+expected = "かんろじみつり"
+note = "鬼滅 恋柱"
+
+[[case]]
+input = "伊黒小芭内"
+mode = "hiragana"
+expected = "いぐろおばない"
+note = "鬼滅 (旧 いこくこばない)"
+
+[[case]]
+input = "栗花落"
+mode = "hiragana"
+expected = "つゆり"
+note = "鬼滅 栗花落カナヲ/実在難読姓"
+
+[[case]]
+input = "鋼鉄塚"
+mode = "hiragana"
+expected = "はがねづか"
+note = "鬼滅 (鋼鐵塚、鐵→鉄 compat)"
+
+[[case]]
+input = "狗巻"
+mode = "hiragana"
+expected = "いぬまき"
+note = "呪術 (旧 いぬかん)"
+
+[[case]]
+input = "緑谷出久"
+mode = "hiragana"
+expected = "みどりやいずく"
+note = "ヒロアカ デク"
+
+[[case]]
+input = "爆豪勝己"
+mode = "hiragana"
+expected = "ばくごうかつき"
+note = "ヒロアカ (旧 かつみ)"
+
+[[case]]
+input = "轟焦凍"
+mode = "hiragana"
+expected = "とどろきしょうと"
+note = "ヒロアカ"
+
+[[case]]
+input = "夜神月"
+mode = "hiragana"
+expected = "やがみらいと"
+note = "DEATH NOTE、月=ライト ateji"
+
+# ─── (元: probe_chimei2_20260619.toml) ───
+# 2026-06-19 難読地名 probe。増毛/神居古潭/妹背牛/倶知安/占冠/笑内/撫牛子/半家 等は正読。
+# 放出=ほうしゅつ/直方=直方体/十三=数字/柏原=多義 は homograph で見送り。
+
+[[case]]
+input = "特牛"
+mode = "hiragana"
+expected = "こっとい"
+note = "山口の難読駅名 (default とくぎゅう)"
+
+# ─── (元: probe_chubu2_20260619.toml) ───
+# 2026-06-19 中部 難読市町村 第21弾。麻績=おみ/売木=うるぎ/七宗=ひちそう/珠洲=すず 等は正読。
+# 舟橋=ふなはし/ふなばし borderline は見送り。
+
+[[case]]
+input = "笛吹"
+mode = "hiragana"
+expected = "ふえふき"
+note = "山梨県笛吹市 (default うすい)"
+
+[[case]]
+input = "南砺"
+mode = "hiragana"
+expected = "なんと"
+note = "富山県、砺=と (default みなみれい)"
+
+[[case]]
+input = "宝達志水"
+mode = "hiragana"
+expected = "ほうだつひみず"
+note = "石川県 (全壊)"
+
+[[case]]
+input = "南越前"
+mode = "hiragana"
+expected = "みなみえちぜん"
+note = "福井県 (default なんごしまえ)"
+
+[[case]]
+input = "阿賀野"
+mode = "hiragana"
+expected = "あがの"
+note = "新潟県、野=の (default あがや)"
+
+# ─── (元: probe_chubu_20260619.toml) ───
+# 2026-06-19 中部・北陸 難読駅 第10弾。
+# 動橋=いぶりはし/城端=じょうはな/松任=まっとう/各務原=かかみがはら/坂祝=さかほぎ は ja 正読。
+# 滑川=なめりかわ/なめがわ/なめかわ 多義 homograph で見送り。
+
+[[case]]
+input = "為栗"
+mode = "hiragana"
+expected = "してぐり"
+note = "飯田線秘境駅 (旧 ためくり)"
+
+[[case]]
+input = "南小谷"
+mode = "hiragana"
+expected = "みなみおたり"
+note = "小谷=おたり (旧 みなみこたに)"
+
+[[case]]
+input = "温田"
+mode = "hiragana"
+expected = "ぬくた"
+note = "飯田線 (旧 おんだ)"
+
+[[case]]
+input = "小矢部"
+mode = "hiragana"
+expected = "おやべ"
+note = "富山県、小=お (旧 こやべ)"
+
+# ─── (元: probe_chugoku2_20260619.toml) ───
+# 2026-06-19 中国・四国 難読町村 第22弾。雲南/飯南/伯耆/上関/神山 等は正読。
+# 平生=へいぜい/和気=わき/佐川=さがわ(急便)/綾川=あやかわ homograph 見送り。
+
+[[case]]
+input = "邑南"
+mode = "hiragana"
+expected = "おおなん"
+note = "島根県、邑=おお (default むら)"
+
+[[case]]
+input = "鬼北"
+mode = "hiragana"
+expected = "きほく"
+note = "愛媛県 (default おにほく)"
+
+[[case]]
+input = "知夫"
+mode = "hiragana"
+expected = "ちぶ"
+note = "島根県知夫村 (default ともお)"
+
+[[case]]
+input = "大豊"
+mode = "hiragana"
+expected = "おおとよ"
+note = "高知県大豊町 (default たいほう)"
+
+# ─── (元: probe_chugoku_20260619.toml) ───
+# 2026-06-19 中国・四国 難読地名 probe 由来の回帰 lock。
+# 安来=やすぎ/智頭=ちず/大歩危=おおぼけ/餘部=あまるべ/讃岐=さぬき 等は ja 正読。
+# 三次=さんじ(技術語)/観音寺=かんのんじ(一般寺)/須崎(両義) は homograph で見送り。
+
+[[case]]
+input = "廿日市"
+mode = "hiragana"
+expected = "はつかいち"
+note = "市=いち (四日市と同型、旧 はつかし)"
+
+[[case]]
+input = "美作"
+mode = "hiragana"
+expected = "みまさか"
+note = "旧国名、作=さか (旧 みさく)"
+
+[[case]]
+input = "大洲"
+mode = "hiragana"
+expected = "おおず"
+note = "愛媛、洲=ず 連濁 (旧 おおす)"
+
+# ─── (元: probe_conan_20260619.toml) ───
+# 2026-06-19 名探偵コナン キャラ名 probe。服部平次/工藤新一/灰原哀/阿笠博士 等は既正。
+# 目暮=めぐれ (メグレ警視のパロディ、既存 目暮警部=メグレ に合わせる)。
+
+[[case]]
+input = "目暮十三"
+mode = "hiragana"
+expected = "めぐれじゅうぞう"
+note = "目暮=めぐれ (default めぼ)"
+
+[[case]]
+input = "降谷零"
+mode = "hiragana"
+expected = "ふるやれい"
+note = "降谷=ふるや (default こうこく)"
+
+[[case]]
+input = "沖矢昴"
+mode = "hiragana"
+expected = "おきやすばる"
+note = "沖矢=おきや (default おきし)"
+
+[[case]]
+input = "赤井秀一"
+mode = "hiragana"
+expected = "あかいしゅういち"
+note = "秀一=しゅういち (default ひでかず)"
+
+[[case]]
+input = "諸伏高明"
+mode = "hiragana"
+expected = "もろふしたかあき"
+note = "高明=たかあき (default こうめい)"
+
+[[case]]
+input = "高木渉"
+mode = "hiragana"
+expected = "たかぎわたる"
+note = "渉=わたる (default しょう)"
+
+# ─── (元: probe_counter2_20260619.toml) ───
+# 2026-06-19 助数詞 系統チェック 由来の回帰 lock。
+# simple.toml の 16 助数詞が kanji_numeral 無し + promotion 無しで
+# 「一話=いちはなし/一曲=いちきょく」 に化けていた。objects.toml へ移動。
+
+# ─── base reading 修正 (漢数字 bare 不発で default 化けてた) ───
+[[case]]
+input = "アニメの第一話"
+mode = "hiragana"
+expected = "アニメのだいいちわ"
+note = "旧 だいいちはなし (話=ワ counter)"
+
+[[case]]
+input = "一日六便の運行"
+mode = "hiragana"
+expected = "いちにちろくびんのうんこう"
+note = "数字+便=びん (便=ビン counter)。 非数値 最終便=べん は別 issue"
+
+# ─── 促音 (k系 1/6/8/10) ───
+[[case]]
+input = "六缶パック"
+mode = "hiragana"
+expected = "ろっかんパック"
+note = "旧 ろくかん"
+
+[[case]]
+input = "一曲歌う"
+mode = "hiragana"
+expected = "いっきょくうたう"
+note = "旧 いちきょく"
+
+[[case]]
+input = "戦闘機六機"
+mode = "hiragana"
+expected = "せんとうきろっき"
+
+# ─── 促音 (s/t系 1/8/10) ───
+[[case]]
+input = "三勝一敗"
+mode = "hiragana"
+expected = "さんしょういっぱい"
+note = "勝=1促音いっしょう、敗=1促音半濁いっぱい"
+
+[[case]]
+input = "豆腐一丁"
+mode = "hiragana"
+expected = "とうふいっちょう"
+
+[[case]]
+input = "六丁目"
+mode = "hiragana"
+expected = "ろくちょうめ"
+note = "旧 丁=てい 化け"
+
+# ─── 半濁 (p系) ───
+[[case]]
+input = "一品料理を頼む"
+mode = "hiragana"
+expected = "いっぴんりょうりをたのむ"
+
+# 回帰ガード: counter でない 話/便/砲/色 等
+[[case]]
+input = "昔話を聞く"
+mode = "hiragana"
+expected = "むかしばなしをきく"
+
+[[case]]
+input = "便利な道具"
+mode = "hiragana"
+expected = "べんりなどうぐ"
+
+[[case]]
+input = "鉄砲を撃つ"
+mode = "hiragana"
+expected = "てっぽうをうつ"
+
+# ─── 第2弾: 袋/段目/曲目 (漢数字 bare 不発の追加分) ───
+[[case]]
+input = "お菓子を三袋"
+mode = "hiragana"
+expected = "おかしをさんぶくろ"
+note = "旧 さんたい (袋=タイ 化け)、3 連濁ぶくろ"
+
+[[case]]
+input = "下から三段目"
+mode = "hiragana"
+expected = "したからさんだんめ"
+note = "旧 さんだんもく (目=もく 化け)"
+
+[[case]]
+input = "一曲目を演奏"
+mode = "hiragana"
+expected = "いっきょくめをえんそう"
+note = "旧 いちきょくもく、促音いっ"
+
+[[case]]
+input = "手袋をはめる"
+mode = "hiragana"
+expected = "てぶくろをはめる"
+
+# ─── (元: probe_counter_20260619.toml) ───
+# 2026-06-19 数字+助数詞 例文 由来の回帰 lock。
+# 巻/票 を simple.toml → objects.toml の counter rule に移動 (促音/連濁 promotion 追加)。
+
+# ─── 巻 = カン (1/6/8/10 促音) ───
+[[case]]
+input = "一巻の終わり"
+mode = "hiragana"
+expected = "いっかんのおわり"
+note = "旧 いちかん"
+
+[[case]]
+input = "六巻まで読む"
+mode = "hiragana"
+expected = "ろっかんまでよむ"
+note = "旧 ろくかん"
+
+[[case]]
+input = "漫画を三巻"
+mode = "hiragana"
+expected = "まんがをさんかん"
+
+# ─── 票 = ヒョウ (1/6/8/10 促音+半濁ピョウ、3 連濁ビョウ) ───
+[[case]]
+input = "一票投じる"
+mode = "hiragana"
+expected = "いっぴょうとうじる"
+note = "旧 いちひょう"
+
+[[case]]
+input = "三票差で勝つ"
+mode = "hiragana"
+expected = "さんびょうさでかつ"
+note = "旧 さんひょう"
+
+# 回帰ガード: counter でない 巻/票 = 維持
+[[case]]
+input = "圧巻の演技"
+mode = "hiragana"
+expected = "あっかんのえんぎ"
+
+[[case]]
+input = "伝票を整理"
+mode = "hiragana"
+expected = "でんぴょうをせいり"
+
+[[case]]
+input = "春巻きを揚げる"
+mode = "hiragana"
+expected = "はるまきをあげる"
+
+# ─── (元: probe_edo_20260619.toml) ───
+# 2026-06-19 江戸の文化人 probe。十返舎一九/東洲斎写楽/伊能忠敬/間宮林蔵/緒方洪庵/渡辺崋山/
+# 塙保己一=はなわほきいち 等は ja 正読 (39/40 成熟)。狩野永徳のみ補充。
+
+[[case]]
+input = "狩野永徳"
+mode = "hiragana"
+expected = "かのうえいとく"
+note = "絵師、狩野=かのう (bare 狩野=かの は別)"
+
+[[case]]
+input = "十返舎一九"
+mode = "hiragana"
+expected = "じっぺんしゃいっく"
+note = "成熟確認"
+
+[[case]]
+input = "塙保己一"
+mode = "hiragana"
+expected = "はなわほきいち"
+note = "成熟確認"
+
+# ─── (元: probe_english2_20260619.toml) ───
+# 2026-06-19 アルファベット/英単語 round 2 由来の回帰 lock。
+# ゲーミング/eスポーツ/配信スラング loanword 拡充 (general.toml)。詳細: cands_en2。
+
+[[case]]
+input = "nerfされた"
+mode = "hiragana"
+expected = "ナーフされた"
+
+[[case]]
+input = "comboを繋ぐ"
+mode = "hiragana"
+expected = "コンボをつなぐ"
+
+[[case]]
+input = "killを取る"
+mode = "hiragana"
+expected = "キルをとる"
+
+[[case]]
+input = "queueに並ぶ"
+mode = "hiragana"
+expected = "キューにならぶ"
+
+[[case]]
+input = "matchが始まる"
+mode = "hiragana"
+expected = "マッチがはじまる"
+
+[[case]]
+input = "followありがとう"
+mode = "hiragana"
+expected = "フォローありがとう"
+
+[[case]]
+input = "subscribeしてね"
+mode = "hiragana"
+expected = "サブスクライブしてね"
+
+[[case]]
+input = "laneを守る"
+mode = "hiragana"
+expected = "レーンをまもる"
+
+[[case]]
+input = "flashで逃げる"
+mode = "hiragana"
+expected = "フラッシュでにげる"
+
+# letter読み略語
+[[case]]
+input = "EZ勝利"
+mode = "hiragana"
+expected = "イージーしょうり"
+
+[[case]]
+input = "AFKになる"
+mode = "hiragana"
+expected = "エーエフケーになる"
+
+[[case]]
+input = "VODを見る"
+mode = "hiragana"
+expected = "ブイオーディーをみる"
+
+# ─── (元: probe_english3_20260619.toml) ───
+# 2026-06-19 アルファベット/英単語 round 3 由来の回帰 lock。
+# 日常英単語 (果物/動物/物/場所/時間) の passthrough ギャップ補充 (general.toml)。
+# user 指摘: berry/apple 等の簡単な英単語も配信に出る。
+
+# ─── 果物 ───
+[[case]]
+input = "berryが好き"
+mode = "hiragana"
+expected = "ベリーがすき"
+
+[[case]]
+input = "strawberryのケーキ"
+mode = "hiragana"
+expected = "ストロベリーのケーキ"
+
+[[case]]
+input = "bananaを買う"
+mode = "hiragana"
+expected = "バナナをかう"
+
+[[case]]
+input = "lemonは酸っぱい"
+mode = "hiragana"
+expected = "レモンはすっぱい"
+
+# ─── 動物 ───
+[[case]]
+input = "elephantは大きい"
+mode = "hiragana"
+expected = "エレファントはおおきい"
+
+[[case]]
+input = "pandaが可愛い"
+mode = "hiragana"
+expected = "パンダがかわいい"
+
+# ─── 物 / 場所 / 時間 ───
+[[case]]
+input = "houseに帰る"
+mode = "hiragana"
+expected = "ハウスにかえる"
+
+[[case]]
+input = "bedで寝る"
+mode = "hiragana"
+expected = "ベッドでねる"
+
+[[case]]
+input = "timeがない"
+mode = "hiragana"
+expected = "タイムがない"
+
+[[case]]
+input = "knifeで切る"
+mode = "hiragana"
+expected = "ナイフできる"
+
+# ─── (元: probe_english4_20260619.toml) ───
+# 2026-06-19 アルファベット/英単語 round 4 由来の回帰 lock。
+# 日常英単語 第2弾 (体/仕事/形容詞/感情/服) の passthrough ギャップ補充。
+
+[[case]]
+input = "fingerを折る"
+mode = "hiragana"
+expected = "フィンガーをおる"
+
+[[case]]
+input = "cookが上手い"
+mode = "hiragana"
+expected = "クックがうまい"
+
+[[case]]
+input = "richな人"
+mode = "hiragana"
+expected = "リッチなひと"
+
+[[case]]
+input = "youngな世代"
+mode = "hiragana"
+expected = "ヤングなせだい"
+
+[[case]]
+input = "freshな野菜"
+mode = "hiragana"
+expected = "フレッシュなやさい"
+
+[[case]]
+input = "sweetな匂い"
+mode = "hiragana"
+expected = "スイートなにおい"
+
+[[case]]
+input = "hateする"
+mode = "hiragana"
+expected = "ヘイトする"
+
+[[case]]
+input = "smileが素敵"
+mode = "hiragana"
+expected = "スマイルがすてき"
+
+[[case]]
+input = "capをかぶる"
+mode = "hiragana"
+expected = "キャップをかぶる"
+
+[[case]]
+input = "sweaterを着る"
+mode = "hiragana"
+expected = "セーターをきる"
+
+# ─── (元: probe_english_20260619.toml) ───
+# 2026-06-19 アルファベット/英単語 round 由来の dict 改善 回帰 lock。
+# 配信/ゲーミング loanword + letter読み略語の passthrough ギャップを埋めた。
+# loanwords/general.toml に追加 (exact-match、case-fold で小文字入力もマッチ)。
+
+# ─── ゲーミング loanword ───
+[[case]]
+input = "buff効果"
+mode = "hiragana"
+expected = "バフこうか"
+note = "旧 buff (passthrough)"
+
+[[case]]
+input = "debuffを解除"
+mode = "hiragana"
+expected = "デバフをかいじょ"
+
+[[case]]
+input = "respawn地点"
+mode = "hiragana"
+expected = "リスポーンちてん"
+
+[[case]]
+input = "pingが高い"
+mode = "hiragana"
+expected = "ピングがたかい"
+
+[[case]]
+input = "lagがひどい"
+mode = "hiragana"
+expected = "ラグがひどい"
+
+[[case]]
+input = "clutchを決める"
+mode = "hiragana"
+expected = "クラッチをきめる"
+
+[[case]]
+input = "aimが良い"
+mode = "hiragana"
+expected = "エイムがよい"
+
+[[case]]
+input = "今日のgoal"
+mode = "hiragana"
+expected = "きょうのゴール"
+
+[[case]]
+input = "ナイスfight"
+mode = "hiragana"
+expected = "ナイスファイト"
+
+# ─── letter読み略語 (HP/MP/SNS と同型) ───
+[[case]]
+input = "DPSが高い"
+mode = "hiragana"
+expected = "ディーピーエスがたかい"
+
+[[case]]
+input = "配信はOBSで"
+mode = "hiragana"
+expected = "はいしんはオービーエスで"
+
+[[case]]
+input = "PKされた"
+mode = "hiragana"
+expected = "ピーケーされた"
+
+# 回帰ガード: 既存 PIN=ピン は維持 (Ping=ピング と別)
+[[case]]
+input = "PINコードを入力"
+mode = "hiragana"
+expected = "ピンコードをにゅうりょく"
+
+# ─── (元: probe_fgo_20260619.toml) ───
+# 2026-06-19 FGO/伝承の英霊名 probe。茨木童子/酒呑童子/宮本武蔵/真田幸村/桃太郎 等は正読。
+
+[[case]]
+input = "牛若丸"
+mode = "hiragana"
+expected = "うしわかまる"
+note = "源義経幼名 (全壊 うしじゃくがん)"
+
+[[case]]
+input = "渡辺綱"
+mode = "hiragana"
+expected = "わたなべのつな"
+note = "頼光四天王 綱=つな (default こう)"
+
+[[case]]
+input = "玉藻前"
+mode = "hiragana"
+expected = "たまものまえ"
+note = "九尾の狐 (default たまもまえ)"
+
+[[case]]
+input = "鞍馬天狗"
+mode = "hiragana"
+expected = "くらまてんぐ"
+note = "鞍馬=くらま (bare 鞍馬=あんば体操 homograph)"
+
+[[case]]
+input = "衛宮"
+mode = "hiragana"
+expected = "えみや"
+note = "Fate (default えいきゅう)"
+
+[[case]]
+input = "言峰綺礼"
+mode = "hiragana"
+expected = "ことみねきれい"
+note = "Fate (default げんみねあやれい)"
+
+[[case]]
+input = "間桐桜"
+mode = "hiragana"
+expected = "まとうさくら"
+note = "Fate 間桐=まとう"
+
+# ─── (元: probe_food2_20260619.toml) ───
+# 2026-06-19 郷土料理・和菓子 probe。筑前煮/辛子明太子/善哉/最中 等は正読。
+# 鶏飯=けいはん/とりめし homograph 見送り。
+
+[[case]]
+input = "鮒寿司"
+mode = "hiragana"
+expected = "ふなずし"
+note = "滋賀、寿司=ずし 連濁"
+
+[[case]]
+input = "柿の葉寿司"
+mode = "hiragana"
+expected = "かきのはずし"
+note = "奈良、寿司=ずし"
+
+[[case]]
+input = "三平汁"
+mode = "hiragana"
+expected = "さんぺいじる"
+note = "北海道、汁=じる (default じゅう)"
+
+[[case]]
+input = "五家宝"
+mode = "hiragana"
+expected = "ごかぼう"
+note = "埼玉の和菓子、宝=ぼう (default ごかほう)"
+
+[[case]]
+input = "朴葉味噌"
+mode = "hiragana"
+expected = "ほおばみそ"
+note = "飛騨、朴葉=ほおば (default ぼくよう)"
+
+# ─── (元: probe_food_20260619.toml) ───
+# 2026-06-19 料理・食べ物名 probe 由来の回帰 lock (中華料理)。
+# ja は和食・熟字訓 (炒飯/酢豚/稲荷寿司/茶碗蒸し/天麩羅/善哉…) は成熟、
+# kanji default で全壊する中華系のみ補充。青椒肉絲 は compat(絲→糸) 正規化に注意。
+
+[[case]]
+input = "担々麺"
+mode = "hiragana"
+expected = "たんたんめん"
+note = "旧 たんだんめん (々 連濁誤)"
+
+[[case]]
+input = "八宝菜"
+mode = "hiragana"
+expected = "はっぽうさい"
+note = "旧 はちたからさい"
+
+[[case]]
+input = "回鍋肉"
+mode = "hiragana"
+expected = "ほいこーろー"
+note = "旧 かいなべにく"
+
+[[case]]
+input = "青椒肉絲"
+mode = "hiragana"
+expected = "ちんじゃおろーす"
+note = "旧 あおはじかみにくし。絲→糸 compat 正規化で key=青椒肉糸"
+
+# ─── (元: probe_game_20260619.toml) ───
+# 2026-06-19 ゲームキャラ名 probe (原神/崩壊スターレイル/SEKIRO)。公式日本語読み。
+# 神里綾華/丹恒/停雲/弦一郎 等は IPADIC 正読。嘉明=よしあき(武将)homograph 見送り。
+
+[[case]]
+input = "鍾離"
+mode = "hiragana"
+expected = "しょうり"
+note = "原神 Zhongli (旧 あつめるり)"
+
+[[case]]
+input = "楓原万葉"
+mode = "hiragana"
+expected = "かえではらかずは"
+note = "原神 (全壊 かえでげんまは)"
+
+[[case]]
+input = "八重神子"
+mode = "hiragana"
+expected = "やえみこ"
+note = "原神 (旧 はちじゅうみこ)"
+
+[[case]]
+input = "荒瀧一斗"
+mode = "hiragana"
+expected = "あらたきいっと"
+note = "原神。瀧→滝 compat 正規化で key=荒滝一斗"
+
+[[case]]
+input = "珊瑚宮心海"
+mode = "hiragana"
+expected = "さんごのみやこころみ"
+note = "原神 Kokomi"
+
+[[case]]
+input = "鹿野院平蔵"
+mode = "hiragana"
+expected = "かのいんへいぞう"
+note = "原神 Heizou"
+
+[[case]]
+input = "香菱"
+mode = "hiragana"
+expected = "しゃんりん"
+note = "原神 Xiangling (旧 こうひし)"
+
+[[case]]
+input = "鏡流"
+mode = "hiragana"
+expected = "きょうりゅう"
+note = "スターレイル Jingliu (旧 かがみりゅう)"
+
+[[case]]
+input = "葦名"
+mode = "hiragana"
+expected = "あしな"
+note = "SEKIRO/戦国大名 (旧 あしめい)"
+
+# ─── (元: probe_garden_20260619.toml) ───
+# 2026-06-19 庭園・観光施設・宿場町 第12弾。
+# 兼六園/後楽園/通天閣/道頓堀/白川郷/合掌造り/倉敷美観地区 等は ja 正読。
+# 鶴舞公園=つるま/つるまい 両義は見送り。〜宿=じゅく は宿場町固有。
+
+[[case]]
+input = "偕楽園"
+mode = "hiragana"
+expected = "かいらくえん"
+note = "偕=かい (旧 ともにらくえん)"
+
+[[case]]
+input = "渡月橋"
+mode = "hiragana"
+expected = "とげつきょう"
+note = "嵐山 (旧 とつきはし)"
+
+[[case]]
+input = "海遊館"
+mode = "hiragana"
+expected = "かいゆうかん"
+note = "海=かい (旧 うみゆうかん)"
+
+[[case]]
+input = "函館山"
+mode = "hiragana"
+expected = "はこだてやま"
+note = "山=やま (旧 はこだてさん)"
+
+[[case]]
+input = "妻籠宿"
+mode = "hiragana"
+expected = "つまごじゅく"
+note = "妻籠=つまご、宿=じゅく (全壊 つまろうやど)"
+
+[[case]]
+input = "馬籠宿"
+mode = "hiragana"
+expected = "まごめじゅく"
+note = "宿=じゅく (旧 まごめやど)"
+
+[[case]]
+input = "奈良井宿"
+mode = "hiragana"
+expected = "ならいじゅく"
+note = "宿=じゅく"
+
+[[case]]
+input = "大内宿"
+mode = "hiragana"
+expected = "おおうちじゅく"
+note = "宿=じゅく"
+
+# ─── (元: probe_genbun10_20260619.toml) ───
+# 2026-06-19 自作例文 round 10 由来の dict 改善 回帰 lock。
+# の+単漢字 homograph (境/糧)。詳細: probe12。
+# ★戦闘/ゲーム漢語 (殲滅/潰走/膠着/矜持/完封…) は ja 全正、homograph 2件のみ。
+
+# ─── 境 = さかい (「〜の境」、 国境/境界/心境 は キョウ 維持) ───
+[[case]]
+input = "生死の境をさまよう"
+mode = "hiragana"
+expected = "せいしのさかいをさまよう"
+note = "旧 きょう"
+
+[[case]]
+input = "夢と現実の境"
+mode = "hiragana"
+expected = "ゆめとげんじつのさかい"
+
+# 回帰ガード: 境 compound = キョウ
+[[case]]
+input = "国境の町"
+mode = "hiragana"
+expected = "こっきょうのまち"
+
+[[case]]
+input = "心境の変化"
+mode = "hiragana"
+expected = "しんきょうのへんか"
+
+# ─── 糧 = かて (「〜の糧 / 生きる糧」、 食糧/兵糧 は リョウ 維持) ───
+[[case]]
+input = "心の糧になる"
+mode = "hiragana"
+expected = "こころのかてになる"
+note = "旧 りょう"
+
+[[case]]
+input = "生きる糧"
+mode = "hiragana"
+expected = "いきるかて"
+note = "prev=る (動詞連体形) も かて"
+
+# 回帰ガード: 糧 compound = リョウ
+[[case]]
+input = "食糧難に苦しむ"
+mode = "hiragana"
+expected = "しょくりょうなんにくるしむ"
+
+[[case]]
+input = "兵糧攻め"
+mode = "hiragana"
+expected = "ひょうろうぜめ"
+
+# ─── (元: probe_genbun2_20260619.toml) ───
+# 2026-06-19 自作例文 (gen_probe) round 2 由来の dict 改善 回帰 lock。
+# 文語/四字熟語/単漢字 homograph の の-文脈割れ。詳細: cands3_20260619.txt の DIFF triage。
+
+# ─── 虎視眈々 = コシタンタン (々 畳字形) ───
+[[case]]
+input = "虎視眈々と狙う"
+mode = "hiragana"
+expected = "こしたんたんとねらう"
+note = "旧 とらしにらむにらむ (眈々 の 々 で眈=にらむ破損、眈眈 形は正)"
+
+# ─── 末 = すえ (「〜の末」 文脈、 prev=の) ───
+[[case]]
+input = "交渉の末に妥結"
+mode = "hiragana"
+expected = "こうしょうのすえにだけつ"
+note = "旧 まつ。 prev=の の standalone 末 → すえ"
+
+[[case]]
+input = "苦労の末に決断"
+mode = "hiragana"
+expected = "くろうのすえにけつだん"
+
+# 回帰ガード: 末期/末路 は 2 字 token で 末 standalone でないため マツ 維持
+[[case]]
+input = "病の末期"
+mode = "hiragana"
+expected = "びょうのまっき"
+
+[[case]]
+input = "事業の末路"
+mode = "hiragana"
+expected = "じぎょうのまつろ"
+
+# ─── 業 = ゴウ (仏教の業、 standalone 業+助詞) ───
+[[case]]
+input = "人間の業の深さ"
+mode = "hiragana"
+expected = "にんげんのごうのふかさ"
+note = "旧 ぎょう。 prev=の の standalone 業 → ゴウ"
+
+[[case]]
+input = "業が深い"
+mode = "hiragana"
+expected = "ごうがふかい"
+
+# 回帰ガード: 事業/作業 は ギョウ 維持
+[[case]]
+input = "事業の拡大"
+mode = "hiragana"
+expected = "じぎょうのかくだい"
+
+# ─── 悪戯 = いたずら (「悪戯か」 で あくぎ 化け防止) ───
+[[case]]
+input = "運命の悪戯か"
+mode = "hiragana"
+expected = "うんめいのいたずらか"
+note = "旧 あくぎ。 終助詞 か で再分割→band1000 jukugo 固定"
+
+[[case]]
+input = "悪戯な笑み"
+mode = "hiragana"
+expected = "いたずらなえみ"
+
+# ─── (元: probe_genbun3_20260619.toml) ───
+# 2026-06-19 自作例文 round 3 由来の dict 改善 回帰 lock。
+# 畳語「々」(副詞/形容詞/四字熟語) + 的 homograph。詳細: cands4_20260619.txt の DIFF triage。
+# ★々 は重複漢字へ早期展開されるため kanji.match next_eq="々" が死ぬ → full surface jukugo で固定。
+
+# ─── 畳語副詞 (々) ───
+[[case]]
+input = "渋々承知する"
+mode = "hiragana"
+expected = "しぶしぶしょうちする"
+note = "旧 じゅうじゅう"
+
+[[case]]
+input = "益々盛り上がる"
+mode = "hiragana"
+expected = "ますますもりあがる"
+note = "旧 えきえき (益 next_eq=々→ます は死 match)"
+
+[[case]]
+input = "転々と移り住む"
+mode = "hiragana"
+expected = "てんてんとうつりすむ"
+note = "旧 てんでん"
+
+[[case]]
+input = "遅々として進まぬ"
+mode = "hiragana"
+expected = "ちちとしてすすまぬ"
+
+[[case]]
+input = "着々と進める"
+mode = "hiragana"
+expected = "ちゃくちゃくとすすめる"
+note = "旧 ちゃくぢゃく"
+
+[[case]]
+input = "寒々とした部屋"
+mode = "hiragana"
+expected = "さむざむとしたへや"
+
+[[case]]
+input = "広々とした草原"
+mode = "hiragana"
+expected = "ひろびろとしたそうげん"
+
+[[case]]
+input = "晴々とした気分"
+mode = "hiragana"
+expected = "はればれとしたきぶん"
+
+[[case]]
+input = "凜々しい姿"
+mode = "hiragana"
+expected = "りりしいすがた"
+
+# ─── 畳字四字熟語 (々) ───
+[[case]]
+input = "津々浦々を巡る"
+mode = "hiragana"
+expected = "つつうらうらをめぐる"
+
+[[case]]
+input = "喧々囂々の議論"
+mode = "hiragana"
+expected = "けんけんごうごうのぎろん"
+
+[[case]]
+input = "侃々諤々の論争"
+mode = "hiragana"
+expected = "かんかんがくがくのろんそう"
+
+[[case]]
+input = "丁々発止のやり取り"
+mode = "hiragana"
+expected = "ちょうちょうはっしのやりとり"
+
+# ─── 動詞 (古語/誤読) ───
+[[case]]
+input = "論う癖がある"
+mode = "hiragana"
+expected = "あげつらうくせがある"
+note = "旧 ろんう"
+
+[[case]]
+input = "準えて話す"
+mode = "hiragana"
+expected = "なぞらえてはなす"
+note = "旧 なずらえて"
+
+# ─── 的 = まと (「〜の的」 標的名詞) ───
+[[case]]
+input = "噂の的"
+mode = "hiragana"
+expected = "うわさのまと"
+note = "旧 てき。 prev=の の standalone 的 → まと"
+
+[[case]]
+input = "批判の的になる"
+mode = "hiragana"
+expected = "ひはんのまとになる"
+
+[[case]]
+input = "憧れの的"
+mode = "hiragana"
+expected = "あこがれのまと"
+note = "送り仮名 stem で prev=の match 不発 → jukugo 個別固定"
+
+# 回帰ガード: 接尾辞 的 = テキ 維持
+[[case]]
+input = "具体的な例"
+mode = "hiragana"
+expected = "ぐたいてきなれい"
+
+[[case]]
+input = "的確な判断"
+mode = "hiragana"
+expected = "てきかくなはんだん"
+
+# ─── (元: probe_genbun4_20260619.toml) ───
+# 2026-06-19 自作例文 round 4 由来の dict 改善 回帰 lock。
+# 畳語「々」第2弾 + 出生地/傀儡政権。詳細: cands5_20260619.txt の DIFF triage。
+
+# ─── 畳語副詞/形容詞 (々) ───
+[[case]]
+input = "薄々気づいていた"
+mode = "hiragana"
+expected = "うすうすきづいていた"
+note = "旧 はくばく"
+
+[[case]]
+input = "折々の景色"
+mode = "hiragana"
+expected = "おりおりのけしき"
+note = "旧 おお (折=お で破損)"
+
+[[case]]
+input = "種々の問題"
+mode = "hiragana"
+expected = "しゅじゅのもんだい"
+note = "旧 たねだね"
+
+[[case]]
+input = "点々と血が落ちる"
+mode = "hiragana"
+expected = "てんてんとちがおちる"
+note = "旧 てんでん"
+
+[[case]]
+input = "喜々として働く"
+mode = "hiragana"
+expected = "ききとしてはたらく"
+note = "旧 きぎ"
+
+[[case]]
+input = "嬉々とした表情"
+mode = "hiragana"
+expected = "ききとしたひょうじょう"
+
+[[case]]
+input = "悶々とする夜"
+mode = "hiragana"
+expected = "もんもんとするよる"
+note = "旧 もだえもだえ"
+
+[[case]]
+input = "太々しい態度"
+mode = "hiragana"
+expected = "ふてぶてしいたいど"
+note = "旧 たいだいしい"
+
+# ─── 畳字四字熟語 (々) ───
+[[case]]
+input = "奇々怪々な事件"
+mode = "hiragana"
+expected = "ききかいかいなじけん"
+note = "旧 きぎかいがい"
+
+[[case]]
+input = "子々孫々まで"
+mode = "hiragana"
+expected = "ししそんそんまで"
+note = "旧 こごまごまごま (破損)"
+
+# ─── 出生地 (出生届と同型) ───
+[[case]]
+input = "出生地はどこ"
+mode = "hiragana"
+expected = "しゅっしょうちはどこ"
+note = "旧 しゅつきじ (破損)"
+
+# ─── 傀儡政権 = かいらい (傀儡師=くぐつ は維持) ───
+[[case]]
+input = "傀儡政権"
+mode = "hiragana"
+expected = "かいらいせいけん"
+note = "旧 くぐつ"
+
+# 回帰ガード
+[[case]]
+input = "傀儡師の人形"
+mode = "hiragana"
+expected = "くぐつしのにんぎょう"
+
+[[case]]
+input = "黒々とした髪"
+mode = "hiragana"
+expected = "くろぐろとしたかみ"
+
+[[case]]
+input = "種類が多い"
+mode = "hiragana"
+expected = "しゅるいがおおい"
+
+# ─── (元: probe_genbun5_20260619.toml) ───
+# 2026-06-19 自作例文 round 5 由来の dict 改善 回帰 lock。
+# 漁=リョウ熟語 + 黒子 homograph (next2 disambiguation)。詳細: cands6_20260619.txt。
+# ★この vein (子/音/汁 重箱湯桶) は ja 大半成熟、実バグは5件のみ。
+
+# ─── 漁 = リョウ (休漁/禁漁、大漁/不漁と同型) ───
+[[case]]
+input = "時化で休漁"
+mode = "hiragana"
+expected = "しけできゅうりょう"
+note = "旧 きゅうぎょ"
+
+[[case]]
+input = "禁漁区域"
+mode = "hiragana"
+expected = "きんりょうくいき"
+note = "旧 きんぎょ"
+
+# ─── 漁火 = いさりび (熟字訓) ───
+[[case]]
+input = "漁火が見える"
+mode = "hiragana"
+expected = "いさりびがみえる"
+note = "旧 ぎょか"
+
+# ─── 黒子 = クロコ (「黒子に徹する」 裏方、 next2=徹 で ほくろ と区別) ───
+[[case]]
+input = "黒子に徹する"
+mode = "hiragana"
+expected = "くろこにてっする"
+note = "旧 ほくろ。 next2_starts_any=[徹] で stagehand 判別"
+
+# 回帰ガード: 顔の黒子 = ほくろ 維持
+[[case]]
+input = "顔の黒子"
+mode = "hiragana"
+expected = "かおのほくろ"
+
+# 回帰ガード: 漁師/漁業/大漁 維持
+[[case]]
+input = "漁師町の朝"
+mode = "hiragana"
+expected = "りょうしまちのあさ"
+
+[[case]]
+input = "漁業組合"
+mode = "hiragana"
+expected = "ぎょぎょうくみあい"
+
+# ─── (元: probe_genbun6_20260619.toml) ───
+# 2026-06-19 自作例文 round 6 由来の dict 改善 回帰 lock。
+# 難読動詞 (full-reading 二重化 / default 誤)。詳細: cands7_20260619.txt。
+# ★難読動詞 vein は ja 大半正読 (蹲る/俯く/誑かす/罵る/呻く/喘ぐ/捗る/迸る 等)、実バグは4字のみ。
+
+# ─── 慄く = おののく (戦慄/慄然 は リツ 維持) ───
+[[case]]
+input = "恐怖に慄く"
+mode = "hiragana"
+expected = "きょうふにおののく"
+note = "旧 りつく"
+
+[[case]]
+input = "戦慄が走る"
+mode = "hiragana"
+expected = "せんりつがはしる"
+
+# ─── 顫える = ふるえる (unihan 顫=ふるえる→ふる、二重化解消) ───
+[[case]]
+input = "顫える指"
+mode = "hiragana"
+expected = "ふるえるゆび"
+note = "旧 ふるえるえる (full-reading 二重化)"
+
+# ─── 捥ぐ = もぐ (unihan 捥=ワン→も) ───
+[[case]]
+input = "捥ぎ取る"
+mode = "hiragana"
+expected = "もぎとる"
+note = "旧 わんぎとる"
+
+[[case]]
+input = "林檎を捥ぐ"
+mode = "hiragana"
+expected = "りんごをもぐ"
+
+# ─── 抉じ開ける = こじあける (抉る=えぐる は維持) ───
+[[case]]
+input = "扉を抉じ開ける"
+mode = "hiragana"
+expected = "とびらをこじあける"
+note = "旧 えぐるじあける"
+
+[[case]]
+input = "傷口を抉る"
+mode = "hiragana"
+expected = "きずぐちをえぐる"
+
+# ─── (元: probe_genbun7_20260619.toml) ───
+# 2026-06-19 自作例文 round 7 由来の dict 改善 回帰 lock。
+# 宴 homograph (の宴=うたげ)。詳細: cands8_20260619.txt。
+# ★配信慣用句・四字熟語22個は ja 全正 (油断大敵/朝令暮改/換骨奪胎/画竜点睛/呉越同舟…)、実バグは宴のみ。
+
+# ─── 宴 = うたげ (「〜の宴」 + 宴-initial 慣用句) ───
+[[case]]
+input = "酒池肉林の宴"
+mode = "hiragana"
+expected = "しゅちにくりんのうたげ"
+note = "旧 えん。 prev=の の standalone 宴 → うたげ"
+
+[[case]]
+input = "夜の宴"
+mode = "hiragana"
+expected = "よるのうたげ"
+
+[[case]]
+input = "宴もたけなわ"
+mode = "hiragana"
+expected = "うたげもたけなわ"
+note = "宴-initial、 prev=の 不発につき jukugo 固定"
+
+# 回帰ガード: 宴 compound = エン 維持 (next 助詞 rule は晩宴等を割るため不採用)
+[[case]]
+input = "晩宴に招く"
+mode = "hiragana"
+expected = "ばんえんにまねく"
+
+[[case]]
+input = "宴会場"
+mode = "hiragana"
+expected = "えんかいじょう"
+
+[[case]]
+input = "披露宴に出席"
+mode = "hiragana"
+expected = "ひろうえんにしゅっせき"
+
+# ─── (元: probe_genbun8_20260619.toml) ───
+# 2026-06-19 自作例文 round 8 由来の dict 改善 回帰 lock。
+# 畳語「々」第3弾 (連濁誤/音訓誤が大量)。詳細: cands9_20260619.txt。
+# ★古語副詞 (具に/徐に/須らく/偏に/夙に/頗る) は ja 正、畳語々の連濁/音読み化けが主バグ源。
+
+[[case]]
+input = "是々非々で臨む"
+mode = "hiragana"
+expected = "ぜぜひひでのぞむ"
+note = "旧 ぜぜひび"
+
+[[case]]
+input = "興味津々で聞く"
+mode = "hiragana"
+expected = "きょうみしんしんできく"
+note = "旧 きょうみつづ (頻出語の破損)"
+
+[[case]]
+input = "翌々日に届く"
+mode = "hiragana"
+expected = "よくよくじつにとどく"
+note = "旧 よくよくにち (翌々年/翌々週は正)"
+
+[[case]]
+input = "刻々と変化する"
+mode = "hiragana"
+expected = "こくこくとへんかする"
+note = "旧 こくごく"
+
+[[case]]
+input = "燦々と輝く太陽"
+mode = "hiragana"
+expected = "さんさんとかがやくたいよう"
+note = "旧 さんざん (散々と別)"
+
+[[case]]
+input = "千々に乱れる"
+mode = "hiragana"
+expected = "ちぢにみだれる"
+note = "旧 せんぜん"
+
+[[case]]
+input = "呉々もよろしく"
+mode = "hiragana"
+expected = "くれぐれもよろしく"
+note = "旧 ごご"
+
+[[case]]
+input = "度々すみません"
+mode = "hiragana"
+expected = "たびたびすみません"
+note = "旧 たびだび"
+
+[[case]]
+input = "諸々の事情"
+mode = "hiragana"
+expected = "もろもろのじじょう"
+note = "旧 しょじょ"
+
+[[case]]
+input = "万々歳だ"
+mode = "hiragana"
+expected = "ばんばんざいだ"
+note = "旧 まんまんさい"
+
+[[case]]
+input = "昏々と眠る"
+mode = "hiragana"
+expected = "こんこんとねむる"
+note = "旧 こんごん"
+
+[[case]]
+input = "切々と訴える"
+mode = "hiragana"
+expected = "せつせつとうったえる"
+note = "旧 せつぜつ"
+
+[[case]]
+input = "頻々と起こる"
+mode = "hiragana"
+expected = "ひんぴんとおこる"
+note = "旧 ひんびん"
+
+[[case]]
+input = "弥々始まる"
+mode = "hiragana"
+expected = "いよいよはじまる"
+note = "旧 やや"
+
+[[case]]
+input = "皎々たる月"
+mode = "hiragana"
+expected = "こうこうたるつき"
+note = "旧 きよいぎよい (破損)"
+
+# 回帰ガード: 散々/時々 は不変
+[[case]]
+input = "散々な目に遭う"
+mode = "hiragana"
+expected = "さんざんなめにあう"
+
+[[case]]
+input = "翌々年の春"
+mode = "hiragana"
+expected = "よくよくねんのはる"
+
+# ─── (元: probe_genbun9_20260619.toml) ───
+# 2026-06-19 自作例文 round 9 由来の dict 改善 回帰 lock。
+# 畳語「々」第4弾 (連濁誤 + full-reading 破損)。詳細: cands10_20260619.txt。
+# ★畳語 vein 累計71件。超ニッチ文語 (呶々/亭々/鏘々/眇々/碌々) は streaming に出ないため見送り。
+
+[[case]]
+input = "三々五々集まる"
+mode = "hiragana"
+expected = "さんさんごごあつまる"
+note = "旧 さんざんごご"
+
+[[case]]
+input = "三々九度の盃"
+mode = "hiragana"
+expected = "さんさんくどのさかずき"
+note = "旧 さんざんきゅうど"
+
+[[case]]
+input = "個々の事情"
+mode = "hiragana"
+expected = "ここのじじょう"
+note = "旧 こご"
+
+[[case]]
+input = "平々凡々な日々"
+mode = "hiragana"
+expected = "へいへいぼんぼんなひび"
+note = "旧 へいべい"
+
+[[case]]
+input = "多士済々の顔ぶれ"
+mode = "hiragana"
+expected = "たしせいせいのかおぶれ"
+note = "旧 たしさいざい"
+
+[[case]]
+input = "喋々と喋る"
+mode = "hiragana"
+expected = "ちょうちょうとしゃべる"
+note = "旧 ちょうぢょう"
+
+[[case]]
+input = "滔々と流れる"
+mode = "hiragana"
+expected = "とうとうとながれる"
+note = "旧 破損"
+
+[[case]]
+input = "煌々と灯る"
+mode = "hiragana"
+expected = "こうこうとともる"
+note = "旧 こうごう"
+
+[[case]]
+input = "飄々とした性格"
+mode = "hiragana"
+expected = "ひょうひょうとしたせいかく"
+note = "旧 破損"
+
+[[case]]
+input = "眈々と狙う"
+mode = "hiragana"
+expected = "たんたんとねらう"
+note = "旧 破損 (虎視眈々は別途)"
+
+[[case]]
+input = "活々とした動き"
+mode = "hiragana"
+expected = "いきいきとしたうごき"
+note = "旧 かつがつ"
+
+[[case]]
+input = "楚々とした美人"
+mode = "hiragana"
+expected = "そそとしたびじん"
+note = "旧 そぞ"
+
+[[case]]
+input = "山の幸と海の幸"
+mode = "hiragana"
+expected = "やまのさちとうみのさち"
+note = "旧 こう (幸 default コウ)"
+
+# 回帰ガード
+[[case]]
+input = "虎視眈々と狙う"
+mode = "hiragana"
+expected = "こしたんたんとねらう"
+
+[[case]]
+input = "幸せな日々"
+mode = "hiragana"
+expected = "しあわせなひび"
+
+# ─── (元: probe_genbun_20260619.toml) ───
+# 2026-06-19 自作例文 (gen_probe) + VV 比較 由来の dict 改善 回帰 lock。
+# 詳細: data/_analysis/scripts/cands{,2}_20260619.txt の DIFF を個別 triage。
+# 祭事/宗教/地名 vein は ja 大半成熟、 実バグは本ファイルの 8 件のみ。
+
+# ─── 祭囃子 = まつりばやし (祭 訓 + 連濁) ───
+[[case]]
+input = "祭囃子が聞こえる"
+mode = "hiragana"
+expected = "まつりばやしがきこえる"
+note = "旧 さいはやし (祭=サイ 音読み + 連濁抜け)"
+
+# ─── 乱高下 = らんこうげ (下 呉音 ゲ) ───
+[[case]]
+input = "為替が乱高下する"
+mode = "hiragana"
+expected = "かわせがらんこうげする"
+note = "旧 らんこうか"
+
+# ─── 中小企業 = ちゅうしょう (「の」 文脈で 中→ナカ 割れ防止) ───
+[[case]]
+input = "東大阪の中小企業"
+mode = "hiragana"
+expected = "ひがしおおさかのちゅうしょうきぎょう"
+note = "旧 なかしょう。 単独は正だが prev=の で 中 kanji block が default ナカ に割る → band1000 jukugo で固定"
+
+[[case]]
+input = "地域の中小企業"
+mode = "hiragana"
+expected = "ちいきのちゅうしょうきぎょう"
+
+# ─── 斑鳩 = いかるが (奈良の地名、 が 脱落防止) ───
+[[case]]
+input = "斑鳩の里"
+mode = "hiragana"
+expected = "いかるがのさと"
+note = "旧 いかる。 斑鳩町 は正だが単体で が 脱落"
+
+[[case]]
+input = "斑鳩の法隆寺"
+mode = "hiragana"
+expected = "いかるがのほうりゅうじ"
+
+# ─── 〜筋 = すじ (大阪の通り名、 御堂筋と同型) ───
+[[case]]
+input = "天神橋筋商店街"
+mode = "hiragana"
+expected = "てんじんばしすじしょうてんがい"
+note = "旧 てんじんばしきん。 通り名の 筋 は すじ"
+
+[[case]]
+input = "四つ橋筋を歩く"
+mode = "hiragana"
+expected = "よつばしすじをあるく"
+
+# ─── (元: probe_geo_20260619.toml) ───
+# 2026-06-19 自然地理名 probe 由来の回帰 lock。
+# ja は川/湖/岬/峠/滝を高精度で正読 (揖斐川/神通川/宍道湖/屈斜路湖/支笏湖/足摺岬/
+# 襟裳岬/碓氷峠/大菩薩峠/天橋立/東尋坊 全正、37/38)。実バグは 秋芳洞 のみ。
+
+[[case]]
+input = "秋芳洞"
+mode = "hiragana"
+expected = "あきよしどう"
+note = "山口の鍾乳洞、秋芳=あきよし (旧 しゅうほうどう)"
+
+[[case]]
+input = "屈斜路湖"
+mode = "hiragana"
+expected = "くっしゃろこ"
+note = "成熟確認"
+
+[[case]]
+input = "襟裳岬"
+mode = "hiragana"
+expected = "えりもみさき"
+note = "成熟確認"
+
+# ─── (元: probe_ghibli_20260619.toml) ───
+# 2026-06-19 ジブリ probe。荻野千尋/釜爺/腐海/風の谷 等は正読。湯婆婆=ゆばば(長音stylistic)。
+
+[[case]]
+input = "王蟲"
+mode = "hiragana"
+expected = "おうむ"
+note = "ナウシカ。蟲→虫 compat で key=王虫 (王蟲 入力も hit)"
+
+[[case]]
+input = "祟り神"
+mode = "hiragana"
+expected = "たたりがみ"
+note = "もののけ姫、神=がみ 連濁"
+
+[[case]]
+input = "紅の豚"
+mode = "hiragana"
+expected = "くれないのぶた"
+note = "作品名、紅=くれない (default べに)"
+
+[[case]]
+input = "平成狸合戦"
+mode = "hiragana"
+expected = "へいせいたぬきがっせん"
+note = "合戦=がっせん 連濁"
+
+# ─── (元: probe_gintama_20260619.toml) ───
+# 2026-06-19 銀魂キャラ probe。故事成語(塞翁が馬/四面楚歌/推敲/杞憂/画竜点睛/杜撰/忖度)は全成熟。
+# 近藤勲=いさお(銀魂) は 近藤勇=いさみ(新選組) と別。
+
+[[case]]
+input = "星海坊主"
+mode = "hiragana"
+expected = "ほしかいぼうず"
+note = "神楽の父 (default せいうみ)"
+
+[[case]]
+input = "万事屋"
+mode = "hiragana"
+expected = "よろずや"
+note = "万事屋銀ちゃん (default ばんじや)"
+
+[[case]]
+input = "近藤勲"
+mode = "hiragana"
+expected = "こんどういさお"
+note = "真選組局長、勲=いさお"
+
+[[case]]
+input = "志村妙"
+mode = "hiragana"
+expected = "しむらたえ"
+note = "妙=たえ (default みょう)"
+
+[[case]]
+input = "鬼兵隊"
+mode = "hiragana"
+expected = "きへいたい"
+note = "鬼=き (default おに)"
+
+# ─── (元: probe_heian_20260619.toml) ───
+# 2026-06-19 平安・古典の人物 probe。在原業平/紀貫之/安倍晴明/菅原道真/源義経 等は
+# 登録済/正読。源頼光=よりみつ/らいこう・藤原定家=ていか・天智天皇=てんじ/てんち は
+# 複数正読のため default 委ね。
+
+[[case]]
+input = "巴御前"
+mode = "hiragana"
+expected = "ともえごぜん"
+note = "御前=ごぜん (default おまえ)"
+
+[[case]]
+input = "山上憶良"
+mode = "hiragana"
+expected = "やまのうえのおくら"
+note = "万葉歌人 (default やまのえ)"
+
+[[case]]
+input = "役小角"
+mode = "hiragana"
+expected = "えんのおづの"
+note = "修験道開祖 (default やくおがく)"
+
+# ─── (元: probe_heroaca2_20260619.toml) ───
+# 2026-06-19 ヒロアカ残りキャラ probe (クラス1-A/敵連合)。荼毘=だび 等は既正。
+
+[[case]]
+input = "麗日お茶子"
+mode = "hiragana"
+expected = "うららかおちゃこ"
+note = "麗日=うららか (default れいにち)"
+
+[[case]]
+input = "蛙吹梅雨"
+mode = "hiragana"
+expected = "あすいつゆ"
+note = "蛙吹=あすい (default かえるすい)"
+
+[[case]]
+input = "八百万百"
+mode = "hiragana"
+expected = "やおよろずもも"
+note = "八百万=やおよろず/百=もも"
+
+[[case]]
+input = "死柄木弔"
+mode = "hiragana"
+expected = "しがらきとむら"
+note = "弔=とむら (default ちょう)"
+
+[[case]]
+input = "天喰環"
+mode = "hiragana"
+expected = "あまじきたまき"
+note = "天喰=あまじき/環=たまき"
+
+[[case]]
+input = "拳藤一佳"
+mode = "hiragana"
+expected = "けんどういつか"
+note = "拳藤=けんどう/一佳=いつか"
+
+# ─── (元: probe_history_20260619.toml) ───
+# 2026-06-19 歴史用語・古戦場名 probe 由来の回帰 lock (戦国/歴史ゲーム配信)。
+# 桶狭間/関ヶ原/川中島/姉川/応仁の乱/壬申の乱/楽市楽座/参勤交代/公方=くぼう/
+# 管領=かんれい/兵糧攻め/調略 は ja 正読。実バグ3件のみ。
+
+[[case]]
+input = "賤ヶ岳"
+mode = "hiragana"
+expected = "しずがたけ"
+note = "賤=しず + ヶ残留 + 岳=がく で全壊"
+
+[[case]]
+input = "三方ヶ原"
+mode = "hiragana"
+expected = "みかたがはら"
+note = "ヶ残留 + 原=げん"
+
+[[case]]
+input = "惣村"
+mode = "hiragana"
+expected = "そうそん"
+note = "中世の自治村、村=そん (旧 そうむら)"
+
+# ─── (元: probe_hokkaido2_20260619.toml) ───
+# 2026-06-19 北海道 難読市町村 round2。蘭越/寿都/留辺蘂=るべしべ/標茶=しべちゃ/別海/羅臼 等は正。
+# 豊富=ほうふ(豊富な) homograph 見送り。
+
+[[case]]
+input = "真狩"
+mode = "hiragana"
+expected = "まっかり"
+note = "北海道真狩村 (default まつかり)"
+
+[[case]]
+input = "美深"
+mode = "hiragana"
+expected = "びふか"
+note = "北海道美深町 (default ぶふか)"
+
+[[case]]
+input = "雄武"
+mode = "hiragana"
+expected = "おうむ"
+note = "北海道雄武町 (default おむ)"
+
+# ─── (元: probe_hokkaido_20260619.toml) ───
+# 2026-06-19 北海道・東北 難読地名 probe 由来の回帰 lock。
+# ja はアイヌ語系を驚異的に正読 (倶知安=くっちゃん/弟子屈=てしかが/占冠=しむかっぷ/
+# 神居古潭=かむいこたん/音威子府=おといねっぷ/及位=のぞき/椴法華=とどほっけ/象潟=きさかた)。
+# 実バグは 八幡平 のみ (雄勝=おがち/おがつ は homograph)。
+
+[[case]]
+input = "八幡平"
+mode = "hiragana"
+expected = "はちまんたい"
+note = "岩手/秋田の高原・市 (旧 やわただいら)"
+
+[[case]]
+input = "音威子府"
+mode = "hiragana"
+expected = "おといねっぷ"
+note = "成熟確認 (アイヌ語系)"
+
+[[case]]
+input = "及位"
+mode = "hiragana"
+expected = "のぞき"
+note = "成熟確認 (超難読)"
+
+# ─── (元: probe_holo2_20260619.toml) ───
+# 2026-06-19 ホロライブ round2 probe。獅白/沙花叉/儒烏風亭/鷹嶺/音乃瀬 等は既登録。
+# 癒月=ゆづき は既登録で正(Yuzuki Choco)、百鬼=ひゃっき homograph。
+
+[[case]]
+input = "潤羽るしあ"
+mode = "hiragana"
+expected = "うるはるしあ"
+note = "潤羽=うるは (default じゅんう)"
+
+[[case]]
+input = "潤羽"
+mode = "hiragana"
+expected = "うるは"
+note = "default じゅんう"
+
+# ─── (元: probe_holo_20260619.toml) ───
+# 2026-06-19 ホロライブ talent 名 probe。白上=しらかみ/猫又=ねこまた/沙花叉=さかまた/
+# 大空=おおぞら 等は登録済/正読。homograph 姓 (百鬼/大神/白銀/雪花) はフルネームで disambiguate。
+
+[[case]]
+input = "虎金妃"
+mode = "hiragana"
+expected = "こがねい"
+note = "虎金妃笹丸 (旧 とらきんひ)"
+
+[[case]]
+input = "響咲"
+mode = "hiragana"
+expected = "ひびきさき"
+note = "響咲リオナ (旧 きょうさ)"
+
+[[case]]
+input = "百鬼あやめ"
+mode = "hiragana"
+expected = "なきりあやめ"
+note = "bare 百鬼 は 百鬼夜行 と衝突回避"
+
+[[case]]
+input = "大神ミオ"
+mode = "hiragana"
+expected = "おおかみみお"
+note = "大神=おおかみ (bare は おおがみ homograph)"
+
+[[case]]
+input = "百鬼夜行"
+mode = "hiragana"
+expected = "ひゃっきやぎょう"
+note = "百鬼あやめ 追加後も jukugo 維持の確認"
+
+# ─── (元: probe_homograph_20260619.toml) ───
+# 2026-06-19 homograph 例文 由来の回帰 lock。
+# homograph 語 (大事/最中/人気/生物/分別) は ja が文脈で妥当な読みを選ぶ (= 成熟)、
+# 実バグは 風 standalone (形容詞後 文末) と 心地 連濁 のみ。
+
+# ─── 風 = かぜ (形容詞/の + 風 文末、 prev_ends_any に い/な 追加) ───
+[[case]]
+input = "心地よい風が吹く"
+mode = "hiragana"
+expected = "ここちよいかぜがふく"
+note = "旧 ふう (強い風/涼しい風も同様、文末で次助詞無し)"
+
+[[case]]
+input = "冷たい風"
+mode = "hiragana"
+expected = "つめたいかぜ"
+
+[[case]]
+input = "静かな風"
+mode = "hiragana"
+expected = "しずかなかぜ"
+
+# 回帰ガード: 風 compound = フウ
+[[case]]
+input = "台風が来る"
+mode = "hiragana"
+expected = "たいふうがくる"
+
+[[case]]
+input = "洋風建築"
+mode = "hiragana"
+expected = "ようふうけんちく"
+
+[[case]]
+input = "風船で遊ぶ"
+mode = "hiragana"
+expected = "ふうせんであそぶ"
+
+# ─── 心地 = ごこち 連濁 (住み/乗り。着/居は既に正) ───
+[[case]]
+input = "住み心地が良い"
+mode = "hiragana"
+expected = "すみごこちがよい"
+note = "旧 すみここち"
+
+[[case]]
+input = "乗り心地"
+mode = "hiragana"
+expected = "のりごこち"
+
+# 成熟確認: homograph 語は文脈で正読
+[[case]]
+input = "最中を食べる"
+mode = "hiragana"
+expected = "もなかをたべる"
+note = "和菓子の最中 (さいちゅう ではない)"
+
+[[case]]
+input = "人気のない道"
+mode = "hiragana"
+expected = "ひとけのないみち"
+note = "にんき ではない"
+
+# ─── (元: probe_hypmic_20260619.toml) ───
+# 2026-06-19 ヒプマイ キャラ probe。山田一郎/二郎/三郎 等は正読。
+# bare 乱数=らんすう/天国=てんごく/空却 は homograph でフルネームのみ。
+
+[[case]]
+input = "碧棺左馬刻"
+mode = "hiragana"
+expected = "あおひつぎさまとき"
+note = "碧棺=あおひつぎ/左馬刻=さまとき"
+
+[[case]]
+input = "伊弉冉一二三"
+mode = "hiragana"
+expected = "いざなみひふみ"
+note = "伊弉冉=いざなみ/一二三=ひふみ"
+
+[[case]]
+input = "波羅夷空却"
+mode = "hiragana"
+expected = "はらいくうこう"
+note = "波羅夷=はらい/空却=くうこう"
+
+[[case]]
+input = "四十物十四"
+mode = "hiragana"
+expected = "あいものじゅうし"
+note = "四十物=あいもの/十四=じゅうし"
+
+[[case]]
+input = "天国獄"
+mode = "hiragana"
+expected = "あまぐにひとし"
+note = "天国=あまぐに/獄=ひとし (bare 天国=てんごく)"
+
+[[case]]
+input = "白膠木簓"
+mode = "hiragana"
+expected = "ぬるでささら"
+note = "白膠木=ぬるで/簓=ささら"
+
+# ─── (元: probe_idol_20260619.toml) ───
+# 2026-06-19 ラブライブ/アイマス キャラ名 probe。絢瀬/東條/如月/四条 等は登録済/正読。
+# bare 高坂 は こうさか/たかさか homograph のためフルネームで登録。
+
+[[case]]
+input = "西木野"
+mode = "hiragana"
+expected = "にしきの"
+note = "西木野真姫 (default にしきや)"
+
+[[case]]
+input = "桜内"
+mode = "hiragana"
+expected = "さくらうち"
+note = "桜内梨子 (default さくらない)"
+
+[[case]]
+input = "高坂穂乃果"
+mode = "hiragana"
+expected = "こうさかほのか"
+note = "bare 高坂 は たかさか と homograph"
+
+[[case]]
+input = "速水奏"
+mode = "hiragana"
+expected = "はやみかなで"
+note = "デレマス 奏=かなで (default そう)"
+
+[[case]]
+input = "桑山千雪"
+mode = "hiragana"
+expected = "くわやまちゆき"
+note = "シャニマス (default せんせつ)"
+
+[[case]]
+input = "緋田美琴"
+mode = "hiragana"
+expected = "あけたみこと"
+note = "シャニマス 緋田=あけた"
+
+[[case]]
+input = "浅倉透"
+mode = "hiragana"
+expected = "あさくらとおる"
+note = "シャニマス 透=とおる"
+
+# ─── (元: probe_idolgame_20260619.toml) ───
+# 2026-06-19 あんスタ/うたプリ/A3 キャラ probe。
+
+[[case]]
+input = "朔間零"
+mode = "hiragana"
+expected = "さくまれい"
+note = "朔間=さくま (default さくかん)"
+
+[[case]]
+input = "守沢千秋"
+mode = "hiragana"
+expected = "もりさわちあき"
+note = "守沢=もりさわ (default しゅたく)"
+
+[[case]]
+input = "七種茨"
+mode = "hiragana"
+expected = "さいぐさいばら"
+note = "七種=さいぐさ/茨=いばら"
+
+[[case]]
+input = "一十木音也"
+mode = "hiragana"
+expected = "いっときおとや"
+note = "うたプリ 一十木=いっとき"
+
+[[case]]
+input = "聖川真斗"
+mode = "hiragana"
+expected = "ひじりかわまさと"
+note = "うたプリ 聖川=ひじりかわ (default しんと)"
+
+[[case]]
+input = "茅ヶ崎至"
+mode = "hiragana"
+expected = "ちがさきいたる"
+note = "A3 至=いたる (default し)"
+
+# ─── (元: probe_igaku_20260619.toml) ───
+# 2026-06-19 医学・病名 probe。蕁麻疹/嚥下/膵臓/帯状疱疹 等は正読 (34/38成熟)。齲歯=むしば valid。
+
+[[case]]
+input = "痂皮"
+mode = "hiragana"
+expected = "かひ"
+note = "default かさぶたひ"
+
+[[case]]
+input = "蜂窩織炎"
+mode = "hiragana"
+expected = "ほうかしきえん"
+note = "織=しき (default しょく)"
+
+[[case]]
+input = "吃逆"
+mode = "hiragana"
+expected = "きつぎゃく"
+note = "しゃっくり (default どもるぎゃく)"
+
+# ─── (元: probe_island_20260619.toml) ───
+# 2026-06-19 離島・島名 probe 由来の回帰 lock。
+# 西表島=いりおもてじま/小豆島=しょうどしま/波照間島/志賀島=しかのしま/厳島=いつくしま 等は ja 正読。
+# 天草=あまくさ/てんぐさ(食材)は homograph で default 委ね。
+
+[[case]]
+input = "軍艦島"
+mode = "hiragana"
+expected = "ぐんかんじま"
+note = "島=じま 連濁 (旧 ぐんかんしま)"
+
+[[case]]
+input = "初島"
+mode = "hiragana"
+expected = "はつしま"
+note = "熱海沖 (連濁誤 はつじま)"
+
+[[case]]
+input = "能古島"
+mode = "hiragana"
+expected = "のこのしま"
+note = "島=のしま (旧 のことう)"
+
+# ─── (元: probe_jojigo_20260619.toml) ───
+# 2026-06-19 畳語々/地名/homograph 例文 probe 由来の回帰 lock。
+# 連濁複合語 vein は成熟確認 (47/49)、畳語々 literary tail も密度低下 (35/37) だが
+# 常用語 (日々/代々木/易々) と頻出地名/四字熟語に実バグが残存。
+
+# ─── 旋風 = センプウ (旧 ツムジカゼ。○○旋風/旋風を巻き起こす が dominant) ───
+[[case]]
+input = "旋風を巻き起こす"
+mode = "hiragana"
+expected = "せんぷうをまきおこす"
+note = "旧 つむじかぜ"
+
+# ─── 日々 = ヒビ (旧 にちにち。「な日々」文脈は正だが bare で化け) ───
+[[case]]
+input = "日々"
+mode = "hiragana"
+expected = "ひび"
+note = "旧 にちにち (standalone)"
+
+# ─── 易々 = ヤスヤス (旧 えきえき。益々 と同型の々 dead-match) ───
+[[case]]
+input = "易々と"
+mode = "hiragana"
+expected = "やすやすと"
+note = "旧 えきえきと"
+
+# ─── 明々白々 = メイメイハクハク (旧 はくばく 連濁誤) ───
+[[case]]
+input = "明々白々"
+mode = "hiragana"
+expected = "めいめいはくはく"
+note = "旧 めいめいはくばく"
+
+# ─── 代々木 = ヨヨギ (旧 だいだいもく。代々木公園/上原) ───
+[[case]]
+input = "代々木公園"
+mode = "hiragana"
+expected = "よよぎこうえん"
+note = "旧 だいだいもく"
+
+[[case]]
+input = "代々木上原"
+mode = "hiragana"
+expected = "よよぎうえはら"
+note = "上原 が うえげん に破損"
+
+# ─── (元: probe_jojo2_20260619.toml) ───
+# 2026-06-19 ジョジョ/黒バス キャラ probe。東方仗助/岸辺露伴/空条承太郎 等は既正。
+# 康一/由花子(generic given name)・黒子=くろこ/ほくろ homograph は見送り。
+
+[[case]]
+input = "虹村形兆"
+mode = "hiragana"
+expected = "にじむらけいちょう"
+note = "形兆=けいちょう (default かたちょう)"
+
+[[case]]
+input = "億泰"
+mode = "hiragana"
+expected = "おくやす"
+note = "虹村億泰 (default おくたい)"
+
+[[case]]
+input = "噴上裕也"
+mode = "hiragana"
+expected = "ふんがみゆうや"
+note = "噴上=ふんがみ"
+
+[[case]]
+input = "緑間真太郎"
+mode = "hiragana"
+expected = "みどりましんたろう"
+note = "黒バス 緑間=みどりま"
+
+[[case]]
+input = "火神大我"
+mode = "hiragana"
+expected = "かがみたいが"
+note = "黒バス 火神=かがみ"
+
+[[case]]
+input = "日向順平"
+mode = "hiragana"
+expected = "ひゅうがじゅんぺい"
+note = "黒バス 日向=ひゅうが"
+
+# ─── (元: probe_jujutsu2_20260619.toml) ───
+# 2026-06-19 呪術廻戦 probe。狗巻棘/釘崎/脹相/漏瑚/秤金次/禅院真希 等は正読。真人=まさと homograph 見送り。
+
+[[case]]
+input = "鹿紫雲一"
+mode = "hiragana"
+expected = "かしもはじめ"
+note = "鹿紫雲=かしも (default しかしうん)"
+
+[[case]]
+input = "加茂憲紀"
+mode = "hiragana"
+expected = "かものりとし"
+note = "憲紀=のりとし (default けんき)"
+
+[[case]]
+input = "乙骨"
+mode = "hiragana"
+expected = "おっこつ"
+note = "乙骨憂太 (default おつこつ)"
+
+[[case]]
+input = "夏油"
+mode = "hiragana"
+expected = "げとう"
+note = "夏油傑 (default なつあぶら)"
+
+# ─── (元: probe_jukujikun_20260619.toml) ───
+# 2026-06-19 熟字訓 例文 由来の回帰 lock。
+# 熟字訓は ja 圧倒的に正読 (海月=くらげ/心太=ところてん/蟷螂=かまきり/吾亦紅=われもこう/
+# 善知鳥=うとう/不如帰=ほととぎす/啄木鳥=きつつき 等 VV を凌駕)。実バグは 棘 default のみ。
+
+# ─── 棘 = とげ (unihan いばら→とげ。とげが支配的) ───
+[[case]]
+input = "棘が刺さる"
+mode = "hiragana"
+expected = "とげがささる"
+note = "旧 いばら"
+
+[[case]]
+input = "薔薇の棘"
+mode = "hiragana"
+expected = "ばらのとげ"
+
+[[case]]
+input = "棘のある言葉"
+mode = "hiragana"
+expected = "とげのあることば"
+
+# 回帰ガード: 棘=キョク compound / 茨=いばら 別字
+[[case]]
+input = "棘皮動物"
+mode = "hiragana"
+expected = "きょくひどうぶつ"
+
+[[case]]
+input = "茨の道を行く"
+mode = "hiragana"
+expected = "いばらのみちをいく"
+
+# 成熟確認: 熟字訓
+[[case]]
+input = "海月が浮かぶ"
+mode = "hiragana"
+expected = "くらげがうかぶ"
+
+[[case]]
+input = "土竜を捕まえる"
+mode = "hiragana"
+expected = "もぐらをつかまえる"
+
+# ─── (元: probe_kabuki_20260619.toml) ───
+# 2026-06-19 歌舞伎・落語 演目 probe。連獅子/勧進帳/菅原伝授手習鑑/鰍沢/厩火事 等は正読。
+# 女形=おんながた valid、暫=1字 見送り。
+
+[[case]]
+input = "寿限無"
+mode = "hiragana"
+expected = "じゅげむ"
+note = "落語 (default じゅげんむ)"
+
+[[case]]
+input = "文七元結"
+mode = "hiragana"
+expected = "ぶんしちもっとい"
+note = "元結=もっとい (default もとゆい)"
+
+[[case]]
+input = "火焔太鼓"
+mode = "hiragana"
+expected = "かえんだいこ"
+note = "太鼓=だいこ 連濁 (default たいこ)"
+
+[[case]]
+input = "黄金餅"
+mode = "hiragana"
+expected = "こがねもち"
+note = "落語、黄金=こがね (default おうごん)"
+
+[[case]]
+input = "三人吉三"
+mode = "hiragana"
+expected = "さんにんきちさ"
+note = "吉三=きちさ (default きちぞう)"
+
+# ─── (元: probe_kankore_20260619.toml) ───
+# 2026-06-19 艦これ艦娘 probe。金剛/榛名/霧島/愛宕/熊野/扶桑 等は正読。神通/最上/川内 homograph 見送り。
+
+[[case]]
+input = "蒼龍"
+mode = "hiragana"
+expected = "そうりゅう"
+note = "蒼=そう (default あおりゅう)"
+
+[[case]]
+input = "瑞鶴"
+mode = "hiragana"
+expected = "ずいかく"
+note = "鶴=かく (default ずいつる)"
+
+[[case]]
+input = "島風"
+mode = "hiragana"
+expected = "しまかぜ"
+note = "風=かぜ (default しまふう)"
+
+[[case]]
+input = "鳥海"
+mode = "hiragana"
+expected = "ちょうかい"
+note = "鳥海山と同 (default とりうみ)"
+
+# ─── (元: probe_kansai2_20260619.toml) ───
+# 2026-06-19 関西私鉄 難読駅 第13弾 (阪急嵐電/阪神/山陽)。
+# 太秦=うずまさ/水無瀬=みなせ/正雀=しょうじゃく/雲雀丘花屋敷 は ja 正読。
+# homograph 見送り: 大物=おおもの/青木=あおき(姓)/別府=べっぷ/十三=じゅうさん/立花=リッカ(arts.toml)。
+
+[[case]]
+input = "帷子ノ辻"
+mode = "hiragana"
+expected = "かたびらのつじ"
+note = "嵐電、ノ残留"
+
+[[case]]
+input = "蚕ノ社"
+mode = "hiragana"
+expected = "かいこのやしろ"
+note = "嵐電、ノ残留+社=やしろ"
+
+[[case]]
+input = "車折神社"
+mode = "hiragana"
+expected = "くるまざきじんじゃ"
+note = "折=ざき (旧 くるませつ)"
+
+[[case]]
+input = "香櫨園"
+mode = "hiragana"
+expected = "こうろえん"
+note = "阪神、櫨=ろ (旧 こうはぜ)"
+
+[[case]]
+input = "妻鹿"
+mode = "hiragana"
+expected = "めが"
+note = "山陽/姫路 (全壊 つましか)"
+
+# ─── (元: probe_kansai3_20260619.toml) ───
+# 2026-06-19 奈良・和歌山・三重 難読地名 第17弾。
+# 曽爾=そに/平群=へぐり/御杖=みつえ/度会=わたらい/尾鷲=おわせ/菰野=こもの/九度山=くどやま は ja 正読。
+# 当麻=とうま(上条当麻/北海道当麻町)は homograph で見送り (当麻寺=たいまでら は登録済)。
+
+[[case]]
+input = "太地"
+mode = "hiragana"
+expected = "たいじ"
+note = "和歌山県太地町/捕鯨 (旧 たいち)"
+
+[[case]]
+input = "木曽岬"
+mode = "hiragana"
+expected = "きそさき"
+note = "三重県、岬=さき (旧 きそみさき)"
+
+[[case]]
+input = "松阪"
+mode = "hiragana"
+expected = "まつさか"
+note = "松阪牛 official (連濁誤 まつざか)"
+
+# ─── (元: probe_kanto2_20260619.toml) ───
+# 2026-06-19 関東私鉄 難読駅 第8弾 (東武/西武/京成/メトロ)。高収量 25%。
+# homograph 見送り: 高麗=こうらい/こま、菅野=かんの(姓)、仏子=ぶっし。
+
+[[case]]
+input = "原木中山"
+mode = "hiragana"
+expected = "ばらきなかやま"
+note = "原木=ばらき難読 (旧 はらき)"
+
+[[case]]
+input = "鐘ヶ淵"
+mode = "hiragana"
+expected = "かねがふち"
+note = "ヶ残留"
+
+[[case]]
+input = "鷲宮"
+mode = "hiragana"
+expected = "わしのみや"
+note = "鷲宮神社/らき☆すた聖地 (旧 わしみや)"
+
+[[case]]
+input = "正丸"
+mode = "hiragana"
+expected = "しょうまる"
+note = "西武秩父線 (旧 せいがん)"
+
+[[case]]
+input = "芦ヶ久保"
+mode = "hiragana"
+expected = "あしがくぼ"
+note = "ヶ残留"
+
+[[case]]
+input = "五反野"
+mode = "hiragana"
+expected = "ごたんの"
+note = "野=の (旧 ごたんや)"
+
+[[case]]
+input = "武里"
+mode = "hiragana"
+expected = "たけさと"
+note = "東武武里団地 (旧 ぶり)"
+
+[[case]]
+input = "朝霞台"
+mode = "hiragana"
+expected = "あさかだい"
+note = "朝霞=あさか (旧 あさがすみ)"
+
+[[case]]
+input = "保谷"
+mode = "hiragana"
+expected = "ほうや"
+note = "保=ほう (旧 ほや)"
+
+# ─── (元: probe_kanto3_20260619.toml) ───
+# 2026-06-19 神奈川・千葉 私鉄難読駅 第9弾。
+# homograph 見送り: 逸見=へんみ(姓)、保田=やすだ(姓)、行川(両義)。
+
+[[case]]
+input = "酒々井"
+mode = "hiragana"
+expected = "しすい"
+note = "々が酒に展開し全壊 (旧 さけざけい)"
+
+[[case]]
+input = "秦野"
+mode = "hiragana"
+expected = "はだの"
+note = "小田急/秦野市、連濁 (旧 はたの)"
+
+[[case]]
+input = "鶴ヶ峰"
+mode = "hiragana"
+expected = "つるがみね"
+note = "ヶ残留"
+
+[[case]]
+input = "土気"
+mode = "hiragana"
+expected = "とけ"
+note = "千葉市緑区、難読 (旧 つちけ)"
+
+# ─── (元: probe_kanto4_20260619.toml) ───
+# 2026-06-19 茨城・千葉・埼玉 難読市町村 第15弾。
+# 匝瑳=そうさ/富津=ふっつ/加須=かぞ/神栖=かみす/鴻巣=こうのす/行田=ぎょうだ/騎西=きさい は ja 正読。
+# homograph 見送り: 行方=ゆくえ/羽生=はぶ(将棋)&はにゅう/古河=ふるかわ(電工)/取手=とって(取っ手)。
+
+[[case]]
+input = "越生"
+mode = "hiragana"
+expected = "おごせ"
+note = "埼玉県越生町 (全壊 こしお)"
+
+[[case]]
+input = "山武"
+mode = "hiragana"
+expected = "さんむ"
+note = "千葉県山武市、武=む (旧 さんぶ)"
+
+[[case]]
+input = "熊谷"
+mode = "hiragana"
+expected = "くまがや"
+note = "埼玉県熊谷市 (旧 くまがい)"
+
+[[case]]
+input = "匝瑳"
+mode = "hiragana"
+expected = "そうさ"
+note = "成熟確認 (超難読、ja 正読)"
+
+# ─── (元: probe_kanto5_20260619.toml) ───
+# 2026-06-19 関東 難読市町村 第26弾。真鶴/東庄/御宿/榛東/嬬恋/邑楽/壬生/大子 等は正。
+# 神崎=かんざき(姓)/茂木=もぎ(姓) homograph 見送り。
+
+[[case]]
+input = "神流"
+mode = "hiragana"
+expected = "かんな"
+note = "群馬県神流町 (default かみりゅう)"
+
+[[case]]
+input = "城里"
+mode = "hiragana"
+expected = "しろさと"
+note = "茨城県城里町 (default しろり)"
+
+# ─── (元: probe_kimarite_20260619.toml) ───
+# 2026-06-19 相撲決まり手 probe。上手投げ/寄り切り/鯖折り/極め出し/掬い投げ 等は正読。叩き込み=たたきこみ homograph 見送り。
+
+[[case]]
+input = "河津掛け"
+mode = "hiragana"
+expected = "かわづがけ"
+note = "掛け=がけ 連濁 (default かわづかけ)"
+
+[[case]]
+input = "居反り"
+mode = "hiragana"
+expected = "いぞり"
+note = "居=い (default きょそり)"
+
+[[case]]
+input = "内掛け"
+mode = "hiragana"
+expected = "うちがけ"
+note = "内=うち/掛け=がけ (default ないかけ)"
+
+[[case]]
+input = "撞木反り"
+mode = "hiragana"
+expected = "しゅもくぞり"
+note = "反り=ぞり 連濁"
+
+# ─── (元: probe_kimetsu2_20260619.toml) ───
+# 2026-06-19 鬼滅の鬼/用語 probe。鬼舞辻無惨/時透無一郎/栗花落 等は既正。
+
+[[case]]
+input = "猗窩座"
+mode = "hiragana"
+expected = "あかざ"
+note = "上弦の参 (ja 正読確認)"
+
+[[case]]
+input = "黒死牟"
+mode = "hiragana"
+expected = "こくしぼう"
+note = "上弦の壱 (default くろし)"
+
+[[case]]
+input = "妓夫太郎"
+mode = "hiragana"
+expected = "ぎゅうたろう"
+note = "上弦の陸 (default ぎふたろう)"
+
+[[case]]
+input = "魘夢"
+mode = "hiragana"
+expected = "えんむ"
+note = "下弦の壱 (default うなされる)"
+
+[[case]]
+input = "継国縁壱"
+mode = "hiragana"
+expected = "つぎくによりいち"
+note = "継国=つぎくに/縁壱=よりいち"
+
+[[case]]
+input = "鬼殺隊"
+mode = "hiragana"
+expected = "きさつたい"
+note = "鬼=き (default おにさつ)"
+
+[[case]]
+input = "赫刀"
+mode = "hiragana"
+expected = "しゃくとう"
+note = "赫=しゃく (default かがやく)"
+
+# ─── (元: probe_kimetsu3_20260619.toml) ───
+# 2026-06-19 鬼滅 用語・地名・柱 probe。水柱=みずばしら/全集中/血鬼術 等は既正。
+
+[[case]]
+input = "那田蜘蛛山"
+mode = "hiragana"
+expected = "なたぐもやま"
+note = "default なでんくも"
+
+[[case]]
+input = "鎹鴉"
+mode = "hiragana"
+expected = "かすがいがらす"
+note = "鴉=がらす 連濁 (default からす)"
+
+[[case]]
+input = "縁壱零式"
+mode = "hiragana"
+expected = "よりいちぜろしき"
+note = "縁壱=よりいち/零式=ぜろしき"
+
+[[case]]
+input = "炎柱"
+mode = "hiragana"
+expected = "えんばしら"
+note = "柱=ばしら 連濁 (default はしら)"
+
+[[case]]
+input = "風柱"
+mode = "hiragana"
+expected = "かぜばしら"
+note = "風=かぜ/柱=ばしら (default ふうはしら)"
+
+# ─── (元: probe_kinki_20260619.toml) ───
+# 2026-06-19 近畿 難読市町村 第24弾。能勢/宍粟=しそう/佐用/久御山/笠置/和束/伊根/栗東/
+# 安曇川=あどがわ/四條畷 等は正読。養父=ようふ(継父) homograph 見送り。
+
+[[case]]
+input = "朝来"
+mode = "hiragana"
+expected = "あさご"
+note = "兵庫県朝来市 (default ちょうらい)"
+
+[[case]]
+input = "愛荘"
+mode = "hiragana"
+expected = "あいしょう"
+note = "滋賀県、荘=しょう (default あいそう)"
+
+[[case]]
+input = "東近江"
+mode = "hiragana"
+expected = "ひがしおうみ"
+note = "東=ひがし (default とうおうみ)"
+
+[[case]]
+input = "甲良"
+mode = "hiragana"
+expected = "こうら"
+note = "滋賀県甲良町、良=ら (default こうりょう)"
+
+# ─── (元: probe_kotenbun_20260619.toml) ───
+# 2026-06-19 古典文学 probe。清少納言/在原業平/柿本人麻呂/凡河内躬恒 等 歌人は ja 成熟。
+# 六条御息所=みやすどころ/みやすんどころ variant で見送り。
+
+[[case]]
+input = "匂宮"
+mode = "hiragana"
+expected = "におうのみや"
+note = "源氏物語 (default においきゅう)"
+
+[[case]]
+input = "頭中将"
+mode = "hiragana"
+expected = "とうのちゅうじょう"
+note = "頭=とう (default あたま)"
+
+[[case]]
+input = "惟光"
+mode = "hiragana"
+expected = "これみつ"
+note = "源氏物語の家臣 (default いひかり)"
+
+[[case]]
+input = "蝉丸"
+mode = "hiragana"
+expected = "せみまる"
+note = "百人一首 (default せみがん)"
+
+# ─── (元: probe_kyushu2_20260619.toml) ───
+# 2026-06-19 南九州 難読地名 第18弾。頴娃=えい/喜入=きいれ/知覧=ちらん/伊集院/
+# 名瀬=なぜ/椎葉=しいば/益城=ましき/玉東=ぎょくとう/古仁屋=こにや は ja 正読。
+# 蒲生=がもう(武将)/垂水=たるみ(神戸) は homograph で見送り。
+
+[[case]]
+input = "和水"
+mode = "hiragana"
+expected = "なごみ"
+note = "熊本県和水町、超難読 (旧 わすい)"
+
+[[case]]
+input = "頴娃"
+mode = "hiragana"
+expected = "えい"
+note = "成熟確認 (鹿児島、超難読)"
+
+[[case]]
+input = "益城"
+mode = "hiragana"
+expected = "ましき"
+note = "成熟確認 (熊本)"
+
+# ─── (元: probe_kyushu_20260619.toml) ───
+# 2026-06-19 九州 難読駅 第11弾。
+# 周船寺=すせんじ/陣原=じんのはる/三河内=みかわち/早岐=はいき/杵築=きつき/
+# 都城=みやこのじょう/指宿=いぶすき 等は ja 正読。
+# homograph 見送り: 笹原=ささはら(姓)、出水=しゅっすい(一般語)、八代=はちだい(多義)。
+
+[[case]]
+input = "諫早"
+mode = "hiragana"
+expected = "いさはや"
+note = "長崎 (全壊 いさめそう)"
+
+[[case]]
+input = "門司港"
+mode = "hiragana"
+expected = "もじこう"
+note = "門司港レトロ、港=こう (旧 もじみなと)"
+
+[[case]]
+input = "浦上"
+mode = "hiragana"
+expected = "うらかみ"
+note = "長崎/浦上天主堂、連濁誤 うらがみ"
+
+[[case]]
+input = "日向市"
+mode = "hiragana"
+expected = "ひゅうがし"
+note = "市付きで disambiguate (bare 日向=ひなた 不干渉)"
+
+# ─── (元: probe_landmark_20260619.toml) ───
+# 2026-06-19 城・温泉地・山岳名 probe 由来の回帰 lock。
+# 大半は ja 正読 (姫路城/松本城/竹田城/会津若松城/道後温泉/由布院/登別/洞爺湖/玉造温泉/
+# 月山=がっさん/羊蹄山=ようていざん/鳥海山/槍ヶ岳/八ヶ岳/開聞岳 全正)。岳=がく/だけ 中心に補充。
+
+[[case]]
+input = "首里城"
+mode = "hiragana"
+expected = "しゅりじょう"
+note = "首=くび に化け (くびりじょう)"
+
+[[case]]
+input = "穂高岳"
+mode = "hiragana"
+expected = "ほたかだけ"
+note = "岳=がく + 穂高=ほだか 連濁誤"
+
+[[case]]
+input = "剱岳"
+mode = "hiragana"
+expected = "つるぎだけ"
+note = "岳=がく に化け"
+
+[[case]]
+input = "白馬岳"
+mode = "hiragana"
+expected = "しろうまだけ"
+note = "白馬=しろうま (はくばでない)、岳=がく"
+
+# ─── (元: probe_matsuri_20260619.toml) ───
+# 2026-06-19 祭・年中行事 probe 由来の回帰 lock。
+# 祭=まつり/さい の suffix homograph (有名祭は まつり、文化祭/体育祭=さい は非干渉)。
+# 祇園祭/葵祭/天神祭/流鏑馬=やぶさめ/山車=だし/神楽/精霊流し は ja 正読。
+
+[[case]]
+input = "時代祭"
+mode = "hiragana"
+expected = "じだいまつり"
+note = "京都三大祭 (旧 じだいさい)"
+
+[[case]]
+input = "神田祭"
+mode = "hiragana"
+expected = "かんだまつり"
+note = "江戸三大祭"
+
+[[case]]
+input = "三社祭"
+mode = "hiragana"
+expected = "さんじゃまつり"
+note = "三社=さんじゃ (旧 さんしゃさい)"
+
+[[case]]
+input = "山王祭"
+mode = "hiragana"
+expected = "さんのうまつり"
+
+[[case]]
+input = "御柱祭"
+mode = "hiragana"
+expected = "おんばしらまつり"
+note = "諏訪、御柱=おんばしら (旧 ごはしらさい)"
+
+[[case]]
+input = "竿燈"
+mode = "hiragana"
+expected = "かんとう"
+note = "竿=かん。燈→灯 compat 正規化で key=竿灯 (燈 入力で確認)"
+
+[[case]]
+input = "獅子舞"
+mode = "hiragana"
+expected = "ししまい"
+note = "舞=まい (旧 ししぶ)"
+
+[[case]]
+input = "御祓い"
+mode = "hiragana"
+expected = "おはらい"
+note = "御=お prefix (旧 ごはらい)"
+
+# ─── (元: probe_nagoya_20260619.toml) ───
+# 2026-06-19 名古屋圏 駅名 第27弾。平針=ひらばり/一社=いっしゃ/上社=かみやしろ 等は正。
+# 茶所=ちゃどころ/車道=しゃどう(一般語) homograph 見送り。
+
+[[case]]
+input = "久屋大通"
+mode = "hiragana"
+expected = "ひさやおおどおり"
+note = "大通=おおどおり (default だいつう)"
+
+[[case]]
+input = "富吉"
+mode = "hiragana"
+expected = "とみよし"
+note = "近鉄、吉=よし (default とみきち)"
+
+[[case]]
+input = "佐古木"
+mode = "hiragana"
+expected = "さこぎ"
+note = "近鉄、木=ぎ (default さこもく)"
+
+# ─── (元: probe_naruto2_20260619.toml) ───
+# 2026-06-19 NARUTO probe。写輪眼/大蛇丸/自来也/螺旋丸/火影/木ノ葉 等は正読。
+
+[[case]]
+input = "須佐能乎"
+mode = "hiragana"
+expected = "すさのお"
+note = "能乎=のお (default すさのうこ)"
+
+[[case]]
+input = "干柿鬼鮫"
+mode = "hiragana"
+expected = "ほしがききさめ"
+note = "干柿=ほしがき"
+
+[[case]]
+input = "扉間"
+mode = "hiragana"
+expected = "とびらま"
+note = "千手扉間 (default とびらかん)"
+
+[[case]]
+input = "香燐"
+mode = "hiragana"
+expected = "かりん"
+note = "燐=りん (default こうおにび)"
+
+[[case]]
+input = "砂隠れ"
+mode = "hiragana"
+expected = "すながくれ"
+note = "隠れ=がくれ 連濁 (default すなかくれ)"
+
+# ─── (元: probe_niji2_20260619.toml) ───
+# 2026-06-19 にじさんじ ライバー名 第2弾 probe。
+
+[[case]]
+input = "竜胆尊"
+mode = "hiragana"
+expected = "りんどうみこと"
+note = "竜胆=りんどう/尊=みこと (default そん)"
+
+[[case]]
+input = "桜凛月"
+mode = "hiragana"
+expected = "さくりつき"
+note = "default さくらりんげつ"
+
+[[case]]
+input = "栞葉るり"
+mode = "hiragana"
+expected = "しおりはるり"
+note = "栞葉=しおりは"
+
+[[case]]
+input = "語部紡"
+mode = "hiragana"
+expected = "かたりべつむぎ"
+note = "語部=かたりべ/紡=つむぎ"
+
+[[case]]
+input = "御伽原江良"
+mode = "hiragana"
+expected = "おとぎばらえら"
+note = "御伽原=おとぎばら/江良=えら"
+
+# ─── (元: probe_niji3_20260619.toml) ───
+# 2026-06-19 にじさんじ round3 probe。西園=にしぞの/家長=かちょう homograph で full のみ。
+
+[[case]]
+input = "遠北千南"
+mode = "hiragana"
+expected = "とおきたちな"
+note = "遠北=とおきた (default えんほく)"
+
+[[case]]
+input = "宇志海いちご"
+mode = "hiragana"
+expected = "うしみいちご"
+note = "宇志海=うしみ (default うしかい)"
+
+[[case]]
+input = "海妹四葉"
+mode = "hiragana"
+expected = "うみせよつは"
+note = "海妹=うみせ (default うみいもうと)"
+
+[[case]]
+input = "早瀬走"
+mode = "hiragana"
+expected = "はやせかける"
+note = "走=かける (default そう)"
+
+[[case]]
+input = "舞元啓介"
+mode = "hiragana"
+expected = "まいもとけいすけ"
+note = "舞元=まいもと (default ぶげん)"
+
+# ─── (元: probe_niji_20260619.toml) ───
+# 2026-06-19 にじさんじ ライバー名 probe。剣持刀也/不破湊/三枝明那/椎名唯華 等は登録済/正読。
+# 18件 gap 補充。homograph 姓はフルネームで disambiguate。
+
+[[case]]
+input = "物述有栖"
+mode = "hiragana"
+expected = "もにゅありす"
+note = "default ものじゅつゆうす"
+
+[[case]]
+input = "健屋花那"
+mode = "hiragana"
+expected = "すこやかな"
+note = "健屋=すこや (default けんや)"
+
+[[case]]
+input = "童田明治"
+mode = "hiragana"
+expected = "わらべだめいじ"
+note = "童田=わらべだ (default どうでん)"
+
+[[case]]
+input = "壱百満天原サロメ"
+mode = "hiragana"
+expected = "ひゃくまんてんばらさろめ"
+note = "default いちひゃくまんてんげん"
+
+[[case]]
+input = "家長むぎ"
+mode = "hiragana"
+expected = "いえながむぎ"
+note = "家長=いえなが (default かちょう)"
+
+[[case]]
+input = "雪城眞尋"
+mode = "hiragana"
+expected = "ゆきしろまひろ"
+note = "眞→真 compat、key=雪城真尋"
+
+[[case]]
+input = "神田笑一"
+mode = "hiragana"
+expected = "かんだしょういち"
+note = "笑一=しょういち (default わらいいち)"
+
+# ─── (元: probe_okinawa2_20260619.toml) ───
+# 2026-06-19 沖縄 難読地名 round 2 第19弾。保栄茂=びん/仲村渠=なかんだかり/
+# 我如古=がねこ/大謝名=おおじゃな/慶留間=げるま/饒平名=よへな/伊是名=いぜな は ja 正読。
+# 中城=なかじょう(姓)/末吉=すえきち(おみくじ)/泊=はく は homograph で見送り。
+
+[[case]]
+input = "勢理客"
+mode = "hiragana"
+expected = "じっちゃく"
+note = "浦添市、超難読 (旧 せりきゃく)"
+
+[[case]]
+input = "玻名城"
+mode = "hiragana"
+expected = "はなぐすく"
+note = "八重瀬町、城=ぐすく (旧 はなしろ)"
+
+[[case]]
+input = "喜舎場"
+mode = "hiragana"
+expected = "きしゃば"
+note = "北谷町、喜=き (旧 ちしゃば)"
+
+[[case]]
+input = "保栄茂"
+mode = "hiragana"
+expected = "びん"
+note = "成熟確認 (豊見城市、日本屈指の難読)"
+
+# ─── (元: probe_okinawa_20260619.toml) ───
+# 2026-06-19 沖縄 難読地名 第16弾。北谷=ちゃたん/読谷=よみたん/今帰仁=なきじん/
+# 南風原=はえばる/嘉手納=かでな/古宇利=こうり/宜野湾=ぎのわん は ja 正読。
+# 本部=ほんぶ(一般語)は homograph で見送り。
+
+[[case]]
+input = "東風平"
+mode = "hiragana"
+expected = "こちんだ"
+note = "八重瀬町 (全壊 こちひら)"
+
+[[case]]
+input = "喜屋武"
+mode = "hiragana"
+expected = "きゃん"
+note = "喜屋武岬、拗音 (旧 きやん)"
+
+[[case]]
+input = "浦添"
+mode = "hiragana"
+expected = "うらそえ"
+note = "連濁誤 うらぞえ"
+
+[[case]]
+input = "喜友名"
+mode = "hiragana"
+expected = "きゆな"
+note = "宜野湾市 (旧 きゅうな)"
+
+[[case]]
+input = "八重瀬"
+mode = "hiragana"
+expected = "やえせ"
+note = "八重=やえ (全壊 はちじゅうせ)"
+
+[[case]]
+input = "慶良間"
+mode = "hiragana"
+expected = "けらま"
+note = "慶良間諸島 (全壊 けいりょうかん)"
+
+[[case]]
+input = "首里"
+mode = "hiragana"
+expected = "しゅり"
+note = "首里城、首=しゅ (旧 くびり)"
+
+# ─── (元: probe_onepiece2_20260619.toml) ───
+# 2026-06-19 ワンピース ワノ国編 probe。光月/錦えもん/狂死郎/鬼ヶ島 等は正読。
+
+[[case]]
+input = "黒炭オロチ"
+mode = "hiragana"
+expected = "くろずみオロチ"
+note = "黒炭=くろずみ (default こくたん)"
+
+[[case]]
+input = "牛鬼丸"
+mode = "hiragana"
+expected = "ぎゅうきまる"
+note = "牛鬼=ぎゅうき (default うしおに)"
+
+[[case]]
+input = "飛び六胞"
+mode = "hiragana"
+expected = "とびろっぽう"
+note = "六胞=ろっぽう (default ろくほう)"
+
+[[case]]
+input = "桃の助"
+mode = "hiragana"
+expected = "もものすけ"
+note = "助=すけ (default じょ)"
+
+# ─── (元: probe_onepiece_20260619.toml) ───
+# 2026-06-19 ONE PIECE キャラ名・用語 probe。青雉=あおきじ/黄猿=きざる 等は正読。
+# 黒炭=こくたん(石炭) homograph、偉大なる航路/東の海 は作品 ruby のため非採録。
+
+[[case]]
+input = "錦えもん"
+mode = "hiragana"
+expected = "きんえもん"
+note = "錦=きん (default にしき)"
+
+[[case]]
+input = "戦桃丸"
+mode = "hiragana"
+expected = "せんとうまる"
+note = "海軍 (default たたかとうがん)"
+
+[[case]]
+input = "赤犬"
+mode = "hiragana"
+expected = "あかいぬ"
+note = "大将サカズキ (default あかけん)"
+
+[[case]]
+input = "藤虎"
+mode = "hiragana"
+expected = "ふじとら"
+note = "大将イッショウ (default ふじこ)"
+
+[[case]]
+input = "天竜人"
+mode = "hiragana"
+expected = "てんりゅうびと"
+note = "人=びと 連濁"
+
+[[case]]
+input = "魚人島"
+mode = "hiragana"
+expected = "ぎょじんとう"
+note = "default さかなひとしま"
+
+# ─── (元: probe_persona2_20260619.toml) ───
+# 2026-06-19 ペルソナ残り/メガテン probe。鳴上悠/雨宮蓮 等は既正。
+# 葛葉ライドウ=くずのは は にじさんじ葛葉(くずは) と区別。
+
+[[case]]
+input = "結城理"
+mode = "hiragana"
+expected = "ゆうきまこと"
+note = "P3R主人公。理=まこと (default り)"
+
+[[case]]
+input = "白鐘直斗"
+mode = "hiragana"
+expected = "しろがねなおと"
+note = "白鐘=しろがね (default しろしょう)"
+
+[[case]]
+input = "望月綾時"
+mode = "hiragana"
+expected = "もちづきりょうじ"
+note = "綾時=りょうじ (default あやじ)"
+
+[[case]]
+input = "獅童正義"
+mode = "hiragana"
+expected = "しどうまさよし"
+note = "P5。正義=まさよし (default せいぎ)"
+
+[[case]]
+input = "葛葉ライドウ"
+mode = "hiragana"
+expected = "くずのはらいどう"
+note = "full surface 登録のため hiragana 全変換 (にじ葛葉=くずは と別)"
+
+[[case]]
+input = "仲魔"
+mode = "hiragana"
+expected = "なかま"
+note = "メガテン造語 (default ちゅうま)"
+
+# ─── (元: probe_place2_20260619.toml) ───
+# 2026-06-19 難読駅名 probe 第3-4弾 由来の回帰 lock (関東私鉄/関西/名古屋/福岡)。
+# 未登録だと ノ/ヶ が literal 残留 + 漢字 default 化け。馬出 は うまだし(城郭)と
+# homograph のため bare は触らず駅は固有表層で固定。
+
+[[case]]
+input = "鮫洲"
+mode = "hiragana"
+expected = "さめず"
+note = "旧 さめしゅう"
+
+[[case]]
+input = "雑色"
+mode = "hiragana"
+expected = "ぞうしき"
+note = "旧 ざっしょく"
+
+[[case]]
+input = "曳舟"
+mode = "hiragana"
+expected = "ひきふね"
+note = "旧 えいしゅう"
+
+[[case]]
+input = "馬喰町"
+mode = "hiragana"
+expected = "ばくろちょう"
+note = "町=ちょう (旧 まち)"
+
+[[case]]
+input = "荏原中延"
+mode = "hiragana"
+expected = "えばらなかのぶ"
+note = "延=のべ に化け (中延単体は正)"
+
+[[case]]
+input = "洗足"
+mode = "hiragana"
+expected = "せんぞく"
+note = "足=ぞく 連濁 (旧 せんそく)"
+
+[[case]]
+input = "竹ノ塚"
+mode = "hiragana"
+expected = "たけのつか"
+note = "ノ 残留 fix"
+
+[[case]]
+input = "幡ヶ谷"
+mode = "hiragana"
+expected = "はたがや"
+note = "ヶ 残留 + 谷=こく (旧 はたヶこく)"
+
+[[case]]
+input = "富田林"
+mode = "hiragana"
+expected = "とんだばやし"
+note = "旧 とみたはやし"
+
+[[case]]
+input = "河堀口"
+mode = "hiragana"
+expected = "こぼれぐち"
+note = "旧 かほりぐち (難読)"
+
+[[case]]
+input = "土師ノ里"
+mode = "hiragana"
+expected = "はじのさと"
+note = "ノ 残留"
+
+[[case]]
+input = "千種"
+mode = "hiragana"
+expected = "ちくさ"
+note = "名古屋の区/駅 (旧 せんしゅ)"
+
+[[case]]
+input = "矢場町"
+mode = "hiragana"
+expected = "やばちょう"
+note = "町=ちょう"
+
+[[case]]
+input = "大曽根"
+mode = "hiragana"
+expected = "おおぞね"
+note = "曽根=ぞね 連濁 (旧 おおそね)"
+
+[[case]]
+input = "馬出九大病院前"
+mode = "hiragana"
+expected = "まいだしきゅうだいびょういんまえ"
+note = "馬出=まいだし (bare 馬出 は城郭うまだし維持)"
+
+# ─── (元: probe_place3_20260619.toml) ───
+# 2026-06-19 難読駅名 probe 第6弾 (西鉄/名鉄/仙台/広島)。
+# ja は大半の難読駅を正読 (雑餉隈=ざっしょのくま/白木原=しらきばる/都府楼前/勾当台公園/
+# 八乙女/五稜郭/名谷/皆実町 等)。kanji default 化け + 九州の原=ばる の漏れのみ補充。
+# homograph (前原=まえはら姓/横川/筑紫=つくし) は default 委ねで見送り。
+
+[[case]]
+input = "春日原"
+mode = "hiragana"
+expected = "かすがばる"
+note = "原=ばる (旧 かすがげん)"
+
+[[case]]
+input = "聚楽園"
+mode = "hiragana"
+expected = "じゅらくえん"
+note = "聚=じゅ (旧 しゅうらくえん)"
+
+[[case]]
+input = "太田川"
+mode = "hiragana"
+expected = "おおたがわ"
+note = "川=せん に化け (旧 おおたせん)"
+
+[[case]]
+input = "台原"
+mode = "hiragana"
+expected = "だいのはら"
+note = "の脱落 (旧 だいはら)"
+
+[[case]]
+input = "紙屋町"
+mode = "hiragana"
+expected = "かみやちょう"
+note = "町=ちょう (旧 かみやまち)"
+
+[[case]]
+input = "江波"
+mode = "hiragana"
+expected = "えば"
+note = "連濁 (旧 えは)"
+
+# 正読維持の確認 (九州 原=ばる は大半正)
+[[case]]
+input = "白木原"
+mode = "hiragana"
+expected = "しらきばる"
+note = "原=ばる、ja 正読 (春日原と兄弟)"
+
+# ─── (元: probe_place4_20260619.toml) ───
+# 2026-06-19 難読駅名 第7弾 (近鉄/南海/名鉄)。ノ/ヶ残留 + 難読音訓。
+# 衣摺加美北/帝塚山/菖蒲池=あやめいけ/賢島=かしこじま/五十鈴川 等は ja 正読。
+# 富貴=ふうき(一般語)は homograph で default 委ね。
+
+[[case]]
+input = "八戸ノ里"
+mode = "hiragana"
+expected = "やえのさと"
+note = "八戸=やえ難読 + ノ残留 (はちのへでない)"
+
+[[case]]
+input = "枚岡"
+mode = "hiragana"
+expected = "ひらおか"
+note = "枚=ひら (旧 まいおか)"
+
+[[case]]
+input = "萩ノ茶屋"
+mode = "hiragana"
+expected = "はぎのちゃや"
+note = "ノ残留"
+
+[[case]]
+input = "尼ヶ辻"
+mode = "hiragana"
+expected = "あまがつじ"
+note = "ヶ残留"
+
+[[case]]
+input = "久宝寺口"
+mode = "hiragana"
+expected = "きゅうほうじぐち"
+note = "口=ぐち 連濁 (旧 こう)"
+
+[[case]]
+input = "蒲郡"
+mode = "hiragana"
+expected = "がまごおり"
+note = "蒲=がま/郡=ごおり (全壊 ほぐん)"
+
+# ─── (元: probe_place_20260619.toml) ───
+# 2026-06-19 主要駅名・地名 probe 由来の回帰 lock。
+# 著名地名でも破損する (代々木=だいだいもく の続き)。麻布=あさぬの(布地)と
+# homograph のため地名は固有表層で固定。町=ちょう/まち は地名ごとに分岐。
+
+[[case]]
+input = "麻布十番"
+mode = "hiragana"
+expected = "あざぶじゅうばん"
+note = "旧 あさぬのじゅうばん"
+
+[[case]]
+input = "西麻布"
+mode = "hiragana"
+expected = "にしあざぶ"
+
+[[case]]
+input = "人形町"
+mode = "hiragana"
+expected = "にんぎょうちょう"
+note = "旧 にんぎょうまち (町=ちょう)"
+
+[[case]]
+input = "門前仲町"
+mode = "hiragana"
+expected = "もんぜんなかちょう"
+note = "旧 もんぜんなかまち"
+
+[[case]]
+input = "茅場町"
+mode = "hiragana"
+expected = "かやばちょう"
+note = "旧 かやばまち"
+
+[[case]]
+input = "烏丸御池"
+mode = "hiragana"
+expected = "からすまおいけ"
+note = "烏丸=からすま (旧 からすまる)"
+
+[[case]]
+input = "二子玉川"
+mode = "hiragana"
+expected = "ふたこたまがわ"
+note = "official ふたこ (旧 ふたご 連濁誤)"
+
+[[case]]
+input = "千歳烏山"
+mode = "hiragana"
+expected = "ちとせからすやま"
+note = "旧 せんさいうざん (全壊)"
+
+# 正読維持の確認 (まち の地名は触らない)
+[[case]]
+input = "椎名町"
+mode = "hiragana"
+expected = "しいなまち"
+note = "町=まち (人形町=ちょう と分岐、ja 正読)"
+
+# ─── (元: probe_placename_20260619.toml) ───
+# 2026-06-19 地名/固有名詞 例文 由来の回帰 lock。
+# 難読地名は ja 大半正読 (喜連瓜破/立売堀/杭全/柴島/中百舌鳥/京終/櫟本/榛原/曽爾/
+# 安乗/波切)。homograph 地名 (放出=ほうしゅつ/十三=じゅうさん) は一般読み支配で見送り。
+
+# ─── 湖 = コ (漢字+湖 の湖名 suffix。 単独 湖=みずうみ は維持) ───
+[[case]]
+input = "青蓮寺湖"
+mode = "hiragana"
+expected = "しょうれんじこ"
+note = "旧 しょうれんじみずうみ。prev=漢字→コ"
+
+[[case]]
+input = "人造湖の周り"
+mode = "hiragana"
+expected = "じんぞうこのまわり"
+
+[[case]]
+input = "美しい湖"
+mode = "hiragana"
+expected = "うつくしいみずうみ"
+note = "単独/形容詞後 は みずうみ 維持"
+
+# ─── 三輪 = みわ (奈良。 三輪車=さんりん は別) ───
+[[case]]
+input = "三輪明神に参る"
+mode = "hiragana"
+expected = "みわみょうじんにまいる"
+note = "旧 さんりん"
+
+[[case]]
+input = "三輪車に乗る"
+mode = "hiragana"
+expected = "さんりんしゃにのる"
+note = "ガード: 乗り物は さんりん"
+
+# ─── 斎宮跡 = さいくうあと (旧 いつきせき 破損) ───
+[[case]]
+input = "斎宮跡を訪ねる"
+mode = "hiragana"
+expected = "さいくうあとをたずねる"
+
+# ─── (元: probe_plant_20260619.toml) ───
+# 2026-06-19 植物・花名 probe 由来の回帰 lock。
+# 当て字/熟字訓 (紫陽花/向日葵/山茶花/蒲公英/鬼灯/百日紅/躑躅/杜若/銀杏/欅…) は ja 成熟。
+# 単漢字 homograph (椎=しい/つい, 薄=すすき/うすい/はく) は標準で曖昧のため見送り。
+# 実バグは 柊 のみ (default シュウ→ひいらぎ、榊と同型の国字訓)。
+
+[[case]]
+input = "柊"
+mode = "hiragana"
+expected = "ひいらぎ"
+note = "default シュウ→ひいらぎ"
+
+[[case]]
+input = "柊の木"
+mode = "hiragana"
+expected = "ひいらぎのき"
+
+[[case]]
+input = "柊鰯"
+mode = "hiragana"
+expected = "ひいらぎいわし"
+note = "節分の柊鰯"
+
+# ─── (元: probe_proseka_20260619.toml) ───
+# 2026-06-19 プロセカ/バンドリ/D4DJ probe。神代=じんだい/かみよ homograph で full のみ。
+
+[[case]]
+input = "暁山瑞希"
+mode = "hiragana"
+expected = "あけやまみずき"
+note = "暁山=あけやま (default あかつきさん)"
+
+[[case]]
+input = "宵崎奏"
+mode = "hiragana"
+expected = "よいさきかなで"
+note = "奏=かなで"
+
+[[case]]
+input = "白金燐子"
+mode = "hiragana"
+expected = "しろがねりんこ"
+note = "白金=しろがね (default はっきん)"
+
+[[case]]
+input = "氷川紗夜"
+mode = "hiragana"
+expected = "ひかわさよ"
+note = "紗夜=さよ"
+
+[[case]]
+input = "燦鳥ノム"
+mode = "hiragana"
+expected = "さんとりのむ"
+note = "燦鳥=さんとり (default さんちょう)"
+
+# ─── (元: probe_r142144_20260619.toml) ───
+# 2026-06-19 R142-144 ハイキュー他校/ブルーロック/FGO probe まとめ。
+
+[[case]]
+input = "山本猛虎"
+mode = "hiragana"
+expected = "やまもとたけとら"
+note = "ハイキュー 猛虎=たけとら"
+
+[[case]]
+input = "孤爪"
+mode = "hiragana"
+expected = "こづめ"
+note = "ハイキュー 爪=づめ (default こつめ)"
+
+[[case]]
+input = "黒名蘭世"
+mode = "hiragana"
+expected = "くろならんぜ"
+note = "ブルーロック 黒名=くろな"
+
+[[case]]
+input = "蜂楽"
+mode = "hiragana"
+expected = "ばちら"
+note = "ブルーロック 蜂楽廻 (default はちらく)"
+
+[[case]]
+input = "虞美人"
+mode = "hiragana"
+expected = "ぐびじん"
+note = "FGO 虞=ぐ (default おそれ)"
+
+[[case]]
+input = "荊軻"
+mode = "hiragana"
+expected = "けいか"
+note = "FGO 荊=けい/軻=か"
+
+# ─── (元: probe_r145147_20260619.toml) ───
+# 2026-06-19 R145-147 推しの子/チェンソー/幽白/ぬらりひょん probe まとめ。
+
+[[case]]
+input = "愛久愛海"
+mode = "hiragana"
+expected = "あくあ"
+note = "推しの子 当て字"
+
+[[case]]
+input = "仙水忍"
+mode = "hiragana"
+expected = "せんすいしのぶ"
+note = "幽白 忍=しのぶ"
+
+[[case]]
+input = "蔵馬"
+mode = "hiragana"
+expected = "くらま"
+note = "幽白 (default ぞうば)"
+
+[[case]]
+input = "奴良陸生"
+mode = "hiragana"
+expected = "ぬらりくお"
+note = "ぬらりひょん 当て字"
+
+[[case]]
+input = "羽衣狐"
+mode = "hiragana"
+expected = "はごろもぎつね"
+note = "狐=ぎつね 連濁"
+
+[[case]]
+input = "牛鬼"
+mode = "hiragana"
+expected = "ぎゅうき"
+note = "妖怪 (default うしき)"
+
+# ─── (元: probe_r148150_20260619.toml) ───
+# 2026-06-19 R148-150 化物語/コードギアス/ジョジョ8部 probe まとめ。
+
+[[case]]
+input = "阿良々木暦"
+mode = "hiragana"
+expected = "あららぎこよみ"
+note = "化物語 阿良々木=あららぎ"
+
+[[case]]
+input = "斧乃木余接"
+mode = "hiragana"
+expected = "おののきよつぎ"
+note = "余接=よつぎ (default よせつ cotangent)"
+
+[[case]]
+input = "千石撫子"
+mode = "hiragana"
+expected = "せんごくなでこ"
+note = "撫子=なでこ (default なでしこ)"
+
+[[case]]
+input = "枢木"
+mode = "hiragana"
+expected = "くるるぎ"
+note = "コードギアス 枢木スザク (default すうもく)"
+
+[[case]]
+input = "皇神楽耶"
+mode = "hiragana"
+expected = "すめらぎかぐや"
+note = "皇=すめらぎ"
+
+[[case]]
+input = "東方憲助"
+mode = "hiragana"
+expected = "ひがしかたけんすけ"
+note = "ジョジョ8部 (東方=とうほう homograph で full のみ)"
+
+# ─── (元: probe_r151156_20260619.toml) ───
+# 2026-06-19 R151-156 総理/神社/戦国茶人/落語/中華食/植物 probe まとめ。
+
+[[case]]
+input = "犬養毅"
+mode = "hiragana"
+expected = "いぬかいつよし"
+note = "総理。毅=つよし"
+
+[[case]]
+input = "浜口雄幸"
+mode = "hiragana"
+expected = "はまぐちおさち"
+note = "総理。雄幸=おさち (濱口の正規化)"
+
+[[case]]
+input = "出雲大社"
+mode = "hiragana"
+expected = "いずもおおやしろ"
+note = "公式読み (default いずもたいしゃ)"
+
+[[case]]
+input = "狩野山楽"
+mode = "hiragana"
+expected = "かのうさんらく"
+note = "絵師。狩野=かのう"
+
+[[case]]
+input = "牡丹灯籠"
+mode = "hiragana"
+expected = "ぼたんどうろう"
+note = "落語。灯籠=どうろう 連濁"
+
+[[case]]
+input = "搾菜"
+mode = "hiragana"
+expected = "ざーさい"
+note = "default さくさい"
+
+[[case]]
+input = "浜木綿"
+mode = "hiragana"
+expected = "はまゆう"
+note = "default はまもめん"
+
+# ─── (元: probe_r157160_20260619.toml) ───
+# 2026-06-19 R157-160 四字熟語/名城/山岳/三国 probe まとめ。高順=ガオシュン(薬屋)優先で三国側見送り。
+
+[[case]]
+input = "旁若無人"
+mode = "hiragana"
+expected = "ぼうじゃくぶじん"
+note = "旁若=ぼうじゃく (default かたがた)"
+
+[[case]]
+input = "月山富田城"
+mode = "hiragana"
+expected = "がっさんとだじょう"
+note = "富田=とだ (default とみた)"
+
+[[case]]
+input = "燕岳"
+mode = "hiragana"
+expected = "つばくろだけ"
+note = "難読 (default つばめがく)"
+
+[[case]]
+input = "甲斐駒ヶ岳"
+mode = "hiragana"
+expected = "かいこまがたけ"
+note = "ヶ岳=がたけ"
+
+[[case]]
+input = "呂蒙"
+mode = "hiragana"
+expected = "りょもう"
+note = "呂=りょ (default ろ)"
+
+# ─── (元: probe_r161166_20260619.toml) ───
+# 2026-06-19 R161-166 らんま/うる星(成熟)/キャプ翼/聖闘士星矢/北斗/あだち probe まとめ。
+
+[[case]]
+input = "早乙女乱馬"
+mode = "hiragana"
+expected = "さおとめらんま"
+note = "乱馬=らんま (default らんば)"
+
+[[case]]
+input = "九能帯刀"
+mode = "hiragana"
+expected = "くのうたてわき"
+note = "帯刀=たてわき"
+
+[[case]]
+input = "日向小次郎"
+mode = "hiragana"
+expected = "ひゅうがこじろう"
+note = "日向=ひゅうが (bare 日向=ひなた homograph)"
+
+[[case]]
+input = "松山光"
+mode = "hiragana"
+expected = "まつやまひかる"
+note = "光=ひかる (default ひかり)"
+
+[[case]]
+input = "南斗聖拳"
+mode = "hiragana"
+expected = "なんとせいけん"
+note = "南斗=なんと (default みなみと)"
+
+[[case]]
+input = "浅倉南"
+mode = "hiragana"
+expected = "あさくらみなみ"
+note = "南=みなみ (default なん)"
+
+# ─── (元: probe_r167170_20260619.toml) ───
+# 2026-06-19 R167-170 犬夜叉/銀魂/DB(成熟)/封神演義 probe まとめ。
+
+[[case]]
+input = "鉄砕牙"
+mode = "hiragana"
+expected = "てっさいが"
+note = "犬夜叉 鉄=てっ 促音"
+
+[[case]]
+input = "四魂"
+mode = "hiragana"
+expected = "しこん"
+note = "犬夜叉 四=し (default よん)"
+
+[[case]]
+input = "傾奇者"
+mode = "hiragana"
+expected = "かぶきもの"
+note = "銀魂 (default けいき)"
+
+[[case]]
+input = "夜兎"
+mode = "hiragana"
+expected = "やと"
+note = "銀魂 夜兎族 (default よるうさぎ)"
+
+[[case]]
+input = "楊戩"
+mode = "hiragana"
+expected = "ようぜん"
+note = "封神演義"
+
+[[case]]
+input = "雷震子"
+mode = "hiragana"
+expected = "らいしんし"
+note = "封神 雷=らい (default かみなり)"
+
+# ─── (元: probe_r171174_20260619.toml) ───
+# 2026-06-19 R171-174 逆転裁判/龍が如く/ダンガンロンパ/ときメモ probe まとめ。
+
+[[case]]
+input = "成歩堂龍一"
+mode = "hiragana"
+expected = "なるほどうりゅういち"
+note = "成歩堂=なるほどう (default せいほどう)"
+
+[[case]]
+input = "王泥喜法介"
+mode = "hiragana"
+expected = "おどろきほうすけ"
+note = "王泥喜=おどろき"
+
+[[case]]
+input = "春日一番"
+mode = "hiragana"
+expected = "かすがいちばん"
+note = "龍が如く 春日=かすが (default しゅんじつ)"
+
+[[case]]
+input = "霧切響子"
+mode = "hiragana"
+expected = "きりぎりきょうこ"
+note = "ダンガンロンパ 霧切=きりぎり"
+
+[[case]]
+input = "終里赤音"
+mode = "hiragana"
+expected = "おわりあかね"
+note = "終里=おわり/赤音=あかね"
+
+[[case]]
+input = "紐緒結奈"
+mode = "hiragana"
+expected = "ひもおゆいな"
+note = "ときメモ 紐緒=ひもお"
+
+# ─── (元: probe_r175177_20260619.toml) ───
+# 2026-06-19 R175-177 セーラームーン/プリキュア/仮面ライダー probe まとめ。
+
+[[case]]
+input = "天王はるか"
+mode = "hiragana"
+expected = "てんおうはるか"
+note = "天王=てんおう (default てんのう)"
+
+[[case]]
+input = "美墨なぎさ"
+mode = "hiragana"
+expected = "みすみなぎさ"
+note = "プリキュア 美墨=みすみ"
+
+[[case]]
+input = "明堂院いつき"
+mode = "hiragana"
+expected = "みょうどういんいつき"
+note = "明堂院=みょうどういん"
+
+[[case]]
+input = "本郷猛"
+mode = "hiragana"
+expected = "ほんごうたけし"
+note = "仮面ライダー 猛=たけし"
+
+[[case]]
+input = "桐生戦兎"
+mode = "hiragana"
+expected = "きりゅうせんと"
+note = "戦兎=せんと (default せんうさぎ)"
+
+# ─── (元: probe_r178181_20260619.toml) ───
+# 2026-06-19 R178-181 鎌倉室町/平安/ルパン美味しんぼ/和風 probe まとめ。
+
+[[case]]
+input = "比企能員"
+mode = "hiragana"
+expected = "ひきよしかず"
+note = "能員=よしかず (default のういん)"
+
+[[case]]
+input = "熊谷直実"
+mode = "hiragana"
+expected = "くまがいなおざね"
+note = "熊谷=くまがい/直実=なおざね"
+
+[[case]]
+input = "海原雄山"
+mode = "hiragana"
+expected = "かいばらゆうざん"
+note = "美味しんぼ 海原=かいばら (default うなばら)"
+
+[[case]]
+input = "荒岩一味"
+mode = "hiragana"
+expected = "あらいわかずみ"
+note = "クッキングパパ 一味=かずみ"
+
+[[case]]
+input = "伊弉諾"
+mode = "hiragana"
+expected = "いざなぎ"
+note = "男神 (default いさかんだく)"
+
+# ─── (元: probe_r182185_20260619.toml) ───
+# 2026-06-19 R182-185 アイマス/国民的アニメ/にじ/ホロ probe まとめ。
+
+[[case]]
+input = "四条貴音"
+mode = "hiragana"
+expected = "しじょうたかね"
+note = "アイマス 貴音=たかね (default きおん)"
+
+[[case]]
+input = "磯野波平"
+mode = "hiragana"
+expected = "いそのなみへい"
+note = "サザエさん 波平=なみへい"
+
+[[case]]
+input = "出木杉英才"
+mode = "hiragana"
+expected = "できすぎひでとし"
+note = "ドラえもん 出木杉=できすぎ"
+
+[[case]]
+input = "壱百満天原"
+mode = "hiragana"
+expected = "いちひゃくまんてんばら"
+note = "にじ 原=ばら (default てんげん)"
+
+[[case]]
+input = "輪堂千速"
+mode = "hiragana"
+expected = "りんどうちはや"
+note = "ホロ 千速=ちはや (default せんそく)"
+
+# ─── (元: probe_r186190_20260619.toml) ───
+# 2026-06-19 R186-190 チェンソー/動物2/鉱物/色名/天気 probe まとめ。
+# チェンソー/動物2は成熟(翡翠=ひすい/雲母=きらら valid)。
+
+[[case]]
+input = "辰砂"
+mode = "hiragana"
+expected = "しんしゃ"
+note = "cinnabar (default たつさ)"
+
+[[case]]
+input = "孔雀石"
+mode = "hiragana"
+expected = "くじゃくいし"
+note = "malachite (default せき)"
+
+[[case]]
+input = "緑柱石"
+mode = "hiragana"
+expected = "りょくちゅうせき"
+note = "beryl (default みどりちゅう)"
+
+[[case]]
+input = "牡丹色"
+mode = "hiragana"
+expected = "ぼたんいろ"
+note = "色=いろ (default しょく)"
+
+# ─── (元: probe_r191195_20260619.toml) ───
+# 2026-06-19 R191-195 咲/福本/浦沢寄生獣/戦国無双/三國無双 probe まとめ。
+
+[[case]]
+input = "天江衣"
+mode = "hiragana"
+expected = "あまえころも"
+note = "咲 天江=あまえ (default てんえ)"
+
+[[case]]
+input = "伊藤開司"
+mode = "hiragana"
+expected = "いとうかいじ"
+note = "カイジ 開司=かいじ"
+
+[[case]]
+input = "泉新一"
+mode = "hiragana"
+expected = "いずみしんいち"
+note = "寄生獣 泉=いずみ (default せん)"
+
+[[case]]
+input = "稲姫"
+mode = "hiragana"
+expected = "いなひめ"
+note = "本多忠勝の娘 (default いねひめ)"
+
+[[case]]
+input = "甄姫"
+mode = "hiragana"
+expected = "しんき"
+note = "三國無双 甄=しん/姫=き"
+
+[[case]]
+input = "蔡文姫"
+mode = "hiragana"
+expected = "さいぶんき"
+note = "文姫=ぶんき (default ぶんひめ)"
+
+# ─── (元: probe_r196200_20260619.toml) ───
+# 2026-06-19 R196-200 ぶいすぽ/にじ/ホロ/アズレン/戦国武将4 probe まとめ。R200到達。
+
+[[case]]
+input = "小雀"
+mode = "hiragana"
+expected = "こすずめ"
+note = "ぶいすぽ 小雀とと (default こがら)"
+
+[[case]]
+input = "水無世燐央"
+mode = "hiragana"
+expected = "みなせれお"
+note = "ホロスターズ 水無世=みなせ"
+
+[[case]]
+input = "緋八"
+mode = "hiragana"
+expected = "ひばち"
+note = "八=ばち 連濁 (default ひはち)"
+
+[[case]]
+input = "龍驤"
+mode = "hiragana"
+expected = "りゅうじょう"
+note = "空母 驤=じょう (default あがる)"
+
+[[case]]
+input = "塙団右衛門"
+mode = "hiragana"
+expected = "ばんだんえもん"
+note = "塙=ばん (塙保己一=はなわ と別)"
+
+# ─── (元: probe_r201205_20260619.toml) ───
+# 2026-06-19 R201-205 まどマギ/食戟ソーマ/シティハンター/原神/ブルアカ probe まとめ。
+
+[[case]]
+input = "鹿目まどか"
+mode = "hiragana"
+expected = "かなめまどか"
+note = "鹿目=かなめ (default かのめ)"
+
+[[case]]
+input = "薙切えりな"
+mode = "hiragana"
+expected = "なぎきりえりな"
+note = "薙切=なぎきり (default なぎせつ)"
+
+[[case]]
+input = "新戸緋沙子"
+mode = "hiragana"
+expected = "あらとひさこ"
+note = "新戸=あらと/緋沙子=ひさこ"
+
+[[case]]
+input = "冴羽獠"
+mode = "hiragana"
+expected = "さえばりょう"
+note = "冴羽=さえば/獠=りょう"
+
+[[case]]
+input = "槙村香"
+mode = "hiragana"
+expected = "まきむらかおり"
+note = "香=かおり (槇村の正規化)"
+
+# ─── (元: probe_r206209_20260619.toml) ───
+# 2026-06-19 R206-209 スターレイル/FGO/原神/三國無双 probe まとめ。
+
+[[case]]
+input = "彦卿"
+mode = "hiragana"
+expected = "げんけい"
+note = "スターレイル (default ひこきょう)"
+
+[[case]]
+input = "霍霍"
+mode = "hiragana"
+expected = "かくかく"
+note = "スターレイル Huohuo (default にわか)"
+
+[[case]]
+input = "玄奘三蔵"
+mode = "hiragana"
+expected = "げんじょうさんぞう"
+note = "玄奘=げんじょう (default げんしょう)"
+
+[[case]]
+input = "七七"
+mode = "hiragana"
+expected = "なな"
+note = "原神 Qiqi (default しちしち)"
+
+[[case]]
+input = "夏侯覇"
+mode = "hiragana"
+expected = "かこうは"
+note = "夏侯=かこう (default なつこう)"
+
+# ─── (元: probe_r210_20260619.toml) ───
+# 2026-06-19 R210 進撃の巨人 用語 probe。調査兵団/立体機動/始祖/超大型 等は正読。
+
+[[case]]
+input = "女型の巨人"
+mode = "hiragana"
+expected = "めがたのきょじん"
+note = "女型=めがた (default おんながた)"
+
+[[case]]
+input = "戦鎚の巨人"
+mode = "hiragana"
+expected = "せんついのきょじん"
+note = "戦鎚=せんつい (default たたかつち)"
+
+# ─── (元: probe_r211214_20260619.toml) ───
+# 2026-06-19 R211-214 天皇/元素(成熟)/シンデレラ/にじ probe まとめ。
+
+[[case]]
+input = "綏靖天皇"
+mode = "hiragana"
+expected = "すいぜいてんのう"
+note = "綏靖=すいぜい"
+
+[[case]]
+input = "天智天皇"
+mode = "hiragana"
+expected = "てんじてんのう"
+note = "天智=てんじ (default てんち)"
+
+[[case]]
+input = "敏達天皇"
+mode = "hiragana"
+expected = "びだつてんのう"
+note = "敏達=びだつ"
+
+[[case]]
+input = "緒方智絵里"
+mode = "hiragana"
+expected = "おがたちえり"
+note = "智絵里=ちえり (default ともえり)"
+
+[[case]]
+input = "鈴木勝"
+mode = "hiragana"
+expected = "すずきまさる"
+note = "にじ 勝=まさる (default しょう)"
+
+# ─── (元: probe_r215218_20260619.toml) ───
+# 2026-06-19 R215-218 シンデレラ/ミリオン/シャニマス/公家 probe まとめ。
+
+[[case]]
+input = "久川颯"
+mode = "hiragana"
+expected = "ひさかわはやて"
+note = "颯=はやて (default さつ)"
+
+[[case]]
+input = "桜守歌織"
+mode = "hiragana"
+expected = "さくらもりかおり"
+note = "桜守=さくらもり/歌織=かおり"
+
+[[case]]
+input = "幽谷霧子"
+mode = "hiragana"
+expected = "ゆうこくきりこ"
+note = "シャニマス 幽谷=ゆうこく"
+
+[[case]]
+input = "黛冬優子"
+mode = "hiragana"
+expected = "まゆずみふゆこ"
+note = "黛=まゆずみ (default たいとう)"
+
+[[case]]
+input = "三条実美"
+mode = "hiragana"
+expected = "さんじょうさねとみ"
+note = "実美=さねとみ"
+
+# ─── (元: probe_r219223_20260619.toml) ───
+# 2026-06-19 R219-223 シャニマス/ミリオン/ラブライブ/シンデレラ probe まとめ。
+
+[[case]]
+input = "西城樹里"
+mode = "hiragana"
+expected = "さいじょうじゅり"
+note = "樹里=じゅり (default いつき)"
+
+[[case]]
+input = "天空橋朋花"
+mode = "hiragana"
+expected = "あまつそらはしともか"
+note = "ミリオン 天空橋=あまつそらはし"
+
+[[case]]
+input = "園田海未"
+mode = "hiragana"
+expected = "そのだうみ"
+note = "μ's 海未=うみ (default かいみ)"
+
+[[case]]
+input = "国木田花丸"
+mode = "hiragana"
+expected = "くにきだはなまる"
+note = "Aqours 花丸=はなまる"
+
+[[case]]
+input = "三船栞子"
+mode = "hiragana"
+expected = "みふねしおりこ"
+note = "虹 栞子=しおりこ"
+
+[[case]]
+input = "龍崎薫"
+mode = "hiragana"
+expected = "りゅうざきかおる"
+note = "シンデレラ 龍崎=りゅうざき"
+
+# ─── (元: probe_r224227_20260619.toml) ───
+# 2026-06-19 R224-227 シンデレラ/バンドリ/にじ/戦国姫 probe まとめ。
+
+[[case]]
+input = "棟方愛海"
+mode = "hiragana"
+expected = "むなかたまなみ"
+note = "愛海=まなみ (default あいかい)"
+
+[[case]]
+input = "瀬田薫"
+mode = "hiragana"
+expected = "せたかおる"
+note = "バンドリ 瀬田=せた"
+
+[[case]]
+input = "白鷺千聖"
+mode = "hiragana"
+expected = "しらさぎちさと"
+note = "千聖=ちさと (default ちひろ)"
+
+[[case]]
+input = "井伊直虎"
+mode = "hiragana"
+expected = "いいなおとら"
+note = "直虎=なおとら"
+
+[[case]]
+input = "茶々"
+mode = "hiragana"
+expected = "ちゃちゃ"
+note = "淀殿 (々連濁化け防止)"
+
+# ─── (元: probe_r228231_20260619.toml) ───
+# 2026-06-19 R228-231 ガルパン/ゾンサガ/アイカツ/Liella probe まとめ。
+
+[[case]]
+input = "五十鈴華"
+mode = "hiragana"
+expected = "いすずはな"
+note = "ガルパン 華=はな (default か)"
+
+[[case]]
+input = "島田愛里寿"
+mode = "hiragana"
+expected = "しまだありす"
+note = "愛里寿=ありす (default ありじゅ)"
+
+[[case]]
+input = "源さくら"
+mode = "hiragana"
+expected = "みなもとさくら"
+note = "ゾンサガ 源=みなもと (default げん)"
+
+[[case]]
+input = "紫吹蘭"
+mode = "hiragana"
+expected = "しぶきらん"
+note = "アイカツ 紫吹=しぶき"
+
+[[case]]
+input = "嵐千砂都"
+mode = "hiragana"
+expected = "あらしちさと"
+note = "Liella 千砂都=ちさと"
+
+[[case]]
+input = "平安名すみれ"
+mode = "hiragana"
+expected = "へあんなすみれ"
+note = "平安名=へあんな (default へんな)"
+
+# ─── (元: probe_recovered_genres_20260619.toml) ───
+# 2026-06-19 取り残し branch (claude/dictionary-genre-gaps-v70gi4, 2026-06-10) から
+# 復旧した6ジャンル (math/plants/surnames/history/law/medicine、計279件) の代表回帰。
+# 九十九=ツクモ は数詞 99 と homograph のため復旧時に除外。
+
+[[case]]
+input = "五百旗頭"
+mode = "hiragana"
+expected = "いおきべ"
+note = "難読姓 surnames.toml"
+
+[[case]]
+input = "勘解由小路"
+mode = "hiragana"
+expected = "かでのこうじ"
+note = "難読姓"
+
+[[case]]
+input = "安心院"
+mode = "hiragana"
+expected = "あじむ"
+note = "難読姓/地名"
+
+[[case]]
+input = "公孫樹"
+mode = "hiragana"
+expected = "いちょう"
+note = "plants.toml 熟字訓"
+
+[[case]]
+input = "含羞草"
+mode = "hiragana"
+expected = "おじぎそう"
+note = "plants.toml"
+
+# ─── (元: probe_rendaku2_20260619.toml) ───
+# 2026-06-19 連濁 複合語 第2弾 由来の回帰 lock。
+# 橋=ばし/川=がわ/鳥=どり/傘=がさ/菓子=がし の連濁、兄弟語漏れを補充。
+
+[[case]]
+input = "丸太橋を渡る"
+mode = "hiragana"
+expected = "まるたばしをわたる"
+note = "旧 まるたきょう (石橋/吊り橋/桟橋は正)"
+
+[[case]]
+input = "どぶ川"
+mode = "hiragana"
+expected = "どぶがわ"
+note = "旧 どぶかわ"
+
+[[case]]
+input = "水鳥が泳ぐ"
+mode = "hiragana"
+expected = "みずどりがおよぐ"
+note = "旧 みずとり (渡り鳥/小鳥/親鳥は正)"
+
+[[case]]
+input = "唐傘お化け"
+mode = "hiragana"
+expected = "からかさおばけ"
+note = "旧 とうさん (破損)"
+
+[[case]]
+input = "綿菓子を食べる"
+mode = "hiragana"
+expected = "わたがしをたべる"
+note = "旧 わたかし"
+
+# 回帰ガード: 兄弟語は維持
+[[case]]
+input = "石橋を叩いて渡る"
+mode = "hiragana"
+expected = "いしばしをたたいてわたる"
+
+[[case]]
+input = "渡り鳥の群れ"
+mode = "hiragana"
+expected = "わたりどりのむれ"
+
+# ─── (元: probe_rendaku3_20260619.toml) ───
+# 2026-06-19 連濁 複合語 第3弾 由来の回帰 lock。
+# 木/水/草/茶/塩/豆/虫/魚/口/骨 系は ja 大半正、酒の漏れ2件のみ補充。
+# 雨水=あまみず/うすい は真の homograph (節気/排水 うすい) で見送り。
+
+[[case]]
+input = "濁り酒を飲む"
+mode = "hiragana"
+expected = "にごりざけをのむ"
+note = "旧 にごりさけ (甘酒/地酒/冷や酒/燗酒は正)"
+
+[[case]]
+input = "安酒であおる"
+mode = "hiragana"
+expected = "やすざけであおる"
+note = "旧 あんしゅ (訓+訓 連濁)"
+
+# 回帰ガード: 音読み酒は維持
+[[case]]
+input = "梅酒を漬ける"
+mode = "hiragana"
+expected = "うめしゅをつける"
+
+[[case]]
+input = "甘酒を飲む"
+mode = "hiragana"
+expected = "あまざけをのむ"
+
+# 成熟確認: 木/口/骨系は正読
+[[case]]
+input = "苗木を植える"
+mode = "hiragana"
+expected = "なえぎをうえる"
+
+[[case]]
+input = "蛇口をひねる"
+mode = "hiragana"
+expected = "じゃぐちをひねる"
+
+[[case]]
+input = "背骨が曲がる"
+mode = "hiragana"
+expected = "せぼねがまがる"
+
+# ─── (元: probe_rendaku_20260619.toml) ───
+# 2026-06-19 連濁 複合語 例文 由来の回帰 lock。
+# 連濁 (声=ごえ/話=ばなし/紙=がみ/手=て/丼=どん/寿司=ずし) は ja 大半正、
+# 兄弟語が Lindera token 化差で漏れた語のみ補充。
+
+# ─── 話 = ばなし (無駄話、 作り話/昔話は正) ───
+[[case]]
+input = "無駄話をする"
+mode = "hiragana"
+expected = "むだばなしをする"
+note = "旧 むだはなし"
+
+# ─── 寿司 = ずし (手巻き/巻き/棒、 握り/稲荷/押し/ちらしは正) ───
+[[case]]
+input = "手巻き寿司"
+mode = "hiragana"
+expected = "てまきずし"
+note = "旧 てまきすし"
+
+[[case]]
+input = "巻き寿司"
+mode = "hiragana"
+expected = "まきずし"
+
+[[case]]
+input = "棒寿司"
+mode = "hiragana"
+expected = "ぼうずし"
+
+# ─── 裏 = うら (路地裏/天井裏、 裏=リ音に化けてた。屋根裏/舞台裏は正) ───
+[[case]]
+input = "路地裏の店"
+mode = "hiragana"
+expected = "ろじうらのみせ"
+note = "旧 ろじり"
+
+[[case]]
+input = "天井裏に潜む"
+mode = "hiragana"
+expected = "てんじょううらにひそむ"
+note = "旧 てんじょうり"
+
+# 回帰ガード: 裏=リ compound は維持
+[[case]]
+input = "裏面に記載"
+mode = "hiragana"
+expected = "りめんにきさい"
+
+[[case]]
+input = "握り寿司を食べる"
+mode = "hiragana"
+expected = "にぎりずしをたべる"
+
+# ─── (元: probe_romcom_20260619.toml) ───
+# 2026-06-19 ラブコメ(かぐや様/五等分) probe。藤原千花/石上優/西片 等は正読。
+# bare 大仏=だいぶつ/白銀=はくぎん/五月/一花 は homograph/generic でフルネームのみ。
+
+[[case]]
+input = "白銀御行"
+mode = "hiragana"
+expected = "しろがねみゆき"
+note = "白銀=しろがね/御行=みゆき"
+
+[[case]]
+input = "大仏こばち"
+mode = "hiragana"
+expected = "おさらぎこばち"
+note = "大仏=おさらぎ (bare 大仏=だいぶつ homograph)"
+
+[[case]]
+input = "中野三玖"
+mode = "hiragana"
+expected = "なかのみく"
+note = "三玖=みく (default さんきゅう)"
+
+[[case]]
+input = "中野五月"
+mode = "hiragana"
+expected = "なかのいつき"
+note = "五月=いつき (default ごがつ)"
+
+# ─── (元: probe_sangoku2_20260619.toml) ───
+# 2026-06-19 三国志 武将 第2弾 probe。司馬懿/鄧艾/姜維/陸遜/太史慈 等は正読。法正=のりまさ homograph 見送り。
+
+[[case]]
+input = "賈詡"
+mode = "hiragana"
+expected = "かく"
+note = "賈=か/詡=く"
+
+[[case]]
+input = "荀彧"
+mode = "hiragana"
+expected = "じゅんいく"
+note = "彧=いく"
+
+[[case]]
+input = "龐徳"
+mode = "hiragana"
+expected = "ほうとく"
+note = "龐=ほう"
+
+[[case]]
+input = "諸葛恪"
+mode = "hiragana"
+expected = "しょかつかく"
+note = "恪=かく"
+
+[[case]]
+input = "関平"
+mode = "hiragana"
+expected = "かんぺい"
+note = "平=ぺい 連濁"
+
+# ─── (元: probe_sangokushi_20260619.toml) ───
+# 2026-06-19 三国志武将 probe。諸葛亮/曹操/劉備/関羽/趙雲/呂布/姜維/陸遜 等は正読。
+# 法正=ほうせい は のりまさ(和名) と homograph で見送り。
+
+[[case]]
+input = "夏侯惇"
+mode = "hiragana"
+expected = "かこうとん"
+note = "夏侯=かこう (default なつこう)"
+
+[[case]]
+input = "張飛"
+mode = "hiragana"
+expected = "ちょうひ"
+note = "飛=ひ (default ちょうと)"
+
+[[case]]
+input = "許褚"
+mode = "hiragana"
+expected = "きょちょ"
+note = "褚=ちょ (default きょおおい)"
+
+[[case]]
+input = "龐統"
+mode = "hiragana"
+expected = "ほうとう"
+note = "龐=ほう (default みだれる)"
+
+[[case]]
+input = "貂蝉"
+mode = "hiragana"
+expected = "ちょうせん"
+note = "三国志の美女 (default てんせみ)"
+
+[[case]]
+input = "華佗"
+mode = "hiragana"
+expected = "かだ"
+note = "名医 (default かほか)"
+
+[[case]]
+input = "孫権"
+mode = "hiragana"
+expected = "そんけん"
+note = "孫=そん (default まごけん)"
+
+# ─── (元: probe_sengoku2_20260619.toml) ───
+# 2026-06-19 戦国武将 第2弾 probe。山本勘助/真田信之/清水宗治/蒲生氏郷/筒井順慶 等は正読。
+
+[[case]]
+input = "飯富虎昌"
+mode = "hiragana"
+expected = "おぶとらまさ"
+note = "飯富=おぶ (default いいとみ)"
+
+[[case]]
+input = "内藤昌豊"
+mode = "hiragana"
+expected = "ないとうまさとよ"
+note = "昌豊=まさとよ"
+
+[[case]]
+input = "立花道雪"
+mode = "hiragana"
+expected = "たちばなどうせつ"
+note = "立花=たちばな (リッカ華道と別)"
+
+[[case]]
+input = "島津義久"
+mode = "hiragana"
+expected = "しまづよしひさ"
+note = "島津=しまづ 連濁"
+
+[[case]]
+input = "浦上宗景"
+mode = "hiragana"
+expected = "うらがみむねかげ"
+note = "浦上=うらがみ (長崎 浦上=うらかみ と別)"
+
+[[case]]
+input = "立花誾千代"
+mode = "hiragana"
+expected = "たちばなぎんちよ"
+note = "誾千代=ぎんちよ"
+
+# ─── (元: probe_sengoku_20260619.toml) ───
+# 2026-06-19 戦国武将 フルネーム probe。直江兼続/島左近/長宗我部元親/宇喜多秀家/
+# 浅井長政=あざい/黒田官兵衛 等は登録済/正読。特殊読み6件を personal_names に補充。
+
+[[case]]
+input = "最上義光"
+mode = "hiragana"
+expected = "もがみよしあき"
+note = "義光=よしあき (default よしみつ)"
+
+[[case]]
+input = "三好長慶"
+mode = "hiragana"
+expected = "みよしながよし"
+note = "長慶=ながよし (default ちょうけい)"
+
+[[case]]
+input = "山県昌景"
+mode = "hiragana"
+expected = "やまがたまさかげ"
+note = "昌景=まさかげ (default しょうけい)"
+
+[[case]]
+input = "立花宗茂"
+mode = "hiragana"
+expected = "たちばなむねしげ"
+note = "bare 立花=リッカ と区別、フルネームで武将"
+
+[[case]]
+input = "池田恒興"
+mode = "hiragana"
+expected = "いけだつねおき"
+note = "恒興=つねおき (default こうきょう)"
+
+# ─── (元: probe_shinwa_20260619.toml) ───
+# 2026-06-19 日本神話の神名 probe。天照大神/須佐之男/大国主 等は既正。少彦名は religions.toml。
+
+[[case]]
+input = "瓊瓊杵尊"
+mode = "hiragana"
+expected = "ににぎのみこと"
+note = "default たまたまきねそん"
+
+[[case]]
+input = "鵜葺草葺不合"
+mode = "hiragana"
+expected = "うがやふきあえず"
+note = "神武の父"
+
+[[case]]
+input = "木花咲耶姫"
+mode = "hiragana"
+expected = "このはなさくやひめ"
+note = ""
+
+[[case]]
+input = "建御雷"
+mode = "hiragana"
+expected = "たけみかづち"
+note = ""
+
+[[case]]
+input = "天之御中主"
+mode = "hiragana"
+expected = "あめのみなかぬし"
+note = ""
+
+[[case]]
+input = "豊受大神"
+mode = "hiragana"
+expected = "とようけのおおかみ"
+note = "default ほうじゅだいじん"
+
+# ─── (元: probe_shogi_20260619.toml) ───
+# 2026-06-19 将棋用語 probe。穴熊/棒銀/詰将棋/王手/飛車(単独)は正読。歩兵=ほへい/龍馬=りょうま homograph 見送り。
+
+[[case]]
+input = "美濃囲い"
+mode = "hiragana"
+expected = "みのがこい"
+note = "囲い=がこい 連濁 (default かこい)"
+
+[[case]]
+input = "振り飛車"
+mode = "hiragana"
+expected = "ふりびしゃ"
+note = "飛車=びしゃ 連濁"
+
+[[case]]
+input = "居飛車"
+mode = "hiragana"
+expected = "いびしゃ"
+note = "居=い (default きょ)"
+
+[[case]]
+input = "入玉"
+mode = "hiragana"
+expected = "にゅうぎょく"
+note = "玉=ぎょく (default にゅうだま)"
+
+[[case]]
+input = "角換わり"
+mode = "hiragana"
+expected = "かくがわり"
+note = "角=かく (default かど)"
+
+# ─── (元: probe_shoujo_20260619.toml) ───
+# 2026-06-19 少女漫画/姓 probe。月影千草/速水真澄/姫川亜弓/花本/真山(姓)は正読。
+
+[[case]]
+input = "道明寺司"
+mode = "hiragana"
+expected = "どうみょうじつかさ"
+note = "司=つかさ (default し)"
+
+[[case]]
+input = "野田恵"
+mode = "hiragana"
+expected = "のだめぐみ"
+note = "のだめ。恵=めぐみ (default けい)"
+
+[[case]]
+input = "鮎川"
+mode = "hiragana"
+expected = "あゆかわ"
+note = "鮎=あゆ (default あいかわ)"
+
+[[case]]
+input = "立花"
+mode = "hiragana"
+expected = "たちばな"
+note = "姓優勢 (生け花のりっかは niche)"
+
+[[case]]
+input = "緑間"
+mode = "hiragana"
+expected = "みどりま"
+note = "黒バス (default みどりかん)"
+
+# ─── (元: probe_shuku_20260619.toml) ───
+# 2026-06-19 街道・宿場 第14弾。★〜宿=やど が systematic (宿場の宿はじゅく)。
+# 著名宿場のみ登録 (obscure宿場は whack-a-mole 回避で見送り、signal駆動候補)。
+# 宿場町=しゅくばまち/本陣/旅籠=はたご/中山道/東海道 は ja 正読。
+
+[[case]]
+input = "品川宿"
+mode = "hiragana"
+expected = "しながわじゅく"
+note = "江戸四宿、宿=じゅく (旧 やど)"
+
+[[case]]
+input = "関宿"
+mode = "hiragana"
+expected = "せきじゅく"
+note = "東海道/重伝建"
+
+[[case]]
+input = "草津宿"
+mode = "hiragana"
+expected = "くさつじゅく"
+
+[[case]]
+input = "醒井宿"
+mode = "hiragana"
+expected = "さめがいじゅく"
+note = "醒井=さめがい難読"
+
+[[case]]
+input = "追分宿"
+mode = "hiragana"
+expected = "おいわけじゅく"
+note = "追分=おいわけ (ついぶん化け)"
+
+[[case]]
+input = "木曽路"
+mode = "hiragana"
+expected = "きそじ"
+note = "路=じ (旧 きそろ)"
+
+[[case]]
+input = "熊野古道"
+mode = "hiragana"
+expected = "くまのこどう"
+note = "古道=こどう (旧 ふるみち)"
+
+# ─── (元: probe_signal_20260619.toml) ───
+# 2026-06-19 本番 signal_log (alphabet_miss 上位) 由来の回帰 lock。
+# 実データ: ssh debian の /admin/signal_stats?kind=alphabet_miss。
+# ABC/TRPG/IRC は既収録 (履歴 miss)、真のギャップ5件を補充。
+
+[[case]]
+input = "heyみんな"
+mode = "hiragana"
+expected = "ヘイみんな"
+
+[[case]]
+input = "shuffleする"
+mode = "hiragana"
+expected = "シャッフルする"
+
+[[case]]
+input = "emojiを使う"
+mode = "hiragana"
+expected = "エモジをつかう"
+
+[[case]]
+input = "Boomerangで撮る"
+mode = "hiragana"
+expected = "ブーメランでとる"
+
+[[case]]
+input = "TTSで読み上げ"
+mode = "hiragana"
+expected = "ティーティーエスでよみあげ"
+
+# ─── (元: probe_singlekanji_20260619.toml) ───
+# 2026-06-19 単漢字 nature noun 例文 由来の回帰 lock。
+# 自然系単漢字 (陰/谷/峰/底/闇/霧/影/炎/煙/泡/波/渦/潮/隅/角/淵/裏/奥/苔/獣/露/痕/蜜/巣)
+# は ja 完全成熟 (露=つゆ/角=かど は VV が誤)。実バグは 泉 のみ (風と同型)。
+
+# ─── 泉 = いずみ (形容詞/連体 + 泉 文末、 prev_ends_any 追加) ───
+[[case]]
+input = "古い泉"
+mode = "hiragana"
+expected = "ふるいいずみ"
+note = "旧 せん (next 助詞無し文末)"
+
+[[case]]
+input = "清らかな泉"
+mode = "hiragana"
+expected = "きよらかないずみ"
+
+[[case]]
+input = "湧き出る泉"
+mode = "hiragana"
+expected = "わきでるいずみ"
+note = "prev=る (動詞連体形)"
+
+# 回帰ガード: 泉 compound = セン
+[[case]]
+input = "温泉に入る"
+mode = "hiragana"
+expected = "おんせんにはいる"
+
+[[case]]
+input = "源泉かけ流し"
+mode = "hiragana"
+expected = "げんせんかけながし"
+
+# 成熟確認: nature 単漢字は文脈で正読
+[[case]]
+input = "木の陰に隠れる"
+mode = "hiragana"
+expected = "きのかげにかくれる"
+
+[[case]]
+input = "道の角を曲がる"
+mode = "hiragana"
+expected = "みちのかどをまがる"
+note = "かく ではない"
+
+# ─── (元: probe_sports2_20260619.toml) ───
+# 2026-06-19 スラダン/アイシールド probe。桜木花道/赤木/三井 等は正読。
+
+[[case]]
+input = "流川楓"
+mode = "hiragana"
+expected = "るかわかえで"
+note = "流川=るかわ (default ながれかわ)"
+
+[[case]]
+input = "三井寿"
+mode = "hiragana"
+expected = "みついひさし"
+note = "寿=ひさし (default じゅ)"
+
+[[case]]
+input = "沢北栄治"
+mode = "hiragana"
+expected = "さわきたえいじ"
+note = "沢北=さわきた (default たくほく)"
+
+[[case]]
+input = "葉柱ルイ"
+mode = "hiragana"
+expected = "はばしらルイ"
+note = "葉柱=はばしら (default ようはしら)"
+
+[[case]]
+input = "泥門"
+mode = "hiragana"
+expected = "でいもん"
+note = "アイシールド 泥門高校 (default どろもん)"
+
+# ─── (元: probe_sports_20260619.toml) ───
+# 2026-06-19 黒バス/ハイキュー残り probe。
+
+[[case]]
+input = "木吉鉄平"
+mode = "hiragana"
+expected = "きよしてっぺい"
+note = "黒バス 木吉=きよし (default ききち)"
+
+[[case]]
+input = "花宮真"
+mode = "hiragana"
+expected = "はなみやまこと"
+note = "黒バス 花宮=はなみや"
+
+[[case]]
+input = "根武谷永吉"
+mode = "hiragana"
+expected = "ねぶやえいきち"
+note = "黒バス 根武谷=ねぶや"
+
+[[case]]
+input = "縁下力"
+mode = "hiragana"
+expected = "えんのしたちから"
+note = "ハイキュー 縁下=えんのした"
+
+[[case]]
+input = "国見英"
+mode = "hiragana"
+expected = "くにみあきら"
+note = "ハイキュー 英=あきら (default えい)"
+
+[[case]]
+input = "東峰旭"
+mode = "hiragana"
+expected = "あずまねあさひ"
+note = "ハイキュー 東峰=あずまね (default とうほう)"
+
+# ─── (元: probe_suffix_20260619.toml) ───
+# 2026-06-19 suffix homograph 例文 由来の回帰 lock。
+# 〜中/〜間/〜方/〜物 suffix は ja 大半成熟 (背中/夜中/谷間/居間/床の間/味方/夕方/
+# 食べ物/荷物=にもつ/果物 全正)。を文脈で再分割する2語のみ補正。
+
+[[case]]
+input = "行き方を調べる"
+mode = "hiragana"
+expected = "いきかたをしらべる"
+note = "旧 いきほう (を で再分割)。読み方/書き方は正"
+
+[[case]]
+input = "家中を探す"
+mode = "hiragana"
+expected = "いえじゅうをさがす"
+note = "旧 かちゅう (江戸の家臣団は古語)"
+
+# 回帰ガード: 方=ほう/かた、中=ちゅう/なか の正読
+[[case]]
+input = "方法を探す"
+mode = "hiragana"
+expected = "ほうほうをさがす"
+
+[[case]]
+input = "読み方を習う"
+mode = "hiragana"
+expected = "よみかたをならう"
+
+[[case]]
+input = "授業中に寝る"
+mode = "hiragana"
+expected = "じゅぎょうちゅうにねる"
+
+[[case]]
+input = "背中が痛い"
+mode = "hiragana"
+expected = "せなかがいたい"
+
+# 成熟確認: 〜間/〜物
+[[case]]
+input = "床の間に飾る"
+mode = "hiragana"
+expected = "とこのまにかざる"
+
+[[case]]
+input = "荷物を運ぶ"
+mode = "hiragana"
+expected = "にもつをはこぶ"
+
+# ─── (元: probe_sumo2_20260619.toml) ───
+# 2026-06-19 力士四股名 第2弾 probe。照ノ富士/玉鷲/宇良/魁聖 等は正読。
+# 明生=あきお/豊山=とよやま/東龍=とうりゅう は homograph 見送り。
+
+[[case]]
+input = "翔猿"
+mode = "hiragana"
+expected = "とびざる"
+note = "default しょうえん"
+
+[[case]]
+input = "豊昇龍"
+mode = "hiragana"
+expected = "ほうしょうりゅう"
+note = "横綱"
+
+[[case]]
+input = "琴ノ若"
+mode = "hiragana"
+expected = "ことのわか"
+note = "ノ=の"
+
+[[case]]
+input = "逸ノ城"
+mode = "hiragana"
+expected = "いちのじょう"
+note = "ノ=の/城=じょう"
+
+[[case]]
+input = "佐田の海"
+mode = "hiragana"
+expected = "さだのうみ"
+note = "佐田=さだ (default さた)"
+
+# ─── (元: probe_sumo_20260619.toml) ───
+# 2026-06-19 相撲・武道用語 probe。横綱/大関/序ノ口=じょのくち/番狂わせ/四股=しこ/
+# 不知火=しらぬい 等は ja 正読。homograph 見送り: 金星=きんせい(惑星)、叩き込み=たたきこみ(一般)。
+
+[[case]]
+input = "上手投げ"
+mode = "hiragana"
+expected = "うわてなげ"
+note = "相撲技、上手=うわて (旧 じょうずなげ)"
+
+[[case]]
+input = "下手投げ"
+mode = "hiragana"
+expected = "したてなげ"
+note = "下手=したて (旧 へたなげ)"
+
+[[case]]
+input = "徳俵"
+mode = "hiragana"
+expected = "とくだわら"
+note = "俵=だわら 連濁 (旧 とくひょう)"
+
+[[case]]
+input = "雲龍"
+mode = "hiragana"
+expected = "うんりゅう"
+note = "横綱土俵入りの型 (旧 くもりゅう)"
+
+# ─── (元: probe_temple2_20260619.toml) ───
+# 2026-06-19 京都の寺社 第20弾。南禅寺/詩仙堂/真如堂/醍醐寺/随心院 等は ja 正読。
+
+[[case]]
+input = "廬山寺"
+mode = "hiragana"
+expected = "ろざんじ"
+note = "default いえやまでら"
+
+[[case]]
+input = "常寂光寺"
+mode = "hiragana"
+expected = "じょうじゃっこうじ"
+note = "寂=じゃっ"
+
+[[case]]
+input = "愛宕念仏寺"
+mode = "hiragana"
+expected = "おたぎねんぶつじ"
+note = "愛宕=おたぎ (default おだき)"
+
+[[case]]
+input = "直指庵"
+mode = "hiragana"
+expected = "じきしあん"
+note = "庵=あん (default ちょくしいおり)"
+
+[[case]]
+input = "野宮神社"
+mode = "hiragana"
+expected = "ののみやじんじゃ"
+note = "嵐山 (default のみや)"
+
+[[case]]
+input = "六波羅蜜寺"
+mode = "hiragana"
+expected = "ろくはらみつじ"
+note = "default ろっぱらみつてら"
+
+[[case]]
+input = "勧修寺"
+mode = "hiragana"
+expected = "かじゅうじ"
+note = "門跡寺院 (default かんしゅうじ)"
+
+# ─── (元: probe_temple_20260619.toml) ───
+# 2026-06-19 寺社・観光地名 probe 由来の回帰 lock。
+# 大半の寺社は ja 正読 (浅草寺/善光寺/清水寺/金閣寺/東大寺/法隆寺/伏見稲荷/出雲大社/
+# 明治神宮/厳島神社/唐招提寺/平等院 全正)。寺=じ/てら, 山=さん/ざん の suffix 化けのみ補充。
+
+[[case]]
+input = "毛越寺"
+mode = "hiragana"
+expected = "もうつうじ"
+note = "越=つう (旧 もうつじ)"
+
+[[case]]
+input = "三十三間堂"
+mode = "hiragana"
+expected = "さんじゅうさんげんどう"
+note = "間=げん (旧 さんかんどう)"
+
+[[case]]
+input = "神護寺"
+mode = "hiragana"
+expected = "じんごじ"
+note = "旧 かんごてら"
+
+[[case]]
+input = "龍安寺"
+mode = "hiragana"
+expected = "りょうあんじ"
+note = "龍=りょう (旧 りゅうあんじ)"
+
+[[case]]
+input = "天龍寺"
+mode = "hiragana"
+expected = "てんりゅうじ"
+note = "寺=じ (旧 てんりゅうてら)"
+
+[[case]]
+input = "鞍馬寺"
+mode = "hiragana"
+expected = "くらまでら"
+note = "鞍馬=くらま (旧 あんばてら)"
+
+[[case]]
+input = "恐山"
+mode = "hiragana"
+expected = "おそれざん"
+note = "山=ざん (旧 おそれやま)"
+
+[[case]]
+input = "羽黒山"
+mode = "hiragana"
+expected = "はぐろさん"
+note = "出羽三山、山=さん (旧 はぐろやま)"
+
+# ─── (元: probe_tenipuri_20260619.toml) ───
+# 2026-06-19 テニスの王子様 キャラ名 probe。越前/手塚国光 等は既正。乾=かん(乾杯)homograph で full のみ。
+
+[[case]]
+input = "忍足侑士"
+mode = "hiragana"
+expected = "おしたりゆうし"
+note = "忍足=おしたり (default にんあし)"
+
+[[case]]
+input = "跡部景吾"
+mode = "hiragana"
+expected = "あとべけいご"
+note = "景吾=けいご"
+
+[[case]]
+input = "幸村精市"
+mode = "hiragana"
+expected = "ゆきむらせいいち"
+note = "幸村=ゆきむら"
+
+[[case]]
+input = "切原赤也"
+mode = "hiragana"
+expected = "きりはらあかや"
+note = "赤也=あかや (default せきや)"
+
+[[case]]
+input = "白石蔵ノ介"
+mode = "hiragana"
+expected = "しらいしくらのすけ"
+note = "蔵ノ介=くらのすけ"
+
+[[case]]
+input = "乾貞治"
+mode = "hiragana"
+expected = "いぬいさだはる"
+note = "乾=いぬい (bare 乾=かん homograph)"
+
+# ─── (元: probe_tohoku_20260619.toml) ───
+# 2026-06-19 東北 難読市町村 第23弾。蓬田/野辺地/雫石/涌谷/女川/寒河江/白鷹/楢葉 等は正読。
+# 田子=たご/階上=かいじょう(床)/遊佐=ゆさ(姓) homograph 見送り。
+
+[[case]]
+input = "九戸"
+mode = "hiragana"
+expected = "くのへ"
+note = "岩手県、戸=へ (default きゅうこ)"
+
+[[case]]
+input = "七ヶ宿"
+mode = "hiragana"
+expected = "しちかしゅく"
+note = "宮城県、ヶ=か (default しちがしゅく)"
+
+[[case]]
+input = "飯豊"
+mode = "hiragana"
+expected = "いいで"
+note = "山形県/飯豊山、豊=で (default いいとよ)"
+
+[[case]]
+input = "洋野"
+mode = "hiragana"
+expected = "ひろの"
+note = "岩手県洋野町 (default ようや)"
+
+[[case]]
+input = "外ヶ浜"
+mode = "hiragana"
+expected = "そとがはま"
+note = "青森県、ヶ残留"
+
+# ─── (元: probe_tokyorev_20260619.toml) ───
+# 2026-06-19 東リベ probe。花垣武道/龍宮寺堅/半間修二 等は正読。九井一/明司 読み不確実 見送り。
+
+[[case]]
+input = "灰谷蘭"
+mode = "hiragana"
+expected = "はいたにらん"
+note = "灰谷=はいたに (default はいこく)"
+
+[[case]]
+input = "鶴蝶"
+mode = "hiragana"
+expected = "かくちょう"
+note = "鶴=かく (default つるちょう)"
+
+[[case]]
+input = "場地"
+mode = "hiragana"
+expected = "ばじ"
+note = "場地圭介 (default ばち)"
+
+[[case]]
+input = "稀咲鉄太"
+mode = "hiragana"
+expected = "きさきてった"
+note = "稀咲=きさき (default まれさ)"
+
+# ─── (元: probe_touken2_20260619.toml) ───
+# 2026-06-19 刀剣乱舞 刀剣名 probe (大量補充)。村正/正宗 等は既正。
+
+[[case]]
+input = "加州清光"
+mode = "hiragana"
+expected = "かしゅうきよみつ"
+note = "清光=きよみつ (default せいこう)"
+
+[[case]]
+input = "大倶利伽羅"
+mode = "hiragana"
+expected = "おおくりから"
+note = "default だいくり"
+
+[[case]]
+input = "鯰尾藤四郎"
+mode = "hiragana"
+expected = "なまずおとうしろう"
+note = "鯰尾=なまずお"
+
+[[case]]
+input = "山姥切国広"
+mode = "hiragana"
+expected = "やまんばぎりくにひろ"
+note = "山姥切=やまんばぎり"
+
+[[case]]
+input = "へし切長谷部"
+mode = "hiragana"
+expected = "へしきりはせべ"
+note = "へし切=へしきり"
+
+[[case]]
+input = "蜻蛉切"
+mode = "hiragana"
+expected = "とんぼぎり"
+note = "蜻蛉=とんぼ/切=ぎり"
+
+[[case]]
+input = "一期一振"
+mode = "hiragana"
+expected = "いちごひとふり"
+note = "default いっきいちしん"
+
+# ─── (元: probe_verb2_20260619.toml) ───
+# 2026-06-19 難読動詞 round 2。大半 ja 成熟・homograph (託ける=かこつける/ことづける、
+# 歪む=ゆがむ/ひずむ) or 非標準漢字 (踠く/苛つく/噛り付く) で見送り。
+# 実バグは 燻ぶる の full-reading 二重化のみ (unihan 燻=くすべる→くす stem 化)。
+
+[[case]]
+input = "燻ぶる"
+mode = "hiragana"
+expected = "くすぶる"
+note = "unihan 燻=くすべる で くすべるぶる 二重化 → 燻=くす stem 化"
+
+[[case]]
+input = "燻ぶり"
+mode = "hiragana"
+expected = "くすぶり"
+
+[[case]]
+input = "燻製"
+mode = "hiragana"
+expected = "くんせい"
+note = "stem 化で非干渉の確認"
+
+# ─── (元: probe_vocaloid_20260619.toml) ───
+# 2026-06-19 ボカロ/合成音声 probe。初音ミク/可不 等は既正。
+# 神威=しんい/かもい・氷山=ひょうざん・星界=せいかい homograph は見送り。
+
+[[case]]
+input = "鏡音リン"
+mode = "hiragana"
+expected = "かがみねリン"
+note = "鏡音=かがみね、リンはpassthrough katakana (default かがみおん)"
+
+[[case]]
+input = "巡音ルカ"
+mode = "hiragana"
+expected = "めぐりねルカ"
+note = "巡音=めぐりね、ルカはpassthrough"
+
+[[case]]
+input = "紲星"
+mode = "hiragana"
+expected = "きずな"
+note = "紲=きずな (default きずなせい)"
+
+[[case]]
+input = "琴葉茜"
+mode = "hiragana"
+expected = "ことのはあかね"
+note = "琴葉=ことのは (default ことよう)"
+
+[[case]]
+input = "小春六花"
+mode = "hiragana"
+expected = "こはるりっか"
+note = "六花=りっか (default ろくか)"
+
+# ─── (元: probe_vsp_20260619.toml) ───
+# 2026-06-19 ぶいすぽ/ホロライブReGLOSS/ホロスターズ probe。一ノ瀬うるは/橘ひなの 等は正読。
+
+[[case]]
+input = "英リサ"
+mode = "hiragana"
+expected = "はなぶさりさ"
+note = "ぶいすぽ 英=はなぶさ (default えい)"
+
+[[case]]
+input = "空澄セナ"
+mode = "hiragana"
+expected = "あすみせな"
+note = "ぶいすぽ 空澄=あすみ"
+
+[[case]]
+input = "火威青"
+mode = "hiragana"
+expected = "ひおどしあお"
+note = "ReGLOSS 青=あお (default せい)"
+
+[[case]]
+input = "音乃瀬奏"
+mode = "hiragana"
+expected = "おとのせかなで"
+note = "ReGLOSS 奏=かなで (default そう)"
+
+[[case]]
+input = "荒咬オウガ"
+mode = "hiragana"
+expected = "あらがみおうが"
+note = "ホロスターズ 荒咬=あらがみ"
+
+[[case]]
+input = "岸堂天真"
+mode = "hiragana"
+expected = "がんどうてんま"
+note = "ホロスターズ"
+
+# ─── (元: probe_vtuber3_20260619.toml) ───
+# 2026-06-19 にじさんじ/ホロライブ 残り VTuber probe 第3弾。
+
+[[case]]
+input = "朝日南"
+mode = "hiragana"
+expected = "あさひな"
+note = "朝日南アカネ (default あさひなん)"
+
+[[case]]
+input = "周央"
+mode = "hiragana"
+expected = "すおう"
+note = "周央サンゴ (default しゅうおう)"
+
+[[case]]
+input = "成瀬鳴"
+mode = "hiragana"
+expected = "なるせなる"
+note = "鳴=なる (default めい)"
+
+[[case]]
+input = "夢月"
+mode = "hiragana"
+expected = "ゆづき"
+note = "夢月ロア (default ゆめげつ)"
+
+# ─── (元: probe_vtuber4_20260619.toml) ───
+# 2026-06-19 VTuber事務所 (ぶいすぽ/ななしいんく/あおぎり) probe。漣=れん/さざなみ homograph 見送り。
+
+[[case]]
+input = "音霊魂子"
+mode = "hiragana"
+expected = "おとだまたまこ"
+note = "あおぎり 音霊=おとだま (default おとれい)"
+
+[[case]]
+input = "山黒音玄"
+mode = "hiragana"
+expected = "やまぐろねくろ"
+note = "あおぎり 山黒=やまぐろ/音玄=ねくろ"
+
+[[case]]
+input = "杏戸"
+mode = "hiragana"
+expected = "きょうど"
+note = "ななしいんく 杏戸ゆげ (default あんずこ)"
+
+[[case]]
+input = "兎咲"
+mode = "hiragana"
+expected = "とさき"
+note = "ぶいすぽ 兎咲ミミ (default うさぎさ)"
+
+[[case]]
+input = "春雨麗女"
+mode = "hiragana"
+expected = "はるさめうるは"
+note = "あおぎり 麗女=うるは (default れいじょ)"
+
+# ─── (元: probe_vvcmp_20260619.toml) ───
+# 2026-06-19 VV比較で検出。発売日=はつばいび 連濁 (default はつばいにち/はつばいひ で揺れ)。
+
+[[case]]
+input = "発売日"
+mode = "hiragana"
+expected = "はつばいび"
+note = "日=び 連濁"
+
+[[case]]
+input = "新しいゲームの発売日"
+mode = "hiragana"
+expected = "あたらしいゲームのはつばいび"
+note = "文中でも連濁保持"
+
+# ─── (元: probe_yojisanji_20260619.toml) ───
+# 2026-06-19 四字熟語・三字熟語 probe 由来の回帰 lock。
+# 四字熟語は完全成熟 (42/42: 順風満帆/老若男女/三位一体 連声まで全正)、
+# 三字熟語も成熟 (39/40: 醍醐味/几帳面/真骨頂/下剋上/天邪鬼/案山子/脂下がり 全正)。
+# 実バグは 未曾有 のみ (compat 曾→曽 案件)。代表数件を成熟確認として lock。
+
+[[case]]
+input = "未曾有"
+mode = "hiragana"
+expected = "みぞう"
+note = "曾→曽 compat 正規化で key=未曽有 (旧 みそゆう)"
+
+[[case]]
+input = "順風満帆"
+mode = "hiragana"
+expected = "じゅんぷうまんぱん"
+note = "成熟確認 (まんぽでない)"
+
+[[case]]
+input = "老若男女"
+mode = "hiragana"
+expected = "ろうにゃくなんにょ"
+note = "成熟確認"
+
+[[case]]
+input = "三位一体"
+mode = "hiragana"
+expected = "さんみいったい"
+note = "連声、成熟確認"
+
+[[case]]
+input = "天邪鬼"
+mode = "hiragana"
+expected = "あまのじゃく"
+note = "三字熟語 成熟確認"
+
+# ─── (元: probe_youkai_20260619.toml) ───
+# 2026-06-19 妖怪・オカルトアニメ probe。河童/天狗/鵺/鎌鼬/一反木綿 等は正読。
+# 白沢=しらさわ/茄子=なす/芥子=からし は homograph/multi-valid で見送り。
+
+[[case]]
+input = "火車"
+mode = "hiragana"
+expected = "かしゃ"
+note = "妖怪 (default ひしゃ)"
+
+[[case]]
+input = "塗壁"
+mode = "hiragana"
+expected = "ぬりかべ"
+note = "妖怪 (default とへき)"
+
+[[case]]
+input = "輪入道"
+mode = "hiragana"
+expected = "わにゅうどう"
+note = "輪=わ (default りんにゅうどう)"
+
+[[case]]
+input = "百鬼丸"
+mode = "hiragana"
+expected = "ひゃっきまる"
+note = "どろろ"
+
+[[case]]
+input = "百目鬼静"
+mode = "hiragana"
+expected = "どうめきしずか"
+note = "xxxHOLiC 百目鬼=どうめき"
+
+[[case]]
+input = "壱原侑子"
+mode = "hiragana"
+expected = "いちはらゆうこ"
+note = "xxxHOLiC 壱原=いちはら"
