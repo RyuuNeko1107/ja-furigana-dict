@@ -1948,6 +1948,11 @@ default = "おと"
 prev_char_type = "漢字"
 reading = "オン"
 
+# カタカナ語+音 = おと (ゲーム音/ノイズ音/クリック音。録音/防音/母音 は2字token)
+[[kanji.match]]
+prev_char_type = "カタカナ"
+reading = "おと"
+
 [[kanji.match]]
 prev_char_type = "カタカナ"
 reading = "オン"
@@ -11234,6 +11239,11 @@ default = "しろ"
 
 [[kanji.match]]
 prev_char_type = "漢字"
+reading = "ジョウ"
+
+# カタカナ語+城 = ジョウ (フォーン城/ダンジョン城。お城=しろ は送り仮名で非該当)
+[[kanji.match]]
+prev_char_type = "カタカナ"
 reading = "ジョウ"
 
 [[kanji]]
