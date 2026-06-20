@@ -11731,6 +11731,11 @@ default = "おお"
 next_char_type = "漢字"
 reading = "ダイ"
 
+# 大+カタカナ語 = ダイ (大ベテラン/大ピンチ/大スター/大ファン/大ヒット 強調接頭)
+[[kanji.match]]
+next_char_type = "カタカナ"
+reading = "ダイ"
+
 # 「大きい / 大きな / 大いに / 大慌て / 大喜び / 大忙し / 大はずれ / 大まじめ / 大よろこび」 等
 # (= 漢字 jukugo「大-」 は band 100 で先勝)
 [[kanji.match]]
