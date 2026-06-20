@@ -706,3 +706,34 @@ input = "三葉虫"
 mode = "hiragana"
 expected = "さんようちゅう"
 note = "旧 さんはむし"
+
+# ─── 本番 VV比較 (stream-comments sqlite) 由来の実誤読 ───
+[[case]]
+input = "守りが固い"
+mode = "hiragana"
+expected = "まもりがかたい"
+note = "守り(防御)=まもり (旧 もり、IPADIC keeper固定)"
+
+[[case]]
+input = "守り神"
+mode = "hiragana"
+expected = "まもりがみ"
+note = "守り=マモリ の連濁ガード"
+
+[[case]]
+input = "子守り"
+mode = "hiragana"
+expected = "こもり"
+note = "守り=マモリ の巻き添えガード"
+
+[[case]]
+input = "狐柱"
+mode = "hiragana"
+expected = "きつねばしら"
+note = "柱=ばしら 連濁"
+
+[[case]]
+input = "長妻さん"
+mode = "hiragana"
+expected = "ながつまさん"
+note = "政治家姓 (旧 ちょうつま)"
