@@ -531,3 +531,10 @@ input = "他のゲーム"
 mode = "hiragana"
 expected = "ほかのゲーム"
 note = "他の=ほか ガード"
+
+# ─── seed528164 (低収量、R103右fix/R104他fix の正読を確認) ───
+[[case]]
+input = "ひょうたん島"
+mode = "hiragana"
+expected = "ひょうたんじま"
+note = "島=じま連濁 (旧 しま)"
