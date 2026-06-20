@@ -234,3 +234,39 @@ input = "三角形"
 mode = "hiragana"
 expected = "さんかくけい"
 note = "sino+形→ケイ ガード"
+
+# ─── seed787878 ───
+[[case]]
+input = "特化"
+mode = "hiragana"
+expected = "とっか"
+note = "旧 とくか (特+化 促音便)"
+
+[[case]]
+input = "砂地特化か"
+mode = "hiragana"
+expected = "すなじとっかか"
+
+[[case]]
+input = "小並感"
+mode = "hiragana"
+expected = "こなみかん"
+note = "ネットslang (旧 こへいかん)"
+
+[[case]]
+input = "大所帯"
+mode = "hiragana"
+expected = "おおじょたい"
+note = "旧 たいしょたい"
+
+[[case]]
+input = "高え"
+mode = "hiragana"
+expected = "たけえ"
+note = "高い slang (旧 こうえ)"
+
+[[case]]
+input = "仕掛け人"
+mode = "hiragana"
+expected = "しかけにん"
+note = "人=にん (旧 しかけひと)"
