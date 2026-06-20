@@ -555,6 +555,11 @@ default = "キョウ"
 [[kanji.match]]
 next_starts_any = ["い", "く", "か", "さ", "す", "め", "ま", "そ", "が", "け", "み", "過"]
 reading = "つよ"
+
+# カタカナ + 強 (クソ強/バカ強/ガチ強 等 slang) = つよ。列強/補強 は漢字prev で非干渉
+[[kanji.match]]
+prev_char_type = "カタカナ"
+reading = "つよ"
 [[kanji]]
 char = "持"
 default = "ジ"

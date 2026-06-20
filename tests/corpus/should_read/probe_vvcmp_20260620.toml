@@ -367,3 +367,28 @@ input = "皇女"
 mode = "hiragana"
 expected = "こうじょ"
 note = "皇=こう (旧 おうじょ)"
+
+# ─── seed246810 (収量低、大半VVノイズ/ja正) ───
+[[case]]
+input = "確認済"
+mode = "hiragana"
+expected = "かくにんずみ"
+note = "〜済=ずみ suffix (旧 さい)"
+
+[[case]]
+input = "完済"
+mode = "hiragana"
+expected = "かんさい"
+note = "済=サイ ON ガード"
+
+[[case]]
+input = "クソ強"
+mode = "hiragana"
+expected = "クソつよ"
+note = "カタカナ+強=つよ slang (旧 きょう)"
+
+[[case]]
+input = "補強"
+mode = "hiragana"
+expected = "ほきょう"
+note = "強=キョウ ガード"
