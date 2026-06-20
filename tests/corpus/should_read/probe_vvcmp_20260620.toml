@@ -750,3 +750,22 @@ input = "味噌汁"
 mode = "hiragana"
 expected = "みそしる"
 note = "汁=しる 例外ガード"
+
+# ─── 医療domain batch21 (R135) ───
+[[case]]
+input = "尿酸値が高い"
+mode = "hiragana"
+expected = "にょうさんちがたかい"
+note = "測定値=ち (値+助詞→ね 誤射回避、高値=ね price別)"
+
+[[case]]
+input = "高値"
+mode = "hiragana"
+expected = "たかね"
+note = "値=ね price ガード"
+
+[[case]]
+input = "揉み解して"
+mode = "hiragana"
+expected = "もみほぐして"
+note = "解す=ほぐす (旧 かい)"
