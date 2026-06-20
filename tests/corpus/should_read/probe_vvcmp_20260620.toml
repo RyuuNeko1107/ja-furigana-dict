@@ -181,3 +181,22 @@ input = "3体"
 mode = "hiragana"
 expected = "さんたい"
 note = "3 は非促音 ガード"
+
+# ─── seed333333 (収量逓減: 大半VVノイズ 勝った=まさった/niche) ───
+[[case]]
+input = "限界飯"
+mode = "hiragana"
+expected = "げんかいめし"
+note = "旧 げんかいはん (配信slang、飯=めし)"
+
+[[case]]
+input = "億り人"
+mode = "hiragana"
+expected = "おくりびと"
+note = "投資slang (送り人 pun)"
+
+[[case]]
+input = "赤飯"
+mode = "hiragana"
+expected = "せきはん"
+note = "飯=はん ガード"
