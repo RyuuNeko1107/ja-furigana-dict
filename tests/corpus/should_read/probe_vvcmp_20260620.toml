@@ -569,3 +569,22 @@ input = "丁々発止"
 mode = "hiragana"
 expected = "ちょうちょうはっし"
 note = "丁々=ちょうちょう (旧 ていでい)"
+
+# ─── 畳語 batch2 (R109) ───
+[[case]]
+input = "熱々の"
+mode = "hiragana"
+expected = "あつあつの"
+note = "熱々=あつあつ (旧 ねつねつ、頻出)"
+
+[[case]]
+input = "爛々と"
+mode = "hiragana"
+expected = "らんらんと"
+note = "旧 ただれるだだれる"
+
+[[case]]
+input = "熱中"
+mode = "hiragana"
+expected = "ねっちゅう"
+note = "熱=ネツ ガード"
