@@ -771,10 +771,8 @@ reading = "たと"
 [[kanji]]
 char = "似"
 default = "に"
-
-[[kanji.match]]
-prev_char_type = "漢字"
-reading = "ジ"
+# prev漢字→ジ は撤去 (2026-06-20): 類似/酷似/近似 は2字tokenで自動 じ、
+# rule は「最近似た/服装似てる」(名詞+似た 動詞) を じ 化け させる害のみだった
 
 # 「戦」: 音読み 「セン」 (= 「戦争 / 作戦 / 争奪戦 / 大戦」) が圧倒的。 動詞
 # 「戦う / 戦った」 = タタカ 語幹は ひらがな後続。 unihan default 「いくさ」 だと
@@ -3427,9 +3425,15 @@ default = "キ"
 char = "厳"
 default = "ゲン"
 
+# 厳めしい = いか (厳格/厳重 は token ゲン)
 [[kanji.match]]
 next_starts_any = ["め"]
 reading = "いか"
+
+# 厳しい/厳しく/厳しかった/厳しさ = きび (形容詞)
+[[kanji.match]]
+next_starts_any = ["し"]
+reading = "きび"
 
 [[kanji]]
 char = "哲"
@@ -12948,6 +12952,11 @@ default = "ジュウ"
 # 「渋は / 渋が / 渋を / 渋に / 渋の / 渋い / 渋く / 渋さ / 渋み」 名詞・形容詞 = 訓「しぶ」
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "い", "く", "か", "さ", "み", "そ", "す", "け"]
+reading = "しぶ"
+
+# カタカナ名 + 渋 = しぶ (渋ハル/渋谷ハル略。渋滞/苦渋 は token ジュウ)
+[[kanji.match]]
+next_char_type = "カタカナ"
 reading = "しぶ"
 
 # 「淫」 default 「イン」 (= 淫乱/淫行/淫蕩/淫祠)。
