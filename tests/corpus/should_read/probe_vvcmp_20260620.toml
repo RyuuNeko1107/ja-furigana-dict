@@ -634,3 +634,16 @@ input = "諍って"
 mode = "hiragana"
 expected = "いさかって"
 note = "諍う=いさかう (旧 あらそうう、争う=あらそう ガード別)"
+
+# ─── 自作長文 probe (R114) ───
+[[case]]
+input = "結局丸一日寝た"
+mode = "hiragana"
+expected = "けっきょくまるいちにちねた"
+note = "丸+漢数字=まる (局+丸 隣接で prev=漢字→ガン 誤射回避)"
+
+[[case]]
+input = "一丸となって"
+mode = "hiragana"
+expected = "いちがんとなって"
+note = "一丸=ガン ガード"

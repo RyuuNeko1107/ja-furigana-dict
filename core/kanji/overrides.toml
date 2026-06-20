@@ -15356,6 +15356,12 @@ reading = "リ"
 char = "丸"
 default = "まる"
 
+# 丸 + 漢数字 = まる (丸一日/丸三年/丸十年。prev 漢字→ガン より優先で
+# 「結局丸一日」等の局+丸 隣接誤射を防ぐ。弾丸/一丸=ガン は次が数字でないので非干渉)
+[[kanji.match]]
+next_starts_any = ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十"]
+reading = "まる"
+
 [[kanji.match]]
 prev_char_type = "漢字"
 reading = "ガン"
