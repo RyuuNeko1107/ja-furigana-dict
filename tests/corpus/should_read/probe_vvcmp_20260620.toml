@@ -318,3 +318,52 @@ input = "部屋中"
 mode = "hiragana"
 expected = "へやじゅう"
 note = "中=じゅう (旧 へやちゅう)"
+
+# ─── seed135790 ★形容詞+過ぎる systematic (漢字「過」で ON 誤読、約42字に「過」追加) ───
+[[case]]
+input = "強過ぎる"
+mode = "hiragana"
+expected = "つよすぎる"
+note = "旧 きょうすぎる (形容詞語幹+過=ON 誤読)"
+
+[[case]]
+input = "高過ぎる"
+mode = "hiragana"
+expected = "たかすぎる"
+note = "旧 こうすぎる"
+
+[[case]]
+input = "良過ぎる"
+mode = "hiragana"
+expected = "よすぎる"
+note = "旧 りょうすぎる"
+
+[[case]]
+input = "遅過ぎる"
+mode = "hiragana"
+expected = "おそすぎる"
+note = "旧 ちすぎる"
+
+[[case]]
+input = "通過"
+mode = "hiragana"
+expected = "つうか"
+note = "過=ON ガード (超過/通過 は非干渉)"
+
+[[case]]
+input = "射手座"
+mode = "hiragana"
+expected = "いてざ"
+note = "旧 しゃしゅざ"
+
+[[case]]
+input = "午年"
+mode = "hiragana"
+expected = "うまどし"
+note = "干支 (旧 ごねん)"
+
+[[case]]
+input = "皇女"
+mode = "hiragana"
+expected = "こうじょ"
+note = "皇=こう (旧 おうじょ)"
