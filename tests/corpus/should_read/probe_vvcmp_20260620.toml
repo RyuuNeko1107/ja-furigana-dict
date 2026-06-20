@@ -667,3 +667,16 @@ input = "叩き出す"
 mode = "hiragana"
 expected = "たたきだす"
 note = "叩き=たたき (旧 はたき)"
+
+# ─── 自作長文 batch9 (R119) ───
+[[case]]
+input = "旬の魚"
+mode = "hiragana"
+expected = "しゅんのさかな"
+note = "旬=しゅん (旧 じゅん、上旬/中旬=ジュンガード別)"
+
+[[case]]
+input = "中旬"
+mode = "hiragana"
+expected = "ちゅうじゅん"
+note = "旬 prev=漢字→ジュン ガード"

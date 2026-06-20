@@ -15883,9 +15883,15 @@ char = "文"
 default = "ブン"
 
 # 「旬」 default 「ジュン」 (= 上旬/初旬/旬刊/中旬、 音読み主体)
+# 「旬」 default しゅん (= 旬の魚/旬な話題/今が旬 = 出盛り期、現代 dominant)。
+# 上旬/中旬/下旬/初旬 等 prev 漢字 → ジュン (旬日 まれ)。
 [[kanji]]
 char = "旬"
-default = "ジュン"
+default = "しゅん"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ジュン"
 
 # 「昔」 default 「むかし」 (= 「昔/昔話/大昔」 訓主体、 「昔日」 まれ)
 [[kanji]]
