@@ -614,3 +614,16 @@ input = "屡々"
 mode = "hiragana"
 expected = "しばしば"
 note = "旧 しばしばじばしば (二重化け)"
+
+# ─── 当て字副詞 probe (R112、大半成熟・stragglerのみ) ───
+[[case]]
+input = "屹度"
+mode = "hiragana"
+expected = "きっと"
+note = "当て字副詞 (旧 そばだつど)"
+
+[[case]]
+input = "円らな瞳"
+mode = "hiragana"
+expected = "つぶらなひとみ"
+note = "円ら=つぶら (旧 えんら)"
