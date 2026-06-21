@@ -287,3 +287,34 @@ input = "大混乱に陥る"
 mode = "hiragana"
 expected = "だいこんらんにおちいる"
 note = "大+漢語 は だい で正 (大混乱=だいこんらん、非回帰)"
+
+# 12) 小+漢語 = しょう (default こ 化け)。小+和語 (小道/小銭) は こ で正。
+[[case]]
+input = "小休止を取る"
+mode = "hiragana"
+expected = "しょうきゅうしをとる"
+note = "小休止=しょうきゅうし (旧 こきゅうし)"
+
+[[case]]
+input = "小冊子を配る"
+mode = "hiragana"
+expected = "しょうさっしをくばる"
+note = "小冊子=しょうさっし (旧 こさっし)"
+
+[[case]]
+input = "小市民的な暮らし"
+mode = "hiragana"
+expected = "しょうしみんてきなくらし"
+note = "小市民=しょうしみん (旧 こしみん)"
+
+[[case]]
+input = "大番狂わせを起こす"
+mode = "hiragana"
+expected = "おおばんくるわせをおこす"
+note = "大番狂わせ=おおばんくるわせ (大+和語、旧 だいばんくるわせ)"
+
+[[case]]
+input = "小作人の家"
+mode = "hiragana"
+expected = "こさくにんのいえ"
+note = "小作人=こさくにん は確立読み (しょう化しない、非回帰)"
