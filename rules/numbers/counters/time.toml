@@ -63,6 +63,7 @@ default = "ニチ"
 # 0=レイジ、4/7/9 はカナ末尾置換 (ヨン→ヨ / ナナ→シチ / キュウ→ク)
 [counter."時"]
 default = "ジ"
+kanji_numeral = true  # 漢数字でも replacements 発火 (四時=よじ/九時=くじ。旧 よんじ/きゅうじ 化け、★2026-06-21)
 specials = { "0" = "レイジ" }
 
 [[counter."時".replacements]]
@@ -207,6 +208,8 @@ default = "ネンド"
 # 「2時間半」を ニジカンハン と読ませる
 [counter."時間半"]
 default = "ジカンハン"
+# 注: 四時間半/九時間半 の特殊読み (よじ/くじ) は lib の counter matching 上
+# replacements が発火しないため未対応 (四時間半=よんじかんはん のまま、稀用法)。
 # === end: 時間半 ===
 
 # === begin: 年 ===
@@ -223,6 +226,7 @@ default = "ネン"
 #   9時間 → クジカン
 [counter."時間"]
 default = "ジカン"
+kanji_numeral = true  # 漢数字でも replacements 発火 (四時間=よじかん/九時間=くじかん。旧 よんじかん/きゅうじかん、★2026-06-21)
 
 [[counter."時間".replacements]]
 last_digit = [4]

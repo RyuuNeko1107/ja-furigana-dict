@@ -218,3 +218,41 @@ input = "錚々たる顔ぶれが集う"
 mode = "hiragana"
 expected = "そうそうたるかおぶれがつどう"
 note = "錚々=そうそう (々 を連濁して そうぞう 化けていた)"
+
+# 10) 時/時間 counter: replacements (4→ヨ/7→シチ/9→ク) を持つのに kanji_numeral 未指定で
+#     漢数字に発火せず。四時=よじ/九時=くじ が よんじ/きゅうじ 化けていた。
+[[case]]
+input = "朝四時に起きる"
+mode = "hiragana"
+expected = "あさよじにおきる"
+note = "四時=よじ (旧 よんじ、kanji_numeral 追加)"
+
+[[case]]
+input = "夜九時に寝る"
+mode = "hiragana"
+expected = "よるくじにねる"
+note = "九時=くじ (旧 きゅうじ)"
+
+[[case]]
+input = "七時の電車に乗る"
+mode = "hiragana"
+expected = "しちじのでんしゃにのる"
+note = "七時=しちじ (非回帰)"
+
+[[case]]
+input = "四時間かかる作業"
+mode = "hiragana"
+expected = "よじかんかかるさぎょう"
+note = "四時間=よじかん (旧 よんじかん)"
+
+[[case]]
+input = "九時間も寝た"
+mode = "hiragana"
+expected = "くじかんもねた"
+note = "九時間=くじかん (旧 きゅうじかん)"
+
+[[case]]
+input = "何時間も待った"
+mode = "hiragana"
+expected = "なんじかんもまった"
+note = "何時間=なんじかん (何は数字でないので非干渉)"
