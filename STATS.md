@@ -25,13 +25,13 @@ git に commit されている master HEAD の状態を基準にする。
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,680** | **739 KB** |
 | [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **5,040** | **268 KB** |
-| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,539** | **116 KB** |
+| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,540** | **116 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **975** | **26 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,771** | **187 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **678** | **30 KB** |
-| **合計** | **51,683** | **1.33 MB** |
+| **合計** | **51,684** | **1.33 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -163,7 +163,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/works/<medium>/*` — 媒体 (game / literature 等) ごとに 1 作品 1 ファイル。 原則は公式読み (一般通称として定着していれば採録可)、 出典コメント必須、 古典読みは現代読み無い場合のみ。
 
-**合計**: 1,539 件 / 116 KB (genre 4 区分)
+**合計**: 1,540 件 / 116 KB (genre 4 区分)
 
 #### ゲーム
 
@@ -176,7 +176,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/game/touhou.toml`](core/works/game/touhou.toml) | 269 | 8.8 KB | 東方Project (上海アリス幻樂団): キャラクター名 / 場所 / 用語 (公式読みベース) |
 | [`core/works/game/idolmaster.toml`](core/works/game/idolmaster.toml) | 64 | 5.1 KB | アイドルマスター (バンダイナムコ): キャラクター名 |
 | [`core/works/game/sangokushi.toml`](core/works/game/sangokushi.toml) | 44 | 2.9 KB | 三国志 (演義/ゲーム/漫画): 武将名 (日本語音読み) |
-| [`core/works/game/touken_ranbu.toml`](core/works/game/touken_ranbu.toml) | 32 | 2.7 KB | 刀剣乱舞 (ニトロプラス): 刀剣男士名 |
+| [`core/works/game/touken_ranbu.toml`](core/works/game/touken_ranbu.toml) | 33 | 2.8 KB | 刀剣乱舞 (ニトロプラス): 刀剣男士名 |
 | [`core/works/game/hypmic.toml`](core/works/game/hypmic.toml) | 24 | 1.8 KB | ヒプノシスマイク (キングレコード): キャラクター名 |
 | [`core/works/game/lovelive.toml`](core/works/game/lovelive.toml) | 23 | 1.8 KB | ラブライブ! (サンライズ): キャラクター名 |
 | [`core/works/game/genshin.toml`](core/works/game/genshin.toml) | 21 | 1.8 KB | 原神 (HoYoverse): キャラクター名 (公式日本語読みベース) |
@@ -196,7 +196,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/game/tokimeki.toml`](core/works/game/tokimeki.toml) | 5 | 465 B | ときめきメモリアル: キャラクター名 |
 | [`core/works/game/a3.toml`](core/works/game/a3.toml) | 4 | 396 B | A3! : キャラクター名 |
 | [`core/works/game/utapri.toml`](core/works/game/utapri.toml) | 4 | 492 B | うたの☆プリンスさまっ♪ : キャラクター名 |
-| **小計** (23 ファイル) | **646** | **39 KB** | |
+| **小計** (23 ファイル) | **647** | **39 KB** | |
 
 #### 文学
 
