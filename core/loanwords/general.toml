@@ -163,6 +163,9 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 "IMO" = "アイエムオー"
 "IT" = "アイティー"
 
+# ── K ──
+"Kaya" = "カヤ"            # 本番signal alphabet_miss 高頻度 (romaji名→カナ)
+
 # ── L ──
 "Lag" = "ラグ"
 "LGBT" = "エルジービーティー"
@@ -196,6 +199,7 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 
 # ── R ──
 "RAM" = "ラム"
+"response" = "レスポンス"   # 本番signal alphabet_miss
 "Respawn" = "リスポーン"
 "ROM" = "ロム"
 "RPG" = "アールピージー"
