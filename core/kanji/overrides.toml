@@ -2928,6 +2928,10 @@ default = "ロウ"
 char = "恣"
 default = "シ"
 
+[[kanji.match]]
+next_starts_any = ["に"]
+reading = "ホシイママ"   # 恣に=ほしいまま (恣意=しい は next=意 で非干渉)
+
 [[kanji]]
 char = "恩"
 default = "オン"
