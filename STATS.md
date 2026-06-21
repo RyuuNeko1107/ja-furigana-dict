@@ -25,13 +25,13 @@ git に commit されている master HEAD の状態を基準にする。
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,680** | **739 KB** |
 | [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **5,040** | **268 KB** |
-| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,532** | **115 KB** |
+| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,535** | **116 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **973** | **26 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,771** | **187 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **678** | **30 KB** |
-| **合計** | **51,674** | **1.33 MB** |
+| **合計** | **51,677** | **1.33 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -163,7 +163,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/works/<medium>/*` — 媒体 (game / literature 等) ごとに 1 作品 1 ファイル。 原則は公式読み (一般通称として定着していれば採録可)、 出典コメント必須、 古典読みは現代読み無い場合のみ。
 
-**合計**: 1,532 件 / 115 KB (genre 4 区分)
+**合計**: 1,535 件 / 116 KB (genre 4 区分)
 
 #### ゲーム
 
@@ -219,7 +219,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/anime/_minor.toml`](core/works/anime/_minor.toml) | 73 | 6.2 KB | アニメ/漫画 小規模作品 統合 (1作品1-3語、2026-06-21 consolidate) |
 | [`core/works/anime/kimetsu.toml`](core/works/anime/kimetsu.toml) | 46 | 4.0 KB | 鬼滅の刃 (吾峠呼世晴): キャラクター名 / 用語 (公式読みベース) |
 | [`core/works/anime/conan.toml`](core/works/anime/conan.toml) | 44 | 3.7 KB | 名探偵コナン (青山剛昌): キャラクター名 (公式読みベース) |
-| [`core/works/anime/jujutsu.toml`](core/works/anime/jujutsu.toml) | 36 | 3.0 KB | 呪術廻戦 (芥見下々): キャラクター名 / 用語 (公式読みベース) |
+| [`core/works/anime/jujutsu.toml`](core/works/anime/jujutsu.toml) | 39 | 3.2 KB | 呪術廻戦 (芥見下々): キャラクター名 / 用語 (公式読みベース) |
 | [`core/works/anime/bleach.toml`](core/works/anime/bleach.toml) | 35 | 3.2 KB | BLEACH (久保帯人) キャラ名・用語 |
 | [`core/works/anime/heroaca.toml`](core/works/anime/heroaca.toml) | 34 | 3.1 KB | 僕のヒーローアカデミア (堀越耕平): キャラクター名 (公式読みベース) |
 | [`core/works/anime/haikyu.toml`](core/works/anime/haikyu.toml) | 29 | 2.5 KB | ハイキュー!! (古舘春一): キャラクター名 (公式読みベース) |
@@ -270,7 +270,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/anime/inuyasha.toml`](core/works/anime/inuyasha.toml) | 4 | 405 B | 犬夜叉 (高橋留美子): キャラクター名 |
 | [`core/works/anime/nurarihyon.toml`](core/works/anime/nurarihyon.toml) | 4 | 417 B | ぬらりひょんの孫: キャラクター名 |
 | [`core/works/anime/seinen.toml`](core/works/anime/seinen.toml) | 4 | 496 B | 青年漫画: キャラクター名 |
-| **小計** (54 ファイル) | **732** | **65 KB** | |
+| **小計** (54 ファイル) | **735** | **65 KB** | |
 
 #### VTuber
 
