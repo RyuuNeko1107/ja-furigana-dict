@@ -4718,14 +4718,14 @@ note = "鹿目=かなめ (default かのめ)"
 [[case]]
 input = "薙切えりな"
 mode = "hiragana"
-expected = "なぎきりえりな"
-note = "薙切=なぎきり (default なぎせつ)"
+expected = "なきりえりな"
+note = "薙切=なきり Nakiri (旧 なぎきり は誤読を誤lock、2026-06-21是正)"
 
 [[case]]
 input = "新戸緋沙子"
 mode = "hiragana"
-expected = "あらとひさこ"
-note = "新戸=あらと/緋沙子=ひさこ"
+expected = "しんとめひさこ"
+note = "新戸=しんとめ Shintome (旧 あらと は誤読を誤lock、2026-06-21是正)"
 
 [[case]]
 input = "冴羽獠"
