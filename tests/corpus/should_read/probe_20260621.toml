@@ -1,0 +1,112 @@
+# 2026-06-21 例文 probe で検出した実バグ回帰 lock。
+#
+# 1) 語り草 = カタリグサ: 動詞連用形+草 の連濁落ち (default かたりくさ)。
+#    道草=みちくさ は token 化で正のため非干渉。general.toml に jukugo 登録。
+# 2) 足 counter (履物のペア): counter 不在で 六足=ろくあし/二足のわらじ=にあし 化け。
+#    rules/numbers/counters/objects.toml に 足=ソク (s系 1/8/10 促音) 追加。
+#    body 部位の 二足歩行/四足 は jukugo override が band 100 で counter に優先。
+
+[[case]]
+input = "彼は語り草になった"
+mode = "hiragana"
+expected = "かれはかたりぐさになった"
+note = "草=ぐさ 連濁 (default かたりくさ)"
+
+[[case]]
+input = "彼は道草を食う"
+mode = "hiragana"
+expected = "かれはみちくさをくう"
+note = "道草=みちくさ (連濁なし、語り草と非干渉の確認)"
+
+[[case]]
+input = "靴を六足揃える"
+mode = "hiragana"
+expected = "くつをろくそくそろえる"
+note = "足=そく counter (旧 ろくあし)"
+
+[[case]]
+input = "二足のわらじを履く"
+mode = "hiragana"
+expected = "にそくのわらじをはく"
+note = "二足=にそく (旧 にあし)"
+
+[[case]]
+input = "靴を一足買う"
+mode = "hiragana"
+expected = "くつをいっそくかう"
+note = "一足=いっそく 促音"
+
+[[case]]
+input = "二足歩行する動物"
+mode = "hiragana"
+expected = "にそくほこうするどうぶつ"
+note = "二足歩行 jukugo override が counter に優先 (非回帰)"
+
+# 3) s/t行 suffix の助数詞で 6 が誤って sokuonize list に混入 → 六で誤促音。
+#    六は k/p行のみ促音化する。戦/着/節/通/週/食/首 の 7 件を [1,8,0] に修正。
+[[case]]
+input = "六戦して五勝した"
+mode = "hiragana"
+expected = "ろくせんしてごしょうした"
+note = "戦=せん s行、六戦=ろくせん (旧 ろっせん)"
+
+[[case]]
+input = "服を六着持っている"
+mode = "hiragana"
+expected = "ふくをろくちゃくもっている"
+note = "着=ちゃく t行、六着=ろくちゃく (旧 ろっちゃく)"
+
+[[case]]
+input = "六節からなる楽曲"
+mode = "hiragana"
+expected = "ろくせつからなるがっきょく"
+note = "節=せつ s行、六節=ろくせつ (旧 ろっせつ)"
+
+[[case]]
+input = "手紙を六通書いた"
+mode = "hiragana"
+expected = "てがみをろくつうかいた"
+note = "通=つう t行、六通=ろくつう (旧 ろっつう)"
+
+[[case]]
+input = "六週間入院した"
+mode = "hiragana"
+expected = "ろくしゅうかんにゅういんした"
+note = "週=しゅう s行、六週=ろくしゅう (旧 ろっしゅう)"
+
+[[case]]
+input = "一日六食食べる"
+mode = "hiragana"
+expected = "いちにちろくしょくたべる"
+note = "食=しょく s行、六食=ろくしょく (旧 ろっしょく)"
+
+[[case]]
+input = "和歌を六首詠む"
+mode = "hiragana"
+expected = "わかをろくしゅよむ"
+note = "首=しゅ s行、六首=ろくしゅ (旧 ろっしゅ)"
+
+# 4) 未登録 counter の新規追加。
+[[case]]
+input = "薬を六包飲む"
+mode = "hiragana"
+expected = "くすりをろっぽうのむ"
+note = "包=ぽう p行 counter 新規 (旧 ろくほう)"
+
+[[case]]
+input = "六弦のギターを弾く"
+mode = "hiragana"
+expected = "ろくげんのギターをひく"
+note = "弦=げん counter 新規 (旧 ろくつる)"
+
+[[case]]
+input = "四拍子の曲を演奏する"
+mode = "hiragana"
+expected = "よんびょうしのきょくをえんそうする"
+note = "拍子=びょうし 連濁 counter 新規 (旧 よんひょうし)"
+
+[[case]]
+input = "小包を送る"
+mode = "hiragana"
+expected = "こづつみをおくる"
+note = "包 counter は非数字の 小包=こづつみ を破壊しない (非回帰)"

@@ -215,7 +215,7 @@ default = "シュ"
 kanji_numeral = true  # 一首/六首 → いっしゅ/ろくしゅ (漢数字 bare 対応)
 
 [[counter."首".rules]]
-last_digit = [1, 6, 8, 0]
+last_digit = [1, 8, 0]  # s行: 六首=ろくしゅ は促音化しない (★2026-06-21 修正)
 suffix = "シュ"
 sokuonize = true
 # === end: 首 ===
@@ -242,7 +242,7 @@ default = "チャク"
 kanji_numeral = true  # 一着/六着 → いっちゃく/ろくちゃく (漢数字 bare 対応)
 
 [[counter."着".rules]]
-last_digit = [1, 6, 8, 0]
+last_digit = [1, 8, 0]  # t行: 六着=ろくちゃく は促音化しない (★2026-06-21 修正)
 suffix = "チャク"
 sokuonize = true
 # === end: 着 ===
@@ -253,7 +253,7 @@ default = "ツウ"
 kanji_numeral = true  # 一通/六通 → いっつう/ろくつう (漢数字 bare 対応)
 
 [[counter."通".rules]]
-last_digit = [1, 6, 8, 0]
+last_digit = [1, 8, 0]  # t行: 六通=ろくつう は促音化しない (★2026-06-21 修正)
 suffix = "ツウ"
 sokuonize = true
 # === end: 通 ===
@@ -296,7 +296,7 @@ default = "シュウ"
 kanji_numeral = true  # 一週/六週/八週 → いっしゅう/ろくしゅう/はっしゅう (漢数字 bare 対応)
 
 [[counter."週".rules]]
-last_digit = [1, 6, 8, 0]
+last_digit = [1, 8, 0]  # s行: 六週=ろくしゅう は促音化しない (★2026-06-21 修正、周と同型)
 suffix = "シュウ"
 sokuonize = true
 # === end: 週 ===
@@ -318,7 +318,7 @@ default = "セツ"
 kanji_numeral = true  # 一節/六節/八節 → いっせつ/ろくせつ/はっせつ (漢数字 bare 対応)
 
 [[counter."節".rules]]
-last_digit = [1, 6, 8, 0]
+last_digit = [1, 8, 0]  # s行: 六節=ろくせつ は促音化しない (★2026-06-21 修正)
 suffix = "セツ"
 sokuonize = true
 # === end: 節 ===
@@ -374,7 +374,7 @@ default = "ショク"
 kanji_numeral = true  # 一食/六食 → いっしょく/ろくしょく (漢数字 bare 対応)
 
 [[counter."食".rules]]
-last_digit = [1, 6, 8, 0]
+last_digit = [1, 8, 0]  # s行: 六食=ろくしょく は促音化しない (★2026-06-21 修正、色と同型)
 suffix = "ショク"
 sokuonize = true
 # === end: 食 ===
@@ -382,10 +382,10 @@ sokuonize = true
 # === begin: 戦 === (試合、 1/6/8/10 で促音化、 「1 戦 = イッセン」)
 [counter."戦"]
 default = "セン"
-kanji_numeral = true  # 一戦/六戦 → いっせん/ろっせん (漢数字 bare 対応)
+kanji_numeral = true  # 一戦/六戦 → いっせん/ろくせん (漢数字 bare 対応)
 
 [[counter."戦".rules]]
-last_digit = [1, 6, 8, 0]
+last_digit = [1, 8, 0]  # s行: 六戦=ろくせん は促音化しない (★2026-06-21 修正)
 suffix = "セン"
 sokuonize = true
 # === end: 戦 ===
@@ -840,3 +840,43 @@ kanji_numeral = true
 last_digit = [3]
 suffix = "ブクロ"
 # === end: 袋 ===
+
+# 足 (履物のペア): 一足=いっそく/六足=ろくそく/八足=はっそく (s系 1/8/10 促音、★2026-06-21)
+# 旧: counter 不在で 六足=ろくあし/二足のわらじ=にあし 化け。body部位の 四足/二足歩行 は
+# jukugo 側で override 済 (band 100 が counter に優先) なので衝突しない。
+[counter."足"]
+default = "ソク"
+kanji_numeral = true
+[[counter."足".rules]]
+last_digit = [1, 8, 0]
+suffix = "ソク"
+sokuonize = true
+# === end: 足 ===
+
+# 包 (薬包等): 一包=いっぽう/六包=ろっぽう/八包=はっぽう (p系 1/6/8/10 促音半濁、3 連濁ボウ。★2026-06-21)
+# counter 不在で 六包=ろくほう 化けていた (俵/票と同型)。
+[counter."包"]
+default = "ホウ"
+kanji_numeral = true
+[[counter."包".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "ポウ"
+sokuonize = true
+[[counter."包".rules]]
+last_digit = [3]
+suffix = "ボウ"
+# === end: 包 ===
+
+# 弦 (弦楽器の弦): 一弦=いちげん/六弦=ろくげん (漢数字 bare 対応、促音なし。★2026-06-21)
+# counter 不在で 六弦=ろくつる (弦=つる 弓づる) 化けていた。数字+弦 は楽器文脈で ゲン。
+[counter."弦"]
+default = "ゲン"
+kanji_numeral = true
+# === end: 弦 ===
+
+# 拍子 (音楽の拍子): 二拍子=にびょうし/四拍子=よんびょうし (連濁ビョウシ。★2026-06-21)
+# counter 不在で 六拍子=ろくひょうし 化けていた。N拍子 は常に連濁。手拍子等の非数字は別経路。
+[counter."拍子"]
+default = "ビョウシ"
+kanji_numeral = true
+# === end: 拍子 ===
