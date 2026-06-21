@@ -417,3 +417,28 @@ input = "御八つの時間"
 mode = "hiragana"
 expected = "おやつのじかん"
 note = "御八つ=おやつ (旧 ごやっつ)"
+
+# 16) 御+和語 第4弾 + everyday/仏教/季節の漢語も お。
+[[case]]
+input = "御年玉をもらう"
+mode = "hiragana"
+expected = "おとしだまをもらう"
+note = "御年玉=おとしだま (旧 ごねんだま)"
+
+[[case]]
+input = "御袋に電話する"
+mode = "hiragana"
+expected = "おふくろにでんわする"
+note = "御袋=おふくろ (旧 ごたい)"
+
+[[case]]
+input = "御線香をあげる"
+mode = "hiragana"
+expected = "おせんこうをあげる"
+note = "御線香=おせんこう (漢語だが お、旧 ごせんこう)"
+
+[[case]]
+input = "御先祖様を敬う"
+mode = "hiragana"
+expected = "ごせんぞさまをうやまう"
+note = "御先祖=ごせんぞ は formal漢語で ご (非回帰)"
