@@ -25,13 +25,13 @@ git に commit されている master HEAD の状態を基準にする。
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,680** | **739 KB** |
 | [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **5,040** | **268 KB** |
-| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,611** | **123 KB** |
+| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,622** | **124 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **975** | **26 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,771** | **187 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **678** | **30 KB** |
-| **合計** | **51,755** | **1.34 MB** |
+| **合計** | **51,766** | **1.34 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -163,7 +163,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/works/<medium>/*` — 媒体 (game / literature 等) ごとに 1 作品 1 ファイル。 原則は公式読み (一般通称として定着していれば採録可)、 出典コメント必須、 古典読みは現代読み無い場合のみ。
 
-**合計**: 1,611 件 / 123 KB (genre 4 区分)
+**合計**: 1,622 件 / 124 KB (genre 4 区分)
 
 #### ゲーム
 
@@ -225,6 +225,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/anime/haikyu.toml`](core/works/anime/haikyu.toml) | 32 | 2.8 KB | ハイキュー!! (古舘春一): キャラクター名 (公式読みベース) |
 | [`core/works/anime/jojo.toml`](core/works/anime/jojo.toml) | 30 | 3.0 KB | ジョジョの奇妙な冒険 (荒木飛呂彦): キャラクター名 / 用語 (公式読みベース) |
 | [`core/works/anime/gintama.toml`](core/works/anime/gintama.toml) | 25 | 2.2 KB | 銀魂 (空知英秋): キャラクター名 / 用語 (公式読みベース) |
+| [`core/works/anime/toaru.toml`](core/works/anime/toaru.toml) | 25 | 2.5 KB | とある魔術の禁書目録 / 超電磁砲 (鎌池和馬): キャラクター名 |
 | [`core/works/anime/naruto.toml`](core/works/anime/naruto.toml) | 24 | 1.8 KB | NARUTO (岸本斉史): キャラクター名 (公式読みベース) |
 | [`core/works/anime/tenipuri.toml`](core/works/anime/tenipuri.toml) | 22 | 1.7 KB | テニスの王子様 (許斐剛): キャラクター名 |
 | [`core/works/anime/onepiece.toml`](core/works/anime/onepiece.toml) | 18 | 1.5 KB | ONE PIECE (尾田栄一郎): キャラクター名 / 用語 |
@@ -233,7 +234,6 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/anime/bluelock.toml`](core/works/anime/bluelock.toml) | 16 | 1.4 KB | ブルーロック (金城宗幸/ノ村優介): キャラクター名 |
 | [`core/works/anime/yuyuhakusho.toml`](core/works/anime/yuyuhakusho.toml) | 15 | 1.2 KB | 幽☆遊☆白書 (冨樫義博): キャラクター名 |
 | [`core/works/anime/monogatari.toml`](core/works/anime/monogatari.toml) | 14 | 1.3 KB | 〈物語〉シリーズ (西尾維新): 作品名 (公式読みベース) |
-| [`core/works/anime/toaru.toml`](core/works/anime/toaru.toml) | 14 | 1.5 KB | とある魔術の禁書目録 / 超電磁砲 (鎌池和馬): キャラクター名 |
 | [`core/works/anime/tokyoghoul.toml`](core/works/anime/tokyoghoul.toml) | 13 | 1.3 KB | 東京喰種 (石田スイ): キャラクター名 / 用語 |
 | [`core/works/anime/slamdunk.toml`](core/works/anime/slamdunk.toml) | 12 | 1.0 KB | SLAM DUNK (井上雄彦): キャラクター名 |
 | [`core/works/anime/houshin.toml`](core/works/anime/houshin.toml) | 11 | 825 B | 封神演義: キャラクター名 / 用語 |
@@ -272,7 +272,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/anime/inuyasha.toml`](core/works/anime/inuyasha.toml) | 4 | 405 B | 犬夜叉 (高橋留美子): キャラクター名 |
 | [`core/works/anime/nurarihyon.toml`](core/works/anime/nurarihyon.toml) | 4 | 417 B | ぬらりひょんの孫: キャラクター名 |
 | [`core/works/anime/seinen.toml`](core/works/anime/seinen.toml) | 4 | 496 B | 青年漫画: キャラクター名 |
-| **小計** (56 ファイル) | **810** | **72 KB** | |
+| **小計** (56 ファイル) | **821** | **74 KB** | |
 
 #### VTuber
 
