@@ -4,16 +4,9 @@
 > どのファイルのどの surface が cross-file 重複してるか一目で分かる。
 > divergent reading は `tools/validate.py` が CI で fail させる (修正必須)。
 
-## ⚠️ 異なる reading (2 件 — critical)
+## ⚠️ 異なる reading (0 件 — critical)
 
-CI で `validate.py` が fail させる。 同一 surface に複数読みが共存すると
-`Dict::from_toml_dir` の後勝ち merge でファイル名 alphabetical の末尾側が
-prevail し、 動作が予測不能になるため修正必須。
-
-| surface | files / readings |
-|---|---|
-| 新戸緋沙子 | `core/works/anime/_minor.toml` → シントメヒサコ · `core/works/anime/soma.toml` → アラトヒサコ |
-| 薙切 | `core/works/anime/_minor.toml` → ナキリ · `core/works/anime/soma.toml` → ナギキリ |
+(なし — divergent reading 0 件、 健全)
 
 ## 同一 reading (20 件)
 
