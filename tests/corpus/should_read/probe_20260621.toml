@@ -386,3 +386,34 @@ input = "御飯を食べる"
 mode = "hiragana"
 expected = "ごはんをたべる"
 note = "御+漢語 は ご で正 (御飯=ごはん、非回帰)"
+
+# 15) 御+和語 第2-3弾 (家族語/慣用/動詞系)。
+[[case]]
+input = "御化けが出る"
+mode = "hiragana"
+expected = "おばけがでる"
+note = "御化け=おばけ (旧 ごばけ)"
+
+[[case]]
+input = "御祖父さんと御祖母さん"
+mode = "hiragana"
+expected = "おじいさんとおばあさん"
+note = "御祖父さん=おじいさん/御祖母さん=おばあさん (旧 ごそふ/ごそぼ)"
+
+[[case]]
+input = "御巡りさんに聞く"
+mode = "hiragana"
+expected = "おまわりさんにきく"
+note = "御巡りさん=おまわりさん (旧 ごめぐり)"
+
+[[case]]
+input = "御目出度うございます"
+mode = "hiragana"
+expected = "おめでとうございます"
+note = "御目出度う=おめでとう ateji (旧 ごめでたう)"
+
+[[case]]
+input = "御八つの時間"
+mode = "hiragana"
+expected = "おやつのじかん"
+note = "御八つ=おやつ (旧 ごやっつ)"
