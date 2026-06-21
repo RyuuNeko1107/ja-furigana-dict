@@ -318,3 +318,28 @@ input = "小作人の家"
 mode = "hiragana"
 expected = "こさくにんのいえ"
 note = "小作人=こさくにん は確立読み (しょう化しない、非回帰)"
+
+# 13) 大/小 prefix 継続。
+[[case]]
+input = "大揉めに揉める"
+mode = "hiragana"
+expected = "おおもめにもめる"
+note = "大揉め=おおもめ (旧 だいもめ)"
+
+[[case]]
+input = "大旦那と呼ばれる"
+mode = "hiragana"
+expected = "おおだんなとよばれる"
+note = "大旦那=おおだんな (旧 だいだんな)"
+
+[[case]]
+input = "小金持ちになる"
+mode = "hiragana"
+expected = "こがねもちになる"
+note = "小金持ち=こがねもち (小金=こがね 連濁、旧 こかねもち)"
+
+[[case]]
+input = "大金持ちの家"
+mode = "hiragana"
+expected = "おおがねもちのいえ"
+note = "大金持ち=おおがねもち (小金持ち追加の非回帰)"
