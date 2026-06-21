@@ -467,3 +467,28 @@ input = "御手数をおかけします"
 mode = "hiragana"
 expected = "おてすうをおかけします"
 note = "御手数=おてすう (旧 ごてすう)"
+
+# 18) 〜事 連濁落ち + 御 み読み (宗教/文語)。
+[[case]]
+input = "困り事を相談する"
+mode = "hiragana"
+expected = "こまりごとをそうだんする"
+note = "困り事=こまりごと (連濁、旧 こまりこと)"
+
+[[case]]
+input = "神の御心のままに"
+mode = "hiragana"
+expected = "かみのみこころのままに"
+note = "御心=みこころ (旧 ごしん)"
+
+[[case]]
+input = "御仏の慈悲"
+mode = "hiragana"
+expected = "みほとけのじひ"
+note = "御仏=みほとけ (既存 detailed entry オホトケ を修正)"
+
+[[case]]
+input = "御心配なく"
+mode = "hiragana"
+expected = "ごしんぱいなく"
+note = "御心配=ごしんぱい は ご (御心追加の非回帰)"
