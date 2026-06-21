@@ -154,3 +154,41 @@ input = "三番目の人"
 mode = "hiragana"
 expected = "さんばんめのひと"
 note = "番は非 jukugo で counter経路、三番目=さんばんめ (非回帰)"
+
+# 6) 数 + 助数詞: 大半 default 正、漏れた counter のみ (数=すう、連濁なし)。
+[[case]]
+input = "数行のコードを書く"
+mode = "hiragana"
+expected = "すうぎょうのコードをかく"
+note = "数行=すうぎょう (旧 すうこう)"
+
+[[case]]
+input = "船が数艘浮かぶ"
+mode = "hiragana"
+expected = "ふねがすうそううかぶ"
+note = "数艘=すうそう (旧 すうふね)"
+
+[[case]]
+input = "鳥が数羽飛ぶ"
+mode = "hiragana"
+expected = "とりがすうわとぶ"
+note = "数羽=すうわ (旧 すうう)"
+
+# 7) 幾 + 助数詞/数詞: 幾=き 化け。現代語で幾は常に いく (例外 幾何=きか)。
+[[case]]
+input = "幾千の星が輝く"
+mode = "hiragana"
+expected = "いくせんのほしがかがやく"
+note = "幾千=いくせん (旧 きせん)"
+
+[[case]]
+input = "幾万の兵が集まる"
+mode = "hiragana"
+expected = "いくまんのへいがあつまる"
+note = "幾万=いくまん (旧 きまん)"
+
+[[case]]
+input = "幾何学模様を描く"
+mode = "hiragana"
+expected = "きかがくもようをかく"
+note = "幾何=きか は longest-match で保全 (幾X 追加の非回帰確認)"
