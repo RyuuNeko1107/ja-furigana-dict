@@ -523,3 +523,28 @@ input = "殺陣の稽古場"
 mode = "hiragana"
 expected = "たてのけいこば"
 note = "殺陣=たて 当て字 / 稽古場=けいこば 連濁"
+
+# 20) agent×probe 第2波の代表ロック (当て字副詞/連濁/大小)。
+[[case]]
+input = "回転寿司に行く"
+mode = "hiragana"
+expected = "かいてんずしにいく"
+note = "回転寿司=かいてんずし 連濁 (旧 かいてんすし)"
+
+[[case]]
+input = "兎に角やってみる"
+mode = "hiragana"
+expected = "とにかくやってみる"
+note = "兎に角=とにかく 当て字"
+
+[[case]]
+input = "随分と苛々している"
+mode = "hiragana"
+expected = "ずいぶんといらいらしている"
+note = "随分=ずいぶん/苛々=いらいら 当て字"
+
+[[case]]
+input = "大酒飲みの大旦那"
+mode = "hiragana"
+expected = "おおざけのみのおおだんな"
+note = "大酒飲み=おおざけのみ/大旦那=おおだんな (大+和語=おお)"
