@@ -256,3 +256,34 @@ input = "何時間も待った"
 mode = "hiragana"
 expected = "なんじかんもまった"
 note = "何時間=なんじかん (何は数字でないので非干渉)"
+
+# 11) 大+和語 = おお (default だい 化け)。大+漢語 (大失敗/大混乱) は だい で正。
+[[case]]
+input = "大仕事を任される"
+mode = "hiragana"
+expected = "おおしごとをまかされる"
+note = "大仕事=おおしごと (旧 だいしごと)"
+
+[[case]]
+input = "大喧嘩になった"
+mode = "hiragana"
+expected = "おおげんかになった"
+note = "大喧嘩=おおげんか (旧 だいけんか)"
+
+[[case]]
+input = "大舞台に立つ"
+mode = "hiragana"
+expected = "おおぶたいにたつ"
+note = "大舞台=おおぶたい (旧 だいぶたい)"
+
+[[case]]
+input = "大外れの予想"
+mode = "hiragana"
+expected = "おおはずれのよそう"
+note = "大外れ=おおはずれ (大当たり=おおあたりと対、旧 だいはずれ)"
+
+[[case]]
+input = "大混乱に陥る"
+mode = "hiragana"
+expected = "だいこんらんにおちいる"
+note = "大+漢語 は だい で正 (大混乱=だいこんらん、非回帰)"
