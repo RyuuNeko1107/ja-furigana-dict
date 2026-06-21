@@ -25,13 +25,13 @@ git に commit されている master HEAD の状態を基準にする。
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,680** | **739 KB** |
 | [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **5,040** | **268 KB** |
-| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,579** | **120 KB** |
+| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,588** | **121 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **975** | **26 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,771** | **187 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **678** | **30 KB** |
-| **合計** | **51,723** | **1.34 MB** |
+| **合計** | **51,732** | **1.34 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -163,7 +163,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/works/<medium>/*` — 媒体 (game / literature 等) ごとに 1 作品 1 ファイル。 原則は公式読み (一般通称として定着していれば採録可)、 出典コメント必須、 古典読みは現代読み無い場合のみ。
 
-**合計**: 1,579 件 / 120 KB (genre 4 区分)
+**合計**: 1,588 件 / 121 KB (genre 4 区分)
 
 #### ゲーム
 
@@ -212,7 +212,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 アニメ / 漫画作品の固有名詞 (キャラクター / 場所 / 用語、 公式読みベース)
 
-`core/works/anime/` — 54 ファイル
+`core/works/anime/` — 55 ファイル
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
@@ -239,6 +239,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/anime/houshin.toml`](core/works/anime/houshin.toml) | 11 | 825 B | 封神演義: キャラクター名 / 用語 |
 | [`core/works/anime/kingdom.toml`](core/works/anime/kingdom.toml) | 11 | 903 B | キングダム (原泰久): キャラクター名 (古代中国名の難読読み) |
 | [`core/works/anime/precure.toml`](core/works/anime/precure.toml) | 10 | 869 B | プリキュア: キャラクター名 |
+| [`core/works/anime/rurouni.toml`](core/works/anime/rurouni.toml) | 10 | 1.1 KB | るろうに剣心 (和月伸宏): キャラクター名 |
 | [`core/works/anime/garupan.toml`](core/works/anime/garupan.toml) | 8 | 656 B | ガルパン: キャラクター名 |
 | [`core/works/anime/gochiusa.toml`](core/works/anime/gochiusa.toml) | 8 | 648 B | ごちうさ: キャラクター名 |
 | [`core/works/anime/kyoani.toml`](core/works/anime/kyoani.toml) | 8 | 751 B | 京アニ作品: キャラクター名 |
@@ -254,9 +255,9 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/anime/goldenkamuy.toml`](core/works/anime/goldenkamuy.toml) | 6 | 770 B | ゴールデンカムイ (野田サトル): キャラクター名 |
 | [`core/works/anime/kirara.toml`](core/works/anime/kirara.toml) | 6 | 676 B | きらら系アニメ: キャラクター名 |
 | [`core/works/anime/kokumin_anime.toml`](core/works/anime/kokumin_anime.toml) | 6 | 577 B | 国民的アニメ: キャラクター名 |
-| [`core/works/anime/rurouni.toml`](core/works/anime/rurouni.toml) | 6 | 655 B | るろうに剣心 (和月伸宏): キャラクター名 |
 | [`core/works/anime/saki.toml`](core/works/anime/saki.toml) | 6 | 503 B | 咲-Saki-: キャラクター名 |
 | [`core/works/anime/sao_date.toml`](core/works/anime/sao_date.toml) | 6 | 592 B | SAO/デート・ア・ライブ: キャラクター名 |
+| [`core/works/anime/ccsakura.toml`](core/works/anime/ccsakura.toml) | 5 | 643 B | カードキャプターさくら (CLAMP): キャラクター名 |
 | [`core/works/anime/dragonball.toml`](core/works/anime/dragonball.toml) | 5 | 536 B | ドラゴンボール (鳥山明): キャラクター名 (公式読みベース) |
 | [`core/works/anime/geass.toml`](core/works/anime/geass.toml) | 5 | 466 B | コードギアス: キャラクター名 |
 | [`core/works/anime/ghibli.toml`](core/works/anime/ghibli.toml) | 5 | 642 B | スタジオジブリ: キャラクター名 / 用語 / 作品名 |
@@ -270,7 +271,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/anime/inuyasha.toml`](core/works/anime/inuyasha.toml) | 4 | 405 B | 犬夜叉 (高橋留美子): キャラクター名 |
 | [`core/works/anime/nurarihyon.toml`](core/works/anime/nurarihyon.toml) | 4 | 417 B | ぬらりひょんの孫: キャラクター名 |
 | [`core/works/anime/seinen.toml`](core/works/anime/seinen.toml) | 4 | 496 B | 青年漫画: キャラクター名 |
-| **小計** (54 ファイル) | **778** | **69 KB** | |
+| **小計** (55 ファイル) | **787** | **70 KB** | |
 
 #### VTuber
 
