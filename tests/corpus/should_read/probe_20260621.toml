@@ -110,3 +110,47 @@ input = "小包を送る"
 mode = "hiragana"
 expected = "こづつみをおくる"
 note = "包 counter は非数字の 小包=こづつみ を破壊しない (非回帰)"
+
+# 5) 何 + 助数詞: 未登録 counter が 何=なに (訓) に化けていた。jukugo 個別列挙で修正
+#    (何は数詞でなく counter rule 不可、何本=ナンボン 等と同じ方式)。
+[[case]]
+input = "全部で何番だ"
+mode = "hiragana"
+expected = "ぜんぶでなんばんだ"
+note = "何番=なんばん (旧 なにばん)"
+
+[[case]]
+input = "これは何円ですか"
+mode = "hiragana"
+expected = "これはなんえんですか"
+note = "何円=なんえん (旧 なにえん)"
+
+[[case]]
+input = "テストは何点だった"
+mode = "hiragana"
+expected = "テストはなんてんだった"
+note = "何点=なんてん (旧 なにてん)"
+
+[[case]]
+input = "前から何番目に並ぶ"
+mode = "hiragana"
+expected = "まえからなんばんめにならぶ"
+note = "何番目=なんばんめ (何番 jukugo が序数 目をブロックする問題を明示登録で解消)"
+
+[[case]]
+input = "手紙を何通書いた"
+mode = "hiragana"
+expected = "てがみをなんつうかいた"
+note = "何通=なんつう (旧 なにつう)"
+
+[[case]]
+input = "鳥が何羽いる"
+mode = "hiragana"
+expected = "とりがなんばいる"
+note = "何羽=なんば 連濁 (旧 なにう、三羽=さんばと同型)"
+
+[[case]]
+input = "三番目の人"
+mode = "hiragana"
+expected = "さんばんめのひと"
+note = "番は非 jukugo で counter経路、三番目=さんばんめ (非回帰)"
