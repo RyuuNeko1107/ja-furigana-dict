@@ -24,14 +24,14 @@ git に commit されている master HEAD の状態を基準にする。
 | カテゴリ | エントリ数 | サイズ |
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,680** | **739 KB** |
-| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **5,048** | **269 KB** |
+| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **5,051** | **269 KB** |
 | [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,647** | **126 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **975** | **26 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,771** | **187 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **678** | **30 KB** |
-| **合計** | **51,799** | **1.35 MB** |
+| **合計** | **51,802** | **1.35 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -56,7 +56,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/jukugo/<genre>/*` — 手動 PR メンテのジャンル別 jukugo (≥ 2 字 surface)。 lib の Step 3 (jukugo lookup) で Lindera より優先採用。 各 genre dir の `_genre.toml` がカテゴリ description を持つ。
 
-**合計**: 5,048 件 / 269 KB (genre 6 区分)
+**合計**: 5,051 件 / 269 KB (genre 6 区分)
 
 #### 自然・生命
 
@@ -88,12 +88,12 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/jukugo/humanities/religions.toml`](core/jukugo/humanities/religions.toml) | 60 | 3.0 KB | 神道 / 仏教 / キリスト教 / イスラム / 儀礼 |
 | [`core/jukugo/humanities/literature.toml`](core/jukugo/humanities/literature.toml) | 49 | 2.2 KB | 古典文学 / 作品名 / 文学用語 / 詩歌 / 評論 |
 | [`core/jukugo/humanities/idioms.toml`](core/jukugo/humanities/idioms.toml) | 43 | 2.8 KB | 慣用句 / ことわざ / 故事成語 (フレーズ単位) |
-| [`core/jukugo/humanities/shinwa.toml`](core/jukugo/humanities/shinwa.toml) | 36 | 1.8 KB | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
+| [`core/jukugo/humanities/shinwa.toml`](core/jukugo/humanities/shinwa.toml) | 38 | 2.0 KB | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
 | [`core/jukugo/humanities/music.toml`](core/jukugo/humanities/music.toml) | 23 | 1.2 KB | 音楽ジャンル / 楽典 / 楽器 / 演奏 / 音楽用語 |
 | [`core/jukugo/humanities/folklore.toml`](core/jukugo/humanities/folklore.toml) | 19 | 1.3 KB | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
 | [`core/jukugo/humanities/abstracts.toml`](core/jukugo/humanities/abstracts.toml) | 18 | 774 B | 美意識 / 古典文学 / 仏教 / 儒教 / 思想 |
 | [`core/jukugo/humanities/emotions.toml`](core/jukugo/humanities/emotions.toml) | 10 | 665 B | 感情 / 心理状態 / 性格 / 心情 |
-| **小計** (9 ファイル) | **326** | **17 KB** | |
+| **小計** (9 ファイル) | **328** | **17 KB** | |
 
 #### 社会・制度
 
@@ -150,13 +150,13 @@ git に commit されている master HEAD の状態を基準にする。
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml) | 3,167 | 169 KB | 二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む) |
+| [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml) | 3,168 | 169 KB | 二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む) |
 | [`core/jukugo/basic/stream_round_20260526.toml`](core/jukugo/basic/stream_round_20260526.toml) | 39 | 1.3 KB | VV stream-comments comparison round (seed=20260526) |
 | [`core/jukugo/basic/four_char.toml`](core/jukugo/basic/four_char.toml) | 33 | 2.1 KB | 四字熟語 (4 字 + 全 CJK 漢字) |
 | [`core/jukugo/basic/stream_round_20260611.toml`](core/jukugo/basic/stream_round_20260611.toml) | 32 | 2.9 KB | VV stream-comments comparison round (seed=20260611) |
 | [`core/jukugo/basic/stream_round_20260613.toml`](core/jukugo/basic/stream_round_20260613.toml) | 14 | 805 B | VV stream-comments comparison round (seed=161803) |
 | [`core/jukugo/basic/stream_round_20260612.toml`](core/jukugo/basic/stream_round_20260612.toml) | 10 | 1008 B | VV stream-comments comparison round (seed=20260612) |
-| **小計** (6 ファイル) | **3,295** | **177 KB** | |
+| **小計** (6 ファイル) | **3,296** | **177 KB** | |
 
 
 ### 作品造語
