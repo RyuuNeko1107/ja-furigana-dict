@@ -192,3 +192,22 @@ input = "幾何学模様を描く"
 mode = "hiragana"
 expected = "きかがくもようをかく"
 note = "幾何=きか は longest-match で保全 (幾X 追加の非回帰確認)"
+
+# 8) 連濁複合語 multi-suffix sweep の漏れ 2件。
+[[case]]
+input = "彼を道連れにする"
+mode = "hiragana"
+expected = "かれをみちづれにする"
+note = "道連れ=みちづれ (連れ=つれ→づれ、旧 ミチズレ は誤登録)"
+
+[[case]]
+input = "大海原を渡る船"
+mode = "hiragana"
+expected = "おおうなばらをわたるふね"
+note = "大海原=おおうなばら (大=おお、旧 だいうなばら)"
+
+[[case]]
+input = "靴擦れができた"
+mode = "hiragana"
+expected = "くつずれができた"
+note = "擦れ=すれ→ずれ は ず が正 (道連れ修正の非干渉確認)"
