@@ -343,3 +343,46 @@ input = "大金持ちの家"
 mode = "hiragana"
 expected = "おおがねもちのいえ"
 note = "大金持ち=おおがねもち (小金持ち追加の非回帰)"
+
+# 14) 御+和語=お (default ご 化け、今session最大の vein)。御+漢語=ご (御飯/御所) は正。
+[[case]]
+input = "御金を貯める"
+mode = "hiragana"
+expected = "おかねをためる"
+note = "御金=おかね (旧 ごきん)"
+
+[[case]]
+input = "御転婆な娘"
+mode = "hiragana"
+expected = "おてんばなむすめ"
+note = "御転婆=おてんば (旧 ごてんば)"
+
+[[case]]
+input = "御世辞を言う"
+mode = "hiragana"
+expected = "おせじをいう"
+note = "御世辞=おせじ (旧 ごせじ)"
+
+[[case]]
+input = "御代わりする"
+mode = "hiragana"
+expected = "おかわりする"
+note = "御代わり=おかわり (旧 ごかわり)"
+
+[[case]]
+input = "御腹が空いた"
+mode = "hiragana"
+expected = "おなかがすいた"
+note = "御腹=おなか 熟字訓 (旧 ごふく)"
+
+[[case]]
+input = "御払い箱になる"
+mode = "hiragana"
+expected = "おはらいばこになる"
+note = "御払い箱=おはらいばこ (箱=ばこ 連濁、旧 ごはらいはこ)"
+
+[[case]]
+input = "御飯を食べる"
+mode = "hiragana"
+expected = "ごはんをたべる"
+note = "御+漢語 は ご で正 (御飯=ごはん、非回帰)"
