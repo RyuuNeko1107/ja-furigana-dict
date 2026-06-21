@@ -492,3 +492,34 @@ input = "御心配なく"
 mode = "hiragana"
 expected = "ごしんぱいなく"
 note = "御心配=ごしんぱい は ご (御心追加の非回帰)"
+
+# 19) 御+和語 mass probe の境界ロック (お vs ご)。
+[[case]]
+input = "御弁当を持って御散歩に行く"
+mode = "hiragana"
+expected = "おべんとうをもっておさんぽにいく"
+note = "御弁当=おべんとう/御散歩=おさんぽ (御+和語/日常漢語=お)"
+
+[[case]]
+input = "御医者さんに御礼を言う"
+mode = "hiragana"
+expected = "おいしゃさんにおれいをいう"
+note = "御医者=おいしゃ/御礼=おれい"
+
+[[case]]
+input = "御世話になった御客様"
+mode = "hiragana"
+expected = "おせわになったおきゃくさま"
+note = "御世話=おせわ/御客様=おきゃくさま"
+
+[[case]]
+input = "御飯と御茶と御菓子"
+mode = "hiragana"
+expected = "ごはんとおちゃとおかし"
+note = "御飯=ごはん(漢語ご) / 御茶=おちゃ・御菓子=おかし(和語お) 境界"
+
+[[case]]
+input = "殺陣の稽古場"
+mode = "hiragana"
+expected = "たてのけいこば"
+note = "殺陣=たて 当て字 / 稽古場=けいこば 連濁"
