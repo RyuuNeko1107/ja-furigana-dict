@@ -442,3 +442,28 @@ input = "御先祖様を敬う"
 mode = "hiragana"
 expected = "ごせんぞさまをうやまう"
 note = "御先祖=ごせんぞ は formal漢語で ご (非回帰)"
+
+# 17) 御+和語 第5弾 (御手X/動詞名詞、業務/日常頻出)。
+[[case]]
+input = "御世話になります"
+mode = "hiragana"
+expected = "おせわになります"
+note = "御世話=おせわ (旧 ごせわ、超頻出)"
+
+[[case]]
+input = "御任せします"
+mode = "hiragana"
+expected = "おまかせします"
+note = "御任せ=おまかせ (旧 ごまかせ)"
+
+[[case]]
+input = "御問い合わせください"
+mode = "hiragana"
+expected = "おといあわせください"
+note = "御問い合わせ=おといあわせ (旧 ごといあわせ)"
+
+[[case]]
+input = "御手数をおかけします"
+mode = "hiragana"
+expected = "おてすうをおかけします"
+note = "御手数=おてすう (旧 ごてすう)"
