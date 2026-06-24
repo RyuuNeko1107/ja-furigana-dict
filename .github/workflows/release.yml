@@ -18,7 +18,7 @@ jobs:
     name: Package + Release
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
           # PAT で checkout (= docs/release-diffs/ archive commit を master に push する際、

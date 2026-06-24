@@ -19,7 +19,7 @@ jobs:
     if: "!contains(github.event.head_commit.message, '[skip stats]')"
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - name: Install taplo
         run: |
@@ -48,7 +48,7 @@ jobs:
     if: "!contains(github.event.head_commit.message, '[skip stats]')"
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - uses: actions/setup-python@v6
         with:
@@ -62,7 +62,7 @@ jobs:
     if: "!contains(github.event.head_commit.message, '[skip stats]')"
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - uses: actions/setup-python@v6
         with:
@@ -86,7 +86,7 @@ jobs:
     if: "!contains(github.event.head_commit.message, '[skip stats]')"
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           # PR base ref を取得するため fetch-depth=0
           fetch-depth: 0

@@ -30,7 +30,7 @@ jobs:
     name: 差分があれば日付 tag を打つ
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
           # PAT 経由で tag push する (= GITHUB_TOKEN だと recursive workflow 制限で
