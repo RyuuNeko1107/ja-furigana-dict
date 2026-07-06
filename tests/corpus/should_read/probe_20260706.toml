@@ -63,3 +63,70 @@ input = "彼は細々と説明する"
 mode = "hiragana"
 expected = "かれはこまごまとせつめいする"
 note = "細々と説明する=こまごま (default、非干渉の確認)"
+
+# 7-10) 本番 raw_contexts 実データで発見した pronoun/false-positive 系4件:
+# 7) 化 = カ default: 「初期化/自動化/合理化」等「-化」音読み熟語+「か」始まりの
+#    助詞/助動詞 (から/かどうか/かもしれない) が続く極めて一般的な構造で、旧
+#    next_starts_any=["か"]が「化ける/化かす」用法と誤衝突し「ば」に化けていた。
+#    「かす/かし/かさ/かせ/かそ」(化かす活用形のみ)に絞って修正。
+# 8) 私 = わたし default: 「今私は/昨日私も/次私か」等、kanji語+私(一人称代名詞)が
+#    自然文で極めて多く、旧 prev_char_type=漢字→シ の broad match が誤爆していた。
+#    「私立/私語/私見/私鉄/公私」等の音読み熟語は Lindera 側で別途正しく解決される
+#    ため override 自体を削除。
+# 9-10) 僕/君 = 同型バグだが「下僕/公僕」「太郎君/マリオ君」等の正当な接尾辞用法が
+#    あるため override 削除はできず、代表的な副詞(今/次/昨日等)を prev_char_type
+#    より先に評価される literal match として個別列挙し差し戻し。
+
+[[case]]
+input = "彼は初期化から始める"
+mode = "hiragana"
+expected = "かれはしょきかからはじめる"
+note = "化=か (初期化+から、旧next_starts_any=[か]の誤爆を修正)"
+
+[[case]]
+input = "彼は自動化かもしれない"
+mode = "hiragana"
+expected = "かれはじどうかかもしれない"
+note = "化=か (自動化+かもしれない)"
+
+[[case]]
+input = "狐が人を化かす"
+mode = "hiragana"
+expected = "きつねがひとをばかす"
+note = "化かす=ばかす (活用形は引き続きバ、非干渉の確認)"
+
+[[case]]
+input = "彼は今私は無敵だと思う"
+mode = "hiragana"
+expected = "かれはいまわたしはむてきだとおもう"
+note = "私=わたし (今+私、旧prev_char_type=漢字→シの誤爆を修正)"
+
+[[case]]
+input = "彼は私立大学に通う"
+mode = "hiragana"
+expected = "かれはしりつだいがくにかよう"
+note = "私立=しりつ (override削除後もLindera側で正読、非干渉の確認)"
+
+[[case]]
+input = "彼は今僕は勉強する"
+mode = "hiragana"
+expected = "かれはいまぼくはべんきょうする"
+note = "僕=ぼく (今+僕、副詞literal matchで差し戻し)"
+
+[[case]]
+input = "彼は下僕を従える"
+mode = "hiragana"
+expected = "かれはげぼくをしたがえる"
+note = "下僕=げぼく (接尾辞用法は非干渉の確認)"
+
+[[case]]
+input = "彼は今君は無敵だと思う"
+mode = "hiragana"
+expected = "かれはいまきみはむてきだとおもう"
+note = "君=きみ (今+君、副詞literal matchで差し戻し)"
+
+[[case]]
+input = "彼は太郎君と遊ぶ"
+mode = "hiragana"
+expected = "かれはたろうくんとあそぶ"
+note = "太郎君=たろうくん (名前接尾辞用法は非干渉の確認)"

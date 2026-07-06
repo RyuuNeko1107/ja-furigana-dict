@@ -825,6 +825,16 @@ reading = "いくさ"
 char = "僕"
 default = "ぼく"
 
+# ★2026-07-06: 「今僕は/次僕か/昨日僕も」 等、時間/程度の副詞(名前ではない)に
+# 直接隣接する一人称代名詞用法は下の prev_char_type=漢字 の broad match で誤って
+# 「ボク」(= 下僕 等の接尾辞用法) に化けていた。本番 raw_contexts で確認。
+# matches は TOML 順で第一 hit 採用のため、代表的な副詞の literal 個別列挙を
+# broad match より先に置いて「ぼく」へ差し戻す (下僕/公僕 等の接尾辞用法は
+# この副詞リストに該当しないため下の broad match で無傷)。
+[[kanji.match]]
+prev_eq_any = ["今", "次", "昨日", "今日", "明日", "多分", "本当", "去年", "最近", "先程"]
+reading = "ぼく"
+
 [[kanji.match]]
 prev_char_type = "漢字"
 reading = "ボク"
@@ -1247,6 +1257,15 @@ reading = "わら"
 char = "君"
 default = "キミ"
 
+# ★2026-07-06: 「今君は/次君か/昨日君も」 等、時間/程度の副詞(名前ではない)に
+# 直接隣接する二人称代名詞用法は下の prev_char_type=漢字 の broad match で誤って
+# 「クン」(= 太郎君 等の名前接尾辞用法) に化けていた。本番 raw_contexts で確認。
+# 代表的な副詞を個別に列挙して「キミ」へ差し戻す (太郎君/マリオ君 等の接尾辞用法は
+# 非該当のため無傷)。下の broad match より先に評価されるようこの位置に置く。
+[[kanji.match]]
+prev_eq_any = ["今", "次", "昨日", "今日", "明日", "多分", "本当", "去年", "最近", "先程"]
+reading = "キミ"
+
 # 「君 + 助詞」 → キミ (= 「君は / 君が / 君も / 君を / 君に / 君と / 君や」 = 二人称代名詞)
 # round 47、 prev ひらがな で クン に倒すルールを 「next 助詞」 軸に細分化
 [[kanji.match]]
@@ -1442,7 +1461,7 @@ char = "化"
 default = "カ"
 
 [[kanji.match]]
-next_starts_any = ["け", "か"]  # 「化ける / 化かす」
+next_starts_any = ["け", "かす", "かし", "かさ", "かせ", "かそ"]  # 「化ける / 化かす」活用
 reading = "バ"
 
 # 「眼」 unihan default 「まなこ」 → 「ガン」 (= 「眼科 / 開眼 / 義眼 / 魔眼」)。 「眼差し」
@@ -18479,14 +18498,14 @@ default = "おとこ"
 prev_char_type = "漢字"
 reading = "ダン"
 
-# 「私」 default 「わたし」 + prev 漢字 → 「シ」 (= 公私/私的/私生活/私利)
+# 「私」 default 「わたし」。
+# ★2026-07-06 prev_char_type=漢字→シ の broad match を削除。「今私は/昨日私も/次私か」
+# 等「kanji語+私(わたし)」が自然文で極めて多く (漢字直前は「わたし」用法の方が圧倒的)、
+# 本番 raw_contexts で「今私はゲーム」等の誤読(→シ)を確認。「私立/私語/私見/私鉄」等の
+# 音読み熟語は Lindera 側の token 辞書で別途正しく解決されるため、この override は不要。
 [[kanji]]
 char = "私"
 default = "わたし"
-
-[[kanji.match]]
-prev_char_type = "漢字"
-reading = "シ"
 
 # 「紙」 default 「かみ」 + prev 漢字 → 「シ」 (= 用紙/新聞紙/和紙/包紙/原紙)
 [[kanji]]
