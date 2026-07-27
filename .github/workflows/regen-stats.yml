@@ -51,7 +51,7 @@ jobs:
           # admin token があれば優先、 無ければ default token fallback
           token: ${{ secrets.STATS_PUSH_TOKEN || secrets.GITHUB_TOKEN }}
 
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.11'
 
