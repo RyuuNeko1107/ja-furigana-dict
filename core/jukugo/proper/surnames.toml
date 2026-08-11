@@ -77,3 +77,11 @@ description = "難読姓 (苗字) の読み (姓単体、代表読み)"
 "左藤" = "サトウ"    # (default ひだりふじ)
 "緋山" = "ヒヤマ"    # (default ひさん)
 "尾上" = "オノエ"  # 歌舞伎名跡/姓 (default おがみ)
+
+# ── 一般語と同形の姓 (gen_surname_suffix.py 生成、 default = 一般語読み) ──
+"八木" = { reading = "ハチボク", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "ヤギ" } ] }  # 姓 (suffix match、 default = 一般語読み)
+"大木" = { reading = "タイボク", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "オオキ" } ] }  # 姓 (suffix match、 default = 一般語読み)
+"大谷" = { reading = "オオヤ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "オオタニ" } ] }  # 姓 (suffix match、 default = 一般語読み)
+"小谷" = { reading = "オタニ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "コタニ" } ] }  # 姓 (suffix match、 default = 一般語読み)
+"山中" = { reading = "サンチュウ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "ヤマナカ" } ] }  # 姓 (suffix match、 default = 一般語読み)
+"平野" = { reading = "ヘイヤ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "ヒラノ" } ] }  # 姓 (suffix match、 default = 一般語読み)

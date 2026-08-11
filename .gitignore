@@ -27,3 +27,6 @@ __pycache__/
 
 # 内部 corpus 比較結果 (= 公開しない)
 compare_extended_*.txt
+
+# 生成 tool のレポート (ローカル確認用)
+/surname_suffix_report.tsv

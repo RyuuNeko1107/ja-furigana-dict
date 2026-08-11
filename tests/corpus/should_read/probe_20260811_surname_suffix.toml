@@ -1,0 +1,75 @@
+# 2026-08-11 姓 + 敬称/接尾辞 の suffix match (tools/gen_surname_suffix.py 生成分) 回帰 lock。
+#
+# 「大谷」「山中」「平野」 のように 姓が一般語と同形の場合、 姓読みを無条件 default に
+# すると一般語用法を壊す (平野が広がる = へいや / 山中で迷う = さんちゅう)。
+# default は一般語読みのまま、 敬称 / 人物接尾辞が後続する時だけ姓読みへ切り替える
+# (= personal_names.toml の 御手洗 / 水田 と同じ形)。
+#
+# 両方向 (suffix あり = 姓読み / 無し = 一般語読み) を対で固定する。 片方だけだと
+# 「default を姓読みに変えてしまう」 退行を検出できないため。
+
+[[case]]
+input = "大谷さんが来た"
+mode = "hiragana"
+expected = "おおたにさんがきた"
+note = "姓 + 敬称 → 姓読み"
+
+[[case]]
+input = "大谷選手が打った"
+mode = "hiragana"
+expected = "おおたにせんしゅがうった"
+note = "人物接尾辞 (選手) も姓読みの文脈"
+
+[[case]]
+input = "大谷を歩く"
+mode = "hiragana"
+expected = "おおやをあるく"
+note = "suffix 無し → 一般語 (地名) 読みを維持"
+
+[[case]]
+input = "小谷さんが来た"
+mode = "hiragana"
+expected = "こたにさんがきた"
+note = "姓 + 敬称 → 姓読み"
+
+[[case]]
+input = "山中選手が打った"
+mode = "hiragana"
+expected = "やまなかせんしゅがうった"
+note = "姓 + 人物接尾辞 → 姓読み"
+
+[[case]]
+input = "山中で迷う"
+mode = "hiragana"
+expected = "さんちゅうでまよう"
+note = "suffix 無し → 一般語読み (山中 = さんちゅう) を維持"
+
+[[case]]
+input = "平野さんが来た"
+mode = "hiragana"
+expected = "ひらのさんがきた"
+note = "姓 + 敬称 → 姓読み"
+
+[[case]]
+input = "平野が広がる"
+mode = "hiragana"
+expected = "へいやがひろがる"
+note = "suffix 無し → 一般語読み (平野 = へいや) を維持"
+
+[[case]]
+input = "八木選手が打った"
+mode = "hiragana"
+expected = "やぎせんしゅがうった"
+note = "敬称では既に正しかったが 選手 文脈で誤読していた分"
+
+[[case]]
+input = "大木選手が打った"
+mode = "hiragana"
+expected = "おおきせんしゅがうった"
+note = "同上"
+
+[[case]]
+input = "大木を切る"
+mode = "hiragana"
+expected = "たいぼくをきる"
+note = "suffix 無し → 一般語読み (大木 = たいぼく) を維持"
