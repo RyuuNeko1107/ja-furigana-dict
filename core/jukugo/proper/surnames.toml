@@ -79,18 +79,11 @@ description = "難読姓 (苗字) の読み (姓単体、代表読み)"
 "尾上" = "オノエ"  # 歌舞伎名跡/姓 (default おがみ)
 
 # ── 一般語と同形の姓 (gen_surname_suffix.py 生成、 default = 一般語読み) ──
-"八木" = { reading = "ハチボク", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "ヤギ" } ] }  # 姓 (suffix match、 default = 一般語読み)
-"大木" = { reading = "タイボク", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "オオキ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 "大谷" = { reading = "オオヤ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "オオタニ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 "小谷" = { reading = "オタニ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "コタニ" } ] }  # 姓 (suffix match、 default = 一般語読み)
-"山中" = { reading = "サンチュウ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "ヤマナカ" } ] }  # 姓 (suffix match、 default = 一般語読み)
-"平野" = { reading = "ヘイヤ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "ヒラノ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 
 # ── 一般語と同形の姓 (gen_surname_suffix.py 生成、 default = 一般語読み) ──
 "一色" = { reading = "イッショク", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "イッシキ" } ] }  # 姓 (suffix match、 default = 一般語読み)
-"春日" = { reading = "シュンジツ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "カスガ" } ] }  # 姓 (suffix match、 default = 一般語読み)
-"根本" = { reading = "コンポン", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "ネモト" } ] }  # 姓 (suffix match、 default = 一般語読み)
-"温水" = { reading = "オンスイ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "ヌクミズ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 "犬養" = { reading = "イヌヨウ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "イヌカイ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 "花田" = { reading = "ハナタ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "ハナダ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 "長谷" = { reading = "ナガタニ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "ハセ" } ] }  # 姓 (suffix match、 default = 一般語読み)

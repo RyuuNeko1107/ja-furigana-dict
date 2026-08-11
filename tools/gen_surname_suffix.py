@@ -33,7 +33,9 @@ match rule でデータとして与えるべき問題**。 既存の解 (persona
 「今どう読まれているか」 は `--current <TSV>` (surface<TAB>読み) で与える。
 stream-comments の `batch-read` に姓の一覧を食わせて作る:
 
-    cargo run --release --bin batch-read --         --rules-dir ../../furigana-dict/rules --core-dict-dir ../../furigana-dict/core         --mode hiragana surnames.txt > current.tsv
+    cargo run --release --bin batch-read -- \
+        --rules-dir ../../furigana-dict/rules --core-dict-dir ../../furigana-dict/core \
+        --mode hiragana surnames.txt > current.tsv
 
 採用条件
 --------
@@ -54,6 +56,17 @@ Usage
 
     # 実際に書き込む
     python tools/gen_surname_suffix.py --current current.tsv --apply
+
+**重要 — entry 追加は suffix 以外の文脈を壊しうる**
+
+dict に entry が無い姓へ新規 entry を足すと、 それまで Lindera が人名として
+読めていた 「姓 + 名」 文脈まで 一般語読みに固定される
+(実測: 山中伸弥 = やまなか → さんちゅう、 平野歩夢 = ひらの → へいや)。
+suffix 文脈しか見ていないと気付けないので、 **apply の前後で `--battery` の
+probe を batch-read して差分を取り、 suffix 以外が変わった姓は entry を捨てる**こと:
+
+    python tools/gen_surname_suffix.py --battery battery.txt --current current.tsv
+    # batch-read で battery.txt を before として測る → --apply → after を測る → diff
 
 書き込み後は必ず:
 
@@ -113,6 +126,20 @@ KANJI = re.compile(r"^[一-鿿㐀-䶿々]+$")
 
 # 姓 + 名 のフルネーム entry を切り出す時の姓の長さ候補 (漢字数)
 SURNAME_LENS = (2, 3)
+
+# entry を足すと 「姓 + 名」 文脈が一般語読みに固定される退行が実測で出たため、
+# 意図的に生成対象から外す surface (再実行で復活させない)。
+# 判断根拠は tests/corpus/should_read/probe_20260811_surname_suffix.toml の
+# 「退行ロック」 節と対になっている。
+EXCLUDED = {
+    "八木": "八木太郎 → はちぼく に化ける (Lindera の人名読みの方が良い)",
+    "大木": "大木太郎 → たいぼく に化ける",
+    "山中": "山中伸弥 → さんちゅう に化ける",
+    "平野": "平野歩夢 → へいや に化ける",
+    "春日": "春日俊彰 → しゅんじつ に化ける",
+    "根本": "根本太郎 → こんぽん に化ける",
+    "温水": "温水太郎 → おんすい に化ける (Lindera は ぬるみず と読めていた)",
+}
 
 # 内蔵 seed: 一般語と同形になりやすい 姓 / 地名 (読みが 1 つに定まるもののみ)。
 # `--src` を渡した場合はそちらが優先される (JMnedict 等の大きい list 用)。
@@ -317,7 +344,7 @@ DEFAULT_SEED = {
 
 
 def iter_simple_entries(path: Path):
-    """simple entry 行を (lineno, surface, reading) で列挙する ([entries] 配下のみ)。"""
+    """simple entry 行を (lineno, surface, reading, 末尾コメント) で列挙する ([entries] 配下のみ)。"""
     section = None
     for i, line in enumerate(path.read_text(encoding="utf-8").splitlines()):
         m = SECTION_LINE.match(line)
@@ -328,11 +355,32 @@ def iter_simple_entries(path: Path):
             continue
         m = ENTRY_LINE.match(line)
         if m:
-            yield i, m.group("surface"), m.group("reading")
+            yield i, m.group("surface"), m.group("reading"), m.group("rest") or ""
 
 
 ANY_ENTRY_LINE = re.compile(r'^\s*"(?P<surface>[^"]+)"\s*=')
 ENTRY_SECTION = re.compile(r'^\s*\[+entries\."(?P<surface>[^"]+)"')
+
+
+def file_surfaces(toml: Path) -> set[str]:
+    """1 ファイル内の宣言済み surface (simple / inline detailed / section 形式)。"""
+    out: set[str] = set()
+    section = None
+    for line in toml.read_text(encoding="utf-8").splitlines():
+        m = ENTRY_SECTION.match(line)
+        if m:
+            out.add(m.group("surface"))
+            continue
+        m = SECTION_LINE.match(line)
+        if m:
+            section = m.group("name")
+            continue
+        if section != "entries":
+            continue
+        m = ANY_ENTRY_LINE.match(line)
+        if m:
+            out.add(m.group("surface"))
+    return out
 
 
 def declared_surfaces(core: Path) -> set[str]:
@@ -343,30 +391,25 @@ def declared_surfaces(core: Path) -> set[str]:
     """
     out: set[str] = set()
     for toml in sorted(core.rglob("*.toml")):
-        section = None
-        for line in toml.read_text(encoding="utf-8").splitlines():
-            m = ENTRY_SECTION.match(line)
-            if m:
-                out.add(m.group("surface"))
-                continue
-            m = SECTION_LINE.match(line)
-            if m:
-                section = m.group("name")
-                continue
-            if section != "entries":
-                continue
-            m = ANY_ENTRY_LINE.match(line)
-            if m:
-                out.add(m.group("surface"))
+        out |= file_surfaces(toml)
     return out
 
 
-def load_dict(core: Path):
-    """core/ 配下の simple entry を surface -> [(path, lineno, reading)] で集める。"""
-    table: dict[str, list[tuple[Path, int, str]]] = {}
+def multi_file_surfaces(core: Path) -> set[str]:
+    """複数ファイルに (形式を問わず) 現れる surface。 書き換え先が自明でないので触らない。"""
+    seen: dict[str, set[Path]] = {}
     for toml in sorted(core.rglob("*.toml")):
-        for lineno, surface, reading in iter_simple_entries(toml):
-            table.setdefault(surface, []).append((toml, lineno, reading))
+        for surface in file_surfaces(toml):
+            seen.setdefault(surface, set()).add(toml)
+    return {k for k, v in seen.items() if len(v) > 1}
+
+
+def load_dict(core: Path):
+    """core/ 配下の simple entry を surface -> [(path, lineno, reading, comment)] で集める。"""
+    table: dict[str, list[tuple[Path, int, str, str]]] = {}
+    for toml in sorted(core.rglob("*.toml")):
+        for lineno, surface, reading, comment in iter_simple_entries(toml):
+            table.setdefault(surface, []).append((toml, lineno, reading, comment))
     return table
 
 
@@ -396,7 +439,7 @@ def surname_candidates_from_fullnames(core: Path) -> dict[str, str]:
         path = core.parent / rel
         if not path.exists():
             continue
-        for _, surface, reading in iter_simple_entries(path):
+        for _, surface, reading, _comment in iter_simple_entries(path):
             names.setdefault(surface, reading)
 
     out: dict[str, str] = {}
@@ -445,17 +488,30 @@ def parse_pairs(text: str) -> dict[str, str]:
     return out
 
 
+def toml_str(value: str) -> str:
+    r'''TOML basic string へ escape (外部データ由来の " や \ で TOML を壊さない)。'''
+    escaped = value.replace("\\", "\\\\").replace('"', '\\"')
+    return f'"{escaped}"'
+
+
 def render_entry(
-    surface: str, default_reading: str, surname_reading: str, comment: str, suffixes_list
+    surface: str,
+    default_reading: str,
+    surname_reading: str,
+    comment: str,
+    suffixes_list,
+    keep_comment: str = "",
 ) -> str:
-    suffixes = ", ".join(f'"{s}"' for s in suffixes_list)
+    suffixes = ", ".join(toml_str(s) for s in suffixes_list)
     line = (
-        f'"{surface}" = {{ reading = "{default_reading}", '
+        f"{toml_str(surface)} = {{ reading = {toml_str(default_reading)}, "
         f"match = [ {{ next_starts_any = [{suffixes}], "
-        f'reading = "{surname_reading}" }} ] }}'
+        f"reading = {toml_str(surname_reading)} }} ] }}"
     )
-    if comment:
-        line += f"  # {comment}"
+    # 既存行の由来コメントは失わずに引き継ぐ (機械書き換えで人手の根拠を消さない)
+    comments = [c for c in (keep_comment.lstrip("# ").strip(), comment) if c]
+    if comments:
+        line += "  # " + " / ".join(comments)
     return line
 
 
@@ -479,6 +535,12 @@ def main() -> int:
         help="現状の読み実測 TSV (surface<TAB>読み)。 stream-comments の batch-read で作る。"
         " dict に entry が無い姓を 新規 entry として起こすのに使う",
     )
+    ap.add_argument(
+        "--battery",
+        type=Path,
+        help="退行検出用の文脈 probe を書き出す (apply 前後で batch-read して差分を見る)。"
+        " 「姓 + 名」 文脈が一般語読みに固定される退行はこれでしか見つからない",
+    )
     ap.add_argument("--apply", action="store_true", help="実際に TOML を書き換える (無しは dry-run)")
     ap.add_argument(
         "--report",
@@ -496,6 +558,7 @@ def main() -> int:
     core = REPO / "core"
     table = load_dict(core)
     declared = declared_surfaces(core)
+    declared_multi = multi_file_surfaces(core)
 
     candidates: dict[str, str] = {}
     if args.kind == "person" and not args.no_fullnames:
@@ -507,6 +570,14 @@ def main() -> int:
     if args.current:
         current = load_src(args.current)
 
+    if args.battery:
+        # suffix 以外の文脈 = entry 追加で壊れうる場所。 実測は batch-read に任せる。
+        contexts = ["{}が来た", "{}の話", "{}を見る", "{}太郎が来た", "{}で待つ", "{}に行く"]
+        contexts += ["{}" + suf + "が来た" for suf in suffixes_list[:3]]
+        probes = [c.format(n) for n in sorted(candidates) for c in contexts]
+        args.battery.write_text("\n".join(probes) + "\n", encoding="utf-8")
+        print(f"battery -> {args.battery}")
+
     stats = Counter()
     rows = []
     new_entries: list[str] = []
@@ -515,6 +586,10 @@ def main() -> int:
 
     for surname in sorted(candidates):
         surname_reading = candidates[surname]
+        if surname in EXCLUDED:
+            stats["excluded"] += 1
+            rows.append((surname, surname_reading, "", "excluded", EXCLUDED[surname]))
+            continue
         occurrences = table.get(surname)
         if not occurrences and surname in declared:
             # simple entry ではない形 (detailed / 本 tool の生成済み entry) = 人手の
@@ -547,12 +622,12 @@ def main() -> int:
             stats["new_entry"] += 1
             rows.append((surname, surname_reading, current_reading, "new_entry", str(new_entry_file)))
             continue
-        if len(occurrences) > 1:
+        if len(occurrences) > 1 or (occurrences and surname in declared_multi):
             # 複数ファイルに同 surface = どれを直すべきか自明でないので人手へ回す
             stats["multi_file"] += 1
             rows.append((surname, surname_reading, "", "multi_file", ""))
             continue
-        path, lineno, default_reading = occurrences[0]
+        path, lineno, default_reading, keep_comment = occurrences[0]
         if path.name in {f.name for f in NAME_FILES}:
             # 既に人名ファイルにある = 一般語衝突ではない
             stats["already_name"] += 1
@@ -563,7 +638,12 @@ def main() -> int:
             rows.append((surname, surname_reading, default_reading, "same_reading", str(path)))
             continue
         new_line = render_entry(
-            surname, default_reading, surname_reading, f"{label} (suffix match)", suffixes_list
+            surname,
+            default_reading,
+            surname_reading,
+            f"{label} (suffix match)",
+            suffixes_list,
+            keep_comment,
         )
         # 安全弁: default 読みは絶対に変えない
         assert f'reading = "{default_reading}"' in new_line
@@ -583,6 +663,7 @@ def main() -> int:
         "new_entry",
         "already_correct",
         "already_detailed",
+        "excluded",
         "no_entry_unmeasured",
         "already_name",
         "multi_file",
@@ -597,7 +678,7 @@ def main() -> int:
             for lineno, new_line in sorted(lines.items()):
                 print(f"  {path.relative_to(REPO)}:{lineno + 1}\n    {new_line}")
         for line in new_entries:
-            print(f"  + {NEW_ENTRY_FILE.as_posix()}\n    {line}")
+            print(f"  + {new_entry_file.as_posix()}\n    {line}")
         return 0
 
     for path, lines in edits.items():

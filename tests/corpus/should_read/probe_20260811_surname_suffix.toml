@@ -33,40 +33,16 @@ expected = "こたにさんがきた"
 note = "姓 + 敬称 → 姓読み"
 
 [[case]]
-input = "山中選手が打った"
-mode = "hiragana"
-expected = "やまなかせんしゅがうった"
-note = "姓 + 人物接尾辞 → 姓読み"
-
-[[case]]
 input = "山中で迷う"
 mode = "hiragana"
 expected = "さんちゅうでまよう"
 note = "suffix 無し → 一般語読み (山中 = さんちゅう) を維持"
 
 [[case]]
-input = "平野さんが来た"
-mode = "hiragana"
-expected = "ひらのさんがきた"
-note = "姓 + 敬称 → 姓読み"
-
-[[case]]
 input = "平野が広がる"
 mode = "hiragana"
 expected = "へいやがひろがる"
 note = "suffix 無し → 一般語読み (平野 = へいや) を維持"
-
-[[case]]
-input = "八木選手が打った"
-mode = "hiragana"
-expected = "やぎせんしゅがうった"
-note = "敬称では既に正しかったが 選手 文脈で誤読していた分"
-
-[[case]]
-input = "大木選手が打った"
-mode = "hiragana"
-expected = "おおきせんしゅがうった"
-note = "同上"
 
 [[case]]
 input = "大木を切る"
@@ -90,28 +66,10 @@ expected = "いっしょくのふく"
 note = "suffix 無し → 一般語読み維持"
 
 [[case]]
-input = "春日さんが来た"
-mode = "hiragana"
-expected = "かすがさんがきた"
-note = "春日 = カスガ (一般語 しゅんじつ)"
-
-[[case]]
-input = "根本さんが来た"
-mode = "hiragana"
-expected = "ねもとさんがきた"
-note = "根本 = ネモト (一般語 こんぽん)"
-
-[[case]]
 input = "根本から見直す"
 mode = "hiragana"
 expected = "こんぽんからみなおす"
 note = "suffix 無し → 一般語読み維持"
-
-[[case]]
-input = "温水さんが来た"
-mode = "hiragana"
-expected = "ぬくみずさんがきた"
-note = "温水 = ヌクミズ (一般語 おんすい)"
 
 [[case]]
 input = "温水プールで泳ぐ"
@@ -178,3 +136,45 @@ input = "熱を放出する"
 mode = "hiragana"
 expected = "ねつをほうしゅつする"
 note = "suffix 無し → 一般語読み (ほうしゅつ) を維持"
+
+# ── 退行ロック: 姓 + 名 (敬称なし) の文脈 ──
+# 一般語と同形の姓に jukugo entry を足すと、Lindera が人名として読めていた
+# 「姓 + 名」 文脈まで一般語読みに固定される (山中伸弥 → さんちゅう… 等)。
+# 実測でこの退行が出た 八木 / 大木 / 山中 / 平野 / 春日 / 根本 は entry を入れない
+# 判断にしたので、その判断を lock する (= 将来 entry を足すと落ちる)。
+
+[[case]]
+input = "山中太郎が来た"
+mode = "hiragana"
+expected = "やまなかたろうがきた"
+note = "姓 + 名 は Lindera の人名読みに任せる (entry を足すと さんちゅう に化ける)"
+
+[[case]]
+input = "平野太郎が来た"
+mode = "hiragana"
+expected = "ひらのたろうがきた"
+note = "同上 (へいや 化け防止)"
+
+[[case]]
+input = "八木太郎が来た"
+mode = "hiragana"
+expected = "やぎたろうがきた"
+note = "同上 (はちぼく 化け防止)"
+
+[[case]]
+input = "春日太郎が来た"
+mode = "hiragana"
+expected = "かすがたろうがきた"
+note = "同上 (しゅんじつ 化け防止)"
+
+[[case]]
+input = "根本太郎が来た"
+mode = "hiragana"
+expected = "ねもとたろうがきた"
+note = "同上 (こんぽん 化け防止)"
+
+[[case]]
+input = "大木太郎が来た"
+mode = "hiragana"
+expected = "おおきたろうがきた"
+note = "同上 (たいぼく 化け防止)"
