@@ -75,20 +75,34 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
 
-# 敬称 / 人物接尾辞。 既存 entry (御手洗 / 四月一日 / 水田) の順序を先頭に置き、
-# 拡張分を後ろに足す (diff レビューのしやすさ優先)。
-SUFFIXES = [
-    "さん",
-    "くん",
-    "ちゃん",
-    "君",
-    "様",
-    "氏",
-    "先生",
-    "選手",
-    "監督",
-    "議員",
-]
+# 種別ごとの 「後続するとその固有名詞読みになる」 接尾辞。
+#
+# person: 敬称 / 人物接尾辞。 既存 entry (御手洗 / 四月一日 / 水田) の順序を先頭に置き、
+#         拡張分を後ろに足す (diff レビューのしやすさ優先)。
+# place:  行政区画 / 施設。 「国立 = コクリツ だが 国立市 = クニタチ」 型の切り替え用。
+KINDS = {
+    "person": {
+        "suffixes": [
+            "さん",
+            "くん",
+            "ちゃん",
+            "君",
+            "様",
+            "氏",
+            "先生",
+            "選手",
+            "監督",
+            "議員",
+        ],
+        "file": Path("core/jukugo/proper/surnames.toml"),
+        "label": "姓",
+    },
+    "place": {
+        "suffixes": ["市", "町", "村", "区", "郡", "駅", "県", "府"],
+        "file": Path("core/jukugo/nature/place_names.toml"),
+        "label": "地名",
+    },
+}
 
 # entry 行: "surface" = "reading"  (simple entry のみ拾う)
 ENTRY_LINE = re.compile(r'^\s*"(?P<surface>[^"]+)"\s*=\s*"(?P<reading>[^"]*)"\s*(?P<rest>#.*)?$')
@@ -100,9 +114,10 @@ KANJI = re.compile(r"^[一-鿿㐀-䶿々]+$")
 # 姓 + 名 のフルネーム entry を切り出す時の姓の長さ候補 (漢字数)
 SURNAME_LENS = (2, 3)
 
-# 内蔵 seed: 一般語と同形になりやすい 姓 (読みが 1 つに定まるもののみ)。
+# 内蔵 seed: 一般語と同形になりやすい 姓 / 地名 (読みが 1 つに定まるもののみ)。
 # `--src` を渡した場合はそちらが優先される (JMnedict 等の大きい list 用)。
-DEFAULT_SEED = """\n大谷	オオタニ
+DEFAULT_SEED = {
+    "person": """\n\n大谷	オオタニ
 小谷	コタニ
 中谷	ナカタニ
 神谷	カミヤ
@@ -215,10 +230,90 @@ DEFAULT_SEED = """\n大谷	オオタニ
 黒沢	クロサワ
 金沢	カナザワ
 米沢	ヨネザワ
-"""
+一色	イッシキ
+春日	カスガ
+白鳥	シラトリ
+温水	ヌクミズ
+月見里	ヤマナシ
+山下	ヤマシタ
+木下	キノシタ
+森下	モリシタ
+井上	イノウエ
+川上	カワカミ
+三上	ミカミ
+村上	ムラカミ
+池上	イケガミ
+西野	ニシノ
+北野	キタノ
+前原	マエハラ
+松永	マツナガ
+竹田	タケダ
+花田	ハナダ
+雨宮	アマミヤ
+風見	カザミ
+手塚	テヅカ
+犬養	イヌカイ
+相田	アイダ
+川端	カワバタ
+田代	タシロ
+長谷	ハセ
+服部	ハットリ
+目黒	メグロ
+千葉	チバ
+新開	シンカイ
+海野	ウンノ
+真弓	マユミ
+的場	マトバ
+兎田	ウサダ
+獅子堂	シシドウ
+氷室	ヒムロ
+月島	ツキシマ
+星影	ホシカゲ
+天童	テンドウ
+花輪	ハナワ
+米山	ヨネヤマ
+猪口	イノグチ
+鬼塚	オニヅカ
+仏生山	ブッショウザン
+玉城	タマキ
+根本	ネモト
+栗原	クリハラ
+""",
+    "place": """\n国立	クニタチ
+府中	フチュウ
+放出	ハナテン
+発寒	ハッサム
+各務原	カカミガハラ
+御徒町	オカチマチ
+京終	キョウバテ
+特牛	コットイ
+喜連瓜破	キレウリワリ
+撫養	ムヤ
+安栖里	アセリ
+月見里	ヤマナシ
+道後	ドウゴ
+海士	アマ
+神楽坂	カグラザカ
+日本橋	ニホンバシ
+上野	ウエノ
+中野	ナカノ
+大手町	オオテマチ
+下松	クダマツ
+指宿	イブスキ
+温泉津	ユノツ
+石動	イスルギ
+匝瑳	ソウサ
+宍粟	シソウ
+邑楽	オウラ
+足立	アダチ
+青梅	オウメ
+我孫子	アビコ
+豊島	トシマ
+中央	チュウオウ
+""",
+}
 
-# entry が無い姓の新規 entry はここへ追記する (姓単体専用ファイル)
-NEW_ENTRY_FILE = Path("core/jukugo/proper/surnames.toml")
+
 
 
 def iter_simple_entries(path: Path):
@@ -234,6 +329,36 @@ def iter_simple_entries(path: Path):
         m = ENTRY_LINE.match(line)
         if m:
             yield i, m.group("surface"), m.group("reading")
+
+
+ANY_ENTRY_LINE = re.compile(r'^\s*"(?P<surface>[^"]+)"\s*=')
+ENTRY_SECTION = re.compile(r'^\s*\[+entries\."(?P<surface>[^"]+)"')
+
+
+def declared_surfaces(core: Path) -> set[str]:
+    """simple / inline detailed / section 形式を問わず 宣言済みの surface を集める。
+
+    simple entry だけ見ていると、 本 tool が生成した inline detailed entry
+    (`"大谷" = { reading = ... }`) を 「未登録」 と誤認して重複追記してしまう。
+    """
+    out: set[str] = set()
+    for toml in sorted(core.rglob("*.toml")):
+        section = None
+        for line in toml.read_text(encoding="utf-8").splitlines():
+            m = ENTRY_SECTION.match(line)
+            if m:
+                out.add(m.group("surface"))
+                continue
+            m = SECTION_LINE.match(line)
+            if m:
+                section = m.group("name")
+                continue
+            if section != "entries":
+                continue
+            m = ANY_ENTRY_LINE.match(line)
+            if m:
+                out.add(m.group("surface"))
+    return out
 
 
 def load_dict(core: Path):
@@ -320,8 +445,10 @@ def parse_pairs(text: str) -> dict[str, str]:
     return out
 
 
-def render_entry(surface: str, default_reading: str, surname_reading: str, comment: str) -> str:
-    suffixes = ", ".join(f'"{s}"' for s in SUFFIXES)
+def render_entry(
+    surface: str, default_reading: str, surname_reading: str, comment: str, suffixes_list
+) -> str:
+    suffixes = ", ".join(f'"{s}"' for s in suffixes_list)
     line = (
         f'"{surface}" = {{ reading = "{default_reading}", '
         f"match = [ {{ next_starts_any = [{suffixes}], "
@@ -334,6 +461,12 @@ def render_entry(surface: str, default_reading: str, surname_reading: str, comme
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument(
+        "--kind",
+        choices=sorted(KINDS),
+        default="person",
+        help="固有名詞の種別 (接尾辞セットと出力先が決まる)",
+    )
     ap.add_argument("--src", type=Path, help="外部の姓読みデータ (姓<TAB>読み)。 repo には置かない")
     ap.add_argument(
         "--no-fullnames",
@@ -355,14 +488,20 @@ def main() -> int:
     )
     args = ap.parse_args()
 
+    kind = KINDS[args.kind]
+    suffixes_list = kind["suffixes"]
+    new_entry_file = kind["file"]
+    label = kind["label"]
+
     core = REPO / "core"
     table = load_dict(core)
+    declared = declared_surfaces(core)
 
     candidates: dict[str, str] = {}
-    if not args.no_fullnames:
+    if args.kind == "person" and not args.no_fullnames:
         candidates.update(surname_candidates_from_fullnames(core))
     # 姓読みの seed: --src があればそちら、 無ければ内蔵 seed
-    candidates.update(load_src(args.src) if args.src else parse_pairs(DEFAULT_SEED))
+    candidates.update(load_src(args.src) if args.src else parse_pairs(DEFAULT_SEED[args.kind]))
 
     current: dict[str, str] = {}
     if args.current:
@@ -377,6 +516,12 @@ def main() -> int:
     for surname in sorted(candidates):
         surname_reading = candidates[surname]
         occurrences = table.get(surname)
+        if not occurrences and surname in declared:
+            # simple entry ではない形 (detailed / 本 tool の生成済み entry) = 人手の
+            # 判断を尊重して触らない。 重複追記の防止も兼ねる。
+            stats["already_detailed"] += 1
+            rows.append((surname, surname_reading, "", "already_detailed", ""))
+            continue
         if not occurrences:
             # dict に entry が無い = 現状の読みは [[kanji]] block の default 連結。
             # `--current` (batch-read の実測結果) があれば、 実際に姓読みと食い違う
@@ -391,10 +536,16 @@ def main() -> int:
                 rows.append((surname, surname_reading, current_reading, "already_correct", ""))
                 continue
             new_entries.append(
-                render_entry(surname, current_reading, surname_reading, "姓 (suffix match、 default = 一般語読み)")
+                render_entry(
+                    surname,
+                    current_reading,
+                    surname_reading,
+                    f"{label} (suffix match、 default = 一般語読み)",
+                    suffixes_list,
+                )
             )
             stats["new_entry"] += 1
-            rows.append((surname, surname_reading, current_reading, "new_entry", str(NEW_ENTRY_FILE)))
+            rows.append((surname, surname_reading, current_reading, "new_entry", str(new_entry_file)))
             continue
         if len(occurrences) > 1:
             # 複数ファイルに同 surface = どれを直すべきか自明でないので人手へ回す
@@ -411,7 +562,9 @@ def main() -> int:
             stats["same_reading"] += 1
             rows.append((surname, surname_reading, default_reading, "same_reading", str(path)))
             continue
-        new_line = render_entry(surname, default_reading, surname_reading, "姓 (suffix match)")
+        new_line = render_entry(
+            surname, default_reading, surname_reading, f"{label} (suffix match)", suffixes_list
+        )
         # 安全弁: default 読みは絶対に変えない
         assert f'reading = "{default_reading}"' in new_line
         edits.setdefault(path, {})[lineno] = new_line
@@ -429,6 +582,7 @@ def main() -> int:
         "generated",
         "new_entry",
         "already_correct",
+        "already_detailed",
         "no_entry_unmeasured",
         "already_name",
         "multi_file",
@@ -454,12 +608,12 @@ def main() -> int:
         print(f"applied {len(lines)} entries -> {path.relative_to(REPO)}")
 
     if new_entries:
-        target = REPO / NEW_ENTRY_FILE
+        target = REPO / new_entry_file
         body = target.read_text(encoding="utf-8").rstrip("\n")
         body += "\n\n# ── 一般語と同形の姓 (gen_surname_suffix.py 生成、 default = 一般語読み) ──\n"
         body += "\n".join(new_entries) + "\n"
         target.write_text(body, encoding="utf-8")
-        print(f"appended {len(new_entries)} entries -> {NEW_ENTRY_FILE.as_posix()}")
+        print(f"appended {len(new_entries)} entries -> {new_entry_file.as_posix()}")
     return 0
 
 

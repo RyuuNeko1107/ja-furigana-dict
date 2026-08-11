@@ -73,3 +73,108 @@ input = "大木を切る"
 mode = "hiragana"
 expected = "たいぼくをきる"
 note = "suffix 無し → 一般語読み (大木 = たいぼく) を維持"
+
+# ── 第 2 弾 (seed 拡張 + 地名 kind 追加分) ──
+# 一般語としても読める姓 / 地名。 suffix あり = 固有名詞読み、 無し = 一般語読み を対で固定。
+
+[[case]]
+input = "一色さんが来た"
+mode = "hiragana"
+expected = "いっしきさんがきた"
+note = "一色 = イッシキ (一般語 いっしょく)"
+
+[[case]]
+input = "一色の服"
+mode = "hiragana"
+expected = "いっしょくのふく"
+note = "suffix 無し → 一般語読み維持"
+
+[[case]]
+input = "春日さんが来た"
+mode = "hiragana"
+expected = "かすがさんがきた"
+note = "春日 = カスガ (一般語 しゅんじつ)"
+
+[[case]]
+input = "根本さんが来た"
+mode = "hiragana"
+expected = "ねもとさんがきた"
+note = "根本 = ネモト (一般語 こんぽん)"
+
+[[case]]
+input = "根本から見直す"
+mode = "hiragana"
+expected = "こんぽんからみなおす"
+note = "suffix 無し → 一般語読み維持"
+
+[[case]]
+input = "温水さんが来た"
+mode = "hiragana"
+expected = "ぬくみずさんがきた"
+note = "温水 = ヌクミズ (一般語 おんすい)"
+
+[[case]]
+input = "温水プールで泳ぐ"
+mode = "hiragana"
+expected = "おんすいプールでおよぐ"
+note = "suffix 無し → 一般語読み維持"
+
+[[case]]
+input = "白鳥さんが来た"
+mode = "hiragana"
+expected = "しらとりさんがきた"
+note = "白鳥 = シラトリ (鳥の名は はくちょう)"
+
+[[case]]
+input = "白鳥が飛ぶ"
+mode = "hiragana"
+expected = "はくちょうがとぶ"
+note = "suffix 無し → 一般語読み維持"
+
+[[case]]
+input = "猪口さんが来た"
+mode = "hiragana"
+expected = "いのぐちさんがきた"
+note = "猪口 = イノグチ (酒器は ちょく)"
+
+[[case]]
+input = "猪口で酒を飲む"
+mode = "hiragana"
+expected = "ちょくでさけをのむ"
+note = "suffix 無し → 一般語読み維持"
+
+[[case]]
+input = "犬養さんが来た"
+mode = "hiragana"
+expected = "いぬかいさんがきた"
+note = "犬養 = イヌカイ"
+
+[[case]]
+input = "長谷さんが来た"
+mode = "hiragana"
+expected = "はせさんがきた"
+note = "長谷 = ハセ (default ながたに)"
+
+[[case]]
+input = "国立市に住む"
+mode = "hiragana"
+expected = "くにたちしにすむ"
+note = "地名 kind: 国立 + 市 → クニタチ"
+
+[[case]]
+input = "国立競技場へ行く"
+mode = "hiragana"
+expected = "こくりつきょうぎじょうへいく"
+note = "行政区画 suffix 以外は 一般語読み (こくりつ) を維持"
+
+[[case]]
+input = "放出駅で降りる"
+mode = "hiragana"
+expected = "はなてんえきでおりる"
+note = "地名 kind: 放出 + 駅 → ハナテン"
+
+[[case]]
+input = "熱を放出する"
+mode = "hiragana"
+expected = "ねつをほうしゅつする"
+note = "suffix 無し → 一般語読み (ほうしゅつ) を維持"
