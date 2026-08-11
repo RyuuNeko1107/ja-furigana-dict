@@ -44,7 +44,11 @@ tools/
 ├── diff_release.py           — release 間 diff レポート生成
 ├── import_from_production.py — upstream DB から seed 再投入
 ├── check_test_append_only.py — *.test.toml の append-only CI 強制
-└── seed/                     — import_from_production.py 用 source data
+├── gen_accent_brackets.py    — UniDic aType → bracket notation 機械生成 (offline tool)
+├── gen_surname_suffix.py     — 一般語と同形の姓 / 地名に敬称 suffix match を生成
+│                               (--current に batch-read 実測を渡す。 --battery で
+│                                「姓 + 名」 文脈の退行検出 probe。 SCHEMA.md 参照)
+└── seed/                     — import_from_production.py 用 source data (gitignore 対象)
 ```
 
 ## 既存 [meta] role 値
