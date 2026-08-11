@@ -383,25 +383,18 @@ def file_surfaces(toml: Path) -> set[str]:
     return out
 
 
-def declared_surfaces(core: Path) -> set[str]:
-    """simple / inline detailed / section 形式を問わず 宣言済みの surface を集める。
-
-    simple entry だけ見ていると、 本 tool が生成した inline detailed entry
-    (`"大谷" = { reading = ... }`) を 「未登録」 と誤認して重複追記してしまう。
-    """
-    out: set[str] = set()
-    for toml in sorted(core.rglob("*.toml")):
-        out |= file_surfaces(toml)
-    return out
+# 宣言済み surface (simple / inline detailed / section) は `surface_files` の keys。
+# simple entry だけ見ていると、 本 tool が生成した inline detailed entry
+# (`"大谷" = { reading = ... }`) を 「未登録」 と誤認して重複追記してしまう。
 
 
-def multi_file_surfaces(core: Path) -> set[str]:
-    """複数ファイルに (形式を問わず) 現れる surface。 書き換え先が自明でないので触らない。"""
+def surface_files(core: Path) -> dict[str, set[Path]]:
+    """surface -> それが宣言されているファイル集合 (形式を問わず)。 core/ を 1 パスで走査。"""
     seen: dict[str, set[Path]] = {}
     for toml in sorted(core.rglob("*.toml")):
         for surface in file_surfaces(toml):
             seen.setdefault(surface, set()).add(toml)
-    return {k for k, v in seen.items() if len(v) > 1}
+    return seen
 
 
 def load_dict(core: Path):
@@ -557,8 +550,9 @@ def main() -> int:
 
     core = REPO / "core"
     table = load_dict(core)
-    declared = declared_surfaces(core)
-    declared_multi = multi_file_surfaces(core)
+    files_of = surface_files(core)
+    declared = set(files_of)
+    declared_multi = {k for k, v in files_of.items() if len(v) > 1}
 
     candidates: dict[str, str] = {}
     if args.kind == "person" and not args.no_fullnames:
@@ -646,7 +640,7 @@ def main() -> int:
             keep_comment,
         )
         # 安全弁: default 読みは絶対に変えない
-        assert f'reading = "{default_reading}"' in new_line
+        assert f"reading = {toml_str(default_reading)}" in new_line
         edits.setdefault(path, {})[lineno] = new_line
         stats["generated"] += 1
         rows.append((surname, surname_reading, default_reading, "generated", f"{path}:{lineno + 1}"))
@@ -690,10 +684,19 @@ def main() -> int:
 
     if new_entries:
         target = REPO / new_entry_file
-        body = target.read_text(encoding="utf-8").rstrip("\n")
-        body += "\n\n# ── 一般語と同形の姓 (gen_surname_suffix.py 生成、 default = 一般語読み) ──\n"
-        body += "\n".join(new_entries) + "\n"
-        target.write_text(body, encoding="utf-8")
+        header = (
+            f"# ── 一般語と同形の{label} (gen_surname_suffix.py 生成、 default = 一般語読み) ──"
+        )
+        lines = target.read_text(encoding="utf-8").rstrip("\n").splitlines()
+        if header in lines:
+            # 既存の生成 section の末尾へ差し込む (再実行で banner を重ねない)
+            idx = lines.index(header) + 1
+            while idx < len(lines) and lines[idx].strip():
+                idx += 1
+            lines[idx:idx] = new_entries
+        else:
+            lines += ["", header, *new_entries]
+        target.write_text("\n".join(lines) + "\n", encoding="utf-8")
         print(f"appended {len(new_entries)} entries -> {new_entry_file.as_posix()}")
     return 0
 

@@ -178,3 +178,9 @@ input = "大木太郎が来た"
 mode = "hiragana"
 expected = "おおきたろうがきた"
 note = "同上 (たいぼく 化け防止)"
+
+[[case]]
+input = "温水太郎が来た"
+mode = "hiragana"
+expected = "ぬるみずたろうがきた"
+note = "退行ロック: 温水 も EXCLUDED (entry を足すと おんすい に化ける)"
