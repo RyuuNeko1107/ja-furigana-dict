@@ -1,0 +1,81 @@
+# 2026-08-28 読み上げ BOT (zunda-rs) ギルド辞書 (/tts dict add) 起点の probe。
+# ユーザーが自前で登録していた語を最新 lib+dict で再読し、まだ誤読していたものだけ lock。
+# (滑舌/聞き専/味方/倍速/呪術廻戦キャラ 等は既に正読で対象外)
+
+[[case]]
+input = "璃月"
+mode = "hiragana"
+expected = "りーゆえ"
+note = "原神 Liyue (旧 りげつ)"
+
+[[case]]
+input = "蒙徳"
+mode = "hiragana"
+expected = "もんど"
+note = "原神 Mondstadt (旧 もうとく)"
+
+[[case]]
+input = "須弥"
+mode = "hiragana"
+expected = "すめーる"
+note = "原神 Sumeru (旧 すや)"
+
+[[case]]
+input = "須弥山"
+mode = "hiragana"
+expected = "しゅみせん"
+note = "仏教語は religions 側 3 字 entry 優先 (退行ガード)"
+
+[[case]]
+input = "瑶瑶"
+mode = "hiragana"
+expected = "よぉーよ"
+note = "原神 Yaoyao (旧 ようよう)"
+
+[[case]]
+input = "綾人"
+mode = "hiragana"
+expected = "あやと"
+note = "原神 神里綾人 の名 standalone (旧 あやひと)"
+
+[[case]]
+input = "冬弥"
+mode = "hiragana"
+expected = "とうや"
+note = "プロセカ 青柳冬弥 (旧 ふゆや)"
+
+[[case]]
+input = "彰人くん"
+mode = "hiragana"
+expected = "あきとくん"
+note = "プロセカ 東雲彰人 standalone (旧 しょうひと)"
+
+[[case]]
+input = "絵名"
+mode = "hiragana"
+expected = "えな"
+note = "プロセカ 東雲絵名 standalone (旧 えめい)"
+
+[[case]]
+input = "瑞希"
+mode = "hiragana"
+expected = "みずき"
+note = "プロセカ/アイマス 瑞希 standalone (旧 みき)"
+
+[[case]]
+input = "天馬司"
+mode = "hiragana"
+expected = "てんまつかさ"
+note = "プロセカ 司=つかさ (旧 てんまし)"
+
+[[case]]
+input = "雀魂やろう"
+mode = "hiragana"
+expected = "じゃんたまやろう"
+note = "麻雀ゲーム (旧 すずめこん)"
+
+[[case]]
+input = "𰻞𰻞麺"
+mode = "hiragana"
+expected = "びゃんびゃんめん"
+note = "CJK 拡張G (旧 𰻞𰻞めん passthrough)"
