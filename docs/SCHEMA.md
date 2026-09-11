@@ -94,6 +94,7 @@ reading = "シタテ"
 | literal 先頭いずれか | — | `next_starts_any` | `next2_starts_any` | string array |
 | 文字種 | `prev_char_type` | `next_char_type` | — | "漢字" / "ひらがな" / "カタカナ" / "英数" / "記号" |
 | 述語 | `prev_month` | `next_digit` | — | bool |
+| 文スコープ | `input_contains_any` (= 入力文全体の部分一致、 位置非依存) ||| string array |
 
 **意味**:
 
@@ -103,6 +104,10 @@ reading = "シタテ"
 - `prev_month`: 直前 token surface が `一月`〜`十二月` / `1月`〜`12月` / 全角数字
   含む 月名で終わるか (= lib 内蔵 list、 dict 側で記述不要)
 - `next_digit`: 直後 token surface が半角 / 全角数字で始まるか (= lib 内蔵 list)
+- `input_contains_any`: **入力文全体** のどこかに、 列挙したいずれかの文字列が部分一致で
+  含まれるか (lib 0.4.0〜、 ADR-0010)。 隣接 token では届かない話題語で読みを切り替える用
+  (例: 「リーチ」 が同じ文にある時だけ 清一色 = チンイーソー)。 位置非依存なので誤爆しやすく、
+  **一般語と衝突する surface (平和 / 中 / 親 等) には使わない**。 match_hits の重みは broad (=1)
 
 **Lindera 品詞 matcher (`pos`) は不採用** (Lindera 撤廃路線)、 「名詞の後 / 動詞の後」
 のような汎用条件は `prev_eq_any = ["階段", "段", "梯子"]` 等の literal 列挙で代用。

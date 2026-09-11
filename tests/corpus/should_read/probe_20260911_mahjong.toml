@@ -66,7 +66,7 @@ note = "麻雀 (東風 単独は一般語 こち 据え置き)"
 input = "清一色"
 mode = "hiragana"
 expected = "せいいっしょく"
-note = "一般語読みを維持 (麻雀 チンイーソー は採らない)"
+note = "話題語が無い単独 = 一般語読み (ADR-0010 文スコープ分岐の既定側)"
 
 [[case]]
 input = "想い出"
@@ -169,3 +169,57 @@ input = "天和"
 mode = "hiragana"
 expected = "てんな"
 note = "元号優先 (麻雀 テンホー は採らない)"
+
+[[case]]
+input = "リーチしたけど清一色が見えてる"
+mode = "hiragana"
+expected = "リーチしたけどちんいーそーがみえてる"
+note = "ADR-0010 文スコープ: 離れたリーチで麻雀読みへ"
+
+[[case]]
+input = "麻雀で清一色狙い"
+mode = "hiragana"
+expected = "まーじゃんでちんいーそーねらい"
+note = "同上"
+
+[[case]]
+input = "この職場は清一色の男性だ"
+mode = "hiragana"
+expected = "このしょくばはせいいっしょくのだんせいだ"
+note = "話題語なし = 一般語読み (誤爆ロック)"
+
+[[case]]
+input = "役員が清一色で固められている"
+mode = "hiragana"
+expected = "やくいんがせいいっしょくでかためられている"
+note = "同上"
+
+[[case]]
+input = "銅の間は東風の方が人多い説"
+mode = "hiragana"
+expected = "どうのまはとんぷうのほうがひとおおいせつ"
+note = "報告原文。銅の間で麻雀文脈判定"
+
+[[case]]
+input = "東風が吹く季節になった"
+mode = "hiragana"
+expected = "こちがふくきせつになった"
+note = "一般語 こち を維持 (誤爆ロック)"
+
+[[case]]
+input = "春の東風は暖かい"
+mode = "hiragana"
+expected = "はるのこちはあたたかい"
+note = "同上"
+
+[[case]]
+input = "雀魂で東風を打つ"
+mode = "hiragana"
+expected = "じゃんたまでとんぷうをうつ"
+note = "文スコープ: 雀魂で判定"
+
+[[case]]
+input = "リーチ一発ツモで平和がついた"
+mode = "hiragana"
+expected = "リーチいっぱつツモでへいわがついた"
+note = "平和は文スコープ対象外 (一般語優先の設計ロック)"

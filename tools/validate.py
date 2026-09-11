@@ -118,6 +118,7 @@ MATCH_CONDITION_KEYS = {
     'prev_ends_any', 'next_starts', 'next_starts_any', 'next2_starts_any',
     'prev_char_type', 'next_char_type',
     'prev_month', 'next_digit',
+    'input_contains_any',   # 文スコープ (入力文全体の部分一致、 lib 0.4.0〜)
 }
 MATCH_BLOCK_KEYS = MATCH_CONDITION_KEYS | {'reading'}
 ALT_BLOCK_KEYS = MATCH_CONDITION_KEYS | {'reading', 'sense', 'weight'}
