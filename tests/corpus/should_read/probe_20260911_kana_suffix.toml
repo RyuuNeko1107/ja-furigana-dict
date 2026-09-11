@@ -66,3 +66,71 @@ input = "間夫狂いきたぁ"
 mode = "hiragana"
 expected = "まぶぐるいきたぁ"
 note = "同上"
+
+# --- 収集サーバの実コーパス 7,048,036 行 A/B で確認した実例 (73 件中の代表) ---
+
+[[case]]
+input = "お姉ちゃんはだぁれ?"
+mode = "hiragana"
+expected = "おねえちゃんはだぁれ?"
+note = "704万行A/Bで発見 (旧 おあねちゃん)"
+
+[[case]]
+input = "ここも初めましてかw"
+mode = "hiragana"
+expected = "ここもはじめましてかw"
+note = "同上 (旧 そめまして)"
+
+[[case]]
+input = "甲子園出れたら"
+mode = "hiragana"
+expected = "こうしえんでれたら"
+note = "同上 (旧 しゅつれたら)"
+
+[[case]]
+input = "呪われたらきついwww"
+mode = "hiragana"
+expected = "のろわれたらきついwww"
+note = "同上 (旧 まじなわれたら)"
+
+[[case]]
+input = "足攣ってるか"
+mode = "hiragana"
+expected = "あしつってるか"
+note = "同上 (旧 ひくってる)"
+
+[[case]]
+input = "ベーも嵌まってる"
+mode = "hiragana"
+expected = "ベーもはまってる"
+note = "同上 (旧 あなまってる)"
+
+[[case]]
+input = "寝過ぎるまちゅりは、正常ってわけか"
+mode = "hiragana"
+expected = "ねすぎるまちゅりは、せいじょうってわけか"
+note = "同上 (旧 しんかぎる)"
+
+[[case]]
+input = "一斉に叩き出したら笑う"
+mode = "hiragana"
+expected = "いっせいにたたきだしたらわらう"
+note = "同上 (旧 はたきだしたら)"
+
+[[case]]
+input = "真っ二つううう!!"
+mode = "hiragana"
+expected = "まっぷたつううう!!"
+note = "同上 (旧 まっにつ)"
+
+[[case]]
+input = "雪崩れたら終わる"
+mode = "hiragana"
+expected = "なだれたらおわる"
+note = "同上 (旧 ゆきくずれたら)"
+
+[[case]]
+input = "荒げてるw"
+mode = "hiragana"
+expected = "あらげてるw"
+note = "同上 (旧 こうげてる)"
