@@ -181,10 +181,28 @@ def check_reading(path: Path, errors: Errors, label: str, reading: str, warnings
             warnings.add_for(path, f"{label} bracket: {bw}")
 
 
+def check_root_stray_entries(path: Path, errors: Errors, data: dict) -> None:
+    """root 直下 (= どの table にも属さない位置) に書かれた entry を弾く。
+
+    `[entries]` の **前** (ファイル冒頭など) に `"X" = "ヨミ"` を置くと TOML としては
+    valid だが lib からは一切見えず、 黙って無視される。 dict file の root value は
+    常に table / array (meta / entries / genre / counter / kanji / ...) なので、
+    scalar 値の root key は配置ミスと断定できる。
+    """
+    stray = [k for k, v in data.items() if not isinstance(v, (dict, list))]
+    if stray:
+        errors.add_for(
+            path,
+            f"root 直下の迷子 entry {stray[:8]} (= [entries] table の外。 lib から見えない)",
+        )
+
+
 def load_toml(path: Path, errors: Errors):
     try:
         with open(path, 'rb') as f:
-            return tomllib.load(f)
+            data = tomllib.load(f)
+        check_root_stray_entries(path, errors, data)
+        return data
     except tomllib.TOMLDecodeError as e:
         errors.add_for(path, f"TOML パース失敗: {e}")
         return None
