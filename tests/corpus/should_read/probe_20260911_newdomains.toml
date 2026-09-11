@@ -1,0 +1,75 @@
+# 2026-09-11 新規領域 probe (相撲 52 / 野球 50 / 化学 50 / 天文 50 / 冠婚葬祭 49 / 介護 49 = 300 語)。
+# 化学は誤読ゼロ、 相撲は 金星 (キンボシ) のみ = 既存カバレッジは広い。
+# 金星 は天体と衝突するので ADR-0010 の文スコープ condition で分岐 (清一色 / 東風 と同じ扱い)。
+
+[[case]]
+input = "隠し球"
+mode = "hiragana"
+expected = "かくしだま"
+note = "野球 連濁 (旧 かくしたま)"
+
+[[case]]
+input = "矮星"
+mode = "hiragana"
+expected = "わいせい"
+note = "天文 (旧 ひくいせい)"
+
+[[case]]
+input = "赤方偏移"
+mode = "hiragana"
+expected = "せきほうへんい"
+note = "天文 (旧 あかかたへんい)"
+
+[[case]]
+input = "白色矮星"
+mode = "hiragana"
+expected = "はくしょくわいせい"
+note = "既存 entry の退行ロック"
+
+[[case]]
+input = "精進落とし"
+mode = "hiragana"
+expected = "しょうじんおとし"
+note = "法要 (旧 しょうじんおちとし)"
+
+[[case]]
+input = "口腔ケア"
+mode = "hiragana"
+expected = "こうくうけあ"
+note = "医療慣用 (旧 こうこう)"
+
+[[case]]
+input = "口腔外科"
+mode = "hiragana"
+expected = "こうくうげか"
+note = "同上"
+
+[[case]]
+input = "サ高住"
+mode = "hiragana"
+expected = "さこうじゅう"
+note = "介護 略語 (旧 サたかすみ)"
+
+[[case]]
+input = "金星と火星"
+mode = "hiragana"
+expected = "きんせいとかせい"
+note = "天体 = キンセイ 既定"
+
+[[case]]
+input = "今日の金星は明るい"
+mode = "hiragana"
+expected = "きょうのきんせいはあかるい"
+note = "同上 (誤爆ロック)"
+
+[[case]]
+input = "横綱から金星を挙げた"
+mode = "hiragana"
+expected = "よこづなからきんぼしをあげた"
+note = "ADR-0010 文スコープ: 相撲語で キンボシ"
+
+[[case]]
+input = "平幕が金星"
+mode = "hiragana"
+expected = "ひらまくがきんぼし"
+note = "同上"
