@@ -1,0 +1,56 @@
+# 2026-09-11 接尾辞 sweep (X場 49 / X道 49 / X所 48 / X手 50) + 難読動植物 (102 語)。
+# X手 は 50 語すべて正読、 難読動植物も 102 語中 2 件のみ。
+
+[[case]]
+input = "砂利道"
+mode = "hiragana"
+expected = "じゃりみち"
+note = "X道 sweep (旧 じゃりどう)"
+
+[[case]]
+input = "木道"
+mode = "hiragana"
+expected = "もくどう"
+note = "湿原の遊歩道 (旧 きどう)"
+
+[[case]]
+input = "船着場"
+mode = "hiragana"
+expected = "ふなつきば"
+note = "X場 sweep (旧 ふなつきじょう)"
+
+[[case]]
+input = "寄り所"
+mode = "hiragana"
+expected = "よりどころ"
+note = "X所 sweep (旧 よりところ)"
+
+[[case]]
+input = "死に所"
+mode = "hiragana"
+expected = "しにどころ"
+note = "同上 (旧 しにところ)"
+
+[[case]]
+input = "鱏"
+mode = "hiragana"
+expected = "えい"
+note = "難読魚 (旧 かじき = 梶木との混同、 unihan entry 削除)"
+
+[[case]]
+input = "菘"
+mode = "hiragana"
+expected = "すずな"
+note = "春の七草 (旧 しゅう、 unihan entry 削除)"
+
+[[case]]
+input = "決まり手"
+mode = "hiragana"
+expected = "きまりて"
+note = "X手 sweep は誤読ゼロ、 代表を退行ロック"
+
+[[case]]
+input = "台所"
+mode = "hiragana"
+expected = "だいどころ"
+note = "X所 の どころ 側 退行ロック"
