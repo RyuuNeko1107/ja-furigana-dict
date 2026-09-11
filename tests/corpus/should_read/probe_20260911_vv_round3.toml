@@ -1,0 +1,51 @@
+# 2026-09-11 VV 比較 第 3 ラウンド (60,000 文)。 収穫は 3 件で、 手法としては飽和に近い。
+# 候補 37 件の大半は **VOICEVOX 側が誤り** (日本人=ニッポン / 身体=シンタイ / 手札=シュサツ /
+# 河川敷=カセンシキ / 魁星=サキガケボシ 等)。 こちらが正しいことの確認にもなった。
+
+[[case]]
+input = "素で"
+mode = "hiragana"
+expected = "すで"
+note = "口語 (旧 そで)"
+
+[[case]]
+input = "素直"
+mode = "hiragana"
+expected = "すなお"
+note = "退行ロック"
+
+[[case]]
+input = "素材"
+mode = "hiragana"
+expected = "そざい"
+note = "退行ロック"
+
+[[case]]
+input = "対左"
+mode = "hiragana"
+expected = "たいひだり"
+note = "野球ゲーム用語 (旧 たいさ、 対右=タイミギ と対)"
+
+[[case]]
+input = "対右"
+mode = "hiragana"
+expected = "たいみぎ"
+note = "同上"
+
+[[case]]
+input = "獅々田"
+mode = "hiragana"
+expected = "ししだ"
+note = "々 の畳語展開が シシジシ になっていた"
+
+[[case]]
+input = "佐々木"
+mode = "hiragana"
+expected = "ささき"
+note = "々 の正常側 退行ロック"
+
+[[case]]
+input = "代々木"
+mode = "hiragana"
+expected = "よよぎ"
+note = "同上"
