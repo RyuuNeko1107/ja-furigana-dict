@@ -1,0 +1,118 @@
+# 2026-09-11 活用形監査。 辞書の動詞 / 形容詞 entry から活用形を機械生成し、
+# 語幹の読みが保たれるかを検査した (740 + 728 形)。
+# ★終止形は正読でも **活用形だけ Lindera の別読みに負ける** 語が多数あった。
+# 連語 entry (我を通す / 轍を踏む / 床に就く) は活用形も併せて登録する。
+
+[[case]]
+input = "拘って"
+mode = "hiragana"
+expected = "こだわって"
+note = "活用形監査 (旧 かかわって)"
+
+[[case]]
+input = "拘り"
+mode = "hiragana"
+expected = "こだわり"
+note = "同上"
+
+[[case]]
+input = "彷徨ってる"
+mode = "hiragana"
+expected = "さまよってる"
+note = "同上 (旧 ほうこうって)"
+
+[[case]]
+input = "性に合ってる"
+mode = "hiragana"
+expected = "しょうにあってる"
+note = "同上 (旧 せいにあって)"
+
+[[case]]
+input = "同じ轍を踏んで"
+mode = "hiragana"
+expected = "おなじてつをふんで"
+note = "同上 (旧 わだちを)"
+
+[[case]]
+input = "我を通して"
+mode = "hiragana"
+expected = "がをとおして"
+note = "同上 (旧 われを)"
+
+[[case]]
+input = "床に就いた"
+mode = "hiragana"
+expected = "とこについた"
+note = "同上 (旧 ゆかに)"
+
+[[case]]
+input = "雨降って地固まる"
+mode = "hiragana"
+expected = "あめふってじかたまる"
+note = "同上 (旧 ちかたまる)"
+
+[[case]]
+input = "五月蠅かった"
+mode = "hiragana"
+expected = "うるさかった"
+note = "い形容詞 (旧 ごがつはえ)"
+
+[[case]]
+input = "凜々しかった"
+mode = "hiragana"
+expected = "りりしかった"
+note = "同上 (旧 りんりん)"
+
+[[case]]
+input = "太々しかった"
+mode = "hiragana"
+expected = "ふてぶてしかった"
+note = "同上 (旧 たいだい)"
+
+[[case]]
+input = "悍ましかった"
+mode = "hiragana"
+expected = "おぞましかった"
+note = "同上"
+
+[[case]]
+input = "目紛しかった"
+mode = "hiragana"
+expected = "めまぐるしかった"
+note = "同上"
+
+[[case]]
+input = "艶めかしかった"
+mode = "hiragana"
+expected = "なまめかしかった"
+note = "同上"
+
+[[case]]
+input = "気色悪かった"
+mode = "hiragana"
+expected = "きしょくわるかった"
+note = "同上 (旧 けしきわる)"
+
+[[case]]
+input = "一足早かった"
+mode = "hiragana"
+expected = "ひとあしはやかった"
+note = "同上 (旧 いっそく)"
+
+[[case]]
+input = "荒らげて"
+mode = "hiragana"
+expected = "あららげて"
+note = "一段動詞 (旧 あらげて)"
+
+[[case]]
+input = "捏ねて"
+mode = "hiragana"
+expected = "こねて"
+note = "同上 (旧 つくねて)"
+
+[[case]]
+input = "口遊んで"
+mode = "hiragana"
+expected = "くちずさんで"
+note = "五段動詞 (旧 くちあそんで)"
