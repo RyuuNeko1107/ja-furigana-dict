@@ -97,6 +97,17 @@ suffix = "プン"
 sokuonize = true
 # === end: 分 ===
 
+# === begin: 分間 === (★2026-09-11: 「1分間」 が イチフンカン だった。 分 と同じ euphony)
+[counter."分間"]
+default = "フンカン"
+kanji_numeral = false  # 分 と同様 (「十分間」 の判別は文脈ルールが必要)
+
+[[counter."分間".rules]]
+last_digit = [1, 3, 4, 6, 8, 0]
+suffix = "プンカン"
+sokuonize = true
+# === end: 分間 ===
+
 # === begin: 分半 ===
 [counter."分半"]
 default = "フンハン"

@@ -1,0 +1,74 @@
+# 2026-09-11 文脈不変検査 第 3 巡。 空白直後の数字は lib 側で修正済。
+# ここでは 流行った (Lindera の リュウイッタ に負ける) / 分間 counter / 草連打 を固定。
+
+[[case]]
+input = "流行った"
+mode = "hiragana"
+expected = "はやった"
+note = "旧 りゅういった"
+
+[[case]]
+input = "流行ってる"
+mode = "hiragana"
+expected = "はやってる"
+note = "同上"
+
+[[case]]
+input = "流行り"
+mode = "hiragana"
+expected = "はやり"
+note = "正読の退行ロック"
+
+[[case]]
+input = "1分間"
+mode = "hiragana"
+expected = "いっぷんかん"
+note = "分間 counter 新設 (旧 いちふんかん)"
+
+[[case]]
+input = "3分間"
+mode = "hiragana"
+expected = "さんぷんかん"
+note = "同上"
+
+[[case]]
+input = "30分間"
+mode = "hiragana"
+expected = "さんじゅっぷんかん"
+note = "同上"
+
+[[case]]
+input = "十分"
+mode = "hiragana"
+expected = "じゅうぶん"
+note = "分 の漢数字 bare OFF を維持"
+
+[[case]]
+input = "三分の一"
+mode = "hiragana"
+expected = "さんぶんのいち"
+note = "同上"
+
+[[case]]
+input = "草草草"
+mode = "hiragana"
+expected = "くさくさくさ"
+note = "ネットスラング (旧 くさそうそう)"
+
+[[case]]
+input = "草草草草"
+mode = "hiragana"
+expected = "くさくさくさくさ"
+note = "同上"
+
+[[case]]
+input = "優勝 5回"
+mode = "hiragana"
+expected = "ゆうしょう ごかい"
+note = "空白直後の数字 (lib 修正)"
+
+[[case]]
+input = "気温 24度"
+mode = "hiragana"
+expected = "きおん にじゅうよんど"
+note = "同上"
