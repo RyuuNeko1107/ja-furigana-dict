@@ -9,6 +9,15 @@ on:
       tag:
         description: 'Release tag (CalVer 形式、 例: v2026.05.10)'
         required: true
+  # daily-release.yml から直接呼ぶ (= GITHUB_TOKEN で打った tag は push trigger を
+  # 起動しない GitHub の recursive workflow 制限を、 明示 call で迂回する。
+  # これにより RELEASE_PAT 無しで daily auto-release が完走する)。
+  workflow_call:
+    inputs:
+      tag:
+        description: 'Release tag'
+        required: true
+        type: string
 
 permissions:
   contents: write
@@ -21,17 +30,18 @@ jobs:
       - uses: actions/checkout@v6
         with:
           fetch-depth: 0
-          # PAT で checkout (= docs/release-diffs/ archive commit を master に push する際、
-          # branch protection を bypass できる PAT 所有者で push する必要があるため)。
-          # RELEASE_PAT が未設定の repo では GITHUB_TOKEN に fallback (= archive commit step は失敗するが
-          # tar.gz upload + draft 作成までは成功する)。
-          token: ${{ secrets.RELEASE_PAT || secrets.GITHUB_TOKEN }}
+          # checkout は **常に GITHUB_TOKEN** (2026-09-11)。 以前は RELEASE_PAT を使っていたが、
+          # PAT が失効すると checkout 自体が exit 128 で落ち、 release が 1 ヶ月止まった。
+          # PAT が要るのは docs/release-diffs/ の archive commit (branch protection bypass) だけなので、
+          # そこだけ PAT を使い、 失敗しても release を止めない (continue-on-error)。
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 解決された tag
         id: tag
         run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            TAG="${{ github.event.inputs.tag }}"
+          if [ -n "${{ inputs.tag }}" ]; then
+            # workflow_dispatch / workflow_call はどちらも inputs.tag を持つ
+            TAG="${{ inputs.tag }}"
           else
             TAG="${GITHUB_REF#refs/tags/}"
           fi
@@ -121,6 +131,11 @@ jobs:
           make_latest: 'false'
 
       - name: docs/release-diffs/ に diff を archive commit
+        # RELEASE_PAT が無い / 失効している場合は branch protection に阻まれるが、
+        # release 本体 (asset + publish) は成立させたいので失敗を許容する。
+        continue-on-error: true
+        env:
+          GH_PUSH_TOKEN: ${{ secrets.RELEASE_PAT || secrets.GITHUB_TOKEN }}
         # 各 release の diff を repo 内 docs/release-diffs/<tag>.md として
         # 累積 commit する (一覧 / 検索 / 古い release への振り返り用)。
         # tag push trigger なので detached HEAD 状態。 master を fetch して
@@ -143,14 +158,14 @@ jobs:
             exit 0
           fi
           git commit -m "docs(release-diffs): ${TAG} [skip stats]"
-          git push origin HEAD:master
+          git push "https://x-access-token:${GH_PUSH_TOKEN}@github.com/${{ github.repository }}.git" HEAD:master
 
       - name: Release を publish (draft → false、 immutable lock 発効)
         # docs/release-diffs/ commit まで成功したらここで draft を解除して publish。
         # publish 後は asset 編集不可 (immutable) になる。 publish 順を最後に
         # することで、 失敗時は draft が残って retry 可能 (asset 整合性確保)。
         env:
-          GH_TOKEN: ${{ secrets.RELEASE_PAT || secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           TAG="${{ steps.tag.outputs.tag }}"
           gh release edit "$TAG" --repo "${{ github.repository }}" \

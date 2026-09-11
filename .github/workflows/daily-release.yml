@@ -29,14 +29,18 @@ jobs:
   maybe-release:
     name: 差分があれば日付 tag を打つ
     runs-on: ubuntu-latest
+    outputs:
+      skip: ${{ steps.diff.outputs.skip }}
+      tag: ${{ steps.next.outputs.tag }}
     steps:
       - uses: actions/checkout@v6
         with:
           fetch-depth: 0
-          # PAT 経由で tag push する (= GITHUB_TOKEN だと recursive workflow 制限で
-          # release.yml が起動しない GitHub Actions の標準挙動を回避)。
-          # RELEASE_PAT が未設定の repo では GITHUB_TOKEN に fallback (= 旧挙動)。
-          token: ${{ secrets.RELEASE_PAT || secrets.GITHUB_TOKEN }}
+          # **GITHUB_TOKEN 固定** (2026-09-11)。 以前は RELEASE_PAT 経由で tag push し、
+          # recursive workflow 制限 (= GITHUB_TOKEN の push は他 workflow を起動しない) を
+          # 回避していたが、 PAT 失効で checkout ごと落ちて daily release が 1 ヶ月停止した。
+          # 現在は tag push 後に release.yml を **明示 call** するので PAT は不要。
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 前回 tag を解決
         id: last
@@ -97,3 +101,16 @@ jobs:
           # tar.gz + sha256 を GitHub Release に upload する。
           git tag -a "$NEXT" -m "$NEXT (daily auto-release)"
           git push origin "$NEXT"
+
+  # tag push (GITHUB_TOKEN) は release.yml の push trigger を起動しないため、
+  # ここから reusable workflow として明示的に呼ぶ。
+  release:
+    name: Release を作る
+    needs: maybe-release
+    if: needs.maybe-release.outputs.skip != 'true'
+    uses: ./.github/workflows/release.yml
+    with:
+      tag: ${{ needs.maybe-release.outputs.tag }}
+    permissions:
+      contents: write
+    secrets: inherit
