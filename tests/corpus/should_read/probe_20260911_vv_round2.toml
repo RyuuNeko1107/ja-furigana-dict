@@ -1,0 +1,101 @@
+# 2026-09-11 VV 比較 第 2 ラウンド (60,000 文)。 差分行と一致行での token 出現率を比べ、
+# 「その語を含むとほぼ必ず食い違う」 語を統計的に特定して原因語を絞った。
+# ★捕手: history.toml に 時代劇の トリテ で登録されていたため、 野球実況 4,325 行が誤読していた。
+# ★田: prev 漢字 → ダ を追加。 未登録の姓 (蓑田/里田/梨田) が 「みのでん」 等になっていた。
+#   水田/油田/炭田/塩田/美田/田園 は jukugo entry (band 1000) が勝つので影響なし。
+
+[[case]]
+input = "捕手"
+mode = "hiragana"
+expected = "ほしゅ"
+note = "野球 (旧 トリテ = 時代劇語で登録されていた)"
+
+[[case]]
+input = "中村捕手"
+mode = "hiragana"
+expected = "なかむらほしゅ"
+note = "同上"
+
+[[case]]
+input = "捕り手"
+mode = "hiragana"
+expected = "とりて"
+note = "時代劇語は送り仮名つき表記で維持"
+
+[[case]]
+input = "蓑田"
+mode = "hiragana"
+expected = "みのだ"
+note = "未登録の姓 (旧 みのでん)"
+
+[[case]]
+input = "里田"
+mode = "hiragana"
+expected = "さとだ"
+note = "同上"
+
+[[case]]
+input = "梨田"
+mode = "hiragana"
+expected = "なしだ"
+note = "同上"
+
+[[case]]
+input = "兔田"
+mode = "hiragana"
+expected = "うさぎだ"
+note = "同上"
+
+[[case]]
+input = "水田"
+mode = "hiragana"
+expected = "すいでん"
+note = "★田 の音読み熟語 退行ロック"
+
+[[case]]
+input = "油田"
+mode = "hiragana"
+expected = "ゆでん"
+note = "同上"
+
+[[case]]
+input = "炭田"
+mode = "hiragana"
+expected = "たんでん"
+note = "同上"
+
+[[case]]
+input = "塩田"
+mode = "hiragana"
+expected = "えんでん"
+note = "同上"
+
+[[case]]
+input = "美田"
+mode = "hiragana"
+expected = "びでん"
+note = "同上"
+
+[[case]]
+input = "田園"
+mode = "hiragana"
+expected = "でんえん"
+note = "同上"
+
+[[case]]
+input = "棚田"
+mode = "hiragana"
+expected = "たなだ"
+note = "訓側 退行ロック"
+
+[[case]]
+input = "山田"
+mode = "hiragana"
+expected = "やまだ"
+note = "既存の姓 退行ロック"
+
+[[case]]
+input = "太田"
+mode = "hiragana"
+expected = "おおた"
+note = "タ 側 退行ロック"
