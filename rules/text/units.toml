@@ -43,6 +43,10 @@ role = "units"
 description = "SI 単位 + 通貨 + % (km / kg / mL / 円 / % 等、 数値 + 単位を 1 chunk で読む。 lookup は case-insensitive)"
 
 [entries]
+"℃"  = { kana = "ド" }          # ★2026-09-11: NFKC で ℃ → °C に分解され、 「5℃」 が
+"°C" = { kana = "ド" }          # 「ごどC」 (C が残る) になっていた
+"℉"  = { kana = "カド" }
+"°F" = { kana = "カド" }
 "km" = { kana = "キロメートル" }
 "cm" = { kana = "センチメートル" }
 "mm" = { kana = "ミリメートル" }

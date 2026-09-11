@@ -1,0 +1,32 @@
+# 2026-09-11 文脈不変検査 (同じ入力に 「さて、」 / 「。」 を足して読みが変わらないか) から。
+# 20 万行で前置 153 / 後置 124 行が不安定だった。 主因は記号 + 句読点の path 敗北。
+
+[[case]]
+input = "50%。"
+mode = "hiragana"
+expected = "ごじゅっぱーせんと。"
+note = "記号+句読点 (旧 ごじゅう%。)"
+
+[[case]]
+input = "100%です。"
+mode = "hiragana"
+expected = "ひゃくぱーせんとです。"
+note = "同上"
+
+[[case]]
+input = "5℃"
+mode = "hiragana"
+expected = "ごど"
+note = "℃ は NFKC で °C に分解される (旧 ごどC)"
+
+[[case]]
+input = "25℃くらい"
+mode = "hiragana"
+expected = "にじゅうごどくらい"
+note = "同上"
+
+[[case]]
+input = "90度"
+mode = "hiragana"
+expected = "きゅうじゅうど"
+note = "度 counter の退行ロック"
