@@ -1,0 +1,81 @@
+# 2026-09-11 VV 比較の閾値を下げた再走査 (差分率 50% 以上 / 出現 5 回以上)。
+# 値 は 「prev 漢字 → チ」 を追加。 助詞 match が先に当たって 「理論値の」 が リロンね だった。
+# 大谷 は敬称なしの裸でも野球語が同じ文にあれば オオタニ (実測 33 件中 24 件が野球文脈)。
+
+[[case]]
+input = "球種"
+mode = "hiragana"
+expected = "きゅうしゅ"
+note = "野球 (旧 たましゅ)"
+
+[[case]]
+input = "一球種"
+mode = "hiragana"
+expected = "いっきゅうしゅ"
+note = "促音形"
+
+[[case]]
+input = "経験者"
+mode = "hiragana"
+expected = "けいけんしゃ"
+note = "者=しゃ (旧 けいげんざ)"
+
+[[case]]
+input = "未経験者"
+mode = "hiragana"
+expected = "みけいけんしゃ"
+note = "同上"
+
+[[case]]
+input = "広角打法"
+mode = "hiragana"
+expected = "こうかくだほう"
+note = "野球 (旧 こうかくうちほう)"
+
+[[case]]
+input = "理論値の"
+mode = "hiragana"
+expected = "りろんちの"
+note = "値: prev 漢字 → チ (旧 りろんね)"
+
+[[case]]
+input = "経験値もらいたい"
+mode = "hiragana"
+expected = "けいけんちもらいたい"
+note = "同上"
+
+[[case]]
+input = "値が高い"
+mode = "hiragana"
+expected = "ねがたかい"
+note = "値: 助詞前の訓側 退行ロック"
+
+[[case]]
+input = "値引き"
+mode = "hiragana"
+expected = "ねびき"
+note = "同上"
+
+[[case]]
+input = "卸値"
+mode = "hiragana"
+expected = "おろしね"
+note = "同上"
+
+[[case]]
+input = "大谷の打席"
+mode = "hiragana"
+expected = "おおたにのだせき"
+note = "ADR-0010 文スコープ: 野球語で オオタニ"
+
+[[case]]
+input = "大谷石の産地"
+mode = "hiragana"
+expected = "おおやいしのさんち"
+note = "一般語 オオヤ を維持 (誤爆ロック)"
+
+[[case]]
+input = "大谷さん"
+mode = "hiragana"
+expected = "おおたにさん"
+note = "既存の敬称 suffix match"
