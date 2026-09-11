@@ -1,0 +1,26 @@
+# 2026-09-11 lib 修正 (かな token の suffix edge) の回帰。
+# dict entry が Lindera token の途中で終わると継続 edge が無く entry が無視されていた。
+
+[[case]]
+input = "お婆ちゃんすげぇ"
+mode = "hiragana"
+expected = "おばあちゃんすげぇ"
+note = "lib fix: かな token 途中で終わる entry の継続 edge"
+
+[[case]]
+input = "お婆ちゃんやべぇ"
+mode = "hiragana"
+expected = "おばあちゃんやべぇ"
+note = "同上"
+
+[[case]]
+input = "婆ちゃんつえぇ"
+mode = "hiragana"
+expected = "ばあちゃんつえぇ"
+note = "同上"
+
+[[case]]
+input = "お婆ちゃんやばい"
+mode = "hiragana"
+expected = "おばあちゃんやばい"
+note = "元から正読だった側の退行ロック"
