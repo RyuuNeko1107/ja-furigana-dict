@@ -1,0 +1,86 @@
+# 2026-09-11 文脈不変検査 第 2 巡。 「さて、」 を前置 / 「。」 を後置しても読みが変わらないこと。
+# 20 万行で 199 行が不安定。 うち 「文末だけ Lindera の別読みに負ける」 語を entry で固定。
+
+[[case]]
+input = "打て。"
+mode = "hiragana"
+expected = "うて。"
+note = "文末で Lindera の ブテ に負けていた"
+
+[[case]]
+input = "慎重に打て。"
+mode = "hiragana"
+expected = "しんちょうにうて。"
+note = "同上"
+
+[[case]]
+input = "打てばいい"
+mode = "hiragana"
+expected = "うてばいい"
+note = "同上"
+
+[[case]]
+input = "次がない。"
+mode = "hiragana"
+expected = "つぎがない。"
+note = "文末で ツガナイ だった"
+
+[[case]]
+input = "テンポ良くて見やすい"
+mode = "hiragana"
+expected = "テンポよくてみやすい"
+note = "文中で ケンヤスイ だった"
+
+[[case]]
+input = "少々"
+mode = "hiragana"
+expected = "しょうしょう"
+note = "畳語 (旧 しょうじょう)"
+
+[[case]]
+input = "先々週"
+mode = "hiragana"
+expected = "せんせんしゅう"
+note = "同上 (旧 せんぜんしゅう)"
+
+[[case]]
+input = "開始早々"
+mode = "hiragana"
+expected = "かいしそうそう"
+note = "同上 (旧 かいしそうぞう)"
+
+[[case]]
+input = "早々"
+mode = "hiragana"
+expected = "はやばや"
+note = "単独は ハヤバヤ を維持"
+
+[[case]]
+input = "手洗ってない"
+mode = "hiragana"
+expected = "てあらってない"
+note = "旧 てあらいってない"
+
+[[case]]
+input = "肉入ってない"
+mode = "hiragana"
+expected = "にくはいってない"
+note = "旧 にくいれって"
+
+[[case]]
+input = "髪盛りすぎ"
+mode = "hiragana"
+expected = "かみもりすぎ"
+note = "旧 かみざかり"
+
+[[case]]
+input = "仮拠点"
+mode = "hiragana"
+expected = "かりきょてん"
+note = "旧 かきょてん"
+
+[[case]]
+input = "子供部屋"
+mode = "hiragana"
+expected = "こどもべや"
+note = "連濁 (旧 こどもへや)"
