@@ -1,0 +1,45 @@
+# 2026-09-11 実コーパス 704 万行の 「読みに漢字が残る行」 走査 (1,050 件) から。
+# 日本語分はすべて 「N万目標 / N万目前 / N万目指す」 系で、 scale の trailing unit を
+# 解決できない時に surface をそのまま読みに混ぜていた lib バグだった。
+
+[[case]]
+input = "100万目標"
+mode = "hiragana"
+expected = "ひゃくまんもくひょう"
+note = "lib fix: scale の trailing unit (旧 ヒャクマン目ヒョウ)"
+
+[[case]]
+input = "2000万目前"
+mode = "hiragana"
+expected = "にせんまんもくぜん"
+note = "同上"
+
+[[case]]
+input = "100万目指せる"
+mode = "hiragana"
+expected = "ひゃくまんめざせる"
+note = "同上 + 目指せる entry"
+
+[[case]]
+input = "目指せる"
+mode = "hiragana"
+expected = "めざせる"
+note = "可能形 (旧 メサセル)"
+
+[[case]]
+input = "優勝目指して"
+mode = "hiragana"
+expected = "ゆうしょうめざして"
+note = "既存正読の退行ロック"
+
+[[case]]
+input = "1000万円"
+mode = "hiragana"
+expected = "せんまんえん"
+note = "scale + SI 単位の退行ロック"
+
+[[case]]
+input = "100万人"
+mode = "hiragana"
+expected = "ひゃくまんにん"
+note = "scale + counter の退行ロック"
