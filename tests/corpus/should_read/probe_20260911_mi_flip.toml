@@ -1,0 +1,104 @@
+# 2026-09-11 「身」 default flip (シン → み) の退行ロック。
+# 帯 と同型 (単独は訓、 漢字連結時のみ音) の単漢字。 39 形を監査して誤読ゼロを確認した分。
+
+[[case]]
+input = "身"
+mode = "hiragana"
+expected = "み"
+note = "単漢字 default flip (旧 シン)"
+
+[[case]]
+input = "魚の身"
+mode = "hiragana"
+expected = "さかなのみ"
+note = "訓 側"
+
+[[case]]
+input = "身が詰まる"
+mode = "hiragana"
+expected = "みがつまる"
+note = "助詞後続"
+
+[[case]]
+input = "中身"
+mode = "hiragana"
+expected = "なかみ"
+note = "X身 訓側"
+
+[[case]]
+input = "刺身"
+mode = "hiragana"
+expected = "さしみ"
+note = "同上"
+
+[[case]]
+input = "身の丈"
+mode = "hiragana"
+expected = "みのたけ"
+note = "帯X 訓側"
+
+[[case]]
+input = "身支度"
+mode = "hiragana"
+expected = "みじたく"
+note = "同上"
+
+[[case]]
+input = "身振り"
+mode = "hiragana"
+expected = "みぶり"
+note = "同上"
+
+[[case]]
+input = "身長"
+mode = "hiragana"
+expected = "しんちょう"
+note = "身X 音側 (next 漢字 → シン)"
+
+[[case]]
+input = "身体"
+mode = "hiragana"
+expected = "からだ"
+note = "熟字訓 entry 優先"
+
+[[case]]
+input = "身分"
+mode = "hiragana"
+expected = "みぶん"
+note = "重箱読み entry"
+
+[[case]]
+input = "全身"
+mode = "hiragana"
+expected = "ぜんしん"
+note = "X身 音側 (prev 漢字 → シン)"
+
+[[case]]
+input = "独身"
+mode = "hiragana"
+expected = "どくしん"
+note = "同上"
+
+[[case]]
+input = "変身"
+mode = "hiragana"
+expected = "へんしん"
+note = "同上"
+
+[[case]]
+input = "渾身"
+mode = "hiragana"
+expected = "こんしん"
+note = "同上"
+
+[[case]]
+input = "親身"
+mode = "hiragana"
+expected = "しんみ"
+note = "湯桶読み entry"
+
+[[case]]
+input = "上半身"
+mode = "hiragana"
+expected = "じょうはんしん"
+note = "3 字 音側"

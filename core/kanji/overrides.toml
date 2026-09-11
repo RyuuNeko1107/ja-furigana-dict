@@ -14135,8 +14135,20 @@ default = "ち"
 # 「刺身/独り身」 等は jukugo file で対応。
 [[kanji]]
 char = "身"
-default = "シン"
+# default 「み」 (= 単独名詞 「身」、 「魚の身」 「身が詰まる」。 ★2026-09-11 flip、
+# 旧 default シン は 文末等の単独 surface を 「シン」 と読んでいた)。
+# 音読み シン は 身体 / 全身 / 独身 のように **漢字と連結する時だけ** なので char_type で拾う。
+default = "み"
 
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "シン"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "シン"
+
+# 助詞後続は名詞用法 = 訓 「み」 (char_type match より後ろに置くと第一 hit で負けるので前に置く)
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
 reading = "み"
