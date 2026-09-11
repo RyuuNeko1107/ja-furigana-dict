@@ -1,0 +1,141 @@
+# 2026-09-11 専門用語 probe 第 4 弾 (配信 59 / 調理 59 / 気象災害 59 / 鉄道 59 / 登山 59 = 295 語)。
+# ★発見: 「X場」 は [[kanji]] の 「prev 漢字 / カタカナ → ジョウ」 match があるため、
+# 訓読みの 「〜バ」 は entry 登録が要る (水場 / 鎖場 / ガレ場 が ジョウ に落ちていた)。
+
+[[case]]
+input = "枠被り"
+mode = "hiragana"
+expected = "わくかぶり"
+note = "配信 (旧 わくこうむり)"
+
+[[case]]
+input = "落とし蓋"
+mode = "hiragana"
+expected = "おとしぶた"
+note = "調理 連濁 (旧 おとしがい)"
+
+[[case]]
+input = "粗熱"
+mode = "hiragana"
+expected = "あらねつ"
+note = "調理 (旧 そねつ)"
+
+[[case]]
+input = "越水"
+mode = "hiragana"
+expected = "えっすい"
+note = "災害 (旧 こしみず)"
+
+[[case]]
+input = "内水氾濫"
+mode = "hiragana"
+expected = "ないすいはんらん"
+note = "災害 (旧 うすいはんらん)"
+
+[[case]]
+input = "外水氾濫"
+mode = "hiragana"
+expected = "がいすいはんらん"
+note = "災害 (旧 そとすいはんらん)"
+
+[[case]]
+input = "乗継"
+mode = "hiragana"
+expected = "のりつぎ"
+note = "鉄道 (旧 じょうけい)"
+
+[[case]]
+input = "信号扱所"
+mode = "hiragana"
+expected = "しんごうあつかいじょ"
+note = "鉄道 (旧 しんごうそうしょ)"
+
+[[case]]
+input = "引上線"
+mode = "hiragana"
+expected = "ひきあげせん"
+note = "鉄道 (旧 いんうえせん)"
+
+[[case]]
+input = "天場"
+mode = "hiragana"
+expected = "てんば"
+note = "登山 (旧 てんじょう)"
+
+[[case]]
+input = "鎖場"
+mode = "hiragana"
+expected = "くさりば"
+note = "登山 (旧 くさりじょう)"
+
+[[case]]
+input = "水場"
+mode = "hiragana"
+expected = "みずば"
+note = "登山 (旧 みずじょう)"
+
+[[case]]
+input = "ガレ場"
+mode = "hiragana"
+expected = "がれば"
+note = "カタカナ+場 (旧 ガレじょう)"
+
+[[case]]
+input = "沢登り"
+mode = "hiragana"
+expected = "さわのぼり"
+note = "登山 (旧 たくのぼり)"
+
+[[case]]
+input = "高巻き"
+mode = "hiragana"
+expected = "たかまき"
+note = "登山 (旧 こうまき)"
+
+[[case]]
+input = "直登"
+mode = "hiragana"
+expected = "ちょくとう"
+note = "登山 (旧 なおと)"
+
+[[case]]
+input = "熊鈴"
+mode = "hiragana"
+expected = "くますず"
+note = "登山 (旧 くまりん)"
+
+[[case]]
+input = "熊除け"
+mode = "hiragana"
+expected = "くまよけ"
+note = "登山 (旧 くまのけ)"
+
+[[case]]
+input = "主稜"
+mode = "hiragana"
+expected = "しゅりょう"
+note = "登山 (旧 ぬしりょう)"
+
+[[case]]
+input = "物置場"
+mode = "hiragana"
+expected = "ものおきば"
+note = "X場 sweep (旧 ものおきじょう)"
+
+[[case]]
+input = "ゴルフ場"
+mode = "hiragana"
+expected = "ゴルフじょう"
+note = "場=ジョウ 側の退行ロック (prev カタカナ rule)"
+
+[[case]]
+input = "工場"
+mode = "hiragana"
+expected = "こうじょう"
+note = "同上 (prev 漢字 rule)"
+
+[[case]]
+input = "駐車場"
+mode = "hiragana"
+expected = "ちゅうしゃじょう"
+note = "同上"
