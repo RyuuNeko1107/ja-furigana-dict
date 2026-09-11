@@ -1,0 +1,141 @@
+# 2026-09-11 「帯」 default flip (タイ → おび) の全面退行ロック。
+# 辞書内の 帯 を含む entry 49 件 + 実文脈 60 形を総当たり監査した結果を固定する。
+# おび 側 (単独 / 訓 X帯 / 帯X) と タイ 側 (音 X帯 / 帯X) の両方を入れてある。
+
+[[case]]
+input = "帯"
+mode = "hiragana"
+expected = "おび"
+note = "単漢字 default (2026-09-11 flip)"
+
+[[case]]
+input = "帯を締める"
+mode = "hiragana"
+expected = "おびをしめる"
+note = "助詞後続"
+
+[[case]]
+input = "本の帯"
+mode = "hiragana"
+expected = "ほんのおび"
+note = "prev ひらがな"
+
+[[case]]
+input = "黒帯"
+mode = "hiragana"
+expected = "くろおび"
+note = "X帯 訓読み側"
+
+[[case]]
+input = "袋帯"
+mode = "hiragana"
+expected = "ふくろおび"
+note = "同上"
+
+[[case]]
+input = "腹帯"
+mode = "hiragana"
+expected = "はらおび"
+note = "同上"
+
+[[case]]
+input = "熱帯"
+mode = "hiragana"
+expected = "ねったい"
+note = "X帯 音読み側 (prev 漢字 → タイ)"
+
+[[case]]
+input = "亜熱帯"
+mode = "hiragana"
+expected = "あねったい"
+note = "同上"
+
+[[case]]
+input = "温帯"
+mode = "hiragana"
+expected = "おんたい"
+note = "同上"
+
+[[case]]
+input = "包帯"
+mode = "hiragana"
+expected = "ほうたい"
+note = "同上"
+
+[[case]]
+input = "携帯電話"
+mode = "hiragana"
+expected = "けいたいでんわ"
+note = "同上"
+
+[[case]]
+input = "世帯主"
+mode = "hiragana"
+expected = "せたいぬし"
+note = "同上"
+
+[[case]]
+input = "声帯"
+mode = "hiragana"
+expected = "せいたい"
+note = "同上"
+
+[[case]]
+input = "靭帯"
+mode = "hiragana"
+expected = "じんたい"
+note = "同上"
+
+[[case]]
+input = "時間帯"
+mode = "hiragana"
+expected = "じかんたい"
+note = "同上"
+
+[[case]]
+input = "周波数帯"
+mode = "hiragana"
+expected = "しゅうはすうたい"
+note = "同上"
+
+[[case]]
+input = "帯域幅"
+mode = "hiragana"
+expected = "たいいきはば"
+note = "帯X 音読み側"
+
+[[case]]
+input = "帯電"
+mode = "hiragana"
+expected = "たいでん"
+note = "同上"
+
+[[case]]
+input = "帯状疱疹"
+mode = "hiragana"
+expected = "たいじょうほうしん"
+note = "同上"
+
+[[case]]
+input = "熱を帯びた"
+mode = "hiragana"
+expected = "ねつをおびた"
+note = "動詞 (prev 漢字 に負けないこと)"
+
+[[case]]
+input = "造山帯"
+mode = "hiragana"
+expected = "つくりやまたい"
+note = "未登録 漢字+帯 の OOV でも タイ になること"
+
+[[case]]
+input = "所得帯"
+mode = "hiragana"
+expected = "しょとくたい"
+note = "同上"
+
+[[case]]
+input = "帯に短し襷に長し"
+mode = "hiragana"
+expected = "おびにみじかしたすきにながし"
+note = "諺"
