@@ -13702,9 +13702,18 @@ char = "素"
 default = "ソ"
 
 # 文末「の素」= もと (出汁の素/カレーの素/不和の素=源。素材/要素/酸素/素人 は2字tokenで非干渉)
+# prev が 「の」 で終わる = 「出汁の素 / カレーの素 / 不和の素」。
+# pseudo-token は文字種 run なので prev は 「だしの」 のような塊になる → ends_any で拾う。
 [[kanji.match]]
-prev_eq = "の"
+prev_ends_any = ["の"]
 reading = "もと"
+
+# 「素の声 / 素のまま / 素でわかる / 素だと」 = ス (★2026-09-11 VV 比較)。
+# 上の prev rule が先に当たるので 「だしの素の味」 は もと のまま (第一 hit 勝ち)。
+# 熟語 (塩素で / 要素では) は jukugo entry が band 1000 で勝つので非干渉。
+[[kanji.match]]
+next_starts_any = ["の", "で", "だ"]
+reading = "す"
 
 # 「缶」 default 「カン」 (= 缶詰/空き缶/缶詰め/一斗缶、 音読み圧倒的)。
 # unihan 「ほとぎ」 は古語 (= 鼓の一種)、 現代日本語では使わない → default 訂正。

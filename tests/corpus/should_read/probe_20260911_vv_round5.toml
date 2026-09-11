@@ -1,0 +1,63 @@
+# 2026-09-11 VV 比較 第 4-5 ラウンド。 収穫は 4 件で手法は飽和。
+# ★「素で」 を jukugo entry にすると 「塩素で / 要素では」 が 塩+素で に割れる。
+# 単漢字 [[kanji]] の match (band 100) なら熟語 entry (band 1000) に負けるので安全。
+
+[[case]]
+input = "素の声"
+mode = "hiragana"
+expected = "すのこえ"
+note = "素: next の → ス (VV比較)"
+
+[[case]]
+input = "素でわかってない"
+mode = "hiragana"
+expected = "すでわかってない"
+note = "同上 next で"
+
+[[case]]
+input = "塩素で"
+mode = "hiragana"
+expected = "えんそで"
+note = "熟語 entry 優先の退行ロック"
+
+[[case]]
+input = "要素では"
+mode = "hiragana"
+expected = "ようそでは"
+note = "同上"
+
+[[case]]
+input = "脱炭素の圧力"
+mode = "hiragana"
+expected = "だつたんそのあつりょく"
+note = "3 字熟語の受け皿 entry"
+
+[[case]]
+input = "だしの素"
+mode = "hiragana"
+expected = "だしのもと"
+note = "prev が の で終わる → もと"
+
+[[case]]
+input = "味の素"
+mode = "hiragana"
+expected = "あじのもと"
+note = "同上"
+
+[[case]]
+input = "高口"
+mode = "hiragana"
+expected = "たかぐち"
+note = "姓 (旧 こうこう)"
+
+[[case]]
+input = "千切れる"
+mode = "hiragana"
+expected = "ちぎれる"
+note = "動詞 (旧 せんきれる)"
+
+[[case]]
+input = "千切り"
+mode = "hiragana"
+expected = "せんぎり"
+note = "野菜の切り方は温存"
