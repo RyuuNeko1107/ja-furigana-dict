@@ -33,7 +33,7 @@ jobs:
       skip: ${{ steps.diff.outputs.skip }}
       tag: ${{ steps.next.outputs.tag }}
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
           # **GITHUB_TOKEN 固定** (2026-09-11)。 以前は RELEASE_PAT 経由で tag push し、
