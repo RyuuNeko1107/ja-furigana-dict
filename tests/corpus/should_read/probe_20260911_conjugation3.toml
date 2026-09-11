@@ -1,0 +1,154 @@
+# 2026-09-11 活用形監査 第3弾 (可能 / 受身 / 使役 / 仮定 / 意志 / ます形)。
+# 第1-2弾 (て形・た形・ない形) でカバーしなかった語尾を機械生成して検査した。
+# ★このとき 「entry を [entries] table の外 (ファイル冒頭) に置くと無視される」 という
+#   運用ミスも検出した (validate の entry 数が増えないのが検知点)。
+
+[[case]]
+input = "拘れば"
+mode = "hiragana"
+expected = "こだわれば"
+
+[[case]]
+input = "彷徨えば"
+mode = "hiragana"
+expected = "さまよえば"
+
+[[case]]
+input = "彷徨いながら"
+mode = "hiragana"
+expected = "さまよいながら"
+
+[[case]]
+input = "千切れば"
+mode = "hiragana"
+expected = "ちぎれば"
+
+[[case]]
+input = "引き千切られて"
+mode = "hiragana"
+expected = "ひきちぎられて"
+
+[[case]]
+input = "嵌まれば"
+mode = "hiragana"
+expected = "はまれば"
+
+[[case]]
+input = "失くせる"
+mode = "hiragana"
+expected = "なくせる"
+
+[[case]]
+input = "燥ぎます"
+mode = "hiragana"
+expected = "はしゃぎます"
+
+[[case]]
+input = "抉れば"
+mode = "hiragana"
+expected = "えぐれば"
+
+[[case]]
+input = "預ければ"
+mode = "hiragana"
+expected = "あずければ"
+
+[[case]]
+input = "寝落ちれば"
+mode = "hiragana"
+expected = "ねおちれば"
+
+[[case]]
+input = "見間違えれば"
+mode = "hiragana"
+expected = "みまちがえれば"
+
+[[case]]
+input = "温めろ"
+mode = "hiragana"
+expected = "あたためろ"
+
+[[case]]
+input = "居させて"
+mode = "hiragana"
+expected = "いさせて"
+
+[[case]]
+input = "揉み解せば"
+mode = "hiragana"
+expected = "もみほぐせば"
+
+[[case]]
+input = "雪崩れ込めば"
+mode = "hiragana"
+expected = "なだれこめば"
+
+[[case]]
+input = "咥えられて"
+mode = "hiragana"
+expected = "くわえられて"
+
+[[case]]
+input = "淹れます"
+mode = "hiragana"
+expected = "いれます"
+
+[[case]]
+input = "嗾けられて"
+mode = "hiragana"
+expected = "けしかけられて"
+
+[[case]]
+input = "叩き出せば"
+mode = "hiragana"
+expected = "たたきだせば"
+
+[[case]]
+input = "呪える"
+mode = "hiragana"
+expected = "のろえる"
+
+[[case]]
+input = "性に合わない"
+mode = "hiragana"
+expected = "しょうにあわない"
+
+[[case]]
+input = "轍を踏まない"
+mode = "hiragana"
+expected = "てつをふまない"
+
+[[case]]
+input = "同じ轍を踏まない"
+mode = "hiragana"
+expected = "おなじてつをふまない"
+
+[[case]]
+input = "高を括れば"
+mode = "hiragana"
+expected = "たかをくくれば"
+
+[[case]]
+input = "喪に服せば"
+mode = "hiragana"
+expected = "もにふくせば"
+
+[[case]]
+input = "口遊めば"
+mode = "hiragana"
+expected = "くちずさめば"
+
+[[case]]
+input = "腸が煮えくり返れば"
+mode = "hiragana"
+expected = "はらわたがにえくりかえれば"
+
+[[case]]
+input = "喉元過ぎれば"
+mode = "hiragana"
+expected = "のどもとすぎれば"
+
+[[case]]
+input = "気骨が折れれば"
+mode = "hiragana"
+expected = "きぼねがおれれば"
