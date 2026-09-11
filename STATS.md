@@ -30,8 +30,8 @@ git に commit されている master HEAD の状態を基準にする。
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,773** | **192 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
-| [**エンジンルール**](#エンジンルール) (`rules/`) | **697** | **33 KB** |
-| **合計** | **64,218** | **1.75 MB** |
+| [**エンジンルール**](#エンジンルール) (`rules/`) | **701** | **33 KB** |
+| **合計** | **64,222** | **1.75 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -334,7 +334,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 `rules/` — エンジン挙動 (助数詞 / 文脈 / 後処理 等) を制御するルール群。 lib コードに embed されるのではなく、 ここで宣言的に外部化されている。
 
 <!-- AUTO-GENERATED:RULES:BEGIN -->
-**合計**: 697 エントリ / 799 ルール / 33 KB (genre 3 区分)
+**合計**: 701 エントリ / 803 ルール / 33 KB (genre 3 区分)
 
 #### 数値系
 
@@ -364,10 +364,10 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 
 | ファイル | エントリ数 | ルール数 | サイズ | 用途 |
 |---|---:|---:|---:|---|
-| [`rules/text/units.toml`](rules/text/units.toml) | 17 | 17 | 813 B | SI 単位 + 通貨 + % (km / kg / mL / 円 / % 等、 数値 + 単位を 1 chunk で読む。 lookup は case-insensitive) |
+| [`rules/text/units.toml`](rules/text/units.toml) | 21 | 21 | 1.0 KB | SI 単位 + 通貨 + % (km / kg / mL / 円 / % 等、 数値 + 単位を 1 chunk で読む。 lookup は case-insensitive) |
 | [`rules/text/symbols.toml`](rules/text/symbols.toml) | 11 | 11 | 403 B | 記号 1 文字読み (+ / − / % / ‰ / 〜 / ・ / ※ 等、 chunks/split() の symbols 階層で個別 hit) |
 | [`rules/text/postprocess.toml`](rules/text/postprocess.toml) | 2 | 2 | 325 B | 出力後処理 regex (Step 7、 mode 別: hiragana / ruby / tts / romaji の出力直前に適用) |
-| **小計** (3 ファイル) | **30** | **30** | **1.5 KB** | |
+| **小計** (3 ファイル) | **34** | **34** | **1.7 KB** | |
 
 #### (直下)
 
@@ -400,7 +400,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 3287 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 3292 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -442,6 +442,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20260911_scale_unit.toml`](tests/corpus/should_read/probe_20260911_scale_unit.toml) | 7 |
 |  | [`tests/corpus/should_read/probe_20260911_shime.toml`](tests/corpus/should_read/probe_20260911_shime.toml) | 6 |
 |  | [`tests/corpus/should_read/probe_20260911_suffix_sweep.toml`](tests/corpus/should_read/probe_20260911_suffix_sweep.toml) | 9 |
+|  | [`tests/corpus/should_read/probe_20260911_symbol_punct.toml`](tests/corpus/should_read/probe_20260911_symbol_punct.toml) | 5 |
 |  | [`tests/corpus/should_read/probe_20260911_vv_round2.toml`](tests/corpus/should_read/probe_20260911_vv_round2.toml) | 16 |
 |  | [`tests/corpus/should_read/probe_20260911_vv_round3.toml`](tests/corpus/should_read/probe_20260911_vv_round3.toml) | 8 |
 |  | [`tests/corpus/should_read/probe_20260911_vv_round4.toml`](tests/corpus/should_read/probe_20260911_vv_round4.toml) | 13 |
