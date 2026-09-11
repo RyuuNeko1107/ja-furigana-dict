@@ -1,0 +1,207 @@
+# 2026-09-11 専門用語 probe 第 2 弾 (仏教神道 60 / 和菓子 59 / 医療看護 60 /
+# 法律 60 / 伝統芸能 59 / 農業 59 / 海事 59 / 印刷製本 59 = 計 475 語試行)。
+# 法律と仏教神道は誤読ゼロ (質権=シチケン / 先取特権=サキドリトッケン は法律上これが正)。
+
+[[case]]
+input = "八つ橋"
+mode = "hiragana"
+expected = "やつはし"
+note = "和菓子 (旧 やっつはし)"
+
+[[case]]
+input = "麩菓子"
+mode = "hiragana"
+expected = "ふがし"
+note = "和菓子 (旧 ふすまかし)"
+
+[[case]]
+input = "筋注"
+mode = "hiragana"
+expected = "きんちゅう"
+note = "医療 (旧 すじちゅう)"
+
+[[case]]
+input = "清拭"
+mode = "hiragana"
+expected = "せいしき"
+note = "看護 (旧 せいしょく)"
+
+[[case]]
+input = "腹臥位"
+mode = "hiragana"
+expected = "ふくがい"
+note = "看護 体位 (旧 はらがい)"
+
+[[case]]
+input = "褥婦"
+mode = "hiragana"
+expected = "じょくふ"
+note = "産科 (旧 しとねふ)"
+
+[[case]]
+input = "橋掛かり"
+mode = "hiragana"
+expected = "はしがかり"
+note = "能舞台 連濁 (旧 はしかかり)"
+
+[[case]]
+input = "下座音楽"
+mode = "hiragana"
+expected = "げざおんがく"
+note = "歌舞伎 (旧 しもざおんがく)"
+
+[[case]]
+input = "人工授粉"
+mode = "hiragana"
+expected = "じんこうじゅふん"
+note = "農業 (旧 じんこうじゅこ)"
+
+[[case]]
+input = "水耕栽培"
+mode = "hiragana"
+expected = "すいこうさいばい"
+note = "農業 (旧 みずこう)"
+
+[[case]]
+input = "獣害"
+mode = "hiragana"
+expected = "じゅうがい"
+note = "農業 (旧 けものがい)"
+
+[[case]]
+input = "畦"
+mode = "hiragana"
+expected = "あぜ"
+note = "default flip (旧 うね)"
+
+[[case]]
+input = "畦道"
+mode = "hiragana"
+expected = "あぜみち"
+note = "同上"
+
+[[case]]
+input = "畝"
+mode = "hiragana"
+expected = "うね"
+note = "畦 flip の巻き添え退行ロック"
+
+[[case]]
+input = "初校"
+mode = "hiragana"
+expected = "しょこう"
+note = "印刷 (旧 はっこう)"
+
+[[case]]
+input = "約物"
+mode = "hiragana"
+expected = "やくもの"
+note = "印刷 (旧 やくぶつ)"
+
+[[case]]
+input = "折丁"
+mode = "hiragana"
+expected = "おりちょう"
+note = "製本 (旧 せってい)"
+
+[[case]]
+input = "背表紙"
+mode = "hiragana"
+expected = "せびょうし"
+note = "製本 連濁 (旧 はいひょうし)"
+
+[[case]]
+input = "花布"
+mode = "hiragana"
+expected = "はなぎれ"
+note = "製本 (旧 はなふ)"
+
+[[case]]
+input = "帙"
+mode = "hiragana"
+expected = "ちつ"
+note = "和装本 (旧 ふまき、 unihan entry も削除)"
+
+[[case]]
+input = "上製本"
+mode = "hiragana"
+expected = "じょうせいほん"
+note = "製本 (旧 うえせいほん)"
+
+[[case]]
+input = "並製本"
+mode = "hiragana"
+expected = "なみせいほん"
+note = "製本 (旧 へいせいほん)"
+
+[[case]]
+input = "函入り"
+mode = "hiragana"
+expected = "はこいり"
+note = "製本 (旧 かんいり)"
+
+[[case]]
+input = "離岸流"
+mode = "hiragana"
+expected = "りがんりゅう"
+note = "海事 (旧 りきしりゅう)"
+
+[[case]]
+input = "帯"
+mode = "hiragana"
+expected = "おび"
+note = "単漢字 default flip (旧 タイ)"
+
+[[case]]
+input = "本の帯"
+mode = "hiragana"
+expected = "ほんのおび"
+note = "同上"
+
+[[case]]
+input = "帯を締める"
+mode = "hiragana"
+expected = "おびをしめる"
+note = "同上"
+
+[[case]]
+input = "熱を帯びる"
+mode = "hiragana"
+expected = "ねつをおびる"
+note = "動詞 match が prev 漢字に勝つこと"
+
+[[case]]
+input = "熱帯"
+mode = "hiragana"
+expected = "ねったい"
+note = "帯 flip の巻き添え退行ロック"
+
+[[case]]
+input = "包帯"
+mode = "hiragana"
+expected = "ほうたい"
+note = "同上"
+
+[[case]]
+input = "携帯"
+mode = "hiragana"
+expected = "けいたい"
+note = "同上"
+
+[[case]]
+input = "帯状疱疹"
+mode = "hiragana"
+expected = "たいじょうほうしん"
+note = "同上 (next 漢字 → タイ)"
+
+[[case]]
+input = "声帯"
+mode = "hiragana"
+expected = "せいたい"
+note = "同上"
+
+[[case]]
+input = "一帯"
+mode = "hiragana"
+expected = "いったい"
+note = "同上"
