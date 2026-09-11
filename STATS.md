@@ -30,8 +30,8 @@ git に commit されている master HEAD の状態を基準にする。
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,773** | **191 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
-| [**エンジンルール**](#エンジンルール) (`rules/`) | **696** | **33 KB** |
-| **合計** | **64,202** | **1.75 MB** |
+| [**エンジンルール**](#エンジンルール) (`rules/`) | **697** | **33 KB** |
+| **合計** | **64,203** | **1.75 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -334,7 +334,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 `rules/` — エンジン挙動 (助数詞 / 文脈 / 後処理 等) を制御するルール群。 lib コードに embed されるのではなく、 ここで宣言的に外部化されている。
 
 <!-- AUTO-GENERATED:RULES:BEGIN -->
-**合計**: 696 エントリ / 798 ルール / 33 KB (genre 3 区分)
+**合計**: 697 エントリ / 799 ルール / 33 KB (genre 3 区分)
 
 #### 数値系
 
@@ -375,7 +375,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 
 | ファイル | エントリ数 | ルール数 | サイズ | 用途 |
 |---|---:|---:|---:|---|
-| [`rules/compat.toml`](rules/compat.toml) | 435 | 435 | 6.1 KB | 異体字 → 標準字の正規化マップ (髙→高 等、 lib Step 1 で入力テキストを正規化) |
+| [`rules/compat.toml`](rules/compat.toml) | 436 | 436 | 6.1 KB | 異体字 → 標準字の正規化マップ (髙→高 等、 lib Step 1 で入力テキストを正規化) |
 
 <!-- AUTO-GENERATED:RULES:END -->
 
@@ -400,7 +400,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 3249 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 3252 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -422,6 +422,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20260811_surname_suffix.toml`](tests/corpus/should_read/probe_20260811_surname_suffix.toml) | 28 |
 |  | [`tests/corpus/should_read/probe_20260828_bot_dict.toml`](tests/corpus/should_read/probe_20260828_bot_dict.toml) | 13 |
 |  | [`tests/corpus/should_read/probe_20260911_brands.toml`](tests/corpus/should_read/probe_20260911_brands.toml) | 32 |
+|  | [`tests/corpus/should_read/probe_20260911_compat_kai.toml`](tests/corpus/should_read/probe_20260911_compat_kai.toml) | 3 |
 |  | [`tests/corpus/should_read/probe_20260911_corpus7m.toml`](tests/corpus/should_read/probe_20260911_corpus7m.toml) | 9 |
 |  | [`tests/corpus/should_read/probe_20260911_domains.toml`](tests/corpus/should_read/probe_20260911_domains.toml) | 28 |
 |  | [`tests/corpus/should_read/probe_20260911_domains2.toml`](tests/corpus/should_read/probe_20260911_domains2.toml) | 34 |
