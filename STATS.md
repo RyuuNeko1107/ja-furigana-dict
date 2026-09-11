@@ -400,7 +400,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 3159 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 3163 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -427,6 +427,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20260911_domains3.toml`](tests/corpus/should_read/probe_20260911_domains3.toml) | 14 |
 |  | [`tests/corpus/should_read/probe_20260911_domains4.toml`](tests/corpus/should_read/probe_20260911_domains4.toml) | 23 |
 |  | [`tests/corpus/should_read/probe_20260911_final.toml`](tests/corpus/should_read/probe_20260911_final.toml) | 8 |
+|  | [`tests/corpus/should_read/probe_20260911_kana_suffix.toml`](tests/corpus/should_read/probe_20260911_kana_suffix.toml) | 4 |
 |  | [`tests/corpus/should_read/probe_20260911_kanji_flip26.toml`](tests/corpus/should_read/probe_20260911_kanji_flip26.toml) | 73 |
 |  | [`tests/corpus/should_read/probe_20260911_mahjong.toml`](tests/corpus/should_read/probe_20260911_mahjong.toml) | 37 |
 |  | [`tests/corpus/should_read/probe_20260911_mi_flip.toml`](tests/corpus/should_read/probe_20260911_mi_flip.toml) | 17 |
