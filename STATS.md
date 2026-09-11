@@ -24,14 +24,14 @@ git に commit されている master HEAD の状態を基準にする。
 | カテゴリ | エントリ数 | サイズ |
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,674** | **739 KB** |
-| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **17,415** | **676 KB** |
+| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **17,416** | **676 KB** |
 | [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,656** | **126 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **975** | **26 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,773** | **191 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **695** | **33 KB** |
-| **合計** | **64,188** | **1.75 MB** |
+| **合計** | **64,189** | **1.75 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -56,7 +56,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/jukugo/<genre>/*` — 手動 PR メンテのジャンル別 jukugo (≥ 2 字 surface)。 lib の Step 3 (jukugo lookup) で Lindera より優先採用。 各 genre dir の `_genre.toml` がカテゴリ description を持つ。
 
-**合計**: 17,415 件 / 676 KB (genre 6 区分)
+**合計**: 17,416 件 / 676 KB (genre 6 区分)
 
 #### 自然・生命
 
@@ -105,7 +105,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/jukugo/society/history.toml`](core/jukugo/society/history.toml) | 1,034 | 34 KB | 歴史用語 (日本史の制度 / 事件 / 文化概念) |
+| [`core/jukugo/society/history.toml`](core/jukugo/society/history.toml) | 1,035 | 34 KB | 歴史用語 (日本史の制度 / 事件 / 文化概念) |
 | [`core/jukugo/society/medicine.toml`](core/jukugo/society/medicine.toml) | 894 | 28 KB | 医学 / 医療 (病名 / 症状 / 解剖 / 処置の難読) |
 | [`core/jukugo/society/finance.toml`](core/jukugo/society/finance.toml) | 140 | 5.0 KB | 経済金融 (商品 / 市場 / 会計 / 税務 / 保険) |
 | [`core/jukugo/society/games.toml`](core/jukugo/society/games.toml) | 126 | 3.9 KB | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
@@ -117,7 +117,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/jukugo/society/politics.toml`](core/jukugo/society/politics.toml) | 10 | 883 B | 政治 / 行政 / 立法 / 司法 / 国際関係 |
 | [`core/jukugo/society/horse_racing.toml`](core/jukugo/society/horse_racing.toml) | 9 | 632 B | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
 | [`core/jukugo/society/fishing.toml`](core/jukugo/society/fishing.toml) | 8 | 631 B | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
-| **小計** (12 ファイル) | **2,517** | **88 KB** | |
+| **小計** (12 ファイル) | **2,518** | **88 KB** | |
 
 #### 固有名詞
 
@@ -320,7 +320,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 
 | ファイル | 文字数 | ルール数 | サイズ | 用途 |
 |---|---:|---:|---:|---|
-| [`core/kanji/overrides.toml`](core/kanji/overrides.toml) | 2,773 | 3,742 | 191 KB | 単漢字 default override + 文脈分岐 reading |
+| [`core/kanji/overrides.toml`](core/kanji/overrides.toml) | 2,773 | 3,743 | 191 KB | 単漢字 default override + 文脈分岐 reading |
 
 ### 異体字
 
@@ -400,7 +400,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 3212 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 3228 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -438,6 +438,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20260911_proper2.toml`](tests/corpus/should_read/probe_20260911_proper2.toml) | 32 |
 |  | [`tests/corpus/should_read/probe_20260911_proper3.toml`](tests/corpus/should_read/probe_20260911_proper3.toml) | 17 |
 |  | [`tests/corpus/should_read/probe_20260911_suffix_sweep.toml`](tests/corpus/should_read/probe_20260911_suffix_sweep.toml) | 9 |
+|  | [`tests/corpus/should_read/probe_20260911_vv_round2.toml`](tests/corpus/should_read/probe_20260911_vv_round2.toml) | 16 |
 |  | [`tests/corpus/should_read/probe_20260911_vvcompare.toml`](tests/corpus/should_read/probe_20260911_vvcompare.toml) | 22 |
 |  | [`tests/corpus/should_read/regression.toml`](tests/corpus/should_read/regression.toml) | 548 |
 |  | [`tests/corpus/should_read/sentences.toml`](tests/corpus/should_read/sentences.toml) | 49 |
