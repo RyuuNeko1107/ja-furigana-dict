@@ -121,3 +121,75 @@ input = "新政府"
 mode = "hiragana"
 expected = "しんせいふ"
 note = "同上"
+
+[[case]]
+input = "伊佐美"
+mode = "hiragana"
+expected = "いさみ"
+note = "焼酎 (旧 いさび)"
+
+[[case]]
+input = "兼八"
+mode = "hiragana"
+expected = "かねはち"
+note = "焼酎 (旧 けんはち)"
+
+[[case]]
+input = "富乃宝山"
+mode = "hiragana"
+expected = "とみのほうざん"
+note = "焼酎 (旧 ふのたからやま)"
+
+[[case]]
+input = "一刻者"
+mode = "hiragana"
+expected = "いっこくもん"
+note = "焼酎 (旧 いっこくしゃ)"
+
+[[case]]
+input = "泡波"
+mode = "hiragana"
+expected = "あわなみ"
+note = "泡盛 (旧 あわは)"
+
+[[case]]
+input = "菊之露"
+mode = "hiragana"
+expected = "きくのつゆ"
+note = "泡盛 (旧 きくのろ)"
+
+[[case]]
+input = "残波"
+mode = "hiragana"
+expected = "ざんぱ"
+note = "泡盛 (旧 ざんは)"
+
+[[case]]
+input = "千代泉"
+mode = "hiragana"
+expected = "ちよいずみ"
+note = "泡盛 (旧 ちよせん)"
+
+[[case]]
+input = "玉友"
+mode = "hiragana"
+expected = "ぎょくゆう"
+note = "泡盛 (旧 たまとも)"
+
+[[case]]
+input = "龍宮"
+mode = "hiragana"
+expected = "りゅうぐう"
+note = "焼酎/竜宮 (旧 りゅうきゅう)"
+
+[[case]]
+input = "琉球"
+mode = "hiragana"
+expected = "りゅうきゅう"
+note = "龍宮 と混同しないこと"
+
+[[case]]
+input = "蕎麦焼酎"
+mode = "hiragana"
+expected = "そばじょうちゅう"
+note = "連濁 (旧 そばしょうちゅう)"
