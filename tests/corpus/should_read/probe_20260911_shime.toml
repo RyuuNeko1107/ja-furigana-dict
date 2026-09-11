@@ -1,0 +1,39 @@
+# 2026-09-11 出力異常の全量走査から: 〆 (U+3006) は漢字 range 外なので
+# [[kanji]] block では拾えず、 「〆る / 〆で / 〆に」 が読まれず素通りしていた。
+# symbols.toml に シメ を追加。 実コーパス 704 万行で 197 行改善、 顔文字の誤爆 0。
+
+[[case]]
+input = "〆"
+mode = "hiragana"
+expected = "しめ"
+note = "記号 U+3006 に読みを付与 (旧 素通り)"
+
+[[case]]
+input = "〆る"
+mode = "hiragana"
+expected = "しめる"
+note = "同上"
+
+[[case]]
+input = "〆の雑炊"
+mode = "hiragana"
+expected = "しめのぞうすい"
+note = "同上"
+
+[[case]]
+input = "〆切"
+mode = "hiragana"
+expected = "しめきり"
+note = "熟語は entry で固定 (記号+単漢字の合成に負けないこと)"
+
+[[case]]
+input = "〆切り"
+mode = "hiragana"
+expected = "しめきり"
+note = "同上"
+
+[[case]]
+input = "〆鯖"
+mode = "hiragana"
+expected = "しめさば"
+note = "記号 + 漢字の合成"
