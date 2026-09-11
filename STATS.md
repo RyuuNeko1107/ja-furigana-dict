@@ -24,14 +24,14 @@ git に commit されている master HEAD の状態を基準にする。
 | カテゴリ | エントリ数 | サイズ |
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,674** | **739 KB** |
-| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **17,424** | **676 KB** |
+| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **17,428** | **676 KB** |
 | [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,656** | **126 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **975** | **26 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,773** | **191 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
-| [**エンジンルール**](#エンジンルール) (`rules/`) | **695** | **33 KB** |
-| **合計** | **64,197** | **1.75 MB** |
+| [**エンジンルール**](#エンジンルール) (`rules/`) | **696** | **33 KB** |
+| **合計** | **64,202** | **1.75 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -56,7 +56,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/jukugo/<genre>/*` — 手動 PR メンテのジャンル別 jukugo (≥ 2 字 surface)。 lib の Step 3 (jukugo lookup) で Lindera より優先採用。 各 genre dir の `_genre.toml` がカテゴリ description を持つ。
 
-**合計**: 17,424 件 / 676 KB (genre 6 区分)
+**合計**: 17,428 件 / 676 KB (genre 6 区分)
 
 #### 自然・生命
 
@@ -145,11 +145,11 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/jukugo/objects/architecture.toml`](core/jukugo/objects/architecture.toml) | 417 | 14 KB | 建築 / 建造物 / 寺社建築 / 城郭 / 庭園 |
 | [`core/jukugo/objects/colors.toml`](core/jukugo/objects/colors.toml) | 414 | 13 KB | 色名 / 染色 / 模様 / 古典色 / 鉱物色 |
 | [`core/jukugo/objects/weapons.toml`](core/jukugo/objects/weapons.toml) | 402 | 13 KB | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
-| [`core/jukugo/objects/tools.toml`](core/jukugo/objects/tools.toml) | 269 | 7.9 KB | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
+| [`core/jukugo/objects/tools.toml`](core/jukugo/objects/tools.toml) | 273 | 8.0 KB | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
 | [`core/jukugo/objects/vehicles.toml`](core/jukugo/objects/vehicles.toml) | 177 | 5.7 KB | 乗り物 / 交通手段 / 船舶 / 航空 / 鉄道 |
 | [`core/jukugo/objects/clothes.toml`](core/jukugo/objects/clothes.toml) | 90 | 2.8 KB | 衣服 / 装束 / アクセサリー / 履物 |
 | [`core/jukugo/objects/railway.toml`](core/jukugo/objects/railway.toml) | 13 | 854 B | 鉄道専門用語 (線路 / 駅 / 運行 / 車両) |
-| **小計** (7 ファイル) | **1,782** | **57 KB** | |
+| **小計** (7 ファイル) | **1,786** | **57 KB** | |
 
 #### 基本・構造
 
@@ -334,7 +334,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 `rules/` — エンジン挙動 (助数詞 / 文脈 / 後処理 等) を制御するルール群。 lib コードに embed されるのではなく、 ここで宣言的に外部化されている。
 
 <!-- AUTO-GENERATED:RULES:BEGIN -->
-**合計**: 695 エントリ / 797 ルール / 33 KB (genre 3 区分)
+**合計**: 696 エントリ / 798 ルール / 33 KB (genre 3 区分)
 
 #### 数値系
 
@@ -365,9 +365,9 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 | ファイル | エントリ数 | ルール数 | サイズ | 用途 |
 |---|---:|---:|---:|---|
 | [`rules/text/units.toml`](rules/text/units.toml) | 17 | 17 | 813 B | SI 単位 + 通貨 + % (km / kg / mL / 円 / % 等、 数値 + 単位を 1 chunk で読む。 lookup は case-insensitive) |
-| [`rules/text/symbols.toml`](rules/text/symbols.toml) | 10 | 10 | 386 B | 記号 1 文字読み (+ / − / % / ‰ / 〜 / ・ / ※ 等、 chunks/split() の symbols 階層で個別 hit) |
+| [`rules/text/symbols.toml`](rules/text/symbols.toml) | 11 | 11 | 403 B | 記号 1 文字読み (+ / − / % / ‰ / 〜 / ・ / ※ 等、 chunks/split() の symbols 階層で個別 hit) |
 | [`rules/text/postprocess.toml`](rules/text/postprocess.toml) | 2 | 2 | 325 B | 出力後処理 regex (Step 7、 mode 別: hiragana / ruby / tts / romaji の出力直前に適用) |
-| **小計** (3 ファイル) | **29** | **29** | **1.5 KB** | |
+| **小計** (3 ファイル) | **30** | **30** | **1.5 KB** | |
 
 #### (直下)
 
@@ -400,7 +400,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 3243 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 3249 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -438,6 +438,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20260911_proper2.toml`](tests/corpus/should_read/probe_20260911_proper2.toml) | 32 |
 |  | [`tests/corpus/should_read/probe_20260911_proper3.toml`](tests/corpus/should_read/probe_20260911_proper3.toml) | 17 |
 |  | [`tests/corpus/should_read/probe_20260911_scale_unit.toml`](tests/corpus/should_read/probe_20260911_scale_unit.toml) | 7 |
+|  | [`tests/corpus/should_read/probe_20260911_shime.toml`](tests/corpus/should_read/probe_20260911_shime.toml) | 6 |
 |  | [`tests/corpus/should_read/probe_20260911_suffix_sweep.toml`](tests/corpus/should_read/probe_20260911_suffix_sweep.toml) | 9 |
 |  | [`tests/corpus/should_read/probe_20260911_vv_round2.toml`](tests/corpus/should_read/probe_20260911_vv_round2.toml) | 16 |
 |  | [`tests/corpus/should_read/probe_20260911_vv_round3.toml`](tests/corpus/should_read/probe_20260911_vv_round3.toml) | 8 |
