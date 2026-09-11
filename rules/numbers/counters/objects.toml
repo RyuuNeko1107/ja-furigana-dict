@@ -920,3 +920,56 @@ kanji_numeral = true
 specials = { "1" = "ヒトキレ", "2" = "フタキレ" }
 # === end: 切れ ===
 
+# === begin: 試合 / 回戦 / 打席 / 打数 / 安打 / 三振 / 巡 / 順 / 球 ===
+# ★2026-09-11: 「X目」 は recursive.toml で 「<助数詞>解決後に メ を連結」 する仕様なので、
+# 元の助数詞が未登録だと 3試合目 → さんしあい"もく" のように 目 が音読みに落ちる。
+# 野球 / ゲーム実況で頻出する複合助数詞を counter として登録する。
+[counter."試合"]
+default = "シアイ"
+kanji_numeral = true
+
+[counter."回戦"]
+default = "カイセン"
+kanji_numeral = true
+
+[[counter."回戦".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カイセン"
+sokuonize = true   # 一回戦 = イッカイセン / 六回戦 = ロッカイセン
+
+[counter."打席"]
+default = "ダセキ"
+kanji_numeral = true
+
+[counter."打数"]
+default = "ダスウ"
+kanji_numeral = true
+
+[counter."安打"]
+default = "アンダ"
+kanji_numeral = true
+
+[counter."三振"]
+default = "サンシン"
+kanji_numeral = true
+
+[counter."巡"]
+default = "ジュン"
+kanji_numeral = true
+
+[counter."順"]
+default = "ジュン"
+kanji_numeral = true
+
+[counter."球"]
+default = "キュウ"
+kanji_numeral = false  # 「四球 (シキュウ) / 死球 / 三球三振」 のような熟語を
+# 漢数字 + 助数詞 と誤認して よんきゅう にするため、 漢数字 bare は意図的に無効
+# (★2026-09-11 実コーパス A/B で検出)。
+
+[[counter."球".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "キュウ"
+sokuonize = true
+# === end: 試合 / 回戦 / 打席 / 打数 / 安打 / 三振 / 巡 / 順 / 球 ===
+

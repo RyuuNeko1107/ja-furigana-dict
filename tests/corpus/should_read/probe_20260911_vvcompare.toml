@@ -1,0 +1,136 @@
+# 2026-09-11 VOICEVOX 比較 (実コーパス 25,000 文) + 未登録 token 14,880 語の比較で検出。
+# 複合助数詞 (試合/回戦/打席/打数/安打/三振/巡/順/球) を counter に登録したことで
+# 「N<助数詞>目」 が recursive rule で正しく メ になる。
+# ★球 だけは kanji_numeral=false (= 漢数字 bare 無効)。 四球=シキュウ を壊さないため。
+
+[[case]]
+input = "3試合目"
+mode = "hiragana"
+expected = "さんしあいめ"
+note = "複合助数詞 (旧 さんしあいもく)"
+
+[[case]]
+input = "2回戦目"
+mode = "hiragana"
+expected = "にかいせんめ"
+note = "同上"
+
+[[case]]
+input = "3打席目"
+mode = "hiragana"
+expected = "さんだせきめ"
+note = "同上"
+
+[[case]]
+input = "一巡目"
+mode = "hiragana"
+expected = "いちじゅんめ"
+note = "同上"
+
+[[case]]
+input = "3球目"
+mode = "hiragana"
+expected = "さんきゅうめ"
+note = "同上"
+
+[[case]]
+input = "1回戦"
+mode = "hiragana"
+expected = "いっかいせん"
+note = "回戦 counter 促音化"
+
+[[case]]
+input = "六回戦"
+mode = "hiragana"
+expected = "ろっかいせん"
+note = "同上"
+
+[[case]]
+input = "四球"
+mode = "hiragana"
+expected = "しきゅう"
+note = "★球 counter の kanji_numeral を無効にした退行ロック"
+
+[[case]]
+input = "死球"
+mode = "hiragana"
+expected = "しきゅう"
+note = "同上"
+
+[[case]]
+input = "三球三振"
+mode = "hiragana"
+expected = "さんきゅうさんしん"
+note = "同上"
+
+[[case]]
+input = "1球"
+mode = "hiragana"
+expected = "いっきゅう"
+note = "球 counter (算用数字)"
+
+[[case]]
+input = "自分勝手"
+mode = "hiragana"
+expected = "じぶんかって"
+note = "VV比較 (旧 じぶんがって)"
+
+[[case]]
+input = "あほ毛"
+mode = "hiragana"
+expected = "あほげ"
+note = "VV比較 連濁 (旧 あほけ)"
+
+[[case]]
+input = "うさん臭さ"
+mode = "hiragana"
+expected = "うさんくささ"
+note = "VV比較 (旧 うさんしゅうさ)"
+
+[[case]]
+input = "指立て伏せ"
+mode = "hiragana"
+expected = "ゆびたてふせ"
+note = "VV比較 (旧 ゆびだてふせ)"
+
+[[case]]
+input = "読み込み中"
+mode = "hiragana"
+expected = "よみこみちゅう"
+note = "VV比較 (旧 よみこみなか)"
+
+[[case]]
+input = "居すぎて"
+mode = "hiragana"
+expected = "いすぎて"
+note = "VV比較 (旧 きょすぎて)"
+
+[[case]]
+input = "居場所"
+mode = "hiragana"
+expected = "いばしょ"
+note = "居 の訓側 退行ロック"
+
+[[case]]
+input = "難関程"
+mode = "hiragana"
+expected = "なんかんほど"
+note = "程 の副助詞用法 (旧 なんかんてい)"
+
+[[case]]
+input = "程度"
+mode = "hiragana"
+expected = "ていど"
+note = "程 の音読み側 退行ロック"
+
+[[case]]
+input = "行程"
+mode = "hiragana"
+expected = "こうてい"
+note = "同上"
+
+[[case]]
+input = "課程"
+mode = "hiragana"
+expected = "かてい"
+note = "同上"
