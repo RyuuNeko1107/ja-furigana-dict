@@ -1,0 +1,171 @@
+# 2026-09-11 読み上げ BOT (zunda-rs) 誤読報告 (misreading_reports) 起点の probe。
+# 麻雀部 Discord からの報告 9 件 + ついでの麻雀用語一括採録。
+# 一般語と衝突する語 (平和/国士無双/清一色/天和/東風 単独) は据え置き = その据え置きも lock。
+
+[[case]]
+input = "麻雀部"
+mode = "hiragana"
+expected = "まーじゃんぶ"
+note = "BOT 誤読報告 (旧 あさささべ)"
+
+[[case]]
+input = "麻雀部に入った"
+mode = "hiragana"
+expected = "まーじゃんぶにはいった"
+note = "分割誤読の文脈 lock"
+
+[[case]]
+input = "酷かったです"
+mode = "hiragana"
+expected = "ひどかったです"
+note = "BOT 誤読報告 (旧 むごかった)"
+
+[[case]]
+input = "酷かろう"
+mode = "hiragana"
+expected = "ひどかろう"
+note = "同上 未然形"
+
+[[case]]
+input = "縁がある"
+mode = "hiragana"
+expected = "えんがある"
+note = "BOT 誤読報告 (旧 ふちがある)"
+
+[[case]]
+input = "縁を感じる"
+mode = "hiragana"
+expected = "えんをかんじる"
+note = "同上"
+
+[[case]]
+input = "コップの縁が欠けた"
+mode = "hiragana"
+expected = "コップのふちがかけた"
+note = "ふちは prev=の の時だけ (退行ロック)"
+
+[[case]]
+input = "四暗刻"
+mode = "hiragana"
+expected = "すーあんこー"
+note = "麻雀役 (旧 よんあんこく)"
+
+[[case]]
+input = "銅の間"
+mode = "hiragana"
+expected = "どうのま"
+note = "雀魂 段位部屋 (旧 どうのあいだ)"
+
+[[case]]
+input = "東風戦"
+mode = "hiragana"
+expected = "とんぷうせん"
+note = "麻雀 (東風 単独は一般語 こち 据え置き)"
+
+[[case]]
+input = "清一色"
+mode = "hiragana"
+expected = "せいいっしょく"
+note = "一般語読みを維持 (麻雀 チンイーソー は採らない)"
+
+[[case]]
+input = "想い出"
+mode = "hiragana"
+expected = "おもいで"
+note = "報告されたが元から正読 (却下 lock)"
+
+[[case]]
+input = "立直"
+mode = "hiragana"
+expected = "りーち"
+note = "麻雀 (旧 たちなお)"
+
+[[case]]
+input = "副露"
+mode = "hiragana"
+expected = "ふーろ"
+note = "麻雀 (旧 ふくろ)"
+
+[[case]]
+input = "順子"
+mode = "hiragana"
+expected = "しゅんつ"
+note = "麻雀 (旧 じゅんこ)"
+
+[[case]]
+input = "刻子"
+mode = "hiragana"
+expected = "こーつ"
+note = "麻雀 (旧 こくし)"
+
+[[case]]
+input = "七対子"
+mode = "hiragana"
+expected = "ちーといつ"
+note = "麻雀 (旧 しったいし)"
+
+[[case]]
+input = "対々和"
+mode = "hiragana"
+expected = "といといほー"
+note = "麻雀 (旧 たいだいわ)"
+
+[[case]]
+input = "混一色"
+mode = "hiragana"
+expected = "ほんいーそー"
+note = "麻雀 (旧 こんいつしょく)"
+
+[[case]]
+input = "嶺上開花"
+mode = "hiragana"
+expected = "りんしゃんかいほう"
+note = "麻雀 (旧 みねうえかいか)"
+
+[[case]]
+input = "自摸"
+mode = "hiragana"
+expected = "つも"
+note = "麻雀 (旧 じさぐる)"
+
+[[case]]
+input = "振聴"
+mode = "hiragana"
+expected = "ふりてん"
+note = "麻雀 (旧 しんちょう)"
+
+[[case]]
+input = "雀卓"
+mode = "hiragana"
+expected = "じゃんたく"
+note = "麻雀 (旧 すずめたく)"
+
+[[case]]
+input = "雀頭"
+mode = "hiragana"
+expected = "じゃんとう"
+note = "麻雀 (旧 すずめとう)"
+
+[[case]]
+input = "責任払い"
+mode = "hiragana"
+expected = "せきにんばらい"
+note = "連濁 (旧 せきにんはらい)"
+
+[[case]]
+input = "平和"
+mode = "hiragana"
+expected = "へいわ"
+note = "麻雀 ピンフ は採らない (一般語維持)"
+
+[[case]]
+input = "国士無双"
+mode = "hiragana"
+expected = "こくしむそう"
+note = "一般語読み維持"
+
+[[case]]
+input = "天和"
+mode = "hiragana"
+expected = "てんな"
+note = "元号優先 (麻雀 テンホー は採らない)"

@@ -216,3 +216,9 @@ python tools/list_dups.py
 - **Immutable Releases 設定 OFF** (alpha.7 経緯)、 stable cut 時に ON 推奨
 - **CI auto-merge**: dependabot PR + 特定 label PR が auto-merge 対象
 - **author email**: `mail@ryuuneko.com` (個人 gmail を直書きしない方針)
+- **`core/jukugo/basic/general.toml` (8,961 行) は新規 entry を追加しない**: 過去の batch 追記が
+  分野判定を省いて general に投げ込まれ続けた結果肥大化した (政治/医療/軍事/スポーツ/動植物 等、
+  本来 `humanities/nature/objects/proper/society` の既存 genre file に属する内容が多数混在)。
+  新規 jukugo entry は追加前に該当する genre sub-dir (`core/jukugo/<genre>/*.toml`) を確認し、
+  分類先が無ければ `core/_inbox.toml` に置いて後で仕分ける。 general.toml 自体の遡及的な
+  再分配 (既存 8,961 行の genre 移動) は費用対効果が低いとして見送り済 (2026-08-28 判断)

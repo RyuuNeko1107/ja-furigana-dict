@@ -402,8 +402,8 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/_archive_20260618.toml`](tests/corpus/should_read/_archive_20260618.toml) | 178 |
 |  | [`tests/corpus/should_read/_archive_20260619.toml`](tests/corpus/should_read/_archive_20260619.toml) | 943 |
 |  | [`tests/corpus/should_read/_archive_20260620.toml`](tests/corpus/should_read/_archive_20260620.toml) | 376 |
+|  | [`tests/corpus/should_read/corpus_20260612.toml`](tests/corpus/should_read/corpus_20260612.toml) | 39 |
 |  | [`tests/corpus/should_read/corpus_20260613.toml`](tests/corpus/should_read/corpus_20260613.toml) | 6 |
-|  | [`tests/corpus/should_read/corpus_2026_06_12.toml`](tests/corpus/should_read/corpus_2026_06_12.toml) | 39 |
 |  | [`tests/corpus/should_read/counter_kanji_numeral_20260617.toml`](tests/corpus/should_read/counter_kanji_numeral_20260617.toml) | 13 |
 |  | [`tests/corpus/should_read/extended.toml`](tests/corpus/should_read/extended.toml) | 94 |
 |  | [`tests/corpus/should_read/general.toml`](tests/corpus/should_read/general.toml) | 69 |
