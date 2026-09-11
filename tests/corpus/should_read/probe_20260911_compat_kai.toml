@@ -1,0 +1,20 @@
+# 2026-09-11 全モード出力検査 (tts / romaji / ruby) から。
+# ruby の空 ruby group は lib 側で修正 (202,780 行)。 ここでは異体字 迴 の compat 追加分。
+
+[[case]]
+input = "迴避"
+mode = "hiragana"
+expected = "かいひ"
+note = "異体字 迴→回 (旧 迴ひ)"
+
+[[case]]
+input = "回避"
+mode = "hiragana"
+expected = "かいひ"
+note = "退行ロック"
+
+[[case]]
+input = "輪廻"
+mode = "hiragana"
+expected = "りんね"
+note = "廻 は別字として維持"
