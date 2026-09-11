@@ -148,7 +148,11 @@ reading = "コク"
 
 [[kanji]]
 char = "風"
+# default はフウ据え置き (★2026-09-11: 訓 flip を試したが 「長澤まさみ風」 「アニソン風」 の
+# ような **接尾辞 X風 = フウ** が主用法で、 ひらがな隣接を かぜ にすると誤爆する。
+# 「風が/風を」 等の名詞用法は下の助詞 match で拾う)。
 default = "フウ"
+
 
 # prev 漢字 = フウ (中華風/和風/洋風/中国風 等 style suffix、 next=の/が で かぜ 化を防ぐ)。
 # 訓カゼ jukugo (北風/夜風/海風/山風) は band 1000 で override されるため非干渉。
@@ -5633,7 +5637,19 @@ default = "ショク"
 
 [[kanji]]
 char = "樹"
-default = "ジュ"
+# ★2026-09-11 flip: default を音 ジュ → 訓 き へ。 単独 surface や 「この樹」
+# 「大きい樹」 のような ひらがな隣接で音読みに落ちていた。 音読みは漢字
+# (樹と連結する熟語) の時だけなので char_type match で拾う (帯 / 身 と同型)。
+default = "き"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ジュ"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "ジュ"
+
 
 # 「樹は / 樹が / 樹を / 樹に / 樹の / 樹で 等」 単独訓「き」 (= jukugo 樹木/樹立 等は band 100)
 [[kanji.match]]
@@ -6184,7 +6200,19 @@ default = "イ"
 
 [[kanji]]
 char = "蓋"
-default = "ガイ"
+# ★2026-09-11 flip: default を音 ガイ → 訓 ふた へ。 単独 surface や 「この蓋」
+# 「大きい蓋」 のような ひらがな隣接で音読みに落ちていた。 音読みは漢字
+# (蓋と連結する熟語) の時だけなので char_type match で拾う (帯 / 身 と同型)。
+default = "ふた"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ガイ"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "ガイ"
+
 
 # 「蓋は / 蓋が / 蓋を / 蓋に / 蓋の / 蓋で / 蓋と / 蓋も」 = 名詞用法、 訓「ふた」
 [[kanji.match]]
@@ -9036,7 +9064,19 @@ default = "ヤ"
 # 動詞 「庇う」 は okurigana 列挙で 「かば」 へ切替
 [[kanji]]
 char = "庇"
-default = "ヒ"
+# ★2026-09-11 flip: default を音 ヒ → 訓 ひさし へ。 単独 surface や 「この庇」
+# 「大きい庇」 のような ひらがな隣接で音読みに落ちていた。 音読みは漢字
+# (庇と連結する熟語) の時だけなので char_type match で拾う (帯 / 身 と同型)。
+default = "ひさし"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ヒ"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "ヒ"
+
 
 # 「庇う/庇わない/庇った/庇って/庇えば/庇おう」 = 動詞 → かば
 [[kanji.match]]
@@ -10447,7 +10487,19 @@ default = "コウ"
 # unihan default 「すみ」 は名詞単独、 「炭火/炭焼き」 は jukugo 個別
 [[kanji]]
 char = "炭"
-default = "タン"
+# ★2026-09-11 flip: default を音 タン → 訓 すみ へ。 単独 surface や 「この炭」
+# 「大きい炭」 のような ひらがな隣接で音読みに落ちていた。 音読みは漢字
+# (炭と連結する熟語) の時だけなので char_type match で拾う (帯 / 身 と同型)。
+default = "すみ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "タン"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "タン"
+
 
 # 「炭は / 炭が / 炭を / 炭に / 炭の / 炭で / 炭と / 炭も」 = 名詞用法、 訓「すみ」
 [[kanji.match]]
@@ -11384,7 +11436,19 @@ reading = "ジョウ"
 
 [[kanji]]
 char = "基"
-default = "キ"
+# ★2026-09-11 flip: default を音 キ → 訓 もと へ。 単独 surface や 「この基」
+# 「大きい基」 のような ひらがな隣接で音読みに落ちていた。 音読みは漢字
+# (基と連結する熟語) の時だけなので char_type match で拾う (帯 / 身 と同型)。
+default = "もと"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "キ"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "キ"
+
 
 # 「基づく/基づい/基づける」 = 動詞 → もと
 [[kanji.match]]
@@ -11570,7 +11634,19 @@ default = "たから"
 # 単独 + 助詞接続 → 「みや」 (= 「宮が/宮の」 等)
 [[kanji]]
 char = "宮"
-default = "キュウ"
+# ★2026-09-11 flip: default を音 キュウ → 訓 みや へ。 単独 surface や 「この宮」
+# 「大きい宮」 のような ひらがな隣接で音読みに落ちていた。 音読みは漢字
+# (宮と連結する熟語) の時だけなので char_type match で拾う (帯 / 身 と同型)。
+default = "みや"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "キュウ"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "キュウ"
+
 
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
@@ -11609,7 +11685,19 @@ reading = "ミ"
 # 動詞 「嫁ぐ」 → 「とつ」、 単独 + 助詞 → 「よめ」
 [[kanji]]
 char = "嫁"
-default = "カ"
+# ★2026-09-11 flip: default を音 カ → 訓 よめ へ。 単独 surface や 「この嫁」
+# 「大きい嫁」 のような ひらがな隣接で音読みに落ちていた。 音読みは漢字
+# (嫁と連結する熟語) の時だけなので char_type match で拾う (帯 / 身 と同型)。
+default = "よめ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "カ"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "カ"
+
 
 [[kanji.match]]
 next_starts_any = ["ぐ", "ぎ", "い", "げ", "ご"]
@@ -11688,7 +11776,19 @@ reading = "ジョ"
 # 単独 + 助詞接続 → 「ばば」 (= 「お婆さん」 等は jukugo)
 [[kanji]]
 char = "婆"
-default = "バ"
+# ★2026-09-11 flip: default を音 バ → 訓 ばば へ。 単独 surface や 「この婆」
+# 「大きい婆」 のような ひらがな隣接で音読みに落ちていた。 音読みは漢字
+# (婆と連結する熟語) の時だけなので char_type match で拾う (帯 / 身 と同型)。
+default = "ばば"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "バ"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "バ"
+
 
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
@@ -11743,7 +11843,19 @@ reading = "サ"
 
 [[kanji]]
 char = "布"
-default = "フ"
+# ★2026-09-11 flip: default を音 フ → 訓 ぬの へ。 単独 surface や 「この布」
+# 「大きい布」 のような ひらがな隣接で音読みに落ちていた。 音読みは漢字
+# (布と連結する熟語) の時だけなので char_type match で拾う (帯 / 身 と同型)。
+default = "ぬの"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "フ"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "フ"
+
 
 [[kanji.match]]
 prev_char_type = "漢字"
@@ -11799,7 +11911,23 @@ default = "セキ"
 # 単独 + 助詞接続 → 「かたまり」 (= 「塊が/塊の」 等)
 [[kanji]]
 char = "塊"
-default = "カイ"
+# ★2026-09-11 flip: default を音 カイ → 訓 かたまり へ。 単独 surface や 「この塊」
+# 「大きい塊」 のような ひらがな隣接で音読みに落ちていた。 音読みは漢字
+# (塊と連結する熟語) の時だけなので char_type match で拾う (帯 / 身 と同型)。
+default = "かたまり"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "カイ"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "カイ"
+
+[[kanji.match]]
+prev_char_type = "カタカナ"
+reading = "カイ"
+
 
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
@@ -11998,7 +12126,19 @@ default = "まご"
 # 単独 + 助詞接続 → 「おっと」 (= 「夫が/夫の」 等)
 [[kanji]]
 char = "夫"
-default = "フ"
+# ★2026-09-11 flip: default を音 フ → 訓 おっと へ。 単独 surface や 「この夫」
+# 「大きい夫」 のような ひらがな隣接で音読みに落ちていた。 音読みは漢字
+# (夫と連結する熟語) の時だけなので char_type match で拾う (帯 / 身 と同型)。
+default = "おっと"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "フ"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "フ"
+
 
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
@@ -12214,7 +12354,19 @@ default = "ワン"
 # 単独 + 助詞接続 → 「かわ」 (= 「河が/河の」 等)
 [[kanji]]
 char = "河"
-default = "カ"
+# ★2026-09-11 flip: default を音 カ → 訓 かわ へ。 単独 surface や 「この河」
+# 「大きい河」 のような ひらがな隣接で音読みに落ちていた。 音読みは漢字
+# (河と連結する熟語) の時だけなので char_type match で拾う (帯 / 身 と同型)。
+default = "かわ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "カ"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "カ"
+
 
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
@@ -12534,7 +12686,19 @@ default = "いき"
 # 動詞 「懐く/懐かしい」 → 「なつ」、 単独 + 助詞 → 「ふところ」
 [[kanji]]
 char = "懐"
-default = "カイ"
+# ★2026-09-11 flip: default を音 カイ → 訓 ふところ へ。 単独 surface や 「この懐」
+# 「大きい懐」 のような ひらがな隣接で音読みに落ちていた。 音読みは漢字
+# (懐と連結する熟語) の時だけなので char_type match で拾う (帯 / 身 と同型)。
+default = "ふところ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "カイ"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "カイ"
+
 
 [[kanji.match]]
 next_starts_any = ["く", "か", "き", "っ", "け", "こ"]
@@ -12630,7 +12794,23 @@ reading = "シュン"
 
 [[kanji]]
 char = "星"
-default = "セイ"
+# ★2026-09-11 flip: default を音 セイ → 訓 ほし へ。 単独 surface や 「この星」
+# 「大きい星」 のような ひらがな隣接で音読みに落ちていた。 音読みは漢字
+# (星と連結する熟語) の時だけなので char_type match で拾う (帯 / 身 と同型)。
+default = "ほし"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "セイ"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "セイ"
+
+[[kanji.match]]
+prev_char_type = "カタカナ"
+reading = "セイ"
+
 
 [[kanji.match]]
 prev_char_type = "漢字"
@@ -12705,7 +12885,19 @@ default = "ひま"
 # 単独 + 助詞接続 → 「と」 (= 「戸が/戸の」 等)
 [[kanji]]
 char = "戸"
-default = "コ"
+# ★2026-09-11 flip: default を音 コ → 訓 と へ。 単独 surface や 「この戸」
+# 「大きい戸」 のような ひらがな隣接で音読みに落ちていた。 音読みは漢字
+# (戸と連結する熟語) の時だけなので char_type match で拾う (帯 / 身 と同型)。
+default = "と"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "コ"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "コ"
+
 
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
@@ -12845,7 +13037,19 @@ reading = "ひがし"
 # 単独 + 助詞接続 → 「たば」 (= 「束が/束の」 等)
 [[kanji]]
 char = "束"
-default = "ソク"
+# ★2026-09-11 flip: default を音 ソク → 訓 たば へ。 単独 surface や 「この束」
+# 「大きい束」 のような ひらがな隣接で音読みに落ちていた。 音読みは漢字
+# (束と連結する熟語) の時だけなので char_type match で拾う (帯 / 身 と同型)。
+default = "たば"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ソク"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "ソク"
+
 
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
@@ -12939,7 +13143,19 @@ default = "もり"
 # 単独 + 助詞接続 → 「はば」 (= 「幅」 と同義、 「巾が/巾の」 等)
 [[kanji]]
 char = "巾"
-default = "キン"
+# ★2026-09-11 flip: default を音 キン → 訓 はば へ。 単独 surface や 「この巾」
+# 「大きい巾」 のような ひらがな隣接で音読みに落ちていた。 音読みは漢字
+# (巾と連結する熟語) の時だけなので char_type match で拾う (帯 / 身 と同型)。
+default = "はば"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "キン"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "キン"
+
 
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
@@ -13008,7 +13224,24 @@ default = "け"
 # 単独 + 助詞接続 → 「うじ」 (= 「氏が/氏の」 等)
 [[kanji]]
 char = "氏"
-default = "シ"
+# ★2026-09-11 flip: default を音 シ → 訓 うじ へ。 単独 surface や 「この氏」
+# 「大きい氏」 のような ひらがな隣接で音読みに落ちていた。 音読みは漢字
+# (氏と連結する熟語) の時だけなので char_type match で拾う (帯 / 身 と同型)。
+default = "うじ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "シ"
+
+# カタカナ人名 + 氏 (= トランプ氏 / マスク氏) も敬称 シ
+[[kanji.match]]
+prev_char_type = "カタカナ"
+reading = "シ"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "シ"
+
 
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
@@ -13071,7 +13304,19 @@ default = "あわ"
 # 単独 + 助詞接続 → 「しぶ」 (= 「渋が/渋の」 等)
 [[kanji]]
 char = "渋"
-default = "ジュウ"
+# ★2026-09-11 flip: default を音 ジュウ → 訓 しぶ へ。 単独 surface や 「この渋」
+# 「大きい渋」 のような ひらがな隣接で音読みに落ちていた。 音読みは漢字
+# (渋と連結する熟語) の時だけなので char_type match で拾う (帯 / 身 と同型)。
+default = "しぶ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ジュウ"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "ジュウ"
+
 
 # 「渋は / 渋が / 渋を / 渋に / 渋の / 渋い / 渋く / 渋さ / 渋み」 名詞・形容詞 = 訓「しぶ」
 [[kanji.match]]
@@ -13093,7 +13338,19 @@ default = "イン"
 # 単独 + 助詞接続 → 「さわ」 (= 「沢が/沢の」 等)
 [[kanji]]
 char = "沢"
-default = "タク"
+# ★2026-09-11 flip: default を音 タク → 訓 さわ へ。 単独 surface や 「この沢」
+# 「大きい沢」 のような ひらがな隣接で音読みに落ちていた。 音読みは漢字
+# (沢と連結する熟語) の時だけなので char_type match で拾う (帯 / 身 と同型)。
+default = "さわ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "タク"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "タク"
+
 
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
@@ -13126,7 +13383,19 @@ default = "ジュン"
 # 単独 + 助詞接続 → 「みなもと」 (= 「源が/源の」 等)
 [[kanji]]
 char = "源"
-default = "ゲン"
+# ★2026-09-11 flip: default を音 ゲン → 訓 みなもと へ。 単独 surface や 「この源」
+# 「大きい源」 のような ひらがな隣接で音読みに落ちていた。 音読みは漢字
+# (源と連結する熟語) の時だけなので char_type match で拾う (帯 / 身 と同型)。
+default = "みなもと"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ゲン"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "ゲン"
+
 
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
@@ -13150,7 +13419,19 @@ default = "うるし"
 # 単独 + 助詞接続 → 「いずみ」 (= 「泉が/泉の」 等)
 [[kanji]]
 char = "泉"
-default = "セン"
+# ★2026-09-11 flip: default を音 セン → 訓 いずみ へ。 単独 surface や 「この泉」
+# 「大きい泉」 のような ひらがな隣接で音読みに落ちていた。 音読みは漢字
+# (泉と連結する熟語) の時だけなので char_type match で拾う (帯 / 身 と同型)。
+default = "いずみ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "セン"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "セン"
+
 
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
@@ -13434,7 +13715,19 @@ default = "ボウ"
 # 「背中/背骨/背丈/背泳ぎ/背負う」 等は jukugo file で対応。
 [[kanji]]
 char = "背"
-default = "ハイ"
+# ★2026-09-11 flip: default を音 ハイ → 訓 せ へ。 単独 surface や 「この背」
+# 「大きい背」 のような ひらがな隣接で音読みに落ちていた。 音読みは漢字
+# (背と連結する熟語) の時だけなので char_type match で拾う (帯 / 身 と同型)。
+default = "せ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ハイ"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "ハイ"
+
 
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
@@ -13445,7 +13738,19 @@ reading = "せ"
 # 「言葉/紅葉/葉っぱ」 等の jukugo は jukugo file で対応。
 [[kanji]]
 char = "葉"
-default = "ヨウ"
+# ★2026-09-11 flip: default を音 ヨウ → 訓 は へ。 単独 surface や 「この葉」
+# 「大きい葉」 のような ひらがな隣接で音読みに落ちていた。 音読みは漢字
+# (葉と連結する熟語) の時だけなので char_type match で拾う (帯 / 身 と同型)。
+default = "は"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ヨウ"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "ヨウ"
+
 
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や"]
@@ -14169,7 +14474,19 @@ reading = "ます"
 # 「鼻緒」 等の jukugo は jukugo file で対応。
 [[kanji]]
 char = "緒"
-default = "ショ"
+# ★2026-09-11 flip: default を音 ショ → 訓 お へ。 単独 surface や 「この緒」
+# 「大きい緒」 のような ひらがな隣接で音読みに落ちていた。 音読みは漢字
+# (緒と連結する熟語) の時だけなので char_type match で拾う (帯 / 身 と同型)。
+default = "お"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ショ"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "ショ"
+
 
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]

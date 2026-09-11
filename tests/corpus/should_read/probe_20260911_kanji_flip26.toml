@@ -1,0 +1,442 @@
+# 2026-09-11 単漢字 26 字の default flip (音 → 訓 + 「漢字隣接なら音」 char_type match)。
+# 帯 / 身 と同型。 単独や 「この X」 「大きい X」 で音読みに落ちていたのを訓へ。
+# 実コーパス 28,284 行の A/B diff で副作用は 2 行のみ (どちらも改善方向) だった。
+# 訓側と音側の両方を固定する。 風 は 「まさみ風 / アニソン風」 の接尾辞用法が主なので flip せず据え置き。
+
+[[case]]
+input = "この蓋"
+mode = "hiragana"
+expected = "このふた"
+note = "flip 後の訓側"
+
+[[case]]
+input = "蓋"
+mode = "hiragana"
+expected = "ふた"
+note = "flip 後の訓側"
+
+[[case]]
+input = "この炭"
+mode = "hiragana"
+expected = "このすみ"
+note = "flip 後の訓側"
+
+[[case]]
+input = "この布"
+mode = "hiragana"
+expected = "このぬの"
+note = "flip 後の訓側"
+
+[[case]]
+input = "大きい布"
+mode = "hiragana"
+expected = "おおきいぬの"
+note = "flip 後の訓側"
+
+[[case]]
+input = "この塊"
+mode = "hiragana"
+expected = "このかたまり"
+note = "flip 後の訓側"
+
+[[case]]
+input = "この星"
+mode = "hiragana"
+expected = "このほし"
+note = "flip 後の訓側"
+
+[[case]]
+input = "この戸"
+mode = "hiragana"
+expected = "このと"
+note = "flip 後の訓側"
+
+[[case]]
+input = "この束"
+mode = "hiragana"
+expected = "このたば"
+note = "flip 後の訓側"
+
+[[case]]
+input = "この泉"
+mode = "hiragana"
+expected = "このいずみ"
+note = "flip 後の訓側"
+
+[[case]]
+input = "この源"
+mode = "hiragana"
+expected = "このみなもと"
+note = "flip 後の訓側"
+
+[[case]]
+input = "この背"
+mode = "hiragana"
+expected = "このせ"
+note = "flip 後の訓側"
+
+[[case]]
+input = "この葉"
+mode = "hiragana"
+expected = "このは"
+note = "flip 後の訓側"
+
+[[case]]
+input = "この宮"
+mode = "hiragana"
+expected = "このみや"
+note = "flip 後の訓側"
+
+[[case]]
+input = "この嫁"
+mode = "hiragana"
+expected = "このよめ"
+note = "flip 後の訓側"
+
+[[case]]
+input = "この夫"
+mode = "hiragana"
+expected = "このおっと"
+note = "flip 後の訓側"
+
+[[case]]
+input = "この河"
+mode = "hiragana"
+expected = "このかわ"
+note = "flip 後の訓側"
+
+[[case]]
+input = "この懐"
+mode = "hiragana"
+expected = "このふところ"
+note = "flip 後の訓側"
+
+[[case]]
+input = "この巾"
+mode = "hiragana"
+expected = "このはば"
+note = "flip 後の訓側"
+
+[[case]]
+input = "この氏"
+mode = "hiragana"
+expected = "このうじ"
+note = "flip 後の訓側"
+
+[[case]]
+input = "この渋"
+mode = "hiragana"
+expected = "このしぶ"
+note = "flip 後の訓側"
+
+[[case]]
+input = "この沢"
+mode = "hiragana"
+expected = "このさわ"
+note = "flip 後の訓側"
+
+[[case]]
+input = "この樹"
+mode = "hiragana"
+expected = "このき"
+note = "flip 後の訓側"
+
+[[case]]
+input = "この庇"
+mode = "hiragana"
+expected = "このひさし"
+note = "flip 後の訓側"
+
+[[case]]
+input = "この基"
+mode = "hiragana"
+expected = "このもと"
+note = "flip 後の訓側"
+
+[[case]]
+input = "この緒"
+mode = "hiragana"
+expected = "このお"
+note = "flip 後の訓側"
+
+[[case]]
+input = "蓋然性"
+mode = "hiragana"
+expected = "がいぜんせい"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "炭素"
+mode = "hiragana"
+expected = "たんそ"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "石炭"
+mode = "hiragana"
+expected = "せきたん"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "布団"
+mode = "hiragana"
+expected = "ふとん"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "毛布"
+mode = "hiragana"
+expected = "もうふ"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "星座"
+mode = "hiragana"
+expected = "せいざ"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "衛星"
+mode = "hiragana"
+expected = "えいせい"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "戸籍"
+mode = "hiragana"
+expected = "こせき"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "井戸"
+mode = "hiragana"
+expected = "いど"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "花束"
+mode = "hiragana"
+expected = "はなたば"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "結束"
+mode = "hiragana"
+expected = "けっそく"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "温泉"
+mode = "hiragana"
+expected = "おんせん"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "源泉"
+mode = "hiragana"
+expected = "げんせん"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "資源"
+mode = "hiragana"
+expected = "しげん"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "背景"
+mode = "hiragana"
+expected = "はいけい"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "落葉"
+mode = "hiragana"
+expected = "らくよう"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "紅葉"
+mode = "hiragana"
+expected = "こうよう"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "千葉"
+mode = "hiragana"
+expected = "ちば"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "宮殿"
+mode = "hiragana"
+expected = "きゅうでん"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "転嫁"
+mode = "hiragana"
+expected = "てんか"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "花嫁"
+mode = "hiragana"
+expected = "はなよめ"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "夫婦"
+mode = "hiragana"
+expected = "ふうふ"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "工夫"
+mode = "hiragana"
+expected = "くふう"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "河川"
+mode = "hiragana"
+expected = "かせん"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "銀河"
+mode = "hiragana"
+expected = "ぎんが"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "懐中"
+mode = "hiragana"
+expected = "かいちゅう"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "巾着"
+mode = "hiragana"
+expected = "きんちゃく"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "氏名"
+mode = "hiragana"
+expected = "しめい"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "山田氏"
+mode = "hiragana"
+expected = "やまだし"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "トランプ氏"
+mode = "hiragana"
+expected = "トランプし"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "渋滞"
+mode = "hiragana"
+expected = "じゅうたい"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "沢山"
+mode = "hiragana"
+expected = "たくさん"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "光沢"
+mode = "hiragana"
+expected = "こうたく"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "樹木"
+mode = "hiragana"
+expected = "じゅもく"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "街路樹"
+mode = "hiragana"
+expected = "がいろじゅ"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "庇護"
+mode = "hiragana"
+expected = "ひご"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "基本"
+mode = "hiragana"
+expected = "きほん"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "一緒"
+mode = "hiragana"
+expected = "いっしょ"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "情緒"
+mode = "hiragana"
+expected = "じょうちょ"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "塊根"
+mode = "hiragana"
+expected = "かいこん"
+note = "flip の巻き添え退行ロック (音側)"
+
+[[case]]
+input = "婆ちゃん"
+mode = "hiragana"
+expected = "ばあちゃん"
+note = "flip に伴う追補 (婆ちゃん entry / 風 据え置き)"
+
+[[case]]
+input = "お婆ちゃん"
+mode = "hiragana"
+expected = "おばあちゃん"
+note = "flip に伴う追補 (婆ちゃん entry / 風 据え置き)"
+
+[[case]]
+input = "お爺ちゃん"
+mode = "hiragana"
+expected = "おじいちゃん"
+note = "flip に伴う追補 (婆ちゃん entry / 風 据え置き)"
+
+[[case]]
+input = "長澤まさみ風"
+mode = "hiragana"
+expected = "ながさわまさみふう"
+note = "flip に伴う追補 (婆ちゃん entry / 風 据え置き)"
+
+[[case]]
+input = "アニソン風"
+mode = "hiragana"
+expected = "アニソンふう"
+note = "flip に伴う追補 (婆ちゃん entry / 風 据え置き)"
+
+[[case]]
+input = "和風"
+mode = "hiragana"
+expected = "わふう"
+note = "flip に伴う追補 (婆ちゃん entry / 風 据え置き)"
+
+[[case]]
+input = "風が強い"
+mode = "hiragana"
+expected = "かぜがつよい"
+note = "flip に伴う追補 (婆ちゃん entry / 風 据え置き)"
