@@ -1,0 +1,105 @@
+# 2026-09-11 固有名詞 probe 第 3 弾 (祭 51 / 難読町名 50 / 作品名 49 / ノヶ地名+沖縄 50)。
+# ★ヶ / ノ は カタカナなので entry が無いと読みが付かず素通りする (.scratch の issue 02 参照)。
+# 鬼滅キャラ 30 名は既存カバーで誤読ゼロ。 沖縄地名も 勢理客/保栄茂/東風平 まで正読済だった。
+
+[[case]]
+input = "井ノ頭"
+mode = "hiragana"
+expected = "いのかしら"
+note = "ノ 入り地名 (旧 いノあたま)"
+
+[[case]]
+input = "井の頭公園"
+mode = "hiragana"
+expected = "いのかしらこうえん"
+note = "同上"
+
+[[case]]
+input = "桜ノ宮"
+mode = "hiragana"
+expected = "さくらのみや"
+note = "同上"
+
+[[case]]
+input = "沢ノ町"
+mode = "hiragana"
+expected = "さわのちょう"
+note = "同上"
+
+[[case]]
+input = "柳ヶ瀬"
+mode = "hiragana"
+expected = "やなぎがせ"
+note = "ヶ 入り地名 (旧 やなぎヶせ)"
+
+[[case]]
+input = "米ヶ袋"
+mode = "hiragana"
+expected = "こめがふくろ"
+note = "同上"
+
+[[case]]
+input = "大ヶ塚"
+mode = "hiragana"
+expected = "おおがつか"
+note = "同上"
+
+[[case]]
+input = "六ケ所村"
+mode = "hiragana"
+expected = "ろっかしょむら"
+note = "同上 (旧 ろくかしょ)"
+
+[[case]]
+input = "久高島"
+mode = "hiragana"
+expected = "くだかじま"
+note = "沖縄 (旧 きゅうこう)"
+
+[[case]]
+input = "鞍馬寺"
+mode = "hiragana"
+expected = "くらまでら"
+note = "既存 entry"
+
+[[case]]
+input = "鞍馬の火祭"
+mode = "hiragana"
+expected = "くらまのひまつり"
+note = "祭 (旧 あんばの)"
+
+[[case]]
+input = "五山送り火"
+mode = "hiragana"
+expected = "ござんおくりび"
+note = "京都 送り火 (旧 ごさんおくりび)"
+
+[[case]]
+input = "屍鬼"
+mode = "hiragana"
+expected = "しき"
+note = "作品名 (旧 しかばねき)"
+
+[[case]]
+input = "咲良"
+mode = "hiragana"
+expected = "さくら"
+note = "人名 (旧 さりょう)"
+
+[[case]]
+input = "一ヶ月"
+mode = "hiragana"
+expected = "いっかげつ"
+note = "助数詞経路の退行ロック"
+
+[[case]]
+input = "三ヶ日"
+mode = "hiragana"
+expected = "みっかび"
+note = "同上"
+
+[[case]]
+input = "竜ヶ崎"
+mode = "hiragana"
+expected = "りょうがさき"
+note = "works 側 (Free! キャラ) の読みを維持"
