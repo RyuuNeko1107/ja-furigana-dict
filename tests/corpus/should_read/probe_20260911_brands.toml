@@ -1,0 +1,123 @@
+# 2026-09-11 固有名詞 probe (難読地名 46 / 企業 49 / 資格法令略語 49 / 日本酒銘柄 53)。
+# ★日本酒の銘柄は当て字が多く 53 中 20 件が誤読 = 未開拓領域だった。
+# 一般語と衝突する 新政 (アラマサ) は 「新政権 / 新政府」 を壊すので非登録。
+
+[[case]]
+input = "獺祭"
+mode = "hiragana"
+expected = "だっさい"
+note = "日本酒 (旧 かわうそさい)"
+
+[[case]]
+input = "越乃寒梅"
+mode = "hiragana"
+expected = "こしのかんばい"
+note = "同上"
+
+[[case]]
+input = "而今"
+mode = "hiragana"
+expected = "じこん"
+note = "同上 (旧 じいま)"
+
+[[case]]
+input = "花陽浴"
+mode = "hiragana"
+expected = "はなあび"
+note = "同上"
+
+[[case]]
+input = "出羽桜"
+mode = "hiragana"
+expected = "でわざくら"
+note = "同上"
+
+[[case]]
+input = "司牡丹"
+mode = "hiragana"
+expected = "つかさぼたん"
+note = "同上"
+
+[[case]]
+input = "鍛高譚"
+mode = "hiragana"
+expected = "たんたかたん"
+note = "焼酎 (旧 たんたかはなし)"
+
+[[case]]
+input = "墨廼江"
+mode = "hiragana"
+expected = "すみのえ"
+note = "同上 (旧 すみすなわちえ)"
+
+[[case]]
+input = "冩楽"
+mode = "hiragana"
+expected = "しゃらく"
+note = "同上"
+
+[[case]]
+input = "弥右衛門"
+mode = "hiragana"
+expected = "やえもん"
+note = "同上"
+
+[[case]]
+input = "山崎製パン"
+mode = "hiragana"
+expected = "やまざきせいぱん"
+note = "企業 (旧 やまさき)"
+
+[[case]]
+input = "敷島製パン"
+mode = "hiragana"
+expected = "しきしませいぱん"
+note = "企業 (旧 しきじま)"
+
+[[case]]
+input = "白鶴"
+mode = "hiragana"
+expected = "はくつる"
+note = "酒造 (旧 しろつる)"
+
+[[case]]
+input = "黄桜"
+mode = "hiragana"
+expected = "きざくら"
+note = "酒造 (旧 きおう)"
+
+[[case]]
+input = "甘樫丘"
+mode = "hiragana"
+expected = "あまかしのおか"
+note = "地名 (旧 かんかし)"
+
+[[case]]
+input = "布施畑"
+mode = "hiragana"
+expected = "ふせはた"
+note = "地名 (旧 ふせはたけ)"
+
+[[case]]
+input = "薬機法"
+mode = "hiragana"
+expected = "やっきほう"
+note = "法令略語 (旧 くすりきほう)"
+
+[[case]]
+input = "塾講"
+mode = "hiragana"
+expected = "じゅくこう"
+note = "略語 (旧 じゅっこう)"
+
+[[case]]
+input = "新政権"
+mode = "hiragana"
+expected = "しんせいけん"
+note = "新政=アラマサ を登録しない判断の退行ロック"
+
+[[case]]
+input = "新政府"
+mode = "hiragana"
+expected = "しんせいふ"
+note = "同上"
