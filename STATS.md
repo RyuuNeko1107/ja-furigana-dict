@@ -24,14 +24,14 @@ git に commit されている master HEAD の状態を基準にする。
 | カテゴリ | エントリ数 | サイズ |
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,674** | **739 KB** |
-| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **17,297** | **668 KB** |
+| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **17,327** | **670 KB** |
 | [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,656** | **126 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **975** | **26 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,773** | **191 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **686** | **32 KB** |
-| **合計** | **64,061** | **1.74 MB** |
+| **合計** | **64,091** | **1.74 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -56,7 +56,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/jukugo/<genre>/*` — 手動 PR メンテのジャンル別 jukugo (≥ 2 字 surface)。 lib の Step 3 (jukugo lookup) で Lindera より優先採用。 各 genre dir の `_genre.toml` がカテゴリ description を持つ。
 
-**合計**: 17,297 件 / 668 KB (genre 6 区分)
+**合計**: 17,327 件 / 670 KB (genre 6 区分)
 
 #### 自然・生命
 
@@ -67,7 +67,7 @@ git に commit されている master HEAD の状態を基準にする。
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
 | [`core/jukugo/nature/animals.toml`](core/jukugo/nature/animals.toml) | 1,215 | 38 KB | 動植物 / 魚介 / 鳥 / 昆虫 / 茸 / 海藻の難読 |
-| [`core/jukugo/nature/place_names.toml`](core/jukugo/nature/place_names.toml) | 779 | 35 KB | 地名 (47 都道府県 / 主要都市 / 駅 / 寺社仏閣 / 観光地) |
+| [`core/jukugo/nature/place_names.toml`](core/jukugo/nature/place_names.toml) | 782 | 35 KB | 地名 (47 都道府県 / 主要都市 / 駅 / 寺社仏閣 / 観光地) |
 | [`core/jukugo/nature/foods.toml`](core/jukugo/nature/foods.toml) | 490 | 16 KB | 食べ物 / 料理 / 和菓子 / 郷土料理 / 食材 / 調味料 |
 | [`core/jukugo/nature/plants.toml`](core/jukugo/nature/plants.toml) | 405 | 13 KB | 植物 / 花 / 樹木 / 草本の難読 (熟字訓) |
 | [`core/jukugo/nature/weather.toml`](core/jukugo/nature/weather.toml) | 281 | 10 KB | 気象 / 天候 / 季語的気象 / 二十四節気 / 海洋気象 |
@@ -76,7 +76,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/jukugo/nature/math.toml`](core/jukugo/nature/math.toml) | 52 | 2.0 KB | 数学 (解析 / 線形代数 / 集合論 / 統計 / 確率の難読) |
 | [`core/jukugo/nature/mountaineering.toml`](core/jukugo/nature/mountaineering.toml) | 12 | 777 B | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
 | [`core/jukugo/nature/agriculture.toml`](core/jukugo/nature/agriculture.toml) | 5 | 378 B | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
-| **小計** (10 ファイル) | **3,569** | **126 KB** | |
+| **小計** (10 ファイル) | **3,572** | **127 KB** | |
 
 #### 人文・芸術
 
@@ -109,7 +109,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/jukugo/society/medicine.toml`](core/jukugo/society/medicine.toml) | 894 | 28 KB | 医学 / 医療 (病名 / 症状 / 解剖 / 処置の難読) |
 | [`core/jukugo/society/finance.toml`](core/jukugo/society/finance.toml) | 140 | 5.0 KB | 経済金融 (商品 / 市場 / 会計 / 税務 / 保険) |
 | [`core/jukugo/society/games.toml`](core/jukugo/society/games.toml) | 126 | 3.9 KB | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
-| [`core/jukugo/society/specialized.toml`](core/jukugo/society/specialized.toml) | 108 | 5.7 KB | 専門用語 (医学 / 軍事 / 法学 / 経済 / IT / 工学) |
+| [`core/jukugo/society/specialized.toml`](core/jukugo/society/specialized.toml) | 110 | 5.9 KB | 専門用語 (医学 / 軍事 / 法学 / 経済 / IT / 工学) |
 | [`core/jukugo/society/law.toml`](core/jukugo/society/law.toml) | 70 | 2.7 KB | 法律 / 司法 (民法 / 刑法 / 訴訟 / 会社法 / 相続) |
 | [`core/jukugo/society/mahjong.toml`](core/jukugo/society/mahjong.toml) | 56 | 3.3 KB | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
 | [`core/jukugo/society/sports.toml`](core/jukugo/society/sports.toml) | 39 | 2.3 KB | 近代スポーツ / 球技 / 陸上 / 水泳 / 体操 / 大会 |
@@ -117,21 +117,22 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/jukugo/society/politics.toml`](core/jukugo/society/politics.toml) | 10 | 883 B | 政治 / 行政 / 立法 / 司法 / 国際関係 |
 | [`core/jukugo/society/horse_racing.toml`](core/jukugo/society/horse_racing.toml) | 9 | 632 B | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
 | [`core/jukugo/society/fishing.toml`](core/jukugo/society/fishing.toml) | 8 | 631 B | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
-| **小計** (12 ファイル) | **2,506** | **88 KB** | |
+| **小計** (12 ファイル) | **2,508** | **88 KB** | |
 
 #### 固有名詞
 
 人名 / 大学・官庁・元号などの固有名詞 — 個別実体を指す語彙
 
-`core/jukugo/proper/` — 4 ファイル
+`core/jukugo/proper/` — 5 ファイル
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
 | [`core/jukugo/proper/personal_names.toml`](core/jukugo/proper/personal_names.toml) | 264 | 17 KB | 人名 (戦国 / 平安 / 江戸 / 明治大正 / 古典作家、現代私人除く) |
 | [`core/jukugo/proper/surnames.toml`](core/jukugo/proper/surnames.toml) | 51 | 3.1 KB | 難読姓 (苗字) の読み (姓単体、代表読み) |
 | [`core/jukugo/proper/sumo_shikona.toml`](core/jukugo/proper/sumo_shikona.toml) | 37 | 2.6 KB | 大相撲 力士の四股名 (公式読み) |
-| [`core/jukugo/proper/proper_nouns.toml`](core/jukugo/proper/proper_nouns.toml) | 30 | 1.5 KB | 固有名詞 (大学 / 中央官庁 / 元号 / 歴史的事象、PR 募集中) |
-| **小計** (4 ファイル) | **382** | **24 KB** | |
+| [`core/jukugo/proper/proper_nouns.toml`](core/jukugo/proper/proper_nouns.toml) | 34 | 1.8 KB | 固有名詞 (大学 / 中央官庁 / 元号 / 歴史的事象、PR 募集中) |
+| [`core/jukugo/proper/sake_brands.toml`](core/jukugo/proper/sake_brands.toml) | 21 | 1.4 KB | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
+| **小計** (5 ファイル) | **407** | **26 KB** | |
 
 #### 物体・工芸
 
@@ -399,7 +400,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 3070 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 3090 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -420,6 +421,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20260706.toml`](tests/corpus/should_read/probe_20260706.toml) | 17 |
 |  | [`tests/corpus/should_read/probe_20260811_surname_suffix.toml`](tests/corpus/should_read/probe_20260811_surname_suffix.toml) | 28 |
 |  | [`tests/corpus/should_read/probe_20260828_bot_dict.toml`](tests/corpus/should_read/probe_20260828_bot_dict.toml) | 13 |
+|  | [`tests/corpus/should_read/probe_20260911_brands.toml`](tests/corpus/should_read/probe_20260911_brands.toml) | 20 |
 |  | [`tests/corpus/should_read/probe_20260911_domains.toml`](tests/corpus/should_read/probe_20260911_domains.toml) | 28 |
 |  | [`tests/corpus/should_read/probe_20260911_domains2.toml`](tests/corpus/should_read/probe_20260911_domains2.toml) | 34 |
 |  | [`tests/corpus/should_read/probe_20260911_domains3.toml`](tests/corpus/should_read/probe_20260911_domains3.toml) | 14 |
