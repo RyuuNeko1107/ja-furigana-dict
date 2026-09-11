@@ -1,0 +1,51 @@
+# 2026-09-11 probe 第 4 弾 (難読鳥虫 49 / 武道 49 / 落語と城と合戦 50 / 公営競技と会計 50)。
+# ★難読な鳥 / 虫の名 49 件は **全て正読** (鶺鴒/鵺/鶍/椿象/水黽 まで)。
+# 会計用語 21 件も全て正読。 誤読は 196 語中 6 件 = ほぼ飽和。
+
+[[case]]
+input = "足踏"
+mode = "hiragana"
+expected = "あしぶみ"
+note = "弓道 射法八節 (旧 あしとう)"
+
+[[case]]
+input = "胴造"
+mode = "hiragana"
+expected = "どうづくり"
+note = "同上"
+
+[[case]]
+input = "弓構"
+mode = "hiragana"
+expected = "ゆがまえ"
+note = "同上 (旧 ゆみこう)"
+
+[[case]]
+input = "打起"
+mode = "hiragana"
+expected = "うちおこし"
+note = "同上 (旧 だき)"
+
+[[case]]
+input = "足踏み"
+mode = "hiragana"
+expected = "あしぶみ"
+note = "送り仮名あり表記の退行ロック"
+
+[[case]]
+input = "舟券"
+mode = "hiragana"
+expected = "ふなけん"
+note = "競艇 連濁 (旧 ふねけん)"
+
+[[case]]
+input = "白村江の戦い"
+mode = "hiragana"
+expected = "はくすきのえのたたかい"
+note = "古代史 (旧 はくそんえ)"
+
+[[case]]
+input = "蹲踞"
+mode = "hiragana"
+expected = "つくばい"
+note = "茶道側の読みを維持 (剣道 ソンキョ は非登録)"
