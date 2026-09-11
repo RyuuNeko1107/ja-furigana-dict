@@ -24,14 +24,14 @@ git に commit されている master HEAD の状態を基準にする。
 | カテゴリ | エントリ数 | サイズ |
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,674** | **739 KB** |
-| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **17,284** | **667 KB** |
+| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **17,297** | **668 KB** |
 | [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,656** | **126 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **975** | **26 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,773** | **191 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **686** | **32 KB** |
-| **合計** | **64,048** | **1.74 MB** |
+| **合計** | **64,061** | **1.74 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -56,7 +56,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/jukugo/<genre>/*` — 手動 PR メンテのジャンル別 jukugo (≥ 2 字 surface)。 lib の Step 3 (jukugo lookup) で Lindera より優先採用。 各 genre dir の `_genre.toml` がカテゴリ description を持つ。
 
-**合計**: 17,284 件 / 667 KB (genre 6 区分)
+**合計**: 17,297 件 / 668 KB (genre 6 区分)
 
 #### 自然・生命
 
@@ -71,12 +71,12 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/jukugo/nature/foods.toml`](core/jukugo/nature/foods.toml) | 490 | 16 KB | 食べ物 / 料理 / 和菓子 / 郷土料理 / 食材 / 調味料 |
 | [`core/jukugo/nature/plants.toml`](core/jukugo/nature/plants.toml) | 405 | 13 KB | 植物 / 花 / 樹木 / 草本の難読 (熟字訓) |
 | [`core/jukugo/nature/weather.toml`](core/jukugo/nature/weather.toml) | 281 | 10 KB | 気象 / 天候 / 季語的気象 / 二十四節気 / 海洋気象 |
-| [`core/jukugo/nature/science.toml`](core/jukugo/nature/science.toml) | 263 | 8.7 KB | 自然科学 (天文 / 物理 / 化学 / 生物 / 地学) |
+| [`core/jukugo/nature/science.toml`](core/jukugo/nature/science.toml) | 268 | 9.2 KB | 自然科学 (天文 / 物理 / 化学 / 生物 / 地学) |
 | [`core/jukugo/nature/body_parts.toml`](core/jukugo/nature/body_parts.toml) | 62 | 2.2 KB | 体の部位 / 内臓 / 骨格 / 筋肉 / 神経 |
 | [`core/jukugo/nature/math.toml`](core/jukugo/nature/math.toml) | 52 | 2.0 KB | 数学 (解析 / 線形代数 / 集合論 / 統計 / 確率の難読) |
 | [`core/jukugo/nature/mountaineering.toml`](core/jukugo/nature/mountaineering.toml) | 12 | 777 B | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
 | [`core/jukugo/nature/agriculture.toml`](core/jukugo/nature/agriculture.toml) | 5 | 378 B | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
-| **小計** (10 ファイル) | **3,564** | **126 KB** | |
+| **小計** (10 ファイル) | **3,569** | **126 KB** | |
 
 #### 人文・芸術
 
@@ -90,12 +90,12 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/jukugo/humanities/religions.toml`](core/jukugo/humanities/religions.toml) | 902 | 30 KB | 神道 / 仏教 / キリスト教 / イスラム / 儀礼 |
 | [`core/jukugo/humanities/literature.toml`](core/jukugo/humanities/literature.toml) | 609 | 22 KB | 古典文学 / 作品名 / 文学用語 / 詩歌 / 評論 |
 | [`core/jukugo/humanities/shinwa.toml`](core/jukugo/humanities/shinwa.toml) | 224 | 10 KB | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
-| [`core/jukugo/humanities/folklore.toml`](core/jukugo/humanities/folklore.toml) | 159 | 5.6 KB | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
+| [`core/jukugo/humanities/folklore.toml`](core/jukugo/humanities/folklore.toml) | 161 | 5.7 KB | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
 | [`core/jukugo/humanities/music.toml`](core/jukugo/humanities/music.toml) | 101 | 3.4 KB | 音楽ジャンル / 楽典 / 楽器 / 演奏 / 音楽用語 |
 | [`core/jukugo/humanities/idioms.toml`](core/jukugo/humanities/idioms.toml) | 58 | 3.6 KB | 慣用句 / ことわざ / 故事成語 (フレーズ単位) |
 | [`core/jukugo/humanities/abstracts.toml`](core/jukugo/humanities/abstracts.toml) | 18 | 788 B | 美意識 / 古典文学 / 仏教 / 儒教 / 思想 |
 | [`core/jukugo/humanities/emotions.toml`](core/jukugo/humanities/emotions.toml) | 10 | 658 B | 感情 / 心理状態 / 性格 / 心情 |
-| **小計** (9 ファイル) | **4,864** | **169 KB** | |
+| **小計** (9 ファイル) | **4,866** | **169 KB** | |
 
 #### 社会・制度
 
@@ -106,18 +106,18 @@ git に commit されている master HEAD の状態を基準にする。
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
 | [`core/jukugo/society/history.toml`](core/jukugo/society/history.toml) | 1,032 | 33 KB | 歴史用語 (日本史の制度 / 事件 / 文化概念) |
-| [`core/jukugo/society/medicine.toml`](core/jukugo/society/medicine.toml) | 889 | 28 KB | 医学 / 医療 (病名 / 症状 / 解剖 / 処置の難読) |
+| [`core/jukugo/society/medicine.toml`](core/jukugo/society/medicine.toml) | 894 | 28 KB | 医学 / 医療 (病名 / 症状 / 解剖 / 処置の難読) |
 | [`core/jukugo/society/finance.toml`](core/jukugo/society/finance.toml) | 140 | 5.0 KB | 経済金融 (商品 / 市場 / 会計 / 税務 / 保険) |
 | [`core/jukugo/society/games.toml`](core/jukugo/society/games.toml) | 126 | 3.9 KB | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
 | [`core/jukugo/society/specialized.toml`](core/jukugo/society/specialized.toml) | 108 | 5.7 KB | 専門用語 (医学 / 軍事 / 法学 / 経済 / IT / 工学) |
 | [`core/jukugo/society/law.toml`](core/jukugo/society/law.toml) | 70 | 2.7 KB | 法律 / 司法 (民法 / 刑法 / 訴訟 / 会社法 / 相続) |
 | [`core/jukugo/society/mahjong.toml`](core/jukugo/society/mahjong.toml) | 56 | 3.3 KB | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
-| [`core/jukugo/society/sports.toml`](core/jukugo/society/sports.toml) | 38 | 2.2 KB | 近代スポーツ / 球技 / 陸上 / 水泳 / 体操 / 大会 |
+| [`core/jukugo/society/sports.toml`](core/jukugo/society/sports.toml) | 39 | 2.3 KB | 近代スポーツ / 球技 / 陸上 / 水泳 / 体操 / 大会 |
 | [`core/jukugo/society/shogi.toml`](core/jukugo/society/shogi.toml) | 14 | 969 B | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
 | [`core/jukugo/society/politics.toml`](core/jukugo/society/politics.toml) | 10 | 883 B | 政治 / 行政 / 立法 / 司法 / 国際関係 |
 | [`core/jukugo/society/horse_racing.toml`](core/jukugo/society/horse_racing.toml) | 9 | 632 B | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
 | [`core/jukugo/society/fishing.toml`](core/jukugo/society/fishing.toml) | 8 | 631 B | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
-| **小計** (12 ファイル) | **2,500** | **87 KB** | |
+| **小計** (12 ファイル) | **2,506** | **88 KB** | |
 
 #### 固有名詞
 
@@ -399,7 +399,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 3058 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 3070 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -427,6 +427,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20260911_kanji_flip26.toml`](tests/corpus/should_read/probe_20260911_kanji_flip26.toml) | 73 |
 |  | [`tests/corpus/should_read/probe_20260911_mahjong.toml`](tests/corpus/should_read/probe_20260911_mahjong.toml) | 37 |
 |  | [`tests/corpus/should_read/probe_20260911_mi_flip.toml`](tests/corpus/should_read/probe_20260911_mi_flip.toml) | 17 |
+|  | [`tests/corpus/should_read/probe_20260911_newdomains.toml`](tests/corpus/should_read/probe_20260911_newdomains.toml) | 12 |
 |  | [`tests/corpus/should_read/probe_20260911_obi_audit.toml`](tests/corpus/should_read/probe_20260911_obi_audit.toml) | 23 |
 |  | [`tests/corpus/should_read/probe_20260911_prefix_counter.toml`](tests/corpus/should_read/probe_20260911_prefix_counter.toml) | 20 |
 |  | [`tests/corpus/should_read/probe_20260911_suffix_sweep.toml`](tests/corpus/should_read/probe_20260911_suffix_sweep.toml) | 9 |
