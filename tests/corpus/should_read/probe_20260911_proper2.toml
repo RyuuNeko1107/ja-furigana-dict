@@ -1,0 +1,196 @@
+# 2026-09-11 固有名詞 probe 第 2 弾 (銘菓 49 / 駅名 49 / 四股名 40 / 温泉地 50 / 寺社 49 = 237 件)。
+# 四股名は既存 sumo_shikona.toml で 4 割方カバー済、 残りの難読 8 件を補充。
+# 明生 / 豊山 / 東龍 は 2026-06-19 の homograph 見送り判断を踏襲して非登録。
+# 一般語と衝突する 白骨 / 水上 / 四万 は 「〜温泉」 の複合だけ登録し、 単独は据え置き。
+
+[[case]]
+input = "千代大龍"
+mode = "hiragana"
+expected = "ちよたいりゅう"
+note = "四股名 (旧 ちよおおたつ)"
+
+[[case]]
+input = "琴勝峰"
+mode = "hiragana"
+expected = "ことしょうほう"
+note = "四股名"
+
+[[case]]
+input = "一山本"
+mode = "hiragana"
+expected = "かずやまもと"
+note = "四股名 (旧 ひとやまほん)"
+
+[[case]]
+input = "荒篤山"
+mode = "hiragana"
+expected = "あらとくやま"
+note = "四股名"
+
+[[case]]
+input = "白鷹山"
+mode = "hiragana"
+expected = "はくようざん"
+note = "四股名"
+
+[[case]]
+input = "琴恵光"
+mode = "hiragana"
+expected = "ことえこう"
+note = "四股名"
+
+[[case]]
+input = "天空海"
+mode = "hiragana"
+expected = "あくあ"
+note = "四股名 (熟字訓)"
+
+[[case]]
+input = "照強"
+mode = "hiragana"
+expected = "てるつよし"
+note = "四股名 (旧 しょうきょう)"
+
+[[case]]
+input = "八ッ橋"
+mode = "hiragana"
+expected = "やつはし"
+note = "銘菓 小書きツ表記 (旧 はちッはし)"
+
+[[case]]
+input = "生八ッ橋"
+mode = "hiragana"
+expected = "なまやつはし"
+note = "同上"
+
+[[case]]
+input = "鮎菓子"
+mode = "hiragana"
+expected = "あゆがし"
+note = "銘菓 連濁"
+
+[[case]]
+input = "言問団子"
+mode = "hiragana"
+expected = "ことといだんご"
+note = "銘菓 (旧 げんもんだんご)"
+
+[[case]]
+input = "八幡屋"
+mode = "hiragana"
+expected = "やわたや"
+note = "銘菓/屋号 (旧 やはたや)"
+
+[[case]]
+input = "唐板"
+mode = "hiragana"
+expected = "からいた"
+note = "銘菓 (旧 とういた)"
+
+[[case]]
+input = "鶴乃子"
+mode = "hiragana"
+expected = "つるのこ"
+note = "銘菓 (旧 つるのし)"
+
+[[case]]
+input = "浜松町"
+mode = "hiragana"
+expected = "はままつちょう"
+note = "駅名 (旧 はままつまち)"
+
+[[case]]
+input = "尾久"
+mode = "hiragana"
+expected = "おく"
+note = "駅名 (旧 おぎゅう)"
+
+[[case]]
+input = "赤羽"
+mode = "hiragana"
+expected = "あかばね"
+note = "駅名 (旧 あかば)"
+
+[[case]]
+input = "田原町"
+mode = "hiragana"
+expected = "たわらまち"
+note = "駅名 (旧 たはらまち)"
+
+[[case]]
+input = "稲荷町"
+mode = "hiragana"
+expected = "いなりちょう"
+note = "駅名 (旧 いなりまち)"
+
+[[case]]
+input = "原鶴"
+mode = "hiragana"
+expected = "はらづる"
+note = "温泉地 (旧 げんつる)"
+
+[[case]]
+input = "二日市"
+mode = "hiragana"
+expected = "ふつかいち"
+note = "地名 (旧 ふつかし)"
+
+[[case]]
+input = "白骨温泉"
+mode = "hiragana"
+expected = "しらほねおんせん"
+note = "温泉名のみ登録"
+
+[[case]]
+input = "白骨"
+mode = "hiragana"
+expected = "はっこつ"
+note = "一般語は据え置き (誤爆ロック)"
+
+[[case]]
+input = "水上温泉"
+mode = "hiragana"
+expected = "みなかみおんせん"
+note = "温泉名のみ登録"
+
+[[case]]
+input = "水上バイク"
+mode = "hiragana"
+expected = "すいじょうばいく"
+note = "一般語側 (probe 副産物の修正)"
+
+[[case]]
+input = "四万温泉"
+mode = "hiragana"
+expected = "しまおんせん"
+note = "温泉名のみ登録"
+
+[[case]]
+input = "四万十川"
+mode = "hiragana"
+expected = "しまんとがわ"
+note = "数詞 四万 と衝突しないこと"
+
+[[case]]
+input = "談山神社"
+mode = "hiragana"
+expected = "たんざんじんじゃ"
+note = "寺社 (旧 だんさん)"
+
+[[case]]
+input = "石清水八幡宮"
+mode = "hiragana"
+expected = "いわしみずはちまんぐう"
+note = "寺社 (旧 いししみず)"
+
+[[case]]
+input = "鵜戸神宮"
+mode = "hiragana"
+expected = "うどじんぐう"
+note = "寺社 (旧 うこじんぐう)"
+
+[[case]]
+input = "出雲大社"
+mode = "hiragana"
+expected = "いずもおおやしろ"
+note = "既存の公式読みを維持"
