@@ -24,3 +24,45 @@ input = "お婆ちゃんやばい"
 mode = "hiragana"
 expected = "おばあちゃんやばい"
 note = "元から正読だった側の退行ロック"
+
+[[case]]
+input = "布張りこえぇ"
+mode = "hiragana"
+expected = "ぬのばりこえぇ"
+note = "実データ検証で発見: entry が後続かなに飲まれていた"
+
+[[case]]
+input = "愛おしいきたぁ"
+mode = "hiragana"
+expected = "いとおしいきたぁ"
+note = "同上"
+
+[[case]]
+input = "燦めくきたぁ"
+mode = "hiragana"
+expected = "きらめくきたぁ"
+note = "同上"
+
+[[case]]
+input = "御弔いきたぁ"
+mode = "hiragana"
+expected = "おとむらいきたぁ"
+note = "同上"
+
+[[case]]
+input = "子供染みたさん"
+mode = "hiragana"
+expected = "こどもじみたさん"
+note = "同上"
+
+[[case]]
+input = "幼けないこえぇ"
+mode = "hiragana"
+expected = "いとけないこえぇ"
+note = "同上"
+
+[[case]]
+input = "間夫狂いきたぁ"
+mode = "hiragana"
+expected = "まぶぐるいきたぁ"
+note = "同上"
