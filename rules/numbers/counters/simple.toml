@@ -89,7 +89,7 @@ description = "単純サフィックス助数詞 (円 / 点 / 度 / 名 / 話 �
 "頁" = "ページ"
 # 「室」 は objects.toml で rule
 "打" = "ダ"
-"切れ" = "キレ"
+# 「切れ」 は objects.toml で rule (= 1/2 が和語 ヒトキレ/フタキレ、 ★2026-09-11)
 "杖" = "ジョウ"
 # 「畳」 は objects.toml で rule (= kanji_numeral opt-in、 六畳/八畳)
 "歌" = "カ"

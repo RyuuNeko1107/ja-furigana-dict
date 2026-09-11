@@ -1,0 +1,122 @@
+# 2026-09-11 御X prefix probe (50 語) + 数詞+助数詞 probe (51 語) の実バグ。
+# counter 化した 皿/切れ/房/棹/献 は 「1/2 が和語数詞」 pattern (rules/numbers/counters/objects.toml)。
+
+[[case]]
+input = "御眼鏡に適う"
+mode = "hiragana"
+expected = "おめがねにかなう"
+note = "御X probe (旧 ごめがね)"
+
+[[case]]
+input = "御膝元"
+mode = "hiragana"
+expected = "おひざもと"
+note = "同上 (旧 ごひざもと)"
+
+[[case]]
+input = "御年"
+mode = "hiragana"
+expected = "おんとし"
+note = "同上 (旧 ごねん)"
+
+[[case]]
+input = "御俠"
+mode = "hiragana"
+expected = "おきゃん"
+note = "熟字訓 (旧 ごきょう)"
+
+[[case]]
+input = "御所"
+mode = "hiragana"
+expected = "ごしょ"
+note = "御=ゴ の既定側 退行ロック"
+
+[[case]]
+input = "御利益"
+mode = "hiragana"
+expected = "ごりやく"
+note = "同上"
+
+[[case]]
+input = "一皿"
+mode = "hiragana"
+expected = "ひとさら"
+note = "counter 和語数詞 (旧 いちさら)"
+
+[[case]]
+input = "二皿"
+mode = "hiragana"
+expected = "ふたさら"
+note = "同上"
+
+[[case]]
+input = "三皿"
+mode = "hiragana"
+expected = "さんさら"
+note = "音数詞側 退行ロック"
+
+[[case]]
+input = "一切れ"
+mode = "hiragana"
+expected = "ひときれ"
+note = "counter 和語数詞 (旧 いちきれ)"
+
+[[case]]
+input = "二切れ"
+mode = "hiragana"
+expected = "ふたきれ"
+note = "同上"
+
+[[case]]
+input = "三切れ"
+mode = "hiragana"
+expected = "さんきれ"
+note = "退行ロック"
+
+[[case]]
+input = "一房"
+mode = "hiragana"
+expected = "ひとふさ"
+note = "counter 和語数詞 (旧 いちぼう)"
+
+[[case]]
+input = "二房"
+mode = "hiragana"
+expected = "ふたふさ"
+note = "同上"
+
+[[case]]
+input = "三房"
+mode = "hiragana"
+expected = "みふさ"
+note = "同上"
+
+[[case]]
+input = "一棹"
+mode = "hiragana"
+expected = "ひとさお"
+note = "counter 和語数詞 (旧 いちさお)"
+
+[[case]]
+input = "二棹"
+mode = "hiragana"
+expected = "ふたさお"
+note = "同上"
+
+[[case]]
+input = "一献"
+mode = "hiragana"
+expected = "いっこん"
+note = "counter 促音化 (counter 化での退行ロック)"
+
+[[case]]
+input = "二献"
+mode = "hiragana"
+expected = "にこん"
+note = "旧 にけん"
+
+[[case]]
+input = "三献"
+mode = "hiragana"
+expected = "さんこん"
+note = "退行ロック"

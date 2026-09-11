@@ -880,3 +880,43 @@ kanji_numeral = true
 default = "ビョウシ"
 kanji_numeral = true
 # === end: 拍子 ===
+
+# === begin: 皿 === (料理、 1/2 は和語 ヒトサラ/フタサラ。 ★2026-09-11 probe)
+[counter."皿"]
+default = "サラ"
+kanji_numeral = true  # 一皿/三皿 → ひとさら/さんさら (漢数字 bare 対応)
+specials = { "1" = "ヒトサラ", "2" = "フタサラ" }
+# === end: 皿 ===
+
+# === begin: 房 === (葡萄 / 蜜柑、 和語数詞 ヒトフサ/フタフサ/ミフサ。 ★2026-09-11 probe)
+[counter."房"]
+default = "フサ"
+kanji_numeral = true
+specials = { "1" = "ヒトフサ", "2" = "フタフサ", "3" = "ミフサ" }
+# === end: 房 ===
+
+# === begin: 棹 === (箪笥 / 羊羹、 和語数詞 ヒトサオ/フタサオ。 ★2026-09-11 probe)
+[counter."棹"]
+default = "サオ"
+kanji_numeral = true
+specials = { "1" = "ヒトサオ", "2" = "フタサオ" }
+# === end: 棹 ===
+
+# === begin: 献 === (酒、 「二献」 は ニコン (default ケン に化けていた)。 ★2026-09-11 probe)
+[counter."献"]
+default = "コン"
+kanji_numeral = true
+
+[[counter."献".rules]]
+last_digit = [1]
+suffix = "コン"
+sokuonize = true   # 一献 = イッコン (counter 化前は default 経路で イッコン だった)
+# === end: 献 ===
+
+# === begin: 切れ === (魚 / 肉 / 羊羹、 1/2 は和語 ヒトキレ/フタキレ。 ★2026-09-11 probe)
+[counter."切れ"]
+default = "キレ"
+kanji_numeral = true
+specials = { "1" = "ヒトキレ", "2" = "フタキレ" }
+# === end: 切れ ===
+
