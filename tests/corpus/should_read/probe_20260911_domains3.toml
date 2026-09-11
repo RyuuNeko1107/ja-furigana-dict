@@ -1,0 +1,86 @@
+# 2026-09-11 専門用語 probe 第 3 弾 (和装 60 / 茶道 59 / 刀剣 59 / 金属加工 31 = 209 語試行)。
+# 和装は 褞袍 1 件のみ、 刀剣は一般語衝突 (茎/棟/沸) を避けて 5 件だけ採録。
+
+[[case]]
+input = "褞袍"
+mode = "hiragana"
+expected = "どてら"
+note = "和装 熟字訓 (旧 ぬのこわたいれ)"
+
+[[case]]
+input = "夜咄"
+mode = "hiragana"
+expected = "よばなし"
+note = "茶道 (旧 よるしかる)"
+
+[[case]]
+input = "且座"
+mode = "hiragana"
+expected = "しゃざ"
+note = "茶道 七事式。 既存 entry サザ を訂正"
+
+[[case]]
+input = "茶通箱"
+mode = "hiragana"
+expected = "さつうばこ"
+note = "茶道。 サツウバコ が正 (チャツウ に直さない退行ロック)"
+
+[[case]]
+input = "拵"
+mode = "hiragana"
+expected = "こしらえ"
+note = "刀装 名詞 (旧 こしらえる、 unihan entry 削除)"
+
+[[case]]
+input = "拵える"
+mode = "hiragana"
+expected = "こしらえる"
+note = "動詞は送り仮名で維持"
+
+[[case]]
+input = "折返鍛錬"
+mode = "hiragana"
+expected = "おりかえしたんれん"
+note = "刀剣 (旧 せっぺんたんれん)"
+
+[[case]]
+input = "磨上"
+mode = "hiragana"
+expected = "すりあげ"
+note = "刀剣 (旧 まうえ)"
+
+[[case]]
+input = "大磨上"
+mode = "hiragana"
+expected = "おおすりあげ"
+note = "同上"
+
+[[case]]
+input = "数打"
+mode = "hiragana"
+expected = "かずうち"
+note = "刀剣 / 量産品 (旧 すうだ)"
+
+[[case]]
+input = "焼入れ"
+mode = "hiragana"
+expected = "やきいれ"
+note = "熱処理 (旧 しょういれ)"
+
+[[case]]
+input = "焼入"
+mode = "hiragana"
+expected = "やきいれ"
+note = "送り仮名なし表記 (旧 しょうにゅう)"
+
+[[case]]
+input = "罫書き"
+mode = "hiragana"
+expected = "けがき"
+note = "金属加工 (旧 けいがき)"
+
+[[case]]
+input = "茎"
+mode = "hiragana"
+expected = "くき"
+note = "刀剣では ナカゴ だが一般語 クキ を維持 (設計ロック)"
