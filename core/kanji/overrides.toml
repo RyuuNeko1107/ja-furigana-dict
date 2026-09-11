@@ -18593,3 +18593,15 @@ default = "ギ"
 [[kanji]]
 char = "欝"
 default = "ウツ"
+
+# 「錘」 default 「おもり」 (= 釣り / 秤の重り、 現代語はこちらが主流。 unihan default
+# 「つむ」 は紡績具の 「紡錘」 用で、 単独 「錘」 としては古風)。
+# 音読み 「スイ」 (= 紡錘/錘状) は prev 漢字で拾う。
+[[kanji]]
+char = "錘"
+default = "おもり"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "スイ"
+

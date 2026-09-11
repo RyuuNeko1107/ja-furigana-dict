@@ -1,0 +1,170 @@
+# 2026-09-11 専門用語ドメイン一括 probe (競馬 / 釣り / 伝統遊戯 / 将棋 / 建築、 計 248 語試行)。
+# 現代ゲーム用語 (TCG / 格ゲー / FPS) は 50 語試行で誤読ゼロだったため case 無し。
+
+[[case]]
+input = "錘"
+mode = "hiragana"
+expected = "おもり"
+note = "default flip (旧 つむ)"
+
+[[case]]
+input = "錘を付ける"
+mode = "hiragana"
+expected = "おもりをつける"
+note = "釣り/秤の重り"
+
+[[case]]
+input = "紡錘形"
+mode = "hiragana"
+expected = "ぼうすいけい"
+note = "prev 漢字 → スイ を維持"
+
+[[case]]
+input = "茶滑紡錘茸"
+mode = "hiragana"
+expected = "ちゃなめつむたけ"
+note = "既存 jukugo 退行ロック"
+
+[[case]]
+input = "種牡馬"
+mode = "hiragana"
+expected = "しゅぼば"
+note = "競馬 (旧 たねぼば)"
+
+[[case]]
+input = "馬連"
+mode = "hiragana"
+expected = "うまれん"
+note = "競馬 (旧 ばれん)"
+
+[[case]]
+input = "追込"
+mode = "hiragana"
+expected = "おいこみ"
+note = "競馬 (旧 ついこ)"
+
+[[case]]
+input = "脚質"
+mode = "hiragana"
+expected = "きゃくしつ"
+note = "競馬 (旧 あししつ)"
+
+[[case]]
+input = "鞍上"
+mode = "hiragana"
+expected = "あんじょう"
+note = "競馬 (旧 くらうえ)"
+
+[[case]]
+input = "外厩"
+mode = "hiragana"
+expected = "がいきゅう"
+note = "競馬 (旧 そとうまや)"
+
+[[case]]
+input = "輓曳"
+mode = "hiragana"
+expected = "ばんえい"
+note = "ばんえい競馬 (旧 ひくえい)"
+
+[[case]]
+input = "船釣り"
+mode = "hiragana"
+expected = "ふなづり"
+note = "釣り 連濁 (旧 ふねづり)"
+
+[[case]]
+input = "時合"
+mode = "hiragana"
+expected = "じあい"
+note = "釣り (旧 ときごう)"
+
+[[case]]
+input = "道糸"
+mode = "hiragana"
+expected = "みちいと"
+note = "釣り (旧 みっし)"
+
+[[case]]
+input = "鉤素"
+mode = "hiragana"
+expected = "はりす"
+note = "釣り 熟字訓 (旧 かぎそ)"
+
+[[case]]
+input = "玉網"
+mode = "hiragana"
+expected = "たもあみ"
+note = "釣り (旧 たまもう)"
+
+[[case]]
+input = "活け締め"
+mode = "hiragana"
+expected = "いけじめ"
+note = "釣り 連濁 (旧 いけしめ)"
+
+[[case]]
+input = "波止"
+mode = "hiragana"
+expected = "はと"
+note = "釣り (旧 なみし)"
+
+[[case]]
+input = "根魚"
+mode = "hiragana"
+expected = "ねざかな"
+note = "釣り 連濁 (旧 ねぎょ)"
+
+[[case]]
+input = "舟囲い"
+mode = "hiragana"
+expected = "ふながこい"
+note = "将棋 連濁 (旧 ふねかこい)"
+
+[[case]]
+input = "角交換"
+mode = "hiragana"
+expected = "かくこうかん"
+note = "将棋 (旧 かどこうかん)"
+
+[[case]]
+input = "役札"
+mode = "hiragana"
+expected = "やくふだ"
+note = "花札/かるた (旧 やくさつ)"
+
+[[case]]
+input = "場札"
+mode = "hiragana"
+expected = "ばふだ"
+note = "同上 (旧 ばさつ)"
+
+[[case]]
+input = "地縄"
+mode = "hiragana"
+expected = "じなわ"
+note = "建築 (旧 ちじょう)"
+
+[[case]]
+input = "車知"
+mode = "hiragana"
+expected = "しゃち"
+note = "建築 仕口 (旧 くるまち)"
+
+[[case]]
+input = "雨仕舞"
+mode = "hiragana"
+expected = "あまじまい"
+note = "建築 (旧 あめしまい)"
+
+[[case]]
+input = "軒裏"
+mode = "hiragana"
+expected = "のきうら"
+note = "建築 (旧 けんうら)"
+
+[[case]]
+input = "仮筋交い"
+mode = "hiragana"
+expected = "かりすじかい"
+note = "建築 (旧 かすじかい)"
