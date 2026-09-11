@@ -16572,6 +16572,14 @@ default = "ひとみ"
 char = "真"
 default = "シン"
 
+# 「真っ〜」 は マ + っ (= 促音は surface の っ がそのまま読みになる)。
+# これが無いと Lindera の 「真」 = マッ と surface の っ が二重になり
+# 「真っしぐら」 が 「まっっしぐら」 になる (★2026-09-11 音韻走査で検出)。
+# 真っ赤 / 真っ白 等の既存 entry は band 1000 で勝つので非干渉。
+[[kanji.match]]
+next_starts_any = ["っ"]
+reading = "ま"
+
 # 「硝」 default 「ショウ」 (= 硝石/硝酸/硝煙/塩硝、 音読み)
 [[kanji]]
 char = "硝"

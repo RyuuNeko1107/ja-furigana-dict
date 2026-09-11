@@ -1,0 +1,75 @@
+# 2026-09-11 音韻走査 + entry 全件検査から。
+# ★「守りが/を/は/の/に」 のような **助詞つき回避 entry** は、 より長い語 (見守り/子守り) を
+# 分断するので置かない。 lib 側の継続 edge で解決する。
+
+[[case]]
+input = "守りが固い"
+mode = "hiragana"
+expected = "まもりがかたい"
+note = "助詞つき variant 撤去後も維持"
+
+[[case]]
+input = "守りの要"
+mode = "hiragana"
+expected = "まもりのよう"
+note = "同上"
+
+[[case]]
+input = "見守りの目"
+mode = "hiragana"
+expected = "みまもりのめ"
+note = "variant が原因で ケンマモリノ だった"
+
+[[case]]
+input = "子守りの歌"
+mode = "hiragana"
+expected = "こもりのうた"
+note = "同上"
+
+[[case]]
+input = "御守りの効果"
+mode = "hiragana"
+expected = "おまもりのこうか"
+note = "同上"
+
+[[case]]
+input = "守り神"
+mode = "hiragana"
+expected = "まもりがみ"
+note = "連濁 退行ロック"
+
+[[case]]
+input = "灯台守"
+mode = "hiragana"
+expected = "とうだいもり"
+note = "もり 側 退行ロック"
+
+[[case]]
+input = "真っしぐら"
+mode = "hiragana"
+expected = "まっしぐら"
+note = "促音の二重化 (旧 まっっしぐら)"
+
+[[case]]
+input = "真っ只中"
+mode = "hiragana"
+expected = "まっただなか"
+note = "旧 まっただちゅう"
+
+[[case]]
+input = "真っ赤"
+mode = "hiragana"
+expected = "まっか"
+note = "真っX の退行ロック"
+
+[[case]]
+input = "35点目指そう"
+mode = "hiragana"
+expected = "さんじゅうごてんめざそう"
+note = "継続 edge 拡張の退行ロック"
+
+[[case]]
+input = "100杯目指す"
+mode = "hiragana"
+expected = "ひゃくはいめざす"
+note = "同上"
