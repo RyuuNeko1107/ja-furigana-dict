@@ -1,0 +1,57 @@
+# 2026-09-11 収集サーバ 704 万行から漢字 token を頻度抽出し、 未登録の上位 1,200 語を probe。
+# 大半は正読で、 実バグは 7 件。 日本人 / 日本一 は 「日本=ニホン」 entry があるのに
+# Lindera の 3 字熟語 token (band 150) が単漢字合成 (band 100) に勝って ニッポン に倒れていた。
+
+[[case]]
+input = "日本人"
+mode = "hiragana"
+expected = "にほんじん"
+note = "704万行 token scan (旧 にっぽんじん)"
+
+[[case]]
+input = "日本一"
+mode = "hiragana"
+expected = "にほんいち"
+note = "同上"
+
+[[case]]
+input = "東日本"
+mode = "hiragana"
+expected = "ひがしにほん"
+note = "同上"
+
+[[case]]
+input = "日本代表"
+mode = "hiragana"
+expected = "にほんだいひょう"
+note = "既存正読の退行ロック"
+
+[[case]]
+input = "正捕手"
+mode = "hiragana"
+expected = "せいほしゅ"
+note = "野球実況 (旧 せいとりて)"
+
+[[case]]
+input = "満塁男"
+mode = "hiragana"
+expected = "まんるいおとこ"
+note = "同上 (旧 まんるいだん)"
+
+[[case]]
+input = "お調子者"
+mode = "hiragana"
+expected = "おちょうしもの"
+note = "者=もの (旧 おちょうししゃ)"
+
+[[case]]
+input = "長押し"
+mode = "hiragana"
+expected = "ながおし"
+note = "ボタン長押し (旧 なげしし)"
+
+[[case]]
+input = "長押"
+mode = "hiragana"
+expected = "なげし"
+note = "建築の長押は据え置き (誤爆ロック)"
