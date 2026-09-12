@@ -1,0 +1,91 @@
+# 2026-09-13 entry 総点検。 dict entry を VOICEVOX に直接読ませて誤り entry を探した。
+# ★稀語は VV 自身が読めないので精度が出ない (4,000 entry で不一致 74%)。
+#   コーパス頻度 (2 字 150 回以上 / 3 字 20 回以上) で日常語に絞ると不一致 10% まで下がり、
+#   そこから triage して 治安 / 寄付 / 開封 / 海馬 / 新羅 / 作曲家 の 6 件を修正した。
+# 誤りの型: **専門分野の読みが一般語の default になっていた** (元号 ジアン / 茶室 ヨリツキ /
+#   中国の都市 カイホウ / 古名 タツノオトシゴ / 朝鮮語 シルラ)。
+
+[[case]]
+input = "治安が悪い"
+mode = "hiragana"
+expected = "ちあんがわるい"
+
+[[case]]
+input = "寄付する"
+mode = "hiragana"
+expected = "きふする"
+
+[[case]]
+input = "開封の儀"
+mode = "hiragana"
+expected = "かいふうのぎ"
+
+[[case]]
+input = "未開封"
+mode = "hiragana"
+expected = "みかいふう"
+
+[[case]]
+input = "海馬社長"
+mode = "hiragana"
+expected = "かいばしゃちょう"
+
+[[case]]
+input = "新羅兵"
+mode = "hiragana"
+expected = "しらぎへい"
+
+[[case]]
+input = "肩上げたい"
+mode = "hiragana"
+expected = "かたあげたい"
+
+[[case]]
+input = "作曲家"
+mode = "hiragana"
+expected = "さっきょくか"
+
+[[case]]
+input = "大株主"
+mode = "hiragana"
+expected = "だいかぶぬし"
+
+[[case]]
+input = "地雷原"
+mode = "hiragana"
+expected = "じらいげん"
+
+[[case]]
+input = "夜想曲"
+mode = "hiragana"
+expected = "やそうきょく"
+
+[[case]]
+input = "日本人"
+mode = "hiragana"
+expected = "にほんじん"
+
+[[case]]
+input = "明後日"
+mode = "hiragana"
+expected = "あさって"
+
+[[case]]
+input = "十八番"
+mode = "hiragana"
+expected = "おはこ"
+
+[[case]]
+input = "陰陽師"
+mode = "hiragana"
+expected = "おんみょうじ"
+
+[[case]]
+input = "出雲大社"
+mode = "hiragana"
+expected = "いずもおおやしろ"
+
+[[case]]
+input = "四暗刻"
+mode = "hiragana"
+expected = "すーあんこー"
