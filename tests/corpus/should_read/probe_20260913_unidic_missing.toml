@@ -1,0 +1,54 @@
+# 2026-09-13 UniDic を 「未登録語の正解読み」 の供給源として使った検査。
+# コーパス 25 回以上 × 未登録 × UniDic に読みが一意 の 1,500 語を突合し、
+# 現在の読みと食い違う 21 語を triage。 実バグは 激熱 / 金本 の 2 語だけで、
+# 残り 19 語は動詞語幹の断片 (点取 / 裏切 / 仕上 / 見直 …) だった = この vein も飽和。
+
+[[case]]
+input = "激熱"
+mode = "hiragana"
+expected = "げきあつ"
+
+[[case]]
+input = "激熱すぎる"
+mode = "hiragana"
+expected = "げきあつすぎる"
+
+[[case]]
+input = "金本"
+mode = "hiragana"
+expected = "かねもと"
+
+[[case]]
+input = "金本知憲"
+mode = "hiragana"
+expected = "かねもとともあき"
+
+[[case]]
+input = "神曲"
+mode = "hiragana"
+expected = "かみきょく"
+
+[[case]]
+input = "前向き"
+mode = "hiragana"
+expected = "まえむき"
+
+[[case]]
+input = "日焼け"
+mode = "hiragana"
+expected = "ひやけ"
+
+[[case]]
+input = "気遣い"
+mode = "hiragana"
+expected = "きづかい"
+
+[[case]]
+input = "見返り"
+mode = "hiragana"
+expected = "みかえり"
+
+[[case]]
+input = "大喜利"
+mode = "hiragana"
+expected = "おおぎり"
