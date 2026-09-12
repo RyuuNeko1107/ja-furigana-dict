@@ -1,0 +1,131 @@
+# 2026-09-13 VOICEVOX 比較 第4巡。 常用外漢字を含む行 (12.4 万行) から 3,000 行
+# 採取 (一致 84.5%、 DIFF 466 件を triage)。
+# ★力 / 時 はカタカナ直後も音読み (フィニッシュ力 / ライブ時)。
+# ★度 は 「する度に」 が ドニ。 ただし レア度は / やりこみ度は を壊さないよう
+#   助詞は 「に」 だけに絞り、 数字 / 漢語 / カタカナ直後は先に ド で確定させる。
+# ★鞭 は default を ムチ へ (飴と鞭 が アメトベン だった)。
+
+[[case]]
+input = "天狐学園"
+mode = "hiragana"
+expected = "てんこがくえん"
+
+[[case]]
+input = "居酒屋天狐"
+mode = "hiragana"
+expected = "いざかやてんこ"
+
+[[case]]
+input = "フィニッシュ力"
+mode = "hiragana"
+expected = "フィニッシュりょく"
+
+[[case]]
+input = "ジャンプ力"
+mode = "hiragana"
+expected = "ジャンプりょく"
+
+[[case]]
+input = "決定力"
+mode = "hiragana"
+expected = "けっていりょく"
+
+[[case]]
+input = "力を入れる"
+mode = "hiragana"
+expected = "ちからをいれる"
+
+[[case]]
+input = "入り方"
+mode = "hiragana"
+expected = "いりかた"
+
+[[case]]
+input = "入り口"
+mode = "hiragana"
+expected = "いりぐち"
+
+[[case]]
+input = "ライブ時"
+mode = "hiragana"
+expected = "ライブじ"
+
+[[case]]
+input = "スタート時"
+mode = "hiragana"
+expected = "スタートじ"
+
+[[case]]
+input = "あの時"
+mode = "hiragana"
+expected = "あのとき"
+
+[[case]]
+input = "3時"
+mode = "hiragana"
+expected = "さんじ"
+
+[[case]]
+input = "飴と鞭"
+mode = "hiragana"
+expected = "あめとむち"
+
+[[case]]
+input = "鞭撻"
+mode = "hiragana"
+expected = "べんたつ"
+
+[[case]]
+input = "する度に"
+mode = "hiragana"
+expected = "するたびに"
+
+[[case]]
+input = "出る度に"
+mode = "hiragana"
+expected = "でるたびに"
+
+[[case]]
+input = "この度は"
+mode = "hiragana"
+expected = "このたびは"
+
+[[case]]
+input = "レア度は"
+mode = "hiragana"
+expected = "レアどは"
+
+[[case]]
+input = "やりこみ度は"
+mode = "hiragana"
+expected = "やりこみどは"
+
+[[case]]
+input = "一度に"
+mode = "hiragana"
+expected = "いちどに"
+
+[[case]]
+input = "難易度"
+mode = "hiragana"
+expected = "なんいど"
+
+[[case]]
+input = "度々"
+mode = "hiragana"
+expected = "たびたび"
+
+[[case]]
+input = "部屋着"
+mode = "hiragana"
+expected = "へやぎ"
+
+[[case]]
+input = "普段着"
+mode = "hiragana"
+expected = "ふだんぎ"
+
+[[case]]
+input = "角中"
+mode = "hiragana"
+expected = "かどなか"

@@ -710,6 +710,11 @@ default = "ちから"
 prev_char_type = "漢字"
 reading = "リョク"
 
+# ★2026-09-13 VV 比較: 「フィニッシュ力 / ダッシュ力」 が 訓読みだった。 カタカナ語 + 力 も suffix 用法。
+[[kanji.match]]
+prev_char_type = "カタカナ"
+reading = "リョク"
+
 # 「雅」: 形容動詞 「雅な / 雅やか」 で 「みやび」、 default 「つね」 は希少。
 [[kanji]]
 char = "雅"
@@ -9612,11 +9617,13 @@ default = "ホウ"
 # 鞭撻/教鞭 等の音熟語は次が漢字で default ベン のまま
 [[kanji]]
 char = "鞭"
-default = "ベン"
+# ★2026-09-13 VV 比較: 「飴と鞭」 「鞭」 単独が ベン だった。 現代語は ムチ が主。
+default = "むち"
 
+# 漢字直後は音読み (鞭撻 / 教鞭 / 走鞭)
 [[kanji.match]]
-next_starts_any = ["を", "が", "の", "に", "は", "も", "で", "と", "へ"]
-reading = "むち"
+prev_char_type = "漢字"
+reading = "ベン"
 
 # 文末「の鞭」= むち (愛の鞭/馬の鞭。next助詞ruleは 鞭+助詞 のみで の+鞭 未カバー)
 [[kanji.match]]
@@ -12905,6 +12912,11 @@ default = "とき"
 
 [[kanji.match]]
 prev_char_type = "漢字"
+reading = "ジ"
+
+# ★2026-09-13 VV 比較: 「ライブ時 / プレイ時」 が 訓読みだった。 カタカナ語 + 時 も suffix 用法。
+[[kanji.match]]
+prev_char_type = "カタカナ"
 reading = "ジ"
 
 [[kanji]]
@@ -16270,6 +16282,33 @@ default = "ド"
 # 「度々」 踊り字 = タビタビ (= 副詞)
 [[kanji.match]]
 next_eq = "々"
+reading = "たび"
+
+# ★2026-09-13 VV 比較: 「する度に / 見る度に」 が ドニ だった。
+# 数字 / 漢語の後 (一度に / 3度に / 程度は / 限度は) は先に ド で確定させ、
+# それ以外 (= 動詞連体形の後) で 助詞が続くときだけ タビ にする。
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ド"
+
+[[kanji.match]]
+prev_char_type = "英数"
+reading = "ド"
+
+# カタカナ語 + 度 も程度の 「ド」 (レア度 / エンタメ度)
+[[kanji.match]]
+prev_char_type = "カタカナ"
+reading = "ド"
+
+# 「この度は」 = コノタビワ
+[[kanji.match]]
+prev_eq = "この"
+reading = "たび"
+
+# 動詞連体形 + 度に (= 「する度に / 出る度に」)。 「やりこみ度は」 を壊さないよう
+# 助詞は 「に」 だけに絞る。
+[[kanji.match]]
+next_eq = "に"
 reading = "たび"
 
 # 「廊」 default 「ロウ」 (= 廊下/回廊/画廊/歩廊、 音読み)
