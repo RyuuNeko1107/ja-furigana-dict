@@ -1,0 +1,64 @@
+# 2026-09-13 読み上げ BOT の誤読報告 #10 (小三元 → コサンゲン) 起点。
+# 報告は 1 件だが、 同じ 麻雀役名の系統を一括点検して 8 語直した。
+# ★実コーパス (704 万行) では 2 行しか変わらない = 配信チャットに出ない語彙だが、
+#   BOT 利用者は麻雀卓で実際に読み上げているので報告ベースで直す価値がある。
+
+[[case]]
+input = "小三元"
+mode = "hiragana"
+expected = "しょうさんげん"
+
+[[case]]
+input = "大三元"
+mode = "hiragana"
+expected = "だいさんげん"
+
+[[case]]
+input = "純全帯么九"
+mode = "hiragana"
+expected = "じゅんちゃんたいやおちゅう"
+
+[[case]]
+input = "混全帯么九"
+mode = "hiragana"
+expected = "ほんちゃんたいやおちゅう"
+
+[[case]]
+input = "混老頭"
+mode = "hiragana"
+expected = "ほんろうとう"
+
+[[case]]
+input = "清老頭"
+mode = "hiragana"
+expected = "ちんろうとう"
+
+[[case]]
+input = "槍槓"
+mode = "hiragana"
+expected = "ちゃんかん"
+
+[[case]]
+input = "跳満"
+mode = "hiragana"
+expected = "はねまん"
+
+[[case]]
+input = "三色同刻"
+mode = "hiragana"
+expected = "さんしょくどうこー"
+
+[[case]]
+input = "三色同順"
+mode = "hiragana"
+expected = "さんしょくどうじゅん"
+
+[[case]]
+input = "嶺上開花"
+mode = "hiragana"
+expected = "りんしゃんかいほう"
+
+[[case]]
+input = "断么九"
+mode = "hiragana"
+expected = "たんやおちゅう"
