@@ -1,0 +1,54 @@
+# 2026-09-11 名詞派生 probe。 2〜3 字熟語 entry に接尾辞 18 種 / 接頭辞 20 種を付けた
+# 42 万語を生成し、 コーパスに 15 回以上実在する 219 語だけ判定した。
+# 実バグは 仕事前 のみ (= この vein はほぼ飽和)。 残りは偽陽性だったので
+# 「壊れていないこと」 を回帰ロックする。
+
+[[case]]
+input = "仕事前"
+mode = "hiragana"
+expected = "しごとまえ"
+
+[[case]]
+input = "仕事後"
+mode = "hiragana"
+expected = "しごとご"
+
+[[case]]
+input = "仕事中"
+mode = "hiragana"
+expected = "しごとちゅう"
+
+[[case]]
+input = "仕事帰り"
+mode = "hiragana"
+expected = "しごとがえり"
+
+[[case]]
+input = "配信前"
+mode = "hiragana"
+expected = "はいしんまえ"
+
+[[case]]
+input = "八百屋"
+mode = "hiragana"
+expected = "やおや"
+
+[[case]]
+input = "大都会"
+mode = "hiragana"
+expected = "だいとかい"
+
+[[case]]
+input = "未開封"
+mode = "hiragana"
+expected = "みかいふう"
+
+[[case]]
+input = "最高潮"
+mode = "hiragana"
+expected = "さいこうちょう"
+
+[[case]]
+input = "大和魂"
+mode = "hiragana"
+expected = "やまとだましい"
