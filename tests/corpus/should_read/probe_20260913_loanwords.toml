@@ -1,0 +1,80 @@
+# 2026-09-13 production signal_log (wrapper の alphabet_miss) 由来の外来語。
+# 50 万 signal から未登録 ASCII を集計し、 日本語で読みが一意な略語 / 企業名 /
+# 一般英単語だけ採録した (会社名の羅列 traffic が大半なので固有名詞は見送り)。
+# ★JR は不採用 = case-fold で 「Jr.」 (ジュニア) と衝突する
+#   (feedback_ambiguous_acronym と同じ判断。 A/B で 「ぺこらjr」 の退行を検出)。
+
+[[case]]
+input = "NHK"
+mode = "tts"
+expected = "エヌエイチケー"
+
+[[case]]
+input = "PTA"
+mode = "tts"
+expected = "ピーティーエー"
+
+[[case]]
+input = "ADHD"
+mode = "tts"
+expected = "エーディーエイチディー"
+
+[[case]]
+input = "CS"
+mode = "tts"
+expected = "シーエス"
+
+[[case]]
+input = "KDDI"
+mode = "tts"
+expected = "ケーディーディーアイ"
+
+[[case]]
+input = "UFJ"
+mode = "tts"
+expected = "ユーエフジェイ"
+
+[[case]]
+input = "HITACHI"
+mode = "tts"
+expected = "ヒタチ"
+
+[[case]]
+input = "DENSO"
+mode = "tts"
+expected = "デンソー"
+
+[[case]]
+input = "PANASONIC"
+mode = "tts"
+expected = "パナソニック"
+
+[[case]]
+input = "quiz"
+mode = "tts"
+expected = "クイズ"
+
+[[case]]
+input = "loop"
+mode = "tts"
+expected = "ループ"
+
+[[case]]
+input = "skip"
+mode = "tts"
+expected = "スキップ"
+
+[[case]]
+input = "knight"
+mode = "tts"
+expected = "ナイト"
+
+[[case]]
+input = "Destiny"
+mode = "tts"
+expected = "デスティニー"
+
+[[case]]
+input = "ぺこらjr"
+mode = "tts"
+expected = "ぺこらjr"
