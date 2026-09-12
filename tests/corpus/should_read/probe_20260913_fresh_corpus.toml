@@ -1,0 +1,80 @@
+# 2026-09-13 新規コメント 26.6 万行 (収集サーバから差分取得) 起点。
+# ★顔: prev 漢字 → ガン という rule だったが、 実データの 「X顔」 は
+#   笑顔 / 真顔 / 小顔 / 虚無顔 / 主人公顔 のように カオ 読みが圧倒的 (ガンは童顔 22 / 尊顔 9)。
+#   rule を撤去し、 音読みする漢語 12 語を entry で固定する方式に変えた。
+# 夢色 = ユメイロ (プロセカの曲名 「夢色ワンダー」) / 大猿 = オオザル。
+
+[[case]]
+input = "疑問顔"
+mode = "hiragana"
+expected = "ぎもんかお"
+
+[[case]]
+input = "主人公顔"
+mode = "hiragana"
+expected = "しゅじんこうかお"
+
+[[case]]
+input = "美人顔"
+mode = "hiragana"
+expected = "びじんかお"
+
+[[case]]
+input = "虚無顔"
+mode = "hiragana"
+expected = "きょむがお"
+
+[[case]]
+input = "笑顔"
+mode = "hiragana"
+expected = "えがお"
+
+[[case]]
+input = "真顔"
+mode = "hiragana"
+expected = "まがお"
+
+[[case]]
+input = "小顔"
+mode = "hiragana"
+expected = "こがお"
+
+[[case]]
+input = "童顔"
+mode = "hiragana"
+expected = "どうがん"
+
+[[case]]
+input = "洗顔"
+mode = "hiragana"
+expected = "せんがん"
+
+[[case]]
+input = "厚顔無恥"
+mode = "hiragana"
+expected = "こうがんむち"
+
+[[case]]
+input = "顔面"
+mode = "hiragana"
+expected = "がんめん"
+
+[[case]]
+input = "夢色"
+mode = "hiragana"
+expected = "ゆめいろ"
+
+[[case]]
+input = "大猿"
+mode = "hiragana"
+expected = "おおざる"
+
+[[case]]
+input = "角刈り"
+mode = "hiragana"
+expected = "かくがり"
+
+[[case]]
+input = "尻尾振る"
+mode = "hiragana"
+expected = "しっぽふる"
