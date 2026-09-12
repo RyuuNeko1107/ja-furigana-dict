@@ -86,8 +86,8 @@ git に commit されている master HEAD の状態を基準にする。
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/jukugo/humanities/arts.toml`](core/jukugo/humanities/arts.toml) | 2,782 | 92 KB | 古典芸能 / 武道 / 茶華香 / 工芸 |
-| [`core/jukugo/humanities/religions.toml`](core/jukugo/humanities/religions.toml) | 902 | 30 KB | 神道 / 仏教 / キリスト教 / イスラム / 儀礼 |
+| [`core/jukugo/humanities/arts.toml`](core/jukugo/humanities/arts.toml) | 2,782 | 93 KB | 古典芸能 / 武道 / 茶華香 / 工芸 |
+| [`core/jukugo/humanities/religions.toml`](core/jukugo/humanities/religions.toml) | 902 | 31 KB | 神道 / 仏教 / キリスト教 / イスラム / 儀礼 |
 | [`core/jukugo/humanities/literature.toml`](core/jukugo/humanities/literature.toml) | 609 | 22 KB | 古典文学 / 作品名 / 文学用語 / 詩歌 / 評論 |
 | [`core/jukugo/humanities/shinwa.toml`](core/jukugo/humanities/shinwa.toml) | 224 | 10 KB | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
 | [`core/jukugo/humanities/folklore.toml`](core/jukugo/humanities/folklore.toml) | 164 | 5.9 KB | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
@@ -111,7 +111,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/jukugo/society/games.toml`](core/jukugo/society/games.toml) | 126 | 3.8 KB | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
 | [`core/jukugo/society/specialized.toml`](core/jukugo/society/specialized.toml) | 110 | 5.9 KB | 専門用語 (医学 / 軍事 / 法学 / 経済 / IT / 工学) |
 | [`core/jukugo/society/law.toml`](core/jukugo/society/law.toml) | 70 | 2.7 KB | 法律 / 司法 (民法 / 刑法 / 訴訟 / 会社法 / 相続) |
-| [`core/jukugo/society/mahjong.toml`](core/jukugo/society/mahjong.toml) | 64 | 3.7 KB | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
+| [`core/jukugo/society/mahjong.toml`](core/jukugo/society/mahjong.toml) | 64 | 3.8 KB | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
 | [`core/jukugo/society/sports.toml`](core/jukugo/society/sports.toml) | 53 | 3.2 KB | 近代スポーツ / 球技 / 陸上 / 水泳 / 体操 / 大会 |
 | [`core/jukugo/society/shogi.toml`](core/jukugo/society/shogi.toml) | 14 | 969 B | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
 | [`core/jukugo/society/politics.toml`](core/jukugo/society/politics.toml) | 10 | 883 B | 政治 / 行政 / 立法 / 司法 / 国際関係 |
@@ -148,7 +148,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/jukugo/objects/tools.toml`](core/jukugo/objects/tools.toml) | 273 | 8.0 KB | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
 | [`core/jukugo/objects/vehicles.toml`](core/jukugo/objects/vehicles.toml) | 177 | 5.7 KB | 乗り物 / 交通手段 / 船舶 / 航空 / 鉄道 |
 | [`core/jukugo/objects/clothes.toml`](core/jukugo/objects/clothes.toml) | 90 | 2.8 KB | 衣服 / 装束 / アクセサリー / 履物 |
-| [`core/jukugo/objects/railway.toml`](core/jukugo/objects/railway.toml) | 13 | 846 B | 鉄道専門用語 (線路 / 駅 / 運行 / 車両) |
+| [`core/jukugo/objects/railway.toml`](core/jukugo/objects/railway.toml) | 13 | 848 B | 鉄道専門用語 (線路 / 駅 / 運行 / 車両) |
 | **小計** (7 ファイル) | **1,786** | **57 KB** | |
 
 #### 基本・構造
