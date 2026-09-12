@@ -1,0 +1,76 @@
+# 2026-09-13 VOICEVOX 比較 第2巡 (3,000 行 / 一致 85.6%)。
+# ★三世は 現代語の序数読み (ルパン三世) を default にし、 仏教語 サンゼ は
+#   後続語で分岐。 「三世の因果」 は next_eq の + next2 で拾う。
+# ★版 はカタカナ・英数直後も バン (ベータ版 / PS版)。 ギリシャ文字は
+#   prev_char_type に乗らないので β版 / α版 は entry で押さえる。
+# ★外出て (58 行) を取るため、 衝突する 案外出て (2 行) も明示 entry にした。
+
+[[case]]
+input = "ルパン三世"
+mode = "hiragana"
+expected = "ルパンさんせい"
+
+[[case]]
+input = "三世"
+mode = "hiragana"
+expected = "さんせい"
+
+[[case]]
+input = "三世の因果"
+mode = "hiragana"
+expected = "さんぜのいんが"
+
+[[case]]
+input = "三世帯"
+mode = "hiragana"
+expected = "さんせたい"
+
+[[case]]
+input = "スマホ版"
+mode = "hiragana"
+expected = "スマホばん"
+
+[[case]]
+input = "ベータ版"
+mode = "hiragana"
+expected = "ベータばん"
+
+[[case]]
+input = "β版"
+mode = "hiragana"
+expected = "べーたばん"
+
+[[case]]
+input = "初版"
+mode = "hiragana"
+expected = "しょはん"
+
+[[case]]
+input = "出版"
+mode = "hiragana"
+expected = "しゅっぱん"
+
+[[case]]
+input = "荒れ球"
+mode = "hiragana"
+expected = "あれだま"
+
+[[case]]
+input = "外出て"
+mode = "hiragana"
+expected = "そとでて"
+
+[[case]]
+input = "案外出てこん"
+mode = "hiragana"
+expected = "あんがいでてこん"
+
+[[case]]
+input = "外出"
+mode = "hiragana"
+expected = "がいしゅつ"
+
+[[case]]
+input = "夜涼しい"
+mode = "hiragana"
+expected = "よるすずしい"

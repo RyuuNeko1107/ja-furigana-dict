@@ -1702,6 +1702,16 @@ default = "ハン"
 prev_char_type = "漢字"
 reading = "バン"
 
+# ★2026-09-13 VV 比較: 「β版 / ベータ版」 が ハン だった。 カタカナ・英数直後も
+# edition の 「バン」 (PS版 / Steam版 / DL版)。
+[[kanji.match]]
+prev_char_type = "カタカナ"
+reading = "バン"
+
+[[kanji.match]]
+prev_char_type = "英数"
+reading = "バン"
+
 # 「天」: 現代 spoken で 「テン」 (= 「天才 / 天国 / 天気 / 天に召される」)、 「アメ /
 # アマ」 は古語 / 雅語 (= 「天の川 / 天降る」)、 単独はほぼ無く jukugo dict 1000 で
 # 「天才 / 天国」 等は覆われる。 default テン に統一
