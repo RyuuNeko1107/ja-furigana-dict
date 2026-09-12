@@ -1,0 +1,64 @@
+# 2026-09-11 ハイフン監査。 実データ 704 万行のハイフン 4,857 行は スコア /
+# 面数 / 年範囲 / 型番 ばかりで減算が無かったため、 符号と見なす条件を
+# 「直後が数値 かつ 直前が数値でも英字でもない」 に厳格化した。
+# 弾道-3 のような能力値表記 (漢字直後) は負数のまま残す。
+
+[[case]]
+input = "3-1"
+mode = "hiragana"
+expected = "さんいち"
+
+[[case]]
+input = "ゲームセット 3-2"
+mode = "hiragana"
+expected = "ゲームセット さんに"
+
+[[case]]
+input = "22-0!!"
+mode = "hiragana"
+expected = "にじゅうにぜろ!!"
+
+[[case]]
+input = "マリオ2-1"
+mode = "hiragana"
+expected = "マリオにいち"
+
+[[case]]
+input = "2024-2025"
+mode = "hiragana"
+expected = "にせんにじゅうよんにせんにじゅうご"
+
+[[case]]
+input = "7-80%くらい"
+mode = "hiragana"
+expected = "ななはちじゅっぱーせんとくらい"
+
+[[case]]
+input = "RX-78-2"
+mode = "hiragana"
+expected = "RXななじゅうはちに"
+
+[[case]]
+input = "-3"
+mode = "hiragana"
+expected = "まいなすさん"
+
+[[case]]
+input = "弾道-3"
+mode = "hiragana"
+expected = "だんどうまいなすさん"
+
+[[case]]
+input = "2〜3"
+mode = "hiragana"
+expected = "にからさん"
+
+[[case]]
+input = "Wi-Fi"
+mode = "hiragana"
+expected = "ワイファイ"
+
+[[case]]
+input = "あ-い"
+mode = "hiragana"
+expected = "あい"
