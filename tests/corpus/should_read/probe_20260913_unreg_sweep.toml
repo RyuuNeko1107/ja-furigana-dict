@@ -1,0 +1,70 @@
+# 2026-09-13 未登録漢字語 2,500 語を VOICEVOX と総当たり (不一致 237)。
+# ★ほぼ全てが動詞語幹の断片 (見逃 / 片付 / 空気読 …) か VV 側の誤読で、
+#   実バグは 「一味」 1 件だけだった = この vein は飽和と確認できた。
+# 一味: 実データ 2,464 件中 2,280 件が イチミ (海賊の一味 / ホロライブのファン名)。
+#   「ひと味違う」 は 97 件なので next_starts_any で分岐する。
+
+[[case]]
+input = "一味"
+mode = "hiragana"
+expected = "いちみ"
+
+[[case]]
+input = "麦わらの一味"
+mode = "hiragana"
+expected = "むぎわらのいちみ"
+
+[[case]]
+input = "一味違う"
+mode = "hiragana"
+expected = "ひとあじちがう"
+
+[[case]]
+input = "一味唐辛子"
+mode = "hiragana"
+expected = "いちみとうがらし"
+
+[[case]]
+input = "棒読み"
+mode = "hiragana"
+expected = "ぼうよみ"
+
+[[case]]
+input = "縄跳び"
+mode = "hiragana"
+expected = "なわとび"
+
+[[case]]
+input = "安牌"
+mode = "hiragana"
+expected = "あんぱい"
+
+[[case]]
+input = "日本代表"
+mode = "hiragana"
+expected = "にほんだいひょう"
+
+[[case]]
+input = "河川敷"
+mode = "hiragana"
+expected = "かせんじき"
+
+[[case]]
+input = "強心臓"
+mode = "hiragana"
+expected = "きょうしんぞう"
+
+[[case]]
+input = "手札"
+mode = "hiragana"
+expected = "てふだ"
+
+[[case]]
+input = "意味深"
+mode = "hiragana"
+expected = "いみしん"
+
+[[case]]
+input = "黄色"
+mode = "hiragana"
+expected = "きいろ"

@@ -9295,3 +9295,11 @@ reading = "キセイ"
 prev_char_type = "漢字"
 reading = "キセイ"
 
+# ★2026-09-13: 「一味」 は実データ 2,464 件中 2,280 件が 「イチミ」 (= 海賊の一味 /
+# ホロライブのファン名)。 「ひと味違う」 は 97 件なので match 側へ回す。
+[entries."一味"]
+reading = "イチミ"
+
+[[entries."一味".match]]
+reading = "ヒトアジ"
+next_starts_any = ["違", "ちが"]
