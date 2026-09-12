@@ -1,0 +1,80 @@
+# 2026-09-13 VOICEVOX 比較 第5巡。 今度は 「3 字以上の既存 entry を含む行」 を
+# 狙って採取し、 **entry 自体が間違っている** ケースを探した (2,500 行 / 一致 82.3%)。
+# ★地雷原 = ジライハラ / 大株主 = オオカブヌシ / 夜想曲 = ノクターン (訳語) の 3 件が誤り。
+# 併せて 「漢字表層なのに読みに長音符がある entry」 201 件を点検したが、
+# 拉麺 = ラーメン / 珈琲 = コーヒー / 袋鼠 = カンガルー 等は正しい当て字だった。
+
+[[case]]
+input = "地雷原"
+mode = "hiragana"
+expected = "じらいげん"
+
+[[case]]
+input = "大株主"
+mode = "hiragana"
+expected = "だいかぶぬし"
+
+[[case]]
+input = "株主"
+mode = "hiragana"
+expected = "かぶぬし"
+
+[[case]]
+input = "夜想曲"
+mode = "hiragana"
+expected = "やそうきょく"
+
+[[case]]
+input = "月下の夜想曲"
+mode = "hiragana"
+expected = "げっかのやそうきょく"
+
+[[case]]
+input = "みんな嫌い"
+mode = "hiragana"
+expected = "みんなきらい"
+
+[[case]]
+input = "人嫌い"
+mode = "hiragana"
+expected = "ひとぎらい"
+
+[[case]]
+input = "野菜嫌い"
+mode = "hiragana"
+expected = "やさいぎらい"
+
+[[case]]
+input = "時間帯"
+mode = "hiragana"
+expected = "じかんたい"
+
+[[case]]
+input = "複数人"
+mode = "hiragana"
+expected = "ふくすうにん"
+
+[[case]]
+input = "大所帯"
+mode = "hiragana"
+expected = "おおじょたい"
+
+[[case]]
+input = "他人事"
+mode = "hiragana"
+expected = "ひとごと"
+
+[[case]]
+input = "卑怯者"
+mode = "hiragana"
+expected = "ひきょうもの"
+
+[[case]]
+input = "梅雨前線"
+mode = "hiragana"
+expected = "ばいうぜんせん"
+
+[[case]]
+input = "二十歳"
+mode = "hiragana"
+expected = "はたち"
