@@ -24,14 +24,14 @@ git に commit されている master HEAD の状態を基準にする。
 | カテゴリ | エントリ数 | サイズ |
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,674** | **739 KB** |
-| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **17,715** | **688 KB** |
+| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **17,716** | **688 KB** |
 | [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,656** | **126 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **975** | **26 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,773** | **194 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **703** | **34 KB** |
-| **合計** | **64,496** | **1.77 MB** |
+| **合計** | **64,497** | **1.77 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -56,7 +56,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/jukugo/<genre>/*` — 手動 PR メンテのジャンル別 jukugo (≥ 2 字 surface)。 lib の Step 3 (jukugo lookup) で Lindera より優先採用。 各 genre dir の `_genre.toml` がカテゴリ description を持つ。
 
-**合計**: 17,715 件 / 688 KB (genre 6 区分)
+**合計**: 17,716 件 / 688 KB (genre 6 区分)
 
 #### 自然・生命
 
@@ -86,7 +86,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/jukugo/humanities/arts.toml`](core/jukugo/humanities/arts.toml) | 2,783 | 92 KB | 古典芸能 / 武道 / 茶華香 / 工芸 |
+| [`core/jukugo/humanities/arts.toml`](core/jukugo/humanities/arts.toml) | 2,782 | 92 KB | 古典芸能 / 武道 / 茶華香 / 工芸 |
 | [`core/jukugo/humanities/religions.toml`](core/jukugo/humanities/religions.toml) | 902 | 30 KB | 神道 / 仏教 / キリスト教 / イスラム / 儀礼 |
 | [`core/jukugo/humanities/literature.toml`](core/jukugo/humanities/literature.toml) | 609 | 22 KB | 古典文学 / 作品名 / 文学用語 / 詩歌 / 評論 |
 | [`core/jukugo/humanities/shinwa.toml`](core/jukugo/humanities/shinwa.toml) | 224 | 10 KB | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
@@ -95,7 +95,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/jukugo/humanities/music.toml`](core/jukugo/humanities/music.toml) | 101 | 3.6 KB | 音楽ジャンル / 楽典 / 楽器 / 演奏 / 音楽用語 |
 | [`core/jukugo/humanities/abstracts.toml`](core/jukugo/humanities/abstracts.toml) | 18 | 1016 B | 美意識 / 古典文学 / 仏教 / 儒教 / 思想 |
 | [`core/jukugo/humanities/emotions.toml`](core/jukugo/humanities/emotions.toml) | 10 | 658 B | 感情 / 心理状態 / 性格 / 心情 |
-| **小計** (9 ファイル) | **4,920** | **172 KB** | |
+| **小計** (9 ファイル) | **4,919** | **172 KB** | |
 
 #### 社会・制度
 
@@ -105,7 +105,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/jukugo/society/history.toml`](core/jukugo/society/history.toml) | 1,035 | 34 KB | 歴史用語 (日本史の制度 / 事件 / 文化概念) |
+| [`core/jukugo/society/history.toml`](core/jukugo/society/history.toml) | 1,034 | 34 KB | 歴史用語 (日本史の制度 / 事件 / 文化概念) |
 | [`core/jukugo/society/medicine.toml`](core/jukugo/society/medicine.toml) | 894 | 28 KB | 医学 / 医療 (病名 / 症状 / 解剖 / 処置の難読) |
 | [`core/jukugo/society/finance.toml`](core/jukugo/society/finance.toml) | 140 | 5.0 KB | 経済金融 (商品 / 市場 / 会計 / 税務 / 保険) |
 | [`core/jukugo/society/games.toml`](core/jukugo/society/games.toml) | 126 | 3.9 KB | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
@@ -117,7 +117,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/jukugo/society/politics.toml`](core/jukugo/society/politics.toml) | 10 | 883 B | 政治 / 行政 / 立法 / 司法 / 国際関係 |
 | [`core/jukugo/society/horse_racing.toml`](core/jukugo/society/horse_racing.toml) | 9 | 632 B | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
 | [`core/jukugo/society/fishing.toml`](core/jukugo/society/fishing.toml) | 8 | 631 B | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
-| **小計** (12 ファイル) | **2,525** | **89 KB** | |
+| **小計** (12 ファイル) | **2,524** | **89 KB** | |
 
 #### 固有名詞
 
@@ -159,9 +159,9 @@ git に commit されている master HEAD の状態を基準にする。
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml) | 4,403 | 211 KB | 二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む) |
+| [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml) | 4,406 | 211 KB | 二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む) |
 | [`core/jukugo/basic/four_char.toml`](core/jukugo/basic/four_char.toml) | 35 | 2.3 KB | 四字熟語 (4 字 + 全 CJK 漢字) |
-| **小計** (2 ファイル) | **4,438** | **213 KB** | |
+| **小計** (2 ファイル) | **4,441** | **213 KB** | |
 
 
 ### 作品造語
@@ -320,7 +320,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 
 | ファイル | 文字数 | ルール数 | サイズ | 用途 |
 |---|---:|---:|---:|---|
-| [`core/kanji/overrides.toml`](core/kanji/overrides.toml) | 2,773 | 3,775 | 194 KB | 単漢字 default override + 文脈分岐 reading |
+| [`core/kanji/overrides.toml`](core/kanji/overrides.toml) | 2,773 | 3,776 | 194 KB | 単漢字 default override + 文脈分岐 reading |
 
 ### 異体字
 
@@ -400,7 +400,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 3603 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 3616 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -458,6 +458,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20260911_vv_round5.toml`](tests/corpus/should_read/probe_20260911_vv_round5.toml) | 10 |
 |  | [`tests/corpus/should_read/probe_20260911_vvcompare.toml`](tests/corpus/should_read/probe_20260911_vvcompare.toml) | 22 |
 |  | [`tests/corpus/should_read/probe_20260912_voicevox.toml`](tests/corpus/should_read/probe_20260912_voicevox.toml) | 32 |
+|  | [`tests/corpus/should_read/probe_20260913_domain_collision.toml`](tests/corpus/should_read/probe_20260913_domain_collision.toml) | 13 |
 |  | [`tests/corpus/should_read/probe_20260913_entry_audit.toml`](tests/corpus/should_read/probe_20260913_entry_audit.toml) | 17 |
 |  | [`tests/corpus/should_read/probe_20260913_katakana_sweep.toml`](tests/corpus/should_read/probe_20260913_katakana_sweep.toml) | 21 |
 |  | [`tests/corpus/should_read/probe_20260913_voicevox2.toml`](tests/corpus/should_read/probe_20260913_voicevox2.toml) | 14 |
