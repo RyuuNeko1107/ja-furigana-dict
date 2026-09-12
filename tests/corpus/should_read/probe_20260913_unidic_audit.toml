@@ -1,0 +1,65 @@
+# 2026-09-13 UniDic (kana-accent 2.1.2、 56.9 万表層) を **読みのオラクル** として突合。
+# dict entry 15,987 中 676 件で読みが食い違い、 コーパス 30 回以上の 48 件を triage。
+# ★また 「専門分野の読みが一般語を占拠」 の型: 内海 = ダイカイ (茶入の形) /
+#   大輔 = タイフ (律令の官職) / 二三 = ニゾウ (花札) / 長足 = ナガアシ (武具)。
+# 信徒 = シントウ / 四隅 = シスミ / 背高 = セタカ は単純な誤り。
+
+[[case]]
+input = "信徒"
+mode = "hiragana"
+expected = "しんと"
+
+[[case]]
+input = "四隅"
+mode = "hiragana"
+expected = "よすみ"
+
+[[case]]
+input = "内海"
+mode = "hiragana"
+expected = "うつみ"
+
+[[case]]
+input = "松坂大輔"
+mode = "hiragana"
+expected = "まつさかだいすけ"
+
+[[case]]
+input = "二三塁"
+mode = "hiragana"
+expected = "にさんるい"
+
+[[case]]
+input = "二三年"
+mode = "hiragana"
+expected = "にさんねん"
+
+[[case]]
+input = "修験者"
+mode = "hiragana"
+expected = "しゅげんじゃ"
+
+[[case]]
+input = "背高のっぽ"
+mode = "hiragana"
+expected = "せいたかのっぽ"
+
+[[case]]
+input = "長足の進歩"
+mode = "hiragana"
+expected = "ちょうそくのしんぽ"
+
+[[case]]
+input = "真後ろ"
+mode = "hiragana"
+expected = "まうしろ"
+
+[[case]]
+input = "経験者"
+mode = "hiragana"
+expected = "けいけんしゃ"
+
+[[case]]
+input = "大海"
+mode = "hiragana"
+expected = "たいかい"
