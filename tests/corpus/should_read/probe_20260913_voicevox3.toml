@@ -1,0 +1,121 @@
+# 2026-09-13 VOICEVOX 比較 第3巡。 無作為抽出が薄くなったので、
+# 「dict entry の無い 3〜4 字漢字語を含む行」 に偏らせて 3,000 行採取 (一致 84.0%)。
+# ★生: 漢字直後は接尾辞 セイ (候補生 / 女子高生)。 例外 (生配信 / 生主 / 生肉) は
+#   文字種ではなく **語** で持つ = next_char_type で逃がすと 「3期生コラボ」 が壊れる。
+# ★外: カタカナ直後も ガイ (ベンチ外 / スタメン外)。
+# ★中押し entry の bracket が壊れていた ("[チュウオシ") のも併せて修復。
+
+[[case]]
+input = "候補生"
+mode = "hiragana"
+expected = "こうほせい"
+
+[[case]]
+input = "研究生"
+mode = "hiragana"
+expected = "けんきゅうせい"
+
+[[case]]
+input = "女子高生"
+mode = "hiragana"
+expected = "じょしこうせい"
+
+[[case]]
+input = "3期生コラボ"
+mode = "hiragana"
+expected = "さんきせいコラボ"
+
+[[case]]
+input = "3年生最後"
+mode = "hiragana"
+expected = "さんねんせいさいご"
+
+[[case]]
+input = "幼稚園生"
+mode = "hiragana"
+expected = "ようちえんせい"
+
+[[case]]
+input = "全部生配信"
+mode = "hiragana"
+expected = "ぜんぶなまはいしん"
+
+[[case]]
+input = "生主"
+mode = "hiragana"
+expected = "なまぬし"
+
+[[case]]
+input = "生肉"
+mode = "hiragana"
+expected = "なまにく"
+
+[[case]]
+input = "生意気"
+mode = "hiragana"
+expected = "なまいき"
+
+[[case]]
+input = "生地"
+mode = "hiragana"
+expected = "きじ"
+
+[[case]]
+input = "生き残る"
+mode = "hiragana"
+expected = "いきのこる"
+
+[[case]]
+input = "芝生"
+mode = "hiragana"
+expected = "しばふ"
+
+[[case]]
+input = "弥生"
+mode = "hiragana"
+expected = "やよい"
+
+[[case]]
+input = "ベンチ外"
+mode = "hiragana"
+expected = "ベンチがい"
+
+[[case]]
+input = "スタメン外"
+mode = "hiragana"
+expected = "スタメンがい"
+
+[[case]]
+input = "外に出る"
+mode = "hiragana"
+expected = "そとにでる"
+
+[[case]]
+input = "戦力外"
+mode = "hiragana"
+expected = "せんりょくがい"
+
+[[case]]
+input = "二本柱"
+mode = "hiragana"
+expected = "にほんばしら"
+
+[[case]]
+input = "大黒柱"
+mode = "hiragana"
+expected = "だいこくばしら"
+
+[[case]]
+input = "背中押した"
+mode = "hiragana"
+expected = "せなかおした"
+
+[[case]]
+input = "親子喧嘩"
+mode = "hiragana"
+expected = "おやこげんか"
+
+[[case]]
+input = "中押し"
+mode = "hiragana"
+expected = "ちゅうおし"

@@ -1029,6 +1029,12 @@ default = "そと"
 [[kanji.match]]
 prev_char_type = "漢字"
 reading = "ガイ"
+
+# ★2026-09-13 VV 比較: 「ベンチ外 / スタメン外 / メンバー外」 が ソト だった。
+# カタカナ語 + 外 も漢語と同じ suffix 用法。
+[[kanji.match]]
+prev_char_type = "カタカナ"
+reading = "ガイ"
 # 外で / 外に / 外を / 外の / 外は / 外が / 外側
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ", "か", "ま", "よ"]
@@ -1086,6 +1092,13 @@ reading = "シ"
 [[kanji]]
 char = "生"
 default = "なま"
+# ★2026-09-13 VV 比較: 「候補生 / 研究生 / 練習生」 が ナマ だった。
+# 漢字直後の 生 は接尾辞の セイ (女子高生 / 東大生 / 期生 / 受講生)。
+# ただし 「生」 が **次の語に前接** する用法 (生配信 / 生主 / 生ビール) は ナマ
+# なので、 後ろが漢字 / カタカナのときは除外する (first-hit-wins で先に置く)。
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "セイ"
 [[kanji.match]]
 next_starts_any = ["き", "ま", "え", "い", "や"]
 reading = "い"
