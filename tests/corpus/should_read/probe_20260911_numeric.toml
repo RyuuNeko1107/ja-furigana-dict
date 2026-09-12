@@ -1,0 +1,120 @@
+# 2026-09-11 数値表記監査。 704 万行から数値を含む短い表現を 「形」 で 28 万種に
+# まとめ、 頻出 700 形の代表例を読ませて検査した。
+# ★単独 「N 日」 は days.toml を使わない設計だが、 2〜10 / 14 / 20 / 24 は期間表現でも
+#   フツカ / ハツカ 読み。 counter specials で full-override する (lib 側も specials を尊重)。
+# ★1 文字単位 g / m / t は ci = false にした (「4G」 が ヨングラム 化けしていた)。
+
+[[case]]
+input = "2日"
+mode = "hiragana"
+expected = "ふつか"
+
+[[case]]
+input = "3日"
+mode = "hiragana"
+expected = "みっか"
+
+[[case]]
+input = "8日"
+mode = "hiragana"
+expected = "ようか"
+
+[[case]]
+input = "20日"
+mode = "hiragana"
+expected = "はつか"
+
+[[case]]
+input = "24日"
+mode = "hiragana"
+expected = "にじゅうよっか"
+
+[[case]]
+input = "1日"
+mode = "hiragana"
+expected = "いちにち"
+
+[[case]]
+input = "2日後"
+mode = "hiragana"
+expected = "ふつかご"
+
+[[case]]
+input = "10日まで"
+mode = "hiragana"
+expected = "とおかまで"
+
+[[case]]
+input = "100日"
+mode = "hiragana"
+expected = "ひゃくにち"
+
+[[case]]
+input = "31日"
+mode = "hiragana"
+expected = "さんじゅういちにち"
+
+[[case]]
+input = "9月2日"
+mode = "hiragana"
+expected = "くがつふつか"
+
+[[case]]
+input = "2日間"
+mode = "hiragana"
+expected = "ふつかかん"
+
+[[case]]
+input = "7日間"
+mode = "hiragana"
+expected = "なのかかん"
+
+[[case]]
+input = "20日間"
+mode = "hiragana"
+expected = "はつかかん"
+
+[[case]]
+input = "30日間"
+mode = "hiragana"
+expected = "さんじゅうにちかん"
+
+[[case]]
+input = "2週間"
+mode = "hiragana"
+expected = "にしゅうかん"
+
+[[case]]
+input = "4G"
+mode = "hiragana"
+expected = "よんG"
+
+[[case]]
+input = "3G回線"
+mode = "hiragana"
+expected = "さんGかいせん"
+
+[[case]]
+input = "4g"
+mode = "hiragana"
+expected = "ヨングラム"
+
+[[case]]
+input = "3m"
+mode = "hiragana"
+expected = "サンメートル"
+
+[[case]]
+input = "5t"
+mode = "hiragana"
+expected = "ゴトン"
+
+[[case]]
+input = "170km"
+mode = "hiragana"
+expected = "ヒャクナナジュウキロメートル"
+
+[[case]]
+input = "2L"
+mode = "hiragana"
+expected = "ニリットル"
