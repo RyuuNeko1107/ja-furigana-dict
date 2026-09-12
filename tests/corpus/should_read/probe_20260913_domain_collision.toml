@@ -1,0 +1,71 @@
+# 2026-09-13 専門 entry と日常語の衝突 sweep。
+# 専門ファイル (history / arts / weapons / 等) の entry のうち コーパス 60 回以上の
+# 30 語を点検した。 ★番上 (江戸期の勤番) / 番楽 (秋田の民俗芸能) が
+#   「1番上」 「1番楽」 を食べていたので entry ごと削除 (数字 + 番X は entry で救えない)。
+# 左 は 「1番左」 が サ になるので prev_eq = 番 の分岐を追加。
+# 一番下 entry は 「一番下手」 を壊すので入れない (元から正しく読めていた)。
+
+[[case]]
+input = "一番上"
+mode = "hiragana"
+expected = "いちばんうえ"
+
+[[case]]
+input = "1番上のかな"
+mode = "hiragana"
+expected = "いちばんうえのかな"
+
+[[case]]
+input = "一番左の"
+mode = "hiragana"
+expected = "いちばんひだりの"
+
+[[case]]
+input = "1番左"
+mode = "hiragana"
+expected = "いちばんひだり"
+
+[[case]]
+input = "一番楽"
+mode = "hiragana"
+expected = "いちばんらく"
+
+[[case]]
+input = "一番楽な"
+mode = "hiragana"
+expected = "いちばんらくな"
+
+[[case]]
+input = "一番楽しい"
+mode = "hiragana"
+expected = "いちばんたのしい"
+
+[[case]]
+input = "一番下手"
+mode = "hiragana"
+expected = "いちばんへた"
+
+[[case]]
+input = "一番下の"
+mode = "hiragana"
+expected = "いちばんしたの"
+
+[[case]]
+input = "左右"
+mode = "hiragana"
+expected = "さゆう"
+
+[[case]]
+input = "左翼"
+mode = "hiragana"
+expected = "さよく"
+
+[[case]]
+input = "対左"
+mode = "hiragana"
+expected = "たいひだり"
+
+[[case]]
+input = "二番目"
+mode = "hiragana"
+expected = "にばんめ"

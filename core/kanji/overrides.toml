@@ -11952,6 +11952,11 @@ char = "左"
 default = "ひだり"
 
 [[kanji.match]]
+# 「1番左 / 一番左」 の 左 は ヒダリ (★2026-09-13)
+prev_eq = "番"
+reading = "ひだり"
+
+[[kanji.match]]
 prev_char_type = "漢字"
 reading = "サ"
 
