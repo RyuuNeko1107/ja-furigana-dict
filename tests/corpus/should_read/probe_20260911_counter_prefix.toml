@@ -1,0 +1,80 @@
+# 2026-09-11 助数詞 prefix probe (数/毎/全/各/半/両/約/今/来/先/翌/初 × 助数詞 116)。
+# 組み合わせ 1,392 のうち実コーパスに 20 回以上出るものだけ判定した。
+# ★「話」 は数値が付けば counter rule が効くが、 全話 / 毎話 / 次話 は数値が無く
+#   単漢字 default に落ちて ゼンハナシ になっていた。 prev_eq_any で ワ に分岐。
+#   話す / お話 / 世間話 側を壊していないことも併せてロックする。
+
+[[case]]
+input = "全話見た"
+mode = "hiragana"
+expected = "ぜんわみた"
+
+[[case]]
+input = "毎話おもしろい"
+mode = "hiragana"
+expected = "まいわおもしろい"
+
+[[case]]
+input = "次話いこう"
+mode = "hiragana"
+expected = "じわいこう"
+
+[[case]]
+input = "前話"
+mode = "hiragana"
+expected = "ぜんわ"
+
+[[case]]
+input = "各話"
+mode = "hiragana"
+expected = "かくわ"
+
+[[case]]
+input = "数か月"
+mode = "hiragana"
+expected = "すうかげつ"
+
+[[case]]
+input = "数か所"
+mode = "hiragana"
+expected = "すうかしょ"
+
+[[case]]
+input = "数か国"
+mode = "hiragana"
+expected = "すうかこく"
+
+[[case]]
+input = "話す"
+mode = "hiragana"
+expected = "はなす"
+
+[[case]]
+input = "お話"
+mode = "hiragana"
+expected = "おはなし"
+
+[[case]]
+input = "世間話"
+mode = "hiragana"
+expected = "せけんばなし"
+
+[[case]]
+input = "昔話"
+mode = "hiragana"
+expected = "むかしばなし"
+
+[[case]]
+input = "今話してる"
+mode = "hiragana"
+expected = "いまはなしてる"
+
+[[case]]
+input = "第3話"
+mode = "hiragana"
+expected = "だいさんわ"
+
+[[case]]
+input = "最終話"
+mode = "hiragana"
+expected = "さいしゅうわ"
