@@ -1,0 +1,82 @@
+# 2026-09-13 接尾漢字 sweep。 「顔」 で見つけた型 (prev漢字→音読み rule が造語で外す) を
+# 299 字に広げ、 未登録の X+接尾漢字 900 語を VOICEVOX と突き合わせた。
+# ★矢: default 反転 (弓矢 53 / 麻酔矢 50 に対し シ は 一矢 9 / 嚆矢 のみ)。
+# ★家: カタカナ名 + 家 = ケ (ジョースター家 / スバル家 / ゾルディック家)。
+#   例外の カラテ家 / ボロ家 は entry で固定。
+# ★魂: コン (闘魂 212) と ダマシイ (配信者魂 57 / 雑草魂 36) が拮抗するので
+#   rule は触らず ダマシイ 側を entry 化した。
+
+[[case]]
+input = "麻酔矢"
+mode = "hiragana"
+expected = "ますいや"
+
+[[case]]
+input = "弓矢"
+mode = "hiragana"
+expected = "ゆみや"
+
+[[case]]
+input = "一矢"
+mode = "hiragana"
+expected = "いっし"
+
+[[case]]
+input = "嚆矢"
+mode = "hiragana"
+expected = "こうし"
+
+[[case]]
+input = "星街家"
+mode = "hiragana"
+expected = "ほしまちけ"
+
+[[case]]
+input = "ジョースター家"
+mode = "hiragana"
+expected = "ジョースターけ"
+
+[[case]]
+input = "カラテ家"
+mode = "hiragana"
+expected = "からてか"
+
+[[case]]
+input = "ボロ家"
+mode = "hiragana"
+expected = "ぼろや"
+
+[[case]]
+input = "政治家"
+mode = "hiragana"
+expected = "せいじか"
+
+[[case]]
+input = "作家"
+mode = "hiragana"
+expected = "さっか"
+
+[[case]]
+input = "実家"
+mode = "hiragana"
+expected = "じっか"
+
+[[case]]
+input = "配信者魂"
+mode = "hiragana"
+expected = "はいしんしゃだましい"
+
+[[case]]
+input = "雑草魂"
+mode = "hiragana"
+expected = "ざっそうだましい"
+
+[[case]]
+input = "闘魂"
+mode = "hiragana"
+expected = "とうこん"
+
+[[case]]
+input = "銀魂"
+mode = "hiragana"
+expected = "ぎんたま"

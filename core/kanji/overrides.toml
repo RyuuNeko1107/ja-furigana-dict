@@ -2688,6 +2688,11 @@ default = "いえ"
 prev_char_type = "漢字"
 reading = "カ"
 
+# カタカナ名 + 家 = 一族の ケ (ジョースター家 / オリバー家)。 ★2026-09-13
+[[kanji.match]]
+prev_char_type = "カタカナ"
+reading = "ケ"
+
 # 「すき家 / なか家」 等 ひらがな prev = 接尾辞「ヤ」 (= 飲食店名)
 [[kanji.match]]
 prev_ends_any = ["き", "か"]
@@ -19142,9 +19147,8 @@ reading = "シ"
 char = "矢"
 default = "や"
 
-[[kanji.match]]
-prev_char_type = "漢字"
-reading = "シ"
+# ★2026-09-13: prev 漢字 → シ だったが、 実データの X矢 は 弓矢 53 / 麻酔矢 50 /
+# 毒矢 / 火矢 / 破魔矢 と ヤ が主 (シ は 一矢 9 / 嚆矢 のみ = entry で固定)。
 
 [[kanji]]
 char = "痔"
