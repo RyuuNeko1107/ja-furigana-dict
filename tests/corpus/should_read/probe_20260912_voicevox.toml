@@ -1,0 +1,164 @@
+# 2026-09-12 VOICEVOX 比較 (2,500 行 / 一致 87.2%) の DIFF triage で出た実バグ。
+# VV は regression detector であって正解ではないので 1 件ずつ確認している
+# (VV が誤っている 上振れ / 令和 / 堂安 / 引き などは採用していない)。
+# 退行防止のため 復帰した / 世界観に / 曲がる / 被害 / 厚労省 側も併せてロックする。
+
+[[case]]
+input = "お得なのね"
+mode = "hiragana"
+expected = "おとくなのね"
+
+[[case]]
+input = "最高っ"
+mode = "hiragana"
+expected = "さいこうっ"
+
+[[case]]
+input = "観に行く"
+mode = "hiragana"
+expected = "みにいく"
+
+[[case]]
+input = "映画観に行く"
+mode = "hiragana"
+expected = "えいがみにいく"
+
+[[case]]
+input = "世界観に没入"
+mode = "hiragana"
+expected = "せかいかんにぼつにゅう"
+
+[[case]]
+input = "中二っぽい"
+mode = "hiragana"
+expected = "ちゅうにっぽい"
+
+[[case]]
+input = "中二病"
+mode = "hiragana"
+expected = "ちゅうにびょう"
+
+[[case]]
+input = "小天体"
+mode = "hiragana"
+expected = "しょうてんたい"
+
+[[case]]
+input = "国蝶"
+mode = "hiragana"
+expected = "こくちょう"
+
+[[case]]
+input = "甘じょっぱい"
+mode = "hiragana"
+expected = "あまじょっぱい"
+
+[[case]]
+input = "濃ゆい"
+mode = "hiragana"
+expected = "こゆい"
+
+[[case]]
+input = "被り多くなってきた"
+mode = "hiragana"
+expected = "かぶりおおくなってきた"
+
+[[case]]
+input = "被る"
+mode = "hiragana"
+expected = "かぶる"
+
+[[case]]
+input = "被害"
+mode = "hiragana"
+expected = "ひがい"
+
+[[case]]
+input = "上々ですなぁ"
+mode = "hiragana"
+expected = "じょうじょうですなぁ"
+
+[[case]]
+input = "中高"
+mode = "hiragana"
+expected = "ちゅうこう"
+
+[[case]]
+input = "鬼の居ぬ間に"
+mode = "hiragana"
+expected = "おにのいぬまに"
+
+[[case]]
+input = "球数"
+mode = "hiragana"
+expected = "きゅうすう"
+
+[[case]]
+input = "船長さ"
+mode = "hiragana"
+expected = "せんちょうさ"
+
+[[case]]
+input = "帰そう"
+mode = "hiragana"
+expected = "かえそう"
+
+[[case]]
+input = "帰した"
+mode = "hiragana"
+expected = "かえした"
+
+[[case]]
+input = "復帰した"
+mode = "hiragana"
+expected = "ふっきした"
+
+[[case]]
+input = "回帰する"
+mode = "hiragana"
+expected = "かいきする"
+
+[[case]]
+input = "日帰り"
+mode = "hiragana"
+expected = "ひがえり"
+
+[[case]]
+input = "曲が変わった"
+mode = "hiragana"
+expected = "きょくがかわった"
+
+[[case]]
+input = "曲がる"
+mode = "hiragana"
+expected = "まがる"
+
+[[case]]
+input = "曲げて"
+mode = "hiragana"
+expected = "まげて"
+
+[[case]]
+input = "人望が厚すぎる"
+mode = "hiragana"
+expected = "じんぼうがあつすぎる"
+
+[[case]]
+input = "厚労省"
+mode = "hiragana"
+expected = "こうろうしょう"
+
+[[case]]
+input = "クリア後"
+mode = "hiragana"
+expected = "クリアご"
+
+[[case]]
+input = "ライブ後"
+mode = "hiragana"
+expected = "ライブご"
+
+[[case]]
+input = "午後"
+mode = "hiragana"
+expected = "ごご"

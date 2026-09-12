@@ -104,6 +104,12 @@ default = "あと"
 prev_char_type = "漢字"
 reading = "ゴ"
 
+# ★2026-09-12 VV 比較: 「クリア後」 が クリアアト になっていた。
+# カタカナ語 + 後 も漢語と同じ音読み (ライブ後 / コラボ後 / メンテ後)。
+[[kanji.match]]
+prev_char_type = "カタカナ"
+reading = "ゴ"
+
 # 「後 3 試合 / 後 100 円」 等の副詞用法 = 数字後続で 「あと」
 [[kanji.match]]
 next_char_type = "英数"
@@ -902,8 +908,14 @@ default = "キョク"
 # 「曲は / 曲の / 曲が」 (= 名詞 + 助詞) は default 「キョク」 維持。
 # ★round 18 で next_char_type=ひらがな に絞っていたのを、 「曲は」 誤読 (= まがは) のため
 # 動詞 5/1 段活用先頭文字に限定。
+# ★2026-09-12 VV 比較: 「が/げ/ぎ」 1 文字だと 「曲が変わった」 が マガ になる。
+# 動詞活用の送り仮名を全形で列挙する (feedback_okurigana_literal)。
 [[kanji.match]]
-next_starts_any = ["が", "げ", "ぎ"]
+next_starts_any = [
+  "がる", "がら", "がり", "がっ", "がれ", "がろ",
+  "げる", "げら", "げり", "げっ", "げれ", "げよ", "げて", "げた", "げず", "げない",
+  "ぎ",
+]
 reading = "ま"
 
 # 「短」: 音読み 「タン」 (= 「短期 / 短歌 / 短時間 / 最短」) が圧倒的。
@@ -5302,6 +5314,17 @@ default = "ジュン"
 [[kanji]]
 char = "帰"
 default = "キ"
+# 漢字直後は音読み (復帰した / 回帰する)。 訓分岐より前に置く = first-hit-wins。
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "キ"
+# ★2026-09-12 VV 比較: 「帰そう」 が キソウ になっていた。 帰す / 帰る の訓分岐。
+[[kanji.match]]
+next_starts_any = [
+  "す", "そう", "さない", "して", "した", "せる", "せば",
+  "る", "ら", "り", "れ", "ろ", "っ",
+]
+reading = "かえ"
 
 [[kanji]]
 char = "幕"
@@ -6707,6 +6730,10 @@ default = "ハク"
 [[kanji]]
 char = "厚"
 default = "コウ"
+# ★2026-09-12 VV 比較: 「層厚すぎる」 が ソウコウスギル になっていた。
+[[kanji.match]]
+next_starts_any = ["い", "く", "かっ", "けれ", "すぎ", "み", "め"]
+reading = "あつ"
 
 [[kanji]]
 char = "呪"
@@ -6905,6 +6932,14 @@ char = "観"
 default = "カン"
 [[kanji.match]]
 next_starts_any = ["る", "た", "て", "ま", "よ", "ら", "れ", "な"]  # 観る / 観た / 観て / 観ます / 観よう / 観られる / 観れば / 観ない / 観ながら
+reading = "ミ"
+
+# 「観に行く / 観に来て」。 ★2026-09-12: next_starts_any に 「に」 を足すと
+# 「世界観に没入」 が セカイミ になるので、 next_eq + next2 で移動動詞を要求する
+# (multi-char literal は token 内しか見ないので 「に行」 では hit しない)。
+[[kanji.match]]
+next_eq = "に"
+next2_starts_any = ["行", "来", "いく", "いっ", "きた", "こよ"]
 reading = "ミ"
 
 [[kanji]]
