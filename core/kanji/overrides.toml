@@ -152,6 +152,16 @@ default = "くに"
 prev_char_type = "漢字"
 reading = "コク"
 
+# ONE PIECE の 「ワノ国」 は クニ (カタカナ隣接 sweep の例外)
+[[kanji.match]]
+prev_eq = "ワノ"
+reading = "くに"
+
+# ★2026-09-13 カタカナ隣接 sweep (さいたま国 / グンマー国)
+[[kanji.match]]
+prev_char_type = "カタカナ"
+reading = "コク"
+
 [[kanji]]
 char = "風"
 # default はフウ据え置き (★2026-09-11: 訓 flip を試したが 「長澤まさみ風」 「アニソン風」 の
@@ -1060,6 +1070,11 @@ default = "おび"
 prev_char_type = "漢字"
 reading = "タイ"
 
+# ★2026-09-13 カタカナ隣接 sweep (レベル帯 / ボリューム帯)
+[[kanji.match]]
+prev_char_type = "カタカナ"
+reading = "タイ"
+
 [[kanji.match]]
 next_char_type = "漢字"
 reading = "タイ"
@@ -1151,6 +1166,16 @@ default = "からだ"
 # (= prev 漢字 match を最優先で書く、 next ひらがな / 漢字 ルールより 先頭)
 [[kanji.match]]
 prev_char_type = "漢字"
+reading = "タイ"
+
+# 「体を張る / 体張る」 は カタカナ直後でも からだ
+[[kanji.match]]
+next_starts_any = ["を", "張"]
+reading = "からだ"
+
+# ★2026-09-13 カタカナ隣接 sweep (プリン体 / ケトン体)
+[[kanji.match]]
+prev_char_type = "カタカナ"
 reading = "タイ"
 # 体は / 体が / 体を / 体に / 体の / 体で / 体と / 体も (= 名詞用法、 ひらがな助詞)
 # 「し」 = 「いい体してる / 体してない」 慣用句 (= 動詞「する」 連用形)、 「カラダ」 訓
@@ -2461,6 +2486,11 @@ default = "うま"
 prev_char_type = "漢字"
 reading = "バ"
 
+# ★2026-09-13 カタカナ隣接 sweep (ダービー馬 / サラブレッド馬)
+[[kanji.match]]
+prev_char_type = "カタカナ"
+reading = "バ"
+
 # 「石」: default = いし。 セキ/コク/シャク系 jukugo (石灰 / 化石 / 鉱石
 # / 石高 等) は band 100 で吸収。
 [[kanji]]
@@ -2799,6 +2829,11 @@ default = "たま"  # 単独 弾=たま (弾切れ/弾を撃つ、FPS/ゲーム)
 # 漢字直後の 弾 = ダン (第二弾/疾風弾/爆裂弾 等 序数・技名)
 [[kanji.match]]
 prev_char_type = "漢字"
+reading = "ダン"
+
+# ★2026-09-13 カタカナ隣接 sweep (ゴム弾 / コルク弾)
+[[kanji.match]]
+prev_char_type = "カタカナ"
 reading = "ダン"
 
 [[kanji.match]]
@@ -13292,6 +13327,11 @@ default = "とし"
 prev_char_type = "漢字"
 reading = "サイ"
 
+# ★2026-09-13 カタカナ隣接 sweep (ゼロ歳)
+[[kanji.match]]
+prev_char_type = "カタカナ"
+reading = "サイ"
+
 [[kanji]]
 char = "母"
 default = "はは"
@@ -13377,6 +13417,11 @@ default = "なみ"
 
 [[kanji.match]]
 prev_char_type = "漢字"
+reading = "ハ"
+
+# ★2026-09-13 カタカナ隣接 sweep (マイクロ波 / パルス波)
+[[kanji.match]]
+prev_char_type = "カタカナ"
 reading = "ハ"
 
 [[kanji]]
@@ -15539,6 +15584,11 @@ default = "あと"
 
 [[kanji.match]]
 prev_char_type = "漢字"
+reading = "コン"
+
+# ★2026-09-13 カタカナ隣接 sweep (ブレーキ痕 / タイヤ痕)
+[[kanji.match]]
+prev_char_type = "カタカナ"
 reading = "コン"
 
 # 「皮」 default 「かわ」 + prev 漢字 → 「ヒ」 (= 皮膚/外皮/果皮/獣皮/樹皮/真皮)
@@ -18968,6 +19018,11 @@ default = "たま"
 prev_char_type = "漢字"
 reading = "だま"
 
+# ★2026-09-13 カタカナ隣接 sweep (ピンク玉 / シャボン玉 の連濁)
+[[kanji.match]]
+prev_char_type = "カタカナ"
+reading = "だま"
+
 # 「男」 default 「おとこ」 + prev 漢字 → 「ダン」 (= 長男/次男/美男/善男善女)
 [[kanji]]
 char = "男"
@@ -18993,6 +19048,11 @@ default = "かみ"
 
 [[kanji.match]]
 prev_char_type = "漢字"
+reading = "シ"
+
+# ★2026-09-13 カタカナ隣接 sweep (リトマス紙 / トレス紙)
+[[kanji.match]]
+prev_char_type = "カタカナ"
 reading = "シ"
 
 # 「竹」 default 「たけ」 + prev 漢字 → 「チク」 (= 破竹/爆竹/糸竹/松竹)
