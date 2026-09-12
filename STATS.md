@@ -30,8 +30,8 @@ git に commit されている master HEAD の状態を基準にする。
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,773** | **192 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
-| [**エンジンルール**](#エンジンルール) (`rules/`) | **702** | **34 KB** |
-| **合計** | **64,438** | **1.76 MB** |
+| [**エンジンルール**](#エンジンルール) (`rules/`) | **703** | **34 KB** |
+| **合計** | **64,439** | **1.76 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -334,7 +334,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 `rules/` — エンジン挙動 (助数詞 / 文脈 / 後処理 等) を制御するルール群。 lib コードに embed されるのではなく、 ここで宣言的に外部化されている。
 
 <!-- AUTO-GENERATED:RULES:BEGIN -->
-**合計**: 702 エントリ / 805 ルール / 34 KB (genre 3 区分)
+**合計**: 703 エントリ / 806 ルール / 34 KB (genre 3 区分)
 
 #### 数値系
 
@@ -346,7 +346,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 |---|---:|---:|---:|---|
 | [`rules/numbers/counters/objects.toml`](rules/numbers/counters/objects.toml) | 88 | 171 | 16 KB | 物を数える助数詞 (本 / 匹 / 杯 / 個 / 歳 / 冊、 連濁 / 促音化) |
 | [`rules/numbers/counters/simple.toml`](rules/numbers/counters/simple.toml) | 43 | 43 | 972 B | 単純サフィックス助数詞 (円 / 点 / 度 / 名 / 話 等、 数値カナ + value 連結のみ) |
-| [`rules/numbers/counters/time.toml`](rules/numbers/counters/time.toml) | 20 | 33 | 3.7 KB | 時間系助数詞 (月 / 日 / 時 / 分 / 週間 / 回、 4/7/9 の特殊読み + カナ末尾置換) |
+| [`rules/numbers/counters/time.toml`](rules/numbers/counters/time.toml) | 21 | 34 | 4.3 KB | 時間系助数詞 (月 / 日 / 時 / 分 / 週間 / 回、 4/7/9 の特殊読み + カナ末尾置換) |
 | [`rules/numbers/days.toml`](rules/numbers/days.toml) | 31 | 31 | 978 B | 1〜31 日の特殊読み (1→ツイタチ / 20→ハツカ 等) |
 | [`rules/numbers/numeric_phrases.toml`](rules/numbers/numeric_phrases.toml) | 23 | 23 | 893 B | 数字を含む例外語句 (二十歳→ハタチ / 明後日→アサッテ 等、 助数詞ルールより先に確定) |
 | [`rules/numbers/scales.toml`](rules/numbers/scales.toml) | 19 | 19 | 1.0 KB | 大数スケール (万 / 億 / 兆 / 京 / 垓 / 不可思議 / 無量大数 等、 大→小順、 N+漢字単位 連結用) |
@@ -354,7 +354,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 | [`rules/numbers/counters/percent.toml`](rules/numbers/counters/percent.toml) | 2 | 4 | 583 B | パーセンテージ (% / ％、 1/6/8/0 で促音化 + パーセント) |
 | [`rules/numbers/counters/people.toml`](rules/numbers/counters/people.toml) | 1 | 1 | 225 B | 人を数える助数詞 (人、 1=ヒトリ / 2=フタリ の特殊読み) |
 | [`rules/numbers/counters/recursive.toml`](rules/numbers/counters/recursive.toml) | 1 | 1 | 202 B | 再帰モード助数詞 (個目 / 階目 等、 既存助数詞解決後に末尾連結) |
-| **小計** (10 ファイル) | **232** | **335** | **26 KB** | |
+| **小計** (10 ファイル) | **233** | **336** | **26 KB** | |
 
 #### テキスト系
 
@@ -364,10 +364,10 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 
 | ファイル | エントリ数 | ルール数 | サイズ | 用途 |
 |---|---:|---:|---:|---|
-| [`rules/text/units.toml`](rules/text/units.toml) | 21 | 21 | 1.0 KB | SI 単位 + 通貨 + % (km / kg / mL / 円 / % 等、 数値 + 単位を 1 chunk で読む。 lookup は case-insensitive) |
+| [`rules/text/units.toml`](rules/text/units.toml) | 21 | 21 | 1.3 KB | SI 単位 + 通貨 + % (km / kg / mL / 円 / % 等、 数値 + 単位を 1 chunk で読む。 lookup は case-insensitive) |
 | [`rules/text/symbols.toml`](rules/text/symbols.toml) | 11 | 11 | 403 B | 記号 1 文字読み (+ / − / % / ‰ / 〜 / ・ / ※ 等、 chunks/split() の symbols 階層で個別 hit) |
 | [`rules/text/postprocess.toml`](rules/text/postprocess.toml) | 2 | 2 | 325 B | 出力後処理 regex (Step 7、 mode 別: hiragana / ruby / tts / romaji の出力直前に適用) |
-| **小計** (3 ファイル) | **34** | **34** | **1.7 KB** | |
+| **小計** (3 ファイル) | **34** | **34** | **2.0 KB** | |
 
 #### (直下)
 
@@ -400,7 +400,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 3411 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 3434 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -441,6 +441,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20260911_mahjong.toml`](tests/corpus/should_read/probe_20260911_mahjong.toml) | 37 |
 |  | [`tests/corpus/should_read/probe_20260911_mi_flip.toml`](tests/corpus/should_read/probe_20260911_mi_flip.toml) | 17 |
 |  | [`tests/corpus/should_read/probe_20260911_newdomains.toml`](tests/corpus/should_read/probe_20260911_newdomains.toml) | 12 |
+|  | [`tests/corpus/should_read/probe_20260911_numeric.toml`](tests/corpus/should_read/probe_20260911_numeric.toml) | 23 |
 |  | [`tests/corpus/should_read/probe_20260911_obi_audit.toml`](tests/corpus/should_read/probe_20260911_obi_audit.toml) | 23 |
 |  | [`tests/corpus/should_read/probe_20260911_prefix_counter.toml`](tests/corpus/should_read/probe_20260911_prefix_counter.toml) | 20 |
 |  | [`tests/corpus/should_read/probe_20260911_proper2.toml`](tests/corpus/should_read/probe_20260911_proper2.toml) | 32 |
