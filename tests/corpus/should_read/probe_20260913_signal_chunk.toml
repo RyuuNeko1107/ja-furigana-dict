@@ -1,0 +1,71 @@
+# 2026-09-13 production signal_log の kanji_chunk (送り仮名付き 9,693 種) を
+# VOICEVOX と突き合わせ。 1,500 種で不一致 66、 うち実バグ 4 件。
+# ★正しく / を境に / の末に は **Lindera の compound token (band 150) に
+#   単漢字 rule (band 100) が負ける** ので、 rule ではなく entry で押さえる必要があった。
+# ★「公にする」 entry は 「主人公にする」 を ヌシヒトオオヤケニスル に壊すので不採用
+#   (A/B で検出。 公 は prev_char_type = 漢字 → コウ の rule 側で守る)。
+
+[[case]]
+input = "正しく使えば"
+mode = "hiragana"
+expected = "ただしくつかえば"
+
+[[case]]
+input = "正しかった"
+mode = "hiragana"
+expected = "ただしかった"
+
+[[case]]
+input = "正しさ"
+mode = "hiragana"
+expected = "ただしさ"
+
+[[case]]
+input = "正に"
+mode = "hiragana"
+expected = "まさに"
+
+[[case]]
+input = "修正した"
+mode = "hiragana"
+expected = "しゅうせいした"
+
+[[case]]
+input = "それを境に"
+mode = "hiragana"
+expected = "それをさかいに"
+
+[[case]]
+input = "国境"
+mode = "hiragana"
+expected = "こっきょう"
+
+[[case]]
+input = "戦いの末に"
+mode = "hiragana"
+expected = "たたかいのすえに"
+
+[[case]]
+input = "月末に"
+mode = "hiragana"
+expected = "げつまつに"
+
+[[case]]
+input = "公の場"
+mode = "hiragana"
+expected = "おおやけのば"
+
+[[case]]
+input = "主人公にする"
+mode = "hiragana"
+expected = "しゅじんこうにする"
+
+[[case]]
+input = "主人公の"
+mode = "hiragana"
+expected = "しゅじんこうの"
+
+[[case]]
+input = "公園"
+mode = "hiragana"
+expected = "こうえん"

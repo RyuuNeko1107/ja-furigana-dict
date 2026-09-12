@@ -1952,6 +1952,19 @@ default = "ヘイ"
 [[kanji]]
 char = "公"
 default = "コウ"
+# 漢字直後は音読み (主人公の / 公式) — 訓分岐より前に置く
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "コウ"
+
+# 「公の場 / 公にする」 = オオヤケ (★2026-09-13 production signal)
+[[kanji.match]]
+next_eq = "の"
+reading = "おおやけ"
+
+[[kanji.match]]
+next_eq = "に"
+reading = "おおやけ"
 
 # 「難」: unihan default 「かたい」 → ナン 系 jukugo 4 件 (= 困難 / 避難 /
 # 七難八苦 / 前途多難) + default = ナン で吸収できる pattern が圧倒的多数
@@ -3364,6 +3377,11 @@ default = "ケン"
 [[kanji]]
 char = "正"
 default = "セイ"
+# ★2026-09-13 production signal: 「正しく」 が マサシク だった (「正しい」 は entry で
+# 救えていたが 連用形が漏れ)。 「正に = マサニ」 は next_eq "に" で別途。
+[[kanji.match]]
+next_starts_any = ["しく", "しかっ", "しけれ", "しさ"]
+reading = "ただ"
 
 [[kanji]]
 char = "泰"
@@ -6821,6 +6839,11 @@ default = "キョウ"
 # 「〜の境」 = さかい (= 世界の境/生死の境)。 国境/境界/境内/心境 等は 2 字 token で非干渉
 [[kanji.match]]
 prev_eq = "の"
+reading = "さかい"
+
+# 「〜を境に」 も同様 (★2026-09-13 production signal)
+[[kanji.match]]
+prev_eq = "を"
 reading = "さかい"
 
 [[kanji]]
