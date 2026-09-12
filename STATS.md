@@ -26,12 +26,12 @@ git に commit されている master HEAD の状態を基準にする。
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,674** | **739 KB** |
 | [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **17,724** | **689 KB** |
 | [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,656** | **126 KB** |
-| [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **975** | **26 KB** |
+| [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **1,008** | **27 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,773** | **194 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **703** | **34 KB** |
-| **合計** | **64,505** | **1.77 MB** |
+| **合計** | **64,538** | **1.77 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -302,9 +302,9 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/loanwords/general.toml`](core/loanwords/general.toml) | 760 | 19 KB | 一般英語 / メディア / ゲーミング / SNS 略語 (ASCII surface) |
+| [`core/loanwords/general.toml`](core/loanwords/general.toml) | 793 | 20 KB | 一般英語 / メディア / ゲーミング / SNS 略語 (ASCII surface) |
 | [`core/loanwords/it.toml`](core/loanwords/it.toml) | 215 | 6.8 KB | IT 用語 / プログラミング言語 / OSS / クラウドサービス / 技術企業 (ASCII surface) |
-| **小計** (2 ファイル) | **975** | **26 KB** | |
+| **小計** (2 ファイル) | **1,008** | **27 KB** | |
 
 ### 分類前 inbox
 
@@ -400,7 +400,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 3628 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 3643 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -461,6 +461,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20260913_domain_collision.toml`](tests/corpus/should_read/probe_20260913_domain_collision.toml) | 13 |
 |  | [`tests/corpus/should_read/probe_20260913_entry_audit.toml`](tests/corpus/should_read/probe_20260913_entry_audit.toml) | 17 |
 |  | [`tests/corpus/should_read/probe_20260913_katakana_sweep.toml`](tests/corpus/should_read/probe_20260913_katakana_sweep.toml) | 21 |
+|  | [`tests/corpus/should_read/probe_20260913_loanwords.toml`](tests/corpus/should_read/probe_20260913_loanwords.toml) | 15 |
 |  | [`tests/corpus/should_read/probe_20260913_mahjong_yaku.toml`](tests/corpus/should_read/probe_20260913_mahjong_yaku.toml) | 12 |
 |  | [`tests/corpus/should_read/probe_20260913_voicevox2.toml`](tests/corpus/should_read/probe_20260913_voicevox2.toml) | 14 |
 |  | [`tests/corpus/should_read/probe_20260913_voicevox3.toml`](tests/corpus/should_read/probe_20260913_voicevox3.toml) | 23 |
