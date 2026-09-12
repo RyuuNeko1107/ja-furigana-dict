@@ -1,0 +1,149 @@
+# 2026-09-11 活用形監査 第4弾。 動詞 entry の連用形から派生語
+# (〜方 / 〜過ぎ / 〜直す / 〜込む / 〜出す / 〜たて) を機械生成して検査した。
+# 連用形名詞そのものが未登録だと派生語が丸ごと崩れる (咥え→テツエ / 淹れ→エンレ)。
+# 「描き出す」 は エガキダス の方が自然なので登録しない。
+
+[[case]]
+input = "淹れたて"
+mode = "hiragana"
+expected = "いれたて"
+
+[[case]]
+input = "コーヒー淹れて"
+mode = "hiragana"
+expected = "コーヒーいれて"
+
+[[case]]
+input = "苛つき"
+mode = "hiragana"
+expected = "いらつき"
+
+[[case]]
+input = "咥えてる"
+mode = "hiragana"
+expected = "くわえてる"
+
+[[case]]
+input = "抉り取る"
+mode = "hiragana"
+expected = "えぐりとる"
+
+[[case]]
+input = "叩き出し"
+mode = "hiragana"
+expected = "たたきだし"
+
+[[case]]
+input = "描き方"
+mode = "hiragana"
+expected = "かきかた"
+
+[[case]]
+input = "描き直す"
+mode = "hiragana"
+expected = "かきなおす"
+
+[[case]]
+input = "描き込む"
+mode = "hiragana"
+expected = "かきこむ"
+
+[[case]]
+input = "捏ね回す"
+mode = "hiragana"
+expected = "こねまわす"
+
+[[case]]
+input = "雪崩れてきそう"
+mode = "hiragana"
+expected = "なだれてきそう"
+
+[[case]]
+input = "燥ぎ過ぎ"
+mode = "hiragana"
+expected = "はしゃぎすぎ"
+
+[[case]]
+input = "足搔き"
+mode = "hiragana"
+expected = "あがき"
+
+[[case]]
+input = "藻搔き"
+mode = "hiragana"
+expected = "もがき"
+
+[[case]]
+input = "嘔吐き"
+mode = "hiragana"
+expected = "えずき"
+
+[[case]]
+input = "燦めき"
+mode = "hiragana"
+expected = "きらめき"
+
+[[case]]
+input = "蠢めき"
+mode = "hiragana"
+expected = "うごめき"
+
+[[case]]
+input = "蹌踉めき"
+mode = "hiragana"
+expected = "よろめき"
+
+[[case]]
+input = "額き"
+mode = "hiragana"
+expected = "ぬかずき"
+
+[[case]]
+input = "傅き"
+mode = "hiragana"
+expected = "かしずき"
+
+[[case]]
+input = "揉み解し方"
+mode = "hiragana"
+expected = "もみほぐしかた"
+
+[[case]]
+input = "嗾け方"
+mode = "hiragana"
+expected = "けしかけかた"
+
+[[case]]
+input = "嗤い声"
+mode = "hiragana"
+expected = "わらいごえ"
+
+[[case]]
+input = "揺蕩い"
+mode = "hiragana"
+expected = "たゆたい"
+
+[[case]]
+input = "強張り"
+mode = "hiragana"
+expected = "こわばり"
+
+[[case]]
+input = "摘みたて"
+mode = "hiragana"
+expected = "つみたて"
+
+[[case]]
+input = "抉じ開ける"
+mode = "hiragana"
+expected = "こじあける"
+
+[[case]]
+input = "彷徨い続ける"
+mode = "hiragana"
+expected = "さまよいつづける"
+
+[[case]]
+input = "挫き方"
+mode = "hiragana"
+expected = "くじきかた"
