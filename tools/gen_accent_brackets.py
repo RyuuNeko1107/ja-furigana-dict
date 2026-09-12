@@ -85,14 +85,26 @@ def bracketize(reading: str, atype: int) -> str | None:
     return "[" + "".join(morae[:atype]) + "]" + "".join(morae[atype:])
 
 
-def load_unidic(lex_path: Path) -> dict[tuple[str, str], set[str]]:
-    """(surface, カタカナ読み) → aType 候補集合。固有名詞・記号行は除外。"""
+def load_unidic(
+    lex_path: Path, include_proper: bool = False
+) -> dict[tuple[str, str], set[str]]:
+    """(surface, カタカナ読み) → aType 候補集合。記号行は常に除外。
+
+    `include_proper` で **固有名詞行も採用** する (地名 / 作品名 / 一般化した姓)。
+    既定で除外しているのは 「人名の accent は姓名の組み合わせで動くので
+    UniDic 単独行を当てても外れる」 ため。 ただし 東京 [0] / 中国 [1] / 関西 [1] /
+    博多 [0] のような **地名・固有名詞由来の一般語** は dict 側に entry があり、
+    aType が一意なら採用して問題ない (2026-09-13 に 562 件を実測して確認)。
+    人名 file (core/jukugo/proper/) は `iter_target_files` 側で除外済み。
+    """
     table: dict[tuple[str, str], set[str]] = {}
     with open(lex_path, encoding="utf-8", newline="") as fh:
         for row in csv.reader(fh):
             if len(row) <= COL_ATYPE:
                 continue
-            if row[COL_POS1] in EXCLUDE_POS1 or row[COL_POS2] in EXCLUDE_POS2:
+            if row[COL_POS1] in EXCLUDE_POS1:
+                continue
+            if not include_proper and row[COL_POS2] in EXCLUDE_POS2:
                 continue
             atype = row[COL_ATYPE]
             if not atype or atype == "*":
@@ -189,6 +201,11 @@ def main() -> int:
     ap.add_argument("--lex", required=True, type=Path, help="UniDic kana-accent lex.csv")
     ap.add_argument("--apply", action="store_true", help="TOML を in-place 書き換え")
     ap.add_argument(
+        "--include-proper",
+        action="store_true",
+        help="UniDic の固有名詞行も突合に使う (地名 / 作品名。 人名 file は元々対象外)",
+    )
+    ap.add_argument(
         "--report",
         type=Path,
         default=REPO_ROOT / "accent_brackets_report.tsv",
@@ -203,7 +220,7 @@ def main() -> int:
     args = ap.parse_args()
 
     print(f"loading UniDic lex: {args.lex}", file=sys.stderr)
-    unidic = load_unidic(args.lex)
+    unidic = load_unidic(args.lex, include_proper=args.include_proper)
     print(f"  {len(unidic)} (surface, reading) keys", file=sys.stderr)
 
     all_rows: list[list[str]] = []
