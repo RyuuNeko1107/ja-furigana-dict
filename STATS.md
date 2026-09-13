@@ -400,7 +400,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 3735 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 3736 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -419,7 +419,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/name_suffix_20260612.toml`](tests/corpus/should_read/name_suffix_20260612.toml) | 55 |
 |  | [`tests/corpus/should_read/probe_20260621.toml`](tests/corpus/should_read/probe_20260621.toml) | 87 |
 |  | [`tests/corpus/should_read/probe_20260706.toml`](tests/corpus/should_read/probe_20260706.toml) | 17 |
-|  | [`tests/corpus/should_read/probe_20260811_surname_suffix.toml`](tests/corpus/should_read/probe_20260811_surname_suffix.toml) | 28 |
+|  | [`tests/corpus/should_read/probe_20260811_surname_suffix.toml`](tests/corpus/should_read/probe_20260811_surname_suffix.toml) | 29 |
 |  | [`tests/corpus/should_read/probe_20260828_bot_dict.toml`](tests/corpus/should_read/probe_20260828_bot_dict.toml) | 13 |
 |  | [`tests/corpus/should_read/probe_20260911_brands.toml`](tests/corpus/should_read/probe_20260911_brands.toml) | 32 |
 |  | [`tests/corpus/should_read/probe_20260911_compat_kai.toml`](tests/corpus/should_read/probe_20260911_compat_kai.toml) | 3 |
