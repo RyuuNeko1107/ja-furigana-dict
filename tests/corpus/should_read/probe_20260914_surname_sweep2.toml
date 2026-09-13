@@ -1,0 +1,91 @@
+# 姓 sweep 第2弾 (敬称なしで出現する人名 / 作品名)。
+
+[[case]]
+input = "涼宮ハルヒ"
+mode = "hiragana"
+expected = "すずみやハルヒ"
+
+[[case]]
+input = "矢崎拓也"
+mode = "hiragana"
+expected = "やざきたくや"
+
+[[case]]
+input = "藤子不二雄"
+mode = "hiragana"
+expected = "ふじこふじお"
+
+[[case]]
+input = "喪黒福造"
+mode = "hiragana"
+expected = "もぐろふくぞう"
+
+[[case]]
+input = "窪塚洋介"
+mode = "hiragana"
+expected = "くぼづかようすけ"
+
+[[case]]
+input = "酒鬼薔薇"
+mode = "hiragana"
+expected = "さかきばら"
+
+[[case]]
+input = "深津絵里"
+mode = "hiragana"
+expected = "ふかつえり"
+
+[[case]]
+input = "真矢みき"
+mode = "hiragana"
+expected = "まやみき"
+
+[[case]]
+input = "檜佐木修兵"
+mode = "hiragana"
+expected = "ひさぎしゅうへい"
+
+[[case]]
+input = "百田尚樹"
+mode = "hiragana"
+expected = "ももたなおき"
+
+[[case]]
+input = "笑福亭鶴瓶"
+mode = "hiragana"
+expected = "しょうふくていつるべ"
+
+[[case]]
+input = "三木谷"
+mode = "hiragana"
+expected = "みきたに"
+
+[[case]]
+input = "礒部"
+mode = "hiragana"
+expected = "いそべ"
+
+[[case]]
+input = "磯部"
+mode = "hiragana"
+expected = "いそべ"
+
+[[case]]
+input = "帯刀して"
+mode = "hiragana"
+expected = "たいとうして"
+
+[[case]]
+input = "帯刀先生"
+mode = "hiragana"
+expected = "たちはきせんじょう"
+
+[[case]]
+input = "八神庵"
+mode = "hiragana"
+expected = "やがみいおり"
+
+[[case]]
+input = "藤真健司"
+mode = "hiragana"
+expected = "ふじまけんじ"
