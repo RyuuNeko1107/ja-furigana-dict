@@ -1,0 +1,66 @@
+# カタカナ語 + 単漢字 接尾 (名 / 済 / 球) の読み分け。
+# 内部評価コーパスで カタカナ + 名 494 / 済 385 / 球 153 件を確認して追加した rule の回帰ロック。
+
+[[cases]]
+input = "チーム名"
+expected = "チームめい"
+
+[[cases]]
+input = "ユニット名"
+expected = "ユニットめい"
+
+[[cases]]
+input = "ユーザー名"
+expected = "ユーザーめい"
+
+[[cases]]
+input = "名前"
+expected = "なまえ"
+
+[[cases]]
+input = "名シーン"
+expected = "めいシーン"
+
+[[cases]]
+input = "アダ名"
+expected = "あだな"
+
+[[cases]]
+input = "プレイ済"
+expected = "プレイずみ"
+
+[[cases]]
+input = "クリア済"
+expected = "クリアずみ"
+
+[[cases]]
+input = "済む"
+expected = "すむ"
+
+[[cases]]
+input = "経済"
+expected = "けいざい"
+
+[[cases]]
+input = "ボール球"
+expected = "ボールだま"
+
+[[cases]]
+input = "オリ球"
+expected = "オリだま"
+
+[[cases]]
+input = "すげー球"
+expected = "すげーたま"
+
+[[cases]]
+input = "ピッチャー球"
+expected = "ピッチャーたま"
+
+[[cases]]
+input = "野球"
+expected = "やきゅう"
+
+[[cases]]
+input = "決め球"
+expected = "きめだま"
