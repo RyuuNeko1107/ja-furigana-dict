@@ -1,0 +1,72 @@
+# 姓 sweep の副産物。 実文脈で誤読していた語 (人名 / 地名 / 一般語が混在)。
+# 田畑 / 数見 は文脈で読みが割れるので entry を入れない ことの回帰ロックも兼ねる。
+
+[[case]]
+input = "土器土器"
+mode = "hiragana"
+expected = "どきどき"
+
+[[case]]
+input = "縄文土器"
+mode = "hiragana"
+expected = "じょうもんどき"
+
+[[case]]
+input = "白旗あげる"
+mode = "hiragana"
+expected = "しらはたあげる"
+
+[[case]]
+input = "水見式"
+mode = "hiragana"
+expected = "みずみしき"
+
+[[case]]
+input = "松前漬け"
+mode = "hiragana"
+expected = "まつまえづけ"
+
+[[case]]
+input = "赤魚の煮付け"
+mode = "hiragana"
+expected = "あかうおのにつけ"
+
+[[case]]
+input = "範馬勇次郎"
+mode = "hiragana"
+expected = "はんまゆうじろう"
+
+[[case]]
+input = "八代市"
+mode = "hiragana"
+expected = "やつしろし"
+
+[[case]]
+input = "八代亜紀"
+mode = "hiragana"
+expected = "やしろあき"
+
+[[case]]
+input = "床田"
+mode = "hiragana"
+expected = "とこだ"
+
+[[case]]
+input = "三國無双"
+mode = "hiragana"
+expected = "さんごくむそう"
+
+[[case]]
+input = "三国志"
+mode = "hiragana"
+expected = "さんごくし"
+
+[[case]]
+input = "田畑が宅地に"
+mode = "hiragana"
+expected = "たはたがたくちに"
+
+[[case]]
+input = "所持数見て"
+mode = "hiragana"
+expected = "しょじすうみて"
