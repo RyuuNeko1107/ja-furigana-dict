@@ -24,14 +24,14 @@ git に commit されている master HEAD の状態を基準にする。
 | カテゴリ | エントリ数 | サイズ |
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,674** | **739 KB** |
-| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **17,780** | **691 KB** |
+| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **17,781** | **691 KB** |
 | [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,656** | **126 KB** |
-| [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **1,008** | **27 KB** |
+| [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **1,019** | **27 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,773** | **194 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **703** | **34 KB** |
-| **合計** | **64,594** | **1.77 MB** |
+| **合計** | **64,606** | **1.77 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -56,7 +56,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/jukugo/<genre>/*` — 手動 PR メンテのジャンル別 jukugo (≥ 2 字 surface)。 lib の Step 3 (jukugo lookup) で Lindera より優先採用。 各 genre dir の `_genre.toml` がカテゴリ description を持つ。
 
-**合計**: 17,780 件 / 691 KB (genre 6 区分)
+**合計**: 17,781 件 / 691 KB (genre 6 区分)
 
 #### 自然・生命
 
@@ -159,9 +159,9 @@ git に commit されている master HEAD の状態を基準にする。
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml) | 4,447 | 212 KB | 二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む) |
+| [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml) | 4,448 | 213 KB | 二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む) |
 | [`core/jukugo/basic/four_char.toml`](core/jukugo/basic/four_char.toml) | 35 | 2.3 KB | 四字熟語 (4 字 + 全 CJK 漢字) |
-| **小計** (2 ファイル) | **4,482** | **215 KB** | |
+| **小計** (2 ファイル) | **4,483** | **215 KB** | |
 
 
 ### 作品造語
@@ -302,9 +302,9 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/loanwords/general.toml`](core/loanwords/general.toml) | 793 | 20 KB | 一般英語 / メディア / ゲーミング / SNS 略語 (ASCII surface) |
+| [`core/loanwords/general.toml`](core/loanwords/general.toml) | 804 | 21 KB | 一般英語 / メディア / ゲーミング / SNS 略語 (ASCII surface) |
 | [`core/loanwords/it.toml`](core/loanwords/it.toml) | 215 | 6.8 KB | IT 用語 / プログラミング言語 / OSS / クラウドサービス / 技術企業 (ASCII surface) |
-| **小計** (2 ファイル) | **1,008** | **27 KB** | |
+| **小計** (2 ファイル) | **1,019** | **27 KB** | |
 
 ### 分類前 inbox
 
@@ -400,7 +400,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 3793 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 3803 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -462,6 +462,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20260913_entry_audit.toml`](tests/corpus/should_read/probe_20260913_entry_audit.toml) | 17 |
 |  | [`tests/corpus/should_read/probe_20260913_fresh_corpus.toml`](tests/corpus/should_read/probe_20260913_fresh_corpus.toml) | 15 |
 |  | [`tests/corpus/should_read/probe_20260913_given_name.toml`](tests/corpus/should_read/probe_20260913_given_name.toml) | 12 |
+|  | [`tests/corpus/should_read/probe_20260913_guild_dict.toml`](tests/corpus/should_read/probe_20260913_guild_dict.toml) | 10 |
 |  | [`tests/corpus/should_read/probe_20260913_homograph.toml`](tests/corpus/should_read/probe_20260913_homograph.toml) | 14 |
 |  | [`tests/corpus/should_read/probe_20260913_katakana_sweep.toml`](tests/corpus/should_read/probe_20260913_katakana_sweep.toml) | 21 |
 |  | [`tests/corpus/should_read/probe_20260913_loanwords.toml`](tests/corpus/should_read/probe_20260913_loanwords.toml) | 15 |
