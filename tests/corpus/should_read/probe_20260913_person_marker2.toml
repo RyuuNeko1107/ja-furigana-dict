@@ -1,0 +1,74 @@
+# 2026-09-13 人物マーカー probe 第2弾。 頻度帯を 10-39 回に下げて 483 種を検査。
+# ★実バグ 6 件: 長尾 = チョウビ / 瀬川 = セカワ / 千賀 = チカ (ソフトバンク 千賀滉大) /
+#   竹達 = タケタチ (声優 竹達彩奈) / 咲世子 = サセイシ (コードギアス 篠崎咲世子) /
+#   刀子 = カタナシ。 いずれも 「姓 + 敬称」 では正しく読めていたが裸だと崩れる型。
+
+[[case]]
+input = "長尾"
+mode = "hiragana"
+expected = "ながお"
+
+[[case]]
+input = "瀬川"
+mode = "hiragana"
+expected = "せがわ"
+
+[[case]]
+input = "千賀"
+mode = "hiragana"
+expected = "せんが"
+
+[[case]]
+input = "千賀滉大"
+mode = "hiragana"
+expected = "せんがこうだい"
+
+[[case]]
+input = "竹達彩奈"
+mode = "hiragana"
+expected = "たけたつあやな"
+
+[[case]]
+input = "咲世子"
+mode = "hiragana"
+expected = "さよこ"
+
+[[case]]
+input = "刀子"
+mode = "hiragana"
+expected = "とうこ"
+
+[[case]]
+input = "葛葉"
+mode = "hiragana"
+expected = "くずは"
+
+[[case]]
+input = "四季凪"
+mode = "hiragana"
+expected = "しきなぎ"
+
+[[case]]
+input = "甲斐田"
+mode = "hiragana"
+expected = "かいだ"
+
+[[case]]
+input = "夜一"
+mode = "hiragana"
+expected = "よるいち"
+
+[[case]]
+input = "二岡"
+mode = "hiragana"
+expected = "におか"
+
+[[case]]
+input = "照英"
+mode = "hiragana"
+expected = "しょうえい"
+
+[[case]]
+input = "高津"
+mode = "hiragana"
+expected = "たかつ"
