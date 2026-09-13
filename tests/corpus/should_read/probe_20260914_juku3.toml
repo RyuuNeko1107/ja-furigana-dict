@@ -1,0 +1,72 @@
+# 3-4 字未登録語の点検で見つかった分。
+# 今 + カタカナ は 「今、チャンス」 の副詞用法が多数派 (2,058 件) なので rule 化せず entry のみ。
+
+[[case]]
+input = "今大会"
+mode = "hiragana"
+expected = "こんたいかい"
+
+[[case]]
+input = "今シーズン"
+mode = "hiragana"
+expected = "こんしーずん"
+
+[[case]]
+input = "今クール"
+mode = "hiragana"
+expected = "こんくーる"
+
+[[case]]
+input = "今チャンス"
+mode = "hiragana"
+expected = "いまチャンス"
+
+[[case]]
+input = "今テトリス"
+mode = "hiragana"
+expected = "いまテトリス"
+
+[[case]]
+input = "今作"
+mode = "hiragana"
+expected = "こんさく"
+
+[[case]]
+input = "前評判"
+mode = "hiragana"
+expected = "ぜんひょうばん"
+
+[[case]]
+input = "前日譚"
+mode = "hiragana"
+expected = "ぜんじつたん"
+
+[[case]]
+input = "前回"
+mode = "hiragana"
+expected = "ぜんかい"
+
+[[case]]
+input = "正拳突き"
+mode = "hiragana"
+expected = "せいけんづき"
+
+[[case]]
+input = "笑笑"
+mode = "hiragana"
+expected = "わらわら"
+
+[[case]]
+input = "笑笑笑"
+mode = "hiragana"
+expected = "わらわらわら"
+
+[[case]]
+input = "笑笑笑笑笑"
+mode = "hiragana"
+expected = "わらわらわらわらわら"
+
+[[case]]
+input = "笑"
+mode = "hiragana"
+expected = "わらい"
