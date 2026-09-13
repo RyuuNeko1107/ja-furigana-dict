@@ -27,10 +27,12 @@ ja-furigana CLI が PATH にある必要があります (`cargo install ja-furig
 from __future__ import annotations
 
 import argparse
+import os
 import shutil
 import subprocess
 import sys
 import tomllib
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -53,13 +55,8 @@ def find_furigana_binary(override: str | None) -> str:
     return found
 
 
-def run_lookup(binary: str, text: str, mode: str, data_dir: str | None, dict_root: Path | None) -> str:
-    """`furigana lookup <text> --mode <mode>` を呼び出して stdout を返す.
-
-    `dict_root` 指定時は repo raw 構造 (= rules/ + core/<sub>/) から直接 mount する
-    `--rules-dir` / `--core-dict-dir` を組み立てる (= dev workflow、 `furigana dict pull`
-    された flat 構造 `<data_dir>/data/` をスキップ)。
-    """
+def lookup_cmd(binary: str, mode: str, data_dir: str | None, dict_root: Path | None) -> list[str]:
+    """`furigana lookup` の共通 argv (入力テキスト手前まで) を組み立てる。"""
     cmd = [binary]
     if data_dir:
         cmd += ["--data-dir", data_dir]
@@ -72,6 +69,63 @@ def run_lookup(binary: str, text: str, mode: str, data_dir: str | None, dict_roo
             core_sub = dict_root / "core" / sub
             if core_sub.is_dir():
                 cmd += ["--core-dict-dir", str(core_sub)]
+    return cmd
+
+
+def supports_batch(binary: str) -> bool:
+    """CLI が `lookup --batch` を持っているか (古い binary との互換のため)。"""
+    try:
+        r = subprocess.run(  # nosec B603 — fixed argv, no shell
+            [binary, "lookup", "--help"],
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            timeout=30,
+            check=False,
+        )
+    except (OSError, subprocess.TimeoutExpired):
+        return False
+    return "--batch" in (r.stdout or "")
+
+
+def run_batch(
+    binary: str, texts: list[str], mode: str, data_dir: str | None, dict_root: Path | None
+) -> list[str] | None:
+    """`lookup --batch` で複数入力を 1 プロセスで変換する。
+
+    辞書 load が 1 回で済むので、 件数が多いほど効く (4,000 件で分単位 → 秒単位)。
+    行数が合わない / 異常終了した場合は None を返し、 呼び出し側が 1 件ずつに
+    fallback する。
+    """
+    cmd = lookup_cmd(binary, mode, data_dir, dict_root) + ["--batch"]
+    try:
+        r = subprocess.run(  # nosec B603 — fixed argv, no shell
+            cmd,
+            input=chr(10).join(texts) + chr(10),
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            timeout=600,
+            check=False,
+        )
+    except (OSError, subprocess.TimeoutExpired):
+        return None
+    if r.returncode != 0:
+        return None
+    out = (r.stdout or "").split(chr(10))
+    if out and out[-1] == "":
+        out.pop()
+    return out if len(out) == len(texts) else None
+
+
+def run_lookup(binary: str, text: str, mode: str, data_dir: str | None, dict_root: Path | None) -> str:
+    """`furigana lookup <text> --mode <mode>` を呼び出して stdout を返す.
+
+    `dict_root` 指定時は repo raw 構造 (= rules/ + core/<sub>/) から直接 mount する
+    `--rules-dir` / `--core-dict-dir` を組み立てる (= dev workflow、 `furigana dict pull`
+    された flat 構造 `<data_dir>/data/` をスキップ)。
+    """
+    cmd = lookup_cmd(binary, mode, data_dir, dict_root)
     # `-3` のように `-` で始まる入力が option として解釈されないよう `--` で区切る
     cmd += ["--", text]
     try:
@@ -116,6 +170,65 @@ def collect_corpus_files(corpus_arg: Path) -> list[Path]:
     return files
 
 
+# `--batch` が使えない mode (出力が複数行になるので行対応が取れない)
+NON_BATCH_MODES = frozenset({"analyze", "accent"})
+
+
+def run_all(
+    binary: str,
+    pending: list[tuple[Path, int, dict]],
+    data_dir: str | None,
+    dict_root: Path | None,
+    jobs: int,
+) -> list[str]:
+    """全 case の lookup を実行して、 pending と同じ順の出力 list を返す。
+
+    mode ごとに `lookup --batch` で 1 プロセスにまとめ、 使えない場合だけ
+    1 件ずつ並列実行へ fallback する。
+    """
+    outputs: list[str | None] = [None] * len(pending)
+    leftover: list[int] = []
+
+    if supports_batch(binary):
+        by_mode: dict[str, list[int]] = {}
+        for i, (_f, _idx, case) in enumerate(pending):
+            mode = case.get("mode", "tts")
+            text = case.get("input", "")
+            if mode in NON_BATCH_MODES or chr(10) in text or chr(13) in text:
+                leftover.append(i)
+            else:
+                by_mode.setdefault(mode, []).append(i)
+        for mode, idxs in by_mode.items():
+            texts = [pending[i][2].get("input", "") for i in idxs]
+            got = run_batch(binary, texts, mode, data_dir, dict_root)
+            if got is None:
+                leftover.extend(idxs)
+                continue
+            for i, val in zip(idxs, got):
+                outputs[i] = val
+    else:
+        leftover = list(range(len(pending)))
+
+    if leftover:
+        with ThreadPoolExecutor(max_workers=jobs) as ex:
+            got = list(
+                ex.map(
+                    lambda i: run_lookup(
+                        binary,
+                        pending[i][2].get("input", ""),
+                        pending[i][2].get("mode", "tts"),
+                        data_dir,
+                        dict_root,
+                    ),
+                    leftover,
+                )
+            )
+        for i, val in zip(leftover, got):
+            outputs[i] = val
+
+    return [o if o is not None else "" for o in outputs]
+
+
 def run_corpus(
     corpus_path: Path,
     binary: str,
@@ -123,12 +236,14 @@ def run_corpus(
     *,
     verbose: bool,
     dict_root: Path | None = None,
+    jobs: int = 0,
 ) -> tuple[int, int, list[str]]:
     """corpus toml を読み出して全 case を実行、(passed, total, failures) を返す。
 
     `corpus_path` は file または dir。 dir の場合は配下 `*.toml` を再帰的に全部実行する。
     `dict_root` 指定時は repo raw 構造 (= rules/ + core/<sub>/) を直接 mount する。
     """
+    jobs = jobs or min(32, (os.cpu_count() or 4) * 2)
     files = collect_corpus_files(corpus_path)
     if not files:
         sys.exit(f"[FAIL] no toml files found under: {corpus_path}")
@@ -142,6 +257,10 @@ def run_corpus(
     failures: list[str] = []
     passed = 0
     case_index = 0
+    # ★ case ごとに binary を起動すると 1 件あたり dict load 込みで 100ms 超かかり、
+    #   4,000 件で 7 分近くになる。 まず全 case を集めてから lookup だけ並列実行する
+    #   (subprocess 待ちなので GIL は問題にならない)。
+    pending: list[tuple[Path, int, dict]] = []
     for f in files:
         with f.open("rb") as fp:
             data = tomllib.load(fp)
@@ -158,58 +277,60 @@ def run_corpus(
 
         for case in cases:
             case_index += 1
-            text = case.get("input", "")
-            mode = case.get("mode", "tts")
-            expected = case.get("expected")
-            note = case.get("note", "")
-            # 新 schema (alpha.10+): [[case.targets]] で 1 例文内の N 個の対象語句を
-            # (surface, reading) ペアで列挙。 expected の full match assertion とは別に
-            # 各 target について「surface に対する reading が output 中に含まれるか」
-            # の追加 assertion を行う。 backward compat: targets 無ければ skip。
-            targets = case.get("targets") or []
-
-            if expected is None and not targets:
-                # should_not_read_yet / out_of_scope では expected_failure_reason を持つ
-                # ことになっているので、 そちらは ここでは検証対象外として skip。
+            if case.get("expected") is None and not (case.get("targets") or []):
+                # should_not_read_yet / out_of_scope では expected_failure_reason を
+                # 持つことになっているので、 そちらは ここでは検証対象外として skip。
                 continue
+            pending.append((f, case_index, case))
 
-            actual = run_lookup(binary, text, mode, data_dir, dict_root)
+    outputs = run_all(binary, pending, data_dir, dict_root, jobs)
 
-            # ── (1) full match (expected) ──
-            full_match_ok = expected is None or actual == expected
+    for (f, case_index, case), actual in zip(pending, outputs):
+        text = case.get("input", "")
+        mode = case.get("mode", "tts")
+        expected = case.get("expected")
+        note = case.get("note", "")
+        # 新 schema (alpha.10+): [[case.targets]] で 1 例文内の N 個の対象語句を
+        # (surface, reading) ペアで列挙。 expected の full match assertion とは別に
+        # 各 target について「surface に対する reading が output 中に含まれるか」
+        # の追加 assertion を行う。 backward compat: targets 無ければ skip。
+        targets = case.get("targets") or []
 
-            # ── (2) per-target match (substring) ──
-            target_failures: list[str] = []
-            for t in targets:
-                if not isinstance(t, dict):
-                    continue
-                surf = t.get("surface")
-                rdg = t.get("reading")
-                if not (isinstance(surf, str) and isinstance(rdg, str)):
-                    continue
-                if rdg not in actual:
-                    target_failures.append(
-                        f"             - 対象 `{surf}` の reading `{rdg}` が output に含まれない"
-                    )
+        # ── (1) full match (expected) ──
+        full_match_ok = expected is None or actual == expected
 
-            if full_match_ok and not target_failures:
-                passed += 1
-                if verbose:
-                    tgt_note = f" + {len(targets)} target" if targets else ""
-                    print(f"  [OK]   {case_index:>3}. {text!r} ({mode}){tgt_note} → {actual!r}")
-            else:
-                msg_parts = [f"  [FAIL] {case_index:>3}. {text!r} ({mode}) [{f.name}]"]
-                if not full_match_ok:
-                    msg_parts.append(f"           expected: {expected!r}")
-                    msg_parts.append(f"           actual:   {actual!r}")
-                if target_failures:
-                    msg_parts.append("           target 検証失敗:")
-                    msg_parts.extend(target_failures)
-                if note:
-                    msg_parts.append(f"           note:     {note}")
-                msg = "\n".join(msg_parts)
-                failures.append(msg)
-                print(msg)
+        # ── (2) per-target match (substring) ──
+        target_failures: list[str] = []
+        for t in targets:
+            if not isinstance(t, dict):
+                continue
+            surf = t.get("surface")
+            rdg = t.get("reading")
+            if not (isinstance(surf, str) and isinstance(rdg, str)):
+                continue
+            if rdg not in actual:
+                target_failures.append(
+                    f"             - 対象 `{surf}` の reading `{rdg}` が output に含まれない"
+                )
+
+        if full_match_ok and not target_failures:
+            passed += 1
+            if verbose:
+                tgt_note = f" + {len(targets)} target" if targets else ""
+                print(f"  [OK]   {case_index:>3}. {text!r} ({mode}){tgt_note} → {actual!r}")
+        else:
+            msg_parts = [f"  [FAIL] {case_index:>3}. {text!r} ({mode}) [{f.name}]"]
+            if not full_match_ok:
+                msg_parts.append(f"           expected: {expected!r}")
+                msg_parts.append(f"           actual:   {actual!r}")
+            if target_failures:
+                msg_parts.append("           target 検証失敗:")
+                msg_parts.extend(target_failures)
+            if note:
+                msg_parts.append(f"           note:     {note}")
+            msg = "\n".join(msg_parts)
+            failures.append(msg)
+            print(msg)
 
     total = passed + len(failures)
     return passed, total, failures
@@ -228,6 +349,12 @@ def main() -> int:
             f"対象 corpus toml file または dir (default: "
             f"{DEFAULT_CORPUS.relative_to(REPO_ROOT)}、 同名 dir があれば併合)"
         ),
+    )
+    parser.add_argument(
+        "--jobs",
+        type=int,
+        default=0,
+        help="lookup の並列実行数 (default: CPU 数 x2、 1 で逐次)",
     )
     parser.add_argument(
         "--binary",
@@ -274,7 +401,12 @@ def main() -> int:
     print()
 
     passed, total, failures = run_corpus(
-        args.corpus, binary, args.data_dir, verbose=args.verbose, dict_root=dict_root
+        args.corpus,
+        binary,
+        args.data_dir,
+        verbose=args.verbose,
+        dict_root=dict_root,
+        jobs=args.jobs,
     )
 
     print()
