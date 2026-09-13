@@ -1,0 +1,54 @@
+# 2026-09-13 読み上げ BOT のギルド辞書 (利用者が自力で登録した置換 126 件) 起点。
+# 利用者が登録した = **BOT が読めなかった証拠**。 素通しになっていた 36 語のうち、
+# 一般語彙として妥当な 11 語を loanwords へ、 尊死 (VTuber スラング) を jukugo へ。
+# 個人ハンドル (tamさん / bossaさん) やネタ置換 (スフィア → アフロです) は採録しない。
+
+[[case]]
+input = "VALORANT"
+mode = "tts"
+expected = "ヴァロラント"
+
+[[case]]
+input = "healer"
+mode = "tts"
+expected = "ヒーラー"
+
+[[case]]
+input = "dispel"
+mode = "tts"
+expected = "ディスペル"
+
+[[case]]
+input = "purge"
+mode = "tts"
+expected = "パージ"
+
+[[case]]
+input = "thx"
+mode = "tts"
+expected = "サンクス"
+
+[[case]]
+input = "sphere"
+mode = "tts"
+expected = "スフィア"
+
+[[case]]
+input = "KFC"
+mode = "tts"
+expected = "ケーエフシー"
+
+[[case]]
+input = "尊死"
+mode = "tts"
+expected = "とうとし"
+
+[[case]]
+input = "原神"
+mode = "tts"
+expected = "げんしん"
+
+[[case]]
+input = "右往左往"
+mode = "tts"
+expected = "うおうさおう"
