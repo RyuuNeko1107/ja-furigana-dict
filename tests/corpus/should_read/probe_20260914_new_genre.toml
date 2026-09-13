@@ -1,0 +1,85 @@
+# 2026-09-14 収集ジャンルを広げた後の新規テキストから。
+# ★人: カタカナ語 + 人 = ジン (サイヤ人 831 / ブリタニア人 143 / アメリカ人 73)。
+#   長音符 「ー」 もカタカナ文字種なので 「まぁー人が多い」 を先行 rule で除外する
+#   (酒 / 船 で不採用にしたのと同じ罠。 今回は除外 rule を足して両立させた)。
+# ケガ人 / ゼロ人 は ニン なので entry で固定。 かめはめ波 = カメハメハ。
+
+[[case]]
+input = "サイヤ人"
+mode = "hiragana"
+expected = "サイヤじん"
+
+[[case]]
+input = "超サイヤ人"
+mode = "hiragana"
+expected = "ちょうサイヤじん"
+
+[[case]]
+input = "アメリカ人"
+mode = "hiragana"
+expected = "アメリカじん"
+
+[[case]]
+input = "ブリタニア人"
+mode = "hiragana"
+expected = "ブリタニアじん"
+
+[[case]]
+input = "ケガ人"
+mode = "hiragana"
+expected = "けがにん"
+
+[[case]]
+input = "ゼロ人"
+mode = "hiragana"
+expected = "ぜろにん"
+
+[[case]]
+input = "まぁー人が多い"
+mode = "hiragana"
+expected = "まぁーひとがおおい"
+
+[[case]]
+input = "三人"
+mode = "hiragana"
+expected = "さんにん"
+
+[[case]]
+input = "二人"
+mode = "hiragana"
+expected = "ふたり"
+
+[[case]]
+input = "個人"
+mode = "hiragana"
+expected = "こじん"
+
+[[case]]
+input = "恋人"
+mode = "hiragana"
+expected = "こいびと"
+
+[[case]]
+input = "かめはめ波"
+mode = "hiragana"
+expected = "かめはめは"
+
+[[case]]
+input = "元気玉"
+mode = "hiragana"
+expected = "げんきだま"
+
+[[case]]
+input = "界王拳"
+mode = "hiragana"
+expected = "かいおうけん"
+
+[[case]]
+input = "亀仙人"
+mode = "hiragana"
+expected = "かめせんにん"
+
+[[case]]
+input = "古謝"
+mode = "hiragana"
+expected = "こじゃ"
