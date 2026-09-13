@@ -147,8 +147,13 @@ def run_corpus(
             data = tomllib.load(fp)
         cases = data.get("case", [])
         if not cases:
-            if verbose:
-                print(f"[WARN] {f} に case がありません")
+            # ★空 file を黙って skip すると、 table 名の打ち間違い ([[cases]] 等) で
+            #   回帰 case が 1 件も走っていないことに気付けない。 失敗として扱う。
+            stray = [k for k in data if k not in ("case", "meta")]
+            failures.append(
+                f"[EMPTY] {f} に case がありません"
+                + (f" (未知の table: {', '.join(stray)})" if stray else "")
+            )
             continue
 
         for case in cases:

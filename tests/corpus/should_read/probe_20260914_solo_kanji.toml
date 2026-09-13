@@ -1,0 +1,98 @@
+# ひらがなに挟まれた単漢字 (= default 読みがそのまま出る位置) の読み分け。
+# 者 = かな語 + 者 の モノ 読み漏れ、 粉 = 単独名詞 こな の default 反転。
+# ※ entry で読みを固定した語は hiragana mode でカタカナ部分もひらがな化される。
+
+[[case]]
+input = "くせ者"
+mode = "hiragana"
+expected = "くせもの"
+
+[[case]]
+input = "ならず者"
+mode = "hiragana"
+expected = "ならずもの"
+
+[[case]]
+input = "裏切り者"
+mode = "hiragana"
+expected = "うらぎりもの"
+
+[[case]]
+input = "働き者"
+mode = "hiragana"
+expected = "はたらきもの"
+
+[[case]]
+input = "切れ者"
+mode = "hiragana"
+expected = "きれもの"
+
+[[case]]
+input = "よそ者"
+mode = "hiragana"
+expected = "よそもの"
+
+[[case]]
+input = "お尋ね者"
+mode = "hiragana"
+expected = "おたずねもの"
+
+[[case]]
+input = "医者"
+mode = "hiragana"
+expected = "いしゃ"
+
+[[case]]
+input = "関係者"
+mode = "hiragana"
+expected = "かんけいしゃ"
+
+[[case]]
+input = "若者"
+mode = "hiragana"
+expected = "わかもの"
+
+[[case]]
+input = "粉が舞う"
+mode = "hiragana"
+expected = "こながまう"
+
+[[case]]
+input = "白い粉"
+mode = "hiragana"
+expected = "しろいこな"
+
+[[case]]
+input = "小麦粉"
+mode = "hiragana"
+expected = "こむぎこ"
+
+[[case]]
+input = "片栗粉"
+mode = "hiragana"
+expected = "かたくりこ"
+
+[[case]]
+input = "花粉症"
+mode = "hiragana"
+expected = "かふんしょう"
+
+[[case]]
+input = "そば粉"
+mode = "hiragana"
+expected = "そばこ"
+
+[[case]]
+input = "歯磨き粉"
+mode = "hiragana"
+expected = "はみがきこ"
+
+[[case]]
+input = "天ぷら粉"
+mode = "hiragana"
+expected = "てんぷらこ"
+
+[[case]]
+input = "きな粉"
+mode = "hiragana"
+expected = "きなこ"
