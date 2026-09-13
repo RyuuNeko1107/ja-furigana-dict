@@ -1,4 +1,4 @@
-# 2026-09-11 読み上げ BOT (zunda-rs) 誤読報告 (misreading_reports) 起点の probe。
+# 2026-09-11 利用者からの誤読報告 起点の probe。
 # 麻雀部 Discord からの報告 9 件 + ついでの麻雀用語一括採録。
 # 一般語と衝突する語 (平和/国士無双/清一色/天和/東風 単独) は据え置き = その据え置きも lock。
 
@@ -6,7 +6,7 @@
 input = "麻雀部"
 mode = "hiragana"
 expected = "まーじゃんぶ"
-note = "BOT 誤読報告 (旧 あさささべ)"
+note = "利用者の誤読報告 (旧 あさささべ)"
 
 [[case]]
 input = "麻雀部に入った"
@@ -18,7 +18,7 @@ note = "分割誤読の文脈 lock"
 input = "酷かったです"
 mode = "hiragana"
 expected = "ひどかったです"
-note = "BOT 誤読報告 (旧 むごかった)"
+note = "利用者の誤読報告 (旧 むごかった)"
 
 [[case]]
 input = "酷かろう"
@@ -30,7 +30,7 @@ note = "同上 未然形"
 input = "縁がある"
 mode = "hiragana"
 expected = "えんがある"
-note = "BOT 誤読報告 (旧 ふちがある)"
+note = "利用者の誤読報告 (旧 ふちがある)"
 
 [[case]]
 input = "縁を感じる"

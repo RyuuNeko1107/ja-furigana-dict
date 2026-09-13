@@ -80,14 +80,14 @@ VOICEVOX 単体は dict 改善側で動かせない外部 baseline (= 同 corpus
 
 ## 評価用 corpus について
 
-評価に使うランダムサンプル日本語テキストは、 dict 改善側で以下のような source を
-匿名化・統合した内部 corpus からランダム抽出している:
+評価には、 **公開しない内部評価コーパス** からのランダムサンプルを使う。
+内容は現代日本語の口語テキストが中心で、 由来を問わず
 
-- 配信プラットフォーム (YouTube / Twitch / ニコ生 等) の **匿名化済みチャットログ**
-  (= 投稿者 / channel / 配信タイトル等の identifying 情報は破棄、 残るのはコメント
-  本文 + timestamp のみ)
-- 開発者が運営する個人 web service の テキスト ログ (= 同様に PII 除去後)
-- 公開 corpus / Wikipedia 等 一般日本語 text の random sample
+- 投稿者 / 媒体 / タイトル等の identifying 情報は保持しない (本文と timestamp のみ)
+- 個人情報は取り込み時点で除去する
+
+という前処理を通したものだけを使う。 公開 corpus (Wikipedia 等) の random sample も
+混ぜている。 **由来の内訳は公開しない** (= 逆引きのリスクを残さないため)。
 
 **corpus 本体 (= 入力 text、 sqlite DB 等) は配布しない**。 privacy 保護および
 辞書 evaluation 側の overfit 防止 (= 評価 corpus が公開されると dict 改善が

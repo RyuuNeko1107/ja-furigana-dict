@@ -965,7 +965,7 @@ kanji_numeral = true
 default = "キュウ"
 kanji_numeral = false  # 「四球 (シキュウ) / 死球 / 三球三振」 のような熟語を
 # 漢数字 + 助数詞 と誤認して よんきゅう にするため、 漢数字 bare は意図的に無効
-# (★2026-09-11 実コーパス A/B で検出)。
+# (★2026-09-11 内部評価コーパス A/B で検出)。
 
 [[counter."球".rules]]
 last_digit = [1, 6, 8, 0]
