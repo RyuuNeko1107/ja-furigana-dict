@@ -1,0 +1,72 @@
+# 2026-09-14 カタカナ隣接 sweep 第2弾。 第1弾は 「prev_char_type = 漢字 の rule を
+# 持つ漢字」 だけを候補にしていたため、 人 (rule は漢数字 literal) のような字が漏れていた。
+# 今回は **カタカナ直後に実際に出る漢字 1,768 字** を候補にし、 上位 120 字 × 代表語 2 件を
+# VOICEVOX と突合した (不一致 113、 ほぼ動詞語幹の断片)。
+# ★音: 2026-06 に 「カタカナ + 音 = オト」 と決めていたが、 実測すると
+#   ゲーム音 407 / エンジン音 69 / ピー音 64 / シャッター音 / エラー音 …と機械音が大半で
+#   オン が約 800、 オト は擬音語 + 音 の 50 前後。 反転して擬音側を entry で固定した。
+
+[[case]]
+input = "ゲーム音"
+mode = "hiragana"
+expected = "ゲームおん"
+
+[[case]]
+input = "エンジン音"
+mode = "hiragana"
+expected = "エンジンおん"
+
+[[case]]
+input = "シャッター音"
+mode = "hiragana"
+expected = "シャッターおん"
+
+[[case]]
+input = "クリック音"
+mode = "hiragana"
+expected = "クリックおん"
+
+[[case]]
+input = "エラー音"
+mode = "hiragana"
+expected = "エラーおん"
+
+[[case]]
+input = "ピー音"
+mode = "hiragana"
+expected = "ピーおん"
+
+[[case]]
+input = "イイ音"
+mode = "hiragana"
+expected = "いいおと"
+
+[[case]]
+input = "シャキシャキ音"
+mode = "hiragana"
+expected = "しゃきしゃきおと"
+
+[[case]]
+input = "足音"
+mode = "hiragana"
+expected = "あしおと"
+
+[[case]]
+input = "録音"
+mode = "hiragana"
+expected = "ろくおん"
+
+[[case]]
+input = "防音"
+mode = "hiragana"
+expected = "ぼうおん"
+
+[[case]]
+input = "母音"
+mode = "hiragana"
+expected = "ぼいん"
+
+[[case]]
+input = "音が"
+mode = "hiragana"
+expected = "おとが"
