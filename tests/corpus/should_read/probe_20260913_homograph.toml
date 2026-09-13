@@ -1,0 +1,75 @@
+# 2026-09-13 同形異音語の点検。 UniDic が 2 読み以上を持つ漢字語のうち
+# コーパス 100 回以上の 408 語について、 現在の選択が実データの主用法と合うか調べた。
+# ★ほぼ全て正しく、 実バグは 大谷 / 石化 / 万人受け の 3 件。
+# 大谷: 3,501 行を実測して 2,127 行が オオヤ のまま残っていた (trigger 語が同じ文に無い)。
+#   大谷石 / 大谷資料館 は 0 件なので default を人名側へ反転し、 地名だけ match で残す。
+
+[[case]]
+input = "大谷"
+mode = "hiragana"
+expected = "おおたに"
+
+[[case]]
+input = "大谷が"
+mode = "hiragana"
+expected = "おおたにが"
+
+[[case]]
+input = "バッター大谷"
+mode = "hiragana"
+expected = "バッターおおたに"
+
+[[case]]
+input = "大谷石"
+mode = "hiragana"
+expected = "おおやいし"
+
+[[case]]
+input = "大谷資料館"
+mode = "hiragana"
+expected = "おおやしりょうかん"
+
+[[case]]
+input = "大谷翔平"
+mode = "hiragana"
+expected = "おおたにしょうへい"
+
+[[case]]
+input = "万人受け"
+mode = "hiragana"
+expected = "ばんにんうけ"
+
+[[case]]
+input = "石化"
+mode = "hiragana"
+expected = "せっか"
+
+[[case]]
+input = "上手"
+mode = "hiragana"
+expected = "じょうず"
+
+[[case]]
+input = "下手"
+mode = "hiragana"
+expected = "へた"
+
+[[case]]
+input = "一味"
+mode = "hiragana"
+expected = "いちみ"
+
+[[case]]
+input = "味方"
+mode = "hiragana"
+expected = "みかた"
+
+[[case]]
+input = "雑魚"
+mode = "hiragana"
+expected = "ざこ"
+
+[[case]]
+input = "流行"
+mode = "hiragana"
+expected = "りゅうこう"
