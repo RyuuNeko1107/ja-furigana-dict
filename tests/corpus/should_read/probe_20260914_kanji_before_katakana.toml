@@ -1,0 +1,103 @@
+# 単漢字 + カタカナ語 (前置) の読み分け。
+# ※ entry で読みを固定した語は hiragana mode でカタカナ部分もひらがな化される。
+# 内部評価コーパスで 何 672 / 強 376 / 粉 108 / 出 111 件を確認して追加した rule の回帰ロック。
+
+[[case]]
+input = "強キャラ"
+mode = "hiragana"
+expected = "つよキャラ"
+
+[[case]]
+input = "強ボス"
+mode = "hiragana"
+expected = "つよボス"
+
+[[case]]
+input = "強ー"
+mode = "hiragana"
+expected = "つよー"
+
+[[case]]
+input = "最強キャラ"
+mode = "hiragana"
+expected = "さいきょうキャラ"
+
+[[case]]
+input = "補強"
+mode = "hiragana"
+expected = "ほきょう"
+
+[[case]]
+input = "何キロ"
+mode = "hiragana"
+expected = "なんキロ"
+
+[[case]]
+input = "何ターン"
+mode = "hiragana"
+expected = "なんターン"
+
+[[case]]
+input = "何ー"
+mode = "hiragana"
+expected = "なにー"
+
+[[case]]
+input = "何ィ"
+mode = "hiragana"
+expected = "なにィ"
+
+[[case]]
+input = "幾何学"
+mode = "hiragana"
+expected = "きかがく"
+
+[[case]]
+input = "粉チーズ"
+mode = "hiragana"
+expected = "こなチーズ"
+
+[[case]]
+input = "粉ミルク"
+mode = "hiragana"
+expected = "こなみるく"
+
+[[case]]
+input = "小麦粉"
+mode = "hiragana"
+expected = "こむぎこ"
+
+[[case]]
+input = "出オチ"
+mode = "hiragana"
+expected = "でオチ"
+
+[[case]]
+input = "出ホームラン"
+mode = "hiragana"
+expected = "でホームラン"
+
+[[case]]
+input = "出演"
+mode = "hiragana"
+expected = "しゅつえん"
+
+[[case]]
+input = "海パン"
+mode = "hiragana"
+expected = "かいぱん"
+
+[[case]]
+input = "海サソリ"
+mode = "hiragana"
+expected = "うみサソリ"
+
+[[case]]
+input = "風タク"
+mode = "hiragana"
+expected = "かぜたく"
+
+[[case]]
+input = "風イラスト"
+mode = "hiragana"
+expected = "ふうイラスト"

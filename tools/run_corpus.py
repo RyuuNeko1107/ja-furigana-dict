@@ -72,7 +72,8 @@ def run_lookup(binary: str, text: str, mode: str, data_dir: str | None, dict_roo
             core_sub = dict_root / "core" / sub
             if core_sub.is_dir():
                 cmd += ["--core-dict-dir", str(core_sub)]
-    cmd += [text]
+    # `-3` のように `-` で始まる入力が option として解釈されないよう `--` で区切る
+    cmd += ["--", text]
     try:
         result = subprocess.run(  # nosec B603 — fixed argv, no shell
             cmd,

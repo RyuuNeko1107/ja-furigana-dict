@@ -1,66 +1,82 @@
 # カタカナ語 + 単漢字 接尾 (名 / 済 / 球) の読み分け。
 # 内部評価コーパスで カタカナ + 名 494 / 済 385 / 球 153 件を確認して追加した rule の回帰ロック。
 
-[[cases]]
+[[case]]
 input = "チーム名"
+mode = "hiragana"
 expected = "チームめい"
 
-[[cases]]
+[[case]]
 input = "ユニット名"
+mode = "hiragana"
 expected = "ユニットめい"
 
-[[cases]]
+[[case]]
 input = "ユーザー名"
+mode = "hiragana"
 expected = "ユーザーめい"
 
-[[cases]]
+[[case]]
 input = "名前"
+mode = "hiragana"
 expected = "なまえ"
 
-[[cases]]
+[[case]]
 input = "名シーン"
+mode = "hiragana"
 expected = "めいシーン"
 
-[[cases]]
+[[case]]
 input = "アダ名"
+mode = "hiragana"
 expected = "あだな"
 
-[[cases]]
+[[case]]
 input = "プレイ済"
+mode = "hiragana"
 expected = "プレイずみ"
 
-[[cases]]
+[[case]]
 input = "クリア済"
+mode = "hiragana"
 expected = "クリアずみ"
 
-[[cases]]
+[[case]]
 input = "済む"
+mode = "hiragana"
 expected = "すむ"
 
-[[cases]]
+[[case]]
 input = "経済"
+mode = "hiragana"
 expected = "けいざい"
 
-[[cases]]
+[[case]]
 input = "ボール球"
+mode = "hiragana"
 expected = "ボールだま"
 
-[[cases]]
+[[case]]
 input = "オリ球"
+mode = "hiragana"
 expected = "オリだま"
 
-[[cases]]
+[[case]]
 input = "すげー球"
+mode = "hiragana"
 expected = "すげーたま"
 
-[[cases]]
+[[case]]
 input = "ピッチャー球"
+mode = "hiragana"
 expected = "ピッチャーたま"
 
-[[cases]]
+[[case]]
 input = "野球"
+mode = "hiragana"
 expected = "やきゅう"
 
-[[cases]]
+[[case]]
 input = "決め球"
+mode = "hiragana"
 expected = "きめだま"
