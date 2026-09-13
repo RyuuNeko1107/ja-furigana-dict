@@ -24,14 +24,14 @@ git に commit されている master HEAD の状態を基準にする。
 | カテゴリ | エントリ数 | サイズ |
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,674** | **739 KB** |
-| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **17,768** | **690 KB** |
+| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **17,769** | **690 KB** |
 | [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,656** | **126 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **1,008** | **27 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,773** | **194 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **703** | **34 KB** |
-| **合計** | **64,582** | **1.77 MB** |
+| **合計** | **64,583** | **1.77 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -56,7 +56,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/jukugo/<genre>/*` — 手動 PR メンテのジャンル別 jukugo (≥ 2 字 surface)。 lib の Step 3 (jukugo lookup) で Lindera より優先採用。 各 genre dir の `_genre.toml` がカテゴリ description を持つ。
 
-**合計**: 17,768 件 / 690 KB (genre 6 区分)
+**合計**: 17,769 件 / 690 KB (genre 6 区分)
 
 #### 自然・生命
 
@@ -67,7 +67,7 @@ git に commit されている master HEAD の状態を基準にする。
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
 | [`core/jukugo/nature/animals.toml`](core/jukugo/nature/animals.toml) | 1,215 | 38 KB | 動植物 / 魚介 / 鳥 / 昆虫 / 茸 / 海藻の難読 |
-| [`core/jukugo/nature/place_names.toml`](core/jukugo/nature/place_names.toml) | 816 | 37 KB | 地名 (47 都道府県 / 主要都市 / 駅 / 寺社仏閣 / 観光地) |
+| [`core/jukugo/nature/place_names.toml`](core/jukugo/nature/place_names.toml) | 817 | 37 KB | 地名 (47 都道府県 / 主要都市 / 駅 / 寺社仏閣 / 観光地) |
 | [`core/jukugo/nature/foods.toml`](core/jukugo/nature/foods.toml) | 497 | 17 KB | 食べ物 / 料理 / 和菓子 / 郷土料理 / 食材 / 調味料 |
 | [`core/jukugo/nature/plants.toml`](core/jukugo/nature/plants.toml) | 405 | 13 KB | 植物 / 花 / 樹木 / 草本の難読 (熟字訓) |
 | [`core/jukugo/nature/weather.toml`](core/jukugo/nature/weather.toml) | 281 | 10 KB | 気象 / 天候 / 季語的気象 / 二十四節気 / 海洋気象 |
@@ -76,7 +76,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/jukugo/nature/math.toml`](core/jukugo/nature/math.toml) | 52 | 2.0 KB | 数学 (解析 / 線形代数 / 集合論 / 統計 / 確率の難読) |
 | [`core/jukugo/nature/mountaineering.toml`](core/jukugo/nature/mountaineering.toml) | 12 | 751 B | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
 | [`core/jukugo/nature/agriculture.toml`](core/jukugo/nature/agriculture.toml) | 5 | 356 B | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
-| **小計** (10 ファイル) | **3,615** | **129 KB** | |
+| **小計** (10 ファイル) | **3,616** | **129 KB** | |
 
 #### 人文・芸術
 
@@ -400,7 +400,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 3752 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 3767 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -465,6 +465,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20260913_katakana_sweep.toml`](tests/corpus/should_read/probe_20260913_katakana_sweep.toml) | 21 |
 |  | [`tests/corpus/should_read/probe_20260913_loanwords.toml`](tests/corpus/should_read/probe_20260913_loanwords.toml) | 15 |
 |  | [`tests/corpus/should_read/probe_20260913_mahjong_yaku.toml`](tests/corpus/should_read/probe_20260913_mahjong_yaku.toml) | 12 |
+|  | [`tests/corpus/should_read/probe_20260913_marker2.toml`](tests/corpus/should_read/probe_20260913_marker2.toml) | 15 |
 |  | [`tests/corpus/should_read/probe_20260913_person_marker.toml`](tests/corpus/should_read/probe_20260913_person_marker.toml) | 16 |
 |  | [`tests/corpus/should_read/probe_20260913_signal_chunk.toml`](tests/corpus/should_read/probe_20260913_signal_chunk.toml) | 13 |
 |  | [`tests/corpus/should_read/probe_20260913_suffix_sweep.toml`](tests/corpus/should_read/probe_20260913_suffix_sweep.toml) | 15 |
