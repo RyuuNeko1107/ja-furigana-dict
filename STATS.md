@@ -24,14 +24,14 @@ git に commit されている master HEAD の状態を基準にする。
 | カテゴリ | エントリ数 | サイズ |
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,674** | **739 KB** |
-| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **17,808** | **692 KB** |
-| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,656** | **126 KB** |
+| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **17,814** | **692 KB** |
+| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,658** | **126 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **1,019** | **27 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,773** | **195 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
-| [**エンジンルール**](#エンジンルール) (`rules/`) | **703** | **34 KB** |
-| **合計** | **64,633** | **1.77 MB** |
+| [**エンジンルール**](#エンジンルール) (`rules/`) | **704** | **35 KB** |
+| **合計** | **64,642** | **1.77 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -56,7 +56,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/jukugo/<genre>/*` — 手動 PR メンテのジャンル別 jukugo (≥ 2 字 surface)。 lib の Step 3 (jukugo lookup) で Lindera より優先採用。 各 genre dir の `_genre.toml` がカテゴリ description を持つ。
 
-**合計**: 17,808 件 / 692 KB (genre 6 区分)
+**合計**: 17,814 件 / 692 KB (genre 6 区分)
 
 #### 自然・生命
 
@@ -159,16 +159,16 @@ git に commit されている master HEAD の状態を基準にする。
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml) | 4,473 | 214 KB | 二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む) |
+| [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml) | 4,479 | 214 KB | 二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む) |
 | [`core/jukugo/basic/four_char.toml`](core/jukugo/basic/four_char.toml) | 35 | 2.3 KB | 四字熟語 (4 字 + 全 CJK 漢字) |
-| **小計** (2 ファイル) | **4,508** | **216 KB** | |
+| **小計** (2 ファイル) | **4,514** | **216 KB** | |
 
 
 ### 作品造語
 
 `core/works/<medium>/*` — 媒体 (game / literature 等) ごとに 1 作品 1 ファイル。 原則は公式読み (一般通称として定着していれば採録可)、 出典コメント必須、 古典読みは現代読み無い場合のみ。
 
-**合計**: 1,656 件 / 126 KB (genre 4 区分)
+**合計**: 1,658 件 / 126 KB (genre 4 区分)
 
 #### ゲーム
 
@@ -190,8 +190,8 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/game/project_sekai.toml`](core/works/game/project_sekai.toml) | 17 | 1.4 KB | プロジェクトセカイ: キャラクター名 |
 | [`core/works/game/danganronpa.toml`](core/works/game/danganronpa.toml) | 16 | 1.2 KB | ダンガンロンパ: キャラクター名 |
 | [`core/works/game/vocaloid.toml`](core/works/game/vocaloid.toml) | 16 | 1.4 KB | ボーカロイド/合成音声: キャラクター名 (公式読み) |
+| [`core/works/game/_minor.toml`](core/works/game/_minor.toml) | 14 | 1.2 KB | ゲーム 小規模作品 統合 (1作品1-3語、2026-06-21 consolidate) |
 | [`core/works/game/fate.toml`](core/works/game/fate.toml) | 14 | 1.2 KB | Fate / 型月 (TYPE-MOON): キャラクター名 |
-| [`core/works/game/_minor.toml`](core/works/game/_minor.toml) | 12 | 1.2 KB | ゲーム 小規模作品 統合 (1作品1-3語、2026-06-21 consolidate) |
 | [`core/works/game/honkai_starrail.toml`](core/works/game/honkai_starrail.toml) | 12 | 930 B | 崩壊:スターレイル (HoYoverse): キャラクター名 (公式日本語読みベース) |
 | [`core/works/game/bluearchive.toml`](core/works/game/bluearchive.toml) | 10 | 911 B | ブルーアーカイブ (Nexon/Yostar): キャラクター名 (公式読みベース) |
 | [`core/works/game/kankore.toml`](core/works/game/kankore.toml) | 9 | 749 B | 艦これ: 艦娘名 (旧海軍艦名) |
@@ -201,7 +201,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/game/tokimeki.toml`](core/works/game/tokimeki.toml) | 5 | 465 B | ときめきメモリアル: キャラクター名 |
 | [`core/works/game/a3.toml`](core/works/game/a3.toml) | 4 | 396 B | A3! : キャラクター名 |
 | [`core/works/game/utapri.toml`](core/works/game/utapri.toml) | 4 | 492 B | うたの☆プリンスさまっ♪ : キャラクター名 |
-| **小計** (23 ファイル) | **658** | **40 KB** | |
+| **小計** (23 ファイル) | **660** | **40 KB** | |
 
 #### 文学
 
@@ -320,7 +320,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 
 | ファイル | 文字数 | ルール数 | サイズ | 用途 |
 |---|---:|---:|---:|---|
-| [`core/kanji/overrides.toml`](core/kanji/overrides.toml) | 2,773 | 3,791 | 195 KB | 単漢字 default override + 文脈分岐 reading |
+| [`core/kanji/overrides.toml`](core/kanji/overrides.toml) | 2,773 | 3,792 | 195 KB | 単漢字 default override + 文脈分岐 reading |
 
 ### 異体字
 
@@ -334,7 +334,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 `rules/` — エンジン挙動 (助数詞 / 文脈 / 後処理 等) を制御するルール群。 lib コードに embed されるのではなく、 ここで宣言的に外部化されている。
 
 <!-- AUTO-GENERATED:RULES:BEGIN -->
-**合計**: 703 エントリ / 806 ルール / 34 KB (genre 3 区分)
+**合計**: 704 エントリ / 807 ルール / 35 KB (genre 3 区分)
 
 #### 数値系
 
@@ -345,7 +345,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 | ファイル | エントリ数 | ルール数 | サイズ | 用途 |
 |---|---:|---:|---:|---|
 | [`rules/numbers/counters/objects.toml`](rules/numbers/counters/objects.toml) | 88 | 171 | 16 KB | 物を数える助数詞 (本 / 匹 / 杯 / 個 / 歳 / 冊、 連濁 / 促音化) |
-| [`rules/numbers/counters/simple.toml`](rules/numbers/counters/simple.toml) | 43 | 43 | 972 B | 単純サフィックス助数詞 (円 / 点 / 度 / 名 / 話 等、 数値カナ + value 連結のみ) |
+| [`rules/numbers/counters/simple.toml`](rules/numbers/counters/simple.toml) | 44 | 44 | 1.0 KB | 単純サフィックス助数詞 (円 / 点 / 度 / 名 / 話 等、 数値カナ + value 連結のみ) |
 | [`rules/numbers/counters/time.toml`](rules/numbers/counters/time.toml) | 21 | 34 | 4.3 KB | 時間系助数詞 (月 / 日 / 時 / 分 / 週間 / 回、 4/7/9 の特殊読み + カナ末尾置換) |
 | [`rules/numbers/days.toml`](rules/numbers/days.toml) | 31 | 31 | 978 B | 1〜31 日の特殊読み (1→ツイタチ / 20→ハツカ 等) |
 | [`rules/numbers/numeric_phrases.toml`](rules/numbers/numeric_phrases.toml) | 23 | 23 | 893 B | 数字を含む例外語句 (二十歳→ハタチ / 明後日→アサッテ 等、 助数詞ルールより先に確定) |
@@ -354,7 +354,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 | [`rules/numbers/counters/percent.toml`](rules/numbers/counters/percent.toml) | 2 | 4 | 583 B | パーセンテージ (% / ％、 1/6/8/0 で促音化 + パーセント) |
 | [`rules/numbers/counters/people.toml`](rules/numbers/counters/people.toml) | 1 | 1 | 225 B | 人を数える助数詞 (人、 1=ヒトリ / 2=フタリ の特殊読み) |
 | [`rules/numbers/counters/recursive.toml`](rules/numbers/counters/recursive.toml) | 1 | 1 | 202 B | 再帰モード助数詞 (個目 / 階目 等、 既存助数詞解決後に末尾連結) |
-| **小計** (10 ファイル) | **233** | **336** | **26 KB** | |
+| **小計** (10 ファイル) | **234** | **337** | **26 KB** | |
 
 #### テキスト系
 
@@ -400,7 +400,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 3894 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 3913 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -480,6 +480,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20260913_voicevox3.toml`](tests/corpus/should_read/probe_20260913_voicevox3.toml) | 23 |
 |  | [`tests/corpus/should_read/probe_20260913_voicevox4.toml`](tests/corpus/should_read/probe_20260913_voicevox4.toml) | 25 |
 |  | [`tests/corpus/should_read/probe_20260913_voicevox5.toml`](tests/corpus/should_read/probe_20260913_voicevox5.toml) | 15 |
+|  | [`tests/corpus/should_read/probe_20260914_kane_ren.toml`](tests/corpus/should_read/probe_20260914_kane_ren.toml) | 19 |
 |  | [`tests/corpus/should_read/probe_20260914_kanji_before_katakana.toml`](tests/corpus/should_read/probe_20260914_kanji_before_katakana.toml) | 20 |
 |  | [`tests/corpus/should_read/probe_20260914_katakana_on.toml`](tests/corpus/should_read/probe_20260914_katakana_on.toml) | 13 |
 |  | [`tests/corpus/should_read/probe_20260914_katakana_suffix.toml`](tests/corpus/should_read/probe_20260914_katakana_suffix.toml) | 16 |
