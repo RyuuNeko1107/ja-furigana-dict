@@ -951,3 +951,6 @@ description = "地名 (47 都道府県 / 主要都市 / 駅 / 寺社仏閣 / 観
 # ── 一般語と同形の地名 (gen_surname_suffix.py 生成、 default = 一般語読み) ──
 "国立" = { reading = "コクリツ", match = [ { next_starts_any = ["市", "町", "村", "区", "郡", "駅", "県", "府"], reading = "クニタチ" } ] }  # 地名 (suffix match、 default = 一般語読み)
 "放出" = { reading = "ホウシュツ", match = [ { next_starts_any = ["市", "町", "村", "区", "郡", "駅", "県", "府"], reading = "ハナテン" } ] }  # 地名 (suffix match、 default = 一般語読み)
+
+# ★2026-09-13 地名マーカー probe (X駅 / X市 / X県 / X町 … の直前語を検査)
+"神室町" = "カムロチョウ"   # 龍が如くの舞台。 カムロマチ だった

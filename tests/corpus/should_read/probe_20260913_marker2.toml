@@ -1,0 +1,80 @@
+# 2026-09-13 マーカー probe 第2弾。 人物マーカーに続いて
+# 地名マーカー (駅/市/県/町/村/区/島/山/川/寺/神社/温泉/城) と
+# コミュニティ接尾辞 (民/組/勢/班/界隈/沼) の直前語を検査した。
+# ★実バグは 神室町 = カムロマチ の 1 件のみ (龍が如くの舞台。 正しくは カムロチョウ)。
+#   地名 38 種 / コミュニティ 61 種は他すべて正読 = この 2 つの vein は薄い。
+
+[[case]]
+input = "神室町"
+mode = "hiragana"
+expected = "かむろちょう"
+
+[[case]]
+input = "歌舞伎町"
+mode = "hiragana"
+expected = "かぶきちょう"
+
+[[case]]
+input = "金閣寺"
+mode = "hiragana"
+expected = "きんかくじ"
+
+[[case]]
+input = "清水寺"
+mode = "hiragana"
+expected = "きよみずでら"
+
+[[case]]
+input = "巌流島"
+mode = "hiragana"
+expected = "がんりゅうじま"
+
+[[case]]
+input = "屋久島"
+mode = "hiragana"
+expected = "やくしま"
+
+[[case]]
+input = "高尾山"
+mode = "hiragana"
+expected = "たかおさん"
+
+[[case]]
+input = "熊本城"
+mode = "hiragana"
+expected = "くまもとじょう"
+
+[[case]]
+input = "海外勢"
+mode = "hiragana"
+expected = "かいがいぜい"
+
+[[case]]
+input = "雪民"
+mode = "hiragana"
+expected = "ゆきみん"
+
+[[case]]
+input = "杞憂民"
+mode = "hiragana"
+expected = "きゆうみん"
+
+[[case]]
+input = "愉悦民"
+mode = "hiragana"
+expected = "ゆえつみん"
+
+[[case]]
+input = "村民"
+mode = "hiragana"
+expected = "そんみん"
+
+[[case]]
+input = "攻略組"
+mode = "hiragana"
+expected = "こうりゃくぐみ"
+
+[[case]]
+input = "個人勢"
+mode = "hiragana"
+expected = "こじんぜい"
