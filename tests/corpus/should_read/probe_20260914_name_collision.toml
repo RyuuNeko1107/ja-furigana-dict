@@ -1,0 +1,58 @@
+# 一般語と同形の姓の読み分け。
+# 「default 一般語 + 敬称 suffix match」 の型が効いていることの回帰ロックと、
+# 実測で見つかった 2 件 (末木 / 大神) の修正。
+
+[[case]]
+input = "水田さん"
+mode = "hiragana"
+expected = "みずたさん"
+
+[[case]]
+input = "水田が広がる"
+mode = "hiragana"
+expected = "すいでんがひろがる"
+
+[[case]]
+input = "末木いけるぞ"
+mode = "hiragana"
+expected = "すえきいけるぞ"
+
+[[case]]
+input = "大神ミオ"
+mode = "hiragana"
+expected = "おおかみみお"
+
+[[case]]
+input = "大神神社"
+mode = "hiragana"
+expected = "おおみわじんじゃ"
+
+[[case]]
+input = "女神"
+mode = "hiragana"
+expected = "めがみ"
+
+[[case]]
+input = "内野安打"
+mode = "hiragana"
+expected = "ないやあんだ"
+
+[[case]]
+input = "味方が強い"
+mode = "hiragana"
+expected = "みかたがつよい"
+
+[[case]]
+input = "中間管理職"
+mode = "hiragana"
+expected = "ちゅうかんかんりしょく"
+
+[[case]]
+input = "桑田の打撃"
+mode = "hiragana"
+expected = "くわたのだげき"
+
+[[case]]
+input = "上田をうまく囮にしたいね"
+mode = "hiragana"
+expected = "うえだをうまくおとりにしたいね"
