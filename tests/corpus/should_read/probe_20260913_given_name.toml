@@ -1,0 +1,64 @@
+# 2026-09-13 下の名前 probe。 人物マーカーで確認できた姓 640 種を使い、
+# その直後に来る語 13,562 種を集め、 **姓の直後に偏る (比率 0.75 以上)** 29 語に絞った。
+# ★実バグは 圭佑 = ケイユウ の 1 件 (本田圭佑)。 他は既に正読だった。
+# 比率フィルタを入れないと 投手 / 伝令 / 選手 のような普通名詞ばかり拾う。
+
+[[case]]
+input = "圭佑"
+mode = "hiragana"
+expected = "けいすけ"
+
+[[case]]
+input = "本田圭佑"
+mode = "hiragana"
+expected = "ほんだけいすけ"
+
+[[case]]
+input = "圭祐"
+mode = "hiragana"
+expected = "けいすけ"
+
+[[case]]
+input = "憲彦"
+mode = "hiragana"
+expected = "のりひこ"
+
+[[case]]
+input = "悠一"
+mode = "hiragana"
+expected = "ゆういち"
+
+[[case]]
+input = "翔平"
+mode = "hiragana"
+expected = "しょうへい"
+
+[[case]]
+input = "兆治"
+mode = "hiragana"
+expected = "ちょうじ"
+
+[[case]]
+input = "明夫"
+mode = "hiragana"
+expected = "あきお"
+
+[[case]]
+input = "雅子"
+mode = "hiragana"
+expected = "まさこ"
+
+[[case]]
+input = "重里"
+mode = "hiragana"
+expected = "しげさと"
+
+[[case]]
+input = "健次郎"
+mode = "hiragana"
+expected = "けんじろう"
+
+[[case]]
+input = "竜也"
+mode = "hiragana"
+expected = "たつや"
