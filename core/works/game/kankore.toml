@@ -10,7 +10,7 @@ description = "艦これ: 艦娘名 (旧海軍艦名)"
 
 [entries]
 
-"鳥海" = "チョウカイ"    # 鳥海山と同 (default とりうみ)
+"鳥海" = { reading = "チョウカイ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "トリウミ" } ] }  # 鳥海山と同 (default とりうみ) / 姓 (suffix match)
 "島風" = "シマカゼ"      # 風=かぜ (default しまふう)
 "雪風" = "ユキカゼ"      # 風=かぜ (default ゆきふう)
 "三隈" = "ミクマ"        # 三隈川 (default さんくま)

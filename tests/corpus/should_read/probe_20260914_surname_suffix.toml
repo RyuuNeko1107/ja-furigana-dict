@@ -1,0 +1,112 @@
+# 姓 + 敬称 の suffix match 一括生成 (UniDic 姓 x コーパス敬称実績で絞り込み)。
+# default = 一般語読みを保つことの回帰ロックも兼ねる。
+
+[[case]]
+input = "春日さん"
+mode = "hiragana"
+expected = "かすがさん"
+
+[[case]]
+input = "春日部"
+mode = "hiragana"
+expected = "かすかべ"
+
+[[case]]
+input = "八木さん"
+mode = "hiragana"
+expected = "やぎさん"
+
+[[case]]
+input = "山中さん"
+mode = "hiragana"
+expected = "やまなかさん"
+
+[[case]]
+input = "山中伸弥"
+mode = "hiragana"
+expected = "やまなかしんや"
+
+[[case]]
+input = "山中で遭難"
+mode = "hiragana"
+expected = "さんちゅうでそうなん"
+
+[[case]]
+input = "三国さん"
+mode = "hiragana"
+expected = "みくにさん"
+
+[[case]]
+input = "三国志"
+mode = "hiragana"
+expected = "さんごくし"
+
+[[case]]
+input = "大海さん"
+mode = "hiragana"
+expected = "おおうみさん"
+
+[[case]]
+input = "大海原"
+mode = "hiragana"
+expected = "おおうなばら"
+
+[[case]]
+input = "下野さん"
+mode = "hiragana"
+expected = "しものさん"
+
+[[case]]
+input = "赤星さん"
+mode = "hiragana"
+expected = "あかほしさん"
+
+[[case]]
+input = "千種さん"
+mode = "hiragana"
+expected = "ちぐささん"
+
+[[case]]
+input = "名古屋市千種区"
+mode = "hiragana"
+expected = "なごやしちくさく"
+
+[[case]]
+input = "藍染さん"
+mode = "hiragana"
+expected = "あいぜんさん"
+
+[[case]]
+input = "藍染め"
+mode = "hiragana"
+expected = "あいぞめ"
+
+[[case]]
+input = "沢山ある"
+mode = "hiragana"
+expected = "たくさんある"
+
+[[case]]
+input = "具沢山の味噌汁"
+mode = "hiragana"
+expected = "ぐだくさんのみそしる"
+
+[[case]]
+input = "沢山さん"
+mode = "hiragana"
+expected = "さわやまさん"
+
+[[case]]
+input = "谷繁さん"
+mode = "hiragana"
+expected = "たにしげさん"
+
+[[case]]
+input = "外崎さん"
+mode = "hiragana"
+expected = "とのさきさん"
+
+[[case]]
+input = "掛布さん"
+mode = "hiragana"
+expected = "かけふさん"
