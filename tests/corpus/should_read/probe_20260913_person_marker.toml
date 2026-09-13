@@ -1,0 +1,86 @@
+# 2026-09-13 人物マーカー probe。 「Xさん / X選手 / X投手 / X監督」 の直前に来る
+# 漢字語をコーパスから集め (6,331 種、 40 回以上が 157 種)、 読みを検査した。
+# ★星谷 = ホシダニ (谷 = ダニ の suffix rule に落ちていた。 396 行) /
+#   小谷 = オタニ (一般語ではなく姓のみ。 651 行) / 刀也 = カタナヤ (剣持刀也の名) /
+#   名塚 = ナヅカ (声優 名塚佳織) の 4 件が実バグ。
+# suffix match entry (長谷 / 一色 / 放出 / 水田) は実データでも default 側が主用法で妥当。
+
+[[case]]
+input = "星谷"
+mode = "hiragana"
+expected = "ほしや"
+
+[[case]]
+input = "星谷さん"
+mode = "hiragana"
+expected = "ほしやさん"
+
+[[case]]
+input = "小谷"
+mode = "hiragana"
+expected = "こたに"
+
+[[case]]
+input = "小谷さん"
+mode = "hiragana"
+expected = "こたにさん"
+
+[[case]]
+input = "刀也"
+mode = "hiragana"
+expected = "とうや"
+
+[[case]]
+input = "剣持刀也"
+mode = "hiragana"
+expected = "けんもちとうや"
+
+[[case]]
+input = "名塚"
+mode = "hiragana"
+expected = "なつか"
+
+[[case]]
+input = "名塚佳織"
+mode = "hiragana"
+expected = "なつかかおり"
+
+[[case]]
+input = "長谷川"
+mode = "hiragana"
+expected = "はせがわ"
+
+[[case]]
+input = "長谷部"
+mode = "hiragana"
+expected = "はせべ"
+
+[[case]]
+input = "水田わさび"
+mode = "hiragana"
+expected = "みずたわさび"
+
+[[case]]
+input = "水田"
+mode = "hiragana"
+expected = "すいでん"
+
+[[case]]
+input = "一色"
+mode = "hiragana"
+expected = "いっしょく"
+
+[[case]]
+input = "放出"
+mode = "hiragana"
+expected = "ほうしゅつ"
+
+[[case]]
+input = "大谷"
+mode = "hiragana"
+expected = "おおたに"
+
+[[case]]
+input = "大谷石"
+mode = "hiragana"
+expected = "おおやいし"
