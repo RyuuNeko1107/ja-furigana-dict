@@ -1,0 +1,39 @@
+# 2026-09-13 低頻度帯 (コーパス 10-24 回) の未登録語 1,200 語を VOICEVOX と突合。
+# 不一致 348 件のほぼ全ては動詞語幹の断片 (首絞 / 靴擦 / 箱開 / 石貰 …) で、
+# 送り仮名が付いた実文では正しく読める。 実バグは 闘莉王 / 金城武 / 菓子折り の 3 件。
+# = 低頻度帯まで下げても断片ばかりで、 コーパス起点の探索はここで底。
+
+[[case]]
+input = "闘莉王"
+mode = "hiragana"
+expected = "とぅーりお"
+
+[[case]]
+input = "金城武"
+mode = "hiragana"
+expected = "かねしろたけし"
+
+[[case]]
+input = "菓子折り"
+mode = "hiragana"
+expected = "かしおり"
+
+[[case]]
+input = "賃上げ"
+mode = "hiragana"
+expected = "ちんあげ"
+
+[[case]]
+input = "身動き"
+mode = "hiragana"
+expected = "みうごき"
+
+[[case]]
+input = "耳飾り"
+mode = "hiragana"
+expected = "みみかざり"
+
+[[case]]
+input = "靴擦れ"
+mode = "hiragana"
+expected = "くつずれ"
