@@ -1,0 +1,96 @@
+# 金 + 訓動詞語幹 / 助数詞 「連」 / 中頻度未登録語 の回帰。
+
+[[case]]
+input = "金無い"
+mode = "hiragana"
+expected = "かねない"
+
+[[case]]
+input = "金払い"
+mode = "hiragana"
+expected = "かねはらい"
+
+[[case]]
+input = "金稼ぎ"
+mode = "hiragana"
+expected = "かねかせぎ"
+
+[[case]]
+input = "金持ち"
+mode = "hiragana"
+expected = "かねもち"
+
+[[case]]
+input = "金貯める"
+mode = "hiragana"
+expected = "かねためる"
+
+[[case]]
+input = "賞金稼ぎ"
+mode = "hiragana"
+expected = "しょうきんかせぎ"
+
+[[case]]
+input = "金額"
+mode = "hiragana"
+expected = "きんがく"
+
+[[case]]
+input = "金融"
+mode = "hiragana"
+expected = "きんゆう"
+
+[[case]]
+input = "金策"
+mode = "hiragana"
+expected = "きんさく"
+
+[[case]]
+input = "金曜日"
+mode = "hiragana"
+expected = "きんようび"
+
+[[case]]
+input = "金色"
+mode = "hiragana"
+expected = "きんいろ"
+
+[[case]]
+input = "現金"
+mode = "hiragana"
+expected = "げんきん"
+
+[[case]]
+input = "2連目"
+mode = "hiragana"
+expected = "にれんめ"
+
+[[case]]
+input = "3連休"
+mode = "hiragana"
+expected = "さんれんきゅう"
+
+[[case]]
+input = "2連打"
+mode = "hiragana"
+expected = "にれんだ"
+
+[[case]]
+input = "関連目的"
+mode = "hiragana"
+expected = "かんれんもくてき"
+
+[[case]]
+input = "街中を歩く"
+mode = "hiragana"
+expected = "まちなかをあるく"
+
+[[case]]
+input = "自引きした"
+mode = "hiragana"
+expected = "じびきした"
+
+[[case]]
+input = "夜廻"
+mode = "hiragana"
+expected = "よまわり"
