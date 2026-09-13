@@ -1,0 +1,92 @@
+# next_char_type = 漢字 → 音読み の rule が、 次が 訓読み動詞の語幹の時に
+# 誤発火していた分の回帰 (嫁 / 氷 / 泉 / 葉 / 懐)。
+
+[[case]]
+input = "嫁探し"
+mode = "hiragana"
+expected = "よめさがし"
+
+[[case]]
+input = "嫁候補"
+mode = "hiragana"
+expected = "よめこうほ"
+
+[[case]]
+input = "嫁入り"
+mode = "hiragana"
+expected = "よめいり"
+
+[[case]]
+input = "転嫁"
+mode = "hiragana"
+expected = "てんか"
+
+[[case]]
+input = "氷漬け"
+mode = "hiragana"
+expected = "こおりづけ"
+
+[[case]]
+input = "氷食べる"
+mode = "hiragana"
+expected = "こおりたべる"
+
+[[case]]
+input = "氷河期"
+mode = "hiragana"
+expected = "ひょうがき"
+
+[[case]]
+input = "製氷"
+mode = "hiragana"
+expected = "せいひょう"
+
+[[case]]
+input = "泉枯れ"
+mode = "hiragana"
+expected = "いずみかれ"
+
+[[case]]
+input = "温泉"
+mode = "hiragana"
+expected = "おんせん"
+
+[[case]]
+input = "根掘り葉掘り"
+mode = "hiragana"
+expected = "ねほりはほり"
+
+[[case]]
+input = "紅葉"
+mode = "hiragana"
+expected = "こうよう"
+
+[[case]]
+input = "懐深い"
+mode = "hiragana"
+expected = "ふところふかい"
+
+[[case]]
+input = "懐中電灯"
+mode = "hiragana"
+expected = "かいちゅうでんとう"
+
+[[case]]
+input = "戸締まり"
+mode = "hiragana"
+expected = "とじまり"
+
+[[case]]
+input = "戸籍上"
+mode = "hiragana"
+expected = "こせきじょう"
+
+[[case]]
+input = "星詠み"
+mode = "hiragana"
+expected = "ほしよみ"
+
+[[case]]
+input = "塊魂"
+mode = "hiragana"
+expected = "かたまりだましい"

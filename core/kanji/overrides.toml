@@ -11897,6 +11897,11 @@ default = "よめ"
 prev_char_type = "漢字"
 reading = "カ"
 
+# ★2026-09-14: 嫁 + 訓動詞語幹 / 和語 = よめ (嫁探し 45 / 嫁候補 / 嫁見つけ)
+[[kanji.match]]
+next_starts_any = ["探", "見", "候", "来", "入", "欲", "募", "貰"]
+reading = "よめ"
+
 [[kanji.match]]
 next_char_type = "漢字"
 reading = "カ"
@@ -12903,6 +12908,11 @@ default = "ふところ"
 prev_char_type = "漢字"
 reading = "カイ"
 
+# ★2026-09-14: 懐 + 和語形容詞 = ふところ (懐深い)
+[[kanji.match]]
+next_starts_any = ["深", "広", "広"]
+reading = "ふところ"
+
 [[kanji.match]]
 next_char_type = "漢字"
 reading = "カイ"
@@ -13472,6 +13482,11 @@ char = "氷"
 default = "こおり"
 
 # 氷河/氷山/氷点/氷結/製氷 等 漢字連結は ヒョウ (単独 氷=こおり が dominant)
+# ★2026-09-14: 氷 + 訓動詞語幹 = こおり (氷漬け 46 / 氷食べ 18 / 氷入れ)
+[[kanji.match]]
+next_starts_any = ["漬", "食", "入", "溶", "割", "砕", "浮", "持", "作", "買"]
+reading = "こおり"
+
 [[kanji.match]]
 next_char_type = "漢字"
 reading = "ヒョウ"
@@ -13650,6 +13665,11 @@ default = "いずみ"
 [[kanji.match]]
 prev_char_type = "漢字"
 reading = "セン"
+
+# ★2026-09-14: 泉 + 訓動詞語幹 = いずみ (泉枯れ 17 / 泉湧く)
+[[kanji.match]]
+next_starts_any = ["枯", "湧", "涌", "出"]
+reading = "いずみ"
 
 [[kanji.match]]
 next_char_type = "漢字"
@@ -13978,6 +13998,11 @@ default = "は"
 [[kanji.match]]
 prev_char_type = "漢字"
 reading = "ヨウ"
+
+# ★2026-09-14: 葉 + 訓動詞語幹 = は (根掘り葉掘り / 葉燃やす / 葉乗せ)
+[[kanji.match]]
+next_starts_any = ["掘", "燃", "乗", "落", "拾", "集"]
+reading = "は"
 
 [[kanji.match]]
 next_char_type = "漢字"
