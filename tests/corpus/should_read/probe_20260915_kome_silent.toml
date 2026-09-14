@@ -1,0 +1,11 @@
+# ※ は読まない (「・」 と同じ)。 lib の版に依存しない記号表の変更。
+
+[[case]]
+input = "※注意"
+mode = "hiragana"
+expected = "ちゅうい"
+
+[[case]]
+input = "※このゲームは個人の感想です"
+mode = "hiragana"
+expected = "このゲームはこじんのかんそうです"
