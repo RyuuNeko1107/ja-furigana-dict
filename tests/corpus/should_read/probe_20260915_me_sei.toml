@@ -1,0 +1,46 @@
+# 助数詞+目=メ / X性=ショウ ほか の回帰 (2026-09-15)
+
+[[case]]
+input = "3試合目"
+mode = "hiragana"
+expected = "さんしあいめ"
+
+[[case]]
+input = "5文字目"
+mode = "hiragana"
+expected = "ごもじめ"
+
+[[case]]
+input = "1問目から"
+mode = "hiragana"
+expected = "いちもんめから"
+
+[[case]]
+input = "何枚目か"
+mode = "hiragana"
+expected = "なんまいめか"
+
+[[case]]
+input = "2種類目"
+mode = "hiragana"
+expected = "にしゅるいめ"
+
+[[case]]
+input = "注目の選手"
+mode = "hiragana"
+expected = "ちゅうもくのせんしゅ"
+
+[[case]]
+input = "品目"
+mode = "hiragana"
+expected = "ひんもく"
+
+[[case]]
+input = "心配性だ"
+mode = "hiragana"
+expected = "しんぱいしょうだ"
+
+[[case]]
+input = "主戦力"
+mode = "hiragana"
+expected = "しゅせんりょく"
