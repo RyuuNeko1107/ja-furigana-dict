@@ -1,0 +1,26 @@
+# 作品名 entry (三国志 顔良) が口語 「顔良すぎる」 を占有していた分。
+
+[[case]]
+input = "顔良すぎる"
+mode = "hiragana"
+expected = "かおよすぎる"
+
+[[case]]
+input = "顔良!"
+mode = "hiragana"
+expected = "かおよ!"
+
+[[case]]
+input = "この顔良いな"
+mode = "hiragana"
+expected = "このかおよいな"
+
+[[case]]
+input = "笑顔良かった"
+mode = "hiragana"
+expected = "えがおよかった"
+
+[[case]]
+input = "顔良文醜"
+mode = "hiragana"
+expected = "がんりょうぶんしゅう"
