@@ -1,0 +1,71 @@
+# 漢語+人=ジン / 副詞+人・手 / 漢語+者=モノ の回帰 (2026-09-15)
+
+[[case]]
+input = "京都人は"
+mode = "hiragana"
+expected = "きょうとじんは"
+
+[[case]]
+input = "未来人が来た"
+mode = "hiragana"
+expected = "みらいじんがきた"
+
+[[case]]
+input = "依頼人の話"
+mode = "hiragana"
+expected = "いらいにんのはなし"
+
+[[case]]
+input = "結構人多い"
+mode = "hiragana"
+expected = "けっこうひとおおい"
+
+[[case]]
+input = "十二人いる"
+mode = "hiragana"
+expected = "じゅうににんいる"
+
+[[case]]
+input = "二人で行く"
+mode = "hiragana"
+expected = "ふたりでいく"
+
+[[case]]
+input = "結構手が早い"
+mode = "hiragana"
+expected = "けっこうてがはやい"
+
+[[case]]
+input = "運転手"
+mode = "hiragana"
+expected = "うんてんしゅ"
+
+[[case]]
+input = "田舎者だ"
+mode = "hiragana"
+expected = "いなかものだ"
+
+[[case]]
+input = "邪魔者"
+mode = "hiragana"
+expected = "じゃまもの"
+
+[[case]]
+input = "被害者"
+mode = "hiragana"
+expected = "ひがいしゃ"
+
+[[case]]
+input = "何万人いる"
+mode = "hiragana"
+expected = "なんまんにんいる"
+
+[[case]]
+input = "怪物相手に"
+mode = "hiragana"
+expected = "かいぶつあいてに"
+
+[[case]]
+input = "大道芸人"
+mode = "hiragana"
+expected = "だいどうげいにん"
