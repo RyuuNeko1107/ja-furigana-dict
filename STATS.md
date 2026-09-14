@@ -365,7 +365,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 | ファイル | エントリ数 | ルール数 | サイズ | 用途 |
 |---|---:|---:|---:|---|
 | [`rules/text/units.toml`](rules/text/units.toml) | 21 | 21 | 1.3 KB | SI 単位 + 通貨 + % (km / kg / mL / 円 / % 等、 数値 + 単位を 1 chunk で読む。 lookup は case-insensitive) |
-| [`rules/text/symbols.toml`](rules/text/symbols.toml) | 11 | 11 | 403 B | 記号 1 文字読み (+ / − / % / ‰ / 〜 / ・ / ※ 等、 chunks/split() の symbols 階層で個別 hit) |
+| [`rules/text/symbols.toml`](rules/text/symbols.toml) | 11 | 11 | 397 B | 記号 1 文字読み (+ / − / % / ‰ / 〜 / ・ / ※ 等、 chunks/split() の symbols 階層で個別 hit) |
 | [`rules/text/postprocess.toml`](rules/text/postprocess.toml) | 2 | 2 | 325 B | 出力後処理 regex (Step 7、 mode 別: hiragana / ruby / tts / romaji の出力直前に適用) |
 | **小計** (3 ファイル) | **34** | **34** | **2.0 KB** | |
 
@@ -400,7 +400,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 4153 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 4155 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -501,6 +501,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20260914_surname_sweep2.toml`](tests/corpus/should_read/probe_20260914_surname_sweep2.toml) | 18 |
 |  | [`tests/corpus/should_read/probe_20260914_surname_sweep_byproduct.toml`](tests/corpus/should_read/probe_20260914_surname_sweep_byproduct.toml) | 14 |
 |  | [`tests/corpus/should_read/probe_20260915_eval_losses.toml`](tests/corpus/should_read/probe_20260915_eval_losses.toml) | 36 |
+|  | [`tests/corpus/should_read/probe_20260915_kome_silent.toml`](tests/corpus/should_read/probe_20260915_kome_silent.toml) | 2 |
 |  | [`tests/corpus/should_read/regression.toml`](tests/corpus/should_read/regression.toml) | 548 |
 |  | [`tests/corpus/should_read/sentences.toml`](tests/corpus/should_read/sentences.toml) | 49 |
 |  | [`tests/corpus/should_read/touhou.toml`](tests/corpus/should_read/touhou.toml) | 30 |
