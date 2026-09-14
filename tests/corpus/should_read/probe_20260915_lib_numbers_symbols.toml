@@ -1,0 +1,43 @@
+# 精度評価で見つかった lib / 記号 側の誤読の回帰 (lib 0.4.3 系の修正とセット)。
+# - 「2 M3.7」 のように数字に接する空白を英字 passthrough が覆わない
+# - カ行で始まる単位 (キロ) の前の促音化 (1 は イチキロ のまま)
+
+[[case]]
+input = "最大震度:2 M3.7"
+mode = "hiragana"
+expected = "さいだいしんど:に Mさんてんなな"
+
+[[case]]
+input = "100kg"
+mode = "hiragana"
+expected = "ヒャッキログラム"
+
+[[case]]
+input = "10kg"
+mode = "hiragana"
+expected = "ジュッキログラム"
+
+[[case]]
+input = "6kg"
+mode = "hiragana"
+expected = "ロッキログラム"
+
+[[case]]
+input = "1kg"
+mode = "hiragana"
+expected = "イチキログラム"
+
+[[case]]
+input = "3kg"
+mode = "hiragana"
+expected = "サンキログラム"
+
+[[case]]
+input = "600kg"
+mode = "hiragana"
+expected = "ロッピャッキログラム"
+
+[[case]]
+input = "6L"
+mode = "hiragana"
+expected = "ロクリットル"

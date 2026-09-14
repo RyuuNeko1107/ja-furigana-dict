@@ -109,10 +109,12 @@ input = "5t"
 mode = "hiragana"
 expected = "ゴトン"
 
+# ★2026-09-15: カ行で始まる単位の前の促音化を lib に入れたので ナナジュウ → ナナジュッ。
+# 七十キロ = ななじゅっキロ が自然な読み (1 は イチキロ のまま、 L など カ行以外は変わらない)。
 [[case]]
 input = "170km"
 mode = "hiragana"
-expected = "ヒャクナナジュウキロメートル"
+expected = "ヒャクナナジュッキロメートル"
 
 [[case]]
 input = "2L"
