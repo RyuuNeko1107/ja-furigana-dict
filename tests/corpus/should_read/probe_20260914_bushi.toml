@@ -1,0 +1,62 @@
+# カタカナ語 + 節 = ブシ と、 足取り = アシドリ の回帰。
+# 節約 / 節目 のような 節 始まりの熟語は カタカナ rule に巻き込まれないこと。
+
+[[case]]
+input = "ソーラン節"
+mode = "hiragana"
+expected = "ソーランぶし"
+
+[[case]]
+input = "ズンドコ節"
+mode = "hiragana"
+expected = "ズンドコぶし"
+
+[[case]]
+input = "カキンカキン節"
+mode = "hiragana"
+expected = "カキンカキンぶし"
+
+[[case]]
+input = "鰹節"
+mode = "hiragana"
+expected = "かつおぶし"
+
+[[case]]
+input = "八木節"
+mode = "hiragana"
+expected = "やぎぶし"
+
+[[case]]
+input = "季節"
+mode = "hiragana"
+expected = "きせつ"
+
+[[case]]
+input = "関節"
+mode = "hiragana"
+expected = "かんせつ"
+
+[[case]]
+input = "小節"
+mode = "hiragana"
+expected = "しょうせつ"
+
+[[case]]
+input = "ポイント節約"
+mode = "hiragana"
+expected = "ポイントせつやく"
+
+[[case]]
+input = "ゲームの節目"
+mode = "hiragana"
+expected = "ゲームのふしめ"
+
+[[case]]
+input = "足取り重く"
+mode = "hiragana"
+expected = "あしどりおもく"
+
+[[case]]
+input = "足取りが軽い"
+mode = "hiragana"
+expected = "あしどりがかるい"
