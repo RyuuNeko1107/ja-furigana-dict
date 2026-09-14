@@ -24,14 +24,14 @@ git に commit されている master HEAD の状態を基準にする。
 | カテゴリ | エントリ数 | サイズ |
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,674** | **739 KB** |
-| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **18,002** | **718 KB** |
-| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,663** | **127 KB** |
+| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **18,092** | **722 KB** |
+| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,665** | **127 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **1,019** | **27 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
-| [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,773** | **197 KB** |
+| [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,773** | **198 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **704** | **35 KB** |
-| **合計** | **64,835** | **1.80 MB** |
+| **合計** | **64,927** | **1.80 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -56,7 +56,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/jukugo/<genre>/*` — 手動 PR メンテのジャンル別 jukugo (≥ 2 字 surface)。 lib の Step 3 (jukugo lookup) で Lindera より優先採用。 各 genre dir の `_genre.toml` がカテゴリ description を持つ。
 
-**合計**: 18,002 件 / 718 KB (genre 6 区分)
+**合計**: 18,092 件 / 722 KB (genre 6 区分)
 
 #### 自然・生命
 
@@ -159,16 +159,16 @@ git に commit されている master HEAD の状態を基準にする。
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml) | 4,568 | 217 KB | 二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む) |
+| [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml) | 4,658 | 220 KB | 二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む) |
 | [`core/jukugo/basic/four_char.toml`](core/jukugo/basic/four_char.toml) | 35 | 2.3 KB | 四字熟語 (4 字 + 全 CJK 漢字) |
-| **小計** (2 ファイル) | **4,603** | **219 KB** | |
+| **小計** (2 ファイル) | **4,693** | **222 KB** | |
 
 
 ### 作品造語
 
 `core/works/<medium>/*` — 媒体 (game / literature 等) ごとに 1 作品 1 ファイル。 原則は公式読み (一般通称として定着していれば採録可)、 出典コメント必須、 古典読みは現代読み無い場合のみ。
 
-**合計**: 1,663 件 / 127 KB (genre 4 区分)
+**合計**: 1,665 件 / 127 KB (genre 4 区分)
 
 #### ゲーム
 
@@ -288,12 +288,12 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
 | [`core/works/vtuber/nijisanji.toml`](core/works/vtuber/nijisanji.toml) | 51 | 4.2 KB | にじさんじ (ANYCOLOR): ライバー名 (公式読みベース) |
-| [`core/works/vtuber/hololive.toml`](core/works/vtuber/hololive.toml) | 39 | 3.3 KB | ホロライブプロダクション (カバー): タレント名 (公式読みベース) |
+| [`core/works/vtuber/hololive.toml`](core/works/vtuber/hololive.toml) | 41 | 3.5 KB | ホロライブプロダクション (カバー): タレント名 (公式読みベース) |
 | [`core/works/vtuber/aogiri.toml`](core/works/vtuber/aogiri.toml) | 7 | 639 B | あおぎり高校 : タレント名 |
 | [`core/works/vtuber/kojin.toml`](core/works/vtuber/kojin.toml) | 6 | 524 B | 個人勢VTuber: タレント名 |
 | [`core/works/vtuber/vspo.toml`](core/works/vtuber/vspo.toml) | 6 | 620 B | ぶいすぽっ! : タレント名 (公式読みベース) |
 | [`core/works/vtuber/nanashi.toml`](core/works/vtuber/nanashi.toml) | 3 | 323 B | ななしいんく : タレント名 |
-| **小計** (6 ファイル) | **112** | **9.6 KB** | |
+| **小計** (6 ファイル) | **114** | **9.8 KB** | |
 
 
 ### 外来語
@@ -320,7 +320,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 
 | ファイル | 文字数 | ルール数 | サイズ | 用途 |
 |---|---:|---:|---:|---|
-| [`core/kanji/overrides.toml`](core/kanji/overrides.toml) | 2,773 | 3,823 | 197 KB | 単漢字 default override + 文脈分岐 reading |
+| [`core/kanji/overrides.toml`](core/kanji/overrides.toml) | 2,773 | 3,825 | 198 KB | 単漢字 default override + 文脈分岐 reading |
 
 ### 異体字
 
@@ -400,7 +400,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 4163 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 4178 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -503,6 +503,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20260915_eval_losses.toml`](tests/corpus/should_read/probe_20260915_eval_losses.toml) | 36 |
 |  | [`tests/corpus/should_read/probe_20260915_kome_silent.toml`](tests/corpus/should_read/probe_20260915_kome_silent.toml) | 2 |
 |  | [`tests/corpus/should_read/probe_20260915_lib_numbers_symbols.toml`](tests/corpus/should_read/probe_20260915_lib_numbers_symbols.toml) | 8 |
+|  | [`tests/corpus/should_read/probe_20260915_ue_jou.toml`](tests/corpus/should_read/probe_20260915_ue_jou.toml) | 15 |
 |  | [`tests/corpus/should_read/regression.toml`](tests/corpus/should_read/regression.toml) | 548 |
 |  | [`tests/corpus/should_read/sentences.toml`](tests/corpus/should_read/sentences.toml) | 49 |
 |  | [`tests/corpus/should_read/touhou.toml`](tests/corpus/should_read/touhou.toml) | 30 |
