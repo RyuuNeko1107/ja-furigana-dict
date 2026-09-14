@@ -1,0 +1,46 @@
+# 助数詞スイープ (counters.md) 由来の回帰 (2026-09-15)
+
+[[case]]
+input = "何周年"
+mode = "hiragana"
+expected = "なんしゅうねん"
+
+[[case]]
+input = "何期生"
+mode = "hiragana"
+expected = "なんきせい"
+
+[[case]]
+input = "何票入った"
+mode = "hiragana"
+expected = "なんぴょうはいった"
+
+[[case]]
+input = "何期待してんの"
+mode = "hiragana"
+expected = "なにきたいしてんの"
+
+[[case]]
+input = "何作る"
+mode = "hiragana"
+expected = "なにつくる"
+
+[[case]]
+input = "3敗"
+mode = "hiragana"
+expected = "さんぱい"
+
+[[case]]
+input = "3足"
+mode = "hiragana"
+expected = "さんぞく"
+
+[[case]]
+input = "何回"
+mode = "hiragana"
+expected = "なんかい"
+
+[[case]]
+input = "何敗"
+mode = "hiragana"
+expected = "なんぱい"

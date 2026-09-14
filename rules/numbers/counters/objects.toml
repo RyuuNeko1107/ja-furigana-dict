@@ -781,6 +781,10 @@ kanji_numeral = true
 last_digit = [1, 6, 8, 0]
 suffix = "パイ"
 sokuonize = true
+
+[[counter."敗".rules]]
+last_digit = [3]
+suffix = "パイ"  # 三敗 = さんぱい (★2026-09-15 counters.md)
 # === end: 敗 ===
 
 # 砲 (大砲): 一砲=いっぽう/六砲=ろっぽう/八砲=はっぽう、三砲=さんぼう (p系 半濁ポウ + 3連濁ボウ)
@@ -851,6 +855,10 @@ kanji_numeral = true
 last_digit = [1, 8, 0]
 suffix = "ソク"
 sokuonize = true
+
+[[counter."足".rules]]
+last_digit = [3]
+suffix = "ゾク"  # 三足 = さんぞく (★2026-09-15 counters.md)
 # === end: 足 ===
 
 # 包 (薬包等): 一包=いっぽう/六包=ろっぽう/八包=はっぽう (p系 1/6/8/10 促音半濁、3 連濁ボウ。★2026-06-21)
