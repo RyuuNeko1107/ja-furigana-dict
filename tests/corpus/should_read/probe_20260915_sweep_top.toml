@@ -1,0 +1,36 @@
+# 全漢字スイープ 上位字 (止 / 時 / 初 / 出 / 日) 由来の回帰 (2026-09-15)
+
+[[case]]
+input = "止めろ"
+mode = "hiragana"
+expected = "とめろ"
+
+[[case]]
+input = "息の根を止めろ"
+mode = "hiragana"
+expected = "いきのねをとめろ"
+
+[[case]]
+input = "止まれるか"
+mode = "hiragana"
+expected = "とまれるか"
+
+[[case]]
+input = "雨止んだ"
+mode = "hiragana"
+expected = "あめやんだ"
+
+[[case]]
+input = "出始めた"
+mode = "hiragana"
+expected = "ではじめた"
+
+[[case]]
+input = "今年初の"
+mode = "hiragana"
+expected = "ことしはつの"
+
+[[case]]
+input = "今年初めて"
+mode = "hiragana"
+expected = "ことしはじめて"
