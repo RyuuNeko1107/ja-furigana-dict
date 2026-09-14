@@ -1,0 +1,36 @@
+# 場所+中=ジュウ / ジャンル+物=モノ / 漢数字+分間 の回帰 (2026-09-15)
+
+[[case]]
+input = "日本中が注目"
+mode = "hiragana"
+expected = "にほんじゅうがちゅうもく"
+
+[[case]]
+input = "身体中が痛い"
+mode = "hiragana"
+expected = "からだじゅうがいたい"
+
+[[case]]
+input = "配信中です"
+mode = "hiragana"
+expected = "はいしんちゅうです"
+
+[[case]]
+input = "学園物のアニメ"
+mode = "hiragana"
+expected = "がくえんもののアニメ"
+
+[[case]]
+input = "障害物が多い"
+mode = "hiragana"
+expected = "しょうがいぶつがおおい"
+
+[[case]]
+input = "三分間待つ"
+mode = "hiragana"
+expected = "さんぷんかんまつ"
+
+[[case]]
+input = "数分間"
+mode = "hiragana"
+expected = "すうふんかん"
