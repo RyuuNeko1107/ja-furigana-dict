@@ -69,3 +69,14 @@ expected = "かいぶつあいてに"
 input = "大道芸人"
 mode = "hiragana"
 expected = "だいどうげいにん"
+
+# ローカル LLM 判定テストで検出 (人数 entry が 人数分 / 人数合わせ で割れていた)
+[[case]]
+input = "人数分ある"
+mode = "hiragana"
+expected = "にんずうぶんある"
+
+[[case]]
+input = "人数合わせ"
+mode = "hiragana"
+expected = "にんずうあわせ"
