@@ -1,0 +1,36 @@
+# 姓+家=ケ / 副詞+家=イエ / 職業+家=カ の回帰 (2026-09-15)
+
+[[case]]
+input = "徳川家の人々"
+mode = "hiragana"
+expected = "とくがわけのひとびと"
+
+[[case]]
+input = "犬神家の一族"
+mode = "hiragana"
+expected = "いぬがみけのいちぞく"
+
+[[case]]
+input = "結局家で寝た"
+mode = "hiragana"
+expected = "けっきょくいえでねた"
+
+[[case]]
+input = "今日家にいる"
+mode = "hiragana"
+expected = "きょういえにいる"
+
+[[case]]
+input = "専門家の意見"
+mode = "hiragana"
+expected = "せんもんかのいけん"
+
+[[case]]
+input = "有名所を回る"
+mode = "hiragana"
+expected = "ゆうめいどころをまわる"
+
+[[case]]
+input = "留置所"
+mode = "hiragana"
+expected = "りゅうちじょ"

@@ -2837,6 +2837,11 @@ reading = "モノ"
 char = "家"
 default = "いえ"
 
+# 「結局家で / 今日家に / 一旦家帰る」 = 副詞・時の語 + 家 → イエ (下の 漢字→カ より先に判定)
+[[kanji.match]]
+prev_ends_any = ["今日", "昨日", "明日", "毎日", "絶対", "一度", "一旦", "一回", "結局", "最近", "今度"]
+reading = "いえ"
+
 [[kanji.match]]
 prev_char_type = "漢字"
 reading = "カ"
