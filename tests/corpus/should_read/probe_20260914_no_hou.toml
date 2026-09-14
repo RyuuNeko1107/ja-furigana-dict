@@ -1,0 +1,98 @@
+# 「名詞 + の方」 = ホウ と 動詞語幹 + 球 = ダマ の回帰。
+# あの方 だけ人物の カタ が多数派なので entry、 あの方向 / あの方法 はその巻き添え防止。
+# 球 は語幹と同じ仮名で終わる副詞 (さっき / 少し) があるので rule にしていない。
+
+[[case]]
+input = "上の方"
+mode = "hiragana"
+expected = "うえのほう"
+
+[[case]]
+input = "最初の方"
+mode = "hiragana"
+expected = "さいしょのほう"
+
+[[case]]
+input = "スイカの方"
+mode = "hiragana"
+expected = "スイカのほう"
+
+[[case]]
+input = "投手の方"
+mode = "hiragana"
+expected = "とうしゅのほう"
+
+[[case]]
+input = "その方がいい"
+mode = "hiragana"
+expected = "そのほうがいい"
+
+[[case]]
+input = "この方が面白い"
+mode = "hiragana"
+expected = "このほうがおもしろい"
+
+[[case]]
+input = "あの方"
+mode = "hiragana"
+expected = "あのかた"
+
+[[case]]
+input = "あの方が来る"
+mode = "hiragana"
+expected = "あのかたがくる"
+
+[[case]]
+input = "あの方向"
+mode = "hiragana"
+expected = "あのほうこう"
+
+[[case]]
+input = "あの方法"
+mode = "hiragana"
+expected = "あのほうほう"
+
+[[case]]
+input = "偉い方"
+mode = "hiragana"
+expected = "えらいほう"
+
+[[case]]
+input = "仕方"
+mode = "hiragana"
+expected = "しかた"
+
+[[case]]
+input = "逃げ球"
+mode = "hiragana"
+expected = "にげだま"
+
+[[case]]
+input = "抜け球"
+mode = "hiragana"
+expected = "ぬけだま"
+
+[[case]]
+input = "こぼれ球"
+mode = "hiragana"
+expected = "こぼれだま"
+
+[[case]]
+input = "隠し球"
+mode = "hiragana"
+expected = "かくしだま"
+
+[[case]]
+input = "重い球"
+mode = "hiragana"
+expected = "おもいたま"
+
+[[case]]
+input = "さっき球遅い"
+mode = "hiragana"
+expected = "さっきたまおそい"
+
+[[case]]
+input = "少し球"
+mode = "hiragana"
+expected = "すこしたま"
