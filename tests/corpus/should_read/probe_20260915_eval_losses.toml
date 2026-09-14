@@ -1,0 +1,182 @@
+# 精度評価 (話し言葉 5,000 文) で ja が負けた読みの型の回帰。
+# 評価文そのものではなく、 型ごとに一般形でロックする (評価集合への過適合を避けるため)。
+
+[[case]]
+input = "鳥山明"
+mode = "hiragana"
+expected = "とりやまあきら"
+
+[[case]]
+input = "幻魔も出る"
+mode = "hiragana"
+expected = "げんまもでる"
+
+[[case]]
+input = "前走"
+mode = "hiragana"
+expected = "ぜんそう"
+
+[[case]]
+input = "秋旅"
+mode = "hiragana"
+expected = "あきたび"
+
+[[case]]
+input = "一人旅"
+mode = "hiragana"
+expected = "ひとりたび"
+
+[[case]]
+input = "旅行"
+mode = "hiragana"
+expected = "りょこう"
+
+[[case]]
+input = "仕様上"
+mode = "hiragana"
+expected = "しようじょう"
+
+[[case]]
+input = "効率上がる"
+mode = "hiragana"
+expected = "こうりつあがる"
+
+[[case]]
+input = "恨み節"
+mode = "hiragana"
+expected = "うらみぶし"
+
+[[case]]
+input = "捨て台詞"
+mode = "hiragana"
+expected = "すてぜりふ"
+
+[[case]]
+input = "後付け"
+mode = "hiragana"
+expected = "あとづけ"
+
+[[case]]
+input = "来られたら"
+mode = "hiragana"
+expected = "こられたら"
+
+[[case]]
+input = "来ない"
+mode = "hiragana"
+expected = "こない"
+
+[[case]]
+input = "黙ってろ"
+mode = "hiragana"
+expected = "だまってろ"
+
+[[case]]
+input = "沈黙"
+mode = "hiragana"
+expected = "ちんもく"
+
+[[case]]
+input = "年越す"
+mode = "hiragana"
+expected = "としこす"
+
+[[case]]
+input = "戸崎"
+mode = "hiragana"
+expected = "とさき"
+
+[[case]]
+input = "天辺"
+mode = "hiragana"
+expected = "てっぺん"
+
+[[case]]
+input = "印つけて"
+mode = "hiragana"
+expected = "しるしつけて"
+
+[[case]]
+input = "印を結ぶ"
+mode = "hiragana"
+expected = "いんをむすぶ"
+
+[[case]]
+input = "眼の前"
+mode = "hiragana"
+expected = "めのまえ"
+
+[[case]]
+input = "眼科"
+mode = "hiragana"
+expected = "がんか"
+
+[[case]]
+input = "常識人"
+mode = "hiragana"
+expected = "じょうしきじん"
+
+[[case]]
+input = "何通り"
+mode = "hiragana"
+expected = "なんとおり"
+
+[[case]]
+input = "意味わからん位凄い"
+mode = "hiragana"
+expected = "いみわからんくらいすごい"
+
+[[case]]
+input = "一位"
+mode = "hiragana"
+expected = "いちい"
+
+[[case]]
+input = "漢気"
+mode = "hiragana"
+expected = "おとこぎ"
+
+[[case]]
+input = "血流"
+mode = "hiragana"
+expected = "けつりゅう"
+
+[[case]]
+input = "鋼の錬金術師"
+mode = "hiragana"
+expected = "はがねのれんきんじゅつし"
+
+[[case]]
+input = "鉄鋼"
+mode = "hiragana"
+expected = "てっこう"
+
+[[case]]
+input = "獲れない"
+mode = "hiragana"
+expected = "とれない"
+
+[[case]]
+input = "獲得"
+mode = "hiragana"
+expected = "かくとく"
+
+[[case]]
+input = "産駒"
+mode = "hiragana"
+expected = "さんく"
+
+[[case]]
+input = "秋華賞"
+mode = "hiragana"
+expected = "しゅうかしょう"
+
+[[case]]
+input = "桃白白"
+mode = "hiragana"
+expected = "たおぱいぱい"
+
+[[case]]
+input = "獣神"
+mode = "hiragana"
+expected = "じゅうしん"

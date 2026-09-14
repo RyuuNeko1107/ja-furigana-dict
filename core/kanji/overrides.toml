@@ -1631,7 +1631,16 @@ reading = "バ"
 # 等 jukugo は band 1000 で勝つ
 [[kanji]]
 char = "眼"
-default = "ガン"
+default = "め"
+
+# ★2026-09-15 精度評価 (話し言葉 5,000 文) で見つかった誤読の型: 単独の 眼 (眼の前 / 眼の色 / 眼で見る) は め。 眼科 / 肉眼 など漢字連結は ガン
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ガン"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "ガン"
 
 # 「説」 unihan default 「とく」 → 「セツ」 (= 「説明 / 仮説 / 説得 / 解説」)。 「説く」 は
 # jukugo 個別か next ひらがな → ト
@@ -5080,6 +5089,11 @@ default = "シン"
 char = "位"
 default = "イ"
 
+# ★2026-09-15 精度評価 (話し言葉 5,000 文) で見つかった誤読の型: 意味わからん位 / 大きい位 = くらい
+[[kanji.match]]
+prev_ends_any = ["ん", "い"]
+reading = "くらい"
+
 [[kanji.match]]
 prev_eq = "の"
 reading = "くらい"
@@ -6908,6 +6922,11 @@ default = "トウ"
 [[kanji]]
 char = "黙"
 default = "モク"
+
+# ★2026-09-15 精度評価 (話し言葉 5,000 文) で見つかった誤読の型: 黙って / 黙れ / 黙らせる = だま (1,205 行)。 沈黙 / 黙秘 は漢字連結で非干渉
+[[kanji.match]]
+next_starts_any = ["っ", "れ", "ら", "り", "る", "ろ"]
+reading = "だま"
 
 # ─── 第 18 弾 sweep: joyo length 3 形容詞 (= い終わり) 59 字 ──
 # 「域 / 境 / 界 / 封 = さかい」 「盟 = ちかい」 「題 = ひたい」 等は誤入力。 形容詞活用は Lindera 1 token で reading 維持
@@ -8900,7 +8919,16 @@ default = "リュウ"
 # unihan default 「はがね」 は名詞単独のみ、 現代では熟語 dominant
 [[kanji]]
 char = "鋼"
-default = "コウ"
+default = "はがね"
+
+# ★2026-09-15 精度評価 (話し言葉 5,000 文) で見つかった誤読の型: 単独の 鋼 (鋼の意志 / 鋼の錬金術師 / 鋼メンタル) は はがね。 鉄鋼 / 鋼材 など漢字連結は コウ
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "コウ"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "コウ"
 
 # 「銭」 default 「セン」 (= 金銭/銭湯/古銭/銭差し/小銭)。
 # unihan default 「ぜに」 は古語/方言、 現代では熟語 dominant
@@ -10823,10 +10851,11 @@ default = "ゴク"
 [[kanji]]
 char = "獲"
 default = "カク"
+# ★2026-09-15 精度評価 (話し言葉 5,000 文) で見つかった誤読の型: 獲る は口語では トル (獲ったど / 獲れたて / 獲れない)。 エル は文語
 
 [[kanji.match]]
-next_starts_any = ["る", "た", "て", "ら", "り", "れ", "ろ", "な", "よ"]
-reading = "え"
+next_starts_any = ["る", "た", "て", "ら", "り", "れ", "ろ", "な", "よ", "っ"]
+reading = "と"
 
 # 「珍」 default 「チン」 (= 珍味/珍奇/珍重/珍客/珍品)。
 # 形容詞 「珍しい」 = めずらしい は okurigana 「し」 始まりで切替
@@ -11604,6 +11633,11 @@ default = "コウ"
 [[kanji]]
 char = "印"
 default = "イン"
+
+# ★2026-09-15 精度評価 (話し言葉 5,000 文) で見つかった誤読の型: 印つける / 印付け = しるし。 印を結ぶ (いん) があるので つ / 付 後続だけに絞る
+[[kanji.match]]
+next_starts_any = ["つ", "付"]
+reading = "しるし"
 
 # 「卵」 default 「ラン」 (= 卵黄/受精卵/排卵/抱卵/卵巣/産卵)。
 # 単独 + 助詞接続 → 「たまご」 (= 「卵が/卵を/卵の」 等)
@@ -13168,10 +13202,9 @@ reading = "かつ"
 [[kanji]]
 char = "旅"
 default = "たび"
+# ★2026-09-15 精度評価 (話し言葉 5,000 文) で見つかった誤読の型: prev 漢字 → リョ は 一人旅 / 秋旅 / 避暑旅 を壊すので撤去。
+# 音読みの熟語 (旅行 / 旅館 / 旅客) は 旅 が先頭に来るので entry で足りる
 
-[[kanji.match]]
-prev_char_type = "漢字"
-reading = "リョ"
 
 [[kanji]]
 char = "昼"
