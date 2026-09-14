@@ -1,0 +1,77 @@
+# 上 の読み分け (2026-09-15)。 漢語 + 上 = ジョウ は entry、 方向/比較 の ウエ は default、
+# 上がる/上げる が漢語に直結する形 = ア を回帰 lock。
+
+[[case]]
+input = "事実上の決勝"
+mode = "hiragana"
+expected = "じじつじょうのけっしょう"
+
+[[case]]
+input = "仕事上の付き合い"
+mode = "hiragana"
+expected = "しごとじょうのつきあい"
+
+[[case]]
+input = "画面上に出る"
+mode = "hiragana"
+expected = "がめんじょうにでる"
+
+[[case]]
+input = "塁上に二人"
+mode = "hiragana"
+expected = "るいじょうにふたり"
+
+[[case]]
+input = "当落線上"
+mode = "hiragana"
+expected = "とうらくせんじょう"
+
+[[case]]
+input = "右上に表示"
+mode = "hiragana"
+expected = "みぎうえにひょうじ"
+
+[[case]]
+input = "一番上の段"
+mode = "hiragana"
+expected = "いちばんうえのだん"
+
+[[case]]
+input = "兄上"
+mode = "hiragana"
+expected = "あにうえ"
+
+[[case]]
+input = "効率上がってる"
+mode = "hiragana"
+expected = "こうりつあがってる"
+
+[[case]]
+input = "テンション上がりすぎ"
+mode = "hiragana"
+expected = "テンションあがりすぎ"
+
+[[case]]
+input = "全部上振れした"
+mode = "hiragana"
+expected = "ぜんぶうわぶれした"
+
+[[case]]
+input = "白上がんばれ"
+mode = "hiragana"
+expected = "しらかみがんばれ"
+
+[[case]]
+input = "不勉強者"
+mode = "hiragana"
+expected = "ふべんきょうしゃ"
+
+[[case]]
+input = "食事前に飲む"
+mode = "hiragana"
+expected = "しょくじまえにのむ"
+
+[[case]]
+input = "事前に確認"
+mode = "hiragana"
+expected = "じぜんにかくにん"
