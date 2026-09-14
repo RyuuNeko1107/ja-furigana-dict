@@ -1,0 +1,56 @@
+# 下 = カ (漢語 + 下) / 副詞 + 後 = アト の回帰 (2026-09-15)
+
+[[case]]
+input = "支配下に置く"
+mode = "hiragana"
+expected = "しはいかにおく"
+
+[[case]]
+input = "水面下で動く"
+mode = "hiragana"
+expected = "すいめんかでうごく"
+
+[[case]]
+input = "半地下の部屋"
+mode = "hiragana"
+expected = "はんちかのへや"
+
+[[case]]
+input = "株価下がる"
+mode = "hiragana"
+expected = "かぶかさがる"
+
+[[case]]
+input = "全部後でやる"
+mode = "hiragana"
+expected = "ぜんぶあとでやる"
+
+[[case]]
+input = "一番後に来た"
+mode = "hiragana"
+expected = "いちばんあとにきた"
+
+[[case]]
+input = "一番後ろ"
+mode = "hiragana"
+expected = "いちばんうしろ"
+
+[[case]]
+input = "絶対後悔する"
+mode = "hiragana"
+expected = "ぜったいこうかいする"
+
+[[case]]
+input = "試合後に"
+mode = "hiragana"
+expected = "しあいごに"
+
+[[case]]
+input = "何分後"
+mode = "hiragana"
+expected = "なんぷんご"
+
+[[case]]
+input = "決勝戦直後"
+mode = "hiragana"
+expected = "けっしょうせんちょくご"
