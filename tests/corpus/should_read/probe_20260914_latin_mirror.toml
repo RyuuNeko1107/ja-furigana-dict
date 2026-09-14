@@ -1,0 +1,93 @@
+# カタカナ隣接 rule はあるのに英数隣接 rule が無かった字の回帰。
+# 英数 は数字も含むので、 数字 + 組 = くみ (助数詞) と 中々 を割らないことも固定する。
+# 時 は 数字 + 時 の助数詞経路を奪うので対象外にした (5時 = ごじ のまま)。
+
+[[case]]
+input = "EN勢の"
+mode = "hiragana"
+expected = "ENぜいの"
+
+[[case]]
+input = "ID組の"
+mode = "hiragana"
+expected = "アイディーぐみの"
+
+[[case]]
+input = "DL中だ"
+mode = "hiragana"
+expected = "DLちゅうだ"
+
+[[case]]
+input = "PC君も"
+mode = "hiragana"
+expected = "ピーシーくんも"
+
+[[case]]
+input = "FG内で"
+mode = "hiragana"
+expected = "FGないで"
+
+[[case]]
+input = "C国の"
+mode = "hiragana"
+expected = "Cこくの"
+
+[[case]]
+input = "HR数が"
+mode = "hiragana"
+expected = "エイチアールすうが"
+
+[[case]]
+input = "BB弾だ"
+mode = "hiragana"
+expected = "BBだんだ"
+
+[[case]]
+input = "FPS力が"
+mode = "hiragana"
+expected = "エフピーエスりょくが"
+
+[[case]]
+input = "X帯は"
+mode = "hiragana"
+expected = "Xたいは"
+
+[[case]]
+input = "A氏に"
+mode = "hiragana"
+expected = "Aしに"
+
+[[case]]
+input = "2組のカップル"
+mode = "hiragana"
+expected = "にくみのカップル"
+
+[[case]]
+input = "3人1組"
+mode = "hiragana"
+expected = "さんにんいちくみ"
+
+[[case]]
+input = "100発100中"
+mode = "hiragana"
+expected = "ひゃくぱつひゃくちゅう"
+
+[[case]]
+input = "1中々だった"
+mode = "hiragana"
+expected = "いちなかなかだった"
+
+[[case]]
+input = "5時くらい"
+mode = "hiragana"
+expected = "ごじくらい"
+
+[[case]]
+input = "2国の対決"
+mode = "hiragana"
+expected = "にこくのたいけつ"
+
+[[case]]
+input = "1名"
+mode = "hiragana"
+expected = "いちめい"

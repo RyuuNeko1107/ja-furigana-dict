@@ -162,6 +162,11 @@ reading = "くに"
 prev_char_type = "カタカナ"
 reading = "コク"
 
+# ★2026-09-14: 英字 + 国 もカタカナ語と同じ読み (カタカナ rule に英数版が無かった)
+[[kanji.match]]
+prev_char_type = "英数"
+reading = "コク"
+
 [[kanji]]
 char = "風"
 # default はフウ据え置き (★2026-09-11: 訓 flip を試したが 「長澤まさみ風」 「アニソン風」 の
@@ -760,6 +765,11 @@ reading = "リョク"
 prev_char_type = "カタカナ"
 reading = "リョク"
 
+# ★2026-09-14: 英字 + 力 もカタカナ語と同じ読み (カタカナ rule に英数版が無かった)
+[[kanji.match]]
+prev_char_type = "英数"
+reading = "リョク"
+
 # 「雅」: 形容動詞 「雅な / 雅やか」 で 「みやび」、 default 「つね」 は希少。
 [[kanji]]
 char = "雅"
@@ -1120,6 +1130,11 @@ reading = "タイ"
 prev_char_type = "カタカナ"
 reading = "タイ"
 
+# ★2026-09-14: 英字 + 帯 もカタカナ語と同じ読み (カタカナ rule に英数版が無かった)
+[[kanji.match]]
+prev_char_type = "英数"
+reading = "タイ"
+
 [[kanji.match]]
 next_char_type = "漢字"
 reading = "タイ"
@@ -1257,6 +1272,11 @@ reading = "ゼイ"
 prev_char_type = "カタカナ"
 reading = "ゼイ"
 
+# ★2026-09-14: 英字 + 勢 もカタカナ語と同じ読み (カタカナ rule に英数版が無かった)
+[[kanji.match]]
+prev_char_type = "英数"
+reading = "ゼイ"
+
 # 「重」: 音読み 「ジュウ」 (= 「重要 / 体重 / 二重 / 厳重」) が圧倒的、 形容詞
 # 「重い (おもい)」 は ひらがな後続で 「おも」 語幹。
 [[kanji]]
@@ -1313,6 +1333,11 @@ prev_char_type = "漢字"
 reading = "スウ"
 [[kanji.match]]
 prev_char_type = "カタカナ"
+reading = "スウ"
+
+# ★2026-09-14: 英字 + 数 もカタカナ語と同じ読み (カタカナ rule に英数版が無かった)
+[[kanji.match]]
+prev_char_type = "英数"
 reading = "スウ"
 # 「数 + 漢字」 接頭辞 case (= 「数百万 / 数千 / 数年 / 数日 / 数人」) → スウ
 [[kanji.match]]
@@ -1393,6 +1418,11 @@ reading = "クン"
 
 [[kanji.match]]
 prev_char_type = "カタカナ"
+reading = "クン"
+
+# ★2026-09-14: 英字 + 君 もカタカナ語と同じ読み (カタカナ rule に英数版が無かった)
+[[kanji.match]]
+prev_char_type = "英数"
 reading = "クン"
 
 # 「ねこ君 / みく君 / ○ちゃん君」 等 ひらがな名前 + 君 → クン (= 接尾辞用法)
@@ -1516,6 +1546,11 @@ reading = "ナイ"
 
 [[kanji.match]]
 prev_char_type = "カタカナ"
+reading = "ナイ"
+
+# ★2026-09-14: 英字 + 内 もカタカナ語と同じ読み (カタカナ rule に英数版が無かった)
+[[kanji.match]]
+prev_char_type = "英数"
 reading = "ナイ"
 
 [[kanji.match]]
@@ -2923,6 +2958,16 @@ reading = "チュウ"
 prev_char_type = "カタカナ"
 reading = "チュウ"
 
+# ★2026-09-14: 中々 (なかなか) を英数 rule で割らない
+[[kanji.match]]
+next_starts_any = ["々"]
+reading = "ナカ"
+
+# ★2026-09-14: 英字 + 中 もカタカナ語と同じ読み (カタカナ rule に英数版が無かった)
+[[kanji.match]]
+prev_char_type = "英数"
+reading = "チュウ"
+
 # 「件」: default 「ケン」 (= 「件数 / N 件 / 案件 / 用件 / 一件」)、 訓読み 「くだり」 は
 # 古語 / 文章語で希少。
 [[kanji]]
@@ -2944,6 +2989,11 @@ reading = "ダン"
 # ★2026-09-13 カタカナ隣接 sweep (ゴム弾 / コルク弾)
 [[kanji.match]]
 prev_char_type = "カタカナ"
+reading = "ダン"
+
+# ★2026-09-14: 英字 + 弾 もカタカナ語と同じ読み (カタカナ rule に英数版が無かった)
+[[kanji.match]]
+prev_char_type = "英数"
 reading = "ダン"
 
 [[kanji.match]]
@@ -13497,6 +13547,11 @@ reading = "シ"
 prev_char_type = "カタカナ"
 reading = "シ"
 
+# ★2026-09-14: 英字 + 氏 もカタカナ語と同じ読み (カタカナ rule に英数版が無かった)
+[[kanji.match]]
+prev_char_type = "英数"
+reading = "シ"
+
 [[kanji.match]]
 next_char_type = "漢字"
 reading = "シ"
@@ -14644,6 +14699,16 @@ reading = "ぐみ"
 prev_char_type = "カタカナ"
 reading = "ぐみ"
 
+# ★2026-09-14: 数字 + 組 は助数詞の くみ (2組のカップル / 3人1組)。 英数 rule は数字も含むので先に逃がす
+[[kanji.match]]
+prev_ends_any = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "０", "１", "２", "３", "４", "５", "６", "７", "８", "９"]
+reading = "くみ"
+
+# ★2026-09-14: 英字 + 組 もカタカナ語と同じ読み (カタカナ rule に英数版が無かった)
+[[kanji.match]]
+prev_char_type = "英数"
+reading = "ぐみ"
+
 # 「繰」 default 「く」 (= 動詞「繰る/繰り出す/繰り返す」 全活用)。
 # unihan 「くる」 (終止形) は okurigana「る/ら/り/っ/れ/ろ」 と二重連結する → default 訂正。
 [[kanji]]
@@ -14710,6 +14775,11 @@ default = "な"
 # グループ名 56 / ゲーム名 / キャラ名 / ユーザー名 …で計 494。 全て 「〜の名称」)。
 [[kanji.match]]
 prev_char_type = "カタカナ"
+reading = "メイ"
+
+# ★2026-09-14: 英字 + 名 もカタカナ語と同じ読み (カタカナ rule に英数版が無かった)
+[[kanji.match]]
+prev_char_type = "英数"
 reading = "メイ"
 
 # 名○ prefix (名勝負/名作/名曲 等) = メイ
