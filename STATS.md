@@ -400,7 +400,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 4155 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 4163 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -502,6 +502,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20260914_surname_sweep_byproduct.toml`](tests/corpus/should_read/probe_20260914_surname_sweep_byproduct.toml) | 14 |
 |  | [`tests/corpus/should_read/probe_20260915_eval_losses.toml`](tests/corpus/should_read/probe_20260915_eval_losses.toml) | 36 |
 |  | [`tests/corpus/should_read/probe_20260915_kome_silent.toml`](tests/corpus/should_read/probe_20260915_kome_silent.toml) | 2 |
+|  | [`tests/corpus/should_read/probe_20260915_lib_numbers_symbols.toml`](tests/corpus/should_read/probe_20260915_lib_numbers_symbols.toml) | 8 |
 |  | [`tests/corpus/should_read/regression.toml`](tests/corpus/should_read/regression.toml) | 548 |
 |  | [`tests/corpus/should_read/sentences.toml`](tests/corpus/should_read/sentences.toml) | 49 |
 |  | [`tests/corpus/should_read/touhou.toml`](tests/corpus/should_read/touhou.toml) | 30 |
