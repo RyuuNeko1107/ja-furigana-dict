@@ -320,7 +320,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 
 | ファイル | 文字数 | ルール数 | サイズ | 用途 |
 |---|---:|---:|---:|---|
-| [`core/kanji/overrides.toml`](core/kanji/overrides.toml) | 2,773 | 3,800 | 196 KB | 単漢字 default override + 文脈分岐 reading |
+| [`core/kanji/overrides.toml`](core/kanji/overrides.toml) | 2,773 | 3,803 | 196 KB | 単漢字 default override + 文脈分岐 reading |
 
 ### 異体字
 
@@ -400,7 +400,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 4087 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 4099 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -489,6 +489,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20260914_katakana_suffix.toml`](tests/corpus/should_read/probe_20260914_katakana_suffix.toml) | 16 |
 |  | [`tests/corpus/should_read/probe_20260914_kono_aida.toml`](tests/corpus/should_read/probe_20260914_kono_aida.toml) | 13 |
 |  | [`tests/corpus/should_read/probe_20260914_kun_verb_stem.toml`](tests/corpus/should_read/probe_20260914_kun_verb_stem.toml) | 18 |
+|  | [`tests/corpus/should_read/probe_20260914_latin_sen.toml`](tests/corpus/should_read/probe_20260914_latin_sen.toml) | 12 |
 |  | [`tests/corpus/should_read/probe_20260914_name_collision.toml`](tests/corpus/should_read/probe_20260914_name_collision.toml) | 11 |
 |  | [`tests/corpus/should_read/probe_20260914_new_genre.toml`](tests/corpus/should_read/probe_20260914_new_genre.toml) | 16 |
 |  | [`tests/corpus/should_read/probe_20260914_no_hou.toml`](tests/corpus/should_read/probe_20260914_no_hou.toml) | 19 |
