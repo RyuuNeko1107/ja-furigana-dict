@@ -1,0 +1,61 @@
+# 英数 + 戦 = セン / 英数 + 型 = ガタ。 w戦う のような英字直後の動詞は タタカ のまま。
+
+[[case]]
+input = "PK戦"
+mode = "hiragana"
+expected = "ピーケーせん"
+
+[[case]]
+input = "CPU戦"
+mode = "hiragana"
+expected = "シーピーユーせん"
+
+[[case]]
+input = "AI戦"
+mode = "hiragana"
+expected = "エーアイせん"
+
+[[case]]
+input = "w戦う"
+mode = "hiragana"
+expected = "wたたかう"
+
+[[case]]
+input = "w戦った"
+mode = "hiragana"
+expected = "wたたかった"
+
+[[case]]
+input = "ボス戦"
+mode = "hiragana"
+expected = "ボスせん"
+
+[[case]]
+input = "戦が始まる"
+mode = "hiragana"
+expected = "いくさがはじまる"
+
+[[case]]
+input = "戦う"
+mode = "hiragana"
+expected = "たたかう"
+
+[[case]]
+input = "C型"
+mode = "hiragana"
+expected = "Cがた"
+
+[[case]]
+input = "2型糖尿病"
+mode = "hiragana"
+expected = "にがたとうにょうびょう"
+
+[[case]]
+input = "A型"
+mode = "hiragana"
+expected = "えーがた"
+
+[[case]]
+input = "3戦目"
+mode = "hiragana"
+expected = "さんせんめ"
