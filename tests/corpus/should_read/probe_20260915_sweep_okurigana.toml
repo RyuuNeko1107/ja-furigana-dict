@@ -1,0 +1,81 @@
+# 全漢字スイープ (送り仮名区分) 由来の回帰 (2026-09-15)
+
+[[case]]
+input = "汚ねえ"
+mode = "hiragana"
+expected = "きたねえ"
+
+[[case]]
+input = "汚すぎる"
+mode = "hiragana"
+expected = "きたなすぎる"
+
+[[case]]
+input = "服を汚した"
+mode = "hiragana"
+expected = "ふくをよごした"
+
+[[case]]
+input = "向いてる"
+mode = "hiragana"
+expected = "むいてる"
+
+[[case]]
+input = "甘かった"
+mode = "hiragana"
+expected = "あまかった"
+
+[[case]]
+input = "歩くんだ"
+mode = "hiragana"
+expected = "あるくんだ"
+
+[[case]]
+input = "呪われそう"
+mode = "hiragana"
+expected = "のろわれそう"
+
+[[case]]
+input = "繋がない"
+mode = "hiragana"
+expected = "つながない"
+
+[[case]]
+input = "側が"
+mode = "hiragana"
+expected = "がわが"
+
+[[case]]
+input = "恐るべし"
+mode = "hiragana"
+expected = "おそるべし"
+
+[[case]]
+input = "故に"
+mode = "hiragana"
+expected = "ゆえに"
+
+[[case]]
+input = "事故の"
+mode = "hiragana"
+expected = "じこの"
+
+[[case]]
+input = "汚ない"
+mode = "hiragana"
+expected = "きたない"
+
+[[case]]
+input = "警察が出向いた"
+mode = "hiragana"
+expected = "けいさつがでむいた"
+
+[[case]]
+input = "今一歩か"
+mode = "hiragana"
+expected = "いまいっぽか"
+
+[[case]]
+input = "食べ歩き"
+mode = "hiragana"
+expected = "たべあるき"
