@@ -1,0 +1,46 @@
+# その内 = ソノウチ と、 その entry が 内容 / 内野 等を割らないことの回帰。
+
+[[case]]
+input = "その内わかる"
+mode = "hiragana"
+expected = "そのうちわかる"
+
+[[case]]
+input = "その内慣れる"
+mode = "hiragana"
+expected = "そのうちなれる"
+
+[[case]]
+input = "その内に"
+mode = "hiragana"
+expected = "そのうちに"
+
+[[case]]
+input = "その内容"
+mode = "hiragana"
+expected = "そのないよう"
+
+[[case]]
+input = "その内野"
+mode = "hiragana"
+expected = "そのないや"
+
+[[case]]
+input = "その内側"
+mode = "hiragana"
+expected = "そのうちがわ"
+
+[[case]]
+input = "その内部"
+mode = "hiragana"
+expected = "そのないぶ"
+
+[[case]]
+input = "その内訳"
+mode = "hiragana"
+expected = "そのうちわけ"
+
+[[case]]
+input = "この内容"
+mode = "hiragana"
+expected = "このないよう"
