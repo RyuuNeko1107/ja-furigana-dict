@@ -13992,6 +13992,12 @@ default = "せ"
 prev_char_type = "漢字"
 reading = "ハイ"
 
+# ★2026-09-14: 背 + 訓読みの語 = せ (背高い 31 / 背伸び / 背比べ / 背丈 / 背筋 / 背番号)。
+# 下の next 漢字 → ハイ より先に置く。 背景 / 背後 / 背徳 / 背面 は語幹漢字が別なので非干渉
+[[kanji.match]]
+next_starts_any = ["高", "伸", "比", "丈", "筋", "番"]
+reading = "せ"
+
 [[kanji.match]]
 next_char_type = "漢字"
 reading = "ハイ"

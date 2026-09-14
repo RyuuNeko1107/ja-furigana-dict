@@ -1,0 +1,96 @@
+# 専門ファイルの読みが一般語を占有していた分 (出現 10-59 回帯の横断点検)。
+
+[[case]]
+input = "背高い"
+mode = "hiragana"
+expected = "せたかい"
+
+[[case]]
+input = "背伸び"
+mode = "hiragana"
+expected = "せのび"
+
+[[case]]
+input = "背景"
+mode = "hiragana"
+expected = "はいけい"
+
+[[case]]
+input = "背後"
+mode = "hiragana"
+expected = "はいご"
+
+[[case]]
+input = "あと半月しかない"
+mode = "hiragana"
+expected = "あとはんつきしかない"
+
+[[case]]
+input = "半月板損傷"
+mode = "hiragana"
+expected = "はんげつばんそんしょう"
+
+[[case]]
+input = "突出して面白い"
+mode = "hiragana"
+expected = "とっしゅつしておもしろい"
+
+[[case]]
+input = "天一の本店"
+mode = "hiragana"
+expected = "てんいちのほんてん"
+
+[[case]]
+input = "貞治さん"
+mode = "hiragana"
+expected = "さだはるさん"
+
+[[case]]
+input = "前輪"
+mode = "hiragana"
+expected = "ぜんりん"
+
+[[case]]
+input = "後輪"
+mode = "hiragana"
+expected = "こうりん"
+
+[[case]]
+input = "声明文"
+mode = "hiragana"
+expected = "せいめいぶん"
+
+[[case]]
+input = "小柄に見える"
+mode = "hiragana"
+expected = "こがらにみえる"
+
+[[case]]
+input = "前張りコース"
+mode = "hiragana"
+expected = "まえばりコース"
+
+[[case]]
+input = "大道さん"
+mode = "hiragana"
+expected = "だいどうさん"
+
+[[case]]
+input = "逆足"
+mode = "hiragana"
+expected = "ぎゃくあし"
+
+[[case]]
+input = "不通だろ"
+mode = "hiragana"
+expected = "ふつうだろ"
+
+[[case]]
+input = "麻布十番"
+mode = "hiragana"
+expected = "あざぶじゅうばん"
+
+[[case]]
+input = "星的に無理"
+mode = "hiragana"
+expected = "ほしてきにむり"
