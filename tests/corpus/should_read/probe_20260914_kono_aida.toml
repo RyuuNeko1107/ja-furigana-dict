@@ -1,0 +1,66 @@
+# この間 / その間 = アイダ と、 その entry が 間違い / 間取り 等を割らないことの回帰。
+
+[[case]]
+input = "この間の配信"
+mode = "hiragana"
+expected = "このあいだのはいしん"
+
+[[case]]
+input = "この間"
+mode = "hiragana"
+expected = "このあいだ"
+
+[[case]]
+input = "その間に"
+mode = "hiragana"
+expected = "そのあいだに"
+
+[[case]]
+input = "この間見た"
+mode = "hiragana"
+expected = "このあいだみた"
+
+[[case]]
+input = "その間違い"
+mode = "hiragana"
+expected = "そのまちがい"
+
+[[case]]
+input = "この間違ってた"
+mode = "hiragana"
+expected = "このまちがってた"
+
+[[case]]
+input = "この間取り"
+mode = "hiragana"
+expected = "このまどり"
+
+[[case]]
+input = "その間隔"
+mode = "hiragana"
+expected = "そのかんかく"
+
+[[case]]
+input = "この間合い"
+mode = "hiragana"
+expected = "このまあい"
+
+[[case]]
+input = "その間柄"
+mode = "hiragana"
+expected = "そのあいだがら"
+
+[[case]]
+input = "この間抜け"
+mode = "hiragana"
+expected = "このまぬけ"
+
+[[case]]
+input = "休憩の間"
+mode = "hiragana"
+expected = "きゅうけいのあいだ"
+
+[[case]]
+input = "時間"
+mode = "hiragana"
+expected = "じかん"
