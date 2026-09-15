@@ -14,3 +14,18 @@ expected = "へたなてっぽうもかずうちゃあたる"
 input = "立場が逆だったら"
 mode = "hiragana"
 expected = "たちばがぎゃくだったら"
+
+[[case]]
+input = "久留米ラーメン"
+mode = "hiragana"
+expected = "くるめラーメン"
+
+[[case]]
+input = "錦糸町で降りる"
+mode = "hiragana"
+expected = "きんしちょうでおりる"
+
+[[case]]
+input = "原さんが来た"
+mode = "hiragana"
+expected = "はらさんがきた"
