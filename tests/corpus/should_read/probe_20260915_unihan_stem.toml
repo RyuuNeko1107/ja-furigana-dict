@@ -1,0 +1,66 @@
+# 単漢字 (unihan) の送り仮名込み読みを語幹へ (2026-09-15)
+
+[[case]]
+input = "儚すぎる"
+mode = "hiragana"
+expected = "はかなすぎる"
+
+[[case]]
+input = "扮したやつ"
+mode = "hiragana"
+expected = "ふんしたやつ"
+
+[[case]]
+input = "騙されて"
+mode = "hiragana"
+expected = "だまされて"
+
+[[case]]
+input = "憑かれて"
+mode = "hiragana"
+expected = "つかれて"
+
+[[case]]
+input = "舐めんな"
+mode = "hiragana"
+expected = "なめんな"
+
+[[case]]
+input = "痺れる"
+mode = "hiragana"
+expected = "しびれる"
+
+[[case]]
+input = "蛙の子"
+mode = "hiragana"
+expected = "かえるのこ"
+
+[[case]]
+input = "世の中は歪だよ"
+mode = "hiragana"
+expected = "よのなかはいびつだよ"
+
+[[case]]
+input = "歪んでる"
+mode = "hiragana"
+expected = "ゆがんでる"
+
+[[case]]
+input = "媚売り作戦"
+mode = "hiragana"
+expected = "こびうりさくせん"
+
+[[case]]
+input = "媚びる"
+mode = "hiragana"
+expected = "こびる"
+
+[[case]]
+input = "呆れた"
+mode = "hiragana"
+expected = "あきれた"
+
+[[case]]
+input = "満遍なく"
+mode = "hiragana"
+expected = "まんべんなく"

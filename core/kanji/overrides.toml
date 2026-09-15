@@ -20012,3 +20012,36 @@ reading = "スイ"
 char = "畦"
 default = "あぜ"
 
+# ★2026-09-15 unihan の送り仮名込み読み (ひずむ / こびる / ゆでる / あきれる) を語幹化した際、
+# 単独用法 (歪だ / 媚売り / 茹で蛸 / 阿呆の呆) が崩れたので block で読み分ける
+[[kanji]]
+char = "歪"
+default = "いびつ"
+
+[[kanji.match]]
+next_starts_any = ["ん", "み", "む", "ま", "め", "も"]
+reading = "ゆが"
+
+[[kanji]]
+char = "媚"
+default = "こび"
+
+[[kanji.match]]
+next_starts_any = ["び", "ぶ", "べ"]
+reading = "こ"
+
+[[kanji]]
+char = "茹"
+default = "ゆで"
+
+[[kanji.match]]
+next_starts_any = ["で", "だ", "っ"]
+reading = "ゆ"
+
+[[kanji]]
+char = "呆"
+default = "あほ"
+
+[[kanji.match]]
+next_starts_any = ["れ"]
+reading = "あき"
