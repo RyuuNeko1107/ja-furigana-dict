@@ -1,0 +1,51 @@
+# 全漢字スイープ 自 / 法 / 雑 / 聴 / 由 / 故 / 城 / 忙 (2026-09-16)
+
+[[case]]
+input = "王は経験が浅い故、"
+mode = "hiragana"
+expected = "おうはけいけんがあさいゆえ、"
+
+[[case]]
+input = "上手すぎた故かw"
+mode = "hiragana"
+expected = "うますぎたゆえかw"
+
+[[case]]
+input = "それ故"
+mode = "hiragana"
+expected = "それゆえ"
+
+[[case]]
+input = "山本由伸は宮崎"
+mode = "hiragana"
+expected = "やまもとよしのぶはみやざき"
+
+[[case]]
+input = "広角打法って強振"
+mode = "hiragana"
+expected = "こうかくだほうってきょうしん"
+
+[[case]]
+input = "ささやき戦法って知ってる"
+mode = "hiragana"
+expected = "ささやきせんぽうってしってる"
+
+[[case]]
+input = "参加方法ってどんな"
+mode = "hiragana"
+expected = "さんかほうほうってどんな"
+
+[[case]]
+input = "法に則って"
+mode = "hiragana"
+expected = "ほうにのっとって"
+
+[[case]]
+input = "忙しゅうございます"
+mode = "hiragana"
+expected = "いそがしゅうございます"
+
+[[case]]
+input = "もう故意やん"
+mode = "hiragana"
+expected = "もうこいやん"
