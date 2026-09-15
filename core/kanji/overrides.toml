@@ -20045,3 +20045,23 @@ default = "あほ"
 [[kanji.match]]
 next_starts_any = ["れ"]
 reading = "あき"
+
+[[kanji]]
+char = "剝"
+default = "は"
+
+[[kanji.match]]
+next_starts_any = ["製", "奪", "離", "落"]
+reading = "はく"
+
+[[kanji.match]]
+next_starts_any = ["いて", "いた", "いちゃ", "か", "き", "く", "け", "こ"]
+reading = "む"
+
+[[kanji]]
+char = "祟"
+default = "たたり"
+
+[[kanji.match]]
+next_starts_any = ["り", "ら", "っ", "る", "れ", "ろ"]
+reading = "たた"

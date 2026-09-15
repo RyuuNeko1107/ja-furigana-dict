@@ -1,0 +1,141 @@
+# コメント頻出の単漢字 (unihan) 読み見直し: 熟語専用字の音読み化 / 名詞形語幹の修正 / 剝・祟 block (2026-09-15)
+
+[[case]]
+input = "奇譚"
+mode = "hiragana"
+expected = "きたん"
+
+[[case]]
+input = "冒険譚が好き"
+mode = "hiragana"
+expected = "ぼうけんたんがすき"
+
+[[case]]
+input = "怒濤の展開"
+mode = "hiragana"
+expected = "どとうのてんかい"
+
+[[case]]
+input = "隧道"
+mode = "hiragana"
+expected = "ずいどう"
+
+[[case]]
+input = "世界の終焉"
+mode = "hiragana"
+expected = "せかいのしゅうえん"
+
+[[case]]
+input = "叛道"
+mode = "hiragana"
+expected = "はんどう"
+
+[[case]]
+input = "パンを咥えて"
+mode = "hiragana"
+expected = "パンをくわえて"
+
+[[case]]
+input = "タオル嚙むの?"
+mode = "hiragana"
+expected = "タオルかむの?"
+
+[[case]]
+input = "嚙み合わない"
+mode = "hiragana"
+expected = "かみあわない"
+
+[[case]]
+input = "叩っ斬ってやれ"
+mode = "hiragana"
+expected = "たたっきってやれ"
+
+[[case]]
+input = "爪が剝がれた"
+mode = "hiragana"
+expected = "つめがはがれた"
+
+[[case]]
+input = "皮を剝く"
+mode = "hiragana"
+expected = "かわをむく"
+
+[[case]]
+input = "剝き出し"
+mode = "hiragana"
+expected = "むきだし"
+
+[[case]]
+input = "剝製"
+mode = "hiragana"
+expected = "はくせい"
+
+[[case]]
+input = "称号剝奪"
+mode = "hiragana"
+expected = "しょうごうはくだつ"
+
+[[case]]
+input = "装備を剝いで"
+mode = "hiragana"
+expected = "そうびをはいで"
+
+[[case]]
+input = "祟り"
+mode = "hiragana"
+expected = "たたり"
+
+[[case]]
+input = "祟られた"
+mode = "hiragana"
+expected = "たたられた"
+
+[[case]]
+input = "オヤシロ様の祟じゃ"
+mode = "hiragana"
+expected = "オヤシロさまのたたりじゃ"
+
+[[case]]
+input = "足攣った"
+mode = "hiragana"
+expected = "あしつった"
+
+[[case]]
+input = "甘噛かわいい"
+mode = "hiragana"
+expected = "あまがみかわいい"
+
+[[case]]
+input = "甘嚙み"
+mode = "hiragana"
+expected = "あまがみ"
+
+[[case]]
+input = "空気が険呑"
+mode = "hiragana"
+expected = "くうきがけんのん"
+
+[[case]]
+input = "薬疹"
+mode = "hiragana"
+expected = "やくしん"
+
+[[case]]
+input = "二游間"
+mode = "hiragana"
+expected = "にゆうかん"
+
+[[case]]
+input = "瀑布"
+mode = "hiragana"
+expected = "ばくふ"
+
+[[case]]
+input = "強靭"
+mode = "hiragana"
+expected = "きょうじん"
+
+[[case]]
+input = "贅"
+mode = "hiragana"
+expected = "ぜい"
