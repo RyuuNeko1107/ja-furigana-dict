@@ -1,0 +1,76 @@
+# 全漢字スイープ (送り仮名区分 第 4 弾) 由来の回帰 (2026-09-15)
+
+[[case]]
+input = "東京都は"
+mode = "hiragana"
+expected = "とうきょうとは"
+
+[[case]]
+input = "電波届かない"
+mode = "hiragana"
+expected = "でんぱとどかない"
+
+[[case]]
+input = "届け出"
+mode = "hiragana"
+expected = "とどけで"
+
+[[case]]
+input = "抑えめな"
+mode = "hiragana"
+expected = "おさえめな"
+
+[[case]]
+input = "抑制"
+mode = "hiragana"
+expected = "よくせい"
+
+[[case]]
+input = "寒がり"
+mode = "hiragana"
+expected = "さむがり"
+
+[[case]]
+input = "参った"
+mode = "hiragana"
+expected = "まいった"
+
+[[case]]
+input = "参加"
+mode = "hiragana"
+expected = "さんか"
+
+[[case]]
+input = "苦そう"
+mode = "hiragana"
+expected = "にがそう"
+
+[[case]]
+input = "苦しそう"
+mode = "hiragana"
+expected = "くるしそう"
+
+[[case]]
+input = "恐すぎる"
+mode = "hiragana"
+expected = "こわすぎる"
+
+[[case]]
+input = "恐怖"
+mode = "hiragana"
+expected = "きょうふ"
+
+[[case]]
+input = "痛っ"
+mode = "hiragana"
+expected = "いたっ"
+
+[[case]]
+input = "筋肉痛なりそう"
+mode = "hiragana"
+expected = "きんにくつうなりそう"
+
+[[case]]
+input = "お約束ね"
+mode = "hiragana"
+expected = "おやくそくね"

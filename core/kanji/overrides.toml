@@ -518,7 +518,12 @@ default = "ク"
 
 [[kanji.match]]
 next_starts_any = ["し", "る", "ら", "り", "っ", "れ", "ろ"]
-reading = "くる"  # 苦労 / 苦痛 / 苦悩
+reading = "くる"
+
+# 苦そう / 苦さ / 苦み = にが (苦しそう は上の し が先に取る)
+[[kanji.match]]
+next_starts_any = ["そ", "さ", "み"]
+reading = "にが"  # 苦労 / 苦痛 / 苦悩
 
 [[kanji]]
 char = "早"
@@ -3808,6 +3813,16 @@ default = "タイ"
 char = "恐"
 default = "キョウ"
 
+# ★2026-09-15 全漢字スイープ (送り仮名区分 第 4 弾)
+# 恐る / 恐れ = おそ、 恐い / 恐すぎ / 恐がる = こわ
+[[kanji.match]]
+next_starts_any = ["る", "れ", "ろ"]
+reading = "おそ"
+
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "す", "さ", "が"]
+reading = "こわ"
+
 [[kanji]]
 char = "患"
 default = "カン"
@@ -4023,6 +4038,11 @@ default = "フ"
 [[kanji]]
 char = "抑"
 default = "ヨク"
+
+# ★2026-09-15 全漢字スイープ (送り仮名区分 第 4 弾)
+[[kanji.match]]
+next_starts_any = ["え", "わ", "う", "お", "っ"]
+reading = "おさ"
 
 [[kanji]]
 char = "拘"
@@ -5510,6 +5530,11 @@ default = "セン"
 [[kanji]]
 char = "参"
 default = "サン"
+
+# ★2026-09-15 全漢字スイープ (送り仮名区分 第 4 弾)
+[[kanji.match]]
+next_starts_any = ["ろ", "る", "り", "れ", "っ", "ら"]
+reading = "まい"
 
 [[kanji]]
 char = "及"
@@ -7286,7 +7311,7 @@ char = "寒"
 default = "カン"
 # 形容詞 kun (さむ): 寒い/寒すぎ/寒そう/寒さ 等が音読み default に落ちる (2026-06-11)
 [[kanji.match]]
-next_starts_any = ["い", "く", "か", "す", "そ", "さ", "け", "過"]
+next_starts_any = ["い", "く", "か", "す", "そ", "さ", "け", "が", "っ", "過"]
 reading = "さむ"
 
 
@@ -7421,6 +7446,12 @@ default = "ソ"
 [[kanji]]
 char = "痛"
 default = "ツウ"
+
+# ★2026-09-15 全漢字スイープ (送り仮名区分 第 4 弾)
+# 痛っ = いた (な は 筋肉痛なる を割るので入れない)
+[[kanji.match]]
+next_starts_any = ["っ"]
+reading = "いた"
 
 # ★2026-09-15 全漢字スイープ (送り仮名区分 第 2 弾)
 # 痛え / 痛ぇ = いて + え
@@ -12429,6 +12460,12 @@ default = "エン"
 [[kanji]]
 char = "届"
 default = "とど"
+
+# ★2026-09-15 全漢字スイープ (送り仮名区分 第 4 弾)
+# 届かない / 届く / 届いた = とど (下の 漢字→カイ が 電波届かない を割っていた)
+[[kanji.match]]
+next_starts_any = ["か", "き", "く", "け", "こ", "い", "っ"]
+reading = "とど"
 
 [[kanji.match]]
 prev_char_type = "漢字"
