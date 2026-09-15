@@ -1,0 +1,46 @@
+# 全漢字スイープ 甲 / 品 / 除 / 積 / 連 / 圧 / 幸 / 魂 (2026-09-16)
+
+[[case]]
+input = "圧すごい"
+mode = "hiragana"
+expected = "あつすごい"
+
+[[case]]
+input = "音圧すごい"
+mode = "hiragana"
+expected = "おんあつすごい"
+
+[[case]]
+input = "水圧すごい"
+mode = "hiragana"
+expected = "すいあつすごい"
+
+[[case]]
+input = "圧が強い"
+mode = "hiragana"
+expected = "あつがつよい"
+
+[[case]]
+input = "君に幸あれ"
+mode = "hiragana"
+expected = "きみにさちあれ"
+
+[[case]]
+input = "幸い"
+mode = "hiragana"
+expected = "さいわい"
+
+[[case]]
+input = "雨除け"
+mode = "hiragana"
+expected = "あまよけ"
+
+[[case]]
+input = "除けて"
+mode = "hiragana"
+expected = "よけて"
+
+[[case]]
+input = "虫除け"
+mode = "hiragana"
+expected = "むしよけ"
