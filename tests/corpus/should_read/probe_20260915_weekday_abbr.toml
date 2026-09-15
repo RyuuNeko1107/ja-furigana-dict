@@ -1,0 +1,41 @@
+# 曜日の略記の並び / 休みの略語 の回帰 (2026-09-15)
+
+[[case]]
+input = "月火は休み"
+mode = "hiragana"
+expected = "げっかはやすみ"
+
+[[case]]
+input = "木金配信"
+mode = "hiragana"
+expected = "もくきんはいしん"
+
+[[case]]
+input = "月水金で"
+mode = "hiragana"
+expected = "げっすいきんで"
+
+[[case]]
+input = "土日祝"
+mode = "hiragana"
+expected = "どにちしゅく"
+
+[[case]]
+input = "振休とった"
+mode = "hiragana"
+expected = "ふりきゅうとった"
+
+[[case]]
+input = "水木しげる"
+mode = "hiragana"
+expected = "みずきしげる"
+
+[[case]]
+input = "土日"
+mode = "hiragana"
+expected = "どにち"
+
+[[case]]
+input = "土日祝日も営業"
+mode = "hiragana"
+expected = "どにちしゅくじつもえいぎょう"
