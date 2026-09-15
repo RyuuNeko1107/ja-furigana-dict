@@ -1,0 +1,56 @@
+# 全漢字スイープ 頻度 1201〜1600 位 (送り仮名区分) 由来の回帰 (2026-09-15)
+
+[[case]]
+input = "潜れる"
+mode = "hiragana"
+expected = "もぐれる"
+
+[[case]]
+input = "潜んでる"
+mode = "hiragana"
+expected = "ひそんでる"
+
+[[case]]
+input = "潜水"
+mode = "hiragana"
+expected = "せんすい"
+
+[[case]]
+input = "曇ってない"
+mode = "hiragana"
+expected = "くもってない"
+
+[[case]]
+input = "一人暮らし"
+mode = "hiragana"
+expected = "ひとりぐらし"
+
+[[case]]
+input = "暮らす"
+mode = "hiragana"
+expected = "くらす"
+
+[[case]]
+input = "堕とされ"
+mode = "hiragana"
+expected = "おとされ"
+
+[[case]]
+input = "堕落"
+mode = "hiragana"
+expected = "だらく"
+
+[[case]]
+input = "貢がない"
+mode = "hiragana"
+expected = "みつがない"
+
+[[case]]
+input = "塞いだ"
+mode = "hiragana"
+expected = "ふさいだ"
+
+[[case]]
+input = "閉塞"
+mode = "hiragana"
+expected = "へいそく"

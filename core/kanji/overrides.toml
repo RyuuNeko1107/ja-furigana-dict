@@ -3246,6 +3246,12 @@ default = "ボウ"
 char = "如"
 default = "ジョ"
 
+# ★2026-09-15 全漢字スイープ (頻度 1201〜1600 位、 送り仮名区分)
+# 如く = ごと + く
+[[kanji.match]]
+next_starts_any = ["く"]
+reading = "ごと"
+
 [[kanji]]
 char = "彙"
 default = "イ"
@@ -3495,6 +3501,16 @@ default = "セイ"
 [[kanji]]
 char = "剥"
 default = "ハク"
+
+# ★2026-09-15 全漢字スイープ (頻度 1201〜1600 位、 送り仮名区分)
+# 剥く = む / 剥がす・剥げ = は
+[[kanji.match]]
+next_starts_any = ["か", "き", "く", "け", "こ", "い", "っ"]
+reading = "む"
+
+[[kanji.match]]
+next_starts_any = ["が", "ぎ", "げ"]
+reading = "は"
 
 [[kanji]]
 char = "加"
@@ -4047,6 +4063,11 @@ default = "ドウ"
 [[kanji]]
 char = "堕"
 default = "ダ"
+
+# ★2026-09-15 全漢字スイープ (頻度 1201〜1600 位、 送り仮名区分)
+[[kanji.match]]
+next_starts_any = ["と", "ち"]
+reading = "お"
 
 [[kanji]]
 char = "宣"
@@ -5678,6 +5699,11 @@ default = "カン"
 char = "塞"
 default = "ソク"
 
+# ★2026-09-15 全漢字スイープ (頻度 1201〜1600 位、 送り仮名区分)
+[[kanji.match]]
+next_starts_any = ["い", "ぐ", "が", "げ", "ご", "っ"]
+reading = "ふさ"
+
 [[kanji]]
 char = "填"
 default = "テン"
@@ -6011,6 +6037,11 @@ default = "キョ"
 char = "挟"
 default = "キョウ"
 
+# ★2026-09-15 全漢字スイープ (頻度 1201〜1600 位、 送り仮名区分)
+[[kanji.match]]
+next_starts_any = ["ま", "む", "み", "め", "も", "ん"]
+reading = "はさ"
+
 [[kanji]]
 char = "挫"
 default = "ザ"
@@ -6101,6 +6132,12 @@ default = "セイ"
 char = "暮"
 default = "ボ"
 
+# ★2026-09-15 全漢字スイープ (頻度 1201〜1600 位、 送り仮名区分)
+# 暮らす = く + らす / 暮れる = く + れる
+[[kanji.match]]
+next_starts_any = ["ら", "れ", "せ"]
+reading = "く"
+
 [[kanji]]
 char = "暴"
 default = "ボウ"
@@ -6108,6 +6145,11 @@ default = "ボウ"
 [[kanji]]
 char = "曇"
 default = "ドン"
+
+# ★2026-09-15 全漢字スイープ (頻度 1201〜1600 位、 送り仮名区分)
+[[kanji.match]]
+next_starts_any = ["っ", "る", "ら", "り", "れ"]
+reading = "くも"
 
 [[kanji]]
 char = "替"
@@ -6313,6 +6355,12 @@ default = "ヨク"
 char = "浸"
 default = "シン"
 
+# ★2026-09-15 全漢字スイープ (頻度 1201〜1600 位、 送り仮名区分)
+# 浸る・浸れる・浸かる・浸す = ひた (浸みる は下の し)
+[[kanji.match]]
+next_starts_any = ["か", "っ", "る", "れ", "ら", "り", "ろ", "す", "せ", "そ"]
+reading = "ひた"
+
 # 「浸み込む / 浸み出る / 浸まない / 浸めば」 = 動詞訓「し」
 [[kanji.match]]
 next_starts_any = ["み", "む", "ま", "め", "もう"]
@@ -6390,6 +6438,16 @@ default = "ゼン"
 [[kanji]]
 char = "潜"
 default = "セン"
+
+# ★2026-09-15 全漢字スイープ (頻度 1201〜1600 位、 送り仮名区分)
+# 潜る・潜れる = もぐ / 潜む・潜んで・潜め = ひそ
+[[kanji.match]]
+next_starts_any = ["れ", "る", "ら", "り", "ろ"]
+reading = "もぐ"
+
+[[kanji.match]]
+next_starts_any = ["ん", "め", "む", "ま", "み"]
+reading = "ひそ"
 
 # ─── 第 15 弾 sweep: joyo length 3 動詞訓読み 60 字 ──
 # 誤入力含む (= 疾/発/県 unihan default が別字読み)
@@ -6586,6 +6644,11 @@ default = "ハ"
 [[kanji]]
 char = "磨"
 default = "マ"
+
+# ★2026-09-15 全漢字スイープ (頻度 1201〜1600 位、 送り仮名区分)
+[[kanji.match]]
+next_starts_any = ["い", "か", "き", "く", "け", "こ", "っ"]
+reading = "みが"
 
 [[kanji]]
 char = "示"
@@ -6947,6 +7010,11 @@ default = "フ"
 [[kanji]]
 char = "貢"
 default = "コウ"
+
+# ★2026-09-15 全漢字スイープ (頻度 1201〜1600 位、 送り仮名区分)
+[[kanji.match]]
+next_starts_any = ["が", "ぎ", "ぐ", "げ", "ご", "い", "っ"]
+reading = "みつ"
 
 [[kanji]]
 char = "責"
