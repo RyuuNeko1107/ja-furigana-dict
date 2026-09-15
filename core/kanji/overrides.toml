@@ -1829,6 +1829,11 @@ default = "コ"
 next_starts_any = ["さ"]  # 「小さい / 小さな」 形容詞
 reading = "チイ"
 
+# 口語の 小っちゃい / 小っさい = ち (こっちゃい / こっさい になっていた)
+[[kanji.match]]
+next_starts_any = ["っちゃ", "っさ", "っち"]
+reading = "チ"
+
 # ★round 47、 「小 + カタカナ」 (= 「小ネタ / 小ボス / 小ジワ」 等) → 「ショウ」
 # 「小 + 漢字」 は jukugo dict 1000 でほぼ覆われる、 default コ では当たらない case
 [[kanji.match]]

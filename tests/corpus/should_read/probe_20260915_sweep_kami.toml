@@ -1,0 +1,46 @@
+# 全漢字スイープ 神 / 火 / 小 / 通 / 張 / 倒 (2026-09-15)
+
+[[case]]
+input = "ダブルオーは神作ですよ"
+mode = "hiragana"
+expected = "ダブルオーはかみさくですよ"
+
+[[case]]
+input = "小っちゃくてかわいい"
+mode = "hiragana"
+expected = "ちっちゃくてかわいい"
+
+[[case]]
+input = "プール小っさw"
+mode = "hiragana"
+expected = "プールちっさw"
+
+[[case]]
+input = "小さい"
+mode = "hiragana"
+expected = "ちいさい"
+
+[[case]]
+input = "小ネタ"
+mode = "hiragana"
+expected = "しょうネタ"
+
+[[case]]
+input = "電気通ってるね"
+mode = "hiragana"
+expected = "でんきとおってるね"
+
+[[case]]
+input = "学校に通ってる"
+mode = "hiragana"
+expected = "がっこうにかよってる"
+
+[[case]]
+input = "会話が通ってるじゃん"
+mode = "hiragana"
+expected = "かいわがかよってるじゃん"
+
+[[case]]
+input = "小野妹子"
+mode = "hiragana"
+expected = "おののいもこ"
