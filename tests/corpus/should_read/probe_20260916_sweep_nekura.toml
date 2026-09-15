@@ -1,0 +1,46 @@
+# 全漢字スイープ 危 / 告 / 根 / 友 / 喜 / 介 / 帯 / 姿 (2026-09-16)
+
+[[case]]
+input = "危ねーからな"
+mode = "hiragana"
+expected = "あぶねーからな"
+
+[[case]]
+input = "性根は腐ってますよ"
+mode = "hiragana"
+expected = "しょうねはくさってますよ"
+
+[[case]]
+input = "考えが根暗で笑う"
+mode = "hiragana"
+expected = "かんがえがねくらでわらう"
+
+[[case]]
+input = "北島康介やん"
+mode = "hiragana"
+expected = "きたじまこうすけやん"
+
+[[case]]
+input = "次元大介かよw"
+mode = "hiragana"
+expected = "じげんだいすけかよw"
+
+[[case]]
+input = "三谷幸喜作品はよく観る"
+mode = "hiragana"
+expected = "みたにこうきさくひんはよくみる"
+
+[[case]]
+input = "赤帯だよ"
+mode = "hiragana"
+expected = "あかおびだよ"
+
+[[case]]
+input = "星詠みに姿形ないからな"
+mode = "hiragana"
+expected = "ほしよみにすがたかたちないからな"
+
+[[case]]
+input = "根性根性だフブキ"
+mode = "hiragana"
+expected = "こんじょうこんじょうだフブキ"
