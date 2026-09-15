@@ -322,7 +322,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 
 | ファイル | 文字数 | ルール数 | サイズ | 用途 |
 |---|---:|---:|---:|---|
-| [`core/kanji/overrides.toml`](core/kanji/overrides.toml) | 2,779 | 3,957 | 212 KB | 単漢字 default override + 文脈分岐 reading |
+| [`core/kanji/overrides.toml`](core/kanji/overrides.toml) | 2,779 | 3,958 | 212 KB | 単漢字 default override + 文脈分岐 reading |
 
 ### 異体字
 
@@ -402,7 +402,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 4656 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 4665 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -520,6 +520,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20260915_sweep_hanashi.toml`](tests/corpus/should_read/probe_20260915_sweep_hanashi.toml) | 11 |
 |  | [`tests/corpus/should_read/probe_20260915_sweep_kami.toml`](tests/corpus/should_read/probe_20260915_sweep_kami.toml) | 9 |
 |  | [`tests/corpus/should_read/probe_20260915_sweep_katsu.toml`](tests/corpus/should_read/probe_20260915_sweep_katsu.toml) | 8 |
+|  | [`tests/corpus/should_read/probe_20260915_sweep_kiru.toml`](tests/corpus/should_read/probe_20260915_sweep_kiru.toml) | 9 |
 |  | [`tests/corpus/should_read/probe_20260915_sweep_koe.toml`](tests/corpus/should_read/probe_20260915_sweep_koe.toml) | 11 |
 |  | [`tests/corpus/should_read/probe_20260915_sweep_ma_tsuyo.toml`](tests/corpus/should_read/probe_20260915_sweep_ma_tsuyo.toml) | 11 |
 |  | [`tests/corpus/should_read/probe_20260915_sweep_me.toml`](tests/corpus/should_read/probe_20260915_sweep_me.toml) | 10 |
