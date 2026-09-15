@@ -1,0 +1,36 @@
+# 全漢字スイープ 終 / 足 / 試 / 所 / 破 / 性 (2026-09-15)
+
+[[case]]
+input = "なんか融合試そう"
+mode = "hiragana"
+expected = "なんかゆうごうためそう"
+
+[[case]]
+input = "試そう!"
+mode = "hiragana"
+expected = "ためそう!"
+
+[[case]]
+input = "試した"
+mode = "hiragana"
+expected = "ためした"
+
+[[case]]
+input = "肝試し"
+mode = "hiragana"
+expected = "きもだめし"
+
+[[case]]
+input = "それを言っちゃお終いよ"
+mode = "hiragana"
+expected = "それをいっちゃおしまいよ"
+
+[[case]]
+input = "これで負けたらお終い"
+mode = "hiragana"
+expected = "これでまけたらおしまい"
+
+[[case]]
+input = "最終いけるか"
+mode = "hiragana"
+expected = "さいしゅういけるか"
