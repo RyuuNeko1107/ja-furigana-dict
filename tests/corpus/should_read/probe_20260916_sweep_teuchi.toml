@@ -1,0 +1,31 @@
+# 全漢字スイープ 暴 / 鉄 / 折 / 与 / 一 / 打 / 遊 / 隠 (2026-09-16)
+
+[[case]]
+input = "躾を暴力と捉えられる時代って事"
+mode = "hiragana"
+expected = "しつけをぼうりょくととらえられるじだいってこと"
+
+[[case]]
+input = "打ちゃいい"
+mode = "hiragana"
+expected = "うちゃいい"
+
+[[case]]
+input = "煽り全一"
+mode = "hiragana"
+expected = "あおりぜんいち"
+
+[[case]]
+input = "毎日海遊びしてた"
+mode = "hiragana"
+expected = "まいにちうみあそびしてた"
+
+[[case]]
+input = "折を見てバルサン"
+mode = "hiragana"
+expected = "おりをみてバルサン"
+
+[[case]]
+input = "平手打ち対決"
+mode = "hiragana"
+expected = "ひらてうちたいけつ"
