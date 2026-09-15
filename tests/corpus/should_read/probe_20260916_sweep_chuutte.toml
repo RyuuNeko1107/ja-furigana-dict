@@ -1,0 +1,46 @@
+# 全漢字スイープ 想 / 君 / 宮 / 中 / 酒 / 越 / 辺 / 軽 (2026-09-16)
+
+[[case]]
+input = "配信中って言おうよ"
+mode = "hiragana"
+expected = "はいしんちゅうっていおうよ"
+
+[[case]]
+input = "集中って"
+mode = "hiragana"
+expected = "しゅうちゅうって"
+
+[[case]]
+input = "田中って"
+mode = "hiragana"
+expected = "たなかって"
+
+[[case]]
+input = "一年中って考えたら"
+mode = "hiragana"
+expected = "いちねんじゅうってかんがえたら"
+
+[[case]]
+input = "海の中って不思議"
+mode = "hiragana"
+expected = "うみのなかってふしぎ"
+
+[[case]]
+input = "中ってどこだっけ"
+mode = "hiragana"
+expected = "なかってどこだっけ"
+
+[[case]]
+input = "ローディング中って感じ"
+mode = "hiragana"
+expected = "ローディングちゅうってかんじ"
+
+[[case]]
+input = "取り込み中って"
+mode = "hiragana"
+expected = "とりこみちゅうって"
+
+[[case]]
+input = "中ってる"
+mode = "hiragana"
+expected = "あたってる"
