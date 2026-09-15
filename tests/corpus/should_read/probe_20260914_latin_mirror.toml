@@ -70,7 +70,7 @@ expected = "さんにんいちくみ"
 [[case]]
 input = "100発100中"
 mode = "hiragana"
-expected = "ひゃくぱつひゃくちゅう"
+expected = "ひゃっぱつひゃくちゅう"  # lib 百+パ行促音化 (次 release で有効、 それまで commit 保留)
 
 [[case]]
 input = "1中々だった"

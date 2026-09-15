@@ -1,0 +1,71 @@
+# 全漢字スイープ 才 / 泣 / 鬼 / 放 / 花 / 釣 / 西 / 母 (2026-09-16)
+
+[[case]]
+input = "お義母さんもそうなんだね"
+mode = "hiragana"
+expected = "おかあさんもそうなんだね"
+
+[[case]]
+input = "かわいいお祖母ちゃん"
+mode = "hiragana"
+expected = "かわいいおばあちゃん"
+
+[[case]]
+input = "花丸あげちゃう"
+mode = "hiragana"
+expected = "はなまるあげちゃう"
+
+[[case]]
+input = "ぺこらの鏡花水月"
+mode = "hiragana"
+expected = "ぺこらのきょうかすいげつ"
+
+[[case]]
+input = "赤いの出っ放しや"
+mode = "hiragana"
+expected = "あかいのでっぱなしや"
+
+[[case]]
+input = "スイカを放っておく訳がない"
+mode = "hiragana"
+expected = "スイカをほうっておくわけがない"
+
+[[case]]
+input = "異彩を放ってた"
+mode = "hiragana"
+expected = "いさいをはなってた"
+
+[[case]]
+input = "畑にウィザー放とう"
+mode = "hiragana"
+expected = "はたけにウィザーはなとう"
+
+[[case]]
+input = "漢泣き"
+mode = "hiragana"
+expected = "おとこなき"
+
+[[case]]
+input = "雀鬼だったか"
+mode = "hiragana"
+expected = "じゃんきだったか"
+
+[[case]]
+input = "村上鬼教官降臨"
+mode = "hiragana"
+expected = "むらかみおにきょうかんこうりん"
+
+[[case]]
+input = "お母さーん"
+mode = "hiragana"
+expected = "おかあさーん"
+
+[[case]]
+input = "お義父さんとお義母さん"
+mode = "hiragana"
+expected = "おとうさんとおかあさん"
+
+[[case]]
+input = "お母さーん!お父さーん!"
+mode = "hiragana"
+expected = "おかあさーん!おとうさーん!"
