@@ -23,15 +23,15 @@ git に commit されている master HEAD の状態を基準にする。
 <!-- AUTO-GENERATED:SUMMARY:BEGIN -->
 | カテゴリ | エントリ数 | サイズ |
 |---|---:|---:|
-| [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,670** | **738 KB** |
-| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **18,411** | **731 KB** |
+| [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,670** | **732 KB** |
+| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **18,423** | **732 KB** |
 | [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,665** | **127 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **1,063** | **29 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,777** | **211 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **704** | **35 KB** |
-| **合計** | **65,290** | **1.83 MB** |
+| **合計** | **65,302** | **1.82 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -47,16 +47,16 @@ git に commit されている master HEAD の状態を基準にする。
 |---|---:|---:|---|
 | [`core/unihan/joyo.toml`](core/unihan/joyo.toml) | 9 | 1.0 KB | 常用漢字 2,136 字 (文化庁 2010-11-30 改訂、 内閣告示) — 利用頻度高、 default reading review 対象 |
 | [`core/unihan/jinmeiyou.toml`](core/unihan/jinmeiyou.toml) | 0 | 185 B | 人名用漢字 (法務省、 子の名に使用可、 常用と重複する 128 字を除外した残り 855 字) |
-| [`core/unihan/jis_basic.toml`](core/unihan/jis_basic.toml) | 13,033 | 235 KB | JIS 基本 (CJK Basic Block U+4E00-U+9FFF のうち常用 / 人名用以外、 概ね JIS X 0208 第1+第2水準カバー) |
+| [`core/unihan/jis_basic.toml`](core/unihan/jis_basic.toml) | 13,033 | 231 KB | JIS 基本 (CJK Basic Block U+4E00-U+9FFF のうち常用 / 人名用以外、 概ね JIS X 0208 第1+第2水準カバー) |
 | [`core/unihan/jis_supplement.toml`](core/unihan/jis_supplement.toml) | 4,825 | 83 KB | JIS 補助 (CJK Extension A + Compatibility Ideographs、 概ね JIS X 0213 第3+第4水準カバー) |
-| [`core/unihan/extension.toml`](core/unihan/extension.toml) | 22,803 | 418 KB | 拡張漢字 (CJK Extension B 以降、 表外字 / 中国専用字 / 異体字、 機械的扱い、 ほぼ lib lookup されない) |
-| **小計** (5 ファイル) | **40,670** | **738 KB** | |
+| [`core/unihan/extension.toml`](core/unihan/extension.toml) | 22,803 | 417 KB | 拡張漢字 (CJK Extension B 以降、 表外字 / 中国専用字 / 異体字、 機械的扱い、 ほぼ lib lookup されない) |
+| **小計** (5 ファイル) | **40,670** | **732 KB** | |
 
 ### 熟語
 
 `core/jukugo/<genre>/*` — 手動 PR メンテのジャンル別 jukugo (≥ 2 字 surface)。 lib の Step 3 (jukugo lookup) で Lindera より優先採用。 各 genre dir の `_genre.toml` がカテゴリ description を持つ。
 
-**合計**: 18,411 件 / 731 KB (genre 6 区分)
+**合計**: 18,423 件 / 732 KB (genre 6 区分)
 
 #### 自然・生命
 
@@ -159,9 +159,9 @@ git に commit されている master HEAD の状態を基準にする。
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml) | 4,977 | 230 KB | 二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む) |
+| [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml) | 4,989 | 230 KB | 二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む) |
 | [`core/jukugo/basic/four_char.toml`](core/jukugo/basic/four_char.toml) | 35 | 2.3 KB | 四字熟語 (4 字 + 全 CJK 漢字) |
-| **小計** (2 ファイル) | **5,012** | **232 KB** | |
+| **小計** (2 ファイル) | **5,024** | **232 KB** | |
 
 
 ### 作品造語
@@ -400,7 +400,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 4396 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 4438 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -523,6 +523,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20260915_sweep_top.toml`](tests/corpus/should_read/probe_20260915_sweep_top.toml) | 7 |
 |  | [`tests/corpus/should_read/probe_20260915_ue_jou.toml`](tests/corpus/should_read/probe_20260915_ue_jou.toml) | 15 |
 |  | [`tests/corpus/should_read/probe_20260915_unihan_stem.toml`](tests/corpus/should_read/probe_20260915_unihan_stem.toml) | 13 |
+|  | [`tests/corpus/should_read/probe_20260915_unihan_stem_kanjidic.toml`](tests/corpus/should_read/probe_20260915_unihan_stem_kanjidic.toml) | 42 |
 |  | [`tests/corpus/should_read/probe_20260915_weekday_abbr.toml`](tests/corpus/should_read/probe_20260915_weekday_abbr.toml) | 8 |
 |  | [`tests/corpus/should_read/regression.toml`](tests/corpus/should_read/regression.toml) | 548 |
 |  | [`tests/corpus/should_read/sentences.toml`](tests/corpus/should_read/sentences.toml) | 49 |
