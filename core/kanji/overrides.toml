@@ -16111,6 +16111,11 @@ default = "かみ"
 prev_ends_any = ["青", "赤", "黒", "緑", "紫", "桃", "前", "横", "後", "寝", "付", "猫", "水", "手"]
 reading = "がみ"
 
+# 今日髪切った / 今髪 = かみ (時の語の後。 きょうはつ / いまはつ になっていた)
+[[kanji.match]]
+prev_ends_any = ["日", "今"]
+reading = "かみ"
+
 [[kanji.match]]
 prev_char_type = "漢字"
 reading = "ハツ"

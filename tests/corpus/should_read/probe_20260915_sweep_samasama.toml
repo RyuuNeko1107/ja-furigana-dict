@@ -1,0 +1,66 @@
+# 全漢字スイープ 髪 / 引 / 焦 / 負 / 土 / 様 (2026-09-15)
+
+[[case]]
+input = "魔物様様"
+mode = "hiragana"
+expected = "まものさまさま"
+
+[[case]]
+input = "様様な人"
+mode = "hiragana"
+expected = "さまざまなひと"
+
+[[case]]
+input = "なんか今日髪綺麗だね"
+mode = "hiragana"
+expected = "なんかきょうかみきれいだね"
+
+[[case]]
+input = "今髪乾かしてるから待って"
+mode = "hiragana"
+expected = "いまかみかわかしてるからまって"
+
+[[case]]
+input = "金髪"
+mode = "hiragana"
+expected = "きんぱつ"
+
+[[case]]
+input = "前髪"
+mode = "hiragana"
+expected = "まえがみ"
+
+[[case]]
+input = "毎回引きが強い"
+mode = "hiragana"
+expected = "まいかいひきがつよい"
+
+[[case]]
+input = "10回引きで"
+mode = "hiragana"
+expected = "じゅっかいびきで"
+
+[[case]]
+input = "水引かないね"
+mode = "hiragana"
+expected = "みずひかないね"
+
+[[case]]
+input = "道路の冠水引いてきた"
+mode = "hiragana"
+expected = "どうろのかんすいひいてきた"
+
+[[case]]
+input = "雨水引いた後に"
+mode = "hiragana"
+expected = "あまみずひいたあとに"
+
+[[case]]
+input = "土下寝"
+mode = "hiragana"
+expected = "どげね"
+
+[[case]]
+input = "背負おった"
+mode = "hiragana"
+expected = "せおおった"
