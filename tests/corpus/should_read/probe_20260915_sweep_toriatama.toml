@@ -1,0 +1,56 @@
+# 全漢字スイープ 頭 / 発 / 育 / 習 / 雨 / 戦 (2026-09-15)
+
+[[case]]
+input = "鳥頭すぎる"
+mode = "hiragana"
+expected = "とりあたますぎる"
+
+[[case]]
+input = "船長頭いいな"
+mode = "hiragana"
+expected = "せんちょうあたまいいな"
+
+[[case]]
+input = "先頭いいね"
+mode = "hiragana"
+expected = "せんとういいね"
+
+[[case]]
+input = "冒頭"
+mode = "hiragana"
+expected = "ぼうとう"
+
+[[case]]
+input = "戦技"
+mode = "hiragana"
+expected = "せんぎ"
+
+[[case]]
+input = "ボス戦きた"
+mode = "hiragana"
+expected = "ボスせんきた"
+
+[[case]]
+input = "決勝戦きたー"
+mode = "hiragana"
+expected = "けっしょうせんきたー"
+
+[[case]]
+input = "東京決戦きた"
+mode = "hiragana"
+expected = "とうきょうけっせんきた"
+
+[[case]]
+input = "リーグ合戦きちゃ"
+mode = "hiragana"
+expected = "リーグかっせんきちゃ"
+
+[[case]]
+input = "伝説の1戦きた"
+mode = "hiragana"
+expected = "でんせつのいっせんきた"
+
+[[case]]
+input = "戦慄"
+mode = "hiragana"
+expected = "せんりつ"

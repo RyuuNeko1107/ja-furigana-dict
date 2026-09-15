@@ -2871,6 +2871,11 @@ reading = "コツ"
 char = "頭"
 default = "あたま"
 
+# 魔物頭いいの / 〜頭おかしい = あたま (名詞の後でも 頭いい は形容。 下の 漢字→トウ より先に判定)
+[[kanji.match]]
+next_starts_any = ["いい", "おかし"]
+reading = "あたま"
+
 [[kanji.match]]
 prev_char_type = "漢字"
 reading = "トウ"
