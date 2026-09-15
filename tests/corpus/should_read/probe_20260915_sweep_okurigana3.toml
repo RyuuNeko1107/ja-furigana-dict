@@ -1,0 +1,66 @@
+# 全漢字スイープ (送り仮名区分 第 3 弾) 由来の回帰 (2026-09-15)
+
+[[case]]
+input = "失ってない"
+mode = "hiragana"
+expected = "うしなってない"
+
+[[case]]
+input = "失せろ"
+mode = "hiragana"
+expected = "うせろ"
+
+[[case]]
+input = "失敗"
+mode = "hiragana"
+expected = "しっぱい"
+
+[[case]]
+input = "冷やっこ"
+mode = "hiragana"
+expected = "ひやっこ"
+
+[[case]]
+input = "冷たい"
+mode = "hiragana"
+expected = "つめたい"
+
+[[case]]
+input = "臭え"
+mode = "hiragana"
+expected = "くせえ"
+
+[[case]]
+input = "喋りっぱなし"
+mode = "hiragana"
+expected = "しゃべりっぱなし"
+
+[[case]]
+input = "燃ゆ"
+mode = "hiragana"
+expected = "もゆ"
+
+[[case]]
+input = "研いでる"
+mode = "hiragana"
+expected = "といでる"
+
+[[case]]
+input = "遅っ"
+mode = "hiragana"
+expected = "おそっ"
+
+[[case]]
+input = "やっと解放された"
+mode = "hiragana"
+expected = "やっとかいほうされた"
+
+[[case]]
+input = "消臭スプレー"
+mode = "hiragana"
+expected = "しょうしゅうスプレー"
+
+[[case]]
+input = "臭そう"
+mode = "hiragana"
+expected = "くさそう"

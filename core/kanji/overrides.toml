@@ -578,7 +578,7 @@ next_starts_any = ["え", "ぇ"]
 reading = "おせ"
 
 [[kanji.match]]
-next_starts_any = ["い", "く", "か", "そ", "す", "け", "め", "さ", "過"]  # 遅い / 遅く / 遅かった / 遅そう / 遅すぎ / 遅め / 遅さ
+next_starts_any = ["い", "く", "か", "そ", "す", "け", "め", "さ", "っ", "な", "過"]  # 遅い / 遅く / 遅かった / 遅そう / 遅すぎ / 遅め / 遅さ
 reading = "オソ"
 
 [[kanji.match]]
@@ -1367,7 +1367,7 @@ char = "広"
 default = "コウ"
 # 広い / 広く / 広かった / 広さ / 広すぎる / 広まる / 広がる / 広げる / 広める
 [[kanji.match]]
-next_starts_any = ["い", "く", "か", "さ", "す", "ま", "が", "げ", "め", "そ", "け", "過"]
+next_starts_any = ["い", "く", "か", "さ", "す", "ま", "が", "げ", "め", "そ", "け", "っ", "過"]
 reading = "ひろ"
 
 # 「隣」: 名詞 「隣 (となり)」 (= 「隣で / 隣の / 隣家」) が圧倒的。 動詞 「隣る
@@ -3572,6 +3572,20 @@ default = "ユウ"
 char = "冷"
 default = "レイ"
 
+# ★2026-09-15 全漢字スイープ (送り仮名区分 第 3 弾)
+# 冷たい = つめ / 冷める・冷ます = さ / 冷える・冷やす・冷やっこ = ひ
+[[kanji.match]]
+next_starts_any = ["た"]
+reading = "つめ"
+
+[[kanji.match]]
+next_starts_any = ["め", "ま"]
+reading = "さ"
+
+[[kanji.match]]
+next_starts_any = ["え", "や"]
+reading = "ひ"
+
 [[kanji]]
 char = "卑"
 default = "ヒ"
@@ -3685,6 +3699,16 @@ default = "テイ"
 [[kanji]]
 char = "失"
 default = "シツ"
+
+# ★2026-09-15 全漢字スイープ (送り仮名区分 第 3 弾)
+# 失う / 失って / 失い = うしな、 失せろ = う
+[[kanji.match]]
+next_starts_any = ["う", "わ", "い", "え", "お", "っ"]
+reading = "うしな"
+
+[[kanji.match]]
+next_starts_any = ["せ"]
+reading = "う"
 
 [[kanji]]
 char = "奏"
@@ -3987,6 +4011,11 @@ default = "イ"
 char = "扱"
 default = "ソウ"
 
+# ★2026-09-15 全漢字スイープ (送り仮名区分 第 3 弾)
+[[kanji.match]]
+next_starts_any = ["い", "う", "え", "わ", "お", "っ"]
+reading = "あつか"
+
 [[kanji]]
 char = "扶"
 default = "フ"
@@ -4273,6 +4302,11 @@ default = "トク"
 [[kanji]]
 char = "瞬"
 default = "シュン"
+
+# ★2026-09-15 全漢字スイープ (送り仮名区分 第 3 弾)
+[[kanji.match]]
+next_starts_any = ["く", "いた", "いて"]
+reading = "またた"
 
 [[kanji]]
 char = "答"
@@ -4842,6 +4876,11 @@ default = "タク"
 [[kanji]]
 char = "喋"
 default = "チョウ"
+
+# ★2026-09-15 全漢字スイープ (送り仮名区分 第 3 弾)
+[[kanji.match]]
+next_starts_any = ["る", "ら", "り", "れ", "ろ", "っ"]
+reading = "しゃべ"
 
 [[kanji]]
 char = "壬"
@@ -6344,6 +6383,11 @@ default = "ジュク"
 char = "燃"
 default = "ネン"
 
+# ★2026-09-15 全漢字スイープ (送り仮名区分 第 3 弾)
+[[kanji.match]]
+next_starts_any = ["ゆ", "え", "や", "す", "そ", "せ", "し"]
+reading = "も"
+
 # 「燥」 default ソウ (= 乾燥/焦燥)。 動詞「燥ぐ=はしゃぐ」 は送り仮名 ぐ/い/が/げ で はしゃ
 [[kanji]]
 char = "燥"
@@ -7298,7 +7342,7 @@ default = "アン"
 
 # 暗すぎ/暗そう/暗め/暗くて/暗さ = くら (形容詞 stem。暗い=くらい/暗黒/暗算 は token)
 [[kanji.match]]
-next_starts_any = ["す", "そ", "め", "く", "さ", "み"]
+next_starts_any = ["す", "そ", "め", "く", "さ", "み", "っ", "い", "か"]
 reading = "くら"
 
 [[kanji]]
@@ -7462,6 +7506,20 @@ reading = "ゆる"
 [[kanji]]
 char = "臭"
 default = "シュウ"
+
+# ★2026-09-15 全漢字スイープ (送り仮名区分 第 3 弾)
+# 臭え = くせ / 臭い・臭すぎ = くさ / 臭う・臭って = にお
+[[kanji.match]]
+next_starts_any = ["え", "ぇ"]
+reading = "くせ"
+
+[[kanji.match]]
+next_starts_any = ["い", "く", "かっ", "さ", "すぎ", "そ", "み"]
+reading = "くさ"
+
+[[kanji.match]]
+next_starts_any = ["う", "っ", "わ", "お"]
+reading = "にお"
 
 [[kanji]]
 char = "若"
