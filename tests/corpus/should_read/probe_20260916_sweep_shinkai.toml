@@ -1,0 +1,21 @@
+# 全漢字スイープ 原 / 深 / 獄 / 比 / 落 / 応 (2026-09-16)
+
+[[case]]
+input = "新海誠作品かよ"
+mode = "hiragana"
+expected = "しんかいまことさくひんかよ"
+
+[[case]]
+input = "イントネーションが新海誠"
+mode = "hiragana"
+expected = "イントネーションがしんかいまこと"
+
+[[case]]
+input = "深海生物みたい"
+mode = "hiragana"
+expected = "しんかいせいぶつみたい"
+
+[[case]]
+input = "深海"
+mode = "hiragana"
+expected = "しんかい"
