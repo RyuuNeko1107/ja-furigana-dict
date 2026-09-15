@@ -1,0 +1,31 @@
+# 全漢字スイープ 労 / 銀 / 婚 / 迎 / 暮 / 地 / 同 / 復 (2026-09-16)
+
+[[case]]
+input = "喉労わってもろてね"
+mode = "hiragana"
+expected = "のどいたわってもろてね"
+
+[[case]]
+input = "離婚届"
+mode = "hiragana"
+expected = "りこんとどけ"
+
+[[case]]
+input = "金角・銀角のやつ?"
+mode = "hiragana"
+expected = "きんかくぎんかくのやつ?"
+
+[[case]]
+input = "田舎の中心地やんかw"
+mode = "hiragana"
+expected = "いなかのちゅうしんちやんかw"
+
+[[case]]
+input = "切り心地どうですか"
+mode = "hiragana"
+expected = "きりごこちどうですか"
+
+[[case]]
+input = "中回復だよ"
+mode = "hiragana"
+expected = "ちゅうかいふくだよ"
