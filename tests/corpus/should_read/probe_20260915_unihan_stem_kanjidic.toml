@@ -1,0 +1,211 @@
+# unihan 送り仮名込み読みの語幹化 (KANJIDIC の送り仮名境界) + A/B で見つかった熟語 (2026-09-15)
+
+[[case]]
+input = "隗しい"
+mode = "hiragana"
+expected = "けわしい"
+
+[[case]]
+input = "晻い"
+mode = "hiragana"
+expected = "くらい"
+
+[[case]]
+input = "𠛠った"
+mode = "hiragana"
+expected = "えぐった"
+
+[[case]]
+input = "㴀くて"
+mode = "hiragana"
+expected = "ふかくて"
+
+[[case]]
+input = "嗔った"
+mode = "hiragana"
+expected = "いかった"
+
+[[case]]
+input = "寠れる"
+mode = "hiragana"
+expected = "やつれる"
+
+[[case]]
+input = "𭃰った"
+mode = "hiragana"
+expected = "えぐった"
+
+[[case]]
+input = "怺えた"
+mode = "hiragana"
+expected = "こらえた"
+
+[[case]]
+input = "旤くて"
+mode = "hiragana"
+expected = "わざわくて"
+
+[[case]]
+input = "𭰹い"
+mode = "hiragana"
+expected = "ふかい"
+
+[[case]]
+input = "埓くて"
+mode = "hiragana"
+expected = "かこくて"
+
+[[case]]
+input = "𬈵くて"
+mode = "hiragana"
+expected = "きくすくて"
+
+[[case]]
+input = "眾い"
+mode = "hiragana"
+expected = "おおい"
+
+[[case]]
+input = "厖い"
+mode = "hiragana"
+expected = "おおきい"
+
+[[case]]
+input = "徘った"
+mode = "hiragana"
+expected = "さまよった"
+
+[[case]]
+input = "𤉩しくて"
+mode = "hiragana"
+expected = "はげしくて"
+
+[[case]]
+input = "𢜫る"
+mode = "hiragana"
+expected = "さとる"
+
+[[case]]
+input = "嬌しくて"
+mode = "hiragana"
+expected = "なまめかしくて"
+
+[[case]]
+input = "繹る"
+mode = "hiragana"
+expected = "たずねる"
+
+[[case]]
+input = "忸った"
+mode = "hiragana"
+expected = "はじった"
+
+[[case]]
+input = "𭔸う"
+mode = "hiragana"
+expected = "むかう"
+
+[[case]]
+input = "𣆻った"
+mode = "hiragana"
+expected = "すばった"
+
+[[case]]
+input = "夛い"
+mode = "hiragana"
+expected = "おおい"
+
+[[case]]
+input = "𭞹ぶ"
+mode = "hiragana"
+expected = "よろこぶ"
+
+[[case]]
+input = "扣く"
+mode = "hiragana"
+expected = "たたく"
+
+[[case]]
+input = "禋る"
+mode = "hiragana"
+expected = "まつる"
+
+[[case]]
+input = "𮮻った"
+mode = "hiragana"
+expected = "そろった"
+
+[[case]]
+input = "𮫎った"
+mode = "hiragana"
+expected = "かみそった"
+
+[[case]]
+input = "妒む"
+mode = "hiragana"
+expected = "そねむ"
+
+[[case]]
+input = "𭥸る"
+mode = "hiragana"
+expected = "のぼる"
+
+[[case]]
+input = "斃れる"
+mode = "hiragana"
+expected = "たおれる"
+
+[[case]]
+input = "足が痙ったかも"
+mode = "hiragana"
+expected = "あしがひきつったかも"
+
+[[case]]
+input = "20ターン以内に斃してください"
+mode = "hiragana"
+expected = "にじゅうターンいないにたおしてください"
+
+[[case]]
+input = "自分が鬩ぎあう"
+mode = "hiragana"
+expected = "じぶんがせめぎあう"
+
+[[case]]
+input = "焙煎はいいぞ"
+mode = "hiragana"
+expected = "ばいせんはいいぞ"
+
+[[case]]
+input = "隕鉄のジョウロ"
+mode = "hiragana"
+expected = "いんてつのジョウロ"
+
+[[case]]
+input = "摩訶不思議"
+mode = "hiragana"
+expected = "まかふしぎ"
+
+[[case]]
+input = "躁状態"
+mode = "hiragana"
+expected = "そうじょうたい"
+
+[[case]]
+input = "灌漑する"
+mode = "hiragana"
+expected = "かんがいする"
+
+[[case]]
+input = "訥々と諭す"
+mode = "hiragana"
+expected = "とつとつとさとす"
+
+[[case]]
+input = "悄気てる"
+mode = "hiragana"
+expected = "しょげてる"
+
+[[case]]
+input = "擲弾兵"
+mode = "hiragana"
+expected = "てきだんへい"
