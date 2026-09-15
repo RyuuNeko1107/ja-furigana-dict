@@ -12315,6 +12315,11 @@ reading = "もと"
 char = "声"
 default = "こえ"
 
+# 船長声が / 全部声に / 一回声かける = こえ (名詞・副詞の後。 下の 漢字→セイ より先に判定)
+[[kanji.match]]
+prev_ends_any = ["長", "部", "回"]
+reading = "こえ"
+
 [[kanji.match]]
 prev_char_type = "漢字"
 reading = "セイ"

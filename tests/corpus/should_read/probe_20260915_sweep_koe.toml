@@ -1,0 +1,56 @@
+# 全漢字スイープ 木 / 言 / 前 / 声 / 歌 / 女 (2026-09-15)
+
+[[case]]
+input = "阪神の才木"
+mode = "hiragana"
+expected = "はんしんのさいき"
+
+[[case]]
+input = "悠木碧さん"
+mode = "hiragana"
+expected = "ゆうきあおさん"
+
+[[case]]
+input = "妻夫木聡"
+mode = "hiragana"
+expected = "つまぶきそう"
+
+[[case]]
+input = "妻夫木さん"
+mode = "hiragana"
+expected = "つまぶきさん"
+
+[[case]]
+input = "船長声大丈夫?"
+mode = "hiragana"
+expected = "せんちょうこえだいじょうぶ?"
+
+[[case]]
+input = "全部声に出てる"
+mode = "hiragana"
+expected = "ぜんぶこえにでてる"
+
+[[case]]
+input = "もう一回声かける"
+mode = "hiragana"
+expected = "もういっかいこえかける"
+
+[[case]]
+input = "歓声"
+mode = "hiragana"
+expected = "かんせい"
+
+[[case]]
+input = "女帝感"
+mode = "hiragana"
+expected = "じょていかん"
+
+[[case]]
+input = "唱歌"
+mode = "hiragana"
+expected = "しょうか"
+
+[[case]]
+input = "部長"
+mode = "hiragana"
+expected = "ぶちょう"

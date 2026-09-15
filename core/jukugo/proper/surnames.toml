@@ -153,7 +153,7 @@ description = "難読姓 (苗字) の読み (姓単体、代表読み)"
 "多井" = { reading = "タイ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "オオイ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 "大張" = { reading = "ダイチョウ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "オオバリ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 "大戸" = { reading = "オオド", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "オオト" } ] }  # 姓 (suffix match、 default = 一般語読み)
-"妻夫木" = { reading = "ツマフモク", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "ツマブキ" } ] }  # 姓 (suffix match、 default = 一般語読み)
+"妻夫木" = { reading = "ツマブキ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "ツマブキ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 "姉原" = { reading = "アネゲン", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "アネハラ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 "安仁屋" = { reading = "アンジンヤ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "アニヤ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 "安住" = { reading = "アンジュウ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "アズミ" } ] }  # 姓 (suffix match、 default = 一般語読み)
