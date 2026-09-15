@@ -1,0 +1,41 @@
+# 全漢字スイープ 解 / 付 / 返 / 心 / 顔 / 値 (2026-09-15)
+
+[[case]]
+input = "無理に理解せんでいいよ"
+mode = "hiragana"
+expected = "むりにりかいせんでいいよ"
+
+[[case]]
+input = "コメダ「解せない」"
+mode = "hiragana"
+expected = "コメダ「げせない」"
+
+[[case]]
+input = "解せんなあ"
+mode = "hiragana"
+expected = "げせんなあ"
+
+[[case]]
+input = "解せぬ"
+mode = "hiragana"
+expected = "げせぬ"
+
+[[case]]
+input = "了解っ!"
+mode = "hiragana"
+expected = "りょうかいっ!"
+
+[[case]]
+input = "経験値いらないでしょ"
+mode = "hiragana"
+expected = "けいけんちいらないでしょ"
+
+[[case]]
+input = "青付かないなぁ"
+mode = "hiragana"
+expected = "あおつかないなぁ"
+
+[[case]]
+input = "掌返しが早い"
+mode = "hiragana"
+expected = "てのひらがえしがはやい"
