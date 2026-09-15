@@ -1,0 +1,81 @@
+# 全漢字スイープ (送り仮名区分 第 2 弾) 由来の回帰 (2026-09-15)
+
+[[case]]
+input = "認めろ"
+mode = "hiragana"
+expected = "みとめろ"
+
+[[case]]
+input = "左耳が痛い"
+mode = "hiragana"
+expected = "ひだりみみがいたい"
+
+[[case]]
+input = "中耳炎"
+mode = "hiragana"
+expected = "ちゅうじえん"
+
+[[case]]
+input = "青髪の子"
+mode = "hiragana"
+expected = "あおがみのこ"
+
+[[case]]
+input = "金髪の"
+mode = "hiragana"
+expected = "きんぱつの"
+
+[[case]]
+input = "痛ぇ"
+mode = "hiragana"
+expected = "いてぇ"
+
+[[case]]
+input = "奪おうとした"
+mode = "hiragana"
+expected = "うばおうとした"
+
+[[case]]
+input = "細かい"
+mode = "hiragana"
+expected = "こまかい"
+
+[[case]]
+input = "細かった"
+mode = "hiragana"
+expected = "ほそかった"
+
+[[case]]
+input = "許さない"
+mode = "hiragana"
+expected = "ゆるさない"
+
+[[case]]
+input = "許可"
+mode = "hiragana"
+expected = "きょか"
+
+[[case]]
+input = "担い手"
+mode = "hiragana"
+expected = "にないて"
+
+[[case]]
+input = "担いでる"
+mode = "hiragana"
+expected = "かついでる"
+
+[[case]]
+input = "荒らすな"
+mode = "hiragana"
+expected = "あらすな"
+
+[[case]]
+input = "荒れる"
+mode = "hiragana"
+expected = "あれる"
+
+[[case]]
+input = "荒ぶってる"
+mode = "hiragana"
+expected = "あらぶってる"

@@ -1,0 +1,46 @@
+# 国名の略字 (米 / 露 / 仏 / 中) の回帰 (2026-09-15)
+
+[[case]]
+input = "米軍基地"
+mode = "hiragana"
+expected = "べいぐんきち"
+
+[[case]]
+input = "米露首脳会談"
+mode = "hiragana"
+expected = "べいろしゅのうかいだん"
+
+[[case]]
+input = "英仏"
+mode = "hiragana"
+expected = "えいふつ"
+
+[[case]]
+input = "露大統領"
+mode = "hiragana"
+expected = "ろだいとうりょう"
+
+[[case]]
+input = "中韓"
+mode = "hiragana"
+expected = "ちゅうかん"
+
+[[case]]
+input = "白米が美味い"
+mode = "hiragana"
+expected = "はくまいがうまい"
+
+[[case]]
+input = "夜露"
+mode = "hiragana"
+expected = "よつゆ"
+
+[[case]]
+input = "奈良の大仏"
+mode = "hiragana"
+expected = "ならのだいぶつ"
+
+[[case]]
+input = "米が高い"
+mode = "hiragana"
+expected = "こめがたかい"
