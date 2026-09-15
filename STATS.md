@@ -25,13 +25,13 @@ git に commit されている master HEAD の状態を基準にする。
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,668** | **728 KB** |
 | [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **18,434** | **732 KB** |
-| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,665** | **127 KB** |
-| [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **1,063** | **29 KB** |
+| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,674** | **128 KB** |
+| [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **1,066** | **29 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,779** | **211 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **704** | **35 KB** |
-| **合計** | **65,313** | **1.82 MB** |
+| **合計** | **65,325** | **1.82 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -168,7 +168,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/works/<medium>/*` — 媒体 (game / literature 等) ごとに 1 作品 1 ファイル。 原則は公式読み (一般通称として定着していれば採録可)、 出典コメント必須、 古典読みは現代読み無い場合のみ。
 
-**合計**: 1,665 件 / 127 KB (genre 4 区分)
+**合計**: 1,674 件 / 128 KB (genre 4 区分)
 
 #### ゲーム
 
@@ -188,7 +188,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/game/ensemble_stars.toml`](core/works/game/ensemble_stars.toml) | 19 | 1.5 KB | あんさんぶるスターズ! (Happy Elements): キャラクター名 |
 | [`core/works/game/_minor.toml`](core/works/game/_minor.toml) | 18 | 1.5 KB | ゲーム 小規模作品 統合 (1作品1-3語、2026-06-21 consolidate) |
 | [`core/works/game/persona.toml`](core/works/game/persona.toml) | 18 | 1.5 KB | ペルソナ (アトラス): キャラクター名 |
-| [`core/works/game/project_sekai.toml`](core/works/game/project_sekai.toml) | 17 | 1.4 KB | プロジェクトセカイ: キャラクター名 |
+| [`core/works/game/project_sekai.toml`](core/works/game/project_sekai.toml) | 18 | 1.4 KB | プロジェクトセカイ: キャラクター名 |
 | [`core/works/game/danganronpa.toml`](core/works/game/danganronpa.toml) | 16 | 1.2 KB | ダンガンロンパ: キャラクター名 |
 | [`core/works/game/vocaloid.toml`](core/works/game/vocaloid.toml) | 16 | 1.4 KB | ボーカロイド/合成音声: キャラクター名 (公式読み) |
 | [`core/works/game/fate.toml`](core/works/game/fate.toml) | 14 | 1.2 KB | Fate / 型月 (TYPE-MOON): キャラクター名 |
@@ -201,7 +201,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/game/tokimeki.toml`](core/works/game/tokimeki.toml) | 5 | 465 B | ときめきメモリアル: キャラクター名 |
 | [`core/works/game/a3.toml`](core/works/game/a3.toml) | 4 | 396 B | A3! : キャラクター名 |
 | [`core/works/game/utapri.toml`](core/works/game/utapri.toml) | 4 | 492 B | うたの☆プリンスさまっ♪ : キャラクター名 |
-| **小計** (23 ファイル) | **665** | **41 KB** | |
+| **小計** (23 ファイル) | **666** | **41 KB** | |
 
 #### 文学
 
@@ -223,9 +223,9 @@ git に commit されている master HEAD の状態を基準にする。
 |---|---:|---:|---|
 | [`core/works/anime/_minor.toml`](core/works/anime/_minor.toml) | 106 | 9.2 KB | アニメ/漫画 小規模作品 統合 (1作品1-3語、2026-06-21 consolidate) |
 | [`core/works/anime/conan.toml`](core/works/anime/conan.toml) | 51 | 4.3 KB | 名探偵コナン (青山剛昌): キャラクター名 (公式読みベース) |
+| [`core/works/anime/jujutsu.toml`](core/works/anime/jujutsu.toml) | 47 | 3.6 KB | 呪術廻戦 (芥見下々): キャラクター名 / 用語 (公式読みベース) |
 | [`core/works/anime/kimetsu.toml`](core/works/anime/kimetsu.toml) | 45 | 3.9 KB | 鬼滅の刃 (吾峠呼世晴): キャラクター名 / 用語 (公式読みベース) |
-| [`core/works/anime/jujutsu.toml`](core/works/anime/jujutsu.toml) | 40 | 3.3 KB | 呪術廻戦 (芥見下々): キャラクター名 / 用語 (公式読みベース) |
-| [`core/works/anime/bleach.toml`](core/works/anime/bleach.toml) | 37 | 3.4 KB | BLEACH (久保帯人) キャラ名・用語 |
+| [`core/works/anime/bleach.toml`](core/works/anime/bleach.toml) | 38 | 3.5 KB | BLEACH (久保帯人) キャラ名・用語 |
 | [`core/works/anime/heroaca.toml`](core/works/anime/heroaca.toml) | 34 | 3.1 KB | 僕のヒーローアカデミア (堀越耕平): キャラクター名 (公式読みベース) |
 | [`core/works/anime/haikyu.toml`](core/works/anime/haikyu.toml) | 32 | 2.8 KB | ハイキュー!! (古舘春一): キャラクター名 (公式読みベース) |
 | [`core/works/anime/kingdom.toml`](core/works/anime/kingdom.toml) | 31 | 2.2 KB | キングダム (原泰久): キャラクター名 (古代中国名の難読読み) |
@@ -277,7 +277,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/anime/nurarihyon.toml`](core/works/anime/nurarihyon.toml) | 4 | 417 B | ぬらりひょんの孫: キャラクター名 |
 | [`core/works/anime/seinen.toml`](core/works/anime/seinen.toml) | 4 | 496 B | 青年漫画: キャラクター名 |
 | [`core/works/anime/xxxholic.toml`](core/works/anime/xxxholic.toml) | 4 | 366 B | xxxHOLiC (CLAMP): キャラクター名 |
-| **小計** (56 ファイル) | **844** | **75 KB** | |
+| **小計** (56 ファイル) | **852** | **76 KB** | |
 
 #### VTuber
 
@@ -302,9 +302,9 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/loanwords/general.toml`](core/loanwords/general.toml) | 848 | 22 KB | 一般英語 / メディア / ゲーミング / SNS 略語 (ASCII surface) |
+| [`core/loanwords/general.toml`](core/loanwords/general.toml) | 851 | 22 KB | 一般英語 / メディア / ゲーミング / SNS 略語 (ASCII surface) |
 | [`core/loanwords/it.toml`](core/loanwords/it.toml) | 215 | 6.8 KB | IT 用語 / プログラミング言語 / OSS / クラウドサービス / 技術企業 (ASCII surface) |
-| **小計** (2 ファイル) | **1,063** | **29 KB** | |
+| **小計** (2 ファイル) | **1,066** | **29 KB** | |
 
 ### 分類前 inbox
 
@@ -400,7 +400,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 4503 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 4513 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -500,6 +500,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20260914_surname_suffix.toml`](tests/corpus/should_read/probe_20260914_surname_suffix.toml) | 22 |
 |  | [`tests/corpus/should_read/probe_20260914_surname_sweep2.toml`](tests/corpus/should_read/probe_20260914_surname_sweep2.toml) | 18 |
 |  | [`tests/corpus/should_read/probe_20260914_surname_sweep_byproduct.toml`](tests/corpus/should_read/probe_20260914_surname_sweep_byproduct.toml) | 14 |
+|  | [`tests/corpus/should_read/probe_20260915_bot_logs.toml`](tests/corpus/should_read/probe_20260915_bot_logs.toml) | 10 |
 |  | [`tests/corpus/should_read/probe_20260915_counters_sweep.toml`](tests/corpus/should_read/probe_20260915_counters_sweep.toml) | 17 |
 |  | [`tests/corpus/should_read/probe_20260915_country_abbr.toml`](tests/corpus/should_read/probe_20260915_country_abbr.toml) | 9 |
 |  | [`tests/corpus/should_read/probe_20260915_country_en.toml`](tests/corpus/should_read/probe_20260915_country_en.toml) | 6 |
