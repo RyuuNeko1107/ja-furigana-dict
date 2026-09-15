@@ -4801,11 +4801,20 @@ default = "キ"
 # 先輩/輩出 等は prev が 漢字 (Lindera token) で default ハイ のまま
 [[kanji]]
 char = "輩"
-default = "ハイ"
+default = "やから"
+
+# ★2026-09-16 全漢字スイープ: 単独「輩」 = やから (完全に輩 / 輩やな)。 漢字隣接 (先輩/輩出/同輩) は ハイ
+[[kanji.match]]
+prev_ends_any = ["の", "い", "な", "う", "る", "た"]
+reading = "やから"
 
 [[kanji.match]]
-prev_ends_any = ["の", "い", "な", "う"]
-reading = "やから"
+prev_char_type = "漢字"
+reading = "はい"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "はい"
 
 [[kanji]]
 char = "迎"

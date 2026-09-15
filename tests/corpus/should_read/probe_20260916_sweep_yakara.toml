@@ -1,0 +1,41 @@
+# 全漢字スイープ 呼 / 輩 / 毛 / 我 / 司 / 敷 / 畑 / 代 (2026-09-16)
+
+[[case]]
+input = "完全に輩w"
+mode = "hiragana"
+expected = "かんぜんにやからw"
+
+[[case]]
+input = "輩きたー"
+mode = "hiragana"
+expected = "やからきたー"
+
+[[case]]
+input = "図々しい輩多いらしい"
+mode = "hiragana"
+expected = "ずうずうしいやからおおいらしい"
+
+[[case]]
+input = "我が輩の棒"
+mode = "hiragana"
+expected = "わがはいのぼう"
+
+[[case]]
+input = "プロ輩出しすぎ"
+mode = "hiragana"
+expected = "プロはいしゅつしすぎ"
+
+[[case]]
+input = "地毛かもしれない"
+mode = "hiragana"
+expected = "じげかもしれない"
+
+[[case]]
+input = "猫毛抜ける"
+mode = "hiragana"
+expected = "ねこげぬける"
+
+[[case]]
+input = "金髪ロン毛"
+mode = "hiragana"
+expected = "きんぱつろんげ"
