@@ -1,0 +1,31 @@
+# 全漢字スイープ 弾 / 教 / 山 / 体 / 月 / 別 (2026-09-15)
+
+[[case]]
+input = "それは別かな"
+mode = "hiragana"
+expected = "それはべつかな"
+
+[[case]]
+input = "パーツは別かも"
+mode = "hiragana"
+expected = "パーツはべつかも"
+
+[[case]]
+input = "言語別か"
+mode = "hiragana"
+expected = "げんごべつか"
+
+[[case]]
+input = "別れた"
+mode = "hiragana"
+expected = "わかれた"
+
+[[case]]
+input = "別に"
+mode = "hiragana"
+expected = "べつに"
+
+[[case]]
+input = "人生山あり谷あり"
+mode = "hiragana"
+expected = "じんせいやまありたにあり"
