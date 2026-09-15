@@ -4043,6 +4043,11 @@ default = "サツ"
 char = "少"
 default = "ショウ"
 
+# 口語の 少ねえ / 少ねぇ / 少なっ = すく (しょうねえ / しょうなっ になっていた)
+[[kanji.match]]
+next_starts_any = ["ね", "な"]
+reading = "すく"
+
 [[kanji]]
 char = "彰"
 default = "ショウ"

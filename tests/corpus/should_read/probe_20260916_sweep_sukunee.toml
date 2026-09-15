@@ -1,0 +1,46 @@
+# 全漢字スイープ 植 / 臭 / 分 / 高 / 配 / 水 / 少 / 風 (2026-09-16)
+
+[[case]]
+input = "少ねぇ!!w"
+mode = "hiragana"
+expected = "すくねぇ!!w"
+
+[[case]]
+input = "客少なっ"
+mode = "hiragana"
+expected = "きゃくすくなっ"
+
+[[case]]
+input = "少なくとも"
+mode = "hiragana"
+expected = "すくなくとも"
+
+[[case]]
+input = "少年"
+mode = "hiragana"
+expected = "しょうねん"
+
+[[case]]
+input = "少々"
+mode = "hiragana"
+expected = "しょうしょう"
+
+[[case]]
+input = "住人少なすぎない?"
+mode = "hiragana"
+expected = "じゅうにんすくなすぎない?"
+
+[[case]]
+input = "日本人少なそう"
+mode = "hiragana"
+expected = "にほんじんすくなそう"
+
+[[case]]
+input = "その枚数分"
+mode = "hiragana"
+expected = "そのまいすうぶん"
+
+[[case]]
+input = "回数分と合わない"
+mode = "hiragana"
+expected = "かいすうぶんとあわない"
