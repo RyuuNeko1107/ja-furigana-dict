@@ -1,0 +1,66 @@
+# 全漢字スイープ 菜 / 決 / 期 / 赤 / 盗 / 進 / 右 / 平 (2026-09-16)
+
+[[case]]
+input = "大赤字やんけw"
+mode = "hiragana"
+expected = "おおあかじやんけw"
+
+[[case]]
+input = "迷子赤たん"
+mode = "hiragana"
+expected = "まいごあかたん"
+
+[[case]]
+input = "純粋赤ちゃんぺこだよぉ!"
+mode = "hiragana"
+expected = "じゅんすいあかちゃんぺこだよぉ!"
+
+[[case]]
+input = "赤ちゃん本舗とコラボでw"
+mode = "hiragana"
+expected = "あかちゃんほんぽとコラボでw"
+
+[[case]]
+input = "これで負けたら赤っ恥w"
+mode = "hiragana"
+expected = "これでまけたらあかっぱじw"
+
+[[case]]
+input = "平沢進?"
+mode = "hiragana"
+expected = "ひらさわすすむ?"
+
+[[case]]
+input = "先進んでおk"
+mode = "hiragana"
+expected = "さきすすんでおk"
+
+[[case]]
+input = "右方向かなぁ"
+mode = "hiragana"
+expected = "みぎほうこうかなぁ"
+
+[[case]]
+input = "何期まで見る?"
+mode = "hiragana"
+expected = "なんきまでみる?"
+
+[[case]]
+input = "平べったい"
+mode = "hiragana"
+expected = "ひらべったい"
+
+[[case]]
+input = "ラーメンは主菜だよ?"
+mode = "hiragana"
+expected = "ラーメンはしゅさいだよ?"
+
+[[case]]
+input = "元決済が進む"
+mode = "hiragana"
+expected = "げんけっさいがすすむ"
+
+[[case]]
+input = "まっ平"
+mode = "hiragana"
+expected = "まっぴら"
