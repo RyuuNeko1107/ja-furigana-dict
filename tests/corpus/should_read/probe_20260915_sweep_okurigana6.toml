@@ -1,0 +1,66 @@
+# 全漢字スイープ (送り仮名区分 第 6 弾) 由来の回帰 (2026-09-15)
+
+[[case]]
+input = "最近雨ばっか"
+mode = "hiragana"
+expected = "さいきんあめばっか"
+
+[[case]]
+input = "大雨"
+mode = "hiragana"
+expected = "おおあめ"
+
+[[case]]
+input = "全部夢だった"
+mode = "hiragana"
+expected = "ぜんぶゆめだった"
+
+[[case]]
+input = "悪夢"
+mode = "hiragana"
+expected = "あくむ"
+
+[[case]]
+input = "来年春まで"
+mode = "hiragana"
+expected = "らいねんはるまで"
+
+[[case]]
+input = "青春"
+mode = "hiragana"
+expected = "せいしゅん"
+
+[[case]]
+input = "鍵穴"
+mode = "hiragana"
+expected = "かぎあな"
+
+[[case]]
+input = "墓穴"
+mode = "hiragana"
+expected = "ぼけつ"
+
+[[case]]
+input = "経験値いただき"
+mode = "hiragana"
+expected = "けいけんちいただき"
+
+[[case]]
+input = "冷てえ"
+mode = "hiragana"
+expected = "つめてえ"
+
+[[case]]
+input = "起立"
+mode = "hiragana"
+expected = "きりつ"
+
+[[case]]
+input = "1兆円"
+mode = "hiragana"
+expected = "いっちょうえん"
+
+[[case]]
+input = "船長喉お大事に"
+mode = "hiragana"
+expected = "せんちょうのどおだいじに"
