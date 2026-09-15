@@ -1,0 +1,41 @@
+# 全漢字スイープ 業 / 光 / 震 / 次 / 向 / 男 / 珍 / 逆 (2026-09-16)
+
+[[case]]
+input = "次いつやる"
+mode = "hiragana"
+expected = "つぎいつやる"
+
+[[case]]
+input = "次いで"
+mode = "hiragana"
+expected = "ついで"
+
+[[case]]
+input = "多分次の試合"
+mode = "hiragana"
+expected = "たぶんつぎのしあい"
+
+[[case]]
+input = "監督次は歌ってね"
+mode = "hiragana"
+expected = "かんとくつぎはうたってね"
+
+[[case]]
+input = "三次か"
+mode = "hiragana"
+expected = "さんじか"
+
+[[case]]
+input = "年次"
+mode = "hiragana"
+expected = "ねんじ"
+
+[[case]]
+input = "絶対男やん"
+mode = "hiragana"
+expected = "ぜったいおとこやん"
+
+[[case]]
+input = "下向いとる"
+mode = "hiragana"
+expected = "したむいとる"
