@@ -1,0 +1,26 @@
+# 全漢字スイープ 詰 / 歯 / 波 / 豆 / 布 / 蜂 / 方 / 思 (2026-09-16)
+
+[[case]]
+input = "距離の詰め方が大股"
+mode = "hiragana"
+expected = "きょりのつめかたがおおまた"
+
+[[case]]
+input = "目詰まりさせて"
+mode = "hiragana"
+expected = "めづまりさせて"
+
+[[case]]
+input = "万波もホームラン"
+mode = "hiragana"
+expected = "まんなみもホームラン"
+
+[[case]]
+input = "α波は出ていそう"
+mode = "hiragana"
+expected = "あるふぁははでていそう"
+
+[[case]]
+input = "バース、掛布、岡田"
+mode = "hiragana"
+expected = "バース、かけふ、おかだ"
