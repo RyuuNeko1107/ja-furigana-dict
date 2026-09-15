@@ -1,0 +1,56 @@
+# 全漢字スイープ 争 / 狂 / 狩 / 野 / 金 / 青 / 悲 / 宿 (2026-09-16)
+
+[[case]]
+input = "赤青がいい"
+mode = "hiragana"
+expected = "あかあおがいい"
+
+[[case]]
+input = "元々青だった"
+mode = "hiragana"
+expected = "もともとあおだった"
+
+[[case]]
+input = "青年"
+mode = "hiragana"
+expected = "せいねん"
+
+[[case]]
+input = "真っ青"
+mode = "hiragana"
+expected = "まっさお"
+
+[[case]]
+input = "番狂せ"
+mode = "hiragana"
+expected = "ばんくるわせ"
+
+[[case]]
+input = "踊り狂え"
+mode = "hiragana"
+expected = "おどりくるえ"
+
+[[case]]
+input = "ガチャ狂いや"
+mode = "hiragana"
+expected = "ガチャくるいや"
+
+[[case]]
+input = "戦闘狂おるぞ"
+mode = "hiragana"
+expected = "せんとうきょうおるぞ"
+
+[[case]]
+input = "熱狂"
+mode = "hiragana"
+expected = "ねっきょう"
+
+[[case]]
+input = "狩まくる"
+mode = "hiragana"
+expected = "かりまくる"
+
+[[case]]
+input = "潮干狩"
+mode = "hiragana"
+expected = "しおひがり"

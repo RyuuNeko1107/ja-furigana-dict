@@ -6636,6 +6636,11 @@ default = "ハン"
 char = "狂"
 default = "キョウ"
 
+# 狂う / 狂い / 狂わせ / 番狂せ = くる (ばんきょうせ になっていた)
+[[kanji.match]]
+next_starts_any = ["う", "い", "わ", "せ", "っ", "え"]
+reading = "くる"
+
 [[kanji]]
 char = "狙"
 default = "ソ"
@@ -11398,7 +11403,7 @@ default = "シュ"
 
 # ★2026-09-15 全漢字スイープ (送り仮名区分 第 2 弾)
 [[kanji.match]]
-next_starts_any = ["の"]
+next_starts_any = ["の", "か", "が", "ま", "で", "に", "は"]
 reading = "かり"
 
 [[kanji.match]]
@@ -16267,6 +16272,11 @@ reading = "カ"
 [[kanji]]
 char = "青"
 default = "あお"
+
+# ★2026-09-16: 色の並び・副詞 + 青 = あお (赤青 / 元々青 / 全部青 / 初手青)。 下の 漢字→セイ より先に判定
+[[kanji.match]]
+prev_ends_any = ["赤", "白", "黄", "緑", "黒", "々", "部", "手"]
+reading = "あお"
 
 [[kanji.match]]
 prev_char_type = "漢字"
