@@ -1,0 +1,66 @@
+# 配信コメント頻出の英単語 / VTuber 名ローマ字 / 作品・企業名 (2026-09-15)。 英文だけの行は変換しない (lib 仕様) のもロック
+
+[[case]]
+input = "YAGOOの年齢を信じろ"
+mode = "hiragana"
+expected = "ヤゴーのねんれいをしんじろ"
+
+[[case]]
+input = "KONAMIさん!"
+mode = "hiragana"
+expected = "コナミさん!"
+
+[[case]]
+input = "またいつかまったりARKしたいね"
+mode = "hiragana"
+expected = "またいつかまったりアークしたいね"
+
+[[case]]
+input = "IRySが日本語話せちゃう"
+mode = "hiragana"
+expected = "アイリスがにほんごはなせちゃう"
+
+[[case]]
+input = "Androidゴメンされてて草"
+mode = "hiragana"
+expected = "アンドロイドゴメンされててくさ"
+
+[[case]]
+input = "BBQで焼く夏野菜"
+mode = "hiragana"
+expected = "バーベキューでやくなつやさい"
+
+[[case]]
+input = "お前に出会えた人生がSSR"
+mode = "hiragana"
+expected = "おまえにであえたじんせいがエスエスアール"
+
+[[case]]
+input = "おつぽかじゃん! Congratulations!"
+mode = "hiragana"
+expected = "おつぽかじゃん! コングラチュレーションズ!"
+
+[[case]]
+input = "こんぺこAhoy"
+mode = "hiragana"
+expected = "こんぺこアホイ"
+
+[[case]]
+input = "せめてWINだよww"
+mode = "hiragana"
+expected = "せめてウィンだよww"
+
+[[case]]
+input = "まあTOPよ"
+mode = "hiragana"
+expected = "まあトップよ"
+
+[[case]]
+input = "ミオちゃんgood"
+mode = "hiragana"
+expected = "ミオちゃんグッド"
+
+[[case]]
+input = "thank you so much"
+mode = "hiragana"
+expected = "thank you so much"
