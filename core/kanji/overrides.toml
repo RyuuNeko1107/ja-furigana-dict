@@ -3674,6 +3674,11 @@ default = "ボウ"
 char = "優"
 default = "ユウ"
 
+# 優しい / 優しみ / 優しめ / 優しさ = やさ (文頭の 優しみ / 優しめ が ゆうしみ になっていた)
+[[kanji.match]]
+next_starts_any = ["し"]
+reading = "やさ"
+
 [[kanji]]
 char = "冷"
 default = "レイ"

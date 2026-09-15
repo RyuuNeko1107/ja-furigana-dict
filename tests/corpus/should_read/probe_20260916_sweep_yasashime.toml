@@ -1,0 +1,26 @@
+# 全漢字スイープ 居 / 親 / 役 / 染 / 跡 / 年 / 優 / 加 (2026-09-16)
+
+[[case]]
+input = "優しみ"
+mode = "hiragana"
+expected = "やさしみ"
+
+[[case]]
+input = "難易度優しめ"
+mode = "hiragana"
+expected = "なんいどやさしめ"
+
+[[case]]
+input = "ぺこーら優しすぎない?"
+mode = "hiragana"
+expected = "ぺこーらやさしすぎない?"
+
+[[case]]
+input = "優勝"
+mode = "hiragana"
+expected = "ゆうしょう"
+
+[[case]]
+input = "俳優"
+mode = "hiragana"
+expected = "はいゆう"
