@@ -1,0 +1,46 @@
+# 全漢字スイープ 重 / 指 / 夢 / 沢 / 行 / 無 (2026-09-15)
+
+[[case]]
+input = "甲子園行ければ"
+mode = "hiragana"
+expected = "こうしえんいければ"
+
+[[case]]
+input = "行けば"
+mode = "hiragana"
+expected = "いけば"
+
+[[case]]
+input = "重めの二連鎖だった"
+mode = "hiragana"
+expected = "おもめのにれんさだった"
+
+[[case]]
+input = "重てぇ"
+mode = "hiragana"
+expected = "おもてぇ"
+
+[[case]]
+input = "重鎮"
+mode = "hiragana"
+expected = "じゅうちん"
+
+[[case]]
+input = "二重"
+mode = "hiragana"
+expected = "にじゅう"
+
+[[case]]
+input = "当たり前じゃ無えからなあ"
+mode = "hiragana"
+expected = "あたりまえじゃねえからなあ"
+
+[[case]]
+input = "良いの無ぇー"
+mode = "hiragana"
+expected = "よいのねぇー"
+
+[[case]]
+input = "無事"
+mode = "hiragana"
+expected = "ぶじ"
