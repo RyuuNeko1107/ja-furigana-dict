@@ -24,14 +24,14 @@ git に commit されている master HEAD の状態を基準にする。
 | カテゴリ | エントリ数 | サイズ |
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,674** | **739 KB** |
-| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **18,336** | **729 KB** |
+| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **18,354** | **730 KB** |
 | [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,665** | **127 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **1,063** | **29 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
-| [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,773** | **206 KB** |
+| [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,773** | **208 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **704** | **35 KB** |
-| **合計** | **65,215** | **1.82 MB** |
+| **合計** | **65,233** | **1.82 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -56,7 +56,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/jukugo/<genre>/*` — 手動 PR メンテのジャンル別 jukugo (≥ 2 字 surface)。 lib の Step 3 (jukugo lookup) で Lindera より優先採用。 各 genre dir の `_genre.toml` がカテゴリ description を持つ。
 
-**合計**: 18,336 件 / 729 KB (genre 6 区分)
+**合計**: 18,354 件 / 730 KB (genre 6 区分)
 
 #### 自然・生命
 
@@ -159,9 +159,9 @@ git に commit されている master HEAD の状態を基準にする。
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml) | 4,902 | 228 KB | 二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む) |
+| [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml) | 4,920 | 228 KB | 二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む) |
 | [`core/jukugo/basic/four_char.toml`](core/jukugo/basic/four_char.toml) | 35 | 2.3 KB | 四字熟語 (4 字 + 全 CJK 漢字) |
-| **小計** (2 ファイル) | **4,937** | **230 KB** | |
+| **小計** (2 ファイル) | **4,955** | **230 KB** | |
 
 
 ### 作品造語
@@ -320,7 +320,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 
 | ファイル | 文字数 | ルール数 | サイズ | 用途 |
 |---|---:|---:|---:|---|
-| [`core/kanji/overrides.toml`](core/kanji/overrides.toml) | 2,773 | 3,898 | 206 KB | 単漢字 default override + 文脈分岐 reading |
+| [`core/kanji/overrides.toml`](core/kanji/overrides.toml) | 2,773 | 3,914 | 208 KB | 単漢字 default override + 文脈分岐 reading |
 
 ### 異体字
 
@@ -400,7 +400,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 4337 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 4350 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -516,6 +516,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20260915_sweep_okurigana3.toml`](tests/corpus/should_read/probe_20260915_sweep_okurigana3.toml) | 13 |
 |  | [`tests/corpus/should_read/probe_20260915_sweep_okurigana4.toml`](tests/corpus/should_read/probe_20260915_sweep_okurigana4.toml) | 15 |
 |  | [`tests/corpus/should_read/probe_20260915_sweep_okurigana5.toml`](tests/corpus/should_read/probe_20260915_sweep_okurigana5.toml) | 10 |
+|  | [`tests/corpus/should_read/probe_20260915_sweep_okurigana6.toml`](tests/corpus/should_read/probe_20260915_sweep_okurigana6.toml) | 13 |
 |  | [`tests/corpus/should_read/probe_20260915_sweep_top.toml`](tests/corpus/should_read/probe_20260915_sweep_top.toml) | 7 |
 |  | [`tests/corpus/should_read/probe_20260915_ue_jou.toml`](tests/corpus/should_read/probe_20260915_ue_jou.toml) | 15 |
 |  | [`tests/corpus/should_read/probe_20260915_weekday_abbr.toml`](tests/corpus/should_read/probe_20260915_weekday_abbr.toml) | 8 |
