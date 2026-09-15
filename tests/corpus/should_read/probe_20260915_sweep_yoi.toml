@@ -1,0 +1,41 @@
+# 全漢字スイープ 直 / 敗 / 血 / 良 / 使 / 守 (2026-09-15)
+
+[[case]]
+input = "曲良っ"
+mode = "hiragana"
+expected = "きょくよっ"
+
+[[case]]
+input = "頭良っ"
+mode = "hiragana"
+expected = "あたまよっ"
+
+[[case]]
+input = "良くって"
+mode = "hiragana"
+expected = "よくって"
+
+[[case]]
+input = "改良"
+mode = "hiragana"
+expected = "かいりょう"
+
+[[case]]
+input = "野良"
+mode = "hiragana"
+expected = "のら"
+
+[[case]]
+input = "危機に直面した"
+mode = "hiragana"
+expected = "ききにちょくめんした"
+
+[[case]]
+input = "失血死"
+mode = "hiragana"
+expected = "しっけつし"
+
+[[case]]
+input = "円堂守"
+mode = "hiragana"
+expected = "えんどうまもる"
