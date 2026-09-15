@@ -1,0 +1,71 @@
+# 全漢字スイープ 実 / 立 / 助 / 達 / 弱 / 嫌 (2026-09-15)
+
+[[case]]
+input = "助けよう"
+mode = "hiragana"
+expected = "たすけよう"
+
+[[case]]
+input = "誰か助けろ"
+mode = "hiragana"
+expected = "だれかたすけろ"
+
+[[case]]
+input = "助ければ"
+mode = "hiragana"
+expected = "たすければ"
+
+[[case]]
+input = "手助けしよう"
+mode = "hiragana"
+expected = "てだすけしよう"
+
+[[case]]
+input = "人助けしよう"
+mode = "hiragana"
+expected = "ひとだすけしよう"
+
+[[case]]
+input = "阿部慎之助"
+mode = "hiragana"
+expected = "あべしんのすけ"
+
+[[case]]
+input = "るろ剣で左之助が持ってたやつ"
+mode = "hiragana"
+expected = "るろけんでさのすけがもってたやつ"
+
+[[case]]
+input = "猿之助さんだね"
+mode = "hiragana"
+expected = "えんのすけさんだね"
+
+[[case]]
+input = "猪之助の声優"
+mode = "hiragana"
+expected = "いのすけのせいゆう"
+
+[[case]]
+input = "助さん格さん"
+mode = "hiragana"
+expected = "すけさんかくさん"
+
+[[case]]
+input = "このチーム弱ない?"
+mode = "hiragana"
+expected = "このチームよわない?"
+
+[[case]]
+input = "装備弱えな"
+mode = "hiragana"
+expected = "そうびよわえな"
+
+[[case]]
+input = "5割弱なら"
+mode = "hiragana"
+expected = "ごわりじゃくなら"
+
+[[case]]
+input = "天才児から最弱なった"
+mode = "hiragana"
+expected = "てんさいじからさいじゃくなった"
