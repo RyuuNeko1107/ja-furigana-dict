@@ -21,6 +21,7 @@ role = "jukugo"
 description = "BLEACH (久保帯人) キャラ名・用語"
 
 [entries]
+"黒棺" = "クロヒツギ"
 "冬獅郎" = "トウシロウ"   # 日番谷冬獅郎。 default フユシシロウ
 "浮竹" = "ウキタケ"       # 浮竹十四郎。 default フチク
 "卍解" = "バンカイ"       # 斬魄刀の最終解放。 default マンジカイ

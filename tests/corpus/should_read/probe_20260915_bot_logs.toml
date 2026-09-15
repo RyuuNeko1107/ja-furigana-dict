@@ -1,0 +1,51 @@
+# 読み上げ BOT のギルド辞書登録 + ふりがな API の収集ログ起点 (2026-09-15)
+
+[[case]]
+input = "九綱 偏光 烏と声明 表裏の間 虚式 茈"
+mode = "hiragana"
+expected = "くこう へんこう からすとしょうみょう ひょうりのはざま きょしき むらさき"
+
+[[case]]
+input = "八握剣異戒神将魔虚羅"
+mode = "hiragana"
+expected = "やつかのつるぎいかいしんしょうまこら"
+
+[[case]]
+input = "甚爾"
+mode = "hiragana"
+expected = "とうじ"
+
+[[case]]
+input = "一歌ちゃん"
+mode = "hiragana"
+expected = "いちかちゃん"
+
+[[case]]
+input = "黒棺"
+mode = "hiragana"
+expected = "くろひつぎ"
+
+[[case]]
+input = "sry"
+mode = "hiragana"
+expected = "ソーリー"
+
+[[case]]
+input = "wow"
+mode = "hiragana"
+expected = "ワオ"
+
+[[case]]
+input = "feat"
+mode = "hiragana"
+expected = "フィーチャリング"
+
+[[case]]
+input = "对"
+mode = "hiragana"
+expected = "たい"
+
+[[case]]
+input = "义"
+mode = "hiragana"
+expected = "ぎ"

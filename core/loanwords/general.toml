@@ -14,6 +14,9 @@ role = "loanwords"
 description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII surface)"
 
 [entries]
+"feat" = "フィーチャリング"
+"sry" = "ソーリー"
+"wow" = "ワオ"
 
 # ── 配信 (2026-06-20 補充) ──
 "collab" = "コラボ"
