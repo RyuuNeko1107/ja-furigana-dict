@@ -1,0 +1,41 @@
+# 全漢字スイープ 勝 / 楽 / 切 / 子 / 知 (2026-09-15)
+
+[[case]]
+input = "勝ってるやんw"
+mode = "hiragana"
+expected = "かってるやんw"
+
+[[case]]
+input = "勝ったら爆笑 負けたら冷笑"
+mode = "hiragana"
+expected = "かったらばくしょう まけたられいしょう"
+
+[[case]]
+input = "勝っちゃったじゃん"
+mode = "hiragana"
+expected = "かっちゃったじゃん"
+
+[[case]]
+input = "勝るとも劣らない"
+mode = "hiragana"
+expected = "まさるともおとらない"
+
+[[case]]
+input = "決勝って"
+mode = "hiragana"
+expected = "けっしょうって"
+
+[[case]]
+input = "厚切りタン塩"
+mode = "hiragana"
+expected = "あつぎりタンしお"
+
+[[case]]
+input = "貞子vs伽椰子"
+mode = "hiragana"
+expected = "さだこブイエスかやこ"
+
+[[case]]
+input = "Fateの切嗣"
+mode = "hiragana"
+expected = "フェイトのきりつぐ"
