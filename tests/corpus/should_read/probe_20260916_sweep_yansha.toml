@@ -1,0 +1,51 @@
+# 全漢字スイープ 凄 / 車 / 北 / 保 / 東 / 去 / 鳥 / 巻 (2026-09-16)
+
+[[case]]
+input = "ヤン車もインパラには勝てねぇよ"
+mode = "hiragana"
+expected = "ヤンしゃもインパラにはかてねぇよ"
+
+[[case]]
+input = "マニュアル車に乗れるの?"
+mode = "hiragana"
+expected = "マニュアルしゃにのれるの?"
+
+[[case]]
+input = "東から来たんやろなぁ"
+mode = "hiragana"
+expected = "ひがしからきたんやろなぁ"
+
+[[case]]
+input = "東って言ってたじゃん"
+mode = "hiragana"
+expected = "ひがしっていってたじゃん"
+
+[[case]]
+input = "去り際をわきまえてるw"
+mode = "hiragana"
+expected = "さりぎわをわきまえてるw"
+
+[[case]]
+input = "水天逆巻け"
+mode = "hiragana"
+expected = "すいてんさかまけ"
+
+[[case]]
+input = "ミオ車でおでかけ"
+mode = "hiragana"
+expected = "ミオくるまでおでかけ"
+
+[[case]]
+input = "テレ東か!"
+mode = "hiragana"
+expected = "テレとうか!"
+
+[[case]]
+input = "ここの過去ね"
+mode = "hiragana"
+expected = "ここのかこね"
+
+[[case]]
+input = "去ね!"
+mode = "hiragana"
+expected = "いね!"
