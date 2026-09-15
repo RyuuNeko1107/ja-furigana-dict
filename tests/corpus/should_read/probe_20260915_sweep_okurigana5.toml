@@ -1,0 +1,51 @@
+# 全漢字スイープ (送り仮名区分 第 5 弾) 由来の回帰 (2026-09-15)
+
+[[case]]
+input = "今更新したら"
+mode = "hiragana"
+expected = "いまこうしんしたら"
+
+[[case]]
+input = "月曜朝の"
+mode = "hiragana"
+expected = "げつようあさの"
+
+[[case]]
+input = "朝食"
+mode = "hiragana"
+expected = "ちょうしょく"
+
+[[case]]
+input = "響くんだ"
+mode = "hiragana"
+expected = "ひびくんだ"
+
+[[case]]
+input = "影響"
+mode = "hiragana"
+expected = "えいきょう"
+
+[[case]]
+input = "帽子被ってた"
+mode = "hiragana"
+expected = "ぼうしかぶってた"
+
+[[case]]
+input = "全員左に"
+mode = "hiragana"
+expected = "ぜんいんひだりに"
+
+[[case]]
+input = "左右"
+mode = "hiragana"
+expected = "さゆう"
+
+[[case]]
+input = "栄える"
+mode = "hiragana"
+expected = "さかえる"
+
+[[case]]
+input = "新千歳"
+mode = "hiragana"
+expected = "しんちとせ"
