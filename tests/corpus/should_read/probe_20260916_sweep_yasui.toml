@@ -1,0 +1,46 @@
+# 全漢字スイープ 安 / 正 / 説 / 組 / 厳 / 願 / 衣 / 古 (2026-09-16)
+
+[[case]]
+input = "安い♪安〜い♫"
+mode = "hiragana"
+expected = "やすい♪やすい♫"
+
+[[case]]
+input = "安っ!"
+mode = "hiragana"
+expected = "やすっ!"
+
+[[case]]
+input = "社長安ーい"
+mode = "hiragana"
+expected = "しゃちょうやすーい"
+
+[[case]]
+input = "海外組もいるのか"
+mode = "hiragana"
+expected = "かいがいぐみもいるのか"
+
+[[case]]
+input = "ねねちと組もうぜ"
+mode = "hiragana"
+expected = "ねねちとくもうぜ"
+
+[[case]]
+input = "蒙古タンメンは好き"
+mode = "hiragana"
+expected = "もうこたんめんはすき"
+
+[[case]]
+input = "賀正"
+mode = "hiragana"
+expected = "がしょう"
+
+[[case]]
+input = "堂安ー!"
+mode = "hiragana"
+expected = "どうあんー!"
+
+[[case]]
+input = "元安って"
+mode = "hiragana"
+expected = "げんやすって"
