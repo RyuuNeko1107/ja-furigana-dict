@@ -1,0 +1,56 @@
+# 全漢字スイープ 間 / 書 / 強 / 白 (2026-09-15)
+
+[[case]]
+input = "強え"
+mode = "hiragana"
+expected = "つよえ"
+
+[[case]]
+input = "強ぇな"
+mode = "hiragana"
+expected = "つよぇな"
+
+[[case]]
+input = "爆発強っ!"
+mode = "hiragana"
+expected = "ばくはつつよっ!"
+
+[[case]]
+input = "めっちゃ強なってた"
+mode = "hiragana"
+expected = "めっちゃつよなってた"
+
+[[case]]
+input = "そこそこ強ない?"
+mode = "hiragana"
+expected = "そこそこつよない?"
+
+[[case]]
+input = "震度6強って"
+mode = "hiragana"
+expected = "しんどろくきょうって"
+
+[[case]]
+input = "震度5強"
+mode = "hiragana"
+expected = "しんどごきょう"
+
+[[case]]
+input = "人間が悪い"
+mode = "hiragana"
+expected = "にんげんがわるい"
+
+[[case]]
+input = "白亜紀"
+mode = "hiragana"
+expected = "はくあき"
+
+[[case]]
+input = "白夜行"
+mode = "hiragana"
+expected = "びゃくやこう"
+
+[[case]]
+input = "間寛平"
+mode = "hiragana"
+expected = "はざまかんぺい"
