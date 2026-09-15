@@ -1,0 +1,36 @@
+# 全漢字スイープ 取 / 突 / 祭 / 葉 / 盛 / 道 (2026-09-15)
+
+[[case]]
+input = "看取ってな"
+mode = "hiragana"
+expected = "みとってな"
+
+[[case]]
+input = "竹取の翁"
+mode = "hiragana"
+expected = "たけとりのおきな"
+
+[[case]]
+input = "直葉ちゃん"
+mode = "hiragana"
+expected = "すぐはちゃん"
+
+[[case]]
+input = "リーファ=直葉"
+mode = "hiragana"
+expected = "リーファ=すぐは"
+
+[[case]]
+input = "和葉ぁ!"
+mode = "hiragana"
+expected = "かずはぁ!"
+
+[[case]]
+input = "彩葉に届いて!"
+mode = "hiragana"
+expected = "いろはにとどいて!"
+
+[[case]]
+input = "三葉虫"
+mode = "hiragana"
+expected = "さんようちゅう"
