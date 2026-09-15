@@ -3859,6 +3859,16 @@ default = "オウ"
 char = "怠"
 default = "タイ"
 
+# ★2026-09-15 全漢字スイープ (頻度 1601〜2000 位、 送り仮名区分)
+# 怠い = だる / 怠ける = なま
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "さ", "そ", "す", "っ"]
+reading = "だる"
+
+[[kanji.match]]
+next_starts_any = ["け"]
+reading = "なま"
+
 [[kanji]]
 char = "恐"
 default = "キョウ"
@@ -5922,6 +5932,11 @@ default = "ガイ"
 char = "憎"
 default = "ゾウ"
 
+# ★2026-09-15 全漢字スイープ (頻度 1601〜2000 位、 送り仮名区分)
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "さ", "し", "す", "そ", "ま", "み", "め", "ん", "っ"]
+reading = "にく"
+
 [[kanji]]
 char = "憬"
 default = "ケイ"
@@ -6012,6 +6027,11 @@ default = "ハイ"
 [[kanji]]
 char = "括"
 default = "カツ"
+
+# ★2026-09-15 全漢字スイープ (頻度 1601〜2000 位、 送り仮名区分)
+[[kanji.match]]
+next_starts_any = ["く", "れ", "っ", "り", "ら", "ろ"]
+reading = "くく"
 
 [[kanji]]
 char = "拭"
@@ -10618,6 +10638,12 @@ default = "タク"
 [[kanji]]
 char = "捲"
 default = "ケン"
+
+# ★2026-09-15 全漢字スイープ (頻度 1601〜2000 位、 送り仮名区分)
+# 捲し立てる = まく + し
+[[kanji.match]]
+next_starts_any = ["し", "れ", "ら", "り", "る"]
+reading = "まく"
 
 # 「捲く/捲かない/捲いた/捲いて/捲けば/捲こう」 = 動詞 → ま
 [[kanji.match]]

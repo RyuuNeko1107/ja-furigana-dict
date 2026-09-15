@@ -1,0 +1,41 @@
+# 全漢字スイープ 頻度 1601〜2000 位 由来の回帰 (2026-09-15)
+
+[[case]]
+input = "憎さ"
+mode = "hiragana"
+expected = "にくさ"
+
+[[case]]
+input = "憎悪"
+mode = "hiragana"
+expected = "ぞうお"
+
+[[case]]
+input = "腹括れ"
+mode = "hiragana"
+expected = "はらくくれ"
+
+[[case]]
+input = "一括"
+mode = "hiragana"
+expected = "いっかつ"
+
+[[case]]
+input = "怠いな"
+mode = "hiragana"
+expected = "だるいな"
+
+[[case]]
+input = "怠慢"
+mode = "hiragana"
+expected = "たいまん"
+
+[[case]]
+input = "儚すぎる"
+mode = "hiragana"
+expected = "はかなすぎる"
+
+[[case]]
+input = "十勝岳"
+mode = "hiragana"
+expected = "とかちだけ"
