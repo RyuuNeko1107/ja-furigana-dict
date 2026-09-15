@@ -1,0 +1,31 @@
+# 全漢字スイープ 伝 / 世 / 装 / 利 / 川 / 兎 (2026-09-15)
+
+[[case]]
+input = "守備伝いれよう"
+mode = "hiragana"
+expected = "しゅびでんいれよう"
+
+[[case]]
+input = "守備伝いらんやろ"
+mode = "hiragana"
+expected = "しゅびでんいらんやろ"
+
+[[case]]
+input = "新衣装うおおお"
+mode = "hiragana"
+expected = "しんいしょううおおお"
+
+[[case]]
+input = "壁伝いに"
+mode = "hiragana"
+expected = "かべづたいに"
+
+[[case]]
+input = "手伝い"
+mode = "hiragana"
+expected = "てつだい"
+
+[[case]]
+input = "左利き"
+mode = "hiragana"
+expected = "ひだりきき"
