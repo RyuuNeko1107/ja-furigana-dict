@@ -1,0 +1,31 @@
+# 全漢字スイープ 数 / 苦 / 魚 / 供 / 名 / 夫 (2026-09-15)
+
+[[case]]
+input = "カツオは青魚ではない"
+mode = "hiragana"
+expected = "カツオはあおざかなではない"
+
+[[case]]
+input = "赤身魚の煮付け"
+mode = "hiragana"
+expected = "あかみざかなのにつけ"
+
+[[case]]
+input = "新東名なら120キロ出せる"
+mode = "hiragana"
+expected = "しんとうめいならひゃくにじゅうキロだせる"
+
+[[case]]
+input = "東名"
+mode = "hiragana"
+expected = "とうめい"
+
+[[case]]
+input = "苦しいいいい"
+mode = "hiragana"
+expected = "くるしいいいい"
+
+[[case]]
+input = "苦しい"
+mode = "hiragana"
+expected = "くるしい"
