@@ -1,0 +1,36 @@
+# 全漢字スイープ 橋 / 休 / 失 / 示 / 型 / 治 / 辛 / 油 (2026-09-16)
+
+[[case]]
+input = "辛えよ"
+mode = "hiragana"
+expected = "つれえよ"
+
+[[case]]
+input = "やっぱ辛えわ"
+mode = "hiragana"
+expected = "やっぱつれえわ"
+
+[[case]]
+input = "お休みこ~"
+mode = "hiragana"
+expected = "おやすみこ"
+
+[[case]]
+input = "三橋との勝負"
+mode = "hiragana"
+expected = "みつはしとのしょうぶ"
+
+[[case]]
+input = "赤羽橋の家"
+mode = "hiragana"
+expected = "あかばねばしのいえ"
+
+[[case]]
+input = "2辛でも辛い"
+mode = "hiragana"
+expected = "にからでもつらい"
+
+[[case]]
+input = "とりあえず10辛だ"
+mode = "hiragana"
+expected = "とりあえずじゅうからだ"

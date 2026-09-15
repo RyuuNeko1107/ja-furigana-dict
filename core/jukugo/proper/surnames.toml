@@ -127,7 +127,7 @@ description = "難読姓 (苗字) の読み (姓単体、代表読み)"
 "七原" = { reading = "シツワラ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "ナナハラ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 "万波" = { reading = "マンハ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "マンナミ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 "三国" = { reading = "サンコク", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "ミクニ" } ] }  # 姓 (suffix match、 default = 一般語読み)
-"三橋" = { reading = "サンキョウ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "ミツハシ" } ] }  # 姓 (suffix match、 default = 一般語読み)
+"三橋" = "ミツハシ"  # 姓 (default flip: 一般語 さんきょう は稀)
 "三石" = { reading = "サンセキ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "ミツイシ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 "三角" = { reading = "サンカク", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "ミスミ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 "三輪" = { reading = "サンリン", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "ミワ" } ] }  # 姓 (suffix match、 default = 一般語読み)
