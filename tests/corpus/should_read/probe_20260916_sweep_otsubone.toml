@@ -1,0 +1,36 @@
+# 全漢字スイープ 判 / 存 / 壁 / 局 / 御 / 訓 / 将 / 埋 (2026-09-16)
+
+[[case]]
+input = "差は埋まらない"
+mode = "hiragana"
+expected = "さはうまらない"
+
+[[case]]
+input = "差が埋まれば"
+mode = "hiragana"
+expected = "さがうまれば"
+
+[[case]]
+input = "一度埋めれば後が楽"
+mode = "hiragana"
+expected = "いちどうめればあとがらく"
+
+[[case]]
+input = "下埋めろ"
+mode = "hiragana"
+expected = "したうめろ"
+
+[[case]]
+input = "稀に埋もれてる"
+mode = "hiragana"
+expected = "まれにうもれてる"
+
+[[case]]
+input = "お局おかゆ!?"
+mode = "hiragana"
+expected = "おつぼねおかゆ!?"
+
+[[case]]
+input = "戦訓を次に活かそう"
+mode = "hiragana"
+expected = "せんくんをつぎにいかそう"
