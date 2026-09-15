@@ -1,0 +1,31 @@
+# 国名・国際機関の英字表記 (loanwords) の回帰 (2026-09-15)
+
+[[case]]
+input = "WBCで活躍"
+mode = "hiragana"
+expected = "ダブリュービーシーでかつやく"
+
+[[case]]
+input = "G7サミット"
+mode = "hiragana"
+expected = "ジーセブンサミット"
+
+[[case]]
+input = "NATO加盟"
+mode = "hiragana"
+expected = "ナトーかめい"
+
+[[case]]
+input = "NYタイムズ"
+mode = "hiragana"
+expected = "ニューヨークタイムズ"
+
+[[case]]
+input = "Argentina!"
+mode = "hiragana"
+expected = "アルゼンチン!"
+
+[[case]]
+input = "UN, UN"
+mode = "hiragana"
+expected = "UN, UN"
