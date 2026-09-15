@@ -1,0 +1,16 @@
+# 自作例文 probe 由来の回帰 (2026-09-15)
+
+[[case]]
+input = "寒気がする"
+mode = "hiragana"
+expected = "さむけがする"
+
+[[case]]
+input = "下手な鉄砲も数撃ちゃ当たる"
+mode = "hiragana"
+expected = "へたなてっぽうもかずうちゃあたる"
+
+[[case]]
+input = "立場が逆だったら"
+mode = "hiragana"
+expected = "たちばがぎゃくだったら"
