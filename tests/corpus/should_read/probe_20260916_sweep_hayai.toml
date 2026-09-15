@@ -1,0 +1,71 @@
+# 全漢字スイープ 働 / 早 / 左 / 藤 / 器 / 馬 / 犬 / 恥 (2026-09-16)
+
+[[case]]
+input = "回収早すぎる"
+mode = "hiragana"
+expected = "かいしゅうはやすぎる"
+
+[[case]]
+input = "仕事早っ!"
+mode = "hiragana"
+expected = "しごとはやっ!"
+
+[[case]]
+input = "一番早そう"
+mode = "hiragana"
+expected = "いちばんはやそう"
+
+[[case]]
+input = "社長足早いから"
+mode = "hiragana"
+expected = "しゃちょうあしはやいから"
+
+[[case]]
+input = "足早に去る"
+mode = "hiragana"
+expected = "あしばやにさる"
+
+[[case]]
+input = "早速"
+mode = "hiragana"
+expected = "さっそく"
+
+[[case]]
+input = "尚早"
+mode = "hiragana"
+expected = "しょうそう"
+
+[[case]]
+input = "絶対左"
+mode = "hiragana"
+expected = "ぜったいひだり"
+
+[[case]]
+input = "一旦左に"
+mode = "hiragana"
+expected = "いったんひだりに"
+
+[[case]]
+input = "左折"
+mode = "hiragana"
+expected = "させつ"
+
+[[case]]
+input = "極左"
+mode = "hiragana"
+expected = "きょくさ"
+
+[[case]]
+input = "川藤"
+mode = "hiragana"
+expected = "かわとう"
+
+[[case]]
+input = "赤兎馬"
+mode = "hiragana"
+expected = "せきとば"
+
+[[case]]
+input = "剣持犬だ"
+mode = "hiragana"
+expected = "けんもちいぬだ"

@@ -163,7 +163,7 @@ description = "難読姓 (苗字) の読み (姓単体、代表読み)"
 "山白" = { reading = "ヤマハク", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "ヤマシロ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 "川平" = { reading = "カワヒラ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "カビラ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 "川戸" = { reading = "カワド", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "カワト" } ] }  # 姓 (suffix match、 default = 一般語読み)
-"川藤" = { reading = "カワフジ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "カワトウ" } ] }  # 姓 (suffix match、 default = 一般語読み)
+"川藤" = { reading = "カワトウ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "カワトウ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 "庵野" = { reading = "イオリヤ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "アンノ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 "張本" = { reading = "チョウホン", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "ハリモト" } ] }  # 姓 (suffix match、 default = 一般語読み)
 "掛布" = { reading = "カイフ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "カケフ" } ] }  # 姓 (suffix match、 default = 一般語読み)
