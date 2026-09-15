@@ -1,0 +1,46 @@
+# 全漢字スイープ 船 / 怪 / 歩 / 来 / 部 / 然 (2026-09-15)
+
+[[case]]
+input = "雨が来るときは"
+mode = "hiragana"
+expected = "あめがくるときは"
+
+[[case]]
+input = "来るとき"
+mode = "hiragana"
+expected = "くるとき"
+
+[[case]]
+input = "もう来とるやん"
+mode = "hiragana"
+expected = "もうきとるやん"
+
+[[case]]
+input = "誰も来ねぇ"
+mode = "hiragana"
+expected = "だれもこねぇ"
+
+[[case]]
+input = "出来るときでいいよ"
+mode = "hiragana"
+expected = "できるときでいいよ"
+
+[[case]]
+input = "出来ねえ"
+mode = "hiragana"
+expected = "できねえ"
+
+[[case]]
+input = "来年"
+mode = "hiragana"
+expected = "らいねん"
+
+[[case]]
+input = "未来と"
+mode = "hiragana"
+expected = "みらいと"
+
+[[case]]
+input = "来ない"
+mode = "hiragana"
+expected = "こない"

@@ -446,7 +446,7 @@ default = "ライ"  # 来年/来週/来月/未来/将来 等の compound 用
 # 「来た / 来て / 来ます / 来ちゃった / 来やすい / 来そう / 来んで」 = キ + 送りがな
 # (★round 22 「ち」、 ★round 24 「や」、 ★round 32 「そ」、 ★round 8 「ん」 追加)
 [[kanji.match]]
-next_starts_any = ["た", "て", "ま", "ち", "や", "そ", "す", "ん"]
+next_starts_any = ["た", "て", "ま", "ち", "や", "そ", "す", "ん", "と"]
 reading = "キ"
 
 [[kanji.match]]
@@ -454,7 +454,7 @@ next_starts = "る"
 reading = "ク"
 
 [[kanji.match]]
-next_starts_any = ["な", "よ", "い"]
+next_starts_any = ["な", "よ", "い", "ね"]
 reading = "コ"
 
 # ─── 動詞 / 形容詞 1 字 (★alpha.19) ─────────────────────────────────────────
