@@ -1,0 +1,56 @@
+# 全漢字スイープ 増 / 本 / 話 / 剣 / 熱 / 焼 (2026-09-15)
+
+[[case]]
+input = "嘘話確定したからな"
+mode = "hiragana"
+expected = "うそばなしかくていしたからな"
+
+[[case]]
+input = "怪しい投資話"
+mode = "hiragana"
+expected = "あやしいとうしばなし"
+
+[[case]]
+input = "真夏の怪談話"
+mode = "hiragana"
+expected = "まなつのかいだんばなし"
+
+[[case]]
+input = "上司の自慢話"
+mode = "hiragana"
+expected = "じょうしのじまんばなし"
+
+[[case]]
+input = "惚気話か"
+mode = "hiragana"
+expected = "のろけばなしか"
+
+[[case]]
+input = "念話かな"
+mode = "hiragana"
+expected = "ねんわかな"
+
+[[case]]
+input = "最新話楽しみだね"
+mode = "hiragana"
+expected = "さいしんわたのしみだね"
+
+[[case]]
+input = "全話"
+mode = "hiragana"
+expected = "ぜんわ"
+
+[[case]]
+input = "熱すぎんだろ"
+mode = "hiragana"
+expected = "あつすぎんだろ"
+
+[[case]]
+input = "不本意ながら"
+mode = "hiragana"
+expected = "ふほんいながら"
+
+[[case]]
+input = "つまり本意ということ"
+mode = "hiragana"
+expected = "つまりほんいということ"
