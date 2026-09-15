@@ -44,3 +44,44 @@ expected = "なんかい"
 input = "何敗"
 mode = "hiragana"
 expected = "なんぱい"
+
+# 何 + 助数詞 の拡張 (2026-09-15 助数詞表の再計算)
+[[case]]
+input = "何割くらい"
+mode = "hiragana"
+expected = "なんわりくらい"
+
+[[case]]
+input = "何連続"
+mode = "hiragana"
+expected = "なんれんぞく"
+
+[[case]]
+input = "何桁"
+mode = "hiragana"
+expected = "なんけた"
+
+[[case]]
+input = "何問題ある"
+mode = "hiragana"
+expected = "なにもんだいある"
+
+[[case]]
+input = "何部活入ってた"
+mode = "hiragana"
+expected = "なにぶかつはいってた"
+
+[[case]]
+input = "何連絡してんの"
+mode = "hiragana"
+expected = "なにれんらくしてんの"
+
+[[case]]
+input = "何千人"
+mode = "hiragana"
+expected = "なんぜんにん"
+
+[[case]]
+input = "何千万"
+mode = "hiragana"
+expected = "なんぜんまん"
