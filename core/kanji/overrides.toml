@@ -7680,6 +7680,11 @@ reading = "いた"
 [[kanji.match]]
 next_starts_any = ["え", "ぇ"]
 reading = "いて"
+
+# 痛しゃ (痛車) / 痛たたた = いた (つうしゃ / つうたたた になっていた)
+[[kanji.match]]
+next_starts_any = ["しゃ", "たた"]
+reading = "いた"
 [[kanji.match]]
 next_starts_any = ["い", "く", "か", "む", "ん", "そ", "み", "ま", "さ", "す", "け", "が", "過"]
 reading = "イタ"

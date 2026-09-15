@@ -1,0 +1,31 @@
+# 全漢字スイープ 主 / 痛 / 許 / 麗 / 構 / 起 (2026-09-16)
+
+[[case]]
+input = "痛しゃ!"
+mode = "hiragana"
+expected = "いたしゃ!"
+
+[[case]]
+input = "痛たたた"
+mode = "hiragana"
+expected = "いたたたた"
+
+[[case]]
+input = "痛え"
+mode = "hiragana"
+expected = "いてえ"
+
+[[case]]
+input = "筋肉痛"
+mode = "hiragana"
+expected = "きんにくつう"
+
+[[case]]
+input = "どっちが主人格だ?"
+mode = "hiragana"
+expected = "どっちがしゅじんかくだ?"
+
+[[case]]
+input = "主人公"
+mode = "hiragana"
+expected = "しゅじんこう"
