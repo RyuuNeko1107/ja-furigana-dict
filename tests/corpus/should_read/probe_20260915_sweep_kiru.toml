@@ -1,0 +1,46 @@
+# 全漢字スイープ 着 / 際 / 外 / 欲 / 緒 / 済 (2026-09-15)
+
+[[case]]
+input = "恐竜の着ぐるみ"
+mode = "hiragana"
+expected = "きょうりゅうのきぐるみ"
+
+[[case]]
+input = "まず服を着ます"
+mode = "hiragana"
+expected = "まずふくをきます"
+
+[[case]]
+input = "ケープまで着ちゃって"
+mode = "hiragana"
+expected = "ケープまできちゃって"
+
+[[case]]
+input = "なんか着させられてるみたい"
+mode = "hiragana"
+expected = "なんかきさせられてるみたい"
+
+[[case]]
+input = "着やすい"
+mode = "hiragana"
+expected = "きやすい"
+
+[[case]]
+input = "着物"
+mode = "hiragana"
+expected = "きもの"
+
+[[case]]
+input = "1着"
+mode = "hiragana"
+expected = "いっちゃく"
+
+[[case]]
+input = "着きそう"
+mode = "hiragana"
+expected = "つきそう"
+
+[[case]]
+input = "着席"
+mode = "hiragana"
+expected = "ちゃくせき"
