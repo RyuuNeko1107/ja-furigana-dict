@@ -1,0 +1,66 @@
+# 全漢字スイープ 海 / 口 / 悪 / 減 / 頼 / 美 (2026-09-15)
+
+[[case]]
+input = "頼むぅ"
+mode = "hiragana"
+expected = "たのむぅ"
+
+[[case]]
+input = "頼むぺこ"
+mode = "hiragana"
+expected = "たのむぺこ"
+
+[[case]]
+input = "平井頼もしすぎる"
+mode = "hiragana"
+expected = "ひらいたのもしすぎる"
+
+[[case]]
+input = "藤堂に頼りっぱなし"
+mode = "hiragana"
+expected = "とうどうにたよりっぱなし"
+
+[[case]]
+input = "信頼"
+mode = "hiragana"
+expected = "しんらい"
+
+[[case]]
+input = "治安悪っ"
+mode = "hiragana"
+expected = "ちあんわるっ"
+
+[[case]]
+input = "必要悪って言いたい"
+mode = "hiragana"
+expected = "ひつようあくっていいたい"
+
+[[case]]
+input = "悪だくみ"
+mode = "hiragana"
+expected = "わるだくみ"
+
+[[case]]
+input = "全部口に出るタイプ"
+mode = "hiragana"
+expected = "ぜんぶくちにでるタイプ"
+
+[[case]]
+input = "電話口で"
+mode = "hiragana"
+expected = "でんわぐちで"
+
+[[case]]
+input = "人口"
+mode = "hiragana"
+expected = "じんこう"
+
+[[case]]
+input = "外海に出た"
+mode = "hiragana"
+expected = "がいかいにでた"
+
+[[case]]
+input = "里美の"
+mode = "hiragana"
+expected = "さとみの"

@@ -405,6 +405,11 @@ reading = "ジ"
 char = "口"
 default = "くち"
 
+# 全部口に / 一口 等、 直前が 部 の時は くち (全部口 = ぜんぶこう になっていた)
+[[kanji.match]]
+prev_ends_any = ["部"]
+reading = "くち"
+
 [[kanji.match]]
 prev_char_type = "漢字"
 reading = "コウ"
@@ -875,8 +880,13 @@ reading = "い"
 char = "悪"
 default = "アク"
 
+# 名詞 悪 + って (必要悪って / 悪って感じ) は あく のまま。 下の 悪っ = わるっ より先に判定
 [[kanji.match]]
-next_starts_any = ["い", "く", "か", "さ", "す", "そ", "け", "め", "過"]
+next_starts_any = ["って"]
+reading = "アク"
+
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "さ", "す", "そ", "け", "め", "過", "っ"]
 reading = "わる"
 [[kanji]]
 char = "嫌"
@@ -7310,6 +7320,15 @@ reading = "ひび"
 [[kanji]]
 char = "頼"
 default = "ライ"
+
+# 頼む / 頼みます / 頼むぅ / 頼むぺこ = たの、 頼る / 頼り / 頼って = たよ (★2026-09-15 スイープ: 頼むぅ 等が らいむ)
+[[kanji.match]]
+next_starts_any = ["む", "ま", "み", "め", "も", "ん"]
+reading = "たの"
+
+[[kanji.match]]
+next_starts_any = ["る", "ら", "り", "れ", "ろ", "っ"]
+reading = "たよ"
 
 [[kanji]]
 char = "願"
