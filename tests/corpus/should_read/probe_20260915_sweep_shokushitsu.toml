@@ -1,0 +1,21 @@
+# 全漢字スイープ 質 / 形 / 吸 / 音 / 明 / 星 (2026-09-15)
+
+[[case]]
+input = "また職質されたか"
+mode = "hiragana"
+expected = "またしょくしつされたか"
+
+[[case]]
+input = "職質"
+mode = "hiragana"
+expected = "しょくしつ"
+
+[[case]]
+input = "言質とった"
+mode = "hiragana"
+expected = "げんちとった"
+
+[[case]]
+input = "人質"
+mode = "hiragana"
+expected = "ひとじち"
