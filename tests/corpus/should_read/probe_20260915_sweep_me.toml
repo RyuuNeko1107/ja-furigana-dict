@@ -1,0 +1,51 @@
+# 全漢字スイープ 目 / 事 / 国 / 送 / 好 / 覚 (2026-09-15)
+
+[[case]]
+input = "早目に売らないと"
+mode = "hiragana"
+expected = "はやめにうらないと"
+
+[[case]]
+input = "もう少し前目でも良い"
+mode = "hiragana"
+expected = "もうすこしまえめでもよい"
+
+[[case]]
+input = "低目に強い"
+mode = "hiragana"
+expected = "ひくめにつよい"
+
+[[case]]
+input = "丸目かわいい"
+mode = "hiragana"
+expected = "まるめかわいい"
+
+[[case]]
+input = "猫目が可愛い"
+mode = "hiragana"
+expected = "ねこめがかわいい"
+
+[[case]]
+input = "目と目が合う"
+mode = "hiragana"
+expected = "めとめがあう"
+
+[[case]]
+input = "三丁目"
+mode = "hiragana"
+expected = "さんちょうめ"
+
+[[case]]
+input = "国試受かった"
+mode = "hiragana"
+expected = "こくしうかった"
+
+[[case]]
+input = "注目"
+mode = "hiragana"
+expected = "ちゅうもく"
+
+[[case]]
+input = "3試合目"
+mode = "hiragana"
+expected = "さんしあいめ"
