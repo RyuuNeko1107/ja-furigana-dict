@@ -1,0 +1,36 @@
+# 全漢字スイープ 瞬 / 細 / 童 / 点 / 以 / 万 / 谷 / 帰 (2026-09-16)
+
+[[case]]
+input = "同点きちゃー"
+mode = "hiragana"
+expected = "どうてんきちゃー"
+
+[[case]]
+input = "1点しゃーなし"
+mode = "hiragana"
+expected = "いってんしゃーなし"
+
+[[case]]
+input = "一点しゃーない"
+mode = "hiragana"
+expected = "いってんしゃーない"
+
+[[case]]
+input = "細かっ"
+mode = "hiragana"
+expected = "こまかっ"
+
+[[case]]
+input = "柿谷"
+mode = "hiragana"
+expected = "かきたに"
+
+[[case]]
+input = "上茶谷かぁ"
+mode = "hiragana"
+expected = "かみちゃたにかぁ"
+
+[[case]]
+input = "お前が細かったら"
+mode = "hiragana"
+expected = "おまえがこまかったら"

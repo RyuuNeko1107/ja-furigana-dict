@@ -170,7 +170,7 @@ description = "難読姓 (苗字) の読み (姓単体、代表読み)"
 "日暮" = { reading = "ヒグレ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "ヒグラシ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 "最上" = { reading = "サイジョウ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "モガミ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 "松金" = { reading = "マツキン", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "マツガネ" } ] }  # 姓 (suffix match、 default = 一般語読み)
-"柿谷" = { reading = "カキナヤ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "カキタニ" } ] }  # 姓 (suffix match、 default = 一般語読み)
+"柿谷" = { reading = "カキタニ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "カキタニ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 "桜宮" = { reading = "サクラキュウ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "サクラミヤ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 "榛葉" = { reading = "シンヨウ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "シンバ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 "水沢" = { reading = "スイタク", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "ミズサワ" } ] }  # 姓 (suffix match、 default = 一般語読み)
