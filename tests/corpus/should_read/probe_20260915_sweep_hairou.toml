@@ -1,0 +1,41 @@
+# 全漢字スイープ 入 / 食 / 怖 / 表 / 遣 / 手 (2026-09-15)
+
+[[case]]
+input = "風呂入ろうか"
+mode = "hiragana"
+expected = "ふろはいろうか"
+
+[[case]]
+input = "中入ろ"
+mode = "hiragana"
+expected = "なかはいろ"
+
+[[case]]
+input = "とりあえず飯食いに行こうぜ!"
+mode = "hiragana"
+expected = "とりあえずめしくいにいこうぜ!"
+
+[[case]]
+input = "夕飯食いながら"
+mode = "hiragana"
+expected = "ゆうはんくいながら"
+
+[[case]]
+input = "焼肉食いたい"
+mode = "hiragana"
+expected = "やきにくくいたい"
+
+[[case]]
+input = "牛肉食いてぇな"
+mode = "hiragana"
+expected = "ぎゅうにくくいてぇな"
+
+[[case]]
+input = "肉食いないの助かる"
+mode = "hiragana"
+expected = "にくしょくいないのたすかる"
+
+[[case]]
+input = "導入"
+mode = "hiragana"
+expected = "どうにゅう"
