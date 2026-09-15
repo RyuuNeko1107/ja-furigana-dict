@@ -3834,12 +3834,21 @@ reading = "う"
 
 [[kanji]]
 char = "奏"
-default = "ソウ"
+default = "かなで"
 
-# 「奏ちゃん」 等 人名 suffix = 名前「かなで」 (音乃瀬奏 等)。 奏でる は Lindera 正読
+# ★2026-09-16 全漢字スイープ: 単独の「奏」 はコメントでは人名 (音乃瀬奏) が大半 → default かなで。
+# 漢字隣接 (演奏/間奏/奏上 等の未登録熟語) は ソウ。 功を奏する は entry、 奏でる は Lindera 正読
 [[kanji.match]]
 next_starts_any = ["ちゃん", "くん", "さん", "様"]
 reading = "かなで"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "そう"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "そう"
 
 [[kanji]]
 char = "始"

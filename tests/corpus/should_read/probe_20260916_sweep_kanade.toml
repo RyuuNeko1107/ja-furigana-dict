@@ -1,0 +1,41 @@
+# 全漢字スイープ 奏 / 暗 / 米 / 尻 / 詞 / 力 / 持 / 経 (2026-09-16)
+
+[[case]]
+input = "がんばれ奏~"
+mode = "hiragana"
+expected = "がんばれかなで"
+
+[[case]]
+input = "奏かわいいやんw"
+mode = "hiragana"
+expected = "かなでかわいいやんw"
+
+[[case]]
+input = "奏斗が捕る"
+mode = "hiragana"
+expected = "かなとがとる"
+
+[[case]]
+input = "今奏ちゃんの配信は"
+mode = "hiragana"
+expected = "いまかなでちゃんのはいしんは"
+
+[[case]]
+input = "演奏できそう"
+mode = "hiragana"
+expected = "えんそうできそう"
+
+[[case]]
+input = "間奏まで良い"
+mode = "hiragana"
+expected = "かんそうまでよい"
+
+[[case]]
+input = "ガチで功を奏してる"
+mode = "hiragana"
+expected = "ガチでこうをそうしてる"
+
+[[case]]
+input = "音を奏でて"
+mode = "hiragana"
+expected = "おとをかなでて"
