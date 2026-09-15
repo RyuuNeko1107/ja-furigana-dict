@@ -2111,6 +2111,11 @@ reading = "タ"
 char = "色"
 default = "いろ"
 
+# 何色 / 俺色 = いろ (なにしょく / おれしょく になっていた。 下の 漢字→ショク より先に判定)
+[[kanji.match]]
+prev_ends_any = ["何", "俺"]
+reading = "いろ"
+
 [[kanji.match]]
 prev_char_type = "漢字"
 reading = "ショク"
@@ -7200,6 +7205,11 @@ default = "ユウ"
 [[kanji]]
 char = "過"
 default = "カ"
+
+# 過ぎぃ / 過ぎるぅ / 可愛過ぎるぺこ = す (かぎぃ になっていた。 過ぎる / 過ぎた は entry と形態素解析で既に正読)
+[[kanji.match]]
+next_starts_any = ["ぎ"]
+reading = "す"
 
 [[kanji]]
 char = "違"

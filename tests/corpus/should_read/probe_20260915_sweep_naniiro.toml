@@ -1,0 +1,41 @@
+# 全漢字スイープ 逃 / 過 / 運 / 色 / 捕 / 探 (2026-09-15)
+
+[[case]]
+input = "暑過ぎぃ"
+mode = "hiragana"
+expected = "あつすぎぃ"
+
+[[case]]
+input = "可愛過ぎるぺこ"
+mode = "hiragana"
+expected = "かわいすぎるぺこ"
+
+[[case]]
+input = "通り過ぎる"
+mode = "hiragana"
+expected = "とおりすぎる"
+
+[[case]]
+input = "過去"
+mode = "hiragana"
+expected = "かこ"
+
+[[case]]
+input = "何色ですか"
+mode = "hiragana"
+expected = "なにいろですか"
+
+[[case]]
+input = "俺色に染める"
+mode = "hiragana"
+expected = "おれいろにそめる"
+
+[[case]]
+input = "同色"
+mode = "hiragana"
+expected = "どうしょく"
+
+[[case]]
+input = "特色"
+mode = "hiragana"
+expected = "とくしょく"
