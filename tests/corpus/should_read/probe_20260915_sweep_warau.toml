@@ -1,0 +1,46 @@
+# 全漢字スイープ 生 / 難 / 笑 / 元 / 流 (2026-09-15)
+
+[[case]]
+input = "3期生ってやばい"
+mode = "hiragana"
+expected = "さんきせいってやばい"
+
+[[case]]
+input = "0期生ってすごいなって"
+mode = "hiragana"
+expected = "ぜろきせいってすごいなって"
+
+[[case]]
+input = "長文有り難う御座います"
+mode = "hiragana"
+expected = "ちょうぶんありがとうございます"
+
+[[case]]
+input = "笑かすなw"
+mode = "hiragana"
+expected = "わらかすなw"
+
+[[case]]
+input = "笑けてきたね"
+mode = "hiragana"
+expected = "わらけてきたね"
+
+[[case]]
+input = "笑てまうわw"
+mode = "hiragana"
+expected = "わらてまうわw"
+
+[[case]]
+input = "笑った"
+mode = "hiragana"
+expected = "わらった"
+
+[[case]]
+input = "笑顔"
+mode = "hiragana"
+expected = "えがお"
+
+[[case]]
+input = "人民元の為替レート"
+mode = "hiragana"
+expected = "じんみんげんのかわせレート"
