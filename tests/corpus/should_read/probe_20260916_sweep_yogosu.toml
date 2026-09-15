@@ -1,0 +1,41 @@
+# 全漢字スイープ 恐 / 担 / 汚 / 草 / 備 / 速 / 二 / 寝 (2026-09-16)
+
+[[case]]
+input = "海を汚すなよ"
+mode = "hiragana"
+expected = "うみをよごすなよ"
+
+[[case]]
+input = "手を汚さず"
+mode = "hiragana"
+expected = "てをよごさず"
+
+[[case]]
+input = "汚されちゃった"
+mode = "hiragana"
+expected = "よごされちゃった"
+
+[[case]]
+input = "人間の汚さw"
+mode = "hiragana"
+expected = "にんげんのきたなさw"
+
+[[case]]
+input = "口汚さがまだ無い"
+mode = "hiragana"
+expected = "くちぎたなさがまだない"
+
+[[case]]
+input = "汚すぎてだめ"
+mode = "hiragana"
+expected = "きたなすぎてだめ"
+
+[[case]]
+input = "部屋汚そう"
+mode = "hiragana"
+expected = "へやきたなそう"
+
+[[case]]
+input = "麻辣担食べた?"
+mode = "hiragana"
+expected = "まーらーたんたべた?"
