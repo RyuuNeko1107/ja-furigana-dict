@@ -1,0 +1,186 @@
+# unihan 送り仮名込み読みの語幹化 第 3 弾 (同じ読みの漢字を手本に境界決定) + 単独使用字 (2026-09-15)
+
+[[case]]
+input = "燮らげた"
+mode = "hiragana"
+expected = "やわらげた"
+
+[[case]]
+input = "𭜎れた"
+mode = "hiragana"
+expected = "わすれた"
+
+[[case]]
+input = "𫞜ちた"
+mode = "hiragana"
+expected = "みちた"
+
+[[case]]
+input = "戱れた"
+mode = "hiragana"
+expected = "たわむれた"
+
+[[case]]
+input = "跑く"
+mode = "hiragana"
+expected = "あがく"
+
+[[case]]
+input = "𭭏える"
+mode = "hiragana"
+expected = "うえる"
+
+[[case]]
+input = "𢡛える"
+mode = "hiragana"
+expected = "もだえる"
+
+[[case]]
+input = "𮍫えた"
+mode = "hiragana"
+expected = "あたえた"
+
+[[case]]
+input = "𭆆めた"
+mode = "hiragana"
+expected = "おさめた"
+
+[[case]]
+input = "墊る"
+mode = "hiragana"
+expected = "くだる"
+
+[[case]]
+input = "𭰋る"
+mode = "hiragana"
+expected = "まいる"
+
+[[case]]
+input = "僇めた"
+mode = "hiragana"
+expected = "はずかしめた"
+
+[[case]]
+input = "𢜽れる"
+mode = "hiragana"
+expected = "おそれる"
+
+[[case]]
+input = "皛くて"
+mode = "hiragana"
+expected = "しろくて"
+
+[[case]]
+input = "𫻃れた"
+mode = "hiragana"
+expected = "くずれた"
+
+[[case]]
+input = "燀ぐ"
+mode = "hiragana"
+expected = "かしぐ"
+
+[[case]]
+input = "殱きる"
+mode = "hiragana"
+expected = "つきる"
+
+[[case]]
+input = "𢝊えた"
+mode = "hiragana"
+expected = "うれえた"
+
+[[case]]
+input = "𫝊える"
+mode = "hiragana"
+expected = "つたえる"
+
+[[case]]
+input = "𫪛える"
+mode = "hiragana"
+expected = "もだえる"
+
+[[case]]
+input = "𢮦る"
+mode = "hiragana"
+expected = "くくる"
+
+[[case]]
+input = "邃い"
+mode = "hiragana"
+expected = "ふかい"
+
+[[case]]
+input = "𮚇ける"
+mode = "hiragana"
+expected = "かける"
+
+[[case]]
+input = "搆えた"
+mode = "hiragana"
+expected = "かまえた"
+
+[[case]]
+input = "熨えた"
+mode = "hiragana"
+expected = "おさえた"
+
+[[case]]
+input = "宝鍾マリン"
+mode = "hiragana"
+expected = "ほうしょうマリン"
+
+[[case]]
+input = "仄暗し"
+mode = "hiragana"
+expected = "ほのくらし"
+
+[[case]]
+input = "紅蓮弍式"
+mode = "hiragana"
+expected = "ぐれんにしき"
+
+[[case]]
+input = "下賤な兎"
+mode = "hiragana"
+expected = "げせんなうさぎ"
+
+[[case]]
+input = "厭らしい配置"
+mode = "hiragana"
+expected = "いやらしいはいち"
+
+[[case]]
+input = "我が儘で草"
+mode = "hiragana"
+expected = "わがままでくさ"
+
+[[case]]
+input = "淒い!"
+mode = "hiragana"
+expected = "すごい!"
+
+[[case]]
+input = "首を搔きむしらないで"
+mode = "hiragana"
+expected = "くびをかきむしらないで"
+
+[[case]]
+input = "嫌厭されがち"
+mode = "hiragana"
+expected = "けんえんされがち"
+
+[[case]]
+input = "悶える"
+mode = "hiragana"
+expected = "もだえる"
+
+[[case]]
+input = "誂えた"
+mode = "hiragana"
+expected = "あつらえた"
+
+[[case]]
+input = "赫足のゼフ"
+mode = "hiragana"
+expected = "あかあしのゼフ"
