@@ -1,0 +1,76 @@
+# 全漢字スイープ 消 / 井 / 残 / 曲 / 夏 / 武 / 遠 / 似 (2026-09-16)
+
+[[case]]
+input = "武さんを信じろ"
+mode = "hiragana"
+expected = "たけさんをしんじろ"
+
+[[case]]
+input = "武を信じてる"
+mode = "hiragana"
+expected = "たけをしんじてる"
+
+[[case]]
+input = "武が勝つと盛り上がる"
+mode = "hiragana"
+expected = "たけがかつともりあがる"
+
+[[case]]
+input = "武は来ないよ"
+mode = "hiragana"
+expected = "たけはこないよ"
+
+[[case]]
+input = "ほな武やな"
+mode = "hiragana"
+expected = "ほなたけやな"
+
+[[case]]
+input = "武だしな"
+mode = "hiragana"
+expected = "たけだしな"
+
+[[case]]
+input = "武たのむぞ"
+mode = "hiragana"
+expected = "たけたのむぞ"
+
+[[case]]
+input = "神武器"
+mode = "hiragana"
+expected = "かみぶき"
+
+[[case]]
+input = "ホロの北野武"
+mode = "hiragana"
+expected = "ホロのきたのたけし"
+
+[[case]]
+input = "ガンダムの曲って厳しいイメージ"
+mode = "hiragana"
+expected = "ガンダムのきょくってきびしいイメージ"
+
+[[case]]
+input = "一夏の思い出"
+mode = "hiragana"
+expected = "ひとなつのおもいで"
+
+[[case]]
+input = "ジオンの残光でもあり"
+mode = "hiragana"
+expected = "ジオンのざんこうでもあり"
+
+[[case]]
+input = "火消えてない?"
+mode = "hiragana"
+expected = "ひきえてない?"
+
+[[case]]
+input = "渋井丸拓男"
+mode = "hiragana"
+expected = "しぶいまるたくお"
+
+[[case]]
+input = "武器経験"
+mode = "hiragana"
+expected = "ぶきけいけん"
