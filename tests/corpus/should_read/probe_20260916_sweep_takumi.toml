@@ -1,0 +1,230 @@
+[[case]]
+input = "勝負も挑めるで"
+mode = "hiragana"
+expected = "しょうぶもいどめるで"
+
+[[case]]
+input = "ホロメンに挑めないのかな"
+mode = "hiragana"
+expected = "ホロメンにいどめないのかな"
+
+[[case]]
+input = "アルケミスト単体で挑めるようになったか"
+mode = "hiragana"
+expected = "アルケミストたんたいでいどめるようになったか"
+
+[[case]]
+input = "ずっと狐耳かと思ってた"
+mode = "hiragana"
+expected = "ずっときつねみみかとおもってた"
+
+[[case]]
+input = "一応狐耳もあります"
+mode = "hiragana"
+expected = "いちおうきつねみみもあります"
+
+[[case]]
+input = "仙狐さんかな?"
+mode = "hiragana"
+expected = "せんこさんかな?"
+
+[[case]]
+input = "そういえば風真殿が"
+mode = "hiragana"
+expected = "そういえばかざまどのが"
+
+[[case]]
+input = "三三七拍子!"
+mode = "hiragana"
+expected = "さんさんななびょうし!"
+
+[[case]]
+input = "コロモのつけ具合と揚げ方が難しいよ天ぷら"
+mode = "hiragana"
+expected = "コロモのつけぐあいとあげかたがむずかしいよてんぷら"
+
+[[case]]
+input = "歌舞伎揚みたいよね"
+mode = "hiragana"
+expected = "かぶきあげみたいよね"
+
+[[case]]
+input = "揚びたし?"
+mode = "hiragana"
+expected = "あげびたし?"
+
+[[case]]
+input = "どうやって七千万になった?"
+mode = "hiragana"
+expected = "どうやってななせんまんになった?"
+
+[[case]]
+input = "ダンジョン七百万ぐらい"
+mode = "hiragana"
+expected = "ダンジョンななひゃくまんぐらい"
+
+[[case]]
+input = "斬魄刀を持ってない七緒ちゃん"
+mode = "hiragana"
+expected = "ざんぱくとうをもってないななおちゃん"
+
+[[case]]
+input = "ほぼ七咲"
+mode = "hiragana"
+expected = "ほぼななさき"
+
+[[case]]
+input = "河津七滝だ"
+mode = "hiragana"
+expected = "かわづななだるだ"
+
+[[case]]
+input = "監督寝坊やで"
+mode = "hiragana"
+expected = "かんとくねぼうやで"
+
+[[case]]
+input = "運昇さんの副官だ"
+mode = "hiragana"
+expected = "うんしょうさんのふくかんだ"
+
+[[case]]
+input = "米高官が語る"
+mode = "hiragana"
+expected = "べいこうかんがかたる"
+
+[[case]]
+input = "一瞬隙を見せたから"
+mode = "hiragana"
+expected = "いっしゅんすきをみせたから"
+
+[[case]]
+input = "実際隙あらば飲むよね"
+mode = "hiragana"
+expected = "じっさいすきあらばのむよね"
+
+[[case]]
+input = "何枚舌があるんだ"
+mode = "hiragana"
+expected = "なんまいじたがあるんだ"
+
+[[case]]
+input = "2枚舌どころじゃねぇ"
+mode = "hiragana"
+expected = "にまいじたどころじゃねぇ"
+
+[[case]]
+input = "三枚舌すぎる"
+mode = "hiragana"
+expected = "さんまいじたすぎる"
+
+[[case]]
+input = "よう舌が周るわ"
+mode = "hiragana"
+expected = "ようしたがまわるわ"
+
+[[case]]
+input = "匠降ってきそうで怖いよな"
+mode = "hiragana"
+expected = "たくみふってきそうでこわいよな"
+
+[[case]]
+input = "マジで匠対策してね"
+mode = "hiragana"
+expected = "マジでたくみたいさくしてね"
+
+[[case]]
+input = "匠めっちゃいる"
+mode = "hiragana"
+expected = "たくみめっちゃいる"
+
+[[case]]
+input = "如何に一気に捕まえられるか"
+mode = "hiragana"
+expected = "いかにいっきにつかまえられるか"
+
+[[case]]
+input = "さあ如何ほどでしょう!"
+mode = "hiragana"
+expected = "さあいかほどでしょう!"
+
+[[case]]
+input = "作戦を使われたら如何でしょうか?"
+mode = "hiragana"
+expected = "さくせんをつかわれたらいかがでしょうか?"
+
+[[case]]
+input = "それ只管繰り返してれば倒せるはず!"
+mode = "hiragana"
+expected = "それひたすらくりかえしてればたおせるはず!"
+
+[[case]]
+input = "アイコン岸部一徳やん"
+mode = "hiragana"
+expected = "アイコンきしべいっとくやん"
+
+[[case]]
+input = "館鼻岸壁だな"
+mode = "hiragana"
+expected = "たてはながんぺきだな"
+
+[[case]]
+input = "麦とろ牛皿定食おいしい"
+mode = "hiragana"
+expected = "むぎとろぎゅうざらていしょくおいしい"
+
+[[case]]
+input = "牛皿でビール飲むとか"
+mode = "hiragana"
+expected = "ぎゅうざらでビールのむとか"
+
+[[case]]
+input = "製氷皿で作ってる"
+mode = "hiragana"
+expected = "せいひょうざらでつくってる"
+
+[[case]]
+input = "豆皿欲しいなぁ"
+mode = "hiragana"
+expected = "まめざらほしいなぁ"
+
+[[case]]
+input = "みこちの滑舌くらい弱々だよね"
+mode = "hiragana"
+expected = "みこちのかつぜつくらいよわよわだよね"
+
+[[case]]
+input = "師匠の早口が感染ってるぞ"
+mode = "hiragana"
+expected = "ししょうのはやくちがうつってるぞ"
+
+[[case]]
+input = "着港!"
+mode = "hiragana"
+expected = "ちゃっこう!"
+
+[[case]]
+input = "千歳空港を思い出せ"
+mode = "hiragana"
+expected = "ちとせくうこうをおもいだせ"
+
+[[case]]
+input = "ワールドカップの最中だから"
+mode = "hiragana"
+expected = "ワールドカップのさなかだから"
+
+[[case]]
+input = "師匠..."
+mode = "hiragana"
+expected = "ししょう..."
+
+[[case]]
+input = "巨匠の手書き地図だった?"
+mode = "hiragana"
+expected = "きょしょうのてがきちずだった?"
+
+[[case]]
+input = "デフォルト意匠に見えるな"
+mode = "hiragana"
+expected = "デフォルトいしょうにみえるな"
+
