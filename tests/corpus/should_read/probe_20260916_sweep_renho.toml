@@ -1,0 +1,190 @@
+[[case]]
+input = "蓮舫立憲民主 天皇制反対なのに"
+mode = "hiragana"
+expected = "れんほうりっけんみんしゅ てんのうせいはんたいなのに"
+
+[[case]]
+input = "さすが蓮舫いいよ"
+mode = "hiragana"
+expected = "さすがれんほういいよ"
+
+[[case]]
+input = "いちゃもん蓮舫"
+mode = "hiragana"
+expected = "いちゃもんれんほう"
+
+[[case]]
+input = "八戸西の福島蓮"
+mode = "hiragana"
+expected = "はちのへせいのふくしまれん"
+
+[[case]]
+input = "福島蓮いないのかな?"
+mode = "hiragana"
+expected = "ふくしまれんいないのかな?"
+
+[[case]]
+input = "蓮くんや。日ハムの"
+mode = "hiragana"
+expected = "れんくんや。にちはむの"
+
+[[case]]
+input = "阿波尾鶏美味いぞ"
+mode = "hiragana"
+expected = "あわおどりうまいぞ"
+
+[[case]]
+input = "阿波尾鶏という地鶏です"
+mode = "hiragana"
+expected = "あわおどりというじどりです"
+
+[[case]]
+input = "阿波鶏!"
+mode = "hiragana"
+expected = "あわどり!"
+
+[[case]]
+input = "棒棒鶏"
+mode = "hiragana"
+expected = "ばんばんじー"
+
+[[case]]
+input = "野蛮人棒々鶏w"
+mode = "hiragana"
+expected = "やばんじんばんばんじーw"
+
+[[case]]
+input = "油淋鶏食べたい"
+mode = "hiragana"
+expected = "ゆーりんちーたべたい"
+
+[[case]]
+input = "この丸鶏怖い"
+mode = "hiragana"
+expected = "このまるどりこわい"
+
+[[case]]
+input = "高津臣吾!"
+mode = "hiragana"
+expected = "たかつしんご!"
+
+[[case]]
+input = "体脂肪率を見るのが正義"
+mode = "hiragana"
+expected = "たいしぼうりつをみるのがせいぎ"
+
+[[case]]
+input = "体脂肪もなかなか下がらない"
+mode = "hiragana"
+expected = "たいしぼうもなかなかさがらない"
+
+[[case]]
+input = "ラクトアイスだから乳脂肪が"
+mode = "hiragana"
+expected = "ラクトアイスだからにゅうしぼうが"
+
+[[case]]
+input = "背脂かよ"
+mode = "hiragana"
+expected = "せあぶらかよ"
+
+[[case]]
+input = "麻婆すご"
+mode = "hiragana"
+expected = "まーぼーすご"
+
+[[case]]
+input = "うなぎか麻婆か"
+mode = "hiragana"
+expected = "うなぎかまーぼーか"
+
+[[case]]
+input = "麻婆はホアジャオだよ"
+mode = "hiragana"
+expected = "まーぼーはホアジャオだよ"
+
+[[case]]
+input = "麻婆神父は特殊だから"
+mode = "hiragana"
+expected = "まーぼーしんぷはとくしゅだから"
+
+[[case]]
+input = "メスガキ蛇魂王"
+mode = "hiragana"
+expected = "メスガキじゃこんおう"
+
+[[case]]
+input = "羽生蛇村じゃん"
+mode = "hiragana"
+expected = "はにえむらじゃん"
+
+[[case]]
+input = "東妻だっけ"
+mode = "hiragana"
+expected = "あづまだっけ"
+
+[[case]]
+input = "東妻が赤特多くて邪魔だな"
+mode = "hiragana"
+expected = "あづまがあかとくおおくてじゃまだな"
+
+[[case]]
+input = "極妻かな"
+mode = "hiragana"
+expected = "ごくつまかな"
+
+[[case]]
+input = "凝らない方がwwww"
+mode = "hiragana"
+expected = "こらないほうがwwww"
+
+[[case]]
+input = "肩凝らないの?"
+mode = "hiragana"
+expected = "かたこらないの?"
+
+[[case]]
+input = "ぺこらの耳垂れさそう"
+mode = "hiragana"
+expected = "ぺこらのみみたれさそう"
+
+[[case]]
+input = "ファーマーは速攻穴塞がれそう"
+mode = "hiragana"
+expected = "ファーマーはそっこうあなふさがれそう"
+
+[[case]]
+input = "馬飼ってレース参加させたとか?"
+mode = "hiragana"
+expected = "うまかってレースさんかさせたとか?"
+
+[[case]]
+input = "ござる雇っともん勝ちやんけ"
+mode = "hiragana"
+expected = "ござるやとっともんがちやんけ"
+
+[[case]]
+input = "ききらら君雇うか"
+mode = "hiragana"
+expected = "ききららくんやとうか"
+
+[[case]]
+input = "湊君とうるは君雇わないと"
+mode = "hiragana"
+expected = "みなとくんとうるはくんやとわないと"
+
+[[case]]
+input = "エンディングの上裸の人!"
+mode = "hiragana"
+expected = "エンディングのうわはだかのひと!"
+
+[[case]]
+input = "上裸に決まってる"
+mode = "hiragana"
+expected = "うわはだかにきまってる"
+
+[[case]]
+input = "ぺこら芝犬並みのパーソナルスペースやん"
+mode = "hiragana"
+expected = "ぺこらしばいぬなみのパーソナルスペースやん"
+
