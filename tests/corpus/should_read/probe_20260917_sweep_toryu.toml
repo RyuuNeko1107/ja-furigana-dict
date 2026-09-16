@@ -1,0 +1,295 @@
+[[case]]
+input = "屠龍とかオタクにしかよめんw"
+mode = "hiragana"
+expected = "とりゅうとかオタクにしかよめんw"
+
+[[case]]
+input = "獲物を屠るイェーガー"
+mode = "hiragana"
+expected = "えものをほふるイェーガー"
+
+[[case]]
+input = "スバルを屠るイェーガー!"
+mode = "hiragana"
+expected = "スバルをほふるイェーガー!"
+
+[[case]]
+input = "ルーナイトで屠殺w"
+mode = "hiragana"
+expected = "ルーナイトでとさつw"
+
+[[case]]
+input = "虫螻の如く屠っておる"
+mode = "hiragana"
+expected = "むしけらのごとくほふっておる"
+
+[[case]]
+input = "藤波辰爾がいるな"
+mode = "hiragana"
+expected = "ふじなみたつみがいるな"
+
+[[case]]
+input = "伏黒甚爾?"
+mode = "hiragana"
+expected = "ふしぐろとうじ?"
+
+[[case]]
+input = "一瞬雁木丸の草"
+mode = "hiragana"
+expected = "いっしゅんがんぎまるのくさ"
+
+[[case]]
+input = "落雁みたいだ"
+mode = "hiragana"
+expected = "らくがんみたいだ"
+
+[[case]]
+input = "怒りの落雁"
+mode = "hiragana"
+expected = "いかりのらくがん"
+
+[[case]]
+input = "和三盆の落雁もマジで美味い"
+mode = "hiragana"
+expected = "わさんぼんのらくがんもマジでうまい"
+
+[[case]]
+input = "今出回っているのはゆきの絵の雁坂下"
+mode = "hiragana"
+expected = "いまでまわっているのはゆきのえのがんざかした"
+
+[[case]]
+input = "パテが雁之助だす"
+mode = "hiragana"
+expected = "パテががんのすけだす"
+
+[[case]]
+input = "岩屋毅先生!反高市派を躍進させましょう!"
+mode = "hiragana"
+expected = "いわやたけしせんせい!はんたかいちはをやくしんさせましょう!"
+
+[[case]]
+input = "興毅!?"
+mode = "hiragana"
+expected = "こうき!?"
+
+[[case]]
+input = "犬養毅..."
+mode = "hiragana"
+expected = "いぬかいつよし..."
+
+[[case]]
+input = "王毅将軍?"
+mode = "hiragana"
+expected = "おうきしょうぐん?"
+
+[[case]]
+input = "毅然としすぎやろ"
+mode = "hiragana"
+expected = "きぜんとしすぎやろ"
+
+[[case]]
+input = "ベストドレッサーだと言うてんのに半裸の男は剛毅が過ぎる"
+mode = "hiragana"
+expected = "ベストドレッサーだというてんのにはんらのおとこはごうきがすぎる"
+
+[[case]]
+input = "江戶"
+mode = "hiragana"
+expected = "えど"
+
+[[case]]
+input = "井戶"
+mode = "hiragana"
+expected = "いど"
+
+[[case]]
+input = "九戶"
+mode = "hiragana"
+expected = "くのへ"
+
+[[case]]
+input = "北川景子、戶田惠理香"
+mode = "hiragana"
+expected = "きたがわけいこ、とだえりか"
+
+[[case]]
+input = "戶愚呂WWWWWWWWWWWW"
+mode = "hiragana"
+expected = "とぐろWWWWWWWWWWWW"
+
+[[case]]
+input = "切磋琢磨は違うやろw"
+mode = "hiragana"
+expected = "せっさたくまはちがうやろw"
+
+[[case]]
+input = "聲の形のあいつみたい"
+mode = "hiragana"
+expected = "こえのかたちのあいつみたい"
+
+[[case]]
+input = "小聲?"
+mode = "hiragana"
+expected = "こごえ?"
+
+[[case]]
+input = "無聲の世界。"
+mode = "hiragana"
+expected = "むせいのせかい。"
+
+[[case]]
+input = "坪割るんじゃなかったっけこれ"
+mode = "hiragana"
+expected = "つぼわるんじゃなかったっけこれ"
+
+[[case]]
+input = "坪内つっよ((((;゚Д゚))))"
+mode = "hiragana"
+expected = "つぼうちつっよ((((;゚Д゚))))"
+
+[[case]]
+input = "空の一坪"
+mode = "hiragana"
+expected = "そらのいちつぼ"
+
+[[case]]
+input = "大網白里市の土地相場はだいたい坪単価8万から11万"
+mode = "hiragana"
+expected = "おおあみしらさとしのとちそうばはだいたいつぼたんかはちまんからじゅういちまん"
+
+[[case]]
+input = "魑魅魍魎が跋扈するホロタウン"
+mode = "hiragana"
+expected = "ちみもうりょうがばっこするホロタウン"
+
+[[case]]
+input = "称号「魑魅魍魎雨露霜雪」"
+mode = "hiragana"
+expected = "しょうごう「ちみもうりょううろそうせつ」"
+
+[[case]]
+input = "これからのススキもいいんだよなぁ 曽爾光源"
+mode = "hiragana"
+expected = "これからのススキもいいんだよなぁ そにこうげん"
+
+[[case]]
+input = "曾爾高原は夜の星空がすごくきれいだよ"
+mode = "hiragana"
+expected = "そにこうげんはよるのほしぞらがすごくきれいだよ"
+
+[[case]]
+input = "ちなみにブラジルは漢字で書くと伯剌西爾"
+mode = "hiragana"
+expected = "ちなみにブラジルはかんじでかくとぶらじる"
+
+[[case]]
+input = "瀧口くんはまぁまぁか"
+mode = "hiragana"
+expected = "たきぐちくんはまぁまぁか"
+
+[[case]]
+input = "鱗瀧さん、判断が遅い!"
+mode = "hiragana"
+expected = "うろこだきさん、はんだんがおそい!"
+
+[[case]]
+input = "ピエール瀧いいね"
+mode = "hiragana"
+expected = "ピエールたきいいね"
+
+[[case]]
+input = "居酒屋養老乃瀧"
+mode = "hiragana"
+expected = "いざかやようろうのたき"
+
+[[case]]
+input = "蓬莱軒美味い..."
+mode = "hiragana"
+expected = "ほうらいけんうまい..."
+
+[[case]]
+input = "蓬莱さんは今は朝の番組だっけか"
+mode = "hiragana"
+expected = "ほうらいさんはいまはあさのばんぐみだっけか"
+
+[[case]]
+input = "涅槃スタイル"
+mode = "hiragana"
+expected = "ねはんスタイル"
+
+[[case]]
+input = "涅槃図"
+mode = "hiragana"
+expected = "ねはんず"
+
+[[case]]
+input = "欽ちゃん球団があるぞ慎之介"
+mode = "hiragana"
+expected = "きんちゃんきゅうだんがあるぞしんのすけ"
+
+[[case]]
+input = "造詣が深い"
+mode = "hiragana"
+expected = "ぞうけいがふかい"
+
+[[case]]
+input = "初詣"
+mode = "hiragana"
+expected = "はつもうで"
+
+[[case]]
+input = "また大谷に睨まれるのか黄泉瓜参詣コンビは"
+mode = "hiragana"
+expected = "またおおたにににらまれるのかよみうりさんけいコンビは"
+
+[[case]]
+input = "フレア詣で始まってる"
+mode = "hiragana"
+expected = "フレアもうではじまってる"
+
+[[case]]
+input = "詣でるんだw"
+mode = "hiragana"
+expected = "もうでるんだw"
+
+[[case]]
+input = "肖像画っていうか落書きじゃん"
+mode = "hiragana"
+expected = "しょうぞうがっていうからくがきじゃん"
+
+[[case]]
+input = "普通に肖像権侵害w"
+mode = "hiragana"
+expected = "ふつうにしょうぞうけんしんがいw"
+
+[[case]]
+input = "鍬を置くw"
+mode = "hiragana"
+expected = "くわをおくw"
+
+[[case]]
+input = "いつの世も鍬を持った農民が最強"
+mode = "hiragana"
+expected = "いつのよもくわをもったのうみんがさいきょう"
+
+[[case]]
+input = "珊瑚礁はなかったw"
+mode = "hiragana"
+expected = "さんごしょうはなかったw"
+
+[[case]]
+input = "珊瑚は折らないでね"
+mode = "hiragana"
+expected = "さんごはおらないでね"
+
+[[case]]
+input = "内田梨瑚被告に懲役27年の判決"
+mode = "hiragana"
+expected = "うちだりこひこくにちょうえきにじゅうななねんのはんけつ"
+
+[[case]]
+input = "内田莉瑚容疑者の27年より重いのか"
+mode = "hiragana"
+expected = "うちだりこようぎしゃのにじゅうななねんよりおもいのか"
+
