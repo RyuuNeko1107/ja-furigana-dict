@@ -1,0 +1,180 @@
+[[case]]
+input = "漢は黙って"
+mode = "hiragana"
+expected = "おとこはだまって"
+
+[[case]]
+input = "漢ぺこーら"
+mode = "hiragana"
+expected = "おとこぺこーら"
+
+[[case]]
+input = "漢の中の漢や"
+mode = "hiragana"
+expected = "おとこのなかのかんや"
+
+[[case]]
+input = "漢を見せたね"
+mode = "hiragana"
+expected = "おとこをみせたね"
+
+[[case]]
+input = "漢になれよジョセフ"
+mode = "hiragana"
+expected = "おとこになれよジョセフ"
+
+[[case]]
+input = "漢みせろ"
+mode = "hiragana"
+expected = "おとこみせろ"
+
+[[case]]
+input = "これが漢"
+mode = "hiragana"
+expected = "これがおとこ"
+
+[[case]]
+input = "ブライトが漢すぎてもう"
+mode = "hiragana"
+expected = "ブライトがおとこすぎてもう"
+
+[[case]]
+input = "ぺこらと違って漢だな"
+mode = "hiragana"
+expected = "ぺこらとちがっておとこだな"
+
+[[case]]
+input = "漢字読めない"
+mode = "hiragana"
+expected = "かんじよめない"
+
+[[case]]
+input = "良い漢字だと思う"
+mode = "hiragana"
+expected = "よいかんじだとおもう"
+
+[[case]]
+input = "凄い漢字w"
+mode = "hiragana"
+expected = "すごいかんじw"
+
+[[case]]
+input = "脳が漢字に慣れてきたかな?"
+mode = "hiragana"
+expected = "のうがかんじになれてきたかな?"
+
+[[case]]
+input = "漢方よ漢方"
+mode = "hiragana"
+expected = "かんぽうよかんぽう"
+
+[[case]]
+input = "漢方は未病にも効く"
+mode = "hiragana"
+expected = "かんぽうはみびょうにもきく"
+
+[[case]]
+input = "痴漢が多いのよ"
+mode = "hiragana"
+expected = "ちかんがおおいのよ"
+
+[[case]]
+input = "痴漢の歌草"
+mode = "hiragana"
+expected = "ちかんのうたそう"
+
+[[case]]
+input = "巨漢に迫られたら"
+mode = "hiragana"
+expected = "きょかんにせまられたら"
+
+[[case]]
+input = "この巨漢をどうやってw"
+mode = "hiragana"
+expected = "このきょかんをどうやってw"
+
+[[case]]
+input = "無頼漢が話しかけてきた"
+mode = "hiragana"
+expected = "ぶらいかんがはなしかけてきた"
+
+[[case]]
+input = "大食漢だねぇ"
+mode = "hiragana"
+expected = "たいしょくかんだねぇ"
+
+[[case]]
+input = "大食漢やな"
+mode = "hiragana"
+expected = "たいしょくかんやな"
+
+[[case]]
+input = "熱血漢だけど"
+mode = "hiragana"
+expected = "ねっけつかんだけど"
+
+[[case]]
+input = "熱血漢しかいない"
+mode = "hiragana"
+expected = "ねっけつかんしかいない"
+
+[[case]]
+input = "熱血漢らしいな"
+mode = "hiragana"
+expected = "ねっけつかんらしいな"
+
+[[case]]
+input = "中村熱血漢なら守備伝か"
+mode = "hiragana"
+expected = "なかむらねっけつかんならしゅびでんか"
+
+[[case]]
+input = "米海軍が制海権取ればいい"
+mode = "hiragana"
+expected = "べいかいぐんがせいかいけんとればいい"
+
+[[case]]
+input = "米陸軍のヘリコプター"
+mode = "hiragana"
+expected = "べいりくぐんのヘリコプター"
+
+[[case]]
+input = "圧倒的じゃないか我軍は"
+mode = "hiragana"
+expected = "あっとうてきじゃないかわがぐんは"
+
+[[case]]
+input = "破道の31 赤火砲"
+mode = "hiragana"
+expected = "はどうのさんじゅういち しゃっかほう"
+
+[[case]]
+input = "落ち方が芸術的なのだよ"
+mode = "hiragana"
+expected = "おちかたがげいじゅつてきなのだよ"
+
+[[case]]
+input = "開け方が泥棒のしぐさで草"
+mode = "hiragana"
+expected = "あけかたがどろぼうのしぐさでくさ"
+
+[[case]]
+input = "神風呂すぎる"
+mode = "hiragana"
+expected = "かみぶろすぎる"
+
+[[case]]
+input = "宝物庫か"
+mode = "hiragana"
+expected = "ほうもつこか"
+
+[[case]]
+input = "みこち、息子が漢検8級受験したよ"
+mode = "hiragana"
+expected = "みこち、むすこがかんけんはちきゅうじゅけんしたよ"
+
+[[case]]
+input = "漢検1級すごい"
+mode = "hiragana"
+expected = "かんけんいちきゅうすごい"
+

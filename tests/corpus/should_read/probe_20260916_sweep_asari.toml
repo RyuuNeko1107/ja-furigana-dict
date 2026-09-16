@@ -31,7 +31,7 @@ expected = "じびきあみりょう"
 [[case]]
 input = "宝物庫漁りが始まる"
 mode = "hiragana"
-expected = "たからものこあさりがはじまる"
+expected = "ほうもつこあさりがはじまる"
 
 [[case]]
 input = "死体漁りのぺこーら"
