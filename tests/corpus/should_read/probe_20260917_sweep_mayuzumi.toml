@@ -1,0 +1,360 @@
+[[case]]
+input = "黛と"
+mode = "hiragana"
+expected = "まゆずみと"
+
+[[case]]
+input = "黛だ"
+mode = "hiragana"
+expected = "まゆずみだ"
+
+[[case]]
+input = "黛さん"
+mode = "hiragana"
+expected = "まゆずみさん"
+
+[[case]]
+input = "黛ー!"
+mode = "hiragana"
+expected = "まゆずみー!"
+
+[[case]]
+input = "黛ー!!!!"
+mode = "hiragana"
+expected = "まゆずみー!!!!"
+
+[[case]]
+input = "じゃあふわぐさパークを作ろう、管理人黛灰"
+mode = "hiragana"
+expected = "じゃあふわぐさパークをつくろう、かんりにんまゆずみはい"
+
+[[case]]
+input = "黛千尋"
+mode = "hiragana"
+expected = "まゆずみちひろ"
+
+[[case]]
+input = "黛冬優子"
+mode = "hiragana"
+expected = "まゆずみふゆこ"
+
+[[case]]
+input = "黛眉"
+mode = "hiragana"
+expected = "たいび"
+
+[[case]]
+input = "荻野極"
+mode = "hiragana"
+expected = "おぎのきわむ"
+
+[[case]]
+input = "おーん といえば荻野講師"
+mode = "hiragana"
+expected = "おーん といえばおぎのこうし"
+
+[[case]]
+input = "荻原千速・・・・"
+mode = "hiragana"
+expected = "おぎわらちはや"
+
+[[case]]
+input = "萩原荻原"
+mode = "hiragana"
+expected = "はぎわらおぎわら"
+
+[[case]]
+input = "荻原萩原"
+mode = "hiragana"
+expected = "おぎわらはぎわら"
+
+[[case]]
+input = "それは荻原"
+mode = "hiragana"
+expected = "それはおぎわら"
+
+[[case]]
+input = "矢作と荻"
+mode = "hiragana"
+expected = "やさくとおぎ"
+
+[[case]]
+input = "荻と萩"
+mode = "hiragana"
+expected = "おぎとはぎ"
+
+[[case]]
+input = "難波の濱荻"
+mode = "hiragana"
+expected = "なんばのはまおぎ"
+
+[[case]]
+input = "ちょっとお前ら善福寺川見てみろ(荻窪)"
+mode = "hiragana"
+expected = "ちょっとおまえらぜんぷくじがわみてみろ(おぎくぼ)"
+
+[[case]]
+input = "泉涸れちゃった"
+mode = "hiragana"
+expected = "いずみかれちゃった"
+
+[[case]]
+input = "泉は涸れてしまった"
+mode = "hiragana"
+expected = "いずみはかれてしまった"
+
+[[case]]
+input = "出涸らしかぁ・・・"
+mode = "hiragana"
+expected = "でがらしかぁ"
+
+[[case]]
+input = "涸ら涸ら"
+mode = "hiragana"
+expected = "からから"
+
+[[case]]
+input = "塩窯焼きおいしい"
+mode = "hiragana"
+expected = "しおがまやきおいしい"
+
+[[case]]
+input = "塩窯焼き出てくるのやばw"
+mode = "hiragana"
+expected = "しおがまやきでてくるのやばw"
+
+[[case]]
+input = "石窯のでかさやばいw"
+mode = "hiragana"
+expected = "いしがまのでかさやばいw"
+
+[[case]]
+input = "ピザ窯"
+mode = "hiragana"
+expected = "ピザかま"
+
+[[case]]
+input = "窯爺?w"
+mode = "hiragana"
+expected = "かまじい?w"
+
+[[case]]
+input = "塩竈菊"
+mode = "hiragana"
+expected = "しおがまぎく"
+
+[[case]]
+input = "漲る闘志を奮い立て、お前が打たなきゃ誰が打つ"
+mode = "hiragana"
+expected = "みなぎるとうしをふるいたて、おまえがうたなきゃだれがうつ"
+
+[[case]]
+input = "やる気が漲ってるな"
+mode = "hiragana"
+expected = "やるきがみなぎってるな"
+
+[[case]]
+input = "仲睦まじいなあwwww"
+mode = "hiragana"
+expected = "なかむつまじいなあwwww"
+
+[[case]]
+input = "りりーかとは親睦深まった?"
+mode = "hiragana"
+expected = "りりーかとはしんぼくふかまった?"
+
+[[case]]
+input = "睦月とか出てもおかしくない"
+mode = "hiragana"
+expected = "むつきとかでてもおかしくない"
+
+[[case]]
+input = "左派は依然として中国との和睦を主軸に置いているようですね。"
+mode = "hiragana"
+expected = "さははいぜんとしてちゅうごくとのわぼくをしゅじくにおいているようですね。"
+
+[[case]]
+input = "背中が煤けてるぜw"
+mode = "hiragana"
+expected = "せなかがすすけてるぜw"
+
+[[case]]
+input = "放蕩王子か?"
+mode = "hiragana"
+expected = "ほうとうおうじか?"
+
+[[case]]
+input = "脳が蕩けてきたぞ!"
+mode = "hiragana"
+expected = "のうがとろけてきたぞ!"
+
+[[case]]
+input = "ここ 見蕩れっちゃったよ コメント忘れてw"
+mode = "hiragana"
+expected = "ここ みとれっちゃったよ コメントわすれてw"
+
+[[case]]
+input = "マニア垂涎"
+mode = "hiragana"
+expected = "マニアすいぜん"
+
+[[case]]
+input = "竜涎香かな"
+mode = "hiragana"
+expected = "りゅうぜんこうかな"
+
+[[case]]
+input = "龍涎香が元ネタかな"
+mode = "hiragana"
+expected = "りゅうぜんこうがもとネタかな"
+
+[[case]]
+input = "大繩?"
+mode = "hiragana"
+expected = "おおなわ?"
+
+[[case]]
+input = "大繩だよ"
+mode = "hiragana"
+expected = "おおなわだよ"
+
+[[case]]
+input = "大縄跳び"
+mode = "hiragana"
+expected = "おおなわとび"
+
+[[case]]
+input = "沖繩"
+mode = "hiragana"
+expected = "おきなわ"
+
+[[case]]
+input = "躁鬱かなw"
+mode = "hiragana"
+expected = "そううつかなw"
+
+[[case]]
+input = "確かに、躁状態ぽい"
+mode = "hiragana"
+expected = "たしかに、そうじょうたいぽい"
+
+[[case]]
+input = "九分九厘勝ちですわ"
+mode = "hiragana"
+expected = "くぶくりんかちですわ"
+
+[[case]]
+input = "1割8分5厘"
+mode = "hiragana"
+expected = "いちわりはっぷんごりん"
+
+[[case]]
+input = "野うさぎ不憫すぎて全員五厘刈りにさせられてそうなイメージ"
+mode = "hiragana"
+expected = "のうさぎふびんすぎてぜんいんごりんがりにさせられてそうなイメージ"
+
+[[case]]
+input = "燦然と輝く負け運"
+mode = "hiragana"
+expected = "さんぜんとかがやくまけうん"
+
+[[case]]
+input = "愛燦燦やん"
+mode = "hiragana"
+expected = "あいさんさんやん"
+
+[[case]]
+input = "叙々苑燦々亭ええぞー"
+mode = "hiragana"
+expected = "じょじょえんさんさんていええぞー"
+
+[[case]]
+input = "櫂トシキ"
+mode = "hiragana"
+expected = "かいトシキ"
+
+[[case]]
+input = "武蔵といえば櫂"
+mode = "hiragana"
+expected = "むさしといえばかい"
+
+[[case]]
+input = "五月蠅い ( ゚Д゚)"
+mode = "hiragana"
+expected = "うるさい ( ゚Д゚)"
+
+[[case]]
+input = "蠅の王"
+mode = "hiragana"
+expected = "はえのおう"
+
+[[case]]
+input = "蠅爆弾だ"
+mode = "hiragana"
+expected = "はえばくだんだ"
+
+[[case]]
+input = "ゲーミングPCに於いて最高級だね"
+mode = "hiragana"
+expected = "ゲーミングピーシーにおいてさいこうきゅうだね"
+
+[[case]]
+input = "強すぎて 咬ませ犬なる最強兵士"
+mode = "hiragana"
+expected = "つよすぎて かませいぬなるさいきょうへいし"
+
+[[case]]
+input = "竹林は蚊に咬まれるぞ"
+mode = "hiragana"
+expected = "ちくりんはかにかまれるぞ"
+
+[[case]]
+input = "咬合力やば"
+mode = "hiragana"
+expected = "こうごうりょくやば"
+
+[[case]]
+input = "獏良くん!"
+mode = "hiragana"
+expected = "ばくよくん!"
+
+[[case]]
+input = "大和田獏"
+mode = "hiragana"
+expected = "おおわだばく"
+
+[[case]]
+input = "原案:夢枕獏"
+mode = "hiragana"
+expected = "げんあん:ゆめまくらばく"
+
+[[case]]
+input = "日向灘地震"
+mode = "hiragana"
+expected = "ひゅうがなだじしん"
+
+[[case]]
+input = "お、東灘区"
+mode = "hiragana"
+expected = "お、ひがしなだく"
+
+[[case]]
+input = "玄界灘"
+mode = "hiragana"
+expected = "げんかいなだ"
+
+[[case]]
+input = "播磨灘を捜索しろ"
+mode = "hiragana"
+expected = "はりまなだをそうさくしろ"
+
+[[case]]
+input = "駐屯地ねぇ"
+mode = "hiragana"
+expected = "ちゅうとんちねぇ"
+
+[[case]]
+input = "屯田兵する?"
+mode = "hiragana"
+expected = "とんでんへいする?"
+
