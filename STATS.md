@@ -24,14 +24,14 @@ git に commit されている master HEAD の状態を基準にする。
 | カテゴリ | エントリ数 | サイズ |
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,668** | **728 KB** |
-| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **20,977** | **817 KB** |
+| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **20,983** | **817 KB** |
 | [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,674** | **128 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **1,712** | **44 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,779** | **214 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **704** | **35 KB** |
-| **合計** | **68,514** | **1.92 MB** |
+| **合計** | **68,520** | **1.92 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -56,7 +56,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/jukugo/<genre>/*` — 手動 PR メンテのジャンル別 jukugo (≥ 2 字 surface)。 lib の Step 3 (jukugo lookup) で Lindera より優先採用。 各 genre dir の `_genre.toml` がカテゴリ description を持つ。
 
-**合計**: 20,977 件 / 817 KB (genre 6 区分)
+**合計**: 20,983 件 / 817 KB (genre 6 区分)
 
 #### 自然・生命
 
@@ -159,9 +159,9 @@ git に commit されている master HEAD の状態を基準にする。
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml) | 7,523 | 316 KB | 二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む) |
+| [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml) | 7,529 | 316 KB | 二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む) |
 | [`core/jukugo/basic/four_char.toml`](core/jukugo/basic/four_char.toml) | 35 | 2.3 KB | 四字熟語 (4 字 + 全 CJK 漢字) |
-| **小計** (2 ファイル) | **7,558** | **318 KB** | |
+| **小計** (2 ファイル) | **7,564** | **318 KB** | |
 
 
 ### 作品造語
@@ -402,7 +402,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 8766 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 8834 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -651,6 +651,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20260917_sweep_enka.toml`](tests/corpus/should_read/probe_20260917_sweep_enka.toml) | 77 |
 |  | [`tests/corpus/should_read/probe_20260917_sweep_gejun.toml`](tests/corpus/should_read/probe_20260917_sweep_gejun.toml) | 75 |
 |  | [`tests/corpus/should_read/probe_20260917_sweep_haruka.toml`](tests/corpus/should_read/probe_20260917_sweep_haruka.toml) | 48 |
+|  | [`tests/corpus/should_read/probe_20260917_sweep_hayabusa.toml`](tests/corpus/should_read/probe_20260917_sweep_hayabusa.toml) | 68 |
 |  | [`tests/corpus/should_read/probe_20260917_sweep_higesori.toml`](tests/corpus/should_read/probe_20260917_sweep_higesori.toml) | 61 |
 |  | [`tests/corpus/should_read/probe_20260917_sweep_iratsuku.toml`](tests/corpus/should_read/probe_20260917_sweep_iratsuku.toml) | 74 |
 |  | [`tests/corpus/should_read/probe_20260917_sweep_izumi.toml`](tests/corpus/should_read/probe_20260917_sweep_izumi.toml) | 36 |
