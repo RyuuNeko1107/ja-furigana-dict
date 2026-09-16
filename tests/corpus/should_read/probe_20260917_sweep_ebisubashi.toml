@@ -1,0 +1,40 @@
+[[case]]
+input = "戎橋で引っ掛ける"
+mode = "hiragana"
+expected = "えびすばしでひっかける"
+
+[[case]]
+input = "戎橋"
+mode = "hiragana"
+expected = "えびすばし"
+
+[[case]]
+input = "戎橋の"
+mode = "hiragana"
+expected = "えびすばしの"
+
+[[case]]
+input = "戎"
+mode = "hiragana"
+expected = "えびす"
+
+[[case]]
+input = "戎瓔花"
+mode = "hiragana"
+expected = "えびすえいか"
+
+[[case]]
+input = "緬甸"
+mode = "hiragana"
+expected = "びるま"
+
+[[case]]
+input = "蠟燭で生活してたなら火事もあり得るね"
+mode = "hiragana"
+expected = "ろうそくでせいかつしてたならかじもありえるね"
+
+[[case]]
+input = "蠟燭"
+mode = "hiragana"
+expected = "ろうそく"
+
