@@ -1,0 +1,250 @@
+[[case]]
+input = "鴉色っていうのかな"
+mode = "hiragana"
+expected = "からすいろっていうのかな"
+
+[[case]]
+input = "鴉色"
+mode = "hiragana"
+expected = "からすいろ"
+
+[[case]]
+input = "鴉!?"
+mode = "hiragana"
+expected = "からす!?"
+
+[[case]]
+input = "不吉なの?鴉の羽は幸運のサインなんだがw"
+mode = "hiragana"
+expected = "ふきつなの?からすのはねはこううんのサインなんだがw"
+
+[[case]]
+input = "天狗とか鴉とか"
+mode = "hiragana"
+expected = "てんぐとかからすとか"
+
+[[case]]
+input = "怪異より鴉の方がビックリする"
+mode = "hiragana"
+expected = "かいいよりからすのほうがビックリする"
+
+[[case]]
+input = "喬木ってw"
+mode = "hiragana"
+expected = "きょうぼくってw"
+
+[[case]]
+input = "喬木で橋にするんか"
+mode = "hiragana"
+expected = "きょうぼくではしにするんか"
+
+[[case]]
+input = "上の喬木右から押せない?"
+mode = "hiragana"
+expected = "うえのきょうぼくみぎからおせない?"
+
+[[case]]
+input = "上の喬木を橋に?"
+mode = "hiragana"
+expected = "うえのきょうぼくをはしに?"
+
+[[case]]
+input = "木喬"
+mode = "hiragana"
+expected = "ききょう"
+
+[[case]]
+input = "喬を右下の木にもってく?"
+mode = "hiragana"
+expected = "きょうをみぎしたのきにもってく?"
+
+[[case]]
+input = "松尾芭蕉が忍者説あるぞ"
+mode = "hiragana"
+expected = "まつおばしょうがにんじゃせつあるぞ"
+
+[[case]]
+input = "芭蕉布"
+mode = "hiragana"
+expected = "ばしょうふ"
+
+[[case]]
+input = "そこ松尾芭蕉じゃないんだ"
+mode = "hiragana"
+expected = "そこまつおばしょうじゃないんだ"
+
+[[case]]
+input = "荼毘に付したよ"
+mode = "hiragana"
+expected = "だびにふしたよ"
+
+[[case]]
+input = "荼毘に伏すっていうじゃん"
+mode = "hiragana"
+expected = "だびにふすっていうじゃん"
+
+[[case]]
+input = "曼荼羅が見えた"
+mode = "hiragana"
+expected = "まんだらがみえた"
+
+[[case]]
+input = "碇シンジ?"
+mode = "hiragana"
+expected = "いかりシンジ?"
+
+[[case]]
+input = "碇くんといるとポカポカする"
+mode = "hiragana"
+expected = "いかりくんといるとポカポカする"
+
+[[case]]
+input = "翡翠!?"
+mode = "hiragana"
+expected = "ひすい!?"
+
+[[case]]
+input = "翠玉だねぇ"
+mode = "hiragana"
+expected = "すいぎょくだねぇ"
+
+[[case]]
+input = "翠の隣にあるよーー!!"
+mode = "hiragana"
+expected = "すいのとなりにあるよーー!!"
+
+[[case]]
+input = "道鏡と翡翠の腕輪かな?"
+mode = "hiragana"
+expected = "どうきょうとひすいのうでわかな?"
+
+[[case]]
+input = "鶴嘴"
+mode = "hiragana"
+expected = "つるはし"
+
+[[case]]
+input = "これは鶴嘴ゲーム?"
+mode = "hiragana"
+expected = "これはつるはしゲーム?"
+
+[[case]]
+input = "嘴の位置調整も大事"
+mode = "hiragana"
+expected = "くちばしのいちちょうせいもだいじ"
+
+[[case]]
+input = "鷹だから嘴は尖ってる"
+mode = "hiragana"
+expected = "たかだからくちばしはとがってる"
+
+[[case]]
+input = "胚芽パンとかでどうやろ"
+mode = "hiragana"
+expected = "はいがパンとかでどうやろ"
+
+[[case]]
+input = "こんな天気の中だけど婚姻届だしてきます"
+mode = "hiragana"
+expected = "こんなてんきのなかだけどこんいんとどけだしてきます"
+
+[[case]]
+input = "婚姻おめ?"
+mode = "hiragana"
+expected = "こんいんおめ?"
+
+[[case]]
+input = "榊原さんいい声だなー"
+mode = "hiragana"
+expected = "さかきばらさんいいこえだなー"
+
+[[case]]
+input = "時々脳内ナレーターが榊原良子さんになることも"
+mode = "hiragana"
+expected = "ときどきのうないナレーターがさかきばらりょうこさんになることも"
+
+[[case]]
+input = "ローレンと榊ネスは動いてる"
+mode = "hiragana"
+expected = "ローレンとさかきネスはうごいてる"
+
+[[case]]
+input = "真顔の榊!"
+mode = "hiragana"
+expected = "まがおのさかき!"
+
+[[case]]
+input = "土壌改善?"
+mode = "hiragana"
+expected = "どじょうかいぜん?"
+
+[[case]]
+input = "土壌汚染"
+mode = "hiragana"
+expected = "どじょうおせん"
+
+[[case]]
+input = "地形と土壌を調べてから家買わないと"
+mode = "hiragana"
+expected = "ちけいとどじょうをしらべてからいえかわないと"
+
+[[case]]
+input = "平壌ミサイルか・・"
+mode = "hiragana"
+expected = "ぴょんやんミサイルか"
+
+[[case]]
+input = "瓢箪から壺"
+mode = "hiragana"
+expected = "ひょうたんからつぼ"
+
+[[case]]
+input = "ひょこり瓢箪島"
+mode = "hiragana"
+expected = "ひょこりひょうたんじま"
+
+[[case]]
+input = "流しに一瓢"
+mode = "hiragana"
+expected = "ながしにいっぴょう"
+
+[[case]]
+input = "葱食べたい"
+mode = "hiragana"
+expected = "ねぎたべたい"
+
+[[case]]
+input = "玉葱"
+mode = "hiragana"
+expected = "たまねぎ"
+
+[[case]]
+input = "鴨が葱を背負って来るわ!"
+mode = "hiragana"
+expected = "かもがねぎをしょってくるわ!"
+
+[[case]]
+input = "長葱は下仁田?"
+mode = "hiragana"
+expected = "ながねぎはしもにた?"
+
+[[case]]
+input = "なんで小葱にしたの?"
+mode = "hiragana"
+expected = "なんでこねぎにしたの?"
+
+[[case]]
+input = "浅葱色ね"
+mode = "hiragana"
+expected = "あさぎいろね"
+
+[[case]]
+input = "悉く対策されるの草"
+mode = "hiragana"
+expected = "ことごとくたいさくされるのくさ"
+
+[[case]]
+input = "悉くうまい"
+mode = "hiragana"
+expected = "ことごとくうまい"
+
