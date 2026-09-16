@@ -1,0 +1,95 @@
+[[case]]
+input = "禎丞さんか?"
+mode = "hiragana"
+expected = "よしつぐさんか?"
+
+[[case]]
+input = "松岡禎丞さんよ"
+mode = "hiragana"
+expected = "まつおかよしつぐさんよ"
+
+[[case]]
+input = "百鬼あやめCV松岡禎丞かもしれない"
+mode = "hiragana"
+expected = "なきりあやめシーブイまつおかよしつぐかもしれない"
+
+[[case]]
+input = "箱根の蘆ノ湖かな"
+mode = "hiragana"
+expected = "はこねのあしのこかな"
+
+[[case]]
+input = "蘆名の井戸かな?"
+mode = "hiragana"
+expected = "あしなのいどかな?"
+
+[[case]]
+input = "蘆名一心かな?"
+mode = "hiragana"
+expected = "あしないっしんかな?"
+
+[[case]]
+input = "禎丞"
+mode = "hiragana"
+expected = "よしつぐ"
+
+[[case]]
+input = "蘆名"
+mode = "hiragana"
+expected = "あしな"
+
+[[case]]
+input = "蘆ノ湖"
+mode = "hiragana"
+expected = "あしのこ"
+
+[[case]]
+input = "吉村禎章に監督やってほしかったわ"
+mode = "hiragana"
+expected = "よしむらよしあきにかんとくやってほしかったわ"
+
+[[case]]
+input = "古川禎久支持者だ"
+mode = "hiragana"
+expected = "ふるかわていきゅうしじしゃだ"
+
+[[case]]
+input = "禎子内親王"
+mode = "hiragana"
+expected = "ていしないしんのう"
+
+[[case]]
+input = "禎子VS伽倻子"
+mode = "hiragana"
+expected = "さだこブイエスかやこ"
+
+[[case]]
+input = "蘆名盛氏"
+mode = "hiragana"
+expected = "あしなもりうじ"
+
+[[case]]
+input = "芦ノ湖"
+mode = "hiragana"
+expected = "あしのこ"
+
+[[case]]
+input = "蘆田愛菜w"
+mode = "hiragana"
+expected = "あしだあいなw"
+
+[[case]]
+input = "裏に蘆屋道満いるぞ"
+mode = "hiragana"
+expected = "うらにあしやどうまんいるぞ"
+
+[[case]]
+input = "蘆舌"
+mode = "hiragana"
+expected = "ろぜつ"
+
+[[case]]
+input = "蘆薈"
+mode = "hiragana"
+expected = "ろかい"
+
