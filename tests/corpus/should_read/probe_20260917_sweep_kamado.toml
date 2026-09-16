@@ -1,0 +1,290 @@
+[[case]]
+input = "楊炎じゃなかった"
+mode = "hiragana"
+expected = "ようえんじゃなかった"
+
+[[case]]
+input = "世界三大美女、クレオパトラ、楊貴妃、戌神ころね"
+mode = "hiragana"
+expected = "せかいさんだいびじょ、クレオパトラ、ようきひ、いぬがみころね"
+
+[[case]]
+input = "こいつは楊端和だわ!"
+mode = "hiragana"
+expected = "こいつはようたんわだわ!"
+
+[[case]]
+input = "爪楊枝の平らな部分で押すと良いよ"
+mode = "hiragana"
+expected = "つまようじのたいらなぶぶんでおすとよいよ"
+
+[[case]]
+input = "武士は食わねど高楊枝"
+mode = "hiragana"
+expected = "ぶしはくわねどたかようじ"
+
+[[case]]
+input = "竈門炊き"
+mode = "hiragana"
+expected = "かまどたき"
+
+[[case]]
+input = "あまりにも勢いが過ぎる竈門炭治郎"
+mode = "hiragana"
+expected = "あまりにもいきおいがすぎるかまどたんじろう"
+
+[[case]]
+input = "竈門タンジェロ"
+mode = "hiragana"
+expected = "かまどタンジェロ"
+
+[[case]]
+input = "関口竈門神社で聞いてみるか"
+mode = "hiragana"
+expected = "せきぐちかまどじんじゃできいてみるか"
+
+[[case]]
+input = "なな竈門"
+mode = "hiragana"
+expected = "ななかまど"
+
+[[case]]
+input = "塩竈焼き"
+mode = "hiragana"
+expected = "しおがまやき"
+
+[[case]]
+input = "仙台市 石巻市 塩竈市 大崎市原爆"
+mode = "hiragana"
+expected = "せんだいし いしのまきし しおがまし おおさきしげんばく"
+
+[[case]]
+input = "食べていいの?黄泉竈食ひにならない?"
+mode = "hiragana"
+expected = "たべていいの?よもつへぐいにならない?"
+
+[[case]]
+input = "五月蝿えな"
+mode = "hiragana"
+expected = "うるせえな"
+
+[[case]]
+input = "五月蝿い"
+mode = "hiragana"
+expected = "うるさい"
+
+[[case]]
+input = "五月蝿いアヒルが面白いww"
+mode = "hiragana"
+expected = "うるさいアヒルがおもしろいww"
+
+[[case]]
+input = "外野が五月蝿すぎ。見守れよ。"
+mode = "hiragana"
+expected = "がいやがうるさすぎ。みまもれよ。"
+
+[[case]]
+input = "画面が五月蝿いの笑う"
+mode = "hiragana"
+expected = "がめんがうるさいのわらう"
+
+[[case]]
+input = "横浜銀蝿かな"
+mode = "hiragana"
+expected = "よこはまぎんばえかな"
+
+[[case]]
+input = "蝿の王"
+mode = "hiragana"
+expected = "はえのおう"
+
+[[case]]
+input = "小蝿よなー"
+mode = "hiragana"
+expected = "こばえよなー"
+
+[[case]]
+input = "蝿を箸でつかむけどな"
+mode = "hiragana"
+expected = "はえをはしでつかむけどな"
+
+[[case]]
+input = "乾盃!"
+mode = "hiragana"
+expected = "かんぱい!"
+
+[[case]]
+input = "兄弟の盃"
+mode = "hiragana"
+expected = "きょうだいのさかずき"
+
+[[case]]
+input = "永遠の盃!"
+mode = "hiragana"
+expected = "えいえんのさかずき!"
+
+[[case]]
+input = "一盃口テンパイ"
+mode = "hiragana"
+expected = "いーぺーこーテンパイ"
+
+[[case]]
+input = "国士と一盃口ばっか待ってるみたいな"
+mode = "hiragana"
+expected = "こくしといーぺーこーばっかまってるみたいな"
+
+[[case]]
+input = "エビアンで水盃"
+mode = "hiragana"
+expected = "エビアンでみずさかずき"
+
+[[case]]
+input = "広島県民は盃かわしがち"
+mode = "hiragana"
+expected = "ひろしまけんみんはさかずきかわしがち"
+
+[[case]]
+input = "癌同士の戦い"
+mode = "hiragana"
+expected = "がんどうしのたたかい"
+
+[[case]]
+input = "原発不明癌って森永卓朗さんと同じかな"
+mode = "hiragana"
+expected = "げんぱつふめいがんってもりながたくろうさんとおなじかな"
+
+[[case]]
+input = "舌癌です"
+mode = "hiragana"
+expected = "したがんです"
+
+[[case]]
+input = "佐々木癌流v3"
+mode = "hiragana"
+expected = "ささきがんりゅうv3"
+
+[[case]]
+input = "お蚕様"
+mode = "hiragana"
+expected = "おかいこさま"
+
+[[case]]
+input = "養蚕は日本の近代化の資金源になった"
+mode = "hiragana"
+expected = "ようさんはにほんのきんだいかのしきんげんになった"
+
+[[case]]
+input = "蚕のまゆ"
+mode = "hiragana"
+expected = "かいこのまゆ"
+
+[[case]]
+input = "記憶の齟齬が・・・"
+mode = "hiragana"
+expected = "きおくのそごが"
+
+[[case]]
+input = "認識齟齬で草"
+mode = "hiragana"
+expected = "にんしきそごでくさ"
+
+[[case]]
+input = "齟齬と語弊しかないw"
+mode = "hiragana"
+expected = "そごとごへいしかないw"
+
+[[case]]
+input = "仗助w"
+mode = "hiragana"
+expected = "じょうすけw"
+
+[[case]]
+input = "東方仗助の金欠時も12円だったな"
+mode = "hiragana"
+expected = "ひがしかたじょうすけのきんけつじもじゅうにえんだったな"
+
+[[case]]
+input = "甲冑・・・だなぁ"
+mode = "hiragana"
+expected = "かっちゅうだなぁ"
+
+[[case]]
+input = "全身甲冑で水泳..."
+mode = "hiragana"
+expected = "ぜんしんかっちゅうですいえい..."
+
+[[case]]
+input = "脫兎"
+mode = "hiragana"
+expected = "だっと"
+
+[[case]]
+input = "桧山さんいいよね"
+mode = "hiragana"
+expected = "ひやまさんいいよね"
+
+[[case]]
+input = "猫又おかゆ(CV桧山さん)"
+mode = "hiragana"
+expected = "ねこまたおかゆ(シーブイひやまさん)"
+
+[[case]]
+input = "おかゆんが珍しく狼狽えてるwww"
+mode = "hiragana"
+expected = "おかゆんがめずらしくうろたえてるwww"
+
+[[case]]
+input = "狼狽してて草"
+mode = "hiragana"
+expected = "ろうばいしててくさ"
+
+[[case]]
+input = "狼狽えるなー!"
+mode = "hiragana"
+expected = "うろたえるなー!"
+
+[[case]]
+input = "店員にも怪訝な顔されたやつ"
+mode = "hiragana"
+expected = "てんいんにもけげんなかおされたやつ"
+
+[[case]]
+input = "リスナーは訝しんだ"
+mode = "hiragana"
+expected = "リスナーはいぶかしんだ"
+
+[[case]]
+input = "訝しむヤツか"
+mode = "hiragana"
+expected = "いぶかしむヤツか"
+
+[[case]]
+input = "槇原"
+mode = "hiragana"
+expected = "まきはら"
+
+[[case]]
+input = "こぼの槇原敬之さいこうだったわ"
+mode = "hiragana"
+expected = "こぼのまきはらたかゆきさいこうだったわ"
+
+[[case]]
+input = "佇まいがかわいくて草"
+mode = "hiragana"
+expected = "たたずまいがかわいくてくさ"
+
+[[case]]
+input = "目の前に佇んでるw"
+mode = "hiragana"
+expected = "めのまえにたたずんでるw"
+
+[[case]]
+input = "傍らに佇む者・スタンド"
+mode = "hiragana"
+expected = "かたわらにたたずむものスタンド"
+
+[[case]]
+input = "CRP(C反応性蛋白)と WBC(白血球数)が測定かな?"
+mode = "hiragana"
+expected = "CRP(Cはんのうせいたんぱく)と ダブリュービーシー(はっけっきゅうすう)がそくていかな?"
+
