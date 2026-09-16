@@ -1,0 +1,25 @@
+[[case]]
+input = "磔にされた理由これだろ’"
+mode = "hiragana"
+expected = "たくにされたりゆうこれだろ’"
+
+[[case]]
+input = "まず扇とかいうコウモリ野郎を磔にしろ!!!"
+mode = "hiragana"
+expected = "まずせんとかいうコウモリやろうをたくにしろ!!!"
+
+[[case]]
+input = "磔刑とは..."
+mode = "hiragana"
+expected = "たっけいとは..."
+
+[[case]]
+input = "お前は磔刑だーーー!!!"
+mode = "hiragana"
+expected = "おまえはたっけいだーーー!!!"
+
+[[case]]
+input = "磔にされた理由これだろ"
+mode = "hiragana"
+expected = "たくにされたりゆうこれだろ"
+
