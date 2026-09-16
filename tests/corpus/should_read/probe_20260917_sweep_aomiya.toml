@@ -1,0 +1,185 @@
+[[case]]
+input = "昨日、蒼宮よづりちゃんとメガサーキットで対戦しました"
+mode = "hiragana"
+expected = "きのう、あおみやよづりちゃんとメガサーキットでたいせんしました"
+
+[[case]]
+input = "ここ蒼天堀だっけ?w"
+mode = "hiragana"
+expected = "ここそうてんぼりだっけ?w"
+
+[[case]]
+input = "蒼井翔太"
+mode = "hiragana"
+expected = "あおいしょうた"
+
+[[case]]
+input = "どうして空は蒼いのか"
+mode = "hiragana"
+expected = "どうしてそらはあおいのか"
+
+[[case]]
+input = "顔面蒼白w"
+mode = "hiragana"
+expected = "がんめんそうはくw"
+
+[[case]]
+input = "せめて蒼天"
+mode = "hiragana"
+expected = "せめてそうてん"
+
+[[case]]
+input = "蒼穹のファフナー"
+mode = "hiragana"
+expected = "そうきゅうのファフナー"
+
+[[case]]
+input = "こんな鬱蒼としてたかな"
+mode = "hiragana"
+expected = "こんなうっそうとしてたかな"
+
+[[case]]
+input = "1年目キャリーしてくれ鈴木蒼"
+mode = "hiragana"
+expected = "いちねんめキャリーしてくれすずきそう"
+
+[[case]]
+input = "推薦だったんだね"
+mode = "hiragana"
+expected = "すいせんだったんだね"
+
+[[case]]
+input = "自薦エライ"
+mode = "hiragana"
+expected = "じせんエライ"
+
+[[case]]
+input = "お薦めですか?"
+mode = "hiragana"
+expected = "おすすめですか?"
+
+[[case]]
+input = "免許返納を薦めるレベル"
+mode = "hiragana"
+expected = "めんきょへんのうをすすめるレベル"
+
+[[case]]
+input = "暫定1位"
+mode = "hiragana"
+expected = "ざんていいちい"
+
+[[case]]
+input = "暫く帰れん"
+mode = "hiragana"
+expected = "しばらくかえれん"
+
+[[case]]
+input = "捏造か?名前だせw"
+mode = "hiragana"
+expected = "ねつぞうか?なまえだせw"
+
+[[case]]
+input = "駄々捏ねぺこちゃんw"
+mode = "hiragana"
+expected = "だだこねぺこちゃんw"
+
+[[case]]
+input = "飢餓でおかしくなったか"
+mode = "hiragana"
+expected = "きがでおかしくなったか"
+
+[[case]]
+input = "血に飢えてるのは兎だけだったw"
+mode = "hiragana"
+expected = "ちにうえてるのはうさぎだけだったw"
+
+[[case]]
+input = "聖飢魔II"
+mode = "hiragana"
+expected = "せいきまII"
+
+[[case]]
+input = "実践やね"
+mode = "hiragana"
+expected = "じっせんやね"
+
+[[case]]
+input = "践むしかねえ!"
+mode = "hiragana"
+expected = "ふむしかねえ!"
+
+[[case]]
+input = "殲滅宣言草"
+mode = "hiragana"
+expected = "せんめつせんげんくさ"
+
+[[case]]
+input = "累積"
+mode = "hiragana"
+expected = "るいせき"
+
+[[case]]
+input = "下痢"
+mode = "hiragana"
+expected = "げり"
+
+[[case]]
+input = "薔薇"
+mode = "hiragana"
+expected = "ばら"
+
+[[case]]
+input = "贔屓"
+mode = "hiragana"
+expected = "ひいき"
+
+[[case]]
+input = "呪詛"
+mode = "hiragana"
+expected = "じゅそ"
+
+[[case]]
+input = "疾患"
+mode = "hiragana"
+expected = "しっかん"
+
+[[case]]
+input = "鷲"
+mode = "hiragana"
+expected = "わし"
+
+[[case]]
+input = "捻挫"
+mode = "hiragana"
+expected = "ねんざ"
+
+[[case]]
+input = "妊娠"
+mode = "hiragana"
+expected = "にんしん"
+
+[[case]]
+input = "皐月"
+mode = "hiragana"
+expected = "さつき"
+
+[[case]]
+input = "渇望"
+mode = "hiragana"
+expected = "かつぼう"
+
+[[case]]
+input = "淘汰"
+mode = "hiragana"
+expected = "とうた"
+
+[[case]]
+input = "云々"
+mode = "hiragana"
+expected = "うんぬん"
+
+[[case]]
+input = "付箋"
+mode = "hiragana"
+expected = "ふせん"
+
