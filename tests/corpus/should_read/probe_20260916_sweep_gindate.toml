@@ -1,0 +1,195 @@
+[[case]]
+input = "銀盾レベル"
+mode = "hiragana"
+expected = "ぎんだてレベル"
+
+[[case]]
+input = "YouTubeなら銀盾やで"
+mode = "hiragana"
+expected = "ユーチューブならぎんだてやで"
+
+[[case]]
+input = "金盾"
+mode = "hiragana"
+expected = "きんだて"
+
+[[case]]
+input = "肉盾だw"
+mode = "hiragana"
+expected = "にくだてだw"
+
+[[case]]
+input = "時盾で防ぐ"
+mode = "hiragana"
+expected = "ときたてでふせぐ"
+
+[[case]]
+input = "鉄の盾はいいぞ"
+mode = "hiragana"
+expected = "てつのたてはいいぞ"
+
+[[case]]
+input = "矛盾してるw"
+mode = "hiragana"
+expected = "むじゅんしてるw"
+
+[[case]]
+input = "層の厚さで"
+mode = "hiragana"
+expected = "そうのあつさで"
+
+[[case]]
+input = "底の厚さがあるね"
+mode = "hiragana"
+expected = "そこのあつさがあるね"
+
+[[case]]
+input = "選手層の厚さ"
+mode = "hiragana"
+expected = "せんしゅそうのあつさ"
+
+[[case]]
+input = "選手層が厚い"
+mode = "hiragana"
+expected = "せんしゅそうがあつい"
+
+[[case]]
+input = "デスバーガーの信頼厚w"
+mode = "hiragana"
+expected = "デスバーガーのしんらいあつw"
+
+[[case]]
+input = "信頼厚い"
+mode = "hiragana"
+expected = "しんらいあつい"
+
+[[case]]
+input = "ネイル分厚めに塗る派?"
+mode = "hiragana"
+expected = "ネイルぶあつめにぬるは?"
+
+[[case]]
+input = "厚めに買ったから"
+mode = "hiragana"
+expected = "あつめにかったから"
+
+[[case]]
+input = "分厚いw"
+mode = "hiragana"
+expected = "ぶあついw"
+
+[[case]]
+input = "ダクト壊せば襲えるやろw"
+mode = "hiragana"
+expected = "ダクトこわせばおそえるやろw"
+
+[[case]]
+input = "襲えない"
+mode = "hiragana"
+expected = "おそえない"
+
+[[case]]
+input = "逆襲のシャア"
+mode = "hiragana"
+expected = "ぎゃくしゅうのシャア"
+
+[[case]]
+input = "踏襲してる感じか"
+mode = "hiragana"
+expected = "とうしゅうしてるかんじか"
+
+[[case]]
+input = "千歳は温泉もあるし"
+mode = "hiragana"
+expected = "ちとせはおんせんもあるし"
+
+[[case]]
+input = "新千歳空港"
+mode = "hiragana"
+expected = "しんちとせくうこう"
+
+[[case]]
+input = "黄泉の国"
+mode = "hiragana"
+expected = "よみのくに"
+
+[[case]]
+input = "虎児を得ず"
+mode = "hiragana"
+expected = "こじをとくず"
+
+[[case]]
+input = "虎穴に入らずんば虎子を得ず"
+mode = "hiragana"
+expected = "こけつにいらずんばこじをえず"
+
+[[case]]
+input = "不服申立てで"
+mode = "hiragana"
+expected = "ふふくもうしたてで"
+
+[[case]]
+input = "異議申立て"
+mode = "hiragana"
+expected = "いぎもうしたて"
+
+[[case]]
+input = "不服申し立てするのに"
+mode = "hiragana"
+expected = "ふふくもうしたてするのに"
+
+[[case]]
+input = "口噛酒w"
+mode = "hiragana"
+expected = "くちかみざけw"
+
+[[case]]
+input = "口噛み酒ください"
+mode = "hiragana"
+expected = "くちかみさけください"
+
+[[case]]
+input = "七対子か暗刻かか"
+mode = "hiragana"
+expected = "ちーといつかあんこかか"
+
+[[case]]
+input = "刻子か順子か"
+mode = "hiragana"
+expected = "こーつかしゅんつか"
+
+[[case]]
+input = "大分楽になった"
+mode = "hiragana"
+expected = "だいぶらくになった"
+
+[[case]]
+input = "大分県"
+mode = "hiragana"
+expected = "おおいたけん"
+
+[[case]]
+input = "相当姉属性だからな"
+mode = "hiragana"
+expected = "そうとうあねぞくせいだからな"
+
+[[case]]
+input = "妹属性は感じないかな"
+mode = "hiragana"
+expected = "いもうとぞくせいはかんじないかな"
+
+[[case]]
+input = "黄泉竈食ひにならない?"
+mode = "hiragana"
+expected = "よもつへぐいにならない?"
+
+[[case]]
+input = "黄泉竈食的な"
+mode = "hiragana"
+expected = "よもつへぐいてきな"
+
+[[case]]
+input = "黄泉の国"
+mode = "hiragana"
+expected = "よみのくに"
+
