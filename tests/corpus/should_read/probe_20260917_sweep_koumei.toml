@@ -1,0 +1,360 @@
+[[case]]
+input = "孔明の罠"
+mode = "hiragana"
+expected = "こうめいのわな"
+
+[[case]]
+input = "これは孔明の罠"
+mode = "hiragana"
+expected = "これはこうめいのわな"
+
+[[case]]
+input = "おのれ孔明!"
+mode = "hiragana"
+expected = "おのれこうめい!"
+
+[[case]]
+input = "諸葛孔明"
+mode = "hiragana"
+expected = "しょかつこうめい"
+
+[[case]]
+input = "諸葛亮孔明"
+mode = "hiragana"
+expected = "しょかつりょうこうめい"
+
+[[case]]
+input = "軍師孔明"
+mode = "hiragana"
+expected = "ぐんしこうめい"
+
+[[case]]
+input = "やはり孔明"
+mode = "hiragana"
+expected = "やはりこうめい"
+
+[[case]]
+input = "エロ孔明"
+mode = "hiragana"
+expected = "エロこうめい"
+
+[[case]]
+input = "事後孔明"
+mode = "hiragana"
+expected = "じごこうめい"
+
+[[case]]
+input = "後出し孔明"
+mode = "hiragana"
+expected = "あとだしこうめい"
+
+[[case]]
+input = "プチ孔明"
+mode = "hiragana"
+expected = "プチこうめい"
+
+[[case]]
+input = "孔明トラップ"
+mode = "hiragana"
+expected = "こうめいトラップ"
+
+[[case]]
+input = "孔明ビームみたい"
+mode = "hiragana"
+expected = "こうめいビームみたい"
+
+[[case]]
+input = "孔明のお化け"
+mode = "hiragana"
+expected = "こうめいのおばけ"
+
+[[case]]
+input = "孔明を引き入れねば"
+mode = "hiragana"
+expected = "こうめいをひきいれねば"
+
+[[case]]
+input = "心の内の孔明"
+mode = "hiragana"
+expected = "こころのうちのこうめい"
+
+[[case]]
+input = "孔明内政"
+mode = "hiragana"
+expected = "こうめいないせい"
+
+[[case]]
+input = "孔明怖れる司馬懿"
+mode = "hiragana"
+expected = "こうめいこわれるしばい"
+
+[[case]]
+input = "万遍無く"
+mode = "hiragana"
+expected = "まんべんなく"
+
+[[case]]
+input = "万遍の笑み"
+mode = "hiragana"
+expected = "まんべんのえみ"
+
+[[case]]
+input = "満遍なく"
+mode = "hiragana"
+expected = "まんべんなく"
+
+[[case]]
+input = "挫いたし"
+mode = "hiragana"
+expected = "くじいたし"
+
+[[case]]
+input = "足首挫いてるな"
+mode = "hiragana"
+expected = "あしくびくじいてるな"
+
+[[case]]
+input = "足挫いてダウン"
+mode = "hiragana"
+expected = "あしくじいてダウン"
+
+[[case]]
+input = "足挫きそう"
+mode = "hiragana"
+expected = "あしくじきそう"
+
+[[case]]
+input = "心挫かれた"
+mode = "hiragana"
+expected = "こころくじかれた"
+
+[[case]]
+input = "出鼻挫かれた"
+mode = "hiragana"
+expected = "でばなくじかれた"
+
+[[case]]
+input = "ロマン半ばで挫かれた"
+mode = "hiragana"
+expected = "ロマンなかばでくじかれた"
+
+[[case]]
+input = "挫けてる"
+mode = "hiragana"
+expected = "くじけてる"
+
+[[case]]
+input = "弱気を挫く"
+mode = "hiragana"
+expected = "よわきをくじく"
+
+[[case]]
+input = "捻挫か"
+mode = "hiragana"
+expected = "ねんざか"
+
+[[case]]
+input = "頓挫する"
+mode = "hiragana"
+expected = "とんざする"
+
+[[case]]
+input = "挫折"
+mode = "hiragana"
+expected = "ざせつ"
+
+[[case]]
+input = "寝屁"
+mode = "hiragana"
+expected = "ねべ"
+
+[[case]]
+input = "瓜田純士"
+mode = "hiragana"
+expected = "うりたじゅんし"
+
+[[case]]
+input = "瓜田くん"
+mode = "hiragana"
+expected = "うりたくん"
+
+[[case]]
+input = "活俠傳"
+mode = "hiragana"
+expected = "かっきょうでん"
+
+[[case]]
+input = "傳令"
+mode = "hiragana"
+expected = "でんれい"
+
+[[case]]
+input = "氾濫寸前"
+mode = "hiragana"
+expected = "はんらんすんぜん"
+
+[[case]]
+input = "職権濫用"
+mode = "hiragana"
+expected = "しょっけんらんよう"
+
+[[case]]
+input = "齋藤"
+mode = "hiragana"
+expected = "さいとう"
+
+[[case]]
+input = "救済措置"
+mode = "hiragana"
+expected = "きゅうさいそち"
+
+[[case]]
+input = "打擊力"
+mode = "hiragana"
+expected = "だげきりょく"
+
+[[case]]
+input = "運搬系"
+mode = "hiragana"
+expected = "うんぱんけい"
+
+[[case]]
+input = "搬送"
+mode = "hiragana"
+expected = "はんそう"
+
+[[case]]
+input = "均衡"
+mode = "hiragana"
+expected = "きんこう"
+
+[[case]]
+input = "平衡感覚"
+mode = "hiragana"
+expected = "へいこうかんかく"
+
+[[case]]
+input = "隻眼"
+mode = "hiragana"
+expected = "せきがん"
+
+[[case]]
+input = "屁理屈"
+mode = "hiragana"
+expected = "へりくつ"
+
+[[case]]
+input = "放屁"
+mode = "hiragana"
+expected = "ほうひ"
+
+[[case]]
+input = "廃墟"
+mode = "hiragana"
+expected = "はいきょ"
+
+[[case]]
+input = "瞳孔"
+mode = "hiragana"
+expected = "どうこう"
+
+[[case]]
+input = "秘孔"
+mode = "hiragana"
+expected = "ひこう"
+
+[[case]]
+input = "孔雀"
+mode = "hiragana"
+expected = "くじゃく"
+
+[[case]]
+input = "お遍路"
+mode = "hiragana"
+expected = "おへんろ"
+
+[[case]]
+input = "普遍"
+mode = "hiragana"
+expected = "ふへん"
+
+[[case]]
+input = "遮蔽物"
+mode = "hiragana"
+expected = "しゃへいぶつ"
+
+[[case]]
+input = "隠蔽"
+mode = "hiragana"
+expected = "いんぺい"
+
+[[case]]
+input = "洪水"
+mode = "hiragana"
+expected = "こうずい"
+
+[[case]]
+input = "妃殿下"
+mode = "hiragana"
+expected = "ひでんか"
+
+[[case]]
+input = "蜃気楼"
+mode = "hiragana"
+expected = "しんきろう"
+
+[[case]]
+input = "楼閣"
+mode = "hiragana"
+expected = "ろうかく"
+
+[[case]]
+input = "摩天楼"
+mode = "hiragana"
+expected = "まてんろう"
+
+[[case]]
+input = "最後の砦"
+mode = "hiragana"
+expected = "さいごのとりで"
+
+[[case]]
+input = "下剋上"
+mode = "hiragana"
+expected = "げこくじょう"
+
+[[case]]
+input = "搭載"
+mode = "hiragana"
+expected = "とうさい"
+
+[[case]]
+input = "搭乗時間"
+mode = "hiragana"
+expected = "とうじょうじかん"
+
+[[case]]
+input = "西瓜"
+mode = "hiragana"
+expected = "すいか"
+
+[[case]]
+input = "南瓜"
+mode = "hiragana"
+expected = "かぼちゃ"
+
+[[case]]
+input = "胡瓜"
+mode = "hiragana"
+expected = "きゅうり"
+
+[[case]]
+input = "冬瓜"
+mode = "hiragana"
+expected = "とうがん"
+
+[[case]]
+input = "瓜二つ"
+mode = "hiragana"
+expected = "うりふたつ"
+
