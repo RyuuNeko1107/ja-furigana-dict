@@ -1,0 +1,110 @@
+[[case]]
+input = "三河市の服"
+mode = "hiragana"
+expected = "みかわしのふく"
+
+[[case]]
+input = "愛知県小牧市住みなんでさけど"
+mode = "hiragana"
+expected = "あいちけんこまきしすみなんでさけど"
+
+[[case]]
+input = "豊田市でありそうだな"
+mode = "hiragana"
+expected = "とよたしでありそうだな"
+
+[[case]]
+input = "安城市っぽい所もあるらしいよ"
+mode = "hiragana"
+expected = "あんじょうしっぽいところもあるらしいよ"
+
+[[case]]
+input = "秋田県鹿角市"
+mode = "hiragana"
+expected = "あきたけんかづのし"
+
+[[case]]
+input = "横浜市西区"
+mode = "hiragana"
+expected = "よこはましにしく"
+
+[[case]]
+input = "愛知県西尾市一色町"
+mode = "hiragana"
+expected = "あいちけんにしおしいっしきちょう"
+
+[[case]]
+input = "それこそ自由市場"
+mode = "hiragana"
+expected = "それこそじゆうしじょう"
+
+[[case]]
+input = "日本市場を規制しだしたな"
+mode = "hiragana"
+expected = "にほんしじょうをきせいしだしたな"
+
+[[case]]
+input = "時代は転職市場だったかw"
+mode = "hiragana"
+expected = "じだいはてんしょくしじょうだったかw"
+
+[[case]]
+input = "素晴しかった"
+mode = "hiragana"
+expected = "すばらしかった"
+
+[[case]]
+input = "天晴れよころさん"
+mode = "hiragana"
+expected = "あっぱれよころさん"
+
+[[case]]
+input = "極めし者"
+mode = "hiragana"
+expected = "きわめしもの"
+
+[[case]]
+input = "料理極めよ"
+mode = "hiragana"
+expected = "りょうりきわめよ"
+
+[[case]]
+input = "極めすぎw"
+mode = "hiragana"
+expected = "きわめすぎw"
+
+[[case]]
+input = "戦極かアドレナリンかな?"
+mode = "hiragana"
+expected = "せんごくかアドレナリンかな?"
+
+[[case]]
+input = "狂牛病"
+mode = "hiragana"
+expected = "きょうぎゅうびょう"
+
+[[case]]
+input = "お風呂上りは暑いよね"
+mode = "hiragana"
+expected = "おふろあがりはあついよね"
+
+[[case]]
+input = "昨日夜暑かったな"
+mode = "hiragana"
+expected = "きのうよるあつかったな"
+
+[[case]]
+input = "酷暑日でテニスしたい"
+mode = "hiragana"
+expected = "こくしょびでテニスしたい"
+
+[[case]]
+input = "暑っ苦しいw"
+mode = "hiragana"
+expected = "あつくるしいw"
+
+[[case]]
+input = "紫炎懐かしいw"
+mode = "hiragana"
+expected = "しえんなつかしいw"
+
