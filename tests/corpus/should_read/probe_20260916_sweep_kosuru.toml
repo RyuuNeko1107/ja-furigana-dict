@@ -1,0 +1,81 @@
+# 全漢字スイープ 財 / 癒 / 伏 / 煙 / 擦 / 見 / 違 / 聞 (2026-09-16)
+
+[[case]]
+input = "まだ擦ってる笑"
+mode = "hiragana"
+expected = "まだこすってるわらい"
+
+[[case]]
+input = "今地面に擦ったぞw"
+mode = "hiragana"
+expected = "いまじめんにこすったぞw"
+
+[[case]]
+input = "ネタ擦ってた"
+mode = "hiragana"
+expected = "ネタこすってた"
+
+[[case]]
+input = "擦り替わってたのかな"
+mode = "hiragana"
+expected = "すりかわってたのかな"
+
+[[case]]
+input = "精神も擦り減る"
+mode = "hiragana"
+expected = "せいしんもすりへる"
+
+[[case]]
+input = "神経擦り減らしがすごい"
+mode = "hiragana"
+expected = "しんけいすりへらしがすごい"
+
+[[case]]
+input = "視点の擦り合わせ大事よね"
+mode = "hiragana"
+expected = "してんのすりあわせだいじよね"
+
+[[case]]
+input = "次々擦り抜けてゆく"
+mode = "hiragana"
+expected = "つぎつぎすりぬけてゆく"
+
+[[case]]
+input = "逆転の狼煙きちゃ"
+mode = "hiragana"
+expected = "ぎゃくてんののろしきちゃ"
+
+[[case]]
+input = "白煙より黒煙の方が"
+mode = "hiragana"
+expected = "はくえんよりこくえんのほうが"
+
+[[case]]
+input = "結構煙出てるもんな"
+mode = "hiragana"
+expected = "けっこうけむりでてるもんな"
+
+[[case]]
+input = "めっちゃ星見えるねぇ"
+mode = "hiragana"
+expected = "めっちゃほしみえるねぇ"
+
+[[case]]
+input = "君写真と違くない?"
+mode = "hiragana"
+expected = "きみしゃしんとちがくない?"
+
+[[case]]
+input = "なんか違くね?"
+mode = "hiragana"
+expected = "なんかちがくね?"
+
+[[case]]
+input = "次元が違くてさすがです"
+mode = "hiragana"
+expected = "じげんがちがくてさすがです"
+
+[[case]]
+input = "摩擦で溶かしてる"
+mode = "hiragana"
+expected = "まさつでとかしてる"
