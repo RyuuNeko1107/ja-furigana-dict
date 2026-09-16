@@ -1,0 +1,100 @@
+[[case]]
+input = "情報漏洩が怖い"
+mode = "hiragana"
+expected = "じょうほうろうえいがこわい"
+
+[[case]]
+input = "まさか見稽古を極めていたとは"
+mode = "hiragana"
+expected = "まさかみけいこをきわめていたとは"
+
+[[case]]
+input = "唆るぜこれは"
+mode = "hiragana"
+expected = "そそるぜこれは"
+
+[[case]]
+input = "江戸いお嬢唆るぜ"
+mode = "hiragana"
+expected = "えどいおじょうそそるぜ"
+
+[[case]]
+input = "それは食欲唆るわ"
+mode = "hiragana"
+expected = "それはしょくよくそそるわ"
+
+[[case]]
+input = "唆るねこれ"
+mode = "hiragana"
+expected = "そそるねこれ"
+
+[[case]]
+input = "唆るなあ"
+mode = "hiragana"
+expected = "そそるなあ"
+
+[[case]]
+input = "唆るよな"
+mode = "hiragana"
+expected = "そそるよな"
+
+[[case]]
+input = "唆るしいいね"
+mode = "hiragana"
+expected = "そそるしいいね"
+
+[[case]]
+input = "美琴かな"
+mode = "hiragana"
+expected = "みことかな"
+
+[[case]]
+input = "御坂美琴だよ"
+mode = "hiragana"
+expected = "みさかみことだよ"
+
+[[case]]
+input = "ゆりかもめの汐留駅かな"
+mode = "hiragana"
+expected = "ゆりかもめのしおどめえきかな"
+
+[[case]]
+input = "松尾汐恩さんはうまいですよ"
+mode = "hiragana"
+expected = "まつおしおんさんはうまいですよ"
+
+[[case]]
+input = "鉄分捕球"
+mode = "hiragana"
+expected = "てつぶんほきゅう"
+
+[[case]]
+input = "めっちゃ寝溜めしてる感じ"
+mode = "hiragana"
+expected = "めっちゃねだめしてるかんじ"
+
+[[case]]
+input = "35pに煽り運転されてるw"
+mode = "hiragana"
+expected = "35pにあおりうんてんされてるw"
+
+[[case]]
+input = "また道化したる"
+mode = "hiragana"
+expected = "またどうけしたる"
+
+[[case]]
+input = "もー無理っぴっ"
+mode = "hiragana"
+expected = "もーむりっぴっ"
+
+[[case]]
+input = "にこ動かあプレミアねあげするのょねー"
+mode = "hiragana"
+expected = "にこどうかあプレミアねあげするのょねー"
+
+[[case]]
+input = "にこ動画で見た"
+mode = "hiragana"
+expected = "にこどうがでみた"
+
