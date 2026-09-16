@@ -1,0 +1,275 @@
+[[case]]
+input = "秦基博のやつ好き"
+mode = "hiragana"
+expected = "はたもとひろのやつすき"
+
+[[case]]
+input = "秦の敵はラグ"
+mode = "hiragana"
+expected = "しんのてきはラグ"
+
+[[case]]
+input = "中国人って秦国とかの時代から侵略精神変わってないの..."
+mode = "hiragana"
+expected = "ちゅうごくじんってしんこくとかのじだいからしんりゃくせいしんかわってないの..."
+
+[[case]]
+input = "7回8回で打順一巡するのは満秦王すぎない?"
+mode = "hiragana"
+expected = "ななかいはっかいでだじゅんいちじゅんするのはまんしんおうすぎない?"
+
+[[case]]
+input = "太秦ロケ弁当おすすめですよ"
+mode = "hiragana"
+expected = "うずまさロケべんとうおすすめですよ"
+
+[[case]]
+input = "雨止んだ@神奈川県秦野市"
+mode = "hiragana"
+expected = "あめやんだ@かながわけんはだのし"
+
+[[case]]
+input = "橙上フブキ"
+mode = "hiragana"
+expected = "だいだいうえフブキ"
+
+[[case]]
+input = "ピッチャーのスタミナは橙にしなければ大丈夫"
+mode = "hiragana"
+expected = "ピッチャーのスタミナはだいだいにしなければだいじょうぶ"
+
+[[case]]
+input = "ピッチャーの体力は橙から能力低下だから今は黄色だから下がってはいないよ"
+mode = "hiragana"
+expected = "ピッチャーのたいりょくはだいだいからのうりょくていかだからいまはきいろだからさがってはいないよ"
+
+[[case]]
+input = "橙かもしれない"
+mode = "hiragana"
+expected = "だいだいかもしれない"
+
+[[case]]
+input = "橙まちゅ欲しいな"
+mode = "hiragana"
+expected = "だいだいまちゅほしいな"
+
+[[case]]
+input = "いっぱい橙々"
+mode = "hiragana"
+expected = "いっぱいだいだいだい"
+
+[[case]]
+input = "あのメガホンが橙色になったらおもろい"
+mode = "hiragana"
+expected = "あのメガホンがだいだいいろになったらおもろい"
+
+[[case]]
+input = "蒼崎橙子やんw"
+mode = "hiragana"
+expected = "あおさきとうこやんw"
+
+[[case]]
+input = "田中瑛斗じゃなく瑛太か"
+mode = "hiragana"
+expected = "たなかえいとじゃなくえいたか"
+
+[[case]]
+input = "スライダーとシュート、田中瑛斗か!"
+mode = "hiragana"
+expected = "スライダーとシュート、たなかえいとか!"
+
+[[case]]
+input = "瀬川瑛子みたいw"
+mode = "hiragana"
+expected = "せがわえいこみたいw"
+
+[[case]]
+input = "美瑛がオススメ"
+mode = "hiragana"
+expected = "びえいがオススメ"
+
+[[case]]
+input = "美瑛のコーンパンは美味かった"
+mode = "hiragana"
+expected = "びえいのコーンパンはうまかった"
+
+[[case]]
+input = "奄美群島も停電するかなあ"
+mode = "hiragana"
+expected = "あまみぐんとうもていでんするかなあ"
+
+[[case]]
+input = "沖縄と奄美の間に行くと予想"
+mode = "hiragana"
+expected = "おきなわとあまみのあいだにいくとよそう"
+
+[[case]]
+input = "娑婆て"
+mode = "hiragana"
+expected = "しゃばて"
+
+[[case]]
+input = "やっぱ娑婆はいいな"
+mode = "hiragana"
+expected = "やっぱしゃばはいいな"
+
+[[case]]
+input = "推敲?"
+mode = "hiragana"
+expected = "すいこう?"
+
+[[case]]
+input = "1日は推敲しすぎw"
+mode = "hiragana"
+expected = "いちにちはすいこうしすぎw"
+
+[[case]]
+input = "洛中か洛外かで違うし"
+mode = "hiragana"
+expected = "らくちゅうからくがいかでちがうし"
+
+[[case]]
+input = "上洛じゃ"
+mode = "hiragana"
+expected = "じょうらくじゃ"
+
+[[case]]
+input = "首都が洛陽だから"
+mode = "hiragana"
+expected = "しゅとがらくようだから"
+
+[[case]]
+input = "脛痛そう"
+mode = "hiragana"
+expected = "すねいたそう"
+
+[[case]]
+input = "ハッサンの脛かじり"
+mode = "hiragana"
+expected = "ハッサンのすねかじり"
+
+[[case]]
+input = "脛やられたか?"
+mode = "hiragana"
+expected = "すねやられたか?"
+
+[[case]]
+input = "形而上(けいじじょう)ね"
+mode = "hiragana"
+expected = "けいじじょう(けいじじょう)ね"
+
+[[case]]
+input = "形而上学とは難しいことを"
+mode = "hiragana"
+expected = "けいじじょうがくとはむずかしいことを"
+
+[[case]]
+input = "烙印"
+mode = "hiragana"
+expected = "らくいん"
+
+[[case]]
+input = "役立たずの烙印"
+mode = "hiragana"
+expected = "やくだたずのらくいん"
+
+[[case]]
+input = "夏にエアコンの効いた部屋で熱燗 もオイシイ"
+mode = "hiragana"
+expected = "なつにエアコンのきいたへやであつかん もオイシイ"
+
+[[case]]
+input = "お酒はぬるめの燗がいい"
+mode = "hiragana"
+expected = "おさけはぬるめのかんがいい"
+
+[[case]]
+input = "雉も鳴かずば撃たれまい"
+mode = "hiragana"
+expected = "きじもなかずばうたれまい"
+
+[[case]]
+input = "猿と雉ならわんちゃん"
+mode = "hiragana"
+expected = "さるときじならわんちゃん"
+
+[[case]]
+input = "青雉、赤犬、黄猿"
+mode = "hiragana"
+expected = "あおきじ、あかいぬ、きざる"
+
+[[case]]
+input = "紅蓮弍式楽しみ過ぎる"
+mode = "hiragana"
+expected = "ぐれんにしきたのしみすぎる"
+
+[[case]]
+input = "上弦の弍ですか?"
+mode = "hiragana"
+expected = "じょうげんのにですか?"
+
+[[case]]
+input = "禍福は糾える縄の如し"
+mode = "hiragana"
+expected = "かふくはあざなえるなわのごとし"
+
+[[case]]
+input = "糾弾の図すぎる"
+mode = "hiragana"
+expected = "きゅうだんのずすぎる"
+
+[[case]]
+input = "紛糾してて草"
+mode = "hiragana"
+expected = "ふんきゅうしててくさ"
+
+[[case]]
+input = "張遼!?"
+mode = "hiragana"
+expected = "ちょうりょう!?"
+
+[[case]]
+input = "遼来来"
+mode = "hiragana"
+expected = "りょうらいらい"
+
+[[case]]
+input = "石川遼ではないか"
+mode = "hiragana"
+expected = "いしかわりょうではないか"
+
+[[case]]
+input = "代表コーチ陣:中村俊輔、名波浩、前田遼一"
+mode = "hiragana"
+expected = "だいひょうコーチじん:なかむらしゅんすけ、なばこう、まえだりょういち"
+
+[[case]]
+input = "剪定もしないとだからねぇ"
+mode = "hiragana"
+expected = "せんていもしないとだからねぇ"
+
+[[case]]
+input = "マリン船長の剪定眼"
+mode = "hiragana"
+expected = "マリンせんちょうのせんていがん"
+
+[[case]]
+input = "久我山栞の死様手帖、おもろそーーー"
+mode = "hiragana"
+expected = "くがやましおりのしさまてちょう、おもろそーーー"
+
+[[case]]
+input = "青い栞"
+mode = "hiragana"
+expected = "あおいしおり"
+
+[[case]]
+input = "女版剣持だよな栞葉"
+mode = "hiragana"
+expected = "おんなばんけんもちだよなしおりは"
+
+[[case]]
+input = "あかどけて真ん中に橙いれよう"
+mode = "hiragana"
+expected = "あかどけてまんなかにだいだいいれよう"
+
