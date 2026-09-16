@@ -1,0 +1,60 @@
+[[case]]
+input = "下野紘?"
+mode = "hiragana"
+expected = "しものひろ?"
+
+[[case]]
+input = "下野紘か"
+mode = "hiragana"
+expected = "しものひろか"
+
+[[case]]
+input = "現代の元寇"
+mode = "hiragana"
+expected = "げんだいのげんこう"
+
+[[case]]
+input = "それ元寇じゃないの?"
+mode = "hiragana"
+expected = "それげんこうじゃないの?"
+
+[[case]]
+input = "元寇に似てる"
+mode = "hiragana"
+expected = "げんこうににてる"
+
+[[case]]
+input = "元寇"
+mode = "hiragana"
+expected = "げんこう"
+
+[[case]]
+input = "倭寇"
+mode = "hiragana"
+expected = "わこう"
+
+[[case]]
+input = "下野紘"
+mode = "hiragana"
+expected = "しものひろ"
+
+[[case]]
+input = "元気"
+mode = "hiragana"
+expected = "げんき"
+
+[[case]]
+input = "元々"
+mode = "hiragana"
+expected = "もともと"
+
+[[case]]
+input = "地元"
+mode = "hiragana"
+expected = "じもと"
+
+[[case]]
+input = "NHKKOROは斎藤紘基"
+mode = "hiragana"
+expected = "NHKKOROはさいとうこうき"
+
