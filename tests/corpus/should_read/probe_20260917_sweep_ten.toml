@@ -1,0 +1,250 @@
+[[case]]
+input = "1奌意識"
+mode = "hiragana"
+expected = "いってんいしき"
+
+[[case]]
+input = "1奌勝"
+mode = "hiragana"
+expected = "いってんしょう"
+
+[[case]]
+input = "得奌 青特"
+mode = "hiragana"
+expected = "とくてん あおとく"
+
+[[case]]
+input = "7裏 7奌 call game"
+mode = "hiragana"
+expected = "ななうら ななてん call game"
+
+[[case]]
+input = "3奌 勝利の可能"
+mode = "hiragana"
+expected = "さんてん しょうりのかのう"
+
+[[case]]
+input = "BUFF 突破奌"
+mode = "hiragana"
+expected = "バフ とっぱてん"
+
+[[case]]
+input = "緊張 突破奌"
+mode = "hiragana"
+expected = "きんちょう とっぱてん"
+
+[[case]]
+input = "追加奌"
+mode = "hiragana"
+expected = "ついかてん"
+
+[[case]]
+input = "先制奌 大きい"
+mode = "hiragana"
+expected = "せんせいてん おおきい"
+
+[[case]]
+input = "6奌"
+mode = "hiragana"
+expected = "ろくてん"
+
+[[case]]
+input = "1.2局 失奌 立ち上がり"
+mode = "hiragana"
+expected = "いちてんにきょく しってん たちあがり"
+
+[[case]]
+input = "甲子園で盜壘された2奌無くしたまたたび"
+mode = "hiragana"
+expected = "こうしえんでとうるいされたにてんなくしたまたたび"
+
+[[case]]
+input = "小俣や宮町付近の駅「使うから影響はなさそうだが"
+mode = "hiragana"
+expected = "おまたやきゅうまちふきんのえき「つかうからえいきょうはなさそうだが"
+
+[[case]]
+input = "神奈川だと免許更新を二俣川に行くって言う"
+mode = "hiragana"
+expected = "かながわだとめんきょこうしんをふたまたがわにいくっていう"
+
+[[case]]
+input = "広島カープの二俣選手かな"
+mode = "hiragana"
+expected = "ひろしまカープのふたまたせんしゅかな"
+
+[[case]]
+input = "水俣民なんですけど怖い"
+mode = "hiragana"
+expected = "みなまたみんなんですけどこわい"
+
+[[case]]
+input = "勝俣w"
+mode = "hiragana"
+expected = "かつまたw"
+
+[[case]]
+input = "木俣"
+mode = "hiragana"
+expected = "きまた"
+
+[[case]]
+input = "一灯照隅"
+mode = "hiragana"
+expected = "いっとうしょうぐう"
+
+[[case]]
+input = "一燈照隅"
+mode = "hiragana"
+expected = "いっとうしょうぐう"
+
+[[case]]
+input = "海賊の一味"
+mode = "hiragana"
+expected = "かいぞくのいちみ"
+
+[[case]]
+input = "一味唐辛子"
+mode = "hiragana"
+expected = "いちみとうがらし"
+
+[[case]]
+input = "一味違うな"
+mode = "hiragana"
+expected = "ひとあじちがうな"
+
+[[case]]
+input = "伊那尓栖!"
+mode = "hiragana"
+expected = "いなにす!"
+
+[[case]]
+input = "福圓美里さん"
+mode = "hiragana"
+expected = "ふくえんみさとさん"
+
+[[case]]
+input = "ウマウマ圓楽"
+mode = "hiragana"
+expected = "ウマウマえんらく"
+
+[[case]]
+input = "圓明流"
+mode = "hiragana"
+expected = "えんみょうりゅう"
+
+[[case]]
+input = "慶應義塾の清原君とか3年生で出れなかった"
+mode = "hiragana"
+expected = "けいおうぎじゅくのきよはらくんとかさんねんせいでしゅつれなかった"
+
+[[case]]
+input = "骨董品"
+mode = "hiragana"
+expected = "こっとうひん"
+
+[[case]]
+input = "共青団太子党上海閥全部倒した習近平は董卓だ"
+mode = "hiragana"
+expected = "きょうせいだんたいしとうしゃんはいばつぜんぶたおしたしゅうきんぺいはとうたくだ"
+
+[[case]]
+input = "箪笥の鍵ね"
+mode = "hiragana"
+expected = "たんすのかぎね"
+
+[[case]]
+input = "今のが鍵箪笥"
+mode = "hiragana"
+expected = "いまのがかぎたんす"
+
+[[case]]
+input = "食戟のソーマでみた"
+mode = "hiragana"
+expected = "しょくげきのソーマでみた"
+
+[[case]]
+input = "緑の剣戟好き"
+mode = "hiragana"
+expected = "みどりのけんげきすき"
+
+[[case]]
+input = "魔物の残滓"
+mode = "hiragana"
+expected = "まもののざんし"
+
+[[case]]
+input = "GHQの残滓 朝日新聞 NHK"
+mode = "hiragana"
+expected = "GHQのざんし あさひしんぶん エヌエイチケー"
+
+[[case]]
+input = "魑魅魍魎が跋扈するホロタウン"
+mode = "hiragana"
+expected = "ちみもうりょうがばっこするホロタウン"
+
+[[case]]
+input = "跳梁跋扈"
+mode = "hiragana"
+expected = "ちょうりょうばっこ"
+
+[[case]]
+input = "転売ヤーが跋扈してる"
+mode = "hiragana"
+expected = "てんばいヤーがばっこしてる"
+
+[[case]]
+input = "手の皺と皺を合わせて~しあわせ~☆"
+mode = "hiragana"
+expected = "てのしわとしわをあわせてしあわせ~☆"
+
+[[case]]
+input = "小皺が目立ち始めたマリン"
+mode = "hiragana"
+expected = "こじわがめだちはじめたマリン"
+
+[[case]]
+input = "目尻の皺は笑顔の年輪だよ"
+mode = "hiragana"
+expected = "めじりのしわはえがおのねんりんだよ"
+
+[[case]]
+input = "濾過するのか"
+mode = "hiragana"
+expected = "ろかするのか"
+
+[[case]]
+input = "ぬるま湯かけて目の洗いザルで濾す"
+mode = "hiragana"
+expected = "ぬるまゆかけてめのあらいザルでこす"
+
+[[case]]
+input = "JKに扮したやつw"
+mode = "hiragana"
+expected = "JKにふんしたやつw"
+
+[[case]]
+input = "マモーはウッチャンもネタで扮装したりしてたなあ"
+mode = "hiragana"
+expected = "マモーはウッチャンもネタでふんそうしたりしてたなあ"
+
+[[case]]
+input = "智恵子抄"
+mode = "hiragana"
+expected = "ちえこしょう"
+
+[[case]]
+input = "斯波"
+mode = "hiragana"
+expected = "しば"
+
+[[case]]
+input = "成人女性(歌姬)"
+mode = "hiragana"
+expected = "せいじんじょせい(うたひめ)"
+
+[[case]]
+input = "獸戦士w"
+mode = "hiragana"
+expected = "けものせんしw"
+
