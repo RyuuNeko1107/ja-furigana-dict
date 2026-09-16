@@ -1,0 +1,35 @@
+[[case]]
+input = "だいぶ猜疑心強いよ"
+mode = "hiragana"
+expected = "だいぶさいぎしんづよいよ"
+
+[[case]]
+input = "猜疑心強い"
+mode = "hiragana"
+expected = "さいぎしんづよい"
+
+[[case]]
+input = "猜疑心"
+mode = "hiragana"
+expected = "さいぎしん"
+
+[[case]]
+input = "猜疑心が強い"
+mode = "hiragana"
+expected = "さいぎしんがつよい"
+
+[[case]]
+input = "心強い"
+mode = "hiragana"
+expected = "こころづよい"
+
+[[case]]
+input = "すごく心強い"
+mode = "hiragana"
+expected = "すごくこころづよい"
+
+[[case]]
+input = "めっちゃ心強いわ"
+mode = "hiragana"
+expected = "めっちゃこころづよいわ"
+
