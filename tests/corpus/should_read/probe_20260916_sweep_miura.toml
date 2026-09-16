@@ -1,0 +1,76 @@
+# 全漢字スイープ 羽 / 浦 / 博 / 糖 / 牧 / 婦 / 長 / 走 (2026-09-16)
+
+[[case]]
+input = "ショート三浦か?"
+mode = "hiragana"
+expected = "ショートみうらか?"
+
+[[case]]
+input = "全国大会三浦だったの草"
+mode = "hiragana"
+expected = "ぜんこくたいかいみうらだったのくさ"
+
+[[case]]
+input = "尾張小牧ナンバー?"
+mode = "hiragana"
+expected = "おわりこまきナンバー?"
+
+[[case]]
+input = "もはや顔見知り牧野"
+mode = "hiragana"
+expected = "もはやかおみしりまきの"
+
+[[case]]
+input = "二塁手・牧秀悟選手か"
+mode = "hiragana"
+expected = "にるいしゅまきしゅうごせんしゅか"
+
+[[case]]
+input = "インセクター羽蛾ぁ!"
+mode = "hiragana"
+expected = "インセクターはがぁ!"
+
+[[case]]
+input = "片羽もぎ取られた"
+mode = "hiragana"
+expected = "かたはねもぎとられた"
+
+[[case]]
+input = "6枚羽のヒカセンにっ"
+mode = "hiragana"
+expected = "ろくまいばねのヒカセンにっ"
+
+[[case]]
+input = "包丁もう少し長ければなぁ"
+mode = "hiragana"
+expected = "ほうちょうもうすこしながければなぁ"
+
+[[case]]
+input = "クソザコ委員長すぎた"
+mode = "hiragana"
+expected = "クソザコいいんちょうすぎた"
+
+[[case]]
+input = "逆走っす"
+mode = "hiragana"
+expected = "ぎゃくそうっす"
+
+[[case]]
+input = "あ、爆走って言ったんか?笑"
+mode = "hiragana"
+expected = "あ、ばくそうっていったんか?わらい"
+
+[[case]]
+input = "博打ってほど弱くないぞ"
+mode = "hiragana"
+expected = "ばくちってほどよわくないぞ"
+
+[[case]]
+input = "子供の頃羽を壊して縛りプレイ"
+mode = "hiragana"
+expected = "こどものころはねをこわしてしばりプレイ"
+
+[[case]]
+input = "苫小牧は?"
+mode = "hiragana"
+expected = "とまこまいは?"
