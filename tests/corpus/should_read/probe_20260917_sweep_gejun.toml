@@ -1,0 +1,375 @@
+[[case]]
+input = "3月下旬やね"
+mode = "hiragana"
+expected = "さんがつげじゅんやね"
+
+[[case]]
+input = "7月下旬やね"
+mode = "hiragana"
+expected = "しちがつげじゅんやね"
+
+[[case]]
+input = "9月下旬か"
+mode = "hiragana"
+expected = "くがつげじゅんか"
+
+[[case]]
+input = "11月下旬ね"
+mode = "hiragana"
+expected = "じゅういちがつげじゅんね"
+
+[[case]]
+input = "高尾山は11月下旬なのね"
+mode = "hiragana"
+expected = "たかおさんはじゅういちがつげじゅんなのね"
+
+[[case]]
+input = "8月下旬だと聞いてたけど早くなったな"
+mode = "hiragana"
+expected = "はちがつげじゅんだときいてたけどはやくなったな"
+
+[[case]]
+input = "もう6月下旬だし"
+mode = "hiragana"
+expected = "もうろくがつげじゅんだし"
+
+[[case]]
+input = "ホロドリ今旬だからね!!"
+mode = "hiragana"
+expected = "ホロドリいましゅんだからね!!"
+
+[[case]]
+input = "バイオは今旬じゃないしなあ"
+mode = "hiragana"
+expected = "バイオはいましゅんじゃないしなあ"
+
+[[case]]
+input = "ゴエモン今旬"
+mode = "hiragana"
+expected = "ゴエモンいましゅん"
+
+[[case]]
+input = "今もある意味旬ですからね"
+mode = "hiragana"
+expected = "いまもあるいみしゅんですからね"
+
+[[case]]
+input = "一応旬ではある"
+mode = "hiragana"
+expected = "いちおうしゅんではある"
+
+[[case]]
+input = "弾道旬なのか"
+mode = "hiragana"
+expected = "だんどうしゅんなのか"
+
+[[case]]
+input = "デビューが今月中旬とか"
+mode = "hiragana"
+expected = "デビューがこんげつちゅうじゅんとか"
+
+[[case]]
+input = "7月中旬だと!?"
+mode = "hiragana"
+expected = "しちがつちゅうじゅんだと!?"
+
+[[case]]
+input = "10月中旬らしい"
+mode = "hiragana"
+expected = "じゅうがつちゅうじゅんらしい"
+
+[[case]]
+input = "薩摩の出ですか?"
+mode = "hiragana"
+expected = "さつまのでですか?"
+
+[[case]]
+input = "やはり護摩行か"
+mode = "hiragana"
+expected = "やはりごまぎょうか"
+
+[[case]]
+input = "護摩行すれば改善するか?"
+mode = "hiragana"
+expected = "ごまぎょうすればかいぜんするか?"
+
+[[case]]
+input = "屋根瓦になってる"
+mode = "hiragana"
+expected = "やねがわらになってる"
+
+[[case]]
+input = "屋根瓦に変化"
+mode = "hiragana"
+expected = "やねがわらにへんか"
+
+[[case]]
+input = "柱のシールと屋根瓦"
+mode = "hiragana"
+expected = "はしらのシールとやねがわら"
+
+[[case]]
+input = "ソーラー発電瓦があるらしいよ"
+mode = "hiragana"
+expected = "ソーラーはつでんがわらがあるらしいよ"
+
+[[case]]
+input = "屋根が瓦になってる"
+mode = "hiragana"
+expected = "やねがかわらになってる"
+
+[[case]]
+input = "瓦の屋根だったっけ?"
+mode = "hiragana"
+expected = "かわらのやねだったっけ?"
+
+[[case]]
+input = "小栗旬か"
+mode = "hiragana"
+expected = "おぐりじゅんか"
+
+[[case]]
+input = "旬だよね"
+mode = "hiragana"
+expected = "しゅんだよね"
+
+[[case]]
+input = "釘バットの釘思ったよりデカいなw"
+mode = "hiragana"
+expected = "くぎバットのくぎおもったよりデカいなw"
+
+[[case]]
+input = "釘宮理恵さんかな?"
+mode = "hiragana"
+expected = "くぎみやりえさんかな?"
+
+[[case]]
+input = "やっぱ紳士"
+mode = "hiragana"
+expected = "やっぱしんし"
+
+[[case]]
+input = "連邦サイドにいたもんね"
+mode = "hiragana"
+expected = "れんぽうサイドにいたもんね"
+
+[[case]]
+input = "東邦!"
+mode = "hiragana"
+expected = "とうほう!"
+
+[[case]]
+input = "おかゆんは邦画派なので"
+mode = "hiragana"
+expected = "おかゆんはほうがはなので"
+
+[[case]]
+input = "武田邦彦さん"
+mode = "hiragana"
+expected = "たけだくにひこさん"
+
+[[case]]
+input = "田中邦衛かな?"
+mode = "hiragana"
+expected = "たなかくにえかな?"
+
+[[case]]
+input = "山崎邦正かな?"
+mode = "hiragana"
+expected = "やまざきくにまさかな?"
+
+[[case]]
+input = "週刊みこみゅーす"
+mode = "hiragana"
+expected = "しゅうかんみこみゅーす"
+
+[[case]]
+input = "明日の朝刊一面だなww"
+mode = "hiragana"
+expected = "あしたのちょうかんいちめんだなww"
+
+[[case]]
+input = "夕刊フジおるな"
+mode = "hiragana"
+expected = "ゆうかんフジおるな"
+
+[[case]]
+input = "もう廃刊じゃないっけ"
+mode = "hiragana"
+expected = "もうはいかんじゃないっけ"
+
+[[case]]
+input = "栃木経由して岐阜に向かってます"
+mode = "hiragana"
+expected = "とちぎけいゆしてぎふにむかってます"
+
+[[case]]
+input = "前評判を覆すのが一番気持ち良いですからね"
+mode = "hiragana"
+expected = "ぜんひょうばんをくつがえすのがいちばんきもちよいですからね"
+
+[[case]]
+input = "ボート転覆はスルーで大昔の話"
+mode = "hiragana"
+expected = "ボートてんぷくはスルーでおおむかしのはなし"
+
+[[case]]
+input = "覆いかぶさってるのではw?"
+mode = "hiragana"
+expected = "おおいかぶさってるのではw?"
+
+[[case]]
+input = "税務署です"
+mode = "hiragana"
+expected = "ぜいむしょです"
+
+[[case]]
+input = "あの警察署かぁ"
+mode = "hiragana"
+expected = "あのけいさつしょかぁ"
+
+[[case]]
+input = "部署と業務によるかな"
+mode = "hiragana"
+expected = "ぶしょとぎょうむによるかな"
+
+[[case]]
+input = "オンライン署名を計画とのこと"
+mode = "hiragana"
+expected = "オンラインしょめいをけいかくとのこと"
+
+[[case]]
+input = "鬼瓦権蔵"
+mode = "hiragana"
+expected = "おにがわらごんぞう"
+
+[[case]]
+input = "瓦礫に放置されてたエーテル..."
+mode = "hiragana"
+expected = "がれきにほうちされてたエーテル..."
+
+[[case]]
+input = "一瞬で瓦解"
+mode = "hiragana"
+expected = "いっしゅんでがかい"
+
+[[case]]
+input = "煉瓦"
+mode = "hiragana"
+expected = "れんが"
+
+[[case]]
+input = "瓦そば。"
+mode = "hiragana"
+expected = "かわらそば。"
+
+[[case]]
+input = "摩耗とか気にするゲームなのかなこれ"
+mode = "hiragana"
+expected = "まもうとかきにするゲームなのかなこれ"
+
+[[case]]
+input = "髪との摩擦も気になりますわ"
+mode = "hiragana"
+expected = "かみとのまさつもきになりますわ"
+
+[[case]]
+input = "多摩湖と西武ドームかな"
+mode = "hiragana"
+expected = "たまことせいぶドームかな"
+
+[[case]]
+input = "奥多摩かな?"
+mode = "hiragana"
+expected = "おくたまかな?"
+
+[[case]]
+input = "薩摩芋!?"
+mode = "hiragana"
+expected = "さつまいも!?"
+
+[[case]]
+input = "三重の志摩スペイン村、行きたい"
+mode = "hiragana"
+expected = "みえのしますぺいんむら、いきたい"
+
+[[case]]
+input = "大黒摩季やないか"
+mode = "hiragana"
+expected = "おおくろまきやないか"
+
+[[case]]
+input = "摩訶不思議アドベンチャー"
+mode = "hiragana"
+expected = "まかふしぎアドベンチャー"
+
+[[case]]
+input = "梶原"
+mode = "hiragana"
+expected = "かじわら"
+
+[[case]]
+input = "新潟"
+mode = "hiragana"
+expected = "にいがた"
+
+[[case]]
+input = "克服"
+mode = "hiragana"
+expected = "こくふく"
+
+[[case]]
+input = "失踪"
+mode = "hiragana"
+expected = "しっそう"
+
+[[case]]
+input = "謙虚"
+mode = "hiragana"
+expected = "けんきょ"
+
+[[case]]
+input = "乃木坂"
+mode = "hiragana"
+expected = "のぎざか"
+
+[[case]]
+input = "傑作"
+mode = "hiragana"
+expected = "けっさく"
+
+[[case]]
+input = "宴会"
+mode = "hiragana"
+expected = "えんかい"
+
+[[case]]
+input = "窮地"
+mode = "hiragana"
+expected = "きゅうち"
+
+[[case]]
+input = "表彰"
+mode = "hiragana"
+expected = "ひょうしょう"
+
+[[case]]
+input = "同盟"
+mode = "hiragana"
+expected = "どうめい"
+
+[[case]]
+input = "墜落"
+mode = "hiragana"
+expected = "ついらく"
+
+[[case]]
+input = "淡々と"
+mode = "hiragana"
+expected = "たんたんと"
+
+[[case]]
+input = "葬式"
+mode = "hiragana"
+expected = "そうしき"
+
