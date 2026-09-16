@@ -1,0 +1,76 @@
+# 全漢字スイープ 貯 / 建 / 眼 / 犯 / 悔 / 吉 / 底 / 薬 (2026-09-16)
+
+[[case]]
+input = "おは吉影"
+mode = "hiragana"
+expected = "おはよしかげ"
+
+[[case]]
+input = "中吉ならいいか"
+mode = "hiragana"
+expected = "ちゅうきちならいいか"
+
+[[case]]
+input = "吉幾三"
+mode = "hiragana"
+expected = "よしいくぞう"
+
+[[case]]
+input = "早速谷底バッバイ"
+mode = "hiragana"
+expected = "さっそくたにぞこバッバイ"
+
+[[case]]
+input = "船底は下じゃない?"
+mode = "hiragana"
+expected = "ふなぞこはしたじゃない?"
+
+[[case]]
+input = "横眼にみえてる"
+mode = "hiragana"
+expected = "よこめにみえてる"
+
+[[case]]
+input = "魚眼レンズ"
+mode = "hiragana"
+expected = "ぎょがんれんず"
+
+[[case]]
+input = "みんな近眼"
+mode = "hiragana"
+expected = "みんなきんがん"
+
+[[case]]
+input = "壁建てない?"
+mode = "hiragana"
+expected = "かべたてない?"
+
+[[case]]
+input = "スイカで城建てっぞ"
+mode = "hiragana"
+expected = "スイカでしろたてっぞ"
+
+[[case]]
+input = "原発建てまくろう"
+mode = "hiragana"
+expected = "げんぱつたてまくろう"
+
+[[case]]
+input = "そこに目印建てなw"
+mode = "hiragana"
+expected = "そこにめじるしたてなw"
+
+[[case]]
+input = "枠建て直しがいいかーも"
+mode = "hiragana"
+expected = "わくたてなおしがいいかーも"
+
+[[case]]
+input = "3階建て"
+mode = "hiragana"
+expected = "さんがいだて"
+
+[[case]]
+input = "吉良吉影のスタンド"
+mode = "hiragana"
+expected = "きらよしかげのスタンド"
