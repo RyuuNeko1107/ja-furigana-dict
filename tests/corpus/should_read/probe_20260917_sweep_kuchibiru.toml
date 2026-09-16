@@ -1,0 +1,520 @@
+[[case]]
+input = "唇いいね"
+mode = "hiragana"
+expected = "くちびるいいね"
+
+[[case]]
+input = "唇紫呼びw"
+mode = "hiragana"
+expected = "くちびるむらさきよびw"
+
+[[case]]
+input = "唇紫のやつw"
+mode = "hiragana"
+expected = "くちびるむらさきのやつw"
+
+[[case]]
+input = "よく見ると目が唇なんだよね"
+mode = "hiragana"
+expected = "よくみるとめがくちびるなんだよね"
+
+[[case]]
+input = "唇ちょうだい!?"
+mode = "hiragana"
+expected = "くちびるちょうだい!?"
+
+[[case]]
+input = "唇だったかw"
+mode = "hiragana"
+expected = "くちびるだったかw"
+
+[[case]]
+input = "唇かw"
+mode = "hiragana"
+expected = "くちびるかw"
+
+[[case]]
+input = "ㇺで唇噛む感じ?"
+mode = "hiragana"
+expected = "ㇺでくちびるかむかんじ?"
+
+[[case]]
+input = "唇ぶるんぶるん"
+mode = "hiragana"
+expected = "くちびるぶるんぶるん"
+
+[[case]]
+input = "唇ぷるぷる"
+mode = "hiragana"
+expected = "くちびるぷるぷる"
+
+[[case]]
+input = "メッシの唇よw"
+mode = "hiragana"
+expected = "メッシのくちびるよw"
+
+[[case]]
+input = "魅力的な唇"
+mode = "hiragana"
+expected = "みりょくてきなくちびる"
+
+[[case]]
+input = "綺麗な唇"
+mode = "hiragana"
+expected = "きれいなくちびる"
+
+[[case]]
+input = "薔薇と唇?"
+mode = "hiragana"
+expected = "ばらとくちびる?"
+
+[[case]]
+input = "唇じゃない?"
+mode = "hiragana"
+expected = "くちびるじゃない?"
+
+[[case]]
+input = "唇だろw"
+mode = "hiragana"
+expected = "くちびるだろw"
+
+[[case]]
+input = "唇かわい"
+mode = "hiragana"
+expected = "くちびるかわい"
+
+[[case]]
+input = "唇かんじゃったか"
+mode = "hiragana"
+expected = "くちびるかんじゃったか"
+
+[[case]]
+input = "唇むらさきさんw"
+mode = "hiragana"
+expected = "くちびるむらさきさんw"
+
+[[case]]
+input = "唇から血でてません??www"
+mode = "hiragana"
+expected = "くちびるからちでてません??www"
+
+[[case]]
+input = "泥水で唇洗おう"
+mode = "hiragana"
+expected = "どろみずでくちびるあらおう"
+
+[[case]]
+input = "曽根が唇かみちぎってる"
+mode = "hiragana"
+expected = "そねがくちびるかみちぎってる"
+
+[[case]]
+input = "キャッチャーのタラコ唇気になる"
+mode = "hiragana"
+expected = "キャッチャーのタラコくちびるきになる"
+
+[[case]]
+input = "唇を捧げる"
+mode = "hiragana"
+expected = "くちびるをささげる"
+
+[[case]]
+input = "唇が紫になってるから"
+mode = "hiragana"
+expected = "くちびるがむらさきになってるから"
+
+[[case]]
+input = "下唇?"
+mode = "hiragana"
+expected = "したくちびる?"
+
+[[case]]
+input = "上唇が少しただれる"
+mode = "hiragana"
+expected = "うわくちびるがすこしただれる"
+
+[[case]]
+input = "この赤ちゃん口唇裂"
+mode = "hiragana"
+expected = "このあかちゃんこうしんれつ"
+
+[[case]]
+input = "読唇術だ"
+mode = "hiragana"
+expected = "どくしんじゅつだ"
+
+[[case]]
+input = "貞子VS伽耶子"
+mode = "hiragana"
+expected = "さだこブイエスかやこ"
+
+[[case]]
+input = "貞子vs伽倻子とかも"
+mode = "hiragana"
+expected = "さだこブイエスかやことかも"
+
+[[case]]
+input = "伽耶子いそう"
+mode = "hiragana"
+expected = "かやこいそう"
+
+[[case]]
+input = "伽耶子さん"
+mode = "hiragana"
+expected = "かやこさん"
+
+[[case]]
+input = "呪怨は伽耶子強いからな"
+mode = "hiragana"
+expected = "じゅおんはかやこつよいからな"
+
+[[case]]
+input = "伽倻子は災害"
+mode = "hiragana"
+expected = "かやこはさいがい"
+
+[[case]]
+input = "兎田 伽倻子"
+mode = "hiragana"
+expected = "うさだ かやこ"
+
+[[case]]
+input = "貞子VS伽椰子"
+mode = "hiragana"
+expected = "さだこブイエスかやこ"
+
+[[case]]
+input = "井上温大とか"
+mode = "hiragana"
+expected = "いのうえおんたとか"
+
+[[case]]
+input = "井上温大は強いですね"
+mode = "hiragana"
+expected = "いのうえおんたはつよいですね"
+
+[[case]]
+input = "井上温大球走ってるな"
+mode = "hiragana"
+expected = "いのうえおんたきゅうはしってるな"
+
+[[case]]
+input = "みこち俺逞ましいよ"
+mode = "hiragana"
+expected = "みこちおれたくましいよ"
+
+[[case]]
+input = "逞しいなwww"
+mode = "hiragana"
+expected = "たくましいなwww"
+
+[[case]]
+input = "艇長から船長か"
+mode = "hiragana"
+expected = "ていちょうからせんちょうか"
+
+[[case]]
+input = "シド艇長?!"
+mode = "hiragana"
+expected = "シドていちょう?!"
+
+[[case]]
+input = "オレンジトラックの荷台薪に木材!"
+mode = "hiragana"
+expected = "オレンジトラックのにだいまきにもくざい!"
+
+[[case]]
+input = "黒薪衣"
+mode = "hiragana"
+expected = "くろまきい"
+
+[[case]]
+input = "薪割りは???"
+mode = "hiragana"
+expected = "まきわりは???"
+
+[[case]]
+input = "薪もっとくべて"
+mode = "hiragana"
+expected = "たきぎもっとくべて"
+
+[[case]]
+input = "臥薪嘗胆"
+mode = "hiragana"
+expected = "がしんしょうたん"
+
+[[case]]
+input = "棘踏んで"
+mode = "hiragana"
+expected = "とげふんで"
+
+[[case]]
+input = "慕われてるなw"
+mode = "hiragana"
+expected = "したわれてるなw"
+
+[[case]]
+input = "雨の慕情"
+mode = "hiragana"
+expected = "あめのぼじょう"
+
+[[case]]
+input = "横恋慕"
+mode = "hiragana"
+expected = "よこれんぼ"
+
+[[case]]
+input = "淀川氾濫しそうだよ"
+mode = "hiragana"
+expected = "よどがわはんらんしそうだよ"
+
+[[case]]
+input = "言い淀んだw"
+mode = "hiragana"
+expected = "いいよどんだw"
+
+[[case]]
+input = "諭吉"
+mode = "hiragana"
+expected = "ゆきち"
+
+[[case]]
+input = "教諭"
+mode = "hiragana"
+expected = "きょうゆ"
+
+[[case]]
+input = "諭してるww"
+mode = "hiragana"
+expected = "さとしてるww"
+
+[[case]]
+input = "湘南?"
+mode = "hiragana"
+expected = "しょうなん?"
+
+[[case]]
+input = "湘北"
+mode = "hiragana"
+expected = "しょうほく"
+
+[[case]]
+input = "鰻重!、"
+mode = "hiragana"
+expected = "うなじゅう!、"
+
+[[case]]
+input = "鰻登りやから"
+mode = "hiragana"
+expected = "うなぎのぼりやから"
+
+[[case]]
+input = "八目鰻"
+mode = "hiragana"
+expected = "やつめうなぎ"
+
+[[case]]
+input = "伽羅とか?"
+mode = "hiragana"
+expected = "きゃらとか?"
+
+[[case]]
+input = "急に御伽噺"
+mode = "hiragana"
+expected = "きゅうにおとぎばなし"
+
+[[case]]
+input = "伽藍堂"
+mode = "hiragana"
+expected = "がらんどう"
+
+[[case]]
+input = "修繕付きw"
+mode = "hiragana"
+expected = "しゅうぜんつきw"
+
+[[case]]
+input = "取り繕ってる"
+mode = "hiragana"
+expected = "とりつくろってる"
+
+[[case]]
+input = "見繕って"
+mode = "hiragana"
+expected = "みつくろって"
+
+[[case]]
+input = "毛繕いしてない"
+mode = "hiragana"
+expected = "けつくろいしてない"
+
+[[case]]
+input = "汽車"
+mode = "hiragana"
+expected = "きしゃ"
+
+[[case]]
+input = "汽水域"
+mode = "hiragana"
+expected = "きすいいき"
+
+[[case]]
+input = "汽笛"
+mode = "hiragana"
+expected = "きてき"
+
+[[case]]
+input = "勲章が増えちまったな"
+mode = "hiragana"
+expected = "くんしょうがふえちまったな"
+
+[[case]]
+input = "武勲を上げる"
+mode = "hiragana"
+expected = "ぶくんをあげる"
+
+[[case]]
+input = "殊勲賞"
+mode = "hiragana"
+expected = "しゅくんしょう"
+
+[[case]]
+input = "張本勲"
+mode = "hiragana"
+expected = "ちょうほんくん"
+
+[[case]]
+input = "襟足切った?"
+mode = "hiragana"
+expected = "えりあしきった?"
+
+[[case]]
+input = "開襟シャツ"
+mode = "hiragana"
+expected = "かいきんシャツ"
+
+[[case]]
+input = "襟裳岬"
+mode = "hiragana"
+expected = "えりもみさき"
+
+[[case]]
+input = "褐色肌最高すぎる"
+mode = "hiragana"
+expected = "かっしょくはださいこうすぎる"
+
+[[case]]
+input = "眷属ぅ!?"
+mode = "hiragana"
+expected = "けんぞくぅ!?"
+
+[[case]]
+input = "不謹慎で草"
+mode = "hiragana"
+expected = "ふきんしんでくさ"
+
+[[case]]
+input = "謹製"
+mode = "hiragana"
+expected = "きんせい"
+
+[[case]]
+input = "謹んでお悔やみ申し上げます。"
+mode = "hiragana"
+expected = "つつしんでおくやみもうしあげます。"
+
+[[case]]
+input = "髙市が暴走する"
+mode = "hiragana"
+expected = "たかいちがぼうそうする"
+
+[[case]]
+input = "髙橋光成"
+mode = "hiragana"
+expected = "たかはしみつなり"
+
+[[case]]
+input = "日髙のり子さん"
+mode = "hiragana"
+expected = "ひだかのりこさん"
+
+[[case]]
+input = "一攫千金"
+mode = "hiragana"
+expected = "いっかくせんきん"
+
+[[case]]
+input = "人攫い"
+mode = "hiragana"
+expected = "ひとさらい"
+
+[[case]]
+input = "掻っ攫っていくか"
+mode = "hiragana"
+expected = "かっさらっていくか"
+
+[[case]]
+input = "飛空艇欲しいね"
+mode = "hiragana"
+expected = "ひくうていほしいね"
+
+[[case]]
+input = "潜水艇?"
+mode = "hiragana"
+expected = "せんすいてい?"
+
+[[case]]
+input = "競艇"
+mode = "hiragana"
+expected = "きょうてい"
+
+[[case]]
+input = "疼いてきたな"
+mode = "hiragana"
+expected = "うずいてきたな"
+
+[[case]]
+input = "晩酌"
+mode = "hiragana"
+expected = "ばんしゃく"
+
+[[case]]
+input = "情状酌量"
+mode = "hiragana"
+expected = "じょうじょうしゃくりょう"
+
+[[case]]
+input = "お酌文化がいやw"
+mode = "hiragana"
+expected = "おしゃくぶんかがいやw"
+
+[[case]]
+input = "酒を酌み交わせば"
+mode = "hiragana"
+expected = "さけをくみかわせば"
+
+[[case]]
+input = "鬱陶しいなぁww"
+mode = "hiragana"
+expected = "うっとうしいなぁww"
+
+[[case]]
+input = "陶芸家"
+mode = "hiragana"
+expected = "とうげいか"
+
+[[case]]
+input = "薫陶を受けています"
+mode = "hiragana"
+expected = "くんとうをうけています"
+
+[[case]]
+input = "鮎の塩焼き"
+mode = "hiragana"
+expected = "あゆのしおやき"
+
+[[case]]
+input = "置鮎さん"
+mode = "hiragana"
+expected = "おきあゆさん"
+

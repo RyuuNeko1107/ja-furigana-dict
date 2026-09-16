@@ -266,7 +266,7 @@ expected = "きゅうきょいれるかもしれないw"
 [[case]]
 input = "貞子VS伽耶子"
 mode = "hiragana"
-expected = "さだこブイエスかやし"
+expected = "さだこブイエスかやこ"
 
 [[case]]
 input = "神楽耶姫"
