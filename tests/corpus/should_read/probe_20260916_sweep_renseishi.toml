@@ -1,0 +1,125 @@
+[[case]]
+input = "国土練成しよう"
+mode = "hiragana"
+expected = "こくどれんせいしよう"
+
+[[case]]
+input = "人体練成しよう"
+mode = "hiragana"
+expected = "じんたいれんせいしよう"
+
+[[case]]
+input = "国土練成陣つくろう"
+mode = "hiragana"
+expected = "こくどれんせいじんつくろう"
+
+[[case]]
+input = "手練れの話し方"
+mode = "hiragana"
+expected = "てだれのはなしかた"
+
+[[case]]
+input = "手練れやなさすが"
+mode = "hiragana"
+expected = "てだれやなさすが"
+
+[[case]]
+input = "全員初代のシャア以上の手練れという怖さ"
+mode = "hiragana"
+expected = "ぜんいんしょだいのシャアいじょうのてだれというこわさ"
+
+[[case]]
+input = "破壊神現る"
+mode = "hiragana"
+expected = "はかいしんあらわる"
+
+[[case]]
+input = "主音量かなるほどね"
+mode = "hiragana"
+expected = "しゅおんりょうかなるほどね"
+
+[[case]]
+input = "これなら側転も安心"
+mode = "hiragana"
+expected = "これならそくてんもあんしん"
+
+[[case]]
+input = "金箱が一番でかい"
+mode = "hiragana"
+expected = "きんばこがいちばんでかい"
+
+[[case]]
+input = "金箱だあ"
+mode = "hiragana"
+expected = "きんばこだあ"
+
+[[case]]
+input = "広宣流布総体革命"
+mode = "hiragana"
+expected = "こうせんるふそうたいかくめい"
+
+[[case]]
+input = "こういうレースは二着三着の穴目狙いがいい"
+mode = "hiragana"
+expected = "こういうレースはにちゃくさんちゃくのあなめねらいがいい"
+
+[[case]]
+input = "外れ方が豪快"
+mode = "hiragana"
+expected = "はずれかたがごうかい"
+
+[[case]]
+input = "止まり方が豪快すぎる"
+mode = "hiragana"
+expected = "とまりかたがごうかいすぎる"
+
+[[case]]
+input = "基本お金の使い方豪快"
+mode = "hiragana"
+expected = "きほんおかねのつかいかたごうかい"
+
+[[case]]
+input = "秋名山や?箱根の七曲りも有るよ"
+mode = "hiragana"
+expected = "あきなさんや?はこねのななまがりもあるよ"
+
+[[case]]
+input = "ほな他下げるか"
+mode = "hiragana"
+expected = "ほなほかさげるか"
+
+[[case]]
+input = "だから他下げろって言われてんだべ?"
+mode = "hiragana"
+expected = "だからほかさげろっていわれてんだべ?"
+
+[[case]]
+input = "手動で他下げなきゃ"
+mode = "hiragana"
+expected = "しゅどうでほかさげなきゃ"
+
+[[case]]
+input = "他さげないと"
+mode = "hiragana"
+expected = "ほかさげないと"
+
+[[case]]
+input = "みかん箱で拾われたんじゃなかったのか"
+mode = "hiragana"
+expected = "みかんばこでひろわれたんじゃなかったのか"
+
+[[case]]
+input = "城之内周回でレッドアイズを狙うしかない"
+mode = "hiragana"
+expected = "じょうのうちしゅうかいでレッドアイズをねらうしかない"
+
+[[case]]
+input = "一階左の壁裏を見逃し勝ち"
+mode = "hiragana"
+expected = "いっかいひだりのかべうらをみのがしがち"
+
+[[case]]
+input = "まぁ枚数少ないし"
+mode = "hiragana"
+expected = "まぁまいすうすくないし"
+
