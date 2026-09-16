@@ -1,0 +1,200 @@
+[[case]]
+input = "階段堀りでいいのでは"
+mode = "hiragana"
+expected = "かいだんほりでいいのでは"
+
+[[case]]
+input = "男の直下堀り好き"
+mode = "hiragana"
+expected = "おとこのちょっかほりすき"
+
+[[case]]
+input = "男の直上堀り"
+mode = "hiragana"
+expected = "おとこのちょくじょうほり"
+
+[[case]]
+input = "穴堀りもいいねぇ"
+mode = "hiragana"
+expected = "あなほりもいいねぇ"
+
+[[case]]
+input = "壁堀り!"
+mode = "hiragana"
+expected = "かべほり!"
+
+[[case]]
+input = "墓堀り屋じゃないか?"
+mode = "hiragana"
+expected = "はかほりやじゃないか?"
+
+[[case]]
+input = "砂堀りバイト頼むとか"
+mode = "hiragana"
+expected = "すなほりバイトたのむとか"
+
+[[case]]
+input = "これは堀ったな"
+mode = "hiragana"
+expected = "これはほったな"
+
+[[case]]
+input = "洗剤のCM出草"
+mode = "hiragana"
+expected = "せんざいノシーエムしゅっそう"
+
+[[case]]
+input = "漂白剤のCMかな?"
+mode = "hiragana"
+expected = "ひょうはくざいノシーエムかな?"
+
+[[case]]
+input = "柔軟剤のCM始まったんだけど"
+mode = "hiragana"
+expected = "じゅうなんざいノシーエムはじまったんだけど"
+
+[[case]]
+input = "冨安健洋やろなぁ"
+mode = "hiragana"
+expected = "とみやすたけひろやろなぁ"
+
+[[case]]
+input = "伊藤洋輝だけが気になるなぁ"
+mode = "hiragana"
+expected = "いとうひろきだけがきになるなぁ"
+
+[[case]]
+input = "大城卓三とリチャード!!!"
+mode = "hiragana"
+expected = "おおしろたくみとリチャード!!!"
+
+[[case]]
+input = "田中卓志は絶対だな"
+mode = "hiragana"
+expected = "たなかたくしはぜったいだな"
+
+[[case]]
+input = "月牙天衝か?"
+mode = "hiragana"
+expected = "げつがてんしょうか?"
+
+[[case]]
+input = "萌袖"
+mode = "hiragana"
+expected = "もえそで"
+
+[[case]]
+input = "左袖千切れてるww"
+mode = "hiragana"
+expected = "ひだりそでちぎれてるww"
+
+[[case]]
+input = "映画で菓子袋って持ってたっけ?"
+mode = "hiragana"
+expected = "えいがでかしぶくろってもってたっけ?"
+
+[[case]]
+input = "倭国幕府を創ろうと"
+mode = "hiragana"
+expected = "わこくばくふをつくろうと"
+
+[[case]]
+input = "村田兆さんと山本浩二さんが熱いのかな"
+mode = "hiragana"
+expected = "むらたちょうじさんとやまもとこうじさんがあついのかな"
+
+[[case]]
+input = "巨人ドラ1だった堀田"
+mode = "hiragana"
+expected = "きょじんドラいちだったほった"
+
+[[case]]
+input = "深堀りがすごいね"
+mode = "hiragana"
+expected = "ふかぼりがすごいね"
+
+[[case]]
+input = "深堀されていいよね"
+mode = "hiragana"
+expected = "ふかほりされていいよね"
+
+[[case]]
+input = "外堀が埋められて"
+mode = "hiragana"
+expected = "そとぼりがうめられて"
+
+[[case]]
+input = "道頓堀のメッシ笑"
+mode = "hiragana"
+expected = "どうとんぼりのメッシわらい"
+
+[[case]]
+input = "堀井雄二"
+mode = "hiragana"
+expected = "ほりいゆうじ"
+
+[[case]]
+input = "恥ずかしい投手堀岡!"
+mode = "hiragana"
+expected = "はずかしいとうしゅほりおか!"
+
+[[case]]
+input = "漢の直下堀!"
+mode = "hiragana"
+expected = "かんのちょっかほり!"
+
+[[case]]
+input = "太平洋"
+mode = "hiragana"
+expected = "たいへいよう"
+
+[[case]]
+input = "卓球神ゲーすぎて"
+mode = "hiragana"
+expected = "たっきゅうしんゲーすぎて"
+
+[[case]]
+input = "電卓使おう"
+mode = "hiragana"
+expected = "でんたくつかおう"
+
+[[case]]
+input = "兆候ってなんなんだろう"
+mode = "hiragana"
+expected = "ちょうこうってなんなんだろう"
+
+[[case]]
+input = "天地創造"
+mode = "hiragana"
+expected = "てんちそうぞう"
+
+[[case]]
+input = "菓子折り持ってくか"
+mode = "hiragana"
+expected = "かしおりもってくか"
+
+[[case]]
+input = "月牙天衝!"
+mode = "hiragana"
+expected = "げつがてんしょう!"
+
+[[case]]
+input = "萌え袖メガネ"
+mode = "hiragana"
+expected = "もえそでメガネ"
+
+[[case]]
+input = "片袖千切れたかw"
+mode = "hiragana"
+expected = "かたそでちぎれたかw"
+
+[[case]]
+input = "スイカ堀1分10万円以上だから"
+mode = "hiragana"
+expected = "スイカほりいっぷんじゅうまんえんいじょうだから"
+
+[[case]]
+input = "スイカ刈り"
+mode = "hiragana"
+expected = "スイカがり"
+
