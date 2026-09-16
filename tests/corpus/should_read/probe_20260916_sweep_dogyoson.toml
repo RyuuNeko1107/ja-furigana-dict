@@ -1,0 +1,170 @@
+[[case]]
+input = "土行孫が出てきた"
+mode = "hiragana"
+expected = "どぎょうそんがでてきた"
+
+[[case]]
+input = "土行孫つよい"
+mode = "hiragana"
+expected = "どぎょうそんつよい"
+
+[[case]]
+input = "浜崎あゆみ"
+mode = "hiragana"
+expected = "はまさきあゆみ"
+
+[[case]]
+input = "浜崎あゆみの曲"
+mode = "hiragana"
+expected = "はまさきあゆみのきょく"
+
+[[case]]
+input = "撃龍槍つかえ"
+mode = "hiragana"
+expected = "げきりゅうそうつかえ"
+
+[[case]]
+input = "撃龍槍いくぞ"
+mode = "hiragana"
+expected = "げきりゅうそういくぞ"
+
+[[case]]
+input = "天翔ける龍の閃"
+mode = "hiragana"
+expected = "あまがけるりゅうのせん"
+
+[[case]]
+input = "天翔ける"
+mode = "hiragana"
+expected = "あまがける"
+
+[[case]]
+input = "神龍を呼ぶぞ"
+mode = "hiragana"
+expected = "しんりゅうをよぶぞ"
+
+[[case]]
+input = "神龍だ"
+mode = "hiragana"
+expected = "しんりゅうだ"
+
+[[case]]
+input = "翼神龍つよい"
+mode = "hiragana"
+expected = "つばさしんりゅうつよい"
+
+[[case]]
+input = "青眼の白龍"
+mode = "hiragana"
+expected = "せいがんのはくりゅう"
+
+[[case]]
+input = "白龍きた"
+mode = "hiragana"
+expected = "はくりゅうきた"
+
+[[case]]
+input = "黒炎龍がでた"
+mode = "hiragana"
+expected = "こくえんりゅうがでた"
+
+[[case]]
+input = "幻龍斎"
+mode = "hiragana"
+expected = "げんりゅうさい"
+
+[[case]]
+input = "弓親かっこいい"
+mode = "hiragana"
+expected = "ゆみちかかっこいい"
+
+[[case]]
+input = "ランキング載れるかな"
+mode = "hiragana"
+expected = "ランキングのれるかな"
+
+[[case]]
+input = "ランキングに載れる"
+mode = "hiragana"
+expected = "ランキングにのれる"
+
+[[case]]
+input = "ランキング載れない"
+mode = "hiragana"
+expected = "ランキングのれない"
+
+[[case]]
+input = "ランキング載れた"
+mode = "hiragana"
+expected = "ランキングのれた"
+
+[[case]]
+input = "車載せられるかな"
+mode = "hiragana"
+expected = "くるまのせられるかな"
+
+[[case]]
+input = "探窟家か?"
+mode = "hiragana"
+expected = "たんくつかか?"
+
+[[case]]
+input = "艦載機が大分戦闘機っぽくなってる"
+mode = "hiragana"
+expected = "かんさいきがだいぶせんとうきっぽくなってる"
+
+[[case]]
+input = "大分戦闘機っぽい"
+mode = "hiragana"
+expected = "だいぶせんとうきっぽい"
+
+[[case]]
+input = "ぬらりひょんの孫"
+mode = "hiragana"
+expected = "ぬらりひょんのまご"
+
+[[case]]
+input = "関孫六"
+mode = "hiragana"
+expected = "せきまごろく"
+
+[[case]]
+input = "我孫子"
+mode = "hiragana"
+expected = "あびこ"
+
+[[case]]
+input = "車載カメラ"
+mode = "hiragana"
+expected = "しゃさいカメラ"
+
+[[case]]
+input = "車載センサー"
+mode = "hiragana"
+expected = "しゃさいセンサー"
+
+[[case]]
+input = "雑誌に載せる"
+mode = "hiragana"
+expected = "ざっしにのせる"
+
+[[case]]
+input = "記事が載った"
+mode = "hiragana"
+expected = "きじがのった"
+
+[[case]]
+input = "大分県"
+mode = "hiragana"
+expected = "おおいたけん"
+
+[[case]]
+input = "神龍拳"
+mode = "hiragana"
+expected = "しんりゅうけん"
+
+[[case]]
+input = "白龍伝説"
+mode = "hiragana"
+expected = "はくりゅうでんせつ"
+
