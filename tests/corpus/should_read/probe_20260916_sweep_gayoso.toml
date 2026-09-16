@@ -1,0 +1,170 @@
+[[case]]
+input = "厨二病拗らせていけw"
+mode = "hiragana"
+expected = "ちゅうにびょうこじらせていけw"
+
+[[case]]
+input = "シスコン拗らせてるからな"
+mode = "hiragana"
+expected = "シスコンこじらせてるからな"
+
+[[case]]
+input = "だいぶ拗らしてるww"
+mode = "hiragana"
+expected = "だいぶこじらしてるww"
+
+[[case]]
+input = "どんだけオートで捉まらないかにかかってる"
+mode = "hiragana"
+expected = "どんだけオートでつかまらないかにかかってる"
+
+[[case]]
+input = "鳥はうまく捉まえるもんな"
+mode = "hiragana"
+expected = "とりはうまくつかまえるもんな"
+
+[[case]]
+input = "言語の壁に捉われるなってことやね"
+mode = "hiragana"
+expected = "げんごのかべにとらわれるなってことやね"
+
+[[case]]
+input = "ラフネスってたしか粗さ"
+mode = "hiragana"
+expected = "ラフネスってたしかあらさ"
+
+[[case]]
+input = "距離でモザイクの粗さ変わるんだ"
+mode = "hiragana"
+expected = "きょりでモザイクのあらさかわるんだ"
+
+[[case]]
+input = "画質粗めかな"
+mode = "hiragana"
+expected = "がしつあらめかな"
+
+[[case]]
+input = "割と解像度粗めの"
+mode = "hiragana"
+expected = "わりとかいぞうどあらめの"
+
+[[case]]
+input = "粗すぎるな"
+mode = "hiragana"
+expected = "あらすぎるな"
+
+[[case]]
+input = "プレイが粗すぎるな"
+mode = "hiragana"
+expected = "プレイがあらすぎるな"
+
+[[case]]
+input = "なぜそのように粗ぶるのか!"
+mode = "hiragana"
+expected = "なぜそのようにあらぶるのか!"
+
+[[case]]
+input = "タンシオといい粗挽きといい肉関係?w"
+mode = "hiragana"
+expected = "タンシオといいあらびきといいにくかんけい?w"
+
+[[case]]
+input = "粗びき"
+mode = "hiragana"
+expected = "あらびき"
+
+[[case]]
+input = "あえての画像粗目なのか"
+mode = "hiragana"
+expected = "あえてのがぞうあらめなのか"
+
+[[case]]
+input = "森友哉"
+mode = "hiragana"
+expected = "もりともや"
+
+[[case]]
+input = "藤井皓哉wwww"
+mode = "hiragana"
+expected = "ふじいこうやwwww"
+
+[[case]]
+input = "松山晋哉が転生"
+mode = "hiragana"
+expected = "まつやましんやがてんせい"
+
+[[case]]
+input = "これは夢洲に公金を注ぎ込む福岡副首都潰し"
+mode = "hiragana"
+expected = "これはゆめしまにこうきんをつぎこむふくおかふくしゅとつぶし"
+
+[[case]]
+input = "夢洲"
+mode = "hiragana"
+expected = "ゆめしま"
+
+[[case]]
+input = "耳なし芳一みたいになっとるw"
+mode = "hiragana"
+expected = "みみなしほういちみたいになっとるw"
+
+[[case]]
+input = "掛布雅之くるかな?"
+mode = "hiragana"
+expected = "かけふまさゆきくるかな?"
+
+[[case]]
+input = "何でも楽しいが大事ですもんね"
+mode = "hiragana"
+expected = "なんでもたのしいがだいじですもんね"
+
+[[case]]
+input = "何でも燃やすw"
+mode = "hiragana"
+expected = "なんでももやすw"
+
+[[case]]
+input = "酒飲んでたら何でも許されるのか?"
+mode = "hiragana"
+expected = "さけのんでたらなんでもゆるされるのか?"
+
+[[case]]
+input = "ブレークを何だと思ってるんだ"
+mode = "hiragana"
+expected = "ブレークをなんだとおもってるんだ"
+
+[[case]]
+input = "しゃあ!(赤い彗星的な意味で)"
+mode = "hiragana"
+expected = "しゃあ!(あかいすいせいてきないみで)"
+
+[[case]]
+input = "何故頭振るw"
+mode = "hiragana"
+expected = "なぜあたまふるw"
+
+[[case]]
+input = "前のランエボと同じ位か"
+mode = "hiragana"
+expected = "まえのランエボとおなじくらいか"
+
+[[case]]
+input = "ポケ戦は全話で3時間位だな"
+mode = "hiragana"
+expected = "ポケせんはぜんわでさんじかんくらいだな"
+
+[[case]]
+input = "まあゲーム終わったら2000万位納品しよ"
+mode = "hiragana"
+expected = "まあゲームおわったらにせんまんくらいのうひんしよ"
+
+[[case]]
+input = "これ現実だと4億位しますよ"
+mode = "hiragana"
+expected = "これげんじつだとよんおくくらいしますよ"
+
+[[case]]
+input = "ペコちゃんにはずっと豪華で華やかな成功者で居続けて欲しい"
+mode = "hiragana"
+expected = "ペコちゃんにはずっとごうかではなやかなせいこうしゃでいつづけてほしい"
+
