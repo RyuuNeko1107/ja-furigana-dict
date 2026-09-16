@@ -8,7 +8,7 @@ expected = "はんしんのさいき"
 [[case]]
 input = "悠木碧さん"
 mode = "hiragana"
-expected = "ゆうきあおさん"
+expected = "ゆうきあおいさん"
 
 [[case]]
 input = "妻夫木聡"
