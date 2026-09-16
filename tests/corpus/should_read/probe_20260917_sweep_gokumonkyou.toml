@@ -1,0 +1,50 @@
+[[case]]
+input = "獄門彊へGO"
+mode = "hiragana"
+expected = "ごくもんきょうへゴー"
+
+[[case]]
+input = "獄門彊・・・"
+mode = "hiragana"
+expected = "ごくもんきょう"
+
+[[case]]
+input = "コレが獄門彊か"
+mode = "hiragana"
+expected = "コレがごくもんきょうか"
+
+[[case]]
+input = "獄門彊"
+mode = "hiragana"
+expected = "ごくもんきょう"
+
+[[case]]
+input = "獄門疆"
+mode = "hiragana"
+expected = "ごくもんきょう"
+
+[[case]]
+input = "獄門首"
+mode = "hiragana"
+expected = "ごくもんくび"
+
+[[case]]
+input = "彊"
+mode = "hiragana"
+expected = "しいる"
+
+[[case]]
+input = "疆"
+mode = "hiragana"
+expected = "さかい"
+
+[[case]]
+input = "伍子胥並みに酷いことを"
+mode = "hiragana"
+expected = "ごししょなみにひどいことを"
+
+[[case]]
+input = "伍子胥"
+mode = "hiragana"
+expected = "ごししょ"
+
