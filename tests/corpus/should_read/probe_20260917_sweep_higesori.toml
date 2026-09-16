@@ -1,0 +1,305 @@
+[[case]]
+input = "山口崇"
+mode = "hiragana"
+expected = "やまぐちたかし"
+
+[[case]]
+input = "髭剃りみたいな名前"
+mode = "hiragana"
+expected = "ひげそりみたいななまえ"
+
+[[case]]
+input = "しれっとって髭剃りだよね?"
+mode = "hiragana"
+expected = "しれっとってひげそりだよね?"
+
+[[case]]
+input = "お嬢の髭剃り案件とか謎だったしねw"
+mode = "hiragana"
+expected = "おじょうのひげそりあんけんとかなぞだったしねw"
+
+[[case]]
+input = "メッシ髭剃ってほしい"
+mode = "hiragana"
+expected = "メッシひげそってほしい"
+
+[[case]]
+input = "髭剃ってる"
+mode = "hiragana"
+expected = "ひげそってる"
+
+[[case]]
+input = "メッシ髭剃ると若くなるね"
+mode = "hiragana"
+expected = "メッシひげそるとわかくなるね"
+
+[[case]]
+input = "お髭色つけて顔周りにしてみたら?"
+mode = "hiragana"
+expected = "おひげいろつけてかおまわりにしてみたら?"
+
+[[case]]
+input = "スタイリッシュ梯子降り"
+mode = "hiragana"
+expected = "スタイリッシュはしごおり"
+
+[[case]]
+input = "医者梯子か"
+mode = "hiragana"
+expected = "いしゃはしごか"
+
+[[case]]
+input = "雲梯だ!"
+mode = "hiragana"
+expected = "うんていだ!"
+
+[[case]]
+input = "完全に紐男と依存女の構図"
+mode = "hiragana"
+expected = "かんぜんにひもおとこといぞんじょのこうず"
+
+[[case]]
+input = "紐づける要素ないしなあ"
+mode = "hiragana"
+expected = "ひもづけるようそないしなあ"
+
+[[case]]
+input = "紐パン"
+mode = "hiragana"
+expected = "ひもパン"
+
+[[case]]
+input = "靴紐!"
+mode = "hiragana"
+expected = "くつひも!"
+
+[[case]]
+input = "肩紐細すぎないか?w"
+mode = "hiragana"
+expected = "かたひもほそすぎないか?w"
+
+[[case]]
+input = "貝紐ww"
+mode = "hiragana"
+expected = "かいひもww"
+
+[[case]]
+input = "そっか啓治さんか..."
+mode = "hiragana"
+expected = "そっかけいじさんか..."
+
+[[case]]
+input = "藤原啓治の声がハマり役すぎる"
+mode = "hiragana"
+expected = "ふじわらけいじのこえがハマりやくすぎる"
+
+[[case]]
+input = "啓示か?"
+mode = "hiragana"
+expected = "けいじか?"
+
+[[case]]
+input = "天啓来ましたか!?"
+mode = "hiragana"
+expected = "てんけいきましたか!?"
+
+[[case]]
+input = "拝啓 花咲かせ花さん"
+mode = "hiragana"
+expected = "はいけい はなさかせはなさん"
+
+[[case]]
+input = "自己啓発セミナー"
+mode = "hiragana"
+expected = "じこけいはつセミナー"
+
+[[case]]
+input = "崇高崇高"
+mode = "hiragana"
+expected = "すうこうすうこう"
+
+[[case]]
+input = "竜王崇拝者もいますよと"
+mode = "hiragana"
+expected = "りゅうおうすうはいしゃもいますよと"
+
+[[case]]
+input = "崇徳天皇"
+mode = "hiragana"
+expected = "すとくてんのう"
+
+[[case]]
+input = "破綻してるw"
+mode = "hiragana"
+expected = "はたんしてるw"
+
+[[case]]
+input = "綻びでたな"
+mode = "hiragana"
+expected = "ほころびでたな"
+
+[[case]]
+input = "賄賂"
+mode = "hiragana"
+expected = "わいろ"
+
+[[case]]
+input = "囁いてきます"
+mode = "hiragana"
+expected = "ささやいてきます"
+
+[[case]]
+input = "蟹じゃないかなぁ"
+mode = "hiragana"
+expected = "かにじゃないかなぁ"
+
+[[case]]
+input = "白髭!グラグラ!"
+mode = "hiragana"
+expected = "しらひげ!グラグラ!"
+
+[[case]]
+input = "黒髭"
+mode = "hiragana"
+expected = "くろひげ"
+
+[[case]]
+input = "膨らむよ"
+mode = "hiragana"
+expected = "ふくらむよ"
+
+[[case]]
+input = "同僚が"
+mode = "hiragana"
+expected = "どうりょうが"
+
+[[case]]
+input = "官僚に!?"
+mode = "hiragana"
+expected = "かんりょうに!?"
+
+[[case]]
+input = "閣僚少な"
+mode = "hiragana"
+expected = "かくりょうすくな"
+
+[[case]]
+input = "一括で"
+mode = "hiragana"
+expected = "いっかつで"
+
+[[case]]
+input = "鋼の錬金術師"
+mode = "hiragana"
+expected = "はがねのれんきんじゅつし"
+
+[[case]]
+input = "曹操"
+mode = "hiragana"
+expected = "そうそう"
+
+[[case]]
+input = "ケロロ軍曹は梅雨好きだぞ"
+mode = "hiragana"
+expected = "ケロロぐんそうはつゆすきだぞ"
+
+[[case]]
+input = "重曹は万能"
+mode = "hiragana"
+expected = "じゅうそうはばんのう"
+
+[[case]]
+input = "御曹司か"
+mode = "hiragana"
+expected = "おんぞうしか"
+
+[[case]]
+input = "著作権"
+mode = "hiragana"
+expected = "ちょさくけん"
+
+[[case]]
+input = "祟りあるから"
+mode = "hiragana"
+expected = "たたりあるから"
+
+[[case]]
+input = "肺活量バトルやめてね"
+mode = "hiragana"
+expected = "はいかつりょうバトルやめてね"
+
+[[case]]
+input = "心肺蘇生は肘を伸ばして~"
+mode = "hiragana"
+expected = "しんぱいそせいはひじをのばして"
+
+[[case]]
+input = "料亭"
+mode = "hiragana"
+expected = "りょうてい"
+
+[[case]]
+input = "流れるように販促ww"
+mode = "hiragana"
+expected = "ながれるようにはんそくww"
+
+[[case]]
+input = "催促!"
+mode = "hiragana"
+expected = "さいそく!"
+
+[[case]]
+input = "督促状"
+mode = "hiragana"
+expected = "とくそくじょう"
+
+[[case]]
+input = "自覚を促す先輩"
+mode = "hiragana"
+expected = "じかくをうながすせんぱい"
+
+[[case]]
+input = "お祓い"
+mode = "hiragana"
+expected = "おはらい"
+
+[[case]]
+input = "陛下"
+mode = "hiragana"
+expected = "へいか"
+
+[[case]]
+input = "冤罪だ"
+mode = "hiragana"
+expected = "えんざいだ"
+
+[[case]]
+input = "誘導尋問w"
+mode = "hiragana"
+expected = "ゆうどうじんもんw"
+
+[[case]]
+input = "千と千尋の神隠し"
+mode = "hiragana"
+expected = "せんとちひろのかみかくし"
+
+[[case]]
+input = "東尋坊w"
+mode = "hiragana"
+expected = "とうじんぼうw"
+
+[[case]]
+input = "尋常じゃない"
+mode = "hiragana"
+expected = "じんじょうじゃない"
+
+[[case]]
+input = "お尋ね者ですよ"
+mode = "hiragana"
+expected = "おたずねものですよ"
+
+[[case]]
+input = "祠を壊してしまったのか!?"
+mode = "hiragana"
+expected = "ほこらをこわしてしまったのか!?"
+
