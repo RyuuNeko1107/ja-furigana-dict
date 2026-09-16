@@ -1,0 +1,320 @@
+[[case]]
+input = "天高く馬肥ゆる秋"
+mode = "hiragana"
+expected = "てんたかくうまこゆるあき"
+
+[[case]]
+input = "舌肥えすぎてるキッズで草"
+mode = "hiragana"
+expected = "したこえすぎてるキッズでくさ"
+
+[[case]]
+input = "5年前の瞑眩から見て行ってる"
+mode = "hiragana"
+expected = "ごねんまえのめんげんからみていってる"
+
+[[case]]
+input = "実際目を瞑ったほうがうまく行く"
+mode = "hiragana"
+expected = "じっさいめをつぶったほうがうまくいく"
+
+[[case]]
+input = "絶対目瞑るんかw"
+mode = "hiragana"
+expected = "ぜったいめつぶるんかw"
+
+[[case]]
+input = "スコープの方目を瞑るみこいさん"
+mode = "hiragana"
+expected = "スコープのほうめをつぶるみこいさん"
+
+[[case]]
+input = "禿同"
+mode = "hiragana"
+expected = "はげどう"
+
+[[case]]
+input = "禿ます"
+mode = "hiragana"
+expected = "はげます"
+
+[[case]]
+input = "禿しいい♬"
+mode = "hiragana"
+expected = "はげしいい♬"
+
+[[case]]
+input = "禿か!?♬"
+mode = "hiragana"
+expected = "はげか!?♬"
+
+[[case]]
+input = "禿そうw"
+mode = "hiragana"
+expected = "はげそうw"
+
+[[case]]
+input = "禿てる人の頭は観るなよw"
+mode = "hiragana"
+expected = "はげてるひとのあたまはみるなよw"
+
+[[case]]
+input = "禿てない?"
+mode = "hiragana"
+expected = "はげてない?"
+
+[[case]]
+input = "ハードまじで禿る"
+mode = "hiragana"
+expected = "ハードまじではげる"
+
+[[case]]
+input = "監督禿とる"
+mode = "hiragana"
+expected = "かんとくはげとる"
+
+[[case]]
+input = "禿めよ"
+mode = "hiragana"
+expected = "はげめよ"
+
+[[case]]
+input = "よく見たらてっぺん禿げだったなwww"
+mode = "hiragana"
+expected = "よくみたらてっぺんはげだったなwww"
+
+[[case]]
+input = "生痕の後か"
+mode = "hiragana"
+expected = "せいこんのあとか"
+
+[[case]]
+input = "骸さん懐かしいな"
+mode = "hiragana"
+expected = "むくろさんなつかしいな"
+
+[[case]]
+input = "だいぶ陽気になったな骸さんw"
+mode = "hiragana"
+expected = "だいぶようきになったなむくろさんw"
+
+[[case]]
+input = "骸って女じゃなかった?"
+mode = "hiragana"
+expected = "むくろっておんなじゃなかった?"
+
+[[case]]
+input = "骸やんw"
+mode = "hiragana"
+expected = "むくろやんw"
+
+[[case]]
+input = "骸だよ"
+mode = "hiragana"
+expected = "むくろだよ"
+
+[[case]]
+input = "骸に会わせても......"
+mode = "hiragana"
+expected = "むくろにあわせても......"
+
+[[case]]
+input = "骸に隠れて雲雀も割と"
+mode = "hiragana"
+expected = "むくろにかくれてひばりもわりと"
+
+[[case]]
+input = "YASの誓いうおおお"
+mode = "hiragana"
+expected = "YASのちかいうおおお"
+
+[[case]]
+input = "リュウ全勝の誓いや!"
+mode = "hiragana"
+expected = "リュウぜんしょうのちかいや!"
+
+[[case]]
+input = "誓いきちゃ"
+mode = "hiragana"
+expected = "ちかいきちゃ"
+
+[[case]]
+input = "すぐ破られる誓い草"
+mode = "hiragana"
+expected = "すぐやぶられるちかいくさ"
+
+[[case]]
+input = "白桃烏龍おいしいわよねぇ"
+mode = "hiragana"
+expected = "はくとううーろんおいしいわよねぇ"
+
+[[case]]
+input = "お前も篭手持ちか"
+mode = "hiragana"
+expected = "おまえもこてもちか"
+
+[[case]]
+input = "第1大槌やめたら?"
+mode = "hiragana"
+expected = "だいいちおおつちやめたら?"
+
+[[case]]
+input = "アーバレストって日本語で破城槌だっけか?"
+mode = "hiragana"
+expected = "アーバレストってにほんごではじょうついだっけか?"
+
+[[case]]
+input = "龍槌閃・惨"
+mode = "hiragana"
+expected = "りゅうついせんさん"
+
+[[case]]
+input = "最後連荘は終わるまでか"
+mode = "hiragana"
+expected = "さいごれんちゃんはおわるまでか"
+
+[[case]]
+input = "貸別荘とか"
+mode = "hiragana"
+expected = "かしべっそうとか"
+
+[[case]]
+input = "浮藻にこえびも泳いでる"
+mode = "hiragana"
+expected = "うきもにこえびもおよいでる"
+
+[[case]]
+input = "藍藻類か"
+mode = "hiragana"
+expected = "らんそうるいか"
+
+[[case]]
+input = "藤岡弘、さんの探検隊みたい"
+mode = "hiragana"
+expected = "ふじおかひろし、さんのたんけんたいみたい"
+
+[[case]]
+input = "井端弘和"
+mode = "hiragana"
+expected = "いばたひろかず"
+
+[[case]]
+input = "田村龍弘 千葉ロッテマリーンズ"
+mode = "hiragana"
+expected = "たむらりゅうへい ちばロッテマリーンズ"
+
+[[case]]
+input = "井桁弘恵みがある"
+mode = "hiragana"
+expected = "いげたひろえみがある"
+
+[[case]]
+input = "桐生ちゃんは蛍原さんだった、ってこと??"
+mode = "hiragana"
+expected = "きりゅうちゃんはほとはらさんだった、ってこと??"
+
+[[case]]
+input = "( ́∀`)蛍丸つよかった"
+mode = "hiragana"
+expected = "( ́∀`)ほたるまるつよかった"
+
+[[case]]
+input = "呂布奉先"
+mode = "hiragana"
+expected = "りょふほうせん"
+
+[[case]]
+input = "腱がああ"
+mode = "hiragana"
+expected = "けんがああ"
+
+[[case]]
+input = "腱を切られてた"
+mode = "hiragana"
+expected = "けんをきられてた"
+
+[[case]]
+input = "足の腱はちょっと"
+mode = "hiragana"
+expected = "あしのけんはちょっと"
+
+[[case]]
+input = "そんな眉唾な..."
+mode = "hiragana"
+expected = "そんなまゆつばな..."
+
+[[case]]
+input = "一味全員唾まみれ"
+mode = "hiragana"
+expected = "いちみぜんいんつばまみれ"
+
+[[case]]
+input = "斎藤唾付けよう"
+mode = "hiragana"
+expected = "さいとうつばつけよう"
+
+[[case]]
+input = "一旦唾つけとくのあり...?"
+mode = "hiragana"
+expected = "いったんつばつけとくのあり...?"
+
+[[case]]
+input = "AIはやるが、庵野は永田町には必要無いねー。"
+mode = "hiragana"
+expected = "エーアイはやるが、あんのはながたちょうにはひつようないねー。"
+
+[[case]]
+input = "不知火幻庵?"
+mode = "hiragana"
+expected = "しらぬいげんあん?"
+
+[[case]]
+input = "しゃぶしゃぶなら「ゆず庵」がオススメ"
+mode = "hiragana"
+expected = "しゃぶしゃぶなら「ゆずあん」がオススメ"
+
+[[case]]
+input = "ガストとバーミヤンと夢庵みたいな"
+mode = "hiragana"
+expected = "ガストとバーミヤンとゆめあんみたいな"
+
+[[case]]
+input = "くりこ庵でたい焼き買ってきたからお祝いに食べるよ"
+mode = "hiragana"
+expected = "くりこあんでたいやきかってきたからおいわいにたべるよ"
+
+[[case]]
+input = "千秋庵の山親爺も忘れずに"
+mode = "hiragana"
+expected = "せんしゅうあんのやまおやじもわすれずに"
+
+[[case]]
+input = "かき氷に団子...おかげ庵?w"
+mode = "hiragana"
+expected = "かきごおりにだんご...おかげあん?w"
+
+[[case]]
+input = "亡骸ってw"
+mode = "hiragana"
+expected = "なきがらってw"
+
+[[case]]
+input = "魔物の死骸ってことでしょ"
+mode = "hiragana"
+expected = "まもののしがいってことでしょ"
+
+[[case]]
+input = "魂の亡骸ってムズいな"
+mode = "hiragana"
+expected = "たましいのなきがらってムズいな"
+
+[[case]]
+input = "バシロの死骸ってリポップしないんじゃなかったっけ?"
+mode = "hiragana"
+expected = "バシロのしがいってリポップしないんじゃなかったっけ?"
+
+[[case]]
+input = "ずっと前の残骸だよw"
+mode = "hiragana"
+expected = "ずっとまえのざんがいだよw"
+
