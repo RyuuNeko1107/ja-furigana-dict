@@ -1,0 +1,30 @@
+[[case]]
+input = "深圳はドローンが有名"
+mode = "hiragana"
+expected = "しんせんはドローンがゆうめい"
+
+[[case]]
+input = "れいわ深圳組"
+mode = "hiragana"
+expected = "れいわしんせんぐみ"
+
+[[case]]
+input = "深圳"
+mode = "hiragana"
+expected = "しんせん"
+
+[[case]]
+input = "圳"
+mode = "hiragana"
+expected = "しゅう"
+
+[[case]]
+input = "牡蛎かな"
+mode = "hiragana"
+expected = "ぼれいかな"
+
+[[case]]
+input = "牡蠣"
+mode = "hiragana"
+expected = "かき"
+
