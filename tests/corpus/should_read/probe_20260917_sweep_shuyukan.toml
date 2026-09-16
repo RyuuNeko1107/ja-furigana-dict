@@ -1,0 +1,100 @@
+[[case]]
+input = "え、こいつらもして修猷館???"
+mode = "hiragana"
+expected = "え、こいつらもしてしゅうゆうかん???"
+
+[[case]]
+input = "西新って修猷館か?"
+mode = "hiragana"
+expected = "にしじんってしゅうゆうかんか?"
+
+[[case]]
+input = "修猷館自由やな"
+mode = "hiragana"
+expected = "しゅうゆうかんじゆうやな"
+
+[[case]]
+input = "ARPGならイースか、亰都ザナドゥがいいなー"
+mode = "hiragana"
+expected = "ARPGならイースか、きょうとザナドゥがいいなー"
+
+[[case]]
+input = "亰都ザナドゥなんかも楽しいぞ"
+mode = "hiragana"
+expected = "きょうとザナドゥなんかもたのしいぞ"
+
+[[case]]
+input = "亰都ザナドゥ面白いよ"
+mode = "hiragana"
+expected = "きょうとザナドゥおもしろいよ"
+
+[[case]]
+input = "東亰ザナドゥと京都ザナドゥおすすめです・"
+mode = "hiragana"
+expected = "とうきょうザナドゥときょうとザナドゥおすすめです"
+
+[[case]]
+input = "悲鳴嶼さんの試練?"
+mode = "hiragana"
+expected = "ひめじまさんのしれん?"
+
+[[case]]
+input = "悲鳴嶼さん"
+mode = "hiragana"
+expected = "ひめじまさん"
+
+[[case]]
+input = "避免 闇墮w"
+mode = "hiragana"
+expected = "ひめん やみおちw"
+
+[[case]]
+input = "闇墮??"
+mode = "hiragana"
+expected = "やみおち??"
+
+[[case]]
+input = "修猷館"
+mode = "hiragana"
+expected = "しゅうゆうかん"
+
+[[case]]
+input = "悲鳴嶼行冥"
+mode = "hiragana"
+expected = "ひめじまぎょうめい"
+
+[[case]]
+input = "闇墮"
+mode = "hiragana"
+expected = "やみおち"
+
+[[case]]
+input = "闇堕ち"
+mode = "hiragana"
+expected = "やみおち"
+
+[[case]]
+input = "亰都ザナドゥ"
+mode = "hiragana"
+expected = "きょうとザナドゥ"
+
+[[case]]
+input = "東亰ザナドゥ"
+mode = "hiragana"
+expected = "とうきょうザナドゥ"
+
+[[case]]
+input = "京都"
+mode = "hiragana"
+expected = "きょうと"
+
+[[case]]
+input = "東京"
+mode = "hiragana"
+expected = "とうきょう"
+
+[[case]]
+input = "島嶼部は観測点少ないから"
+mode = "hiragana"
+expected = "とうしょぶはかんそくてんすくないから"
+
