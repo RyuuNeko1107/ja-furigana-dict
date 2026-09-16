@@ -1,0 +1,330 @@
+[[case]]
+input = "ニコ生の海を彷徨うんだよねw"
+mode = "hiragana"
+expected = "ニコなまのうみをさまようんだよねw"
+
+[[case]]
+input = "彷徨うまいそー"
+mode = "hiragana"
+expected = "さまようまいそー"
+
+[[case]]
+input = "まだ彷徨ってるね"
+mode = "hiragana"
+expected = "まださまよってるね"
+
+[[case]]
+input = "彷徨ったおかげでレベルは上がった"
+mode = "hiragana"
+expected = "さまよったおかげでレベルはあがった"
+
+[[case]]
+input = "君を探し彷徨うmy soul"
+mode = "hiragana"
+expected = "きみをさがしさまようmy soul"
+
+[[case]]
+input = "自由に彷徨おう"
+mode = "hiragana"
+expected = "じゆうにさまよおう"
+
+[[case]]
+input = "彷徨うぺこーら"
+mode = "hiragana"
+expected = "さまようぺこーら"
+
+[[case]]
+input = "彷徨いのそら"
+mode = "hiragana"
+expected = "さまよいのそら"
+
+[[case]]
+input = "蠟燭打てる?"
+mode = "hiragana"
+expected = "ろうそくうてる?"
+
+[[case]]
+input = "蠟燭で生活してたなら火事もあり得るね"
+mode = "hiragana"
+expected = "ろうそくでせいかつしてたならかじもありえるね"
+
+[[case]]
+input = "蝋燭かな"
+mode = "hiragana"
+expected = "ろうそくかな"
+
+[[case]]
+input = "赤い蝋燭と青い蝋燭"
+mode = "hiragana"
+expected = "あかいろうそくとあおいろうそく"
+
+[[case]]
+input = "燭台がリスポーン地点なのね"
+mode = "hiragana"
+expected = "しょくだいがリスポーンちてんなのね"
+
+[[case]]
+input = "壁掛け燭台があればもっと便利なんだけど"
+mode = "hiragana"
+expected = "かべかけしょくだいがあればもっとべんりなんだけど"
+
+[[case]]
+input = "瑠璃丸じゃん"
+mode = "hiragana"
+expected = "るりまるじゃん"
+
+[[case]]
+input = "瑠璃さん!"
+mode = "hiragana"
+expected = "るりさん!"
+
+[[case]]
+input = "浄瑠璃は見たことあるけど難しかった"
+mode = "hiragana"
+expected = "じょうるりはみたことあるけどむずかしかった"
+
+[[case]]
+input = "蜜璃ちゃん"
+mode = "hiragana"
+expected = "みつりちゃん"
+
+[[case]]
+input = "満帆がいいね"
+mode = "hiragana"
+expected = "まんぱんがいいね"
+
+[[case]]
+input = "順風満帆!!"
+mode = "hiragana"
+expected = "じゅんぷうまんぱん!!"
+
+[[case]]
+input = "本日は順風満帆なパワプロでした!"
+mode = "hiragana"
+expected = "ほんじつはじゅんぷうまんぱんなパワプロでした!"
+
+[[case]]
+input = "タイタニックは帆船じゃない"
+mode = "hiragana"
+expected = "タイタニックははんせんじゃない"
+
+[[case]]
+input = "帆を上げろ!突き進め!"
+mode = "hiragana"
+expected = "ほをあげろ!つきすすめ!"
+
+[[case]]
+input = "高木美帆さんは保守か?"
+mode = "hiragana"
+expected = "たかぎみほさんはほしゅか?"
+
+[[case]]
+input = "松前藩バトル"
+mode = "hiragana"
+expected = "まつまえはんバトル"
+
+[[case]]
+input = "薩摩藩やって来るよ"
+mode = "hiragana"
+expected = "さつまはんやってくるよ"
+
+[[case]]
+input = "土佐脱藩"
+mode = "hiragana"
+expected = "とさだっぱん"
+
+[[case]]
+input = "廃藩置県の後の独立よ"
+mode = "hiragana"
+expected = "はいはんちけんのあとのどくりつよ"
+
+[[case]]
+input = "出た土佐藩"
+mode = "hiragana"
+expected = "でたとさはん"
+
+[[case]]
+input = "巻き簾?"
+mode = "hiragana"
+expected = "まきす?"
+
+[[case]]
+input = "暖簾くぐってるわ"
+mode = "hiragana"
+expected = "のれんくぐってるわ"
+
+[[case]]
+input = "御簾という"
+mode = "hiragana"
+expected = "みすという"
+
+[[case]]
+input = "囲碁サッカー"
+mode = "hiragana"
+expected = "いごサッカー"
+
+[[case]]
+input = "ヒカルの碁、わがるww"
+mode = "hiragana"
+expected = "ヒカルのご、わがるww"
+
+[[case]]
+input = "碁石ができるまで、みたいな"
+mode = "hiragana"
+expected = "ごいしができるまで、みたいな"
+
+[[case]]
+input = "五目並べ用の碁盤"
+mode = "hiragana"
+expected = "ごもくならべようのごばん"
+
+[[case]]
+input = "襖の奥!顔!2カメラ!"
+mode = "hiragana"
+expected = "ふすまのおく!かお!にカメラ!"
+
+[[case]]
+input = "天井が襖になってる"
+mode = "hiragana"
+expected = "てんじょうがふすまになってる"
+
+[[case]]
+input = "誘拐犯か"
+mode = "hiragana"
+expected = "ゆうかいはんか"
+
+[[case]]
+input = "拐ってくるか?:_にやー:"
+mode = "hiragana"
+expected = "さらってくるか?:_にやー:"
+
+[[case]]
+input = "拐かして!"
+mode = "hiragana"
+expected = "かどわかして!"
+
+[[case]]
+input = "ショタを拐おうとしているw"
+mode = "hiragana"
+expected = "ショタをさらおうとしているw"
+
+[[case]]
+input = "宍戸かっこよ"
+mode = "hiragana"
+expected = "ししどかっこよ"
+
+[[case]]
+input = "しじみは宍道湖だから島根かな"
+mode = "hiragana"
+expected = "しじみはしんじこだからしまねかな"
+
+[[case]]
+input = "斥候が世界一似合う兎"
+mode = "hiragana"
+expected = "せっこうがせかいいちにあううさぎ"
+
+[[case]]
+input = "引力と斥力!!"
+mode = "hiragana"
+expected = "いんりょくとせきりょく!!"
+
+[[case]]
+input = "絢辻さんは裏表のない素敵な人です。"
+mode = "hiragana"
+expected = "あやつじさんはうらおもてのないすてきなひとです。"
+
+[[case]]
+input = "豪華絢爛だ"
+mode = "hiragana"
+expected = "ごうかけんらんだ"
+
+[[case]]
+input = "修行僧みたいな袈裟っぽい服装"
+mode = "hiragana"
+expected = "しゅぎょうそうみたいなけさっぽいふくそう"
+
+[[case]]
+input = "大袈裟に褒めてあげたい"
+mode = "hiragana"
+expected = "おおげさにほめてあげたい"
+
+[[case]]
+input = "酪農がわからんからなー"
+mode = "hiragana"
+expected = "らくのうがわからんからなー"
+
+[[case]]
+input = "バターの酪酸は体にいいよ"
+mode = "hiragana"
+expected = "バターのらくさんはからだにいいよ"
+
+[[case]]
+input = "次は福島の酪王カフェオレをぜひ"
+mode = "hiragana"
+expected = "つぎはふくしまのらくおうカフェオレをぜひ"
+
+[[case]]
+input = "疲労困憊w"
+mode = "hiragana"
+expected = "ひろうこんぱいw"
+
+[[case]]
+input = "困憊しとるWWW"
+mode = "hiragana"
+expected = "こんぱいしとるWWW"
+
+[[case]]
+input = "痰壺www"
+mode = "hiragana"
+expected = "たんつぼwww"
+
+[[case]]
+input = "痰が絡むから?"
+mode = "hiragana"
+expected = "たんがからむから?"
+
+[[case]]
+input = "鼻痰"
+mode = "hiragana"
+expected = "はなたん"
+
+[[case]]
+input = "鱈の白子"
+mode = "hiragana"
+expected = "たらのしらこ"
+
+[[case]]
+input = "出鱈目や陰謀論を言うより黙った方がいいです、お前は"
+mode = "hiragana"
+expected = "でたらめやいんぼうろんをいうよりだまったほうがいいです、おまえは"
+
+[[case]]
+input = "矢鱈動きが良いアルケミストが"
+mode = "hiragana"
+expected = "やたらうごきがよいアルケミストが"
+
+[[case]]
+input = "燻製銀鱈"
+mode = "hiragana"
+expected = "くんせいぎんたら"
+
+[[case]]
+input = "無闇矢鱈に置けねぇw"
+mode = "hiragana"
+expected = "むやみやたらにおけねぇw"
+
+[[case]]
+input = "まさかの大抜擢"
+mode = "hiragana"
+expected = "まさかのだいばってき"
+
+[[case]]
+input = "富山、羽咋市やばい"
+mode = "hiragana"
+expected = "とやま、はくいしやばい"
+
+[[case]]
+input = "羽咋はUFOですね"
+mode = "hiragana"
+expected = "はくいはユーフォーですね"
+
