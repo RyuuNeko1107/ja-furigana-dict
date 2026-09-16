@@ -1,0 +1,125 @@
+[[case]]
+input = "北斗の拳の世界観"
+mode = "hiragana"
+expected = "ほくとのけんのせかいかん"
+
+[[case]]
+input = "北斗の拳かな"
+mode = "hiragana"
+expected = "ほくとのけんかな"
+
+[[case]]
+input = "北斗神拳の使い手"
+mode = "hiragana"
+expected = "ほくとしんけんのつかいて"
+
+[[case]]
+input = "元斗光拳"
+mode = "hiragana"
+expected = "げんとこうけん"
+
+[[case]]
+input = "元斗皇拳か"
+mode = "hiragana"
+expected = "げんとこうけんか"
+
+[[case]]
+input = "中選挙区制にすればいいよ"
+mode = "hiragana"
+expected = "ちゅうせんきょくせいにすればいいよ"
+
+[[case]]
+input = "小選挙区をなくせ"
+mode = "hiragana"
+expected = "しょうせんきょくをなくせ"
+
+[[case]]
+input = "北海道の丼丸ってお店で"
+mode = "hiragana"
+expected = "ほっかいどうのどんまるっておみせで"
+
+[[case]]
+input = "酷道を走る"
+mode = "hiragana"
+expected = "こくどうをはしる"
+
+[[case]]
+input = "酷道は険しい"
+mode = "hiragana"
+expected = "こくどうはけわしい"
+
+[[case]]
+input = "酷かったら明日調整あるだろうねぇ"
+mode = "hiragana"
+expected = "ひどかったらあしたちょうせいあるだろうねぇ"
+
+[[case]]
+input = "酷な事言って良いなら"
+mode = "hiragana"
+expected = "こくなこといってよいなら"
+
+[[case]]
+input = "残酷ぅ!"
+mode = "hiragana"
+expected = "ざんこくぅ!"
+
+[[case]]
+input = "残酷な現実"
+mode = "hiragana"
+expected = "ざんこくなげんじつ"
+
+[[case]]
+input = "酷使させすぎだろ"
+mode = "hiragana"
+expected = "こくしさせすぎだろ"
+
+[[case]]
+input = "過酷すぎる"
+mode = "hiragana"
+expected = "かこくすぎる"
+
+[[case]]
+input = "一応貴女達もアイドルやし"
+mode = "hiragana"
+expected = "いちおうあなたたちもアイドルやし"
+
+[[case]]
+input = "信じてるけど貴女せっかちだから"
+mode = "hiragana"
+expected = "しんじてるけどあなたせっかちだから"
+
+[[case]]
+input = "それを盗んだ貴女もやばい"
+mode = "hiragana"
+expected = "それをぬすんだあなたもやばい"
+
+[[case]]
+input = "貴重なネコ科コンビ"
+mode = "hiragana"
+expected = "きちょうなネコかコンビ"
+
+[[case]]
+input = "貴族の服を買って"
+mode = "hiragana"
+expected = "きぞくのふくをかって"
+
+[[case]]
+input = "貴様のライブやからな"
+mode = "hiragana"
+expected = "きさまのライブやからな"
+
+[[case]]
+input = "32の兄貴"
+mode = "hiragana"
+expected = "さんじゅうにのあにき"
+
+[[case]]
+input = "ここをここに非ずw"
+mode = "hiragana"
+expected = "ここをここにあらずw"
+
+[[case]]
+input = "ティファは「伊藤歩」さんにイメージ寄せてる"
+mode = "hiragana"
+expected = "ティファは「いとうあゆみ」さんにイメージよせてる"
+
