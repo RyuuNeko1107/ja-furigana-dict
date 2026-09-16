@@ -1,0 +1,76 @@
+# 全漢字スイープ 読 / 裏 / 果 / 夜 / 設 / 仲 / 降 / 並 (2026-09-16)
+
+[[case]]
+input = "並べてくっつけるだけ"
+mode = "hiragana"
+expected = "ならべてくっつけるだけ"
+
+[[case]]
+input = "歯並びが良いですな"
+mode = "hiragana"
+expected = "はならびがよいですな"
+
+[[case]]
+input = "流石夜一さん"
+mode = "hiragana"
+expected = "さすがよるいちさん"
+
+[[case]]
+input = "丁度夜だからゾンビ倒す?"
+mode = "hiragana"
+expected = "ちょうどよるだからゾンビたおす?"
+
+[[case]]
+input = "社訓読まされてるみたいw"
+mode = "hiragana"
+expected = "しゃくんよまされてるみたいw"
+
+[[case]]
+input = "深読みしすぎたw"
+mode = "hiragana"
+expected = "ふかよみしすぎたw"
+
+[[case]]
+input = "一旦蜂設置か"
+mode = "hiragana"
+expected = "いったんはちせっちか"
+
+[[case]]
+input = "ころさん降りてない"
+mode = "hiragana"
+expected = "ころさんおりてない"
+
+[[case]]
+input = "降りちゃってたねw"
+mode = "hiragana"
+expected = "おりちゃってたねw"
+
+[[case]]
+input = "階段降りにしましょ"
+mode = "hiragana"
+expected = "かいだんおりにしましょ"
+
+[[case]]
+input = "雨降りそう"
+mode = "hiragana"
+expected = "あめふりそう"
+
+[[case]]
+input = "明日雪降るぞ"
+mode = "hiragana"
+expected = "あしたゆきふるぞ"
+
+[[case]]
+input = "星降ると風神の盾で"
+mode = "hiragana"
+expected = "ほしふるとふうじんのたてで"
+
+[[case]]
+input = "水で昇り降りでいいんじゃ?"
+mode = "hiragana"
+expected = "みずでのぼりおりでいいんじゃ?"
+
+[[case]]
+input = "雨降ってきたw"
+mode = "hiragana"
+expected = "あめふってきたw"
