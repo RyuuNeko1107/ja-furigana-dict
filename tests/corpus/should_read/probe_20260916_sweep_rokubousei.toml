@@ -1,0 +1,145 @@
+[[case]]
+input = "漫画版で、六芒星の呪縛をうけたやつですね"
+mode = "hiragana"
+expected = "まんがばんで、ろくぼうせいのじゅばくをうけたやつですね"
+
+[[case]]
+input = "六芒星と逆六芒星でやりましょう"
+mode = "hiragana"
+expected = "ろくぼうせいとぎゃくろくぼうせいでやりましょう"
+
+[[case]]
+input = "六芒星だ"
+mode = "hiragana"
+expected = "ろくぼうせいだ"
+
+[[case]]
+input = "道州制か"
+mode = "hiragana"
+expected = "どうしゅうせいか"
+
+[[case]]
+input = "維新は道州制目指してますねー"
+mode = "hiragana"
+expected = "いしんはどうしゅうせいめざしてますねー"
+
+[[case]]
+input = "双六じいちゃん"
+mode = "hiragana"
+expected = "すごろくじいちゃん"
+
+[[case]]
+input = "双六おじいちゃんw"
+mode = "hiragana"
+expected = "すごろくおじいちゃんw"
+
+[[case]]
+input = "広島の石原 現役は岡山 石原慶幸は岐阜"
+mode = "hiragana"
+expected = "ひろしまのいしはら げんえきはおかやま いしはらよしゆきはぎふ"
+
+[[case]]
+input = "それ爽健美茶"
+mode = "hiragana"
+expected = "それそうけんびちゃ"
+
+[[case]]
+input = "爽健美茶"
+mode = "hiragana"
+expected = "そうけんびちゃ"
+
+[[case]]
+input = "痛帳"
+mode = "hiragana"
+expected = "いたちょう"
+
+[[case]]
+input = "五六時間だね"
+mode = "hiragana"
+expected = "ごろくじかんだね"
+
+[[case]]
+input = "双六"
+mode = "hiragana"
+expected = "すごろく"
+
+[[case]]
+input = "双六じーちゃん!"
+mode = "hiragana"
+expected = "すごろくじーちゃん!"
+
+[[case]]
+input = "双六はクソゲー"
+mode = "hiragana"
+expected = "すごろくはクソゲー"
+
+[[case]]
+input = "当たり前の助六ちゃん"
+mode = "hiragana"
+expected = "あたりまえのすけろくちゃん"
+
+[[case]]
+input = "六本木から赤坂に向かうあたりか"
+mode = "hiragana"
+expected = "ろっぽんぎからあかさかにむかうあたりか"
+
+[[case]]
+input = "三十六計逃げるが勝ち"
+mode = "hiragana"
+expected = "さんじゅうろっけいにげるがかち"
+
+[[case]]
+input = "五臓六腑にしみわたる"
+mode = "hiragana"
+expected = "ごぞうろっぷにしみわたる"
+
+[[case]]
+input = "九州"
+mode = "hiragana"
+expected = "きゅうしゅう"
+
+[[case]]
+input = "本州"
+mode = "hiragana"
+expected = "ほんしゅう"
+
+[[case]]
+input = "欧州"
+mode = "hiragana"
+expected = "おうしゅう"
+
+[[case]]
+input = "通帳みてニヤニヤしよう"
+mode = "hiragana"
+expected = "つうちょうみてニヤニヤしよう"
+
+[[case]]
+input = "シール帳!"
+mode = "hiragana"
+expected = "シールちょう!"
+
+[[case]]
+input = "杉田玄白"
+mode = "hiragana"
+expected = "すぎたげんぱく"
+
+[[case]]
+input = "信玄餅かな"
+mode = "hiragana"
+expected = "しんげんもちかな"
+
+[[case]]
+input = "太鼓の達人みたいww"
+mode = "hiragana"
+expected = "たいこのたつじんみたいww"
+
+[[case]]
+input = "招き猫とか"
+mode = "hiragana"
+expected = "まねきねことか"
+
+[[case]]
+input = "土輝って向井玄樹やろ?"
+mode = "hiragana"
+expected = "つっきってむかいげんじゅやろ?"
+
