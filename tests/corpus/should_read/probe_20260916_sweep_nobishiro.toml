@@ -1,0 +1,131 @@
+# 2026-09-16 全漢字スイープ r73 (胆炊貸壇匿投不頑開疲語敵園集反朝常悟伸邪黄削登兄)
+
+[[case]]
+input = "昨日の炊き方が嘘みたいだ"
+mode = "hiragana"
+expected = "きのうのたきかたがうそみたいだ"
+
+[[case]]
+input = "めっちゃ炊いてるやんwww"
+mode = "hiragana"
+expected = "めっちゃたいてるやんwww"
+
+[[case]]
+input = "大分炊いてる動きはしてたw"
+mode = "hiragana"
+expected = "だいぶたいてるうごきはしてたw"
+
+[[case]]
+input = "叙々苑貸し切りじゃああああ"
+mode = "hiragana"
+expected = "じょじょえんかしきりじゃああああ"
+
+[[case]]
+input = "レフェリー貸やぞは草"
+mode = "hiragana"
+expected = "レフェリーかしやぞはくさ"
+
+[[case]]
+input = "欲かくな!貸を作れ!"
+mode = "hiragana"
+expected = "よくかくな!かしをつくれ!"
+
+[[case]]
+input = "物語って凄いよな"
+mode = "hiragana"
+expected = "ものがたりってすごいよな"
+
+[[case]]
+input = "無言で集りに来た"
+mode = "hiragana"
+expected = "むごんでたかりにきた"
+
+[[case]]
+input = "星集めえらい"
+mode = "hiragana"
+expected = "ほしあつめえらい"
+
+[[case]]
+input = "羊山公園かな?"
+mode = "hiragana"
+expected = "ひつじやまこうえんかな?"
+
+[[case]]
+input = "おお~大分集めたね~"
+mode = "hiragana"
+expected = "おおだいぶあつめたね"
+
+[[case]]
+input = "多分朝"
+mode = "hiragana"
+expected = "たぶんあさ"
+
+[[case]]
+input = "ちょうど起きて朝ごはん中です"
+mode = "hiragana"
+expected = "ちょうどおきてあさごはんちゅうです"
+
+[[case]]
+input = "伸び代しかないと考えるか"
+mode = "hiragana"
+expected = "のびしろしかないとかんがえるか"
+
+[[case]]
+input = "立て伸ばして大文字にしようか"
+mode = "hiragana"
+expected = "たてのばしておおもじにしようか"
+
+[[case]]
+input = "赤黄白のケーブル繋げるのあったのかー"
+mode = "hiragana"
+expected = "あかきしろのケーブルつなげるのあったのかー"
+
+[[case]]
+input = "早々に半分以上削れてた"
+mode = "hiragana"
+expected = "そうそうにはんぶんいじょうけずれてた"
+
+[[case]]
+input = "白哉兄さま~"
+mode = "hiragana"
+expected = "びゃくやにいさま"
+
+[[case]]
+input = "朽木白哉"
+mode = "hiragana"
+expected = "くちきびゃくや"
+
+[[case]]
+input = "掟兄たま"
+mode = "hiragana"
+expected = "おきてあにたま"
+
+[[case]]
+input = "横山兄"
+mode = "hiragana"
+expected = "よこやまあに"
+
+[[case]]
+input = "お兄お兄てこと??"
+mode = "hiragana"
+expected = "おにいおにいてこと??"
+
+[[case]]
+input = "お兄たま!"
+mode = "hiragana"
+expected = "おにいたま!"
+
+[[case]]
+input = "呼び方が兄になったな"
+mode = "hiragana"
+expected = "よびかたがあにになったな"
+
+[[case]]
+input = "消費税は竹下登が発端です"
+mode = "hiragana"
+expected = "しょうひぜいはたけしたのぼるがほったんです"
+
+[[case]]
+input = "1人長風呂してるやつのせいで入れない"
+mode = "hiragana"
+expected = "ひとりながふろしてるやつのせいでいれない"
