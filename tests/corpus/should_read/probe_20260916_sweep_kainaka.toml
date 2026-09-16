@@ -1,0 +1,130 @@
+[[case]]
+input = "ブーメランを更新できるのか否か"
+mode = "hiragana"
+expected = "ブーメランをこうしんできるのかいなか"
+
+[[case]]
+input = "傭兵雇えるか否かですなぁ"
+mode = "hiragana"
+expected = "ようへいやとえるかいなかですなぁ"
+
+[[case]]
+input = "プレイ済みか否かで印象結構変わりそうね"
+mode = "hiragana"
+expected = "プレイずみかいなかでいんしょうけっこうかわりそうね"
+
+[[case]]
+input = "今回はルールに適応できるか否かだな"
+mode = "hiragana"
+expected = "こんかいはルールにてきおうできるかいなかだな"
+
+[[case]]
+input = "稼げる額に限界があるし"
+mode = "hiragana"
+expected = "かせげるがくにげんかいがあるし"
+
+[[case]]
+input = "前回と同じ額にファイターバフがつくくらいかな"
+mode = "hiragana"
+expected = "ぜんかいとおなじがくにファイターバフがつくくらいかな"
+
+[[case]]
+input = "これ売ったらすごい額になりそうw"
+mode = "hiragana"
+expected = "これうったらすごいがくになりそうw"
+
+[[case]]
+input = "額が決まったらすぐ売るぐらいじゃないと"
+mode = "hiragana"
+expected = "がくがきまったらすぐうるぐらいじゃないと"
+
+[[case]]
+input = "あずきちの分の額はアスレチックやりながら考えますか"
+mode = "hiragana"
+expected = "あずきちのぶんのがくはアスレチックやりながらかんがえますか"
+
+[[case]]
+input = "これから除湿しなきゃ行けない"
+mode = "hiragana"
+expected = "これからじょしつしなきゃいけない"
+
+[[case]]
+input = "エアコンで除湿しまくれ"
+mode = "hiragana"
+expected = "エアコンでじょしつしまくれ"
+
+[[case]]
+input = "除湿するしかないっ"
+mode = "hiragana"
+expected = "じょしつするしかないっ"
+
+[[case]]
+input = "沖縄だと常に除湿している"
+mode = "hiragana"
+expected = "おきなわだとつねにじょしつしている"
+
+[[case]]
+input = "大縄きちゃー"
+mode = "hiragana"
+expected = "おおなわきちゃー"
+
+[[case]]
+input = "農業金額きた"
+mode = "hiragana"
+expected = "のうぎょうきんがくきた"
+
+[[case]]
+input = "どっかで昼寝いれとこく"
+mode = "hiragana"
+expected = "どっかでひるねいれとこく"
+
+[[case]]
+input = "寝れる時は寝ときなさい。昼寝しなさい"
+mode = "hiragana"
+expected = "ねれるときはねときなさい。ひるねしなさい"
+
+[[case]]
+input = "切り方に工夫がいるのかな"
+mode = "hiragana"
+expected = "きりかたにくふうがいるのかな"
+
+[[case]]
+input = "ゲント拳奥義"
+mode = "hiragana"
+expected = "ゲントけんおうぎ"
+
+[[case]]
+input = "浮世英寿だったのかこいつ"
+mode = "hiragana"
+expected = "うきよえいすだったのかこいつ"
+
+[[case]]
+input = "裏表紙のほうが見やすい"
+mode = "hiragana"
+expected = "うらびょうしのほうがみやすい"
+
+[[case]]
+input = "これ紙魚とかどうなんだろ"
+mode = "hiragana"
+expected = "これしみとかどうなんだろ"
+
+[[case]]
+input = "とりあえず跳躍力系はいらんか"
+mode = "hiragana"
+expected = "とりあえずちょうやくりょくけいはいらんか"
+
+[[case]]
+input = "かなたんみたいな辞め方は悲しいからな"
+mode = "hiragana"
+expected = "かなたんみたいなやめかたはかなしいからな"
+
+[[case]]
+input = "まぁ複勝安定"
+mode = "hiragana"
+expected = "まぁふくしょうあんてい"
+
+[[case]]
+input = "額に汗して働く"
+mode = "hiragana"
+expected = "ひたいにあせしてはたらく"
+
