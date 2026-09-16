@@ -1,0 +1,400 @@
+[[case]]
+input = "入院棟とかあるんだ"
+mode = "hiragana"
+expected = "にゅういんとうとかあるんだ"
+
+[[case]]
+input = "特別研究棟があやしいか"
+mode = "hiragana"
+expected = "とくべつけんきゅうとうがあやしいか"
+
+[[case]]
+input = "第一研究棟もじゃない?"
+mode = "hiragana"
+expected = "だいいちけんきゅうとうもじゃない?"
+
+[[case]]
+input = "中央棟が北と東で別れてるのか"
+mode = "hiragana"
+expected = "ちゅうおうとうがきたとひがしでわかれてるのか"
+
+[[case]]
+input = "真ん中の棟を消火したほうがいい"
+mode = "hiragana"
+expected = "まんなかのとうをしょうかしたほうがいい"
+
+[[case]]
+input = "真ん中の棟も燃えてるの?"
+mode = "hiragana"
+expected = "まんなかのとうももえてるの?"
+
+[[case]]
+input = "どうしても片方の棟でガス欠になるのよね"
+mode = "hiragana"
+expected = "どうしてもかたほうのとうでガスけつになるのよね"
+
+[[case]]
+input = "全棟に対して専門家の点検"
+mode = "hiragana"
+expected = "ぜんとうにたいしてせんもんかのてんけん"
+
+[[case]]
+input = "研究棟広い"
+mode = "hiragana"
+expected = "けんきゅうとうひろい"
+
+[[case]]
+input = "入院棟???"
+mode = "hiragana"
+expected = "にゅういんとう???"
+
+[[case]]
+input = "隔離病棟かな?"
+mode = "hiragana"
+expected = "かくりびょうとうかな?"
+
+[[case]]
+input = "棟梁"
+mode = "hiragana"
+expected = "とうりょう"
+
+[[case]]
+input = "呉はいいぞ"
+mode = "hiragana"
+expected = "くれはいいぞ"
+
+[[case]]
+input = "呉もいいね~!"
+mode = "hiragana"
+expected = "くれもいいね!"
+
+[[case]]
+input = "呉なら冷麺もあるね"
+mode = "hiragana"
+expected = "くれなられいめんもあるね"
+
+[[case]]
+input = "呉にいっぱいいるよ"
+mode = "hiragana"
+expected = "くれにいっぱいいるよ"
+
+[[case]]
+input = "呉に来てクレ"
+mode = "hiragana"
+expected = "くれにきてクレ"
+
+[[case]]
+input = "呉にも海自の基地あるよ"
+mode = "hiragana"
+expected = "くれにもかいじのきちあるよ"
+
+[[case]]
+input = "広島県呉市民として"
+mode = "hiragana"
+expected = "ひろしまけんくれしみんとして"
+
+[[case]]
+input = "呉服店だと"
+mode = "hiragana"
+expected = "ごふくてんだと"
+
+[[case]]
+input = "春秋戦国時代の呉の王様の話やな"
+mode = "hiragana"
+expected = "しゅんじゅうせんごくじだいのごのおうさまのはなしやな"
+
+[[case]]
+input = "魏呉蜀やな"
+mode = "hiragana"
+expected = "ぎごしょくやな"
+
+[[case]]
+input = "呉駅から歩いてすぐ"
+mode = "hiragana"
+expected = "くれえきからあるいてすぐ"
+
+[[case]]
+input = "急な土砂降り@呉市"
+mode = "hiragana"
+expected = "きゅうなどしゃぶり@くれし"
+
+[[case]]
+input = "斎藤佑樹と同世代"
+mode = "hiragana"
+expected = "さいとうゆうきとどうせだい"
+
+[[case]]
+input = "斎藤佑樹か?"
+mode = "hiragana"
+expected = "さいとうゆうきか?"
+
+[[case]]
+input = "新田真剣佑"
+mode = "hiragana"
+expected = "にったまっけんゆう"
+
+[[case]]
+input = "松明翁"
+mode = "hiragana"
+expected = "たいまつおきな"
+
+[[case]]
+input = "竹取翁はおじいちゃん"
+mode = "hiragana"
+expected = "たけとりおきなはおじいちゃん"
+
+[[case]]
+input = "塞翁だね"
+mode = "hiragana"
+expected = "さいおうだね"
+
+[[case]]
+input = "塞翁が馬"
+mode = "hiragana"
+expected = "さいおうがうま"
+
+[[case]]
+input = "竹取の翁"
+mode = "hiragana"
+expected = "たけとりのおきな"
+
+[[case]]
+input = "蒙を啓かれたね!"
+mode = "hiragana"
+expected = "もうをひらかれたね!"
+
+[[case]]
+input = "舵輪"
+mode = "hiragana"
+expected = "だりん"
+
+[[case]]
+input = "ハードな舵取は影響あるのね"
+mode = "hiragana"
+expected = "ハードなかじとりはえいきょうあるのね"
+
+[[case]]
+input = "面舵いっぱい"
+mode = "hiragana"
+expected = "おもかじいっぱい"
+
+[[case]]
+input = "また逢う日まで"
+mode = "hiragana"
+expected = "またあうひまで"
+
+[[case]]
+input = "逢引きの合図"
+mode = "hiragana"
+expected = "あいびきのあいず"
+
+[[case]]
+input = "逢いたい"
+mode = "hiragana"
+expected = "あいたい"
+
+[[case]]
+input = "出逢い"
+mode = "hiragana"
+expected = "であい"
+
+[[case]]
+input = "拙すぎるw"
+mode = "hiragana"
+expected = "つたなすぎるw"
+
+[[case]]
+input = "1の拙さも良き"
+mode = "hiragana"
+expected = "いちのつたなさもよき"
+
+[[case]]
+input = "拙者はるろうに"
+mode = "hiragana"
+expected = "せっしゃはるろうに"
+
+[[case]]
+input = "稚拙"
+mode = "hiragana"
+expected = "ちせつ"
+
+[[case]]
+input = "本間朋晃は?"
+mode = "hiragana"
+expected = "ほんまともあきは?"
+
+[[case]]
+input = "兎田晃大"
+mode = "hiragana"
+expected = "うさだこうだい"
+
+[[case]]
+input = "塚原仲晃"
+mode = "hiragana"
+expected = "つかはらなかあき"
+
+[[case]]
+input = "吉川晃司"
+mode = "hiragana"
+expected = "よしかわこうじ"
+
+[[case]]
+input = "中村晃"
+mode = "hiragana"
+expected = "なかむらこう"
+
+[[case]]
+input = "麻原彰晃"
+mode = "hiragana"
+expected = "あさはらしょうこう"
+
+[[case]]
+input = "肋骨かな"
+mode = "hiragana"
+expected = "ろっこつかな"
+
+[[case]]
+input = "臆病者"
+mode = "hiragana"
+expected = "おくびょうもの"
+
+[[case]]
+input = "癇癪起こしてる笑"
+mode = "hiragana"
+expected = "かんしゃくおこしてるわらい"
+
+[[case]]
+input = "小癪な!"
+mode = "hiragana"
+expected = "こしゃくな!"
+
+[[case]]
+input = "操舵性"
+mode = "hiragana"
+expected = "そうだせい"
+
+[[case]]
+input = "稲穂"
+mode = "hiragana"
+expected = "いなほ"
+
+[[case]]
+input = "赤穂浪士おるな"
+mode = "hiragana"
+expected = "あこうろうしおるな"
+
+[[case]]
+input = "俯瞰で見たら"
+mode = "hiragana"
+expected = "ふかんでみたら"
+
+[[case]]
+input = "俯き顔たすかる"
+mode = "hiragana"
+expected = "うつむきかおたすかる"
+
+[[case]]
+input = "素朴なバット"
+mode = "hiragana"
+expected = "そぼくなバット"
+
+[[case]]
+input = "朴念仁"
+mode = "hiragana"
+expected = "ぼくねんじん"
+
+[[case]]
+input = "贈呈"
+mode = "hiragana"
+expected = "ぞうてい"
+
+[[case]]
+input = "進呈"
+mode = "hiragana"
+expected = "しんてい"
+
+[[case]]
+input = "露呈してる"
+mode = "hiragana"
+expected = "ろていしてる"
+
+[[case]]
+input = "靭帯"
+mode = "hiragana"
+expected = "じんたい"
+
+[[case]]
+input = "強靭"
+mode = "hiragana"
+expected = "きょうじん"
+
+[[case]]
+input = "蒙古タンメン"
+mode = "hiragana"
+expected = "もうこたんめん"
+
+[[case]]
+input = "啓蒙"
+mode = "hiragana"
+expected = "けいもう"
+
+[[case]]
+input = "侘助!"
+mode = "hiragana"
+expected = "わびすけ!"
+
+[[case]]
+input = "侘び寂び"
+mode = "hiragana"
+expected = "わびさび"
+
+[[case]]
+input = "本田圭佑"
+mode = "hiragana"
+expected = "ほんだけいすけ"
+
+[[case]]
+input = "周東佑京"
+mode = "hiragana"
+expected = "しゅうとうゆうきょう"
+
+[[case]]
+input = "彷彿とさせるねw"
+mode = "hiragana"
+expected = "ほうふつとさせるねw"
+
+[[case]]
+input = "釈迦に説法"
+mode = "hiragana"
+expected = "しゃかにせっぽう"
+
+[[case]]
+input = "迦具土"
+mode = "hiragana"
+expected = "かぐつち"
+
+[[case]]
+input = "吟遊詩人"
+mode = "hiragana"
+expected = "ぎんゆうしじん"
+
+[[case]]
+input = "吟味"
+mode = "hiragana"
+expected = "ぎんみ"
+
+[[case]]
+input = "純米大吟醸"
+mode = "hiragana"
+expected = "じゅんべいだいぎんじょう"
+
+[[case]]
+input = "皮膚"
+mode = "hiragana"
+expected = "ひふ"
+
+[[case]]
+input = "完膚なきまでに"
+mode = "hiragana"
+expected = "かんぷなきまでに"
+
