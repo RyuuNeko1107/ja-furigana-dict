@@ -1,0 +1,95 @@
+[[case]]
+input = "肉塊の完成ww"
+mode = "hiragana"
+expected = "にくかいのかんせいww"
+
+[[case]]
+input = "根塊見送ってもいい"
+mode = "hiragana"
+expected = "こんかいみおくってもいい"
+
+[[case]]
+input = "呪怨!?"
+mode = "hiragana"
+expected = "じゅおん!?"
+
+[[case]]
+input = "呪怨みたいに"
+mode = "hiragana"
+expected = "じゅおんみたいに"
+
+[[case]]
+input = "小樽やばそうやな"
+mode = "hiragana"
+expected = "おたるやばそうやな"
+
+[[case]]
+input = "札幌、小樽か"
+mode = "hiragana"
+expected = "さっぽろ、おたるか"
+
+[[case]]
+input = "脱泡"
+mode = "hiragana"
+expected = "だっぽう"
+
+[[case]]
+input = "お豆腐、消泡剤入ってないの選ばなあかんで"
+mode = "hiragana"
+expected = "おとうふ、しょうほうざいはいってないのえらばなあかんで"
+
+[[case]]
+input = "夢幻泡影"
+mode = "hiragana"
+expected = "むげんほうよう"
+
+[[case]]
+input = "サンキュー彩艶"
+mode = "hiragana"
+expected = "サンキューざいおん"
+
+[[case]]
+input = "待て。の文字の彩度上がった?"
+mode = "hiragana"
+expected = "まて。のもじのさいどあがった?"
+
+[[case]]
+input = "杉本彩さんかー"
+mode = "hiragana"
+expected = "すぎもとあやさんかー"
+
+[[case]]
+input = "これ桑田なら甲子園いけるぞ!!!"
+mode = "hiragana"
+expected = "これくわたならこうしえんいけるぞ!!!"
+
+[[case]]
+input = "高口鈍足すぎる"
+mode = "hiragana"
+expected = "たかぐちどんそくすぎる"
+
+[[case]]
+input = "供給が乏しかったからか?w"
+mode = "hiragana"
+expected = "きょうきゅうがとぼしかったからか?w"
+
+[[case]]
+input = "ちなみに弟は航大"
+mode = "hiragana"
+expected = "ちなみにおとうとはこうだい"
+
+[[case]]
+input = "筋膜ローラー?"
+mode = "hiragana"
+expected = "きんまくローラー?"
+
+[[case]]
+input = "レクイエム2発はなかなかの損耗"
+mode = "hiragana"
+expected = "レクイエムにはつはなかなかのそんもう"
+
+[[case]]
+input = "横隔膜"
+mode = "hiragana"
+expected = "おうかくまく"
+
