@@ -1,0 +1,395 @@
+[[case]]
+input = "古田敦也"
+mode = "hiragana"
+expected = "ふるたあつや"
+
+[[case]]
+input = "兵庫の古田敦也ね"
+mode = "hiragana"
+expected = "ひょうごのふるたあつやね"
+
+[[case]]
+input = "大島敦さんも大きく頷いている。"
+mode = "hiragana"
+expected = "おおしまあつしさんもおおきくうなずいている。"
+
+[[case]]
+input = "敦盛や..."
+mode = "hiragana"
+expected = "あつもりや..."
+
+[[case]]
+input = "敦賀気比の吉田か?"
+mode = "hiragana"
+expected = "つるがけひのよしだか?"
+
+[[case]]
+input = "平敦盛の舞、、、"
+mode = "hiragana"
+expected = "たいらのあつもりのまい、、、"
+
+[[case]]
+input = "そこは敦盛踊ろうや"
+mode = "hiragana"
+expected = "そこはあつもりおどろうや"
+
+[[case]]
+input = "猗窩座ってことね"
+mode = "hiragana"
+expected = "あかざってことね"
+
+[[case]]
+input = "猗窩座かな_"
+mode = "hiragana"
+expected = "あかざかな_"
+
+[[case]]
+input = "眼窩深いなあ"
+mode = "hiragana"
+expected = "がんかふかいなあ"
+
+[[case]]
+input = "眼窩骨折してるな"
+mode = "hiragana"
+expected = "がんかこっせつしてるな"
+
+[[case]]
+input = "銚子丸は銚子市にはないです"
+mode = "hiragana"
+expected = "ちょうしまるはちょうししにはないです"
+
+[[case]]
+input = "お銚子でいいよ"
+mode = "hiragana"
+expected = "おちょうしでいいよ"
+
+[[case]]
+input = "銚子やね"
+mode = "hiragana"
+expected = "ちょうしやね"
+
+[[case]]
+input = "天翔十字鳳!"
+mode = "hiragana"
+expected = "てんしょうじゅうじほう!"
+
+[[case]]
+input = "南斗鳳凰拳奥義!鳳凰幻魔拳!(違う)"
+mode = "hiragana"
+expected = "なんとほうおうけんおうぎ!ほうおうげんまけん!(ちがう)"
+
+[[case]]
+input = "鳳凰院凶真だろ常考"
+mode = "hiragana"
+expected = "ほうおういんきょうしんだろじょうこう"
+
+[[case]]
+input = "天鳳!!"
+mode = "hiragana"
+expected = "てんほう!!"
+
+[[case]]
+input = "屋根の上の鳳凰見たい"
+mode = "hiragana"
+expected = "やねのうえのほうおうみたい"
+
+[[case]]
+input = "火の鳥鳳凰編を思い出した"
+mode = "hiragana"
+expected = "ひのとりほうおうへんをおもいだした"
+
+[[case]]
+input = "欣子だよ"
+mode = "hiragana"
+expected = "きんこだよ"
+
+[[case]]
+input = "北大路欣也"
+mode = "hiragana"
+expected = "きたおおじきんや"
+
+[[case]]
+input = "欣ちゃん"
+mode = "hiragana"
+expected = "きんちゃん"
+
+[[case]]
+input = "颯爽と登場!"
+mode = "hiragana"
+expected = "さっそうととうじょう!"
+
+[[case]]
+input = "そこに颯爽と現れるイチロー選手"
+mode = "hiragana"
+expected = "そこにさっそうとあらわれるイチローせんしゅ"
+
+[[case]]
+input = "磐梯吾妻スカイラインあるのか"
+mode = "hiragana"
+expected = "ばんだいあづまスカイラインあるのか"
+
+[[case]]
+input = "京急も常磐線も絶滅"
+mode = "hiragana"
+expected = "けいきゅうもときわせんもぜつめつ"
+
+[[case]]
+input = "コントロール上げて磐石ですね"
+mode = "hiragana"
+expected = "コントロールあげてばんじゃくですね"
+
+[[case]]
+input = "赤磐市"
+mode = "hiragana"
+expected = "あかいわし"
+
+[[case]]
+input = "ジュビロ磐田へ"
+mode = "hiragana"
+expected = "じゅびろいわたへ"
+
+[[case]]
+input = "享楽さんか"
+mode = "hiragana"
+expected = "きょうらくさんか"
+
+[[case]]
+input = "先行者利益を享受しよう"
+mode = "hiragana"
+expected = "せんこうしゃりえきをきょうじゅしよう"
+
+[[case]]
+input = "だから享年65がSRだったのか"
+mode = "hiragana"
+expected = "だからきょうねんろくじゅうごがSRだったのか"
+
+[[case]]
+input = "これは忍びの末裔"
+mode = "hiragana"
+expected = "これはしのびのまつえい"
+
+[[case]]
+input = "熊野の八咫烏の末裔なら"
+mode = "hiragana"
+expected = "くまののやたがらすのまつえいなら"
+
+[[case]]
+input = "滅却師の末裔か!?"
+mode = "hiragana"
+expected = "めっきゃくしのまつえいか!?"
+
+[[case]]
+input = "魔裟斗やん"
+mode = "hiragana"
+expected = "まさとやん"
+
+[[case]]
+input = "大袈裟だなぁ"
+mode = "hiragana"
+expected = "おおげさだなぁ"
+
+[[case]]
+input = "修行僧みたいな袈裟っぽい服装"
+mode = "hiragana"
+expected = "しゅぎょうそうみたいなけさっぽいふくそう"
+
+[[case]]
+input = "猛禽類のスタイルなんよ"
+mode = "hiragana"
+expected = "もうきんるいのスタイルなんよ"
+
+[[case]]
+input = "嘲笑おかゆん"
+mode = "hiragana"
+expected = "ちょうしょうおかゆん"
+
+[[case]]
+input = "一世紀前を嘲笑うように"
+mode = "hiragana"
+expected = "いちせいきまえをあざわらうように"
+
+[[case]]
+input = "自嘲の笑いだよきっと"
+mode = "hiragana"
+expected = "じちょうのわらいだよきっと"
+
+[[case]]
+input = "空箱を嘲る勇者嫌すぎるな"
+mode = "hiragana"
+expected = "からばこをあざけるゆうしゃいやすぎるな"
+
+[[case]]
+input = "天真爛漫やなあ"
+mode = "hiragana"
+expected = "てんしんらんまんやなあ"
+
+[[case]]
+input = "絢爛舞踏しとるwww"
+mode = "hiragana"
+expected = "けんらんぶとうしとるwww"
+
+[[case]]
+input = "春爛漫ボールw"
+mode = "hiragana"
+expected = "はるらんまんボールw"
+
+[[case]]
+input = "桜花爛漫"
+mode = "hiragana"
+expected = "おうからんまん"
+
+[[case]]
+input = "王子として糜爛な生活かな"
+mode = "hiragana"
+expected = "おうじとしてびらんなせいかつかな"
+
+[[case]]
+input = "木村昴さんだ"
+mode = "hiragana"
+expected = "きむらすばるさんだ"
+
+[[case]]
+input = "昴と彗星"
+mode = "hiragana"
+expected = "すばるとすいせい"
+
+[[case]]
+input = "SUBARUは昴やぞ"
+mode = "hiragana"
+expected = "スバルはすばるやぞ"
+
+[[case]]
+input = "大江戸昴"
+mode = "hiragana"
+expected = "おおえどすばる"
+
+[[case]]
+input = "気焔状態になったら"
+mode = "hiragana"
+expected = "きえんじょうたいになったら"
+
+[[case]]
+input = "火焔強いよ"
+mode = "hiragana"
+expected = "かえんつよいよ"
+
+[[case]]
+input = "焔の錬金術師"
+mode = "hiragana"
+expected = "ほのおのれんきんじゅつし"
+
+[[case]]
+input = "青い焔"
+mode = "hiragana"
+expected = "あおいほのお"
+
+[[case]]
+input = "深淵なる焔"
+mode = "hiragana"
+expected = "しんえんなるほのお"
+
+[[case]]
+input = "魔犬慟哭破"
+mode = "hiragana"
+expected = "まけんどうこくは"
+
+[[case]]
+input = "ナナリーの慟哭が胸にクル"
+mode = "hiragana"
+expected = "ナナリーのどうこくがむねにクル"
+
+[[case]]
+input = "哭きのミコ"
+mode = "hiragana"
+expected = "なきのミコ"
+
+[[case]]
+input = "星の哭く街カサンドラ"
+mode = "hiragana"
+expected = "ほしのなくまちカサンドラ"
+
+[[case]]
+input = "広陵高校か"
+mode = "hiragana"
+expected = "こうりょうこうこうか"
+
+[[case]]
+input = "陵南戦の湘北ってことね"
+mode = "hiragana"
+expected = "りょうなんせんのしょうほくってことね"
+
+[[case]]
+input = "陵辱"
+mode = "hiragana"
+expected = "りょうじょく"
+
+[[case]]
+input = "石川の星陵だっけ"
+mode = "hiragana"
+expected = "いしかわのせいりょうだっけ"
+
+[[case]]
+input = "拓大紅陵対有明の決勝とかあるかもなあ"
+mode = "hiragana"
+expected = "たくだいこうりょうたいありあけのけっしょうとかあるかもなあ"
+
+[[case]]
+input = "聖帝十字陵"
+mode = "hiragana"
+expected = "せいていじゅうじりょう"
+
+[[case]]
+input = "天使の陵墓か"
+mode = "hiragana"
+expected = "てんしのりょうぼか"
+
+[[case]]
+input = "県庁の真北がね丘陵なんでね"
+mode = "hiragana"
+expected = "けんちょうのしんほくがねきゅうりょうなんでね"
+
+[[case]]
+input = "弔い合戦や"
+mode = "hiragana"
+expected = "とむらいがっせんや"
+
+[[case]]
+input = "やられた恐竜を弔う心!"
+mode = "hiragana"
+expected = "やられたきょうりゅうをとむらうこころ!"
+
+[[case]]
+input = "手厚く弔おう"
+mode = "hiragana"
+expected = "てあつくとむらおう"
+
+[[case]]
+input = "弔えるだけ原作よりいいかもしれない"
+mode = "hiragana"
+expected = "とむらえるだけげんさくよりいいかもしれない"
+
+[[case]]
+input = "赤塚不二夫の弔事かて"
+mode = "hiragana"
+expected = "あかつかふじおのちょうじかて"
+
+[[case]]
+input = "慶弔休暇かと..."
+mode = "hiragana"
+expected = "けいちょうきゅうかかと..."
+
+[[case]]
+input = "慧眼があるね"
+mode = "hiragana"
+expected = "けいがんがあるね"
+
+[[case]]
+input = "ご慧眼"
+mode = "hiragana"
+expected = "ごけいがん"
+
+[[case]]
+input = "お母さん慧眼だな"
+mode = "hiragana"
+expected = "おかあさんけいがんだな"
+
