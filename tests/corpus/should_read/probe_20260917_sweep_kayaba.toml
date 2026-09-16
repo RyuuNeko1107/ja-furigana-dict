@@ -1,0 +1,270 @@
+[[case]]
+input = "中田翔くるか?"
+mode = "hiragana"
+expected = "なかたしょうくるか?"
+
+[[case]]
+input = "中田翔"
+mode = "hiragana"
+expected = "なかたしょう"
+
+[[case]]
+input = "白の月牙天翔"
+mode = "hiragana"
+expected = "しろのげつがてんしょう"
+
+[[case]]
+input = "月牙天衝"
+mode = "hiragana"
+expected = "げつがてんしょう"
+
+[[case]]
+input = "覇王翔吼拳を使わざるをえない"
+mode = "hiragana"
+expected = "はおうしょうこうけんをつかわざるをえない"
+
+[[case]]
+input = "YAGOOは茅場だったってこと?"
+mode = "hiragana"
+expected = "ヤゴーはかやばだったってこと?"
+
+[[case]]
+input = "だが茅場がそれを許すかな"
+mode = "hiragana"
+expected = "だがかやばがそれをゆるすかな"
+
+[[case]]
+input = "全部茅場が悪い"
+mode = "hiragana"
+expected = "ぜんぶかやばがわるい"
+
+[[case]]
+input = "SAOの茅場やん"
+mode = "hiragana"
+expected = "SAOのかやばやん"
+
+[[case]]
+input = "茅場晶彦出てきたぞ!"
+mode = "hiragana"
+expected = "かやばあきひこでてきたぞ!"
+
+[[case]]
+input = "渡部暁斗ってオリンピックの人?"
+mode = "hiragana"
+expected = "わたなべあきとってオリンピックのひと?"
+
+[[case]]
+input = "関暁夫みたいになってきた"
+mode = "hiragana"
+expected = "せきあきおみたいになってきた"
+
+[[case]]
+input = "右肘左肘交互に見て"
+mode = "hiragana"
+expected = "みぎひじひだりひじこうごにみて"
+
+[[case]]
+input = "左肘交互に見てー"
+mode = "hiragana"
+expected = "ひだりひじこうごにみてー"
+
+[[case]]
+input = "萌声だろ"
+mode = "hiragana"
+expected = "もえごえだろ"
+
+[[case]]
+input = "萌えキャラは壊すとポイント貰えるのよ?"
+mode = "hiragana"
+expected = "もえキャラはこわすとポイントもらえるのよ?"
+
+[[case]]
+input = "櫻井翔さん"
+mode = "hiragana"
+expected = "さくらいしょうさん"
+
+[[case]]
+input = "哀川翔かよw"
+mode = "hiragana"
+expected = "あいかわしょうかよw"
+
+[[case]]
+input = "暁?"
+mode = "hiragana"
+expected = "あかつき?"
+
+[[case]]
+input = "春眠暁を覚えず"
+mode = "hiragana"
+expected = "しゅんみんあかつきをおぼえず"
+
+[[case]]
+input = "払暁"
+mode = "hiragana"
+expected = "ふつぎょう"
+
+[[case]]
+input = "200キロは大谷翔平よりはやい!!"
+mode = "hiragana"
+expected = "にひゃくキロはおおたにしょうへいよりはやい!!"
+
+[[case]]
+input = "飛翔時間これいくつのかしら?"
+mode = "hiragana"
+expected = "ひしょうじかんこれいくつのかしら?"
+
+[[case]]
+input = "翔んで埼玉"
+mode = "hiragana"
+expected = "とんでさいたま"
+
+[[case]]
+input = "天翔ける龍の〆切"
+mode = "hiragana"
+expected = "あまがけるりゅうのしめきり"
+
+[[case]]
+input = "瑞鶴翔鶴"
+mode = "hiragana"
+expected = "ずいかくしょうかく"
+
+[[case]]
+input = "嗅覚はトップレベルよ"
+mode = "hiragana"
+expected = "きゅうかくはトップレベルよ"
+
+[[case]]
+input = "心臓を捧げよ"
+mode = "hiragana"
+expected = "しんぞうをささげよ"
+
+[[case]]
+input = "総帥すげえな"
+mode = "hiragana"
+expected = "そうすいすげえな"
+
+[[case]]
+input = "蛙やん"
+mode = "hiragana"
+expected = "かえるやん"
+
+[[case]]
+input = "通貨単位狂ってるw"
+mode = "hiragana"
+expected = "つうかたんいくるってるw"
+
+[[case]]
+input = "雑貨屋のお香すコ"
+mode = "hiragana"
+expected = "ざっかやのおこうすコ"
+
+[[case]]
+input = "いただ金貨"
+mode = "hiragana"
+expected = "いただきんか"
+
+[[case]]
+input = "鉄兜"
+mode = "hiragana"
+expected = "てつかぶと"
+
+[[case]]
+input = "揉めるんじゃない?"
+mode = "hiragana"
+expected = "もめるんじゃない?"
+
+[[case]]
+input = "栽培?"
+mode = "hiragana"
+expected = "さいばい?"
+
+[[case]]
+input = "ポエムで培った力"
+mode = "hiragana"
+expected = "ポエムでつちかったちから"
+
+[[case]]
+input = "雛見沢ばっばい"
+mode = "hiragana"
+expected = "ひなみさわばっばい"
+
+[[case]]
+input = "茅の輪くぐりしてから行くかw"
+mode = "hiragana"
+expected = "ちのわくぐりしてからいくかw"
+
+[[case]]
+input = "ほな茅ヶ崎かー"
+mode = "hiragana"
+expected = "ほなちがさきかー"
+
+[[case]]
+input = "肘うちw"
+mode = "hiragana"
+expected = "ひじうちw"
+
+[[case]]
+input = "糖尿病になる"
+mode = "hiragana"
+expected = "とうにょうびょうになる"
+
+[[case]]
+input = "頻尿w"
+mode = "hiragana"
+expected = "ひんにょうw"
+
+[[case]]
+input = "利尿作用あるものがいいね"
+mode = "hiragana"
+expected = "りにょうさようあるものがいいね"
+
+[[case]]
+input = "貯蓄しときたいわね"
+mode = "hiragana"
+expected = "ちょちくしときたいわね"
+
+[[case]]
+input = "タネの備蓄ないよぉ..."
+mode = "hiragana"
+expected = "タネのびちくないよぉ..."
+
+[[case]]
+input = "蓄積してるんじゃないか"
+mode = "hiragana"
+expected = "ちくせきしてるんじゃないか"
+
+[[case]]
+input = "亜空間だ"
+mode = "hiragana"
+expected = "あくうかんだ"
+
+[[case]]
+input = "堪忍袋"
+mode = "hiragana"
+expected = "かんにんぶくろ"
+
+[[case]]
+input = "奴隷だな"
+mode = "hiragana"
+expected = "どれいだな"
+
+[[case]]
+input = "豆粒みたい"
+mode = "hiragana"
+expected = "まめつぶみたい"
+
+[[case]]
+input = "尺八"
+mode = "hiragana"
+expected = "しゃくはち"
+
+[[case]]
+input = "巌流島"
+mode = "hiragana"
+expected = "がんりゅうじま"
+
+[[case]]
+input = "瞳が綺麗"
+mode = "hiragana"
+expected = "ひとみがきれい"
+
