@@ -1,0 +1,480 @@
+[[case]]
+input = "遡上"
+mode = "hiragana"
+expected = "そじょう"
+
+[[case]]
+input = "サケの遡上"
+mode = "hiragana"
+expected = "サケのそじょう"
+
+[[case]]
+input = "鮭は冬に遡上してくるからねぇ"
+mode = "hiragana"
+expected = "さけはふゆにそじょうしてくるからねぇ"
+
+[[case]]
+input = "遡上する"
+mode = "hiragana"
+expected = "そじょうする"
+
+[[case]]
+input = "遡上してくる川なのか"
+mode = "hiragana"
+expected = "そじょうしてくるかわなのか"
+
+[[case]]
+input = "遡上エリアがある"
+mode = "hiragana"
+expected = "そじょうエリアがある"
+
+[[case]]
+input = "回遊?遡上?"
+mode = "hiragana"
+expected = "かいゆう?そじょう?"
+
+[[case]]
+input = "道頓堀を遡上してきたマグロ"
+mode = "hiragana"
+expected = "どうとんぼりをそじょうしてきたマグロ"
+
+[[case]]
+input = "川が遡上してきてる"
+mode = "hiragana"
+expected = "かわがそじょうしてきてる"
+
+[[case]]
+input = "2020年まで遡ってたやつ"
+mode = "hiragana"
+expected = "にせんにじゅうねんまでさかのぼってたやつ"
+
+[[case]]
+input = "遡れるのありがたいけどね"
+mode = "hiragana"
+expected = "さかのぼれるのありがたいけどね"
+
+[[case]]
+input = "時間遡行とかが多いよね"
+mode = "hiragana"
+expected = "じかんそこうとかがおおいよね"
+
+[[case]]
+input = "心疾患が有ったかもしれない"
+mode = "hiragana"
+expected = "しんしっかんがあったかもしれない"
+
+[[case]]
+input = "精神疾患で無罪"
+mode = "hiragana"
+expected = "せいしんしっかんでむざい"
+
+[[case]]
+input = "自己免疫疾患だっけ?"
+mode = "hiragana"
+expected = "じこめんえきしっかんだっけ?"
+
+[[case]]
+input = "罹患した"
+mode = "hiragana"
+expected = "りかんした"
+
+[[case]]
+input = "リウマチを患っているのに"
+mode = "hiragana"
+expected = "リウマチをわずらっているのに"
+
+[[case]]
+input = "外患誘致"
+mode = "hiragana"
+expected = "がいかんゆうち"
+
+[[case]]
+input = "急患バー"
+mode = "hiragana"
+expected = "きゅうかんバー"
+
+[[case]]
+input = "賜える"
+mode = "hiragana"
+expected = "たまえる"
+
+[[case]]
+input = "賜えよう"
+mode = "hiragana"
+expected = "たまえよう"
+
+[[case]]
+input = "聴かせ賜え"
+mode = "hiragana"
+expected = "きかせたまえ"
+
+[[case]]
+input = "努力の賜物だよ"
+mode = "hiragana"
+expected = "どりょくのたまものだよ"
+
+[[case]]
+input = "下賜された"
+mode = "hiragana"
+expected = "かしされた"
+
+[[case]]
+input = "王に賜るものを"
+mode = "hiragana"
+expected = "おうにたまわるものを"
+
+[[case]]
+input = "置賜言うほど強くないぞ"
+mode = "hiragana"
+expected = "おきたまいうほどつよくないぞ"
+
+[[case]]
+input = "免許貪れるのか"
+mode = "hiragana"
+expected = "めんきょむさぼれるのか"
+
+[[case]]
+input = "税を貪る"
+mode = "hiragana"
+expected = "ぜいをむさぼる"
+
+[[case]]
+input = "龍角散を貪る"
+mode = "hiragana"
+expected = "りゅうかくさんをむさぼる"
+
+[[case]]
+input = "貪欲ウサギ"
+mode = "hiragana"
+expected = "どんよくウサギ"
+
+[[case]]
+input = "成分表と睨めっとしなかった?"
+mode = "hiragana"
+expected = "せいぶんひょうとにらめっとしなかった?"
+
+[[case]]
+input = "睨めっこ大会や"
+mode = "hiragana"
+expected = "にらめっこたいかいや"
+
+[[case]]
+input = "フブにゃに睨まれた券ですね"
+mode = "hiragana"
+expected = "フブにゃににらまれたけんですね"
+
+[[case]]
+input = "睨み合い"
+mode = "hiragana"
+expected = "にらみあい"
+
+[[case]]
+input = "ふわっちも螺旋丸うてる?"
+mode = "hiragana"
+expected = "ふわっちもらせんがんうてる?"
+
+[[case]]
+input = "ナルトの螺旋丸とかも"
+mode = "hiragana"
+expected = "ナルトのらせんがんとかも"
+
+[[case]]
+input = "不破湊で螺旋丸あつい"
+mode = "hiragana"
+expected = "ふわみなとでらせんがんあつい"
+
+[[case]]
+input = "螺旋階段の部屋"
+mode = "hiragana"
+expected = "らせんかいだんのへや"
+
+[[case]]
+input = "法螺貝ww"
+mode = "hiragana"
+expected = "ほらがいww"
+
+[[case]]
+input = "螺鈿ちゃんだけ"
+mode = "hiragana"
+expected = "らでんちゃんだけ"
+
+[[case]]
+input = "螺旋力"
+mode = "hiragana"
+expected = "らせんりょく"
+
+[[case]]
+input = "とりあえず串盛りっしょ!"
+mode = "hiragana"
+expected = "とりあえずくしもりっしょ!"
+
+[[case]]
+input = "竹串?"
+mode = "hiragana"
+expected = "たけぐし?"
+
+[[case]]
+input = "竹串は焼き鳥なのよ"
+mode = "hiragana"
+expected = "たけぐしはやきとりなのよ"
+
+[[case]]
+input = "串刺しや"
+mode = "hiragana"
+expected = "くしざしや"
+
+[[case]]
+input = "串カツ屋で働いてそう"
+mode = "hiragana"
+expected = "くしかつやではたらいてそう"
+
+[[case]]
+input = "串本なんだ"
+mode = "hiragana"
+expected = "くしもとなんだ"
+
+[[case]]
+input = "串田あきらさん"
+mode = "hiragana"
+expected = "くしだあきらさん"
+
+[[case]]
+input = "巣鴨プリズン"
+mode = "hiragana"
+expected = "すがもプリズン"
+
+[[case]]
+input = "合鴨かな"
+mode = "hiragana"
+expected = "あいがもかな"
+
+[[case]]
+input = "家鴨って書いてアヒルなんだよね"
+mode = "hiragana"
+expected = "あひるってかいてアヒルなんだよね"
+
+[[case]]
+input = "鴨鍋きちゃああ"
+mode = "hiragana"
+expected = "かもなべきちゃああ"
+
+[[case]]
+input = "熾烈なレギュラー争いw"
+mode = "hiragana"
+expected = "しれつなレギュラーあらそいw"
+
+[[case]]
+input = "火熾すの上手いなw"
+mode = "hiragana"
+expected = "ひおこすのうまいなw"
+
+[[case]]
+input = "ポルカ驚愕"
+mode = "hiragana"
+expected = "ポルカきょうがく"
+
+[[case]]
+input = "愕然とするねねちw"
+mode = "hiragana"
+expected = "がくぜんとするねねちw"
+
+[[case]]
+input = "受水槽落ちるやつね"
+mode = "hiragana"
+expected = "じゅすいそうおちるやつね"
+
+[[case]]
+input = "浴槽?"
+mode = "hiragana"
+expected = "よくそう?"
+
+[[case]]
+input = "歯槽膿漏かな"
+mode = "hiragana"
+expected = "しそうのうろうかな"
+
+[[case]]
+input = "洗濯槽片付けるのいや"
+mode = "hiragana"
+expected = "せんたくそうかたづけるのいや"
+
+[[case]]
+input = "浄化槽処理ですね"
+mode = "hiragana"
+expected = "じょうかそうしょりですね"
+
+[[case]]
+input = "貯水槽の下にいるの?"
+mode = "hiragana"
+expected = "ちょすいそうのしたにいるの?"
+
+[[case]]
+input = "ダチョウ倶楽部w"
+mode = "hiragana"
+expected = "ダチョウくらぶw"
+
+[[case]]
+input = "倶知安"
+mode = "hiragana"
+expected = "くっちゃん"
+
+[[case]]
+input = "窃盗で草"
+mode = "hiragana"
+expected = "せっとうでくさ"
+
+[[case]]
+input = "検閲入ります"
+mode = "hiragana"
+expected = "けんえつはいります"
+
+[[case]]
+input = "閲覧注意"
+mode = "hiragana"
+expected = "えつらんちゅうい"
+
+[[case]]
+input = "観閲行進"
+mode = "hiragana"
+expected = "かんえつこうしん"
+
+[[case]]
+input = "患者さん?"
+mode = "hiragana"
+expected = "かんじゃさん?"
+
+[[case]]
+input = "郵便局好きねw"
+mode = "hiragana"
+expected = "ゆうびんきょくすきねw"
+
+[[case]]
+input = "郵送で送るか"
+mode = "hiragana"
+expected = "ゆうそうでおくるか"
+
+[[case]]
+input = "郵政事業"
+mode = "hiragana"
+expected = "ゆうせいじぎょう"
+
+[[case]]
+input = "倖田來未"
+mode = "hiragana"
+expected = "こうだらいみ"
+
+[[case]]
+input = "未來予知か?"
+mode = "hiragana"
+expected = "みらいよちか?"
+
+[[case]]
+input = "來るのか!?"
+mode = "hiragana"
+expected = "くるのか!?"
+
+[[case]]
+input = "蹂躙wwwww"
+mode = "hiragana"
+expected = "じゅうりんwwwww"
+
+[[case]]
+input = "踏み躙るなよ"
+mode = "hiragana"
+expected = "ふみにじるなよ"
+
+[[case]]
+input = "その恰好を?"
+mode = "hiragana"
+expected = "そのかっこうを?"
+
+[[case]]
+input = "恰幅ええんよ"
+mode = "hiragana"
+expected = "かっぷくええんよ"
+
+[[case]]
+input = "拷問じゃね?"
+mode = "hiragana"
+expected = "ごうもんじゃね?"
+
+[[case]]
+input = "涙腺緩むからな"
+mode = "hiragana"
+expected = "るいせんゆるむからな"
+
+[[case]]
+input = "汗腺?"
+mode = "hiragana"
+expected = "かんせん?"
+
+[[case]]
+input = "スペンス乳腺"
+mode = "hiragana"
+expected = "スペンスにゅうせん"
+
+[[case]]
+input = "扁桃腺?"
+mode = "hiragana"
+expected = "へんとうせん?"
+
+[[case]]
+input = "甲状腺が異常"
+mode = "hiragana"
+expected = "こうじょうせんがいじょう"
+
+[[case]]
+input = "錦市場"
+mode = "hiragana"
+expected = "にしきいちば"
+
+[[case]]
+input = "錦鯉もいる!"
+mode = "hiragana"
+expected = "にしきごいもいる!"
+
+[[case]]
+input = "錦織圭も青森山田"
+mode = "hiragana"
+expected = "にしきおりけいもあおもりやまだ"
+
+[[case]]
+input = "安青錦優勝おめでとう"
+mode = "hiragana"
+expected = "あんせいにしきゆうしょうおめでとう"
+
+[[case]]
+input = "サクランボ(佐藤錦)"
+mode = "hiragana"
+expected = "サクランボ(さとうにしき)"
+
+[[case]]
+input = "胡錦涛だろ"
+mode = "hiragana"
+expected = "こきんとうだろ"
+
+[[case]]
+input = "錦糸町にある"
+mode = "hiragana"
+expected = "きんしちょうにある"
+
+[[case]]
+input = "黎明期だからね"
+mode = "hiragana"
+expected = "れいめいきだからね"
+
+[[case]]
+input = "檀黎斗?"
+mode = "hiragana"
+expected = "だんれいと?"
+
+[[case]]
+input = "樋口楓"
+mode = "hiragana"
+expected = "ひぐちかえで"
+
+[[case]]
+input = "雨樋の方はどうでしょうか?"
+mode = "hiragana"
+expected = "あまどいのほうはどうでしょうか?"
+
