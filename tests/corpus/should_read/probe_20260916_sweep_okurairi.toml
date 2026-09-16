@@ -1,0 +1,150 @@
+[[case]]
+input = "お蔵入りかな"
+mode = "hiragana"
+expected = "おくらいりかな"
+
+[[case]]
+input = "これはお蔵入りですね"
+mode = "hiragana"
+expected = "これはおくらいりですね"
+
+[[case]]
+input = "お蔵入りになりそう"
+mode = "hiragana"
+expected = "おくらいりになりそう"
+
+[[case]]
+input = "御蔵入りになった"
+mode = "hiragana"
+expected = "おくらいりになった"
+
+[[case]]
+input = "酒蔵入り"
+mode = "hiragana"
+expected = "さかぐらいり"
+
+[[case]]
+input = "男の娘だ"
+mode = "hiragana"
+expected = "おとこのこだ"
+
+[[case]]
+input = "男の娘好き"
+mode = "hiragana"
+expected = "おとこのこすき"
+
+[[case]]
+input = "女の娘"
+mode = "hiragana"
+expected = "おんなのこ"
+
+[[case]]
+input = "眼鏡っ娘だな"
+mode = "hiragana"
+expected = "めがねっこだな"
+
+[[case]]
+input = "僕っ娘だね"
+mode = "hiragana"
+expected = "ぼくっこだね"
+
+[[case]]
+input = "言峰綺礼"
+mode = "hiragana"
+expected = "ことみねきれい"
+
+[[case]]
+input = "綺礼が好き"
+mode = "hiragana"
+expected = "きれいがすき"
+
+[[case]]
+input = "大分規則的だな"
+mode = "hiragana"
+expected = "だいぶきそくてきだな"
+
+[[case]]
+input = "大分県"
+mode = "hiragana"
+expected = "おおいたけん"
+
+[[case]]
+input = "見誤ったな"
+mode = "hiragana"
+expected = "みあやまったな"
+
+[[case]]
+input = "時勢を見誤ってはいけないよ"
+mode = "hiragana"
+expected = "じせいをみあやまってはいけないよ"
+
+[[case]]
+input = "見誤る"
+mode = "hiragana"
+expected = "みあやまる"
+
+[[case]]
+input = "見誤り"
+mode = "hiragana"
+expected = "みあやまり"
+
+[[case]]
+input = "見誤らない"
+mode = "hiragana"
+expected = "みあやまらない"
+
+[[case]]
+input = "深海恐怖症になっちまうよ"
+mode = "hiragana"
+expected = "しんかいきょうふしょうになっちまうよ"
+
+[[case]]
+input = "海洋恐怖症の人"
+mode = "hiragana"
+expected = "かいようきょうふしょうのひと"
+
+[[case]]
+input = "深海魚"
+mode = "hiragana"
+expected = "しんかいぎょ"
+
+[[case]]
+input = "林家木久蔵"
+mode = "hiragana"
+expected = "はやしやきくぞう"
+
+[[case]]
+input = "木久蔵ラーメン"
+mode = "hiragana"
+expected = "きくぞうラーメン"
+
+[[case]]
+input = "林家木久扇"
+mode = "hiragana"
+expected = "はやしやきくおう"
+
+[[case]]
+input = "次鋒は誰だ"
+mode = "hiragana"
+expected = "じほうはだれだ"
+
+[[case]]
+input = "先鋒次鋒中堅"
+mode = "hiragana"
+expected = "せんぽうじほうちゅうけん"
+
+[[case]]
+input = "次鋒戦"
+mode = "hiragana"
+expected = "じほうせん"
+
+[[case]]
+input = "横紋筋融解症とかもあるしね"
+mode = "hiragana"
+expected = "おうもんきんゆうかいしょうとかもあるしね"
+
+[[case]]
+input = "顎関節症"
+mode = "hiragana"
+expected = "がくかんせつしょう"
+
