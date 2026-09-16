@@ -1,0 +1,255 @@
+[[case]]
+input = "黄昏れてるのか"
+mode = "hiragana"
+expected = "たそがれてるのか"
+
+[[case]]
+input = "黄昏れてるw"
+mode = "hiragana"
+expected = "たそがれてるw"
+
+[[case]]
+input = "黄昏れたい時はどこ行くの?"
+mode = "hiragana"
+expected = "たそがれたいときはどこいくの?"
+
+[[case]]
+input = "黄昏れてみませんか?"
+mode = "hiragana"
+expected = "たそがれてみませんか?"
+
+[[case]]
+input = "黄昏れてるメッシ"
+mode = "hiragana"
+expected = "たそがれてるメッシ"
+
+[[case]]
+input = "黄昏れ時"
+mode = "hiragana"
+expected = "たそがれどき"
+
+[[case]]
+input = "しして尚叱責"
+mode = "hiragana"
+expected = "ししてなおしっせき"
+
+[[case]]
+input = "黄昏てるw"
+mode = "hiragana"
+expected = "たそがれてるw"
+
+[[case]]
+input = "黄昏とる"
+mode = "hiragana"
+expected = "たそがれとる"
+
+[[case]]
+input = "黄昏~。"
+mode = "hiragana"
+expected = "たそがれ。"
+
+[[case]]
+input = "神々の黄昏!?"
+mode = "hiragana"
+expected = "かみがみのたそがれ!?"
+
+[[case]]
+input = "黄昏の戦士"
+mode = "hiragana"
+expected = "たそがれのせんし"
+
+[[case]]
+input = "訂正w"
+mode = "hiragana"
+expected = "ていせいw"
+
+[[case]]
+input = "制限改訂やめろ"
+mode = "hiragana"
+expected = "せいげんかいていやめろ"
+
+[[case]]
+input = "なんか擁護派増えてきたよ"
+mode = "hiragana"
+expected = "なんかようごはふえてきたよ"
+
+[[case]]
+input = "熱い抱擁や"
+mode = "hiragana"
+expected = "あついほうようや"
+
+[[case]]
+input = "擁壁"
+mode = "hiragana"
+expected = "ようへき"
+
+[[case]]
+input = "咆哮"
+mode = "hiragana"
+expected = "ほうこう"
+
+[[case]]
+input = "句碑か?"
+mode = "hiragana"
+expected = "くひか?"
+
+[[case]]
+input = "嘆きの錬金術師w"
+mode = "hiragana"
+expected = "なげきのれんきんじゅつしw"
+
+[[case]]
+input = "感嘆"
+mode = "hiragana"
+expected = "かんたん"
+
+[[case]]
+input = "発想力に驚嘆www"
+mode = "hiragana"
+expected = "はっそうりょくにきょうたんwww"
+
+[[case]]
+input = "嘆願してるのにね..."
+mode = "hiragana"
+expected = "たんがんしてるのにね..."
+
+[[case]]
+input = "侮れんな"
+mode = "hiragana"
+expected = "あなどれんな"
+
+[[case]]
+input = "侮辱になっちゃうぞ"
+mode = "hiragana"
+expected = "ぶじょくになっちゃうぞ"
+
+[[case]]
+input = "侮蔑"
+mode = "hiragana"
+expected = "ぶべつ"
+
+[[case]]
+input = "旭川はぶっ壊れてるなぁ・・・"
+mode = "hiragana"
+expected = "あさひかわはぶっこわれてるなぁ"
+
+[[case]]
+input = "また旭日旗が"
+mode = "hiragana"
+expected = "またきょくじつきが"
+
+[[case]]
+input = "右上に「穀物」って書いてたよー"
+mode = "hiragana"
+expected = "みぎうえに「こくもつ」ってかいてたよー"
+
+[[case]]
+input = "脱穀して粉にしてパンかな~"
+mode = "hiragana"
+expected = "だっこくしてこなにしてパンかな"
+
+[[case]]
+input = "雑穀おにぎりゃー"
+mode = "hiragana"
+expected = "ざっこくおにぎりゃー"
+
+[[case]]
+input = "変態穀潰し"
+mode = "hiragana"
+expected = "へんたいごくつぶし"
+
+[[case]]
+input = "唸り声たすかる"
+mode = "hiragana"
+expected = "うなりごえたすかる"
+
+[[case]]
+input = "唸れ!"
+mode = "hiragana"
+expected = "うなれ!"
+
+[[case]]
+input = "バレットに叱られた"
+mode = "hiragana"
+expected = "バレットにしかられた"
+
+[[case]]
+input = "お叱り"
+mode = "hiragana"
+expected = "おしかり"
+
+[[case]]
+input = "叱咤激励聞くのも"
+mode = "hiragana"
+expected = "しったげきれいきくのも"
+
+[[case]]
+input = "仕事で叱責したんだろうな"
+mode = "hiragana"
+expected = "しごとでしっせきしたんだろうな"
+
+[[case]]
+input = "昏睡レ○プ?"
+mode = "hiragana"
+expected = "こんすいレ○プ?"
+
+[[case]]
+input = "昏倒に近いんだぞ"
+mode = "hiragana"
+expected = "こんとうにちかいんだぞ"
+
+[[case]]
+input = "緯度"
+mode = "hiragana"
+expected = "いど"
+
+[[case]]
+input = "鞘"
+mode = "hiragana"
+expected = "さや"
+
+[[case]]
+input = "遺憾"
+mode = "hiragana"
+expected = "いかん"
+
+[[case]]
+input = "訴訟"
+mode = "hiragana"
+expected = "そしょう"
+
+[[case]]
+input = "此処"
+mode = "hiragana"
+expected = "ここ"
+
+[[case]]
+input = "庇う"
+mode = "hiragana"
+expected = "かばう"
+
+[[case]]
+input = "輪郭"
+mode = "hiragana"
+expected = "りんかく"
+
+[[case]]
+input = "笠"
+mode = "hiragana"
+expected = "かさ"
+
+[[case]]
+input = "篠原"
+mode = "hiragana"
+expected = "しのはら"
+
+[[case]]
+input = "只今"
+mode = "hiragana"
+expected = "ただいま"
+
+[[case]]
+input = "愛媛"
+mode = "hiragana"
+expected = "えひめ"
+
