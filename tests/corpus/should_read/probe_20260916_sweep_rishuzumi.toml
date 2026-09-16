@@ -1,0 +1,160 @@
+[[case]]
+input = "ガルパン履修済なのか"
+mode = "hiragana"
+expected = "ガルパンりしゅうずみなのか"
+
+[[case]]
+input = "各種履修済って書いてたな"
+mode = "hiragana"
+expected = "かくしゅりしゅうずみってかいてたな"
+
+[[case]]
+input = "履修済"
+mode = "hiragana"
+expected = "りしゅうずみ"
+
+[[case]]
+input = "オリジナル履修済み"
+mode = "hiragana"
+expected = "オリジナルりしゅうずみ"
+
+[[case]]
+input = "公式ネタバレ履修済みw"
+mode = "hiragana"
+expected = "こうしきネタバレりしゅうずみw"
+
+[[case]]
+input = "しっかり履修しててえらい"
+mode = "hiragana"
+expected = "しっかりりしゅうしててえらい"
+
+[[case]]
+input = "休肝日つくらな"
+mode = "hiragana"
+expected = "きゅうかんびつくらな"
+
+[[case]]
+input = "休肝日かな?"
+mode = "hiragana"
+expected = "きゅうかんびかな?"
+
+[[case]]
+input = "砂肝大好き"
+mode = "hiragana"
+expected = "すなぎもだいすき"
+
+[[case]]
+input = "肝心なところで"
+mode = "hiragana"
+expected = "かんじんなところで"
+
+[[case]]
+input = "瞬足履こう"
+mode = "hiragana"
+expected = "しゅんそくはこう"
+
+[[case]]
+input = "猛汁でますな"
+mode = "hiragana"
+expected = "もうじるでますな"
+
+[[case]]
+input = "猛打賞や"
+mode = "hiragana"
+expected = "もうだしょうや"
+
+[[case]]
+input = "歴戦の猛者やぞ"
+mode = "hiragana"
+expected = "れきせんのもさやぞ"
+
+[[case]]
+input = "降り方も鮮やかだなぁ"
+mode = "hiragana"
+expected = "ふりかたもあざやかだなぁ"
+
+[[case]]
+input = "降り方"
+mode = "hiragana"
+expected = "ふりかた"
+
+[[case]]
+input = "裏拍子か表拍子?"
+mode = "hiragana"
+expected = "うらひょうしかおもてびょうし?"
+
+[[case]]
+input = "表拍子"
+mode = "hiragana"
+expected = "おもてびょうし"
+
+[[case]]
+input = "赤は表拍、青は裏拍なのね"
+mode = "hiragana"
+expected = "あかはおもてはく、あおはうらはくなのね"
+
+[[case]]
+input = "三三七拍子!"
+mode = "hiragana"
+expected = "さんさんななびょうし!"
+
+[[case]]
+input = "変拍子"
+mode = "hiragana"
+expected = "へんひょうし"
+
+[[case]]
+input = "心拍数"
+mode = "hiragana"
+expected = "しんぱくすう"
+
+[[case]]
+input = "長妻昭さんの質問に"
+mode = "hiragana"
+expected = "ながつまあきらさんのしつもんに"
+
+[[case]]
+input = "昭和は普通に有った"
+mode = "hiragana"
+expected = "しょうわはふつうにあった"
+
+[[case]]
+input = "参考書か履歴書"
+mode = "hiragana"
+expected = "さんこうしょかりれきしょ"
+
+[[case]]
+input = "参考書と履歴書も使おう"
+mode = "hiragana"
+expected = "さんこうしょとりれきしょもつかおう"
+
+[[case]]
+input = "上履きのまま避難する"
+mode = "hiragana"
+expected = "うわばきのままひなんする"
+
+[[case]]
+input = "磔刑とは..."
+mode = "hiragana"
+expected = "たっけいとは..."
+
+[[case]]
+input = "文殊の知恵なのか"
+mode = "hiragana"
+expected = "もんじゅのちえなのか"
+
+[[case]]
+input = "殊勲賞だね"
+mode = "hiragana"
+expected = "しゅくんしょうだね"
+
+[[case]]
+input = "一瞬足に見えるもんねw"
+mode = "hiragana"
+expected = "いっしゅんあしにみえるもんねw"
+
+[[case]]
+input = "鈍足が瞬足に"
+mode = "hiragana"
+expected = "どんそくがしゅんそくに"
+
