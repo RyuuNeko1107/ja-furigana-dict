@@ -1,0 +1,195 @@
+[[case]]
+input = "大塚晶文!!メジャーリーガー"
+mode = "hiragana"
+expected = "おおつかあきふみ!!メジャーリーガー"
+
+[[case]]
+input = "堀江晶太!?"
+mode = "hiragana"
+expected = "ほりえしょうた!?"
+
+[[case]]
+input = "文ストの与謝野晶子ぐらいの治癒力"
+mode = "hiragana"
+expected = "ぶんストのよさのあきこぐらいのちゆりょく"
+
+[[case]]
+input = "鍋蓋w"
+mode = "hiragana"
+expected = "なべぶたw"
+
+[[case]]
+input = "ちょっと目蓋がおもいなり"
+mode = "hiragana"
+expected = "ちょっとまぶたがおもいなり"
+
+[[case]]
+input = "洗濯機蓋開いてた?"
+mode = "hiragana"
+expected = "せんたくきぶたひらいてた?"
+
+[[case]]
+input = "自分で棺桶蓋閉めるのジワる"
+mode = "hiragana"
+expected = "じぶんでかんおけぶたしめるのジワる"
+
+[[case]]
+input = "電池蓋が!!"
+mode = "hiragana"
+expected = "でんちぶたが!!"
+
+[[case]]
+input = "親子鍋って普通蓋とセットで売ってるよな"
+mode = "hiragana"
+expected = "おやこなべってふつうぶたとセットでうってるよな"
+
+[[case]]
+input = "蓋しまってたのに・・・"
+mode = "hiragana"
+expected = "ふたしまってたのに"
+
+[[case]]
+input = "蓋しろw"
+mode = "hiragana"
+expected = "ふたしろw"
+
+[[case]]
+input = "蓋しとくべきやで"
+mode = "hiragana"
+expected = "ふたしとくべきやで"
+
+[[case]]
+input = "ブラジルも蓋しにきたな"
+mode = "hiragana"
+expected = "ブラジルもふたしにきたな"
+
+[[case]]
+input = "「春日賞 春日俊彰」"
+mode = "hiragana"
+expected = "「かすがしょう かすがとしあき」"
+
+[[case]]
+input = "熊谷俊人さん、会見あると思う。"
+mode = "hiragana"
+expected = "くまがいとしひとさん、かいけんあるとおもう。"
+
+[[case]]
+input = "畑俊六:阿部内閣陸相"
+mode = "hiragana"
+expected = "はたしゅんろく:あべないかくりくしょう"
+
+[[case]]
+input = "この3失点が猪狩であの顔だったらおもろい"
+mode = "hiragana"
+expected = "このさんしってんがいがりであのかおだったらおもろい"
+
+[[case]]
+input = "うおおお猪狩じゃん"
+mode = "hiragana"
+expected = "うおおおいがりじゃん"
+
+[[case]]
+input = "後方腕組猪狩"
+mode = "hiragana"
+expected = "こうほううでぐみいがり"
+
+[[case]]
+input = "薪焚べよう"
+mode = "hiragana"
+expected = "たきぎくべよう"
+
+[[case]]
+input = "エラー負けとか洒落にならんし"
+mode = "hiragana"
+expected = "エラーまけとかしゃれにならんし"
+
+[[case]]
+input = "でも洒落にならんからな"
+mode = "hiragana"
+expected = "でもしゃれにならんからな"
+
+[[case]]
+input = "まだ別の厄ネタまでありそうで洒落にならんw"
+mode = "hiragana"
+expected = "まだべつのやくネタまでありそうでしゃれにならんw"
+
+[[case]]
+input = "だ洒落だね"
+mode = "hiragana"
+expected = "だじゃれだね"
+
+[[case]]
+input = "そこいらの洒落怖よりこわいんだがw"
+mode = "hiragana"
+expected = "そこいらのしゃれこわよりこわいんだがw"
+
+[[case]]
+input = "口軽いだけある煩さ"
+mode = "hiragana"
+expected = "くちかるいだけあるうるささ"
+
+[[case]]
+input = "正直、コメントが煩すぎではある"
+mode = "hiragana"
+expected = "しょうじき、コメントがうるさすぎではある"
+
+[[case]]
+input = "ホロスタと統合したらユニコーンが煩そう"
+mode = "hiragana"
+expected = "ホロスタととうごうしたらユニコーンがうるさそう"
+
+[[case]]
+input = "セミなら毎朝庭で煩いほど鳴いててしんどい"
+mode = "hiragana"
+expected = "セミならまいあさにわでうるさいほどないててしんどい"
+
+[[case]]
+input = "乾巧って奴の仕業なんだ"
+mode = "hiragana"
+expected = "いぬいたくみってやつのしわざなんだ"
+
+[[case]]
+input = "地引綱!!!"
+mode = "hiragana"
+expected = "じびきあみ!!!"
+
+[[case]]
+input = "頭足綱とうそくこう"
+mode = "hiragana"
+expected = "とうそくこうとうそくこう"
+
+[[case]]
+input = "野食ハンター茸本もいいよ"
+mode = "hiragana"
+expected = "のしょくハンターたけもともいいよ"
+
+[[case]]
+input = "陰山泰知っているか?"
+mode = "hiragana"
+expected = "かげやまたいしっているか?"
+
+[[case]]
+input = "布袋寅泰のロシアンルーレットみたい"
+mode = "hiragana"
+expected = "ほていともやすのロシアンルーレットみたい"
+
+[[case]]
+input = "林泰輔を許すな"
+mode = "hiragana"
+expected = "はやしたいすけをゆるすな"
+
+[[case]]
+input = "▲丹生明里さんと予想w"
+mode = "hiragana"
+expected = "▲にうあかりさんとよそうw"
+
+[[case]]
+input = "炎舞焚きですか???"
+mode = "hiragana"
+expected = "ほのおぶたきですか???"
+
+[[case]]
+input = "そりゃ蓋しなけりゃ余熱逃げてるよ"
+mode = "hiragana"
+expected = "そりゃふたしなけりゃよねつにげてるよ"
+
