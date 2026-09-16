@@ -1,0 +1,70 @@
+[[case]]
+input = "太古の環濠集落は動物や雨対策で堀を掘ったり柵を設置してた意味合いが強いと思う"
+mode = "hiragana"
+expected = "たいこのかんごうしゅうらくはどうぶつやあめたいさくでほりをほったりさくをせっちしてたいみあいがつよいとおもう"
+
+[[case]]
+input = "それは富山の環濠公園"
+mode = "hiragana"
+expected = "それはとやまのかんごうこうえん"
+
+[[case]]
+input = "八木彬は今年謎に勝ちまくってるのよね"
+mode = "hiragana"
+expected = "やぎあきらはことしなぞにかちまくってるのよね"
+
+[[case]]
+input = "八木ってロッテの八木彬選手かな。確か今年驚異的な勝運を見せてる男ですね。"
+mode = "hiragana"
+expected = "やぎってロッテのやぎあきらせんしゅかな。たしかことしきょういてきなしょううんをみせてるおとこですね。"
+
+[[case]]
+input = "本命は彬子だろ"
+mode = "hiragana"
+expected = "ほんめいはあきこだろ"
+
+[[case]]
+input = "発祥は中尾彬氏だってのは聞いた"
+mode = "hiragana"
+expected = "はっしょうはなかおあきらしだってのはきいた"
+
+[[case]]
+input = "彬子"
+mode = "hiragana"
+expected = "あきこ"
+
+[[case]]
+input = "彬子女王"
+mode = "hiragana"
+expected = "あきこじょおう"
+
+[[case]]
+input = "環濠"
+mode = "hiragana"
+expected = "かんごう"
+
+[[case]]
+input = "環濠集落"
+mode = "hiragana"
+expected = "かんごうしゅうらく"
+
+[[case]]
+input = "お濠まであって立派な神社だね"
+mode = "hiragana"
+expected = "おほりまであってりっぱなじんじゃだね"
+
+[[case]]
+input = "熊本ということは大濠公園か"
+mode = "hiragana"
+expected = "くまもとということはおおほりこうえんか"
+
+[[case]]
+input = "濠太剌利戦"
+mode = "hiragana"
+expected = "おーすとらりあせん"
+
+[[case]]
+input = "橋頭堡"
+mode = "hiragana"
+expected = "きょうとうほ"
+

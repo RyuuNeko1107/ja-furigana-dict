@@ -18685,10 +18685,11 @@ default = "ビョウ"
 char = "彦"
 default = "ひこ"
 
-# 「彬」 default 「ヒン」 (= 彬彬、 漢籍まれ + 名前用)
+# 「彬」 default 「アキラ」 (= 実出現は人名のみ。八木彬/中尾彬。
+# 漢籍語 彬彬 は出現 0、jukugo にも 彬 エントリは無い)
 [[kanji]]
 char = "彬"
-default = "ヒン"
+default = "アキラ"
 
 # 「悌」 default 「テイ」 (= 孝悌/友悌、 漢籍 + 名前)
 [[kanji]]
