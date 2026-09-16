@@ -1,0 +1,85 @@
+[[case]]
+input = "積尸気"
+mode = "hiragana"
+expected = "せきしき"
+
+[[case]]
+input = "我愛瑪琳Ahoy!"
+mode = "hiragana"
+expected = "われあいまりんアホイ!"
+
+[[case]]
+input = "玛琳无罪"
+mode = "hiragana"
+expected = "まりんないざい"
+
+[[case]]
+input = "我愛瑪琳!AHOY"
+mode = "hiragana"
+expected = "われあいまりん!アホイ"
+
+[[case]]
+input = "瑪琳!"
+mode = "hiragana"
+expected = "まりん!"
+
+[[case]]
+input = "我愛妳瑪琳,Ahoy!"
+mode = "hiragana"
+expected = "われあいだいまりん,アホイ!"
+
+[[case]]
+input = "玛琳可爱捏"
+mode = "hiragana"
+expected = "まりんかいつくしみこ"
+
+[[case]]
+input = "瑪琳"
+mode = "hiragana"
+expected = "まりん"
+
+[[case]]
+input = "九份とか台北101とか行きはしなかったのか"
+mode = "hiragana"
+expected = "きゅうふんとかたいぺいひゃくいちとかいきはしなかったのか"
+
+[[case]]
+input = "九份行った?"
+mode = "hiragana"
+expected = "きゅうふんいった?"
+
+[[case]]
+input = "九份行ったんだね!!!"
+mode = "hiragana"
+expected = "きゅうふんいったんだね!!!"
+
+[[case]]
+input = "九份の夜いいよね"
+mode = "hiragana"
+expected = "きゅうふんのよるいいよね"
+
+[[case]]
+input = "九份だ"
+mode = "hiragana"
+expected = "きゅうふんだ"
+
+[[case]]
+input = "おはよです。九份には行ったことあります〜"
+mode = "hiragana"
+expected = "おはよです。きゅうふんにはいったことあります"
+
+[[case]]
+input = "蛭間"
+mode = "hiragana"
+expected = "ひるま"
+
+[[case]]
+input = "麦谷、蛭間とかドラ1ネーム多いな"
+mode = "hiragana"
+expected = "むぎたに、ひるまとかドラいちネームおおいな"
+
+[[case]]
+input = "夜なのに蛭間が打席に"
+mode = "hiragana"
+expected = "よるなのにひるまがだせきに"
+
