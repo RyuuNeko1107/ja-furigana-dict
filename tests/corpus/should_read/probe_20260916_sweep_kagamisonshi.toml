@@ -1,0 +1,215 @@
+[[case]]
+input = "蹴落とし合いw"
+mode = "hiragana"
+expected = "けおとしあいw"
+
+[[case]]
+input = "蹴落とすための話し合い"
+mode = "hiragana"
+expected = "けおとすためのはなしあい"
+
+[[case]]
+input = "ワンパンで蹴散らされて"
+mode = "hiragana"
+expected = "ワンパンでけちらされて"
+
+[[case]]
+input = "投げないで蹴とばせばいいのに"
+mode = "hiragana"
+expected = "なげないでけとばせばいいのに"
+
+[[case]]
+input = "甲賀忍法帖"
+mode = "hiragana"
+expected = "こうがにんぽうちょう"
+
+[[case]]
+input = "押忍"
+mode = "hiragana"
+expected = "おっす"
+
+[[case]]
+input = "神取忍枠"
+mode = "hiragana"
+expected = "かんどりしのぶわく"
+
+[[case]]
+input = "熟れてるかどうか"
+mode = "hiragana"
+expected = "うれてるかどうか"
+
+[[case]]
+input = "熟れぐわいよ"
+mode = "hiragana"
+expected = "うれぐあいよ"
+
+[[case]]
+input = "眉毛濃っww"
+mode = "hiragana"
+expected = "まゆげこっww"
+
+[[case]]
+input = "顔濃ゆうう!"
+mode = "hiragana"
+expected = "かおこゆうう!"
+
+[[case]]
+input = "濃ゆーい"
+mode = "hiragana"
+expected = "こゆーい"
+
+[[case]]
+input = "一挙手ね"
+mode = "hiragana"
+expected = "いっきょしゅね"
+
+[[case]]
+input = "大将首挙げれば勝ちの戦"
+mode = "hiragana"
+expected = "たいしょうしゅあげればかちのいくさ"
+
+[[case]]
+input = "停まってw"
+mode = "hiragana"
+expected = "とまってw"
+
+[[case]]
+input = "電車停まってくれ"
+mode = "hiragana"
+expected = "でんしゃとまってくれ"
+
+[[case]]
+input = "コメ君すぐ停まる"
+mode = "hiragana"
+expected = "コメくんすぐとまる"
+
+[[case]]
+input = "移動床の下のところ"
+mode = "hiragana"
+expected = "いどうゆかのしたのところ"
+
+[[case]]
+input = "溶岩床のダメージでかい"
+mode = "hiragana"
+expected = "ようがんゆかのダメージでかい"
+
+[[case]]
+input = "範囲攻撃床じゃない"
+mode = "hiragana"
+expected = "はんいこうげきゆかじゃない"
+
+[[case]]
+input = "一度床に置くと"
+mode = "hiragana"
+expected = "いちどゆかにおくと"
+
+[[case]]
+input = "皿床に叩きつける"
+mode = "hiragana"
+expected = "さらゆかにたたきつける"
+
+[[case]]
+input = "踵床に付けてる?"
+mode = "hiragana"
+expected = "かかとゆかにつけてる?"
+
+[[case]]
+input = "黒曜石床安心"
+mode = "hiragana"
+expected = "こくようせきゆかあんしん"
+
+[[case]]
+input = "頭汗ってなかなか嫌"
+mode = "hiragana"
+expected = "あたまあせってなかなかいや"
+
+[[case]]
+input = "脇汗がすごい"
+mode = "hiragana"
+expected = "わきあせがすごい"
+
+[[case]]
+input = "内心汗だらだら"
+mode = "hiragana"
+expected = "ないしんあせだらだら"
+
+[[case]]
+input = "結構汗かくからね"
+mode = "hiragana"
+expected = "けっこうあせかくからね"
+
+[[case]]
+input = "今汗かくから"
+mode = "hiragana"
+expected = "いまあせかくから"
+
+[[case]]
+input = "発散汗臭そう"
+mode = "hiragana"
+expected = "はっさんあせくさそう"
+
+[[case]]
+input = "大汗"
+mode = "hiragana"
+expected = "おおあせ"
+
+[[case]]
+input = "聞いてると火照てくる!!"
+mode = "hiragana"
+expected = "きいてるとほててくる!!"
+
+[[case]]
+input = "角煮でもええんやで"
+mode = "hiragana"
+expected = "かくにでもええんやで"
+
+[[case]]
+input = "角煮定食食いたかった"
+mode = "hiragana"
+expected = "かくにていしょくくいたかった"
+
+[[case]]
+input = "水浴びして涼しむ"
+mode = "hiragana"
+expected = "みずあびしてすずしむ"
+
+[[case]]
+input = "意外と涼しめらしい"
+mode = "hiragana"
+expected = "いがいとすずしめらしい"
+
+[[case]]
+input = "鈴木涼美"
+mode = "hiragana"
+expected = "すずきりょうこ"
+
+[[case]]
+input = "攻撃技は枝角だぞ"
+mode = "hiragana"
+expected = "こうげきわざはえだづのだぞ"
+
+[[case]]
+input = "お祖父ちゃん"
+mode = "hiragana"
+expected = "おじいちゃん"
+
+[[case]]
+input = "狩尽くされるw"
+mode = "hiragana"
+expected = "かりつくされるw"
+
+[[case]]
+input = "取って損ないかと"
+mode = "hiragana"
+expected = "とってそんないかと"
+
+[[case]]
+input = "育てても損ない"
+mode = "hiragana"
+expected = "そだててもそんない"
+
+[[case]]
+input = "予祝金"
+mode = "hiragana"
+expected = "よしゅくきん"
+
