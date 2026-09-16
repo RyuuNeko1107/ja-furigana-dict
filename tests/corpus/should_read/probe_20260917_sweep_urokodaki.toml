@@ -1,0 +1,220 @@
+[[case]]
+input = "まじ鱗滝ー!"
+mode = "hiragana"
+expected = "まじうろこだきー!"
+
+[[case]]
+input = "鱗滝もビックリのプレイ"
+mode = "hiragana"
+expected = "うろこだきもビックリのプレイ"
+
+[[case]]
+input = "鱗滝さんもにっこり"
+mode = "hiragana"
+expected = "うろこだきさんもにっこり"
+
+[[case]]
+input = "鱗滝「判断が遅い」"
+mode = "hiragana"
+expected = "うろこだき「はんだんがおそい」"
+
+[[case]]
+input = "鱗滝先生もにっこり"
+mode = "hiragana"
+expected = "うろこだきせんせいもにっこり"
+
+[[case]]
+input = "これは鱗滝"
+mode = "hiragana"
+expected = "これはうろこだき"
+
+[[case]]
+input = "鬼道衆と総隊長なら詠唱破棄できるな"
+mode = "hiragana"
+expected = "きどうしゅうとそうたいちょうならえいしょうはきできるな"
+
+[[case]]
+input = "六武衆か?"
+mode = "hiragana"
+expected = "ろくぶしゅうか?"
+
+[[case]]
+input = "鬼道を使う"
+mode = "hiragana"
+expected = "おにどうをつかう"
+
+[[case]]
+input = "滝きれい"
+mode = "hiragana"
+expected = "たききれい"
+
+[[case]]
+input = "白滝みたいw"
+mode = "hiragana"
+expected = "しらたきみたいw"
+
+[[case]]
+input = "鳴滝荘がいいな"
+mode = "hiragana"
+expected = "なるたきそうがいいな"
+
+[[case]]
+input = "滝汗"
+mode = "hiragana"
+expected = "たきあせ"
+
+[[case]]
+input = "衆議院可決!"
+mode = "hiragana"
+expected = "しゅうぎいんかけつ!"
+
+[[case]]
+input = "烏合の衆か"
+mode = "hiragana"
+expected = "うごうのしゅうか"
+
+[[case]]
+input = "魔晄漬け・・・"
+mode = "hiragana"
+expected = "まこうづけ"
+
+[[case]]
+input = "破晄撃タイプか"
+mode = "hiragana"
+expected = "はこうげきタイプか"
+
+[[case]]
+input = "風の憧憬で!?"
+mode = "hiragana"
+expected = "かぜのしょうけいで!?"
+
+[[case]]
+input = "卯ノ花隊長"
+mode = "hiragana"
+expected = "うのはなたいちょう"
+
+[[case]]
+input = "河津七滝だ"
+mode = "hiragana"
+expected = "かわづななだるだ"
+
+[[case]]
+input = "痛烈なライナーいいぞー"
+mode = "hiragana"
+expected = "つうれつなライナーいいぞー"
+
+[[case]]
+input = "奇天烈相談ダイヤル"
+mode = "hiragana"
+expected = "きてれつそうだんダイヤル"
+
+[[case]]
+input = "熱戦烈戦超激戦"
+mode = "hiragana"
+expected = "ねっせんれっせんちょうげきせん"
+
+[[case]]
+input = "右往左往させられた"
+mode = "hiragana"
+expected = "うおうさおうさせられた"
+
+[[case]]
+input = "往くか、修羅の道を..."
+mode = "hiragana"
+expected = "ゆくか、しゅらのみちを..."
+
+[[case]]
+input = "某ホロメンよりは安心感ある"
+mode = "hiragana"
+expected = "ぼうホロメンよりはあんしんかんある"
+
+[[case]]
+input = "ミーティングの弊害"
+mode = "hiragana"
+expected = "ミーティングのへいがい"
+
+[[case]]
+input = "戸籍の抹消w"
+mode = "hiragana"
+expected = "こせきのまっしょうw"
+
+[[case]]
+input = "時間軸かんがえればね"
+mode = "hiragana"
+expected = "じかんじくかんがえればね"
+
+[[case]]
+input = "掛け軸じわる"
+mode = "hiragana"
+expected = "かけじくじわる"
+
+[[case]]
+input = "逝ったかと思ったよ"
+mode = "hiragana"
+expected = "いったかとおもったよ"
+
+[[case]]
+input = "先に逝く せいぜい頑張れ"
+mode = "hiragana"
+expected = "さきにゆく せいぜいがんばれ"
+
+[[case]]
+input = "海に憧れて"
+mode = "hiragana"
+expected = "うみにあこがれて"
+
+[[case]]
+input = "無礼講またやってほしい"
+mode = "hiragana"
+expected = "ぶれいこうまたやってほしい"
+
+[[case]]
+input = "飴と鞭"
+mode = "hiragana"
+expected = "あめとむち"
+
+[[case]]
+input = "怒涛の展開"
+mode = "hiragana"
+expected = "どとうのてんかい"
+
+[[case]]
+input = "胴上げだ"
+mode = "hiragana"
+expected = "どうあげだ"
+
+[[case]]
+input = "班長です"
+mode = "hiragana"
+expected = "はんちょうです"
+
+[[case]]
+input = "巾着袋"
+mode = "hiragana"
+expected = "きんちゃくぶくろ"
+
+[[case]]
+input = "賑わってる"
+mode = "hiragana"
+expected = "にぎわってる"
+
+[[case]]
+input = "牢屋に入れられた"
+mode = "hiragana"
+expected = "ろうやにいれられた"
+
+[[case]]
+input = "冗談やめて"
+mode = "hiragana"
+expected = "じょうだんやめて"
+
+[[case]]
+input = "炉心融解"
+mode = "hiragana"
+expected = "ろしんゆうかい"
+
+[[case]]
+input = "卯月だ"
+mode = "hiragana"
+expected = "うづきだ"
+
