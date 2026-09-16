@@ -1,0 +1,335 @@
+[[case]]
+input = "鯵丸鯵丸"
+mode = "hiragana"
+expected = "あじまるあじまる"
+
+[[case]]
+input = "丸鯵"
+mode = "hiragana"
+expected = "まるあじ"
+
+[[case]]
+input = "鯵容疑者"
+mode = "hiragana"
+expected = "あじようぎしゃ"
+
+[[case]]
+input = "鯖も鯵も変わらん"
+mode = "hiragana"
+expected = "さばもあじもかわらん"
+
+[[case]]
+input = "八代の魚も高級魚黄金鯵とか食べれる!"
+mode = "hiragana"
+expected = "はちだいのさかなもこうきゅうぎょおうごんあじとかたべれる!"
+
+[[case]]
+input = "そーいや、帯広駐屯地で飲んだ根釧牛乳めっちゃ美味しかったな"
+mode = "hiragana"
+expected = "そーいや、おびひろちゅうとんちでのんだこんせんぎゅうにゅうめっちゃおいしかったな"
+
+[[case]]
+input = "釧路も北北海道ですw"
+mode = "hiragana"
+expected = "くしろもきたほっかいどうですw"
+
+[[case]]
+input = "くっしゃろ 釧路湿原の辺りかな?"
+mode = "hiragana"
+expected = "くっしゃろ くしろしつげんのあたりかな?"
+
+[[case]]
+input = "石黒ホーマは釧路発祥"
+mode = "hiragana"
+expected = "いしぐろホーマはくしろはっしょう"
+
+[[case]]
+input = "境港線は阪堺電車並みに揺れるんだぜ?w"
+mode = "hiragana"
+expected = "さかいみなとせんははんかいでんしゃなみにゆれるんだぜ?w"
+
+[[case]]
+input = "小堺さん"
+mode = "hiragana"
+expected = "こさかいさん"
+
+[[case]]
+input = "博士の声が小堺一機のアニメね"
+mode = "hiragana"
+expected = "はかせのこえがこさかいいっきのアニメね"
+
+[[case]]
+input = "小堺ぺこら"
+mode = "hiragana"
+expected = "こさかいぺこら"
+
+[[case]]
+input = "堺正章ポジション"
+mode = "hiragana"
+expected = "さかいまさあきポジション"
+
+[[case]]
+input = "堺雅人の?"
+mode = "hiragana"
+expected = "さかいまさとの?"
+
+[[case]]
+input = "どんよりして蒸し暑すぎる@堺市堺区"
+mode = "hiragana"
+expected = "どんよりしてむしあつすぎる@さかいしさかいく"
+
+[[case]]
+input = "@富士南麓区域、現在曇天涼風ナリ"
+mode = "hiragana"
+expected = "@ふじなんろくくいき、げんざいどんてんりょうふうナリ"
+
+[[case]]
+input = "富士山麓"
+mode = "hiragana"
+expected = "ふじさんろく"
+
+[[case]]
+input = "山麓?"
+mode = "hiragana"
+expected = "さんろく?"
+
+[[case]]
+input = "富士山の麓(ふもと)かな?"
+mode = "hiragana"
+expected = "ふじさんのふもと(ふもと)かな?"
+
+[[case]]
+input = "麓の街が!"
+mode = "hiragana"
+expected = "ふもとのまちが!"
+
+[[case]]
+input = "赤城山の麓は雨です〜"
+mode = "hiragana"
+expected = "あかぎやまのふもとはあめです"
+
+[[case]]
+input = "十勝岳の麓に住んでます"
+mode = "hiragana"
+expected = "とかちだけのふもとにすんでます"
+
+[[case]]
+input = "蛯名に三森に京田もいるぞ"
+mode = "hiragana"
+expected = "えびなにみもりにきょうだもいるぞ"
+
+[[case]]
+input = "蛯名に三森もいるか"
+mode = "hiragana"
+expected = "えびなにみもりもいるか"
+
+[[case]]
+input = "京田蛯名三森ってこと?"
+mode = "hiragana"
+expected = "きょうだえびなみもりってこと?"
+
+[[case]]
+input = "早稲田蛯名"
+mode = "hiragana"
+expected = "わせだえびな"
+
+[[case]]
+input = "連続蛯名選手"
+mode = "hiragana"
+expected = "れんぞくえびなせんしゅ"
+
+[[case]]
+input = "幇助だ"
+mode = "hiragana"
+expected = "ほうじょだ"
+
+[[case]]
+input = "殺人幇助の法律の法改正をしないと今後も何も変わらない"
+mode = "hiragana"
+expected = "さつじんほうじょのほうりつのほうかいせいをしないとこんごもなにもかわらない"
+
+[[case]]
+input = "それすらも凌駕する株。。。"
+mode = "hiragana"
+expected = "それすらもりょうがするかぶ。。。"
+
+[[case]]
+input = "上手さが魔物を凌駕した"
+mode = "hiragana"
+expected = "うまさがまものをりょうがした"
+
+[[case]]
+input = "セフィロスを凌駕せよ"
+mode = "hiragana"
+expected = "セフィロスをりょうがせよ"
+
+[[case]]
+input = "予想屋チャンネルの御駕籠を"
+mode = "hiragana"
+expected = "よそうやチャンネルのおかごを"
+
+[[case]]
+input = "矮小な卍解きちゃ!"
+mode = "hiragana"
+expected = "わいしょうなばんかいきちゃ!"
+
+[[case]]
+input = "福永厩舎"
+mode = "hiragana"
+expected = "ふくながきゅうしゃ"
+
+[[case]]
+input = "厩戸皇子で草"
+mode = "hiragana"
+expected = "うまやどのおうじでくさ"
+
+[[case]]
+input = "聖徳太子or厩戸王"
+mode = "hiragana"
+expected = "しょうとくたいしorうまやどおう"
+
+[[case]]
+input = "三厩で義経繋がり"
+mode = "hiragana"
+expected = "みんまやでよしつねつながり"
+
+[[case]]
+input = "こんな勝ち方、厩務員さんが号泣しちゃうよ"
+mode = "hiragana"
+expected = "こんなかちかた、きゅうむいんさんがごうきゅうしちゃうよ"
+
+[[case]]
+input = "昂ってるねw"
+mode = "hiragana"
+expected = "たかぶってるねw"
+
+[[case]]
+input = "気が昂る"
+mode = "hiragana"
+expected = "きがたかぶる"
+
+[[case]]
+input = "昂ぶってるw"
+mode = "hiragana"
+expected = "たかぶってるw"
+
+[[case]]
+input = "今の判定に本田圭佑氏が激昂していましたね。"
+mode = "hiragana"
+expected = "いまのはんていにほんだけいすけしがげっこうしていましたね。"
+
+[[case]]
+input = "すうちゃんが昂奮する"
+mode = "hiragana"
+expected = "すうちゃんがこうふんする"
+
+[[case]]
+input = "梶原昂希(DeNA)"
+mode = "hiragana"
+expected = "かじわらこうき(ディーエヌエー)"
+
+[[case]]
+input = "氣志團・・・"
+mode = "hiragana"
+expected = "きしだん"
+
+[[case]]
+input = "團十郎?"
+mode = "hiragana"
+expected = "だんじゅうろう?"
+
+[[case]]
+input = "武士團"
+mode = "hiragana"
+expected = "ぶしだん"
+
+[[case]]
+input = "多すんぎ実篤"
+mode = "hiragana"
+expected = "おおすんぎさねあつ"
+
+[[case]]
+input = "稲葉篤紀?"
+mode = "hiragana"
+expected = "いなばあつのり?"
+
+[[case]]
+input = "危篤状態か..."
+mode = "hiragana"
+expected = "きとくじょうたいか..."
+
+[[case]]
+input = "渡辺篤史の建物探訪"
+mode = "hiragana"
+expected = "わたなべあつしのたてものたんぼう"
+
+[[case]]
+input = "社長に対する篤い信頼感"
+mode = "hiragana"
+expected = "しゃちょうにたいするあついしんらいかん"
+
+[[case]]
+input = "鰤タニア"
+mode = "hiragana"
+expected = "ぶりタニア"
+
+[[case]]
+input = "久し鰤"
+mode = "hiragana"
+expected = "ひさしぶり"
+
+[[case]]
+input = "鰤とかカンパチがよく引くよ"
+mode = "hiragana"
+expected = "ぶりとかカンパチがよくひくよ"
+
+[[case]]
+input = "3年で優勝しろとかいう無茶鰤"
+mode = "hiragana"
+expected = "さんねんでゆうしょうしろとかいうむちゃぶり"
+
+[[case]]
+input = "蝙蝠か"
+mode = "hiragana"
+expected = "こうもりか"
+
+[[case]]
+input = "クソ蝙蝠めw"
+mode = "hiragana"
+expected = "クソこうもりめw"
+
+[[case]]
+input = "白樺ww"
+mode = "hiragana"
+expected = "しらかばww"
+
+[[case]]
+input = "樺太?"
+mode = "hiragana"
+expected = "からふと?"
+
+[[case]]
+input = "ホロライブ界の樺地"
+mode = "hiragana"
+expected = "ホロライブかいのかばじ"
+
+[[case]]
+input = "箪笥?"
+mode = "hiragana"
+expected = "たんす?"
+
+[[case]]
+input = "ひょこり瓢箪島"
+mode = "hiragana"
+expected = "ひょこりひょうたんじま"
+
+[[case]]
+input = "瓢箪から駒ではw"
+mode = "hiragana"
+expected = "ひょうたんからこまではw"
+
+[[case]]
+input = "今のが鍵箪笥"
+mode = "hiragana"
+expected = "いまのがかぎたんす"
+
