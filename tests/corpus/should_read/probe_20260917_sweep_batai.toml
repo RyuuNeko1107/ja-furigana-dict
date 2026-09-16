@@ -1,0 +1,275 @@
+[[case]]
+input = "馬体診断から1-6-11"
+mode = "hiragana"
+expected = "ばたいしんだんからいちろくじゅういち"
+
+[[case]]
+input = "4隅か"
+mode = "hiragana"
+expected = "よすみか"
+
+[[case]]
+input = "四隅をまわってにげるとよいか"
+mode = "hiragana"
+expected = "よすみをまわってにげるとよいか"
+
+[[case]]
+input = "お花摘みがまずかったか..."
+mode = "hiragana"
+expected = "おはなつみがまずかったか..."
+
+[[case]]
+input = "でっかいお花摘めた?"
+mode = "hiragana"
+expected = "でっかいおはなつめた?"
+
+[[case]]
+input = "次鋒じゃないかな?"
+mode = "hiragana"
+expected = "じほうじゃないかな?"
+
+[[case]]
+input = "先鋒次鋒中堅"
+mode = "hiragana"
+expected = "せんぽうじほうちゅうけん"
+
+[[case]]
+input = "先鋒にレイドくんおらんなw"
+mode = "hiragana"
+expected = "せんぽうにレイドくんおらんなw"
+
+[[case]]
+input = "冴えてるね〜"
+mode = "hiragana"
+expected = "さえてるね"
+
+[[case]]
+input = "冴島先生......"
+mode = "hiragana"
+expected = "さえじませんせい......"
+
+[[case]]
+input = "令和の冴羽"
+mode = "hiragana"
+expected = "れいわのさえば"
+
+[[case]]
+input = "サイコパス診断の答えかよ"
+mode = "hiragana"
+expected = "サイコパスしんだんのこたえかよ"
+
+[[case]]
+input = "検診大切だよ"
+mode = "hiragana"
+expected = "けんしんたいせつだよ"
+
+[[case]]
+input = "定期健診大事ね"
+mode = "hiragana"
+expected = "ていきけんしんだいじね"
+
+[[case]]
+input = "打診された時"
+mode = "hiragana"
+expected = "だしんされたとき"
+
+[[case]]
+input = "聴診器つけてみる?"
+mode = "hiragana"
+expected = "ちょうしんきつけてみる?"
+
+[[case]]
+input = "入江診療所"
+mode = "hiragana"
+expected = "いりえしんりょうじょ"
+
+[[case]]
+input = "歯医者で診てもらおう"
+mode = "hiragana"
+expected = "はいしゃでみてもらおう"
+
+[[case]]
+input = "右上隅やメッシw"
+mode = "hiragana"
+expected = "みぎうえすみやメッシw"
+
+[[case]]
+input = "隅っこw"
+mode = "hiragana"
+expected = "すみっこw"
+
+[[case]]
+input = "隅田川花火大会"
+mode = "hiragana"
+expected = "すみだがわはなびたいかい"
+
+[[case]]
+input = "ぼく東京の片隅"
+mode = "hiragana"
+expected = "ぼくとうきょうのかたすみ"
+
+[[case]]
+input = "文脈でなんとなくはあるある"
+mode = "hiragana"
+expected = "ぶんみゃくでなんとなくはあるある"
+
+[[case]]
+input = "頸動脈なら"
+mode = "hiragana"
+expected = "けいどうみゃくなら"
+
+[[case]]
+input = "鉱脈もあるんだねー"
+mode = "hiragana"
+expected = "こうみゃくもあるんだねー"
+
+[[case]]
+input = "人脈だろうなぁ"
+mode = "hiragana"
+expected = "じんみゃくだろうなぁ"
+
+[[case]]
+input = "狂気山脈やれ"
+mode = "hiragana"
+expected = "きょうきさんみゃくやれ"
+
+[[case]]
+input = "水脈当てた"
+mode = "hiragana"
+expected = "すいみゃくあてた"
+
+[[case]]
+input = "金脈見つけたか?"
+mode = "hiragana"
+expected = "きんみゃくみつけたか?"
+
+[[case]]
+input = "指摘はされてるけどね。"
+mode = "hiragana"
+expected = "してきはされてるけどね。"
+
+[[case]]
+input = "唐揚げ摘出手術成功"
+mode = "hiragana"
+expected = "からあげてきしゅつしゅじゅつせいこう"
+
+[[case]]
+input = "語彙力崩壊するみこち"
+mode = "hiragana"
+expected = "ごいりょくほうかいするみこち"
+
+[[case]]
+input = "犬夜叉ー!"
+mode = "hiragana"
+expected = "いぬやしゃー!"
+
+[[case]]
+input = "沙花叉ーー"
+mode = "hiragana"
+expected = "さかまたーー"
+
+[[case]]
+input = "音叉音撃!"
+mode = "hiragana"
+expected = "おんさおんげき!"
+
+[[case]]
+input = "三叉路"
+mode = "hiragana"
+expected = "さんさろ"
+
+[[case]]
+input = "ふた叉おかゆ!"
+mode = "hiragana"
+expected = "ふたまたおかゆ!"
+
+[[case]]
+input = "わためぇも瑞稀姫と相性いいね"
+mode = "hiragana"
+expected = "わためぇもみずきひめとあいしょういいね"
+
+[[case]]
+input = "さすがに稀勢の里すぎるww"
+mode = "hiragana"
+expected = "さすがにきせのさとすぎるww"
+
+[[case]]
+input = "リオナの類稀な反射神経"
+mode = "hiragana"
+expected = "リオナのるいまれなはんしゃしんけい"
+
+[[case]]
+input = "流石稀代のエンターディナー"
+mode = "hiragana"
+expected = "さすがきたいのエンターディナー"
+
+[[case]]
+input = "極稀なボイス"
+mode = "hiragana"
+expected = "ごくまれなボイス"
+
+[[case]]
+input = "喪失感"
+mode = "hiragana"
+expected = "そうしつかん"
+
+[[case]]
+input = "苫小牧"
+mode = "hiragana"
+expected = "とまこまい"
+
+[[case]]
+input = "痩せたね"
+mode = "hiragana"
+expected = "やせたね"
+
+[[case]]
+input = "剰余金"
+mode = "hiragana"
+expected = "じょうよきん"
+
+[[case]]
+input = "軒並み"
+mode = "hiragana"
+expected = "のきなみ"
+
+[[case]]
+input = "儚いね"
+mode = "hiragana"
+expected = "はかないね"
+
+[[case]]
+input = "山椒"
+mode = "hiragana"
+expected = "さんしょう"
+
+[[case]]
+input = "捜索する"
+mode = "hiragana"
+expected = "そうさくする"
+
+[[case]]
+input = "搾取だな"
+mode = "hiragana"
+expected = "さくしゅだな"
+
+[[case]]
+input = "掟破り"
+mode = "hiragana"
+expected = "おきてやぶり"
+
+[[case]]
+input = "随時受付"
+mode = "hiragana"
+expected = "ずいじうけつけ"
+
+[[case]]
+input = "零細企業"
+mode = "hiragana"
+expected = "れいさいきぎょう"
+
+[[case]]
+input = "拮抗してる"
+mode = "hiragana"
+expected = "きっこうしてる"
+
