@@ -1,0 +1,420 @@
+[[case]]
+input = "抉っていく..."
+mode = "hiragana"
+expected = "えぐっていく..."
+
+[[case]]
+input = "抉っていくスタイルw"
+mode = "hiragana"
+expected = "えぐっていくスタイルw"
+
+[[case]]
+input = "手で抉ったんやろなこれ..."
+mode = "hiragana"
+expected = "てでえぐったんやろなこれ..."
+
+[[case]]
+input = "目ん玉抉ったんか"
+mode = "hiragana"
+expected = "めんたまえぐったんか"
+
+[[case]]
+input = "自らの目を抉った"
+mode = "hiragana"
+expected = "みずからのめをえぐった"
+
+[[case]]
+input = "自分から抉ったからね..."
+mode = "hiragana"
+expected = "じぶんからえぐったからね..."
+
+[[case]]
+input = "抉ったんじゃない?"
+mode = "hiragana"
+expected = "えぐったんじゃない?"
+
+[[case]]
+input = "そしてこのエンディングが抉ってくる"
+mode = "hiragana"
+expected = "そしてこのエンディングがえぐってくる"
+
+[[case]]
+input = "的確に抉ってくるw"
+mode = "hiragana"
+expected = "てきかくにえぐってくるw"
+
+[[case]]
+input = "傷を抉っていくw"
+mode = "hiragana"
+expected = "きずをえぐっていくw"
+
+[[case]]
+input = "的確に人の心抉っていくb"
+mode = "hiragana"
+expected = "てきかくにひとのこころえぐっていくb"
+
+[[case]]
+input = "ツモだけでどんどん抉れて行く"
+mode = "hiragana"
+expected = "ツモだけでどんどんえぐれていく"
+
+[[case]]
+input = "人の心が無いと人の心を深く抉れないんだぁ......"
+mode = "hiragana"
+expected = "ひとのこころがないとひとのこころをふかくえぐれないんだぁ......"
+
+[[case]]
+input = "まさか抉りとった・・・・?"
+mode = "hiragana"
+expected = "まさかえぐりとった?"
+
+[[case]]
+input = "心抉られるから注意やで"
+mode = "hiragana"
+expected = "こころえぐられるからちゅういやで"
+
+[[case]]
+input = "トラウマを抉る歌"
+mode = "hiragana"
+expected = "トラウマをえぐるうた"
+
+[[case]]
+input = "抉れるw"
+mode = "hiragana"
+expected = "えぐれるw"
+
+[[case]]
+input = "そこ抉るwww"
+mode = "hiragana"
+expected = "そこえぐるwww"
+
+[[case]]
+input = "古傷を抉られてる"
+mode = "hiragana"
+expected = "ふるきずをえぐられてる"
+
+[[case]]
+input = "長渕剛"
+mode = "hiragana"
+expected = "ながぶちつよし"
+
+[[case]]
+input = "長渕師匠"
+mode = "hiragana"
+expected = "ながぶちししょう"
+
+[[case]]
+input = "王 田渕狙い?"
+mode = "hiragana"
+expected = "おう たぶちねらい?"
+
+[[case]]
+input = "@岩渕良太-z4d さんこんばんはノ"
+mode = "hiragana"
+expected = "@いわぶちりょうたz4d さんこんばんはノ"
+
+[[case]]
+input = "自民党唯一の良識派小渕優子"
+mode = "hiragana"
+expected = "じみんとうゆいいつのりょうしきはおぶちゆうこ"
+
+[[case]]
+input = "渕崎ゆり子さんとか"
+mode = "hiragana"
+expected = "ふちざきゆりこさんとか"
+
+[[case]]
+input = "坦々"
+mode = "hiragana"
+expected = "たんたん"
+
+[[case]]
+input = "痺れる坦々麺!?"
+mode = "hiragana"
+expected = "しびれるたんたんめん!?"
+
+[[case]]
+input = "なか卯は坦々うどん"
+mode = "hiragana"
+expected = "なかうはたんたんうどん"
+
+[[case]]
+input = "虚心坦懐マン"
+mode = "hiragana"
+expected = "きょしんたんかいマン"
+
+[[case]]
+input = "感情が平坦な船長"
+mode = "hiragana"
+expected = "かんじょうがへいたんなせんちょう"
+
+[[case]]
+input = "心做しかプルプルしてきた"
+mode = "hiragana"
+expected = "こころなしかプルプルしてきた"
+
+[[case]]
+input = "BGMも心做しか切ないな"
+mode = "hiragana"
+expected = "ビージーエムもこころなしかせつないな"
+
+[[case]]
+input = "急に 心做し 来てワロタ"
+mode = "hiragana"
+expected = "きゅうに こころなし きてワロタ"
+
+[[case]]
+input = "三次も廿日市も読めます"
+mode = "hiragana"
+expected = "みよしもはつかいちもよめます"
+
+[[case]]
+input = "三次元"
+mode = "hiragana"
+expected = "さんじげん"
+
+[[case]]
+input = "篝火か?"
+mode = "hiragana"
+expected = "かがりびか?"
+
+[[case]]
+input = "ダークソウルの篝火 エルデンの祝福だねw"
+mode = "hiragana"
+expected = "ダークソウルのかがりび エルデンのしゅくふくだねw"
+
+[[case]]
+input = "お灸〜!"
+mode = "hiragana"
+expected = "おきゅう!"
+
+[[case]]
+input = "お灸は添えるだけ"
+mode = "hiragana"
+expected = "おきゅうはそえるだけ"
+
+[[case]]
+input = "鍼灸師さんなのかな?"
+mode = "hiragana"
+expected = "しんきゅうしさんなのかな?"
+
+[[case]]
+input = "星街針灸"
+mode = "hiragana"
+expected = "ほしまちしんきゅう"
+
+[[case]]
+input = "閏年どころじゃない"
+mode = "hiragana"
+expected = "うるうどしどころじゃない"
+
+[[case]]
+input = "今作は閏関係なく2月末かな?"
+mode = "hiragana"
+expected = "こんさくはうるうかんけいなくにげつまつかな?"
+
+[[case]]
+input = "漸く覚えたか"
+mode = "hiragana"
+expected = "ようやくおぼえたか"
+
+[[case]]
+input = "笹木漸九"
+mode = "hiragana"
+expected = "ささきぜんきゅう"
+
+[[case]]
+input = "まさに漸近"
+mode = "hiragana"
+expected = "まさにぜんきん"
+
+[[case]]
+input = "高校生なら漸近線習ったでしょ"
+mode = "hiragana"
+expected = "こうこうせいならぜんきんせんならったでしょ"
+
+[[case]]
+input = "6時間の俺安堵w"
+mode = "hiragana"
+expected = "ろくじかんのおれあんどw"
+
+[[case]]
+input = "安堵の牛乳"
+mode = "hiragana"
+expected = "あんどのぎゅうにゅう"
+
+[[case]]
+input = "縦縞模様見えてたもん"
+mode = "hiragana"
+expected = "たてじまもようみえてたもん"
+
+[[case]]
+input = "横縞!"
+mode = "hiragana"
+expected = "よこじま!"
+
+[[case]]
+input = "まだ縞パン"
+mode = "hiragana"
+expected = "まだしまパン"
+
+[[case]]
+input = "虎縞プテラ"
+mode = "hiragana"
+expected = "とらしまプテラ"
+
+[[case]]
+input = "贖罪"
+mode = "hiragana"
+expected = "しょくざい"
+
+[[case]]
+input = "これが贖いの時"
+mode = "hiragana"
+expected = "これがあがないのとき"
+
+[[case]]
+input = "イエスは贖い主のためにオーラが30点ぐらいです。"
+mode = "hiragana"
+expected = "イエスはあがないぬしのためにオーラがさんじゅってんぐらいです。"
+
+[[case]]
+input = "狡猾な魔物"
+mode = "hiragana"
+expected = "こうかつなまもの"
+
+[[case]]
+input = "和洋折衷!"
+mode = "hiragana"
+expected = "わようせっちゅう!"
+
+[[case]]
+input = "苦衷キャッチむずそう"
+mode = "hiragana"
+expected = "くちゅうキャッチむずそう"
+
+[[case]]
+input = "綴る"
+mode = "hiragana"
+expected = "つづる"
+
+[[case]]
+input = "割れ鍋に綴じ蓋"
+mode = "hiragana"
+expected = "われなべにとじふた"
+
+[[case]]
+input = "綴りが違うwww"
+mode = "hiragana"
+expected = "つづりがちがうwww"
+
+[[case]]
+input = "4枚綴りの伝説は果たして読まれるのか...?"
+mode = "hiragana"
+expected = "よんまいつづりのでんせつははたしてよまれるのか...?"
+
+[[case]]
+input = "儂らには救えぬものじゃ"
+mode = "hiragana"
+expected = "わしらにはすくえぬものじゃ"
+
+[[case]]
+input = "儂じゃよ"
+mode = "hiragana"
+expected = "わしじゃよ"
+
+[[case]]
+input = "麒麟 川島は?"
+mode = "hiragana"
+expected = "きりん かわしまは?"
+
+[[case]]
+input = "麟太郎!?"
+mode = "hiragana"
+expected = "りんたろう!?"
+
+[[case]]
+input = "佐々木麟太郎はメジャーリーグいきますか?"
+mode = "hiragana"
+expected = "ささきりんたろうはメジャーリーグいきますか?"
+
+[[case]]
+input = "金木犀色のフブさん"
+mode = "hiragana"
+expected = "きんもくせいしょくのフブさん"
+
+[[case]]
+input = "金木犀の香りが好きかどうか?"
+mode = "hiragana"
+expected = "きんもくせいのかおりがすきかどうか?"
+
+[[case]]
+input = "猗窩座かな_"
+mode = "hiragana"
+expected = "あかざかな_"
+
+[[case]]
+input = "百合猗窩座"
+mode = "hiragana"
+expected = "ゆりあかざ"
+
+[[case]]
+input = "廿日市"
+mode = "hiragana"
+expected = "はつかいち"
+
+[[case]]
+input = "十が二つで廿"
+mode = "hiragana"
+expected = "じゅうがふたつでにじゅう"
+
+[[case]]
+input = "五日市と廿日市やな"
+mode = "hiragana"
+expected = "いつかいちとはつかいちやな"
+
+[[case]]
+input = "あの生誕祭は未来永劫(みらいえいごう)語り継がれるだろうな"
+mode = "hiragana"
+expected = "あのせいたんさいはみらいえいごう(みらいえいごう)かたりつがれるだろうな"
+
+[[case]]
+input = "今の時期は特に億劫になるのかな"
+mode = "hiragana"
+expected = "いまのじきはとくにおっくうになるのかな"
+
+[[case]]
+input = "砥石ある?"
+mode = "hiragana"
+expected = "といしある?"
+
+[[case]]
+input = "砥いでるw"
+mode = "hiragana"
+expected = "といでるw"
+
+[[case]]
+input = "メリケンサックも砥げるのか?"
+mode = "hiragana"
+expected = "メリケンサックもとげるのか?"
+
+[[case]]
+input = "青砥区チャンスだ!"
+mode = "hiragana"
+expected = "あおとくチャンスだ!"
+
+[[case]]
+input = "いいかた卑猥w"
+mode = "hiragana"
+expected = "いいかたひわいw"
+
+[[case]]
+input = "猥褻物陳列罪も合法にするならバランスするよ?"
+mode = "hiragana"
+expected = "わいせつぶつちんれつざいもごうほうにするならバランスするよ?"
+
+[[case]]
+input = "30分猥談しよーや"
+mode = "hiragana"
+expected = "さんじゅっぷんわいだんしよーや"
+
