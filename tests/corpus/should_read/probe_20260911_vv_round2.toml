@@ -43,7 +43,7 @@ note = "同上"
 [[case]]
 input = "兔田"
 mode = "hiragana"
-expected = "うさぎだ"
+expected = "うさだ"
 note = "同上"
 
 [[case]]

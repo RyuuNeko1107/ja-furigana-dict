@@ -1,0 +1,160 @@
+[[case]]
+input = "スタジオ兔田かな"
+mode = "hiragana"
+expected = "スタジオうさだかな"
+
+[[case]]
+input = "夜廻りシリーズは?"
+mode = "hiragana"
+expected = "よまわりシリーズは?"
+
+[[case]]
+input = "絵柄が夜廻りだからな"
+mode = "hiragana"
+expected = "えがらがよまわりだからな"
+
+[[case]]
+input = "夜廻りでよく聞いた音が"
+mode = "hiragana"
+expected = "よまわりでよくきいたおとが"
+
+[[case]]
+input = "避難所行って菅直人はぶっ叩かれたからな"
+mode = "hiragana"
+expected = "ひなんしょぎょうってかんなおとはぶったたかれたからな"
+
+[[case]]
+input = "菅直人最低野郎"
+mode = "hiragana"
+expected = "かんなおとさいていやろう"
+
+[[case]]
+input = "高市は菅総理のように現地に行きなさいよ"
+mode = "hiragana"
+expected = "たかいちはすがそうりのようにげんちにいきなさいよ"
+
+[[case]]
+input = "スポーツランド菅生"
+mode = "hiragana"
+expected = "スポーツランドすごう"
+
+[[case]]
+input = "東海大菅生と桜美林の試合もすごかった"
+mode = "hiragana"
+expected = "とうかいだいすがおとおうびりんのしあいもすごかった"
+
+[[case]]
+input = "鳴潮神"
+mode = "hiragana"
+expected = "めいちょうしん"
+
+[[case]]
+input = "鳴潮は神ゲー"
+mode = "hiragana"
+expected = "めいちょうはかみゲー"
+
+[[case]]
+input = "鳴潮やってみて、面白いよ!"
+mode = "hiragana"
+expected = "めいちょうやってみて、おもしろいよ!"
+
+[[case]]
+input = "デジョン八潮は消防がヘボだった"
+mode = "hiragana"
+expected = "デジョンやしおはしょうぼうがヘボだった"
+
+[[case]]
+input = "満潮時島なくなりそう"
+mode = "hiragana"
+expected = "まんちょうじしまなくなりそう"
+
+[[case]]
+input = "八部休符だねw"
+mode = "hiragana"
+expected = "はちぶきゅうふだねw"
+
+[[case]]
+input = "大吾ワオ"
+mode = "hiragana"
+expected = "だいごワオ"
+
+[[case]]
+input = "大吾はムショから出さなどうにもならん"
+mode = "hiragana"
+expected = "だいごはムショからださなどうにもならん"
+
+[[case]]
+input = "懐かしいな大吾くん"
+mode = "hiragana"
+expected = "なつかしいなだいごくん"
+
+[[case]]
+input = "前田悠吾!?"
+mode = "hiragana"
+expected = "まえだゆうご!?"
+
+[[case]]
+input = "秋山翔吾なら外野"
+mode = "hiragana"
+expected = "あきやましょうごならがいや"
+
+[[case]]
+input = "隈 研吾"
+mode = "hiragana"
+expected = "くま けんご"
+
+[[case]]
+input = "矢野奨吾さんだったらうれしい"
+mode = "hiragana"
+expected = "やのしょうごさんだったらうれしい"
+
+[[case]]
+input = "想吾"
+mode = "hiragana"
+expected = "そうご"
+
+[[case]]
+input = "天鱗出ました!!!!!!!!"
+mode = "hiragana"
+expected = "てんりんでました!!!!!!!!"
+
+[[case]]
+input = "天鱗狩りいこうぜー"
+mode = "hiragana"
+expected = "てんりんかりいこうぜー"
+
+[[case]]
+input = "湯切りは龍鱗麺で?"
+mode = "hiragana"
+expected = "ゆぎりはりゅうりんめんで?"
+
+[[case]]
+input = "竜鱗確定じゃないのか"
+mode = "hiragana"
+expected = "りゅうりんかくていじゃないのか"
+
+[[case]]
+input = "みんな祝勝会いったよ"
+mode = "hiragana"
+expected = "みんなしゅくしょうかいいったよ"
+
+[[case]]
+input = "城之内で草"
+mode = "hiragana"
+expected = "じょうのうちでくさ"
+
+[[case]]
+input = "天王洲"
+mode = "hiragana"
+expected = "てんのうず"
+
+[[case]]
+input = "何かしら公にしたくない事実があった"
+mode = "hiragana"
+expected = "なにかしらおおやけにしたくないじじつがあった"
+
+[[case]]
+input = "猫とか犬より攻殻機動隊にすればいいんじゃね"
+mode = "hiragana"
+expected = "ねことかいぬよりこうかくきどうたいにすればいいんじゃね"
+
