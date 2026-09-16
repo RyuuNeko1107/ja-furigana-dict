@@ -1,0 +1,80 @@
+[[case]]
+input = "右外野 推獎"
+mode = "hiragana"
+expected = "みぎがいや すいしょう"
+
+[[case]]
+input = "這抽獎真地獄=口="
+mode = "hiragana"
+expected = "はちゅうしょうしんじごく=くち="
+
+[[case]]
+input = "大獎"
+mode = "hiragana"
+expected = "だいしょう"
+
+[[case]]
+input = "事實事,超過40%得獎率全世界都沒面 #GPT"
+mode = "hiragana"
+expected = "じじつじ,ちょうかよんじゅっぱーせんととくしょうりつぜんせかいとぼつめん #ジーピーティー"
+
+[[case]]
+input = "言獎勵"
+mode = "hiragana"
+expected = "げんしょうれい"
+
+[[case]]
+input = "盈進とか誠之館はないのか"
+mode = "hiragana"
+expected = "えいしんとかせいしかんはないのか"
+
+[[case]]
+input = "山梨県韮崎市新府ですね"
+mode = "hiragana"
+expected = "やまなしけんにらさきししんぷですね"
+
+[[case]]
+input = "推獎"
+mode = "hiragana"
+expected = "すいしょう"
+
+[[case]]
+input = "抽獎"
+mode = "hiragana"
+expected = "ちゅうしょう"
+
+[[case]]
+input = "得獎率"
+mode = "hiragana"
+expected = "とくしょうりつ"
+
+[[case]]
+input = "奨励"
+mode = "hiragana"
+expected = "しょうれい"
+
+[[case]]
+input = "盈進"
+mode = "hiragana"
+expected = "えいしん"
+
+[[case]]
+input = "角盈男かぁ"
+mode = "hiragana"
+expected = "かどみつおかぁ"
+
+[[case]]
+input = "盈月"
+mode = "hiragana"
+expected = "えいげつ"
+
+[[case]]
+input = "新府"
+mode = "hiragana"
+expected = "しんぷ"
+
+[[case]]
+input = "韮崎は、高速走ってて 何か気になる地名だった"
+mode = "hiragana"
+expected = "にらさきは、こうそくはしってて なにかきになるちめいだった"
+
