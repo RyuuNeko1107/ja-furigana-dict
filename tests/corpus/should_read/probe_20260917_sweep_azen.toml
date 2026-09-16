@@ -1,0 +1,55 @@
+[[case]]
+input = "連攜"
+mode = "hiragana"
+expected = "れんけい"
+
+[[case]]
+input = "'ˊ強 連攜"
+mode = "hiragana"
+expected = "'ˊきょう れんけい"
+
+[[case]]
+input = "フブさんが啞然としてるwww"
+mode = "hiragana"
+expected = "フブさんがあぜんとしてるwww"
+
+[[case]]
+input = "啞然"
+mode = "hiragana"
+expected = "あぜん"
+
+[[case]]
+input = "唖然"
+mode = "hiragana"
+expected = "あぜん"
+
+[[case]]
+input = "連携"
+mode = "hiragana"
+expected = "れんけい"
+
+[[case]]
+input = "携帯"
+mode = "hiragana"
+expected = "けいたい"
+
+[[case]]
+input = "外野の守備弱い啞"
+mode = "hiragana"
+expected = "がいやのしゅびよわいおし"
+
+[[case]]
+input = "2偕?"
+mode = "hiragana"
+expected = "にともに?"
+
+[[case]]
+input = "偕楽園"
+mode = "hiragana"
+expected = "かいらくえん"
+
+[[case]]
+input = "偕行社"
+mode = "hiragana"
+expected = "かいこうしゃ"
+
