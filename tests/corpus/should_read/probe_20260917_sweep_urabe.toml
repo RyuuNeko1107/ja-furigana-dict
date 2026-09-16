@@ -1,0 +1,315 @@
+[[case]]
+input = "久し振りにじっくり衣装弄ってて楽しいなw"
+mode = "hiragana"
+expected = "ひさしぶりにじっくりいしょういじっててたのしいなw"
+
+[[case]]
+input = "ぺこら弄って遊んでる"
+mode = "hiragana"
+expected = "ぺこらいじってあそんでる"
+
+[[case]]
+input = "打順弄ってみるのもあり"
+mode = "hiragana"
+expected = "だじゅんいじってみるのもあり"
+
+[[case]]
+input = "お互いスタメン弄ってきたね"
+mode = "hiragana"
+expected = "おたがいスタメンいじってきたね"
+
+[[case]]
+input = "自分で弄っていくスタイル"
+mode = "hiragana"
+expected = "じぶんでいじっていくスタイル"
+
+[[case]]
+input = "ただ繋げたんじゃないから脚本弄れたんです"
+mode = "hiragana"
+expected = "ただつなげたんじゃないからきゃくほんいじれたんです"
+
+[[case]]
+input = "上澄の肉壁"
+mode = "hiragana"
+expected = "うわずみのにくかべ"
+
+[[case]]
+input = "清澄の5番目じゃねーか"
+mode = "hiragana"
+expected = "きよすみのごばんめじゃねーか"
+
+[[case]]
+input = "一聖剣卜部"
+mode = "hiragana"
+expected = "いっせいけんうらべ"
+
+[[case]]
+input = "有能卜部"
+mode = "hiragana"
+expected = "ゆうのううらべ"
+
+[[case]]
+input = "カレンと卜部だけやな"
+mode = "hiragana"
+expected = "カレンとうらべだけやな"
+
+[[case]]
+input = "四聖剣は卜部のみだな"
+mode = "hiragana"
+expected = "しせいけんはうらべのみだな"
+
+[[case]]
+input = "みんな大好き卜部えええええええ"
+mode = "hiragana"
+expected = "みんなだいすきうらべえええええええ"
+
+[[case]]
+input = "水卜ちゃん行こうw"
+mode = "hiragana"
+expected = "みうらちゃんいこうw"
+
+[[case]]
+input = "水卜アナ号泣"
+mode = "hiragana"
+expected = "みうらアナごうきゅう"
+
+[[case]]
+input = "脳みそ弄るか"
+mode = "hiragana"
+expected = "のうみそいじるか"
+
+[[case]]
+input = "暇を弄ぶ神々の遊び"
+mode = "hiragana"
+expected = "ひまをもてあそぶかみがみのあそび"
+
+[[case]]
+input = "翻弄とな"
+mode = "hiragana"
+expected = "ほんろうとな"
+
+[[case]]
+input = "嘲弄といいますw"
+mode = "hiragana"
+expected = "ちょうろうといいますw"
+
+[[case]]
+input = "上澄みも上澄み"
+mode = "hiragana"
+expected = "うわずみもうわずみ"
+
+[[case]]
+input = "卜部さん!"
+mode = "hiragana"
+expected = "うらべさん!"
+
+[[case]]
+input = "剣聖卜部"
+mode = "hiragana"
+expected = "けんせいうらべ"
+
+[[case]]
+input = "塚原卜伝とか"
+mode = "hiragana"
+expected = "つかはらぼくでんとか"
+
+[[case]]
+input = "崖っぷち"
+mode = "hiragana"
+expected = "がけっぷち"
+
+[[case]]
+input = "断崖絶壁や"
+mode = "hiragana"
+expected = "だんがいぜっぺきや"
+
+[[case]]
+input = "小峠かw"
+mode = "hiragana"
+expected = "ことうげかw"
+
+[[case]]
+input = "峠を越えただろ"
+mode = "hiragana"
+expected = "とうげをこえただろ"
+
+[[case]]
+input = "澄んだ歌声や"
+mode = "hiragana"
+expected = "すんだうたごえや"
+
+[[case]]
+input = "桑田真澄やん!!!!!"
+mode = "hiragana"
+expected = "くわたますみやん!!!!!"
+
+[[case]]
+input = "CV川澄綾子でよくない?"
+mode = "hiragana"
+expected = "シーブイかわすみあやこでよくない?"
+
+[[case]]
+input = "座禅組んだほうがいいよ"
+mode = "hiragana"
+expected = "ざぜんくんだほうがいいよ"
+
+[[case]]
+input = "これが牽制球"
+mode = "hiragana"
+expected = "これがけんせいきゅう"
+
+[[case]]
+input = "牽引してる存在だ..."
+mode = "hiragana"
+expected = "けんいんしてるそんざいだ..."
+
+[[case]]
+input = "4項目が一番大事"
+mode = "hiragana"
+expected = "よんこうもくがいちばんだいじ"
+
+[[case]]
+input = "項垂れる様子"
+mode = "hiragana"
+expected = "うなだれるようす"
+
+[[case]]
+input = "鍛冶屋で作った?"
+mode = "hiragana"
+expected = "かじやでつくった?"
+
+[[case]]
+input = "乾燥に気をつけてね!"
+mode = "hiragana"
+expected = "かんそうにきをつけてね!"
+
+[[case]]
+input = "新庄ギャルか?"
+mode = "hiragana"
+expected = "しんじょうギャルか?"
+
+[[case]]
+input = "庄司のモノマネして"
+mode = "hiragana"
+expected = "しょうじのモノマネして"
+
+[[case]]
+input = "庄内川監視中"
+mode = "hiragana"
+expected = "しょうないがわかんしちゅう"
+
+[[case]]
+input = "本庄真面目だっただけか"
+mode = "hiragana"
+expected = "ほんじょうまじめだっただけか"
+
+[[case]]
+input = "蛾は潰そう"
+mode = "hiragana"
+expected = "がはつぶそう"
+
+[[case]]
+input = "インセクター羽蛾きちゃw"
+mode = "hiragana"
+expected = "インセクターはがきちゃw"
+
+[[case]]
+input = "毒蛾のナイフ"
+mode = "hiragana"
+expected = "どくがのナイフ"
+
+[[case]]
+input = "誘蛾灯かな?"
+mode = "hiragana"
+expected = "ゆうがとうかな?"
+
+[[case]]
+input = "中村悠一さん"
+mode = "hiragana"
+expected = "なかむらゆういちさん"
+
+[[case]]
+input = "悠木碧さん"
+mode = "hiragana"
+expected = "ゆうきあおさん"
+
+[[case]]
+input = "虎杖悠仁!"
+mode = "hiragana"
+expected = "いたどりゆうじ!"
+
+[[case]]
+input = "柳田悠岐"
+mode = "hiragana"
+expected = "やなぎだゆうき"
+
+[[case]]
+input = "富野由悠季"
+mode = "hiragana"
+expected = "とみのよしゆき"
+
+[[case]]
+input = "ホルムズ海峡開放きた?"
+mode = "hiragana"
+expected = "ホルムズかいきょうかいほうきた?"
+
+[[case]]
+input = "三峡ダム"
+mode = "hiragana"
+expected = "さんきょうダム"
+
+[[case]]
+input = "峡谷してるわ"
+mode = "hiragana"
+expected = "きょうこくしてるわ"
+
+[[case]]
+input = "層雲峡の一角?"
+mode = "hiragana"
+expected = "そううんきょうのいっかく?"
+
+[[case]]
+input = "高千穂峡下り"
+mode = "hiragana"
+expected = "たかちほきょうくだり"
+
+[[case]]
+input = "醍醐味だな"
+mode = "hiragana"
+expected = "だいごみだな"
+
+[[case]]
+input = "歌舞伎町"
+mode = "hiragana"
+expected = "かぶきちょう"
+
+[[case]]
+input = "紋章だね"
+mode = "hiragana"
+expected = "もんしょうだね"
+
+[[case]]
+input = "矛盾してる"
+mode = "hiragana"
+expected = "むじゅんしてる"
+
+[[case]]
+input = "錠剤"
+mode = "hiragana"
+expected = "じょうざい"
+
+[[case]]
+input = "冶金"
+mode = "hiragana"
+expected = "やきん"
+
+[[case]]
+input = "摂取する"
+mode = "hiragana"
+expected = "せっしゅする"
+
+[[case]]
+input = "伴走者"
+mode = "hiragana"
+expected = "ばんそうしゃ"
+
