@@ -1,0 +1,155 @@
+[[case]]
+input = "新羅課長だ!"
+mode = "hiragana"
+expected = "しんらかちょうだ!"
+
+[[case]]
+input = "しんら課長!"
+mode = "hiragana"
+expected = "しんらかちょう!"
+
+[[case]]
+input = "静まり給えーw"
+mode = "hiragana"
+expected = "しずまりたまえーw"
+
+[[case]]
+input = "続け給へ"
+mode = "hiragana"
+expected = "つづけたまえ"
+
+[[case]]
+input = "故郷を感じる各県の訛り"
+mode = "hiragana"
+expected = "こきょうをかんじるかくけんのなまり"
+
+[[case]]
+input = "各県に1人2人のクマ対策専門官に何ができんねん"
+mode = "hiragana"
+expected = "かくけんにひとりふたりのクマたいさくせんもんかんになにができんねん"
+
+[[case]]
+input = "図書館容易しようw"
+mode = "hiragana"
+expected = "としょかんよういしようw"
+
+[[case]]
+input = "具材容易しすぎ問題"
+mode = "hiragana"
+expected = "ぐざいよういしすぎもんだい"
+
+[[case]]
+input = "第4次原政権"
+mode = "hiragana"
+expected = "だいよじげんせいけん"
+
+[[case]]
+input = "愛おしい 一生沼ってほしい"
+mode = "hiragana"
+expected = "いとおしい いっしょうぬまってほしい"
+
+[[case]]
+input = "前回沼ったからなぁw"
+mode = "hiragana"
+expected = "ぜんかいぬまったからなぁw"
+
+[[case]]
+input = "ころさんここのジャンプ結構沼ってたよね"
+mode = "hiragana"
+expected = "ころさんここのジャンプけっこうぬまってたよね"
+
+[[case]]
+input = "案外沼るかもよ"
+mode = "hiragana"
+expected = "あんがいぬまるかもよ"
+
+[[case]]
+input = "圧倒的沼"
+mode = "hiragana"
+expected = "あっとうてきぬま"
+
+[[case]]
+input = "初心者沼おじさん"
+mode = "hiragana"
+expected = "しょしんしゃぬまおじさん"
+
+[[case]]
+input = "超沼ゲーだからw"
+mode = "hiragana"
+expected = "ちょうぬまゲーだからw"
+
+[[case]]
+input = "一番沼ったところやw"
+mode = "hiragana"
+expected = "いちばんぬまったところやw"
+
+[[case]]
+input = "高速沼突破...いけるか?"
+mode = "hiragana"
+expected = "こうそくぬまとっぱ...いけるか?"
+
+[[case]]
+input = "前沼ジャン多かったか"
+mode = "hiragana"
+expected = "まえぬまジャンおおかったか"
+
+[[case]]
+input = "結構沼りそう"
+mode = "hiragana"
+expected = "けっこうぬまりそう"
+
+[[case]]
+input = "これも結構沼るんだよなあ"
+mode = "hiragana"
+expected = "これもけっこうぬまるんだよなあ"
+
+[[case]]
+input = "阿部さんが欲しがって取った松本剛どうなるんやろ。"
+mode = "hiragana"
+expected = "あべさんがほしがってとったまつもとつよしどうなるんやろ。"
+
+[[case]]
+input = "ドラゴンボールのナメック星編みたいw"
+mode = "hiragana"
+expected = "ドラゴンボールのナメックせいへんみたいw"
+
+[[case]]
+input = "犯罪者が逃げてる体で運転しとるんか?ww"
+mode = "hiragana"
+expected = "はんざいしゃがにげてるていでうんてんしとるんか?ww"
+
+[[case]]
+input = "SMOKもお願いします何卒"
+mode = "hiragana"
+expected = "SMOKもおねがいしますなにとぞ"
+
+[[case]]
+input = "これより先群馬県"
+mode = "hiragana"
+expected = "これよりさきぐんまけん"
+
+[[case]]
+input = "CV:菅原正志さんだっけ"
+mode = "hiragana"
+expected = "シーブイ:すがわらまさしさんだっけ"
+
+[[case]]
+input = "新鹿沼って通過駅?"
+mode = "hiragana"
+expected = "しんかぬまってつうかえき?"
+
+[[case]]
+input = "スバルも大沼りした"
+mode = "hiragana"
+expected = "スバルもおおぬまりした"
+
+[[case]]
+input = "3時間沼りましたが??"
+mode = "hiragana"
+expected = "さんじかんぬまりましたが??"
+
+[[case]]
+input = "これは激沼りの予感"
+mode = "hiragana"
+expected = "これはげきぬまりのよかん"
+
