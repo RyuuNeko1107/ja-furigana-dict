@@ -1,0 +1,180 @@
+[[case]]
+input = "煽られてない?"
+mode = "hiragana"
+expected = "あおられてない?"
+
+[[case]]
+input = "煽らないで!"
+mode = "hiragana"
+expected = "あおらないで!"
+
+[[case]]
+input = "煽らなければ勝てたろ"
+mode = "hiragana"
+expected = "あおらなければかてたろ"
+
+[[case]]
+input = "煽りすぎで草"
+mode = "hiragana"
+expected = "あおりすぎでくさ"
+
+[[case]]
+input = "煽りおるわ"
+mode = "hiragana"
+expected = "あおりおるわ"
+
+[[case]]
+input = "煽りあいw"
+mode = "hiragana"
+expected = "あおりあいw"
+
+[[case]]
+input = "煽りますねぇ"
+mode = "hiragana"
+expected = "あおりますねぇ"
+
+[[case]]
+input = "煽りまくるやん"
+mode = "hiragana"
+expected = "あおりまくるやん"
+
+[[case]]
+input = "煽ろうw"
+mode = "hiragana"
+expected = "あおろうw"
+
+[[case]]
+input = "煽んないで!"
+mode = "hiragana"
+expected = "あおんないで!"
+
+[[case]]
+input = "煽らせ運転"
+mode = "hiragana"
+expected = "あおらせうんてん"
+
+[[case]]
+input = "煽らんでもろて"
+mode = "hiragana"
+expected = "あおらんでもろて"
+
+[[case]]
+input = "守護らねば"
+mode = "hiragana"
+expected = "まもらねば"
+
+[[case]]
+input = "とりでを守護るよ"
+mode = "hiragana"
+expected = "とりでをまもるよ"
+
+[[case]]
+input = "守護ってくれるかもよ"
+mode = "hiragana"
+expected = "まもってくれるかもよ"
+
+[[case]]
+input = "守護らないと"
+mode = "hiragana"
+expected = "まもらないと"
+
+[[case]]
+input = "守護れなかった"
+mode = "hiragana"
+expected = "まもれなかった"
+
+[[case]]
+input = "守護りましょ"
+mode = "hiragana"
+expected = "まもりましょ"
+
+[[case]]
+input = "やっぱ一護ってかっこいいよな"
+mode = "hiragana"
+expected = "やっぱいちごってかっこいいよな"
+
+[[case]]
+input = "やはり泥健か"
+mode = "hiragana"
+expected = "やはりどろけんか"
+
+[[case]]
+input = "泥健かな"
+mode = "hiragana"
+expected = "どろけんかな"
+
+[[case]]
+input = "宝条は寝ててくれ"
+mode = "hiragana"
+expected = "ほうじょうはねててくれ"
+
+[[case]]
+input = "ただし宝条はだめ"
+mode = "hiragana"
+expected = "ただしほうじょうはだめ"
+
+[[case]]
+input = "和田政宗の登場"
+mode = "hiragana"
+expected = "わだまさむねのとうじょう"
+
+[[case]]
+input = "朧政宗じゃん"
+mode = "hiragana"
+expected = "おぼろまさむねじゃん"
+
+[[case]]
+input = "結構虫で草"
+mode = "hiragana"
+expected = "けっこうむしでくさ"
+
+[[case]]
+input = "流石虫だ"
+mode = "hiragana"
+expected = "さすがむしだ"
+
+[[case]]
+input = "一応虫のやつ"
+mode = "hiragana"
+expected = "いちおうむしのやつ"
+
+[[case]]
+input = "直接炎の剣士になるよ"
+mode = "hiragana"
+expected = "ちょくせつほのおのけんしになるよ"
+
+[[case]]
+input = "直炎の剣士はつよい"
+mode = "hiragana"
+expected = "ちょくほのおのけんしはつよい"
+
+[[case]]
+input = "もう一体炎の剣士狙おう"
+mode = "hiragana"
+expected = "もういちたいほのおのけんしねらおう"
+
+[[case]]
+input = "現状炎がマグマンだけかな?"
+mode = "hiragana"
+expected = "げんじょうほのおがマグマンだけかな?"
+
+[[case]]
+input = "バーバラ踊らしとけ"
+mode = "hiragana"
+expected = "バーバラおどらしとけ"
+
+[[case]]
+input = "一発録り!"
+mode = "hiragana"
+expected = "いっぱつどり!"
+
+[[case]]
+input = "京楽隊長かっけぇ"
+mode = "hiragana"
+expected = "きょうらくたいちょうかっけぇ"
+
+[[case]]
+input = "京楽春水"
+mode = "hiragana"
+expected = "きょうらくしゅんすい"
+
