@@ -1,0 +1,245 @@
+[[case]]
+input = "不完全甘柿"
+mode = "hiragana"
+expected = "ふかんぜんあまがき"
+
+[[case]]
+input = "甘柿なのね"
+mode = "hiragana"
+expected = "あまがきなのね"
+
+[[case]]
+input = "有村架純は?"
+mode = "hiragana"
+expected = "ありむらかすみは?"
+
+[[case]]
+input = "復仇"
+mode = "hiragana"
+expected = "ふくきゅう"
+
+[[case]]
+input = "渋柿の方が糖度は高い"
+mode = "hiragana"
+expected = "しぶがきのほうがとうどはたかい"
+
+[[case]]
+input = "干し柿が好き"
+mode = "hiragana"
+expected = "ほしがきがすき"
+
+[[case]]
+input = "柿なます食べたい"
+mode = "hiragana"
+expected = "かきなますたべたい"
+
+[[case]]
+input = "十字架"
+mode = "hiragana"
+expected = "じゅうじか"
+
+[[case]]
+input = "高架橋下か"
+mode = "hiragana"
+expected = "こうかきょうしたか"
+
+[[case]]
+input = "架空のアニメ"
+mode = "hiragana"
+expected = "かくうのアニメ"
+
+[[case]]
+input = "架け橋だって"
+mode = "hiragana"
+expected = "かけはしだって"
+
+[[case]]
+input = "担架かな?"
+mode = "hiragana"
+expected = "たんかかな?"
+
+[[case]]
+input = "閉架書庫ある?"
+mode = "hiragana"
+expected = "へいかしょこある?"
+
+[[case]]
+input = "稲架掛け?"
+mode = "hiragana"
+expected = "はざがけ?"
+
+[[case]]
+input = "みんなの仇!巨人倒せ!"
+mode = "hiragana"
+expected = "みんなのあだ!きょじんたおせ!"
+
+[[case]]
+input = "親の仇か"
+mode = "hiragana"
+expected = "おやのかたきか"
+
+[[case]]
+input = "商売仇ってコト?"
+mode = "hiragana"
+expected = "しょうばいがたきってコト?"
+
+[[case]]
+input = "恩を仇で返すw"
+mode = "hiragana"
+expected = "おんをあだでかえすw"
+
+[[case]]
+input = "杞憂かいw"
+mode = "hiragana"
+expected = "きゆうかいw"
+
+[[case]]
+input = "推奨ラインに乗れてないからな"
+mode = "hiragana"
+expected = "すいしょうラインにのれてないからな"
+
+[[case]]
+input = "奨学金無くせよ"
+mode = "hiragana"
+expected = "しょうがくきんなくせよ"
+
+[[case]]
+input = "報奨金はよ"
+mode = "hiragana"
+expected = "ほうしょうきんはよ"
+
+[[case]]
+input = "速水奨さんか"
+mode = "hiragana"
+expected = "はやみしょうさんか"
+
+[[case]]
+input = "中村奨成や"
+mode = "hiragana"
+expected = "なかむらしょうせいや"
+
+[[case]]
+input = "お披露目の時以来かも見たの"
+mode = "hiragana"
+expected = "おひろめのときいらいかもみたの"
+
+[[case]]
+input = "生で披露するの凄すぎる"
+mode = "hiragana"
+expected = "なまでひろうするのすごすぎる"
+
+[[case]]
+input = "世界征服の一歩"
+mode = "hiragana"
+expected = "せかいせいふくのいっぽ"
+
+[[case]]
+input = "遠征組"
+mode = "hiragana"
+expected = "えんせいぐみ"
+
+[[case]]
+input = "王道を征く"
+mode = "hiragana"
+expected = "おうどうをゆく"
+
+[[case]]
+input = "共に征こう!"
+mode = "hiragana"
+expected = "ともにゆこう!"
+
+[[case]]
+input = "詫び石くれない?"
+mode = "hiragana"
+expected = "わびいしくれない?"
+
+[[case]]
+input = "森脇くん"
+mode = "hiragana"
+expected = "もりわきくん"
+
+[[case]]
+input = "檻の中に..."
+mode = "hiragana"
+expected = "おりのなかに..."
+
+[[case]]
+input = "折檻ww"
+mode = "hiragana"
+expected = "せっかんww"
+
+[[case]]
+input = "遭難するぞw"
+mode = "hiragana"
+expected = "そうなんするぞw"
+
+[[case]]
+input = "被害に遭った"
+mode = "hiragana"
+expected = "ひがいにあった"
+
+[[case]]
+input = "旋風だ!"
+mode = "hiragana"
+expected = "せんぷうだ!"
+
+[[case]]
+input = "凱旋できるかな?"
+mode = "hiragana"
+expected = "がいせんできるかな?"
+
+[[case]]
+input = "螺旋は全てを解決する"
+mode = "hiragana"
+expected = "らせんはすべてをかいけつする"
+
+[[case]]
+input = "裏垢だったか"
+mode = "hiragana"
+expected = "うらあかだったか"
+
+[[case]]
+input = "手垢がついた感じが良い"
+mode = "hiragana"
+expected = "てあかがついたかんじがよい"
+
+[[case]]
+input = "水撒きしないから?w"
+mode = "hiragana"
+expected = "みずまきしないから?w"
+
+[[case]]
+input = "忖度"
+mode = "hiragana"
+expected = "そんたく"
+
+[[case]]
+input = "勇敢ですごい"
+mode = "hiragana"
+expected = "ゆうかんですごい"
+
+[[case]]
+input = "果敢な攻め"
+mode = "hiragana"
+expected = "かかんなせめ"
+
+[[case]]
+input = "僅差だな"
+mode = "hiragana"
+expected = "きんさだな"
+
+[[case]]
+input = "稚拙だね"
+mode = "hiragana"
+expected = "ちせつだね"
+
+[[case]]
+input = "棺桶"
+mode = "hiragana"
+expected = "かんおけ"
+
+[[case]]
+input = "脇腹"
+mode = "hiragana"
+expected = "わきばら"
+
