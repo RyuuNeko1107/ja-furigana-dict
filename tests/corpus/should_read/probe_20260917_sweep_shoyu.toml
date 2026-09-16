@@ -1,0 +1,330 @@
+[[case]]
+input = "醬油ざわ~"
+mode = "hiragana"
+expected = "しょうゆざわ"
+
+[[case]]
+input = "焦がし醬油"
+mode = "hiragana"
+expected = "こがししょうゆ"
+
+[[case]]
+input = "からし醬油もいいぞ"
+mode = "hiragana"
+expected = "からししょうゆもいいぞ"
+
+[[case]]
+input = "普通に醬油掛けごはんやん"
+mode = "hiragana"
+expected = "ふつうにしょうゆかけごはんやん"
+
+[[case]]
+input = "山葵醬油が美味しい"
+mode = "hiragana"
+expected = "わさびしょうゆがおいしい"
+
+[[case]]
+input = "バター醬油で焼くと優勝できる"
+mode = "hiragana"
+expected = "バターしょうゆでやくとゆうしょうできる"
+
+[[case]]
+input = "デス醬油"
+mode = "hiragana"
+expected = "デスしょうゆ"
+
+[[case]]
+input = "黄身だけ醬油漬けにしたらおいしい"
+mode = "hiragana"
+expected = "きみだけしょうゆづけにしたらおいしい"
+
+[[case]]
+input = "あぶり醬油たべよといどまずかw"
+mode = "hiragana"
+expected = "あぶりしょうゆたべよといどまずかw"
+
+[[case]]
+input = "醤油"
+mode = "hiragana"
+expected = "しょうゆ"
+
+[[case]]
+input = "醤油塩"
+mode = "hiragana"
+expected = "しょうゆしお"
+
+[[case]]
+input = "大森南朋"
+mode = "hiragana"
+expected = "おおもりなお"
+
+[[case]]
+input = "ここら辺大森南朋って感じ"
+mode = "hiragana"
+expected = "ここらへんおおもりなおってかんじ"
+
+[[case]]
+input = "金田朋子さん声優の奴か"
+mode = "hiragana"
+expected = "かねだともこさんせいゆうのやつか"
+
+[[case]]
+input = "本間朋晃は?"
+mode = "hiragana"
+expected = "ほんまともあきは?"
+
+[[case]]
+input = "玉木さん榛葉さん世界日報に載ってた"
+mode = "hiragana"
+expected = "たまきさんしんばさんせかいにっぽうにのってた"
+
+[[case]]
+input = "朋美~"
+mode = "hiragana"
+expected = "ともみ"
+
+[[case]]
+input = "同朋"
+mode = "hiragana"
+expected = "どうぼう"
+
+[[case]]
+input = "タレントと会社との間での意識の乖離があるってことかな"
+mode = "hiragana"
+expected = "タレントとかいしゃとのあいだでのいしきのかいりがあるってことかな"
+
+[[case]]
+input = "天地乖離す開闢の星"
+mode = "hiragana"
+expected = "てんちかいりすかいびゃくのほし"
+
+[[case]]
+input = "富樫レベルだね"
+mode = "hiragana"
+expected = "とがしレベルだね"
+
+[[case]]
+input = "冨樫先生"
+mode = "hiragana"
+expected = "とがしせんせい"
+
+[[case]]
+input = "樫の木おじさん!"
+mode = "hiragana"
+expected = "かしのきおじさん!"
+
+[[case]]
+input = "梵天がある"
+mode = "hiragana"
+expected = "ぼんてんがある"
+
+[[case]]
+input = "外国の文字かと思ったら、梵字か"
+mode = "hiragana"
+expected = "がいこくのもじかとおもったら、ぼんじか"
+
+[[case]]
+input = "東出・梵二遊間のこの頃のカープが好きやった"
+mode = "hiragana"
+expected = "ひがしでぼんにゆうかんのこのころのカープがすきやった"
+
+[[case]]
+input = "涅槃の表情"
+mode = "hiragana"
+expected = "ねはんのひょうじょう"
+
+[[case]]
+input = "赤い涅槃像w"
+mode = "hiragana"
+expected = "あかいねはんぞうw"
+
+[[case]]
+input = "嘔吐はなぁ 感染あるからね"
+mode = "hiragana"
+expected = "おうとはなぁ かんせんあるからね"
+
+[[case]]
+input = "これが噂の嘔吐ボイス!?"
+mode = "hiragana"
+expected = "これがうわさのおうとボイス!?"
+
+[[case]]
+input = "腋リオーナ"
+mode = "hiragana"
+expected = "わきリオーナ"
+
+[[case]]
+input = "ちゃんと腋毛あるんか"
+mode = "hiragana"
+expected = "ちゃんとわきげあるんか"
+
+[[case]]
+input = "縋る前提なのwww"
+mode = "hiragana"
+expected = "すがるぜんていなのwww"
+
+[[case]]
+input = "もう藁にも縋る状態か"
+mode = "hiragana"
+expected = "もうわらにもすがるじょうたいか"
+
+[[case]]
+input = "過去の栄光に縋るな"
+mode = "hiragana"
+expected = "かこのえいこうにすがるな"
+
+[[case]]
+input = "霹靂一閃"
+mode = "hiragana"
+expected = "へきれきいっせん"
+
+[[case]]
+input = "青天の霹靂"
+mode = "hiragana"
+expected = "せいてんのへきれき"
+
+[[case]]
+input = "青森やし青天の霹靂かな"
+mode = "hiragana"
+expected = "あおもりやしせいてんのへきれきかな"
+
+[[case]]
+input = "魑魅魍魎が跋扈するホロタウン"
+mode = "hiragana"
+expected = "ちみもうりょうがばっこするホロタウン"
+
+[[case]]
+input = "魍魎の匣とかか"
+mode = "hiragana"
+expected = "もうりょうのはことかか"
+
+[[case]]
+input = "撥水加工済みやね、知らんけど"
+mode = "hiragana"
+expected = "ばっすいかこうずみやね、しらんけど"
+
+[[case]]
+input = "撥ねられたw"
+mode = "hiragana"
+expected = "はねられたw"
+
+[[case]]
+input = "人を撥ねることはないから、大丈夫だよ"
+mode = "hiragana"
+expected = "ひとをはねることはないから、だいじょうぶだよ"
+
+[[case]]
+input = "詭弁がすごい"
+mode = "hiragana"
+expected = "きべんがすごい"
+
+[[case]]
+input = "自民党の詭弁だ"
+mode = "hiragana"
+expected = "じみんとうのきべんだ"
+
+[[case]]
+input = "蓬莱軒美味い..."
+mode = "hiragana"
+expected = "ほうらいけんうまい..."
+
+[[case]]
+input = "蓬餅"
+mode = "hiragana"
+expected = "よもぎもち"
+
+[[case]]
+input = "551蓬莱"
+mode = "hiragana"
+expected = "ごひゃくごじゅういちほうらい"
+
+[[case]]
+input = "瞼縫われてますよ"
+mode = "hiragana"
+expected = "まぶたぬわれてますよ"
+
+[[case]]
+input = "瞼が重いよ剣持"
+mode = "hiragana"
+expected = "まぶたがおもいよけんもち"
+
+[[case]]
+input = "瞼けいれんwww"
+mode = "hiragana"
+expected = "まぶたけいれんwww"
+
+[[case]]
+input = "自然薯"
+mode = "hiragana"
+expected = "じねんじょ"
+
+[[case]]
+input = "自然薯は天然?"
+mode = "hiragana"
+expected = "じねんじょはてんねん?"
+
+[[case]]
+input = "餡子もん"
+mode = "hiragana"
+expected = "あんこもん"
+
+[[case]]
+input = "抹茶餡ってあるね"
+mode = "hiragana"
+expected = "まっちゃあんってあるね"
+
+[[case]]
+input = "白餡珍しい"
+mode = "hiragana"
+expected = "しろあんめずらしい"
+
+[[case]]
+input = "こし餡"
+mode = "hiragana"
+expected = "こしあん"
+
+[[case]]
+input = "それこそ餡蜜よ"
+mode = "hiragana"
+expected = "それこそあんみつよ"
+
+[[case]]
+input = "禪院ぺこら"
+mode = "hiragana"
+expected = "ぜんいんぺこら"
+
+[[case]]
+input = "座禪"
+mode = "hiragana"
+expected = "ざぜん"
+
+[[case]]
+input = "榛名山きたー"
+mode = "hiragana"
+expected = "はるなさんきたー"
+
+[[case]]
+input = "赤城、榛名、妙義"
+mode = "hiragana"
+expected = "あかぎ、はるな、みょうぎ"
+
+[[case]]
+input = "エジプト篇開始w"
+mode = "hiragana"
+expected = "エジプトへんかいしw"
+
+[[case]]
+input = "交響詩篇エウレカセブン"
+mode = "hiragana"
+expected = "こうきょうしへんエウレカセブン"
+
+[[case]]
+input = "千年血戦篇!?"
+mode = "hiragana"
+expected = "せんねんけっせんへん!?"
+
+[[case]]
+input = "未だに続篇作られてるの凄いわ"
+mode = "hiragana"
+expected = "いまだにぞくへんつくられてるのすごいわ"
+
