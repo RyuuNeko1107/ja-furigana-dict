@@ -1,0 +1,170 @@
+[[case]]
+input = "2からは原作絵"
+mode = "hiragana"
+expected = "にからはげんさくえ"
+
+[[case]]
+input = "フュージョニストカードと全然絵違うな"
+mode = "hiragana"
+expected = "フュージョニストカードとぜんぜんえちがうな"
+
+[[case]]
+input = "Cパートは気に入る一枚絵です"
+mode = "hiragana"
+expected = "Cパートはきにいるいちまいえです"
+
+[[case]]
+input = "公式絵"
+mode = "hiragana"
+expected = "こうしきえ"
+
+[[case]]
+input = "おかおじの全体絵初めて見たかもw"
+mode = "hiragana"
+expected = "おかおじのぜんたいえはじめてみたかもw"
+
+[[case]]
+input = "ころさんの地上絵"
+mode = "hiragana"
+expected = "ころさんのちじょうえ"
+
+[[case]]
+input = "新型ランエボに巫女絵の痛車とか"
+mode = "hiragana"
+expected = "しんがたランエボにみこえのいたしゃとか"
+
+[[case]]
+input = "神社に痛絵馬あるよね"
+mode = "hiragana"
+expected = "じんじゃにいたえまあるよね"
+
+[[case]]
+input = "お姉たま"
+mode = "hiragana"
+expected = "おねえたま"
+
+[[case]]
+input = "お姉たんw"
+mode = "hiragana"
+expected = "おねえたんw"
+
+[[case]]
+input = "お姉さーん!?"
+mode = "hiragana"
+expected = "おねえさーん!?"
+
+[[case]]
+input = "寄り高度な人文化は世にあるからね"
+mode = "hiragana"
+expected = "よりこうどなじんぶんかはよにあるからね"
+
+[[case]]
+input = "大門から渋谷が近すぎる"
+mode = "hiragana"
+expected = "だいもんからしぶやがちかすぎる"
+
+[[case]]
+input = "大門だな"
+mode = "hiragana"
+expected = "だいもんだな"
+
+[[case]]
+input = "伊右衛門のやつ?"
+mode = "hiragana"
+expected = "いえもんのやつ?"
+
+[[case]]
+input = "獄門疆を破ったキツネ"
+mode = "hiragana"
+expected = "ごくもんきょうをやぶったキツネ"
+
+[[case]]
+input = "門田他に勝負論すら無いんだが"
+mode = "hiragana"
+expected = "かどたほかにしょうぶろんすらないんだが"
+
+[[case]]
+input = "カラフルよりも統一派なのね"
+mode = "hiragana"
+expected = "カラフルよりもとういつはなのね"
+
+[[case]]
+input = "日寄ったのか?"
+mode = "hiragana"
+expected = "ひよったのか?"
+
+[[case]]
+input = "あるー日森の中ー!"
+mode = "hiragana"
+expected = "あるーひもりのなかー!"
+
+[[case]]
+input = "代々木の方まで行くと大分森"
+mode = "hiragana"
+expected = "よよぎのほうまでいくとだいぶもり"
+
+[[case]]
+input = "飲み込んだ瞬間卵産むのはどうするんだ"
+mode = "hiragana"
+expected = "のみこんだしゅんかんたまごうむのはどうするんだ"
+
+[[case]]
+input = "やっぱ1次産業よ"
+mode = "hiragana"
+expected = "やっぱいちじさんぎょうよ"
+
+[[case]]
+input = "意外と冷える方が入眠するのね"
+mode = "hiragana"
+expected = "いがいとひえるほうがにゅうみんするのね"
+
+[[case]]
+input = "ちょっとお眠"
+mode = "hiragana"
+expected = "ちょっとおねむ"
+
+[[case]]
+input = "まだお眠かなー?"
+mode = "hiragana"
+expected = "まだおねむかなー?"
+
+[[case]]
+input = "年寄りは寝続けるのも大変なのじゃ"
+mode = "hiragana"
+expected = "としよりはねつづけるのもたいへんなのじゃ"
+
+[[case]]
+input = "ダイナソー竜崎だ!"
+mode = "hiragana"
+expected = "ダイナソーりゅうざきだ!"
+
+[[case]]
+input = "園崎姉妹か"
+mode = "hiragana"
+expected = "そのざきしまいか"
+
+[[case]]
+input = "多重影分身の術!!"
+mode = "hiragana"
+expected = "たじゅうかげぶんしんのじゅつ!!"
+
+[[case]]
+input = "でも、報酬金折版でしょ?"
+mode = "hiragana"
+expected = "でも、ほうしゅうきんせつばんでしょ?"
+
+[[case]]
+input = "だからルール緩々なのね"
+mode = "hiragana"
+expected = "だからルールゆるゆるなのね"
+
+[[case]]
+input = "お前の生きた証だって聞けてよかった"
+mode = "hiragana"
+expected = "おまえのいきたあかしだってきけてよかった"
+
+[[case]]
+input = "部品取寄ってやったことないや"
+mode = "hiragana"
+expected = "ぶひんとりよってやったことないや"
+
