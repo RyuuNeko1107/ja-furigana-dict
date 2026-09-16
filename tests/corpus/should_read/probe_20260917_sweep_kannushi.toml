@@ -1,0 +1,465 @@
+[[case]]
+input = "桂三枝"
+mode = "hiragana"
+expected = "かつらさんし"
+
+[[case]]
+input = "桂朝丸→桂べかこ みたいなもん"
+mode = "hiragana"
+expected = "かつらちょうまる→かつらべかこ みたいなもん"
+
+[[case]]
+input = "活侠傳"
+mode = "hiragana"
+expected = "かつきょうでん"
+
+[[case]]
+input = "活侠傳は許可厳しいんじゃないの"
+mode = "hiragana"
+expected = "かつきょうでんはきょかきびしいんじゃないの"
+
+[[case]]
+input = "勇侠青春謳"
+mode = "hiragana"
+expected = "ゆうきょうせいしゅんうた"
+
+[[case]]
+input = "鬼武侠"
+mode = "hiragana"
+expected = "おにぶきょう"
+
+[[case]]
+input = "それぞ侠客立ち"
+mode = "hiragana"
+expected = "それぞきょうかくだち"
+
+[[case]]
+input = "侠気"
+mode = "hiragana"
+expected = "きょうき"
+
+[[case]]
+input = "任侠映画すぎる"
+mode = "hiragana"
+expected = "にんきょうえいがすぎる"
+
+[[case]]
+input = "咽ちゃったwww"
+mode = "hiragana"
+expected = "むせちゃったwww"
+
+[[case]]
+input = "咽たwwwww"
+mode = "hiragana"
+expected = "むせたwwwww"
+
+[[case]]
+input = "笑いながらだと咽るでw"
+mode = "hiragana"
+expected = "わらいながらだとむせるでw"
+
+[[case]]
+input = "咽び泣くよ"
+mode = "hiragana"
+expected = "むせびなくよ"
+
+[[case]]
+input = "嗚咽"
+mode = "hiragana"
+expected = "おえつ"
+
+[[case]]
+input = "耳鼻咽喉科で見てもらってもいいかもね"
+mode = "hiragana"
+expected = "じびいんこうかでみてもらってもいいかもね"
+
+[[case]]
+input = "ところてんはかっこんで咽せるまでが風情"
+mode = "hiragana"
+expected = "ところてんはかっこんでむせるまでがふぜい"
+
+[[case]]
+input = "もみじ卸か"
+mode = "hiragana"
+expected = "もみじおろしか"
+
+[[case]]
+input = "じゃあカットで投手卸貢献でいいんじゃ"
+mode = "hiragana"
+expected = "じゃあカットでとうしゅおろしこうけんでいいんじゃ"
+
+[[case]]
+input = "卸ってことでw"
+mode = "hiragana"
+expected = "おろしってことでw"
+
+[[case]]
+input = "卸の横流しかな?"
+mode = "hiragana"
+expected = "おろしのよこながしかな?"
+
+[[case]]
+input = "小売りか卸の人かなw"
+mode = "hiragana"
+expected = "こうりかおろしのひとかなw"
+
+[[case]]
+input = "卸価格があるからね"
+mode = "hiragana"
+expected = "おろしかかくがあるからね"
+
+[[case]]
+input = "棚卸しワロタ"
+mode = "hiragana"
+expected = "たなおろしワロタ"
+
+[[case]]
+input = "そうは問屋が卸さない"
+mode = "hiragana"
+expected = "そうはとんやがおろさない"
+
+[[case]]
+input = "全額卸して"
+mode = "hiragana"
+expected = "ぜんがくおろして"
+
+[[case]]
+input = "コストコに卸すのだ!"
+mode = "hiragana"
+expected = "コストコにおろすのだ!"
+
+[[case]]
+input = "塩ラーメン"
+mode = "hiragana"
+expected = "しおラーメン"
+
+[[case]]
+input = "食塩"
+mode = "hiragana"
+expected = "しょくえん"
+
+[[case]]
+input = "姪っ子さんが描きました?"
+mode = "hiragana"
+expected = "めいっこさんがえがきました?"
+
+[[case]]
+input = "ビジューは俺の姪"
+mode = "hiragana"
+expected = "ビジューはおれのめい"
+
+[[case]]
+input = "甥と姪にやられるのか"
+mode = "hiragana"
+expected = "おいとめいにやられるのか"
+
+[[case]]
+input = "三木眞一郎さんの声がしそうな見た目"
+mode = "hiragana"
+expected = "みきしんいちろうさんのこえがしそうなみため"
+
+[[case]]
+input = "眞露焼酎飲もかな"
+mode = "hiragana"
+expected = "しんろしょうちゅうのもかな"
+
+[[case]]
+input = "やっとだよ仲井眞さん、、、"
+mode = "hiragana"
+expected = "やっとだよなかいまさん、、、"
+
+[[case]]
+input = "袴田事件とか?"
+mode = "hiragana"
+expected = "はかまだじけんとか?"
+
+[[case]]
+input = "あの赤い袴は良いですよね。憧れる"
+mode = "hiragana"
+expected = "あのあかいはかまはよいですよね。あこがれる"
+
+[[case]]
+input = "帯解き・髪結い・袴着だっけ?"
+mode = "hiragana"
+expected = "おびときかみゆいはかまぎだっけ?"
+
+[[case]]
+input = "斑目一角!"
+mode = "hiragana"
+expected = "まだらめいっかく!"
+
+[[case]]
+input = "明るい色の斑点いらん"
+mode = "hiragana"
+expected = "あかるいいろのはんてんいらん"
+
+[[case]]
+input = "蒙古斑ある!"
+mode = "hiragana"
+expected = "もうこはんある!"
+
+[[case]]
+input = "桂!?"
+mode = "hiragana"
+expected = "かつら!?"
+
+[[case]]
+input = "高知の桂浜でした"
+mode = "hiragana"
+expected = "こうちのかつらはまでした"
+
+[[case]]
+input = "月桂冠"
+mode = "hiragana"
+expected = "げっけいかん"
+
+[[case]]
+input = "リンダマンが唯一心を開く桂木"
+mode = "hiragana"
+expected = "リンダマンがゆいいつしんをひらくかつらぎ"
+
+[[case]]
+input = "蠱毒の孤独"
+mode = "hiragana"
+expected = "こどくのこどく"
+
+[[case]]
+input = "齧歯類の絆"
+mode = "hiragana"
+expected = "げっしるいのきずな"
+
+[[case]]
+input = "ピザ丸齧り!?"
+mode = "hiragana"
+expected = "ピザまるかじり!?"
+
+[[case]]
+input = "にんじん少しずつ齧ってるもんな"
+mode = "hiragana"
+expected = "にんじんすこしずつかじってるもんな"
+
+[[case]]
+input = "齧りつきで観ます"
+mode = "hiragana"
+expected = "かじりつきでみます"
+
+[[case]]
+input = "奈落に引き摺り込まれたw"
+mode = "hiragana"
+expected = "ならくにひきずりこまれたw"
+
+[[case]]
+input = "手摺り消失"
+mode = "hiragana"
+expected = "てすりしょうしつ"
+
+[[case]]
+input = "いやいや、摺り合わせとディスカッション大事"
+mode = "hiragana"
+expected = "いやいや、すりあわせとディスカッションだいじ"
+
+[[case]]
+input = "投擲"
+mode = "hiragana"
+expected = "とうてき"
+
+[[case]]
+input = "乾坤一擲!!"
+mode = "hiragana"
+expected = "けんこんいってき!!"
+
+[[case]]
+input = "擲弾兵並べた方が"
+mode = "hiragana"
+expected = "てきだんへいならべたほうが"
+
+[[case]]
+input = "打擲50回とする"
+mode = "hiragana"
+expected = "ちょうちゃくごじゅっかいとする"
+
+[[case]]
+input = "斑目一角の斬魄刀みたいな"
+mode = "hiragana"
+expected = "まだらめいっかくのざんぱくとうみたいな"
+
+[[case]]
+input = "覚醒した魂魄技"
+mode = "hiragana"
+expected = "かくせいしたこんぱくわざ"
+
+[[case]]
+input = "落魄れることはあってもやめなきゃいいんじゃない。"
+mode = "hiragana"
+expected = "おちぶれることはあってもやめなきゃいいんじゃない。"
+
+[[case]]
+input = "五芒星掘るかw"
+mode = "hiragana"
+expected = "ごぼうせいほるかw"
+
+[[case]]
+input = "六芒星と逆六芒星でやりましょう"
+mode = "hiragana"
+expected = "ろくぼうせいとぎゃくろくぼうせいでやりましょう"
+
+[[case]]
+input = "上下に光芒"
+mode = "hiragana"
+expected = "じょうげにこうぼう"
+
+[[case]]
+input = "拝啓 芒種の候となりましたが"
+mode = "hiragana"
+expected = "はいけい ぼうしゅのこうとなりましたが"
+
+[[case]]
+input = "貨幣価値やべえ"
+mode = "hiragana"
+expected = "かへいかちやべえ"
+
+[[case]]
+input = "トランプの紙幣、悪そうな顔だなw"
+mode = "hiragana"
+expected = "トランプのしへい、わるそうなかおだなw"
+
+[[case]]
+input = "御幣があるw"
+mode = "hiragana"
+expected = "ごへいがあるw"
+
+[[case]]
+input = "大幣ないからラトルやね"
+mode = "hiragana"
+expected = "おおぬさないからラトルやね"
+
+[[case]]
+input = "昔の造幣局"
+mode = "hiragana"
+expected = "むかしのぞうへいきょく"
+
+[[case]]
+input = "嗚咽してた"
+mode = "hiragana"
+expected = "おえつしてた"
+
+[[case]]
+input = "殉職って知らないのか"
+mode = "hiragana"
+expected = "じゅんしょくってしらないのか"
+
+[[case]]
+input = "正義に殉じるのが罪滅ぼしなんやろな"
+mode = "hiragana"
+expected = "せいぎにじゅんじるのがつみほろぼしなんやろな"
+
+[[case]]
+input = "身を挺して仲間を守った"
+mode = "hiragana"
+expected = "みをていしてなかまをまもった"
+
+[[case]]
+input = "飛空挺か"
+mode = "hiragana"
+expected = "ひくうていか"
+
+[[case]]
+input = "元空挺レンジャー"
+mode = "hiragana"
+expected = "もとくうていレンジャー"
+
+[[case]]
+input = "天挺空羅ww"
+mode = "hiragana"
+expected = "てんていくうらww"
+
+[[case]]
+input = "太宰府天満宮暑い神様"
+mode = "hiragana"
+expected = "だざいふてんまんぐうあついかみさま"
+
+[[case]]
+input = "芥川賞とれなくても、太宰治みたいに"
+mode = "hiragana"
+expected = "あくたがわしょうとれなくても、だざいおさむみたいに"
+
+[[case]]
+input = "参加するタイプの地獄企画主宰w"
+mode = "hiragana"
+expected = "さんかするタイプのじごくきかくしゅさいw"
+
+[[case]]
+input = "宰相"
+mode = "hiragana"
+expected = "さいしょう"
+
+[[case]]
+input = "些細な変化が多かった"
+mode = "hiragana"
+expected = "ささいなへんかがおおかった"
+
+[[case]]
+input = "些末なこと"
+mode = "hiragana"
+expected = "さまつなこと"
+
+[[case]]
+input = "そういうのも些か嫌いではない"
+mode = "hiragana"
+expected = "そういうのもいささかきらいではない"
+
+[[case]]
+input = "戦争とか些事"
+mode = "hiragana"
+expected = "せんそうとかさじ"
+
+[[case]]
+input = "碌な神がいないゼノブレイドシリーズ"
+mode = "hiragana"
+expected = "ろくなかみがいないゼノブレイドシリーズ"
+
+[[case]]
+input = "碌でもないw"
+mode = "hiragana"
+expected = "ろくでもないw"
+
+[[case]]
+input = "耄碌してるw"
+mode = "hiragana"
+expected = "もうろくしてるw"
+
+[[case]]
+input = "今まで碌に来なかったのにここでwww"
+mode = "hiragana"
+expected = "いままでろくにこなかったのにここでwww"
+
+[[case]]
+input = "生け簀は欲しいなー"
+mode = "hiragana"
+expected = "いけすはほしいなー"
+
+[[case]]
+input = "生簀作ってウナギ養殖しようぜー"
+mode = "hiragana"
+expected = "いけすつくってウナギようしょくしようぜー"
+
+[[case]]
+input = "簀巻きかな"
+mode = "hiragana"
+expected = "すまきかな"
+
+[[case]]
+input = "圧倒的!!僥倖!!!"
+mode = "hiragana"
+expected = "あっとうてき!!ぎょうこう!!!"
+
+[[case]]
+input = "射倖心を狙い撃ち"
+mode = "hiragana"
+expected = "しゃこうしんをねらいうち"
+
+[[case]]
+input = "前、倖田來未いたよ"
+mode = "hiragana"
+expected = "まえ、こうだらいみいたよ"
+
