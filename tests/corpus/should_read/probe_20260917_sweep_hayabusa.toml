@@ -1,0 +1,340 @@
+[[case]]
+input = "低空隼強いのよ"
+mode = "hiragana"
+expected = "ていくうはやぶさつよいのよ"
+
+[[case]]
+input = "低空隼ドリブルはいいぞ"
+mode = "hiragana"
+expected = "ていくうはやぶさドリブルはいいぞ"
+
+[[case]]
+input = "低空隼いくか"
+mode = "hiragana"
+expected = "ていくうはやぶさいくか"
+
+[[case]]
+input = "低空隼もあるぞー"
+mode = "hiragana"
+expected = "ていくうはやぶさもあるぞー"
+
+[[case]]
+input = "神奈川なら山本昌か"
+mode = "hiragana"
+expected = "かながわならやまもとまさか"
+
+[[case]]
+input = "山本昌すきだけどねぇ"
+mode = "hiragana"
+expected = "やまもとまさすきだけどねぇ"
+
+[[case]]
+input = "山本昌がほしいw"
+mode = "hiragana"
+expected = "やまもとまさがほしいw"
+
+[[case]]
+input = "林昌勇晒されすぎだろ"
+mode = "hiragana"
+expected = "いむちゃんよんさらされすぎだろ"
+
+[[case]]
+input = "相手は林昌勇だっけ"
+mode = "hiragana"
+expected = "あいてはいむちゃんよんだっけ"
+
+[[case]]
+input = "喜納昌吉とチャンプルーズの歌よ"
+mode = "hiragana"
+expected = "きなしょうきちとチャンプルーズのうたよ"
+
+[[case]]
+input = "水谷隼はコンコルド症候群"
+mode = "hiragana"
+expected = "みずたにじゅんはコンコルドしょうこうぐん"
+
+[[case]]
+input = "東出昌大さん"
+mode = "hiragana"
+expected = "ひがしでまさひろさん"
+
+[[case]]
+input = "常廣先発かあ"
+mode = "hiragana"
+expected = "つねひろせんぱつかあ"
+
+[[case]]
+input = "広島の常廣"
+mode = "hiragana"
+expected = "ひろしまのつねひろ"
+
+[[case]]
+input = "原作 青山剛昌"
+mode = "hiragana"
+expected = "げんさく あおやまごうしょう"
+
+[[case]]
+input = "大石昌良"
+mode = "hiragana"
+expected = "おおいしまさよし"
+
+[[case]]
+input = "昌平君"
+mode = "hiragana"
+expected = "しょうへいくん"
+
+[[case]]
+input = "千昌夫"
+mode = "hiragana"
+expected = "せんまさお"
+
+[[case]]
+input = "宇野昌磨"
+mode = "hiragana"
+expected = "うのしょうま"
+
+[[case]]
+input = "池田昌子さん"
+mode = "hiragana"
+expected = "いけだまさこさん"
+
+[[case]]
+input = "真田昌幸を頼ってたら"
+mode = "hiragana"
+expected = "さなだまさゆきをたよってたら"
+
+[[case]]
+input = "小野坂昌也ねぇ"
+mode = "hiragana"
+expected = "おのさかまさやねぇ"
+
+[[case]]
+input = "平尾昌晃"
+mode = "hiragana"
+expected = "ひらおまさあき"
+
+[[case]]
+input = "上柳昌彦あさぼらけ"
+mode = "hiragana"
+expected = "うえやなぎまさひこあさぼらけ"
+
+[[case]]
+input = "茅場昌彦は?"
+mode = "hiragana"
+expected = "かやばまさひこは?"
+
+[[case]]
+input = "廣角"
+mode = "hiragana"
+expected = "こうかく"
+
+[[case]]
+input = "南無阿弥陀仏"
+mode = "hiragana"
+expected = "なむあみだぶつ"
+
+[[case]]
+input = "お陀仏になってまう~~"
+mode = "hiragana"
+expected = "おだぶつになってまう~~"
+
+[[case]]
+input = "仏陀の掌の上やで"
+mode = "hiragana"
+expected = "ぶっだのてのひらのうえやで"
+
+[[case]]
+input = "芥川龍之介"
+mode = "hiragana"
+expected = "あくたがわりゅうのすけ"
+
+[[case]]
+input = "濱家"
+mode = "hiragana"
+expected = "はまや"
+
+[[case]]
+input = "濱野大輝さん"
+mode = "hiragana"
+expected = "はまのだいきさん"
+
+[[case]]
+input = "隼人?"
+mode = "hiragana"
+expected = "はやと?"
+
+[[case]]
+input = "薩摩隼人"
+mode = "hiragana"
+expected = "さつまはやと"
+
+[[case]]
+input = "ハヤブサの剣で隼斬りで4回攻撃"
+mode = "hiragana"
+expected = "ハヤブサのけんではやぶさきりでよんかいこうげき"
+
+[[case]]
+input = "柘榴さん!?"
+mode = "hiragana"
+expected = "ざくろさん!?"
+
+[[case]]
+input = "西武の柘植か"
+mode = "hiragana"
+expected = "せいぶのつげか"
+
+[[case]]
+input = "滲み出てる"
+mode = "hiragana"
+expected = "にじみでてる"
+
+[[case]]
+input = "刺繍!"
+mode = "hiragana"
+expected = "ししゅう!"
+
+[[case]]
+input = "皇后陛下"
+mode = "hiragana"
+expected = "こうごうへいか"
+
+[[case]]
+input = "皇太后"
+mode = "hiragana"
+expected = "こうたいごう"
+
+[[case]]
+input = "風貌"
+mode = "hiragana"
+expected = "ふうぼう"
+
+[[case]]
+input = "変貌"
+mode = "hiragana"
+expected = "へんぼう"
+
+[[case]]
+input = "美貌"
+mode = "hiragana"
+expected = "びぼう"
+
+[[case]]
+input = "全貌"
+mode = "hiragana"
+expected = "ぜんぼう"
+
+[[case]]
+input = "お裾分け"
+mode = "hiragana"
+expected = "おすそわけ"
+
+[[case]]
+input = "裾野拡げに来てるなぁ"
+mode = "hiragana"
+expected = "すそのひろげにきてるなぁ"
+
+[[case]]
+input = "防波堤"
+mode = "hiragana"
+expected = "ぼうはてい"
+
+[[case]]
+input = "堤防が抜けたら"
+mode = "hiragana"
+expected = "ていぼうがぬけたら"
+
+[[case]]
+input = "堤真一の演技よかった"
+mode = "hiragana"
+expected = "つつみしんいちのえんぎよかった"
+
+[[case]]
+input = "孕ませる気か"
+mode = "hiragana"
+expected = "はらませるきか"
+
+[[case]]
+input = "琥珀色"
+mode = "hiragana"
+expected = "こはくしょく"
+
+[[case]]
+input = "琥珀糖が流れてるから"
+mode = "hiragana"
+expected = "こはくとうがながれてるから"
+
+[[case]]
+input = "豹変草"
+mode = "hiragana"
+expected = "ひょうへんそう"
+
+[[case]]
+input = "黒豹とか?"
+mode = "hiragana"
+expected = "くろひょうとか?"
+
+[[case]]
+input = "雪豹の子供とか可愛い"
+mode = "hiragana"
+expected = "ゆきひょうのこどもとかかわいい"
+
+[[case]]
+input = "芦ノ湖っぽい"
+mode = "hiragana"
+expected = "あしのこっぽい"
+
+[[case]]
+input = "芦田愛菜"
+mode = "hiragana"
+expected = "あしだあいな"
+
+[[case]]
+input = "芦屋道満さん"
+mode = "hiragana"
+expected = "あしやどうまんさん"
+
+[[case]]
+input = "芦名一心と同じ教え"
+mode = "hiragana"
+expected = "あしないっしんとおなじおしえ"
+
+[[case]]
+input = "郊外な感じねー"
+mode = "hiragana"
+expected = "こうがいなかんじねー"
+
+[[case]]
+input = "東京近郊の人は買うな!"
+mode = "hiragana"
+expected = "とうきょうきんこうのひとはかうな!"
+
+[[case]]
+input = "綜合"
+mode = "hiragana"
+expected = "そうごう"
+
+[[case]]
+input = "貞子vs伽椰子"
+mode = "hiragana"
+expected = "さだこブイエスかやこ"
+
+[[case]]
+input = "坩堝かぁ"
+mode = "hiragana"
+expected = "るつぼかぁ"
+
+[[case]]
+input = "蝋人形の館"
+mode = "hiragana"
+expected = "ろうにんぎょうのやかた"
+
+[[case]]
+input = "蝋燭メッチャもってるやん"
+mode = "hiragana"
+expected = "ろうそくメッチャもってるやん"
+
+[[case]]
+input = "蜜蝋は取っておいた方が良いですよ"
+mode = "hiragana"
+expected = "みつろうはとっておいたほうがよいですよ"
+
