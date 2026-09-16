@@ -1,0 +1,150 @@
+[[case]]
+input = "とても薄味宝箱w"
+mode = "hiragana"
+expected = "とてもうすあじたからばこw"
+
+[[case]]
+input = "ワイド買うなら人気薄買わないと"
+mode = "hiragana"
+expected = "ワイドかうならにんきうすかわないと"
+
+[[case]]
+input = "望み薄で草"
+mode = "hiragana"
+expected = "のぞみうすでくさ"
+
+[[case]]
+input = "ケツ派なので尻薄はちょっと"
+mode = "hiragana"
+expected = "ケツはなのでしりうすはちょっと"
+
+[[case]]
+input = "敵泥は?"
+mode = "hiragana"
+expected = "てきどろは?"
+
+[[case]]
+input = "元泥建社員がww"
+mode = "hiragana"
+expected = "もとどろけんしゃいんがww"
+
+[[case]]
+input = "一旦自社泥建か〜?"
+mode = "hiragana"
+expected = "いったんじしゃどろけんか?"
+
+[[case]]
+input = "皮が厚そう"
+mode = "hiragana"
+expected = "かわがあつそう"
+
+[[case]]
+input = "首皮1枚だ"
+mode = "hiragana"
+expected = "くびかわいちまいだ"
+
+[[case]]
+input = "ほな、皮剥いて蜂蜜かな?"
+mode = "hiragana"
+expected = "ほな、かわむいてはちみつかな?"
+
+[[case]]
+input = "上句"
+mode = "hiragana"
+expected = "かみのく"
+
+[[case]]
+input = "借してあげよう"
+mode = "hiragana"
+expected = "かしてあげよう"
+
+[[case]]
+input = "借こっわw"
+mode = "hiragana"
+expected = "かりこっわw"
+
+[[case]]
+input = "縁同士くっつくんかい"
+mode = "hiragana"
+expected = "ふちどうしくっつくんかい"
+
+[[case]]
+input = "奇妙な縁ってやつか..."
+mode = "hiragana"
+expected = "きみょうなえんってやつか..."
+
+[[case]]
+input = "抱き枕は嫁"
+mode = "hiragana"
+expected = "だきまくらはよめ"
+
+[[case]]
+input = "抱き枕に名前あるでしょ"
+mode = "hiragana"
+expected = "だきまくらになまえあるでしょ"
+
+[[case]]
+input = "手籠めにしやすそう"
+mode = "hiragana"
+expected = "てごめにしやすそう"
+
+[[case]]
+input = "絞込み出来るから楽よ"
+mode = "hiragana"
+expected = "しぼりこみできるかららくよ"
+
+[[case]]
+input = "デクの樹様ww"
+mode = "hiragana"
+expected = "デクのきさまww"
+
+[[case]]
+input = "柳楽優弥w"
+mode = "hiragana"
+expected = "やぎらゆうやw"
+
+[[case]]
+input = "籠絡完了"
+mode = "hiragana"
+expected = "ろうらくかんりょう"
+
+[[case]]
+input = "身籠ってた?????"
+mode = "hiragana"
+expected = "みごもってた?????"
+
+[[case]]
+input = "巣籠"
+mode = "hiragana"
+expected = "すごもり"
+
+[[case]]
+input = "揺籠ゆらりめちゃくちゃ好き"
+mode = "hiragana"
+expected = "ゆりかごゆらりめちゃくちゃすき"
+
+[[case]]
+input = "定位置きたあああ"
+mode = "hiragana"
+expected = "ていいちきたあああ"
+
+[[case]]
+input = "為替円安は片山氏の口先ばかりで投入11兆円でも効果薄"
+mode = "hiragana"
+expected = "かわせえんやすはかたやましのくちさきばかりでとうにゅうじゅういっちょうえんでもこうかうす"
+
+
+[[case]]
+input = "巣籠もりだねぇ"
+mode = "hiragana"
+expected = "すごもりだねぇ"
+
+[[case]]
+input = "衣装拝借してきた"
+mode = "hiragana"
+expected = "いしょうはいしゃくしてきた"
+
+[[case]]
+input = "一個拝借して確認してもよき"
+mode = "hiragana"
+expected = "いっこはいしゃくしてかくにんしてもよき"
