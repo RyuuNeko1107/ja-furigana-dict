@@ -1,0 +1,180 @@
+[[case]]
+input = "泉房穂の行政は目を見張るものがあるよね"
+mode = "hiragana"
+expected = "いずみふさほのぎょうせいはめをみはるものがあるよね"
+
+[[case]]
+input = "横浜の泉房穂"
+mode = "hiragana"
+expected = "よこはまのいずみふさほ"
+
+[[case]]
+input = "泉房穂と同レベル"
+mode = "hiragana"
+expected = "いずみふさほとどうレベル"
+
+[[case]]
+input = "みこち、この期間でバナナ何房食べたの?"
+mode = "hiragana"
+expected = "みこち、このきかんでバナナなんぶさたべたの?"
+
+[[case]]
+input = "クリアまでにみこちは何房バナナを食べるんだろうか"
+mode = "hiragana"
+expected = "クリアまでにみこちはなんぶさバナナをたべるんだろうか"
+
+[[case]]
+input = "叶くんいる?"
+mode = "hiragana"
+expected = "かなえくんいる?"
+
+[[case]]
+input = "叶さんうめぇ"
+mode = "hiragana"
+expected = "かなえさんうめぇ"
+
+[[case]]
+input = "叶くんありがとう"
+mode = "hiragana"
+expected = "かなえくんありがとう"
+
+[[case]]
+input = "ありがとう叶さん"
+mode = "hiragana"
+expected = "ありがとうかなえさん"
+
+[[case]]
+input = "叶くんのライブ楽しみ!"
+mode = "hiragana"
+expected = "かなえくんのライブたのしみ!"
+
+[[case]]
+input = "叶さん来た!"
+mode = "hiragana"
+expected = "かなえさんきた!"
+
+[[case]]
+input = "叶さんの所作綺麗"
+mode = "hiragana"
+expected = "かなえさんのしょさきれい"
+
+[[case]]
+input = "バナナ一房"
+mode = "hiragana"
+expected = "バナナひとふさ"
+
+[[case]]
+input = "叶姉妹だ"
+mode = "hiragana"
+expected = "かのうしまいだ"
+
+[[case]]
+input = "願いが叶える"
+mode = "hiragana"
+expected = "ねがいがかなえる"
+
+[[case]]
+input = "それは叶わないよ"
+mode = "hiragana"
+expected = "それはかなわないよ"
+
+[[case]]
+input = "泉が湧いてる"
+mode = "hiragana"
+expected = "いずみがわいてる"
+
+[[case]]
+input = "冷房より除湿優先してもろて"
+mode = "hiragana"
+expected = "れいぼうよりじょしつゆうせんしてもろて"
+
+[[case]]
+input = "厨房に行こう"
+mode = "hiragana"
+expected = "ちゅうぼうにいこう"
+
+[[case]]
+input = "伊能忠敬界隈??"
+mode = "hiragana"
+expected = "いのうただたかかいわい??"
+
+[[case]]
+input = "よく本多忠勝使ってたなぁ"
+mode = "hiragana"
+expected = "よくほんだただかつつかってたなぁ"
+
+[[case]]
+input = "大塚芳忠さんがいます"
+mode = "hiragana"
+expected = "おおつかよしたださんがいます"
+
+[[case]]
+input = "左右盲やな"
+mode = "hiragana"
+expected = "さゆうもうやな"
+
+[[case]]
+input = "溶連菌だね"
+mode = "hiragana"
+expected = "ようれんきんだね"
+
+[[case]]
+input = "親戚のおじいちゃん"
+mode = "hiragana"
+expected = "しんせきのおじいちゃん"
+
+[[case]]
+input = "萎え散らかしてるなぁw"
+mode = "hiragana"
+expected = "なえちらかしてるなぁw"
+
+[[case]]
+input = "無限沸きだからスルーしないと"
+mode = "hiragana"
+expected = "むげんわきだからスルーしないと"
+
+[[case]]
+input = "展覧会w"
+mode = "hiragana"
+expected = "てんらんかいw"
+
+[[case]]
+input = "観覧車"
+mode = "hiragana"
+expected = "かんらんしゃ"
+
+[[case]]
+input = "南房総??"
+mode = "hiragana"
+expected = "みなみぼうそう??"
+
+[[case]]
+input = "外房と江の島だけかな?"
+mode = "hiragana"
+expected = "そとぼうとえのしまだけかな?"
+
+[[case]]
+input = "核兵器が詰まってるから"
+mode = "hiragana"
+expected = "かくへいきがつまってるから"
+
+[[case]]
+input = "撤収だ撤収"
+mode = "hiragana"
+expected = "てっしゅうだてっしゅう"
+
+[[case]]
+input = "沙悟浄"
+mode = "hiragana"
+expected = "さごじょう"
+
+[[case]]
+input = "昆布だし"
+mode = "hiragana"
+expected = "こんぶだし"
+
+[[case]]
+input = "芋けんぴ"
+mode = "hiragana"
+expected = "いもけんぴ"
+
