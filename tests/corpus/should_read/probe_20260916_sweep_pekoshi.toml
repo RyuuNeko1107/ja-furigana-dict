@@ -1,0 +1,195 @@
+[[case]]
+input = "ときの杉田だ"
+mode = "hiragana"
+expected = "ときのすぎただ"
+
+[[case]]
+input = "なんか今杉田の声が..."
+mode = "hiragana"
+expected = "なんかいますぎたのこえが..."
+
+[[case]]
+input = "テラ杉田"
+mode = "hiragana"
+expected = "てらすぎた"
+
+[[case]]
+input = "めっちゃ杉田"
+mode = "hiragana"
+expected = "めっちゃすぎた"
+
+[[case]]
+input = "杉田智和さん"
+mode = "hiragana"
+expected = "すぎたともかずさん"
+
+[[case]]
+input = "主張が激しい人"
+mode = "hiragana"
+expected = "しゅちょうがはげしいひと"
+
+[[case]]
+input = "ぺこ氏"
+mode = "hiragana"
+expected = "ぺこし"
+
+[[case]]
+input = "おかゆ氏"
+mode = "hiragana"
+expected = "おかゆし"
+
+[[case]]
+input = "たかむら氏 サンクス!"
+mode = "hiragana"
+expected = "たかむらし サンクス!"
+
+[[case]]
+input = "なきり氏もあやめ"
+mode = "hiragana"
+expected = "なきりしもあやめ"
+
+[[case]]
+input = "ぼたん氏"
+mode = "hiragana"
+expected = "ぼたんし"
+
+[[case]]
+input = "あずきち氏"
+mode = "hiragana"
+expected = "あずきちし"
+
+[[case]]
+input = "まつり氏めっちゃウケとる"
+mode = "hiragana"
+expected = "まつりしめっちゃウケとる"
+
+[[case]]
+input = "いろは氏は1500ぐらい"
+mode = "hiragana"
+expected = "いろはしはせんごひゃくぐらい"
+
+[[case]]
+input = "ぐるぐる氏のやり合い"
+mode = "hiragana"
+expected = "ぐるぐるしのやりあい"
+
+[[case]]
+input = "ぺこら氏は言う"
+mode = "hiragana"
+expected = "ぺこらしはいう"
+
+[[case]]
+input = "まゆ氏のボイス"
+mode = "hiragana"
+expected = "まゆしのボイス"
+
+[[case]]
+input = "うさぎ氏"
+mode = "hiragana"
+expected = "うさぎし"
+
+[[case]]
+input = "さくらみこ氏"
+mode = "hiragana"
+expected = "さくらみこし"
+
+[[case]]
+input = "トランプ氏"
+mode = "hiragana"
+expected = "トランプし"
+
+[[case]]
+input = "高市氏"
+mode = "hiragana"
+expected = "たかいちし"
+
+[[case]]
+input = "田中氏"
+mode = "hiragana"
+expected = "たなかし"
+
+[[case]]
+input = "摂氏と華氏"
+mode = "hiragana"
+expected = "せっしとかし"
+
+[[case]]
+input = "博士"
+mode = "hiragana"
+expected = "はかせ"
+
+[[case]]
+input = "力士"
+mode = "hiragana"
+expected = "りきし"
+
+[[case]]
+input = "毒吐やつか"
+mode = "hiragana"
+expected = "どくはきやつか"
+
+[[case]]
+input = "嘘吐き"
+mode = "hiragana"
+expected = "うそつき"
+
+[[case]]
+input = "嘘吐き達め"
+mode = "hiragana"
+expected = "うそつきたちめ"
+
+[[case]]
+input = "揖保乃糸?"
+mode = "hiragana"
+expected = "いぼのいと?"
+
+[[case]]
+input = "蜘蛛糸か"
+mode = "hiragana"
+expected = "くもいとか"
+
+[[case]]
+input = "蜘蛛の糸"
+mode = "hiragana"
+expected = "くものいと"
+
+[[case]]
+input = "幻肢痛とかと近いんかなぁ"
+mode = "hiragana"
+expected = "げんしつうとかとちかいんかなぁ"
+
+[[case]]
+input = "津軽海峡冬景色"
+mode = "hiragana"
+expected = "つがるかいきょうふゆげしき"
+
+[[case]]
+input = "石斧でいいじゃん"
+mode = "hiragana"
+expected = "いしおのでいいじゃん"
+
+[[case]]
+input = "鉄斧強いで"
+mode = "hiragana"
+expected = "てつおのつよいで"
+
+[[case]]
+input = "金の斧銀の斧"
+mode = "hiragana"
+expected = "かねのおのぎんのおの"
+
+[[case]]
+input = "生糸"
+mode = "hiragana"
+expected = "きいと"
+
+[[case]]
+input = "流石斧"
+mode = "hiragana"
+expected = "さすがおの"
+
+[[case]]
+input = "石斧でいいじゃん"
+mode = "hiragana"
+expected = "いしおのでいいじゃん"
+
