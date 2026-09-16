@@ -1,0 +1,110 @@
+[[case]]
+input = "星三つです!!"
+mode = "hiragana"
+expected = "ほしみっつです!!"
+
+[[case]]
+input = "ちょっと三瓶混ざってない?ww"
+mode = "hiragana"
+expected = "ちょっとさんぺいまざってない?ww"
+
+[[case]]
+input = "阿部晋三"
+mode = "hiragana"
+expected = "あべしんぞう"
+
+[[case]]
+input = "空中三回転!"
+mode = "hiragana"
+expected = "くうちゅうさんかいてん!"
+
+[[case]]
+input = "各務原のイオンモール"
+mode = "hiragana"
+expected = "かかみがはらのイオンモール"
+
+[[case]]
+input = "なんか雨更に強くなった感じがする"
+mode = "hiragana"
+expected = "なんかあめさらにつよくなったかんじがする"
+
+[[case]]
+input = "山札から"
+mode = "hiragana"
+expected = "やまふだから"
+
+[[case]]
+input = "いぶの処理札が強すぎる"
+mode = "hiragana"
+expected = "いぶのしょりふだがつよすぎる"
+
+[[case]]
+input = "まあ誰の血でも血が混じるのはまずい"
+mode = "hiragana"
+expected = "まあだれのちでもちがまじるのはまずい"
+
+[[case]]
+input = "グラフ短ッ!w"
+mode = "hiragana"
+expected = "グラフみじかっ!w"
+
+[[case]]
+input = "進入角。。"
+mode = "hiragana"
+expected = "しんにゅうかく。。"
+
+[[case]]
+input = "入射角と反射角むずいね"
+mode = "hiragana"
+expected = "にゅうしゃかくとはんしゃかくむずいね"
+
+[[case]]
+input = "一角ぅ!"
+mode = "hiragana"
+expected = "いっかくぅ!"
+
+[[case]]
+input = "菅賢治"
+mode = "hiragana"
+expected = "すがけんじ"
+
+[[case]]
+input = "捨身"
+mode = "hiragana"
+expected = "すてみ"
+
+[[case]]
+input = "BGMが頭から離れんくなる"
+mode = "hiragana"
+expected = "ビージーエムがあたまからはなれんくなる"
+
+[[case]]
+input = "流離い"
+mode = "hiragana"
+expected = "さすらい"
+
+[[case]]
+input = "まあ流離ってるんじゃない?"
+mode = "hiragana"
+expected = "まあさすらってるんじゃない?"
+
+[[case]]
+input = "骨付カルビたべたい"
+mode = "hiragana"
+expected = "ほねつきカルビたべたい"
+
+[[case]]
+input = "牛骨にすんの?"
+mode = "hiragana"
+expected = "ぎゅうこつにすんの?"
+
+[[case]]
+input = "花天狂骨好き!"
+mode = "hiragana"
+expected = "かてんきょうこつすき!"
+
+[[case]]
+input = "射角調整してるの面白いw"
+mode = "hiragana"
+expected = "しゃかくちょうせいしてるのおもしろいw"
+
