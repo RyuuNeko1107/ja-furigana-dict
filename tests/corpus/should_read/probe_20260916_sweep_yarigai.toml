@@ -1,0 +1,155 @@
+[[case]]
+input = "ころ転がし甲斐やめてね"
+mode = "hiragana"
+expected = "ころころがしがいやめてね"
+
+[[case]]
+input = "キャラ対し甲斐あるね!"
+mode = "hiragana"
+expected = "キャラたいしがいあるね!"
+
+[[case]]
+input = "これは誘い甲斐のあるw"
+mode = "hiragana"
+expected = "これはさそいがいのあるw"
+
+[[case]]
+input = "頼り甲斐がある先鋒"
+mode = "hiragana"
+expected = "たよりがいがあるせんぽう"
+
+[[case]]
+input = "言い甲斐がない"
+mode = "hiragana"
+expected = "いいがいがない"
+
+[[case]]
+input = "やり甲斐ある譜面"
+mode = "hiragana"
+expected = "やりがいあるふめん"
+
+[[case]]
+input = "生き甲斐だよ"
+mode = "hiragana"
+expected = "いきがいだよ"
+
+[[case]]
+input = "年甲斐もないw"
+mode = "hiragana"
+expected = "としがいもないw"
+
+[[case]]
+input = "不甲斐ない兄を持ったばかりに"
+mode = "hiragana"
+expected = "ふがいないあにをもったばかりに"
+
+[[case]]
+input = "甲斐性なしだったか"
+mode = "hiragana"
+expected = "かいしょうなしだったか"
+
+[[case]]
+input = "甲斐甲斐しいよ"
+mode = "hiragana"
+expected = "かいがいしいよ"
+
+[[case]]
+input = "努力の甲斐あった"
+mode = "hiragana"
+expected = "どりょくのかいあった"
+
+[[case]]
+input = "甲斐拓也"
+mode = "hiragana"
+expected = "かいたくや"
+
+[[case]]
+input = "ダンスの魅せ方もレベチなんよね"
+mode = "hiragana"
+expected = "ダンスのみせかたもレベチなんよね"
+
+[[case]]
+input = "魅せ方"
+mode = "hiragana"
+expected = "みせかた"
+
+[[case]]
+input = "ころさんの腕の魅せ所や!"
+mode = "hiragana"
+expected = "ころさんのうでのみせところや!"
+
+[[case]]
+input = "真のギャンブラーは魅かれあう"
+mode = "hiragana"
+expected = "しんのギャンブラーはひかれあう"
+
+[[case]]
+input = "魅かれる"
+mode = "hiragana"
+expected = "ひかれる"
+
+[[case]]
+input = "魅かれた"
+mode = "hiragana"
+expected = "ひかれた"
+
+[[case]]
+input = "魅かれて"
+mode = "hiragana"
+expected = "ひかれて"
+
+[[case]]
+input = "魅せられたんか"
+mode = "hiragana"
+expected = "みせられたんか"
+
+[[case]]
+input = "渡哲也?"
+mode = "hiragana"
+expected = "わたりてつや?"
+
+[[case]]
+input = "小野坂昌也ねぇ"
+mode = "hiragana"
+expected = "おのさかまさやねぇ"
+
+[[case]]
+input = "中音域よな"
+mode = "hiragana"
+expected = "ちゅうおんいきよな"
+
+[[case]]
+input = "高音域は出ないかな"
+mode = "hiragana"
+expected = "こうおんいきはでないかな"
+
+[[case]]
+input = "低音域歌唱良いですねぇ"
+mode = "hiragana"
+expected = "ていおんいきかしょうよいですねぇ"
+
+[[case]]
+input = "低域 高域の演じ分けすごいな"
+mode = "hiragana"
+expected = "ていいき こういきのえんじわけすごいな"
+
+[[case]]
+input = "可動域の為に"
+mode = "hiragana"
+expected = "かどういきのために"
+
+[[case]]
+input = "夢の又夢"
+mode = "hiragana"
+expected = "ゆめのまたゆめ"
+
+[[case]]
+input = "二又おかゆ"
+mode = "hiragana"
+expected = "ふたまたおかゆ"
+
+[[case]]
+input = "又貸しのままかな"
+mode = "hiragana"
+expected = "またがしのままかな"
+
