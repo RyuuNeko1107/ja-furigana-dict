@@ -1,0 +1,40 @@
+[[case]]
+input = "阿彌陀佛 平安"
+mode = "hiragana"
+expected = "あみだぶつ へいあん"
+
+[[case]]
+input = "阿弥陀仏"
+mode = "hiragana"
+expected = "あみだぶつ"
+
+[[case]]
+input = "南無阿弥陀仏"
+mode = "hiragana"
+expected = "なむあみだぶつ"
+
+[[case]]
+input = "阿彌陀佛"
+mode = "hiragana"
+expected = "あみだぶつ"
+
+[[case]]
+input = "念佛"
+mode = "hiragana"
+expected = "ねんぶつ"
+
+[[case]]
+input = "大佛"
+mode = "hiragana"
+expected = "だいぶつ"
+
+[[case]]
+input = "佛教"
+mode = "hiragana"
+expected = "ぶっきょう"
+
+[[case]]
+input = "無縁佛なむ"
+mode = "hiragana"
+expected = "むえんぼとけなむ"
+
