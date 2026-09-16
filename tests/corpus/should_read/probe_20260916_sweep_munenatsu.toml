@@ -1,0 +1,265 @@
+[[case]]
+input = "岩田康が2人!?"
+mode = "hiragana"
+expected = "いわたやすがふたり!?"
+
+[[case]]
+input = "公康に、解説なんいいで監督やってよ"
+mode = "hiragana"
+expected = "きみやすに、かいせつなんいいでかんとくやってよ"
+
+[[case]]
+input = "一瞬で聞き分けられる加瀬康之さん"
+mode = "hiragana"
+expected = "いっしゅんでききわけられるかせやすゆきさん"
+
+[[case]]
+input = "生麦生米生卵"
+mode = "hiragana"
+expected = "なまむぎなまごめなまたまご"
+
+[[case]]
+input = "陰実見ないか"
+mode = "hiragana"
+expected = "かげじつみないか"
+
+[[case]]
+input = "それが競合ってやつやな"
+mode = "hiragana"
+expected = "それがきょうごうってやつやな"
+
+[[case]]
+input = "めっちゃファブして天日干しかな"
+mode = "hiragana"
+expected = "めっちゃファブしててんぴぼしかな"
+
+[[case]]
+input = "闇討ちかw"
+mode = "hiragana"
+expected = "やみうちかw"
+
+[[case]]
+input = "闇討ちの流れですか?"
+mode = "hiragana"
+expected = "やみうちのながれですか?"
+
+[[case]]
+input = "闇討ちでいくか"
+mode = "hiragana"
+expected = "やみうちでいくか"
+
+[[case]]
+input = "闇討ちに近い"
+mode = "hiragana"
+expected = "やみうちにちかい"
+
+[[case]]
+input = "闇討ちを狙う"
+mode = "hiragana"
+expected = "やみうちをねらう"
+
+[[case]]
+input = "闇討ちが多い"
+mode = "hiragana"
+expected = "やみうちがおおい"
+
+[[case]]
+input = "闇討ちだろ"
+mode = "hiragana"
+expected = "やみうちだろ"
+
+[[case]]
+input = "闇討ちしてくる"
+mode = "hiragana"
+expected = "やみうちしてくる"
+
+[[case]]
+input = "触覚掴まれて痛ないんかな"
+mode = "hiragana"
+expected = "しょっかくつかまれていたないんかな"
+
+[[case]]
+input = "富士山並走w"
+mode = "hiragana"
+expected = "ふじさんへいそうw"
+
+[[case]]
+input = "稲見が稲兄ってなってなかった?"
+mode = "hiragana"
+expected = "いなみがいなにいってなってなかった?"
+
+[[case]]
+input = "稲見陽太"
+mode = "hiragana"
+expected = "いなみようた"
+
+[[case]]
+input = "VIやってるとか胸熱"
+mode = "hiragana"
+expected = "VIやってるとかむねあつ"
+
+[[case]]
+input = "マリン胸熱ポイントw"
+mode = "hiragana"
+expected = "マリンむねあつポイントw"
+
+[[case]]
+input = "開胸"
+mode = "hiragana"
+expected = "かいきょう"
+
+[[case]]
+input = "豪鬼村に送還するかww"
+mode = "hiragana"
+expected = "ごうきむらにそうかんするかww"
+
+[[case]]
+input = "今日傘の日だってよ"
+mode = "hiragana"
+expected = "きょうかさのひだってよ"
+
+[[case]]
+input = "今傘ないと3秒で全身ずぶ濡れなるw"
+mode = "hiragana"
+expected = "いまかさないとさんびょうでぜんしんずぶぬれなるw"
+
+[[case]]
+input = "竹傘だ"
+mode = "hiragana"
+expected = "たけがさだ"
+
+[[case]]
+input = "委員長傘持ってきてる?"
+mode = "hiragana"
+expected = "いいんちょうかさもってきてる?"
+
+[[case]]
+input = "不破湊傘いらない"
+mode = "hiragana"
+expected = "ふわみなとかさいらない"
+
+[[case]]
+input = "誇ろう!"
+mode = "hiragana"
+expected = "ほころう!"
+
+[[case]]
+input = "狩猟笛かな?w"
+mode = "hiragana"
+expected = "しゅりょうぶえかな?w"
+
+[[case]]
+input = "時之笛"
+mode = "hiragana"
+expected = "ときのふえ"
+
+[[case]]
+input = "強制笛は設定したら機能するんかな"
+mode = "hiragana"
+expected = "きょうせいぶえはせっていしたらきのうするんかな"
+
+[[case]]
+input = "やっぱ笛鬼でもいいんじゃ?"
+mode = "hiragana"
+expected = "やっぱふえおにでもいいんじゃ?"
+
+[[case]]
+input = "防振剤挟めと?"
+mode = "hiragana"
+expected = "ぼうしんざいはさめと?"
+
+[[case]]
+input = "ナーガ挟めばわかるよ"
+mode = "hiragana"
+expected = "ナーガはさめばわかるよ"
+
+[[case]]
+input = "スリーブ挟めば?"
+mode = "hiragana"
+expected = "スリーブはさめば?"
+
+[[case]]
+input = "トワ様も挟めばいいかな?"
+mode = "hiragana"
+expected = "トワさまもはさめばいいかな?"
+
+[[case]]
+input = "こいつ空気嫁ww"
+mode = "hiragana"
+expected = "こいつくうきよめww"
+
+[[case]]
+input = "これは鬼嫁になるタイプ(笑)"
+mode = "hiragana"
+expected = "これはおによめになるタイプ(わらい)"
+
+[[case]]
+input = "2次元嫁は本当にいたんだ!"
+mode = "hiragana"
+expected = "にじげんよめはほんとうにいたんだ!"
+
+[[case]]
+input = "全員嫁にしたパターンは稀"
+mode = "hiragana"
+expected = "ぜんいんよめにしたパターンはまれ"
+
+[[case]]
+input = "マリンほんと嫁力高いわ"
+mode = "hiragana"
+expected = "マリンほんとよめりょくたかいわ"
+
+[[case]]
+input = "扇の嫁状態のヴィレッタさんは"
+mode = "hiragana"
+expected = "せんのよめじょうたいのヴィレッタさんは"
+
+[[case]]
+input = "文字嫁よ"
+mode = "hiragana"
+expected = "もじよめよ"
+
+[[case]]
+input = "100勝って嫁奪うか"
+mode = "hiragana"
+expected = "ひゃくしょうってよめうばうか"
+
+[[case]]
+input = "え?ペッピー嫁いるの?"
+mode = "hiragana"
+expected = "え?ペッピーよめいるの?"
+
+[[case]]
+input = "株を奪う嫁達かw"
+mode = "hiragana"
+expected = "かぶをうばうよめたちかw"
+
+[[case]]
+input = "乾いちゃうよぉ"
+mode = "hiragana"
+expected = "かわいちゃうよぉ"
+
+[[case]]
+input = "洗濯物多くなるから乾太くんがいいよ"
+mode = "hiragana"
+expected = "せんたくものおおくなるからかんたくんがいいよ"
+
+[[case]]
+input = "余計喉乾くわ"
+mode = "hiragana"
+expected = "よけいのどかわくわ"
+
+[[case]]
+input = "服乾かすったってすっぽんぽんはあかん"
+mode = "hiragana"
+expected = "ふくかわかすったってすっぽんぽんはあかん"
+
+[[case]]
+input = "守りは乾みたいにシャツ思っきりつかめばok"
+mode = "hiragana"
+expected = "まもりはいぬいみたいにシャツおもっきりつかめばオーケー"
+
+[[case]]
+input = "圧痛ないんか......"
+mode = "hiragana"
+expected = "あっつうないんか......"
+
