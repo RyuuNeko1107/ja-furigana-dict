@@ -1,0 +1,201 @@
+# 2026-09-16 全漢字スイープ r72 (咲塗罰紅勤叩源賀乙己乳香泊閃織庭麺豊障惚透逸冊梨)
+
+[[case]]
+input = "色の塗り方がアニメっぽい感じしますね"
+mode = "hiragana"
+expected = "いろのぬりかたがアニメっぽいかんじしますね"
+
+[[case]]
+input = "塗残しじゃなくて塗ったんやww"
+mode = "hiragana"
+expected = "ぬりのこしじゃなくてぬったんやww"
+
+[[case]]
+input = "この下品な叩き方は......"
+mode = "hiragana"
+expected = "このげひんなたたきかたは......"
+
+[[case]]
+input = "天皇の大御心に習い"
+mode = "hiragana"
+expected = "てんのうのおおみごころにならい"
+
+[[case]]
+input = "なんで毎回 口紅紫 なんよ"
+mode = "hiragana"
+expected = "なんでまいかい くちべにむらさき なんよ"
+
+[[case]]
+input = "バレルは大分塗り弱くなったらしいね"
+mode = "hiragana"
+expected = "バレルはだいぶぬりよわくなったらしいね"
+
+[[case]]
+input = "武豊を信じたら大丈夫よ"
+mode = "hiragana"
+expected = "たけゆたかをしんじたらだいじょうぶよ"
+
+[[case]]
+input = "キッコーマン 豆乳飲料 アフォガート"
+mode = "hiragana"
+expected = "キッコーマン とうにゅういんりょう アフォガート"
+
+[[case]]
+input = "令和の花澤香菜!?"
+mode = "hiragana"
+expected = "れいわのはなざわかな!?"
+
+[[case]]
+input = "お香っていいよなぁ"
+mode = "hiragana"
+expected = "おこうっていいよなぁ"
+
+[[case]]
+input = "じゃあお家で前泊オフコラボか"
+mode = "hiragana"
+expected = "じゃあおいえでぜんぱくオフコラボか"
+
+[[case]]
+input = "ライフコッドならタダで泊れるよ"
+mode = "hiragana"
+expected = "ライフコッドならタダでとまれるよ"
+
+[[case]]
+input = "筒香"
+mode = "hiragana"
+expected = "つつごう"
+
+[[case]]
+input = "戸田恵梨香しゅえんのやつだ"
+mode = "hiragana"
+expected = "とだえりかしゅえんのやつだ"
+
+[[case]]
+input = "戸田恵梨香さん出てたやつか"
+mode = "hiragana"
+expected = "とだえりかさんでてたやつか"
+
+[[case]]
+input = "ゲッツー以外は梨々香に回る"
+mode = "hiragana"
+expected = "ゲッツーいがいはりりかにまわる"
+
+[[case]]
+input = "船長と梨々華かな"
+mode = "hiragana"
+expected = "せんちょうとりりかかな"
+
+[[case]]
+input = "黒閃か"
+mode = "hiragana"
+expected = "こくせんか"
+
+[[case]]
+input = "黒閃を当たり前のように打つ"
+mode = "hiragana"
+expected = "こくせんをあたりまえのようにうつ"
+
+[[case]]
+input = "OCGだともっと巨乳"
+mode = "hiragana"
+expected = "オーシージーだともっときょにゅう"
+
+[[case]]
+input = "貧乳は人にあらず"
+mode = "hiragana"
+expected = "ひんにゅうはひとにあらず"
+
+[[case]]
+input = "爆乳だったら最高ぺこ"
+mode = "hiragana"
+expected = "ばくにゅうだったらさいこうぺこ"
+
+[[case]]
+input = "横乳が!?"
+mode = "hiragana"
+expected = "よこにゅうが!?"
+
+[[case]]
+input = "でも偽乳やで"
+mode = "hiragana"
+expected = "でもにせにゅうやで"
+
+[[case]]
+input = "もしや乳飲料だったか?"
+mode = "hiragana"
+expected = "もしやにゅういんりょうだったか?"
+
+[[case]]
+input = "カップラーメンは細麺が多くて好き"
+mode = "hiragana"
+expected = "カップラーメンはほそめんがおおくてすき"
+
+[[case]]
+input = "カップ麺は凄麺しか勝たんw"
+mode = "hiragana"
+expected = "カップめんはすごめんしかかたんw"
+
+[[case]]
+input = "甘味処で煮麺はあるけど"
+mode = "hiragana"
+expected = "あまみしょでにゅうめんはあるけど"
+
+[[case]]
+input = "豊を信じろ"
+mode = "hiragana"
+expected = "ゆたかをしんじろ"
+
+[[case]]
+input = "豊さんの動画上がってたね"
+mode = "hiragana"
+expected = "ゆたかさんのどうがあがってたね"
+
+[[case]]
+input = "竹之内豊"
+mode = "hiragana"
+expected = "たけのうちゆたか"
+
+[[case]]
+input = "それで市民の生活は豊になってるからなぁ"
+mode = "hiragana"
+expected = "それでしみんのせいかつはゆたかになってるからなぁ"
+
+[[case]]
+input = "コミュ障ってより他人に興味ないタイプか"
+mode = "hiragana"
+expected = "コミュしょうってよりたにんにきょうみないタイプか"
+
+[[case]]
+input = "見透いてるねぇ〜"
+mode = "hiragana"
+expected = "みすいてるねぇ"
+
+[[case]]
+input = "ミオちゃん全然後ろに逸さなくなったなあ"
+mode = "hiragana"
+expected = "ミオちゃんぜんぜんうしろにそらさなくなったなあ"
+
+[[case]]
+input = "高梨だけどねw"
+mode = "hiragana"
+expected = "たかなしだけどねw"
+
+[[case]]
+input = "平愛梨も同じ飛行機"
+mode = "hiragana"
+expected = "たいらあいりもおなじひこうき"
+
+[[case]]
+input = "五十嵐梨花と椎名唯華"
+mode = "hiragana"
+expected = "いがらしりかとしいなゆいか"
+
+[[case]]
+input = "内田梨瑚は、助かったと思ってるだろうな"
+mode = "hiragana"
+expected = "うちだりこは、たすかったとおもってるだろうな"
+
+[[case]]
+input = "遅咲だね"
+mode = "hiragana"
+expected = "おそざきだね"
