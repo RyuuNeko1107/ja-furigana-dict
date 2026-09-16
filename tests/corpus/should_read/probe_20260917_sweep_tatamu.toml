@@ -1,0 +1,220 @@
+[[case]]
+input = "カッパ乾かすのとか畳むのめんどくならん?w"
+mode = "hiragana"
+expected = "カッパかわかすのとかたたむのめんどくならん?w"
+
+[[case]]
+input = "洗濯物とか畳むのめんどい"
+mode = "hiragana"
+expected = "せんたくものとかたたむのめんどい"
+
+[[case]]
+input = "雨嵐"
+mode = "hiragana"
+expected = "あめあられ"
+
+[[case]]
+input = "感謝感激雨嵐"
+mode = "hiragana"
+expected = "かんしゃかんげきあめあられ"
+
+[[case]]
+input = "カッパは畳むのダルくない?w"
+mode = "hiragana"
+expected = "カッパはたたむのダルくない?w"
+
+[[case]]
+input = "洗濯物畳むのは得意"
+mode = "hiragana"
+expected = "せんたくものたたむのはとくい"
+
+[[case]]
+input = "カッパ畳むの面倒そう"
+mode = "hiragana"
+expected = "カッパたたむのめんどうそう"
+
+[[case]]
+input = "服畳んで土下座出来るぞ"
+mode = "hiragana"
+expected = "ふくたたんでどげざできるぞ"
+
+[[case]]
+input = "店畳みますかー"
+mode = "hiragana"
+expected = "みせたたみますかー"
+
+[[case]]
+input = "今畳み掛けるか"
+mode = "hiragana"
+expected = "いまたたみかけるか"
+
+[[case]]
+input = "嵐だな"
+mode = "hiragana"
+expected = "あらしだな"
+
+[[case]]
+input = "砂嵐でなく?"
+mode = "hiragana"
+expected = "すなあらしでなく?"
+
+[[case]]
+input = "大嵐や"
+mode = "hiragana"
+expected = "だいあらしや"
+
+[[case]]
+input = "五十嵐やな"
+mode = "hiragana"
+expected = "いがらしやな"
+
+[[case]]
+input = "机上の空論"
+mode = "hiragana"
+expected = "きじょうのくうろん"
+
+[[case]]
+input = "鉄砕牙"
+mode = "hiragana"
+expected = "てっさいが"
+
+[[case]]
+input = "玉砕した"
+mode = "hiragana"
+expected = "ぎょくさいした"
+
+[[case]]
+input = "安牌でw"
+mode = "hiragana"
+expected = "あんぱいでw"
+
+[[case]]
+input = "配牌が良かったんやね"
+mode = "hiragana"
+expected = "はいぱいがよかったんやね"
+
+[[case]]
+input = "捨て牌から読めるか"
+mode = "hiragana"
+expected = "すてぱいからよめるか"
+
+[[case]]
+input = "危険牌"
+mode = "hiragana"
+expected = "きけんぱい"
+
+[[case]]
+input = "本領発揮だな"
+mode = "hiragana"
+expected = "ほんりょうはっきだな"
+
+[[case]]
+input = "指揮官が指揮を投げるな"
+mode = "hiragana"
+expected = "しきかんがしきをなげるな"
+
+[[case]]
+input = "記憶の揮発早いww"
+mode = "hiragana"
+expected = "きおくのきはつはやいww"
+
+[[case]]
+input = "石畳に叩き付けたら..."
+mode = "hiragana"
+expected = "いしだたみにたたきつけたら..."
+
+[[case]]
+input = "ぺこランド(六畳間)"
+mode = "hiragana"
+expected = "ぺこランド(ろくじょうま)"
+
+[[case]]
+input = "何畳の家住んでるんだ"
+mode = "hiragana"
+expected = "なんじょうのいえすんでるんだ"
+
+[[case]]
+input = "はい逮捕"
+mode = "hiragana"
+expected = "はいたいほ"
+
+[[case]]
+input = "言及されてなければw"
+mode = "hiragana"
+expected = "げんきゅうされてなければw"
+
+[[case]]
+input = "この問題を追及すると"
+mode = "hiragana"
+expected = "このもんだいをついきゅうすると"
+
+[[case]]
+input = "まだ普及前"
+mode = "hiragana"
+expected = "まだふきゅうまえ"
+
+[[case]]
+input = "まだ初期には及ばない"
+mode = "hiragana"
+expected = "まだしょきにはおよばない"
+
+[[case]]
+input = "潜水艦だからね"
+mode = "hiragana"
+expected = "せんすいかんだからね"
+
+[[case]]
+input = "軍艦かな"
+mode = "hiragana"
+expected = "ぐんかんかな"
+
+[[case]]
+input = "ピカード艦長が"
+mode = "hiragana"
+expected = "ピカードかんちょうが"
+
+[[case]]
+input = "囮になる"
+mode = "hiragana"
+expected = "おとりになる"
+
+[[case]]
+input = "滞納してる"
+mode = "hiragana"
+expected = "たいのうしてる"
+
+[[case]]
+input = "伴侶だね"
+mode = "hiragana"
+expected = "はんりょだね"
+
+[[case]]
+input = "醤油かけて"
+mode = "hiragana"
+expected = "しょうゆかけて"
+
+[[case]]
+input = "北斗の拳"
+mode = "hiragana"
+expected = "ほくとのけん"
+
+[[case]]
+input = "貞子だ"
+mode = "hiragana"
+expected = "さだこだ"
+
+[[case]]
+input = "辣油うまい"
+mode = "hiragana"
+expected = "らーゆうまい"
+
+[[case]]
+input = "棄権した"
+mode = "hiragana"
+expected = "きけんした"
+
+[[case]]
+input = "捗るなあ"
+mode = "hiragana"
+expected = "はかどるなあ"
+
