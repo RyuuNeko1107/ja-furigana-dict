@@ -1,0 +1,240 @@
+[[case]]
+input = "二遊間の守備蜀人は激熱"
+mode = "hiragana"
+expected = "にゆうかんのしゅびしょくじんはげきあつ"
+
+[[case]]
+input = "守備蜀人は二遊間に残したい"
+mode = "hiragana"
+expected = "しゅびしょくじんはにゆうかんにのこしたい"
+
+[[case]]
+input = "ムード守備蜀あり"
+mode = "hiragana"
+expected = "ムードしゅびしょくあり"
+
+[[case]]
+input = "蜀の入り口がある"
+mode = "hiragana"
+expected = "しょくのいりくちがある"
+
+[[case]]
+input = "蜀か"
+mode = "hiragana"
+expected = "しょくか"
+
+[[case]]
+input = "蜀とな"
+mode = "hiragana"
+expected = "しょくとな"
+
+[[case]]
+input = "魏から蜀へ"
+mode = "hiragana"
+expected = "ぎからしょくへ"
+
+[[case]]
+input = "やっぱ蜀よ"
+mode = "hiragana"
+expected = "やっぱしょくよ"
+
+[[case]]
+input = "蜀起こしそう"
+mode = "hiragana"
+expected = "しょくおこしそう"
+
+[[case]]
+input = "蜀の桟道か?"
+mode = "hiragana"
+expected = "しょくのさんどうか?"
+
+[[case]]
+input = "魏呉蜀やな"
+mode = "hiragana"
+expected = "ぎごしょくやな"
+
+[[case]]
+input = "玉蜀黍さん(=゚ω゚)ノ"
+mode = "hiragana"
+expected = "とうもろこしさん(=゚おめが゚)ノ"
+
+[[case]]
+input = "蜀紅錦"
+mode = "hiragana"
+expected = "しょっこうにしき"
+
+[[case]]
+input = "山本KID徳郁"
+mode = "hiragana"
+expected = "やまもとキッドのりふみ"
+
+[[case]]
+input = "岡崎郁って今どうしてるの"
+mode = "hiragana"
+expected = "おかざきいくっていまどうしてるの"
+
+[[case]]
+input = "沢木郁也さん"
+mode = "hiragana"
+expected = "さわきいくやさん"
+
+[[case]]
+input = "郁恵ちゃんがやったね〜"
+mode = "hiragana"
+expected = "いくえちゃんがやったね"
+
+[[case]]
+input = "貞子vs伽倻子とかも"
+mode = "hiragana"
+expected = "さだこブイエスかやことかも"
+
+[[case]]
+input = "膵炎は怖いからねぇ..."
+mode = "hiragana"
+expected = "すいえんはこわいからねぇ..."
+
+[[case]]
+input = "君の膵臓をたべたい、いま会いに行きますってホラータイトルみたいだよね"
+mode = "hiragana"
+expected = "きみのすいぞうをたべたい、いまあいにいきますってホラータイトルみたいだよね"
+
+[[case]]
+input = "白檀好きなんだ"
+mode = "hiragana"
+expected = "びゃくだんすきなんだ"
+
+[[case]]
+input = "螺鈿紫檀五弦琵琶!"
+mode = "hiragana"
+expected = "らでんしたんごげんびわ!"
+
+[[case]]
+input = "檀蜜"
+mode = "hiragana"
+expected = "だんみつ"
+
+[[case]]
+input = "檀黎斗?"
+mode = "hiragana"
+expected = "だんれいと?"
+
+[[case]]
+input = "曼荼羅が見えた"
+mode = "hiragana"
+expected = "まんだらがみえた"
+
+[[case]]
+input = "沙羅曼蛇みたいな曲"
+mode = "hiragana"
+expected = "さらまんだみたいなきょく"
+
+[[case]]
+input = "喃語こぉね"
+mode = "hiragana"
+expected = "なんごこぉね"
+
+[[case]]
+input = "やってくれた喃...!"
+mode = "hiragana"
+expected = "やってくれたのう...!"
+
+[[case]]
+input = "さすが出来ておる喃"
+mode = "hiragana"
+expected = "さすができておるのう"
+
+[[case]]
+input = "敏捷性"
+mode = "hiragana"
+expected = "びんしょうせい"
+
+[[case]]
+input = "敏捷はクイック"
+mode = "hiragana"
+expected = "びんしょうはクイック"
+
+[[case]]
+input = "同衾w"
+mode = "hiragana"
+expected = "どうきんw"
+
+[[case]]
+input = "天井が衾になってる"
+mode = "hiragana"
+expected = "てんじょうがふすまになってる"
+
+[[case]]
+input = "そういう柄の衾"
+mode = "hiragana"
+expected = "そういうがらのふすま"
+
+[[case]]
+input = "屍と同衾はちょっとw"
+mode = "hiragana"
+expected = "しかばねとどうきんはちょっとw"
+
+[[case]]
+input = "昔こんな糊あったよね"
+mode = "hiragana"
+expected = "むかしこんなのりあったよね"
+
+[[case]]
+input = "お米で糊を作るの?"
+mode = "hiragana"
+expected = "おこめでのりをつくるの?"
+
+[[case]]
+input = "血糊は幻覚!?"
+mode = "hiragana"
+expected = "ちのりはげんかく!?"
+
+[[case]]
+input = "段ボールは米のデンプン糊だからくうけど、紙の箱は食べられませんw"
+mode = "hiragana"
+expected = "だんぼーるはこめのデンプンのりだからくうけど、かみのはこはたべられませんw"
+
+[[case]]
+input = "蒼穹のファフナー"
+mode = "hiragana"
+expected = "そうきゅうのファフナー"
+
+[[case]]
+input = "慟哭の穹............."
+mode = "hiragana"
+expected = "どうこくのきゅう............."
+
+[[case]]
+input = "凧揚げで"
+mode = "hiragana"
+expected = "たこあげで"
+
+[[case]]
+input = "日本初の凧は烏賊だったらしい。"
+mode = "hiragana"
+expected = "にほんはつのたこはいかだったらしい。"
+
+[[case]]
+input = "糸の切れた凧のように!"
+mode = "hiragana"
+expected = "いとのきれたたこのように!"
+
+[[case]]
+input = "フライの魔物はまじ落暉"
+mode = "hiragana"
+expected = "フライのまものはまじらっき"
+
+[[case]]
+input = "菅田将暉、マダツボミ"
+mode = "hiragana"
+expected = "すだまさき、マダツボミ"
+
+[[case]]
+input = "清水大暉だ"
+mode = "hiragana"
+expected = "しみずだいきだ"
+
+[[case]]
+input = "小池竜暉さんもいるよね"
+mode = "hiragana"
+expected = "こいけりゅうきさんもいるよね"
+
