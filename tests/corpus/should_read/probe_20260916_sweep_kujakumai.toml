@@ -1,0 +1,80 @@
+[[case]]
+input = "孔雀舞は強いよ"
+mode = "hiragana"
+expected = "くじゃくまいはつよいよ"
+
+[[case]]
+input = "不知火舞VSティファ"
+mode = "hiragana"
+expected = "しらぬいまいブイエスティファ"
+
+[[case]]
+input = "多分掘り方も悪いぜよw"
+mode = "hiragana"
+expected = "たぶんほりかたもわるいぜよw"
+
+[[case]]
+input = "風吹いてくれ"
+mode = "hiragana"
+expected = "かぜふいてくれ"
+
+[[case]]
+input = "風吹いてるとこは行けそうね"
+mode = "hiragana"
+expected = "かぜふいてるとこはいけそうね"
+
+[[case]]
+input = "風吹いたら一瞬でなくなりそう"
+mode = "hiragana"
+expected = "かぜふいたらいっしゅんでなくなりそう"
+
+[[case]]
+input = "昨日とは違う風吹くからね"
+mode = "hiragana"
+expected = "きのうとはちがうかぜふくからね"
+
+[[case]]
+input = "先輩風吹かせていこう"
+mode = "hiragana"
+expected = "せんぱいかぜふかせていこう"
+
+[[case]]
+input = "全然笛吹かれないね"
+mode = "hiragana"
+expected = "ぜんぜんふえふかれないね"
+
+[[case]]
+input = "この審判全然笛吹かない"
+mode = "hiragana"
+expected = "このしんぱんぜんぜんふえふかない"
+
+[[case]]
+input = "さっきから全然笛吹かんやん"
+mode = "hiragana"
+expected = "さっきからぜんぜんふえふかんやん"
+
+[[case]]
+input = "渡さん!"
+mode = "hiragana"
+expected = "わたさん!"
+
+[[case]]
+input = "犯罪人引渡条約"
+mode = "hiragana"
+expected = "はんざいじんひきわたしじょうやく"
+
+[[case]]
+input = "ルイ姉も誘おー"
+mode = "hiragana"
+expected = "ルイねえもさそおー"
+
+[[case]]
+input = "どういう誘い方w"
+mode = "hiragana"
+expected = "どういうさそいかたw"
+
+[[case]]
+input = "森羅課長きたー"
+mode = "hiragana"
+expected = "しんらかちょうきたー"
+
