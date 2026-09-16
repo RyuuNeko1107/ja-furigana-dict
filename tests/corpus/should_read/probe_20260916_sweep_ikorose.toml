@@ -1,0 +1,110 @@
+[[case]]
+input = "射殺せ神鎗"
+mode = "hiragana"
+expected = "いころせしんそう"
+
+[[case]]
+input = "ぶっ殺す!"
+mode = "hiragana"
+expected = "ぶっころす!"
+
+[[case]]
+input = "三幻神かw"
+mode = "hiragana"
+expected = "さんげんしんかw"
+
+[[case]]
+input = "17は仮免のみ"
+mode = "hiragana"
+expected = "じゅうななはかりめんのみ"
+
+[[case]]
+input = "体験板くるのか"
+mode = "hiragana"
+expected = "たいけんばんくるのか"
+
+[[case]]
+input = "回覧板じゃねぇんだから"
+mode = "hiragana"
+expected = "かいらんばんじゃねぇんだから"
+
+[[case]]
+input = "ガルパンは大洗だっけ"
+mode = "hiragana"
+expected = "ガルパンはおおあらいだっけ"
+
+[[case]]
+input = "八十稲羽や"
+mode = "hiragana"
+expected = "やそいなばや"
+
+[[case]]
+input = "佐々木望さんの声好き"
+mode = "hiragana"
+expected = "ささきのぞむさんのこえすき"
+
+[[case]]
+input = "生耳になってるのか"
+mode = "hiragana"
+expected = "なまみみになってるのか"
+
+[[case]]
+input = "口には煙草耳には鉛筆新聞片手に"
+mode = "hiragana"
+expected = "くちにはたばこみみにはえんぴつしんぶんかたてに"
+
+[[case]]
+input = "実際耳やってるから仮病ではないからな"
+mode = "hiragana"
+expected = "じっさいみみやってるからけびょうではないからな"
+
+[[case]]
+input = "最近耳の裏の匂いも気になってきてな..."
+mode = "hiragana"
+expected = "さいきんみみのうらのにおいもきになってきてな..."
+
+[[case]]
+input = "人それぞれ十人十色"
+mode = "hiragana"
+expected = "ひとそれぞれじゅうにんといろ"
+
+[[case]]
+input = "跳躍の外そう"
+mode = "hiragana"
+expected = "ちょうやくのはずそう"
+
+[[case]]
+input = "勝ちたい額と予算を教えて"
+mode = "hiragana"
+expected = "かちたいがくとよさんをおしえて"
+
+[[case]]
+input = "煽り受け?"
+mode = "hiragana"
+expected = "あおりうけ?"
+
+[[case]]
+input = "俺ら東京さ行ぐだ"
+mode = "hiragana"
+expected = "おれらとうきょうさいぐだ"
+
+[[case]]
+input = "久ぺこー"
+mode = "hiragana"
+expected = "ひさぺこー"
+
+[[case]]
+input = "1日頭冷えてからのがいいかもね色々"
+mode = "hiragana"
+expected = "いちにちあたまひえてからのがいいかもねいろいろ"
+
+[[case]]
+input = "長え肩書"
+mode = "hiragana"
+expected = "なげえかたがき"
+
+[[case]]
+input = "そろそろVの方が肩書の前に来ると思う。"
+mode = "hiragana"
+expected = "そろそろVのほうがかたがきのまえにくるとおもう。"
+
