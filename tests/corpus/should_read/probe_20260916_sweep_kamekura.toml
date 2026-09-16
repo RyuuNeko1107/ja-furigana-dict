@@ -1,0 +1,105 @@
+[[case]]
+input = "最初の村の飾てある鎧替えるよ"
+mode = "hiragana"
+expected = "さいしょのむらのかざってあるよろいかえるよ"
+
+[[case]]
+input = "手倉森みたいなもんか"
+mode = "hiragana"
+expected = "てくらもりみたいなもんか"
+
+[[case]]
+input = "貸倉庫"
+mode = "hiragana"
+expected = "かしそうこ"
+
+[[case]]
+input = "音無瀬さん"
+mode = "hiragana"
+expected = "おとなせさん"
+
+[[case]]
+input = "小川後藤塩貝はいかないんかな"
+mode = "hiragana"
+expected = "おがわごとうしおかいはいかないんかな"
+
+[[case]]
+input = "みこち、九九の四の段言える?"
+mode = "hiragana"
+expected = "みこち、くくのよんのだんいえる?"
+
+[[case]]
+input = "みこち九九できるの!?"
+mode = "hiragana"
+expected = "みこちくくできるの!?"
+
+[[case]]
+input = "割り算より九九なのにw"
+mode = "hiragana"
+expected = "わりざんよりくくなのにw"
+
+[[case]]
+input = "スケートやった後腰痛めた人です"
+mode = "hiragana"
+expected = "スケートやったあとこしいためたひとです"
+
+[[case]]
+input = "というか精霊の鎧って誰装備してんの?"
+mode = "hiragana"
+expected = "というかせいれいのよろいってだれそうびしてんの?"
+
+[[case]]
+input = "備長炭とかもそう読むよね"
+mode = "hiragana"
+expected = "びんちょうたんとかもそうよむよね"
+
+[[case]]
+input = "備長炭で草"
+mode = "hiragana"
+expected = "びんちょうたんでくさ"
+
+[[case]]
+input = "焼き芋炭になるw"
+mode = "hiragana"
+expected = "やきいもすみになるw"
+
+[[case]]
+input = "全部炭になるわw"
+mode = "hiragana"
+expected = "ぜんぶすみになるわw"
+
+[[case]]
+input = "日本じゃなかったらここまで蒸さないから"
+mode = "hiragana"
+expected = "にほんじゃなかったらここまでふかさないから"
+
+[[case]]
+input = "茶碗蒸しか..."
+mode = "hiragana"
+expected = "ちゃわんむしか..."
+
+[[case]]
+input = "つぶ貝と一緒と聞くが"
+mode = "hiragana"
+expected = "つぶがいといっしょときくが"
+
+[[case]]
+input = "つめた貝にチャレンジ"
+mode = "hiragana"
+expected = "つめたがいにチャレンジ"
+
+[[case]]
+input = "何だこの印鑑みたいな"
+mode = "hiragana"
+expected = "なんだこのいんかんみたいな"
+
+[[case]]
+input = "鑑がある!?"
+mode = "hiragana"
+expected = "かがみがある!?"
+
+[[case]]
+input = "実寸大ってのが熱い"
+mode = "hiragana"
+expected = "じっすんだいってのがあつい"
+
