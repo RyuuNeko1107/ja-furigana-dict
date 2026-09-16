@@ -1,0 +1,95 @@
+[[case]]
+input = "ロブチェン外枠なのはどうなんだろ"
+mode = "hiragana"
+expected = "ロブチェンそとわくなのはどうなんだろ"
+
+[[case]]
+input = "ロブチェン外枠なんよね"
+mode = "hiragana"
+expected = "ロブチェンそとわくなんよね"
+
+[[case]]
+input = "映えー"
+mode = "hiragana"
+expected = "ばえー"
+
+[[case]]
+input = "周るだけだから回収はしやすそうw"
+mode = "hiragana"
+expected = "まわるだけだからかいしゅうはしやすそうw"
+
+[[case]]
+input = "そこの自称虎は猫かぶってます"
+mode = "hiragana"
+expected = "そこのじしょうとらはねこかぶってます"
+
+[[case]]
+input = "夏場は通気性命よね"
+mode = "hiragana"
+expected = "なつばはつうきせいいのちよね"
+
+[[case]]
+input = "CM案件が来る前に解散かぁ"
+mode = "hiragana"
+expected = "しーえむあんけんがくるまえにかいさんかぁ"
+
+[[case]]
+input = "清水の舞台からダイブ"
+mode = "hiragana"
+expected = "きよみずのぶたいからダイブ"
+
+[[case]]
+input = "鉄系を装備してると炎ダメージが上がったような"
+mode = "hiragana"
+expected = "てつけいをそうびしてるとほのおダメージがあがったような"
+
+[[case]]
+input = "みこちはお姉さま枠だ"
+mode = "hiragana"
+expected = "みこちはおねえさまわくだ"
+
+[[case]]
+input = "加速命"
+mode = "hiragana"
+expected = "かそくいのち"
+
+[[case]]
+input = "中観たことないのでまた観てみる!"
+mode = "hiragana"
+expected = "なかみたことないのでまたみてみる!"
+
+[[case]]
+input = "イニシャル・Mを観にきました!"
+mode = "hiragana"
+expected = "イニシャルMをみにきました!"
+
+[[case]]
+input = "ドローンで観にいけばいいw"
+mode = "hiragana"
+expected = "ドローンでみにいけばいいw"
+
+[[case]]
+input = "だんだんリスナーさんに観えてきた"
+mode = "hiragana"
+expected = "だんだんリスナーさんにみえてきた"
+
+[[case]]
+input = "東横からグランド観えるじゃない?"
+mode = "hiragana"
+expected = "ひがしよこからグランドみえるじゃない?"
+
+[[case]]
+input = "久々観にきた"
+mode = "hiragana"
+expected = "ひさびさみにきた"
+
+[[case]]
+input = "立体と平面の間にある世界観よき"
+mode = "hiragana"
+expected = "りったいとへいめんのあいだにあるせかいかんよき"
+
+[[case]]
+input = "服は1年位が寿命"
+mode = "hiragana"
+expected = "ふくはいちねんくらいがじゅみょう"
+
