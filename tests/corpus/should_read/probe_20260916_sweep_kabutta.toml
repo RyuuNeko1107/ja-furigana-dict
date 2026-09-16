@@ -1,0 +1,105 @@
+[[case]]
+input = "猫の皮を被った怪物"
+mode = "hiragana"
+expected = "ねこのかわをかぶったかいぶつ"
+
+[[case]]
+input = "被った"
+mode = "hiragana"
+expected = "かぶった"
+
+[[case]]
+input = "船長とスピードメーターが被ってる"
+mode = "hiragana"
+expected = "せんちょうとスピードメーターがかぶってる"
+
+[[case]]
+input = "猫被ってるからねw"
+mode = "hiragana"
+expected = "ねこかぶってるからねw"
+
+[[case]]
+input = "まさかのマミーと予想被ったのだがww"
+mode = "hiragana"
+expected = "まさかのマミーとよそうかぶったのだがww"
+
+[[case]]
+input = "株と時間被ってるw"
+mode = "hiragana"
+expected = "かぶとじかんかぶってるw"
+
+[[case]]
+input = "派手な帽子被ってるから"
+mode = "hiragana"
+expected = "はでなぼうしかぶってるから"
+
+[[case]]
+input = "ホコリ被ってるのも勿体ないね"
+mode = "hiragana"
+expected = "ホコリかぶってるのももったいないね"
+
+[[case]]
+input = "砂漠が海に被っちゃってるなぁ"
+mode = "hiragana"
+expected = "さばくがうみにかぶっちゃってるなぁ"
+
+[[case]]
+input = "おかゆんのライブと被っちゃう"
+mode = "hiragana"
+expected = "おかゆんのライブとかぶっちゃう"
+
+[[case]]
+input = "毎回被せるよねw"
+mode = "hiragana"
+expected = "まいかいかぶせるよねw"
+
+[[case]]
+input = "みこちー檄推し!"
+mode = "hiragana"
+expected = "みこちーげきおし!"
+
+[[case]]
+input = "ハチロクに藤原とうふ店って書きたくなる"
+mode = "hiragana"
+expected = "ハチロクにふじわらとうふてんってかきたくなる"
+
+[[case]]
+input = "3店方式"
+mode = "hiragana"
+expected = "さんてんほうしき"
+
+[[case]]
+input = "築前煮パワー注入"
+mode = "hiragana"
+expected = "ちくぜんにパワーちゅうにゅう"
+
+[[case]]
+input = "知識の差が出にくいね"
+mode = "hiragana"
+expected = "ちしきのさがでにくいね"
+
+[[case]]
+input = "まあ謎だと感染ると思い込みそうよなぁ"
+mode = "hiragana"
+expected = "まあなぞだとうつるとおもいこみそうよなぁ"
+
+[[case]]
+input = "どっちも欲しいけど被ったら被ったで嬉しいな"
+mode = "hiragana"
+expected = "どっちもほしいけどかぶったらかぶったでうれしいな"
+
+[[case]]
+input = "衣装が被ったり被らなかったり"
+mode = "hiragana"
+expected = "いしょうがかぶったりかぶらなかったり"
+
+[[case]]
+input = "ちいかわキャラの喋り方って感染るよね"
+mode = "hiragana"
+expected = "ちいかわキャラのしゃべりかたってうつるよね"
+
+[[case]]
+input = "戌神とうふ店"
+mode = "hiragana"
+expected = "いぬがみとうふてん"
+
