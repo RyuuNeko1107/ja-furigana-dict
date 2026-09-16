@@ -1,0 +1,330 @@
+[[case]]
+input = "サラキアは有馬記念2着の名牝"
+mode = "hiragana"
+expected = "サラキアはありまきねんにちゃくのめいひん"
+
+[[case]]
+input = "名牝"
+mode = "hiragana"
+expected = "めいひん"
+
+[[case]]
+input = "牝馬は結構マイル寄りで育成すること多いけど、"
+mode = "hiragana"
+expected = "ひんばはけっこうマイルよりでいくせいすることおおいけど、"
+
+[[case]]
+input = "府中牝馬は30万や"
+mode = "hiragana"
+expected = "ふちゅうひんばはさんじゅうまんや"
+
+[[case]]
+input = "ルメールは牝馬のイメージ"
+mode = "hiragana"
+expected = "ルメールはひんばのイメージ"
+
+[[case]]
+input = "牝言うなw"
+mode = "hiragana"
+expected = "めすいうなw"
+
+[[case]]
+input = "レガレイラもできなかった牝馬の皐月賞"
+mode = "hiragana"
+expected = "レガレイラもできなかったひんばのさつきしょう"
+
+[[case]]
+input = "海底摸月!"
+mode = "hiragana"
+expected = "はいていもーゆえ!"
+
+[[case]]
+input = "海底自摸だ"
+mode = "hiragana"
+expected = "かいていつもだ"
+
+[[case]]
+input = "一発自摸!"
+mode = "hiragana"
+expected = "いっぱつつも!"
+
+[[case]]
+input = "自摸が弱い・・・"
+mode = "hiragana"
+expected = "つもがよわい"
+
+[[case]]
+input = "ラス自摸いいね"
+mode = "hiragana"
+expected = "ラスつもいいね"
+
+[[case]]
+input = "菩薩掌つよっ!"
+mode = "hiragana"
+expected = "ぼさつしょうつよっ!"
+
+[[case]]
+input = "地蔵菩薩"
+mode = "hiragana"
+expected = "じぞうぼさつ"
+
+[[case]]
+input = "「弥勒菩薩じゃない存在に死亡させられた?」"
+mode = "hiragana"
+expected = "「みろくぼさつじゃないそんざいにしぼうさせられた?」"
+
+[[case]]
+input = "武藏"
+mode = "hiragana"
+expected = "むさし"
+
+[[case]]
+input = "オールは武藏の武器だしな"
+mode = "hiragana"
+expected = "オールはむさしのぶきだしな"
+
+[[case]]
+input = "蕁麻疹出るかも"
+mode = "hiragana"
+expected = "じんましんでるかも"
+
+[[case]]
+input = "風疹のたて"
+mode = "hiragana"
+expected = "ふうしんのたて"
+
+[[case]]
+input = "湿疹でてますよ"
+mode = "hiragana"
+expected = "しっしんでてますよ"
+
+[[case]]
+input = "汗疹ですか?"
+mode = "hiragana"
+expected = "あせもですか?"
+
+[[case]]
+input = "わいも今週思わぬ薬疹で苦しんでいた"
+mode = "hiragana"
+expected = "わいもこんしゅうおもわぬやくしんでくるしんでいた"
+
+[[case]]
+input = "蛸壺合体!"
+mode = "hiragana"
+expected = "たこつぼがったい!"
+
+[[case]]
+input = "茹蛸みたいだ"
+mode = "hiragana"
+expected = "ゆでたこみたいだ"
+
+[[case]]
+input = "麻痺らせて蛸殴り"
+mode = "hiragana"
+expected = "まひらせてたこなぐり"
+
+[[case]]
+input = "大空摸摸茶"
+mode = "hiragana"
+expected = "おおぞらももちゃ"
+
+[[case]]
+input = "高市のせいで円安、インフレ、円が紙屑"
+mode = "hiragana"
+expected = "たかいちのせいでえんやす、インフレ、えんがかみくず"
+
+[[case]]
+input = "鉄屑迷路w"
+mode = "hiragana"
+expected = "てつくずめいろw"
+
+[[case]]
+input = "星屑が海に落ちて貝になったよ"
+mode = "hiragana"
+expected = "ほしくずがうみにおちてかいになったよ"
+
+[[case]]
+input = "海の藻屑にされちゃう"
+mode = "hiragana"
+expected = "うみのもくずにされちゃう"
+
+[[case]]
+input = "大勢で屑鉄が煽ったのもあるからお互い様だな"
+mode = "hiragana"
+expected = "おおぜいでくずてつがあおったのもあるからおたがいさまだな"
+
+[[case]]
+input = "滾ってる最中なんでねw"
+mode = "hiragana"
+expected = "たぎってるもなかなんでねw"
+
+[[case]]
+input = "血が滾る"
+mode = "hiragana"
+expected = "ちがたぎる"
+
+[[case]]
+input = "滾るぜ!"
+mode = "hiragana"
+expected = "たぎるぜ!"
+
+[[case]]
+input = "巷で噂の、SAO体験版やらないよ?"
+mode = "hiragana"
+expected = "ちまたでうわさの、SAOたいけんばんやらないよ?"
+
+[[case]]
+input = "巷説百物語"
+mode = "hiragana"
+expected = "こうせつひゃくものがたり"
+
+[[case]]
+input = "年寄りの巷"
+mode = "hiragana"
+expected = "としよりのちまた"
+
+[[case]]
+input = "鬼滅隊の幽霊が新撰組のわざと隊員をおそう"
+mode = "hiragana"
+expected = "きめつたいのゆうれいがしんせんぐみのわざとたいいんをおそう"
+
+[[case]]
+input = "杜撰w"
+mode = "hiragana"
+expected = "ずさんw"
+
+[[case]]
+input = "撰録"
+mode = "hiragana"
+expected = "せんろく"
+
+[[case]]
+input = "渚トラウト、ギラボスの同級生で名前が2人とかぶってる"
+mode = "hiragana"
+expected = "なぎさトラウト、ギラボスのどうきゅうせいでなまえがふたりとかぶってる"
+
+[[case]]
+input = "これが渚カヲル"
+mode = "hiragana"
+expected = "これがなぎさカヲル"
+
+[[case]]
+input = "渚にまつわるエトセトラ助かる"
+mode = "hiragana"
+expected = "なぎさにまつわるエトセトラたすかる"
+
+[[case]]
+input = "壷揚げうどん"
+mode = "hiragana"
+expected = "つぼあげうどん"
+
+[[case]]
+input = "痰壷あげたんか!?...そりゃあ怒るよ"
+mode = "hiragana"
+expected = "たんつぼあげたんか!?...そりゃあおこるよ"
+
+[[case]]
+input = "豹変壷市"
+mode = "hiragana"
+expected = "ひょうへんつぼし"
+
+[[case]]
+input = "ホロドリの思う壷だぞ!"
+mode = "hiragana"
+expected = "ホロドリのおもうつぼだぞ!"
+
+[[case]]
+input = "ひき直しで強欲な壷ですわ"
+mode = "hiragana"
+expected = "ひきなおしでごうよくなつぼですわ"
+
+[[case]]
+input = "楯突かなきゃ..."
+mode = "hiragana"
+expected = "たてつかなきゃ..."
+
+[[case]]
+input = "先生に楯突くのか?"
+mode = "hiragana"
+expected = "せんせいにたてつくのか?"
+
+[[case]]
+input = "矛楯対決"
+mode = "hiragana"
+expected = "ほこたてたいけつ"
+
+[[case]]
+input = "会長は後ろ楯"
+mode = "hiragana"
+expected = "かいちょうはうしろだて"
+
+[[case]]
+input = "藁の楯"
+mode = "hiragana"
+expected = "わらのたて"
+
+[[case]]
+input = "俄然本気になれるな!"
+mode = "hiragana"
+expected = "がぜんほんきになれるな!"
+
+[[case]]
+input = "湊かなえと聞いて俄然興味でました"
+mode = "hiragana"
+expected = "みなとかなえときいてがぜんきょうみでました"
+
+[[case]]
+input = "澪、体調はどう?"
+mode = "hiragana"
+expected = "みお、たいちょうはどう?"
+
+[[case]]
+input = "麺屋 澪"
+mode = "hiragana"
+expected = "めんや みお"
+
+[[case]]
+input = "澪つくし変"
+mode = "hiragana"
+expected = "みおつくしへん"
+
+[[case]]
+input = "歌みたで風の憧憬歌ってくんないかなあ"
+mode = "hiragana"
+expected = "うたみたでかぜのしょうけいうたってくんないかなあ"
+
+[[case]]
+input = "憧憬からくるやつだったんかい"
+mode = "hiragana"
+expected = "しょうけいからくるやつだったんかい"
+
+[[case]]
+input = "戌亥とこ"
+mode = "hiragana"
+expected = "いぬいとこ"
+
+[[case]]
+input = "亥鼻城かな"
+mode = "hiragana"
+expected = "いのはなじょうかな"
+
+[[case]]
+input = "霧亥"
+mode = "hiragana"
+expected = "きりい"
+
+[[case]]
+input = "鰆釣ってたっけ"
+mode = "hiragana"
+expected = "さわらつってたっけ"
+
+[[case]]
+input = "海釣り 鰆リベンジ"
+mode = "hiragana"
+expected = "うみづり さわらリベンジ"
+
+[[case]]
+input = "まさかの鰆釣り"
+mode = "hiragana"
+expected = "まさかのさわらづり"
+
