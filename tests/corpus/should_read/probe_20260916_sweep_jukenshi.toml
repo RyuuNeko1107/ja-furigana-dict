@@ -1,0 +1,205 @@
+[[case]]
+input = "尚効果は無い模様"
+mode = "hiragana"
+expected = "なおこうかはないもよう"
+
+[[case]]
+input = "出して尚勝つんだよ"
+mode = "hiragana"
+expected = "だしてなおかつんだよ"
+
+[[case]]
+input = "ネリッサ来るなら尚の事船長来てほしいな"
+mode = "hiragana"
+expected = "ネリッサくるならなおのことせんちょうきてほしいな"
+
+[[case]]
+input = "尚これである"
+mode = "hiragana"
+expected = "なおこれである"
+
+[[case]]
+input = "尚まだこれで初級である"
+mode = "hiragana"
+expected = "なおまだこれでしょきゅうである"
+
+[[case]]
+input = "外崎と木浪もいれば尚最高"
+mode = "hiragana"
+expected = "そとざきときなみもいればなおさいこう"
+
+[[case]]
+input = "尚さっきの行動は・・・"
+mode = "hiragana"
+expected = "なおさっきのこうどうは"
+
+[[case]]
+input = "まとめて倒せると尚よしだね"
+mode = "hiragana"
+expected = "まとめてたおせるとなおよしだね"
+
+[[case]]
+input = "大葉があれば尚よき"
+mode = "hiragana"
+expected = "おおばがあればなおよき"
+
+[[case]]
+input = "2やってからなら尚いい"
+mode = "hiragana"
+expected = "にやってからならなおいい"
+
+[[case]]
+input = "同業だと尚ね"
+mode = "hiragana"
+expected = "どうぎょうだとなおね"
+
+[[case]]
+input = "吉田正尚"
+mode = "hiragana"
+expected = "よしだまさたか"
+
+[[case]]
+input = "正尚やんけ!!!!"
+mode = "hiragana"
+expected = "まさたかやんけ!!!!"
+
+[[case]]
+input = "高校が駒大苫小牧やからね田中将大"
+mode = "hiragana"
+expected = "こうこうがこまだいとまこまいやからねたなかまさひろ"
+
+[[case]]
+input = "みんな海猿www"
+mode = "hiragana"
+expected = "みんなうみざるwww"
+
+[[case]]
+input = "回復猿"
+mode = "hiragana"
+expected = "かいふくざる"
+
+[[case]]
+input = "夜叉猿?"
+mode = "hiragana"
+expected = "やしゃざる?"
+
+[[case]]
+input = "まあ、実際猿でも分かるっていうけど、無理だよな"
+mode = "hiragana"
+expected = "まあ、じっさいさるでもわかるっていうけど、むりだよな"
+
+[[case]]
+input = "鶴瓶さんの麦茶はいいぞ"
+mode = "hiragana"
+expected = "つるべさんのむぎちゃはいいぞ"
+
+[[case]]
+input = "家に鶴瓶師匠来たことある"
+mode = "hiragana"
+expected = "いえにつるべししょうきたことある"
+
+[[case]]
+input = "角瓶w"
+mode = "hiragana"
+expected = "かくびんw"
+
+[[case]]
+input = "空瓶重ねたほうがいいかもよーーーー"
+mode = "hiragana"
+expected = "あきびんかさねたほうがいいかもよーーーー"
+
+[[case]]
+input = "内山と佐伯だけかな"
+mode = "hiragana"
+expected = "うちやまとさえきだけかな"
+
+[[case]]
+input = "ハーレム主人公 伊東誠"
+mode = "hiragana"
+expected = "ハーレムしゅじんこう いとうまこと"
+
+[[case]]
+input = "長谷部誠"
+mode = "hiragana"
+expected = "はせべまこと"
+
+[[case]]
+input = "小坂誠"
+mode = "hiragana"
+expected = "こさかまこと"
+
+[[case]]
+input = "長谷川誠監督"
+mode = "hiragana"
+expected = "はせがわまことかんとく"
+
+[[case]]
+input = "仕事しない田中誠くん?"
+mode = "hiragana"
+expected = "しごとしないたなかまことくん?"
+
+[[case]]
+input = "丸とか誠也レベルが出てくれば"
+mode = "hiragana"
+expected = "まるとかせいやレベルがでてくれば"
+
+[[case]]
+input = "さっき得意と仰いましたが"
+mode = "hiragana"
+expected = "さっきとくいとおっしゃいましたが"
+
+[[case]]
+input = "仰がない..."
+mode = "hiragana"
+expected = "あおがない..."
+
+[[case]]
+input = "仰け反れるw"
+mode = "hiragana"
+expected = "のけぞれるw"
+
+[[case]]
+input = "仰け反らせてからのアウトコースや"
+mode = "hiragana"
+expected = "のけぞらせてからのアウトコースや"
+
+[[case]]
+input = "段々腕痺れてくるから..."
+mode = "hiragana"
+expected = "だんだんうでしびれてくるから..."
+
+[[case]]
+input = "最近尼さん見ないと思ったら"
+mode = "hiragana"
+expected = "さいきんあまさんみないとおもったら"
+
+[[case]]
+input = "星詠いたな"
+mode = "hiragana"
+expected = "ほしよみいたな"
+
+[[case]]
+input = "すいちゃん、星詠も待ってるよ"
+mode = "hiragana"
+expected = "すいちゃん、ほしよみもまってるよ"
+
+[[case]]
+input = "巌となりて苔の生すまで"
+mode = "hiragana"
+expected = "いわおとなりてこけのむすまで"
+
+[[case]]
+input = "奏吊ろう"
+mode = "hiragana"
+expected = "かなでつろう"
+
+[[case]]
+input = "奏吊れば終わりや!"
+mode = "hiragana"
+expected = "かなでつればおわりや!"
+
+[[case]]
+input = "藤原拓海も中学生で車乗ってるもんな?"
+mode = "hiragana"
+expected = "ふじわらたくみもちゅうがくせいでくるまのってるもんな?"
+
