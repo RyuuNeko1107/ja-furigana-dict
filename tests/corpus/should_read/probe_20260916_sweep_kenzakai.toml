@@ -1,0 +1,70 @@
+[[case]]
+input = "県境か"
+mode = "hiragana"
+expected = "けんざかいか"
+
+[[case]]
+input = "県境を越える"
+mode = "hiragana"
+expected = "けんざかいをこえる"
+
+[[case]]
+input = "初手マイナスはもうぺこらが検証済です"
+mode = "hiragana"
+expected = "しょてマイナスはもうぺこらがけんしょうずみです"
+
+[[case]]
+input = "マイナスはもう検証済です"
+mode = "hiragana"
+expected = "マイナスはもうけんしょうずみです"
+
+[[case]]
+input = "Max5と検証済みなんです"
+mode = "hiragana"
+expected = "Max5とけんしょうずみなんです"
+
+[[case]]
+input = "巫女らしく祈りましょう"
+mode = "hiragana"
+expected = "みこらしくいのりましょう"
+
+[[case]]
+input = "巫女らしいね"
+mode = "hiragana"
+expected = "みこらしいね"
+
+[[case]]
+input = "巫女さんは神楽鈴で踊るけど"
+mode = "hiragana"
+expected = "みこさんはかぐらすずでおどるけど"
+
+[[case]]
+input = "巫女様の祈りでなんとかして"
+mode = "hiragana"
+expected = "みこさまのいのりでなんとかして"
+
+[[case]]
+input = "他力本願兎田寺 祈願"
+mode = "hiragana"
+expected = "たりきほんがんうさだでら きがん"
+
+[[case]]
+input = "尸魂界編も佳境やな"
+mode = "hiragana"
+expected = "そうるそさえてぃへんもかきょうやな"
+
+[[case]]
+input = "女型巨人の叫びの如く"
+mode = "hiragana"
+expected = "おんながたきょじんのさけびのごとく"
+
+[[case]]
+input = "僕っ娘になったんだな"
+mode = "hiragana"
+expected = "ぼくっこになったんだな"
+
+[[case]]
+input = "導き人だったw"
+mode = "hiragana"
+expected = "みちびきびとだったw"
+
