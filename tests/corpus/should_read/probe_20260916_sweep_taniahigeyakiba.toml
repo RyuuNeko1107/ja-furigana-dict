@@ -1,0 +1,100 @@
+[[case]]
+input = "概念栗田"
+mode = "hiragana"
+expected = "がいねんくりた"
+
+[[case]]
+input = "双丘が!"
+mode = "hiragana"
+expected = "そうきゅうが!"
+
+[[case]]
+input = "恥丘防衛軍キタ"
+mode = "hiragana"
+expected = "ちきゅうぼうえいぐんキタ"
+
+[[case]]
+input = "千葉繁さん声の!"
+mode = "hiragana"
+expected = "ちばしげるさんこえの!"
+
+[[case]]
+input = "除光液やんなきゃだよね"
+mode = "hiragana"
+expected = "じょこうえきやんなきゃだよね"
+
+[[case]]
+input = "桃鉄桃鉄"
+mode = "hiragana"
+expected = "ももてつももてつ"
+
+[[case]]
+input = "無礼講桃鉄ー!"
+mode = "hiragana"
+expected = "むれいこうももてつー!"
+
+[[case]]
+input = "最近桃の剥き方の動画見たなあ"
+mode = "hiragana"
+expected = "さいきんもものむきかたのどうがみたなあ"
+
+[[case]]
+input = "雪靴もないねw"
+mode = "hiragana"
+expected = "ゆきぐつもないねw"
+
+[[case]]
+input = "冬靴って存在してるからね"
+mode = "hiragana"
+expected = "ふゆぐつってそんざいしてるからね"
+
+[[case]]
+input = "多分靴にゴミが入ってたわ"
+mode = "hiragana"
+expected = "たぶんくつにゴミがはいってたわ"
+
+[[case]]
+input = "取得律さがる"
+mode = "hiragana"
+expected = "しゅとくりつさがる"
+
+[[case]]
+input = "桝添~"
+mode = "hiragana"
+expected = "ますぞえ"
+
+[[case]]
+input = "英虞湾すか?"
+mode = "hiragana"
+expected = "あごわんすか?"
+
+[[case]]
+input = "百舌の速贄やん"
+mode = "hiragana"
+expected = "もずのはやにえやん"
+
+[[case]]
+input = "卑怯桃"
+mode = "hiragana"
+expected = "ひきょうもも"
+
+[[case]]
+input = "凪良ゆうさんって本屋大賞取ってた人か"
+mode = "hiragana"
+expected = "なぎらゆうさんってほんやたいしょうとってたひとか"
+
+[[case]]
+input = "谷繁捕手出てくるといいね。"
+mode = "hiragana"
+expected = "たにしげほしゅでてくるといいね。"
+
+[[case]]
+input = "谷繁とかスカウトしたら爆アドだから"
+mode = "hiragana"
+expected = "たにしげとかスカウトしたらばくアドだから"
+
+[[case]]
+input = "ノムさん古田、谷繁あたりを狙う"
+mode = "hiragana"
+expected = "ノムさんふるた、たにしげあたりをねらう"
+
