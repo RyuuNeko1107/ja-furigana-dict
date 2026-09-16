@@ -1,0 +1,55 @@
+[[case]]
+input = "中川皓太!"
+mode = "hiragana"
+expected = "なかがわこうた!"
+
+[[case]]
+input = "中川皓太はしけやな"
+mode = "hiragana"
+expected = "なかがわこうたはしけやな"
+
+[[case]]
+input = "中川皓太か"
+mode = "hiragana"
+expected = "なかがわこうたか"
+
+[[case]]
+input = "中川皓太再び"
+mode = "hiragana"
+expected = "なかがわこうたふたたび"
+
+[[case]]
+input = "皓太"
+mode = "hiragana"
+expected = "こうた"
+
+[[case]]
+input = "藤井皓哉wwww"
+mode = "hiragana"
+expected = "ふじいこうやwwww"
+
+[[case]]
+input = "皓々"
+mode = "hiragana"
+expected = "こうこう"
+
+[[case]]
+input = "糸鋸圭介"
+mode = "hiragana"
+expected = "いとのこぎりけいすけ"
+
+[[case]]
+input = "鋸刃"
+mode = "hiragana"
+expected = "のこぎりば"
+
+[[case]]
+input = "鋸鮫"
+mode = "hiragana"
+expected = "のこぎりざめ"
+
+[[case]]
+input = "鋸挽き"
+mode = "hiragana"
+expected = "のこぎりびき"
+
