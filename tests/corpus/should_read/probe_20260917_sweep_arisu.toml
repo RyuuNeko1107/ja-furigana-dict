@@ -1,0 +1,365 @@
+[[case]]
+input = "有栖ちゃん呼んでこれる??"
+mode = "hiragana"
+expected = "ありすちゃんよんでこれる??"
+
+[[case]]
+input = "有栖ちゃんどうなん?"
+mode = "hiragana"
+expected = "ありすちゃんどうなん?"
+
+[[case]]
+input = "有栖ちゃん来る?"
+mode = "hiragana"
+expected = "ありすちゃんくる?"
+
+[[case]]
+input = "有栖ちゃん元気?"
+mode = "hiragana"
+expected = "ありすちゃんげんき?"
+
+[[case]]
+input = "有栖ちゃん待ってる"
+mode = "hiragana"
+expected = "ありすちゃんまってる"
+
+[[case]]
+input = "有栖さんおはようございます"
+mode = "hiragana"
+expected = "ありすさんおはようございます"
+
+[[case]]
+input = "有栖さん!"
+mode = "hiragana"
+expected = "ありすさん!"
+
+[[case]]
+input = "後西天皇は有栖川宮から天皇になった"
+mode = "hiragana"
+expected = "あとせいてんのうはありすがわきゅうからてんのうになった"
+
+[[case]]
+input = "伊那尓栖!"
+mode = "hiragana"
+expected = "いなにす!"
+
+[[case]]
+input = "伊那尓栖"
+mode = "hiragana"
+expected = "いなにす"
+
+[[case]]
+input = "伊那尓栖さんお疲れ様ーー!!!"
+mode = "hiragana"
+expected = "いなにすさんおつかれさまーー!!!"
+
+[[case]]
+input = "伊那尓栖の欠片ww"
+mode = "hiragana"
+expected = "いなにすのかけらww"
+
+[[case]]
+input = "憐みw"
+mode = "hiragana"
+expected = "あわれみw"
+
+[[case]]
+input = "憐み"
+mode = "hiragana"
+expected = "あわれみ"
+
+[[case]]
+input = "憐みの表情に見えるw"
+mode = "hiragana"
+expected = "あわれみのひょうじょうにみえるw"
+
+[[case]]
+input = "令和の生類憐みの令"
+mode = "hiragana"
+expected = "れいわのしょうるいあわれみのれい"
+
+[[case]]
+input = "憐れみw"
+mode = "hiragana"
+expected = "あわれみw"
+
+[[case]]
+input = "憐れまれた"
+mode = "hiragana"
+expected = "あわれまれた"
+
+[[case]]
+input = "可憐なカレンダー"
+mode = "hiragana"
+expected = "かれんなカレンダー"
+
+[[case]]
+input = "CV武内駿輔さん"
+mode = "hiragana"
+expected = "シーブイたけうちしゅんすけさん"
+
+[[case]]
+input = "群馬のイチロー後藤駿太を信じろ"
+mode = "hiragana"
+expected = "ぐんまのイチローごとうしゅんたをしんじろ"
+
+[[case]]
+input = "西川(龍馬)から西川(史礁)へ"
+mode = "hiragana"
+expected = "にしかわ(りょうま)からにしかわ(ふみたか)へ"
+
+[[case]]
+input = "緑膿菌だかが育つ"
+mode = "hiragana"
+expected = "りょくのうきんだかがそだつ"
+
+[[case]]
+input = "伊藤瑠偉か"
+mode = "hiragana"
+expected = "いとうるいか"
+
+[[case]]
+input = "ラモス瑠偉"
+mode = "hiragana"
+expected = "ラモスるい"
+
+[[case]]
+input = "坂井瑠星は誕生日"
+mode = "hiragana"
+expected = "さかいるせいはたんじょうび"
+
+[[case]]
+input = "瑠璃"
+mode = "hiragana"
+expected = "るり"
+
+[[case]]
+input = "浄瑠璃は見たことあるけど"
+mode = "hiragana"
+expected = "じょうるりはみたことあるけど"
+
+[[case]]
+input = "法廷で会おう"
+mode = "hiragana"
+expected = "ほうていであおう"
+
+[[case]]
+input = "大和朝廷 世界最古"
+mode = "hiragana"
+expected = "やまとちょうてい せかいさいこ"
+
+[[case]]
+input = "鬱憤を晴らす"
+mode = "hiragana"
+expected = "うっぷんをはらす"
+
+[[case]]
+input = "憤怒担当の魔女教"
+mode = "hiragana"
+expected = "ふんぬたんとうのまじょきょう"
+
+[[case]]
+input = "憤り草"
+mode = "hiragana"
+expected = "いきどおりくさ"
+
+[[case]]
+input = "還暦"
+mode = "hiragana"
+expected = "かんれき"
+
+[[case]]
+input = "西暦何年から配信してるの?"
+mode = "hiragana"
+expected = "せいれきなんねんからはいしんしてるの?"
+
+[[case]]
+input = "暦の上ではもうすぐ秋です"
+mode = "hiragana"
+expected = "こよみのうえではもうすぐあきです"
+
+[[case]]
+input = "駿河湾とかかなぁ"
+mode = "hiragana"
+expected = "するがわんとかかなぁ"
+
+[[case]]
+input = "宮崎駿w"
+mode = "hiragana"
+expected = "みやざきしゅんw"
+
+[[case]]
+input = "来栖タケルだ"
+mode = "hiragana"
+expected = "くるすタケルだ"
+
+[[case]]
+input = "サガン鳥栖"
+mode = "hiragana"
+expected = "サガンとす"
+
+[[case]]
+input = "茨城県神栖市"
+mode = "hiragana"
+expected = "いばらきけんかみすし"
+
+[[case]]
+input = "牧瀬紅莉栖なっつ"
+mode = "hiragana"
+expected = "まきせこうりすなっつ"
+
+[[case]]
+input = "大人の嗜み"
+mode = "hiragana"
+expected = "おとなのたしなみ"
+
+[[case]]
+input = "嗜好品"
+mode = "hiragana"
+expected = "しこうひん"
+
+[[case]]
+input = "シャケ咥えてるwww"
+mode = "hiragana"
+expected = "シャケくわえてるwww"
+
+[[case]]
+input = "座礁?"
+mode = "hiragana"
+expected = "ざしょう?"
+
+[[case]]
+input = "岩礁抜けられるからね"
+mode = "hiragana"
+expected = "がんしょうぬけられるからね"
+
+[[case]]
+input = "サンゴ礁?"
+mode = "hiragana"
+expected = "さんごしょう?"
+
+[[case]]
+input = "羊羹"
+mode = "hiragana"
+expected = "ようかん"
+
+[[case]]
+input = "防空壕?"
+mode = "hiragana"
+expected = "ぼうくうごう?"
+
+[[case]]
+input = "塹壕チックやったね"
+mode = "hiragana"
+expected = "ざんごうチックやったね"
+
+[[case]]
+input = "商売の秘訣"
+mode = "hiragana"
+expected = "しょうばいのひけつ"
+
+[[case]]
+input = "訣別"
+mode = "hiragana"
+expected = "けつべつ"
+
+[[case]]
+input = "好奇心旺盛なぺこちゃん"
+mode = "hiragana"
+expected = "こうきしんおうせいなぺこちゃん"
+
+[[case]]
+input = "迂闊やぞ"
+mode = "hiragana"
+expected = "うかつやぞ"
+
+[[case]]
+input = "猫が闊歩してるなw"
+mode = "hiragana"
+expected = "ねこがかっぽしてるなw"
+
+[[case]]
+input = "雌犬だと思ってる"
+mode = "hiragana"
+expected = "めすいぬだとおもってる"
+
+[[case]]
+input = "今は雌伏の時"
+mode = "hiragana"
+expected = "いまはしふくのとき"
+
+[[case]]
+input = "雌雄決戦w"
+mode = "hiragana"
+expected = "しゆうけっせんw"
+
+[[case]]
+input = "攪乱されてるw"
+mode = "hiragana"
+expected = "かくらんされてるw"
+
+[[case]]
+input = "全力攪拌"
+mode = "hiragana"
+expected = "ぜんりょくかくはん"
+
+[[case]]
+input = "刮目した"
+mode = "hiragana"
+expected = "かつもくした"
+
+[[case]]
+input = "膿んでるw"
+mode = "hiragana"
+expected = "うんでるw"
+
+[[case]]
+input = "歯槽膿漏かな"
+mode = "hiragana"
+expected = "しそうのうろうかな"
+
+[[case]]
+input = "化膿止め"
+mode = "hiragana"
+expected = "かのうとめ"
+
+[[case]]
+input = "蓄膿症かな?"
+mode = "hiragana"
+expected = "ちくのうしょうかな?"
+
+[[case]]
+input = "燻製w"
+mode = "hiragana"
+expected = "くんせいw"
+
+[[case]]
+input = "燻し銀!"
+mode = "hiragana"
+expected = "いぶしぎん!"
+
+[[case]]
+input = "燻ってるな"
+mode = "hiragana"
+expected = "くすぶってるな"
+
+[[case]]
+input = "呟いてたね"
+mode = "hiragana"
+expected = "つぶやいてたね"
+
+[[case]]
+input = "五稜郭は?"
+mode = "hiragana"
+expected = "ごりょうかくは?"
+
+[[case]]
+input = "星稜高校?"
+mode = "hiragana"
+expected = "せいりょうこうこう?"
+
+[[case]]
+input = "稜線をなぞるなwwww"
+mode = "hiragana"
+expected = "りょうせんをなぞるなwwww"
+
