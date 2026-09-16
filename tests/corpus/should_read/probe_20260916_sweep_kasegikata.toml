@@ -1,0 +1,115 @@
+[[case]]
+input = "船長って免許更新毎回してるんだっけ?"
+mode = "hiragana"
+expected = "せんちょうってめんきょこうしんまいかいしてるんだっけ?"
+
+[[case]]
+input = "海援隊長坂本龍馬"
+mode = "hiragana"
+expected = "かいえんたいちょうさかもとりょうま"
+
+[[case]]
+input = "佐山聡"
+mode = "hiragana"
+expected = "さやまさとる"
+
+[[case]]
+input = "労基いけヴィヴィ"
+mode = "hiragana"
+expected = "ろうきいけヴィヴィ"
+
+[[case]]
+input = "稼ぎ方が自由なの良い"
+mode = "hiragana"
+expected = "かせぎかたがじゆうなのよい"
+
+[[case]]
+input = "でもぺこーらの稼ぎ方が一番見応えあったわ"
+mode = "hiragana"
+expected = "でもぺこーらのかせぎかたがいちばんみごたえあったわ"
+
+[[case]]
+input = "株の儲け方を書いた本"
+mode = "hiragana"
+expected = "かぶのもうけかたをかいたほん"
+
+[[case]]
+input = "ファイターも傭兵業が一番稼げる状態だった"
+mode = "hiragana"
+expected = "ファイターもようへいぎょうがいちばんかせげるじょうたいだった"
+
+[[case]]
+input = "大分弱体化はされてるけどね"
+mode = "hiragana"
+expected = "だいぶじゃくたいかはされてるけどね"
+
+[[case]]
+input = "全部今の下位互換かな"
+mode = "hiragana"
+expected = "ぜんぶいまのかいごかんかな"
+
+[[case]]
+input = "35Pお着換えしてきたwwww"
+mode = "hiragana"
+expected = "35Pおきがえしてきたwwww"
+
+[[case]]
+input = "無理やり良いこと風に言い換えて"
+mode = "hiragana"
+expected = "むりやりよいことふうにいいかえて"
+
+[[case]]
+input = "ハッサン先頭のが良さそう防御面が"
+mode = "hiragana"
+expected = "ハッサンせんとうのがよさそうぼうぎょめんが"
+
+[[case]]
+input = "姉街が忘れたホタテ"
+mode = "hiragana"
+expected = "あねまちがわすれたホタテ"
+
+[[case]]
+input = "一旦街にもどるんだ、エリトラないぞ"
+mode = "hiragana"
+expected = "いったんまちにもどるんだ、エリトラないぞ"
+
+[[case]]
+input = "今街に戻るの怖いなぁこれw"
+mode = "hiragana"
+expected = "いままちにもどるのこわいなぁこれw"
+
+[[case]]
+input = "また迷言うまれたか"
+mode = "hiragana"
+expected = "まためいげんうまれたか"
+
+[[case]]
+input = "蜂がどの位稼げるか"
+mode = "hiragana"
+expected = "はちがどのくらいかせげるか"
+
+[[case]]
+input = "海場社長100週行っちゃう?"
+mode = "hiragana"
+expected = "かいばしゃちょうひゃくしゅういっちゃう?"
+
+[[case]]
+input = "これGB実機の時は倍速機能がなかった"
+mode = "hiragana"
+expected = "これじーびーじっきのときはばいそくきのうがなかった"
+
+[[case]]
+input = "このラプラスは多分弱体化されてない"
+mode = "hiragana"
+expected = "このラプラスはたぶんじゃくたいかされてない"
+
+[[case]]
+input = "稼ぎ方法は確立されてるからね"
+mode = "hiragana"
+expected = "かせぎほうほうはかくりつされてるからね"
+
+[[case]]
+input = "大分弱体化してるなぁ流石に"
+mode = "hiragana"
+expected = "だいぶじゃくたいかしてるなぁさすがに"
+
