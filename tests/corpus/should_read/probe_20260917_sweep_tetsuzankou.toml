@@ -1,0 +1,230 @@
+[[case]]
+input = "鉄山靠だろ"
+mode = "hiragana"
+expected = "てつざんこうだろ"
+
+[[case]]
+input = "鉄山靠"
+mode = "hiragana"
+expected = "てつざんこう"
+
+[[case]]
+input = "鉄山靠で草"
+mode = "hiragana"
+expected = "てつざんこうでくさ"
+
+[[case]]
+input = "鉄山靠かな"
+mode = "hiragana"
+expected = "てつざんこうかな"
+
+[[case]]
+input = "ホロライブの籾種おじさん"
+mode = "hiragana"
+expected = "ホロライブのもみだねおじさん"
+
+[[case]]
+input = "種籾粗末にしそう"
+mode = "hiragana"
+expected = "たねもみそまつにしそう"
+
+[[case]]
+input = "種籾じいさん"
+mode = "hiragana"
+expected = "たねもみじいさん"
+
+[[case]]
+input = "この種籾は明日なんじゃ"
+mode = "hiragana"
+expected = "このたねもみはあしたなんじゃ"
+
+[[case]]
+input = "籾岡枠か"
+mode = "hiragana"
+expected = "もみおかわくか"
+
+[[case]]
+input = "籾岡や九条凛先輩も良い"
+mode = "hiragana"
+expected = "もみおかやくじょうりんせんぱいもよい"
+
+[[case]]
+input = "実籾ですか、習志野高校は明日練習あるのかな?"
+mode = "hiragana"
+expected = "みもみですか、ならしのこうこうはあしたれんしゅうあるのかな?"
+
+[[case]]
+input = "稲 籾は乾燥機へ"
+mode = "hiragana"
+expected = "いね もみはかんそうきへ"
+
+[[case]]
+input = "副鼻腔炎?"
+mode = "hiragana"
+expected = "ふくびくうえん?"
+
+[[case]]
+input = "口腔外科かな"
+mode = "hiragana"
+expected = "こうくうげかかな"
+
+[[case]]
+input = "歯科口腔外科の方がええぞ"
+mode = "hiragana"
+expected = "しかこうくうげかのほうがええぞ"
+
+[[case]]
+input = "或いは四角を長方形にして二本クロスするか"
+mode = "hiragana"
+expected = "あるいはしかくをちょうほうけいにしてにほんクロスするか"
+
+[[case]]
+input = "...配信中は或る意味ギアス使ってる?"
+mode = "hiragana"
+expected = "...はいしんちゅうはあるいみギアスつかってる?"
+
+[[case]]
+input = "夏侯覇かな?"
+mode = "hiragana"
+expected = "かこうはかな?"
+
+[[case]]
+input = "夏侯惇みこち"
+mode = "hiragana"
+expected = "かこうとんみこち"
+
+[[case]]
+input = "侯爵!?"
+mode = "hiragana"
+expected = "こうしゃく!?"
+
+[[case]]
+input = "サド侯爵"
+mode = "hiragana"
+expected = "サドこうしゃく"
+
+[[case]]
+input = "姫様は王侯貴族の微笑"
+mode = "hiragana"
+expected = "ひめさまはおうこうきぞくのびしょう"
+
+[[case]]
+input = "ルーナ姫とだったらリオナ侯爵令嬢とかいけそう?"
+mode = "hiragana"
+expected = "ルーナひめとだったらリオナこうしゃくれいじょうとかいけそう?"
+
+[[case]]
+input = "蕁麻疹出るかも"
+mode = "hiragana"
+expected = "じんましんでるかも"
+
+[[case]]
+input = "親が恐怖によるストレスで蕁麻疹凄いことになってたから勘弁して欲しい"
+mode = "hiragana"
+expected = "おやがきょうふによるストレスでじんましんすごいことになってたからかんべんしてほしい"
+
+[[case]]
+input = "夏目漱石かw"
+mode = "hiragana"
+expected = "なつめそうせきかw"
+
+[[case]]
+input = "漱石?"
+mode = "hiragana"
+expected = "そうせき?"
+
+[[case]]
+input = "蒟蒻麺なら..."
+mode = "hiragana"
+expected = "こんにゃくめんなら..."
+
+[[case]]
+input = "蒟蒻畑"
+mode = "hiragana"
+expected = "こんにゃくはたけ"
+
+[[case]]
+input = "3食蒟蒻ゼリーw"
+mode = "hiragana"
+expected = "さんしょくこんにゃくゼリーw"
+
+[[case]]
+input = "自然分娩?"
+mode = "hiragana"
+expected = "しぜんぶんべん?"
+
+[[case]]
+input = "分娩つーか・・トリだけど"
+mode = "hiragana"
+expected = "ぶんべんつーかトリだけど"
+
+[[case]]
+input = "鮪のカルパッチョとはおしゃれ"
+mode = "hiragana"
+expected = "まぐろのカルパッチョとはおしゃれ"
+
+[[case]]
+input = "カジキは鮪の一種だぞ"
+mode = "hiragana"
+expected = "カジキはまぐろのいっしゅだぞ"
+
+[[case]]
+input = "鰺 鮪 秋刀魚"
+mode = "hiragana"
+expected = "あじ まぐろ さんま"
+
+[[case]]
+input = "錚々たる名前だらけだ"
+mode = "hiragana"
+expected = "そうそうたるなまえだらけだ"
+
+[[case]]
+input = "ガチの錚々たるメンツ"
+mode = "hiragana"
+expected = "ガチのそうそうたるメンツ"
+
+[[case]]
+input = "揶揄してねーよ、おにぎりって名前だった"
+mode = "hiragana"
+expected = "やゆしてねーよ、おにぎりってなまえだった"
+
+[[case]]
+input = "原爆揶揄でおなじみの"
+mode = "hiragana"
+expected = "げんばくやゆでおなじみの"
+
+[[case]]
+input = "あんま出身地揶揄するようなのは控えような"
+mode = "hiragana"
+expected = "あんましゅっしんちやゆするようなのはひかえような"
+
+[[case]]
+input = "覇王翔吼拳"
+mode = "hiragana"
+expected = "はおうしょうこうけん"
+
+[[case]]
+input = "犬にも吼えられてるwww"
+mode = "hiragana"
+expected = "いぬにもほえられてるwww"
+
+[[case]]
+input = "吼えろリザードン!"
+mode = "hiragana"
+expected = "ほえろリザードン!"
+
+[[case]]
+input = "うさぎは吼えない"
+mode = "hiragana"
+expected = "うさぎはほえない"
+
+[[case]]
+input = "珊瑚礁はなかったw"
+mode = "hiragana"
+expected = "さんごしょうはなかったw"
+
+[[case]]
+input = "pinkの珊瑚は上手いw"
+mode = "hiragana"
+expected = "ピンクのさんごはうまいw"
+
