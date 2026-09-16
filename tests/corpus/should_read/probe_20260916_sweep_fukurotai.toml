@@ -1,0 +1,165 @@
+[[case]]
+input = "ホイミンとかいう回復袋"
+mode = "hiragana"
+expected = "ホイミンとかいうかいふくぶくろ"
+
+[[case]]
+input = "ミレーユの武器袋に入ってなかった?"
+mode = "hiragana"
+expected = "ミレーユのぶきぶくろにはいってなかった?"
+
+[[case]]
+input = "うろこの鎧袋に入れようよ"
+mode = "hiragana"
+expected = "うろこのよろいぶくろにいれようよ"
+
+[[case]]
+input = "死体袋がこんなに..."
+mode = "hiragana"
+expected = "したいぶくろがこんなに..."
+
+[[case]]
+input = "空気袋を普通に使用してみようー"
+mode = "hiragana"
+expected = "くうきぶくろをふつうにしようしてみようー"
+
+[[case]]
+input = "装備品以外袋に入れてたね"
+mode = "hiragana"
+expected = "そうびひんいがいぶくろにいれてたね"
+
+[[case]]
+input = "はい!右往左往袋!"
+mode = "hiragana"
+expected = "はい!うおうさおうぶくろ!"
+
+[[case]]
+input = "また雲梯"
+mode = "hiragana"
+expected = "またうんてい"
+
+[[case]]
+input = "雲梯多くない?w"
+mode = "hiragana"
+expected = "うんていおおくない?w"
+
+[[case]]
+input = "W杯の日本戦は21日やね"
+mode = "hiragana"
+expected = "わーるどかっぷのにほんせんはにじゅういちにちやね"
+
+[[case]]
+input = "雨の次雲かな?"
+mode = "hiragana"
+expected = "あめのつぎくもかな?"
+
+[[case]]
+input = "地獄雲"
+mode = "hiragana"
+expected = "じごくくも"
+
+[[case]]
+input = "一人雲の中www"
+mode = "hiragana"
+expected = "ひとりくものなかwww"
+
+[[case]]
+input = "倉木麻衣?"
+mode = "hiragana"
+expected = "くらきまい?"
+
+[[case]]
+input = "最近麻辣湯食べた?"
+mode = "hiragana"
+expected = "さいきんまーらーたんたべた?"
+
+[[case]]
+input = "男梅きたwwwwww"
+mode = "hiragana"
+expected = "おとこうめきたwwwwww"
+
+[[case]]
+input = "どっちかというと豪炎寺"
+mode = "hiragana"
+expected = "どっちかというとごうえんじ"
+
+[[case]]
+input = "プロの雀士かな?"
+mode = "hiragana"
+expected = "プロのじゃんしかな?"
+
+[[case]]
+input = "尊み秀吉"
+mode = "hiragana"
+expected = "とうとみひでよし"
+
+[[case]]
+input = "この2人尊すぎる"
+mode = "hiragana"
+expected = "このふたりとうとすぎる"
+
+[[case]]
+input = "命の尊さを実感しました"
+mode = "hiragana"
+expected = "いのちのとうとさをじっかんしました"
+
+[[case]]
+input = "エアリスとクラウドの会話、尊かったね"
+mode = "hiragana"
+expected = "エアリスとクラウドのかいわ、とうとかったね"
+
+[[case]]
+input = "ヨダレは拭いとこ"
+mode = "hiragana"
+expected = "ヨダレはふいとこ"
+
+[[case]]
+input = "ガイドはみ出す違和感中々拭えない"
+mode = "hiragana"
+expected = "ガイドはみだすいわかんなかなかぬぐえない"
+
+[[case]]
+input = "一回机拭こうか"
+mode = "hiragana"
+expected = "いっかいつくえふこうか"
+
+[[case]]
+input = "カーブする時は少し先見て運転するんやで"
+mode = "hiragana"
+expected = "カーブするときはすこしさきみてうんてんするんやで"
+
+[[case]]
+input = "一寸先は闇"
+mode = "hiragana"
+expected = "いっすんさきはやみ"
+
+[[case]]
+input = "視聴者多っw"
+mode = "hiragana"
+expected = "しちょうしゃおおっw"
+
+[[case]]
+input = "麻雀で天和をあがれます様に"
+mode = "hiragana"
+expected = "まーじゃんでてんほーをあがれますさまに"
+
+[[case]]
+input = "天の助かよw"
+mode = "hiragana"
+expected = "てんのすけかよw"
+
+[[case]]
+input = "曲近!"
+mode = "hiragana"
+expected = "きょくちか!"
+
+[[case]]
+input = "弱肩で投げ飛ばせるか"
+mode = "hiragana"
+expected = "よわかたでなげとばせるか"
+
+[[case]]
+input = "前回のノウハウがどこまで活かせるか"
+mode = "hiragana"
+expected = "ぜんかいのノウハウがどこまでいかせるか"
+
