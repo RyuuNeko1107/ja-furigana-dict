@@ -1,0 +1,70 @@
+[[case]]
+input = "これは森福允彦"
+mode = "hiragana"
+expected = "これはもりふくまさひこ"
+
+[[case]]
+input = "舩津厳しいなぁ"
+mode = "hiragana"
+expected = "ふなつきびしいなぁ"
+
+[[case]]
+input = "舩津はだいぶギャンブルだから筒井も取っておいても良い"
+mode = "hiragana"
+expected = "ふなつはだいぶギャンブルだからつついもとっておいてもよい"
+
+[[case]]
+input = "マネちゃん 舩橋じゃない"
+mode = "hiragana"
+expected = "マネちゃん ふなばしじゃない"
+
+[[case]]
+input = "舩橋は店長"
+mode = "hiragana"
+expected = "ふなばしはてんちょう"
+
+[[case]]
+input = "舩津"
+mode = "hiragana"
+expected = "ふなつ"
+
+[[case]]
+input = "舩橋"
+mode = "hiragana"
+expected = "ふなばし"
+
+[[case]]
+input = "允彦"
+mode = "hiragana"
+expected = "まさひこ"
+
+[[case]]
+input = "允許"
+mode = "hiragana"
+expected = "いんきょ"
+
+[[case]]
+input = "舩"
+mode = "hiragana"
+expected = "ふね"
+
+[[case]]
+input = "船橋"
+mode = "hiragana"
+expected = "ふなばし"
+
+[[case]]
+input = "富嶽"
+mode = "hiragana"
+expected = "ふがく"
+
+[[case]]
+input = "御嶽山"
+mode = "hiragana"
+expected = "おんたけさん"
+
+[[case]]
+input = "青森の嶽きみも美味しいよ"
+mode = "hiragana"
+expected = "あおもりのがくきみもおいしいよ"
+
