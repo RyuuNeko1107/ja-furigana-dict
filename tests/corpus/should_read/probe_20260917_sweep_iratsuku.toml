@@ -1,0 +1,370 @@
+[[case]]
+input = "苛ついてるw"
+mode = "hiragana"
+expected = "いらついてるw"
+
+[[case]]
+input = "苛ついてるっぽい"
+mode = "hiragana"
+expected = "いらついてるっぽい"
+
+[[case]]
+input = "本田が苛ついてるw"
+mode = "hiragana"
+expected = "ほんだがいらついてるw"
+
+[[case]]
+input = "アルゼンチン苛ついてるな。"
+mode = "hiragana"
+expected = "アルゼンチンいらついてるな。"
+
+[[case]]
+input = "相手苛ついてるね"
+mode = "hiragana"
+expected = "あいていらついてるね"
+
+[[case]]
+input = "ヴィニ苛ついてたけどどうなん?w"
+mode = "hiragana"
+expected = "ヴィニいらついてたけどどうなん?w"
+
+[[case]]
+input = "普通に苛ついてたw"
+mode = "hiragana"
+expected = "ふつうにいらついてたw"
+
+[[case]]
+input = "ブラジル苛ついてきてる"
+mode = "hiragana"
+expected = "ブラジルいらついてきてる"
+
+[[case]]
+input = "オランダ苛ついております"
+mode = "hiragana"
+expected = "オランダいらついております"
+
+[[case]]
+input = "なんか苛ついてますねぇ"
+mode = "hiragana"
+expected = "なんかいらついてますねぇ"
+
+[[case]]
+input = "苛ついてて草"
+mode = "hiragana"
+expected = "いらついててくさ"
+
+[[case]]
+input = "クラウドに苛ついてても"
+mode = "hiragana"
+expected = "クラウドにいらついてても"
+
+[[case]]
+input = "日本は苛つかないしね"
+mode = "hiragana"
+expected = "にほんはいらつかないしね"
+
+[[case]]
+input = "ガチ苛で草"
+mode = "hiragana"
+expected = "ガチいらでくさ"
+
+[[case]]
+input = "苛つくとグローブを叩きつけるとか?"
+mode = "hiragana"
+expected = "いらつくとグローブをたたきつけるとか?"
+
+[[case]]
+input = "そりゃあ苛つくな"
+mode = "hiragana"
+expected = "そりゃあいらつくな"
+
+[[case]]
+input = "これは苛つくw"
+mode = "hiragana"
+expected = "これはいらつくw"
+
+[[case]]
+input = "苛立ってる"
+mode = "hiragana"
+expected = "いらだってる"
+
+[[case]]
+input = "苛々しないでやれるの本当に凄いや"
+mode = "hiragana"
+expected = "いらいらしないでやれるのほんとうにすごいや"
+
+[[case]]
+input = "苛烈だなぁ"
+mode = "hiragana"
+expected = "かれつだなぁ"
+
+[[case]]
+input = "罪悪感に苛まれる悲しき獣w"
+mode = "hiragana"
+expected = "ざいあくかんにさいなまれるかなしきけものw"
+
+[[case]]
+input = "弱いもの苛めじゃねぇかw"
+mode = "hiragana"
+expected = "よわいものいじめじゃねぇかw"
+
+[[case]]
+input = "そーだそーだ、苛性ソーダ"
+mode = "hiragana"
+expected = "そーだそーだ、かせいそーだ"
+
+[[case]]
+input = "浅煎り"
+mode = "hiragana"
+expected = "あさいり"
+
+[[case]]
+input = "品種と、浅煎りか深煎りかで香りは変わりますよ"
+mode = "hiragana"
+expected = "ひんしゅと、あさいりかしんいりかでかおりはかわりますよ"
+
+[[case]]
+input = "深煎りコーヒーが好きです"
+mode = "hiragana"
+expected = "しんいりコーヒーがすきです"
+
+[[case]]
+input = "焙煎はイタリアン"
+mode = "hiragana"
+expected = "ばいせんはイタリアン"
+
+[[case]]
+input = "二番煎じ"
+mode = "hiragana"
+expected = "にばんせんじ"
+
+[[case]]
+input = "湯煎します"
+mode = "hiragana"
+expected = "ゆせんします"
+
+[[case]]
+input = "煎餅持っていくか"
+mode = "hiragana"
+expected = "せんべいもっていくか"
+
+[[case]]
+input = "ダイヤモンド柏葉付き"
+mode = "hiragana"
+expected = "ダイヤモンドかしわばつき"
+
+[[case]]
+input = "柏?"
+mode = "hiragana"
+expected = "かしわ?"
+
+[[case]]
+input = "柏手うたないとw"
+mode = "hiragana"
+expected = "かしわでうたないとw"
+
+[[case]]
+input = "柏の葉公園とかかな"
+mode = "hiragana"
+expected = "かしわのはこうえんとかかな"
+
+[[case]]
+input = "蓑田でてこないかなあ"
+mode = "hiragana"
+expected = "みのだでてこないかなあ"
+
+[[case]]
+input = "廣瀬蓑田もイイゾ"
+mode = "hiragana"
+expected = "ひろせみのだもイイゾ"
+
+[[case]]
+input = "蓑田さんか広瀬さんがいい"
+mode = "hiragana"
+expected = "みのださんかひろせさんがいい"
+
+[[case]]
+input = "隠れ蓑w"
+mode = "hiragana"
+expected = "かくれみのw"
+
+[[case]]
+input = "漕ぎ放題w"
+mode = "hiragana"
+expected = "こぎほうだいw"
+
+[[case]]
+input = "阿漕な商売!?"
+mode = "hiragana"
+expected = "あこぎなしょうばい!?"
+
+[[case]]
+input = "脊椎反射で読むから"
+mode = "hiragana"
+expected = "せきついはんしゃでよむから"
+
+[[case]]
+input = "脊髄トーク配信"
+mode = "hiragana"
+expected = "せきずいトークはいしん"
+
+[[case]]
+input = "捕虜?"
+mode = "hiragana"
+expected = "ほりょ?"
+
+[[case]]
+input = "輻射波動"
+mode = "hiragana"
+expected = "ふくしゃはどう"
+
+[[case]]
+input = "取らぬ狸の皮算用"
+mode = "hiragana"
+expected = "とらぬたぬきのかわざんよう"
+
+[[case]]
+input = "迅速果断"
+mode = "hiragana"
+expected = "じんそくかだん"
+
+[[case]]
+input = "疾風迅雷"
+mode = "hiragana"
+expected = "しっぷうじんらい"
+
+[[case]]
+input = "獅子奮迅"
+mode = "hiragana"
+expected = "ししふんじん"
+
+[[case]]
+input = "傲慢だよね"
+mode = "hiragana"
+expected = "ごうまんだよね"
+
+[[case]]
+input = "さっきの挿絵"
+mode = "hiragana"
+expected = "さっきのさしえ"
+
+[[case]]
+input = "挿入歌も好きやねん"
+mode = "hiragana"
+expected = "そうにゅうかもすきやねん"
+
+[[case]]
+input = "辰巳か?"
+mode = "hiragana"
+expected = "たつみか?"
+
+[[case]]
+input = "原辰徳"
+mode = "hiragana"
+expected = "げんたつとく"
+
+[[case]]
+input = "戊辰戦争不可避"
+mode = "hiragana"
+expected = "ぼしんせんそうふかひ"
+
+[[case]]
+input = "金箔入りの料理"
+mode = "hiragana"
+expected = "きんぱくいりのりょうり"
+
+[[case]]
+input = "箔が付いた?"
+mode = "hiragana"
+expected = "はくがついた?"
+
+[[case]]
+input = "祇園さん"
+mode = "hiragana"
+expected = "ぎおんさん"
+
+[[case]]
+input = "脳震盪?"
+mode = "hiragana"
+expected = "のうしんとう?"
+
+[[case]]
+input = "松山晋也が最有力かな?"
+mode = "hiragana"
+expected = "まつやましんやがさいゆうりょくかな?"
+
+[[case]]
+input = "安倍晋三"
+mode = "hiragana"
+expected = "あべしんぞう"
+
+[[case]]
+input = "高杉晋作"
+mode = "hiragana"
+expected = "たかすぎしんさく"
+
+[[case]]
+input = "痔のパワー?"
+mode = "hiragana"
+expected = "じのパワー?"
+
+[[case]]
+input = "切れ痔かな?"
+mode = "hiragana"
+expected = "きれじかな?"
+
+[[case]]
+input = "懇願すな笑"
+mode = "hiragana"
+expected = "こんがんすなわらい"
+
+[[case]]
+input = "昵懇の縄師さんが"
+mode = "hiragana"
+expected = "じっこんのなわしさんが"
+
+[[case]]
+input = "野村萬斎ww"
+mode = "hiragana"
+expected = "のむらまんさいww"
+
+[[case]]
+input = "絶滅危惧種"
+mode = "hiragana"
+expected = "ぜつめつきぐしゅ"
+
+[[case]]
+input = "甚大な事故"
+mode = "hiragana"
+expected = "じんだいなじこ"
+
+[[case]]
+input = "甚だしい風評被害"
+mode = "hiragana"
+expected = "はなはだしいふうひょうひがい"
+
+[[case]]
+input = "甚平かな"
+mode = "hiragana"
+expected = "じんべいかな"
+
+[[case]]
+input = "激甚災害認定も遅いね"
+mode = "hiragana"
+expected = "げきじんさいがいにんていもおそいね"
+
+[[case]]
+input = "左遷された?"
+mode = "hiragana"
+expected = "させんされた?"
+
+[[case]]
+input = "変遷してたのね"
+mode = "hiragana"
+expected = "へんせんしてたのね"
+
+[[case]]
+input = "對魔忍"
+mode = "hiragana"
+expected = "たいまにん"
+
