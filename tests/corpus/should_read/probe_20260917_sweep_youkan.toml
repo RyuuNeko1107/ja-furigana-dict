@@ -1,0 +1,40 @@
+[[case]]
+input = "羊羮もう少し甘さ控えめだとイイなぁ..."
+mode = "hiragana"
+expected = "ようかんもうすこしあまさひかえめだとイイなぁ..."
+
+[[case]]
+input = "羊羮"
+mode = "hiragana"
+expected = "ようかん"
+
+[[case]]
+input = "羊羹"
+mode = "hiragana"
+expected = "ようかん"
+
+[[case]]
+input = "羊羹舟"
+mode = "hiragana"
+expected = "ようかんぶね"
+
+[[case]]
+input = "羮"
+mode = "hiragana"
+expected = "あつもの"
+
+[[case]]
+input = "恥辱"
+mode = "hiragana"
+expected = "ちじょく"
+
+[[case]]
+input = "耻辱"
+mode = "hiragana"
+expected = "はじょく"
+
+[[case]]
+input = "朴璐美"
+mode = "hiragana"
+expected = "ぼく璐び"
+
