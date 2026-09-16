@@ -1,0 +1,196 @@
+# 2026-09-16 全漢字スイープ r71 (得士肉断遅黒若怒宝滅都兵四丸揃尾象易首図南河弟拾)
+
+[[case]]
+input = "巻き戻しなどあり得ませーん"
+mode = "hiragana"
+expected = "まきもどしなどありえませーん"
+
+[[case]]
+input = "学びを得ましたね"
+mode = "hiragana"
+expected = "まなびをえましたね"
+
+[[case]]
+input = "ランチはお得よね"
+mode = "hiragana"
+expected = "ランチはおとくよね"
+
+[[case]]
+input = "誰得なん?とおもったな"
+mode = "hiragana"
+expected = "だれとくなん?とおもったな"
+
+[[case]]
+input = "二兎を追うものは一兎も得ず"
+mode = "hiragana"
+expected = "にとをおうものはいっともえず"
+
+[[case]]
+input = "赤肉系のクインシー"
+mode = "hiragana"
+expected = "あかにくけいのクインシー"
+
+[[case]]
+input = "青肉系のイバラキング"
+mode = "hiragana"
+expected = "あおにくけいのイバラキング"
+
+[[case]]
+input = "白肉系キンショー"
+mode = "hiragana"
+expected = "しろにくけいキンショー"
+
+[[case]]
+input = "見せ肉球はネコらしさを感じる"
+mode = "hiragana"
+expected = "みせにくきゅうはネコらしさをかんじる"
+
+[[case]]
+input = "綿毛が肉球みたいw"
+mode = "hiragana"
+expected = "わたげがにくきゅうみたいw"
+
+[[case]]
+input = "ブレーキかけんのが遅せぇってのにw"
+mode = "hiragana"
+expected = "ブレーキかけんのがおせぇってのにw"
+
+[[case]]
+input = "背景黒は地獄企画"
+mode = "hiragana"
+expected = "はいけいくろはじごくきかく"
+
+[[case]]
+input = "実際黒mk-IIはイケメン"
+mode = "hiragana"
+expected = "じっさいくろmk-IIはイケメン"
+
+[[case]]
+input = "主役が黒子やってるの草すぎる"
+mode = "hiragana"
+expected = "しゅやくがくろこやってるのくさすぎる"
+
+[[case]]
+input = "怒んないでよ"
+mode = "hiragana"
+expected = "おこんないでよ"
+
+[[case]]
+input = "だってこの人怒らすと怖いし"
+mode = "hiragana"
+expected = "だってこのひとおこらすとこわいし"
+
+[[case]]
+input = "結構若めよね"
+mode = "hiragana"
+expected = "けっこうわかめよね"
+
+[[case]]
+input = "1番上宝箱見逃してるぞ"
+mode = "hiragana"
+expected = "いちばんうえたからばこみのがしてるぞ"
+
+[[case]]
+input = "副都は、京都ですかね?"
+mode = "hiragana"
+expected = "ふくとは、きょうとですかね?"
+
+[[case]]
+input = "王都には直付けできない"
+mode = "hiragana"
+expected = "おうとにはちょくつけできない"
+
+[[case]]
+input = "ちゃんと角丸の四角に切りとっててエライ"
+mode = "hiragana"
+expected = "ちゃんとかどまるのしかくにきりとっててエライ"
+
+[[case]]
+input = "生活音丸聞こえw"
+mode = "hiragana"
+expected = "せいかつおんまるぎこえw"
+
+[[case]]
+input = "兎丸ペルカ"
+mode = "hiragana"
+expected = "うさぎまるペルカ"
+
+[[case]]
+input = "やっぱ芸術丸派だねえ船なら"
+mode = "hiragana"
+expected = "やっぱげいじゅつまるはだねえふねなら"
+
+[[case]]
+input = "頑張って3神揃えたのはいい思い出"
+mode = "hiragana"
+expected = "がんばってさんしんそろえたのはいいおもいで"
+
+[[case]]
+input = "外尾さんもう本当に誉れだわ。"
+mode = "hiragana"
+expected = "そとおさんもうほんとうにほまれだわ。"
+
+[[case]]
+input = "露出の尾崎豊"
+mode = "hiragana"
+expected = "ろしゅつのおざきゆたか"
+
+[[case]]
+input = "整地のし易さは四角の方がいいね"
+mode = "hiragana"
+expected = "せいちのしやすさはしかくのほうがいいね"
+
+[[case]]
+input = "やっぱり九尾の力か?"
+mode = "hiragana"
+expected = "やっぱりきゅうびのちからか?"
+
+[[case]]
+input = "斬首ですね"
+mode = "hiragana"
+expected = "ざんしゅですね"
+
+[[case]]
+input = "三期生首になったん?"
+mode = "hiragana"
+expected = "さんきせいくびになったん?"
+
+[[case]]
+input = "最期首がもげたジェリド"
+mode = "hiragana"
+expected = "さいごくびがもげたジェリド"
+
+[[case]]
+input = "簡易設計図書こう!!!"
+mode = "hiragana"
+expected = "かんいせっけいずかこう!!!"
+
+[[case]]
+input = "姉弟で風呂入ってるのか..."
+mode = "hiragana"
+expected = "きょうだいでふろはいってるのか..."
+
+[[case]]
+input = "合図草w"
+mode = "hiragana"
+expected = "あいずくさw"
+
+[[case]]
+input = "殲滅宣言草"
+mode = "hiragana"
+expected = "せんめつせんげんくさ"
+
+[[case]]
+input = "ツッコミや拾い方もうまいもんねw"
+mode = "hiragana"
+expected = "ツッコミやひろいかたもうまいもんねw"
+
+[[case]]
+input = "終わり方は納得した?"
+mode = "hiragana"
+expected = "おわりかたはなっとくした?"
+
+[[case]]
+input = "大河かなw"
+mode = "hiragana"
+expected = "たいがかなw"
