@@ -1,0 +1,150 @@
+[[case]]
+input = "どんな服着てた?"
+mode = "hiragana"
+expected = "どんなふくきてた?"
+
+[[case]]
+input = "やっと服着たw"
+mode = "hiragana"
+expected = "やっとふくきたw"
+
+[[case]]
+input = "着てる服被ったみたいな"
+mode = "hiragana"
+expected = "きてるふくかぶったみたいな"
+
+[[case]]
+input = "富野節w"
+mode = "hiragana"
+expected = "とみのぶしw"
+
+[[case]]
+input = "本田節炸裂w"
+mode = "hiragana"
+expected = "ほんだぶしさくれつw"
+
+[[case]]
+input = "嘆き節w"
+mode = "hiragana"
+expected = "なげきぶしw"
+
+[[case]]
+input = "その節はすまんかった"
+mode = "hiragana"
+expected = "そのせつはすまんかった"
+
+[[case]]
+input = "敬宮殿下です"
+mode = "hiragana"
+expected = "けいきゅうでんかです"
+
+[[case]]
+input = "フブラ群生地"
+mode = "hiragana"
+expected = "フブラぐんせいち"
+
+[[case]]
+input = "栃木群馬か?"
+mode = "hiragana"
+expected = "とちぎぐんまか?"
+
+[[case]]
+input = "蹴散らすぺこ"
+mode = "hiragana"
+expected = "けちらすぺこ"
+
+[[case]]
+input = "梨汁"
+mode = "hiragana"
+expected = "なしじる"
+
+[[case]]
+input = "脳内汁ドパドパかw"
+mode = "hiragana"
+expected = "のうないじるドパドパかw"
+
+[[case]]
+input = "フロントに荷重移す感じ"
+mode = "hiragana"
+expected = "フロントにかじゅううつすかんじ"
+
+[[case]]
+input = "成程ね"
+mode = "hiragana"
+expected = "なるほどね"
+
+[[case]]
+input = "安い株程上がりにくい罠がある"
+mode = "hiragana"
+expected = "やすいかぶほどあがりにくいわながある"
+
+[[case]]
+input = "激狭物件w"
+mode = "hiragana"
+expected = "げきせまぶっけんw"
+
+[[case]]
+input = "ぺこーら視野狭窄になってるな"
+mode = "hiragana"
+expected = "ぺこーらしやきょうさくになってるな"
+
+[[case]]
+input = "三本腕がある?"
+mode = "hiragana"
+expected = "さんぼんうでがある?"
+
+[[case]]
+input = "頚肩腕症候群なるわw"
+mode = "hiragana"
+expected = "けいけんわんしょうこうぐんなるわw"
+
+[[case]]
+input = "納豆と白飯最高!"
+mode = "hiragana"
+expected = "なっとうとしろめしさいこう!"
+
+[[case]]
+input = "先飯食っとけ"
+mode = "hiragana"
+expected = "さきめしくっとけ"
+
+[[case]]
+input = "みこ夜飯くったか?"
+mode = "hiragana"
+expected = "みこよるめしくったか?"
+
+[[case]]
+input = "ある種正解な使い方w"
+mode = "hiragana"
+expected = "あるしゅせいかいなつかいかたw"
+
+[[case]]
+input = "爆散って言った?"
+mode = "hiragana"
+expected = "ばくさんっていった?"
+
+[[case]]
+input = "基本秋だからねぇ"
+mode = "hiragana"
+expected = "きほんあきだからねぇ"
+
+[[case]]
+input = "井上秋からスタメンだから"
+mode = "hiragana"
+expected = "いのうえあきからスタメンだから"
+
+[[case]]
+input = "上の町もこんなプレートの上のとか不安だ"
+mode = "hiragana"
+expected = "うえのまちもこんなプレートのうえのとかふあんだ"
+
+[[case]]
+input = "もう1種類あるって"
+mode = "hiragana"
+expected = "もういっしゅるいあるって"
+
+[[case]]
+input = "春季秋冬"
+mode = "hiragana"
+expected = "しゅんきしゅうとう"
+
