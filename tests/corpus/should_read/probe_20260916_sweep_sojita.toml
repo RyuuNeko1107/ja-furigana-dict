@@ -1,0 +1,46 @@
+# 全漢字スイープ 締 / 針 / 遂 / 定 / 太 / 腹 / 霊 / 筋 (2026-09-16)
+
+[[case]]
+input = "締った"
+mode = "hiragana"
+expected = "しまった"
+
+[[case]]
+input = "藤井聡太の初の被害者かな?"
+mode = "hiragana"
+expected = "ふじいそうたのはつのひがいしゃかな?"
+
+[[case]]
+input = "ごん太の柱だから"
+mode = "hiragana"
+expected = "ごんたのはしらだから"
+
+[[case]]
+input = "清太すな"
+mode = "hiragana"
+expected = "せいたすな"
+
+[[case]]
+input = "梶木漁太"
+mode = "hiragana"
+expected = "かじきりょうた"
+
+[[case]]
+input = "ぺこちゃん声野太っ!"
+mode = "hiragana"
+expected = "ぺこちゃんこえのぶとっ!"
+
+[[case]]
+input = "ししろん筋通ってる"
+mode = "hiragana"
+expected = "ししろんすじとおってる"
+
+[[case]]
+input = "ロブの胸筋やばい"
+mode = "hiragana"
+expected = "ロブのきょうきんやばい"
+
+[[case]]
+input = "大胸筋が邪魔する"
+mode = "hiragana"
+expected = "だいきょうきんがじゃまする"
