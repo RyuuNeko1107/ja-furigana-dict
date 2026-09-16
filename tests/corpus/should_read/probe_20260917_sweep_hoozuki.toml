@@ -1,0 +1,50 @@
+[[case]]
+input = "こう練戦続くと酸漿袋も今日からか?"
+mode = "hiragana"
+expected = "こうれんせんつづくとほおずきぶくろもきょうからか?"
+
+[[case]]
+input = "灌籃"
+mode = "hiragana"
+expected = "かんらん"
+
+[[case]]
+input = "酸漿貝"
+mode = "hiragana"
+expected = "ほおずきがい"
+
+[[case]]
+input = "酸漿"
+mode = "hiragana"
+expected = "ほおずき"
+
+[[case]]
+input = "灌漑"
+mode = "hiragana"
+expected = "かんがい"
+
+[[case]]
+input = "灌頂"
+mode = "hiragana"
+expected = "かんじょう"
+
+[[case]]
+input = "灌仏会"
+mode = "hiragana"
+expected = "かんぶつえ"
+
+[[case]]
+input = "灌水ホースとかないかな"
+mode = "hiragana"
+expected = "かんすいホースとかないかな"
+
+[[case]]
+input = "野鎚か"
+mode = "hiragana"
+expected = "のつちか"
+
+[[case]]
+input = "鎚目"
+mode = "hiragana"
+expected = "つちめ"
+
