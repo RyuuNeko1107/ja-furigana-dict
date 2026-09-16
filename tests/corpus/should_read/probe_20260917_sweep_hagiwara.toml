@@ -1,0 +1,325 @@
+[[case]]
+input = "萩原流行"
+mode = "hiragana"
+expected = "はぎわらひゆき"
+
+[[case]]
+input = "優勝者は萩原聖人と戦えるの?"
+mode = "hiragana"
+expected = "ゆうしょうしゃははぎわらまさととたたかえるの?"
+
+[[case]]
+input = "やばい心が平成に戻る...萩原さんが脳みそに..."
+mode = "hiragana"
+expected = "やばいこころがへいせいにもどる...はぎわらさんがのうみそに..."
+
+[[case]]
+input = "荻原萩原"
+mode = "hiragana"
+expected = "おぎわらはぎわら"
+
+[[case]]
+input = "萩原朔太郎"
+mode = "hiragana"
+expected = "はぎわらさくたろう"
+
+[[case]]
+input = "萩原雪歩"
+mode = "hiragana"
+expected = "はぎわらゆきほ"
+
+[[case]]
+input = "萩生田「ナフサはある会社にある...可哀想だから公表しない」"
+mode = "hiragana"
+expected = "はぎうだ「ナフサはあるかいしゃにある...かわいそうだからこうひょうしない」"
+
+[[case]]
+input = "裏金 &統一教会の萩生田...最悪"
+mode = "hiragana"
+expected = "うらがね &とういつきょうかいのはぎうだ...さいあく"
+
+[[case]]
+input = "お萩"
+mode = "hiragana"
+expected = "おはぎ"
+
+[[case]]
+input = "荻と萩"
+mode = "hiragana"
+expected = "おぎとはぎ"
+
+[[case]]
+input = "荻や萩"
+mode = "hiragana"
+expected = "おぎやはぎ"
+
+[[case]]
+input = "萩の月がめっちゃ好き"
+mode = "hiragana"
+expected = "はぎのつきがめっちゃすき"
+
+[[case]]
+input = "羅鈿"
+mode = "hiragana"
+expected = "らでん"
+
+[[case]]
+input = "螺鈿色で草"
+mode = "hiragana"
+expected = "らでんしょくでくさ"
+
+[[case]]
+input = "螺鈿ちゃんだ~"
+mode = "hiragana"
+expected = "らでんちゃんだ"
+
+[[case]]
+input = "螺鈿の前座完璧"
+mode = "hiragana"
+expected = "らでんのぜんざかんぺき"
+
+[[case]]
+input = "疾風怒濤習得!!"
+mode = "hiragana"
+expected = "しっぷうどとうしゅうとく!!"
+
+[[case]]
+input = "疾風怒濤のぺこら"
+mode = "hiragana"
+expected = "しっぷうどとうのぺこら"
+
+[[case]]
+input = "怒濤の一週間だった"
+mode = "hiragana"
+expected = "どとうのいっしゅうかんだった"
+
+[[case]]
+input = "怒濤の展開よねえ"
+mode = "hiragana"
+expected = "どとうのてんかいよねえ"
+
+[[case]]
+input = "健一さん 松濤のブラックジャック!"
+mode = "hiragana"
+expected = "けんいちさん しょうとうのブラックジャック!"
+
+[[case]]
+input = "ていうか阿部の家って渋谷区にあるんだな 松濤とかかな"
+mode = "hiragana"
+expected = "ていうかあべのいえってしぶやくにあるんだな しょうとうとかかな"
+
+[[case]]
+input = "勇往邁進"
+mode = "hiragana"
+expected = "ゆうおうまいしん"
+
+[[case]]
+input = "勇猛邁進!"
+mode = "hiragana"
+expected = "ゆうもうまいしん!"
+
+[[case]]
+input = "高邁なる野望か俗なる野心か"
+mode = "hiragana"
+expected = "こうまいなるやぼうかぞくなるやしんか"
+
+[[case]]
+input = "アレンパへ邁進中"
+mode = "hiragana"
+expected = "アレンパへまいしんちゅう"
+
+[[case]]
+input = "淘汰されたのかw"
+mode = "hiragana"
+expected = "とうたされたのかw"
+
+[[case]]
+input = "自然淘汰"
+mode = "hiragana"
+expected = "しぜんとうた"
+
+[[case]]
+input = "なんか、、、動悸が、、、、"
+mode = "hiragana"
+expected = "なんか、、、どうきが、、、、"
+
+[[case]]
+input = "動悸・目眩・立ち眩み"
+mode = "hiragana"
+expected = "どうきめまいたちくらみ"
+
+[[case]]
+input = "人を貶めてはいけないよ"
+mode = "hiragana"
+expected = "ひとをおとしめてはいけないよ"
+
+[[case]]
+input = "敬ってんのか貶してんのかw"
+mode = "hiragana"
+expected = "うやまってんのかけなしてんのかw"
+
+[[case]]
+input = "ちょいちょい貶すw"
+mode = "hiragana"
+expected = "ちょいちょいけなすw"
+
+[[case]]
+input = "家族を貶されると怒れるいい子"
+mode = "hiragana"
+expected = "かぞくをけなされるとおこれるいいこ"
+
+[[case]]
+input = "諜報活動中!"
+mode = "hiragana"
+expected = "ちょうほうかつどうちゅう!"
+
+[[case]]
+input = "実際の忍者は諜報がメインや"
+mode = "hiragana"
+expected = "じっさいのにんじゃはちょうほうがメインや"
+
+[[case]]
+input = "毟られた"
+mode = "hiragana"
+expected = "むしられた"
+
+[[case]]
+input = "毟れるだけ毟る!"
+mode = "hiragana"
+expected = "むしれるだけむしる!"
+
+[[case]]
+input = "掻き毟れ......"
+mode = "hiragana"
+expected = "かきむしれ......"
+
+[[case]]
+input = "雑草毟るしか・・・"
+mode = "hiragana"
+expected = "ざっそうむしるしか"
+
+[[case]]
+input = "畠中祐さん"
+mode = "hiragana"
+expected = "はたけなかゆうさん"
+
+[[case]]
+input = "阪神の畠(はたけ)"
+mode = "hiragana"
+expected = "はんしんのはたけ(はたけ)"
+
+[[case]]
+input = "三菱銀行北畠支店ですね"
+mode = "hiragana"
+expected = "みつびしぎんこうきたばたけしてんですね"
+
+[[case]]
+input = "岩手は佐々木朗希や畠山もいないから大谷か菊池が出やすかった"
+mode = "hiragana"
+expected = "いわてはささきろうきやはたけやまもいないからおおたにかきくちがでやすかった"
+
+[[case]]
+input = "穿孔かぁ"
+mode = "hiragana"
+expected = "せんこうかぁ"
+
+[[case]]
+input = "月を穿つか"
+mode = "hiragana"
+expected = "つきをうがつか"
+
+[[case]]
+input = "穿った解釈多いよね"
+mode = "hiragana"
+expected = "うがったかいしゃくおおいよね"
+
+[[case]]
+input = "靴穿いただけw"
+mode = "hiragana"
+expected = "くつはいただけw"
+
+[[case]]
+input = "ズボン穿きなw"
+mode = "hiragana"
+expected = "ズボンはきなw"
+
+[[case]]
+input = "屋根の上の鳳凰見たい"
+mode = "hiragana"
+expected = "やねのうえのほうおうみたい"
+
+[[case]]
+input = "鳳凰院凶真だろ常考"
+mode = "hiragana"
+expected = "ほうおういんきょうしんだろじょうこう"
+
+[[case]]
+input = "罵詈雑言だぞスプラのボイチャなんた"
+mode = "hiragana"
+expected = "ばりざつごんだぞスプラのボイチャなんた"
+
+[[case]]
+input = "硝子の錬金術師"
+mode = "hiragana"
+expected = "がらすのれんきんじゅつし"
+
+[[case]]
+input = "焼け森は硝石だったかな?"
+mode = "hiragana"
+expected = "やけもりはしょうせきだったかな?"
+
+[[case]]
+input = "北一硝子か"
+mode = "hiragana"
+expected = "きたいちがらすか"
+
+[[case]]
+input = "煙硝の館、延焼してるやん"
+mode = "hiragana"
+expected = "えんしょうのやかた、えんしょうしてるやん"
+
+[[case]]
+input = "やっぱり主賓が料理作ってるのかw"
+mode = "hiragana"
+expected = "やっぱりしゅひんがりょうりつくってるのかw"
+
+[[case]]
+input = "国賓級の待遇やな"
+mode = "hiragana"
+expected = "こくひんきゅうのたいぐうやな"
+
+[[case]]
+input = "染谷がいた迎賓館あるのかな"
+mode = "hiragana"
+expected = "そめやがいたげいひんかんあるのかな"
+
+[[case]]
+input = "賓客待遇やん"
+mode = "hiragana"
+expected = "ひんきゃくたいぐうやん"
+
+[[case]]
+input = "いよいよ対峙した"
+mode = "hiragana"
+expected = "いよいよたいじした"
+
+[[case]]
+input = "初対峙の時の構え"
+mode = "hiragana"
+expected = "はつたいじのときのかまえ"
+
+[[case]]
+input = "魑魅魍魎"
+mode = "hiragana"
+expected = "ちみもうりょう"
+
+[[case]]
+input = "魍魎の匣とかか"
+mode = "hiragana"
+expected = "もうりょうのはことかか"
+
+[[case]]
+input = "魑魅魍魎が跋扈するホロタウン"
+mode = "hiragana"
+expected = "ちみもうりょうがばっこするホロタウン"
+
