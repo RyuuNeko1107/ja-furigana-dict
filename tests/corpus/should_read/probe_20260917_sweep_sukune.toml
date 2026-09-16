@@ -1,0 +1,40 @@
+[[case]]
+input = "そりゃ宿祢"
+mode = "hiragana"
+expected = "そりゃすくね"
+
+[[case]]
+input = "宿祢"
+mode = "hiragana"
+expected = "すくね"
+
+[[case]]
+input = "武内宿祢"
+mode = "hiragana"
+expected = "たけうちすくね"
+
+[[case]]
+input = "武内宿禰"
+mode = "hiragana"
+expected = "たけうちすくね"
+
+[[case]]
+input = "宿禰"
+mode = "hiragana"
+expected = "すくね"
+
+[[case]]
+input = "禰豆子"
+mode = "hiragana"
+expected = "ねずこ"
+
+[[case]]
+input = "恤救"
+mode = "hiragana"
+expected = "じゅっきゅう"
+
+[[case]]
+input = "伯剌西爾"
+mode = "hiragana"
+expected = "ぶらじる"
+
