@@ -1,0 +1,50 @@
+[[case]]
+input = "諫められたw"
+mode = "hiragana"
+expected = "いさめられたw"
+
+[[case]]
+input = "諫められた"
+mode = "hiragana"
+expected = "いさめられた"
+
+[[case]]
+input = "諫めた"
+mode = "hiragana"
+expected = "いさめた"
+
+[[case]]
+input = "諫めて"
+mode = "hiragana"
+expected = "いさめて"
+
+[[case]]
+input = "諫めない"
+mode = "hiragana"
+expected = "いさめない"
+
+[[case]]
+input = "諫めれば"
+mode = "hiragana"
+expected = "いさめれば"
+
+[[case]]
+input = "諫める"
+mode = "hiragana"
+expected = "いさめる"
+
+[[case]]
+input = "諫山よりかはあるよ"
+mode = "hiragana"
+expected = "いさやまよりかはあるよ"
+
+[[case]]
+input = "諫早"
+mode = "hiragana"
+expected = "いさはや"
+
+[[case]]
+input = "揺れた@長崎県諫早市"
+mode = "hiragana"
+expected = "ゆれた@ながさきけんいさはやし"
+
