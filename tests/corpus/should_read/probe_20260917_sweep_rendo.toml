@@ -1,0 +1,80 @@
+[[case]]
+input = "城趾も広島にある。"
+mode = "hiragana"
+expected = "じょうしもひろしまにある。"
+
+[[case]]
+input = "超弩級ブラック会社の闇に従うもの?"
+mode = "hiragana"
+expected = "ちょうどきゅうブラックかいしゃのやみにしたがうもの?"
+
+[[case]]
+input = "超弩級のボケだったという"
+mode = "hiragana"
+expected = "ちょうどきゅうのボケだったという"
+
+[[case]]
+input = "連弩w"
+mode = "hiragana"
+expected = "れんどw"
+
+[[case]]
+input = "Tスピンの連弩が"
+mode = "hiragana"
+expected = "Tスピンのれんどが"
+
+[[case]]
+input = "弩級?"
+mode = "hiragana"
+expected = "どきゅう?"
+
+[[case]]
+input = "連弩"
+mode = "hiragana"
+expected = "れんど"
+
+[[case]]
+input = "弩級"
+mode = "hiragana"
+expected = "どきゅう"
+
+[[case]]
+input = "城趾"
+mode = "hiragana"
+expected = "じょうし"
+
+[[case]]
+input = "超弩級"
+mode = "hiragana"
+expected = "ちょうどきゅう"
+
+[[case]]
+input = "大弩"
+mode = "hiragana"
+expected = "だいいしゆみ"
+
+[[case]]
+input = "弩"
+mode = "hiragana"
+expected = "いしゆみ"
+
+[[case]]
+input = "城址"
+mode = "hiragana"
+expected = "じょうし"
+
+[[case]]
+input = "掴趾追雀!"
+mode = "hiragana"
+expected = "つかあしついすずめ!"
+
+[[case]]
+input = "趾"
+mode = "hiragana"
+expected = "あし"
+
+[[case]]
+input = "銅鑼w"
+mode = "hiragana"
+expected = "どらw"
+
