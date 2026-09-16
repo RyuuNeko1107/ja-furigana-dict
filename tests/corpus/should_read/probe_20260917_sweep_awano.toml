@@ -1,0 +1,215 @@
+[[case]]
+input = "粟野仁雄氏だ。"
+mode = "hiragana"
+expected = "あわのよしおしだ。"
+
+[[case]]
+input = "粟野仁雄"
+mode = "hiragana"
+expected = "あわのよしお"
+
+[[case]]
+input = "出典をカットするのか?ネタもとは週刊金曜日2026.1.16粟野仁氏の記事"
+mode = "hiragana"
+expected = "しゅってんをカットするのか?ネタもとはしゅうかんきんようび2026.いちてんいちろくあわのよしおしのきじ"
+
+[[case]]
+input = "濡れ手で粟w"
+mode = "hiragana"
+expected = "ぬれてであわw"
+
+[[case]]
+input = "濡れ手で粟らしいよ"
+mode = "hiragana"
+expected = "ぬれてであわらしいよ"
+
+[[case]]
+input = "粟稗を復活しよう"
+mode = "hiragana"
+expected = "あわひえをふっかつしよう"
+
+[[case]]
+input = "舛添要一を旦那にした黒歴史"
+mode = "hiragana"
+expected = "ますぞえよういちをだんなにしたくろれきし"
+
+[[case]]
+input = "粛清確定やな舛添!腹くくれ"
+mode = "hiragana"
+expected = "しゅくせいかくていやなますぞえ!はらくくれ"
+
+[[case]]
+input = "寓話かな"
+mode = "hiragana"
+expected = "ぐうわかな"
+
+[[case]]
+input = "イソップ寓話?"
+mode = "hiragana"
+expected = "イソップぐうわ?"
+
+[[case]]
+input = "現代の寓話じゃねぇーか!"
+mode = "hiragana"
+expected = "げんだいのぐうわじゃねぇーか!"
+
+[[case]]
+input = "獄門疆理論で行くと速攻終わるぞw"
+mode = "hiragana"
+expected = "ごくもんきょうりろんでいくとそっこうおわるぞw"
+
+[[case]]
+input = "獄門疆を破ったキツネ"
+mode = "hiragana"
+expected = "ごくもんきょうをやぶったキツネ"
+
+[[case]]
+input = "前方後円墳?"
+mode = "hiragana"
+expected = "ぜんぽうこうえんふん?"
+
+[[case]]
+input = "古墳!ピョン"
+mode = "hiragana"
+expected = "こふん!ピョン"
+
+[[case]]
+input = "古墳みたいなもん"
+mode = "hiragana"
+expected = "こふんみたいなもん"
+
+[[case]]
+input = "33本は八咫烏の数字"
+mode = "hiragana"
+expected = "さんじゅうさんぼんはやたがらすのすうじ"
+
+[[case]]
+input = "監督更迭チュニジアな〜"
+mode = "hiragana"
+expected = "かんとくこうてつチュニジアな"
+
+[[case]]
+input = "鈴木農相を早く更迭してまともな人に交代するべき"
+mode = "hiragana"
+expected = "すずきのうしょうをはやくこうてつしてまともなひとにこうたいするべき"
+
+[[case]]
+input = "解剖コースかな"
+mode = "hiragana"
+expected = "かいぼうコースかな"
+
+[[case]]
+input = "初手解剖"
+mode = "hiragana"
+expected = "しょてかいぼう"
+
+[[case]]
+input = "グッピー解剖したやろ"
+mode = "hiragana"
+expected = "グッピーかいぼうしたやろ"
+
+[[case]]
+input = "決め球の無い凡庸な投手になる"
+mode = "hiragana"
+expected = "きめだまのないぼんようなとうしゅになる"
+
+[[case]]
+input = "中庸ってやつか"
+mode = "hiragana"
+expected = "ちゅうようってやつか"
+
+[[case]]
+input = "凡庸性高い"
+mode = "hiragana"
+expected = "ぼんようせいたかい"
+
+[[case]]
+input = "ましろ爻"
+mode = "hiragana"
+expected = "ましろこう"
+
+[[case]]
+input = "爻は「こう」で出るかも"
+mode = "hiragana"
+expected = "こうは「こう」ででるかも"
+
+[[case]]
+input = "讀賣テレビの取材映像だよ!!"
+mode = "hiragana"
+expected = "よみうりテレビのしゅざいえいぞうだよ!!"
+
+[[case]]
+input = "打倒讀賣ふぁったのに打倒阿部じゃダメなんだよなー"
+mode = "hiragana"
+expected = "だとうよみうりふぁったのにだとうあべじゃダメなんだよなー"
+
+[[case]]
+input = "受賞作、抜粋で良ければこの後のオール讀物と文芸春秋に掲載されるよ"
+mode = "hiragana"
+expected = "じゅしょうさく、ばっすいでよければこのあとのオールよみものとぶんげいしゅんじゅうにけいさいされるよ"
+
+[[case]]
+input = "棒讀"
+mode = "hiragana"
+expected = "ぼうどく"
+
+[[case]]
+input = "そりゃあ弥勒の里に永久保存..."
+mode = "hiragana"
+expected = "そりゃあみろくのさとにえいきゅうほぞん..."
+
+[[case]]
+input = "「弥勒菩薩じゃない存在に死亡させられた?」"
+mode = "hiragana"
+expected = "「みろくぼさつじゃないそんざいにしぼうさせられた?」"
+
+[[case]]
+input = "檸檬サワー飲みたくなる"
+mode = "hiragana"
+expected = "れもんサワーのみたくなる"
+
+[[case]]
+input = "薔薇と檸檬"
+mode = "hiragana"
+expected = "ばらとれもん"
+
+[[case]]
+input = "檸檬みたいな字"
+mode = "hiragana"
+expected = "れもんみたいなじ"
+
+[[case]]
+input = "我儘言わないの"
+mode = "hiragana"
+expected = "わがままいわないの"
+
+[[case]]
+input = "結局我を通す我儘なぺこら監督"
+mode = "hiragana"
+expected = "けっきょくがをとおすわがままなぺこらかんとく"
+
+[[case]]
+input = "我が儘で草"
+mode = "hiragana"
+expected = "わがままでくさ"
+
+[[case]]
+input = "気の赴く儘に"
+mode = "hiragana"
+expected = "きのおもむくままに"
+
+[[case]]
+input = "聖德太子?"
+mode = "hiragana"
+expected = "しょうとくたいし?"
+
+[[case]]
+input = "地圖"
+mode = "hiragana"
+expected = "ちず"
+
+[[case]]
+input = "圖鑑"
+mode = "hiragana"
+expected = "ずかん"
+
