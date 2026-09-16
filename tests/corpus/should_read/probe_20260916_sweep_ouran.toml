@@ -1,0 +1,185 @@
+[[case]]
+input = "桜蘭高校ホスト部"
+mode = "hiragana"
+expected = "おうらんこうこうホストぶ"
+
+[[case]]
+input = "村上宗隆"
+mode = "hiragana"
+expected = "むらかみむねたか"
+
+[[case]]
+input = "愛染宗助かな?"
+mode = "hiragana"
+expected = "あいぜんそうすけかな?"
+
+[[case]]
+input = "川崎宗則"
+mode = "hiragana"
+expected = "かわさきむねのり"
+
+[[case]]
+input = "独眼竜政宗ですな"
+mode = "hiragana"
+expected = "どくがんりゅうまさむねですな"
+
+[[case]]
+input = "政宗って居合の達人の"
+mode = "hiragana"
+expected = "まさむねっていあいのたつじんの"
+
+[[case]]
+input = "吉宗は固いな"
+mode = "hiragana"
+expected = "よしむねはかたいな"
+
+[[case]]
+input = "ぼくは小栗宗だ~"
+mode = "hiragana"
+expected = "ぼくはおぐりそうだ"
+
+[[case]]
+input = "木浪"
+mode = "hiragana"
+expected = "きなみ"
+
+[[case]]
+input = "阪神の木浪やん"
+mode = "hiragana"
+expected = "はんしんのきなみやん"
+
+[[case]]
+input = "もはや今浪より遥か上"
+mode = "hiragana"
+expected = "もはやいまなみよりはるかうえ"
+
+[[case]]
+input = "難波か浪花の"
+mode = "hiragana"
+expected = "なんばかなにわの"
+
+[[case]]
+input = "貼って貼られて貼替えされて"
+mode = "hiragana"
+expected = "はってはられてはりかえされて"
+
+[[case]]
+input = "貼り方がプロなんやがww"
+mode = "hiragana"
+expected = "はりかたがプロなんやがww"
+
+[[case]]
+input = "寝飽きた"
+mode = "hiragana"
+expected = "ねあきた"
+
+[[case]]
+input = "ころさん壺おじ中か"
+mode = "hiragana"
+expected = "ころさんつぼおじちゅうか"
+
+[[case]]
+input = "伊達政宗くらいかな"
+mode = "hiragana"
+expected = "だてまさむねくらいかな"
+
+[[case]]
+input = "朧正宗だああああああ!!!"
+mode = "hiragana"
+expected = "おぼろまさむねだああああああ!!!"
+
+[[case]]
+input = "正宗だ"
+mode = "hiragana"
+expected = "まさむねだ"
+
+[[case]]
+input = "吉宗大盤振舞"
+mode = "hiragana"
+expected = "よしむねおおばんぶるまい"
+
+[[case]]
+input = "宗教団体か"
+mode = "hiragana"
+expected = "しゅうきょうだんたいか"
+
+[[case]]
+input = "貼ってたw"
+mode = "hiragana"
+expected = "はってたw"
+
+[[case]]
+input = "飽きたの?"
+mode = "hiragana"
+expected = "あきたの?"
+
+[[case]]
+input = "壺おじかな??"
+mode = "hiragana"
+expected = "つぼおじかな??"
+
+[[case]]
+input = "一蘭"
+mode = "hiragana"
+expected = "いちらん"
+
+[[case]]
+input = "浪漫"
+mode = "hiragana"
+expected = "ろうまん"
+
+[[case]]
+input = "放浪の狼"
+mode = "hiragana"
+expected = "ほうろうのおおかみ"
+
+[[case]]
+input = "立浪監督待望論"
+mode = "hiragana"
+expected = "たつなみかんとくたいぼうろん"
+
+[[case]]
+input = "藤浪やん"
+mode = "hiragana"
+expected = "ふじなみやん"
+
+[[case]]
+input = "鈴木宗男が騒いでんの草"
+mode = "hiragana"
+expected = "すずきむねおがさわいでんのくさ"
+
+[[case]]
+input = "一向宗かよw"
+mode = "hiragana"
+expected = "いっこうしゅうかよw"
+
+[[case]]
+input = "曹洞宗のお寺か..."
+mode = "hiragana"
+expected = "そうとうしゅうのおてらか..."
+
+[[case]]
+input = "蘭の字がw"
+mode = "hiragana"
+expected = "らんのじがw"
+
+[[case]]
+input = "津浪の心配なし"
+mode = "hiragana"
+expected = "つなみのしんぱいなし"
+
+[[case]]
+input = "波浪警報出てる"
+mode = "hiragana"
+expected = "はろうけいほうでてる"
+
+[[case]]
+input = "飽きてるじゃねーか"
+mode = "hiragana"
+expected = "あきてるじゃねーか"
+
+[[case]]
+input = "壺漬けうどん"
+mode = "hiragana"
+expected = "つぼづけうどん"
+
