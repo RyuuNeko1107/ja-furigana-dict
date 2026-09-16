@@ -1,0 +1,260 @@
+[[case]]
+input = "漁って逃げるのも手か"
+mode = "hiragana"
+expected = "あさってにげるのもてか"
+
+[[case]]
+input = "漁られた後かw"
+mode = "hiragana"
+expected = "あさられたあとかw"
+
+[[case]]
+input = "ボックスを漁ろう"
+mode = "hiragana"
+expected = "ボックスをあさろう"
+
+[[case]]
+input = "漁った感想w"
+mode = "hiragana"
+expected = "あさったかんそうw"
+
+[[case]]
+input = "宝漁れる!"
+mode = "hiragana"
+expected = "たからあされる!"
+
+[[case]]
+input = "地引き網漁"
+mode = "hiragana"
+expected = "じびきあみりょう"
+
+[[case]]
+input = "宝物庫漁りが始まる"
+mode = "hiragana"
+expected = "たからものこあさりがはじまる"
+
+[[case]]
+input = "死体漁りのぺこーら"
+mode = "hiragana"
+expected = "したいあさりのぺこーら"
+
+[[case]]
+input = "ギラホス、桐蔭になれ"
+mode = "hiragana"
+expected = "ギラホス、とういんになれ"
+
+[[case]]
+input = "大阪桐蔭か"
+mode = "hiragana"
+expected = "おおさかとういんか"
+
+[[case]]
+input = "間桐臓硯おらんか"
+mode = "hiragana"
+expected = "まとうぞうけんおらんか"
+
+[[case]]
+input = "親なのに惨忍で、デタラメだな。"
+mode = "hiragana"
+expected = "おやなのにざんにんで、デタラメだな。"
+
+[[case]]
+input = "こんな小さな子に惨すぎ"
+mode = "hiragana"
+expected = "こんなちいさなこにむごすぎ"
+
+[[case]]
+input = "あまりにも惨すぎる"
+mode = "hiragana"
+expected = "あまりにもむごすぎる"
+
+[[case]]
+input = "虚淵ファントムより"
+mode = "hiragana"
+expected = "うろぶちファントムより"
+
+[[case]]
+input = "虚淵玄"
+mode = "hiragana"
+expected = "うろぶちげん"
+
+[[case]]
+input = "阿蘇中岳第1火口"
+mode = "hiragana"
+expected = "あそなかだけだいいちかこう"
+
+[[case]]
+input = "言峰のことだね"
+mode = "hiragana"
+expected = "ことみねのことだね"
+
+[[case]]
+input = "青峰ミーム思い出した"
+mode = "hiragana"
+expected = "あおみねミームおもいだした"
+
+[[case]]
+input = "万景峰号かな"
+mode = "hiragana"
+expected = "まんぎょんぼんごうかな"
+
+[[case]]
+input = "喜望峰の下の島"
+mode = "hiragana"
+expected = "きぼうほうのしたのしま"
+
+[[case]]
+input = "希望峰"
+mode = "hiragana"
+expected = "きぼうほう"
+
+[[case]]
+input = "熊本の大観峰で見た"
+mode = "hiragana"
+expected = "くまもとのだいかんぼうでみた"
+
+[[case]]
+input = "名峰ミスりすぎだよね"
+mode = "hiragana"
+expected = "めいほうミスりすぎだよね"
+
+[[case]]
+input = "単独峰なのよね"
+mode = "hiragana"
+expected = "たんどくほうなのよね"
+
+[[case]]
+input = "ブルージェイズの岡本和真"
+mode = "hiragana"
+expected = "ブルージェイズのおかもとかずま"
+
+[[case]]
+input = "宮野真守が主人公やっとるんやで"
+mode = "hiragana"
+expected = "みやのまもるがしゅじんこうやっとるんやで"
+
+[[case]]
+input = "秋元康さん関わってるので聞いて欲しい"
+mode = "hiragana"
+expected = "あきもとやすしさんかかわってるのできいてほしい"
+
+[[case]]
+input = "涼しい部屋の方が寝やすいのもこれ関係してるのかなぁ"
+mode = "hiragana"
+expected = "すずしいへやのほうがねやすいのもこれかんけいしてるのかなぁ"
+
+[[case]]
+input = "先週勝った今村聖奈と同期です"
+mode = "hiragana"
+expected = "せんしゅうかったいまむらせなとどうきです"
+
+[[case]]
+input = "吉村禎章に監督やってほしかったわ"
+mode = "hiragana"
+expected = "よしむらよしあきにかんとくやってほしかったわ"
+
+[[case]]
+input = "次期巨人監督 羽月隆太郎"
+mode = "hiragana"
+expected = "じききょじんかんとく はづきりゅうたろう"
+
+[[case]]
+input = "切り方をまず再現か?"
+mode = "hiragana"
+expected = "きりかたをまずさいげんか?"
+
+[[case]]
+input = "ころさん、1回水でも飲んで落ち着いて"
+mode = "hiragana"
+expected = "ころさん、いっかいみずでものんでおちついて"
+
+[[case]]
+input = "何回水飲むんだよ"
+mode = "hiragana"
+expected = "なんかいみずのむんだよ"
+
+[[case]]
+input = "悲しき水飲み百姓や"
+mode = "hiragana"
+expected = "かなしきみずのみひゃくしょうや"
+
+[[case]]
+input = "ホロライブの飲み会っていつもこんな感じ?"
+mode = "hiragana"
+expected = "ホロライブののみかいっていつもこんなかんじ?"
+
+[[case]]
+input = "お星様綺麗ね"
+mode = "hiragana"
+expected = "おほしさまきれいね"
+
+[[case]]
+input = "漁夫の利な"
+mode = "hiragana"
+expected = "ぎょふのりな"
+
+[[case]]
+input = "次は伝説の漁師か??"
+mode = "hiragana"
+expected = "つぎはでんせつのりょうしか??"
+
+[[case]]
+input = "大漁だ"
+mode = "hiragana"
+expected = "たいりょうだ"
+
+[[case]]
+input = "寂れた漁村なもので"
+mode = "hiragana"
+expected = "さびれたぎょそんなもので"
+
+[[case]]
+input = "貝の密漁は日常茶飯事だな"
+mode = "hiragana"
+expected = "かいのみつりょうはにちじょうさはんじだな"
+
+[[case]]
+input = "イカ漁船"
+mode = "hiragana"
+expected = "イカぎょせん"
+
+[[case]]
+input = "みこ漁業"
+mode = "hiragana"
+expected = "みこぎょぎょう"
+
+[[case]]
+input = "言峰綺礼?"
+mode = "hiragana"
+expected = "ことみねきれい?"
+
+[[case]]
+input = "霊峰富士山が..."
+mode = "hiragana"
+expected = "れいほうふじさんが..."
+
+[[case]]
+input = "巨峰ソーダめっちゃ美味しい"
+mode = "hiragana"
+expected = "きょほうソーダめっちゃおいしい"
+
+[[case]]
+input = "釣りゲーの最高峰"
+mode = "hiragana"
+expected = "つりゲーのさいこうほう"
+
+[[case]]
+input = "霧ヶ峰"
+mode = "hiragana"
+expected = "きりがみね"
+
+[[case]]
+input = "峰不二子"
+mode = "hiragana"
+expected = "みねふじこ"
+
+[[case]]
+input = "安心しろ。峰打ちだ。"
+mode = "hiragana"
+expected = "あんしんしろ。みねうちだ。"
+
