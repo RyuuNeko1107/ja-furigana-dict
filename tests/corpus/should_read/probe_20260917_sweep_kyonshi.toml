@@ -1,0 +1,250 @@
+[[case]]
+input = "殭屍"
+mode = "hiragana"
+expected = "きょんしー"
+
+[[case]]
+input = "屍を越えてゆけ"
+mode = "hiragana"
+expected = "しかばねをこえてゆけ"
+
+[[case]]
+input = "俺屍"
+mode = "hiragana"
+expected = "おれしかばね"
+
+[[case]]
+input = "死屍累々"
+mode = "hiragana"
+expected = "ししるいるい"
+
+[[case]]
+input = "巨大虫の屍骸...?"
+mode = "hiragana"
+expected = "きょだいちゅうのしがい...?"
+
+[[case]]
+input = "ただの屍のようだ"
+mode = "hiragana"
+expected = "ただのしかばねのようだ"
+
+[[case]]
+input = "屍人も倒せそう"
+mode = "hiragana"
+expected = "しかばねじんもたおせそう"
+
+[[case]]
+input = "やっぱ愛嬌やね"
+mode = "hiragana"
+expected = "やっぱあいきょうやね"
+
+[[case]]
+input = "ご愛嬌ということで"
+mode = "hiragana"
+expected = "ごあいきょうということで"
+
+[[case]]
+input = "雑談してたら急に嬌声が"
+mode = "hiragana"
+expected = "ざつだんしてたらきゅうにきょうせいが"
+
+[[case]]
+input = "排水溝じゃなくて?"
+mode = "hiragana"
+expected = "はいすいこうじゃなくて?"
+
+[[case]]
+input = "側溝シールド!?"
+mode = "hiragana"
+expected = "そっこうシールド!?"
+
+[[case]]
+input = "マリアナ海溝で"
+mode = "hiragana"
+expected = "マリアナかいこうで"
+
+[[case]]
+input = "イニDは溝落としが出来る"
+mode = "hiragana"
+expected = "イニDはみぞおとしができる"
+
+[[case]]
+input = "横溝刑事"
+mode = "hiragana"
+expected = "よこみぞけいじ"
+
+[[case]]
+input = "それなんて溝口?"
+mode = "hiragana"
+expected = "それなんてみぞぐち?"
+
+[[case]]
+input = "この溝 深い"
+mode = "hiragana"
+expected = "このみぞ ふかい"
+
+[[case]]
+input = "ありがとう葵!"
+mode = "hiragana"
+expected = "ありがとうあおい!"
+
+[[case]]
+input = "まってくれる向日葵やさし"
+mode = "hiragana"
+expected = "まってくれるひまわりやさし"
+
+[[case]]
+input = "炙り出し"
+mode = "hiragana"
+expected = "あぶりだし"
+
+[[case]]
+input = "肴は炙ったイカでいい"
+mode = "hiragana"
+expected = "さかなはあぶったイカでいい"
+
+[[case]]
+input = "炙って握りにしたいね"
+mode = "hiragana"
+expected = "あぶってにぎりにしたいね"
+
+[[case]]
+input = "やはり猟友会たよりになるな"
+mode = "hiragana"
+expected = "やはりりょうゆうかいたよりになるな"
+
+[[case]]
+input = "狩猟の時間だ!"
+mode = "hiragana"
+expected = "しゅりょうのじかんだ!"
+
+[[case]]
+input = "密猟かな"
+mode = "hiragana"
+expected = "みつりょうかな"
+
+[[case]]
+input = "ちょい猟奇的"
+mode = "hiragana"
+expected = "ちょいりょうきてき"
+
+[[case]]
+input = "ハンター(猟師)"
+mode = "hiragana"
+expected = "ハンター(りょうし)"
+
+[[case]]
+input = "罠猟かあ"
+mode = "hiragana"
+expected = "わなりょうかあ"
+
+[[case]]
+input = "ハマグリは禁猟多いからなぁ"
+mode = "hiragana"
+expected = "ハマグリはきんりょうおおいからなぁ"
+
+[[case]]
+input = "もはや猟犬"
+mode = "hiragana"
+expected = "もはやりょうけん"
+
+[[case]]
+input = "緊急銃猟を判断すれば撃てる"
+mode = "hiragana"
+expected = "きんきゅうじゅうりょうをはんだんすればうてる"
+
+[[case]]
+input = "どうして敵は轢かれないんだろうか"
+mode = "hiragana"
+expected = "どうしててきはひかれないんだろうか"
+
+[[case]]
+input = "轢断されてるでしょうね"
+mode = "hiragana"
+expected = "れきだんされてるでしょうね"
+
+[[case]]
+input = "JR東海道線救急隊員轢死事故"
+mode = "hiragana"
+expected = "JRとうかいどうせんきゅうきゅうたいいんれきしじこ"
+
+[[case]]
+input = "文化の違いで軋轢生まれない衣装がな〜"
+mode = "hiragana"
+expected = "ぶんかのちがいであつれきうまれないいしょうがな"
+
+[[case]]
+input = "咳が止まらん"
+mode = "hiragana"
+expected = "せきがとまらん"
+
+[[case]]
+input = "饅頭"
+mode = "hiragana"
+expected = "まんじゅう"
+
+[[case]]
+input = "欧州"
+mode = "hiragana"
+expected = "おうしゅう"
+
+[[case]]
+input = "綾波"
+mode = "hiragana"
+expected = "あやなみ"
+
+[[case]]
+input = "傭兵"
+mode = "hiragana"
+expected = "ようへい"
+
+[[case]]
+input = "親孝行"
+mode = "hiragana"
+expected = "おやこうこう"
+
+[[case]]
+input = "倦怠期"
+mode = "hiragana"
+expected = "けんたいき"
+
+[[case]]
+input = "醜態"
+mode = "hiragana"
+expected = "しゅうたい"
+
+[[case]]
+input = "辿り着く"
+mode = "hiragana"
+expected = "たどりつく"
+
+[[case]]
+input = "寛容"
+mode = "hiragana"
+expected = "かんよう"
+
+[[case]]
+input = "茶碗"
+mode = "hiragana"
+expected = "ちゃわん"
+
+[[case]]
+input = "掻きむしる"
+mode = "hiragana"
+expected = "かきむしる"
+
+[[case]]
+input = "印刷"
+mode = "hiragana"
+expected = "いんさつ"
+
+[[case]]
+input = "嗚呼"
+mode = "hiragana"
+expected = "ああ"
+
+[[case]]
+input = "栓を抜く"
+mode = "hiragana"
+expected = "せんをぬく"
+
