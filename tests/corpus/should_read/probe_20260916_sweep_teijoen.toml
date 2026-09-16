@@ -1,0 +1,110 @@
+[[case]]
+input = "定常円してる"
+mode = "hiragana"
+expected = "ていじょうえんしてる"
+
+[[case]]
+input = "定常円はドリフトの基本なんよ"
+mode = "hiragana"
+expected = "ていじょうえんはドリフトのきほんなんよ"
+
+[[case]]
+input = "メタルガーディアン固っ"
+mode = "hiragana"
+expected = "メタルガーディアンかたっ"
+
+[[case]]
+input = "固え!"
+mode = "hiragana"
+expected = "かてー!"
+
+[[case]]
+input = "種の在り処を聞いてきそうw"
+mode = "hiragana"
+expected = "たねのありかをきいてきそうw"
+
+[[case]]
+input = "奪りにいこうか"
+mode = "hiragana"
+expected = "うばりにいこうか"
+
+[[case]]
+input = "写真撮ンなww"
+mode = "hiragana"
+expected = "しゃしんとんなww"
+
+[[case]]
+input = "撮り高ww"
+mode = "hiragana"
+expected = "とりだかww"
+
+[[case]]
+input = "いい空撮だった"
+mode = "hiragana"
+expected = "いいくうさつだった"
+
+[[case]]
+input = "いい歳の取り方をしていこう"
+mode = "hiragana"
+expected = "いいとしのとりかたをしていこう"
+
+[[case]]
+input = "ルメールの東京2400の連対率みてみて"
+mode = "hiragana"
+expected = "ルメールのとうきょうにせんよんひゃくのれんたいりつみてみて"
+
+[[case]]
+input = "復活率低"
+mode = "hiragana"
+expected = "ふっかつりつてい"
+
+[[case]]
+input = "文部科学省から出て行け。"
+mode = "hiragana"
+expected = "もんぶかがくしょうからでていけ。"
+
+[[case]]
+input = "なんか背負わされてるww"
+mode = "hiragana"
+expected = "なんかせおわされてるww"
+
+[[case]]
+input = "全員背負わせるの草"
+mode = "hiragana"
+expected = "ぜんいんせおわせるのくさ"
+
+[[case]]
+input = "借金背負わないでね"
+mode = "hiragana"
+expected = "しゃっきんせおわないでね"
+
+[[case]]
+input = "閃華烈光拳"
+mode = "hiragana"
+expected = "せんかれっこうけん"
+
+[[case]]
+input = "白雪はええぞ"
+mode = "hiragana"
+expected = "しらゆきはええぞ"
+
+[[case]]
+input = "風花雪月ぽさがある気がする"
+mode = "hiragana"
+expected = "ふうかせつげつぽさがあるきがする"
+
+[[case]]
+input = "急に雑談って明日雪でも降る?"
+mode = "hiragana"
+expected = "きゅうにざつだんってあしたゆきでもふる?"
+
+[[case]]
+input = "神も2つに分ければただの天雷ですよ。"
+mode = "hiragana"
+expected = "かみもふたつにわければただのてんらいですよ。"
+
+[[case]]
+input = "夜露四苦ぅ"
+mode = "hiragana"
+expected = "よろしくぅ"
+
