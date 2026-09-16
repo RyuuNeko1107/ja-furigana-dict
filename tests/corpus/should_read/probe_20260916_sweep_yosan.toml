@@ -1,0 +1,130 @@
+[[case]]
+input = "ブレーキ学んでないぞw"
+mode = "hiragana"
+expected = "ブレーキまなんでないぞw"
+
+[[case]]
+input = "ドリフトは学んでるかなw"
+mode = "hiragana"
+expected = "ドリフトはまなんでるかなw"
+
+[[case]]
+input = "余さんコメント欄止まってるかも"
+mode = "hiragana"
+expected = "よさんコメントらんとまってるかも"
+
+[[case]]
+input = "ギャル余さん"
+mode = "hiragana"
+expected = "ギャルよさん"
+
+[[case]]
+input = "この資料、余さんが作ったの?"
+mode = "hiragana"
+expected = "このしりょう、よさんがつくったの?"
+
+[[case]]
+input = "こんなので寝たら余さんがもっと下山しなくなっちゃう"
+mode = "hiragana"
+expected = "こんなのでねたらよさんがもっとげざんしなくなっちゃう"
+
+[[case]]
+input = "余っさん可愛すぎる"
+mode = "hiragana"
+expected = "よっさんかわいすぎる"
+
+[[case]]
+input = "ぽよ余ってことか!"
+mode = "hiragana"
+expected = "ぽよよってことか!"
+
+[[case]]
+input = "フェラーリの車高じゃ普通に走れててもボコボコやぞ"
+mode = "hiragana"
+expected = "フェラーリのしゃこうじゃふつうにはしれててもボコボコやぞ"
+
+[[case]]
+input = "余の枕カバーとセットなら尚ヨシ"
+mode = "hiragana"
+expected = "よのまくらカバーとセットならなおよし"
+
+[[case]]
+input = "超すごいニッパーか"
+mode = "hiragana"
+expected = "ちょうすごいニッパーか"
+
+[[case]]
+input = "超すごいじゃん"
+mode = "hiragana"
+expected = "ちょうすごいじゃん"
+
+[[case]]
+input = "ころね監督の檄が飛ぶ"
+mode = "hiragana"
+expected = "ころねかんとくのげきがとぶ"
+
+[[case]]
+input = "監督が檄を飛ばす"
+mode = "hiragana"
+expected = "かんとくがげきをとばす"
+
+[[case]]
+input = "星町監督w"
+mode = "hiragana"
+expected = "ほしまちかんとくw"
+
+[[case]]
+input = "星街監督!"
+mode = "hiragana"
+expected = "ほしまちかんとく!"
+
+[[case]]
+input = "三色団子完食おめでと"
+mode = "hiragana"
+expected = "さんしょくだんごかんしょくおめでと"
+
+[[case]]
+input = "阿部慎之助監督"
+mode = "hiragana"
+expected = "あべしんのすけかんとく"
+
+[[case]]
+input = "船外機は神"
+mode = "hiragana"
+expected = "せんがいきはかみ"
+
+[[case]]
+input = "パワハラ監督のチームが強くならないのは立浪が証明済"
+mode = "hiragana"
+expected = "パワハラかんとくのチームがつよくならないのはたつなみがしょうめいずみ"
+
+[[case]]
+input = "字面のせいでw"
+mode = "hiragana"
+expected = "じづらのせいでw"
+
+[[case]]
+input = "道の外れ方が予想の斜め上"
+mode = "hiragana"
+expected = "みちのはずれかたがよそうのななめうえ"
+
+[[case]]
+input = "あー学校着いちゃう"
+mode = "hiragana"
+expected = "あーがっこうついちゃう"
+
+[[case]]
+input = "文字面やばいねw"
+mode = "hiragana"
+expected = "もじづらやばいねw"
+
+[[case]]
+input = "字面が草"
+mode = "hiragana"
+expected = "じづらがくさ"
+
+[[case]]
+input = "車高低いw"
+mode = "hiragana"
+expected = "しゃこうひくいw"
+
