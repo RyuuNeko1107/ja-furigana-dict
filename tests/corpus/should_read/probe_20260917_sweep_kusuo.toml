@@ -1,0 +1,255 @@
+[[case]]
+input = "楠雄"
+mode = "hiragana"
+expected = "くすお"
+
+[[case]]
+input = "楠雄か"
+mode = "hiragana"
+expected = "くすおか"
+
+[[case]]
+input = "最近ハマってるアニメ斉木楠雄の災難"
+mode = "hiragana"
+expected = "さいきんハマってるアニメさいきくすおのさいなん"
+
+[[case]]
+input = "斉木楠雄!?"
+mode = "hiragana"
+expected = "さいきくすお!?"
+
+[[case]]
+input = "南方熊楠"
+mode = "hiragana"
+expected = "みなかたくまぐす"
+
+[[case]]
+input = "南方隈楠先生?"
+mode = "hiragana"
+expected = "みなかたくまぐすせんせい?"
+
+[[case]]
+input = "燈篭が"
+mode = "hiragana"
+expected = "とうろうが"
+
+[[case]]
+input = "走馬燈きた"
+mode = "hiragana"
+expected = "そうまとうきた"
+
+[[case]]
+input = "何回走馬燈が見えた事か"
+mode = "hiragana"
+expected = "なんかいそうまとうがみえたことか"
+
+[[case]]
+input = "昼行燈タイプの刑事"
+mode = "hiragana"
+expected = "ひるあんどんタイプのけいじ"
+
+[[case]]
+input = "灯籠 提灯 行燈"
+mode = "hiragana"
+expected = "とうろう ちょうちん あんどん"
+
+[[case]]
+input = "九蓮宝燈"
+mode = "hiragana"
+expected = "ちゅーれんぽうとう"
+
+[[case]]
+input = "千葉県に大三元と九蓮宝燈と国士無双が来た"
+mode = "hiragana"
+expected = "ちばけんにだいさんげんとちゅーれんぽうとうとこくしむそうがきた"
+
+[[case]]
+input = "ねぶた行ったことないけど、竿燈はこんな感じだったなw"
+mode = "hiragana"
+expected = "ねぶたいったことないけど、かんとうはこんなかんじだったなw"
+
+[[case]]
+input = "街燈?"
+mode = "hiragana"
+expected = "がいとう?"
+
+[[case]]
+input = "鬼人幻燈抄みたい"
+mode = "hiragana"
+expected = "きじんげんとうしょうみたい"
+
+[[case]]
+input = "八朔祭りが終わり 祭りの後感"
+mode = "hiragana"
+expected = "はっさくまつりがおわり まつりのあとかん"
+
+[[case]]
+input = "朔ちゃんに聞いてみたら?"
+mode = "hiragana"
+expected = "さくちゃんにきいてみたら?"
+
+[[case]]
+input = "青の朔日も本当に良かったけど バラード上手すぎる"
+mode = "hiragana"
+expected = "あおのついたちもほんとうによかったけど バラードうますぎる"
+
+[[case]]
+input = "伊勢のおかげ横丁で朔日餅やってるな"
+mode = "hiragana"
+expected = "いせのおかげよこちょうでついたちもちやってるな"
+
+[[case]]
+input = "犬神朔やよ〜"
+mode = "hiragana"
+expected = "いぬがみさくやよ"
+
+[[case]]
+input = "見覚えあるぞ朔太郎"
+mode = "hiragana"
+expected = "みおぼえあるぞさくたろう"
+
+[[case]]
+input = "荼毘に付したよ"
+mode = "hiragana"
+expected = "だびにふしたよ"
+
+[[case]]
+input = "金毘羅さんかー"
+mode = "hiragana"
+expected = "こんぴらさんかー"
+
+[[case]]
+input = "毘沙門剣もあるよ!"
+mode = "hiragana"
+expected = "びしゃもんけんもあるよ!"
+
+[[case]]
+input = "洗腦中"
+mode = "hiragana"
+expected = "せんのうちゅう"
+
+[[case]]
+input = "足元を掬われるのは誰かなー"
+mode = "hiragana"
+expected = "あしもとをすくわれるのはだれかなー"
+
+[[case]]
+input = "掬い上げたな"
+mode = "hiragana"
+expected = "すくいあげたな"
+
+[[case]]
+input = "大谷バリの掬い打ちすごE"
+mode = "hiragana"
+expected = "おおたにバリのすくいうちすごE"
+
+[[case]]
+input = "塀の周回が迷いそう~w"
+mode = "hiragana"
+expected = "へいのしゅうかいがまよいそうw"
+
+[[case]]
+input = "石垣ブロック塀には近寄らない"
+mode = "hiragana"
+expected = "いしがきブロックへいにはちかよらない"
+
+[[case]]
+input = "これは肉体では無く、心を抓む戦い"
+mode = "hiragana"
+expected = "これはにくたいではなく、こころをつまむたたかい"
+
+[[case]]
+input = "当たるも八卦当たらぬも八卦"
+mode = "hiragana"
+expected = "とうたるもはっけあたらぬもはっけ"
+
+[[case]]
+input = "千葉県内のディーラーは有卦には入るか 納車まで半年待ちとか"
+mode = "hiragana"
+expected = "ちばけんないのディーラーはうけにははいるか のうしゃまではんとしまちとか"
+
+[[case]]
+input = "恩寵使えるのやばいw"
+mode = "hiragana"
+expected = "おんちょうつかえるのやばいw"
+
+[[case]]
+input = "監督の寵愛を受けている"
+mode = "hiragana"
+expected = "かんとくのちょうあいをうけている"
+
+[[case]]
+input = "清盛に寵愛された白拍子だっけ"
+mode = "hiragana"
+expected = "きよもりにちょうあいされたしらびょうしだっけ"
+
+[[case]]
+input = "屏風!"
+mode = "hiragana"
+expected = "びょうぶ!"
+
+[[case]]
+input = "金屏風ね"
+mode = "hiragana"
+expected = "きんびょうぶね"
+
+[[case]]
+input = "猫又屏風"
+mode = "hiragana"
+expected = "ねこまたびょうぶ"
+
+[[case]]
+input = "泪のムコウ"
+mode = "hiragana"
+expected = "なみだのムコウ"
+
+[[case]]
+input = "溢れる君の泪ボクがいま奪い去る"
+mode = "hiragana"
+expected = "あふれるきみのなみだボクがいまうばいさる"
+
+[[case]]
+input = "酒と泪"
+mode = "hiragana"
+expected = "さけとなみだ"
+
+[[case]]
+input = "唖然みぉーん"
+mode = "hiragana"
+expected = "あぜんみぉーん"
+
+[[case]]
+input = "初見さん唖然とするやろww"
+mode = "hiragana"
+expected = "しょけんさんあぜんとするやろww"
+
+[[case]]
+input = "獰猛な猛獣かw"
+mode = "hiragana"
+expected = "どうもうなもうじゅうかw"
+
+[[case]]
+input = "クマノミは結構獰猛だよね"
+mode = "hiragana"
+expected = "クマノミはけっこうどうもうだよね"
+
+[[case]]
+input = "倹約縛り"
+mode = "hiragana"
+expected = "けんやくしばり"
+
+[[case]]
+input = "質素倹約"
+mode = "hiragana"
+expected = "しっそけんやく"
+
+[[case]]
+input = "船長倹約家だなぁw"
+mode = "hiragana"
+expected = "せんちょうけんやくかだなぁw"
+
+[[case]]
+input = "一燈照隅"
+mode = "hiragana"
+expected = "いっとうしょうぐう"
+
