@@ -1,0 +1,50 @@
+[[case]]
+input = "枡野さん"
+mode = "hiragana"
+expected = "ますのさん"
+
+[[case]]
+input = "良く光胤"
+mode = "hiragana"
+expected = "よくみつたね"
+
+[[case]]
+input = "枡野"
+mode = "hiragana"
+expected = "ますの"
+
+[[case]]
+input = "光胤"
+mode = "hiragana"
+expected = "みつたね"
+
+[[case]]
+input = "青枡"
+mode = "hiragana"
+expected = "あおます"
+
+[[case]]
+input = "枡形星"
+mode = "hiragana"
+expected = "ますがたぼし"
+
+[[case]]
+input = "枡酒"
+mode = "hiragana"
+expected = "ますざけ"
+
+[[case]]
+input = "胤舜"
+mode = "hiragana"
+expected = "いんしゅん"
+
+[[case]]
+input = "宝蔵院胤栄"
+mode = "hiragana"
+expected = "ほうぞういんいんえい"
+
+[[case]]
+input = "宝蔵院胤舜"
+mode = "hiragana"
+expected = "ほうぞういんいんしゅん"
+
