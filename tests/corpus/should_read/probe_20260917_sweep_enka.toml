@@ -1,0 +1,385 @@
+[[case]]
+input = "演歌?艶歌"
+mode = "hiragana"
+expected = "えんか?えんか"
+
+[[case]]
+input = "艶かしい"
+mode = "hiragana"
+expected = "なまめかしい"
+
+[[case]]
+input = "艶めかしいダンス"
+mode = "hiragana"
+expected = "なまめかしいダンス"
+
+[[case]]
+input = "艶やか"
+mode = "hiragana"
+expected = "つややか"
+
+[[case]]
+input = "妖艶"
+mode = "hiragana"
+expected = "ようえん"
+
+[[case]]
+input = "肌艶良いよ"
+mode = "hiragana"
+expected = "はだつやよいよ"
+
+[[case]]
+input = "彩艶ナイス"
+mode = "hiragana"
+expected = "ざいおんナイス"
+
+[[case]]
+input = "佳子さまLOVE!"
+mode = "hiragana"
+expected = "かこさまラブ!"
+
+[[case]]
+input = "佳子さまかわゆす"
+mode = "hiragana"
+expected = "かこさまかわゆす"
+
+[[case]]
+input = "谷佳知"
+mode = "hiragana"
+expected = "たによしとも"
+
+[[case]]
+input = "平野佳寿狙いとか"
+mode = "hiragana"
+expected = "ひらのよしひさねらいとか"
+
+[[case]]
+input = "千葉で丸佳浩つかまえよう"
+mode = "hiragana"
+expected = "ちばでまるよしひろつかまえよう"
+
+[[case]]
+input = "千葉県の丸佳浩くん"
+mode = "hiragana"
+expected = "ちばけんのまるよしひろくん"
+
+[[case]]
+input = "珈琲豆炒ると"
+mode = "hiragana"
+expected = "こーひーまめいると"
+
+[[case]]
+input = "炒った豆でも出しとけばいいよ"
+mode = "hiragana"
+expected = "いったまめでもだしとけばいいよ"
+
+[[case]]
+input = "前進主簿は?"
+mode = "hiragana"
+expected = "ぜんしんしゅぼは?"
+
+[[case]]
+input = "佳境だな"
+mode = "hiragana"
+expected = "かきょうだな"
+
+[[case]]
+input = "グランディア2:佳作"
+mode = "hiragana"
+expected = "グランディアに:かさく"
+
+[[case]]
+input = "桑田佳祐コンサートいくぞ!"
+mode = "hiragana"
+expected = "くわたけいすけコンサートいくぞ!"
+
+[[case]]
+input = "名塚佳織さんの演技すごいよな"
+mode = "hiragana"
+expected = "なつかかおりさんのえんぎすごいよな"
+
+[[case]]
+input = "影山優佳かわいい"
+mode = "hiragana"
+expected = "かげやまゆうかかわいい"
+
+[[case]]
+input = "石川佳純かわいい"
+mode = "hiragana"
+expected = "いしかわかじゅんかわいい"
+
+[[case]]
+input = "近藤佳奈子さんだっけ"
+mode = "hiragana"
+expected = "こんどうかなこさんだっけ"
+
+[[case]]
+input = "揖保乃糸?"
+mode = "hiragana"
+expected = "いぼのいと?"
+
+[[case]]
+input = "揖斐"
+mode = "hiragana"
+expected = "いび"
+
+[[case]]
+input = "できる筈!"
+mode = "hiragana"
+expected = "できるはず!"
+
+[[case]]
+input = "手筈"
+mode = "hiragana"
+expected = "てはず"
+
+[[case]]
+input = "歌謡曲のタイトルみたいw"
+mode = "hiragana"
+expected = "かようきょくのタイトルみたいw"
+
+[[case]]
+input = "童謡?"
+mode = "hiragana"
+expected = "どうよう?"
+
+[[case]]
+input = "沖縄民謡"
+mode = "hiragana"
+expected = "おきなわみんよう"
+
+[[case]]
+input = "蹂躙してて草"
+mode = "hiragana"
+expected = "じゅうりんしててくさ"
+
+[[case]]
+input = "痙攣連打w"
+mode = "hiragana"
+expected = "けいれんれんだw"
+
+[[case]]
+input = "足攣ったかもね"
+mode = "hiragana"
+expected = "あしつったかもね"
+
+[[case]]
+input = "引き攣るw"
+mode = "hiragana"
+expected = "ひきつるw"
+
+[[case]]
+input = "神曰く"
+mode = "hiragana"
+expected = "かみいわく"
+
+[[case]]
+input = "曰く付きの部屋だろw"
+mode = "hiragana"
+expected = "いわくつきのへやだろw"
+
+[[case]]
+input = "発酵させるか"
+mode = "hiragana"
+expected = "はっこうさせるか"
+
+[[case]]
+input = "ビール酵母もいいぞ"
+mode = "hiragana"
+expected = "ビールこうぼもいいぞ"
+
+[[case]]
+input = "酵素パワー"
+mode = "hiragana"
+expected = "こうそパワー"
+
+[[case]]
+input = "蜃気楼か"
+mode = "hiragana"
+expected = "しんきろうか"
+
+[[case]]
+input = "稲川淳二み"
+mode = "hiragana"
+expected = "いながわじゅんじみ"
+
+[[case]]
+input = "鈴木淳之介きたー"
+mode = "hiragana"
+expected = "すずきじゅんのすけきたー"
+
+[[case]]
+input = "志尊淳だったのはびっくりした"
+mode = "hiragana"
+expected = "しそんじゅんだったのはびっくりした"
+
+[[case]]
+input = "淳也も上手いからね"
+mode = "hiragana"
+expected = "あつやもうまいからね"
+
+[[case]]
+input = "宵越しの銭は持たないぺこちゃん"
+mode = "hiragana"
+expected = "よいごしのせんはもたないぺこちゃん"
+
+[[case]]
+input = "今宵は満月か"
+mode = "hiragana"
+expected = "こよいはまんげつか"
+
+[[case]]
+input = "わためは宵っぱり"
+mode = "hiragana"
+expected = "わためはよいっぱり"
+
+[[case]]
+input = "スバル妊娠!?w"
+mode = "hiragana"
+expected = "スバルにんしん!?w"
+
+[[case]]
+input = "家計簿www"
+mode = "hiragana"
+expected = "かけいぼwww"
+
+[[case]]
+input = "金田一少年の事件簿"
+mode = "hiragana"
+expected = "きんだいちしょうねんのじけんぼ"
+
+[[case]]
+input = "名簿に登録"
+mode = "hiragana"
+expected = "めいぼにとうろく"
+
+[[case]]
+input = "通信簿"
+mode = "hiragana"
+expected = "つうしんぼ"
+
+[[case]]
+input = "帳簿かな"
+mode = "hiragana"
+expected = "ちょうぼかな"
+
+[[case]]
+input = "簿記一級か"
+mode = "hiragana"
+expected = "ぼきいっきゅうか"
+
+[[case]]
+input = "蒲郡に海"
+mode = "hiragana"
+expected = "がまごおりにうみ"
+
+[[case]]
+input = "うなぎの蒲焼だろう"
+mode = "hiragana"
+expected = "うなぎのかばやきだろう"
+
+[[case]]
+input = "菖蒲湯"
+mode = "hiragana"
+expected = "しょうぶゆ"
+
+[[case]]
+input = "蒲田の辺りで"
+mode = "hiragana"
+expected = "かまたのあたりで"
+
+[[case]]
+input = "蒲生絶望中"
+mode = "hiragana"
+expected = "がもうぜつぼうちゅう"
+
+[[case]]
+input = "鮫肌"
+mode = "hiragana"
+expected = "さめはだ"
+
+[[case]]
+input = "鬼鮫!"
+mode = "hiragana"
+expected = "おにさめ!"
+
+[[case]]
+input = "鮫島になっちゃうよ"
+mode = "hiragana"
+expected = "さめじまになっちゃうよ"
+
+[[case]]
+input = "炒飯ないのか"
+mode = "hiragana"
+expected = "ちゃーはんないのか"
+
+[[case]]
+input = "野菜炒め"
+mode = "hiragana"
+expected = "やさいいため"
+
+[[case]]
+input = "炒めてたべる"
+mode = "hiragana"
+expected = "いためてたべる"
+
+[[case]]
+input = "琵琶湖?"
+mode = "hiragana"
+expected = "びわこ?"
+
+[[case]]
+input = "螺鈿紫檀五弦琵琶!"
+mode = "hiragana"
+expected = "らでんしたんごげんびわ!"
+
+[[case]]
+input = "矯正かい?"
+mode = "hiragana"
+expected = "きょうせいかい?"
+
+[[case]]
+input = "縮毛矯正しようw"
+mode = "hiragana"
+expected = "しゅくけきょうせいしようw"
+
+[[case]]
+input = "歯列矯正"
+mode = "hiragana"
+expected = "はれつきょうせい"
+
+[[case]]
+input = "駆逐してやるw"
+mode = "hiragana"
+expected = "くちくしてやるw"
+
+[[case]]
+input = "逐一おもしろいなぁw"
+mode = "hiragana"
+expected = "ちくいちおもしろいなぁw"
+
+[[case]]
+input = "戦力の逐次投入は負け"
+mode = "hiragana"
+expected = "せんりょくのちくじとうにゅうはまけ"
+
+[[case]]
+input = "放逐されたw"
+mode = "hiragana"
+expected = "ほうちくされたw"
+
+[[case]]
+input = "ラオウ逐電"
+mode = "hiragana"
+expected = "ラオウちくでん"
+
+[[case]]
+input = "窒息w"
+mode = "hiragana"
+expected = "ちっそくw"
+
+[[case]]
+input = "液体窒素いっとくか"
+mode = "hiragana"
+expected = "えきたいちっそいっとくか"
+
