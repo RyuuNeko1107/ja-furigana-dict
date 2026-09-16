@@ -1,0 +1,335 @@
+[[case]]
+input = "煌びやかな"
+mode = "hiragana"
+expected = "きらびやかな"
+
+[[case]]
+input = "すごい煌びやかな時計だ"
+mode = "hiragana"
+expected = "すごいきらびやかなとけいだ"
+
+[[case]]
+input = "えらい煌びやかなw"
+mode = "hiragana"
+expected = "えらいきらびやかなw"
+
+[[case]]
+input = "なんか煌びやかな感じがするな"
+mode = "hiragana"
+expected = "なんかきらびやかなかんじがするな"
+
+[[case]]
+input = "目は煌びやかに"
+mode = "hiragana"
+expected = "めはきらびやかに"
+
+[[case]]
+input = "煌びやか"
+mode = "hiragana"
+expected = "きらびやか"
+
+[[case]]
+input = "めっちゃ煌びやか"
+mode = "hiragana"
+expected = "めっちゃきらびやか"
+
+[[case]]
+input = "夜に見る炎の煌きいいねぇ"
+mode = "hiragana"
+expected = "よるにみるほのおのきらめきいいねぇ"
+
+[[case]]
+input = "最高に煌き輝いてこう"
+mode = "hiragana"
+expected = "さいこうにきらめきかがやいてこう"
+
+[[case]]
+input = "十殿閻羅?"
+mode = "hiragana"
+expected = "じゅうでんえんら?"
+
+[[case]]
+input = "なんかこいつら秩父山中とか"
+mode = "hiragana"
+expected = "なんかこいつらちちぶさんちゅうとか"
+
+[[case]]
+input = "秩父山中"
+mode = "hiragana"
+expected = "ちちぶさんちゅう"
+
+[[case]]
+input = "弐寺"
+mode = "hiragana"
+expected = "にでら"
+
+[[case]]
+input = "弐寺のコントローラー"
+mode = "hiragana"
+expected = "にでらのコントローラー"
+
+[[case]]
+input = "猫又Masterは弐寺多めだった"
+mode = "hiragana"
+expected = "ねこまたMasterはにでらおおめだった"
+
+[[case]]
+input = "煌めけこより"
+mode = "hiragana"
+expected = "きらめけこより"
+
+[[case]]
+input = "煌めく星谷"
+mode = "hiragana"
+expected = "きらめくほしや"
+
+[[case]]
+input = "煌々とw"
+mode = "hiragana"
+expected = "こうこうとw"
+
+[[case]]
+input = "俯瞰視点"
+mode = "hiragana"
+expected = "ふかんしてん"
+
+[[case]]
+input = "鳥瞰図?"
+mode = "hiragana"
+expected = "ちょうかんず?"
+
+[[case]]
+input = "煉獄さん"
+mode = "hiragana"
+expected = "れんごくさん"
+
+[[case]]
+input = "赤煉瓦テラスかな?"
+mode = "hiragana"
+expected = "あかれんがテラスかな?"
+
+[[case]]
+input = "腫れ物扱いの先輩w"
+mode = "hiragana"
+expected = "はれものあつかいのせんぱいw"
+
+[[case]]
+input = "腫瘍摘出手術"
+mode = "hiragana"
+expected = "しゅようてきしゅつしゅじゅつ"
+
+[[case]]
+input = "浮腫みかなw"
+mode = "hiragana"
+expected = "むくみかなw"
+
+[[case]]
+input = "藁人形"
+mode = "hiragana"
+expected = "わらにんぎょう"
+
+[[case]]
+input = "藁にもすがる思い"
+mode = "hiragana"
+expected = "わらにもすがるおもい"
+
+[[case]]
+input = "瘴気!?"
+mode = "hiragana"
+expected = "しょうき!?"
+
+[[case]]
+input = "孵化w"
+mode = "hiragana"
+expected = "ふかw"
+
+[[case]]
+input = "孵ったー"
+mode = "hiragana"
+expected = "かえったー"
+
+[[case]]
+input = "比喩的だねえ"
+mode = "hiragana"
+expected = "ひゆてきだねえ"
+
+[[case]]
+input = "暗喩"
+mode = "hiragana"
+expected = "あんゆ"
+
+[[case]]
+input = "直喩的"
+mode = "hiragana"
+expected = "ちょくゆてき"
+
+[[case]]
+input = "隠喩"
+mode = "hiragana"
+expected = "いんゆ"
+
+[[case]]
+input = "叛逆だよ"
+mode = "hiragana"
+expected = "はんぎゃくだよ"
+
+[[case]]
+input = "活俠傳"
+mode = "hiragana"
+expected = "かっきょうでん"
+
+[[case]]
+input = "忌々しい"
+mode = "hiragana"
+expected = "いまいましい"
+
+[[case]]
+input = "禁忌w"
+mode = "hiragana"
+expected = "きんきw"
+
+[[case]]
+input = "忌み子"
+mode = "hiragana"
+expected = "いみこ"
+
+[[case]]
+input = "忌憚なき意見だねw"
+mode = "hiragana"
+expected = "きたんなきいけんだねw"
+
+[[case]]
+input = "三回忌"
+mode = "hiragana"
+expected = "さんかいき"
+
+[[case]]
+input = "匙加減だからね"
+mode = "hiragana"
+expected = "さじかげんだからね"
+
+[[case]]
+input = "銀の匙みたい"
+mode = "hiragana"
+expected = "ぎんのさじみたい"
+
+[[case]]
+input = "大匙半分なのか"
+mode = "hiragana"
+expected = "だいさじはんぶんなのか"
+
+[[case]]
+input = "運否天賦"
+mode = "hiragana"
+expected = "うんぷてんぷ"
+
+[[case]]
+input = "天賦の才"
+mode = "hiragana"
+expected = "てんぷのさい"
+
+[[case]]
+input = "再エネ賦課金"
+mode = "hiragana"
+expected = "さいエネふかきん"
+
+[[case]]
+input = "蟻ん子"
+mode = "hiragana"
+expected = "ありんこ"
+
+[[case]]
+input = "戦慄ww"
+mode = "hiragana"
+expected = "せんりつww"
+
+[[case]]
+input = "恐れ慄いたか"
+mode = "hiragana"
+expected = "おそれおののいたか"
+
+[[case]]
+input = "石鹸洗剤"
+mode = "hiragana"
+expected = "せっけんせんざい"
+
+[[case]]
+input = "閻魔大王"
+mode = "hiragana"
+expected = "えんまだいおう"
+
+[[case]]
+input = "閻魔蟋蟀"
+mode = "hiragana"
+expected = "えんまこおろぎ"
+
+[[case]]
+input = "常套手段"
+mode = "hiragana"
+expected = "じょうとうしゅだん"
+
+[[case]]
+input = "外套さんいるのか"
+mode = "hiragana"
+expected = "がいとうさんいるのか"
+
+[[case]]
+input = "管轄外なので"
+mode = "hiragana"
+expected = "かんかつがいなので"
+
+[[case]]
+input = "直轄"
+mode = "hiragana"
+expected = "ちょっかつ"
+
+[[case]]
+input = "所轄アメリカ"
+mode = "hiragana"
+expected = "しょかつアメリカ"
+
+[[case]]
+input = "薩摩守"
+mode = "hiragana"
+expected = "さつまのかみ"
+
+[[case]]
+input = "薩摩の出ですか?"
+mode = "hiragana"
+expected = "さつまのでですか?"
+
+[[case]]
+input = "菩薩"
+mode = "hiragana"
+expected = "ぼさつ"
+
+[[case]]
+input = "痙攣連打w"
+mode = "hiragana"
+expected = "けいれんれんだw"
+
+[[case]]
+input = "紅蓮弐式"
+mode = "hiragana"
+expected = "ぐれんにしき"
+
+[[case]]
+input = "弐号機"
+mode = "hiragana"
+expected = "にごうき"
+
+[[case]]
+input = "秩序とは、、、"
+mode = "hiragana"
+expected = "ちつじょとは、、、"
+
+[[case]]
+input = "無秩序すぎるwww"
+mode = "hiragana"
+expected = "むちつじょすぎるwww"
+
+[[case]]
+input = "秩父の秩"
+mode = "hiragana"
+expected = "ちちぶのちつ"
+
