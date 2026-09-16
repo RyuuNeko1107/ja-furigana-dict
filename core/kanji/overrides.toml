@@ -18975,10 +18975,11 @@ default = "くし"
 char = "此"
 default = "これ"
 
-# 「毬」 default 「いが」 (= 「毬栗 (イガグリ)」 + 「毬 (まり)」 訓主体)
+# 「毬」 default 「マリ」 (= 手毬/ゴム毬/足毬/打毬 が実出現 dominant。
+# 「毬栗 (イガグリ)」 は jukugo entry で保護)
 [[kanji]]
 char = "毬"
-default = "いが"
+default = "マリ"
 
 # 「汀」 default 「なぎさ」 (= 「汀/汀線/汀渚」 訓のみ)
 [[kanji]]

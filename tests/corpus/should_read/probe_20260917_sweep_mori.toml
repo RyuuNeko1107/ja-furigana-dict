@@ -1,0 +1,145 @@
+[[case]]
+input = "多分銛だよ"
+mode = "hiragana"
+expected = "たぶんもりだよ"
+
+[[case]]
+input = "せめて銛くらいないのかw"
+mode = "hiragana"
+expected = "せめてもりくらいないのかw"
+
+[[case]]
+input = "銛で狩るとか?"
+mode = "hiragana"
+expected = "もりでかるとか?"
+
+[[case]]
+input = "銛w"
+mode = "hiragana"
+expected = "もりw"
+
+[[case]]
+input = "銛は反則だろうw"
+mode = "hiragana"
+expected = "もりははんそくだろうw"
+
+[[case]]
+input = "銛は見つけにくいね"
+mode = "hiragana"
+expected = "もりはみつけにくいね"
+
+[[case]]
+input = "高低差ある銛は流石にテイムしづらくない?"
+mode = "hiragana"
+expected = "こうていさあるもりはさすがにテイムしづらくない?"
+
+[[case]]
+input = "ころね監督の檄が飛ぶ"
+mode = "hiragana"
+expected = "ころねかんとくのげきがとぶ"
+
+[[case]]
+input = "みこちー檄推し!"
+mode = "hiragana"
+expected = "みこちーげきおし!"
+
+[[case]]
+input = "ハーフタイムの檄ね"
+mode = "hiragana"
+expected = "ハーフタイムのげきね"
+
+[[case]]
+input = "檄アツだった"
+mode = "hiragana"
+expected = "げきアツだった"
+
+[[case]]
+input = "マリン檄ヤミ草"
+mode = "hiragana"
+expected = "マリンげきヤミくさ"
+
+[[case]]
+input = "メンツは檄強だな"
+mode = "hiragana"
+expected = "メンツはげききょうだな"
+
+[[case]]
+input = "監督の檄!"
+mode = "hiragana"
+expected = "かんとくのげき!"
+
+[[case]]
+input = "檄おこwww"
+mode = "hiragana"
+expected = "げきおこwww"
+
+[[case]]
+input = "5連z¥檄"
+mode = "hiragana"
+expected = "ごれんz¥げき"
+
+[[case]]
+input = "ねんどろにも手毬ちゃんいたなぁ"
+mode = "hiragana"
+expected = "ねんどろにもてまりちゃんいたなぁ"
+
+[[case]]
+input = "月村手毬のようにアイドルパワーを溜めてる"
+mode = "hiragana"
+expected = "げっそんてまりのようにアイドルパワーをためてる"
+
+[[case]]
+input = "やってることはどちらかと言うと手毬っぽいな"
+mode = "hiragana"
+expected = "やってることはどちらかというとてまりっぽいな"
+
+[[case]]
+input = "いずれにせよな打毬だっあ"
+mode = "hiragana"
+expected = "いずれにせよなだまりだっあ"
+
+[[case]]
+input = "ラップで包む手毬すしは?"
+mode = "hiragana"
+expected = "ラップでつつむてまりすしは?"
+
+[[case]]
+input = "心はゴム毬だよ、フブさん"
+mode = "hiragana"
+expected = "こころはゴムまりだよ、フブさん"
+
+[[case]]
+input = "足毬"
+mode = "hiragana"
+expected = "あしまり"
+
+[[case]]
+input = "オトナになった手毬さん"
+mode = "hiragana"
+expected = "オトナになったてまりさん"
+
+[[case]]
+input = "眼が毬だ"
+mode = "hiragana"
+expected = "めがまりだ"
+
+[[case]]
+input = "毬栗"
+mode = "hiragana"
+expected = "いがぐり"
+
+[[case]]
+input = "手毬歌"
+mode = "hiragana"
+expected = "てまりうた"
+
+[[case]]
+input = "檄を飛ばす"
+mode = "hiragana"
+expected = "げきをとばす"
+
+[[case]]
+input = "檄文"
+mode = "hiragana"
+expected = "げきぶん"
+
