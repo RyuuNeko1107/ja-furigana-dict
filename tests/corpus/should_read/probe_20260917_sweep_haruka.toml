@@ -1,0 +1,240 @@
+[[case]]
+input = "世耕さんお元気そうでw"
+mode = "hiragana"
+expected = "せこうさんおげんきそうでw"
+
+[[case]]
+input = "世耕さん復党していいよ"
+mode = "hiragana"
+expected = "せこうさんふくとうしていいよ"
+
+[[case]]
+input = "金田一耕助シリーズ?"
+mode = "hiragana"
+expected = "きんだいちこうすけシリーズ?"
+
+[[case]]
+input = "金田一耕助?"
+mode = "hiragana"
+expected = "きんだいちこうすけ?"
+
+[[case]]
+input = "真芯"
+mode = "hiragana"
+expected = "まっしん"
+
+[[case]]
+input = "真芯を捉えるの無理くないかw"
+mode = "hiragana"
+expected = "まっしんをとらえるのむりくないかw"
+
+[[case]]
+input = "重い球は強振真芯は無効だから"
+mode = "hiragana"
+expected = "おもいたまはきょうしんまっしんはむこうだから"
+
+[[case]]
+input = "真芯の芯ですね"
+mode = "hiragana"
+expected = "まっしんのしんですね"
+
+[[case]]
+input = "語部紡が復帰するまでデビューして卒業してった人いそう"
+mode = "hiragana"
+expected = "かたりべつむぎがふっきするまでデビューしてそつぎょうしてったひといそう"
+
+[[case]]
+input = "語部紡"
+mode = "hiragana"
+expected = "かたりべつむぎ"
+
+[[case]]
+input = "遥への反発ヤバかったねw"
+mode = "hiragana"
+expected = "はるかへのはんぱつヤバかったねw"
+
+[[case]]
+input = "6の遥は"
+mode = "hiragana"
+expected = "ろくのはるかは"
+
+[[case]]
+input = "遥も助かってよかったし"
+mode = "hiragana"
+expected = "はるかもたすかってよかったし"
+
+[[case]]
+input = "一応、遥の夫婦の話が入っているのですが・・・"
+mode = "hiragana"
+expected = "いちおう、はるかのふうふのはなしがはいっているのですが"
+
+[[case]]
+input = "遥が心配だ"
+mode = "hiragana"
+expected = "はるかがしんぱいだ"
+
+[[case]]
+input = "遥か彼方"
+mode = "hiragana"
+expected = "はるかかなた"
+
+[[case]]
+input = "遥かに強い"
+mode = "hiragana"
+expected = "はるかにつよい"
+
+[[case]]
+input = "義勇さん!"
+mode = "hiragana"
+expected = "ぎゆうさん!"
+
+[[case]]
+input = "義勇さん訛ってた?"
+mode = "hiragana"
+expected = "ぎゆうさんなまってた?"
+
+[[case]]
+input = "訛った義勇"
+mode = "hiragana"
+expected = "なまったぎゆう"
+
+[[case]]
+input = "山本元柳斎重國かな?"
+mode = "hiragana"
+expected = "やまもとげんりゅうさいしげくにかな?"
+
+[[case]]
+input = "いい眺めだ"
+mode = "hiragana"
+expected = "いいながめだ"
+
+[[case]]
+input = "整理整頓えらい"
+mode = "hiragana"
+expected = "せいりせいとんえらい"
+
+[[case]]
+input = "素っ頓狂w"
+mode = "hiragana"
+expected = "すっとんきょうw"
+
+[[case]]
+input = "服に無頓着なの草"
+mode = "hiragana"
+expected = "ふくにむとんじゃくなのくさ"
+
+[[case]]
+input = "頓挫するのが見えてるにゃぁ"
+mode = "hiragana"
+expected = "とんざするのがみえてるにゃぁ"
+
+[[case]]
+input = "頓珍漢な答弁"
+mode = "hiragana"
+expected = "とんちんかんなとうべん"
+
+[[case]]
+input = "ミオしゃの歌声には芯があって大好き!"
+mode = "hiragana"
+expected = "ミオしゃのうたごえにはしんがあってだいすき!"
+
+[[case]]
+input = "リンゴの芯か"
+mode = "hiragana"
+expected = "リンゴのしんか"
+
+[[case]]
+input = "賄賂w"
+mode = "hiragana"
+expected = "わいろw"
+
+[[case]]
+input = "紡いでるよーー!!"
+mode = "hiragana"
+expected = "つむいでるよーー!!"
+
+[[case]]
+input = "訛ってますねぇ"
+mode = "hiragana"
+expected = "なまってますねぇ"
+
+[[case]]
+input = "エリート炸裂してます?"
+mode = "hiragana"
+expected = "エリートさくれつしてます?"
+
+[[case]]
+input = "凛々しいころさんかわいい"
+mode = "hiragana"
+expected = "りりしいころさんかわいい"
+
+[[case]]
+input = "静凛引っ張られてる"
+mode = "hiragana"
+expected = "しずりんひっぱられてる"
+
+[[case]]
+input = "覚醒モード糸師凛"
+mode = "hiragana"
+expected = "かくせいモードいとしりん"
+
+[[case]]
+input = "耕す気持ちでいけ"
+mode = "hiragana"
+expected = "たがやすきもちでいけ"
+
+[[case]]
+input = "水耕栽培ならそんなに気にしなくていいよ"
+mode = "hiragana"
+expected = "すいこうさいばいならそんなにきにしなくていいよ"
+
+[[case]]
+input = "島耕作"
+mode = "hiragana"
+expected = "しまこうさく"
+
+[[case]]
+input = "柵を作る"
+mode = "hiragana"
+expected = "さくをつくる"
+
+[[case]]
+input = "舟を出す"
+mode = "hiragana"
+expected = "ふねをだす"
+
+[[case]]
+input = "呆れた"
+mode = "hiragana"
+expected = "あきれた"
+
+[[case]]
+input = "墨汁"
+mode = "hiragana"
+expected = "ぼくじゅう"
+
+[[case]]
+input = "誹謗中傷"
+mode = "hiragana"
+expected = "ひぼうちゅうしょう"
+
+[[case]]
+input = "檜風呂"
+mode = "hiragana"
+expected = "ひのきぶろ"
+
+[[case]]
+input = "函館"
+mode = "hiragana"
+expected = "はこだて"
+
+[[case]]
+input = "抹茶"
+mode = "hiragana"
+expected = "まっちゃ"
+
+[[case]]
+input = "脆いな"
+mode = "hiragana"
+expected = "もろいな"
+
