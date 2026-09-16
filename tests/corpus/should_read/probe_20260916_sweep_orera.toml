@@ -1,0 +1,115 @@
+[[case]]
+input = "砂場で転んだ時の傷みたい"
+mode = "hiragana"
+expected = "すなばでころんだときのきずみたい"
+
+[[case]]
+input = "結構デカい八方手裏剣だったw"
+mode = "hiragana"
+expected = "けっこうデカいはっぽうしゅりけんだったw"
+
+[[case]]
+input = "凍れる時の秘宝"
+mode = "hiragana"
+expected = "いてるときのひほう"
+
+[[case]]
+input = "高田延彦"
+mode = "hiragana"
+expected = "たかだのぶひこ"
+
+[[case]]
+input = "1人目はたしか恋次"
+mode = "hiragana"
+expected = "ひとりめはたしかれんじ"
+
+[[case]]
+input = "二人の男を成長させる聖女"
+mode = "hiragana"
+expected = "ふたりのおとこをせいちょうさせるせいじょ"
+
+[[case]]
+input = "ここで御暇させていただきます。"
+mode = "hiragana"
+expected = "ここでおいとまさせていただきます。"
+
+[[case]]
+input = "精神的主柱よな"
+mode = "hiragana"
+expected = "せいしんてきしゅちゅうよな"
+
+[[case]]
+input = "輪留め乗り上げてるんやが"
+mode = "hiragana"
+expected = "わどめのりあげてるんやが"
+
+[[case]]
+input = "癖強w"
+mode = "hiragana"
+expected = "くせつよw"
+
+[[case]]
+input = "ぐるぐる目性癖にドンピシャすぎる"
+mode = "hiragana"
+expected = "ぐるぐるめせいへきにドンピシャすぎる"
+
+[[case]]
+input = "貢ぎ癖があるので"
+mode = "hiragana"
+expected = "みつぎぐせがあるので"
+
+[[case]]
+input = "麻呂眉がつながっちゃう"
+mode = "hiragana"
+expected = "まろまゆがつながっちゃう"
+
+[[case]]
+input = "奇跡の瞑眩"
+mode = "hiragana"
+expected = "きせきのめんげん"
+
+[[case]]
+input = "俺等はモブだった"
+mode = "hiragana"
+expected = "おれらはモブだった"
+
+[[case]]
+input = "我等が王よ!"
+mode = "hiragana"
+expected = "われらがおうよ!"
+
+[[case]]
+input = "儂等には救えぬものじゃ"
+mode = "hiragana"
+expected = "わしらにはすくえぬものじゃ"
+
+[[case]]
+input = "虫網だねw"
+mode = "hiragana"
+expected = "むしあみだねw"
+
+[[case]]
+input = "虫取網か"
+mode = "hiragana"
+expected = "むしとりあみか"
+
+[[case]]
+input = "大迫力w"
+mode = "hiragana"
+expected = "だいはくりょくw"
+
+[[case]]
+input = "緊急穴閉じw"
+mode = "hiragana"
+expected = "きんきゅうあなとじw"
+
+[[case]]
+input = "スイカ泥棒に来る隣村の住人"
+mode = "hiragana"
+expected = "スイカどろぼうにくるとなりむらのじゅうにん"
+
+[[case]]
+input = "苗隣同士にしてね"
+mode = "hiragana"
+expected = "なえとなりどうしにしてね"
+
