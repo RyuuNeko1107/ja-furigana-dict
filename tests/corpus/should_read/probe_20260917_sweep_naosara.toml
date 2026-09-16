@@ -1,0 +1,300 @@
+[[case]]
+input = "となると猶更ハード周回がうまそうやねぇ"
+mode = "hiragana"
+expected = "となるとなおさらハードしゅうかいがうまそうやねぇ"
+
+[[case]]
+input = "猶更悪いw"
+mode = "hiragana"
+expected = "なおさらわるいw"
+
+[[case]]
+input = "このゲームモードは猶更"
+mode = "hiragana"
+expected = "このゲームモードはなおさら"
+
+[[case]]
+input = "CCもやってると猶更ね..."
+mode = "hiragana"
+expected = "CCもやってるとなおさらね..."
+
+[[case]]
+input = "嫁姑問題"
+mode = "hiragana"
+expected = "よめしゅうとめもんだい"
+
+[[case]]
+input = "嫁姑無さそうなのがすごい"
+mode = "hiragana"
+expected = "よめしゅうとめなさそうなのがすごい"
+
+[[case]]
+input = "嫁小姑"
+mode = "hiragana"
+expected = "よめこじゅうとめ"
+
+[[case]]
+input = "爆轟くんw"
+mode = "hiragana"
+expected = "ばくごうくんw"
+
+[[case]]
+input = "爆轟きた"
+mode = "hiragana"
+expected = "ばくごうきた"
+
+[[case]]
+input = "爆轟と常闇"
+mode = "hiragana"
+expected = "ばくごうととこやみ"
+
+[[case]]
+input = "網走爆轟"
+mode = "hiragana"
+expected = "あばしりばくごう"
+
+[[case]]
+input = "矢倉楓子みたいな子がいいでしょ"
+mode = "hiragana"
+expected = "やぐらふうこみたいなこがいいでしょ"
+
+[[case]]
+input = "姑息w"
+mode = "hiragana"
+expected = "こそくw"
+
+[[case]]
+input = "小姑いた?"
+mode = "hiragana"
+expected = "こじゅうとめいた?"
+
+[[case]]
+input = "姑獲鳥かなぁ"
+mode = "hiragana"
+expected = "うぶめかなぁ"
+
+[[case]]
+input = "アニヤン姑娘"
+mode = "hiragana"
+expected = "アニヤンくーにゃん"
+
+[[case]]
+input = "楓さんとね"
+mode = "hiragana"
+expected = "かえでさんとね"
+
+[[case]]
+input = "樋口楓"
+mode = "hiragana"
+expected = "ひぐちかえで"
+
+[[case]]
+input = "四楓院だからなぁ"
+mode = "hiragana"
+expected = "しほういんだからなぁ"
+
+[[case]]
+input = "轟はじめのライブおまえらみろよw"
+mode = "hiragana"
+expected = "とどろきはじめのライブおまえらみろよw"
+
+[[case]]
+input = "車3つで轟です!"
+mode = "hiragana"
+expected = "くるまみっつでごうです!"
+
+[[case]]
+input = "甲子園優勝と轟き叫ぶ!"
+mode = "hiragana"
+expected = "こうしえんゆうしょうととどろきさけぶ!"
+
+[[case]]
+input = "猶予"
+mode = "hiragana"
+expected = "ゆうよ"
+
+[[case]]
+input = "執行猶予"
+mode = "hiragana"
+expected = "しっこうゆうよ"
+
+[[case]]
+input = "庶民派の神"
+mode = "hiragana"
+expected = "しょみんはのかみ"
+
+[[case]]
+input = "徐庶かな"
+mode = "hiragana"
+expected = "じょしょかな"
+
+[[case]]
+input = "叡智"
+mode = "hiragana"
+expected = "えいち"
+
+[[case]]
+input = "絆創膏衣装!"
+mode = "hiragana"
+expected = "ばんそうこういしょう!"
+
+[[case]]
+input = "石膏塗ってこい石膏"
+mode = "hiragana"
+expected = "せっこうぬってこいせっこう"
+
+[[case]]
+input = "軟膏軟骨バッバイ"
+mode = "hiragana"
+expected = "なんこうなんこつバッバイ"
+
+[[case]]
+input = "骨髄液はいってそう"
+mode = "hiragana"
+expected = "こつずいえきはいってそう"
+
+[[case]]
+input = "脊髄が覚えてる"
+mode = "hiragana"
+expected = "せきずいがおぼえてる"
+
+[[case]]
+input = "延髄蹴り"
+mode = "hiragana"
+expected = "えんずいけり"
+
+[[case]]
+input = "ゲーマーの真髄よw"
+mode = "hiragana"
+expected = "ゲーマーのしんずいよw"
+
+[[case]]
+input = "破壊神の神髄wwwwwww"
+mode = "hiragana"
+expected = "はかいしんのしんずいwwwwwww"
+
+[[case]]
+input = "脳髄"
+mode = "hiragana"
+expected = "のうずい"
+
+[[case]]
+input = "恨み骨髄"
+mode = "hiragana"
+expected = "うらみこつずい"
+
+[[case]]
+input = "鉛筆?"
+mode = "hiragana"
+expected = "えんぴつ?"
+
+[[case]]
+input = "亜鉛不足だよ"
+mode = "hiragana"
+expected = "あえんふそくだよ"
+
+[[case]]
+input = "哀愁www"
+mode = "hiragana"
+expected = "あいしゅうwww"
+
+[[case]]
+input = "ご愁傷様w"
+mode = "hiragana"
+expected = "ごしゅうしょうさまw"
+
+[[case]]
+input = "体が痒いのかな?"
+mode = "hiragana"
+expected = "からだがかゆいのかな?"
+
+[[case]]
+input = "あちこち痒なるやんw"
+mode = "hiragana"
+expected = "あちこちかゆなるやんw"
+
+[[case]]
+input = "将棋"
+mode = "hiragana"
+expected = "しょうぎ"
+
+[[case]]
+input = "詰将棋してくる"
+mode = "hiragana"
+expected = "つめしょうぎしてくる"
+
+[[case]]
+input = "棋譜えぐ"
+mode = "hiragana"
+expected = "きふえぐ"
+
+[[case]]
+input = "硫化水素ですか"
+mode = "hiragana"
+expected = "りゅうかすいそですか"
+
+[[case]]
+input = "硫酸"
+mode = "hiragana"
+expected = "りゅうさん"
+
+[[case]]
+input = "強力な硫黄?"
+mode = "hiragana"
+expected = "きょうりょくないおう?"
+
+[[case]]
+input = "お賽銭感覚?"
+mode = "hiragana"
+expected = "おさいせんかんかく?"
+
+[[case]]
+input = "賽の河原かな?"
+mode = "hiragana"
+expected = "さいのかわらかな?"
+
+[[case]]
+input = "纏める"
+mode = "hiragana"
+expected = "まとめる"
+
+[[case]]
+input = "馳せ参じる"
+mode = "hiragana"
+expected = "はせさんじる"
+
+[[case]]
+input = "殆ど"
+mode = "hiragana"
+expected = "ほとんど"
+
+[[case]]
+input = "棲む"
+mode = "hiragana"
+expected = "すむ"
+
+[[case]]
+input = "賠償"
+mode = "hiragana"
+expected = "ばいしょう"
+
+[[case]]
+input = "粛清"
+mode = "hiragana"
+expected = "しゅくせい"
+
+[[case]]
+input = "撹拌"
+mode = "hiragana"
+expected = "かくはん"
+
+[[case]]
+input = "迄"
+mode = "hiragana"
+expected = "まで"
+
+[[case]]
+input = "弥生"
+mode = "hiragana"
+expected = "やよい"
+
