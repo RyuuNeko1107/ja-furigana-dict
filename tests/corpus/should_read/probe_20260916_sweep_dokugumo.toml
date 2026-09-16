@@ -1,0 +1,166 @@
+# 2026-09-16 全漢字スイープ r74 (具刺闇栄便末荒継浮醒毒責密惑答砂射陽充坂秀須竹称)
+
+[[case]]
+input = "精密とはw"
+mode = "hiragana"
+expected = "せいみつとはw"
+
+[[case]]
+input = "妖怪砂食べ"
+mode = "hiragana"
+expected = "ようかいすなたべ"
+
+[[case]]
+input = "元々砂は一回しかできないのがねぇ"
+mode = "hiragana"
+expected = "もともとすなはいっかいしかできないのがねぇ"
+
+[[case]]
+input = "毎回砂勿体ない"
+mode = "hiragana"
+expected = "まいかいすなもったいない"
+
+[[case]]
+input = "多分砂の量にビビるぞ"
+mode = "hiragana"
+expected = "たぶんすなのりょうにビビるぞ"
+
+[[case]]
+input = "昨日砂とかをブラシでやった奴じゃないかな"
+mode = "hiragana"
+expected = "きのうすなとかをブラシでやったやつじゃないかな"
+
+[[case]]
+input = "ミニゲームに報酬砂欲しいところ"
+mode = "hiragana"
+expected = "ミニゲームにほうしゅうすなほしいところ"
+
+[[case]]
+input = "大部分砂だった"
+mode = "hiragana"
+expected = "だいぶぶんすなだった"
+
+[[case]]
+input = "反射たい一般人w"
+mode = "hiragana"
+expected = "はんしゃたいいっぱんじんw"
+
+[[case]]
+input = "誤射されないようにみえやすい服なんじゃないかな?"
+mode = "hiragana"
+expected = "ごしゃされないようにみえやすいふくなんじゃないかな?"
+
+[[case]]
+input = "陰と陽か"
+mode = "hiragana"
+expected = "いんとようか"
+
+[[case]]
+input = "陽に席を取られる陰、、、"
+mode = "hiragana"
+expected = "ようにせきをとられるいん、、、"
+
+[[case]]
+input = "登坂キツそうw"
+mode = "hiragana"
+expected = "とうはんキツそうw"
+
+[[case]]
+input = "倉木麻衣とか坂井泉水とかの声質やな"
+mode = "hiragana"
+expected = "くらきまいとかさかいいずみとかのせいしつやな"
+
+[[case]]
+input = "しかも坂本真綾"
+mode = "hiragana"
+expected = "しかもさかもとまあや"
+
+[[case]]
+input = "いや大坂か兵庫の方が強いよ"
+mode = "hiragana"
+expected = "いやおおさかかひょうごのほうがつよいよ"
+
+[[case]]
+input = "池田秀一か"
+mode = "hiragana"
+expected = "いけだしゅういちか"
+
+[[case]]
+input = "庵野秀明そいつエヴァゲリオン"
+mode = "hiragana"
+expected = "あんのひであきそいつエヴァゲリオン"
+
+[[case]]
+input = "王のミュート芸だぞ、褒め称えろ"
+mode = "hiragana"
+expected = "おうのミュートげいだぞ、ほめたたえろ"
+
+[[case]]
+input = "ハードコア毒蜘蛛はキケン"
+mode = "hiragana"
+expected = "ハードコアどくぐもはキケン"
+
+[[case]]
+input = "見てるこっちも気の毒で辛かった"
+mode = "hiragana"
+expected = "みてるこっちもきのどくでつらかった"
+
+[[case]]
+input = "忍たま乱太郎の第三協栄丸さんみたいなもんよ"
+mode = "hiragana"
+expected = "にんたまらんたろうのだいさんきょうえいまるさんみたいなもんよ"
+
+[[case]]
+input = "なんか、栄養食っぽい名前"
+mode = "hiragana"
+expected = "なんか、えいようしょくっぽいなまえ"
+
+[[case]]
+input = "末っこ気質を存分に出していく"
+mode = "hiragana"
+expected = "すえっこきしつをぞんぶんにだしていく"
+
+[[case]]
+input = "8末だね"
+mode = "hiragana"
+expected = "はちがつまつだね"
+
+[[case]]
+input = "荒ぶるインパラ"
+mode = "hiragana"
+expected = "あらぶるインパラ"
+
+[[case]]
+input = "松山は気性荒と相性良い"
+mode = "hiragana"
+expected = "まつやまはきしょうあらとあいしょうよい"
+
+[[case]]
+input = "蜂の一刺しwww"
+mode = "hiragana"
+expected = "はちのひとさしwww"
+
+[[case]]
+input = "とどめ刺しにきたぞ!"
+mode = "hiragana"
+expected = "とどめさしにきたぞ!"
+
+[[case]]
+input = "無作為に槍刺しちゃうw"
+mode = "hiragana"
+expected = "むさくいにやりさしちゃうw"
+
+[[case]]
+input = "ソロのペコらとペアのフブキが荒稼ぎ中"
+mode = "hiragana"
+expected = "ソロのペコらとペアのフブキがあらかせぎちゅう"
+
+[[case]]
+input = "つまり記憶引継ぎできるってこと?"
+mode = "hiragana"
+expected = "つまりきおくひきつぎできるってこと?"
+
+[[case]]
+input = "宮益坂から青山学院大学方面"
+mode = "hiragana"
+expected = "みやますざかからあおやまがくいんだいがくほうめん"
