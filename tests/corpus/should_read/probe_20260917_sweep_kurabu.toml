@@ -1,0 +1,85 @@
+[[case]]
+input = "真田昌幸を頼ってたら、岩櫃城で勝頼、信勝は助かっていたのにね"
+mode = "hiragana"
+expected = "さなだまさゆきをたよってたら、いわびつじょうでかつせ、のぶかつはたすかっていたのにね"
+
+[[case]]
+input = "岩櫃城跡行ったけど結構な山城で、当時の陣営なら大変だったろうなと思ったよ"
+mode = "hiragana"
+expected = "いわびつじょうせきいったけどけっこうなやましろで、とうじのじんえいならたいへんだったろうなとおもったよ"
+
+[[case]]
+input = "勝頼が岩櫃に行ったとして、武田家が存続できるか否かくらいの違いしかない"
+mode = "hiragana"
+expected = "かつせがいわびつにいったとして、たけだけがそんぞくできるかいなかくらいのちがいしかない"
+
+[[case]]
+input = "ダチョウ俱楽部かなw"
+mode = "hiragana"
+expected = "ダチョウくらぶかなw"
+
+[[case]]
+input = "ダチョウ俱楽部w"
+mode = "hiragana"
+expected = "ダチョウくらぶw"
+
+[[case]]
+input = "タモリ俱楽部に出てるイメージが強いな"
+mode = "hiragana"
+expected = "タモリくらぶにでてるイメージがつよいな"
+
+[[case]]
+input = "ダチョウ俱楽部かな?"
+mode = "hiragana"
+expected = "ダチョウくらぶかな?"
+
+[[case]]
+input = "タンバリン俱楽部"
+mode = "hiragana"
+expected = "タンバリンくらぶ"
+
+[[case]]
+input = "ダチョウ俱楽部のふりか"
+mode = "hiragana"
+expected = "ダチョウくらぶのふりか"
+
+[[case]]
+input = "俱利伽羅から大聖寺までがIRいしかわ"
+mode = "hiragana"
+expected = "くりからからだいしょうじまでがIRいしかわ"
+
+[[case]]
+input = "モリタ俱楽部の後釜を"
+mode = "hiragana"
+expected = "モリタくらぶのあとがまを"
+
+[[case]]
+input = "倶楽部"
+mode = "hiragana"
+expected = "くらぶ"
+
+[[case]]
+input = "俱知安"
+mode = "hiragana"
+expected = "くちあん"
+
+[[case]]
+input = "不俱戴天"
+mode = "hiragana"
+expected = "ふくたいてん"
+
+[[case]]
+input = "お櫃と杓文字もってそう"
+mode = "hiragana"
+expected = "おひつとしゃもじもってそう"
+
+[[case]]
+input = "ARK聖櫃か"
+mode = "hiragana"
+expected = "アークせいひつか"
+
+[[case]]
+input = "櫃孔"
+mode = "hiragana"
+expected = "ひつあな"
+
