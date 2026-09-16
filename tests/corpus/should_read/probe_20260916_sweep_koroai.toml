@@ -1,0 +1,76 @@
+# 全漢字スイープ 戸 / 甘 / 頃 / 刀 / 響 / 父 / 呪 / 改 (2026-09-16)
+
+[[case]]
+input = "厩戸王"
+mode = "hiragana"
+expected = "うまやどおう"
+
+[[case]]
+input = "大木戸"
+mode = "hiragana"
+expected = "おおきど"
+
+[[case]]
+input = "ちょろ甘ですね"
+mode = "hiragana"
+expected = "ちょろあまですね"
+
+[[case]]
+input = "甘しょっぱくて美味い"
+mode = "hiragana"
+expected = "あまじょっぱくてうまい"
+
+[[case]]
+input = "そろそろ頃合いかもしれない"
+mode = "hiragana"
+expected = "そろそろころあいかもしれない"
+
+[[case]]
+input = "2刀流なんだ"
+mode = "hiragana"
+expected = "にとうりゅうなんだ"
+
+[[case]]
+input = "二刀流か"
+mode = "hiragana"
+expected = "にとうりゅうか"
+
+[[case]]
+input = "ポン刀"
+mode = "hiragana"
+expected = "ぽんとう"
+
+[[case]]
+input = "世界中に音響いてた"
+mode = "hiragana"
+expected = "せかいじゅうにおとひびいてた"
+
+[[case]]
+input = "仮面ライダー響鬼やん!!"
+mode = "hiragana"
+expected = "かめんらいだーひびきやん!!"
+
+[[case]]
+input = "御父様の方だった"
+mode = "hiragana"
+expected = "おとうさまのほうだった"
+
+[[case]]
+input = "呪いやん"
+mode = "hiragana"
+expected = "のろいやん"
+
+[[case]]
+input = "甘しょっぱくて美味い"
+mode = "hiragana"
+expected = "あまじょっぱくてうまい"
+
+[[case]]
+input = "一刀流だよね"
+mode = "hiragana"
+expected = "いっとうりゅうだよね"
+
+[[case]]
+input = "世界中に音響いてた"
+mode = "hiragana"
+expected = "せかいじゅうにおとひびいてた"
