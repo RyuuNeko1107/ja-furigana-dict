@@ -1,0 +1,76 @@
+# 全漢字スイープ 憶 / 春 / 費 / 岩 / 路 / 触 / 束 / 林 (2026-09-16)
+
+[[case]]
+input = "深層岩あるならガッツリ下よw"
+mode = "hiragana"
+expected = "しんそうがんあるならガッツリしたよw"
+
+[[case]]
+input = "荒岩さんかな"
+mode = "hiragana"
+expected = "あらいわさんかな"
+
+[[case]]
+input = "オードリー春日で草"
+mode = "hiragana"
+expected = "オードリーかすがでくさ"
+
+[[case]]
+input = "文春さん主導で声紋鑑定"
+mode = "hiragana"
+expected = "ぶんしゅんさんしゅどうでせいもんかんてい"
+
+[[case]]
+input = "神宮春甲だあああああ"
+mode = "hiragana"
+expected = "じんぐうはるこうだあああああ"
+
+[[case]]
+input = "ここの村人束になってかかったら"
+mode = "hiragana"
+expected = "ここのむらびとたばになってかかったら"
+
+[[case]]
+input = "中国には少林サッカーがある"
+mode = "hiragana"
+expected = "ちゅうごくにはしょうりんサッカーがある"
+
+[[case]]
+input = "涙が出て を暴風林"
+mode = "hiragana"
+expected = "なみだがでて をぼうふうりん"
+
+[[case]]
+input = "板が通路塞いでる"
+mode = "hiragana"
+expected = "いたがつうろふさいでる"
+
+[[case]]
+input = "退路を断ったww"
+mode = "hiragana"
+expected = "たいろをたったww"
+
+[[case]]
+input = "交通費やすーい!"
+mode = "hiragana"
+expected = "こうつうひやすーい!"
+
+[[case]]
+input = "交通費しゃれになんないなw"
+mode = "hiragana"
+expected = "こうつうひしゃれになんないなw"
+
+[[case]]
+input = "そこに時間を費やすわけですから"
+mode = "hiragana"
+expected = "そこにじかんをついやすわけですから"
+
+[[case]]
+input = "少林寺木人拳"
+mode = "hiragana"
+expected = "しょうりんじもくじんけん"
+
+[[case]]
+input = "花束をどうぞ"
+mode = "hiragana"
+expected = "はなたばをどうぞ"
