@@ -1,0 +1,245 @@
+[[case]]
+input = "魯肉飯?気になる"
+mode = "hiragana"
+expected = "るーろーはん?きになる"
+
+[[case]]
+input = "魯肉飯うまいよ"
+mode = "hiragana"
+expected = "るーろーはんうまいよ"
+
+[[case]]
+input = "魯肉飯"
+mode = "hiragana"
+expected = "るーろーはん"
+
+[[case]]
+input = "張魯"
+mode = "hiragana"
+expected = "ちょうろ"
+
+[[case]]
+input = "椿山荘"
+mode = "hiragana"
+expected = "ちんざんそう"
+
+[[case]]
+input = "文京区椿山荘紫陽花"
+mode = "hiragana"
+expected = "ぶんきょうくちんざんそうあじさい"
+
+[[case]]
+input = "テレビ朝日「椿事件」の前科は永久に消えまい"
+mode = "hiragana"
+expected = "てれびあさひ「つばきじけん」のぜんかはえいきゅうにきえまい"
+
+[[case]]
+input = "椿はいい花だ"
+mode = "hiragana"
+expected = "つばきはいいはなだ"
+
+[[case]]
+input = "ポルカは椿の香りw"
+mode = "hiragana"
+expected = "ポルカはつばきのかおりw"
+
+[[case]]
+input = "咒物"
+mode = "hiragana"
+expected = "じゅぶつ"
+
+[[case]]
+input = "咒願"
+mode = "hiragana"
+expected = "じゅがん"
+
+[[case]]
+input = "符咒?"
+mode = "hiragana"
+expected = "ふじゅ?"
+
+[[case]]
+input = "禰豆子?"
+mode = "hiragana"
+expected = "ねずこ?"
+
+[[case]]
+input = "禰禰血きたー!"
+mode = "hiragana"
+expected = "ねねちきたー!"
+
+[[case]]
+input = "鮒ずし"
+mode = "hiragana"
+expected = "ふなずし"
+
+[[case]]
+input = "鮒釣りいったら? 川の"
+mode = "hiragana"
+expected = "ふなづりいったら? かわの"
+
+[[case]]
+input = "鯉というか鮒ですな"
+mode = "hiragana"
+expected = "こいというかふなですな"
+
+[[case]]
+input = "鉈一人w"
+mode = "hiragana"
+expected = "なたひとりw"
+
+[[case]]
+input = "1日目に大鉈振るってなかったらもっとヤバかったとは思うよ"
+mode = "hiragana"
+expected = "いちにちめにおおなたふるってなかったらもっとヤバかったとはおもうよ"
+
+[[case]]
+input = "岩切り鉈ならぎりアリかもw"
+mode = "hiragana"
+expected = "いわぎりなたならぎりアリかもw"
+
+[[case]]
+input = "人格排泄?"
+mode = "hiragana"
+expected = "じんかくはいせつ?"
+
+[[case]]
+input = "動物も決まった場所で排泄するから思ったほどでもない 無いとは言っていない"
+mode = "hiragana"
+expected = "どうぶつもきまったばしょではいせつするからおもったほどでもない ないとはいっていない"
+
+[[case]]
+input = "趙輝夜姫"
+mode = "hiragana"
+expected = "ちょうかぐやひめ"
+
+[[case]]
+input = "ふつうは趙雲とかいかない?"
+mode = "hiragana"
+expected = "ふつうはちょううんとかいかない?"
+
+[[case]]
+input = "涌井?"
+mode = "hiragana"
+expected = "わくい?"
+
+[[case]]
+input = "涌井系投法かっけえな"
+mode = "hiragana"
+expected = "わくいけいとうほうかっけえな"
+
+[[case]]
+input = "どこから涌いたんや..."
+mode = "hiragana"
+expected = "どこからわいたんや..."
+
+[[case]]
+input = "焙煎しないとしないんかな"
+mode = "hiragana"
+expected = "ばいせんしないとしないんかな"
+
+[[case]]
+input = "ガストーチで焙ろうぜw"
+mode = "hiragana"
+expected = "ガストーチであぶろうぜw"
+
+[[case]]
+input = "セブンイレブンの水素焙煎コーヒーはんまい"
+mode = "hiragana"
+expected = "セブンイレブンのすいそばいせんコーヒーはんまい"
+
+[[case]]
+input = "霊柩車か"
+mode = "hiragana"
+expected = "れいきゅうしゃか"
+
+[[case]]
+input = "空の柩だ!よかった"
+mode = "hiragana"
+expected = "そらのひつぎだ!よかった"
+
+[[case]]
+input = "黒柩 兎"
+mode = "hiragana"
+expected = "くろひつぎ うさぎ"
+
+[[case]]
+input = "開墾中"
+mode = "hiragana"
+expected = "かいこんちゅう"
+
+[[case]]
+input = "墾田永年私財法"
+mode = "hiragana"
+expected = "こんでんえいねんしざいほう"
+
+[[case]]
+input = "開墾お疲れ様〜"
+mode = "hiragana"
+expected = "かいこんおつかれさま"
+
+[[case]]
+input = "簒奪のマリン"
+mode = "hiragana"
+expected = "さんだつのマリン"
+
+[[case]]
+input = "王位簒奪しよう"
+mode = "hiragana"
+expected = "おういさんだつしよう"
+
+[[case]]
+input = "略奪!簒奪!強奪!"
+mode = "hiragana"
+expected = "りゃくだつ!さんだつ!ごうだつ!"
+
+[[case]]
+input = "老獪なピッチング"
+mode = "hiragana"
+expected = "ろうかいなピッチング"
+
+[[case]]
+input = "抑え方が老獪になってきた"
+mode = "hiragana"
+expected = "おさえほうがろうかいになってきた"
+
+[[case]]
+input = "欺瞞!"
+mode = "hiragana"
+expected = "ぎまん!"
+
+[[case]]
+input = "戦争中に欺瞞情報合戦するのは普通のことです。"
+mode = "hiragana"
+expected = "せんそうちゅうにぎまんじょうほうかっせんするのはふつうのことです。"
+
+[[case]]
+input = "勅命ぞ"
+mode = "hiragana"
+expected = "ちょくめいぞ"
+
+[[case]]
+input = "王の勅命を拒否"
+mode = "hiragana"
+expected = "おうのちょくめいをきょひ"
+
+[[case]]
+input = "伝令じゃなくて勅令だろこれ"
+mode = "hiragana"
+expected = "でんれいじゃなくてちょくれいだろこれ"
+
+[[case]]
+input = "右も左もわからない(勅諭)"
+mode = "hiragana"
+expected = "みぎもひだりもわからない(ちょくゆ)"
+
+[[case]]
+input = "この邊でOK"
+mode = "hiragana"
+expected = "このへんでオーケー"
+
+[[case]]
+input = "まあ渡邊が取れれば全ては好転する"
+mode = "hiragana"
+expected = "まあわたなべがとれればすべてはこうてんする"
+
