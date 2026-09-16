@@ -1,0 +1,200 @@
+[[case]]
+input = "大阪松井稼頭央"
+mode = "hiragana"
+expected = "おおさかまついかずお"
+
+[[case]]
+input = "稼頭央ねらう"
+mode = "hiragana"
+expected = "かずおねらう"
+
+[[case]]
+input = "稼頭央で草"
+mode = "hiragana"
+expected = "かずおでくさ"
+
+[[case]]
+input = "松井稼頭央w"
+mode = "hiragana"
+expected = "まついかずおw"
+
+[[case]]
+input = "フブさんは稼頭央"
+mode = "hiragana"
+expected = "フブさんはかずお"
+
+[[case]]
+input = "イチローというか松井稼頭央"
+mode = "hiragana"
+expected = "イチローというかまついかずお"
+
+[[case]]
+input = "なつかしの南央美"
+mode = "hiragana"
+expected = "なつかしのなおみ"
+
+[[case]]
+input = "南央美さんのここのセリフ"
+mode = "hiragana"
+expected = "なおみさんのここのセリフ"
+
+[[case]]
+input = "川平慈英かな"
+mode = "hiragana"
+expected = "かびらじえいかな"
+
+[[case]]
+input = "川平慈英、最近見ないな"
+mode = "hiragana"
+expected = "かびらじえい、さいきんみないな"
+
+[[case]]
+input = "森本稀哲やろ"
+mode = "hiragana"
+expected = "もりもとひちょりやろ"
+
+[[case]]
+input = "稀哲もいるんか"
+mode = "hiragana"
+expected = "ひちょりもいるんか"
+
+[[case]]
+input = "出たな稀哲"
+mode = "hiragana"
+expected = "でたなひちょり"
+
+[[case]]
+input = "ピッコロの稀哲"
+mode = "hiragana"
+expected = "ピッコロのひちょり"
+
+[[case]]
+input = "白鳥哲だから"
+mode = "hiragana"
+expected = "しらとりてつだから"
+
+[[case]]
+input = "白鳥哲いいだろ?"
+mode = "hiragana"
+expected = "しらとりてついいだろ?"
+
+[[case]]
+input = "凪と玲央かな?"
+mode = "hiragana"
+expected = "なぎとれおかな?"
+
+[[case]]
+input = "溢してるしw"
+mode = "hiragana"
+expected = "こぼしてるしw"
+
+[[case]]
+input = "溢さないように"
+mode = "hiragana"
+expected = "こぼさないように"
+
+[[case]]
+input = "水溢したんかw"
+mode = "hiragana"
+expected = "みずこぼしたんかw"
+
+[[case]]
+input = "ポロポロ溢しそうw"
+mode = "hiragana"
+expected = "ポロポロこぼしそうw"
+
+[[case]]
+input = "カレー溢していったわ"
+mode = "hiragana"
+expected = "カレーこぼしていったわ"
+
+[[case]]
+input = "風紀委員長きた"
+mode = "hiragana"
+expected = "ふうきいいんちょうきた"
+
+[[case]]
+input = "2度寝"
+mode = "hiragana"
+expected = "にどね"
+
+[[case]]
+input = "2度寝羨ましい"
+mode = "hiragana"
+expected = "にどねうらやましい"
+
+[[case]]
+input = "2度寝タイム"
+mode = "hiragana"
+expected = "にどねタイム"
+
+[[case]]
+input = "少しご飯をたべて2度寝?"
+mode = "hiragana"
+expected = "すこしごはんをたべてにどね?"
+
+[[case]]
+input = "稲葉篤紀?"
+mode = "hiragana"
+expected = "いなばあつのり?"
+
+[[case]]
+input = "稲葉篤紀か"
+mode = "hiragana"
+expected = "いなばあつのりか"
+
+[[case]]
+input = "南葛か?"
+mode = "hiragana"
+expected = "なんかつか?"
+
+[[case]]
+input = "南葛強すぎる"
+mode = "hiragana"
+expected = "なんかつつよすぎる"
+
+[[case]]
+input = "東邦と南葛おもろそうw"
+mode = "hiragana"
+expected = "とうほうとなんかつおもろそうw"
+
+[[case]]
+input = "南葛の防波堤"
+mode = "hiragana"
+expected = "なんかつのぼうはてい"
+
+[[case]]
+input = "大分侵食されてるなw"
+mode = "hiragana"
+expected = "だいぶしんしょくされてるなw"
+
+[[case]]
+input = "溢れるスイカ"
+mode = "hiragana"
+expected = "あふれるスイカ"
+
+[[case]]
+input = "委員長が話してた"
+mode = "hiragana"
+expected = "いいんちょうがはなしてた"
+
+[[case]]
+input = "やっぱり哲人w"
+mode = "hiragana"
+expected = "やっぱりてつじんw"
+
+[[case]]
+input = "渡哲也だっけ?"
+mode = "hiragana"
+expected = "わたりてつやだっけ?"
+
+[[case]]
+input = "なんの葛藤だよw"
+mode = "hiragana"
+expected = "なんのかっとうだよw"
+
+[[case]]
+input = "大分県"
+mode = "hiragana"
+expected = "おおいたけん"
+
