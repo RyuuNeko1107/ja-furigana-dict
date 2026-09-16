@@ -1,0 +1,335 @@
+[[case]]
+input = "多分穴落としだからリスポーン時間早いのかな"
+mode = "hiragana"
+expected = "たぶんあなおとしだからリスポーンじかんはやいのかな"
+
+[[case]]
+input = "下穴開くかも"
+mode = "hiragana"
+expected = "したあなひらくかも"
+
+[[case]]
+input = "今回正直穴チャンスだと思う"
+mode = "hiragana"
+expected = "こんかいしょうじきあなチャンスだとおもう"
+
+[[case]]
+input = "中穴だね"
+mode = "hiragana"
+expected = "なかあなだね"
+
+[[case]]
+input = "小穴だね"
+mode = "hiragana"
+expected = "こあなだね"
+
+[[case]]
+input = "雨穴さんにみえる"
+mode = "hiragana"
+expected = "うけつさんにみえる"
+
+[[case]]
+input = "無職共w"
+mode = "hiragana"
+expected = "むしょくどもw"
+
+[[case]]
+input = "クッション野郎共w"
+mode = "hiragana"
+expected = "クッションやろうどもw"
+
+[[case]]
+input = "汗塩w"
+mode = "hiragana"
+expected = "あせじおw"
+
+[[case]]
+input = "手汗塩かな"
+mode = "hiragana"
+expected = "てあせじおかな"
+
+[[case]]
+input = "脇塩"
+mode = "hiragana"
+expected = "わきじお"
+
+[[case]]
+input = "自家製塩w"
+mode = "hiragana"
+expected = "じかせいしおw"
+
+[[case]]
+input = "盛塩しておこう"
+mode = "hiragana"
+expected = "もりしおしておこう"
+
+[[case]]
+input = "圧倒的塩だったwww"
+mode = "hiragana"
+expected = "あっとうてきしおだったwww"
+
+[[case]]
+input = "鼻塩塩"
+mode = "hiragana"
+expected = "はなしおしお"
+
+[[case]]
+input = "画面緑やん"
+mode = "hiragana"
+expected = "がめんみどりやん"
+
+[[case]]
+input = "これ全部緑になる?w"
+mode = "hiragana"
+expected = "これぜんぶみどりになる?w"
+
+[[case]]
+input = "皆緑にすれば実質メン限"
+mode = "hiragana"
+expected = "みなみどりにすればじっしつメンげん"
+
+[[case]]
+input = "名前緑だらけにw"
+mode = "hiragana"
+expected = "なまえみどりだらけにw"
+
+[[case]]
+input = "圧倒的緑が生い茂ってる"
+mode = "hiragana"
+expected = "あっとうてきみどりがおいしげってる"
+
+[[case]]
+input = "今緑の見えたね"
+mode = "hiragana"
+expected = "いまみどりのみえたね"
+
+[[case]]
+input = "ポケモン赤緑的な"
+mode = "hiragana"
+expected = "ポケモンあかみどりてきな"
+
+[[case]]
+input = "豚鼻だから"
+mode = "hiragana"
+expected = "ぶたばなだから"
+
+[[case]]
+input = "狼鼻がだめになっちゃう"
+mode = "hiragana"
+expected = "おおかみばながだめになっちゃう"
+
+[[case]]
+input = "流石桜咲"
+mode = "hiragana"
+expected = "さすがさくらさ"
+
+[[case]]
+input = "新桜咲の星谷は一味違う"
+mode = "hiragana"
+expected = "しんさくらさのほしやはひとあじちがう"
+
+[[case]]
+input = "新生桜咲高校のスタートや!"
+mode = "hiragana"
+expected = "しんせいさくらさこうこうのスタートや!"
+
+[[case]]
+input = "圧倒的桜咲!!"
+mode = "hiragana"
+expected = "あっとうてきさくらさ!!"
+
+[[case]]
+input = "唯一桜咲にいなかったのがちはだね"
+mode = "hiragana"
+expected = "ゆいいつさくらさにいなかったのがちはだね"
+
+[[case]]
+input = "芝桜綺麗ねw"
+mode = "hiragana"
+expected = "しばざくらきれいねw"
+
+[[case]]
+input = "激渋やなw"
+mode = "hiragana"
+expected = "げきしぶやなw"
+
+[[case]]
+input = "ファイター倍率渋すぎて弱いかも"
+mode = "hiragana"
+expected = "ファイターばいりつしぶすぎてよわいかも"
+
+[[case]]
+input = "ころねスキーって声渋めなんかw"
+mode = "hiragana"
+expected = "ころねスキーってこえしぶめなんかw"
+
+[[case]]
+input = "シュールな共演と締め方は"
+mode = "hiragana"
+expected = "シュールなきょうえんとしめかたは"
+
+[[case]]
+input = "扱い方気を付けないとすぐ駄目になるよ?"
+mode = "hiragana"
+expected = "あつかいかたきをつけないとすぐだめになるよ?"
+
+[[case]]
+input = "糖質扱いやんけw"
+mode = "hiragana"
+expected = "とうしつあつかいやんけw"
+
+[[case]]
+input = "守衛さん雇うしかw"
+mode = "hiragana"
+expected = "しゅえいさんやとうしかw"
+
+[[case]]
+input = "土座衛門にならないようにね"
+mode = "hiragana"
+expected = "どざえもんにならないようにね"
+
+[[case]]
+input = "ここ桜耳じゃない"
+mode = "hiragana"
+expected = "ここさくらみみじゃない"
+
+[[case]]
+input = "何百回もやって感覚掴む他ない"
+mode = "hiragana"
+expected = "なんびゃっかいもやってかんかくつかむほかない"
+
+[[case]]
+input = "桜と言えばこれか森山直太朗"
+mode = "hiragana"
+expected = "さくらといえばこれかもりやまなおたろう"
+
+[[case]]
+input = "夜桜銀二"
+mode = "hiragana"
+expected = "よざくらぎんじ"
+
+[[case]]
+input = "橋下徹VS桜井誠"
+mode = "hiragana"
+expected = "はしもととおるブイエスさくらいまこと"
+
+[[case]]
+input = "ここらへんが落とし処かな?"
+mode = "hiragana"
+expected = "ここらへんがおとしどころかな?"
+
+[[case]]
+input = "千本桜かっけえな"
+mode = "hiragana"
+expected = "せんぼんざくらかっけえな"
+
+[[case]]
+input = "桜の花びらでスリップしそう"
+mode = "hiragana"
+expected = "さくらのはなびらでスリップしそう"
+
+[[case]]
+input = "桜井さん(*^^*)"
+mode = "hiragana"
+expected = "さくらいさん(*^^*)"
+
+[[case]]
+input = "ウユニ塩湖にさく桜"
+mode = "hiragana"
+expected = "ウユニしおこにさくさくら"
+
+[[case]]
+input = "手塩おにぎりww"
+mode = "hiragana"
+expected = "てしおおにぎりww"
+
+[[case]]
+input = "伯方の塩"
+mode = "hiragana"
+expected = "はかたのしお"
+
+[[case]]
+input = "緑のカーペットぉぉぉ!!!!"
+mode = "hiragana"
+expected = "みどりのカーペットぉぉぉ!!!!"
+
+[[case]]
+input = "緑茶応援したい"
+mode = "hiragana"
+expected = "りょくちゃおうえんしたい"
+
+[[case]]
+input = "どんどん緑化していきますね"
+mode = "hiragana"
+expected = "どんどんりょっかしていきますね"
+
+[[case]]
+input = "耳鼻科行ったんか"
+mode = "hiragana"
+expected = "じびかいったんか"
+
+[[case]]
+input = "阿鼻叫喚"
+mode = "hiragana"
+expected = "あびきょうかん"
+
+[[case]]
+input = "渋谷だ"
+mode = "hiragana"
+expected = "しぶやだ"
+
+[[case]]
+input = "イベントが渋滞してるw"
+mode = "hiragana"
+expected = "イベントがじゅうたいしてるw"
+
+[[case]]
+input = "完璧なコーナリングだ!"
+mode = "hiragana"
+expected = "かんぺきなコーナリングだ!"
+
+[[case]]
+input = "キーファと双璧のチャゴス"
+mode = "hiragana"
+expected = "キーファとそうへきのチャゴス"
+
+[[case]]
+input = "お客さん困りますねぇ"
+mode = "hiragana"
+expected = "おきゃくさんこまりますねぇ"
+
+[[case]]
+input = "刺客"
+mode = "hiragana"
+expected = "しかく"
+
+[[case]]
+input = "どん兵衛"
+mode = "hiragana"
+expected = "どんべえ"
+
+[[case]]
+input = "自衛隊の音楽隊もいいぞ"
+mode = "hiragana"
+expected = "じえいたいのおんがくたいもいいぞ"
+
+[[case]]
+input = "百合に挟まるやつを処しそう"
+mode = "hiragana"
+expected = "ゆりにはさまるやつをしょしそう"
+
+[[case]]
+input = "八百長大国ニッポン"
+mode = "hiragana"
+expected = "やおちょうたいこくニッポン"
+
+[[case]]
+input = "秘書扱いやめてあげてw"
+mode = "hiragana"
+expected = "ひしょあつかいやめてあげてw"
+
+[[case]]
+input = "便秘?"
+mode = "hiragana"
+expected = "べんぴ?"
+
