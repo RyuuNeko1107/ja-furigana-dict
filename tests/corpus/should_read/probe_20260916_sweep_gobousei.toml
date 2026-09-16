@@ -1,0 +1,130 @@
+[[case]]
+input = "哀川翔かよw"
+mode = "hiragana"
+expected = "あいかわしょうかよw"
+
+[[case]]
+input = "おかゆんはもはや宇宙サイズの五芒星"
+mode = "hiragana"
+expected = "おかゆんはもはやうちゅうサイズのごぼうせい"
+
+[[case]]
+input = "尻尾いいね、五芒星よきよき"
+mode = "hiragana"
+expected = "しっぽいいね、ごぼうせいよきよき"
+
+[[case]]
+input = "井之頭五郎みたいに心の中で喋ってそう"
+mode = "hiragana"
+expected = "いのがしらごろうみたいにこころのなかでしゃべってそう"
+
+[[case]]
+input = "井之頭五郎に聞こうw"
+mode = "hiragana"
+expected = "いのがしらごろうにきこうw"
+
+[[case]]
+input = "李平蔵は日本人を守る政党は潰すと言っている"
+mode = "hiragana"
+expected = "りへいぞうはにほんじんをまもるせいとうはつぶすといっている"
+
+[[case]]
+input = "コードガノス 叛逆の魚竜種"
+mode = "hiragana"
+expected = "コードガノス はんぎゃくのぎょりゅうしゅ"
+
+[[case]]
+input = "偉い竜巻き"
+mode = "hiragana"
+expected = "えらいたつまき"
+
+[[case]]
+input = "デーモンの娼館欲しいね"
+mode = "hiragana"
+expected = "デーモンのしょうかんほしいね"
+
+[[case]]
+input = "いまのは前調べた時鍵かかってたね"
+mode = "hiragana"
+expected = "いまのはまえしらべたときかぎかかってたね"
+
+[[case]]
+input = "前回探索中鍵かかってた気がするね"
+mode = "hiragana"
+expected = "ぜんかいたんさくちゅうかぎかかってたきがするね"
+
+[[case]]
+input = "ドロップ率低くて人数分鍵集めるとか?"
+mode = "hiragana"
+expected = "ドロップりつひくくてにんずうぶんかぎあつめるとか?"
+
+[[case]]
+input = "鍵に見向きをしないw"
+mode = "hiragana"
+expected = "かぎにみむきをしないw"
+
+[[case]]
+input = "あ、双六爺さんカードくれるパターンじゃないんや"
+mode = "hiragana"
+expected = "あ、すごろくじいさんカードくれるパターンじゃないんや"
+
+[[case]]
+input = "Lv3×5匹目標やね"
+mode = "hiragana"
+expected = "Lv3かけるごひきもくひょうやね"
+
+[[case]]
+input = "今津波来てるよ"
+mode = "hiragana"
+expected = "いまつなみきてるよ"
+
+[[case]]
+input = "米津玄師のやつ?"
+mode = "hiragana"
+expected = "よねづげんしのやつ?"
+
+[[case]]
+input = "ハチPつまり米津P"
+mode = "hiragana"
+expected = "ハチPつまりよねづP"
+
+[[case]]
+input = "さすがおかゆんのマウスパッド。鍛え方が違う"
+mode = "hiragana"
+expected = "さすがおかゆんのマウスパッド。きたえかたがちがう"
+
+[[case]]
+input = "ぺこーらとミレーユの鍛え方が足りんよ"
+mode = "hiragana"
+expected = "ぺこーらとミレーユのきたえかたがたりんよ"
+
+[[case]]
+input = "俺涙出てきたよ......"
+mode = "hiragana"
+expected = "おれなみだでてきたよ......"
+
+[[case]]
+input = "羽蛾涙拭けよ"
+mode = "hiragana"
+expected = "はがなみだふけよ"
+
+[[case]]
+input = "偽らぼ"
+mode = "hiragana"
+expected = "にせらぼ"
+
+[[case]]
+input = "偽んなたんw"
+mode = "hiragana"
+expected = "にせんなたんw"
+
+[[case]]
+input = "8大好きな俺涙目"
+mode = "hiragana"
+expected = "はちだいすきなおれなみだめ"
+
+[[case]]
+input = "みこち俺涙を拭いてあげるよ"
+mode = "hiragana"
+expected = "みこちおれなみだをふいてあげるよ"
+
