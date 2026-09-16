@@ -1,0 +1,95 @@
+[[case]]
+input = "浅漬けってうまいよな"
+mode = "hiragana"
+expected = "あさづけってうまいよな"
+
+[[case]]
+input = "わかるが浅えw"
+mode = "hiragana"
+expected = "わかるがあさえw"
+
+[[case]]
+input = "浅っさいなw"
+mode = "hiragana"
+expected = "あさっさいなw"
+
+[[case]]
+input = "ぺこちゃん浅帰りしたね"
+mode = "hiragana"
+expected = "ぺこちゃんあさがえりしたね"
+
+[[case]]
+input = "気付きに至れるかどうか"
+mode = "hiragana"
+expected = "きつきにいたれるかどうか"
+
+[[case]]
+input = "かぼちゃランタンでもいいから灯りおいてくれ"
+mode = "hiragana"
+expected = "かぼちゃランタンでもいいからあかりおいてくれ"
+
+[[case]]
+input = "末脚がキレてるな"
+mode = "hiragana"
+expected = "すえあしがキレてるな"
+
+[[case]]
+input = "貯湯槽やね"
+mode = "hiragana"
+expected = "ちょとうそうやね"
+
+[[case]]
+input = "山本祐大のリードやね"
+mode = "hiragana"
+expected = "やまもとゆうだいのリードやね"
+
+[[case]]
+input = "前屈してください"
+mode = "hiragana"
+expected = "ぜんくつしてください"
+
+[[case]]
+input = "前屈するのきつい"
+mode = "hiragana"
+expected = "ぜんくつするのきつい"
+
+[[case]]
+input = "本番喉枯れたらどうする"
+mode = "hiragana"
+expected = "ほんばんのどかれたらどうする"
+
+[[case]]
+input = "涙噴けよ"
+mode = "hiragana"
+expected = "なみだふけよ"
+
+[[case]]
+input = "装備剥いだ?"
+mode = "hiragana"
+expected = "そうびはいだ?"
+
+[[case]]
+input = "身包み剥ぐぞ"
+mode = "hiragana"
+expected = "みぐるみはぐぞ"
+
+[[case]]
+input = "引ん剥くぞ"
+mode = "hiragana"
+expected = "ひんむくぞ"
+
+[[case]]
+input = "見ぐるみ剥がしそう"
+mode = "hiragana"
+expected = "みぐるみはがしそう"
+
+[[case]]
+input = "回復に徹さないと"
+mode = "hiragana"
+expected = "かいふくにてっさないと"
+
+[[case]]
+input = "則本すごいな"
+mode = "hiragana"
+expected = "のりもとすごいな"
+
