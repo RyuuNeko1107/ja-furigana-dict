@@ -1,0 +1,25 @@
+[[case]]
+input = "土隱"
+mode = "hiragana"
+expected = "つちがくれ"
+
+[[case]]
+input = "土隠"
+mode = "hiragana"
+expected = "つちがくれ"
+
+[[case]]
+input = "神隠し"
+mode = "hiragana"
+expected = "かみかくし"
+
+[[case]]
+input = "隠密"
+mode = "hiragana"
+expected = "おんみつ"
+
+[[case]]
+input = "土遁"
+mode = "hiragana"
+expected = "どとん"
+
