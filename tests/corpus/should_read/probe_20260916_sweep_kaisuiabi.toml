@@ -1,0 +1,170 @@
+[[case]]
+input = "海水浴びてたし"
+mode = "hiragana"
+expected = "かいすいあびてたし"
+
+[[case]]
+input = "海水浴びてた"
+mode = "hiragana"
+expected = "かいすいあびてた"
+
+[[case]]
+input = "海水浴びた"
+mode = "hiragana"
+expected = "かいすいあびた"
+
+[[case]]
+input = "まさか委員長からきけると思わんかったわ"
+mode = "hiragana"
+expected = "まさかいいんちょうからきけるとおもわんかったわ"
+
+[[case]]
+input = "まさか委員長から"
+mode = "hiragana"
+expected = "まさかいいんちょうから"
+
+[[case]]
+input = "まさか委員長"
+mode = "hiragana"
+expected = "まさかいいんちょう"
+
+[[case]]
+input = "学級委員長さん!?"
+mode = "hiragana"
+expected = "がっきゅういいんちょうさん!?"
+
+[[case]]
+input = "いつもより委員長かわいい?"
+mode = "hiragana"
+expected = "いつもよりいいんちょうかわいい?"
+
+[[case]]
+input = "罵声浴びさせたりするよな"
+mode = "hiragana"
+expected = "ばせいあびさせたりするよな"
+
+[[case]]
+input = "浴びたぁ"
+mode = "hiragana"
+expected = "あびたぁ"
+
+[[case]]
+input = "草刈っても1円なのか?"
+mode = "hiragana"
+expected = "くさかってもいちえんなのか?"
+
+[[case]]
+input = "芝刈りやさん"
+mode = "hiragana"
+expected = "しばかりやさん"
+
+[[case]]
+input = "石川典行?"
+mode = "hiragana"
+expected = "いしかわのりゆき?"
+
+[[case]]
+input = "木村萌奈"
+mode = "hiragana"
+expected = "きむらもな"
+
+[[case]]
+input = "海水浴に行く"
+mode = "hiragana"
+expected = "かいすいよくにいく"
+
+[[case]]
+input = "海水浴かな"
+mode = "hiragana"
+expected = "かいすいよくかな"
+
+[[case]]
+input = "日光浴が好き"
+mode = "hiragana"
+expected = "にっこうよくがすき"
+
+[[case]]
+input = "入浴剤"
+mode = "hiragana"
+expected = "にゅうよくざい"
+
+[[case]]
+input = "委員長が話してた"
+mode = "hiragana"
+expected = "いいんちょうがはなしてた"
+
+[[case]]
+input = "教育委員会"
+mode = "hiragana"
+expected = "きょういくいいんかい"
+
+[[case]]
+input = "予算委員会"
+mode = "hiragana"
+expected = "よさんいいんかい"
+
+[[case]]
+input = "草刈り機w"
+mode = "hiragana"
+expected = "くさかりきw"
+
+[[case]]
+input = "芝刈り機だよ"
+mode = "hiragana"
+expected = "しばがりきだよ"
+
+[[case]]
+input = "罵声浴びせてる"
+mode = "hiragana"
+expected = "ばせいあびせてる"
+
+[[case]]
+input = "シャワー浴びた"
+mode = "hiragana"
+expected = "シャワーあびた"
+
+[[case]]
+input = "まさか勝つとは"
+mode = "hiragana"
+expected = "まさかかつとは"
+
+[[case]]
+input = "まさかの展開"
+mode = "hiragana"
+expected = "まさかのてんかい"
+
+[[case]]
+input = "日光浴びる"
+mode = "hiragana"
+expected = "にっこうあびる"
+
+[[case]]
+input = "岩盤浴"
+mode = "hiragana"
+expected = "がんばんよく"
+
+[[case]]
+input = "稲刈り"
+mode = "hiragana"
+expected = "いねかり"
+
+[[case]]
+input = "角刈りにしよう"
+mode = "hiragana"
+expected = "かくがりにしよう"
+
+[[case]]
+input = "花京院典明"
+mode = "hiragana"
+expected = "かきょういんのりあき"
+
+[[case]]
+input = "浴衣だ!"
+mode = "hiragana"
+expected = "ゆかただ!"
+
+[[case]]
+input = "草刈りしてたよ"
+mode = "hiragana"
+expected = "くさかりしてたよ"
+
