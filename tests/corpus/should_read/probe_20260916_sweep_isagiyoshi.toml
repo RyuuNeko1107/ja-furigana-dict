@@ -1,0 +1,145 @@
+[[case]]
+input = "ウユニ塩湖見たい"
+mode = "hiragana"
+expected = "ウユニえんこみたい"
+
+[[case]]
+input = "カール、湖池屋は、油揚げで"
+mode = "hiragana"
+expected = "カール、こいけやは、あぶらあげで"
+
+[[case]]
+input = "くっしゃろ湖"
+mode = "hiragana"
+expected = "くっしゃろこ"
+
+[[case]]
+input = "外殻"
+mode = "hiragana"
+expected = "がいかく"
+
+[[case]]
+input = "耐圧殻大丈夫なんか"
+mode = "hiragana"
+expected = "たいあつかくだいじょうぶなんか"
+
+[[case]]
+input = "セミの脱け殻ならよう見る"
+mode = "hiragana"
+expected = "セミのぬけがらならようみる"
+
+[[case]]
+input = "甲賀弦之介"
+mode = "hiragana"
+expected = "こうがげんのすけ"
+
+[[case]]
+input = "羽生結弦並みの回転"
+mode = "hiragana"
+expected = "はぶゆづるなみのかいてん"
+
+[[case]]
+input = "弦の並びが逆"
+mode = "hiragana"
+expected = "げんのならびがぎゃく"
+
+[[case]]
+input = "今媚び中よ"
+mode = "hiragana"
+expected = "いまこびちゅうよ"
+
+[[case]]
+input = "潔すぎたw"
+mode = "hiragana"
+expected = "いさぎよすぎたw"
+
+[[case]]
+input = "潔よし"
+mode = "hiragana"
+expected = "いさぎよし"
+
+[[case]]
+input = "潔よすぎるww"
+mode = "hiragana"
+expected = "いさぎよすぎるww"
+
+[[case]]
+input = "潔ぎよく辞めろや"
+mode = "hiragana"
+expected = "いさぎよくやめろや"
+
+[[case]]
+input = "タコの足の形が歪つ"
+mode = "hiragana"
+expected = "タコのあしのかたちがいびつ"
+
+[[case]]
+input = "全部灰になるぞw"
+mode = "hiragana"
+expected = "ぜんぶはいになるぞw"
+
+[[case]]
+input = "じゃあふわぐさパークを作ろう、管理人黛灰"
+mode = "hiragana"
+expected = "じゃあふわぐさパークをつくろう、かんりにんまゆずみはい"
+
+[[case]]
+input = "毎日街に灰が降ってますが?"
+mode = "hiragana"
+expected = "まいにちまちにはいがふってますが?"
+
+[[case]]
+input = "加湿で潤いまーす!"
+mode = "hiragana"
+expected = "かしつでうるおいまーす!"
+
+[[case]]
+input = "また潤えるのか"
+mode = "hiragana"
+expected = "またうるおえるのか"
+
+[[case]]
+input = "名倉 潤"
+mode = "hiragana"
+expected = "なぐら じゅん"
+
+[[case]]
+input = "堂上直倫wwwwww"
+mode = "hiragana"
+expected = "どうじょうなおみちwwwwww"
+
+[[case]]
+input = "これをショーと呼ぶ倫理観よ"
+mode = "hiragana"
+expected = "これをショーとよぶりんりかんよ"
+
+[[case]]
+input = "沢山銅〜"
+mode = "hiragana"
+expected = "たくさんどう"
+
+[[case]]
+input = "いや、海沿よ"
+mode = "hiragana"
+expected = "いや、うみぞいよ"
+
+[[case]]
+input = "壁沿いすぎる"
+mode = "hiragana"
+expected = "かべぞいすぎる"
+
+[[case]]
+input = "トワ様とちは巻沿いw"
+mode = "hiragana"
+expected = "トワさまとちはまきぞいw"
+
+[[case]]
+input = "簡潔すぎて林ライス"
+mode = "hiragana"
+expected = "かんけつすぎてはやしライス"
+
+[[case]]
+input = "清潔すぎる"
+mode = "hiragana"
+expected = "せいけつすぎる"
+

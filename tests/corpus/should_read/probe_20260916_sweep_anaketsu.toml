@@ -236,7 +236,7 @@ expected = "さくらいさん(*^^*)"
 [[case]]
 input = "ウユニ塩湖にさく桜"
 mode = "hiragana"
-expected = "ウユニしおこにさくさくら"
+expected = "ウユニえんこにさくさくら"
 
 [[case]]
 input = "手塩おにぎりww"
