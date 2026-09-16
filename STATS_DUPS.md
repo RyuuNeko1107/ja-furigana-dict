@@ -8,13 +8,14 @@
 
 (なし — divergent reading 0 件、 健全)
 
-## 同一 reading (5 件)
+## 同一 reading (6 件)
 
 実害なし (jukugo merge で同値が上書きされても reading 不変)。 整理目安として list 化。
 長期的にどちらか 1 ファイルに寄せたいケースを発見する用。
 
 | surface | reading | files |
 |---|---|---|
+| 上方修正 | ジョウホウシュウセイ | `core/jukugo/basic/four_char.toml`, `core/jukugo/basic/general.toml` |
 | 地固まる | ジカタマル | `core/jukugo/basic/general.toml`, `core/jukugo/humanities/idioms.toml` |
 | 扇要 | オウギカナメ | `core/jukugo/basic/general.toml`, `core/works/anime/geass.toml` |
 | 桃鈴家 | モモスズケ | `core/jukugo/basic/general.toml`, `core/works/vtuber/hololive.toml` |
