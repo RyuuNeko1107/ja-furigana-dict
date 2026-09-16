@@ -1,0 +1,65 @@
+[[case]]
+input = "メテオ計劃"
+mode = "hiragana"
+expected = "メテオけいかく"
+
+[[case]]
+input = "等40年想到我有合理計劃"
+mode = "hiragana"
+expected = "とうよんじゅうねんそうとうわれゆうごうりけいかく"
+
+[[case]]
+input = "計劃一張我。你的一張"
+mode = "hiragana"
+expected = "けいかくいつちょうわれ。なんじてきいっちょう"
+
+[[case]]
+input = "計劃通"
+mode = "hiragana"
+expected = "けいかくつう"
+
+[[case]]
+input = "コレは洗堰だね"
+mode = "hiragana"
+expected = "コレはあらいぜきだね"
+
+[[case]]
+input = "洗堰の近隣住民です、空から見る機会が無いのでメーテレかな?ありがとうございます"
+mode = "hiragana"
+expected = "あらいぜきのきんりんじゅうみんです、そらからみるきかいがないのでメーテレかな?ありがとうございます"
+
+[[case]]
+input = "計劃"
+mode = "hiragana"
+expected = "けいかく"
+
+[[case]]
+input = "洗堰"
+mode = "hiragana"
+expected = "あらいぜき"
+
+[[case]]
+input = "計画"
+mode = "hiragana"
+expected = "けいかく"
+
+[[case]]
+input = "区劃"
+mode = "hiragana"
+expected = "くかく"
+
+[[case]]
+input = "劃っ"
+mode = "hiragana"
+expected = "わっ"
+
+[[case]]
+input = "堰き止めてるw"
+mode = "hiragana"
+expected = "せきとめてるw"
+
+[[case]]
+input = "堰きかなりでてたね"
+mode = "hiragana"
+expected = "せきかなりでてたね"
+
