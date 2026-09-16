@@ -1,0 +1,65 @@
+[[case]]
+input = "大分昔から違うな"
+mode = "hiragana"
+expected = "だいぶむかしからちがうな"
+
+[[case]]
+input = "大分昔の話"
+mode = "hiragana"
+expected = "だいぶむかしのはなし"
+
+[[case]]
+input = "「私女なんですけど?」"
+mode = "hiragana"
+expected = "「わたしおんななんですけど?」"
+
+[[case]]
+input = "私女だけど"
+mode = "hiragana"
+expected = "わたしおんなだけど"
+
+[[case]]
+input = "やっと出逢えたね"
+mode = "hiragana"
+expected = "やっとであえたね"
+
+[[case]]
+input = "出逢えた奇跡"
+mode = "hiragana"
+expected = "であえたきせき"
+
+[[case]]
+input = "横寝しやすい枕"
+mode = "hiragana"
+expected = "よこねしやすいまくら"
+
+[[case]]
+input = "横寝派です"
+mode = "hiragana"
+expected = "よこねはです"
+
+[[case]]
+input = "取説案件だな"
+mode = "hiragana"
+expected = "とりせつあんけんだな"
+
+[[case]]
+input = "延長された"
+mode = "hiragana"
+expected = "えんちょうされた"
+
+[[case]]
+input = "延長されるだけ"
+mode = "hiragana"
+expected = "えんちょうされるだけ"
+
+[[case]]
+input = "先延ばしにするなよ"
+mode = "hiragana"
+expected = "さきのばしにするなよ"
+
+[[case]]
+input = "先延ばししないで"
+mode = "hiragana"
+expected = "さきのばししないで"
+
