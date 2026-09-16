@@ -1,0 +1,345 @@
+[[case]]
+input = "臭う勃ち"
+mode = "hiragana"
+expected = "におうだち"
+
+[[case]]
+input = "こっちも仁王勃ちw"
+mode = "hiragana"
+expected = "こっちもにおうだちw"
+
+[[case]]
+input = "勃つな"
+mode = "hiragana"
+expected = "たつな"
+
+[[case]]
+input = "マリンが勃った!!"
+mode = "hiragana"
+expected = "マリンがたった!!"
+
+[[case]]
+input = "まさかのキャッチャー争い勃発w"
+mode = "hiragana"
+expected = "まさかのキャッチャーあらそいぼっぱつw"
+
+[[case]]
+input = "ファーマー戦争勃発か"
+mode = "hiragana"
+expected = "ファーマーせんそうぼっぱつか"
+
+[[case]]
+input = "一揆勃発w"
+mode = "hiragana"
+expected = "いっきぼっぱつw"
+
+[[case]]
+input = "減税と規制緩和による小さな政府こそ経済勃興のカギだと思ってる"
+mode = "hiragana"
+expected = "げんぜいときせいかんわによるちいさなせいふこそけいざいぼっこうのカギだとおもってる"
+
+[[case]]
+input = "儒烏風亭"
+mode = "hiragana"
+expected = "じゅうふうてい"
+
+[[case]]
+input = "次は~儒烏風停~儒烏風停~"
+mode = "hiragana"
+expected = "つぎはじゅうふうていじゅうふうてい"
+
+[[case]]
+input = "どんだんずの切り込み隊長儒烏風亭らでん"
+mode = "hiragana"
+expected = "どんだんずのきりこみたいちょうじゅうふうていらでん"
+
+[[case]]
+input = "儒学"
+mode = "hiragana"
+expected = "じゅがく"
+
+[[case]]
+input = "襟裳"
+mode = "hiragana"
+expected = "えりも"
+
+[[case]]
+input = "まあ北朝鮮は襟裳岬またいで撃ち込んだんだけどね"
+mode = "hiragana"
+expected = "まあきたちょうせんはえりもみさきまたいでうちこんだんだけどね"
+
+[[case]]
+input = "馬子にも衣裳?"
+mode = "hiragana"
+expected = "まごにもいしょう?"
+
+[[case]]
+input = "あの衣裳の準備大変そうw"
+mode = "hiragana"
+expected = "あのいしょうのじゅんびたいへんそうw"
+
+[[case]]
+input = "伊都大附のライフはもう0よ"
+mode = "hiragana"
+expected = "いとだいふぞくのライフはもうぜろよ"
+
+[[case]]
+input = "あかつき大附属"
+mode = "hiragana"
+expected = "あかつきだいふぞく"
+
+[[case]]
+input = "府中大附属であるね"
+mode = "hiragana"
+expected = "ふちゅうだいふぞくであるね"
+
+[[case]]
+input = "東京大学医学部附属病院って打ったら?"
+mode = "hiragana"
+expected = "とうきょうだいがくいがくぶふぞくびょういんってうったら?"
+
+[[case]]
+input = "附則削除かー憲法違反違うのになぁ"
+mode = "hiragana"
+expected = "ふそくさくじょかーけんぽういはんちがうのになぁ"
+
+[[case]]
+input = "見附・・・三条は・・・?"
+mode = "hiragana"
+expected = "みつけさんじょうは?"
+
+[[case]]
+input = "船附な..."
+mode = "hiragana"
+expected = "ふなつけな..."
+
+[[case]]
+input = "顆粒"
+mode = "hiragana"
+expected = "かりゅう"
+
+[[case]]
+input = "顆粒だし入れるとおいしいよ"
+mode = "hiragana"
+expected = "かりゅうだしいれるとおいしいよ"
+
+[[case]]
+input = "そこから見たら一目瞭然か"
+mode = "hiragana"
+expected = "そこからみたらいちもくりょうぜんか"
+
+[[case]]
+input = "言語明瞭意味不明"
+mode = "hiragana"
+expected = "げんごめいりょういみふめい"
+
+[[case]]
+input = "恫喝こわい"
+mode = "hiragana"
+expected = "どうかつこわい"
+
+[[case]]
+input = "准尉は大出世だ"
+mode = "hiragana"
+expected = "じゅんいはだいしゅっせだ"
+
+[[case]]
+input = "ブレックス准将も泣いてます"
+mode = "hiragana"
+expected = "ブレックスじゅんしょうもないてます"
+
+[[case]]
+input = "岡田准一のヘルドックスかっこよくて好き"
+mode = "hiragana"
+expected = "おかだじゅんいちのヘルドックスかっこよくてすき"
+
+[[case]]
+input = "鈴木 耕太郎 准教授(高崎経済大学)を頼らねば..."
+mode = "hiragana"
+expected = "すずき こうたろう じゅんきょうじゅ(たかさきけいざいだいがく)をたよらねば..."
+
+[[case]]
+input = "斤量が"
+mode = "hiragana"
+expected = "きんりょうが"
+
+[[case]]
+input = "パンを1斤食べたくなる"
+mode = "hiragana"
+expected = "パンをいっきんたべたくなる"
+
+[[case]]
+input = "業スーの一斤の食パン そのまま食べてもめっちゃうまい"
+mode = "hiragana"
+expected = "ぎょうスーのいっきんのしょくぱん そのままたべてもめっちゃうまい"
+
+[[case]]
+input = "大胆且つ冷静に!"
+mode = "hiragana"
+expected = "だいたんかつれいせいに!"
+
+[[case]]
+input = "和気藹々且つ熱い配信になるな"
+mode = "hiragana"
+expected = "わけあいあいかつあついはいしんになるな"
+
+[[case]]
+input = "小銭の錢はむずい"
+mode = "hiragana"
+expected = "こぜにのせんはむずい"
+
+[[case]]
+input = "賽錢箱"
+mode = "hiragana"
+expected = "さいせんばこ"
+
+[[case]]
+input = "緻密だな(笑)さすがっス"
+mode = "hiragana"
+expected = "ちみつだな(わらい)さすがっス"
+
+[[case]]
+input = "精緻な聖地"
+mode = "hiragana"
+expected = "せいちなせいち"
+
+[[case]]
+input = "葦上げwww"
+mode = "hiragana"
+expected = "あしあげwww"
+
+[[case]]
+input = "葦原中津国..."
+mode = "hiragana"
+expected = "あしはらなかつこく..."
+
+[[case]]
+input = "人は考える葦である"
+mode = "hiragana"
+expected = "ひとはかんがえるあしである"
+
+[[case]]
+input = "青井葦人やんけ"
+mode = "hiragana"
+expected = "あおいあしとやんけ"
+
+[[case]]
+input = "これも葦名のため..."
+mode = "hiragana"
+expected = "これもあしなのため..."
+
+[[case]]
+input = "イチローでさえ胃潰瘍になるくらいバッシング酷かったんだぜ"
+mode = "hiragana"
+expected = "イチローでさえいかいようになるくらいバッシングひどかったんだぜ"
+
+[[case]]
+input = "新種の腫瘍"
+mode = "hiragana"
+expected = "しんしゅのしゅよう"
+
+[[case]]
+input = "悪性腫瘍とか?"
+mode = "hiragana"
+expected = "あくせいしゅようとか?"
+
+[[case]]
+input = "大牟田めっちゃ揺れた"
+mode = "hiragana"
+expected = "おおむためっちゃゆれた"
+
+[[case]]
+input = "牟岐(むぎ)"
+mode = "hiragana"
+expected = "むぎ(むぎ)"
+
+[[case]]
+input = "黒死牟やめてね"
+mode = "hiragana"
+expected = "こくしぼうやめてね"
+
+[[case]]
+input = "芹香かー"
+mode = "hiragana"
+expected = "せりこうかー"
+
+[[case]]
+input = "清野なら芹澤"
+mode = "hiragana"
+expected = "きよのならせりざわ"
+
+[[case]]
+input = "訃報居住者"
+mode = "hiragana"
+expected = "ふほうきょじゅうしゃ"
+
+[[case]]
+input = "【訃報】ガッツ石松さん死去 76歳"
+mode = "hiragana"
+expected = "【ふほう】がっついしまつさんしきょ ななじゅうろくさい"
+
+[[case]]
+input = "脳梗塞?"
+mode = "hiragana"
+expected = "のうこうそく?"
+
+[[case]]
+input = "桔梗信玄餅美味いんだよなぁ"
+mode = "hiragana"
+expected = "ききょうしんげんもちうまいんだよなぁ"
+
+[[case]]
+input = "心筋梗塞かな?"
+mode = "hiragana"
+expected = "しんきんこうそくかな?"
+
+[[case]]
+input = "青梗菜"
+mode = "hiragana"
+expected = "ちんげんさい"
+
+[[case]]
+input = "厭味ったらしいおっさんだなあ"
+mode = "hiragana"
+expected = "いやみったらしいおっさんだなあ"
+
+[[case]]
+input = "厭世観に囚われてるんだよね"
+mode = "hiragana"
+expected = "えんせいかんにとらわれてるんだよね"
+
+[[case]]
+input = "犠牲を厭わないスタイル"
+mode = "hiragana"
+expected = "ぎせいをいとわないスタイル"
+
+[[case]]
+input = "フライボール革命以前は倦厭されてたやつだ"
+mode = "hiragana"
+expected = "フライボールかくめいいぜんはけんえんされてたやつだ"
+
+[[case]]
+input = "ロボと作画で嫌厭されがち"
+mode = "hiragana"
+expected = "ロボとさくがでけんえんされがち"
+
+[[case]]
+input = "防音室が軋んでるのか"
+mode = "hiragana"
+expected = "ぼうおんしつがきしんでるのか"
+
+[[case]]
+input = "歯軋りの音がw"
+mode = "hiragana"
+expected = "はぎしりのおとがw"
+
+[[case]]
+input = "軋れ パンテラ!!"
+mode = "hiragana"
+expected = "きしれ パンテラ!!"
+
+[[case]]
+input = "文化の違いで軋轢生まれない衣装がな〜"
+mode = "hiragana"
+expected = "ぶんかのちがいであつれきうまれないいしょうがな"
+
