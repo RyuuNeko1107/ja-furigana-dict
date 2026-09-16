@@ -1,0 +1,100 @@
+[[case]]
+input = "剱持ドラムロール好きだよね"
+mode = "hiragana"
+expected = "つるぎもちドラムロールすきだよね"
+
+[[case]]
+input = "剱持さんが配信してる"
+mode = "hiragana"
+expected = "つるぎもちさんがはいしんしてる"
+
+[[case]]
+input = "剱持だけ気づいてなくて草"
+mode = "hiragana"
+expected = "つるぎもちだけきづいてなくてくさ"
+
+[[case]]
+input = "剱持生まれた年に近いね"
+mode = "hiragana"
+expected = "つるぎもちうまれたねんにちかいね"
+
+[[case]]
+input = "剱持いい"
+mode = "hiragana"
+expected = "つるぎもちいい"
+
+[[case]]
+input = "AI剱持うおおおおおおおおおおおお"
+mode = "hiragana"
+expected = "エーアイつるぎもちうおおおおおおおおおおおお"
+
+[[case]]
+input = "さすが!!!世界の剱持!!"
+mode = "hiragana"
+expected = "さすが!!!せかいのつるぎもち!!"
+
+[[case]]
+input = "じゃあ剱持さげて〜"
+mode = "hiragana"
+expected = "じゃあつるぎもちさげて"
+
+[[case]]
+input = "甲斐田の声ちっちゃ&剱持でか"
+mode = "hiragana"
+expected = "かいだのこえちっちゃ&つるぎもちでか"
+
+[[case]]
+input = "剱持がライバー紹介してる"
+mode = "hiragana"
+expected = "つるぎもちがライバーしょうかいしてる"
+
+[[case]]
+input = "剱持誕生日おめでとうや"
+mode = "hiragana"
+expected = "つるぎもちたんじょうびおめでとうや"
+
+[[case]]
+input = "そろそろ失礼します。冰粉(ビンフェン)食べてきます"
+mode = "hiragana"
+expected = "そろそろしつれいします。びんふぇん(ビンフェン)たべてきます"
+
+[[case]]
+input = "冰粉、食べてきます"
+mode = "hiragana"
+expected = "びんふぇん、たべてきます"
+
+[[case]]
+input = "放水で躯体を少しでも冷やして構造的な破壊を少しでも軽減する効果もあるのかな?"
+mode = "hiragana"
+expected = "ほうすいでくたいをすこしでもひやしてこうぞうてきなはかいをすこしでもけいげんするこうかもあるのかな?"
+
+[[case]]
+input = "長躯ホームイン"
+mode = "hiragana"
+expected = "ちょうくホームイン"
+
+[[case]]
+input = "犬が例外というか...。豚もトリュフ探しする躯体だし。"
+mode = "hiragana"
+expected = "いぬがれいがいというか...。ぶたもトリュフさがしするくたいだし。"
+
+[[case]]
+input = "剱持刀也"
+mode = "hiragana"
+expected = "つるぎもちとうや"
+
+[[case]]
+input = "剱岳"
+mode = "hiragana"
+expected = "つるぎだけ"
+
+[[case]]
+input = "躯体"
+mode = "hiragana"
+expected = "くたい"
+
+[[case]]
+input = "体躯教師への偏見w"
+mode = "hiragana"
+expected = "たいくきょうしへのへんけんw"
+
