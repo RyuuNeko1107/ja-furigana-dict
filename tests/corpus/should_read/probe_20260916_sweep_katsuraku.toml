@@ -1,0 +1,95 @@
+[[case]]
+input = "滑落"
+mode = "hiragana"
+expected = "かつらく"
+
+[[case]]
+input = "ショートカット滑落してから逆走だよ"
+mode = "hiragana"
+expected = "ショートカットかつらくしてからぎゃくそうだよ"
+
+[[case]]
+input = "潤滑油とエンジンオイルとナフサヤバイでしょう。"
+mode = "hiragana"
+expected = "じゅんかつゆとエンジンオイルとナフサヤバイでしょう。"
+
+[[case]]
+input = "大空洞行きかも梓れない"
+mode = "hiragana"
+expected = "だいくうどういきかもあずされない"
+
+[[case]]
+input = "ちゃんと歯磨いてる?"
+mode = "hiragana"
+expected = "ちゃんとはみがいてる?"
+
+[[case]]
+input = "歯磨いて!"
+mode = "hiragana"
+expected = "はみがいて!"
+
+[[case]]
+input = "ぺこちゃん歯磨くんか"
+mode = "hiragana"
+expected = "ぺこちゃんはみがくんか"
+
+[[case]]
+input = "バナナは歯磨かなだけどな"
+mode = "hiragana"
+expected = "バナナははみがかなだけどな"
+
+[[case]]
+input = "縦縦横"
+mode = "hiragana"
+expected = "たてたてよこ"
+
+[[case]]
+input = "もう魚獲る以外に選択肢ない"
+mode = "hiragana"
+expected = "もうさかなとるいがいにせんたくしない"
+
+[[case]]
+input = "獲れ高狙いですかな?"
+mode = "hiragana"
+expected = "とれだかねらいですかな?"
+
+[[case]]
+input = "光輝いている"
+mode = "hiragana"
+expected = "ひかりかがやいている"
+
+[[case]]
+input = "輝かな過ぎた"
+mode = "hiragana"
+expected = "かがやかなすぎた"
+
+[[case]]
+input = "土輝って向井玄樹やろ?"
+mode = "hiragana"
+expected = "つっきってむかいげんじゅやろ?"
+
+[[case]]
+input = "刀鬼炎斬剣!!"
+mode = "hiragana"
+expected = "とうきえんざんけん!!"
+
+[[case]]
+input = "斬り助ジョニーかい"
+mode = "hiragana"
+expected = "きりすけジョニーかい"
+
+[[case]]
+input = "しなば諸とも"
+mode = "hiragana"
+expected = "しなばもろとも"
+
+[[case]]
+input = "あれが富野由悠季という男よ"
+mode = "hiragana"
+expected = "あれがとみのよしゆきというおとこよ"
+
+[[case]]
+input = "富野由悠季の小説は、ほぼ、主人公は生き残れない。"
+mode = "hiragana"
+expected = "とみのよしゆきのしょうせつは、ほぼ、しゅじんこうはいきのこれない。"
+
