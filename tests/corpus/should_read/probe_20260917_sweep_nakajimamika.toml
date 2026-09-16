@@ -1,0 +1,365 @@
+[[case]]
+input = "ムーナの中島美嘉良かった"
+mode = "hiragana"
+expected = "ムーナのなかじまみかよかった"
+
+[[case]]
+input = "中島美嘉に通ずる歌声"
+mode = "hiragana"
+expected = "なかじまみかにつうずるうたごえ"
+
+[[case]]
+input = "中島美嘉ってこと!?"
+mode = "hiragana"
+expected = "なかじまみかってこと!?"
+
+[[case]]
+input = "久し振りに中島美嘉の曲聴けて嬉しい"
+mode = "hiragana"
+expected = "ひさしぶりになかじまみかのきょくきけてうれしい"
+
+[[case]]
+input = "山梨 久慈照嘉"
+mode = "hiragana"
+expected = "やまなし くじてるよし"
+
+[[case]]
+input = "高村先生梁石日先生の本で"
+mode = "hiragana"
+expected = "たかむらせんせいやんそぎるせんせいのほんで"
+
+[[case]]
+input = "晦つきこもり"
+mode = "hiragana"
+expected = "つきこもり"
+
+[[case]]
+input = "闇晦ましの城"
+mode = "hiragana"
+expected = "やみくらましのしろ"
+
+[[case]]
+input = "もう半年で大晦日かぁ"
+mode = "hiragana"
+expected = "もうはんとしでおおみそかかぁ"
+
+[[case]]
+input = "高梁川の渇水なんとかしてくれメンス・・・"
+mode = "hiragana"
+expected = "たかはしがわのかっすいなんとかしてくれメンス"
+
+[[case]]
+input = "跳梁?"
+mode = "hiragana"
+expected = "ちょうりょう?"
+
+[[case]]
+input = "棟梁"
+mode = "hiragana"
+expected = "とうりょう"
+
+[[case]]
+input = "天井の梁の上とかある"
+mode = "hiragana"
+expected = "てんじょうのはりのうえとかある"
+
+[[case]]
+input = "梁田さんか"
+mode = "hiragana"
+expected = "やなださんか"
+
+[[case]]
+input = "りんごほっぺと鼻梁の黄金比"
+mode = "hiragana"
+expected = "りんごほっぺとびりょうのおうごんひ"
+
+[[case]]
+input = "ホロライブ梁山泊"
+mode = "hiragana"
+expected = "ホロライブりょうざんぱく"
+
+[[case]]
+input = "藤井嘉夫知らんのか"
+mode = "hiragana"
+expected = "ふじいよしおしらんのか"
+
+[[case]]
+input = "糸井嘉男を大成させた指導者"
+mode = "hiragana"
+expected = "いといよしおをたいせいさせたしどうしゃ"
+
+[[case]]
+input = "だから嘉島は震度7じゃないってば"
+mode = "hiragana"
+expected = "だからかしまはしんどななじゃないってば"
+
+[[case]]
+input = "嘉手納高校です助けてください"
+mode = "hiragana"
+expected = "かでなこうこうですたすけてください"
+
+[[case]]
+input = "嘉門達夫かな?"
+mode = "hiragana"
+expected = "かもんたつおかな?"
+
+[[case]]
+input = "お前ら比嘉鉄也で調べろ。絶対だぞ"
+mode = "hiragana"
+expected = "おまえらひかてつやでしらべろ。ぜったいだぞ"
+
+[[case]]
+input = "仄暗い"
+mode = "hiragana"
+expected = "ほのぐらい"
+
+[[case]]
+input = "これは報告したんよ「○害を仄めかす様な」"
+mode = "hiragana"
+expected = "これはほうこくしたんよ「○がいをほのめかすさまな」"
+
+[[case]]
+input = "爬虫類の皮膚は毒"
+mode = "hiragana"
+expected = "はちゅうるいのひふはどく"
+
+[[case]]
+input = "狛犬になりたい欲が"
+mode = "hiragana"
+expected = "こまいぬになりたいよくが"
+
+[[case]]
+input = "狛犬ならぬ狛狐"
+mode = "hiragana"
+expected = "こまいぬならぬこまきつね"
+
+[[case]]
+input = "BLEACHで言うなら、狛村がすいちゃん"
+mode = "hiragana"
+expected = "ブリーチでいうなら、こまむらがすいちゃん"
+
+[[case]]
+input = "その腕でって事は狛枝になるって事!?"
+mode = "hiragana"
+expected = "そのうででってことはこまえだになるってこと!?"
+
+[[case]]
+input = "啜る度に笑ってる"
+mode = "hiragana"
+expected = "すするたびにわらってる"
+
+[[case]]
+input = "妖怪麺啜り"
+mode = "hiragana"
+expected = "ようかいめんすすり"
+
+[[case]]
+input = "泥水啜っていけ"
+mode = "hiragana"
+expected = "どろみずすすっていけ"
+
+[[case]]
+input = "筐体に差があるのか"
+mode = "hiragana"
+expected = "きょうたいにさがあるのか"
+
+[[case]]
+input = "地元、旧筐体しか無い...新筐体まだ?"
+mode = "hiragana"
+expected = "じもと、きゅうきょうたいしかない...しんきょうたいまだ?"
+
+[[case]]
+input = "因幡の白兎"
+mode = "hiragana"
+expected = "いなばのしろうさぎ"
+
+[[case]]
+input = "つばた(津幡)"
+mode = "hiragana"
+expected = "つばた(つばた)"
+
+[[case]]
+input = "ナイス、小幡並みの守備"
+mode = "hiragana"
+expected = "ナイス、おばたなみのしゅび"
+
+[[case]]
+input = "破廉恥だぞ!ガンダム!"
+mode = "hiragana"
+expected = "はれんちだぞ!ガンダム!"
+
+[[case]]
+input = "清廉潔白を貫くのか"
+mode = "hiragana"
+expected = "せいれんけっぱくをつらぬくのか"
+
+[[case]]
+input = "Zの廉価版って感じかな"
+mode = "hiragana"
+expected = "Zのれんかばんってかんじかな"
+
+[[case]]
+input = "澤井廉(ヤクルト)"
+mode = "hiragana"
+expected = "さわいれん(ヤクルト)"
+
+[[case]]
+input = "瀧廉太郎?"
+mode = "hiragana"
+expected = "たきれんたろう?"
+
+[[case]]
+input = "永瀬廉くんが会社の隣の神社に来てた"
+mode = "hiragana"
+expected = "ながせれんくんがかいしゃのとなりのじんじゃにきてた"
+
+[[case]]
+input = "不当廉売だな"
+mode = "hiragana"
+expected = "ふとうれんばいだな"
+
+[[case]]
+input = "窪川って地名がもうね"
+mode = "hiragana"
+expected = "くぼかわってちめいがもうね"
+
+[[case]]
+input = "窪塚洋介ならワンちゃん空飛べるかも"
+mode = "hiragana"
+expected = "くぼづかようすけならワンちゃんそらとべるかも"
+
+[[case]]
+input = "小窪哲也"
+mode = "hiragana"
+expected = "こくぼてつや"
+
+[[case]]
+input = "公明 窪田哲也さん 反対討論。"
+mode = "hiragana"
+expected = "こうめい くぼたてつやさん はんたいとうろん。"
+
+[[case]]
+input = "ちょっとお前ら善福寺川見てみろ(荻窪)"
+mode = "hiragana"
+expected = "ちょっとおまえらぜんぷくじがわみてみろ(おぎくぼ)"
+
+[[case]]
+input = "肘の窪み?"
+mode = "hiragana"
+expected = "ひじのくぼみ?"
+
+[[case]]
+input = "水が引かないの、窪地になってるんじゃないの?"
+mode = "hiragana"
+expected = "みずがひかないの、くぼちになってるんじゃないの?"
+
+[[case]]
+input = "虎視眈々"
+mode = "hiragana"
+expected = "こしたんたん"
+
+[[case]]
+input = "隊伍"
+mode = "hiragana"
+expected = "たいご"
+
+[[case]]
+input = "山城新伍w"
+mode = "hiragana"
+expected = "やましろしんごw"
+
+[[case]]
+input = "前田悠伍!!!!"
+mode = "hiragana"
+expected = "まえだゆうご!!!!"
+
+[[case]]
+input = "伍番魔晄炉いくとこからか"
+mode = "hiragana"
+expected = "ごばんまこうろいくとこからか"
+
+[[case]]
+input = "下弦の伍かな......"
+mode = "hiragana"
+expected = "かげんのごかな......"
+
+[[case]]
+input = "おっきくなってるをもっとお淑やかに言ってみて欲しい"
+mode = "hiragana"
+expected = "おっきくなってるをもっとおしとやかにいってみてほしい"
+
+[[case]]
+input = "紳士淑女"
+mode = "hiragana"
+expected = "しんししゅくじょ"
+
+[[case]]
+input = "貞淑な女性?それとも魅力的な女性?"
+mode = "hiragana"
+expected = "ていしゅくなじょせい?それともみりょくてきなじょせい?"
+
+[[case]]
+input = "莫大な資産を税金で持っていかれるセブンイレブン創業者"
+mode = "hiragana"
+expected = "ばくだいなしさんをぜいきんでもっていかれるセブンイレブンそうぎょうしゃ"
+
+[[case]]
+input = "成長期に水切りとは莫迦か"
+mode = "hiragana"
+expected = "せいちょうきにみずきりとはばかか"
+
+[[case]]
+input = "確かに訊いてるね"
+mode = "hiragana"
+expected = "たしかにきいてるね"
+
+[[case]]
+input = "訊くな訊くな行け行け"
+mode = "hiragana"
+expected = "きくなきくないけゆけ"
+
+[[case]]
+input = "エジンバラに訊け w"
+mode = "hiragana"
+expected = "エジンバラにきけ w"
+
+[[case]]
+input = "宿儺、"
+mode = "hiragana"
+expected = "すくな、"
+
+[[case]]
+input = "両面宿儺かな?"
+mode = "hiragana"
+expected = "りょうめんすくなかな?"
+
+[[case]]
+input = "大儺舞兎"
+mode = "hiragana"
+expected = "たいなぶうさぎ"
+
+[[case]]
+input = "進化の繭になると2000"
+mode = "hiragana"
+expected = "しんかのまゆになるとにせん"
+
+[[case]]
+input = "繭じゃねえよ。サナギやぞ"
+mode = "hiragana"
+expected = "まゆじゃねえよ。サナギやぞ"
+
+[[case]]
+input = "古い物でもイイのなら玉繭物語などいかがでてすか?"
+mode = "hiragana"
+expected = "ふるいものでもイイのならたままゆものがたりなどいかがでてすか?"
+
+[[case]]
+input = "イナゴの佃煮は普通だしな"
+mode = "hiragana"
+expected = "イナゴのつくだにはふつうだしな"
+
+[[case]]
+input = "蚕佃煮缶詰"
+mode = "hiragana"
+expected = "かいこつくだにかんづめ"
+
