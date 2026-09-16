@@ -1,0 +1,275 @@
+[[case]]
+input = "藍染はもう4んだはずでは・・・?w"
+mode = "hiragana"
+expected = "あいぜんはもうよんんだはずでは?w"
+
+[[case]]
+input = "藍染が来たぞ"
+mode = "hiragana"
+expected = "あいぜんがきたぞ"
+
+[[case]]
+input = "藍染も強い"
+mode = "hiragana"
+expected = "あいぜんもつよい"
+
+[[case]]
+input = "藍染にやられた"
+mode = "hiragana"
+expected = "あいぜんにやられた"
+
+[[case]]
+input = "と藍染は言ってる"
+mode = "hiragana"
+expected = "とあいぜんはいってる"
+
+[[case]]
+input = "藍染に脳を焼かれたからねww"
+mode = "hiragana"
+expected = "あいぜんにのうをやかれたからねww"
+
+[[case]]
+input = "藍染惣右介"
+mode = "hiragana"
+expected = "あいぜんそうすけ"
+
+[[case]]
+input = "藍染さん"
+mode = "hiragana"
+expected = "あいぜんさん"
+
+[[case]]
+input = "藍染めの浴衣"
+mode = "hiragana"
+expected = "あいぞめのゆかた"
+
+[[case]]
+input = "藍染め体験"
+mode = "hiragana"
+expected = "あいぞめたいけん"
+
+[[case]]
+input = "卍回近いか"
+mode = "hiragana"
+expected = "ばんかいちかいか"
+
+[[case]]
+input = "卍解しろ"
+mode = "hiragana"
+expected = "ばんかいしろ"
+
+[[case]]
+input = "ゴザルで名誉卍解しろ"
+mode = "hiragana"
+expected = "ゴザルでめいよばんかいしろ"
+
+[[case]]
+input = "矮小な卍解きちゃ!"
+mode = "hiragana"
+expected = "わいしょうなばんかいきちゃ!"
+
+[[case]]
+input = "檜佐木の卍解もチート"
+mode = "hiragana"
+expected = "ひさぎのばんかいもチート"
+
+[[case]]
+input = "なら卍解!!"
+mode = "hiragana"
+expected = "ならばんかい!!"
+
+[[case]]
+input = "ヴィヴィ幾三"
+mode = "hiragana"
+expected = "ヴィヴィいくぞう"
+
+[[case]]
+input = "吉幾三"
+mode = "hiragana"
+expected = "よしいくぞう"
+
+[[case]]
+input = "ペこーらの星幾つ?"
+mode = "hiragana"
+expected = "ペこーらのほしいくつ?"
+
+[[case]]
+input = "幾つまで行くのだろうか"
+mode = "hiragana"
+expected = "いくつまでいくのだろうか"
+
+[[case]]
+input = "幾らなんだろう"
+mode = "hiragana"
+expected = "いくらなんだろう"
+
+[[case]]
+input = "茹で恐竜"
+mode = "hiragana"
+expected = "ゆできょうりゅう"
+
+[[case]]
+input = "釜茹で!?w"
+mode = "hiragana"
+expected = "かまゆで!?w"
+
+[[case]]
+input = "岬つよい"
+mode = "hiragana"
+expected = "みさきつよい"
+
+[[case]]
+input = "宗谷岬までは行くよ"
+mode = "hiragana"
+expected = "そうやみさきまではいくよ"
+
+[[case]]
+input = "全力慰めか"
+mode = "hiragana"
+expected = "ぜんりょくなぐさめか"
+
+[[case]]
+input = "戦没者慰霊碑があるんだよな"
+mode = "hiragana"
+expected = "せんぼつしゃいれいひがあるんだよな"
+
+[[case]]
+input = "慰謝料要求されたわ"
+mode = "hiragana"
+expected = "いしゃりょうようきゅうされたわ"
+
+[[case]]
+input = "そして翌日に続く・・・"
+mode = "hiragana"
+expected = "そしてよくじつにつづく"
+
+[[case]]
+input = "他校は翌月で使うかな"
+mode = "hiragana"
+expected = "たこうはよくげつでつかうかな"
+
+[[case]]
+input = "ラミィちゃん翌朝打つなぁ"
+mode = "hiragana"
+expected = "ラミィちゃんよくあさうつなぁ"
+
+[[case]]
+input = "ひどい陥没だった"
+mode = "hiragana"
+expected = "ひどいかんぼつだった"
+
+[[case]]
+input = "名門陥落かな?"
+mode = "hiragana"
+expected = "めいもんかんらくかな?"
+
+[[case]]
+input = "1号機欠陥で草"
+mode = "hiragana"
+expected = "いちごうきけっかんでくさ"
+
+[[case]]
+input = "陥れる"
+mode = "hiragana"
+expected = "おとしいれる"
+
+[[case]]
+input = "ピンチに陥らせすぎともいえる"
+mode = "hiragana"
+expected = "ピンチにおちいらせすぎともいえる"
+
+[[case]]
+input = "ダメ男に惹かれてんのか?"
+mode = "hiragana"
+expected = "ダメおとこにひかれてんのか?"
+
+[[case]]
+input = "遊佐浩二とかかな"
+mode = "hiragana"
+expected = "ゆさこうじとかかな"
+
+[[case]]
+input = "石井浩郎か"
+mode = "hiragana"
+expected = "いしいこうろうか"
+
+[[case]]
+input = "川口浩探検隊"
+mode = "hiragana"
+expected = "かわぐちこうたんけんたい"
+
+[[case]]
+input = "加藤浩次かな?"
+mode = "hiragana"
+expected = "かとうこうじかな?"
+
+[[case]]
+input = "山本浩二引けたらそらちゃんやな"
+mode = "hiragana"
+expected = "やまもとこうじひけたらそらちゃんやな"
+
+[[case]]
+input = "灼熱"
+mode = "hiragana"
+expected = "しゃくねつ"
+
+[[case]]
+input = "一喝"
+mode = "hiragana"
+expected = "いっかつ"
+
+[[case]]
+input = "適宜"
+mode = "hiragana"
+expected = "てきぎ"
+
+[[case]]
+input = "化粧"
+mode = "hiragana"
+expected = "けしょう"
+
+[[case]]
+input = "天狗"
+mode = "hiragana"
+expected = "てんぐ"
+
+[[case]]
+input = "瀕死"
+mode = "hiragana"
+expected = "ひんし"
+
+[[case]]
+input = "遮断"
+mode = "hiragana"
+expected = "しゃだん"
+
+[[case]]
+input = "汎用"
+mode = "hiragana"
+expected = "はんよう"
+
+[[case]]
+input = "繊細"
+mode = "hiragana"
+expected = "せんさい"
+
+[[case]]
+input = "派閥"
+mode = "hiragana"
+expected = "はばつ"
+
+[[case]]
+input = "屈辱"
+mode = "hiragana"
+expected = "くつじょく"
+
+[[case]]
+input = "曖昧"
+mode = "hiragana"
+expected = "あいまい"
+
+[[case]]
+input = "鵺"
+mode = "hiragana"
+expected = "ぬえ"
+
