@@ -97,3 +97,28 @@ input = "本当に"
 mode = "hiragana"
 expected = "ほんとうに"
 note = "変えてはいけない側"
+
+# ─── 何です / お腹 (dict) ───
+[[case]]
+input = "これは何ですか?"
+mode = "hiragana"
+expected = "これはなんですか?"
+note = "旧 なにですか (Lindera 何|で|す)"
+
+[[case]]
+input = "何でしょうね"
+mode = "hiragana"
+expected = "なんでしょうね"
+note = "旧 なにでしょう"
+
+[[case]]
+input = "何でも楽しい"
+mode = "hiragana"
+expected = "なんでもたのしい"
+note = "変えてはいけない側"
+
+[[case]]
+input = "ころさんお腹すいた"
+mode = "hiragana"
+expected = "ころさんおなかすいた"
+note = "旧 おはら (Lindera が 〜ん|お|腹 と割る)"
