@@ -1,0 +1,74 @@
+# 2026-09-18 lib: 1 字だけ切り出された一段動詞語幹 (寝|ん / 見|終わ) の読み の回帰 lock。
+# lib lindera_fallback の verb_stem 格上げ (直後が助動詞/接続助詞/非自立動詞、 直前が漢字/お/ご でない、 得 除外)。
+
+[[case]]
+input = "寝んな"
+mode = "hiragana"
+expected = "ねんな"
+note = "旧 しんんな。lib: 1 字一段動詞語幹 (Lindera 寝|ん) の読み"
+
+[[case]]
+input = "電話に出んわ"
+mode = "hiragana"
+expected = "でんわにでんわ"
+note = "旧 しゅつんわ"
+
+[[case]]
+input = "アニメ見終わった"
+mode = "hiragana"
+expected = "アニメみおわった"
+note = "旧 けんおわった"
+
+[[case]]
+input = "マミー寝とるw"
+mode = "hiragana"
+expected = "マミーねとるw"
+note = "旧 しんとる"
+
+[[case]]
+input = "労力に見合わなそう"
+mode = "hiragana"
+expected = "ろうりょくにみあわなそう"
+note = "旧 けんあわ"
+
+[[case]]
+input = "学びを経ないで"
+mode = "hiragana"
+expected = "まなびをへないで"
+note = "旧 けいない"
+
+[[case]]
+input = "逆走してる"
+mode = "hiragana"
+expected = "ぎゃくそうしてる"
+note = "変えてはいけない側: 熟語内の 1 字 (逆|走)"
+
+[[case]]
+input = "免停です"
+mode = "hiragana"
+expected = "めんていです"
+note = "変えてはいけない側: 名詞 + 断定"
+
+[[case]]
+input = "ぺこ得すぎる"
+mode = "hiragana"
+expected = "ぺことくすぎる"
+note = "変えてはいけない側: 得 は除外字"
+
+[[case]]
+input = "暗視カメラ"
+mode = "hiragana"
+expected = "あんしカメラ"
+note = "変えてはいけない側: 直前が漢字"
+
+[[case]]
+input = "寝室"
+mode = "hiragana"
+expected = "しんしつ"
+note = "変えてはいけない側"
+
+[[case]]
+input = "見学"
+mode = "hiragana"
+expected = "けんがく"
+note = "変えてはいけない側"
