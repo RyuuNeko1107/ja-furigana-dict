@@ -153,3 +153,34 @@ input = "この頃のゲーム"
 mode = "hiragana"
 expected = "このころのゲーム"
 note = "変えてはいけない側: この頃 は「その時代」の意味が多く コノゴロ 固定は不可 (A/B で検出)"
+
+# ─── 何だ系 / 作り直し (engine_diff 第 2 弾) ───
+[[case]]
+input = "何だよぺこら"
+mode = "hiragana"
+expected = "なんだよぺこら"
+note = "旧 なにだよ"
+
+[[case]]
+input = "最高レベルって何だろう?"
+mode = "hiragana"
+expected = "さいこうレベルってなんだろう?"
+note = "旧 なにだろう"
+
+[[case]]
+input = "何だけ"
+mode = "hiragana"
+expected = "なにだけ"
+note = "変えてはいけない側: 何だけ は ナニ"
+
+[[case]]
+input = "熊本作り直し案件"
+mode = "hiragana"
+expected = "くまもとつくりなおしあんけん"
+note = "旧 くまもとづくりなおし (IPADIC の接尾 作り = ヅクリ に負けていた)"
+
+[[case]]
+input = "街作り"
+mode = "hiragana"
+expected = "まちづくり"
+note = "変えてはいけない側: 接尾の 作り は連濁"
