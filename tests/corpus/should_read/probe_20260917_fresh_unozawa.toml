@@ -1,0 +1,55 @@
+[[case]]
+input = "NHKプラスで先日のNスペ見てたら宇野沢さん出てきた!"
+mode = "hiragana"
+expected = "エヌエイチケープラスでせんじつのNスペみてたらうのざわさんでてきた!"
+
+[[case]]
+input = "雨男かもしれない"
+mode = "hiragana"
+expected = "あめおとこかもしれない"
+
+[[case]]
+input = "宇野沢"
+mode = "hiragana"
+expected = "うのざわ"
+
+[[case]]
+input = "宇野沢さん"
+mode = "hiragana"
+expected = "うのざわさん"
+
+[[case]]
+input = "雨男"
+mode = "hiragana"
+expected = "あめおとこ"
+
+[[case]]
+input = "雨女"
+mode = "hiragana"
+expected = "あめおんな"
+
+[[case]]
+input = "晴れ男"
+mode = "hiragana"
+expected = "はれおとこ"
+
+[[case]]
+input = "水田さん"
+mode = "hiragana"
+expected = "みずたさん"
+
+[[case]]
+input = "水田"
+mode = "hiragana"
+expected = "すいでん"
+
+[[case]]
+input = "神原だしなあ"
+mode = "hiragana"
+expected = "かんばるだしなあ"
+
+[[case]]
+input = "来生"
+mode = "hiragana"
+expected = "きすぎ"
+
