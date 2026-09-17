@@ -122,3 +122,34 @@ input = "ころさんお腹すいた"
 mode = "hiragana"
 expected = "ころさんおなかすいた"
 note = "旧 おはら (Lindera が 〜ん|お|腹 と割る)"
+
+# ─── 気付く 活用形 / 何で (2026-09-18 第 2 弾) ───
+[[case]]
+input = "という気付き"
+mode = "hiragana"
+expected = "というきづき"
+note = "旧 きつき (Lindera が 気|付き と割り entry 気付 の path が組めない)"
+
+[[case]]
+input = "気付けるのいいゲーム"
+mode = "hiragana"
+expected = "きづけるのいいゲーム"
+note = "旧 きつける"
+
+[[case]]
+input = "むしろ何で知らなかった?"
+mode = "hiragana"
+expected = "むしろなんでしらなかった?"
+note = "旧 なにで。何 + 次が「で」単独 → ナン"
+
+[[case]]
+input = "何でも楽しいよ"
+mode = "hiragana"
+expected = "なんでもたのしいよ"
+note = "変えてはいけない側"
+
+[[case]]
+input = "この頃のゲーム"
+mode = "hiragana"
+expected = "このころのゲーム"
+note = "変えてはいけない側: この頃 は「その時代」の意味が多く コノゴロ 固定は不可 (A/B で検出)"

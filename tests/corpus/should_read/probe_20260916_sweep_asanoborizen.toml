@@ -21,7 +21,7 @@ expected = "ぺこちゃんあさがえりしたね"
 [[case]]
 input = "気付きに至れるかどうか"
 mode = "hiragana"
-expected = "きつきにいたれるかどうか"
+expected = "きづきにいたれるかどうか"
 
 [[case]]
 input = "かぼちゃランタンでもいいから灯りおいてくれ"
