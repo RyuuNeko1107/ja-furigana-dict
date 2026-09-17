@@ -1,0 +1,80 @@
+[[case]]
+input = "皮の厚さとか色々ねw"
+mode = "hiragana"
+expected = "かわのあつさとかいろいろねw"
+
+[[case]]
+input = "稲刈機"
+mode = "hiragana"
+expected = "いねかりき"
+
+[[case]]
+input = "遠恋について?"
+mode = "hiragana"
+expected = "えんれんについて?"
+
+[[case]]
+input = "稲刈り"
+mode = "hiragana"
+expected = "いねかり"
+
+[[case]]
+input = "遠恋"
+mode = "hiragana"
+expected = "えんれん"
+
+[[case]]
+input = "遠距離恋愛"
+mode = "hiragana"
+expected = "えんきょりれんあい"
+
+[[case]]
+input = "厚さ"
+mode = "hiragana"
+expected = "あつさ"
+
+[[case]]
+input = "紙の厚さ"
+mode = "hiragana"
+expected = "かみのあつさ"
+
+[[case]]
+input = "厚い"
+mode = "hiragana"
+expected = "あつい"
+
+[[case]]
+input = "厚く"
+mode = "hiragana"
+expected = "あつく"
+
+[[case]]
+input = "厚み"
+mode = "hiragana"
+expected = "あつみ"
+
+[[case]]
+input = "厚め"
+mode = "hiragana"
+expected = "あつめ"
+
+[[case]]
+input = "厚意"
+mode = "hiragana"
+expected = "こうい"
+
+[[case]]
+input = "濃厚"
+mode = "hiragana"
+expected = "のうこう"
+
+[[case]]
+input = "桑田"
+mode = "hiragana"
+expected = "くわた"
+
+[[case]]
+input = "桑田真澄"
+mode = "hiragana"
+expected = "くわたますみ"
+
