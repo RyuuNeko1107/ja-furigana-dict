@@ -1,0 +1,74 @@
+# 2026-09-18 lib: 同じ漢字の連続 (海海海 等) の文脈判定修正 の回帰 lock。
+# 連続全体を 1 単位として外側の文字で [[kanji]] match を判定する (lib dict_bridge::same_char_run)。
+
+[[case]]
+input = "海海海海海海"
+mode = "hiragana"
+expected = "うみうみうみうみうみうみ"
+note = "旧 うみかいかい… (2 字目以降だけ前が漢字扱い)。lib 同字連続の文脈判定"
+
+[[case]]
+input = "お手手かわいい"
+mode = "hiragana"
+expected = "おててかわいい"
+note = "旧 おてしゅ"
+
+[[case]]
+input = "車車車!"
+mode = "hiragana"
+expected = "くるまくるまくるま!"
+note = "旧 くるましゃしゃ"
+
+[[case]]
+input = "石石コンビ"
+mode = "hiragana"
+expected = "いしいしコンビ"
+note = "旧 いしせき"
+
+[[case]]
+input = "汗汗w"
+mode = "hiragana"
+expected = "あせあせw"
+note = "旧 あせかん"
+
+[[case]]
+input = "雨雨ふれふれ"
+mode = "hiragana"
+expected = "あめあめふれふれ"
+note = "旧 あめう"
+
+[[case]]
+input = "日本海"
+mode = "hiragana"
+expected = "にほんかい"
+note = "変えてはいけない側: 漢字の後の 海"
+
+[[case]]
+input = "海外旅行"
+mode = "hiragana"
+expected = "かいがいりょこう"
+note = "変えてはいけない側"
+
+[[case]]
+input = "遺言書書いて"
+mode = "hiragana"
+expected = "ゆいごんしょかいて"
+note = "変えてはいけない側: 連続後の送り仮名は最後の字だけ (途中の 書 を か にしない)"
+
+[[case]]
+input = "湯婆婆お願いします"
+mode = "hiragana"
+expected = "ゆばばおねがいします"
+note = "変えてはいけない側: 連続が単語境界をまたぐ"
+
+[[case]]
+input = "携帯三大大手"
+mode = "hiragana"
+expected = "けいたいさんだいおおて"
+note = "変えてはいけない側: 連続が単語境界をまたぐ"
+
+[[case]]
+input = "堂堂と"
+mode = "hiragana"
+expected = "どうどうと"
+note = "変えてはいけない側: 正規の重ね語は dict entry"
