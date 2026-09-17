@@ -72,3 +72,28 @@ input = "見学"
 mode = "hiragana"
 expected = "けんがく"
 note = "変えてはいけない側"
+
+# ─── 当 + 動詞送り仮名 (dict [[kanji]] 当) ───
+[[case]]
+input = "当たるの?"
+mode = "hiragana"
+expected = "あたるの?"
+note = "旧 とうたる (Lindera が 当 を接頭詞にして動詞 token が出ない)"
+
+[[case]]
+input = "当てんの上手すぎ"
+mode = "hiragana"
+expected = "あてんのうますぎ"
+note = "旧 とうてん"
+
+[[case]]
+input = "当日参加"
+mode = "hiragana"
+expected = "とうじつさんか"
+note = "変えてはいけない側"
+
+[[case]]
+input = "本当に"
+mode = "hiragana"
+expected = "ほんとうに"
+note = "変えてはいけない側"

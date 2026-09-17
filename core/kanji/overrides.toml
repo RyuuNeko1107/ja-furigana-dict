@@ -5960,6 +5960,12 @@ default = "ニ"
 char = "当"
 default = "トウ"
 
+# 「当たる / 当たった / 当てる / 当てはまる」 = 動詞 → ア
+# (Lindera が 当 を接頭詞にして 当|たる と割ると動詞 token が出ず トウたる になっていた)
+[[kanji.match]]
+next_starts_any = ["たっ", "たら", "たり", "たる", "たれ", "たろ", "て"]
+reading = "あ"
+
 [[kanji]]
 char = "復"
 default = "フク"
