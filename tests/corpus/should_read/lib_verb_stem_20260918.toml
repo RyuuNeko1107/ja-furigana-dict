@@ -184,3 +184,28 @@ input = "街作り"
 mode = "hiragana"
 expected = "まちづくり"
 note = "変えてはいけない側: 接尾の 作り は連濁"
+
+# ─── 複合動詞の前半 (engine_diff 第 3 弾) ───
+[[case]]
+input = "マルクさん出とる"
+mode = "hiragana"
+expected = "マルクさんでとる"
+note = "旧 しゅつとる。とる は IPADIC では自立動詞なので初版の条件から外れていた"
+
+[[case]]
+input = "見逃がしちゃうね"
+mode = "hiragana"
+expected = "みにがしちゃうね"
+note = "旧 けんにがし"
+
+[[case]]
+input = "寝起きすぎる"
+mode = "hiragana"
+expected = "ねおきすぎる"
+note = "旧 しんおき"
+
+[[case]]
+input = "上から出れそう"
+mode = "hiragana"
+expected = "うえからでれそう"
+note = "旧 しゅつれそう"
