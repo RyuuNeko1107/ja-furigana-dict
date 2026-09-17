@@ -72,3 +72,15 @@ input = "堂堂と"
 mode = "hiragana"
 expected = "どうどうと"
 note = "変えてはいけない側: 正規の重ね語は dict entry"
+
+[[case]]
+input = "期待大大大"
+mode = "hiragana"
+expected = "きたいだいだいだい"
+note = "旧 だいだいおお (大 単独 default おお)。dict 大大 / 大大大 entry"
+
+[[case]]
+input = "巨大大仏"
+mode = "hiragana"
+expected = "きょだいだいぶつ"
+note = "変えてはいけない側: 単語境界の 大大"
