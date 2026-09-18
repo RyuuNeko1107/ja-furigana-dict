@@ -118,3 +118,18 @@ expected = "のざきしょうじ"
 input = "慎重に組み立ててる"
 mode = "hiragana"
 expected = "しんちょうにくみたててる"
+
+[[case]]
+input = "日本の道感がすごいよね"
+mode = "hiragana"
+expected = "にほんのみちかんがすごいよね"
+
+[[case]]
+input = "顔の形変"
+mode = "hiragana"
+expected = "かおのかたちへん"
+
+[[case]]
+input = "烈核解放"
+mode = "hiragana"
+expected = "れっかくかいほう"
