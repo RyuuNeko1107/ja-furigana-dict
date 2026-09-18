@@ -158,3 +158,18 @@ expected = "ちがかったらおしえてくれ"
 input = "違和感"
 mode = "hiragana"
 expected = "いわかん"
+
+[[case]]
+input = "風強いなぁ"
+mode = "hiragana"
+expected = "かぜつよいなぁ"
+
+[[case]]
+input = "雨やんだけど風ひどい"
+mode = "hiragana"
+expected = "あめやんだけどかぜひどい"
+
+[[case]]
+input = "和風すごい"
+mode = "hiragana"
+expected = "わふうすごい"
