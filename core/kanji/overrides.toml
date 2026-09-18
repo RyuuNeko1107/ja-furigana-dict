@@ -5596,6 +5596,13 @@ default = "オウ"
 char = "分"
 default = "ブン"
 
+# ★2026-09-18: 「分かる / 分からない / 分かり / 分かれ」 = ワ
+# (意味分からなくて が いみぶんからなくて だった。 単独の 分からない は
+#  Lindera token 分から が拾っていたが、 前が漢字だと default ブン に落ちる)
+[[kanji.match]]
+next_starts_any = ["かる", "から", "かり", "かれ", "かっ", "かん"]
+reading = "ワ"
+
 [[kanji]]
 char = "刊"
 default = "カン"

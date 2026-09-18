@@ -357,3 +357,34 @@ input = "長押の彫刻"
 mode = "hiragana"
 expected = "なげしのちょうこく"
 note = "変えてはいけない側: 建築用語"
+
+# ─── 分 + から / 助詞 1 文字の tail (engine_diff 第 8 弾) ───
+[[case]]
+input = "意味分からなくて"
+mode = "hiragana"
+expected = "いみわからなくて"
+note = "旧 いみぶんからなくて (前が漢字だと default ブン に落ちていた)"
+
+[[case]]
+input = "十分な量"
+mode = "hiragana"
+expected = "じゅうぶんなりょう"
+note = "変えてはいけない側"
+
+[[case]]
+input = "1億円かな"
+mode = "hiragana"
+expected = "いちおくえんかな"
+note = "旧 いちおくまど (IPADIC が 円か を 1 語に持ち 1億円 + か の path が組めなかった)"
+
+[[case]]
+input = "1つ目と3つ目"
+mode = "hiragana"
+expected = "ひとつめとみっつめ"
+note = "旧 いちつもくと"
+
+[[case]]
+input = "100万分の1"
+mode = "hiragana"
+expected = "ひゃくまんぶんのいち"
+note = "変えてはいけない側: 分数の 分の (助詞 tail から の を外した理由)"
