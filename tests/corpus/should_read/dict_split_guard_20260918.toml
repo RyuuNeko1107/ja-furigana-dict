@@ -133,3 +133,8 @@ expected = "かおのかたちへん"
 input = "烈核解放"
 mode = "hiragana"
 expected = "れっかくかいほう"
+
+[[case]]
+input = "まず別日にしてほしい"
+mode = "hiragana"
+expected = "まずべつじつにしてほしい"
