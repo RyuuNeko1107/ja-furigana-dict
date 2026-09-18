@@ -88,3 +88,28 @@ expected = "おんみつとは?"
 input = "そっと置く"
 mode = "hiragana"
 expected = "そっとおく"
+
+[[case]]
+input = "察せよ絵文字"
+mode = "hiragana"
+expected = "さっせよえもじ"
+
+[[case]]
+input = "察知した"
+mode = "hiragana"
+expected = "さっちした"
+
+[[case]]
+input = "解んなくなっちゃったw"
+mode = "hiragana"
+expected = "わかんなくなっちゃったw"
+
+[[case]]
+input = "解らないから解けた"
+mode = "hiragana"
+expected = "わからないからとけた"
+
+[[case]]
+input = "野崎商事"
+mode = "hiragana"
+expected = "のざきしょうじ"
