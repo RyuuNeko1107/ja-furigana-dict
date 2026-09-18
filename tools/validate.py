@@ -146,7 +146,11 @@ def check_block_keys(path: Path, errors: Errors, label: str, block: dict, allowe
 # next_logical_token)。 漢字とかなをまたぐ文字列を条件に書くと
 # **永久に一致しない** (「頭下げた」 の next は 「下」 、
 # 「話し合い中」 の prev は 「い」)。 2026-09-19 に 24 件見つかった。
-RUN_SCOPED_KEYS = ('prev_ends_any', 'next_starts', 'next_starts_any', 'next2_starts_any')
+# eq 系も pseudo-token (= run) との比較なので同じ制約を受ける
+RUN_SCOPED_KEYS = (
+    'prev_ends_any', 'next_starts', 'next_starts_any', 'next2_starts_any',
+    'prev_eq', 'prev_eq_any', 'next_eq', 'next_eq_any',
+)
 _NEUTRAL_CHARS = 'ー々・'
 
 
