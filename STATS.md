@@ -24,14 +24,14 @@ git に commit されている master HEAD の状態を基準にする。
 | カテゴリ | エントリ数 | サイズ |
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,668** | **728 KB** |
-| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **21,271** | **826 KB** |
-| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,674** | **128 KB** |
+| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **21,312** | **829 KB** |
+| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,675** | **128 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **1,712** | **44 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **0** | **180 B** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,779** | **215 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **704** | **35 KB** |
-| **合計** | **68,808** | **1.93 MB** |
+| **合計** | **68,850** | **1.93 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -56,7 +56,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/jukugo/<genre>/*` — 手動 PR メンテのジャンル別 jukugo (≥ 2 字 surface)。 lib の Step 3 (jukugo lookup) で Lindera より優先採用。 各 genre dir の `_genre.toml` がカテゴリ description を持つ。
 
-**合計**: 21,271 件 / 826 KB (genre 6 区分)
+**合計**: 21,312 件 / 829 KB (genre 6 区分)
 
 #### 自然・生命
 
@@ -67,7 +67,7 @@ git に commit されている master HEAD の状態を基準にする。
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
 | [`core/jukugo/nature/animals.toml`](core/jukugo/nature/animals.toml) | 1,215 | 38 KB | 動植物 / 魚介 / 鳥 / 昆虫 / 茸 / 海藻の難読 |
-| [`core/jukugo/nature/place_names.toml`](core/jukugo/nature/place_names.toml) | 818 | 37 KB | 地名 (47 都道府県 / 主要都市 / 駅 / 寺社仏閣 / 観光地) |
+| [`core/jukugo/nature/place_names.toml`](core/jukugo/nature/place_names.toml) | 819 | 37 KB | 地名 (47 都道府県 / 主要都市 / 駅 / 寺社仏閣 / 観光地) |
 | [`core/jukugo/nature/foods.toml`](core/jukugo/nature/foods.toml) | 498 | 17 KB | 食べ物 / 料理 / 和菓子 / 郷土料理 / 食材 / 調味料 |
 | [`core/jukugo/nature/plants.toml`](core/jukugo/nature/plants.toml) | 405 | 13 KB | 植物 / 花 / 樹木 / 草本の難読 (熟字訓) |
 | [`core/jukugo/nature/weather.toml`](core/jukugo/nature/weather.toml) | 283 | 10 KB | 気象 / 天候 / 季語的気象 / 二十四節気 / 海洋気象 |
@@ -76,7 +76,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/jukugo/nature/math.toml`](core/jukugo/nature/math.toml) | 52 | 2.0 KB | 数学 (解析 / 線形代数 / 集合論 / 統計 / 確率の難読) |
 | [`core/jukugo/nature/mountaineering.toml`](core/jukugo/nature/mountaineering.toml) | 12 | 751 B | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
 | [`core/jukugo/nature/agriculture.toml`](core/jukugo/nature/agriculture.toml) | 5 | 356 B | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
-| **小計** (10 ファイル) | **3,621** | **130 KB** | |
+| **小計** (10 ファイル) | **3,622** | **130 KB** | |
 
 #### 人文・芸術
 
@@ -128,11 +128,11 @@ git に commit されている master HEAD の状態を基準にする。
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
 | [`core/jukugo/proper/personal_names.toml`](core/jukugo/proper/personal_names.toml) | 289 | 18 KB | 人名 (戦国 / 平安 / 江戸 / 明治大正 / 古典作家、現代私人除く) |
-| [`core/jukugo/proper/surnames.toml`](core/jukugo/proper/surnames.toml) | 158 | 22 KB | 難読姓 (苗字) の読み (姓単体、代表読み) |
+| [`core/jukugo/proper/surnames.toml`](core/jukugo/proper/surnames.toml) | 160 | 22 KB | 難読姓 (苗字) の読み (姓単体、代表読み) |
 | [`core/jukugo/proper/sumo_shikona.toml`](core/jukugo/proper/sumo_shikona.toml) | 45 | 3.3 KB | 大相撲 力士の四股名 (公式読み) |
 | [`core/jukugo/proper/proper_nouns.toml`](core/jukugo/proper/proper_nouns.toml) | 36 | 2.0 KB | 固有名詞 (大学 / 中央官庁 / 元号 / 歴史的事象、PR 募集中) |
 | [`core/jukugo/proper/sake_brands.toml`](core/jukugo/proper/sake_brands.toml) | 33 | 2.2 KB | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
-| **小計** (5 ファイル) | **561** | **47 KB** | |
+| **小計** (5 ファイル) | **563** | **47 KB** | |
 
 #### 物体・工芸
 
@@ -159,16 +159,16 @@ git に commit されている master HEAD の状態を基準にする。
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml) | 7,816 | 325 KB | 二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む) |
+| [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml) | 7,854 | 327 KB | 二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む) |
 | [`core/jukugo/basic/four_char.toml`](core/jukugo/basic/four_char.toml) | 35 | 2.3 KB | 四字熟語 (4 字 + 全 CJK 漢字) |
-| **小計** (2 ファイル) | **7,851** | **327 KB** | |
+| **小計** (2 ファイル) | **7,889** | **329 KB** | |
 
 
 ### 作品造語
 
 `core/works/<medium>/*` — 媒体 (game / literature 等) ごとに 1 作品 1 ファイル。 原則は公式読み (一般通称として定着していれば採録可)、 出典コメント必須、 古典読みは現代読み無い場合のみ。
 
-**合計**: 1,674 件 / 128 KB (genre 4 区分)
+**合計**: 1,675 件 / 128 KB (genre 4 区分)
 
 #### ゲーム
 
@@ -231,7 +231,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/anime/kingdom.toml`](core/works/anime/kingdom.toml) | 31 | 2.2 KB | キングダム (原泰久): キャラクター名 (古代中国名の難読読み) |
 | [`core/works/anime/jojo.toml`](core/works/anime/jojo.toml) | 30 | 3.0 KB | ジョジョの奇妙な冒険 (荒木飛呂彦): キャラクター名 / 用語 (公式読みベース) |
 | [`core/works/anime/toaru.toml`](core/works/anime/toaru.toml) | 29 | 2.9 KB | とある魔術の禁書目録 / 超電磁砲 (鎌池和馬): キャラクター名 |
-| [`core/works/anime/gintama.toml`](core/works/anime/gintama.toml) | 25 | 2.2 KB | 銀魂 (空知英秋): キャラクター名 / 用語 (公式読みベース) |
+| [`core/works/anime/gintama.toml`](core/works/anime/gintama.toml) | 26 | 2.3 KB | 銀魂 (空知英秋): キャラクター名 / 用語 (公式読みベース) |
 | [`core/works/anime/naruto.toml`](core/works/anime/naruto.toml) | 24 | 1.8 KB | NARUTO (岸本斉史): キャラクター名 (公式読みベース) |
 | [`core/works/anime/tenipuri.toml`](core/works/anime/tenipuri.toml) | 22 | 1.7 KB | テニスの王子様 (許斐剛): キャラクター名 |
 | [`core/works/anime/onepiece.toml`](core/works/anime/onepiece.toml) | 18 | 1.5 KB | ONE PIECE (尾田栄一郎): キャラクター名 / 用語 |
@@ -277,7 +277,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/anime/nurarihyon.toml`](core/works/anime/nurarihyon.toml) | 4 | 417 B | ぬらりひょんの孫: キャラクター名 |
 | [`core/works/anime/seinen.toml`](core/works/anime/seinen.toml) | 4 | 496 B | 青年漫画: キャラクター名 |
 | [`core/works/anime/xxxholic.toml`](core/works/anime/xxxholic.toml) | 4 | 366 B | xxxHOLiC (CLAMP): キャラクター名 |
-| **小計** (56 ファイル) | **852** | **76 KB** | |
+| **小計** (56 ファイル) | **853** | **76 KB** | |
 
 #### VTuber
 
@@ -322,7 +322,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 
 | ファイル | 文字数 | ルール数 | サイズ | 用途 |
 |---|---:|---:|---:|---|
-| [`core/kanji/overrides.toml`](core/kanji/overrides.toml) | 2,779 | 3,977 | 215 KB | 単漢字 default override + 文脈分岐 reading |
+| [`core/kanji/overrides.toml`](core/kanji/overrides.toml) | 2,779 | 3,983 | 215 KB | 単漢字 default override + 文脈分岐 reading |
 
 ### 異体字
 
@@ -402,7 +402,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 11091 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 11159 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -418,7 +418,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/gintama.toml`](tests/corpus/should_read/gintama.toml) | 1 |
 |  | [`tests/corpus/should_read/kanji_kun_default_20260612.toml`](tests/corpus/should_read/kanji_kun_default_20260612.toml) | 19 |
 |  | [`tests/corpus/should_read/lib_same_char_run_20260918.toml`](tests/corpus/should_read/lib_same_char_run_20260918.toml) | 14 |
-|  | [`tests/corpus/should_read/lib_verb_stem_20260918.toml`](tests/corpus/should_read/lib_verb_stem_20260918.toml) | 20 |
+|  | [`tests/corpus/should_read/lib_verb_stem_20260918.toml`](tests/corpus/should_read/lib_verb_stem_20260918.toml) | 88 |
 |  | [`tests/corpus/should_read/matchhits_20260612.toml`](tests/corpus/should_read/matchhits_20260612.toml) | 24 |
 |  | [`tests/corpus/should_read/name_suffix_20260612.toml`](tests/corpus/should_read/name_suffix_20260612.toml) | 55 |
 |  | [`tests/corpus/should_read/probe_20260621.toml`](tests/corpus/should_read/probe_20260621.toml) | 87 |
