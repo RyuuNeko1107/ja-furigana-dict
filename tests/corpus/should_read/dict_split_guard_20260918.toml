@@ -243,3 +243,18 @@ expected = "ちゅうわw"
 input = "円安が進む"
 mode = "hiragana"
 expected = "えんやすがすすむ"
+
+[[case]]
+input = "3rd単独ライブ"
+mode = "hiragana"
+expected = "サードたんどくライブ"
+
+[[case]]
+input = "2ndライブ待ってます!"
+mode = "hiragana"
+expected = "セカンドライブまってます!"
+
+[[case]]
+input = "1st2人"
+mode = "hiragana"
+expected = "ファーストふたり"
