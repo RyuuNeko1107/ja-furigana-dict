@@ -488,3 +488,28 @@ input = "新八のメガネ"
 mode = "hiragana"
 expected = "しんぱちのメガネ"
 note = "旧 しんはち (銀魂)"
+
+# ─── 小動物 / 目線 / 大前田 (engine_diff 第 13 弾) ───
+[[case]]
+input = "小動物みたい"
+mode = "hiragana"
+expected = "しょうどうぶつみたい"
+note = "旧 こどうぶつ"
+
+[[case]]
+input = "監督目線のネタ"
+mode = "hiragana"
+expected = "かんとくめせんのネタ"
+note = "旧 もくせん"
+
+[[case]]
+input = "ありがとう大前田"
+mode = "hiragana"
+expected = "ありがとうおおまえだ"
+note = "旧 だいまえだ"
+
+[[case]]
+input = "小雨が降る"
+mode = "hiragana"
+expected = "こさめがふる"
+note = "変えてはいけない側: 小 = こ"
