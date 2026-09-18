@@ -148,3 +148,13 @@ expected = "つぎなにきわめにいこかまよう"
 input = "見極めが大事"
 mode = "hiragana"
 expected = "みきわめがだいじ"
+
+[[case]]
+input = "違かったら教えてくれ"
+mode = "hiragana"
+expected = "ちがかったらおしえてくれ"
+
+[[case]]
+input = "違和感"
+mode = "hiragana"
+expected = "いわかん"
