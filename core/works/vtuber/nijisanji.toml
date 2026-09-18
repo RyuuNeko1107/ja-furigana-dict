@@ -15,7 +15,6 @@ description = "にじさんじ (ANYCOLOR): ライバー名 (公式読みベー�
 [entries]
 
 "月ノ美兎" = "ツキノミト"  # default つきノびうさぎ
-"社築" = "ヤシロキズク"    # default しゃちく (社畜の語呂だが公式読みは別)
 "黛灰" = "マユズミカイ"    # 「黛」 たい→まゆずみ
 
 # 2026-06-19 probe 補充 (フルネーム中心、homograph 姓を disambiguate)
@@ -41,7 +40,6 @@ description = "にじさんじ (ANYCOLOR): ライバー名 (公式読みベー�
 "竜胆尊" = "リンドウミコト"      # 竜胆=りんどう/尊=みこと (default そん)
 "桜凛月" = "サクリツキ"          # default さくらりんげつ
 "安土桃" = "アヅチモモ"          # 桃=もも (default とう)
-"静凛" = "シズリン"              # default せいりん
 "栞葉るり" = "シオリハルリ"      # 栞葉=しおりは (default しおりよう)
 "語部紡" = "カタリベツムギ"      # 語部=かたりべ/紡=つむぎ (default ぼう)
 "来栖夏芽" = "クルスナツメ"      # 夏芽=なつめ (default なつが)
@@ -49,7 +47,6 @@ description = "にじさんじ (ANYCOLOR): ライバー名 (公式読みベー�
 # 2026-06-19 probe 補充 第3弾
 "朝日南" = "アサヒナ"            # 朝日南アカネ (default あさひなん)
 "周央" = "スオウ"                # 周央サンゴ (default しゅうおう)
-"成瀬鳴" = "ナルセナル"          # 鳴=なる (default めい)
 "夢月" = "ユヅキ"                # 夢月ロア (default ゆめげつ)
 # 2026-06-19 probe 補充 第4弾 (西園=にしぞの/家長=かちょう homograph は full のみ)
 "遠北" = "トオキタ"              # 遠北千南 (default えんほく)
@@ -68,5 +65,36 @@ description = "にじさんじ (ANYCOLOR): ライバー名 (公式読みベー�
 "壱百満天原" = "イチヒャクマンテンバラ"  # 壱百満天原サロメ。原=ばら (default てんげん)
 "栞葉" = "シオリハ"            # 栞葉るり (default しおりよう)
 "鈴木勝" = "スズキマサル"      # 勝=まさる (default しょう)
-"五十嵐梨花" = "イガラシリンカ"  # 梨花=りんか (default りか)
 "緋月" = "ヒヅキ"              # 緋月ゆい (default ひげつ)
+
+# ★2026-09-18: 助詞が続くと Lindera の分割に同点負けする entry の tie-break
+# (「北野武は」 → きたのたけは)。 読みは default と同じで、 match_hits で同点を破るだけ。
+
+[entries."社築"]  # default しゃちく (社畜の語呂だが公式読みは別)
+reading = "ヤシロキズク"
+
+[[entries."社築".match]]
+next_starts_any = ["か"]
+reading = "ヤシロキズク"
+
+[entries."静凛"]  # default せいりん
+reading = "シズリン"
+
+[[entries."静凛".match]]
+next_starts_any = ["と"]
+reading = "シズリン"
+
+[entries."成瀬鳴"]  # 鳴=なる (default めい)
+reading = "ナルセナル"
+
+[[entries."成瀬鳴".match]]
+next_starts_any = ["か"]
+reading = "ナルセナル"
+
+[entries."五十嵐梨花"]  # 梨花=りんか (default りか)
+reading = "イガラシリンカ"
+
+[[entries."五十嵐梨花".match]]
+next_starts_any = ["と"]
+reading = "イガラシリンカ"
+

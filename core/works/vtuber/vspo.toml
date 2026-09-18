@@ -12,7 +12,17 @@ description = "ぶいすぽっ! : タレント名 (公式読みベース)"
 
 "英リサ" = "ハナブサリサ"      # 英=はなぶさ (default えい)
 "空澄セナ" = "アスミセナ"      # 空澄=あすみ (default そらちょう)
-"兎咲" = "トサキ"              # 兎咲ミミ (default うさぎさ、ミミは passthrough)
 "紫宮" = "シノミヤ"            # 紫宮るな (default むらさききゅう)
 "神成" = "カナル"              # 神成きゅぴ (default かみなり)
 "小雀" = "コスズメ"            # 小雀とと (default こがら)
+
+# ★2026-09-18: 助詞が続くと Lindera の分割に同点負けする entry の tie-break
+# (「北野武は」 → きたのたけは)。 読みは default と同じで、 match_hits で同点を破るだけ。
+
+[entries."兎咲"]  # 兎咲ミミ (default うさぎさ、ミミは passthrough)
+reading = "トサキ"
+
+[[entries."兎咲".match]]
+next_starts_any = ["か"]
+reading = "トサキ"
+

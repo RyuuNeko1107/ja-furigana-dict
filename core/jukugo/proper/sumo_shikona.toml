@@ -18,7 +18,6 @@ description = "大相撲 力士の四股名 (公式読み)"
 "白鷹山" = "ハクヨウザン"      # default しらたかやま
 "琴恵光" = "コトエコウ"        # 光=こう (default ことけいひかり)
 "天空海" = "アクア"            # 熟字訓的な四股名 (default てんくうかい)
-"照強" = "テルツヨシ"          # default しょうきょう
 
 "双葉山" = "フタバヤマ"        # 山=やま (default さん)
 # 2026-06-19 probe 補充 第2弾 (明生=あきお/豊山=とよやま/東龍=とうりゅう は homograph 見送り)
@@ -58,3 +57,14 @@ description = "大相撲 力士の四股名 (公式読み)"
 "御岳海" = "ミタケウミ"        # 御嶽海。嶽→岳 compat 正規化で key=御岳海 (default みたけかい)
 "阿炎" = "アビ"                # 難読四股名 (default あえん)
 "妙義龍" = "ミョウギリュウ"    # 妙義=みょうぎ (default みょうよし)
+
+# ★2026-09-18: 助詞が続くと Lindera の分割に同点負けする entry の tie-break
+# (「北野武は」 → きたのたけは)。 読みは default と同じで、 match_hits で同点を破るだけ。
+
+[entries."照強"]  # default しょうきょう
+reading = "テルツヨシ"
+
+[[entries."照強".match]]
+next_starts_any = ["か"]
+reading = "テルツヨシ"
+

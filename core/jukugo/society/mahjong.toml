@@ -48,7 +48,6 @@ role = "jukugo"
 "門前清" = "メンゼンチン"      # default もんぜんせい
 "立直" = "リーチ"              # default たちなお
 "聴牌" = "テンパイ"
-"振聴" = "[フリテン" # default しんちょう
 "自摸" = "[ツ]モ" # default じさぐる
 "栄和" = "ロンホー"            # default えいわ
 "放銃" = "[ホウジュウ"
@@ -75,7 +74,6 @@ role = "jukugo"
 "混老頭" = "ホンロウトウ"
 "清老頭" = "チンロウトウ"
 "槍槓" = "チャンカン"          # default やりこう
-"跳満" = "ハネマン"            # default ちょうまん
 "三色同刻" = "サンショクドウコー"
 "大四喜" = "ダイスーシー"
 # "天和" は元号 (テンナ、 history.toml) と衝突するため非登録
@@ -109,3 +107,21 @@ input_contains_any = [
 reading = "チンイーソー"
 
 # 「東風」 の文スコープ分岐は general.toml 側 (既存 entry 「[コ]チ」 を detailed 化) に置く
+
+# ★2026-09-18: 助詞が続くと Lindera の分割に同点負けする entry の tie-break
+# (「北野武は」 → きたのたけは)。 読みは default と同じで、 match_hits で同点を破るだけ。
+
+[entries."振聴"]  # default しんちょう
+reading = "[フリテン"
+
+[[entries."振聴".match]]
+next_starts_any = ["か"]
+reading = "[フリテン"
+
+[entries."跳満"]  # default ちょうまん
+reading = "ハネマン"
+
+[[entries."跳満".match]]
+next_starts_any = ["と"]
+reading = "ハネマン"
+

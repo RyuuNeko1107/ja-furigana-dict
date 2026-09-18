@@ -54,7 +54,17 @@ description = "銀魂 (空知英秋): キャラクター名 / 用語 (公式読�
 "夜兎" = "ヤト"            # 夜兎族 (default よるうさぎ)
 "傾奇者" = "カブキモノ"    # 傾奇=かぶき (default けいき)
 "銀時" = "ギントキ"        # 時=とき (default ぎんじ)
-"山崎退" = "ヤマザキサガル"  # 退=さがる (default たい)
 "阿伏兎" = "アブト"        # (default あふくうさぎ)
 "徳川茂茂" = "トクガワシゲシゲ"  # 茂茂=しげしげ 将軍 (default もも)
 "お妙" = "オタエ"          # 妙=たえ (default おみょう)
+
+# ★2026-09-18: 助詞が続くと Lindera の分割に同点負けする entry の tie-break
+# (「北野武は」 → きたのたけは)。 読みは default と同じで、 match_hits で同点を破るだけ。
+
+[entries."山崎退"]  # 退=さがる (default たい)
+reading = "ヤマザキサガル"
+
+[[entries."山崎退".match]]
+next_starts_any = ["か"]
+reading = "ヤマザキサガル"
+

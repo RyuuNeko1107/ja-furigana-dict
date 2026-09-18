@@ -26,7 +26,6 @@ role = "jukugo"
 "雨後の月" = "ウゴノツキ"      # default あめのちのつき
 "司牡丹" = "ツカサボタン"      # default しぼたん
 "三井の寿" = "ミイノコトブキ"  # default みついのじゅ
-"天吹" = "アマブキ"            # default てんすい
 "繁桝" = "シゲマス"            # default はんます
 "独楽蔵" = "コマグラ"          # default こまぞう
 "鷹来屋" = "タカキヤ"          # default たかぎや
@@ -51,4 +50,14 @@ role = "jukugo"
 "玉友" = "ギョクユウ"          # default たまとも
 "龍宮" = "リュウグウ"          # 黒糖焼酎 / 竜宮 (default りゅうきゅう = 琉球との混同)
 "蕎麦焼酎" = "ソバジョウチュウ"  # 焼酎=じょうちゅう 連濁 (default そばしょうちゅう)
+
+# ★2026-09-18: 助詞が続くと Lindera の分割に同点負けする entry の tie-break
+# (「北野武は」 → きたのたけは)。 読みは default と同じで、 match_hits で同点を破るだけ。
+
+[entries."天吹"]  # default てんすい
+reading = "アマブキ"
+
+[[entries."天吹".match]]
+next_starts_any = ["か"]
+reading = "アマブキ"
 

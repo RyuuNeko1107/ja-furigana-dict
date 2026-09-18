@@ -43,3 +43,23 @@ expected = "いんキャムーブ"
 input = "青赤"
 mode = "hiragana"
 expected = "あおあか"
+
+[[case]]
+input = "取説かそこらで見たのでは"
+mode = "hiragana"
+expected = "とりせつかそこらでみたのでは"
+
+[[case]]
+input = "呪怨も今は昔"
+mode = "hiragana"
+expected = "じゅおんもいまはむかし"
+
+[[case]]
+input = "根暗にはきついw"
+mode = "hiragana"
+expected = "ねくらにはきついw"
+
+[[case]]
+input = "盗撮もしてるやん"
+mode = "hiragana"
+expected = "とうさつもしてるやん"

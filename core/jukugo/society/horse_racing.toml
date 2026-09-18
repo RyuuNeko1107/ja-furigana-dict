@@ -14,10 +14,26 @@ role = "jukugo"
 
 "種牡馬" = "シュボバ"        # default たねぼば
 "馬連" = "ウマレン"          # default ばれん (馬単=うまたん は素で正読)
-"追込" = "オイコミ"          # default ついこ
 "追い込み馬" = "オイコミウマ"
 "脚質" = "[キャクシツ" # default あししつ
 "鞍上" = "[アンジョウ" # default くらうえ
 "外厩" = "ガイキュウ"        # default そとうまや
-"輓曳" = "[バンエイ" # ばんえい競馬 (default ひくえい)
 "繋駕速歩" = "ケイガソクホ"  # default けいがはやあし
+
+# ★2026-09-18: 助詞が続くと Lindera の分割に同点負けする entry の tie-break
+# (「北野武は」 → きたのたけは)。 読みは default と同じで、 match_hits で同点を破るだけ。
+
+[entries."追込"]  # default ついこ
+reading = "オイコミ"
+
+[[entries."追込".match]]
+next_starts_any = ["も"]
+reading = "オイコミ"
+
+[entries."輓曳"]  # ばんえい競馬 (default ひくえい)
+reading = "[バンエイ"
+
+[[entries."輓曳".match]]
+next_starts_any = ["か"]
+reading = "[バンエイ"
+

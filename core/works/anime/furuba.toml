@@ -12,6 +12,22 @@ description = "フルーツバスケット (高屋奈月): キャラクター名
 [entries]
 
 "草摩" = "ソウマ"          # 草摩家 (default くさま)
-"草摩夾" = "ソウマキョウ"  # 夾=きょう (default はさむ)
-"草摩紫呉" = "ソウマシグレ"  # 紫呉=しぐれ (default しご)
 "本田透" = "ホンダトオル"  # 透=とおる (default とう)
+
+# ★2026-09-18: 助詞が続くと Lindera の分割に同点負けする entry の tie-break
+# (「北野武は」 → きたのたけは)。 読みは default と同じで、 match_hits で同点を破るだけ。
+
+[entries."草摩夾"]  # 夾=きょう (default はさむ)
+reading = "ソウマキョウ"
+
+[[entries."草摩夾".match]]
+next_starts_any = ["も"]
+reading = "ソウマキョウ"
+
+[entries."草摩紫呉"]  # 紫呉=しぐれ (default しご)
+reading = "ソウマシグレ"
+
+[[entries."草摩紫呉".match]]
+next_starts_any = ["に"]
+reading = "ソウマシグレ"
+

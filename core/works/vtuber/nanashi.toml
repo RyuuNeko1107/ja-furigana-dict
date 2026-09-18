@@ -11,4 +11,14 @@ description = "ななしいんく : タレント名"
 
 "杏戸" = "キョウド"            # 杏戸ゆげ (default あんずこ)
 "柚原" = "ユズハラ"            # 柚原いづみ (default ゆはら)
-"季咲" = "キサキ"              # 季咲あんこ (咲=さき)
+
+# ★2026-09-18: 助詞が続くと Lindera の分割に同点負けする entry の tie-break
+# (「北野武は」 → きたのたけは)。 読みは default と同じで、 match_hits で同点を破るだけ。
+
+[entries."季咲"]  # 季咲あんこ (咲=さき)
+reading = "キサキ"
+
+[[entries."季咲".match]]
+next_starts_any = ["か"]
+reading = "キサキ"
+

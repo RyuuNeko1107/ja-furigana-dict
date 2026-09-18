@@ -8,8 +8,18 @@ description = "個人勢VTuber: タレント名"
 [entries]
 
 "天開司" = "テンカイツカサ"  # 司=つかさ (default し)
-"萌実" = "モエミ"            # .LIVE (default ほうじつ)
 "猫宮" = "ネコミヤ"          # 猫宮ひなた (default ねこきゅう)
 "牛巻" = "ウシマキ"          # 牛巻りこ (default うしかん)
 "兎鞠" = "ウマリ"            # 兎鞠まり (default うさぎまり)
 "夢咲楓" = "ユメサキカエデ"  # 夢咲=ゆめさき
+
+# ★2026-09-18: 助詞が続くと Lindera の分割に同点負けする entry の tie-break
+# (「北野武は」 → きたのたけは)。 読みは default と同じで、 match_hits で同点を破るだけ。
+
+[entries."萌実"]  # .LIVE (default ほうじつ)
+reading = "モエミ"
+
+[[entries."萌実".match]]
+next_starts_any = ["は", "に"]
+reading = "モエミ"
+

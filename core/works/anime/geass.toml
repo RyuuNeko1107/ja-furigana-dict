@@ -10,5 +10,15 @@ description = "コードギアス: キャラクター名"
 "枢木" = "クルルギ"        # 枢木スザク (default すうもく)
 "紅月" = "コウヅキ"        # 紅月カレン (default べにげつ)
 "神楽耶" = "カグヤ"        # (default かぐらや)
-"扇要" = "オウギカナメ"    # 扇=おうぎ/要=かなめ (default せんよう)
 "皇神楽耶" = "スメラギカグヤ"  # 皇=すめらぎ
+
+# ★2026-09-18: 助詞が続くと Lindera の分割に同点負けする entry の tie-break
+# (「北野武は」 → きたのたけは)。 読みは default と同じで、 match_hits で同点を破るだけ。
+
+[entries."扇要"]  # 扇=おうぎ/要=かなめ (default せんよう)
+reading = "オウギカナメ"
+
+[[entries."扇要".match]]
+next_starts_any = ["は"]
+reading = "オウギカナメ"
+

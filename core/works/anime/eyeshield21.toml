@@ -10,6 +10,16 @@ description = "アイシールド21: キャラクター名"
 [entries]
 
 "葉柱" = "ハバシラ"            # 葉柱ルイ (default ようはしら)
-"阿含" = "アゴン"              # 金剛阿含 (default あがん)
 "泥門" = "デイモン"            # 泥門高校 (default どろもん)
 "雪光" = "ユキミツ"            # 雪光学 (default ゆきひかり)
+
+# ★2026-09-18: 助詞が続くと Lindera の分割に同点負けする entry の tie-break
+# (「北野武は」 → きたのたけは)。 読みは default と同じで、 match_hits で同点を破るだけ。
+
+[entries."阿含"]  # 金剛阿含 (default あがん)
+reading = "アゴン"
+
+[[entries."阿含".match]]
+next_starts_any = ["も"]
+reading = "アゴン"
+
