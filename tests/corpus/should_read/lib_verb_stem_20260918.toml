@@ -388,3 +388,40 @@ input = "100万分の1"
 mode = "hiragana"
 expected = "ひゃくまんぶんのいち"
 note = "変えてはいけない側: 分数の 分の (助詞 tail から の を外した理由)"
+
+# ─── ドン引き / Tシャツ / 線引き (engine_diff 第 9 弾) ───
+[[case]]
+input = "ドン引きw"
+mode = "hiragana"
+expected = "どんびきw"
+note = "旧 ドンひき (Lindera token 引き = ヒキ が勝っていた)"
+
+[[case]]
+input = "線引き"
+mode = "hiragana"
+expected = "せんびき"
+note = "旧 せんひき"
+
+[[case]]
+input = "取引き用かな"
+mode = "hiragana"
+expected = "とりひきようかな"
+note = "旧 とりひきき (取引 entry + き で重複)"
+
+[[case]]
+input = "柄物Tシャツ欲しい"
+mode = "hiragana"
+expected = "がらものティーシャツほしい"
+note = "旧 T が読まれなかった"
+
+[[case]]
+input = "駆け引き"
+mode = "hiragana"
+expected = "かけひき"
+note = "変えてはいけない側: 連濁しない"
+
+[[case]]
+input = "引き算"
+mode = "hiragana"
+expected = "ひきざん"
+note = "変えてはいけない側"
