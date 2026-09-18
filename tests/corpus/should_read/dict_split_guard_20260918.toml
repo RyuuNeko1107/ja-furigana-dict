@@ -258,3 +258,23 @@ expected = "セカンドライブまってます!"
 input = "1st2人"
 mode = "hiragana"
 expected = "ファーストふたり"
+
+[[case]]
+input = "一速からあがってない"
+mode = "hiragana"
+expected = "いっそくからあがってない"
+
+[[case]]
+input = "何回頭下げたよ"
+mode = "hiragana"
+expected = "なんかいあたまさげたよ"
+
+[[case]]
+input = "頭上注意"
+mode = "hiragana"
+expected = "ずじょうちゅうい"
+
+[[case]]
+input = "人一人だけ"
+mode = "hiragana"
+expected = "ひとひとりだけ"
