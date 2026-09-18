@@ -116,7 +116,7 @@ expected = "よみのくに"
 [[case]]
 input = "虎児を得ず"
 mode = "hiragana"
-expected = "こじをとくず"
+expected = "こじをえず"
 
 [[case]]
 input = "虎穴に入らずんば虎子を得ず"
