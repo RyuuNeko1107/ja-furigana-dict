@@ -14,3 +14,4 @@ description = "分類前の一時 inbox (≥2 字 surface、 内容が貯まっ�
 #   role が違うため lib が jukugo として誤って load する)。
 
 [entries]
+"そこら中" = "ソコラジュウ"

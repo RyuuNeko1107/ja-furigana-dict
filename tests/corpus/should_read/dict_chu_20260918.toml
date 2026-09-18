@@ -1,0 +1,60 @@
+# ★2026-09-18: VOICEVOX 比較 + 「中」 probe で出た誤読の回帰ロック。
+# 和語連用形 + 中 = チュウ、 ただし 「の中」 / い形容詞連体形 / 中々 は ナカ のまま。
+
+[meta]
+schema_version = "2"
+
+[[case]]
+input = "下積み中"
+mode = "hiragana"
+expected = "したづみちゅう"
+
+[[case]]
+input = "話し合い中だよ"
+mode = "hiragana"
+expected = "はなしあいちゅうだよ"
+
+[[case]]
+input = "打ち合わせ中"
+mode = "hiragana"
+expected = "うちあわせちゅう"
+
+[[case]]
+input = "手探り中"
+mode = "hiragana"
+expected = "てさぐりちゅう"
+
+[[case]]
+input = "お祭り中だから"
+mode = "hiragana"
+expected = "おまつりちゅうだから"
+
+[[case]]
+input = "忙しい中配信ありがとう"
+mode = "hiragana"
+expected = "いそがしいなかはいしんありがとう"
+
+[[case]]
+input = "わため中々やな"
+mode = "hiragana"
+expected = "わためなかなかやな"
+
+[[case]]
+input = "家の中"
+mode = "hiragana"
+expected = "いえのなか"
+
+[[case]]
+input = "そこら中に砂!"
+mode = "hiragana"
+expected = "そこらじゅうにすな!"
+
+[[case]]
+input = "体中に貼ろう"
+mode = "hiragana"
+expected = "からだじゅうにはろう"
+
+[[case]]
+input = "あのじじいが小野篁らしいぞ"
+mode = "hiragana"
+expected = "あのじじいがおののたかむららしいぞ"
