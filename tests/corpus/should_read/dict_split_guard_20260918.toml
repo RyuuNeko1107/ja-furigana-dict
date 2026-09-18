@@ -1,0 +1,35 @@
+# ★2026-09-18: Lindera が 「熟語 + か」 を割る型 (判定かな? → 判 + 定か) の回帰ロック。
+# 文末記号の有無で Lindera の切り方が変わるので、 「?」 付きを必ず含める。
+
+[meta]
+schema_version = "2"
+
+[[case]]
+input = "判定かな?"
+mode = "hiragana"
+expected = "はんていかな?"
+
+[[case]]
+input = "ノーマル周回安定かな?"
+mode = "hiragana"
+expected = "ノーマルしゅうかいあんていかな?"
+
+[[case]]
+input = "的確かな?"
+mode = "hiragana"
+expected = "てきかくかな?"
+
+[[case]]
+input = "冷静かな?"
+mode = "hiragana"
+expected = "れいせいかな?"
+
+[[case]]
+input = "厳密かな?"
+mode = "hiragana"
+expected = "げんみつかな?"
+
+[[case]]
+input = "定かじゃない"
+mode = "hiragana"
+expected = "さだかじゃない"

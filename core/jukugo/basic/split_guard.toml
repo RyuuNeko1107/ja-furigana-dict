@@ -1,0 +1,246 @@
+# Lindera が 「熟語 + か」 を割る型の guard。
+#
+# 「判定かな?」 のように文末記号が付くと Lindera は 「判 + 定か (サダカ)」 と切る。
+# この時 2 つの path は weakest_band も edge 数も同点になり (かな edge が必ず 1 本乗るため
+# weakest は 50 に張り付く)、 熟語側が負けて はんさだ になる。 entry に match condition を
+# 1 つ持たせて match_hits で tie を破る = 読みは default と同じで、 次が 「か」 の時だけ発火。
+#
+# 対象は 2 字目が 「〜か」 の訓 (定か / 確か / 静か / 細か / 愚か / 密か) を持つ熟語。
+
+[meta]
+schema_version = "2"
+role = "jukugo"
+description = "Lindera の 「熟語 + か」 分割に負けないための tie-break entry"
+
+[entries]
+[entries."安定"]
+reading = "アンテイ"
+
+[[entries."安定".match]]
+next_starts_any = ["か"]
+reading = "アンテイ"
+
+[entries."指定"]
+reading = "シテイ"
+
+[[entries."指定".match]]
+next_starts_any = ["か"]
+reading = "シテイ"
+
+[entries."固定"]
+reading = "コテイ"
+
+[[entries."固定".match]]
+next_starts_any = ["か"]
+reading = "コテイ"
+
+[entries."想定"]
+reading = "ソウテイ"
+
+[[entries."想定".match]]
+next_starts_any = ["か"]
+reading = "ソウテイ"
+
+[entries."否定"]
+reading = "ヒテイ"
+
+[[entries."否定".match]]
+next_starts_any = ["か"]
+reading = "ヒテイ"
+
+[entries."鑑定"]
+reading = "カンテイ"
+
+[[entries."鑑定".match]]
+next_starts_any = ["か"]
+reading = "カンテイ"
+
+[entries."勘定"]
+reading = "カンジョウ"
+
+[[entries."勘定".match]]
+next_starts_any = ["か"]
+reading = "カンジョウ"
+
+[entries."未定"]
+reading = "ミテイ"
+
+[[entries."未定".match]]
+next_starts_any = ["か"]
+reading = "ミテイ"
+
+[entries."法定"]
+reading = "ホウテイ"
+
+[[entries."法定".match]]
+next_starts_any = ["か"]
+reading = "ホウテイ"
+
+[entries."検定"]
+reading = "ケンテイ"
+
+[[entries."検定".match]]
+next_starts_any = ["か"]
+reading = "ケンテイ"
+
+[entries."改定"]
+reading = "カイテイ"
+
+[[entries."改定".match]]
+next_starts_any = ["か"]
+reading = "カイテイ"
+
+[entries."判定"]
+reading = "ハンテイ"
+
+[[entries."判定".match]]
+next_starts_any = ["か"]
+reading = "ハンテイ"
+
+[entries."測定"]
+reading = "ソクテイ"
+
+[[entries."測定".match]]
+next_starts_any = ["か"]
+reading = "ソクテイ"
+
+[entries."査定"]
+reading = "サテイ"
+
+[[entries."査定".match]]
+next_starts_any = ["か"]
+reading = "サテイ"
+
+[entries."暫定"]
+reading = "ザンテイ"
+
+[[entries."暫定".match]]
+next_starts_any = ["か"]
+reading = "ザンテイ"
+
+[entries."推定"]
+reading = "スイテイ"
+
+[[entries."推定".match]]
+next_starts_any = ["か"]
+reading = "スイテイ"
+
+[entries."選定"]
+reading = "センテイ"
+
+[[entries."選定".match]]
+next_starts_any = ["か"]
+reading = "センテイ"
+
+[entries."限定"]
+reading = "ゲンテイ"
+
+[[entries."限定".match]]
+next_starts_any = ["か"]
+reading = "ゲンテイ"
+
+[entries."特定"]
+reading = "トクテイ"
+
+[[entries."特定".match]]
+next_starts_any = ["か"]
+reading = "トクテイ"
+
+[entries."認定"]
+reading = "ニンテイ"
+
+[[entries."認定".match]]
+next_starts_any = ["か"]
+reading = "ニンテイ"
+
+[entries."正確"]
+reading = "セイカク"
+
+[[entries."正確".match]]
+next_starts_any = ["か"]
+reading = "セイカク"
+
+[entries."的確"]
+reading = "テキカク"
+
+[[entries."的確".match]]
+next_starts_any = ["か"]
+reading = "テキカク"
+
+[entries."精確"]
+reading = "セイカク"
+
+[[entries."精確".match]]
+next_starts_any = ["か"]
+reading = "セイカク"
+
+[entries."冷静"]
+reading = "レイセイ"
+
+[[entries."冷静".match]]
+next_starts_any = ["か"]
+reading = "レイセイ"
+
+[entries."安静"]
+reading = "アンセイ"
+
+[[entries."安静".match]]
+next_starts_any = ["か"]
+reading = "アンセイ"
+
+[entries."微細"]
+reading = "ビサイ"
+
+[[entries."微細".match]]
+next_starts_any = ["か"]
+reading = "ビサイ"
+
+[entries."零細"]
+reading = "レイサイ"
+
+[[entries."零細".match]]
+next_starts_any = ["か"]
+reading = "レイサイ"
+
+[entries."明細"]
+reading = "メイサイ"
+
+[[entries."明細".match]]
+next_starts_any = ["か"]
+reading = "メイサイ"
+
+[entries."暗愚"]
+reading = "アング"
+
+[[entries."暗愚".match]]
+next_starts_any = ["か"]
+reading = "アング"
+
+[entries."賢愚"]
+reading = "ケング"
+
+[[entries."賢愚".match]]
+next_starts_any = ["か"]
+reading = "ケング"
+
+[entries."親密"]
+reading = "シンミツ"
+
+[[entries."親密".match]]
+next_starts_any = ["か"]
+reading = "シンミツ"
+
+[entries."精密"]
+reading = "セイミツ"
+
+[[entries."精密".match]]
+next_starts_any = ["か"]
+reading = "セイミツ"
+
+[entries."厳密"]
+reading = "ゲンミツ"
+
+[[entries."厳密".match]]
+next_starts_any = ["か"]
+reading = "ゲンミツ"
+
