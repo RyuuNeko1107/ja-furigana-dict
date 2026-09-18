@@ -278,3 +278,23 @@ expected = "ずじょうちゅうい"
 input = "人一人だけ"
 mode = "hiragana"
 expected = "ひとひとりだけ"
+
+[[case]]
+input = "心中お察しします"
+mode = "hiragana"
+expected = "しんちゅうおさっしします"
+
+[[case]]
+input = "へー、同い歳やん"
+mode = "hiragana"
+expected = "へー、おないどしやん"
+
+[[case]]
+input = "二の間"
+mode = "hiragana"
+expected = "にのま"
+
+[[case]]
+input = "15ヶ月間毎日"
+mode = "hiragana"
+expected = "じゅうごかげつかんまいにち"

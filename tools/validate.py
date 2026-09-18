@@ -139,6 +139,48 @@ def check_block_keys(path: Path, errors: Errors, label: str, block: dict, allowe
             f"{label}: 未知の field {unknown} (matcher vocabulary に無い key は lib が"
             f"黙って無視し、 条件が空の match は常時発火に化けます。 typo を確認)",
         )
+    check_run_scoped_values(path, errors, label, block)
+
+
+# prev / next の pseudo-token は **同じ文字種の連続** (lib の prev_logical_token /
+# next_logical_token)。 漢字とかなをまたぐ文字列を条件に書くと
+# **永久に一致しない** (「頭下げた」 の next は 「下」 、
+# 「話し合い中」 の prev は 「い」)。 2026-09-19 に 24 件見つかった。
+RUN_SCOPED_KEYS = ('prev_ends_any', 'next_starts', 'next_starts_any', 'next2_starts_any')
+_NEUTRAL_CHARS = 'ー々・'
+
+
+def _char_class(c: str) -> str | None:
+    if c in _NEUTRAL_CHARS:
+        return None
+    if '一' <= c <= '鿿':
+        return 'kanji'
+    if 'ぁ' <= c <= 'ゖ':
+        return 'hiragana'
+    if 'ァ' <= c <= 'ヶ':
+        return 'katakana'
+    if c.isascii() and c.isalnum():
+        return 'alnum'
+    return 'symbol'
+
+
+def check_run_scoped_values(path: Path, errors: Errors, label: str, block: dict) -> None:
+    """prev / next 系の条件値が文字種をまたいでいないか検査する。"""
+    for key in RUN_SCOPED_KEYS:
+        value = block.get(key)
+        if not value:
+            continue
+        for s in ([value] if isinstance(value, str) else value):
+            if not isinstance(s, str):
+                continue
+            classes = {c for c in (_char_class(ch) for ch in s) if c}
+            if len(classes) > 1:
+                errors.add_for(
+                    path,
+                    f"{label}: {key} = {s!r} は文字種をまたいでいるので **永久に一致しません** "
+                    f"(prev / next は同じ文字種の連続。 「下げ」 → 「下」 のように "
+                    f"先頭の同種部分だけを書くか、 entry として登録する)",
+                )
 
 
 def validate_alt_blocks(path: Path, errors: Errors, label: str, alts, warnings: Warnings | None = None) -> None:

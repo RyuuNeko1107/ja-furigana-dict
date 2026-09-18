@@ -7195,18 +7195,7 @@ next_eq = "です"
 
 [[entries."十分".match]]
 reading = "ジュップン"
-next_starts_any = [
-  "前",
-  "後",
-  "間",
-  "以内",
-  "おき",
-  "ごろ",
-  "頃",
-  "間の",
-  "間で",
-  "間に",
-]
+next_starts_any = ["前", "後", "間", "以内", "おき", "ごろ", "頃"]
 
 [[entries."十分".match]]
 reading = "ジュップン"
@@ -7240,14 +7229,7 @@ next2_starts_any = [
 
 [[entries."一行".match]]
 reading = "イッコウ"
-prev_ends_any = [
-  "私たち",
-  "我々",
-  "彼ら",
-  "御",
-  "総勢",
-  "観光",
-]
+prev_ends_any = ["我々", "御", "総勢", "観光"]
 
 [[entries."一行".alt]]
 reading = "イッコウ"
@@ -7275,15 +7257,7 @@ reading = "ホウボウ"
 [[entries."方々".match]]
 reading = "カタガタ"
 # 「○○の方々」= 人の敬称 かたがた (web確認 weblio。場所の ほうぼう は 方々に/方々を/方々から で の無し)
-prev_ends_any = [
-  "御",
-  "皆様",
-  "関係者",
-  "出席者",
-  "ご来場の",
-  "参加者",
-  "の",
-]
+prev_ends_any = ["御", "皆様", "関係者", "出席者", "参加者", "の"]
 
 [[entries."方々".match]]
 reading = "カタガタ"
@@ -7298,17 +7272,7 @@ reading = "ヒスイ"
 [[entries."翡翠".match]]
 reading = "カワセミ"
 next_eq = "が"
-next2_starts_any = [
-  "水辺",
-  "池",
-  "木",
-  "枝",
-  "羽",
-  "飛",
-  "舞",
-  "鳴",
-  "止ま",
-]
+next2_starts_any = ["水辺", "池", "木", "枝", "羽", "飛", "舞", "鳴"]
 
 [[entries."翡翠".match]]
 reading = "カワセミ"
@@ -11024,7 +10988,7 @@ next2_starts_any = ["察", "思", "推"]
 
 [[entries."心中".match]]
 reading = "シンチュウ"
-next_starts_any = ["お察し", "穏やか", "複雑"]
+next_starts_any = ["複雑"]
 
 [[entries."心中".alt]]
 reading = "シンチュウ"
@@ -11173,7 +11137,7 @@ next_eq_any = ["がある", "がない", "がつく", "がつかない"]
 
 [[entries."分別".match]]
 reading = "フンベツ"
-next_starts_any = ["盛り", "くさ"]
+next_starts_any = ["くさ"]
 
 [[entries."分別".alt]]
 reading = "フンベツ"
