@@ -318,7 +318,7 @@ expected = "いっぽ"
 [[case]]
 input = "3歩"
 mode = "hiragana"
-expected = "さんぼ"
+expected = "さんぽ"  # ★ 2026-09-19: 旧 expected は counter rule のバグ (三歩 = さんぽ) を写していた
 
 [[case]]
 input = "10歩"

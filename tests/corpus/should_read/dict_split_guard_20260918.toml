@@ -298,3 +298,18 @@ expected = "にのま"
 input = "15ヶ月間毎日"
 mode = "hiragana"
 expected = "じゅうごかげつかんまいにち"
+
+[[case]]
+input = "3歩進んで2歩下がる"
+mode = "hiragana"
+expected = "さんぽすすんでにほさがる"
+
+[[case]]
+input = "二軒隣"
+mode = "hiragana"
+expected = "にけんとなり"
+
+[[case]]
+input = "三足千円"
+mode = "hiragana"
+expected = "さんぞくせんえん"

@@ -140,10 +140,11 @@ last_digit = [1, 6, 8, 0]
 suffix = "ポ"
 sokuonize = true
 
-# 3 は連濁で ボ (= 「さんぼ」 三歩)
+# ★ 2026-09-19: 3 は ポ (三歩 = さんぽ)。 連濁の ボ にしていたため
+# 「3歩」 が さんぼ になっていた (漢数字の 三歩 は entry がさんぽを返していたので気づかなかった)
 [[counter."歩".rules]]
 last_digit = [3]
-suffix = "ボ"
+suffix = "ポ"
 # === end: 歩 ===
 
 # === begin: つ === (和語数詞 1〜9 specials)
