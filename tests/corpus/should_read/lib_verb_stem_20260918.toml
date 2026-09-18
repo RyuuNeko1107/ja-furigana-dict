@@ -258,3 +258,34 @@ input = "完全に理解った!"
 mode = "hiragana"
 expected = "かんぜんにわかった!"
 note = "旧 りわかった (ネット表記)"
+
+# ─── 上振れる / 見〜っけ / 得ました (engine_diff 第 5 弾) ───
+[[case]]
+input = "これ以上上振れるか"
+mode = "hiragana"
+expected = "これいじょううわぶれるか"
+note = "旧 うわふれる (entry 上振れ + る で path が組めない)"
+
+[[case]]
+input = "新しいオモチャ、見〜っけ"
+mode = "hiragana"
+expected = "あたらしいオモチャ、みっけ"
+note = "旧 けんっけ (長音符を挟むと 見 が単独になり ケン)"
+
+[[case]]
+input = "学びも得ましたしな"
+mode = "hiragana"
+expected = "まなびもえましたしな"
+note = "旧 とくました"
+
+[[case]]
+input = "お得すぎる"
+mode = "hiragana"
+expected = "おとくすぎる"
+note = "変えてはいけない側: 名詞の 得"
+
+[[case]]
+input = "見学に行く"
+mode = "hiragana"
+expected = "けんがくにいく"
+note = "変えてはいけない側"
