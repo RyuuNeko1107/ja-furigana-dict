@@ -16,3 +16,29 @@ description = "分類前の一時 inbox (≥2 字 surface、 内容が貯まっ�
 [entries]
 "青赤" = "アオアカ"  # 赤 の prev 漢字 rule で セキ に落ちる (TCG の色名)
 "そこら中" = "ソコラジュウ"
+
+[entries."忍法帖"]  # ★2026-09-18: 旧 「忍法帖+助詞」 形式から移設
+reading = "ニンポウチョウ"
+
+[[entries."忍法帖".match]]
+next_starts_any = ["が"]
+reading = "ニンポウチョウ"
+
+
+[entries."満帆"]  # ★2026-09-18: 旧 「満帆+助詞」 形式から移設
+reading = "マンパン"
+
+[[entries."満帆".match]]
+next_starts_any = ["が"]
+reading = "マンパン"
+
+
+
+
+
+[entries."夏草"]  # ★2026-09-18: 旧 「夏草+助詞」 形式から移設
+reading = "ナツグサ"
+
+[[entries."夏草".match]]
+next_starts_any = ["の"]
+reading = "ナツクサ"

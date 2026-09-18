@@ -63,3 +63,28 @@ expected = "ねくらにはきついw"
 input = "盗撮もしてるやん"
 mode = "hiragana"
 expected = "とうさつもしてるやん"
+
+[[case]]
+input = "西武かな"
+mode = "hiragana"
+expected = "せいぶかな"
+
+[[case]]
+input = "正確とは言っていない"
+mode = "hiragana"
+expected = "せいかくとはいっていない"
+
+[[case]]
+input = "北野武は"
+mode = "hiragana"
+expected = "きたのたけしは"
+
+[[case]]
+input = "隠密とは?"
+mode = "hiragana"
+expected = "おんみつとは?"
+
+[[case]]
+input = "そっと置く"
+mode = "hiragana"
+expected = "そっとおく"

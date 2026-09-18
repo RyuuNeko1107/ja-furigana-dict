@@ -825,6 +825,7 @@ reading = "まと"
 char = "次"
 default = "つぎ"
 
+
 # 次いつ = つぎ (ついつ になっていた。 次いで = ついで は形態素解析側で正読)
 [[kanji.match]]
 next_starts_any = ["いつ"]
@@ -1827,6 +1828,12 @@ reading = "ガタ"
 char = "確"
 default = "カク"
 
+# ★2026-09-18: 旧 「確と」 形式の entry から移設 (助詞込み surface の
+# entry は 「北野武は」 のように長い entry を食う)
+[[kanji.match]]
+next_starts_any = ["と"]
+reading = "[シカ]"
+
 [[kanji.match]]
 next_starts_any = ["か"]  # 「確か / 確かに / 確かな」
 reading = "タシ"
@@ -2019,6 +2026,12 @@ default = "テン"
 [[kanji]]
 char = "何"
 default = "ナニ"
+
+# ★2026-09-18: 旧 「何の」 形式の entry から移設 (助詞込み surface の
+# entry は 「北野武は」 のように長い entry を食う)
+[[kanji.match]]
+next_starts_any = ["の"]
+reading = "ナン"
 
 # ★2026-09-15 助数詞スイープ (counters.md) で検出: 「何周年 / 何期生 / 何票 / 何敗」 が ナニ になっていた。
 # 助数詞の形で並ぶ時だけ ナン (何回 / 何本 等は Lindera token か jukugo が覆う)。
@@ -3534,6 +3547,12 @@ default = "ハン"
 char = "伺"
 default = "シ"
 
+# ★2026-09-18: 旧 「伺か」 形式の entry から移設 (助詞込み surface の
+# entry は 「北野武は」 のように長い entry を食う)
+[[kanji.match]]
+next_starts_any = ["か"]
+reading = "ウカガ"
+
 [[kanji]]
 char = "佐"
 default = "サ"
@@ -3714,6 +3733,12 @@ default = "バイ"
 [[kanji]]
 char = "唇"
 default = "シン"
+
+# ★2026-09-18: 旧 「唇か」 形式の entry から移設 (助詞込み surface の
+# entry は 「北野武は」 のように長い entry を食う)
+[[kanji.match]]
+next_starts_any = ["か"]
+reading = "クチビル"
 
 [[kanji.match]]
 next_starts_any = ["を", "が", "の", "に", "は", "も", "や", "と", "で"]
@@ -8704,6 +8729,12 @@ default = "サイ"
 char = "密"
 default = "ミツ"
 
+# ★2026-09-18: 旧 「密と」 形式の entry から移設 (助詞込み surface の
+# entry は 「北野武は」 のように長い entry を食う)
+[[kanji.match]]
+next_starts_any = ["と"]
+reading = "ソッ"
+
 # 「帝」 default 「テイ」 (= 帝国/皇帝/帝政/女帝/帝王/帝都)。
 # unihan default 「みかど」 は古語、 現代では熟語 dominant
 [[kanji]]
@@ -10340,6 +10371,12 @@ reading = "たくま"
 [[kanji]]
 char = "遥"
 default = "ヨウ"
+
+# ★2026-09-18: 旧 「遥が」 形式の entry から移設 (助詞込み surface の
+# entry は 「北野武は」 のように長い entry を食う)
+[[kanji.match]]
+next_starts_any = ["が", "の", "は", "も"]
+reading = "ハルカ"
 
 # 「遥か」 = はるか (副詞 / 形容動詞)
 [[kanji.match]]
@@ -13355,6 +13392,12 @@ default = "ロ"
 char = "呉"
 default = "ゴ"
 
+# ★2026-09-18: 旧 「呉に」 形式の entry から移設 (助詞込み surface の
+# entry は 「北野武は」 のように長い entry を食う)
+[[kanji.match]]
+next_starts_any = ["に"]
+reading = "クレ"
+
 # 「淑」 default 「シュク」 (= 淑女/貞淑/私淑/淑徳)。
 # unihan default 「よい」 は古語、 「良/善」 と被る
 [[kanji]]
@@ -14267,6 +14310,12 @@ reading = "カ"
 [[kanji]]
 char = "武"
 default = "ブ"
+
+# ★2026-09-18: 旧 「武か」 形式の entry から移設 (助詞込み surface の
+# entry は 「北野武は」 のように長い entry を食う)
+[[kanji.match]]
+next_starts_any = ["か", "が", "と", "に", "は", "を"]
+reading = "タケ"
 
 # 「歴」 default 「レキ」 (= 歴史/経歴/履歴/歴代/学歴/職歴/略歴)。
 # unihan default 「へる」 は古語動詞、 「経」 が動詞 dominant
@@ -15385,6 +15434,12 @@ default = "ぬ"
 [[kanji]]
 char = "卸"
 default = "おろ"
+
+# ★2026-09-18: 旧 「卸の」 形式の entry から移設 (助詞込み surface の
+# entry は 「北野武は」 のように長い entry を食う)
+[[kanji.match]]
+next_starts_any = ["の"]
+reading = "オロシ"
 
 # 「訪」 default 「ホウ」 (= 訪問/来訪/歴訪/探訪/巡訪、 音読み主流)。
 # 動詞「訪れる」 → okurigana 「れ」 で「おとず」、
@@ -17346,6 +17401,12 @@ default = "チュウ"
 char = "宛"
 default = "あて"
 
+# ★2026-09-18: 旧 「宛も」 形式の entry から移設 (助詞込み surface の
+# entry は 「北野武は」 のように長い entry を食う)
+[[kanji.match]]
+next_starts_any = ["も"]
+reading = "アタカ"
+
 # 「宵」 default 「よい」 (= 宵闇/宵越し/今宵、 訓主体)
 [[kanji]]
 char = "宵"
@@ -18811,6 +18872,12 @@ default = "チ"
 char = "李"
 default = "すもも"
 
+# ★2026-09-18: 旧 「李と」 形式の entry から移設 (助詞込み surface の
+# entry は 「北野武は」 のように長い entry を食う)
+[[kanji.match]]
+next_starts_any = ["と", "に", "の", "は", "を"]
+reading = "リ"
+
 # 「杏」 default 「あんず」 (= 「杏/杏仁/銀杏」 訓主体)
 [[kanji]]
 char = "杏"
@@ -19045,6 +19112,12 @@ default = "くし"
 [[kanji]]
 char = "此"
 default = "これ"
+
+# ★2026-09-18: 旧 「此の」 形式の entry から移設 (助詞込み surface の
+# entry は 「北野武は」 のように長い entry を食う)
+[[kanji.match]]
+next_starts_any = ["の"]
+reading = "[コ"
 
 # 「毬」 default 「マリ」 (= 手毬/ゴム毬/足毬/打毬 が実出現 dominant。
 # 「毬栗 (イガグリ)」 は jukugo entry で保護)
@@ -19331,6 +19404,12 @@ default = "はかり"
 [[kanji]]
 char = "秦"
 default = "はた"
+
+# ★2026-09-18: 旧 「秦の」 形式の entry から移設 (助詞込み surface の
+# entry は 「北野武は」 のように長い entry を食う)
+[[kanji.match]]
+next_starts_any = ["の"]
+reading = "シン"
 
 # 「稀」 default 「まれ」 (= 「稀/稀有/稀代」 副詞・形容動詞主体)
 [[kanji]]
@@ -20244,6 +20323,12 @@ reading = "ゆが"
 [[kanji]]
 char = "媚"
 default = "こび"
+
+# ★2026-09-18: 旧 「媚を」 形式の entry から移設 (助詞込み surface の
+# entry は 「北野武は」 のように長い entry を食う)
+[[kanji.match]]
+next_starts_any = ["を"]
+reading = "コビ"
 
 [[kanji.match]]
 next_starts_any = ["び", "ぶ", "べ"]
