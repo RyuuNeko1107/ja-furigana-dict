@@ -2939,3 +2939,28 @@ expected = "パチスロでだまたいかい"
 input = "空箱置いとくくらい?"
 mode = "hiragana"
 expected = "からばこおいとくくらい?"
+
+[[case]]
+input = "小指ピーン"
+mode = "hiragana"
+expected = "こゆびピーン"
+
+[[case]]
+input = "手当たり次第に消すのもあり"
+mode = "hiragana"
+expected = "てあたりしだいにけすのもあり"
+
+[[case]]
+input = "2人組つくってー"
+mode = "hiragana"
+expected = "ふたりぐみつくってー"
+
+[[case]]
+input = "名古屋港水族館へおいでませ"
+mode = "hiragana"
+expected = "なごやこうすいぞくかんへおいでませ"
+
+[[case]]
+input = "港で待ってる"
+mode = "hiragana"
+expected = "みなとでまってる"

@@ -65,10 +65,12 @@ def lookup_cmd(binary: str, mode: str, data_dir: str | None, dict_root: Path | N
         rules = dict_root / "rules"
         if rules.is_dir():
             cmd += ["--rules-dir", str(rules)]
-        for sub in ("jukugo", "unihan", "kanji", "loanwords", "works"):
-            core_sub = dict_root / "core" / sub
-            if core_sub.is_dir():
-                cmd += ["--core-dict-dir", str(core_sub)]
+        # core 直下を丸ごと渡す (lib は再帰的に走査する)。 sub dir を列挙すると
+        # `core/_inbox.toml` のような root 直下の file が読まれず、 corpus が
+        # 実挙動と食い違う (2026-09-19 に 13 件の偽 FAIL として顕在化)。
+        core = dict_root / "core"
+        if core.is_dir():
+            cmd += ["--core-dict-dir", str(core)]
     return cmd
 
 
