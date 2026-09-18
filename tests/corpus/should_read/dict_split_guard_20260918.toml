@@ -113,3 +113,8 @@ expected = "わからないからとけた"
 input = "野崎商事"
 mode = "hiragana"
 expected = "のざきしょうじ"
+
+[[case]]
+input = "慎重に組み立ててる"
+mode = "hiragana"
+expected = "しんちょうにくみたててる"
