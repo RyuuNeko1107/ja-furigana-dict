@@ -513,3 +513,9 @@ input = "小雨が降る"
 mode = "hiragana"
 expected = "こさめがふる"
 note = "変えてはいけない側: 小 = こ"
+
+[[case]]
+input = "呪文書買おうぜ"
+mode = "hiragana"
+expected = "じゅもんしょかおうぜ"
+note = "旧 じゅぶんしょ (全漢字スイープ 書)"
