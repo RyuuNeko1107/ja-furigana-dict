@@ -519,3 +519,28 @@ input = "呪文書買おうぜ"
 mode = "hiragana"
 expected = "じゅもんしょかおうぜ"
 note = "旧 じゅぶんしょ (全漢字スイープ 書)"
+
+# ─── 蜂 / 見 (読みのばらつき集計から) ───
+[[case]]
+input = "今回蜂が鍵になるかもな"
+mode = "hiragana"
+expected = "こんかいはちがかぎになるかもな"
+note = "旧 ほう (「前が漢字なら ホウ」 が広すぎた)"
+
+[[case]]
+input = "養蜂場"
+mode = "hiragana"
+expected = "ようほうじょう"
+note = "変えてはいけない側: 養蜂 は ホウ"
+
+[[case]]
+input = "何見んねん"
+mode = "hiragana"
+expected = "なにみんねん"
+note = "旧 なにけんんねん"
+
+[[case]]
+input = "イッキ見辛くね?"
+mode = "hiragana"
+expected = "イッキみからくね?"
+note = "旧 けんからく (見 + 辛)"
