@@ -313,3 +313,8 @@ expected = "にけんとなり"
 input = "三足千円"
 mode = "hiragana"
 expected = "さんぞくせんえん"
+
+[[case]]
+input = "尼崎さん、おはようございます"
+mode = "hiragana"
+expected = "あまがさきさん、おはようございます"
