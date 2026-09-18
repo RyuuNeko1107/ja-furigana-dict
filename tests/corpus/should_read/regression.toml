@@ -2964,3 +2964,38 @@ expected = "なごやこうすいぞくかんへおいでませ"
 input = "港で待ってる"
 mode = "hiragana"
 expected = "みなとでまってる"
+
+[[case]]
+input = "もう漁ってるww"
+mode = "hiragana"
+expected = "もうあさってるww"
+
+[[case]]
+input = "所持金増やした分"
+mode = "hiragana"
+expected = "しょじきんふやしたぶん"
+
+[[case]]
+input = "ザイオン外しかな"
+mode = "hiragana"
+expected = "ザイオンはずしかな"
+
+[[case]]
+input = "予想外すぎるw"
+mode = "hiragana"
+expected = "よそうがいすぎるw"
+
+[[case]]
+input = "野次がすごいw"
+mode = "hiragana"
+expected = "やじがすごいw"
+
+[[case]]
+input = "次がない。"
+mode = "hiragana"
+expected = "つぎがない。"
+
+[[case]]
+input = "すーぐ加藤浩次が出てくるやんw"
+mode = "hiragana"
+expected = "すーぐかとうこうじがでてくるやんw"
