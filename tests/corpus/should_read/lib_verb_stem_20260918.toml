@@ -289,3 +289,34 @@ input = "見学に行く"
 mode = "hiragana"
 expected = "けんがくにいく"
 note = "変えてはいけない側"
+
+# ─── 寝 + 記号 / お上手 / 人数多い (engine_diff 第 6 弾) ───
+[[case]]
+input = "のんびり楽しみながら寝w"
+mode = "hiragana"
+expected = "のんびりたのしみながらねw"
+note = "旧 しんw (文末で単独に置かれる 寝)"
+
+[[case]]
+input = "その時は何時寝?"
+mode = "hiragana"
+expected = "そのときはなんじね?"
+note = "旧 なんじしん"
+
+[[case]]
+input = "就寝時間"
+mode = "hiragana"
+expected = "しゅうしんじかん"
+note = "変えてはいけない側: 次が漢字の 寝"
+
+[[case]]
+input = "ガチャお上手すぎませんか"
+mode = "hiragana"
+expected = "ガチャおじょうずすぎませんか"
+note = "旧 おうますぎ"
+
+[[case]]
+input = "人数多いから注意"
+mode = "hiragana"
+expected = "にんずうおおいからちゅうい"
+note = "旧 ひとかずおおい (Lindera が 人|数多い と割る)"
