@@ -320,3 +320,40 @@ input = "人数多いから注意"
 mode = "hiragana"
 expected = "にんずうおおいからちゅうい"
 note = "旧 ひとかずおおい (Lindera が 人|数多い と割る)"
+
+# ─── かな助数詞 / 長押し (engine_diff 第 7 弾) ───
+[[case]]
+input = "頭3つね"
+mode = "hiragana"
+expected = "あたまみっつね"
+note = "旧 あたまさんつ (Lindera が つね を 1 語にして 3つ の候補が同点で負けていた)"
+
+[[case]]
+input = "縦2つまでは合ってる"
+mode = "hiragana"
+expected = "たてふたつまではあってる"
+note = "旧 たてにつまで"
+
+[[case]]
+input = "腹八分目"
+mode = "hiragana"
+expected = "はらはちぶんめ"
+note = "変えてはいけない側: 漢字の助数詞には hits を付けない"
+
+[[case]]
+input = "3時間位だな"
+mode = "hiragana"
+expected = "さんじかんくらいだな"
+note = "変えてはいけない側"
+
+[[case]]
+input = "長押しするだけ"
+mode = "hiragana"
+expected = "ながおしするだけ"
+note = "旧 なげしし (建築の 長押 = ナゲシ が出ていた)"
+
+[[case]]
+input = "長押の彫刻"
+mode = "hiragana"
+expected = "なげしのちょうこく"
+note = "変えてはいけない側: 建築用語"
