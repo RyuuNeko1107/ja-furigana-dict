@@ -201,7 +201,7 @@ expected = "ろうかいなピッチング"
 [[case]]
 input = "抑え方が老獪になってきた"
 mode = "hiragana"
-expected = "おさえほうがろうかいになってきた"
+expected = "おさえかたがろうかいになってきた"
 
 [[case]]
 input = "欺瞞!"

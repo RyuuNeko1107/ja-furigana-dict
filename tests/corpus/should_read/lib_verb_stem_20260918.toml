@@ -209,3 +209,52 @@ input = "上から出れそう"
 mode = "hiragana"
 expected = "うえからでれそう"
 note = "旧 しゅつれそう"
+
+# ─── 方 = カタ / 連濁 (engine_diff 第 4 弾) ───
+[[case]]
+input = "切り方は合ってる"
+mode = "hiragana"
+expected = "きりかたはあってる"
+note = "旧 きりほう (次が は/が/も で ホウ に倒れていた)"
+
+[[case]]
+input = "積み方も知りたい"
+mode = "hiragana"
+expected = "つみかたもしりたい"
+note = "旧 つみほう"
+
+[[case]]
+input = "大きい方がいい"
+mode = "hiragana"
+expected = "おおきいほうがいい"
+note = "変えてはいけない側: 形容詞 + 方 = ホウ"
+
+[[case]]
+input = "上の方に"
+mode = "hiragana"
+expected = "うえのほうに"
+note = "変えてはいけない側"
+
+[[case]]
+input = "寝る方おやすみ"
+mode = "hiragana"
+expected = "ねるほうおやすみ"
+note = "変えてはいけない側: 動詞終止形 + 方 = ホウ"
+
+[[case]]
+input = "電気付けたらええ"
+mode = "hiragana"
+expected = "でんきつけたらええ"
+note = "旧 でんきづけ (気付 entry が 電|気付|け を拾っていた)"
+
+[[case]]
+input = "大盤振る舞いすぎる"
+mode = "hiragana"
+expected = "おおばんぶるまいすぎる"
+note = "旧 おおばんふるまい"
+
+[[case]]
+input = "完全に理解った!"
+mode = "hiragana"
+expected = "かんぜんにわかった!"
+note = "旧 りわかった (ネット表記)"
