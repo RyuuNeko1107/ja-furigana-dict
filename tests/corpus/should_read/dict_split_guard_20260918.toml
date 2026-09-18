@@ -173,3 +173,33 @@ expected = "あめやんだけどかぜひどい"
 input = "和風すごい"
 mode = "hiragana"
 expected = "わふうすごい"
+
+[[case]]
+input = "多分兄が撮った"
+mode = "hiragana"
+expected = "たぶんあにがとった"
+
+[[case]]
+input = "結構声でかいな"
+mode = "hiragana"
+expected = "けっこうこえでかいな"
+
+[[case]]
+input = "今回金です"
+mode = "hiragana"
+expected = "こんかいかねです"
+
+[[case]]
+input = "絶対神ゲーやん"
+mode = "hiragana"
+expected = "ぜったいかみゲーやん"
+
+[[case]]
+input = "普通車だよ"
+mode = "hiragana"
+expected = "ふつうくるまだよ"
+
+[[case]]
+input = "大体月1"
+mode = "hiragana"
+expected = "だいたいつきいち"
