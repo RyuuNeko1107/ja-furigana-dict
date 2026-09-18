@@ -203,3 +203,23 @@ expected = "ふつうくるまだよ"
 input = "大体月1"
 mode = "hiragana"
 expected = "だいたいつきいち"
+
+[[case]]
+input = "結局金だな"
+mode = "hiragana"
+expected = "けっきょくかねだな"
+
+[[case]]
+input = "一旦水飲もう"
+mode = "hiragana"
+expected = "いったんみずのもう"
+
+[[case]]
+input = "全員白だから"
+mode = "hiragana"
+expected = "ぜんいんしろだから"
+
+[[case]]
+input = "時間外の試合後"
+mode = "hiragana"
+expected = "じかんがいのしあいご"
