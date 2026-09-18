@@ -692,6 +692,7 @@ def validate_kanji_blocks(path: Path, errors: Errors, warnings: Warnings | None 
         errors.add_for(path, "[[kanji]] は array of tables (現在 不正型)")
         return {}
     flat: dict[str, str] = {}
+    seen_chars: dict[str, int] = {}
     for i, b in enumerate(blocks):
         if not isinstance(b, dict):
             errors.add_for(path, f"[[kanji]][{i}] が table ではない")
@@ -711,6 +712,15 @@ def validate_kanji_blocks(path: Path, errors: Errors, warnings: Warnings | None 
             )
             continue
         check_reading(path, errors, f"[[kanji]] char={char!r}", default, warnings)
+        # 同じ字の [[kanji]] block が 2 つあると、 後ろの block の match は
+        # 先頭 block の default に衝突して挙動が読めなくなる
+        if char in seen_chars:
+            errors.add_for(
+                path,
+                f"[[kanji]][{i}] (char={char!r}): 同じ字の block が既にある "
+                f"([{seen_chars[char]}])。 match を 1 つの block にまとめる",
+            )
+        seen_chars[char] = i
         # match 配列 (optional) を検証
         matches = b.get("match", [])
         if matches and not isinstance(matches, list):
@@ -719,6 +729,7 @@ def validate_kanji_blocks(path: Path, errors: Errors, warnings: Warnings | None 
                 f"[[kanji]][{i}] (char={char!r}): match field は array of table (現在 {type(matches).__name__})",
             )
             matches = []
+        seen_conds: dict[str, int] = {}
         for j, m in enumerate(matches):
             if not isinstance(m, dict):
                 errors.add_for(
@@ -733,6 +744,17 @@ def validate_kanji_blocks(path: Path, errors: Errors, warnings: Warnings | None 
                     f"[[kanji]][{i}] (char={char!r}): match[{j}] に reading 不在",
                 )
                 continue
+            # 完全に同じ match は 2 つ目以降が永遠に到達しない (第一 hit 採用)
+            cond_key = repr(sorted(
+                (k, tuple(v) if isinstance(v, list) else v) for k, v in m.items()
+            ))
+            if cond_key in seen_conds:
+                errors.add_for(
+                    path,
+                    f"[[kanji]][{i}] (char={char!r}): match[{j}] は match[{seen_conds[cond_key]}] と"
+                    f"完全に同じなので到達しない (第一 hit 採用)。 削除する",
+                )
+            seen_conds[cond_key] = j
             check_reading(path, errors, f"[[kanji]] char={char!r} match[{j}]", m_reading, warnings)
             check_block_keys(path, errors, f"[[kanji]] char={char!r} match[{j}]", m, MATCH_BLOCK_KEYS)
         validate_alt_blocks(path, errors, f"[[kanji]] char={char!r}", b.get("alt"), warnings)
