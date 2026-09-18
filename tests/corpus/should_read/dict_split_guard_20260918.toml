@@ -138,3 +138,13 @@ expected = "れっかくかいほう"
 input = "まず別日にしてほしい"
 mode = "hiragana"
 expected = "まずべつじつにしてほしい"
+
+[[case]]
+input = "次何極めに行こか迷う"
+mode = "hiragana"
+expected = "つぎなにきわめにいこかまよう"
+
+[[case]]
+input = "見極めが大事"
+mode = "hiragana"
+expected = "みきわめがだいじ"
