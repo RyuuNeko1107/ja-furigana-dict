@@ -211,7 +211,7 @@ expected = "うるうどしどころじゃない"
 [[case]]
 input = "今作は閏関係なく2月末かな?"
 mode = "hiragana"
-expected = "こんさくはうるうかんけいなくにげつまつかな?"
+expected = "こんさくはうるうかんけいなくにがつまつかな?"
 
 [[case]]
 input = "漸く覚えたか"

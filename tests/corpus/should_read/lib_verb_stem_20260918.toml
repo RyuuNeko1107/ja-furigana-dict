@@ -425,3 +425,22 @@ input = "引き算"
 mode = "hiragana"
 expected = "ひきざん"
 note = "変えてはいけない側"
+
+# ─── 月末 / 千葉 (engine_diff 第 10 弾) ───
+[[case]]
+input = "8月末だっけ"
+mode = "hiragana"
+expected = "はちがつまつだっけ"
+note = "旧 はちげつまつ (月末 entry が無く 8 + 月末 で ゲツマツ)"
+
+[[case]]
+input = "今月末まで"
+mode = "hiragana"
+expected = "こんげつまつまで"
+note = "変えてはいけない側: 月末 entry を足すと 今|月末 で いまげつまつ になる"
+
+[[case]]
+input = "ほな千葉行くかー"
+mode = "hiragana"
+expected = "ほなちばいくかー"
+note = "旧 ほなせんよう (千葉 entry が無く IPADIC 頼みだった)"
