@@ -444,3 +444,22 @@ input = "ほな千葉行くかー"
 mode = "hiragana"
 expected = "ほなちばいくかー"
 note = "旧 ほなせんよう (千葉 entry が無く IPADIC 頼みだった)"
+
+# ─── 坂本 / 四角 (engine_diff 第 11 弾) ───
+[[case]]
+input = "それ坂本かも"
+mode = "hiragana"
+expected = "それさかもとかも"
+note = "旧 さかほん (entry が無く 坂|本 に割れていた)"
+
+[[case]]
+input = "大坂本店"
+mode = "hiragana"
+expected = "おおさかほんてん"
+note = "変えてはいけない側"
+
+[[case]]
+input = "頭四角確定だね"
+mode = "hiragana"
+expected = "あたましかくかくていだね"
+note = "旧 よんかく (counter 角 が拾っていた)"
