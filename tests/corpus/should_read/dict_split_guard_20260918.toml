@@ -33,3 +33,13 @@ expected = "げんみつかな?"
 input = "定かじゃない"
 mode = "hiragana"
 expected = "さだかじゃない"
+
+[[case]]
+input = "陰キャムーブ"
+mode = "hiragana"
+expected = "いんキャムーブ"
+
+[[case]]
+input = "青赤"
+mode = "hiragana"
+expected = "あおあか"

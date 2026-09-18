@@ -16766,6 +16766,12 @@ default = "かげ"
 prev_char_type = "漢字"
 reading = "イン"
 
+# ★2026-09-18: 「陰キャ」 の entry は完全一致なので 「陰キャラ / 陰キャゴー」 が
+# default の かげ に落ちていた (陽キャ は 陽 の default が ヨウ なので無傷だった)
+[[kanji.match]]
+next_starts_any = ["キャ"]
+reading = "イン"
+
 # 「橋」 default 「はし」 + prev 漢字 → 「キョウ」 (= 陸橋/橋脚/橋梁/橋頭堡/吊橋)
 [[kanji]]
 char = "橋"

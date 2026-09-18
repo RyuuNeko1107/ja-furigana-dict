@@ -14,4 +14,5 @@ description = "分類前の一時 inbox (≥2 字 surface、 内容が貯まっ�
 #   role が違うため lib が jukugo として誤って load する)。
 
 [entries]
+"青赤" = "アオアカ"  # 赤 の prev 漢字 rule で セキ に落ちる (TCG の色名)
 "そこら中" = "ソコラジュウ"
