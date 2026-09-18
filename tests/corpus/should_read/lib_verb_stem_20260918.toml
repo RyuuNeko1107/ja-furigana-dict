@@ -463,3 +463,28 @@ input = "頭四角確定だね"
 mode = "hiragana"
 expected = "あたましかくかくていだね"
 note = "旧 よんかく (counter 角 が拾っていた)"
+
+# ─── 牛歩 / 観方 / 仕入れ値 / 新八 (engine_diff 第 12 弾) ───
+[[case]]
+input = "牛歩w"
+mode = "hiragana"
+expected = "ぎゅうほw"
+note = "旧 うしほ (w が付くと 牛|歩 に割れる)"
+
+[[case]]
+input = "ニコたんの観方よ"
+mode = "hiragana"
+expected = "ニコたんのみかたよ"
+note = "旧 かんかた"
+
+[[case]]
+input = "仕入れ値あるから"
+mode = "hiragana"
+expected = "しいれねあるから"
+note = "旧 しいれち"
+
+[[case]]
+input = "新八のメガネ"
+mode = "hiragana"
+expected = "しんぱちのメガネ"
+note = "旧 しんはち (銀魂)"
