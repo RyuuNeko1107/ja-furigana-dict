@@ -3332,6 +3332,11 @@ reading = "ブシ"
 char = "筋"
 default = "すじ"
 
+# ★ 2026-09-18: entry 「筋トレ」 は完全一致なので 「筋トレガチ勢」 が すじトレ に落ちる
+[[kanji.match]]
+next_starts_any = ["トレ"]
+reading = "キン"
+
 # ★ 2026-09-18: 副詞・時の語の直後は熟語ではない (多分兄が → たぶんけいが)。
 # prev 漢字 match より先に置いて default の訓読みに戻す
 [[kanji.match]]

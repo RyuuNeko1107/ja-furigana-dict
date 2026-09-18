@@ -146,7 +146,6 @@ description = "古典文学 / 作品名 / 文学用語 / 詩歌 / 評論"
 "表六句" = "オモテロック"
 "名残の折" = "ナゴリノオリ"
 "三の折" = "サンノオリ"
-"定座" = "[ジョウザ"
 "本意" = "ホンイ"
 "其場付" = "ソノバヅケ"
 "季重なり" = "キガサナリ"
@@ -781,4 +780,14 @@ reading = "[カゲキヨ"
 [[entries."景清".match]]
 next_starts_any = ["か"]
 reading = "[カゲキヨ"
+
+# ★ 助詞が続くと Lindera の分割に同点負けする entry の tie-break
+# (「取説か」 → しゅせつか)。 読みは default と同じで、 match_hits で同点を破るだけ。
+
+[entries."定座"]  
+reading = "[ジョウザ"
+
+[[entries."定座".match]]
+next_starts_any = ["が"]
+reading = "[ジョウザ"
 

@@ -14,6 +14,7 @@ description = "分類前の一時 inbox (≥2 字 surface、 内容が貯まっ�
 #   role が違うため lib が jukugo として誤って load する)。
 
 [entries]
+"中和" = "チュウワ"  # 「中和w」 が 中 + 和 に割れて ちゅうか になる
 "極め" = "キワメ"  # IPADIC の 極め = キメ (決め) に取られる
 "見極め" = "ミキワメ"  # 上の entry が 見 + 極め と割るのを防ぐ
 "別日" = "ベツジツ"  # 別 + 日(ヒ) に割れて促音便 pass が ベッピ にしていた
@@ -47,3 +48,13 @@ reading = "ナツグサ"
 [[entries."夏草".match]]
 next_starts_any = ["の"]
 reading = "ナツクサ"
+
+# ★ 2026-09-18: entry が周辺文字で負ける分 (match_hits で同点を破る)
+[entries."高杉"]
+reading = "タカスギ"
+
+[[entries."高杉".match]]
+prev_char_type = "カタカナ"
+reading = "タカスギ"
+
+

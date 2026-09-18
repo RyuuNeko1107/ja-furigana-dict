@@ -223,3 +223,23 @@ expected = "ぜんいんしろだから"
 input = "時間外の試合後"
 mode = "hiragana"
 expected = "じかんがいのしあいご"
+
+[[case]]
+input = "筋トレガチ勢の会話だ"
+mode = "hiragana"
+expected = "きんトレガチぜいのかいわだ"
+
+[[case]]
+input = "クオリティ高杉"
+mode = "hiragana"
+expected = "クオリティたかすぎ"
+
+[[case]]
+input = "中和w"
+mode = "hiragana"
+expected = "ちゅうわw"
+
+[[case]]
+input = "円安が進む"
+mode = "hiragana"
+expected = "えんやすがすすむ"

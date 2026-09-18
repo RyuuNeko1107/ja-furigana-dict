@@ -7,7 +7,6 @@ description = "食戟のソーマ: キャラクター名"
 
 [entries]
 
-"幸平" = "ユキヒラ"        # 幸平創真 (default こうへい)
 "幸平創真" = "ユキヒラソウマ"  # 創真=そうま (default そうしん)
 "田所恵" = "タドコロメグミ"  # 恵=めぐみ (default けい)
 "新戸" = "シントメ"        # 新戸緋沙子 (default しんと。旧 アラト は誤)
@@ -24,4 +23,14 @@ reading = "ナキリ"
 [[entries."薙切".match]]
 next_starts_any = ["に"]
 reading = "ナキリ"
+
+# ★ 助詞が続くと Lindera の分割に同点負けする entry の tie-break
+# (「取説か」 → しゅせつか)。 読みは default と同じで、 match_hits で同点を破るだけ。
+
+[entries."幸平"]  # 幸平創真 (default こうへい)
+reading = "ユキヒラ"
+
+[[entries."幸平".match]]
+next_starts_any = ["が"]
+reading = "ユキヒラ"
 

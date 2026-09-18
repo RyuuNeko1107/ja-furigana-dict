@@ -109,7 +109,6 @@ role = "jukugo"
 "釣瓶火" = "ツルベビ"
 "古空穂" = "フルウツボ"
 "琴古主" = "コトフルヌシ"
-"角盥漱" = "ツノハンゾウ"
 "鳴釜" = "ナリガマ"
 "経凜々" = "キョウリンリン"
 "払子守" = "ホッスモリ"
@@ -129,7 +128,6 @@ role = "jukugo"
 "天一神" = "テンイチジン"
 "八将神" = "ハチショウジン"
 "土公神" = "ドクジン"
-"火伏" = "[ヒ]ブセ"
 "依坐" = "ヨリマシ"
 "潮垢離" = "シオゴリ"
 "憑物筋" = "ツキモノスジ"
@@ -219,4 +217,21 @@ reading = "クチサケ"
 [[entries."口裂".match]]
 next_starts_any = ["か"]
 reading = "クチサケ"
+
+# ★ 助詞が続くと Lindera の分割に同点負けする entry の tie-break
+# (「取説か」 → しゅせつか)。 読みは default と同じで、 match_hits で同点を破るだけ。
+
+[entries."角盥漱"]  
+reading = "ツノハンゾウ"
+
+[[entries."角盥漱".match]]
+next_starts_any = ["が"]
+reading = "ツノハンゾウ"
+
+[entries."火伏"]  
+reading = "[ヒ]ブセ"
+
+[[entries."火伏".match]]
+next_starts_any = ["が"]
+reading = "[ヒ]ブセ"
 

@@ -74,9 +74,6 @@ description = "専門用語 (医学 / 軍事 / 法学 / 経済 / IT / 工学)"
 
 # ア行
 "円高" = "[エンダカ"
-"円安" = "[エンヤス"
-
-# カ行
 "学監" = "[ガッカン"
 "高脂血症" = "コウシケッショウ"
 
@@ -204,4 +201,14 @@ reading = "[マエダテ"
 [[entries."前立".match]]
 next_starts_any = ["と"]
 reading = "[マエダテ"
+
+# ★ 助詞が続くと Lindera の分割に同点負けする entry の tie-break
+# (「取説か」 → しゅせつか)。 読みは default と同じで、 match_hits で同点を破るだけ。
+
+[entries."円安"]  # カ行
+reading = "[エンヤス"
+
+[[entries."円安".match]]
+next_starts_any = ["が"]
+reading = "[エンヤス"
 

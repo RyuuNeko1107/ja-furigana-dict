@@ -67,7 +67,6 @@ description = "乗り物 / 交通手段 / 船舶 / 航空 / 鉄道"
 "間の宿" = "アイノシュク"
 "平旅籠" = "ヒラハタゴ"
 "商人宿" = "アキンドヤド"
-"宿継" = "シュクツギ"
 "宿役人" = "シュクヤクニン"
 "留女" = "トメオンナ"
 # 和船帆船 船種部位船具航海 第2 (★agent×probe 2026-06-21)
@@ -267,4 +266,14 @@ reading = "カキダツ"
 [[entries."垣立".match]]
 next_starts_any = ["と"]
 reading = "カキダツ"
+
+# ★ 助詞が続くと Lindera の分割に同点負けする entry の tie-break
+# (「取説か」 → しゅせつか)。 読みは default と同じで、 match_hits で同点を破るだけ。
+
+[entries."宿継"]  
+reading = "シュクツギ"
+
+[[entries."宿継".match]]
+next_starts_any = ["が"]
+reading = "シュクツギ"
 

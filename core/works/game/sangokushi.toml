@@ -44,7 +44,6 @@ description = "三国志 (演義/ゲーム/漫画): 武将名 (日本語音読�
 "荀攸" = "ジュンユウ"      # 攸=ゆう
 "華歆" = "カキン"          # 華=か/歆=きん
 "諸葛恪" = "ショカツカク"  # 恪=かく
-"関平" = "カンペイ"        # 平=ぺい 連濁
 # 2026-06-19 probe 第3弾
 "呂蒙" = "リョモウ"      # 呂=りょ (default ろ)
 "馬忠" = "バチュウ"      # 馬=ば (default うま)
@@ -70,4 +69,14 @@ reading = "ガクシン"
 [[entries."楽進".match]]
 next_starts_any = ["も"]
 reading = "ガクシン"
+
+# ★ 助詞が続くと Lindera の分割に同点負けする entry の tie-break
+# (「取説か」 → しゅせつか)。 読みは default と同じで、 match_hits で同点を破るだけ。
+
+[entries."関平"]  # 平=ぺい 連濁
+reading = "カンペイ"
+
+[[entries."関平".match]]
+next_starts_any = ["が"]
+reading = "カンペイ"
 
