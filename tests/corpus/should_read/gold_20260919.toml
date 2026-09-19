@@ -206,3 +206,17 @@ input = "星飛雄馬になりそう"
 mode = "hiragana"
 expected = "ほしひゅうまになりそう"
 
+[[case]]
+input = "MVPで獲るぞ!"
+mode = "hiragana"
+expected = "エムブイピーでとるぞ!"
+
+[[case]]
+input = "的当ては残したい"
+mode = "hiragana"
+expected = "まとあてはのこしたい"
+
+[[case]]
+input = "小物界の大物"
+mode = "hiragana"
+expected = "こものかいのおおもの"
