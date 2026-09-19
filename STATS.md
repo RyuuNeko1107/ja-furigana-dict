@@ -24,14 +24,14 @@ git に commit されている master HEAD の状態を基準にする。
 | カテゴリ | エントリ数 | サイズ |
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,668** | **728 KB** |
-| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **21,321** | **878 KB** |
-| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,675** | **132 KB** |
+| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **21,332** | **879 KB** |
+| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,677** | **132 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **1,712** | **44 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **15** | **1.7 KB** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,778** | **355 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **718** | **35 KB** |
-| **合計** | **68,887** | **2.12 MB** |
+| **合計** | **68,900** | **2.13 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -56,7 +56,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/jukugo/<genre>/*` — 手動 PR メンテのジャンル別 jukugo (≥ 2 字 surface)。 lib の Step 3 (jukugo lookup) で Lindera より優先採用。 各 genre dir の `_genre.toml` がカテゴリ description を持つ。
 
-**合計**: 21,321 件 / 878 KB (genre 6 区分)
+**合計**: 21,332 件 / 879 KB (genre 6 区分)
 
 #### 自然・生命
 
@@ -67,16 +67,16 @@ git に commit されている master HEAD の状態を基準にする。
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
 | [`core/jukugo/nature/animals.toml`](core/jukugo/nature/animals.toml) | 1,215 | 39 KB | 動植物 / 魚介 / 鳥 / 昆虫 / 茸 / 海藻の難読 |
-| [`core/jukugo/nature/place_names.toml`](core/jukugo/nature/place_names.toml) | 820 | 39 KB | 地名 (47 都道府県 / 主要都市 / 駅 / 寺社仏閣 / 観光地) |
+| [`core/jukugo/nature/place_names.toml`](core/jukugo/nature/place_names.toml) | 819 | 39 KB | 地名 (47 都道府県 / 主要都市 / 駅 / 寺社仏閣 / 観光地) |
 | [`core/jukugo/nature/foods.toml`](core/jukugo/nature/foods.toml) | 498 | 19 KB | 食べ物 / 料理 / 和菓子 / 郷土料理 / 食材 / 調味料 |
-| [`core/jukugo/nature/plants.toml`](core/jukugo/nature/plants.toml) | 405 | 13 KB | 植物 / 花 / 樹木 / 草本の難読 (熟字訓) |
+| [`core/jukugo/nature/plants.toml`](core/jukugo/nature/plants.toml) | 404 | 13 KB | 植物 / 花 / 樹木 / 草本の難読 (熟字訓) |
 | [`core/jukugo/nature/weather.toml`](core/jukugo/nature/weather.toml) | 283 | 11 KB | 気象 / 天候 / 季語的気象 / 二十四節気 / 海洋気象 |
 | [`core/jukugo/nature/science.toml`](core/jukugo/nature/science.toml) | 270 | 9.9 KB | 自然科学 (天文 / 物理 / 化学 / 生物 / 地学) |
 | [`core/jukugo/nature/body_parts.toml`](core/jukugo/nature/body_parts.toml) | 65 | 2.8 KB | 体の部位 / 内臓 / 骨格 / 筋肉 / 神経 |
 | [`core/jukugo/nature/math.toml`](core/jukugo/nature/math.toml) | 52 | 2.2 KB | 数学 (解析 / 線形代数 / 集合論 / 統計 / 確率の難読) |
 | [`core/jukugo/nature/mountaineering.toml`](core/jukugo/nature/mountaineering.toml) | 12 | 751 B | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
 | [`core/jukugo/nature/agriculture.toml`](core/jukugo/nature/agriculture.toml) | 5 | 356 B | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
-| **小計** (10 ファイル) | **3,625** | **137 KB** | |
+| **小計** (10 ファイル) | **3,623** | **137 KB** | |
 
 #### 人文・芸術
 
@@ -86,7 +86,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/jukugo/humanities/arts.toml`](core/jukugo/humanities/arts.toml) | 2,781 | 104 KB | 古典芸能 / 武道 / 茶華香 / 工芸 |
+| [`core/jukugo/humanities/arts.toml`](core/jukugo/humanities/arts.toml) | 2,780 | 104 KB | 古典芸能 / 武道 / 茶華香 / 工芸 |
 | [`core/jukugo/humanities/religions.toml`](core/jukugo/humanities/religions.toml) | 903 | 35 KB | 神道 / 仏教 / キリスト教 / イスラム / 儀礼 |
 | [`core/jukugo/humanities/literature.toml`](core/jukugo/humanities/literature.toml) | 608 | 23 KB | 古典文学 / 作品名 / 文学用語 / 詩歌 / 評論 |
 | [`core/jukugo/humanities/shinwa.toml`](core/jukugo/humanities/shinwa.toml) | 224 | 10 KB | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
@@ -95,7 +95,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/jukugo/humanities/music.toml`](core/jukugo/humanities/music.toml) | 101 | 4.1 KB | 音楽ジャンル / 楽典 / 楽器 / 演奏 / 音楽用語 |
 | [`core/jukugo/humanities/abstracts.toml`](core/jukugo/humanities/abstracts.toml) | 18 | 1.2 KB | 美意識 / 古典文学 / 仏教 / 儒教 / 思想 |
 | [`core/jukugo/humanities/emotions.toml`](core/jukugo/humanities/emotions.toml) | 10 | 658 B | 感情 / 心理状態 / 性格 / 心情 |
-| **小計** (9 ファイル) | **4,918** | **190 KB** | |
+| **小計** (9 ファイル) | **4,917** | **190 KB** | |
 
 #### 社会・制度
 
@@ -159,17 +159,17 @@ git に commit されている master HEAD の状態を基準にする。
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml) | 7,829 | 335 KB | 二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む) |
+| [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml) | 7,843 | 336 KB | 二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む) |
 | [`core/jukugo/basic/four_char.toml`](core/jukugo/basic/four_char.toml) | 35 | 2.4 KB | 四字熟語 (4 字 + 全 CJK 漢字) |
 | [`core/jukugo/basic/split_guard.toml`](core/jukugo/basic/split_guard.toml) | 33 | 4.0 KB | Lindera の 「熟語 + か」 分割に負けないための tie-break entry |
-| **小計** (3 ファイル) | **7,897** | **341 KB** | |
+| **小計** (3 ファイル) | **7,911** | **343 KB** | |
 
 
 ### 作品造語
 
 `core/works/<medium>/*` — 媒体 (game / literature 等) ごとに 1 作品 1 ファイル。 原則は公式読み (一般通称として定着していれば採録可)、 出典コメント必須、 古典読みは現代読み無い場合のみ。
 
-**合計**: 1,675 件 / 132 KB (genre 4 区分)
+**合計**: 1,677 件 / 132 KB (genre 4 区分)
 
 #### ゲーム
 
@@ -289,12 +289,12 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
 | [`core/works/vtuber/nijisanji.toml`](core/works/vtuber/nijisanji.toml) | 51 | 4.6 KB | にじさんじ (ANYCOLOR): ライバー名 (公式読みベース) |
-| [`core/works/vtuber/hololive.toml`](core/works/vtuber/hololive.toml) | 41 | 3.5 KB | ホロライブプロダクション (カバー): タレント名 (公式読みベース) |
+| [`core/works/vtuber/hololive.toml`](core/works/vtuber/hololive.toml) | 43 | 3.6 KB | ホロライブプロダクション (カバー): タレント名 (公式読みベース) |
 | [`core/works/vtuber/aogiri.toml`](core/works/vtuber/aogiri.toml) | 7 | 639 B | あおぎり高校 : タレント名 |
 | [`core/works/vtuber/kojin.toml`](core/works/vtuber/kojin.toml) | 6 | 614 B | 個人勢VTuber: タレント名 |
 | [`core/works/vtuber/vspo.toml`](core/works/vtuber/vspo.toml) | 6 | 701 B | ぶいすぽっ! : タレント名 (公式読みベース) |
 | [`core/works/vtuber/nanashi.toml`](core/works/vtuber/nanashi.toml) | 3 | 404 B | ななしいんく : タレント名 |
-| **小計** (6 ファイル) | **114** | **10 KB** | |
+| **小計** (6 ファイル) | **116** | **11 KB** | |
 
 
 ### 外来語
@@ -323,7 +323,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 
 | ファイル | 文字数 | ルール数 | サイズ | 用途 |
 |---|---:|---:|---:|---|
-| [`core/kanji/overrides.toml`](core/kanji/overrides.toml) | 2,778 | 4,281 | 355 KB | 単漢字 default override + 文脈分岐 reading |
+| [`core/kanji/overrides.toml`](core/kanji/overrides.toml) | 2,778 | 4,283 | 355 KB | 単漢字 default override + 文脈分岐 reading |
 
 ### 異体字
 
@@ -337,7 +337,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 `rules/` — エンジン挙動 (助数詞 / 文脈 / 後処理 等) を制御するルール群。 lib コードに embed されるのではなく、 ここで宣言的に外部化されている。
 
 <!-- AUTO-GENERATED:RULES:BEGIN -->
-**合計**: 718 エントリ / 823 ルール / 35 KB (genre 3 区分)
+**合計**: 718 エントリ / 780 ルール / 35 KB (genre 3 区分)
 
 #### 数値系
 
@@ -348,7 +348,6 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 | ファイル | エントリ数 | ルール数 | サイズ | 用途 |
 |---|---:|---:|---:|---|
 | [`rules/numbers/counters/objects.toml`](rules/numbers/counters/objects.toml) | 88 | 173 | 16 KB | 物を数える助数詞 (本 / 匹 / 杯 / 個 / 歳 / 冊、 連濁 / 促音化) |
-| [`rules/numbers/counters/simple.toml`](rules/numbers/counters/simple.toml) | 44 | 44 | 1.0 KB | 単純サフィックス助数詞 (円 / 点 / 度 / 名 / 話 等、 数値カナ + value 連結のみ) |
 | [`rules/numbers/numeric_phrases.toml`](rules/numbers/numeric_phrases.toml) | 37 | 37 | 1.2 KB | 数字を含む例外語句 (二十歳→ハタチ / 明後日→アサッテ 等、 助数詞ルールより先に確定) |
 | [`rules/numbers/counters/time.toml`](rules/numbers/counters/time.toml) | 21 | 34 | 4.3 KB | 時間系助数詞 (月 / 日 / 時 / 分 / 週間 / 回、 4/7/9 の特殊読み + カナ末尾置換) |
 | [`rules/numbers/days.toml`](rules/numbers/days.toml) | 31 | 31 | 978 B | 1〜31 日の特殊読み (1→ツイタチ / 20→ハツカ 等) |
@@ -357,7 +356,8 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 | [`rules/numbers/counters/percent.toml`](rules/numbers/counters/percent.toml) | 2 | 4 | 583 B | パーセンテージ (% / ％、 1/6/8/0 で促音化 + パーセント) |
 | [`rules/numbers/counters/people.toml`](rules/numbers/counters/people.toml) | 1 | 1 | 225 B | 人を数える助数詞 (人、 1=ヒトリ / 2=フタリ の特殊読み) |
 | [`rules/numbers/counters/recursive.toml`](rules/numbers/counters/recursive.toml) | 1 | 1 | 202 B | 再帰モード助数詞 (個目 / 階目 等、 既存助数詞解決後に末尾連結) |
-| **小計** (10 ファイル) | **248** | **353** | **27 KB** | |
+| [`rules/numbers/counters/simple.toml`](rules/numbers/counters/simple.toml) | 44 | 1 | 1.1 KB | 単純サフィックス助数詞 (円 / 点 / 度 / 名 / 話 等、 数値カナ + value 連結のみ) |
+| **小計** (10 ファイル) | **248** | **310** | **27 KB** | |
 
 #### テキスト系
 
@@ -403,7 +403,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 11245 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 11286 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -419,6 +419,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/extended.toml`](tests/corpus/should_read/extended.toml) | 94 |
 |  | [`tests/corpus/should_read/general.toml`](tests/corpus/should_read/general.toml) | 69 |
 |  | [`tests/corpus/should_read/gintama.toml`](tests/corpus/should_read/gintama.toml) | 1 |
+|  | [`tests/corpus/should_read/gold_20260919.toml`](tests/corpus/should_read/gold_20260919.toml) | 41 |
 |  | [`tests/corpus/should_read/kanji_kun_default_20260612.toml`](tests/corpus/should_read/kanji_kun_default_20260612.toml) | 19 |
 |  | [`tests/corpus/should_read/lib_same_char_run_20260918.toml`](tests/corpus/should_read/lib_same_char_run_20260918.toml) | 14 |
 |  | [`tests/corpus/should_read/lib_verb_stem_20260918.toml`](tests/corpus/should_read/lib_verb_stem_20260918.toml) | 88 |
