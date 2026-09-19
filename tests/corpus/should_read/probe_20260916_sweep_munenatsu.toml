@@ -211,7 +211,7 @@ expected = "マリンほんとよめりょくたかいわ"
 [[case]]
 input = "扇の嫁状態のヴィレッタさんは"
 mode = "hiragana"
-expected = "せんのよめじょうたいのヴィレッタさんは"
+expected = "おうぎのよめじょうたいのヴィレッタさんは"
 
 [[case]]
 input = "文字嫁よ"

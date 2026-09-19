@@ -41,7 +41,7 @@ expected = "これはほったな"
 [[case]]
 input = "洗剤のCM出草"
 mode = "hiragana"
-expected = "せんざいノシーエムしゅっそう"
+expected = "せんざいノシーエムしゅつくさ"
 
 [[case]]
 input = "漂白剤のCMかな?"

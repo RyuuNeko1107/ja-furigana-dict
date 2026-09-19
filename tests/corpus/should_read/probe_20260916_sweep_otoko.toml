@@ -81,7 +81,7 @@ expected = "ちかんがおおいのよ"
 [[case]]
 input = "痴漢の歌草"
 mode = "hiragana"
-expected = "ちかんのうたそう"
+expected = "ちかんのうたくさ"
 
 [[case]]
 input = "巨漢に迫られたら"

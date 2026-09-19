@@ -1,0 +1,208 @@
+# ★2026-09-19: 実コメント無作為 5,000 行 gold set (data/gold、非公開) で見つかった誤読 58 件から
+# 辞書側で直した分の回帰ロック。 prev 漢字 → 音読み rule の誤爆 (草 / 赤 / 紫 / 星 / 沼 / 跡) が首位だった
+
+[[case]]
+input = "王子草"
+mode = "hiragana"
+expected = "おうじくさ"
+
+[[case]]
+input = "習得草"
+mode = "hiragana"
+expected = "しゅうとくくさ"
+
+[[case]]
+input = "体力赤になって"
+mode = "hiragana"
+expected = "たいりょくあかになって"
+
+[[case]]
+input = "文字紫にするとか?"
+mode = "hiragana"
+expected = "もじむらさきにするとか?"
+
+[[case]]
+input = "優先星3から"
+mode = "hiragana"
+expected = "ゆうせんほしさんから"
+
+[[case]]
+input = "天井沼"
+mode = "hiragana"
+expected = "てんじょうぬま"
+
+[[case]]
+input = "要塞跡ならそうか"
+mode = "hiragana"
+expected = "ようさいあとならそうか"
+
+[[case]]
+input = "起動音がでかい"
+mode = "hiragana"
+expected = "きどうおんがでかい"
+
+[[case]]
+input = "船長音いい感じ"
+mode = "hiragana"
+expected = "せんちょうおといいかんじ"
+
+[[case]]
+input = "お前声が"
+mode = "hiragana"
+expected = "おまえこえが"
+
+[[case]]
+input = "変声機ボタン"
+mode = "hiragana"
+expected = "へんせいきボタン"
+
+[[case]]
+input = "桜味とは"
+mode = "hiragana"
+expected = "さくらあじとは"
+
+[[case]]
+input = "扇は駄目だ"
+mode = "hiragana"
+expected = "おうぎはだめだ"
+
+[[case]]
+input = "扇風機"
+mode = "hiragana"
+expected = "せんぷうき"
+
+[[case]]
+input = "所持金と収入の額が一番怖い"
+mode = "hiragana"
+expected = "しょじきんとしゅうにゅうのがくがいちばんこわい"
+
+[[case]]
+input = "額が広い"
+mode = "hiragana"
+expected = "ひたいがひろい"
+
+[[case]]
+input = "エイム大分上達してる"
+mode = "hiragana"
+expected = "エイムだいぶじょうたつしてる"
+
+[[case]]
+input = "大分県"
+mode = "hiragana"
+expected = "おおいたけん"
+
+[[case]]
+input = "市場主義の最も純粋な"
+mode = "hiragana"
+expected = "しじょうしゅぎのもっともじゅんすいな"
+
+[[case]]
+input = "やっぱり地頭がいい"
+mode = "hiragana"
+expected = "やっぱりじあたまがいい"
+
+[[case]]
+input = "千速さんの水飲み場"
+mode = "hiragana"
+expected = "ちはやさんのみずのみば"
+
+[[case]]
+input = "トゥルハシで叩きそう"
+mode = "hiragana"
+expected = "トゥルハシでたたきそう"
+
+[[case]]
+input = "袋叩きじゃー!"
+mode = "hiragana"
+expected = "ふくろだたきじゃー!"
+
+[[case]]
+input = "断捨離して下さい"
+mode = "hiragana"
+expected = "だんしゃりしてください"
+
+[[case]]
+input = "一粒500円のやつか!"
+mode = "hiragana"
+expected = "ひとつぶごひゃくえんのやつか!"
+
+[[case]]
+input = "10年若がった"
+mode = "hiragana"
+expected = "じゅうねんわかがった"
+
+[[case]]
+input = "分かり易すぎないか?"
+mode = "hiragana"
+expected = "わかりやすすぎないか?"
+
+[[case]]
+input = "出れんくなったw"
+mode = "hiragana"
+expected = "でれんくなったw"
+
+[[case]]
+input = "SW初心者でも観やすかった!"
+mode = "hiragana"
+expected = "SWしょしんしゃでもみやすかった!"
+
+[[case]]
+input = "悪ィ。。"
+mode = "hiragana"
+expected = "わるィ。。"
+
+[[case]]
+input = "何%もらう契約"
+mode = "hiragana"
+expected = "なんぱーせんともらうけいやく"
+
+[[case]]
+input = "そういう日なのかも"
+mode = "hiragana"
+expected = "そういうひなのかも"
+
+[[case]]
+input = "鬼は内・・・"
+mode = "hiragana"
+expected = "おにはうち"
+
+[[case]]
+input = "強かろうが投手が化物"
+mode = "hiragana"
+expected = "つよかろうがとうしゅがばけもの"
+
+[[case]]
+input = "球際あ"
+mode = "hiragana"
+expected = "たまぎわあ"
+
+[[case]]
+input = "中受ではやらんぞ!"
+mode = "hiragana"
+expected = "ちゅうじゅではやらんぞ!"
+
+[[case]]
+input = "百目だ"
+mode = "hiragana"
+expected = "ひゃくめだ"
+
+[[case]]
+input = "種付"
+mode = "hiragana"
+expected = "たねつけ"
+
+[[case]]
+input = "葉巻きは欲しい"
+mode = "hiragana"
+expected = "はまきはほしい"
+
+[[case]]
+input = "気合いため"
+mode = "hiragana"
+expected = "きあいだめ"
+
+[[case]]
+input = "星飛雄馬になりそう"
+mode = "hiragana"
+expected = "ほしひゅうまになりそう"
+
