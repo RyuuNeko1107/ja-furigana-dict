@@ -30,8 +30,8 @@ git に commit されている master HEAD の状態を基準にする。
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **15** | **1.7 KB** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,778** | **355 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
-| [**エンジンルール**](#エンジンルール) (`rules/`) | **718** | **35 KB** |
-| **合計** | **68,903** | **2.13 MB** |
+| [**エンジンルール**](#エンジンルール) (`rules/`) | **719** | **35 KB** |
+| **合計** | **68,904** | **2.13 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -337,7 +337,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 `rules/` — エンジン挙動 (助数詞 / 文脈 / 後処理 等) を制御するルール群。 lib コードに embed されるのではなく、 ここで宣言的に外部化されている。
 
 <!-- AUTO-GENERATED:RULES:BEGIN -->
-**合計**: 718 エントリ / 780 ルール / 35 KB (genre 3 区分)
+**合計**: 719 エントリ / 781 ルール / 35 KB (genre 3 区分)
 
 #### 数値系
 
@@ -354,10 +354,10 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 | [`rules/numbers/scales.toml`](rules/numbers/scales.toml) | 19 | 19 | 1.0 KB | 大数スケール (万 / 億 / 兆 / 京 / 垓 / 不可思議 / 無量大数 等、 大→小順、 N+漢字単位 連結用) |
 | [`rules/numbers/counters/places.toml`](rules/numbers/counters/places.toml) | 4 | 9 | 1.2 KB | 場所を数える助数詞 (階 / ヶ所 / 箇所 / か所、 連濁 / 促音化) |
 | [`rules/numbers/counters/percent.toml`](rules/numbers/counters/percent.toml) | 2 | 4 | 583 B | パーセンテージ (% / ％、 1/6/8/0 で促音化 + パーセント) |
+| [`rules/numbers/counters/simple.toml`](rules/numbers/counters/simple.toml) | 45 | 2 | 1.2 KB | 単純サフィックス助数詞 (円 / 点 / 度 / 名 / 話 等、 数値カナ + value 連結のみ) |
 | [`rules/numbers/counters/people.toml`](rules/numbers/counters/people.toml) | 1 | 1 | 225 B | 人を数える助数詞 (人、 1=ヒトリ / 2=フタリ の特殊読み) |
 | [`rules/numbers/counters/recursive.toml`](rules/numbers/counters/recursive.toml) | 1 | 1 | 202 B | 再帰モード助数詞 (個目 / 階目 等、 既存助数詞解決後に末尾連結) |
-| [`rules/numbers/counters/simple.toml`](rules/numbers/counters/simple.toml) | 44 | 1 | 1.1 KB | 単純サフィックス助数詞 (円 / 点 / 度 / 名 / 話 等、 数値カナ + value 連結のみ) |
-| **小計** (10 ファイル) | **248** | **310** | **27 KB** | |
+| **小計** (10 ファイル) | **249** | **311** | **27 KB** | |
 
 #### テキスト系
 
