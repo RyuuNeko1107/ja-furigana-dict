@@ -103,3 +103,9 @@ description = "単純サフィックス助数詞 (円 / 点 / 度 / 名 / 話 �
 default = "ツブ"
 kanji_numeral = true
 specials = { "1" = "ヒトツブ", "2" = "フタツブ" }
+
+# 法令の条文番号 (第五十六条)。 漢数字 bare も対象 (現行は Lindera が数詞にするので不要だったが、 自前エンジン用)。
+# 項 は 4項目=よんこうもく を割るので助数詞にしない
+[counter."条"]
+default = "ジョウ"
+kanji_numeral = true
