@@ -1,0 +1,10 @@
+# 2026-09-21 sns 独立 gold (Bluesky/Misskey/5ch test 1,500 行のうち 現行 vs 自前 d39max が割れた 64 行) から
+[[case]]
+input = "日本の伝統的な藍染めの歴史を伝える色のひとつ"
+mode = "hiragana"
+expected = "にほんのでんとうてきなあいぞめのれきしをつたえるいろのひとつ"
+
+[[case]]
+input = "藍染さんの卍解"
+mode = "hiragana"
+expected = "あいぜんさんのばんかい"
