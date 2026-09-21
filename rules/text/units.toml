@@ -61,6 +61,11 @@ description = "SI 単位 + 通貨 + % (km / kg / mL / 円 / % 等、 数値 + �
 "GB" = { kana = "ギガバイト" }
 "MB" = { kana = "メガバイト" }
 "KB" = { kana = "キロバイト" }
+# ★2026-09-21: 周波数 (87.5MHz / 5GHz が 数字ごと未読で残っていた)。 大小文字は区別 (mhz は使わない)
+"Hz"  = { kana = "ヘルツ", ci = false }
+"kHz" = { kana = "キロヘルツ", ci = false }
+"MHz" = { kana = "メガヘルツ", ci = false }
+"GHz" = { kana = "ギガヘルツ", ci = false }
 
 # 通貨 / 数量単位 (NumberChunker で N + 円 を 1 chunk にする用)
 "円" = { kana = "エン" }
