@@ -30,8 +30,8 @@ git に commit されている master HEAD の状態を基準にする。
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **15** | **1.7 KB** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,778** | **355 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
-| [**エンジンルール**](#エンジンルール) (`rules/`) | **767** | **36 KB** |
-| **合計** | **68,953** | **2.13 MB** |
+| [**エンジンルール**](#エンジンルール) (`rules/`) | **771** | **36 KB** |
+| **合計** | **68,957** | **2.13 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -337,7 +337,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 `rules/` — エンジン挙動 (助数詞 / 文脈 / 後処理 等) を制御するルール群。 lib コードに embed されるのではなく、 ここで宣言的に外部化されている。
 
 <!-- AUTO-GENERATED:RULES:BEGIN -->
-**合計**: 767 エントリ / 829 ルール / 36 KB (genre 3 区分)
+**合計**: 771 エントリ / 833 ルール / 36 KB (genre 3 区分)
 
 #### 数値系
 
@@ -368,9 +368,9 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 | ファイル | エントリ数 | ルール数 | サイズ | 用途 |
 |---|---:|---:|---:|---|
 | [`rules/text/symbols.toml`](rules/text/symbols.toml) | 59 | 59 | 1.3 KB | 記号 1 文字読み (+ / − / % / ‰ / 〜 / ・ / ※ 等、 chunks/split() の symbols 階層で個別 hit) |
-| [`rules/text/units.toml`](rules/text/units.toml) | 21 | 21 | 1.3 KB | SI 単位 + 通貨 + % (km / kg / mL / 円 / % 等、 数値 + 単位を 1 chunk で読む。 lookup は case-insensitive) |
+| [`rules/text/units.toml`](rules/text/units.toml) | 25 | 25 | 1.5 KB | SI 単位 + 通貨 + % (km / kg / mL / 円 / % 等、 数値 + 単位を 1 chunk で読む。 lookup は case-insensitive) |
 | [`rules/text/postprocess.toml`](rules/text/postprocess.toml) | 2 | 2 | 325 B | 出力後処理 regex (Step 7、 mode 別: hiragana / ruby / tts / romaji の出力直前に適用) |
-| **小計** (3 ファイル) | **82** | **82** | **2.9 KB** | |
+| **小計** (3 ファイル) | **86** | **86** | **3.1 KB** | |
 
 #### (直下)
 
