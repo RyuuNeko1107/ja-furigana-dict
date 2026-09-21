@@ -166,3 +166,13 @@ expected = "たちかわさんいたんだ"
 input = "今日、巨人大勝ちしたらどうなるだろう"
 mode = "hiragana"
 expected = "きょう、きょじんおおがちしたらどうなるだろう"
+
+[[case]]
+input = "さきほどメンシ入りました"
+mode = "hiragana"
+expected = "さきほどメンシはいりました"
+
+[[case]]
+input = "クールタイム入りそうやな"
+mode = "hiragana"
+expected = "クールタイムはいりそうやな"
