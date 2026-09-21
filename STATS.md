@@ -28,7 +28,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,677** | **132 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **1,712** | **44 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **15** | **1.7 KB** |
-| [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,778** | **356 KB** |
+| [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,778** | **357 KB** |
 | [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **771** | **37 KB** |
 | **合計** | **68,979** | **2.13 MB** |
@@ -323,7 +323,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 
 | ファイル | 文字数 | ルール数 | サイズ | 用途 |
 |---|---:|---:|---:|---|
-| [`core/kanji/overrides.toml`](core/kanji/overrides.toml) | 2,778 | 4,294 | 356 KB | 単漢字 default override + 文脈分岐 reading |
+| [`core/kanji/overrides.toml`](core/kanji/overrides.toml) | 2,778 | 4,295 | 357 KB | 単漢字 default override + 文脈分岐 reading |
 
 ### 異体字
 
@@ -403,7 +403,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 11322 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 11324 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -737,7 +737,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20260917_sweep_yoshitsugu.toml`](tests/corpus/should_read/probe_20260917_sweep_yoshitsugu.toml) | 19 |
 |  | [`tests/corpus/should_read/probe_20260917_sweep_youkan.toml`](tests/corpus/should_read/probe_20260917_sweep_youkan.toml) | 8 |
 |  | [`tests/corpus/should_read/probe_20260917_sweep_yuukiaoi.toml`](tests/corpus/should_read/probe_20260917_sweep_yuukiaoi.toml) | 74 |
-|  | [`tests/corpus/should_read/probe_20260921_indep_sns.toml`](tests/corpus/should_read/probe_20260921_indep_sns.toml) | 33 |
+|  | [`tests/corpus/should_read/probe_20260921_indep_sns.toml`](tests/corpus/should_read/probe_20260921_indep_sns.toml) | 35 |
 |  | [`tests/corpus/should_read/regression.toml`](tests/corpus/should_read/regression.toml) | 560 |
 |  | [`tests/corpus/should_read/sentences.toml`](tests/corpus/should_read/sentences.toml) | 49 |
 |  | [`tests/corpus/should_read/touhou.toml`](tests/corpus/should_read/touhou.toml) | 30 |
