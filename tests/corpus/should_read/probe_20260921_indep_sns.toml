@@ -23,3 +23,13 @@ expected = "カエルづみきれいだな"
 input = "だって原作通りだし"
 mode = "hiragana"
 expected = "だってげんさくどおりだし"
+
+[[case]]
+input = "魔防が高すぎて笑ってる"
+mode = "hiragana"
+expected = "まぼうがたかすぎてわらってる"
+
+[[case]]
+input = "物防と魔攻を上げる"
+mode = "hiragana"
+expected = "ぶつぼうとまこうをあげる"
