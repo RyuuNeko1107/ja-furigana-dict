@@ -8,3 +8,18 @@ expected = "にほんのでんとうてきなあいぞめのれきしをつた�
 input = "藍染さんの卍解"
 mode = "hiragana"
 expected = "あいぜんさんのばんかい"
+
+[[case]]
+input = "いや8月から延々引きこもってるせいだけど"
+mode = "hiragana"
+expected = "いやはちがつからえんえんひきこもってるせいだけど"
+
+[[case]]
+input = "カエル積みきれいだな"
+mode = "hiragana"
+expected = "カエルづみきれいだな"
+
+[[case]]
+input = "だって原作通りだし"
+mode = "hiragana"
+expected = "だってげんさくどおりだし"
