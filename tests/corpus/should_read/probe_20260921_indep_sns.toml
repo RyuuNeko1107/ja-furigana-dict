@@ -35,9 +35,9 @@ mode = "hiragana"
 expected = "ぶつぼうとまこうをあげる"
 
 [[case]]
-input = "コマンドRPGのハクスラとか面白いかもしれないな\(^o^)/"
+input = 'コマンドRPGのハクスラとか面白いかもしれないな\(^o^)/'
 mode = "hiragana"
-expected = "コマンドRPGのハクスラとかおもしろいかもしれないな\(^o^)/"
+expected = 'コマンドアールピージーのハクスラとかおもしろいかもしれないな\(^o^)/'
 
 [[case]]
 input = "サイズは1/2でお願い"
