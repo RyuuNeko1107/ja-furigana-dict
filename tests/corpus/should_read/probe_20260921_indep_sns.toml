@@ -43,3 +43,19 @@ expected = 'コマンドアールピージーのハクスラとかおもしろ�
 input = "サイズは1/2でお願い"
 mode = "hiragana"
 expected = "サイズはいちすらっしゅにでおねがい"
+
+# 2026-09-21 国会 / 技術 docs / 法令 独立 gold (第 4 弾)
+[[case]]
+input = "契約の日から九十日を超えるとき"
+mode = "hiragana"
+expected = "けいやくのひからきゅうじゅうにちをこえるとき"
+
+[[case]]
+input = "何と言っても"
+mode = "hiragana"
+expected = "なんといっても"
+
+[[case]]
+input = "見出しを付ける"
+mode = "hiragana"
+expected = "みだしをつける"

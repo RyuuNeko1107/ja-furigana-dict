@@ -963,7 +963,7 @@ note = "旧 …むいか"
 [[case]]
 input = "三十七日"
 mode = "hiragana"
-expected = "さんじゅうしちにち"
+expected = "さんじゅうななにち"  # 2026-09-21 日 counter kanji_numeral 化で数字 provider 読み (なな) に統一
 note = "旧 …なのか"
 
 [[case]]
@@ -975,7 +975,7 @@ note = "旧 …ようか"
 [[case]]
 input = "九十九日"
 mode = "hiragana"
-expected = "きゅうじゅうくにち"
+expected = "きゅうじゅうきゅうにち"  # 同上
 note = "旧 …ここのか"
 
 [[case]]
