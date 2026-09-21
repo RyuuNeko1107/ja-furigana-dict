@@ -110,3 +110,18 @@ expected = "あらがうことはできるから"
 input = "蛾があまり出なそうだから運用ありかもね"
 mode = "hiragana"
 expected = "ががあまりでなそうだからうんようありかもね"
+
+[[case]]
+input = "ここまで来れなくない?"
+mode = "hiragana"
+expected = "ここまでこれなくない?"
+
+[[case]]
+input = "雑談初めて来れたけど、心地よい場所ですね"
+mode = "hiragana"
+expected = "ざつだんはじめてこれたけど、ここちよいばしょですね"
+
+[[case]]
+input = "明日来れば分かる"
+mode = "hiragana"
+expected = "あしたくればわかる"

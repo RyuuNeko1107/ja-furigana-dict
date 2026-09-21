@@ -601,6 +601,14 @@ reading = "ク"
 [[kanji.match]]
 next_starts_any = ["な", "よ", "い", "ね"]
 reading = "コ"
+# ★2026-09-22: ら抜き 来れた / 来れる / 来れない = これ、 来れば = くれば (own engine の候補漏れ集計 38 行)
+[[kanji.match]]
+next_starts_any = ["れた", "れる", "れな", "れま", "れそ", "れて", "れん", "れよ", "れれ"]
+reading = "コ"
+
+[[kanji.match]]
+next_starts = "れば"
+reading = "ク"
 
 # ─── 動詞 / 形容詞 1 字 (★alpha.19) ─────────────────────────────────────────
 #
