@@ -125,3 +125,44 @@ expected = "ざつだんはじめてこれたけど、ここちよいばしょ�
 input = "明日来れば分かる"
 mode = "hiragana"
 expected = "あしたくればわかる"
+
+# 2026-09-22 パターン判定 (own vs 現行の割れ行 上位 300) より
+[[case]]
+input = "守備固めか?"
+mode = "hiragana"
+expected = "しゅびがためか?"
+
+[[case]]
+input = "敢えて逆張りで勝つ!"
+mode = "hiragana"
+expected = "あえてぎゃくばりでかつ!"
+
+[[case]]
+input = "何だその間w"
+mode = "hiragana"
+expected = "なんだそのあいだw"
+
+[[case]]
+input = "堪能しました"
+mode = "hiragana"
+expected = "たんのうしました"
+
+[[case]]
+input = "気を遣ってると勝てない"
+mode = "hiragana"
+expected = "きをつかってるとかてない"
+
+[[case]]
+input = "一定数いるんだろうね"
+mode = "hiragana"
+expected = "いっていすういるんだろうね"
+
+[[case]]
+input = "立川さんいたんだ"
+mode = "hiragana"
+expected = "たちかわさんいたんだ"
+
+[[case]]
+input = "今日、巨人大勝ちしたらどうなるだろう"
+mode = "hiragana"
+expected = "きょう、きょじんおおがちしたらどうなるだろう"
