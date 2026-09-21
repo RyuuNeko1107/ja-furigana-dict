@@ -403,7 +403,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 11289 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 11298 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -737,7 +737,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20260917_sweep_yoshitsugu.toml`](tests/corpus/should_read/probe_20260917_sweep_yoshitsugu.toml) | 19 |
 |  | [`tests/corpus/should_read/probe_20260917_sweep_youkan.toml`](tests/corpus/should_read/probe_20260917_sweep_youkan.toml) | 8 |
 |  | [`tests/corpus/should_read/probe_20260917_sweep_yuukiaoi.toml`](tests/corpus/should_read/probe_20260917_sweep_yuukiaoi.toml) | 74 |
-|  | [`tests/corpus/should_read/probe_20260921_indep_sns.toml`](tests/corpus/should_read/probe_20260921_indep_sns.toml) | 0 |
+|  | [`tests/corpus/should_read/probe_20260921_indep_sns.toml`](tests/corpus/should_read/probe_20260921_indep_sns.toml) | 9 |
 |  | [`tests/corpus/should_read/regression.toml`](tests/corpus/should_read/regression.toml) | 560 |
 |  | [`tests/corpus/should_read/sentences.toml`](tests/corpus/should_read/sentences.toml) | 49 |
 |  | [`tests/corpus/should_read/touhou.toml`](tests/corpus/should_read/touhou.toml) | 30 |
