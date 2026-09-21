@@ -59,3 +59,54 @@ expected = "なんといっても"
 input = "見出しを付ける"
 mode = "hiragana"
 expected = "みだしをつける"
+
+# 2026-09-22 own engine の oracle 到達不能 (候補に正解読みが無い) 集計より
+[[case]]
+input = "プロ入りするかだけ見て終わる?"
+mode = "hiragana"
+expected = "プロいりするかだけみておわる?"
+
+[[case]]
+input = "同じこと言うてて草"
+mode = "hiragana"
+expected = "おなじことゆうててくさ"
+
+[[case]]
+input = "半年も経たないうちに300盛ったのヤバすぎる"
+mode = "hiragana"
+expected = "はんとしもたたないうちにさんびゃくもったのヤバすぎる"
+
+[[case]]
+input = "寝つきよさそうw"
+mode = "hiragana"
+expected = "ねつきよさそうw"
+
+[[case]]
+input = "エースが下りてからが勝負!"
+mode = "hiragana"
+expected = "エースがおりてからがしょうぶ!"
+
+[[case]]
+input = "ぺこらを愛でてる"
+mode = "hiragana"
+expected = "ぺこらをめでてる"
+
+[[case]]
+input = "それを盗むぺこらこそ悪人"
+mode = "hiragana"
+expected = "それをぬすむぺこらこそあくにん"
+
+[[case]]
+input = "3盗もいけそうw"
+mode = "hiragana"
+expected = "さんとうもいけそうw"
+
+[[case]]
+input = "抗うことは出来るから"
+mode = "hiragana"
+expected = "あらがうことはできるから"
+
+[[case]]
+input = "蛾があまり出なそうだから運用ありかもね"
+mode = "hiragana"
+expected = "ががあまりでなそうだからうんようありかもね"
