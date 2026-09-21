@@ -33,3 +33,13 @@ expected = "まぼうがたかすぎてわらってる"
 input = "物防と魔攻を上げる"
 mode = "hiragana"
 expected = "ぶつぼうとまこうをあげる"
+
+[[case]]
+input = "コマンドRPGのハクスラとか面白いかもしれないな\(^o^)/"
+mode = "hiragana"
+expected = "コマンドRPGのハクスラとかおもしろいかもしれないな\(^o^)/"
+
+[[case]]
+input = "サイズは1/2でお願い"
+mode = "hiragana"
+expected = "サイズはいちすらっしゅにでおねがい"
