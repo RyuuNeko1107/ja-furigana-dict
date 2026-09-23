@@ -299,3 +299,13 @@ expected = "おきにいりいれておくと"
 input = "打つのは一三塁か捕手当たりか"
 mode = "hiragana"
 expected = "うつのはいっさんるいかほしゅあたりか"
+
+[[case]]
+input = "資金の貸付けを行う"
+mode = "hiragana"
+expected = "しきんのかしつけをおこなう"
+
+[[case]]
+input = "合成を駆使して"
+mode = "hiragana"
+expected = "ごうせいをくしして"
