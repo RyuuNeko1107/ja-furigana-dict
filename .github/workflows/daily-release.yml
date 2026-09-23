@@ -19,7 +19,9 @@ name: Daily auto-release
 
 on:
   schedule:
-    - cron: '0 18 * * *'    # UTC 18:00 = JST 03:00 (★resumed 2026-05-12)
+    # UTC 15:00 = JST 00:00。 GitHub の schedule は実測 2〜3 時間遅れて走る (JST 03:00 設定で 05:30〜06:20 実行)ため、
+    # 本番 wrapper の取り込み (毎日 JST 05:00) に間に合うよう早めた (2026-09-24。 旧: '0 18 * * *' = JST 03:00)
+    - cron: '0 15 * * *'
   workflow_dispatch:        # 手動トリガー (緊急 release / 即時 cut 用)
 
 permissions:
@@ -75,7 +77,7 @@ jobs:
         if: steps.diff.outputs.skip != 'true'
         id: next
         run: |
-          # JST date を使う (cron が JST 03:00 起動なので「今朝の date」になる)
+          # JST date を使う (cron は JST 00:00 起動 + 遅延 2〜3 時間なので、 実行時の JST 日付 = その日の date)
           TODAY=$(TZ=Asia/Tokyo date +%Y.%m.%d)
           BASE="v${TODAY}"
           # 同日に既に release が打たれていたら .N suffix で衝突回避

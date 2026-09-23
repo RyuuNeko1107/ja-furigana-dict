@@ -9,11 +9,11 @@
 
 ### 通常運用: daily auto-release で自動
 
-`.github/workflows/daily-release.yml` が JST 03:00 に走り、core/ または rules/ への
+`.github/workflows/daily-release.yml` が JST 00:00 に走り (実行は GitHub の遅延で 2〜3 時間後)、core/ または rules/ への
 変更が前回 tag 以降にあれば **`v<YYYY.MM.DD>` (CalVer) tag を自動で打つ**。
 そのまま `release.yml` が catch して tar.gz + sha256 を GitHub Releases に upload。
 
-つまり TOML 編集 → master push → 翌 JST 03:00 → 利用者が `furigana dict pull` で取得、
+つまり TOML 編集 → master push → 翌 JST 00:00 (実行は数時間遅れ) → 利用者が `furigana dict pull` で取得、
 の流れで maintainer の手動操作は不要。
 
 ### 手動で release を打ちたい場合
@@ -58,7 +58,7 @@ python3 tools/classify_jukugo.py --apply
 # 4. validate
 python3 tools/validate.py
 
-# 5. commit (release は daily-release.yml が翌 JST 03:00 に自動)
+# 5. commit (release は daily-release.yml が翌 JST 00:00 以降に自動)
 git add core/
 git commit -m "data: upstream から seed 再投入 (unihan X / jukugo Y / compat Z)"
 git push origin master
@@ -101,7 +101,7 @@ checks** として branch protection から監視されている:
   (旧 v0.1.x semver tag は CalVer 移行時に削除済み)
 
 ### Daily auto-release (`daily-release.yml`)
-- JST 03:00 に cron 起動
+- JST 00:00 に cron 起動 (実行は 2〜3 時間遅れることがある)
 - 前回 tag 以降 core/ または rules/ に変更があれば、CalVer (`vYYYY.MM.DD`) tag を auto-commit
 - bot の `[skip stats]` commit は差分判定から除外 (STATS.md 更新だけでは release しない)
 - 同日複数 release は `vYYYY.MM.DD.1` / `.2` … で衝突回避
