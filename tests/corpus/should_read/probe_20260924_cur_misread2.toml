@@ -154,3 +154,65 @@ expected = "かぞえんでもみえるやろw"
 input = "好き嫌いとかじゃなくて信頼感よね"
 mode = "hiragana"
 expected = "すききらいとかじゃなくてしんらいかんよね"
+
+# 2026-09-24 かな filler 同点で entry が負けていた語 (直後 1 字の match で tie break)
+
+[[case]]
+input = "応援歌いいね"
+mode = "hiragana"
+expected = "おうえんかいいね"
+
+[[case]]
+input = "不安定かな?"
+mode = "hiragana"
+expected = "ふあんていかな?"
+
+[[case]]
+input = "足早いしなw"
+mode = "hiragana"
+expected = "あしはやいしなw"
+
+[[case]]
+input = "練習で頭打って気絶したことあるや"
+mode = "hiragana"
+expected = "れんしゅうであたまうってきぜつしたことあるや"
+
+[[case]]
+input = "ころさん自分の影響力もうちょっと自覚してw"
+mode = "hiragana"
+expected = "ころさんじぶんのえいきょうりょくもうちょっとじかくしてw"
+
+[[case]]
+input = "ご都合展開きたこれ"
+mode = "hiragana"
+expected = "ごつごうてんかいきたこれ"
+
+[[case]]
+input = "だれが言うてんねんww"
+mode = "hiragana"
+expected = "だれがゆうてんねんww"
+
+[[case]]
+input = "熱すぎるぞおお"
+mode = "hiragana"
+expected = "あつすぎるぞおお"
+
+[[case]]
+input = "すうちゃんも欲しがるよw"
+mode = "hiragana"
+expected = "すうちゃんもほしがるよw"
+
+[[case]]
+input = "トイレ手洗ってないんかw"
+mode = "hiragana"
+expected = "トイレてあらってないんかw"
+
+[[case]]
+input = "普段使いでも熟練度入るからね"
+mode = "hiragana"
+expected = "ふだんづかいでもじゅくれんどはいるからね"
+
+[[case]]
+input = "足の引っ張り合いになるぞw"
+mode = "hiragana"
+expected = "あしのひっぱりあいになるぞw"

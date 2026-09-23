@@ -32,7 +32,6 @@ description = "分類前の一時 inbox (≥2 字 surface、 内容が貯まっ�
 "気持ちい" = "キモチイ"
 "お腹いっぱい" = "オナカイッパイ"
 "お腹空" = "オナカス"
-"足早い" = "アシハヤイ"
 "勝ち進" = "カチスス"
 "手のひら返し" = "テノヒラガエシ"
 "最強か" = "サイキョウカ"
@@ -78,7 +77,6 @@ description = "分類前の一時 inbox (≥2 字 surface、 内容が貯まっ�
 "堪能" = "タンノウ"  # own は 堪=カン + 能 に割れていた (現行は Lindera が読める)
 "一定" = "イッテイ"
 "大勝ち" = "オオガチ"  # 現行 だいかち / own だいがち
-"言うて" = "ゆうて"
 "言うた" = "ゆうた"
 # ★2026-09-23 パターン判定 第 4 回
 "平積み" = "ヒラヅミ"
@@ -90,12 +88,10 @@ description = "分類前の一時 inbox (≥2 字 surface、 内容が貯まっ�
 "経て" = "ヘテ"  # IPADIC 経て = タテ (7年も経てば)
 "行け行け" = "イケイケ"
 "足速" = "アシハヤ"
-"頭打っ" = "アタマウッ"
 "腕組ん" = "ウデクン"
 "名前変え" = "ナマエカエ"
 "代打" = "ダイダ"
 "安打" = "アンダ"
-"影響力" = "エイキョウリョク"
 "経験値" = "ケイケンチ"
 "三位一体" = "サンミイッタイ"
 "出落ち" = "デオチ"
@@ -103,11 +99,9 @@ description = "分類前の一時 inbox (≥2 字 surface、 内容が貯まっ�
 "小便器" = "ショウベンキ"
 "玉子" = "タマゴ"
 "何人前" = "ナンニンマエ"
-"熱すぎ" = "アツスギ"
 "当たん" = "アタン"
 "即降り" = "ソクオリ"
 "来なさそう" = "コナサソウ"
-"展開" = "テンカイ"
 "開幕早々" = "カイマクソウソウ"
 "新年早々" = "シンネンソウソウ"
 "年始早々" = "ネンシソウソウ"
@@ -214,3 +208,88 @@ reading = "キタル"
 [[entries."来る".match]]
 next_starts_any = ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十"]
 reading = "キタル"
+
+# ★2026-09-24 かな filler 同点で entry が負ける語 (直後 1 字の match で match_hits tie break、 path_tie_kana_filler 参照)
+[entries."応援歌"]
+reading = "オウエンカ"
+
+[[entries."応援歌".match]]
+next_starts_any = ["い"]
+reading = "オウエンカ"
+
+[entries."不安定"]
+reading = "フアンテイ"
+
+[[entries."不安定".match]]
+next_starts_any = ["か"]
+reading = "フアンテイ"
+
+[entries."足早い"]
+reading = "あしはやい"
+
+[[entries."足早い".match]]
+next_starts_any = ["し"]
+reading = "あしはやい"
+
+[entries."頭打っ"]
+reading = "あたまうっ"
+
+[[entries."頭打っ".match]]
+next_starts_any = ["て"]
+reading = "あたまうっ"
+
+[entries."影響力"]
+reading = "エイキョウリョク"
+
+[[entries."影響力".match]]
+next_starts_any = ["も"]
+reading = "エイキョウリョク"
+
+[entries."展開"]
+reading = "テンカイ"
+
+[[entries."展開".match]]
+next_starts_any = ["き"]
+reading = "テンカイ"
+
+[entries."言うて"]
+reading = "ゆうて"
+
+[[entries."言うて".match]]
+next_starts_any = ["ん"]
+reading = "ゆうて"
+
+[entries."熱すぎ"]
+reading = "あつすぎ"
+
+[[entries."熱すぎ".match]]
+next_starts_any = ["る"]
+reading = "あつすぎ"
+
+[entries."欲しが"]
+reading = "ほしが"
+
+[[entries."欲しが".match]]
+next_starts_any = ["る"]
+reading = "ほしが"
+
+[entries."手洗っ"]
+reading = "てあらっ"
+
+[[entries."手洗っ".match]]
+next_starts_any = ["て"]
+reading = "てあらっ"
+
+[entries."普段使い"]
+reading = "ふだんづかい"
+
+[[entries."普段使い".match]]
+next_starts_any = ["で"]
+reading = "ふだんづかい"
+
+[entries."引っ張り合"]
+reading = "ひっぱりあ"
+
+[[entries."引っ張り合".match]]
+next_starts_any = ["い"]
+reading = "ひっぱりあ"
