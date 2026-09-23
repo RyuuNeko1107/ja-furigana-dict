@@ -1,0 +1,46 @@
+# 2026-09-23 パターン判定 第 4 回 (own d43pj10 vs 現行 の割れ行) で dict に足した語の回帰
+
+[[case]]
+input = "愛染隊長はもう..."
+mode = "hiragana"
+expected = "あいぜんたいちょうはもう..."
+
+[[case]]
+input = "杵築学園はよくやってる"
+mode = "hiragana"
+expected = "きつきがくえんはよくやってる"
+
+[[case]]
+input = "松陰寺がいたのかな?"
+mode = "hiragana"
+expected = "しょうおんじがいたのかな?"
+
+[[case]]
+input = "船津は使い道ない"
+mode = "hiragana"
+expected = "ふなつはつかいみちない"
+
+[[case]]
+input = "今赤石2500個配布きた"
+mode = "hiragana"
+expected = "いまあかいしにせんごひゃっこはいふきた"
+
+[[case]]
+input = "前掛かりになったとこカウンターや!"
+mode = "hiragana"
+expected = "まえがかりになったとこカウンターや!"
+
+[[case]]
+input = "平積みのほうが強いよ"
+mode = "hiragana"
+expected = "ひらづみのほうがつよいよ"
+
+[[case]]
+input = "よくある野菜の飾り切り"
+mode = "hiragana"
+expected = "よくあるやさいのかざりぎり"
+
+[[case]]
+input = "白銀聖騎士団でええやろ"
+mode = "hiragana"
+expected = "しろがねせいきしだんでええやろ"
