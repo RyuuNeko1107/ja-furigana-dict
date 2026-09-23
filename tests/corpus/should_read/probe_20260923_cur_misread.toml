@@ -194,3 +194,108 @@ expected = "きにいりました"
 input = "入り直したけど"
 mode = "hiragana"
 expected = "はいりなおしたけど"
+
+[[case]]
+input = "でも桑田だよ"
+mode = "hiragana"
+expected = "でもくわただよ"
+
+[[case]]
+input = "竹中平蔵"
+mode = "hiragana"
+expected = "たけなかへいぞう"
+
+[[case]]
+input = "三成視点も見たい"
+mode = "hiragana"
+expected = "みつなりしてんもみたい"
+
+[[case]]
+input = "同点止まりやん"
+mode = "hiragana"
+expected = "どうてんどまりやん"
+
+[[case]]
+input = "友達止まりだからだよ"
+mode = "hiragana"
+expected = "ともだちどまりだからだよ"
+
+[[case]]
+input = "コメ価格の高止まり"
+mode = "hiragana"
+expected = "コメかかくのたかどまり"
+
+[[case]]
+input = "気持ちい"
+mode = "hiragana"
+expected = "きもちい"
+
+[[case]]
+input = "お腹いっぱい食べて"
+mode = "hiragana"
+expected = "おなかいっぱいたべて"
+
+[[case]]
+input = "手のひら返しすご"
+mode = "hiragana"
+expected = "てのひらがえしすご"
+
+[[case]]
+input = "ソロ最強かな?"
+mode = "hiragana"
+expected = "ソロさいきょうかな?"
+
+[[case]]
+input = "前見えんやん"
+mode = "hiragana"
+expected = "まえみえんやん"
+
+[[case]]
+input = "エラー出過ぎでは"
+mode = "hiragana"
+expected = "エラーですぎでは"
+
+[[case]]
+input = "ガチで強いんよ"
+mode = "hiragana"
+expected = "ガチでつよいんよ"
+
+[[case]]
+input = "また使い回しかw"
+mode = "hiragana"
+expected = "またつかいまわしかw"
+
+[[case]]
+input = "外野行きかな"
+mode = "hiragana"
+expected = "がいやいきかな"
+
+[[case]]
+input = "大当たりすぎない"
+mode = "hiragana"
+expected = "おおあたりすぎない"
+
+[[case]]
+input = "お互い様です"
+mode = "hiragana"
+expected = "おたがいさまです"
+
+[[case]]
+input = "お互い様子見か"
+mode = "hiragana"
+expected = "おたがいようすみか"
+
+[[case]]
+input = "イカ刺し食べたい"
+mode = "hiragana"
+expected = "いかさしたべたい"
+
+[[case]]
+input = "お気に入りいれておくと"
+mode = "hiragana"
+expected = "おきにいりいれておくと"
+
+[[case]]
+input = "打つのは一三塁か捕手当たりか"
+mode = "hiragana"
+expected = "うつのはいっさんるいかほしゅあたりか"
