@@ -1,0 +1,156 @@
+# 2026-09-24 現行エンジンの誤読 第 2 弾 (パターン判定 O/N で今も誤る行から、 表層固定で副作用なしを dict-diff 全量で確認したもの) の回帰
+
+[[case]]
+input = "守護ってんだよ"
+mode = "hiragana"
+expected = "まもってんだよ"
+
+[[case]]
+input = "伝令使いなよ"
+mode = "hiragana"
+expected = "でんれいつかいなよ"
+
+[[case]]
+input = "しむけんさんのスイカ人間思い出しちまったよw"
+mode = "hiragana"
+expected = "しむけんさんのスイカにんげんおもいだしちまったよw"
+
+[[case]]
+input = "ゲストとしては初絡み??"
+mode = "hiragana"
+expected = "ゲストとしてははつがらみ??"
+
+[[case]]
+input = "すご盛りは9回の守備でも使いたい"
+mode = "hiragana"
+expected = "すごもりはきゅうかいのしゅびでもつかいたい"
+
+[[case]]
+input = "あとは並び替えでいけるか?!"
+mode = "hiragana"
+expected = "あとはならびかえでいけるか?!"
+
+[[case]]
+input = "並べ替えで値段高い順にできるよ"
+mode = "hiragana"
+expected = "ならべかえでねだんたかいじゅんにできるよ"
+
+[[case]]
+input = "話しの切り替わり早いな"
+mode = "hiragana"
+expected = "はなしのきりかわりはやいな"
+
+[[case]]
+input = "てぇてぇの押し付けはいけない"
+mode = "hiragana"
+expected = "てぇてぇのおしつけはいけない"
+
+[[case]]
+input = "盛り付けがw"
+mode = "hiragana"
+expected = "もりつけがw"
+
+[[case]]
+input = "内野安打って普通にすごいなあ"
+mode = "hiragana"
+expected = "ないやあんだってふつうにすごいなあ"
+
+[[case]]
+input = "手放すじゃんww"
+mode = "hiragana"
+expected = "てばなすじゃんww"
+
+[[case]]
+input = "攻め攻めのリュウ!"
+mode = "hiragana"
+expected = "せめせめのリュウ!"
+
+[[case]]
+input = "すごい書き順だ"
+mode = "hiragana"
+expected = "すごいかきじゅんだ"
+
+[[case]]
+input = "盛り盛りで草"
+mode = "hiragana"
+expected = "もりもりでくさ"
+
+[[case]]
+input = "腹が減っては戦はできぬ"
+mode = "hiragana"
+expected = "はらがへってはいくさはできぬ"
+
+[[case]]
+input = "相手40打点って"
+mode = "hiragana"
+expected = "あいてよんじゅうだてんって"
+
+[[case]]
+input = "気合い入りまくってて草"
+mode = "hiragana"
+expected = "きあいはいりまくっててくさ"
+
+[[case]]
+input = "見たら即切りです"
+mode = "hiragana"
+expected = "みたらそくぎりです"
+
+[[case]]
+input = "写真使いまわし"
+mode = "hiragana"
+expected = "しゃしんつかいまわし"
+
+[[case]]
+input = "回復使いすぎ"
+mode = "hiragana"
+expected = "かいふくつかいすぎ"
+
+[[case]]
+input = "塗り残しない?"
+mode = "hiragana"
+expected = "ぬりのこしない?"
+
+[[case]]
+input = "笑いと見せかけての鳴き声とか?"
+mode = "hiragana"
+expected = "わらいとみせかけてのなきごえとか?"
+
+[[case]]
+input = "再々放送助かる"
+mode = "hiragana"
+expected = "さいさいほうそうたすかる"
+
+[[case]]
+input = "長えなw"
+mode = "hiragana"
+expected = "なげえなw"
+
+[[case]]
+input = "出でよシェンロン"
+mode = "hiragana"
+expected = "いでよシェンロン"
+
+[[case]]
+input = "使い切りで!"
+mode = "hiragana"
+expected = "つかいきりで!"
+
+[[case]]
+input = "大体一回痛い目見てるの草"
+mode = "hiragana"
+expected = "だいたいいっかいいたいめみてるのくさ"
+
+[[case]]
+input = "懐かせないとw"
+mode = "hiragana"
+expected = "なつかせないとw"
+
+[[case]]
+input = "数えんでも見えるやろw"
+mode = "hiragana"
+expected = "かぞえんでもみえるやろw"
+
+[[case]]
+input = "好き嫌いとかじゃなくて信頼感よね"
+mode = "hiragana"
+expected = "すききらいとかじゃなくてしんらいかんよね"
