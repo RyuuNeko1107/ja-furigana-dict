@@ -316,7 +316,7 @@ expected = "たしかにきいてるね"
 [[case]]
 input = "訊くな訊くな行け行け"
 mode = "hiragana"
-expected = "きくなきくないけゆけ"
+expected = "きくなきくないけいけ"  # 2026-09-23: 行け行け = いけいけ (旧 expected は sweep 時の出力の固定)
 
 [[case]]
 input = "エジンバラに訊け w"

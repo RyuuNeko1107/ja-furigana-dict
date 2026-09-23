@@ -1,0 +1,196 @@
+# 2026-09-23 現行エンジンの誤読 (パターン判定で own 正だった行を HEAD で読み直し、 IPADIC の語・読みを entry で上書き) の回帰
+
+[[case]]
+input = "煽り合いはじまった"
+mode = "hiragana"
+expected = "あおりあいはじまった"
+
+[[case]]
+input = "荒ぶってたw"
+mode = "hiragana"
+expected = "あらぶってたw"
+
+[[case]]
+input = "疑ってないよ"
+mode = "hiragana"
+expected = "うたがってないよ"
+
+[[case]]
+input = "気を遣ってくれてるw"
+mode = "hiragana"
+expected = "きをつかってくれてるw"
+
+[[case]]
+input = "遣って来る"
+mode = "hiragana"
+expected = "やってくる"
+
+[[case]]
+input = "遣っちまった"
+mode = "hiragana"
+expected = "やっちまった"
+
+[[case]]
+input = "10年も経てば変わるよ"
+mode = "hiragana"
+expected = "じゅうねんもへてばかわるよ"
+
+[[case]]
+input = "行け行け!"
+mode = "hiragana"
+expected = "いけいけ!"
+
+[[case]]
+input = "足速いんよなぁ"
+mode = "hiragana"
+expected = "あしはやいんよなぁ"
+
+[[case]]
+input = "悟空頭打って記憶喪失"
+mode = "hiragana"
+expected = "ごくうあたまうってきおくそうしつ"
+
+[[case]]
+input = "腕組んでる"
+mode = "hiragana"
+expected = "うでくんでる"
+
+[[case]]
+input = "名前変えようw"
+mode = "hiragana"
+expected = "なまえかえようw"
+
+[[case]]
+input = "次代打でもいいよ"
+mode = "hiragana"
+expected = "つぎだいだでもいいよ"
+
+[[case]]
+input = "上は経験値下は信頼"
+mode = "hiragana"
+expected = "うえはけいけんちしたはしんらい"
+
+[[case]]
+input = "三位一体きたw"
+mode = "hiragana"
+expected = "さんみいったいきたw"
+
+[[case]]
+input = "出落ちやん"
+mode = "hiragana"
+expected = "でおちやん"
+
+[[case]]
+input = "地下水美味しいねぇ"
+mode = "hiragana"
+expected = "ちかすいおいしいねぇ"
+
+[[case]]
+input = "小便器w"
+mode = "hiragana"
+expected = "しょうべんきw"
+
+[[case]]
+input = "出汁巻き玉子さんこんばんは"
+mode = "hiragana"
+expected = "だしまきたまごさんこんばんは"
+
+[[case]]
+input = "何人前?"
+mode = "hiragana"
+expected = "なんにんまえ?"
+
+[[case]]
+input = "当たんないよね"
+mode = "hiragana"
+expected = "あたんないよね"
+
+[[case]]
+input = "いい転がしだ!"
+mode = "hiragana"
+expected = "いいころがしだ!"
+
+[[case]]
+input = "転がせって言ったよな?"
+mode = "hiragana"
+expected = "ころがせっていったよな?"
+
+[[case]]
+input = "即降りでいい"
+mode = "hiragana"
+expected = "そくおりでいい"
+
+[[case]]
+input = "来る可能性はあるね"
+mode = "hiragana"
+expected = "くるかのうせいはあるね"
+
+[[case]]
+input = "来る10日に"
+mode = "hiragana"
+expected = "きたるとおかに"
+
+[[case]]
+input = "出来るけど外される可能性はある"
+mode = "hiragana"
+expected = "できるけどはずされるかのうせいはある"
+
+[[case]]
+input = "一生来なさそうw"
+mode = "hiragana"
+expected = "いっしょうこなさそうw"
+
+[[case]]
+input = "出来なさそう"
+mode = "hiragana"
+expected = "できなさそう"
+
+[[case]]
+input = "開幕早々ぶっ飛んでる"
+mode = "hiragana"
+expected = "かいまくそうそうぶっとんでる"
+
+[[case]]
+input = "不用心すぎん?"
+mode = "hiragana"
+expected = "ぶようじんすぎん?"
+
+[[case]]
+input = "巌流を救ったってくれや武蔵"
+mode = "hiragana"
+expected = "がんりゅうをすくったってくれやむさし"
+
+[[case]]
+input = "延長入りまーす"
+mode = "hiragana"
+expected = "えんちょうはいりまーす"
+
+[[case]]
+input = "修正入りそうだな"
+mode = "hiragana"
+expected = "しゅうせいはいりそうだな"
+
+[[case]]
+input = "気合い入りすぎやろw"
+mode = "hiragana"
+expected = "きあいはいりすぎやろw"
+
+[[case]]
+input = "お風呂入りながらみてるぞ!"
+mode = "hiragana"
+expected = "おふろはいりながらみてるぞ!"
+
+[[case]]
+input = "気が滅入りそう"
+mode = "hiragana"
+expected = "きがめいりそう"
+
+[[case]]
+input = "気に入りました"
+mode = "hiragana"
+expected = "きにいりました"
+
+[[case]]
+input = "入り直したけど"
+mode = "hiragana"
+expected = "はいりなおしたけど"
