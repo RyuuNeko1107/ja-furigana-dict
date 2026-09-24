@@ -1267,3 +1267,53 @@ expected = "じゅんいちのよめ"
 input = "朽葉さん"
 mode = "hiragana"
 expected = "くちばさん"
+
+[[case]]
+input = "楽しんだもん勝ちよ"
+mode = "hiragana"
+expected = "たのしんだもんがちよ"
+
+[[case]]
+input = "今まで通り"
+mode = "hiragana"
+expected = "いままでどおり"
+
+[[case]]
+input = "マウス替え時かな?"
+mode = "hiragana"
+expected = "マウスかえどきかな?"
+
+[[case]]
+input = "締め付けがね"
+mode = "hiragana"
+expected = "しめつけがね"
+
+[[case]]
+input = "行き違いかな?"
+mode = "hiragana"
+expected = "いきちがいかな?"
+
+[[case]]
+input = "城之内デッキ"
+mode = "hiragana"
+expected = "じょうのうちデッキ"
+
+[[case]]
+input = "枚数多過ぎで"
+mode = "hiragana"
+expected = "まいすうおおすぎで"
+
+[[case]]
+input = "手軽さがいいよね"
+mode = "hiragana"
+expected = "てがるさがいいよね"
+
+[[case]]
+input = "香水出すので"
+mode = "hiragana"
+expected = "こうすいだすので"
+
+[[case]]
+input = "居心地よさそう"
+mode = "hiragana"
+expected = "いごこちよさそう"
