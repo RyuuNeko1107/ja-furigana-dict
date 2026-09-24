@@ -321,7 +321,7 @@ expected = "くわたけいすけ"
 [[case]]
 input = "天海祐希の名前の強さ"
 mode = "hiragana"
-expected = "あまみゆきのなまえのつよさ"
+expected = "あまみゆうきのなまえのつよさ"
 
 [[case]]
 input = "福永祐一厩舎"

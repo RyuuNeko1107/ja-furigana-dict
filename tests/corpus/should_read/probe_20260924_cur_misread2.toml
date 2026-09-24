@@ -852,3 +852,33 @@ expected = "あかしろぼうし"
 input = "乳白色"
 mode = "hiragana"
 expected = "にゅうはくしょく"
+
+[[case]]
+input = "加賀百万石"
+mode = "hiragana"
+expected = "かがひゃくまんごく"
+
+[[case]]
+input = "十万石まんじゅう"
+mode = "hiragana"
+expected = "じゅうまんごくまんじゅう"
+
+[[case]]
+input = "北村匠海"
+mode = "hiragana"
+expected = "きたむらたくみ"
+
+[[case]]
+input = "情強すぎ"
+mode = "hiragana"
+expected = "じょうつよすぎ"
+
+[[case]]
+input = "銀子ちゃん"
+mode = "hiragana"
+expected = "ぎんこちゃん"
+
+[[case]]
+input = "天海祐希"
+mode = "hiragana"
+expected = "あまみゆうき"
