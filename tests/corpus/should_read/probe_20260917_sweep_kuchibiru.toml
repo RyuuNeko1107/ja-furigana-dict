@@ -186,17 +186,17 @@ expected = "さだこブイエスかやこ"
 [[case]]
 input = "井上温大とか"
 mode = "hiragana"
-expected = "いのうえおんたとか"
+expected = "いのうえはるととか"
 
 [[case]]
 input = "井上温大は強いですね"
 mode = "hiragana"
-expected = "いのうえおんたはつよいですね"
+expected = "いのうえはるとはつよいですね"
 
 [[case]]
 input = "井上温大球走ってるな"
 mode = "hiragana"
-expected = "いのうえおんたきゅうはしってるな"
+expected = "いのうえはるときゅうはしってるな"
 
 [[case]]
 input = "みこち俺逞ましいよ"
