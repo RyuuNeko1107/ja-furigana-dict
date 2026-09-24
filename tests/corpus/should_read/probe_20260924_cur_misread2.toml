@@ -525,3 +525,33 @@ expected = "うまそうなラーメン"
 input = "事業主に対し"
 mode = "hiragana"
 expected = "じぎょうぬしにたいし"
+
+[[case]]
+input = "前項の評価を行ったときは"
+mode = "hiragana"
+expected = "ぜんこうのひょうかをおこなったときは"
+
+[[case]]
+input = "ころさんは我が道を行ってね"
+mode = "hiragana"
+expected = "ころさんはわがみちをいってね"
+
+[[case]]
+input = "法第九条第一項"
+mode = "hiragana"
+expected = "ほうだいきゅうじょうだいいっこう"
+
+[[case]]
+input = "貸金業を営む者"
+mode = "hiragana"
+expected = "かしきんぎょうをいとなむもの"
+
+[[case]]
+input = "業が深い"
+mode = "hiragana"
+expected = "ごうがふかい"
+
+[[case]]
+input = "同表の下欄に掲げる"
+mode = "hiragana"
+expected = "どうひょうのからんにかかげる"

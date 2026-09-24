@@ -402,6 +402,11 @@ reading = "マエジマヒソカ"
 [entries."九条"]  # 公家/地名 (default きゅうじょう)
 reading = "クジョウ"
 
+# ★2026-09-25 法令: 第九条 / 憲法九条 = きゅうじょう
+[[entries."九条".match]]
+prev_ends_any = ["第", "法"]
+reading = "キュウジョウ"
+
 [[entries."九条".match]]
 next_starts_any = ["は"]
 reading = "クジョウ"

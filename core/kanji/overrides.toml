@@ -8822,6 +8822,11 @@ reading = "やかた"
 char = "業"
 default = "ギョウ"
 
+# ★2026-09-25 漢字 + 業 (貸金業を営む / 建設業を行う) は ギョウ。 下の ゴウ (業が深い) より先に置く
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ギョウ"
+
 # standalone 「業(が/を/の)」 = ゴウ (仏教の業、 業が深い/業を背負う/業の深さ)。
 # 業務/事業/作業 等は 2 字 token で 業 が standalone でないため非干渉
 [[kanji.match]]
