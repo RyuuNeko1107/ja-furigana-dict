@@ -7892,6 +7892,21 @@ default = "ヒョウ"
 char = "詰"
 default = "キツ"
 
+# ★2026-09-25: 送り仮名なしの 詰 (びん詰 / かん詰 / 袋詰) = づめ
+[[kanji.match]]
+prev_eq_any = ["びん", "たる", "かん", "ビン", "カン", "ボトル"]
+reading = "づめ"
+
+# 送り仮名つき (文字詰め / 箱詰まり) は 語幹の づ だけ
+[[kanji.match]]
+prev_char_type = "漢字"
+next_starts_any = ["め", "ま", "み", "む", "も"]
+reading = "づ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "づめ"
+
 [[kanji]]
 char = "該"
 default = "ガイ"

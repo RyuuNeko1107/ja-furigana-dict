@@ -1207,3 +1207,48 @@ expected = "けいしあな"
 input = "別して不届"
 mode = "hiragana"
 expected = "べっしてふとどき"
+
+[[case]]
+input = "届書を提出"
+mode = "hiragana"
+expected = "とどけしょをていしゅつ"
+
+[[case]]
+input = "払渡しを希望"
+mode = "hiragana"
+expected = "はらいわたしをきぼう"
+
+[[case]]
+input = "前々年度の"
+mode = "hiragana"
+expected = "ぜんぜんねんどの"
+
+[[case]]
+input = "荷重移動"
+mode = "hiragana"
+expected = "かじゅういどう"
+
+[[case]]
+input = "びん詰"
+mode = "hiragana"
+expected = "びんづめ"
+
+[[case]]
+input = "文字詰めいじれる"
+mode = "hiragana"
+expected = "もじづめいじれる"
+
+[[case]]
+input = "1日当たりの採掘量"
+mode = "hiragana"
+expected = "いちにちあたりのさいくつりょう"
+
+[[case]]
+input = "見張人"
+mode = "hiragana"
+expected = "みはりにん"
+
+[[case]]
+input = "何々法"
+mode = "hiragana"
+expected = "なになにほう"
