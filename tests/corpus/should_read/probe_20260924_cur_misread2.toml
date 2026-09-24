@@ -555,3 +555,25 @@ expected = "ごうがふかい"
 input = "同表の下欄に掲げる"
 mode = "hiragana"
 expected = "どうひょうのからんにかかげる"
+
+# 2026-09-25 裁判例コーパス点検
+
+[[case]]
+input = "支払済みまで年3%の割合"
+mode = "hiragana"
+expected = "しはらいずみまでねんさんぱーせんとのわりあい"
+
+[[case]]
+input = "SAN値がピンチ"
+mode = "hiragana"
+expected = "SANちがピンチ"
+
+[[case]]
+input = "人間ドックは年二回"
+mode = "hiragana"
+expected = "にんげんドックはねんにかい"
+
+[[case]]
+input = "欄記載の額の範囲"
+mode = "hiragana"
+expected = "らんきさいのがくのはんい"
