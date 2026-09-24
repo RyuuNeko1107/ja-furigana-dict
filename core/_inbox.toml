@@ -309,6 +309,8 @@ description = "分類前の一時 inbox (≥2 字 surface、 内容が貯まっ�
 "幸子" = "サチコ"
 "集っ" = "アツマッ"
 "気遣っ" = "キヅカッ"
+"杉田" = "スギタ"
+"深海" = "シンカイ"
 
 [entries."忍法帖"]  # ★2026-09-18: 旧 「忍法帖+助詞」 形式から移設
 reading = "ニンポウチョウ"
@@ -568,6 +570,18 @@ reading = "ヤッ"
 [[entries."遣っ".match]]
 input_contains_any = ["気を遣っ", "神経を遣っ", "心を遣っ", "気は遣っ", "気も遣っ"]
 reading = "ツカッ"
+
+# 新田: 人名 (新田 / エゴイスト新田) = にった、 漢字の後 (小倉新田 / 南太田新田) は地名 しんでん
+[entries."新田"]
+reading = "ニッタ"
+
+[[entries."新田".match]]
+next_starts_any = ["さん", "くん", "君", "選手", "きゅん", "ちゃん", "氏"]
+reading = "ニッタ"
+
+[[entries."新田".match]]
+prev_char_type = "漢字"
+reading = "シンデン"
 
 [entries."行っ"]
 reading = "[イッ"

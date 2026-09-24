@@ -772,3 +772,23 @@ expected = "さちこはいった"
 input = "人が集って来た"
 mode = "hiragana"
 expected = "ひとがあつまってきた"
+
+[[case]]
+input = "リアクション杉田"
+mode = "hiragana"
+expected = "リアクションすぎた"
+
+[[case]]
+input = "流石新田さんやで"
+mode = "hiragana"
+expected = "さすがにったさんやで"
+
+[[case]]
+input = "小倉新田の城主"
+mode = "hiragana"
+expected = "おぐらしんでんのじょうしゅ"
+
+[[case]]
+input = "深海少女だ"
+mode = "hiragana"
+expected = "しんかいしょうじょだ"
