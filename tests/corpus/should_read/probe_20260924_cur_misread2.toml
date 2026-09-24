@@ -957,3 +957,18 @@ expected = "くうしんさいいため"
 input = "陽菜ちゃん"
 mode = "hiragana"
 expected = "ひなちゃん"
+
+[[case]]
+input = "灰原みたいなこと言ってる"
+mode = "hiragana"
+expected = "はいばらみたいなこといってる"
+
+[[case]]
+input = "一切皆苦"
+mode = "hiragana"
+expected = "いっさいかいく"
+
+[[case]]
+input = "最原終一"
+mode = "hiragana"
+expected = "さいはらしゅういち"
