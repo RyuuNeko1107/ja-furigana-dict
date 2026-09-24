@@ -577,3 +577,38 @@ expected = "にんげんドックはねんにかい"
 input = "欄記載の額の範囲"
 mode = "hiragana"
 expected = "らんきさいのがくのはんい"
+
+[[case]]
+input = "働きかけを行ってまいります"
+mode = "hiragana"
+expected = "はたらきかけをおこなってまいります"
+
+[[case]]
+input = "時代の先を行ってるね"
+mode = "hiragana"
+expected = "じだいのさきをいってるね"
+
+[[case]]
+input = "地下と地上を行ったり来たり"
+mode = "hiragana"
+expected = "ちかとちじょうをいったりきたり"
+
+[[case]]
+input = "被災された方々に対して"
+mode = "hiragana"
+expected = "ひさいされたかたがたにたいして"
+
+[[case]]
+input = "方々を探し回った"
+mode = "hiragana"
+expected = "ほうぼうをさがしまわった"
+
+[[case]]
+input = "市場の原理だろ"
+mode = "hiragana"
+expected = "しじょうのげんりだろ"
+
+[[case]]
+input = "築地市場で寿司食べた"
+mode = "hiragana"
+expected = "つきじいちばですしたべた"
