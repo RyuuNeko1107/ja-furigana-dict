@@ -972,3 +972,28 @@ expected = "いっさいかいく"
 input = "最原終一"
 mode = "hiragana"
 expected = "さいはらしゅういち"
+
+[[case]]
+input = "話盛りすぎじゃない?"
+mode = "hiragana"
+expected = "はなしもりすぎじゃない?"
+
+[[case]]
+input = "鼻詰まりだった"
+mode = "hiragana"
+expected = "はなづまりだった"
+
+[[case]]
+input = "根詰めすぎないようにね"
+mode = "hiragana"
+expected = "こんづめすぎないようにね"
+
+[[case]]
+input = "職人魂"
+mode = "hiragana"
+expected = "しょくにんだましい"
+
+[[case]]
+input = "有栖川宮"
+mode = "hiragana"
+expected = "ありすがわのみや"
