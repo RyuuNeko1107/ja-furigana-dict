@@ -1462,3 +1462,33 @@ expected = "きずりかみきたえき"
 input = "諫言を不快に思った"
 mode = "hiragana"
 expected = "かんげんをふかいにおもった"
+
+[[case]]
+input = "主キーにする"
+mode = "hiragana"
+expected = "しゅキーにする"
+
+[[case]]
+input = "移行元と移行先"
+mode = "hiragana"
+expected = "いこうもとといこうさき"
+
+[[case]]
+input = "根本原因はトンネル酸化膜"
+mode = "hiragana"
+expected = "こんぽんげんいんはトンネルさんかまく"
+
+[[case]]
+input = "8で割ればいいだけ"
+mode = "hiragana"
+expected = "はちでわればいいだけ"
+
+[[case]]
+input = "お主ポップコーン食べない"
+mode = "hiragana"
+expected = "おぬしポップコーンたべない"
+
+[[case]]
+input = "キーと値のペア"
+mode = "hiragana"
+expected = "キーとあたいのペア"
