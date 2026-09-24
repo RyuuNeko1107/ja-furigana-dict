@@ -196,7 +196,6 @@ description = "分類前の一時 inbox (≥2 字 surface、 内容が貯まっ�
 "一昔" = "ひとむかし"
 "思い出さ" = "おもいださ"
 "書き始め" = "かきはじめ"
-"お金" = "おかね"
 "中々" = "なかなか"
 "狼煙" = "のろし"
 "先読み" = "さきよみ"
@@ -451,3 +450,67 @@ reading = "せんこうっ"
 [[entries."先行っ".match]]
 next_starts_any = ["て"]
 reading = "さきいっ"
+
+# ★2026-09-24 判定 10 回目: entry があるのにかな filler 同点で負けていた語 (直後 1 字 match で tie break)
+[entries."極限"]
+reading = "[キョクゲン"
+
+[[entries."極限".match]]
+next_starts_any = ["っ"]
+reading = "[キョクゲン"
+
+[entries."叩け"]
+reading = "タタケ"
+
+[[entries."叩け".match]]
+next_starts_any = ["よ"]
+reading = "タタケ"
+
+[entries."武豊"]
+reading = "たけゆたか"
+
+[[entries."武豊".match]]
+next_starts_any = ["信"]
+reading = "たけゆたか"
+
+[entries."闇討ち"]
+reading = "ヤミウチ"
+
+[[entries."闇討ち".match]]
+next_starts_any = ["や"]
+reading = "ヤミウチ"
+
+[entries."幸あれ"]
+reading = "サチアレ"
+
+[[entries."幸あれ".match]]
+next_starts_any = ["ー"]
+reading = "サチアレ"
+
+[entries."高え"]
+reading = "[タケ]エ"
+
+[[entries."高え".match]]
+next_starts_any = ["な"]
+reading = "[タケ]エ"
+
+[entries."労わ"]
+reading = "イタワ"
+
+[[entries."労わ".match]]
+next_starts_any = ["っ"]
+reading = "イタワ"
+
+[entries."詰む"]
+reading = "ツム"
+
+[[entries."詰む".match]]
+next_starts_any = ["よ"]
+reading = "ツム"
+
+[entries."お金"]
+reading = "おかね"
+
+[[entries."お金".match]]
+next_starts_any = ["興"]
+reading = "おかね"
