@@ -327,3 +327,25 @@ expected = "いやなピンいちきた"
 input = "創作料理ってあるので"
 mode = "hiragana"
 expected = "そうさくりょうりってあるので"
+
+# 2026-09-24 助数詞 行 の not_before (lib 0.5.0+): 数字 + 行 + っ/く/け は 行く
+
+[[case]]
+input = "姫が4000行ってまうんちゃうか?"
+mode = "hiragana"
+expected = "ひめがよんせんいってまうんちゃうか?"
+
+[[case]]
+input = "あの遅い球やったら3行けんか?"
+mode = "hiragana"
+expected = "あのおそいたまやったらさんいけんか?"
+
+[[case]]
+input = "三行で頼む"
+mode = "hiragana"
+expected = "さんぎょうでたのむ"
+
+[[case]]
+input = "1000万行かんけどな"
+mode = "hiragana"
+expected = "せんまんいかんけどな"
