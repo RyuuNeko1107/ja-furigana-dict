@@ -396,3 +396,100 @@ expected = "いっせいきいじょうになる"
 input = "8世紀の二十一世紀"
 mode = "hiragana"
 expected = "はっせいきのにじゅういっせいき"
+
+# 2026-09-24 判定 10 回目 (j22 vs 現行) で own 正だった現行誤読
+
+[[case]]
+input = "ぶぶ漬けは?"
+mode = "hiragana"
+expected = "ぶぶづけは?"
+
+[[case]]
+input = "走者一掃きたー"
+mode = "hiragana"
+expected = "そうしゃいっそうきたー"
+
+[[case]]
+input = "御影とキュリオス"
+mode = "hiragana"
+expected = "みかげとキュリオス"
+
+[[case]]
+input = "川内原発は大丈夫か"
+mode = "hiragana"
+expected = "せんだいげんぱつはだいじょうぶか"
+
+[[case]]
+input = "雷鳴が止みません @東広島市"
+mode = "hiragana"
+expected = "らいめいがやみません @ひがしひろしまし"
+
+[[case]]
+input = "...難波多すぎ"
+mode = "hiragana"
+expected = "...なんばおおすぎ"
+
+[[case]]
+input = "最後のところ文字数多すぎる"
+mode = "hiragana"
+expected = "さいごのところもじすうおおすぎる"
+
+[[case]]
+input = "BASARAの幸村やんけ"
+mode = "hiragana"
+expected = "バサラのゆきむらやんけ"
+
+[[case]]
+input = "勝ち運大和田"
+mode = "hiragana"
+expected = "かちうんおおわだ"
+
+[[case]]
+input = "雄二のイタズラ心"
+mode = "hiragana"
+expected = "ゆうじのイタズラこころ"
+
+[[case]]
+input = "10年一昔"
+mode = "hiragana"
+expected = "じゅうねんひとむかし"
+
+[[case]]
+input = "ファーマー中々だなw"
+mode = "hiragana"
+expected = "ファーマーなかなかだなw"
+
+[[case]]
+input = "弾道3目指せ"
+mode = "hiragana"
+expected = "だんどうさんめざせ"
+
+[[case]]
+input = "リンゴ美味しいいね"
+mode = "hiragana"
+expected = "リンゴおいしいいね"
+
+[[case]]
+input = "植え替えだぁ"
+mode = "hiragana"
+expected = "うえかえだぁ"
+
+[[case]]
+input = "肩と足次第!"
+mode = "hiragana"
+expected = "かたとあししだい!"
+
+[[case]]
+input = "ご飯粒ついてるみたいで草"
+mode = "hiragana"
+expected = "ごはんつぶついてるみたいでくさ"
+
+[[case]]
+input = "息詰まる投手戦だ"
+mode = "hiragana"
+expected = "いきづまるとうしゅせんだ"
+
+[[case]]
+input = "チャンス活かせないから"
+mode = "hiragana"
+expected = "チャンスいかせないから"
