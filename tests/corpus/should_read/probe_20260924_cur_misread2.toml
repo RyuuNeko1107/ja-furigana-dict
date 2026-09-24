@@ -493,3 +493,35 @@ expected = "いきづまるとうしゅせんだ"
 input = "チャンス活かせないから"
 mode = "hiragana"
 expected = "チャンスいかせないから"
+
+# 2026-09-25 法令コーパス点検: 額 / 旨 / 事業主
+
+[[case]]
+input = "別表に掲げる額の合計"
+mode = "hiragana"
+expected = "べっぴょうにかかげるがくのごうけい"
+
+[[case]]
+input = "手数料の額を定める"
+mode = "hiragana"
+expected = "てすうりょうのがくをさだめる"
+
+[[case]]
+input = "猫の額ほどの庭"
+mode = "hiragana"
+expected = "ねこのひたいほどのにわ"
+
+[[case]]
+input = "その旨及び理由"
+mode = "hiragana"
+expected = "そのむねおよびりゆう"
+
+[[case]]
+input = "旨そうなラーメン"
+mode = "hiragana"
+expected = "うまそうなラーメン"
+
+[[case]]
+input = "事業主に対し"
+mode = "hiragana"
+expected = "じぎょうぬしにたいし"
