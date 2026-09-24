@@ -1347,3 +1347,78 @@ expected = "かんとくだいこうきたな"
 input = "街灯に当たる"
 mode = "hiragana"
 expected = "がいとうにあたる"
+
+[[case]]
+input = "いつも通り"
+mode = "hiragana"
+expected = "いつもどおり"
+
+[[case]]
+input = "そんな風には生きられない"
+mode = "hiragana"
+expected = "そんなふうにはいきられない"
+
+[[case]]
+input = "突然雨が降り出した"
+mode = "hiragana"
+expected = "とつぜんあめがふりだした"
+
+[[case]]
+input = "豪雨によって"
+mode = "hiragana"
+expected = "ごううによって"
+
+[[case]]
+input = "この種の仕事"
+mode = "hiragana"
+expected = "このしゅのしごと"
+
+[[case]]
+input = "この種を蒔く"
+mode = "hiragana"
+expected = "このたねをまく"
+
+[[case]]
+input = "フランスの三十分の一です"
+mode = "hiragana"
+expected = "フランスのさんじゅうぶんのいちです"
+
+[[case]]
+input = "三十分ばかりして"
+mode = "hiragana"
+expected = "さんじゅっぷんばかりして"
+
+[[case]]
+input = "目が開いてる"
+mode = "hiragana"
+expected = "めがあいてる"
+
+[[case]]
+input = "新展開か"
+mode = "hiragana"
+expected = "しんてんかいか"
+
+[[case]]
+input = "霜降り"
+mode = "hiragana"
+expected = "しもふり"
+
+[[case]]
+input = "ギター弾けるようになりたい"
+mode = "hiragana"
+expected = "ギターひけるようになりたい"
+
+[[case]]
+input = "弾け飛ぶ"
+mode = "hiragana"
+expected = "はじけとぶ"
+
+[[case]]
+input = "おなか空いた"
+mode = "hiragana"
+expected = "おなかすいた"
+
+[[case]]
+input = "一人になるや否や"
+mode = "hiragana"
+expected = "ひとりになるやいなや"
