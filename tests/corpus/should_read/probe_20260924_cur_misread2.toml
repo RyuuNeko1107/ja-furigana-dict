@@ -612,3 +612,38 @@ expected = "しじょうのげんりだろ"
 input = "築地市場で寿司食べた"
 mode = "hiragana"
 expected = "つきじいちばですしたべた"
+
+[[case]]
+input = "安倍元総理の功罪"
+mode = "hiragana"
+expected = "あべもとそうりのこうざい"
+
+[[case]]
+input = "派遣元の会社に対して"
+mode = "hiragana"
+expected = "はけんもとのかいしゃにたいして"
+
+[[case]]
+input = "引用元があるの草"
+mode = "hiragana"
+expected = "いんようもとがあるのくさ"
+
+[[case]]
+input = "データを復元"
+mode = "hiragana"
+expected = "データをふくげん"
+
+[[case]]
+input = "ポイント還元"
+mode = "hiragana"
+expected = "ポイントかんげん"
+
+[[case]]
+input = "許可や届出に加えて"
+mode = "hiragana"
+expected = "きょかやとどけでにくわえて"
+
+[[case]]
+input = "石油元売各社"
+mode = "hiragana"
+expected = "せきゆもとうりかくしゃ"
