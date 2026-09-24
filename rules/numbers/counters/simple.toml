@@ -116,3 +116,13 @@ default = "ギョウ"
 not_before = ["っ", "く", "け"]
 # 大数の後ろ (1000万行かん / 100万行こう) には付けない = simple 形式だった時と同じ
 scale_trailing = false
+
+# ★2026-09-24 世紀: 1 / 8 は促音 (いっせいき / はっせいき)。 十九世紀 / 二十一世紀 の漢数字も助数詞として読む
+[counter."世紀"]
+default = "セイキ"
+kanji_numeral = true
+
+[[counter."世紀".rules]]
+last_digit = [1, 8]
+suffix = "セイキ"
+sokuonize = true

@@ -206,7 +206,7 @@ expected = "ちょうしょうおかゆん"
 [[case]]
 input = "一世紀前を嘲笑うように"
 mode = "hiragana"
-expected = "いちせいきまえをあざわらうように"
+expected = "いっせいきまえをあざわらうように"
 
 [[case]]
 input = "自嘲の笑いだよきっと"

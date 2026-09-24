@@ -349,3 +349,50 @@ expected = "さんぎょうでたのむ"
 input = "1000万行かんけどな"
 mode = "hiragana"
 expected = "せんまんいかんけどな"
+
+# 2026-09-24 JVS (修正用の半分のみ) で見つけた現行誤読
+
+[[case]]
+input = "仙台へ行って、とんぼ返りで戻ってきました。"
+mode = "hiragana"
+expected = "せんだいへいって、とんぼがえりでもどってきました。"
+
+[[case]]
+input = "資金不足のため"
+mode = "hiragana"
+expected = "しきんぶそくのため"
+
+[[case]]
+input = "運動不足で人手不足"
+mode = "hiragana"
+expected = "うんどうぶそくでひとでぶそく"
+
+[[case]]
+input = "四つ葉のクローバー"
+mode = "hiragana"
+expected = "よつばのクローバー"
+
+[[case]]
+input = "猿を抱きかかえていた"
+mode = "hiragana"
+expected = "さるをだきかかえていた"
+
+[[case]]
+input = "いったい何なのか"
+mode = "hiragana"
+expected = "いったいなんなのか"
+
+[[case]]
+input = "年をとり、身体も不自由"
+mode = "hiragana"
+expected = "としをとり、からだもふじゆう"
+
+[[case]]
+input = "１世紀以上になる"
+mode = "hiragana"
+expected = "いっせいきいじょうになる"
+
+[[case]]
+input = "8世紀の二十一世紀"
+mode = "hiragana"
+expected = "はっせいきのにじゅういっせいき"
