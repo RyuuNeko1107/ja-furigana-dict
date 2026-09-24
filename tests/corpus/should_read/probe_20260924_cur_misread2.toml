@@ -792,3 +792,23 @@ expected = "おぐらしんでんのじょうしゅ"
 input = "深海少女だ"
 mode = "hiragana"
 expected = "しんかいしょうじょだ"
+
+[[case]]
+input = "会津松平家が誕生"
+mode = "hiragana"
+expected = "あいづまつだいらけがたんじょう"
+
+[[case]]
+input = "戦いの最中に"
+mode = "hiragana"
+expected = "たたかいのさいちゅうに"
+
+[[case]]
+input = "百年戦争の最中"
+mode = "hiragana"
+expected = "ひゃくねんせんそうのさいちゅう"
+
+[[case]]
+input = "姫路新田藩"
+mode = "hiragana"
+expected = "ひめじしんでんはん"
