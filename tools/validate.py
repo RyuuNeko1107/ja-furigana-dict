@@ -543,6 +543,17 @@ def validate_counters(path: Path, errors: Errors) -> None:
                         path, f"counter.'{c}'.specials.'{k}' = '{v}' (ひらがな または 全角カタカナ)"
                     )
 
+        # not_before (lib 0.4.8+): 直後がこの文字列で始まる時は counter 候補を出さない。 空文字は全部に当たるので禁止
+        nb = rule.get('not_before')
+        if nb is not None and (
+            not isinstance(nb, list) or not all(isinstance(x, str) and x for x in nb)
+        ):
+            errors.add_for(path, f"counter.'{c}'.not_before = {nb!r} (空でない文字列の配列で書いてください)")
+
+        st = rule.get('scale_trailing')
+        if st is not None and not isinstance(st, bool):
+            errors.add_for(path, f"counter.'{c}'.scale_trailing = {st!r} (true / false で書いてください)")
+
         # 連濁/促音化 (euphonic) ルールを持つ助数詞は kanji_numeral の明示を必須化する。
         # 理由: lib の try_counter_kanji は bare 漢数字 + 助数詞 (「六本」) を
         # `kanji_numeral = true` の助数詞でしか採用しない。euphonic rule があるのに

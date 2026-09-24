@@ -213,6 +213,17 @@ bare 形** (「五匹」 「六畳」) も counter 化される (default は fal
 lib 側 euphony が自動適用する。 flat 形式 (`simple.toml` の `"X" = "ヨミ"`) では
 書けないため、 opt-in する場合は `objects.toml` 等の table 形式へ移す。
 
+### counter の `not_before` (lib 0.4.8+)
+
+`[counter."X"]` table に `not_before = ["っ", "く"]` を書くと、 **直後がそのどれかで始まる時は
+counter 候補を出さない**。 助数詞の字が動詞の語幹も兼ねる時の衝突よけ
+(`行` = `["っ", "く", "け"]` で 「4000行って / 1000万行くな / 300万行ける」 を 行く の活用として読む。
+「3行で / 2行目 / 1行から / 5行こわい」 は助数詞のまま)。 大数 + 助数詞 (1000万行) では
+助数詞だけを外して数として読む。 古い lib はこの key を無視する (= 従来どおり counter 化)。
+
+`scale_trailing = false` (lib 0.4.8+、 既定 true) を書くと、 大数の後ろ (「1000万X」) の助数詞としては拾わない
+(flat 形式 `simple` の助数詞と同じ扱い)。 `simple` から table 形式へ移す時、 大数の後ろの挙動を変えないために使う。
+
 **適用先**:
 - `rules/numbers/counters/{objects,places,percent,time}.toml` — 各 counter (`本` / `匹` 等)
 - `rules/context/{homonyms,numbers,special}.toml` — 各 `[[rule]]` (surface 単位)
