@@ -13629,9 +13629,6 @@ reading = "よめ"
 next_starts_any = ["探", "見", "候", "来", "入", "欲", "募", "貰"]
 reading = "よめ"
 
-[[kanji.match]]
-next_char_type = "漢字"
-reading = "カ"
 
 
 [[kanji.match]]

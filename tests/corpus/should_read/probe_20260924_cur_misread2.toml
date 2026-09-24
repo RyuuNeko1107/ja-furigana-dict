@@ -812,3 +812,18 @@ expected = "ひゃくねんせんそうのさいちゅう"
 input = "姫路新田藩"
 mode = "hiragana"
 expected = "ひめじしんでんはん"
+
+[[case]]
+input = "キミの嫁自称もいってるよ"
+mode = "hiragana"
+expected = "キミのよめじしょうもいってるよ"
+
+[[case]]
+input = "嫁様に迎えに来てもらって"
+mode = "hiragana"
+expected = "よめさまにむかえにきてもらって"
+
+[[case]]
+input = "獄泉郷"
+mode = "hiragana"
+expected = "ごくせんきょう"
