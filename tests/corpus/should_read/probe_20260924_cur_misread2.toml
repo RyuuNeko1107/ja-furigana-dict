@@ -1252,3 +1252,18 @@ expected = "みはりにん"
 input = "何々法"
 mode = "hiragana"
 expected = "なになにほう"
+
+[[case]]
+input = "お目汚し失礼"
+mode = "hiragana"
+expected = "おめよごししつれい"
+
+[[case]]
+input = "純一の嫁"
+mode = "hiragana"
+expected = "じゅんいちのよめ"
+
+[[case]]
+input = "朽葉さん"
+mode = "hiragana"
+expected = "くちばさん"
