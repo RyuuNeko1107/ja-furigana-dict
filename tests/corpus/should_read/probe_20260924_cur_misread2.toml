@@ -647,3 +647,58 @@ expected = "きょかやとどけでにくわえて"
 input = "石油元売各社"
 mode = "hiragana"
 expected = "せきゆもとうりかくしゃ"
+
+[[case]]
+input = "関数が返す値を確認"
+mode = "hiragana"
+expected = "かんすうがかえすあたいをかくにん"
+
+[[case]]
+input = "戻り値の型"
+mode = "hiragana"
+expected = "もどりちのかた"
+
+[[case]]
+input = "ストレス値が高い"
+mode = "hiragana"
+expected = "ストレスちがたかい"
+
+[[case]]
+input = "言い値で買います"
+mode = "hiragana"
+expected = "いいねでかいます"
+
+[[case]]
+input = "大量に売ると値が下がるから"
+mode = "hiragana"
+expected = "たいりょうにうるとねがさがるから"
+
+[[case]]
+input = "ガソリン値が下がる"
+mode = "hiragana"
+expected = "ガソリンねがさがる"
+
+[[case]]
+input = "秘密鍵を削除"
+mode = "hiragana"
+expected = "ひみつかぎをさくじょ"
+
+[[case]]
+input = "家の鍵をなくした"
+mode = "hiragana"
+expected = "いえのかぎをなくした"
+
+[[case]]
+input = "行末の改行"
+mode = "hiragana"
+expected = "ぎょうまつのかいぎょう"
+
+[[case]]
+input = "容易に想像できる"
+mode = "hiragana"
+expected = "よういにそうぞうできる"
+
+[[case]]
+input = "容易く倒せる"
+mode = "hiragana"
+expected = "たやすくたおせる"
