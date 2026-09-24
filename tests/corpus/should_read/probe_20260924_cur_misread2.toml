@@ -897,3 +897,33 @@ expected = "ひとくちめからw"
 input = "二口目"
 mode = "hiragana"
 expected = "ふたくちめ"
+
+[[case]]
+input = "9月頭に涼しく"
+mode = "hiragana"
+expected = "くがつあたまにすずしく"
+
+[[case]]
+input = "来月頭くらいかな"
+mode = "hiragana"
+expected = "らいげつあたまくらいかな"
+
+[[case]]
+input = "元夫は別の女性と"
+mode = "hiragana"
+expected = "もとおっとはべつのじょせいと"
+
+[[case]]
+input = "上田綺世さん"
+mode = "hiragana"
+expected = "うえだあやせさん"
+
+[[case]]
+input = "今世で積んでるよ"
+mode = "hiragana"
+expected = "こんせでつんでるよ"
+
+[[case]]
+input = "今世紀最大"
+mode = "hiragana"
+expected = "こんせいきさいだい"
