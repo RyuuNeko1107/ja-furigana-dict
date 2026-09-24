@@ -1317,3 +1317,33 @@ expected = "こうすいだすので"
 input = "居心地よさそう"
 mode = "hiragana"
 expected = "いごこちよさそう"
+
+[[case]]
+input = "現状手一杯な気がする"
+mode = "hiragana"
+expected = "げんじょうていっぱいなきがする"
+
+[[case]]
+input = "煽らないのw"
+mode = "hiragana"
+expected = "あおらないのw"
+
+[[case]]
+input = "ゲーム選びむずそう"
+mode = "hiragana"
+expected = "ゲームえらびむずそう"
+
+[[case]]
+input = "恋愛してる場合じゃない"
+mode = "hiragana"
+expected = "れんあいしてるばあいじゃない"
+
+[[case]]
+input = "監督代行きたな"
+mode = "hiragana"
+expected = "かんとくだいこうきたな"
+
+[[case]]
+input = "街灯に当たる"
+mode = "hiragana"
+expected = "がいとうにあたる"
