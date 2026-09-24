@@ -737,3 +737,38 @@ expected = "ほうが"
 input = "押上方面行のダイヤ"
 mode = "hiragana"
 expected = "おしあげほうめんゆきのダイヤ"
+
+[[case]]
+input = "まだ作ってる最中"
+mode = "hiragana"
+expected = "まだつくってるさいちゅう"
+
+[[case]]
+input = "最中を食べた"
+mode = "hiragana"
+expected = "もなかをたべた"
+
+[[case]]
+input = "気を遣ってくれた"
+mode = "hiragana"
+expected = "きをつかってくれた"
+
+[[case]]
+input = "気遣ってくれた"
+mode = "hiragana"
+expected = "きづかってくれた"
+
+[[case]]
+input = "助けて遣ってくれ"
+mode = "hiragana"
+expected = "たすけてやってくれ"
+
+[[case]]
+input = "幸子は云った"
+mode = "hiragana"
+expected = "さちこはいった"
+
+[[case]]
+input = "人が集って来た"
+mode = "hiragana"
+expected = "ひとがあつまってきた"

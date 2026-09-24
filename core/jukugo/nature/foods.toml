@@ -566,6 +566,11 @@ next_eq_any = ["に", "だ", "で"]
 reading = "サイチュウ"
 next_starts_any = ["だった", "です", "であ"]
 
+# 動詞・形容詞の後 (している最中 / 縫い最中) と漢語の後 (合戦最中) は さいちゅう
+[[entries."最中".match]]
+reading = "サイチュウ"
+prev_ends_any = ["る", "た", "い", "だ"]
+
 [[entries."最中".alt]]
 reading = "サイチュウ"
 sense = "in-the-middle-of"

@@ -156,7 +156,7 @@ expected = "おおぜいでくずてつがあおったのもあるからおた�
 [[case]]
 input = "滾ってる最中なんでねw"
 mode = "hiragana"
-expected = "たぎってるもなかなんでねw"
+expected = "たぎってるさいちゅうなんでねw"
 
 [[case]]
 input = "血が滾る"
