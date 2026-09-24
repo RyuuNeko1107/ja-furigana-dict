@@ -270,3 +270,60 @@ expected = "オレンジさんきらいになれん"
 input = "負けず嫌いが出てる"
 mode = "hiragana"
 expected = "まけずぎらいがでてる"
+
+# 2026-09-24 公開 API ログ再生 (現行 vs own の食い違い) で own 正だった現行誤読
+
+[[case]]
+input = "私学級閉鎖になったし"
+mode = "hiragana"
+expected = "わたしがっきゅうへいさになったし"
+
+[[case]]
+input = "空中で早替えできたらな"
+mode = "hiragana"
+expected = "くうちゅうではやがえできたらな"
+
+[[case]]
+input = "善人さん入ってきましたけどw"
+mode = "hiragana"
+expected = "ぜんにんさんはいってきましたけどw"
+
+[[case]]
+input = "桐葉菓買わなかったの!"
+mode = "hiragana"
+expected = "とうようかかわなかったの!"
+
+[[case]]
+input = "ワン二郎はうるさいですよねw"
+mode = "hiragana"
+expected = "ワンじろうはうるさいですよねw"
+
+[[case]]
+input = "行くけど先行ってて"
+mode = "hiragana"
+expected = "いくけどさきいってて"
+
+[[case]]
+input = "ストライク先行って上書きされるんか"
+mode = "hiragana"
+expected = "ストライクせんこうってうわがきされるんか"
+
+[[case]]
+input = "ドパ出んかった"
+mode = "hiragana"
+expected = "ドパでんかった"
+
+[[case]]
+input = "せめて倍満作ってくれ"
+mode = "hiragana"
+expected = "せめてばいまんつくってくれ"
+
+[[case]]
+input = "嫌なピン位置きた"
+mode = "hiragana"
+expected = "いやなピンいちきた"
+
+[[case]]
+input = "創作料理ってあるので"
+mode = "hiragana"
+expected = "そうさくりょうりってあるので"
