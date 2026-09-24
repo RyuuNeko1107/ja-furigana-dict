@@ -827,3 +827,28 @@ expected = "よめさまにむかえにきてもらって"
 input = "獄泉郷"
 mode = "hiragana"
 expected = "ごくせんきょう"
+
+[[case]]
+input = "首元とか見ればいいよ"
+mode = "hiragana"
+expected = "くびもととかみればいいよ"
+
+[[case]]
+input = "手羽元の唐揚げ"
+mode = "hiragana"
+expected = "てばもとのからあげ"
+
+[[case]]
+input = "全部白になった"
+mode = "hiragana"
+expected = "ぜんぶしろになった"
+
+[[case]]
+input = "赤白帽子"
+mode = "hiragana"
+expected = "あかしろぼうし"
+
+[[case]]
+input = "乳白色"
+mode = "hiragana"
+expected = "にゅうはくしょく"
