@@ -702,3 +702,38 @@ expected = "よういにそうぞうできる"
 input = "容易く倒せる"
 mode = "hiragana"
 expected = "たやすくたおせる"
+
+[[case]]
+input = "ご祝儀袋に入れる"
+mode = "hiragana"
+expected = "ごしゅうぎぶくろにいれる"
+
+[[case]]
+input = "有袋類"
+mode = "hiragana"
+expected = "ゆうたいるい"
+
+[[case]]
+input = "ピケの元嫁"
+mode = "hiragana"
+expected = "ピケのもとよめ"
+
+[[case]]
+input = "責任転嫁"
+mode = "hiragana"
+expected = "せきにんてんか"
+
+[[case]]
+input = "ギャップ萌"
+mode = "hiragana"
+expected = "ギャップもえ"
+
+[[case]]
+input = "萌芽"
+mode = "hiragana"
+expected = "ほうが"
+
+[[case]]
+input = "押上方面行のダイヤ"
+mode = "hiragana"
+expected = "おしあげほうめんゆきのダイヤ"

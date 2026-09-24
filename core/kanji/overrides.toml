@@ -11118,7 +11118,7 @@ reading = "よみがえ"
 # 動詞 「萌える」 は okurigana 列挙で 「も」 へ切替 (= 「萌え」 dominant)
 [[kanji]]
 char = "萌"
-default = "ホウ"
+default = "もえ"
 
 # 「萌える/萌えた/萌えて/萌えれば/萌え (= 名詞)」 = 動詞 → も
 [[kanji.match]]
@@ -13622,7 +13622,7 @@ reading = "よめ"
 
 [[kanji.match]]
 prev_char_type = "漢字"
-reading = "カ"
+reading = "よめ"
 
 # ★2026-09-14: 嫁 + 訓動詞語幹 / 和語 = よめ (嫁探し 45 / 嫁候補 / 嫁見つけ)
 [[kanji.match]]
@@ -17776,7 +17776,7 @@ reading = "ふくろ"
 
 [[kanji.match]]
 prev_char_type = "漢字"
-reading = "タイ"
+reading = "ぶくろ"
 
 # 「ビニール袋 / レジ袋 / プラ袋」 等 カタカナ prev = 連濁「ぶくろ」
 [[kanji.match]]
