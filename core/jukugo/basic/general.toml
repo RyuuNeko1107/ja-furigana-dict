@@ -10511,6 +10511,11 @@ reading = "オミキ"
 [entries."お札"]
 reading = "オフダ"
 
+# 金額の話 (小さい金額のお札 / 千円札) は おさつ
+[[entries."お札".match]]
+input_contains_any = ["金額", "円", "両替", "財布", "紙幣", "お釣", "崩", "ATM", "新札", "ピン札", "偽札", "払", "レジ"]
+reading = "オサツ"
+
 [entries."御祈祷"]
 reading = "ゴキトウ"
 

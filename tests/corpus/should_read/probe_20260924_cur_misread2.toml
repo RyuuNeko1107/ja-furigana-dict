@@ -1007,3 +1007,58 @@ expected = "いのうえはると"
 input = "上坂樹里"
 mode = "hiragana"
 expected = "こうさかじゅり"
+
+[[case]]
+input = "暑い中ご苦労さまです"
+mode = "hiragana"
+expected = "あついなかごくろうさまです"
+
+[[case]]
+input = "話し合い中"
+mode = "hiragana"
+expected = "はなしあいちゅう"
+
+[[case]]
+input = "品揃えいいね"
+mode = "hiragana"
+expected = "しなぞろえいいね"
+
+[[case]]
+input = "七色に分解される"
+mode = "hiragana"
+expected = "なないろにぶんかいされる"
+
+[[case]]
+input = "留置場に送られた"
+mode = "hiragana"
+expected = "りゅうちじょうにおくられた"
+
+[[case]]
+input = "両替機にお札残ってる"
+mode = "hiragana"
+expected = "りょうがえきにおさつのこってる"
+
+[[case]]
+input = "神社のお札"
+mode = "hiragana"
+expected = "じんじゃのおふだ"
+
+[[case]]
+input = "どの位置からも"
+mode = "hiragana"
+expected = "どのいちからも"
+
+[[case]]
+input = "先進国中"
+mode = "hiragana"
+expected = "せんしんこくちゅう"
+
+[[case]]
+input = "フブ島さん"
+mode = "hiragana"
+expected = "フブしまさん"
+
+[[case]]
+input = "諺にもある"
+mode = "hiragana"
+expected = "ことわざにもある"
