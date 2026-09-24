@@ -253,3 +253,20 @@ expected = "ねんだいもにかよってますからね"
 input = "普通っちゃ普通"
 mode = "hiragana"
 expected = "ふつうっちゃふつう"
+
+# 2026-09-24 ひらがな語 + 嫌い (述語) = きらい
+
+[[case]]
+input = "こいつ嫌いだわ"
+mode = "hiragana"
+expected = "こいつきらいだわ"
+
+[[case]]
+input = "オレンジさん嫌いになれん"
+mode = "hiragana"
+expected = "オレンジさんきらいになれん"
+
+[[case]]
+input = "負けず嫌いが出てる"
+mode = "hiragana"
+expected = "まけずぎらいがでてる"
