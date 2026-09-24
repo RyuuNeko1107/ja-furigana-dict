@@ -1157,3 +1157,53 @@ expected = "こがたロケットのしゃじょう"
 input = "大戸を下ろす"
 mode = "hiragana"
 expected = "おおどをおろす"
+
+[[case]]
+input = "代理人受任届の提出"
+mode = "hiragana"
+expected = "だいりにんじゅにんとどけのていしゅつ"
+
+[[case]]
+input = "退部届出すレベル"
+mode = "hiragana"
+expected = "たいぶとどけだすレベル"
+
+[[case]]
+input = "過払金が生じた"
+mode = "hiragana"
+expected = "かばらいきんがしょうじた"
+
+[[case]]
+input = "異国船打払令"
+mode = "hiragana"
+expected = "いこくせんうちはらいれい"
+
+[[case]]
+input = "仮払消費税"
+mode = "hiragana"
+expected = "かりばらいしょうひぜい"
+
+[[case]]
+input = "乗馬靴"
+mode = "hiragana"
+expected = "じょうばぐつ"
+
+[[case]]
+input = "今靴グチョ濡れ"
+mode = "hiragana"
+expected = "いまくつグチョぬれ"
+
+[[case]]
+input = "鉄粉"
+mode = "hiragana"
+expected = "てっぷん"
+
+[[case]]
+input = "係止穴"
+mode = "hiragana"
+expected = "けいしあな"
+
+[[case]]
+input = "別して不届"
+mode = "hiragana"
+expected = "べっしてふとどき"
