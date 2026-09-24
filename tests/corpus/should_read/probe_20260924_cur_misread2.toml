@@ -882,3 +882,18 @@ expected = "ぎんこちゃん"
 input = "天海祐希"
 mode = "hiragana"
 expected = "あまみゆうき"
+
+[[case]]
+input = "初月無料"
+mode = "hiragana"
+expected = "しょげつむりょう"
+
+[[case]]
+input = "一口目からw"
+mode = "hiragana"
+expected = "ひとくちめからw"
+
+[[case]]
+input = "二口目"
+mode = "hiragana"
+expected = "ふたくちめ"
