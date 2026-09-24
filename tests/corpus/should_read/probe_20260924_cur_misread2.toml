@@ -1062,3 +1062,58 @@ expected = "フブしまさん"
 input = "諺にもある"
 mode = "hiragana"
 expected = "ことわざにもある"
+
+[[case]]
+input = "研修棟は廃止"
+mode = "hiragana"
+expected = "けんしゅうとうははいし"
+
+[[case]]
+input = "隣の棟に"
+mode = "hiragana"
+expected = "となりのむねに"
+
+[[case]]
+input = "菅前総理"
+mode = "hiragana"
+expected = "すがまえそうり"
+
+[[case]]
+input = "菅直人"
+mode = "hiragana"
+expected = "かんなおと"
+
+[[case]]
+input = "国民の生命、身体、財産を守る"
+mode = "hiragana"
+expected = "こくみんのせいめい、しんたい、ざいさんをまもる"
+
+[[case]]
+input = "身体が痛い"
+mode = "hiragana"
+expected = "からだがいたい"
+
+[[case]]
+input = "留置施設"
+mode = "hiragana"
+expected = "りゅうちしせつ"
+
+[[case]]
+input = "九条二項を削除"
+mode = "hiragana"
+expected = "きゅうじょうにこうをさくじょ"
+
+[[case]]
+input = "与那国"
+mode = "hiragana"
+expected = "よなぐに"
+
+[[case]]
+input = "西村さん、世耕さん"
+mode = "hiragana"
+expected = "にしむらさん、せこうさん"
+
+[[case]]
+input = "山添拓君"
+mode = "hiragana"
+expected = "やまぞえたくくん"

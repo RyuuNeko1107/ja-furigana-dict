@@ -15359,6 +15359,11 @@ reading = "しい"
 char = "棟"
 default = "トウ"
 
+# ★2026-09-25: 研修棟は / 宿泊棟を = とう (漢字の後は助詞前でも むね にしない)
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "トウ"
+
 [[kanji.match]]
 next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も"]
 reading = "むね"
@@ -21951,6 +21956,11 @@ char = "菅"
 default = "すげ"
 
 # 「菅さん」 = 姓 (政治家等) の「すが」。 菅笠/小菅/菅原 は default すげ・jukugo のまま
+# ★2026-09-25: 菅前総理 / 菅官房長官 / 菅政権 = すが (菅直人 = かん は熟語 entry)
+[[kanji.match]]
+next_starts_any = ["前総理", "元総理", "総理", "官房", "首相", "前首相", "元首相", "政権", "内閣", "義偉", "氏", "前", "元"]
+reading = "すが"
+
 [[kanji.match]]
 next_starts_any = ["さん"]
 reading = "すが"

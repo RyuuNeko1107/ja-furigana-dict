@@ -407,6 +407,11 @@ reading = "クジョウ"
 prev_ends_any = ["第", "法"]
 reading = "キュウジョウ"
 
+# 憲法 / 条項 の話 (九条二項 / 九条を変える) = きゅうじょう
+[[entries."九条".match]]
+input_contains_any = ["憲法", "改憲", "護憲", "九条の会", "一項", "二項", "三項", "条文", "第十条", "十条", "八条"]
+reading = "キュウジョウ"
+
 [[entries."九条".match]]
 next_starts_any = ["は"]
 reading = "クジョウ"
