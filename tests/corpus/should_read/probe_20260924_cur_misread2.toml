@@ -1422,3 +1422,43 @@ expected = "おなかすいた"
 input = "一人になるや否や"
 mode = "hiragana"
 expected = "ひとりになるやいなや"
+
+[[case]]
+input = "何時も見守ってるよ"
+mode = "hiragana"
+expected = "いつもみまもってるよ"
+
+[[case]]
+input = "灌木の茂った斜面"
+mode = "hiragana"
+expected = "かんぼくのしげったしゃめん"
+
+[[case]]
+input = "悲喜交々"
+mode = "hiragana"
+expected = "ひきこもごも"
+
+[[case]]
+input = "元和5年"
+mode = "hiragana"
+expected = "げんなごねん"
+
+[[case]]
+input = "転生捕手"
+mode = "hiragana"
+expected = "てんせいほしゅ"
+
+[[case]]
+input = "往生際悪くて草"
+mode = "hiragana"
+expected = "おうじょうぎわわるくてくさ"
+
+[[case]]
+input = "衣摺加美北駅"
+mode = "hiragana"
+expected = "きずりかみきたえき"
+
+[[case]]
+input = "諫言を不快に思った"
+mode = "hiragana"
+expected = "かんげんをふかいにおもった"
