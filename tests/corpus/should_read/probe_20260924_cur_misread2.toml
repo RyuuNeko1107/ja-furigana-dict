@@ -1117,3 +1117,43 @@ expected = "にしむらさん、せこうさん"
 input = "山添拓君"
 mode = "hiragana"
 expected = "やまぞえたくくん"
+
+[[case]]
+input = "犬養内閣"
+mode = "hiragana"
+expected = "いぬかいないかく"
+
+[[case]]
+input = "堀北真希"
+mode = "hiragana"
+expected = "ほりきたまき"
+
+[[case]]
+input = "辻元清美さん"
+mode = "hiragana"
+expected = "つじもときよみさん"
+
+[[case]]
+input = "谷繁は広島出身"
+mode = "hiragana"
+expected = "たにしげはひろしましゅっしん"
+
+[[case]]
+input = "一橋大学"
+mode = "hiragana"
+expected = "ひとつばしだいがく"
+
+[[case]]
+input = "球磨川第一橋梁"
+mode = "hiragana"
+expected = "くまがわだいいちきょうりょう"
+
+[[case]]
+input = "小型ロケットの射場"
+mode = "hiragana"
+expected = "こがたロケットのしゃじょう"
+
+[[case]]
+input = "大戸を下ろす"
+mode = "hiragana"
+expected = "おおどをおろす"

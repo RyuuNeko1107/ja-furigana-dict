@@ -381,7 +381,7 @@ expected = "しゅくんしょう"
 [[case]]
 input = "張本勲"
 mode = "hiragana"
-expected = "ちょうほんくん"
+expected = "はりもといさお"
 
 [[case]]
 input = "襟足切った?"

@@ -26,7 +26,7 @@ expected = "なおまだこれでしょきゅうである"
 [[case]]
 input = "外崎と木浪もいれば尚最高"
 mode = "hiragana"
-expected = "そとざきときなみもいればなおさいこう"
+expected = "とのさきときなみもいればなおさいこう"
 
 [[case]]
 input = "尚さっきの行動は・・・"
