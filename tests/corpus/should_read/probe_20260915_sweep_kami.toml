@@ -38,7 +38,7 @@ expected = "がっこうにかよってる"
 [[case]]
 input = "会話が通ってるじゃん"
 mode = "hiragana"
-expected = "かいわがかよってるじゃん"
+expected = "かいわがとおってるじゃん"
 
 [[case]]
 input = "小野妹子"

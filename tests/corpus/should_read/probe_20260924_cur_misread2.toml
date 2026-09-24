@@ -216,3 +216,40 @@ expected = "ふだんづかいでもじゅくれんどはいるからね"
 input = "足の引っ張り合いになるぞw"
 mode = "hiragana"
 expected = "あしのひっぱりあいになるぞw"
+
+# 2026-09-24 通っ = とおっ 既定 + 通う先・「に〜て」 だけ かよっ
+
+[[case]]
+input = "申請が通ってるの?"
+mode = "hiragana"
+expected = "しんせいがとおってるの?"
+
+[[case]]
+input = "ちゃんと火通ってる?"
+mode = "hiragana"
+expected = "ちゃんとひとおってる?"
+
+[[case]]
+input = "旗の間通ってね"
+mode = "hiragana"
+expected = "はたのあいだとおってね"
+
+[[case]]
+input = "学校通ってないよ"
+mode = "hiragana"
+expected = "がっこうかよってないよ"
+
+[[case]]
+input = "教習所に通ってないのに"
+mode = "hiragana"
+expected = "きょうしゅうじょにかよってないのに"
+
+[[case]]
+input = "年代も似通ってますからね"
+mode = "hiragana"
+expected = "ねんだいもにかよってますからね"
+
+[[case]]
+input = "普通っちゃ普通"
+mode = "hiragana"
+expected = "ふつうっちゃふつう"
