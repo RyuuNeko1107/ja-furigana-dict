@@ -927,3 +927,33 @@ expected = "こんせでつんでるよ"
 input = "今世紀最大"
 mode = "hiragana"
 expected = "こんせいきさいだい"
+
+[[case]]
+input = "白身魚のフライ"
+mode = "hiragana"
+expected = "しろみざかなのフライ"
+
+[[case]]
+input = "葉物野菜"
+mode = "hiragana"
+expected = "はものやさい"
+
+[[case]]
+input = "相葉雅紀"
+mode = "hiragana"
+expected = "あいばまさき"
+
+[[case]]
+input = "三葉虫"
+mode = "hiragana"
+expected = "さんようちゅう"
+
+[[case]]
+input = "空芯菜炒め"
+mode = "hiragana"
+expected = "くうしんさいいため"
+
+[[case]]
+input = "陽菜ちゃん"
+mode = "hiragana"
+expected = "ひなちゃん"

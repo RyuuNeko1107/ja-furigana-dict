@@ -198,7 +198,7 @@ description = "難読姓 (苗字) の読み (姓単体、代表読み)"
 "源田" = { reading = "ゲンタ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "ゲンダ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 "澤崎" = { reading = "サワサキ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "サワザキ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 "瓜田" = { reading = "カデン", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "ウリタ" } ] }  # 姓 (suffix match、 default = 一般語読み)
-"相葉" = { reading = "アイヨウ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "アイバ" } ] }  # 姓 (suffix match、 default = 一般語読み)
+"相葉" = "アイバ"  # 姓 (一般語 あいよう はほぼ使われないので default を姓に)
 "真下" = { reading = "マシタ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "マシモ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 "真殿" = { reading = "マトノ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "マドノ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 "石松" = { reading = "ヒカゲノカズラ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "イシマツ" } ] }  # 姓 (suffix match、 default = 一般語読み)
