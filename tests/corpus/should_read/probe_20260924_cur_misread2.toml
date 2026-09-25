@@ -1922,3 +1922,33 @@ expected = "ついちゃう"
 input = "激アツ過ぎん"
 mode = "hiragana"
 expected = "げきアツすぎん"
+
+[[case]]
+input = "拗らせるとここまで"
+mode = "hiragana"
+expected = "こじらせるとここまで"
+
+[[case]]
+input = "姉御呼び"
+mode = "hiragana"
+expected = "あねごよび"
+
+[[case]]
+input = "攻め型やね"
+mode = "hiragana"
+expected = "せめがたやね"
+
+[[case]]
+input = "城島リーダー"
+mode = "hiragana"
+expected = "じょうしまリーダー"
+
+[[case]]
+input = "日本語って美しい"
+mode = "hiragana"
+expected = "にほんごってうつくしい"
+
+[[case]]
+input = "もう一回生成して"
+mode = "hiragana"
+expected = "もういっかいせいせいして"
