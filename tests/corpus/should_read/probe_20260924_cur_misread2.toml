@@ -1817,3 +1817,108 @@ expected = "そこまでいっておらん"
 input = "東京に行っております"
 mode = "hiragana"
 expected = "とうきょうにいっております"
+
+[[case]]
+input = "降り始めからの総降水量"
+mode = "hiragana"
+expected = "ふりはじめからのそうこうすいりょう"
+
+[[case]]
+input = "修業年限は二年"
+mode = "hiragana"
+expected = "しゅうぎょうねんげんはにねん"
+
+[[case]]
+input = "花嫁修業"
+mode = "hiragana"
+expected = "はなよめしゅぎょう"
+
+[[case]]
+input = "同日付け"
+mode = "hiragana"
+expected = "どうじつづけ"
+
+[[case]]
+input = "度重なる方針変更"
+mode = "hiragana"
+expected = "たびかさなるほうしんへんこう"
+
+[[case]]
+input = "地層の重なり"
+mode = "hiragana"
+expected = "ちそうのかさなり"
+
+[[case]]
+input = "経験は非常に活かせる"
+mode = "hiragana"
+expected = "けいけんはひじょうにいかせる"
+
+[[case]]
+input = "本人の申出により"
+mode = "hiragana"
+expected = "ほんにんのもうしでにより"
+
+[[case]]
+input = "戦艦大和"
+mode = "hiragana"
+expected = "せんかんやまと"
+
+[[case]]
+input = "北方謙三"
+mode = "hiragana"
+expected = "きたかたけんぞう"
+
+[[case]]
+input = "天王寺"
+mode = "hiragana"
+expected = "てんのうじ"
+
+[[case]]
+input = "片方だけ"
+mode = "hiragana"
+expected = "かたほうだけ"
+
+[[case]]
+input = "如何ですか"
+mode = "hiragana"
+expected = "いかがですか"
+
+[[case]]
+input = "豊作だね"
+mode = "hiragana"
+expected = "ほうさくだね"
+
+[[case]]
+input = "令和元年八月一日"
+mode = "hiragana"
+expected = "れいわがんねんはちがつついたち"
+
+[[case]]
+input = "八月一日さん"
+mode = "hiragana"
+expected = "ほずみさん"
+
+[[case]]
+input = "第一章第一節"
+mode = "hiragana"
+expected = "だいいっしょうだいいっせつ"
+
+[[case]]
+input = "第七節"
+mode = "hiragana"
+expected = "だいななせつ"
+
+[[case]]
+input = "平家建"
+mode = "hiragana"
+expected = "ひらやだて"
+
+[[case]]
+input = "着いちゃう"
+mode = "hiragana"
+expected = "ついちゃう"
+
+[[case]]
+input = "激アツ過ぎん"
+mode = "hiragana"
+expected = "げきアツすぎん"

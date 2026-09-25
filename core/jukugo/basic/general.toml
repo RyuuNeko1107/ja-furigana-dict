@@ -4479,7 +4479,7 @@ description = "二字・三字の一般熟語 (季節 / 行事 / 慣用句 含�
 "太身" = "フトミ"
 "麻袋" = "[アサブ]クロ"
 "中っ腹" = "ナカッパラ"
-"日付け" = "[ヒヅケ"
+"日付け" = { reading = "[ヒヅケ", match = [ { prev_ends_any = ["同", "即", "翌", "当", "前", "本", "同"], reading = "ジツヅケ" }, { prev_ends_any = ["二", "三", "四", "五", "六", "七", "八", "九", "十"], reading = "ニチヅケ" } ] }  # ★2026-09-25 同日付け=どうじつづけ / 二十六日付け=にちづけ (省庁)
 "取り得" = "トリエ"
 "一晩" = "ヒトバン"
 "二晩" = "フタバン"
@@ -8142,8 +8142,8 @@ reading = "デンワチョウ"
 [entries."網袋"]
 reading = "アミブクロ"
 
-[entries."布袋"]
-reading = "ヌノブクロ"
+[entries."布袋"]  # ★2026-09-25 布袋尊 / 布袋寅泰 = ほてい (ぬのぶくろ は稀)
+reading = "ホテイ"
 
 [entries."革袋"]
 reading = "カワブクロ"
@@ -12239,12 +12239,12 @@ reading = "メイザン"
 sense = "remnant-literary"
 weight = 5
 
-[entries."一節"]
-reading = "ヒトフシ"
+[entries."一節"]  # ★2026-09-25 第一節 / 論文の一節 = いっせつ が主 (法令・青空・Wikipedia)
+reading = "イッセツ"
 
 [[entries."一節".alt]]
-reading = "イッセツ"
-sense = "one-passage"
+reading = "ヒトフシ"
+sense = "one-phrase-of-song"
 weight = 35
 
 [entries."木目"]
@@ -12876,6 +12876,11 @@ reading = "みずどり"
 
 [entries."如何"]  
 reading = "[イカ]ン"
+
+# ★2026-09-25 配信: 「如何ですか」「如何でしょう」 = いかが
+[[entries."如何".match]]
+next_starts_any = ["です", "でしょ", "でした", "だった", "っすか", "かな"]
+reading = "イカガ"
 
 [[entries."如何".match]]
 next_starts_any = ["に", "の"]
