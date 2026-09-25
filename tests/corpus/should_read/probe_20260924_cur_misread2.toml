@@ -1702,3 +1702,118 @@ expected = "とくやまえき"
 input = "長江文明"
 mode = "hiragana"
 expected = "ちょうこうぶんめい"
+
+[[case]]
+input = "上杉謙信"
+mode = "hiragana"
+expected = "うえすぎけんしん"
+
+[[case]]
+input = "大府市"
+mode = "hiragana"
+expected = "おおぶし"
+
+[[case]]
+input = "桟橋方面行きのホーム"
+mode = "hiragana"
+expected = "さんばしほうめんゆきのホーム"
+
+[[case]]
+input = "猪口邦子"
+mode = "hiragana"
+expected = "いのぐちくにこ"
+
+[[case]]
+input = "小海線"
+mode = "hiragana"
+expected = "こうみせん"
+
+[[case]]
+input = "武豊線"
+mode = "hiragana"
+expected = "たけとよせん"
+
+[[case]]
+input = "茂木敏充"
+mode = "hiragana"
+expected = "もてぎとしみつ"
+
+[[case]]
+input = "常盤台"
+mode = "hiragana"
+expected = "ときわだい"
+
+[[case]]
+input = "安城市"
+mode = "hiragana"
+expected = "あんじょうし"
+
+[[case]]
+input = "木津川"
+mode = "hiragana"
+expected = "きづがわ"
+
+[[case]]
+input = "薬師如来"
+mode = "hiragana"
+expected = "やくしにょらい"
+
+[[case]]
+input = "八ヶ岳"
+mode = "hiragana"
+expected = "やつがたけ"
+
+[[case]]
+input = "東京大学駒場キャンパス"
+mode = "hiragana"
+expected = "とうきょうだいがくこまばキャンパス"
+
+[[case]]
+input = "高遠城"
+mode = "hiragana"
+expected = "たかとおじょう"
+
+[[case]]
+input = "高遠な理想"
+mode = "hiragana"
+expected = "こうえんなりそう"
+
+[[case]]
+input = "後藤新平"
+mode = "hiragana"
+expected = "ごとうしんぺい"
+
+[[case]]
+input = "出水市"
+mode = "hiragana"
+expected = "いずみし"
+
+[[case]]
+input = "取手二高"
+mode = "hiragana"
+expected = "とりでにこう"
+
+[[case]]
+input = "谷中霊園"
+mode = "hiragana"
+expected = "やなかれいえん"
+
+[[case]]
+input = "テーマとして行ったもの"
+mode = "hiragana"
+expected = "テーマとしておこなったもの"
+
+[[case]]
+input = "セットで行っております"
+mode = "hiragana"
+expected = "セットでおこなっております"
+
+[[case]]
+input = "そこまで行っておらん"
+mode = "hiragana"
+expected = "そこまでいっておらん"
+
+[[case]]
+input = "東京に行っております"
+mode = "hiragana"
+expected = "とうきょうにいっております"
