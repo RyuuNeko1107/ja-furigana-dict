@@ -1667,3 +1667,38 @@ expected = "ふじさんえき"
 input = "高い志を抱いて"
 mode = "hiragana"
 expected = "たかいこころざしをいだいて"
+
+[[case]]
+input = "郡上八幡"
+mode = "hiragana"
+expected = "ぐじょうはちまん"
+
+[[case]]
+input = "愛知県犬山市"
+mode = "hiragana"
+expected = "あいちけんいぬやまし"
+
+[[case]]
+input = "上総"
+mode = "hiragana"
+expected = "かずさ"
+
+[[case]]
+input = "土方歳三"
+mode = "hiragana"
+expected = "ひじかたとしぞう"
+
+[[case]]
+input = "浅見光彦"
+mode = "hiragana"
+expected = "あさみみつひこ"
+
+[[case]]
+input = "徳山駅"
+mode = "hiragana"
+expected = "とくやまえき"
+
+[[case]]
+input = "長江文明"
+mode = "hiragana"
+expected = "ちょうこうぶんめい"

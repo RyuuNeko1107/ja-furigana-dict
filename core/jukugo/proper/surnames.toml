@@ -163,7 +163,7 @@ description = "難読姓 (苗字) の読み (姓単体、代表読み)"
 "古泉" = { reading = "コイズミ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "コイズミ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 "吉松" = { reading = "ヨシマツ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "ヨシマツ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 "名波" = { reading = "ナナミ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "ナナミ" } ] }  # 姓 (suffix match、 default = 一般語読み)
-"土方" = { reading = "ドカタ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "ヒジカタ" } ] }  # 姓 (suffix match、 default = 一般語読み)
+"土方" = "ヒジカタ"  # ★2026-09-25 default 姓に flip (Wikipedia で 土方歳三 等が どかた だった)
 "堀北" = { reading = "ホリキタ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "ホリキタ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 "堂上" = { reading = "ドウジョウ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "ドノウエ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 "外崎" = { reading = "トノサキ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "トノサキ" } ] }  # 姓 (suffix match、 default = 一般語読み)
@@ -215,7 +215,7 @@ description = "難読姓 (苗字) の読み (姓単体、代表読み)"
 "達川" = { reading = "タツカワ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "タツカワ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 "里崎" = { reading = "サトザキ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "サトザキ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 "阿比留" = { reading = "アビル", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "アビル" } ] }  # 姓 (suffix match、 default = 一般語読み)
-"高見" = { reading = "コウケン", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "タカミ" } ] }  # 姓 (suffix match、 default = 一般語読み)
+"高見" = "タカミ"  # ★2026-09-25 default 姓 / 高見の見物 の タカミ に flip (こうけん は稀)
 "鷲頭" = { reading = "ワシズ", match = [ { next_starts_any = ["さん", "くん", "ちゃん", "君", "様", "氏", "先生", "選手", "監督", "議員"], reading = "ワシズ" } ] }  # 姓 (suffix match、 default = 一般語読み)
 
 # ★2026-09-13 人物マーカー probe (「Xさん / X選手 / X投手」 の直前に来る漢字語を
