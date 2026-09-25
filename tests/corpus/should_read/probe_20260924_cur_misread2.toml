@@ -1952,3 +1952,53 @@ expected = "にほんごってうつくしい"
 input = "もう一回生成して"
 mode = "hiragana"
 expected = "もういっかいせいせいして"
+
+[[case]]
+input = "今来たよ"
+mode = "hiragana"
+expected = "いまきたよ"
+
+[[case]]
+input = "ブチ切れ"
+mode = "hiragana"
+expected = "ぶちぎれ"
+
+[[case]]
+input = "有難う御座います"
+mode = "hiragana"
+expected = "ありがとうございます"
+
+[[case]]
+input = "スタミナ切れ"
+mode = "hiragana"
+expected = "すたみなぎれ"
+
+[[case]]
+input = "みこち愛してる"
+mode = "hiragana"
+expected = "みこちあいしてる"
+
+[[case]]
+input = "恋愛してる場合じゃない"
+mode = "hiragana"
+expected = "れんあいしてるばあいじゃない"
+
+[[case]]
+input = "差が開いてってるね"
+mode = "hiragana"
+expected = "さがひらいてってるね"
+
+[[case]]
+input = "何も出来ずに"
+mode = "hiragana"
+expected = "なにもできずに"
+
+[[case]]
+input = "焼肉食べたい"
+mode = "hiragana"
+expected = "やきにくたべたい"
+
+[[case]]
+input = "予想通りすぎる"
+mode = "hiragana"
+expected = "よそうどおりすぎる"
