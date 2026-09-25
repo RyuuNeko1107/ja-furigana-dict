@@ -11160,7 +11160,7 @@ next_eq_any = ["がある", "がない", "がつく", "がつかない"]
 
 [[entries."分別".match]]
 reading = "フンベツ"
-next_starts_any = ["くさ"]
+next_starts_any = ["くさ", "があ", "がな", "がつ", "のあ", "のな", "のつ"]
 
 [[entries."分別".alt]]
 reading = "フンベツ"
@@ -11637,8 +11637,8 @@ reading = "ショウニン"
 sense = "child-ticket"
 weight = 30
 
-[entries."悪口"]
-reading = "ワルクチ"
+[entries."悪口"]  # ★2026-09-25 Tatoeba: わるぐち が 17 件
+reading = "ワルグチ"
 
 [[entries."悪口".alt]]
 reading = "アッコウ"

@@ -1547,3 +1547,68 @@ expected = "おおいたちほうきしょうだい"
 input = "前日夜の段階"
 mode = "hiragana"
 expected = "ぜんじつよるのだんかい"
+
+[[case]]
+input = "彼女が他人の悪口を言う"
+mode = "hiragana"
+expected = "かのじょがたにんのわるぐちをいう"
+
+[[case]]
+input = "彼は今家にいます"
+mode = "hiragana"
+expected = "かれはいまいえにいます"
+
+[[case]]
+input = "明日は大切な日だ"
+mode = "hiragana"
+expected = "あしたはたいせつなひだ"
+
+[[case]]
+input = "ほんの数ページしか読まなかった"
+mode = "hiragana"
+expected = "ほんのすうページしかよまなかった"
+
+[[case]]
+input = "彼女は大の苦手だ"
+mode = "hiragana"
+expected = "かのじょはだいのにがてだ"
+
+[[case]]
+input = "タメ口でいいよ"
+mode = "hiragana"
+expected = "タメぐちでいいよ"
+
+[[case]]
+input = "送り仮名が間違ってる"
+mode = "hiragana"
+expected = "おくりがながまちがってる"
+
+[[case]]
+input = "疑問を抱いている"
+mode = "hiragana"
+expected = "ぎもんをいだいている"
+
+[[case]]
+input = "帽子を被った"
+mode = "hiragana"
+expected = "ぼうしをかぶった"
+
+[[case]]
+input = "本を何周も読む"
+mode = "hiragana"
+expected = "ほんをなんしゅうもよむ"
+
+[[case]]
+input = "具体的な日米の協力"
+mode = "hiragana"
+expected = "ぐたいてきなにちべいのきょうりょく"
+
+[[case]]
+input = "積雪深"
+mode = "hiragana"
+expected = "せきせつしん"
+
+[[case]]
+input = "口止め料"
+mode = "hiragana"
+expected = "くちどめりょう"
