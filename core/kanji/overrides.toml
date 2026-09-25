@@ -4064,6 +4064,16 @@ default = "シ"
 prev_eq = "の"
 reading = "こころざし"
 
+# 前が漢字 (細野豪志 / 高志 / 大志 等の名前・熟語の分割) は シ のまま
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "シ"
+
+# ★2026-09-25 Wikipedia: 高い志を抱いて / 志を同じく / 志が高い / 志半ば = こころざし (1 字 token で助詞が続く時)
+[[kanji.match]]
+next_starts_any = ["を", "が", "は", "も", "に", "と", "半"]
+reading = "こころざし"
+
 [[kanji]]
 char = "快"
 default = "カイ"

@@ -1622,3 +1622,48 @@ expected = "はけいデータをかいせき"
 input = "大文字、小文字、数字"
 mode = "hiragana"
 expected = "おおもじ、こもじ、すうじ"
+
+[[case]]
+input = "三河への対処"
+mode = "hiragana"
+expected = "みかわへのたいしょ"
+
+[[case]]
+input = "島津氏と対立"
+mode = "hiragana"
+expected = "しまづしとたいりつ"
+
+[[case]]
+input = "城内二の丸"
+mode = "hiragana"
+expected = "じょうないにのまる"
+
+[[case]]
+input = "城内大臣の所信"
+mode = "hiragana"
+expected = "きうちだいじんのしょしん"
+
+[[case]]
+input = "大坂湾"
+mode = "hiragana"
+expected = "おおさかわん"
+
+[[case]]
+input = "琉球の中山王"
+mode = "hiragana"
+expected = "りゅうきゅうのちゅうざんおう"
+
+[[case]]
+input = "中山間地域"
+mode = "hiragana"
+expected = "ちゅうさんかんちいき"
+
+[[case]]
+input = "富士山駅"
+mode = "hiragana"
+expected = "ふじさんえき"
+
+[[case]]
+input = "高い志を抱いて"
+mode = "hiragana"
+expected = "たかいこころざしをいだいて"
