@@ -1492,3 +1492,58 @@ expected = "おぬしポップコーンたべない"
 input = "キーと値のペア"
 mode = "hiragana"
 expected = "キーとあたいのペア"
+
+[[case]]
+input = "御嶽山の噴火"
+mode = "hiragana"
+expected = "おんたけさんのふんか"
+
+[[case]]
+input = "口永良部島の噴火"
+mode = "hiragana"
+expected = "くちのえらぶじまのふんか"
+
+[[case]]
+input = "松代群発地震"
+mode = "hiragana"
+expected = "まつしろぐんぱつじしん"
+
+[[case]]
+input = "災害廃棄物の仮置場"
+mode = "hiragana"
+expected = "さいがいはいきぶつのかりおきば"
+
+[[case]]
+input = "院卒者"
+mode = "hiragana"
+expected = "いんそつしゃ"
+
+[[case]]
+input = "干潟面積"
+mode = "hiragana"
+expected = "ひがためんせき"
+
+[[case]]
+input = "電気式床暖房"
+mode = "hiragana"
+expected = "でんきしきゆかだんぼう"
+
+[[case]]
+input = "極渦が安定せず"
+mode = "hiragana"
+expected = "きょくうずがあんていせず"
+
+[[case]]
+input = "除湿機の出番"
+mode = "hiragana"
+expected = "じょしつきのでばん"
+
+[[case]]
+input = "大分地方気象台"
+mode = "hiragana"
+expected = "おおいたちほうきしょうだい"
+
+[[case]]
+input = "前日夜の段階"
+mode = "hiragana"
+expected = "ぜんじつよるのだんかい"
