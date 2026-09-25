@@ -1612,3 +1612,13 @@ expected = "せきせつしん"
 input = "口止め料"
 mode = "hiragana"
 expected = "くちどめりょう"
+
+[[case]]
+input = "波形データを解析"
+mode = "hiragana"
+expected = "はけいデータをかいせき"
+
+[[case]]
+input = "大文字、小文字、数字"
+mode = "hiragana"
+expected = "おおもじ、こもじ、すうじ"
