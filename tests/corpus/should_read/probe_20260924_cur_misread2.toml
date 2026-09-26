@@ -2112,3 +2112,23 @@ expected = "わらった"
 input = "爆笑"
 mode = "hiragana"
 expected = "ばくしょう"
+
+[[case]]
+input = "通常盤は"
+mode = "hiragana"
+expected = "つうじょうばんは"
+
+[[case]]
+input = "神功皇后"
+mode = "hiragana"
+expected = "じんぐうこうごう"
+
+[[case]]
+input = "三郎は"
+mode = "hiragana"
+expected = "さぶろうは"
+
+[[case]]
+input = "負け越し"
+mode = "hiragana"
+expected = "まけこし"
