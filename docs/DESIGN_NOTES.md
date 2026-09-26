@@ -174,6 +174,7 @@ regex も POS も対応しない。 なぜ?
 | literal prefix | — | `next_starts` / `next_starts_any` | `next2_starts_any` |
 | 文字種 | `prev_char_type` | `next_char_type` | — |
 | 述語 | `prev_month` | `next_digit` | — |
+| 文スコープ | `input_contains_any` (入力文全体の部分一致、 位置非依存、 lib 0.4.0〜 / ADR-0010) |||
 
 ### 採用しなかったもの + 理由
 
@@ -209,10 +210,12 @@ regex も POS も対応しない。 なぜ?
 
 #### 距離指定 (= `prev_within_N` / `next_within_N`)
 
-- **理由**: 0.3.0+ 検討中、 現時点では 1 / 2 token lookup (= prev / next /
-  next2) で足りる pragmatic 判断
-- **将来**: vocabulary 拡張は spec 改訂を伴うので [scoring-engine.md](../docs/PROPOSALS/scoring-engine.md)
-  proposal で議論
+- **理由**: 隣接 token (prev / next / next2) で届かない 「話題」 による読み分けは、
+  lib 0.4.0 で採用した文スコープ条件 `input_contains_any` (ADR-0010) で扱う。
+  N token 以内のような距離指定は導入していない
+- **将来**: vocabulary 拡張は spec 改訂を伴うので lib 側
+  [scoring-engine.md](https://github.com/RyuuNeko1107/ja-furigana/blob/master/docs/PROPOSALS/scoring-engine.md)
+  proposal / ADR で議論
 
 ### 結論: 「セキュリティ + 保守性 = vocabulary を絞る」 が現方針
 
@@ -276,7 +279,8 @@ regex も POS も対応しない。 なぜ?
 - `tools/import_from_production.py` で upstream production DB から initial seed
   投入 (= 「最初の 5 万件」)
 - それ以降の追加 / 修正は **人手 PR** が前提
-- 機械的な大量追加 (= web scrape / LLM 生成) は **PR で reject**
+- 機械生成 (= 生成 tool / LLM 候補 / 外部辞書からの変換) は **tool + 回帰確認
+  (validate + corpus + 実文 A/B) を伴う場合のみ** 受け付ける。 未検証の大量追加は reject
 
 ### 理由
 

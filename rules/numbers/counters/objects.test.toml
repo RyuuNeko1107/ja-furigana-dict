@@ -1,4 +1,4 @@
-# inline test for rules/counters/objects.toml
+# inline test for rules/numbers/counters/objects.toml
 #
 # CI 専用 (tools/test_inline_rules.py が binary で input → expected を検証)。
 # lib loader は file 名 match で skip + release tar からも exclude、

@@ -8,7 +8,7 @@
 
 ## バージョン体系
 
-**CalVer (`vYYYY.MM.DD`)** を採用。 daily-release.yml が JST 03:00 に自動 tag。
+**CalVer (`vYYYY.MM.DD`)** を採用。 daily-release.yml が JST 00:00 (cron、 実行は GitHub の遅延で数時間後。 2026-09-24 までは JST 03:00) に自動 tag。
 CalVer 採用理由:
 - 辞書はデータ累積が本質で breaking 概念が薄い
 - daily auto-release との直感的対応 (今日の release = 今日の date)

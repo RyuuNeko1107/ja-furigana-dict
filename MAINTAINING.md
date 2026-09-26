@@ -11,7 +11,8 @@
 
 `.github/workflows/daily-release.yml` が JST 00:00 に走り (実行は GitHub の遅延で 2〜3 時間後)、core/ または rules/ への
 変更が前回 tag 以降にあれば **`v<YYYY.MM.DD>` (CalVer) tag を自動で打つ**。
-そのまま `release.yml` が catch して tar.gz + sha256 を GitHub Releases に upload。
+続けて同 workflow が `release.yml` を **`workflow_call` で明示呼び出し** して GitHub Release を作る
+(GITHUB_TOKEN で push した tag は他 workflow の push trigger を起動しないため)。
 
 つまり TOML 編集 → master push → 翌 JST 00:00 (実行は数時間遅れ) → 利用者が `furigana dict pull` で取得、
 の流れで maintainer の手動操作は不要。
@@ -36,30 +37,37 @@ gh release view "v$TODAY" --repo RyuuNeko1107/ja-furigana-dict
 同日に既に release があれば suffix を付ける (`v2026.05.08.1`, `.2` …)。
 daily-release workflow も自動で衝突回避するので、衝突は起きないはず。
 
-## upstream (ryuuneko.com production DB) から seed を再投入
+## upstream (production DB) から seed を再投入
 
-upstream で新熟語が追加された場合:
+upstream で新熟語が追加された場合。 接続先 (ssh host / postgres container / DB user /
+DB name) は repo に書かず、 環境変数で渡す:
 
 ```sh
-# 1. upstream から TSV を export
-ssh debian "docker exec kuroneko-postgres psql -U zunda -d kuroneko_cms \
-  -t -A -F$'\t' -c \"COPY (SELECT character, reading FROM furigana_unihan \
-  ORDER BY character) TO STDOUT\"" > tools/seed/unihan.tsv
-# (jukugo / compat も同様、tools/import_from_production.py のコメント参照)
+# 1. upstream から TSV を export (tools/seed/ は gitignore 対象)
+export FURIGANA_SEED_SSH_HOST=<ssh-host>
+export FURIGANA_SEED_PG_CONTAINER=<postgres-container>
+export FURIGANA_SEED_DB_USER=<db-user>
+export FURIGANA_SEED_DB_NAME=<db-name>
+mkdir -p tools/seed
+for k in unihan jukugo compat; do
+  python3 tools/import_from_production.py --print-export-cmd "$k" > /tmp/export_$k.sh
+  sh /tmp/export_$k.sh > tools/seed/$k.tsv
+done
 
-# 2. import script を回す
+# 2. import script を回す (まず --dry-run で件数と conflict を確認)
+python3 tools/import_from_production.py --dry-run
 python3 tools/import_from_production.py
-# → core/unihan/<水準>.toml (水準別) / core/jukugo/<genre>/<file>.toml /
-#   core/compat.toml が更新される
+# → 新規の単漢字は core/unihan/<水準>.toml、 新規の熟語は core/_inbox.toml、
+#   異体字は rules/compat.toml に入る。 既存 key の読み違いは conflict として報告のみ
+#   (--overwrite で simple entry だけ本番優先で上書き)
 
-# 3. 振り分け再実行 (単漢字 → unihan、四字熟語 → four_char、地名 → place_names)
-python3 tools/classify_jukugo.py --apply
+# 3. core/_inbox.toml に入った熟語を genre file (core/jukugo/<genre>/) へ人手で振り分ける
 
 # 4. validate
 python3 tools/validate.py
 
 # 5. commit (release は daily-release.yml が翌 JST 00:00 以降に自動)
-git add core/
+git add core/ rules/
 git commit -m "data: upstream から seed 再投入 (unihan X / jukugo Y / compat Z)"
 git push origin master
 # 即時 release が必要なら手動で:
@@ -76,7 +84,8 @@ git push origin master
 push / PR / workflow_dispatch で 4 つの並列 job が走り、 master の **required status
 checks** として branch protection から監視されている:
 
-1. **TOML 構文チェック (taplo)** — 全 `*.toml` のパース可能性
+1. **TOML 構文チェック (taplo)** — `core/*.toml` / `rules/*.toml` (各 dir 直下のみ、
+   sub-dir 配下は対象外) のパース可能性。 sub-dir 配下の構文は validate.py の tomllib 読込で検出
 2. **スキーマ + カタカナ検証 (validate.py)**:
    - 各ファイルの構造 (`[entries]` / `[map]` / `[[entry]]` / `[[rule]]` 等) 必須
    - reading が ひらがな or 全角カタカナ + 長音 + 中点 のみ
@@ -95,14 +104,19 @@ checks** として branch protection から監視されている:
 の push / PR merge が branch protection で reject される。
 
 ### Release (`release.yml`)
-- `v*` tag push で `furigana-dict-<tag>.tar.gz` + `.sha256` を GitHub Releases に upload
-- 中身は `core/` + `rules/` の 2 階層 (利用側 CLI で `data/` 1 階層に flatten 展開)
+- 起動: `v*` tag push / `workflow_dispatch` (tag 指定) / daily-release.yml からの `workflow_call`
+- asset: `furigana-dict-<tag>.tar.gz` + `.sha256`、 inline test だけを集めた
+  `furigana-dict-<tag>-tests.tar.gz` + `.sha256`、 前回 tag との差分 `furigana-dict-<tag>-DIFF.md`
+  (`tools/diff_release.py` 生成、 `docs/release-diffs/<tag>.md` にも保存)
+- 本体 tar の中身は `core/` + `rules/` の 2 階層 (`*.test.toml` / `README.md` は除外、
+  利用側 CLI で `data/` 1 階層に flatten 展開)
 - 想定 tag 形式は **CalVer (`vYYYY.MM.DD`)**、 同日 N 回目は `.1` / `.2` … suffix
-  (旧 v0.1.x semver tag は CalVer 移行時に削除済み)
+  (旧 semver tag は legacy の `v0.1.0` だけ残置)
 
 ### Daily auto-release (`daily-release.yml`)
 - JST 00:00 に cron 起動 (実行は 2〜3 時間遅れることがある)
-- 前回 tag 以降 core/ または rules/ に変更があれば、CalVer (`vYYYY.MM.DD`) tag を auto-commit
+- 前回 tag 以降 core/ または rules/ に変更があれば、CalVer (`vYYYY.MM.DD`) tag を打ち、
+  `release.yml` を `workflow_call` で呼んで release を作る (PAT 不要、 GITHUB_TOKEN のみ)
 - bot の `[skip stats]` commit は差分判定から除外 (STATS.md 更新だけでは release しない)
 - 同日複数 release は `vYYYY.MM.DD.1` / `.2` … で衝突回避
 

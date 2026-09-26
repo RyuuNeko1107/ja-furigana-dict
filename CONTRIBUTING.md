@@ -17,7 +17,7 @@ Rust 知識・Git クローン不要。
 | **熟語** (≥ 2 字 surface) | [`core/jukugo/<genre>/<file>.toml`](core/jukugo/) | genre 6 区分 (basic / humanities / nature / objects / proper / society)、 内訳は [STATS.md](STATS.md#熟語) |
 | **熟語 (genre 判断付かない)** | [`core/_inbox.toml`](core/_inbox.toml) | 一時 inbox、 maintainer が後で振り分け |
 | **単漢字** (1 字 surface) | [`core/unihan/<水準>.toml`](core/unihan/) | 5 水準 (joyo / jinmeiyou / jis_basic / jis_supplement / extension) |
-| **異体字 → 標準字** | [`core/compat.toml`](core/compat.toml) | lib Step 1 で入力テキストを正規化 |
+| **異体字 → 標準字** | [`rules/compat.toml`](rules/compat.toml) | lib Step 1 で入力テキストを正規化 |
 | **外来語** (英字始まり surface) | [`core/loanwords/<file>.toml`](core/loanwords/) | 4 file (english / general / it / romaji)、 完全一致 lookup |
 | **作品造語** (作品単位 1 ファイル) | [`core/works/<medium>/<title>.toml`](core/works/) | medium 4 区分 (anime / game / literature / vtuber)、 サブポリシー: [`core/works/README.md`](core/works/README.md) |
 | **助数詞ルール** | [`rules/numbers/counters/<file>.toml`](rules/numbers/counters/) | 7 file (objects / people / percent / places / recursive / simple / time)、 連濁 / 促音化 / kana 末尾置換 |
@@ -40,8 +40,8 @@ Rust 知識・Git クローン不要。
 
 ```sh
 git clone https://github.com/RyuuNeko1107/ja-furigana-dict
-cd furigana-dict
-# core/*.toml を編集
+cd ja-furigana-dict
+# core/ 配下の *.toml を編集
 git checkout -b add-readings
 git commit -am "add: 灰桜/黎明 等"
 gh pr create
@@ -61,7 +61,9 @@ description = "二字・三字の一般熟語"             # 1 行説明 (STATS.
 ```
 
 - **`[meta] schema_version = "2"`** が必須 (alpha.10〜、 ★A1b)。 既存 file に
-  既設、 新規 file 追加時は冒頭に必ず置く。 不在は CI の `validate.py` が fail。
+  既設、 新規 file 追加時は冒頭に必ず置く。 不在は CI の `validate.py` が fail
+  (ただし `rules/numbers/{days,scales,numeric_phrases}.toml` と `rules/text/*.toml` は
+  現状 validate.py の検査対象外なので、 手で確認する)。
 - **key (表層) と value (読み) は両方ダブルクォートで囲む**
 - **value は ひらがな または 全角カタカナ** のみ (半角カナ・ローマ字は不可)
   - 慣習: 訓読み = ひらがな / 音読み = カタカナ
@@ -96,22 +98,21 @@ reading = "カミテ"               # ...読みを "カミテ" に切替
 参照。 **品詞 (`pos`) ベースの matcher は採用しない** (Lindera 撤廃路線、 literal
 列挙 で代用)。
 
-### intonation bracket notation (forward compat、 0.2.0 で activate)
+### intonation bracket notation (accent)
 
-reading 内に accent marker (`[` 開始 / `]` accent peak / `/` phrase 区切り) を
-**0.1.0 から書ける** (= lib alpha.10 〜 0.1.0 stable では strip して無視、 0.2.0
-から activate):
+reading 内に accent marker を書ける (`[` = アクセント句の開始 / `]` = アクセント核の直後、
+ADR-0003)。 lib 0.2.0+ の accent 出力で使われ、 読み (kana) としては strip される。
+旧記法の `/` (句区切り) は **deprecated** (validate.py が警告) なので使わない:
 
 ```toml
-"上手" = "ジョ]ウズ"   # 1型 (頭高)
-"霧雨" = "キ[リサメ"   # 0型 (平板)
+"天気" = "[テ]ンキ"   # 1型 (頭高)。 `[` = 句頭、 `]` = 核 (直後で下がる)
+"霧雨" = "[キリサメ"  # 0型 (平板)
 ```
 
-詳細書き方は [`docs/SCHEMA.md` の bracket notation 節](docs/SCHEMA.md#intonation-bracket-notation-forward-compat-020-で-activate)
-参照。 0.2.0 で intonation 機能投入、 それまでに dict が bracket 付き reading を
-蓄積できる構造 (= forward compat)。
+詳細書き方は [`docs/SCHEMA.md` の bracket notation 節](docs/SCHEMA.md#intonation-bracket-notation-accent)
+参照。
 
-各 file の詳細スキーマ (counters / context / postprocess / loanwords 等の specific 構文) は
+各 file の詳細スキーマ (counters / `[[kanji]]` / postprocess / loanwords 等の specific 構文) は
 [`docs/SCHEMA.md`](docs/SCHEMA.md) を参照。
 
 ### NG
@@ -138,14 +139,16 @@ reading 内に accent marker (`[` 開始 / `]` accent peak / `/` phrase 区切�
 **自由に分割して構わない**:
 
 ```
-core/jukugo/
+core/jukugo/basic/
 ├── general.toml                # 既存
 ├── general_a.toml              # 「あ」始まりだけ別ファイルに分けたい場合
 └── general_ka.toml             # ...等
 ```
 
 - ファイル名は何でも構わない (lib は filename ソート順で全 toml を merge)
-- 同じ key を複数ファイルに書くと **後勝ち** (filename ソート後の最後が採用)
+- 同じ key を複数ファイルに書く場合は **読みを揃える** こと。 読みが異なると
+  `validate.py` の `check_jukugo_divergent_reading` が CI を fail させる
+  (同じ読みの重複は許容、 一覧は [STATS_DUPS.md](STATS_DUPS.md))
 - counters / `[[kanji]]` のように **複雑な構造の merge** が必要なものは `merge()` ロジックが
   lib 側にあるので「分け方」は自由
 
@@ -200,6 +203,5 @@ maintainer にあります**。
 
 ## 性能評価
 
-dict 改善の客観指標 (VOICEVOX engine 一致率) は [`docs/EVALUATION.md`](docs/EVALUATION.md)
-で公開しています。 baseline は定期更新され、 release 単位で「実際に良くなったか」
-を回帰テストとは別軸で確認できます。
+dict 改善の客観指標 (VOICEVOX engine 一致率) の記録は [`docs/EVALUATION.md`](docs/EVALUATION.md)
+にあります (2026-05 時点の計測で、 定期更新はしていません)。

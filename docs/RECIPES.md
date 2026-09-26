@@ -22,7 +22,7 @@ practical guide。 spec の正確な記述は [SCHEMA.md](SCHEMA.md)、 こち�
 - [助数詞 (= 数字 + 〜) を追加したい](#助数詞--数字--を追加したい)
 - [外来語 (英字 surface) を追加](#外来語-英字-surface-を追加)
 - [作品造語 (アニメ / ゲーム 固有読み)](#作品造語-アニメ--ゲーム-固有読み)
-- [intonation (アクセント) を書きたい](#intonation-アクセント-を書きたい-02-で-activate)
+- [intonation (アクセント) を書きたい](#intonation-アクセント-を書きたい)
 - [アンチパターン / よくある間違い](#アンチパターン--よくある間違い)
 
 ---
@@ -141,7 +141,7 @@ reading = "セイ"                # 念押し (default と同じ、 明示)
 **ポイント**:
 - `prev_ends_any`: 直前 token の **末尾** が list のいずれかに一致 (= 単純 endswith)
 - `next_starts_any`: 直後 token の **先頭** が list のいずれかに一致 (= 単純 startswith)
-- 「前の前」 は `next2_starts_any` (= 1 飛ばし参照、 例: 「人気が無い」 で idx+2 = 「無い」)
+- 「次の次」 は `next2_starts_any` (= 1 飛ばし参照、 例: 「人気が無い」 で idx+2 = 「無い」)
 
 ---
 
@@ -258,18 +258,18 @@ reading = "ナマ"
 
 ## 助数詞 (= 数字 + 〜) を追加したい
 
-**やりたい**: 新 counter 「語」 (= "3 語" → 「サンゴ」) を追加。
+**やりたい**: 促音化する counter (例: 「個」 = "3 個" → 「サンコ」、 "1 個" → 「イッコ」) を書く。
 
 **配置**: `rules/numbers/counters/<該当 file>.toml` (= objects / people / time 等から選ぶ)
 
 ```toml
-[counter."語"]
-default = "ゴ"
+[counter."個"]
+default = "コ"
 
-[[counter."語".rules]]
+[[counter."個".rules]]
 last_digit = [1, 6, 8, 0]      # 末尾数字が 1/6/8/10 のとき
-suffix = "ゴ"                  # 連濁無し
-sokuonize = true               # 「1 語 → イチゴ → イッゴ」 の促音化
+suffix = "コ"                  # 連濁無し
+sokuonize = true               # 「1 個 → イチコ → イッコ」 の促音化
 ```
 
 **やりたい**: 数字依存の特殊読み (= 「4 月 → シガツ」 のような数値 specials) を追加。
@@ -345,23 +345,22 @@ description = "東方 Project (上海アリス幻樂団 / 黄昏フロンティ�
 
 ---
 
-## intonation (アクセント) を書きたい (0.2.0 で activate)
+## intonation (アクセント) を書きたい
 
-**やりたい**: 「橋」 のアクセント (= 「ハ↘シ」、 = 1 型頭高) を表現。
+**やりたい**: 「天気」 のアクセント (= 「テ↘ンキ」、 1 型頭高) を表現。
 
 ```toml
 [entries]
-"橋" = "ハ]シ"     # ] の左がアクセント核
-"霧雨" = "キ[リサメ"  # [ から右が高、 末尾下降無し = 0 型平板
-"桜" = "サ[ク]ラ"   # 中高、 [ から上昇、 ] で下降
+"天気" = "[テ]ンキ"    # [ = アクセント句の先頭、 ] の左のモーラが核 (直後で下がる)
+"霧雨" = "[キリサメ"    # ] 無し = 0 型平板
+"卵" = "[タマ]ゴ"       # 中高 (2 型)
 ```
 
 **ポイント**:
-- `[`: phrase 開始 (= rise marker)、 0 型 (平板) と 中高 で使う
-- `]`: accent peak (= fall marker、 直後で 1 段下がる)、 1 型〜 (頭高 / 中高 / 尾高) で使う
-- `/`: phrase 区切り (= 「ハ[クレイ/レ[イム」 のような複合語の 2 phrase 表現)
-- **0.1.0 stable lib では strip して無視** (= reading に bracket 文字を残せる forward compat)
-- **0.2.0 stable で parse + 利用** (= AccentPhrase 出力 / TTS engine 連携)
+- `[`: アクセント句の開始 (最初のモーラの前に置く)。 複数句なら `[トウキョウ][ト]リツ` のように並べる
+- `]`: accent 核 (= 直後で 1 段下がる)、 各句に最大 1 個
+- `/` (旧: 句区切り) は **deprecated** (ADR-0003)、 validate.py が警告するので使わない
+- lib 0.2.0+ の accent 出力 (AccentPhrase / TTS engine 連携) で使われる。 読み (kana) としては strip
 - syntax check は `tools/validate.py` の `validate_bracket_syntax` で CI gate
 
 ---

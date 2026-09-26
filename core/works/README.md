@@ -43,6 +43,7 @@ seed しない (誤読リスク回避)」だった。 works/ ではこれを部�
 6. **TOML 形式は jukugo と同じ**
    ```toml
    [meta]
+   schema_version = "2"
    role = "works"
    description = "<作品名>: <概要>"
 
@@ -52,16 +53,16 @@ seed しない (誤読リスク回避)」だった。 works/ ではこれを部�
 7. **単漢字 (1 文字) は jukugo と同様に絶対に入れない**
    - validate.py が cross-file 重複として検出して fail させる
 8. **`core/jukugo/*` (一般読み) との競合時は一般読み優先**
-   - 同 surface が works と jukugo (specialized 等) の両方に登録されると lib 側 jukugo
-     loader で merge 時に後勝ちになる (genre dir 名 sort 順、 works が後)
-   - 競合に気付いた maintainer は **一般的な読みを残し、 works 側を作品固有読みのまま
-     残置 / 削除** を判断 (自動振り分けはしない)
+   - 同 surface を works と jukugo の両方に **異なる読み** で登録すると、 `validate.py` の
+     `check_jukugo_divergent_reading` が CI を fail させる (同じ読みの重複は許容)
+   - 競合したら一般的な読みを残し、 works 側の entry を削除する
+     (作品文脈でだけ読みを変えたい場合は `input_contains_any` 等の match 条件を検討)
 
 ## 現在の収録作品
 
-| ファイル | 作品 | 出典 |
-|---|---|---|
-| [`game/touhou.toml`](game/touhou.toml) | 東方Project | 上海アリス幻樂団 公式 |
+`anime/` / `game/` / `literature/` / `vtuber/` の 4 medium に約 85 ファイル。 一覧と件数は
+このディレクトリか [STATS.md の 作品造語 節](../../STATS.md#作品造語) を参照
+(STATS.md は master push のたびに自動再生成される)。
 
 ## 追加要望
 

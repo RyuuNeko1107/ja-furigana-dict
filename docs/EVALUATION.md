@@ -5,6 +5,9 @@
 
 > 戻る: [README.md](../README.md) / [CONTRIBUTING.md](../CONTRIBUTING.md)
 
+> **注意**: 本書の数値は 2026-05-14 時点の記録 (historical)。 以降は定期更新していない。
+> 現在の dict 品質の gate は `validate.py` + corpus 回帰テスト (`tests/corpus/`) で見る。
+
 ## 評価方針
 
 ja-furigana lib (= 辞書 + lib) の出力が、 **TTS engine として広く使われている
@@ -103,8 +106,8 @@ VOICEVOX 単体は dict 改善側で動かせない外部 baseline (= 同 corpus
 ## 更新ポリシー
 
 - **baseline**: 0.1.0 stable cut 時点 (= 2026-05-12) の数値を起点とする
-- **定期更新**: 月次 / もしくは major dict 改善 batch (= round) 後に再測定し、
-  この doc の数値表を append 形式で更新 (= 過去 baseline は履歴として残す)
+- **更新**: 当初は月次 / round 後の再測定を予定していたが、 2026-05-14 を最後に
+  更新していない (再測定した場合は数値表に append し、 過去 baseline は履歴として残す)
 - **train / verify 分離**: 改善 round の判定は train seed (= 改善時に diff を観た
   sample) と verify seed (= 改善後 fresh sample) の両方で測り、 over-fit を回避
 
@@ -166,13 +169,14 @@ VOICEVOX 正答率は両 batch で **92.87% で完全 invariant** (= 外部 base
 - 長音表記揺れ (= オ段オ vs オ段ウ): normalize 規則の微調整候補
 
 評価対象外:
-- ASCII 英字混在文 (= 0.2.0 loanwords 統合で評価対象化予定)
+- ASCII 英字混在文 (= 当時の評価対象外、 再評価は未実施)
 - 顔文字 / 記号 only (= 判定不能)
 
 ## 評価対象外 (= 既知の制約)
 
-- **ASCII alphabet を含む文**: ja-furigana lib は 0.1.0 時点で alphabet を読みに
-  展開しない (= 「PC = ピーシー」 等)。 0.2.0 で loanwords 統合後に評価対象化予定
+- **ASCII alphabet を含む文**: 計測時点 (lib 0.1.0) では alphabet を読みに
+  展開しなかった (= 「PC = ピーシー」 等) ため対象外。 その後 `core/loanwords/` で
+  英字 surface を読むようになったが、 この評価には未反映
 - **VOICEVOX engine 側の解析揺れ**: vv engine は「ヴィ → ビ」 のような特殊文字
   解釈で diverge する case あり (= vv 側仕様に由来、 vv 不正解と分類)
 - **同形異音語の文脈依存**: 文脈で正解が変わる surface (= 「方 = ホウ vs カタ」

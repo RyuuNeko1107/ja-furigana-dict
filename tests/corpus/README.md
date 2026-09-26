@@ -4,7 +4,8 @@
 読める / これは今は読めない / これは仕様上諦める」を切り分けて、回帰を起こさない
 ようにするための材料です。
 
-将来的に CI で自動回帰チェックする想定 (今は人が眺める材料)。
+ja-furigana (lib) 側の CI が、 この repo の master スナップショットに対して
+`tools/run_corpus.py` で自動回帰チェックしている (下記 「自動チェック」)。
 
 ## ファイル
 
@@ -142,12 +143,15 @@ ja-furigana lib 0.1.0-alpha.7 以降は **surface の文字種で reading 表記
 
 詳細仕様は [ja-furigana ARCHITECTURE.md#step-6](https://github.com/RyuuNeko1107/ja-furigana/blob/master/docs/ARCHITECTURE.md#step-6-の詳細-tokens_to_hiragana-の出力ルール-surface-文字種で分岐) を参照。
 
-## 自動チェック (将来)
+## 自動チェック
 
 ```sh
-# ja-furigana CLI を使って各 case を検証する script (未実装)
-python3 tools/run_corpus.py tests/corpus/should_read.toml
+# ローカル: ja-furigana CLI (furigana binary) で各 case を検証
+python3 tools/run_corpus.py tests/corpus/should_read.toml \
+  --binary path/to/furigana --data-dir path/to/data-dir
 ```
 
-PR 受付時に CI で `should_read.toml` の全 case が pass することを保証する
-仕組みを将来導入予定。
+`should_read.toml` を渡すと同名 dir `should_read/` 配下も併合して実行する。
+ja-furigana 側 `.github/workflows/ci.yml` の corpus job が、 dict master の `core/` `rules/`
+を flat な `data/` に並べて同じ command を走らせている (lib の push / PR で実行。
+この repo の PR では走らないので、 dict 変更時はローカルで確認する)。

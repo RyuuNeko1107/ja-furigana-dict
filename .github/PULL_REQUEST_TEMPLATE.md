@@ -1,6 +1,6 @@
 ## 追加 / 修正内容
 
-<!-- 例: core/jukugo/general.toml に「灰桜→ハイザクラ」「黎明→レイメイ」を追加 -->
+<!-- 例: core/jukugo/basic/four_char.toml に「一期一会→イチゴイチエ」を追加 -->
 
 ## エントリ詳細
 
@@ -16,7 +16,7 @@
 
 ## チェックリスト
 
-- [ ] 適切なファイルに追加した (`core/jukugo/<genre>/*.toml` / `core/unihan/<水準>.toml` / `core/compat.toml` / `core/loanwords/` / `core/works/` / 判断付かなければ [`core/_inbox.toml`](../core/_inbox.toml) でも OK)
+- [ ] 適切なファイルに追加した (`core/jukugo/<genre>/*.toml` / `core/unihan/<水準>.toml` / `rules/compat.toml` / `core/loanwords/` / `core/works/` / 判断付かなければ [`core/_inbox.toml`](../core/_inbox.toml) でも OK)
 - [ ] 読みは **ひらがな または 全角カタカナ** で書いた (慣習: 訓=ひら / 音=カタ)
 - [ ] key と value の両方を `"..."` で囲んだ
 - [ ] ファイル内で同じ key を二重登録していない
@@ -27,7 +27,8 @@
 ## 補足
 
 - ⚠️ **誤読をデフォルト化しない**: 商標 / 固有名詞のうち公的に認知されていない読みは追加しない方針
-- ⚠️ **文脈で読みが変わる語**: `core/jukugo/*` ではなく `rules/context/*.toml` で扱う
+- ⚠️ **文脈で読みが変わる語**: default 読みだけを登録せず、 `[[entries."x".match]]` (熟語) /
+  `[[kanji]]` block の `[[kanji.match]]` (単漢字) で文脈分岐を書く ([docs/SCHEMA.md](../docs/SCHEMA.md))
 - ⚠️ **古典的読みは現代読みが無い場合のみ** (TTS = 現代口頭用途を想定)
 - 判断に迷ったら `core/_inbox.toml` に置いてレビューで振り分けても OK
 - **AI ツール利用 OK** (= 読み候補列挙 / 例文 / 副作用検討 等)、 ただし

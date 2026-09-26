@@ -24,15 +24,15 @@ description = "二字・三字の一般熟語 (季節 / 行事 / 慣用句 含�
 - `schema_version`: **必須** (alpha.10〜、 lib が `[meta] schema_version = "2"`
   で受け入れ判定)。 不在 / `"1"` 等は明確 Validation error で reject。 旧
   旧 alpha era format dict (= field 不在) は受け付けない、 alpha.10 以降の dict release を使う。
-- `role`: `jukugo` / `unihan` / `works` / `loanwords` / `single_overrides` / `compat`
-  / `counters` / `context` / `postprocess` / `days` / `scales` / `units`
-  / `symbols` / `latin` / `numeric_phrases`
+- `role`: `jukugo` / `unihan` / `kanji` / `works` / `loanwords` / `compat`
+  / `counters` / `postprocess` / `days` / `scales` / `units` / `symbols`
+  / `numeric_phrases` (旧 `single_overrides` / `context` / `latin` は alpha.11 で廃止)
   - `[meta] role` 無しでも path-based fallback で動作 (旧 release 互換)
 - `description`: 1 行説明、 `tools/regen_stats.py` が STATS.md の用途列に取り込む
 
 ## 共通: `[entries]` block
 
-熟語 / 単漢字 / 外来語 / works / numeric_phrases / days / symbols / latin の各 file
+熟語 / 単漢字 / 外来語 / works / numeric_phrases / days / symbols の各 file
 は `[entries]` 配下に key = value で書く (基本形):
 
 ```toml
@@ -132,6 +132,26 @@ matcher が見る 「token」 は Lindera の形態素ではなく、 **入力�
 **Lindera 品詞 matcher (`pos`) は不採用** (Lindera 撤廃路線)、 「名詞の後 / 動詞の後」
 のような汎用条件は `prev_eq_any = ["階段", "段", "梯子"]` 等の literal 列挙で代用。
 
+### `alt` block — 同形異音語の候補列挙 (ADR-0004)
+
+`[[entries."x".alt]]` (単漢字は `[[kanji.alt]]`) で、 default 以外の読み候補を列挙できる。
+lib は候補をすべて emit し、 同 band 内で `weight` を加味して選ぶ (match block の hit は
+weight より強い)。 出力 token には `ambiguous` / `alternatives` として渡るので、
+消費側が自前モデルで選び直せる。
+
+```toml
+[entries."上手"]
+reading = "ジョウズ"
+
+[[entries."上手".alt]]
+reading = "カミテ"        # 必須 (kana)
+sense = "stage-left"      # 任意: 消費側向けのヒント (lib の scoring には使わない)
+weight = 30               # 任意: 相対頻度 0–100 の整数
+```
+
+`validate.py` は `reading` 必須 / `weight` の範囲 / 未知 key を検査する
+(matcher 条件 key も書けるが、 通常は上の 3 key のみ)。
+
 ### entry の並び順と TOML 構造の注意
 
 `[entries."X"]` (detailed entry) より **後** に bare simple entry
@@ -142,34 +162,35 @@ tomllib 準拠 tool からは見えず validate も検査できないため、 *
 この構造を error にする**。 simple entry は必ず file 先頭の `[entries]` zone
 (= 最初の detailed section より前) に書くこと。
 
-### intonation bracket notation (forward compat、 0.2.0 で activate)
+### intonation bracket notation (accent)
 
-reading 内に `[` / `]` / `/` の bracket marker を **0.1.0 から書ける** (= forward
-compat、 lib alpha.10〜 0.1.0 stable で reading から strip して無視、 0.2.0 で
-accent annotation として activate):
+reading 内に accent marker `[` / `]` を書ける (ADR-0003)。 `[` はアクセント句の先頭
+(最初のモーラの前)、 `]` は核 (直後で音が下がるモーラの後ろ) に置く。 lib 0.2.0+ の
+accent 出力 (`--mode=accent` 等) で使われ、 読み (kana) としては strip される:
 
 ```toml
 [entries]
-"上手" = "ジョ]ウズ"         # 1型 accent (頭高、 ジョが高くウで下降)
-"霧雨" = "キ[リサメ"         # 0型 (平板、 キが低くリで上昇後そのまま)
-"桜" = "サ[ク]ラ"            # 中高 (サが低くクで上昇、 ラで下降)
-"心" = "コ[コロ]"            # 尾高 (末尾モーラで下降)
+"天気" = "[テ]ンキ"           # 1型 (頭高、 テの後で下降)
+"霧雨" = "[キリサメ"          # 0型 (平板、 下降なし)
+"卵" = "[タマ]ゴ"             # 2型 (中高、 マの後で下降)
+"東京都立" = "[トウキョウ][ト]リツ"  # 複数アクセント句は `[` を並べる (ADR-0003 の例)
 
-[entries."紅魔館"]
-reading = "コ[ウマカン]"     # detailed entry の reading にも書ける
+[entries."上手"]
+reading = "[ジョウズ]"        # 3型 (尾高)。 detailed entry の reading にも書ける
 
-[[entries."紅魔館".match]]
-prev_eq = "東方"
-reading = "ハ[クレイ/レ[イム"  # 複数 phrase は `/` で区切る (= 2 phrase)
+[[entries."上手".match]]
+next_eq = "から"
+reading = "[カミテ"           # match 候補の reading にも書ける
 ```
 
 **書き方 rule** (`tools/validate.py` で CI check):
 
-- `[`: phrase 開始 (= rise marker)、 各 phrase 内 最大 1 個
-- `]`: accent peak (= fall marker、 直後で 1 段下がる)、 各 phrase 内 最大 1 個
-- `[` と `]` 両方ある場合は `[` が `]` より前 (= 順序強制)
-- `/`: phrase 区切り、 連続 `//` / 先頭 `/` / 末尾 `/` 不可 (= 空 phrase 禁止)
+- `[`: アクセント句の開始。 句ごとに 1 個 (複数句なら複数個)
+- `]`: accent 核 (= 直後で下がる)、 各句に最大 1 個 (無ければ平板 = 0型)
+- `]` があるのに `[` が無い reading は先頭に `[` が暗黙補完される (validate.py が警告)
 - bracket 文字を除いた reading 部分は通常通り **ひらがな または 全角カタカナ** のみ
+- **`/` (旧: アクセント句区切り) は deprecated** — 構文上は通るが validate.py が警告を出す。
+  使わないこと
 
 詳細仕様: lib 側 [`docs/PROPOSALS/intonation.md`](https://github.com/RyuuNeko1107/ja-furigana/blob/master/docs/PROPOSALS/intonation.md)。
 
@@ -179,12 +200,13 @@ reading = "ハ[クレイ/レ[イム"  # 複数 phrase は `/` で区切る (= 2 
 - `scales.toml`: `[[entry]]` array of tables (`kanji = X / kana = Y` の pair)
 - `compat.toml`: `[map]` dict (異体字 → 標準字 の正規化マップ)
 - `counters/*.toml`: `[counter."X"]` table + `[[counter."X".rules]]` array
-- `context/*.toml` / `postprocess.toml`: `[[rule]]` array of tables
+- `postprocess.toml`: `[[rule]]` array of tables
+- `core/kanji/*.toml`: `[[kanji]]` array of tables (後述)
 
 ## array marker 規約
 
 TOML の array of tables (`[[counter."X".rules]]` / `[[rule]]` / `[[rule.match]]`)
-は 1 つの logical block (= 1 個の counter / 1 個の context rule) が複数 table に
+は 1 つの logical block (= 1 個の counter) が複数 table に
 分散する。 これを視覚的に / programmatic に拾えるよう、 各 block を
 **`# === begin: <名前> ===` / `# === end: <名前> ===`** で囲む規約を採用している。
 
@@ -213,7 +235,7 @@ bare 形** (「五匹」 「六畳」) も counter 化される (default は fal
 lib 側 euphony が自動適用する。 flat 形式 (`simple.toml` の `"X" = "ヨミ"`) では
 書けないため、 opt-in する場合は `objects.toml` 等の table 形式へ移す。
 
-### counter の `not_before` (lib 0.4.8+)
+### counter の `not_before` (lib 0.5.0+)
 
 `[counter."X"]` table に `not_before = ["っ", "く"]` を書くと、 **直後がそのどれかで始まる時は
 counter 候補を出さない**。 助数詞の字が動詞の語幹も兼ねる時の衝突よけ
@@ -221,20 +243,18 @@ counter 候補を出さない**。 助数詞の字が動詞の語幹も兼ねる
 「3行で / 2行目 / 1行から / 5行こわい」 は助数詞のまま)。 大数 + 助数詞 (1000万行) では
 助数詞だけを外して数として読む。 古い lib はこの key を無視する (= 従来どおり counter 化)。
 
-`scale_trailing = false` (lib 0.4.8+、 既定 true) を書くと、 大数の後ろ (「1000万X」) の助数詞としては拾わない
+`scale_trailing = false` (lib 0.5.0+、 既定 true) を書くと、 大数の後ろ (「1000万X」) の助数詞としては拾わない
 (flat 形式 `simple` の助数詞と同じ扱い)。 `simple` から table 形式へ移す時、 大数の後ろの挙動を変えないために使う。
 
 **適用先**:
 - `rules/numbers/counters/{objects,places,percent,time}.toml` — 各 counter (`本` / `匹` 等)
-- `rules/context/{homonyms,numbers,special}.toml` — 各 `[[rule]]` (surface 単位)
 
 **適用しない**:
 - `rules/numbers/counters/{simple,people,recursive}.toml` — single-table / flat 構造で
   block 概念が無いため
 - `rules/numbers/days.toml` 等の `[entries]` 単一 table file
 
-`<名前>` には counter 名 (例: `本`) または `[[rule]]` の `surface` 値 (例: `上手`) を
-そのまま入れる。 file 内で重複しなければ良い。
+`<名前>` には counter 名 (例: `本`) をそのまま入れる。 file 内で重複しなければ良い。
 
 **Why**: TOML 仕様には「array of tables の論理的 block の終わり」 を明示する構文が
 ないため、 慣行コメントで補う。 PR diff レビュー時に block 範囲が一目で分かる /
@@ -251,13 +271,14 @@ counter 候補を出さない**。 助数詞の字が動詞の語幹も兼ねる
   特殊文脈読みを採録しても、 一般文脈で同じ surface が出てくる場合、 一般読みを残す
   方針 (自動振り分けはしないが、 maintainer review で判断)。 例: 作品固有の特殊読み
   「○○ → ××」 が一般語 「○○ → △△」 と衝突した場合、 一般読み △△ を維持し、
-  作品 file 側は削除 or 残置 (lib 側 merge は genre sort 順で works が後なので、
-  works 残置 + 同 entry 重複時は works が後勝ちで採用される点に注意)
+  作品 file 側からは削除する (jukugo / works / _inbox 間で同 surface の読みが異なると
+  `validate.py` の `check_jukugo_divergent_reading` が CI を fail させる)
 
 ## ファイル別: `core/_inbox.toml` — 分類前の一時 inbox
 
 ```toml
 [meta]
+schema_version = "2"
 role = "jukugo"
 description = "分類前の一時 inbox (≥2 字 surface、 内容が貯まったら適切な genre dir に振り分ける)"
 
@@ -301,6 +322,7 @@ nature / objects / proper / society 等)。 最新の dir 構成 / file 数 / �
 
 ```toml
 [meta]
+schema_version = "2"
 role = "jukugo"
 description = "二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む)"
 
@@ -310,7 +332,9 @@ description = "二字・三字の一般熟語 (季節 / 行事 / 慣用句 含�
 "曙光" = "ショコウ"
 ```
 
-判断に迷う場合は `general.toml` でも構わない (review で振り分け可能)。
+**新規 entry は該当する genre file に追加し、 判断に迷う場合は [`core/_inbox.toml`](../core/_inbox.toml)
+に置く** (review / maintainer の整理で振り分ける)。 `basic/general.toml` は肥大化しているため
+新規追加先にはしない。
 
 **制約**:
 - **単漢字 (1 字 surface) は jukugo に絶対追加しない** — `core/unihan/` 専用領域、
@@ -388,6 +412,7 @@ ja-furigana 側 chunks 階層 4.7 で **完全一致 lookup** (case-fold + 全�
 
 ```toml
 [meta]
+schema_version = "2"
 role = "loanwords"
 description = "IT 用語 / プログラミング言語 / OSS / クラウドサービス / 技術企業"
 
@@ -411,16 +436,17 @@ description = "IT 用語 / プログラミング言語 / OSS / クラウドサ�
 ## ファイル別: `rules/numbers/counters/` — 助数詞ルール
 
 サブディレクトリ内の `*.toml` 全てが自動 merge される。 ファイル名は何でも構わない。
+現在の分け方 (各 file の件数は [STATS.md](../STATS.md) 参照):
 
-| ファイル | 範囲 |
-|---|---|
-| `simple.toml` | 単純サフィックス助数詞 (`[simple]`) |
-| `time.toml` | 月 / 日 / 時 / 分 / 分半 / 週間 / 回 |
-| `people.toml` | 人 |
-| `objects.toml` | 本 / 匹 / 杯 / 個 / 歳 / 冊 |
-| `places.toml` | 階 / ヶ所 / 箇所 / か所 |
-| `percent.toml` | % / ％ |
-| `recursive.toml` | 目 (再帰モード) |
+| ファイル | 形式 | 範囲 |
+|---|---|---|
+| `simple.toml` | `[simple]` flat (`"円" = "エン"`) + 少数の `[counter."X"]` | 音便の無い単純サフィックス助数詞 (円 / 点 / 度 / 名 等) |
+| `objects.toml` | `[counter."X"]` table | 物・事を数える助数詞 (本 / 匹 / 杯 / 個 / 冊 / 軒 / 皿 / 試合 / 打席 等、 連濁・促音化あり) |
+| `time.toml` | `[counter."X"]` table | 時間系 (年 / ヶ月 / 月 / 日 / 時 / 分 / 週間 / 回 等、 4/7/9 の特殊読み + カナ末尾置換) |
+| `places.toml` | `[counter."X"]` table | 場所 (階 / ヶ所 / 箇所 / か所) |
+| `people.toml` | `[counter."X"]` table | 人 (1=ヒトリ / 2=フタリ) |
+| `percent.toml` | `[counter."X"]` table | % / ％ |
+| `recursive.toml` | 再帰モード | 目 (個目 / 階目 等、 既存助数詞解決後に末尾連結) |
 
 ### 連濁 / 促音化を持つ助数詞 (例: 「本」 / 「匹」)
 
@@ -467,18 +493,11 @@ kana_replace = { "ジュウ" = "ジッ" }   # 「ジュウフン」 → 「ジ�
 
 `kana_replace` は数値 surface 側の kana を rule マッチ時に置き換える (限定的、 必要時のみ)。
 
-## (廃止) `rules/context/` — entry inline match に統合済み (★A2 alpha.11)
+## (廃止) `rules/context/` / `core/single_overrides.toml` / `rules/text/latin.toml`
 
-旧 `rules/context/{homonyms,numbers,special}.toml` の `[[rule]]` / `[[rule.match]]`
-形式は **alpha.11 で entry inline match (= `[entries."X"]` + `[[entries."X".match]]`)
-に統合 + 削除完了**。 関連 dir + file は git 履歴上のみ残る。
-
-新 format での書き方は本 doc の
-[detailed entry section](#detailed-entry--inline-match-block-持ち-a2-alpha11) 参照。
-matcher vocabulary も entry inline match の table が正典。
-
-migration の経緯は git history 参照 (= alpha.11 期に rules/context/*.toml の
-51 surface を機械変換、 関連 1 回限り script は適用後削除済)。
+いずれも alpha.11 で削除済 (git 履歴上のみ残る)。 文脈依存の読み分けは
+entry inline match ([detailed entry](#detailed-entry--inline-match-block-持ち-a2-alpha11))
+か、 単漢字なら `[[kanji]]` block (下記 `core/kanji/`) で書く。
 
 ## ファイル別: `core/unihan/*.toml` — 単漢字フォールバック (水準別)
 
@@ -493,15 +512,39 @@ migration の経緯は git history 参照 (= alpha.11 期に rules/context/*.tom
 ```
 
 > 単漢字は文脈で読みが変わるため、**最も一般的な音/訓読み 1 つ** を採用。
-> 文脈依存が必要な場合は **新 format の `[[kanji]]` block** で書く
-> ([`core/kanji/*.toml`](../core/kanji/) 参照、 ★A2 alpha.11)。
-> 旧 format (`rules/context/*.toml` + `core/single_overrides.toml`) は alpha.11 で
-> entry inline match + `[[kanji]]` block に migration 完了 + 削除済。
+> 文脈依存が必要な場合は `[[kanji]]` block で書く (次節)。
 
-## ファイル別: `core/compat.toml` — 異体字 → 標準字
+## ファイル別: `core/kanji/` — 単漢字の default 上書き + 文脈分岐 (`[[kanji]]` block)
+
+1 字 surface の default reading を上書きし、 必要なら文脈で読みを切り替える
+(`core/kanji/overrides.toml`)。 unihan より優先される。 matcher vocabulary は
+entry inline match と同一で、 `[[kanji.alt]]` も書ける:
+
+```toml
+[meta]
+schema_version = "2"
+role = "kanji"
+
+[[kanji]]
+char = "上"                   # 1 字 surface (必須)
+default = "うえ"              # default reading (必須)
+
+[[kanji.match]]
+next_starts_any = ["がっ", "がる", "げ"]   # 上がって / 上がる / 上げる
+reading = "あ"
+```
+
+- `[[kanji.match]]` は TOML 出現順で第一 hit 採用 (entry inline match と同じ)
+- `next_char_type = "ひらがな"` / `prev_char_type = "ひらがな"` のような雑な指定は使わず、
+  送り仮名 / 助詞を literal で列挙する
+- `[[kanji]]` block を足したら、 同じ字の `core/unihan/*.toml` の行も消す
+  (unihan が残ると `validate.py` の cross-file 重複で fail する)
+
+## ファイル別: `rules/compat.toml` — 異体字 → 標準字
 
 「髙→高」のように、字形が違うが同じ漢字として扱いたい異体字の正規化マップ。
 エンジン側に他の compat 表は無いので、ここが正典 (上乗せではなく単独の出典)。
+lib は `rules_dir` を走査して `role = "compat"` を読むため、 core/ ではなく rules/ に置く。
 
 ```toml
 [map]
@@ -637,35 +680,30 @@ scale + 漢字単位 1 文字 (「1 万円」「3 億ドル」) を 1 chunk と�
 ## ファイル別: `rules/text/units.toml` — SI 単位 + 通貨 + %
 
 `[entries]` 配下に key = inline-table (`{ kana = "..." }`) で書く。 必要に応じて
-`ci = true` を付けると case-insensitive lookup になる:
+`ci` で大文字小文字の扱いを指定する (**既定は case-insensitive**、 区別したい entry だけ
+`ci = false` を付ける):
 
 ```toml
 [entries]
 "km" = { kana = "キロメートル" }
 "kg" = { kana = "キログラム" }
-"mL" = { kana = "ミリリットル", ci = true }
+"m"  = { kana = "メートル", ci = false }   # 小文字限定 (「3M」 を メートル にしない)
+"mL" = { kana = "ミリリットル" }
 "円" = { kana = "エン" }
 "%"  = { kana = "パーセント" }
 ```
 
-数値 + 単位 を 1 chunk で読む (「3 km」「100 円」)。 lookup は default で
-case-insensitive (大文字小文字を区別しない)、 個別 entry で `ci = false` 等の opt-out 可。
+数値 + 単位 を 1 chunk で読む (「3 km」「100 円」)。 `ci = true` は既定値と同じ
+(明示しても挙動は変わらない)。
 
-## ファイル別: `rules/text/symbols.toml` / `rules/text/latin.toml`
+## ファイル別: `rules/text/symbols.toml`
 
 ```toml
-# symbols.toml
 [entries]
 "+" = "プラス"
 "−" = "マイナス"
 "%" = "パーセント"
 "〜" = "から"             # 「3〜5 個」 のような表現
-
-# latin.toml
-[entries]
-"A" = "エー"
-"B" = "ビー"
-"C" = "シー"
 ```
 
 単一文字 → 読み の単純 mapping (`[entries]` flat 文字列形式)。

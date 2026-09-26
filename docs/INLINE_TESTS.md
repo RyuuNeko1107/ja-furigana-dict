@@ -120,8 +120,11 @@ CI では ja-furigana 側 `ci.yml` の corpus regression job 内で
 
 ## `*.test.toml` を置ける場所
 
+runner は `core/` と `rules/` 配下の `*.test.toml` を再帰的に拾うので、 対象 file の隣ならどこでも置ける。 例:
+
 - `core/jukugo/<genre>/<file>.test.toml`
 - `core/works/<medium>/<title>.test.toml`
-- `core/loanwords/<file>.test.toml`
-- `core/<single_overrides|compat>.test.toml`
-- `rules/<file>.test.toml` (counters / context / postprocess / 等含む全 file)
+- `core/loanwords/<file>.test.toml` / `core/kanji/<file>.test.toml`
+- `rules/compat.test.toml`
+- `rules/numbers/counters/<file>.test.toml` (現在ある唯一の例: `objects.test.toml`)
+- `rules/numbers/<file>.test.toml` / `rules/text/<file>.test.toml` (days / scales / postprocess 等)

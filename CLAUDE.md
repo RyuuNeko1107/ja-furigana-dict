@@ -3,7 +3,7 @@
 ja-furigana lib 用の TOML 辞書 + 校正ルール data repo。
 
 - **GitHub**: <https://github.com/RyuuNeko1107/ja-furigana-dict>
-- **License**: CC BY-SA 4.0 (data) + Apache-2.0 (tools/scripts)
+- **License**: MIT (data / tools とも、 `LICENSE` 参照)
 - **release 形式**: GitHub Releases tar.gz、 lib 側 `furigana dict pull` で取得
 - **release pace**: daily-release (CalVer 自動 tag) + lib coordinated SemVer の Hybrid
 
@@ -11,11 +11,13 @@ ja-furigana lib 用の TOML 辞書 + 校正ルール data repo。
 
 ```
 core/                — 単語辞書 (entry data、 役割別 sub-dir)
-├── jukugo/          — 熟語 (24 カテゴリ)
+├── jukugo/          — 熟語 (6 genre sub-dir: basic / humanities / nature / objects /
+│                      proper / society、 計 47 file)
 ├── unihan/          — 単漢字 fallback
 ├── kanji/           — [[kanji]] block (default + 文脈 match、 旧 single_overrides 統合先)
-├── works/           — 作品固有名詞 (game / literature / anime)
-└── loanwords/       — 外来語
+├── works/           — 作品固有名詞 (anime / game / literature / vtuber)
+├── loanwords/       — 外来語
+└── _inbox.toml      — 分類前の一時 inbox (genre 判断が付かない熟語)
 
 rules/               — 校正ルール (data + 動的合成)
 ├── numbers/         — days / scales / numeric_phrases + counters/ (助数詞)
@@ -30,9 +32,8 @@ rules/               — 校正ルール (data + 動的合成)
 tests/
 └── corpus/
     ├── should_read.toml      — 回帰テスト本体
-    └── should_read/*.toml    — 分野別 (extended / general / regression / sentences /
-                                touhou / gintama)。 計 802 expected case、 lib 側
-                                furigana-corpus-check で一括測定 (~4 秒)
+    └── should_read/*.toml    — 分野別 / probe 別。 tests/corpus 全体で約 340 file /
+                                約 11,800 case (`grep -r '^\[\[case\]\]' tests/corpus | wc -l`)
 
 tools/
 ├── validate.py               — TOML 構文 + 読み形式 + cross-file 重複検出 (CI gate)
@@ -48,6 +49,10 @@ tools/
 ├── gen_surname_suffix.py     — 一般語と同形の姓 / 地名に敬称 suffix match を生成
 │                               (--current に batch-read 実測を渡す。 --battery で
 │                                「姓 + 名」 文脈の退行検出 probe。 SCHEMA.md 参照)
+├── build_dict_browser.py     — 全 entry 検索用 static HTML 生成 (GitHub Pages)
+├── check_default_regression.py — [[kanji]] default 変更による jukugo regression 検出
+├── compare_with_reference.py — ローカル binary と公開 API の出力比較
+├── cleanup_old_deployments.py — GitHub Pages の古い deployment 履歴を整理
 └── seed/                     — import_from_production.py 用 source data (gitignore 対象)
 ```
 
@@ -55,14 +60,16 @@ tools/
 
 loader が role 駆動 dispatch する tag。 各 TOML 冒頭に `[meta] role = "..."` を書く:
 
-`jukugo` / `unihan` / `works` / `loanwords` / `single_overrides` / `compat` /
-`counters` / `context` / `days` / `scales` / `units` / `symbols` /
-`latin` / `numeric_phrases` / `postprocess`
+`jukugo` / `unihan` / `kanji` / `works` / `loanwords` / `compat` /
+`counters` / `days` / `scales` / `numeric_phrases` / `units` / `symbols` /
+`postprocess`
+
+(旧 `single_overrides` / `context` / `latin` は alpha.11 で廃止済)
 
 ## alpha.10〜alpha.11 期 dict 側 mechanical 完了 (★A1b / ★A2)
 
 - ✅ **schema_version 必須化** (★A1b、 alpha.10 coordinated): 全 dict / rule TOML
-  54 file に `[meta] schema_version = "2"` を bulk 適用、 `validate.py` で gate 化
+  に `[meta] schema_version = "2"` を bulk 適用、 `validate.py` で gate 化
 - ✅ **rules/context → entry inline match 機械変換** (★A2、 alpha.11): 31 既存
   entry を Detailed 化 + 21 missing surface を catch-all 配置 (general.toml)、
   5 件 POS-only match は drop (= default reading で fallback、 redundant)
@@ -88,17 +95,13 @@ maintainer / community PR で漸進):
   ただし default reading で実用上動くため非緊急)
 - 21 件 missing surface の sub-dir 再 triage (= 現在 general.toml catch-all)
 - 重複 / 古い / 出典なし entry の purge (= source attribution data 不在で慎重要)
-- `core/jukugo/` 24 カテゴリ再分類 (= 5024 entries の review、 multi-week)
+- `core/jukugo/basic/general.toml` の genre 再分配 (遡及整理は見送り済、 下記注意点参照)
 - `core/works/` / `core/loanwords/` 整理確認
 
-## lib coordinated で残る作業
+## lib coordinated の作業 (完了済)
 
-- lib `DictBridgeProvider` integration: Smart engine が `lookup_rich` で取った
-  `[[match]]` block を Viterbi DP に統合 (= alpha.12+ で実装)
-- lib `[[kanji]]` block loader: `core/kanji/*.toml` を読み込んで KanjiProvider
-  で provide (= 上記と coordinated)
-- 0.1.0-rc1 で Smart default 切替後、 dict から `rules/context/` /
-  `single_overrides.toml` を削除 (= source of truth 一本化)
+`DictBridgeProvider` による `[[match]]` block の Viterbi 統合、 `[[kanji]]` block loader、
+`rules/context/` / `single_overrides.toml` の削除はいずれも完了済。
 
 ## 新 format 例 (alpha.10 投入後)
 
@@ -107,7 +110,7 @@ maintainer / community PR で漸進):
 ```toml
 [meta]
 schema_version = "2"
-role = "entries"
+role = "works"
 
 [entries]
 "魔理沙" = "マリサ"
@@ -145,8 +148,8 @@ next_eq = "じる"
 reading = "ショウ"
 
 [[kanji.match]]
-prev_char_type = "ひらがな"
-reading = "ナマ"
+next_starts_any = ["まれ", "まれる"]   # 雑な char_type 指定 (ひらがな) は使わず literal 列挙
+reading = "ウ"
 ```
 
 ## matcher vocabulary (品詞 不採用)
@@ -160,25 +163,26 @@ reading = "ナマ"
 | literal 先頭いずれか | — | `next_starts_any` | `next2_starts_any` | string array |
 | 文字種 | `prev_char_type` | `next_char_type` | — | "漢字" / "ひらがな" / "カタカナ" / "英数" / "記号" |
 | 述語 | `prev_month` | `next_digit` | — | bool |
+| 文スコープ (入力文全体の部分一致、 ADR-0010) | — | — | — | `input_contains_any` (string array) |
 
 **`prev_pos` / `next_pos` (Lindera 品詞) は採用しない** (Lindera 撤廃路線)。
 正は lib `scoring/format.rs` の `MatchCondition` (= `tools/validate.py` の
 `MATCH_CONDITION_KEYS` と 3 点同期。 key の typo は validate が error にする —
 lib は未知 field を黙って無視し、 条件が空の match は常時発火に化けるため)。
 
-## bracket notation (= 0.1.0 から書ける、 lib は strip / 無視、 0.2.0 で活用)
+## bracket notation (accent。 `[` `]` の 2 記号、 旧 `/` 区切りは deprecated)
 
 ```toml
 [entries]
-"上手" = "ジョ]ウズ"     # 1型 accent (頭高)
-"霧雨" = "キ[リサメ"     # 0型 (平板)
+"天気" = "[テ]ンキ"     # 1型 (頭高)。 `[` = 句頭、 `]` = 核の直後
+"霧雨" = "[キリサメ"    # 0型 (平板)
 
-[entries."橋"]
-reading = "ハ]シ"
+[entries."上手"]
+reading = "[ジョウズ]"  # 3型 (尾高)
 
-[[entries."橋".match]]
-prev_eq = "鉄"
-reading = "テッキョウ"   # match 候補も bracket 付きで書ける
+[[entries."上手".match]]
+next_eq = "から"
+reading = "[カミテ"     # match 候補も bracket 付きで書ける
 ```
 
 ## よく使うコマンド
@@ -188,13 +192,13 @@ reading = "テッキョウ"   # match 候補も bracket 付きで書ける
 python tools/validate.py
 
 # corpus regression test (= should_read.toml + should_read/ 配下)
-# ローカルでは lib 側 furigana-corpus-check 推奨 (802 case ≈ 4 秒、 run_corpus.py は ~15 分):
+# ローカルでは lib 側 furigana-corpus-check が速い (run_corpus.py は case 数に比例して遅い):
 #   cd ..\furigana; cargo run --release --bin furigana-corpus-check -- `
 #       --rules-dir ..\furigana-dict\rules --core-dict-dir ..\furigana-dict\core ..\furigana-dict\tests\corpus
 python tools/run_corpus.py
 
-# inline rule tests (= *.test.toml)
-python tools/test_inline_rules.py
+# inline rule tests (= *.test.toml)。 --binary 必須、 --data-dir は flat 配置した data/ の親 dir
+python tools/test_inline_rules.py --binary <furigana binary> --data-dir <dir>
 
 # STATS.md 自動再生成
 python tools/regen_stats.py
@@ -205,7 +209,7 @@ python tools/list_dups.py
 
 ## 主要 doc
 
-- `docs/SCHEMA.md` — TOML スキーマ詳細 (= alpha.10 で全面 update 予定)
+- `docs/SCHEMA.md` — TOML スキーマ詳細
 - `docs/INLINE_TESTS.md` — *.test.toml inline test 規約
 - `STATS.md` / `STATS_DUPS.md` — auto-gen (= 各 PR の STATS verify が CI で走る)
 
@@ -216,9 +220,9 @@ python tools/list_dups.py
 - **Immutable Releases 設定 OFF** (alpha.7 経緯)、 stable cut 時に ON 推奨
 - **CI auto-merge**: dependabot PR + 特定 label PR が auto-merge 対象
 - **author email**: `mail@ryuuneko.com` (個人 gmail を直書きしない方針)
-- **`core/jukugo/basic/general.toml` (8,961 行) は新規 entry を追加しない**: 過去の batch 追記が
+- **`core/jukugo/basic/general.toml` (1 万行超) は新規 entry を追加しない**: 過去の batch 追記が
   分野判定を省いて general に投げ込まれ続けた結果肥大化した (政治/医療/軍事/スポーツ/動植物 等、
   本来 `humanities/nature/objects/proper/society` の既存 genre file に属する内容が多数混在)。
   新規 jukugo entry は追加前に該当する genre sub-dir (`core/jukugo/<genre>/*.toml`) を確認し、
   分類先が無ければ `core/_inbox.toml` に置いて後で仕分ける。 general.toml 自体の遡及的な
-  再分配 (既存 8,961 行の genre 移動) は費用対効果が低いとして見送り済 (2026-08-28 判断)
+  再分配 (既存行の genre 移動) は費用対効果が低いとして見送り済 (2026-08-28 判断)

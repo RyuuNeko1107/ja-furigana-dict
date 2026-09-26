@@ -6,10 +6,10 @@ name: Daily auto-release
 # lib v0.1.0 stable + dict v0.1.0 coordinated 後は schema 互換 SemVer 維持、
 # daily auto-cut の coordination cost が下がったので再開。
 #
-# 1 日 1 回 (JST 03:00 / UTC 18:00) 起動。
+# 1 日 1 回 (JST 00:00 / UTC 15:00) 起動。
 # 前回 tag 以降に core/ または rules/ への変更が 1 件以上あれば、
-# その日の date で CalVer tag を打つ → 既存 release.yml が
-# tag push を catch して tar.gz + sha256 を GitHub Release に upload する。
+# その日の date で CalVer tag を打つ → 下の release job が release.yml を
+# workflow_call で呼んで tar.gz + sha256 を GitHub Release に upload する。
 #
 # tag 形式: vYYYY.MM.DD (例: v2026.05.08)、同日 2 回目以降は v2026.05.08.1 / .2 …
 #

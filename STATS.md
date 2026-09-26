@@ -29,8 +29,8 @@ git に commit されている master HEAD の状態を基準にする。
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **1,712** | **44 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **836** | **40 KB** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,778** | **364 KB** |
-| [**異体字**](#異体字) (`core/compat.toml`) | **0** | **0 B** |
-| [**エンジンルール**](#エンジンルール) (`rules/`) | **773** | **37 KB** |
+| [**異体字**](#異体字) (`rules/compat.toml`) | **436** | **6.1 KB** |
+| [**エンジンルール**](#エンジンルール) (`rules/`) | **337** | **31 KB** |
 | **合計** | **70,025** | **2.18 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
@@ -328,9 +328,11 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 
 ### 異体字
 
-`core/compat.toml` — 異体字 → 標準字の正規化マッピング (例: 髙→高)。 reading lookup 前の前処理として lib が参照。
+`rules/compat.toml` — 異体字 → 標準字の正規化マッピング (例: 髙→高)。 reading lookup 前の前処理として lib が参照 (lib は rules_dir を走査して role="compat" を読むため rules/ に置く)。
 
-(空)
+| ファイル | エントリ数 | サイズ | 用途 |
+|---|---:|---:|---|
+| [`rules/compat.toml`](rules/compat.toml) | 436 | 6.1 KB | 異体字 → 標準字の正規化マップ (髙→高 等、 lib Step 1 で入力テキストを正規化) |
 <!-- AUTO-GENERATED:CORE:END -->
 
 ### エンジンルール
@@ -338,7 +340,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 `rules/` — エンジン挙動 (助数詞 / 文脈 / 後処理 等) を制御するルール群。 lib コードに embed されるのではなく、 ここで宣言的に外部化されている。
 
 <!-- AUTO-GENERATED:RULES:BEGIN -->
-**合計**: 773 エントリ / 837 ルール / 37 KB (genre 3 区分)
+**合計**: 337 エントリ / 401 ルール / 31 KB (genre 2 区分)
 
 #### 数値系
 
@@ -372,14 +374,6 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 | [`rules/text/units.toml`](rules/text/units.toml) | 25 | 25 | 1.5 KB | SI 単位 + 通貨 + % (km / kg / mL / 円 / % 等、 数値 + 単位を 1 chunk で読む。 lookup は case-insensitive) |
 | [`rules/text/postprocess.toml`](rules/text/postprocess.toml) | 2 | 2 | 325 B | 出力後処理 regex (Step 7、 mode 別: hiragana / ruby / tts / romaji の出力直前に適用) |
 | **小計** (3 ファイル) | **86** | **86** | **3.1 KB** | |
-
-#### (直下)
-
-`rules/` 直下 — 1 ファイル
-
-| ファイル | エントリ数 | ルール数 | サイズ | 用途 |
-|---|---:|---:|---:|---|
-| [`rules/compat.toml`](rules/compat.toml) | 436 | 436 | 6.1 KB | 異体字 → 標準字の正規化マップ (髙→高 等、 lib Step 1 で入力テキストを正規化) |
 
 <!-- AUTO-GENERATED:RULES:END -->
 

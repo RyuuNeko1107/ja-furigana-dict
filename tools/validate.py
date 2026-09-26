@@ -8,11 +8,13 @@ furigana-dict 配下の TOML ファイルを検証する。
 - 必須セクション / フィールド欠落
 - jukugo / unihan の cross-file 重複
 
-ファイル配置:
-- 単一ファイル形式 (core/jukugo.toml, rules/counters.toml, rules/context.toml)
-- 細分化形式      (core/jukugo/*.toml, rules/counters/*.toml, rules/context/*.toml)
-  ─ いずれにも対応する。両方ある場合は単一ファイル形式を優先する
-   (エンジン側 load_rules_dir と挙動を揃えるため)。
+検証対象 (main() の targets):
+- core/jukugo/**/*.toml, core/works/**/*.toml, core/_inbox.toml, core/loanwords/**/*.toml,
+  core/unihan/*.toml, core/kanji/**/*.toml, rules/compat.toml, rules/numbers/counters/*.toml
+- rules/numbers/{days,scales,numeric_phrases}.toml と rules/text/*.toml は現状未検証
+  (下の TODO(dead-routing) 参照、 schema_version check も targets 経由なので対象外)
+- `discover()` は単一ファイル形式 (`<name>.toml`) と sub-dir 形式の両方に対応し、
+  両方ある場合は単一ファイルを優先する (エンジン側 load_rules_dir と挙動を揃えるため)。
 
 CI から呼び出し想定: `python3 tools/validate.py`
 exit code 0 = OK, 1 = 検証エラーあり
@@ -28,8 +30,8 @@ import tomllib
 from pathlib import Path
 
 # ひらがな + 全角カタカナ + 長音 (ー) + 中点 (・) を許可。
-# 加えて intonation bracket marker (`[` `]` `/`) も許容 (= 0.1.0 forward compat、
-# lib alpha.10 〜 0.1.0 stable で reading から strip して使う、 0.2.0 で activate)。
+# 加えて intonation bracket marker (`[` `]`) も許容 (ADR-0003)。 旧 `/` (accent 句区切り) は
+# deprecated で、 構文上は通すが validate_bracket_syntax が警告を出す。
 #
 # 訓読みはひらがな、音読みはカタカナで書くのが慣習なので、両方受け入れる。
 # エンジン側 (`furigana::kana::kata_to_hira`) で出力時に正規化されるため、
@@ -58,7 +60,7 @@ class Warnings(list):
 
 
 def is_kana(s: str) -> bool:
-    """`s` が ひらがな または 全角カタカナ (+ ー / ・ / intonation bracket [ ] /) のみで構成されているか"""
+    """`s` が ひらがな または 全角カタカナ (+ ー / ・ / intonation bracket [ ] + deprecated な /) のみで構成されているか"""
     return bool(s) and bool(KANA_RE.fullmatch(s))
 
 

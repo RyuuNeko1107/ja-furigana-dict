@@ -242,10 +242,17 @@ def effective_bytes(path: Path) -> int:
     return total
 
 
+# 異体字 mapping の配置 (2026-06-14 に core/ → rules/ へ移動)。
+COMPAT_REL = "rules/compat.toml"
+
+
 def gather_core() -> list[tuple[str, int, int]]:
     """core 配下の (relpath, count, size_bytes) を返す。
 
     順序: unihan → jukugo (件数 desc) → works (件数 desc) → compat。
+    compat の実体は `rules/compat.toml` (lib は rules_dir を走査して role="compat" を読む
+    ため core/ から移動済) だが、 性質上 「異体字」 区分として core 側の表に載せる
+    (gather_rules 側では除外して二重計上しない)。
     jukugo / works はどちらも全階層を再帰スキャン (ja-furigana 0.1.0-alpha.6
     以降の loader と挙動を揃える)。
     """
@@ -296,10 +303,10 @@ def gather_core() -> list[tuple[str, int, int]]:
         rows.append(
             ("core/single_overrides.toml", count_entries(p), count_inline_tests(p), effective_bytes(p))
         )
-    p = ROOT / "core/compat.toml"
+    p = ROOT / COMPAT_REL
     if p.exists():
         rows.append(
-            ("core/compat.toml", count_entries(p), count_inline_tests(p), effective_bytes(p))
+            (COMPAT_REL, count_entries(p), count_inline_tests(p), effective_bytes(p))
         )
     return rows
 
@@ -323,6 +330,9 @@ def gather_rules() -> list[tuple[str, int, int, int, int]]:
         if p.name == "_genre.toml" or p.name.endswith(".test.toml"):
             continue
         rel = p.relative_to(ROOT).as_posix()
+        if rel == COMPAT_REL:
+            # 「異体字」 区分として gather_core 側で集計済 (二重計上しない)
+            continue
         rows.append((
             rel,
             count_entries(p),
@@ -353,7 +363,7 @@ def gen_summary(core_rows: list, rules_rows: list) -> str:
     kanji_c, _kanji_t, kanji_s = slice_("core/kanji/")
     inbox_c, _inbox_t, inbox_s = slice_("core/_inbox.toml")
     single_ov_c, _single_ov_t, single_ov_s = slice_("core/single_overrides.toml")
-    compat_c, _compat_t, compat_s = slice_("core/compat.toml")
+    compat_c, _compat_t, compat_s = slice_(COMPAT_REL)
     rules_c = sum(r[1] for r in rules_rows)
     rules_s = sum(r[4] for r in rules_rows)
     total_c = unihan_c + jukugo_c + works_c + loanwords_c + kanji_c + inbox_c + single_ov_c + compat_c + rules_c
@@ -389,7 +399,7 @@ def gen_summary(core_rows: list, rules_rows: list) -> str:
             f"| [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **{kanji_c:,}** | **{fmt_size(kanji_s)}** |"
         )
     lines.extend([
-        f"| [**異体字**](#異体字) (`core/compat.toml`) | **{compat_c:,}** | **{fmt_size(compat_s)}** |",
+        f"| [**異体字**](#異体字) (`{COMPAT_REL}`) | **{compat_c:,}** | **{fmt_size(compat_s)}** |",
         f"| [**エンジンルール**](#エンジンルール) (`rules/`) | **{rules_c:,}** | **{fmt_size(rules_s)}** |",
         f"| **合計** | **{total_c:,}** | **{fmt_size(total_s)}** |",
     ])
@@ -584,7 +594,7 @@ def gen_core(core_rows: list) -> str:
     kanji_rows = [r for r in core_rows if r[0].startswith("core/kanji/")]
     inbox_rows = [r for r in core_rows if r[0] == "core/_inbox.toml"]
     single_rows = [r for r in core_rows if r[0] == "core/single_overrides.toml"]
-    compat_rows = [r for r in core_rows if r[0] == "core/compat.toml"]
+    compat_rows = [r for r in core_rows if r[0] == COMPAT_REL]
 
     sections = []
     sections.append(_gen_subsection(
@@ -626,7 +636,7 @@ def gen_core(core_rows: list) -> str:
         sections.append(_gen_kanji_subsection(kanji_rows))
     sections.append(_gen_subsection(
         "異体字",
-        "`core/compat.toml` — 異体字 → 標準字の正規化マッピング (例: 髙→高)。 reading lookup 前の前処理として lib が参照。",
+        f"`{COMPAT_REL}` — 異体字 → 標準字の正規化マッピング (例: 髙→高)。 reading lookup 前の前処理として lib が参照 (lib は rules_dir を走査して role=\"compat\" を読むため rules/ に置く)。",
         compat_rows,
     ))
 
@@ -922,7 +932,7 @@ def gen_placement(
             "[issue #15](https://github.com/RyuuNeko1107/ja-furigana/issues/15) の限定解 (1 字 surface 限定) |"
         )
     lines.append(
-        "| **異体字 → 標準字** | [`core/compat.toml`](core/compat.toml) | "
+        f"| **異体字 → 標準字** | [`{COMPAT_REL}`]({COMPAT_REL}) | "
         "lib Step 1 で入力テキストを正規化 |"
     )
     if loanwords_files:

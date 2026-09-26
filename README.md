@@ -26,18 +26,20 @@
 
 ```
 core/
-├── jukugo/         ← 熟語・固有名詞 (一般熟語 / 地名 / 人名 / 専門 / 文化等のカテゴリ別 24 ファイル)
-├── works/          ← 作品単位の固有名詞・造語 (例: works/game/touhou.toml)
-├── loanwords/      ← 外来語 (IT 用語等の英字 surface、 例: loanwords/it.toml)
-├── unihan/*.toml   ← 単漢字フォールバック (43k+ 字、 5 水準別)
-├── single_overrides.toml ← 単漢字 default の明示的 override (限定解)
-└── compat.toml     ← 異体字 → 標準字 (髙→高 等)
+├── jukugo/<genre>/   ← 熟語・固有名詞 (basic / humanities / nature / objects / proper / society の 6 genre、 47 ファイル)
+├── works/            ← 作品単位の固有名詞・造語 (anime / game / literature / vtuber、 例: works/game/touhou.toml)
+├── loanwords/        ← 外来語 (英字 surface、 例: loanwords/it.toml)
+├── unihan/           ← 単漢字フォールバック (約 4.07 万字、 5 水準別)
+├── kanji/            ← 単漢字の文脈依存読み `[[kanji]]` block (overrides.toml)
+└── _inbox.toml       ← 分類前の一時 inbox (genre 判断が付かない熟語)
 
 rules/
-├── counters/       ← 助数詞ルール (本 / 匹 / 個 / 年 / 月 / 日 …、連濁・促音化)
-├── context/        ← 文脈依存読み (一日→ツイタチ/イチニチ 等)
-├── days.toml / scales.toml / units.toml / symbols.toml / latin.toml
-├── numeric_phrases.toml / postprocess.toml
+├── compat.toml       ← 異体字 → 標準字 (髙→高 等)
+├── numbers/
+│   ├── counters/     ← 助数詞ルール (本 / 匹 / 個 / 年 / 月 / 日 …、 連濁・促音化)
+│   └── days.toml / scales.toml / numeric_phrases.toml
+└── text/
+    └── symbols.toml / units.toml / postprocess.toml
 ```
 
 各ファイルの **詳細な用途・件数・サイズ** は [STATS.md](STATS.md) で auto-gen される
@@ -55,9 +57,9 @@ rules/
 | ドキュメント | 内容 |
 |---|---|
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | クイックパス + 1 行追加の流れ + TOML 形式の最低限ルール |
-| [`docs/SCHEMA.md`](docs/SCHEMA.md) | 各 file の詳細 TOML schema (counters / context / postprocess 等の構文) |
+| [`docs/SCHEMA.md`](docs/SCHEMA.md) | 各 file の詳細 TOML schema (counters / `[[kanji]]` / postprocess 等の構文) |
 | [`docs/INLINE_TESTS.md`](docs/INLINE_TESTS.md) | `*.test.toml` の append-only 仕様 |
-| [`docs/EVALUATION.md`](docs/EVALUATION.md) | 客観性能評価 (VOICEVOX engine 一致率 / 定期更新) |
+| [`docs/EVALUATION.md`](docs/EVALUATION.md) | 客観性能評価 (VOICEVOX engine 一致率、 2026-05 時点の記録。 定期更新はしていない) |
 | [`MAINTAINING.md`](MAINTAINING.md) | release / CI / upstream seed 再投入手順 |
 | [`STATS.md`](STATS.md) | 件数 / カテゴリ別内訳 / サイズ (auto-gen) |
 | [dict_browser (web)](https://ryuuneko1107.github.io/ja-furigana-dict/) | 全 entries 検索・フィルタ・漢字別 sweep 進捗 (auto-deploy、 dark mode 対応) |
@@ -109,7 +111,9 @@ REPL の中からは `:pull` (or `pull`) でも同じ操作ができる。
 
 最も多いケース (読みを 1 件追加):
 
-1. カテゴリに合うファイル (例: 一般語なら [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml)) を GitHub の Web UI で編集
+1. カテゴリに合う genre ファイル (例: 動物なら [`core/jukugo/nature/animals.toml`](core/jukugo/nature/animals.toml))、
+   判断が付かなければ [`core/_inbox.toml`](core/_inbox.toml) を GitHub の Web UI で編集
+   (`core/jukugo/basic/general.toml` は肥大化しているので新規追加先にはしない)
 2. 「Commit changes」→「Create pull request」
 3. CI (TOML 構文チェック + カタカナ検証) が通れば maintainer が merge
 

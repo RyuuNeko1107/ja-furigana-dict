@@ -103,12 +103,17 @@ RULES_BUCKET_HEADINGS = {
 }
 
 
+# 異体字 map の配置。 現行は rules/compat.toml (2026-06-14 に core/ から移動)、
+# 移動前の tag と比較する時のために旧 path も同じ区分として扱う。
+COMPAT_PATHS = ("rules/compat.toml", "core/compat.toml")
+
+
 def gen_snapshot_section(now_label: str, now_files: list[str], now_tag: str) -> list[str]:
     """STATS.md と同じカテゴリ階層で release tag 時点 snapshot を生成。"""
     # ── (1) ファイルを path prefix でカテゴリ分け ──
     cats: dict[str, list[tuple[str, int, str]]] = {
         "unihan": [], "jukugo": [], "works": [], "loanwords": [],
-        "inbox": [], "single_overrides": [], "compat": [], "rules": [],
+        "inbox": [], "compat": [], "rules": [],
     }
     for p in sorted(now_files):
         content = git_show(now_tag, p) or ""
@@ -125,9 +130,7 @@ def gen_snapshot_section(now_label: str, now_files: list[str], now_tag: str) -> 
             cats["loanwords"].append(item)
         elif p == "core/_inbox.toml":
             cats["inbox"].append(item)
-        elif p == "core/single_overrides.toml":
-            cats["single_overrides"].append(item)
-        elif p == "core/compat.toml":
+        elif p in COMPAT_PATHS:
             cats["compat"].append(item)
         elif p.startswith("rules/"):
             cats["rules"].append(item)
@@ -249,13 +252,8 @@ def gen_snapshot_section(now_label: str, now_files: list[str], now_tag: str) -> 
         cats["inbox"],
     )
     render_flat(
-        "単漢字 override",
-        "`core/single_overrides.toml` — 1 字 surface に対する明示的 default 上書き。",
-        cats["single_overrides"],
-    )
-    render_flat(
         "異体字",
-        "`core/compat.toml` — 異体字 → 標準字の正規化マップ。",
+        "`rules/compat.toml` — 異体字 → 標準字の正規化マップ。",
         cats["compat"],
     )
     render_grouped(
@@ -290,8 +288,8 @@ def gen_snapshot_section(now_label: str, now_files: list[str], now_tag: str) -> 
             f"> - **unique** ({len(unique_pairs):,}) = (key1, key2) tuple で de-dup した数\n"
             f"> - **cross-file 重複 {duplicates} 件** = repo 全体 scope での 純粋な重複 "
             f"((surface, reading) が複数 file にまたがって登録されてる数)。 大半は rules/ と "
-            f"core/ の **意図的な overlap** (例: 「大人」 が jukugo/general + "
-            f"rules/context/special 両方に同 reading) で、 bug ではない\n"
+            f"core/ の **意図的な overlap** (例: rules/ の単純 mapping と core/ の entry が "
+            f"同 reading) で、 bug ではない\n"
             f"> - actionable な cleanup 対象 (jukugo / works / loanwords scope のみ) は "
             f"下の [cross-file 重複検出](#cross-file-重複検出) section で別途集計"
         )
@@ -308,8 +306,8 @@ def gather_duplicates_at_tag(
     """tag 時点で同 surface が複数 file にまたがる cross-file 重複を検出する。
 
     対象: jukugo / works / loanwords / inbox 系 (entries dict を持つもの)。
-    `core/unihan/`、 `core/compat.toml`、 `core/single_overrides.toml`、 rules 系は
-    意図的な構造 (水準別分割 / 異体字 map / 単漢字 override / rule) なので除外。
+    `core/unihan/`、 compat (`rules/compat.toml`)、 rules 系は
+    意図的な構造 (水準別分割 / 異体字 map / rule) なので除外。
 
     Returns:
       (same_reading, divergent_reading) のタプル:
@@ -321,8 +319,7 @@ def gather_duplicates_at_tag(
     for p in now_files:
         if (
             p.startswith("core/unihan/")
-            or p == "core/compat.toml"
-            or p == "core/single_overrides.toml"
+            or p in COMPAT_PATHS
             or p.startswith("rules/")
         ):
             continue
@@ -983,7 +980,7 @@ def main() -> None:
     out.append(
         "tag 時点で **同じ surface が複数 file にまたがって登録** されているもの。 "
         "対象 scope: jukugo / works / loanwords / inbox (= **actionable な cleanup 対象**)。 "
-        "`core/unihan/` / `core/compat.toml` / `core/single_overrides.toml` / `rules/` は "
+        "`core/unihan/` / `rules/` (compat 含む) は "
         "意図的構造のため除外。 STATS_DUPS.md と同じ source の release tag 時点 snapshot。"
     )
     out.append("")
