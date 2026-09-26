@@ -2037,3 +2037,23 @@ expected = "てんせいきたらだれにする"
 input = "流行りに疎そう"
 mode = "hiragana"
 expected = "はやりにうとそう"
+
+[[case]]
+input = "初学者向け"
+mode = "hiragana"
+expected = "しょがくしゃむけ"
+
+[[case]]
+input = "逆引きの結果"
+mode = "hiragana"
+expected = "ぎゃくびきのけっか"
+
+[[case]]
+input = "長々とすみません"
+mode = "hiragana"
+expected = "ながながとすみません"
+
+[[case]]
+input = "最後勝ちたいねぇ"
+mode = "hiragana"
+expected = "さいごかちたいねぇ"
