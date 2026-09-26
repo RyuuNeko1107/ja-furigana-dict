@@ -2077,3 +2077,8 @@ expected = "しょうきちのこえ"
 input = "腕白小僧"
 mode = "hiragana"
 expected = "わんぱくこぞう"
+
+[[case]]
+input = "いい思い出しかないよ"
+mode = "hiragana"
+expected = "いいおもいでしかないよ"
