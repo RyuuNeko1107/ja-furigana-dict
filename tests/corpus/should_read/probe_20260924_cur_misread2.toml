@@ -2147,3 +2147,28 @@ expected = "にせんじゅうねんじゅうがつごろより"
 input = "7月頃"
 mode = "hiragana"
 expected = "しちがつごろ"
+
+[[case]]
+input = "受入れをした"
+mode = "hiragana"
+expected = "うけいれをした"
+
+[[case]]
+input = "塩化物泉"
+mode = "hiragana"
+expected = "えんかぶつせん"
+
+[[case]]
+input = "阪東妻三郎"
+mode = "hiragana"
+expected = "ばんどうつまさぶろう"
+
+[[case]]
+input = "ハローワーク大阪東"
+mode = "hiragana"
+expected = "ハローワークおおさかひがし"
+
+[[case]]
+input = "船舶"
+mode = "hiragana"
+expected = "せんぱく"
