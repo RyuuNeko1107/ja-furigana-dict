@@ -105,6 +105,10 @@ REPL の中からは `:pull` (or `pull`) でも同じ操作ができる。
 [MIT License](LICENSE)。 語彙辞書のエントリ自体に著作権を主張する根拠は薄いが、
 ファイル形式・編集ガイドラインなどの contribution は MIT で公開する。
 
+アクセント (bracket) の一部は UniDic (国立国語研究所) の aType から機械生成している:
+`core/accent/unidic.toml` (tools/gen_accent_lexicon.py) と core/jukugo の bracket (tools/gen_accent_brackets.py)。
+元データ: unidic-mecab_kana-accent 2.1.2 (GPL / LGPL / BSD のトリプルライセンス、 ここでは BSD 条項に基づき利用。 条文は [core/accent/LICENSE.UniDic-BSD](core/accent/LICENSE.UniDic-BSD))。
+
 ## コントリビュート
 
 歓迎! 詳細は [CONTRIBUTING.md](CONTRIBUTING.md)。

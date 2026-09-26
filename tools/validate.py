@@ -391,6 +391,29 @@ def validate_loanwords(path: Path, errors: Errors) -> dict:
     return entries
 
 
+# ─── core/accent/*.toml ─────────────────────────────────────────────────
+# アクセント専用の表 (role = "accent"、 tools/gen_accent_lexicon.py が生成)。 表記 → bracket 付き読み
+# (または読みごとの配列)。 lib は表記 + 読みが一致する token にだけ accent を付ける (読みには影響しない)
+def validate_accent(path: Path, errors: Errors) -> None:
+    data = load_toml(path, errors)
+    if data is None:
+        return
+    if (data.get('meta') or {}).get('role') != 'accent':
+        errors.add_for(path, "[meta] role = \"accent\" が必要")
+    entries = data.get('entries')
+    if not isinstance(entries, dict):
+        errors.add_for(path, "[entries] section が無い、または table ではない")
+        return
+    for surface, value in entries.items():
+        values = value if isinstance(value, list) else [value]
+        for v in values:
+            if not isinstance(v, str) or '[' not in v:
+                errors.add_for(path, f"accent '{surface}': 値は '[' を含む bracket 付き読み (または その配列)")
+                continue
+            if not is_kana(v.replace('[', '').replace(']', '')):
+                errors.add_for(path, f"accent '{surface}' → '{v}' (bracket を除いた読みは かな のみ)")
+
+
 # ─── rules/compat.toml ─────────────────────────────────────────────────────
 def validate_compat(path: Path, errors: Errors) -> None:
     """[map] section: variant → canonical (どちらも漢字 1〜数文字想定)"""
@@ -857,6 +880,7 @@ def main() -> int:
         (discover_works(core),                     load_jukugo),
         ([core / '_inbox.toml'],                   load_jukugo),
         (discover(core, 'loanwords', recursive=True), lambda p: validate_loanwords(p, errors)),
+        (discover(core, 'accent', recursive=True),  lambda p: validate_accent(p, errors)),
         (discover(core, 'unihan'),                 load_unihan),
         (discover(core, 'kanji', recursive=True),  load_kanji),
         ([rules / 'compat.toml'],            lambda p: validate_compat(p, errors)),

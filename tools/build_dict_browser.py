@@ -66,6 +66,9 @@ def collect(dict_dir: Path, rules_dir: Path | None = None):
 
         meta = data.get("meta", {})
         role = meta.get("role", "")
+        if role == "accent":
+            # アクセント専用の表 (読みの entry ではない、 11 万件規模) は載せない
+            continue
         is_unihan = role == "unihan"
 
         ent_table = data.get("entries", {})

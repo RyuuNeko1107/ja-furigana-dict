@@ -26,7 +26,13 @@ description = "二字・三字の一般熟語 (季節 / 行事 / 慣用句 含�
   旧 alpha era format dict (= field 不在) は受け付けない、 alpha.10 以降の dict release を使う。
 - `role`: `jukugo` / `unihan` / `kanji` / `works` / `loanwords` / `compat`
   / `counters` / `postprocess` / `days` / `scales` / `units` / `symbols`
-  / `numeric_phrases` (旧 `single_overrides` / `context` / `latin` は alpha.11 で廃止)
+  / `numeric_phrases` / `accent` (旧 `single_overrides` / `context` / `latin` は alpha.11 で廃止)
+  - `accent` (2026-09-27〜、 `core/accent/`): 読みの辞書ではなく **アクセント専用の表**。
+    `"表記" = "[キョ]ウ"` / `"表記" = ["[キョ]ウ", "[コ]ンニチ"]` (読みごとに 1 つ、 bracket 必須・かなのみ)。
+    lib は bracket の無い token に、 **表記 + 読みが両方一致する時だけ** accent を付ける (読み・区切りは不変)。
+    適用順は dict entry の bracket → この表 → rule 推定 (`estimate_accent`)。
+    `core/accent/unidic.toml` は `tools/gen_accent_lexicon.py` の生成物なので手で編集しない。
+    これを知らない古い lib は role 不明の file として読み飛ばす
   - `[meta] role` 無しでも path-based fallback で動作 (旧 release 互換)
 - `description`: 1 行説明、 `tools/regen_stats.py` が STATS.md の用途列に取り込む
 
