@@ -2132,3 +2132,18 @@ expected = "さぶろうは"
 input = "負け越し"
 mode = "hiragana"
 expected = "まけこし"
+
+[[case]]
+input = "4月頃"
+mode = "hiragana"
+expected = "しがつごろ"
+
+[[case]]
+input = "2010年10月頃より"
+mode = "hiragana"
+expected = "にせんじゅうねんじゅうがつごろより"
+
+[[case]]
+input = "7月頃"
+mode = "hiragana"
+expected = "しちがつごろ"
