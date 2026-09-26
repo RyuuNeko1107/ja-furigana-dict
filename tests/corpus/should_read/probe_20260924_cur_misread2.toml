@@ -2002,3 +2002,28 @@ expected = "やきにくたべたい"
 input = "予想通りすぎる"
 mode = "hiragana"
 expected = "よそうどおりすぎる"
+
+[[case]]
+input = "御宿町"
+mode = "hiragana"
+expected = "おんじゅくまち"
+
+[[case]]
+input = "外出たらもう暗くて"
+mode = "hiragana"
+expected = "そとでたらもうくらくて"
+
+[[case]]
+input = "精神病んでる"
+mode = "hiragana"
+expected = "せいしんやんでる"
+
+[[case]]
+input = "水無月さん"
+mode = "hiragana"
+expected = "みなづきさん"
+
+[[case]]
+input = "延長させないと"
+mode = "hiragana"
+expected = "えんちょうさせないと"
