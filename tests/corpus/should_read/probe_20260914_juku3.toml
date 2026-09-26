@@ -69,4 +69,4 @@ expected = "わらわらわらわらわら"
 [[case]]
 input = "笑"
 mode = "hiragana"
-expected = "わらい"
+expected = "わら"

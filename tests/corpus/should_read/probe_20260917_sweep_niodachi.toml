@@ -196,7 +196,7 @@ expected = "さいせんばこ"
 [[case]]
 input = "緻密だな(笑)さすがっス"
 mode = "hiragana"
-expected = "ちみつだな(わらい)さすがっス"
+expected = "ちみつだな(わら)さすがっス"
 
 [[case]]
 input = "精緻な聖地"

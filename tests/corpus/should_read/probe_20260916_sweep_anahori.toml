@@ -126,7 +126,7 @@ expected = "そとぼりがうめられて"
 [[case]]
 input = "道頓堀のメッシ笑"
 mode = "hiragana"
-expected = "どうとんぼりのメッシわらい"
+expected = "どうとんぼりのメッシわら"
 
 [[case]]
 input = "堀井雄二"

@@ -58,7 +58,7 @@ expected = "ぎゃくそうっす"
 [[case]]
 input = "あ、爆走って言ったんか?笑"
 mode = "hiragana"
-expected = "あ、ばくそうっていったんか?わらい"
+expected = "あ、ばくそうっていったんか?わら"
 
 [[case]]
 input = "博打ってほど弱くないぞ"

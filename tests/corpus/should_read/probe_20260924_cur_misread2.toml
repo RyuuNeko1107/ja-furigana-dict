@@ -2082,3 +2082,33 @@ expected = "わんぱくこぞう"
 input = "いい思い出しかないよ"
 mode = "hiragana"
 expected = "いいおもいでしかないよ"
+
+[[case]]
+input = "冗談笑"
+mode = "hiragana"
+expected = "じょうだんわら"
+
+[[case]]
+input = "誰かな!?(笑)"
+mode = "hiragana"
+expected = "だれかな!?(わら)"
+
+[[case]]
+input = "笑笑笑笑"
+mode = "hiragana"
+expected = "わらわらわらわら"
+
+[[case]]
+input = "笑点じゃないすか"
+mode = "hiragana"
+expected = "しょうてんじゃないすか"
+
+[[case]]
+input = "笑った"
+mode = "hiragana"
+expected = "わらった"
+
+[[case]]
+input = "爆笑"
+mode = "hiragana"
+expected = "ばくしょう"

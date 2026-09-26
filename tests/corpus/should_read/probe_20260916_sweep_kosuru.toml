@@ -3,7 +3,7 @@
 [[case]]
 input = "まだ擦ってる笑"
 mode = "hiragana"
-expected = "まだこすってるわらい"
+expected = "まだこすってるわら"
 
 [[case]]
 input = "今地面に擦ったぞw"

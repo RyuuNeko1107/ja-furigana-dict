@@ -1850,7 +1850,7 @@ default = "セン"
 # は band 100 fallback として作用、 熟語 path を破壊しない。
 [[kanji]]
 char = "笑"
-default = "わらい"
+default = "わら"  # ★2026-09-26 user 決定: 文末・連続の 笑 (冗談笑 / 笑笑笑笑) は わら
 
 # 笑う / 笑わない / 笑い / 笑える / 笑って / 笑った / 笑おう
 [[kanji.match]]

@@ -121,7 +121,7 @@ expected = "きんこつりゅうりゅうww"
 [[case]]
 input = "筋肉隆々(笑)"
 mode = "hiragana"
-expected = "きんにくりゅうりゅう(わらい)"
+expected = "きんにくりゅうりゅう(わら)"
 
 [[case]]
 input = "脇芽 びっしり"

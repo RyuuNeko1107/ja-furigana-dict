@@ -356,7 +356,7 @@ expected = "はりいいよね"
 [[case]]
 input = "癇癪起こしてる笑"
 mode = "hiragana"
-expected = "かんしゃくおこしてるわらい"
+expected = "かんしゃくおこしてるわら"
 
 [[case]]
 input = "意外と癇癪持ちなのかもw"

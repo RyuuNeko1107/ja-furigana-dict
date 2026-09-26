@@ -316,7 +316,7 @@ expected = "きれじかな?"
 [[case]]
 input = "懇願すな笑"
 mode = "hiragana"
-expected = "こんがんすなわらい"
+expected = "こんがんすなわら"
 
 [[case]]
 input = "昵懇の縄師さんが"

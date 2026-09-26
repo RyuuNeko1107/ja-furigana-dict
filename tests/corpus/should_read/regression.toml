@@ -467,7 +467,7 @@ expected = "にからさんかい"
 [[case]]
 input = "笑"
 mode = "hiragana"
-expected = "わらい"
+expected = "わら"
 
 [[case]]
 input = "笑う"
@@ -2694,7 +2694,7 @@ expected = "さいぼう"
 [[case]]
 input = "盗撮してる笑"
 mode = "hiragana"
-expected = "とうさつしてるわらい"
+expected = "とうさつしてるわら"
 
 [[case]]
 input = "出来そう?"

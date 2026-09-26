@@ -371,7 +371,7 @@ expected = "だいたいふつうはりょうてんびんなのよ"
 [[case]]
 input = "ここまで林檎笑"
 mode = "hiragana"
-expected = "ここまでりんごわらい"
+expected = "ここまでりんごわら"
 
 [[case]]
 input = "え、椎名林檎さん?"

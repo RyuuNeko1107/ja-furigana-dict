@@ -191,7 +191,7 @@ expected = "こいつくうきよめww"
 [[case]]
 input = "これは鬼嫁になるタイプ(笑)"
 mode = "hiragana"
-expected = "これはおによめになるタイプ(わらい)"
+expected = "これはおによめになるタイプ(わら)"
 
 [[case]]
 input = "2次元嫁は本当にいたんだ!"
