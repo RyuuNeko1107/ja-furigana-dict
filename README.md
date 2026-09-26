@@ -100,6 +100,23 @@ default では `<furigana.exe と同じフォルダ>/data/` に展開される (
 `furigana serve` / `furigana lookup` / `furigana repl` が自動的にロード。
 REPL の中からは `:pull` (or `pull`) でも同じ操作ができる。
 
+### 用途に合わない分野を外す (lib 0.5.0 の次の release から)
+
+`furigana lookup` / `serve` の `--exclude-dict <PATH>` (lib は `FuriganaBuilder::exclude_dict_path`) で、
+`core/` からの相対 path を読まないようにできる (dir なら配下全部、 file なら 1 file、 `.toml` 省略可、 複数回指定可)。
+アクセント表を使わない用途は `--no-accent-lexicon` (lib は `accent_lexicon(false)`) で表の読み込みを省ける。
+
+| 外す path | 中身 | 外すと |
+|---|---|---|
+| `works` | アニメ / ゲーム / 文学 / VTuber の作品固有名 | キャラ名が一般語読みに戻る (天音 = てん・おん) |
+| `works/vtuber` など | 上の一部 (`anime` / `game` / `literature` / `vtuber`) | その分野だけ外す |
+| `jukugo/society/mahjong` | 麻雀用語 (同じ文に麻雀語がある時だけ効く) | 立直 = たちなお のまま |
+| `jukugo/society/horse_racing` / `fishing` / `shogi` | 競馬 / 釣り / 将棋の専門用語 | 一般語読み |
+| `jukugo/proper/sumo_shikona` / `sake_brands` | 四股名 / 日本酒銘柄 | 一般語読み |
+| `accent` | アクセント専用の表 (読みには影響しない) | bracket の無い語の accent が推定のみに |
+
+`basic` / `kanji` / `unihan` / `_inbox.toml` は読みの土台なので外さないこと。
+
 ## ライセンス
 
 [MIT License](LICENSE)。 語彙辞書のエントリ自体に著作権を主張する根拠は薄いが、
