@@ -2027,3 +2027,13 @@ expected = "みなづきさん"
 input = "延長させないと"
 mode = "hiragana"
 expected = "えんちょうさせないと"
+
+[[case]]
+input = "転生きたら誰にする"
+mode = "hiragana"
+expected = "てんせいきたらだれにする"
+
+[[case]]
+input = "流行りに疎そう"
+mode = "hiragana"
+expected = "はやりにうとそう"
