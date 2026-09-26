@@ -12,7 +12,7 @@ body:
     attributes:
       label: 何が起きてる?
       placeholder: |
-        例: core/jukugo/general.toml の「灰桜」が「ハイザクラ」になっているが
+        例: core/jukugo/basic/general.toml の「灰桜」が「ハイザクラ」になっているが
         正しくは「ハイサクラ」(濁点なし) では?
     validations:
       required: true
@@ -36,19 +36,21 @@ body:
     attributes:
       label: 該当ファイル
       options:
-        - core/jukugo/general.toml (二字 / 三字の一般熟語)
-        - core/jukugo/four_char.toml (四字熟語)
-        - core/jukugo/proper_nouns.toml (会社名 / 作品名 / ブランド名)
-        - core/jukugo/place_names.toml (地名)
-        - core/jukugo/personal_names.toml (人名)
-        - core/unihan.toml (単漢字)
-        - core/compat.toml (異体字)
-        - rules/counters/*.toml (助数詞)
-        - rules/context/*.toml (文脈ルール)
-        - rules/days.toml / scales.toml / units.toml / symbols.toml / latin.toml / numeric_phrases.toml
+        - core/jukugo/basic/*.toml (一般熟語 / 四字熟語)
+        - core/jukugo/<分野>/*.toml (nature / objects / humanities / society の分野別熟語、 地名は nature/place_names.toml)
+        - core/jukugo/proper/*.toml (人名 / 姓 / 固有名詞)
+        - core/works/*/*.toml (アニメ / ゲーム / 文学 / VTuber の作品固有名)
+        - core/kanji/overrides.toml (単漢字の文脈ルール)
+        - core/unihan/*.toml (単漢字フォールバック)
+        - core/loanwords/*.toml (英字表記の外来語)
+        - core/_inbox.toml (振り分け前の一時置き場)
+        - rules/compat.toml (異体字)
+        - rules/numbers/counters/*.toml (助数詞)
+        - rules/numbers/*.toml (日付 / 大数 / 数字を含む例外語句)
+        - rules/text/*.toml (記号 / 単位 / 後処理)
         - わからない / 該当なし
   - type: textarea
     id: reference
     attributes:
       label: 出典・確認方法
-      placeholder: 例: 国会図書館蔵書「○○」p.42 / Wikipedia / 公式サイト URL
+      placeholder: "例: 国会図書館蔵書「○○」p.42 / Wikipedia / 公式サイト URL"
