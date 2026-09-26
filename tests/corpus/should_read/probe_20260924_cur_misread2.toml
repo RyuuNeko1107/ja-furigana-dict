@@ -2057,3 +2057,23 @@ expected = "ながながとすみません"
 input = "最後勝ちたいねぇ"
 mode = "hiragana"
 expected = "さいごかちたいねぇ"
+
+[[case]]
+input = "と云ったら"
+mode = "hiragana"
+expected = "といったら"
+
+[[case]]
+input = "駒込駅"
+mode = "hiragana"
+expected = "こまごめえき"
+
+[[case]]
+input = "庄吉の声"
+mode = "hiragana"
+expected = "しょうきちのこえ"
+
+[[case]]
+input = "腕白小僧"
+mode = "hiragana"
+expected = "わんぱくこぞう"
