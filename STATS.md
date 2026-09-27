@@ -24,14 +24,14 @@ git に commit されている master HEAD の状態を基準にする。
 | カテゴリ | エントリ数 | サイズ |
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,671** | **728 KB** |
-| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **21,574** | **890 KB** |
+| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **21,572** | **890 KB** |
 | [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,679** | **132 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **1,714** | **44 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **1,028** | **56 KB** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,778** | **369 KB** |
 | [**異体字**](#異体字) (`rules/compat.toml`) | **436** | **6.1 KB** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **337** | **31 KB** |
-| **合計** | **70,217** | **2.20 MB** |
+| **合計** | **70,215** | **2.20 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -56,7 +56,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/jukugo/<genre>/*` — 手動 PR メンテのジャンル別 jukugo (≥ 2 字 surface)。 lib の Step 3 (jukugo lookup) で Lindera より優先採用。 各 genre dir の `_genre.toml` がカテゴリ description を持つ。
 
-**合計**: 21,574 件 / 890 KB (genre 6 区分)
+**合計**: 21,572 件 / 890 KB (genre 6 区分)
 
 #### 自然・生命
 
@@ -86,7 +86,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/jukugo/humanities/arts.toml`](core/jukugo/humanities/arts.toml) | 2,780 | 104 KB | 古典芸能 / 武道 / 茶華香 / 工芸 |
+| [`core/jukugo/humanities/arts.toml`](core/jukugo/humanities/arts.toml) | 2,778 | 104 KB | 古典芸能 / 武道 / 茶華香 / 工芸 |
 | [`core/jukugo/humanities/religions.toml`](core/jukugo/humanities/religions.toml) | 905 | 35 KB | 神道 / 仏教 / キリスト教 / イスラム / 儀礼 |
 | [`core/jukugo/humanities/literature.toml`](core/jukugo/humanities/literature.toml) | 608 | 23 KB | 古典文学 / 作品名 / 文学用語 / 詩歌 / 評論 |
 | [`core/jukugo/humanities/shinwa.toml`](core/jukugo/humanities/shinwa.toml) | 224 | 10 KB | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
@@ -96,7 +96,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/jukugo/humanities/music.toml`](core/jukugo/humanities/music.toml) | 102 | 4.1 KB | 音楽ジャンル / 楽典 / 楽器 / 演奏 / 音楽用語 |
 | [`core/jukugo/humanities/abstracts.toml`](core/jukugo/humanities/abstracts.toml) | 18 | 1.2 KB | 美意識 / 古典文学 / 仏教 / 儒教 / 思想 |
 | [`core/jukugo/humanities/emotions.toml`](core/jukugo/humanities/emotions.toml) | 11 | 699 B | 感情 / 心理状態 / 性格 / 心情 |
-| **小計** (10 ファイル) | **5,123** | **196 KB** | |
+| **小計** (10 ファイル) | **5,121** | **196 KB** | |
 
 #### 社会・制度
 
@@ -398,7 +398,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 11985 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 11987 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -736,7 +736,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20260923_cur_misread.toml`](tests/corpus/should_read/probe_20260923_cur_misread.toml) | 62 |
 |  | [`tests/corpus/should_read/probe_20260923_pattern4.toml`](tests/corpus/should_read/probe_20260923_pattern4.toml) | 9 |
 |  | [`tests/corpus/should_read/probe_20260924_cur_misread2.toml`](tests/corpus/should_read/probe_20260924_cur_misread2.toml) | 431 |
-|  | [`tests/corpus/should_read/probe_20260927_new_comments.toml`](tests/corpus/should_read/probe_20260927_new_comments.toml) | 159 |
+|  | [`tests/corpus/should_read/probe_20260927_new_comments.toml`](tests/corpus/should_read/probe_20260927_new_comments.toml) | 161 |
 |  | [`tests/corpus/should_read/regression.toml`](tests/corpus/should_read/regression.toml) | 560 |
 |  | [`tests/corpus/should_read/sentences.toml`](tests/corpus/should_read/sentences.toml) | 49 |
 |  | [`tests/corpus/should_read/touhou.toml`](tests/corpus/should_read/touhou.toml) | 30 |
