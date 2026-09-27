@@ -901,6 +901,8 @@ description = "分類前の一時 inbox (≥2 字 surface、 内容が貯まっ�
 "並盛" = "なみもり"
 "身綺麗" = "みぎれい"
 "布切" = "ぬのきれ"
+"朝活" = "あさカツ"
+"朝一" = "あさイチ"
 "棒針" = "ボウバリ"
 "輪針" = "ワバリ"
 "中年男" = "チュウネンオトコ"     # 年男 (としおとこ) に割られる
@@ -1734,3 +1736,32 @@ reading = "みがるさ"
 [[entries."身軽さ".match]]
 input_contains_any = ["身軽さ"]
 reading = "みがるさ"
+
+# ★2026-09-28 悟飯 = ごはん / 一飯 = いっぱん (飯 の 前が漢字 / 助詞 = めし 条件より先に常時 match で勝たせる)
+[entries."悟飯"]
+reading = "ゴハン"
+
+[[entries."悟飯".match]]
+input_contains_any = ["悟飯"]
+reading = "ゴハン"
+
+[entries."一飯"]
+reading = "イッパン"
+
+[[entries."一飯".match]]
+input_contains_any = ["一飯"]
+reading = "イッパン"
+
+[entries."叉焼飯"]
+reading = "チャーシューハン"
+
+[[entries."叉焼飯".match]]
+input_contains_any = ["叉焼飯"]
+reading = "チャーシューハン"
+
+[entries."海南鶏飯"]
+reading = "ハイナンケイハン"
+
+[[entries."海南鶏飯".match]]
+input_contains_any = ["海南鶏飯"]
+reading = "ハイナンケイハン"

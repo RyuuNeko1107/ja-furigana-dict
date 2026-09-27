@@ -566,3 +566,35 @@ expected = "かなしばりにあう"
 [[case]]
 input = "読込先指定"
 expected = "よみこみさきしてい"
+
+# 2026-09-28 飯/黒/白/雨 の 前が漢字なら音 誤爆 + 悟飯 保護
+[[case]]
+input = "今飯食ってます"
+expected = "いまめしくってます"
+[[case]]
+input = "深夜飯テロ"
+expected = "しんやめしテロ"
+[[case]]
+input = "悟飯の事すきすぎ"
+expected = "ごはんのことすきすぎ"
+[[case]]
+input = "一飯の恩"
+expected = "いっぱんのおん"
+[[case]]
+input = "赤飯"
+expected = "せきはん"
+[[case]]
+input = "叉焼飯を食べてきた"
+expected = "ちゃーしゅーはんをたべてきた"
+[[case]]
+input = "全身黒コーデ"
+expected = "ぜんしんくろコーデ"
+[[case]]
+input = "一日中雨"
+expected = "いちにちじゅうあめ"
+[[case]]
+input = "五月雨"
+expected = "さみだれ"
+[[case]]
+input = "縦型朝活作業"
+expected = "たてがたあさかつさぎょう"
