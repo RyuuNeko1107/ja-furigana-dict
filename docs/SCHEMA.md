@@ -27,7 +27,7 @@ description = "二字・三字の一般熟語 (季節 / 行事 / 慣用句 含�
 - `role`: `jukugo` / `unihan` / `kanji` / `works` / `loanwords` / `compat`
   / `counters` / `postprocess` / `days` / `scales` / `units` / `symbols`
   / `numeric_phrases` / `accent` (旧 `single_overrides` / `context` / `latin` は alpha.11 で廃止)
-  - `accent` (2026-09-27〜、 `core/accent/`): 読みの辞書ではなく **アクセント専用の表**。
+  - `accent` (2026-09-27〜、 lib 0.5.1+、 `core/accent/`): 読みの辞書ではなく **アクセント専用の表**。
     `"表記" = "[キョ]ウ"` / `"表記" = ["[キョ]ウ", "[コ]ンニチ"]` (読みごとに 1 つ、 bracket 必須・かなのみ)。
     lib は bracket の無い token に、 **表記 + 読みが両方一致する時だけ** accent を付ける (読み・区切りは不変)。
     適用順は dict entry の bracket → この表 → rule 推定 (`estimate_accent`)。

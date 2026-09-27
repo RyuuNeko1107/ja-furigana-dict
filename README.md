@@ -100,7 +100,7 @@ default では `<furigana.exe と同じフォルダ>/data/` に展開される (
 `furigana serve` / `furigana lookup` / `furigana repl` が自動的にロード。
 REPL の中からは `:pull` (or `pull`) でも同じ操作ができる。
 
-### 用途に合わない分野を外す (lib 0.5.0 の次の release から)
+### 用途に合わない分野を外す (lib 0.5.1+)
 
 `furigana lookup` / `serve` の `--exclude-dict <PATH>` (lib は `FuriganaBuilder::exclude_dict_path`) で、
 `core/` からの相対 path を読まないようにできる (dir なら配下全部、 file なら 1 file、 `.toml` 省略可、 複数回指定可)。
