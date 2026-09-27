@@ -77,6 +77,30 @@ git push origin master
 ```
 
 
+## アクセント専用の表 (`core/accent/unidic.toml`) を作り直す
+
+辞書に bracket の無い語のアクセントを引く表 (`role = "accent"`、 lib の次の release から有効)。
+**表記 + 読みが一致する token にだけ効く** ので、 エンジンの区切りや読みが大きく変わった時
+(lib の解析まわりの変更 / 辞書の大規模な追加) に作り直す。 daily release ごとに作り直す必要はない。
+
+```sh
+# 0. 元データ: UniDic kana-accent 2.1.2 の lex.csv (BSD 条項で利用、 条文は core/accent/LICENSE.UniDic-BSD)
+#    https://clrd.ninjal.ac.jp/unidic_archive/cwj/2.1.2/unidic-mecab_kana-accent-2.1.2_src.zip
+
+# 1. 手元のテキスト (1 行 1 文、 数百万行以上あると安定) を lib で token 化して (表記, 読み, 回数) を数える
+#    (ja-furigana の examples/token_counts.rs。 並列にするなら入力を split して足し合わせる)
+cargo run --release -p ja-furigana --example token_counts -- rules core < corpus.txt > tokens.tsv
+
+# 2. 表を生成 (出現 3 回以上 / aType は多数決 / 助詞・助動詞・ひらがなの接尾辞や補助動詞は除外)
+python tools/gen_accent_lexicon.py --lex unidic-mecab_kana-accent-2.1.2_src/lex.csv   --min-count 3 --tokens tokens.tsv --out core/accent/unidic.toml
+
+# 3. validate + corpus (表は読みに影響しないので corpus は不変のはず)
+python tools/validate.py && python tools/run_corpus.py
+```
+
+ruby 出力 (`{表記|よみ}`) から作ると送り仮名付きの語 (強い / 違う) が 「強」 としてしか数えられず
+エンジンの token と一致しないので、 必ず token 単位の集計 (`--tokens`) を使う。
+
 ## CI / Workflow 一覧
 
 ### Validate (`validate.yml`)
