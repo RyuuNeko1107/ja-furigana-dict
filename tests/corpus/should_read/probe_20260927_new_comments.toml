@@ -447,3 +447,8 @@ expected = "てりてりかがやくかいじる"
 input = "凄じい暴風雨"
 mode = "hiragana"
 expected = "すさまじいぼうふうう"
+
+[[case]]
+input = "漁師の51歳男を逮捕"
+mode = "hiragana"
+expected = "りょうしのごじゅういっさいおとこをたいほ"
