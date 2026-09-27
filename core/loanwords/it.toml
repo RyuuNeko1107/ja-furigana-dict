@@ -43,8 +43,10 @@ description = "IT 用語 / プログラミング言語 / OSS / クラウドサ�
 "Bun" = "バン"
 
 # ── C ──
+"C#" = "シーシャープ"           # lib の次の release から (英字 + # を外来語表で引く)
 "Cassandra" = "カサンドラ"
 "ChatGPT" = "チャットジーピーティー"
+"F#" = "エフシャープ"
 "CircleCI" = "サークルシーアイ"
 "Claude" = "クロード"
 "ClickHouse" = "クリックハウス"
