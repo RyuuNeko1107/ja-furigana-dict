@@ -694,3 +694,12 @@ expected = "バイトさきのせんぱい"
 [[case]]
 input = "最後の先行だしねえ"
 expected = "さいごのせんこうだしねえ"
+[[case]]
+input = "こいつ本当嫌い"
+expected = "こいつほんとうきらい"
+[[case]]
+input = "人間全員嫌い"
+expected = "にんげんぜんいんきらい"
+[[case]]
+input = "人間嫌い"
+expected = "にんげんぎらい"
