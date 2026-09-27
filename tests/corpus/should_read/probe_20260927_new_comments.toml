@@ -379,3 +379,29 @@ expected = "ほんとうになんじゅうねんもかだい"
 input = "何千人"
 mode = "hiragana"
 expected = "なんぜんにん"
+
+# 「前が漢字なら音読み」 の誤爆 (雨 / 絵 / 見 / 髪 / 寝)
+[[case]]
+input = "関東だけ一生雨降ってる"
+mode = "hiragana"
+expected = "かんとうだけいっしょうあめふってる"
+
+[[case]]
+input = "(過去絵)"
+mode = "hiragana"
+expected = "(かこえ)"
+
+[[case]]
+input = "全部見終わった。"
+mode = "hiragana"
+expected = "ぜんぶみおわった。"
+
+[[case]]
+input = "4度寝くらいしてる"
+mode = "hiragana"
+expected = "よんどねくらいしてる"
+
+[[case]]
+input = "酸性雨に関する"
+mode = "hiragana"
+expected = "さんせいうにかんする"
