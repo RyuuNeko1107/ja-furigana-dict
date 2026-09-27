@@ -452,3 +452,29 @@ expected = "すさまじいぼうふうう"
 input = "漁師の51歳男を逮捕"
 mode = "hiragana"
 expected = "りょうしのごじゅういっさいおとこをたいほ"
+
+# 目 / 手 / 風 / 酒 / 秋 / 石 / 丸 / 相 / 船 (前が漢字でも語の境目なら訓)
+[[case]]
+input = "今目の前にあるいのち"
+mode = "hiragana"
+expected = "いまめのまえにあるいのち"
+
+[[case]]
+input = "推しの水着手に入れた!"
+mode = "hiragana"
+expected = "おしのみずぎてにいれた!"
+
+[[case]]
+input = "合法手を着手"
+mode = "hiragana"
+expected = "ごうほうしゅをちゃくしゅ"
+
+[[case]]
+input = "高市総理と片山財務相"
+mode = "hiragana"
+expected = "たかいちそうりとかたやまざいむしょう"
+
+[[case]]
+input = "AIに全部丸投げ"
+mode = "hiragana"
+expected = "エーアイにぜんぶまるなげ"
