@@ -52,8 +52,8 @@ note = "同上 (旧 かいしそうぞう)"
 [[case]]
 input = "早々"
 mode = "hiragana"
-expected = "はやばや"
-note = "単独は ハヤバヤ を維持"
+expected = "そうそう"
+note = "2026-09-28 単独 / 早々に も ソウソウ に統一 (A/B で 早々に寝落ち / 早々に退散 等すべて ソウソウ)。 朝早々 は entry で ハヤバヤ"
 
 [[case]]
 input = "手洗ってない"
