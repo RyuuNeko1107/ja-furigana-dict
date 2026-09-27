@@ -736,3 +736,23 @@ expected = "ちゅういがき"
 [[case]]
 input = "幕引き"
 expected = "まくひき"
+
+# 2026-09-28 改まった文章 A/B の退行対処
+[[case]]
+input = "最大の輸出品目はマグロ"
+expected = "さいだいのゆしゅつひんもくはマグロ"
+[[case]]
+input = "齧歯目に属する"
+expected = "かじしもくにぞくする"
+[[case]]
+input = "声優2作品目ですね"
+expected = "せいゆうにさくひんめですね"
+[[case]]
+input = "電話交換手を"
+expected = "でんわこうかんしゅを"
+[[case]]
+input = "刃物の交換手順"
+expected = "はもののこうかんてじゅん"
+[[case]]
+input = "流涙"
+expected = "りゅうるい"

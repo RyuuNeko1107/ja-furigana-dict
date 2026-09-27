@@ -2024,3 +2024,44 @@ reading = "らいずっと"
 [[entries."来ずっと".match]]
 input_contains_any = ["来ずっと"]
 reading = "らいずっと"
+
+# ★2026-09-28 改まった文章 A/B の退行 (手/親/涙/絵 の条件変更の副作用)
+
+[entries."交換手"]
+reading = "コウカンシュ"
+
+[[entries."交換手".match]]
+next_starts_any = ["順"]
+reading = "コウカンテ"
+
+[[entries."交換手".match]]
+input_contains_any = ["交換手"]
+reading = "コウカンシュ"
+
+[entries."皇親"]
+reading = "コウシン"
+
+[[entries."皇親".match]]
+input_contains_any = ["皇親"]
+reading = "コウシン"
+
+[entries."流涙"]
+reading = "リュウルイ"
+
+[[entries."流涙".match]]
+input_contains_any = ["流涙"]
+reading = "リュウルイ"
+
+[entries."お千絵"]
+reading = "おちえ"
+
+[[entries."お千絵".match]]
+input_contains_any = ["お千絵"]
+reading = "おちえ"
+
+[entries."項目目"]
+reading = "コウモクめ"
+
+[[entries."項目目".match]]
+input_contains_any = ["項目目"]
+reading = "コウモクめ"
