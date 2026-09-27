@@ -365,6 +365,13 @@ suffix = "ケン"
 sokuonize = true
 # === end: 件 ===
 
+# === begin: 円 === (金額。 simple.toml の 「円 = エン」 を override して漢数字にも付ける)
+# 法令・判例の 金千二百九十円 / 三百円 が 1 字ずつの規則で ひゃっきゅう と読まれていた (2026-09-27)
+[counter."円"]
+default = "エン"
+kanji_numeral = true
+# === end: 円 ===
+
 # === begin: 軒 === (家屋、 既上で定義済、 重複しない)
 
 # === begin: 階 === (places.toml に既、 重複しない)

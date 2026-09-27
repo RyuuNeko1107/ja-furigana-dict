@@ -792,3 +792,20 @@ expected = "きゅうこうこない"
 [[case]]
 input = "至急行って"
 expected = "しきゅういって"
+
+# 2026-09-28 円 に kanji_numeral (lib 0.5.3 前提)
+[[case]]
+input = "三億四一〇二万三六四〇円"
+expected = "さんおくよんせんひゃくにまんさんぜんろっぴゃくよんじゅうえん"
+[[case]]
+input = "金千二百九十円"
+expected = "きんせんにひゃくきゅうじゅうえん"
+[[case]]
+input = "三千円"
+expected = "さんぜんえん"
+[[case]]
+input = "零円"
+expected = "れいえん"
+[[case]]
+input = "数万円"
+expected = "すうまんえん"
