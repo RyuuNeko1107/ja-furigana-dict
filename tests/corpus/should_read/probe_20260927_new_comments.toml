@@ -513,3 +513,21 @@ expected = "こうぼうふでをえらばず"
 [[case]]
 input = "棒針編みを始めました"
 expected = "ぼうばりあみをはじめました"
+[[case]]
+input = "今腹減りすぎ"
+expected = "いまはらへりすぎ"
+[[case]]
+input = "頭痛酷すぎて"
+expected = "ずつうひどすぎて"
+[[case]]
+input = "先輩背が高い"
+expected = "せんぱいせがたかい"
+[[case]]
+input = "この間喉に"
+expected = "このあいだのどに"
+[[case]]
+input = "画面端で弱い"
+expected = "がめんはしでよわい"
+[[case]]
+input = "一本歯下駄"
+expected = "いっぽんばげた"
