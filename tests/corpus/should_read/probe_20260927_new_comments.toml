@@ -598,3 +598,15 @@ expected = "さみだれ"
 [[case]]
 input = "縦型朝活作業"
 expected = "たてがたあさかつさぎょう"
+[[case]]
+input = "今頭の中で"
+expected = "いまあたまのなかで"
+[[case]]
+input = "一瞬頭をよぎる"
+expected = "いっしゅんあたまをよぎる"
+[[case]]
+input = "一度手にした"
+expected = "いちどてにした"
+[[case]]
+input = "良薬口に苦し"
+expected = "りょうやくくちににがし"

@@ -1118,6 +1118,11 @@ reading = "て"
 next_starts_any = ["の", "が", "を", "に", "で", "は", "も"]
 reading = "て"
 
+# ★2026-09-28 今手をつけ / 一度手にした = て (しゅ)
+[[kanji.match]]
+prev_ends_any = ["今", "度"]
+reading = "て"
+
 [[kanji.match]]
 prev_char_type = "漢字"
 reading = "シュ"
@@ -3621,6 +3626,11 @@ reading = "あたま"
 # ★ 2026-09-25: 9月頭 / 年頭 以外の 月頭 = つきはじめ の あたま
 [[kanji.match]]
 prev_ends_any = ["月"]
+reading = "あたま"
+
+# ★2026-09-28 今頭の中で / 一瞬頭をよぎ = あたま (とう)
+[[kanji.match]]
+prev_ends_any = ["今", "瞬"]
 reading = "あたま"
 
 [[kanji.match]]
