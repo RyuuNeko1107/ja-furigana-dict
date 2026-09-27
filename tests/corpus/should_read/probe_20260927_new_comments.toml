@@ -202,3 +202,75 @@ expected = "たいへいようとしかおはなしできない"
 input = "日本人妻の話"
 mode = "hiragana"
 expected = "にほんじんつまのはなし"
+
+# 同じ比較の 251〜400 位から
+
+[[case]]
+input = "ぽんちゃん再びおねしゃす"
+mode = "hiragana"
+expected = "ぽんちゃんふたたびおねしゃす"
+
+[[case]]
+input = "シルバーウィークは宮古島へ"
+mode = "hiragana"
+expected = "シルバーウィークはみやこじまへ"
+
+[[case]]
+input = "芥見下々のやってること"
+mode = "hiragana"
+expected = "あくたみげげのやってること"
+
+[[case]]
+input = "上司さん好きヨ"
+mode = "hiragana"
+expected = "じょうしさんすきヨ"
+
+[[case]]
+input = "上司小剣氏は玄関まで"
+mode = "hiragana"
+expected = "かみつかさしょうけんしはげんかんまで"
+
+[[case]]
+input = "今日中秋の名月か"
+mode = "hiragana"
+expected = "きょうちゅうしゅうのめいげつか"
+
+[[case]]
+input = "何時だと思ってるんだお黙り"
+mode = "hiragana"
+expected = "なんじだとおもってるんだおだまり"
+
+[[case]]
+input = "伝染るんです"
+mode = "hiragana"
+expected = "うつるんです"
+
+[[case]]
+input = "夕方まで神楽坂いたほうが"
+mode = "hiragana"
+expected = "ゆうがたまでかぐらざかいたほうが"
+
+[[case]]
+input = "潮の満ち引きは知ってるかな"
+mode = "hiragana"
+expected = "しおのみちひきはしってるかな"
+
+[[case]]
+input = "楽しい半年間でした"
+mode = "hiragana"
+expected = "たのしいはんとしかんでした"
+
+[[case]]
+input = "#善法寺伊作"
+mode = "hiragana"
+expected = "#ぜんぽうじいさく"
+
+[[case]]
+input = "賞味期限切れてた"
+mode = "hiragana"
+expected = "しょうみきげんぎれてた"
+
+[[case]]
+input = "大黒さまおはよーございます"
+mode = "hiragana"
+expected = "だいこくさまおはよーございます"
