@@ -671,3 +671,20 @@ expected = "ちゅうから"
 [[case]]
 input = "岩壁"
 expected = "がんぺき"
+
+# 2026-09-28 own/現行 差分
+[[case]]
+input = "早々に寝落ちた"
+expected = "そうそうにねおちた"
+[[case]]
+input = "連休早々に"
+expected = "れんきゅうそうそうに"
+[[case]]
+input = "着せ替え人形"
+expected = "きせかえにんぎょう"
+[[case]]
+input = "一区切りつけて"
+expected = "ひとくぎりつけて"
+[[case]]
+input = "再々戦"
+expected = "さいさいせん"

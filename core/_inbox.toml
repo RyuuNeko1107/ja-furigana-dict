@@ -1873,3 +1873,40 @@ reading = "ホッシ"
 [[entries."欲し".match]]
 input_contains_any = ["欲し"]
 reading = "ホシ"
+
+# ★2026-09-28 own/現行 差分 (新着コメント): 早々 = はやばや/そうぞう、 着せ替え = きせがえ、 一区切り = いっく、 再々 = さいざい
+
+[entries."早々"]
+reading = "ソウソウ"
+
+[[entries."早々".match]]
+input_contains_any = ["早々"]
+reading = "ソウソウ"
+
+[entries."着せ替え"]
+reading = "きせかえ"
+
+[[entries."着せ替え".match]]
+input_contains_any = ["着せ替え"]
+reading = "きせかえ"
+
+[entries."一区切り"]
+reading = "ひとくぎり"
+
+[[entries."一区切り".match]]
+input_contains_any = ["一区切り"]
+reading = "ひとくぎり"
+
+[entries."再々"]
+reading = "サイサイ"
+
+[[entries."再々".match]]
+input_contains_any = ["再々"]
+reading = "サイサイ"
+
+[entries."再々戦"]
+reading = "サイサイセン"
+
+[[entries."再々戦".match]]
+input_contains_any = ["再々戦"]
+reading = "サイサイセン"
