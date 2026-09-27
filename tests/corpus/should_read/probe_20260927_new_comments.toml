@@ -688,3 +688,9 @@ expected = "ひとくぎりつけて"
 [[case]]
 input = "再々戦"
 expected = "さいさいせん"
+[[case]]
+input = "バイト先の先輩"
+expected = "バイトさきのせんぱい"
+[[case]]
+input = "最後の先行だしねえ"
+expected = "さいごのせんこうだしねえ"
