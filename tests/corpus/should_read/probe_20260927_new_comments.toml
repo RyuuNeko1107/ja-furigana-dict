@@ -274,3 +274,25 @@ expected = "しょうみきげんぎれてた"
 input = "大黒さまおはよーございます"
 mode = "hiragana"
 expected = "だいこくさまおはよーございます"
+
+# 伏せ字の 〇〇 = まるまる (数字の 〇 は lib の位取り対応待ちなので固定しない)
+
+[[case]]
+input = "〇〇しないと出られない部屋"
+mode = "hiragana"
+expected = "まるまるしないとでられないへや"
+
+[[case]]
+input = "〇〇さんがいないと"
+mode = "hiragana"
+expected = "まるまるさんがいないと"
+
+[[case]]
+input = "〇〇県〇〇市"
+mode = "hiragana"
+expected = "まるまるけんまるまるし"
+
+[[case]]
+input = "〇〇ちゃん可哀想"
+mode = "hiragana"
+expected = "まるまるちゃんかわいそう"
