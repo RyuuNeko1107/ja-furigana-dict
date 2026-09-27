@@ -645,3 +645,29 @@ expected = "きんよくしすぎる"
 [[case]]
 input = "避難して"
 expected = "ひなんして"
+
+# 2026-09-28 両腕 / 壁打ち / 眠さ / 刺繍糸 / 甘やか / 中辛
+[[case]]
+input = "両腕を組む"
+expected = "りょううでをくむ"
+[[case]]
+input = "創作壁打ち"
+expected = "そうさくかべうち"
+[[case]]
+input = "眠さの限界"
+expected = "ねむさのげんかい"
+[[case]]
+input = "刺繍糸"
+expected = "ししゅういと"
+[[case]]
+input = "糸球体腎炎"
+expected = "しきゅうたいじんえん"
+[[case]]
+input = "甘やかな"
+expected = "あまやかな"
+[[case]]
+input = "中辛"
+expected = "ちゅうから"
+[[case]]
+input = "岩壁"
+expected = "がんぺき"
