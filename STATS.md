@@ -24,14 +24,14 @@ git に commit されている master HEAD の状態を基準にする。
 | カテゴリ | エントリ数 | サイズ |
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,671** | **728 KB** |
-| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **21,577** | **891 KB** |
-| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,678** | **132 KB** |
+| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **21,576** | **890 KB** |
+| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,679** | **132 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **1,712** | **44 KB** |
-| [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **836** | **40 KB** |
+| [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **865** | **43 KB** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,778** | **364 KB** |
 | [**異体字**](#異体字) (`rules/compat.toml`) | **436** | **6.1 KB** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **337** | **31 KB** |
-| **合計** | **70,025** | **2.18 MB** |
+| **合計** | **70,054** | **2.19 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -56,7 +56,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/jukugo/<genre>/*` — 手動 PR メンテのジャンル別 jukugo (≥ 2 字 surface)。 lib の Step 3 (jukugo lookup) で Lindera より優先採用。 各 genre dir の `_genre.toml` がカテゴリ description を持つ。
 
-**合計**: 21,577 件 / 891 KB (genre 6 区分)
+**合計**: 21,576 件 / 890 KB (genre 6 区分)
 
 #### 自然・生命
 
@@ -160,17 +160,17 @@ git に commit されている master HEAD の状態を基準にする。
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml) | 7,835 | 338 KB | 二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む) |
+| [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml) | 7,834 | 338 KB | 二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む) |
 | [`core/jukugo/basic/four_char.toml`](core/jukugo/basic/four_char.toml) | 35 | 2.4 KB | 四字熟語 (4 字 + 全 CJK 漢字) |
 | [`core/jukugo/basic/split_guard.toml`](core/jukugo/basic/split_guard.toml) | 33 | 4.0 KB | Lindera の 「熟語 + か」 分割に負けないための tie-break entry |
-| **小計** (3 ファイル) | **7,903** | **345 KB** | |
+| **小計** (3 ファイル) | **7,902** | **345 KB** | |
 
 
 ### 作品造語
 
 `core/works/<medium>/*` — 媒体 (game / literature 等) ごとに 1 作品 1 ファイル。 原則は公式読み (一般通称として定着していれば採録可)、 出典コメント必須、 古典読みは現代読み無い場合のみ。
 
-**合計**: 1,678 件 / 132 KB (genre 4 区分)
+**合計**: 1,679 件 / 132 KB (genre 4 区分)
 
 #### ゲーム
 
@@ -181,9 +181,9 @@ git に commit されている master HEAD の状態を基準にする。
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
 | [`core/works/game/touhou.toml`](core/works/game/touhou.toml) | 269 | 9.2 KB | 東方Project (上海アリス幻樂団): キャラクター名 / 場所 / 用語 (公式読みベース) |
-| [`core/works/game/idolmaster.toml`](core/works/game/idolmaster.toml) | 64 | 5.3 KB | アイドルマスター (バンダイナムコ): キャラクター名 |
+| [`core/works/game/idolmaster.toml`](core/works/game/idolmaster.toml) | 65 | 5.4 KB | アイドルマスター (バンダイナムコ): キャラクター名 |
 | [`core/works/game/sangokushi.toml`](core/works/game/sangokushi.toml) | 45 | 3.1 KB | 三国志 (演義/ゲーム/漫画): 武将名 (日本語音読み) |
-| [`core/works/game/touken_ranbu.toml`](core/works/game/touken_ranbu.toml) | 33 | 3.0 KB | 刀剣乱舞 (ニトロプラス): 刀剣男士名 |
+| [`core/works/game/touken_ranbu.toml`](core/works/game/touken_ranbu.toml) | 34 | 3.1 KB | 刀剣乱舞 (ニトロプラス): 刀剣男士名 |
 | [`core/works/game/genshin.toml`](core/works/game/genshin.toml) | 27 | 2.3 KB | 原神 (HoYoverse): キャラクター名 (公式日本語読みベース) |
 | [`core/works/game/hypmic.toml`](core/works/game/hypmic.toml) | 23 | 1.8 KB | ヒプノシスマイク (キングレコード): キャラクター名 |
 | [`core/works/game/lovelive.toml`](core/works/game/lovelive.toml) | 23 | 1.8 KB | ラブライブ! (サンライズ): キャラクター名 |
@@ -203,7 +203,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/game/tokimeki.toml`](core/works/game/tokimeki.toml) | 5 | 465 B | ときめきメモリアル: キャラクター名 |
 | [`core/works/game/a3.toml`](core/works/game/a3.toml) | 4 | 396 B | A3! : キャラクター名 |
 | [`core/works/game/utapri.toml`](core/works/game/utapri.toml) | 4 | 492 B | うたの☆プリンスさまっ♪ : キャラクター名 |
-| **小計** (23 ファイル) | **666** | **42 KB** | |
+| **小計** (23 ファイル) | **668** | **42 KB** | |
 
 #### 文学
 
@@ -244,7 +244,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/anime/monogatari.toml`](core/works/anime/monogatari.toml) | 14 | 1.5 KB | 〈物語〉シリーズ (西尾維新): 作品名 (公式読みベース) |
 | [`core/works/anime/tokyoghoul.toml`](core/works/anime/tokyoghoul.toml) | 13 | 1.4 KB | 東京喰種 (石田スイ): キャラクター名 / 用語 |
 | [`core/works/anime/slamdunk.toml`](core/works/anime/slamdunk.toml) | 12 | 1.0 KB | SLAM DUNK (井上雄彦): キャラクター名 |
-| [`core/works/anime/houshin.toml`](core/works/anime/houshin.toml) | 11 | 825 B | 封神演義: キャラクター名 / 用語 |
+| [`core/works/anime/houshin.toml`](core/works/anime/houshin.toml) | 10 | 762 B | 封神演義: キャラクター名 / 用語 |
 | [`core/works/anime/precure.toml`](core/works/anime/precure.toml) | 10 | 869 B | プリキュア: キャラクター名 |
 | [`core/works/anime/rurouni.toml`](core/works/anime/rurouni.toml) | 10 | 1.1 KB | るろうに剣心 (和月伸宏): キャラクター名 |
 | [`core/works/anime/garupan.toml`](core/works/anime/garupan.toml) | 8 | 656 B | ガルパン: キャラクター名 |
@@ -279,7 +279,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/anime/nurarihyon.toml`](core/works/anime/nurarihyon.toml) | 4 | 417 B | ぬらりひょんの孫: キャラクター名 |
 | [`core/works/anime/seinen.toml`](core/works/anime/seinen.toml) | 4 | 496 B | 青年漫画: キャラクター名 |
 | [`core/works/anime/xxxholic.toml`](core/works/anime/xxxholic.toml) | 4 | 366 B | xxxHOLiC (CLAMP): キャラクター名 |
-| **小計** (56 ファイル) | **853** | **78 KB** | |
+| **小計** (56 ファイル) | **852** | **78 KB** | |
 
 #### VTuber
 
@@ -316,7 +316,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/_inbox.toml`](core/_inbox.toml) | 836 | 40 KB | 分類前の一時 inbox (≥2 字 surface、 内容が貯まったら適切な genre dir に振り分ける) |
+| [`core/_inbox.toml`](core/_inbox.toml) | 865 | 43 KB | 分類前の一時 inbox (≥2 字 surface、 内容が貯まったら適切な genre dir に振り分ける) |
 
 ### 単漢字 [[kanji]] format
 
@@ -398,7 +398,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 11826 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 11846 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -736,6 +736,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20260923_cur_misread.toml`](tests/corpus/should_read/probe_20260923_cur_misread.toml) | 62 |
 |  | [`tests/corpus/should_read/probe_20260923_pattern4.toml`](tests/corpus/should_read/probe_20260923_pattern4.toml) | 9 |
 |  | [`tests/corpus/should_read/probe_20260924_cur_misread2.toml`](tests/corpus/should_read/probe_20260924_cur_misread2.toml) | 431 |
+|  | [`tests/corpus/should_read/probe_20260927_new_comments.toml`](tests/corpus/should_read/probe_20260927_new_comments.toml) | 20 |
 |  | [`tests/corpus/should_read/regression.toml`](tests/corpus/should_read/regression.toml) | 560 |
 |  | [`tests/corpus/should_read/sentences.toml`](tests/corpus/should_read/sentences.toml) | 49 |
 |  | [`tests/corpus/should_read/touhou.toml`](tests/corpus/should_read/touhou.toml) | 30 |
