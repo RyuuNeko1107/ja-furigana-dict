@@ -721,3 +721,18 @@ expected = "たいしょくだいこうきた"
 [[case]]
 input = "行き来してる"
 expected = "いききしてる"
+[[case]]
+input = "誰も来ず"
+expected = "だれもこず"
+[[case]]
+input = "何も出来ずに"
+expected = "なにもできずに"
+[[case]]
+input = "先ほど来ずっと"
+expected = "さきほどらいずっと"
+[[case]]
+input = "注意書き"
+expected = "ちゅういがき"
+[[case]]
+input = "幕引き"
+expected = "まくひき"

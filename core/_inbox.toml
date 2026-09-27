@@ -1973,3 +1973,54 @@ reading = "いきづま"
 [[entries."行き詰ま".match]]
 input_contains_any = ["行き詰ま"]
 reading = "いきづま"
+
+# ★2026-09-28 own/現行 差分 300〜400 位: 下げ止まり = さげとまり / 注意書き = ちゅういかき / 幕引き = まくびき / 未だ来ず = らいず
+
+[entries."下げ止まり"]
+reading = "さげどまり"
+
+[[entries."下げ止まり".match]]
+input_contains_any = ["下げ止まり"]
+reading = "さげどまり"
+
+[entries."上げ止まり"]
+reading = "あげどまり"
+
+[[entries."上げ止まり".match]]
+input_contains_any = ["上げ止まり"]
+reading = "あげどまり"
+
+[entries."注意書き"]
+reading = "チュウイがき"
+
+[[entries."注意書き".match]]
+input_contains_any = ["注意書き"]
+reading = "チュウイがき"
+
+[entries."幕引き"]
+reading = "マクひき"
+
+[[entries."幕引き".match]]
+input_contains_any = ["幕引き"]
+reading = "マクひき"
+
+[entries."来ず"]
+reading = "こず"
+
+[[entries."来ず".match]]
+input_contains_any = ["来ず"]
+reading = "こず"
+
+[entries."出来ず"]
+reading = "できず"
+
+[[entries."出来ず".match]]
+input_contains_any = ["出来ず"]
+reading = "できず"
+
+[entries."来ずっと"]
+reading = "らいずっと"
+
+[[entries."来ずっと".match]]
+input_contains_any = ["来ずっと"]
+reading = "らいずっと"
