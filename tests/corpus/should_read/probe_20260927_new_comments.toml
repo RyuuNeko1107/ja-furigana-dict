@@ -348,3 +348,19 @@ expected = "おおふなとまけてるやん"
 input = "無類の酒好きで"
 mode = "hiragana"
 expected = "むるいのさけずきで"
+
+# 国会・青空 30 万行 (master lib vs own) から
+[[case]]
+input = "八百万の神"
+mode = "hiragana"
+expected = "やおよろずのかみ"
+
+[[case]]
+input = "平次も驚きました。"
+mode = "hiragana"
+expected = "へいじもおどろきました。"
+
+[[case]]
+input = "○月○日の話"
+mode = "hiragana"
+expected = "まるがつまるにちのはなし"
