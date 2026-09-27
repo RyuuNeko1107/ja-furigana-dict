@@ -130,3 +130,75 @@ expected = "しゃしん、まいすうおおいとくどい"
 input = "数多い作品"
 mode = "hiragana"
 expected = "かずおおいさくひん"
+
+# 同じ比較の 151〜250 位から
+
+[[case]]
+input = "月桃の根元"
+mode = "hiragana"
+expected = "げっとうのねもと"
+
+[[case]]
+input = "休んでくれない仕事人間"
+mode = "hiragana"
+expected = "やすんでくれないしごとにんげん"
+
+[[case]]
+input = "甘い日本酒探してる"
+mode = "hiragana"
+expected = "あまいにほんしゅさがしてる"
+
+[[case]]
+input = "北日本・九州で晴れる"
+mode = "hiragana"
+expected = "きたにほんきゅうしゅうではれる"
+
+[[case]]
+input = "流石に行き帰りは公共交通機関"
+mode = "hiragana"
+expected = "さすがにいきかえりはこうきょうこうつうきかん"
+
+[[case]]
+input = "水戸線/桜川市"
+mode = "hiragana"
+expected = "みとせんすらっしゅさくらがわし"
+
+[[case]]
+input = "そういう気持ちなんだー!"
+mode = "hiragana"
+expected = "そういうきもちなんだー!"
+
+[[case]]
+input = "風花雪月本編でちょっと"
+mode = "hiragana"
+expected = "ふうかせつげつほんぺんでちょっと"
+
+[[case]]
+input = "【常磐線(快速)[品川~取手]】台風の影響"
+mode = "hiragana"
+expected = "【じょうばんせん(かいそく)しながわとりで】たいふうのえいきょう"
+
+[[case]]
+input = "一部だけ色付けたけど"
+mode = "hiragana"
+expected = "いちぶだけいろづけたけど"
+
+[[case]]
+input = "一言二言会話して"
+mode = "hiragana"
+expected = "ひとことふたことかいわして"
+
+[[case]]
+input = "対人ぶぶ付けの味"
+mode = "hiragana"
+expected = "たいじんぶぶづけのあじ"
+
+[[case]]
+input = "太平洋としかお話しできない"
+mode = "hiragana"
+expected = "たいへいようとしかおはなしできない"
+
+[[case]]
+input = "日本人妻の話"
+mode = "hiragana"
+expected = "にほんじんつまのはなし"
