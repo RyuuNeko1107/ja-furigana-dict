@@ -322,3 +322,29 @@ expected = "だいひょうとりしまりやく しばはし かずひろ"
 input = "私はストローク作りまw"
 mode = "hiragana"
 expected = "わたしはストロークつくりまw"
+
+# Wikipedia 30 万行 (master lib vs own) から
+[[case]]
+input = "市立小・中学校に通う場合"
+mode = "hiragana"
+expected = "しりつしょうちゅうがっこうにかようばあい"
+
+[[case]]
+input = "大船駅東京方に設けられた"
+mode = "hiragana"
+expected = "おおふなえきとうきょうほうにもうけられた"
+
+[[case]]
+input = "大船に乗ったつもりで"
+mode = "hiragana"
+expected = "おおぶねにのったつもりで"
+
+[[case]]
+input = "大船渡負けてるやん"
+mode = "hiragana"
+expected = "おおふなとまけてるやん"
+
+[[case]]
+input = "無類の酒好きで"
+mode = "hiragana"
+expected = "むるいのさけずきで"
