@@ -869,6 +869,9 @@ description = "分類前の一時 inbox (≥2 字 surface、 内容が貯まっ�
 "半年間" = "ハントシカン"
 "善法寺" = "ゼンポウジ"
 "期限切れ" = "キゲンギレ"
+"紐付ける" = "ヒモヅケル"
+"紐付い" = "ヒモヅイ"
+"紐付く" = "ヒモヅク"
 "万歩計" = "マンポケイ"
 # ★2026-09-27 法令・裁判例 (master lib vs own) から
 "有り高" = "アリダカ"
@@ -1650,3 +1653,11 @@ reading = "ヘイジ"
 [[entries."平次".match]]
 input_contains_any = ["平次"]
 reading = "ヘイジ"
+
+# 紐付け: master lib で 紐付 + け = ひもつきけ に負けるので同点破り
+[entries."紐付け"]
+reading = "ヒモヅケ"
+
+[[entries."紐付け".match]]
+input_contains_any = ["紐付け"]
+reading = "ヒモヅケ"

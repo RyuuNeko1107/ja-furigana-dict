@@ -364,3 +364,8 @@ expected = "へいじもおどろきました。"
 input = "○月○日の話"
 mode = "hiragana"
 expected = "まるがつまるにちのはなし"
+
+[[case]]
+input = "明示的に紐付けされた引数"
+mode = "hiragana"
+expected = "めいじてきにひもづけされたひきすう"
