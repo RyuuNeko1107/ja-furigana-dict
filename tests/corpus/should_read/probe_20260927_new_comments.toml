@@ -783,3 +783,12 @@ expected = "せんしゃちょうのしじ"
 [[case]]
 input = "列車長くね"
 expected = "れっしゃながくね"
+[[case]]
+input = "急行こない"
+expected = "きゅうこうこない"
+[[case]]
+input = "急行来ない"
+expected = "きゅうこうこない"
+[[case]]
+input = "至急行って"
+expected = "しきゅういって"

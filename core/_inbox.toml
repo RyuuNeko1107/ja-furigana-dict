@@ -2106,3 +2106,12 @@ reading = "センシャチョウ"
 [[entries."戦車長".match]]
 input_contains_any = ["戦車長"]
 reading = "センシャチョウ"
+
+# ★2026-09-28 急行こない / 急行来ない が 急 + 行こ / 行来 (いきき) に割れる (IPADIC)
+
+[entries."急行"]
+reading = "キュウコウ"
+
+[[entries."急行".match]]
+input_contains_any = ["急行"]
+reading = "キュウコウ"
