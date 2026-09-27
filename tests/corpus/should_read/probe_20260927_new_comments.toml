@@ -756,3 +756,15 @@ expected = "はもののこうかんてじゅん"
 [[case]]
 input = "流涙"
 expected = "りゅうるい"
+[[case]]
+input = "車長と装填手のハッチ"
+expected = "しゃちょうとそうてんしゅのハッチ"
+[[case]]
+input = "サバ亜目の魚類"
+expected = "サバあもくのぎょるい"
+[[case]]
+input = "崩れ行く日本"
+expected = "くずれゆくにほん"
+[[case]]
+input = "本体手に入れる"
+expected = "ほんたいてにいれる"
