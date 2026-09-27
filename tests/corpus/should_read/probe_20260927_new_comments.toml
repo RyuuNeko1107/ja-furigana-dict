@@ -426,3 +426,24 @@ expected = "とつぜんなみだでてきた"
 input = "大坂冬の陣"
 mode = "hiragana"
 expected = "おおさかふゆのじん"
+
+# 机 / 傘 / 凄 / 遅 / 汁
+[[case]]
+input = "勉強机にぴったり"
+mode = "hiragana"
+expected = "べんきょうづくえにぴったり"
+
+[[case]]
+input = "遅ばせながら"
+mode = "hiragana"
+expected = "おくればせながら"
+
+[[case]]
+input = "てりてり輝く貝汁"
+mode = "hiragana"
+expected = "てりてりかがやくかいじる"
+
+[[case]]
+input = "凄じい暴風雨"
+mode = "hiragana"
+expected = "すさまじいぼうふうう"
