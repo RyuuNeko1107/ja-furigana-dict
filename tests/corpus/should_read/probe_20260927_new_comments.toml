@@ -703,3 +703,21 @@ expected = "にんげんぜんいんきらい"
 [[case]]
 input = "人間嫌い"
 expected = "にんげんぎらい"
+[[case]]
+input = "近いうちに食べ行くから"
+expected = "ちかいうちにたべいくから"
+[[case]]
+input = "消え行く新時代"
+expected = "きえゆくしんじだい"
+[[case]]
+input = "行く末"
+expected = "ゆくすえ"
+[[case]]
+input = "先行きも不透明"
+expected = "さきゆきもふとうめい"
+[[case]]
+input = "退職代行きた"
+expected = "たいしょくだいこうきた"
+[[case]]
+input = "行き来してる"
+expected = "いききしてる"

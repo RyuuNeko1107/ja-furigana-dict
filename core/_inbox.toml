@@ -1919,3 +1919,57 @@ reading = "サイサイセン"
 [[entries."再々戦".match]]
 input_contains_any = ["再々戦"]
 reading = "サイサイセン"
+
+# ★2026-09-28 Lindera が 動詞連用形 + 行く を 補助動詞 ユク で読む (食べ行く / 迎え行く)。
+# 口語は イ、 文語 (消え行く / 更け行く / 行く末) は ユ を残す。 行き / 行こ は 旅行きた / 急行こない を割るので entry にしない
+[entries."行く"]
+reading = "イク"
+
+[[entries."行く".match]]
+input_contains_any = ["消え行", "更け行", "駆け行", "散り行", "暮れ行", "去り行", "過ぎ行", "移り行", "流れ行", "老い行", "滅び行", "朽ち行", "枯れ行", "沈み行", "遠ざかり行", "行く年", "行く末", "行く手", "行く春", "行く秋", "行く夏", "行く冬", "行く川", "行く雲", "心行く", "行く行く", "薄れ行", "ほろび行", "去り行", "分け行", "離れ行", "別れ行", "開け行", "明け行", "響き行", "越え行", "逝く"]
+reading = "ユク"
+
+
+
+[entries."行く末"]
+reading = "ユクスエ"
+
+[[entries."行く末".match]]
+input_contains_any = ["行く末"]
+reading = "ユクスエ"
+
+[entries."先行き"]
+reading = "サキゆき"
+
+[[entries."先行き".match]]
+input_contains_any = ["先行きが", "先行きは", "先行きも", "先行きの", "先行きを", "先行きに", "先行き不", "先行き感", "先行き見"]
+reading = "サキゆき"
+
+[entries."余所行き"]
+reading = "ヨソゆき"
+
+[[entries."余所行き".match]]
+input_contains_any = ["余所行き"]
+reading = "ヨソゆき"
+
+[entries."行き来"]
+reading = "いきき"
+
+[[entries."行き来".match]]
+input_contains_any = ["行き来"]
+reading = "いきき"
+
+[entries."行く先々"]
+reading = "ユクサキザキ"
+
+[[entries."行く先々".match]]
+input_contains_any = ["行く先々"]
+reading = "ユクサキザキ"
+
+
+[entries."行き詰ま"]
+reading = "いきづま"
+
+[[entries."行き詰ま".match]]
+input_contains_any = ["行き詰ま"]
+reading = "いきづま"
