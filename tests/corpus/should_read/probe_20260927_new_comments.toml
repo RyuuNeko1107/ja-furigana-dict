@@ -369,3 +369,13 @@ expected = "まるがつまるにちのはなし"
 input = "明示的に紐付けされた引数"
 mode = "hiragana"
 expected = "めいじてきにひもづけされたひきすう"
+
+[[case]]
+input = "本当に何十年も課題"
+mode = "hiragana"
+expected = "ほんとうになんじゅうねんもかだい"
+
+[[case]]
+input = "何千人"
+mode = "hiragana"
+expected = "なんぜんにん"
