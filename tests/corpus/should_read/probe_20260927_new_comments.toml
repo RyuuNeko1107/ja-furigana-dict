@@ -296,3 +296,8 @@ expected = "まるまるけんまるまるし"
 input = "〇〇ちゃん可哀想"
 mode = "hiragana"
 expected = "まるまるちゃんかわいそう"
+
+[[case]]
+input = "おじさんが××される"
+mode = "hiragana"
+expected = "おじさんがばつばつされる"
