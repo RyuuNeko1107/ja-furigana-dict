@@ -493,6 +493,15 @@ next_starts_any = ["持", "払", "稼", "貯", "儲", "無", "足", "使", "借"
                    "増", "預", "止", "渡", "掛", "溜", "失", "抜"]
 reading = "かね"
 
+# ★2026-09-28 金縛り = かな / 金巻き上げ = かね (きん)
+[[kanji.match]]
+next_starts_any = ["縛"]
+reading = "かな"
+
+[[kanji.match]]
+next_starts_any = ["巻"]
+reading = "かね"
+
 [[kanji.match]]
 next_char_type = "漢字"
 reading = "キン"
@@ -740,6 +749,11 @@ char = "古"
 default = "フル"
 
 # 古○ prefix (古代/古典/中古/古龍 等) = コ
+# ★2026-09-28 古過ぎ = ふる (こ)
+[[kanji.match]]
+next_starts_any = ["過"]
+reading = "ふる"
+
 [[kanji.match]]
 next_char_type = "漢字"
 reading = "コ"
@@ -1877,6 +1891,11 @@ char = "射"
 default = "い"
 
 # 射○ prefix (射線/射撃 等)
+# ★2026-09-28 射抜ける = い (しゃ)
+[[kanji.match]]
+next_starts_any = ["抜"]
+reading = "い"
+
 [[kanji.match]]
 next_char_type = "漢字"
 reading = "シャ"
@@ -7973,6 +7992,11 @@ reading = "ふた"
 prev_char_type = "漢字"
 reading = "ガイ"
 
+# ★2026-09-28 蓋開けた / 蓋付き = ふた (がい)
+[[kanji.match]]
+next_starts_any = ["開", "取", "使", "閉", "付"]
+reading = "ふた"
+
 [[kanji.match]]
 next_char_type = "漢字"
 reading = "ガイ"
@@ -9320,6 +9344,11 @@ next_starts_any = ["ぶ", "ば", "び", "ん", "べ", "ぼ"]
 reading = "なら"
 
 # 漢字直前 = 熟語頭 → ヘイ (= 「並列/並行/並進/並立/並走/並用」)
+# ★2026-09-28 並盛 / 並感 = なみ (へい)
+[[kanji.match]]
+next_starts_any = ["盛", "感"]
+reading = "なみ"
+
 [[kanji.match]]
 next_char_type = "漢字"
 reading = "ヘイ"
@@ -14073,6 +14102,11 @@ reading = "ぬの"
 prev_char_type = "漢字"
 reading = "フ"
 
+# ★2026-09-28 布面積 / 布買う / 布越し = ぬの (ふ)
+[[kanji.match]]
+next_starts_any = ["面", "買", "切", "越", "製", "地"]
+reading = "ぬの"
+
 [[kanji.match]]
 next_char_type = "漢字"
 reading = "フ"
@@ -14152,6 +14186,15 @@ reading = "かたまり"
 [[kanji.match]]
 prev_char_type = "漢字"
 reading = "カイ"
+
+# ★2026-09-28 塊肉 / 肉の塊買って = かたまり (かい)
+[[kanji.match]]
+next_starts_any = ["肉"]
+reading = "かたまり"
+
+[[kanji.match]]
+prev_ends_any = ["の"]
+reading = "かたまり"
 
 [[kanji.match]]
 next_char_type = "漢字"
@@ -14396,6 +14439,11 @@ reading = "おっと"
 [[kanji.match]]
 prev_char_type = "漢字"
 reading = "フ"
+
+# ★2026-09-28 夫氏 / 夫以外 / 夫担当 = おっと (ふ)
+[[kanji.match]]
+next_starts_any = ["氏", "以", "担", "候", "用", "運"]
+reading = "おっと"
 
 [[kanji.match]]
 next_char_type = "漢字"
@@ -15829,6 +15877,11 @@ reading = "しぶ"
 prev_char_type = "漢字"
 reading = "ジュウ"
 
+# ★2026-09-28 渋味 / 渋好み / 渋過ぎ = しぶ (じゅう)
+[[kanji.match]]
+next_starts_any = ["味", "顔", "好", "過", "系"]
+reading = "しぶ"
+
 [[kanji.match]]
 next_char_type = "漢字"
 reading = "ジュウ"
@@ -16311,6 +16364,11 @@ reading = "ハイ"
 # 下の next 漢字 → ハイ より先に置く。 背景 / 背後 / 背徳 / 背面 は語幹漢字が別なので非干渉
 [[kanji.match]]
 next_starts_any = ["高", "伸", "比", "丈", "筋", "番"]
+reading = "せ"
+
+# ★2026-09-28 背幅 = せ (はい)
+[[kanji.match]]
+next_starts_any = ["幅"]
 reading = "せ"
 
 [[kanji.match]]
@@ -17110,6 +17168,11 @@ reading = "み"
 prev_char_type = "漢字"
 reading = "シン"
 
+# ★2026-09-28 身綺麗 / 身悶え / 身軽 = み (しん)
+[[kanji.match]]
+next_starts_any = ["綺", "悶", "軽"]
+reading = "み"
+
 [[kanji.match]]
 next_char_type = "漢字"
 reading = "シン"
@@ -17258,6 +17321,15 @@ default = "さき"
 # ○先 suffix は さき が生産的多数 (連絡先/取引先/逃亡先/旅先/宛先/送り先/就職先…)。
 # セン になる漢字+先 (優先/祖先/率先) は Lindera 単位で正読み、ルール不要。
 # prefix 先○ (先生/先週/先端/先発) は次の next_char_type=漢字→セン で維持。
+# ★2026-09-28 連絡先交換 / 譲り先探して = さき (せん)。 X先生 は先に拾う
+[[kanji.match]]
+next_starts_any = ["生", "順"]
+reading = "セン"
+
+[[kanji.match]]
+prev_ends_any = ["絡", "り", "込"]
+reading = "さき"
+
 [[kanji.match]]
 next_char_type = "漢字"
 reading = "セン"

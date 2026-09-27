@@ -894,6 +894,13 @@ description = "分類前の一時 inbox (≥2 字 surface、 内容が貯まっ�
 "大泣" = "おおなき"
 "爆泣" = "バクなき"
 "一本歯" = "イッポンば"
+"毛束" = "けたば"
+"懐具合" = "ふところグアイ"
+"懐事情" = "ふところジジョウ"
+"婆様" = "ばあさま"
+"並盛" = "なみもり"
+"身綺麗" = "みぎれい"
+"布切" = "ぬのきれ"
 "棒針" = "ボウバリ"
 "輪針" = "ワバリ"
 "中年男" = "チュウネンオトコ"     # 年男 (としおとこ) に割られる
@@ -1705,3 +1712,25 @@ reading = "ヒモヅケ"
 [[entries."紐付け".match]]
 input_contains_any = ["紐付け"]
 reading = "ヒモヅケ"
+
+# ★2026-09-28 身軽 = みがる / 読込 = よみこみ (次が漢字なら音 の 身/読 と同点になるので常時 match で勝たせる)
+[entries."身軽"]
+reading = "みがる"
+
+[[entries."身軽".match]]
+input_contains_any = ["身軽"]
+reading = "みがる"
+
+[entries."読込"]
+reading = "よみこみ"
+
+[[entries."読込".match]]
+input_contains_any = ["読込"]
+reading = "よみこみ"
+
+[entries."身軽さ"]
+reading = "みがるさ"
+
+[[entries."身軽さ".match]]
+input_contains_any = ["身軽さ"]
+reading = "みがるさ"

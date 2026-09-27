@@ -531,3 +531,38 @@ expected = "がめんはしでよわい"
 [[case]]
 input = "一本歯下駄"
 expected = "いっぽんばげた"
+
+# 2026-09-28 次が漢字なら音 の誤爆 (先/蓋/塊/布/夫/渋/並/身/古/背/射/金) と保護語
+[[case]]
+input = "連絡先交換しよう"
+expected = "れんらくさきこうかんしよう"
+[[case]]
+input = "この先生は"
+expected = "このせんせいは"
+[[case]]
+input = "請求者より先順位の"
+expected = "せいきゅうしゃよりせんじゅんいの"
+[[case]]
+input = "蓋開けた"
+expected = "ふたあけた"
+[[case]]
+input = "肉の塊買って"
+expected = "にくのかたまりかって"
+[[case]]
+input = "布面積"
+expected = "ぬのめんせき"
+[[case]]
+input = "夫氏が帰ってきた"
+expected = "おっとしがかえってきた"
+[[case]]
+input = "並盛"
+expected = "なみもり"
+[[case]]
+input = "この身軽さ"
+expected = "このみがるさ"
+[[case]]
+input = "金縛りにあう"
+expected = "かなしばりにあう"
+[[case]]
+input = "読込先指定"
+expected = "よみこみさきしてい"
