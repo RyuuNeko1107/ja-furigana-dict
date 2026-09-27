@@ -405,3 +405,24 @@ expected = "よんどねくらいしてる"
 input = "酸性雨に関する"
 mode = "hiragana"
 expected = "さんせいうにかんする"
+
+# 「前が漢字なら音読み」 を外した 6 字 (隣 / 冬 / 鍵 / 穴 / 鼻 / 涙)
+[[case]]
+input = "そのさらに左隣のルーター"
+mode = "hiragana"
+expected = "そのさらにひだりどなりのルーター"
+
+[[case]]
+input = "その後鍵開いて"
+mode = "hiragana"
+expected = "そのごかぎひらいて"
+
+[[case]]
+input = "突然涙出てきた"
+mode = "hiragana"
+expected = "とつぜんなみだでてきた"
+
+[[case]]
+input = "大坂冬の陣"
+mode = "hiragana"
+expected = "おおさかふゆのじん"
