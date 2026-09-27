@@ -301,3 +301,24 @@ expected = "まるまるちゃんかわいそう"
 input = "おじさんが××される"
 mode = "hiragana"
 expected = "おじさんがばつばつされる"
+
+# 本番 API 入力 (9/25 以降) から
+[[case]]
+input = "覗いたらばり長文書いてあった"
+mode = "hiragana"
+expected = "のぞいたらばりちょうぶんかいてあった"
+
+[[case]]
+input = "ばなな大杉だろ"
+mode = "hiragana"
+expected = "ばななおおすぎだろ"
+
+[[case]]
+input = "代表取締役 柴橋 和弘"
+mode = "hiragana"
+expected = "だいひょうとりしまりやく しばはし かずひろ"
+
+[[case]]
+input = "私はストローク作りまw"
+mode = "hiragana"
+expected = "わたしはストロークつくりまw"
