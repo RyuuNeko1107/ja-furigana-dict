@@ -478,3 +478,38 @@ expected = "たかいちそうりとかたやまざいむしょう"
 input = "AIに全部丸投げ"
 mode = "hiragana"
 expected = "エーアイにぜんぶまるなげ"
+
+# 2026-09-28 前が漢字なら音 の誤爆 (早 / 親 / 首 / 火 / 耳) と保護語
+[[case]]
+input = "お仕事早過ぎて感謝"
+expected = "おしごとはやすぎてかんしゃ"
+[[case]]
+input = "一人親の家庭"
+expected = "ひとりおやのかてい"
+[[case]]
+input = "突然首を絞めた"
+expected = "とつぜんくびをしめた"
+[[case]]
+input = "両手首を縛る"
+expected = "りょうてくびをしばる"
+[[case]]
+input = "一度火がついたら止まらん"
+expected = "いちどひがついたらとまらん"
+[[case]]
+input = "虎耳女"
+expected = "とらみみじょ"
+[[case]]
+input = "一耳の聴力"
+expected = "いちじのちょうりょく"
+[[case]]
+input = "艦首に命中"
+expected = "かんしゅにめいちゅう"
+[[case]]
+input = "各筆の土地"
+expected = "かくひつのとち"
+[[case]]
+input = "弘法筆を選ばず"
+expected = "こうぼうふでをえらばず"
+[[case]]
+input = "棒針編みを始めました"
+expected = "ぼうばりあみをはじめました"
