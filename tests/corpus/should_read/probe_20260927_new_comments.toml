@@ -1,0 +1,101 @@
+# 2026-09-27 9/23 以降の新規配信コメント 265 万行を 0.5.0 と own (j31) で読み比べ、 割れた型から直した現行の誤読の回帰
+
+[[case]]
+input = "08:55更新 #上里町 の周辺で雨"
+mode = "hiragana"
+expected = "はちじごじゅうごふんこうしん #かみさとまち のしゅうへんであめ"
+
+[[case]]
+input = "青原さん今日和"
+mode = "hiragana"
+expected = "あおはらさんこんにちわ"
+
+[[case]]
+input = "愛し方はいくらでもある"
+mode = "hiragana"
+expected = "あいしかたはいくらでもある"
+
+[[case]]
+input = "これは最近の気に入っている曲"
+mode = "hiragana"
+expected = "これはさいきんのきにいっているきょく"
+
+[[case]]
+input = "一気に入った方がいい"
+mode = "hiragana"
+expected = "いっきにはいったほうがいい"
+
+[[case]]
+input = "今来たけどすげー壁"
+mode = "hiragana"
+expected = "いまきたけどすげーかべ"
+
+[[case]]
+input = "今日からお絵描き始めます"
+mode = "hiragana"
+expected = "きょうからおえかきはじめます"
+
+[[case]]
+input = "帰宅早々寝る"
+mode = "hiragana"
+expected = "きたくそうそうねる"
+
+[[case]]
+input = "漫画だとトゲトゲ吹き出しだった"
+mode = "hiragana"
+expected = "まんがだとトゲトゲふきだしだった"
+
+[[case]]
+input = "みんなの如月千早がマクドに出てる"
+mode = "hiragana"
+expected = "みんなのきさらぎちはやがマクドにでてる"
+
+[[case]]
+input = "お兄ちゃんとゆぅじ"
+mode = "hiragana"
+expected = "おにいちゃんとゆぅじ"
+
+[[case]]
+input = "名古屋「晴時々曇」"
+mode = "hiragana"
+expected = "なごや「はれときどきくもり」"
+
+[[case]]
+input = "iPad代を捻り出せないか"
+mode = "hiragana"
+expected = "アイパッドだいをひねりだせないか"
+
+[[case]]
+input = "一個ひと段落して安眠"
+mode = "hiragana"
+expected = "いっこひとだんらくしてあんみん"
+
+[[case]]
+input = "ご飯普通盛りで全然良い"
+mode = "hiragana"
+expected = "ごはんふつうもりでぜんぜんよい"
+
+[[case]]
+input = "例のシーンで鳥肌立つ"
+mode = "hiragana"
+expected = "れいのシーンでとりはだたつ"
+
+[[case]]
+input = "雨降りすぎ"
+mode = "hiragana"
+expected = "あめふりすぎ"
+
+[[case]]
+input = "大穴馬を馬券に"
+mode = "hiragana"
+expected = "おおあなうまをばけんに"
+
+[[case]]
+input = "封神原画展やった"
+mode = "hiragana"
+expected = "ほうしんげんがてんやった"
+
+[[case]]
+input = "御手杵こんなに声可愛かったっけ"
+mode = "hiragana"
+expected = "おてぎねこんなにこえかわいかったっけ"
