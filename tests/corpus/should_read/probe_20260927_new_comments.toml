@@ -768,3 +768,18 @@ expected = "くずれゆくにほん"
 [[case]]
 input = "本体手に入れる"
 expected = "ほんたいてにいれる"
+[[case]]
+input = "申請者の履歴書及び資産目録"
+expected = "しんせいしゃのりれきしょおよびしさんもくろく"
+[[case]]
+input = "列車長"
+expected = "れっしゃちょう"
+[[case]]
+input = "電車長すぎる"
+expected = "でんしゃながすぎる"
+[[case]]
+input = "戦車長の指示"
+expected = "せんしゃちょうのしじ"
+[[case]]
+input = "列車長くね"
+expected = "れっしゃながくね"

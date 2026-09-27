@@ -2077,5 +2077,32 @@ reading = "カイサン"
 reading = "シャチョウ"
 
 [[entries."車長".match]]
+prev_char_type = "漢字"
+next_starts_any = ["い", "く", "す", "過", "か", "さ", "け", "ー", "〜"]
+reading = "シャなが"
+
+[[entries."車長".match]]
+next_starts_any = ["い", "く", "す", "過", "か", "さ", "け", "ー", "〜"]
+reading = "くるまなが"
+
+[[entries."車長".match]]
 input_contains_any = ["車長"]
 reading = "シャチョウ"
+
+[entries."列車長"]
+reading = "レッシャチョウ"
+
+[[entries."列車長".match]]
+next_starts_any = ["い", "く", "す", "過", "か", "さ", "け", "ー", "〜"]
+reading = "レッシャなが"
+
+[[entries."列車長".match]]
+input_contains_any = ["列車長"]
+reading = "レッシャチョウ"
+
+[entries."戦車長"]
+reading = "センシャチョウ"
+
+[[entries."戦車長".match]]
+input_contains_any = ["戦車長"]
+reading = "センシャチョウ"
