@@ -647,13 +647,11 @@ description = "分類前の一時 inbox (≥2 字 surface、 内容が貯まっ�
 "下部" = "カブ"
 "見張人" = "ミハリニン"
 # パターン判定 第 11 回 (学習側、 own 正) から
-"枚数多" = "マイスウオオ"
 "話数多" = "ワスウオオ"
 "点数多" = "テンスウオオ"
 "手軽さ" = "テガルサ"
 "気軽さ" = "キガルサ"
 "今まで通り" = "イママデドオリ"
-"手放さ" = "テバナサ"
 "手放し" = "テバナシ"
 "最後方" = "サイコウホウ"
 "七三" = "シチサン"
@@ -711,7 +709,6 @@ description = "分類前の一時 inbox (≥2 字 surface、 内容が貯まっ�
 "開けて" = "アケテ"
 "開けた" = "アケタ"
 "開けっ" = "アケッ"
-"怖じ気づ" = "オジケヅ"
 "話し好き" = "ハナシズキ"
 "お暇します" = "オイトマシマス"
 "知る由" = "シルヨシ"
@@ -728,11 +725,9 @@ description = "分類前の一時 inbox (≥2 字 surface、 内容が貯まっ�
 "お父様" = "オトウサマ"
 "怖じ気" = "オジケ"
 "年相応" = "トシソウオウ"
-"引っ叩" = "ヒッパタ"
 "お得感" = "オトクカン"
 "大間違い" = "オオマチガイ"
 "日本人形" = "ニホンニンギョウ"
-"ずる賢" = "ズルガシコ"
 "地図上" = "チズジョウ"
 "数日" = "スウジツ"
 "いつも通り" = "イツモドオリ"
@@ -842,6 +837,8 @@ description = "分類前の一時 inbox (≥2 字 surface、 内容が貯まっ�
 "ふつう盛り" = "フツウモリ"    # ざかり になっていた
 "普通盛り" = "フツウモリ"
 "大穴馬" = "オオアナウマ"        # 大穴 + 馬 = ば を避ける
+"枚数多" = "マイスウオオ"        # 枚数多過ぎ (枚数多い は下の詳細 entry)
+"回数多" = "カイスウオオ"
 "雨降りすぎ" = "アメフリスギ"    # 降りすぎ = おりすぎ に負ける
 "雪降りすぎ" = "ユキフリスギ"
 
@@ -1407,12 +1404,6 @@ reading = "ヒネリダ"
 input_contains_any = ["捻り出"]
 reading = "ヒネリダ"
 
-[entries."回数多"]
-reading = "カイスウオオ"
-
-[[entries."回数多".match]]
-input_contains_any = ["回数多"]
-reading = "カイスウオオ"
 
 [entries."鳥肌立"]
 reading = "トリハダタ"
@@ -1442,3 +1433,61 @@ reading = "イッキニハイッ"
 [[entries."一気に入っ".match]]
 input_contains_any = ["一気に入っ"]
 reading = "イッキニハイッ"
+
+# ★2026-09-27 _inbox 全 entry を実例で 0.5.0 に通して効いていなかったもの (同点負け / 数多い に負ける)
+
+[entries."ずる賢"]
+reading = "ズルガシコ"
+
+[[entries."ずる賢".match]]
+input_contains_any = ["ずる賢"]
+reading = "ズルガシコ"
+
+[entries."引っ叩"]
+reading = "ヒッパタ"
+
+[[entries."引っ叩".match]]
+input_contains_any = ["引っ叩"]
+reading = "ヒッパタ"
+
+[entries."怖じ気づ"]
+reading = "オジケヅ"
+
+[[entries."怖じ気づ".match]]
+input_contains_any = ["怖じ気づ"]
+reading = "オジケヅ"
+
+[entries."手放さ"]
+reading = "テバナサ"
+
+[[entries."手放さ".match]]
+input_contains_any = ["手放さ"]
+reading = "テバナサ"
+
+[entries."回数多い"]
+reading = "カイスウオオイ"
+
+[[entries."回数多い".match]]
+input_contains_any = ["回数多い"]
+reading = "カイスウオオイ"
+
+[entries."枚数多い"]
+reading = "マイスウオオイ"
+
+[[entries."枚数多い".match]]
+input_contains_any = ["枚数多い"]
+reading = "マイスウオオイ"
+
+[entries."人数多い"]
+reading = "ニンズウオオイ"
+
+[[entries."人数多い".match]]
+input_contains_any = ["人数多い"]
+reading = "ニンズウオオイ"
+
+[entries."件数多い"]
+reading = "ケンスウオオイ"
+
+[[entries."件数多い".match]]
+input_contains_any = ["件数多い"]
+reading = "ケンスウオオイ"

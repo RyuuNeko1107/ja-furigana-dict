@@ -99,3 +99,34 @@ expected = "ほうしんげんがてんやった"
 input = "御手杵こんなに声可愛かったっけ"
 mode = "hiragana"
 expected = "おてぎねこんなにこえかわいかったっけ"
+
+# _inbox 全 entry を実例で 0.5.0 に通して、 効いていなかったもの (同点負け / 数多い に負ける)
+[[case]]
+input = "ずる賢い一面"
+mode = "hiragana"
+expected = "ずるがしこいいちめん"
+
+[[case]]
+input = "いっかい引っ叩かれた方がいい"
+mode = "hiragana"
+expected = "いっかいひっぱたかれたほうがいい"
+
+[[case]]
+input = "怖じ気づいた"
+mode = "hiragana"
+expected = "おじけづいた"
+
+[[case]]
+input = "絶対に手放さない"
+mode = "hiragana"
+expected = "ぜったいにてばなさない"
+
+[[case]]
+input = "写真、枚数多いとくどい"
+mode = "hiragana"
+expected = "しゃしん、まいすうおおいとくどい"
+
+[[case]]
+input = "数多い作品"
+mode = "hiragana"
+expected = "かずおおいさくひん"
