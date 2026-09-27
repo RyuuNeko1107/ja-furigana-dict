@@ -610,3 +610,38 @@ expected = "いちどてにした"
 [[case]]
 input = "良薬口に苦し"
 expected = "りょうやくくちににがし"
+
+# 2026-09-28 活用形の文語読み化け (戦いだ=そよいだ / 着いて=ちゃくいて / 欲しすぎ=ほっし) と保護
+[[case]]
+input = "アツい戦いだ"
+expected = "アツいたたかいだ"
+[[case]]
+input = "恐怖と戦いつつ"
+expected = "きょうふとたたかいつつ"
+[[case]]
+input = "恐れ戦いて"
+expected = "おそれおののいて"
+[[case]]
+input = "大阪着いてる"
+expected = "おおさかついてる"
+[[case]]
+input = "マミーの水着いつ来るの"
+expected = "マミーのみずぎいつくるの"
+[[case]]
+input = "雨落ち着いてきた"
+expected = "あめおちついてきた"
+[[case]]
+input = "自分も欲しすぎて"
+expected = "じぶんもほしすぎて"
+[[case]]
+input = "脳が糖分を欲している"
+expected = "のうがとうぶんをほっしている"
+[[case]]
+input = "金欲しさに"
+expected = "かねほしさに"
+[[case]]
+input = "禁欲しすぎる"
+expected = "きんよくしすぎる"
+[[case]]
+input = "避難して"
+expected = "ひなんして"

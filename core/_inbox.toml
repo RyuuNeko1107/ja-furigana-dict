@@ -1766,3 +1766,102 @@ reading = "ハイナンケイハン"
 [[entries."海南鶏飯".match]]
 input_contains_any = ["海南鶏飯"]
 reading = "ハイナンケイハン"
+
+# ★2026-09-28 活用形の文語読み化け (新着コメント 読み割れ)。 恐怖と戦いつつ = そよい / 戦いたい = おののい /
+# 大阪着いてる = ちゃくい / 欲しすぎ = ほっし。 現代語読みを常時 match で勝たせる
+[entries."戦いだ"]
+reading = "タタカイダ"
+
+[[entries."戦いだ".match]]
+input_contains_any = ["戦いだ"]
+reading = "タタカイダ"
+
+[entries."戦いたい"]
+reading = "タタカイタイ"
+
+[[entries."戦いたい".match]]
+input_contains_any = ["戦いたい"]
+reading = "タタカイタイ"
+
+[entries."戦いつつ"]
+reading = "タタカイツツ"
+
+[[entries."戦いつつ".match]]
+input_contains_any = ["戦いつつ"]
+reading = "タタカイツツ"
+
+[entries."着い"]
+reading = "ツイ"
+
+[[entries."着い".match]]
+prev_ends_any = ["水", "下", "上", "厚", "薄", "肌", "寝", "普", "部", "晴", "産", "古", "私"]
+reading = "ギイ"
+
+[[entries."着い".match]]
+prev_char_type = "漢字"
+reading = "ツイ"
+
+[entries."居着い"]
+reading = "イツイ"
+
+[[entries."居着い".match]]
+input_contains_any = ["居着い"]
+reading = "イツイ"
+
+[entries."行着い"]
+reading = "ゆきつい"
+
+[[entries."行着い".match]]
+input_contains_any = ["行着い"]
+reading = "ゆきつい"
+
+[entries."沈着い"]
+reading = "おちつい"
+
+[[entries."沈着い".match]]
+input_contains_any = ["沈着い"]
+reading = "おちつい"
+
+[entries."近着い"]
+reading = "ちかづい"
+
+[[entries."近着い".match]]
+input_contains_any = ["近着い"]
+reading = "ちかづい"
+
+[entries."雨落ち着い"]
+reading = "あめおちつい"
+
+[[entries."雨落ち着い".match]]
+input_contains_any = ["雨落ち着い"]
+reading = "あめおちつい"
+
+[entries."落ち着い"]
+reading = "おちつい"
+
+[[entries."落ち着い".match]]
+input_contains_any = ["落ち着い"]
+reading = "おちつい"
+
+[entries."落着い"]
+reading = "おちつい"
+
+[[entries."落着い".match]]
+input_contains_any = ["落着い"]
+reading = "おちつい"
+
+
+[entries."欲し"]
+reading = "ホシ"
+
+[[entries."欲し".match]]
+prev_ends_any = ["禁", "意", "食", "強", "貪", "私", "無", "性", "色", "我", "愛", "情"]
+reading = "ヨクシ"
+
+[[entries."欲し".match]]
+next_starts_any = ["て", "た", "ない", "なか", "なけ", "ま", "、", ",", "，"]
+reading = "ホッシ"
+
+[[entries."欲し".match]]
+input_contains_any = ["欲し"]
+reading = "ホシ"
