@@ -9,6 +9,7 @@ role = "works"
 description = "BanG Dream! : キャラクター名"
 
 [entries]
+"初華" = "ウイカ"
 
 "山吹沙綾" = "ヤマブキサヤ"    # 沙綾=さや (default さあや)
 "市ヶ谷有咲" = "イチガヤアリサ"  # 有咲=ありさ (default ゆうさ)

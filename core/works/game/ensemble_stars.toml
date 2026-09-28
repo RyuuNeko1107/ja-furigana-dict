@@ -8,6 +8,7 @@ role = "works"
 description = "あんさんぶるスターズ! (Happy Elements): キャラクター名"
 
 [entries]
+"鉄虎" = "テトラ"
 
 "朔間" = "サクマ"              # 朔間零/凛月 (default さくかん)
 "朔間零" = "サクマレイ"

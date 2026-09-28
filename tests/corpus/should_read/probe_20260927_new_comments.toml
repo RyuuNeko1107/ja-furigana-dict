@@ -1031,3 +1031,15 @@ expected = "こていよくきのしよう"
 [[case]]
 input = "日仏文化交流"
 expected = "にちふつぶんかこうりゅう"
+[[case]]
+input = "反転術式"
+expected = "はんてんじゅつしき"
+[[case]]
+input = "ころさんは別腹"
+expected = "ころさんはべつばら"
+[[case]]
+input = "鉄虎くんの時も"
+expected = "てとらくんのときも"
+[[case]]
+input = "手術式"
+expected = "しゅじゅつしき"
