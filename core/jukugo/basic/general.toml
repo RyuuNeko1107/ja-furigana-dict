@@ -8325,7 +8325,15 @@ reading = "ドウホウ"
 [entries."秩序立"]
 reading = "チツジョダ"
 
+[[entries."秩序立".match]]
+input_contains_any = ["秩序立"]
+reading = "チツジョダ"
+
 [entries."順序立"]
+reading = "ジュンジョダ"
+
+[[entries."順序立".match]]
+input_contains_any = ["順序立"]
 reading = "ジュンジョダ"
 
 [entries."出勤日"]
@@ -9426,7 +9434,15 @@ reading = "タンジュンカバン"
 [entries."体系立"]
 reading = "タイケイダ"
 
+[[entries."体系立".match]]
+input_contains_any = ["体系立"]
+reading = "タイケイダ"
+
 [entries."組織立"]
+reading = "ソシキダ"
+
+[[entries."組織立".match]]
+input_contains_any = ["組織立"]
 reading = "ソシキダ"
 
 [entries."無組織"]

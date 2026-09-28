@@ -989,3 +989,9 @@ expected = "くちごもった"
 [[case]]
 input = "船首垂線上の"
 expected = "せんしゅすいせんうえの"
+[[case]]
+input = "かなり秩序立っていた"
+expected = "かなりちつじょだっていた"
+[[case]]
+input = "知識は体系立てて"
+expected = "ちしきはたいけいだてて"
