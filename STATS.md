@@ -25,13 +25,13 @@ git に commit されている master HEAD の状態を基準にする。
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,671** | **728 KB** |
 | [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **21,567** | **896 KB** |
-| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,707** | **133 KB** |
+| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,708** | **133 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **1,714** | **44 KB** |
-| [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **1,400** | **76 KB** |
+| [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **1,408** | **77 KB** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,778** | **369 KB** |
 | [**異体字**](#異体字) (`rules/compat.toml`) | **436** | **6.1 KB** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **338** | **31 KB** |
-| **合計** | **70,611** | **2.23 MB** |
+| **合計** | **70,620** | **2.23 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -170,7 +170,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/works/<medium>/*` — 媒体 (game / literature 等) ごとに 1 作品 1 ファイル。 原則は公式読み (一般通称として定着していれば採録可)、 出典コメント必須、 古典読みは現代読み無い場合のみ。
 
-**合計**: 1,707 件 / 133 KB (genre 4 区分)
+**合計**: 1,708 件 / 133 KB (genre 4 区分)
 
 #### ゲーム
 
@@ -184,8 +184,8 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/game/idolmaster.toml`](core/works/game/idolmaster.toml) | 66 | 5.4 KB | アイドルマスター (バンダイナムコ): キャラクター名 |
 | [`core/works/game/sangokushi.toml`](core/works/game/sangokushi.toml) | 45 | 3.1 KB | 三国志 (演義/ゲーム/漫画): 武将名 (日本語音読み) |
 | [`core/works/game/touken_ranbu.toml`](core/works/game/touken_ranbu.toml) | 37 | 3.2 KB | 刀剣乱舞 (ニトロプラス): 刀剣男士名 |
+| [`core/works/game/hypmic.toml`](core/works/game/hypmic.toml) | 29 | 1.9 KB | ヒプノシスマイク (キングレコード): キャラクター名 |
 | [`core/works/game/ensemble_stars.toml`](core/works/game/ensemble_stars.toml) | 28 | 1.9 KB | あんさんぶるスターズ! (Happy Elements): キャラクター名 |
-| [`core/works/game/hypmic.toml`](core/works/game/hypmic.toml) | 28 | 1.9 KB | ヒプノシスマイク (キングレコード): キャラクター名 |
 | [`core/works/game/genshin.toml`](core/works/game/genshin.toml) | 27 | 2.3 KB | 原神 (HoYoverse): キャラクター名 (公式日本語読みベース) |
 | [`core/works/game/lovelive.toml`](core/works/game/lovelive.toml) | 23 | 1.8 KB | ラブライブ! (サンライズ): キャラクター名 |
 | [`core/works/game/_minor.toml`](core/works/game/_minor.toml) | 19 | 1.6 KB | ゲーム 小規模作品 統合 (1作品1-3語、2026-06-21 consolidate) |
@@ -203,7 +203,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/game/tokimeki.toml`](core/works/game/tokimeki.toml) | 5 | 465 B | ときめきメモリアル: キャラクター名 |
 | [`core/works/game/a3.toml`](core/works/game/a3.toml) | 4 | 396 B | A3! : キャラクター名 |
 | [`core/works/game/utapri.toml`](core/works/game/utapri.toml) | 4 | 492 B | うたの☆プリンスさまっ♪ : キャラクター名 |
-| **小計** (23 ファイル) | **688** | **43 KB** | |
+| **小計** (23 ファイル) | **689** | **43 KB** | |
 
 #### 文学
 
@@ -316,7 +316,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/_inbox.toml`](core/_inbox.toml) | 1,400 | 76 KB | 分類前の一時 inbox (≥2 字 surface、 内容が貯まったら適切な genre dir に振り分ける) |
+| [`core/_inbox.toml`](core/_inbox.toml) | 1,408 | 77 KB | 分類前の一時 inbox (≥2 字 surface、 内容が貯まったら適切な genre dir に振り分ける) |
 
 ### 単漢字 [[kanji]] format
 
@@ -398,7 +398,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 12129 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 12131 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -736,7 +736,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20260923_cur_misread.toml`](tests/corpus/should_read/probe_20260923_cur_misread.toml) | 62 |
 |  | [`tests/corpus/should_read/probe_20260923_pattern4.toml`](tests/corpus/should_read/probe_20260923_pattern4.toml) | 9 |
 |  | [`tests/corpus/should_read/probe_20260924_cur_misread2.toml`](tests/corpus/should_read/probe_20260924_cur_misread2.toml) | 431 |
-|  | [`tests/corpus/should_read/probe_20260927_new_comments.toml`](tests/corpus/should_read/probe_20260927_new_comments.toml) | 303 |
+|  | [`tests/corpus/should_read/probe_20260927_new_comments.toml`](tests/corpus/should_read/probe_20260927_new_comments.toml) | 305 |
 |  | [`tests/corpus/should_read/regression.toml`](tests/corpus/should_read/regression.toml) | 560 |
 |  | [`tests/corpus/should_read/sentences.toml`](tests/corpus/should_read/sentences.toml) | 49 |
 |  | [`tests/corpus/should_read/touhou.toml`](tests/corpus/should_read/touhou.toml) | 30 |
