@@ -820,3 +820,9 @@ expected = "かねかんじょうがにがて"
 [[case]]
 input = "単行本楽しみ"
 expected = "たんこうぼんたのしみ"
+[[case]]
+input = "四月十一日付けで"
+expected = "しがつじゅういちにちづけで"
+[[case]]
+input = "録音物の再生演奏"
+expected = "ろくおんぶつのさいせいえんそう"
