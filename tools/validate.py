@@ -684,6 +684,43 @@ def check_jukugo_divergent_reading(
             )
 
 
+def check_jukugo_compat_surface(core_dir: Path, rules_dir: Path, errors: Errors) -> None:
+    """entry の見出しに rules/compat.toml で置き換わる字 (蟲 / 來 / 澤 / 條 等) があったら ERROR。
+
+    lib は入力だけを compat で正規化して辞書を引くので、 見出しに置き換え元の字が残っている entry は
+    一生引かれない (★2026-09-29: 翔蟲 / 倖田來未 / 百閒 が効いていなかった。 相澤消太 等は正規化後の
+    相沢消太 が別にあって読めていただけ)。 見出しは正規化後の形 (翔虫 / 倖田来未) で書く。
+    """
+    compat_path = rules_dir / 'compat.toml'
+    if not compat_path.exists():
+        return
+    with open(compat_path, 'rb') as fh:
+        compat = tomllib.load(fh)
+    mapping: dict[str, str] = {}
+
+    def walk(d: dict) -> None:
+        for k, v in d.items():
+            if isinstance(v, str) and len(k) == 1:
+                mapping[k] = v
+            elif isinstance(v, dict):
+                walk(v)
+
+    walk(compat)
+    for f in sorted(core_dir.glob('**/*.toml')):
+        rel = f.relative_to(core_dir).as_posix()
+        if rel.startswith(('accent/', 'unihan/')) or f.name.endswith('.test.toml') or f.name == '_genre.toml':
+            continue
+        try:
+            with open(f, 'rb') as fh:
+                doc = tomllib.load(fh)
+        except Exception:
+            continue
+        for key in (doc.get('entries') or {}):
+            if any(c in mapping for c in key):
+                norm = ''.join(mapping.get(c, c) for c in key)
+                errors.append(f'{rel}: entry 「{key}」 は compat で 「{norm}」 に正規化されてから引かれるので効かない。 見出しを 「{norm}」 にする')
+
+
 def check_jukugo_match_shadowed(core_dir: Path, errors: Errors) -> None:
     """match 付きの entry と同じ surface が別ファイルで単純 entry (文字列) として重複していたら ERROR。
 
@@ -955,6 +992,7 @@ def main() -> int:
     check_cross_file_duplicates(jukugo, unihan, errors)
     check_jukugo_divergent_reading(per_file_jukugo, errors)
     check_jukugo_match_shadowed(core, errors)
+    check_jukugo_compat_surface(core, rules, errors)
 
     if warnings:
         print(f"[WARN] {len(warnings)} 件の bracket 警告", file=sys.stderr)

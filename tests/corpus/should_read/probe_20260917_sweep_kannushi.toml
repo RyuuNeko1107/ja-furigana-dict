@@ -461,5 +461,5 @@ expected = "しゃこうしんをねらいうち"
 [[case]]
 input = "前、倖田來未いたよ"
 mode = "hiragana"
-expected = "まえ、こうだらいみいたよ"
+expected = "まえ、こうだくみいたよ"
 
