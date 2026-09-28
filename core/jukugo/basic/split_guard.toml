@@ -234,7 +234,7 @@ reading = "シンミツ"
 reading = "セイミツ"
 
 [[entries."精密".match]]
-next_starts_any = ["か"]
+next_starts_any = ["か", "と"]
 reading = "セイミツ"
 
 [entries."厳密"]

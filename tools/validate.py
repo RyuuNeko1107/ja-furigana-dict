@@ -711,6 +711,13 @@ def check_jukugo_match_shadowed(core_dir: Path, errors: Errors) -> None:
             errors.add(
                 f"match shadowed: '{surface}' の match 付き entry が別ファイルの単純 entry と重複 (match が消える): {details}"
             )
+        # match 付き同士も後勝ちで片方の match が消える (被る: _inbox の 損害を被る が general の条件に上書き)。
+        # works/ は作品の話題語がある時だけ効くので、 一般辞書側に写しを置くのは意図的 (扇要) = 対象外
+        general_matches = [f for f, k in lst if k == 'match' and not f.startswith('works/')]
+        if len(general_matches) > 1:
+            errors.add(
+                f"match shadowed: '{surface}' の match 付き entry が複数ファイルにある (後勝ちで片方の match が消える): {', '.join(general_matches)}"
+            )
 
 
 # ─── 単一ファイル / 細分化サブディレクトリ どちらにも対応 ─────────────────

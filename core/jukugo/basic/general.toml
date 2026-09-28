@@ -7544,6 +7544,10 @@ next_starts_any = [
 reading = "カブル"
 
 [[entries."被る".match]]
+input_contains_any = ["損害を被", "被害を被", "損失を被", "打撃を被", "迷惑を被", "不利益を被", "恩恵を被", "影響を被", "損害も被", "被害も被"]
+reading = "コウムル"
+
+[[entries."被る".match]]
 reading = "コウムル"
 prev_ends_any = [
   "被害",
@@ -12883,13 +12887,6 @@ reading = "ゴシャ"
 [[entries."誤射".match]]
 next_starts_any = ["と"]
 reading = "ゴシャ"
-
-[entries."精密"]  
-reading = "セイミツ"
-
-[[entries."精密".match]]
-next_starts_any = ["と"]
-reading = "セイミツ"
 
 [entries."毛玉"]  
 reading = "[ケダマ"

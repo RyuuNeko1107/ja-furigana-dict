@@ -925,3 +925,9 @@ expected = "がいこくごっていえばさ"
 [[case]]
 input = "人より先きに"
 expected = "ひとよりさきに"
+[[case]]
+input = "不利益を被ることになる"
+expected = "ふりえきをこうむることになる"
+[[case]]
+input = "帽子を被る"
+expected = "ぼうしをかぶる"
