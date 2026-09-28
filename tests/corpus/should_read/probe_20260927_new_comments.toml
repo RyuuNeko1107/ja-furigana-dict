@@ -1313,3 +1313,15 @@ expected = "いくえにも"
 [[case]]
 input = "禅寺の住職"
 expected = "ぜんでらのじゅうしょく"
+[[case]]
+input = "鋭い眼付"
+expected = "するどいめつき"
+[[case]]
+input = "其時彼は"
+expected = "そのときかれは"
+[[case]]
+input = "此奴は"
+expected = "こいつは"
+[[case]]
+input = "申分のない"
+expected = "もうしぶんのない"

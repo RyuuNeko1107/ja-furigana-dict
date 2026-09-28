@@ -17330,6 +17330,12 @@ default = "さら"
 char = "或"
 default = "あ"
 
+# ★2026-09-28 後ろが漢字なら ある (或時 / 或日 / 或人、 旧 あじ)。 或る / 或いは は従来どおり
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "ある"
+
+
 # 「世」 default 「セイ」 (= 世界/世代/中世/近世/出世/世襲/世紀)。
 # 助詞接続 → 「よ」 (= 「世が世なら/世の中/世を渡る」 等の単独訓)。
 [[kanji]]
@@ -21482,6 +21488,12 @@ default = "かぶと"
 char = "其"
 default = "それ"
 
+# ★2026-09-28 後ろが漢字なら その (其時 / 其後 / 其他 / 其日、 旧 それじ / それご)。 其方 / 其奴 / 其様 / 其等 は entry
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "その"
+
+
 # 「冴」 default 「さえ」 (= 「冴え/冴える」 訓主体 + 名前)
 [[kanji]]
 char = "冴"
@@ -22003,6 +22015,12 @@ default = "くし"
 [[kanji]]
 char = "此"
 default = "これ"
+
+# ★2026-09-28 後ろが漢字なら この (此度 / 此際 / 此頃)。 此奴 / 此等 / 此家 / 此方 は entry
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "この"
+
 
 # ★2026-09-18: 旧 「此の」 形式の entry から移設 (助詞込み surface の
 # entry は 「北野武は」 のように長い entry を食う)
