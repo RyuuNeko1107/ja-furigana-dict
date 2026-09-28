@@ -887,3 +887,21 @@ expected = "しけっててくさ"
 [[case]]
 input = "大金持ってるぞ"
 expected = "たいきんもってるぞ"
+[[case]]
+input = "それは赤付かない?"
+expected = "それはあかつかない?"
+[[case]]
+input = "落付かない"
+expected = "おちつかない"
+[[case]]
+input = "一周回って"
+expected = "いっしゅうまわって"
+[[case]]
+input = "日本攻めてる"
+expected = "にほんせめてる"
+[[case]]
+input = "下々の戦い"
+expected = "しもじものたたかい"
+[[case]]
+input = "極悪人だ"
+expected = "ごくあくにんだ"

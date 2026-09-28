@@ -919,6 +919,9 @@ description = "分類前の一時 inbox (≥2 字 surface、 内容が貯まっ�
 "本行寺" = "ホンギョウジ"
 "官幣" = "カンペイ"
 "代打" = "ダイダ"
+"下々" = "しもじも"
+"極悪" = "ゴクアク"
+"極悪人" = "ゴクアクニン"
 "埋めりゃ" = "うめりゃ"
 "西方沖" = "セイホウおき"
 "零円" = "レイエン"
@@ -2222,3 +2225,52 @@ reading = "シッケ"
 [[entries."湿気".match]]
 next_starts_any = ["る", "っ", "た", "て", "ら", "り", "れ", "ろ", "ち"]
 reading = "シケ"
+
+# ★2026-09-28 配信全量の差分 (中位): 日本攻めてる
+
+
+
+
+[entries."攻めて"]
+reading = "せめて"
+
+[[entries."攻めて".match]]
+input_contains_any = ["攻めて"]
+reading = "せめて"
+
+# ★2026-09-28 落付かない / 落付いた (落ち着く の旧表記、 青空文庫) = おちつ
+
+[entries."落付か"]
+reading = "おちつか"
+
+[[entries."落付か".match]]
+input_contains_any = ["落付か"]
+reading = "おちつか"
+
+[entries."落付い"]
+reading = "おちつい"
+
+[[entries."落付い".match]]
+input_contains_any = ["落付い"]
+reading = "おちつい"
+
+[entries."落付き"]
+reading = "おちつき"
+
+[[entries."落付き".match]]
+input_contains_any = ["落付き"]
+reading = "おちつき"
+
+[entries."落付く"]
+reading = "おちつく"
+
+[[entries."落付く".match]]
+input_contains_any = ["落付く"]
+reading = "おちつく"
+
+[entries."落付け"]
+reading = "おちつけ"
+
+[[entries."落付け".match]]
+input_contains_any = ["落付け"]
+reading = "おちつけ"
