@@ -1052,3 +1052,15 @@ expected = "きょうははなきん"
 [[case]]
 input = "美兎ちゃん"
 expected = "みとちゃん"
+[[case]]
+input = "さア此方へ"
+expected = "さアこちらへ"
+[[case]]
+input = "通販を何卒"
+expected = "つうはんをなにとぞ"
+[[case]]
+input = "大盛況でした"
+expected = "だいせいきょうでした"
+[[case]]
+input = "蓄光式誘導標識"
+expected = "ちっこうしきゆうどうひょうしき"
