@@ -934,3 +934,26 @@ expected = "ぼうしをかぶる"
 [[case]]
 input = "とか言うたびに"
 expected = "とかいうたびに"
+
+# 2026-09-28 辞書の 2 字熟語が Lindera の活用形に巻き取られる型
+[[case]]
+input = "サードの能力みして"
+expected = "サードののうりょくみして"
+[[case]]
+input = "厚揚げと豚肉"
+expected = "あつあげとぶたにく"
+[[case]]
+input = "一回り小さい"
+expected = "ひとまわりちいさい"
+[[case]]
+input = "世界の数多くの国"
+expected = "せかいのかずおおくのくに"
+[[case]]
+input = "スペインの人数多く見える"
+expected = "スペインのにんずうおおくみえる"
+[[case]]
+input = "経験値下がるからな"
+expected = "けいけんちさがるからな"
+[[case]]
+input = "可愛すぎてしにそー"
+expected = "かわいすぎてしにそー"

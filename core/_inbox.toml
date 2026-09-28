@@ -2303,3 +2303,59 @@ reading = "イウタビ"
 input_contains_any = ["言うたび"]
 reading = "イウタビ"
 
+
+# ★2026-09-28 辞書の 2 字熟語が Lindera の活用形に巻き取られる箇所 (新着コメント ruby の 1 字 + 漢字かな語 の隣接) から
+
+[entries."厚揚げ"]
+reading = "あつあげ"
+
+[[entries."厚揚げ".match]]
+input_contains_any = ["厚揚げ"]
+reading = "あつあげ"
+
+[entries."一回り"]
+reading = "ひとまわり"
+
+[[entries."一回り".match]]
+input_contains_any = ["一回り"]
+reading = "ひとまわり"
+
+[entries."可愛すぎ"]
+reading = "かわいすぎ"
+
+[[entries."可愛すぎ".match]]
+input_contains_any = ["可愛すぎ"]
+reading = "かわいすぎ"
+
+
+
+[entries."大助かり"]
+reading = "おおだすかり"
+
+[[entries."大助かり".match]]
+input_contains_any = ["大助かり"]
+reading = "おおだすかり"
+
+
+
+
+[entries."藻掻き"]
+reading = "もがき"
+
+[[entries."藻掻き".match]]
+input_contains_any = ["藻掻き"]
+reading = "もがき"
+
+[entries."理解る"]
+reading = "わかる"
+
+[[entries."理解る".match]]
+input_contains_any = ["理解る"]
+reading = "わかる"
+
+[entries."理解ら"]
+reading = "わから"
+
+[[entries."理解ら".match]]
+input_contains_any = ["理解ら"]
+reading = "わから"

@@ -1895,6 +1895,11 @@ reading = "スウ"
 prev_char_type = "英数"
 reading = "スウ"
 # 「数 + 漢字」 接頭辞 case (= 「数百万 / 数千 / 数年 / 数日 / 数人」) → スウ
+# ★2026-09-28 など数多く / 数多い = かず (すうおおく)。 人数 / 画数 は Lindera の語なので当たらない
+[[kanji.match]]
+next_starts_any = ["多"]
+reading = "かず"
+
 [[kanji.match]]
 next_char_type = "漢字"
 reading = "スウ"
