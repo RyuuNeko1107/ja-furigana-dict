@@ -15,6 +15,8 @@ description = "分類前の一時 inbox (≥2 字 surface、 内容が貯まっ�
 
 [entries]
 # ★2026-09-28 送り仮名込みでないと割れる形
+"取極め" = "トリキメ"
+# ★2026-09-28 送り仮名込みでないと割れる形
 "預入れ" = "アズケイレ"
 # ★2026-09-28 技術文書 / SNS の 1 字ずつ読まれた 2 字組 (もっともど / ところかん)
 "和暦" = "ワレキ"
@@ -3105,3 +3107,661 @@ reading = "ハライサゲ"
 [[entries."払下".match]]
 next_starts_any = ["げ"]
 reading = "ハライサ"
+
+[entries."取極"]
+reading = "トリキメ"
+
+[[entries."取極".match]]
+next_starts_any = ["め"]
+reading = "トリキ"
+
+[entries."取戻"]
+reading = "トリモドシ"
+
+[[entries."取戻".match]]
+next_starts_any = ["し", "す", "さ", "せ", "そ"]
+reading = "トリモド"
+
+[entries."取寄"]
+reading = "トリヨセ"
+
+[[entries."取寄".match]]
+next_starts_any = ["せ", "さ", "す", "そ"]
+reading = "トリヨ"
+
+[entries."取除"]
+reading = "トリノゾキ"
+
+[[entries."取除".match]]
+next_starts_any = ["き", "く", "か", "け", "こ", "い"]
+reading = "トリノゾ"
+
+[entries."取外"]
+reading = "トリハズシ"
+
+[[entries."取外".match]]
+next_starts_any = ["し", "す", "さ", "せ", "そ"]
+reading = "トリハズ"
+
+[entries."取置"]
+reading = "トリオキ"
+
+[[entries."取置".match]]
+next_starts_any = ["き", "く", "か", "け", "こ", "い"]
+reading = "トリオ"
+
+[entries."引続"]
+reading = "ヒキツヅキ"
+
+[[entries."引続".match]]
+next_starts_any = ["き", "く", "か", "け", "こ", "い"]
+reading = "ヒキツヅ"
+
+[entries."引揚"]
+reading = "ヒキアゲ"
+
+[[entries."引揚".match]]
+next_starts_any = ["げ"]
+reading = "ヒキア"
+
+[entries."引替"]
+reading = "ヒキカエ"
+
+[[entries."引替".match]]
+next_starts_any = ["え"]
+reading = "ヒキカ"
+
+[entries."引起"]
+reading = "ヒキオコシ"
+
+[[entries."引起".match]]
+next_starts_any = ["し", "す", "さ", "せ", "そ"]
+reading = "ヒキオコ"
+
+[entries."引返"]
+reading = "ヒキカエシ"
+
+[[entries."引返".match]]
+next_starts_any = ["し", "す", "さ", "せ", "そ"]
+reading = "ヒキカエ"
+
+[entries."引締"]
+reading = "ヒキシメ"
+
+[[entries."引締".match]]
+next_starts_any = ["め"]
+reading = "ヒキシ"
+
+[entries."申越"]
+reading = "モウシコシ"
+
+[[entries."申越".match]]
+next_starts_any = ["し", "す", "さ", "せ", "そ"]
+reading = "モウシコ"
+
+[entries."申合"]
+reading = "モウシアワセ"
+
+[[entries."申合".match]]
+next_starts_any = ["せ", "さ", "す", "そ"]
+reading = "モウシアワ"
+
+[entries."申渡"]
+reading = "モウシワタシ"
+
+[[entries."申渡".match]]
+next_starts_any = ["し", "す", "さ", "せ", "そ"]
+reading = "モウシワタ"
+
+[entries."申付"]
+reading = "モウシツケ"
+
+[[entries."申付".match]]
+next_starts_any = ["け"]
+reading = "モウシツ"
+
+[entries."乗入"]
+reading = "ノリイレ"
+
+[[entries."乗入".match]]
+next_starts_any = ["れ", "る", "ら", "り", "ろ"]
+reading = "ノリイ"
+
+[entries."貸倒"]
+reading = "カシダオレ"
+
+[[entries."貸倒".match]]
+next_starts_any = ["れ", "る", "ら", "り", "ろ"]
+reading = "カシダオ"
+
+[entries."買入"]
+reading = "カイイレ"
+
+[[entries."買入".match]]
+next_starts_any = ["れ", "る", "ら", "り", "ろ"]
+reading = "カイイ"
+
+[entries."買戻"]
+reading = "カイモドシ"
+
+[[entries."買戻".match]]
+next_starts_any = ["し", "す", "さ", "せ", "そ"]
+reading = "カイモド"
+
+[entries."買付"]
+reading = "カイツケ"
+
+[[entries."買付".match]]
+next_starts_any = ["け"]
+reading = "カイツ"
+
+[entries."売渡"]
+reading = "ウリワタシ"
+
+[[entries."売渡".match]]
+next_starts_any = ["し", "す", "さ", "せ", "そ"]
+reading = "ウリワタ"
+
+[entries."売払"]
+reading = "ウリハライ"
+
+[[entries."売払".match]]
+next_starts_any = ["い", "う", "わ", "え", "お", "っ"]
+reading = "ウリハラ"
+
+[entries."売戻"]
+reading = "ウリモドシ"
+
+[[entries."売戻".match]]
+next_starts_any = ["し", "す", "さ", "せ", "そ"]
+reading = "ウリモド"
+
+[entries."繰替"]
+reading = "クリカエ"
+
+[[entries."繰替".match]]
+next_starts_any = ["え"]
+reading = "クリカ"
+
+[entries."繰戻"]
+reading = "クリモドシ"
+
+[[entries."繰戻".match]]
+next_starts_any = ["し", "す", "さ", "せ", "そ"]
+reading = "クリモド"
+
+[entries."差入"]
+reading = "サシイレ"
+
+[[entries."差入".match]]
+next_starts_any = ["れ", "る", "ら", "り", "ろ"]
+reading = "サシイ"
+
+[entries."差出"]
+reading = "サシダシ"
+
+[[entries."差出".match]]
+next_starts_any = ["し", "す", "さ", "せ", "そ"]
+reading = "サシダ"
+
+[entries."差控"]
+reading = "サシヒカエ"
+
+[[entries."差控".match]]
+next_starts_any = ["え"]
+reading = "サシヒカ"
+
+[entries."差上"]
+reading = "サシアゲ"
+
+[[entries."差上".match]]
+next_starts_any = ["げ"]
+reading = "サシア"
+
+[entries."差置"]
+reading = "サシオキ"
+
+[[entries."差置".match]]
+next_starts_any = ["き", "く", "か", "け", "こ", "い"]
+reading = "サシオ"
+
+[entries."差換"]
+reading = "サシカエ"
+
+[[entries."差換".match]]
+next_starts_any = ["え"]
+reading = "サシカ"
+
+[entries."振戻"]
+reading = "フリモドシ"
+
+[[entries."振戻".match]]
+next_starts_any = ["し", "す", "さ", "せ", "そ"]
+reading = "フリモド"
+
+[entries."振分"]
+reading = "フリワケ"
+
+[[entries."振分".match]]
+next_starts_any = ["け"]
+reading = "フリワ"
+
+[entries."読上"]
+reading = "ヨミアゲ"
+
+[[entries."読上".match]]
+next_starts_any = ["げ"]
+reading = "ヨミア"
+
+[entries."読出"]
+reading = "ヨミダシ"
+
+[[entries."読出".match]]
+next_starts_any = ["し", "す", "さ", "せ", "そ"]
+reading = "ヨミダ"
+
+[entries."呼戻"]
+reading = "ヨビモドシ"
+
+[[entries."呼戻".match]]
+next_starts_any = ["し", "す", "さ", "せ", "そ"]
+reading = "ヨビモド"
+
+[entries."受渡"]
+reading = "ウケワタシ"
+
+[[entries."受渡".match]]
+next_starts_any = ["し", "す", "さ", "せ", "そ"]
+reading = "ウケワタ"
+
+[entries."受継"]
+reading = "ウケツギ"
+
+[[entries."受継".match]]
+next_starts_any = ["ぎ", "ぐ", "が", "げ", "ご", "い"]
+reading = "ウケツ"
+
+[entries."立退"]
+reading = "タチノキ"
+
+[[entries."立退".match]]
+next_starts_any = ["き", "く", "か", "け", "こ", "い"]
+reading = "タチノ"
+
+[entries."立寄"]
+reading = "タチヨリ"
+
+[[entries."立寄".match]]
+next_starts_any = ["り", "る", "ら", "れ", "ろ", "っ"]
+reading = "タチヨ"
+
+[entries."積込"]
+reading = "ツミコミ"
+
+[[entries."積込".match]]
+next_starts_any = ["み", "む", "ま", "め", "ん"]
+reading = "ツミコ"
+
+[entries."積出"]
+reading = "ツミダシ"
+
+[[entries."積出".match]]
+next_starts_any = ["し", "す", "さ", "せ", "そ"]
+reading = "ツミダ"
+
+[entries."積卸"]
+reading = "ツミオロシ"
+
+[[entries."積卸".match]]
+next_starts_any = ["し", "す", "さ", "せ", "そ"]
+reading = "ツミオロ"
+
+[entries."積増"]
+reading = "ツミマシ"
+
+[[entries."積増".match]]
+next_starts_any = ["し", "す", "さ", "せ", "そ"]
+reading = "ツミマ"
+
+[entries."積替"]
+reading = "ツミカエ"
+
+[[entries."積替".match]]
+next_starts_any = ["え"]
+reading = "ツミカ"
+
+[entries."見返"]
+reading = "ミカエシ"
+
+[[entries."見返".match]]
+next_starts_any = ["し", "す", "さ", "せ", "そ"]
+reading = "ミカエ"
+
+[entries."見送"]
+reading = "ミオクリ"
+
+[[entries."見送".match]]
+next_starts_any = ["り", "る", "ら", "れ", "ろ", "っ"]
+reading = "ミオク"
+
+[entries."見据"]
+reading = "ミスエ"
+
+[[entries."見据".match]]
+next_starts_any = ["え"]
+reading = "ミス"
+
+[entries."組入"]
+reading = "クミイレ"
+
+[[entries."組入".match]]
+next_starts_any = ["れ", "る", "ら", "り", "ろ"]
+reading = "クミイ"
+
+[entries."組替"]
+reading = "クミカエ"
+
+[[entries."組替".match]]
+next_starts_any = ["え"]
+reading = "クミカ"
+
+[entries."切上"]
+reading = "キリアゲ"
+
+[[entries."切上".match]]
+next_starts_any = ["げ"]
+reading = "キリア"
+
+[entries."切下"]
+reading = "キリサゲ"
+
+[[entries."切下".match]]
+next_starts_any = ["げ"]
+reading = "キリサ"
+
+[entries."切離"]
+reading = "キリハナシ"
+
+[[entries."切離".match]]
+next_starts_any = ["し", "す", "さ", "せ", "そ"]
+reading = "キリハナ"
+
+[entries."切捨"]
+reading = "キリステ"
+
+[[entries."切捨".match]]
+next_starts_any = ["て"]
+reading = "キリス"
+
+[entries."打込"]
+reading = "ウチコミ"
+
+[[entries."打込".match]]
+next_starts_any = ["み", "む", "ま", "め", "ん"]
+reading = "ウチコ"
+
+[entries."打止"]
+reading = "ウチドメ"
+
+[[entries."打止".match]]
+next_starts_any = ["め"]
+reading = "ウチド"
+
+[entries."持出"]
+reading = "モチダシ"
+
+[[entries."持出".match]]
+next_starts_any = ["し", "す", "さ", "せ", "そ"]
+reading = "モチダ"
+
+[entries."持帰"]
+reading = "モチカエリ"
+
+[[entries."持帰".match]]
+next_starts_any = ["り", "る", "ら", "れ", "ろ", "っ"]
+reading = "モチカエ"
+
+[entries."仕上"]
+reading = "シアゲ"
+
+[[entries."仕上".match]]
+next_starts_any = ["げ", "が"]
+reading = "シア"
+
+[entries."下取"]
+reading = "シタドリ"
+
+[[entries."下取".match]]
+next_starts_any = ["り", "る", "ら", "れ", "ろ", "っ"]
+reading = "シタド"
+
+[entries."割戻"]
+reading = "ワリモドシ"
+
+[[entries."割戻".match]]
+next_starts_any = ["し", "す", "さ", "せ", "そ"]
+reading = "ワリモド"
+
+[entries."割込"]
+reading = "ワリコミ"
+
+[[entries."割込".match]]
+next_starts_any = ["み", "む", "ま", "め", "ん"]
+reading = "ワリコ"
+
+[entries."追越"]
+reading = "オイコシ"
+
+[[entries."追越".match]]
+next_starts_any = ["し", "す", "さ", "せ", "そ"]
+reading = "オイコ"
+
+[entries."張出"]
+reading = "ハリダシ"
+
+[[entries."張出".match]]
+next_starts_any = ["し", "す", "さ", "せ", "そ"]
+reading = "ハリダ"
+
+[entries."巻上"]
+reading = "マキアゲ"
+
+[[entries."巻上".match]]
+next_starts_any = ["げ"]
+reading = "マキア"
+
+[entries."巻取"]
+reading = "マキトリ"
+
+[[entries."巻取".match]]
+next_starts_any = ["り", "る", "ら", "れ", "ろ", "っ"]
+reading = "マキト"
+
+[entries."抜取"]
+reading = "ヌキトリ"
+
+[[entries."抜取".match]]
+next_starts_any = ["り", "る", "ら", "れ", "ろ", "っ"]
+reading = "ヌキト"
+
+[entries."抜出"]
+reading = "ヌキダシ"
+
+[[entries."抜出".match]]
+next_starts_any = ["し", "す", "さ", "せ", "そ"]
+reading = "ヌキダ"
+
+[entries."詰替"]
+reading = "ツメカエ"
+
+[[entries."詰替".match]]
+next_starts_any = ["え"]
+reading = "ツメカ"
+
+[entries."植付"]
+reading = "ウエツケ"
+
+[[entries."植付".match]]
+next_starts_any = ["け"]
+reading = "ウエツ"
+
+[entries."刈取"]
+reading = "カリトリ"
+
+[[entries."刈取".match]]
+next_starts_any = ["り", "る", "ら", "れ", "ろ", "っ"]
+reading = "カリト"
+
+[entries."焼戻"]
+reading = "ヤキモドシ"
+
+[[entries."焼戻".match]]
+next_starts_any = ["し", "す", "さ", "せ", "そ"]
+reading = "ヤキモド"
+
+[entries."吹付"]
+reading = "フキツケ"
+
+[[entries."吹付".match]]
+next_starts_any = ["け"]
+reading = "フキツ"
+
+[entries."塗替"]
+reading = "ヌリカエ"
+
+[[entries."塗替".match]]
+next_starts_any = ["え"]
+reading = "ヌリカ"
+
+[entries."掘下"]
+reading = "ホリサゲ"
+
+[[entries."掘下".match]]
+next_starts_any = ["げ"]
+reading = "ホリサ"
+
+[entries."掘出"]
+reading = "ホリダシ"
+
+[[entries."掘出".match]]
+next_starts_any = ["し", "す", "さ", "せ", "そ"]
+reading = "ホリダ"
+
+[entries."埋戻"]
+reading = "ウメモドシ"
+
+[[entries."埋戻".match]]
+next_starts_any = ["し", "す", "さ", "せ", "そ"]
+reading = "ウメモド"
+
+[entries."建替"]
+reading = "タテカエ"
+
+[[entries."建替".match]]
+next_starts_any = ["え"]
+reading = "タテカ"
+
+[entries."建付"]
+reading = "タテツケ"
+
+[[entries."建付".match]]
+next_starts_any = ["け"]
+reading = "タテツ"
+
+[entries."打抜"]
+reading = "ウチヌキ"
+
+[[entries."打抜".match]]
+next_starts_any = ["き", "く", "か", "け", "こ", "い"]
+reading = "ウチヌ"
+
+[entries."型抜"]
+reading = "カタヌキ"
+
+[[entries."型抜".match]]
+next_starts_any = ["き", "く", "か", "け", "こ", "い"]
+reading = "カタヌ"
+
+[entries."型取"]
+reading = "カタドリ"
+
+[[entries."型取".match]]
+next_starts_any = ["り", "る", "ら", "れ", "ろ", "っ"]
+reading = "カタド"
+
+[entries."引込"]
+reading = "ヒキコミ"
+
+[[entries."引込".match]]
+next_starts_any = ["み", "む", "ま", "め", "ん"]
+reading = "ヒキコ"
+
+[entries."締付"]
+reading = "シメツケ"
+
+[[entries."締付".match]]
+next_starts_any = ["け"]
+reading = "シメツ"
+
+[entries."差込"]
+reading = "サシコミ"
+
+[[entries."差込".match]]
+next_starts_any = ["み", "む", "ま", "め", "ん"]
+reading = "サシコ"
+
+[entries."挟込"]
+reading = "ハサミコミ"
+
+[[entries."挟込".match]]
+next_starts_any = ["み", "む", "ま", "め", "ん"]
+reading = "ハサミコ"
+
+[entries."流込"]
+reading = "ナガシコミ"
+
+[[entries."流込".match]]
+next_starts_any = ["み", "む", "ま", "め", "ん"]
+reading = "ナガシコ"
+
+[entries."刷込"]
+reading = "スリコミ"
+
+[[entries."刷込".match]]
+next_starts_any = ["み", "む", "ま", "め", "ん"]
+reading = "スリコ"
+
+[entries."織込"]
+reading = "オリコミ"
+
+[[entries."織込".match]]
+next_starts_any = ["み", "む", "ま", "め", "ん"]
+reading = "オリコ"
+
+[entries."盛込"]
+reading = "モリコミ"
+
+[[entries."盛込".match]]
+next_starts_any = ["み", "む", "ま", "め", "ん"]
+reading = "モリコ"
+
+[entries."漬込"]
+reading = "ツケコミ"
+
+[[entries."漬込".match]]
+next_starts_any = ["み", "む", "ま", "め", "ん"]
+reading = "ツケコ"
+
+[entries."溜込"]
+reading = "タメコミ"
+
+[[entries."溜込".match]]
+next_starts_any = ["み", "む", "ま", "め", "ん"]
+reading = "タメコ"
+
+[entries."溶込"]
+reading = "トケコミ"
+
+[[entries."溶込".match]]
+next_starts_any = ["み", "む", "ま", "め", "ん"]
+reading = "トケコ"
