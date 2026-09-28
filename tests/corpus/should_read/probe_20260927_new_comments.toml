@@ -998,3 +998,9 @@ expected = "ちしきはたいけいだてて"
 [[case]]
 input = "前年を上回つた"
 expected = "ぜんねんをうわまわつた"
+[[case]]
+input = "『日本紀』神功皇后"
+expected = "『にほんぎ』じんぐうこうごう"
+[[case]]
+input = "苦情の申出先"
+expected = "くじょうのもうしでさき"

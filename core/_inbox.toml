@@ -2529,3 +2529,19 @@ reading = "みとれる"
 [[entries."見惚れる".match]]
 input_contains_any = ["見惚れる"]
 reading = "みとれる"
+
+# ★2026-09-28 1 字 + 漢字語 に割られる型: 日本紀 = にち + ほんぎ / 申出先 = しん + でさき
+
+[entries."日本紀"]
+reading = "ニホンギ"
+
+[[entries."日本紀".match]]
+input_contains_any = ["日本紀"]
+reading = "ニホンギ"
+
+[entries."申出先"]
+reading = "もうしでサキ"
+
+[[entries."申出先".match]]
+input_contains_any = ["申出先"]
+reading = "もうしでサキ"
