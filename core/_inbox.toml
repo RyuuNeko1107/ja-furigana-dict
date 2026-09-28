@@ -14,6 +14,20 @@ description = "分類前の一時 inbox (≥2 字 surface、 内容が貯まっ�
 #   role が違うため lib が jukugo として誤って load する)。
 
 [entries]
+# ★2026-09-28 技術文書 / SNS の 1 字ずつ読まれた 2 字組 (もっともど / ところかん)
+"和暦" = "ワレキ"
+"外挿" = "ガイソウ"
+"実値" = "ジッチ"
+"尤度" = "ユウド"
+"所感" = "ショカン"
+"位数" = "イスウ"
+"上界" = "ジョウカイ"
+"中論" = "チュウロン"
+"調光" = "チョウコウ"
+"空行" = "クウギョウ"
+"主系" = "シュケイ"
+"挙上" = "キョジョウ"
+"特上" = "トクジョウ"
 # ★2026-09-28 配信の 1 字ずつ読まれた 3 字組 (おすようざ / かんけき)
 "牡羊座" = "オヒツジザ"
 "換毛期" = "カンモウキ"
@@ -2886,3 +2900,31 @@ reading = "モヨリ"
 [[entries."最寄".match]]
 next_starts_any = ["り"]
 reading = "モヨ"
+
+[entries."取込"]
+reading = "トリコミ"
+
+[[entries."取込".match]]
+next_starts_any = ["み", "む", "ま", "め", "ん"]
+reading = "トリコ"
+
+[entries."埋込"]
+reading = "ウメコミ"
+
+[[entries."埋込".match]]
+next_starts_any = ["み", "む", "ま", "め", "ん"]
+reading = "ウメコ"
+
+[entries."組込"]
+reading = "クミコミ"
+
+[[entries."組込".match]]
+next_starts_any = ["み", "む", "ま", "め", "ん"]
+reading = "クミコ"
+
+[entries."待受"]
+reading = "マチウケ"
+
+[[entries."待受".match]]
+next_starts_any = ["け"]
+reading = "マチウ"

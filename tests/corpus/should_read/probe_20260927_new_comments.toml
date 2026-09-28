@@ -1142,3 +1142,12 @@ expected = "おひつじざのまんげつ"
 [[case]]
 input = "猫の換毛期"
 expected = "ねこのかんもうき"
+[[case]]
+input = "尤度関数"
+expected = "ゆうどかんすう"
+[[case]]
+input = "データの取込み"
+expected = "データのとりこみ"
+[[case]]
+input = "特上カルビ"
+expected = "とくじょうカルビ"
