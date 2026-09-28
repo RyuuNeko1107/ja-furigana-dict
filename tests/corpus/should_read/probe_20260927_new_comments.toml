@@ -1244,3 +1244,12 @@ expected = "しきゅうけいがん"
 [[case]]
 input = "蜀の劉備"
 expected = "しょくのりゅうび"
+[[case]]
+input = "北海道炭礦鉄道"
+expected = "ほっかいどうたんこうてつどう"
+[[case]]
+input = "十日戎"
+expected = "とおかえびす"
+[[case]]
+input = "仍て主文のとおり"
+expected = "よってしゅぶんのとおり"
