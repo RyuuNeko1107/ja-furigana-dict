@@ -1235,3 +1235,12 @@ expected = "キャプつばさおもしろすぎ"
 [[case]]
 input = "一体性"
 expected = "いったいせい"
+[[case]]
+input = "窒素及び燐"
+expected = "ちっそおよびりん"
+[[case]]
+input = "子宮頸がん"
+expected = "しきゅうけいがん"
+[[case]]
+input = "蜀の劉備"
+expected = "しょくのりゅうび"
