@@ -1043,3 +1043,12 @@ expected = "てとらくんのときも"
 [[case]]
 input = "手術式"
 expected = "しゅじゅつしき"
+[[case]]
+input = "燐音 凛月 奏汰 藍良"
+expected = "りんね りつ かなた あいら"
+[[case]]
+input = "今日は華金"
+expected = "きょうははなきん"
+[[case]]
+input = "美兎ちゃん"
+expected = "みとちゃん"

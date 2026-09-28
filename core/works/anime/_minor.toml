@@ -4,6 +4,7 @@ role = "works"
 description = "アニメ/漫画 小規模作品 統合 (1作品1-3語、2026-06-21 consolidate)"
 
 [entries]
+"魏嬰" = "ギエイ"  # 魔道祖師
 
 # アイカツ! (元: aikatsu.toml)
 "霧矢" = "キリヤ"            # 霧矢あおい (default きりし)
