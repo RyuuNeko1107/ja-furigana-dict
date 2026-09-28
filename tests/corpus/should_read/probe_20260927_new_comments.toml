@@ -1325,3 +1325,9 @@ expected = "こいつは"
 [[case]]
 input = "申分のない"
 expected = "もうしぶんのない"
+[[case]]
+input = "麻辣湯"
+expected = "まーらーたん"
+[[case]]
+input = "机の天板"
+expected = "つくえのてんばん"
