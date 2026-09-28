@@ -1079,3 +1079,15 @@ expected = "こうあつガスをじゅうてんする"
 [[case]]
 input = "３頁左上欄"
 expected = "さんぺーじひだりうえらん"
+[[case]]
+input = "川の両岸には"
+expected = "かわのりょうがんには"
+[[case]]
+input = "何遍も"
+expected = "なんべんも"
+[[case]]
+input = "退職給与引当金繰入額"
+expected = "たいしょくきゅうよひきあてきんくりいれがく"
+[[case]]
+input = "港長は"
+expected = "こうちょうは"
