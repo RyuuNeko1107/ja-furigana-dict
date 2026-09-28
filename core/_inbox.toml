@@ -921,6 +921,7 @@ description = "分類前の一時 inbox (≥2 字 surface、 内容が貯まっ�
 "樹々" = "キギ"
 "本行寺" = "ホンギョウジ"
 "官幣" = "カンペイ"
+"埋めりゃ" = "うめりゃ"
 "西方沖" = "セイホウおき"
 "零円" = "レイエン"
 "良薬口" = "リョウヤクくち"
@@ -2164,3 +2165,26 @@ reading = "ダトウサ"
 [[entries."打倒さ".match]]
 input_contains_any = ["打倒さ"]
 reading = "ダトウサ"
+
+# ★2026-09-28 dict-admin 未解決リストから: 手打ち = てうちち (手打 = テウチ + ち)、 凄ぇ = すごぇ
+
+[entries."手打ち"]
+reading = "テウチ"
+
+[[entries."手打ち".match]]
+input_contains_any = ["手打ち"]
+reading = "テウチ"
+
+[entries."平手打ち"]
+reading = "ヒラテうち"
+
+[[entries."平手打ち".match]]
+input_contains_any = ["平手打ち"]
+reading = "ヒラテうち"
+
+[entries."凄ぇ"]
+reading = "スゲェ"
+
+[[entries."凄ぇ".match]]
+input_contains_any = ["凄ぇ"]
+reading = "スゲェ"

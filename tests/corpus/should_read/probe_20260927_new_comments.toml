@@ -850,3 +850,20 @@ expected = "せいけんをだとうして"
 [[case]]
 input = "福岡県西方沖地震"
 expected = "ふくおかけんせいほうおきじしん"
+
+# 2026-09-28 dict-admin 未解決リストから
+[[case]]
+input = "手打ちなんだw"
+expected = "てうちなんだw"
+[[case]]
+input = "大喜びぺこ"
+expected = "おおよろこびぺこ"
+[[case]]
+input = "カジノは閑古鳥だなぁ"
+expected = "カジノはかんこどりだなぁ"
+[[case]]
+input = "最初西に行こうとして"
+expected = "さいしょにしにいこうとして"
+[[case]]
+input = "平手打ち"
+expected = "ひらてうち"
