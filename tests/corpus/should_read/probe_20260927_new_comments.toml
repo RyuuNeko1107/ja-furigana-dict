@@ -1292,3 +1292,9 @@ expected = "かんごうぶ"
 [[case]]
 input = "指環が嵌まらない"
 expected = "ゆびわがはまらない"
+[[case]]
+input = "瑞宝中綬章"
+expected = "ずいほうちゅうじゅしょう"
+[[case]]
+input = "馬事公苑"
+expected = "ばじこうえん"
