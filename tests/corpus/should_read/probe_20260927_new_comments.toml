@@ -1298,3 +1298,12 @@ expected = "ずいほうちゅうじゅしょう"
 [[case]]
 input = "馬事公苑"
 expected = "ばじこうえん"
+[[case]]
+input = "税率表"
+expected = "ぜいりつひょう"
+[[case]]
+input = "技術士"
+expected = "ぎじゅつし"
+[[case]]
+input = "初霜"
+expected = "はつしも"
