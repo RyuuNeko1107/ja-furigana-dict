@@ -61,7 +61,7 @@ expected = "わたさん!"
 [[case]]
 input = "犯罪人引渡条約"
 mode = "hiragana"
-expected = "はんざいじんひきわたしじょうやく"
+expected = "はんざいにんひきわたしじょうやく"
 
 [[case]]
 input = "ルイ姉も誘おー"

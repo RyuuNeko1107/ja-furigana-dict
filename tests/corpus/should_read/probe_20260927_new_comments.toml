@@ -1187,3 +1187,12 @@ expected = "とちのあけわたし"
 [[case]]
 input = "米粒一つ"
 expected = "こめつぶひとつ"
+[[case]]
+input = "破産管財人は"
+expected = "はさんかんざいにんは"
+[[case]]
+input = "申請人の主張"
+expected = "しんせいにんのしゅちょう"
+[[case]]
+input = "著名人"
+expected = "ちょめいじん"
