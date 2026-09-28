@@ -1331,3 +1331,9 @@ expected = "まーらーたん"
 [[case]]
 input = "机の天板"
 expected = "つくえのてんばん"
+[[case]]
+input = "豆板醤"
+expected = "とうばんじゃん"
+[[case]]
+input = "杏仁豆腐"
+expected = "あんにんどうふ"

@@ -301,7 +301,7 @@ expected = "いちょう!"
 [[case]]
 input = "杏仁豆腐w"
 mode = "hiragana"
-expected = "きょうにんとうふw"
+expected = "あんにんどうふw"
 
 [[case]]
 input = "杏子なの笑うw"
