@@ -2445,12 +2445,6 @@ reading = "かけだし"
 input_contains_any = ["駈出し"]
 reading = "かけだし"
 
-[entries."打棄て"]
-reading = "うちすて"
-
-[[entries."打棄て".match]]
-input_contains_any = ["打棄て"]
-reading = "うちすて"
 
 [entries."吹込み"]
 reading = "ふきこみ"
@@ -2514,3 +2508,24 @@ reading = "うつむけ"
 [[entries."俯向け".match]]
 input_contains_any = ["俯向け"]
 reading = "うつむけ"
+
+[entries."見惚れ"]
+reading = "みとれ"
+
+[[entries."見惚れ".match]]
+input_contains_any = ["見惚れ"]
+reading = "みとれ"
+
+[entries."首垂れ"]
+reading = "うなだれ"
+
+[[entries."首垂れ".match]]
+input_contains_any = ["首垂れ"]
+reading = "うなだれ"
+
+[entries."見惚れる"]
+reading = "みとれる"
+
+[[entries."見惚れる".match]]
+input_contains_any = ["見惚れる"]
+reading = "みとれる"

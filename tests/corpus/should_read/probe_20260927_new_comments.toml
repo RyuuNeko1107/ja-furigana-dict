@@ -980,3 +980,12 @@ expected = "かんけいごうい"
 [[case]]
 input = "仮払い"
 expected = "かりばらい"
+[[case]]
+input = "彼女に見惚れていた"
+expected = "かのじょにみとれていた"
+[[case]]
+input = "口籠った"
+expected = "くちごもった"
+[[case]]
+input = "船首垂線上の"
+expected = "せんしゅすいせんうえの"
