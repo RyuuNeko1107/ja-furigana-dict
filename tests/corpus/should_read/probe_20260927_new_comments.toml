@@ -1283,3 +1283,12 @@ expected = "きょうそうをおそれません"
 [[case]]
 input = "富や名声"
 expected = "とみやめいせい"
+[[case]]
+input = "遣隋使"
+expected = "けんずいし"
+[[case]]
+input = "嵌合部"
+expected = "かんごうぶ"
+[[case]]
+input = "指環が嵌まらない"
+expected = "ゆびわがはまらない"

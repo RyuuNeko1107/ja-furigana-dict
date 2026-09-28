@@ -1623,7 +1623,7 @@ default = "ハン"
 
 [[kanji.match]]
 next_starts_any = ["い", "く", "か", "け", "こ"]
-reading = "ソム"
+reading = "そむ"
 
 # ★2026-09-28 賤しい = いやしい (賤しく が せんしく だった)。 貴賤 は セン
 [[kanji]]
@@ -1632,7 +1632,7 @@ default = "セン"
 
 [[kanji.match]]
 next_starts_any = ["し"]
-reading = "イヤ"
+reading = "いや"
 
 # ★2026-09-28 咀う = のろう (呪う の異体)。 咀嚼 は ソ
 [[kanji]]
@@ -1641,7 +1641,7 @@ default = "ソ"
 
 [[kanji.match]]
 next_starts_any = ["う", "い", "わ", "っ", "え", "お"]
-reading = "ノロ"
+reading = "のろ"
 
 # ★2026-09-28 嚥む = のむ (嚥んだり が えんんだり だった)。 嚥下 は エン
 [[kanji]]
@@ -1650,7 +1650,7 @@ default = "エン"
 
 [[kanji.match]]
 next_starts_any = ["ん", "む", "み", "ま", "め"]
-reading = "ノ"
+reading = "の"
 
 # ★2026-09-28 藉りる = かりる (藉りて が しゃりて だった)。 狼藉 / 慰藉 は ジャク/シャ のまま
 [[kanji]]
@@ -1659,7 +1659,7 @@ default = "シャ"
 
 [[kanji.match]]
 next_starts_any = ["り", "る", "ら", "れ"]
-reading = "カ"
+reading = "か"
 
 # ★2026-09-28 猥りに = みだりに / 猥りがましい / 猥がましい = みだりがましい。 猥褻 / 卑猥 は ワイ
 [[kanji]]
@@ -1668,11 +1668,11 @@ default = "ワイ"
 
 [[kanji.match]]
 next_starts_any = ["が"]
-reading = "ミダリ"
+reading = "みだり"
 
 [[kanji.match]]
 next_starts_any = ["り"]
-reading = "ミダ"
+reading = "みだ"
 
 # ★2026-09-28 睥む = にらむ (睨 の異体)。 睥睨 は ヘイ
 [[kanji]]
@@ -1681,7 +1681,7 @@ default = "ヘイ"
 
 [[kanji.match]]
 next_starts_any = ["ん", "ま", "む", "み", "め"]
-reading = "ニラ"
+reading = "にら"
 
 # ★2026-09-28 瞞す = だます (瞞され が まんされ だった)。 欺瞞 は マン
 [[kanji]]
@@ -1690,7 +1690,7 @@ default = "マン"
 
 [[kanji.match]]
 next_starts_any = ["さ", "し", "す", "せ", "そ"]
-reading = "ダマ"
+reading = "だま"
 
 # ★2026-09-28 灌ぐ = そそぐ。 灌漑 は カン
 [[kanji]]
@@ -1699,7 +1699,7 @@ default = "カン"
 
 [[kanji.match]]
 next_starts_any = ["ぎ", "ぐ", "が", "げ", "い"]
-reading = "ソソ"
+reading = "そそ"
 
 # ★2026-09-28 蹙める = しかめる。 顰蹙 は シュク
 [[kanji]]
@@ -1708,7 +1708,7 @@ default = "シュク"
 
 [[kanji.match]]
 next_starts_any = ["め", "む", "ま", "み"]
-reading = "シカ"
+reading = "しか"
 
 # ★2026-09-28 嘔く = はく。 嘔吐 は オウ
 [[kanji]]
@@ -1717,7 +1717,7 @@ default = "オウ"
 
 [[kanji.match]]
 next_starts_any = ["き", "く", "か", "け"]
-reading = "ハ"
+reading = "は"
 
 # ★2026-09-28 箝める = はめる。 箝口令 は カン
 [[kanji]]
@@ -1726,7 +1726,7 @@ default = "カン"
 
 [[kanji.match]]
 next_starts_any = ["め", "ま", "む", "み"]
-reading = "ハ"
+reading = "は"
 
 # ★2026-09-28 渾て = すべて。 渾身 は コン
 [[kanji]]
@@ -1735,7 +1735,7 @@ default = "コン"
 
 [[kanji.match]]
 next_starts_any = ["て"]
-reading = "スベ"
+reading = "すべ"
 
 # ★2026-09-28 游ぶ = あそぶ (遊 の異体)。 游泳 は ユウ
 [[kanji]]
@@ -1744,7 +1744,7 @@ default = "ユウ"
 
 [[kanji.match]]
 next_starts_any = ["び", "ぶ", "ば", "べ", "ぼ", "ん"]
-reading = "アソ"
+reading = "あそ"
 
 # ★2026-09-28 兀げる = はげる。 突兀 は コツ
 [[kanji]]
@@ -1753,7 +1753,16 @@ default = "コツ"
 
 [[kanji.match]]
 next_starts_any = ["げ"]
-reading = "ハ"
+reading = "は"
+
+# ★2026-09-28 嵌める = はめる、 嵌合 / 象嵌 は カン (unihan の あな を置き換え、 嵌合部 = あなごうぶ だった)
+[[kanji]]
+char = "嵌"
+default = "カン"
+
+[[kanji.match]]
+next_starts_any = ["め", "ま", "む", "み"]
+reading = "は"
 
 [[kanji]]
 char = "帯"
