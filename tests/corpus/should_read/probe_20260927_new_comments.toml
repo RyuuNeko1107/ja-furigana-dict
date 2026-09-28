@@ -1136,3 +1136,9 @@ expected = "つくえりゅうのすけ"
 [[case]]
 input = "戦間期"
 expected = "せんかんき"
+[[case]]
+input = "牡羊座の満月"
+expected = "おひつじざのまんげつ"
+[[case]]
+input = "猫の換毛期"
+expected = "ねこのかんもうき"

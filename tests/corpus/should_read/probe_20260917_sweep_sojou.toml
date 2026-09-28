@@ -441,7 +441,7 @@ expected = "にしきおりけいもあおもりやまだ"
 [[case]]
 input = "安青錦優勝おめでとう"
 mode = "hiragana"
-expected = "あんせいにしきゆうしょうおめでとう"
+expected = "あおにしきゆうしょうおめでとう"
 
 [[case]]
 input = "サクランボ(佐藤錦)"
