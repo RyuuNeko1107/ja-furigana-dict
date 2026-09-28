@@ -25,13 +25,13 @@ git に commit されている master HEAD の状態を基準にする。
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,671** | **728 KB** |
 | [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **21,567** | **896 KB** |
-| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,695** | **133 KB** |
+| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,707** | **133 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **1,714** | **44 KB** |
-| [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **1,148** | **69 KB** |
+| [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **1,155** | **69 KB** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,778** | **369 KB** |
 | [**異体字**](#異体字) (`rules/compat.toml`) | **436** | **6.1 KB** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **338** | **31 KB** |
-| **合計** | **70,347** | **2.22 MB** |
+| **合計** | **70,366** | **2.22 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -170,7 +170,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/works/<medium>/*` — 媒体 (game / literature 等) ごとに 1 作品 1 ファイル。 原則は公式読み (一般通称として定着していれば採録可)、 出典コメント必須、 古典読みは現代読み無い場合のみ。
 
-**合計**: 1,695 件 / 133 KB (genre 4 区分)
+**合計**: 1,707 件 / 133 KB (genre 4 区分)
 
 #### ゲーム
 
@@ -183,10 +183,10 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/game/touhou.toml`](core/works/game/touhou.toml) | 269 | 9.2 KB | 東方Project (上海アリス幻樂団): キャラクター名 / 場所 / 用語 (公式読みベース) |
 | [`core/works/game/idolmaster.toml`](core/works/game/idolmaster.toml) | 66 | 5.4 KB | アイドルマスター (バンダイナムコ): キャラクター名 |
 | [`core/works/game/sangokushi.toml`](core/works/game/sangokushi.toml) | 45 | 3.1 KB | 三国志 (演義/ゲーム/漫画): 武将名 (日本語音読み) |
-| [`core/works/game/touken_ranbu.toml`](core/works/game/touken_ranbu.toml) | 35 | 3.1 KB | 刀剣乱舞 (ニトロプラス): 刀剣男士名 |
+| [`core/works/game/touken_ranbu.toml`](core/works/game/touken_ranbu.toml) | 37 | 3.2 KB | 刀剣乱舞 (ニトロプラス): 刀剣男士名 |
 | [`core/works/game/ensemble_stars.toml`](core/works/game/ensemble_stars.toml) | 28 | 1.9 KB | あんさんぶるスターズ! (Happy Elements): キャラクター名 |
+| [`core/works/game/hypmic.toml`](core/works/game/hypmic.toml) | 28 | 1.9 KB | ヒプノシスマイク (キングレコード): キャラクター名 |
 | [`core/works/game/genshin.toml`](core/works/game/genshin.toml) | 27 | 2.3 KB | 原神 (HoYoverse): キャラクター名 (公式日本語読みベース) |
-| [`core/works/game/hypmic.toml`](core/works/game/hypmic.toml) | 23 | 1.8 KB | ヒプノシスマイク (キングレコード): キャラクター名 |
 | [`core/works/game/lovelive.toml`](core/works/game/lovelive.toml) | 23 | 1.8 KB | ラブライブ! (サンライズ): キャラクター名 |
 | [`core/works/game/_minor.toml`](core/works/game/_minor.toml) | 19 | 1.6 KB | ゲーム 小規模作品 統合 (1作品1-3語、2026-06-21 consolidate) |
 | [`core/works/game/persona.toml`](core/works/game/persona.toml) | 18 | 1.5 KB | ペルソナ (アトラス): キャラクター名 |
@@ -203,7 +203,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/game/tokimeki.toml`](core/works/game/tokimeki.toml) | 5 | 465 B | ときめきメモリアル: キャラクター名 |
 | [`core/works/game/a3.toml`](core/works/game/a3.toml) | 4 | 396 B | A3! : キャラクター名 |
 | [`core/works/game/utapri.toml`](core/works/game/utapri.toml) | 4 | 492 B | うたの☆プリンスさまっ♪ : キャラクター名 |
-| **小計** (23 ファイル) | **681** | **43 KB** | |
+| **小計** (23 ファイル) | **688** | **43 KB** | |
 
 #### 文学
 
@@ -228,7 +228,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/anime/jujutsu.toml`](core/works/anime/jujutsu.toml) | 47 | 3.6 KB | 呪術廻戦 (芥見下々): キャラクター名 / 用語 (公式読みベース) |
 | [`core/works/anime/kimetsu.toml`](core/works/anime/kimetsu.toml) | 45 | 4.0 KB | 鬼滅の刃 (吾峠呼世晴): キャラクター名 / 用語 (公式読みベース) |
 | [`core/works/anime/bleach.toml`](core/works/anime/bleach.toml) | 38 | 3.6 KB | BLEACH (久保帯人) キャラ名・用語 |
-| [`core/works/anime/heroaca.toml`](core/works/anime/heroaca.toml) | 35 | 3.4 KB | 僕のヒーローアカデミア (堀越耕平): キャラクター名 (公式読みベース) |
+| [`core/works/anime/heroaca.toml`](core/works/anime/heroaca.toml) | 36 | 3.4 KB | 僕のヒーローアカデミア (堀越耕平): キャラクター名 (公式読みベース) |
 | [`core/works/anime/haikyu.toml`](core/works/anime/haikyu.toml) | 32 | 2.8 KB | ハイキュー!! (古舘春一): キャラクター名 (公式読みベース) |
 | [`core/works/anime/kingdom.toml`](core/works/anime/kingdom.toml) | 31 | 2.2 KB | キングダム (原泰久): キャラクター名 (古代中国名の難読読み) |
 | [`core/works/anime/jojo.toml`](core/works/anime/jojo.toml) | 30 | 3.0 KB | ジョジョの奇妙な冒険 (荒木飛呂彦): キャラクター名 / 用語 (公式読みベース) |
@@ -238,8 +238,8 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/anime/tenipuri.toml`](core/works/anime/tenipuri.toml) | 22 | 1.9 KB | テニスの王子様 (許斐剛): キャラクター名 |
 | [`core/works/anime/onepiece.toml`](core/works/anime/onepiece.toml) | 18 | 1.5 KB | ONE PIECE (尾田栄一郎): キャラクター名 / 用語 |
 | [`core/works/anime/tokyo_revengers.toml`](core/works/anime/tokyo_revengers.toml) | 18 | 1.6 KB | 東京卍リベンジャーズ (和久井健): キャラクター名 (公式読みベース) |
+| [`core/works/anime/bluelock.toml`](core/works/anime/bluelock.toml) | 17 | 1.4 KB | ブルーロック (金城宗幸/ノ村優介): キャラクター名 |
 | [`core/works/anime/kurobas.toml`](core/works/anime/kurobas.toml) | 17 | 1.5 KB | 黒子のバスケ (藤巻忠俊): キャラクター名 |
-| [`core/works/anime/bluelock.toml`](core/works/anime/bluelock.toml) | 16 | 1.4 KB | ブルーロック (金城宗幸/ノ村優介): キャラクター名 |
 | [`core/works/anime/yuyuhakusho.toml`](core/works/anime/yuyuhakusho.toml) | 15 | 1.2 KB | 幽☆遊☆白書 (冨樫義博): キャラクター名 |
 | [`core/works/anime/monogatari.toml`](core/works/anime/monogatari.toml) | 14 | 1.5 KB | 〈物語〉シリーズ (西尾維新): 作品名 (公式読みベース) |
 | [`core/works/anime/tokyoghoul.toml`](core/works/anime/tokyoghoul.toml) | 13 | 1.4 KB | 東京喰種 (石田スイ): キャラクター名 / 用語 |
@@ -250,16 +250,16 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/anime/garupan.toml`](core/works/anime/garupan.toml) | 8 | 656 B | ガルパン: キャラクター名 |
 | [`core/works/anime/gochiusa.toml`](core/works/anime/gochiusa.toml) | 8 | 648 B | ごちうさ: キャラクター名 |
 | [`core/works/anime/kyoani.toml`](core/works/anime/kyoani.toml) | 8 | 751 B | 京アニ作品: キャラクター名 |
+| [`core/works/anime/ranma.toml`](core/works/anime/ranma.toml) | 8 | 700 B | らんま1/2: キャラクター名 |
 | [`core/works/anime/recent_anime.toml`](core/works/anime/recent_anime.toml) | 8 | 810 B | 近年アニメ: キャラクター名 |
 | [`core/works/anime/soma.toml`](core/works/anime/soma.toml) | 8 | 916 B | 食戟のソーマ: キャラクター名 |
 | [`core/works/anime/baseball_manga.toml`](core/works/anime/baseball_manga.toml) | 7 | 709 B | 野球漫画: キャラクター名 |
 | [`core/works/anime/captsubasa.toml`](core/works/anime/captsubasa.toml) | 7 | 684 B | キャプテン翼: キャラクター名 |
+| [`core/works/anime/goldenkamuy.toml`](core/works/anime/goldenkamuy.toml) | 7 | 796 B | ゴールデンカムイ (野田サトル): キャラクター名 |
 | [`core/works/anime/kusuriya.toml`](core/works/anime/kusuriya.toml) | 7 | 597 B | 薬屋のひとりごと (日向夏): キャラクター名 (公式読みベース) |
-| [`core/works/anime/ranma.toml`](core/works/anime/ranma.toml) | 7 | 677 B | らんま1/2: キャラクター名 |
 | [`core/works/anime/saiki.toml`](core/works/anime/saiki.toml) | 7 | 816 B | 斉木楠雄のΨ難 (麻生周一): キャラクター名 |
 | [`core/works/anime/shoujo.toml`](core/works/anime/shoujo.toml) | 7 | 688 B | 少女漫画: キャラクター名 |
 | [`core/works/anime/tokusatsu.toml`](core/works/anime/tokusatsu.toml) | 7 | 695 B | 仮面ライダー: キャラクター名 |
-| [`core/works/anime/goldenkamuy.toml`](core/works/anime/goldenkamuy.toml) | 6 | 770 B | ゴールデンカムイ (野田サトル): キャラクター名 |
 | [`core/works/anime/kirara.toml`](core/works/anime/kirara.toml) | 6 | 764 B | きらら系アニメ: キャラクター名 |
 | [`core/works/anime/kokumin_anime.toml`](core/works/anime/kokumin_anime.toml) | 6 | 577 B | 国民的アニメ: キャラクター名 |
 | [`core/works/anime/saki.toml`](core/works/anime/saki.toml) | 6 | 503 B | 咲-Saki-: キャラクター名 |
@@ -279,7 +279,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/anime/nurarihyon.toml`](core/works/anime/nurarihyon.toml) | 4 | 417 B | ぬらりひょんの孫: キャラクター名 |
 | [`core/works/anime/seinen.toml`](core/works/anime/seinen.toml) | 4 | 496 B | 青年漫画: キャラクター名 |
 | [`core/works/anime/xxxholic.toml`](core/works/anime/xxxholic.toml) | 4 | 366 B | xxxHOLiC (CLAMP): キャラクター名 |
-| **小計** (56 ファイル) | **854** | **78 KB** | |
+| **小計** (56 ファイル) | **858** | **78 KB** | |
 
 #### VTuber
 
@@ -289,13 +289,13 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/works/vtuber/nijisanji.toml`](core/works/vtuber/nijisanji.toml) | 52 | 4.6 KB | にじさんじ (ANYCOLOR): ライバー名 (公式読みベース) |
+| [`core/works/vtuber/nijisanji.toml`](core/works/vtuber/nijisanji.toml) | 53 | 4.7 KB | にじさんじ (ANYCOLOR): ライバー名 (公式読みベース) |
 | [`core/works/vtuber/hololive.toml`](core/works/vtuber/hololive.toml) | 44 | 3.7 KB | ホロライブプロダクション (カバー): タレント名 (公式読みベース) |
 | [`core/works/vtuber/aogiri.toml`](core/works/vtuber/aogiri.toml) | 7 | 639 B | あおぎり高校 : タレント名 |
 | [`core/works/vtuber/kojin.toml`](core/works/vtuber/kojin.toml) | 6 | 614 B | 個人勢VTuber: タレント名 |
 | [`core/works/vtuber/vspo.toml`](core/works/vtuber/vspo.toml) | 6 | 701 B | ぶいすぽっ! : タレント名 (公式読みベース) |
 | [`core/works/vtuber/nanashi.toml`](core/works/vtuber/nanashi.toml) | 3 | 404 B | ななしいんく : タレント名 |
-| **小計** (6 ファイル) | **118** | **11 KB** | |
+| **小計** (6 ファイル) | **119** | **11 KB** | |
 
 
 ### 外来語
@@ -316,7 +316,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/_inbox.toml`](core/_inbox.toml) | 1,148 | 69 KB | 分類前の一時 inbox (≥2 字 surface、 内容が貯まったら適切な genre dir に振り分ける) |
+| [`core/_inbox.toml`](core/_inbox.toml) | 1,155 | 69 KB | 分類前の一時 inbox (≥2 字 surface、 内容が貯まったら適切な genre dir に振り分ける) |
 
 ### 単漢字 [[kanji]] format
 
@@ -398,7 +398,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 12101 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 12105 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -736,7 +736,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20260923_cur_misread.toml`](tests/corpus/should_read/probe_20260923_cur_misread.toml) | 62 |
 |  | [`tests/corpus/should_read/probe_20260923_pattern4.toml`](tests/corpus/should_read/probe_20260923_pattern4.toml) | 9 |
 |  | [`tests/corpus/should_read/probe_20260924_cur_misread2.toml`](tests/corpus/should_read/probe_20260924_cur_misread2.toml) | 431 |
-|  | [`tests/corpus/should_read/probe_20260927_new_comments.toml`](tests/corpus/should_read/probe_20260927_new_comments.toml) | 275 |
+|  | [`tests/corpus/should_read/probe_20260927_new_comments.toml`](tests/corpus/should_read/probe_20260927_new_comments.toml) | 279 |
 |  | [`tests/corpus/should_read/regression.toml`](tests/corpus/should_read/regression.toml) | 560 |
 |  | [`tests/corpus/should_read/sentences.toml`](tests/corpus/should_read/sentences.toml) | 49 |
 |  | [`tests/corpus/should_read/touhou.toml`](tests/corpus/should_read/touhou.toml) | 30 |
