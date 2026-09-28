@@ -826,3 +826,12 @@ expected = "しがつじゅういちにちづけで"
 [[case]]
 input = "録音物の再生演奏"
 expected = "ろくおんぶつのさいせいえんそう"
+[[case]]
+input = "自衛隊が駐屯する"
+expected = "じえいたいがちゅうとんする"
+[[case]]
+input = "生成文法の大部分は"
+expected = "せいせいぶんぽうのだいぶぶんは"
+[[case]]
+input = "正倉院宝物の管理"
+expected = "しょうそういんほうもつのかんり"
