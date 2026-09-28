@@ -920,6 +920,8 @@ description = "分類前の一時 inbox (≥2 字 surface、 内容が貯まっ�
 "星々" = "ほしぼし"
 "樹々" = "キギ"
 "本行寺" = "ホンギョウジ"
+"官幣" = "カンペイ"
+"西方沖" = "セイホウおき"
 "零円" = "レイエン"
 "良薬口" = "リョウヤクくち"
 "両腕" = "リョウうで"
@@ -2139,3 +2141,26 @@ reading = "ジョチョウ"
 [[entries."助長".match]]
 next_starts_any = ["さ"]
 reading = "ジョチョウ"
+
+# ★2026-09-28 政権を打倒し が うちたおし (Lindera の 打倒す = うちたおす)
+
+[entries."打倒し"]
+reading = "ダトウシ"
+
+[[entries."打倒し".match]]
+input_contains_any = ["打倒し"]
+reading = "ダトウシ"
+
+[entries."打倒す"]
+reading = "ダトウス"
+
+[[entries."打倒す".match]]
+input_contains_any = ["打倒す"]
+reading = "ダトウス"
+
+[entries."打倒さ"]
+reading = "ダトウサ"
+
+[[entries."打倒さ".match]]
+input_contains_any = ["打倒さ"]
+reading = "ダトウサ"

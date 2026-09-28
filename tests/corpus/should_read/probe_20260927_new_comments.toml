@@ -844,3 +844,9 @@ expected = "ふあんをじょちょうさせる"
 [[case]]
 input = "本行寺に葬られた"
 expected = "ほんぎょうじにほうむられた"
+[[case]]
+input = "政権を打倒して"
+expected = "せいけんをだとうして"
+[[case]]
+input = "福岡県西方沖地震"
+expected = "ふくおかけんせいほうおきじしん"
