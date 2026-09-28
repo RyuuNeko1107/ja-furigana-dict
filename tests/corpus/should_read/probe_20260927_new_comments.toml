@@ -1172,3 +1172,15 @@ expected = "もうしあわせじこう"
 [[case]]
 input = "上乗の出来"
 expected = "じょうじょうのでき"
+[[case]]
+input = "申立人の主張"
+expected = "もうしたてにんのしゅちょう"
+[[case]]
+input = "物干竿"
+expected = "ものほしざお"
+[[case]]
+input = "光明を見出だす"
+expected = "こうみょうをみいだす"
+[[case]]
+input = "土地の明渡"
+expected = "とちのあけわたし"
