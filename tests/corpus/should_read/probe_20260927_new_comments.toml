@@ -1004,3 +1004,15 @@ expected = "『にほんぎ』じんぐうこうごう"
 [[case]]
 input = "苦情の申出先"
 expected = "くじょうのもうしでさき"
+[[case]]
+input = "定員を千七百三十二人とする"
+expected = "ていいんをせんななひゃくさんじゅうににんとする"
+[[case]]
+input = "同条第七項の規定"
+expected = "どうじょうだいななこうのきてい"
+[[case]]
+input = "第十七章暗い紳士荘"
+expected = "だいじゅうななしょうくらいしんしそう"
+[[case]]
+input = "北斗七星"
+expected = "ほくとしちせい"
