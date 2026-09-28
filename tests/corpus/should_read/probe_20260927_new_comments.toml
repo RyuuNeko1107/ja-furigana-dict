@@ -931,3 +931,6 @@ expected = "ふりえきをこうむることになる"
 [[case]]
 input = "帽子を被る"
 expected = "ぼうしをかぶる"
+[[case]]
+input = "とか言うたびに"
+expected = "とかいうたびに"

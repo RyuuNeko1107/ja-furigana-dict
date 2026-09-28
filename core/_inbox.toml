@@ -2286,3 +2286,20 @@ reading = "おはなしください"
 [[entries."お話し下さい".match]]
 input_contains_any = ["お話し下さい"]
 reading = "おはなしください"
+
+# ★2026-09-28 言うた (関西 ゆうた) が 言うため / 言うたび に当たらないよう保護 (実験 branch の tie 軸で ゆう になった)
+
+[entries."言うため"]
+reading = "イウタメ"
+
+[[entries."言うため".match]]
+input_contains_any = ["言うため"]
+reading = "イウタメ"
+
+[entries."言うたび"]
+reading = "イウタビ"
+
+[[entries."言うたび".match]]
+input_contains_any = ["言うたび"]
+reading = "イウタビ"
+
