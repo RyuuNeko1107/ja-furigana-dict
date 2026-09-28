@@ -1019,3 +1019,15 @@ expected = "ほくとしちせい"
 [[case]]
 input = "本日も夜露四九"
 expected = "ほんじつもよろしく"
+[[case]]
+input = "横浜市緑区の周辺"
+expected = "よこはましみどりくのしゅうへん"
+[[case]]
+input = "借換国債"
+expected = "かりかえこくさい"
+[[case]]
+input = "固定翼機の使用"
+expected = "こていよくきのしよう"
+[[case]]
+input = "日仏文化交流"
+expected = "にちふつぶんかこうりゅう"

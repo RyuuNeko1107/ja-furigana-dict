@@ -298,7 +298,7 @@ expected = "おきにいりいれておくと"
 [[case]]
 input = "打つのは一三塁か捕手当たりか"
 mode = "hiragana"
-expected = "うつのはいっさんるいかほしゅあたりか"
+expected = "うつのはいちさんるいかほしゅあたりか"
 
 [[case]]
 input = "資金の貸付けを行う"
