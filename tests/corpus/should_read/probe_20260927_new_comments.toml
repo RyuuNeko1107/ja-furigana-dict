@@ -1103,3 +1103,15 @@ expected = "けっちゅうのうど"
 [[case]]
 input = "名前出ないと"
 expected = "なまえでないと"
+[[case]]
+input = "南軍と北軍"
+expected = "なんぐんとほくぐん"
+[[case]]
+input = "後漢になると"
+expected = "ごかんになると"
+[[case]]
+input = "技術者の育成"
+expected = "ぎじゅつしゃのいくせい"
+[[case]]
+input = "宮崎県都城市"
+expected = "みやざきけんみやこのじょうし"
