@@ -1337,3 +1337,6 @@ expected = "とうばんじゃん"
 [[case]]
 input = "杏仁豆腐"
 expected = "あんにんどうふ"
+[[case]]
+input = "翔蟲で移動"
+expected = "かけりむしでいどう"
