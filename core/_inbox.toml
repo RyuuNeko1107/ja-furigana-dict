@@ -2274,3 +2274,29 @@ reading = "おちつけ"
 [[entries."落付け".match]]
 input_contains_any = ["落付け"]
 reading = "おちつけ"
+
+# ★2026-09-28 Tatoeba 偶数半分の誤り: お話し下さい = おはなしし / 先きに = さききに / 外国語って = 語っ (かたっ)
+
+
+[entries."先き"]
+reading = "さき"
+
+[[entries."先き".match]]
+prev_ends_any = ["の", "が", "は", "に", "を", "も", "り", "ら", "と", "で", "よ", "、", "。", "こ", "そ"]
+reading = "さき"
+
+[entries."外国語"]
+reading = "ガイコクゴ"
+
+[[entries."外国語".match]]
+input_contains_any = ["外国語"]
+reading = "ガイコクゴ"
+
+
+
+[entries."お話し下さい"]
+reading = "おはなしください"
+
+[[entries."お話し下さい".match]]
+input_contains_any = ["お話し下さい"]
+reading = "おはなしください"

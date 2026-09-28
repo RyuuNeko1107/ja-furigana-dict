@@ -905,3 +905,23 @@ expected = "しもじものたたかい"
 [[case]]
 input = "極悪人だ"
 expected = "ごくあくにんだ"
+
+# 2026-09-28 Tatoeba 偶数半分 + 重複登録の解消
+[[case]]
+input = "その会社は大きな損害を被った。"
+expected = "そのかいしゃはおおきなそんがいをこうむった。"
+[[case]]
+input = "帽子を被った"
+expected = "ぼうしをかぶった"
+[[case]]
+input = "どうぞお話し下さい。"
+expected = "どうぞおはなしください。"
+[[case]]
+input = "お話ししています"
+expected = "おはなししています"
+[[case]]
+input = "外国語って言えばさ"
+expected = "がいこくごっていえばさ"
+[[case]]
+input = "人より先きに"
+expected = "ひとよりさきに"

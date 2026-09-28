@@ -684,6 +684,35 @@ def check_jukugo_divergent_reading(
             )
 
 
+def check_jukugo_match_shadowed(core_dir: Path, errors: Errors) -> None:
+    """match 付きの entry と同じ surface が別ファイルで単純 entry (文字列) として重複していたら ERROR。
+
+    後勝ち merge で単純 entry が prevail すると match が丸ごと消える。 読みが同じなので
+    divergent reading の検査には掛からず、 条件付きで直したはずの読みが黙って効かなくなる
+    (★2026-09-28 被った: _inbox の 損害を被った = コウムッタ が general.toml の 被った = カブッタ に消されていた)。
+    """
+    kinds: dict[str, list[tuple[str, str]]] = {}
+    for f in sorted(core_dir.glob('**/*.toml')):
+        rel = f.relative_to(core_dir).as_posix()
+        if rel.startswith('accent/') or f.name.endswith('.test.toml') or f.name == '_genre.toml':
+            continue
+        try:
+            with open(f, 'rb') as fh:
+                doc = tomllib.load(fh)
+        except Exception:
+            continue  # パース失敗は別の検査で ERROR 済み
+        for surface, v in (doc.get('entries') or {}).items():
+            kind = 'match' if isinstance(v, dict) and v.get('match') else 'simple'
+            kinds.setdefault(surface, []).append((rel, kind))
+    for surface, lst in sorted(kinds.items()):
+        ks = {k for _, k in lst}
+        if len(lst) > 1 and 'match' in ks and 'simple' in ks:
+            details = ', '.join(f"{f}({k})" for f, k in lst)
+            errors.add(
+                f"match shadowed: '{surface}' の match 付き entry が別ファイルの単純 entry と重複 (match が消える): {details}"
+            )
+
+
 # ─── 単一ファイル / 細分化サブディレクトリ どちらにも対応 ─────────────────
 def discover(base_dir: Path, name: str, *, recursive: bool = False) -> list[Path]:
     """`base_dir/name.toml` 単一ファイル → 無ければ `base_dir/name/*.toml` を返す。
@@ -918,6 +947,7 @@ def main() -> int:
 
     check_cross_file_duplicates(jukugo, unihan, errors)
     check_jukugo_divergent_reading(per_file_jukugo, errors)
+    check_jukugo_match_shadowed(core, errors)
 
     if warnings:
         print(f"[WARN] {len(warnings)} 件の bracket 警告", file=sys.stderr)
