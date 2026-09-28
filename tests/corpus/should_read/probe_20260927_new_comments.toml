@@ -1343,3 +1343,6 @@ expected = "かけりむしでいどう"
 [[case]]
 input = "倖田來未"
 expected = "こうだくみ"
+[[case]]
+input = "かわいい服着ちゃって"
+expected = "かわいいふくきちゃって"
