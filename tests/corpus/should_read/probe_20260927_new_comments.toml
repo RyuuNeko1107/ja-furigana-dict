@@ -957,3 +957,26 @@ expected = "けいけんちさがるからな"
 [[case]]
 input = "可愛すぎてしにそー"
 expected = "かわいすぎてしにそー"
+
+# 2026-09-28 改まった文章の旧表記 / 特許で 2 字熟語が割れる型
+[[case]]
+input = "あなた仰言ったでしょう"
+expected = "あなたおっしゃったでしょう"
+[[case]]
+input = "呶鳴った"
+expected = "どなった"
+[[case]]
+input = "突込んだ"
+expected = "つっこんだ"
+[[case]]
+input = "両国の約束になっている"
+expected = "りょうこくのやくそくになっている"
+[[case]]
+input = "ロックを確実に係合させる"
+expected = "ロックをかくじつにけいごうさせる"
+[[case]]
+input = "関係合意"
+expected = "かんけいごうい"
+[[case]]
+input = "仮払い"
+expected = "かりばらい"

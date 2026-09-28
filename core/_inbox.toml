@@ -628,7 +628,6 @@ description = "分類前の一時 inbox (≥2 字 surface、 内容が貯まっ�
 "係止" = "ケイシ"
 "係止穴" = "ケイシアナ"
 "係合" = "ケイゴウ"
-"係合し" = "ケイゴウシ"
 "鉄粉" = "テップン"
 "粉体" = "フンタイ"
 "軍靴" = "グンカ"
@@ -2359,3 +2358,159 @@ reading = "わから"
 [[entries."理解ら".match]]
 input_contains_any = ["理解ら"]
 reading = "わから"
+
+# ★2026-09-28 改まった文章 (青空文庫の旧表記 / 特許) で 2 字熟語が Lindera の活用形に巻き取られる箇所 (旧表記の語幹は old_orthography.toml 側を常時 match に)
+
+[entries."仮払い"]
+reading = "カリばらい"
+
+[[entries."仮払い".match]]
+input_contains_any = ["仮払い"]
+reading = "カリばらい"
+
+[entries."立上っ"]
+reading = "たちあがっ"
+
+[[entries."立上っ".match]]
+input_contains_any = ["立上っ"]
+reading = "たちあがっ"
+
+[entries."立上げ"]
+reading = "たちあげ"
+
+[[entries."立上げ".match]]
+input_contains_any = ["立上げ"]
+reading = "たちあげ"
+
+[entries."約束にな"]
+reading = "ヤクソクにな"
+
+[[entries."約束にな".match]]
+input_contains_any = ["約束にな"]
+reading = "ヤクソクにな"
+
+[entries."係合さ"]
+reading = "ケイゴウさ"
+
+[[entries."係合さ".match]]
+input_contains_any = ["係合さ"]
+reading = "ケイゴウさ"
+
+[entries."係合し"]
+reading = "ケイゴウし"
+
+[[entries."係合し".match]]
+input_contains_any = ["係合し"]
+reading = "ケイゴウし"
+
+[entries."係合す"]
+reading = "ケイゴウす"
+
+[[entries."係合す".match]]
+input_contains_any = ["係合す"]
+reading = "ケイゴウす"
+
+[entries."係止さ"]
+reading = "ケイシさ"
+
+[[entries."係止さ".match]]
+input_contains_any = ["係止さ"]
+reading = "ケイシさ"
+
+[entries."係止し"]
+reading = "ケイシし"
+
+[[entries."係止し".match]]
+input_contains_any = ["係止し"]
+reading = "ケイシし"
+
+[entries."係止す"]
+reading = "ケイシす"
+
+[[entries."係止す".match]]
+input_contains_any = ["係止す"]
+reading = "ケイシす"
+
+[entries."面喰っ"]
+reading = "めんくらっ"
+
+[[entries."面喰っ".match]]
+input_contains_any = ["面喰っ"]
+reading = "めんくらっ"
+
+[entries."駈出し"]
+reading = "かけだし"
+
+[[entries."駈出し".match]]
+input_contains_any = ["駈出し"]
+reading = "かけだし"
+
+[entries."打棄て"]
+reading = "うちすて"
+
+[[entries."打棄て".match]]
+input_contains_any = ["打棄て"]
+reading = "うちすて"
+
+[entries."吹込み"]
+reading = "ふきこみ"
+
+[[entries."吹込み".match]]
+input_contains_any = ["吹込み"]
+reading = "ふきこみ"
+
+[entries."藻掻い"]
+reading = "もがい"
+
+[[entries."藻掻い".match]]
+input_contains_any = ["藻掻い"]
+reading = "もがい"
+
+[entries."藻掻く"]
+reading = "もがく"
+
+[[entries."藻掻く".match]]
+input_contains_any = ["藻掻く"]
+reading = "もがく"
+
+[entries."幾通り"]
+reading = "いくとおり"
+
+[[entries."幾通り".match]]
+input_contains_any = ["幾通り"]
+reading = "いくとおり"
+
+[entries."薄青い"]
+reading = "うすあおい"
+
+[[entries."薄青い".match]]
+input_contains_any = ["薄青い"]
+reading = "うすあおい"
+
+[entries."俯向い"]
+reading = "うつむい"
+
+[[entries."俯向い".match]]
+input_contains_any = ["俯向い"]
+reading = "うつむい"
+
+[entries."俯向き"]
+reading = "うつむき"
+
+[[entries."俯向き".match]]
+input_contains_any = ["俯向き"]
+reading = "うつむき"
+
+[entries."俯向く"]
+reading = "うつむく"
+
+[[entries."俯向く".match]]
+input_contains_any = ["俯向く"]
+reading = "うつむく"
+
+[entries."俯向け"]
+reading = "うつむけ"
+
+[[entries."俯向け".match]]
+input_contains_any = ["俯向け"]
+reading = "うつむけ"
