@@ -11,6 +11,7 @@ role = "works"
 description = "原神 (HoYoverse): キャラクター名 (公式日本語読みベース)"
 
 [entries]
+"女皇" = "ジョコウ"  # 氷の女皇
 
 "鍾離" = "ショウリ"            # Zhongli。default あつめるり
 "神里綾人" = "カミサトアヤト"  # 「綾人」 あやひと→あやと

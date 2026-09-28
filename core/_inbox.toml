@@ -14,6 +14,10 @@ description = "分類前の一時 inbox (≥2 字 surface、 内容が貯まっ�
 #   role が違うため lib が jukugo として誤って load する)。
 
 [entries]
+# ★2026-09-29 SNS / 5ch の 1 字ずつ読まれた 2 字組 (ちちりん / まえぎ / おんなこう)
+"乳輪" = "ニュウリン"
+"美乳" = "ビニュウ"
+"前戯" = "ゼンギ"
 # ★2026-09-29 本番 API 入力から (しょうちゅう / かぜてん / あとげき)
 "翔虫" = "カケリムシ"
 "風纏" = "カザマトイ"
@@ -4333,3 +4337,10 @@ reading = "アオムケ"
 [[entries."仰向".match]]
 next_starts_any = ["き", "く", "か", "け", "こ", "い"]
 reading = "アオム"
+
+[entries."朝勃"]
+reading = "アサダチ"
+
+[[entries."朝勃".match]]
+next_starts_any = ["ち"]
+reading = "アサダ"
