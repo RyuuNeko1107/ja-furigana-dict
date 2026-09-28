@@ -1262,3 +1262,12 @@ expected = "だいがくせいきょう"
 [[case]]
 input = "純米大吟醸"
 expected = "じゅんまいだいぎんじょう"
+[[case]]
+input = "唾を嚥み込んだ"
+expected = "つばをのみこんだ"
+[[case]]
+input = "蝶の翅"
+expected = "ちょうのはね"
+[[case]]
+input = "屈腱炎"
+expected = "くっけんえん"

@@ -1603,6 +1603,77 @@ reading = "そと"
 # は 「おび」、 熟語 (= 「携帯 / 包帯 / 一帯 / A 帯」) は 「タイ」。 「帯びる (おびる)」
 # 動詞は ひらがな後続。 prev / next で context 判定が複雑なので default は最頻出の
 # 「タイ」、 「帯びる」 のみ next ひらがな で 「おび」 切替。
+# ★2026-09-28 「翅」 単独は はね (翅が / 翅を)、 漢字と連結する時は シ (前翅 / 翅脈 / 金翅鳥)。 unihan の つばさ を置き換え
+[[kanji]]
+char = "翅"
+default = "はね"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "シ"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "シ"
+
+# ★2026-09-28 叛く = そむく (叛いて が はんいて だった)。 熟語 (謀叛 / 叛乱) は ハン (unihan から移す)
+[[kanji]]
+char = "叛"
+default = "ハン"
+
+[[kanji.match]]
+next_starts_any = ["い", "く", "か", "け", "こ"]
+reading = "ソム"
+
+# ★2026-09-28 賤しい = いやしい (賤しく が せんしく だった)。 貴賤 は セン
+[[kanji]]
+char = "賤"
+default = "セン"
+
+[[kanji.match]]
+next_starts_any = ["し"]
+reading = "イヤ"
+
+# ★2026-09-28 咀う = のろう (呪う の異体)。 咀嚼 は ソ
+[[kanji]]
+char = "咀"
+default = "ソ"
+
+[[kanji.match]]
+next_starts_any = ["う", "い", "わ", "っ", "え", "お"]
+reading = "ノロ"
+
+# ★2026-09-28 嚥む = のむ (嚥んだり が えんんだり だった)。 嚥下 は エン
+[[kanji]]
+char = "嚥"
+default = "エン"
+
+[[kanji.match]]
+next_starts_any = ["ん", "む", "み", "ま", "め"]
+reading = "ノ"
+
+# ★2026-09-28 藉りる = かりる (藉りて が しゃりて だった)。 狼藉 / 慰藉 は ジャク/シャ のまま
+[[kanji]]
+char = "藉"
+default = "シャ"
+
+[[kanji.match]]
+next_starts_any = ["り", "る", "ら", "れ"]
+reading = "カ"
+
+# ★2026-09-28 猥りに = みだりに / 猥りがましい / 猥がましい = みだりがましい。 猥褻 / 卑猥 は ワイ
+[[kanji]]
+char = "猥"
+default = "ワイ"
+
+[[kanji.match]]
+next_starts_any = ["が"]
+reading = "ミダリ"
+
+[[kanji.match]]
+next_starts_any = ["り"]
+reading = "ミダ"
+
 [[kanji]]
 char = "帯"
 # default 「おび」 (= 単独名詞。 着物の帯 / 本の帯。 ★2026-09-11 flip、 旧 default タイ は
