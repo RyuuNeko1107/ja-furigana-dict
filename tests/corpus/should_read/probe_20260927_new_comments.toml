@@ -1253,3 +1253,12 @@ expected = "とおかえびす"
 [[case]]
 input = "仍て主文のとおり"
 expected = "よってしゅぶんのとおり"
+[[case]]
+input = "目力すごい"
+expected = "めぢからすごい"
+[[case]]
+input = "大学生協"
+expected = "だいがくせいきょう"
+[[case]]
+input = "純米大吟醸"
+expected = "じゅんまいだいぎんじょう"

@@ -386,7 +386,7 @@ expected = "ぎんみ"
 [[case]]
 input = "純米大吟醸"
 mode = "hiragana"
-expected = "じゅんべいだいぎんじょう"
+expected = "じゅんまいだいぎんじょう"
 
 [[case]]
 input = "皮膚"
