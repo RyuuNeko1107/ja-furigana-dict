@@ -1127,3 +1127,12 @@ expected = "しゅすいどうかん"
 [[case]]
 input = "途中破棄"
 expected = "とちゅうはき"
+[[case]]
+input = "前各号に掲げる"
+expected = "ぜんかくごうにかかげる"
+[[case]]
+input = "机竜之助"
+expected = "つくえりゅうのすけ"
+[[case]]
+input = "戦間期"
+expected = "せんかんき"
