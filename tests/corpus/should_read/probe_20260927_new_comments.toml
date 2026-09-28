@@ -1223,3 +1223,15 @@ expected = "たいじょうのぶざい"
 [[case]]
 input = "羊歯状結晶"
 expected = "しだじょうけっしょう"
+[[case]]
+input = "町域の変更"
+expected = "ちょういきのへんこう"
+[[case]]
+input = "間質性肺炎"
+expected = "かんしつせいはいえん"
+[[case]]
+input = "キャプ翼面白すぎ"
+expected = "キャプつばさおもしろすぎ"
+[[case]]
+input = "一体性"
+expected = "いったいせい"
