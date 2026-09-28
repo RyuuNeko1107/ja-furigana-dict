@@ -1064,3 +1064,18 @@ expected = "だいせいきょうでした"
 [[case]]
 input = "蓄光式誘導標識"
 expected = "ちっこうしきゆうどうひょうしき"
+[[case]]
+input = "前号に掲げるもの"
+expected = "ぜんごうにかかげるもの"
+[[case]]
+input = "次の表の上欄に掲げる"
+expected = "つぎのひょうのじょうらんにかかげる"
+[[case]]
+input = "次条の規定"
+expected = "じじょうのきてい"
+[[case]]
+input = "高圧ガスを充塡する"
+expected = "こうあつガスをじゅうてんする"
+[[case]]
+input = "３頁左上欄"
+expected = "さんぺーじひだりうえらん"
