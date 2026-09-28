@@ -1151,3 +1151,15 @@ expected = "データのとりこみ"
 [[case]]
 input = "特上カルビ"
 expected = "とくじょうカルビ"
+[[case]]
+input = "立入検査"
+expected = "たちいりけんさ"
+[[case]]
+input = "机の引出を開ける"
+expected = "つくえのひきだしをあける"
+[[case]]
+input = "任意積立金取崩額"
+expected = "にんいつみたてきんとりくずしがく"
+[[case]]
+input = "問合せ先"
+expected = "といあわせさき"
