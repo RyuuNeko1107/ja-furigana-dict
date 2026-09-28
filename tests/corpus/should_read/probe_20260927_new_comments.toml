@@ -1115,3 +1115,15 @@ expected = "ぎじゅつしゃのいくせい"
 [[case]]
 input = "宮崎県都城市"
 expected = "みやざきけんみやこのじょうし"
+[[case]]
+input = "荊州を支配した"
+expected = "けいしゅうをしはいした"
+[[case]]
+input = "早乙女主水之介"
+expected = "さおとめもんどのすけ"
+[[case]]
+input = "主水道管"
+expected = "しゅすいどうかん"
+[[case]]
+input = "途中破棄"
+expected = "とちゅうはき"
