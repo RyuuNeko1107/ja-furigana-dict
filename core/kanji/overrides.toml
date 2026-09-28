@@ -1674,6 +1674,87 @@ reading = "ミダリ"
 next_starts_any = ["り"]
 reading = "ミダ"
 
+# ★2026-09-28 睥む = にらむ (睨 の異体)。 睥睨 は ヘイ
+[[kanji]]
+char = "睥"
+default = "ヘイ"
+
+[[kanji.match]]
+next_starts_any = ["ん", "ま", "む", "み", "め"]
+reading = "ニラ"
+
+# ★2026-09-28 瞞す = だます (瞞され が まんされ だった)。 欺瞞 は マン
+[[kanji]]
+char = "瞞"
+default = "マン"
+
+[[kanji.match]]
+next_starts_any = ["さ", "し", "す", "せ", "そ"]
+reading = "ダマ"
+
+# ★2026-09-28 灌ぐ = そそぐ。 灌漑 は カン
+[[kanji]]
+char = "灌"
+default = "カン"
+
+[[kanji.match]]
+next_starts_any = ["ぎ", "ぐ", "が", "げ", "い"]
+reading = "ソソ"
+
+# ★2026-09-28 蹙める = しかめる。 顰蹙 は シュク
+[[kanji]]
+char = "蹙"
+default = "シュク"
+
+[[kanji.match]]
+next_starts_any = ["め", "む", "ま", "み"]
+reading = "シカ"
+
+# ★2026-09-28 嘔く = はく。 嘔吐 は オウ
+[[kanji]]
+char = "嘔"
+default = "オウ"
+
+[[kanji.match]]
+next_starts_any = ["き", "く", "か", "け"]
+reading = "ハ"
+
+# ★2026-09-28 箝める = はめる。 箝口令 は カン
+[[kanji]]
+char = "箝"
+default = "カン"
+
+[[kanji.match]]
+next_starts_any = ["め", "ま", "む", "み"]
+reading = "ハ"
+
+# ★2026-09-28 渾て = すべて。 渾身 は コン
+[[kanji]]
+char = "渾"
+default = "コン"
+
+[[kanji.match]]
+next_starts_any = ["て"]
+reading = "スベ"
+
+# ★2026-09-28 游ぶ = あそぶ (遊 の異体)。 游泳 は ユウ
+[[kanji]]
+char = "游"
+default = "ユウ"
+
+[[kanji.match]]
+next_starts_any = ["び", "ぶ", "ば", "べ", "ぼ", "ん"]
+reading = "アソ"
+
+# ★2026-09-28 兀げる = はげる。 突兀 は コツ
+[[kanji]]
+char = "兀"
+default = "コツ"
+
+[[kanji.match]]
+next_starts_any = ["げ"]
+reading = "ハ"
+
 [[kanji]]
 char = "帯"
 # default 「おび」 (= 単独名詞。 着物の帯 / 本の帯。 ★2026-09-11 flip、 旧 default タイ は
