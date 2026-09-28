@@ -995,3 +995,6 @@ expected = "かなりちつじょだっていた"
 [[case]]
 input = "知識は体系立てて"
 expected = "ちしきはたいけいだてて"
+[[case]]
+input = "前年を上回つた"
+expected = "ぜんねんをうわまわつた"
