@@ -1016,3 +1016,6 @@ expected = "だいじゅうななしょうくらいしんしそう"
 [[case]]
 input = "北斗七星"
 expected = "ほくとしちせい"
+[[case]]
+input = "本日も夜露四九"
+expected = "ほんじつもよろしく"
