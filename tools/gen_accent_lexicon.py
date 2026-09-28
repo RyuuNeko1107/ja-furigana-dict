@@ -109,6 +109,10 @@ def main() -> None:
             # 漢字の語 (前 / 方 / 中) は名詞としての単独用法が多いので残す
             if HIRA_WORD.match(row[COL_SURFACE]) and (row[COL_POS1] == "接尾辞" or row[COL_POS2] == "非自立可能"):
                 functional.add(key)
+            # ひらがな 1 字の語 (う = 鵜 / 卯、 く = 九 等) も入れない。 lib の token がひらがな 1 字になるのは
+            # ほぼ助動詞・助詞 (行きましょ + う) で、 表にあると付属語が独立した句になる (イキマショ'/ウ'、 2026-09-28)
+            if HIRA_WORD.match(row[COL_SURFACE]) and len(row[COL_SURFACE]) == 1:
+                functional.add(key)
             t = row[COL_ATYPE].split(",")[0]
             if not t.isdigit():
                 continue
