@@ -196,7 +196,7 @@ expected = "さすがにきせのさとすぎるww"
 [[case]]
 input = "リオナの類稀な反射神経"
 mode = "hiragana"
-expected = "リオナのるいまれなはんしゃしんけい"
+expected = "リオナのたぐいまれなはんしゃしんけい"
 
 [[case]]
 input = "流石稀代のエンターディナー"

@@ -1211,3 +1211,9 @@ expected = "つきあいかた"
 [[case]]
 input = "大きい方がいい"
 expected = "おおきいほうがいい"
+[[case]]
+input = "匈奴の単于"
+expected = "きょうどのぜんう"
+[[case]]
+input = "本革シート"
+expected = "ほんがわシート"
