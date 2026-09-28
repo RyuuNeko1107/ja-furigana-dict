@@ -1091,3 +1091,15 @@ expected = "たいしょくきゅうよひきあてきんくりいれがく"
 [[case]]
 input = "港長は"
 expected = "こうちょうは"
+[[case]]
+input = "差支ない"
+expected = "さしつかえない"
+[[case]]
+input = "筆界特定"
+expected = "ひっかいとくてい"
+[[case]]
+input = "血中濃度"
+expected = "けっちゅうのうど"
+[[case]]
+input = "名前出ないと"
+expected = "なまえでないと"
