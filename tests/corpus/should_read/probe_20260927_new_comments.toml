@@ -1307,3 +1307,9 @@ expected = "ぎじゅつし"
 [[case]]
 input = "初霜"
 expected = "はつしも"
+[[case]]
+input = "何重にも"
+expected = "いくえにも"
+[[case]]
+input = "禅寺の住職"
+expected = "ぜんでらのじゅうしょく"

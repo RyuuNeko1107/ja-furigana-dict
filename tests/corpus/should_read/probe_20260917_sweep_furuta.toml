@@ -346,7 +346,7 @@ expected = "てんしのりょうぼか"
 [[case]]
 input = "県庁の真北がね丘陵なんでね"
 mode = "hiragana"
-expected = "けんちょうのしんほくがねきゅうりょうなんでね"
+expected = "けんちょうのまきたがねきゅうりょうなんでね"
 
 [[case]]
 input = "弔い合戦や"
