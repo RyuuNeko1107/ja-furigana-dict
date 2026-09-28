@@ -14,6 +14,10 @@ description = "分類前の一時 inbox (≥2 字 surface、 内容が貯まっ�
 #   role が違うため lib が jukugo として誤って load する)。
 
 [entries]
+# ★2026-09-28 連濁 probe で見つけた語
+"米粒" = "コメツブ"
+"逃腰" = "ニゲゴシ"
+"夫婦箸" = "メオトバシ"
 # ★2026-09-28 物干 の長い語 (連濁)
 "物干竿" = "モノホシザオ"
 "物干し竿" = "モノホシザオ"
@@ -3817,3 +3821,10 @@ reading = "アケワタシ"
 [[entries."明渡".match]]
 next_starts_any = ["し", "す", "さ", "せ", "そ"]
 reading = "アケワタ"
+
+[entries."裏通"]
+reading = "ウラドオリ"
+
+[[entries."裏通".match]]
+next_starts_any = ["り", "る", "ら", "れ", "ろ", "っ"]
+reading = "ウラドオ"

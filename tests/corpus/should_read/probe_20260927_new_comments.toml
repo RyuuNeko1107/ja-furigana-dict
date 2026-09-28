@@ -1184,3 +1184,6 @@ expected = "こうみょうをみいだす"
 [[case]]
 input = "土地の明渡"
 expected = "とちのあけわたし"
+[[case]]
+input = "米粒一つ"
+expected = "こめつぶひとつ"
