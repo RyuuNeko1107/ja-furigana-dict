@@ -867,3 +867,23 @@ expected = "さいしょにしにいこうとして"
 [[case]]
 input = "平手打ち"
 expected = "ひらてうち"
+
+# 2026-09-28 配信全量の own/現行 差分
+[[case]]
+input = "それで経験値いかないなら"
+expected = "それでけいけんちいかないなら"
+[[case]]
+input = "新入生きたらきついんよ"
+expected = "しんにゅうせいきたらきついんよ"
+[[case]]
+input = "冷やかしかよ"
+expected = "ひやかしかよ"
+[[case]]
+input = "湿気いやよね"
+expected = "しっけいやよね"
+[[case]]
+input = "湿気ってて草"
+expected = "しけっててくさ"
+[[case]]
+input = "大金持ってるぞ"
+expected = "たいきんもってるぞ"
