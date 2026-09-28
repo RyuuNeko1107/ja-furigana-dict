@@ -163,7 +163,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml) | 7,826 | 339 KB | 二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む) |
 | [`core/jukugo/basic/four_char.toml`](core/jukugo/basic/four_char.toml) | 35 | 2.4 KB | 四字熟語 (4 字 + 全 CJK 漢字) |
 | [`core/jukugo/basic/split_guard.toml`](core/jukugo/basic/split_guard.toml) | 33 | 4.0 KB | Lindera の 「熟語 + か」 分割に負けないための tie-break entry |
-| **小計** (3 ファイル) | **7,894** | **345 KB** | |
+| **小計** (3 ファイル) | **7,894** | **346 KB** | |
 
 
 ### 作品造語
