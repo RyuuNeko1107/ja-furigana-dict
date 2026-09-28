@@ -1196,3 +1196,18 @@ expected = "しんせいにんのしゅちょう"
 [[case]]
 input = "著名人"
 expected = "ちょめいじん"
+[[case]]
+input = "分け方について"
+expected = "わけかたについて"
+[[case]]
+input = "夜明け方に"
+expected = "よあけがたに"
+[[case]]
+input = "言われ方をした"
+expected = "いわれかたをした"
+[[case]]
+input = "付き合い方"
+expected = "つきあいかた"
+[[case]]
+input = "大きい方がいい"
+expected = "おおきいほうがいい"
