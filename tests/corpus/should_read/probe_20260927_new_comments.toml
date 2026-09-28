@@ -1271,3 +1271,15 @@ expected = "ちょうのはね"
 [[case]]
 input = "屈腱炎"
 expected = "くっけんえん"
+[[case]]
+input = "馬上の騎士"
+expected = "ばじょうのきし"
+[[case]]
+input = "何着て行けばいい"
+expected = "なにきていけばいい"
+[[case]]
+input = "競争を怖れません"
+expected = "きょうそうをおそれません"
+[[case]]
+input = "富や名声"
+expected = "とみやめいせい"

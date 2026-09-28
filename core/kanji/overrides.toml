@@ -8867,6 +8867,12 @@ default = "こわ"
 # 怖い/怖く/怖がる/怖すぎ 全て訓「こわ」。恐怖/畏怖 等の音「フ」は jukugo override。
 # (★production bare 記録 2026-06: bare 怖 が default フ で「ふ」誤読)
 
+# ★2026-09-28 怖れる = おそれる (怖れません が こわれません だった、 Tatoeba)
+[[kanji.match]]
+next_starts_any = ["れ"]
+reading = "おそ"
+
+
 [[kanji]]
 char = "悠"
 default = "ユウ"
@@ -9854,7 +9860,7 @@ default = "フ"
 
 # 名詞「富」= とみ (富を築く/巨万の富/富と名声。富裕/豊富/富豪/貧富 は2字tokenで非干渉)
 [[kanji.match]]
-next_starts_any = ["を", "が", "は", "と", "に", "の"]
+next_starts_any = ["を", "が", "は", "と", "に", "の", "や", "も", "で"]
 reading = "とみ"
 
 [[kanji.match]]

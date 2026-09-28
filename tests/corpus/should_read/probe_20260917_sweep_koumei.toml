@@ -86,7 +86,7 @@ expected = "こうめいないせい"
 [[case]]
 input = "孔明怖れる司馬懿"
 mode = "hiragana"
-expected = "こうめいこわれるしばい"
+expected = "こうめいおそれるしばい"
 
 [[case]]
 input = "万遍無く"
