@@ -627,23 +627,23 @@ default = "ライ"  # 来年/来週/来月/未来/将来 等の compound 用
 # (★round 22 「ち」、 ★round 24 「や」、 ★round 32 「そ」、 ★round 8 「ん」 追加)
 [[kanji.match]]
 next_starts_any = ["た", "て", "ま", "ち", "や", "そ", "す", "ん", "と"]
-reading = "キ"
+reading = "き"
 
 [[kanji.match]]
 next_starts = "る"
-reading = "ク"
+reading = "く"
 
 [[kanji.match]]
 next_starts_any = ["な", "よ", "い", "ね"]
-reading = "コ"
+reading = "こ"
 # ★2026-09-22: ら抜き 来れた / 来れる / 来れない = これ、 来れば = くれば (own engine の候補漏れ集計 38 行)
 [[kanji.match]]
 next_starts_any = ["れた", "れる", "れな", "れま", "れそ", "れて", "れん", "れよ", "れれ"]
-reading = "コ"
+reading = "こ"
 
 [[kanji.match]]
 next_starts = "れば"
-reading = "ク"
+reading = "く"
 
 # ─── 動詞 / 形容詞 1 字 (★alpha.19) ─────────────────────────────────────────
 #
@@ -666,11 +666,11 @@ default = "ショク"  # 食事 / 食物 / 食堂 / 夕食 等
 
 [[kanji.match]]
 next_starts = "べ"  # 食べる / 食べた / 食べない / 食べます
-reading = "タベ"
+reading = "たべ"
 
 [[kanji.match]]
 next_starts_any = ["う", "わ", "っ"]  # 食う / 食わない / 食って (口語)
-reading = "ク"
+reading = "く"
 
 [[kanji]]
 char = "飲"
@@ -827,7 +827,7 @@ default = "ツカイ"
 # 使う / 使わない / 使い / 使える / 使って / 使った / 使おう
 [[kanji.match]]
 next_starts_any = ["う", "わ", "い", "え", "っ", "お"]
-reading = "ツカ"
+reading = "つか"
 
 [[kanji]]
 char = "言"
@@ -881,14 +881,14 @@ default = "ケイ"
 # next が 「つ / っ / ち」 (= 促音便 「った/って」 は 「っ」 で識別) → タ
 [[kanji.match]]
 next_starts_any = ["つ", "っ", "ち", "たな"]
-reading = "タ"
+reading = "た"
 # ★2026-09-22 own engine の oracle 到達不能 (候補に正解読みが無い) 集計より: 経たない = たたない (経た = へた とは たな で区別)
 
 # 動詞 「経る = ヘル」 (上一段、 経る / 経た / 経て / 経たい / 経られる /
 # 経れば / 経よう): next が 「る / た / て / ら / れ / よ」 → ヘ
 [[kanji.match]]
 next_starts_any = ["る", "た", "て", "ら", "れ", "よ"]
-reading = "ヘ"
+reading = "へ"
 
 [[kanji]]
 char = "終"
@@ -942,7 +942,7 @@ default = "ヘン"  # 変な / 変だ / 変身 / 変化 / 変装 等は 「ヘ�
                   # を default に fallback、 動詞活用のみ 「カ」 に
 [[kanji.match]]
 next_starts_any = ["え", "わ"]  # 「変える / 変わる / 変わった / 変わらない」 = カ + 送りがな
-reading = "カ"
+reading = "か"
 
 [[kanji]]
 char = "寝"
@@ -990,7 +990,7 @@ default = "ニュウ"
 # ★2026-09-22 パターン判定: 「メンシ入りました / クールタイム入りそう / 特戦隊入りする」 = 動詞 (はいり) は イ rule より先に除外
 [[kanji.match]]
 next_starts_any = ["りま", "りそ", "りた", "りて", "りな", "りつ", "りす", "りや"]
-reading = "ハイ"
+reading = "はい"
 # 「プロ入り / サイン入り / スタジオ入り / 特戦隊入り」 = 名詞 + 入り = イリ (直前がカタカナ / 漢字)
 [[kanji.match]]
 prev_char_type = "カタカナ"
@@ -1004,7 +1004,7 @@ reading = "イ"
 # 「入って / 入る / 入り / 入ろう / 入らない」 = ハイ + 送りがな
 [[kanji.match]]
 next_starts_any = ["っ", "る", "り", "ろ", "ら"]
-reading = "ハイ"
+reading = "はい"
 # 「入れる / 入れた / 入れて」 = イ + 送りがな
 [[kanji.match]]
 next_starts = "れ"
@@ -1211,7 +1211,7 @@ char = "嫌"
 default = "イヤ"
 [[kanji.match]]
 next_starts_any = ["い", "う", "わ", "え", "お"]
-reading = "キラ"
+reading = "きら"
 
 # 「対」: 標準音読み 「タイ」 (= 「対戦 / 対象 / 対応 / 対立 / 対あり」)。
 # 「ツイ」 は 「一対 (ひとつい)」 等の限定用法。
@@ -1335,7 +1335,7 @@ reading = "セン"
 # チャットの 「w戦う」 のように英字の直後に動詞が来る形は先に タタカ へ逃がす
 [[kanji.match]]
 next_starts_any = ["う", "っ", "わ", "い", "え", "お"]
-reading = "タタカ"
+reading = "たたか"
 
 [[kanji.match]]
 prev_char_type = "英数"
@@ -2229,7 +2229,7 @@ reading = "ニチ"
 
 [[kanji.match]]
 next_starts_any = ["も", "は", "が", "に", "の", "を"]
-reading = "ヒ"
+reading = "ひ"
 
 # 「掃除ない日 / 休む日 / -した日 / -る日 / その日 / 私の日」 等 動詞・形容詞活用 + 助詞 prev = 「ヒ」
 [[kanji.match]]
@@ -2252,7 +2252,7 @@ default = "ザン"
 
 [[kanji.match]]
 next_starts_any = ["る", "り", "っ", "ら", "れ", "ろ"]
-reading = "キ"
+reading = "き"
 
 # 「速」 unihan default 「はやい」 (= 形容詞語幹 ひらがな) では 「速度 / 速攻 / 高速」
 # 等の音読み 「ソク」 が default、 round 33 で override。 形容詞活用は next ひらがな
@@ -2412,7 +2412,7 @@ default = "セツ"
 
 [[kanji.match]]
 next_starts_any = ["く", "き", "い", "か"]  # 「説く / 説きます / 説いて / 説かない」
-reading = "ト"
+reading = "と"
 
 # 「逆」 unihan default 「さか」 → 「ギャク」 (= 「逆転 / 逆らう / 逆効果 / 反逆」)。 動詞 +
 # 名詞 「サカ」 (= 「逆さま / 逆らう」) は next ひらがな で分岐
@@ -2422,7 +2422,7 @@ default = "ギャク"
 
 [[kanji.match]]
 next_starts_any = ["さ", "ら"]  # 「逆さま / 逆らう」
-reading = "サカ"
+reading = "さか"
 
 # ★round 38、 unihan/joyo の動詞訓読み default 偏向 sweep その 3:
 
@@ -2461,7 +2461,7 @@ reading = "[シカ]"
 
 [[kanji.match]]
 next_starts_any = ["か"]  # 「確か / 確かに / 確かな」
-reading = "タシ"
+reading = "たし"
 
 # 「長」 unihan default 「チョウ」 → 「チョウ」 維持 (= 「課長 / 部長 / 校長 / 隊長」 接尾辞)、
 # 形容詞活用は next ひらがな → ナガ stem (= 「長い / 長さ / 長く」)
@@ -2492,7 +2492,7 @@ default = "コ"
 
 [[kanji.match]]
 next_starts_any = ["さ"]  # 「小さい / 小さな」 形容詞
-reading = "チイ"
+reading = "ちい"
 
 # 口語の 小っちゃい / 小っさい = ち (こっちゃい / こっさい になっていた)
 [[kanji.match]]
@@ -2596,7 +2596,7 @@ reading = "エン"
 # 炎上/炎症/炎天/火炎/気炎 は2字tokenで エン (単独 炎=ほのお が dominant)
 [[kanji.match]]
 next_starts_any = ["の", "が", "を", "に", "は", "も", "で", "と", "だ", "や"]
-reading = "ホノオ"
+reading = "ほのお"
 
 [[kanji.match]]
 prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も", "い", "る", "た", "て"]
@@ -2811,7 +2811,7 @@ default = "リツ"
 # next が 「つ / っ / ち / た / て / と」 → タ (全活用形で reading 同じ)
 [[kanji.match]]
 next_starts_any = ["つ", "っ", "ち", "た", "て", "と"]
-reading = "タ"
+reading = "た"
 
 # 「色」: unihan default 「いろ」 → 後置 case のイロ系が圧倒的多数 (83 件:
 # 緑色 / 顔色 / 音色 / 朱色 / 桃色 / 桜色 / 紅色 / 藍色 / 茜色 等)、
@@ -2960,7 +2960,7 @@ reading = "ムズカ"
 # jukugo 個別救済): next が 「い」 → カタ
 [[kanji.match]]
 next_starts_any = ["い"]
-reading = "カタ"
+reading = "かた"
 
 # 「原」: unihan default 「はら」 → ゲン 系 11 件 (= 原因 / 原料 / 原産 /
 # 原価 / 原色 / 原子量 / 草原 / 高原 / 雪原 / 原神 / 原動機付自転車 等) +
@@ -3012,7 +3012,7 @@ default = "リ"
 # 利いた/利いて/利こう): next が 「く / か / き / け / こ / い」 → キ
 [[kanji.match]]
 next_starts_any = ["く", "か", "き", "け", "こ", "い"]
-reading = "キ"
+reading = "き"
 
 # 「工」: unihan default 「たくみ」 → コウ/ク 系 20 件 (= 工事 / 工場 /
 # 工業 / 工具 / 工夫 / 工程 / 加工 / 大工 / 創意工夫 等)。 タクミ 系
@@ -3465,7 +3465,7 @@ default = "カイ"
 # next が 「く / い / か / き / け / こ」 → ト
 [[kanji.match]]
 next_starts_any = ["く", "い", "か", "き", "け", "こ"]
-reading = "ト"
+reading = "と"
 
 # 「解る = ワカル」 の口語形 「解んない / 解んなく」 (= 分かんない)。
 # 「解らない」 は Lindera が 解ら で読めるが、 「解んない」 は ん で切れて カイ に落ちる
@@ -3498,7 +3498,7 @@ default = "シュ"
 # next が 「る / っ / ら / り / れ / ろ」 → ト
 [[kanji.match]]
 next_starts_any = ["る", "っ", "ら", "り", "れ", "ろ"]
-reading = "ト"
+reading = "と"
 
 # 「済」: default = サイ (= 済度 / 経済 / 弁済 / 既済 / 救済 等)。 動詞
 # 「済む = スム」 / 「済ます = スマス」 (= 「済む / 済まない / 済み / 済め
@@ -3518,7 +3518,7 @@ reading = "ズミ"
 # next が 「む / ま / み / め / も / ん」 → ス
 [[kanji.match]]
 next_starts_any = ["む", "ま", "み", "め", "も", "ん"]
-reading = "ス"
+reading = "す"
 
 # 「知」: default = チ (= 知識 / 認知 / 通知 / 告知 / 知能 等)。 動詞
 # 「知る = シル」 (= 「知る / 知った / 知らない / 知って / 知り / 知れ /
@@ -3531,7 +3531,7 @@ default = "チ"
 # 知れる/知れ/知ろう): next が 「る / っ / ら / り / れ / ろ」 → シ
 [[kanji.match]]
 next_starts_any = ["る", "っ", "ら", "り", "れ", "ろ"]
-reading = "シ"
+reading = "し"
 
 # 「切」: default = セツ (= 切実 / 切迫 / 親切 / 大切 / 適切 等)。 動詞
 # 「切る = キル」 / 「切れる = キレル」 (= 「切る / 切った / 切らない / 切れる
@@ -3546,7 +3546,7 @@ default = "セツ"
 # next が 「る / っ / ら / り / れ / ろ」 → キ
 [[kanji.match]]
 next_starts_any = ["る", "っ", "ら", "り", "れ", "ろ"]
-reading = "キ"
+reading = "き"
 
 # 「有」: default = ユウ (= 有名 / 有効 / 所有 / 国有 / 共有 等)。 動詞
 # 「有る = アル」 (= 「有る / 有った / 有らない / 有り / 有れ」) は next
@@ -4011,7 +4011,7 @@ default = "ショ"
 
 [[kanji.match]]
 next_starts_any = ["く", "い", "か", "け", "き", "こ"]
-reading = "カ"
+reading = "か"
 
 # 「偽」: default 接頭辞 「ニセ」 (= 「偽物 / 偽札 / 偽情報」)。 動詞 「偽る」 は ら 行
 # 後続で 「イツワ」 stem に分岐。 音読み 「ギ」 (= 「真偽 / 偽造 / 偽装」) は jukugo で覆う。
@@ -4038,7 +4038,7 @@ default = "チョウ"
 
 [[kanji.match]]
 next_starts_any = ["え", "す", "さ", "し", "せ", "そ"]
-reading = "コ"
+reading = "こ"
 
 # 「弁」: default 接尾辞 / 接頭辞 「ベン」 (= 「関西弁 / 方言 / 弁当 / 弁護士 / 雄弁」)。
 # 動詞 「弁える (わきまえる)」 は え 後続で 「ワキマ」 stem。
@@ -4058,7 +4058,7 @@ default = "ショウ"
 
 [[kanji.match]]
 next_starts = "め"
-reading = "ススメ"
+reading = "すすめ"
 
 # 「恭」: default 「キョウ」 (= 「恭敬 / 恭順」)。 形容詞 「恭しい」 は next し で
 # 「ウヤウヤ」 stem。
@@ -4098,7 +4098,7 @@ default = "ジョク"
 
 [[kanji.match]]
 next_starts = "め"
-reading = "ハズカシ"
+reading = "はずかし"
 
 # 「主」: default 「ぬし」 (= 配信文脈で 「主」 単独は主催者意)、 副詞 / 形容動詞用法
 # 「主に / 主な」 は next 「に / な」 で 「オモ」、 音読み 「シュ」 は jukugo dict 1000
@@ -4223,7 +4223,7 @@ default = "リョウ"
 
 [[kanji.match]]
 next_starts_any = ["る", "っ", "ら", "り"]
-reading = "ハカ"
+reading = "はか"
 
 # 「床」: default 「ゆか」 (= 「床がきれい / 床に座る / 床暖房」 一般用法)、
 # 「床屋 / 床の間 / 寝床」 等の 「とこ」 用法は jukugo 個別登録に逃がす。
@@ -4497,7 +4497,7 @@ default = "シ"
 
 [[kanji.match]]
 next_starts_any = ["に"]
-reading = "ホシイママ"   # 恣に=ほしいまま (恣意=しい は next=意 で非干渉)
+reading = "ほしいまま"   # 恣に=ほしいまま (恣意=しい は next=意 で非干渉)
 
 [[kanji]]
 char = "恩"
@@ -4764,7 +4764,7 @@ default = "シン"
 # entry は 「北野武は」 のように長い entry を食う)
 [[kanji.match]]
 next_starts_any = ["か"]
-reading = "クチビル"
+reading = "くちびる"
 
 [[kanji.match]]
 next_starts_any = ["を", "が", "の", "に", "は", "も", "や", "と", "で"]
@@ -6604,7 +6604,7 @@ default = "サク"
 # 作る / 作った / 作って / 作らない / 作ろう / 作れる / 作り (= 作り方/作り直し)
 [[kanji.match]]
 next_starts_any = ["る", "ら", "っ", "れ", "ろ", "り"]
-reading = "ツク"
+reading = "つく"
 
 [[kanji]]
 char = "侵"
@@ -6791,7 +6791,7 @@ default = "ショウ"
 # Lindera が 2-char token で吸収するため この単漢字 match は発火しない
 [[kanji.match]]
 next_starts_any = ["の", "と", "を", "は", "が", "に", "だ", "や"]
-reading = "タクミ"
+reading = "たくみ"
 
 [[kanji]]
 char = "医"
@@ -7805,7 +7805,7 @@ default = "ホウ"
 # 放る (ほうる)・放って (ほうって) は default ホウ で吸収するため っ/る/ろ は match しない。
 [[kanji.match]]
 next_starts_any = ["す", "さ", "し", "せ", "そ", "つ"]
-reading = "ハナ"
+reading = "はな"
 
 [[kanji]]
 char = "救"
@@ -8544,7 +8544,7 @@ default = "イ"
 # (違くない / 違くて は元から ちがく)。 違和感 は next が漢字なので当たらない
 [[kanji.match]]
 next_starts_any = ["かっ", "く", "う", "え", "い"]
-reading = "チガ"
+reading = "ちが"
 
 [[kanji]]
 char = "遣"
@@ -11638,7 +11638,7 @@ default = "ヨウ"
 # entry は 「北野武は」 のように長い entry を食う)
 [[kanji.match]]
 next_starts_any = ["が", "の", "は", "も"]
-reading = "ハルカ"
+reading = "はるか"
 
 # 「遥か」 = はるか (副詞 / 形容動詞)
 [[kanji.match]]
@@ -14892,7 +14892,7 @@ default = "ゴ"
 # entry は 「北野武は」 のように長い entry を食う)
 [[kanji.match]]
 next_starts_any = ["に"]
-reading = "クレ"
+reading = "くれ"
 
 # 「淑」 default 「シュク」 (= 淑女/貞淑/私淑/淑徳)。
 # unihan default 「よい」 は古語、 「良/善」 と被る
@@ -15944,7 +15944,7 @@ default = "ブ"
 # entry は 「北野武は」 のように長い entry を食う)
 [[kanji.match]]
 next_starts_any = ["か", "が", "と", "に", "は", "を"]
-reading = "タケ"
+reading = "たけ"
 
 # 「歴」 default 「レキ」 (= 歴史/経歴/履歴/歴代/学歴/職歴/略歴)。
 # unihan default 「へる」 は古語動詞、 「経」 が動詞 dominant
@@ -19079,7 +19079,7 @@ default = "かご"
 # 「籠もる/籠もって/籠もった/籠もり」 = こもる (動詞)。 prev 漢字 match より優先
 [[kanji.match]]
 next_starts_any = ["も"]
-reading = "コ"
+reading = "こ"
 
 # ★ 2026-09-18: 副詞・時の語の直後は熟語ではない (多分兄が → たぶんけいが)。
 # prev 漢字 match より先に置いて default の訓読みに戻す。
@@ -23353,7 +23353,7 @@ default = "こび"
 # entry は 「北野武は」 のように長い entry を食う)
 [[kanji.match]]
 next_starts_any = ["を"]
-reading = "コビ"
+reading = "こび"
 
 [[kanji.match]]
 next_starts_any = ["び", "ぶ", "べ"]

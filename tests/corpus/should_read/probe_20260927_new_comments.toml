@@ -1346,3 +1346,6 @@ expected = "こうだくみ"
 [[case]]
 input = "かわいい服着ちゃって"
 expected = "かわいいふくきちゃって"
+[[case]]
+input = "新曲来た"
+expected = "しんきょくきた"
