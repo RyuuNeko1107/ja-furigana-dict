@@ -1355,3 +1355,9 @@ expected = "いくども"
 [[case]]
 input = "高師直"
 expected = "こうのもろなお"
+[[case]]
+input = "三国時代"
+expected = "さんごくじだい"
+[[case]]
+input = "森の石松"
+expected = "もりのいしまつ"
