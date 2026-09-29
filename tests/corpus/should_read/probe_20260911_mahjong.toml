@@ -87,9 +87,9 @@ expected = "ふーろ"
 note = "麻雀 (旧 ふくろ)"
 
 [[case]]
-input = "順子"
+input = "麻雀の順子"
 mode = "hiragana"
-expected = "しゅんつ"
+expected = "まーじゃんのしゅんつ"
 note = "麻雀 (旧 じゅんこ)"
 
 [[case]]

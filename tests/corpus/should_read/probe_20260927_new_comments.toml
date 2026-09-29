@@ -1361,3 +1361,15 @@ expected = "さんごくじだい"
 [[case]]
 input = "森の石松"
 expected = "もりのいしまつ"
+[[case]]
+input = "採用の可否を問う"
+expected = "さいようのかひをとう"
+[[case]]
+input = "汽水湖"
+expected = "きすいこ"
+[[case]]
+input = "塵取"
+expected = "ちりとり"
+[[case]]
+input = "順子さん"
+expected = "じゅんこさん"

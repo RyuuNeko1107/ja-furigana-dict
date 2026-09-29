@@ -21,7 +21,7 @@ expected = "しゅう"
 [[case]]
 input = "牡蛎かな"
 mode = "hiragana"
-expected = "ぼれいかな"
+expected = "かきかな"
 
 [[case]]
 input = "牡蠣"
