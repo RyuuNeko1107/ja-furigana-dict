@@ -1373,3 +1373,20 @@ expected = "ちりとり"
 [[case]]
 input = "順子さん"
 expected = "じゅんこさん"
+
+# UniDic 照合で見つけた別語読み (2026-09-29)
+[[case]]
+input = "内縁の妻"
+expected = "ないえんのつま"
+
+[[case]]
+input = "身代を築く"
+expected = "しんだいをきずく"
+
+[[case]]
+input = "身代わりになる"
+expected = "みがわりになる"
+
+[[case]]
+input = "印鑑を改印する"
+expected = "いんかんをかいいんする"

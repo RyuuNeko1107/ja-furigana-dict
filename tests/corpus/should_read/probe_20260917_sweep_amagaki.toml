@@ -16,7 +16,7 @@ expected = "ありむらかすみは?"
 [[case]]
 input = "復仇"
 mode = "hiragana"
-expected = "ふくきゅう"
+expected = "ふっきゅう"
 
 [[case]]
 input = "渋柿の方が糖度は高い"
