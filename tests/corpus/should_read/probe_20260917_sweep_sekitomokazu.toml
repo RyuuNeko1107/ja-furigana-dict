@@ -226,7 +226,7 @@ expected = "ボツげんこうやね"
 [[case]]
 input = "ヴォイニッチ手稿は怖いなw"
 mode = "hiragana"
-expected = "ヴォイニッチてこうはこわいなw"
+expected = "ヴォイニッチしゅこうはこわいなw"
 
 [[case]]
 input = "溺死したww"

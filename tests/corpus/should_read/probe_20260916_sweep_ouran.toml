@@ -126,7 +126,7 @@ expected = "いちらん"
 [[case]]
 input = "浪漫"
 mode = "hiragana"
-expected = "ろうまん"
+expected = "ろまん"
 
 [[case]]
 input = "放浪の狼"
