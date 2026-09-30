@@ -261,7 +261,7 @@ expected = "こくしぼうやめてね"
 [[case]]
 input = "芹香かー"
 mode = "hiragana"
-expected = "せりこうかー"
+expected = "せりかかー"
 
 [[case]]
 input = "清野なら芹澤"
