@@ -24,14 +24,14 @@ git に commit されている master HEAD の状態を基準にする。
 | カテゴリ | エントリ数 | サイズ |
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,654** | **728 KB** |
-| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **22,415** | **917 KB** |
+| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **22,539** | **920 KB** |
 | [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,702** | **132 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **1,714** | **44 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **2,149** | **113 KB** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,795** | **372 KB** |
 | [**異体字**](#異体字) (`rules/compat.toml`) | **436** | **6.1 KB** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **338** | **31 KB** |
-| **合計** | **72,203** | **2.29 MB** |
+| **合計** | **72,327** | **2.29 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -56,7 +56,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/jukugo/<genre>/*` — 手動 PR メンテのジャンル別 jukugo (≥ 2 字 surface)。 lib の Step 3 (jukugo lookup) で Lindera より優先採用。 各 genre dir の `_genre.toml` がカテゴリ description を持つ。
 
-**合計**: 22,415 件 / 917 KB (genre 6 区分)
+**合計**: 22,539 件 / 920 KB (genre 6 区分)
 
 #### 自然・生命
 
@@ -130,11 +130,11 @@ git に commit されている master HEAD の状態を基準にする。
 |---|---:|---:|---|
 | [`core/jukugo/proper/given_names.toml`](core/jukugo/proper/given_names.toml) | 860 | 22 KB | 下の名前 (UniDic 人名で読みが一意の語) |
 | [`core/jukugo/proper/personal_names.toml`](core/jukugo/proper/personal_names.toml) | 296 | 19 KB | 人名 (戦国 / 平安 / 江戸 / 明治大正 / 古典作家、現代私人除く) |
-| [`core/jukugo/proper/surnames.toml`](core/jukugo/proper/surnames.toml) | 169 | 23 KB | 難読姓 (苗字) の読み (姓単体、代表読み) |
+| [`core/jukugo/proper/surnames.toml`](core/jukugo/proper/surnames.toml) | 293 | 26 KB | 難読姓 (苗字) の読み (姓単体、代表読み) |
 | [`core/jukugo/proper/sumo_shikona.toml`](core/jukugo/proper/sumo_shikona.toml) | 45 | 3.4 KB | 大相撲 力士の四股名 (公式読み) |
 | [`core/jukugo/proper/proper_nouns.toml`](core/jukugo/proper/proper_nouns.toml) | 37 | 2.1 KB | 固有名詞 (大学 / 中央官庁 / 元号 / 歴史的事象、PR 募集中) |
 | [`core/jukugo/proper/sake_brands.toml`](core/jukugo/proper/sake_brands.toml) | 32 | 2.2 KB | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
-| **小計** (6 ファイル) | **1,439** | **71 KB** | |
+| **小計** (6 ファイル) | **1,563** | **74 KB** | |
 
 #### 物体・工芸
 
@@ -399,7 +399,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 12219 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 12221 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -737,7 +737,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20260923_cur_misread.toml`](tests/corpus/should_read/probe_20260923_cur_misread.toml) | 62 |
 |  | [`tests/corpus/should_read/probe_20260923_pattern4.toml`](tests/corpus/should_read/probe_20260923_pattern4.toml) | 9 |
 |  | [`tests/corpus/should_read/probe_20260924_cur_misread2.toml`](tests/corpus/should_read/probe_20260924_cur_misread2.toml) | 431 |
-|  | [`tests/corpus/should_read/probe_20260927_new_comments.toml`](tests/corpus/should_read/probe_20260927_new_comments.toml) | 393 |
+|  | [`tests/corpus/should_read/probe_20260927_new_comments.toml`](tests/corpus/should_read/probe_20260927_new_comments.toml) | 395 |
 |  | [`tests/corpus/should_read/regression.toml`](tests/corpus/should_read/regression.toml) | 560 |
 |  | [`tests/corpus/should_read/sentences.toml`](tests/corpus/should_read/sentences.toml) | 49 |
 |  | [`tests/corpus/should_read/touhou.toml`](tests/corpus/should_read/touhou.toml) | 30 |
