@@ -46,7 +46,7 @@ expected = "ちゅうにりゅう"
 [[case]]
 input = "伏魔御廚子"
 mode = "hiragana"
-expected = "ふくまごずし"
+expected = "ふくまみづし"
 
 [[case]]
 input = "蜀の桟道か?"
