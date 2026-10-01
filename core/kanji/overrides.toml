@@ -14230,6 +14230,11 @@ default = "リョウ"
 char = "寺"
 default = "てら"
 
+# ★2026-10-01 寺名 (常福寺 / 普門寺 / 東禅寺) は ジ。 山寺 / 尼寺 / 清水寺 等の でら は熟語 entry
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ジ"
+
 
 # 「専」 default 「セン」 (= 専門/専攻/専有/専属/専制/専念)。
 # unihan default 「せん」 (ひらがな) → カタカナ統一
