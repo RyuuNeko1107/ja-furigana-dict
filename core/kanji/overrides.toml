@@ -21775,6 +21775,11 @@ default = "チ"
 char = "李"
 default = "すもも"
 
+# ★2026-10-01 後ろが漢字なら中国・朝鮮の姓 (李鴻章 / 李淵 / 李舜臣)
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "リ"
+
 # ★2026-09-18: 旧 「李と」 形式の entry から移設 (助詞込み surface の
 # entry は 「北野武は」 のように長い entry を食う)
 [[kanji.match]]
@@ -21925,6 +21930,11 @@ default = "つばき"
 [[kanji]]
 char = "楊"
 default = "やなぎ"
+
+# ★2026-10-01 後ろが漢字なら音 (楊堅 / 楊修 / 楊枝)
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "ヨウ"
 
 # 「楓」 default 「かえで」 (= 「楓/紅葉楓」 訓主体)
 [[kanji]]
