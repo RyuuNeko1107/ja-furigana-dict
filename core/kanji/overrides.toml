@@ -21645,6 +21645,11 @@ default = "われ"
 char = "哉"
 default = "かな"
 
+# ★2026-10-01 名前の X哉 = や (晶哉 = しょうかな だった)。 快哉 / 善哉 は熟語 entry
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ヤ"
+
 # 「哩」 default 「ボク」 (= 「マイル」 当字、 実用ほぼなし、 unihan 既存読み維持)
 [[kanji]]
 char = "哩"
