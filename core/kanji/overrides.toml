@@ -6304,8 +6304,17 @@ char = "橘"
 default = "タチバナ"
 
 [[kanji]]
+# ★2026-10-01 単独は訓 (だいだい)、 前後が漢字なら音
 char = "橙"
-default = "トウ"
+default = "だいだい"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "トウ"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "トウ"
 
 [[kanji]]
 char = "欣"
@@ -6511,8 +6520,17 @@ char = "鵬"
 default = "ホウ"
 
 [[kanji]]
+# ★2026-10-01 単独は訓 (まゆずみ)、 前後が漢字なら音
 char = "黛"
-default = "タイ"
+default = "まゆずみ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "タイ"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "タイ"
 
 # ─── 第 11 弾 sweep: joyo length 3 動詞訓読み default 音読み化 ──
 # 動詞活用 / 接頭辞 / 接尾辞 で音読み主流の 57 字。 名詞 default 維持
@@ -8895,8 +8913,21 @@ char = "想"
 default = "ソウ"
 
 [[kanji]]
+# ★2026-10-01 単独は訓 (いこい)、 前後が漢字なら音
 char = "憩"
-default = "ケイ"
+default = "いこい"
+
+[[kanji.match]]
+next_starts_any = ["う", "わ", "い", "え", "お"]
+reading = "いこ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ケイ"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "ケイ"
 
 [[kanji]]
 char = "敏"
@@ -9174,8 +9205,21 @@ char = "衆"
 default = "シュウ"
 
 [[kanji]]
+# ★2026-10-01 単独は訓 (うたい)、 前後が漢字なら音
 char = "謡"
-default = "ヨウ"
+default = "うたい"
+
+[[kanji.match]]
+next_starts_any = ["う", "わ", "い", "え", "お"]
+reading = "うた"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ヨウ"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "ヨウ"
 
 [[kanji]]
 char = "軽"
@@ -12498,8 +12542,25 @@ reading = "つな"
 # 「纏」 default 「テン」 (= 纏綿/纏足)。
 # 動詞 「纏う/纏める」 は okurigana 列挙で 「まと」 へ切替
 [[kanji]]
+# ★2026-10-01 単独は まとい、 纏める / 纏まる = まと、 纏わる = まつ、 前後が漢字なら テン
 char = "纏"
-default = "テン"
+default = "まとい"
+
+[[kanji.match]]
+next_starts_any = ["め", "ま"]
+reading = "まと"
+
+[[kanji.match]]
+next_starts_any = ["わ"]
+reading = "まつ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "テン"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "テン"
 
 [[kanji.match]]
 next_starts_any = ["う", "わ", "い", "っ", "え", "お", "め", "ま", "み", "む", "も"]
@@ -12567,8 +12628,17 @@ default = "ふすま"
 
 # 「誼」 default 「ギ」 (= 情誼/友誼/誼)。
 [[kanji]]
+# ★2026-10-01 単独は訓 (よしみ)、 前後が漢字なら音
 char = "誼"
-default = "ギ"
+default = "よしみ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ギ"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "ギ"
 
 # 文末「の誼」= よしみ (旧来の誼/誼を通じる。誼 はほぼ単義 よしみ、ギ は稀)
 [[kanji.match]]
@@ -20181,8 +20251,17 @@ default = "シ"
 
 # 「喪」 default 「ソウ」 (= 喪服/喪失/喪中/服喪、 音読み主流。 訓「も」 jukugo 経由)
 [[kanji]]
+# ★2026-10-01 単独は訓 (も)、 前後が漢字なら音
 char = "喪"
-default = "ソウ"
+default = "も"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ソウ"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "ソウ"
 
 # 「圏」 default 「ケン」 (= 圏外/首都圏/北極圏/勢力圏、 音読みのみ)
 [[kanji]]
@@ -21002,8 +21081,21 @@ default = "ふじ"
 
 # 「藻」 default 「ソウ」 (= 海藻/水藻/緑藻/紅藻、 音読み)
 [[kanji]]
+# ★2026-10-01 単独は訓 (も)、 前後が漢字なら音
 char = "藻"
-default = "ソウ"
+default = "も"
+
+[[kanji.match]]
+prev_char_type = "カタカナ"
+reading = "ソウ"
+
+[[kanji.match]]
+prev_char_type = "漢字"
+reading = "ソウ"
+
+[[kanji.match]]
+next_char_type = "漢字"
+reading = "ソウ"
 
 # 「虞」 default 「おそれ」 (= 「虞 (法律用語)/不虞」 訓のみ実用)
 [[kanji]]
@@ -23404,3 +23496,8 @@ default = "たたり"
 [[kanji.match]]
 next_starts_any = ["り", "ら", "っ", "る", "れ", "ろ"]
 reading = "たた"
+
+# ★2026-10-01 盧 (中国の姓 盧植 / 盧生)。 IPADIC が の と読む
+[[kanji]]
+char = "盧"
+default = "ロ"
