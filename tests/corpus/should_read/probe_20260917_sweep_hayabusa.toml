@@ -256,7 +256,7 @@ expected = "はらませるきか"
 [[case]]
 input = "琥珀色"
 mode = "hiragana"
-expected = "こはくしょく"
+expected = "こはくいろ"
 
 [[case]]
 input = "琥珀糖が流れてるから"
