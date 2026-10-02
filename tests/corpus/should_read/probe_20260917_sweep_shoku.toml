@@ -116,7 +116,7 @@ expected = "だんみつ"
 [[case]]
 input = "檀黎斗?"
 mode = "hiragana"
-expected = "だんれいと?"
+expected = "だんくろと?"
 
 [[case]]
 input = "曼荼羅が見えた"

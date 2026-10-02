@@ -466,7 +466,7 @@ expected = "れいめいきだからね"
 [[case]]
 input = "檀黎斗?"
 mode = "hiragana"
-expected = "だんれいと?"
+expected = "だんくろと?"
 
 [[case]]
 input = "樋口楓"

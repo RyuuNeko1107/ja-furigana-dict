@@ -206,7 +206,7 @@ expected = "いばらきけんかみすし"
 [[case]]
 input = "牧瀬紅莉栖なっつ"
 mode = "hiragana"
-expected = "まきせこうりすなっつ"
+expected = "まきせくりすなっつ"
 
 [[case]]
 input = "大人の嗜み"
