@@ -261,7 +261,7 @@ expected = "たつみか?"
 [[case]]
 input = "原辰徳"
 mode = "hiragana"
-expected = "げんたつとく"
+expected = "はらたつのり"
 
 [[case]]
 input = "戊辰戦争不可避"
