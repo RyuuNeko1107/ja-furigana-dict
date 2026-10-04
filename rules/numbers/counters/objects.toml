@@ -490,6 +490,17 @@ suffix = "トウ"
 sokuonize = true
 # === end: 棟 ===
 
+# === begin: 床 === (病床数、 ショウ。 1/8/10 で促音化。 数字の後のみ、 漢数字は 床 = ゆか と衝突するので付けない。 ★2026-10-04 JVS)
+[counter."床"]
+default = "ショウ"
+kanji_numeral = false  # 漢数字 + 床 は ゆか (一床 / 三床) と衝突するので数字だけ
+
+[[counter."床".rules]]
+last_digit = [1, 8, 0]
+suffix = "ショウ"
+sokuonize = true
+# === end: 床 ===
+
 # === begin: 帖 === (海苔/畳/紙、 ジョウ。 促音化なし。 ★2026-06-18)
 [counter."帖"]
 default = "ジョウ"
