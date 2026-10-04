@@ -2623,6 +2623,25 @@ reading = "ネン"
 prev_ends_any = ["の", "が", "は", "を", "に", "で", "と", "も", "つ", "い", "る", "う"]
 reading = "トシ"
 
+# ★2026-10-04 Tatoeba: 「年を取る / そんな年じゃ」 = トシ (年の前が文頭や な でも)
+[[kanji.match]]
+prev_char_type = "漢字"
+next_starts_any = ["を", "じゃ"]
+reading = "ネン"
+
+[[kanji.match]]
+prev_char_type = "英数"
+next_starts_any = ["を", "じゃ"]
+reading = "ネン"
+
+[[kanji.match]]
+next_starts_any = ["を", "じゃ"]
+reading = "トシ"
+
+[[kanji.match]]
+prev_ends_any = ["な"]
+reading = "トシ"
+
 # 「版」: spoken の 「○○版」 (= 「初版 / 限定版 / 統合版 / Switch版」) で 「ハン」、
 # 訓読み 「いた」 (= 板) は IPADIC unihan 経由で混入するが意味は 「板」、 完全に切り離す
 [[kanji]]
