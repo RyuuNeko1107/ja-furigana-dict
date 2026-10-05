@@ -6609,3 +6609,24 @@ reading = "ユウザン"
 [[entries."雄山".match]]
 prev_ends_any = ["三宅島", "立山", "三宅"]
 reading = "オヤマ"
+
+# 暮らし は前が漢字 / カタカナの名詞なら連濁 ぐらし (アパート暮らし / 海外暮らし / 実家暮らし 等を個別に列挙しない。 2026-10-05 Tatoeba)
+# 動詞 (暮らして / 暮らした / 暮らしながら …) と 年 / 回 / 月 + 暮らし (三年暮らし) は くらし のまま。 日暮らし は前の 日 の読み次第
+[entries."暮らし"]
+reading = "クらし"
+
+[[entries."暮らし".match]]
+next_starts_any = ["て", "た", "ま", "な", "つ", "そ", "や", "ぶ", "せ", "れ"]
+reading = "クらし"
+
+[[entries."暮らし".match]]
+prev_ends_any = ["年", "回", "月", "週", "間", "度", "号"]
+reading = "クらし"
+
+[[entries."暮らし".match]]
+prev_char_type = "漢字"
+reading = "グらし"
+
+[[entries."暮らし".match]]
+prev_char_type = "カタカナ"
+reading = "グらし"
