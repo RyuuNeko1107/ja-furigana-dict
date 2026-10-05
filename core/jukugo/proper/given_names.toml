@@ -12,14 +12,12 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 
 [entries]
 "亜衣子" = "あいこ"
-"愛実" = "あいみ"
 "赤兄" = "あかえ"
 "赤人" = "あかひと"
 "朱莉" = "あかり"
 "朱理" = "あかり"
 "明希" = "あき"
 "燁子" = "あきこ"
-"昭実" = "あきざね"
 "顕忠" = "あきただ"
 "顕長" = "あきなが"
 "明成" = "あきなり"
@@ -42,10 +40,8 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "綾音" = "あやね"
 "彩美" = "あやみ"
 "鮎美" = "あゆみ"
-"歩実" = "あゆみ"
 "有紗" = "ありさ"
 "有栖" = "ありす"
-"有頼" = "ありより"
 "有若" = "ありわか"
 "家忠" = "いえただ"
 "家成" = "いえなり"
@@ -72,7 +68,6 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "宇合" = "うまかい"
 "卯女" = "うめ"
 "瑛士" = "えいじ"
-"睿宗" = "えいそう"
 "衛太" = "えいた"
 "英太" = "えいた"
 "江利子" = "えりこ"
@@ -80,8 +75,6 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "鷗外" = "おうがい"
 "興経" = "おきつね"
 "興長" = "おきなが"
-"押勝" = "おしかつ"
-"緒嗣" = "おつぐ"
 "乙葉" = "おとは"
 "海音" = "かいおん"
 "海斗" = "かいと"
@@ -93,7 +86,6 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "景敬" = "かげたか"
 "景隆" = "かげたか"
 "景忠" = "かげただ"
-"景保" = "かげやす"
 "華澄" = "かすみ"
 "和明" = "かずあき"
 "和毅" = "かずき"
@@ -102,13 +94,9 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "数正" = "かずまさ"
 "和幸" = "かずゆき"
 "賢秀" = "かたひで"
-"勝静" = "かつきよ"
-"勝定" = "かつさだ"
 "勝豊" = "かつとよ"
-"勝平" = "かつへい"
 "且元" = "かつもと"
 "兼家" = "かねいえ"
-"兼実" = "かねざね"
 "兼季" = "かねすえ"
 "兼見" = "かねみ"
 "兼通" = "かねみち"
@@ -118,7 +106,6 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "果林" = "かりん"
 "花鈴" = "かりん"
 "華恋" = "かれん"
-"河勝" = "かわかつ"
 "勘右衛門" = "かんえもん"
 "勘左衛門" = "かんざえもん"
 "寛寿郎" = "かんじゅうろう"
@@ -130,33 +117,25 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "吉左衛門" = "きちざえもん"
 "吉兵衛" = "きちべえ"
 "其中" = "きちゅう"
-"公行" = "きみゆき"
 "清顕" = "きよあき"
-"清定" = "きよさだ"
 "清貞" = "きよさだ"
 "清忠" = "きよただ"
 "清長" = "きよなが"
 "清衡" = "きよひら"
-"清平" = "きよひら"
 "清房" = "きよふさ"
 "清麿" = "きよまろ"
 "清麻呂" = "きよまろ"
-"清宗" = "きよむね"
 "公賢" = "きんかた"
 "公兼" = "きんかね"
-"公実" = "きんざね"
 "公任" = "きんとう"
 "金兵衛" = "きんべえ"
-"公頼" = "きんより"
 "儀助" = "ぎすけ"
 "儀兵衛" = "ぎへえ"
 "銀兵衛" = "ぎんべえ"
-"銀平" = "ぎんぺい"
 "薬子" = "くすこ"
 "樟葉" = "くずのは"
 "国俊" = "くにとし"
 "国宗" = "くにむね"
-"国行" = "くにゆき"
 "邦良" = "くによし"
 "倉片" = "くらかた"
 "蔵之介" = "くらのすけ"
@@ -193,7 +172,6 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "幸太" = "こうた"
 "康太" = "こうた"
 "公太" = "こうた"
-"弘平" = "こうへい"
 "虎城" = "こじょう"
 "小助" = "こすけ"
 "湖太郎" = "こたろう"
@@ -233,7 +211,6 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "左内" = "さない"
 "実資" = "さねすけ"
 "実経" = "さねつね"
-"実頼" = "さねより"
 "佐兵衛" = "さへえ"
 "左兵衛" = "さへえ"
 "左馬介" = "さまのすけ"
@@ -247,7 +224,6 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "茂左衛門" = "しげざえもん"
 "重綱" = "しげつな"
 "茂辰" = "しげとき"
-"重直" = "しげなお"
 "重矩" = "しげのり"
 "重衡" = "しげひら"
 "子貢" = "しこう"
@@ -262,9 +238,6 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "浚介" = "しゅんすけ"
 "隼也" = "しゅんや"
 "庄右衛門" = "しょうえもん"
-"祥吾" = "しょうご"
-"昌吾" = "しょうご"
-"将吾" = "しょうご"
 "庄左衛門" = "しょうざえもん"
 "正助" = "しょうすけ"
 "荘助" = "しょうすけ"
@@ -275,7 +248,6 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "勝太郎" = "しょうたろう"
 "紫陽" = "しよう"
 "新右衛門" = "しんえもん"
-"伸吾" = "しんご"
 "慎司" = "しんじ"
 "真介" = "しんすけ"
 "信輔" = "しんすけ"
@@ -284,17 +256,12 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "新蔵" = "しんぞう"
 "新兵衛" = "しんべえ"
 "親兵衛" = "しんべえ"
-"慎平" = "しんぺい"
-"心平" = "しんぺい"
 "治右衛門" = "じえもん"
 "実雄" = "じつお"
 "重兵衛" = "じゅうべえ"
 "淳太" = "じゅんた"
 "純太" = "じゅんた"
 "惇忠" = "じゅんちゅう"
-"淳平" = "じゅんぺい"
-"純平" = "じゅんぺい"
-"潤平" = "じゅんぺい"
 "常恵" = "じょうえ"
 "城太郎" = "じょうたろう"
 "承禎" = "じょうてい"
@@ -304,18 +271,14 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "寿江子" = "すえこ"
 "季長" = "すえなが"
 "資家" = "すけいえ"
-"佐清" = "すけきよ"
-"祐清" = "すけきよ"
 "資忠" = "すけただ"
 "資胤" = "すけたね"
 "祐経" = "すけつね"
 "資朝" = "すけとも"
 "助之進" = "すけのしん"
 "資房" = "すけふさ"
-"資正" = "すけまさ"
 "資盛" = "すけもり"
 "資康" = "すけやす"
-"資頼" = "すけより"
 "寿々" = "すず"
 "鈴香" = "すずか"
 "寿々子" = "すずこ"
@@ -354,7 +317,6 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "宗湛" = "そうたん"
 "宗哲" = "そうてつ"
 "蒼風" = "そうふう"
-"宗平" = "そうへい"
 "惣兵衛" = "そうべえ"
 "総兵衛" = "そうべえ"
 "宗和" = "そうわ"
@@ -371,10 +333,8 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "鷹丸" = "たかまる"
 "高麿" = "たかまろ"
 "高光" = "たかみつ"
-"隆宗" = "たかむね"
 "高望" = "たかもち"
 "拓人" = "たくと"
-"拓実" = "たくみ"
 "武明" = "たけあき"
 "武定" = "たけさだ"
 "武敏" = "たけとし"
@@ -389,12 +349,9 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "忠兼" = "ただかね"
 "忠郷" = "たださと"
 "忠茂" = "ただしげ"
-"忠績" = "ただしげ"
 "忠隆" = "ただたか"
 "忠高" = "ただたか"
-"忠尚" = "ただたか"
 "忠崇" = "ただたか"
-"忠継" = "ただつぐ"
 "忠恒" = "ただつね"
 "忠輝" = "ただてる"
 "忠時" = "ただとき"
@@ -406,13 +363,11 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "忠房" = "ただふさ"
 "忠雅" = "ただまさ"
 "忠通" = "ただみち"
-"忠宗" = "ただむね"
 "忠元" = "ただもと"
 "龍興" = "たつおき"
 "辰馬" = "たつま"
 "龍丸" = "たつまる"
 "竜哉" = "たつや"
-"稙宗" = "たねむね"
 "太兵衛" = "たへえ"
 "玉男" = "たまお"
 "為家" = "ためいえ"
@@ -431,11 +386,9 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "仲達" = "ちゅうたつ"
 "長右衛門" = "ちょうえもん"
 "継信" = "つぐのぶ"
-"綱豊" = "つなとよ"
 "綱政" = "つなまさ"
 "綱宗" = "つなむね"
 "恒興" = "つねおき"
-"経清" = "つねきよ"
 "経高" = "つねたか"
 "常太郎" = "つねたろう"
 "経房" = "つねふさ"
@@ -447,7 +400,6 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "藤右衛門" = "とうえもん"
 "冬香" = "とうか"
 "籐子" = "とうこ"
-"冬吾" = "とうご"
 "藤次" = "とうじ"
 "桃青" = "とうせい"
 "藤兵衛" = "とうべえ"
@@ -455,36 +407,24 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "桃矢" = "とうや"
 "時氏" = "ときうじ"
 "時忠" = "ときただ"
-"言継" = "ときつぐ"
-"時継" = "ときつぐ"
-"時平" = "ときひら"
 "時熙" = "ときひろ"
 "時房" = "ときふさ"
 "時茂" = "ときもち"
-"時行" = "ときゆき"
-"時頼" = "ときより"
 "徳右衛門" = "とくえもん"
 "徳平" = "とくへい"
 "俊賢" = "としかた"
 "利仁" = "としひと"
-"朝定" = "ともさだ"
 "友忠" = "ともただ"
-"朝経" = "ともつね"
-"朝直" = "ともなお"
-"友尚" = "ともひさ"
 "知盛" = "とももり"
 "知哉" = "ともや"
 "豊氏" = "とようじ"
 "豊太郎" = "とよたろう"
-"豊直" = "とよなお"
 "寅子" = "とらこ"
 "道雪" = "どうせつ"
 "道節" = "どうせつ"
 "直養" = "なおかい"
 "直勝" = "なおかつ"
-"直克" = "なおかつ"
 "直基" = "なおき"
-"直清" = "なおきよ"
 "直茂" = "なおしげ"
 "直重" = "なおしげ"
 "直昌" = "なおしげ"
@@ -495,9 +435,7 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "直英" = "なおひで"
 "直房" = "なおふさ"
 "尚哉" = "なおや"
-"直頼" = "なおより"
 "仲成" = "なかなり"
-"長勝" = "ながかつ"
 "長繁" = "ながしげ"
 "長隆" = "ながたか"
 "長忠" = "ながただ"
@@ -520,7 +458,6 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "成重" = "なりしげ"
 "成政" = "なりまさ"
 "斉匡" = "なりまさ"
-"成頼" = "なりより"
 "南嶺" = "なんれい"
 "新笠" = "にいがさ"
 "仁右衛門" = "にえもん"
@@ -532,15 +469,11 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "信興" = "のぶおき"
 "信賢" = "のぶかた"
 "信方" = "のぶかた"
-"信定" = "のぶさだ"
 "信貞" = "のぶさだ"
 "信茂" = "のぶしげ"
-"信澄" = "のぶすみ"
 "信高" = "のぶたか"
 "宣孝" = "のぶたか"
 "信尹" = "のぶただ"
-"信豊" = "のぶとよ"
-"信直" = "のぶなお"
 "信昌" = "のぶまさ"
 "延光" = "のぶみつ"
 "信元" = "のぶもと"
@@ -550,8 +483,6 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "教経" = "のりつね"
 "教長" = "のりなが"
 "教通" = "のりみち"
-"範満" = "のりみつ"
-"範頼" = "のりより"
 "長谷雄" = "はせお"
 "初重" = "はつしげ"
 "隼太" = "はやた"
@@ -568,7 +499,6 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "晴政" = "はるまさ"
 "晴美" = "はるみ"
 "晴道" = "はるみち"
-"晴宗" = "はるむね"
 "晴良" = "はれよし"
 "半右衛門" = "はんえもん"
 "半左衛門" = "はんざえもん"
@@ -582,10 +512,8 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "常陸介" = "ひたちのすけ"
 "秀郷" = "ひでさと"
 "秀綱" = "ひでつな"
-"秀就" = "ひでなり"
 "秀衡" = "ひでひら"
 "英道" = "ひでみち"
-"秀宗" = "ひでむね"
 "秀元" = "ひでもと"
 "陽奈" = "ひな"
 "雛子" = "ひなこ"
@@ -595,17 +523,14 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "広門" = "ひろかど"
 "広澄" = "ひろずみ"
 "広忠" = "ひろただ"
-"広嗣" = "ひろつぐ"
 "広綱" = "ひろつな"
 "広成" = "ひろなり"
-"広宗" = "ひろむね"
 "周行" = "ひろゆき"
 "風太" = "ふうた"
 "笛子" = "ふえこ"
 "藤広" = "ふじひろ"
 "不比等" = "ふひと"
 "文緒" = "ふみお"
-"冬実" = "ふゆみ"
 "武左衛門" = "ぶざえもん"
 "武嗣郎" = "ぶしろう"
 "文蔵" = "ぶんぞう"
@@ -641,10 +566,8 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "雅功" = "まさとし"
 "雅俊" = "まさとし"
 "正倫" = "まさとも"
-"政豊" = "まさとよ"
 "政虎" = "まさとら"
 "正虎" = "まさとら"
-"正就" = "まさなり"
 "正儀" = "まさのり"
 "正春" = "まさはる"
 "正秀" = "まさひで"
@@ -655,13 +578,11 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "政房" = "まさふさ"
 "匡房" = "まさふさ"
 "正光" = "まさみつ"
-"政宗" = "まさむね"
 "政基" = "まさもと"
 "正盛" = "まさもり"
 "正守" = "まさもり"
 "将也" = "まさや"
 "政康" = "まさやす"
-"正頼" = "まさより"
 "益次郎" = "ますじろう"
 "又左衛門" = "またざえもん"
 "松香" = "まつか"
@@ -676,7 +597,6 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "道兼" = "みちかね"
 "通久" = "みちつね"
 "道宣" = "みちのぶ"
-"光尚" = "みつなお"
 "光盛" = "みつもり"
 "美鳥" = "みどり"
 "美々子" = "みみこ"
@@ -684,7 +604,6 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "武智麻呂" = "むちまろ"
 "宗明" = "むねあき"
 "宗貞" = "むねさだ"
-"宗実" = "むねざね"
 "宗茂" = "むねしげ"
 "宗重" = "むねしげ"
 "宗隆" = "むねたか"
@@ -712,15 +631,11 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "茂右衛門" = "もえもん"
 "茂吉" = "もきち"
 "持隆" = "もちたか"
-"持豊" = "もちとよ"
 "元章" = "もとあき"
 "基家" = "もといえ"
 "元勝" = "もとかつ"
 "元樹" = "もとき"
-"元清" = "もときよ"
-"基実" = "もとざね"
 "元茂" = "もとしげ"
-"元続" = "もとつぐ"
 "基経" = "もとつね"
 "元常" = "もとつね"
 "元宣" = "もとのぶ"
@@ -736,12 +651,9 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "盛定" = "もりさだ"
 "盛隆" = "もりたか"
 "守隆" = "もりたか"
-"盛次" = "もりつぐ"
 "盛綱" = "もりつな"
 "盛信" = "もりのぶ"
-"盛平" = "もりへい"
 "盛政" = "もりまさ"
-"師実" = "もろざね"
 "師輔" = "もろすけ"
 "師時" = "もろとき"
 "師房" = "もろふさ"
@@ -774,7 +686,6 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "勇太" = "ゆうた"
 "裕太" = "ゆうた"
 "祐太" = "ゆうた"
-"悠真" = "ゆうま"
 "行家" = "ゆきいえ"
 "由紀恵" = "ゆきえ"
 "雪香" = "ゆきか"
@@ -788,7 +699,6 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "義顕" = "よしあき"
 "吉明" = "よしあき"
 "義淳" = "よしあつ"
-"義篤" = "よしあつ"
 "佳枝" = "よしえ"
 "良臣" = "よしおみ"
 "佳香" = "よしか"
@@ -801,14 +711,12 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "義竜" = "よしたつ"
 "義種" = "よしたね"
 "吉太郎" = "よしたろう"
-"良継" = "よしつぐ"
 "義維" = "よしつな"
 "良経" = "よしつね"
 "義貫" = "よしつら"
 "義時" = "よしとき"
 "芳年" = "よしとし"
 "義朝" = "よしとも"
-"義豊" = "よしとよ"
 "能信" = "よしのぶ"
 "良規" = "よしのり"
 "吉弘" = "よしひろ"
@@ -819,21 +727,13 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "義通" = "よしみち"
 "吉光" = "よしみつ"
 "慶光" = "よしみつ"
-"吉宗" = "よしむね"
 "義村" = "よしむら"
-"義基" = "よしもと"
 "吉弥" = "よしや"
-"義保" = "よしやす"
-"能保" = "よしやす"
 "義将" = "よしゆき"
-"良頼" = "よしより"
-"義頼" = "よしより"
 "世之介" = "よのすけ"
 "頼明" = "よりあき"
 "頼氏" = "よりうじ"
-"頼勝" = "よりかつ"
 "頼貞" = "よりさだ"
-"頼定" = "よりさだ"
 "頼純" = "よりずみ"
 "頼澄" = "よりずみ"
 "頼隆" = "よりたか"
@@ -841,15 +741,10 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "頼忠" = "よりただ"
 "頼胤" = "よりたね"
 "頼親" = "よりちか"
-"頼嗣" = "よりつぐ"
 "頼経" = "よりつね"
-"頼直" = "よりなお"
 "頼長" = "よりなが"
 "頼芸" = "よりのり"
-"頼尚" = "よりひさ"
 "頼倫" = "よりみち"
-"頼充" = "よりみつ"
-"頼宗" = "よりむね"
 "頼基" = "よりもと"
 "頼盛" = "よりもり"
 "頼泰" = "よりやす"
@@ -870,3 +765,742 @@ description = "下の名前 (UniDic 人名で読みが一意の語)"
 "零士" = "れいじ"
 "玲音" = "れいね"
 "蓮太郎" = "れんたろう"
+
+# ★ 助詞が続くと Lindera の分割に同点負けする entry の tie-break
+# (「取説か」 → しゅせつか)。 読みは default と同じで、 match_hits で同点を破るだけ。
+
+[entries."吉宗"]  
+reading = "よしむね"
+
+[[entries."吉宗".match]]
+next_starts_any = ["と"]
+reading = "よしむね"
+
+[entries."愛実"]  
+reading = "あいみ"
+
+[[entries."愛実".match]]
+next_starts_any = ["は", "に"]
+reading = "あいみ"
+
+[entries."昭実"]  
+reading = "あきざね"
+
+[[entries."昭実".match]]
+next_starts_any = ["は", "に"]
+reading = "あきざね"
+
+[entries."歩実"]  
+reading = "あゆみ"
+
+[[entries."歩実".match]]
+next_starts_any = ["は", "に"]
+reading = "あゆみ"
+
+[entries."有頼"]  
+reading = "ありより"
+
+[[entries."有頼".match]]
+next_starts_any = ["も"]
+reading = "ありより"
+
+[entries."睿宗"]  
+reading = "えいそう"
+
+[[entries."睿宗".match]]
+next_starts_any = ["と"]
+reading = "えいそう"
+
+[entries."押勝"]  
+reading = "おしかつ"
+
+[[entries."押勝".match]]
+next_starts_any = ["と"]
+reading = "おしかつ"
+
+[entries."緒嗣"]  
+reading = "おつぐ"
+
+[[entries."緒嗣".match]]
+next_starts_any = ["が"]
+reading = "おつぐ"
+
+[entries."景保"]  
+reading = "かげやす"
+
+[[entries."景保".match]]
+next_starts_any = ["と"]
+reading = "かげやす"
+
+[entries."勝静"]  
+reading = "かつきよ"
+
+[[entries."勝静".match]]
+next_starts_any = ["か"]
+reading = "かつきよ"
+
+[entries."勝定"]  
+reading = "かつさだ"
+
+[[entries."勝定".match]]
+next_starts_any = ["か"]
+reading = "かつさだ"
+
+[entries."勝平"]  
+reading = "かつへい"
+
+[[entries."勝平".match]]
+next_starts_any = ["が"]
+reading = "かつへい"
+
+[entries."兼実"]  
+reading = "かねざね"
+
+[[entries."兼実".match]]
+next_starts_any = ["は", "に"]
+reading = "かねざね"
+
+[entries."河勝"]  
+reading = "かわかつ"
+
+[[entries."河勝".match]]
+next_starts_any = ["と"]
+reading = "かわかつ"
+
+[entries."公行"]  
+reading = "きみゆき"
+
+[[entries."公行".match]]
+next_starts_any = ["か"]
+reading = "きみゆき"
+
+[entries."清定"]  
+reading = "きよさだ"
+
+[[entries."清定".match]]
+next_starts_any = ["か"]
+reading = "きよさだ"
+
+[entries."清平"]  
+reading = "きよひら"
+
+[[entries."清平".match]]
+next_starts_any = ["が", "に"]
+reading = "きよひら"
+
+[entries."清宗"]  
+reading = "きよむね"
+
+[[entries."清宗".match]]
+next_starts_any = ["と"]
+reading = "きよむね"
+
+[entries."公実"]  
+reading = "きんざね"
+
+[[entries."公実".match]]
+next_starts_any = ["は", "に"]
+reading = "きんざね"
+
+[entries."公頼"]  
+reading = "きんより"
+
+[[entries."公頼".match]]
+next_starts_any = ["も"]
+reading = "きんより"
+
+[entries."銀平"]  
+reading = "ぎんぺい"
+
+[[entries."銀平".match]]
+next_starts_any = ["が", "に"]
+reading = "ぎんぺい"
+
+[entries."国行"]  
+reading = "くにゆき"
+
+[[entries."国行".match]]
+next_starts_any = ["か"]
+reading = "くにゆき"
+
+[entries."弘平"]  
+reading = "こうへい"
+
+[[entries."弘平".match]]
+next_starts_any = ["が", "に"]
+reading = "こうへい"
+
+[entries."実頼"]  
+reading = "さねより"
+
+[[entries."実頼".match]]
+next_starts_any = ["も"]
+reading = "さねより"
+
+[entries."重直"]  
+reading = "しげなお"
+
+[[entries."重直".match]]
+next_starts_any = ["に"]
+reading = "しげなお"
+
+[entries."祥吾"]  
+reading = "しょうご"
+
+[[entries."祥吾".match]]
+next_starts_any = ["が"]
+reading = "しょうご"
+
+[entries."昌吾"]  
+reading = "しょうご"
+
+[[entries."昌吾".match]]
+next_starts_any = ["が"]
+reading = "しょうご"
+
+[entries."将吾"]  
+reading = "しょうご"
+
+[[entries."将吾".match]]
+next_starts_any = ["が"]
+reading = "しょうご"
+
+[entries."伸吾"]  
+reading = "しんご"
+
+[[entries."伸吾".match]]
+next_starts_any = ["が"]
+reading = "しんご"
+
+[entries."慎平"]  
+reading = "しんぺい"
+
+[[entries."慎平".match]]
+next_starts_any = ["が"]
+reading = "しんぺい"
+
+[entries."心平"]  
+reading = "しんぺい"
+
+[[entries."心平".match]]
+next_starts_any = ["が", "に"]
+reading = "しんぺい"
+
+[entries."淳平"]  
+reading = "じゅんぺい"
+
+[[entries."淳平".match]]
+next_starts_any = ["が", "に"]
+reading = "じゅんぺい"
+
+[entries."純平"]  
+reading = "じゅんぺい"
+
+[[entries."純平".match]]
+next_starts_any = ["が"]
+reading = "じゅんぺい"
+
+[entries."潤平"]  
+reading = "じゅんぺい"
+
+[[entries."潤平".match]]
+next_starts_any = ["が", "に"]
+reading = "じゅんぺい"
+
+[entries."佐清"]  
+reading = "すけきよ"
+
+[[entries."佐清".match]]
+next_starts_any = ["か"]
+reading = "すけきよ"
+
+[entries."祐清"]  
+reading = "すけきよ"
+
+[[entries."祐清".match]]
+next_starts_any = ["か"]
+reading = "すけきよ"
+
+[entries."資正"]  
+reading = "すけまさ"
+
+[[entries."資正".match]]
+next_starts_any = ["に"]
+reading = "すけまさ"
+
+[entries."資頼"]  
+reading = "すけより"
+
+[[entries."資頼".match]]
+next_starts_any = ["も"]
+reading = "すけより"
+
+[entries."宗平"]  
+reading = "そうへい"
+
+[[entries."宗平".match]]
+next_starts_any = ["が"]
+reading = "そうへい"
+
+[entries."隆宗"]  
+reading = "たかむね"
+
+[[entries."隆宗".match]]
+next_starts_any = ["と"]
+reading = "たかむね"
+
+[entries."拓実"]  
+reading = "たくみ"
+
+[[entries."拓実".match]]
+next_starts_any = ["は"]
+reading = "たくみ"
+
+[entries."忠績"]  
+reading = "ただしげ"
+
+[[entries."忠績".match]]
+next_starts_any = ["も"]
+reading = "ただしげ"
+
+[entries."忠尚"]  
+reading = "ただたか"
+
+[[entries."忠尚".match]]
+next_starts_any = ["も"]
+reading = "ただたか"
+
+[entries."忠継"]  
+reading = "ただつぐ"
+
+[[entries."忠継".match]]
+next_starts_any = ["が"]
+reading = "ただつぐ"
+
+[entries."忠宗"]  
+reading = "ただむね"
+
+[[entries."忠宗".match]]
+next_starts_any = ["と"]
+reading = "ただむね"
+
+[entries."稙宗"]  
+reading = "たねむね"
+
+[[entries."稙宗".match]]
+next_starts_any = ["と"]
+reading = "たねむね"
+
+[entries."綱豊"]  
+reading = "つなとよ"
+
+[[entries."綱豊".match]]
+next_starts_any = ["か"]
+reading = "つなとよ"
+
+[entries."経清"]  
+reading = "つねきよ"
+
+[[entries."経清".match]]
+next_starts_any = ["か"]
+reading = "つねきよ"
+
+[entries."冬吾"]  
+reading = "とうご"
+
+[[entries."冬吾".match]]
+next_starts_any = ["が"]
+reading = "とうご"
+
+[entries."言継"]  
+reading = "ときつぐ"
+
+[[entries."言継".match]]
+next_starts_any = ["が"]
+reading = "ときつぐ"
+
+[entries."時継"]  
+reading = "ときつぐ"
+
+[[entries."時継".match]]
+next_starts_any = ["が"]
+reading = "ときつぐ"
+
+[entries."時平"]  
+reading = "ときひら"
+
+[[entries."時平".match]]
+next_starts_any = ["が"]
+reading = "ときひら"
+
+[entries."時行"]  
+reading = "ときゆき"
+
+[[entries."時行".match]]
+next_starts_any = ["か"]
+reading = "ときゆき"
+
+[entries."時頼"]  
+reading = "ときより"
+
+[[entries."時頼".match]]
+next_starts_any = ["も"]
+reading = "ときより"
+
+[entries."朝定"]  
+reading = "ともさだ"
+
+[[entries."朝定".match]]
+next_starts_any = ["か"]
+reading = "ともさだ"
+
+[entries."朝経"]  
+reading = "ともつね"
+
+[[entries."朝経".match]]
+next_starts_any = ["と"]
+reading = "ともつね"
+
+[entries."朝直"]  
+reading = "ともなお"
+
+[[entries."朝直".match]]
+next_starts_any = ["に"]
+reading = "ともなお"
+
+[entries."友尚"]  
+reading = "ともひさ"
+
+[[entries."友尚".match]]
+next_starts_any = ["も"]
+reading = "ともひさ"
+
+[entries."豊直"]  
+reading = "とよなお"
+
+[[entries."豊直".match]]
+next_starts_any = ["に"]
+reading = "とよなお"
+
+[entries."直克"]  
+reading = "なおかつ"
+
+[[entries."直克".match]]
+next_starts_any = ["と"]
+reading = "なおかつ"
+
+[entries."直清"]  
+reading = "なおきよ"
+
+[[entries."直清".match]]
+next_starts_any = ["か"]
+reading = "なおきよ"
+
+[entries."直頼"]  
+reading = "なおより"
+
+[[entries."直頼".match]]
+next_starts_any = ["も"]
+reading = "なおより"
+
+[entries."長勝"]  
+reading = "ながかつ"
+
+[[entries."長勝".match]]
+next_starts_any = ["と"]
+reading = "ながかつ"
+
+[entries."成頼"]  
+reading = "なりより"
+
+[[entries."成頼".match]]
+next_starts_any = ["も"]
+reading = "なりより"
+
+[entries."信定"]  
+reading = "のぶさだ"
+
+[[entries."信定".match]]
+next_starts_any = ["か"]
+reading = "のぶさだ"
+
+[entries."信澄"]  
+reading = "のぶすみ"
+
+[[entries."信澄".match]]
+next_starts_any = ["も"]
+reading = "のぶすみ"
+
+[entries."信豊"]  
+reading = "のぶとよ"
+
+[[entries."信豊".match]]
+next_starts_any = ["か"]
+reading = "のぶとよ"
+
+[entries."信直"]  
+reading = "のぶなお"
+
+[[entries."信直".match]]
+next_starts_any = ["に"]
+reading = "のぶなお"
+
+[entries."範満"]  
+reading = "のりみつ"
+
+[[entries."範満".match]]
+next_starts_any = ["と"]
+reading = "のりみつ"
+
+[entries."範頼"]  
+reading = "のりより"
+
+[[entries."範頼".match]]
+next_starts_any = ["も"]
+reading = "のりより"
+
+[entries."晴宗"]  
+reading = "はるむね"
+
+[[entries."晴宗".match]]
+next_starts_any = ["と"]
+reading = "はるむね"
+
+[entries."秀就"]  
+reading = "ひでなり"
+
+[[entries."秀就".match]]
+next_starts_any = ["か"]
+reading = "ひでなり"
+
+[entries."秀宗"]  
+reading = "ひでむね"
+
+[[entries."秀宗".match]]
+next_starts_any = ["と"]
+reading = "ひでむね"
+
+[entries."広嗣"]  
+reading = "ひろつぐ"
+
+[[entries."広嗣".match]]
+next_starts_any = ["が"]
+reading = "ひろつぐ"
+
+[entries."広宗"]  
+reading = "ひろむね"
+
+[[entries."広宗".match]]
+next_starts_any = ["と"]
+reading = "ひろむね"
+
+[entries."冬実"]  
+reading = "ふゆみ"
+
+[[entries."冬実".match]]
+next_starts_any = ["は", "に"]
+reading = "ふゆみ"
+
+[entries."政豊"]  
+reading = "まさとよ"
+
+[[entries."政豊".match]]
+next_starts_any = ["か"]
+reading = "まさとよ"
+
+[entries."正就"]  
+reading = "まさなり"
+
+[[entries."正就".match]]
+next_starts_any = ["か"]
+reading = "まさなり"
+
+[entries."政宗"]  
+reading = "まさむね"
+
+[[entries."政宗".match]]
+next_starts_any = ["と"]
+reading = "まさむね"
+
+[entries."正頼"]  
+reading = "まさより"
+
+[[entries."正頼".match]]
+next_starts_any = ["も"]
+reading = "まさより"
+
+[entries."光尚"]  
+reading = "みつなお"
+
+[[entries."光尚".match]]
+next_starts_any = ["も"]
+reading = "みつなお"
+
+[entries."宗実"]  
+reading = "むねざね"
+
+[[entries."宗実".match]]
+next_starts_any = ["は"]
+reading = "むねざね"
+
+[entries."持豊"]  
+reading = "もちとよ"
+
+[[entries."持豊".match]]
+next_starts_any = ["か"]
+reading = "もちとよ"
+
+[entries."元清"]  
+reading = "もときよ"
+
+[[entries."元清".match]]
+next_starts_any = ["か"]
+reading = "もときよ"
+
+[entries."基実"]  
+reading = "もとざね"
+
+[[entries."基実".match]]
+next_starts_any = ["は", "に"]
+reading = "もとざね"
+
+[entries."元続"]  
+reading = "もとつぐ"
+
+[[entries."元続".match]]
+next_starts_any = ["か"]
+reading = "もとつぐ"
+
+[entries."盛次"]  
+reading = "もりつぐ"
+
+[[entries."盛次".match]]
+next_starts_any = ["に"]
+reading = "もりつぐ"
+
+[entries."盛平"]  
+reading = "もりへい"
+
+[[entries."盛平".match]]
+next_starts_any = ["が"]
+reading = "もりへい"
+
+[entries."師実"]  
+reading = "もろざね"
+
+[[entries."師実".match]]
+next_starts_any = ["は", "に"]
+reading = "もろざね"
+
+[entries."悠真"]  
+reading = "ゆうま"
+
+[[entries."悠真".match]]
+next_starts_any = ["に"]
+reading = "ゆうま"
+
+[entries."義篤"]  
+reading = "よしあつ"
+
+[[entries."義篤".match]]
+next_starts_any = ["と"]
+reading = "よしあつ"
+
+[entries."良継"]  
+reading = "よしつぐ"
+
+[[entries."良継".match]]
+next_starts_any = ["が"]
+reading = "よしつぐ"
+
+[entries."義豊"]  
+reading = "よしとよ"
+
+[[entries."義豊".match]]
+next_starts_any = ["か"]
+reading = "よしとよ"
+
+[entries."義基"]  
+reading = "よしもと"
+
+[[entries."義基".match]]
+next_starts_any = ["か"]
+reading = "よしもと"
+
+[entries."義保"]  
+reading = "よしやす"
+
+[[entries."義保".match]]
+next_starts_any = ["と"]
+reading = "よしやす"
+
+[entries."能保"]  
+reading = "よしやす"
+
+[[entries."能保".match]]
+next_starts_any = ["と"]
+reading = "よしやす"
+
+[entries."良頼"]  
+reading = "よしより"
+
+[[entries."良頼".match]]
+next_starts_any = ["も"]
+reading = "よしより"
+
+[entries."義頼"]  
+reading = "よしより"
+
+[[entries."義頼".match]]
+next_starts_any = ["も"]
+reading = "よしより"
+
+[entries."頼勝"]  
+reading = "よりかつ"
+
+[[entries."頼勝".match]]
+next_starts_any = ["と"]
+reading = "よりかつ"
+
+[entries."頼定"]  
+reading = "よりさだ"
+
+[[entries."頼定".match]]
+next_starts_any = ["か"]
+reading = "よりさだ"
+
+[entries."頼嗣"]  
+reading = "よりつぐ"
+
+[[entries."頼嗣".match]]
+next_starts_any = ["が"]
+reading = "よりつぐ"
+
+[entries."頼直"]  
+reading = "よりなお"
+
+[[entries."頼直".match]]
+next_starts_any = ["に"]
+reading = "よりなお"
+
+[entries."頼尚"]  
+reading = "よりひさ"
+
+[[entries."頼尚".match]]
+next_starts_any = ["も"]
+reading = "よりひさ"
+
+[entries."頼充"]  
+reading = "よりみつ"
+
+[[entries."頼充".match]]
+next_starts_any = ["と"]
+reading = "よりみつ"
+
+[entries."頼宗"]  
+reading = "よりむね"
+
+[[entries."頼宗".match]]
+next_starts_any = ["と"]
+reading = "よりむね"
+

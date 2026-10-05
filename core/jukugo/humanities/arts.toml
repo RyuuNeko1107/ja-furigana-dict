@@ -122,7 +122,6 @@ description = "古典芸能 / 武道 / 茶華香 / 工芸"
 "中ノ舞" = "チュウノマイ"
 "急ノ舞" = "キュウノマイ"
 "破ノ舞" = "ハノマイ"
-"打合働" = "ウチアイバタラキ"
 "立回リ" = "タチマワリ"
 "作リ物" = "ツクリモノ"
 "習事" = "ナライゴト"
@@ -3501,4 +3500,14 @@ reading = "[カリ]ヤス"
 [[entries."苅安".match]]
 next_starts_any = ["が"]
 reading = "[カリ]ヤス"
+
+# ★ 助詞が続くと Lindera の分割に同点負けする entry の tie-break
+# (「取説か」 → しゅせつか)。 読みは default と同じで、 match_hits で同点を破るだけ。
+
+[entries."打合働"]  
+reading = "ウチアイバタラキ"
+
+[[entries."打合働".match]]
+next_starts_any = ["か"]
+reading = "ウチアイバタラキ"
 

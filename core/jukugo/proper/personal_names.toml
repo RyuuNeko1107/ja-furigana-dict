@@ -20,28 +20,19 @@ description = "人名 (戦国 / 平安 / 江戸 / 明治大正 / 古典作家、
 "源氏" = "ゲンジ"
 "孫文" = "ソンブン"
 "光緒" = "コウショ"
-"高宗" = "コウソウ"
-"玄宗" = "ゲンソウ"
 "万暦" = "バンレキ"
 "阪妻" = "バンツマ"
 "元帝" = "ゲンテイ"
-"粛宗" = "シュクソウ"
-"英宗" = "エイソウ"
-"仁宗" = "ジンソウ"
 "宋江" = "ソウコウ"
-"徽宗" = "キソウ"
 "箕子" = "キシ"
 "李淵" = "リエン"
 "孫武" = "ソンブ"
-"徳宗" = "トクソウ"
 "黄巣" = "コウソウ"
 "李密" = "リミツ"
-"憲宗" = "ケンソウ"
 "劉淵" = "リュウエン"
 "南泉" = "ナンセン"
 "閔妃" = "ビンヒ"
 "篤姫" = "アツヒメ"
-"神宗" = "シンソウ"
 "後白河" = "ゴシラカワ"
 "推古" = "スイコ"
 "胡亥" = "コガイ"
@@ -53,38 +44,27 @@ description = "人名 (戦国 / 平安 / 江戸 / 明治大正 / 古典作家、
 "光海君" = "コウカイクン"
 "李俊" = "リシュン"
 "郭嘉" = "カクカ"
-"文宗" = "ブンソウ"
 "豊登" = "トヨノボリ"
 "大乃国" = "オオノクニ"
-"光厳" = "コウゴン"
-"光宗" = "コウソウ"
 "林冲" = "リンチュウ"
-"武宗" = "ブソウ"
 "神農" = "シンノウ"
 "李靖" = "リセイ"
 "重源" = "チョウゲン"
-"証如" = "ショウニョ"
 "黄興" = "コウコウ"
 "崇徳" = "ストク"
-"欽宗" = "キンソウ"
 "李徴" = "リチョウ"
 "牛若" = "ウシワカ"
 "穆公" = "ボクコウ"
 "把瑠都" = "バルト"
-"馬騰" = "バトウ"
 "提婆達多" = "ダイバダッタ"
 "阿骨打" = "アグダ"
 "孟達" = "モウタツ"
-"得宗" = "トクソウ"
 "得宗家" = "トクソウケ"
 "秦瓊" = "シンケイ"
 "方臘" = "ホウロウ"
 "秦桧" = "シンカイ"
-"楊過" = "ヨウカ"
 "蔡京" = "サイケイ"
-"宣宗" = "センソウ"
 "闔閭" = "コウリョ"
-"代宗" = "ダイソウ"
 "陸機" = "リクキ"
 "張角" = "チョウカク"
 "聖武" = "ショウム"
@@ -100,7 +80,6 @@ description = "人名 (戦国 / 平安 / 江戸 / 明治大正 / 古典作家、
 "顔回" = "ガンカイ"
 "栃東" = "トチアズマ"
 "蔡邕" = "サイヨウ"
-"子思" = "シシ"
 "楊志" = "ヨウシ"
 "夢窓" = "ムソウ"
 "長髄彦" = "ナガスネヒコ"
@@ -108,21 +87,18 @@ description = "人名 (戦国 / 平安 / 江戸 / 明治大正 / 古典作家、
 "琴光喜" = "コトミツキ"
 "白隠" = "ハクイン"
 "中大兄" = "ナカノオオエ"
-"戴宗" = "タイソウ"
 "葛洪" = "カッコウ"
 "郭靖" = "カクセイ"
 "李逵" = "リキ"
 "護佐丸" = "ゴサマル"
 "何晏" = "カアン"
 "范曄" = "ハンヨウ"
-"実如" = "ジツニョ"
 "栃煌山" = "トチオウザン"
 "三笠宮" = "ミカサノミヤ"
 "李鵬" = "リホウ"
 "元稹" = "ゲンシン"
 "蔡瑁" = "サイボウ"
 "湯王" = "トウオウ"
-"呂尚" = "リョショウ"
 "伏姫" = "フセヒメ"
 "壱与" = "イヨ"
 "虞翻" = "グホン"
@@ -131,10 +107,8 @@ description = "人名 (戦国 / 平安 / 江戸 / 明治大正 / 古典作家、
 "孫登" = "ソントウ"
 "陳羣" = "チングン"
 "太刀山" = "タチヤマ"
-"僖宗" = "キソウ"
 "李典" = "リテン"
 "皇極" = "コウギョク"
-"定宗" = "テイソウ"
 "崔光" = "サイコウ"
 "李通" = "リツウ"
 "木喰" = "モクジキ"
@@ -148,12 +122,9 @@ description = "人名 (戦国 / 平安 / 江戸 / 明治大正 / 古典作家、
 "建春門院" = "ケンシュンモンイン"
 "婉容" = "エンヨウ"
 "増位山" = "マスイヤマ"
-"敬宗" = "ケイソウ"
-"沮授" = "ソジュ"
 "盧生" = "ロセイ"
 "応神" = "オウジン"
 "弓裔" = "キュウエイ"
-"後光厳" = "ゴコウゴン"
 "露鵬" = "ロホウ"
 "黄祖" = "コウソ"
 "趙州" = "ジョウシュウ"
@@ -164,12 +135,10 @@ description = "人名 (戦国 / 平安 / 江戸 / 明治大正 / 古典作家、
 "曽子" = "ソウシ"
 "崇光" = "スコウ"
 "東久邇宮" = "ヒガシクニノミヤ"
-"孫立" = "ソンリツ"
 "王鐸" = "オウタク"
 "干宝" = "カンポウ"
 "倉頡" = "ソウケツ"
 "劉琦" = "リュウキ"
-"毅宗" = "キソウ"
 "柴進" = "サイシン"
 "沢風" = "サワカゼ"
 "秦明" = "シンメイ"
@@ -180,7 +149,6 @@ description = "人名 (戦国 / 平安 / 江戸 / 明治大正 / 古典作家、
 "魯達" = "ロタツ"
 "迦葉" = "カショウ"
 "明雲" = "ミョウウン"
-"存如" = "ゾンニョ"
 "塞翁" = "サイオウ"
 "定朝" = "ジョウチョウ"
 "後伏見" = "ゴフシミ"
@@ -209,7 +177,6 @@ description = "人名 (戦国 / 平安 / 江戸 / 明治大正 / 古典作家、
 "友綱" = "トモヅナ"
 "李煥" = "リカン"
 "楊震" = "ヨウシン"
-"毛遂" = "モウスイ"
 "李賀" = "リガ"
 "染丸" = "ソメマル"
 "完顔" = "ワンヤン"
@@ -220,7 +187,6 @@ description = "人名 (戦国 / 平安 / 江戸 / 明治大正 / 古典作家、
 "秋瑾" = "シュウキン"
 "李忠" = "リチュウ"
 "李雲" = "リウン"
-"雷横" = "ライオウ"
 "時遷" = "ジセン"
 "李英" = "リエイ"
 "後嵯峨" = "ゴサガ"
@@ -241,7 +207,6 @@ description = "人名 (戦国 / 平安 / 江戸 / 明治大正 / 古典作家、
 "武蔵山" = "ムサシヤマ"
 "允恭" = "インギョウ"
 "李鴻章" = "リコウショウ"
-"太宗" = "タイソウ"
 "李舜臣" = "リシュンシン"
 # ★2026-09-23 現行エンジンの誤読 第 2 弾 (判定済み行を lib 0.4.7 で読み直し)
 "平蔵" = "ヘイゾウ"
@@ -667,4 +632,252 @@ reading = "トミヤス"
 [[entries."冨安".match]]
 next_starts_any = ["が"]
 reading = "トミヤス"
+
+# ★ 助詞が続くと Lindera の分割に同点負けする entry の tie-break
+# (「取説か」 → しゅせつか)。 読みは default と同じで、 match_hits で同点を破るだけ。
+
+[entries."高宗"]  
+reading = "コウソウ"
+
+[[entries."高宗".match]]
+next_starts_any = ["と"]
+reading = "コウソウ"
+
+[entries."玄宗"]  
+reading = "ゲンソウ"
+
+[[entries."玄宗".match]]
+next_starts_any = ["と"]
+reading = "ゲンソウ"
+
+[entries."粛宗"]  
+reading = "シュクソウ"
+
+[[entries."粛宗".match]]
+next_starts_any = ["と"]
+reading = "シュクソウ"
+
+[entries."英宗"]  
+reading = "エイソウ"
+
+[[entries."英宗".match]]
+next_starts_any = ["と"]
+reading = "エイソウ"
+
+[entries."仁宗"]  
+reading = "ジンソウ"
+
+[[entries."仁宗".match]]
+next_starts_any = ["と"]
+reading = "ジンソウ"
+
+[entries."徽宗"]  
+reading = "キソウ"
+
+[[entries."徽宗".match]]
+next_starts_any = ["と"]
+reading = "キソウ"
+
+[entries."徳宗"]  
+reading = "トクソウ"
+
+[[entries."徳宗".match]]
+next_starts_any = ["と"]
+reading = "トクソウ"
+
+[entries."憲宗"]  
+reading = "ケンソウ"
+
+[[entries."憲宗".match]]
+next_starts_any = ["と"]
+reading = "ケンソウ"
+
+[entries."神宗"]  
+reading = "シンソウ"
+
+[[entries."神宗".match]]
+next_starts_any = ["と"]
+reading = "シンソウ"
+
+[entries."文宗"]  
+reading = "ブンソウ"
+
+[[entries."文宗".match]]
+next_starts_any = ["と"]
+reading = "ブンソウ"
+
+[entries."光厳"]  
+reading = "コウゴン"
+
+[[entries."光厳".match]]
+next_starts_any = ["に", "か"]
+reading = "コウゴン"
+
+[entries."光宗"]  
+reading = "コウソウ"
+
+[[entries."光宗".match]]
+next_starts_any = ["と"]
+reading = "コウソウ"
+
+[entries."武宗"]  
+reading = "ブソウ"
+
+[[entries."武宗".match]]
+next_starts_any = ["と"]
+reading = "ブソウ"
+
+[entries."証如"]  
+reading = "ショウニョ"
+
+[[entries."証如".match]]
+next_starts_any = ["か"]
+reading = "ショウニョ"
+
+[entries."欽宗"]  
+reading = "キンソウ"
+
+[[entries."欽宗".match]]
+next_starts_any = ["と"]
+reading = "キンソウ"
+
+[entries."馬騰"]  
+reading = "バトウ"
+
+[[entries."馬騰".match]]
+next_starts_any = ["が"]
+reading = "バトウ"
+
+[entries."得宗"]  
+reading = "トクソウ"
+
+[[entries."得宗".match]]
+next_starts_any = ["と"]
+reading = "トクソウ"
+
+[entries."楊過"]  
+reading = "ヨウカ"
+
+[[entries."楊過".match]]
+next_starts_any = ["と"]
+reading = "ヨウカ"
+
+[entries."宣宗"]  
+reading = "センソウ"
+
+[[entries."宣宗".match]]
+next_starts_any = ["と"]
+reading = "センソウ"
+
+[entries."代宗"]  
+reading = "ダイソウ"
+
+[[entries."代宗".match]]
+next_starts_any = ["と"]
+reading = "ダイソウ"
+
+[entries."子思"]  
+reading = "シシ"
+
+[[entries."子思".match]]
+next_starts_any = ["は"]
+reading = "シシ"
+
+[entries."戴宗"]  
+reading = "タイソウ"
+
+[[entries."戴宗".match]]
+next_starts_any = ["と"]
+reading = "タイソウ"
+
+[entries."実如"]  
+reading = "ジツニョ"
+
+[[entries."実如".match]]
+next_starts_any = ["か"]
+reading = "ジツニョ"
+
+[entries."呂尚"]  
+reading = "リョショウ"
+
+[[entries."呂尚".match]]
+next_starts_any = ["も"]
+reading = "リョショウ"
+
+[entries."僖宗"]  
+reading = "キソウ"
+
+[[entries."僖宗".match]]
+next_starts_any = ["と"]
+reading = "キソウ"
+
+[entries."定宗"]  
+reading = "テイソウ"
+
+[[entries."定宗".match]]
+next_starts_any = ["と"]
+reading = "テイソウ"
+
+[entries."敬宗"]  
+reading = "ケイソウ"
+
+[[entries."敬宗".match]]
+next_starts_any = ["と"]
+reading = "ケイソウ"
+
+[entries."沮授"]  
+reading = "ソジュ"
+
+[[entries."沮授".match]]
+next_starts_any = ["か"]
+reading = "ソジュ"
+
+[entries."後光厳"]  
+reading = "ゴコウゴン"
+
+[[entries."後光厳".match]]
+next_starts_any = ["に", "か"]
+reading = "ゴコウゴン"
+
+[entries."孫立"]  
+reading = "ソンリツ"
+
+[[entries."孫立".match]]
+next_starts_any = ["と"]
+reading = "ソンリツ"
+
+[entries."毅宗"]  
+reading = "キソウ"
+
+[[entries."毅宗".match]]
+next_starts_any = ["と"]
+reading = "キソウ"
+
+[entries."存如"]  
+reading = "ゾンニョ"
+
+[[entries."存如".match]]
+next_starts_any = ["か"]
+reading = "ゾンニョ"
+
+[entries."毛遂"]  
+reading = "モウスイ"
+
+[[entries."毛遂".match]]
+next_starts_any = ["に"]
+reading = "モウスイ"
+
+[entries."雷横"]  
+reading = "ライオウ"
+
+[[entries."雷横".match]]
+next_starts_any = ["が"]
+reading = "ライオウ"
+
+[entries."太宗"]  
+reading = "タイソウ"
+
+[[entries."太宗".match]]
+next_starts_any = ["と"]
+reading = "タイソウ"
 

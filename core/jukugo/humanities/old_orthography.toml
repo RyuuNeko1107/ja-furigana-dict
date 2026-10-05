@@ -36,7 +36,6 @@ description = "旧表記・当て字の和語 (青空文庫ルビ由来)"
 "沁々" = "しみじみ"
 "犇々" = "ひしひし"
 "蟇口" = "がまぐち"
-"藻掻" = "もが"
 "暁方" = "あけがた"
 "頸筋" = "くびすじ"
 "俯向" = { reading = "うつむ", match = [ { input_contains_any = ["俯向"], reading = "うつむ" } ] }  # ★2026-09-28 常時 match (1 字 + 送り仮名の動詞に割られていた)
@@ -54,7 +53,6 @@ description = "旧表記・当て字の和語 (青空文庫ルビ由来)"
 "道傍" = "みちばた"
 "其所" = "そこ"
 "見遁" = "みのが"
-"深傷" = "ふかで"
 "焦立" = { reading = "いらだ", match = [ { input_contains_any = ["焦立"], reading = "いらだ" } ] }  # ★2026-09-28 常時 match (1 字 + 送り仮名の動詞に割られていた)
 "樵夫" = "きこり"
 "仕出来" = "しでか"
@@ -81,7 +79,6 @@ description = "旧表記・当て字の和語 (青空文庫ルビ由来)"
 "眸子" = "ひとみ"
 "濠端" = "ほりばた"
 "愛宕" = "あたご"
-"丑満" = "うしみつ"
 "遠退" = { reading = "とおの", match = [ { input_contains_any = ["遠退"], reading = "とおの" } ] }  # ★2026-09-28 常時 match (1 字 + 送り仮名の動詞に割られていた)
 "突込" = { reading = "つっこ", match = [ { input_contains_any = ["突込"], reading = "つっこ" } ] }  # ★2026-09-28 常時 match (1 字 + 送り仮名の動詞に割られていた)
 "名告" = "なの"
@@ -133,7 +130,6 @@ description = "旧表記・当て字の和語 (青空文庫ルビ由来)"
 "仄白" = { reading = "ほのじろ", match = [ { input_contains_any = ["仄白"], reading = "ほのじろ" } ] }  # ★2026-09-28 常時 match (1 字 + 送り仮名の動詞に割られていた)
 "首垂" = "うなだ"
 "頂辺" = "てっぺん"
-"立塞" = "たちふさ"
 "相俟" = "あいま"
 "木樵" = "きこり"
 "捗取" = "はかど"
@@ -141,8 +137,6 @@ description = "旧表記・当て字の和語 (青空文庫ルビ由来)"
 "這々" = "ほうほう"
 "蒼褪" = { reading = "あおざ", match = [ { input_contains_any = ["蒼褪"], reading = "あおざ" } ] }  # ★2026-09-28 常時 match (1 字 + 送り仮名の動詞に割られていた)
 "掃溜" = "はきだめ"
-"驚破" = "すわ"
-"駈落" = "かけおち"
 "鎧櫃" = "よろいびつ"
 "脊中" = "せなか"
 "瑞々" = "みずみず"
@@ -154,7 +148,6 @@ description = "旧表記・当て字の和語 (青空文庫ルビ由来)"
 "牝鶏" = "めんどり"
 "揉手" = "もみで"
 "大胡坐" = "おおあぐら"
-"向側" = "むこうがわ"
 "真闇" = "まっくら"
 "真夜半" = "まよなか"
 "爪尖" = "つまさき"
@@ -171,7 +164,6 @@ description = "旧表記・当て字の和語 (青空文庫ルビ由来)"
 "迂濶" = "ウカツ"
 "灌木" = "カンボク"
 "恰度" = "チョウド"
-"悧巧" = "リコウ"
 "黒繻子" = "クロジュス"
 "戯談" = "ジョウダン"
 "御新造" = "ゴシンゾ"
@@ -214,4 +206,70 @@ description = "旧表記・当て字の和語 (青空文庫ルビ由来)"
 "元和" = "ゲンナ"
 "鬢髪" = "ビンパツ"
 "陋屋" = "ロウオク"
-"風態" = "フウテイ"
+
+# ★ 助詞が続くと Lindera の分割に同点負けする entry の tie-break
+# (「取説か」 → しゅせつか)。 読みは default と同じで、 match_hits で同点を破るだけ。
+
+[entries."深傷"]  
+reading = "ふかで"
+
+[[entries."深傷".match]]
+next_starts_any = ["も"]
+reading = "ふかで"
+
+[entries."風態"]  
+reading = "フウテイ"
+
+[[entries."風態".match]]
+next_starts_any = ["と"]
+reading = "フウテイ"
+
+[entries."藻掻"]  
+reading = "もが"
+
+[[entries."藻掻".match]]
+next_starts_any = ["か"]
+reading = "もが"
+
+[entries."丑満"]  
+reading = "うしみつ"
+
+[[entries."丑満".match]]
+next_starts_any = ["と"]
+reading = "うしみつ"
+
+[entries."立塞"]  
+reading = "たちふさ"
+
+[[entries."立塞".match]]
+next_starts_any = ["が", "か"]
+reading = "たちふさ"
+
+[entries."驚破"]  
+reading = "すわ"
+
+[[entries."驚破".match]]
+next_starts_any = ["か"]
+reading = "すわ"
+
+[entries."駈落"]  
+reading = "かけおち"
+
+[[entries."駈落".match]]
+next_starts_any = ["と"]
+reading = "かけおち"
+
+[entries."向側"]  
+reading = "むこうがわ"
+
+[[entries."向側".match]]
+next_starts_any = ["が"]
+reading = "むこうがわ"
+
+[entries."悧巧"]  
+reading = "リコウ"
+
+[[entries."悧巧".match]]
+next_starts_any = ["も"]
+reading = "リコウ"
+

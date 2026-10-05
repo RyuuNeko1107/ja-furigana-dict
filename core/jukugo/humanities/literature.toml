@@ -203,7 +203,6 @@ description = "古典文学 / 作品名 / 文学用語 / 詩歌 / 評論"
 "天雲の" = "アマクモノ"
 "高麗剣" = "コマツルギ"
 "韓藍" = "カラアヰ"
-"珠数懸" = "ジュズカケ"
 "末の松山" = "スエノマツヤマ"
 "籬が島" = "マガキガシマ"
 "気比" = "[ケ]ヒ"
@@ -790,4 +789,14 @@ reading = "[ジョウザ"
 [[entries."定座".match]]
 next_starts_any = ["が"]
 reading = "[ジョウザ"
+
+# ★ 助詞が続くと Lindera の分割に同点負けする entry の tie-break
+# (「取説か」 → しゅせつか)。 読みは default と同じで、 match_hits で同点を破るだけ。
+
+[entries."珠数懸"]  
+reading = "ジュズカケ"
+
+[[entries."珠数懸".match]]
+next_starts_any = ["か"]
+reading = "ジュズカケ"
 

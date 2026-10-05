@@ -89,7 +89,6 @@ description = "難読姓 (苗字) の読み (姓単体、代表読み)"
 "鵜久森" = "うくもり"
 "兼元" = "かねもと"
 "秋好" = "あきよし"
-"熊切" = "くまきり"
 "柄谷" = "からたに"
 "天木" = "あまき"
 "今石" = "いまいし"
@@ -118,7 +117,6 @@ description = "難読姓 (苗字) の読み (姓単体、代表読み)"
 "松久" = "まつひさ"
 "重森" = "しげもり"
 "日野原" = "ひのはら"
-"惟宗" = "これむね"
 "幡随院" = "ばんずいいん"
 "木庵" = "もくあん"
 "楢林" = "ならばやし"
@@ -365,4 +363,21 @@ reading = "フジマ"
 [[entries."藤真".match]]
 next_starts_any = ["に"]
 reading = "フジマ"
+
+# ★ 助詞が続くと Lindera の分割に同点負けする entry の tie-break
+# (「取説か」 → しゅせつか)。 読みは default と同じで、 match_hits で同点を破るだけ。
+
+[entries."熊切"]  
+reading = "くまきり"
+
+[[entries."熊切".match]]
+next_starts_any = ["に"]
+reading = "くまきり"
+
+[entries."惟宗"]  
+reading = "これむね"
+
+[[entries."惟宗".match]]
+next_starts_any = ["と"]
+reading = "これむね"
 
