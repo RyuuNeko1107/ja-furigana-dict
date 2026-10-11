@@ -12,16 +12,16 @@ ja-furigana lib 用の TOML 辞書 + 校正ルール data repo。
 ```
 core/                — 単語辞書 (entry data、 役割別 sub-dir)
 ├── jukugo/          — 熟語 (6 genre sub-dir: basic / humanities / nature / objects /
-│                      proper / society、 計 47 file)
+│                      proper / society、 計 57 file)
 ├── unihan/          — 単漢字 fallback
 ├── kanji/           — [[kanji]] block (default + 文脈 match、 旧 single_overrides 統合先)
 ├── works/           — 作品固有名詞 (anime / game / literature / vtuber)
-├── loanwords/       — 外来語
+├── loanwords/       — 外来語 ([entries] / [digits] 英字+数字 / [sentence_words] 英文の語)
 └── _inbox.toml      — 分類前の一時 inbox (genre 判断が付かない熟語)
 
 rules/               — 校正ルール (data + 動的合成)
 ├── numbers/         — days / scales / numeric_phrases + counters/ (助数詞)
-├── text/            — symbols / units / postprocess
+├── text/            — symbols / units / models (型番パターン) / postprocess
 └── compat.toml      — 異体字 → 標準字 mapping (= lib の入力正規化ルール。
                        lib は rules_dir を走査して role="compat" を読むため core/ ではなく
                        rules/ に置く。 wrapper が rules/core を別 mount しても効く)
@@ -32,8 +32,8 @@ rules/               — 校正ルール (data + 動的合成)
 tests/
 └── corpus/
     ├── should_read.toml      — 回帰テスト本体
-    └── should_read/*.toml    — 分野別 / probe 別。 tests/corpus 全体で約 340 file /
-                                約 11,800 case (`grep -r '^\[\[case\]\]' tests/corpus | wc -l`)
+    └── should_read/*.toml    — 分野別 / probe 別。 tests/corpus 全体で約 350 file /
+                                約 12,500 case (`grep -r '^\[\[case\]\]' tests/corpus | wc -l`)
 
 tools/
 ├── validate.py               — TOML 構文 + 読み形式 + cross-file 重複検出 (CI gate)
@@ -46,6 +46,7 @@ tools/
 ├── import_from_production.py — upstream DB から seed 再投入
 ├── check_test_append_only.py — *.test.toml の append-only CI 強制
 ├── gen_accent_brackets.py    — UniDic aType → bracket notation 機械生成 (offline tool)
+├── gen_accent_lexicon.py     — UniDic aType → アクセント専用の表 (core/accent/) の生成 (offline tool)
 ├── gen_surname_suffix.py     — 一般語と同形の姓 / 地名に敬称 suffix match を生成
 │                               (--current に batch-read 実測を渡す。 --battery で
 │                                「姓 + 名」 文脈の退行検出 probe。 SCHEMA.md 参照)
