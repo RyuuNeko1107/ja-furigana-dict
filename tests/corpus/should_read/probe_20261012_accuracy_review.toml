@@ -1,0 +1,107 @@
+# 2026-10-12 精度検証 (Tatoeba 差分 + 実コメント 15 万件の差分) で見つけた誤判定の回帰ケース (lib 0.5.9 以降)。
+# 笑いの w (助詞が続いても) / ガンダムW / 固有名詞を割らない / 機能語だけの英語は読まない / No.N の english10 など。
+
+[[case]]
+input = "軍服に見えるなぁwとは思ったよw"
+mode = "hiragana"
+expected = "ぐんぷくにみえるなぁワラとはおもったよワラ"
+
+[[case]]
+input = "木戸への対応wといい"
+mode = "hiragana"
+expected = "きどへのたいおうワラといい"
+
+[[case]]
+input = "鬼武者ウェイwの続き"
+mode = "hiragana"
+expected = "おにむしゃウェイワラのつづき"
+
+[[case]]
+input = "ガンダムWが思い出し"
+mode = "hiragana"
+expected = "ガンダムダブリューがおもいだし"
+
+[[case]]
+input = "キーwを押す"
+mode = "hiragana"
+expected = "キーダブリューをおす"
+
+[[case]]
+input = "Aniimo (PC, 2026)"
+mode = "hiragana"
+expected = "Aniimo (ピーシー, にせんにじゅうろく)"
+
+[[case]]
+input = "a a a a a"
+mode = "hiragana"
+expected = "a a a a a"
+
+[[case]]
+input = "go up 2"
+mode = "hiragana"
+expected = "go up に"
+
+[[case]]
+input = "No.1"
+mode = "hiragana"
+expected = "ナンバーワン"
+
+[[case]]
+input = "No.21"
+mode = "hiragana"
+expected = "ナンバーニジュウイチ"
+
+[[case]]
+input = "No.19/20"
+mode = "hiragana"
+expected = "ナンバージュウキュウすらっしゅにじゅう"
+
+[[case]]
+input = "Day10"
+mode = "hiragana"
+expected = "デイテン"
+
+[[case]]
+input = "Season2"
+mode = "hiragana"
+expected = "シーズンツー"
+
+[[case]]
+input = "(^-^)v"
+mode = "hiragana"
+expected = ""
+
+[[case]]
+input = "JAL124便"
+mode = "hiragana"
+expected = "JALひゃくにじゅうよんびん"
+
+[[case]]
+input = "thank you"
+mode = "hiragana"
+expected = "サンキュー"
+
+[[case]]
+input = "FeelsGoodMan"
+mode = "hiragana"
+expected = "フィールズグッドマン"
+
+[[case]]
+input = "9/21(日)"
+mode = "hiragana"
+expected = "くがつにじゅういちにち(にち)"
+
+[[case]]
+input = "5/22 阪神新人"
+mode = "hiragana"
+expected = "ごがつにじゅうににち はんしんしんじん"
+
+[[case]]
+input = "10/25は大阪で"
+mode = "hiragana"
+expected = "じゅうがつにじゅうごにちはおおさかで"
+
+[[case]]
+input = "#claudecode"
+mode = "hiragana"
+expected = "#クロードコード"

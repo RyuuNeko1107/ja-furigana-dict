@@ -1070,12 +1070,12 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 "RTX" = "each"
 "GTX" = "each"
 # 読みを上書きする形 (その語 + 数字の時だけ使う。 単独の No は ノー のまま)
-"No" = { style = "english", reading = "ナンバー" }
+"No" = { style = "english10", reading = "ナンバー" }
 "Lv" = { style = "place", reading = "レベル" }
 "vol" = { style = "place", reading = "ボリューム" }
-"Day" = { style = "english", reading = "デイ" }
-"Part" = { style = "english", reading = "パート" }
-"Season" = { style = "english", reading = "シーズン" }
+"Day" = { style = "english10", reading = "デイ" }
+"Part" = { style = "english10", reading = "パート" }
+"Season" = { style = "english10", reading = "シーズン" }
 "Ver" = "english"
 
 # ゲーム / 開発の 「名前 + 数字」 (2026-10-11)

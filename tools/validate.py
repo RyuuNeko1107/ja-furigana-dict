@@ -370,7 +370,7 @@ def validate_single_overrides(path: Path, errors: Errors) -> dict:
 # 数字始まり (5G / 5ch) も可だが、 英字を 1 文字以上含むこと (数字だけは数値側の責務)。
 LOANWORD_SURFACE_RE = re.compile(r'^(?=.*[A-Za-zＡ-Ｚａ-ｚ])[A-Za-z0-9Ａ-Ｚａ-ｚ０-９][A-Za-z0-9Ａ-Ｚａ-ｚ０-９+#._\-＋＃．＿－]*$')
 # [digits] table: 英字語 → くっついた数字の読み方 (lib scoring/digit_reading.rs と同じ集合)
-DIGIT_STYLES = {'place', 'each', 'each_en', 'english', 'pair', 'pair_en'}
+DIGIT_STYLES = {'place', 'each', 'each_en', 'english', 'english10', 'pair', 'pair_en'}
 
 
 def validate_loanwords(path: Path, errors: Errors) -> dict:
@@ -399,7 +399,11 @@ def validate_loanwords(path: Path, errors: Errors) -> dict:
         if not isinstance(reading, str):
             errors.add_for(path, f"loanword '{surface}': value が string ではない")
             continue
-        if not LOANWORD_SURFACE_RE.fullmatch(surface):
+        # 空白は語の間に 1 つずつだけ可 (thank you のような定型句。 lib は空白込みで完全一致する)
+        if surface != surface.strip() or '  ' in surface:
+            errors.add_for(path, f"loanword '{surface}': 先頭・末尾の空白 / 連続空白は不可")
+            continue
+        if not LOANWORD_SURFACE_RE.fullmatch(surface.replace(' ', '')):
             errors.add_for(path, f"loanword '{surface}': surface は ASCII / 全角英字始まりの英数+記号 (+#._-) のみ可")
             continue
         if not is_kana(reading):
