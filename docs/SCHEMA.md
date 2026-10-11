@@ -467,6 +467,24 @@ description = "IT 用語 / プログラミング言語 / OSS / クラウドサ�
 - 語は英字だけ。 `validate.py` が 読み方の種類・語の読みの有無を検査する
 - 大文字小文字・全角半角は区別しない (`WINDOWS11` / `ｗｉｎｄｏｗｓ１１` も同じ)
 
+### `[sentence_words]` — 英文の中でだけ使う短い語 (lib 0.5.9 以降)
+
+`a` `is` `to` `you` `so` のような短い機能語は、 `[entries]` に置くと日本語の中の `to` `so` `no` まで読んでしまう。
+`[sentence_words]` の語は **次の場合だけ** 引かれる (単独では引かれない):
+
+- 空白でつながった複数語の英字 (`thank you so much` / `I love you`) の 1 語として
+- 空白なしの連結 (`thankyou` / `iloveyou` / `GameOver`) を辞書の語に区切った 1 部分として
+
+```toml
+[sentence_words]
+"you" = "ユー"
+"don't" = "ドント"    # 小文字の英字 + ' が 1 つまで
+```
+
+- 読みは全角カタカナ (`validate.py` が検査)。 `[sentence_words]` だけの file は `[entries]` を持たなくてよい
+- 内容語 (`thank` / `love` / `much` …) は通常どおり `[entries]` に置く。 連結の区切りは 「内容語を 1 つ以上含む」 時だけ有効
+- 全部の語が `[entries]` か `[sentence_words]` にある時だけ英文として読まれる (1 語でも未知なら英字のまま)
+
 ## ファイル別: `rules/numbers/counters/` — 助数詞ルール
 
 サブディレクトリ内の `*.toml` 全てが自動 merge される。 ファイル名は何でも構わない。

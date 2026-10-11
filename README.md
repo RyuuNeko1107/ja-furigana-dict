@@ -28,7 +28,10 @@
 core/
 ├── jukugo/<genre>/   ← 熟語・固有名詞 (basic / humanities / nature / objects / proper / society の 6 genre、 47 ファイル)
 ├── works/            ← 作品単位の固有名詞・造語 (anime / game / literature / vtuber、 例: works/game/touhou.toml)
-├── loanwords/        ← 外来語 (英字 surface、 例: loanwords/it.toml)
+├── loanwords/        ← 外来語 (英字 surface、 例: loanwords/it.toml / english.toml)。 1 file に 3 つの table:
+│                       `[entries]` 英字 → カタカナ / `[digits]` 英字語 + 数字の読み方 (Windows11 など) /
+│                       `[sentence_words]` 英文の中でだけ使う短い語 (a / is / to / you、 単独では引かれない)
+├── accent/           ← アクセント専用の表 (UniDic aType 由来、 `role = "accent"`)
 ├── unihan/           ← 単漢字フォールバック (約 4.07 万字、 5 水準別)
 ├── kanji/            ← 単漢字の文脈依存読み `[[kanji]]` block (overrides.toml)
 └── _inbox.toml       ← 分類前の一時 inbox (genre 判断が付かない熟語)
@@ -39,7 +42,8 @@ rules/
 │   ├── counters/     ← 助数詞ルール (本 / 匹 / 個 / 年 / 月 / 日 …、 連濁・促音化)
 │   └── days.toml / scales.toml / numeric_phrases.toml
 └── text/
-    └── symbols.toml / units.toml / postprocess.toml
+    ├── symbols.toml / units.toml / postprocess.toml
+    └── models.toml   ← 型番パターン (RTX / Ryzen / Core i / iPhone / PS5 / DDR / PCIe …、 正規表現 + 読みの雛形)
 ```
 
 各ファイルの **詳細な用途・件数・サイズ** は [STATS.md](STATS.md) で auto-gen される
@@ -57,7 +61,8 @@ rules/
 | ドキュメント | 内容 |
 |---|---|
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | クイックパス + 1 行追加の流れ + TOML 形式の最低限ルール |
-| [`docs/SCHEMA.md`](docs/SCHEMA.md) | 各 file の詳細 TOML schema (counters / `[[kanji]]` / postprocess 等の構文) |
+| [`docs/SCHEMA.md`](docs/SCHEMA.md) | 各 file の詳細 TOML schema (counters / `[[kanji]]` / `[digits]` / `[sentence_words]` / `models.toml` / postprocess 等の構文) |
+| [lib の機能一覧](https://github.com/RyuuNeko1107/ja-furigana/blob/master/docs/FEATURES.md) | 辞書とルールで **何が読めるようになるか** (数字・日時・英字・型番・記号) |
 | [`docs/INLINE_TESTS.md`](docs/INLINE_TESTS.md) | `*.test.toml` の append-only 仕様 |
 | [`docs/EVALUATION.md`](docs/EVALUATION.md) | 客観性能評価 (VOICEVOX engine 一致率、 2026-05 時点の記録。 定期更新はしていない) |
 | [`MAINTAINING.md`](MAINTAINING.md) | release / CI / upstream seed 再投入手順 |
