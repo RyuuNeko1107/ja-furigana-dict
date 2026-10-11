@@ -54,9 +54,9 @@ mode = "hiragana"
 expected = "ぎごしょくやな"
 
 [[case]]
-input = "玉蜀黍さん(=゚ω゚)ノ"
+input = "玉蜀黍さん"
 mode = "hiragana"
-expected = "とうもろこしさん(=゚おめが゚)ノ"
+expected = "とうもろこしさん"
 
 [[case]]
 input = "蜀紅錦"

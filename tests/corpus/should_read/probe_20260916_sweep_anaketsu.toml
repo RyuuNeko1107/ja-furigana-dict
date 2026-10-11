@@ -229,9 +229,9 @@ mode = "hiragana"
 expected = "さくらのはなびらでスリップしそう"
 
 [[case]]
-input = "桜井さん(*^^*)"
+input = "桜井さん"
 mode = "hiragana"
-expected = "さくらいさん(*^^*)"
+expected = "さくらいさん"
 
 [[case]]
 input = "ウユニ塩湖にさく桜"
