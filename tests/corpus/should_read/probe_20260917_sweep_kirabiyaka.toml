@@ -71,7 +71,7 @@ expected = "にでらのコントローラー"
 [[case]]
 input = "猫又Masterは弐寺多めだった"
 mode = "hiragana"
-expected = "ねこまたMasterはにでらおおめだった"
+expected = "ねこまたマスターはにでらおおめだった"
 
 [[case]]
 input = "煌めけこより"
