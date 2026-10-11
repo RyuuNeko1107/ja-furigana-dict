@@ -366,8 +366,11 @@ def validate_single_overrides(path: Path, errors: Errors) -> dict:
 
 
 # ─── core/loanwords/*.toml ────────────────────────────────────────────────
-# ASCII / 全角英字 始まりの surface 専用 (IT 用語等)。 reading はカタカナ。
-LOANWORD_SURFACE_RE = re.compile(r'^[A-Za-zＡ-Ｚａ-ｚ][A-Za-z0-9Ａ-Ｚａ-ｚ０-９+#._\-＋＃．＿－]*$')
+# ASCII / 全角英字 の surface 専用 (IT 用語等)。 reading はカタカナ。
+# 数字始まり (5G / 5ch) も可だが、 英字を 1 文字以上含むこと (数字だけは数値側の責務)。
+LOANWORD_SURFACE_RE = re.compile(r'^(?=.*[A-Za-zＡ-Ｚａ-ｚ])[A-Za-z0-9Ａ-Ｚａ-ｚ０-９][A-Za-z0-9Ａ-Ｚａ-ｚ０-９+#._\-＋＃．＿－]*$')
+# [digits] table: 英字語 → くっついた数字の読み方 (lib scoring/digit_reading.rs と同じ集合)
+DIGIT_STYLES = {'place', 'each', 'each_en', 'english', 'pair', 'pair_en'}
 
 
 def validate_loanwords(path: Path, errors: Errors) -> dict:
@@ -388,6 +391,24 @@ def validate_loanwords(path: Path, errors: Errors) -> dict:
             continue
         if not is_kana(reading):
             errors.add_for(path, f"loanword '{surface}' → '{reading}' (ひらがな または 全角カタカナで書いてください)")
+    digits = data.get('digits', {})
+    if not isinstance(digits, dict):
+        errors.add_for(path, "[digits] が table ではない")
+        return entries
+    # 読みは別 file (it.toml / english.toml 等) にあってよいので loanwords 全体で引く。
+    folded = {k.casefold() for k in entries}
+    for other in path.parent.rglob('*.toml'):
+        try:
+            folded |= {k.casefold() for k in (tomllib.loads(other.read_text(encoding='utf-8')).get('entries') or {})}
+        except Exception:
+            pass
+    for word, style in digits.items():
+        if style not in DIGIT_STYLES:
+            errors.add_for(path, f"[digits] '{word}': 読み方 '{style}' は未知 ({' / '.join(sorted(DIGIT_STYLES))})")
+        if not re.fullmatch(r'[A-Za-zＡ-Ｚａ-ｚ]+', word):
+            errors.add_for(path, f"[digits] '{word}': 英字だけの語のみ可")
+        elif word.casefold() not in folded:
+            errors.add_for(path, f"[digits] '{word}': [entries] に読みが無い")
     return entries
 
 

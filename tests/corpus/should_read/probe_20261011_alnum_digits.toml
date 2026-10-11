@@ -90,3 +90,21 @@ input = "ＷＩＮＤＯＷＳ１１"
 mode = "hiragana"
 expected = "ウィンドウズイレブン"
 note = "全角 + 大文字"
+
+[[case]]
+input = "5Gスマホを買った"
+mode = "hiragana"
+expected = "ファイブジースマホをかった"
+note = "旧 ごGスマホ (半端な読み)"
+
+[[case]]
+input = "4Gの回線"
+mode = "hiragana"
+expected = "フォージーのかいせん"
+note = "旧 ヨンG"
+
+[[case]]
+input = "5chで見た"
+mode = "hiragana"
+expected = "ゴチャンネルでみた"
+note = "5ちゃんねる"

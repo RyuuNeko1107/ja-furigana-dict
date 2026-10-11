@@ -87,12 +87,12 @@ expected = "にしゅうかん"
 [[case]]
 input = "4G"
 mode = "hiragana"
-expected = "よんG"
+expected = "フォージー"
 
 [[case]]
 input = "3G回線"
 mode = "hiragana"
-expected = "さんGかいせん"
+expected = "スリージーかいせん"
 
 [[case]]
 input = "4g"
