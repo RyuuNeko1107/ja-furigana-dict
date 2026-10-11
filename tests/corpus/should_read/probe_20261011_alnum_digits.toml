@@ -138,3 +138,33 @@ input = "Season2が始まる"
 mode = "hiragana"
 expected = "シーズンツーがはじまる"
 note = "english"
+
+[[case]]
+input = "¥1000"
+mode = "hiragana"
+expected = "せんえん"
+note = "通貨記号が数字の前 (旧 ¥せん)"
+
+[[case]]
+input = "$100です"
+mode = "hiragana"
+expected = "ひゃくどるです"
+note = "同上"
+
+[[case]]
+input = "100pt貯まった"
+mode = "hiragana"
+expected = "ヒャクポイントたまった"
+note = "単位 pt (旧 素通し)"
+
+[[case]]
+input = "24h配信"
+mode = "hiragana"
+expected = "ニジュウヨンジカンはいしん"
+note = "単位 h は小文字限定"
+
+[[case]]
+input = "5H"
+mode = "hiragana"
+expected = "ごH"
+note = "大文字 H は単位にしない (従来どおり)"

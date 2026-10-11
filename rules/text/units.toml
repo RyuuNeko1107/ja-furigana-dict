@@ -71,3 +71,17 @@ description = "SI 単位 + 通貨 + % (km / kg / mL / 円 / % 等、 数値 + �
 "円" = { kana = "エン" }
 "%"  = { kana = "パーセント" }
 "％" = { kana = "パーセント" }
+
+# ★2026-10-11: 配信 / ゲーム / 通信で素通しだった単位 (100pt / 30fps / 24h配信 / 100px)。
+# h と ms は小文字限定 (H は 水素 / 型番、 MS は Microsoft 等と紛れる)
+"pt"   = { kana = "ポイント" }
+"fps"  = { kana = "エフピーエス" }
+"px"   = { kana = "ピクセル" }
+"h"    = { kana = "ジカン", ci = false }
+"ms"   = { kana = "ミリビョウ", ci = false }
+"dB"   = { kana = "デシベル", ci = false }
+"kbps" = { kana = "キロビーピーエス" }
+"Mbps" = { kana = "メガビーピーエス", ci = false }
+"Gbps" = { kana = "ギガビーピーエス", ci = false }
+"kcal" = { kana = "キロカロリー" }
+"mAh"  = { kana = "ミリアンペアアワー", ci = false }
