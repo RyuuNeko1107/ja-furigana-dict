@@ -321,7 +321,7 @@ expected = "だいひょうとりしまりやく しばはし かずひろ"
 [[case]]
 input = "私はストローク作りまw"
 mode = "hiragana"
-expected = "わたしはストロークつくりまw"
+expected = "わたしはストロークつくりまワラ"
 
 # Wikipedia 30 万行 (master lib vs own) から
 [[case]]
@@ -854,7 +854,7 @@ expected = "ふくおかけんせいほうおきじしん"
 # 2026-09-28 dict-admin 未解決リストから
 [[case]]
 input = "手打ちなんだw"
-expected = "てうちなんだw"
+expected = "てうちなんだワラ"
 [[case]]
 input = "大喜びぺこ"
 expected = "おおよろこびぺこ"

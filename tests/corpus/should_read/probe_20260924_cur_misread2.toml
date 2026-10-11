@@ -1326,7 +1326,7 @@ expected = "げんじょうていっぱいなきがする"
 [[case]]
 input = "煽らないのw"
 mode = "hiragana"
-expected = "あおらないのw"
+expected = "あおらないのワラ"
 
 [[case]]
 input = "ゲーム選びむずそう"
