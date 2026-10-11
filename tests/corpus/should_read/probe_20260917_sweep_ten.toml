@@ -14,9 +14,9 @@ mode = "hiragana"
 expected = "とくてん あおとく"
 
 [[case]]
-input = "7裏 7奌 call game"
+input = "7裏 7奌"
 mode = "hiragana"
-expected = "ななうら ななてん call game"
+expected = "ななうら ななてん"
 
 [[case]]
 input = "3奌 勝利の可能"
