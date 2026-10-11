@@ -17,6 +17,11 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 "feat" = "フィーチャリング"
 "sry" = "ソーリー"
 "wow" = "ワオ"
+"RTX" = "アールティーエックス"
+"Ver" = "バージョン"
+"GTX" = "ジーティーエックス"
+"Ryzen" = "ライゼン"
+"Pixel" = "ピクセル"
 
 # ── ネット口語の笑い (2026-10-11 user 報告: ゆっくりw が ダブリュー と読まれた) ──
 "w" = "ワラ"
@@ -1023,3 +1028,20 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 "KFC" = "ケーエフシー"
 "JOY" = "ジョイ"
 "X-RAY" = "エックスレイ"
+
+# ── 英字 + 数字の読み方 (2026-10-11) ──
+# 数字の読みは語ごとに違う (Switch2 = ツー / Windows11 = イレブン / RTX4090 = 1 桁ずつ)。
+# ここに載せた語だけ 「語 + 数字」 (Windows11 / iPhone15) を 1 語として読む。 未登録は素通し。
+# 種類: place (位取り) / each (1 桁ずつ) / each_en (1 桁ずつ英語) / english (英語の数詞 0-99) /
+#       pair (下から 2 桁ずつ位取り) / pair_en (下から 2 桁ずつ英語)。 reading は [entries] 側。
+[digits]
+"Windows" = "english"
+"iPhone" = "place"
+"iOS" = "place"
+"Android" = "place"
+"GPT" = "english"
+"Switch" = "english"
+"Pixel" = "english"
+"Ryzen" = "english"
+"RTX" = "each"
+"GTX" = "each"

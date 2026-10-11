@@ -1,0 +1,92 @@
+# 2026-10-11 英字 + 数字 (loanwords の [digits] で語ごとに数字の読み方を宣言)。
+# 未登録の語 (Max5 / 型番) は素通しのまま。
+
+[[case]]
+input = "Windows11にした"
+mode = "hiragana"
+expected = "ウィンドウズイレブンにした"
+note = "english"
+
+[[case]]
+input = "iPhone15を買った"
+mode = "hiragana"
+expected = "アイフォンジュウゴをかった"
+note = "place"
+
+[[case]]
+input = "RTX4090を積んだ"
+mode = "hiragana"
+expected = "アールティーエックスヨンゼロキュウゼロをつんだ"
+note = "each (型番は 1 桁ずつ)"
+
+[[case]]
+input = "GPT4とGPT5"
+mode = "hiragana"
+expected = "ジーピーティーフォーとジーピーティーファイブ"
+note = "前が仮名でも素通しが残らない"
+
+[[case]]
+input = "Max5と検証済みなんです"
+mode = "hiragana"
+expected = "Max5とけんしょうずみなんです"
+note = "[digits] 未登録の語は素通し"
+
+[[case]]
+input = "SSR3体"
+mode = "hiragana"
+expected = "SSRさんたい"
+note = "英字 + 数字 + 助数詞 (旧 SSR3からだ)"
+
+[[case]]
+input = "CD2枚"
+mode = "hiragana"
+expected = "CDにまい"
+note = "同上"
+
+[[case]]
+input = "abc123です"
+mode = "hiragana"
+expected = "abc123です"
+note = "助数詞が無ければ英字+数字は素通しのまま"
+
+[[case]]
+input = "v1.2.3にアップデート"
+mode = "hiragana"
+expected = "vいちてんにてんさんにアップデート"
+note = "バージョン表記 (旧 v1.にてんさん)"
+
+[[case]]
+input = "Ver2.0"
+mode = "hiragana"
+expected = "バージョンにてんぜろ"
+note = "Ver = バージョン"
+
+[[case]]
+input = "バージョン1.0.2"
+mode = "hiragana"
+expected = "バージョンいちてんぜろてんに"
+note = "3 要素以上のドット区切りは各要素 + てん"
+
+[[case]]
+input = "Windows 10のサポート"
+mode = "hiragana"
+expected = "ウィンドウズテンのサポート"
+note = "空白区切りでも [digits] の語は くっついた形と同じ読み"
+
+[[case]]
+input = "GPT-5すごい"
+mode = "hiragana"
+expected = "ジーピーティーファイブすごい"
+note = "ハイフン区切り"
+
+[[case]]
+input = "iOS 17.2にした"
+mode = "hiragana"
+expected = "アイオーエス じゅうななてんににした"
+note = "小数が続く時は [digits] で読まない"
+
+[[case]]
+input = "ＷＩＮＤＯＷＳ１１"
+mode = "hiragana"
+expected = "ウィンドウズイレブン"
+note = "全角 + 大文字"
