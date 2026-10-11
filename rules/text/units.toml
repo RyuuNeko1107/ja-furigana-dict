@@ -90,3 +90,5 @@ description = "SI 単位 + 通貨 + % (km / kg / mL / 円 / % 等、 数値 + �
 "m/s"  = { kana = "メートルマイビョウ", ci = false }
 "km/s" = { kana = "キロメートルマイビョウ" }
 "mph"  = { kana = "マイルマイジ" }
+"rpm"  = { kana = "アールピーエム", ci = false }
+"bps"  = { kana = "ビーピーエス", ci = false }

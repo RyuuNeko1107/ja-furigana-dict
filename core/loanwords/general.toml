@@ -1039,6 +1039,12 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 # ここに載せた語だけ 「語 + 数字」 (Windows11 / iPhone15) を 1 語として読む。 未登録は素通し。
 # 種類: place (位取り) / each (1 桁ずつ) / each_en (1 桁ずつ英語) / english (英語の数詞 0-99) /
 #       pair (下から 2 桁ずつ位取り) / pair_en (下から 2 桁ずつ英語)。 reading は [entries] 側。
+# 単位の英字略記 (数字なしでも読む) と略語 (2026-10-12)
+"rpm" = "アールピーエム"
+"bps" = "ビーピーエス"
+"kHz" = "キロヘルツ"
+"kwsk" = "クワシク"
+
 [digits]
 "Windows" = "english"
 "iPhone" = "place"

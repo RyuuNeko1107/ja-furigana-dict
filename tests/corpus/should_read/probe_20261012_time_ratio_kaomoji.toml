@@ -1,0 +1,85 @@
+# 2026-10-12 時刻 / 比 / 範囲 / 顔文字 / 単位略記の回帰ケース (lib 0.5.8 以降)。
+
+[[case]]
+input = "10:00に集合"
+mode = "hiragana"
+expected = "じゅうじにしゅうごう"
+note = "時刻 00 分は時だけ"
+
+[[case]]
+input = "10:00〜12:00"
+mode = "hiragana"
+expected = "じゅうじからじゅうにじ"
+note = "時刻の範囲"
+
+[[case]]
+input = "9時-17時営業"
+mode = "hiragana"
+expected = "くじからじゅうしちじえいぎょう"
+note = "時のハイフン = から"
+
+[[case]]
+input = "スコアは1:1"
+mode = "hiragana"
+expected = "スコアはいちたいいち"
+note = "比・スコア"
+
+[[case]]
+input = "50:50で分ける"
+mode = "hiragana"
+expected = "ごじゅうたいごじゅうでわける"
+note = "時刻にならない比"
+
+[[case]]
+input = "A〜Z"
+mode = "hiragana"
+expected = "AからZ"
+note = "英大文字の範囲"
+
+[[case]]
+input = "月~金は営業"
+mode = "hiragana"
+expected = "げつようからきんようはえいぎょう"
+note = "曜日の範囲"
+
+[[case]]
+input = "(株)ABC"
+mode = "hiragana"
+expected = "かぶしきがいしゃエービーシー"
+note = "㈱ / (株)"
+
+[[case]]
+input = "すごい(´・ω・`)だね"
+mode = "hiragana"
+expected = "すごいだね"
+note = "顔文字は除外"
+
+[[case]]
+input = "(;´Д`)"
+mode = "hiragana"
+expected = ""
+note = "顔文字は除外"
+
+[[case]]
+input = "これは(A・B)です"
+mode = "hiragana"
+expected = "これは(AB)です"
+note = "顔ではない括弧"
+
+[[case]]
+input = "3000rpm"
+mode = "hiragana"
+expected = "サンゼンアールピーエム"
+note = "単位 rpm"
+
+[[case]]
+input = "rpmを上げる"
+mode = "hiragana"
+expected = "アールピーエムをあげる"
+note = "rpm 単独"
+
+[[case]]
+input = "kwsk頼む"
+mode = "hiragana"
+expected = "クワシクたのむ"
+note = "kwsk"
