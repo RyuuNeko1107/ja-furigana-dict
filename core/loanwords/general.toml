@@ -1058,3 +1058,16 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 "Part" = { style = "english", reading = "パート" }
 "Season" = { style = "english", reading = "シーズン" }
 "Ver" = "english"
+
+# ゲーム / 開発の 「名前 + 数字」 (2026-10-11)
+"FF"          = "english"        # FF7 = エフエフセブン / FF14 = エフエフフォーティーン
+"GTA"         = "english"        # GTA5 = ジーティーエーファイブ
+"CS"          = "english"        # CS2 = シーエスツー
+"PlayStation" = "english"        # PlayStation5 = プレイステーションファイブ
+"Python"      = "english"        # Python3 = パイソンスリー (Python3.12 はバージョン表記として別に読む)
+"Java"        = "english"        # Java8 = ジャバエイト
+"Node"        = "place"          # Node18 = ノードジュウハチ
+# 単独だと別の意味にもなる略語は、 数字が付いた時だけ読む (固定読みを [entries] に置かない)
+"DQ" = { style = "english", reading = "ディーキュー" }    # DQ11 = ディーキューイレブン
+"SF" = { style = "english", reading = "エスエフ" }        # SF6 = エスエフシックス
+"BF" = { style = "english", reading = "ビーエフ" }        # BF4 = ビーエフフォー
