@@ -121,12 +121,12 @@ expected = "どようのうしのひ"
 [[case]]
 input = "頬張ったww"
 mode = "hiragana"
-expected = "ほおばったww"
+expected = "ほおばったワラワラ"
 
 [[case]]
 input = "頬を赤らめるなwwww"
 mode = "hiragana"
-expected = "ほおをあからめるなwwww"
+expected = "ほおをあからめるなワラワラワラワラ"
 
 [[case]]
 input = "饒舌なるほどw"

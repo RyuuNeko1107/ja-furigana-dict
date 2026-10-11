@@ -11,3 +11,15 @@ input = "ええっとｗ"
 mode = "hiragana"
 expected = "ええっとワラ"
 note = "全角 ｗ"
+
+[[case]]
+input = "やばいwww"
+mode = "hiragana"
+expected = "やばいワラワラワラ"
+note = "連続 w は個数分"
+
+[[case]]
+input = "https://www.example.com/a で"
+mode = "hiragana"
+expected = "https://www.example.com/a で"
+note = "URL 内の www は保護トークンで素通し (笑いにしない)"

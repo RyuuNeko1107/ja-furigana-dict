@@ -86,7 +86,7 @@ expected = "もえそで"
 [[case]]
 input = "左袖千切れてるww"
 mode = "hiragana"
-expected = "ひだりそでちぎれてるww"
+expected = "ひだりそでちぎれてるワラワラ"
 
 [[case]]
 input = "映画で菓子袋って持ってたっけ?"

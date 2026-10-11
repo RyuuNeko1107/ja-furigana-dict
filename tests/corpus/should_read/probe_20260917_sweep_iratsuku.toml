@@ -326,7 +326,7 @@ expected = "じっこんのなわしさんが"
 [[case]]
 input = "野村萬斎ww"
 mode = "hiragana"
-expected = "のむらまんさいww"
+expected = "のむらまんさいワラワラ"
 
 [[case]]
 input = "絶滅危惧種"

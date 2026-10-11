@@ -236,7 +236,7 @@ expected = "きんかんをそまつにするな"
 [[case]]
 input = "柑橘系のは飲みやすいから飲んじゃうよねww"
 mode = "hiragana"
-expected = "かんきつけいのはのみやすいからのんじゃうよねww"
+expected = "かんきつけいのはのみやすいからのんじゃうよねワラワラ"
 
 [[case]]
 input = "風神雷神阿形吽形"
@@ -256,7 +256,7 @@ expected = "あうんのこきゅうだったワラ"
 [[case]]
 input = "藪蛇ww"
 mode = "hiragana"
-expected = "やぶだww"
+expected = "やぶだワラワラ"
 
 [[case]]
 input = "竹藪vs竹林"
@@ -321,7 +321,7 @@ expected = "とうきょうそかい"
 [[case]]
 input = "アンドルフおじさんの租借ASMRは誰も望んでいないよww"
 mode = "hiragana"
-expected = "アンドルフおじさんのそしゃくエーエスエムアールはだれものぞんでいないよww"
+expected = "アンドルフおじさんのそしゃくエーエスエムアールはだれものぞんでいないよワラワラ"
 
 [[case]]
 input = "寡黙だや"

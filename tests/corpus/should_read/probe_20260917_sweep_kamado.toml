@@ -76,7 +76,7 @@ expected = "うるさい"
 [[case]]
 input = "五月蝿いアヒルが面白いww"
 mode = "hiragana"
-expected = "うるさいアヒルがおもしろいww"
+expected = "うるさいアヒルがおもしろいワラワラ"
 
 [[case]]
 input = "外野が五月蝿すぎ。見守れよ。"
@@ -231,7 +231,7 @@ expected = "ねこまたおかゆ(シーブイひやまさん)"
 [[case]]
 input = "おかゆんが珍しく狼狽えてるwww"
 mode = "hiragana"
-expected = "おかゆんがめずらしくうろたえてるwww"
+expected = "おかゆんがめずらしくうろたえてるワラワラワラ"
 
 [[case]]
 input = "狼狽してて草"

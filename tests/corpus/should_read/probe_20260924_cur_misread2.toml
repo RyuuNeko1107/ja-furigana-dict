@@ -58,7 +58,7 @@ expected = "ないやあんだってふつうにすごいなあ"
 [[case]]
 input = "手放すじゃんww"
 mode = "hiragana"
-expected = "てばなすじゃんww"
+expected = "てばなすじゃんワラワラ"
 
 [[case]]
 input = "攻め攻めのリュウ!"
@@ -190,7 +190,7 @@ expected = "ごつごうてんかいきたこれ"
 [[case]]
 input = "だれが言うてんねんww"
 mode = "hiragana"
-expected = "だれがゆうてんねんww"
+expected = "だれがゆうてんねんワラワラ"
 
 [[case]]
 input = "熱すぎるぞおお"

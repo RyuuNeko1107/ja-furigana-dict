@@ -81,7 +81,7 @@ expected = "はげめよ"
 [[case]]
 input = "よく見たらてっぺん禿げだったなwww"
 mode = "hiragana"
-expected = "よくみたらてっぺんはげだったなwww"
+expected = "よくみたらてっぺんはげだったなワラワラワラ"
 
 [[case]]
 input = "生痕の後か"

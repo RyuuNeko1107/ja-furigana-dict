@@ -71,7 +71,7 @@ expected = "こうこうがこまだいとまこまいやからねたなかま�
 [[case]]
 input = "みんな海猿www"
 mode = "hiragana"
-expected = "みんなうみざるwww"
+expected = "みんなうみざるワラワラワラ"
 
 [[case]]
 input = "回復猿"

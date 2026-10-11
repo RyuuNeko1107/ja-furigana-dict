@@ -21,7 +21,7 @@ expected = "なかむらゆういちかゆうきあおいかな"
 [[case]]
 input = "最初、悠木碧ちゃんでいきなり玄田哲章さんになるのかwww"
 mode = "hiragana"
-expected = "さいしょ、ゆうきあおいちゃんでいきなりげんだてっしょうさんになるのかwww"
+expected = "さいしょ、ゆうきあおいちゃんでいきなりげんだてっしょうさんになるのかワラワラワラ"
 
 [[case]]
 input = "掌の上だった"
@@ -116,7 +116,7 @@ expected = "むらかみむねたか"
 [[case]]
 input = "筋骨隆々ww"
 mode = "hiragana"
-expected = "きんこつりゅうりゅうww"
+expected = "きんこつりゅうりゅうワラワラ"
 
 [[case]]
 input = "筋肉隆々(笑)"

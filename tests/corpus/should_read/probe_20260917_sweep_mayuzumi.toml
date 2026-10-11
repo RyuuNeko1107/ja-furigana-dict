@@ -156,7 +156,7 @@ expected = "やるきがみなぎってるな"
 [[case]]
 input = "仲睦まじいなあwwww"
 mode = "hiragana"
-expected = "なかむつまじいなあwwww"
+expected = "なかむつまじいなあワラワラワラワラ"
 
 [[case]]
 input = "りりーかとは親睦深まった?"

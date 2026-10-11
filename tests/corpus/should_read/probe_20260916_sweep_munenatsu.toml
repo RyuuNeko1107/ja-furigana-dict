@@ -111,7 +111,7 @@ expected = "かいきょう"
 [[case]]
 input = "豪鬼村に送還するかww"
 mode = "hiragana"
-expected = "ごうきむらにそうかんするかww"
+expected = "ごうきむらにそうかんするかワラワラ"
 
 [[case]]
 input = "今日傘の日だってよ"
@@ -186,7 +186,7 @@ expected = "トワさまもはさめばいいかな?"
 [[case]]
 input = "こいつ空気嫁ww"
 mode = "hiragana"
-expected = "こいつくうきよめww"
+expected = "こいつくうきよめワラワラ"
 
 [[case]]
 input = "これは鬼嫁になるタイプ(笑)"

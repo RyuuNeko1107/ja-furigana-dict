@@ -48,7 +48,7 @@ expected = "こんぺこアホイ"
 [[case]]
 input = "せめてWINだよww"
 mode = "hiragana"
-expected = "せめてウィンだよww"
+expected = "せめてウィンだよワラワラ"
 
 [[case]]
 input = "まあTOPよ"

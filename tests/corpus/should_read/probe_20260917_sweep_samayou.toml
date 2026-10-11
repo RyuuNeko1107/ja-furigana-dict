@@ -166,7 +166,7 @@ expected = "いごサッカー"
 [[case]]
 input = "ヒカルの碁、わがるww"
 mode = "hiragana"
-expected = "ヒカルのご、わがるww"
+expected = "ヒカルのご、わがるワラワラ"
 
 [[case]]
 input = "碁石ができるまで、みたいな"
@@ -271,12 +271,12 @@ expected = "ひろうこんぱいワラ"
 [[case]]
 input = "困憊しとるWWW"
 mode = "hiragana"
-expected = "こんぱいしとるWWW"
+expected = "こんぱいしとるワラワラワラ"
 
 [[case]]
 input = "痰壺www"
 mode = "hiragana"
-expected = "たんつぼwww"
+expected = "たんつぼワラワラワラ"
 
 [[case]]
 input = "痰が絡むから?"

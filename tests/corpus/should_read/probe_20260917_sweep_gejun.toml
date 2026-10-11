@@ -186,7 +186,7 @@ expected = "しゅうかんみこみゅーす"
 [[case]]
 input = "明日の朝刊一面だなww"
 mode = "hiragana"
-expected = "あしたのちょうかんいちめんだなww"
+expected = "あしたのちょうかんいちめんだなワラワラ"
 
 [[case]]
 input = "夕刊フジおるな"

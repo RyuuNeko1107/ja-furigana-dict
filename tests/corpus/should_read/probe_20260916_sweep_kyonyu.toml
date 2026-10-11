@@ -8,7 +8,7 @@ expected = "いろのぬりかたがアニメっぽいかんじしますね"
 [[case]]
 input = "塗残しじゃなくて塗ったんやww"
 mode = "hiragana"
-expected = "ぬりのこしじゃなくてぬったんやww"
+expected = "ぬりのこしじゃなくてぬったんやワラワラ"
 
 [[case]]
 input = "この下品な叩き方は......"

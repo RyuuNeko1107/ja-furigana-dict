@@ -126,7 +126,7 @@ expected = "がれきなげてくるとかあぶなすぎるワラ"
 [[case]]
 input = "桟橋がすごかったwww"
 mode = "hiragana"
-expected = "さんばしがすごかったwww"
+expected = "さんばしがすごかったワラワラワラ"
 
 [[case]]
 input = "有罪の桟橋"

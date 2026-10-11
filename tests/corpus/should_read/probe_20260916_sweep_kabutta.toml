@@ -21,7 +21,7 @@ expected = "ねこかぶってるからねワラ"
 [[case]]
 input = "まさかのマミーと予想被ったのだがww"
 mode = "hiragana"
-expected = "まさかのマミーとよそうかぶったのだがww"
+expected = "まさかのマミーとよそうかぶったのだがワラワラ"
 
 [[case]]
 input = "株と時間被ってるw"

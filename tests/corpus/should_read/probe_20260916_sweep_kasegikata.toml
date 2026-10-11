@@ -51,7 +51,7 @@ expected = "ぜんぶいまのかいごかんかな"
 [[case]]
 input = "35Pお着換えしてきたwwww"
 mode = "hiragana"
-expected = "35Pおきがえしてきたwwww"
+expected = "35Pおきがえしてきたワラワラワラワラ"
 
 [[case]]
 input = "無理やり良いこと風に言い換えて"

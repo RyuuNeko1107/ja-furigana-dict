@@ -116,7 +116,7 @@ expected = "しきかんがしきをなげるな"
 [[case]]
 input = "記憶の揮発早いww"
 mode = "hiragana"
-expected = "きおくのきはつはやいww"
+expected = "きおくのきはつはやいワラワラ"
 
 [[case]]
 input = "石畳に叩き付けたら..."

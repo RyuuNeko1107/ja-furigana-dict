@@ -61,7 +61,7 @@ expected = "じごくくも"
 [[case]]
 input = "一人雲の中www"
 mode = "hiragana"
-expected = "ひとりくものなかwww"
+expected = "ひとりくものなかワラワラワラ"
 
 [[case]]
 input = "倉木麻衣?"
@@ -76,7 +76,7 @@ expected = "さいきんまーらーたんたべた?"
 [[case]]
 input = "男梅きたwwwwww"
 mode = "hiragana"
-expected = "おとこうめきたwwwwww"
+expected = "おとこうめきたワラワラワラワラワラワラ"
 
 [[case]]
 input = "どっちかというと豪炎寺"

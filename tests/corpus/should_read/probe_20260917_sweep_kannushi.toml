@@ -46,12 +46,12 @@ expected = "にんきょうえいがすぎる"
 [[case]]
 input = "咽ちゃったwww"
 mode = "hiragana"
-expected = "むせちゃったwww"
+expected = "むせちゃったワラワラワラ"
 
 [[case]]
 input = "咽たwwwww"
 mode = "hiragana"
-expected = "むせたwwwww"
+expected = "むせたワラワラワラワラワラ"
 
 [[case]]
 input = "笑いながらだと咽るでw"
@@ -371,7 +371,7 @@ expected = "もとくうていレンジャー"
 [[case]]
 input = "天挺空羅ww"
 mode = "hiragana"
-expected = "てんていくうらww"
+expected = "てんていくうらワラワラ"
 
 [[case]]
 input = "太宰府天満宮暑い神様"
@@ -431,7 +431,7 @@ expected = "もうろくしてるワラ"
 [[case]]
 input = "今まで碌に来なかったのにここでwww"
 mode = "hiragana"
-expected = "いままでろくにこなかったのにここでwww"
+expected = "いままでろくにこなかったのにここでワラワラワラ"
 
 [[case]]
 input = "生け簀は欲しいなー"

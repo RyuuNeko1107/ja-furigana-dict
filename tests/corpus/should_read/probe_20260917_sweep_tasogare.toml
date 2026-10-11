@@ -106,7 +106,7 @@ expected = "かんたん"
 [[case]]
 input = "発想力に驚嘆www"
 mode = "hiragana"
-expected = "はっそうりょくにきょうたんwww"
+expected = "はっそうりょくにきょうたんワラワラワラ"
 
 [[case]]
 input = "嘆願してるのにね..."

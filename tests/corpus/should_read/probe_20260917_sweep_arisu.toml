@@ -56,7 +56,7 @@ expected = "いなにすさんおつかれさまーー!!!"
 [[case]]
 input = "伊那尓栖の欠片ww"
 mode = "hiragana"
-expected = "いなにすのかけらww"
+expected = "いなにすのかけらワラワラ"
 
 [[case]]
 input = "憐みw"
@@ -221,7 +221,7 @@ expected = "しこうひん"
 [[case]]
 input = "シャケ咥えてるwww"
 mode = "hiragana"
-expected = "シャケくわえてるwww"
+expected = "シャケくわえてるワラワラワラ"
 
 [[case]]
 input = "座礁?"
@@ -361,5 +361,5 @@ expected = "せいりょうこうこう?"
 [[case]]
 input = "稜線をなぞるなwwww"
 mode = "hiragana"
-expected = "りょうせんをなぞるなwwww"
+expected = "りょうせんをなぞるなワラワラワラワラ"
 

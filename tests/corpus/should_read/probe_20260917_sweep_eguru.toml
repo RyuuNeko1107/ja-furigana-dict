@@ -86,7 +86,7 @@ expected = "えぐれるワラ"
 [[case]]
 input = "そこ抉るwww"
 mode = "hiragana"
-expected = "そこえぐるwww"
+expected = "そこえぐるワラワラワラ"
 
 [[case]]
 input = "古傷を抉られてる"
@@ -306,7 +306,7 @@ expected = "われなべにとじふた"
 [[case]]
 input = "綴りが違うwww"
 mode = "hiragana"
-expected = "つづりがちがうwww"
+expected = "つづりがちがうワラワラワラ"
 
 [[case]]
 input = "4枚綴りの伝説は果たして読まれるのか...?"

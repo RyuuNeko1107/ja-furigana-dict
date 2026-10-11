@@ -131,7 +131,7 @@ expected = "しんげんもちかな"
 [[case]]
 input = "太鼓の達人みたいww"
 mode = "hiragana"
-expected = "たいこのたつじんみたいww"
+expected = "たいこのたつじんみたいワラワラ"
 
 [[case]]
 input = "招き猫とか"

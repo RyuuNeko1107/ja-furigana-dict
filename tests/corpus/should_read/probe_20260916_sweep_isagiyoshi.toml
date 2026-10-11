@@ -61,7 +61,7 @@ expected = "いさぎよし"
 [[case]]
 input = "潔よすぎるww"
 mode = "hiragana"
-expected = "いさぎよすぎるww"
+expected = "いさぎよすぎるワラワラ"
 
 [[case]]
 input = "潔ぎよく辞めろや"
@@ -106,7 +106,7 @@ expected = "なぐら じゅん"
 [[case]]
 input = "堂上直倫wwwwww"
 mode = "hiragana"
-expected = "どうじょうなおみちwwwwww"
+expected = "どうじょうなおみちワラワラワラワラワラワラ"
 
 [[case]]
 input = "これをショーと呼ぶ倫理観よ"

@@ -90,7 +90,7 @@ note = "同上 (旧 しゅつれたら)"
 [[case]]
 input = "呪われたらきついwww"
 mode = "hiragana"
-expected = "のろわれたらきついwww"
+expected = "のろわれたらきついワラワラワラ"
 note = "同上 (旧 まじなわれたら)"
 
 [[case]]

@@ -221,7 +221,7 @@ expected = "すえぜんはくうねん"
 [[case]]
 input = "謙遜タイプwww"
 mode = "hiragana"
-expected = "けんそんタイプwww"
+expected = "けんそんタイプワラワラワラ"
 
 [[case]]
 input = "原曲と遜色ないよねこれ!"
@@ -271,7 +271,7 @@ expected = "こさつめぐりてきな"
 [[case]]
 input = "嵌められたww"
 mode = "hiragana"
-expected = "はめられたww"
+expected = "はめられたワラワラ"
 
 [[case]]
 input = "罠に嵌まるな"

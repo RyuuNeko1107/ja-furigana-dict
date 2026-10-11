@@ -11,7 +11,7 @@ expected = "'ˊきょう れんけい"
 [[case]]
 input = "フブさんが啞然としてるwww"
 mode = "hiragana"
-expected = "フブさんがあぜんとしてるwww"
+expected = "フブさんがあぜんとしてるワラワラワラ"
 
 [[case]]
 input = "啞然"

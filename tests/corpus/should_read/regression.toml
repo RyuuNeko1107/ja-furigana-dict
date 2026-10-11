@@ -2968,7 +2968,7 @@ expected = "みなとでまってる"
 [[case]]
 input = "もう漁ってるww"
 mode = "hiragana"
-expected = "もうあさってるww"
+expected = "もうあさってるワラワラ"
 
 [[case]]
 input = "所持金増やした分"

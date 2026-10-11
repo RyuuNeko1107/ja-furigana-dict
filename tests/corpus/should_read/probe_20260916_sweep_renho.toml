@@ -136,7 +136,7 @@ expected = "ごくつまかな"
 [[case]]
 input = "凝らない方がwwww"
 mode = "hiragana"
-expected = "こらないほうがwwww"
+expected = "こらないほうがワラワラワラワラ"
 
 [[case]]
 input = "肩凝らないの?"

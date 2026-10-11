@@ -166,7 +166,7 @@ expected = "おりのなかに..."
 [[case]]
 input = "折檻ww"
 mode = "hiragana"
-expected = "せっかんww"
+expected = "せっかんワラワラ"
 
 [[case]]
 input = "遭難するぞw"

@@ -81,7 +81,7 @@ expected = "かたひもほそすぎないか?ワラ"
 [[case]]
 input = "貝紐ww"
 mode = "hiragana"
-expected = "かいひもww"
+expected = "かいひもワラワラ"
 
 [[case]]
 input = "そっか啓治さんか..."
@@ -241,7 +241,7 @@ expected = "りょうてい"
 [[case]]
 input = "流れるように販促ww"
 mode = "hiragana"
-expected = "ながれるようにはんそくww"
+expected = "ながれるようにはんそくワラワラ"
 
 [[case]]
 input = "催促!"

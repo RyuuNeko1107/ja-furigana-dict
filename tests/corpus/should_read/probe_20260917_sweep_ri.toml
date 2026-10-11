@@ -426,7 +426,7 @@ expected = "もだえてるがなワラ"
 [[case]]
 input = "これはひと悶着ありそうだww"
 mode = "hiragana"
-expected = "これはひともんちゃくありそうだww"
+expected = "これはひともんちゃくありそうだワラワラ"
 
 [[case]]
 input = "苦悶の表情w"

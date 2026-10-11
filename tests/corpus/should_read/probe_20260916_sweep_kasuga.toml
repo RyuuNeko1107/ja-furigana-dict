@@ -48,7 +48,7 @@ expected = "いたがつうろふさいでる"
 [[case]]
 input = "退路を断ったww"
 mode = "hiragana"
-expected = "たいろをたったww"
+expected = "たいろをたったワラワラ"
 
 [[case]]
 input = "交通費やすーい!"

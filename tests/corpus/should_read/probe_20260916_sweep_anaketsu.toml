@@ -66,7 +66,7 @@ expected = "もりしおしておこう"
 [[case]]
 input = "圧倒的塩だったwww"
 mode = "hiragana"
-expected = "あっとうてきしおだったwww"
+expected = "あっとうてきしおだったワラワラワラ"
 
 [[case]]
 input = "鼻塩塩"
@@ -241,7 +241,7 @@ expected = "ウユニえんこにさくさくら"
 [[case]]
 input = "手塩おにぎりww"
 mode = "hiragana"
-expected = "てしおおにぎりww"
+expected = "てしおおにぎりワラワラ"
 
 [[case]]
 input = "伯方の塩"

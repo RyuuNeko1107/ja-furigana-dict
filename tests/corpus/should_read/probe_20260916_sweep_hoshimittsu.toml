@@ -6,7 +6,7 @@ expected = "ほしみっつです!!"
 [[case]]
 input = "ちょっと三瓶混ざってない?ww"
 mode = "hiragana"
-expected = "ちょっとさんぺいまざってない?ww"
+expected = "ちょっとさんぺいまざってない?ワラワラ"
 
 [[case]]
 input = "阿部晋三"

@@ -26,7 +26,7 @@ expected = "こうた"
 [[case]]
 input = "藤井皓哉wwww"
 mode = "hiragana"
-expected = "ふじいこうやwwww"
+expected = "ふじいこうやワラワラワラワラ"
 
 [[case]]
 input = "皓々"

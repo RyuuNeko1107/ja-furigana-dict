@@ -26,7 +26,7 @@ expected = "てきどろは?"
 [[case]]
 input = "元泥建社員がww"
 mode = "hiragana"
-expected = "もとどろけんしゃいんがww"
+expected = "もとどろけんしゃいんがワラワラ"
 
 [[case]]
 input = "一旦自社泥建か〜?"
@@ -96,7 +96,7 @@ expected = "しぼりこみできるかららくよ"
 [[case]]
 input = "デクの樹様ww"
 mode = "hiragana"
-expected = "デクのきさまww"
+expected = "デクのきさまワラワラ"
 
 [[case]]
 input = "柳楽優弥w"

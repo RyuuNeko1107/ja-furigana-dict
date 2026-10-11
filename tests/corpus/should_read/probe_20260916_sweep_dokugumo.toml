@@ -138,7 +138,7 @@ expected = "まつやまはきしょうあらとあいしょうよい"
 [[case]]
 input = "蜂の一刺しwww"
 mode = "hiragana"
-expected = "はちのひとさしwww"
+expected = "はちのひとさしワラワラワラ"
 
 [[case]]
 input = "とどめ刺しにきたぞ!"

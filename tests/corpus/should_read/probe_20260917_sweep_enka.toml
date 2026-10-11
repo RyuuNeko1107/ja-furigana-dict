@@ -241,7 +241,7 @@ expected = "スバルにんしん!?ワラ"
 [[case]]
 input = "家計簿www"
 mode = "hiragana"
-expected = "かけいぼwww"
+expected = "かけいぼワラワラワラ"
 
 [[case]]
 input = "金田一少年の事件簿"

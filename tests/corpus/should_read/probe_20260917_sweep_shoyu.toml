@@ -161,7 +161,7 @@ expected = "ちゃんとわきげあるんか"
 [[case]]
 input = "縋る前提なのwww"
 mode = "hiragana"
-expected = "すがるぜんていなのwww"
+expected = "すがるぜんていなのワラワラワラ"
 
 [[case]]
 input = "もう藁にも縋る状態か"
@@ -251,7 +251,7 @@ expected = "まぶたがおもいよけんもち"
 [[case]]
 input = "瞼けいれんwww"
 mode = "hiragana"
-expected = "まぶたけいれんwww"
+expected = "まぶたけいれんワラワラワラ"
 
 [[case]]
 input = "自然薯"

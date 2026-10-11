@@ -71,7 +71,7 @@ expected = "かんとくのげき!"
 [[case]]
 input = "檄おこwww"
 mode = "hiragana"
-expected = "げきおこwww"
+expected = "げきおこワラワラワラ"
 
 [[case]]
 input = "5連z¥檄"

@@ -1,7 +1,7 @@
 [[case]]
 input = "肉塊の完成ww"
 mode = "hiragana"
-expected = "にくかいのかんせいww"
+expected = "にくかいのかんせいワラワラ"
 
 [[case]]
 input = "根塊見送ってもいい"

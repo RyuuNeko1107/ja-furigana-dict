@@ -11,7 +11,7 @@ expected = "シスコンこじらせてるからな"
 [[case]]
 input = "だいぶ拗らしてるww"
 mode = "hiragana"
-expected = "だいぶこじらしてるww"
+expected = "だいぶこじらしてるワラワラ"
 
 [[case]]
 input = "どんだけオートで捉まらないかにかかってる"
@@ -86,7 +86,7 @@ expected = "もりともや"
 [[case]]
 input = "藤井皓哉wwww"
 mode = "hiragana"
-expected = "ふじいこうやwwww"
+expected = "ふじいこうやワラワラワラワラ"
 
 [[case]]
 input = "松山晋哉が転生"

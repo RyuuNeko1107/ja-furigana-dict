@@ -116,7 +116,7 @@ expected = "たんこうせつか?"
 [[case]]
 input = "神輿wwww"
 mode = "hiragana"
-expected = "みこしwwww"
+expected = "みこしワラワラワラワラ"
 
 [[case]]
 input = "玉の輿!?"
@@ -201,7 +201,7 @@ expected = "うなずいてるワラ"
 [[case]]
 input = "怠惰www"
 mode = "hiragana"
-expected = "たいだwww"
+expected = "たいだワラワラワラ"
 
 [[case]]
 input = "惰性でやるからやでw"
@@ -241,7 +241,7 @@ expected = "ごさんかいのしょうたいじょうかな?ワラ"
 [[case]]
 input = "謳歌しとるwww"
 mode = "hiragana"
-expected = "おうかしとるwww"
+expected = "おうかしとるワラワラワラ"
 
 [[case]]
 input = "謳い文句"

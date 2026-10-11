@@ -81,7 +81,7 @@ expected = "さわちりょうりのこうち"
 [[case]]
 input = "眉毛剃るww"
 mode = "hiragana"
-expected = "まゆげそるww"
+expected = "まゆげそるワラワラ"
 
 [[case]]
 input = "もう剃られてる......"
@@ -111,7 +111,7 @@ expected = "きゅうにいのちごい"
 [[case]]
 input = "雨乞いwww"
 mode = "hiragana"
-expected = "あまごいwww"
+expected = "あまごいワラワラワラ"
 
 [[case]]
 input = "突然の物乞いw"
@@ -146,7 +146,7 @@ expected = "もりくぼしょうたろう"
 [[case]]
 input = "近畿の精密機器www"
 mode = "hiragana"
-expected = "きんきのせいみつききwww"
+expected = "きんきのせいみつききワラワラワラ"
 
 [[case]]
 input = "すり鉢に置いてきたな"

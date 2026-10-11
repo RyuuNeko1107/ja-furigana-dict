@@ -196,7 +196,7 @@ expected = "あえんふそくだよ"
 [[case]]
 input = "哀愁www"
 mode = "hiragana"
-expected = "あいしゅうwww"
+expected = "あいしゅうワラワラワラ"
 
 [[case]]
 input = "ご愁傷様w"

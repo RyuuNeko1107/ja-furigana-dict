@@ -266,7 +266,7 @@ expected = "はかいとさつりくのかみ"
 [[case]]
 input = "亮平ww"
 mode = "hiragana"
-expected = "りょうへいww"
+expected = "りょうへいワラワラ"
 
 [[case]]
 input = "事後諸葛亮"

@@ -6,7 +6,7 @@ expected = "みそぎ、かな"
 [[case]]
 input = "禊ぎwww"
 mode = "hiragana"
-expected = "みそぎwww"
+expected = "みそぎワラワラワラ"
 
 [[case]]
 input = "新たな禊ぎが必要です"
@@ -91,7 +91,7 @@ expected = "ほんださらもさいきんポニーももちぽい"
 [[case]]
 input = "鈴木紗理奈は48歳なんだな知らんかったがこんな芸能人はははwww"
 mode = "hiragana"
-expected = "すずきさりなはよんじゅうはっさいなんだなしらんかったがこんなげいのうじんはははwww"
+expected = "すずきさりなはよんじゅうはっさいなんだなしらんかったがこんなげいのうじんはははワラワラワラ"
 
 [[case]]
 input = "理紗?"
@@ -116,7 +116,7 @@ expected = "けいしょくするね"
 [[case]]
 input = "眉毛が繫がってたんだよwww"
 mode = "hiragana"
-expected = "まゆげがつながってたんだよwww"
+expected = "まゆげがつながってたんだよワラワラワラ"
 
 [[case]]
 input = "谷繫いるからあり"

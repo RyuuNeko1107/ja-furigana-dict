@@ -301,7 +301,7 @@ expected = "クソこうもりめワラ"
 [[case]]
 input = "白樺ww"
 mode = "hiragana"
-expected = "しらかばww"
+expected = "しらかばワラワラ"
 
 [[case]]
 input = "樺太?"

@@ -191,7 +191,7 @@ expected = "らせんかいだんのへや"
 [[case]]
 input = "法螺貝ww"
 mode = "hiragana"
-expected = "ほらがいww"
+expected = "ほらがいワラワラ"
 
 [[case]]
 input = "螺鈿ちゃんだけ"
@@ -376,7 +376,7 @@ expected = "くるのか!?"
 [[case]]
 input = "蹂躙wwwww"
 mode = "hiragana"
-expected = "じゅうりんwwwww"
+expected = "じゅうりんワラワラワラワラワラ"
 
 [[case]]
 input = "踏み躙るなよ"

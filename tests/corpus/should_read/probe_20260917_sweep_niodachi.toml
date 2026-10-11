@@ -206,7 +206,7 @@ expected = "せいちなせいち"
 [[case]]
 input = "葦上げwww"
 mode = "hiragana"
-expected = "あしあげwww"
+expected = "あしあげワラワラワラ"
 
 [[case]]
 input = "葦原中津国..."

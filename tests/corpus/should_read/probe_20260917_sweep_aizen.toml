@@ -26,7 +26,7 @@ expected = "とあいぜんはいってる"
 [[case]]
 input = "藍染に脳を焼かれたからねww"
 mode = "hiragana"
-expected = "あいぜんにのうをやかれたからねww"
+expected = "あいぜんにのうをやかれたからねワラワラ"
 
 [[case]]
 input = "藍染惣右介"

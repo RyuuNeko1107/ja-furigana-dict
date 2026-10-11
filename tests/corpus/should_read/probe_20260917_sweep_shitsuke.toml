@@ -56,7 +56,7 @@ expected = "しっかりしつけたっちゅうことや"
 [[case]]
 input = "躾られてるwww"
 mode = "hiragana"
-expected = "しつけられてるwww"
+expected = "しつけられてるワラワラワラ"
 
 [[case]]
 input = "よく躾られてるなぁ"

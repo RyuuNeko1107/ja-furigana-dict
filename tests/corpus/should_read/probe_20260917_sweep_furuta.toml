@@ -226,7 +226,7 @@ expected = "てんしんらんまんやなあ"
 [[case]]
 input = "絢爛舞踏しとるwww"
 mode = "hiragana"
-expected = "けんらんぶとうしとるwww"
+expected = "けんらんぶとうしとるワラワラワラ"
 
 [[case]]
 input = "春爛漫ボールw"

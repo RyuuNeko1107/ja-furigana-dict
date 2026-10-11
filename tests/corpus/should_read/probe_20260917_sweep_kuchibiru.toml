@@ -96,7 +96,7 @@ expected = "くちびるむらさきさんワラ"
 [[case]]
 input = "唇から血でてません??www"
 mode = "hiragana"
-expected = "くちびるからちでてません??www"
+expected = "くちびるからちでてません??ワラワラワラ"
 
 [[case]]
 input = "泥水で唇洗おう"
@@ -206,7 +206,7 @@ expected = "みこちおれたくましいよ"
 [[case]]
 input = "逞しいなwww"
 mode = "hiragana"
-expected = "たくましいなwww"
+expected = "たくましいなワラワラワラ"
 
 [[case]]
 input = "艇長から船長か"
@@ -286,7 +286,7 @@ expected = "きょうゆ"
 [[case]]
 input = "諭してるww"
 mode = "hiragana"
-expected = "さとしてるww"
+expected = "さとしてるワラワラ"
 
 [[case]]
 input = "湘南?"
@@ -496,7 +496,7 @@ expected = "さけをくみかわせば"
 [[case]]
 input = "鬱陶しいなぁww"
 mode = "hiragana"
-expected = "うっとうしいなぁww"
+expected = "うっとうしいなぁワラワラ"
 
 [[case]]
 input = "陶芸家"

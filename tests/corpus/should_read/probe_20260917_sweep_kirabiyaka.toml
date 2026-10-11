@@ -241,7 +241,7 @@ expected = "ありんこ"
 [[case]]
 input = "戦慄ww"
 mode = "hiragana"
-expected = "せんりつww"
+expected = "せんりつワラワラ"
 
 [[case]]
 input = "恐れ慄いたか"
@@ -326,7 +326,7 @@ expected = "ちつじょとは、、、"
 [[case]]
 input = "無秩序すぎるwww"
 mode = "hiragana"
-expected = "むちつじょすぎるwww"
+expected = "むちつじょすぎるワラワラワラ"
 
 [[case]]
 input = "秩父の秩"
