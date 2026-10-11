@@ -379,9 +379,22 @@ def validate_loanwords(path: Path, errors: Errors) -> dict:
     if data is None:
         return {}
     entries = data.get('entries')
+    sentence_words = data.get('sentence_words')
+    if entries is None and isinstance(sentence_words, dict):
+        entries = {}
     if not isinstance(entries, dict):
         errors.add_for(path, "[entries] section が無い、または table ではない")
         return {}
+    # [sentence_words]: 英文の中でだけ使う語 (a / is / to / don't 等)。 単独では引かれない
+    if sentence_words is not None:
+        if not isinstance(sentence_words, dict):
+            errors.add_for(path, "[sentence_words] が table ではない")
+        else:
+            for word, reading in sentence_words.items():
+                if not re.fullmatch(r"[a-z]+(?:'[a-z]+)?", word):
+                    errors.add_for(path, f"[sentence_words] '{word}': 小文字の英字 (と ' 1 つ) のみ可")
+                elif not isinstance(reading, str) or not is_kana(reading):
+                    errors.add_for(path, f"[sentence_words] '{word}' → '{reading}' (全角カタカナで書いてください)")
     for surface, reading in entries.items():
         if not isinstance(reading, str):
             errors.add_for(path, f"loanword '{surface}': value が string ではない")

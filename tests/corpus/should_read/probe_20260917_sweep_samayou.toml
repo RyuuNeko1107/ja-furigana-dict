@@ -21,7 +21,7 @@ expected = "さまよったおかげでレベルはあがった"
 [[case]]
 input = "君を探し彷徨うmy soul"
 mode = "hiragana"
-expected = "きみをさがしさまようmy soul"
+expected = "きみをさがしさまようマイ ソウル"
 
 [[case]]
 input = "自由に彷徨おう"

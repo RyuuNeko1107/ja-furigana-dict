@@ -63,4 +63,4 @@ expected = "ミオちゃんグッド"
 [[case]]
 input = "thank you so much"
 mode = "hiragana"
-expected = "thank you so much"
+expected = "サンク ユー ソー マッチ"

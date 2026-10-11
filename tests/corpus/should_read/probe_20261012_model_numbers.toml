@@ -509,7 +509,7 @@ expected = "ハロー ワールド"
 [[case]]
 input = "thank you so much"
 mode = "hiragana"
-expected = "thank you so much"
+expected = "サンク ユー ソー マッチ"
 
 [[case]]
 input = "Samsung Galaxy S24 Ultra"

@@ -1,0 +1,147 @@
+# 2026-10-12 電話番号 / N/M (日付・分数) / 英文の語 (sentence_words) / 連結英語 / 3D・4K・℃ の回帰ケース (lib 0.5.9 以降)。
+# 1/3 と 10/12 は日付か分数か決められないので触らない (そのまま)。 単独の so / to は読まない。
+
+[[case]]
+input = "090-1234-5678"
+mode = "hiragana"
+expected = "ぜろきゅうぜろ いちにさんよん ごろくななはち"
+
+[[case]]
+input = "03-1234-5678"
+mode = "hiragana"
+expected = "ぜろさん いちにさんよん ごろくななはち"
+
+[[case]]
+input = "電話は090-1234-5678です"
+mode = "hiragana"
+expected = "でんわはぜろきゅうぜろ いちにさんよん ごろくななはちです"
+
+[[case]]
+input = "0120-123-456"
+mode = "hiragana"
+expected = "ぜろいちにぜろ いちにさん よんごろく"
+
+[[case]]
+input = "090 1234 5678"
+mode = "hiragana"
+expected = "ぜろきゅうぜろ いちにさんよん ごろくななはち"
+
+[[case]]
+input = "09012345678"
+mode = "hiragana"
+expected = "ぜろきゅうぜろ いちにさんよん ごろくななはち"
+
+[[case]]
+input = "+81-90-1234-5678"
+mode = "hiragana"
+expected = "ぷらすはちいち きゅうぜろ いちにさんよん ごろくななはち"
+
+[[case]]
+input = "+1 555-123-4567"
+mode = "hiragana"
+expected = "ぷらすいち ごごご いちにさん よんごろくなな"
+
+[[case]]
+input = "2024-10-12"
+mode = "hiragana"
+expected = "にせんにじゅうよんじゅうじゅうに"
+
+[[case]]
+input = "12/25"
+mode = "hiragana"
+expected = "じゅうにがつにじゅうごにち"
+
+[[case]]
+input = "12/25のライブ"
+mode = "hiragana"
+expected = "じゅうにがつにじゅうごにちのライブ"
+
+[[case]]
+input = "1/2サイズ"
+mode = "hiragana"
+expected = "にぶんのいちサイズ"
+
+[[case]]
+input = "3/4以上"
+mode = "hiragana"
+expected = "よんぶんのさんいじょう"
+
+[[case]]
+input = "1/3"
+mode = "hiragana"
+expected = "いちすらっしゅさん"
+
+[[case]]
+input = "10/12"
+mode = "hiragana"
+expected = "じゅうすらっしゅじゅうに"
+
+[[case]]
+input = "thank you so much"
+mode = "hiragana"
+expected = "サンク ユー ソー マッチ"
+
+[[case]]
+input = "I love you"
+mode = "hiragana"
+expected = "アイ ラブ ユー"
+
+[[case]]
+input = "thankyou"
+mode = "hiragana"
+expected = "サンクユー"
+
+[[case]]
+input = "iloveyou"
+mode = "hiragana"
+expected = "アイラブユー"
+
+[[case]]
+input = "GameOver"
+mode = "hiragana"
+expected = "ゲームオーバー"
+
+[[case]]
+input = "so"
+mode = "hiragana"
+expected = "so"
+
+[[case]]
+input = "to"
+mode = "hiragana"
+expected = "to"
+
+[[case]]
+input = "Hello World"
+mode = "hiragana"
+expected = "ハロー ワールド"
+
+[[case]]
+input = "3D"
+mode = "hiragana"
+expected = "スリーディー"
+
+[[case]]
+input = "4Kテレビ"
+mode = "hiragana"
+expected = "フォーケーテレビ"
+
+[[case]]
+input = "8Kテレビ"
+mode = "hiragana"
+expected = "エイトケーテレビ"
+
+[[case]]
+input = "最高気温は℃です"
+mode = "hiragana"
+expected = "さいこうきおんはどです"
+
+[[case]]
+input = "25℃"
+mode = "hiragana"
+expected = "にじゅうごど"
+
+[[case]]
+input = "1080p"
+mode = "hiragana"
+expected = "テンエイティピー"

@@ -171,7 +171,7 @@ expected = "ゲーマーのしんずいよワラ"
 [[case]]
 input = "破壊神の神髄wwwwwww"
 mode = "hiragana"
-expected = "はかいしんのしんずいwwwwwww"
+expected = "はかいしんのしんずいワラワラワラワラワラワラワラ"
 
 [[case]]
 input = "脳髄"
