@@ -1,0 +1,527 @@
+# 2026-10-12 型番 (rules/text/models.toml) と、 型番の前の英単語 (Intel Core / Samsung Galaxy) の回帰ケース。
+# 型番の読みは 「語ごとに数字の読み方が違う」 ので、 代表的なものを固定する。
+
+[[case]]
+input = "Ryzen 7 5800X3D"
+mode = "hiragana"
+expected = "ライゼンセブンゴハチゼロゼロエックススリーディー"
+
+[[case]]
+input = "Ryzen 5 7600X"
+mode = "hiragana"
+expected = "ライゼンファイブナナロクゼロゼロエックス"
+
+[[case]]
+input = "RTX 4070 Ti"
+mode = "hiragana"
+expected = "アールティーエックスヨンゼロナナゼロティーアイ"
+
+[[case]]
+input = "RTX4090"
+mode = "hiragana"
+expected = "アールティーエックスヨンゼロキュウゼロ"
+
+[[case]]
+input = "RTX 4080 Super"
+mode = "hiragana"
+expected = "アールティーエックスヨンゼロハチゼロスーパー"
+
+[[case]]
+input = "GTX 1660 Ti"
+mode = "hiragana"
+expected = "ジーティーエックスイチロクロクゼロティーアイ"
+
+[[case]]
+input = "GTX1080"
+mode = "hiragana"
+expected = "ジーティーエックスイチゼロハチゼロ"
+
+[[case]]
+input = "RX 7900 XTX"
+mode = "hiragana"
+expected = "アールエックスナナキュウゼロゼロエックスティーエックス"
+
+[[case]]
+input = "RX 6600 XT"
+mode = "hiragana"
+expected = "アールエックスロクロクゼロゼロエックスティー"
+
+[[case]]
+input = "Arc A770"
+mode = "hiragana"
+expected = "アークエーナナナナゼロ"
+
+[[case]]
+input = "i9-13900K"
+mode = "hiragana"
+expected = "アイナインイチサンキュウゼロゼロケー"
+
+[[case]]
+input = "Core i7-12700KF"
+mode = "hiragana"
+expected = "コア アイセブンイチニナナゼロゼロケーエフ"
+
+[[case]]
+input = "i5 12400F"
+mode = "hiragana"
+expected = "アイファイブイチニヨンゼロゼロエフ"
+
+[[case]]
+input = "i7"
+mode = "hiragana"
+expected = "アイセブン"
+
+[[case]]
+input = "Core Ultra 7 155H"
+mode = "hiragana"
+expected = "コア ウルトラセブンイチゴゴエイチ"
+
+[[case]]
+input = "iPhone 15 Pro Max"
+mode = "hiragana"
+expected = "アイフォンジュウゴプロマックス"
+
+[[case]]
+input = "iPhone 16e"
+mode = "hiragana"
+expected = "アイフォンジュウロクイー"
+
+[[case]]
+input = "iPad Pro 11"
+mode = "hiragana"
+expected = "アイパッドプロジュウイチ"
+
+[[case]]
+input = "Apple M2 Pro"
+mode = "hiragana"
+expected = "アップルエムツープロ"
+
+[[case]]
+input = "M3 Max"
+mode = "hiragana"
+expected = "エムスリーマックス"
+
+[[case]]
+input = "Galaxy S24 Ultra"
+mode = "hiragana"
+expected = "ギャラクシーエスニジュウヨンウルトラ"
+
+[[case]]
+input = "Galaxy Z Flip5"
+mode = "hiragana"
+expected = "ギャラクシーゼットフリップファイブ"
+
+[[case]]
+input = "Pixel 8 Pro"
+mode = "hiragana"
+expected = "ピクセルエイトプロ"
+
+[[case]]
+input = "Pixel 8a"
+mode = "hiragana"
+expected = "ピクセルエイトエー"
+
+[[case]]
+input = "PS5"
+mode = "hiragana"
+expected = "ピーエスファイブ"
+
+[[case]]
+input = "PS5 Pro"
+mode = "hiragana"
+expected = "ピーエスファイブプロ"
+
+[[case]]
+input = "PSVR2"
+mode = "hiragana"
+expected = "ピーエスブイアールツー"
+
+[[case]]
+input = "Xbox Series X"
+mode = "hiragana"
+expected = "エックスボックスシリーズエックス"
+
+[[case]]
+input = "Quest 3S"
+mode = "hiragana"
+expected = "クエストスリーエス"
+
+[[case]]
+input = "Z790"
+mode = "hiragana"
+expected = "ゼットナナキュウゼロ"
+
+[[case]]
+input = "B650E"
+mode = "hiragana"
+expected = "ビーロクゴゼロイー"
+
+[[case]]
+input = "X670E"
+mode = "hiragana"
+expected = "エックスロクナナゼロイー"
+
+[[case]]
+input = "DDR5-6000"
+mode = "hiragana"
+expected = "ディーディーアールファイブロクセン"
+
+[[case]]
+input = "DDR4"
+mode = "hiragana"
+expected = "ディーディーアールフォー"
+
+[[case]]
+input = "PCIe 5.0"
+mode = "hiragana"
+expected = "ピーシーアイイーゴテンゼロ"
+
+[[case]]
+input = "USB 3.2 Gen 2x2"
+mode = "hiragana"
+expected = "ユーエスビーサンテンニジェンツーバイツー"
+
+[[case]]
+input = "USB4"
+mode = "hiragana"
+expected = "ユーエスビーフォー"
+
+[[case]]
+input = "USB-C"
+mode = "hiragana"
+expected = "ユーエスビーシー"
+
+[[case]]
+input = "Wi-Fi 6E"
+mode = "hiragana"
+expected = "ワイファイシックスイー"
+
+[[case]]
+input = "HDMI 2.1"
+mode = "hiragana"
+expected = "エイチディーエムアイニテンイチ"
+
+[[case]]
+input = "Bluetooth 5.3"
+mode = "hiragana"
+expected = "ブルートゥースゴテンサン"
+
+[[case]]
+input = "M.2"
+mode = "hiragana"
+expected = "エムドットツー"
+
+[[case]]
+input = "GPT-4o"
+mode = "hiragana"
+expected = "ジーピーティーフォーオー"
+
+[[case]]
+input = "GPT-4o mini"
+mode = "hiragana"
+expected = "ジーピーティーフォーオーミニ"
+
+[[case]]
+input = "WH-1000XM5"
+mode = "hiragana"
+expected = "ダブリューエイチセンエックスエムファイブ"
+
+[[case]]
+input = "N100"
+mode = "hiragana"
+expected = "エヌヒャク"
+
+[[case]]
+input = "N95マスク"
+mode = "hiragana"
+expected = "エヌキュウジュウゴマスク"
+
+[[case]]
+input = "Snapdragon 8 Gen 3"
+mode = "hiragana"
+expected = "スナップドラゴンエイトジェンスリー"
+
+[[case]]
+input = "Dimensity 9300"
+mode = "hiragana"
+expected = "ディメンシティキュウセンサンビャク"
+
+[[case]]
+input = "Tensor G3"
+mode = "hiragana"
+expected = "テンソルジースリー"
+
+[[case]]
+input = "Hi7"
+mode = "hiragana"
+expected = "Hi7"
+
+[[case]]
+input = "RTX4090が欲しい"
+mode = "hiragana"
+expected = "アールティーエックスヨンゼロキュウゼロがほしい"
+
+[[case]]
+input = "今日はi9-13900KとRTX 4090を買った"
+mode = "hiragana"
+expected = "きょうはアイナインイチサンキュウゼロゼロケーとアールティーエックスヨンゼロキュウゼロをかった"
+
+[[case]]
+input = "Threadripper 7980X"
+mode = "hiragana"
+expected = "スレッドリッパーナナキュウハチゼロエックス"
+
+[[case]]
+input = "Threadripper PRO 5995WX"
+mode = "hiragana"
+expected = "スレッドリッパーゴキュウキュウゴダブリューエックス"
+
+[[case]]
+input = "EPYC 9654"
+mode = "hiragana"
+expected = "エピックキュウロクゴヨン"
+
+[[case]]
+input = "Athlon 3000G"
+mode = "hiragana"
+expected = "アスロンサンゼロゼロゼロジー"
+
+[[case]]
+input = "Radeon 780M"
+mode = "hiragana"
+expected = "ラデオンナナハチゼロエム"
+
+[[case]]
+input = "Xeon W-3375"
+mode = "hiragana"
+expected = "ジーオンサンサンナナゴ"
+
+[[case]]
+input = "Xeon Gold 6338"
+mode = "hiragana"
+expected = "ジーオンロクサンサンハチ"
+
+[[case]]
+input = "DDR5-6000 CL30"
+mode = "hiragana"
+expected = "ディーディーアールファイブロクセン シーエルサンジュウ"
+
+[[case]]
+input = "WD Black SN850X"
+mode = "hiragana"
+expected = "WD ブラック エスエヌハチゴゼロエックス"
+
+[[case]]
+input = "DeathAdder V3"
+mode = "hiragana"
+expected = "デスアダーブイスリー"
+
+[[case]]
+input = "BlackWidow V4"
+mode = "hiragana"
+expected = "ブラックウィドウブイフォー"
+
+[[case]]
+input = "Viper V3 Pro"
+mode = "hiragana"
+expected = "バイパーブイスリープロ"
+
+[[case]]
+input = "Superlight 2"
+mode = "hiragana"
+expected = "スーパーライトツー"
+
+[[case]]
+input = "MacBook Air M2"
+mode = "hiragana"
+expected = "マックブックエアーエムツー"
+
+[[case]]
+input = "MacBook Pro M3 Max"
+mode = "hiragana"
+expected = "マックブックプロエムスリーマックス"
+
+[[case]]
+input = "Mac mini M2 Pro"
+mode = "hiragana"
+expected = "マックミニエムツープロ"
+
+[[case]]
+input = "iMac M3"
+mode = "hiragana"
+expected = "アイマックエムスリー"
+
+[[case]]
+input = "AirPods Pro 2"
+mode = "hiragana"
+expected = "エアポッズプロツー"
+
+[[case]]
+input = "AirPods 4"
+mode = "hiragana"
+expected = "エアポッズフォー"
+
+[[case]]
+input = "Apple Watch Series 9"
+mode = "hiragana"
+expected = "アップルウォッチシリーズナイン"
+
+[[case]]
+input = "Apple Watch Ultra 2"
+mode = "hiragana"
+expected = "アップルウォッチウルトラツー"
+
+[[case]]
+input = "Xperia 1"
+mode = "hiragana"
+expected = "エクスペリアワン"
+
+[[case]]
+input = "AQUOS sense8"
+mode = "hiragana"
+expected = "アクオス センスエイト"
+
+[[case]]
+input = "OnePlus 12"
+mode = "hiragana"
+expected = "ワンプラスジュウニ"
+
+[[case]]
+input = "Redmi Note 13 Pro"
+mode = "hiragana"
+expected = "レッドミーノートジュウサンプロ"
+
+[[case]]
+input = "Xiaomi 14 Ultra"
+mode = "hiragana"
+expected = "シャオミジュウヨンウルトラ"
+
+[[case]]
+input = "Xbox One X"
+mode = "hiragana"
+expected = "エックスボックスワンエックス"
+
+[[case]]
+input = "ROG Ally X"
+mode = "hiragana"
+expected = "ロッグアライエックス"
+
+[[case]]
+input = "ROG Ally"
+mode = "hiragana"
+expected = "ロッグアライ"
+
+[[case]]
+input = "Ubuntu 22.04 LTS"
+mode = "hiragana"
+expected = "ウブントゥニジュウニテンゼロヨンエルティーエス"
+
+[[case]]
+input = "Python 3.12"
+mode = "hiragana"
+expected = "パイソンスリーテンジュウニ"
+
+[[case]]
+input = "GPT-4.5"
+mode = "hiragana"
+expected = "ジーピーティーフォーテンファイブ"
+
+[[case]]
+input = "GPT-4.5 mini"
+mode = "hiragana"
+expected = "ジーピーティーフォーテンファイブミニ"
+
+[[case]]
+input = "Llama 3"
+mode = "hiragana"
+expected = "ラマスリー"
+
+[[case]]
+input = "Llama 3.1"
+mode = "hiragana"
+expected = "ラマスリーテンワン"
+
+[[case]]
+input = "Claude 3.5 Sonnet"
+mode = "hiragana"
+expected = "クロードスリーテンファイブソネット"
+
+[[case]]
+input = "Claude 4 Opus"
+mode = "hiragana"
+expected = "クロードフォーオーパス"
+
+[[case]]
+input = "Gemini 1.5 Pro"
+mode = "hiragana"
+expected = "ジェミニワンテンファイブプロ"
+
+[[case]]
+input = "Gemini 2.5 Flash"
+mode = "hiragana"
+expected = "ジェミニツーテンファイブフラッシュ"
+
+[[case]]
+input = "Node.js 20"
+mode = "hiragana"
+expected = "ノードニジュウ"
+
+[[case]]
+input = "CUDA 12.4"
+mode = "hiragana"
+expected = "クーダジュウニテンフォー"
+
+[[case]]
+input = "ROCm 6.0"
+mode = "hiragana"
+expected = "ロックエムシックステンゼロ"
+
+[[case]]
+input = "Pixel 9 Pro XL"
+mode = "hiragana"
+expected = "ピクセルナインプロエックスエル"
+
+[[case]]
+input = "iPhone 16 Pro Max"
+mode = "hiragana"
+expected = "アイフォンジュウロクプロマックス"
+
+[[case]]
+input = "Galaxy S25+"
+mode = "hiragana"
+expected = "ギャラクシーエスニジュウゴプラス"
+
+[[case]]
+input = "Intel Core i7-12700KF"
+mode = "hiragana"
+expected = "インテル コア アイセブンイチニナナゼロゼロケーエフ"
+
+[[case]]
+input = "NVIDIA GeForce RTX 4090"
+mode = "hiragana"
+expected = "エヌビディア ジーフォース アールティーエックスヨンゼロキュウゼロ"
+
+[[case]]
+input = "Hello World"
+mode = "hiragana"
+expected = "ハロー ワールド"
+
+[[case]]
+input = "thank you so much"
+mode = "hiragana"
+expected = "thank you so much"
+
+[[case]]
+input = "Samsung Galaxy S24 Ultra"
+mode = "hiragana"
+expected = "サムスン ギャラクシーエスニジュウヨンウルトラ"
+
+[[case]]
+input = "Hello i9-13900K"
+mode = "hiragana"
+expected = "ハロー アイナインイチサンキュウゼロゼロケー"
+
+[[case]]
+input = "Windows 11 Pro"
+mode = "hiragana"
+expected = "ウィンドウズイレブン プロ"

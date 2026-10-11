@@ -61,7 +61,7 @@ tools/
 loader が role 駆動 dispatch する tag。 各 TOML 冒頭に `[meta] role = "..."` を書く:
 
 `jukugo` / `unihan` / `kanji` / `works` / `loanwords` / `compat` /
-`counters` / `days` / `scales` / `numeric_phrases` / `units` / `symbols` /
+`counters` / `days` / `scales` / `numeric_phrases` / `units` / `symbols` / `models` /
 `postprocess`
 
 (旧 `single_overrides` / `context` / `latin` は alpha.11 で廃止済)

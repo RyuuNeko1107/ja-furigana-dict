@@ -502,6 +502,62 @@ def validate_units(path: Path, errors: Errors) -> None:
             )
 
 
+# ─── rules/text/models.toml ────────────────────────────────────────────────
+MODEL_STYLES = {'place', 'each', 'each_en', 'english', 'pair', 'pair_en', 'dotted', 'part', 'spell'}
+MODEL_PLACEHOLDER_RE = re.compile(r'\{([^{}]*)\}')
+
+
+def validate_models(path: Path, errors: Errors) -> None:
+    """[parts] 接尾辞 → 読み / [[model]] pattern + reading (+ first)"""
+    data = load_toml(path, errors)
+    if data is None:
+        return
+    parts = data.get('parts', {})
+    if not isinstance(parts, dict):
+        errors.add_for(path, "[parts] が table ではない")
+        parts = {}
+    for key, reading in parts.items():
+        if not isinstance(reading, str) or not is_kana(reading):
+            errors.add_for(path, f"[parts] '{key}' = '{reading}' (全角カタカナで書いてください)")
+    models = data.get('model')
+    if not isinstance(models, list) or not models:
+        errors.add_for(path, "[[model]] array が無い")
+        return
+    for i, m in enumerate(models):
+        label = f"model[{i}]"
+        if not isinstance(m, dict):
+            errors.add_for(path, f"{label} が table ではない")
+            continue
+        pattern = m.get('pattern')
+        reading = m.get('reading')
+        if not isinstance(pattern, str) or not isinstance(reading, str):
+            errors.add_for(path, f"{label}: pattern / reading は文字列")
+            continue
+        label = f"model '{pattern}'"
+        try:
+            groups = re.compile(pattern, re.IGNORECASE).groups
+        except re.error as e:
+            errors.add_for(path, f"{label}: 正規表現が不正 ({e})")
+            continue
+        first = m.get('first')
+        if first is None:
+            if not pattern[:1].isascii() or not pattern[:1].isalpha():
+                errors.add_for(path, f"{label}: 先頭が英字ではないので first = \"...\" が必要")
+        elif not isinstance(first, str) or not any(c.isascii() and c.isalpha() for c in first):
+            errors.add_for(path, f"{label}: first に英字が無い")
+        literal = MODEL_PLACEHOLDER_RE.sub('', reading)
+        if '{' in literal or '}' in literal:
+            errors.add_for(path, f"{label}: reading の {{ }} が対になっていない")
+        if literal and not is_kana(literal):
+            errors.add_for(path, f"{label}: reading の固定部分 '{literal}' が全角カタカナではない")
+        for ph in MODEL_PLACEHOLDER_RE.findall(reading):
+            num, _, style = ph.partition(':')
+            if not num.isdigit() or not (1 <= int(num) <= groups):
+                errors.add_for(path, f"{label}: {{{ph}}} は括弧の数 ({groups}) の範囲外")
+            if style and style not in MODEL_STYLES:
+                errors.add_for(path, f"{label}: 未知の style '{style}'")
+
+
 # ─── rules/scales.toml ─────────────────────────────────────────────────────
 def validate_scales(path: Path, errors: Errors) -> None:
     """[[entry]] kanji + kana"""
@@ -986,6 +1042,7 @@ def main() -> int:
         (discover(core, 'unihan'),                 load_unihan),
         (discover(core, 'kanji', recursive=True),  load_kanji),
         ([rules / 'compat.toml'],            lambda p: validate_compat(p, errors)),
+        ([rules / 'text' / 'models.toml'],   lambda p: validate_models(p, errors)),
         # ★ counters の実ファイルは rules/numbers/counters/ 配下。旧 `discover(rules,
         #   'counters')` (= rules/counters/ を探す) は dict ディレクトリ再編成で dead に
         #   なっており validate_counters が一度も走っていなかった (= kanji_numeral lint 等が
