@@ -1050,3 +1050,11 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 "Ryzen" = "english"
 "RTX" = "each"
 "GTX" = "each"
+# 読みを上書きする形 (その語 + 数字の時だけ使う。 単独の No は ノー のまま)
+"No" = { style = "english", reading = "ナンバー" }
+"Lv" = { style = "place", reading = "レベル" }
+"vol" = { style = "place", reading = "ボリューム" }
+"Day" = { style = "english", reading = "デイ" }
+"Part" = { style = "english", reading = "パート" }
+"Season" = { style = "english", reading = "シーズン" }
+"Ver" = "english"

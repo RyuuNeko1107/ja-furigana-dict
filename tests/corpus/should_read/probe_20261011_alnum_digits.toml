@@ -108,3 +108,33 @@ input = "5chで見た"
 mode = "hiragana"
 expected = "ゴチャンネルでみた"
 note = "5ちゃんねる"
+
+[[case]]
+input = "No.1を目指す"
+mode = "hiragana"
+expected = "ナンバーワンをめざす"
+note = "[digits] の読み上書き (単独の No は ノー のまま)"
+
+[[case]]
+input = "Lv.99になった"
+mode = "hiragana"
+expected = "レベルキュウジュウキュウになった"
+note = "ドット区切り"
+
+[[case]]
+input = "no"
+mode = "hiragana"
+expected = "ノー"
+note = "単独の no は従来どおり"
+
+[[case]]
+input = "Ver2.0"
+mode = "hiragana"
+expected = "バージョンにてんぜろ"
+note = "Ver は [digits] 語だが 小数が続く時はバージョン表記"
+
+[[case]]
+input = "Season2が始まる"
+mode = "hiragana"
+expected = "シーズンツーがはじまる"
+note = "english"

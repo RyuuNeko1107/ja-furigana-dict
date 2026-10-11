@@ -402,12 +402,20 @@ def validate_loanwords(path: Path, errors: Errors) -> dict:
             folded |= {k.casefold() for k in (tomllib.loads(other.read_text(encoding='utf-8')).get('entries') or {})}
         except Exception:
             pass
-    for word, style in digits.items():
+    for word, spec in digits.items():
+        # "english" か { style = "place", reading = "ナンバー" } (読みの上書き)
+        override = None
+        if isinstance(spec, dict):
+            style, override = spec.get('style'), spec.get('reading')
+            if override is not None and not (isinstance(override, str) and is_kana(override)):
+                errors.add_for(path, f"[digits] '{word}': reading は全角カタカナ (またはひらがな) の文字列")
+        else:
+            style = spec
         if style not in DIGIT_STYLES:
             errors.add_for(path, f"[digits] '{word}': 読み方 '{style}' は未知 ({' / '.join(sorted(DIGIT_STYLES))})")
         if not re.fullmatch(r'[A-Za-zＡ-Ｚａ-ｚ]+', word):
             errors.add_for(path, f"[digits] '{word}': 英字だけの語のみ可")
-        elif word.casefold() not in folded:
+        elif override is None and word.casefold() not in folded:
             errors.add_for(path, f"[digits] '{word}': [entries] に読みが無い")
     return entries
 

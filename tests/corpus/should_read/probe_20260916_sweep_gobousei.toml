@@ -71,7 +71,7 @@ expected = "あ、すごろくじいさんカードくれるパターンじゃ�
 [[case]]
 input = "Lv3×5匹目標やね"
 mode = "hiragana"
-expected = "Lv3かけるごひきもくひょうやね"
+expected = "レベルサンかけるごひきもくひょうやね"
 
 [[case]]
 input = "今津波来てるよ"
