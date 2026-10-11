@@ -1,0 +1,37 @@
+# 2026-10-12 単位/単位 (km/h, m/s) と、 単独 w + 助詞 (キーwを押す) の回帰ケース。
+
+[[case]]
+input = "時速60km/hで走る"
+mode = "hiragana"
+expected = "じそくロクジュッキロメートルマイジではしる"
+note = "数字つき"
+
+[[case]]
+input = "風速5m/s"
+mode = "hiragana"
+expected = "ふうそくゴメートルマイビョウ"
+note = "m/s"
+
+[[case]]
+input = "時速km/h"
+mode = "hiragana"
+expected = "じそくキロメートルマイジ"
+note = "数字なし"
+
+[[case]]
+input = "https://example.com/60km/h"
+mode = "hiragana"
+expected = "https://example.com/60km/h"
+note = "URL の中は読まない"
+
+[[case]]
+input = "キーwを押す"
+mode = "hiragana"
+expected = "キーダブリューをおす"
+note = "単独 w + 助詞 = 文字"
+
+[[case]]
+input = "wは小文字"
+mode = "hiragana"
+expected = "ダブリューはこもじ"
+note = "単独 w + 助詞 = 文字"

@@ -85,3 +85,8 @@ description = "SI 単位 + 通貨 + % (km / kg / mL / 円 / % 等、 数値 + �
 "Gbps" = { kana = "ギガビーピーエス", ci = false }
 "kcal" = { kana = "キロカロリー" }
 "mAh"  = { kana = "ミリアンペアアワー", ci = false }
+# 単位/単位 (毎時・毎秒)。 数字つき (60km/h) も単独の km/h も読む。 URL / パスの中は lib が読まない
+"km/h" = { kana = "キロメートルマイジ" }
+"m/s"  = { kana = "メートルマイビョウ", ci = false }
+"km/s" = { kana = "キロメートルマイビョウ" }
+"mph"  = { kana = "マイルマイジ" }
