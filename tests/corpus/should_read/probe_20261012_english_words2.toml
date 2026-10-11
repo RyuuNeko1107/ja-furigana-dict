@@ -1,0 +1,61 @@
+# 2026-10-12 英単語の外来語追加 (ゲーム / 配信 / PC / 日用) の回帰ケース。
+
+[[case]]
+input = "browserを開く"
+mode = "hiragana"
+expected = "ブラウザをひらく"
+
+[[case]]
+input = "passwordを忘れた"
+mode = "hiragana"
+expected = "パスワードをわすれた"
+
+[[case]]
+input = "backupを取る"
+mode = "hiragana"
+expected = "バックアップをとる"
+
+[[case]]
+input = "gaming laptopを買う"
+mode = "hiragana"
+expected = "ゲーミング ラップトップをかう"
+
+[[case]]
+input = "dungeonのbossが強い"
+mode = "hiragana"
+expected = "ダンジョンのボスがつよい"
+
+[[case]]
+input = "driverをupdateする"
+mode = "hiragana"
+expected = "ドライバーをアップデートする"
+
+[[case]]
+input = "streamerのcomment"
+mode = "hiragana"
+expected = "ストリーマーのコメント"
+
+[[case]]
+input = "Chromeがcrashした"
+mode = "hiragana"
+expected = "クロームがクラッシュした"
+
+[[case]]
+input = "sampleをdownload"
+mode = "hiragana"
+expected = "サンプルをダウンロード"
+
+[[case]]
+input = "debugモード"
+mode = "hiragana"
+expected = "デバッグモード"
+
+[[case]]
+input = "scheduleを確認"
+mode = "hiragana"
+expected = "スケジュールをかくにん"
+
+[[case]]
+input = "webcamとheadsetを買った"
+mode = "hiragana"
+expected = "ウェブカメラとヘッドセットをかった"
