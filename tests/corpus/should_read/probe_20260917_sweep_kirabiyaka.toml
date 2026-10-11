@@ -11,7 +11,7 @@ expected = "すごいきらびやかなとけいだ"
 [[case]]
 input = "えらい煌びやかなw"
 mode = "hiragana"
-expected = "えらいきらびやかなw"
+expected = "えらいきらびやかなワラ"
 
 [[case]]
 input = "なんか煌びやかな感じがするな"
@@ -86,7 +86,7 @@ expected = "きらめくほしや"
 [[case]]
 input = "煌々とw"
 mode = "hiragana"
-expected = "こうこうとw"
+expected = "こうこうとワラ"
 
 [[case]]
 input = "俯瞰視点"
@@ -111,7 +111,7 @@ expected = "あかれんがテラスかな?"
 [[case]]
 input = "腫れ物扱いの先輩w"
 mode = "hiragana"
-expected = "はれものあつかいのせんぱいw"
+expected = "はれものあつかいのせんぱいワラ"
 
 [[case]]
 input = "腫瘍摘出手術"
@@ -121,7 +121,7 @@ expected = "しゅようてきしゅつしゅじゅつ"
 [[case]]
 input = "浮腫みかなw"
 mode = "hiragana"
-expected = "むくみかなw"
+expected = "むくみかなワラ"
 
 [[case]]
 input = "藁人形"
@@ -141,7 +141,7 @@ expected = "しょうき!?"
 [[case]]
 input = "孵化w"
 mode = "hiragana"
-expected = "ふかw"
+expected = "ふかワラ"
 
 [[case]]
 input = "孵ったー"
@@ -186,7 +186,7 @@ expected = "いまいましい"
 [[case]]
 input = "禁忌w"
 mode = "hiragana"
-expected = "きんきw"
+expected = "きんきワラ"
 
 [[case]]
 input = "忌み子"
@@ -196,7 +196,7 @@ expected = "いみこ"
 [[case]]
 input = "忌憚なき意見だねw"
 mode = "hiragana"
-expected = "きたんなきいけんだねw"
+expected = "きたんなきいけんだねワラ"
 
 [[case]]
 input = "三回忌"
@@ -306,7 +306,7 @@ expected = "ぼさつ"
 [[case]]
 input = "痙攣連打w"
 mode = "hiragana"
-expected = "けいれんれんだw"
+expected = "けいれんれんだワラ"
 
 [[case]]
 input = "紅蓮弐式"

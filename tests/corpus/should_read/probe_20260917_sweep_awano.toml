@@ -16,7 +16,7 @@ expected = "しゅってんをカットするのか?ネタもとはしゅうか�
 [[case]]
 input = "濡れ手で粟w"
 mode = "hiragana"
-expected = "ぬれてであわw"
+expected = "ぬれてであわワラ"
 
 [[case]]
 input = "濡れ手で粟らしいよ"
@@ -56,7 +56,7 @@ expected = "げんだいのぐうわじゃねぇーか!"
 [[case]]
 input = "獄門疆理論で行くと速攻終わるぞw"
 mode = "hiragana"
-expected = "ごくもんきょうりろんでいくとそっこうおわるぞw"
+expected = "ごくもんきょうりろんでいくとそっこうおわるぞワラ"
 
 [[case]]
 input = "獄門疆を破ったキツネ"

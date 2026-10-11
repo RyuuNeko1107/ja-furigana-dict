@@ -46,7 +46,7 @@ expected = "まあだれのちでもちがまじるのはまずい"
 [[case]]
 input = "グラフ短ッ!w"
 mode = "hiragana"
-expected = "グラフみじかっ!w"
+expected = "グラフみじかっ!ワラ"
 
 [[case]]
 input = "進入角。。"
@@ -106,5 +106,5 @@ expected = "かてんきょうこつすき!"
 [[case]]
 input = "射角調整してるの面白いw"
 mode = "hiragana"
-expected = "しゃかくちょうせいしてるのおもしろいw"
+expected = "しゃかくちょうせいしてるのおもしろいワラ"
 

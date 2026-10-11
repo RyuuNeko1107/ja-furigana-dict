@@ -13,7 +13,7 @@ expected = "めっちゃたいてるやんwww"
 [[case]]
 input = "大分炊いてる動きはしてたw"
 mode = "hiragana"
-expected = "だいぶたいてるうごきはしてたw"
+expected = "だいぶたいてるうごきはしてたワラ"
 
 [[case]]
 input = "叙々苑貸し切りじゃああああ"

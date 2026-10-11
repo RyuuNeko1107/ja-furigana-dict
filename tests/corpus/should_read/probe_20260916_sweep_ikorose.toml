@@ -11,7 +11,7 @@ expected = "ぶっころす!"
 [[case]]
 input = "三幻神かw"
 mode = "hiragana"
-expected = "さんげんしんかw"
+expected = "さんげんしんかワラ"
 
 [[case]]
 input = "17は仮免のみ"

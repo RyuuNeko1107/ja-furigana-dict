@@ -266,7 +266,7 @@ expected = "たいご"
 [[case]]
 input = "山城新伍w"
 mode = "hiragana"
-expected = "やましろしんごw"
+expected = "やましろしんごワラ"
 
 [[case]]
 input = "前田悠伍!!!!"
@@ -321,7 +321,7 @@ expected = "きくなきくないけいけ"  # 2026-09-23: 行け行け = いけ
 [[case]]
 input = "エジンバラに訊け w"
 mode = "hiragana"
-expected = "エジンバラにきけ w"
+expected = "エジンバラにきけ ワラ"
 
 [[case]]
 input = "宿儺、"

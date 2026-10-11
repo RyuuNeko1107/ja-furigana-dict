@@ -41,7 +41,7 @@ expected = "さいきんもものむきかたのどうがみたなあ"
 [[case]]
 input = "雪靴もないねw"
 mode = "hiragana"
-expected = "ゆきぐつもないねw"
+expected = "ゆきぐつもないねワラ"
 
 [[case]]
 input = "冬靴って存在してるからね"

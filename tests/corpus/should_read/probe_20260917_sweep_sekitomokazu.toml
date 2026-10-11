@@ -186,7 +186,7 @@ expected = "ぞうおがすごい"
 [[case]]
 input = "うなぎ奢れw"
 mode = "hiragana"
-expected = "うなぎおごれw"
+expected = "うなぎおごれワラ"
 
 [[case]]
 input = "気象庁が出してるとか何とか"
@@ -196,7 +196,7 @@ expected = "きしょうちょうがだしてるとかなんとか"
 [[case]]
 input = "消費者庁案件w"
 mode = "hiragana"
-expected = "しょうひしゃちょうあんけんw"
+expected = "しょうひしゃちょうあんけんワラ"
 
 [[case]]
 input = "文化庁推奨だぞ"
@@ -226,7 +226,7 @@ expected = "ボツげんこうやね"
 [[case]]
 input = "ヴォイニッチ手稿は怖いなw"
 mode = "hiragana"
-expected = "ヴォイニッチしゅこうはこわいなw"
+expected = "ヴォイニッチしゅこうはこわいなワラ"
 
 [[case]]
 input = "溺死したww"

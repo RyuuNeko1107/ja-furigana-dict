@@ -81,7 +81,7 @@ expected = "みなまたみんなんですけどこわい"
 [[case]]
 input = "勝俣w"
 mode = "hiragana"
-expected = "かつまたw"
+expected = "かつまたワラ"
 
 [[case]]
 input = "木俣"
@@ -221,7 +221,7 @@ expected = "ぬるまゆかけてめのあらいザルでこす"
 [[case]]
 input = "JKに扮したやつw"
 mode = "hiragana"
-expected = "JKにふんしたやつw"
+expected = "JKにふんしたやつワラ"
 
 [[case]]
 input = "マモーはウッチャンもネタで扮装したりしてたなあ"
@@ -246,5 +246,5 @@ expected = "せいじんじょせい(うたひめ)"
 [[case]]
 input = "獸戦士w"
 mode = "hiragana"
-expected = "けものせんしw"
+expected = "けものせんしワラ"
 

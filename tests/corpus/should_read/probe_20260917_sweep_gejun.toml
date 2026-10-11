@@ -136,7 +136,7 @@ expected = "しゅんだよね"
 [[case]]
 input = "釘バットの釘思ったよりデカいなw"
 mode = "hiragana"
-expected = "くぎバットのくぎおもったよりデカいなw"
+expected = "くぎバットのくぎおもったよりデカいなワラ"
 
 [[case]]
 input = "釘宮理恵さんかな?"
@@ -216,7 +216,7 @@ expected = "ボートてんぷくはスルーでおおむかしのはなし"
 [[case]]
 input = "覆いかぶさってるのではw?"
 mode = "hiragana"
-expected = "おおいかぶさってるのではw?"
+expected = "おおいかぶさってるのではワラ?"
 
 [[case]]
 input = "税務署です"

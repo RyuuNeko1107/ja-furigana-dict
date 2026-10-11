@@ -3,7 +3,7 @@
 [[case]]
 input = "精密とはw"
 mode = "hiragana"
-expected = "せいみつとはw"
+expected = "せいみつとはワラ"
 
 [[case]]
 input = "妖怪砂食べ"
@@ -43,7 +43,7 @@ expected = "だいぶぶんすなだった"
 [[case]]
 input = "反射たい一般人w"
 mode = "hiragana"
-expected = "はんしゃたいいっぱんじんw"
+expected = "はんしゃたいいっぱんじんワラ"
 
 [[case]]
 input = "誤射されないようにみえやすい服なんじゃないかな?"
@@ -63,7 +63,7 @@ expected = "ようにせきをとられるいん、、、"
 [[case]]
 input = "登坂キツそうw"
 mode = "hiragana"
-expected = "とうはんキツそうw"
+expected = "とうはんキツそうワラ"
 
 [[case]]
 input = "倉木麻衣とか坂井泉水とかの声質やな"
@@ -148,7 +148,7 @@ expected = "とどめさしにきたぞ!"
 [[case]]
 input = "無作為に槍刺しちゃうw"
 mode = "hiragana"
-expected = "むさくいにやりさしちゃうw"
+expected = "むさくいにやりさしちゃうワラ"
 
 [[case]]
 input = "ソロのペコらとペアのフブキが荒稼ぎ中"

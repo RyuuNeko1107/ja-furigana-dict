@@ -1,0 +1,13 @@
+# 2026-10-11 user 報告: 「ゆっくりw」 が BOT で ダブリュー と読まれた。 単独の w / ｗ = わら (loanwords)。
+
+[[case]]
+input = "ゆっくりw"
+mode = "hiragana"
+expected = "ゆっくりワラ"
+note = "文末の w (旧 ゆっくりw → TTS ダブリュー)"
+
+[[case]]
+input = "ええっとｗ"
+mode = "hiragana"
+expected = "ええっとワラ"
+note = "全角 ｗ"

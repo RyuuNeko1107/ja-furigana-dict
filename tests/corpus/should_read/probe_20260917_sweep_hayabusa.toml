@@ -31,7 +31,7 @@ expected = "やまもとまさすきだけどねぇ"
 [[case]]
 input = "山本昌がほしいw"
 mode = "hiragana"
-expected = "やまもとまさがほしいw"
+expected = "やまもとまさがほしいワラ"
 
 [[case]]
 input = "林昌勇晒されすぎだろ"

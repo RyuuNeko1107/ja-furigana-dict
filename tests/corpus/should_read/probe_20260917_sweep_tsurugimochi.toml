@@ -96,5 +96,5 @@ expected = "くたい"
 [[case]]
 input = "体躯教師への偏見w"
 mode = "hiragana"
-expected = "たいくきょうしへのへんけんw"
+expected = "たいくきょうしへのへんけんワラ"
 

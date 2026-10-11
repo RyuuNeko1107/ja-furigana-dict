@@ -41,7 +41,7 @@ expected = "つばきはいいはなだ"
 [[case]]
 input = "ポルカは椿の香りw"
 mode = "hiragana"
-expected = "ポルカはつばきのかおりw"
+expected = "ポルカはつばきのかおりワラ"
 
 [[case]]
 input = "咒物"
@@ -86,7 +86,7 @@ expected = "こいというかふなですな"
 [[case]]
 input = "鉈一人w"
 mode = "hiragana"
-expected = "なたひとりw"
+expected = "なたひとりワラ"
 
 [[case]]
 input = "1日目に大鉈振るってなかったらもっとヤバかったとは思うよ"
@@ -96,7 +96,7 @@ expected = "いちにちめにおおなたふるってなかったらもっと�
 [[case]]
 input = "岩切り鉈ならぎりアリかもw"
 mode = "hiragana"
-expected = "いわぎりなたならぎりアリかもw"
+expected = "いわぎりなたならぎりアリかもワラ"
 
 [[case]]
 input = "人格排泄?"
@@ -141,7 +141,7 @@ expected = "ばいせんしないとしないんかな"
 [[case]]
 input = "ガストーチで焙ろうぜw"
 mode = "hiragana"
-expected = "ガストーチであぶろうぜw"
+expected = "ガストーチであぶろうぜワラ"
 
 [[case]]
 input = "セブンイレブンの水素焙煎コーヒーはんまい"

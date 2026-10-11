@@ -66,5 +66,5 @@ expected = "ぼくっこになったんだな"
 [[case]]
 input = "導き人だったw"
 mode = "hiragana"
-expected = "みちびきびとだったw"
+expected = "みちびきびとだったワラ"
 

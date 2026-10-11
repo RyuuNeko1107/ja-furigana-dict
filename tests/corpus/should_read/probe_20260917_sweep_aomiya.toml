@@ -6,7 +6,7 @@ expected = "きのう、あおみやよづりちゃんとメガサーキット�
 [[case]]
 input = "ここ蒼天堀だっけ?w"
 mode = "hiragana"
-expected = "ここそうてんぼりだっけ?w"
+expected = "ここそうてんぼりだっけ?ワラ"
 
 [[case]]
 input = "蒼井翔太"
@@ -21,7 +21,7 @@ expected = "どうしてそらはあおいのか"
 [[case]]
 input = "顔面蒼白w"
 mode = "hiragana"
-expected = "がんめんそうはくw"
+expected = "がんめんそうはくワラ"
 
 [[case]]
 input = "せめて蒼天"
@@ -76,12 +76,12 @@ expected = "しばらくかえれん"
 [[case]]
 input = "捏造か?名前だせw"
 mode = "hiragana"
-expected = "ねつぞうか?なまえだせw"
+expected = "ねつぞうか?なまえだせワラ"
 
 [[case]]
 input = "駄々捏ねぺこちゃんw"
 mode = "hiragana"
-expected = "だだこねぺこちゃんw"
+expected = "だだこねぺこちゃんワラ"
 
 [[case]]
 input = "飢餓でおかしくなったか"
@@ -91,7 +91,7 @@ expected = "きがでおかしくなったか"
 [[case]]
 input = "血に飢えてるのは兎だけだったw"
 mode = "hiragana"
-expected = "ちにうえてるのはうさぎだけだったw"
+expected = "ちにうえてるのはうさぎだけだったワラ"
 
 [[case]]
 input = "聖飢魔II"

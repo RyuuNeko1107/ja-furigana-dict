@@ -1,7 +1,7 @@
 [[case]]
 input = "蹴落とし合いw"
 mode = "hiragana"
-expected = "けおとしあいw"
+expected = "けおとしあいワラ"
 
 [[case]]
 input = "蹴落とすための話し合い"
@@ -71,7 +71,7 @@ expected = "たいしょうしゅあげればかちのいくさ"
 [[case]]
 input = "停まってw"
 mode = "hiragana"
-expected = "とまってw"
+expected = "とまってワラ"
 
 [[case]]
 input = "電車停まってくれ"
@@ -196,7 +196,7 @@ expected = "おじいちゃん"
 [[case]]
 input = "狩尽くされるw"
 mode = "hiragana"
-expected = "かりつくされるw"
+expected = "かりつくされるワラ"
 
 [[case]]
 input = "取って損ないかと"

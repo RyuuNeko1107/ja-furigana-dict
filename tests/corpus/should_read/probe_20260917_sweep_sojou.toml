@@ -261,12 +261,12 @@ expected = "かもなべきちゃああ"
 [[case]]
 input = "熾烈なレギュラー争いw"
 mode = "hiragana"
-expected = "しれつなレギュラーあらそいw"
+expected = "しれつなレギュラーあらそいワラ"
 
 [[case]]
 input = "火熾すの上手いなw"
 mode = "hiragana"
-expected = "ひおこすのうまいなw"
+expected = "ひおこすのうまいなワラ"
 
 [[case]]
 input = "ポルカ驚愕"
@@ -276,7 +276,7 @@ expected = "ポルカきょうがく"
 [[case]]
 input = "愕然とするねねちw"
 mode = "hiragana"
-expected = "がくぜんとするねねちw"
+expected = "がくぜんとするねねちワラ"
 
 [[case]]
 input = "受水槽落ちるやつね"
@@ -311,7 +311,7 @@ expected = "ちょすいそうのしたにいるの?"
 [[case]]
 input = "ダチョウ倶楽部w"
 mode = "hiragana"
-expected = "ダチョウくらぶw"
+expected = "ダチョウくらぶワラ"
 
 [[case]]
 input = "倶知安"
@@ -346,7 +346,7 @@ expected = "かんじゃさん?"
 [[case]]
 input = "郵便局好きねw"
 mode = "hiragana"
-expected = "ゆうびんきょくすきねw"
+expected = "ゆうびんきょくすきねワラ"
 
 [[case]]
 input = "郵送で送るか"

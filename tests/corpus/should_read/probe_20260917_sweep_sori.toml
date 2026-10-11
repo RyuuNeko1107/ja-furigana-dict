@@ -11,17 +11,17 @@ expected = "ひげそりのこしてますよ"
 [[case]]
 input = "いま全剃りだろw"
 mode = "hiragana"
-expected = "いまぜんそりだろw"
+expected = "いまぜんそりだろワラ"
 
 [[case]]
 input = "まゆげ前剃りw"
 mode = "hiragana"
-expected = "まゆげまえそりw"
+expected = "まゆげまえそりワラ"
 
 [[case]]
 input = "横剃りw"
 mode = "hiragana"
-expected = "よこそりw"
+expected = "よこそりワラ"
 
 [[case]]
 input = "顔剃りは丁寧に"
@@ -61,7 +61,7 @@ expected = "きんりあげたらあたまそれよ"
 [[case]]
 input = "まずモヒカン剃れw"
 mode = "hiragana"
-expected = "まずモヒかんそれw"
+expected = "まずモヒかんそれワラ"
 
 [[case]]
 input = "すね毛剃っといて良かったー泣"
@@ -116,7 +116,7 @@ expected = "あまごいwww"
 [[case]]
 input = "突然の物乞いw"
 mode = "hiragana"
-expected = "とつぜんのものごいw"
+expected = "とつぜんのものごいワラ"
 
 [[case]]
 input = "乞うご期待!!"
@@ -131,7 +131,7 @@ expected = "こじきやろうが"
 [[case]]
 input = "インド発祥なんだw"
 mode = "hiragana"
-expected = "インドはっしょうなんだw"
+expected = "インドはっしょうなんだワラ"
 
 [[case]]
 input = "吉祥寺とかあるじゃないですかあ"
@@ -171,7 +171,7 @@ expected = "はちあわせみたいなじょうきょう"
 [[case]]
 input = "ミオちゃん鉢巻似合うなあw"
 mode = "hiragana"
-expected = "ミオちゃんはちまきにあうなあw"
+expected = "ミオちゃんはちまきにあうなあワラ"
 
 [[case]]
 input = "托鉢?"
@@ -181,7 +181,7 @@ expected = "たくはつ?"
 [[case]]
 input = "小鉢がえぐいw"
 mode = "hiragana"
-expected = "こばちがえぐいw"
+expected = "こばちがえぐいワラ"
 
 [[case]]
 input = "豪邸"

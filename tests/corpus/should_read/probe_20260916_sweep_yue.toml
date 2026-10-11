@@ -8,7 +8,7 @@ expected = "おうはけいけんがあさいゆえ、"
 [[case]]
 input = "上手すぎた故かw"
 mode = "hiragana"
-expected = "うますぎたゆえかw"
+expected = "うますぎたゆえかワラ"
 
 [[case]]
 input = "それ故"

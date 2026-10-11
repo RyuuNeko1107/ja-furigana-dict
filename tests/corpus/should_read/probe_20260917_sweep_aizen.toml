@@ -1,7 +1,7 @@
 [[case]]
 input = "藍染はもう4んだはずでは・・・?w"
 mode = "hiragana"
-expected = "あいぜんはもうよんんだはずでは?w"
+expected = "あいぜんはもうよんんだはずでは?ワラ"
 
 [[case]]
 input = "藍染が来たぞ"
@@ -111,7 +111,7 @@ expected = "ゆできょうりゅう"
 [[case]]
 input = "釜茹で!?w"
 mode = "hiragana"
-expected = "かまゆで!?w"
+expected = "かまゆで!?ワラ"
 
 [[case]]
 input = "岬つよい"

@@ -21,7 +21,7 @@ expected = "じっさいめをつぶったほうがうまくいく"
 [[case]]
 input = "絶対目瞑るんかw"
 mode = "hiragana"
-expected = "ぜったいめつぶるんかw"
+expected = "ぜったいめつぶるんかワラ"
 
 [[case]]
 input = "スコープの方目を瞑るみこいさん"
@@ -51,12 +51,12 @@ expected = "はげか!?♬"
 [[case]]
 input = "禿そうw"
 mode = "hiragana"
-expected = "はげそうw"
+expected = "はげそうワラ"
 
 [[case]]
 input = "禿てる人の頭は観るなよw"
 mode = "hiragana"
-expected = "はげてるひとのあたまはみるなよw"
+expected = "はげてるひとのあたまはみるなよワラ"
 
 [[case]]
 input = "禿てない?"
@@ -96,7 +96,7 @@ expected = "むくろさんなつかしいな"
 [[case]]
 input = "だいぶ陽気になったな骸さんw"
 mode = "hiragana"
-expected = "だいぶようきになったなむくろさんw"
+expected = "だいぶようきになったなむくろさんワラ"
 
 [[case]]
 input = "骸って女じゃなかった?"
@@ -106,7 +106,7 @@ expected = "むくろっておんなじゃなかった?"
 [[case]]
 input = "骸やんw"
 mode = "hiragana"
-expected = "むくろやんw"
+expected = "むくろやんワラ"
 
 [[case]]
 input = "骸だよ"
@@ -291,12 +291,12 @@ expected = "せんしゅうあんのやまおやじもわすれずに"
 [[case]]
 input = "かき氷に団子...おかげ庵?w"
 mode = "hiragana"
-expected = "かきごおりにだんご...おかげあん?w"
+expected = "かきごおりにだんご...おかげあん?ワラ"
 
 [[case]]
 input = "亡骸ってw"
 mode = "hiragana"
-expected = "なきがらってw"
+expected = "なきがらってワラ"
 
 [[case]]
 input = "魔物の死骸ってことでしょ"
@@ -316,5 +316,5 @@ expected = "バシロのしがいってリポップしないんじゃなかっ�
 [[case]]
 input = "ずっと前の残骸だよw"
 mode = "hiragana"
-expected = "ずっとまえのざんがいだよw"
+expected = "ずっとまえのざんがいだよワラ"
 

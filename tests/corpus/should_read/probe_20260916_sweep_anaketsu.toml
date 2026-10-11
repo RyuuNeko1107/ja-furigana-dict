@@ -31,17 +31,17 @@ expected = "うけつさんにみえる"
 [[case]]
 input = "無職共w"
 mode = "hiragana"
-expected = "むしょくどもw"
+expected = "むしょくどもワラ"
 
 [[case]]
 input = "クッション野郎共w"
 mode = "hiragana"
-expected = "クッションやろうどもw"
+expected = "クッションやろうどもワラ"
 
 [[case]]
 input = "汗塩w"
 mode = "hiragana"
-expected = "あせじおw"
+expected = "あせじおワラ"
 
 [[case]]
 input = "手汗塩かな"
@@ -56,7 +56,7 @@ expected = "わきじお"
 [[case]]
 input = "自家製塩w"
 mode = "hiragana"
-expected = "じかせいしおw"
+expected = "じかせいしおワラ"
 
 [[case]]
 input = "盛塩しておこう"
@@ -81,7 +81,7 @@ expected = "がめんみどりやん"
 [[case]]
 input = "これ全部緑になる?w"
 mode = "hiragana"
-expected = "これぜんぶみどりになる?w"
+expected = "これぜんぶみどりになる?ワラ"
 
 [[case]]
 input = "皆緑にすれば実質メン限"
@@ -91,7 +91,7 @@ expected = "みなみどりにすればじっしつメンげん"
 [[case]]
 input = "名前緑だらけにw"
 mode = "hiragana"
-expected = "なまえみどりだらけにw"
+expected = "なまえみどりだらけにワラ"
 
 [[case]]
 input = "圧倒的緑が生い茂ってる"
@@ -146,12 +146,12 @@ expected = "ゆいいつさくらさにいなかったのがちはだね"
 [[case]]
 input = "芝桜綺麗ねw"
 mode = "hiragana"
-expected = "しばざくらきれいねw"
+expected = "しばざくらきれいねワラ"
 
 [[case]]
 input = "激渋やなw"
 mode = "hiragana"
-expected = "げきしぶやなw"
+expected = "げきしぶやなワラ"
 
 [[case]]
 input = "ファイター倍率渋すぎて弱いかも"
@@ -161,7 +161,7 @@ expected = "ファイターばいりつしぶすぎてよわいかも"
 [[case]]
 input = "ころねスキーって声渋めなんかw"
 mode = "hiragana"
-expected = "ころねスキーってこえしぶめなんかw"
+expected = "ころねスキーってこえしぶめなんかワラ"
 
 [[case]]
 input = "シュールな共演と締め方は"
@@ -176,12 +176,12 @@ expected = "あつかいかたきをつけないとすぐだめになるよ?"
 [[case]]
 input = "糖質扱いやんけw"
 mode = "hiragana"
-expected = "とうしつあつかいやんけw"
+expected = "とうしつあつかいやんけワラ"
 
 [[case]]
 input = "守衛さん雇うしかw"
 mode = "hiragana"
-expected = "しゅえいさんやとうしかw"
+expected = "しゅえいさんやとうしかワラ"
 
 [[case]]
 input = "土座衛門にならないようにね"
@@ -281,7 +281,7 @@ expected = "しぶやだ"
 [[case]]
 input = "イベントが渋滞してるw"
 mode = "hiragana"
-expected = "イベントがじゅうたいしてるw"
+expected = "イベントがじゅうたいしてるワラ"
 
 [[case]]
 input = "完璧なコーナリングだ!"
@@ -326,7 +326,7 @@ expected = "やおちょうたいこくニッポン"
 [[case]]
 input = "秘書扱いやめてあげてw"
 mode = "hiragana"
-expected = "ひしょあつかいやめてあげてw"
+expected = "ひしょあつかいやめてあげてワラ"
 
 [[case]]
 input = "便秘?"

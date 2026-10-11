@@ -131,7 +131,7 @@ expected = "ほおをあからめるなwwww"
 [[case]]
 input = "饒舌なるほどw"
 mode = "hiragana"
-expected = "じょうぜつなるほどw"
+expected = "じょうぜつなるほどワラ"
 
 [[case]]
 input = "漆黒のヴィランズ"
@@ -211,7 +211,7 @@ expected = "りゅうきゅうしんぽう"
 [[case]]
 input = "凱旋門当たってたっけ?w"
 mode = "hiragana"
-expected = "がいせんもんあたってたっけ?w"
+expected = "がいせんもんあたってたっけ?ワラ"
 
 [[case]]
 input = "日を跨いでしまった、"
@@ -241,7 +241,7 @@ expected = "けんびきょうみたいなの"
 [[case]]
 input = "顕現しとるw"
 mode = "hiragana"
-expected = "けんげんしとるw"
+expected = "けんげんしとるワラ"
 
 [[case]]
 input = "顕著だから"
@@ -261,7 +261,7 @@ expected = "やすだけん"
 [[case]]
 input = "急遽入れるかもしれないw"
 mode = "hiragana"
-expected = "きゅうきょいれるかもしれないw"
+expected = "きゅうきょいれるかもしれないワラ"
 
 [[case]]
 input = "貞子VS伽耶子"
@@ -341,7 +341,7 @@ expected = "たんたかたん"
 [[case]]
 input = "棍棒w"
 mode = "hiragana"
-expected = "こんぼうw"
+expected = "こんぼうワラ"
 
 [[case]]
 input = "片手棍か細剣"

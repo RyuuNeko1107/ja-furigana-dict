@@ -46,7 +46,7 @@ expected = "ひめじまさん"
 [[case]]
 input = "避免 闇墮w"
 mode = "hiragana"
-expected = "ひめん やみおちw"
+expected = "ひめん やみおちワラ"
 
 [[case]]
 input = "闇墮??"

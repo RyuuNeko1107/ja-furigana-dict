@@ -66,7 +66,7 @@ expected = "ちばけんにだいさんげんとちゅーれんぽうとうと�
 [[case]]
 input = "ねぶた行ったことないけど、竿燈はこんな感じだったなw"
 mode = "hiragana"
-expected = "ねぶたいったことないけど、かんとうはこんなかんじだったなw"
+expected = "ねぶたいったことないけど、かんとうはこんなかんじだったなワラ"
 
 [[case]]
 input = "街燈?"
@@ -146,7 +146,7 @@ expected = "おおたにバリのすくいうちすごE"
 [[case]]
 input = "塀の周回が迷いそう~w"
 mode = "hiragana"
-expected = "へいのしゅうかいがまよいそうw"
+expected = "へいのしゅうかいがまよいそうワラ"
 
 [[case]]
 input = "石垣ブロック塀には近寄らない"
@@ -171,7 +171,7 @@ expected = "ちばけんないのディーラーはうけにははいるか の�
 [[case]]
 input = "恩寵使えるのやばいw"
 mode = "hiragana"
-expected = "おんちょうつかえるのやばいw"
+expected = "おんちょうつかえるのやばいワラ"
 
 [[case]]
 input = "監督の寵愛を受けている"
@@ -226,7 +226,7 @@ expected = "しょけんさんあぜんとするやろww"
 [[case]]
 input = "獰猛な猛獣かw"
 mode = "hiragana"
-expected = "どうもうなもうじゅうかw"
+expected = "どうもうなもうじゅうかワラ"
 
 [[case]]
 input = "クマノミは結構獰猛だよね"
@@ -246,7 +246,7 @@ expected = "しっそけんやく"
 [[case]]
 input = "船長倹約家だなぁw"
 mode = "hiragana"
-expected = "せんちょうけんやくかだなぁw"
+expected = "せんちょうけんやくかだなぁワラ"
 
 [[case]]
 input = "一燈照隅"

@@ -26,7 +26,7 @@ expected = "あおりおるわ"
 [[case]]
 input = "煽りあいw"
 mode = "hiragana"
-expected = "あおりあいw"
+expected = "あおりあいワラ"
 
 [[case]]
 input = "煽りますねぇ"
@@ -41,7 +41,7 @@ expected = "あおりまくるやん"
 [[case]]
 input = "煽ろうw"
 mode = "hiragana"
-expected = "あおろうw"
+expected = "あおろうワラ"
 
 [[case]]
 input = "煽んないで!"

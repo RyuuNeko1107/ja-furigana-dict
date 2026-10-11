@@ -36,7 +36,7 @@ expected = "せんぽうじほうちゅうけん"
 [[case]]
 input = "先鋒にレイドくんおらんなw"
 mode = "hiragana"
-expected = "せんぽうにレイドくんおらんなw"
+expected = "せんぽうにレイドくんおらんなワラ"
 
 [[case]]
 input = "冴えてるね〜"
@@ -91,12 +91,12 @@ expected = "はいしゃでみてもらおう"
 [[case]]
 input = "右上隅やメッシw"
 mode = "hiragana"
-expected = "みぎうえすみやメッシw"
+expected = "みぎうえすみやメッシワラ"
 
 [[case]]
 input = "隅っこw"
 mode = "hiragana"
-expected = "すみっこw"
+expected = "すみっこワラ"
 
 [[case]]
 input = "隅田川花火大会"

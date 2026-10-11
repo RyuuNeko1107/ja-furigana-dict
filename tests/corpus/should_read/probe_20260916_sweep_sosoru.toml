@@ -76,7 +76,7 @@ expected = "めっちゃねだめしてるかんじ"
 [[case]]
 input = "35pに煽り運転されてるw"
 mode = "hiragana"
-expected = "35pにあおりうんてんされてるw"
+expected = "35pにあおりうんてんされてるワラ"
 
 [[case]]
 input = "また道化したる"

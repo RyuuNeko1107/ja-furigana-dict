@@ -186,7 +186,7 @@ expected = "もえそでメガネ"
 [[case]]
 input = "片袖千切れたかw"
 mode = "hiragana"
-expected = "かたそでちぎれたかw"
+expected = "かたそでちぎれたかワラ"
 
 [[case]]
 input = "スイカ堀1分10万円以上だから"

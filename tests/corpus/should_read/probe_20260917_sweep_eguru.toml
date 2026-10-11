@@ -6,7 +6,7 @@ expected = "えぐっていく..."
 [[case]]
 input = "抉っていくスタイルw"
 mode = "hiragana"
-expected = "えぐっていくスタイルw"
+expected = "えぐっていくスタイルワラ"
 
 [[case]]
 input = "手で抉ったんやろなこれ..."
@@ -41,12 +41,12 @@ expected = "そしてこのエンディングがえぐってくる"
 [[case]]
 input = "的確に抉ってくるw"
 mode = "hiragana"
-expected = "てきかくにえぐってくるw"
+expected = "てきかくにえぐってくるワラ"
 
 [[case]]
 input = "傷を抉っていくw"
 mode = "hiragana"
-expected = "きずをえぐっていくw"
+expected = "きずをえぐっていくワラ"
 
 [[case]]
 input = "的確に人の心抉っていくb"
@@ -81,7 +81,7 @@ expected = "トラウマをえぐるうた"
 [[case]]
 input = "抉れるw"
 mode = "hiragana"
-expected = "えぐれるw"
+expected = "えぐれるワラ"
 
 [[case]]
 input = "そこ抉るwww"
@@ -181,7 +181,7 @@ expected = "かがりびか?"
 [[case]]
 input = "ダークソウルの篝火 エルデンの祝福だねw"
 mode = "hiragana"
-expected = "ダークソウルのかがりび エルデンのしゅくふくだねw"
+expected = "ダークソウルのかがりび エルデンのしゅくふくだねワラ"
 
 [[case]]
 input = "お灸〜!"
@@ -236,7 +236,7 @@ expected = "こうこうせいならぜんきんせんならったでしょ"
 [[case]]
 input = "6時間の俺安堵w"
 mode = "hiragana"
-expected = "ろくじかんのおれあんどw"
+expected = "ろくじかんのおれあんどワラ"
 
 [[case]]
 input = "安堵の牛乳"
@@ -391,7 +391,7 @@ expected = "といしある?"
 [[case]]
 input = "砥いでるw"
 mode = "hiragana"
-expected = "といでるw"
+expected = "といでるワラ"
 
 [[case]]
 input = "メリケンサックも砥げるのか?"
@@ -406,7 +406,7 @@ expected = "あおとくチャンスだ!"
 [[case]]
 input = "いいかた卑猥w"
 mode = "hiragana"
-expected = "いいかたひわいw"
+expected = "いいかたひわいワラ"
 
 [[case]]
 input = "猥褻物陳列罪も合法にするならバランスするよ?"

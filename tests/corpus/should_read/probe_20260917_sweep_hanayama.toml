@@ -146,12 +146,12 @@ expected = "なごやそうすけべんごし"
 [[case]]
 input = "匍匐前進できたらなw"
 mode = "hiragana"
-expected = "ほふくぜんしんできたらなw"
+expected = "ほふくぜんしんできたらなワラ"
 
 [[case]]
 input = "すごい匍匐してるw"
 mode = "hiragana"
-expected = "すごいほふくしてるw"
+expected = "すごいほふくしてるワラ"
 
 [[case]]
 input = "鵜呑みはダメよね"
@@ -361,7 +361,7 @@ expected = "かんしゃくおこしてるわら"
 [[case]]
 input = "意外と癇癪持ちなのかもw"
 mode = "hiragana"
-expected = "いがいとかんしゃくもちなのかもw"
+expected = "いがいとかんしゃくもちなのかもワラ"
 
 [[case]]
 input = "但し冷静に"
@@ -371,7 +371,7 @@ expected = "ただしれいせいに"
 [[case]]
 input = "※但し世界記録保持者に限るw"
 mode = "hiragana"
-expected = "ただしせかいきろくほじしゃにかぎるw"
+expected = "ただしせかいきろくほじしゃにかぎるワラ"
 
 [[case]]
 input = "柳生但馬"

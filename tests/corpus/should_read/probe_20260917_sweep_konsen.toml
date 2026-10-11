@@ -31,7 +31,7 @@ expected = "そーいや、おびひろちゅうとんちでのんだこんせ�
 [[case]]
 input = "釧路も北北海道ですw"
 mode = "hiragana"
-expected = "くしろもきたほっかいどうですw"
+expected = "くしろもきたほっかいどうですワラ"
 
 [[case]]
 input = "くっしゃろ 釧路湿原の辺りかな?"
@@ -46,7 +46,7 @@ expected = "いしぐろホーマはくしろはっしょう"
 [[case]]
 input = "境港線は阪堺電車並みに揺れるんだぜ?w"
 mode = "hiragana"
-expected = "さかいみなとせんははんかいでんしゃなみにゆれるんだぜ?w"
+expected = "さかいみなとせんははんかいでんしゃなみにゆれるんだぜ?ワラ"
 
 [[case]]
 input = "小堺さん"
@@ -201,7 +201,7 @@ expected = "こんなかちかた、きゅうむいんさんがごうきゅう�
 [[case]]
 input = "昂ってるねw"
 mode = "hiragana"
-expected = "たかぶってるねw"
+expected = "たかぶってるねワラ"
 
 [[case]]
 input = "気が昂る"
@@ -211,7 +211,7 @@ expected = "きがたかぶる"
 [[case]]
 input = "昂ぶってるw"
 mode = "hiragana"
-expected = "たかぶってるw"
+expected = "たかぶってるワラ"
 
 [[case]]
 input = "今の判定に本田圭佑氏が激昂していましたね。"
@@ -296,7 +296,7 @@ expected = "こうもりか"
 [[case]]
 input = "クソ蝙蝠めw"
 mode = "hiragana"
-expected = "クソこうもりめw"
+expected = "クソこうもりめワラ"
 
 [[case]]
 input = "白樺ww"
@@ -326,7 +326,7 @@ expected = "ひょこりひょうたんじま"
 [[case]]
 input = "瓢箪から駒ではw"
 mode = "hiragana"
-expected = "ひょうたんからこまではw"
+expected = "ひょうたんからこまではワラ"
 
 [[case]]
 input = "今のが鍵箪笥"

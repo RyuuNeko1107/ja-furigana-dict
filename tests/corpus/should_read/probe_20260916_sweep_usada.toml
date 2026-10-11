@@ -71,7 +71,7 @@ expected = "まんちょうじしまなくなりそう"
 [[case]]
 input = "八部休符だねw"
 mode = "hiragana"
-expected = "はちぶきゅうふだねw"
+expected = "はちぶきゅうふだねワラ"
 
 [[case]]
 input = "大吾ワオ"

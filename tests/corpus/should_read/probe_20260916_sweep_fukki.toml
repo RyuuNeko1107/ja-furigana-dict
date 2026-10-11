@@ -6,7 +6,7 @@ expected = "どんなふくきてた?"
 [[case]]
 input = "やっと服着たw"
 mode = "hiragana"
-expected = "やっとふくきたw"
+expected = "やっとふくきたワラ"
 
 [[case]]
 input = "着てる服被ったみたいな"
@@ -16,17 +16,17 @@ expected = "きてるふくかぶったみたいな"
 [[case]]
 input = "富野節w"
 mode = "hiragana"
-expected = "とみのぶしw"
+expected = "とみのぶしワラ"
 
 [[case]]
 input = "本田節炸裂w"
 mode = "hiragana"
-expected = "ほんだぶしさくれつw"
+expected = "ほんだぶしさくれつワラ"
 
 [[case]]
 input = "嘆き節w"
 mode = "hiragana"
-expected = "なげきぶしw"
+expected = "なげきぶしワラ"
 
 [[case]]
 input = "その節はすまんかった"
@@ -61,7 +61,7 @@ expected = "なしじる"
 [[case]]
 input = "脳内汁ドパドパかw"
 mode = "hiragana"
-expected = "のうないじるドパドパかw"
+expected = "のうないじるドパドパかワラ"
 
 [[case]]
 input = "フロントに荷重移す感じ"
@@ -81,7 +81,7 @@ expected = "やすいかぶほどあがりにくいわながある"
 [[case]]
 input = "激狭物件w"
 mode = "hiragana"
-expected = "げきせまぶっけんw"
+expected = "げきせまぶっけんワラ"
 
 [[case]]
 input = "ぺこーら視野狭窄になってるな"
@@ -96,7 +96,7 @@ expected = "さんぼんうでがある?"
 [[case]]
 input = "頚肩腕症候群なるわw"
 mode = "hiragana"
-expected = "けいけんわんしょうこうぐんなるわw"
+expected = "けいけんわんしょうこうぐんなるわワラ"
 
 [[case]]
 input = "納豆と白飯最高!"
@@ -116,7 +116,7 @@ expected = "みこよるめしくったか?"
 [[case]]
 input = "ある種正解な使い方w"
 mode = "hiragana"
-expected = "あるしゅせいかいなつかいかたw"
+expected = "あるしゅせいかいなつかいかたワラ"
 
 [[case]]
 input = "爆散って言った?"

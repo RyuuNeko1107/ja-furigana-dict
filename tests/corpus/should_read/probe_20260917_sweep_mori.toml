@@ -6,7 +6,7 @@ expected = "たぶんもりだよ"
 [[case]]
 input = "せめて銛くらいないのかw"
 mode = "hiragana"
-expected = "せめてもりくらいないのかw"
+expected = "せめてもりくらいないのかワラ"
 
 [[case]]
 input = "銛で狩るとか?"
@@ -16,12 +16,12 @@ expected = "もりでかるとか?"
 [[case]]
 input = "銛w"
 mode = "hiragana"
-expected = "もりw"
+expected = "もりワラ"
 
 [[case]]
 input = "銛は反則だろうw"
 mode = "hiragana"
-expected = "もりははんそくだろうw"
+expected = "もりははんそくだろうワラ"
 
 [[case]]
 input = "銛は見つけにくいね"

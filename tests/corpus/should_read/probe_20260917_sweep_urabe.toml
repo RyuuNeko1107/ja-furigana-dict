@@ -1,7 +1,7 @@
 [[case]]
 input = "久し振りにじっくり衣装弄ってて楽しいなw"
 mode = "hiragana"
-expected = "ひさしぶりにじっくりいしょういじっててたのしいなw"
+expected = "ひさしぶりにじっくりいしょういじっててたのしいなワラ"
 
 [[case]]
 input = "ぺこら弄って遊んでる"
@@ -66,7 +66,7 @@ expected = "みんなだいすきうらべえええええええ"
 [[case]]
 input = "水卜ちゃん行こうw"
 mode = "hiragana"
-expected = "みうらちゃんいこうw"
+expected = "みうらちゃんいこうワラ"
 
 [[case]]
 input = "水卜アナ号泣"
@@ -91,7 +91,7 @@ expected = "ほんろうとな"
 [[case]]
 input = "嘲弄といいますw"
 mode = "hiragana"
-expected = "ちょうろうといいますw"
+expected = "ちょうろうといいますワラ"
 
 [[case]]
 input = "上澄みも上澄み"
@@ -126,7 +126,7 @@ expected = "だんがいぜっぺきや"
 [[case]]
 input = "小峠かw"
 mode = "hiragana"
-expected = "ことうげかw"
+expected = "ことうげかワラ"
 
 [[case]]
 input = "峠を越えただろ"
@@ -211,7 +211,7 @@ expected = "がはつぶそう"
 [[case]]
 input = "インセクター羽蛾きちゃw"
 mode = "hiragana"
-expected = "インセクターはがきちゃw"
+expected = "インセクターはがきちゃワラ"
 
 [[case]]
 input = "毒蛾のナイフ"

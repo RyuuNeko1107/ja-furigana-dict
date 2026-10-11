@@ -133,7 +133,7 @@ expected = "カップラーメンはほそめんがおおくてすき"
 [[case]]
 input = "カップ麺は凄麺しか勝たんw"
 mode = "hiragana"
-expected = "カップめんはすごめんしかかたんw"
+expected = "カップめんはすごめんしかかたんワラ"
 
 [[case]]
 input = "甘味処で煮麺はあるけど"
@@ -178,7 +178,7 @@ expected = "ミオちゃんぜんぜんうしろにそらさなくなったな�
 [[case]]
 input = "高梨だけどねw"
 mode = "hiragana"
-expected = "たかなしだけどねw"
+expected = "たかなしだけどねワラ"
 
 [[case]]
 input = "平愛梨も同じ飛行機"

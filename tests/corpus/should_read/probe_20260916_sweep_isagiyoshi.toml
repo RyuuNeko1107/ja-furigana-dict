@@ -51,7 +51,7 @@ expected = "いまこびちゅうよ"
 [[case]]
 input = "潔すぎたw"
 mode = "hiragana"
-expected = "いさぎよすぎたw"
+expected = "いさぎよすぎたワラ"
 
 [[case]]
 input = "潔よし"
@@ -76,7 +76,7 @@ expected = "タコのあしのかたちがいびつ"
 [[case]]
 input = "全部灰になるぞw"
 mode = "hiragana"
-expected = "ぜんぶはいになるぞw"
+expected = "ぜんぶはいになるぞワラ"
 
 [[case]]
 input = "じゃあふわぐさパークを作ろう、管理人黛灰"
@@ -131,7 +131,7 @@ expected = "かべぞいすぎる"
 [[case]]
 input = "トワ様とちは巻沿いw"
 mode = "hiragana"
-expected = "トワさまとちはまきぞいw"
+expected = "トワさまとちはまきぞいワラ"
 
 [[case]]
 input = "簡潔すぎて林ライス"

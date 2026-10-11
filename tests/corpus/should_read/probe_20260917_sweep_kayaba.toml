@@ -86,7 +86,7 @@ expected = "さくらいしょうさん"
 [[case]]
 input = "哀川翔かよw"
 mode = "hiragana"
-expected = "あいかわしょうかよw"
+expected = "あいかわしょうかよワラ"
 
 [[case]]
 input = "暁?"
@@ -151,7 +151,7 @@ expected = "かえるやん"
 [[case]]
 input = "通貨単位狂ってるw"
 mode = "hiragana"
-expected = "つうかたんいくるってるw"
+expected = "つうかたんいくるってるワラ"
 
 [[case]]
 input = "雑貨屋のお香すコ"
@@ -191,7 +191,7 @@ expected = "ひなみさわばっばい"
 [[case]]
 input = "茅の輪くぐりしてから行くかw"
 mode = "hiragana"
-expected = "ちのわくぐりしてからいくかw"
+expected = "ちのわくぐりしてからいくかワラ"
 
 [[case]]
 input = "ほな茅ヶ崎かー"
@@ -201,7 +201,7 @@ expected = "ほなちがさきかー"
 [[case]]
 input = "肘うちw"
 mode = "hiragana"
-expected = "ひじうちw"
+expected = "ひじうちワラ"
 
 [[case]]
 input = "糖尿病になる"
@@ -211,7 +211,7 @@ expected = "とうにょうびょうになる"
 [[case]]
 input = "頻尿w"
 mode = "hiragana"
-expected = "ひんにょうw"
+expected = "ひんにょうワラ"
 
 [[case]]
 input = "利尿作用あるものがいいね"

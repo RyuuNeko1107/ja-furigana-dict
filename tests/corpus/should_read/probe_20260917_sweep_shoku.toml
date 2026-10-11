@@ -156,7 +156,7 @@ expected = "びんしょうはクイック"
 [[case]]
 input = "同衾w"
 mode = "hiragana"
-expected = "どうきんw"
+expected = "どうきんワラ"
 
 [[case]]
 input = "天井が衾になってる"
@@ -171,7 +171,7 @@ expected = "そういうがらのふすま"
 [[case]]
 input = "屍と同衾はちょっとw"
 mode = "hiragana"
-expected = "しかばねとどうきんはちょっとw"
+expected = "しかばねとどうきんはちょっとワラ"
 
 [[case]]
 input = "昔こんな糊あったよね"
@@ -191,7 +191,7 @@ expected = "ちのりはげんかく!?"
 [[case]]
 input = "段ボールは米のデンプン糊だからくうけど、紙の箱は食べられませんw"
 mode = "hiragana"
-expected = "だんぼーるはこめのデンプンのりだからくうけど、かみのはこはたべられませんw"
+expected = "だんぼーるはこめのデンプンのりだからくうけど、かみのはこはたべられませんワラ"
 
 [[case]]
 input = "蒼穹のファフナー"

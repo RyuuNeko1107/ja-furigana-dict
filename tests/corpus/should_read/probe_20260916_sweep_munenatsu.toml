@@ -36,7 +36,7 @@ expected = "めっちゃファブしててんぴぼしかな"
 [[case]]
 input = "闇討ちかw"
 mode = "hiragana"
-expected = "やみうちかw"
+expected = "やみうちかワラ"
 
 [[case]]
 input = "闇討ちの流れですか?"
@@ -81,7 +81,7 @@ expected = "しょっかくつかまれていたないんかな"
 [[case]]
 input = "富士山並走w"
 mode = "hiragana"
-expected = "ふじさんへいそうw"
+expected = "ふじさんへいそうワラ"
 
 [[case]]
 input = "稲見が稲兄ってなってなかった?"
@@ -101,7 +101,7 @@ expected = "VIやってるとかむねあつ"
 [[case]]
 input = "マリン胸熱ポイントw"
 mode = "hiragana"
-expected = "マリンむねあつポイントw"
+expected = "マリンむねあつポイントワラ"
 
 [[case]]
 input = "開胸"
@@ -121,7 +121,7 @@ expected = "きょうかさのひだってよ"
 [[case]]
 input = "今傘ないと3秒で全身ずぶ濡れなるw"
 mode = "hiragana"
-expected = "いまかさないとさんびょうでぜんしんずぶぬれなるw"
+expected = "いまかさないとさんびょうでぜんしんずぶぬれなるワラ"
 
 [[case]]
 input = "竹傘だ"
@@ -146,7 +146,7 @@ expected = "ほころう!"
 [[case]]
 input = "狩猟笛かな?w"
 mode = "hiragana"
-expected = "しゅりょうぶえかな?w"
+expected = "しゅりょうぶえかな?ワラ"
 
 [[case]]
 input = "時之笛"
@@ -231,7 +231,7 @@ expected = "え?ペッピーよめいるの?"
 [[case]]
 input = "株を奪う嫁達かw"
 mode = "hiragana"
-expected = "かぶをうばうよめたちかw"
+expected = "かぶをうばうよめたちかワラ"
 
 [[case]]
 input = "乾いちゃうよぉ"

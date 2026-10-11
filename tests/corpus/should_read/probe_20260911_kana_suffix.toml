@@ -78,7 +78,7 @@ note = "内部評価コーパスA/Bで発見 (旧 おあねちゃん)"
 [[case]]
 input = "ここも初めましてかw"
 mode = "hiragana"
-expected = "ここもはじめましてかw"
+expected = "ここもはじめましてかワラ"
 note = "同上 (旧 そめまして)"
 
 [[case]]
@@ -132,5 +132,5 @@ note = "同上 (旧 ゆきくずれたら)"
 [[case]]
 input = "荒げてるw"
 mode = "hiragana"
-expected = "あらげてるw"
+expected = "あらげてるワラ"
 note = "同上 (旧 こうげてる)"

@@ -76,7 +76,7 @@ expected = "いったんまちにもどるんだ、エリトラないぞ"
 [[case]]
 input = "今街に戻るの怖いなぁこれw"
 mode = "hiragana"
-expected = "いままちにもどるのこわいなぁこれw"
+expected = "いままちにもどるのこわいなぁこれワラ"
 
 [[case]]
 input = "また迷言うまれたか"

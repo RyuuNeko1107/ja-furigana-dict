@@ -6,7 +6,7 @@ expected = "あさってにげるのもてか"
 [[case]]
 input = "漁られた後かw"
 mode = "hiragana"
-expected = "あさられたあとかw"
+expected = "あさられたあとかワラ"
 
 [[case]]
 input = "ボックスを漁ろう"
@@ -16,7 +16,7 @@ expected = "ボックスをあさろう"
 [[case]]
 input = "漁った感想w"
 mode = "hiragana"
-expected = "あさったかんそうw"
+expected = "あさったかんそうワラ"
 
 [[case]]
 input = "宝漁れる!"

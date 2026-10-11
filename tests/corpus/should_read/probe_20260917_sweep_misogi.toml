@@ -21,7 +21,7 @@ expected = "みそぎのタッチ"
 [[case]]
 input = "禊を済ませないとダメかw"
 mode = "hiragana"
-expected = "みそぎをすませないとダメかw"
+expected = "みそぎをすませないとダメかワラ"
 
 [[case]]
 input = "禊の間"
@@ -106,7 +106,7 @@ expected = "ぺこらさんここははんもどうくつなのでいおうと�
 [[case]]
 input = "ああ繫茂かw"
 mode = "hiragana"
-expected = "ああはんもかw"
+expected = "ああはんもかワラ"
 
 [[case]]
 input = "繫殖するね"
@@ -176,7 +176,7 @@ expected = "とうけんしんいき"
 [[case]]
 input = "画鋲w"
 mode = "hiragana"
-expected = "がびょうw"
+expected = "がびょうワラ"
 
 [[case]]
 input = "ドラゴンすら倒す鉄の鋲やぞ"
@@ -201,7 +201,7 @@ expected = "ねんぽういくらだ"
 [[case]]
 input = "ピックアップくん、減俸ね!w"
 mode = "hiragana"
-expected = "ピックアップくん、げんぽうね!w"
+expected = "ピックアップくん、げんぽうね!ワラ"
 
 [[case]]
 input = "躓いた判定か"
@@ -281,7 +281,7 @@ expected = "たたいてたのはおはやしやろ"
 [[case]]
 input = "囃し立てるようにw"
 mode = "hiragana"
-expected = "はやしたてるようにw"
+expected = "はやしたてるようにワラ"
 
 [[case]]
 input = "ひぐらしのなく頃に 祭り囃子編"
@@ -371,7 +371,7 @@ expected = "もりおうちょうへ"
 [[case]]
 input = "杜撰w"
 mode = "hiragana"
-expected = "ずさんw"
+expected = "ずさんワラ"
 
 [[case]]
 input = "蜘蛛の糸・・・杜子春・・・懐かしき思い出"

@@ -1,7 +1,7 @@
 [[case]]
 input = "厨二病拗らせていけw"
 mode = "hiragana"
-expected = "ちゅうにびょうこじらせていけw"
+expected = "ちゅうにびょうこじらせていけワラ"
 
 [[case]]
 input = "シスコン拗らせてるからな"
@@ -66,7 +66,7 @@ expected = "なぜそのようにあらぶるのか!"
 [[case]]
 input = "タンシオといい粗挽きといい肉関係?w"
 mode = "hiragana"
-expected = "タンシオといいあらびきといいにくかんけい?w"
+expected = "タンシオといいあらびきといいにくかんけい?ワラ"
 
 [[case]]
 input = "粗びき"
@@ -106,7 +106,7 @@ expected = "ゆめしま"
 [[case]]
 input = "耳なし芳一みたいになっとるw"
 mode = "hiragana"
-expected = "みみなしほういちみたいになっとるw"
+expected = "みみなしほういちみたいになっとるワラ"
 
 [[case]]
 input = "掛布雅之くるかな?"
@@ -121,7 +121,7 @@ expected = "なんでもたのしいがだいじですもんね"
 [[case]]
 input = "何でも燃やすw"
 mode = "hiragana"
-expected = "なんでももやすw"
+expected = "なんでももやすワラ"
 
 [[case]]
 input = "酒飲んでたら何でも許されるのか?"
@@ -141,7 +141,7 @@ expected = "しゃあ!(あかいすいせいてきないみで)"
 [[case]]
 input = "何故頭振るw"
 mode = "hiragana"
-expected = "なぜあたまふるw"
+expected = "なぜあたまふるワラ"
 
 [[case]]
 input = "前のランエボと同じ位か"

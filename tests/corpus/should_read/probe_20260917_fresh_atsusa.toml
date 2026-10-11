@@ -1,7 +1,7 @@
 [[case]]
 input = "皮の厚さとか色々ねw"
 mode = "hiragana"
-expected = "かわのあつさとかいろいろねw"
+expected = "かわのあつさとかいろいろねワラ"
 
 [[case]]
 input = "稲刈機"

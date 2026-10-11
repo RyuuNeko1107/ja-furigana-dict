@@ -139,7 +139,7 @@ expected = "わかりやすすぎないか?"
 [[case]]
 input = "出れんくなったw"
 mode = "hiragana"
-expected = "でれんくなったw"
+expected = "でれんくなったワラ"
 
 [[case]]
 input = "SW初心者でも観やすかった!"

@@ -1,7 +1,7 @@
 [[case]]
 input = "世耕さんお元気そうでw"
 mode = "hiragana"
-expected = "せこうさんおげんきそうでw"
+expected = "せこうさんおげんきそうでワラ"
 
 [[case]]
 input = "世耕さん復党していいよ"
@@ -26,7 +26,7 @@ expected = "まっしん"
 [[case]]
 input = "真芯を捉えるの無理くないかw"
 mode = "hiragana"
-expected = "まっしんをとらえるのむりくないかw"
+expected = "まっしんをとらえるのむりくないかワラ"
 
 [[case]]
 input = "重い球は強振真芯は無効だから"
@@ -51,7 +51,7 @@ expected = "かたりべつむぎ"
 [[case]]
 input = "遥への反発ヤバかったねw"
 mode = "hiragana"
-expected = "はるかへのはんぱつヤバかったねw"
+expected = "はるかへのはんぱつヤバかったねワラ"
 
 [[case]]
 input = "6の遥は"
@@ -116,7 +116,7 @@ expected = "せいりせいとんえらい"
 [[case]]
 input = "素っ頓狂w"
 mode = "hiragana"
-expected = "すっとんきょうw"
+expected = "すっとんきょうワラ"
 
 [[case]]
 input = "服に無頓着なの草"
@@ -146,7 +146,7 @@ expected = "リンゴのしんか"
 [[case]]
 input = "賄賂w"
 mode = "hiragana"
-expected = "わいろw"
+expected = "わいろワラ"
 
 [[case]]
 input = "紡いでるよーー!!"

@@ -76,7 +76,7 @@ expected = "あしのこ"
 [[case]]
 input = "蘆田愛菜w"
 mode = "hiragana"
-expected = "あしだあいなw"
+expected = "あしだあいなワラ"
 
 [[case]]
 input = "裏に蘆屋道満いるぞ"

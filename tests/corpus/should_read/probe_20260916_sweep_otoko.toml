@@ -56,7 +56,7 @@ expected = "よいかんじだとおもう"
 [[case]]
 input = "凄い漢字w"
 mode = "hiragana"
-expected = "すごいかんじw"
+expected = "すごいかんじワラ"
 
 [[case]]
 input = "脳が漢字に慣れてきたかな?"
@@ -91,7 +91,7 @@ expected = "きょかんにせまられたら"
 [[case]]
 input = "この巨漢をどうやってw"
 mode = "hiragana"
-expected = "このきょかんをどうやってw"
+expected = "このきょかんをどうやってワラ"
 
 [[case]]
 input = "無頼漢が話しかけてきた"

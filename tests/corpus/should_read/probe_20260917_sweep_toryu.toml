@@ -1,7 +1,7 @@
 [[case]]
 input = "屠龍とかオタクにしかよめんw"
 mode = "hiragana"
-expected = "とりゅうとかオタクにしかよめんw"
+expected = "とりゅうとかオタクにしかよめんワラ"
 
 [[case]]
 input = "獲物を屠るイェーガー"
@@ -16,7 +16,7 @@ expected = "スバルをほふるイェーガー!"
 [[case]]
 input = "ルーナイトで屠殺w"
 mode = "hiragana"
-expected = "ルーナイトでとさつw"
+expected = "ルーナイトでとさつワラ"
 
 [[case]]
 input = "虫螻の如く屠っておる"
@@ -121,7 +121,7 @@ expected = "とぐろWWWWWWWWWWWW"
 [[case]]
 input = "切磋琢磨は違うやろw"
 mode = "hiragana"
-expected = "せっさたくまはちがうやろw"
+expected = "せっさたくまはちがうやろワラ"
 
 [[case]]
 input = "聲の形のあいつみたい"
@@ -251,7 +251,7 @@ expected = "フレアもうではじまってる"
 [[case]]
 input = "詣でるんだw"
 mode = "hiragana"
-expected = "もうでるんだw"
+expected = "もうでるんだワラ"
 
 [[case]]
 input = "肖像画っていうか落書きじゃん"
@@ -261,12 +261,12 @@ expected = "しょうぞうがっていうからくがきじゃん"
 [[case]]
 input = "普通に肖像権侵害w"
 mode = "hiragana"
-expected = "ふつうにしょうぞうけんしんがいw"
+expected = "ふつうにしょうぞうけんしんがいワラ"
 
 [[case]]
 input = "鍬を置くw"
 mode = "hiragana"
-expected = "くわをおくw"
+expected = "くわをおくワラ"
 
 [[case]]
 input = "いつの世も鍬を持った農民が最強"
@@ -276,7 +276,7 @@ expected = "いつのよもくわをもったのうみんがさいきょう"
 [[case]]
 input = "珊瑚礁はなかったw"
 mode = "hiragana"
-expected = "さんごしょうはなかったw"
+expected = "さんごしょうはなかったワラ"
 
 [[case]]
 input = "珊瑚は折らないでね"

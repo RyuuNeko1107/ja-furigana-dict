@@ -41,7 +41,7 @@ expected = "しつけかー"
 [[case]]
 input = "皆よう躾けられとるw"
 mode = "hiragana"
-expected = "みなようしつけられとるw"
+expected = "みなようしつけられとるワラ"
 
 [[case]]
 input = "捻じ曲げたっていうか躾けられた"
@@ -76,7 +76,7 @@ expected = "しつけ!?"
 [[case]]
 input = "躾がw"
 mode = "hiragana"
-expected = "しつけがw"
+expected = "しつけがワラ"
 
 [[case]]
 input = "種蒔きなんだ"
@@ -271,7 +271,7 @@ expected = "コーヒーいれた"
 [[case]]
 input = "めっちゃ几帳面やなw"
 mode = "hiragana"
-expected = "めっちゃきちょうめんやなw"
+expected = "めっちゃきちょうめんやなワラ"
 
 [[case]]
 input = "嚙み合わせじゃなかったか"
@@ -306,7 +306,7 @@ expected = "かしこまったばではつかうような"
 [[case]]
 input = "フリーザは畏敬というか畏怖だよなw"
 mode = "hiragana"
-expected = "フリーザはいけいというかいふだよなw"
+expected = "フリーザはいけいというかいふだよなワラ"
 
 [[case]]
 input = "お疲れ樣でした"

@@ -26,7 +26,7 @@ expected = "ルメールはひんばのイメージ"
 [[case]]
 input = "牝言うなw"
 mode = "hiragana"
-expected = "めすいうなw"
+expected = "めすいうなワラ"
 
 [[case]]
 input = "レガレイラもできなかった牝馬の皐月賞"
@@ -136,7 +136,7 @@ expected = "たかいちのせいでえんやす、インフレ、えんがか�
 [[case]]
 input = "鉄屑迷路w"
 mode = "hiragana"
-expected = "てつくずめいろw"
+expected = "てつくずめいろワラ"
 
 [[case]]
 input = "星屑が海に落ちて貝になったよ"
@@ -156,7 +156,7 @@ expected = "おおぜいでくずてつがあおったのもあるからおた�
 [[case]]
 input = "滾ってる最中なんでねw"
 mode = "hiragana"
-expected = "たぎってるさいちゅうなんでねw"
+expected = "たぎってるさいちゅうなんでねワラ"
 
 [[case]]
 input = "血が滾る"
@@ -191,7 +191,7 @@ expected = "きめつたいのゆうれいがしんせんぐみのわざとた�
 [[case]]
 input = "杜撰w"
 mode = "hiragana"
-expected = "ずさんw"
+expected = "ずさんワラ"
 
 [[case]]
 input = "撰録"

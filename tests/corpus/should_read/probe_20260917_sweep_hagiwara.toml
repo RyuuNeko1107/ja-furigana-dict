@@ -131,7 +131,7 @@ expected = "アレンパへまいしんちゅう"
 [[case]]
 input = "淘汰されたのかw"
 mode = "hiragana"
-expected = "とうたされたのかw"
+expected = "とうたされたのかワラ"
 
 [[case]]
 input = "自然淘汰"
@@ -156,12 +156,12 @@ expected = "ひとをおとしめてはいけないよ"
 [[case]]
 input = "敬ってんのか貶してんのかw"
 mode = "hiragana"
-expected = "うやまってんのかけなしてんのかw"
+expected = "うやまってんのかけなしてんのかワラ"
 
 [[case]]
 input = "ちょいちょい貶すw"
 mode = "hiragana"
-expected = "ちょいちょいけなすw"
+expected = "ちょいちょいけなすワラ"
 
 [[case]]
 input = "家族を貶されると怒れるいい子"
@@ -236,12 +236,12 @@ expected = "うがったかいしゃくおおいよね"
 [[case]]
 input = "靴穿いただけw"
 mode = "hiragana"
-expected = "くつはいただけw"
+expected = "くつはいただけワラ"
 
 [[case]]
 input = "ズボン穿きなw"
 mode = "hiragana"
-expected = "ズボンはきなw"
+expected = "ズボンはきなワラ"
 
 [[case]]
 input = "屋根の上の鳳凰見たい"
@@ -281,7 +281,7 @@ expected = "えんしょうのやかた、えんしょうしてるやん"
 [[case]]
 input = "やっぱり主賓が料理作ってるのかw"
 mode = "hiragana"
-expected = "やっぱりしゅひんがりょうりつくってるのかw"
+expected = "やっぱりしゅひんがりょうりつくってるのかワラ"
 
 [[case]]
 input = "国賓級の待遇やな"

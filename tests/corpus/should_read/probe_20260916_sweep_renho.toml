@@ -51,7 +51,7 @@ expected = "ばんばんじー"
 [[case]]
 input = "野蛮人棒々鶏w"
 mode = "hiragana"
-expected = "やばんじんばんばんじーw"
+expected = "やばんじんばんばんじーワラ"
 
 [[case]]
 input = "油淋鶏食べたい"

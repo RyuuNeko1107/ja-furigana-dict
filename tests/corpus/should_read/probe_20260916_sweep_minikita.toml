@@ -16,7 +16,7 @@ expected = "ばえー"
 [[case]]
 input = "周るだけだから回収はしやすそうw"
 mode = "hiragana"
-expected = "まわるだけだからかいしゅうはしやすそうw"
+expected = "まわるだけだからかいしゅうはしやすそうワラ"
 
 [[case]]
 input = "そこの自称虎は猫かぶってます"
@@ -66,7 +66,7 @@ expected = "イニシャルMをみにきました!"
 [[case]]
 input = "ドローンで観にいけばいいw"
 mode = "hiragana"
-expected = "ドローンでみにいけばいいw"
+expected = "ドローンでみにいけばいいワラ"
 
 [[case]]
 input = "だんだんリスナーさんに観えてきた"

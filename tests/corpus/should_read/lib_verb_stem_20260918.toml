@@ -22,7 +22,7 @@ note = "旧 けんおわった"
 [[case]]
 input = "マミー寝とるw"
 mode = "hiragana"
-expected = "マミーねとるw"
+expected = "マミーねとるワラ"
 note = "旧 しんとる"
 
 [[case]]
@@ -294,7 +294,7 @@ note = "変えてはいけない側"
 [[case]]
 input = "のんびり楽しみながら寝w"
 mode = "hiragana"
-expected = "のんびりたのしみながらねw"
+expected = "のんびりたのしみながらねワラ"
 note = "旧 しんw (文末で単独に置かれる 寝)"
 
 [[case]]
@@ -393,7 +393,7 @@ note = "変えてはいけない側: 分数の 分の (助詞 tail から の �
 [[case]]
 input = "ドン引きw"
 mode = "hiragana"
-expected = "どんびきw"
+expected = "どんびきワラ"
 note = "旧 ドンひき (Lindera token 引き = ヒキ が勝っていた)"
 
 [[case]]
@@ -468,7 +468,7 @@ note = "旧 よんかく (counter 角 が拾っていた)"
 [[case]]
 input = "牛歩w"
 mode = "hiragana"
-expected = "ぎゅうほw"
+expected = "ぎゅうほワラ"
 note = "旧 うしほ (w が付くと 牛|歩 に割れる)"
 
 [[case]]

@@ -79,7 +79,7 @@ expected = "はんとしもたたないうちにさんびゃくもったのヤ�
 [[case]]
 input = "寝つきよさそうw"
 mode = "hiragana"
-expected = "ねつきよさそうw"
+expected = "ねつきよさそうワラ"
 
 [[case]]
 input = "エースが下りてからが勝負!"
@@ -99,7 +99,7 @@ expected = "それをぬすむぺこらこそあくにん"
 [[case]]
 input = "3盗もいけそうw"
 mode = "hiragana"
-expected = "さんとうもいけそうw"
+expected = "さんとうもいけそうワラ"
 
 [[case]]
 input = "抗うことは出来るから"
@@ -140,7 +140,7 @@ expected = "あえてぎゃくばりでかつ!"
 [[case]]
 input = "何だその間w"
 mode = "hiragana"
-expected = "なんだそのあいだw"
+expected = "なんだそのあいだワラ"
 
 [[case]]
 input = "堪能しました"

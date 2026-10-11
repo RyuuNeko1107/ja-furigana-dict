@@ -121,12 +121,12 @@ expected = "しおがまやきおいしい"
 [[case]]
 input = "塩窯焼き出てくるのやばw"
 mode = "hiragana"
-expected = "しおがまやきでてくるのやばw"
+expected = "しおがまやきでてくるのやばワラ"
 
 [[case]]
 input = "石窯のでかさやばいw"
 mode = "hiragana"
-expected = "いしがまのでかさやばいw"
+expected = "いしがまのでかさやばいワラ"
 
 [[case]]
 input = "ピザ窯"
@@ -136,7 +136,7 @@ expected = "ピザかま"
 [[case]]
 input = "窯爺?w"
 mode = "hiragana"
-expected = "かまじい?w"
+expected = "かまじい?ワラ"
 
 [[case]]
 input = "塩竈菊"
@@ -176,7 +176,7 @@ expected = "さははいぜんとしてちゅうごくとのわぼくをしゅ�
 [[case]]
 input = "背中が煤けてるぜw"
 mode = "hiragana"
-expected = "せなかがすすけてるぜw"
+expected = "せなかがすすけてるぜワラ"
 
 [[case]]
 input = "放蕩王子か?"
@@ -191,7 +191,7 @@ expected = "のうがとろけてきたぞ!"
 [[case]]
 input = "ここ 見蕩れっちゃったよ コメント忘れてw"
 mode = "hiragana"
-expected = "ここ みとれっちゃったよ コメントわすれてw"
+expected = "ここ みとれっちゃったよ コメントわすれてワラ"
 
 [[case]]
 input = "マニア垂涎"
@@ -231,7 +231,7 @@ expected = "おきなわ"
 [[case]]
 input = "躁鬱かなw"
 mode = "hiragana"
-expected = "そううつかなw"
+expected = "そううつかなワラ"
 
 [[case]]
 input = "確かに、躁状態ぽい"

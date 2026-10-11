@@ -28,7 +28,7 @@ note = "旧 いしせき"
 [[case]]
 input = "汗汗w"
 mode = "hiragana"
-expected = "あせあせw"
+expected = "あせあせワラ"
 note = "旧 あせかん"
 
 [[case]]

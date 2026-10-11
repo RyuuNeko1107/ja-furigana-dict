@@ -136,7 +136,7 @@ expected = "てはず"
 [[case]]
 input = "歌謡曲のタイトルみたいw"
 mode = "hiragana"
-expected = "かようきょくのタイトルみたいw"
+expected = "かようきょくのタイトルみたいワラ"
 
 [[case]]
 input = "童謡?"
@@ -156,7 +156,7 @@ expected = "じゅうりんしててくさ"
 [[case]]
 input = "痙攣連打w"
 mode = "hiragana"
-expected = "けいれんれんだw"
+expected = "けいれんれんだワラ"
 
 [[case]]
 input = "足攣ったかもね"
@@ -166,7 +166,7 @@ expected = "あしつったかもね"
 [[case]]
 input = "引き攣るw"
 mode = "hiragana"
-expected = "ひきつるw"
+expected = "ひきつるワラ"
 
 [[case]]
 input = "神曰く"
@@ -176,7 +176,7 @@ expected = "かみいわく"
 [[case]]
 input = "曰く付きの部屋だろw"
 mode = "hiragana"
-expected = "いわくつきのへやだろw"
+expected = "いわくつきのへやだろワラ"
 
 [[case]]
 input = "発酵させるか"
@@ -236,7 +236,7 @@ expected = "わためはよいっぱり"
 [[case]]
 input = "スバル妊娠!?w"
 mode = "hiragana"
-expected = "スバルにんしん!?w"
+expected = "スバルにんしん!?ワラ"
 
 [[case]]
 input = "家計簿www"
@@ -341,7 +341,7 @@ expected = "きょうせいかい?"
 [[case]]
 input = "縮毛矯正しようw"
 mode = "hiragana"
-expected = "しゅくけきょうせいしようw"
+expected = "しゅくけきょうせいしようワラ"
 
 [[case]]
 input = "歯列矯正"
@@ -351,12 +351,12 @@ expected = "はれつきょうせい"
 [[case]]
 input = "駆逐してやるw"
 mode = "hiragana"
-expected = "くちくしてやるw"
+expected = "くちくしてやるワラ"
 
 [[case]]
 input = "逐一おもしろいなぁw"
 mode = "hiragana"
-expected = "ちくいちおもしろいなぁw"
+expected = "ちくいちおもしろいなぁワラ"
 
 [[case]]
 input = "戦力の逐次投入は負け"
@@ -366,7 +366,7 @@ expected = "せんりょくのちくじとうにゅうはまけ"
 [[case]]
 input = "放逐されたw"
 mode = "hiragana"
-expected = "ほうちくされたw"
+expected = "ほうちくされたワラ"
 
 [[case]]
 input = "ラオウ逐電"
@@ -376,7 +376,7 @@ expected = "ラオウちくでん"
 [[case]]
 input = "窒息w"
 mode = "hiragana"
-expected = "ちっそくw"
+expected = "ちっそくワラ"
 
 [[case]]
 input = "液体窒素いっとくか"

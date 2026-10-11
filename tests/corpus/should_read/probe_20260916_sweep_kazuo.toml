@@ -16,7 +16,7 @@ expected = "かずおでくさ"
 [[case]]
 input = "松井稼頭央w"
 mode = "hiragana"
-expected = "まついかずおw"
+expected = "まついかずおワラ"
 
 [[case]]
 input = "フブさんは稼頭央"
@@ -86,7 +86,7 @@ expected = "なぎとれおかな?"
 [[case]]
 input = "溢してるしw"
 mode = "hiragana"
-expected = "こぼしてるしw"
+expected = "こぼしてるしワラ"
 
 [[case]]
 input = "溢さないように"
@@ -96,12 +96,12 @@ expected = "こぼさないように"
 [[case]]
 input = "水溢したんかw"
 mode = "hiragana"
-expected = "みずこぼしたんかw"
+expected = "みずこぼしたんかワラ"
 
 [[case]]
 input = "ポロポロ溢しそうw"
 mode = "hiragana"
-expected = "ポロポロこぼしそうw"
+expected = "ポロポロこぼしそうワラ"
 
 [[case]]
 input = "カレー溢していったわ"
@@ -156,7 +156,7 @@ expected = "なんかつつよすぎる"
 [[case]]
 input = "東邦と南葛おもろそうw"
 mode = "hiragana"
-expected = "とうほうとなんかつおもろそうw"
+expected = "とうほうとなんかつおもろそうワラ"
 
 [[case]]
 input = "南葛の防波堤"
@@ -166,7 +166,7 @@ expected = "なんかつのぼうはてい"
 [[case]]
 input = "大分侵食されてるなw"
 mode = "hiragana"
-expected = "だいぶしんしょくされてるなw"
+expected = "だいぶしんしょくされてるなワラ"
 
 [[case]]
 input = "溢れるスイカ"
@@ -181,7 +181,7 @@ expected = "いいんちょうがはなしてた"
 [[case]]
 input = "やっぱり哲人w"
 mode = "hiragana"
-expected = "やっぱりてつじんw"
+expected = "やっぱりてつじんワラ"
 
 [[case]]
 input = "渡哲也だっけ?"
@@ -191,7 +191,7 @@ expected = "わたりてつやだっけ?"
 [[case]]
 input = "なんの葛藤だよw"
 mode = "hiragana"
-expected = "なんのかっとうだよw"
+expected = "なんのかっとうだよワラ"
 
 [[case]]
 input = "大分県"

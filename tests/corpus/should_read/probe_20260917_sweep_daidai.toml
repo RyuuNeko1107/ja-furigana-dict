@@ -66,7 +66,7 @@ expected = "あのメガホンがだいだいいろになったらおもろい"
 [[case]]
 input = "蒼崎橙子やんw"
 mode = "hiragana"
-expected = "あおさきとうこやんw"
+expected = "あおさきとうこやんワラ"
 
 [[case]]
 input = "田中瑛斗じゃなく瑛太か"
@@ -81,7 +81,7 @@ expected = "スライダーとシュート、たなかえいとか!"
 [[case]]
 input = "瀬川瑛子みたいw"
 mode = "hiragana"
-expected = "せがわえいこみたいw"
+expected = "せがわえいこみたいワラ"
 
 [[case]]
 input = "美瑛がオススメ"
@@ -121,7 +121,7 @@ expected = "すいこう?"
 [[case]]
 input = "1日は推敲しすぎw"
 mode = "hiragana"
-expected = "いちにちはすいこうしすぎw"
+expected = "いちにちはすいこうしすぎワラ"
 
 [[case]]
 input = "洛中か洛外かで違うし"

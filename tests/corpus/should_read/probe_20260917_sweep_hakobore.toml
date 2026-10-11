@@ -126,7 +126,7 @@ expected = "こうかつにいけ!"
 [[case]]
 input = "狡いw"
 mode = "hiragana"
-expected = "こすいw"
+expected = "こすいワラ"
 
 [[case]]
 input = "狡くて草"
@@ -216,7 +216,7 @@ expected = "いちごましまろのおさんぽきょうそうきょくすき"
 [[case]]
 input = "木苺食べれると良いのにw"
 mode = "hiragana"
-expected = "きいちごたべれるとよいのにw"
+expected = "きいちごたべれるとよいのにワラ"
 
 [[case]]
 input = "ふ、冬苺だから"
@@ -271,7 +271,7 @@ expected = "これだれあて?"
 [[case]]
 input = "どんな宛字w"
 mode = "hiragana"
-expected = "どんなあてじw"
+expected = "どんなあてじワラ"
 
 [[case]]
 input = "ライバーのマスコットとか宛がう感じ?"
@@ -296,7 +296,7 @@ expected = "ぺこちゃんのこころのおもむくままに"
 [[case]]
 input = "自ら赴いてくれたw"
 mode = "hiragana"
-expected = "みずからおもむいてくれたw"
+expected = "みずからおもむいてくれたワラ"
 
 [[case]]
 input = "まるで戦場に赴く戦士"
@@ -371,7 +371,7 @@ expected = "バニーじゃなくてえんびふくでもええんやで"
 [[case]]
 input = "酒の肴w"
 mode = "hiragana"
-expected = "さけのさかなw"
+expected = "さけのさかなワラ"
 
 [[case]]
 input = "肴は炙ったイカでいい"

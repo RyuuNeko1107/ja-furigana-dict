@@ -13,7 +13,7 @@ expected = "でんれいつかいなよ"
 [[case]]
 input = "しむけんさんのスイカ人間思い出しちまったよw"
 mode = "hiragana"
-expected = "しむけんさんのスイカにんげんおもいだしちまったよw"
+expected = "しむけんさんのスイカにんげんおもいだしちまったよワラ"
 
 [[case]]
 input = "ゲストとしては初絡み??"
@@ -48,7 +48,7 @@ expected = "てぇてぇのおしつけはいけない"
 [[case]]
 input = "盛り付けがw"
 mode = "hiragana"
-expected = "もりつけがw"
+expected = "もりつけがワラ"
 
 [[case]]
 input = "内野安打って普通にすごいなあ"
@@ -123,7 +123,7 @@ expected = "さいさいほうそうたすかる"
 [[case]]
 input = "長えなw"
 mode = "hiragana"
-expected = "なげえなw"
+expected = "なげえなワラ"
 
 [[case]]
 input = "出でよシェンロン"
@@ -143,12 +143,12 @@ expected = "だいたいいっかいいたいめみてるのくさ"
 [[case]]
 input = "懐かせないとw"
 mode = "hiragana"
-expected = "なつかせないとw"
+expected = "なつかせないとワラ"
 
 [[case]]
 input = "数えんでも見えるやろw"
 mode = "hiragana"
-expected = "かぞえんでもみえるやろw"
+expected = "かぞえんでもみえるやろワラ"
 
 [[case]]
 input = "好き嫌いとかじゃなくて信頼感よね"
@@ -170,7 +170,7 @@ expected = "ふあんていかな?"
 [[case]]
 input = "足早いしなw"
 mode = "hiragana"
-expected = "あしはやいしなw"
+expected = "あしはやいしなワラ"
 
 [[case]]
 input = "練習で頭打って気絶したことあるや"
@@ -180,7 +180,7 @@ expected = "れんしゅうであたまうってきぜつしたことあるや"
 [[case]]
 input = "ころさん自分の影響力もうちょっと自覚してw"
 mode = "hiragana"
-expected = "ころさんじぶんのえいきょうりょくもうちょっとじかくしてw"
+expected = "ころさんじぶんのえいきょうりょくもうちょっとじかくしてワラ"
 
 [[case]]
 input = "ご都合展開きたこれ"
@@ -200,12 +200,12 @@ expected = "あつすぎるぞおお"
 [[case]]
 input = "すうちゃんも欲しがるよw"
 mode = "hiragana"
-expected = "すうちゃんもほしがるよw"
+expected = "すうちゃんもほしがるよワラ"
 
 [[case]]
 input = "トイレ手洗ってないんかw"
 mode = "hiragana"
-expected = "トイレてあらってないんかw"
+expected = "トイレてあらってないんかワラ"
 
 [[case]]
 input = "普段使いでも熟練度入るからね"
@@ -215,7 +215,7 @@ expected = "ふだんづかいでもじゅくれんどはいるからね"
 [[case]]
 input = "足の引っ張り合いになるぞw"
 mode = "hiragana"
-expected = "あしのひっぱりあいになるぞw"
+expected = "あしのひっぱりあいになるぞワラ"
 
 # 2026-09-24 通っ = とおっ 既定 + 通う先・「に〜て」 だけ かよっ
 
@@ -286,7 +286,7 @@ expected = "くうちゅうではやがえできたらな"
 [[case]]
 input = "善人さん入ってきましたけどw"
 mode = "hiragana"
-expected = "ぜんにんさんはいってきましたけどw"
+expected = "ぜんにんさんはいってきましたけどワラ"
 
 [[case]]
 input = "桐葉菓買わなかったの!"
@@ -296,7 +296,7 @@ expected = "とうようかかわなかったの!"
 [[case]]
 input = "ワン二郎はうるさいですよねw"
 mode = "hiragana"
-expected = "ワンじろうはうるさいですよねw"
+expected = "ワンじろうはうるさいですよねワラ"
 
 [[case]]
 input = "行くけど先行ってて"
@@ -457,7 +457,7 @@ expected = "じゅうねんひとむかし"
 [[case]]
 input = "ファーマー中々だなw"
 mode = "hiragana"
-expected = "ファーマーなかなかだなw"
+expected = "ファーマーなかなかだなワラ"
 
 [[case]]
 input = "弾道3目指せ"
@@ -891,7 +891,7 @@ expected = "しょげつむりょう"
 [[case]]
 input = "一口目からw"
 mode = "hiragana"
-expected = "ひとくちめからw"
+expected = "ひとくちめからワラ"
 
 [[case]]
 input = "二口目"

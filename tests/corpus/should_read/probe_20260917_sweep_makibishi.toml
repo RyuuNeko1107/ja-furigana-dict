@@ -336,12 +336,12 @@ expected = "がんそねずみせんぱい?"
 [[case]]
 input = "GTAを彷彿とさせるw"
 mode = "hiragana"
-expected = "ジーティーエーをほうふつとさせるw"
+expected = "ジーティーエーをほうふつとさせるワラ"
 
 [[case]]
 input = "初代の日記を彷彿させるねぇw"
 mode = "hiragana"
-expected = "しょだいのにっきをほうふつさせるねぇw"
+expected = "しょだいのにっきをほうふつさせるねぇワラ"
 
 [[case]]
 input = "シャアとカムランの邂逅"
@@ -356,7 +356,7 @@ expected = "はつかいこうのはなし、ふたたび"
 [[case]]
 input = "心と体を天秤にかけたw"
 mode = "hiragana"
-expected = "こころとからだをてんびんにかけたw"
+expected = "こころとからだをてんびんにかけたワラ"
 
 [[case]]
 input = "秤折るやんけ!!!"
@@ -411,7 +411,7 @@ expected = "くじらつれそう"
 [[case]]
 input = "鯨波...w"
 mode = "hiragana"
-expected = "ときのこえ...w"
+expected = "ときのこえ...ワラ"
 
 [[case]]
 input = "オーストラリアの反捕鯨団体"
@@ -421,10 +421,10 @@ expected = "オーストラリアのはんほげいだんたい"
 [[case]]
 input = "匍匐前進できたらなw"
 mode = "hiragana"
-expected = "ほふくぜんしんできたらなw"
+expected = "ほふくぜんしんできたらなワラ"
 
 [[case]]
 input = "すでに匍匐w"
 mode = "hiragana"
-expected = "すでにほふくw"
+expected = "すでにほふくワラ"
 

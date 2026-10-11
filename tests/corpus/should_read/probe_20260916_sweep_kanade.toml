@@ -8,7 +8,7 @@ expected = "がんばれかなで"
 [[case]]
 input = "奏かわいいやんw"
 mode = "hiragana"
-expected = "かなでかわいいやんw"
+expected = "かなでかわいいやんワラ"
 
 [[case]]
 input = "奏斗が捕る"

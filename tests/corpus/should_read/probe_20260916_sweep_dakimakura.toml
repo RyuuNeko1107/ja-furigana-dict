@@ -1,7 +1,7 @@
 [[case]]
 input = "とても薄味宝箱w"
 mode = "hiragana"
-expected = "とてもうすあじたからばこw"
+expected = "とてもうすあじたからばこワラ"
 
 [[case]]
 input = "ワイド買うなら人気薄買わないと"
@@ -61,7 +61,7 @@ expected = "かしてあげよう"
 [[case]]
 input = "借こっわw"
 mode = "hiragana"
-expected = "かりこっわw"
+expected = "かりこっわワラ"
 
 [[case]]
 input = "縁同士くっつくんかい"
@@ -101,7 +101,7 @@ expected = "デクのきさまww"
 [[case]]
 input = "柳楽優弥w"
 mode = "hiragana"
-expected = "やぎらゆうやw"
+expected = "やぎらゆうやワラ"
 
 [[case]]
 input = "籠絡完了"

@@ -16,7 +16,7 @@ expected = "ちょうどきゅうのボケだったという"
 [[case]]
 input = "連弩w"
 mode = "hiragana"
-expected = "れんどw"
+expected = "れんどワラ"
 
 [[case]]
 input = "Tスピンの連弩が"
@@ -76,5 +76,5 @@ expected = "あし"
 [[case]]
 input = "銅鑼w"
 mode = "hiragana"
-expected = "どらw"
+expected = "どらワラ"
 

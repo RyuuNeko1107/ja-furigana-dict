@@ -71,7 +71,7 @@ expected = "たかぐちどんそくすぎる"
 [[case]]
 input = "供給が乏しかったからか?w"
 mode = "hiragana"
-expected = "きょうきゅうがとぼしかったからか?w"
+expected = "きょうきゅうがとぼしかったからか?ワラ"
 
 [[case]]
 input = "ちなみに弟は航大"

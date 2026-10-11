@@ -8,7 +8,7 @@ expected = "まだこすってるわら"
 [[case]]
 input = "今地面に擦ったぞw"
 mode = "hiragana"
-expected = "いまじめんにこすったぞw"
+expected = "いまじめんにこすったぞワラ"
 
 [[case]]
 input = "ネタ擦ってた"

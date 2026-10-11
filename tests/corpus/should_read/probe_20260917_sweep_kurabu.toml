@@ -16,12 +16,12 @@ expected = "かつよりがいわびつにいったとして、たけだけが�
 [[case]]
 input = "ダチョウ俱楽部かなw"
 mode = "hiragana"
-expected = "ダチョウくらぶかなw"
+expected = "ダチョウくらぶかなワラ"
 
 [[case]]
 input = "ダチョウ俱楽部w"
 mode = "hiragana"
-expected = "ダチョウくらぶw"
+expected = "ダチョウくらぶワラ"
 
 [[case]]
 input = "タモリ俱楽部に出てるイメージが強いな"

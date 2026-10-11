@@ -6,7 +6,7 @@ expected = "となるとなおさらハードしゅうかいがうまそうや�
 [[case]]
 input = "猶更悪いw"
 mode = "hiragana"
-expected = "なおさらわるいw"
+expected = "なおさらわるいワラ"
 
 [[case]]
 input = "このゲームモードは猶更"
@@ -36,7 +36,7 @@ expected = "よめこじゅうとめ"
 [[case]]
 input = "爆轟くんw"
 mode = "hiragana"
-expected = "ばくごうくんw"
+expected = "ばくごうくんワラ"
 
 [[case]]
 input = "爆轟きた"
@@ -61,7 +61,7 @@ expected = "やぐらふうこみたいなこがいいでしょ"
 [[case]]
 input = "姑息w"
 mode = "hiragana"
-expected = "こそくw"
+expected = "こそくワラ"
 
 [[case]]
 input = "小姑いた?"
@@ -96,7 +96,7 @@ expected = "しほういんだからなぁ"
 [[case]]
 input = "轟はじめのライブおまえらみろよw"
 mode = "hiragana"
-expected = "とどろきはじめのライブおまえらみろよw"
+expected = "とどろきはじめのライブおまえらみろよワラ"
 
 [[case]]
 input = "車3つで轟です!"
@@ -166,7 +166,7 @@ expected = "えんずいけり"
 [[case]]
 input = "ゲーマーの真髄よw"
 mode = "hiragana"
-expected = "ゲーマーのしんずいよw"
+expected = "ゲーマーのしんずいよワラ"
 
 [[case]]
 input = "破壊神の神髄wwwwwww"
@@ -201,7 +201,7 @@ expected = "あいしゅうwww"
 [[case]]
 input = "ご愁傷様w"
 mode = "hiragana"
-expected = "ごしゅうしょうさまw"
+expected = "ごしゅうしょうさまワラ"
 
 [[case]]
 input = "体が痒いのかな?"
@@ -211,7 +211,7 @@ expected = "からだがかゆいのかな?"
 [[case]]
 input = "あちこち痒なるやんw"
 mode = "hiragana"
-expected = "あちこちかゆなるやんw"
+expected = "あちこちかゆなるやんワラ"
 
 [[case]]
 input = "将棋"

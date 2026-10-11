@@ -106,7 +106,7 @@ expected = "しゅうきょうだんたいか"
 [[case]]
 input = "貼ってたw"
 mode = "hiragana"
-expected = "はってたw"
+expected = "はってたワラ"
 
 [[case]]
 input = "飽きたの?"
@@ -151,7 +151,7 @@ expected = "すずきむねおがさわいでんのくさ"
 [[case]]
 input = "一向宗かよw"
 mode = "hiragana"
-expected = "いっこうしゅうかよw"
+expected = "いっこうしゅうかよワラ"
 
 [[case]]
 input = "曹洞宗のお寺か..."
@@ -161,7 +161,7 @@ expected = "そうとうしゅうのおてらか..."
 [[case]]
 input = "蘭の字がw"
 mode = "hiragana"
-expected = "らんのじがw"
+expected = "らんのじがワラ"
 
 [[case]]
 input = "津浪の心配なし"

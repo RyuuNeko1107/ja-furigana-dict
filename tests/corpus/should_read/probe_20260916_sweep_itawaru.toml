@@ -18,7 +18,7 @@ expected = "きんかくぎんかくのやつ?"
 [[case]]
 input = "田舎の中心地やんかw"
 mode = "hiragana"
-expected = "いなかのちゅうしんちやんかw"
+expected = "いなかのちゅうしんちやんかワラ"
 
 [[case]]
 input = "切り心地どうですか"

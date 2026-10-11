@@ -11,7 +11,7 @@ expected = "しんらかちょう!"
 [[case]]
 input = "静まり給えーw"
 mode = "hiragana"
-expected = "しずまりたまえーw"
+expected = "しずまりたまえーワラ"
 
 [[case]]
 input = "続け給へ"
@@ -31,7 +31,7 @@ expected = "かくけんにひとりふたりのクマたいさくせんもん�
 [[case]]
 input = "図書館容易しようw"
 mode = "hiragana"
-expected = "としょかんよういしようw"
+expected = "としょかんよういしようワラ"
 
 [[case]]
 input = "具材容易しすぎ問題"
@@ -51,7 +51,7 @@ expected = "いとおしい いっしょうぬまってほしい"
 [[case]]
 input = "前回沼ったからなぁw"
 mode = "hiragana"
-expected = "ぜんかいぬまったからなぁw"
+expected = "ぜんかいぬまったからなぁワラ"
 
 [[case]]
 input = "ころさんここのジャンプ結構沼ってたよね"
@@ -76,12 +76,12 @@ expected = "しょしんしゃぬまおじさん"
 [[case]]
 input = "超沼ゲーだからw"
 mode = "hiragana"
-expected = "ちょうぬまゲーだからw"
+expected = "ちょうぬまゲーだからワラ"
 
 [[case]]
 input = "一番沼ったところやw"
 mode = "hiragana"
-expected = "いちばんぬまったところやw"
+expected = "いちばんぬまったところやワラ"
 
 [[case]]
 input = "高速沼突破...いけるか?"
@@ -111,7 +111,7 @@ expected = "あべさんがほしがってとったまつもとつよしどう�
 [[case]]
 input = "ドラゴンボールのナメック星編みたいw"
 mode = "hiragana"
-expected = "ドラゴンボールのナメックせいへんみたいw"
+expected = "ドラゴンボールのナメックせいへんみたいワラ"
 
 [[case]]
 input = "犯罪者が逃げてる体で運転しとるんか?ww"

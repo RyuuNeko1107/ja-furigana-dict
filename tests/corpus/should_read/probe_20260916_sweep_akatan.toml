@@ -3,7 +3,7 @@
 [[case]]
 input = "大赤字やんけw"
 mode = "hiragana"
-expected = "おおあかじやんけw"
+expected = "おおあかじやんけワラ"
 
 [[case]]
 input = "迷子赤たん"
@@ -18,12 +18,12 @@ expected = "じゅんすいあかちゃんぺこだよぉ!"
 [[case]]
 input = "赤ちゃん本舗とコラボでw"
 mode = "hiragana"
-expected = "あかちゃんほんぽとコラボでw"
+expected = "あかちゃんほんぽとコラボでワラ"
 
 [[case]]
 input = "これで負けたら赤っ恥w"
 mode = "hiragana"
-expected = "これでまけたらあかっぱじw"
+expected = "これでまけたらあかっぱじワラ"
 
 [[case]]
 input = "平沢進?"

@@ -21,7 +21,7 @@ expected = "こうしきえ"
 [[case]]
 input = "おかおじの全体絵初めて見たかもw"
 mode = "hiragana"
-expected = "おかおじのぜんたいえはじめてみたかもw"
+expected = "おかおじのぜんたいえはじめてみたかもワラ"
 
 [[case]]
 input = "ころさんの地上絵"
@@ -46,7 +46,7 @@ expected = "おねえたま"
 [[case]]
 input = "お姉たんw"
 mode = "hiragana"
-expected = "おねえたんw"
+expected = "おねえたんワラ"
 
 [[case]]
 input = "お姉さーん!?"

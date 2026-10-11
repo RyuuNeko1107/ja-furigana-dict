@@ -1,7 +1,7 @@
 [[case]]
 input = "哀川翔かよw"
 mode = "hiragana"
-expected = "あいかわしょうかよw"
+expected = "あいかわしょうかよワラ"
 
 [[case]]
 input = "おかゆんはもはや宇宙サイズの五芒星"
@@ -21,7 +21,7 @@ expected = "いのがしらごろうみたいにこころのなかでしゃべ�
 [[case]]
 input = "井之頭五郎に聞こうw"
 mode = "hiragana"
-expected = "いのがしらごろうにきこうw"
+expected = "いのがしらごろうにきこうワラ"
 
 [[case]]
 input = "李平蔵は日本人を守る政党は潰すと言っている"
@@ -61,7 +61,7 @@ expected = "ドロップりつひくくてにんずうぶんかぎあつめる�
 [[case]]
 input = "鍵に見向きをしないw"
 mode = "hiragana"
-expected = "かぎにみむきをしないw"
+expected = "かぎにみむきをしないワラ"
 
 [[case]]
 input = "あ、双六爺さんカードくれるパターンじゃないんや"
@@ -116,7 +116,7 @@ expected = "にせらぼ"
 [[case]]
 input = "偽んなたんw"
 mode = "hiragana"
-expected = "にせんなたんw"
+expected = "にせんなたんワラ"
 
 [[case]]
 input = "8大好きな俺涙目"

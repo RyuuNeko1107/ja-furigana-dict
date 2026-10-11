@@ -6,7 +6,7 @@ expected = "におうだち"
 [[case]]
 input = "こっちも仁王勃ちw"
 mode = "hiragana"
-expected = "こっちもにおうだちw"
+expected = "こっちもにおうだちワラ"
 
 [[case]]
 input = "勃つな"
@@ -21,7 +21,7 @@ expected = "マリンがたった!!"
 [[case]]
 input = "まさかのキャッチャー争い勃発w"
 mode = "hiragana"
-expected = "まさかのキャッチャーあらそいぼっぱつw"
+expected = "まさかのキャッチャーあらそいぼっぱつワラ"
 
 [[case]]
 input = "ファーマー戦争勃発か"
@@ -31,7 +31,7 @@ expected = "ファーマーせんそうぼっぱつか"
 [[case]]
 input = "一揆勃発w"
 mode = "hiragana"
-expected = "いっきぼっぱつw"
+expected = "いっきぼっぱつワラ"
 
 [[case]]
 input = "減税と規制緩和による小さな政府こそ経済勃興のカギだと思ってる"
@@ -76,7 +76,7 @@ expected = "まごにもいしょう?"
 [[case]]
 input = "あの衣裳の準備大変そうw"
 mode = "hiragana"
-expected = "あのいしょうのじゅんびたいへんそうw"
+expected = "あのいしょうのじゅんびたいへんそうワラ"
 
 [[case]]
 input = "伊都大附のライフはもう0よ"
@@ -331,7 +331,7 @@ expected = "ぼうおんしつがきしんでるのか"
 [[case]]
 input = "歯軋りの音がw"
 mode = "hiragana"
-expected = "はぎしりのおとがw"
+expected = "はぎしりのおとがワラ"
 
 [[case]]
 input = "軋れ パンテラ!!"

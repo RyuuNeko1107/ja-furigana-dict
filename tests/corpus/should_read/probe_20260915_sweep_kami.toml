@@ -13,7 +13,7 @@ expected = "ちっちゃくてかわいい"
 [[case]]
 input = "プール小っさw"
 mode = "hiragana"
-expected = "プールちっさw"
+expected = "プールちっさワラ"
 
 [[case]]
 input = "小さい"

@@ -36,7 +36,7 @@ expected = "みこちくくできるの!?"
 [[case]]
 input = "割り算より九九なのにw"
 mode = "hiragana"
-expected = "わりざんよりくくなのにw"
+expected = "わりざんよりくくなのにワラ"
 
 [[case]]
 input = "スケートやった後腰痛めた人です"
@@ -61,12 +61,12 @@ expected = "びんちょうたんでくさ"
 [[case]]
 input = "焼き芋炭になるw"
 mode = "hiragana"
-expected = "やきいもすみになるw"
+expected = "やきいもすみになるワラ"
 
 [[case]]
 input = "全部炭になるわw"
 mode = "hiragana"
-expected = "ぜんぶすみになるわw"
+expected = "ぜんぶすみになるわワラ"
 
 [[case]]
 input = "日本じゃなかったらここまで蒸さないから"

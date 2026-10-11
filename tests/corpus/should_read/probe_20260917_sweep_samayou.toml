@@ -1,7 +1,7 @@
 [[case]]
 input = "ニコ生の海を彷徨うんだよねw"
 mode = "hiragana"
-expected = "ニコなまのうみをさまようんだよねw"
+expected = "ニコなまのうみをさまようんだよねワラ"
 
 [[case]]
 input = "彷徨うまいそー"
@@ -206,7 +206,7 @@ expected = "かどわかして!"
 [[case]]
 input = "ショタを拐おうとしているw"
 mode = "hiragana"
-expected = "ショタをさらおうとしているw"
+expected = "ショタをさらおうとしているワラ"
 
 [[case]]
 input = "宍戸かっこよ"
@@ -266,7 +266,7 @@ expected = "つぎはふくしまのらくおうカフェオレをぜひ"
 [[case]]
 input = "疲労困憊w"
 mode = "hiragana"
-expected = "ひろうこんぱいw"
+expected = "ひろうこんぱいワラ"
 
 [[case]]
 input = "困憊しとるWWW"
@@ -311,7 +311,7 @@ expected = "くんせいぎんたら"
 [[case]]
 input = "無闇矢鱈に置けねぇw"
 mode = "hiragana"
-expected = "むやみやたらにおけねぇw"
+expected = "むやみやたらにおけねぇワラ"
 
 [[case]]
 input = "まさかの大抜擢"

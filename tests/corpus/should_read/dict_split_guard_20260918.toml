@@ -57,7 +57,7 @@ expected = "じゅおんもいまはむかし"
 [[case]]
 input = "根暗にはきついw"
 mode = "hiragana"
-expected = "ねくらにはきついw"
+expected = "ねくらにはきついワラ"
 
 [[case]]
 input = "盗撮もしてるやん"
@@ -102,7 +102,7 @@ expected = "さっちした"
 [[case]]
 input = "解んなくなっちゃったw"
 mode = "hiragana"
-expected = "わかんなくなっちゃったw"
+expected = "わかんなくなっちゃったワラ"
 
 [[case]]
 input = "解らないから解けた"
@@ -237,7 +237,7 @@ expected = "クオリティたかすぎ"
 [[case]]
 input = "中和w"
 mode = "hiragana"
-expected = "ちゅうわw"
+expected = "ちゅうわワラ"
 
 [[case]]
 input = "円安が進む"

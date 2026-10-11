@@ -6,7 +6,7 @@ expected = "すなばでころんだときのきずみたい"
 [[case]]
 input = "結構デカい八方手裏剣だったw"
 mode = "hiragana"
-expected = "けっこうデカいはっぽうしゅりけんだったw"
+expected = "けっこうデカいはっぽうしゅりけんだったワラ"
 
 [[case]]
 input = "凍れる時の秘宝"
@@ -46,7 +46,7 @@ expected = "わどめのりあげてるんやが"
 [[case]]
 input = "癖強w"
 mode = "hiragana"
-expected = "くせつよw"
+expected = "くせつよワラ"
 
 [[case]]
 input = "ぐるぐる目性癖にドンピシャすぎる"
@@ -86,7 +86,7 @@ expected = "わしらにはすくえぬものじゃ"
 [[case]]
 input = "虫網だねw"
 mode = "hiragana"
-expected = "むしあみだねw"
+expected = "むしあみだねワラ"
 
 [[case]]
 input = "虫取網か"
@@ -96,12 +96,12 @@ expected = "むしとりあみか"
 [[case]]
 input = "大迫力w"
 mode = "hiragana"
-expected = "だいはくりょくw"
+expected = "だいはくりょくワラ"
 
 [[case]]
 input = "緊急穴閉じw"
 mode = "hiragana"
-expected = "きんきゅうあなとじw"
+expected = "きんきゅうあなとじワラ"
 
 [[case]]
 input = "スイカ泥棒に来る隣村の住人"

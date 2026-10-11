@@ -18,7 +18,7 @@ expected = "ちょうぶんありがとうございます"
 [[case]]
 input = "笑かすなw"
 mode = "hiragana"
-expected = "わらかすなw"
+expected = "わらかすなワラ"
 
 [[case]]
 input = "笑けてきたね"
@@ -28,7 +28,7 @@ expected = "わらけてきたね"
 [[case]]
 input = "笑てまうわw"
 mode = "hiragana"
-expected = "わらてまうわw"
+expected = "わらてまうわワラ"
 
 [[case]]
 input = "笑った"

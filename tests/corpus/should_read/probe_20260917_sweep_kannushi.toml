@@ -56,7 +56,7 @@ expected = "むせたwwwww"
 [[case]]
 input = "笑いながらだと咽るでw"
 mode = "hiragana"
-expected = "わらいながらだとむせるでw"
+expected = "わらいながらだとむせるでワラ"
 
 [[case]]
 input = "咽び泣くよ"
@@ -91,7 +91,7 @@ expected = "じゃあカットでとうしゅおろしこうけんでいいん�
 [[case]]
 input = "卸ってことでw"
 mode = "hiragana"
-expected = "おろしってことでw"
+expected = "おろしってことでワラ"
 
 [[case]]
 input = "卸の横流しかな?"
@@ -101,7 +101,7 @@ expected = "おろしのよこながしかな?"
 [[case]]
 input = "小売りか卸の人かなw"
 mode = "hiragana"
-expected = "こうりかおろしのひとかなw"
+expected = "こうりかおろしのひとかなワラ"
 
 [[case]]
 input = "卸価格があるからね"
@@ -246,7 +246,7 @@ expected = "かじりつきでみます"
 [[case]]
 input = "奈落に引き摺り込まれたw"
 mode = "hiragana"
-expected = "ならくにひきずりこまれたw"
+expected = "ならくにひきずりこまれたワラ"
 
 [[case]]
 input = "手摺り消失"
@@ -296,7 +296,7 @@ expected = "おちぶれることはあってもやめなきゃいいんじゃ�
 [[case]]
 input = "五芒星掘るかw"
 mode = "hiragana"
-expected = "ごぼうせいほるかw"
+expected = "ごぼうせいほるかワラ"
 
 [[case]]
 input = "六芒星と逆六芒星でやりましょう"
@@ -321,12 +321,12 @@ expected = "かへいかちやべえ"
 [[case]]
 input = "トランプの紙幣、悪そうな顔だなw"
 mode = "hiragana"
-expected = "トランプのしへい、わるそうなかおだなw"
+expected = "トランプのしへい、わるそうなかおだなワラ"
 
 [[case]]
 input = "御幣があるw"
 mode = "hiragana"
-expected = "ごへいがあるw"
+expected = "ごへいがあるワラ"
 
 [[case]]
 input = "大幣ないからラトルやね"
@@ -386,7 +386,7 @@ expected = "あくたがわしょうとれなくても、だざいおさむみ�
 [[case]]
 input = "参加するタイプの地獄企画主宰w"
 mode = "hiragana"
-expected = "さんかするタイプのじごくきかくしゅさいw"
+expected = "さんかするタイプのじごくきかくしゅさいワラ"
 
 [[case]]
 input = "宰相"
@@ -421,12 +421,12 @@ expected = "ろくなかみがいないゼノブレイドシリーズ"
 [[case]]
 input = "碌でもないw"
 mode = "hiragana"
-expected = "ろくでもないw"
+expected = "ろくでもないワラ"
 
 [[case]]
 input = "耄碌してるw"
 mode = "hiragana"
-expected = "もうろくしてるw"
+expected = "もうろくしてるワラ"
 
 [[case]]
 input = "今まで碌に来なかったのにここでwww"

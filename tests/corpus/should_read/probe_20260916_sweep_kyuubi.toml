@@ -48,12 +48,12 @@ expected = "みせにくきゅうはネコらしさをかんじる"
 [[case]]
 input = "綿毛が肉球みたいw"
 mode = "hiragana"
-expected = "わたげがにくきゅうみたいw"
+expected = "わたげがにくきゅうみたいワラ"
 
 [[case]]
 input = "ブレーキかけんのが遅せぇってのにw"
 mode = "hiragana"
-expected = "ブレーキかけんのがおせぇってのにw"
+expected = "ブレーキかけんのがおせぇってのにワラ"
 
 [[case]]
 input = "背景黒は地獄企画"
@@ -108,7 +108,7 @@ expected = "ちゃんとかどまるのしかくにきりとっててエライ"
 [[case]]
 input = "生活音丸聞こえw"
 mode = "hiragana"
-expected = "せいかつおんまるぎこえw"
+expected = "せいかつおんまるぎこえワラ"
 
 [[case]]
 input = "兎丸ペルカ"
@@ -173,7 +173,7 @@ expected = "きょうだいでふろはいってるのか..."
 [[case]]
 input = "合図草w"
 mode = "hiragana"
-expected = "あいずくさw"
+expected = "あいずくさワラ"
 
 [[case]]
 input = "殲滅宣言草"
@@ -183,7 +183,7 @@ expected = "せんめつせんげんくさ"
 [[case]]
 input = "ツッコミや拾い方もうまいもんねw"
 mode = "hiragana"
-expected = "ツッコミやひろいかたもうまいもんねw"
+expected = "ツッコミやひろいかたもうまいもんねワラ"
 
 [[case]]
 input = "終わり方は納得した?"
@@ -193,4 +193,4 @@ expected = "おわりかたはなっとくした?"
 [[case]]
 input = "大河かなw"
 mode = "hiragana"
-expected = "たいがかなw"
+expected = "たいがかなワラ"

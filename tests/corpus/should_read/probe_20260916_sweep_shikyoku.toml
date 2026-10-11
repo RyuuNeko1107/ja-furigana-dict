@@ -46,7 +46,7 @@ expected = "にほんしじょうをきせいしだしたな"
 [[case]]
 input = "時代は転職市場だったかw"
 mode = "hiragana"
-expected = "じだいはてんしょくしじょうだったかw"
+expected = "じだいはてんしょくしじょうだったかワラ"
 
 [[case]]
 input = "素晴しかった"
@@ -71,7 +71,7 @@ expected = "りょうりきわめよ"
 [[case]]
 input = "極めすぎw"
 mode = "hiragana"
-expected = "きわめすぎw"
+expected = "きわめすぎワラ"
 
 [[case]]
 input = "戦極かアドレナリンかな?"
@@ -101,10 +101,10 @@ expected = "こくしょびでテニスしたい"
 [[case]]
 input = "暑っ苦しいw"
 mode = "hiragana"
-expected = "あつくるしいw"
+expected = "あつくるしいワラ"
 
 [[case]]
 input = "紫炎懐かしいw"
 mode = "hiragana"
-expected = "しえんなつかしいw"
+expected = "しえんなつかしいワラ"
 

@@ -191,12 +191,12 @@ expected = "にんしきそごでくさ"
 [[case]]
 input = "齟齬と語弊しかないw"
 mode = "hiragana"
-expected = "そごとごへいしかないw"
+expected = "そごとごへいしかないワラ"
 
 [[case]]
 input = "仗助w"
 mode = "hiragana"
-expected = "じょうすけw"
+expected = "じょうすけワラ"
 
 [[case]]
 input = "東方仗助の金欠時も12円だったな"
@@ -276,7 +276,7 @@ expected = "たたずまいがかわいくてくさ"
 [[case]]
 input = "目の前に佇んでるw"
 mode = "hiragana"
-expected = "めのまえにたたずんでるw"
+expected = "めのまえにたたずんでるワラ"
 
 [[case]]
 input = "傍らに佇む者・スタンド"

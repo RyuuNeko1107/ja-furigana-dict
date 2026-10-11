@@ -156,7 +156,7 @@ expected = "もうろうとしてる"
 [[case]]
 input = "朧げに見えてきたw"
 mode = "hiragana"
-expected = "おぼろげにみえてきたw"
+expected = "おぼろげにみえてきたワラ"
 
 [[case]]
 input = "無双は一薙ぎ数十人"
@@ -186,7 +186,7 @@ expected = "あさか"
 [[case]]
 input = "朝霞近いw"
 mode = "hiragana"
-expected = "あさかちかいw"
+expected = "あさかちかいワラ"
 
 [[case]]
 input = "霞ヶ関どすか"
@@ -196,7 +196,7 @@ expected = "かすみがせきどすか"
 [[case]]
 input = "霞んで見えるw"
 mode = "hiragana"
-expected = "かすんでみえるw"
+expected = "かすんでみえるワラ"
 
 [[case]]
 input = "師叔!?"
@@ -301,12 +301,12 @@ expected = "いちょう!"
 [[case]]
 input = "杏仁豆腐w"
 mode = "hiragana"
-expected = "あんにんどうふw"
+expected = "あんにんどうふワラ"
 
 [[case]]
 input = "杏子なの笑うw"
 mode = "hiragana"
-expected = "あんずなのわらうw"
+expected = "あんずなのわらうワラ"
 
 [[case]]
 input = "小野篁!"
@@ -321,7 +321,7 @@ expected = "こんとんのおとしこ"
 [[case]]
 input = "膀胱炎気をつけなーw"
 mode = "hiragana"
-expected = "ぼうこうえんきをつけなーw"
+expected = "ぼうこうえんきをつけなーワラ"
 
 [[case]]
 input = "CoCo壱の福神漬け"
@@ -421,7 +421,7 @@ expected = "もんぜつするほどかわいい"
 [[case]]
 input = "悶えてるがなw"
 mode = "hiragana"
-expected = "もだえてるがなw"
+expected = "もだえてるがなワラ"
 
 [[case]]
 input = "これはひと悶着ありそうだww"
@@ -431,5 +431,5 @@ expected = "これはひともんちゃくありそうだww"
 [[case]]
 input = "苦悶の表情w"
 mode = "hiragana"
-expected = "くもんのひょうじょうw"
+expected = "くもんのひょうじょうワラ"
 

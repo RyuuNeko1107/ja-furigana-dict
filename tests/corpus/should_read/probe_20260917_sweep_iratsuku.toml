@@ -1,7 +1,7 @@
 [[case]]
 input = "苛ついてるw"
 mode = "hiragana"
-expected = "いらついてるw"
+expected = "いらついてるワラ"
 
 [[case]]
 input = "苛ついてるっぽい"
@@ -11,7 +11,7 @@ expected = "いらついてるっぽい"
 [[case]]
 input = "本田が苛ついてるw"
 mode = "hiragana"
-expected = "ほんだがいらついてるw"
+expected = "ほんだがいらついてるワラ"
 
 [[case]]
 input = "アルゼンチン苛ついてるな。"
@@ -26,12 +26,12 @@ expected = "あいていらついてるね"
 [[case]]
 input = "ヴィニ苛ついてたけどどうなん?w"
 mode = "hiragana"
-expected = "ヴィニいらついてたけどどうなん?w"
+expected = "ヴィニいらついてたけどどうなん?ワラ"
 
 [[case]]
 input = "普通に苛ついてたw"
 mode = "hiragana"
-expected = "ふつうにいらついてたw"
+expected = "ふつうにいらついてたワラ"
 
 [[case]]
 input = "ブラジル苛ついてきてる"
@@ -81,7 +81,7 @@ expected = "そりゃあいらつくな"
 [[case]]
 input = "これは苛つくw"
 mode = "hiragana"
-expected = "これはいらつくw"
+expected = "これはいらつくワラ"
 
 [[case]]
 input = "苛立ってる"
@@ -101,12 +101,12 @@ expected = "かれつだなぁ"
 [[case]]
 input = "罪悪感に苛まれる悲しき獣w"
 mode = "hiragana"
-expected = "ざいあくかんにさいなまれるかなしきけものw"
+expected = "ざいあくかんにさいなまれるかなしきけものワラ"
 
 [[case]]
 input = "弱いもの苛めじゃねぇかw"
 mode = "hiragana"
-expected = "よわいものいじめじゃねぇかw"
+expected = "よわいものいじめじゃねぇかワラ"
 
 [[case]]
 input = "そーだそーだ、苛性ソーダ"
@@ -161,7 +161,7 @@ expected = "かしわ?"
 [[case]]
 input = "柏手うたないとw"
 mode = "hiragana"
-expected = "かしわでうたないとw"
+expected = "かしわでうたないとワラ"
 
 [[case]]
 input = "柏の葉公園とかかな"
@@ -186,12 +186,12 @@ expected = "みのださんかひろせさんがいい"
 [[case]]
 input = "隠れ蓑w"
 mode = "hiragana"
-expected = "かくれみのw"
+expected = "かくれみのワラ"
 
 [[case]]
 input = "漕ぎ放題w"
 mode = "hiragana"
-expected = "こぎほうだいw"
+expected = "こぎほうだいワラ"
 
 [[case]]
 input = "阿漕な商売!?"

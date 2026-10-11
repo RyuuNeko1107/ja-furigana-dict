@@ -6,12 +6,12 @@ expected = "あさづけってうまいよな"
 [[case]]
 input = "わかるが浅えw"
 mode = "hiragana"
-expected = "わかるがあさえw"
+expected = "わかるがあさえワラ"
 
 [[case]]
 input = "浅っさいなw"
 mode = "hiragana"
-expected = "あさっさいなw"
+expected = "あさっさいなワラ"
 
 [[case]]
 input = "ぺこちゃん浅帰りしたね"

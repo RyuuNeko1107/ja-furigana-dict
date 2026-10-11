@@ -16,7 +16,7 @@ expected = "からす!?"
 [[case]]
 input = "不吉なの?鴉の羽は幸運のサインなんだがw"
 mode = "hiragana"
-expected = "ふきつなの?からすのはねはこううんのサインなんだがw"
+expected = "ふきつなの?からすのはねはこううんのサインなんだがワラ"
 
 [[case]]
 input = "天狗とか鴉とか"
@@ -31,7 +31,7 @@ expected = "かいいよりからすのほうがビックリする"
 [[case]]
 input = "喬木ってw"
 mode = "hiragana"
-expected = "きょうぼくってw"
+expected = "きょうぼくってワラ"
 
 [[case]]
 input = "喬木で橋にするんか"

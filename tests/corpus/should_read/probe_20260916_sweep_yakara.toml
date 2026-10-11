@@ -3,7 +3,7 @@
 [[case]]
 input = "完全に輩w"
 mode = "hiragana"
-expected = "かんぜんにやからw"
+expected = "かんぜんにやからワラ"
 
 [[case]]
 input = "輩きたー"

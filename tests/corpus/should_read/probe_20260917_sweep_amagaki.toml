@@ -86,12 +86,12 @@ expected = "しょうばいがたきってコト?"
 [[case]]
 input = "恩を仇で返すw"
 mode = "hiragana"
-expected = "おんをあだでかえすw"
+expected = "おんをあだでかえすワラ"
 
 [[case]]
 input = "杞憂かいw"
 mode = "hiragana"
-expected = "きゆうかいw"
+expected = "きゆうかいワラ"
 
 [[case]]
 input = "推奨ラインに乗れてないからな"
@@ -171,7 +171,7 @@ expected = "せっかんww"
 [[case]]
 input = "遭難するぞw"
 mode = "hiragana"
-expected = "そうなんするぞw"
+expected = "そうなんするぞワラ"
 
 [[case]]
 input = "被害に遭った"
@@ -206,7 +206,7 @@ expected = "てあかがついたかんじがよい"
 [[case]]
 input = "水撒きしないから?w"
 mode = "hiragana"
-expected = "みずまきしないから?w"
+expected = "みずまきしないから?ワラ"
 
 [[case]]
 input = "忖度"

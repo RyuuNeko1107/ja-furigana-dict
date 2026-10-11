@@ -16,7 +16,7 @@ expected = "しれっとってひげそりだよね?"
 [[case]]
 input = "お嬢の髭剃り案件とか謎だったしねw"
 mode = "hiragana"
-expected = "おじょうのひげそりあんけんとかなぞだったしねw"
+expected = "おじょうのひげそりあんけんとかなぞだったしねワラ"
 
 [[case]]
 input = "メッシ髭剃ってほしい"
@@ -76,7 +76,7 @@ expected = "くつひも!"
 [[case]]
 input = "肩紐細すぎないか?w"
 mode = "hiragana"
-expected = "かたひもほそすぎないか?w"
+expected = "かたひもほそすぎないか?ワラ"
 
 [[case]]
 input = "貝紐ww"
@@ -131,7 +131,7 @@ expected = "すとくてんのう"
 [[case]]
 input = "破綻してるw"
 mode = "hiragana"
-expected = "はたんしてるw"
+expected = "はたんしてるワラ"
 
 [[case]]
 input = "綻びでたな"
@@ -276,7 +276,7 @@ expected = "えんざいだ"
 [[case]]
 input = "誘導尋問w"
 mode = "hiragana"
-expected = "ゆうどうじんもんw"
+expected = "ゆうどうじんもんワラ"
 
 [[case]]
 input = "千と千尋の神隠し"
@@ -286,7 +286,7 @@ expected = "せんとちひろのかみかくし"
 [[case]]
 input = "東尋坊w"
 mode = "hiragana"
-expected = "とうじんぼうw"
+expected = "とうじんぼうワラ"
 
 [[case]]
 input = "尋常じゃない"

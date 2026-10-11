@@ -8,7 +8,7 @@ expected = "あおりあいはじまった"
 [[case]]
 input = "荒ぶってたw"
 mode = "hiragana"
-expected = "あらぶってたw"
+expected = "あらぶってたワラ"
 
 [[case]]
 input = "疑ってないよ"
@@ -18,7 +18,7 @@ expected = "うたがってないよ"
 [[case]]
 input = "気を遣ってくれてるw"
 mode = "hiragana"
-expected = "きをつかってくれてるw"
+expected = "きをつかってくれてるワラ"
 
 [[case]]
 input = "遣って来る"
@@ -58,7 +58,7 @@ expected = "うでくんでる"
 [[case]]
 input = "名前変えようw"
 mode = "hiragana"
-expected = "なまえかえようw"
+expected = "なまえかえようワラ"
 
 [[case]]
 input = "次代打でもいいよ"
@@ -73,7 +73,7 @@ expected = "うえはけいけんちしたはしんらい"
 [[case]]
 input = "三位一体きたw"
 mode = "hiragana"
-expected = "さんみいったいきたw"
+expected = "さんみいったいきたワラ"
 
 [[case]]
 input = "出落ちやん"
@@ -88,7 +88,7 @@ expected = "ちかすいおいしいねぇ"
 [[case]]
 input = "小便器w"
 mode = "hiragana"
-expected = "しょうべんきw"
+expected = "しょうべんきワラ"
 
 [[case]]
 input = "出汁巻き玉子さんこんばんは"
@@ -138,7 +138,7 @@ expected = "できるけどはずされるかのうせいはある"
 [[case]]
 input = "一生来なさそうw"
 mode = "hiragana"
-expected = "いっしょうこなさそうw"
+expected = "いっしょうこなさそうワラ"
 
 [[case]]
 input = "出来なさそう"
@@ -173,7 +173,7 @@ expected = "しゅうせいはいりそうだな"
 [[case]]
 input = "気合い入りすぎやろw"
 mode = "hiragana"
-expected = "きあいはいりすぎやろw"
+expected = "きあいはいりすぎやろワラ"
 
 [[case]]
 input = "お風呂入りながらみてるぞ!"
@@ -263,7 +263,7 @@ expected = "ガチでつよいんよ"
 [[case]]
 input = "また使い回しかw"
 mode = "hiragana"
-expected = "またつかいまわしかw"
+expected = "またつかいまわしかワラ"
 
 [[case]]
 input = "外野行きかな"

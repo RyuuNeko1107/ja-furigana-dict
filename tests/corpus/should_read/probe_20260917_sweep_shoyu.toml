@@ -41,7 +41,7 @@ expected = "きみだけしょうゆづけにしたらおいしい"
 [[case]]
 input = "あぶり醬油たべよといどまずかw"
 mode = "hiragana"
-expected = "あぶりしょうゆたべよといどまずかw"
+expected = "あぶりしょうゆたべよといどまずかワラ"
 
 [[case]]
 input = "醤油"
@@ -136,7 +136,7 @@ expected = "ねはんのひょうじょう"
 [[case]]
 input = "赤い涅槃像w"
 mode = "hiragana"
-expected = "あかいねはんぞうw"
+expected = "あかいねはんぞうワラ"
 
 [[case]]
 input = "嘔吐はなぁ 感染あるからね"
@@ -206,7 +206,7 @@ expected = "ばっすいかこうずみやね、しらんけど"
 [[case]]
 input = "撥ねられたw"
 mode = "hiragana"
-expected = "はねられたw"
+expected = "はねられたワラ"
 
 [[case]]
 input = "人を撥ねることはないから、大丈夫だよ"
@@ -311,7 +311,7 @@ expected = "あかぎ、はるな、みょうぎ"
 [[case]]
 input = "エジプト篇開始w"
 mode = "hiragana"
-expected = "エジプトへんかいしw"
+expected = "エジプトへんかいしワラ"
 
 [[case]]
 input = "交響詩篇エウレカセブン"

@@ -51,12 +51,12 @@ expected = "うかがかってデスクトップマスコットしらん?"
 [[case]]
 input = "様子伺ってるw"
 mode = "hiragana"
-expected = "ようすうかがってるw"
+expected = "ようすうかがってるワラ"
 
 [[case]]
 input = "お伺いw"
 mode = "hiragana"
-expected = "おうかがいw"
+expected = "おうかがいワラ"
 
 [[case]]
 input = "あ!蝦名だ!"
@@ -161,7 +161,7 @@ expected = "そしゃくおんすき"
 [[case]]
 input = "寮母発言だなw"
 mode = "hiragana"
-expected = "りょうぼはつげんだなw"
+expected = "りょうぼはつげんだなワラ"
 
 [[case]]
 input = "抜錨リベンジか"
@@ -181,7 +181,7 @@ expected = "むしやろうきた"
 [[case]]
 input = "王蟲w"
 mode = "hiragana"
-expected = "おうむw"
+expected = "おうむワラ"
 
 [[case]]
 input = "弱蟲討伐完了!"
@@ -191,12 +191,12 @@ expected = "よわむしとうばつかんりょう!"
 [[case]]
 input = "導蟲w"
 mode = "hiragana"
-expected = "どうちゅうw"
+expected = "どうちゅうワラ"
 
 [[case]]
 input = "お命頂戴w"
 mode = "hiragana"
-expected = "おいのちちょうだいw"
+expected = "おいのちちょうだいワラ"
 
 [[case]]
 input = "戴冠する土地"
@@ -261,7 +261,7 @@ expected = "せつなのいちげき"
 [[case]]
 input = "この世の羅刹w"
 mode = "hiragana"
-expected = "このよのらせつw"
+expected = "このよのらせつワラ"
 
 [[case]]
 input = "古刹巡り的な"
@@ -301,7 +301,7 @@ expected = "めちゃりゅうちょう"
 [[case]]
 input = "暢気だったw"
 mode = "hiragana"
-expected = "のんきだったw"
+expected = "のんきだったワラ"
 
 [[case]]
 input = "循環するころねすきー"

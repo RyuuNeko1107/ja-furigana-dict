@@ -11,7 +11,7 @@ expected = "キャラたいしがいあるね!"
 [[case]]
 input = "これは誘い甲斐のあるw"
 mode = "hiragana"
-expected = "これはさそいがいのあるw"
+expected = "これはさそいがいのあるワラ"
 
 [[case]]
 input = "頼り甲斐がある先鋒"
@@ -36,7 +36,7 @@ expected = "いきがいだよ"
 [[case]]
 input = "年甲斐もないw"
 mode = "hiragana"
-expected = "としがいもないw"
+expected = "としがいもないワラ"
 
 [[case]]
 input = "不甲斐ない兄を持ったばかりに"

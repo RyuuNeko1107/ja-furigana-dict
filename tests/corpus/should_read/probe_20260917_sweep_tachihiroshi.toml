@@ -141,7 +141,7 @@ expected = "つばぜりあい"
 [[case]]
 input = "腑に落ちたw"
 mode = "hiragana"
-expected = "ふにおちたw"
+expected = "ふにおちたワラ"
 
 [[case]]
 input = "五臓六腑"
@@ -176,7 +176,7 @@ expected = "ごうし"
 [[case]]
 input = "冒涜w"
 mode = "hiragana"
-expected = "ぼうとくw"
+expected = "ぼうとくワラ"
 
 [[case]]
 input = "摩訶摩訶"
@@ -196,7 +196,7 @@ expected = "あいぜんそうすけ"
 [[case]]
 input = "頷いてるw"
 mode = "hiragana"
-expected = "うなずいてるw"
+expected = "うなずいてるワラ"
 
 [[case]]
 input = "怠惰www"
@@ -206,7 +206,7 @@ expected = "たいだwww"
 [[case]]
 input = "惰性でやるからやでw"
 mode = "hiragana"
-expected = "だせいでやるからやでw"
+expected = "だせいでやるからやでワラ"
 
 [[case]]
 input = "惰弱"
@@ -236,7 +236,7 @@ expected = "さいごのばんさん?"
 [[case]]
 input = "午餐会の招待状かな?w"
 mode = "hiragana"
-expected = "ごさんかいのしょうたいじょうかな?w"
+expected = "ごさんかいのしょうたいじょうかな?ワラ"
 
 [[case]]
 input = "謳歌しとるwww"
@@ -256,7 +256,7 @@ expected = "とっさにだせないんだね"
 [[case]]
 input = "怨嗟の声がw"
 mode = "hiragana"
-expected = "えんさのこえがw"
+expected = "えんさのこえがワラ"
 
 [[case]]
 input = "坐禅に見える"
@@ -331,7 +331,7 @@ expected = "ふくながゆういちきゅうしゃ"
 [[case]]
 input = "安達祐実きましたw"
 mode = "hiragana"
-expected = "あだちゆみきましたw"
+expected = "あだちゆみきましたワラ"
 
 [[case]]
 input = "野村祐輔!"

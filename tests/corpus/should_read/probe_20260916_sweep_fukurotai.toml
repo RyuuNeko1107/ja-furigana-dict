@@ -41,7 +41,7 @@ expected = "またうんてい"
 [[case]]
 input = "雲梯多くない?w"
 mode = "hiragana"
-expected = "うんていおおくない?w"
+expected = "うんていおおくない?ワラ"
 
 [[case]]
 input = "W杯の日本戦は21日やね"
@@ -136,7 +136,7 @@ expected = "いっすんさきはやみ"
 [[case]]
 input = "視聴者多っw"
 mode = "hiragana"
-expected = "しちょうしゃおおっw"
+expected = "しちょうしゃおおっワラ"
 
 [[case]]
 input = "麻雀で天和をあがれます様に"
@@ -146,7 +146,7 @@ expected = "まーじゃんでてんほーをあがれますさまに"
 [[case]]
 input = "天の助かよw"
 mode = "hiragana"
-expected = "てんのすけかよw"
+expected = "てんのすけかよワラ"
 
 [[case]]
 input = "曲近!"

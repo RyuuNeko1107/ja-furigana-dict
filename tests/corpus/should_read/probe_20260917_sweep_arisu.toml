@@ -61,7 +61,7 @@ expected = "いなにすのかけらww"
 [[case]]
 input = "憐みw"
 mode = "hiragana"
-expected = "あわれみw"
+expected = "あわれみワラ"
 
 [[case]]
 input = "憐み"
@@ -71,7 +71,7 @@ expected = "あわれみ"
 [[case]]
 input = "憐みの表情に見えるw"
 mode = "hiragana"
-expected = "あわれみのひょうじょうにみえるw"
+expected = "あわれみのひょうじょうにみえるワラ"
 
 [[case]]
 input = "令和の生類憐みの令"
@@ -81,7 +81,7 @@ expected = "れいわのしょうるいあわれみのれい"
 [[case]]
 input = "憐れみw"
 mode = "hiragana"
-expected = "あわれみw"
+expected = "あわれみワラ"
 
 [[case]]
 input = "憐れまれた"
@@ -186,7 +186,7 @@ expected = "するがわんとかかなぁ"
 [[case]]
 input = "宮崎駿w"
 mode = "hiragana"
-expected = "みやざきしゅんw"
+expected = "みやざきしゅんワラ"
 
 [[case]]
 input = "来栖タケルだ"
@@ -276,7 +276,7 @@ expected = "うかつやぞ"
 [[case]]
 input = "猫が闊歩してるなw"
 mode = "hiragana"
-expected = "ねこがかっぽしてるなw"
+expected = "ねこがかっぽしてるなワラ"
 
 [[case]]
 input = "雌犬だと思ってる"
@@ -291,12 +291,12 @@ expected = "いまはしふくのとき"
 [[case]]
 input = "雌雄決戦w"
 mode = "hiragana"
-expected = "しゆうけっせんw"
+expected = "しゆうけっせんワラ"
 
 [[case]]
 input = "攪乱されてるw"
 mode = "hiragana"
-expected = "かくらんされてるw"
+expected = "かくらんされてるワラ"
 
 [[case]]
 input = "全力攪拌"
@@ -311,7 +311,7 @@ expected = "かつもくした"
 [[case]]
 input = "膿んでるw"
 mode = "hiragana"
-expected = "うんでるw"
+expected = "うんでるワラ"
 
 [[case]]
 input = "歯槽膿漏かな"
@@ -331,7 +331,7 @@ expected = "ちくのうしょうかな?"
 [[case]]
 input = "燻製w"
 mode = "hiragana"
-expected = "くんせいw"
+expected = "くんせいワラ"
 
 [[case]]
 input = "燻し銀!"

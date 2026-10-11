@@ -58,7 +58,7 @@ expected = "げんぱつたてまくろう"
 [[case]]
 input = "そこに目印建てなw"
 mode = "hiragana"
-expected = "そこにめじるしたてなw"
+expected = "そこにめじるしたてなワラ"
 
 [[case]]
 input = "枠建て直しがいいかーも"

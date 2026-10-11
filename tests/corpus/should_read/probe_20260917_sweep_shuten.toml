@@ -21,7 +21,7 @@ expected = "てんさいおおたにはまだげんじつてきだけどキャA�
 [[case]]
 input = "梱包エグいからw"
 mode = "hiragana"
-expected = "こんぽうエグいからw"
+expected = "こんぽうエグいからワラ"
 
 [[case]]
 input = "厳重な梱包してくれてる事を祈る"
@@ -106,7 +106,7 @@ expected = "しょくだよ"
 [[case]]
 input = "蝕にでも触れたみたいになったなw"
 mode = "hiragana"
-expected = "しょくにでもふれたみたいになったなw"
+expected = "しょくにでもふれたみたいになったなワラ"
 
 [[case]]
 input = "五感が蝕まれつつある"
@@ -146,7 +146,7 @@ expected = "どのうつんでるとこはじめてみた"
 [[case]]
 input = "氷嚢乗せてねw"
 mode = "hiragana"
-expected = "ひょうのうのせてねw"
+expected = "ひょうのうのせてねワラ"
 
 [[case]]
 input = "鍋 胆嚢漢方薬"
@@ -156,7 +156,7 @@ expected = "なべ たんのうかんぽうやく"
 [[case]]
 input = "砂漠でししろんと椀子そばするほうがいいのかも知れないw"
 mode = "hiragana"
-expected = "さばくでししろんとわんこそばするほうがいいのかもしれないw"
+expected = "さばくでししろんとわんこそばするほうがいいのかもしれないワラ"
 
 [[case]]
 input = "お椀転がらないんかな"
@@ -166,7 +166,7 @@ expected = "おわんころがらないんかな"
 [[case]]
 input = "椀飯振舞だw"
 mode = "hiragana"
-expected = "おうばんぶるまいだw"
+expected = "おうばんぶるまいだワラ"
 
 [[case]]
 input = "あの味噌汁の椀がスーっと動くの見ると本当にびっくりする"
@@ -181,12 +181,12 @@ expected = "はしりや"
 [[case]]
 input = "奔ればアウトが増えるからw"
 mode = "hiragana"
-expected = "はしればアウトがふえるからw"
+expected = "はしればアウトがふえるからワラ"
 
 [[case]]
 input = "奔っても速いのが莉々かw"
 mode = "hiragana"
-expected = "はしってもはやいのがりりかw"
+expected = "はしってもはやいのがりりかワラ"
 
 [[case]]
 input = "奔ろう"
@@ -206,7 +206,7 @@ expected = "じゆうほんぽうにかつどうがおかころじゃない?"
 [[case]]
 input = "出奔じゃーw"
 mode = "hiragana"
-expected = "しゅっぽんじゃーw"
+expected = "しゅっぽんじゃーワラ"
 
 [[case]]
 input = "絶望の奔流結構炊く"
@@ -251,7 +251,7 @@ expected = "あぎょうとうんぎょうかな"
 [[case]]
 input = "阿吽の呼吸だったw"
 mode = "hiragana"
-expected = "あうんのこきゅうだったw"
+expected = "あうんのこきゅうだったワラ"
 
 [[case]]
 input = "藪蛇ww"
@@ -281,7 +281,7 @@ expected = "せいけんづきはいわゆるぞくせいこうげきでたい�
 [[case]]
 input = "交換する謂れはないしなw"
 mode = "hiragana"
-expected = "こうかんするいわれはないしなw"
+expected = "こうかんするいわれはないしなワラ"
 
 [[case]]
 input = "謂わば魂だけの世界だからな"
@@ -361,12 +361,12 @@ expected = "これはさがみここはんやな"
 [[case]]
 input = "踵落としw"
 mode = "hiragana"
-expected = "かかとおとしw"
+expected = "かかとおとしワラ"
 
 [[case]]
 input = "踵を返したw"
 mode = "hiragana"
-expected = "かかとをかえしたw"
+expected = "かかとをかえしたワラ"
 
 [[case]]
 input = "おかゆがお粥:_それは草:"

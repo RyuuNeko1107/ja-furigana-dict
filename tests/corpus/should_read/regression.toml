@@ -2983,12 +2983,12 @@ expected = "ザイオンはずしかな"
 [[case]]
 input = "予想外すぎるw"
 mode = "hiragana"
-expected = "よそうがいすぎるw"
+expected = "よそうがいすぎるワラ"
 
 [[case]]
 input = "野次がすごいw"
 mode = "hiragana"
-expected = "やじがすごいw"
+expected = "やじがすごいワラ"
 
 [[case]]
 input = "次がない。"
@@ -2998,4 +2998,4 @@ expected = "つぎがない。"
 [[case]]
 input = "すーぐ加藤浩次が出てくるやんw"
 mode = "hiragana"
-expected = "すーぐかとうこうじがでてくるやんw"
+expected = "すーぐかとうこうじがでてくるやんワラ"

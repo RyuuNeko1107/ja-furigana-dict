@@ -18,12 +18,12 @@ expected = "エーアイせん"
 [[case]]
 input = "w戦う"
 mode = "hiragana"
-expected = "wたたかう"
+expected = "ワラたたかう"
 
 [[case]]
 input = "w戦った"
 mode = "hiragana"
-expected = "wたたかった"
+expected = "ワラたたかった"
 
 [[case]]
 input = "ボス戦"

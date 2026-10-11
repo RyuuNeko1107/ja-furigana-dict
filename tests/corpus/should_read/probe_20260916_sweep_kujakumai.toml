@@ -11,7 +11,7 @@ expected = "しらぬいまいブイエスティファ"
 [[case]]
 input = "多分掘り方も悪いぜよw"
 mode = "hiragana"
-expected = "たぶんほりかたもわるいぜよw"
+expected = "たぶんほりかたもわるいぜよワラ"
 
 [[case]]
 input = "風吹いてくれ"
@@ -71,7 +71,7 @@ expected = "ルイねえもさそおー"
 [[case]]
 input = "どういう誘い方w"
 mode = "hiragana"
-expected = "どういうさそいかたw"
+expected = "どういうさそいかたワラ"
 
 [[case]]
 input = "森羅課長きたー"

@@ -51,7 +51,7 @@ expected = "たききれい"
 [[case]]
 input = "白滝みたいw"
 mode = "hiragana"
-expected = "しらたきみたいw"
+expected = "しらたきみたいワラ"
 
 [[case]]
 input = "鳴滝荘がいいな"
@@ -136,7 +136,7 @@ expected = "ミーティングのへいがい"
 [[case]]
 input = "戸籍の抹消w"
 mode = "hiragana"
-expected = "こせきのまっしょうw"
+expected = "こせきのまっしょうワラ"
 
 [[case]]
 input = "時間軸かんがえればね"

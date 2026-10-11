@@ -23,7 +23,7 @@ expected = "ひがしっていってたじゃん"
 [[case]]
 input = "去り際をわきまえてるw"
 mode = "hiragana"
-expected = "さりぎわをわきまえてるw"
+expected = "さりぎわをわきまえてるワラ"
 
 [[case]]
 input = "水天逆巻け"

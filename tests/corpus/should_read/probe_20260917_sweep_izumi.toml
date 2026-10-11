@@ -126,7 +126,7 @@ expected = "しんせきのおじいちゃん"
 [[case]]
 input = "萎え散らかしてるなぁw"
 mode = "hiragana"
-expected = "なえちらかしてるなぁw"
+expected = "なえちらかしてるなぁワラ"
 
 [[case]]
 input = "無限沸きだからスルーしないと"
@@ -136,7 +136,7 @@ expected = "むげんわきだからスルーしないと"
 [[case]]
 input = "展覧会w"
 mode = "hiragana"
-expected = "てんらんかいw"
+expected = "てんらんかいワラ"
 
 [[case]]
 input = "観覧車"

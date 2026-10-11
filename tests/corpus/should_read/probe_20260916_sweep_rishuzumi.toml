@@ -21,7 +21,7 @@ expected = "オリジナルりしゅうずみ"
 [[case]]
 input = "公式ネタバレ履修済みw"
 mode = "hiragana"
-expected = "こうしきネタバレりしゅうずみw"
+expected = "こうしきネタバレりしゅうずみワラ"
 
 [[case]]
 input = "しっかり履修しててえらい"
@@ -151,7 +151,7 @@ expected = "しゅくんしょうだね"
 [[case]]
 input = "一瞬足に見えるもんねw"
 mode = "hiragana"
-expected = "いっしゅんあしにみえるもんねw"
+expected = "いっしゅんあしにみえるもんねワラ"
 
 [[case]]
 input = "鈍足が瞬足に"

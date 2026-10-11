@@ -101,7 +101,7 @@ expected = "いえにつるべししょうきたことある"
 [[case]]
 input = "角瓶w"
 mode = "hiragana"
-expected = "かくびんw"
+expected = "かくびんワラ"
 
 [[case]]
 input = "空瓶重ねたほうがいいかもよーーーー"
@@ -156,7 +156,7 @@ expected = "あおがない..."
 [[case]]
 input = "仰け反れるw"
 mode = "hiragana"
-expected = "のけぞれるw"
+expected = "のけぞれるワラ"
 
 [[case]]
 input = "仰け反らせてからのアウトコースや"

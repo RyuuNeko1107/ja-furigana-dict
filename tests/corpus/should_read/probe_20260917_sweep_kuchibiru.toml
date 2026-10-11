@@ -6,12 +6,12 @@ expected = "くちびるいいね"
 [[case]]
 input = "唇紫呼びw"
 mode = "hiragana"
-expected = "くちびるむらさきよびw"
+expected = "くちびるむらさきよびワラ"
 
 [[case]]
 input = "唇紫のやつw"
 mode = "hiragana"
-expected = "くちびるむらさきのやつw"
+expected = "くちびるむらさきのやつワラ"
 
 [[case]]
 input = "よく見ると目が唇なんだよね"
@@ -26,12 +26,12 @@ expected = "くちびるちょうだい!?"
 [[case]]
 input = "唇だったかw"
 mode = "hiragana"
-expected = "くちびるだったかw"
+expected = "くちびるだったかワラ"
 
 [[case]]
 input = "唇かw"
 mode = "hiragana"
-expected = "くちびるかw"
+expected = "くちびるかワラ"
 
 [[case]]
 input = "ㇺで唇噛む感じ?"
@@ -51,7 +51,7 @@ expected = "くちびるぷるぷる"
 [[case]]
 input = "メッシの唇よw"
 mode = "hiragana"
-expected = "メッシのくちびるよw"
+expected = "メッシのくちびるよワラ"
 
 [[case]]
 input = "魅力的な唇"
@@ -76,7 +76,7 @@ expected = "くちびるじゃない?"
 [[case]]
 input = "唇だろw"
 mode = "hiragana"
-expected = "くちびるだろw"
+expected = "くちびるだろワラ"
 
 [[case]]
 input = "唇かわい"
@@ -91,7 +91,7 @@ expected = "くちびるかんじゃったか"
 [[case]]
 input = "唇むらさきさんw"
 mode = "hiragana"
-expected = "くちびるむらさきさんw"
+expected = "くちびるむらさきさんワラ"
 
 [[case]]
 input = "唇から血でてません??www"
@@ -251,7 +251,7 @@ expected = "とげふんで"
 [[case]]
 input = "慕われてるなw"
 mode = "hiragana"
-expected = "したわれてるなw"
+expected = "したわれてるなワラ"
 
 [[case]]
 input = "雨の慕情"
@@ -271,7 +271,7 @@ expected = "よどがわはんらんしそうだよ"
 [[case]]
 input = "言い淀んだw"
 mode = "hiragana"
-expected = "いいよどんだw"
+expected = "いいよどんだワラ"
 
 [[case]]
 input = "諭吉"
@@ -331,7 +331,7 @@ expected = "がらんどう"
 [[case]]
 input = "修繕付きw"
 mode = "hiragana"
-expected = "しゅうぜんつきw"
+expected = "しゅうぜんつきワラ"
 
 [[case]]
 input = "取り繕ってる"
@@ -486,7 +486,7 @@ expected = "じょうじょうしゃくりょう"
 [[case]]
 input = "お酌文化がいやw"
 mode = "hiragana"
-expected = "おしゃくぶんかがいやw"
+expected = "おしゃくぶんかがいやワラ"
 
 [[case]]
 input = "酒を酌み交わせば"

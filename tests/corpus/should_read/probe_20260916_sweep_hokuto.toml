@@ -116,7 +116,7 @@ expected = "さんじゅうにのあにき"
 [[case]]
 input = "ここをここに非ずw"
 mode = "hiragana"
-expected = "ここをここにあらずw"
+expected = "ここをここにあらずワラ"
 
 [[case]]
 input = "ティファは「伊藤歩」さんにイメージ寄せてる"

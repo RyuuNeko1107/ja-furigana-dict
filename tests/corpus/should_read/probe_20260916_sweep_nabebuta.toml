@@ -16,7 +16,7 @@ expected = "ぶんストのよさのあきこぐらいのちゆりょく"
 [[case]]
 input = "鍋蓋w"
 mode = "hiragana"
-expected = "なべぶたw"
+expected = "なべぶたワラ"
 
 [[case]]
 input = "ちょっと目蓋がおもいなり"
@@ -51,7 +51,7 @@ expected = "ふたしまってたのに"
 [[case]]
 input = "蓋しろw"
 mode = "hiragana"
-expected = "ふたしろw"
+expected = "ふたしろワラ"
 
 [[case]]
 input = "蓋しとくべきやで"
@@ -111,7 +111,7 @@ expected = "でもしゃれにならんからな"
 [[case]]
 input = "まだ別の厄ネタまでありそうで洒落にならんw"
 mode = "hiragana"
-expected = "まだべつのやくネタまでありそうでしゃれにならんw"
+expected = "まだべつのやくネタまでありそうでしゃれにならんワラ"
 
 [[case]]
 input = "だ洒落だね"
@@ -121,7 +121,7 @@ expected = "だじゃれだね"
 [[case]]
 input = "そこいらの洒落怖よりこわいんだがw"
 mode = "hiragana"
-expected = "そこいらのしゃれこわよりこわいんだがw"
+expected = "そこいらのしゃれこわよりこわいんだがワラ"
 
 [[case]]
 input = "口軽いだけある煩さ"
@@ -181,7 +181,7 @@ expected = "はやしたいすけをゆるすな"
 [[case]]
 input = "▲丹生明里さんと予想w"
 mode = "hiragana"
-expected = "▲にうあかりさんとよそうw"
+expected = "▲にうあかりさんとよそうワラ"
 
 [[case]]
 input = "炎舞焚きですか???"

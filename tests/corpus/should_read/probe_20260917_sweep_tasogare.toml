@@ -6,7 +6,7 @@ expected = "たそがれてるのか"
 [[case]]
 input = "黄昏れてるw"
 mode = "hiragana"
-expected = "たそがれてるw"
+expected = "たそがれてるワラ"
 
 [[case]]
 input = "黄昏れたい時はどこ行くの?"
@@ -36,7 +36,7 @@ expected = "ししてなおしっせき"
 [[case]]
 input = "黄昏てるw"
 mode = "hiragana"
-expected = "たそがれてるw"
+expected = "たそがれてるワラ"
 
 [[case]]
 input = "黄昏とる"
@@ -61,7 +61,7 @@ expected = "たそがれのせんし"
 [[case]]
 input = "訂正w"
 mode = "hiragana"
-expected = "ていせいw"
+expected = "ていせいワラ"
 
 [[case]]
 input = "制限改訂やめろ"
@@ -96,7 +96,7 @@ expected = "くひか?"
 [[case]]
 input = "嘆きの錬金術師w"
 mode = "hiragana"
-expected = "なげきのれんきんじゅつしw"
+expected = "なげきのれんきんじゅつしワラ"
 
 [[case]]
 input = "感嘆"

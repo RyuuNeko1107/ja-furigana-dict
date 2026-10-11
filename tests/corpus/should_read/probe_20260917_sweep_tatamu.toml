@@ -1,7 +1,7 @@
 [[case]]
 input = "カッパ乾かすのとか畳むのめんどくならん?w"
 mode = "hiragana"
-expected = "カッパかわかすのとかたたむのめんどくならん?w"
+expected = "カッパかわかすのとかたたむのめんどくならん?ワラ"
 
 [[case]]
 input = "洗濯物とか畳むのめんどい"
@@ -21,7 +21,7 @@ expected = "かんしゃかんげきあめあられ"
 [[case]]
 input = "カッパは畳むのダルくない?w"
 mode = "hiragana"
-expected = "カッパはたたむのダルくない?w"
+expected = "カッパはたたむのダルくない?ワラ"
 
 [[case]]
 input = "洗濯物畳むのは得意"
@@ -86,7 +86,7 @@ expected = "ぎょくさいした"
 [[case]]
 input = "安牌でw"
 mode = "hiragana"
-expected = "あんぱいでw"
+expected = "あんぱいでワラ"
 
 [[case]]
 input = "配牌が良かったんやね"
@@ -141,7 +141,7 @@ expected = "はいたいほ"
 [[case]]
 input = "言及されてなければw"
 mode = "hiragana"
-expected = "げんきゅうされてなければw"
+expected = "げんきゅうされてなければワラ"
 
 [[case]]
 input = "この問題を追及すると"

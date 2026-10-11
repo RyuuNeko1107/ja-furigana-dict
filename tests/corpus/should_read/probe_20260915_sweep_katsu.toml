@@ -3,7 +3,7 @@
 [[case]]
 input = "勝ってるやんw"
 mode = "hiragana"
-expected = "かってるやんw"
+expected = "かってるやんワラ"
 
 [[case]]
 input = "勝ったら爆笑 負けたら冷笑"

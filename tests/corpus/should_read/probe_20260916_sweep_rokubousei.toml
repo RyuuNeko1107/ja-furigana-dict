@@ -31,7 +31,7 @@ expected = "すごろくじいちゃん"
 [[case]]
 input = "双六おじいちゃんw"
 mode = "hiragana"
-expected = "すごろくおじいちゃんw"
+expected = "すごろくおじいちゃんワラ"
 
 [[case]]
 input = "広島の石原 現役は岡山 石原慶幸は岐阜"

@@ -1,12 +1,12 @@
 [[case]]
 input = "ブレーキ学んでないぞw"
 mode = "hiragana"
-expected = "ブレーキまなんでないぞw"
+expected = "ブレーキまなんでないぞワラ"
 
 [[case]]
 input = "ドリフトは学んでるかなw"
 mode = "hiragana"
-expected = "ドリフトはまなんでるかなw"
+expected = "ドリフトはまなんでるかなワラ"
 
 [[case]]
 input = "余さんコメント欄止まってるかも"
@@ -71,7 +71,7 @@ expected = "かんとくがげきをとばす"
 [[case]]
 input = "星町監督w"
 mode = "hiragana"
-expected = "ほしまちかんとくw"
+expected = "ほしまちかんとくワラ"
 
 [[case]]
 input = "星街監督!"
@@ -101,7 +101,7 @@ expected = "パワハラかんとくのチームがつよくならないのは�
 [[case]]
 input = "字面のせいでw"
 mode = "hiragana"
-expected = "じづらのせいでw"
+expected = "じづらのせいでワラ"
 
 [[case]]
 input = "道の外れ方が予想の斜め上"
@@ -116,7 +116,7 @@ expected = "あーがっこうついちゃう"
 [[case]]
 input = "文字面やばいねw"
 mode = "hiragana"
-expected = "もじづらやばいねw"
+expected = "もじづらやばいねワラ"
 
 [[case]]
 input = "字面が草"
@@ -126,5 +126,5 @@ expected = "じづらがくさ"
 [[case]]
 input = "車高低いw"
 mode = "hiragana"
-expected = "しゃこうひくいw"
+expected = "しゃこうひくいワラ"
 

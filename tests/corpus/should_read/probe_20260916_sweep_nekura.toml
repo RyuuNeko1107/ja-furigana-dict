@@ -23,7 +23,7 @@ expected = "きたじまこうすけやん"
 [[case]]
 input = "次元大介かよw"
 mode = "hiragana"
-expected = "じげんだいすけかよw"
+expected = "じげんだいすけかよワラ"
 
 [[case]]
 input = "三谷幸喜作品はよく観る"

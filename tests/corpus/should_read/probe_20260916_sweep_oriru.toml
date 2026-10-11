@@ -23,12 +23,12 @@ expected = "ちょうどよるだからゾンビたおす?"
 [[case]]
 input = "社訓読まされてるみたいw"
 mode = "hiragana"
-expected = "しゃくんよまされてるみたいw"
+expected = "しゃくんよまされてるみたいワラ"
 
 [[case]]
 input = "深読みしすぎたw"
 mode = "hiragana"
-expected = "ふかよみしすぎたw"
+expected = "ふかよみしすぎたワラ"
 
 [[case]]
 input = "一旦蜂設置か"
@@ -43,7 +43,7 @@ expected = "ころさんおりてない"
 [[case]]
 input = "降りちゃってたねw"
 mode = "hiragana"
-expected = "おりちゃってたねw"
+expected = "おりちゃってたねワラ"
 
 [[case]]
 input = "階段降りにしましょ"
@@ -73,4 +73,4 @@ expected = "みずでのぼりおりでいいんじゃ?"
 [[case]]
 input = "雨降ってきたw"
 mode = "hiragana"
-expected = "あめふってきたw"
+expected = "あめふってきたワラ"

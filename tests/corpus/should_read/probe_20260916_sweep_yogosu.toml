@@ -18,7 +18,7 @@ expected = "よごされちゃった"
 [[case]]
 input = "人間の汚さw"
 mode = "hiragana"
-expected = "にんげんのきたなさw"
+expected = "にんげんのきたなさワラ"
 
 [[case]]
 input = "口汚さがまだ無い"

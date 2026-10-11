@@ -3,7 +3,7 @@
 [[case]]
 input = "深層岩あるならガッツリ下よw"
 mode = "hiragana"
-expected = "しんそうがんあるならガッツリしたよw"
+expected = "しんそうがんあるならガッツリしたよワラ"
 
 [[case]]
 input = "荒岩さんかな"
@@ -58,7 +58,7 @@ expected = "こうつうひやすーい!"
 [[case]]
 input = "交通費しゃれになんないなw"
 mode = "hiragana"
-expected = "こうつうひしゃれになんないなw"
+expected = "こうつうひしゃれになんないなワラ"
 
 [[case]]
 input = "そこに時間を費やすわけですから"

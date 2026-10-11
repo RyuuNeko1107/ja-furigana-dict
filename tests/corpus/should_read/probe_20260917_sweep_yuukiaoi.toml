@@ -46,7 +46,7 @@ expected = "ヴィヴィ「ぺこらはてのひらのうえ」"
 [[case]]
 input = "掌くるくるw"
 mode = "hiragana"
-expected = "てのひらくるくるw"
+expected = "てのひらくるくるワラ"
 
 [[case]]
 input = "掌くるくるの玉木"
@@ -131,12 +131,12 @@ expected = "わきめ びっしり"
 [[case]]
 input = "発芽出来ないw"
 mode = "hiragana"
-expected = "はつができないw"
+expected = "はつができないワラ"
 
 [[case]]
 input = "熱い友情が芽生えたねw"
 mode = "hiragana"
-expected = "あついゆうじょうがめばえたねw"
+expected = "あついゆうじょうがめばえたねワラ"
 
 [[case]]
 input = "田中碧!?"
@@ -261,7 +261,7 @@ expected = "しみるなぁ"
 [[case]]
 input = "躊躇しろw"
 mode = "hiragana"
-expected = "ちゅうちょしろw"
+expected = "ちゅうちょしろワラ"
 
 [[case]]
 input = "補填"
@@ -296,7 +296,7 @@ expected = "はいしんきょだくがめんどそうだけど"
 [[case]]
 input = "中々承諾されないw"
 mode = "hiragana"
-expected = "なかなかしょうだくされないw"
+expected = "なかなかしょうだくされないワラ"
 
 [[case]]
 input = "快諾ですか"
@@ -321,7 +321,7 @@ expected = "きゅうふっとう"
 [[case]]
 input = "大暴騰w"
 mode = "hiragana"
-expected = "だいぼうとうw"
+expected = "だいぼうとうワラ"
 
 [[case]]
 input = "急騰!!"
@@ -336,7 +336,7 @@ expected = "みとま、みなみの、えんどうおらんけど"
 [[case]]
 input = "藤井隆w"
 mode = "hiragana"
-expected = "ふじいりゅうw"
+expected = "ふじいりゅうワラ"
 
 [[case]]
 input = "岡村隆史タイプね"

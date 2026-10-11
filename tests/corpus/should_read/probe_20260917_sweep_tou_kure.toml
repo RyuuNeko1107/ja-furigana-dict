@@ -201,7 +201,7 @@ expected = "であい"
 [[case]]
 input = "拙すぎるw"
 mode = "hiragana"
-expected = "つたなすぎるw"
+expected = "つたなすぎるワラ"
 
 [[case]]
 input = "1の拙さも良き"
@@ -361,7 +361,7 @@ expected = "しゅうとうゆうきょう"
 [[case]]
 input = "彷彿とさせるねw"
 mode = "hiragana"
-expected = "ほうふつとさせるねw"
+expected = "ほうふつとさせるねワラ"
 
 [[case]]
 input = "釈迦に説法"

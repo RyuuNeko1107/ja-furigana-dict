@@ -126,7 +126,7 @@ expected = "おやがきょうふによるストレスでじんましんすご�
 [[case]]
 input = "夏目漱石かw"
 mode = "hiragana"
-expected = "なつめそうせきかw"
+expected = "なつめそうせきかワラ"
 
 [[case]]
 input = "漱石?"
@@ -146,7 +146,7 @@ expected = "こんにゃくはたけ"
 [[case]]
 input = "3食蒟蒻ゼリーw"
 mode = "hiragana"
-expected = "さんしょくこんにゃくゼリーw"
+expected = "さんしょくこんにゃくゼリーワラ"
 
 [[case]]
 input = "自然分娩?"
@@ -221,10 +221,10 @@ expected = "うさぎはほえない"
 [[case]]
 input = "珊瑚礁はなかったw"
 mode = "hiragana"
-expected = "さんごしょうはなかったw"
+expected = "さんごしょうはなかったワラ"
 
 [[case]]
 input = "pinkの珊瑚は上手いw"
 mode = "hiragana"
-expected = "ピンクのさんごはうまいw"
+expected = "ピンクのさんごはうまいワラ"
 

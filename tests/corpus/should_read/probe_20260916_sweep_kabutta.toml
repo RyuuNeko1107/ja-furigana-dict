@@ -16,7 +16,7 @@ expected = "せんちょうとスピードメーターがかぶってる"
 [[case]]
 input = "猫被ってるからねw"
 mode = "hiragana"
-expected = "ねこかぶってるからねw"
+expected = "ねこかぶってるからねワラ"
 
 [[case]]
 input = "まさかのマミーと予想被ったのだがww"
@@ -26,7 +26,7 @@ expected = "まさかのマミーとよそうかぶったのだがww"
 [[case]]
 input = "株と時間被ってるw"
 mode = "hiragana"
-expected = "かぶとじかんかぶってるw"
+expected = "かぶとじかんかぶってるワラ"
 
 [[case]]
 input = "派手な帽子被ってるから"
@@ -51,7 +51,7 @@ expected = "おかゆんのライブとかぶっちゃう"
 [[case]]
 input = "毎回被せるよねw"
 mode = "hiragana"
-expected = "まいかいかぶせるよねw"
+expected = "まいかいかぶせるよねワラ"
 
 [[case]]
 input = "みこちー檄推し!"

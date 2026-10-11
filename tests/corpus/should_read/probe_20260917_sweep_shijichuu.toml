@@ -1,12 +1,12 @@
 [[case]]
 input = "ATM指示廚w"
 mode = "hiragana"
-expected = "エーティーエムしじちゅうw"
+expected = "エーティーエムしじちゅうワラ"
 
 [[case]]
 input = "指示廚w"
 mode = "hiragana"
-expected = "しじちゅうw"
+expected = "しじちゅうワラ"
 
 [[case]]
 input = "効率廚コンビ"
@@ -16,7 +16,7 @@ expected = "こうりつちゅうコンビ"
 [[case]]
 input = "効率廚がなんか言ってるw"
 mode = "hiragana"
-expected = "こうりつちゅうがなんかいってるw"
+expected = "こうりつちゅうがなんかいってるワラ"
 
 [[case]]
 input = "原作廚3兄弟"
@@ -121,7 +121,7 @@ expected = "ちなみにふがしはくうきです"
 [[case]]
 input = "瓦礫投げてくるとか危なすぎるw"
 mode = "hiragana"
-expected = "がれきなげてくるとかあぶなすぎるw"
+expected = "がれきなげてくるとかあぶなすぎるワラ"
 
 [[case]]
 input = "桟橋がすごかったwww"
@@ -257,7 +257,7 @@ expected = "やすくにじんじゃにさんぱいにいきます"
 [[case]]
 input = "膠着してるなw"
 mode = "hiragana"
-expected = "こうちゃくしてるなw"
+expected = "こうちゃくしてるなワラ"
 
 [[case]]
 input = "アリちゃんいなければ膠着状態にすらならなかったね"

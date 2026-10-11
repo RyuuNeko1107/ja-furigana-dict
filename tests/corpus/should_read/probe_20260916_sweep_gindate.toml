@@ -16,7 +16,7 @@ expected = "きんだて"
 [[case]]
 input = "肉盾だw"
 mode = "hiragana"
-expected = "にくだてだw"
+expected = "にくだてだワラ"
 
 [[case]]
 input = "時盾で防ぐ"
@@ -31,7 +31,7 @@ expected = "てつのたてはいいぞ"
 [[case]]
 input = "矛盾してるw"
 mode = "hiragana"
-expected = "むじゅんしてるw"
+expected = "むじゅんしてるワラ"
 
 [[case]]
 input = "層の厚さで"
@@ -56,7 +56,7 @@ expected = "せんしゅそうがあつい"
 [[case]]
 input = "デスバーガーの信頼厚w"
 mode = "hiragana"
-expected = "デスバーガーのしんらいあつw"
+expected = "デスバーガーのしんらいあつワラ"
 
 [[case]]
 input = "信頼厚い"
@@ -76,12 +76,12 @@ expected = "あつめにかったから"
 [[case]]
 input = "分厚いw"
 mode = "hiragana"
-expected = "ぶあついw"
+expected = "ぶあついワラ"
 
 [[case]]
 input = "ダクト壊せば襲えるやろw"
 mode = "hiragana"
-expected = "ダクトこわせばおそえるやろw"
+expected = "ダクトこわせばおそえるやろワラ"
 
 [[case]]
 input = "襲えない"
@@ -141,7 +141,7 @@ expected = "ふふくもうしたてするのに"
 [[case]]
 input = "口噛酒w"
 mode = "hiragana"
-expected = "くちかみざけw"
+expected = "くちかみざけワラ"
 
 [[case]]
 input = "口噛み酒ください"
