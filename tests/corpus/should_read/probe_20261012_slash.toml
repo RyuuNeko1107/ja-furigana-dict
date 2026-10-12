@@ -8,3 +8,19 @@ expected = "らんまにぶんのいちをみた"
 input = "アニメ「らんま1/2」"
 mode = "hiragana"
 expected = "アニメ「らんまにぶんのいち」"
+
+# 配信コメントの頻出語 (2026-10-12 集計)
+[[case]]
+input = "Wikiで調べた"
+mode = "hiragana"
+expected = "ウィキでしらべた"
+
+[[case]]
+input = "Canvaでデザイン"
+mode = "hiragana"
+expected = "キャンバでデザイン"
+
+[[case]]
+input = "MBTIはINFP"
+mode = "hiragana"
+expected = "エムビーティーアイはINFP"
