@@ -1,0 +1,77 @@
+# 絵文字の文脈読み (lib 0.5.23+)
+#
+# emoji.toml の項目に、 漢字の辞書と同じ形の `[[entries."X".match]]` で文脈読みを足す。 文脈読みを知らない旧 lib
+# (0.5.19〜0.5.21) は未知の role として無視するので、 emoji.toml (読みだけの項目) は旧 lib でも読める。
+# 条件: prev_ends_any (直前) / next_starts_any (直後) / input_contains_any (文中の語) / alone = true (発言がその絵文字だけ)。
+# 書いた条件が全部揃った時に当たり、 match は上から見て最初のもの。 reading が空なら読まない。
+# `[entries."X"]` の reading を省くと、 どの match にも当たらない時は辞書に載っていないのと同じ (表記のまま)。
+# emoji.toml に同じ絵文字の簡単な読みがあっても、 こちらの文脈読みが優先される。
+
+[meta]
+schema_version = "2"
+role = "emoji_context"
+description = "絵文字の文脈読み (match)"
+
+[entries]
+
+[entries."🙏"]
+reading = ""
+[[entries."🙏".match]]
+alone = true
+reading = "ありがとう"
+
+[entries."👍"]
+[[entries."👍".match]]
+alone = true
+reading = "いいね"
+
+[entries."👏"]
+[[entries."👏".match]]
+alone = true
+reading = "はくしゅ"
+
+[entries."🙌"]
+[[entries."🙌".match]]
+alone = true
+reading = "やったー"
+
+[entries."🎉"]
+reading = ""
+[[entries."🎉".match]]
+alone = true
+reading = "おめでとう"
+
+[entries."🥳"]
+[[entries."🥳".match]]
+alone = true
+reading = "おめでとう"
+
+[entries."😂"]
+[[entries."😂".match]]
+alone = true
+reading = "わらい"
+
+[entries."🤣"]
+[[entries."🤣".match]]
+alone = true
+reading = "わらい"
+
+[entries."😭"]
+[[entries."😭".match]]
+alone = true
+reading = "うえーん"
+
+[entries."🤔"]
+[[entries."🤔".match]]
+alone = true
+reading = "うーん"
+
+[entries."🥺"]
+[[entries."🥺".match]]
+alone = true
+reading = "うるうる"
+
+[entries."😊"]
+[[entries."😊".match]]
+alone = true
+reading = "にこにこ"
