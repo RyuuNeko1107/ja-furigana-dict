@@ -1,0 +1,42 @@
+# N/M の日付・分数 (手がかりが無い M/D は日付に倒す) と年付きの日付。 lib 0.5.10 以降の挙動
+# (旧版では すらっしゅ と読む)
+
+[[case]]
+input = "2024-10-12"
+mode = "hiragana"
+expected = "にせんにじゅうよんねんじゅうがつじゅうににち"
+
+[[case]]
+input = "1999/10/12"
+mode = "hiragana"
+expected = "せんきゅうひゃくきゅうじゅうきゅうねんじゅうがつじゅうににち"
+
+[[case]]
+input = "10/12"
+mode = "hiragana"
+expected = "じゅうがつじゅうににち"
+
+[[case]]
+input = "1/3"
+mode = "hiragana"
+expected = "さんぶんのいち"
+
+[[case]]
+input = "サイズは1/2でお願い"
+mode = "hiragana"
+expected = "サイズはにぶんのいちでおねがい"
+
+[[case]]
+input = "10/11(日)に配信"
+mode = "hiragana"
+expected = "じゅうがつじゅういちにち(にち)にはいしん"
+
+[[case]]
+input = "HP 3/5"
+mode = "hiragana"
+expected = "エイチピー ごぶんのさん"
+
+[[case]]
+input = "13/5"
+mode = "hiragana"
+expected = "ごぶんのじゅうさん"
