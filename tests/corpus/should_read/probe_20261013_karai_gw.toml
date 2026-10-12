@@ -106,3 +106,18 @@ expected = "なにきたらいいかわからない"
 input = "壱百満天原サロメ"
 mode = "hiragana"
 expected = "ひゃくまんてんばらさろめ"
+
+[[case]]
+input = "東日本のAV機器"
+mode = "hiragana"
+expected = "ひがしにほんのエーブイきき"
+
+[[case]]
+input = "FE万紫千紅の続報"
+mode = "hiragana"
+expected = "FEばんしせんこうのぞくほう"
+
+[[case]]
+input = "R18のAKB48"
+mode = "hiragana"
+expected = "アールジュウハチのエーケービーフォーティーエイト"
