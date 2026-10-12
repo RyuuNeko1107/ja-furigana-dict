@@ -89,7 +89,7 @@ expected = "フィールズグッドマン"
 [[case]]
 input = "9/21(日)"
 mode = "hiragana"
-expected = "くがつにじゅういちにち(にち)"
+expected = "くがつにじゅういちにち(にちようび)"
 
 [[case]]
 input = "5/22 阪神新人"

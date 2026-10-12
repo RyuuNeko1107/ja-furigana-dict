@@ -24,7 +24,7 @@ default = "つち"
 [[kanji.match]]
 prev_ends_any = ["(", "（"]
 next_starts_any = [")", "）"]
-reading = "ド"
+reading = "ドヨウビ"
 
 # ─── default = on-yomi + 文脈 で kun-yomi 切替 (★alpha.14) ────────────────────
 #
@@ -441,7 +441,7 @@ default = "みず"
 [[kanji.match]]
 prev_ends_any = ["(", "（"]
 next_starts_any = [")", "）"]
-reading = "スイ"
+reading = "スイヨウビ"
 
 # ★ 2026-09-18: 副詞・時の語の直後は熟語ではない (多分兄が → たぶんけいが)。
 # prev 漢字 match より先に置いて default の訓読みに戻す。
@@ -464,7 +464,7 @@ default = "ひ"
 [[kanji.match]]
 prev_ends_any = ["(", "（"]
 next_starts_any = [")", "）"]
-reading = "カ"
+reading = "カヨウビ"
 
 # ★ 2026-09-18: 副詞・時の語の直後は熟語ではない (多分兄が → たぶんけいが)。
 # prev 漢字 match より先に置いて default の訓読みに戻す。
@@ -491,7 +491,7 @@ default = "かね"
 [[kanji.match]]
 prev_ends_any = ["(", "（"]
 next_starts_any = [")", "）"]
-reading = "キン"
+reading = "キンヨウビ"
 
 # ○○金 suffix (奨学金/罰金/賃金/賞金 等) = キン。
 # ★2026-09-14: 下の 「訓動詞 stem」 rule より先に置く (賞金稼ぎ → ショウキンカセギ)。
@@ -542,7 +542,7 @@ default = "つき"
 [[kanji.match]]
 prev_ends_any = ["(", "（"]
 next_starts_any = [")", "）"]
-reading = "ゲツ"
+reading = "ゲツヨウビ"
 
 # ★ 2026-09-18: 副詞・時の語の直後は熟語ではない (多分兄が → たぶんけいが)。
 # prev 漢字 match より先に置いて default の訓読みに戻す。
@@ -2254,6 +2254,12 @@ reading = "ホウ"
 [[kanji]]
 char = "日"
 default = "ニチ"
+
+# 曜日の略記 (日) = 括弧に入った 1 字
+[[kanji.match]]
+prev_ends_any = ["(", "（"]
+next_starts_any = [")", "）"]
+reading = "ニチヨウビ"
 
 # next_eq_any は ひらがな連続全体と比較、 next_starts_any は先頭 1 char と比較
 # (★round 34 で 「日もある」 等の文中文脈に match させるため next_starts_any 化)
@@ -15933,7 +15939,7 @@ default = "き"
 [[kanji.match]]
 prev_ends_any = ["(", "（"]
 next_starts_any = [")", "）"]
-reading = "モク"
+reading = "モクヨウビ"
 
 # ★ 2026-09-18: 副詞・時の語の直後は熟語ではない (多分兄が → たぶんけいが)。
 # prev 漢字 match より先に置いて default の訓読みに戻す。

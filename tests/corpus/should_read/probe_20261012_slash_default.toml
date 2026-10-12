@@ -29,7 +29,7 @@ expected = "サイズはにぶんのいちでおねがい"
 [[case]]
 input = "10/11(日)に配信"
 mode = "hiragana"
-expected = "じゅうがつじゅういちにち(にち)にはいしん"
+expected = "じゅうがつじゅういちにち(にちようび)にはいしん"
 
 [[case]]
 input = "HP 3/5"
