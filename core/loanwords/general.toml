@@ -1207,6 +1207,9 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 # reading-audit の残り (2026-10-12)
 "GJ" = "グッジョブ"      # 配信コメントの GJ = good job
 "Arch" = "アーチ"       # Arch Linux
+# 本番 signal の頻出 (2026-10-13)
+"OTL" = "オーティーエル"   # 崩れ落ちる顔文字 (orz の仲間)
+"lofi" = "ローファイ"        # lofi hiphop 等
 
 [digits]
 "Windows" = "english"
