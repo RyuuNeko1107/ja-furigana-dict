@@ -95,3 +95,17 @@ description = "SI 単位 + 通貨 + % (km / kg / mL / 円 / % 等、 数値 + �
 
 "bit"  = { kana = "ビット", ci = false }
 "Kbps" = { kana = "キロビーピーエス", ci = false }
+
+# 面積・体積 (㎡ / m² は NFKC で m2 になる。 50㎡ が ごじゅうめーとるに と読まれていた)
+"m2"  = { kana = "ヘイホウメートル", ci = false }
+"m²"  = { kana = "ヘイホウメートル", ci = false }
+"㎡"  = { kana = "ヘイホウメートル", ci = false }
+"cm2" = { kana = "ヘイホウセンチメートル", ci = false }
+"cm²" = { kana = "ヘイホウセンチメートル", ci = false }
+"km2" = { kana = "ヘイホウキロメートル", ci = false }
+"km²" = { kana = "ヘイホウキロメートル", ci = false }
+"m3"  = { kana = "リッポウメートル", ci = false }
+"m³"  = { kana = "リッポウメートル", ci = false }
+"㎥"  = { kana = "リッポウメートル", ci = false }
+"cm3" = { kana = "リッポウセンチメートル", ci = false }
+"cm³" = { kana = "リッポウセンチメートル", ci = false }

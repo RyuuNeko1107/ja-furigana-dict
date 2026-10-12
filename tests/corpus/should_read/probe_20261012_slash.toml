@@ -77,3 +77,14 @@ expected = "エムスリーマックスをかった"
 input = "LTEの電波"
 mode = "hiragana"
 expected = "エルティーイーのでんぱ"
+
+# 面積・体積・化学式
+[[case]]
+input = "50㎡の部屋"
+mode = "hiragana"
+expected = "ごじゅうへいほうめーとるのへや"
+
+[[case]]
+input = "CO2排出"
+mode = "hiragana"
+expected = "シーオーツーはいしゅつ"

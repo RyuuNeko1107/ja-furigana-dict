@@ -1116,6 +1116,10 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 "esim" = "イーシム"
 "midi" = "ミディ"
 
+# 化学式 (H₂O / CO₂ は NFKC で H2O / CO2 になる)
+"H2O" = "エイチツーオー"
+"CO2" = "シーオーツー"
+
 [digits]
 "Windows" = "english"
 "iPhone" = "place"
