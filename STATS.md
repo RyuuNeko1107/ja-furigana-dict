@@ -25,13 +25,13 @@ git に commit されている master HEAD の状態を基準にする。
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,654** | **728 KB** |
 | [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **33,438** | **1.38 MB** |
-| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,702** | **132 KB** |
+| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,703** | **133 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **3,277** | **89 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **4,197** | **187 KB** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,796** | **374 KB** |
 | [**異体字**](#異体字) (`rules/compat.toml`) | **436** | **6.1 KB** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **395** | **41 KB** |
-| **合計** | **86,895** | **2.90 MB** |
+| **合計** | **86,896** | **2.90 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -174,7 +174,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/works/<medium>/*` — 媒体 (game / literature 等) ごとに 1 作品 1 ファイル。 原則は公式読み (一般通称として定着していれば採録可)、 出典コメント必須、 古典読みは現代読み無い場合のみ。
 
-**合計**: 1,702 件 / 132 KB (genre 4 区分)
+**合計**: 1,703 件 / 133 KB (genre 4 区分)
 
 #### ゲーム
 
@@ -251,9 +251,9 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/anime/houshin.toml`](core/works/anime/houshin.toml) | 10 | 762 B | 封神演義: キャラクター名 / 用語 |
 | [`core/works/anime/precure.toml`](core/works/anime/precure.toml) | 10 | 869 B | プリキュア: キャラクター名 |
 | [`core/works/anime/rurouni.toml`](core/works/anime/rurouni.toml) | 10 | 1.1 KB | るろうに剣心 (和月伸宏): キャラクター名 |
+| [`core/works/anime/ranma.toml`](core/works/anime/ranma.toml) | 9 | 823 B | らんま1/2: キャラクター名 |
 | [`core/works/anime/gochiusa.toml`](core/works/anime/gochiusa.toml) | 8 | 648 B | ごちうさ: キャラクター名 |
 | [`core/works/anime/kyoani.toml`](core/works/anime/kyoani.toml) | 8 | 751 B | 京アニ作品: キャラクター名 |
-| [`core/works/anime/ranma.toml`](core/works/anime/ranma.toml) | 8 | 700 B | らんま1/2: キャラクター名 |
 | [`core/works/anime/recent_anime.toml`](core/works/anime/recent_anime.toml) | 8 | 810 B | 近年アニメ: キャラクター名 |
 | [`core/works/anime/soma.toml`](core/works/anime/soma.toml) | 8 | 916 B | 食戟のソーマ: キャラクター名 |
 | [`core/works/anime/baseball_manga.toml`](core/works/anime/baseball_manga.toml) | 7 | 709 B | 野球漫画: キャラクター名 |
@@ -283,7 +283,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/anime/nurarihyon.toml`](core/works/anime/nurarihyon.toml) | 4 | 417 B | ぬらりひょんの孫: キャラクター名 |
 | [`core/works/anime/seinen.toml`](core/works/anime/seinen.toml) | 4 | 496 B | 青年漫画: キャラクター名 |
 | [`core/works/anime/xxxholic.toml`](core/works/anime/xxxholic.toml) | 4 | 366 B | xxxHOLiC (CLAMP): キャラクター名 |
-| **小計** (56 ファイル) | **853** | **78 KB** | |
+| **小計** (56 ファイル) | **854** | **78 KB** | |
 
 #### VTuber
 
@@ -404,7 +404,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 12517 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 12519 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -749,6 +749,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20261012_english_words2.toml`](tests/corpus/should_read/probe_20261012_english_words2.toml) | 12 |
 |  | [`tests/corpus/should_read/probe_20261012_model_numbers.toml`](tests/corpus/should_read/probe_20261012_model_numbers.toml) | 105 |
 |  | [`tests/corpus/should_read/probe_20261012_phone_sentence.toml`](tests/corpus/should_read/probe_20261012_phone_sentence.toml) | 29 |
+|  | [`tests/corpus/should_read/probe_20261012_slash.toml`](tests/corpus/should_read/probe_20261012_slash.toml) | 2 |
 |  | [`tests/corpus/should_read/probe_20261012_slash_units_w.toml`](tests/corpus/should_read/probe_20261012_slash_units_w.toml) | 6 |
 |  | [`tests/corpus/should_read/probe_20261012_time_ratio_kaomoji.toml`](tests/corpus/should_read/probe_20261012_time_ratio_kaomoji.toml) | 14 |
 |  | [`tests/corpus/should_read/regression.toml`](tests/corpus/should_read/regression.toml) | 560 |
