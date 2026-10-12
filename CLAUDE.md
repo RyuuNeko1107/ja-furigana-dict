@@ -21,7 +21,7 @@ core/                — 単語辞書 (entry data、 役割別 sub-dir)
 
 rules/               — 校正ルール (data + 動的合成)
 ├── numbers/         — days / scales / numeric_phrases + counters/ (助数詞)
-├── text/            — symbols / units / models (型番パターン) / postprocess
+├── text/            — symbols / units / models (型番パターン) / emoji (絵文字の読み) / postprocess
 └── compat.toml      — 異体字 → 標準字 mapping (= lib の入力正規化ルール。
                        lib は rules_dir を走査して role="compat" を読むため core/ ではなく
                        rules/ に置く。 wrapper が rules/core を別 mount しても効く)
@@ -63,7 +63,7 @@ loader が role 駆動 dispatch する tag。 各 TOML 冒頭に `[meta] role = 
 
 `jukugo` / `unihan` / `kanji` / `works` / `loanwords` / `compat` /
 `counters` / `days` / `scales` / `numeric_phrases` / `units` / `symbols` / `models` /
-`postprocess`
+`postprocess` / `emoji`
 
 (旧 `single_overrides` / `context` / `latin` は alpha.11 で廃止済)
 

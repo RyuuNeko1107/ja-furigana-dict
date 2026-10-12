@@ -1,0 +1,59 @@
+# 2026-10-13 絵文字の読み (lib 0.5.19 以降。 rules/text/emoji.toml)
+
+[[case]]
+input = "🥚を産む"
+mode = "hiragana"
+expected = "たまごをうむ"
+note = "名詞として使われた絵文字 (直後が格助詞) は読む"
+
+[[case]]
+input = "今日は🍜が食べたい"
+mode = "hiragana"
+expected = "きょうはらーめんがたべたい"
+
+[[case]]
+input = "アイス🍨楽しみー"
+mode = "hiragana"
+expected = "アイス🍨たのしみー"
+note = "語に添えた装飾は読まない (直前が名詞)"
+
+[[case]]
+input = "ラーメン🍜が食べたい"
+mode = "hiragana"
+expected = "ラーメン🍜がたべたい"
+
+[[case]]
+input = "🌸本日24日分の配信🌸"
+mode = "hiragana"
+expected = "🌸ほんじつにじゅうよっかぶんのはいしん🌸"
+note = "見出しの装飾 (行頭 + 末尾に同じ絵文字) は読まない"
+
+[[case]]
+input = "笑って♪楽しい☆"
+mode = "hiragana"
+expected = "わらってたのしい"
+note = "装飾記号は読まない"
+
+[[case]]
+input = "この🇯🇵では"
+mode = "hiragana"
+expected = "このにほんでは"
+note = "国旗"
+
+[[case]]
+input = "ありがとう😂😂😂"
+mode = "hiragana"
+expected = "ありがとう😂😂😂"
+note = "辞書に無い絵文字は表記のまま"
+
+[[case]]
+input = "( ^ω^)おっ"
+mode = "hiragana"
+expected = "おっ"
+note = "空白入りの顔文字は読まない"
+
+[[case]]
+input = "ε=ε=(ノ≧∇≦)ノ"
+mode = "hiragana"
+expected = ""
+note = "走る顔文字"
