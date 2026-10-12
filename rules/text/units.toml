@@ -109,3 +109,17 @@ description = "SI 単位 + 通貨 + % (km / kg / mL / 円 / % 等、 数値 + �
 "㎥"  = { kana = "リッポウメートル", ci = false }
 "cm3" = { kana = "リッポウセンチメートル", ci = false }
 "cm³" = { kana = "リッポウセンチメートル", ci = false }
+
+# 電気の単位 (W は大文字だけ: 小文字 w は笑い / 文字名。 5W くらい / 20kW です が素通しだった。 V 単独は 5V5 と紛れるので入れない)
+"W"   = { kana = "ワット", ci = false }
+"kW"  = { kana = "キロワット", ci = false }
+"MW"  = { kana = "メガワット", ci = false }
+"GW"  = { kana = "ギガワット", ci = false }
+"Wh"  = { kana = "ワットアワー", ci = false }
+"kWh" = { kana = "キロワットアワー", ci = false }
+"mV"  = { kana = "ミリボルト", ci = false }
+"kV"  = { kana = "キロボルト", ci = false }
+"mA"  = { kana = "ミリアンペア", ci = false }
+"Ω"   = { kana = "オーム", ci = false }
+"kΩ"  = { kana = "キロオーム", ci = false }
+"MΩ"  = { kana = "メガオーム", ci = false }

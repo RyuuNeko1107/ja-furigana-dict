@@ -104,3 +104,19 @@ expected = "みずはエイチツーオー"
 input = "Heの話"
 mode = "hiragana"
 expected = "Heのはなし"
+
+# 電気の単位 (reading-audit の残り)
+[[case]]
+input = "20kWです"
+mode = "hiragana"
+expected = "ニジュッキロワットです"
+
+[[case]]
+input = "5Wくらい"
+mode = "hiragana"
+expected = "ゴワットくらい"
+
+[[case]]
+input = "5V5をやる"
+mode = "hiragana"
+expected = "5V5をやる"
