@@ -30,8 +30,8 @@ git に commit されている master HEAD の状態を基準にする。
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **4,207** | **188 KB** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,796** | **374 KB** |
 | [**異体字**](#異体字) (`rules/compat.toml`) | **436** | **6.1 KB** |
-| [**エンジンルール**](#エンジンルール) (`rules/`) | **1,031** | **65 KB** |
-| **合計** | **87,823** | **2.93 MB** |
+| [**エンジンルール**](#エンジンルール) (`rules/`) | **1,033** | **65 KB** |
+| **合計** | **87,825** | **2.93 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -345,7 +345,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 `rules/` — エンジン挙動 (助数詞 / 文脈 / 後処理 等) を制御するルール群。 lib コードに embed されるのではなく、 ここで宣言的に外部化されている。
 
 <!-- AUTO-GENERATED:RULES:BEGIN -->
-**合計**: 1,031 エントリ / 1,096 ルール / 65 KB (genre 2 区分)
+**合計**: 1,033 エントリ / 1,098 ルール / 65 KB (genre 2 区分)
 
 #### 数値系
 
@@ -371,17 +371,18 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 
 単位 / 記号 / ラテン文字 / 後処理 regex — 文字単位の読み解決と最終整形
 
-`rules/text/` — 6 ファイル
+`rules/text/` — 7 ファイル
 
 | ファイル | エントリ数 | ルール数 | サイズ | 用途 |
 |---|---:|---:|---:|---|
-| [`rules/text/emoji.toml`](rules/text/emoji.toml) | 585 | 585 | 18 KB | 絵文字の読み (名詞は直後が格助詞の時だけ読む) |
+| [`rules/text/emoji.toml`](rules/text/emoji.toml) | 575 | 575 | 17 KB | 絵文字の読み (名詞は直後が格助詞の時だけ読む) |
 | [`rules/text/symbols.toml`](rules/text/symbols.toml) | 74 | 74 | 1.6 KB | 記号 1 文字読み (+ / − / % / ‰ / 〜 / ・ / ※ 等、 chunks/split() の symbols 階層で個別 hit) |
 | [`rules/text/units.toml`](rules/text/units.toml) | 70 | 70 | 3.9 KB | SI 単位 + 通貨 + % (km / kg / mL / 円 / % 等、 数値 + 単位を 1 chunk で読む。 lookup は case-insensitive) |
 | [`rules/text/models.toml`](rules/text/models.toml) | 39 | 39 | 9.7 KB | 型番パターン (RTX / Ryzen / Core i / iPhone / Galaxy / Pixel / PS5 / DDR / PCIe / USB / Wi-Fi 等、 ブランド + 数字 + 接尾辞を 1 語で読む) |
+| [`rules/text/emoji_context.toml`](rules/text/emoji_context.toml) | 12 | 12 | 1.1 KB | 絵文字の文脈読み (match) |
 | [`rules/text/context_cues.toml`](rules/text/context_cues.toml) | 7 | 7 | 3.2 KB | N/M が日付か分数かを決める手がかり語 |
 | [`rules/text/postprocess.toml`](rules/text/postprocess.toml) | 3 | 3 | 438 B | 出力後処理 regex (Step 7、 mode 別: hiragana / ruby / tts / romaji の出力直前に適用) |
-| **小計** (6 ファイル) | **778** | **778** | **37 KB** | |
+| **小計** (7 ファイル) | **780** | **780** | **37 KB** | |
 
 <!-- AUTO-GENERATED:RULES:END -->
 
