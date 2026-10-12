@@ -1217,6 +1217,7 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 "B4" = "ビーヨン"
 "B5" = "ビーゴ"
 "Lv" = "レベル"           # Lv上げ (Lv.99 / Lv3 は rules 側で読む)
+"GW" = "ゴールデンウィーク"   # GWの予定 (日本語の文脈では ギガワット より圧倒的)
 
 [digits]
 "Windows" = "english"

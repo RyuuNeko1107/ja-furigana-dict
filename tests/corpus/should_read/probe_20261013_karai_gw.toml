@@ -1,0 +1,33 @@
+# 2026-10-13 辛い (食べ物の話題は からい) / GW / 用紙サイズ / Lv
+
+[[case]]
+input = "辛い料理が好き"
+mode = "hiragana"
+expected = "からいりょうりがすき"
+note = "食べ物の話題の文は からい"
+
+[[case]]
+input = "このラーメン辛い"
+mode = "hiragana"
+expected = "このラーメンからい"
+
+[[case]]
+input = "仕事が辛い"
+mode = "hiragana"
+expected = "しごとがつらい"
+note = "食べ物の話題が無ければ つらい"
+
+[[case]]
+input = "GWの予定"
+mode = "hiragana"
+expected = "ゴールデンウィークのよてい"
+
+[[case]]
+input = "A4用紙"
+mode = "hiragana"
+expected = "エーヨンようし"
+
+[[case]]
+input = "Lv上げ周回"
+mode = "hiragana"
+expected = "レベルあげしゅうかい"
