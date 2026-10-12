@@ -1204,6 +1204,10 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 "acid" = "アシッド"
 "alkali" = "アルカリ"
 
+# reading-audit の残り (2026-10-12)
+"GJ" = "グッジョブ"      # 配信コメントの GJ = good job
+"Arch" = "アーチ"       # Arch Linux
+
 [digits]
 "Windows" = "english"
 "iPhone" = "place"
