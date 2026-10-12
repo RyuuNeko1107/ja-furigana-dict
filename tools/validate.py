@@ -519,6 +519,45 @@ def validate_units(path: Path, errors: Errors) -> None:
             )
 
 
+# ─── rules/text/context_cues.toml ──────────────────────────────────────────
+CUE_KEYS = {'date_after', 'date_before', 'date_topic', 'fraction_after', 'fraction_before', 'fraction_topic'}
+
+
+def validate_context_cues(path: Path, errors: Errors) -> None:
+    """[slash_pair] の手がかり語: 6 つの key (date_* / fraction_*) の文字列配列。空の語・重複・日付と分数の両方への登録は不可"""
+    data = load_toml(path, errors)
+    if data is None:
+        return
+    sp = data.get('slash_pair')
+    if not isinstance(sp, dict):
+        errors.add_for(path, "[slash_pair] が無い、または table ではない")
+        return
+    seen: dict = {}
+    for key, words in sp.items():
+        if key not in CUE_KEYS:
+            errors.add_for(path, f"[slash_pair] 未知の key '{key}' (使えるのは {sorted(CUE_KEYS)})")
+            continue
+        if not isinstance(words, list) or not all(isinstance(w, str) for w in words):
+            errors.add_for(path, f"[slash_pair].{key} は文字列の配列にしてください")
+            continue
+        for w in words:
+            if not w.strip():
+                errors.add_for(path, f"[slash_pair].{key} に空の語がある")
+            elif w in [x for x, k in seen.items() if k == key]:
+                errors.add_for(path, f"[slash_pair].{key} '{w}' が重複している")
+            seen.setdefault(w, key)
+    # 同じ語を日付側と分数側に同時に置かない (どちらが勝つか分からなくなる)
+    kind = lambda k: k.split('_')[0]
+    by_word: dict = {}
+    for key, words in sp.items():
+        if key in CUE_KEYS and isinstance(words, list):
+            for w in words:
+                by_word.setdefault((w, key.split('_', 1)[1]), set()).add(kind(key))
+    for (w, pos), kinds in by_word.items():
+        if len(kinds) > 1:
+            errors.add_for(path, f"'{w}' を日付側と分数側の両方 ({pos}) に登録している")
+
+
 # ─── rules/text/models.toml ────────────────────────────────────────────────
 MODEL_STYLES = {'place', 'each', 'each_en', 'english', 'pair', 'pair_en', 'dotted', 'part', 'spell'}
 MODEL_PLACEHOLDER_RE = re.compile(r'\{([^{}]*)\}')
@@ -1060,6 +1099,7 @@ def main() -> int:
         (discover(core, 'kanji', recursive=True),  load_kanji),
         ([rules / 'compat.toml'],            lambda p: validate_compat(p, errors)),
         ([rules / 'text' / 'models.toml'],   lambda p: validate_models(p, errors)),
+        ([rules / 'text' / 'context_cues.toml'], lambda p: validate_context_cues(p, errors)),
         # ★ counters の実ファイルは rules/numbers/counters/ 配下。旧 `discover(rules,
         #   'counters')` (= rules/counters/ を探す) は dict ディレクトリ再編成で dead に
         #   なっており validate_counters が一度も走っていなかった (= kanji_numeral lint 等が
