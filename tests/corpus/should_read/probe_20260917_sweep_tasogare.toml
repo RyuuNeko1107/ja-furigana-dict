@@ -191,7 +191,7 @@ expected = "しごとでしっせきしたんだろうな"
 [[case]]
 input = "昏睡レ○プ?"
 mode = "hiragana"
-expected = "こんすいレ○プ?"
+expected = "こんすいレまるプ?"
 
 [[case]]
 input = "昏倒に近いんだぞ"

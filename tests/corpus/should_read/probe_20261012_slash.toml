@@ -120,3 +120,39 @@ expected = "ゴワットくらい"
 input = "5V5をやる"
 mode = "hiragana"
 expected = "5V5をやる"
+
+# × の読み分け / 図形記号の伏せ字 / ローマ数字 (lib 0.5.13)
+[[case]]
+input = "返事は×です"
+mode = "hiragana"
+expected = "へんじはばつです"
+
+[[case]]
+input = "2×3=6"
+mode = "hiragana"
+expected = "にかけるさん=ろく"
+
+[[case]]
+input = "○×クイズ"
+mode = "hiragana"
+expected = "まるばつクイズ"
+
+[[case]]
+input = "〇〇さん△△さん"
+mode = "hiragana"
+expected = "まるまるさんさんかくさんかくさん"
+
+[[case]]
+input = "■■様"
+mode = "hiragana"
+expected = "しかくしかくさま"
+
+[[case]]
+input = "★★★お知らせ★★★"
+mode = "hiragana"
+expected = "★★★おしらせ★★★"
+
+[[case]]
+input = "第Ⅲ期"
+mode = "hiragana"
+expected = "だいさんき"

@@ -528,6 +528,13 @@ def validate_context_cues(path: Path, errors: Errors) -> None:
     data = load_toml(path, errors)
     if data is None:
         return
+    ph = data.get('placeholder')
+    if ph is not None:
+        words = ph.get('honorifics') if isinstance(ph, dict) else None
+        if not isinstance(words, list) or not all(isinstance(w, str) and w.strip() for w in words):
+            errors.add_for(path, "[placeholder].honorifics は空でない文字列の配列にしてください")
+        elif len(set(words)) != len(words):
+            errors.add_for(path, "[placeholder].honorifics に重複がある")
     sp = data.get('slash_pair')
     if not isinstance(sp, dict):
         errors.add_for(path, "[slash_pair] が無い、または table ではない")
