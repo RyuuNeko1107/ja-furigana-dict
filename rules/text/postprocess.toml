@@ -38,3 +38,9 @@ modes = []
 pattern = "じゅうぱー"
 replacement = "じゅっぱー"
 modes = []
+
+# Ver.1.2 の Ver の後ろのドットが読みに残る (バージョン.いちてんに) のを消す
+[[rule]]
+pattern = '(バージョン|ばーじょん)\.([ぁ-んァ-ヶー0-9])'
+replacement = "$1$2"
+modes = []

@@ -40,3 +40,29 @@ expected = "エイチピー ごぶんのさん"
 input = "13/5"
 mode = "hiragana"
 expected = "ごぶんのじゅうさん"
+
+# lib 0.5.11: 深夜の時刻 / ドット区切りの日付 / 範囲のハイフン / 1 字の分数 / Ver.
+[[case]]
+input = "25:00に配信"
+mode = "hiragana"
+expected = "にじゅうごじにはいしん"
+
+[[case]]
+input = "2026.10.12"
+mode = "hiragana"
+expected = "にせんにじゅうろくねんじゅうがつじゅうににち"
+
+[[case]]
+input = "10-20人"
+mode = "hiragana"
+expected = "じゅうからにじゅうにん"
+
+[[case]]
+input = "¾"
+mode = "hiragana"
+expected = "よんぶんのさん"
+
+[[case]]
+input = "Ver.1.2"
+mode = "hiragana"
+expected = "バージョンいちてんに"
