@@ -79,6 +79,8 @@ description = "SI 単位 + 通貨 + % (km / kg / mL / 円 / % 等、 数値 + �
 "px"   = { kana = "ピクセル" }
 "h"    = { kana = "ジカン", ci = false }
 "ms"   = { kana = "ミリビョウ", ci = false }
+"ns"   = { kana = "ナノビョウ", ci = false }
+"μs"   = { kana = "マイクロビョウ", ci = false }
 "dB"   = { kana = "デシベル", ci = false }
 "kbps" = { kana = "キロビーピーエス" }
 "Mbps" = { kana = "メガビーピーエス", ci = false }

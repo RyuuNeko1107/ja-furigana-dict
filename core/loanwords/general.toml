@@ -1218,6 +1218,14 @@ description = "一般英語 / メディア / ゲーミング / SNS 略語 (ASCII
 "B5" = "ビーゴ"
 "Lv" = "レベル"           # Lv上げ (Lv.99 / Lv3 は rules 側で読む)
 "GW" = "ゴールデンウィーク"   # GWの予定 (日本語の文脈では ギガワット より圧倒的)
+# 本番 signal の英単語 (2026-10-13)
+"Mr" = "ミスター"
+"Stella" = "ステラ"
+"Comfort" = "コンフォート"
+"Stamp" = "スタンプ"
+"Frost" = "フロスト"
+"handy" = "ハンディ"
+"MuseDash" = "ミューズダッシュ"
 
 [digits]
 "Windows" = "english"

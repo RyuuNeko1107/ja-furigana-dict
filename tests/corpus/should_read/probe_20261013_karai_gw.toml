@@ -54,3 +54,14 @@ note = "辛い の entry が複合語を割らない"
 input = "塩辛いスルメ"
 mode = "hiragana"
 expected = "しおからいスルメ"
+
+[[case]]
+input = "遅延は5ns"
+mode = "hiragana"
+expected = "ちえんはゴナノビョウ"
+note = "ナノ秒 (ns)"
+
+[[case]]
+input = "Mrが来た"
+mode = "hiragana"
+expected = "ミスターがきた"
