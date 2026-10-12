@@ -1,0 +1,85 @@
+# 2026-10-13 記号・数字の文脈読み 第2弾 (lib 0.5.15 の挙動。 lib の release 後に push する)
+
+[[case]]
+input = "①②③"
+mode = "hiragana"
+expected = "いち に さん"
+note = "丸数字の連続は 1 つずつ (123 にしない)"
+
+[[case]]
+input = "①番"
+mode = "hiragana"
+expected = "いちばん"
+note = "丸数字 1 つは従来どおり"
+
+[[case]]
+input = "10²"
+mode = "hiragana"
+expected = "じゅうのにじょう"
+note = "上付き数字は累乗"
+
+[[case]]
+input = "x^2"
+mode = "hiragana"
+expected = "xのにじょう"
+note = "^ の累乗"
+
+[[case]]
+input = "2^10"
+mode = "hiragana"
+expected = "にのじゅうじょう"
+note = "^ の累乗 (指数 2 桁)"
+
+[[case]]
+input = "2x速"
+mode = "hiragana"
+expected = "にバイそく"
+note = "数字の直後の x は 倍"
+
+[[case]]
+input = "x2ボーナス"
+mode = "hiragana"
+expected = "ニバイボーナス"
+note = "x + 数字は 倍"
+
+[[case]]
+input = "0x1F"
+mode = "hiragana"
+expected = "0x1F"
+note = "16 進は倍にしない"
+
+[[case]]
+input = "x86"
+mode = "hiragana"
+expected = "x86"
+note = "x86 はアーキテクチャ"
+
+[[case]]
+input = "v2.0"
+mode = "hiragana"
+expected = "ブイニテンゼロ"
+note = "v + 版番号"
+
+[[case]]
+input = "w=2"
+mode = "hiragana"
+expected = "ダブリュー=に"
+note = "式の中の w は文字名"
+
+[[case]]
+input = "9:00-17:00"
+mode = "hiragana"
+expected = "くじからじゅうしちじ"
+note = "時刻の範囲"
+
+[[case]]
+input = "2024-2025"
+mode = "hiragana"
+expected = "にせんにじゅうよんからにせんにじゅうご"
+note = "西暦の範囲"
+
+[[case]]
+input = "2025-2024"
+mode = "hiragana"
+expected = "にせんにじゅうごにせんにじゅうよん"
+note = "後ろが小さい組は範囲にしない"

@@ -119,7 +119,7 @@ expected = "ゴワットくらい"
 [[case]]
 input = "5V5をやる"
 mode = "hiragana"
-expected = "5V5をやる"
+expected = "ごブイごをやる"
 
 # × の読み分け / 図形記号の伏せ字 / ローマ数字 (lib 0.5.13)
 [[case]]
