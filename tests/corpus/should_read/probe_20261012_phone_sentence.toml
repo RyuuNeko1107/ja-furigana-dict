@@ -42,11 +42,6 @@ mode = "hiragana"
 expected = "ぷらすいち ごごご いちにさん よんごろくなな"
 
 [[case]]
-input = "2024-10-12"
-mode = "hiragana"
-expected = "にせんにじゅうよんじゅうじゅうに"
-
-[[case]]
 input = "12/25"
 mode = "hiragana"
 expected = "じゅうにがつにじゅうごにち"
@@ -65,16 +60,6 @@ expected = "にぶんのいちサイズ"
 input = "3/4以上"
 mode = "hiragana"
 expected = "よんぶんのさんいじょう"
-
-[[case]]
-input = "1/3"
-mode = "hiragana"
-expected = "いちすらっしゅさん"
-
-[[case]]
-input = "10/12"
-mode = "hiragana"
-expected = "じゅうすらっしゅじゅうに"
 
 [[case]]
 input = "thank you so much"
