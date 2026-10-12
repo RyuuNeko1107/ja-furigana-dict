@@ -4597,7 +4597,7 @@ note = "ドラえもん 出木杉=できすぎ"
 [[case]]
 input = "壱百満天原"
 mode = "hiragana"
-expected = "いちひゃくまんてんばら"
+expected = "ひゃくまんてんばら"
 note = "にじ 原=ばら (default てんげん)"
 
 [[case]]

@@ -65,3 +65,44 @@ note = "ナノ秒 (ns)"
 input = "Mrが来た"
 mode = "hiragana"
 expected = "ミスターがきた"
+
+# 大規模点検 (実コメント 235 万行) で見つかった誤読
+[[case]]
+input = "そりゃ硬ぇでしょ"
+mode = "hiragana"
+expected = "そりゃかてぇでしょ"
+
+[[case]]
+input = "潔すぎるw"
+mode = "hiragana"
+expected = "いさぎよすぎるワラ"
+
+[[case]]
+input = "ガルパンの西住まほ"
+mode = "hiragana"
+expected = "ガルパンのにしずみまほ"
+
+[[case]]
+input = "先染めの紬"
+mode = "hiragana"
+expected = "さきぞめのつむぎ"
+
+[[case]]
+input = "コートの丈詰め"
+mode = "hiragana"
+expected = "コートのたけづめ"
+
+[[case]]
+input = "差止め請求"
+mode = "hiragana"
+expected = "さしとめせいきゅう"
+
+[[case]]
+input = "何着たらいいかわからない"
+mode = "hiragana"
+expected = "なにきたらいいかわからない"
+
+[[case]]
+input = "壱百満天原サロメ"
+mode = "hiragana"
+expected = "ひゃくまんてんばらさろめ"

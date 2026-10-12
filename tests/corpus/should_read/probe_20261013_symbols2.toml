@@ -3,7 +3,7 @@
 [[case]]
 input = "①②③"
 mode = "hiragana"
-expected = "いち に さん"
+expected = "いちにさん"
 note = "丸数字の連続は 1 つずつ (123 にしない)"
 
 [[case]]

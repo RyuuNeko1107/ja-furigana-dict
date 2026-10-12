@@ -9116,6 +9116,11 @@ default = "コウ"
 next_starts_any = ["い", "く", "か", "さ", "す", "そ", "け", "過"]
 reading = "カタ"
 
+# 硬ぇ (かてぇ。 Lindera が 硬|ぇ と割るので 硬ぇよ / 硬ぇでしょ も)
+[[kanji.match]]
+next_starts = "ぇ"
+reading = "カテ"
+
 [[kanji]]
 char = "篤"
 default = "トク"
@@ -16413,7 +16418,7 @@ char = "潔"
 default = "ケツ"
 
 [[kanji.match]]
-next_starts_any = ["い", "く", "か", "け", "さ", "し"]
+next_starts_any = ["い", "く", "か", "け", "さ", "し", "す", "ぎ"]
 reading = "いさぎよ"
 
 # 「潰」 default 「カイ」 (= 潰瘍/全潰/倒潰/胃潰瘍)。
