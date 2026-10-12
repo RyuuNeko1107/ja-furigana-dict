@@ -26,12 +26,12 @@ git に commit されている master HEAD の状態を基準にする。
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,654** | **728 KB** |
 | [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **33,448** | **1.38 MB** |
 | [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,703** | **133 KB** |
-| [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **3,507** | **96 KB** |
-| [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **4,197** | **187 KB** |
+| [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **3,508** | **97 KB** |
+| [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **4,198** | **188 KB** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,796** | **374 KB** |
 | [**異体字**](#異体字) (`rules/compat.toml`) | **436** | **6.1 KB** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **440** | **46 KB** |
-| **合計** | **87,181** | **2.91 MB** |
+| **合計** | **87,183** | **2.91 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -309,11 +309,11 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
 | [`core/loanwords/english.toml`](core/loanwords/english.toml) | 1,822 | 49 KB | 英単語 (配信コメント頻出の一般語 / 作品・企業名 / 綴り読み略語) |
-| [`core/loanwords/general.toml`](core/loanwords/general.toml) | 1,032 | 28 KB | 一般英語 / メディア / ゲーミング / SNS 略語 (ASCII surface) |
+| [`core/loanwords/general.toml`](core/loanwords/general.toml) | 1,033 | 28 KB | 一般英語 / メディア / ゲーミング / SNS 略語 (ASCII surface) |
 | [`core/loanwords/it.toml`](core/loanwords/it.toml) | 414 | 14 KB | IT 用語 / プログラミング言語 / OSS / クラウドサービス / 技術企業 (ASCII surface) |
 | [`core/loanwords/sentence_words.toml`](core/loanwords/sentence_words.toml) | 135 | 2.8 KB | 英文の中でだけ使う語 (a / is / to / you 等の機能語。 単独では引かない) |
 | [`core/loanwords/romaji.toml`](core/loanwords/romaji.toml) | 104 | 2.4 KB | ローマ字表記 (VTuber 名 / 日本語ローマ字) |
-| **小計** (5 ファイル) | **3,507** | **96 KB** | |
+| **小計** (5 ファイル) | **3,508** | **97 KB** | |
 
 ### 分類前 inbox
 
@@ -321,7 +321,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/_inbox.toml`](core/_inbox.toml) | 4,197 | 187 KB | 分類前の一時 inbox (≥2 字 surface、 内容が貯まったら適切な genre dir に振り分ける) |
+| [`core/_inbox.toml`](core/_inbox.toml) | 4,198 | 188 KB | 分類前の一時 inbox (≥2 字 surface、 内容が貯まったら適切な genre dir に振り分ける) |
 
 ### 単漢字 [[kanji]] format
 
@@ -405,7 +405,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 12566 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 12572 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -754,6 +754,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20261012_slash_default.toml`](tests/corpus/should_read/probe_20261012_slash_default.toml) | 13 |
 |  | [`tests/corpus/should_read/probe_20261012_slash_units_w.toml`](tests/corpus/should_read/probe_20261012_slash_units_w.toml) | 6 |
 |  | [`tests/corpus/should_read/probe_20261012_time_ratio_kaomoji.toml`](tests/corpus/should_read/probe_20261012_time_ratio_kaomoji.toml) | 14 |
+|  | [`tests/corpus/should_read/probe_20261013_karai_gw.toml`](tests/corpus/should_read/probe_20261013_karai_gw.toml) | 6 |
 |  | [`tests/corpus/should_read/probe_20261013_symbols.toml`](tests/corpus/should_read/probe_20261013_symbols.toml) | 10 |
 |  | [`tests/corpus/should_read/regression.toml`](tests/corpus/should_read/regression.toml) | 560 |
 |  | [`tests/corpus/should_read/sentences.toml`](tests/corpus/should_read/sentences.toml) | 49 |
