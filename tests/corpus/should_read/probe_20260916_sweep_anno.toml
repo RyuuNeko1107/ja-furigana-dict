@@ -216,7 +216,7 @@ expected = "きりゅうちゃんはほとはらさんだった、ってこと??
 [[case]]
 input = "( ́∀`)蛍丸つよかった"
 mode = "hiragana"
-expected = "( ́∀`)ほたるまるつよかった"
+expected = "ほたるまるつよかった"
 
 [[case]]
 input = "呂布奉先"

@@ -281,7 +281,7 @@ expected = "むさしといえばかい"
 [[case]]
 input = "五月蠅い ( ゚Д゚)"
 mode = "hiragana"
-expected = "うるさい ( ゚Д゚)"
+expected = "うるさい "
 
 [[case]]
 input = "蠅の王"

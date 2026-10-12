@@ -121,3 +121,24 @@ expected = "FEばんしせんこうのぞくほう"
 input = "R18のAKB48"
 mode = "hiragana"
 expected = "アールジュウハチのエーケービーフォーティーエイト"
+
+# 実コメント 400 行の評価で見つかった誤読
+[[case]]
+input = "奪三振"
+mode = "hiragana"
+expected = "だっさんしん"
+
+[[case]]
+input = "私歌上手いな"
+mode = "hiragana"
+expected = "わたしうたうまいな"
+
+[[case]]
+input = "真隣にいる"
+mode = "hiragana"
+expected = "まどなりにいる"
+
+[[case]]
+input = "劇場版銀河鉄道999"
+mode = "hiragana"
+expected = "げきじょうばんぎんがてつどうすりーないん"
