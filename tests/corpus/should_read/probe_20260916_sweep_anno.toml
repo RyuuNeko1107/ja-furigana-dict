@@ -41,7 +41,7 @@ expected = "はげます"
 [[case]]
 input = "禿しいい♬"
 mode = "hiragana"
-expected = "はげしいい♬"
+expected = "はげしいい"
 
 [[case]]
 input = "禿か!?♬"

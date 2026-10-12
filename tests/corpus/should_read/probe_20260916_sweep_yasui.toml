@@ -3,7 +3,7 @@
 [[case]]
 input = "安い♪安〜い♫"
 mode = "hiragana"
-expected = "やすい♪やすい♫"
+expected = "やすいやすい"
 
 [[case]]
 input = "安っ!"

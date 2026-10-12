@@ -57,3 +57,36 @@ input = "ε=ε=(ノ≧∇≦)ノ"
 mode = "hiragana"
 expected = ""
 note = "走る顔文字"
+
+[[case]]
+input = "今日は🍛が食べたい"
+mode = "hiragana"
+expected = "きょうはかれーがたべたい"
+
+[[case]]
+input = "嬉しい✨ありがとう💕"
+mode = "hiragana"
+expected = "うれしいありがとう"
+note = "✨ 💕 などの装飾は読まない"
+
+[[case]]
+input = "🌊を見に行く"
+mode = "hiragana"
+expected = "なみをみにいく"
+
+[[case]]
+input = "手牌は🀇🀈🀉で待ちは🀄"
+mode = "hiragana"
+expected = "てはいはいーまんりゃんまんさんまんでまちはちゅん"
+note = "麻雀牌は常に読む (一萬 二萬 三萬 / 中)"
+
+[[case]]
+input = "🀀🀁🀂🀃"
+mode = "hiragana"
+expected = "とんなんしゃーぺー"
+note = "東南西北"
+
+[[case]]
+input = "🀙🀚🀛🀜🀝"
+mode = "hiragana"
+expected = "いーぴんりゃんぴんさんぴんすーぴんうーぴん"

@@ -58,5 +58,5 @@ note = "■ は 2 つ並びか直後が敬称の時だけ伏せ字"
 [[case]]
 input = "★★★お知らせ★★★"
 mode = "hiragana"
-expected = "★★★おしらせ★★★"
+expected = "おしらせ"
 note = "装飾の ★ 3 連は読まない"

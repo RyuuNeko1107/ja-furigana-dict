@@ -150,7 +150,7 @@ expected = "しかくしかくさま"
 [[case]]
 input = "★★★お知らせ★★★"
 mode = "hiragana"
-expected = "★★★おしらせ★★★"
+expected = "おしらせ"
 
 [[case]]
 input = "第Ⅲ期"
