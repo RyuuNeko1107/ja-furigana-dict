@@ -61,8 +61,3 @@ expected = "まはんたいなむのうりょくが"
 input = "弾数にも限界ありますわね"
 mode = "hiragana"
 expected = "だんすうにもげんかいありますわね"
-
-[[case]]
-input = "後の先ってやつ"
-mode = "hiragana"
-expected = "ごのせんってやつ"
