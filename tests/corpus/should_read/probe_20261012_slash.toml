@@ -61,3 +61,19 @@ expected = "まはんたいなむのうりょくが"
 input = "弾数にも限界ありますわね"
 mode = "hiragana"
 expected = "だんすうにもげんかいありますわね"
+
+# 規格・ステータス・チップ (2026-10-12)
+[[case]]
+input = "8bitのゲーム"
+mode = "hiragana"
+expected = "ハチビットのゲーム"
+
+[[case]]
+input = "M3 Maxを買った"
+mode = "hiragana"
+expected = "エムスリーマックスをかった"
+
+[[case]]
+input = "LTEの電波"
+mode = "hiragana"
+expected = "エルティーイーのでんぱ"

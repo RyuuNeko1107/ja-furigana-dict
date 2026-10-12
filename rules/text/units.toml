@@ -92,3 +92,6 @@ description = "SI 単位 + 通貨 + % (km / kg / mL / 円 / % 等、 数値 + �
 "mph"  = { kana = "マイルマイジ" }
 "rpm"  = { kana = "アールピーエム", ci = false }
 "bps"  = { kana = "ビーピーエス", ci = false }
+
+"bit"  = { kana = "ビット", ci = false }
+"Kbps" = { kana = "キロビーピーエス", ci = false }

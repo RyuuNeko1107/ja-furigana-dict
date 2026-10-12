@@ -422,3 +422,16 @@ reading = "クーダ{1:place}テン{2:english}"
 [[model]]
 pattern = 'CUDA\s?([0-9]{1,2})'
 reading = "クーダ{1:place}"
+
+# Apple のチップ (M1 だけ / A17 だけ は曖昧なので、 Pro / Max / Ultra / Bionic / チップ が付く時だけ)
+[[model]]
+pattern = 'M([1-4])\s?(Pro|Max|Ultra)'
+reading = "エム{1:english}{2:part}"
+
+[[model]]
+pattern = 'M([1-4])\s?チップ'
+reading = "エム{1:english}チップ"
+
+[[model]]
+pattern = 'A(1[0-9])\s?(Pro|Bionic)'
+reading = "エー{1:english}{2:part}"
