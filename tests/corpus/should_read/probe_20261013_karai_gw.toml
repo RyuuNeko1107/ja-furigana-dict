@@ -142,3 +142,40 @@ expected = "まどなりにいる"
 input = "劇場版銀河鉄道999"
 mode = "hiragana"
 expected = "げきじょうばんぎんがてつどうすりーないん"
+
+# 実コメント 300 行の評価 (第 2 ラウンド) で見つかった誤読
+[[case]]
+input = "多くの方がご来場"
+mode = "hiragana"
+expected = "おおくのかたがごらいじょう"
+
+[[case]]
+input = "ペンギン好きの方へ届きますように"
+mode = "hiragana"
+expected = "ペンギンすきのかたへとどきますように"
+
+[[case]]
+input = "10/8(木)予約受付中"
+mode = "hiragana"
+expected = "じゅうがつようか(もく)よやくうけつけちゅう"
+note = "曜日の略記 (木) = もく"
+
+[[case]]
+input = "かわいいで候"
+mode = "hiragana"
+expected = "かわいいでそうろう"
+
+[[case]]
+input = "轟雷2と八つ墓村"
+mode = "hiragana"
+expected = "ごうらいにとやつはかむら"
+
+[[case]]
+input = "ファイターズ×イチモニ×ローソンのコラボ"
+mode = "hiragana"
+expected = "ファイターズかけるイチモニかけるローソンのコラボ"
+
+[[case]]
+input = "価格[¥1,489]"
+mode = "hiragana"
+expected = "かかくせんよんひゃくはちじゅうきゅうえん"

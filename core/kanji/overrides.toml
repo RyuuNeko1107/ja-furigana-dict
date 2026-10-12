@@ -20,6 +20,12 @@ description = "単漢字 default override + 文脈分岐 reading"
 char = "土"
 default = "つち"
 
+# 曜日の略記 (月) (火) … = 括弧に入った 1 字
+[[kanji.match]]
+prev_ends_any = ["(", "（"]
+next_starts_any = [")", "）"]
+reading = "ド"
+
 # ─── default = on-yomi + 文脈 で kun-yomi 切替 (★alpha.14) ────────────────────
 #
 # 設計: 単独 standalone なら kun-yomi、 熟語文脈 (= 直後が漢字) なら on-yomi。
@@ -431,6 +437,12 @@ reading = "がわ"
 char = "水"
 default = "みず"
 
+# 曜日の略記 (月) (火) … = 括弧に入った 1 字
+[[kanji.match]]
+prev_ends_any = ["(", "（"]
+next_starts_any = [")", "）"]
+reading = "スイ"
+
 # ★ 2026-09-18: 副詞・時の語の直後は熟語ではない (多分兄が → たぶんけいが)。
 # prev 漢字 match より先に置いて default の訓読みに戻す。
 # prev は **漢字連続全体** なので 「昨日今日声」 は拾えないが、 ends_any にすると
@@ -447,6 +459,12 @@ reading = "スイ"
 [[kanji]]
 char = "火"
 default = "ひ"
+
+# 曜日の略記 (月) (火) … = 括弧に入った 1 字
+[[kanji.match]]
+prev_ends_any = ["(", "（"]
+next_starts_any = [")", "）"]
+reading = "カ"
 
 # ★ 2026-09-18: 副詞・時の語の直後は熟語ではない (多分兄が → たぶんけいが)。
 # prev 漢字 match より先に置いて default の訓読みに戻す。
@@ -468,6 +486,12 @@ reading = "カ"
 [[kanji]]
 char = "金"
 default = "かね"
+
+# 曜日の略記 (月) (火) … = 括弧に入った 1 字
+[[kanji.match]]
+prev_ends_any = ["(", "（"]
+next_starts_any = [")", "）"]
+reading = "キン"
 
 # ○○金 suffix (奨学金/罰金/賃金/賞金 等) = キン。
 # ★2026-09-14: 下の 「訓動詞 stem」 rule より先に置く (賞金稼ぎ → ショウキンカセギ)。
@@ -513,6 +537,12 @@ reading = "キン"
 [[kanji]]
 char = "月"
 default = "つき"
+
+# 曜日の略記 (月) (火) … = 括弧に入った 1 字
+[[kanji.match]]
+prev_ends_any = ["(", "（"]
+next_starts_any = [")", "）"]
+reading = "ゲツ"
 
 # ★ 2026-09-18: 副詞・時の語の直後は熟語ではない (多分兄が → たぶんけいが)。
 # prev 漢字 match より先に置いて default の訓読みに戻す。
@@ -2173,6 +2203,11 @@ default = "キャク"
 [[kanji]]
 char = "方"
 default = "カタ"
+
+# ★2026-10-13: 人を指す 「〜の方」 (多くの方が / 好きの方へ / たくさんの方に) = カタ。 文をまたいだ語は prev に書けないので、 文中の語句で当てる。 下の 「次が が/は/に → ホウ」 より先に評価する
+[[kanji.match]]
+input_contains_any = ["好きの方", "お住まいの方", "多くの方", "たくさんの方", "沢山の方", "色々な方", "いろんな方", "様々な方", "素敵な方", "初めての方", "お客様の方", "皆様の方", "皆さんの方", "興味のある方", "ご興味のある方", "お持ちの方", "ご存知の方", "ご存じの方", "お困りの方", "お越しの方", "ご希望の方", "ご利用の方", "お買い上げの方", "ご覧の方", "ご参加の方", "ご来場の方", "ご購入の方", "ご応募の方", "お悩みの方", "お仕事の方", "お休みの方"]
+reading = "カタ"
 
 # ★2026-09-28: 〜って方がいい は ホウ (下の カタ の て より先に評価する)
 [[kanji.match]]
@@ -4638,6 +4673,11 @@ default = "トウ"
 [[kanji]]
 char = "候"
 default = "コウ"
+
+# で候 (…でそうろう)
+[[kanji.match]]
+prev_ends_any = ["で"]
+reading = "ソウロウ"
 
 [[kanji]]
 char = "偏"
@@ -15888,6 +15928,12 @@ reading = "たば"
 [[kanji]]
 char = "木"
 default = "き"
+
+# 曜日の略記 (月) (火) … = 括弧に入った 1 字
+[[kanji.match]]
+prev_ends_any = ["(", "（"]
+next_starts_any = [")", "）"]
+reading = "モク"
 
 # ★ 2026-09-18: 副詞・時の語の直後は熟語ではない (多分兄が → たぶんけいが)。
 # prev 漢字 match より先に置いて default の訓読みに戻す。
