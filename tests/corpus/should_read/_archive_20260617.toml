@@ -50,7 +50,7 @@ expected = "なんちょうめですか"
 [[case]]
 input = "何それ"
 mode = "hiragana"
-expected = "なんそれ"
+expected = "なにそれ"
 
 [[case]]
 input = "何を見てる"

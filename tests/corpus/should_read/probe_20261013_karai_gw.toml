@@ -31,3 +31,26 @@ expected = "エーヨンようし"
 input = "Lv上げ周回"
 mode = "hiragana"
 expected = "レベルあげしゅうかい"
+
+[[case]]
+input = "何これ珍百景"
+mode = "hiragana"
+expected = "なにこれちんひゃっけい"
+note = "何これ / 何それ は ナニ (話し言葉)"
+
+[[case]]
+input = "琵琶湖畔のホテル"
+mode = "hiragana"
+expected = "びわこはんのホテル"
+note = "水辺の名詞 + 畔 = ハン"
+
+[[case]]
+input = "世知辛い世の中"
+mode = "hiragana"
+expected = "せちがらいよのなか"
+note = "辛い の entry が複合語を割らない"
+
+[[case]]
+input = "塩辛いスルメ"
+mode = "hiragana"
+expected = "しおからいスルメ"
