@@ -30,8 +30,8 @@ git に commit されている master HEAD の状態を基準にする。
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **4,197** | **187 KB** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,796** | **374 KB** |
 | [**異体字**](#異体字) (`rules/compat.toml`) | **436** | **6.1 KB** |
-| [**エンジンルール**](#エンジンルール) (`rules/`) | **416** | **45 KB** |
-| **合計** | **87,147** | **2.91 MB** |
+| [**エンジンルール**](#エンジンルール) (`rules/`) | **428** | **46 KB** |
+| **合計** | **87,159** | **2.91 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -345,7 +345,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 `rules/` — エンジン挙動 (助数詞 / 文脈 / 後処理 等) を制御するルール群。 lib コードに embed されるのではなく、 ここで宣言的に外部化されている。
 
 <!-- AUTO-GENERATED:RULES:BEGIN -->
-**合計**: 416 エントリ / 481 ルール / 45 KB (genre 2 区分)
+**合計**: 428 エントリ / 493 ルール / 46 KB (genre 2 区分)
 
 #### 数値系
 
@@ -375,12 +375,12 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 
 | ファイル | エントリ数 | ルール数 | サイズ | 用途 |
 |---|---:|---:|---:|---|
+| [`rules/text/units.toml`](rules/text/units.toml) | 68 | 68 | 3.7 KB | SI 単位 + 通貨 + % (km / kg / mL / 円 / % 等、 数値 + 単位を 1 chunk で読む。 lookup は case-insensitive) |
 | [`rules/text/symbols.toml`](rules/text/symbols.toml) | 59 | 59 | 1.3 KB | 記号 1 文字読み (+ / − / % / ‰ / 〜 / ・ / ※ 等、 chunks/split() の symbols 階層で個別 hit) |
-| [`rules/text/units.toml`](rules/text/units.toml) | 56 | 56 | 3.2 KB | SI 単位 + 通貨 + % (km / kg / mL / 円 / % 等、 数値 + 単位を 1 chunk で読む。 lookup は case-insensitive) |
 | [`rules/text/models.toml`](rules/text/models.toml) | 39 | 39 | 9.7 KB | 型番パターン (RTX / Ryzen / Core i / iPhone / Galaxy / Pixel / PS5 / DDR / PCIe / USB / Wi-Fi 等、 ブランド + 数字 + 接尾辞を 1 語で読む) |
 | [`rules/text/context_cues.toml`](rules/text/context_cues.toml) | 6 | 6 | 2.8 KB | N/M が日付か分数かを決める手がかり語 |
 | [`rules/text/postprocess.toml`](rules/text/postprocess.toml) | 3 | 3 | 438 B | 出力後処理 regex (Step 7、 mode 別: hiragana / ruby / tts / romaji の出力直前に適用) |
-| **小計** (5 ファイル) | **163** | **163** | **17 KB** | |
+| **小計** (5 ファイル) | **175** | **175** | **18 KB** | |
 
 <!-- AUTO-GENERATED:RULES:END -->
 
@@ -405,7 +405,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 12546 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 12549 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -750,7 +750,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20261012_english_words2.toml`](tests/corpus/should_read/probe_20261012_english_words2.toml) | 12 |
 |  | [`tests/corpus/should_read/probe_20261012_model_numbers.toml`](tests/corpus/should_read/probe_20261012_model_numbers.toml) | 105 |
 |  | [`tests/corpus/should_read/probe_20261012_phone_sentence.toml`](tests/corpus/should_read/probe_20261012_phone_sentence.toml) | 26 |
-|  | [`tests/corpus/should_read/probe_20261012_slash.toml`](tests/corpus/should_read/probe_20261012_slash.toml) | 20 |
+|  | [`tests/corpus/should_read/probe_20261012_slash.toml`](tests/corpus/should_read/probe_20261012_slash.toml) | 23 |
 |  | [`tests/corpus/should_read/probe_20261012_slash_default.toml`](tests/corpus/should_read/probe_20261012_slash_default.toml) | 13 |
 |  | [`tests/corpus/should_read/probe_20261012_slash_units_w.toml`](tests/corpus/should_read/probe_20261012_slash_units_w.toml) | 6 |
 |  | [`tests/corpus/should_read/probe_20261012_time_ratio_kaomoji.toml`](tests/corpus/should_read/probe_20261012_time_ratio_kaomoji.toml) | 14 |
