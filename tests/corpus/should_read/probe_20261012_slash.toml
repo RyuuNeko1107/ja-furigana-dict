@@ -88,3 +88,19 @@ expected = "ごじゅうへいほうめーとるのへや"
 input = "CO2排出"
 mode = "hiragana"
 expected = "シーオーツーはいしゅつ"
+
+# 元素名・化学式
+[[case]]
+input = "H2SO4を混ぜる"
+mode = "hiragana"
+expected = "エイチツーエスオーフォーをまぜる"
+
+[[case]]
+input = "水はH2O"
+mode = "hiragana"
+expected = "みずはエイチツーオー"
+
+[[case]]
+input = "Heの話"
+mode = "hiragana"
+expected = "Heのはなし"
