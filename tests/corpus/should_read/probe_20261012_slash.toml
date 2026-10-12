@@ -1,0 +1,10 @@
+# らんま1/2 は作品名 (公式の読み)。 数字の規則では 1/2 を読めないので works に登録
+[[case]]
+input = "らんま1/2を見た"
+mode = "hiragana"
+expected = "らんまにぶんのいちをみた"
+
+[[case]]
+input = "アニメ「らんま1/2」"
+mode = "hiragana"
+expected = "アニメ「らんまにぶんのいち」"
