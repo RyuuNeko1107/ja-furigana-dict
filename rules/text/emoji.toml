@@ -618,3 +618,66 @@ description = "絵文字の読み (名詞は直後が格助詞の時だけ読む
 "⚠" = "ちゅうい|注意|警告"
 "➡" = "やじるし|矢印"
 "💯" = "ひゃくてん|100点|満点"
+
+# ── 文脈で読みが変わる絵文字 (発言がその絵文字だけの時だけ読む。 文に添えた時は従来どおり) ──
+[entries."🙏"]
+reading = ""
+[[entries."🙏".match]]
+alone = true
+reading = "ありがとう"
+
+[entries."👍"]
+[[entries."👍".match]]
+alone = true
+reading = "いいね"
+
+[entries."👏"]
+[[entries."👏".match]]
+alone = true
+reading = "はくしゅ"
+
+[entries."🙌"]
+[[entries."🙌".match]]
+alone = true
+reading = "やったー"
+
+[entries."🎉"]
+reading = ""
+[[entries."🎉".match]]
+alone = true
+reading = "おめでとう"
+
+[entries."🥳"]
+[[entries."🥳".match]]
+alone = true
+reading = "おめでとう"
+
+[entries."😂"]
+[[entries."😂".match]]
+alone = true
+reading = "わらい"
+
+[entries."🤣"]
+[[entries."🤣".match]]
+alone = true
+reading = "わらい"
+
+[entries."😭"]
+[[entries."😭".match]]
+alone = true
+reading = "うえーん"
+
+[entries."🤔"]
+[[entries."🤔".match]]
+alone = true
+reading = "うーん"
+
+[entries."🥺"]
+[[entries."🥺".match]]
+alone = true
+reading = "うるうる"
+
+[entries."😊"]
+[[entries."😊".match]]
+alone = true
+reading = "にこにこ"

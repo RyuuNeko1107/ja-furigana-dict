@@ -90,3 +90,27 @@ note = "東南西北"
 input = "🀙🀚🀛🀜🀝"
 mode = "hiragana"
 expected = "いーぴんりゃんぴんさんぴんすーぴんうーぴん"
+
+# 文脈読み (lib 0.5.22 以降。 発言がその絵文字だけの時だけ読む)
+[[case]]
+input = "🙏"
+mode = "hiragana"
+expected = "ありがとう"
+note = "絵文字だけの発言"
+
+[[case]]
+input = "ありがとう🙏"
+mode = "hiragana"
+expected = "ありがとう"
+note = "文に添えた時は読まない"
+
+[[case]]
+input = "👍"
+mode = "hiragana"
+expected = "いいね"
+
+[[case]]
+input = "うけるw😂"
+mode = "hiragana"
+expected = "うけるワラ😂"
+note = "文に添えた 😂 は表記のまま (辞書の既定が無い)"
