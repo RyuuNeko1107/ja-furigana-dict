@@ -24,14 +24,14 @@ git に commit されている master HEAD の状態を基準にする。
 | カテゴリ | エントリ数 | サイズ |
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,654** | **728 KB** |
-| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **33,452** | **1.38 MB** |
+| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **33,453** | **1.38 MB** |
 | [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,705** | **133 KB** |
-| [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **3,515** | **97 KB** |
+| [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **3,537** | **98 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **4,205** | **188 KB** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,796** | **374 KB** |
 | [**異体字**](#異体字) (`rules/compat.toml`) | **436** | **6.1 KB** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **446** | **47 KB** |
-| **合計** | **87,209** | **2.91 MB** |
+| **合計** | **87,232** | **2.91 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -56,7 +56,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/jukugo/<genre>/*` — 手動 PR メンテのジャンル別 jukugo (≥ 2 字 surface)。 lib の Step 3 (jukugo lookup) で Lindera より優先採用。 各 genre dir の `_genre.toml` がカテゴリ description を持つ。
 
-**合計**: 33,452 件 / 1.38 MB (genre 6 区分)
+**合計**: 33,453 件 / 1.38 MB (genre 6 区分)
 
 #### 自然・生命
 
@@ -92,11 +92,11 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/jukugo/humanities/shinwa.toml`](core/jukugo/humanities/shinwa.toml) | 224 | 10 KB | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
 | [`core/jukugo/humanities/old_orthography.toml`](core/jukugo/humanities/old_orthography.toml) | 202 | 9.6 KB | 旧表記・当て字の和語 (青空文庫ルビ由来) |
 | [`core/jukugo/humanities/folklore.toml`](core/jukugo/humanities/folklore.toml) | 164 | 6.7 KB | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
-| [`core/jukugo/humanities/idioms.toml`](core/jukugo/humanities/idioms.toml) | 108 | 6.0 KB | 慣用句 / ことわざ / 故事成語 (フレーズ単位) |
+| [`core/jukugo/humanities/idioms.toml`](core/jukugo/humanities/idioms.toml) | 109 | 6.1 KB | 慣用句 / ことわざ / 故事成語 (フレーズ単位) |
 | [`core/jukugo/humanities/music.toml`](core/jukugo/humanities/music.toml) | 101 | 4.1 KB | 音楽ジャンル / 楽典 / 楽器 / 演奏 / 音楽用語 |
 | [`core/jukugo/humanities/abstracts.toml`](core/jukugo/humanities/abstracts.toml) | 18 | 1.2 KB | 美意識 / 古典文学 / 仏教 / 儒教 / 思想 |
 | [`core/jukugo/humanities/emotions.toml`](core/jukugo/humanities/emotions.toml) | 11 | 699 B | 感情 / 心理状態 / 性格 / 心情 |
-| **小計** (10 ファイル) | **5,121** | **201 KB** | |
+| **小計** (10 ファイル) | **5,122** | **201 KB** | |
 
 #### 社会・制度
 
@@ -309,11 +309,11 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
 | [`core/loanwords/english.toml`](core/loanwords/english.toml) | 1,822 | 49 KB | 英単語 (配信コメント頻出の一般語 / 作品・企業名 / 綴り読み略語) |
-| [`core/loanwords/general.toml`](core/loanwords/general.toml) | 1,040 | 29 KB | 一般英語 / メディア / ゲーミング / SNS 略語 (ASCII surface) |
+| [`core/loanwords/general.toml`](core/loanwords/general.toml) | 1,062 | 29 KB | 一般英語 / メディア / ゲーミング / SNS 略語 (ASCII surface) |
 | [`core/loanwords/it.toml`](core/loanwords/it.toml) | 414 | 14 KB | IT 用語 / プログラミング言語 / OSS / クラウドサービス / 技術企業 (ASCII surface) |
 | [`core/loanwords/sentence_words.toml`](core/loanwords/sentence_words.toml) | 135 | 2.8 KB | 英文の中でだけ使う語 (a / is / to / you 等の機能語。 単独では引かない) |
 | [`core/loanwords/romaji.toml`](core/loanwords/romaji.toml) | 104 | 2.4 KB | ローマ字表記 (VTuber 名 / 日本語ローマ字) |
-| **小計** (5 ファイル) | **3,515** | **97 KB** | |
+| **小計** (5 ファイル) | **3,537** | **98 KB** | |
 
 ### 分類前 inbox
 
@@ -405,7 +405,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 12600 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 12603 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -754,7 +754,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20261012_slash_default.toml`](tests/corpus/should_read/probe_20261012_slash_default.toml) | 13 |
 |  | [`tests/corpus/should_read/probe_20261012_slash_units_w.toml`](tests/corpus/should_read/probe_20261012_slash_units_w.toml) | 6 |
 |  | [`tests/corpus/should_read/probe_20261012_time_ratio_kaomoji.toml`](tests/corpus/should_read/probe_20261012_time_ratio_kaomoji.toml) | 14 |
-|  | [`tests/corpus/should_read/probe_20261013_karai_gw.toml`](tests/corpus/should_read/probe_20261013_karai_gw.toml) | 20 |
+|  | [`tests/corpus/should_read/probe_20261013_karai_gw.toml`](tests/corpus/should_read/probe_20261013_karai_gw.toml) | 23 |
 |  | [`tests/corpus/should_read/probe_20261013_symbols.toml`](tests/corpus/should_read/probe_20261013_symbols.toml) | 10 |
 |  | [`tests/corpus/should_read/probe_20261013_symbols2.toml`](tests/corpus/should_read/probe_20261013_symbols2.toml) | 14 |
 |  | [`tests/corpus/should_read/regression.toml`](tests/corpus/should_read/regression.toml) | 560 |
