@@ -24,3 +24,29 @@ expected = "キャンバでデザイン"
 input = "MBTIはINFP"
 mode = "hiragana"
 expected = "エムビーティーアイはINFP"
+
+# UniDic との読み比べ (コメント頻度順) で見つけた誤読
+[[case]]
+input = "常々そう思う"
+mode = "hiragana"
+expected = "つねづねそうおもう"
+
+[[case]]
+input = "米所新潟"
+mode = "hiragana"
+expected = "こめどころにいがた"
+
+[[case]]
+input = "一重まぶた"
+mode = "hiragana"
+expected = "ひとえまぶた"
+
+[[case]]
+input = "間々田駅"
+mode = "hiragana"
+expected = "ままだえき"
+
+[[case]]
+input = "三毛猫"
+mode = "hiragana"
+expected = "みけねこ"
