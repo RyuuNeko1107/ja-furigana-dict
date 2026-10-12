@@ -1,0 +1,62 @@
+# 2026-10-13 記号・数字の文脈読み (lib 0.5.13 / 0.5.14 の挙動のロック)
+# 郵便番号 / × の読み分け / ローマ数字 / 図形記号の伏せ字 / 電気・化学の単位
+
+[[case]]
+input = "〒100-0001"
+mode = "hiragana"
+expected = "ゆうびんばんごういちぜろぜろのぜろぜろぜろいち"
+note = "郵便番号は 1 桁ずつ + の (lib 0.5.14)"
+
+[[case]]
+input = "郵便番号100-0001です"
+mode = "hiragana"
+expected = "ゆうびんばんごういちぜろぜろのぜろぜろぜろいちです"
+note = "「郵便番号」の直後も同じ"
+
+[[case]]
+input = "〒 1000001 東京都"
+mode = "hiragana"
+expected = "ゆうびんばんごういちぜろぜろのぜろぜろぜろいち とうきょうと"
+note = "〒 の後の空白とハイフン無しも可"
+
+[[case]]
+input = "2×3は6"
+mode = "hiragana"
+expected = "にかけるさんはろく"
+note = "数字の間の × は かける (lib 0.5.13)"
+
+[[case]]
+input = "返事は×です"
+mode = "hiragana"
+expected = "へんじはばつです"
+note = "それ以外の × は ばつ"
+
+[[case]]
+input = "ドラクエⅤ"
+mode = "hiragana"
+expected = "ドラクエご"
+note = "ローマ数字はアラビア数字として読む (lib 0.5.13)"
+
+[[case]]
+input = "第Ⅲ期"
+mode = "hiragana"
+expected = "だいさんき"
+note = "ローマ数字 Ⅲ"
+
+[[case]]
+input = "○○さん"
+mode = "hiragana"
+expected = "まるまるさん"
+note = "伏せ字の ○ は常に読む"
+
+[[case]]
+input = "■■さん"
+mode = "hiragana"
+expected = "しかくしかくさん"
+note = "■ は 2 つ並びか直後が敬称の時だけ伏せ字"
+
+[[case]]
+input = "★★★お知らせ★★★"
+mode = "hiragana"
+expected = "★★★おしらせ★★★"
+note = "装飾の ★ 3 連は読まない"
