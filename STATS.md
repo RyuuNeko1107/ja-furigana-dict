@@ -405,7 +405,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 12522 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 12518 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -739,7 +739,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20260917_sweep_yoshitsugu.toml`](tests/corpus/should_read/probe_20260917_sweep_yoshitsugu.toml) | 19 |
 |  | [`tests/corpus/should_read/probe_20260917_sweep_youkan.toml`](tests/corpus/should_read/probe_20260917_sweep_youkan.toml) | 8 |
 |  | [`tests/corpus/should_read/probe_20260917_sweep_yuukiaoi.toml`](tests/corpus/should_read/probe_20260917_sweep_yuukiaoi.toml) | 74 |
-|  | [`tests/corpus/should_read/probe_20260921_indep_sns.toml`](tests/corpus/should_read/probe_20260921_indep_sns.toml) | 35 |
+|  | [`tests/corpus/should_read/probe_20260921_indep_sns.toml`](tests/corpus/should_read/probe_20260921_indep_sns.toml) | 34 |
 |  | [`tests/corpus/should_read/probe_20260923_cur_misread.toml`](tests/corpus/should_read/probe_20260923_cur_misread.toml) | 62 |
 |  | [`tests/corpus/should_read/probe_20260923_pattern4.toml`](tests/corpus/should_read/probe_20260923_pattern4.toml) | 9 |
 |  | [`tests/corpus/should_read/probe_20260924_cur_misread2.toml`](tests/corpus/should_read/probe_20260924_cur_misread2.toml) | 431 |
@@ -749,7 +749,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20261012_accuracy_review.toml`](tests/corpus/should_read/probe_20261012_accuracy_review.toml) | 21 |
 |  | [`tests/corpus/should_read/probe_20261012_english_words2.toml`](tests/corpus/should_read/probe_20261012_english_words2.toml) | 12 |
 |  | [`tests/corpus/should_read/probe_20261012_model_numbers.toml`](tests/corpus/should_read/probe_20261012_model_numbers.toml) | 105 |
-|  | [`tests/corpus/should_read/probe_20261012_phone_sentence.toml`](tests/corpus/should_read/probe_20261012_phone_sentence.toml) | 29 |
+|  | [`tests/corpus/should_read/probe_20261012_phone_sentence.toml`](tests/corpus/should_read/probe_20261012_phone_sentence.toml) | 26 |
 |  | [`tests/corpus/should_read/probe_20261012_slash.toml`](tests/corpus/should_read/probe_20261012_slash.toml) | 5 |
 |  | [`tests/corpus/should_read/probe_20261012_slash_units_w.toml`](tests/corpus/should_read/probe_20261012_slash_units_w.toml) | 6 |
 |  | [`tests/corpus/should_read/probe_20261012_time_ratio_kaomoji.toml`](tests/corpus/should_read/probe_20261012_time_ratio_kaomoji.toml) | 14 |
