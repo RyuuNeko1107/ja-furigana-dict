@@ -50,3 +50,19 @@ expected = "ままだえき"
 input = "三毛猫"
 mode = "hiragana"
 expected = "みけねこ"
+
+# 本番ログの抜き取り点検で見つけた誤読
+[[case]]
+input = "真反対な無能力が"
+mode = "hiragana"
+expected = "まはんたいなむのうりょくが"
+
+[[case]]
+input = "弾数にも限界ありますわね"
+mode = "hiragana"
+expected = "だんすうにもげんかいありますわね"
+
+[[case]]
+input = "後の先ってやつ"
+mode = "hiragana"
+expected = "ごのせんってやつ"
