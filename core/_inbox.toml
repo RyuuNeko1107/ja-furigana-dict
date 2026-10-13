@@ -7447,3 +7447,20 @@ reading = "タスエニ"
 
 [entries."だ末に"]
 reading = "ダスエニ"
+
+# 辞書に無い語の 現行 × 試作 の食い違い(標本5000行)の目視判定から
+
+[entries."攻略上"]
+reading = "コウリャクジョウ"
+
+[entries."鉄仮面"]
+reading = "テッカメン"
+
+[entries."炎剣"]
+reading = "エンケン"
+
+[entries."方天戟"]
+reading = "ホウテンゲキ"
+
+[entries."萩原"]
+reading = "ハギワラ"

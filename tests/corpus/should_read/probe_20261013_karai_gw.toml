@@ -423,3 +423,23 @@ expected = "ののしれるから"
 input = "秋山豊寛"
 mode = "hiragana"
 expected = "あきやまとよひろ"
+
+[[case]]
+input = "攻略上の情報"
+mode = "hiragana"
+expected = "こうりゃくじょうのじょうほう"
+
+[[case]]
+input = "鉄仮面を被る"
+mode = "hiragana"
+expected = "てっかめんをかぶる"
+
+[[case]]
+input = "萩原さん"
+mode = "hiragana"
+expected = "はぎわらさん"
+
+[[case]]
+input = "方天戟を持つ"
+mode = "hiragana"
+expected = "ほうてんげきをもつ"
