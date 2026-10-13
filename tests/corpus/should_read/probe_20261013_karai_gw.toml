@@ -190,3 +190,29 @@ expected = "レイワナナネンジュウガツジュウサンニチにてい�
 input = "H30.4.1"
 mode = "hiragana"
 expected = "ヘイセイサンジュウネンシガツツイタチ"
+
+# 実コメント 300 行の点検 (2026-10-13 第 3 ラウンド)
+[[case]]
+input = "18頃には解除されそう"
+mode = "hiragana"
+expected = "じゅうはちごろにはかいじょされそう"
+
+[[case]]
+input = "2枠目やってもええんやで"
+mode = "hiragana"
+expected = "にわくめやってもええんやで"
+
+[[case]]
+input = "優しいお兄さん方のおかげ"
+mode = "hiragana"
+expected = "やさしいおにいさんがたのおかげ"
+
+[[case]]
+input = "みなさん方"
+mode = "hiragana"
+expected = "みなさんがた"
+
+[[case]]
+input = "学校は小中高すごいたのしかった"
+mode = "hiragana"
+expected = "がっこうはしょうちゅうこうすごいたのしかった"

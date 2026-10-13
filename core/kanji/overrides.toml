@@ -21429,6 +21429,11 @@ reading = "ころ"
 prev_char_type = "漢字"
 reading = "ごろ"
 
+# 数字の直後 (18頃 / 3時頃の算用数字) も ごろ
+[[kanji.match]]
+prev_ends_any = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+reading = "ごろ"
+
 # 「顎」 default 「あご」 (= 「顎/上顎/下顎/顎関節」 訓主体)
 [[kanji]]
 char = "顎"

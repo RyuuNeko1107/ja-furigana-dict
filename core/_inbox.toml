@@ -7173,3 +7173,31 @@ reading = "レイジツ"
 [[entries."麗日".match]]
 input_contains_any = ["緑谷", "爆豪", "轟", "ホークス", "相澤", "上鳴", "芦戸", "切島", "八百万", "蛙吹", "峰田", "飯田", "心操", "瀬呂", "ヒロアカ", "お茶子"]
 reading = "ウララカ"
+
+# 2026-10-13 実コメント 300 行の点検: 2枠目=わくめ / お兄さん方=がた / 小中高=しょうちゅうこう
+[entries."枠目"]
+reading = "ワクメ"
+
+[entries."さん方"]
+reading = "サンガタ"
+
+[entries."小中高"]
+reading = "ショウチュウコウ"
+
+[entries."兄さん方"]
+reading = "ニイサンガタ"
+
+[entries."姉さん方"]
+reading = "ネエサンガタ"
+
+[entries."お兄さん方"]
+reading = "オニイサンガタ"
+
+[entries."お姉さん方"]
+reading = "オネエサンガタ"
+
+[entries."みなさん方"]
+reading = "ミナサンガタ"
+
+[entries."皆さん方"]
+reading = "ミナサンガタ"
