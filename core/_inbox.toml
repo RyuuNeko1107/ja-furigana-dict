@@ -7874,3 +7874,62 @@ reading = "ヒノヒカリ"
 
 [entries."蒙古襲来"]
 reading = "モウコシュウライ"
+
+# 見直し第11ラウンド(本番BOTの入力文 / add_entries.py)
+
+[entries."役牌"]
+reading = "ヤクハイ"
+
+[entries."牌譜"]
+reading = "ハイフ"
+
+[entries."字牌"]
+reading = "ジハイ"
+
+[entries."牌効率"]
+reading = "ハイコウリツ"
+
+[entries."牌山"]
+reading = "ハイヤマ"
+
+[entries."打牌"]
+reading = "ダハイ"
+
+[entries."あさり汁"]
+reading = "アサリジル"
+
+[entries."しじみ汁"]
+reading = "シジミジル"
+
+[entries."席替え"]
+reading = "セキガエ"
+
+[entries."黒染め"]
+reading = "クロゾメ"
+
+[entries."体育着"]
+reading = "タイイクギ"
+
+[entries."常日頃"]
+reading = "ツネヒゴロ"
+
+[entries."コロ助"]
+reading = "コロスケ"
+
+[entries."芝目"]
+reading = "シバメ"
+
+[entries."くら寿司"]
+reading = "クラズシ"
+
+[entries."おばあちゃん家"]
+reading = "オバアチャンチ"
+
+[entries."じいちゃん家"]
+reading = "ジイチャンチ"
+
+[entries."ばあちゃん家"]
+reading = "バアチャンチ"
+
+[entries."出すぎ"]
+reading = "デスギ"

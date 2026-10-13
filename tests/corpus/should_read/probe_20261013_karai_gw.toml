@@ -1120,3 +1120,100 @@ expected = "もうこしゅうらいはきょうかしょでならった"
 input = "卒検来週にずらした"
 mode = "hiragana"
 expected = "そっけんらいしゅうにずらした"
+
+# 見直し第11ラウンド(本番BOTの入力文 / add_entries.py)
+
+[[case]]
+input = "役牌バック"
+mode = "hiragana"
+expected = "やくはいバック"
+
+[[case]]
+input = "牌譜研究ですか"
+mode = "hiragana"
+expected = "はいふけんきゅうですか"
+
+[[case]]
+input = "字牌のトイツおとしはたかい"
+mode = "hiragana"
+expected = "じはいのトイツおとしはたかい"
+
+[[case]]
+input = "牌効率を考える"
+mode = "hiragana"
+expected = "はいこうりつをかんがえる"
+
+[[case]]
+input = "牌山を崩す"
+mode = "hiragana"
+expected = "はいやまをくずす"
+
+[[case]]
+input = "打牌を迷う"
+mode = "hiragana"
+expected = "だはいをまよう"
+
+[[case]]
+input = "あさり汁って作るのめんどいよね"
+mode = "hiragana"
+expected = "あさりじるってつくるのめんどいよね"
+
+[[case]]
+input = "しじみ汁を飲む"
+mode = "hiragana"
+expected = "しじみじるをのむ"
+
+[[case]]
+input = "席替えしたい"
+mode = "hiragana"
+expected = "せきがえしたい"
+
+[[case]]
+input = "髪の毛黒染めしないといけない"
+mode = "hiragana"
+expected = "かみのけくろぞめしないといけない"
+
+[[case]]
+input = "集合の時は体育着"
+mode = "hiragana"
+expected = "しゅうごうのときはたいいくぎ"
+
+[[case]]
+input = "常日頃集中しようかな"
+mode = "hiragana"
+expected = "つねひごろしゅうちゅうしようかな"
+
+[[case]]
+input = "コロ助なるよ"
+mode = "hiragana"
+expected = "ころすけなるよ"
+
+[[case]]
+input = "消えた芝目きた"
+mode = "hiragana"
+expected = "きえたしばめきた"
+
+[[case]]
+input = "くら寿司ある席"
+mode = "hiragana"
+expected = "くらずしあるせき"
+
+[[case]]
+input = "おばあちゃん家に行く"
+mode = "hiragana"
+expected = "おばあちゃんちにいく"
+
+[[case]]
+input = "じいちゃん家に行く"
+mode = "hiragana"
+expected = "じいちゃんちにいく"
+
+[[case]]
+input = "ばあちゃん家行かないとだから"
+mode = "hiragana"
+expected = "ばあちゃんちいかないとだから"
+
+[[case]]
+input = "ストレート出すぎじゃない"
+mode = "hiragana"
+expected = "ストレートですぎじゃない"
