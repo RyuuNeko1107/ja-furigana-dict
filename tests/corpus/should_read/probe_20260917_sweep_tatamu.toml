@@ -96,7 +96,7 @@ expected = "はいぱいがよかったんやね"
 [[case]]
 input = "捨て牌から読めるか"
 mode = "hiragana"
-expected = "すてぱいからよめるか"
+expected = "すてはいからよめるか"
 
 [[case]]
 input = "危険牌"

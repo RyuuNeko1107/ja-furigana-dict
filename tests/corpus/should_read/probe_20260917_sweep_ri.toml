@@ -371,7 +371,7 @@ expected = "やくびょうがみすぎる"
 [[case]]
 input = "胸糞イベントだぁ!"
 mode = "hiragana"
-expected = "むねくそイベントだぁ!"
+expected = "むなくそイベントだぁ!"
 
 [[case]]
 input = "脱糞!?"

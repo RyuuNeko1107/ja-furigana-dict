@@ -1264,3 +1264,81 @@ expected = "だいななおうじのロイドだよ"
 input = "どういう風の吹き回しなんや"
 mode = "hiragana"
 expected = "どういうかぜのふきまわしなんや"
+
+# 見直し第12ラウンド(本番BOTの入力文 / add_entries.py)
+
+[[case]]
+input = "定額使い放題"
+mode = "hiragana"
+expected = "ていがくつかいほうだい"
+
+[[case]]
+input = "自分寝てる可能性大ですけど"
+mode = "hiragana"
+expected = "じぶんねてるかのうせいだいですけど"
+
+[[case]]
+input = "胸糞ストーリー"
+mode = "hiragana"
+expected = "むなくそストーリー"
+
+[[case]]
+input = "勝ち抜き戦だからスケジュール合わせて"
+mode = "hiragana"
+expected = "かちぬきせんだからスケジュールあわせて"
+
+[[case]]
+input = "捨て牌見たら筒子は捨てれないですね"
+mode = "hiragana"
+expected = "すてはいみたらぴんずはすてれないですね"
+
+[[case]]
+input = "星五エクスと星五"
+mode = "hiragana"
+expected = "ほしごエクスとほしご"
+
+[[case]]
+input = "総当たり戦の方がいいのかな"
+mode = "hiragana"
+expected = "そうあたりせんのほうがいいのかな"
+
+[[case]]
+input = "はま寿司は私が奢ってあげるから"
+mode = "hiragana"
+expected = "はまずしはわたしがおごってあげるから"
+
+[[case]]
+input = "白豚が乱入しました"
+mode = "hiragana"
+expected = "しろぶたがらんにゅうしました"
+
+[[case]]
+input = "友達頭良いし優しい"
+mode = "hiragana"
+expected = "ともだちあたまよいしやさしい"
+
+[[case]]
+input = "友達頭良くてイケメン優しい"
+mode = "hiragana"
+expected = "ともだちあたまよくてイケメンやさしい"
+
+# 見直し第12ラウンド: 規則 (ネット・データ等 + 上 = じょう / 度 の動詞終止形)
+[[case]]
+input = "ネット上で拡散された"
+mode = "hiragana"
+expected = "ネットじょうでかくさんされた"
+
+[[case]]
+input = "SNS上の虚偽情報"
+mode = "hiragana"
+expected = "エスエヌエスじょうのきょぎじょうほう"
+
+[[case]]
+input = "2ランク上"
+mode = "hiragana"
+expected = "にランクうえ"
+
+[[case]]
+input = "机の上に置く"
+mode = "hiragana"
+expected = "つくえのうえにおく"

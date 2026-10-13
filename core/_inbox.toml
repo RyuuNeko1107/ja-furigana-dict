@@ -7962,3 +7962,38 @@ reading = "ダイナナオウジ"
 
 [entries."風の吹き回し"]
 reading = "カゼノフキマワシ"
+
+# 見直し第12ラウンド(本番BOTの入力文 / add_entries.py)
+
+[entries."使い放題"]
+reading = "ツカイホウダイ"
+
+[entries."可能性大"]
+reading = "カノウセイダイ"
+
+[entries."胸糞"]
+reading = "ムナクソ"
+
+[entries."勝ち抜き戦"]
+reading = "カチヌキセン"
+
+[entries."捨て牌"]
+reading = "ステハイ"
+
+[entries."星五"]
+reading = "ホシゴ"
+
+[entries."総当たり戦"]
+reading = "ソウアタリセン"
+
+[entries."はま寿司"]
+reading = "ハマズシ"
+
+[entries."白豚"]
+reading = "シロブタ"
+
+[entries."頭良い"]
+reading = "アタマヨイ"
+
+[entries."頭良く"]
+reading = "アタマヨク"
