@@ -7232,3 +7232,29 @@ reading = "ジュウニコクキ"
 
 [entries."十二国"]
 reading = "ジュウニコク"
+
+# 2026-10-13 思いつき点検: 重版出来=しゅったい / 名古屋の栄=さかえ / 大阪の日本橋=にっぽんばし
+[entries."重版出来"]
+reading = "ジュウハンシュッタイ"
+
+[entries."名古屋の栄"]
+reading = "ナゴヤノサカエ"
+
+[entries."栄の地下街"]
+reading = "サカエノチカガイ"
+
+[entries."栄駅"]
+reading = "サカエエキ"
+
+[entries."栄町"]
+reading = "サカエマチ"
+
+[entries."日本橋"]
+reading = "ニホンバシ"
+
+[[entries."日本橋".match]]
+input_contains_any = ["大阪", "なんば", "難波", "堺筋", "でんでん", "デンデン", "ジャンジャン横丁", "恵美須", "オタロード", "オタク街", "大阪市"]
+reading = "ニッポンバシ"
+
+[entries."前川清"]
+reading = "マエカワキヨシ"

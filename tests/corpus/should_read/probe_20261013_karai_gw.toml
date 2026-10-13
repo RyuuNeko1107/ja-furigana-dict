@@ -232,3 +232,29 @@ expected = "くびをはねるおと"
 input = "Switch 2 選べるソフト"
 mode = "hiragana"
 expected = "スイッチツー えらべるソフト"
+
+# 思いつき点検 (2026-10-13)
+[[case]]
+input = "重版出来"
+mode = "hiragana"
+expected = "じゅうはんしゅったい"
+
+[[case]]
+input = "名古屋の栄で飲む"
+mode = "hiragana"
+expected = "なごやのさかえでのむ"
+
+[[case]]
+input = "大阪の日本橋でオタ活"
+mode = "hiragana"
+expected = "おおさかのにっぽんばしでオタかつ"
+
+[[case]]
+input = "東京の日本橋"
+mode = "hiragana"
+expected = "とうきょうのにほんばし"
+
+[[case]]
+input = "前川清"
+mode = "hiragana"
+expected = "まえかわきよし"
