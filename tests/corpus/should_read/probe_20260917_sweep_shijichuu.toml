@@ -151,7 +151,7 @@ expected = "まつりはせきぜんそくだからひかえめなのだ"
 [[case]]
 input = "喘ぎ声"
 mode = "hiragana"
-expected = "あえぎこえ"
+expected = "あえぎごえ"
 
 [[case]]
 input = "渓谷か"

@@ -111,7 +111,7 @@ expected = "くさかりきワラ"
 [[case]]
 input = "芝刈り機だよ"
 mode = "hiragana"
-expected = "しばがりきだよ"
+expected = "しばかりきだよ"
 
 [[case]]
 input = "罵声浴びせてる"

@@ -1342,3 +1342,75 @@ expected = "にランクうえ"
 input = "机の上に置く"
 mode = "hiragana"
 expected = "つくえのうえにおく"
+
+# 見直し第13ラウンド(add_entries.py)
+
+[[case]]
+input = "左耳に赤いポンポン、左目に泣き黒子、ライアンみたいな"
+mode = "hiragana"
+expected = "ひだりみみにあかいポンポン、ひだりめになきぼくろ、ライアンみたいな"
+
+[[case]]
+input = "いい喘ぎ声が聞けそうね"
+mode = "hiragana"
+expected = "いいあえぎごえがきけそうね"
+
+[[case]]
+input = "まあ芝刈りですからねえ"
+mode = "hiragana"
+expected = "まあしばかりですからねえ"
+
+[[case]]
+input = "閉店後のギャル店員と、黒革のブーツ"
+mode = "hiragana"
+expected = "へいてんごのギャルてんいんと、くろかわのブーツ"
+
+[[case]]
+input = "小二病過ぎてまだポティロンで笑える"
+mode = "hiragana"
+expected = "しょうにびょうすぎてまだポティロンでわらえる"
+
+[[case]]
+input = "終いにはゲリラ豪雨よ"
+mode = "hiragana"
+expected = "しまいにはゲリラごううよ"
+
+[[case]]
+input = "電車男のヒットから爆発的に増えたぞ"
+mode = "hiragana"
+expected = "でんしゃおとこのヒットからばくはつてきにふえたぞ"
+
+[[case]]
+input = "立看板で背中カキカキする動画"
+mode = "hiragana"
+expected = "たてかんばんでせなかカキカキするどうが"
+
+[[case]]
+input = "こうやって卒乳していくんだな"
+mode = "hiragana"
+expected = "こうやってそつにゅうしていくんだな"
+
+[[case]]
+input = "馬柱だけでシートゥサミット本命にしたかった"
+mode = "hiragana"
+expected = "うまばしらだけでシートゥサミットほんめいにしたかった"
+
+[[case]]
+input = "本八幡の駅前の感じ良いっすね"
+mode = "hiragana"
+expected = "もとやわたのえきまえのかんじよいっすね"
+
+[[case]]
+input = "あと工事日調整ってなんでか分かんないけど"
+mode = "hiragana"
+expected = "あとこうじびちょうせいってなんでかわかんないけど"
+
+[[case]]
+input = "トッピングの野菜を素揚げにしていくわね"
+mode = "hiragana"
+expected = "トッピングのやさいをすあげにしていくわね"
+
+[[case]]
+input = "潰れるの助かる粗が目立たないから"
+mode = "hiragana"
+expected = "つぶれるのたすかるあらがめだたないから"
