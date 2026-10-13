@@ -179,3 +179,14 @@ expected = "ファイターズかけるイチモニかけるローソンのコ�
 input = "価格[¥1,489]"
 mode = "hiragana"
 expected = "かかくせんよんひゃくはちじゅうきゅうえん"
+
+# 和暦の略記 (lib 0.5.25 以降)
+[[case]]
+input = "R7.10.13に提出"
+mode = "hiragana"
+expected = "レイワナナネンジュウガツジュウサンニチにていしゅつ"
+
+[[case]]
+input = "H30.4.1"
+mode = "hiragana"
+expected = "ヘイセイサンジュウネンシガツツイタチ"
