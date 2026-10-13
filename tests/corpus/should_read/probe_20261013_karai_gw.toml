@@ -1963,3 +1963,152 @@ expected = "こうちゆうご"
 input = "安藤美姫"
 mode = "hiragana"
 expected = "あんどうみき"
+
+# 頻度順の監査(700〜1056位)から(add_entries.py)
+
+[[case]]
+input = "臨済"
+mode = "hiragana"
+expected = "りんざい"
+
+[[case]]
+input = "経歴上の問題"
+mode = "hiragana"
+expected = "けいれきじょうのもんだい"
+
+[[case]]
+input = "内容上の都合"
+mode = "hiragana"
+expected = "ないようじょうのつごう"
+
+[[case]]
+input = "数字上は勝っている"
+mode = "hiragana"
+expected = "すうじじょうはかっている"
+
+[[case]]
+input = "税引前利益"
+mode = "hiragana"
+expected = "ぜいびきまえりえき"
+
+[[case]]
+input = "毛利衛"
+mode = "hiragana"
+expected = "もうりまもる"
+
+[[case]]
+input = "対馬の宗氏"
+mode = "hiragana"
+expected = "つしまのそうし"
+
+[[case]]
+input = "岩本照"
+mode = "hiragana"
+expected = "いわもとひかる"
+
+[[case]]
+input = "設楽統"
+mode = "hiragana"
+expected = "したらおさむ"
+
+[[case]]
+input = "中島健人"
+mode = "hiragana"
+expected = "なかじまけんと"
+
+[[case]]
+input = "平原綾香"
+mode = "hiragana"
+expected = "ひらはらあやか"
+
+[[case]]
+input = "十勝"
+mode = "hiragana"
+expected = "とかち"
+
+[[case]]
+input = "愛猫の写真"
+mode = "hiragana"
+expected = "あいびょうのしゃしん"
+
+[[case]]
+input = "頭頂部が痛い"
+mode = "hiragana"
+expected = "とうちょうぶがいたい"
+
+[[case]]
+input = "美桜ちゃん"
+mode = "hiragana"
+expected = "みおちゃん"
+
+[[case]]
+input = "高橋李依"
+mode = "hiragana"
+expected = "たかはしりえ"
+
+[[case]]
+input = "久保史緒里"
+mode = "hiragana"
+expected = "くぼしおり"
+
+[[case]]
+input = "本田翼"
+mode = "hiragana"
+expected = "ほんだつばさ"
+
+[[case]]
+input = "菅井友香"
+mode = "hiragana"
+expected = "すがいゆか"
+
+[[case]]
+input = "田中樹"
+mode = "hiragana"
+expected = "たなかじゅり"
+
+[[case]]
+input = "松田好花"
+mode = "hiragana"
+expected = "まつだこのか"
+
+[[case]]
+input = "野口衣織"
+mode = "hiragana"
+expected = "のぐちいおり"
+
+[[case]]
+input = "小川彩"
+mode = "hiragana"
+expected = "おがわあや"
+
+[[case]]
+input = "菅原咲月"
+mode = "hiragana"
+expected = "すがわらさつき"
+
+[[case]]
+input = "石橋静河"
+mode = "hiragana"
+expected = "いしばししずか"
+
+[[case]]
+input = "曽野舜太"
+mode = "hiragana"
+expected = "そのしゅんた"
+
+[[case]]
+input = "宮舘涼太"
+mode = "hiragana"
+expected = "みやだてりょうた"
+
+[[case]]
+input = "浮所飛貴"
+mode = "hiragana"
+expected = "うきしょひたか"
+
+# 頻度順の監査(700〜1056位)から
+
+[[case]]
+input = "小滝望"
+mode = "hiragana"
+expected = "こたきのぞむ"
