@@ -525,3 +525,110 @@ expected = "はこぶねはこうやをわたる"
 input = "功夫vs空手"
 mode = "hiragana"
 expected = "かんふーブイエスからて"
+
+# 見直し第5ラウンドから
+
+[[case]]
+input = "まずこの度はお疲れ様でした"
+mode = "hiragana"
+expected = "まずこのたびはおつかれさまでした"
+
+[[case]]
+input = "ロング丈のジャケット"
+mode = "hiragana"
+expected = "ロングたけのジャケット"
+
+[[case]]
+input = "膝丈のスカート"
+mode = "hiragana"
+expected = "ひざたけのスカート"
+
+[[case]]
+input = "撮影日前日"
+mode = "hiragana"
+expected = "さつえいびぜんじつ"
+
+[[case]]
+input = "公開日が決まった"
+mode = "hiragana"
+expected = "こうかいびがきまった"
+
+[[case]]
+input = "風ぐらい起こせる"
+mode = "hiragana"
+expected = "かぜぐらいおこせる"
+
+[[case]]
+input = "ベタ惚れ"
+mode = "hiragana"
+expected = "べたぼれ"
+
+[[case]]
+input = "寿司飯"
+mode = "hiragana"
+expected = "すしめし"
+
+[[case]]
+input = "強殺事件"
+mode = "hiragana"
+expected = "ごうさつじけん"
+
+[[case]]
+input = "流し見みたいな状態"
+mode = "hiragana"
+expected = "ながしみみたいなじょうたい"
+
+[[case]]
+input = "下ぶくれ"
+mode = "hiragana"
+expected = "しもぶくれ"
+
+[[case]]
+input = "前後半通し"
+mode = "hiragana"
+expected = "ぜんこうはんとおし"
+
+[[case]]
+input = "先言っといて"
+mode = "hiragana"
+expected = "さきいっといて"
+
+[[case]]
+input = "充分味が濃い"
+mode = "hiragana"
+expected = "じゅうぶんあじがこい"
+
+[[case]]
+input = "指しゃぶり"
+mode = "hiragana"
+expected = "ゆびしゃぶり"
+
+[[case]]
+input = "今里筋線"
+mode = "hiragana"
+expected = "いまざとすじせん"
+
+[[case]]
+input = "堺筋本町で"
+mode = "hiragana"
+expected = "さかいすじほんまちで"
+
+[[case]]
+input = "西京焼き"
+mode = "hiragana"
+expected = "さいきょうやき"
+
+[[case]]
+input = "ヒレ酒"
+mode = "hiragana"
+expected = "ひれざけ"
+
+[[case]]
+input = "例え話"
+mode = "hiragana"
+expected = "たとえばなし"
+
+[[case]]
+input = "ゆで汁"
+mode = "hiragana"
+expected = "ゆでじる"
