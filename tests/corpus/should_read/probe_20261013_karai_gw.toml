@@ -854,3 +854,118 @@ expected = "アジアけんかみえしたちのタイムラプス"
 input = "そりゃ返信来んわ"
 mode = "hiragana"
 expected = "そりゃへんしんこんわ"
+
+# 見直し第8ラウンド(add_entries.py)
+
+[[case]]
+input = "仕事の行き帰りで山栗をたくさん拾いました"
+mode = "hiragana"
+expected = "しごとのいきかえりでやまぐりをたくさんひろいました"
+
+[[case]]
+input = "糸引き羊羹の糸で羊羹を切る"
+mode = "hiragana"
+expected = "いとひきようかんのいとでようかんをきる"
+
+[[case]]
+input = "めちゃくちゃ嫌いだった"
+mode = "hiragana"
+expected = "めちゃくちゃきらいだった"
+
+[[case]]
+input = "着け心地もいい"
+mode = "hiragana"
+expected = "つけごこちもいい"
+
+[[case]]
+input = "付け心地がいい"
+mode = "hiragana"
+expected = "つけごこちがいい"
+
+[[case]]
+input = "履き心地がいい"
+mode = "hiragana"
+expected = "はきごこちがいい"
+
+[[case]]
+input = "掛け心地がいい"
+mode = "hiragana"
+expected = "かけごこちがいい"
+
+[[case]]
+input = "使い心地がいい"
+mode = "hiragana"
+expected = "つかいごこちがいい"
+
+[[case]]
+input = "皮むき器?"
+mode = "hiragana"
+expected = "かわむきき?"
+
+[[case]]
+input = "美味しい肘折そばを食べ"
+mode = "hiragana"
+expected = "おいしいひじおりそばをたべ"
+
+[[case]]
+input = "最安値の元手が安かったからなぁ"
+mode = "hiragana"
+expected = "さいやすねのもとでがやすかったからなぁ"
+
+[[case]]
+input = "こうやって楽しむのが最適解かもしれない"
+mode = "hiragana"
+expected = "こうやってたのしむのがさいてきかいかもしれない"
+
+[[case]]
+input = "部下の欠点粗探し、指摘が指導だと思っている"
+mode = "hiragana"
+expected = "ぶかのけってんあらさがし、してきがしどうだとおもっている"
+
+[[case]]
+input = "コミュ強やけど"
+mode = "hiragana"
+expected = "こみゅきょうやけど"
+
+# 見直し第8ラウンド(add_entries.py)
+
+[[case]]
+input = "葛西と赤坂がいれば遠近いけます"
+mode = "hiragana"
+expected = "かさいとあかさかがいればえんきんいけます"
+
+[[case]]
+input = "刈入れ前の稲の上を飛び回るツバメたち"
+mode = "hiragana"
+expected = "かりいれまえのいねのうえをとびまわるツバメたち"
+
+[[case]]
+input = "鈑金屋ガチャハズレ引いた"
+mode = "hiragana"
+expected = "ばんきんやガチャハズレひいた"
+
+# 見直し第8ラウンド: 規則 (米+カタカナ国名 / カタカナ+風の / 〜日)
+[[case]]
+input = "米イラン終結合意か"
+mode = "hiragana"
+expected = "べいイランしゅうけつごういか"
+
+[[case]]
+input = "徳島ラーメン風のつもり"
+mode = "hiragana"
+expected = "とくしまラーメンふうのつもり"
+
+[[case]]
+input = "ビル風が強い"
+mode = "hiragana"
+expected = "ビルかぜがつよい"
+
+[[case]]
+input = "退職日が決まった"
+mode = "hiragana"
+expected = "たいしょくびがきまった"
+
+[[case]]
+input = "米イチゴ"
+mode = "hiragana"
+expected = "こめイチゴ"
