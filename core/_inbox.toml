@@ -8268,3 +8268,85 @@ reading = "ナガラマチ"
 
 [entries."入山規制"]
 reading = "ニュウザンキセイ"
+
+# 頻度順の監査(400〜700位)から(add_entries.py)
+
+[entries."白岩瑠姫"]
+reading = "シライワリュウキ"
+
+[entries."石田彰"]
+reading = "イシダアキラ"
+
+[entries."比嘉愛未"]
+reading = "ヒカマナミ"
+
+[entries."金正日"]
+reading = "キムジョンイル"
+
+[entries."金大中"]
+reading = "キムデジュン"
+
+[entries."神田伯山"]
+reading = "カンダハクザン"
+
+[entries."大戸屋"]
+reading = "オオトヤ"
+
+[entries."豆原一成"]
+reading = "マメハライッセイ"
+
+[entries."川尻蓮"]
+reading = "カワジリレン"
+
+[entries."仲里依紗"]
+reading = "ナカリイサ"
+
+[entries."池田瑛紗"]
+reading = "イケダテレサ"
+
+[entries."中村歩加"]
+reading = "ナカムラアユカ"
+
+[entries."玉川徹氏"]
+reading = "タマカワトオルシ"
+
+[entries."安重根"]
+reading = "アンジュングン"
+
+[entries."公卿"]
+reading = "クギョウ"
+
+[entries."湯川専務"]
+reading = "ユカワセンム"
+
+[entries."気温上"]
+reading = "キオンジョウ"
+
+[entries."伝説上"]
+reading = "デンセツジョウ"
+
+[entries."舞台上"]
+reading = "ブタイジョウ"
+
+[entries."漫画上"]
+reading = "マンガジョウ"
+
+[entries."衛星上"]
+reading = "エイセイジョウ"
+
+[entries."財務上"]
+reading = "ザイムジョウ"
+
+[entries."太平洋上"]
+reading = "タイヘイヨウジョウ"
+
+# 頻度順の監査(400〜700位)から(add_entries.py)
+
+[entries."高橋海人"]
+reading = "タカハシカイト"
+
+[entries."高地優吾"]
+reading = "コウチユウゴ"
+
+[entries."安藤美姫"]
+reading = "アンドウミキ"

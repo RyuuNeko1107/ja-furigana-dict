@@ -1829,3 +1829,137 @@ expected = "ながらまち"
 input = "入山規制"
 mode = "hiragana"
 expected = "にゅうざんきせい"
+
+# 頻度順の監査(400〜700位)から(add_entries.py)
+
+[[case]]
+input = "白岩瑠姫"
+mode = "hiragana"
+expected = "しらいわりゅうき"
+
+[[case]]
+input = "石田彰"
+mode = "hiragana"
+expected = "いしだあきら"
+
+[[case]]
+input = "比嘉愛未"
+mode = "hiragana"
+expected = "ひかまなみ"
+
+[[case]]
+input = "金正日"
+mode = "hiragana"
+expected = "きむじょんいる"
+
+[[case]]
+input = "金大中"
+mode = "hiragana"
+expected = "きむでじゅん"
+
+[[case]]
+input = "神田伯山"
+mode = "hiragana"
+expected = "かんだはくざん"
+
+[[case]]
+input = "大戸屋"
+mode = "hiragana"
+expected = "おおとや"
+
+[[case]]
+input = "豆原一成"
+mode = "hiragana"
+expected = "まめはらいっせい"
+
+[[case]]
+input = "川尻蓮"
+mode = "hiragana"
+expected = "かわじりれん"
+
+[[case]]
+input = "仲里依紗"
+mode = "hiragana"
+expected = "なかりいさ"
+
+[[case]]
+input = "池田瑛紗"
+mode = "hiragana"
+expected = "いけだてれさ"
+
+[[case]]
+input = "中村歩加"
+mode = "hiragana"
+expected = "なかむらあゆか"
+
+[[case]]
+input = "玉川徹氏"
+mode = "hiragana"
+expected = "たまかわとおるし"
+
+[[case]]
+input = "安重根"
+mode = "hiragana"
+expected = "あんじゅんぐん"
+
+[[case]]
+input = "公卿"
+mode = "hiragana"
+expected = "くぎょう"
+
+[[case]]
+input = "湯川専務"
+mode = "hiragana"
+expected = "ゆかわせんむ"
+
+[[case]]
+input = "気温上は春"
+mode = "hiragana"
+expected = "きおんじょうははる"
+
+[[case]]
+input = "伝説上の生き物"
+mode = "hiragana"
+expected = "でんせつじょうのいきもの"
+
+[[case]]
+input = "舞台上で"
+mode = "hiragana"
+expected = "ぶたいじょうで"
+
+[[case]]
+input = "漫画上の表現"
+mode = "hiragana"
+expected = "まんがじょうのひょうげん"
+
+[[case]]
+input = "衛星上から"
+mode = "hiragana"
+expected = "えいせいじょうから"
+
+[[case]]
+input = "財務上の問題"
+mode = "hiragana"
+expected = "ざいむじょうのもんだい"
+
+[[case]]
+input = "太平洋上で"
+mode = "hiragana"
+expected = "たいへいようじょうで"
+
+# 頻度順の監査(400〜700位)から(add_entries.py)
+
+[[case]]
+input = "高橋海人"
+mode = "hiragana"
+expected = "たかはしかいと"
+
+[[case]]
+input = "高地優吾"
+mode = "hiragana"
+expected = "こうちゆうご"
+
+[[case]]
+input = "安藤美姫"
+mode = "hiragana"
+expected = "あんどうみき"
