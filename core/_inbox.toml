@@ -7258,3 +7258,18 @@ reading = "ニッポンバシ"
 
 [entries."前川清"]
 reading = "マエカワキヨシ"
+
+# 方言・一人称 (2026-10-13 思いつき点検): 好いとう=すいとう (博多弁) / 妾は=わらわは (一人称)
+[entries."好いとう"]
+reading = "スイトウ"
+
+[entries."好いとる"]
+reading = "スイトル"
+
+[entries."妾は"]
+reading = "ワラワハ"
+
+
+
+[entries."妾も"]
+reading = "ワラワモ"
