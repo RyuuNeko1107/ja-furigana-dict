@@ -1497,3 +1497,61 @@ expected = "かちかんなんて"
 input = "このアニメは観やすい"
 mode = "hiragana"
 expected = "このアニメはみやすい"
+
+# 見直し第15ラウンド(add_entries.py)
+
+[[case]]
+input = "今度は雨に濡れても平気な撥水のバッグ"
+mode = "hiragana"
+expected = "こんどはあめにぬれてもへいきなはっすいのバッグ"
+
+[[case]]
+input = "吹き替え版しかないことに"
+mode = "hiragana"
+expected = "ふきかえばんしかないことに"
+
+[[case]]
+input = "温玉にめんつゆとごく微量のおろし生姜"
+mode = "hiragana"
+expected = "おんたまにめんつゆとごくびりょうのおろししょうが"
+
+[[case]]
+input = "昼食の出がけに壊れたので"
+mode = "hiragana"
+expected = "ちゅうしょくのでがけにこわれたので"
+
+[[case]]
+input = "私が想像してた通りの寝方をしてて"
+mode = "hiragana"
+expected = "わたしがそうぞうしてたとおりのねかたをしてて"
+
+[[case]]
+input = "ごはん時です"
+mode = "hiragana"
+expected = "ごはんどきです"
+
+[[case]]
+input = "俺の大腸検査日ガセネタが流れていった"
+mode = "hiragana"
+expected = "おれのだいちょうけんさびガセネタがながれていった"
+
+# 見直し第15ラウンド: 手榴弾 (wiki_place_names の てりゅうだん を修正) / 漢字+済=ずみ / 突然+女
+[[case]]
+input = "手榴弾より狙いやすそうだし"
+mode = "hiragana"
+expected = "しゅりゅうだんよりねらいやすそうだし"
+
+[[case]]
+input = "公開済"
+mode = "hiragana"
+expected = "こうかいずみ"
+
+[[case]]
+input = "経済"
+mode = "hiragana"
+expected = "けいざい"
+
+[[case]]
+input = "突然女の赤ちゃんになってしまいました"
+mode = "hiragana"
+expected = "とつぜんおんなのあかちゃんになってしまいました"

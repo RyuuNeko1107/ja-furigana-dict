@@ -201,7 +201,7 @@ expected = "もうりょうのはことかか"
 [[case]]
 input = "撥水加工済みやね、知らんけど"
 mode = "hiragana"
-expected = "ばっすいかこうずみやね、しらんけど"
+expected = "はっすいかこうずみやね、しらんけど"
 
 [[case]]
 input = "撥ねられたw"
