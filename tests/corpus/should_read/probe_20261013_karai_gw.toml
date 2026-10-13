@@ -258,3 +258,24 @@ expected = "とうきょうのにほんばし"
 input = "前川清"
 mode = "hiragana"
 expected = "まえかわきよし"
+
+# 読みレビュー候補 (実験の分類器 + 目視の監査) から
+[[case]]
+input = "軽音部に入る"
+mode = "hiragana"
+expected = "けいおんぶにはいる"
+
+[[case]]
+input = "外気温が高い"
+mode = "hiragana"
+expected = "がいきおんがたかい"
+
+[[case]]
+input = "低脂肪乳を買う"
+mode = "hiragana"
+expected = "ていしぼうにゅうをかう"
+
+[[case]]
+input = "創造主の意志"
+mode = "hiragana"
+expected = "そうぞうしゅのいし"

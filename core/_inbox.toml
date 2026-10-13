@@ -7273,3 +7273,38 @@ reading = "ワラワハ"
 
 [entries."妾も"]
 reading = "ワラワモ"
+
+# 2026-10-13 読みレビュー候補 (実験: experiments/reading_review の分類器 + 目視の監査) から
+[entries."神智学"]
+reading = "シンチガク"
+
+[entries."海棲"]
+reading = "カイセイ"
+
+[entries."低脂肪乳"]
+reading = "テイシボウニュウ"
+
+[entries."討滅戦"]
+reading = "トウメツセン"
+
+[entries."外気温"]
+reading = "ガイキオン"
+
+[entries."創造主"]
+reading = "ソウゾウシュ"
+
+[entries."軽音部"]
+reading = "ケイオンブ"
+
+[entries."軽音楽部"]
+reading = "ケイオンガクブ"
+
+
+[entries."毒鼓"]
+reading = "ドック"
+
+[entries."福原遥"]
+reading = "フクハラハルカ"
+
+[entries."知念侑李"]
+reading = "チネンユウリ"
