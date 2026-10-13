@@ -443,3 +443,18 @@ expected = "はぎわらさん"
 input = "方天戟を持つ"
 mode = "hiragana"
 expected = "ほうてんげきをもつ"
+
+[[case]]
+input = "痛バ持ってる"
+mode = "hiragana"
+expected = "いたばもってる"
+
+[[case]]
+input = "手脚の感じ"
+mode = "hiragana"
+expected = "てあしのかんじ"
+
+[[case]]
+input = "野菜も摂れる"
+mode = "hiragana"
+expected = "やさいもとれる"

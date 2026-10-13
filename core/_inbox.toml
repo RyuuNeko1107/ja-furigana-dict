@@ -7464,3 +7464,23 @@ reading = "ホウテンゲキ"
 
 [entries."萩原"]
 reading = "ハギワラ"
+
+# 見直し第2ラウンド(標本6000行 × OpenJTalk/Sudachi の食い違い)の目視判定から
+
+[entries."痛バ"]
+reading = "イタバ"
+
+[entries."手脚"]
+reading = "テアシ"
+
+[entries."摂れる"]
+reading = "トレル"
+
+[entries."摂れた"]
+reading = "トレタ"
+
+[entries."摂れて"]
+reading = "トレテ"
+
+[entries."摂れない"]
+reading = "トレナイ"
