@@ -515,3 +515,13 @@ expected = "えんきんかんをあたえ"
 input = "小栗旬がんばれ"
 mode = "hiragana"
 expected = "おぐりしゅんがんばれ"
+
+[[case]]
+input = "方舟は荒野をわたる"
+mode = "hiragana"
+expected = "はこぶねはこうやをわたる"
+
+[[case]]
+input = "功夫vs空手"
+mode = "hiragana"
+expected = "かんふーブイエスからて"
