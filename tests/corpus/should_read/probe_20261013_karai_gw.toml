@@ -632,3 +632,153 @@ expected = "たとえばなし"
 input = "ゆで汁"
 mode = "hiragana"
 expected = "ゆでじる"
+
+# 見直し第6ラウンド(add_entries.py)
+
+[[case]]
+input = "宵ちゃんを手離したくなかったんだよね"
+mode = "hiragana"
+expected = "よいちゃんをてばなしたくなかったんだよね"
+
+[[case]]
+input = "オシャレ剃り込みになっとる"
+mode = "hiragana"
+expected = "オシャレそりこみになっとる"
+
+[[case]]
+input = "剃り残し!?"
+mode = "hiragana"
+expected = "そりのこし!?"
+
+[[case]]
+input = "悪戯心で幼稚園児のお弁当を作って"
+mode = "hiragana"
+expected = "いたずらごころでようちえんじのおべんとうをつくって"
+
+[[case]]
+input = "後を尾ける小娘"
+mode = "hiragana"
+expected = "あとをつけるこむすめ"
+
+[[case]]
+input = "後を尾けて行った"
+mode = "hiragana"
+expected = "あとをつけていった"
+
+[[case]]
+input = "後を尾けた"
+mode = "hiragana"
+expected = "あとをつけた"
+
+[[case]]
+input = "牛の削蹄動画だが"
+mode = "hiragana"
+expected = "うしのさくていどうがだが"
+
+[[case]]
+input = "挿れる"
+mode = "hiragana"
+expected = "いれる"
+
+[[case]]
+input = "挿れてほしい"
+mode = "hiragana"
+expected = "いれてほしい"
+
+[[case]]
+input = "挿れさせてわん"
+mode = "hiragana"
+expected = "いれさせてわん"
+
+[[case]]
+input = "軒を貸して母屋を盗られる"
+mode = "hiragana"
+expected = "のきをかしておもやをとられる"
+
+[[case]]
+input = "八ツ場で降りれるバスある"
+mode = "hiragana"
+expected = "やんばでおりれるバスある"
+
+[[case]]
+input = "八ッ場ダム"
+mode = "hiragana"
+expected = "やんばダム"
+
+[[case]]
+input = "お疲レモン"
+mode = "hiragana"
+expected = "おつかれもん"
+
+[[case]]
+input = "深煎りを飲み慣れてなくて"
+mode = "hiragana"
+expected = "ふかいりをのみなれてなくて"
+
+[[case]]
+input = "どうやったら病ム"
+mode = "hiragana"
+expected = "どうやったらやむ"
+
+[[case]]
+input = "言われて一安心。"
+mode = "hiragana"
+expected = "いわれてひとあんしん。"
+
+[[case]]
+input = "勃ってるんだろうか"
+mode = "hiragana"
+expected = "たってるんだろうか"
+
+[[case]]
+input = "地縛少年花子くん"
+mode = "hiragana"
+expected = "じばくしょうねんはなこくん"
+
+[[case]]
+input = "作業しながら「ながら見」できます。"
+mode = "hiragana"
+expected = "さぎょうしながら「ながらみ」できます。"
+
+[[case]]
+input = "沖縄県庁と美ら海水族館に届く"
+mode = "hiragana"
+expected = "おきなわけんちょうとちゅらうみすいぞくかんにとどく"
+
+[[case]]
+input = "伊豆守を賜った支配者だぞ"
+mode = "hiragana"
+expected = "いずのかみをたまわったしはいしゃだぞ"
+
+[[case]]
+input = "爆心地にいると起爆して"
+mode = "hiragana"
+expected = "ばくしんちにいるときばくして"
+
+[[case]]
+input = "爪切りも外国人観光客のお土産で買われたり"
+mode = "hiragana"
+expected = "つめきりもがいこくじんかんこうきゃくのおみやげでかわれたり"
+
+# 見直し第6ラウンド(add_entries.py)
+
+[[case]]
+input = "中島悟「雨得意です!」"
+mode = "hiragana"
+expected = "なかじまさとる「あめとくいです!」"
+
+# 見直し第6ラウンド: 映える (動詞) = はえる / その丈 = たけ
+[[case]]
+input = "シチュエーションで映える"
+mode = "hiragana"
+expected = "シチュエーションではえる"
+
+[[case]]
+input = "インスタ映え"
+mode = "hiragana"
+expected = "インスタばえ"
+
+[[case]]
+input = "おかんその丈のワンピ"
+mode = "hiragana"
+expected = "おかんそのたけのワンピ"

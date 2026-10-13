@@ -121,12 +121,12 @@ expected = "あさいり"
 [[case]]
 input = "品種と、浅煎りか深煎りかで香りは変わりますよ"
 mode = "hiragana"
-expected = "ひんしゅと、あさいりかしんいりかでかおりはかわりますよ"
+expected = "ひんしゅと、あさいりかふかいりかでかおりはかわりますよ"
 
 [[case]]
 input = "深煎りコーヒーが好きです"
 mode = "hiragana"
-expected = "しんいりコーヒーがすきです"
+expected = "ふかいりコーヒーがすきです"
 
 [[case]]
 input = "焙煎はイタリアン"
