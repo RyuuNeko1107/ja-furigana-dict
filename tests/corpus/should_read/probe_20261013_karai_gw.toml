@@ -1217,3 +1217,50 @@ expected = "ばあちゃんちいかないとだから"
 input = "ストレート出すぎじゃない"
 mode = "hiragana"
 expected = "ストレートですぎじゃない"
+
+# 見直し第11ラウンドの続き(本番BOTの入力文 / add_entries.py)
+
+[[case]]
+input = "膝蹴り練習"
+mode = "hiragana"
+expected = "ひざげりれんしゅう"
+
+[[case]]
+input = "声枯れすぎ"
+mode = "hiragana"
+expected = "こえがれすぎ"
+
+[[case]]
+input = "風読みも覚えないとダメかなー"
+mode = "hiragana"
+expected = "かぜよみもおぼえないとダメかなー"
+
+[[case]]
+input = "地雷女の歌"
+mode = "hiragana"
+expected = "じらいおんなのうた"
+
+[[case]]
+input = "華日和 ペア箸セット"
+mode = "hiragana"
+expected = "かひより ぺあばしセット"
+
+[[case]]
+input = "やめ時は考えときなよ"
+mode = "hiragana"
+expected = "やめどきはかんがえときなよ"
+
+[[case]]
+input = "勃てて勃てて"
+mode = "hiragana"
+expected = "たててたてて"
+
+[[case]]
+input = "第七王子のロイドだよ"
+mode = "hiragana"
+expected = "だいななおうじのロイドだよ"
+
+[[case]]
+input = "どういう風の吹き回しなんや"
+mode = "hiragana"
+expected = "どういうかぜのふきまわしなんや"
