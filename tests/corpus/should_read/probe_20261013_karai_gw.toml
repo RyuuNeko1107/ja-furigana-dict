@@ -279,3 +279,65 @@ expected = "ていしぼうにゅうをかう"
 input = "創造主の意志"
 mode = "hiragana"
 expected = "そうぞうしゅのいし"
+
+# 文脈つき生成器 × 現行エンジンの食い違い (実コメント) から
+
+[[case]]
+input = "法を嗣ぐ"
+mode = "hiragana"
+expected = "ほうをつぐ"
+
+[[case]]
+input = "罰を以って赦される"
+mode = "hiragana"
+expected = "ばつをもってゆるされる"
+
+[[case]]
+input = "ミステリと言う勿れ"
+mode = "hiragana"
+expected = "ミステリというなかれ"
+
+[[case]]
+input = "殆んど食べない"
+mode = "hiragana"
+expected = "ほとんどたべない"
+
+[[case]]
+input = "好奇心を唆られる"
+mode = "hiragana"
+expected = "こうきしんをそそられる"
+
+[[case]]
+input = "徐ろに椅子に座る"
+mode = "hiragana"
+expected = "おもむろにいすにすわる"
+
+[[case]]
+input = "毛布に包まっている"
+mode = "hiragana"
+expected = "もうふにくるまっている"
+
+[[case]]
+input = "全く敵わない"
+mode = "hiragana"
+expected = "まったくかなわない"
+
+[[case]]
+input = "友だちに揶揄われた"
+mode = "hiragana"
+expected = "ともだちにからかわれた"
+
+[[case]]
+input = "同じ轍を踏まない"
+mode = "hiragana"
+expected = "おなじてつをふまない"
+
+[[case]]
+input = "事ある毎に宣伝する"
+mode = "hiragana"
+expected = "ことあるごとにせんでんする"
+
+[[case]]
+input = "お妃を迎える"
+mode = "hiragana"
+expected = "おきさきをむかえる"
