@@ -341,3 +341,85 @@ expected = "ことあるごとにせんでんする"
 input = "お妃を迎える"
 mode = "hiragana"
 expected = "おきさきをむかえる"
+
+# 実コメント新規 5000 行 × OpenJTalk / Sudachi の食い違いの目視判定から
+
+[[case]]
+input = "悩んだ末に決めた"
+mode = "hiragana"
+expected = "なやんだすえにきめた"
+
+[[case]]
+input = "考えた末にこうなった"
+mode = "hiragana"
+expected = "かんがえたすえにこうなった"
+
+[[case]]
+input = "年末に帰る"
+mode = "hiragana"
+expected = "ねんまつにかえる"
+
+[[case]]
+input = "俺、いい加減頭にきてさ"
+mode = "hiragana"
+expected = "おれ、いいかげんあたまにきてさ"
+
+[[case]]
+input = "何この挙動"
+mode = "hiragana"
+expected = "なにこのきょどう"
+
+[[case]]
+input = "如何なものかと思う"
+mode = "hiragana"
+expected = "いかがなものかとおもう"
+
+[[case]]
+input = "調整池も満杯"
+mode = "hiragana"
+expected = "ちょうせいちもまんぱい"
+
+[[case]]
+input = "開催日ですね"
+mode = "hiragana"
+expected = "かいさいびですね"
+
+[[case]]
+input = "コルティスが装苑か"
+mode = "hiragana"
+expected = "コルティスがそうえんか"
+
+[[case]]
+input = "尊富士が組み止めました"
+mode = "hiragana"
+expected = "たけるふじがくみとめました"
+
+[[case]]
+input = "ロブチェンの追い切りはよかった"
+mode = "hiragana"
+expected = "ロブチェンのおいきりはよかった"
+
+[[case]]
+input = "厚塗りタッチ"
+mode = "hiragana"
+expected = "あつぬりタッチ"
+
+[[case]]
+input = "せざるを得んのよな"
+mode = "hiragana"
+expected = "せざるをえんのよな"
+
+[[case]]
+input = "漁港町の旅館"
+mode = "hiragana"
+expected = "ぎょこうまちのりょかん"
+
+[[case]]
+input = "罵れるから"
+mode = "hiragana"
+expected = "ののしれるから"
+
+[[case]]
+input = "秋山豊寛"
+mode = "hiragana"
+expected = "あきやまとよひろ"
