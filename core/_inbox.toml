@@ -8167,3 +8167,104 @@ reading = "ダイビキ"
 
 [entries."先週頭"]
 reading = "センシュウアタマ"
+
+# 頻度順の監査(上位400)から(add_entries.py)
+
+[entries."平野紫耀"]
+reading = "ヒラノショウ"
+
+[entries."真田丸"]
+reading = "サナダマル"
+
+[entries."済州島"]
+reading = "サイシュウトウ"
+
+[entries."竹内涼真"]
+reading = "タケウチリョウマ"
+
+[entries."前日比"]
+reading = "ゼンジツヒ"
+
+[entries."今田美桜"]
+reading = "イマダミオ"
+
+[entries."大清帝国"]
+reading = "ダイシンテイコク"
+
+[entries."目黒蓮"]
+reading = "メグロレン"
+
+[entries."阿部寛"]
+reading = "アベヒロシ"
+
+[entries."三浦春馬"]
+reading = "ミウラハルマ"
+
+[entries."個々人"]
+reading = "ココジン"
+
+[entries."山北町"]
+reading = "ヤマキタマチ"
+
+[entries."薄桜鬼"]
+reading = "ハクオウキ"
+
+[entries."高山祭"]
+reading = "タカヤママツリ"
+
+[entries."松岡茉優"]
+reading = "マツオカマユ"
+
+[entries."玩具屋"]
+reading = "オモチャヤ"
+
+[entries."閔氏"]
+reading = "ビンシ"
+
+[entries."重慶"]
+reading = "ジュウケイ"
+
+[entries."町中華"]
+reading = "マチチュウカ"
+
+[entries."佐々木希"]
+reading = "ササキノゾミ"
+
+[entries."外構"]
+reading = "ガイコウ"
+
+[entries."延長線上"]
+reading = "エンチョウセンジョウ"
+
+[entries."期待大"]
+reading = "キタイダイ"
+
+[entries."藤井隆"]
+reading = "フジイタカシ"
+
+[entries."中村倫也"]
+reading = "ナカムラトモヤ"
+
+[entries."矢吹奈子"]
+reading = "ヤブキナコ"
+
+[entries."賀喜遥香"]
+reading = "カキハルカ"
+
+[entries."横浜市中区"]
+reading = "ヨコハマシナカク"
+
+[entries."横浜市南区"]
+reading = "ヨコハマシミナミク"
+
+[entries."相模原市南区"]
+reading = "サガミハラシミナミク"
+
+[entries."台東区谷中"]
+reading = "タイトウクヤナカ"
+
+[entries."長柄町"]
+reading = "ナガラマチ"
+
+[entries."入山規制"]
+reading = "ニュウザンキセイ"

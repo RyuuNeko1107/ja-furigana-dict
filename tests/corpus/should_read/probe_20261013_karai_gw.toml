@@ -1662,3 +1662,170 @@ expected = "カードつかいたくなくてだいびきにしたので"
 input = "先週頭から体調が悪くて"
 mode = "hiragana"
 expected = "せんしゅうあたまからたいちょうがわるくて"
+
+# 頻度順の監査(上位400)から(add_entries.py)
+
+[[case]]
+input = "平野紫耀"
+mode = "hiragana"
+expected = "ひらのしょう"
+
+[[case]]
+input = "真田丸"
+mode = "hiragana"
+expected = "さなだまる"
+
+[[case]]
+input = "済州島に行く"
+mode = "hiragana"
+expected = "さいしゅうとうにいく"
+
+[[case]]
+input = "竹内涼真"
+mode = "hiragana"
+expected = "たけうちりょうま"
+
+[[case]]
+input = "前日比プラス"
+mode = "hiragana"
+expected = "ぜんじつひプラス"
+
+[[case]]
+input = "今田美桜"
+mode = "hiragana"
+expected = "いまだみお"
+
+[[case]]
+input = "大清帝国"
+mode = "hiragana"
+expected = "だいしんていこく"
+
+[[case]]
+input = "目黒蓮"
+mode = "hiragana"
+expected = "めぐろれん"
+
+[[case]]
+input = "阿部寛"
+mode = "hiragana"
+expected = "あべひろし"
+
+[[case]]
+input = "三浦春馬"
+mode = "hiragana"
+expected = "みうらはるま"
+
+[[case]]
+input = "個々人の自由"
+mode = "hiragana"
+expected = "ここじんのじゆう"
+
+[[case]]
+input = "山北町"
+mode = "hiragana"
+expected = "やまきたまち"
+
+[[case]]
+input = "薄桜鬼"
+mode = "hiragana"
+expected = "はくおうき"
+
+[[case]]
+input = "高山祭"
+mode = "hiragana"
+expected = "たかやままつり"
+
+[[case]]
+input = "松岡茉優"
+mode = "hiragana"
+expected = "まつおかまゆ"
+
+[[case]]
+input = "玩具屋"
+mode = "hiragana"
+expected = "おもちゃや"
+
+[[case]]
+input = "閔氏"
+mode = "hiragana"
+expected = "びんし"
+
+[[case]]
+input = "重慶"
+mode = "hiragana"
+expected = "じゅうけい"
+
+[[case]]
+input = "町中華"
+mode = "hiragana"
+expected = "まちちゅうか"
+
+[[case]]
+input = "佐々木希"
+mode = "hiragana"
+expected = "ささきのぞみ"
+
+[[case]]
+input = "外構工事"
+mode = "hiragana"
+expected = "がいこうこうじ"
+
+[[case]]
+input = "延長線上にある"
+mode = "hiragana"
+expected = "えんちょうせんじょうにある"
+
+[[case]]
+input = "期待大です"
+mode = "hiragana"
+expected = "きたいだいです"
+
+[[case]]
+input = "藤井隆"
+mode = "hiragana"
+expected = "ふじいたかし"
+
+[[case]]
+input = "中村倫也"
+mode = "hiragana"
+expected = "なかむらともや"
+
+[[case]]
+input = "矢吹奈子"
+mode = "hiragana"
+expected = "やぶきなこ"
+
+[[case]]
+input = "賀喜遥香"
+mode = "hiragana"
+expected = "かきはるか"
+
+[[case]]
+input = "横浜市中区"
+mode = "hiragana"
+expected = "よこはましなかく"
+
+[[case]]
+input = "横浜市南区"
+mode = "hiragana"
+expected = "よこはましみなみく"
+
+[[case]]
+input = "相模原市南区"
+mode = "hiragana"
+expected = "さがみはらしみなみく"
+
+[[case]]
+input = "台東区谷中"
+mode = "hiragana"
+expected = "たいとうくやなか"
+
+[[case]]
+input = "長柄町"
+mode = "hiragana"
+expected = "ながらまち"
+
+[[case]]
+input = "入山規制"
+mode = "hiragana"
+expected = "にゅうざんきせい"
