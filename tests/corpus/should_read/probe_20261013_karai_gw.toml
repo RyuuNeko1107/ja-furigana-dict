@@ -458,3 +458,60 @@ expected = "てあしのかんじ"
 input = "野菜も摂れる"
 mode = "hiragana"
 expected = "やさいもとれる"
+
+# 見直し第3ラウンドから
+
+[[case]]
+input = "米記者が報じた"
+mode = "hiragana"
+expected = "べいきしゃがほうじた"
+
+[[case]]
+input = "米長官が語る"
+mode = "hiragana"
+expected = "べいちょうかんがかたる"
+
+[[case]]
+input = "宇宙人達のキャラデザ"
+mode = "hiragana"
+expected = "うちゅうじんたちのキャラデザ"
+
+[[case]]
+input = "今日は納車日"
+mode = "hiragana"
+expected = "きょうはのうしゃび"
+
+[[case]]
+input = "舌下の薬"
+mode = "hiragana"
+expected = "ぜっかのくすり"
+
+[[case]]
+input = "伝道師に見てもらう"
+mode = "hiragana"
+expected = "でんどうしにみてもらう"
+
+[[case]]
+input = "拳士としての魅力"
+mode = "hiragana"
+expected = "けんしとしてのみりょく"
+
+[[case]]
+input = "激闘決着!塾高、4点取った"
+mode = "hiragana"
+expected = "げきとうけっちゃく!じゅくこう、よんてんとった"
+
+[[case]]
+input = "女体化スネイプ"
+mode = "hiragana"
+expected = "にょたいかスネイプ"
+
+[[case]]
+input = "遠近感を与え"
+mode = "hiragana"
+expected = "えんきんかんをあたえ"
+
+[[case]]
+input = "小栗旬がんばれ"
+mode = "hiragana"
+expected = "おぐりしゅんがんばれ"

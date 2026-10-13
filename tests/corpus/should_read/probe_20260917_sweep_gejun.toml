@@ -126,7 +126,7 @@ expected = "かわらのやねだったっけ?"
 [[case]]
 input = "小栗旬か"
 mode = "hiragana"
-expected = "おぐりじゅんか"
+expected = "おぐりしゅんか"
 
 [[case]]
 input = "旬だよね"
