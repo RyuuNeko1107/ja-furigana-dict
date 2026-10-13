@@ -969,3 +969,87 @@ expected = "たいしょくびがきまった"
 input = "米イチゴ"
 mode = "hiragana"
 expected = "こめイチゴ"
+
+# 見直し第9ラウンド(add_entries.py)
+
+[[case]]
+input = "タニシの生き様!"
+mode = "hiragana"
+expected = "タニシのいきざま!"
+
+[[case]]
+input = "昨日と今日描き詰めなのと寒さで"
+mode = "hiragana"
+expected = "きのうときょうかきづめなのとさむさで"
+
+[[case]]
+input = "抑うつ神経症の初診から"
+mode = "hiragana"
+expected = "よくうつしんけいしょうのしょしんから"
+
+[[case]]
+input = "今回半人半ケモでバランスいいよね"
+mode = "hiragana"
+expected = "こんかいはんにんはんケモでバランスいいよね"
+
+[[case]]
+input = "階段もないから下がれるし行けるいける"
+mode = "hiragana"
+expected = "かいだんもないからさがれるしいけるいける"
+
+[[case]]
+input = "前転シュートだああああああ"
+mode = "hiragana"
+expected = "ぜんてんシュートだああああああ"
+
+[[case]]
+input = "「閑かさや岩にしみ入る蝉の声」"
+mode = "hiragana"
+expected = "「しずかさやいわにしみいるせみのこえ」"
+
+[[case]]
+input = "朝から帰阪するめずらしい出張"
+mode = "hiragana"
+expected = "あさからきはんするめずらしいしゅっちょう"
+
+[[case]]
+input = "南極行ってみたくなりますねぇ"
+mode = "hiragana"
+expected = "なんきょくいってみたくなりますねぇ"
+
+[[case]]
+input = "メスと縫合用の針糸を持っています"
+mode = "hiragana"
+expected = "メスとほうごうようのはりいとをもっています"
+
+[[case]]
+input = "咽せキン"
+mode = "hiragana"
+expected = "むせキン"
+
+[[case]]
+input = "貸金庫使うか"
+mode = "hiragana"
+expected = "かしきんこつかうか"
+
+[[case]]
+input = "この主人公頭悪いよね"
+mode = "hiragana"
+expected = "このしゅじんこうあたまわるいよね"
+
+
+# 見直し第9ラウンド: 規則 (ひらがな名+氏+助詞 / 動詞+日)
+[[case]]
+input = "あきお氏なのは最高です"
+mode = "hiragana"
+expected = "あきおしなのはさいこうです"
+
+[[case]]
+input = "サイゼ行く日"
+mode = "hiragana"
+expected = "サイゼいくひ"
+
+[[case]]
+input = "古い巻物の話"
+mode = "hiragana"
+expected = "ふるいまきもののはなし"
