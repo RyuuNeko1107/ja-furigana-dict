@@ -782,3 +782,75 @@ expected = "インスタばえ"
 input = "おかんその丈のワンピ"
 mode = "hiragana"
 expected = "おかんそのたけのワンピ"
+
+# 見直し第7ラウンド(add_entries.py)
+
+[[case]]
+input = "鶏の茹で汁は、塩味も付いているし"
+mode = "hiragana"
+expected = "にわとりのゆでじるは、しおあじもついているし"
+
+[[case]]
+input = "なんぞ隠し玉がありそうではある"
+mode = "hiragana"
+expected = "なんぞかくしだまがありそうではある"
+
+[[case]]
+input = "現金払いしか許されない役所"
+mode = "hiragana"
+expected = "げんきんばらいしかゆるされないやくしょ"
+
+[[case]]
+input = "ガビガビのペン描き心地良いのに"
+mode = "hiragana"
+expected = "ガビガビのペンかきごこちよいのに"
+
+[[case]]
+input = "これが猫足立ち"
+mode = "hiragana"
+expected = "これがねこあしだち"
+
+[[case]]
+input = "華丸大吉さんはかなりあちこちで見ますね"
+mode = "hiragana"
+expected = "はなまるだいきちさんはかなりあちこちでみますね"
+
+[[case]]
+input = "密造酒飲むつきしま君おもろい"
+mode = "hiragana"
+expected = "みつぞうしゅのむつきしまくんおもろい"
+
+[[case]]
+input = "大トロの友達"
+mode = "hiragana"
+expected = "おおとろのともだち"
+
+[[case]]
+input = "誓えるよ"
+mode = "hiragana"
+expected = "ちかえるよ"
+
+[[case]]
+input = "この家泊れるんですよ"
+mode = "hiragana"
+expected = "このいえとまれるんですよ"
+
+[[case]]
+input = "今日はオリエント急行の運行開始日だよ。"
+mode = "hiragana"
+expected = "きょうはオリエントきゅうこうのうんこうかいしびだよ。"
+
+[[case]]
+input = "クソ田舎北九で地元じゃ負け知らず"
+mode = "hiragana"
+expected = "クソいなかきたきゅうでじもとじゃまけしらず"
+
+[[case]]
+input = "アジア圏神絵師たちのタイムラプス"
+mode = "hiragana"
+expected = "アジアけんかみえしたちのタイムラプス"
+
+[[case]]
+input = "そりゃ返信来んわ"
+mode = "hiragana"
+expected = "そりゃへんしんこんわ"
