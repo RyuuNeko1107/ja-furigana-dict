@@ -1053,3 +1053,57 @@ expected = "サイゼいくひ"
 input = "古い巻物の話"
 mode = "hiragana"
 expected = "ふるいまきもののはなし"
+
+# 見直し第10ラウンド(add_entries.py)
+
+[[case]]
+input = "そういう建て付けなのね"
+mode = "hiragana"
+expected = "そういうたてつけなのね"
+
+[[case]]
+input = "フィールド作り込まれてる"
+mode = "hiragana"
+expected = "フィールドつくりこまれてる"
+
+[[case]]
+input = "縦折スマホはコンパクトに畳める"
+mode = "hiragana"
+expected = "たておりスマホはコンパクトにたためる"
+
+[[case]]
+input = "新橋駅で買った東京豚饅"
+mode = "hiragana"
+expected = "しんばしえきでかったとうきょうぶたまん"
+
+[[case]]
+input = "どこぞの風来みたいなのはない"
+mode = "hiragana"
+expected = "どこぞのふうらいみたいなのはない"
+
+[[case]]
+input = "的あてかなぁさすがに"
+mode = "hiragana"
+expected = "まとあてかなぁさすがに"
+
+[[case]]
+input = "ウィーン公演は楽友協会"
+mode = "hiragana"
+expected = "ウィーンこうえんはがくゆうきょうかい"
+
+[[case]]
+input = "生活上の愚痴をこぼしながら"
+mode = "hiragana"
+expected = "せいかつじょうのぐちをこぼしながら"
+
+# 見直し第10ラウンド(add_entries.py)
+
+[[case]]
+input = "陽に当たってるの心地良すぎて仕事したくなーい"
+mode = "hiragana"
+expected = "ひにあたってるのここちよすぎてしごとしたくなーい"
+
+[[case]]
+input = "陽の光を浴びる"
+mode = "hiragana"
+expected = "ひのひかりをあびる"
