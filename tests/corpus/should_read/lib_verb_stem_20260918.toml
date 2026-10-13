@@ -542,5 +542,5 @@ note = "旧 なにけんんねん"
 [[case]]
 input = "イッキ見辛くね?"
 mode = "hiragana"
-expected = "イッキみからくね?"
+expected = "イッキみづらくね?"
 note = "旧 けんからく (見 + 辛)"

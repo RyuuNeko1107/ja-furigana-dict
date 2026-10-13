@@ -1555,3 +1555,110 @@ expected = "けいざい"
 input = "突然女の赤ちゃんになってしまいました"
 mode = "hiragana"
 expected = "とつぜんおんなのあかちゃんになってしまいました"
+
+# 見直し第16ラウンド(add_entries.py)
+
+[[case]]
+input = "保護フィルムの貼り方なんですが今回も水貼りです"
+mode = "hiragana"
+expected = "ほごフィルムのはりかたなんですがこんかいもみずばりです"
+
+[[case]]
+input = "泣き疲れ"
+mode = "hiragana"
+expected = "なきつかれ"
+
+[[case]]
+input = "見辛い"
+mode = "hiragana"
+expected = "みづらい"
+
+[[case]]
+input = "古い記事が見辛くなってきた"
+mode = "hiragana"
+expected = "ふるいきじがみづらくなってきた"
+
+[[case]]
+input = "反射光が輝いてるか"
+mode = "hiragana"
+expected = "はんしゃこうがかがやいてるか"
+
+[[case]]
+input = "機材手入れありがたい"
+mode = "hiragana"
+expected = "きざいていれありがたい"
+
+[[case]]
+input = "お前らって三ヶ月で帝大に入りそう"
+mode = "hiragana"
+expected = "おまえらってさんかげつでていだいにはいりそう"
+
+[[case]]
+input = "つけ爪アップしてるの愛か"
+mode = "hiragana"
+expected = "つけづめアップしてるのあいか"
+
+[[case]]
+input = "尾道ラーメン、平麺、味玉付き"
+mode = "hiragana"
+expected = "おのみちラーメン、ひらめん、あじたまつき"
+
+[[case]]
+input = "自分事でしか無いから周りに迷惑かけんし"
+mode = "hiragana"
+expected = "じぶんごとでしかないからまわりにめいわくかけんし"
+
+[[case]]
+input = "髪をすいてても内側がベタつきがち"
+mode = "hiragana"
+expected = "かみをすいててもうちがわがベタつきがち"
+
+[[case]]
+input = "先端が角ばってるお箸"
+mode = "hiragana"
+expected = "せんたんがかくばってるおはし"
+
+[[case]]
+input = "外来日まで様子見中してる"
+mode = "hiragana"
+expected = "がいらいびまでようすみちゅうしてる"
+
+[[case]]
+input = "私の右脚にしがみついてて"
+mode = "hiragana"
+expected = "わたしのみぎあしにしがみついてて"
+
+[[case]]
+input = "左脚にしがみついて"
+mode = "hiragana"
+expected = "ひだりあしにしがみついて"
+
+[[case]]
+input = "右腰に爆弾がある気配がする"
+mode = "hiragana"
+expected = "みぎこしにばくだんがあるけはいがする"
+
+[[case]]
+input = "左腰に爆弾がある"
+mode = "hiragana"
+expected = "ひだりこしにばくだんがある"
+
+[[case]]
+input = "柔いやつ狙う"
+mode = "hiragana"
+expected = "やわいやつねらう"
+
+[[case]]
+input = "全く発根しなかったし"
+mode = "hiragana"
+expected = "まったくはっこんしなかったし"
+
+[[case]]
+input = "カード使いたくなくて代引きにしたので"
+mode = "hiragana"
+expected = "カードつかいたくなくてだいびきにしたので"
+
+[[case]]
+input = "先週頭から体調が悪くて"
+mode = "hiragana"
+expected = "せんしゅうあたまからたいちょうがわるくて"

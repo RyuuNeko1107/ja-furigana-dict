@@ -8102,3 +8102,68 @@ reading = "ゴハンドキ"
 
 [entries."検査日"]
 reading = "ケンサビ"
+
+# 見直し第16ラウンド(add_entries.py)
+
+[entries."水貼り"]
+reading = "ミズバリ"
+
+[entries."泣き疲れ"]
+reading = "ナキツカレ"
+
+[entries."見辛い"]
+reading = "ミヅライ"
+
+[entries."見辛く"]
+reading = "ミヅラク"
+
+[entries."反射光"]
+reading = "ハンシャコウ"
+
+[entries."手入れ"]
+reading = "テイレ"
+
+[entries."帝大"]
+reading = "テイダイ"
+
+[entries."つけ爪"]
+reading = "ツケヅメ"
+
+[entries."平麺"]
+reading = "ヒラメン"
+
+[entries."自分事"]
+reading = "ジブンゴト"
+
+[entries."内側"]
+reading = "ウチガワ"
+
+[entries."角ばっ"]
+reading = "カクバッ"
+
+[entries."外来日"]
+reading = "ガイライビ"
+
+[entries."右脚"]
+reading = "ミギアシ"
+
+[entries."左脚"]
+reading = "ヒダリアシ"
+
+[entries."右腰"]
+reading = "ミギコシ"
+
+[entries."左腰"]
+reading = "ヒダリコシ"
+
+[entries."柔い"]
+reading = "ヤワイ"
+
+[entries."発根"]
+reading = "ハッコン"
+
+[entries."代引き"]
+reading = "ダイビキ"
+
+[entries."先週頭"]
+reading = "センシュウアタマ"
