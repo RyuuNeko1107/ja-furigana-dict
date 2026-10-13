@@ -1414,3 +1414,86 @@ expected = "トッピングのやさいをすあげにしていくわね"
 input = "潰れるの助かる粗が目立たないから"
 mode = "hiragana"
 expected = "つぶれるのたすかるあらがめだたないから"
+
+# 見直し第14ラウンド(add_entries.py)
+
+[[case]]
+input = "ケンちゃんは猿顔で可愛いよ"
+mode = "hiragana"
+expected = "ケンちゃんはさるがおでかわいいよ"
+
+[[case]]
+input = "ナイス耳毛"
+mode = "hiragana"
+expected = "ナイスみみげ"
+
+[[case]]
+input = "語り部たらんとする彼らを"
+mode = "hiragana"
+expected = "かたりべたらんとするかれらを"
+
+[[case]]
+input = "女体を描く参考になりすぎてて"
+mode = "hiragana"
+expected = "にょたいをかくさんこうになりすぎてて"
+
+[[case]]
+input = "おしゃれ着"
+mode = "hiragana"
+expected = "おしゃれぎ"
+
+[[case]]
+input = "運動会日和だったね"
+mode = "hiragana"
+expected = "うんどうかいびよりだったね"
+
+[[case]]
+input = "古畑任三郎を続けて見てると"
+mode = "hiragana"
+expected = "ふるはたにんざぶろうをつづけてみてると"
+
+[[case]]
+input = "輪行袋を広げるのに躊躇しちゃう"
+mode = "hiragana"
+expected = "りんこうぶくろをひろげるのにちゅうちょしちゃう"
+
+[[case]]
+input = "これから先嫌という程聞く名前になる"
+mode = "hiragana"
+expected = "これからさきいやというほどきくなまえになる"
+
+[[case]]
+input = "たまごと軍艦ときゅうり巻と揚げ物"
+mode = "hiragana"
+expected = "たまごとぐんかんときゅうりまきとあげもの"
+
+[[case]]
+input = "変拍子といえば"
+mode = "hiragana"
+expected = "へんびょうしといえば"
+
+[[case]]
+input = "泣きっ面に蜂"
+mode = "hiragana"
+expected = "なきっつらにはち"
+
+# 見直し第14ラウンド: 観 (価値観や / 世界観な(んて) を ミ にしない)
+[[case]]
+input = "価値観や視点がわかる"
+mode = "hiragana"
+expected = "かちかんやしてんがわかる"
+
+[[case]]
+input = "世界観や設定"
+mode = "hiragana"
+expected = "せかいかんやせってい"
+
+[[case]]
+input = "価値観なんて"
+mode = "hiragana"
+expected = "かちかんなんて"
+
+[[case]]
+input = "このアニメは観やすい"
+mode = "hiragana"
+expected = "このアニメはみやすい"

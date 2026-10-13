@@ -101,7 +101,7 @@ expected = "さんさんななびょうし!"
 [[case]]
 input = "変拍子"
 mode = "hiragana"
-expected = "へんひょうし"
+expected = "へんびょうし"
 
 [[case]]
 input = "心拍数"
