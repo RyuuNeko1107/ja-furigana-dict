@@ -216,3 +216,19 @@ expected = "みなさんがた"
 input = "学校は小中高すごいたのしかった"
 mode = "hiragana"
 expected = "がっこうはしょうちゅうこうすごいたのしかった"
+
+# 第 4 ラウンド
+[[case]]
+input = "後夜祭の座席表"
+mode = "hiragana"
+expected = "こうやさいのざせきひょう"
+
+[[case]]
+input = "首を刎ねる音"
+mode = "hiragana"
+expected = "くびをはねるおと"
+
+[[case]]
+input = "Switch 2 選べるソフト"
+mode = "hiragana"
+expected = "スイッチツー えらべるソフト"
