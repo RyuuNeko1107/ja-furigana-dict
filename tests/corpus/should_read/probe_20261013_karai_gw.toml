@@ -1107,3 +1107,16 @@ expected = "ひにあたってるのここちよすぎてしごとしたくな�
 input = "陽の光を浴びる"
 mode = "hiragana"
 expected = "ひのひかりをあびる"
+
+# 辞書の機械的監査(JMdict / 青空ルビ)から
+
+[[case]]
+input = "蒙古襲来は教科書で習った"
+mode = "hiragana"
+expected = "もうこしゅうらいはきょうかしょでならった"
+
+# 辞書の機械的監査 (dict_audit.py: JMdict / 青空ルビと食い違う見出し) から
+[[case]]
+input = "卒検来週にずらした"
+mode = "hiragana"
+expected = "そっけんらいしゅうにずらした"
