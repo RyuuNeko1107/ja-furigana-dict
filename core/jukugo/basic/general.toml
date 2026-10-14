@@ -7114,6 +7114,11 @@ next_starts_any = ["し"]
 [entries."上手"]
 reading = "ジョウズ"
 
+# 舞台の上手 (かみて)。 一枚上手 (うわて) は alt
+[[entries."上手".match]]
+reading = "カミテ"
+input_contains_any = ["舞台の上手", "上手側", "上手袖", "上手奥", "上手へ", "客席から見て上手"]
+
 [[entries."上手".match]]
 reading = "カミテ"
 next_eq = "から"
@@ -7135,6 +7140,15 @@ weight = 20
 
 [entries."下手"]
 reading = "ヘタ"
+
+# 舞台の下手 (しもて) / 下手に出る (したて)
+[[entries."下手".match]]
+reading = "シモテ"
+input_contains_any = ["舞台の下手", "下手側", "下手袖", "下手奥", "下手へ", "客席から見て下手"]
+
+[[entries."下手".match]]
+reading = "シタテ"
+input_contains_any = ["下手に出", "下手にで"]
 
 [[entries."下手".alt]]
 reading = "シモテ"
@@ -7295,6 +7309,11 @@ next2_starts_any = [
 
 [entries."一日"]
 reading = "イチニチ"
+
+# 来月一日 / 今月一日 / 毎月一日 = ついたち (十月一日 は prev_month)
+[[entries."一日".match]]
+reading = "ツイタチ"
+prev_ends_any = ["来月", "今月", "先月", "毎月", "翌月", "再来月", "翌々月"]
 
 [[entries."一日".match]]
 reading = "ツイタチ"
@@ -11327,6 +11346,11 @@ weight = 15
 [entries."色紙"]
 reading = "シキシ"
 
+# 折り紙・工作の色紙 = いろがみ (サイン色紙 = しきし が既定)
+[[entries."色紙".match]]
+reading = "イロガミ"
+input_contains_any = ["折り紙", "折る", "折っ", "折れ", "工作", "貼り絵", "切り絵", "画用紙", "千羽鶴", "七夕", "飾り"]
+
 [[entries."色紙".alt]]
 reading = "イロガミ"
 sense = "colored-paper"
@@ -11504,6 +11528,11 @@ weight = 10
 
 [entries."見物"]
 reading = "ケンブツ"
+
+# これは見物だ (みもの)
+[[entries."見物".match]]
+reading = "ミモノ"
+next_starts_any = ["だ", "です", "であ"]
 
 [[entries."見物".alt]]
 reading = "ミモノ"

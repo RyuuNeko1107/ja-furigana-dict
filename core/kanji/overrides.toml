@@ -9401,6 +9401,19 @@ default = "ヨン"
 char = "間"
 default = "あいだ"
 
+# 間が悪い / 間が持たない / 間を置く = ま (前が漢字の 人間が悪い / 世間が悪い は除く)
+[[kanji.match]]
+reading = "マ"
+prev_char_type = "ひらがな"
+next_starts_any = ["が", "を"]
+input_contains_any = ["間が悪", "間が持た", "間を置", "間をおい"]
+
+[[kanji.match]]
+reading = "マ"
+prev_char_type = "カタカナ"
+next_starts_any = ["が", "を"]
+input_contains_any = ["間が悪", "間が持た", "間を置", "間をおい"]
+
 # 「○○ + 間 + の」 (= 前置 noun + 茶間の / 奥間の / 応接間の 等) → マ
 [[kanji.match]]
 reading = "マ"

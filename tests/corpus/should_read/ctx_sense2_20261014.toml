@@ -1,0 +1,806 @@
+# 2026-10-14 文脈で読みが変わる語 その2 (人気 / 上手・下手 / 生 / 今日 / 大人 / 方 / 間 / 後 / 何 / 一日 / 空 / 角 / 風 / 重 / 市場 / 見物 / 色紙 / 一時 / 大事 / 行う / 入る / 開く)
+
+[[case]]
+input = "人気のある店"
+mode = "hiragana"
+expected = "にんきのあるみせ"
+
+[[case]]
+input = "この漫画は人気だ"
+mode = "hiragana"
+expected = "このまんがはにんきだ"
+
+[[case]]
+input = "人気者になりたい"
+mode = "hiragana"
+expected = "にんきものになりたい"
+
+[[case]]
+input = "人気声優"
+mode = "hiragana"
+expected = "にんきせいゆう"
+
+[[case]]
+input = "人気のない公園"
+mode = "hiragana"
+expected = "ひとけのないこうえん"
+
+[[case]]
+input = "人気のない廃墟"
+mode = "hiragana"
+expected = "ひとけのないはいきょ"
+
+[[case]]
+input = "絵が上手だね"
+mode = "hiragana"
+expected = "えがじょうずだね"
+
+[[case]]
+input = "歌が上手い人"
+mode = "hiragana"
+expected = "うたがうまいひと"
+
+[[case]]
+input = "上手に焼けました"
+mode = "hiragana"
+expected = "じょうずにやけました"
+
+[[case]]
+input = "上手く行った"
+mode = "hiragana"
+expected = "うまくいった"
+
+[[case]]
+input = "上手から登場"
+mode = "hiragana"
+expected = "かみてからとうじょう"
+
+[[case]]
+input = "相手が一枚上手だった"
+mode = "hiragana"
+expected = "あいてがいちまいうわてだった"
+
+[[case]]
+input = "舞台の上手"
+mode = "hiragana"
+expected = "ぶたいのかみて"
+
+[[case]]
+input = "料理が上手"
+mode = "hiragana"
+expected = "りょうりがじょうず"
+
+[[case]]
+input = "歌が下手"
+mode = "hiragana"
+expected = "うたがへた"
+
+[[case]]
+input = "下手くそ"
+mode = "hiragana"
+expected = "へたくそ"
+
+[[case]]
+input = "下手に出る"
+mode = "hiragana"
+expected = "したてにでる"
+
+[[case]]
+input = "舞台の下手"
+mode = "hiragana"
+expected = "ぶたいのしもて"
+
+[[case]]
+input = "下手をすると"
+mode = "hiragana"
+expected = "へたをすると"
+
+[[case]]
+input = "生放送"
+mode = "hiragana"
+expected = "なまほうそう"
+
+[[case]]
+input = "生で食べる"
+mode = "hiragana"
+expected = "なまでたべる"
+
+[[case]]
+input = "生卵"
+mode = "hiragana"
+expected = "なまたまご"
+
+[[case]]
+input = "生きる"
+mode = "hiragana"
+expected = "いきる"
+
+[[case]]
+input = "生まれる"
+mode = "hiragana"
+expected = "うまれる"
+
+[[case]]
+input = "生活"
+mode = "hiragana"
+expected = "せいかつ"
+
+[[case]]
+input = "生配信"
+mode = "hiragana"
+expected = "なまはいしん"
+
+[[case]]
+input = "生肉"
+mode = "hiragana"
+expected = "なまにく"
+
+[[case]]
+input = "生き物"
+mode = "hiragana"
+expected = "いきもの"
+
+[[case]]
+input = "草が生える"
+mode = "hiragana"
+expected = "くさがはえる"
+
+[[case]]
+input = "生ハム"
+mode = "hiragana"
+expected = "なまハム"
+
+[[case]]
+input = "生姜"
+mode = "hiragana"
+expected = "しょうが"
+
+[[case]]
+input = "一生"
+mode = "hiragana"
+expected = "いっしょう"
+
+[[case]]
+input = "生徒"
+mode = "hiragana"
+expected = "せいと"
+
+[[case]]
+input = "今日は晴れ"
+mode = "hiragana"
+expected = "きょうははれ"
+
+[[case]]
+input = "今日の天気"
+mode = "hiragana"
+expected = "きょうのてんき"
+
+[[case]]
+input = "今日では当たり前"
+mode = "hiragana"
+expected = "こんにちではあたりまえ"
+
+[[case]]
+input = "今日までありがとう"
+mode = "hiragana"
+expected = "きょうまでありがとう"
+
+[[case]]
+input = "大人になる"
+mode = "hiragana"
+expected = "おとなになる"
+
+[[case]]
+input = "大人買い"
+mode = "hiragana"
+expected = "おとながい"
+
+[[case]]
+input = "大人の事情"
+mode = "hiragana"
+expected = "おとなのじじょう"
+
+[[case]]
+input = "大人しい"
+mode = "hiragana"
+expected = "おとなしい"
+
+[[case]]
+input = "大人気"
+mode = "hiragana"
+expected = "だいにんき"
+
+[[case]]
+input = "右の方"
+mode = "hiragana"
+expected = "みぎのほう"
+
+[[case]]
+input = "先生の方が"
+mode = "hiragana"
+expected = "せんせいのほうが"
+
+[[case]]
+input = "食べる方がいい"
+mode = "hiragana"
+expected = "たべるほうがいい"
+
+[[case]]
+input = "方法"
+mode = "hiragana"
+expected = "ほうほう"
+
+[[case]]
+input = "あの方"
+mode = "hiragana"
+expected = "あのかた"
+
+[[case]]
+input = "早い方がいい"
+mode = "hiragana"
+expected = "はやいほうがいい"
+
+[[case]]
+input = "初めての方"
+mode = "hiragana"
+expected = "はじめてのかた"
+
+[[case]]
+input = "二人の間"
+mode = "hiragana"
+expected = "ふたりのあいだ"
+
+[[case]]
+input = "間に合う"
+mode = "hiragana"
+expected = "まにあう"
+
+[[case]]
+input = "あの人は間が悪い"
+mode = "hiragana"
+expected = "あのひとはまがわるい"
+
+[[case]]
+input = "三日間"
+mode = "hiragana"
+expected = "みっかかん"
+
+[[case]]
+input = "夏休みの間"
+mode = "hiragana"
+expected = "なつやすみのあいだ"
+
+[[case]]
+input = "一週間"
+mode = "hiragana"
+expected = "いっしゅうかん"
+
+[[case]]
+input = "間違い"
+mode = "hiragana"
+expected = "まちがい"
+
+[[case]]
+input = "空間"
+mode = "hiragana"
+expected = "くうかん"
+
+[[case]]
+input = "間もなく"
+mode = "hiragana"
+expected = "まもなく"
+
+[[case]]
+input = "隙間"
+mode = "hiragana"
+expected = "すきま"
+
+[[case]]
+input = "後で話す"
+mode = "hiragana"
+expected = "あとではなす"
+
+[[case]]
+input = "後ろを見る"
+mode = "hiragana"
+expected = "うしろをみる"
+
+[[case]]
+input = "食事の後"
+mode = "hiragana"
+expected = "しょくじのあと"
+
+[[case]]
+input = "三日後"
+mode = "hiragana"
+expected = "みっかご"
+
+[[case]]
+input = "後日"
+mode = "hiragana"
+expected = "ごじつ"
+
+[[case]]
+input = "後半"
+mode = "hiragana"
+expected = "こうはん"
+
+[[case]]
+input = "最後"
+mode = "hiragana"
+expected = "さいご"
+
+[[case]]
+input = "今後"
+mode = "hiragana"
+expected = "こんご"
+
+[[case]]
+input = "後悔"
+mode = "hiragana"
+expected = "こうかい"
+
+[[case]]
+input = "午後"
+mode = "hiragana"
+expected = "ごご"
+
+[[case]]
+input = "後輩"
+mode = "hiragana"
+expected = "こうはい"
+
+[[case]]
+input = "何がある"
+mode = "hiragana"
+expected = "なにがある"
+
+[[case]]
+input = "何も知らない"
+mode = "hiragana"
+expected = "なにもしらない"
+
+[[case]]
+input = "何でもいい"
+mode = "hiragana"
+expected = "なんでもいい"
+
+[[case]]
+input = "何の話"
+mode = "hiragana"
+expected = "なんのはなし"
+
+[[case]]
+input = "何人"
+mode = "hiragana"
+expected = "なんにん"
+
+[[case]]
+input = "何時"
+mode = "hiragana"
+expected = "なんじ"
+
+[[case]]
+input = "何度も"
+mode = "hiragana"
+expected = "なんども"
+
+[[case]]
+input = "何を食べる"
+mode = "hiragana"
+expected = "なにをたべる"
+
+[[case]]
+input = "何だって"
+mode = "hiragana"
+expected = "なんだって"
+
+[[case]]
+input = "何か"
+mode = "hiragana"
+expected = "なにか"
+
+[[case]]
+input = "何と"
+mode = "hiragana"
+expected = "なんと"
+
+[[case]]
+input = "明日は休み"
+mode = "hiragana"
+expected = "あしたはやすみ"
+
+[[case]]
+input = "明日の天気"
+mode = "hiragana"
+expected = "あしたのてんき"
+
+[[case]]
+input = "明日から"
+mode = "hiragana"
+expected = "あしたから"
+
+[[case]]
+input = "一日中"
+mode = "hiragana"
+expected = "いちにちじゅう"
+
+[[case]]
+input = "一日休む"
+mode = "hiragana"
+expected = "いちにちやすむ"
+
+[[case]]
+input = "十月一日"
+mode = "hiragana"
+expected = "じゅうがつついたち"
+
+[[case]]
+input = "来月一日"
+mode = "hiragana"
+expected = "らいげつついたち"
+
+[[case]]
+input = "一日三回"
+mode = "hiragana"
+expected = "いちにちさんかい"
+
+[[case]]
+input = "空を見る"
+mode = "hiragana"
+expected = "そらをみる"
+
+[[case]]
+input = "空っぽ"
+mode = "hiragana"
+expected = "からっぽ"
+
+[[case]]
+input = "空手"
+mode = "hiragana"
+expected = "からて"
+
+[[case]]
+input = "空気"
+mode = "hiragana"
+expected = "くうき"
+
+[[case]]
+input = "空いている"
+mode = "hiragana"
+expected = "あいている"
+
+[[case]]
+input = "空き缶"
+mode = "hiragana"
+expected = "あきかん"
+
+[[case]]
+input = "青空"
+mode = "hiragana"
+expected = "あおぞら"
+
+[[case]]
+input = "空白"
+mode = "hiragana"
+expected = "くうはく"
+
+[[case]]
+input = "空腹"
+mode = "hiragana"
+expected = "くうふく"
+
+[[case]]
+input = "角を曲がる"
+mode = "hiragana"
+expected = "かどをまがる"
+
+[[case]]
+input = "鹿の角"
+mode = "hiragana"
+expected = "しかのつの"
+
+[[case]]
+input = "三角"
+mode = "hiragana"
+expected = "さんかく"
+
+[[case]]
+input = "角度"
+mode = "hiragana"
+expected = "かくど"
+
+[[case]]
+input = "四角"
+mode = "hiragana"
+expected = "しかく"
+
+[[case]]
+input = "街角"
+mode = "hiragana"
+expected = "まちかど"
+
+[[case]]
+input = "風が吹く"
+mode = "hiragana"
+expected = "かぜがふく"
+
+[[case]]
+input = "和風"
+mode = "hiragana"
+expected = "わふう"
+
+[[case]]
+input = "台風"
+mode = "hiragana"
+expected = "たいふう"
+
+[[case]]
+input = "風邪"
+mode = "hiragana"
+expected = "かぜ"
+
+[[case]]
+input = "そんな風に"
+mode = "hiragana"
+expected = "そんなふうに"
+
+[[case]]
+input = "風呂"
+mode = "hiragana"
+expected = "ふろ"
+
+[[case]]
+input = "風船"
+mode = "hiragana"
+expected = "ふうせん"
+
+[[case]]
+input = "夏風"
+mode = "hiragana"
+expected = "なつかぜ"
+
+[[case]]
+input = "重い荷物"
+mode = "hiragana"
+expected = "おもいにもつ"
+
+[[case]]
+input = "二重"
+mode = "hiragana"
+expected = "にじゅう"
+
+[[case]]
+input = "重ねる"
+mode = "hiragana"
+expected = "かさねる"
+
+[[case]]
+input = "重大"
+mode = "hiragana"
+expected = "じゅうだい"
+
+[[case]]
+input = "体重"
+mode = "hiragana"
+expected = "たいじゅう"
+
+[[case]]
+input = "重要"
+mode = "hiragana"
+expected = "じゅうよう"
+
+[[case]]
+input = "慎重"
+mode = "hiragana"
+expected = "しんちょう"
+
+[[case]]
+input = "重ね着"
+mode = "hiragana"
+expected = "かさねぎ"
+
+[[case]]
+input = "株式市場"
+mode = "hiragana"
+expected = "かぶしきしじょう"
+
+[[case]]
+input = "市場調査"
+mode = "hiragana"
+expected = "しじょうちょうさ"
+
+[[case]]
+input = "海外市場"
+mode = "hiragana"
+expected = "かいがいしじょう"
+
+[[case]]
+input = "祭りを見物する"
+mode = "hiragana"
+expected = "まつりをけんぶつする"
+
+[[case]]
+input = "見物客"
+mode = "hiragana"
+expected = "けんぶつきゃく"
+
+[[case]]
+input = "これは見物だ"
+mode = "hiragana"
+expected = "これはみものだ"
+
+[[case]]
+input = "色紙で折る"
+mode = "hiragana"
+expected = "いろがみでおる"
+
+[[case]]
+input = "サイン色紙"
+mode = "hiragana"
+expected = "サインしきし"
+
+[[case]]
+input = "一時停止"
+mode = "hiragana"
+expected = "いちじていし"
+
+[[case]]
+input = "一時間"
+mode = "hiragana"
+expected = "いちじかん"
+
+[[case]]
+input = "一時期"
+mode = "hiragana"
+expected = "いちじき"
+
+[[case]]
+input = "一時的に"
+mode = "hiragana"
+expected = "いちじてきに"
+
+[[case]]
+input = "大事な話"
+mode = "hiragana"
+expected = "だいじなはなし"
+
+[[case]]
+input = "大事にする"
+mode = "hiragana"
+expected = "だいじにする"
+
+[[case]]
+input = "大事件"
+mode = "hiragana"
+expected = "だいじけん"
+
+[[case]]
+input = "大事故"
+mode = "hiragana"
+expected = "だいじこ"
+
+[[case]]
+input = "学校に行った"
+mode = "hiragana"
+expected = "がっこうにいった"
+
+[[case]]
+input = "試験を行った"
+mode = "hiragana"
+expected = "しけんをおこなった"
+
+[[case]]
+input = "実験を行った"
+mode = "hiragana"
+expected = "じっけんをおこなった"
+
+[[case]]
+input = "旅行に行った"
+mode = "hiragana"
+expected = "りょこうにいった"
+
+[[case]]
+input = "会議を行った"
+mode = "hiragana"
+expected = "かいぎをおこなった"
+
+[[case]]
+input = "買い物に行った"
+mode = "hiragana"
+expected = "かいものにいった"
+
+[[case]]
+input = "部屋に入る"
+mode = "hiragana"
+expected = "へやにはいる"
+
+[[case]]
+input = "気に入る"
+mode = "hiragana"
+expected = "きにいる"
+
+[[case]]
+input = "お気に入り"
+mode = "hiragana"
+expected = "おきにいり"
+
+[[case]]
+input = "風呂に入る"
+mode = "hiragana"
+expected = "ふろにはいる"
+
+[[case]]
+input = "眠りに入る"
+mode = "hiragana"
+expected = "ねむりにはいる"
+
+[[case]]
+input = "入れる"
+mode = "hiragana"
+expected = "いれる"
+
+[[case]]
+input = "扉が開く"
+mode = "hiragana"
+expected = "とびらがあく"
+
+[[case]]
+input = "本を開く"
+mode = "hiragana"
+expected = "ほんをひらく"
+
+[[case]]
+input = "口を開く"
+mode = "hiragana"
+expected = "くちをひらく"
+
+[[case]]
+input = "窓を開ける"
+mode = "hiragana"
+expected = "まどをあける"
+
+[[case]]
+input = "店を開く"
+mode = "hiragana"
+expected = "みせをひらく"
+
+[[case]]
+input = "開始"
+mode = "hiragana"
+expected = "かいし"
+
+[[case]]
+input = "人間が悪い"
+mode = "hiragana"
+expected = "にんげんがわるい"
+
+[[case]]
+input = "世間が悪い"
+mode = "hiragana"
+expected = "せけんがわるい"
+
+[[case]]
+input = "ドアが開く、本を開く"
+mode = "hiragana"
+expected = "ドアがあく、ほんをひらく"
+
+[[case]]
+input = "穴は開いた"
+mode = "hiragana"
+expected = "あなはあいた"
+
+[[case]]
+input = "下手な歌だったが、下手から退場した"
+mode = "hiragana"
+expected = "へたなうただったが、へたからたいじょうした"
+
+[[case]]
+input = "このタイミングで間が悪い"
+mode = "hiragana"
+expected = "このタイミングでまがわるい"
+
+[[case]]
+input = "マジ間が悪かったな"
+mode = "hiragana"
+expected = "マジまがわるかったな"

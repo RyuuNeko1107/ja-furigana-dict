@@ -404,8 +404,8 @@ note = "神: 単独 = カミ、神社 / 神話 = ジン / シン"
 [[case]]
 input = "ドアが開く、本を開く"
 mode = "hiragana"
-expected = "ドアがひらく、ほんをひらく"
-note = "開く: ひらく (default、Lindera 動詞活用)"
+expected = "ドアがあく、ほんをひらく"
+note = "開く: 本を開く=ひらく (default)、 ドアが開く=あく (自動詞、 2026-10-14)"
 
 [[case]]
 input = "誤りを直す、姿勢を直す"
