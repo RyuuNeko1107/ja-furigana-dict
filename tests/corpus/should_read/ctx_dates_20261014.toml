@@ -1,0 +1,656 @@
+# 2026-10-14 日付・月・曜日・特殊な日 (1〜31日 / 1〜12月 / 曜日 / 二日酔い・三日月・大晦日 等) と 17/19/27/29 日 (しち/く)
+
+[[case]]
+input = "2日です"
+mode = "hiragana"
+expected = "ふつかです"
+
+[[case]]
+input = "二日です"
+mode = "hiragana"
+expected = "ふつかです"
+
+[[case]]
+input = "3日です"
+mode = "hiragana"
+expected = "みっかです"
+
+[[case]]
+input = "三日です"
+mode = "hiragana"
+expected = "みっかです"
+
+[[case]]
+input = "4日です"
+mode = "hiragana"
+expected = "よっかです"
+
+[[case]]
+input = "四日です"
+mode = "hiragana"
+expected = "よっかです"
+
+[[case]]
+input = "5日です"
+mode = "hiragana"
+expected = "いつかです"
+
+[[case]]
+input = "五日です"
+mode = "hiragana"
+expected = "いつかです"
+
+[[case]]
+input = "6日です"
+mode = "hiragana"
+expected = "むいかです"
+
+[[case]]
+input = "六日です"
+mode = "hiragana"
+expected = "むいかです"
+
+[[case]]
+input = "7日です"
+mode = "hiragana"
+expected = "なのかです"
+
+[[case]]
+input = "七日です"
+mode = "hiragana"
+expected = "なのかです"
+
+[[case]]
+input = "8日です"
+mode = "hiragana"
+expected = "ようかです"
+
+[[case]]
+input = "八日です"
+mode = "hiragana"
+expected = "ようかです"
+
+[[case]]
+input = "9日です"
+mode = "hiragana"
+expected = "ここのかです"
+
+[[case]]
+input = "九日です"
+mode = "hiragana"
+expected = "ここのかです"
+
+[[case]]
+input = "10日です"
+mode = "hiragana"
+expected = "とおかです"
+
+[[case]]
+input = "十日です"
+mode = "hiragana"
+expected = "とおかです"
+
+[[case]]
+input = "11日です"
+mode = "hiragana"
+expected = "じゅういちにちです"
+
+[[case]]
+input = "十一日です"
+mode = "hiragana"
+expected = "じゅういちにちです"
+
+[[case]]
+input = "12日です"
+mode = "hiragana"
+expected = "じゅうににちです"
+
+[[case]]
+input = "十二日です"
+mode = "hiragana"
+expected = "じゅうににちです"
+
+[[case]]
+input = "13日です"
+mode = "hiragana"
+expected = "じゅうさんにちです"
+
+[[case]]
+input = "十三日です"
+mode = "hiragana"
+expected = "じゅうさんにちです"
+
+[[case]]
+input = "14日です"
+mode = "hiragana"
+expected = "じゅうよっかです"
+
+[[case]]
+input = "十四日です"
+mode = "hiragana"
+expected = "じゅうよっかです"
+
+[[case]]
+input = "15日です"
+mode = "hiragana"
+expected = "じゅうごにちです"
+
+[[case]]
+input = "十五日です"
+mode = "hiragana"
+expected = "じゅうごにちです"
+
+[[case]]
+input = "16日です"
+mode = "hiragana"
+expected = "じゅうろくにちです"
+
+[[case]]
+input = "十六日です"
+mode = "hiragana"
+expected = "じゅうろくにちです"
+
+[[case]]
+input = "18日です"
+mode = "hiragana"
+expected = "じゅうはちにちです"
+
+[[case]]
+input = "十八日です"
+mode = "hiragana"
+expected = "じゅうはちにちです"
+
+[[case]]
+input = "20日です"
+mode = "hiragana"
+expected = "はつかです"
+
+[[case]]
+input = "二十日です"
+mode = "hiragana"
+expected = "はつかです"
+
+[[case]]
+input = "21日です"
+mode = "hiragana"
+expected = "にじゅういちにちです"
+
+[[case]]
+input = "二十一日です"
+mode = "hiragana"
+expected = "にじゅういちにちです"
+
+[[case]]
+input = "22日です"
+mode = "hiragana"
+expected = "にじゅうににちです"
+
+[[case]]
+input = "二十二日です"
+mode = "hiragana"
+expected = "にじゅうににちです"
+
+[[case]]
+input = "23日です"
+mode = "hiragana"
+expected = "にじゅうさんにちです"
+
+[[case]]
+input = "二十三日です"
+mode = "hiragana"
+expected = "にじゅうさんにちです"
+
+[[case]]
+input = "24日です"
+mode = "hiragana"
+expected = "にじゅうよっかです"
+
+[[case]]
+input = "二十四日です"
+mode = "hiragana"
+expected = "にじゅうよっかです"
+
+[[case]]
+input = "25日です"
+mode = "hiragana"
+expected = "にじゅうごにちです"
+
+[[case]]
+input = "二十五日です"
+mode = "hiragana"
+expected = "にじゅうごにちです"
+
+[[case]]
+input = "26日です"
+mode = "hiragana"
+expected = "にじゅうろくにちです"
+
+[[case]]
+input = "二十六日です"
+mode = "hiragana"
+expected = "にじゅうろくにちです"
+
+[[case]]
+input = "28日です"
+mode = "hiragana"
+expected = "にじゅうはちにちです"
+
+[[case]]
+input = "二十八日です"
+mode = "hiragana"
+expected = "にじゅうはちにちです"
+
+[[case]]
+input = "30日です"
+mode = "hiragana"
+expected = "さんじゅうにちです"
+
+[[case]]
+input = "三十日です"
+mode = "hiragana"
+expected = "さんじゅうにちです"
+
+[[case]]
+input = "31日です"
+mode = "hiragana"
+expected = "さんじゅういちにちです"
+
+[[case]]
+input = "三十一日です"
+mode = "hiragana"
+expected = "さんじゅういちにちです"
+
+[[case]]
+input = "1月です"
+mode = "hiragana"
+expected = "いちがつです"
+
+[[case]]
+input = "一月です"
+mode = "hiragana"
+expected = "いちがつです"
+
+[[case]]
+input = "2月です"
+mode = "hiragana"
+expected = "にがつです"
+
+[[case]]
+input = "二月です"
+mode = "hiragana"
+expected = "にがつです"
+
+[[case]]
+input = "3月です"
+mode = "hiragana"
+expected = "さんがつです"
+
+[[case]]
+input = "三月です"
+mode = "hiragana"
+expected = "さんがつです"
+
+[[case]]
+input = "4月です"
+mode = "hiragana"
+expected = "しがつです"
+
+[[case]]
+input = "四月です"
+mode = "hiragana"
+expected = "しがつです"
+
+[[case]]
+input = "5月です"
+mode = "hiragana"
+expected = "ごがつです"
+
+[[case]]
+input = "五月です"
+mode = "hiragana"
+expected = "ごがつです"
+
+[[case]]
+input = "6月です"
+mode = "hiragana"
+expected = "ろくがつです"
+
+[[case]]
+input = "六月です"
+mode = "hiragana"
+expected = "ろくがつです"
+
+[[case]]
+input = "7月です"
+mode = "hiragana"
+expected = "しちがつです"
+
+[[case]]
+input = "七月です"
+mode = "hiragana"
+expected = "しちがつです"
+
+[[case]]
+input = "8月です"
+mode = "hiragana"
+expected = "はちがつです"
+
+[[case]]
+input = "八月です"
+mode = "hiragana"
+expected = "はちがつです"
+
+[[case]]
+input = "9月です"
+mode = "hiragana"
+expected = "くがつです"
+
+[[case]]
+input = "九月です"
+mode = "hiragana"
+expected = "くがつです"
+
+[[case]]
+input = "10月です"
+mode = "hiragana"
+expected = "じゅうがつです"
+
+[[case]]
+input = "十月です"
+mode = "hiragana"
+expected = "じゅうがつです"
+
+[[case]]
+input = "11月です"
+mode = "hiragana"
+expected = "じゅういちがつです"
+
+[[case]]
+input = "十一月です"
+mode = "hiragana"
+expected = "じゅういちがつです"
+
+[[case]]
+input = "12月です"
+mode = "hiragana"
+expected = "じゅうにがつです"
+
+[[case]]
+input = "十二月です"
+mode = "hiragana"
+expected = "じゅうにがつです"
+
+[[case]]
+input = "月曜日"
+mode = "hiragana"
+expected = "げつようび"
+
+[[case]]
+input = "火曜日"
+mode = "hiragana"
+expected = "かようび"
+
+[[case]]
+input = "水曜日"
+mode = "hiragana"
+expected = "すいようび"
+
+[[case]]
+input = "木曜日"
+mode = "hiragana"
+expected = "もくようび"
+
+[[case]]
+input = "金曜日"
+mode = "hiragana"
+expected = "きんようび"
+
+[[case]]
+input = "土曜日"
+mode = "hiragana"
+expected = "どようび"
+
+[[case]]
+input = "日曜日"
+mode = "hiragana"
+expected = "にちようび"
+
+[[case]]
+input = "二十歳"
+mode = "hiragana"
+expected = "はたち"
+
+[[case]]
+input = "何日"
+mode = "hiragana"
+expected = "なんにち"
+
+[[case]]
+input = "何月"
+mode = "hiragana"
+expected = "なんがつ"
+
+[[case]]
+input = "今日は何日"
+mode = "hiragana"
+expected = "きょうはなんにち"
+
+[[case]]
+input = "十月一日"
+mode = "hiragana"
+expected = "じゅうがつついたち"
+
+[[case]]
+input = "10月1日"
+mode = "hiragana"
+expected = "じゅうがつついたち"
+
+[[case]]
+input = "3月3日"
+mode = "hiragana"
+expected = "さんがつみっか"
+
+[[case]]
+input = "12月25日"
+mode = "hiragana"
+expected = "じゅうにがつにじゅうごにち"
+
+[[case]]
+input = "1月1日"
+mode = "hiragana"
+expected = "いちがつついたち"
+
+[[case]]
+input = "7月7日"
+mode = "hiragana"
+expected = "しちがつなのか"
+
+[[case]]
+input = "9月9日"
+mode = "hiragana"
+expected = "くがつここのか"
+
+[[case]]
+input = "4月4日"
+mode = "hiragana"
+expected = "しがつよっか"
+
+[[case]]
+input = "毎日"
+mode = "hiragana"
+expected = "まいにち"
+
+[[case]]
+input = "二日酔い"
+mode = "hiragana"
+expected = "ふつかよい"
+
+[[case]]
+input = "三日坊主"
+mode = "hiragana"
+expected = "みっかぼうず"
+
+[[case]]
+input = "三日月"
+mode = "hiragana"
+expected = "みかづき"
+
+[[case]]
+input = "七日間"
+mode = "hiragana"
+expected = "なのかかん"
+
+[[case]]
+input = "十日間"
+mode = "hiragana"
+expected = "とおかかん"
+
+[[case]]
+input = "二十日間"
+mode = "hiragana"
+expected = "はつかかん"
+
+[[case]]
+input = "一日中"
+mode = "hiragana"
+expected = "いちにちじゅう"
+
+[[case]]
+input = "朔日"
+mode = "hiragana"
+expected = "ついたち"
+
+[[case]]
+input = "晦日"
+mode = "hiragana"
+expected = "みそか"
+
+[[case]]
+input = "大晦日"
+mode = "hiragana"
+expected = "おおみそか"
+
+[[case]]
+input = "元日"
+mode = "hiragana"
+expected = "がんじつ"
+
+[[case]]
+input = "元旦"
+mode = "hiragana"
+expected = "がんたん"
+
+[[case]]
+input = "お正月"
+mode = "hiragana"
+expected = "おしょうがつ"
+
+[[case]]
+input = "七夕"
+mode = "hiragana"
+expected = "たなばた"
+
+[[case]]
+input = "明後日"
+mode = "hiragana"
+expected = "あさって"
+
+[[case]]
+input = "一昨日"
+mode = "hiragana"
+expected = "おととい"
+
+[[case]]
+input = "昨日"
+mode = "hiragana"
+expected = "きのう"
+
+[[case]]
+input = "今朝"
+mode = "hiragana"
+expected = "けさ"
+
+[[case]]
+input = "今晩"
+mode = "hiragana"
+expected = "こんばん"
+
+[[case]]
+input = "今夜"
+mode = "hiragana"
+expected = "こんや"
+
+[[case]]
+input = "17日に会う"
+mode = "hiragana"
+expected = "じゅうしちにちにあう"
+
+[[case]]
+input = "19日から"
+mode = "hiragana"
+expected = "じゅうくにちから"
+
+[[case]]
+input = "27日まで"
+mode = "hiragana"
+expected = "にじゅうしちにちまで"
+
+[[case]]
+input = "29日の夜"
+mode = "hiragana"
+expected = "にじゅうくにちのよる"
+
+[[case]]
+input = "17日間"
+mode = "hiragana"
+expected = "じゅうしちにちかん"
+
+[[case]]
+input = "19日間"
+mode = "hiragana"
+expected = "じゅうくにちかん"
+
+[[case]]
+input = "27日間"
+mode = "hiragana"
+expected = "にじゅうしちにちかん"
+
+[[case]]
+input = "29日間"
+mode = "hiragana"
+expected = "にじゅうくにちかん"
+
+[[case]]
+input = "17日目"
+mode = "hiragana"
+expected = "じゅうしちにちめ"
+
+[[case]]
+input = "17日前"
+mode = "hiragana"
+expected = "じゅうしちにちまえ"
+
+[[case]]
+input = "7月17日"
+mode = "hiragana"
+expected = "しちがつじゅうしちにち"
+
+[[case]]
+input = "107日"
+mode = "hiragana"
+expected = "ひゃくななにち"
+
+[[case]]
+input = "87日"
+mode = "hiragana"
+expected = "はちじゅうななにち"
+
+[[case]]
+input = "7日"
+mode = "hiragana"
+expected = "なのか"
+
+[[case]]
+input = "9日"
+mode = "hiragana"
+expected = "ここのか"

@@ -356,7 +356,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 | ファイル | エントリ数 | ルール数 | サイズ | 用途 |
 |---|---:|---:|---:|---|
 | [`rules/numbers/counters/objects.toml`](rules/numbers/counters/objects.toml) | 90 | 176 | 17 KB | 物を数える助数詞 (本 / 匹 / 杯 / 個 / 歳 / 冊、 連濁 / 促音化) |
-| [`rules/numbers/counters/time.toml`](rules/numbers/counters/time.toml) | 27 | 40 | 5.3 KB | 時間系助数詞 (月 / 日 / 時 / 分 / 週間 / 回、 4/7/9 の特殊読み + カナ末尾置換) |
+| [`rules/numbers/counters/time.toml`](rules/numbers/counters/time.toml) | 27 | 40 | 5.6 KB | 時間系助数詞 (月 / 日 / 時 / 分 / 週間 / 回、 4/7/9 の特殊読み + カナ末尾置換) |
 | [`rules/numbers/numeric_phrases.toml`](rules/numbers/numeric_phrases.toml) | 37 | 37 | 1.2 KB | 数字を含む例外語句 (二十歳→ハタチ / 明後日→アサッテ 等、 助数詞ルールより先に確定) |
 | [`rules/numbers/days.toml`](rules/numbers/days.toml) | 31 | 31 | 978 B | 1〜31 日の特殊読み (1→ツイタチ / 20→ハツカ 等) |
 | [`rules/numbers/scales.toml`](rules/numbers/scales.toml) | 19 | 19 | 1.0 KB | 大数スケール (万 / 億 / 兆 / 京 / 垓 / 不可思議 / 無量大数 等、 大→小順、 N+漢字単位 連結用) |
@@ -407,7 +407,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 13723 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 13854 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -419,6 +419,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/corpus_20260613.toml`](tests/corpus/should_read/corpus_20260613.toml) | 6 |
 |  | [`tests/corpus/should_read/counter_kanji_numeral_20260617.toml`](tests/corpus/should_read/counter_kanji_numeral_20260617.toml) | 13 |
 |  | [`tests/corpus/should_read/ctx_counters_20261014.toml`](tests/corpus/should_read/ctx_counters_20261014.toml) | 215 |
+|  | [`tests/corpus/should_read/ctx_dates_20261014.toml`](tests/corpus/should_read/ctx_dates_20261014.toml) | 131 |
 |  | [`tests/corpus/should_read/ctx_sense2_20261014.toml`](tests/corpus/should_read/ctx_sense2_20261014.toml) | 161 |
 |  | [`tests/corpus/should_read/ctx_sense3_20261014.toml`](tests/corpus/should_read/ctx_sense3_20261014.toml) | 244 |
 |  | [`tests/corpus/should_read/ctx_sense_20261014.toml`](tests/corpus/should_read/ctx_sense_20261014.toml) | 95 |
