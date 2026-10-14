@@ -11,3 +11,39 @@ description = "人を数える助数詞 (人、 1=ヒトリ / 2=フタリ の特
 [counter."人"]
 default = "ニン"
 specials = { "1" = "ヒトリ", "2" = "フタリ" }
+
+# 4人 = よにん (4人組 / 14人 / 24人)。 7人 は しちにん / ななにん どちらも通用するので触らない
+[[counter."人".replacements]]
+last_digit = [4]
+from = "ヨン"
+to = "ヨ"
+
+# 4人前 = よにんまえ
+[counter."人前"]
+default = "ニンマエ"
+specials = { "1" = "イチニンマエ", "2" = "ニニンマエ" }
+
+[[counter."人前".replacements]]
+last_digit = [4]
+from = "ヨン"
+to = "ヨ"
+
+# 4人組 = よにんぐみ
+[counter."人組"]
+default = "ニングミ"
+specials = { "1" = "ヒトリグミ", "2" = "フタリグミ" }
+
+[[counter."人組".replacements]]
+last_digit = [4]
+from = "ヨン"
+to = "ヨ"
+
+# 4人中 = よにんちゅう
+[counter."人中"]
+default = "ニンチュウ"
+specials = { "1" = "ヒトリチュウ", "2" = "フタリチュウ" }
+
+[[counter."人中".replacements]]
+last_digit = [4]
+from = "ヨン"
+to = "ヨ"

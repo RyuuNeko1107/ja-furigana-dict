@@ -28,10 +28,10 @@ git に commit されている master HEAD の状態を基準にする。
 | [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,705** | **133 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **3,537** | **98 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **5,875** | **269 KB** |
-| [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,796** | **393 KB** |
+| [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,796** | **394 KB** |
 | [**異体字**](#異体字) (`rules/compat.toml`) | **436** | **6.1 KB** |
-| [**エンジンルール**](#エンジンルール) (`rules/`) | **1,035** | **67 KB** |
-| **合計** | **89,493** | **3.03 MB** |
+| [**エンジンルール**](#エンジンルール) (`rules/`) | **1,038** | **68 KB** |
+| **合計** | **89,496** | **3.04 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -329,7 +329,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 
 | ファイル | 文字数 | ルール数 | サイズ | 用途 |
 |---|---:|---:|---:|---|
-| [`core/kanji/overrides.toml`](core/kanji/overrides.toml) | 2,796 | 4,491 | 393 KB | 単漢字 default override + 文脈分岐 reading |
+| [`core/kanji/overrides.toml`](core/kanji/overrides.toml) | 2,796 | 4,492 | 394 KB | 単漢字 default override + 文脈分岐 reading |
 
 ### 異体字
 
@@ -345,7 +345,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 `rules/` — エンジン挙動 (助数詞 / 文脈 / 後処理 等) を制御するルール群。 lib コードに embed されるのではなく、 ここで宣言的に外部化されている。
 
 <!-- AUTO-GENERATED:RULES:BEGIN -->
-**合計**: 1,035 エントリ / 1,106 ルール / 67 KB (genre 2 区分)
+**合計**: 1,038 エントリ / 1,109 ルール / 68 KB (genre 2 区分)
 
 #### 数値系
 
@@ -362,10 +362,10 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 | [`rules/numbers/scales.toml`](rules/numbers/scales.toml) | 19 | 19 | 1.0 KB | 大数スケール (万 / 億 / 兆 / 京 / 垓 / 不可思議 / 無量大数 等、 大→小順、 N+漢字単位 連結用) |
 | [`rules/numbers/counters/places.toml`](rules/numbers/counters/places.toml) | 4 | 9 | 1.2 KB | 場所を数える助数詞 (階 / ヶ所 / 箇所 / か所、 連濁 / 促音化) |
 | [`rules/numbers/counters/simple.toml`](rules/numbers/counters/simple.toml) | 40 | 5 | 1.3 KB | 単純サフィックス助数詞 (円 / 点 / 度 / 名 / 話 等、 数値カナ + value 連結のみ) |
+| [`rules/numbers/counters/people.toml`](rules/numbers/counters/people.toml) | 4 | 4 | 870 B | 人を数える助数詞 (人、 1=ヒトリ / 2=フタリ の特殊読み) |
 | [`rules/numbers/counters/percent.toml`](rules/numbers/counters/percent.toml) | 2 | 4 | 583 B | パーセンテージ (% / ％、 1/6/8/0 で促音化 + パーセント) |
-| [`rules/numbers/counters/people.toml`](rules/numbers/counters/people.toml) | 1 | 1 | 225 B | 人を数える助数詞 (人、 1=ヒトリ / 2=フタリ の特殊読み) |
 | [`rules/numbers/counters/recursive.toml`](rules/numbers/counters/recursive.toml) | 1 | 1 | 202 B | 再帰モード助数詞 (個目 / 階目 等、 既存助数詞解決後に末尾連結) |
-| **小計** (10 ファイル) | **255** | **326** | **30 KB** | |
+| **小計** (10 ファイル) | **258** | **329** | **31 KB** | |
 
 #### テキスト系
 
@@ -407,7 +407,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 13948 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 14065 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -425,6 +425,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/ctx_sense2_20261014.toml`](tests/corpus/should_read/ctx_sense2_20261014.toml) | 161 |
 |  | [`tests/corpus/should_read/ctx_sense3_20261014.toml`](tests/corpus/should_read/ctx_sense3_20261014.toml) | 244 |
 |  | [`tests/corpus/should_read/ctx_sense_20261014.toml`](tests/corpus/should_read/ctx_sense_20261014.toml) | 95 |
+|  | [`tests/corpus/should_read/ctx_verbs_people_20261014.toml`](tests/corpus/should_read/ctx_verbs_people_20261014.toml) | 117 |
 |  | [`tests/corpus/should_read/dict_chu_20260918.toml`](tests/corpus/should_read/dict_chu_20260918.toml) | 11 |
 |  | [`tests/corpus/should_read/dict_split_guard_20260918.toml`](tests/corpus/should_read/dict_split_guard_20260918.toml) | 63 |
 |  | [`tests/corpus/should_read/extended.toml`](tests/corpus/should_read/extended.toml) | 94 |

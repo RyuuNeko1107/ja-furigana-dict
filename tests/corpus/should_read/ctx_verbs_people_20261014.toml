@@ -1,0 +1,586 @@
+# 2026-10-14 動詞・形容詞の多義語 (空く/行う/生きる/上る/下りる ほか) と 4人 = よにん (人組/人前/人中)
+
+[[case]]
+input = "席が空いている"
+mode = "hiragana"
+expected = "せきがあいている"
+
+[[case]]
+input = "お腹が空いた"
+mode = "hiragana"
+expected = "おなかがすいた"
+
+[[case]]
+input = "腹が空く"
+mode = "hiragana"
+expected = "はらがすく"
+
+[[case]]
+input = "手が空いたら連絡して"
+mode = "hiragana"
+expected = "てがあいたられんらくして"
+
+[[case]]
+input = "空き時間"
+mode = "hiragana"
+expected = "あきじかん"
+
+[[case]]
+input = "試験を行う"
+mode = "hiragana"
+expected = "しけんをおこなう"
+
+[[case]]
+input = "行われる"
+mode = "hiragana"
+expected = "おこなわれる"
+
+[[case]]
+input = "行いを改める"
+mode = "hiragana"
+expected = "おこないをあらためる"
+
+[[case]]
+input = "行ってきます"
+mode = "hiragana"
+expected = "いってきます"
+
+[[case]]
+input = "行って帰る"
+mode = "hiragana"
+expected = "いってかえる"
+
+[[case]]
+input = "行く末"
+mode = "hiragana"
+expected = "ゆくすえ"
+
+[[case]]
+input = "行方"
+mode = "hiragana"
+expected = "ゆくえ"
+
+[[case]]
+input = "行き先"
+mode = "hiragana"
+expected = "いきさき"
+
+[[case]]
+input = "行き止まり"
+mode = "hiragana"
+expected = "いきどまり"
+
+[[case]]
+input = "銀行"
+mode = "hiragana"
+expected = "ぎんこう"
+
+[[case]]
+input = "行列"
+mode = "hiragana"
+expected = "ぎょうれつ"
+
+[[case]]
+input = "行為"
+mode = "hiragana"
+expected = "こうい"
+
+[[case]]
+input = "行動"
+mode = "hiragana"
+expected = "こうどう"
+
+[[case]]
+input = "行事"
+mode = "hiragana"
+expected = "ぎょうじ"
+
+[[case]]
+input = "行政"
+mode = "hiragana"
+expected = "ぎょうせい"
+
+[[case]]
+input = "生きている"
+mode = "hiragana"
+expected = "いきている"
+
+[[case]]
+input = "生まれ変わる"
+mode = "hiragana"
+expected = "うまれかわる"
+
+[[case]]
+input = "生える"
+mode = "hiragana"
+expected = "はえる"
+
+[[case]]
+input = "生やす"
+mode = "hiragana"
+expected = "はやす"
+
+[[case]]
+input = "生む"
+mode = "hiragana"
+expected = "うむ"
+
+[[case]]
+input = "生中継"
+mode = "hiragana"
+expected = "なまちゅうけい"
+
+[[case]]
+input = "階段を上る"
+mode = "hiragana"
+expected = "かいだんをのぼる"
+
+[[case]]
+input = "値段が上がる"
+mode = "hiragana"
+expected = "ねだんがあがる"
+
+[[case]]
+input = "川を上る"
+mode = "hiragana"
+expected = "かわをのぼる"
+
+[[case]]
+input = "手を上げる"
+mode = "hiragana"
+expected = "てをあげる"
+
+[[case]]
+input = "川を下る"
+mode = "hiragana"
+expected = "かわをくだる"
+
+[[case]]
+input = "階段を下りる"
+mode = "hiragana"
+expected = "かいだんをおりる"
+
+[[case]]
+input = "幕が下りる"
+mode = "hiragana"
+expected = "まくがおりる"
+
+[[case]]
+input = "許可が下りる"
+mode = "hiragana"
+expected = "きょかがおりる"
+
+[[case]]
+input = "手を下ろす"
+mode = "hiragana"
+expected = "てをおろす"
+
+[[case]]
+input = "明るい"
+mode = "hiragana"
+expected = "あかるい"
+
+[[case]]
+input = "夜が明ける"
+mode = "hiragana"
+expected = "よがあける"
+
+[[case]]
+input = "窓を開ける"
+mode = "hiragana"
+expected = "まどをあける"
+
+[[case]]
+input = "入れる"
+mode = "hiragana"
+expected = "いれる"
+
+[[case]]
+input = "入り口"
+mode = "hiragana"
+expected = "いりぐち"
+
+[[case]]
+input = "入学"
+mode = "hiragana"
+expected = "にゅうがく"
+
+[[case]]
+input = "気に入った"
+mode = "hiragana"
+expected = "きにいった"
+
+[[case]]
+input = "出る"
+mode = "hiragana"
+expected = "でる"
+
+[[case]]
+input = "出す"
+mode = "hiragana"
+expected = "だす"
+
+[[case]]
+input = "出口"
+mode = "hiragana"
+expected = "でぐち"
+
+[[case]]
+input = "出身"
+mode = "hiragana"
+expected = "しゅっしん"
+
+[[case]]
+input = "出席"
+mode = "hiragana"
+expected = "しゅっせき"
+
+[[case]]
+input = "出かける"
+mode = "hiragana"
+expected = "でかける"
+
+[[case]]
+input = "出来る"
+mode = "hiragana"
+expected = "できる"
+
+[[case]]
+input = "出来事"
+mode = "hiragana"
+expected = "できごと"
+
+[[case]]
+input = "立つ"
+mode = "hiragana"
+expected = "たつ"
+
+[[case]]
+input = "立ち上がる"
+mode = "hiragana"
+expected = "たちあがる"
+
+[[case]]
+input = "立派"
+mode = "hiragana"
+expected = "りっぱ"
+
+[[case]]
+input = "通る"
+mode = "hiragana"
+expected = "とおる"
+
+[[case]]
+input = "通う"
+mode = "hiragana"
+expected = "かよう"
+
+[[case]]
+input = "通り"
+mode = "hiragana"
+expected = "とおり"
+
+[[case]]
+input = "通信"
+mode = "hiragana"
+expected = "つうしん"
+
+[[case]]
+input = "通常"
+mode = "hiragana"
+expected = "つうじょう"
+
+[[case]]
+input = "思う"
+mode = "hiragana"
+expected = "おもう"
+
+[[case]]
+input = "思い出"
+mode = "hiragana"
+expected = "おもいで"
+
+[[case]]
+input = "思想"
+mode = "hiragana"
+expected = "しそう"
+
+[[case]]
+input = "見える"
+mode = "hiragana"
+expected = "みえる"
+
+[[case]]
+input = "見つける"
+mode = "hiragana"
+expected = "みつける"
+
+[[case]]
+input = "見方"
+mode = "hiragana"
+expected = "みかた"
+
+[[case]]
+input = "見物"
+mode = "hiragana"
+expected = "けんぶつ"
+
+[[case]]
+input = "聞こえる"
+mode = "hiragana"
+expected = "きこえる"
+
+[[case]]
+input = "聞く"
+mode = "hiragana"
+expected = "きく"
+
+[[case]]
+input = "言葉"
+mode = "hiragana"
+expected = "ことば"
+
+[[case]]
+input = "言う"
+mode = "hiragana"
+expected = "いう"
+
+[[case]]
+input = "話し合い"
+mode = "hiragana"
+expected = "はなしあい"
+
+[[case]]
+input = "話題"
+mode = "hiragana"
+expected = "わだい"
+
+[[case]]
+input = "受け取る"
+mode = "hiragana"
+expected = "うけとる"
+
+[[case]]
+input = "受験"
+mode = "hiragana"
+expected = "じゅけん"
+
+[[case]]
+input = "乗り換え"
+mode = "hiragana"
+expected = "のりかえ"
+
+[[case]]
+input = "乗車"
+mode = "hiragana"
+expected = "じょうしゃ"
+
+[[case]]
+input = "止まる"
+mode = "hiragana"
+expected = "とまる"
+
+[[case]]
+input = "泊まる"
+mode = "hiragana"
+expected = "とまる"
+
+[[case]]
+input = "変える"
+mode = "hiragana"
+expected = "かえる"
+
+[[case]]
+input = "変わる"
+mode = "hiragana"
+expected = "かわる"
+
+[[case]]
+input = "変更"
+mode = "hiragana"
+expected = "へんこう"
+
+[[case]]
+input = "帰る"
+mode = "hiragana"
+expected = "かえる"
+
+[[case]]
+input = "返す"
+mode = "hiragana"
+expected = "かえす"
+
+[[case]]
+input = "返事"
+mode = "hiragana"
+expected = "へんじ"
+
+[[case]]
+input = "戻る"
+mode = "hiragana"
+expected = "もどる"
+
+[[case]]
+input = "続く"
+mode = "hiragana"
+expected = "つづく"
+
+[[case]]
+input = "続ける"
+mode = "hiragana"
+expected = "つづける"
+
+[[case]]
+input = "終わる"
+mode = "hiragana"
+expected = "おわる"
+
+[[case]]
+input = "始まる"
+mode = "hiragana"
+expected = "はじまる"
+
+[[case]]
+input = "始める"
+mode = "hiragana"
+expected = "はじめる"
+
+[[case]]
+input = "夜が明ける"
+mode = "hiragana"
+expected = "よがあける"
+
+[[case]]
+input = "夜は明けた"
+mode = "hiragana"
+expected = "よはあけた"
+
+[[case]]
+input = "夜も明けない"
+mode = "hiragana"
+expected = "よもあけない"
+
+[[case]]
+input = "夜が来る"
+mode = "hiragana"
+expected = "よるがくる"
+
+[[case]]
+input = "4人"
+mode = "hiragana"
+expected = "よにん"
+
+[[case]]
+input = "14人"
+mode = "hiragana"
+expected = "じゅうよにん"
+
+[[case]]
+input = "24人"
+mode = "hiragana"
+expected = "にじゅうよにん"
+
+[[case]]
+input = "104人"
+mode = "hiragana"
+expected = "ひゃくよにん"
+
+[[case]]
+input = "40人"
+mode = "hiragana"
+expected = "よんじゅうにん"
+
+[[case]]
+input = "4人組"
+mode = "hiragana"
+expected = "よにんぐみ"
+
+[[case]]
+input = "4人目"
+mode = "hiragana"
+expected = "よにんめ"
+
+[[case]]
+input = "4人家族"
+mode = "hiragana"
+expected = "よにんかぞく"
+
+[[case]]
+input = "4人で"
+mode = "hiragana"
+expected = "よにんで"
+
+[[case]]
+input = "1人"
+mode = "hiragana"
+expected = "ひとり"
+
+[[case]]
+input = "2人"
+mode = "hiragana"
+expected = "ふたり"
+
+[[case]]
+input = "4人前"
+mode = "hiragana"
+expected = "よにんまえ"
+
+[[case]]
+input = "4人中"
+mode = "hiragana"
+expected = "よにんちゅう"
+
+[[case]]
+input = "14人組"
+mode = "hiragana"
+expected = "じゅうよにんぐみ"
+
+[[case]]
+input = "2人組"
+mode = "hiragana"
+expected = "ふたりぐみ"
+
+[[case]]
+input = "3人組"
+mode = "hiragana"
+expected = "さんにんぐみ"
+
+[[case]]
+input = "2人前"
+mode = "hiragana"
+expected = "ににんまえ"
+
+[[case]]
+input = "1人前"
+mode = "hiragana"
+expected = "いちにんまえ"
+
+[[case]]
+input = "5人中3人"
+mode = "hiragana"
+expected = "ごにんちゅうさんにん"
+
+[[case]]
+input = "10人中4人"
+mode = "hiragana"
+expected = "じゅうにんちゅうよにん"
+
+[[case]]
+input = "4人乗り"
+mode = "hiragana"
+expected = "よにんのり"
+
+[[case]]
+input = "4人分"
+mode = "hiragana"
+expected = "よにんぶん"
+
+[[case]]
+input = "4人用"
+mode = "hiragana"
+expected = "よにんよう"
+
+[[case]]
+input = "4人部屋"
+mode = "hiragana"
+expected = "よにんへや"

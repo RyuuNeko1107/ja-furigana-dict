@@ -261,7 +261,7 @@ expected = "なつがしんく はるがしこん"
 [[case]]
 input = "宛先は4人だけとは限らない"
 mode = "hiragana"
-expected = "あてさきはよんにんだけとはかぎらない"
+expected = "あてさきはよにんだけとはかぎらない"
 
 [[case]]
 input = "これ誰宛?"
