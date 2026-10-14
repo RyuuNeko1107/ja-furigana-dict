@@ -440,9 +440,42 @@ def validate_loanwords(path: Path, errors: Errors) -> dict:
 # ─── core/accent/*.toml ─────────────────────────────────────────────────
 # アクセント専用の表 (role = "accent"、 tools/gen_accent_lexicon.py が生成)。 表記 → bracket 付き読み
 # (または読みごとの配列)。 lib は表記 + 読みが一致する token にだけ accent を付ける (読みには影響しない)
+RULE_RE = re.compile(r'^(\*|([^%/@]+%)?(?:[FC][1-5]|P1|P2|P6|P14)(@-?[0-9]+)?)(/([^%/@]+%)?(?:[FC][1-5]|P1|P2|P6|P14)(@-?[0-9]+)?)*$')
+
+
+def validate_accent_chain(path: Path, errors: Errors) -> None:
+    """role = "accent_chain": [defaults] 品詞 → 結合型 / [functional] 付属語 → 核/拍数|結合型 / [exceptions] 内容語 → 結合型"""
+    data = load_toml(path, errors)
+    if data is None:
+        return
+    for section in ('defaults', 'functional', 'exceptions', 'words'):
+        table = data.get(section)
+        if table is None:
+            continue
+        if not isinstance(table, dict):
+            errors.add_for(path, f"[{section}] が table ではない")
+            continue
+        for key, value in table.items():
+            if not isinstance(value, str):
+                errors.add_for(path, f"accent_chain [{section}] '{key}': 値が string ではない")
+                continue
+            if section == 'words':
+                if not re.match(r'^\d+/\d+$', value):
+                    errors.add_for(path, f"accent_chain [words] '{key}' → '{value}' (核/拍数 の形)")
+                continue
+            rule = value.split('|', 1)[1] if section == 'functional' and '|' in value else value
+            if section == 'functional' and not re.match(r'^\d+/\d+\|', value):
+                errors.add_for(path, f"accent_chain [functional] '{key}' → '{value}' (核/拍数|結合型 の形)")
+            if not RULE_RE.match(rule):
+                errors.add_for(path, f"accent_chain [{section}] '{key}' → '{rule}' (結合型の書式が不正)")
+
+
 def validate_accent(path: Path, errors: Errors) -> None:
     data = load_toml(path, errors)
     if data is None:
+        return
+    if (data.get('meta') or {}).get('role') == 'accent_chain':
+        validate_accent_chain(path, errors)
         return
     if (data.get('meta') or {}).get('role') != 'accent':
         errors.add_for(path, "[meta] role = \"accent\" が必要")

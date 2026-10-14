@@ -30,3 +30,6 @@ compare_extended_*.txt
 
 # 生成 tool のレポート (ローカル確認用)
 /surname_suffix_report.tsv
+
+# lib が作るバイナリキャッシュ (アクセント表 / 連結表)
+.furigana-cache/

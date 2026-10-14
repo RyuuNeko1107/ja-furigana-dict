@@ -103,6 +103,7 @@ def main() -> None:
         "[meta]",
         'schema_version = "2"',
         'role = "accent"',
+        'format = "accent/1"',
         f'description = "naist-jdic 由来のアクセント表 ({kept} 件)"',
         "",
         "[entries]",

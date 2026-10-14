@@ -4,6 +4,7 @@
 [meta]
 schema_version = "2"
 role = "accent"
+format = "accent/1"
 description = "UniDic aType 由来のアクセント表 (127254 件)"
 
 [entries]

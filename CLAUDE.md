@@ -61,11 +61,19 @@ tools/
 
 loader が role 駆動 dispatch する tag。 各 TOML 冒頭に `[meta] role = "..."` を書く:
 
-`jukugo` / `unihan` / `kanji` / `works` / `loanwords` / `compat` /
+`jukugo` / `unihan` / `kanji` / `works` / `loanwords` / `accent` / `accent_chain` / `compat` /
 `counters` / `days` / `scales` / `numeric_phrases` / `units` / `symbols` / `models` /
 `postprocess` / `emoji`
 
 (旧 `single_overrides` / `context` / `latin` は alpha.11 で廃止済)
+
+### アクセント表 (`core/accent/`) と形式の版
+
+`accent` (語単体の核) と `accent_chain` (アクセント句の連結規則の表) は **ツールで生成する表** (手で編集しない)。
+`tools/gen_accent_lexicon.py` (UniDic) / `gen_accent_naist.py` / `gen_accent_chain.py` (どちらも naist-jdic = OpenJTalk の辞書、 BSD)。
+`[meta] format = "<役割>/<版>"` (`accent/1`, `accent_chain/1`) を持ち、 **lib は自分が対応する版だけ読む** (知らない版・役割は黙って無視)。
+形式を変えるときは版を上げる (古い lib は無視するだけで壊れない)。 lib は読み込んだ表をバイナリキャッシュ
+(`.furigana-cache/tables-<key>.fgtb`、 git 管理外) に畳む。 `export_voicevox_userdict.py` は 辞書を VOICEVOX のユーザー辞書の形に書き出す。
 
 ## alpha.10〜alpha.11 期 dict 側 mechanical 完了 (★A1b / ★A2)
 
