@@ -1,0 +1,476 @@
+# 2026-10-14 文脈で読みが変わる語 (辛い / 描く / 最中): 例文を作って規則を検証
+
+[[case]]
+input = "毎日が辛い"
+mode = "hiragana"
+expected = "まいにちがつらい"
+
+[[case]]
+input = "別れは辛い"
+mode = "hiragana"
+expected = "わかれはつらい"
+
+[[case]]
+input = "朝起きるのが辛い"
+mode = "hiragana"
+expected = "あさおきるのがつらい"
+
+[[case]]
+input = "残業続きで辛い"
+mode = "hiragana"
+expected = "ざんぎょうつづきでつらい"
+
+[[case]]
+input = "辛い思いをした"
+mode = "hiragana"
+expected = "つらいおもいをした"
+
+[[case]]
+input = "辛い時は休もう"
+mode = "hiragana"
+expected = "つらいときはやすもう"
+
+[[case]]
+input = "辛い現実"
+mode = "hiragana"
+expected = "つらいげんじつ"
+
+[[case]]
+input = "辛い過去を思い出す"
+mode = "hiragana"
+expected = "つらいかこをおもいだす"
+
+[[case]]
+input = "風邪で辛い"
+mode = "hiragana"
+expected = "かぜでつらい"
+
+[[case]]
+input = "腰が痛くて辛い"
+mode = "hiragana"
+expected = "こしがいたくてつらい"
+
+[[case]]
+input = "見ていて辛い"
+mode = "hiragana"
+expected = "みていてつらい"
+
+[[case]]
+input = "辛くて泣いた"
+mode = "hiragana"
+expected = "つらくてないた"
+
+[[case]]
+input = "辛くなってきた"
+mode = "hiragana"
+expected = "つらくなってきた"
+
+[[case]]
+input = "辛かったね"
+mode = "hiragana"
+expected = "つらかったね"
+
+[[case]]
+input = "辛かったでしょう"
+mode = "hiragana"
+expected = "つらかったでしょう"
+
+[[case]]
+input = "辛そうな顔をしている"
+mode = "hiragana"
+expected = "つらそうなかおをしている"
+
+[[case]]
+input = "辛そうだね"
+mode = "hiragana"
+expected = "つらそうだね"
+
+[[case]]
+input = "辛すぎる"
+mode = "hiragana"
+expected = "つらすぎる"
+
+[[case]]
+input = "辛すぎて無理"
+mode = "hiragana"
+expected = "つらすぎてむり"
+
+[[case]]
+input = "辛さを分かち合う"
+mode = "hiragana"
+expected = "つらさをわかちあう"
+
+[[case]]
+input = "その辛さは分かる"
+mode = "hiragana"
+expected = "そのつらさはわかる"
+
+[[case]]
+input = "辛い目にあった"
+mode = "hiragana"
+expected = "つらいめにあった"
+
+[[case]]
+input = "辛くても頑張る"
+mode = "hiragana"
+expected = "つらくてもがんばる"
+
+[[case]]
+input = "辛く苦しい日々"
+mode = "hiragana"
+expected = "つらくくるしいひび"
+
+[[case]]
+input = "世知辛い世の中"
+mode = "hiragana"
+expected = "せちがらいよのなか"
+
+[[case]]
+input = "辛くも勝利した"
+mode = "hiragana"
+expected = "からくもしょうりした"
+
+[[case]]
+input = "分かり辛い説明"
+mode = "hiragana"
+expected = "わかりづらいせつめい"
+
+[[case]]
+input = "使い辛い道具"
+mode = "hiragana"
+expected = "つかいづらいどうぐ"
+
+[[case]]
+input = "読み辛い文章"
+mode = "hiragana"
+expected = "よみづらいぶんしょう"
+
+[[case]]
+input = "見辛いので大きくして"
+mode = "hiragana"
+expected = "みづらいのでおおきくして"
+
+[[case]]
+input = "聞き辛い話"
+mode = "hiragana"
+expected = "ききづらいはなし"
+
+[[case]]
+input = "歩き辛い道"
+mode = "hiragana"
+expected = "あるきづらいみち"
+
+[[case]]
+input = "言い辛いことだけど"
+mode = "hiragana"
+expected = "いいづらいことだけど"
+
+[[case]]
+input = "食べ辛い"
+mode = "hiragana"
+expected = "たべづらい"
+
+[[case]]
+input = "動き辛くなった"
+mode = "hiragana"
+expected = "うごきづらくなった"
+
+[[case]]
+input = "扱い辛い"
+mode = "hiragana"
+expected = "あつかいづらい"
+
+[[case]]
+input = "上がり辛く"
+mode = "hiragana"
+expected = "あがりづらく"
+
+[[case]]
+input = "取り辛い"
+mode = "hiragana"
+expected = "とりづらい"
+
+[[case]]
+input = "入り辛い店"
+mode = "hiragana"
+expected = "はいりづらいみせ"
+
+[[case]]
+input = "辛いカレーが好き"
+mode = "hiragana"
+expected = "からいカレーがすき"
+
+[[case]]
+input = "辛いものが食べたい"
+mode = "hiragana"
+expected = "からいものがたべたい"
+
+[[case]]
+input = "辛い物は苦手"
+mode = "hiragana"
+expected = "からいものはにがて"
+
+[[case]]
+input = "辛いのが好き"
+mode = "hiragana"
+expected = "からいのがすき"
+
+[[case]]
+input = "辛いラーメンを食べる"
+mode = "hiragana"
+expected = "からいラーメンをたべる"
+
+[[case]]
+input = "辛い麺"
+mode = "hiragana"
+expected = "からいめん"
+
+[[case]]
+input = "辛くないカレー"
+mode = "hiragana"
+expected = "からくないカレー"
+
+[[case]]
+input = "このカレー辛くて汗が出る"
+mode = "hiragana"
+expected = "このカレーからくてあせがでる"
+
+[[case]]
+input = "辛すぎるカレー"
+mode = "hiragana"
+expected = "からすぎるカレー"
+
+[[case]]
+input = "このスープ辛すぎる"
+mode = "hiragana"
+expected = "このスープからすぎる"
+
+[[case]]
+input = "辛そうなカレー"
+mode = "hiragana"
+expected = "からそうなカレー"
+
+[[case]]
+input = "辛さが足りないカレー"
+mode = "hiragana"
+expected = "からさがたりないカレー"
+
+[[case]]
+input = "キムチは辛い"
+mode = "hiragana"
+expected = "キムチはからい"
+
+[[case]]
+input = "辛口のカレー"
+mode = "hiragana"
+expected = "からくちのカレー"
+
+[[case]]
+input = "激辛ラーメン"
+mode = "hiragana"
+expected = "げきからラーメン"
+
+[[case]]
+input = "唐辛子は辛い"
+mode = "hiragana"
+expected = "とうがらしはからい"
+
+[[case]]
+input = "このラーメン辛いけど美味しい"
+mode = "hiragana"
+expected = "このラーメンからいけどおいしい"
+
+[[case]]
+input = "辛い麺食べたら汗が出た"
+mode = "hiragana"
+expected = "からいめんたべたらあせがでた"
+
+[[case]]
+input = "辛いの食べられる"
+mode = "hiragana"
+expected = "からいのたべられる"
+
+[[case]]
+input = "夢を描く"
+mode = "hiragana"
+expected = "ゆめをえがく"
+
+[[case]]
+input = "未来を描く"
+mode = "hiragana"
+expected = "みらいをえがく"
+
+[[case]]
+input = "理想を描く"
+mode = "hiragana"
+expected = "りそうをえがく"
+
+[[case]]
+input = "情景を描く"
+mode = "hiragana"
+expected = "じょうけいをえがく"
+
+[[case]]
+input = "世界を描く"
+mode = "hiragana"
+expected = "せかいをえがく"
+
+[[case]]
+input = "物語を描く"
+mode = "hiragana"
+expected = "ものがたりをえがく"
+
+[[case]]
+input = "人生を描く"
+mode = "hiragana"
+expected = "じんせいをえがく"
+
+[[case]]
+input = "弧を描く"
+mode = "hiragana"
+expected = "こをえがく"
+
+[[case]]
+input = "放物線を描く"
+mode = "hiragana"
+expected = "ほうぶつせんをえがく"
+
+[[case]]
+input = "曲線を描く"
+mode = "hiragana"
+expected = "きょくせんをえがく"
+
+[[case]]
+input = "軌道を描く"
+mode = "hiragana"
+expected = "きどうをえがく"
+
+[[case]]
+input = "心情を描く"
+mode = "hiragana"
+expected = "しんじょうをえがく"
+
+[[case]]
+input = "日常を描く"
+mode = "hiragana"
+expected = "にちじょうをえがく"
+
+[[case]]
+input = "青春を描く"
+mode = "hiragana"
+expected = "せいしゅんをえがく"
+
+[[case]]
+input = "夢を描いた"
+mode = "hiragana"
+expected = "ゆめをえがいた"
+
+[[case]]
+input = "絵を描く"
+mode = "hiragana"
+expected = "えをかく"
+
+[[case]]
+input = "漫画を描く"
+mode = "hiragana"
+expected = "まんがをかく"
+
+[[case]]
+input = "イラストを描く"
+mode = "hiragana"
+expected = "イラストをかく"
+
+[[case]]
+input = "似顔絵を描く"
+mode = "hiragana"
+expected = "にがおえをかく"
+
+[[case]]
+input = "地図を描く"
+mode = "hiragana"
+expected = "ちずをかく"
+
+[[case]]
+input = "絵を描いた"
+mode = "hiragana"
+expected = "えをかいた"
+
+[[case]]
+input = "絵を描いている"
+mode = "hiragana"
+expected = "えをかいている"
+
+[[case]]
+input = "試合の最中"
+mode = "hiragana"
+expected = "しあいのさいちゅう"
+
+[[case]]
+input = "食事の最中に"
+mode = "hiragana"
+expected = "しょくじのさいちゅうに"
+
+[[case]]
+input = "会議の最中"
+mode = "hiragana"
+expected = "かいぎのさいちゅう"
+
+[[case]]
+input = "授業の最中"
+mode = "hiragana"
+expected = "じゅぎょうのさいちゅう"
+
+[[case]]
+input = "配信の最中"
+mode = "hiragana"
+expected = "はいしんのさいちゅう"
+
+[[case]]
+input = "話している最中"
+mode = "hiragana"
+expected = "はなしているさいちゅう"
+
+[[case]]
+input = "工事の最中"
+mode = "hiragana"
+expected = "こうじのさいちゅう"
+
+[[case]]
+input = "最中を食べる"
+mode = "hiragana"
+expected = "もなかをたべる"
+
+[[case]]
+input = "和菓子の最中"
+mode = "hiragana"
+expected = "わがしのもなか"
+
+[[case]]
+input = "最中アイス"
+mode = "hiragana"
+expected = "もなかアイス"
+
+[[case]]
+input = "お土産に最中"
+mode = "hiragana"
+expected = "おみやげにもなか"
+
+[[case]]
+input = "最中の皮"
+mode = "hiragana"
+expected = "もなかのかわ"
+
+[[case]]
+input = "栗最中"
+mode = "hiragana"
+expected = "くりもなか"
+
+[[case]]
+input = "味噌だからちょっとアクセントに辛味を入れたらガッツリ辛くて"
+mode = "hiragana"
+expected = "みそだからちょっとアクセントにからみをいれたらガッツリからくて"
+
+[[case]]
+input = "アボカドだめだったっけ辛すぎるものだけが苦手"
+mode = "hiragana"
+expected = "アボカドだめだったっけからすぎるものだけがにがて"
