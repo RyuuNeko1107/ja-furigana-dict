@@ -41,7 +41,6 @@ role = "counters"
 description = "単純サフィックス助数詞 (円 / 点 / 度 / 名 / 話 等、 数値カナ + value 連結のみ)"
 
 [simple]
-"円" = "エン"
 # 「点」 は objects.toml で sokuonize rule (1/8/10 促音: いっ/はっ/じってん)
 "割" = "ワリ"
 "度" = "ド"
@@ -59,7 +58,6 @@ description = "単純サフィックス助数詞 (円 / 点 / 度 / 名 / 話 �
 "錠" = "ジョウ"
 # 「艘」 は objects.toml で counter rule (kanji_numeral opt-in、 一艘=いっそう 促音 + 三艘=さんそう)
 "口" = "クチ"
-"年" = "ネン"
 "時間半" = "ジカンハン"
 "時半" = "ジハン"
 "時頃" = "ジゴロ"

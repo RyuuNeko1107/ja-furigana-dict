@@ -1,0 +1,1076 @@
+# 2026-10-14 漢数字+助数詞 20 種 x 一〜十 (七は しち/なな どちらも通用するので除外) と 四年/四円 系 (よねん/よえん)
+
+[[case]]
+input = "一本です"
+mode = "hiragana"
+expected = "いっぽんです"
+
+[[case]]
+input = "二本です"
+mode = "hiragana"
+expected = "にほんです"
+
+[[case]]
+input = "三本です"
+mode = "hiragana"
+expected = "さんぼんです"
+
+[[case]]
+input = "四本です"
+mode = "hiragana"
+expected = "よんほんです"
+
+[[case]]
+input = "五本です"
+mode = "hiragana"
+expected = "ごほんです"
+
+[[case]]
+input = "六本です"
+mode = "hiragana"
+expected = "ろっぽんです"
+
+[[case]]
+input = "八本です"
+mode = "hiragana"
+expected = "はっぽんです"
+
+[[case]]
+input = "九本です"
+mode = "hiragana"
+expected = "きゅうほんです"
+
+[[case]]
+input = "十本です"
+mode = "hiragana"
+expected = "じゅっぽんです"
+
+[[case]]
+input = "一杯です"
+mode = "hiragana"
+expected = "いっぱいです"
+
+[[case]]
+input = "二杯です"
+mode = "hiragana"
+expected = "にはいです"
+
+[[case]]
+input = "三杯です"
+mode = "hiragana"
+expected = "さんばいです"
+
+[[case]]
+input = "四杯です"
+mode = "hiragana"
+expected = "よんはいです"
+
+[[case]]
+input = "五杯です"
+mode = "hiragana"
+expected = "ごはいです"
+
+[[case]]
+input = "六杯です"
+mode = "hiragana"
+expected = "ろっぱいです"
+
+[[case]]
+input = "八杯です"
+mode = "hiragana"
+expected = "はっぱいです"
+
+[[case]]
+input = "九杯です"
+mode = "hiragana"
+expected = "きゅうはいです"
+
+[[case]]
+input = "十杯です"
+mode = "hiragana"
+expected = "じゅっぱいです"
+
+[[case]]
+input = "一匹です"
+mode = "hiragana"
+expected = "いっぴきです"
+
+[[case]]
+input = "二匹です"
+mode = "hiragana"
+expected = "にひきです"
+
+[[case]]
+input = "三匹です"
+mode = "hiragana"
+expected = "さんびきです"
+
+[[case]]
+input = "四匹です"
+mode = "hiragana"
+expected = "よんひきです"
+
+[[case]]
+input = "五匹です"
+mode = "hiragana"
+expected = "ごひきです"
+
+[[case]]
+input = "六匹です"
+mode = "hiragana"
+expected = "ろっぴきです"
+
+[[case]]
+input = "八匹です"
+mode = "hiragana"
+expected = "はっぴきです"
+
+[[case]]
+input = "九匹です"
+mode = "hiragana"
+expected = "きゅうひきです"
+
+[[case]]
+input = "十匹です"
+mode = "hiragana"
+expected = "じゅっぴきです"
+
+[[case]]
+input = "一回です"
+mode = "hiragana"
+expected = "いっかいです"
+
+[[case]]
+input = "二回です"
+mode = "hiragana"
+expected = "にかいです"
+
+[[case]]
+input = "三回です"
+mode = "hiragana"
+expected = "さんかいです"
+
+[[case]]
+input = "四回です"
+mode = "hiragana"
+expected = "よんかいです"
+
+[[case]]
+input = "五回です"
+mode = "hiragana"
+expected = "ごかいです"
+
+[[case]]
+input = "六回です"
+mode = "hiragana"
+expected = "ろっかいです"
+
+[[case]]
+input = "八回です"
+mode = "hiragana"
+expected = "はっかいです"
+
+[[case]]
+input = "九回です"
+mode = "hiragana"
+expected = "きゅうかいです"
+
+[[case]]
+input = "十回です"
+mode = "hiragana"
+expected = "じゅっかいです"
+
+[[case]]
+input = "一階です"
+mode = "hiragana"
+expected = "いっかいです"
+
+[[case]]
+input = "二階です"
+mode = "hiragana"
+expected = "にかいです"
+
+[[case]]
+input = "三階です"
+mode = "hiragana"
+expected = "さんがいです"
+
+[[case]]
+input = "四階です"
+mode = "hiragana"
+expected = "よんかいです"
+
+[[case]]
+input = "五階です"
+mode = "hiragana"
+expected = "ごかいです"
+
+[[case]]
+input = "六階です"
+mode = "hiragana"
+expected = "ろっかいです"
+
+[[case]]
+input = "八階です"
+mode = "hiragana"
+expected = "はっかいです"
+
+[[case]]
+input = "九階です"
+mode = "hiragana"
+expected = "きゅうかいです"
+
+[[case]]
+input = "十階です"
+mode = "hiragana"
+expected = "じゅっかいです"
+
+[[case]]
+input = "一個です"
+mode = "hiragana"
+expected = "いっこです"
+
+[[case]]
+input = "二個です"
+mode = "hiragana"
+expected = "にこです"
+
+[[case]]
+input = "三個です"
+mode = "hiragana"
+expected = "さんこです"
+
+[[case]]
+input = "四個です"
+mode = "hiragana"
+expected = "よんこです"
+
+[[case]]
+input = "五個です"
+mode = "hiragana"
+expected = "ごこです"
+
+[[case]]
+input = "六個です"
+mode = "hiragana"
+expected = "ろっこです"
+
+[[case]]
+input = "八個です"
+mode = "hiragana"
+expected = "はっこです"
+
+[[case]]
+input = "九個です"
+mode = "hiragana"
+expected = "きゅうこです"
+
+[[case]]
+input = "十個です"
+mode = "hiragana"
+expected = "じゅっこです"
+
+[[case]]
+input = "一枚です"
+mode = "hiragana"
+expected = "いちまいです"
+
+[[case]]
+input = "二枚です"
+mode = "hiragana"
+expected = "にまいです"
+
+[[case]]
+input = "三枚です"
+mode = "hiragana"
+expected = "さんまいです"
+
+[[case]]
+input = "四枚です"
+mode = "hiragana"
+expected = "よんまいです"
+
+[[case]]
+input = "五枚です"
+mode = "hiragana"
+expected = "ごまいです"
+
+[[case]]
+input = "六枚です"
+mode = "hiragana"
+expected = "ろくまいです"
+
+[[case]]
+input = "八枚です"
+mode = "hiragana"
+expected = "はちまいです"
+
+[[case]]
+input = "九枚です"
+mode = "hiragana"
+expected = "きゅうまいです"
+
+[[case]]
+input = "十枚です"
+mode = "hiragana"
+expected = "じゅうまいです"
+
+[[case]]
+input = "一台です"
+mode = "hiragana"
+expected = "いちだいです"
+
+[[case]]
+input = "二台です"
+mode = "hiragana"
+expected = "にだいです"
+
+[[case]]
+input = "三台です"
+mode = "hiragana"
+expected = "さんだいです"
+
+[[case]]
+input = "四台です"
+mode = "hiragana"
+expected = "よんだいです"
+
+[[case]]
+input = "五台です"
+mode = "hiragana"
+expected = "ごだいです"
+
+[[case]]
+input = "六台です"
+mode = "hiragana"
+expected = "ろくだいです"
+
+[[case]]
+input = "八台です"
+mode = "hiragana"
+expected = "はちだいです"
+
+[[case]]
+input = "九台です"
+mode = "hiragana"
+expected = "きゅうだいです"
+
+[[case]]
+input = "十台です"
+mode = "hiragana"
+expected = "じゅうだいです"
+
+[[case]]
+input = "一冊です"
+mode = "hiragana"
+expected = "いっさつです"
+
+[[case]]
+input = "二冊です"
+mode = "hiragana"
+expected = "にさつです"
+
+[[case]]
+input = "三冊です"
+mode = "hiragana"
+expected = "さんさつです"
+
+[[case]]
+input = "四冊です"
+mode = "hiragana"
+expected = "よんさつです"
+
+[[case]]
+input = "五冊です"
+mode = "hiragana"
+expected = "ごさつです"
+
+[[case]]
+input = "六冊です"
+mode = "hiragana"
+expected = "ろくさつです"
+
+[[case]]
+input = "八冊です"
+mode = "hiragana"
+expected = "はっさつです"
+
+[[case]]
+input = "九冊です"
+mode = "hiragana"
+expected = "きゅうさつです"
+
+[[case]]
+input = "十冊です"
+mode = "hiragana"
+expected = "じゅっさつです"
+
+[[case]]
+input = "一歳です"
+mode = "hiragana"
+expected = "いっさいです"
+
+[[case]]
+input = "二歳です"
+mode = "hiragana"
+expected = "にさいです"
+
+[[case]]
+input = "三歳です"
+mode = "hiragana"
+expected = "さんさいです"
+
+[[case]]
+input = "四歳です"
+mode = "hiragana"
+expected = "よんさいです"
+
+[[case]]
+input = "五歳です"
+mode = "hiragana"
+expected = "ごさいです"
+
+[[case]]
+input = "六歳です"
+mode = "hiragana"
+expected = "ろくさいです"
+
+[[case]]
+input = "八歳です"
+mode = "hiragana"
+expected = "はっさいです"
+
+[[case]]
+input = "九歳です"
+mode = "hiragana"
+expected = "きゅうさいです"
+
+[[case]]
+input = "十歳です"
+mode = "hiragana"
+expected = "じゅっさいです"
+
+[[case]]
+input = "一人です"
+mode = "hiragana"
+expected = "ひとりです"
+
+[[case]]
+input = "二人です"
+mode = "hiragana"
+expected = "ふたりです"
+
+[[case]]
+input = "三人です"
+mode = "hiragana"
+expected = "さんにんです"
+
+[[case]]
+input = "四人です"
+mode = "hiragana"
+expected = "よにんです"
+
+[[case]]
+input = "五人です"
+mode = "hiragana"
+expected = "ごにんです"
+
+[[case]]
+input = "六人です"
+mode = "hiragana"
+expected = "ろくにんです"
+
+[[case]]
+input = "八人です"
+mode = "hiragana"
+expected = "はちにんです"
+
+[[case]]
+input = "九人です"
+mode = "hiragana"
+expected = "きゅうにんです"
+
+[[case]]
+input = "十人です"
+mode = "hiragana"
+expected = "じゅうにんです"
+
+[[case]]
+input = "一円です"
+mode = "hiragana"
+expected = "いちえんです"
+
+[[case]]
+input = "二円です"
+mode = "hiragana"
+expected = "にえんです"
+
+[[case]]
+input = "三円です"
+mode = "hiragana"
+expected = "さんえんです"
+
+[[case]]
+input = "四円です"
+mode = "hiragana"
+expected = "よえんです"
+
+[[case]]
+input = "五円です"
+mode = "hiragana"
+expected = "ごえんです"
+
+[[case]]
+input = "六円です"
+mode = "hiragana"
+expected = "ろくえんです"
+
+[[case]]
+input = "八円です"
+mode = "hiragana"
+expected = "はちえんです"
+
+[[case]]
+input = "九円です"
+mode = "hiragana"
+expected = "きゅうえんです"
+
+[[case]]
+input = "十円です"
+mode = "hiragana"
+expected = "じゅうえんです"
+
+[[case]]
+input = "一年です"
+mode = "hiragana"
+expected = "いちねんです"
+
+[[case]]
+input = "二年です"
+mode = "hiragana"
+expected = "にねんです"
+
+[[case]]
+input = "三年です"
+mode = "hiragana"
+expected = "さんねんです"
+
+[[case]]
+input = "四年です"
+mode = "hiragana"
+expected = "よねんです"
+
+[[case]]
+input = "五年です"
+mode = "hiragana"
+expected = "ごねんです"
+
+[[case]]
+input = "六年です"
+mode = "hiragana"
+expected = "ろくねんです"
+
+[[case]]
+input = "八年です"
+mode = "hiragana"
+expected = "はちねんです"
+
+[[case]]
+input = "九年です"
+mode = "hiragana"
+expected = "きゅうねんです"
+
+[[case]]
+input = "十年です"
+mode = "hiragana"
+expected = "じゅうねんです"
+
+[[case]]
+input = "一月です"
+mode = "hiragana"
+expected = "いちがつです"
+
+[[case]]
+input = "二月です"
+mode = "hiragana"
+expected = "にがつです"
+
+[[case]]
+input = "三月です"
+mode = "hiragana"
+expected = "さんがつです"
+
+[[case]]
+input = "四月です"
+mode = "hiragana"
+expected = "しがつです"
+
+[[case]]
+input = "五月です"
+mode = "hiragana"
+expected = "ごがつです"
+
+[[case]]
+input = "六月です"
+mode = "hiragana"
+expected = "ろくがつです"
+
+[[case]]
+input = "八月です"
+mode = "hiragana"
+expected = "はちがつです"
+
+[[case]]
+input = "九月です"
+mode = "hiragana"
+expected = "くがつです"
+
+[[case]]
+input = "十月です"
+mode = "hiragana"
+expected = "じゅうがつです"
+
+[[case]]
+input = "一週です"
+mode = "hiragana"
+expected = "いっしゅうです"
+
+[[case]]
+input = "二週です"
+mode = "hiragana"
+expected = "にしゅうです"
+
+[[case]]
+input = "三週です"
+mode = "hiragana"
+expected = "さんしゅうです"
+
+[[case]]
+input = "四週です"
+mode = "hiragana"
+expected = "よんしゅうです"
+
+[[case]]
+input = "五週です"
+mode = "hiragana"
+expected = "ごしゅうです"
+
+[[case]]
+input = "六週です"
+mode = "hiragana"
+expected = "ろくしゅうです"
+
+[[case]]
+input = "八週です"
+mode = "hiragana"
+expected = "はっしゅうです"
+
+[[case]]
+input = "九週です"
+mode = "hiragana"
+expected = "きゅうしゅうです"
+
+[[case]]
+input = "十週です"
+mode = "hiragana"
+expected = "じゅっしゅうです"
+
+[[case]]
+input = "一度です"
+mode = "hiragana"
+expected = "いちどです"
+
+[[case]]
+input = "二度です"
+mode = "hiragana"
+expected = "にどです"
+
+[[case]]
+input = "三度です"
+mode = "hiragana"
+expected = "さんどです"
+
+[[case]]
+input = "四度です"
+mode = "hiragana"
+expected = "よんどです"
+
+[[case]]
+input = "五度です"
+mode = "hiragana"
+expected = "ごどです"
+
+[[case]]
+input = "六度です"
+mode = "hiragana"
+expected = "ろくどです"
+
+[[case]]
+input = "八度です"
+mode = "hiragana"
+expected = "はちどです"
+
+[[case]]
+input = "九度です"
+mode = "hiragana"
+expected = "きゅうどです"
+
+[[case]]
+input = "十度です"
+mode = "hiragana"
+expected = "じゅうどです"
+
+[[case]]
+input = "一倍です"
+mode = "hiragana"
+expected = "いちばいです"
+
+[[case]]
+input = "二倍です"
+mode = "hiragana"
+expected = "にばいです"
+
+[[case]]
+input = "三倍です"
+mode = "hiragana"
+expected = "さんばいです"
+
+[[case]]
+input = "四倍です"
+mode = "hiragana"
+expected = "よんばいです"
+
+[[case]]
+input = "五倍です"
+mode = "hiragana"
+expected = "ごばいです"
+
+[[case]]
+input = "六倍です"
+mode = "hiragana"
+expected = "ろくばいです"
+
+[[case]]
+input = "八倍です"
+mode = "hiragana"
+expected = "はちばいです"
+
+[[case]]
+input = "九倍です"
+mode = "hiragana"
+expected = "きゅうばいです"
+
+[[case]]
+input = "十倍です"
+mode = "hiragana"
+expected = "じゅうばいです"
+
+[[case]]
+input = "一件です"
+mode = "hiragana"
+expected = "いっけんです"
+
+[[case]]
+input = "二件です"
+mode = "hiragana"
+expected = "にけんです"
+
+[[case]]
+input = "三件です"
+mode = "hiragana"
+expected = "さんけんです"
+
+[[case]]
+input = "四件です"
+mode = "hiragana"
+expected = "よんけんです"
+
+[[case]]
+input = "五件です"
+mode = "hiragana"
+expected = "ごけんです"
+
+[[case]]
+input = "六件です"
+mode = "hiragana"
+expected = "ろっけんです"
+
+[[case]]
+input = "八件です"
+mode = "hiragana"
+expected = "はっけんです"
+
+[[case]]
+input = "九件です"
+mode = "hiragana"
+expected = "きゅうけんです"
+
+[[case]]
+input = "十件です"
+mode = "hiragana"
+expected = "じゅっけんです"
+
+[[case]]
+input = "一秒です"
+mode = "hiragana"
+expected = "いちびょうです"
+
+[[case]]
+input = "二秒です"
+mode = "hiragana"
+expected = "にびょうです"
+
+[[case]]
+input = "三秒です"
+mode = "hiragana"
+expected = "さんびょうです"
+
+[[case]]
+input = "四秒です"
+mode = "hiragana"
+expected = "よんびょうです"
+
+[[case]]
+input = "五秒です"
+mode = "hiragana"
+expected = "ごびょうです"
+
+[[case]]
+input = "六秒です"
+mode = "hiragana"
+expected = "ろくびょうです"
+
+[[case]]
+input = "八秒です"
+mode = "hiragana"
+expected = "はちびょうです"
+
+[[case]]
+input = "九秒です"
+mode = "hiragana"
+expected = "きゅうびょうです"
+
+[[case]]
+input = "十秒です"
+mode = "hiragana"
+expected = "じゅうびょうです"
+
+[[case]]
+input = "一本目です"
+mode = "hiragana"
+expected = "いっぽんめです"
+
+[[case]]
+input = "二本目です"
+mode = "hiragana"
+expected = "にほんめです"
+
+[[case]]
+input = "三本目です"
+mode = "hiragana"
+expected = "さんぼんめです"
+
+[[case]]
+input = "四本目です"
+mode = "hiragana"
+expected = "よんほんめです"
+
+[[case]]
+input = "五本目です"
+mode = "hiragana"
+expected = "ごほんめです"
+
+[[case]]
+input = "六本目です"
+mode = "hiragana"
+expected = "ろっぽんめです"
+
+[[case]]
+input = "八本目です"
+mode = "hiragana"
+expected = "はっぽんめです"
+
+[[case]]
+input = "九本目です"
+mode = "hiragana"
+expected = "きゅうほんめです"
+
+[[case]]
+input = "十本目です"
+mode = "hiragana"
+expected = "じゅっぽんめです"
+
+[[case]]
+input = "一番です"
+mode = "hiragana"
+expected = "いちばんです"
+
+[[case]]
+input = "二番です"
+mode = "hiragana"
+expected = "にばんです"
+
+[[case]]
+input = "三番です"
+mode = "hiragana"
+expected = "さんばんです"
+
+[[case]]
+input = "四番です"
+mode = "hiragana"
+expected = "よんばんです"
+
+[[case]]
+input = "五番です"
+mode = "hiragana"
+expected = "ごばんです"
+
+[[case]]
+input = "六番です"
+mode = "hiragana"
+expected = "ろくばんです"
+
+[[case]]
+input = "八番です"
+mode = "hiragana"
+expected = "はちばんです"
+
+[[case]]
+input = "九番です"
+mode = "hiragana"
+expected = "きゅうばんです"
+
+[[case]]
+input = "十番です"
+mode = "hiragana"
+expected = "じゅうばんです"
+
+[[case]]
+input = "一位です"
+mode = "hiragana"
+expected = "いちいです"
+
+[[case]]
+input = "二位です"
+mode = "hiragana"
+expected = "にいです"
+
+[[case]]
+input = "三位です"
+mode = "hiragana"
+expected = "さんいです"
+
+[[case]]
+input = "四位です"
+mode = "hiragana"
+expected = "よんいです"
+
+[[case]]
+input = "五位です"
+mode = "hiragana"
+expected = "ごいです"
+
+[[case]]
+input = "六位です"
+mode = "hiragana"
+expected = "ろくいです"
+
+[[case]]
+input = "八位です"
+mode = "hiragana"
+expected = "はちいです"
+
+[[case]]
+input = "九位です"
+mode = "hiragana"
+expected = "きゅういです"
+
+[[case]]
+input = "十位です"
+mode = "hiragana"
+expected = "じゅういです"
+
+[[case]]
+input = "4年"
+mode = "hiragana"
+expected = "よねん"
+
+[[case]]
+input = "14年"
+mode = "hiragana"
+expected = "じゅうよねん"
+
+[[case]]
+input = "4年生"
+mode = "hiragana"
+expected = "よねんせい"
+
+[[case]]
+input = "4年間"
+mode = "hiragana"
+expected = "よねんかん"
+
+[[case]]
+input = "14年間"
+mode = "hiragana"
+expected = "じゅうよねんかん"
+
+[[case]]
+input = "4年目"
+mode = "hiragana"
+expected = "よねんめ"
+
+[[case]]
+input = "4年前"
+mode = "hiragana"
+expected = "よねんまえ"
+
+[[case]]
+input = "4年後"
+mode = "hiragana"
+expected = "よねんご"
+
+[[case]]
+input = "1年生"
+mode = "hiragana"
+expected = "いちねんせい"
+
+[[case]]
+input = "2年間"
+mode = "hiragana"
+expected = "にねんかん"
+
+[[case]]
+input = "10年後"
+mode = "hiragana"
+expected = "じゅうねんご"
+
+[[case]]
+input = "100年間"
+mode = "hiragana"
+expected = "ひゃくねんかん"
+
+[[case]]
+input = "四円"
+mode = "hiragana"
+expected = "よえん"
+
+[[case]]
+input = "四年"
+mode = "hiragana"
+expected = "よねん"
+
+[[case]]
+input = "四年生"
+mode = "hiragana"
+expected = "よねんせい"
+
+[[case]]
+input = "十四年"
+mode = "hiragana"
+expected = "じゅうよねん"
+
+[[case]]
+input = "2026年4月"
+mode = "hiragana"
+expected = "にせんにじゅうろくねんしがつ"

@@ -245,7 +245,63 @@ default = "ジカンハン"
 # Lindera default で「ねん」が出るが、念のため counter として明示
 [counter."年"]
 default = "ネン"
+
+# 4年 = よねん (4年生 / 4年間 / 14年)。 7年 は ななねん / しちねん どちらも通用するので触らない
+[[counter."年".replacements]]
+last_digit = [4]
+from = "ヨン"
+to = "ヨ"
 # === end: 年 ===
+
+# === begin: 年生 === (4年生 / 4年間 = よねん〜)
+[counter."年生"]
+default = "ネンセイ"
+
+[[counter."年生".replacements]]
+last_digit = [4]
+from = "ヨン"
+to = "ヨ"
+# === end: 年生 ===
+
+# === begin: 年間 === (4年生 / 4年間 = よねん〜)
+[counter."年間"]
+default = "ネンカン"
+
+[[counter."年間".replacements]]
+last_digit = [4]
+from = "ヨン"
+to = "ヨ"
+# === end: 年間 ===
+
+# === begin: 年目 === (4年生 / 4年間 = よねん〜)
+[counter."年目"]
+default = "ネンメ"
+
+[[counter."年目".replacements]]
+last_digit = [4]
+from = "ヨン"
+to = "ヨ"
+# === end: 年目 ===
+
+# === begin: 年前 === (4年生 / 4年間 = よねん〜)
+[counter."年前"]
+default = "ネンマエ"
+
+[[counter."年前".replacements]]
+last_digit = [4]
+from = "ヨン"
+to = "ヨ"
+# === end: 年前 ===
+
+# === begin: 年後 === (4年生 / 4年間 = よねん〜)
+[counter."年後"]
+default = "ネンゴ"
+
+[[counter."年後".replacements]]
+last_digit = [4]
+from = "ヨン"
+to = "ヨ"
+# === end: 年後 ===
 
 # === begin: 時間 ===
 # 「N時間」を Nジカン に。 4/7/9 はカナ末尾置換 (ヨン→ヨ / ナナ→シチ / キュウ→ク、

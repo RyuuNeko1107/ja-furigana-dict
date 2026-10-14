@@ -370,6 +370,12 @@ sokuonize = true
 [counter."円"]
 default = "エン"
 kanji_numeral = true
+
+# 4円 / 四円 / 14円 = よえん
+[[counter."円".replacements]]
+last_digit = [4]
+from = "ヨン"
+to = "ヨ"
 # === end: 円 ===
 
 # === begin: 軒 === (家屋、 既上で定義済、 重複しない)

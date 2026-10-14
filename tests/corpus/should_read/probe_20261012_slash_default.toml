@@ -4,7 +4,7 @@
 [[case]]
 input = "2024-10-12"
 mode = "hiragana"
-expected = "にせんにじゅうよんねんじゅうがつじゅうににち"
+expected = "にせんにじゅうよねんじゅうがつじゅうににち"
 
 [[case]]
 input = "1999/10/12"
