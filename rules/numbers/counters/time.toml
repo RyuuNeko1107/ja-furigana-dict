@@ -288,6 +288,47 @@ from = "キュウ"
 to = "ク"
 # === end: 時半 ===
 
+# === begin: 時頃 ===
+[counter."時頃"]
+default = "ジゴロ"
+kanji_numeral = true  # 九時頃=くじごろ / 四時頃=よじごろ / 七時頃=しちじごろ (時と同じ)
+
+[[counter."時頃".replacements]]
+last_digit = [4]
+from = "ヨン"
+to = "ヨ"
+
+[[counter."時頃".replacements]]
+last_digit = [7]
+from = "ナナ"
+to = "シチ"
+
+[[counter."時頃".replacements]]
+last_digit = [9]
+from = "キュウ"
+to = "ク"
+
+[counter."時ごろ"]
+default = "ジゴロ"
+kanji_numeral = true  # 九時頃=くじごろ / 四時頃=よじごろ / 七時頃=しちじごろ (時と同じ)
+
+[[counter."時ごろ".replacements]]
+last_digit = [4]
+from = "ヨン"
+to = "ヨ"
+
+[[counter."時ごろ".replacements]]
+last_digit = [7]
+from = "ナナ"
+to = "シチ"
+
+[[counter."時ごろ".replacements]]
+last_digit = [9]
+from = "キュウ"
+to = "ク"
+# === end: 時頃 ===
+
+
 # === begin: 年 ===
 # Lindera default で「ねん」が出るが、念のため counter として明示
 [counter."年"]

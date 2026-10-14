@@ -1,0 +1,116 @@
+# 2026-10-14 時 + 頃/ごろ/台/過ぎ/間後 の 4・7・9 の音便
+
+[[case]]
+input = "1時頃"
+mode = "hiragana"
+expected = "いちじごろ"
+
+[[case]]
+input = "2時頃"
+mode = "hiragana"
+expected = "にじごろ"
+
+[[case]]
+input = "4時頃"
+mode = "hiragana"
+expected = "よじごろ"
+
+[[case]]
+input = "7時頃"
+mode = "hiragana"
+expected = "しちじごろ"
+
+[[case]]
+input = "9時頃"
+mode = "hiragana"
+expected = "くじごろ"
+
+[[case]]
+input = "4時ごろ"
+mode = "hiragana"
+expected = "よじごろ"
+
+[[case]]
+input = "7時ごろ"
+mode = "hiragana"
+expected = "しちじごろ"
+
+[[case]]
+input = "9時ごろ"
+mode = "hiragana"
+expected = "くじごろ"
+
+[[case]]
+input = "九時頃"
+mode = "hiragana"
+expected = "くじごろ"
+
+[[case]]
+input = "四時ごろ"
+mode = "hiragana"
+expected = "よじごろ"
+
+[[case]]
+input = "14時頃"
+mode = "hiragana"
+expected = "じゅうよじごろ"
+
+[[case]]
+input = "19時ごろ"
+mode = "hiragana"
+expected = "じゅうくじごろ"
+
+[[case]]
+input = "10時ごろ"
+mode = "hiragana"
+expected = "じゅうじごろ"
+
+[[case]]
+input = "4時台"
+mode = "hiragana"
+expected = "よじだい"
+
+[[case]]
+input = "9時台"
+mode = "hiragana"
+expected = "くじだい"
+
+[[case]]
+input = "4時過ぎ"
+mode = "hiragana"
+expected = "よじすぎ"
+
+[[case]]
+input = "9時すぎ"
+mode = "hiragana"
+expected = "くじすぎ"
+
+[[case]]
+input = "4時間後"
+mode = "hiragana"
+expected = "よじかんご"
+
+[[case]]
+input = "9時間前"
+mode = "hiragana"
+expected = "くじかんまえ"
+
+[[case]]
+input = "4時半ごろ"
+mode = "hiragana"
+expected = "よじはんごろ"
+
+[[case]]
+input = "9時半ごろ"
+mode = "hiragana"
+expected = "くじはんごろ"
+
+[[case]]
+input = "午後9時"
+mode = "hiragana"
+expected = "ごごくじ"
+
+[[case]]
+input = "深夜4時"
+mode = "hiragana"
+expected = "しんやよじ"
