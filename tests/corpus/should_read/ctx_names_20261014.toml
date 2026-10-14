@@ -1,0 +1,1536 @@
+# 2026-10-14 都道府県・主要地名・駅名・頻出の姓 (計 約 300 本、 読みを確実に知っているものだけ) と 大分/熊谷/須藤/関さん
+
+[[case]]
+input = "京都に行く"
+mode = "hiragana"
+expected = "きょうとにいく"
+
+[[case]]
+input = "神戸に行く"
+mode = "hiragana"
+expected = "こうべにいく"
+
+[[case]]
+input = "札幌に行く"
+mode = "hiragana"
+expected = "さっぽろにいく"
+
+[[case]]
+input = "仙台に行く"
+mode = "hiragana"
+expected = "せんだいにいく"
+
+[[case]]
+input = "広島に行く"
+mode = "hiragana"
+expected = "ひろしまにいく"
+
+[[case]]
+input = "福岡に行く"
+mode = "hiragana"
+expected = "ふくおかにいく"
+
+[[case]]
+input = "名古屋に行く"
+mode = "hiragana"
+expected = "なごやにいく"
+
+[[case]]
+input = "横浜に行く"
+mode = "hiragana"
+expected = "よこはまにいく"
+
+[[case]]
+input = "川崎に行く"
+mode = "hiragana"
+expected = "かわさきにいく"
+
+[[case]]
+input = "千葉に行く"
+mode = "hiragana"
+expected = "ちばにいく"
+
+[[case]]
+input = "埼玉に行く"
+mode = "hiragana"
+expected = "さいたまにいく"
+
+[[case]]
+input = "栃木に行く"
+mode = "hiragana"
+expected = "とちぎにいく"
+
+[[case]]
+input = "群馬に行く"
+mode = "hiragana"
+expected = "ぐんまにいく"
+
+[[case]]
+input = "茨城に行く"
+mode = "hiragana"
+expected = "いばらきにいく"
+
+[[case]]
+input = "山梨に行く"
+mode = "hiragana"
+expected = "やまなしにいく"
+
+[[case]]
+input = "長野に行く"
+mode = "hiragana"
+expected = "ながのにいく"
+
+[[case]]
+input = "新潟に行く"
+mode = "hiragana"
+expected = "にいがたにいく"
+
+[[case]]
+input = "富山に行く"
+mode = "hiragana"
+expected = "とやまにいく"
+
+[[case]]
+input = "石川に行く"
+mode = "hiragana"
+expected = "いしかわにいく"
+
+[[case]]
+input = "福井に行く"
+mode = "hiragana"
+expected = "ふくいにいく"
+
+[[case]]
+input = "岐阜に行く"
+mode = "hiragana"
+expected = "ぎふにいく"
+
+[[case]]
+input = "静岡に行く"
+mode = "hiragana"
+expected = "しずおかにいく"
+
+[[case]]
+input = "愛知に行く"
+mode = "hiragana"
+expected = "あいちにいく"
+
+[[case]]
+input = "三重に行く"
+mode = "hiragana"
+expected = "みえにいく"
+
+[[case]]
+input = "滋賀に行く"
+mode = "hiragana"
+expected = "しがにいく"
+
+[[case]]
+input = "奈良に行く"
+mode = "hiragana"
+expected = "ならにいく"
+
+[[case]]
+input = "和歌山に行く"
+mode = "hiragana"
+expected = "わかやまにいく"
+
+[[case]]
+input = "兵庫に行く"
+mode = "hiragana"
+expected = "ひょうごにいく"
+
+[[case]]
+input = "岡山に行く"
+mode = "hiragana"
+expected = "おかやまにいく"
+
+[[case]]
+input = "鳥取に行く"
+mode = "hiragana"
+expected = "とっとりにいく"
+
+[[case]]
+input = "島根に行く"
+mode = "hiragana"
+expected = "しまねにいく"
+
+[[case]]
+input = "山口に行く"
+mode = "hiragana"
+expected = "やまぐちにいく"
+
+[[case]]
+input = "徳島に行く"
+mode = "hiragana"
+expected = "とくしまにいく"
+
+[[case]]
+input = "香川に行く"
+mode = "hiragana"
+expected = "かがわにいく"
+
+[[case]]
+input = "愛媛に行く"
+mode = "hiragana"
+expected = "えひめにいく"
+
+[[case]]
+input = "高知に行く"
+mode = "hiragana"
+expected = "こうちにいく"
+
+[[case]]
+input = "佐賀に行く"
+mode = "hiragana"
+expected = "さがにいく"
+
+[[case]]
+input = "長崎に行く"
+mode = "hiragana"
+expected = "ながさきにいく"
+
+[[case]]
+input = "熊本に行く"
+mode = "hiragana"
+expected = "くまもとにいく"
+
+[[case]]
+input = "宮崎に行く"
+mode = "hiragana"
+expected = "みやざきにいく"
+
+[[case]]
+input = "鹿児島に行く"
+mode = "hiragana"
+expected = "かごしまにいく"
+
+[[case]]
+input = "沖縄に行く"
+mode = "hiragana"
+expected = "おきなわにいく"
+
+[[case]]
+input = "北海道に行く"
+mode = "hiragana"
+expected = "ほっかいどうにいく"
+
+[[case]]
+input = "青森に行く"
+mode = "hiragana"
+expected = "あおもりにいく"
+
+[[case]]
+input = "岩手に行く"
+mode = "hiragana"
+expected = "いわてにいく"
+
+[[case]]
+input = "秋田に行く"
+mode = "hiragana"
+expected = "あきたにいく"
+
+[[case]]
+input = "山形に行く"
+mode = "hiragana"
+expected = "やまがたにいく"
+
+[[case]]
+input = "福島に行く"
+mode = "hiragana"
+expected = "ふくしまにいく"
+
+[[case]]
+input = "宮城に行く"
+mode = "hiragana"
+expected = "みやぎにいく"
+
+[[case]]
+input = "秋葉原に行く"
+mode = "hiragana"
+expected = "あきはばらにいく"
+
+[[case]]
+input = "新宿に行く"
+mode = "hiragana"
+expected = "しんじゅくにいく"
+
+[[case]]
+input = "渋谷に行く"
+mode = "hiragana"
+expected = "しぶやにいく"
+
+[[case]]
+input = "池袋に行く"
+mode = "hiragana"
+expected = "いけぶくろにいく"
+
+[[case]]
+input = "上野に行く"
+mode = "hiragana"
+expected = "うえのにいく"
+
+[[case]]
+input = "浅草に行く"
+mode = "hiragana"
+expected = "あさくさにいく"
+
+[[case]]
+input = "品川に行く"
+mode = "hiragana"
+expected = "しながわにいく"
+
+[[case]]
+input = "銀座に行く"
+mode = "hiragana"
+expected = "ぎんざにいく"
+
+[[case]]
+input = "六本木に行く"
+mode = "hiragana"
+expected = "ろっぽんぎにいく"
+
+[[case]]
+input = "原宿に行く"
+mode = "hiragana"
+expected = "はらじゅくにいく"
+
+[[case]]
+input = "代々木に行く"
+mode = "hiragana"
+expected = "よよぎにいく"
+
+[[case]]
+input = "吉祥寺に行く"
+mode = "hiragana"
+expected = "きちじょうじにいく"
+
+[[case]]
+input = "自由が丘に行く"
+mode = "hiragana"
+expected = "じゆうがおかにいく"
+
+[[case]]
+input = "恵比寿に行く"
+mode = "hiragana"
+expected = "えびすにいく"
+
+[[case]]
+input = "目黒に行く"
+mode = "hiragana"
+expected = "めぐろにいく"
+
+[[case]]
+input = "神田に行く"
+mode = "hiragana"
+expected = "かんだにいく"
+
+[[case]]
+input = "御茶ノ水に行く"
+mode = "hiragana"
+expected = "おちゃのみずにいく"
+
+[[case]]
+input = "難波に行く"
+mode = "hiragana"
+expected = "なんばにいく"
+
+[[case]]
+input = "梅田に行く"
+mode = "hiragana"
+expected = "うめだにいく"
+
+[[case]]
+input = "心斎橋に行く"
+mode = "hiragana"
+expected = "しんさいばしにいく"
+
+[[case]]
+input = "道頓堀に行く"
+mode = "hiragana"
+expected = "どうとんぼりにいく"
+
+[[case]]
+input = "天王寺に行く"
+mode = "hiragana"
+expected = "てんのうじにいく"
+
+[[case]]
+input = "太秦に行く"
+mode = "hiragana"
+expected = "うずまさにいく"
+
+[[case]]
+input = "祇園に行く"
+mode = "hiragana"
+expected = "ぎおんにいく"
+
+[[case]]
+input = "嵐山に行く"
+mode = "hiragana"
+expected = "あらしやまにいく"
+
+[[case]]
+input = "伏見に行く"
+mode = "hiragana"
+expected = "ふしみにいく"
+
+[[case]]
+input = "三宮に行く"
+mode = "hiragana"
+expected = "さんのみやにいく"
+
+[[case]]
+input = "元町に行く"
+mode = "hiragana"
+expected = "もとまちにいく"
+
+[[case]]
+input = "博多に行く"
+mode = "hiragana"
+expected = "はかたにいく"
+
+[[case]]
+input = "天神に行く"
+mode = "hiragana"
+expected = "てんじんにいく"
+
+[[case]]
+input = "国分寺に行く"
+mode = "hiragana"
+expected = "こくぶんじにいく"
+
+[[case]]
+input = "府中に行く"
+mode = "hiragana"
+expected = "ふちゅうにいく"
+
+[[case]]
+input = "調布に行く"
+mode = "hiragana"
+expected = "ちょうふにいく"
+
+[[case]]
+input = "八王子に行く"
+mode = "hiragana"
+expected = "はちおうじにいく"
+
+[[case]]
+input = "町田に行く"
+mode = "hiragana"
+expected = "まちだにいく"
+
+[[case]]
+input = "相模原に行く"
+mode = "hiragana"
+expected = "さがみはらにいく"
+
+[[case]]
+input = "藤沢に行く"
+mode = "hiragana"
+expected = "ふじさわにいく"
+
+[[case]]
+input = "鎌倉に行く"
+mode = "hiragana"
+expected = "かまくらにいく"
+
+[[case]]
+input = "逗子に行く"
+mode = "hiragana"
+expected = "ずしにいく"
+
+[[case]]
+input = "小田原に行く"
+mode = "hiragana"
+expected = "おだわらにいく"
+
+[[case]]
+input = "箱根に行く"
+mode = "hiragana"
+expected = "はこねにいく"
+
+[[case]]
+input = "熱海に行く"
+mode = "hiragana"
+expected = "あたみにいく"
+
+[[case]]
+input = "伊豆に行く"
+mode = "hiragana"
+expected = "いずにいく"
+
+[[case]]
+input = "軽井沢に行く"
+mode = "hiragana"
+expected = "かるいざわにいく"
+
+[[case]]
+input = "草津に行く"
+mode = "hiragana"
+expected = "くさつにいく"
+
+[[case]]
+input = "日光に行く"
+mode = "hiragana"
+expected = "にっこうにいく"
+
+[[case]]
+input = "那須に行く"
+mode = "hiragana"
+expected = "なすにいく"
+
+[[case]]
+input = "宇都宮に行く"
+mode = "hiragana"
+expected = "うつのみやにいく"
+
+[[case]]
+input = "水戸に行く"
+mode = "hiragana"
+expected = "みとにいく"
+
+[[case]]
+input = "筑波に行く"
+mode = "hiragana"
+expected = "つくばにいく"
+
+[[case]]
+input = "東京に行く"
+mode = "hiragana"
+expected = "とうきょうにいく"
+
+[[case]]
+input = "大阪に行く"
+mode = "hiragana"
+expected = "おおさかにいく"
+
+[[case]]
+input = "北千住に行く"
+mode = "hiragana"
+expected = "きたせんじゅにいく"
+
+[[case]]
+input = "錦糸町に行く"
+mode = "hiragana"
+expected = "きんしちょうにいく"
+
+[[case]]
+input = "御徒町に行く"
+mode = "hiragana"
+expected = "おかちまちにいく"
+
+[[case]]
+input = "巣鴨に行く"
+mode = "hiragana"
+expected = "すがもにいく"
+
+[[case]]
+input = "大塚に行く"
+mode = "hiragana"
+expected = "おおつかにいく"
+
+[[case]]
+input = "日暮里に行く"
+mode = "hiragana"
+expected = "にっぽりにいく"
+
+[[case]]
+input = "西日暮里に行く"
+mode = "hiragana"
+expected = "にしにっぽりにいく"
+
+[[case]]
+input = "田端に行く"
+mode = "hiragana"
+expected = "たばたにいく"
+
+[[case]]
+input = "王子に行く"
+mode = "hiragana"
+expected = "おうじにいく"
+
+[[case]]
+input = "赤羽に行く"
+mode = "hiragana"
+expected = "あかばねにいく"
+
+[[case]]
+input = "蒲田に行く"
+mode = "hiragana"
+expected = "かまたにいく"
+
+[[case]]
+input = "大森に行く"
+mode = "hiragana"
+expected = "おおもりにいく"
+
+[[case]]
+input = "五反田に行く"
+mode = "hiragana"
+expected = "ごたんだにいく"
+
+[[case]]
+input = "目白に行く"
+mode = "hiragana"
+expected = "めじろにいく"
+
+[[case]]
+input = "高田馬場に行く"
+mode = "hiragana"
+expected = "たかだのばばにいく"
+
+[[case]]
+input = "神楽坂に行く"
+mode = "hiragana"
+expected = "かぐらざかにいく"
+
+[[case]]
+input = "飯田橋に行く"
+mode = "hiragana"
+expected = "いいだばしにいく"
+
+[[case]]
+input = "四ツ谷に行く"
+mode = "hiragana"
+expected = "よつやにいく"
+
+[[case]]
+input = "市ヶ谷に行く"
+mode = "hiragana"
+expected = "いちがやにいく"
+
+[[case]]
+input = "千駄ヶ谷に行く"
+mode = "hiragana"
+expected = "せんだがやにいく"
+
+[[case]]
+input = "表参道に行く"
+mode = "hiragana"
+expected = "おもてさんどうにいく"
+
+[[case]]
+input = "青山に行く"
+mode = "hiragana"
+expected = "あおやまにいく"
+
+[[case]]
+input = "赤坂に行く"
+mode = "hiragana"
+expected = "あかさかにいく"
+
+[[case]]
+input = "麻布に行く"
+mode = "hiragana"
+expected = "あざぶにいく"
+
+[[case]]
+input = "虎ノ門に行く"
+mode = "hiragana"
+expected = "とらのもんにいく"
+
+[[case]]
+input = "新橋に行く"
+mode = "hiragana"
+expected = "しんばしにいく"
+
+[[case]]
+input = "有楽町に行く"
+mode = "hiragana"
+expected = "ゆうらくちょうにいく"
+
+[[case]]
+input = "日比谷に行く"
+mode = "hiragana"
+expected = "ひびやにいく"
+
+[[case]]
+input = "丸の内に行く"
+mode = "hiragana"
+expected = "まるのうちにいく"
+
+[[case]]
+input = "日本橋に行く"
+mode = "hiragana"
+expected = "にほんばしにいく"
+
+[[case]]
+input = "人形町に行く"
+mode = "hiragana"
+expected = "にんぎょうちょうにいく"
+
+[[case]]
+input = "築地に行く"
+mode = "hiragana"
+expected = "つきじにいく"
+
+[[case]]
+input = "豊洲に行く"
+mode = "hiragana"
+expected = "とよすにいく"
+
+[[case]]
+input = "台場に行く"
+mode = "hiragana"
+expected = "だいばにいく"
+
+[[case]]
+input = "葛西に行く"
+mode = "hiragana"
+expected = "かさいにいく"
+
+[[case]]
+input = "船橋に行く"
+mode = "hiragana"
+expected = "ふなばしにいく"
+
+[[case]]
+input = "柏に行く"
+mode = "hiragana"
+expected = "かしわにいく"
+
+[[case]]
+input = "松戸に行く"
+mode = "hiragana"
+expected = "まつどにいく"
+
+[[case]]
+input = "市川に行く"
+mode = "hiragana"
+expected = "いちかわにいく"
+
+[[case]]
+input = "津田沼に行く"
+mode = "hiragana"
+expected = "つだぬまにいく"
+
+[[case]]
+input = "幕張に行く"
+mode = "hiragana"
+expected = "まくはりにいく"
+
+[[case]]
+input = "成田に行く"
+mode = "hiragana"
+expected = "なりたにいく"
+
+[[case]]
+input = "木更津に行く"
+mode = "hiragana"
+expected = "きさらづにいく"
+
+[[case]]
+input = "館山に行く"
+mode = "hiragana"
+expected = "たてやまにいく"
+
+[[case]]
+input = "銚子に行く"
+mode = "hiragana"
+expected = "ちょうしにいく"
+
+[[case]]
+input = "大宮に行く"
+mode = "hiragana"
+expected = "おおみやにいく"
+
+[[case]]
+input = "浦和に行く"
+mode = "hiragana"
+expected = "うらわにいく"
+
+[[case]]
+input = "川越に行く"
+mode = "hiragana"
+expected = "かわごえにいく"
+
+[[case]]
+input = "所沢に行く"
+mode = "hiragana"
+expected = "ところざわにいく"
+
+[[case]]
+input = "熊谷に行く"
+mode = "hiragana"
+expected = "くまがやにいく"
+
+[[case]]
+input = "秩父に行く"
+mode = "hiragana"
+expected = "ちちぶにいく"
+
+[[case]]
+input = "川口に行く"
+mode = "hiragana"
+expected = "かわぐちにいく"
+
+[[case]]
+input = "越谷に行く"
+mode = "hiragana"
+expected = "こしがやにいく"
+
+[[case]]
+input = "春日部に行く"
+mode = "hiragana"
+expected = "かすかべにいく"
+
+[[case]]
+input = "田中さん"
+mode = "hiragana"
+expected = "たなかさん"
+
+[[case]]
+input = "佐藤さん"
+mode = "hiragana"
+expected = "さとうさん"
+
+[[case]]
+input = "鈴木さん"
+mode = "hiragana"
+expected = "すずきさん"
+
+[[case]]
+input = "高橋さん"
+mode = "hiragana"
+expected = "たかはしさん"
+
+[[case]]
+input = "渡辺さん"
+mode = "hiragana"
+expected = "わたなべさん"
+
+[[case]]
+input = "伊藤さん"
+mode = "hiragana"
+expected = "いとうさん"
+
+[[case]]
+input = "山本さん"
+mode = "hiragana"
+expected = "やまもとさん"
+
+[[case]]
+input = "中村さん"
+mode = "hiragana"
+expected = "なかむらさん"
+
+[[case]]
+input = "小林さん"
+mode = "hiragana"
+expected = "こばやしさん"
+
+[[case]]
+input = "加藤さん"
+mode = "hiragana"
+expected = "かとうさん"
+
+[[case]]
+input = "吉田さん"
+mode = "hiragana"
+expected = "よしださん"
+
+[[case]]
+input = "山田さん"
+mode = "hiragana"
+expected = "やまださん"
+
+[[case]]
+input = "佐々木さん"
+mode = "hiragana"
+expected = "ささきさん"
+
+[[case]]
+input = "松本さん"
+mode = "hiragana"
+expected = "まつもとさん"
+
+[[case]]
+input = "井上さん"
+mode = "hiragana"
+expected = "いのうえさん"
+
+[[case]]
+input = "木村さん"
+mode = "hiragana"
+expected = "きむらさん"
+
+[[case]]
+input = "林さん"
+mode = "hiragana"
+expected = "はやしさん"
+
+[[case]]
+input = "清水さん"
+mode = "hiragana"
+expected = "しみずさん"
+
+[[case]]
+input = "斎藤さん"
+mode = "hiragana"
+expected = "さいとうさん"
+
+[[case]]
+input = "山崎さん"
+mode = "hiragana"
+expected = "やまざきさん"
+
+[[case]]
+input = "森さん"
+mode = "hiragana"
+expected = "もりさん"
+
+[[case]]
+input = "池田さん"
+mode = "hiragana"
+expected = "いけださん"
+
+[[case]]
+input = "橋本さん"
+mode = "hiragana"
+expected = "はしもとさん"
+
+[[case]]
+input = "阿部さん"
+mode = "hiragana"
+expected = "あべさん"
+
+[[case]]
+input = "山下さん"
+mode = "hiragana"
+expected = "やましたさん"
+
+[[case]]
+input = "中島さん"
+mode = "hiragana"
+expected = "なかじまさん"
+
+[[case]]
+input = "石井さん"
+mode = "hiragana"
+expected = "いしいさん"
+
+[[case]]
+input = "小川さん"
+mode = "hiragana"
+expected = "おがわさん"
+
+[[case]]
+input = "前田さん"
+mode = "hiragana"
+expected = "まえださん"
+
+[[case]]
+input = "岡田さん"
+mode = "hiragana"
+expected = "おかださん"
+
+[[case]]
+input = "長谷川さん"
+mode = "hiragana"
+expected = "はせがわさん"
+
+[[case]]
+input = "藤田さん"
+mode = "hiragana"
+expected = "ふじたさん"
+
+[[case]]
+input = "後藤さん"
+mode = "hiragana"
+expected = "ごとうさん"
+
+[[case]]
+input = "近藤さん"
+mode = "hiragana"
+expected = "こんどうさん"
+
+[[case]]
+input = "村上さん"
+mode = "hiragana"
+expected = "むらかみさん"
+
+[[case]]
+input = "遠藤さん"
+mode = "hiragana"
+expected = "えんどうさん"
+
+[[case]]
+input = "青木さん"
+mode = "hiragana"
+expected = "あおきさん"
+
+[[case]]
+input = "坂本さん"
+mode = "hiragana"
+expected = "さかもとさん"
+
+[[case]]
+input = "福田さん"
+mode = "hiragana"
+expected = "ふくださん"
+
+[[case]]
+input = "太田さん"
+mode = "hiragana"
+expected = "おおたさん"
+
+[[case]]
+input = "西村さん"
+mode = "hiragana"
+expected = "にしむらさん"
+
+[[case]]
+input = "藤井さん"
+mode = "hiragana"
+expected = "ふじいさん"
+
+[[case]]
+input = "金子さん"
+mode = "hiragana"
+expected = "かねこさん"
+
+[[case]]
+input = "岡本さん"
+mode = "hiragana"
+expected = "おかもとさん"
+
+[[case]]
+input = "藤原さん"
+mode = "hiragana"
+expected = "ふじわらさん"
+
+[[case]]
+input = "三浦さん"
+mode = "hiragana"
+expected = "みうらさん"
+
+[[case]]
+input = "中野さん"
+mode = "hiragana"
+expected = "なかのさん"
+
+[[case]]
+input = "原田さん"
+mode = "hiragana"
+expected = "はらださん"
+
+[[case]]
+input = "松田さん"
+mode = "hiragana"
+expected = "まつださん"
+
+[[case]]
+input = "竹内さん"
+mode = "hiragana"
+expected = "たけうちさん"
+
+[[case]]
+input = "小野さん"
+mode = "hiragana"
+expected = "おのさん"
+
+[[case]]
+input = "田村さん"
+mode = "hiragana"
+expected = "たむらさん"
+
+[[case]]
+input = "中山さん"
+mode = "hiragana"
+expected = "なかやまさん"
+
+[[case]]
+input = "和田さん"
+mode = "hiragana"
+expected = "わださん"
+
+[[case]]
+input = "石田さん"
+mode = "hiragana"
+expected = "いしださん"
+
+[[case]]
+input = "上田さん"
+mode = "hiragana"
+expected = "うえださん"
+
+[[case]]
+input = "森田さん"
+mode = "hiragana"
+expected = "もりたさん"
+
+[[case]]
+input = "原さん"
+mode = "hiragana"
+expected = "はらさん"
+
+[[case]]
+input = "柴田さん"
+mode = "hiragana"
+expected = "しばたさん"
+
+[[case]]
+input = "酒井さん"
+mode = "hiragana"
+expected = "さかいさん"
+
+[[case]]
+input = "工藤さん"
+mode = "hiragana"
+expected = "くどうさん"
+
+[[case]]
+input = "横山さん"
+mode = "hiragana"
+expected = "よこやまさん"
+
+[[case]]
+input = "宮本さん"
+mode = "hiragana"
+expected = "みやもとさん"
+
+[[case]]
+input = "内田さん"
+mode = "hiragana"
+expected = "うちださん"
+
+[[case]]
+input = "高木さん"
+mode = "hiragana"
+expected = "たかぎさん"
+
+[[case]]
+input = "谷口さん"
+mode = "hiragana"
+expected = "たにぐちさん"
+
+[[case]]
+input = "今井さん"
+mode = "hiragana"
+expected = "いまいさん"
+
+[[case]]
+input = "高田さん"
+mode = "hiragana"
+expected = "たかださん"
+
+[[case]]
+input = "丸山さん"
+mode = "hiragana"
+expected = "まるやまさん"
+
+[[case]]
+input = "増田さん"
+mode = "hiragana"
+expected = "ますださん"
+
+[[case]]
+input = "杉山さん"
+mode = "hiragana"
+expected = "すぎやまさん"
+
+[[case]]
+input = "村田さん"
+mode = "hiragana"
+expected = "むらたさん"
+
+[[case]]
+input = "大野さん"
+mode = "hiragana"
+expected = "おおのさん"
+
+[[case]]
+input = "平野さん"
+mode = "hiragana"
+expected = "ひらのさん"
+
+[[case]]
+input = "菅原さん"
+mode = "hiragana"
+expected = "すがわらさん"
+
+[[case]]
+input = "小島さん"
+mode = "hiragana"
+expected = "こじまさん"
+
+[[case]]
+input = "久保さん"
+mode = "hiragana"
+expected = "くぼさん"
+
+[[case]]
+input = "松井さん"
+mode = "hiragana"
+expected = "まついさん"
+
+[[case]]
+input = "岩崎さん"
+mode = "hiragana"
+expected = "いわさきさん"
+
+[[case]]
+input = "桑原さん"
+mode = "hiragana"
+expected = "くわばらさん"
+
+[[case]]
+input = "野口さん"
+mode = "hiragana"
+expected = "のぐちさん"
+
+[[case]]
+input = "松尾さん"
+mode = "hiragana"
+expected = "まつおさん"
+
+[[case]]
+input = "野村さん"
+mode = "hiragana"
+expected = "のむらさん"
+
+[[case]]
+input = "木下さん"
+mode = "hiragana"
+expected = "きのしたさん"
+
+[[case]]
+input = "菊地さん"
+mode = "hiragana"
+expected = "きくちさん"
+
+[[case]]
+input = "佐野さん"
+mode = "hiragana"
+expected = "さのさん"
+
+[[case]]
+input = "大西さん"
+mode = "hiragana"
+expected = "おおにしさん"
+
+[[case]]
+input = "杉本さん"
+mode = "hiragana"
+expected = "すぎもとさん"
+
+[[case]]
+input = "新井さん"
+mode = "hiragana"
+expected = "あらいさん"
+
+[[case]]
+input = "浜田さん"
+mode = "hiragana"
+expected = "はまださん"
+
+[[case]]
+input = "星野さん"
+mode = "hiragana"
+expected = "ほしのさん"
+
+[[case]]
+input = "河野さん"
+mode = "hiragana"
+expected = "こうのさん"
+
+[[case]]
+input = "武田さん"
+mode = "hiragana"
+expected = "たけださん"
+
+[[case]]
+input = "小山さん"
+mode = "hiragana"
+expected = "こやまさん"
+
+[[case]]
+input = "島田さん"
+mode = "hiragana"
+expected = "しまださん"
+
+[[case]]
+input = "安藤さん"
+mode = "hiragana"
+expected = "あんどうさん"
+
+[[case]]
+input = "荒井さん"
+mode = "hiragana"
+expected = "あらいさん"
+
+[[case]]
+input = "本田さん"
+mode = "hiragana"
+expected = "ほんださん"
+
+[[case]]
+input = "西田さん"
+mode = "hiragana"
+expected = "にしださん"
+
+[[case]]
+input = "樋口さん"
+mode = "hiragana"
+expected = "ひぐちさん"
+
+[[case]]
+input = "平田さん"
+mode = "hiragana"
+expected = "ひらたさん"
+
+[[case]]
+input = "山内さん"
+mode = "hiragana"
+expected = "やまうちさん"
+
+[[case]]
+input = "水野さん"
+mode = "hiragana"
+expected = "みずのさん"
+
+[[case]]
+input = "久保田さん"
+mode = "hiragana"
+expected = "くぼたさん"
+
+[[case]]
+input = "堀さん"
+mode = "hiragana"
+expected = "ほりさん"
+
+[[case]]
+input = "堀内さん"
+mode = "hiragana"
+expected = "ほりうちさん"
+
+[[case]]
+input = "鎌田さん"
+mode = "hiragana"
+expected = "かまたさん"
+
+[[case]]
+input = "三宅さん"
+mode = "hiragana"
+expected = "みやけさん"
+
+[[case]]
+input = "尾崎さん"
+mode = "hiragana"
+expected = "おざきさん"
+
+[[case]]
+input = "大橋さん"
+mode = "hiragana"
+expected = "おおはしさん"
+
+[[case]]
+input = "北村さん"
+mode = "hiragana"
+expected = "きたむらさん"
+
+[[case]]
+input = "吉川さん"
+mode = "hiragana"
+expected = "よしかわさん"
+
+[[case]]
+input = "秋山さん"
+mode = "hiragana"
+expected = "あきやまさん"
+
+[[case]]
+input = "栗原さん"
+mode = "hiragana"
+expected = "くりはらさん"
+
+[[case]]
+input = "馬場さん"
+mode = "hiragana"
+expected = "ばばさん"
+
+[[case]]
+input = "石原さん"
+mode = "hiragana"
+expected = "いしはらさん"
+
+[[case]]
+input = "土屋さん"
+mode = "hiragana"
+expected = "つちやさん"
+
+[[case]]
+input = "小松さん"
+mode = "hiragana"
+expected = "こまつさん"
+
+[[case]]
+input = "内藤さん"
+mode = "hiragana"
+expected = "ないとうさん"
+
+[[case]]
+input = "古川さん"
+mode = "hiragana"
+expected = "ふるかわさん"
+
+[[case]]
+input = "岩田さん"
+mode = "hiragana"
+expected = "いわたさん"
+
+[[case]]
+input = "辻さん"
+mode = "hiragana"
+expected = "つじさん"
+
+[[case]]
+input = "杉浦さん"
+mode = "hiragana"
+expected = "すぎうらさん"
+
+[[case]]
+input = "宮田さん"
+mode = "hiragana"
+expected = "みやたさん"
+
+[[case]]
+input = "大久保さん"
+mode = "hiragana"
+expected = "おおくぼさん"
+
+[[case]]
+input = "服部さん"
+mode = "hiragana"
+expected = "はっとりさん"
+
+[[case]]
+input = "浅野さん"
+mode = "hiragana"
+expected = "あさのさん"
+
+[[case]]
+input = "西川さん"
+mode = "hiragana"
+expected = "にしかわさん"
+
+[[case]]
+input = "戸田さん"
+mode = "hiragana"
+expected = "とださん"
+
+[[case]]
+input = "大谷さん"
+mode = "hiragana"
+expected = "おおたにさん"
+
+[[case]]
+input = "河合さん"
+mode = "hiragana"
+expected = "かわいさん"
+
+[[case]]
+input = "篠原さん"
+mode = "hiragana"
+expected = "しのはらさん"
+
+[[case]]
+input = "加賀さん"
+mode = "hiragana"
+expected = "かがさん"
+
+[[case]]
+input = "日高さん"
+mode = "hiragana"
+expected = "ひだかさん"
+
+[[case]]
+input = "神谷さん"
+mode = "hiragana"
+expected = "かみやさん"
+
+[[case]]
+input = "曽根さん"
+mode = "hiragana"
+expected = "そねさん"
+
+[[case]]
+input = "大分に行く"
+mode = "hiragana"
+expected = "おおいたにいく"
+
+[[case]]
+input = "大分良くなった"
+mode = "hiragana"
+expected = "だいぶよくなった"
+
+[[case]]
+input = "大分県"
+mode = "hiragana"
+expected = "おおいたけん"
+
+[[case]]
+input = "大分旅行に行く"
+mode = "hiragana"
+expected = "おおいたりょこうにいく"
+
+[[case]]
+input = "関さん"
+mode = "hiragana"
+expected = "せきさん"
+
+[[case]]
+input = "関君"
+mode = "hiragana"
+expected = "せきくん"
+
+[[case]]
+input = "関ちゃん"
+mode = "hiragana"
+expected = "せきちゃん"
+
+[[case]]
+input = "関西"
+mode = "hiragana"
+expected = "かんさい"
+
+[[case]]
+input = "関係"
+mode = "hiragana"
+expected = "かんけい"
+
+[[case]]
+input = "関東"
+mode = "hiragana"
+expected = "かんとう"
+
+[[case]]
+input = "熊谷さん"
+mode = "hiragana"
+expected = "くまがいさん"
+
+[[case]]
+input = "熊谷市"
+mode = "hiragana"
+expected = "くまがやし"
+
+[[case]]
+input = "熊谷駅"
+mode = "hiragana"
+expected = "くまがやえき"
+
+[[case]]
+input = "須藤さん"
+mode = "hiragana"
+expected = "すどうさん"
+
+[[case]]
+input = "関の山"
+mode = "hiragana"
+expected = "せきのやま"
+
+[[case]]
+input = "関取"
+mode = "hiragana"
+expected = "せきとり"
