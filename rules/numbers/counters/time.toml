@@ -246,12 +246,47 @@ default = "ネンド"
 # === end: 年度 ===
 
 # === begin: 時間半 ===
-# 「2時間半」を ニジカンハン と読ませる
+# 「2時間半」を ニジカンハン と読ませる。 4 / 7 / 9 は 時 と同じ音便 (よじかんはん / しちじかんはん / くじかんはん)
 [counter."時間半"]
 default = "ジカンハン"
-# 注: 四時間半/九時間半 の特殊読み (よじ/くじ) は lib の counter matching 上
-# replacements が発火しないため未対応 (四時間半=よんじかんはん のまま、稀用法)。
+kanji_numeral = true  # 九時半=くじはん / 四時半=よじはん / 七時半=しちじはん (時と同じ)
+
+[[counter."時間半".replacements]]
+last_digit = [4]
+from = "ヨン"
+to = "ヨ"
+
+[[counter."時間半".replacements]]
+last_digit = [7]
+from = "ナナ"
+to = "シチ"
+
+[[counter."時間半".replacements]]
+last_digit = [9]
+from = "キュウ"
+to = "ク"
 # === end: 時間半 ===
+
+# === begin: 時半 ===
+[counter."時半"]
+default = "ジハン"
+kanji_numeral = true  # 九時半=くじはん / 四時半=よじはん / 七時半=しちじはん (時と同じ)
+
+[[counter."時半".replacements]]
+last_digit = [4]
+from = "ヨン"
+to = "ヨ"
+
+[[counter."時半".replacements]]
+last_digit = [7]
+from = "ナナ"
+to = "シチ"
+
+[[counter."時半".replacements]]
+last_digit = [9]
+from = "キュウ"
+to = "ク"
+# === end: 時半 ===
 
 # === begin: 年 ===
 # Lindera default で「ねん」が出るが、念のため counter として明示

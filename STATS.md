@@ -30,8 +30,8 @@ git に commit されている master HEAD の状態を基準にする。
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **5,875** | **269 KB** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,796** | **393 KB** |
 | [**異体字**](#異体字) (`rules/compat.toml`) | **436** | **6.1 KB** |
-| [**エンジンルール**](#エンジンルール) (`rules/`) | **1,036** | **66 KB** |
-| **合計** | **89,494** | **3.03 MB** |
+| [**エンジンルール**](#エンジンルール) (`rules/`) | **1,035** | **67 KB** |
+| **合計** | **89,493** | **3.03 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -345,7 +345,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 `rules/` — エンジン挙動 (助数詞 / 文脈 / 後処理 等) を制御するルール群。 lib コードに embed されるのではなく、 ここで宣言的に外部化されている。
 
 <!-- AUTO-GENERATED:RULES:BEGIN -->
-**合計**: 1,036 エントリ / 1,103 ルール / 66 KB (genre 2 区分)
+**合計**: 1,035 エントリ / 1,104 ルール / 67 KB (genre 2 区分)
 
 #### 数値系
 
@@ -356,16 +356,16 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 | ファイル | エントリ数 | ルール数 | サイズ | 用途 |
 |---|---:|---:|---:|---|
 | [`rules/numbers/counters/objects.toml`](rules/numbers/counters/objects.toml) | 90 | 176 | 17 KB | 物を数える助数詞 (本 / 匹 / 杯 / 個 / 歳 / 冊、 連濁 / 促音化) |
-| [`rules/numbers/counters/time.toml`](rules/numbers/counters/time.toml) | 27 | 40 | 5.6 KB | 時間系助数詞 (月 / 日 / 時 / 分 / 週間 / 回、 4/7/9 の特殊読み + カナ末尾置換) |
+| [`rules/numbers/counters/time.toml`](rules/numbers/counters/time.toml) | 28 | 41 | 6.3 KB | 時間系助数詞 (月 / 日 / 時 / 分 / 週間 / 回、 4/7/9 の特殊読み + カナ末尾置換) |
 | [`rules/numbers/numeric_phrases.toml`](rules/numbers/numeric_phrases.toml) | 37 | 37 | 1.2 KB | 数字を含む例外語句 (二十歳→ハタチ / 明後日→アサッテ 等、 助数詞ルールより先に確定) |
 | [`rules/numbers/days.toml`](rules/numbers/days.toml) | 31 | 31 | 978 B | 1〜31 日の特殊読み (1→ツイタチ / 20→ハツカ 等) |
 | [`rules/numbers/scales.toml`](rules/numbers/scales.toml) | 19 | 19 | 1.0 KB | 大数スケール (万 / 億 / 兆 / 京 / 垓 / 不可思議 / 無量大数 等、 大→小順、 N+漢字単位 連結用) |
 | [`rules/numbers/counters/places.toml`](rules/numbers/counters/places.toml) | 4 | 9 | 1.2 KB | 場所を数える助数詞 (階 / ヶ所 / 箇所 / か所、 連濁 / 促音化) |
-| [`rules/numbers/counters/simple.toml`](rules/numbers/counters/simple.toml) | 44 | 5 | 1.4 KB | 単純サフィックス助数詞 (円 / 点 / 度 / 名 / 話 等、 数値カナ + value 連結のみ) |
+| [`rules/numbers/counters/simple.toml`](rules/numbers/counters/simple.toml) | 42 | 5 | 1.3 KB | 単純サフィックス助数詞 (円 / 点 / 度 / 名 / 話 等、 数値カナ + value 連結のみ) |
 | [`rules/numbers/counters/percent.toml`](rules/numbers/counters/percent.toml) | 2 | 4 | 583 B | パーセンテージ (% / ％、 1/6/8/0 で促音化 + パーセント) |
 | [`rules/numbers/counters/people.toml`](rules/numbers/counters/people.toml) | 1 | 1 | 225 B | 人を数える助数詞 (人、 1=ヒトリ / 2=フタリ の特殊読み) |
 | [`rules/numbers/counters/recursive.toml`](rules/numbers/counters/recursive.toml) | 1 | 1 | 202 B | 再帰モード助数詞 (個目 / 階目 等、 既存助数詞解決後に末尾連結) |
-| **小計** (10 ファイル) | **256** | **323** | **29 KB** | |
+| **小計** (10 ファイル) | **255** | **324** | **30 KB** | |
 
 #### テキスト系
 
@@ -407,7 +407,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 13854 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 13925 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -420,6 +420,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/counter_kanji_numeral_20260617.toml`](tests/corpus/should_read/counter_kanji_numeral_20260617.toml) | 13 |
 |  | [`tests/corpus/should_read/ctx_counters_20261014.toml`](tests/corpus/should_read/ctx_counters_20261014.toml) | 215 |
 |  | [`tests/corpus/should_read/ctx_dates_20261014.toml`](tests/corpus/should_read/ctx_dates_20261014.toml) | 131 |
+|  | [`tests/corpus/should_read/ctx_numbers_20261014.toml`](tests/corpus/should_read/ctx_numbers_20261014.toml) | 71 |
 |  | [`tests/corpus/should_read/ctx_sense2_20261014.toml`](tests/corpus/should_read/ctx_sense2_20261014.toml) | 161 |
 |  | [`tests/corpus/should_read/ctx_sense3_20261014.toml`](tests/corpus/should_read/ctx_sense3_20261014.toml) | 244 |
 |  | [`tests/corpus/should_read/ctx_sense_20261014.toml`](tests/corpus/should_read/ctx_sense_20261014.toml) | 95 |

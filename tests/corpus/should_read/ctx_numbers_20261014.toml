@@ -1,0 +1,356 @@
+# 2026-10-14 時刻・金額・年齢・順位・数の読み (9時半 = くじはん / 4時間半 = よじかんはん 等)
+
+[[case]]
+input = "3:30に集合"
+mode = "hiragana"
+expected = "さんじさんじゅっぷんにしゅうごう"
+
+[[case]]
+input = "9時半に起きる"
+mode = "hiragana"
+expected = "くじはんにおきる"
+
+[[case]]
+input = "12時15分です"
+mode = "hiragana"
+expected = "じゅうにじじゅうごふんです"
+
+[[case]]
+input = "午前0時"
+mode = "hiragana"
+expected = "ごぜんれいじ"
+
+[[case]]
+input = "午後3時"
+mode = "hiragana"
+expected = "ごごさんじ"
+
+[[case]]
+input = "25時まで"
+mode = "hiragana"
+expected = "にじゅうごじまで"
+
+[[case]]
+input = "4時です"
+mode = "hiragana"
+expected = "よじです"
+
+[[case]]
+input = "7時です"
+mode = "hiragana"
+expected = "しちじです"
+
+[[case]]
+input = "9時です"
+mode = "hiragana"
+expected = "くじです"
+
+[[case]]
+input = "17時です"
+mode = "hiragana"
+expected = "じゅうしちじです"
+
+[[case]]
+input = "19時です"
+mode = "hiragana"
+expected = "じゅうくじです"
+
+[[case]]
+input = "1時間"
+mode = "hiragana"
+expected = "いちじかん"
+
+[[case]]
+input = "4時間"
+mode = "hiragana"
+expected = "よじかん"
+
+[[case]]
+input = "7時間"
+mode = "hiragana"
+expected = "しちじかん"
+
+[[case]]
+input = "9時間"
+mode = "hiragana"
+expected = "くじかん"
+
+[[case]]
+input = "24時間"
+mode = "hiragana"
+expected = "にじゅうよじかん"
+
+[[case]]
+input = "12時間"
+mode = "hiragana"
+expected = "じゅうにじかん"
+
+[[case]]
+input = "10分"
+mode = "hiragana"
+expected = "じゅっぷん"
+
+[[case]]
+input = "3分"
+mode = "hiragana"
+expected = "さんぷん"
+
+[[case]]
+input = "1分"
+mode = "hiragana"
+expected = "いっぷん"
+
+[[case]]
+input = "6分"
+mode = "hiragana"
+expected = "ろっぷん"
+
+[[case]]
+input = "8分"
+mode = "hiragana"
+expected = "はっぷん"
+
+[[case]]
+input = "100分"
+mode = "hiragana"
+expected = "ひゃっぷん"
+
+[[case]]
+input = "30秒"
+mode = "hiragana"
+expected = "さんじゅうびょう"
+
+[[case]]
+input = "1秒"
+mode = "hiragana"
+expected = "いちびょう"
+
+[[case]]
+input = "100円"
+mode = "hiragana"
+expected = "ひゃくえん"
+
+[[case]]
+input = "300円"
+mode = "hiragana"
+expected = "さんびゃくえん"
+
+[[case]]
+input = "600円"
+mode = "hiragana"
+expected = "ろっぴゃくえん"
+
+[[case]]
+input = "800円"
+mode = "hiragana"
+expected = "はっぴゃくえん"
+
+[[case]]
+input = "1000円"
+mode = "hiragana"
+expected = "せんえん"
+
+[[case]]
+input = "3000円"
+mode = "hiragana"
+expected = "さんぜんえん"
+
+[[case]]
+input = "8000円"
+mode = "hiragana"
+expected = "はっせんえん"
+
+[[case]]
+input = "10000円"
+mode = "hiragana"
+expected = "いちまんえん"
+
+[[case]]
+input = "1万円"
+mode = "hiragana"
+expected = "いちまんえん"
+
+[[case]]
+input = "12345円"
+mode = "hiragana"
+expected = "いちまんにせんさんびゃくよんじゅうごえん"
+
+[[case]]
+input = "1億円"
+mode = "hiragana"
+expected = "いちおくえん"
+
+[[case]]
+input = "3000万円"
+mode = "hiragana"
+expected = "さんぜんまんえん"
+
+[[case]]
+input = "1.5万円"
+mode = "hiragana"
+expected = "いちてんごまんえん"
+
+[[case]]
+input = "¥100"
+mode = "hiragana"
+expected = "ひゃくえん"
+
+[[case]]
+input = "1000"
+mode = "hiragana"
+expected = "せん"
+
+[[case]]
+input = "10000"
+mode = "hiragana"
+expected = "いちまん"
+
+[[case]]
+input = "1,234"
+mode = "hiragana"
+expected = "せんにひゃくさんじゅうよん"
+
+[[case]]
+input = "3.14"
+mode = "hiragana"
+expected = "さんてんいちよん"
+
+[[case]]
+input = "0.5"
+mode = "hiragana"
+expected = "ぜろてんご"
+
+[[case]]
+input = "1/2"
+mode = "hiragana"
+expected = "にぶんのいち"
+
+[[case]]
+input = "3倍"
+mode = "hiragana"
+expected = "さんばい"
+
+[[case]]
+input = "第3回"
+mode = "hiragana"
+expected = "だいさんかい"
+
+[[case]]
+input = "3番目"
+mode = "hiragana"
+expected = "さんばんめ"
+
+[[case]]
+input = "1位"
+mode = "hiragana"
+expected = "いちい"
+
+[[case]]
+input = "2位"
+mode = "hiragana"
+expected = "にい"
+
+[[case]]
+input = "3位"
+mode = "hiragana"
+expected = "さんい"
+
+[[case]]
+input = "4位"
+mode = "hiragana"
+expected = "よんい"
+
+[[case]]
+input = "10位"
+mode = "hiragana"
+expected = "じゅうい"
+
+[[case]]
+input = "30歳"
+mode = "hiragana"
+expected = "さんじゅっさい"
+
+[[case]]
+input = "18歳"
+mode = "hiragana"
+expected = "じゅうはっさい"
+
+[[case]]
+input = "100歳"
+mode = "hiragana"
+expected = "ひゃくさい"
+
+[[case]]
+input = "8歳"
+mode = "hiragana"
+expected = "はっさい"
+
+[[case]]
+input = "6歳"
+mode = "hiragana"
+expected = "ろくさい"
+
+[[case]]
+input = "1時半"
+mode = "hiragana"
+expected = "いちじはん"
+
+[[case]]
+input = "4時半"
+mode = "hiragana"
+expected = "よじはん"
+
+[[case]]
+input = "7時半"
+mode = "hiragana"
+expected = "しちじはん"
+
+[[case]]
+input = "9時半"
+mode = "hiragana"
+expected = "くじはん"
+
+[[case]]
+input = "14時半"
+mode = "hiragana"
+expected = "じゅうよじはん"
+
+[[case]]
+input = "九時半"
+mode = "hiragana"
+expected = "くじはん"
+
+[[case]]
+input = "四時半"
+mode = "hiragana"
+expected = "よじはん"
+
+[[case]]
+input = "2時間半"
+mode = "hiragana"
+expected = "にじかんはん"
+
+[[case]]
+input = "4時間半"
+mode = "hiragana"
+expected = "よじかんはん"
+
+[[case]]
+input = "7時間半"
+mode = "hiragana"
+expected = "しちじかんはん"
+
+[[case]]
+input = "9時間半"
+mode = "hiragana"
+expected = "くじかんはん"
+
+[[case]]
+input = "九時間半"
+mode = "hiragana"
+expected = "くじかんはん"
+
+[[case]]
+input = "1分半"
+mode = "hiragana"
+expected = "いっぷんはん"
