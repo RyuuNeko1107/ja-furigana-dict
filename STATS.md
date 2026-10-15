@@ -24,14 +24,14 @@ git に commit されている master HEAD の状態を基準にする。
 | カテゴリ | エントリ数 | サイズ |
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,654** | **728 KB** |
-| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **33,456** | **1.38 MB** |
+| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **34,535** | **1.43 MB** |
 | [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,706** | **133 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **3,537** | **98 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **5,884** | **272 KB** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,796** | **395 KB** |
 | [**異体字**](#異体字) (`rules/compat.toml`) | **436** | **6.1 KB** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **1,038** | **68 KB** |
-| **合計** | **89,507** | **3.04 MB** |
+| **合計** | **90,586** | **3.09 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -56,7 +56,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/jukugo/<genre>/*` — 手動 PR メンテのジャンル別 jukugo (≥ 2 字 surface)。 lib の Step 3 (jukugo lookup) で Lindera より優先採用。 各 genre dir の `_genre.toml` がカテゴリ description を持つ。
 
-**合計**: 33,456 件 / 1.38 MB (genre 6 区分)
+**合計**: 34,535 件 / 1.43 MB (genre 6 区分)
 
 #### 自然・生命
 
@@ -160,14 +160,15 @@ git に commit されている master HEAD の状態を基準にする。
 
 一般熟語 / 四字熟語 — 全カテゴリに横断する基本語彙
 
-`core/jukugo/basic/` — 3 ファイル
+`core/jukugo/basic/` — 4 ファイル
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
 | [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml) | 7,835 | 343 KB | 二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む) |
+| [`core/jukugo/basic/ndlsh_terms.toml`](core/jukugo/basic/ndlsh_terms.toml) | 1,079 | 47 KB | NDLSH 参照の専門用語・分類名・王朝名などの読み (確認済みのみ) |
 | [`core/jukugo/basic/four_char.toml`](core/jukugo/basic/four_char.toml) | 36 | 2.5 KB | 四字熟語 (4 字 + 全 CJK 漢字) |
 | [`core/jukugo/basic/split_guard.toml`](core/jukugo/basic/split_guard.toml) | 33 | 4.0 KB | Lindera の 「熟語 + か」 分割に負けないための tie-break entry |
-| **小計** (3 ファイル) | **7,904** | **349 KB** | |
+| **小計** (4 ファイル) | **8,983** | **396 KB** | |
 
 
 ### 作品造語
