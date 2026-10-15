@@ -27,3 +27,48 @@ expected = "たたないのがなやみ"
 input = "和尚さんと高尚な話"
 mode = "hiragana"
 expected = "おしょうさんとこうしょうなはなし"
+
+[[case]]
+input = "絵に描いたようなオタク"
+mode = "hiragana"
+expected = "えにかいたようなオタク"
+
+[[case]]
+input = "イラスト描いてる"
+mode = "hiragana"
+expected = "イラストかいてる"
+
+[[case]]
+input = "絵描くの楽しい"
+mode = "hiragana"
+expected = "えかくのたのしい"
+
+[[case]]
+input = "絵が描けない"
+mode = "hiragana"
+expected = "えがかけない"
+
+[[case]]
+input = "戦争を描いている"
+mode = "hiragana"
+expected = "せんそうをえがいている"
+
+[[case]]
+input = "大分でかいな"
+mode = "hiragana"
+expected = "だいぶでかいな"
+
+[[case]]
+input = "大分で泊まる"
+mode = "hiragana"
+expected = "おおいたでとまる"
+
+[[case]]
+input = "これやり辛いんじゃないか"
+mode = "hiragana"
+expected = "これやりづらいんじゃないか"
+
+[[case]]
+input = "絵が描ける人"
+mode = "hiragana"
+expected = "えがかけるひと"
