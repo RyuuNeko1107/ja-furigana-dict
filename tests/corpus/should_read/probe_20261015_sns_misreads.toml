@@ -87,3 +87,33 @@ expected = "もじかきたいぞ"
 input = "メモ書きと箇条書き"
 mode = "hiragana"
 expected = "めもがきとかじょうがき"
+
+[[case]]
+input = "あと三分で着く"
+mode = "hiragana"
+expected = "あとさんぷんでつく"
+
+[[case]]
+input = "あと五分待って"
+mode = "hiragana"
+expected = "あとごふんまって"
+
+[[case]]
+input = "約一分かかる"
+mode = "hiragana"
+expected = "やくいっぷんかかる"
+
+[[case]]
+input = "あと十分で終わる"
+mode = "hiragana"
+expected = "あとじゅっぷんでおわる"
+
+[[case]]
+input = "三分の二が賛成"
+mode = "hiragana"
+expected = "さんぶんのにがさんせい"
+
+[[case]]
+input = "五分五分の勝負"
+mode = "hiragana"
+expected = "ごぶごぶのしょうぶ"
