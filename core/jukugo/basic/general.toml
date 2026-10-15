@@ -7197,6 +7197,11 @@ next2_starts_any = ["暮", "生", "続", "営"]
 [entries."十分"]
 reading = "ジュウブン"
 
+# あと十分 / 約十分 / たった十分 = 10 分 (ジュップン)
+[[entries."十分".match]]
+reading = "ジュップン"
+prev_eq_any = ["あと", "約", "ほぼ", "ざっと", "たった", "わずか"]
+
 [[entries."十分".match]]
 reading = "ジュウブン"
 next_eq = "な"
@@ -7235,11 +7240,6 @@ next_starts_any = ["待", "経", "過"]
 [[entries."十分".match]]
 reading = "ジュップン"
 next_starts_any = ["毎", "程", "足", "半", "ほど", "くらい", "ぐらい", "ごと", "ずつ", "から", "まで", "かかる", "かけて", "しか"]
-
-# あと十分 / 約十分 / たった十分 = 10 分 (ジュップン)
-[[entries."十分".match]]
-reading = "ジュップン"
-prev_eq_any = ["あと", "約", "ほぼ", "ざっと", "たった", "わずか"]
 
 [[entries."十分".alt]]
 reading = "ジュップン"
