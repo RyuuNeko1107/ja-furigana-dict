@@ -24,14 +24,14 @@ git に commit されている master HEAD の状態を基準にする。
 | カテゴリ | エントリ数 | サイズ |
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,654** | **728 KB** |
-| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **33,455** | **1.38 MB** |
-| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,705** | **133 KB** |
+| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **33,456** | **1.38 MB** |
+| [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,706** | **133 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **3,537** | **98 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **5,878** | **269 KB** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,796** | **394 KB** |
 | [**異体字**](#異体字) (`rules/compat.toml`) | **436** | **6.1 KB** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **1,038** | **68 KB** |
-| **合計** | **89,499** | **3.04 MB** |
+| **合計** | **89,501** | **3.04 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -56,7 +56,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/jukugo/<genre>/*` — 手動 PR メンテのジャンル別 jukugo (≥ 2 字 surface)。 lib の Step 3 (jukugo lookup) で Lindera より優先採用。 各 genre dir の `_genre.toml` がカテゴリ description を持つ。
 
-**合計**: 33,455 件 / 1.38 MB (genre 6 区分)
+**合計**: 33,456 件 / 1.38 MB (genre 6 区分)
 
 #### 自然・生命
 
@@ -133,11 +133,11 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/jukugo/proper/personal_names.toml`](core/jukugo/proper/personal_names.toml) | 522 | 28 KB | 人名 (戦国 / 平安 / 江戸 / 明治大正 / 古典作家、現代私人除く) |
 | [`core/jukugo/proper/municipalities.toml`](core/jukugo/proper/municipalities.toml) | 432 | 16 KB | 市町村名 (郵便番号データの正式な読み) |
 | [`core/jukugo/proper/kami_names.toml`](core/jukugo/proper/kami_names.toml) | 363 | 19 KB | 神名 (Wikipedia の読みがそろう X命 / X尊) |
-| [`core/jukugo/proper/surnames.toml`](core/jukugo/proper/surnames.toml) | 293 | 26 KB | 難読姓 (苗字) の読み (姓単体、代表読み) |
+| [`core/jukugo/proper/surnames.toml`](core/jukugo/proper/surnames.toml) | 294 | 26 KB | 難読姓 (苗字) の読み (姓単体、代表読み) |
 | [`core/jukugo/proper/sumo_shikona.toml`](core/jukugo/proper/sumo_shikona.toml) | 45 | 3.4 KB | 大相撲 力士の四股名 (公式読み) |
 | [`core/jukugo/proper/proper_nouns.toml`](core/jukugo/proper/proper_nouns.toml) | 37 | 2.1 KB | 固有名詞 (大学 / 中央官庁 / 元号 / 歴史的事象、PR 募集中) |
 | [`core/jukugo/proper/sake_brands.toml`](core/jukugo/proper/sake_brands.toml) | 32 | 2.2 KB | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
-| **小計** (9 ファイル) | **12,462** | **561 KB** | |
+| **小計** (9 ファイル) | **12,463** | **561 KB** | |
 
 #### 物体・工芸
 
@@ -174,7 +174,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/works/<medium>/*` — 媒体 (game / literature 等) ごとに 1 作品 1 ファイル。 原則は公式読み (一般通称として定着していれば採録可)、 出典コメント必須、 古典読みは現代読み無い場合のみ。
 
-**合計**: 1,705 件 / 133 KB (genre 4 区分)
+**合計**: 1,706 件 / 133 KB (genre 4 区分)
 
 #### ゲーム
 
@@ -185,7 +185,7 @@ git に commit されている master HEAD の状態を基準にする。
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
 | [`core/works/game/touhou.toml`](core/works/game/touhou.toml) | 269 | 9.2 KB | 東方Project (上海アリス幻樂団): キャラクター名 / 場所 / 用語 (公式読みベース) |
-| [`core/works/game/idolmaster.toml`](core/works/game/idolmaster.toml) | 66 | 5.4 KB | アイドルマスター (バンダイナムコ): キャラクター名 |
+| [`core/works/game/idolmaster.toml`](core/works/game/idolmaster.toml) | 67 | 5.5 KB | アイドルマスター (バンダイナムコ): キャラクター名 |
 | [`core/works/game/sangokushi.toml`](core/works/game/sangokushi.toml) | 45 | 3.1 KB | 三国志 (演義/ゲーム/漫画): 武将名 (日本語音読み) |
 | [`core/works/game/touken_ranbu.toml`](core/works/game/touken_ranbu.toml) | 37 | 3.2 KB | 刀剣乱舞 (ニトロプラス): 刀剣男士名 |
 | [`core/works/game/hypmic.toml`](core/works/game/hypmic.toml) | 29 | 1.9 KB | ヒプノシスマイク (キングレコード): キャラクター名 |
@@ -207,7 +207,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/game/tokimeki.toml`](core/works/game/tokimeki.toml) | 5 | 465 B | ときめきメモリアル: キャラクター名 |
 | [`core/works/game/a3.toml`](core/works/game/a3.toml) | 4 | 396 B | A3! : キャラクター名 |
 | [`core/works/game/utapri.toml`](core/works/game/utapri.toml) | 4 | 492 B | うたの☆プリンスさまっ♪ : キャラクター名 |
-| **小計** (23 ファイル) | **688** | **43 KB** | |
+| **小計** (23 ファイル) | **689** | **43 KB** | |
 
 #### 文学
 
