@@ -72,3 +72,18 @@ expected = "これやりづらいんじゃないか"
 input = "絵が描ける人"
 mode = "hiragana"
 expected = "えがかけるひと"
+
+[[case]]
+input = "小説書きさんの新作"
+mode = "hiragana"
+expected = "しょうせつかきさんのしんさく"
+
+[[case]]
+input = "文字書きたいぞ"
+mode = "hiragana"
+expected = "もじかきたいぞ"
+
+[[case]]
+input = "メモ書きと箇条書き"
+mode = "hiragana"
+expected = "めもがきとかじょうがき"
