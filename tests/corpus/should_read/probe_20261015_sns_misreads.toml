@@ -86,7 +86,7 @@ expected = "もじかきたいぞ"
 [[case]]
 input = "メモ書きと箇条書き"
 mode = "hiragana"
-expected = "めもがきとかじょうがき"
+expected = "メモがきとかじょうがき"
 
 [[case]]
 input = "あと三分で着く"
