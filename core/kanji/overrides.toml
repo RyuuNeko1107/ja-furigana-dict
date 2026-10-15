@@ -5362,6 +5362,11 @@ default = "ソク"
 char = "勃"
 default = "ボツ"
 
+# 勃つ / 勃たない / 勃ちそう = たつ (勃起・勃発・勃興 は 2字 token で非干渉)
+[[kanji.match]]
+next_starts_any = ["つ", "た", "ち", "て", "っ"]
+reading = "た"
+
 [[kanji]]
 char = "却"
 default = "キャク"
@@ -5698,6 +5703,15 @@ default = "ヒョウ"
 [[kanji]]
 char = "尚"
 default = "ショウ"
+
+# 接続詞「なお」 (尚、 / 尚私が / 尚当日は / 文頭の 尚)。 尚更・尚且つ・尚早・和尚・高尚 は 2字 token で非干渉
+[[kanji.match]]
+next_starts_any = ["、", "，", "私", "当", "本", "詳", "又"]
+reading = "なお"
+
+[[kanji.match]]
+prev_ends_any = ["。", "！", "？"]
+reading = "なお"
 
 [[kanji]]
 char = "理"

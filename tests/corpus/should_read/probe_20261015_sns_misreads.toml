@@ -1,0 +1,29 @@
+[[case]]
+input = "メインレース勝ちまくりやんけ"
+mode = "hiragana"
+expected = "メインレースかちまくりやんけ"
+
+[[case]]
+input = "尚、詳細は後ほど"
+mode = "hiragana"
+expected = "なお、しょうさいはのちほど"
+
+[[case]]
+input = "尚私が老眼な為"
+mode = "hiragana"
+expected = "なおわたしがろうがんなため"
+
+[[case]]
+input = "今日はよく勃つ"
+mode = "hiragana"
+expected = "きょうはよくたつ"
+
+[[case]]
+input = "勃たないのが悩み"
+mode = "hiragana"
+expected = "たたないのがなやみ"
+
+[[case]]
+input = "和尚さんと高尚な話"
+mode = "hiragana"
+expected = "おしょうさんとこうしょうなはなし"
