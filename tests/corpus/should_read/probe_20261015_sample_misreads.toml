@@ -1,0 +1,35 @@
+[[case]]
+input = "連続雨で大変"
+mode = "hiragana"
+expected = "れんぞくあめでたいへん"
+
+[[case]]
+input = "後半雨だったけど楽しかった"
+mode = "hiragana"
+expected = "こうはんあめだったけどたのしかった"
+
+[[case]]
+input = "毎日頭を抱えてる"
+mode = "hiragana"
+expected = "まいにちあたまをかかえてる"
+
+[[case]]
+input = "私頭カスカスなんで"
+mode = "hiragana"
+expected = "わたしあたまカスカスなんで"
+
+[[case]]
+input = "次の日腹の調子が悪い"
+mode = "hiragana"
+expected = "つぎのひはらのちょうしがわるい"
+
+[[case]]
+input = "桜の見ごろですね"
+mode = "hiragana"
+expected = "さくらのみごろですね"
+
+[[case]]
+input = "ずっと家に居がち"
+mode = "hiragana"
+expected = "ずっといえにいがち"
+
