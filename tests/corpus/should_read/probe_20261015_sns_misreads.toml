@@ -192,3 +192,8 @@ expected = "のこりよんぷんでおわる"
 input = "残り五分で到着"
 mode = "hiragana"
 expected = "のこりごふんでとうちゃく"
+
+[[case]]
+input = "次男くんと遊ぶ"
+mode = "hiragana"
+expected = "じなんくんとあそぶ"
