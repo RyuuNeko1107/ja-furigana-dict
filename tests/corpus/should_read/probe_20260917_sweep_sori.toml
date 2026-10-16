@@ -36,7 +36,7 @@ expected = "そーれそれそれおにそりだ"
 [[case]]
 input = "ムダ毛剃り残してそうな名前"
 mode = "hiragana"
-expected = "ムダけそりのこしてそうななまえ"
+expected = "むだげそりのこしてそうななまえ"
 
 [[case]]
 input = "とりあえず頭髪を剃り上げて"

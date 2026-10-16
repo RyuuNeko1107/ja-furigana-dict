@@ -436,7 +436,7 @@ expected = "にしきごいもいる!"
 [[case]]
 input = "錦織圭も青森山田"
 mode = "hiragana"
-expected = "にしきおりけいもあおもりやまだ"
+expected = "にしこりけいもあおもりやまだ"
 
 [[case]]
 input = "安青錦優勝おめでとう"
