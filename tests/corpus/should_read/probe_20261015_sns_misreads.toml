@@ -182,3 +182,13 @@ expected = "バカどものつみはおもい"
 input = "男女共に参加できる"
 mode = "hiragana"
 expected = "だんじょともにさんかできる"
+
+[[case]]
+input = "残り四分で終わる"
+mode = "hiragana"
+expected = "のこりよんぷんでおわる"
+
+[[case]]
+input = "残り五分で到着"
+mode = "hiragana"
+expected = "のこりごふんでとうちゃく"
