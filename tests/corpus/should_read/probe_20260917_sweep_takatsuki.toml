@@ -291,7 +291,7 @@ expected = "じゅたいこくち"
 [[case]]
 input = "卵胎生だったか"
 mode = "hiragana"
-expected = "たまごたいせいだったか"
+expected = "らんたいせいだったか"
 
 [[case]]
 input = "めちゃ流暢"

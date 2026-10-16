@@ -111,7 +111,7 @@ expected = "はいこう"
 [[case]]
 input = "炭坑節か?"
 mode = "hiragana"
-expected = "たんこうせつか?"
+expected = "たんこうぶしか?"
 
 [[case]]
 input = "神輿wwww"
