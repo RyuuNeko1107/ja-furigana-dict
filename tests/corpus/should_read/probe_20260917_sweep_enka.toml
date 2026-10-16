@@ -96,7 +96,7 @@ expected = "くわたけいすけコンサートいくぞ!"
 [[case]]
 input = "名塚佳織さんの演技すごいよな"
 mode = "hiragana"
-expected = "なつかかおりさんのえんぎすごいよな"
+expected = "なづかかおりさんのえんぎすごいよな"
 
 [[case]]
 input = "影山優佳かわいい"

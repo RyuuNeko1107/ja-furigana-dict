@@ -301,7 +301,7 @@ expected = "つづる"
 [[case]]
 input = "割れ鍋に綴じ蓋"
 mode = "hiragana"
-expected = "われなべにとじふた"
+expected = "われなべにとじぶた"
 
 [[case]]
 input = "綴りが違うwww"

@@ -653,7 +653,7 @@ note = "初代火影"
 [[case]]
 input = "涅マユリ"
 mode = "hiragana"
-expected = "くらつちまゆり"
+expected = "くろつちまゆり"
 note = "ブリーチ 涅=くらつち (default そめる)"
 
 [[case]]

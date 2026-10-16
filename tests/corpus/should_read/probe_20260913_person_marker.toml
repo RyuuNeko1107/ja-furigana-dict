@@ -43,7 +43,7 @@ expected = "なつか"
 [[case]]
 input = "名塚佳織"
 mode = "hiragana"
-expected = "なつかかおり"
+expected = "なづかかおり"
 
 [[case]]
 input = "長谷川"
