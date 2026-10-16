@@ -142,3 +142,23 @@ expected = "うしろだてがいるのね"
 input = "全治一ヵ月のけが"
 mode = "hiragana"
 expected = "ぜんじいっかげつのけが"
+
+[[case]]
+input = "体内時計がずれてる"
+mode = "hiragana"
+expected = "たいないどけいがずれてる"
+
+[[case]]
+input = "合同会社を設立した"
+mode = "hiragana"
+expected = "ごうどうがいしゃをせつりつした"
+
+[[case]]
+input = "強制収容所だぞ"
+mode = "hiragana"
+expected = "きょうせいしゅうようじょだぞ"
+
+[[case]]
+input = "旬の農作物が中心"
+mode = "hiragana"
+expected = "しゅんののうさくぶつがちゅうしん"
