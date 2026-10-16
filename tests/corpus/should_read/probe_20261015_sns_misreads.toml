@@ -217,3 +217,18 @@ expected = "しゅじゅつびとにゅういんびがきまった"
 input = "魔大陸の後に人が増えた"
 mode = "hiragana"
 expected = "まだいりくののちにひとがふえた"
+
+[[case]]
+input = "大分合同新聞の記事"
+mode = "hiragana"
+expected = "おおいたごうどうしんぶんのきじ"
+
+[[case]]
+input = "南大分中が勝った"
+mode = "hiragana"
+expected = "みなみおおいたちゅうがかった"
+
+[[case]]
+input = "大分高いな"
+mode = "hiragana"
+expected = "だいぶたかいな"
