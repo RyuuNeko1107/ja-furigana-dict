@@ -1109,7 +1109,7 @@ note = "司=つかさ (default し)"
 [[case]]
 input = "兎鞠まり"
 mode = "hiragana"
-expected = "うまりまり"
+expected = "とまりまり"
 note = "兎鞠=うまり"
 
 # ─── (元: probe_r244247_20260620.toml) ───
