@@ -186,7 +186,7 @@ expected = "ポエムでつちかったちから"
 [[case]]
 input = "雛見沢ばっばい"
 mode = "hiragana"
-expected = "ひなみさわばっばい"
+expected = "ひなみざわばっばい"
 
 [[case]]
 input = "茅の輪くぐりしてから行くかw"

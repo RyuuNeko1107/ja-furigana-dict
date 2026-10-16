@@ -161,7 +161,7 @@ expected = "けいこくか"
 [[case]]
 input = "奥入瀬渓流か"
 mode = "hiragana"
-expected = "おくにゅうせけいりゅうか"
+expected = "おいらせけいりゅうか"
 
 [[case]]
 input = "等々力渓谷遊びに行ったら"
