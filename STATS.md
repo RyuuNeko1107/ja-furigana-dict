@@ -27,11 +27,11 @@ git に commit されている master HEAD の状態を基準にする。
 | [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **38,589** | **1.57 MB** |
 | [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,706** | **133 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **3,537** | **98 KB** |
-| [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **7,450** | **331 KB** |
+| [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **7,670** | **339 KB** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,796** | **395 KB** |
 | [**異体字**](#異体字) (`rules/compat.toml`) | **436** | **6.1 KB** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **1,038** | **68 KB** |
-| **合計** | **96,206** | **3.28 MB** |
+| **合計** | **96,426** | **3.29 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -208,7 +208,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/works/game/bluearchive.toml`](core/works/game/bluearchive.toml) | 10 | 911 B | ブルーアーカイブ (Nexon/Yostar): キャラクター名 (公式読みベース) |
 | [`core/works/game/kankore.toml`](core/works/game/kankore.toml) | 9 | 938 B | 艦これ: 艦娘名 (旧海軍艦名) |
 | [`core/works/game/gyakuten.toml`](core/works/game/gyakuten.toml) | 8 | 710 B | 逆転裁判: キャラクター名 |
-| [`core/works/game/bang_dream.toml`](core/works/game/bang_dream.toml) | 6 | 547 B | BanG Dream! : キャラクター名 |
+| [`core/works/game/bang_dream.toml`](core/works/game/bang_dream.toml) | 6 | 550 B | BanG Dream! : キャラクター名 |
 | [`core/works/game/ryu_ga_gotoku.toml`](core/works/game/ryu_ga_gotoku.toml) | 5 | 443 B | 龍が如く: キャラクター名 |
 | [`core/works/game/tokimeki.toml`](core/works/game/tokimeki.toml) | 5 | 465 B | ときめきメモリアル: キャラクター名 |
 | [`core/works/game/a3.toml`](core/works/game/a3.toml) | 4 | 396 B | A3! : キャラクター名 |
@@ -327,7 +327,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/_inbox.toml`](core/_inbox.toml) | 7,450 | 331 KB | 分類前の一時 inbox (≥2 字 surface、 内容が貯まったら適切な genre dir に振り分ける) |
+| [`core/_inbox.toml`](core/_inbox.toml) | 7,670 | 339 KB | 分類前の一時 inbox (≥2 字 surface、 内容が貯まったら適切な genre dir に振り分ける) |
 
 ### 単漢字 [[kanji]] format
 
