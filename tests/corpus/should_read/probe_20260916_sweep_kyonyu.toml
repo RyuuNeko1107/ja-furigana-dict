@@ -138,7 +138,7 @@ expected = "カップめんはすごめんしかかたんワラ"
 [[case]]
 input = "甘味処で煮麺はあるけど"
 mode = "hiragana"
-expected = "あまみしょでにゅうめんはあるけど"
+expected = "かんみどころでにゅうめんはあるけど"
 
 [[case]]
 input = "豊を信じろ"
