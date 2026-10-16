@@ -81,7 +81,7 @@ expected = "なんとほうおうけんおうぎ!ほうおうげんまけん!(�
 [[case]]
 input = "鳳凰院凶真だろ常考"
 mode = "hiragana"
-expected = "ほうおういんきょうしんだろじょうこう"
+expected = "ほうおういんきょうまだろじょうこう"
 
 [[case]]
 input = "天鳳!!"

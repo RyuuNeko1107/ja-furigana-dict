@@ -251,7 +251,7 @@ expected = "やねのうえのほうおうみたい"
 [[case]]
 input = "鳳凰院凶真だろ常考"
 mode = "hiragana"
-expected = "ほうおういんきょうしんだろじょうこう"
+expected = "ほうおういんきょうまだろじょうこう"
 
 [[case]]
 input = "罵詈雑言だぞスプラのボイチャなんた"

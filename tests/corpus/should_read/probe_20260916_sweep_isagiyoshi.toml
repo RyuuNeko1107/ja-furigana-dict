@@ -106,7 +106,7 @@ expected = "なぐら じゅん"
 [[case]]
 input = "堂上直倫wwwwww"
 mode = "hiragana"
-expected = "どうじょうなおみちワラワラワラワラワラワラ"
+expected = "どうがみなおみちワラワラワラワラワラワラ"
 
 [[case]]
 input = "これをショーと呼ぶ倫理観よ"
