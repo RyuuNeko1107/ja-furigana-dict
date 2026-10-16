@@ -912,7 +912,7 @@ def check_jukugo_match_shadowed(core_dir: Path, errors: Errors) -> None:
     kinds: dict[str, list[tuple[str, str]]] = {}
     for f in sorted(core_dir.glob('**/*.toml')):
         rel = f.relative_to(core_dir).as_posix()
-        if rel.startswith('accent/') or f.name.endswith('.test.toml') or f.name == '_genre.toml':
+        if rel.startswith(('accent/', 'names/')) or f.name.endswith('.test.toml') or f.name == '_genre.toml':  # names/ = 人名の専用経路の表 (一般辞書とは別に引く)
             continue
         try:
             with open(f, 'rb') as fh:
