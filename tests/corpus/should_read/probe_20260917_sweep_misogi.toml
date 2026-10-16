@@ -376,7 +376,7 @@ expected = "ずさんワラ"
 [[case]]
 input = "蜘蛛の糸・・・杜子春・・・懐かしき思い出"
 mode = "hiragana"
-expected = "くものいともりししゅんなつかしきおもいで"
+expected = "くものいととししゅんなつかしきおもいで"
 
 [[case]]
 input = "腎虚になる"
