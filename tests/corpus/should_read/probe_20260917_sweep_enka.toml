@@ -221,7 +221,7 @@ expected = "あつやもうまいからね"
 [[case]]
 input = "宵越しの銭は持たないぺこちゃん"
 mode = "hiragana"
-expected = "よいごしのせんはもたないぺこちゃん"
+expected = "よいごしのぜにはもたないぺこちゃん"
 
 [[case]]
 input = "今宵は満月か"
