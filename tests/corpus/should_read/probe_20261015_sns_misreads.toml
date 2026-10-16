@@ -162,3 +162,8 @@ expected = "きょうせいしゅうようじょだぞ"
 input = "旬の農作物が中心"
 mode = "hiragana"
 expected = "しゅんののうさくぶつがちゅうしん"
+
+[[case]]
+input = "チー牛って言われた"
+mode = "hiragana"
+expected = "ちーぎゅうっていわれた"
