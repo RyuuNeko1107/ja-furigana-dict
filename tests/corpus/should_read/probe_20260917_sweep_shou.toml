@@ -61,7 +61,7 @@ expected = "えいしん"
 [[case]]
 input = "角盈男かぁ"
 mode = "hiragana"
-expected = "かどみつおかぁ"
+expected = "すみみつおかぁ"
 
 [[case]]
 input = "盈月"
