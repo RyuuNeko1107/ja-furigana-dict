@@ -196,7 +196,7 @@ expected = "いしいひろおか"
 [[case]]
 input = "川口浩探検隊"
 mode = "hiragana"
-expected = "かわぐちこうたんけんたい"
+expected = "かわぐちひろしたんけんたい"
 
 [[case]]
 input = "加藤浩次かな?"

@@ -3,7 +3,7 @@
 [[case]]
 input = "厩戸王"
 mode = "hiragana"
-expected = "うまやどおう"
+expected = "うまやどのおう"
 
 [[case]]
 input = "大木戸"

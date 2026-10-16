@@ -176,7 +176,7 @@ expected = "たなかくにえかな?"
 [[case]]
 input = "山崎邦正かな?"
 mode = "hiragana"
-expected = "やまざきくにまさかな?"
+expected = "やまさきほうせいかな?"
 
 [[case]]
 input = "週刊みこみゅーす"

@@ -56,7 +56,7 @@ expected = "こさかいさん"
 [[case]]
 input = "博士の声が小堺一機のアニメね"
 mode = "hiragana"
-expected = "はかせのこえがこさかいいっきのアニメね"
+expected = "はかせのこえがこさかいかずきのアニメね"
 
 [[case]]
 input = "小堺ぺこら"
@@ -186,7 +186,7 @@ expected = "うまやどのおうじでくさ"
 [[case]]
 input = "聖徳太子or厩戸王"
 mode = "hiragana"
-expected = "しょうとくたいしorうまやどおう"
+expected = "しょうとくたいしorうまやどのおう"
 
 [[case]]
 input = "三厩で義経繋がり"
