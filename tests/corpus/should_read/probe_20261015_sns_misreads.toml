@@ -117,3 +117,28 @@ expected = "さんぶんのにがさんせい"
 input = "五分五分の勝負"
 mode = "hiragana"
 expected = "ごぶごぶのしょうぶ"
+
+[[case]]
+input = "今月の売り上げ高が増えた"
+mode = "hiragana"
+expected = "こんげつのうりあげだかがふえた"
+
+[[case]]
+input = "支払い方法変えたら安くなった"
+mode = "hiragana"
+expected = "しはらいほうほうかえたらやすくなった"
+
+[[case]]
+input = "あっと言う間だったねえ"
+mode = "hiragana"
+expected = "あっというまだったねえ"
+
+[[case]]
+input = "後ろ盾がいるのね"
+mode = "hiragana"
+expected = "うしろだてがいるのね"
+
+[[case]]
+input = "全治一ヵ月のけが"
+mode = "hiragana"
+expected = "ぜんじいっかげつのけが"
