@@ -202,3 +202,13 @@ expected = "じなんくんとあそぶ"
 input = "ひとつ得れば二つ三つ追う"
 mode = "hiragana"
 expected = "ひとつえればふたつみっつおう"
+
+[[case]]
+input = "最終閲覧日を確認する"
+mode = "hiragana"
+expected = "さいしゅうえつらんびをかくにんする"
+
+[[case]]
+input = "手術日と入院日が決まった"
+mode = "hiragana"
+expected = "しゅじゅつびとにゅういんびがきまった"
