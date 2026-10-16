@@ -176,7 +176,7 @@ expected = "てつおのつよいで"
 [[case]]
 input = "金の斧銀の斧"
 mode = "hiragana"
-expected = "かねのおのぎんのおの"
+expected = "きんのおのぎんのおの"
 
 [[case]]
 input = "生糸"

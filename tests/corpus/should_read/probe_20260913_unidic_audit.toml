@@ -22,7 +22,7 @@ expected = "うつみ"
 [[case]]
 input = "松坂大輔"
 mode = "hiragana"
-expected = "まつさかだいすけ"
+expected = "まつざかだいすけ"
 
 [[case]]
 input = "二三塁"

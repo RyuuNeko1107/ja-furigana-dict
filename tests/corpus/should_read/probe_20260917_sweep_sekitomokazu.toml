@@ -71,7 +71,7 @@ expected = "ほりだいすけでしょ"
 [[case]]
 input = "松坂大輔かな?"
 mode = "hiragana"
-expected = "まつさかだいすけかな?"
+expected = "まつざかだいすけかな?"
 
 [[case]]
 input = "中村俊輔で行こう"

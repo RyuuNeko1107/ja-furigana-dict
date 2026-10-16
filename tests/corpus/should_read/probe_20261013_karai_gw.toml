@@ -776,7 +776,7 @@ expected = "シチュエーションではえる"
 [[case]]
 input = "インスタ映え"
 mode = "hiragana"
-expected = "インスタばえ"
+expected = "いんすたばえ"
 
 [[case]]
 input = "おかんその丈のワンピ"
@@ -958,7 +958,7 @@ expected = "とくしまラーメンふうのつもり"
 [[case]]
 input = "ビル風が強い"
 mode = "hiragana"
-expected = "ビルかぜがつよい"
+expected = "びるかぜがつよい"
 
 [[case]]
 input = "退職日が決まった"

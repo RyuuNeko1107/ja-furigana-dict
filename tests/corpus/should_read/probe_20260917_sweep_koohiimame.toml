@@ -31,7 +31,7 @@ expected = "すなばこーひーもあるよ"
 [[case]]
 input = "上島珈琲店"
 mode = "hiragana"
-expected = "うえじまこーひーてん"
+expected = "うえしまこーひーてん"
 
 [[case]]
 input = "陳述書出せ"
