@@ -296,7 +296,7 @@ expected = "みえのしますぺいんむら、いきたい"
 [[case]]
 input = "大黒摩季やないか"
 mode = "hiragana"
-expected = "おおくろまきやないか"
+expected = "おおぐろまきやないか"
 
 [[case]]
 input = "摩訶不思議アドベンチャー"

@@ -141,7 +141,7 @@ expected = "こんにゃくめんなら..."
 [[case]]
 input = "蒟蒻畑"
 mode = "hiragana"
-expected = "こんにゃくはたけ"
+expected = "こんにゃくばたけ"
 
 [[case]]
 input = "3食蒟蒻ゼリーw"
