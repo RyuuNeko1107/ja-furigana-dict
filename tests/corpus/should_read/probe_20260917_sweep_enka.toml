@@ -106,7 +106,7 @@ expected = "かげやまゆうかかわいい"
 [[case]]
 input = "石川佳純かわいい"
 mode = "hiragana"
-expected = "いしかわかじゅんかわいい"
+expected = "いしかわかすみかわいい"
 
 [[case]]
 input = "近藤佳奈子さんだっけ"
