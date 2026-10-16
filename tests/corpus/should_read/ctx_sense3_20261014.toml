@@ -1198,7 +1198,7 @@ expected = "じゅうぶんに"
 [[case]]
 input = "五分の魂"
 mode = "hiragana"
-expected = "ごぶんのたましい"
+expected = "ごぶのたましい"
 
 [[case]]
 input = "五分五分ですなあ"
