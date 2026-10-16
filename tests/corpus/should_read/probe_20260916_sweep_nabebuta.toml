@@ -181,7 +181,7 @@ expected = "はやしたいすけをゆるすな"
 [[case]]
 input = "▲丹生明里さんと予想w"
 mode = "hiragana"
-expected = "▲にうあかりさんとよそうワラ"
+expected = "▲にぶあかりさんとよそうワラ"
 
 [[case]]
 input = "炎舞焚きですか???"

@@ -136,7 +136,7 @@ expected = "はんもしたどうくつみたい"
 [[case]]
 input = "長野智子"
 mode = "hiragana"
-expected = "ながのさとこ"
+expected = "ながのともこ"
 
 [[case]]
 input = "森川智之さんいいなぁぁ"
