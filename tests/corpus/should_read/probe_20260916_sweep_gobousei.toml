@@ -81,7 +81,7 @@ expected = "いまつなみきてるよ"
 [[case]]
 input = "米津玄師のやつ?"
 mode = "hiragana"
-expected = "よねづげんしのやつ?"
+expected = "よねづけんしのやつ?"
 
 [[case]]
 input = "ハチPつまり米津P"

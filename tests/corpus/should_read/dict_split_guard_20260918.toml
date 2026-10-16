@@ -197,7 +197,7 @@ expected = "ぜったいかみゲーやん"
 [[case]]
 input = "普通車だよ"
 mode = "hiragana"
-expected = "ふつうくるまだよ"
+expected = "ふつうしゃだよ"
 
 [[case]]
 input = "大体月1"

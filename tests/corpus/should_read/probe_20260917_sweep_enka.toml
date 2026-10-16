@@ -341,7 +341,7 @@ expected = "きょうせいかい?"
 [[case]]
 input = "縮毛矯正しようw"
 mode = "hiragana"
-expected = "しゅくけきょうせいしようワラ"
+expected = "しゅくもうきょうせいしようワラ"
 
 [[case]]
 input = "歯列矯正"

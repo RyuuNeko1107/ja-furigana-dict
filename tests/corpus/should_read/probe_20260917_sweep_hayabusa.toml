@@ -286,7 +286,7 @@ expected = "あしのこっぽい"
 [[case]]
 input = "芦田愛菜"
 mode = "hiragana"
-expected = "あしだあいな"
+expected = "あしだまな"
 
 [[case]]
 input = "芦屋道満さん"

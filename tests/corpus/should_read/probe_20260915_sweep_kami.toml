@@ -23,7 +23,7 @@ expected = "ちいさい"
 [[case]]
 input = "小ネタ"
 mode = "hiragana"
-expected = "しょうネタ"
+expected = "こねた"
 
 [[case]]
 input = "電気通ってるね"

@@ -241,7 +241,7 @@ expected = "よしかわこうじ"
 [[case]]
 input = "中村晃"
 mode = "hiragana"
-expected = "なかむらこう"
+expected = "なかむらあきら"
 
 [[case]]
 input = "麻原彰晃"

@@ -36,7 +36,7 @@ expected = "こうがげんのすけ"
 [[case]]
 input = "羽生結弦並みの回転"
 mode = "hiragana"
-expected = "はぶゆづるなみのかいてん"
+expected = "はにゅうゆづるなみのかいてん"
 
 [[case]]
 input = "弦の並びが逆"
