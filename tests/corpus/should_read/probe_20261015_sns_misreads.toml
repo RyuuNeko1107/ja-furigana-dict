@@ -167,3 +167,18 @@ expected = "しゅんののうさくぶつがちゅうしん"
 input = "チー牛って言われた"
 mode = "hiragana"
 expected = "ちーぎゅうっていわれた"
+
+[[case]]
+input = "ハメカス共を煽り返してやる"
+mode = "hiragana"
+expected = "ハメカスどもをあおりかえしてやる"
+
+[[case]]
+input = "バカ共の罪は重い"
+mode = "hiragana"
+expected = "バカどものつみはおもい"
+
+[[case]]
+input = "男女共に参加できる"
+mode = "hiragana"
+expected = "だんじょともにさんかできる"
