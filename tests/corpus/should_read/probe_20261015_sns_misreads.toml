@@ -197,3 +197,8 @@ expected = "のこりごふんでとうちゃく"
 input = "次男くんと遊ぶ"
 mode = "hiragana"
 expected = "じなんくんとあそぶ"
+
+[[case]]
+input = "ひとつ得れば二つ三つ追う"
+mode = "hiragana"
+expected = "ひとつえればふたつみっつおう"
