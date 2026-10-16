@@ -212,3 +212,8 @@ expected = "さいしゅうえつらんびをかくにんする"
 input = "手術日と入院日が決まった"
 mode = "hiragana"
 expected = "しゅじゅつびとにゅういんびがきまった"
+
+[[case]]
+input = "魔大陸の後に人が増えた"
+mode = "hiragana"
+expected = "まだいりくののちにひとがふえた"
