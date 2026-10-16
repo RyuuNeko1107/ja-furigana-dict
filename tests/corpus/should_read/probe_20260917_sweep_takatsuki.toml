@@ -91,7 +91,7 @@ expected = "うずまくなぞのひしょうたい..."
 [[case]]
 input = "寒冷渦"
 mode = "hiragana"
-expected = "かんれいか"
+expected = "かんれいうず"
 
 [[case]]
 input = "礼文島の蝦夷馬糞雲丹"
