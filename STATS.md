@@ -24,14 +24,14 @@ git に commit されている master HEAD の状態を基準にする。
 | カテゴリ | エントリ数 | サイズ |
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,654** | **728 KB** |
-| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **50,939** | **2.01 MB** |
+| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **50,954** | **2.01 MB** |
 | [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,706** | **133 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **3,717** | **102 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **857** | **98 KB** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,796** | **397 KB** |
 | [**異体字**](#異体字) (`rules/compat.toml`) | **436** | **6.1 KB** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **1,042** | **69 KB** |
-| **合計** | **102,147** | **3.51 MB** |
+| **合計** | **102,162** | **3.51 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -56,7 +56,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/jukugo/<genre>/*` — 手動 PR メンテのジャンル別 jukugo (≥ 2 字 surface)。 lib の Step 3 (jukugo lookup) で Lindera より優先採用。 各 genre dir の `_genre.toml` がカテゴリ description を持つ。
 
-**合計**: 50,939 件 / 2.01 MB (genre 6 区分)
+**合計**: 50,954 件 / 2.01 MB (genre 6 区分)
 
 #### 自然・生命
 
@@ -109,7 +109,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/jukugo/society/terms.toml`](core/jukugo/society/terms.toml) | 1,345 | 44 KB | 専門用語 (医学・法律・科学・歴史・宗教・古典・学術) |
 | [`core/jukugo/society/history.toml`](core/jukugo/society/history.toml) | 1,033 | 38 KB | 歴史用語 (日本史の制度 / 事件 / 文化概念) |
 | [`core/jukugo/society/medicine.toml`](core/jukugo/society/medicine.toml) | 894 | 31 KB | 医学 / 医療 (病名 / 症状 / 解剖 / 処置の難読) |
-| [`core/jukugo/society/slang.toml`](core/jukugo/society/slang.toml) | 190 | 6.3 KB | スラング (ネット用語・俗語・配信/ゲーム用語・略語) |
+| [`core/jukugo/society/slang.toml`](core/jukugo/society/slang.toml) | 192 | 6.4 KB | スラング (ネット用語・俗語・配信/ゲーム用語・略語) |
 | [`core/jukugo/society/finance.toml`](core/jukugo/society/finance.toml) | 142 | 5.9 KB | 経済金融 (商品 / 市場 / 会計 / 税務 / 保険) |
 | [`core/jukugo/society/games.toml`](core/jukugo/society/games.toml) | 133 | 4.4 KB | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
 | [`core/jukugo/society/specialized.toml`](core/jukugo/society/specialized.toml) | 111 | 6.4 KB | 専門用語 (医学 / 軍事 / 法学 / 経済 / IT / 工学) |
@@ -120,7 +120,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/jukugo/society/fishing.toml`](core/jukugo/society/fishing.toml) | 10 | 669 B | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
 | [`core/jukugo/society/politics.toml`](core/jukugo/society/politics.toml) | 10 | 883 B | 政治 / 行政 / 立法 / 司法 / 国際関係 |
 | [`core/jukugo/society/horse_racing.toml`](core/jukugo/society/horse_racing.toml) | 9 | 798 B | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
-| **小計** (14 ファイル) | **4,084** | **150 KB** | |
+| **小計** (14 ファイル) | **4,086** | **150 KB** | |
 
 #### 固有名詞
 
@@ -171,7 +171,7 @@ git に commit されている master HEAD の状態を基準にする。
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
 | [`core/jukugo/basic/general.toml`](core/jukugo/basic/general.toml) | 7,830 | 343 KB | 二字・三字の一般熟語 (季節 / 行事 / 慣用句 含む) |
-| [`core/jukugo/basic/compounds.toml`](core/jukugo/basic/compounds.toml) | 4,441 | 159 KB | 一般語 (普通の名詞・動詞・形容詞・慣用句・四字熟語・活用形つきの語) |
+| [`core/jukugo/basic/compounds.toml`](core/jukugo/basic/compounds.toml) | 4,454 | 160 KB | 一般語 (普通の名詞・動詞・形容詞・慣用句・四字熟語・活用形つきの語) |
 | [`core/jukugo/basic/jmnedict_bridge_terms.toml`](core/jukugo/basic/jmnedict_bridge_terms.toml) | 3,192 | 114 KB | JMnedict 参照の橋の名前の読み (〜ばし) (確認済みのみ) |
 | [`core/jukugo/basic/ndlsh_terms.toml`](core/jukugo/basic/ndlsh_terms.toml) | 1,074 | 47 KB | NDLSH 参照の専門用語・分類名・王朝名などの読み (確認済みのみ) |
 | [`core/jukugo/basic/jmdict_orthography_terms.toml`](core/jukugo/basic/jmdict_orthography_terms.toml) | 572 | 18 KB | JMdict を参照して確認した、 表記ゆれ・当て字・旧表記・送り仮名違いの語の読み (確認済みのみ) |
@@ -181,7 +181,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/jukugo/basic/four_char.toml`](core/jukugo/basic/four_char.toml) | 36 | 2.5 KB | 四字熟語 (4 字 + 全 CJK 漢字) |
 | [`core/jukugo/basic/split_guard.toml`](core/jukugo/basic/split_guard.toml) | 33 | 4.0 KB | Lindera の 「熟語 + か」 分割に負けないための tie-break entry |
 | [`core/jukugo/basic/foreign.toml`](core/jukugo/basic/foreign.toml) | 12 | 611 B | 外来語 (カタカナ語・英字を含む語) |
-| **小計** (11 ファイル) | **17,470** | **699 KB** | |
+| **小計** (11 ファイル) | **17,483** | **699 KB** | |
 
 
 ### 作品造語
