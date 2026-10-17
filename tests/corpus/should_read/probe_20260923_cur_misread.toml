@@ -33,7 +33,7 @@ expected = "やっちまった"
 [[case]]
 input = "10年も経てば変わるよ"
 mode = "hiragana"
-expected = "じゅうねんもへてばかわるよ"
+expected = "じゅうねんもたてばかわるよ"
 
 [[case]]
 input = "行け行け!"

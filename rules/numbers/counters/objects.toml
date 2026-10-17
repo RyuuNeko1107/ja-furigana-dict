@@ -1006,3 +1006,25 @@ suffix = "キュウ"
 sokuonize = true
 # === end: 試合 / 回戦 / 打席 / 打数 / 安打 / 三振 / 巡 / 順 / 球 ===
 
+# === begin: 章 ===
+[counter."章"]
+default = "ショウ"
+kanji_numeral = true  # 一章/八章/十章 → いっしょう/はっしょう/じゅっしょう
+
+[[counter."章".rules]]
+last_digit = [1, 8, 0]
+suffix = "ショウ"
+sokuonize = true
+# === end: 章 ===
+
+# === begin: 世 ===
+# 1世 / 8世 / 10世 (ヨハネ・パウロ2世 / ルイ14世 / 1世) の せい。 促音化は 1・8・10 (いっせい / はっせい / じゅっせい)
+[counter."世"]
+default = "セイ"
+kanji_numeral = true
+
+[[counter."世".rules]]
+last_digit = [1, 8, 0]
+suffix = "セイ"
+sokuonize = true
+# === end: 世 ===

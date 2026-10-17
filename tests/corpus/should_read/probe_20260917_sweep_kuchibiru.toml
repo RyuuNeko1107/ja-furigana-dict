@@ -346,7 +346,7 @@ expected = "みつくろって"
 [[case]]
 input = "毛繕いしてない"
 mode = "hiragana"
-expected = "けつくろいしてない"
+expected = "けづくろいしてない"
 
 [[case]]
 input = "汽車"

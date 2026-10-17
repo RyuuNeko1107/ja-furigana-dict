@@ -141,7 +141,7 @@ expected = "しちょうしゃおおっワラ"
 [[case]]
 input = "麻雀で天和をあがれます様に"
 mode = "hiragana"
-expected = "まーじゃんでてんほーをあがれますさまに"
+expected = "まーじゃんでてんほーをあがれますように"
 
 [[case]]
 input = "天の助かよw"
