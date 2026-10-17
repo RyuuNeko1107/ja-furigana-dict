@@ -1049,3 +1049,13 @@ kanji_numeral = false  # 北極 / 太極 など漢数字+極は別の語。 数�
 last_digit = [1, 8, 0]
 suffix = "キョク"
 sokuonize = true
+
+# ★2026-10-18 基: 原発1基 / 3基 の連結。 1 / 8 / 10 は促音 (いっき / はっき / じゅっき)。 simple にあった "基" = キ を移した
+[counter."基"]
+default = "キ"
+kanji_numeral = false  # 基本 / 基地 など漢数字+基の別語を避ける
+
+[[counter."基".rules]]
+last_digit = [1, 8, 0]
+suffix = "キ"
+sokuonize = true
