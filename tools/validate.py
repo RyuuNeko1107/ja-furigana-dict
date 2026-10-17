@@ -26,6 +26,10 @@ from __future__ import annotations
 
 import re
 import sys
+import getpass
+import hashlib
+import json
+import tempfile
 import tomllib
 from pathlib import Path
 
@@ -245,10 +249,53 @@ def check_root_stray_entries(path: Path, errors: Errors, data: dict) -> None:
         )
 
 
+_TOML_CACHE: dict[Path, dict] = {}
+
+
+def _disk_cache_file(path: Path) -> Path | None:
+    """ディスク cache の置き場所 (パス + 更新時刻 + サイズが同じなら同じ内容とみなす)。 取れなければ None"""
+    try:
+        st = path.stat()
+        key = hashlib.sha1(f"{path.resolve()}|{st.st_mtime_ns}|{st.st_size}".encode('utf-8')).hexdigest()
+        return Path(tempfile.gettempdir()) / f"furigana-dict-validate-{getpass.getuser()}" / f"{key}.json"
+    except Exception:
+        return None
+
+
+def read_toml(path: Path) -> dict:
+    """TOML を読む。 同じファイルを検査ごとに読み直さないよう結果を使い回す
+    (tomllib は純 Python で遅く、 以前は 1 ファイルを 4 回前後パースして全体で約 7 秒かかっていた)。
+    手元では変わっていないファイルのパース結果をディスクにも残し (一時ディレクトリ、 JSON)、 次の実行で飛ばす。
+    検査は読み取りだけで dict を書き換えない。 失敗 (例外) は cache しない。"""
+    key = path.resolve()
+    doc = _TOML_CACHE.get(key)
+    if doc is not None:
+        return doc
+    cache_file = _disk_cache_file(path)
+    if cache_file is not None and cache_file.exists():
+        try:
+            doc = json.loads(cache_file.read_text(encoding='utf-8'))
+        except Exception:
+            doc = None
+    if doc is None:
+        with open(path, 'rb') as f:
+            doc = tomllib.load(f)
+        # 大きいファイルだけ残す (小さいものはパースの方が速い)。 JSON にできない型 (日時など) があれば残さない
+        if cache_file is not None and path.stat().st_size > 200_000:
+            try:
+                cache_file.parent.mkdir(parents=True, exist_ok=True)
+                tmp = cache_file.with_suffix('.tmp')
+                tmp.write_text(json.dumps(doc, ensure_ascii=False), encoding='utf-8')
+                tmp.replace(cache_file)
+            except Exception:
+                pass
+    _TOML_CACHE[key] = doc
+    return doc
+
+
 def load_toml(path: Path, errors: Errors):
     try:
-        with open(path, 'rb') as f:
-            data = tomllib.load(f)
+        data = read_toml(path)
         check_root_stray_entries(path, errors, data)
         return data
     except tomllib.TOMLDecodeError as e:
@@ -416,7 +463,7 @@ def validate_loanwords(path: Path, errors: Errors) -> dict:
     folded = {k.casefold() for k in entries}
     for other in path.parent.rglob('*.toml'):
         try:
-            folded |= {k.casefold() for k in (tomllib.loads(other.read_text(encoding='utf-8')).get('entries') or {})}
+            folded |= {k.casefold() for k in (read_toml(other).get('entries') or {})}
         except Exception:
             pass
     for word, spec in digits.items():
@@ -875,8 +922,7 @@ def check_jukugo_compat_surface(core_dir: Path, rules_dir: Path, errors: Errors)
     compat_path = rules_dir / 'compat.toml'
     if not compat_path.exists():
         return
-    with open(compat_path, 'rb') as fh:
-        compat = tomllib.load(fh)
+    compat = read_toml(compat_path)
     mapping: dict[str, str] = {}
 
     def walk(d: dict) -> None:
@@ -892,8 +938,7 @@ def check_jukugo_compat_surface(core_dir: Path, rules_dir: Path, errors: Errors)
         if rel.startswith(('accent/', 'unihan/')) or f.name.endswith('.test.toml') or f.name == '_genre.toml':
             continue
         try:
-            with open(f, 'rb') as fh:
-                doc = tomllib.load(fh)
+            doc = read_toml(f)
         except Exception:
             continue
         for key in (doc.get('entries') or {}):
@@ -915,8 +960,7 @@ def check_jukugo_match_shadowed(core_dir: Path, errors: Errors) -> None:
         if rel.startswith(('accent/', 'names/')) or f.name.endswith('.test.toml') or f.name == '_genre.toml':  # names/ = 人名の専用経路の表 (一般辞書とは別に引く)
             continue
         try:
-            with open(f, 'rb') as fh:
-                doc = tomllib.load(fh)
+            doc = read_toml(f)
         except Exception:
             continue  # パース失敗は別の検査で ERROR 済み
         for surface, v in (doc.get('entries') or {}).items():
