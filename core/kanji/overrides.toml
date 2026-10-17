@@ -17870,6 +17870,13 @@ reading = "セン"
 prev_ends_any = ["絡", "り", "込"]
 reading = "さき"
 
+# ★2026-10-18 前後とも漢字の 先 (投稿先選び / 客先下請 / 毛先カール) = さき。 次が漢字だけで セン にすると ○先 の語が壊れていた
+# (優先 / 祖先 / 最先端 は Lindera 単位で正読み)。 prev が漢字で next も漢字の時だけ さき。
+[[kanji.match]]
+prev_char_type = "漢字"
+next_char_type = "漢字"
+reading = "さき"
+
 [[kanji.match]]
 next_char_type = "漢字"
 reading = "セン"
