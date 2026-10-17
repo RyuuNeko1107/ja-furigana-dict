@@ -31,7 +31,7 @@ git に commit されている master HEAD の状態を基準にする。
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,796** | **396 KB** |
 | [**異体字**](#異体字) (`rules/compat.toml`) | **436** | **6.1 KB** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **1,038** | **68 KB** |
-| **合計** | **101,357** | **3.47 MB** |
+| **合計** | **101,357** | **3.48 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -343,7 +343,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 
 | ファイル | 文字数 | ルール数 | サイズ | 用途 |
 |---|---:|---:|---:|---|
-| [`core/kanji/overrides.toml`](core/kanji/overrides.toml) | 2,796 | 4,501 | 396 KB | 単漢字 default override + 文脈分岐 reading |
+| [`core/kanji/overrides.toml`](core/kanji/overrides.toml) | 2,796 | 4,503 | 396 KB | 単漢字 default override + 文脈分岐 reading |
 
 ### 異体字
 
