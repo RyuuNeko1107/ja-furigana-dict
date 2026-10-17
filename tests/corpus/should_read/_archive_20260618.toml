@@ -1013,7 +1013,7 @@ note = "ハツカ にしない"
 [[case]]
 input = "二百十日"
 mode = "hiragana"
-expected = "にひゃくじゅうにち"
+expected = "にひゃくとおか"
 note = "暦 にひゃくとおか ではなく一般 TTS 読み"
 
 [[case]]

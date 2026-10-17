@@ -1039,3 +1039,13 @@ last_digit = [1, 8, 0]
 suffix = "シュウ"
 sokuonize = true
 # === end: 集 ===
+
+# ★2026-10-18 極: 2極 / 4極 モーター (磁極の数)。 数字の直後は きょく (よんごく になっていた)。 1 / 8 / 10 は促音 (いっきょく / はっきょく)
+[counter."極"]
+default = "キョク"
+kanji_numeral = false  # 北極 / 太極 など漢数字+極は別の語。 数字の直後だけ
+
+[[counter."極".rules]]
+last_digit = [1, 8, 0]
+suffix = "キョク"
+sokuonize = true
