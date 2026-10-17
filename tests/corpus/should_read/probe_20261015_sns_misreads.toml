@@ -216,7 +216,7 @@ expected = "しゅじゅつびとにゅういんびがきまった"
 [[case]]
 input = "魔大陸の後に人が増えた"
 mode = "hiragana"
-expected = "まだいりくののちにひとがふえた"
+expected = "まだいりくのあとにひとがふえた"
 
 [[case]]
 input = "大分合同新聞の記事"
