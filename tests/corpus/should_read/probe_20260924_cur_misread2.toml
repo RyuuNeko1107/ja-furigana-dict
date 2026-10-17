@@ -554,7 +554,7 @@ expected = "ごうがふかい"
 [[case]]
 input = "同表の下欄に掲げる"
 mode = "hiragana"
-expected = "どうひょうのからんにかかげる"
+expected = "どうひょうのげらんにかかげる"
 
 # 2026-09-25 裁判例コーパス点検
 
