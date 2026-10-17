@@ -150,12 +150,15 @@ def main() -> None:
     print("  品詞の内訳:", dict(collections.Counter(w["word_type"] for w in out)))
     print("  アクセント型の内訳 (0=平板):", dict(sorted(collections.Counter(w["accent_type"] if w["accent_type"] < 4 else "4+" for w in out).items(), key=lambda x: str(x[0]))))
     if a.apply:
+        # --apply は VOICEVOX エンジンの URL。 file: などの別の scheme を開かないよう http(s) に限る
+        if not a.apply.startswith(("http://", "https://")):
+            raise SystemExit("--apply は http:// か https:// で始まる URL を指定してください")
         ok = 0
         for w in out:
             q = urllib.parse.urlencode(w)
             req = urllib.request.Request(f"{a.apply}/user_dict_word?{q}", data=b"", method="POST")
             try:
-                urllib.request.urlopen(req, timeout=20).read()
+                urllib.request.urlopen(req, timeout=20).read()  # nosec B310 (scheme は上で http(s) に限定済み)
                 ok += 1
             except Exception as e:
                 print("失敗", w["surface"], e)

@@ -256,7 +256,7 @@ def _disk_cache_file(path: Path) -> Path | None:
     """ディスク cache の置き場所 (パス + 更新時刻 + サイズが同じなら同じ内容とみなす)。 取れなければ None"""
     try:
         st = path.stat()
-        key = hashlib.sha1(f"{path.resolve()}|{st.st_mtime_ns}|{st.st_size}".encode('utf-8')).hexdigest()
+        key = hashlib.sha256(f"{path.resolve()}|{st.st_mtime_ns}|{st.st_size}".encode('utf-8')).hexdigest()
         return Path(tempfile.gettempdir()) / f"furigana-dict-validate-{getpass.getuser()}" / f"{key}.json"
     except Exception:
         return None
