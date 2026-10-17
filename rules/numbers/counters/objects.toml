@@ -1056,6 +1056,6 @@ default = "キ"
 kanji_numeral = false  # 基本 / 基地 など漢数字+基の別語を避ける
 
 [[counter."基".rules]]
-last_digit = [1, 8, 0]
+last_digit = [1, 6, 8, 0]
 suffix = "キ"
 sokuonize = true
