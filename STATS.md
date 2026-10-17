@@ -24,14 +24,14 @@ git に commit されている master HEAD の状態を基準にする。
 | カテゴリ | エントリ数 | サイズ |
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,654** | **728 KB** |
-| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **50,383** | **1.99 MB** |
+| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **50,903** | **2.01 MB** |
 | [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,706** | **133 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **3,717** | **102 KB** |
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **857** | **98 KB** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,796** | **396 KB** |
 | [**異体字**](#異体字) (`rules/compat.toml`) | **436** | **6.1 KB** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **1,041** | **69 KB** |
-| **合計** | **101,590** | **3.48 MB** |
+| **合計** | **102,110** | **3.50 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -56,7 +56,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/jukugo/<genre>/*` — 手動 PR メンテのジャンル別 jukugo (≥ 2 字 surface)。 lib の Step 3 (jukugo lookup) で Lindera より優先採用。 各 genre dir の `_genre.toml` がカテゴリ description を持つ。
 
-**合計**: 50,383 件 / 1.99 MB (genre 6 区分)
+**合計**: 50,903 件 / 2.01 MB (genre 6 区分)
 
 #### 自然・生命
 
@@ -126,7 +126,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 人名 / 大学・官庁・元号などの固有名詞 — 個別実体を指す語彙
 
-`core/jukugo/proper/` — 12 ファイル
+`core/jukugo/proper/` — 13 ファイル
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
@@ -136,13 +136,14 @@ git に commit されている master HEAD の状態を基準にする。
 | [`core/jukugo/proper/titles_orgs.toml`](core/jukugo/proper/titles_orgs.toml) | 1,096 | 47 KB | 組織・作品・キャラクター名 (団体・ブランド・題名・登場人物) |
 | [`core/jukugo/proper/given_names.toml`](core/jukugo/proper/given_names.toml) | 859 | 32 KB | 下の名前 (UniDic 人名で読みが一意の語) |
 | [`core/jukugo/proper/personal_names.toml`](core/jukugo/proper/personal_names.toml) | 522 | 28 KB | 人名 (戦国 / 平安 / 江戸 / 明治大正 / 古典作家、現代私人除く) |
+| [`core/jukugo/proper/diet_members.toml`](core/jukugo/proper/diet_members.toml) | 520 | 21 KB | 国会議員の名前 (国会会議録の発言者の読み) |
 | [`core/jukugo/proper/municipalities.toml`](core/jukugo/proper/municipalities.toml) | 432 | 16 KB | 市町村名 (郵便番号データの正式な読み) |
 | [`core/jukugo/proper/kami_names.toml`](core/jukugo/proper/kami_names.toml) | 363 | 19 KB | 神名 (Wikipedia の読みがそろう X命 / X尊) |
 | [`core/jukugo/proper/surnames.toml`](core/jukugo/proper/surnames.toml) | 294 | 26 KB | 難読姓 (苗字) の読み (姓単体、代表読み) |
 | [`core/jukugo/proper/sumo_shikona.toml`](core/jukugo/proper/sumo_shikona.toml) | 45 | 3.4 KB | 大相撲 力士の四股名 (公式読み) |
 | [`core/jukugo/proper/proper_nouns.toml`](core/jukugo/proper/proper_nouns.toml) | 37 | 2.1 KB | 固有名詞 (大学 / 中央官庁 / 元号 / 歴史的事象、PR 募集中) |
 | [`core/jukugo/proper/sake_brands.toml`](core/jukugo/proper/sake_brands.toml) | 32 | 2.2 KB | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
-| **小計** (12 ファイル) | **18,310** | **784 KB** | |
+| **小計** (13 ファイル) | **18,830** | **804 KB** | |
 
 #### 物体・工芸
 

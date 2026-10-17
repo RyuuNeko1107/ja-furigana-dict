@@ -8,13 +8,15 @@
 
 (なし — divergent reading 0 件、 健全)
 
-## 同一 reading (3 件)
+## 同一 reading (5 件)
 
 実害なし (jukugo merge で同値が上書きされても reading 不変)。 整理目安として list 化。
 長期的にどちらか 1 ファイルに寄せたいケースを発見する用。
 
 | surface | reading | files |
 |---|---|---|
+| 中田宏 | ナカダヒロシ | `core/jukugo/basic/general.toml`, `core/jukugo/proper/diet_members.toml` |
 | 扇要 | オウギカナメ | `core/jukugo/basic/general.toml`, `core/works/anime/geass.toml` |
 | 日朝関係 | にっちょうかんけい | `core/jukugo/proper/wiki_place_names.toml`, `core/jukugo/society/terms.toml` |
+| 西村康稔 | ニシムラヤストシ | `core/jukugo/proper/diet_members.toml`, `core/jukugo/proper/people.toml` |
 | 麻辣湯 | マーラータン | `core/jukugo/basic/compounds.toml`, `core/jukugo/basic/general.toml` |
