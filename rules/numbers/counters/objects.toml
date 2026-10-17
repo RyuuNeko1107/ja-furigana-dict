@@ -1028,3 +1028,14 @@ last_digit = [1, 8, 0]
 suffix = "セイ"
 sokuonize = true
 # === end: 世 ===
+
+# === begin: 集 ===
+[counter."集"]
+default = "シュウ"
+kanji_numeral = true  # 一集/八集 → いっしゅう/はっしゅう (第1集 = だいいっしゅう)
+
+[[counter."集".rules]]
+last_digit = [1, 8, 0]
+suffix = "シュウ"
+sokuonize = true
+# === end: 集 ===
