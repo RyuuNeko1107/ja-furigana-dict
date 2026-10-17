@@ -251,7 +251,7 @@ expected = "せきぐちひろしもはいらず"
 [[case]]
 input = "中田宏じゃなかったの?"
 mode = "hiragana"
-expected = "なかたひろしじゃなかったの?"
+expected = "なかだひろしじゃなかったの?"
 
 [[case]]
 input = "戸塚宏悔しそうで草"

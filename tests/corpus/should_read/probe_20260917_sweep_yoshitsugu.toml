@@ -51,7 +51,7 @@ expected = "よしむらよしあきにかんとくやってほしかったわ"
 [[case]]
 input = "古川禎久支持者だ"
 mode = "hiragana"
-expected = "ふるかわていきゅうしじしゃだ"
+expected = "ふるかわよしひさしじしゃだ"
 
 [[case]]
 input = "禎子内親王"
