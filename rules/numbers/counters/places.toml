@@ -52,3 +52,185 @@ last_digit = [1, 6, 8, 0]
 suffix = "カショ"
 sokuonize = true
 # === end: か所 ===
+
+# === begin: カ所 系 (カタカナ表記) === ★2026-10-18 カ所 / ヵ所 / ケ所 / 個所 が 1カ所=いちかしょ だった (ヶ所 / か所 / 箇所 は いっかしょ)
+[counter."カ所"]
+default = "カショ"
+kanji_numeral = true
+[[counter."カ所".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カショ"
+sokuonize = true
+
+[counter."ヵ所"]
+default = "カショ"
+kanji_numeral = true
+[[counter."ヵ所".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カショ"
+sokuonize = true
+
+[counter."ケ所"]
+default = "カショ"
+kanji_numeral = true
+[[counter."ケ所".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カショ"
+sokuonize = true
+
+[counter."個所"]
+default = "カショ"
+kanji_numeral = true
+[[counter."個所".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カショ"
+sokuonize = true
+
+# === end: カ所 系 ===
+
+# === begin: か国 / か年 / か条 系 === ★2026-10-18 1か国 = いちかこく / 6か年 = ろくかねん / 1か条 だった (いっかこく / ろっかねん / いっかじょう)
+[counter."ヶ国"]
+default = "カコク"
+kanji_numeral = true
+[[counter."ヶ国".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カコク"
+sokuonize = true
+
+[counter."ヵ国"]
+default = "カコク"
+kanji_numeral = true
+[[counter."ヵ国".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カコク"
+sokuonize = true
+
+[counter."カ国"]
+default = "カコク"
+kanji_numeral = true
+[[counter."カ国".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カコク"
+sokuonize = true
+
+[counter."か国"]
+default = "カコク"
+kanji_numeral = true
+[[counter."か国".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カコク"
+sokuonize = true
+
+[counter."ケ国"]
+default = "カコク"
+kanji_numeral = true
+[[counter."ケ国".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カコク"
+sokuonize = true
+
+[counter."箇国"]
+default = "カコク"
+kanji_numeral = true
+[[counter."箇国".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カコク"
+sokuonize = true
+
+[counter."ヶ年"]
+default = "カネン"
+kanji_numeral = true
+[[counter."ヶ年".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カネン"
+sokuonize = true
+
+[counter."ヵ年"]
+default = "カネン"
+kanji_numeral = true
+[[counter."ヵ年".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カネン"
+sokuonize = true
+
+[counter."カ年"]
+default = "カネン"
+kanji_numeral = true
+[[counter."カ年".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カネン"
+sokuonize = true
+
+[counter."か年"]
+default = "カネン"
+kanji_numeral = true
+[[counter."か年".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カネン"
+sokuonize = true
+
+[counter."ケ年"]
+default = "カネン"
+kanji_numeral = true
+[[counter."ケ年".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カネン"
+sokuonize = true
+
+[counter."箇年"]
+default = "カネン"
+kanji_numeral = true
+[[counter."箇年".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カネン"
+sokuonize = true
+
+[counter."ヶ条"]
+default = "カジョウ"
+kanji_numeral = true
+[[counter."ヶ条".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カジョウ"
+sokuonize = true
+
+[counter."ヵ条"]
+default = "カジョウ"
+kanji_numeral = true
+[[counter."ヵ条".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カジョウ"
+sokuonize = true
+
+[counter."カ条"]
+default = "カジョウ"
+kanji_numeral = true
+[[counter."カ条".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カジョウ"
+sokuonize = true
+
+[counter."か条"]
+default = "カジョウ"
+kanji_numeral = true
+[[counter."か条".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カジョウ"
+sokuonize = true
+
+[counter."ケ条"]
+default = "カジョウ"
+kanji_numeral = true
+[[counter."ケ条".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カジョウ"
+sokuonize = true
+
+[counter."箇条"]
+default = "カジョウ"
+kanji_numeral = true
+[[counter."箇条".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カジョウ"
+sokuonize = true
+
+# === end: か国 / か年 / か条 系 ===
