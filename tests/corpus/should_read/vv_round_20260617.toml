@@ -171,3 +171,44 @@ expected = "しんぽじとうとほんぽじとう"
 [[case]]
 input = "松陰門下の志士"
 expected = "しょういんもんかのしし"
+
+# Wikipedia / コメント第 14 回標本の食い違いから (2026-10-19)
+[[case]]
+input = "信号設備上では"
+expected = "しんごうせつびじょうでは"
+
+[[case]]
+input = "登記上の住所"
+expected = "とうきじょうのじゅうしょ"
+
+[[case]]
+input = "換毛が始まる"
+expected = "かんもうがはじまる"
+
+[[case]]
+input = "掛毛布(冬用)"
+expected = "かけもうふ(ふゆよう)"
+
+[[case]]
+input = "宍道町の佐々布"
+expected = "しんじちょうのささふ"
+
+[[case]]
+input = "諫めるべきだ"
+expected = "いさめるべきだ"
+
+[[case]]
+input = "頼光四天王と宿曜経"
+expected = "らいこうしてんのうとすくようきょう"
+
+[[case]]
+input = "有磯海SA"
+expected = "ありそうみSA"
+
+[[case]]
+input = "捨て仮名と市境"
+expected = "すてがなとしざかい"
+
+[[case]]
+input = "前橋南インター"
+expected = "まえばしみなみインター"
