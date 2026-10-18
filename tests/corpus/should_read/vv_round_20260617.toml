@@ -122,3 +122,52 @@ note = "〜影 エイ複合は prev=漢字 で維持"
 input = "遺影"
 mode = "hiragana"
 expected = "いえい"
+
+# コメント / Wikipedia 第 13 回標本の食い違いから (2026-10-19)
+[[case]]
+input = "やり得だからMAXしたほうがいい"
+expected = "やりどくだからマックスしたほうがいい"
+
+[[case]]
+input = "強者男性と弱者男性"
+expected = "きょうしゃだんせいとじゃくしゃだんせい"
+
+[[case]]
+input = "和田倉噴水公園"
+expected = "わだくらふんすいこうえん"
+
+[[case]]
+input = "北河内地域"
+expected = "きたかわちちいき"
+
+[[case]]
+input = "乾退助が兵を率いる"
+expected = "いぬいたいすけがへいをひきいる"
+
+[[case]]
+input = "廃棄上の問題と地形上の特色"
+expected = "はいきじょうのもんだいとちけいじょうのとくしょく"
+
+[[case]]
+input = "都道府県下の状況"
+expected = "とどうふけんかのじょうきょう"
+
+[[case]]
+input = "ありがとうございます鷹狩り"
+expected = "ありがとうございますたかがり"
+
+[[case]]
+input = "一生そばにいたい"
+expected = "いっしょうそばにいたい"
+
+[[case]]
+input = "早めに出たので外朝飯。"
+expected = "はやめにでたのでそとあさめし。"
+
+[[case]]
+input = "新補地頭と本補地頭"
+expected = "しんぽじとうとほんぽじとう"
+
+[[case]]
+input = "松陰門下の志士"
+expected = "しょういんもんかのしし"
