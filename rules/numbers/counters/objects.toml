@@ -1059,3 +1059,35 @@ kanji_numeral = false  # 基本 / 基地 など漢数字+基の別語を避け�
 last_digit = [1, 6, 8, 0]
 suffix = "キ"
 sokuonize = true
+
+# ★2026-10-18 項: 第1項 / 1項目 (法令・条文)。 1 / 6 / 8 / 10 は促音 (いっこう / ろっこう / はっこう / じゅっこう)
+[counter."項"]
+default = "コウ"
+kanji_numeral = false  # 一項羽 のような別語を避ける
+
+[[counter."項".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "コウ"
+sokuonize = true
+
+# 項目 (チェック項目: 3項目 = さんこうもく) は 項 + 目 (序数) と取らないよう、 長い 項目 を別の助数詞にする
+[counter."項目"]
+default = "コウモク"
+kanji_numeral = false
+
+[[counter."項目".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "コウモク"
+sokuonize = true
+
+# ★2026-10-18 区: 箱根駅伝の 1区 / 8区 / 10区 と選挙区 (東京8区)。 1 / 6 / 8 / 10 は促音 (いっく / ろっく / はっく / じゅっく)。
+# 区間 / 区画 / 区分 / 区別 / 区切り / 区域 / 区役所 / 区民 など 区 のあとに続く別語は助数詞にしない
+[counter."区"]
+default = "ク"
+kanji_numeral = false
+not_before = ["間", "画", "分", "別", "切", "域", "役", "民", "内", "外", "長", "議", "立", "政", "制", "割", "営", "費", "会", "所", "部", "域", "営", "名"]
+
+[[counter."区".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "ク"
+sokuonize = true
