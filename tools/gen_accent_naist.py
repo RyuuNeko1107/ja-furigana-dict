@@ -36,6 +36,7 @@ SMALL = set("ャュョァィゥェォヮ")
 KANJI = re.compile(r"[㐀-鿿豈-﫿々]")
 KATA = re.compile(r"^[ァ-ヴー]+$")
 OK_POS = {"名詞", "副詞", "連体詞", "感動詞", "接続詞"}
+OVERRIDE_EXTRA_POS = {"動詞", "形容詞"}
 NG_POS2 = {"接尾", "非自立", "数", "特殊", "接続詞的", "助動詞語幹", "動詞非自立的", "形容動詞語幹"}
 
 
@@ -98,7 +99,9 @@ def main() -> None:
         if len(r) < 14 or not re.fullmatch(r"\d+/\d+", r[13]):
             continue
         s, pos1, pos2, kana = r[0], r[4], r[5], r[11]
-        if pos1 not in OK_POS or pos2 in NG_POS2 or not KATA.match(kana):
+        # 上書き表 (--override) は 動詞 / 形容詞 の辞書形も対象 (lib が活用形の核を辞書形から導くため。 UniDic の おいしい = 平板 を OJT の 3 型にする等)
+        pos_ok = OK_POS | OVERRIDE_EXTRA_POS if a.override else OK_POS
+        if pos1 not in pos_ok or pos2 in NG_POS2 or not KATA.match(kana):
             continue
         if a.override:
             if (s, kana) not in have or not re.fullmatch(r"[㐀-鿿豈-﫿々ぁ-ゖァ-ヴー]+", s):
