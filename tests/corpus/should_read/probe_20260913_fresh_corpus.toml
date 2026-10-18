@@ -7,7 +7,8 @@
 [[case]]
 input = "疑問顔"
 mode = "hiragana"
-expected = "ぎもんかお"
+expected = "ぎもんがお"
+note = "user 決定 (2026-10-18): 疑問顔 = ぎもんがお"
 
 [[case]]
 input = "主人公顔"
