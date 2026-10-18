@@ -458,9 +458,9 @@ mode = "hiragana"
 expected = "へうま"
 
 [[case]]
-input = "2〜3回"
+input = "2〜5回"
 mode = "hiragana"
-expected = "にからさんかい"
+expected = "にからごかい"
 
 # ─── 笑 (= round 5 dict fix) ───────────────────────────────────────────────
 

@@ -258,10 +258,10 @@ expected = "ろくがつついたちはわたしのたんじょうび"
 note = "alpha.3 で漢数字 (一日) も DATE_KANJI_MD_RE にマッチ + read_counter_in_date 経路"
 
 [[case]]
-input = "1日に2〜3回服用する"
+input = "1日に2〜5回服用する"
 mode = "hiragana"
-expected = "いちにちににからさんかいふくようする"
-note = "「2」 単独 chunk + 「〜」 はカタカナ (新出力ルール)、 「3回」 は counter で 1 chunk (漢字「回」 含む) → ひらがな化、 「N日」 単独 chunk = 期間扱い (default ニチ)"
+expected = "いちにちににからごかいふくようする"
+note = "「2」 単独 chunk + 「〜」 はカタカナ (新出力ルール)、 「3回」 は counter で 1 chunk (漢字「回」 含む) → ひらがな化、 「N日」 単独 chunk = 期間扱い (default ニチ)。 2026-10-19: 隣り合う 1 桁 (2〜3回) は 「にさんかい」 と詰めるようになったので、 範囲の 「から」 の確認は離れた数 (2〜5回) で行う"
 
 [[case]]
 input = "百個の卵を割った"
