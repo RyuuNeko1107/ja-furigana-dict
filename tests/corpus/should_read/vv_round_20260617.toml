@@ -233,3 +233,36 @@ expected = "ほしがおかさりょうとねぎしあん"
 [[case]]
 input = "京北町と丹波町"
 expected = "けいほくちょうとたんばちょう"
+
+# livedoor/cv/voyage/quote 第 16 回標本の食い違いから (2026-10-19)
+[[case]]
+input = "駿東郡清水町"
+expected = "すんとうぐんしみずちょう"
+
+[[case]]
+input = "静岡県小山町"
+expected = "しずおかけんおやまちょう"
+
+[[case]]
+input = "藤原公経と橘道貞"
+expected = "ふじわらのきんつねとたちばなのみちさだ"
+
+[[case]]
+input = "左京大夫と右衛門督"
+expected = "さきょうのだいぶとうえもんのかみ"
+
+[[case]]
+input = "高市皇子と大来皇女"
+expected = "たけちのみことおおくのひめみこ"
+
+[[case]]
+input = "私設の電報局が軒を連ねていた"
+expected = "しせつのでんぽうきょくがのきをつらねていた"
+
+[[case]]
+input = "秋山成勲"
+expected = "あきやまよしひろ"
+
+[[case]]
+input = "湛江と贛州"
+expected = "たんこうとかんしゅう"
