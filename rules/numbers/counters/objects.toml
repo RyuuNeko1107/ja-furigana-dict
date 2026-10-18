@@ -1085,7 +1085,7 @@ sokuonize = true
 [counter."区"]
 default = "ク"
 kanji_numeral = false
-not_before = ["間", "画", "分", "別", "切", "域", "役", "民", "内", "外", "長", "議", "立", "政", "制", "割", "営", "費", "会", "所", "部", "域", "営", "名"]
+not_before = ["間", "画", "分", "別", "切", "域", "役", "民", "内", "外", "長", "議", "立", "政", "割", "営", "費", "会", "所", "部", "域", "営", "名"]
 
 [[counter."区".rules]]
 last_digit = [1, 6, 8, 0]
@@ -1120,4 +1120,13 @@ not_before = ["舗", "長", "内", "員", "主", "先", "番", "頭", "名", "�
 [[counter."店".rules]]
 last_digit = [1, 8, 0]
 suffix = "テン"
+sokuonize = true
+
+# ★2026-10-18 世帯: 十世帯 = じゅっせたい / 1世帯 = いっせたい (それまで じゅっせいたい)
+[counter."世帯"]
+default = "セタイ"
+kanji_numeral = true
+[[counter."世帯".rules]]
+last_digit = [1, 8, 0]
+suffix = "セタイ"
 sokuonize = true
