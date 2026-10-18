@@ -440,3 +440,28 @@ expected = "じょうもうさんざん"
 [[case]]
 input = "馳委員長"
 expected = "はせいいんちょう"
+
+# 第 23 回標本 (Wikipedia) の食い違いから (2026-10-19)
+[[case]]
+input = "神の一柱"
+expected = "かみのひとはしら"
+
+[[case]]
+input = "北島町と松茂町"
+expected = "きたじまちょうとまつしげちょう"
+
+[[case]]
+input = "小の月"
+expected = "しょうのつき"
+
+[[case]]
+input = "雄蘂と雌蘂"
+expected = "おしべとめしべ"
+
+[[case]]
+input = "軽井沢宿"
+expected = "かるいざわじゅく"
+
+[[case]]
+input = "商店主"
+expected = "しょうてんしゅ"
