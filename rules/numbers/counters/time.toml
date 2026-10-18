@@ -237,6 +237,39 @@ kanji_numeral = true
 last_digit = [1, 6, 8, 0]
 suffix = "カゲツハン"
 sokuonize = true
+# ★2026-10-18 カタカナ表記 (6カ月 = ろっかげつ。 それまで ろくかげつ / 1カ月 = いちかげつ)
+[counter."カ月"]
+default = "カゲツ"
+kanji_numeral = true
+[[counter."カ月".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カゲツ"
+sokuonize = true
+
+[counter."カ月半"]
+default = "カゲツハン"
+kanji_numeral = true
+[[counter."カ月半".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カゲツハン"
+sokuonize = true
+
+[counter."ヵ月"]
+default = "カゲツ"
+kanji_numeral = true
+[[counter."ヵ月".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カゲツ"
+sokuonize = true
+
+[counter."ヵ月半"]
+default = "カゲツハン"
+kanji_numeral = true
+[[counter."ヵ月半".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カゲツハン"
+sokuonize = true
+
 # === end: ヶ月 系 ===
 
 # === begin: 年度 ===
