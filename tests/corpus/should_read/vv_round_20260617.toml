@@ -411,3 +411,32 @@ expected = "よしもとじるしてんねんそざい"
 [[case]]
 input = "横須賀綺譚"
 expected = "よこすかきたん"
+
+# 第 22 回標本 (法令・国会・ニュース・旅行) の食い違いから (2026-10-19)
+[[case]]
+input = "台南と台鉄"
+expected = "たいなんとたいてつ"
+
+[[case]]
+input = "引込口と引出口"
+expected = "ひきこみぐちとひきだしぐち"
+
+[[case]]
+input = "そんな折"
+expected = "そんなおり"
+
+[[case]]
+input = "負の数"
+expected = "ふのすう"
+
+[[case]]
+input = "荒立神社"
+expected = "あらたてじんじゃ"
+
+[[case]]
+input = "上毛三山"
+expected = "じょうもうさんざん"
+
+[[case]]
+input = "馳委員長"
+expected = "はせいいんちょう"
