@@ -266,3 +266,40 @@ expected = "あきやまよしひろ"
 [[case]]
 input = "湛江と贛州"
 expected = "たんこうとかんしゅう"
+
+# 直近コメント第 17 回標本の食い違いから (2026-10-19)
+[[case]]
+input = "全員ぶっ殺してやる"
+expected = "ぜんいんぶっころしてやる"
+
+[[case]]
+input = "大人しく蒸されてくれ"
+expected = "おとなしくむされてくれ"
+
+[[case]]
+input = "ポイントカードは二つ折りで"
+expected = "ポイントカードはふたつおりで"
+
+[[case]]
+input = "見た目的に好きかな"
+expected = "みためてきにすきかな"
+
+[[case]]
+input = "猫耳と狼耳"
+expected = "ねこみみとおおかみみみ"
+
+[[case]]
+input = "薄黄緑色と防草シート"
+expected = "うすきみどりいろとぼうそうシート"
+
+[[case]]
+input = "爺婆の間に出来た子"
+expected = "じじばばのあいだにできたこ"
+
+[[case]]
+input = "麺は柔めで"
+expected = "めんはやわらかめで"
+
+[[case]]
+input = "オリ主にスポットを"
+expected = "おりしゅにスポットを"
