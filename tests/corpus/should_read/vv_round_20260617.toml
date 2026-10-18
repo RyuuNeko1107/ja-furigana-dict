@@ -357,3 +357,28 @@ expected = "ささきじょうさんのしょうせつ"
 [[case]]
 input = "瀬戸熊直樹選手"
 expected = "せとくまなおきせんしゅ"
+
+# 技術文書/書籍 第 20 回標本の食い違いから (2026-10-19)
+[[case]]
+input = "2極と4極"
+expected = "にきょくとよんきょく"
+
+[[case]]
+input = "1極集中"
+expected = "いっきょくしゅうちゅう"
+
+[[case]]
+input = "身体障碍と父君"
+expected = "しんたいしょうがいとちちぎみ"
+
+[[case]]
+input = "中置演算子"
+expected = "ちゅうちえんざんし"
+
+[[case]]
+input = "データ書き込み時"
+expected = "データかきこみじ"
+
+[[case]]
+input = "清朝"
+expected = "しんちょう"
