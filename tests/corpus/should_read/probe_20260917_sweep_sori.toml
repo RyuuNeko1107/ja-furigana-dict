@@ -66,7 +66,7 @@ expected = "まずモヒかんそれワラ"
 [[case]]
 input = "すね毛剃っといて良かったー泣"
 mode = "hiragana"
-expected = "すねけそっといてよかったーなき"
+expected = "すねげそっといてよかったーなき"
 
 [[case]]
 input = "皿鉢料理はでないのか"
