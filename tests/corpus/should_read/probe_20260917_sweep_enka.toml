@@ -346,7 +346,7 @@ expected = "しゅくもうきょうせいしようワラ"
 [[case]]
 input = "歯列矯正"
 mode = "hiragana"
-expected = "はれつきょうせい"
+expected = "しれつきょうせい"
 
 [[case]]
 input = "駆逐してやるw"
