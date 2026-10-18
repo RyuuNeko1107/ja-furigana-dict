@@ -4168,8 +4168,8 @@ note = "節分の柊鰯"
 [[case]]
 input = "暁山瑞希"
 mode = "hiragana"
-expected = "あけやまみずき"
-note = "暁山=あけやま (default あかつきさん)"
+expected = "あきやまみずき"
+note = "暁山=あきやま (公式: プロセカ。 default あかつきさん)"
 
 [[case]]
 input = "宵崎奏"
@@ -4180,8 +4180,8 @@ note = "奏=かなで"
 [[case]]
 input = "白金燐子"
 mode = "hiragana"
-expected = "しろがねりんこ"
-note = "白金=しろがね (default はっきん)"
+expected = "しろかねりんこ"
+note = "白金=しろかね (公式: バンドリ。 default はっきん)"
 
 [[case]]
 input = "氷川紗夜"
