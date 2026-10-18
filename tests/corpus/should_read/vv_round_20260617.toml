@@ -303,3 +303,28 @@ expected = "めんはやわらかめで"
 [[case]]
 input = "オリ主にスポットを"
 expected = "おりしゅにスポットを"
+
+# 配信コメント第 18 回標本の食い違いから (2026-10-19)
+[[case]]
+input = "捲り札やね"
+expected = "めくりふだやね"
+
+[[case]]
+input = "前門の虎後門の狼"
+expected = "ぜんもんのとらこうもんのおおかみ"
+
+[[case]]
+input = "陽だまりの花丸印"
+expected = "ひだまりのはなまるじるし"
+
+[[case]]
+input = "敵いませんよ"
+expected = "かないませんよ"
+
+[[case]]
+input = "誰ソ彼の空"
+expected = "たそがれのそら"
+
+[[case]]
+input = "不屈の民"
+expected = "ふくつのたみ"
