@@ -382,3 +382,32 @@ expected = "データかきこみじ"
 [[case]]
 input = "清朝"
 expected = "しんちょう"
+
+# Wikipedia 第 21 回標本の食い違いから (2026-10-19)
+[[case]]
+input = "メチル基とエチル基"
+expected = "めちるきとえちるき"
+
+[[case]]
+input = "カルボキシ基"
+expected = "かるぼきしき"
+
+[[case]]
+input = "フッ化水素酸とフッ化物"
+expected = "ふっかすいそさんとふっかぶつ"
+
+[[case]]
+input = "倭国と中間期"
+expected = "わこくとちゅうかんき"
+
+[[case]]
+input = "岐南町と梼原町"
+expected = "ぎなんちょうとゆすはらちょう"
+
+[[case]]
+input = "吉本印天然素材"
+expected = "よしもとじるしてんねんそざい"
+
+[[case]]
+input = "横須賀綺譚"
+expected = "よこすかきたん"
