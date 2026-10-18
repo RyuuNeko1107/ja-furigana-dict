@@ -201,7 +201,7 @@ expected = "さいとうかずみもいるぞ"
 [[case]]
 input = "巳年にソロライブやろなあ"
 mode = "hiragana"
-expected = "みねんにソロライブやろなあ"
+expected = "みどしにソロライブやろなあ"
 
 [[case]]
 input = "醸成されるんよね"

@@ -442,7 +442,7 @@ expected = "むかしほていともやすのやつあったよね"
 [[case]]
 input = "寅年"
 mode = "hiragana"
-expected = "とらねん"
+expected = "とらどし"
 
 [[case]]
 input = "伏見寅威きた!"
