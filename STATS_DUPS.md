@@ -8,13 +8,14 @@
 
 (なし — divergent reading 0 件、 健全)
 
-## 同一 reading (10 件)
+## 同一 reading (11 件)
 
 実害なし (jukugo merge で同値が上書きされても reading 不変)。 整理目安として list 化。
 長期的にどちらか 1 ファイルに寄せたいケースを発見する用。
 
 | surface | reading | files |
 |---|---|---|
+| 三峰結華 | ミツミネユイカ | `core/jukugo/basic/compounds.toml`, `core/works/game/idolmaster.toml` |
 | 中田宏 | ナカダヒロシ | `core/jukugo/basic/general.toml`, `core/jukugo/proper/diet_members.toml` |
 | 宗主国 | ソウシュコク | `core/jukugo/basic/compounds.toml`, `core/jukugo/basic/general.toml` |
 | 小沢征悦 | オザワユキヨシ | `core/jukugo/basic/compounds.toml`, `core/jukugo/proper/people.toml` |
