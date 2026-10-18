@@ -328,3 +328,7 @@ expected = "たそがれのそら"
 [[case]]
 input = "不屈の民"
 expected = "ふくつのたみ"
+
+[[case]]
+input = "勝利の決め台詞"
+expected = "しょうりのきめぜりふ"
