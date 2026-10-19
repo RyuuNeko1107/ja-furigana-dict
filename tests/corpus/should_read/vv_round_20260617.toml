@@ -1153,3 +1153,27 @@ expected = "すずせんうどんげいん・いなば"
 [[case]]
 input = "コウメ太夫!?"
 expected = "こうめだゆう!"
+
+[[case]]
+input = "今一瞬体が消えたかと思った"
+expected = "いまいっしゅんからだがきえたかとおもった"
+
+[[case]]
+input = "昨夜体が痛かった"
+expected = "さくやからだがいたかった"
+
+[[case]]
+input = "実験体が逃げた"
+expected = "じっけんたいがにげた"
+
+[[case]]
+input = "抗体が増える"
+expected = "こうたいがふえる"
+
+[[case]]
+input = "いなかのバス停ってかわいい"
+expected = "いなかのばすていってかわいい"
+
+[[case]]
+input = "バス停まで歩く"
+expected = "ばすていまであるく"
