@@ -465,3 +465,28 @@ expected = "かるいざわじゅく"
 [[case]]
 input = "商店主"
 expected = "しょうてんしゅ"
+
+# 第 24 回標本 (青空・技術・書籍・コメント) の食い違いから (2026-10-19)
+[[case]]
+input = "お姉さん力"
+expected = "おねえさんりょく"
+
+[[case]]
+input = "何んだ"
+expected = "なんだ"
+
+[[case]]
+input = "小器用"
+expected = "こぎよう"
+
+[[case]]
+input = "藻抜けの殻"
+expected = "もぬけのから"
+
+[[case]]
+input = "虫目金"
+expected = "むしめがね"
+
+[[case]]
+input = "奉存候"
+expected = "ぞんじたてまつりそうろう"
