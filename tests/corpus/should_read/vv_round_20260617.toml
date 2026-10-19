@@ -565,3 +565,51 @@ expected = "ところちょう"
 [[case]]
 input = "文法性"
 expected = "ぶんぽうせい"
+
+[[case]]
+input = "祭酒"
+expected = "さいしゅ"
+
+[[case]]
+input = "交る代る"
+expected = "かわるがわる"
+
+[[case]]
+input = "史前時代"
+expected = "しぜんじだい"
+
+[[case]]
+input = "銃手"
+expected = "じゅうしゅ"
+
+[[case]]
+input = "自から突っ込んでいった"
+expected = "みずからつっこんでいった"
+
+[[case]]
+input = "安土桃山時代"
+expected = "あづちももやまじだい"
+
+[[case]]
+input = "基板上"
+expected = "きばんじょう"
+
+[[case]]
+input = "電線共同溝"
+expected = "でんせんきょうどうこう"
+
+[[case]]
+input = "運輸支局長"
+expected = "うんゆしきょくちょう"
+
+[[case]]
+input = "大太郎坊"
+expected = "だいだらぼう"
+
+[[case]]
+input = "河盛好蔵"
+expected = "かわもりよしぞう"
+
+[[case]]
+input = "何処へ行くの"
+expected = "どこへいくの"
