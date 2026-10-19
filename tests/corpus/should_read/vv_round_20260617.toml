@@ -1053,3 +1053,39 @@ expected = "へいじょうせんとせんさんびゃくねんきねんじぎ�
 [[case]]
 input = "道の駅 湯西川"
 expected = "みちのえき ゆにしがわ"
+
+[[case]]
+input = "掌に筋が残る"
+expected = "てのひらにすじがのこる"
+
+[[case]]
+input = "左の掌を見る"
+expected = "ひだりのてのひらをみる"
+
+[[case]]
+input = "車掌に聞く"
+expected = "しゃしょうにきく"
+
+[[case]]
+input = "唯これを意識しない"
+expected = "ただこれをいしきしない"
+
+[[case]]
+input = "唯一の方法"
+expected = "ゆいいつのほうほう"
+
+[[case]]
+input = "順序に従う"
+expected = "じゅんじょにしたがう"
+
+[[case]]
+input = "もう一部屋欲しい"
+expected = "もうひとへやほしい"
+
+[[case]]
+input = "お互に、つまらないじゃないか。"
+expected = "おたがいに、 つまらないじゃないか。"
+
+[[case]]
+input = "平次とガラッ八の困惑"
+expected = "へいじとがらっぱちのこんわく"
