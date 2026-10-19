@@ -507,3 +507,32 @@ expected = "なんやかんやで"
 [[case]]
 input = "難すぎる"
 expected = "むずかしすぎる"
+
+# 人名の経路 (0.6.6) の退行・取りこぼし (実コメント 60,000 行の新旧差の判定から、 2026-10-19)
+[[case]]
+input = "羽川さんが一番好き"
+expected = "はねかわさんがいちばんすき"
+
+[[case]]
+input = "波平さんの毛"
+expected = "なみへいさんのけ"
+
+[[case]]
+input = "炭治郎くん"
+expected = "たんじろうくん"
+
+[[case]]
+input = "市場前さんルート"
+expected = "しじょうまえさんルート"
+
+[[case]]
+input = "名古屋市さん、揺れたみたい"
+expected = "なごやしさん、 ゆれたみたい"
+
+[[case]]
+input = "川栄李奈さん"
+expected = "かわえいりなさん"
+
+[[case]]
+input = "伊藤美来さん"
+expected = "いとうみくさん"
