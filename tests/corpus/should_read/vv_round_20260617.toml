@@ -536,3 +536,32 @@ expected = "かわえいりなさん"
 [[case]]
 input = "伊藤美来さん"
 expected = "いとうみくさん"
+
+# 第 26 回標本 (Wikipedia) の食い違いから (2026-10-19)
+[[case]]
+input = "防御側の相性"
+expected = "ぼうぎょがわのあいしょう"
+
+[[case]]
+input = "砕屑岩"
+expected = "さいせつがん"
+
+[[case]]
+input = "橋上化"
+expected = "きょうじょうか"
+
+[[case]]
+input = "沼垂駅"
+expected = "ぬったりえき"
+
+[[case]]
+input = "普通話"
+expected = "ふつうわ"
+
+[[case]]
+input = "常呂町"
+expected = "ところちょう"
+
+[[case]]
+input = "文法性"
+expected = "ぶんぽうせい"
