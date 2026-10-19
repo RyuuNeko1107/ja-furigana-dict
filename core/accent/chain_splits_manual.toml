@@ -1,0 +1,13 @@
+# 手書きの分割表 (生成物ではない)。 IPADIC (Lindera) が 2 語以上にするが、 OpenJTalk (naist-jdic) では 1 語の助詞を、
+# 続く token の表記をつないで引く (キー = 表記,品詞1,複合)。 部品 = 表記,読み,品詞1,品詞2,連用(0/1),核/拍数,結合型 (部品どうしは ;)
+# 出典: naist-jdic (BSD 3-clause、 core/accent/LICENSE.NAIST-jdic) の形態素 (ojt_accent --nodes で確認)。
+
+[meta]
+schema_version = "2"
+role = "accent_chain"
+format = "accent_chain/1"
+description = "手書きの分割表 (助詞)"
+
+[splits]
+# 「してて」「行ってて」 = し + てて (IPADIC は し + て + て)。 前の動詞は 動詞%F2 で 2 拍目に核
+"てて,助詞,複合" = "てて,テテ,助詞,接続助詞,0,0/2,動詞%F2/形容詞%F1/名詞%F5"
