@@ -841,3 +841,7 @@ expected = "xにいちとさんぶんのにをだいにゅうする"
 [[case]]
 input = "今日は2/3に会おう"
 expected = "きょうはにがつみっかにあおう"
+
+[[case]]
+input = "x÷y"
+expected = "xわるy"
