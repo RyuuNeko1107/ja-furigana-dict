@@ -395,7 +395,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 | [`rules/text/units.toml`](rules/text/units.toml) | 70 | 70 | 3.9 KB | SI 単位 + 通貨 + % (km / kg / mL / 円 / % 等、 数値 + 単位を 1 chunk で読む。 lookup は case-insensitive) |
 | [`rules/text/models.toml`](rules/text/models.toml) | 39 | 39 | 9.7 KB | 型番パターン (RTX / Ryzen / Core i / iPhone / Galaxy / Pixel / PS5 / DDR / PCIe / USB / Wi-Fi 等、 ブランド + 数字 + 接尾辞を 1 語で読む) |
 | [`rules/text/emoji_context.toml`](rules/text/emoji_context.toml) | 12 | 12 | 1.1 KB | 絵文字の文脈読み (match) |
-| [`rules/text/context_cues.toml`](rules/text/context_cues.toml) | 7 | 7 | 3.2 KB | N/M が日付か分数かを決める手がかり語 |
+| [`rules/text/context_cues.toml`](rules/text/context_cues.toml) | 7 | 7 | 3.4 KB | N/M が日付か分数かを決める手がかり語 |
 | [`rules/text/postprocess.toml`](rules/text/postprocess.toml) | 3 | 3 | 438 B | 出力後処理 regex (Step 7、 mode 別: hiragana / ruby / tts / romaji の出力直前に適用) |
 | **小計** (7 ファイル) | **780** | **780** | **37 KB** | |
 
@@ -422,7 +422,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 14600 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 14602 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -789,7 +789,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/regression.toml`](tests/corpus/should_read/regression.toml) | 560 |
 |  | [`tests/corpus/should_read/sentences.toml`](tests/corpus/should_read/sentences.toml) | 49 |
 |  | [`tests/corpus/should_read/touhou.toml`](tests/corpus/should_read/touhou.toml) | 30 |
-|  | [`tests/corpus/should_read/vv_round_20260617.toml`](tests/corpus/should_read/vv_round_20260617.toml) | 195 |
+|  | [`tests/corpus/should_read/vv_round_20260617.toml`](tests/corpus/should_read/vv_round_20260617.toml) | 197 |
 |  | [`tests/corpus/should_read.toml`](tests/corpus/should_read.toml) | 150 |
 | `should_not_read_yet` | [`tests/corpus/should_not_read_yet.toml`](tests/corpus/should_not_read_yet.toml) | 1 |
 | `out_of_scope` | [`tests/corpus/out_of_scope.toml`](tests/corpus/out_of_scope.toml) | 0 |
