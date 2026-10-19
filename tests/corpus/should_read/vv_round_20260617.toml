@@ -933,3 +933,27 @@ expected = "あさぞらのしゃしん"
 [[case]]
 input = "移動受信用地上基幹放送"
 expected = "いどうじゅしんようちじょうきかんほうそう"
+
+[[case]]
+input = "未だに紙ベースか"
+expected = "いまだにかみベースか"
+
+[[case]]
+input = "もう諦らめろ"
+expected = "もうあきらめろ"
+
+[[case]]
+input = "この前鬼武者クリアした"
+expected = "このまえおにむしゃクリアした"
+
+[[case]]
+input = "好き勝手描き続ける"
+expected = "すきかってえがきつづける"
+
+[[case]]
+input = "月給で買つて来たかや"
+expected = "げっきゅうでかってきたかや"
+
+[[case]]
+input = "大ていは新らしく外から来た人たち"
+expected = "たいていはあたらしくそとからきたひとたち"
