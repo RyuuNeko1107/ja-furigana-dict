@@ -809,3 +809,27 @@ expected = "おこのみやきき"
 [[case]]
 input = "絞り器"
 expected = "しぼりき"
+
+[[case]]
+input = "蚊取り器"
+expected = "かとりき"
+
+[[case]]
+input = "餌やり器"
+expected = "えさやりき"
+
+[[case]]
+input = "卵溶き器"
+expected = "たまごときき"
+
+[[case]]
+input = "皮剥き器"
+expected = "かわむきき"
+
+[[case]]
+input = "栗剥き器"
+expected = "くりむきき"
+
+[[case]]
+input = "王の器"
+expected = "おうのうつわ"
