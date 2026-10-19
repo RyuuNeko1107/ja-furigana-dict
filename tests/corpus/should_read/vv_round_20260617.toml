@@ -885,3 +885,27 @@ expected = "あわせをわたいれにきかえて"
 [[case]]
 input = "それは設定ってことね"
 expected = "それはせっていってことね"
+
+[[case]]
+input = "冒険の始りだ"
+expected = "ぼうけんのはじまりだ"
+
+[[case]]
+input = "このロガーのしきい値です"
+expected = "このロガーのしきいちです"
+
+[[case]]
+input = "野良着に着替える"
+expected = "のらぎにきがえる"
+
+[[case]]
+input = "詰め辛くなった"
+expected = "つめづらくなった"
+
+[[case]]
+input = "文鳥たちは可愛い"
+expected = "ぶんちょうたちはかわいい"
+
+[[case]]
+input = "大体よく分かる"
+expected = "だいたいよくわかる"
