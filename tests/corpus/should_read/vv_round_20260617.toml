@@ -865,3 +865,23 @@ expected = "はこげたきょう"
 [[case]]
 input = "ユリウス通日を求める"
 expected = "ゆりうすつうじつをもとめる"
+
+[[case]]
+input = "蔵書家に就てその蔵書を借りる"
+expected = "ぞうしょかについてそのぞうしょをかりる"
+
+[[case]]
+input = "切角お尋ねを受けましたが"
+expected = "せっかくおたずねをうけましたが"
+
+[[case]]
+input = "孰れにしても"
+expected = "いずれにしても"
+
+[[case]]
+input = "袷を綿入に着かえて"
+expected = "あわせをわたいれにきかえて"
+
+[[case]]
+input = "それは設定ってことね"
+expected = "それはせっていってことね"
