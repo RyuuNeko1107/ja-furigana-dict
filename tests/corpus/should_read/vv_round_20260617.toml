@@ -957,3 +957,27 @@ expected = "げっきゅうでかってきたかや"
 [[case]]
 input = "大ていは新らしく外から来た人たち"
 expected = "たいていはあたらしくそとからきたひとたち"
+
+[[case]]
+input = "太陽の光を浴びる"
+expected = "たいようのひかりをあびる"
+
+[[case]]
+input = "今一瞬赤字になった"
+expected = "いまいっしゅんあかじになった"
+
+[[case]]
+input = "それは藪蛇やぞ"
+expected = "それはやぶへびやぞ"
+
+[[case]]
+input = "蚊に刺されて痛痒い"
+expected = "かにさされていたがゆい"
+
+[[case]]
+input = "個人単位の常識って違う"
+expected = "こじんたんいのじょうしきってちがう"
+
+[[case]]
+input = "歌い易そうで心地良い"
+expected = "うたいやすそうでここちよい"

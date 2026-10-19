@@ -256,7 +256,7 @@ expected = "あうんのこきゅうだったワラ"
 [[case]]
 input = "藪蛇ww"
 mode = "hiragana"
-expected = "やぶだワラワラ"
+expected = "やぶへびワラワラ"
 
 [[case]]
 input = "竹藪vs竹林"
