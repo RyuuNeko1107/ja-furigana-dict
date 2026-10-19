@@ -1177,3 +1177,39 @@ expected = "いなかのばすていってかわいい"
 [[case]]
 input = "バス停まで歩く"
 expected = "ばすていまであるく"
+
+[[case]]
+input = "百生吟子ちゃんのお誕生日"
+expected = "ももせぎんこちゃんのおたんじょうび"
+
+[[case]]
+input = "井上朋也にバントさせなかった"
+expected = "いのうえともやにバントさせなかった"
+
+[[case]]
+input = "福岡県久山町で17日午後"
+expected = "ふくおかけんひさやままちでじゅうしちにちごご"
+
+[[case]]
+input = "染岡ァ〜"
+expected = "そめおかァ"
+
+[[case]]
+input = "燐子、誕生日おめでとう"
+expected = "りんこ、 たんじょうびおめでとう"
+
+[[case]]
+input = "山手西洋館ハロウィン装飾"
+expected = "やまてせいようかんハロウィンそうしょく"
+
+[[case]]
+input = "有精卵ティラノ"
+expected = "ゆうせいらんティラノ"
+
+[[case]]
+input = "平城山駅間で発生した"
+expected = "ならやまえきかんではっせいした"
+
+[[case]]
+input = "後戯の意味"
+expected = "ごぎのいみ"
