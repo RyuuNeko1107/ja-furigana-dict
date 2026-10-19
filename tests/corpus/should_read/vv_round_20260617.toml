@@ -490,3 +490,20 @@ expected = "むしめがね"
 [[case]]
 input = "奉存候"
 expected = "ぞんじたてまつりそうろう"
+
+# 第 25 回標本 (配信コメント) の食い違いから (2026-10-19)
+[[case]]
+input = "一箱"
+expected = "ひとはこ"
+
+[[case]]
+input = "引直せる"
+expected = "ひきなおせる"
+
+[[case]]
+input = "何やかんやで"
+expected = "なんやかんやで"
+
+[[case]]
+input = "難すぎる"
+expected = "むずかしすぎる"
