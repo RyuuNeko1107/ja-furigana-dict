@@ -793,3 +793,19 @@ expected = "ひがしまつさかえき"
 [[case]]
 input = "大島三平"
 expected = "おおしまさんぺい"
+
+[[case]]
+input = "卵焼き器"
+expected = "たまごやきき"
+
+[[case]]
+input = "たこ焼き器"
+expected = "たこやきき"
+
+[[case]]
+input = "お好み焼き器"
+expected = "おこのみやきき"
+
+[[case]]
+input = "絞り器"
+expected = "しぼりき"
