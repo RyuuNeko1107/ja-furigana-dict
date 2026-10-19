@@ -845,3 +845,23 @@ expected = "きょうはにがつみっかにあおう"
 [[case]]
 input = "x÷y"
 expected = "xわるy"
+
+[[case]]
+input = "高知県いの町"
+expected = "こうちけんいのちょう"
+
+[[case]]
+input = "それは聖闘士星矢"
+expected = "それはせいんとせいや"
+
+[[case]]
+input = "みどり君達のうら話"
+expected = "みどりきみたちのうらばなし"
+
+[[case]]
+input = "箱桁橋"
+expected = "はこげたきょう"
+
+[[case]]
+input = "ユリウス通日を求める"
+expected = "ゆりうすつうじつをもとめる"
