@@ -1021,3 +1021,35 @@ expected = "おはながさんりんになってゴージャス"
 [[case]]
 input = "朽爛するのみ"
 expected = "きゅうらんするのみ"
+
+[[case]]
+input = "地方都市、県都の状況でもございます。"
+expected = "ちほうとし、 けんとのじょうきょうでもございます。"
+
+[[case]]
+input = "アヴェッリーノ県の県都である。"
+expected = "アヴェッリーノけんのけんとである。"
+
+[[case]]
+input = "氷入れて冷で飲むしか"
+expected = "こおりいれてひやでのむしか"
+
+[[case]]
+input = "冷でいくわ"
+expected = "ひやでいくわ"
+
+[[case]]
+input = "冷房を入れる"
+expected = "れいぼうをいれる"
+
+[[case]]
+input = "ただ身自ら行く"
+expected = "ただみずからいく"
+
+[[case]]
+input = "平城遷都1300年記念事業協会"
+expected = "へいじょうせんとせんさんびゃくねんきねんじぎょうきょうかい"
+
+[[case]]
+input = "道の駅 湯西川"
+expected = "みちのえき ゆにしがわ"

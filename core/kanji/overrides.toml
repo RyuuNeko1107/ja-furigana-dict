@@ -4991,6 +4991,11 @@ reading = "つめ"
 next_starts_any = ["め", "ま"]
 reading = "さ"
 
+# 「冷でいく/冷でください」 = 日本酒を冷やのまま (ひやで)。 漢字が続く「冷で飲む/冷で一杯」 は jukugo の見出し
+[[kanji.match]]
+next_starts_any = ["でいく", "でください", "でくれ", "でお"]
+reading = "ひや"
+
 [[kanji.match]]
 next_starts_any = ["え", "や"]
 reading = "ひ"
@@ -11465,6 +11470,13 @@ reading = "おもむき"
 [[kanji]]
 char = "都"
 default = "ト"
+
+# 「県都の/県都は…」 = 県庁所在地 (宮崎県|都城市 は 県の次で 都 + 城 と続くので対象外 = next が城のとき)。
+# match は先に書いた方が勝つので、 「都+助詞 → みやこ」 より前に置く
+[[kanji.match]]
+prev_ends_any = ["県"]
+next_starts_any = ["は", "が", "を", "に", "の", "で", "と", "も", "や", "へ"]
+reading = "ト"
 
 # 「都は/都が/都を/都に/都の/都で/都と」 = 単独 + 助詞接続 → みやこ
 [[kanji.match]]
