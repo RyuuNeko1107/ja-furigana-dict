@@ -613,3 +613,71 @@ expected = "かわもりよしぞう"
 [[case]]
 input = "何処へ行くの"
 expected = "どこへいくの"
+
+[[case]]
+input = "幾冊"
+expected = "いくさつ"
+
+[[case]]
+input = "大時化"
+expected = "おおしけ"
+
+[[case]]
+input = "二たび"
+expected = "ふたたび"
+
+[[case]]
+input = "永の暇"
+expected = "ながのいとま"
+
+[[case]]
+input = "念い出して"
+expected = "おもいだして"
+
+[[case]]
+input = "江原桂助"
+expected = "えばらけいすけ"
+
+[[case]]
+input = "一しょに"
+expected = "いっしょに"
+
+[[case]]
+input = "営業本部長"
+expected = "えいぎょうほんぶちょう"
+
+[[case]]
+input = "従つて"
+expected = "したがつて"
+
+[[case]]
+input = "十二月分から"
+expected = "じゅうにがつぶんから"
+
+[[case]]
+input = "省都"
+expected = "しょうと"
+
+[[case]]
+input = "四品以上"
+expected = "しほんいじょう"
+
+[[case]]
+input = "大気圧下"
+expected = "たいきあっか"
+
+[[case]]
+input = "機関手の"
+expected = "きかんしゅの"
+
+[[case]]
+input = "夏羽"
+expected = "なつばね"
+
+[[case]]
+input = "宮崎県都城市"
+expected = "みやざきけんみやこのじょうし"
+
+[[case]]
+input = "合併した"
+expected = "がっぺいした"
