@@ -681,3 +681,55 @@ expected = "みやざきけんみやこのじょうし"
 [[case]]
 input = "合併した"
 expected = "がっぺいした"
+
+[[case]]
+input = "跼んで"
+expected = "かがんで"
+
+[[case]]
+input = "積っている"
+expected = "つもっている"
+
+[[case]]
+input = "向うから"
+expected = "むこうから"
+
+[[case]]
+input = "異った"
+expected = "ことなった"
+
+[[case]]
+input = "私の許へ"
+expected = "わたしのもとへ"
+
+[[case]]
+input = "検べますよ"
+expected = "しらべますよ"
+
+[[case]]
+input = "霧降の滝"
+expected = "きりふりのたき"
+
+[[case]]
+input = "施行前に"
+expected = "しこうまえに"
+
+[[case]]
+input = "一世一元の詔"
+expected = "いっせいいちげんのみことのり"
+
+[[case]]
+input = "居る処で"
+expected = "いるところで"
+
+[[case]]
+input = "年より夫婦"
+expected = "としよりふうふ"
+
+[[case]]
+input = "決済してから"
+expected = "けっさいしてから"
+
+[[case]]
+input = "決着手前"
+expected = "けっちゃくてまえ"
