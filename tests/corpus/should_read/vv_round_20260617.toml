@@ -1285,3 +1285,11 @@ expected = "xだっしゅをもとめる"
 [[case]]
 input = "B′zの曲"
 expected = "B′zのきょく"
+
+[[case]]
+input = "2週に一回市が立ってた"
+expected = "にしゅうにいっかいいちがたってた"
+
+[[case]]
+input = "市が決める"
+expected = "しがきめる"
