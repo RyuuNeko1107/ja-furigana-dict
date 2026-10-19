@@ -733,3 +733,63 @@ expected = "けっさいしてから"
 [[case]]
 input = "決着手前"
 expected = "けっちゃくてまえ"
+
+[[case]]
+input = "帝鑑間"
+expected = "ていかんのま"
+
+[[case]]
+input = "性的二形"
+expected = "せいてきにけい"
+
+[[case]]
+input = "覗える"
+expected = "うかがえる"
+
+[[case]]
+input = "慶暦の治"
+expected = "けいれきのち"
+
+[[case]]
+input = "中胚葉"
+expected = "ちゅうはいよう"
+
+[[case]]
+input = "松戸宿"
+expected = "まつどじゅく"
+
+[[case]]
+input = "完成美"
+expected = "かんせいび"
+
+[[case]]
+input = "合法性"
+expected = "ごうほうせい"
+
+[[case]]
+input = "混泳"
+expected = "こんえい"
+
+[[case]]
+input = "桜通線"
+expected = "さくらどおりせん"
+
+[[case]]
+input = "賑う"
+expected = "にぎわう"
+
+[[case]]
+input = "仏生山"
+expected = "ぶっしょうざん"
+
+[[case]]
+input = "溝口肇"
+expected = "みぞぐちはじめ"
+
+[[case]]
+input = "東松阪駅"
+expected = "ひがしまつさかえき"
+
+[[case]]
+input = "大島三平"
+expected = "おおしまさんぺい"
