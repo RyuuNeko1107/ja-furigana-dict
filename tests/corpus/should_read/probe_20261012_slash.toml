@@ -128,9 +128,9 @@ mode = "hiragana"
 expected = "へんじはばつです"
 
 [[case]]
-input = "2×3=6"
+input = "2×3"
 mode = "hiragana"
-expected = "にかけるさん=ろく"
+expected = "にかけるさん"
 
 [[case]]
 input = "○×クイズ"

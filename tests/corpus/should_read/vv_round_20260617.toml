@@ -833,3 +833,11 @@ expected = "くりむきき"
 [[case]]
 input = "王の器"
 expected = "おうのうつわ"
+
+[[case]]
+input = "xに1と2/3を代入する"
+expected = "xにいちとさんぶんのにをだいにゅうする"
+
+[[case]]
+input = "今日は2/3に会おう"
+expected = "きょうはにがつみっかにあおう"
