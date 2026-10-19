@@ -1263,9 +1263,25 @@ input = "北緯35°30′"
 expected = "ほくいさんじゅうごどさんじゅっぷん"
 
 [[case]]
-input = "5′末端"
-expected = "ご′まったん"
-
-[[case]]
 input = "言ってもしょうがないし、′′届く′′とかも"
 expected = "いってもしょうがないし、 ′′とどく′′とかも"
+
+[[case]]
+input = "5′末端"
+expected = "ごだっしゅまったん"
+
+[[case]]
+input = "身長5′10″"
+expected = "しんちょうごフィートじゅうインチ"
+
+[[case]]
+input = "3′3′-ジクロロ"
+expected = "さんだっしゅさんだっしゅ-ジクロロ"
+
+[[case]]
+input = "x′を求める"
+expected = "xだっしゅをもとめる"
+
+[[case]]
+input = "B′zの曲"
+expected = "B′zのきょく"
