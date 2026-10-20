@@ -5,8 +5,11 @@ name: Auto-merge label
 # scheduled で merge する。
 #
 # safe 条件:
-# - 変更ファイルがすべて core/**/*.toml または rules/**/*.toml
-#   (workflow / script / docs / Cargo.toml 等 = 「重要な構成変更」を含まない)
+# - 変更ファイルがすべて core/**/*.toml (語彙の追加)
+#   workflow / script / docs / Cargo.toml 等 = 「重要な構成変更」 を含まない。
+#   **rules/ も対象外**: 後処理の置換・型番の正規表現・手がかりの表・助数詞の規則など、
+#   実行時の挙動を決めるデータで、 本番へ毎日配布される。 維持者のレビューを必須にする
+#   (セキュリティ監査 REPORT-037)
 # - 行追加 ≤ 200 行 (大量追加は人手 review 推奨)
 # - 単漢字混入 / cross-file 重複は別の validate.yml ワークフローで CI fail として
 #   検出されるため、ここでは file path + size のみチェック
@@ -42,19 +45,19 @@ jobs:
           ADDITIONS=$(jq -r '.additions' pr.json)
           UNSAFE_FILES=$(jq -r '
             .files[] | .path |
-            select((startswith("core/") or startswith("rules/")) | not)
+            select(startswith("core/") | not)
           ' pr.json)
 
           REASON=""
           if [ -n "$UNSAFE_FILES" ]; then
-            REASON="PR が dict 領域 (core/, rules/) 外を変更:"$'\n'"$UNSAFE_FILES"
+            REASON="PR が語彙の領域 (core/) 外を変更 (rules/ は維持者のレビューが要る):"$'\n'"$UNSAFE_FILES"
           elif [ "$ADDITIONS" -gt 200 ]; then
             REASON="PR の行追加が 200 を超える ($ADDITIONS 行) — 人手 review 推奨"
           fi
 
           if [ -z "$REASON" ]; then
             echo "safe=true" >> "$GITHUB_OUTPUT"
-            echo "PR is safe ($ADDITIONS additions, dict-only)"
+            echo "PR is safe ($ADDITIONS additions, core/ only)"
           else
             echo "safe=false" >> "$GITHUB_OUTPUT"
             echo "$REASON"
