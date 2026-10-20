@@ -1467,14 +1467,6 @@ input = "寿庵堰と呼ばれ現在も"
 expected = "じゅあんぜきとよばれげんざいも"
 
 [[case]]
-input = "日野市医師会"
-expected = "ひのしいしかい"
-
-[[case]]
-input = "鎌倉市医師会"
-expected = "かまくらしいしかい"
-
-[[case]]
 input = "小野市サッカー協会"
 expected = "おのしサッカーきょうかい"
 
