@@ -1465,3 +1465,23 @@ expected = "だいぶからだうごかしたんで"
 [[case]]
 input = "寿庵堰と呼ばれ現在も"
 expected = "じゅあんぜきとよばれげんざいも"
+
+[[case]]
+input = "日野市医師会"
+expected = "ひのしいしかい"
+
+[[case]]
+input = "鎌倉市医師会"
+expected = "かまくらしいしかい"
+
+[[case]]
+input = "小野市サッカー協会"
+expected = "おのしサッカーきょうかい"
+
+[[case]]
+input = "田中記者会見"
+expected = "たなかきしゃかいけん"
+
+[[case]]
+input = "田中選手が打った"
+expected = "たなかせんしゅがうった"
