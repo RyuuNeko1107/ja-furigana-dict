@@ -645,6 +645,45 @@ def validate_context_cues(path: Path, errors: Errors) -> None:
             errors.add_for(path, f"'{w}' を日付側と分数側の両方 ({pos}) に登録している")
 
 
+# ─── rules/text/math_readings.toml ─────────────────────────────────────────
+MATH_TABLES = {'functions', 'greek', 'operators'}
+MATH_MAX_ENTRIES = 500       # lib の読み込み上限と同じ
+MATH_MAX_READING_CHARS = 32
+MATH_READING_RE = re.compile(r'^[\u30A1-\u30FA\u30FC]+$')   # カタカナ (ァ〜ヺ) と長音 ー
+
+
+def validate_math_readings(path: Path, errors: Errors) -> None:
+    """[functions] (小文字の英字名) / [greek] (1 字) / [operators] (1 字) → カタカナの読み。
+    読みは空でなく 32 字まで、 カタカナと長音だけ。 各表は 500 件まで。 key の形が違うものは不可"""
+    data = load_toml(path, errors)
+    if data is None:
+        return
+    for table in ('functions', 'greek', 'operators'):
+        t = data.get(table)
+        if t is None:
+            continue
+        if not isinstance(t, dict):
+            errors.add_for(path, f"[{table}] は table にしてください")
+            continue
+        if len(t) > MATH_MAX_ENTRIES:
+            errors.add_for(path, f"[{table}] が {len(t)} 件 (上限 {MATH_MAX_ENTRIES})")
+        for key, reading in t.items():
+            if table == 'functions':
+                if not re.fullmatch(r'[a-z]{1,8}', key):
+                    errors.add_for(path, f"[functions] key {key!r} は小文字の英字 1〜8 字にしてください")
+            elif len(key) != 1:
+                errors.add_for(path, f"[{table}] key {key!r} は 1 字にしてください")
+            if not isinstance(reading, str) or not reading:
+                errors.add_for(path, f"[{table}] {key!r} の読みは空でない文字列にしてください")
+            elif len(reading) > MATH_MAX_READING_CHARS:
+                errors.add_for(path, f"[{table}] {key!r} の読みが {len(reading)} 字 (上限 {MATH_MAX_READING_CHARS})")
+            elif not MATH_READING_RE.match(reading):
+                errors.add_for(path, f"[{table}] {key!r} の読み {reading!r} はカタカナと長音だけにしてください")
+    for key in data:
+        if key not in MATH_TABLES and key != 'meta':
+            errors.add_for(path, f"未知の table [{key}] (使えるのは {sorted(MATH_TABLES)})")
+
+
 # ─── rules/text/models.toml ────────────────────────────────────────────────
 MODEL_STYLES = {'place', 'each', 'each_en', 'english', 'pair', 'pair_en', 'dotted', 'part', 'spell'}
 MODEL_PLACEHOLDER_RE = re.compile(r'\{([^{}]*)\}')
@@ -1184,6 +1223,7 @@ def main() -> int:
         ([rules / 'compat.toml'],            lambda p: validate_compat(p, errors)),
         ([rules / 'text' / 'models.toml'],   lambda p: validate_models(p, errors)),
         ([rules / 'text' / 'context_cues.toml'], lambda p: validate_context_cues(p, errors)),
+        ([rules / 'text' / 'math_readings.toml'], lambda p: validate_math_readings(p, errors)),
         # ★ counters の実ファイルは rules/numbers/counters/ 配下。旧 `discover(rules,
         #   'counters')` (= rules/counters/ を探す) は dict ディレクトリ再編成で dead に
         #   なっており validate_counters が一度も走っていなかった (= kanji_numeral lint 等が
