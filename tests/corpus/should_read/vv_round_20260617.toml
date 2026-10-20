@@ -1477,3 +1477,15 @@ expected = "たなかきしゃかいけん"
 [[case]]
 input = "田中選手が打った"
 expected = "たなかせんしゅがうった"
+
+[[case]]
+input = "日野市医師会"
+expected = "ひのしいしかい"
+
+[[case]]
+input = "鎌倉市医師会"
+expected = "かまくらしいしかい"
+
+[[case]]
+input = "三島町医師会"
+expected = "みしまちょういしかい"
