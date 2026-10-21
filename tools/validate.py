@@ -25,6 +25,7 @@ exit code 0 = OK, 1 = 検証エラーあり
 from __future__ import annotations
 
 import re
+import unicodedata
 import sys
 import getpass
 import hashlib
@@ -645,6 +646,50 @@ def validate_context_cues(path: Path, errors: Errors) -> None:
             errors.add_for(path, f"'{w}' を日付側と分数側の両方 ({pos}) に登録している")
 
 
+# ─── rules/text/person_name_cues.toml ──────────────────────────────────────
+PERSON_CUE_LISTS = {'honorifics', 'titles', 'not_given_names', 'compound_heads'}
+PERSON_CUE_MAX_WORDS = 1000   # lib の読み込み上限と同じ
+PERSON_CUE_MAX_CHARS = 16
+
+
+def validate_person_name_cues(path: Path, errors: Errors) -> None:
+    """[cues] の 4 つの表 (honorifics / titles / not_given_names / compound_heads): 文字列配列。
+    空・空白や制御文字を含む語・重複・長すぎる語 (16 字)・多すぎる件数 (1,000) は不可。
+    compound_heads は 1 字ずつ。 敬称と肩書きに同じ語を置かない"""
+    data = load_toml(path, errors)
+    if data is None:
+        return
+    cues = data.get('cues')
+    if not isinstance(cues, dict):
+        errors.add_for(path, "[cues] が無い、または table ではない")
+        return
+    for key, words in cues.items():
+        if key not in PERSON_CUE_LISTS:
+            errors.add_for(path, f"[cues] 未知の key '{key}' (使えるのは {sorted(PERSON_CUE_LISTS)})")
+            continue
+        if not isinstance(words, list) or not all(isinstance(w, str) for w in words):
+            errors.add_for(path, f"[cues].{key} は文字列の配列にしてください")
+            continue
+        if len(words) > PERSON_CUE_MAX_WORDS:
+            errors.add_for(path, f"[cues].{key} が {len(words)} 語 (上限 {PERSON_CUE_MAX_WORDS})")
+        seen = set()
+        for w in words:
+            if not w.strip():
+                errors.add_for(path, f"[cues].{key} に空の語がある")
+            elif any(c.isspace() or unicodedata.category(c).startswith('C') for c in w):
+                errors.add_for(path, f"[cues].{key} {w!r} に空白・制御文字がある")
+            elif len(w) > PERSON_CUE_MAX_CHARS:
+                errors.add_for(path, f"[cues].{key} '{w}' が {len(w)} 字 (上限 {PERSON_CUE_MAX_CHARS})")
+            elif key == 'compound_heads' and len(w) != 1:
+                errors.add_for(path, f"[cues].compound_heads '{w}' は 1 字にしてください")
+            if w in seen:
+                errors.add_for(path, f"[cues].{key} '{w}' が重複している")
+            seen.add(w)
+    both = set(cues.get('honorifics') or []) & set(cues.get('titles') or [])
+    for w in sorted(both):
+        errors.add_for(path, f"'{w}' を敬称と肩書きの両方に登録している")
+
+
 # ─── rules/text/models.toml ────────────────────────────────────────────────
 MODEL_STYLES = {'place', 'each', 'each_en', 'english', 'pair', 'pair_en', 'dotted', 'part', 'spell'}
 MODEL_PLACEHOLDER_RE = re.compile(r'\{([^{}]*)\}')
@@ -1184,6 +1229,7 @@ def main() -> int:
         ([rules / 'compat.toml'],            lambda p: validate_compat(p, errors)),
         ([rules / 'text' / 'models.toml'],   lambda p: validate_models(p, errors)),
         ([rules / 'text' / 'context_cues.toml'], lambda p: validate_context_cues(p, errors)),
+        ([rules / 'text' / 'person_name_cues.toml'], lambda p: validate_person_name_cues(p, errors)),
         # ★ counters の実ファイルは rules/numbers/counters/ 配下。旧 `discover(rules,
         #   'counters')` (= rules/counters/ を探す) は dict ディレクトリ再編成で dead に
         #   なっており validate_counters が一度も走っていなかった (= kanji_numeral lint 等が
