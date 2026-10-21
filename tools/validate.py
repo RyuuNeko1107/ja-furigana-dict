@@ -747,6 +747,59 @@ def validate_models(path: Path, errors: Errors) -> None:
 
 
 # ─── rules/scales.toml ─────────────────────────────────────────────────────
+# ─── rules/text/postprocess.toml ───────────────────────────────────────────
+POSTPROCESS_MAX_RULES = 10_000          # lib の読み込み上限 (rules/postprocess.rs の MAX_RULES) と同じ
+POSTPROCESS_MAX_REPLACEMENT_BYTES = 1024  # 同 MAX_REPLACEMENT_BYTES
+POSTPROCESS_MAX_PATTERN_CHARS = 1000
+
+
+def validate_postprocess(path: Path, errors: Errors, warnings: Warnings | None = None) -> None:
+    """[[rule]] の後処理 regex: pattern / replacement は文字列、 modes は文字列の配列 (省略可)。
+    lib が読み込みを拒否する上限 (規則 10,000 件・replacement 1,024 bytes) をここでも弾く。
+    **空の文字列にマッチする pattern** は、 全ての位置に replacement を差し込むので出力が膨らむ
+    (80 字の入力が 100 MB になった実例がある)。 意図したものでなければ書き直す"""
+    data = load_toml(path, errors)
+    if data is None:
+        return
+    rules = data.get('rule', [])
+    if not isinstance(rules, list) or not all(isinstance(r, dict) for r in rules):
+        errors.add_for(path, "[[rule]] は table の配列にしてください")
+        return
+    if len(rules) > POSTPROCESS_MAX_RULES:
+        errors.add_for(path, f"規則が {len(rules)} 件 (上限 {POSTPROCESS_MAX_RULES})")
+    for i, r in enumerate(rules, 1):
+        label = f"[[rule]] #{i}"
+        pat = r.get('pattern')
+        rep = r.get('replacement')
+        modes = r.get('modes', [])
+        if not isinstance(pat, str) or not pat:
+            errors.add_for(path, f"{label}: pattern は空でない文字列にしてください")
+            continue
+        if not isinstance(rep, str):
+            errors.add_for(path, f"{label}: replacement は文字列にしてください")
+            continue
+        if len(pat) > POSTPROCESS_MAX_PATTERN_CHARS:
+            errors.add_for(path, f"{label}: pattern が {len(pat)} 字 (上限 {POSTPROCESS_MAX_PATTERN_CHARS})")
+        if len(rep.encode('utf-8')) > POSTPROCESS_MAX_REPLACEMENT_BYTES:
+            errors.add_for(
+                path,
+                f"{label}: replacement が {len(rep.encode('utf-8'))} bytes (上限 {POSTPROCESS_MAX_REPLACEMENT_BYTES})",
+            )
+        if not isinstance(modes, list) or not all(isinstance(m, str) and m for m in modes):
+            errors.add_for(path, f"{label}: modes は空でない文字列の配列にしてください")
+        # 空の文字列にマッチする pattern (Python の re で近似。 Rust の regex と書き方が違って
+        # 読めないものは検査できないので警告に留める)
+        try:
+            if re.compile(pat).search(""):
+                errors.add_for(
+                    path,
+                    f"{label}: pattern {pat!r} は空の文字列にマッチする。 全ての位置に replacement が入り出力が膨らむので、 書き直してください",
+                )
+        except re.error:
+            if warnings is not None:
+                warnings.add_for(path, f"{label}: pattern {pat!r} は Python の re で読めず、 空マッチの検査を省略した")
+
+
 def validate_scales(path: Path, errors: Errors) -> None:
     """[[entry]] kanji + kana"""
     data = load_toml(path, errors)
@@ -1235,6 +1288,7 @@ def main() -> int:
         #   なっており validate_counters が一度も走っていなかった (= kanji_numeral lint 等が
         #   不発)。実パスへ修正。
         (discover(rules / 'numbers', 'counters'),  lambda p: validate_counters(p, errors)),
+        ([rules / 'text' / 'postprocess.toml'], lambda p: validate_postprocess(p, errors, warnings)),
         # ★TODO(dead-routing): 以下 5 validator も同じ再編成で dead-routed のまま:
         #   numeric_phrases → rules/numbers/numeric_phrases.toml
         #   symbols         → rules/text/symbols.toml
