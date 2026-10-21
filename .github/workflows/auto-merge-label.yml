@@ -10,6 +10,9 @@ name: Auto-merge label
 # - 行追加 ≤ 200 行 (大量追加は人手 review 推奨)
 # - 単漢字混入 / cross-file 重複は別の validate.yml ワークフローで CI fail として
 #   検出されるため、ここでは file path + size のみチェック
+# - PR を出したのが維持者 (OWNER / MEMBER / COLLABORATOR) か Dependabot / GitHub Actions
+#   (2026-10-21: 外部の PR は 48h 後に本番のふりがな API へ自動で入る道になるため、人が見て取り込む。
+#    PR のコードは checkout しない = pull_request_target でも PR 側のコードは実行されない)
 
 on:
   pull_request_target:
@@ -38,6 +41,9 @@ jobs:
 
       - name: Safe 判定
         id: safe
+        env:
+          ASSOC: ${{ github.event.pull_request.author_association }}
+          AUTHOR: ${{ github.event.pull_request.user.login }}
         run: |
           ADDITIONS=$(jq -r '.additions' pr.json)
           UNSAFE_FILES=$(jq -r '
@@ -46,7 +52,11 @@ jobs:
           ' pr.json)
 
           REASON=""
-          if [ -n "$UNSAFE_FILES" ]; then
+          case "$ASSOC" in OWNER|MEMBER|COLLABORATOR) TRUSTED=1 ;; *) TRUSTED=0 ;; esac
+          case "$AUTHOR" in "dependabot[bot]"|"github-actions[bot]") TRUSTED=1 ;; esac
+          if [ "$TRUSTED" != 1 ]; then
+            REASON="外部の PR ($AUTHOR / $ASSOC) は維持者が見て取り込む (自動マージしない)"
+          elif [ -n "$UNSAFE_FILES" ]; then
             REASON="PR が dict 領域 (core/, rules/) 外を変更:"$'\n'"$UNSAFE_FILES"
           elif [ "$ADDITIONS" -gt 200 ]; then
             REASON="PR の行追加が 200 を超える ($ADDITIONS 行) — 人手 review 推奨"
