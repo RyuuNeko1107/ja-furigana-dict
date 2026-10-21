@@ -5,6 +5,10 @@ name: Auto-merge label
 # scheduled で merge する。
 #
 # safe 条件:
+# - **PR の作者がこの repo の関係者** (author_association が OWNER / MEMBER / COLLABORATOR)。
+#   外部の人の PR は、 内容が core/ だけでも自動マージの対象にしない (維持者のレビューが要る)。
+#   読みの差し替えは、 毎日の配布で本番の読み上げに届き、 配信上の事故になりうるため
+#   (セキュリティ監査 REPORT-054)
 # - 変更ファイルがすべて core/**/*.toml (語彙の追加)
 #   workflow / script / docs / Cargo.toml 等 = 「重要な構成変更」 を含まない。
 #   **rules/ も対象外**: 後処理の置換・型番の正規表現・手がかりの表・助数詞の規則など、
@@ -41,6 +45,10 @@ jobs:
 
       - name: Safe 判定
         id: safe
+        env:
+          # PR の作者とこの repo との関係 (GitHub が付ける。 OWNER / MEMBER / COLLABORATOR / CONTRIBUTOR / FIRST_TIME_CONTRIBUTOR / NONE など)。
+          # 式展開でシェルに入れず、 環境変数で受ける
+          AUTHOR_ASSOC: ${{ github.event.pull_request.author_association }}
         run: |
           ADDITIONS=$(jq -r '.additions' pr.json)
           UNSAFE_FILES=$(jq -r '
@@ -49,7 +57,13 @@ jobs:
           ' pr.json)
 
           REASON=""
-          if [ -n "$UNSAFE_FILES" ]; then
+          case "$AUTHOR_ASSOC" in
+            OWNER|MEMBER|COLLABORATOR) ;;
+            *) REASON="PR の作者が repo の関係者ではない ($AUTHOR_ASSOC) — 維持者のレビューが要る" ;;
+          esac
+          if [ -n "$REASON" ]; then
+            :
+          elif [ -n "$UNSAFE_FILES" ]; then
             REASON="PR が語彙の領域 (core/) 外を変更 (rules/ は維持者のレビューが要る):"$'\n'"$UNSAFE_FILES"
           elif [ "$ADDITIONS" -gt 200 ]; then
             REASON="PR の行追加が 200 を超える ($ADDITIONS 行) — 人手 review 推奨"
