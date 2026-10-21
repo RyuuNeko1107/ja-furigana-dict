@@ -5,18 +5,17 @@ name: Auto-merge label
 # scheduled で merge する。
 #
 # safe 条件:
-# - **PR の作者がこの repo の関係者** (author_association が OWNER / MEMBER / COLLABORATOR)。
-#   外部の人の PR は、 内容が core/ だけでも自動マージの対象にしない (維持者のレビューが要る)。
-#   読みの差し替えは、 毎日の配布で本番の読み上げに届き、 配信上の事故になりうるため
-#   (セキュリティ監査 REPORT-054)
 # - 変更ファイルがすべて core/**/*.toml (語彙の追加)
-#   workflow / script / docs / Cargo.toml 等 = 「重要な構成変更」 を含まない。
-#   **rules/ も対象外**: 後処理の置換・型番の正規表現・手がかりの表・助数詞の規則など、
+#   **rules/ は対象外**: 後処理の置換・型番の正規表現・手がかりの表・助数詞の規則など、
 #   実行時の挙動を決めるデータで、 本番へ毎日配布される。 維持者のレビューを必須にする
 #   (セキュリティ監査 REPORT-037)
+#   (workflow / script / docs / Cargo.toml 等 = 「重要な構成変更」を含まない)
 # - 行追加 ≤ 200 行 (大量追加は人手 review 推奨)
 # - 単漢字混入 / cross-file 重複は別の validate.yml ワークフローで CI fail として
 #   検出されるため、ここでは file path + size のみチェック
+# - PR を出したのが維持者 (OWNER / MEMBER / COLLABORATOR) か Dependabot / GitHub Actions
+#   (2026-10-21: 外部の PR は 48h 後に本番のふりがな API へ自動で入る道になるため、人が見て取り込む。
+#    PR のコードは checkout しない = pull_request_target でも PR 側のコードは実行されない)
 
 on:
   pull_request_target:
@@ -46,9 +45,8 @@ jobs:
       - name: Safe 判定
         id: safe
         env:
-          # PR の作者とこの repo との関係 (GitHub が付ける。 OWNER / MEMBER / COLLABORATOR / CONTRIBUTOR / FIRST_TIME_CONTRIBUTOR / NONE など)。
-          # 式展開でシェルに入れず、 環境変数で受ける
-          AUTHOR_ASSOC: ${{ github.event.pull_request.author_association }}
+          ASSOC: ${{ github.event.pull_request.author_association }}
+          AUTHOR: ${{ github.event.pull_request.user.login }}
         run: |
           ADDITIONS=$(jq -r '.additions' pr.json)
           UNSAFE_FILES=$(jq -r '
@@ -57,12 +55,10 @@ jobs:
           ' pr.json)
 
           REASON=""
-          case "$AUTHOR_ASSOC" in
-            OWNER|MEMBER|COLLABORATOR) ;;
-            *) REASON="PR の作者が repo の関係者ではない ($AUTHOR_ASSOC) — 維持者のレビューが要る" ;;
-          esac
-          if [ -n "$REASON" ]; then
-            :
+          case "$ASSOC" in OWNER|MEMBER|COLLABORATOR) TRUSTED=1 ;; *) TRUSTED=0 ;; esac
+          case "$AUTHOR" in "dependabot[bot]"|"github-actions[bot]") TRUSTED=1 ;; esac
+          if [ "$TRUSTED" != 1 ]; then
+            REASON="外部の PR ($AUTHOR / $ASSOC) は維持者が見て取り込む (自動マージしない)"
           elif [ -n "$UNSAFE_FILES" ]; then
             REASON="PR が語彙の領域 (core/) 外を変更 (rules/ は維持者のレビューが要る):"$'\n'"$UNSAFE_FILES"
           elif [ "$ADDITIONS" -gt 200 ]; then
