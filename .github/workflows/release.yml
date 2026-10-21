@@ -27,7 +27,7 @@ jobs:
     name: Package + Release
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
           fetch-depth: 0
           # checkout は **常に GITHUB_TOKEN** (2026-09-11)。 以前は RELEASE_PAT を使っていたが、
@@ -38,12 +38,21 @@ jobs:
 
       - name: 解決された tag
         id: tag
+        env:
+          # 入力はシェルに式展開せず、 環境変数で受ける (workflow_dispatch の入力に
+          # シェルのメタ文字が入っても、 コマンドとして解釈されないように)
+          INPUT_TAG: ${{ inputs.tag }}
         run: |
-          if [ -n "${{ inputs.tag }}" ]; then
+          if [ -n "$INPUT_TAG" ]; then
             # workflow_dispatch / workflow_call はどちらも inputs.tag を持つ
-            TAG="${{ inputs.tag }}"
+            TAG="$INPUT_TAG"
           else
             TAG="${GITHUB_REF#refs/tags/}"
+          fi
+          # tag の形式を検査する (英数字・ドット・ハイフン・アンダースコアだけ。 URL やファイル名に使うため)
+          if ! printf '%s' "$TAG" | grep -Eq '^[A-Za-z0-9][A-Za-z0-9._-]{0,63}$'; then
+            echo "::error::不正な tag の形式です: ${TAG:0:80}"
+            exit 1
           fi
           echo "tag=$TAG" >> "$GITHUB_OUTPUT"
           echo "Resolved tag: $TAG"
@@ -89,7 +98,7 @@ jobs:
           sha256sum "$TESTS_ARCHIVE" > "${TESTS_ARCHIVE}.sha256"
           cat "${ARCHIVE}.sha256" "${TESTS_ARCHIVE}.sha256"
 
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
           python-version: '3.11'
 
@@ -117,7 +126,7 @@ jobs:
         # Immutable Releases policy 下では published release への asset 追加が
         # 不可なので、 必ず draft で作って asset を全部入れてから後段で publish
         # する。 published 後は immutable lock が発効する設計。
-        uses: softprops/action-gh-release@v3
+        uses: softprops/action-gh-release@efb35369e0ad2afab669f228072c1b0d510eae64 # v3
         with:
           files: |
             ${{ env.ARCHIVE }}
