@@ -1,0 +1,72 @@
+# 2026-10-27 Discord の誤読報告 (10/24) 「下ばかり出るって」 由来。
+# 「下 + ばかり + 出る/言う/話す/喋る」 は、 チャットでは 下(しも)=下ネタ の意味で使われる (下ネタばかり出る、 の省略)。
+# 一方 「下ばかり見る / 向く」 は視線の向きで 「した」 (既定のまま)。 後ろの動詞で分ける。
+# 語の形 (下 + ばかり + 動詞) で書いていて、 報告の 1 文専用ではない。
+
+[[case]]
+input = "下ばかり出るって"
+mode = "hiragana"
+expected = "しもばかりでるって"
+note = "報告された文。 下ネタの意味 = しも"
+
+[[case]]
+input = "下ばっかり出る"
+mode = "hiragana"
+expected = "しもばっかりでる"
+note = "ばっかり"
+
+[[case]]
+input = "下ばかり言う"
+mode = "hiragana"
+expected = "しもばかりいう"
+note = "言う"
+
+[[case]]
+input = "下ばかり話してる"
+mode = "hiragana"
+expected = "しもばかりはなしてる"
+note = "話す"
+
+[[case]]
+input = "下ばっか喋る"
+mode = "hiragana"
+expected = "しもばっかしゃべる"
+note = "ばっか + 喋る"
+
+# ─── 守る読み (変えない) ───
+
+[[case]]
+input = "下ばかり見る"
+mode = "hiragana"
+expected = "したばかりみる"
+note = "視線の向き = した"
+
+[[case]]
+input = "下ばかり向く"
+mode = "hiragana"
+expected = "したばかりむく"
+note = "視線の向き = した"
+
+[[case]]
+input = "下ばかり見てる"
+mode = "hiragana"
+expected = "したばかりみてる"
+note = "視線の向き = した"
+
+[[case]]
+input = "下ネタばかり出るって"
+mode = "hiragana"
+expected = "しもネタばかりでるって"
+note = "既存: 下 + ネ = しも (カタカナの ネタ は hiragana モードでもそのまま残る仕様)"
+
+[[case]]
+input = "机の下ばかり探す"
+mode = "hiragana"
+expected = "つくえのしたばかりさがす"
+note = "の + 下 = した (助詞の直後)"
+
+[[case]]
+input = "靴下ばかり出る"
+mode = "hiragana"
+expected = "くつしたばかりでる"
+note = "靴下 は熟語"
