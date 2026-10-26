@@ -30,8 +30,8 @@ git に commit されている master HEAD の状態を基準にする。
 | [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **857** | **98 KB** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,796** | **400 KB** |
 | [**異体字**](#異体字) (`rules/compat.toml`) | **436** | **6.1 KB** |
-| [**エンジンルール**](#エンジンルール) (`rules/`) | **1,088** | **78 KB** |
-| **合計** | **104,244** | **3.59 MB** |
+| [**エンジンルール**](#エンジンルール) (`rules/`) | **1,092** | **79 KB** |
+| **合計** | **104,248** | **3.59 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -344,7 +344,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 
 | ファイル | 文字数 | ルール数 | サイズ | 用途 |
 |---|---:|---:|---:|---|
-| [`core/kanji/overrides.toml`](core/kanji/overrides.toml) | 2,796 | 4,524 | 400 KB | 単漢字 default override + 文脈分岐 reading |
+| [`core/kanji/overrides.toml`](core/kanji/overrides.toml) | 2,796 | 4,525 | 400 KB | 単漢字 default override + 文脈分岐 reading |
 
 ### 異体字
 
@@ -360,7 +360,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 `rules/` — エンジン挙動 (助数詞 / 文脈 / 後処理 等) を制御するルール群。 lib コードに embed されるのではなく、 ここで宣言的に外部化されている。
 
 <!-- AUTO-GENERATED:RULES:BEGIN -->
-**合計**: 1,088 エントリ / 1,197 ルール / 78 KB (genre 2 区分)
+**合計**: 1,092 エントリ / 1,201 ルール / 79 KB (genre 2 区分)
 
 #### 数値系
 
@@ -386,7 +386,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 
 単位 / 記号 / ラテン文字 / 後処理 regex — 文字単位の読み解決と最終整形
 
-`rules/text/` — 7 ファイル
+`rules/text/` — 8 ファイル
 
 | ファイル | エントリ数 | ルール数 | サイズ | 用途 |
 |---|---:|---:|---:|---|
@@ -397,7 +397,8 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 | [`rules/text/postprocess.toml`](rules/text/postprocess.toml) | 14 | 14 | 2.9 KB | 出力後処理 regex (Step 7、 mode 別: hiragana / ruby / tts / romaji の出力直前に適用) |
 | [`rules/text/emoji_context.toml`](rules/text/emoji_context.toml) | 12 | 12 | 1.1 KB | 絵文字の文脈読み (match) |
 | [`rules/text/context_cues.toml`](rules/text/context_cues.toml) | 7 | 7 | 3.4 KB | N/M が日付か分数かを決める手がかり語 |
-| **小計** (7 ファイル) | **792** | **792** | **40 KB** | |
+| [`rules/text/person_name_cues.toml`](rules/text/person_name_cues.toml) | 4 | 4 | 871 B | 人名の専用経路の手がかり (敬称・肩書き) |
+| **小計** (8 ファイル) | **796** | **796** | **41 KB** | |
 
 <!-- AUTO-GENERATED:RULES:END -->
 
@@ -422,7 +423,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 14764 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 14775 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -786,6 +787,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20261013_symbols2.toml`](tests/corpus/should_read/probe_20261013_symbols2.toml) | 14 |
 |  | [`tests/corpus/should_read/probe_20261015_sample_misreads.toml`](tests/corpus/should_read/probe_20261015_sample_misreads.toml) | 7 |
 |  | [`tests/corpus/should_read/probe_20261015_sns_misreads.toml`](tests/corpus/should_read/probe_20261015_sns_misreads.toml) | 47 |
+|  | [`tests/corpus/should_read/probe_shita_bakari_20261027.toml`](tests/corpus/should_read/probe_shita_bakari_20261027.toml) | 11 |
 |  | [`tests/corpus/should_read/regression.toml`](tests/corpus/should_read/regression.toml) | 560 |
 |  | [`tests/corpus/should_read/sentences.toml`](tests/corpus/should_read/sentences.toml) | 49 |
 |  | [`tests/corpus/should_read/touhou.toml`](tests/corpus/should_read/touhou.toml) | 30 |
