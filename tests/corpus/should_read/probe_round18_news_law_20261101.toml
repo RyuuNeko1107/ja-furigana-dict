@@ -1,0 +1,132 @@
+# 2026-11-01 第 18 回 (Wikinews + 法令の標本) の誤読。
+# 判定者 (サブエージェント) の主張を、 現行 lib への引き直しと、 独立 2 系統 (UniDic / Sudachi) との照合で絞り、 一致したものだけを辞書に入れた。
+# ここは、 その語の回帰テストと、 「守る読み」 (新しい見出しが前の語を割っていないことの確認)。
+# フック船 は フック船長 を割って壊したので取り下げた (その確認も守る読みに入れた)。
+
+[[case]]
+input = "台風は本州の南海上を進む"
+mode = "hiragana"
+expected = "たいふうはほんしゅうのなんかいじょうをすすむ"
+note = "〜上=じょう (南海上)"
+
+[[case]]
+input = "船の甲板上で作業する"
+mode = "hiragana"
+expected = "ふねのかんぱんじょうでさぎょうする"
+note = "〜上=じょう (甲板上)"
+
+[[case]]
+input = "保安規則を守る"
+mode = "hiragana"
+expected = "ほあんきそくをまもる"
+note = "保安=ほあん (元号の 保安=ほうあん ではない)"
+
+[[case]]
+input = "保安基準で確認する"
+mode = "hiragana"
+expected = "ほあんきじゅんでかくにんする"
+note = "保安=ほあん"
+
+[[case]]
+input = "航空保安大学校"
+mode = "hiragana"
+expected = "こうくうほあんだいがっこう"
+note = "保安=ほあん"
+
+[[case]]
+input = "貯木場を設ける"
+mode = "hiragana"
+expected = "ちょぼくじょうをもうける"
+note = "貯木場=ちょぼくじょう"
+
+[[case]]
+input = "仮勘定に整理する"
+mode = "hiragana"
+expected = "かりかんじょうにせいりする"
+note = "仮勘定=かりかんじょう"
+
+[[case]]
+input = "解約手当金を支払う"
+mode = "hiragana"
+expected = "かいやくてあてきんをしはらう"
+note = "手当金=てあてきん"
+
+[[case]]
+input = "漁港漁場整備法の規定"
+mode = "hiragana"
+expected = "ぎょこうぎょじょうせいびほうのきてい"
+note = "漁場=ぎょじょう"
+
+[[case]]
+input = "硫酸銅の五水和物"
+mode = "hiragana"
+expected = "りゅうさんどうのごすいわぶつ"
+note = "和物=わぶつ"
+
+[[case]]
+input = "小数位まで求める"
+mode = "hiragana"
+expected = "しょうすういまでもとめる"
+note = "小数位=しょうすうい"
+
+[[case]]
+input = "伝説の蹄跡を刻め"
+mode = "hiragana"
+expected = "でんせつのていせきをきざめ"
+note = "蹄跡=ていせき"
+
+[[case]]
+input = "ワゴン車に乗る"
+mode = "hiragana"
+expected = "わごんしゃにのる"
+note = "カタカナ + 車 = しゃ"
+
+[[case]]
+input = "ワンボックス車と自転車が衝突した"
+mode = "hiragana"
+expected = "わんぼっくすしゃとじてんしゃがしょうとつした"
+note = "カタカナ + 車 = しゃ"
+
+[[case]]
+input = "高速ジェット船を使用停止にする"
+mode = "hiragana"
+expected = "こうそくじぇっとせんをしようていしにする"
+note = "カタカナ + 船 = せん"
+
+[[case]]
+input = "神舟くんかアンジくんか"
+mode = "hiragana"
+expected = "しんしゅうくんかアンジくんか"
+note = "神舟=しんしゅう"
+
+[[case]]
+input = "小林・益川理論"
+mode = "hiragana"
+expected = "こばやしますかわりろん"
+note = "益川理論=ますかわりろん (益川=えきがわ と誤読されていた)"
+
+# ─── 守る読み (変えない) ───
+
+[[case]]
+input = "フック船長かルフィか"
+mode = "hiragana"
+expected = "フックせんちょうかルフィか"
+note = "守る: フック船 を足すと 船長 の 船 を奪って割った (取り下げた)"
+
+[[case]]
+input = "マリン船長の配信"
+mode = "hiragana"
+expected = "マリンせんちょうのはいしん"
+note = "守る: カタカナ + 船 を一律 せん にすると壊す (マリン船)"
+
+[[case]]
+input = "保安庁の巡視船"
+mode = "hiragana"
+expected = "ほあんちょうのじゅんしせん"
+note = "守る: 既存の 保安庁"
+
+[[case]]
+input = "保安林を指定する"
+mode = "hiragana"
+expected = "ほあんりんをしていする"
+note = "守る: 既存の 保安林"
