@@ -1,0 +1,119 @@
+# 2026-11-01 第 17 回 (Wikipedia 後半 + 技術文書の標本) の誤読。
+# 判定者 (サブエージェント) の主張を現行 lib に引き直して実在を確認し、 独立 2 系統 (UniDic / Sudachi) の読みと一致したものだけを辞書に入れた。
+# ここは、 その語の回帰テスト。 「守る読み」 は新しい見出しが前の語を割っていないことの確認 (主だった は救世主だった等を壊したので取り下げた)。
+
+[[case]]
+input = "役の特色上、"
+mode = "hiragana"
+expected = "やくのとくしょくじょう、"
+note = "特色上 (とくいろあげ に誤分割されていた)"
+
+[[case]]
+input = "緯度上は台湾"
+mode = "hiragana"
+expected = "いどじょうはたいわん"
+note = "〜上=じょう (語末 緯度)"
+
+[[case]]
+input = "球の直径上に"
+mode = "hiragana"
+expected = "たまのちょっけいじょうに"
+note = "〜上=じょう (語末 直径)"
+
+[[case]]
+input = "小容量ダウンロード"
+mode = "hiragana"
+expected = "しょうようりょうダウンロード"
+note = "小=しょう"
+
+[[case]]
+input = "小出版社を営む"
+mode = "hiragana"
+expected = "しょうしゅっぱんしゃをいとなむ"
+note = "小=しょう"
+
+[[case]]
+input = "巨大な小区画"
+mode = "hiragana"
+expected = "きょだいなしょうくかく"
+note = "小=しょう"
+
+[[case]]
+input = "滑油を補給する"
+mode = "hiragana"
+expected = "かつゆをほきゅうする"
+note = "油の熟語 (潤滑油は別語で、割らない)"
+
+[[case]]
+input = "潤滑油を差す"
+mode = "hiragana"
+expected = "じゅんかつゆをさす"
+note = "守る: 潤滑油 (滑油 を足して割っていない)"
+
+[[case]]
+input = "鉛球を投げる"
+mode = "hiragana"
+expected = "えんきゅうをなげる"
+note = "音読み"
+
+[[case]]
+input = "球対称な解"
+mode = "hiragana"
+expected = "きゅうたいしょうなかい"
+note = "物理用語"
+
+[[case]]
+input = "景初暦による予測"
+mode = "hiragana"
+expected = "けいしょれきによるよそく"
+note = "魏の暦"
+
+[[case]]
+input = "『毛詩』の注釈"
+mode = "hiragana"
+expected = "『もうし』のちゅうしゃく"
+note = "書名"
+
+[[case]]
+input = "孝徳朝の改新"
+mode = "hiragana"
+expected = "こうとくちょうのかいしん"
+note = "孝徳天皇の朝"
+
+[[case]]
+input = "奈良市登美ヶ丘"
+mode = "hiragana"
+expected = "ならしとみがおか"
+note = "地名 (とみけおか と誤読されていた)"
+
+[[case]]
+input = "矢板北スマートIC"
+mode = "hiragana"
+expected = "やいたきたスマートIC"
+note = "ICの名称 (カタカナのスマートは hiragana モードでもそのまま残る仕様)"
+
+# ─── 守る読み (変えない) ───
+
+[[case]]
+input = "救世主だったな"
+mode = "hiragana"
+expected = "きゅうせいしゅだったな"
+note = "守る: 主だった を足すと 救世+主だった に割れる (取り下げた)"
+
+[[case]]
+input = "坊主だったから"
+mode = "hiragana"
+expected = "ぼうずだったから"
+note = "守る: 同上"
+
+[[case]]
+input = "神主だったか"
+mode = "hiragana"
+expected = "かんぬしだったか"
+note = "守る: 同上"
+
+[[case]]
+input = "45度上の位置"
+mode = "hiragana"
+expected = "よんじゅうごどうえのいち"
+note = "守る: 度 1 字を 〜上=じょう に入れていない (既存の方針)"
