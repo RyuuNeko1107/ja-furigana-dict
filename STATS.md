@@ -24,14 +24,14 @@ git に commit されている master HEAD の状態を基準にする。
 | カテゴリ | エントリ数 | サイズ |
 |---|---:|---:|
 | [**単漢字**](#単漢字) (`core/unihan/*`、 水準別 5 ファイル) | **40,654** | **728 KB** |
-| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **53,002** | **2.08 MB** |
+| [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **53,011** | **2.08 MB** |
 | [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,706** | **133 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **3,717** | **102 KB** |
-| [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **869** | **98 KB** |
+| [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **893** | **99 KB** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,796** | **400 KB** |
 | [**異体字**](#異体字) (`rules/compat.toml`) | **436** | **6.1 KB** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **1,092** | **79 KB** |
-| **合計** | **104,272** | **3.59 MB** |
+| **合計** | **104,305** | **3.59 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -56,7 +56,7 @@ git に commit されている master HEAD の状態を基準にする。
 
 `core/jukugo/<genre>/*` — 手動 PR メンテのジャンル別 jukugo (≥ 2 字 surface)。 lib の Step 3 (jukugo lookup) で Lindera より優先採用。 各 genre dir の `_genre.toml` がカテゴリ description を持つ。
 
-**合計**: 53,002 件 / 2.08 MB (genre 6 区分)
+**合計**: 53,011 件 / 2.08 MB (genre 6 区分)
 
 #### 自然・生命
 
@@ -132,18 +132,18 @@ git に commit されている master HEAD の状態を基準にする。
 |---|---:|---:|---|
 | [`core/jukugo/proper/wiki_place_names.toml`](core/jukugo/proper/wiki_place_names.toml) | 9,878 | 432 KB | Wikipedia の読みがそろう地名・山名・橋名 (末尾 橋/通/川/島/山/谷/城) |
 | [`core/jukugo/proper/people.toml`](core/jukugo/proper/people.toml) | 3,598 | 132 KB | 人名 (実在の個人の姓・名・フルネーム・芸名・歴史上の人物) |
-| [`core/jukugo/proper/places.toml`](core/jukugo/proper/places.toml) | 1,189 | 45 KB | 地名・施設名 (自治体・町名・駅・山川・神社仏閣など) |
+| [`core/jukugo/proper/places.toml`](core/jukugo/proper/places.toml) | 1,192 | 45 KB | 地名・施設名 (自治体・町名・駅・山川・神社仏閣など) |
 | [`core/jukugo/proper/titles_orgs.toml`](core/jukugo/proper/titles_orgs.toml) | 1,104 | 47 KB | 組織・作品・キャラクター名 (団体・ブランド・題名・登場人物) |
 | [`core/jukugo/proper/given_names.toml`](core/jukugo/proper/given_names.toml) | 859 | 32 KB | 下の名前 (UniDic 人名で読みが一意の語) |
 | [`core/jukugo/proper/diet_members.toml`](core/jukugo/proper/diet_members.toml) | 818 | 32 KB | 国会議員の名前 (国会会議録の発言者の読み) |
-| [`core/jukugo/proper/personal_names.toml`](core/jukugo/proper/personal_names.toml) | 522 | 28 KB | 人名 (戦国 / 平安 / 江戸 / 明治大正 / 古典作家、現代私人除く) |
+| [`core/jukugo/proper/personal_names.toml`](core/jukugo/proper/personal_names.toml) | 528 | 28 KB | 人名 (戦国 / 平安 / 江戸 / 明治大正 / 古典作家、現代私人除く) |
 | [`core/jukugo/proper/municipalities.toml`](core/jukugo/proper/municipalities.toml) | 432 | 16 KB | 市町村名 (郵便番号データの正式な読み) |
 | [`core/jukugo/proper/kami_names.toml`](core/jukugo/proper/kami_names.toml) | 363 | 19 KB | 神名 (Wikipedia の読みがそろう X命 / X尊) |
 | [`core/jukugo/proper/surnames.toml`](core/jukugo/proper/surnames.toml) | 294 | 26 KB | 難読姓 (苗字) の読み (姓単体、代表読み) |
 | [`core/jukugo/proper/sumo_shikona.toml`](core/jukugo/proper/sumo_shikona.toml) | 45 | 3.4 KB | 大相撲 力士の四股名 (公式読み) |
 | [`core/jukugo/proper/proper_nouns.toml`](core/jukugo/proper/proper_nouns.toml) | 37 | 2.1 KB | 固有名詞 (大学 / 中央官庁 / 元号 / 歴史的事象、PR 募集中) |
 | [`core/jukugo/proper/sake_brands.toml`](core/jukugo/proper/sake_brands.toml) | 32 | 2.2 KB | (用途未設定 — ファイル冒頭に `[meta] description = "..."` を追加) |
-| **小計** (13 ファイル) | **19,171** | **817 KB** | |
+| **小計** (13 ファイル) | **19,180** | **818 KB** | |
 
 #### 物体・工芸
 
@@ -336,7 +336,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/_inbox.toml`](core/_inbox.toml) | 869 | 98 KB | 分類前の一時 inbox (≥2 字 surface、 内容が貯まったら適切な genre dir に振り分ける) |
+| [`core/_inbox.toml`](core/_inbox.toml) | 893 | 99 KB | 分類前の一時 inbox (≥2 字 surface、 内容が貯まったら適切な genre dir に振り分ける) |
 
 ### 単漢字 [[kanji]] format
 
@@ -423,7 +423,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 14794 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 14815 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -788,6 +788,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20261015_sample_misreads.toml`](tests/corpus/should_read/probe_20261015_sample_misreads.toml) | 7 |
 |  | [`tests/corpus/should_read/probe_20261015_sns_misreads.toml`](tests/corpus/should_read/probe_20261015_sns_misreads.toml) | 47 |
 |  | [`tests/corpus/should_read/probe_round17_wiki_tech_20261101.toml`](tests/corpus/should_read/probe_round17_wiki_tech_20261101.toml) | 19 |
+|  | [`tests/corpus/should_read/probe_round18_news_law_20261101.toml`](tests/corpus/should_read/probe_round18_news_law_20261101.toml) | 21 |
 |  | [`tests/corpus/should_read/probe_shita_bakari_20261027.toml`](tests/corpus/should_read/probe_shita_bakari_20261027.toml) | 11 |
 |  | [`tests/corpus/should_read/regression.toml`](tests/corpus/should_read/regression.toml) | 560 |
 |  | [`tests/corpus/should_read/sentences.toml`](tests/corpus/should_read/sentences.toml) | 49 |
