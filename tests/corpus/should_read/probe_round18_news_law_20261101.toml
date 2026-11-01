@@ -130,3 +130,23 @@ input = "保安林を指定する"
 mode = "hiragana"
 expected = "ほあんりんをしていする"
 note = "守る: 既存の 保安林"
+
+# ─── N/M の直後の 差 (2026-11-01、 分数の手がかり) ───
+
+[[case]]
+input = "1馬身3/4差をつけた"
+mode = "hiragana"
+expected = "いちばしんよんぶんのさんさをつけた"
+note = "競馬の着差 (3/4差 = 4分の3)。 N/M の直後が 差 なら分数 (context_cues.toml fraction_after)。 注: lib 0.6.8 以降で有効"
+
+[[case]]
+input = "10/5まで受付"
+mode = "hiragana"
+expected = "じゅうがついつかまでうけつけ"
+note = "守る: 日付 (直後が まで)"
+
+[[case]]
+input = "本日10/5"
+mode = "hiragana"
+expected = "ほんじつじゅうがついつか"
+note = "守る: 日付 (直前が 本日)"
