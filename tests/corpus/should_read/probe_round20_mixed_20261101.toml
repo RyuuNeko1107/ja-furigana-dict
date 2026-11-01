@@ -1,0 +1,168 @@
+# 2026-11-01 第 20 回 (実コメント / 国会 / livedoor の標本) の誤読。
+# 判定者 (サブエージェント) の主張を、 現行 lib への引き直しと、 独立 2 系統 (UniDic / Sudachi) との照合で絞り、 一致したものだけを辞書に入れた。
+# 実コメントでも誤読していた語を優先した (愛おし 活用 / 美味え / 前 + 役職 / 前外相 / その方たち)。
+# 入れなかったもの: 最中 (もなか と さいちゅう を文脈で読み分けている)、 人名の個別の読み、 文脈で割れる語 (傍から / 如何)。
+
+[[case]]
+input = "美味えな"
+mode = "hiragana"
+expected = "うめえな"
+note = "美味え=うめえ (旧: びみえ。 実コメント 19 行)"
+
+[[case]]
+input = "豚しゃぶ美味え"
+mode = "hiragana"
+expected = "ぶたしゃぶうめえ"
+note = "美味え=うめえ"
+
+[[case]]
+input = "その方たちのために"
+mode = "hiragana"
+expected = "そのかたたちのために"
+note = "その方たち=そのかたたち (旧: そのほうたち)"
+
+[[case]]
+input = "愛おしそうに見つめた"
+mode = "hiragana"
+expected = "いとおしそうにみつめた"
+note = "愛おしそう=いとおしそう (旧: あいおしそう。 愛おしすぎ / 愛おしげ も同様)"
+
+[[case]]
+input = "愛おしすぎて死ぬ"
+mode = "hiragana"
+expected = "いとおしすぎてしぬ"
+note = "愛おしすぎ=いとおしすぎ (実コメントで最も多い型)"
+
+[[case]]
+input = "愛おしげに笑う"
+mode = "hiragana"
+expected = "いとおしげにわらう"
+note = "愛おしげ=いとおしげ"
+
+[[case]]
+input = "愛おしかった"
+mode = "hiragana"
+expected = "いとおしかった"
+note = "愛おしかった=いとおしかった"
+
+[[case]]
+input = "前外相が訪中"
+mode = "hiragana"
+expected = "ぜんがいしょうがほうちゅう"
+note = "前外相=ぜんがいしょう (旧: まえがいしょう。 実コメント 12 行)"
+
+[[case]]
+input = "前財務相が発言"
+mode = "hiragana"
+expected = "ぜんざいむしょうがはつげん"
+note = "前○相 = ぜん○○しょう"
+
+[[case]]
+input = "前経産相は"
+mode = "hiragana"
+expected = "ぜんけいさんしょうは"
+note = "前○相 = ぜん○○しょう"
+
+[[case]]
+input = "前社長の年賀状"
+mode = "hiragana"
+expected = "ぜんしゃちょうのねんがじょう"
+note = "前 + 役職 = ぜん (元の〜)。 旧: まえしゃちょう (kanji.match: next_starts_any の役職)"
+
+[[case]]
+input = "前会長は強すぎました"
+mode = "hiragana"
+expected = "ぜんかいちょうはつよすぎました"
+note = "前 + 役職 = ぜん"
+
+[[case]]
+input = "前議長が辞職した"
+mode = "hiragana"
+expected = "ぜんぎちょうがじしょくした"
+note = "前 + 役職 = ぜん"
+
+[[case]]
+input = "前監督と長年やってきた"
+mode = "hiragana"
+expected = "ぜんかんとくとながねんやってきた"
+note = "前 + 役職 = ぜん"
+
+[[case]]
+input = "耳石が動く"
+mode = "hiragana"
+expected = "じせきがうごく"
+note = "耳石=じせき (旧: みみせき)"
+
+[[case]]
+input = "耳石器"
+mode = "hiragana"
+expected = "じせきき"
+note = "耳石器=じせきき"
+
+[[case]]
+input = "裏蓋が外れた"
+mode = "hiragana"
+expected = "うらぶたがはずれた"
+note = "裏蓋=うらぶた (時計の裏蓋)"
+
+[[case]]
+input = "三六協定を結ぶ"
+mode = "hiragana"
+expected = "さぶろくきょうていをむすぶ"
+note = "三六協定=さぶろくきょうてい"
+
+[[case]]
+input = "亡骸飯"
+mode = "hiragana"
+expected = "なきがらめし"
+note = "亡骸飯=なきがらめし"
+
+[[case]]
+input = "初春歌舞伎"
+mode = "hiragana"
+expected = "しょしゅんかぶき"
+note = "初春歌舞伎=しょしゅんかぶき"
+
+# ─── 守る読み (変えない) ───
+
+[[case]]
+input = "その方が良い"
+mode = "hiragana"
+expected = "そのほうがよい"
+note = "守る: その方 (そのほう)"
+
+[[case]]
+input = "愛おしさが募る"
+mode = "hiragana"
+expected = "いとおしさがつのる"
+note = "守る: 愛おしさ"
+
+[[case]]
+input = "試合の最中"
+mode = "hiragana"
+expected = "しあいのさいちゅう"
+note = "守る: 最中 (さいちゅう)。 最中 の見出しを足すと もなか を壊すので入れない"
+
+[[case]]
+input = "最中を食べる"
+mode = "hiragana"
+expected = "もなかをたべる"
+note = "守る: 最中 (もなか)"
+
+[[case]]
+input = "前年の記録"
+mode = "hiragana"
+expected = "ぜんねんのきろく"
+note = "守る: 前年"
+
+[[case]]
+input = "前の方"
+mode = "hiragana"
+expected = "まえのほう"
+note = "守る: 前 + 役職でない語は まえ"
+
+[[case]]
+input = "三年前社長"
+mode = "hiragana"
+expected = "さんねんまえしゃちょう"
+note = "守る: ○年前 は まえ (直前が 年 の規則が先に勝つ)"
