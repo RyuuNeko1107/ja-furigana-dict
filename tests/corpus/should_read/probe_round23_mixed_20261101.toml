@@ -1,0 +1,57 @@
+# 2026-11-01 第 23 回 (実コメント / 国会 / livedoor の標本 3,500 文、 不一致 807 行)。
+# 判定者の主張を 独立 2 系統 (UniDic / Sudachi) と照合し、 実コメントで出ていた語だけを入れた。
+# 等々 (などなど/とうとう)・開ければ (あ/ひら)・傍に・人名の個別の読みは文脈で割れる/根拠不足のため入れない。
+
+[[case]]
+input = "最内枠はハイリスク"
+mode = "hiragana"
+expected = "さいうちわくはハイリスク"
+note = "最内=さいうち (競馬。 旧: さいない。 実コメント 15 行)"
+
+[[case]]
+input = "同じ様な感じ"
+mode = "hiragana"
+expected = "おなじようなかんじ"
+note = "同じ様な=おなじような (旧: おなじさまな。 実コメント 14 行)"
+
+[[case]]
+input = "同じ様に動く"
+mode = "hiragana"
+expected = "おなじようにうごく"
+note = "同じ様に=おなじように"
+
+[[case]]
+input = "弱ペダ見た"
+mode = "hiragana"
+expected = "よわぺだみた"
+note = "弱ペダ=よわぺだ (弱虫ペダル。 実コメント 5 行)"
+
+[[case]]
+input = "仕込み杖"
+mode = "hiragana"
+expected = "しこみづえ"
+note = "仕込み杖=しこみづえ (旧: しこみつえ。 実コメント 5 行)"
+
+[[case]]
+input = "葉焼け病"
+mode = "hiragana"
+expected = "はやけびょう"
+note = "葉焼け=はやけ (旧: ようやけ)"
+
+[[case]]
+input = "中低所得者層"
+mode = "hiragana"
+expected = "ちゅうていしょとくしゃそう"
+note = "中低所得者=ちゅうていしょとくしゃ (旧: なかてい)"
+
+[[case]]
+input = "取適法が施行"
+mode = "hiragana"
+expected = "とりてきほうがしこう"
+note = "取適法=とりてきほう (中小受託取引適正化法の通称。 旧: しゅてきほう)"
+
+[[case]]
+input = "店舗目標を立てる"
+mode = "hiragana"
+expected = "てんぽもくひょうをたてる"
+note = "守る: 店舗目標 (店舗目 の見出しは入れていない)"
