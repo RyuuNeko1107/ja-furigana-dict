@@ -55,3 +55,42 @@ input = "店舗目標を立てる"
 mode = "hiragana"
 expected = "てんぽもくひょうをたてる"
 note = "守る: 店舗目標 (店舗目 の見出しは入れていない)"
+
+# ─── 第 24 回 (実コメント 2,200 / 国会 1,000 / livedoor 800 の標本、 不一致 866 行) ───
+# 判定者の主張を 2 系統と照合し、 実コメントで出ていた語だけ。 今週中・留まった・弾きます・描く・金4 は文脈で割れるので入れない。
+
+[[case]]
+input = "災難すぎる"
+mode = "hiragana"
+expected = "さいなんすぎる"
+note = "災難すぎる=さいなんすぎる (旧: さいむずかしすぎる。 実コメント 61 行)"
+
+[[case]]
+input = "災難すぎてごめん"
+mode = "hiragana"
+expected = "さいなんすぎてごめん"
+note = "災難すぎて"
+
+[[case]]
+input = "知らん間に商品が"
+mode = "hiragana"
+expected = "しらんまにしょうひんが"
+note = "知らん間=しらんま (旧: しらんあいだ。 実コメント 60 行)"
+
+[[case]]
+input = "NARUTO疾風伝"
+mode = "hiragana"
+expected = "ナルトしっぷうでん"
+note = "疾風伝=しっぷうでん (旧: はやてでん。 実コメント 9 行)"
+
+[[case]]
+input = "元気付けて"
+mode = "hiragana"
+expected = "げんきづけて"
+note = "元気付け=げんきづけ (旧: もときづけ。 実コメント 6 行)"
+
+[[case]]
+input = "災難に遭う"
+mode = "hiragana"
+expected = "さいなんにあう"
+note = "守る: 災難 単独"
