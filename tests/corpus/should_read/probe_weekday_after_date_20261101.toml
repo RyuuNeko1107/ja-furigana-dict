@@ -1,0 +1,85 @@
+# 2026-11-01 N/M の日付の直後の曜日 1 字 (金 / 月)。
+# 火 / 水 / 木 / 土 は 「直前が英数」 の規則ですでに曜日になる。 金 (18金 = K18) と 月 (12月 = がつ) は数字だけの直後では衝突するので、
+# 入力に 「/N金」 「/N月」 の日付 + 曜日の並びがあるときだけ曜日にする (kanji.match の input_contains_any)。
+# 既知の取りこぼし: 「N/M月号」 (11/12月号 = 合併号) と 年/月 (2020/4月) は、 曜日にならないが旧も誤読のまま。 12/7月) のように
+# 日付でなく 「7月」 が先に取られる型は lib 側の課題 (別途)
+
+[[case]]
+input = "10/16金 Morc阿佐ヶ谷"
+mode = "hiragana"
+expected = "じゅうがつじゅうろくにちきんようび Morcあさがや"
+note = "日付の直後の 金 = 金曜 (旧: かね)"
+
+[[case]]
+input = "10/23金~"
+mode = "hiragana"
+expected = "じゅうがつにじゅうさんにちきんようび"
+note = "日付の直後の 金 = 金曜"
+
+[[case]]
+input = "12/18金〜12/23水"
+mode = "hiragana"
+expected = "じゅうにがつじゅうはちにちきんようびからじゅうにがつにじゅうさんにちすいようび"
+note = "金〜水 の範囲 (水 は従来どおり)"
+
+[[case]]
+input = "昨日(9/28月)聴いたアルバム"
+mode = "hiragana"
+expected = "きのう(くがつにじゅうはちにちげつようび)きいたアルバム"
+note = "日付の直後の 月 = 月曜 (旧: つき)"
+
+[[case]]
+input = "本日より公開!10/19月公開の映画"
+mode = "hiragana"
+expected = "ほんじつよりこうかい!じゅうがつじゅうくにちげつようびこうかいのえいが"
+note = "日付の直後の 月 = 月曜"
+
+# ─── 守る読み (変えない) ───
+
+[[case]]
+input = "10/16金曜日"
+mode = "hiragana"
+expected = "じゅうがつじゅうろくにちきんようび"
+note = "守る: 金曜日 (見出しが先に勝つ。 ようび が二重にならない)"
+
+[[case]]
+input = "10/12月曜日"
+mode = "hiragana"
+expected = "じゅうがつじゅうににちげつようび"
+note = "守る: 月曜日"
+
+[[case]]
+input = "10/20水戸"
+mode = "hiragana"
+expected = "じゅうがつはつかみと"
+note = "守る: 水戸 (曜日にならない)"
+
+[[case]]
+input = "9/22火曜日"
+mode = "hiragana"
+expected = "くがつにじゅうににちかようび"
+note = "守る: 火曜日"
+
+[[case]]
+input = "金を払う"
+mode = "hiragana"
+expected = "かねをはらう"
+note = "守る: 日付が無ければ 金 = かね"
+
+[[case]]
+input = "月が綺麗"
+mode = "hiragana"
+expected = "つきがきれい"
+note = "守る: 日付が無ければ 月 = つき"
+
+[[case]]
+input = "10月の予定"
+mode = "hiragana"
+expected = "じゅうがつのよてい"
+note = "守る: 数字 + 月 = がつ"
+
+[[case]]
+input = "今月の金運"
+mode = "hiragana"
+expected = "こんげつのきんうん"
+note = "守る: 金運"
