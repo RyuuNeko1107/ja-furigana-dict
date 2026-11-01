@@ -1,0 +1,138 @@
+# 2026-11-01 第 19 回 (実コメント / 国会 / livedoor / 青空の標本) の誤読。
+# 判定者 (サブエージェント) の主張を、 現行 lib への引き直しと、 独立 2 系統 (UniDic / Sudachi) との照合で絞り、 一致したものだけを辞書に入れた。
+# 実コメントでも誤読していた語を優先した (ぶっ放す 22 行 / 今国会 4 行 / 橋下氏 / 怖しい / 5つ星 / 礼讃)。
+# 入れなかったもの: 後戸 (実コメントの 「その後戸惑い」 を割る)、 目下 / 公に / 傍から (文脈で読みが割れる)、 人名の個別の読み、 青空の文語の語。
+
+[[case]]
+input = "今国会で成立してほしい"
+mode = "hiragana"
+expected = "こんこっかいでせいりつしてほしい"
+note = "今国会=こんこっかい (実コメントで いまこっかい と誤読)"
+
+[[case]]
+input = "議員数削減、絶対今国会で成立してね。"
+mode = "hiragana"
+expected = "ぎいんすうさくげん、ぜったいこんこっかいでせいりつしてね。"
+note = "今国会=こんこっかい"
+
+[[case]]
+input = "北東アジア地域の非核化"
+mode = "hiragana"
+expected = "ほくとうあじあちいきのひかくか"
+note = "北東アジア=ほくとうあじあ (きたひがし ではない)"
+
+[[case]]
+input = "畦畔、青地だとか赤道だとか"
+mode = "hiragana"
+expected = "けいはん、あおじだとかせきどうだとか"
+note = "畦畔=けいはん (国有地の用語)"
+
+[[case]]
+input = "快く迎入れて下さった"
+mode = "hiragana"
+expected = "こころよくむかえいれてくださった"
+note = "迎入れる=むかえいれる (送り仮名の省略形)"
+
+[[case]]
+input = "銃をぶっ放して戦う"
+mode = "hiragana"
+expected = "じゅうをぶっぱなしてたたかう"
+note = "ぶっ放す=ぶっぱなす (実コメント 22 行で ぶっはなす と誤読していた)"
+
+[[case]]
+input = "ガトリングぶっ放すのも楽しい"
+mode = "hiragana"
+expected = "ガトリングぶっぱなすのもたのしい"
+note = "ぶっ放す=ぶっぱなす"
+
+[[case]]
+input = "ぶっ放した"
+mode = "hiragana"
+expected = "ぶっぱなした"
+note = "ぶっ放す=ぶっぱなす"
+
+[[case]]
+input = "官憲礼讃"
+mode = "hiragana"
+expected = "かんけんらいさん"
+note = "礼讃=らいさん (れいさん ではない)"
+
+[[case]]
+input = "礼賛する"
+mode = "hiragana"
+expected = "らいさんする"
+note = "礼賛=らいさん (すでに正しい。 礼讃 と揃える)"
+
+[[case]]
+input = "顔の劣化がほんとに怖しい"
+mode = "hiragana"
+expected = "かおのれっかがほんとにおそろしい"
+note = "怖しい=おそろしい (送り仮名の異表記。 こわしい という語は無い)"
+
+[[case]]
+input = "怖しくて眠れない"
+mode = "hiragana"
+expected = "おそろしくてねむれない"
+note = "怖しい=おそろしい"
+
+[[case]]
+input = "元野球選手の新庄剛志"
+mode = "hiragana"
+expected = "もとやきゅうせんしゅのしんじょうつよし"
+note = "元野球選手=もとやきゅうせんしゅ (もとの ではない)"
+
+[[case]]
+input = "扇大臣の基本的な考え方"
+mode = "hiragana"
+expected = "おうぎだいじんのきほんてきなかんがえかた"
+note = "扇大臣=おうぎだいじん (扇千景。 せんだいじん ではない)"
+
+[[case]]
+input = "5つ星ホテルのロビー"
+mode = "hiragana"
+expected = "いつつぼしホテルのロビー"
+note = "5つ星=いつつぼし (いつつほし ではない)"
+
+[[case]]
+input = "5つ星のうち4.3"
+mode = "hiragana"
+expected = "いつつぼしのうちよんてんさん"
+note = "5つ星=いつつぼし"
+
+[[case]]
+input = "これに対し、橋下氏は反論した"
+mode = "hiragana"
+expected = "これにたいし、はしもとしははんろんした"
+note = "橋下氏=はしもとし (はししたし ではない)"
+
+# ─── 守る読み (変えない) ───
+
+[[case]]
+input = "橋下徹氏が主張した"
+mode = "hiragana"
+expected = "はしもととおるしがしゅちょうした"
+note = "守る: 橋下徹"
+
+[[case]]
+input = "その後戸惑いを隠せなかった"
+mode = "hiragana"
+expected = "そのごとまどいをかくせなかった"
+note = "守る: 後戸 の見出しを足すと その後+戸惑い を割る (取り下げた)"
+
+[[case]]
+input = "五つ星海苔弁"
+mode = "hiragana"
+expected = "いつつぼしのりべん"
+note = "守る: 五つ星"
+
+[[case]]
+input = "国会の今"
+mode = "hiragana"
+expected = "こっかいのいま"
+note = "守る: 今国会 の見出しが 国会の今 に効かない"
+
+[[case]]
+input = "今日国会へ行く"
+mode = "hiragana"
+expected = "きょうこっかいへいく"
+note = "守る: 今日"
