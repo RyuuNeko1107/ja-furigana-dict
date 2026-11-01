@@ -423,7 +423,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 14815 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 14818 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -788,7 +788,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_20261015_sample_misreads.toml`](tests/corpus/should_read/probe_20261015_sample_misreads.toml) | 7 |
 |  | [`tests/corpus/should_read/probe_20261015_sns_misreads.toml`](tests/corpus/should_read/probe_20261015_sns_misreads.toml) | 47 |
 |  | [`tests/corpus/should_read/probe_round17_wiki_tech_20261101.toml`](tests/corpus/should_read/probe_round17_wiki_tech_20261101.toml) | 19 |
-|  | [`tests/corpus/should_read/probe_round18_news_law_20261101.toml`](tests/corpus/should_read/probe_round18_news_law_20261101.toml) | 21 |
+|  | [`tests/corpus/should_read/probe_round18_news_law_20261101.toml`](tests/corpus/should_read/probe_round18_news_law_20261101.toml) | 24 |
 |  | [`tests/corpus/should_read/probe_shita_bakari_20261027.toml`](tests/corpus/should_read/probe_shita_bakari_20261027.toml) | 11 |
 |  | [`tests/corpus/should_read/regression.toml`](tests/corpus/should_read/regression.toml) | 560 |
 |  | [`tests/corpus/should_read/sentences.toml`](tests/corpus/should_read/sentences.toml) | 49 |
