@@ -94,3 +94,41 @@ input = "災難に遭う"
 mode = "hiragana"
 expected = "さいなんにあう"
 note = "守る: 災難 単独"
+
+# ─── 活用形の づ (元気付ける / 習慣付ける。 語幹だけの見出しは効かないので活用形ごとに見出しを足した) ───
+
+[[case]]
+input = "元気付けようとしている"
+mode = "hiragana"
+expected = "げんきづけようとしている"
+note = "元気付けよう=げんきづけよう (旧: げんきつけよう)"
+
+[[case]]
+input = "みんなを元気付ける"
+mode = "hiragana"
+expected = "みんなをげんきづける"
+note = "元気付ける=げんきづける (旧: もときづける。 元 + 気付ける に割れていた)"
+
+[[case]]
+input = "習慣付けて"
+mode = "hiragana"
+expected = "しゅうかんづけて"
+note = "習慣付けて=しゅうかんづけて"
+
+[[case]]
+input = "気付いた"
+mode = "hiragana"
+expected = "きづいた"
+note = "守る: 気付く"
+
+[[case]]
+input = "勇気付ける"
+mode = "hiragana"
+expected = "ゆうきづける"
+note = "守る: 勇気付ける"
+
+[[case]]
+input = "元気だよ"
+mode = "hiragana"
+expected = "げんきだよ"
+note = "守る: 元気"
