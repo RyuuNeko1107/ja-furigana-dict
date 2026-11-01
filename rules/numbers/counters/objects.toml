@@ -1122,6 +1122,11 @@ last_digit = [1, 8, 0]
 suffix = "テン"
 sokuonize = true
 
+# ★2026-11-02 店舗: 4店舗目 = よんてんぽめ (それまで よんてんぽもく。 実コメントに 12 行)。 店舗 を助数詞にして 目 (recursive) を後ろに付けられるようにする。 店舗目標 は 目 側の not_before で守る
+[counter."店舗"]
+default = "テンポ"
+kanji_numeral = false
+
 # ★2026-10-18 世帯: 十世帯 = じゅっせたい / 1世帯 = いっせたい (それまで じゅっせいたい)
 [counter."世帯"]
 default = "セタイ"
