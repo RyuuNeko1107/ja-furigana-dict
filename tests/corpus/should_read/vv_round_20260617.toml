@@ -5,8 +5,8 @@
 [[case]]
 input = "ぶっ放す"
 mode = "hiragana"
-expected = "ぶっはなす"
-note = "旧 ぶっほかす (Lindera 放す=ほかす)。本番 signal"
+expected = "ぶっぱなす"
+note = "旧 ぶっほかす (Lindera 放す=ほかす)。本番 signal。 2026-11-01 第 19 回: 期待値を ぶっはなす から ぶっぱなす に訂正 (ぶっ放す は ぶっぱなす。 UniDic / Sudachi / 判定者が一致、 実コメント 20 行超で ぶっはなす と誤読していた)"
 
 [[case]]
 input = "放つ"
