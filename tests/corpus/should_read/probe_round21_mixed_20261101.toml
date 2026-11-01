@@ -1,0 +1,120 @@
+# 2026-11-01 第 21 回 (実コメント / 国会 / livedoor の標本) の誤読。
+# 判定者 (サブエージェント) の主張を、 現行 lib への引き直しと、 独立 2 系統 (UniDic / Sudachi) との照合で絞り、 一致したものだけを辞書に入れた。
+# 最大の型は 米 + カタカナ = ベイ (アメリカ)。 実コメントで 269 行あり、 大半が こめメディア / こめトランプ と誤読していた。
+# お米の語 (米コシヒカリ / 米パン / 米フレーク / 米デンプン …) は先に こめ で守る (kanji.match の next_starts_any)。
+
+[[case]]
+input = "米メディアが報じた"
+mode = "hiragana"
+expected = "べいメディアがほうじた"
+note = "米 + カタカナ = べい (アメリカ。 旧: こめメディア)"
+
+[[case]]
+input = "米トランプ政権"
+mode = "hiragana"
+expected = "べいトランプせいけん"
+note = "米 + カタカナ = べい"
+
+[[case]]
+input = "米ホワイトハウス"
+mode = "hiragana"
+expected = "べいホワイトハウス"
+note = "米 + カタカナ = べい"
+
+[[case]]
+input = "米アップル"
+mode = "hiragana"
+expected = "べいアップル"
+note = "米 + カタカナ = べい"
+
+[[case]]
+input = "米大リーグ"
+mode = "hiragana"
+expected = "べいだいりーぐ"
+note = "米大リーグ = べいだいリーグ (見出し。 漢字とカタカナをまたぐ next 指定は効かない)"
+
+[[case]]
+input = "米米クラブw"
+mode = "hiragana"
+expected = "こめこめくらぶワラ"
+note = "守る: 米米クラブ は こめこめ (米 + カタカナの規則で べいべい になるのを見出しで防ぐ)"
+
+[[case]]
+input = "中程度の"
+mode = "hiragana"
+expected = "ちゅうていどの"
+note = "中程度=ちゅうていど (旧: なかていど)"
+
+[[case]]
+input = "第一製パン"
+mode = "hiragana"
+expected = "だいいちせいぱん"
+note = "第一製パン=だいいちせいぱん (旧: だいいっせいパン)"
+
+# ─── 守る読み (変えない) ───
+
+[[case]]
+input = "米コシヒカリを炊く"
+mode = "hiragana"
+expected = "こめコシヒカリをたく"
+note = "守る: お米の語 (米 + コシヒカリ)"
+
+[[case]]
+input = "米パンを焼く"
+mode = "hiragana"
+expected = "こめパンをやく"
+note = "守る: 米パン (米粉のパン)"
+
+[[case]]
+input = "米フレーク"
+mode = "hiragana"
+expected = "こめフレーク"
+note = "守る: 米フレーク"
+
+[[case]]
+input = "玄米ブラン"
+mode = "hiragana"
+expected = "げんまいブラン"
+note = "守る: 玄米"
+
+[[case]]
+input = "新米コシヒカリ"
+mode = "hiragana"
+expected = "しんまいコシヒカリ"
+note = "守る: 新米"
+
+[[case]]
+input = "米ぬか"
+mode = "hiragana"
+expected = "こめぬか"
+note = "守る: 米ぬか (ひらがなが続く)"
+
+[[case]]
+input = "日米同盟"
+mode = "hiragana"
+expected = "にちべいどうめい"
+note = "守る: 日米"
+
+[[case]]
+input = "全米デビュー"
+mode = "hiragana"
+expected = "ぜんべいデビュー"
+note = "守る: 全米"
+
+[[case]]
+input = "米イラン協議"
+mode = "hiragana"
+expected = "べいイランきょうぎ"
+note = "守る: 米イラン (すでに べい)"
+
+[[case]]
+input = "保湿クリーム"
+mode = "hiragana"
+expected = "ほしつクリーム"
+note = "守る: 保湿=ほしつ"
+
+[[case]]
+input = "後付けで"
+mode = "hiragana"
+expected = "あとづけで"
+note = "守る: 後付け"
