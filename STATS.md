@@ -27,11 +27,11 @@ git に commit されている master HEAD の状態を基準にする。
 | [**熟語**](#熟語) (`core/jukugo/*`、手動 PR メンテ) | **53,012** | **2.08 MB** |
 | [**作品造語**](#作品造語) (`core/works/*`、作品単位 1 ファイル) | **1,706** | **133 KB** |
 | [**外来語**](#外来語) (`core/loanwords/*`、IT 用語等の英字 surface) | **3,717** | **102 KB** |
-| [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **911** | **100 KB** |
+| [**分類前 inbox**](#分類前-inbox) (`core/_inbox.toml`、 後で振り分ける一時置き場) | **936** | **101 KB** |
 | [**単漢字 [[kanji]] format**](#単漢字-kanji-format) (`core/kanji/*`、 default + 文脈分岐 reading) | **2,796** | **401 KB** |
 | [**異体字**](#異体字) (`rules/compat.toml`) | **436** | **6.1 KB** |
 | [**エンジンルール**](#エンジンルール) (`rules/`) | **1,092** | **79 KB** |
-| **合計** | **104,324** | **3.59 MB** |
+| **合計** | **104,349** | **3.59 MB** |
 <!-- AUTO-GENERATED:SUMMARY:END -->
 
 ## 内訳
@@ -336,7 +336,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 
 | ファイル | エントリ数 | サイズ | 用途 |
 |---|---:|---:|---|
-| [`core/_inbox.toml`](core/_inbox.toml) | 911 | 100 KB | 分類前の一時 inbox (≥2 字 surface、 内容が貯まったら適切な genre dir に振り分ける) |
+| [`core/_inbox.toml`](core/_inbox.toml) | 936 | 101 KB | 分類前の一時 inbox (≥2 字 surface、 内容が貯まったら適切な genre dir に振り分ける) |
 
 ### 単漢字 [[kanji]] format
 
@@ -344,7 +344,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 
 | ファイル | 文字数 | ルール数 | サイズ | 用途 |
 |---|---:|---:|---:|---|
-| [`core/kanji/overrides.toml`](core/kanji/overrides.toml) | 2,796 | 4,527 | 401 KB | 単漢字 default override + 文脈分岐 reading |
+| [`core/kanji/overrides.toml`](core/kanji/overrides.toml) | 2,796 | 4,528 | 401 KB | 単漢字 default override + 文脈分岐 reading |
 
 ### 異体字
 
@@ -423,7 +423,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 14853 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 14880 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -790,6 +790,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_round17_wiki_tech_20261101.toml`](tests/corpus/should_read/probe_round17_wiki_tech_20261101.toml) | 19 |
 |  | [`tests/corpus/should_read/probe_round18_news_law_20261101.toml`](tests/corpus/should_read/probe_round18_news_law_20261101.toml) | 24 |
 |  | [`tests/corpus/should_read/probe_round19_mixed_20261101.toml`](tests/corpus/should_read/probe_round19_mixed_20261101.toml) | 22 |
+|  | [`tests/corpus/should_read/probe_round20_mixed_20261101.toml`](tests/corpus/should_read/probe_round20_mixed_20261101.toml) | 27 |
 |  | [`tests/corpus/should_read/probe_shita_bakari_20261027.toml`](tests/corpus/should_read/probe_shita_bakari_20261027.toml) | 11 |
 |  | [`tests/corpus/should_read/probe_weekday_after_date_20261101.toml`](tests/corpus/should_read/probe_weekday_after_date_20261101.toml) | 13 |
 |  | [`tests/corpus/should_read/regression.toml`](tests/corpus/should_read/regression.toml) | 560 |
