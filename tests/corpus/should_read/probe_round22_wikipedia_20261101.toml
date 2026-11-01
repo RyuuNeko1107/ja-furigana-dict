@@ -1,0 +1,133 @@
+# 2026-11-01 第 22 回 (Wikipedia の標本 1,500 文、 不一致 546 行)。
+# 判定者 (サブエージェント) の主張を、 現行 lib への引き直しと、 独立 2 系統 (UniDic / Sudachi) との照合で絞り、 実コメントでの出現数も見て、
+# 一致したものだけを辞書に入れた。 Wikipedia の語は実コメントにはほぼ出ないが、 冠名 (競馬) / 中経出版 / 王弟 / 昼行便 は実コメントでも出ていた。
+# 人名の個別の読み、 学校名・路線名、 文脈で割れる語 (継母 = ままはは / けいぼ、 心底 = しんそこ) は入れなかった。
+# 若衆 は既存の見出し (ワカイシュ) があり、 実コメントの用例だけでは決めきれないので触らない。
+
+[[case]]
+input = "冠名設定できますよ"
+mode = "hiragana"
+expected = "かんむりめいせっていできますよ"
+note = "冠名=かんむりめい (競馬の馬名の冠。 旧: かんめい。 実コメント 13 行)"
+
+[[case]]
+input = "自由奔放な王弟"
+mode = "hiragana"
+expected = "じゆうほんぽうなおうてい"
+note = "王弟=おうてい (旧: おうおとうと。 実コメント 6 行)"
+
+[[case]]
+input = "本 中経出版 の本"
+mode = "hiragana"
+expected = "ほん ちゅうけいしゅっぱん のほん"
+note = "中経出版=ちゅうけいしゅっぱん (出版社。 旧: なかけいしゅっぱん。 実コメント 13 行)"
+
+[[case]]
+input = "プリンセスロードの昼行便"
+mode = "hiragana"
+expected = "プリンセスロードのちゅうこうびん"
+note = "昼行便=ちゅうこうびん (夜行便 = やこうびん の対)"
+
+[[case]]
+input = "豊川用水の影響"
+mode = "hiragana"
+expected = "とよかわようすいのえいきょう"
+note = "豊川用水=とよかわようすい (既存の見出し とよがわ を訂正。 豊川市 = とよかわし)"
+
+[[case]]
+input = "土留め壁"
+mode = "hiragana"
+expected = "どどめかべ"
+note = "土留め=どどめ (旧: どどめめ。 め が二重に読まれていた)"
+
+[[case]]
+input = "鮮黄色の花"
+mode = "hiragana"
+expected = "せんおうしょくのはな"
+note = "鮮黄色=せんおうしょく"
+
+[[case]]
+input = "武家地と町人地"
+mode = "hiragana"
+expected = "ぶけちとちょうにんち"
+note = "武家地=ぶけち (旧: ぶいえじ)"
+
+[[case]]
+input = "岩屑なだれ"
+mode = "hiragana"
+expected = "がんせつなだれ"
+note = "岩屑=がんせつ (地質用語。 旧: いわくず)"
+
+[[case]]
+input = "花被片"
+mode = "hiragana"
+expected = "かひへん"
+note = "花被=かひ (旧: はなひ)"
+
+[[case]]
+input = "堂主"
+mode = "hiragana"
+expected = "どうしゅ"
+note = "堂主=どうしゅ (旧: どうぬし)"
+
+[[case]]
+input = "平地競走と障害競走"
+mode = "hiragana"
+expected = "へいちきょうそうとしょうがいきょうそう"
+note = "平地競走=へいちきょうそう (旧: ひらちきょうそう)"
+
+[[case]]
+input = "主徴は発熱"
+mode = "hiragana"
+expected = "しゅちょうははつねつ"
+note = "主徴=しゅちょう (旧: ぬしちょう)"
+
+[[case]]
+input = "こぶし大の石"
+mode = "hiragana"
+expected = "こぶしだいのいし"
+note = "こぶし大=こぶしだい (旧: こぶしおお)"
+
+[[case]]
+input = "神話上の存在"
+mode = "hiragana"
+expected = "しんわじょうのそんざい"
+note = "神話上=しんわじょう (旧: しんわうえ。 〜上 = じょう)"
+
+[[case]]
+input = "西端部"
+mode = "hiragana"
+expected = "せいたんぶ"
+note = "西端部=せいたんぶ (旧: にしたんぶ。 東端部 = とうたんぶ と揃える)"
+
+[[case]]
+input = "張掖郡"
+mode = "hiragana"
+expected = "ちょうえきぐん"
+note = "張掖郡=ちょうえきぐん (旧: ちょうたすぐん)"
+
+# ─── 守る読み (変えない) ───
+
+[[case]]
+input = "夜行便"
+mode = "hiragana"
+expected = "やこうびん"
+note = "守る: 夜行便"
+
+[[case]]
+input = "歴史上の人物"
+mode = "hiragana"
+expected = "れきしじょうのじんぶつ"
+note = "守る: 歴史上"
+
+[[case]]
+input = "王様"
+mode = "hiragana"
+expected = "おうさま"
+note = "守る: 王 + 様 (王弟 の見出しが他の語を割らない)"
+
+[[case]]
+input = "弟"
+mode = "hiragana"
+expected = "おとうと"
+note = "守る: 弟"
