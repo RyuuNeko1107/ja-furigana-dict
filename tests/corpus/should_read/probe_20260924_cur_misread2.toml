@@ -1076,7 +1076,8 @@ expected = "となりのむねに"
 [[case]]
 input = "菅前総理"
 mode = "hiragana"
-expected = "すがまえそうり"
+expected = "すがぜんそうり"
+note = "2026-11-01 第 20 回: 期待値を すがまえそうり から すがぜんそうり に訂正 (前総理 = 元の総理 = ぜんそうり)"
 
 [[case]]
 input = "菅直人"
