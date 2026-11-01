@@ -132,3 +132,60 @@ input = "元気だよ"
 mode = "hiragana"
 expected = "げんきだよ"
 note = "守る: 元気"
+
+# ─── 第 25 回 (CC-100 日本語の標本 3,000 文、 不一致 633 行) ───
+# 三大/四大/五大 = ダイ (規則)、 何か所 系 = なんかしょ (見出し)。 実コメントで出ていなかった語 (稼ぎ高 / ゼミ生 / 基金型 等) と、 強者 (つわもの/きょうしゃ) など文脈で割れる語は入れない。
+
+[[case]]
+input = "世界三大ジョン"
+mode = "hiragana"
+expected = "せかいさんだいジョン"
+note = "三大=さんだい (旧: さんおお。 実コメント 13 行)"
+
+[[case]]
+input = "日本三大RPG"
+mode = "hiragana"
+expected = "にほんさんだいアールピージー"
+note = "日本三大"
+
+[[case]]
+input = "世界三大ロー"
+mode = "hiragana"
+expected = "せかいさんだいロー"
+note = "世界三大"
+
+[[case]]
+input = "世界四大"
+mode = "hiragana"
+expected = "せかいよんだい"
+note = "四大 + ダイ"
+
+[[case]]
+input = "三大都市"
+mode = "hiragana"
+expected = "さんだいとし"
+note = "守る: 三大 + 漢字"
+
+[[case]]
+input = "五大陸"
+mode = "hiragana"
+expected = "ごたいりく"
+note = "守る: 五大陸"
+
+[[case]]
+input = "四大"
+mode = "hiragana"
+expected = "しだい"
+note = "守る: 四大 (単独)"
+
+[[case]]
+input = "何か所かで"
+mode = "hiragana"
+expected = "なんかしょかで"
+note = "何か所=なんかしょ (旧: なにかしょ)"
+
+[[case]]
+input = "何ヶ所"
+mode = "hiragana"
+expected = "なんかしょ"
+note = "何ヶ所=なんかしょ"
