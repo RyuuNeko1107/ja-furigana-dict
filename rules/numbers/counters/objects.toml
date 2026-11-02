@@ -441,7 +441,7 @@ default = "トウシン"
 kanji_numeral = false
 
 [[counter."頭身".rules]]
-last_digit = [1, 6, 8, 0]
+last_digit = [1, 8, 0]
 suffix = "トウシン"
 sokuonize = true
 
@@ -622,6 +622,99 @@ suffix = "コイリ"
 sokuonize = true
 
 # === end: 第 28 回 ===
+
+# === begin: 第 29 回 (助数詞の点検 その 2。 6 / 100 と出現の少ない接尾語) ===
+# 報 (第1報 = だいいっぽう / 3報 = さんぽう。 実コメント 93 行)
+[counter."報"]
+default = "ホウ"
+kanji_numeral = false
+
+[[counter."報".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "ポウ"
+sokuonize = true
+
+[[counter."報".rules]]
+last_digit = [3]
+suffix = "ポウ"
+
+# 株: 1株 = いっかぶ / 10株 = じゅっかぶ
+[counter."株"]
+default = "カブ"
+kanji_numeral = false
+
+[[counter."株".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カブ"
+sokuonize = true
+
+# 席: 1席 = いっせき / 10席 = じゅっせき
+[counter."席"]
+default = "セキ"
+kanji_numeral = false
+
+[[counter."席".rules]]
+last_digit = [1, 8, 0]
+suffix = "セキ"
+sokuonize = true
+
+# 冠 (3冠 / 8冠): 1冠 = いっかん / 6冠 = ろっかん
+[counter."冠"]
+default = "カン"
+kanji_numeral = false
+
+[[counter."冠".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カン"
+sokuonize = true
+
+# 課: 1課 = いっか / 10課 = じゅっか
+[counter."課"]
+default = "カ"
+kanji_numeral = false
+
+[[counter."課".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カ"
+sokuonize = true
+
+# 館: 1館 = いっかん / 10館 = じゅっかん
+[counter."館"]
+default = "カン"
+kanji_numeral = false
+
+[[counter."館".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カン"
+sokuonize = true
+
+# 回転: 6回転 = ろっかいてん / 100回転 = ひゃっかいてん
+[counter."回転"]
+default = "カイテン"
+kanji_numeral = false
+
+[[counter."回転".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カイテン"
+sokuonize = true
+
+# 等 (1等 / 10等): 1等 = いっとう。 等分 / 等身 は別語
+[counter."等"]
+default = "トウ"
+kanji_numeral = false
+
+[[counter."等".rules]]
+last_digit = [1, 8, 0]
+suffix = "トウ"
+sokuonize = true
+
+# 元 (通貨。 179元 = ひゃくななじゅうきゅうげん)。 元日 / 元年 / 元気 等は助数詞にしない
+[counter."元"]
+default = "ゲン"
+kanji_numeral = false
+not_before = ["々", "年", "号", "日", "気", "来", "祖", "凶", "首", "通", "素", "本", "金", "手", "町", "従", "旦", "服", "栓", "請", "彼", "値"]
+
+# === end: 第 29 回 ===
 
 # === begin: 畳 ===
 [counter."畳"]
