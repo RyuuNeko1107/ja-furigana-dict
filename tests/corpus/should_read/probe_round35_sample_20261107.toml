@@ -1,0 +1,37 @@
+# 2026-11-07 第 35 回 (実コメント無作為 400 行を AI のみで判定)。 辞書で直せた 3 語。 構えながら (洗剤+構え の連濁) / 番 / 腕筋 は保留。
+
+[[case]]
+input = "巌窟おーくん"
+mode = "hiragana"
+expected = "がんくつおーくん"
+note = "第 35 回"
+
+[[case]]
+input = "巌窟の底に隠されし"
+mode = "hiragana"
+expected = "がんくつのそこにかくされし"
+note = "第 35 回"
+
+[[case]]
+input = "まだ空きございます"
+mode = "hiragana"
+expected = "まだあきございます"
+note = "第 35 回"
+
+[[case]]
+input = "まだ空ございますので"
+mode = "hiragana"
+expected = "まだあきございますので"
+note = "第 35 回"
+
+[[case]]
+input = "反応しない事が最善手だしなぁ"
+mode = "hiragana"
+expected = "はんのうしないことがさいぜんしゅだしなぁ"
+note = "第 35 回"
+
+[[case]]
+input = "巌流島"
+mode = "hiragana"
+expected = "がんりゅうじま"
+note = "第 35 回"
