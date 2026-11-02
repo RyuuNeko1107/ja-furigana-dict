@@ -78,7 +78,7 @@ description = "単純サフィックス助数詞 (円 / 点 / 度 / 名 / 話 �
 # 「食」 は objects.toml で rule
 "両" = "リョウ"
 # 「周年」 は objects.toml で sokuonize rule (1/8/10 促音: いっ/はっ/じっしゅうねん)
-"頁" = "ページ"
+# "頁" は objects.toml の [counter."頁"] (促音化: 1頁 = いっぺーじ) に移した (★2026-11-03 第 28 回)
 # 「室」 は objects.toml で rule
 "打" = "ダ"
 # 「切れ」 は objects.toml で rule (= 1/2 が和語 ヒトキレ/フタキレ、 ★2026-09-11)

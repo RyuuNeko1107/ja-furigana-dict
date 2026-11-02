@@ -1073,7 +1073,7 @@ note = "旧 いちひょう"
 [[case]]
 input = "三票差で勝つ"
 mode = "hiragana"
-expected = "さんびょうさでかつ"
+expected = "さんぴょうさでかつ"
 note = "旧 さんひょう"
 
 # 回帰ガード: counter でない 巻/票 = 維持

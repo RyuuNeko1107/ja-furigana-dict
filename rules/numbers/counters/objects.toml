@@ -419,6 +419,210 @@ suffix = "セン"
 sokuonize = true
 # === end: 選 ===
 
+# === begin: 第 28 回 (実コメントの 数字 + 語 を AI 判定) ===
+# 泊: 1泊 = いっぱく / 3泊 = さんぱく / 8泊 = はっぱく (旅行の N泊M日)。 泊まり は助数詞にしない
+[counter."泊"]
+default = "ハク"
+kanji_numeral = false
+not_before = ["ま"]
+
+[[counter."泊".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "パク"
+sokuonize = true
+
+[[counter."泊".rules]]
+last_digit = [3]
+suffix = "パク"
+
+# 頭身: 8頭身 = はっとうしん
+[counter."頭身"]
+default = "トウシン"
+kanji_numeral = false
+
+[[counter."頭身".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "トウシン"
+sokuonize = true
+
+# 回表 / 回裏 (野球): 1回表 = いっかいおもて
+[counter."回表"]
+default = "カイオモテ"
+kanji_numeral = false
+
+[[counter."回表".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カイオモテ"
+sokuonize = true
+
+# 回裏
+[counter."回裏"]
+default = "カイウラ"
+kanji_numeral = false
+
+[[counter."回裏".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カイウラ"
+sokuonize = true
+
+# 回分: 1回分 = いっかいぶん
+[counter."回分"]
+default = "カイブン"
+kanji_numeral = false
+
+[[counter."回分".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "カイブン"
+sokuonize = true
+
+# 千 (3千 = さんぜん / 8千 = はっせん / 1千 = いっせん)
+[counter."千"]
+default = "セン"
+kanji_numeral = false
+
+[[counter."千".rules]]
+last_digit = [3]
+suffix = "ゼン"
+
+[[counter."千".rules]]
+last_digit = [1, 8]
+suffix = "セン"
+sokuonize = true
+
+# 千円 (3千円 = さんぜんえん / 8千円 = はっせんえん)
+[counter."千円"]
+default = "センエン"
+kanji_numeral = false
+
+[[counter."千円".rules]]
+last_digit = [3]
+suffix = "ゼンエン"
+
+[[counter."千円".rules]]
+last_digit = [1, 8]
+suffix = "センエン"
+sokuonize = true
+
+# 千万
+[counter."千万"]
+default = "センマン"
+kanji_numeral = false
+
+[[counter."千万".rules]]
+last_digit = [3]
+suffix = "ゼンマン"
+
+[[counter."千万".rules]]
+last_digit = [1, 8]
+suffix = "センマン"
+sokuonize = true
+
+# 個入: 10個入 = じゅっこいり (旧 にゅう)
+[counter."個入"]
+default = "コイリ"
+kanji_numeral = false
+
+[[counter."個入".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "コイリ"
+sokuonize = true
+
+# 枚入: 3枚入 = さんまいいり (旧 にゅう)
+[counter."枚入"]
+default = "マイイリ"
+kanji_numeral = false
+
+# 頁: 1頁 = いっぺーじ
+[counter."頁"]
+default = "ページ"
+kanji_numeral = false
+
+[[counter."頁".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "ページ"
+sokuonize = true
+
+# 強 (ベスト8強 / 1強 / 30強): 1強 = いっきょう / 8強 = はっきょう
+[counter."強"]
+default = "キョウ"
+kanji_numeral = false
+not_before = ["い", "く", "さ", "す", "そ", "ま", "み", "引", "化", "調", "制", "要", "硬", "豪", "力", "度", "弱", "烈"]
+
+[[counter."強".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "キョウ"
+sokuonize = true
+
+# 層: 1層 = いっそう / 8層 = はっそう
+[counter."層"]
+default = "ソウ"
+kanji_numeral = false
+
+[[counter."層".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "ソウ"
+sokuonize = true
+
+# 択: 1択 = いったく / 8択 = はったく
+[counter."択"]
+default = "タク"
+kanji_numeral = false
+
+[[counter."択".rules]]
+last_digit = [1, 8, 0]
+suffix = "タク"
+sokuonize = true
+
+# ページ (カタカナ表記): 1ページ = いっぺーじ
+[counter."ページ"]
+default = "ページ"
+kanji_numeral = false
+
+[[counter."ページ".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "ページ"
+sokuonize = true
+
+# 千人 (3千人 = さんぜんにん)
+[counter."千人"]
+default = "センニン"
+kanji_numeral = false
+
+[[counter."千人".rules]]
+last_digit = [3]
+suffix = "ゼンニン"
+
+[[counter."千人".rules]]
+last_digit = [1, 8]
+suffix = "センニン"
+sokuonize = true
+
+# 千万円 (3千万円 = さんぜんまんえん)
+[counter."千万円"]
+default = "センマンエン"
+kanji_numeral = false
+
+[[counter."千万円".rules]]
+last_digit = [3]
+suffix = "ゼンマンエン"
+
+[[counter."千万円".rules]]
+last_digit = [1, 8]
+suffix = "センマンエン"
+sokuonize = true
+
+# 個入り: 10個入り = じゅっこいり
+[counter."個入り"]
+default = "コイリ"
+kanji_numeral = false
+
+[[counter."個入り".rules]]
+last_digit = [1, 6, 8, 0]
+suffix = "コイリ"
+sokuonize = true
+
+# === end: 第 28 回 ===
+
 # === begin: 畳 ===
 [counter."畳"]
 default = "ジョウ"
@@ -596,7 +800,7 @@ sokuonize = true
 
 [[counter."票".rules]]
 last_digit = [3]
-suffix = "ビョウ"
+suffix = "ピョウ"  # ★2026-11-03 第 28 回: 3票 = さんぴょう (旧 ビョウ)
 # === end: 票 ===
 
 # ───────────────────────────────────────────────────────────────
@@ -808,6 +1012,10 @@ kanji_numeral = true
 last_digit = [1, 6, 8, 0]
 suffix = "ピン"
 sokuonize = true
+
+[[counter."品".rules]]
+last_digit = [3]
+suffix = "ピン"  # ★2026-11-03 第 28 回: 3品 = さんぴん
 # === end: 品 ===
 
 # 敗 (敗数): 一敗=いっぱい/六敗=ろっぱい/八敗=はっぱい (p系 半濁パイ)
