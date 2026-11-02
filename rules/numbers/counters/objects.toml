@@ -407,6 +407,18 @@ sokuonize = true
 # inline test は隣接の `objects.test.toml` に分離 (CI 専用、 release tar 除外、
 # runtime memory には載らない)。 contributor は `<name>.test.toml` ペアで追記する。
 
+# === begin: 選 === (「厳選 8 選」 「ベスト 10 選」 の N 選。 1/8/10 で促音化: 8 選 = はっせん)
+# ★2026-11-03 第 27 回 (実コメントで N 選が 351 行)
+[counter."選"]
+default = "セン"
+kanji_numeral = false
+
+[[counter."選".rules]]
+last_digit = [1, 8, 0]
+suffix = "セン"
+sokuonize = true
+# === end: 選 ===
+
 # === begin: 畳 ===
 [counter."畳"]
 default = "ジョウ"
