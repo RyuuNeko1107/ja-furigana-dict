@@ -1,0 +1,44 @@
+# 2026-11-04 第 30 回 (カタカナ語 + 漢字 の組み合わせ 800 種類の点検)。 実コメントで出現 4 回以上の組を AI で判定したところ、 現行でほぼ正しかった。
+# 判定者の指摘の大半は、 語の途中で切れた形 (ライブ衣 / ケルシー先 …) によるスキャン上の副産物で、 実際の語 (ライブ衣装 / ケルシー先生) は正しく読めていた。
+
+[[case]]
+input = "ネタバレ有です"
+mode = "hiragana"
+expected = "ねたばれありです"
+note = "第 30 回の追加"
+
+[[case]]
+input = "ネタバレ無で書きました"
+mode = "hiragana"
+expected = "ねたばれなしでかきました"
+note = "第 30 回の追加"
+
+[[case]]
+input = "ワンクッション有"
+mode = "hiragana"
+expected = "わんくっしょんあり"
+note = "第 30 回の追加"
+
+[[case]]
+input = "#オホ声 #おもちゃ"
+mode = "hiragana"
+expected = "#おほごえ #おもちゃ"
+note = "第 30 回の追加"
+
+[[case]]
+input = "ダルビッシュ有が投げる"
+mode = "hiragana"
+expected = "ダルビッシュゆうがなげる"
+note = "守る: 人名の 有 は ゆう のまま"
+
+[[case]]
+input = "スポーツ大会に出る"
+mode = "hiragana"
+expected = "スポーツたいかいにでる"
+note = "守る: カタカナ + 大会"
+
+[[case]]
+input = "裏アカ女子と繋がりたい"
+mode = "hiragana"
+expected = "うらアカじょしとつながりたい"
+note = "守る"
