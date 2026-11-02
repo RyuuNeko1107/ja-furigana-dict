@@ -1,0 +1,67 @@
+# 2026-11-08 第 36 回 (mC4 のウェブ文章 400 文を AI のみで判定)。 辞書で直せた 18 語。 保留: 電話番号の連続数字 / 東みよし町 / との境 (境界が多く 入れない) / パリ中 / 点物。
+
+[[case]]
+input = "ジム通いを始めた"
+mode = "hiragana"
+expected = "じむかよいをはじめた"
+note = "第 36 回"
+
+[[case]]
+input = "病院通いが続く"
+mode = "hiragana"
+expected = "びょういんかよいがつづく"
+note = "第 36 回"
+
+[[case]]
+input = "歯医者通い"
+mode = "hiragana"
+expected = "はいしゃかよい"
+note = "第 36 回"
+
+[[case]]
+input = "年長者を敬う"
+mode = "hiragana"
+expected = "ねんちょうしゃをうやまう"
+note = "第 36 回"
+
+[[case]]
+input = "年長者はともかく"
+mode = "hiragana"
+expected = "ねんちょうしゃはともかく"
+note = "第 36 回"
+
+[[case]]
+input = "通常の1.5倍の耐塩素性を持つ"
+mode = "hiragana"
+expected = "つうじょうのいちてんごばいのたいえんそせいをもつ"
+note = "第 36 回"
+
+[[case]]
+input = "春夏連覇を達成"
+mode = "hiragana"
+expected = "しゅんかれんぱをたっせい"
+note = "第 36 回"
+
+[[case]]
+input = "2027年春夏コレクション"
+mode = "hiragana"
+expected = "にせんにじゅうななねんしゅんかこれくしょん"
+note = "第 36 回"
+
+[[case]]
+input = "春夏秋冬"
+mode = "hiragana"
+expected = "しゅんかしゅうとう"
+note = "第 36 回"
+
+[[case]]
+input = "春夏の服"
+mode = "hiragana"
+expected = "はるなつのふく"
+note = "第 36 回"
+
+[[case]]
+input = "学校に通い続ける"
+mode = "hiragana"
+expected = "がっこうにかよいつづける"
+note = "第 36 回"
