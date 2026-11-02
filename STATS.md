@@ -360,7 +360,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 `rules/` — エンジン挙動 (助数詞 / 文脈 / 後処理 等) を制御するルール群。 lib コードに embed されるのではなく、 ここで宣言的に外部化されている。
 
 <!-- AUTO-GENERATED:RULES:BEGIN -->
-**合計**: 1,119 エントリ / 1,264 ルール / 84 KB (genre 2 区分)
+**合計**: 1,119 エントリ / 1,265 ルール / 84 KB (genre 2 区分)
 
 #### 数値系
 
@@ -370,7 +370,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 
 | ファイル | エントリ数 | ルール数 | サイズ | 用途 |
 |---|---:|---:|---:|---|
-| [`rules/numbers/counters/objects.toml`](rules/numbers/counters/objects.toml) | 133 | 263 | 25 KB | 物を数える助数詞 (本 / 匹 / 杯 / 個 / 歳 / 冊、 連濁 / 促音化) |
+| [`rules/numbers/counters/objects.toml`](rules/numbers/counters/objects.toml) | 133 | 264 | 25 KB | 物を数える助数詞 (本 / 匹 / 杯 / 個 / 歳 / 冊、 連濁 / 促音化) |
 | [`rules/numbers/counters/places.toml`](rules/numbers/counters/places.toml) | 26 | 53 | 4.5 KB | 場所を数える助数詞 (階 / ヶ所 / 箇所 / か所、 連濁 / 促音化) |
 | [`rules/numbers/counters/time.toml`](rules/numbers/counters/time.toml) | 34 | 51 | 7.7 KB | 時間系助数詞 (月 / 日 / 時 / 分 / 週間 / 回、 4/7/9 の特殊読み + カナ末尾置換) |
 | [`rules/numbers/numeric_phrases.toml`](rules/numbers/numeric_phrases.toml) | 37 | 37 | 1.2 KB | 数字を含む例外語句 (二十歳→ハタチ / 明後日→アサッテ 等、 助数詞ルールより先に確定) |
@@ -380,7 +380,7 @@ VTuber の名前 (姓・フルネーム、 公式読みベース)
 | [`rules/numbers/counters/people.toml`](rules/numbers/counters/people.toml) | 4 | 4 | 870 B | 人を数える助数詞 (人、 1=ヒトリ / 2=フタリ の特殊読み) |
 | [`rules/numbers/counters/percent.toml`](rules/numbers/counters/percent.toml) | 2 | 4 | 583 B | パーセンテージ (% / ％、 1/6/8/0 で促音化 + パーセント) |
 | [`rules/numbers/counters/recursive.toml`](rules/numbers/counters/recursive.toml) | 1 | 1 | 202 B | 再帰モード助数詞 (個目 / 階目 等、 既存助数詞解決後に末尾連結) |
-| **小計** (10 ファイル) | **323** | **468** | **43 KB** | |
+| **小計** (10 ファイル) | **323** | **469** | **43 KB** | |
 
 #### テキスト系
 
@@ -423,7 +423,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 <!-- AUTO-GENERATED:QA:BEGIN -->
 ### Corpus (回帰)
 
-**合計**: should_read 15158 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
+**合計**: should_read 15165 ケース / should_not_read_yet 1 ケース / out_of_scope 0 ケース
 
 | バケット | ファイル | ケース数 |
 |---|---|---:|
@@ -802,6 +802,7 @@ QA は **corpus 回帰** (`tests/corpus/should_read.toml` 等の永続スナッ�
 |  | [`tests/corpus/should_read/probe_round31_kanji_20261104.toml`](tests/corpus/should_read/probe_round31_kanji_20261104.toml) | 25 |
 |  | [`tests/corpus/should_read/probe_round33_sample_20261105.toml`](tests/corpus/should_read/probe_round33_sample_20261105.toml) | 5 |
 |  | [`tests/corpus/should_read/probe_round34_sample_20261106.toml`](tests/corpus/should_read/probe_round34_sample_20261106.toml) | 8 |
+|  | [`tests/corpus/should_read/probe_round35_tenpo_20261106.toml`](tests/corpus/should_read/probe_round35_tenpo_20261106.toml) | 7 |
 |  | [`tests/corpus/should_read/probe_shita_bakari_20261027.toml`](tests/corpus/should_read/probe_shita_bakari_20261027.toml) | 11 |
 |  | [`tests/corpus/should_read/probe_tenpo_me_20261102.toml`](tests/corpus/should_read/probe_tenpo_me_20261102.toml) | 8 |
 |  | [`tests/corpus/should_read/probe_weekday_after_date_20261101.toml`](tests/corpus/should_read/probe_weekday_after_date_20261101.toml) | 13 |
