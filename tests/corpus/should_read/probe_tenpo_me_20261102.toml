@@ -15,7 +15,7 @@ note = "2店舗目=にてんぽめ"
 [[case]]
 input = "1店舗目"
 mode = "hiragana"
-expected = "いちてんぽめ"
+expected = "いってんぽめ"
 note = "1店舗目=いちてんぽめ"
 
 [[case]]
@@ -27,7 +27,7 @@ note = "守る: 店舗 (助数詞にしても変わらない)"
 [[case]]
 input = "10店舗"
 mode = "hiragana"
-expected = "じゅうてんぽ"
+expected = "じゅってんぽ"
 note = "守る: 10店舗"
 
 [[case]]

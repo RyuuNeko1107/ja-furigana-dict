@@ -1,0 +1,43 @@
+# 2026-11-06 店舗の促音 (1/8/10 + 店舗 = いってんぽ / はってんぽ / じゅってんぽ)。
+
+[[case]]
+input = "1店舗"
+mode = "hiragana"
+expected = "いってんぽ"
+note = "店舗の促音"
+
+[[case]]
+input = "全国に10店舗ある"
+mode = "hiragana"
+expected = "ぜんこくにじゅってんぽある"
+note = "店舗の促音"
+
+[[case]]
+input = "8店舗を展開"
+mode = "hiragana"
+expected = "はってんぽをてんかい"
+note = "店舗の促音"
+
+[[case]]
+input = "3店舗目"
+mode = "hiragana"
+expected = "さんてんぽめ"
+note = "店舗の促音"
+
+[[case]]
+input = "今年5店舗目"
+mode = "hiragana"
+expected = "ことしごてんぽめ"
+note = "店舗の促音"
+
+[[case]]
+input = "2店舗"
+mode = "hiragana"
+expected = "にてんぽ"
+note = "店舗の促音"
+
+[[case]]
+input = "店舗"
+mode = "hiragana"
+expected = "てんぽ"
+note = "店舗の促音"
