@@ -1,0 +1,49 @@
+# 2026-11-02 規則側: 店舗を助数詞にして 目 (recursive) を付ける。 店舗目標 は 目 の not_before (標) で守る。
+
+[[case]]
+input = "4店舗目に行く"
+mode = "hiragana"
+expected = "よんてんぽめにいく"
+note = "4店舗目=よんてんぽめ (旧: よんてんぽもく。 実コメント 12 行)"
+
+[[case]]
+input = "2店舗目は愛知県"
+mode = "hiragana"
+expected = "にてんぽめはあいちけん"
+note = "2店舗目=にてんぽめ"
+
+[[case]]
+input = "1店舗目"
+mode = "hiragana"
+expected = "いちてんぽめ"
+note = "1店舗目=いちてんぽめ"
+
+[[case]]
+input = "3店舗"
+mode = "hiragana"
+expected = "さんてんぽ"
+note = "守る: 店舗 (助数詞にしても変わらない)"
+
+[[case]]
+input = "10店舗"
+mode = "hiragana"
+expected = "じゅうてんぽ"
+note = "守る: 10店舗"
+
+[[case]]
+input = "3店舗目標を立てる"
+mode = "hiragana"
+expected = "さんてんぽもくひょうをたてる"
+note = "守る: 店舗目標 (目 の not_before に 標)"
+
+[[case]]
+input = "3回目標を立てる"
+mode = "hiragana"
+expected = "さんかいめひょうをたてる"
+note = "守る: 回目標 (従来どおり)"
+
+[[case]]
+input = "5回目"
+mode = "hiragana"
+expected = "ごかいめ"
+note = "守る: 5回目"
