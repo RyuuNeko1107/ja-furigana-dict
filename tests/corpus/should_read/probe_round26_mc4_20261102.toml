@@ -1,0 +1,225 @@
+# 2026-11-02 第 26 回 (mC4 日本語の標本 3,000 文。 AI 判定中心で、 VOICEVOX と不一致の 763 行 + 一致した行の無作為 600 行を判定)。
+# 例文は標本の文を写さず、 見出しの語を使って作った短文。 〜気 = げ (寂し気 / 不安気 …) の型は一致した行からも見つかった。
+# 外面 / 木目 / 方 / 行 (駅名+行) / 人名・地名は文脈で割れるので入れなかった。
+
+[[case]]
+input = "彼女は寂し気な表情で窓の外を見ていた"
+mode = "hiragana"
+expected = "かのじょはさびしげなひょうじょうでまどのそとをみていた"
+note = "第 26 回の追加"
+
+[[case]]
+input = "楽し気に笑う子どもたちの声がする"
+mode = "hiragana"
+expected = "たのしげにわらうこどもたちのこえがする"
+note = "第 26 回の追加"
+
+[[case]]
+input = "自信気に答える姿が印象的だった"
+mode = "hiragana"
+expected = "じしんげにこたえるすがたがいんしょうてきだった"
+note = "第 26 回の追加"
+
+[[case]]
+input = "不安気な顔でこちらを見上げている"
+mode = "hiragana"
+expected = "ふあんげなかおでこちらをみあげている"
+note = "第 26 回の追加"
+
+[[case]]
+input = "満足気にうなずいて席を立った"
+mode = "hiragana"
+expected = "まんぞくげにうなずいてせきをたった"
+note = "第 26 回の追加"
+
+[[case]]
+input = "恥ずかし気にうつむいてしまった"
+mode = "hiragana"
+expected = "はずかしげにうつむいてしまった"
+note = "第 26 回の追加"
+
+[[case]]
+input = "クロムモリブデン鋼のフレームを選んだ"
+mode = "hiragana"
+expected = "くろむもりぶでんこうのフレームをえらんだ"
+note = "第 26 回の追加"
+
+[[case]]
+input = "ステンレス鋼は錆びにくい"
+mode = "hiragana"
+expected = "すてんれすこうはさびにくい"
+note = "第 26 回の追加"
+
+[[case]]
+input = "鋼の意志で最後までやり抜いた"
+mode = "hiragana"
+expected = "はがねのいしでさいごまでやりぬいた"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "止瀉薬を飲んでしばらく様子を見る"
+mode = "hiragana"
+expected = "ししゃやくをのんでしばらくようすをみる"
+note = "第 26 回の追加"
+
+[[case]]
+input = "着替えが楽な脱ぎ着しやすい服"
+mode = "hiragana"
+expected = "きがえがらくなぬぎきしやすいふく"
+note = "第 26 回の追加"
+
+[[case]]
+input = "金ごまをたっぷりかけて食べる"
+mode = "hiragana"
+expected = "きんごまをたっぷりかけてたべる"
+note = "第 26 回の追加"
+
+[[case]]
+input = "本皮製のベルトを買った"
+mode = "hiragana"
+expected = "ほんかわせいのベルトをかった"
+note = "第 26 回の追加"
+
+[[case]]
+input = "壁床天井まで全部張り替えた"
+mode = "hiragana"
+expected = "かべゆかてんじょうまでぜんぶはりかえた"
+note = "第 26 回の追加"
+
+[[case]]
+input = "上水内郡の小さな村に生まれた"
+mode = "hiragana"
+expected = "かみみのちぐんのちいさなむらにうまれた"
+note = "第 26 回の追加"
+
+[[case]]
+input = "柔かめに炊いたご飯が好きだ"
+mode = "hiragana"
+expected = "やわらかめにたいたごはんがすきだ"
+note = "第 26 回の追加"
+
+[[case]]
+input = "代引で届くので現金を用意しておく"
+mode = "hiragana"
+expected = "だいびきでとどくのでげんきんをよういしておく"
+note = "第 26 回の追加"
+
+[[case]]
+input = "ただし書にある例外を確認した"
+mode = "hiragana"
+expected = "ただしがきにあるれいがいをかくにんした"
+note = "第 26 回の追加"
+
+[[case]]
+input = "貸店舗の看板が出ていた"
+mode = "hiragana"
+expected = "かしてんぽのかんばんがでていた"
+note = "第 26 回の追加"
+
+[[case]]
+input = "スクール生は無料で参加できる"
+mode = "hiragana"
+expected = "すくーるせいはむりょうでさんかできる"
+note = "第 26 回の追加"
+
+[[case]]
+input = "薄眉のせいで怖く見られがちだ"
+mode = "hiragana"
+expected = "うすまゆのせいでこわくみられがちだ"
+note = "第 26 回の追加"
+
+[[case]]
+input = "潮味のきいたスナック菓子"
+mode = "hiragana"
+expected = "しおあじのきいたすなっくがし"
+note = "第 26 回の追加"
+
+[[case]]
+input = "卸会社に直接問い合わせてみた"
+mode = "hiragana"
+expected = "おろしがいしゃにちょくせつといあわせてみた"
+note = "第 26 回の追加"
+
+[[case]]
+input = "窓を開ければ海が見える"
+mode = "hiragana"
+expected = "まどをあければうみがみえる"
+note = "第 26 回の追加"
+
+[[case]]
+input = "甲羅干しをする亀を眺める"
+mode = "hiragana"
+expected = "こうらぼしをするかめをながめる"
+note = "第 26 回の追加"
+
+[[case]]
+input = "主症状は発熱と咳である"
+mode = "hiragana"
+expected = "しゅしょうじょうははつねつとせきである"
+note = "第 26 回の追加"
+
+[[case]]
+input = "化粧箱入のギフトセットを贈る"
+mode = "hiragana"
+expected = "けしょうばこいりのギフトセットをおくる"
+note = "第 26 回の追加"
+
+[[case]]
+input = "筋減弱症の予防には運動が大切だ"
+mode = "hiragana"
+expected = "きんげんじゃくしょうのよぼうにはうんどうがたいせつだ"
+note = "第 26 回の追加"
+
+[[case]]
+input = "花紙を丸めて飾りを作る"
+mode = "hiragana"
+expected = "はながみをまるめてかざりをつくる"
+note = "第 26 回の追加"
+
+[[case]]
+input = "京壁の部屋で茶を点てる"
+mode = "hiragana"
+expected = "きょうかべのへやでちゃをたてる"
+note = "第 26 回の追加"
+
+[[case]]
+input = "竪川沿いを歩いて帰った"
+mode = "hiragana"
+expected = "たてかわぞいをあるいてかえった"
+note = "第 26 回の追加"
+
+[[case]]
+input = "彼の歌声の虜になってしまった"
+mode = "hiragana"
+expected = "かれのうたごえのとりこになってしまった"
+note = "第 26 回の追加"
+
+[[case]]
+input = "虜にされて身動きが取れない"
+mode = "hiragana"
+expected = "とりこにされてみうごきがとれない"
+note = "第 26 回の追加"
+
+[[case]]
+input = "捕虜の扱いについて議論した"
+mode = "hiragana"
+expected = "ほりょのあつかいについてぎろんした"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "反応して気になることがあった"
+mode = "hiragana"
+expected = "はんのうしてきになることがあった"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "心配して気にかけていた"
+mode = "hiragana"
+expected = "しんぱいしてきにかけていた"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "元気になって気持ちも軽くなった"
+mode = "hiragana"
+expected = "げんきになってきもちもかるくなった"
+note = "守る: 周りの読みを変えない"

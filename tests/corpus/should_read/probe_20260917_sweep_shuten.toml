@@ -221,7 +221,7 @@ expected = "ただ、メッシもカーボベルデせんはしゅびにほん�
 [[case]]
 input = "美柑1択"
 mode = "hiragana"
-expected = "みかんいちたく"
+expected = "みかんいったく"
 
 [[case]]
 input = "蜜柑"

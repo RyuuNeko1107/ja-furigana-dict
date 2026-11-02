@@ -1,0 +1,249 @@
+# 2026-11-03 第 28 回 (助数詞の系統点検)。 実コメントで数字の後ろに付く語を頻度順に 400 種類集め、 1 / 3 / 8 / 10 を付けた現行の読みを AI で判定した。
+# 泊 (1泊 = いっぱく) / 頭身 / 回表 / 回裏 / 回分 / 千 (3千円 = さんぜんえん) / 個入 / 枚入 / ページ (1ページ = いっぺーじ) / 強 / 層 / 択 と、 票 (3票 = さんぴょう) / 品 (3品 = さんぴん) の修正。
+# 桁 (はっけた / はちけた) は揺れなので触らない。 店舗 は #39 のマージ後。
+
+[[case]]
+input = "旅行は1泊2日の予定だ"
+mode = "hiragana"
+expected = "りょこうはいっぱくふつかのよていだ"
+note = "第 28 回の追加"
+
+[[case]]
+input = "3泊4日で京都へ行く"
+mode = "hiragana"
+expected = "さんぱくよっかできょうとへいく"
+note = "第 28 回の追加"
+
+[[case]]
+input = "8泊9日のクルーズ"
+mode = "hiragana"
+expected = "はっぱくここのかのクルーズ"
+note = "第 28 回の追加"
+
+[[case]]
+input = "10泊の長期滞在"
+mode = "hiragana"
+expected = "じゅっぱくのちょうきたいざい"
+note = "第 28 回の追加"
+
+[[case]]
+input = "2泊3日の温泉旅行"
+mode = "hiragana"
+expected = "にはくみっかのおんせんりょこう"
+note = "第 28 回の追加"
+
+[[case]]
+input = "泊まりがけで出かけた"
+mode = "hiragana"
+expected = "とまりがけででかけた"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "一泊二日で帰る"
+mode = "hiragana"
+expected = "いっぱくふつかでかえる"
+note = "第 28 回の追加"
+
+[[case]]
+input = "8頭身のモデル体型"
+mode = "hiragana"
+expected = "はっとうしんのモデルたいけい"
+note = "第 28 回の追加"
+
+[[case]]
+input = "3頭身のキャラ"
+mode = "hiragana"
+expected = "さんとうしんのキャラ"
+note = "第 28 回の追加"
+
+[[case]]
+input = "1回表の攻撃"
+mode = "hiragana"
+expected = "いっかいおもてのこうげき"
+note = "第 28 回の追加"
+
+[[case]]
+input = "8回裏に逆転した"
+mode = "hiragana"
+expected = "はっかいうらにぎゃくてんした"
+note = "第 28 回の追加"
+
+[[case]]
+input = "10回分のポイント"
+mode = "hiragana"
+expected = "じゅっかいぶんのポイント"
+note = "第 28 回の追加"
+
+[[case]]
+input = "1回分をください"
+mode = "hiragana"
+expected = "いっかいぶんをください"
+note = "第 28 回の追加"
+
+[[case]]
+input = "3千円で買った"
+mode = "hiragana"
+expected = "さんぜんえんでかった"
+note = "第 28 回の追加"
+
+[[case]]
+input = "8千円の服"
+mode = "hiragana"
+expected = "はっせんえんのふく"
+note = "第 28 回の追加"
+
+[[case]]
+input = "1千円札を出す"
+mode = "hiragana"
+expected = "いっせんえんさつをだす"
+note = "第 28 回の追加"
+
+[[case]]
+input = "3千人が集まった"
+mode = "hiragana"
+expected = "さんぜんにんがあつまった"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "3千万円の借金"
+mode = "hiragana"
+expected = "さんぜんまんえんのしゃっきん"
+note = "第 28 回の追加"
+
+[[case]]
+input = "1千万円の宝くじ"
+mode = "hiragana"
+expected = "いっせんまんえんのたからくじ"
+note = "第 28 回の追加"
+
+[[case]]
+input = "3票差で敗れた"
+mode = "hiragana"
+expected = "さんぴょうさでやぶれた"
+note = "第 28 回の追加"
+
+[[case]]
+input = "3票入った"
+mode = "hiragana"
+expected = "さんぴょうはいった"
+note = "第 28 回の追加"
+
+[[case]]
+input = "3品の料理を頼む"
+mode = "hiragana"
+expected = "さんぴんのりょうりをたのむ"
+note = "第 28 回の追加"
+
+[[case]]
+input = "1品だけ追加する"
+mode = "hiragana"
+expected = "いっぴんだけついかする"
+note = "第 28 回の追加"
+
+[[case]]
+input = "10個入りのお菓子"
+mode = "hiragana"
+expected = "じゅっこいりのおかし"
+note = "第 28 回の追加"
+
+[[case]]
+input = "10個入のセット"
+mode = "hiragana"
+expected = "じゅっこいりのセット"
+note = "第 28 回の追加"
+
+[[case]]
+input = "3枚入の袋"
+mode = "hiragana"
+expected = "さんまいいりのふくろ"
+note = "第 28 回の追加"
+
+[[case]]
+input = "2ページ目を開く"
+mode = "hiragana"
+expected = "にぺーじめをひらく"
+note = "第 28 回の追加"
+
+[[case]]
+input = "1頁だけ読んだ"
+mode = "hiragana"
+expected = "いっぺーじだけよんだ"
+note = "第 28 回の追加"
+
+[[case]]
+input = "10頁の資料"
+mode = "hiragana"
+expected = "じゅっぺーじのしりょう"
+note = "第 28 回の追加"
+
+[[case]]
+input = "ベスト8強に残った"
+mode = "hiragana"
+expected = "ベストはっきょうにのこった"
+note = "第 28 回の追加"
+
+[[case]]
+input = "1強の状態が続く"
+mode = "hiragana"
+expected = "いっきょうのじょうたいがつづく"
+note = "第 28 回の追加"
+
+[[case]]
+input = "30強の得票だ"
+mode = "hiragana"
+expected = "さんじゅっきょうのとくひょうだ"
+note = "第 28 回の追加"
+
+[[case]]
+input = "強い風が吹く"
+mode = "hiragana"
+expected = "つよいかぜがふく"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "強く握りしめた"
+mode = "hiragana"
+expected = "つよくにぎりしめた"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "強引に進める"
+mode = "hiragana"
+expected = "ごういんにすすめる"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "3層構造になっている"
+mode = "hiragana"
+expected = "さんそうこうぞうになっている"
+note = "第 28 回の追加"
+
+[[case]]
+input = "1層目に入る"
+mode = "hiragana"
+expected = "いっそうめにはいる"
+note = "第 28 回の追加"
+
+[[case]]
+input = "4択の問題"
+mode = "hiragana"
+expected = "よんたくのもんだい"
+note = "第 28 回の追加"
+
+[[case]]
+input = "1択しかない"
+mode = "hiragana"
+expected = "いったくしかない"
+note = "第 28 回の追加"
+
+[[case]]
+input = "8択から選ぶ"
+mode = "hiragana"
+expected = "はったくからえらぶ"
+note = "第 28 回の追加"
+
+[[case]]
+input = "防御率0強すぎるw"
+mode = "hiragana"
+expected = "ぼうぎょりつぜろつよすぎるワラ"
+note = "第 28 回の追加"

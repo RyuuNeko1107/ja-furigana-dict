@@ -1,0 +1,213 @@
+# 2026-11-04 第 29 回 (助数詞の点検 その 2)。 前回の 400 種類に 6 / 100 を付けた読みと、 出現の少ない接尾語 400 種類に 1 / 3 / 6 / 8 / 10 を付けた読みを AI で判定した。
+# 報 (第1報 = だいいっぽう) / 株 / 席 / 冠 / 課 / 館 / 回転 / 等 / 元 (通貨) と、 数量 + 位 = くらい (3年位 / 100回位 / 10分位。 実コメント 135 行)。 6頭身 = ろくとうしん に戻した。
+# 円引き / 年越し / 年振り / 枚切り / 日付 は、 実際の文では正しく読めていた (2 字に切ったスキャンの副産物)。 投 (投稿) / 夜 (10/14夜ご飯) は衝突するので入れない。
+
+[[case]]
+input = "第1報が入りました"
+mode = "hiragana"
+expected = "だいいっぽうがはいりました"
+note = "第 29 回の追加"
+
+[[case]]
+input = "第3報をお待ちください"
+mode = "hiragana"
+expected = "だいさんぽうをおまちください"
+note = "第 29 回の追加"
+
+[[case]]
+input = "速報の第8報"
+mode = "hiragana"
+expected = "そくほうのだいはっぽう"
+note = "第 29 回の追加"
+
+[[case]]
+input = "第17報です"
+mode = "hiragana"
+expected = "だいじゅうななほうです"
+note = "第 29 回の追加"
+
+[[case]]
+input = "3株買った"
+mode = "hiragana"
+expected = "さんかぶかった"
+note = "第 29 回の追加"
+
+[[case]]
+input = "100株以上を持っている"
+mode = "hiragana"
+expected = "ひゃっかぶいじょうをもっている"
+note = "第 29 回の追加"
+
+[[case]]
+input = "2冠ならず"
+mode = "hiragana"
+expected = "にかんならず"
+note = "第 29 回の追加"
+
+[[case]]
+input = "8冠を達成した"
+mode = "hiragana"
+expected = "はっかんをたっせいした"
+note = "第 29 回の追加"
+
+[[case]]
+input = "14席くらいある"
+mode = "hiragana"
+expected = "じゅうよんせきくらいある"
+note = "第 29 回の追加"
+
+[[case]]
+input = "10席だけ空いている"
+mode = "hiragana"
+expected = "じゅっせきだけあいている"
+note = "第 29 回の追加"
+
+[[case]]
+input = "9課だった"
+mode = "hiragana"
+expected = "きゅうかだった"
+note = "第 29 回の追加"
+
+[[case]]
+input = "10課まである"
+mode = "hiragana"
+expected = "じゅっかまである"
+note = "第 29 回の追加"
+
+[[case]]
+input = "21館での拡大公開"
+mode = "hiragana"
+expected = "にじゅういっかんでのかくだいこうかい"
+note = "第 29 回の追加"
+
+[[case]]
+input = "11000回転まで回る"
+mode = "hiragana"
+expected = "いちまんせんかいてんまでまわる"
+note = "第 29 回の追加"
+
+[[case]]
+input = "6回転ジャンプを跳んだ"
+mode = "hiragana"
+expected = "ろっかいてんジャンプをとんだ"
+note = "第 29 回の追加"
+
+[[case]]
+input = "100回転しても酔わない"
+mode = "hiragana"
+expected = "ひゃっかいてんしてもよわない"
+note = "第 29 回の追加"
+
+[[case]]
+input = "5等賞をもらった"
+mode = "hiragana"
+expected = "ごとうしょうをもらった"
+note = "第 29 回の追加"
+
+[[case]]
+input = "1等が当たった"
+mode = "hiragana"
+expected = "いっとうがあたった"
+note = "第 29 回の追加"
+
+[[case]]
+input = "10等まである"
+mode = "hiragana"
+expected = "じゅっとうまである"
+note = "第 29 回の追加"
+
+[[case]]
+input = "12等分にする"
+mode = "hiragana"
+expected = "じゅうにとうぶんにする"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "8等身のモデル"
+mode = "hiragana"
+expected = "はちとうしんのモデル"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "179元で買った"
+mode = "hiragana"
+expected = "ひゃくななじゅうきゅうげんでかった"
+note = "第 29 回の追加"
+
+[[case]]
+input = "0元で参加できる"
+mode = "hiragana"
+expected = "ぜろげんでさんかできる"
+note = "第 29 回の追加"
+
+[[case]]
+input = "元日に初詣へ行く"
+mode = "hiragana"
+expected = "がんじつにはつもうでへいく"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "元気な声が届く"
+mode = "hiragana"
+expected = "げんきなこえがとどく"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "元に戻す"
+mode = "hiragana"
+expected = "もとにもどす"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "3年位過ぎて気づいた"
+mode = "hiragana"
+expected = "さんねんくらいすぎてきづいた"
+note = "第 29 回の追加"
+
+[[case]]
+input = "100回位バズりたい"
+mode = "hiragana"
+expected = "ひゃっかいくらいバズりたい"
+note = "第 29 回の追加"
+
+[[case]]
+input = "10分位待つ"
+mode = "hiragana"
+expected = "じゅっぷんくらいまつ"
+note = "第 29 回の追加"
+
+[[case]]
+input = "5人位集まった"
+mode = "hiragana"
+expected = "ごにんくらいあつまった"
+note = "第 29 回の追加"
+
+[[case]]
+input = "1万円位かかる"
+mode = "hiragana"
+expected = "いちまんえんくらいかかる"
+note = "第 29 回の追加"
+
+[[case]]
+input = "三位入賞した"
+mode = "hiragana"
+expected = "さんいにゅうしょうした"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "1位を取った"
+mode = "hiragana"
+expected = "いちいをとった"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "6頭身の体型"
+mode = "hiragana"
+expected = "ろくとうしんのたいけい"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "8頭身のモデル"
+mode = "hiragana"
+expected = "はっとうしんのモデル"
+note = "第 29 回の追加"
