@@ -1,0 +1,153 @@
+# 2026-11-04 第 31 回 (読みが割れやすい単漢字 約 50 字の実コメント 804 行を AI 判定。 指摘は 25 件 = 3%)。
+# CM = シーエム (数字なしの CM は実コメントで 833 件。 旧: センチメートル。 数字つきの 5cm は units.toml で センチメートル)。 連日家に / 後日家に = いえ。 お腹の中 = おなかのなか。
+# 判定者の指摘のうち、 311 (さんいちいち) / 固有名詞 / 文脈で割れるもの、 スキャンの副産物は入れなかった。 副作用: 172 cm (数字 + 空白 + cm) は シーエム になる (実コメントで約 76 行、 大半は英文)。
+
+[[case]]
+input = "CMが流れる"
+mode = "hiragana"
+expected = "シーエムがながれる"
+note = "第 31 回の追加"
+
+[[case]]
+input = "新CMが公開された"
+mode = "hiragana"
+expected = "しんシーエムがこうかいされた"
+note = "第 31 回の追加"
+
+[[case]]
+input = "CMだけ見たらギャグかと思った"
+mode = "hiragana"
+expected = "シーエムだけみたらギャグかとおもった"
+note = "第 31 回の追加"
+
+[[case]]
+input = "ムジュラのCMがこわすぎた"
+mode = "hiragana"
+expected = "ムジュラノシーエムがこわすぎた"
+note = "第 31 回の追加"
+
+[[case]]
+input = "5cmの長さ"
+mode = "hiragana"
+expected = "ゴセンチメートルのながさ"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "10CMほど離れる"
+mode = "hiragana"
+expected = "ジュウセンチメートルほどはなれる"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "cm単位で測る"
+mode = "hiragana"
+expected = "シーエムたんいではかる"
+note = "第 31 回の追加"
+
+[[case]]
+input = "お腹の中にいる"
+mode = "hiragana"
+expected = "おなかのなかにいる"
+note = "第 31 回の追加"
+
+[[case]]
+input = "お腹の中の赤ちゃん"
+mode = "hiragana"
+expected = "おなかのなかのあかちゃん"
+note = "第 31 回の追加"
+
+[[case]]
+input = "腹の中が真っ黒だ"
+mode = "hiragana"
+expected = "はらのうちがまっくろだ"
+note = "第 31 回の追加"
+
+[[case]]
+input = "ギリシャで羊41万頭を殺処分"
+mode = "hiragana"
+expected = "ギリシャでひつじよんじゅういちまんとうをさっしょぶん"
+note = "第 31 回の追加"
+
+[[case]]
+input = "今年の初め頃に始めた"
+mode = "hiragana"
+expected = "ことしのはじめごろにはじめた"
+note = "第 31 回の追加"
+
+[[case]]
+input = "月の終わり頃に届く"
+mode = "hiragana"
+expected = "つきのおわりごろにとどく"
+note = "第 31 回の追加"
+
+[[case]]
+input = "10時頃に行く"
+mode = "hiragana"
+expected = "じゅうじごろにいく"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "その頃は若かった"
+mode = "hiragana"
+expected = "そのころはわかかった"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "小狡く立ち回る"
+mode = "hiragana"
+expected = "こずるくたちまわる"
+note = "第 31 回の追加"
+
+[[case]]
+input = "連日家に手紙が届く"
+mode = "hiragana"
+expected = "れんじついえにてがみがとどく"
+note = "第 31 回の追加"
+
+[[case]]
+input = "後日家に届くらしい"
+mode = "hiragana"
+expected = "ごじついえにとどくらしい"
+note = "第 31 回の追加"
+
+[[case]]
+input = "3日家に籠もってしまった"
+mode = "hiragana"
+expected = "みっかいえにこもってしまった"
+note = "第 31 回の追加"
+
+[[case]]
+input = "1日家でゆっくりする"
+mode = "hiragana"
+expected = "いちにちいえでゆっくりする"
+note = "第 31 回の追加"
+
+[[case]]
+input = "親日家として知られる"
+mode = "hiragana"
+expected = "しんにちかとしてしられる"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "作家の話を聞く"
+mode = "hiragana"
+expected = "さっかのはなしをきく"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "専門家に相談する"
+mode = "hiragana"
+expected = "せんもんかにそうだんする"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "音楽家になりたい"
+mode = "hiragana"
+expected = "おんがくかになりたい"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "家に居るだけだった"
+mode = "hiragana"
+expected = "いえにいるだけだった"
+note = "守る: 周りの読みを変えない"

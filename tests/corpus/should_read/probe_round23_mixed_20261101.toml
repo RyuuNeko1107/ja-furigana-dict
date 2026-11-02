@@ -1,0 +1,191 @@
+# 2026-11-01 第 23 回 (実コメント / 国会 / livedoor の標本 3,500 文、 不一致 807 行)。
+# 判定者の主張を 独立 2 系統 (UniDic / Sudachi) と照合し、 実コメントで出ていた語だけを入れた。
+# 等々 (などなど/とうとう)・開ければ (あ/ひら)・傍に・人名の個別の読みは文脈で割れる/根拠不足のため入れない。
+
+[[case]]
+input = "最内枠はハイリスク"
+mode = "hiragana"
+expected = "さいうちわくはハイリスク"
+note = "最内=さいうち (競馬。 旧: さいない。 実コメント 15 行)"
+
+[[case]]
+input = "同じ様な感じ"
+mode = "hiragana"
+expected = "おなじようなかんじ"
+note = "同じ様な=おなじような (旧: おなじさまな。 実コメント 14 行)"
+
+[[case]]
+input = "同じ様に動く"
+mode = "hiragana"
+expected = "おなじようにうごく"
+note = "同じ様に=おなじように"
+
+[[case]]
+input = "弱ペダ見た"
+mode = "hiragana"
+expected = "よわぺだみた"
+note = "弱ペダ=よわぺだ (弱虫ペダル。 実コメント 5 行)"
+
+[[case]]
+input = "仕込み杖"
+mode = "hiragana"
+expected = "しこみづえ"
+note = "仕込み杖=しこみづえ (旧: しこみつえ。 実コメント 5 行)"
+
+[[case]]
+input = "葉焼け病"
+mode = "hiragana"
+expected = "はやけびょう"
+note = "葉焼け=はやけ (旧: ようやけ)"
+
+[[case]]
+input = "中低所得者層"
+mode = "hiragana"
+expected = "ちゅうていしょとくしゃそう"
+note = "中低所得者=ちゅうていしょとくしゃ (旧: なかてい)"
+
+[[case]]
+input = "取適法が施行"
+mode = "hiragana"
+expected = "とりてきほうがしこう"
+note = "取適法=とりてきほう (中小受託取引適正化法の通称。 旧: しゅてきほう)"
+
+[[case]]
+input = "店舗目標を立てる"
+mode = "hiragana"
+expected = "てんぽもくひょうをたてる"
+note = "守る: 店舗目標 (店舗目 の見出しは入れていない)"
+
+# ─── 第 24 回 (実コメント 2,200 / 国会 1,000 / livedoor 800 の標本、 不一致 866 行) ───
+# 判定者の主張を 2 系統と照合し、 実コメントで出ていた語だけ。 今週中・留まった・弾きます・描く・金4 は文脈で割れるので入れない。
+
+[[case]]
+input = "災難すぎる"
+mode = "hiragana"
+expected = "さいなんすぎる"
+note = "災難すぎる=さいなんすぎる (旧: さいむずかしすぎる。 実コメント 61 行)"
+
+[[case]]
+input = "災難すぎてごめん"
+mode = "hiragana"
+expected = "さいなんすぎてごめん"
+note = "災難すぎて"
+
+[[case]]
+input = "知らん間に商品が"
+mode = "hiragana"
+expected = "しらんまにしょうひんが"
+note = "知らん間=しらんま (旧: しらんあいだ。 実コメント 60 行)"
+
+[[case]]
+input = "NARUTO疾風伝"
+mode = "hiragana"
+expected = "ナルトしっぷうでん"
+note = "疾風伝=しっぷうでん (旧: はやてでん。 実コメント 9 行)"
+
+[[case]]
+input = "元気付けて"
+mode = "hiragana"
+expected = "げんきづけて"
+note = "元気付け=げんきづけ (旧: もときづけ。 実コメント 6 行)"
+
+[[case]]
+input = "災難に遭う"
+mode = "hiragana"
+expected = "さいなんにあう"
+note = "守る: 災難 単独"
+
+# ─── 活用形の づ (元気付ける / 習慣付ける。 語幹だけの見出しは効かないので活用形ごとに見出しを足した) ───
+
+[[case]]
+input = "元気付けようとしている"
+mode = "hiragana"
+expected = "げんきづけようとしている"
+note = "元気付けよう=げんきづけよう (旧: げんきつけよう)"
+
+[[case]]
+input = "みんなを元気付ける"
+mode = "hiragana"
+expected = "みんなをげんきづける"
+note = "元気付ける=げんきづける (旧: もときづける。 元 + 気付ける に割れていた)"
+
+[[case]]
+input = "習慣付けて"
+mode = "hiragana"
+expected = "しゅうかんづけて"
+note = "習慣付けて=しゅうかんづけて"
+
+[[case]]
+input = "気付いた"
+mode = "hiragana"
+expected = "きづいた"
+note = "守る: 気付く"
+
+[[case]]
+input = "勇気付ける"
+mode = "hiragana"
+expected = "ゆうきづける"
+note = "守る: 勇気付ける"
+
+[[case]]
+input = "元気だよ"
+mode = "hiragana"
+expected = "げんきだよ"
+note = "守る: 元気"
+
+# ─── 第 25 回 (CC-100 日本語の標本 3,000 文、 不一致 633 行) ───
+# 三大/四大/五大 = ダイ (規則)、 何か所 系 = なんかしょ (見出し)。 実コメントで出ていなかった語 (稼ぎ高 / ゼミ生 / 基金型 等) と、 強者 (つわもの/きょうしゃ) など文脈で割れる語は入れない。
+
+[[case]]
+input = "世界三大ジョン"
+mode = "hiragana"
+expected = "せかいさんだいジョン"
+note = "三大=さんだい (旧: さんおお。 実コメント 13 行)"
+
+[[case]]
+input = "日本三大RPG"
+mode = "hiragana"
+expected = "にほんさんだいアールピージー"
+note = "日本三大"
+
+[[case]]
+input = "世界三大ロー"
+mode = "hiragana"
+expected = "せかいさんだいロー"
+note = "世界三大"
+
+[[case]]
+input = "世界四大"
+mode = "hiragana"
+expected = "せかいよんだい"
+note = "四大 + ダイ"
+
+[[case]]
+input = "三大都市"
+mode = "hiragana"
+expected = "さんだいとし"
+note = "守る: 三大 + 漢字"
+
+[[case]]
+input = "五大陸"
+mode = "hiragana"
+expected = "ごたいりく"
+note = "守る: 五大陸"
+
+[[case]]
+input = "四大"
+mode = "hiragana"
+expected = "しだい"
+note = "守る: 四大 (単独)"
+
+[[case]]
+input = "何か所かで"
+mode = "hiragana"
+expected = "なんかしょかで"
+note = "何か所=なんかしょ (旧: なにかしょ)"
+
+[[case]]
+input = "何ヶ所"
+mode = "hiragana"
+expected = "なんかしょ"
+note = "何ヶ所=なんかしょ"

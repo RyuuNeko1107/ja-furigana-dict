@@ -1,0 +1,255 @@
+# 2026-11-03 第 27 回 (mC4 日本語の標本 3,000 文。 不一致 780 行 + VOICEVOX と一致した行の無作為 600 行を AI 判定)。
+# 例文は標本の文を写さず、 見出しの語を使って作った短文。 N 選 (実コメント 351 行) / この位 (129 行) / 木目 = もくめ (27 行) が実コメントで多かった。
+# 外面 / 歪み / 上方 / 何分 / 本皮 / 金回転 等の文脈で割れる語と、 人名・地名は入れなかった。
+
+[[case]]
+input = "これくらいの値段ならこの位でいい"
+mode = "hiragana"
+expected = "これくらいのねだんならこのくらいでいい"
+note = "第 27 回の追加"
+
+[[case]]
+input = "その位の量が欲しい"
+mode = "hiragana"
+expected = "そのくらいのりょうがほしい"
+note = "第 27 回の追加"
+
+[[case]]
+input = "あの位の高さから落ちた"
+mode = "hiragana"
+expected = "あのくらいのたかさからおちた"
+note = "第 27 回の追加"
+
+[[case]]
+input = "どの位かかるのか分からない"
+mode = "hiragana"
+expected = "どのくらいかかるのかわからない"
+note = "第 27 回の追加"
+
+[[case]]
+input = "百の位を四捨五入する"
+mode = "hiragana"
+expected = "ひゃくのくらいをししゃごにゅうする"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "三位入賞を果たした"
+mode = "hiragana"
+expected = "さんいにゅうしょうをはたした"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "何位だったか覚えていない"
+mode = "hiragana"
+expected = "なんいだったかおぼえていない"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "厳選8選を紹介します"
+mode = "hiragana"
+expected = "げんせんはっせんをしょうかいします"
+note = "第 27 回の追加"
+
+[[case]]
+input = "ベスト10選を発表"
+mode = "hiragana"
+expected = "ベストじゅっせんをはっぴょう"
+note = "第 27 回の追加"
+
+[[case]]
+input = "おすすめ3選はこちら"
+mode = "hiragana"
+expected = "おすすめさんせんはこちら"
+note = "第 27 回の追加"
+
+[[case]]
+input = "名曲1選だけ挙げるなら"
+mode = "hiragana"
+expected = "めいきょくいっせんだけあげるなら"
+note = "第 27 回の追加"
+
+[[case]]
+input = "6選のうち2つが当たり"
+mode = "hiragana"
+expected = "ろくせんのうちふたつがあたり"
+note = "第 27 回の追加"
+
+[[case]]
+input = "3選手が出場する"
+mode = "hiragana"
+expected = "さんせんしゅがしゅつじょうする"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "選手権で優勝した"
+mode = "hiragana"
+expected = "せんしゅけんでゆうしょうした"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "当選確率は低い"
+mode = "hiragana"
+expected = "とうせんかくりつはひくい"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "審査上の問題はない"
+mode = "hiragana"
+expected = "しんさじょうのもんだいはない"
+note = "第 27 回の追加"
+
+[[case]]
+input = "強度上の理由で却下された"
+mode = "hiragana"
+expected = "きょうどじょうのりゆうできゃっかされた"
+note = "第 27 回の追加"
+
+[[case]]
+input = "設計上の都合である"
+mode = "hiragana"
+expected = "せっけいじょうのつごうである"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "堕ろすという言葉は重い"
+mode = "hiragana"
+expected = "おろすということばはおもい"
+note = "第 27 回の追加"
+
+[[case]]
+input = "ギターが弾きやすい"
+mode = "hiragana"
+expected = "ギターがひきやすい"
+note = "第 27 回の追加"
+
+[[case]]
+input = "弾きやすさで選んだ"
+mode = "hiragana"
+expected = "ひきやすさでえらんだ"
+note = "第 27 回の追加"
+
+[[case]]
+input = "ハメ撮りという言葉"
+mode = "hiragana"
+expected = "はめどりということば"
+note = "第 27 回の追加"
+
+[[case]]
+input = "擦ろうとして手を伸ばした"
+mode = "hiragana"
+expected = "こすろうとしててをのばした"
+note = "第 27 回の追加"
+
+[[case]]
+input = "アクリル板で囲う"
+mode = "hiragana"
+expected = "あくりるばんでかこう"
+note = "第 27 回の追加"
+
+[[case]]
+input = "空室が目立つ街だ"
+mode = "hiragana"
+expected = "くうしつがめだつまちだ"
+note = "第 27 回の追加"
+
+[[case]]
+input = "竹酢液を薄めて使う"
+mode = "hiragana"
+expected = "ちくさくえきをうすめてつかう"
+note = "第 27 回の追加"
+
+[[case]]
+input = "津波石が残っている"
+mode = "hiragana"
+expected = "つなみいしがのこっている"
+note = "第 27 回の追加"
+
+[[case]]
+input = "売切御免の札を出した"
+mode = "hiragana"
+expected = "うりきれごめんのさつをだした"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "木目調のテーブルを買った"
+mode = "hiragana"
+expected = "もくめちょうのテーブルをかった"
+note = "第 27 回の追加"
+
+[[case]]
+input = "机の木目を眺めていた"
+mode = "hiragana"
+expected = "つくえのもくめをながめていた"
+note = "第 27 回の追加"
+
+[[case]]
+input = "木目込み人形を飾る"
+mode = "hiragana"
+expected = "きめこみにんぎょうをかざる"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "木目が細かい肌"
+mode = "hiragana"
+expected = "もくめがこまかいはだ"
+note = "第 27 回の追加"
+
+[[case]]
+input = "尚良い結果になった"
+mode = "hiragana"
+expected = "なおよいけっかになった"
+note = "第 27 回の追加"
+
+[[case]]
+input = "茶巾寿司を作った"
+mode = "hiragana"
+expected = "ちゃきんずしをつくった"
+note = "第 27 回の追加"
+
+[[case]]
+input = "経験話を聞かせてほしい"
+mode = "hiragana"
+expected = "けいけんばなしをきかせてほしい"
+note = "第 27 回の追加"
+
+[[case]]
+input = "猫撫声で甘えてくる"
+mode = "hiragana"
+expected = "ねこなでごえであまえてくる"
+note = "第 27 回の追加"
+
+[[case]]
+input = "風合いの良い生地"
+mode = "hiragana"
+expected = "ふうあいのよいきじ"
+note = "第 27 回の追加"
+
+[[case]]
+input = "前傾姿勢で漕ぐ"
+mode = "hiragana"
+expected = "ぜんけいしせいでこぐ"
+note = "第 27 回の追加"
+
+[[case]]
+input = "要諦を押さえる"
+mode = "hiragana"
+expected = "ようていをおさえる"
+note = "第 27 回の追加"
+
+[[case]]
+input = "彼には一目置かれている"
+mode = "hiragana"
+expected = "かれにはいちもくおかれている"
+note = "第 27 回の追加"
+
+[[case]]
+input = "一目惚れだった"
+mode = "hiragana"
+expected = "ひとめぼれだった"
+note = "守る: 周りの読みを変えない"
+
+[[case]]
+input = "一目見て気に入った"
+mode = "hiragana"
+expected = "ひとめみてきにいった"
+note = "守る: 周りの読みを変えない"

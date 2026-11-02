@@ -12296,12 +12296,13 @@ reading = "ヒトフシ"
 sense = "one-phrase-of-song"
 weight = 35
 
+# ★2026-11-03 第 27 回: 実コメントの 木目 は全て もくめ (木の木目 / 机の木目。 約 27 行)。 肌の きめ は 木目細かい 等の見出しで守る
 [entries."木目"]
-reading = "キメ"
+reading = "モクメ"
 
 [[entries."木目".alt]]
-reading = "モクメ"
-sense = "wood-grain"
+reading = "キメ"
+sense = "skin-texture"
 weight = 35
 
 [entries."長者"]
