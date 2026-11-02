@@ -1440,6 +1440,11 @@ sokuonize = true
 default = "テンポ"
 kanji_numeral = false
 
+[[counter."店舗".rules]]
+last_digit = [1, 8, 0]
+suffix = "テンポ"
+sokuonize = true
+
 # ★2026-10-18 世帯: 十世帯 = じゅっせたい / 1世帯 = いっせたい (それまで じゅっせいたい)
 [counter."世帯"]
 default = "セタイ"
