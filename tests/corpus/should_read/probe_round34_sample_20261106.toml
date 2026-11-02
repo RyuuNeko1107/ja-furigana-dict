@@ -1,0 +1,49 @@
+# 2026-11-06 第 34 回 (実コメント無作為 400 行を AI のみで判定)。 辞書で直せた 6 語。 4条 (よじょう) / 店舗目 / 2.3秒 は保留。
+
+[[case]]
+input = "裏面の画像つくってくれた"
+mode = "hiragana"
+expected = "うらめんのがぞうつくってくれた"
+note = "第 34 回"
+
+[[case]]
+input = "切り取り線の裏面を見る"
+mode = "hiragana"
+expected = "きりとりせんのうらめんをみる"
+note = "第 34 回"
+
+[[case]]
+input = "吐いたときの腹圧で出血"
+mode = "hiragana"
+expected = "はいたときのふくあつでしゅっけつ"
+note = "第 34 回"
+
+[[case]]
+input = "はい、と素直に言える高虎の良さ"
+mode = "hiragana"
+expected = "はい、とすなおにいえるたかとらのよさ"
+note = "第 34 回"
+
+[[case]]
+input = "藤堂高虎"
+mode = "hiragana"
+expected = "とうどうたかとら"
+note = "第 34 回"
+
+[[case]]
+input = "佐為ロス"
+mode = "hiragana"
+expected = "さいロス"
+note = "第 34 回"
+
+[[case]]
+input = "同人工房さんが配送もやってくれる"
+mode = "hiragana"
+expected = "どうじんこうぼうさんがはいそうもやってくれる"
+note = "第 34 回"
+
+[[case]]
+input = "憂鬱な仕事日だ"
+mode = "hiragana"
+expected = "ゆううつなしごとびだ"
+note = "第 34 回"

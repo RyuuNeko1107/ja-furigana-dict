@@ -5134,7 +5134,7 @@ note = "旧 てんじょうり"
 [[case]]
 input = "裏面に記載"
 mode = "hiragana"
-expected = "りめんにきさい"
+expected = "うらめんにきさい"
 
 [[case]]
 input = "握り寿司を食べる"
