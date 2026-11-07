@@ -1,0 +1,37 @@
+# 第 47 回 (円な瞳/神経根/羽子板市/大うつ病/雄雌/細美武士)
+
+[[case]]
+input = "円な瞳を好奇心でいっぱいにして"
+mode = "hiragana"
+expected = "つぶらなひとみをこうきしんでいっぱいにして"
+note = "第 47 回"
+
+[[case]]
+input = "脊髄神経根ヘルニア"
+mode = "hiragana"
+expected = "せきずいしんけいこんヘルニア"
+note = "第 47 回"
+
+[[case]]
+input = "羽子板市が歳末に立つ"
+mode = "hiragana"
+expected = "はごいたいちがさいまつにたつ"
+note = "第 47 回"
+
+[[case]]
+input = "大うつ病の遷延化も"
+mode = "hiragana"
+expected = "だいうつびょうのせんえんかも"
+note = "第 47 回"
+
+[[case]]
+input = "雄雌ともにいずれの投与群"
+mode = "hiragana"
+expected = "おすめすともにいずれのとうよぐん"
+note = "第 47 回"
+
+[[case]]
+input = "ボーカルの細美武士が担当"
+mode = "hiragana"
+expected = "ボーカルのほそみたけしがたんとう"
+note = "第 47 回"
