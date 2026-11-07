@@ -1,0 +1,37 @@
+# 第 45 回 (釣行/三つ折/発毛/十日町雪まつり/金戒光明寺/金蛇精)
+
+[[case]]
+input = "十日町雪まつりに行く"
+mode = "hiragana"
+expected = "とおかまちゆきまつりにいく"
+note = "第 45 回"
+
+[[case]]
+input = "金戒光明寺は京都市左京区"
+mode = "hiragana"
+expected = "こんかいこうみょうじはきょうとしさきょうく"
+note = "第 45 回"
+
+[[case]]
+input = "金蛇精は糖衣錠"
+mode = "hiragana"
+expected = "きんじゃせいはとういじょう"
+note = "第 45 回"
+
+[[case]]
+input = "発毛サプリメント"
+mode = "hiragana"
+expected = "はつもうサプリメント"
+note = "第 45 回"
+
+[[case]]
+input = "オフショア釣行へ行く"
+mode = "hiragana"
+expected = "オフショアちょうこうへいく"
+note = "第 45 回"
+
+[[case]]
+input = "三つ折財布を買う"
+mode = "hiragana"
+expected = "みつおりさいふをかう"
+note = "第 45 回"
