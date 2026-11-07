@@ -1,0 +1,37 @@
+# 第 46 回 (中抜し/中抜業者/旧朝香宮邸/中ジョッキ)
+
+[[case]]
+input = "団体が中抜して儲ける"
+mode = "hiragana"
+expected = "だんたいがなかぬきしてもうける"
+note = "第 46 回"
+
+[[case]]
+input = "中抜されている"
+mode = "hiragana"
+expected = "なかぬきされている"
+note = "第 46 回"
+
+[[case]]
+input = "中抜企業が潤う"
+mode = "hiragana"
+expected = "なかぬききぎょうがうるおう"
+note = "第 46 回"
+
+[[case]]
+input = "中抜業者を排除"
+mode = "hiragana"
+expected = "なかぬきぎょうしゃをはいじょ"
+note = "第 46 回"
+
+[[case]]
+input = "旧朝香宮邸だから気づく"
+mode = "hiragana"
+expected = "きゅうあさかのみやていだからきづく"
+note = "第 46 回"
+
+[[case]]
+input = "中ジョッキ二杯"
+mode = "hiragana"
+expected = "ちゅうじょっきにはい"
+note = "第 46 回"
