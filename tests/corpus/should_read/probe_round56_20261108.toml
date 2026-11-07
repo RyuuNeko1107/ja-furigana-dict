@@ -1,0 +1,37 @@
+# 第 56 回 (神威・揉み心地・水張り・神鷹・冲鷹)
+
+[[case]]
+input = "銀魂の神威が登場する。"
+mode = "hiragana"
+expected = "ぎんたまのかむいがとうじょうする。"
+note = "第 56 回"
+
+[[case]]
+input = "ケーキの揉み心地がふわやわだ。"
+mode = "hiragana"
+expected = "ケーキのもみごこちがふわやわだ。"
+note = "第 56 回"
+
+[[case]]
+input = "水張りとドーサ引きをしています。"
+mode = "hiragana"
+expected = "みずはりとドーサびきをしています。"
+note = "第 56 回"
+
+[[case]]
+input = "空母神鷹が出撃した。"
+mode = "hiragana"
+expected = "くうぼしんようがしゅつげきした。"
+note = "第 56 回"
+
+[[case]]
+input = "空母冲鷹が沈没した。"
+mode = "hiragana"
+expected = "くうぼちゅうようがちんぼつした。"
+note = "第 56 回"
+
+[[case]]
+input = "積丹半島の神威岬に行った。"
+mode = "hiragana"
+expected = "しゃこたんはんとうのかもいみさきにいった。"
+note = "第 56 回"
