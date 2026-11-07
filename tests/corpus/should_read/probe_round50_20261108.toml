@@ -1,0 +1,19 @@
+# 第 50 回 (泉口友汰/何勝/八宝斉)
+
+[[case]]
+input = "泉口友汰の走者一掃打"
+mode = "hiragana"
+expected = "いずみぐちゆうたのそうしゃいっそうだ"
+note = "第 50 回"
+
+[[case]]
+input = "何勝何敗か分からない"
+mode = "hiragana"
+expected = "なんしょうなんぱいかわからない"
+note = "第 50 回"
+
+[[case]]
+input = "らんまで八宝斉"
+mode = "hiragana"
+expected = "らんまではっぽうさい"
+note = "第 50 回"
