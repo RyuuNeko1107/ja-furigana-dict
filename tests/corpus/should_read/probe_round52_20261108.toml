@@ -1,0 +1,19 @@
+# 第 52 回 (義父母・鳶職人・極少数)
+
+[[case]]
+input = "義父母と同居することになった。"
+mode = "hiragana"
+expected = "ぎふぼとどうきょすることになった。"
+note = "第 52 回"
+
+[[case]]
+input = "父は鳶職人として働いている。"
+mode = "hiragana"
+expected = "ちちはとびしょくにんとしてはたらいている。"
+note = "第 52 回"
+
+[[case]]
+input = "アクキーが極少数残っています。"
+mode = "hiragana"
+expected = "アクキーがごくしょうすうのこっています。"
+note = "第 52 回"
