@@ -1,0 +1,37 @@
+# 第 51 回 (毛母細胞・釣師・昼食付・勝ち時計・黄肉種・友達の分)
+
+[[case]]
+input = "毛を生み出す毛母細胞が活発になる。"
+mode = "hiragana"
+expected = "けをうみだすもうぼさいぼうがかっぱつになる。"
+note = "第 51 回"
+
+[[case]]
+input = "熱心な釣師が川辺に並ぶ。"
+mode = "hiragana"
+expected = "ねっしんなつりしがかわべにならぶ。"
+note = "第 51 回"
+
+[[case]]
+input = "昼食付入浴券をもらった。"
+mode = "hiragana"
+expected = "ちゅうしょくつきにゅうよくけんをもらった。"
+note = "第 51 回"
+
+[[case]]
+input = "このレースの勝ち時計は速かった。"
+mode = "hiragana"
+expected = "このレースのかちどけいははやかった。"
+note = "第 51 回"
+
+[[case]]
+input = "黄肉種のメロンを育てる。"
+mode = "hiragana"
+expected = "おうにくしゅのメロンをそだてる。"
+note = "第 51 回"
+
+[[case]]
+input = "お友達の分と自分の分を買った。"
+mode = "hiragana"
+expected = "おともだちのぶんとじぶんのぶんをかった。"
+note = "第 51 回"
