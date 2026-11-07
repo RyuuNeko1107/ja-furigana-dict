@@ -1,0 +1,25 @@
+# 第 55 回 (白銅貨・南薩鉄道・上方浮世絵・切粉)
+
+[[case]]
+input = "白銅貨を作りたいと思った。"
+mode = "hiragana"
+expected = "はくどうかをつくりたいとおもった。"
+note = "第 55 回"
+
+[[case]]
+input = "南薩鉄道が接続していた。"
+mode = "hiragana"
+expected = "なんさつてつどうがせつぞくしていた。"
+note = "第 55 回"
+
+[[case]]
+input = "上方浮世絵も見ることができます。"
+mode = "hiragana"
+expected = "かみがたうきよえもみることができます。"
+note = "第 55 回"
+
+[[case]]
+input = "切粉排出性を実現しました。"
+mode = "hiragana"
+expected = "きりこはいしゅつせいをじつげんしました。"
+note = "第 55 回"
