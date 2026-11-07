@@ -1,0 +1,37 @@
+# 第 49 回 (春夏コーデ/春夏展示/赤核/七宝町/金・プラチナ/米行政)
+
+[[case]]
+input = "春夏コーデに絶対必須"
+mode = "hiragana"
+expected = "しゅんかこーでにぜったいひっす"
+note = "第 49 回"
+
+[[case]]
+input = "来季春夏展示会"
+mode = "hiragana"
+expected = "らいきしゅんかてんじかい"
+note = "第 49 回"
+
+[[case]]
+input = "赤核は中脳にある"
+mode = "hiragana"
+expected = "せっかくはちゅうのうにある"
+note = "第 49 回"
+
+[[case]]
+input = "七宝町で引越し"
+mode = "hiragana"
+expected = "しっぽうちょうでひっこし"
+note = "第 49 回"
+
+[[case]]
+input = "金・プラチナ製品を買取"
+mode = "hiragana"
+expected = "きん・ぷらちなせいひんをかいとり"
+note = "第 49 回"
+
+[[case]]
+input = "米行政部は北朝鮮に向けて"
+mode = "hiragana"
+expected = "べいぎょうせいぶはきたちょうせんにむけて"
+note = "第 49 回"
