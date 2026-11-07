@@ -1,0 +1,19 @@
+# 第 38 回 (性に合い/合わなかった(しょう)、 米沢蓮)
+
+[[case]]
+input = "わたしの性に合いすぎてる"
+mode = "hiragana"
+expected = "わたしのしょうにあいすぎてる"
+note = "第 38 回"
+
+[[case]]
+input = "思ったより性に合わなかった"
+mode = "hiragana"
+expected = "おもったよりしょうにあわなかった"
+note = "第 38 回"
+
+[[case]]
+input = "米澤蓮もV争いへ"
+mode = "hiragana"
+expected = "よねざわれんもVあらそいへ"
+note = "第 38 回"
