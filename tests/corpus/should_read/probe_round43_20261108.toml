@@ -1,0 +1,67 @@
+# 第 43 回 (たい焼/三玖/種盛り/上面+助詞/抗仏)
+
+[[case]]
+input = "薄皮たい焼の銀のあん"
+mode = "hiragana"
+expected = "うすかわたいやきのぎんのあん"
+note = "第 43 回"
+
+[[case]]
+input = "偽五月が三玖だと判明"
+mode = "hiragana"
+expected = "にせごがつがみくだとはんめい"
+note = "第 43 回"
+
+[[case]]
+input = "2種盛り＋選べる"
+mode = "hiragana"
+expected = "にしゅもりぷらすえらべる"
+note = "第 43 回"
+
+[[case]]
+input = "上面と側面が重なる"
+mode = "hiragana"
+expected = "じょうめんとそくめんがかさなる"
+note = "第 43 回"
+
+[[case]]
+input = "上面も熱い"
+mode = "hiragana"
+expected = "じょうめんもあつい"
+note = "第 43 回"
+
+[[case]]
+input = "上面が平らだ"
+mode = "hiragana"
+expected = "じょうめんがたいらだ"
+note = "第 43 回"
+
+[[case]]
+input = "上面を拭く"
+mode = "hiragana"
+expected = "じょうめんをふく"
+note = "第 43 回"
+
+[[case]]
+input = "上面は灰色"
+mode = "hiragana"
+expected = "じょうめんははいいろ"
+note = "第 43 回"
+
+[[case]]
+input = "上面のシール"
+mode = "hiragana"
+expected = "じょうめんのシール"
+note = "第 43 回"
+
+[[case]]
+input = "上面緑の理屈"
+mode = "hiragana"
+expected = "じょうめんみどりのりくつ"
+note = "第 43 回"
+
+[[case]]
+input = "抗仏戦争に打ち勝ち"
+mode = "hiragana"
+expected = "こうふつせんそうにうちかち"
+note = "第 43 回"
