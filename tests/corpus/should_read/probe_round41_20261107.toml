@@ -1,0 +1,25 @@
+# 第 41 回 (頭蓋底/盛皿/糸魚沢/つわり中)
+
+[[case]]
+input = "頭蓋底外科以外にも"
+mode = "hiragana"
+expected = "ずがいていげかいがいにも"
+note = "第 41 回"
+
+[[case]]
+input = "盛皿としてはもちろん"
+mode = "hiragana"
+expected = "もりざらとしてはもちろん"
+note = "第 41 回"
+
+[[case]]
+input = "糸魚沢駅の賃貸物件"
+mode = "hiragana"
+expected = "いといざわえきのちんたいぶっけん"
+note = "第 41 回"
+
+[[case]]
+input = "つわり中に荒れがちなお肌"
+mode = "hiragana"
+expected = "つわりちゅうにあれがちなおはだ"
+note = "第 41 回"
