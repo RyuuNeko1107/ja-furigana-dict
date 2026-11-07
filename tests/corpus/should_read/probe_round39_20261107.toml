@@ -1,0 +1,55 @@
+# 第 39 回 (天然木/名取り/唐木三大銘木/小幅高/開庁日/しじら織/婚活会/開咬/付キャスター)
+
+[[case]]
+input = "天然木の黒柿を使用し"
+mode = "hiragana"
+expected = "てんねんぼくのくろがきをしようし"
+note = "第 39 回"
+
+[[case]]
+input = "名取りになってしまった"
+mode = "hiragana"
+expected = "なとりになってしまった"
+note = "第 39 回"
+
+[[case]]
+input = "唐木三大銘木のひとつ"
+mode = "hiragana"
+expected = "からきさんだいめいぼくのひとつ"
+note = "第 39 回"
+
+[[case]]
+input = "小幅高で寄り付く"
+mode = "hiragana"
+expected = "こはばだかでよりつく"
+note = "第 39 回"
+
+[[case]]
+input = "入札開始２開庁日前までに"
+mode = "hiragana"
+expected = "にゅうさつかいしにかいちょうびまえまでに"
+note = "第 39 回"
+
+[[case]]
+input = "しじら織の浴衣"
+mode = "hiragana"
+expected = "しじらおりのゆかた"
+note = "第 39 回"
+
+[[case]]
+input = "婚活会はあっても"
+mode = "hiragana"
+expected = "こんかつかいはあっても"
+note = "第 39 回"
+
+[[case]]
+input = "開咬になりやすくなります"
+mode = "hiragana"
+expected = "かいこうになりやすくなります"
+note = "第 39 回"
+
+[[case]]
+input = "ストッパー付キャスターで"
+mode = "hiragana"
+expected = "ストッパーつききゃすたーで"
+note = "第 39 回"
