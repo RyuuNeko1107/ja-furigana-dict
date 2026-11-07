@@ -1,0 +1,31 @@
+# 第 53 回 (術前・出がち・双六型・小平浪平)
+
+[[case]]
+input = "術前検査と治療計画を立てる。"
+mode = "hiragana"
+expected = "じゅつぜんけんさとちりょうけいかくをたてる。"
+note = "第 53 回"
+
+[[case]]
+input = "手術前の検査をする。"
+mode = "hiragana"
+expected = "しゅじゅつまえのけんさをする。"
+note = "第 53 回"
+
+[[case]]
+input = "自分探しの旅に出がちです。"
+mode = "hiragana"
+expected = "じぶんさがしのたびにでがちです。"
+note = "第 53 回"
+
+[[case]]
+input = "娘がコマとなる双六型の対戦ボードゲーム。"
+mode = "hiragana"
+expected = "むすめがコマとなるすごろくがたのたいせんボードゲーム。"
+note = "第 53 回"
+
+[[case]]
+input = "創業者の小平浪平は訓示をした。"
+mode = "hiragana"
+expected = "そうぎょうしゃのこだいらなみへいはくんじをした。"
+note = "第 53 回"
