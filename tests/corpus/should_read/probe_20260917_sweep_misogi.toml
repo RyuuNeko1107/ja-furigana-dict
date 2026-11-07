@@ -316,7 +316,7 @@ expected = "たすけてすわの"
 [[case]]
 input = "已む無し"
 mode = "hiragana"
-expected = "いむなし"
+expected = "やむなし"
 
 [[case]]
 input = "背鰭"

@@ -1,0 +1,25 @@
+# 第 37 回 (mC4 400 文: 已む無く ほか)
+
+[[case]]
+input = "已む無く中止した"
+mode = "hiragana"
+expected = "やむなくちゅうしした"
+note = "第 37 回"
+
+[[case]]
+input = "已むを得ず断った"
+mode = "hiragana"
+expected = "やむをえずことわった"
+note = "第 37 回"
+
+[[case]]
+input = "已むを得ない"
+mode = "hiragana"
+expected = "やむをえない"
+note = "第 37 回"
+
+[[case]]
+input = "已む無しだ"
+mode = "hiragana"
+expected = "やむなしだ"
+note = "第 37 回"
