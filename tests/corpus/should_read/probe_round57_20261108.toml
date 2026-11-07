@@ -1,0 +1,37 @@
+# 第 57 回 (美白化粧品・極少・魔人達・既発曲・止め輪・嶺北)
+
+[[case]]
+input = "美白化粧品を愛用している。"
+mode = "hiragana"
+expected = "びはくけしょうひんをあいようしている。"
+note = "第 57 回"
+
+[[case]]
+input = "極少収益を積み重ねていく。"
+mode = "hiragana"
+expected = "ごくしょうしゅうえきをつみかさねていく。"
+note = "第 57 回"
+
+[[case]]
+input = "魔人達に直接仕える将軍。"
+mode = "hiragana"
+expected = "まじんたちにちょくせつつかえるしょうぐん。"
+note = "第 57 回"
+
+[[case]]
+input = "既発曲と新曲を合わせた計六曲。"
+mode = "hiragana"
+expected = "きはつきょくとしんきょくをあわせたけいろっきょく。"
+note = "第 57 回"
+
+[[case]]
+input = "ピストンの止め輪を外す。"
+mode = "hiragana"
+expected = "ピストンのとめわをはずす。"
+note = "第 57 回"
+
+[[case]]
+input = "福井嶺北の布村さん。"
+mode = "hiragana"
+expected = "ふくいれいほくのぬのむらさん。"
+note = "第 57 回"
