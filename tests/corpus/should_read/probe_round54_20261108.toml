@@ -1,0 +1,31 @@
+# 第 54 回 (革盾・二口・願わくば・罪木)
+
+[[case]]
+input = "革盾のほうが強いぞ。"
+mode = "hiragana"
+expected = "かわたてのほうがつよいぞ。"
+note = "第 54 回"
+
+[[case]]
+input = "ケーキを二口で食べた。"
+mode = "hiragana"
+expected = "ケーキをふたくちでたべた。"
+note = "第 54 回"
+
+[[case]]
+input = "願わくばその内ハマってくれ。"
+mode = "hiragana"
+expected = "ねがわくばそのうちハマってくれ。"
+note = "第 54 回"
+
+[[case]]
+input = "願わくは平和であれ。"
+mode = "hiragana"
+expected = "ねがわくはへいわであれ。"
+note = "第 54 回"
+
+[[case]]
+input = "罪木が感染したのは先週だ。"
+mode = "hiragana"
+expected = "つみきがかんせんしたのはせんしゅうだ。"
+note = "第 54 回"
