@@ -1,0 +1,37 @@
+# 第 42 回 (描い系の既定を かい に (実コメント8,500行))
+
+[[case]]
+input = "誰か、描いて"
+mode = "hiragana"
+expected = "だれか、かいて"
+note = "第 42 回"
+
+[[case]]
+input = "今描いてるのロストビオラより"
+mode = "hiragana"
+expected = "いまかいてるのロストビオラより"
+note = "第 42 回"
+
+[[case]]
+input = "何回描いても横顔が難しい"
+mode = "hiragana"
+expected = "なんかいかいてもよこがおがむずかしい"
+note = "第 42 回"
+
+[[case]]
+input = "夢を描いて生きていく"
+mode = "hiragana"
+expected = "ゆめをえがいていきていく"
+note = "第 42 回"
+
+[[case]]
+input = "人には余る力として描いてるのが独特"
+mode = "hiragana"
+expected = "ひとにはあまるちからとしてえがいてるのがどくとく"
+note = "第 42 回"
+
+[[case]]
+input = "愛と対話の話を描いてくれて最高"
+mode = "hiragana"
+expected = "あいとたいわのはなしをえがいてくれてさいこう"
+note = "第 42 回"
