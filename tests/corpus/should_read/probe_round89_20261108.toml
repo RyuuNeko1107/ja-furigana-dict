@@ -1,0 +1,25 @@
+# 第 89 回 (爆安・吉笑・房綱・走井橋)
+
+[[case]]
+input = "爆安価格で提供する。"
+mode = "hiragana"
+expected = "ばくやすかかくでていきょうする。"
+note = "第 89 回"
+
+[[case]]
+input = "兄弟子の吉笑さんと同居する。"
+mode = "hiragana"
+expected = "あにでしのきっしょうさんとどうきょする。"
+note = "第 89 回"
+
+[[case]]
+input = "佐野房綱を名乗った。"
+mode = "hiragana"
+expected = "さのふさつなをなのった。"
+note = "第 89 回"
+
+[[case]]
+input = "日吉大社の走井橋の下河原。"
+mode = "hiragana"
+expected = "ひよしたいしゃのはしりいばしのしもがわら。"
+note = "第 89 回"
