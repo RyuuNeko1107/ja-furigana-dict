@@ -1,0 +1,43 @@
+# 第 69 回 (一塊・幅木・前四半期・疑似餌・透湿性・蒸気風呂・流経大)
+
+[[case]]
+input = "寮の食堂では一塊になって観ていた。"
+mode = "hiragana"
+expected = "りょうのしょくどうではひとかたまりになってみていた。"
+note = "第 69 回"
+
+[[case]]
+input = "窓枠や幅木など未塗装の壁。"
+mode = "hiragana"
+expected = "まどわくやはばきなどみとそうのかべ。"
+note = "第 69 回"
+
+[[case]]
+input = "前四半期からほぼ横ばいだ。"
+mode = "hiragana"
+expected = "ぜんしはんきからほぼよこばいだ。"
+note = "第 69 回"
+
+[[case]]
+input = "疑似餌はリアルなものを選ぶ。"
+mode = "hiragana"
+expected = "ぎじえはリアルなものをえらぶ。"
+note = "第 69 回"
+
+[[case]]
+input = "透湿性による返品が多い。"
+mode = "hiragana"
+expected = "とうしつせいによるへんぴんがおおい。"
+note = "第 69 回"
+
+[[case]]
+input = "蒸気風呂とマッサージを提供する。"
+mode = "hiragana"
+expected = "じょうきぶろとマッサージをていきょうする。"
+note = "第 69 回"
+
+[[case]]
+input = "流経大にボールを回される。"
+mode = "hiragana"
+expected = "りゅうけいだいにボールをまわされる。"
+note = "第 69 回"
