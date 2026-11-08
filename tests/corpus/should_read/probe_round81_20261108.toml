@@ -1,0 +1,49 @@
+# 第 81 回 (先物安・原油安・段葛・半田口駅・貸渡し・社前抗議・用尺・駅二市場)
+
+[[case]]
+input = "原油先物安が嫌気された。"
+mode = "hiragana"
+expected = "げんゆさきものやすがいやけされた。"
+note = "第 81 回"
+
+[[case]]
+input = "原油安に伴い採算が悪化する。"
+mode = "hiragana"
+expected = "げんゆやすにともないさいさんがあっかする。"
+note = "第 81 回"
+
+[[case]]
+input = "鎌倉の段葛を歩く。"
+mode = "hiragana"
+expected = "かまくらのだんかずらをあるく。"
+note = "第 81 回"
+
+[[case]]
+input = "愛知県の半田口駅の求人。"
+mode = "hiragana"
+expected = "あいちけんのはんだぐちえきのきゅうじん。"
+note = "第 81 回"
+
+[[case]]
+input = "他社による貸渡しを含みます。"
+mode = "hiragana"
+expected = "たしゃによるかしわたしをふくみます。"
+note = "第 81 回"
+
+[[case]]
+input = "社前抗議が行われた。"
+mode = "hiragana"
+expected = "しゃぜんこうぎがおこなわれた。"
+note = "第 81 回"
+
+[[case]]
+input = "名古屋の用尺らしく長さも充分だ。"
+mode = "hiragana"
+expected = "なごやのようじゃくらしくながさもじゅうぶんだ。"
+note = "第 81 回"
+
+[[case]]
+input = "函館朝市の駅二市場でいか釣りをする。"
+mode = "hiragana"
+expected = "はこだてあさいちのえきにいちばでいかつりをする。"
+note = "第 81 回"
