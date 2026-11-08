@@ -1,0 +1,31 @@
+# 第 95 回 (保湿し・丸広・遠赤・完工高・牧駅)
+
+[[case]]
+input = "さらに保湿してくれる。"
+mode = "hiragana"
+expected = "さらにほしつしてくれる。"
+note = "第 95 回"
+
+[[case]]
+input = "丸広百貨店川越店に行く。"
+mode = "hiragana"
+expected = "まるひろひゃっかてんかわごえてんにいく。"
+note = "第 95 回"
+
+[[case]]
+input = "遠赤電気ストーブを使う。"
+mode = "hiragana"
+expected = "えんせきでんきストーブをつかう。"
+note = "第 95 回"
+
+[[case]]
+input = "完工高が増加し利益率も改善した。"
+mode = "hiragana"
+expected = "かんこうだかがぞうかしりえきりつもかいぜんした。"
+note = "第 95 回"
+
+[[case]]
+input = "大分県の牧駅で降りる。"
+mode = "hiragana"
+expected = "おおいたけんのまきえきでおりる。"
+note = "第 95 回"
