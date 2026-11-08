@@ -1,0 +1,49 @@
+# 第 87 回 (たこ焼・主寝室・夜の内・水族舘・富水・抑毛・全値戻し・茅ヶ崎北)
+
+[[case]]
+input = "コーンマヨネーズたこ焼が好きだ。"
+mode = "hiragana"
+expected = "コーンマヨネーズたこやきがすきだ。"
+note = "第 87 回"
+
+[[case]]
+input = "主寝室を避難室とする。"
+mode = "hiragana"
+expected = "しゅしんしつをひなんしつとする。"
+note = "第 87 回"
+
+[[case]]
+input = "一人夜の内から山に入る。"
+mode = "hiragana"
+expected = "ひとりよのうちからやまにはいる。"
+note = "第 87 回"
+
+[[case]]
+input = "徒歩で水族舘喫茶室へ行く。"
+mode = "hiragana"
+expected = "とほですいぞくかんきっさしつへいく。"
+note = "第 87 回"
+
+[[case]]
+input = "神奈川県の富水駅に行く。"
+mode = "hiragana"
+expected = "かながわけんのとみずえきにいく。"
+note = "第 87 回"
+
+[[case]]
+input = "余計な毛の抑毛は医療脱毛で行う。"
+mode = "hiragana"
+expected = "よけいなけのよくもうはいりょうだつもうでおこなう。"
+note = "第 87 回"
+
+[[case]]
+input = "半値戻しは全値戻しが進行中だ。"
+mode = "hiragana"
+expected = "はんねもどしはぜんねもどしがしんこうちゅうだ。"
+note = "第 87 回"
+
+[[case]]
+input = "茅ヶ崎北から新湘南バイパスへ入る。"
+mode = "hiragana"
+expected = "ちがさききたからしんしょうなんバイパスへはいる。"
+note = "第 87 回"
