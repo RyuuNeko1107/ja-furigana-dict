@@ -1,0 +1,37 @@
+# 第 91 回 (あなた様・故人さま・毛包・律法的・乗り合い船・蝋引き紙)
+
+[[case]]
+input = "あなた様のケースでも実名報道が行われた。"
+mode = "hiragana"
+expected = "あなたさまのケースでもじつめいほうどうがおこなわれた。"
+note = "第 91 回"
+
+[[case]]
+input = "故人さまのために祈る。"
+mode = "hiragana"
+expected = "こじんさまのためにいのる。"
+note = "第 91 回"
+
+[[case]]
+input = "毛包の機能が低下する。"
+mode = "hiragana"
+expected = "もうほうのきのうがていかする。"
+note = "第 91 回"
+
+[[case]]
+input = "かなり律法的なところがある。"
+mode = "hiragana"
+expected = "かなりりっぽうてきなところがある。"
+note = "第 91 回"
+
+[[case]]
+input = "島へ渡る乗り合い船に乗る。"
+mode = "hiragana"
+expected = "しまへわたるのりあいぶねにのる。"
+note = "第 91 回"
+
+[[case]]
+input = "お洒落な蝋引き紙で包む。"
+mode = "hiragana"
+expected = "おしゃれなろうびきがみでつつむ。"
+note = "第 91 回"
