@@ -1,0 +1,37 @@
+# 第 84 回 (面目ない系・右左折・短日処理・会津高原尾瀬口)
+
+[[case]]
+input = "本当に面目ないです。"
+mode = "hiragana"
+expected = "ほんとうにめんぼくないです。"
+note = "第 84 回"
+
+[[case]]
+input = "面目を保つのに苦労した。"
+mode = "hiragana"
+expected = "めんぼくをたもつのにくろうした。"
+note = "第 84 回"
+
+[[case]]
+input = "これでは面目が立たない。"
+mode = "hiragana"
+expected = "これではめんぼくがたたない。"
+note = "第 84 回"
+
+[[case]]
+input = "右左折禁止の標識がある。"
+mode = "hiragana"
+expected = "うさせつきんしのひょうしきがある。"
+note = "第 84 回"
+
+[[case]]
+input = "短日処理で花芽を付ける。"
+mode = "hiragana"
+expected = "たんじつしょりでかがをつける。"
+note = "第 84 回"
+
+[[case]]
+input = "会津高原尾瀬口から見えた。"
+mode = "hiragana"
+expected = "あいづこうげんおぜぐちからみえた。"
+note = "第 84 回"
