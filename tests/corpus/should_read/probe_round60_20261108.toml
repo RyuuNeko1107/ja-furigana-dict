@@ -1,0 +1,31 @@
+# 第 60 回 (伊藤彦造・描きおろし・注射針・一卵性・小蠅)
+
+[[case]]
+input = "伊藤彦造展に行った。"
+mode = "hiragana"
+expected = "いとうひこぞうてんにいった。"
+note = "第 60 回"
+
+[[case]]
+input = "描きおろしアニメ絵だった。"
+mode = "hiragana"
+expected = "かきおろしアニメえだった。"
+note = "第 60 回"
+
+[[case]]
+input = "注射針が刺さる所を見ない。"
+mode = "hiragana"
+expected = "ちゅうしゃばりがささるところをみない。"
+note = "第 60 回"
+
+[[case]]
+input = "一卵性の兄弟だった。"
+mode = "hiragana"
+expected = "いちらんせいのきょうだいだった。"
+note = "第 60 回"
+
+[[case]]
+input = "小蠅が飛んでいる。"
+mode = "hiragana"
+expected = "こばえがとんでいる。"
+note = "第 60 回"
