@@ -1,0 +1,25 @@
+# 第 65 回 (神崎町・詰り・軒樋・竪樋)
+
+[[case]]
+input = "香取郡神崎町の住みやすさ。"
+mode = "hiragana"
+expected = "かとりぐんこうざきまちのすみやすさ。"
+note = "第 65 回"
+
+[[case]]
+input = "樋の詰りをチェックする。"
+mode = "hiragana"
+expected = "ひのつまりをチェックする。"
+note = "第 65 回"
+
+[[case]]
+input = "軒樋が詰り易い。"
+mode = "hiragana"
+expected = "のきどいがつまりやすい。"
+note = "第 65 回"
+
+[[case]]
+input = "竪樋を点検する。"
+mode = "hiragana"
+expected = "たてどいをてんけんする。"
+note = "第 65 回"
