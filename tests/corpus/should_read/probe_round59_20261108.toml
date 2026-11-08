@@ -1,0 +1,37 @@
+# 第 59 回 (料理処・春野菜・庵治・無責任男・最旬・飛梅)
+
+[[case]]
+input = "料理処いなみで食事をした。"
+mode = "hiragana"
+expected = "りょうりどころいなみでしょくじをした。"
+note = "第 59 回"
+
+[[case]]
+input = "春野菜のサラダを食べた。"
+mode = "hiragana"
+expected = "はるやさいのサラダをたべた。"
+note = "第 59 回"
+
+[[case]]
+input = "香川の庵治で石を見た。"
+mode = "hiragana"
+expected = "かがわのあじでいしをみた。"
+note = "第 59 回"
+
+[[case]]
+input = "無責任男をやってみたい。"
+mode = "hiragana"
+expected = "むせきにんおとこをやってみたい。"
+note = "第 59 回"
+
+[[case]]
+input = "春の最旬スタイル五選。"
+mode = "hiragana"
+expected = "はるのさいしゅんスタイルごせん。"
+note = "第 59 回"
+
+[[case]]
+input = "大宰府天満宮の飛梅を見た。"
+mode = "hiragana"
+expected = "だざいふてんまんぐうのとびうめをみた。"
+note = "第 59 回"
