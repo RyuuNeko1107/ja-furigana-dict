@@ -1,0 +1,61 @@
+# 第 90 回 (元素(水火風雷氷岩草)・中敷き・夕神・パイル地)
+
+[[case]]
+input = "水元素攻撃が無効になる。"
+mode = "hiragana"
+expected = "すいげんそこうげきがむこうになる。"
+note = "第 90 回"
+
+[[case]]
+input = "火元素の反応を起こす。"
+mode = "hiragana"
+expected = "かげんそのはんのうをおこす。"
+note = "第 90 回"
+
+[[case]]
+input = "風元素で敵をまとめる。"
+mode = "hiragana"
+expected = "ふうげんそでてきをまとめる。"
+note = "第 90 回"
+
+[[case]]
+input = "雷元素の付着を確認する。"
+mode = "hiragana"
+expected = "らいげんそのふちゃくをかくにんする。"
+note = "第 90 回"
+
+[[case]]
+input = "氷元素で敵を凍らせる。"
+mode = "hiragana"
+expected = "ひょうげんそでてきをこおらせる。"
+note = "第 90 回"
+
+[[case]]
+input = "岩元素のシールドを張る。"
+mode = "hiragana"
+expected = "がんげんそのシールドをはる。"
+note = "第 90 回"
+
+[[case]]
+input = "草元素の反応が強い。"
+mode = "hiragana"
+expected = "そうげんそのはんのうがつよい。"
+note = "第 90 回"
+
+[[case]]
+input = "靴の中敷きを替える。"
+mode = "hiragana"
+expected = "くつのなかじきをかえる。"
+note = "第 90 回"
+
+[[case]]
+input = "夕神さんが呆れて真面目になる。"
+mode = "hiragana"
+expected = "ゆうがみさんがあきれてまじめになる。"
+note = "第 90 回"
+
+[[case]]
+input = "パイル地のタオルを使う。"
+mode = "hiragana"
+expected = "ぱいるじのタオルをつかう。"
+note = "第 90 回"
