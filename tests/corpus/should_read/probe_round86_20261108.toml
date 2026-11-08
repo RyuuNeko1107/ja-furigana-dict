@@ -1,0 +1,13 @@
+# 第 86 回 (ドカ盛)
+
+[[case]]
+input = "ドカ盛チャーハンを頼んだ。"
+mode = "hiragana"
+expected = "どかもりチャーハンをたのんだ。"
+note = "第 86 回"
+
+[[case]]
+input = "ドカ盛りのラーメンを食べる。"
+mode = "hiragana"
+expected = "どかもりのラーメンをたべる。"
+note = "第 86 回"
