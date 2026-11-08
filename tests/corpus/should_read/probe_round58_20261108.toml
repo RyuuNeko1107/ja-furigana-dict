@@ -1,0 +1,37 @@
+# 第 58 回 (靴ずれ・俵物・皆さま方・極たまに・極まれに・極少量)
+
+[[case]]
+input = "どんどん靴ずれが酷くなる。"
+mode = "hiragana"
+expected = "どんどんくつずれがひどくなる。"
+note = "第 58 回"
+
+[[case]]
+input = "江戸時代は俵物を輸出した。"
+mode = "hiragana"
+expected = "えどじだいはたわらものをゆしゅつした。"
+note = "第 58 回"
+
+[[case]]
+input = "皆さま方に感謝します。"
+mode = "hiragana"
+expected = "みなさまがたにかんしゃします。"
+note = "第 58 回"
+
+[[case]]
+input = "極たまにそういう日もある。"
+mode = "hiragana"
+expected = "ごくたまにそういうひもある。"
+note = "第 58 回"
+
+[[case]]
+input = "極まれに起こる現象だ。"
+mode = "hiragana"
+expected = "ごくまれにおこるげんしょうだ。"
+note = "第 58 回"
+
+[[case]]
+input = "極少量の塩を加える。"
+mode = "hiragana"
+expected = "ごくしょうりょうのしおをくわえる。"
+note = "第 58 回"
