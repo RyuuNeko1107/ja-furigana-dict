@@ -1,0 +1,37 @@
+# 第 44 回 (正油/露出場所/失声/鶏の唐揚げ/角田駅)
+
+[[case]]
+input = "野菜チャーシュー正油を"
+mode = "hiragana"
+expected = "やさいチャーシューしょうゆを"
+note = "第 44 回"
+
+[[case]]
+input = "露出場所で白ブリーフを"
+mode = "hiragana"
+expected = "ろしゅつばしょでしろブリーフを"
+note = "第 44 回"
+
+[[case]]
+input = "失声する話をよく見かける"
+mode = "hiragana"
+expected = "しっせいするはなしをよくみかける"
+note = "第 44 回"
+
+[[case]]
+input = "鶏の唐揚げほど当たり外れがない"
+mode = "hiragana"
+expected = "とりのからあげほどあたりはずれがない"
+note = "第 44 回"
+
+[[case]]
+input = "鶏のから揚げが好き"
+mode = "hiragana"
+expected = "とりのからあげがすき"
+note = "第 44 回"
+
+[[case]]
+input = "角田駅で降りる"
+mode = "hiragana"
+expected = "かくだえきでおりる"
+note = "第 44 回"

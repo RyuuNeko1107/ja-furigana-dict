@@ -1,0 +1,13 @@
+# 第 72 回 (色付きリップ・魔光炉)
+
+[[case]]
+input = "薬用色付きリップを買った。"
+mode = "hiragana"
+expected = "やくよういろつきりっぷをかった。"
+note = "第 72 回"
+
+[[case]]
+input = "魔光炉の力で動く。"
+mode = "hiragana"
+expected = "まこうろのちからでうごく。"
+note = "第 72 回"

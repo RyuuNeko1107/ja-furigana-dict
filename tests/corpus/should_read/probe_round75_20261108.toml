@@ -1,0 +1,49 @@
+# 第 75 回 (経時・笑い所・沼田町・和民・銀鼠色・稲永・希望日・青空市場)
+
+[[case]]
+input = "朽ちるという経時現象がある。"
+mode = "hiragana"
+expected = "くちるというけいじげんしょうがある。"
+note = "第 75 回"
+
+[[case]]
+input = "笑い所もある第三話だ。"
+mode = "hiragana"
+expected = "わらいどころもあるだいさんわだ。"
+note = "第 75 回"
+
+[[case]]
+input = "北海道沼田町でおすすめの食事。"
+mode = "hiragana"
+expected = "ほっかいどうぬまたちょうでおすすめのしょくじ。"
+note = "第 75 回"
+
+[[case]]
+input = "ブラック企業和民の元社長。"
+mode = "hiragana"
+expected = "ブラックきぎょうわたみのもとしゃちょう。"
+note = "第 75 回"
+
+[[case]]
+input = "銀鼠色の着物を着る。"
+mode = "hiragana"
+expected = "ぎんねずいろのきものをきる。"
+note = "第 75 回"
+
+[[case]]
+input = "愛知県稲永に行った。"
+mode = "hiragana"
+expected = "あいちけんいなえにいった。"
+note = "第 75 回"
+
+[[case]]
+input = "希望日が集中することもある。"
+mode = "hiragana"
+expected = "きぼうびがしゅうちゅうすることもある。"
+note = "第 75 回"
+
+[[case]]
+input = "地元の青空市場へ行く。"
+mode = "hiragana"
+expected = "じもとのあおぞらいちばへいく。"
+note = "第 75 回"

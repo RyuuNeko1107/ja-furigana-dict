@@ -1,0 +1,49 @@
+# 第 77 回 (次亜・売土地・綾瀬橋・側弯症・副局・替刃・浦富海岸・御幸通)
+
+[[case]]
+input = "次亜リン酸カルシウムを使う。"
+mode = "hiragana"
+expected = "じありんさんかるしうむをつかう。"
+note = "第 77 回"
+
+[[case]]
+input = "新築戸建と売土地の情報。"
+mode = "hiragana"
+expected = "しんちくこだてとうりとちのじょうほう。"
+note = "第 77 回"
+
+[[case]]
+input = "綾瀬橋を渡って次の橋へ向かう。"
+mode = "hiragana"
+expected = "あやせばしをわたってつぎのはしへむかう。"
+note = "第 77 回"
+
+[[case]]
+input = "側弯症の原因を調べる。"
+mode = "hiragana"
+expected = "そくわんしょうのげんいんをしらべる。"
+note = "第 77 回"
+
+[[case]]
+input = "副局を独立させる。"
+mode = "hiragana"
+expected = "ふくきょくをどくりつさせる。"
+note = "第 77 回"
+
+[[case]]
+input = "替刃が高い。"
+mode = "hiragana"
+expected = "かえばがたかい。"
+note = "第 77 回"
+
+[[case]]
+input = "浦富海岸は景勝地だ。"
+mode = "hiragana"
+expected = "うらどめかいがんはけいしょうちだ。"
+note = "第 77 回"
+
+[[case]]
+input = "姫路の御幸通り商店街へ行く。"
+mode = "hiragana"
+expected = "ひめじのみゆきどおりしょうてんがいへいく。"
+note = "第 77 回"

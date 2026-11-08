@@ -1,0 +1,25 @@
+# 第 78 回 (増床し・直売所・派手目・放射霧)
+
+[[case]]
+input = "イオンモールは増床してから混む。"
+mode = "hiragana"
+expected = "イオンモールはぞうしょうしてからこむ。"
+note = "第 78 回"
+
+[[case]]
+input = "昨日直売所でりんごを買った。"
+mode = "hiragana"
+expected = "きのうちょくばいじょでりんごをかった。"
+note = "第 78 回"
+
+[[case]]
+input = "派手目のワンピースを着る。"
+mode = "hiragana"
+expected = "はでめのワンピースをきる。"
+note = "第 78 回"
+
+[[case]]
+input = "放射冷却で放射霧が発生する。"
+mode = "hiragana"
+expected = "ほうしゃれいきゃくでほうしゃぎりがはっせいする。"
+note = "第 78 回"

@@ -1,0 +1,25 @@
+# 第 76 回 (虹ヶ咲・集会所・叉骨・間鎖骨)
+
+[[case]]
+input = "虹ヶ咲の最終章はいつだろう。"
+mode = "hiragana"
+expected = "にじがさきのさいしゅうしょうはいつだろう。"
+note = "第 76 回"
+
+[[case]]
+input = "町の集会所で会議をする。"
+mode = "hiragana"
+expected = "まちのしゅうかいじょでかいぎをする。"
+note = "第 76 回"
+
+[[case]]
+input = "叉骨の起源を調べる。"
+mode = "hiragana"
+expected = "さこつのきげんをしらべる。"
+note = "第 76 回"
+
+[[case]]
+input = "単一の間鎖骨説がある。"
+mode = "hiragana"
+expected = "たんいつのかんさこつせつがある。"
+note = "第 76 回"

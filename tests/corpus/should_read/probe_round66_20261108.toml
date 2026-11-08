@@ -1,0 +1,37 @@
+# 第 66 回 (負け試合・甘旨・萌木・始め時・カップ酒・攻顔)
+
+[[case]]
+input = "甲子園で負け試合だった。"
+mode = "hiragana"
+expected = "こうしえんでまけじあいだった。"
+note = "第 66 回"
+
+[[case]]
+input = "甘旨ジューシーな風味がする。"
+mode = "hiragana"
+expected = "あまうまジューシーなふうみがする。"
+note = "第 66 回"
+
+[[case]]
+input = "萌木の村に行った。"
+mode = "hiragana"
+expected = "もえぎのむらにいった。"
+note = "第 66 回"
+
+[[case]]
+input = "今が始め時だと思う。"
+mode = "hiragana"
+expected = "いまがはじめどきだとおもう。"
+note = "第 66 回"
+
+[[case]]
+input = "カップ酒なら話は別だ。"
+mode = "hiragana"
+expected = "かっぷざけならはなしはべつだ。"
+note = "第 66 回"
+
+[[case]]
+input = "攻顔でびっくりした。"
+mode = "hiragana"
+expected = "せめがおでびっくりした。"
+note = "第 66 回"

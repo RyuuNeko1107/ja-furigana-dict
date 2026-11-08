@@ -1,0 +1,49 @@
+# 第 83 回 (教示・所縁・天后・そば処・吾峠・塗分け・八代東高校・恵可断臂図)
+
+[[case]]
+input = "ご教示いただけますでしょうか。"
+mode = "hiragana"
+expected = "ごきょうじいただけますでしょうか。"
+note = "第 83 回"
+
+[[case]]
+input = "田沼意次に所縁の地である。"
+mode = "hiragana"
+expected = "たぬまおきつぐにゆかりのちである。"
+note = "第 83 回"
+
+[[case]]
+input = "海の女神である天后聖女。"
+mode = "hiragana"
+expected = "うみのめがみであるてんこうせいじょ。"
+note = "第 83 回"
+
+[[case]]
+input = "駅ビルのそば処で食べる。"
+mode = "hiragana"
+expected = "えきビルのそばどころでたべる。"
+note = "第 83 回"
+
+[[case]]
+input = "吾峠先生の作品が好きだ。"
+mode = "hiragana"
+expected = "ごとうげせんせいのさくひんがすきだ。"
+note = "第 83 回"
+
+[[case]]
+input = "髪型に合わせて塗分けて染める。"
+mode = "hiragana"
+expected = "かみがたにあわせてぬりわけてそめる。"
+note = "第 83 回"
+
+[[case]]
+input = "地元の八代東高校の建替え。"
+mode = "hiragana"
+expected = "じもとのやつしろひがしこうこうのたてかえ。"
+note = "第 83 回"
+
+[[case]]
+input = "雪舟の恵可断臂図を見る。"
+mode = "hiragana"
+expected = "せっしゅうのえかだんぴずをみる。"
+note = "第 83 回"

@@ -1,0 +1,55 @@
+# 第 71 回 (食事処・増毛・館内着・名古屋西高校)
+
+[[case]]
+input = "町内のお食事処では食べられる。"
+mode = "hiragana"
+expected = "ちょうないのおしょくじどころではたべられる。"
+note = "第 71 回"
+
+[[case]]
+input = "増毛の人たちの願いが叶う。"
+mode = "hiragana"
+expected = "ぞうもうのひとたちのねがいがかなう。"
+note = "第 71 回"
+
+[[case]]
+input = "北海道の増毛町に行った。"
+mode = "hiragana"
+expected = "ほっかいどうのましけちょうにいった。"
+note = "第 71 回"
+
+[[case]]
+input = "増毛駅で降りた。"
+mode = "hiragana"
+expected = "ましけえきでおりた。"
+note = "第 71 回"
+
+[[case]]
+input = "増毛港で釣りをした。"
+mode = "hiragana"
+expected = "ましけこうでつりをした。"
+note = "第 71 回"
+
+[[case]]
+input = "増毛山地に登った。"
+mode = "hiragana"
+expected = "ましけさんちにのぼった。"
+note = "第 71 回"
+
+[[case]]
+input = "ロッカーキーと館内着を受け取る。"
+mode = "hiragana"
+expected = "ロッカーキーとかんないぎをうけとる。"
+note = "第 71 回"
+
+[[case]]
+input = "名古屋西高校出身という情報。"
+mode = "hiragana"
+expected = "なごやにしこうこうしゅっしんというじょうほう。"
+note = "第 71 回"
+
+[[case]]
+input = "増毛郡増毛町の話。"
+mode = "hiragana"
+expected = "ましけぐんましけちょうのはなし。"
+note = "第 71 回"

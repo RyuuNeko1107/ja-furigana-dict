@@ -1,0 +1,31 @@
+# 第 94 回 (箱買い・手折り・エリ巻・辺里唯世・夏前後)
+
+[[case]]
+input = "グッズを箱買いする。"
+mode = "hiragana"
+expected = "グッズをはこがいする。"
+note = "第 94 回"
+
+[[case]]
+input = "家庭印刷は手折りの限界がある。"
+mode = "hiragana"
+expected = "かていいんさつはておりのげんかいがある。"
+note = "第 94 回"
+
+[[case]]
+input = "エリ巻恐竜のジラースが出る。"
+mode = "hiragana"
+expected = "えりまききょうりゅうのジラースがでる。"
+note = "第 94 回"
+
+[[case]]
+input = "しゅごキャラの辺里唯世が好きだ。"
+mode = "hiragana"
+expected = "しゅごキャラのへんりただせがすきだ。"
+note = "第 94 回"
+
+[[case]]
+input = "婚姻色シーズンは夏前後だけど。"
+mode = "hiragana"
+expected = "こんいんしょくシーズンはなつぜんごだけど。"
+note = "第 94 回"

@@ -1,0 +1,37 @@
+# 第 82 回 (馬鞭・弟者・塩貝・3連複・三連複・尾羽)
+
+[[case]]
+input = "馬鞭は殆ど使わない。"
+mode = "hiragana"
+expected = "ばべんはほとんどつかわない。"
+note = "第 82 回"
+
+[[case]]
+input = "弟者さんお誕生日おめでとう。"
+mode = "hiragana"
+expected = "おとじゃさんおたんじょうびおめでとう。"
+note = "第 82 回"
+
+[[case]]
+input = "塩貝の良さが見えない。"
+mode = "hiragana"
+expected = "しおがいのよさがみえない。"
+note = "第 82 回"
+
+[[case]]
+input = "3連複2パターンどっちも来た。"
+mode = "hiragana"
+expected = "さんれんぷくにパターンどっちもきた。"
+note = "第 82 回"
+
+[[case]]
+input = "三連複を買った。"
+mode = "hiragana"
+expected = "さんれんぷくをかった。"
+note = "第 82 回"
+
+[[case]]
+input = "鳥の尾羽が欠けている。"
+mode = "hiragana"
+expected = "とりのおばがかけている。"
+note = "第 82 回"
