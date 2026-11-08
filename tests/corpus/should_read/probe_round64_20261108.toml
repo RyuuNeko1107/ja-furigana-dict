@@ -1,0 +1,19 @@
+# 第 64 回 (火車切・どれ位・番組みたい)
+
+[[case]]
+input = "刀剣乱舞の火車切を迎えた。"
+mode = "hiragana"
+expected = "とうけんらんぶのかしゃぎりをむかえた。"
+note = "第 64 回"
+
+[[case]]
+input = "エルフはどれ位生きられるのか。"
+mode = "hiragana"
+expected = "エルフはどれくらいいきられるのか。"
+note = "第 64 回"
+
+[[case]]
+input = "クイズ番組みたいな画面が撮れた。"
+mode = "hiragana"
+expected = "クイズばんぐみみたいながめんがとれた。"
+note = "第 64 回"
