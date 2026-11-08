@@ -1,0 +1,55 @@
+# 第 73 回 (何ぞや・神崎郡市川町・横書・自毛・吸い玉・下意識・式波・洗い場付・目黒本町)
+
+[[case]]
+input = "スタディサプリとは何ぞやと問う。"
+mode = "hiragana"
+expected = "スタディサプリとはなんぞやととう。"
+note = "第 73 回"
+
+[[case]]
+input = "兵庫県神崎郡市川町に住む。"
+mode = "hiragana"
+expected = "ひょうごけんかんざきぐんいちかわちょうにすむ。"
+note = "第 73 回"
+
+[[case]]
+input = "横書があります。"
+mode = "hiragana"
+expected = "よこがきがあります。"
+note = "第 73 回"
+
+[[case]]
+input = "自毛植毛の専門病院。"
+mode = "hiragana"
+expected = "じもうしょくもうのせんもんびょういん。"
+note = "第 73 回"
+
+[[case]]
+input = "吸い玉を背中に当てる。"
+mode = "hiragana"
+expected = "すいだまをせなかにあてる。"
+note = "第 73 回"
+
+[[case]]
+input = "下意識の歴史的展開。"
+mode = "hiragana"
+expected = "かいしきのれきしてきてんかい。"
+note = "第 73 回"
+
+[[case]]
+input = "式波アスカが登場する。"
+mode = "hiragana"
+expected = "しきなみアスカがとうじょうする。"
+note = "第 73 回"
+
+[[case]]
+input = "洗い場付のバスルーム。"
+mode = "hiragana"
+expected = "あらいばつきのバスルーム。"
+note = "第 73 回"
+
+[[case]]
+input = "目黒本町の中古一戸建て。"
+mode = "hiragana"
+expected = "めぐろほんちょうのちゅうこいっこだて。"
+note = "第 73 回"
