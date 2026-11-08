@@ -1,0 +1,7 @@
+# 第 68 回 (端材)
+
+[[case]]
+input = "使った端材を乾かした。"
+mode = "hiragana"
+expected = "つかったはざいをかわかした。"
+note = "第 68 回"
