@@ -1,0 +1,31 @@
+# 第 80 回 (米半導体・描き手・遠地津波・遠地地震・美ノ海)
+
+[[case]]
+input = "米半導体株安が重荷になる。"
+mode = "hiragana"
+expected = "べいはんどうたいかぶやすがおもにになる。"
+note = "第 80 回"
+
+[[case]]
+input = "描き手サイドの話をする。"
+mode = "hiragana"
+expected = "かきてサイドのはなしをする。"
+note = "第 80 回"
+
+[[case]]
+input = "遠地津波に注意する。"
+mode = "hiragana"
+expected = "えんちつなみにちゅういする。"
+note = "第 80 回"
+
+[[case]]
+input = "遠地地震が発生した。"
+mode = "hiragana"
+expected = "えんちじしんがはっせいした。"
+note = "第 80 回"
+
+[[case]]
+input = "力士の美ノ海が勝った。"
+mode = "hiragana"
+expected = "りきしのみのうみがかった。"
+note = "第 80 回"
