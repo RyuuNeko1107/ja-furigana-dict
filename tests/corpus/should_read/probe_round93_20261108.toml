@@ -1,0 +1,49 @@
+# 第 93 回 (杉本町駅・後藤晴菜・原田節・人荷用・月商・伊丹昆陽・昆陽池・大字芝村)
+
+[[case]]
+input = "杉本町駅から歩く。"
+mode = "hiragana"
+expected = "すぎもとちょうえきからあるく。"
+note = "第 93 回"
+
+[[case]]
+input = "後藤晴菜アナが登場する。"
+mode = "hiragana"
+expected = "ごとうはるなアナがとうじょうする。"
+note = "第 93 回"
+
+[[case]]
+input = "奏者の原田節さんが演奏する。"
+mode = "hiragana"
+expected = "そうしゃのはらだたかしさんがえんそうする。"
+note = "第 93 回"
+
+[[case]]
+input = "エレベーターの人荷用を選ぶ。"
+mode = "hiragana"
+expected = "エレベーターのじんかようをえらぶ。"
+note = "第 93 回"
+
+[[case]]
+input = "月商七桁を実現した。"
+mode = "hiragana"
+expected = "げっしょうななけたをじつげんした。"
+note = "第 93 回"
+
+[[case]]
+input = "兵庫県の伊丹昆陽に行く。"
+mode = "hiragana"
+expected = "ひょうごけんのいたみこやにいく。"
+note = "第 93 回"
+
+[[case]]
+input = "昆陽池で鳥を見る。"
+mode = "hiragana"
+expected = "こやいけでとりをみる。"
+note = "第 93 回"
+
+[[case]]
+input = "桜井市大字芝村に住む。"
+mode = "hiragana"
+expected = "さくらいしおおあざしばむらにすむ。"
+note = "第 93 回"
