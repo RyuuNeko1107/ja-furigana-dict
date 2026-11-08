@@ -1,0 +1,13 @@
+# 第 74 回 (細マッチョ・坊っちゃま)
+
+[[case]]
+input = "細マッチョとカツカレーが好きだ。"
+mode = "hiragana"
+expected = "ほそまっちょとカツカレーがすきだ。"
+note = "第 74 回"
+
+[[case]]
+input = "ベッドで寝るお坊っちゃまだ。"
+mode = "hiragana"
+expected = "ベッドでねるおぼっちゃまだ。"
+note = "第 74 回"
