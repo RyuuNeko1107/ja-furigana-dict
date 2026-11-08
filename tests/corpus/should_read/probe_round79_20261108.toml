@@ -1,0 +1,61 @@
+# 第 79 回 (光触媒・青表紙本・河内本・祇園山笠・珪殻・大映し・川苔山・中山寺・父娘・着手前)
+
+[[case]]
+input = "光触媒人工植物を飾る。"
+mode = "hiragana"
+expected = "こうしょくばいじんこうしょくぶつをかざる。"
+note = "第 79 回"
+
+[[case]]
+input = "青表紙本を別本に含める。"
+mode = "hiragana"
+expected = "あおびょうしぼんをべっぽんにふくめる。"
+note = "第 79 回"
+
+[[case]]
+input = "河内本と別本の二系統。"
+mode = "hiragana"
+expected = "かわちぼんとべっぽんのにけいとう。"
+note = "第 79 回"
+
+[[case]]
+input = "博多祇園山笠の人形師一覧。"
+mode = "hiragana"
+expected = "はかたぎおんやまがさのにんぎょうしいちらん。"
+note = "第 79 回"
+
+[[case]]
+input = "珪殻を顕微鏡で見る。"
+mode = "hiragana"
+expected = "けいかくをけんびきょうでみる。"
+note = "第 79 回"
+
+[[case]]
+input = "テロップが大映しになる。"
+mode = "hiragana"
+expected = "テロップがおおうつしになる。"
+note = "第 79 回"
+
+[[case]]
+input = "川苔山に登ってきた。"
+mode = "hiragana"
+expected = "かわのりやまにのぼってきた。"
+note = "第 79 回"
+
+[[case]]
+input = "兵庫県宝塚市の中山寺に行く。"
+mode = "hiragana"
+expected = "ひょうごけんたからづかしのなかやまでらにいく。"
+note = "第 79 回"
+
+[[case]]
+input = "父娘による受賞は史上初だ。"
+mode = "hiragana"
+expected = "おやこによるじゅしょうはしじょうはつだ。"
+note = "第 79 回"
+
+[[case]]
+input = "着手前の青い空の下。"
+mode = "hiragana"
+expected = "ちゃくしゅまえのあおいそらのした。"
+note = "第 79 回"
