@@ -1,0 +1,19 @@
+# 第 92 回 (美しくも・瀬戸口心月・水断ち)
+
+[[case]]
+input = "眠たげな瞳が美しくも見える。"
+mode = "hiragana"
+expected = "ねむたげなひとみがうつくしくもみえる。"
+note = "第 92 回"
+
+[[case]]
+input = "乃木坂の瀬戸口心月を応援する。"
+mode = "hiragana"
+expected = "のぎざかのせとぐちみづきをおうえんする。"
+note = "第 92 回"
+
+[[case]]
+input = "水断ちとかしてたの。"
+mode = "hiragana"
+expected = "みずだちとかしてたの。"
+note = "第 92 回"
