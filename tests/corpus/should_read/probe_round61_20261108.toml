@@ -1,0 +1,61 @@
+# 第 61 回 (仰います系・残穢・空車・違わず・星柄・外羽根・無性芽・お預け)
+
+[[case]]
+input = "先生がそう仰います。"
+mode = "hiragana"
+expected = "せんせいがそうおっしゃいます。"
+note = "第 61 回"
+
+[[case]]
+input = "私達には仰いません。"
+mode = "hiragana"
+expected = "わたしたちにはおっしゃいません。"
+note = "第 61 回"
+
+[[case]]
+input = "部長がそう仰いました。"
+mode = "hiragana"
+expected = "ぶちょうがそうおっしゃいました。"
+note = "第 61 回"
+
+[[case]]
+input = "邦画残穢を観た。"
+mode = "hiragana"
+expected = "ほうがざんえをみた。"
+note = "第 61 回"
+
+[[case]]
+input = "駐車場は空車状態だ。"
+mode = "hiragana"
+expected = "ちゅうしゃじょうはくうしゃじょうたいだ。"
+note = "第 61 回"
+
+[[case]]
+input = "時を違わず二軒がオープンした。"
+mode = "hiragana"
+expected = "ときをたがわずにけんがオープンした。"
+note = "第 61 回"
+
+[[case]]
+input = "星柄のワンピース。"
+mode = "hiragana"
+expected = "ほしがらのワンピース。"
+note = "第 61 回"
+
+[[case]]
+input = "外羽根のビジネスシューズ。"
+mode = "hiragana"
+expected = "そとばねのビジネスシューズ。"
+note = "第 61 回"
+
+[[case]]
+input = "この無性芽は別のものだ。"
+mode = "hiragana"
+expected = "このむせいがはべつのものだ。"
+note = "第 61 回"
+
+[[case]]
+input = "次回以降にお預けだ。"
+mode = "hiragana"
+expected = "じかいいこうにおあずけだ。"
+note = "第 61 回"
