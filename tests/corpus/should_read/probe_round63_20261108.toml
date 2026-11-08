@@ -1,0 +1,61 @@
+# 第 63 回 (豚革・木調・開梱・張地・光華商場・新耳袋・河合町・十六進法・保利茂・矢作穂香)
+
+[[case]]
+input = "豚革特有の毛穴がある。"
+mode = "hiragana"
+expected = "ぶたがわとくゆうのけあながある。"
+note = "第 63 回"
+
+[[case]]
+input = "木調がお部屋に合う。"
+mode = "hiragana"
+expected = "もくちょうがおへやにあう。"
+note = "第 63 回"
+
+[[case]]
+input = "開梱検品は行っておりません。"
+mode = "hiragana"
+expected = "かいこんけんぴんはおこなっておりません。"
+note = "第 63 回"
+
+[[case]]
+input = "張地サンプルを希望する。"
+mode = "hiragana"
+expected = "はりじサンプルをきぼうする。"
+note = "第 63 回"
+
+[[case]]
+input = "台湾の光華商場に行った。"
+mode = "hiragana"
+expected = "たいわんのこうかしょうじょうにいった。"
+note = "第 63 回"
+
+[[case]]
+input = "新耳袋の現場に行った。"
+mode = "hiragana"
+expected = "しんみみぶくろのげんばにいった。"
+note = "第 63 回"
+
+[[case]]
+input = "奈良県河合町に住んでいる。"
+mode = "hiragana"
+expected = "ならけんかわいちょうにすんでいる。"
+note = "第 63 回"
+
+[[case]]
+input = "十六進法の色を指定する。"
+mode = "hiragana"
+expected = "じゅうろくしんほうのいろをしていする。"
+note = "第 63 回"
+
+[[case]]
+input = "保利茂に関連する話。"
+mode = "hiragana"
+expected = "ほりしげるにかんれんするはなし。"
+note = "第 63 回"
+
+[[case]]
+input = "矢作穂香の今を調査した。"
+mode = "hiragana"
+expected = "やはぎほのかのいまをちょうさした。"
+note = "第 63 回"
