@@ -1,0 +1,31 @@
+# 第 67 回 (内巻き・二海郡・舌上音・森崎東・捻くり出し)
+
+[[case]]
+input = "髪を軽く内巻きにして整える。"
+mode = "hiragana"
+expected = "かみをかるくうちまきにしてととのえる。"
+note = "第 67 回"
+
+[[case]]
+input = "北海道の二海郡の病院を探す。"
+mode = "hiragana"
+expected = "ほっかいどうのふたみぐんのびょういんをさがす。"
+note = "第 67 回"
+
+[[case]]
+input = "舌上音はタ行の形で現れている。"
+mode = "hiragana"
+expected = "ぜつじょうおんはタぎょうのかたちであらわれている。"
+note = "第 67 回"
+
+[[case]]
+input = "作品情報の森崎東を調べた。"
+mode = "hiragana"
+expected = "さくひんじょうほうのもりさきあずまをしらべた。"
+note = "第 67 回"
+
+[[case]]
+input = "謎めいた文章を捻くり出して書く。"
+mode = "hiragana"
+expected = "なぞめいたぶんしょうをひねくりだしてかく。"
+note = "第 67 回"
