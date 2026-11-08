@@ -1,0 +1,49 @@
+# 第 85 回 (生後間もない・て間もない・口中・祝金・一同心より・出穂・感応度)
+
+[[case]]
+input = "生後間もない我が子に会った。"
+mode = "hiragana"
+expected = "せいごまもないわがこにあった。"
+note = "第 85 回"
+
+[[case]]
+input = "入社して間もないので戸惑う。"
+mode = "hiragana"
+expected = "にゅうしゃしてまもないのでとまどう。"
+note = "第 85 回"
+
+[[case]]
+input = "戦後間もない頃の話だ。"
+mode = "hiragana"
+expected = "せんごまもないころのはなしだ。"
+note = "第 85 回"
+
+[[case]]
+input = "口中を水ですすいだ後は食べない。"
+mode = "hiragana"
+expected = "こうちゅうをみずですすいだあとはたべない。"
+note = "第 85 回"
+
+[[case]]
+input = "入社祝金を三十万円もらう。"
+mode = "hiragana"
+expected = "にゅうしゃしゅくきんをさんじゅうまんえんもらう。"
+note = "第 85 回"
+
+[[case]]
+input = "社員一同心よりお待ちしております。"
+mode = "hiragana"
+expected = "しゃいんいちどうこころよりおまちしております。"
+note = "第 85 回"
+
+[[case]]
+input = "出穂七日前に接種する。"
+mode = "hiragana"
+expected = "しゅっすいなのかまえにせっしゅする。"
+note = "第 85 回"
+
+[[case]]
+input = "為替感応度の高さが目立つ。"
+mode = "hiragana"
+expected = "かわせかんのうどのたかさがめだつ。"
+note = "第 85 回"
