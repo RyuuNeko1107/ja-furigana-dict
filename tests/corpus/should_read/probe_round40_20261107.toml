@@ -1,0 +1,37 @@
+# 第 40 回 (思て(関西弁)/ポッと出/対を成す/面下げ/苗札)
+
+[[case]]
+input = "帰りに百均寄ろか思てたけど暇だし"
+mode = "hiragana"
+expected = "かえりにひゃっきんよろかおもてたけどひまだし"
+note = "第 40 回"
+
+[[case]]
+input = "でもこいつポッと出だよな"
+mode = "hiragana"
+expected = "でもこいつぽっとでだよな"
+note = "第 40 回"
+
+[[case]]
+input = "そしてこれに対を成してる"
+mode = "hiragana"
+expected = "そしてこれについをなしてる"
+note = "第 40 回"
+
+[[case]]
+input = "どの面下げてリツイートしてんだ"
+mode = "hiragana"
+expected = "どのつらさげてリツイートしてんだ"
+note = "第 40 回"
+
+[[case]]
+input = "苗の札も差しておいたのに"
+mode = "hiragana"
+expected = "なえのふだもさしておいたのに"
+note = "第 40 回"
+
+[[case]]
+input = "苗札を立てる"
+mode = "hiragana"
+expected = "なえふだをたてる"
+note = "第 40 回"
